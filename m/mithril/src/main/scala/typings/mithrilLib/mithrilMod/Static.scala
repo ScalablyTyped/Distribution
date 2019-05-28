@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Static extends Hyperscript {
   @JSName("jsonp")
-  var jsonp_Original: mithrilLib.Anon_OptionsUrl = js.native
+  var jsonp_Original: mithrilLib.Fn_OptionsUrl = js.native
   @JSName("mount")
-  var mount_Original: mithrilLib.Anon_Component = js.native
+  var mount_Original: mithrilLib.Fn_Component = js.native
   @JSName("redraw")
   var redraw_Original: js.Function0[scala.Unit] = js.native
   @JSName("render")
   var render_Original: js.Function2[/* el */ stdLib.Element, /* vnodes */ Children, scala.Unit] = js.native
   @JSName("request")
-  var request_Original: mithrilLib.Anon_Options = js.native
+  var request_Original: mithrilLib.Fn_Options = js.native
   @JSName("route")
   var route_Original: Route = js.native
   /** A string containing the semver value for the current Mithril release. */
   var version: java.lang.String = js.native
   @JSName("withAttr")
-  var withAttr_Original: mithrilLib.Anon_Callback = js.native
+  var withAttr_Original: mithrilLib.Fn_Callback = js.native
   /** Turns the key/value pairs of an object into a string of the form: a=1&b=2 */
   def buildQueryString(values: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native
   def jsonp[T](options: JsonpOptions with mithrilLib.Anon_Url): js.Promise[T] = js.native

@@ -111,7 +111,7 @@ object default extends js.Object {
     /* field */ java.lang.String, 
     reduxDashFormLib.libActionsMod.FormAction
   ] = js.native
-  var initialize: reduxDashFormLib.Anon_Data = js.native
+  var initialize: reduxDashFormLib.Fn_Data = js.native
   var registerField: js.Function3[
     /* form */ java.lang.String, 
     /* name */ java.lang.String, 
@@ -157,7 +157,7 @@ object default extends js.Object {
     /* repeated */ java.lang.String, 
     reduxDashFormLib.libActionsMod.FormAction
   ] = js.native
-  var updateSyncErrors: reduxDashFormLib.Anon_Error = js.native
-  var updateSyncWarnings: reduxDashFormLib.Anon_FormSyncWarnings = js.native
+  var updateSyncErrors: reduxDashFormLib.Fn_Error = js.native
+  var updateSyncWarnings: reduxDashFormLib.Fn_Form = js.native
 }
 

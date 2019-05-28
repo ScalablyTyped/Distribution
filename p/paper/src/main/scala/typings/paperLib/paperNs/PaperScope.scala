@@ -51,16 +51,16 @@ class PaperScope () extends Base {
     /* ty */ scala.Double, 
     Matrix
   ] = js.native
-  var PaperScope: paperLib.Anon_Get = js.native
-  var Path: paperLib.Anon_Arc with (org.scalablytyped.runtime.Instantiable1[
+  var PaperScope: paperLib.TypeofClassPaperScope = js.native
+  var Path: paperLib.TypeofPath with (org.scalablytyped.runtime.Instantiable1[
     /* segments */ js.UndefOr[
       /* segments */ js.Array[Segment] | js.Array[Point] | js.Array[js.Array[scala.Double]]
     ], 
     Path
   ]) = js.native
-  var PathItem: paperLib.Anon_Create = js.native
+  var PathItem: paperLib.TypeofClassPathItem = js.native
   var PlacedSymbol: org.scalablytyped.runtime.Instantiable2[/* symbol */ Symbol, /* point */ js.UndefOr[/* point */ Point], PlacedSymbol] = js.native
-  var Point: paperLib.Anon_Max = js.native
+  var Point: paperLib.TypeofClassPoint = js.native
   var PointText: org.scalablytyped.runtime.Instantiable1[/* point */ Point, PointText] = js.native
   var Project: org.scalablytyped.runtime.Instantiable1[/* element */ stdLib.HTMLCanvasElement | java.lang.String, Project] = js.native
   var Raster: org.scalablytyped.runtime.Instantiable2[
@@ -77,8 +77,8 @@ class PaperScope () extends Base {
     /* handleOut */ js.UndefOr[/* handleOut */ Point], 
     Segment
   ] = js.native
-  var Shape: paperLib.Anon_Center = js.native
-  var Size: paperLib.Anon_Height = js.native
+  var Shape: paperLib.TypeofClassShape = js.native
+  var Size: paperLib.TypeofClassSize = js.native
   var Style: org.scalablytyped.runtime.Instantiable0[Style] = js.native
   var Symbol: org.scalablytyped.runtime.Instantiable2[/* item */ Item, /* dontCenter */ js.UndefOr[/* dontCenter */ scala.Boolean], Symbol] = js.native
   var TextItem: org.scalablytyped.runtime.Instantiable0[TextItem] = js.native

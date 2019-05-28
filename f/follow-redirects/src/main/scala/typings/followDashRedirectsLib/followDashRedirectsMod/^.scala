@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val http: Override[
-    followDashRedirectsLib.Anon_Agent, 
+    followDashRedirectsLib.TypeofcoreHttp, 
     RedirectScheme[
       nodeLib.httpMod.RequestOptions, 
       nodeLib.httpMod.ClientRequest, 
@@ -17,7 +17,7 @@ object ^ extends js.Object {
     ]
   ] = js.native
   val https: Override[
-    followDashRedirectsLib.Anon_AgentCallback, 
+    followDashRedirectsLib.TypeofcoreHttps, 
     RedirectScheme[
       nodeLib.httpsMod.RequestOptions, 
       nodeLib.httpMod.ClientRequest, 

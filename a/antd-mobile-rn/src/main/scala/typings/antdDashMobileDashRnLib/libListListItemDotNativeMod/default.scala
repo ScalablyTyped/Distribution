@@ -13,7 +13,7 @@ class default () extends Item
 @JSImport("antd-mobile-rn/lib/list/ListItem.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Brief: antdDashMobileDashRnLib.Anon_DefaultPropsAnonStylesX = js.native
+  var Brief: antdDashMobileDashRnLib.TypeofClassBrief = js.native
   var defaultProps: stdLib.Partial[antdDashMobileDashRnLib.libListListItemDotNativeMod.ListItemProps] = js.native
 }
 

@@ -56,7 +56,7 @@ object RGBA {
     substract: (scala.Double, scala.Double, scala.Double, scala.Double) => RGBA,
     toBoolean: () => Boolean,
     toExpression: () => Expression,
-    toJSON: () => stylusLib.Anon_ABColumn
+    toJSON: () => stylusLib.Anon_A
   ): RGBA = {
     val __obj = js.Dynamic.literal(a = a, add = js.Any.fromFunction4(add), b = b, clone = js.Any.fromFunction0(clone), coerce = js.Any.fromFunction1(coerce), column = column, divide = js.Any.fromFunction1(divide), eval = js.Any.fromFunction0(eval), filename = filename, first = first, g = g, hash = hash, hsla = hsla, lineno = lineno, multiply = js.Any.fromFunction1(multiply), nodeName = nodeName, operate = js.Any.fromFunction2(operate), r = r, rgba = rgba, shouldCoerce = js.Any.fromFunction1(shouldCoerce), substract = js.Any.fromFunction4(substract), toBoolean = js.Any.fromFunction0(toBoolean), toExpression = js.Any.fromFunction0(toExpression), toJSON = js.Any.fromFunction0(toJSON))
   

@@ -10,7 +10,7 @@ trait IColumnDef[TEntity] extends js.Object {
     * If specified, either a value or function evaluated before editing cell.
     * If falsy, then editing of cell is not allowed.
     */
-  var cellEditableCondition: js.UndefOr[js.Any | uiDashGridLib.Anon_Scope] = js.undefined
+  var cellEditableCondition: js.UndefOr[js.Any | uiDashGridLib.Fn_Scope] = js.undefined
   /** A filter that you would like to apply to the values in the options list of the dropdown */
   var editDropdownFilter: js.UndefOr[java.lang.String] = js.undefined
   /** the label for the "id" field in the editDropdownOptionsArray. Defaults to 'id' */
@@ -93,7 +93,7 @@ trait IColumnDef[TEntity] extends js.Object {
 object IColumnDef {
   @scala.inline
   def apply[TEntity](
-    cellEditableCondition: js.Any | uiDashGridLib.Anon_Scope = null,
+    cellEditableCondition: js.Any | uiDashGridLib.Fn_Scope = null,
     editDropdownFilter: java.lang.String = null,
     editDropdownIdLabel: java.lang.String = null,
     editDropdownOptionsArray: js.Array[IEditDropdown] = null,

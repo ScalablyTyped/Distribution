@@ -113,7 +113,7 @@ object BdApiModuleNs extends js.Object {
     val Children: reactLib.reactMod.ReactChildren = js.native
     // Base component for plain JS classes
     // tslint:disable-next-line:no-empty-interface
-    var Component: atBandagedbdBdapiLib.Anon_ContextType = js.native
+    var Component: atBandagedbdBdapiLib.TypeofClassComponent = js.native
     val Fragment: reactLib.reactMod.ExoticComponent[reactLib.Anon_Children] = js.native
     var PureComponent: org.scalablytyped.runtime.Instantiable0[reactLib.reactMod.PureComponent[js.Object, js.Object, js.Object]] = js.native
     val StrictMode: reactLib.reactMod.ExoticComponent[reactLib.Anon_Children] = js.native

@@ -43,7 +43,7 @@ object Observable extends js.Object {
     * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
     */
   @JSName("if")
-  var if_Original: rxjsLib.Anon_Condition = js.native
+  var if_Original: rxjsLib.Fn_Condition = js.native
   /**
     * @nocollapse
     * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
@@ -58,12 +58,12 @@ object Observable extends js.Object {
     * @nocollapse
     * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
     */
-  /* Expanded */ def `if`[T, F](condition: js.Function0[scala.Boolean]): rxjsLib.internalObservableMod.Observable[T | F] = js.native
+  def `if`[T, F](condition: js.Function0[scala.Boolean]): rxjsLib.internalObservableMod.Observable[T | F] = js.native
   /**
     * @nocollapse
     * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
     */
-  /* Expanded */ def `if`[T, F](
+  def `if`[T, F](
     condition: js.Function0[scala.Boolean],
     trueResult: rxjsLib.internalTypesMod.SubscribableOrPromise[T]
   ): rxjsLib.internalObservableMod.Observable[T | F] = js.native
@@ -71,7 +71,7 @@ object Observable extends js.Object {
     * @nocollapse
     * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
     */
-  /* Expanded */ def `if`[T, F](
+  def `if`[T, F](
     condition: js.Function0[scala.Boolean],
     trueResult: rxjsLib.internalTypesMod.SubscribableOrPromise[T],
     falseResult: rxjsLib.internalTypesMod.SubscribableOrPromise[F]
@@ -80,7 +80,7 @@ object Observable extends js.Object {
     * @nocollapse
     * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
     */
-  /* Expanded */ def `throw`(error: js.Any): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
+  def `throw`(error: js.Any): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
   def `throw`(error: js.Any, scheduler: rxjsLib.internalTypesMod.SchedulerLike): rxjsLib.internalObservableMod.Observable[scala.Nothing] = js.native
 }
 

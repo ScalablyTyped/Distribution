@@ -14,9 +14,9 @@ class Navbar ()
 @JSImport("@blueprintjs/core/lib/esm/components", "Navbar")
 @js.native
 object Navbar extends js.Object {
-  var Divider: atBlueprintjsCoreLib.Anon_DisplayNameNavbarDivider = js.native
-  var Group: atBlueprintjsCoreLib.Anon_DefaultPropsDisplayName = js.native
-  var Heading: atBlueprintjsCoreLib.Anon_DisplayNameNavbarHeading = js.native
+  var Divider: atBlueprintjsCoreLib.TypeofClassNavbarDivider = js.native
+  var Group: atBlueprintjsCoreLib.TypeofClassNavbarGroup = js.native
+  var Heading: atBlueprintjsCoreLib.TypeofClassNavbarHeading = js.native
   var displayName: java.lang.String = js.native
 }
 

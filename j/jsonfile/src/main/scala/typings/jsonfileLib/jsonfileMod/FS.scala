@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FS extends js.Object {
   @JSName("readFileSync")
-  var readFileSync_Original: jsonfileLib.Anon_Options = js.native
+  var readFileSync_Original: jsonfileLib.Fn_Options = js.native
   @JSName("readFile")
   var readFile_Original: jsonfileLib.Anon_Callback = js.native
   @JSName("writeFileSync")
-  var writeFileSync_Original: jsonfileLib.Anon_Data = js.native
+  var writeFileSync_Original: jsonfileLib.Fn_Data = js.native
   @JSName("writeFile")
   var writeFile_Original: jsonfileLib.Anon_CallbackData = js.native
   def readFile(

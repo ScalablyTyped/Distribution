@@ -12,7 +12,7 @@ trait PartialTablePaginationProps extends js.Object {
       atMaterialDashUiCoreLib.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
     ]
   ] = js.undefined
-  var SelectProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.selectSelectMod.SelectProps]] = js.undefined
+  var SelectProps: js.UndefOr[PartialSelectProps] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var align: js.UndefOr[
@@ -115,16 +115,10 @@ trait PartialTablePaginationProps extends js.Object {
   var autoCapitalize: js.UndefOr[java.lang.String] = js.undefined
   var autoCorrect: js.UndefOr[java.lang.String] = js.undefined
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
-  var backIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.undefined
+  var backIconButtonProps: js.UndefOr[PartialIconButtonProps] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[
-        atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationClassKey
-      ]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapTablePaginationClassKey] = js.undefined
   var colSpan: js.UndefOr[scala.Double] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
@@ -161,7 +155,7 @@ trait PartialTablePaginationProps extends js.Object {
   ] = js.undefined
   var labelRowsPerPage: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var lang: js.UndefOr[java.lang.String] = js.undefined
-  var nextIconButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]] = js.undefined
+  var nextIconButtonProps: js.UndefOr[PartialIconButtonProps] = js.undefined
   var numeric: js.UndefOr[scala.Boolean] = js.undefined
   var onAbort: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLTableHeaderCellElement]] = js.undefined
   var onAbortCapture: js.UndefOr[reactLib.reactMod.ReactEventHandler[stdLib.HTMLTableHeaderCellElement]] = js.undefined
@@ -371,7 +365,7 @@ object PartialTablePaginationProps {
     ActionsComponent: reactLib.reactMod.ReactType[
       atMaterialDashUiCoreLib.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
     ] = null,
-    SelectProps: stdLib.Partial[atMaterialDashUiCoreLib.selectSelectMod.SelectProps] = null,
+    SelectProps: PartialSelectProps = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     align: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.center | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.justify = null,
@@ -426,14 +420,10 @@ object PartialTablePaginationProps {
     autoCapitalize: java.lang.String = null,
     autoCorrect: java.lang.String = null,
     autoSave: java.lang.String = null,
-    backIconButtonProps: stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps] = null,
+    backIconButtonProps: PartialIconButtonProps = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[
-        atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationClassKey
-      ]
-    ] = null,
+    classes: PartialClassNameMapTablePaginationClassKey = null,
     colSpan: scala.Int | scala.Double = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[
@@ -463,7 +453,7 @@ object PartialTablePaginationProps {
     labelDisplayedRows: /* paginationInfo */ atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.LabelDisplayedRowsArgs => reactLib.reactMod.ReactNode = null,
     labelRowsPerPage: reactLib.reactMod.ReactNode = null,
     lang: java.lang.String = null,
-    nextIconButtonProps: stdLib.Partial[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps] = null,
+    nextIconButtonProps: PartialIconButtonProps = null,
     numeric: js.UndefOr[scala.Boolean] = js.undefined,
     onAbort: reactLib.reactMod.ReactEventHandler[stdLib.HTMLTableHeaderCellElement] = null,
     onAnimationEnd: reactLib.reactMod.AnimationEventHandler[stdLib.HTMLTableHeaderCellElement] = null,

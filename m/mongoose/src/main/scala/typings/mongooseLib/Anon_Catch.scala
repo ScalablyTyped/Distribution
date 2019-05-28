@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Catch extends js.Object {
   @JSName("catch")
-  var catch_Original: Anon_Onrejected = js.native
+  var catch_Original: Fn_Onrejected = js.native
   @JSName("then")
-  var then_Original: Anon_Onfulfilled = js.native
+  var then_Original: Fn_Onfulfilled = js.native
   def `catch`[TResult](): js.Promise[mongooseLib.mongooseMod.Connection | TResult] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[mongooseLib.mongooseMod.Connection | TResult] = js.native
   def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Window extends js.Object {
   var BlobEvent: org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ BlobEventInit, BlobEvent]
-  var MediaRecorder: Anon_IsTypeSupported
+  var MediaRecorder: TypeofClassMediaRecorder
   var MediaRecorderErrorEvent: org.scalablytyped.runtime.Instantiable2[
     /* type */ java.lang.String, 
     /* eventInitDict */ MediaRecorderErrorEventInit, 
@@ -19,7 +19,7 @@ object Window {
   @scala.inline
   def apply(
     BlobEvent: org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ BlobEventInit, BlobEvent],
-    MediaRecorder: Anon_IsTypeSupported,
+    MediaRecorder: TypeofClassMediaRecorder,
     MediaRecorderErrorEvent: org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ MediaRecorderErrorEventInit, 

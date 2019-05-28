@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rx-node"
-version := "0.0-unknown-dt-20190322Z-4551fd"
+version := "0.0-unknown-dt-20190322Z-398620"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
   "org.scalablytyped" %%% "rx-core" % "4.0-dt-20190322Z-b18b5a",
-  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20190322Z-398942",
+  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20190322Z-a946f6",
   "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20190322Z-0fdb45",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false

@@ -9,7 +9,7 @@ package object betterDashSqlite3Mod {
   type ArgumentTypes[F /* <: VariableArgFunction */] = js.Any
   type ColumnDefinition = betterDashSqlite3Lib.betterDashSqlite3Mod.BetterSqlite3Ns.ColumnDefinition
   type Database = betterDashSqlite3Lib.betterDashSqlite3Mod.BetterSqlite3Ns.Database
-  type Integer = (js.Function1[/* val */ integerLib.integerMod.IntLike, integerLib.integerMod.IntClass]) with betterDashSqlite3Lib.Anon_DefaultVal
+  type Integer = (js.Function1[/* val */ integerLib.integerMod.IntLike, integerLib.integerMod.IntClass]) with betterDashSqlite3Lib.TypeofInteger
   type SqliteError = org.scalablytyped.runtime.Instantiable2[
     /* message */ java.lang.String, 
     /* code */ java.lang.String, 

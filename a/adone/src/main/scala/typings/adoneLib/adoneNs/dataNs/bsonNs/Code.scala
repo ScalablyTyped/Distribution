@@ -24,6 +24,6 @@ class Code protected ()
   override var _bsontype: java.lang.String = js.native
   @JSName("_bsontype")
   var _bsontype_Code: adoneLib.adoneLibStrings.Code = js.native
-  def toJSON(): adoneLib.Anon_CodeScope = js.native
+  def toJSON(): adoneLib.Anon_Code = js.native
 }
 

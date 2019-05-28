@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "openui5"
-version := "1.40-dt-20190322Z-553995"
+version := "1.40-dt-20190322Z-6e8260"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

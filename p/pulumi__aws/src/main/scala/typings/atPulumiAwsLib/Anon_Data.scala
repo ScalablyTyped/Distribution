@@ -5,25 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Anon_Data
-  extends org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.DynamoDBNs.Converter] {
-  def input(data: js.Any): awsDashSdkLib.clientsDynamodbMod.AttributeValue = js.native
-  def input(data: js.Any, options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions): awsDashSdkLib.clientsDynamodbMod.AttributeValue = js.native
-  def marshall(data: org.scalablytyped.runtime.StringDictionary[js.Any]): awsDashSdkLib.clientsDynamodbMod.AttributeMap = js.native
-  def marshall(
-    data: org.scalablytyped.runtime.StringDictionary[js.Any],
-    options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
-  ): awsDashSdkLib.clientsDynamodbMod.AttributeMap = js.native
-  def output(data: awsDashSdkLib.clientsDynamodbMod.AttributeValue): js.Any = js.native
-  def output(
-    data: awsDashSdkLib.clientsDynamodbMod.AttributeValue,
-    options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
-  ): js.Any = js.native
-  def unmarshall(data: awsDashSdkLib.clientsDynamodbMod.AttributeMap): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  def unmarshall(
-    data: awsDashSdkLib.clientsDynamodbMod.AttributeMap,
-    options: awsDashSdkLib.libDynamodbConverterMod.ConverterNs.ConverterOptions
-  ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+trait Anon_Data extends js.Object {
+  var data: java.lang.String
+}
+
+object Anon_Data {
+  @scala.inline
+  def apply(data: java.lang.String): Anon_Data = {
+    val __obj = js.Dynamic.literal(data = data)
+  
+    __obj.asInstanceOf[Anon_Data]
+  }
 }
 

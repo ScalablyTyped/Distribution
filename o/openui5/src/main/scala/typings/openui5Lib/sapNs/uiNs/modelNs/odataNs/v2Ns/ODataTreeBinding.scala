@@ -13,7 +13,7 @@ class ODataTreeBinding protected ()
   def this(oModel: openui5Lib.sapNs.uiNs.modelNs.Model, sPath: java.lang.String, oContext: openui5Lib.sapNs.uiNs.modelNs.Context, aApplicationFilters: js.Array[openui5Lib.sapNs.uiNs.modelNs.Filter]) = this()
   def this(oModel: openui5Lib.sapNs.uiNs.modelNs.Model, sPath: java.lang.String, oContext: openui5Lib.sapNs.uiNs.modelNs.Context, aApplicationFilters: js.Array[openui5Lib.sapNs.uiNs.modelNs.Filter], mParameters: js.Any) = this()
   def this(oModel: openui5Lib.sapNs.uiNs.modelNs.Model, sPath: java.lang.String, oContext: openui5Lib.sapNs.uiNs.modelNs.Context, aApplicationFilters: js.Array[openui5Lib.sapNs.uiNs.modelNs.Filter], mParameters: js.Any, aSorters: js.Array[openui5Lib.sapNs.uiNs.modelNs.Sorter]) = this()
-  def filter(aFilters: openui5Lib.sapNs.uiNs.modelNs.Filter, sFilterType: openui5Lib.Anon_Application): ODataTreeBinding = js.native
+  def filter(aFilters: openui5Lib.sapNs.uiNs.modelNs.Filter, sFilterType: openui5Lib.TypeofFilterType): ODataTreeBinding = js.native
   /**
     * Get a download URL with the specified format considering thesort/filter/custom parameters.
     * @since 1.28

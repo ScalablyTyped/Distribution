@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/MobileStepper.MobileStepperProps> */
 trait PartialMobileStepperProps extends js.Object {
-  var LinearProgressProps: js.UndefOr[
-    stdLib.Partial[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps]
-  ] = js.undefined
+  var LinearProgressProps: js.UndefOr[PartialLinearProgressProps] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var activeStep: js.UndefOr[scala.Double] = js.undefined
@@ -113,11 +111,7 @@ trait PartialMobileStepperProps extends js.Object {
   var backButton: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapMobileStepperClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -335,7 +329,7 @@ trait PartialMobileStepperProps extends js.Object {
 object PartialMobileStepperProps {
   @scala.inline
   def apply(
-    LinearProgressProps: stdLib.Partial[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps] = null,
+    LinearProgressProps: PartialLinearProgressProps = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     activeStep: scala.Int | scala.Double = null,
@@ -393,9 +387,7 @@ object PartialMobileStepperProps {
     backButton: reactLib.reactMod.ReactElement[_] = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperClassKey]
-    ] = null,
+    classes: PartialClassNameMapMobileStepperClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

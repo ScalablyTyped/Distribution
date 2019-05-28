@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-fileinput"
-version := "0.0-unknown-dt-20190322Z-c98cc1"
+version := "0.0-unknown-dt-20190322Z-ad46c7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

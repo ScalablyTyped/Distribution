@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "leaflet_dot_locatecontrol"
-version := "0.60-dt-20180608Z-564eb9"
+version := "0.60-dt-20180608Z-3ba669"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-dbce77",
-  "org.scalablytyped" %%% "leaflet" % "1.4-dt-20190417Z-5f94a4",
+  "org.scalablytyped" %%% "leaflet" % "1.4-dt-20190417Z-667397",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -33,7 +33,7 @@ package object victoryMod {
   /**
     * Data getter property type
     */
-  type DataGetterPropType = scala.Double | java.lang.String | js.Array[java.lang.String] | victoryLib.Anon_DataAnyArray
+  type DataGetterPropType = scala.Double | java.lang.String | js.Array[java.lang.String] | victoryLib.Fn_DataAnyArray
   /**
     * Domain padding
     */

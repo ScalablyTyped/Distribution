@@ -14,7 +14,7 @@ class Element protected () extends js.Object {
   var attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var children: js.Array[Element] = js.native
   @JSName("clone")
-  var clone_Original: ltxLib.Anon_El = js.native
+  var clone_Original: ltxLib.Fn_El = js.native
   var name: java.lang.String = js.native
   var parent: Element | scala.Null = js.native
   def attr(attr: java.lang.String): js.Any = js.native

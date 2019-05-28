@@ -20,7 +20,7 @@ trait Props extends js.Object {
       reactLib.reactMod.Global.JSXNs.Element | java.lang.String
     ]
   ] = js.undefined
-  var googleMaps: reactDashGoogleDashPlacesDashSuggestLib.Anon_Adsense
+  var googleMaps: reactDashGoogleDashPlacesDashSuggestLib.Typeofmaps
   var onSelectSuggest: js.UndefOr[
     js.Function2[/* geocodedPrediction */ GeocodedPrediction, /* originalPrediction */ Prediction, _]
   ] = js.undefined
@@ -31,7 +31,7 @@ object Props {
   @scala.inline
   def apply(
     autocompletionRequest: googlemapsLib.googleNs.mapsNs.placesNs.AutocompletionRequest,
-    googleMaps: reactDashGoogleDashPlacesDashSuggestLib.Anon_Adsense,
+    googleMaps: reactDashGoogleDashPlacesDashSuggestLib.Typeofmaps,
     children: reactLib.reactMod.ReactNode = null,
     customContainerRender: /* predictions */ js.Array[Prediction] => reactLib.reactMod.Global.JSXNs.Element | java.lang.String = null,
     customRender: /* prediction */ js.UndefOr[Prediction] => reactLib.reactMod.Global.JSXNs.Element | java.lang.String = null,

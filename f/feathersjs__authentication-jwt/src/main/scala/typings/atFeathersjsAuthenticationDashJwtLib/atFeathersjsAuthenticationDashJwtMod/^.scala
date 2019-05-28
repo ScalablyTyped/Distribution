@@ -12,6 +12,6 @@ object ^ extends js.Object {
   val default: (js.Function1[
     /* options */ js.UndefOr[stdLib.Partial[FeathersAuthenticationJWTOptions]], 
     js.Function0[scala.Unit]
-  ]) with atFeathersjsAuthenticationDashJwtLib.Anon_App = js.native
+  ]) with atFeathersjsAuthenticationDashJwtLib.Typeofself = js.native
 }
 

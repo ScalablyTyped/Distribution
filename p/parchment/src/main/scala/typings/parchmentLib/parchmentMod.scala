@@ -11,15 +11,15 @@ object parchmentMod extends js.Object {
   @js.native
   object default extends js.Object {
     var Attributor: parchmentLib.Anon_AttributeClass = js.native
-    var Block: parchmentLib.Anon_BlotNameDomNode = js.native
-    var Container: parchmentLib.Anon_AllowedChildren = js.native
-    var Embed: parchmentLib.Anon_DomNodeFormats = js.native
-    var Format: parchmentLib.Anon_DomNode = js.native
-    var Inline: parchmentLib.Anon_BlotNameDomNodeFormats = js.native
-    var Leaf: parchmentLib.Anon_DomNodeScope = js.native
+    var Block: parchmentLib.TypeofClassBlockBlot = js.native
+    var Container: parchmentLib.TypeofClassContainerBlot = js.native
+    var Embed: parchmentLib.TypeofClassEmbedBlot = js.native
+    var Format: parchmentLib.TypeofClassFormatBlot = js.native
+    var Inline: parchmentLib.TypeofClassInlineBlot = js.native
+    var Leaf: parchmentLib.TypeofClassLeafBlot = js.native
     var Scope: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Registry.Scope */ js.Any = js.native
-    var Scroll: parchmentLib.Anon_BlotName = js.native
-    var Text: parchmentLib.Anon_BlotNameCreate = js.native
+    var Scroll: parchmentLib.TypeofClassScrollBlot = js.native
+    var Text: parchmentLib.TypeofClassTextBlot = js.native
     @JSName("create")
     var create_Original: js.Function2[
         /* input */ stdLib.Node | java.lang.String | parchmentLib.distSrcRegistryMod.Scope, 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tableify"
-version := "1.1-dt-20181117Z-dfa081"
+version := "1.1-dt-20181117Z-0a7bf1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

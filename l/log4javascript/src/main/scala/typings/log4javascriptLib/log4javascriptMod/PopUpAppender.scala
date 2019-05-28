@@ -36,7 +36,7 @@ class PopUpAppender () extends Appender {
   	 * Adds a function with the name specified to the list of functions available on the command line. This feature may be used
   	 * to add custom functions to the command line.
   	 */
-  def addCommandLineFunction(functionName: java.lang.String, commandLineFunction: log4javascriptLib.Anon_Appender): scala.Unit = js.native
+  def addCommandLineFunction(functionName: java.lang.String, commandLineFunction: log4javascriptLib.Fn_Appender): scala.Unit = js.native
   /**
   	 * Clears all messages from the console window.
   	 */

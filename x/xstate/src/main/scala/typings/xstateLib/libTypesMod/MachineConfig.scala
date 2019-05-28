@@ -34,7 +34,7 @@ object MachineConfig {
     onExit: SingleOrArray[Action[TContext, TEvent]] = null,
     order: scala.Int | scala.Double = null,
     parallel: js.UndefOr[scala.Boolean] = js.undefined,
-    parent: xstateLib.libStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]] = null,
+    parent: xstateLib.libStateNodeMod.StateNode[TContext, _, TEvent] = null,
     states: StatesConfig[TContext, TStateSchema, TEvent] = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: StateTypes = null,

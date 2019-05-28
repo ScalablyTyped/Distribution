@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "color-support"
-version := "1.1-dt-20190208Z-0f298a"
+version := "1.1-dt-20190208Z-dedd53"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

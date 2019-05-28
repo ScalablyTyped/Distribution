@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material__drawer"
-version := "0.43-dt-20190213Z-78b9fe"
+version := "0.43-dt-20190213Z-61099d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -68,7 +68,7 @@ object ^ extends js.Object {
     /* arg5 */ T5, 
     js.Promise[scala.Unit]
   ] = js.native
-  def getPolyfill(): utilDotPromisifyLib.Anon_Arg1 = js.native
-  def shim(): utilDotPromisifyLib.Anon_Arg1 = js.native
+  def getPolyfill(): utilDotPromisifyLib.Fn_Arg1 = js.native
+  def shim(): utilDotPromisifyLib.Fn_Arg1 = js.native
 }
 

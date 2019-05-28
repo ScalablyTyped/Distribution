@@ -136,7 +136,7 @@ object VictoryGroupProps {
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
-    labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
+    labels: js.Array[java.lang.String] | victoryLib.Fn_DataAnyString = null,
     name: java.lang.String = null,
     offset: scala.Int | scala.Double = null,
     padding: PaddingProps = null,

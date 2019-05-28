@@ -8,15 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("remotedev-serialize", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def immutable(immutable: remotedevDashSerializeLib.Anon_CollectionCollections): remotedevDashSerializeLib.Anon_CustomReplacer = js.native
-  def immutable(immutable: remotedevDashSerializeLib.Anon_CollectionCollections, refs: Refs): remotedevDashSerializeLib.Anon_CustomReplacer = js.native
+  def immutable(immutable: remotedevDashSerializeLib.TypeofImmutable): remotedevDashSerializeLib.Anon_CustomReplacer = js.native
+  def immutable(immutable: remotedevDashSerializeLib.TypeofImmutable, refs: Refs): remotedevDashSerializeLib.Anon_CustomReplacer = js.native
+  def immutable(immutable: remotedevDashSerializeLib.TypeofImmutable, refs: Refs, customReplacer: Replacer): remotedevDashSerializeLib.Anon_CustomReplacer = js.native
   def immutable(
-    immutable: remotedevDashSerializeLib.Anon_CollectionCollections,
-    refs: Refs,
-    customReplacer: Replacer
-  ): remotedevDashSerializeLib.Anon_CustomReplacer = js.native
-  def immutable(
-    immutable: remotedevDashSerializeLib.Anon_CollectionCollections,
+    immutable: remotedevDashSerializeLib.TypeofImmutable,
     refs: Refs,
     customReplacer: Replacer,
     customReviver: Reviver

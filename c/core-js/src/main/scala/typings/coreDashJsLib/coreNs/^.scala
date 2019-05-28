@@ -20,7 +20,7 @@ object ^ extends js.Object {
   val version: java.lang.String = js.native
   @JSName("$for")
   def $for[T](iterable: stdLib.Iterable[T]): coreDashJsLib.$for[T] = js.native
-  def addLocale(lang: java.lang.String, locale: Locale): coreDashJsLib.Anon_ = js.native
+  def addLocale(lang: java.lang.String, locale: Locale): coreDashJsLib.Typeofcore = js.native
   def clearImmediate(handle: scala.Double): scala.Unit = js.native
   def delay(msec: scala.Double): js.Promise[scala.Unit] = js.native
   def getIterator[T](iterable: stdLib.Iterable[T]): stdLib.Iterator[T] = js.native

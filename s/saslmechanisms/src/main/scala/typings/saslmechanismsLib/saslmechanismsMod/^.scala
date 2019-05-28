@@ -12,6 +12,6 @@ class ^ () extends Factory
 @JSImport("saslmechanisms", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Factory: saslmechanismsLib.Anon_Factory = js.native
+  var Factory: saslmechanismsLib.TypeofClassFactory = js.native
 }
 

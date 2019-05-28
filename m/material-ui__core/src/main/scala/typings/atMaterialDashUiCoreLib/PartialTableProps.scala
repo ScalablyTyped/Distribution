@@ -110,11 +110,7 @@ trait PartialTableProps extends js.Object {
   var cellSpacing: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.tableTableMod.TableClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapTableClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.tableTableMod.TableBaseProps]
@@ -383,9 +379,7 @@ object PartialTableProps {
     cellSpacing: scala.Double | java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.tableTableMod.TableClassKey]
-    ] = null,
+    classes: PartialClassNameMapTableClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.tableTableMod.TableBaseProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

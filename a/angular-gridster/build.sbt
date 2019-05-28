@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular-gridster"
-version := "0.13-dt-20190212Z-2d53e1"
+version := "0.13-dt-20190212Z-0d3497"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-d7819f",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-016930",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -29,8 +29,8 @@ trait Remote extends MainInterface {
 object Remote {
   @scala.inline
   def apply(
-    BrowserView: electronLib.Anon_FromId,
-    BrowserWindow: electronLib.Anon_AddDevToolsExtension,
+    BrowserView: electronLib.TypeofClassBrowserView,
+    BrowserWindow: electronLib.TypeofClassBrowserWindow,
     ClientRequest: org.scalablytyped.runtime.Instantiable1[
       /* options */ electronLib.electronLibStrings.method | electronLib.electronLibStrings.url | electronLib.electronLibStrings.session | electronLib.electronLibStrings.partition | electronLib.electronLibStrings.protocol | electronLib.electronLibStrings.host | electronLib.electronLibStrings.hostname | electronLib.electronLibStrings.port | electronLib.electronLibStrings.path | electronLib.electronLibStrings.redirect, 
       ClientRequest
@@ -39,10 +39,10 @@ object Remote {
     Debugger: org.scalablytyped.runtime.Instantiable0[Debugger],
     DownloadItem: org.scalablytyped.runtime.Instantiable0[DownloadItem],
     IncomingMessage: org.scalablytyped.runtime.Instantiable0[IncomingMessage],
-    Menu: electronLib.Anon_Action,
+    Menu: electronLib.TypeofClassMenu,
     MenuItem: org.scalablytyped.runtime.Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem],
-    Notification: electronLib.Anon_IsSupported,
-    TouchBar: electronLib.Anon_Options,
+    Notification: electronLib.TypeofClassNotification,
+    TouchBar: electronLib.TypeofClassTouchBar,
     Tray: org.scalablytyped.runtime.Instantiable1[/* image */ NativeImage | java.lang.String, Tray],
     WebRequest: org.scalablytyped.runtime.Instantiable0[WebRequest],
     app: App,
@@ -57,7 +57,7 @@ object Remote {
     globalShortcut: GlobalShortcut,
     inAppPurchase: InAppPurchase,
     ipcMain: IpcMain,
-    nativeImage: electronLib.Anon_Buffer,
+    nativeImage: electronLib.TypeofClassNativeImage,
     net: Net,
     netLog: NetLog,
     powerMonitor: PowerMonitor,
@@ -65,10 +65,10 @@ object Remote {
     protocol: Protocol,
     require: java.lang.String => js.Any,
     screen: Screen,
-    session: electronLib.Anon_DefaultSession,
+    session: electronLib.TypeofClassSession,
     shell: Shell,
     systemPreferences: SystemPreferences,
-    webContents: electronLib.Anon_FromIdGetAllWebContents,
+    webContents: electronLib.TypeofClassWebContents,
     process: js.Any = null
   ): Remote = {
     val __obj = js.Dynamic.literal(BrowserView = BrowserView, BrowserWindow = BrowserWindow, ClientRequest = ClientRequest, Cookies = Cookies, Debugger = Debugger, DownloadItem = DownloadItem, IncomingMessage = IncomingMessage, Menu = Menu, MenuItem = MenuItem, Notification = Notification, TouchBar = TouchBar, Tray = Tray, WebRequest = WebRequest, app = app, autoUpdater = autoUpdater, clipboard = clipboard, contentTracing = contentTracing, crashReporter = crashReporter, dialog = dialog, getCurrentWebContents = js.Any.fromFunction0(getCurrentWebContents), getCurrentWindow = js.Any.fromFunction0(getCurrentWindow), getGlobal = js.Any.fromFunction1(getGlobal), globalShortcut = globalShortcut, inAppPurchase = inAppPurchase, ipcMain = ipcMain, nativeImage = nativeImage, net = net, netLog = netLog, powerMonitor = powerMonitor, powerSaveBlocker = powerSaveBlocker, protocol = protocol, require = js.Any.fromFunction1(require), screen = screen, session = session, shell = shell, systemPreferences = systemPreferences, webContents = webContents)

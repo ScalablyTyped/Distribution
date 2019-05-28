@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait D3Context extends js.Object {
   @JSName("dispatch")
-  var dispatch_Original: webcolaLib.Anon_Types = js.native
+  var dispatch_Original: webcolaLib.Fn_Types = js.native
   @JSName("drag")
-  var drag_Original: webcolaLib.Anon_Datum = js.native
+  var drag_Original: webcolaLib.Fn_Datum = js.native
   var event: js.Any = js.native
   @JSName("timer")
-  var timer_Original: webcolaLib.Anon_Callback = js.native
+  var timer_Original: webcolaLib.Fn_Callback = js.native
   def dispatch[T /* <: stdLib.EventTarget */](types: java.lang.String*): d3DashDispatchLib.d3DashDispatchMod.Dispatch[T] = js.native
   def drag[GElement /* <: d3DashDragLib.d3DashDragMod.DraggedElementBaseType */, Datum](): d3DashDragLib.d3DashDragMod.DragBehavior[GElement, Datum, Datum | d3DashDragLib.d3DashDragMod.SubjectPosition] = js.native
   @JSName("drag")

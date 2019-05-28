@@ -98,7 +98,7 @@ object ModelNs extends js.Object {
   val destroy: DestroyOperation = js.native
   val get: GetOperation = js.native
   val getItems: GetItemsOperation = js.native
-  val itemFactory: dynamodbLib.Anon_After with (org.scalablytyped.runtime.Instantiable1[/* attrs */ js.Any, dynamodbLib.modelMod.Model]) = js.native
+  val itemFactory: dynamodbLib.TypeofModel with (org.scalablytyped.runtime.Instantiable1[/* attrs */ js.Any, dynamodbLib.modelMod.Model]) = js.native
   val log: bunyanLib.bunyanMod.^ = js.native
   val update: UpdateOperation = js.native
   def batchGetItems(hashKey: java.lang.String, rangeKey: java.lang.String, options: js.Any): js.Promise[_] | scala.Unit = js.native

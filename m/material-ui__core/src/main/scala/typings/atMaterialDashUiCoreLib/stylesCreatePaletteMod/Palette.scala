@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Palette extends js.Object {
   var action: TypeAction
-  var augmentColor: atMaterialDashUiCoreLib.Anon_Color
+  var augmentColor: atMaterialDashUiCoreLib.Fn_Color
   var background: TypeBackground
   var common: atMaterialDashUiCoreLib.colorsCommonMod.CommonColors
   var contrastThreshold: scala.Double
@@ -26,7 +26,7 @@ object Palette {
   @scala.inline
   def apply(
     action: TypeAction,
-    augmentColor: atMaterialDashUiCoreLib.Anon_Color,
+    augmentColor: atMaterialDashUiCoreLib.Fn_Color,
     background: TypeBackground,
     common: atMaterialDashUiCoreLib.colorsCommonMod.CommonColors,
     contrastThreshold: scala.Double,

@@ -91,16 +91,16 @@ trait VictoryLabelProps extends js.Object {
   /**
     * The textAnchor prop defines how the text is horizontally positioned relative to the given `x` and `y` coordinates.
     */
-  var textAnchor: js.UndefOr[TextAnchorType | victoryLib.Anon_TextAnchorType] = js.undefined
+  var textAnchor: js.UndefOr[TextAnchorType | victoryLib.Fn_TextAnchorType] = js.undefined
   /**
     * The transform prop applies a transform to the rendered `<text>` element.
     * In addition to being a string, it can be an object containing transform definitions for easier authoring.
     */
-  var transform: js.UndefOr[java.lang.String | js.Object | victoryLib.Anon_String] = js.undefined
+  var transform: js.UndefOr[java.lang.String | js.Object | victoryLib.Fn_String] = js.undefined
   /**
     * The verticalAnchor prop defines how the text is vertically positioned relative to the given `x` and `y` coordinates.
     */
-  var verticalAnchor: js.UndefOr[VerticalAnchorType | victoryLib.Anon_VerticalAnchorType] = js.undefined
+  var verticalAnchor: js.UndefOr[VerticalAnchorType | victoryLib.Fn_VerticalAnchorType] = js.undefined
   /**
     * The x prop defines the x coordinate to use as a basis for horizontal positioning.
     */
@@ -129,9 +129,9 @@ object VictoryLabelProps {
     renderInPortal: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
     text: js.Array[java.lang.String] | StringOrNumberOrCallback = null,
-    textAnchor: TextAnchorType | victoryLib.Anon_TextAnchorType = null,
-    transform: java.lang.String | js.Object | victoryLib.Anon_String = null,
-    verticalAnchor: VerticalAnchorType | victoryLib.Anon_VerticalAnchorType = null,
+    textAnchor: TextAnchorType | victoryLib.Fn_TextAnchorType = null,
+    transform: java.lang.String | js.Object | victoryLib.Fn_String = null,
+    verticalAnchor: VerticalAnchorType | victoryLib.Fn_VerticalAnchorType = null,
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): VictoryLabelProps = {

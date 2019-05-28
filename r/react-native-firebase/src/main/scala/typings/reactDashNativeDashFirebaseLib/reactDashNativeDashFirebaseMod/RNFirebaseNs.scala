@@ -99,6 +99,13 @@ object RNFirebaseNs extends js.Object {
     var token: java.lang.String
   }
   
+  trait NativeError
+    extends stdLib.Error {
+    var code: java.lang.String
+    var nativeErrorCode: js.UndefOr[java.lang.String] = js.undefined
+    var nativeErrorMessage: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
   trait PhoneAuthError extends js.Object {
     var code: java.lang.String | scala.Null
     var message: java.lang.String | scala.Null
@@ -126,7 +133,7 @@ object RNFirebaseNs extends js.Object {
   
   trait PhoneAuthSnapshot extends js.Object {
     var code: java.lang.String | scala.Null
-    var error: stdLib.Error | scala.Null
+    var error: NativeError | scala.Null
     var state: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.sent | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.timeout | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.verified | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.error
     var verificationId: java.lang.String
   }
@@ -983,6 +990,7 @@ object RNFirebaseNs extends js.Object {
       val firestore: Firestore = js.native
       val id: java.lang.String = js.native
       val parent: DocumentReference = js.native
+      val path: java.lang.String = js.native
       def add(data: js.Object): js.Promise[DocumentReference] = js.native
       def doc(): DocumentReference = js.native
       def doc(documentPath: java.lang.String): DocumentReference = js.native
@@ -994,6 +1002,7 @@ object RNFirebaseNs extends js.Object {
       def get(
         options: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.GetOptions
       ): js.Promise[QuerySnapshot] = js.native
+      def isEqual(otherCollectionReference: CollectionReference): scala.Boolean = js.native
       def limit(limit: scala.Double): Query = js.native
       def onSnapshot(
         metadataChanges: MetadataChanges,
@@ -1168,11 +1177,11 @@ object RNFirebaseNs extends js.Object {
     
     @js.native
     trait FirestoreStatics extends js.Object {
-      var Blob: reactDashNativeDashFirebaseLib.Anon_Array = js.native
-      var FieldPath: reactDashNativeDashFirebaseLib.Anon_DocumentId = js.native
-      var FieldValue: reactDashNativeDashFirebaseLib.Anon_ArrayRemove = js.native
+      var Blob: reactDashNativeDashFirebaseLib.TypeofClassBlob = js.native
+      var FieldPath: reactDashNativeDashFirebaseLib.TypeofClassFieldPath = js.native
+      var FieldValue: reactDashNativeDashFirebaseLib.TypeofClassFieldValue = js.native
       var GeoPoint: org.scalablytyped.runtime.Instantiable2[/* latitude */ scala.Double, /* longitude */ scala.Double, GeoPoint] = js.native
-      var Timestamp: reactDashNativeDashFirebaseLib.Anon_Date = js.native
+      var Timestamp: reactDashNativeDashFirebaseLib.TypeofClassTimestamp = js.native
       def enableLogging(enabled: scala.Boolean): scala.Unit = js.native
       @JSName("setLogLevel")
       def setLogLevel_debug(logLevel: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.debug): scala.Unit = js.native

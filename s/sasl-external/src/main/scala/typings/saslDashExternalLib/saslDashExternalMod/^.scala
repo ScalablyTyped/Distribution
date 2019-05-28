@@ -26,6 +26,6 @@ class ^ () extends ExternalMechanism {
 @JSImport("sasl-external", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Mechanism: saslDashExternalLib.Anon_Mechanism = js.native
+  var Mechanism: saslDashExternalLib.TypeofClassExternalMechanism = js.native
 }
 

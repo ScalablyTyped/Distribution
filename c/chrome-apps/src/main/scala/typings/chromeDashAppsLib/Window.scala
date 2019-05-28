@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Window extends ChromeWindow {
   var AppView: org.scalablytyped.runtime.Instantiable0[HTMLAppViewElement] = js.native
-  var WebView: org.scalablytyped.runtime.Instantiable0[HTMLWebViewElement] with Anon_Events = js.native
-  var chrome: Anon_AccessibilityFeatures = js.native
+  var WebView: org.scalablytyped.runtime.Instantiable0[HTMLWebViewElement] with TypeofWebView = js.native
+  var chrome: Typeofchrome = js.native
 }
 

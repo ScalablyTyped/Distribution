@@ -37,7 +37,9 @@ import scala.scalajs.js.annotation._
   var plugins: js.UndefOr[js.Array[PluginDefinition]] = js.undefined
   var resolvers: js.UndefOr[graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]] = js.undefined
   var schema: js.UndefOr[graphqlLib.graphqlMod.GraphQLSchema] = js.undefined
-  var schemaDirectives: js.UndefOr[stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.Anon_Config]] = js.undefined
+  var schemaDirectives: js.UndefOr[
+    stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.TypeofClassSchemaDirectiveVisitor]
+  ] = js.undefined
   var subscriptions: js.UndefOr[
     stdLib.Partial[SubscriptionServerOptions] | java.lang.String | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false`
   ] = js.undefined
@@ -70,7 +72,7 @@ object Config {
     plugins: js.Array[PluginDefinition] = null,
     resolvers: graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _] = null,
     schema: graphqlLib.graphqlMod.GraphQLSchema = null,
-    schemaDirectives: stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.Anon_Config] = null,
+    schemaDirectives: stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.TypeofClassSchemaDirectiveVisitor] = null,
     subscriptions: stdLib.Partial[SubscriptionServerOptions] | java.lang.String | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false` = null,
     typeDefs: graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.languageAstMod.DocumentNode] = null,
     uploads: scala.Boolean | FileUploadOptions = null

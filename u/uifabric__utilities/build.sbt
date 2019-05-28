@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "uifabric__utilities"
-version := "6.39.0-ffbfec"
+version := "6.39.0-29335a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-9d1c81",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-336e99",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "uifabric__merge-styles" % "6.17.4-0e2195")
 publishArtifact in packageDoc := false

@@ -109,13 +109,7 @@ trait PartialFormControlLabelProps extends js.Object {
   var checked: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[
-        atMaterialDashUiCoreLib.formControlLabelFormControlLabelMod.FormControlLabelClassKey
-      ]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapFormControlLabelClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
@@ -395,11 +389,7 @@ object PartialFormControlLabelProps {
     checked: scala.Boolean | java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[
-        atMaterialDashUiCoreLib.formControlLabelFormControlLabelMod.FormControlLabelClassKey
-      ]
-    ] = null,
+    classes: PartialClassNameMapFormControlLabelClassKey = null,
     color: java.lang.String = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,

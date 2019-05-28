@@ -12,24 +12,24 @@ trait Kv extends js.Object {
     * Delete
     */
   @JSName("del")
-  var del_Original: consulLib.Anon_CallbackKeyOptsDelOptions = js.native
+  var del_Original: consulLib.Fn_CallbackKeyOptsDelOptions = js.native
   @JSName("delete")
-  var delete_Original: consulLib.Anon_CallbackKeyOptsDeleteOptions = js.native
+  var delete_Original: consulLib.Fn_CallbackKeyOptsDeleteOptions = js.native
   /**
     * Get
     */
   @JSName("get")
-  var get_Original: consulLib.Anon_CallbackKey = js.native
+  var get_Original: consulLib.Fn_CallbackKey = js.native
   /**
     * Keys
     */
   @JSName("keys")
-  var keys_Original: consulLib.Anon_CallbackKeyOpts = js.native
+  var keys_Original: consulLib.Fn_CallbackKeyOpts = js.native
   /**
     * Set
     */
   @JSName("set")
-  var set_Original: consulLib.Anon_CallbackKeyOptsValue = js.native
+  var set_Original: consulLib.Fn_CallbackKeyOptsValue = js.native
   /**
     * Delete
     */

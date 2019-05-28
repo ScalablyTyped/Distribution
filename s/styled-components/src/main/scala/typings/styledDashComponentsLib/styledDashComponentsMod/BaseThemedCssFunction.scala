@@ -10,8 +10,8 @@ trait BaseThemedCssFunction[T /* <: js.Object */] extends js.Object {
   def apply(first: stdLib.TemplateStringsArray, interpolations: SimpleInterpolation*): FlattenSimpleInterpolation = js.native
   def apply(first: CSSObject, interpolations: SimpleInterpolation*): FlattenSimpleInterpolation = js.native
   def apply(
-    first: InterpolationFunction[ThemedStyledProps[js.Object, T]],
-    interpolations: (Interpolation[ThemedStyledProps[js.Object, T]])*
-  ): FlattenInterpolation[ThemedStyledProps[js.Object, T]] = js.native
+    first: InterpolationFunction[styledDashComponentsLib.ThemedStyledPropsT[T]],
+    interpolations: Interpolation[styledDashComponentsLib.ThemedStyledPropsT[T]]*
+  ): FlattenInterpolation[styledDashComponentsLib.ThemedStyledPropsT[T]] = js.native
 }
 

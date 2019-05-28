@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout-paging"
-version := "0.4.0-6c04c4"
+version := "0.4.0-016b24"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

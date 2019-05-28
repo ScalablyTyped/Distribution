@@ -71,6 +71,6 @@ class S3Customizations ()
 @JSImport("aws-sdk/lib/services/s3", "S3Customizations")
 @js.native
 object S3Customizations extends js.Object {
-  var ManagedUpload: awsDashSdkLib.Anon_MaxTotalParts = js.native
+  var ManagedUpload: awsDashSdkLib.TypeofClassManagedUpload = js.native
 }
 

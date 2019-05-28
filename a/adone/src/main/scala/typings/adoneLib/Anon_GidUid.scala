@@ -6,16 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_GidUid extends js.Object {
-  var gid: js.UndefOr[scala.Double] = js.undefined
-  var uid: js.UndefOr[scala.Double] = js.undefined
+  var gid: scala.Double
+  var uid: scala.Double
 }
 
 object Anon_GidUid {
   @scala.inline
-  def apply(gid: scala.Int | scala.Double = null, uid: scala.Int | scala.Double = null): Anon_GidUid = {
-    val __obj = js.Dynamic.literal()
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
+  def apply(gid: scala.Double, uid: scala.Double): Anon_GidUid = {
+    val __obj = js.Dynamic.literal(gid = gid, uid = uid)
+  
     __obj.asInstanceOf[Anon_GidUid]
   }
 }

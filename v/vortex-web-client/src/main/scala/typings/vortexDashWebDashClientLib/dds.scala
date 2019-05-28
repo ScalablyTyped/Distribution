@@ -32,9 +32,9 @@ object dds extends js.Object {
     vortexDashWebDashClientLib.DDSNs.DataWriter
   ] = js.native
   var DataWriterQos: vortexDashWebDashClientLib.DDSNs.EntityQos = js.native
-  var Durability: vortexDashWebDashClientLib.Anon_Persistent = js.native
-  var History: vortexDashWebDashClientLib.Anon_KeepAll = js.native
-  var Reliability: vortexDashWebDashClientLib.Anon_BestEffort = js.native
+  var Durability: vortexDashWebDashClientLib.TypeofClassDurability = js.native
+  var History: vortexDashWebDashClientLib.TypeofClassHistory = js.native
+  var Reliability: vortexDashWebDashClientLib.TypeofClassReliability = js.native
   var Topic: org.scalablytyped.runtime.Instantiable5[
     /* did */ scala.Double, 
     /* tname */ java.lang.String, 

@@ -24,7 +24,7 @@ object stringDotDefaultMod extends js.Object {
     var padEnd: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof padEnd */ js.Any = js.native
     var padStart: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof padStart */ js.Any = js.native
     @JSName("parseInt")
-    var parseInt_Original: lodashDashEsLib.Anon_Radix = js.native
+    var parseInt_Original: lodashDashEsLib.Fn_Radix = js.native
     var repeat: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof repeat */ js.Any = js.native
     var replace: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof replace */ js.Any = js.native
     var snakeCase: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof snakeCase */ js.Any = js.native

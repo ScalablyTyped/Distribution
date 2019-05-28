@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gulp-postcss"
-version := "8.0-dt-20190411Z-c90b90"
+version := "8.0-dt-20190411Z-d3979a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-b0a159")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-99c7ed")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -11,15 +11,15 @@ trait PhinFactory extends js.Object {
     optsOrUrl: (Options with (phinLib.Anon_False | phinLib.Anon_FalseJson | phinLib.Anon_Stream)) | Options
   ): js.Promise[BufferResponse] = js.native
   def apply(optsOrUrl: java.lang.String): js.Promise[BufferResponse] = js.native
-  def defaults(defaultOpts: DefaultOpts with phinLib.Anon_Json): phinLib.Anon_OptsOrUrlAnonFalseJsonParseStream = js.native
+  def defaults(defaultOpts: DefaultOpts with phinLib.Anon_False): phinLib.Fn_OptsOrUrlAnonFalse = js.native
   @JSName("defaults")
-  def defaults_Anon_Opts(defaultOpts: DefaultOpts with phinLib.Anon_None): phinLib.Anon_Opts = js.native
+  def defaults_Fn_Opts(defaultOpts: DefaultOpts with phinLib.Anon_None): phinLib.Fn_Opts = js.native
   @JSName("defaults")
-  def defaults_Anon_OptsOrUrl(defaultOpts: DefaultOpts with phinLib.Anon_FalseJson): phinLib.Anon_OptsOrUrl = js.native
+  def defaults_Fn_OptsOrUrl(defaultOpts: DefaultOpts with phinLib.Anon_FalseJson): phinLib.Fn_OptsOrUrl = js.native
   @JSName("defaults")
-  def defaults_Anon_OptsOrUrlAnonFalse(defaultOpts: DefaultOpts with phinLib.Anon_False): phinLib.Anon_OptsOrUrlAnonFalse = js.native
+  def defaults_Fn_OptsOrUrlAnonFalseJsonParseStream(defaultOpts: DefaultOpts with phinLib.Anon_Json): phinLib.Fn_OptsOrUrlAnonFalseJsonParseStream = js.native
   @JSName("defaults")
-  def defaults_Anon_OptsOrUrlAnonFalseJsonParseStream1840517126(defaultOpts: DefaultOpts): phinLib.Anon_OptsOrUrlAnonFalseJsonParseStream1840517126 = js.native
+  def defaults_Fn_OptsOrUrlAnonFalseJsonParseStream1840517126(defaultOpts: DefaultOpts): phinLib.Fn_OptsOrUrlAnonFalseJsonParseStream1840517126 = js.native
   def promisified(
     optsOrUrl: (Options with (phinLib.Anon_False | phinLib.Anon_FalseJson | phinLib.Anon_Stream)) | Options
   ): js.Promise[BufferResponse] = js.native

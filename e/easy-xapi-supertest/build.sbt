@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "easy-xapi-supertest"
-version := "1.0.0-4afa76"
+version := "1.0.0-da877f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

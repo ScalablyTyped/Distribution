@@ -17,12 +17,12 @@ trait Yog extends js.Object {
   @JSName("express")
   var express_Original: (js.Function0[
     expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Express
-  ]) with yog2DashKernelLib.Anon_Application = js.native
+  ]) with yog2DashKernelLib.Typeofexpress = js.native
   var log: yogDashLogLib.yogDashLogMod.Logger = js.native
   // 当 yog.conf.promise.overrideRAL 为true时，可以当作promise使用
-  var ral: yog2DashKernelLib.Anon_AppendExtPath | yog2DashKernelLib.Anon_Name = js.native
+  var ral: yog2DashKernelLib.Anon_AppendExtPath | yog2DashKernelLib.Fn_Name = js.native
   @JSName("ralP")
-  var ralP_Original: yog2DashKernelLib.Anon_Name = js.native
+  var ralP_Original: yog2DashKernelLib.Fn_Name = js.native
   // debug模式时存在
   var reloadApp: js.UndefOr[js.Function1[/* appName */ java.lang.String, scala.Unit]] = js.native
   // debug模式时存在

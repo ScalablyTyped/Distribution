@@ -38,7 +38,7 @@ trait Settings
   var sourceRoot: js.UndefOr[java.lang.String] = js.undefined
   var suppressImplicitAnyIndexErrors: js.UndefOr[scala.Boolean] = js.undefined
   var target: js.UndefOr[java.lang.String | typescriptLib.typescriptMod.ScriptTarget] = js.undefined
-  var typescript: js.UndefOr[gulpDashTypescriptLib.Anon_08] = js.undefined
+  var typescript: js.UndefOr[gulpDashTypescriptLib.Typeofts] = js.undefined
 }
 
 object Settings {
@@ -76,7 +76,7 @@ object Settings {
     sourceRoot: java.lang.String = null,
     suppressImplicitAnyIndexErrors: js.UndefOr[scala.Boolean] = js.undefined,
     target: java.lang.String | typescriptLib.typescriptMod.ScriptTarget = null,
-    typescript: gulpDashTypescriptLib.Anon_08 = null
+    typescript: gulpDashTypescriptLib.Typeofts = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

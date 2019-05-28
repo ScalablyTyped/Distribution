@@ -18,7 +18,7 @@ trait FsImplementation extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with mkdirpLib.Anon_Path = js.native
+  ]) with mkdirpLib.Typeofstat = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]

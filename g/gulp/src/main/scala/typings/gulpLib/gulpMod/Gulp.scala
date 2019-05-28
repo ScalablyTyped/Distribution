@@ -27,7 +27,7 @@ trait Gulp
     * @param folder A folder path or a function that receives in a file and returns a folder path.
     */
   @JSName("symlink")
-  var symlink_Original: gulpLib.Anon_File = js.native
+  var symlink_Original: gulpLib.Fn_File = js.native
   /**
     * Takes a path string, an array of path strings, a glob string or an array of glob strings as globs to watch on the filesystem.
     * Also optionally takes options to configure the watcher and a fn to execute when a file changes.

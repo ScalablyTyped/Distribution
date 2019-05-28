@@ -11,7 +11,7 @@ object default extends js.Object {
   @JSName("clear")
   var clear_Original: js.Function0[scala.Unit] = js.native
   @JSName("getItem")
-  var getItem_Original: storageDashHelperLib.Anon_Fallback = js.native
+  var getItem_Original: storageDashHelperLib.Fn_Fallback = js.native
   @JSName("removeItem")
   var removeItem_Original: js.Function1[/* key */ java.lang.String, scala.Unit] = js.native
   @JSName("setItem")

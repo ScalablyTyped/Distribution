@@ -9,7 +9,7 @@ trait GoogleMaps extends js.Object {
   var BicyclingLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.BicyclingLayer]
   var Circle: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.Circle]
   var Data: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.Data]
-  val DataNs: reactDashGoogleDashMapsDashLoaderLib.Anon_Elements
+  val DataNs: reactDashGoogleDashMapsDashLoaderLib.TypeofData
   var DirectionsRenderer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DirectionsRenderer]
   var DirectionsService: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DirectionsService]
   var DistanceMatrixService: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DistanceMatrixService]
@@ -37,7 +37,7 @@ trait GoogleMaps extends js.Object {
   var Map: org.scalablytyped.runtime.Instantiable1[/* mapDiv */ stdLib.Element, googlemapsLib.googleNs.mapsNs.Map]
   var MapCanvasProjection: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MapCanvasProjection]
   var MapTypeRegistry: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MapTypeRegistry]
-  var Marker: reactDashGoogleDashMapsDashLoaderLib.Anon_MAXZINDEX
+  var Marker: reactDashGoogleDashMapsDashLoaderLib.TypeofClassMarker
   var MaxZoomService: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MaxZoomService]
   var OverlayView: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.OverlayView]
   var Point: org.scalablytyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, googlemapsLib.googleNs.mapsNs.Point]
@@ -59,12 +59,12 @@ trait GoogleMaps extends js.Object {
   ]
   var TrafficLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.TrafficLayer]
   var TransitLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.TransitLayer]
-  val adsenseNs: reactDashGoogleDashMapsDashLoaderLib.Anon_AdUnit
-  val drawingNs: reactDashGoogleDashMapsDashLoaderLib.Anon_DrawingManager
-  var event: reactDashGoogleDashMapsDashLoaderLib.Anon_AddDomListener
-  val geometryNs: reactDashGoogleDashMapsDashLoaderLib.Anon_Encoding
-  val placesNs: reactDashGoogleDashMapsDashLoaderLib.Anon_AttrContainer
-  val visualizationNs: reactDashGoogleDashMapsDashLoaderLib.Anon_HeatmapLayer
+  val adsenseNs: reactDashGoogleDashMapsDashLoaderLib.Typeofadsense
+  val drawingNs: reactDashGoogleDashMapsDashLoaderLib.Typeofdrawing
+  var event: reactDashGoogleDashMapsDashLoaderLib.TypeofClassevent
+  val geometryNs: reactDashGoogleDashMapsDashLoaderLib.Typeofgeometry
+  val placesNs: reactDashGoogleDashMapsDashLoaderLib.Typeofplaces
+  val visualizationNs: reactDashGoogleDashMapsDashLoaderLib.Typeofvisualization
 }
 
 object GoogleMaps {
@@ -73,7 +73,7 @@ object GoogleMaps {
     BicyclingLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.BicyclingLayer],
     Circle: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.Circle],
     Data: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.Data],
-    DataNs: reactDashGoogleDashMapsDashLoaderLib.Anon_Elements,
+    DataNs: reactDashGoogleDashMapsDashLoaderLib.TypeofData,
     DirectionsRenderer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DirectionsRenderer],
     DirectionsService: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DirectionsService],
     DistanceMatrixService: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DistanceMatrixService],
@@ -101,7 +101,7 @@ object GoogleMaps {
     Map: org.scalablytyped.runtime.Instantiable1[/* mapDiv */ stdLib.Element, googlemapsLib.googleNs.mapsNs.Map],
     MapCanvasProjection: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MapCanvasProjection],
     MapTypeRegistry: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MapTypeRegistry],
-    Marker: reactDashGoogleDashMapsDashLoaderLib.Anon_MAXZINDEX,
+    Marker: reactDashGoogleDashMapsDashLoaderLib.TypeofClassMarker,
     MaxZoomService: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MaxZoomService],
     OverlayView: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.OverlayView],
     Point: org.scalablytyped.runtime.Instantiable2[/* x */ scala.Double, /* y */ scala.Double, googlemapsLib.googleNs.mapsNs.Point],
@@ -123,12 +123,12 @@ object GoogleMaps {
     ],
     TrafficLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.TrafficLayer],
     TransitLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.TransitLayer],
-    adsenseNs: reactDashGoogleDashMapsDashLoaderLib.Anon_AdUnit,
-    drawingNs: reactDashGoogleDashMapsDashLoaderLib.Anon_DrawingManager,
-    event: reactDashGoogleDashMapsDashLoaderLib.Anon_AddDomListener,
-    geometryNs: reactDashGoogleDashMapsDashLoaderLib.Anon_Encoding,
-    placesNs: reactDashGoogleDashMapsDashLoaderLib.Anon_AttrContainer,
-    visualizationNs: reactDashGoogleDashMapsDashLoaderLib.Anon_HeatmapLayer
+    adsenseNs: reactDashGoogleDashMapsDashLoaderLib.Typeofadsense,
+    drawingNs: reactDashGoogleDashMapsDashLoaderLib.Typeofdrawing,
+    event: reactDashGoogleDashMapsDashLoaderLib.TypeofClassevent,
+    geometryNs: reactDashGoogleDashMapsDashLoaderLib.Typeofgeometry,
+    placesNs: reactDashGoogleDashMapsDashLoaderLib.Typeofplaces,
+    visualizationNs: reactDashGoogleDashMapsDashLoaderLib.Typeofvisualization
   ): GoogleMaps = {
     val __obj = js.Dynamic.literal(BicyclingLayer = BicyclingLayer, Circle = Circle, Data = Data, DataNs = DataNs, DirectionsRenderer = DirectionsRenderer, DirectionsService = DirectionsService, DistanceMatrixService = DistanceMatrixService, ElevationService = ElevationService, FusionTablesLayer = FusionTablesLayer, Geocoder = Geocoder, GroundOverlay = GroundOverlay, ImageMapType = ImageMapType, InfoWindow = InfoWindow, KmlLayer = KmlLayer, LatLng = LatLng, LatLngBounds = LatLngBounds, MVCArray = MVCArray, MVCObject = MVCObject, Map = Map, MapCanvasProjection = MapCanvasProjection, MapTypeRegistry = MapTypeRegistry, Marker = Marker, MaxZoomService = MaxZoomService, OverlayView = OverlayView, Point = Point, Polygon = Polygon, Polyline = Polyline, Rectangle = Rectangle, SaveWidget = SaveWidget, Size = Size, StreetViewCoverageLayer = StreetViewCoverageLayer, StreetViewPanorama = StreetViewPanorama, StreetViewService = StreetViewService, StyledMapType = StyledMapType, TrafficLayer = TrafficLayer, TransitLayer = TransitLayer, adsenseNs = adsenseNs, drawingNs = drawingNs, event = event, geometryNs = geometryNs, placesNs = placesNs, visualizationNs = visualizationNs)
   

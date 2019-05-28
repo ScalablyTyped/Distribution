@@ -219,7 +219,7 @@ trait LoopBackApplication
     * ``
     *  @returns {Array} Array of model classes
     */
-  def models(): js.Array[loopbackLib.Anon_Allowed] = js.native
+  def models(): js.Array[loopbackLib.TypeofClassModel] = js.native
   /**
     * Get all remote objects.
     * @returns {any} [Remote objects](apidocs.strongloop.com/strong-remoting/#remoteObjectsoptions).

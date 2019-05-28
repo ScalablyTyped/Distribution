@@ -19,6 +19,6 @@ object GoogleAuth extends js.Object {
   /**
     * Export DefaultTransporter as a static property of the class.
     */
-  var DefaultTransporter: googleDashAuthDashLibraryLib.Anon_USERAGENT = js.native
+  var DefaultTransporter: googleDashAuthDashLibraryLib.TypeofClassDefaultTransporter = js.native
 }
 

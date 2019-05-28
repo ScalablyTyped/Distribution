@@ -321,7 +321,7 @@ class ODataModel protected ()
     * @since 1.20
     * @returns sCountMode returns defaultCountMode
     */
-  def getDefaultCountMode(): openui5Lib.Anon_Both = js.native
+  def getDefaultCountMode(): openui5Lib.TypeofCountMode = js.native
   /**
     * Returns the array of batchGroupIds that are set as deferred
     * @returns aGroupIds The array of deferred batchGroupIds
@@ -478,7 +478,7 @@ class ODataModel protected ()
     * @since 1.20
     * @param sCountMode sets default count mode
     */
-  def setDefaultCountMode(sCountMode: openui5Lib.Anon_Both): scala.Unit = js.native
+  def setDefaultCountMode(sCountMode: openui5Lib.TypeofCountMode): scala.Unit = js.native
   /**
     * Setting batch groups as deferred. Requests that belongs to a deferred batch group will be sent
     * manuallyvia a submitChanges call.

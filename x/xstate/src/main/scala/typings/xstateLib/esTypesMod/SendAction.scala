@@ -9,7 +9,13 @@ trait SendAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TCo
   var delay: js.UndefOr[scala.Double | java.lang.String | (Expr[TContext, TEvent, scala.Double])] = js.undefined
   var event: TEvent | (SendExpr[TContext, TEvent])
   var id: java.lang.String | scala.Double
-  var to: js.UndefOr[java.lang.String] = js.undefined
+  var to: js.UndefOr[
+    java.lang.String | scala.Double | (xstateLib.esActorMod.Actor[_, EventObject]) | (Expr[
+      TContext, 
+      TEvent, 
+      java.lang.String | scala.Double | (xstateLib.esActorMod.Actor[_, EventObject])
+    ])
+  ] = js.undefined
 }
 
 object SendAction {
@@ -20,13 +26,17 @@ object SendAction {
     `type`: java.lang.String,
     delay: scala.Double | java.lang.String | (Expr[TContext, TEvent, scala.Double]) = null,
     exec: ActionFunction[TContext, TEvent] = null,
-    to: java.lang.String = null
+    to: java.lang.String | scala.Double | (xstateLib.esActorMod.Actor[_, EventObject]) | (Expr[
+      TContext, 
+      TEvent, 
+      java.lang.String | scala.Double | (xstateLib.esActorMod.Actor[_, EventObject])
+    ]) = null
   ): SendAction[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`)
     if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
     if (exec != null) __obj.updateDynamic("exec")(exec)
-    if (to != null) __obj.updateDynamic("to")(to)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAction[TContext, TEvent]]
   }
 }

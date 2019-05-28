@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dom-helpers"
-version := "3.4-dt-20190212Z-b4fc20"
+version := "3.4-dt-20190212Z-bd23a2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

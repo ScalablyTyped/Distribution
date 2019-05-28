@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Yayson extends js.Object {
   var Adapter: yaysonLib.yaysonMod.Adapter
-  var Presenter: yaysonLib.Anon_Adapter
+  var Presenter: yaysonLib.TypeofClassPresenter
   var Store: org.scalablytyped.runtime.Instantiable0[Store]
 }
 
@@ -15,7 +15,7 @@ object Yayson {
   @scala.inline
   def apply(
     Adapter: Adapter,
-    Presenter: yaysonLib.Anon_Adapter,
+    Presenter: yaysonLib.TypeofClassPresenter,
     Store: org.scalablytyped.runtime.Instantiable0[Store]
   ): Yayson = {
     val __obj = js.Dynamic.literal(Adapter = Adapter, Presenter = Presenter, Store = Store)

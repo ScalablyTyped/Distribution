@@ -14,5 +14,7 @@ class ^ () extends ForeverAgent {
 @JSImport("forever-agent", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[foreverDashAgentLib.Anon_DefaultMinSockets with foreverDashAgentLib.Anon_Options]
+  extends org.scalablytyped.runtime.TopLevel[
+      foreverDashAgentLib.TypeofClassForeverAgent with foreverDashAgentLib.Anon_Options
+    ]
 

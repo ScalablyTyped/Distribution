@@ -31,7 +31,7 @@ object Options {
     handleFetch: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreUrlParametersMatching: js.Array[stdLib.RegExp] = null,
     importScripts: js.Array[java.lang.String | swDashPrecacheDashWebpackDashPluginLib.Anon_ChunkName] = null,
-    logger: swDashPrecacheLib.Anon_Message = null,
+    logger: swDashPrecacheLib.Fn_Message = null,
     maximumFileSizeToCacheInBytes: scala.Int | scala.Double = null,
     mergeStaticsConfig: js.UndefOr[scala.Boolean] = js.undefined,
     minify: js.UndefOr[scala.Boolean] = js.undefined,

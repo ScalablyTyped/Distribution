@@ -31,6 +31,6 @@ object ^ extends js.Object {
   /**
     * Useful helper functions for custom rendering.
     */
-  var utils: remarkableLib.Anon_Assign = js.native
+  var utils: remarkableLib.TypeofUtils = js.native
 }
 

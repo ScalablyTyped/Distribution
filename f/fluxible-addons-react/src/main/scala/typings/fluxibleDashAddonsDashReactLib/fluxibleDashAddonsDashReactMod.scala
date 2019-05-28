@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fluxibleDashAddonsDashReactMod extends js.Object {
   def connectToStores(
-    Component: fluxibleDashAddonsDashReactLib.Anon_ContextType,
+    Component: fluxibleDashAddonsDashReactLib.TypeofClassComponent,
     stores: js.Array[
       (org.scalablytyped.runtime.Instantiable1[
         /* dispatcher */ dispatchrLib.dispatchrMod.DispatcherInterface, 
@@ -17,9 +17,9 @@ object fluxibleDashAddonsDashReactMod extends js.Object {
       ]) | java.lang.String
     ],
     getStateFromStores: js.Function2[/* context */ fluxibleLib.fluxibleMod.ComponentContext, /* props */ js.Any, _]
-  ): fluxibleDashAddonsDashReactLib.Anon_ContextType = js.native
+  ): fluxibleDashAddonsDashReactLib.TypeofClassComponent = js.native
   def connectToStores(
-    Component: fluxibleDashAddonsDashReactLib.Anon_ContextType,
+    Component: fluxibleDashAddonsDashReactLib.TypeofClassComponent,
     stores: js.Array[
       (org.scalablytyped.runtime.Instantiable1[
         /* dispatcher */ dispatchrLib.dispatchrMod.DispatcherInterface, 
@@ -28,8 +28,8 @@ object fluxibleDashAddonsDashReactMod extends js.Object {
     ],
     getStateFromStores: js.Function2[/* context */ fluxibleLib.fluxibleMod.ComponentContext, /* props */ js.Any, _],
     customContextTypes: js.Any
-  ): fluxibleDashAddonsDashReactLib.Anon_ContextType = js.native
-  def provideContext(Component: fluxibleDashAddonsDashReactLib.Anon_ContextType): fluxibleDashAddonsDashReactLib.Anon_ContextType = js.native
-  def provideContext(Component: fluxibleDashAddonsDashReactLib.Anon_ContextType, customContextTypes: js.Any): fluxibleDashAddonsDashReactLib.Anon_ContextType = js.native
+  ): fluxibleDashAddonsDashReactLib.TypeofClassComponent = js.native
+  def provideContext(Component: fluxibleDashAddonsDashReactLib.TypeofClassComponent): fluxibleDashAddonsDashReactLib.TypeofClassComponent = js.native
+  def provideContext(Component: fluxibleDashAddonsDashReactLib.TypeofClassComponent, customContextTypes: js.Any): fluxibleDashAddonsDashReactLib.TypeofClassComponent = js.native
 }
 

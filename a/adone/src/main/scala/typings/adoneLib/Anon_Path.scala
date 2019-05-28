@@ -6,17 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Path extends js.Object {
-  /**
-    * Asynchronous unlink(2) - delete a name and possibly the file it refers to.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    */
-  def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit]
+  var path: java.lang.String
 }
 
 object Anon_Path {
   @scala.inline
-  def apply(__promisify__ : nodeLib.fsMod.PathLike => js.Promise[scala.Unit]): Anon_Path = {
-    val __obj = js.Dynamic.literal(__promisify__ = js.Any.fromFunction1(__promisify__))
+  def apply(path: java.lang.String): Anon_Path = {
+    val __obj = js.Dynamic.literal(path = path)
   
     __obj.asInstanceOf[Anon_Path]
   }

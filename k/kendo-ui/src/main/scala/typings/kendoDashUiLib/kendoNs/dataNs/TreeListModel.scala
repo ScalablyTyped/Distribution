@@ -20,7 +20,7 @@ class TreeListModel () extends Model {
 object TreeListModel extends js.Object {
   var fields: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelFields = js.native
   var idField: java.lang.String = js.native
-  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray): kendoDashUiLib.Anon_DataDefineFields = js.native
-  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject): kendoDashUiLib.Anon_DataDefineFields = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray): kendoDashUiLib.TypeofClassTreeListModel = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject): kendoDashUiLib.TypeofClassTreeListModel = js.native
 }
 

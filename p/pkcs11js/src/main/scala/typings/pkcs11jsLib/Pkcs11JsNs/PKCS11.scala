@@ -233,9 +233,19 @@ class PKCS11 () extends js.Object {
     *
     * @param {Handle} session Session's handle
     * @returns {Handle} gets Object's handle. If Object is not found
-    * the result is 0
+    * the result is Null
     */
   def C_FindObjects(session: Handle): Handle = js.native
+  /**
+    * Continues a search for token and session
+    * objects that match a template, obtaining additional object
+    * handles
+    *
+    * @param {Handle} session Session's handle
+    * @param {number} session The maximum number of object handles to be returned
+    * @returns {Handle} gets list of Object handles
+    */
+  def C_FindObjects(session: Handle, maxObjectCount: scala.Double): js.Array[Handle] = js.native
   /**
     * Finishes a search for token and session objects
     *

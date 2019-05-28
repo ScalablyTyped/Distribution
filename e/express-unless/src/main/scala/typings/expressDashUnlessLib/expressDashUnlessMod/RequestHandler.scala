@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RequestHandler
   extends expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler {
-  var unless: js.UndefOr[expressDashUnlessLib.Anon_Options] = js.native
+  var unless: js.UndefOr[expressDashUnlessLib.Fn_Options] = js.native
 }
 

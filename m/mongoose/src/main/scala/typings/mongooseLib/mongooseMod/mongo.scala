@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object mongo extends js.Object {
   var AggregationCursor: org.scalablytyped.runtime.Instantiable0[mongodbLib.mongodbMod.AggregationCursor[js.Object]] = js.native
-  var Binary: mongooseLib.Anon_Buffer = js.native
+  var Binary: mongooseLib.TypeofClassBinary = js.native
   var ChangeStream: org.scalablytyped.runtime.Instantiable2[
     /* changeDomain */ mongodbLib.mongodbMod.Db, 
     /* pipeline */ js.Array[js.Object], 
@@ -29,7 +29,7 @@ object mongo extends js.Object {
     /* serverConfig */ mongodbLib.mongodbMod.Server, 
     mongodbLib.mongodbMod.Db
   ] = js.native
-  var Decimal128: mongooseLib.Anon_Bytes = js.native
+  var Decimal128: mongooseLib.TypeofClassDecimal128Bytes = js.native
   var Double: org.scalablytyped.runtime.Instantiable1[/* value */ scala.Double, mongodbLib.mongodbMod.Double] = js.native
   var GridFSBucket: org.scalablytyped.runtime.Instantiable1[/* db */ mongodbLib.mongodbMod.Db, mongodbLib.mongodbMod.GridFSBucket] = js.native
   var GridFSBucketReadStream: org.scalablytyped.runtime.Instantiable4[
@@ -44,24 +44,24 @@ object mongo extends js.Object {
     /* filename */ java.lang.String, 
     mongodbLib.mongodbMod.GridFSBucketWriteStream
   ] = js.native
-  var Logger: mongooseLib.Anon_ClassName = js.native
-  var Long: mongooseLib.Anon_FromBits = js.native
+  var Logger: mongooseLib.TypeofClassLogger = js.native
+  var Long: mongooseLib.TypeofClassLong = js.native
   var MaxKey: org.scalablytyped.runtime.Instantiable0[mongodbLib.mongodbMod.MaxKey] = js.native
   var MinKey: org.scalablytyped.runtime.Instantiable0[mongodbLib.mongodbMod.MinKey] = js.native
-  var MongoClient: mongooseLib.Anon_Callback = js.native
-  var MongoError: mongooseLib.Anon_Create = js.native
+  var MongoClient: mongooseLib.TypeofClassMongoClient = js.native
+  var MongoError: mongooseLib.TypeofClassMongoError = js.native
   var MongoNetworkError: org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, mongodbLib.mongodbMod.MongoNetworkError] = js.native
   var MongoParseError: org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, mongodbLib.mongodbMod.MongoParseError] = js.native
   var Mongos: org.scalablytyped.runtime.Instantiable1[/* servers */ js.Array[mongodbLib.mongodbMod.Server], mongodbLib.mongodbMod.Mongos] = js.native
-  var ObjectID: mongooseLib.Anon_CacheHexStringCreateFromHexString = js.native
-  var ObjectId: mongooseLib.Anon_CacheHexString = js.native
-  var ReadPreference: mongooseLib.Anon_IsValid = js.native
+  var ObjectID: mongooseLib.TypeofClassObjectID = js.native
+  var ObjectId: mongooseLib.TypeofClassObjectIdCacheHexString = js.native
+  var ReadPreference: mongooseLib.TypeofClassReadPreference = js.native
   var ReplSet: org.scalablytyped.runtime.Instantiable1[
     /* servers */ js.Array[mongodbLib.mongodbMod.Server], 
     mongodbLib.mongodbMod.ReplSet
   ] = js.native
   var Server: org.scalablytyped.runtime.Instantiable2[/* host */ java.lang.String, /* port */ scala.Double, mongodbLib.mongodbMod.Server] = js.native
-  var Timestamp: mongooseLib.Anon_FromBitsFromInt = js.native
+  var Timestamp: mongooseLib.TypeofClassTimestamp = js.native
   def connect(uri: java.lang.String): js.Promise[mongodbLib.mongodbMod.MongoClient] = js.native
   def connect(
     uri: java.lang.String,

@@ -26,7 +26,7 @@ class Projection protected () extends js.Object {
   var variables: js.Any = js.native
   var xConstraints: js.Any = js.native
   var yConstraints: js.Any = js.native
-  def projectFunctions(): js.Array[webcolaLib.Anon_R] = js.native
+  def projectFunctions(): js.Array[webcolaLib.Fn_R] = js.native
   def xProject(x0: js.Array[scala.Double], y0: js.Array[scala.Double], x: js.Array[scala.Double]): scala.Unit = js.native
   def yProject(x0: js.Array[scala.Double], y0: js.Array[scala.Double], y: js.Array[scala.Double]): scala.Unit = js.native
 }

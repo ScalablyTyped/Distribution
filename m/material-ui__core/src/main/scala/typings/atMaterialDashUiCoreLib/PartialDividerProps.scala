@@ -109,11 +109,7 @@ trait PartialDividerProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapDividerClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.dividerDividerMod.DividerProps]
@@ -384,9 +380,7 @@ object PartialDividerProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey]
-    ] = null,
+    classes: PartialClassNameMapDividerClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.dividerDividerMod.DividerProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

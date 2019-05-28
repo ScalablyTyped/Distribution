@@ -13,9 +13,9 @@ class default () extends Card
 @JSImport("antd-mobile-rn/lib/card/index.native", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Body: antdDashMobileDashRnLib.Anon_DefaultPropsAnonStyle = js.native
-  var Footer: antdDashMobileDashRnLib.Anon_DefaultPropsAnonStyleDefault = js.native
-  var Header: antdDashMobileDashRnLib.Anon_DefaultProps = js.native
+  var Body: antdDashMobileDashRnLib.TypeofClassCardBody = js.native
+  var Footer: antdDashMobileDashRnLib.TypeofClassCardFooter = js.native
+  var Header: antdDashMobileDashRnLib.TypeofClassCardHeader = js.native
   var defaultProps: antdDashMobileDashRnLib.Anon_Full = js.native
 }
 

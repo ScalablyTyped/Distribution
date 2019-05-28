@@ -27,6 +27,6 @@ class ^ () extends ScramSha1Mechanism {
 @JSImport("sasl-scram-sha-1", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Mechanism: saslDashScramDashShaDash1Lib.Anon_Mechanism = js.native
+  var Mechanism: saslDashScramDashShaDash1Lib.TypeofClassScramSha1Mechanism = js.native
 }
 

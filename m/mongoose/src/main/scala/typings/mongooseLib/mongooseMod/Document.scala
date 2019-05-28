@@ -16,7 +16,7 @@ trait Document
     */
   var __v: js.UndefOr[scala.Double] = js.native
   /** Base Mongoose instance the model uses. */
-  var base: mongooseLib.Anon_Args = js.native
+  var base: mongooseLib.Typeofmongoose = js.native
   /**
     * If this is a discriminator model, baseModelName is the
     * name of the base model.

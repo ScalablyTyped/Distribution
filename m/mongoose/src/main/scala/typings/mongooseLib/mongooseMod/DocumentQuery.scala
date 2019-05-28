@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   /** Executes this query and returns a promise */
   @JSName("then")
-  var then_Original: mongooseLib.Anon_OnfulfilledOnrejected[T] = js.native
+  var then_Original: mongooseLib.Fn_OnfulfilledOnrejected[T] = js.native
   /**
     * Specifies a javascript function or expression to pass to MongoDBs query system.
     * Only use $where when you have a condition that cannot be met using other MongoDB

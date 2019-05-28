@@ -17,7 +17,7 @@ trait Bluebird[R]
     * Alias `.caught();` for compatibility with earlier ECMAScript version.
     */
   @JSName("caught")
-  var caught_Original: bluebirdLib.Anon_Error[R] = js.native
+  var caught_Original: bluebirdLib.Fn_Error[R] = js.native
   @JSName("lastly")
   var lastly_Original: js.Function1[/* handler */ js.Function0[Resolvable[_]], Bluebird[R]] = js.native
   @JSName(scala.scalajs.js.Symbol.toStringTag)

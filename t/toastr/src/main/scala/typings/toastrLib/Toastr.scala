@@ -11,7 +11,7 @@ trait Toastr extends js.Object {
   	 * Clear toasts
   	 */
   @JSName("clear")
-  var clear_Original: Anon_ClearOptions = js.native
+  var clear_Original: Fn_ClearOptions = js.native
   /**
   	 * Create an error toast
   	 */
@@ -21,7 +21,7 @@ trait Toastr extends js.Object {
   	 * Get or create a container.
   	 */
   @JSName("getContainer")
-  var getContainer_Original: Anon_Create = js.native
+  var getContainer_Original: Fn_Create = js.native
   /**
   	 * Create an info toast
   	 */
@@ -35,7 +35,7 @@ trait Toastr extends js.Object {
   	 * Removes toasts (without animation)
   	 */
   @JSName("remove")
-  var remove_Original: Anon_Toast = js.native
+  var remove_Original: Fn_Toast = js.native
   /**
   	 * Create a success toast
   	 */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_scrollto"
-version := "1.4.4-dt-20190322Z-9b0e4e"
+version := "1.4.4-dt-20190322Z-bff722"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -163,11 +163,11 @@ class Adapter () extends js.Object {
 @JSImport("js-data-adapter", "Adapter")
 @js.native
 object Adapter extends js.Object {
-  def extend(): jsDashDataDashAdapterLib.Anon_ClassProps = js.native
-  def extend(instanceProps: jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IDict): jsDashDataDashAdapterLib.Anon_ClassProps = js.native
+  def extend(): jsDashDataDashAdapterLib.TypeofClassAdapter = js.native
+  def extend(instanceProps: jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IDict): jsDashDataDashAdapterLib.TypeofClassAdapter = js.native
   def extend(
     instanceProps: jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IDict,
     classProps: jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IDict
-  ): jsDashDataDashAdapterLib.Anon_ClassProps = js.native
+  ): jsDashDataDashAdapterLib.TypeofClassAdapter = js.native
 }
 

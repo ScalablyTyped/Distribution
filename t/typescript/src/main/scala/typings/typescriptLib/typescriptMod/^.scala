@@ -5412,12 +5412,12 @@ object ^ extends js.Object {
     * @param context A lexical environment context for the visitor.
     */
   def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): T = js.native
-  def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext, nodesVisitor: typescriptLib.Anon_Count): js.UndefOr[T] = js.native
+  def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext, nodesVisitor: typescriptLib.Fn_Count): js.UndefOr[T] = js.native
   def visitEachChild[T /* <: Node */](
     node: T,
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Count,
+    nodesVisitor: typescriptLib.Fn_Count,
     tokenVisitor: Visitor
   ): js.UndefOr[T] = js.native
   def visitEachChild[T /* <: Node */](node: js.UndefOr[scala.Nothing], visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
@@ -5425,13 +5425,13 @@ object ^ extends js.Object {
     node: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Count
+    nodesVisitor: typescriptLib.Fn_Count
   ): js.UndefOr[T] = js.native
   def visitEachChild[T /* <: Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Count,
+    nodesVisitor: typescriptLib.Fn_Count,
     tokenVisitor: Visitor
   ): js.UndefOr[T] = js.native
   /**
@@ -5686,7 +5686,7 @@ object ^ extends js.Object {
     nodes: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Count
+    nodesVisitor: typescriptLib.Fn_Count
   ): NodeArray[ParameterDeclaration] = js.native
   /**
     * Starts a new lexical environment and visits a parameter list, suspending the lexical
@@ -5697,7 +5697,7 @@ object ^ extends js.Object {
     nodes: NodeArray[ParameterDeclaration],
     visitor: Visitor,
     context: TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Count
+    nodesVisitor: typescriptLib.Fn_Count
   ): NodeArray[ParameterDeclaration] = js.native
   def walkUpBindingElementsAndPatterns(binding: BindingElement): VariableDeclaration | ParameterDeclaration = js.native
 }

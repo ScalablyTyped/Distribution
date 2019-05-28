@@ -1,6 +1,6 @@
 [debug] PhaseRunner.scala:84 Success [id => ember-modal-dialog, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-modal-dialog/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-modal-dialog),TsIdentLibrarySimple(ember-modal-dialog)),TsIdentModule(None,List(ember-modal-dialog))) [id => ember-modal-dialog, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:227 Processing TsIdentLibrarySimple(ember-modal-dialog) [id => ember-modal-dialog, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(ember-modal-dialog) [id => ember-modal-dialog, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => ember-modal-dialog, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing ember-modal-dialog [id => ember-modal-dialog, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => ember-modal-dialog, phase => scala.js] 

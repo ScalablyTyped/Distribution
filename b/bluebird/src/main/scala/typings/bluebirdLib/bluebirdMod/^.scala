@@ -64,7 +64,7 @@ object ^ extends js.Object {
     * Create a new promise. The passed in function will receive functions `resolve` and `reject` as its arguments which can be called to seal the fate of the created promise.
     * If promise cancellation is enabled, passed in function will receive one more function argument `onCancel` that allows to register an optional cancellation callback.
     */
-  var Promise: bluebirdLib.Anon_A1 = js.native
+  var Promise: bluebirdLib.TypeofClassBluebird = js.native
   /**
     * The version number of the library
     */
@@ -346,7 +346,7 @@ object ^ extends js.Object {
     *
     * This method should be used before you use any of the methods which would otherwise alter the global Bluebird object - to avoid polluting global state.
     */
-  def getNewLibraryCopy(): bluebirdLib.Anon_A1 = js.native
+  def getNewLibraryCopy(): bluebirdLib.TypeofClassBluebird = js.native
   /**
     * See if `value` is a trusted Promise.
     */
@@ -446,7 +446,7 @@ object ^ extends js.Object {
     * Release control of the Promise namespace to whatever it was before this library was loaded.
     * Returns a reference to the library namespace so you can attach it to something else.
     */
-  def noConflict(): bluebirdLib.Anon_A1 = js.native
+  def noConflict(): bluebirdLib.TypeofClassBluebird = js.native
   /**
     * Add handler as the handler to call when there is a possibly unhandled rejection.
     * The default handler logs the error stack to stderr or console.error in browsers.

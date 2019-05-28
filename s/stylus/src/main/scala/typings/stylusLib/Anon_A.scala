@@ -5,18 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Anon_A
-  extends org.scalablytyped.runtime.Instantiable4[
-      /* h */ scala.Double, 
-      /* s */ scala.Double, 
-      /* l */ scala.Double, 
-      /* a */ scala.Double, 
-      stylusLib.stylusMod.StylusNs.NodesNs.HSLA
-    ] {
-  /**
-    * Return a `HSLA` from the given `hsla`.
-    */
-  def fromRGBA(rgba: stylusLib.stylusMod.StylusNs.NodesNs.RGBA): stylusLib.stylusMod.StylusNs.NodesNs.HSLA = js.native
+trait Anon_A extends js.Object {
+  var __type: java.lang.String
+  var a: scala.Double
+  var b: scala.Double
+  var column: scala.Double
+  var filename: java.lang.String
+  var g: scala.Double
+  var lineno: scala.Double
+  var r: scala.Double
+}
+
+object Anon_A {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    a: scala.Double,
+    b: scala.Double,
+    column: scala.Double,
+    filename: java.lang.String,
+    g: scala.Double,
+    lineno: scala.Double,
+    r: scala.Double
+  ): Anon_A = {
+    val __obj = js.Dynamic.literal(__type = __type, a = a, b = b, column = column, filename = filename, g = g, lineno = lineno, r = r)
+  
+    __obj.asInstanceOf[Anon_A]
+  }
 }
 

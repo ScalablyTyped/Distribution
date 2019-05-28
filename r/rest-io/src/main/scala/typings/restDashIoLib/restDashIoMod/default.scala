@@ -22,12 +22,12 @@ object default extends js.Object {
     restDashIoLib.libSrcAuthorizedSubResourceMod.default
   ] = js.native
   var ROLES: restDashIoLib.Anon_ADMIN = js.native
-  var Resource: restDashIoLib.Anon_BASEURL = js.native
+  var Resource: restDashIoLib.TypeofClassResource = js.native
   var SubResource: org.scalablytyped.runtime.Instantiable1[
     /* subResDef */ restDashIoLib.libSrcSubResourceMod.ISubResource, 
     restDashIoLib.libSrcSubResourceMod.default
   ] = js.native
   var UserResource: org.scalablytyped.runtime.Instantiable0[restDashIoLib.libSrcUserResourceMod.default] = js.native
-  var authorizedResource: restDashIoLib.Anon_Default = js.native
+  var authorizedResource: restDashIoLib.TypeofauthorizedResource = js.native
 }
 

@@ -177,7 +177,7 @@ object VictoryLegendProps {
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     itemsPerRow: scala.Int | scala.Double = null,
-    label: java.lang.String | victoryLib.Anon_DataAnyString = null,
+    label: java.lang.String | victoryLib.Fn_DataAnyString = null,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
     name: java.lang.String = null,
     orientation: victoryLib.victoryLibStrings.horizontal | victoryLib.victoryLibStrings.vertical = null,

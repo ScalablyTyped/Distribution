@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "mocha-steps"
-version := "1.1-dt-20180315Z-f16ab3"
+version := "1.1-dt-20180315Z-9f3c9f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190212Z-4a7dff",
+  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190212Z-851704",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

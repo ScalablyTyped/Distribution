@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "saslmechanisms"
-version := "0.1-dt-20181126Z-6db731"
+version := "0.1-dt-20181126Z-e91402"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

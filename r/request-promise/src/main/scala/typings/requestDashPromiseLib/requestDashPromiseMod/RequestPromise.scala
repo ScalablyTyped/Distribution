@@ -11,14 +11,14 @@ trait RequestPromise
   @JSName("cancel")
   var cancel_Original: js.Function0[scala.Unit] = js.native
   @JSName("catch")
-  var catch_Original: requestDashPromiseLib.Anon_ErrorFilter1 = js.native
+  var catch_Original: requestDashPromiseLib.Fn_ErrorFilter1 = js.native
   @JSName("finally")
   var finally_Original: js.Function1[
     /* handler */ js.Function0[bluebirdLib.bluebirdMod.Resolvable[_]], 
     bluebirdLib.bluebirdMod.Bluebird[_]
   ] = js.native
   @JSName("then")
-  var then_Original: requestDashPromiseLib.Anon_Error = js.native
+  var then_Original: requestDashPromiseLib.Fn_Error = js.native
   def cancel(): scala.Unit = js.native
   def `catch`[U](): bluebirdLib.bluebirdMod.Bluebird[U | _] = js.native
   def `catch`[U](onReject: js.Function1[/* error */ js.Any, bluebirdLib.bluebirdMod.Resolvable[U]]): bluebirdLib.bluebirdMod.Bluebird[U | _] = js.native

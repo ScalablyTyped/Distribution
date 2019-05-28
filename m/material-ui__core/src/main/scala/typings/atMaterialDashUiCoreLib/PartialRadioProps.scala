@@ -122,11 +122,7 @@ trait PartialRadioProps extends js.Object {
   var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.radioRadioMod.RadioClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapRadioClassKey] = js.undefined
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default
   ] = js.undefined
@@ -433,9 +429,7 @@ object PartialRadioProps {
     checkedIcon: reactLib.reactMod.ReactNode = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.radioRadioMod.RadioClassKey]
-    ] = null,
+    classes: PartialClassNameMapRadioClassKey = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

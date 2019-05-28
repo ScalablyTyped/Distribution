@@ -32,8 +32,8 @@ object ^ extends js.Object {
   def shadow(elem: stdLib.HTMLElement): stdLib.ShadowRoot = js.native
   def withChildren[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): skatejsLib.typesMod.Constructor[skatejsLib.typesMod.WithChildren] with T = js.native
   def withChildren[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](Base: T): skatejsLib.typesMod.Constructor[skatejsLib.typesMod.WithChildren] with T = js.native
-  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): skatejsLib.Anon_ObservedAttributes = js.native
-  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](Base: T): skatejsLib.Anon_ObservedAttributes = js.native
+  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): skatejsLib.TypeofClassWithComponent = js.native
+  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](Base: T): skatejsLib.TypeofClassWithComponent = js.native
   @JSName("withComponent")
   def `withComponent_PSCTConstructor<intersection>`[P, S, C, T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): (skatejsLib.typesMod.Constructor[skatejsLib.typesMod.WithComponent[P, S, C]]) with T = js.native
   @JSName("withComponent")

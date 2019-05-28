@@ -221,7 +221,7 @@ trait IRootScopeService extends js.Object {
   ): js.Function0[scala.Unit] = js.native
   @JSName("$watchGroup")
   def $watchGroup(
-    watchExpressions: js.Array[_ | angularLib.Anon_Scope],
+    watchExpressions: js.Array[_ | angularLib.Fn_Scope],
     listener: js.Function3[/* newValue */ js.Any, /* oldValue */ js.Any, /* scope */ IScope, _]
   ): js.Function0[scala.Unit] = js.native
   @JSName("$watch")

@@ -14,7 +14,7 @@ trait Mermaid extends js.Object {
   var init_Original: js.Function1[/* nodes */ java.lang.String | stdLib.Node | stdLib.NodeList, scala.Unit] = js.native
   @JSName("initialize")
   var initialize_Original: js.Function1[/* config */ mermaidLib.mermaidAPIMod.mermaidAPINs.Config, scala.Unit] = js.native
-  var mermaidAPI: mermaidLib.Anon_BindFunctions = js.native
+  var mermaidAPI: mermaidLib.TypeofmermaidAPI = js.native
   @JSName("parse")
   var parse_Original: js.Function1[/* text */ java.lang.String, _] = js.native
   @JSName("render")

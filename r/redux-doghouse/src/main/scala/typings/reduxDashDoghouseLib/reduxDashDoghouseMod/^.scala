@@ -17,7 +17,7 @@ object ^ extends js.Object {
   def bindScopedActionFactories[M /* <: ActionFactoriesMap */, S](
     actionFactories: M,
     dispatch: reduxLib.reduxMod.Dispatch[S],
-    bindFn: reduxDashDoghouseLib.Anon_ActionCreator
+    bindFn: reduxDashDoghouseLib.Fn_ActionCreator
   ): M = js.native
   @JSName("bindScopedActionFactories")
   def `bindScopedActionFactories_A<union>FScopedActionFactorySF`[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */, F /* <: ScopedActionFactory[A] */, S](actionFactories: F, dispatch: reduxLib.reduxMod.Dispatch[S]): F = js.native
@@ -25,7 +25,7 @@ object ^ extends js.Object {
   def `bindScopedActionFactories_A<union>FScopedActionFactorySF`[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */, F /* <: ScopedActionFactory[A] */, S](
     actionFactories: F,
     dispatch: reduxLib.reduxMod.Dispatch[S],
-    bindFn: reduxDashDoghouseLib.Anon_ActionCreator
+    bindFn: reduxDashDoghouseLib.Fn_ActionCreator
   ): F = js.native
   @JSName("bindScopedActionFactories")
   def bindScopedActionFactories_AActionCreatorSA[A /* <: reduxLib.reduxMod.ActionCreator[_] */, S](actionFactories: A, dispatch: reduxLib.reduxMod.Dispatch[S]): A = js.native
@@ -33,7 +33,7 @@ object ^ extends js.Object {
   def bindScopedActionFactories_AActionCreatorSA[A /* <: reduxLib.reduxMod.ActionCreator[_] */, S](
     actionFactories: A,
     dispatch: reduxLib.reduxMod.Dispatch[S],
-    bindFn: reduxDashDoghouseLib.Anon_ActionCreator
+    bindFn: reduxDashDoghouseLib.Fn_ActionCreator
   ): A = js.native
   def scopeActionCreators[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */](actionCreator: A, scopeID: java.lang.String): A = js.native
   def scopeActionCreators[A /* <: reduxLib.reduxMod.ActionCreator[_] | reduxLib.reduxMod.ActionCreatorsMapObject[_] */](actionCreator: A, scopeID: scala.Double): A = js.native

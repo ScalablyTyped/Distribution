@@ -1,0 +1,14 @@
+package typings
+package aframeLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait TypeofClassObject3D
+  extends org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Object3D] {
+  var DefaultMatrixAutoUpdate: scala.Boolean = js.native
+  var DefaultUp: threeLib.srcMathVector3Mod.Vector3 = js.native
+}
+

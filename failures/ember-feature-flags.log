@@ -5,7 +5,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(ember-feature-flags)) [id => ember-feature-flags, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-feature-flags/test-support/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-feature-flags),TsIdentLibrarySimple(ember-feature-flags)),TsIdentModule(None,List(ember-feature-flags, test-support))) [id => ember-feature-flags, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-feature-flags/tests/helpers/with-feature.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-feature-flags),TsIdentLibrarySimple(ember-feature-flags)),TsIdentModule(None,List(ember-feature-flags, tests, helpers, with-feature))) [id => ember-feature-flags, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:227 Processing TsIdentLibrarySimple(ember-feature-flags) [id => ember-feature-flags, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(ember-feature-flags) [id => ember-feature-flags, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => ember-feature-flags, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing ember-feature-flags [id => ember-feature-flags, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => ember-feature-flags, phase => scala.js] 

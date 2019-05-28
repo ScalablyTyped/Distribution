@@ -85,6 +85,6 @@ object ^ extends js.Object {
     *
     * @param options Hash of options
     */
-  def setOptions(options: MarkedOptions): markedLib.Anon_Callback = js.native
+  def setOptions(options: MarkedOptions): markedLib.Fn_Callback = js.native
 }
 

@@ -110,11 +110,7 @@ trait PartialAvatarProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var childrenClassName: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapAvatarClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -383,9 +379,7 @@ object PartialAvatarProps {
     children: reactLib.reactMod.ReactNode = null,
     childrenClassName: java.lang.String = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarClassKey]
-    ] = null,
+    classes: PartialClassNameMapAvatarClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

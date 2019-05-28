@@ -27,7 +27,7 @@ class Model () extends ObservableObject {
 object Model extends js.Object {
   var fields: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelFields = js.native
   var idField: java.lang.String = js.native
-  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray): kendoDashUiLib.Anon_Data = js.native
-  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject): kendoDashUiLib.Anon_Data = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray): kendoDashUiLib.TypeofClassModel = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject): kendoDashUiLib.TypeofClassModel = js.native
 }
 

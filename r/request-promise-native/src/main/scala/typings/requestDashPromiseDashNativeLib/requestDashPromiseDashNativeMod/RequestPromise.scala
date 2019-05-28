@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait RequestPromise[T]
   extends requestLib.requestMod.Request {
   @JSName("catch")
-  var catch_Original: requestDashPromiseDashNativeLib.Anon_Onrejected[T] = js.native
+  var catch_Original: requestDashPromiseDashNativeLib.Fn_Onrejected[T] = js.native
   @JSName("then")
-  var then_Original: requestDashPromiseDashNativeLib.Anon_Onfulfilled[T] = js.native
+  var then_Original: requestDashPromiseDashNativeLib.Fn_Onfulfilled[T] = js.native
   def `catch`[TResult](): js.Promise[T | TResult] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[T | TResult] = js.native
   def promise(): js.Promise[T] = js.native

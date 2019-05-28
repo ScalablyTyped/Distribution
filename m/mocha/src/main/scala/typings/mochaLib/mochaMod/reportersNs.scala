@@ -168,7 +168,7 @@ object reportersNs extends js.Object {
   }
   
   // value-only aliases
-  val base: mochaLib.Anon_Actual with (org.scalablytyped.runtime.Instantiable2[
+  val base: mochaLib.TypeofBase with (org.scalablytyped.runtime.Instantiable2[
     /* runner */ mochaLib.MochaNs.Runner, 
     /* options */ js.UndefOr[/* options */ mochaLib.MochaNs.MochaOptions], 
     mochaLib.MochaNs.reportersNs.Base

@@ -106,7 +106,7 @@ object VictoryLineProps {
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     interpolation: InterpolationPropType = null,
-    label: java.lang.String | victoryLib.Anon_DataAnyString = null,
+    label: java.lang.String | victoryLib.Fn_DataAnyString = null,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
     labels: js.Array[java.lang.String] | js.Array[scala.Double] | js.Function = null,
     name: java.lang.String = null,

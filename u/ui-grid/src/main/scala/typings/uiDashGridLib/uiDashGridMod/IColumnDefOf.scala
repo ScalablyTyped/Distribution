@@ -225,7 +225,7 @@ object IColumnDefOf {
     aggregationType: scala.Double | js.Function = null,
     allowCellFocus: js.UndefOr[scala.Boolean] = js.undefined,
     cellClass: java.lang.String | ICellClassGetter[TEntity] = null,
-    cellEditableCondition: js.Any | uiDashGridLib.Anon_Scope = null,
+    cellEditableCondition: js.Any | uiDashGridLib.Fn_Scope = null,
     cellFilter: java.lang.String = null,
     cellTemplate: java.lang.String = null,
     cellTooltip: scala.Boolean | java.lang.String | ICellTooltipGetter[TEntity] = null,

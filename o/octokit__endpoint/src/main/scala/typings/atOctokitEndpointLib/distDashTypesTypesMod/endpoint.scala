@@ -12,7 +12,7 @@ trait endpoint extends js.Object {
     */
   var DEFAULTS: Defaults = js.native
   @JSName("merge")
-  var merge_Original: atOctokitEndpointLib.Anon_Options = js.native
+  var merge_Original: atOctokitEndpointLib.Fn_Options = js.native
   /**
     * Transforms a GitHub REST API endpoint into generic request options
     *

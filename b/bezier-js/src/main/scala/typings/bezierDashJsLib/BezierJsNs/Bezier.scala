@@ -50,7 +50,7 @@ class Bezier protected () extends js.Object {
   def get(t: scala.Double): Point = js.native
   def getLUT(): js.Array[Point] = js.native
   def getLUT(steps: scala.Double): js.Array[Point] = js.native
-  def getUtils(): bezierDashJsLib.Anon_A = js.native
+  def getUtils(): bezierDashJsLib.Typeofutils = js.native
   def hull(t: scala.Double): js.Array[Point] = js.native
   def inflections(): js.Array[scala.Double] = js.native
   def intersects(curve: Bezier): js.Array[java.lang.String] | js.Array[scala.Double] = js.native
@@ -114,7 +114,7 @@ object Bezier extends js.Object {
     E: bezierDashJsLib.BezierJsNs.Point,
     t: scala.Double
   ): bezierDashJsLib.BezierJsNs.ABC = js.native
-  def getUtils(): bezierDashJsLib.Anon_A = js.native
+  def getUtils(): bezierDashJsLib.Typeofutils = js.native
   def quadraticFromPoints(
     p1: bezierDashJsLib.BezierJsNs.Point,
     p2: bezierDashJsLib.BezierJsNs.Point,

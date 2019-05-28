@@ -15,8 +15,8 @@ class GraphQuery protected () extends js.Object {
     * @param {Nodal.Model} [Model=null] The Model to base your query around (used for testing)
     */
   def this(str: java.lang.String, maxDepth: scala.Double) = this()
-  def this(str: java.lang.String, maxDepth: scala.Double, mModel: nodalLib.Anon_CalcField) = this()
-  var Model: nodalLib.Anon_CalcField = js.native
+  def this(str: java.lang.String, maxDepth: scala.Double, mModel: nodalLib.TypeofClassModel) = this()
+  var Model: nodalLib.TypeofClassModel = js.native
   var constructor: js.Any = js.native
   var identifier: java.lang.String = js.native
   var joins: js.Any = js.native

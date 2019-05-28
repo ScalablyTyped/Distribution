@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "emscripten"
-version := "0.0-unknown-dt-20190410Z-dab826"
+version := "0.0-unknown-dt-20190410Z-4390d5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

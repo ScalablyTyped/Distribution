@@ -41,9 +41,9 @@ class Linter protected () extends js.Object {
 object Linter extends js.Object {
   var VERSION: java.lang.String = js.native
   @JSName("findConfigurationPath")
-  var findConfigurationPath_Original: tslintLib.Anon_InputFilePath = js.native
+  var findConfigurationPath_Original: tslintLib.Fn_InputFilePath = js.native
   @JSName("findConfiguration")
-  var findConfiguration_Original: tslintLib.Anon_ConfigFile = js.native
+  var findConfiguration_Original: tslintLib.Fn_ConfigFile = js.native
   @JSName("getRulesDirectories")
   var getRulesDirectories_Original: js.Function2[
     /* directories */ js.UndefOr[java.lang.String | js.Array[java.lang.String]], 

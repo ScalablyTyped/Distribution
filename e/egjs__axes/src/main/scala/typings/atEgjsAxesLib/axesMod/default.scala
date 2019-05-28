@@ -24,7 +24,7 @@ object default extends js.Object {
   var DIRECTION_RIGHT: atEgjsAxesLib.constMod.DIRECTION = js.native
   var DIRECTION_UP: atEgjsAxesLib.constMod.DIRECTION = js.native
   var DIRECTION_VERTICAL: atEgjsAxesLib.constMod.DIRECTION = js.native
-  var PanInput: atEgjsAxesLib.Anon_Angle = js.native
+  var PanInput: atEgjsAxesLib.TypeofClassPanInput = js.native
   var PinchInput: org.scalablytyped.runtime.Instantiable2[
     /* el */ js.Any, 
     /* options */ js.UndefOr[/* options */ atEgjsAxesLib.inputTypePinchInputMod.PinchInputOption], 

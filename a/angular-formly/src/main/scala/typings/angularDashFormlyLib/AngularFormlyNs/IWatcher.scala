@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 trait IWatcher extends js.Object {
   var deep: js.UndefOr[scala.Boolean] = js.undefined
    //Defaults to false
-  var expression: js.UndefOr[java.lang.String | angularDashFormlyLib.Anon_Field] = js.undefined
+  var expression: js.UndefOr[java.lang.String | angularDashFormlyLib.Fn_Field] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   def listener(
     field: IFieldRuntimeObject,
@@ -32,7 +32,7 @@ object IWatcher {
   def apply(
     listener: (IFieldRuntimeObject, js.Any, js.Any, ITemplateScope, js.Function) => scala.Unit,
     deep: js.UndefOr[scala.Boolean] = js.undefined,
-    expression: java.lang.String | angularDashFormlyLib.Anon_Field = null,
+    expression: java.lang.String | angularDashFormlyLib.Fn_Field = null,
     `type`: java.lang.String = null
   ): IWatcher = {
     val __obj = js.Dynamic.literal(listener = js.Any.fromFunction5(listener))

@@ -68,5 +68,7 @@ object ^ extends js.Object {
     event: xstateLib.esTypesMod.SendExpr[TContext, TEvent],
     options: xstateLib.esTypesMod.SendActionOptions[TContext, TEvent]
   ): xstateLib.esTypesMod.SendAction[TContext, TEvent] = js.native
+  def spawn[TContext](entity: xstateLib.esInterpreterMod.Spawnable[TContext]): xstateLib.esActorMod.Actor[TContext, xstateLib.esTypesMod.EventObject] = js.native
+  def spawn[TContext](entity: xstateLib.esInterpreterMod.Spawnable[TContext], name: java.lang.String): xstateLib.esActorMod.Actor[TContext, xstateLib.esTypesMod.EventObject] = js.native
 }
 

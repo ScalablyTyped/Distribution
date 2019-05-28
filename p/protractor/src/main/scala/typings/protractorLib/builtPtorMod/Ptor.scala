@@ -13,7 +13,7 @@ class Ptor () extends js.Object {
   var Builder: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Builder] = js.native
   var Button: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify webdriver.IButton */ js.Any = js.native
   var By: protractorLib.builtLocatorsMod.ProtractorBy = js.native
-  var Capabilities: protractorLib.Anon_Android = js.native
+  var Capabilities: protractorLib.TypeofClassCapabilities = js.native
   var Capability: seleniumDashWebdriverLib.seleniumDashWebdriverMod.ICapability = js.native
   var Command: js.Any = js.native
   var CommandName: js.Any = js.native
@@ -31,8 +31,8 @@ class Ptor () extends js.Object {
     /* capabilities */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities, 
     seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session
   ] = js.native
-  var WebDriver: protractorLib.Anon_CreateSession = js.native
-  var WebElement: protractorLib.Anon_A = js.native
+  var WebDriver: protractorLib.TypeofClassWebDriver = js.native
+  var WebElement: protractorLib.TypeofClassWebElement = js.native
   var WebElementPromise: org.scalablytyped.runtime.Instantiable2[
     /* driver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
     /* el */ js.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement], 
@@ -42,10 +42,10 @@ class Ptor () extends js.Object {
   var by: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   @JSName("element")
   var element_Original: protractorLib.builtBrowserMod.ElementHelper = js.native
-  var error: protractorLib.Anon_CheckLegacyResponse = js.native
-  var logging: protractorLib.Anon_AddConsoleHandler = js.native
-  var promise: protractorLib.Anon_Arr = js.native
-  var until: protractorLib.Anon_AbleToSwitchToFrame = js.native
+  var error: protractorLib.Typeoferror = js.native
+  var logging: protractorLib.Typeoflogging = js.native
+  var promise: protractorLib.Typeofpromise = js.native
+  var until: protractorLib.Typeofuntil = js.native
   var utils: protractorLib.Anon_Chrome = js.native
   @JSName("$")
   def $(search: java.lang.String): protractorLib.builtElementMod.ElementFinder = js.native

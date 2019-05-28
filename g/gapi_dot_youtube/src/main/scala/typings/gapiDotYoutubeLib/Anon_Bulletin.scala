@@ -13,7 +13,7 @@ trait Anon_Bulletin extends js.Object {
   /**
     * The channelItem object contains details about a resource that was added to a channel. This property is only present if the snippet.type is channelItem.
     */
-  var channelItem: Anon_ResourceId_447743794
+  var channelItem: Anon_ResourceId_1965757454
   /**
     * The comment object contains information about a resource that received a comment. This property is only present if the snippet.type is comment.
     */
@@ -52,7 +52,7 @@ object Anon_Bulletin {
   @scala.inline
   def apply(
     bulletin: Anon_ResourceIdAnonChannelIdKindPlaylistId,
-    channelItem: Anon_ResourceId_447743794,
+    channelItem: Anon_ResourceId_1965757454,
     comment: Anon_ResourceIdAnonChannelIdKind,
     favorite: Anon_ResourceId,
     like: Anon_ResourceId,

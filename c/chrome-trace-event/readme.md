@@ -1,7 +1,7 @@
 
 # Scala.js typings for chrome-trace-event
 
-Typings are for version 1.0.0
+Typings are for version 1.0.2
 
 ## Library description:
 A library to create a trace of your node app per Google's Trace Event format.

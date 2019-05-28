@@ -371,7 +371,7 @@ object ServicesNs extends js.Object {
     @js.native
     class RuleOperationContext protected ()
       extends typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RuleOperationContext {
-      def this(funcs: typescriptDashServicesLib.Anon_Context*) = this()
+      def this(funcs: typescriptDashServicesLib.Fn_Context*) = this()
     }
     
     @js.native

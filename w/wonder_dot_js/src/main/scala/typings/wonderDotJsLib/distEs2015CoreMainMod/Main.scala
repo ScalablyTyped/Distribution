@@ -13,7 +13,7 @@ class Main () extends js.Object
 @JSImport("wonder.js/dist/es2015/core/Main", "Main")
 @js.native
 object Main extends js.Object {
-  def init(): wonderDotJsLib.Anon_HasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig = js.native
-  def setConfig(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig: wonderDotJsLib.Anon_CanvasId): wonderDotJsLib.Anon_HasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig = js.native
+  def init(): wonderDotJsLib.TypeofClassMain = js.native
+  def setConfig(hasCanvasIdIsTestScreenSizeUseDevicePixelRatioContextConfig: wonderDotJsLib.Anon_CanvasId): wonderDotJsLib.TypeofClassMain = js.native
 }
 

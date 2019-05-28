@@ -68,7 +68,7 @@ class AjaxAppender protected () extends Appender {
   	 * AjaxAppender-specific errors.
   	 * A single parameter, message, is passed to the callback function. This is the error-specific message that caused the failure.
   	 */
-  def setFailCallback(failCallback: log4javascriptLib.Anon_Message): scala.Unit = js.native
+  def setFailCallback(failCallback: log4javascriptLib.Fn_Message): scala.Unit = js.native
   /**
   	 * Sets the post variable name whose value will the formatted log message(s) for each request.
   	 * Default value is data.
@@ -80,7 +80,7 @@ class AjaxAppender protected () extends Appender {
   	 * A single parameter, xmlHttp, is passed to the callback function. This is the XMLHttpRequest object that performed the
   	 * request.
   	 */
-  def setRequestSuccessCallback(requestSuccessCallback: log4javascriptLib.Anon_XmlHttp): scala.Unit = js.native
+  def setRequestSuccessCallback(requestSuccessCallback: log4javascriptLib.Fn_XmlHttp): scala.Unit = js.native
   /**
   	 * Whether to send all remaining unsent log messages to the server when the page unloads.
   	 * Since version 1.4.3, the default value is false. Previously the default was true.

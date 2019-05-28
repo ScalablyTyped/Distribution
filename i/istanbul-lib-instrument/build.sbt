@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "istanbul-lib-instrument"
-version := "1.7-dt-20190425Z-fc53e3"
+version := "1.7-dt-20190425Z-4ebe19"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

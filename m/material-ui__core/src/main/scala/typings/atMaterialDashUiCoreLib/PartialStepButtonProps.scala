@@ -122,11 +122,7 @@ trait PartialStepButtonProps extends js.Object {
   var centerRipple: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonClasskey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapStepButtonClasskey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var component: js.UndefOr[
@@ -425,9 +421,7 @@ object PartialStepButtonProps {
     centerRipple: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonClasskey]
-    ] = null,
+    classes: PartialClassNameMapStepButtonClasskey = null,
     color: java.lang.String = null,
     completed: js.UndefOr[scala.Boolean] = js.undefined,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps] = null,

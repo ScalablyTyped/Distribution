@@ -19,7 +19,7 @@ object ICurrentRoute {
     caseInsensitiveMatch: js.UndefOr[scala.Boolean] = js.undefined,
     controller: java.lang.String | InlineAnnotatedFunction = null,
     controllerAs: java.lang.String = null,
-    redirectTo: java.lang.String | angularDashRouteLib.Anon_LocationPath = null,
+    redirectTo: java.lang.String | angularDashRouteLib.Fn_LocationPath = null,
     reloadOnSearch: js.UndefOr[scala.Boolean] = js.undefined,
     reloadOnUrl: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
@@ -30,8 +30,8 @@ object ICurrentRoute {
         js.UndefOr[angularLib.angularMod.IPromise[js.UndefOr[java.lang.String]] | java.lang.String]
       ]
     ] = null,
-    template: java.lang.String | angularDashRouteLib.Anon_RouteParams = null,
-    templateUrl: java.lang.String | angularDashRouteLib.Anon_RouteParams = null
+    template: java.lang.String | angularDashRouteLib.Fn_RouteParams = null,
+    templateUrl: java.lang.String | angularDashRouteLib.Fn_RouteParams = null
   ): ICurrentRoute = {
     val __obj = js.Dynamic.literal(locals = locals, params = params)
     if (!js.isUndefined(caseInsensitiveMatch)) __obj.updateDynamic("caseInsensitiveMatch")(caseInsensitiveMatch)

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FreeBusy extends js.Object {
   @JSName("calendars")
-  var calendars_Original: gapiDotCalendarLib.Anon_KeyAnonBusy = js.native
+  var calendars_Original: gapiDotCalendarLib.Fn_KeyAnonBusy = js.native
   @JSName("groups")
-  var groups_Original: gapiDotCalendarLib.Anon_Key = js.native
+  var groups_Original: gapiDotCalendarLib.Fn_Key = js.native
   var kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#freeBusy` = js.native
   var timeMax: datetime = js.native
   var timeMin: datetime = js.native

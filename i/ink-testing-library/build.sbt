@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ink-testing-library"
-version := "1.0-dt-20190313Z-6e8ab1"
+version := "1.0-dt-20190313Z-ef0b70"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "ink" % "0.5-dt-20190126Z-5d8c2f",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
+  "org.scalablytyped" %%% "ink" % "0.5-dt-20190126Z-443969",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false

@@ -39,7 +39,7 @@ object FinalStateNodeConfig {
     onExit: SingleOrArray[Action[TContext, TEvent]] = null,
     order: scala.Int | scala.Double = null,
     parallel: xstateLib.xstateLibNumbers.`false` = null,
-    parent: xstateLib.libStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]] = null,
+    parent: xstateLib.libStateNodeMod.StateNode[TContext, _, TEvent] = null,
     states: js.UndefOr[scala.Nothing] = js.undefined,
     strict: js.UndefOr[scala.Boolean] = js.undefined
   ): FinalStateNodeConfig[TContext, TEvent] = {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/Tabs.TabsProps> */
 trait PartialTabsProps extends js.Object {
   var ScrollButtonComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
-  var TabIndicatorProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps]] = js.undefined
+  var TabIndicatorProps: js.UndefOr[PartialTabIndicatorProps] = js.undefined
   var TouchRippleProps: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps]
   ] = js.undefined
@@ -120,11 +120,7 @@ trait PartialTabsProps extends js.Object {
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapTabsClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.tabsTabsMod.TabsProps]] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -372,7 +368,7 @@ object PartialTabsProps {
   @scala.inline
   def apply(
     ScrollButtonComponent: reactLib.reactMod.ReactType[_] = null,
-    TabIndicatorProps: stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps] = null,
+    TabIndicatorProps: PartialTabIndicatorProps = null,
     TouchRippleProps: stdLib.Partial[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps] = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
@@ -434,9 +430,7 @@ object PartialTabsProps {
     centered: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey]
-    ] = null,
+    classes: PartialClassNameMapTabsClassKey = null,
     color: java.lang.String = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.tabsTabsMod.TabsProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

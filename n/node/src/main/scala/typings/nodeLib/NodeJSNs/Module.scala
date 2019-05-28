@@ -26,7 +26,7 @@ class Module protected () extends js.Object {
 @JSGlobal("NodeJS.Module")
 @js.native
 object Module extends js.Object {
-  var Module: nodeLib.Anon_BuiltinModules = js.native
+  var Module: nodeLib.TypeofClassModule = js.native
   var builtinModules: js.Array[java.lang.String] = js.native
   def createRequireFromPath(path: java.lang.String): js.Function1[/* path */ java.lang.String, _] = js.native
   def runMain(): scala.Unit = js.native

@@ -70,7 +70,7 @@ trait AnalyticsJS extends js.Object {
   /* The global analytics object emits events whenever you call alias, group,
     identify, track or page. That way you can listen to those events and run
     your own custom code. */
-  def on(event: java.lang.String, callback: segmentDashAnalyticsLib.Anon_Event): scala.Unit = js.native
+  def on(event: java.lang.String, callback: segmentDashAnalyticsLib.Fn_Event): scala.Unit = js.native
   /* The page method lets you record page views on your website, along with
     optional extra information about the page being viewed. */
   def page(): scala.Unit = js.native
@@ -127,14 +127,14 @@ trait AnalyticsJS extends js.Object {
   def trackForm(
     elements: js.Array[stdLib.Element],
     event: java.lang.String,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
-  def trackForm(elements: js.Array[stdLib.Element], event: segmentDashAnalyticsLib.Anon_Elm): scala.Unit = js.native
-  def trackForm(elements: js.Array[stdLib.Element], event: segmentDashAnalyticsLib.Anon_Elm, properties: js.Object): scala.Unit = js.native
+  def trackForm(elements: js.Array[stdLib.Element], event: segmentDashAnalyticsLib.Fn_Elm): scala.Unit = js.native
+  def trackForm(elements: js.Array[stdLib.Element], event: segmentDashAnalyticsLib.Fn_Elm, properties: js.Object): scala.Unit = js.native
   def trackForm(
     elements: js.Array[stdLib.Element],
-    event: segmentDashAnalyticsLib.Anon_Elm,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    event: segmentDashAnalyticsLib.Fn_Elm,
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
   /* trackForm is a helper that binds a track call to a form submission.
     Usually the page would change before you could call track, but with
@@ -145,46 +145,46 @@ trait AnalyticsJS extends js.Object {
   def trackForm(
     elements: segmentDashAnalyticsLib.JQuery,
     event: java.lang.String,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
-  def trackForm(elements: segmentDashAnalyticsLib.JQuery, event: segmentDashAnalyticsLib.Anon_Elm): scala.Unit = js.native
+  def trackForm(elements: segmentDashAnalyticsLib.JQuery, event: segmentDashAnalyticsLib.Fn_Elm): scala.Unit = js.native
   def trackForm(
     elements: segmentDashAnalyticsLib.JQuery,
-    event: segmentDashAnalyticsLib.Anon_Elm,
+    event: segmentDashAnalyticsLib.Fn_Elm,
     properties: js.Object
   ): scala.Unit = js.native
   def trackForm(
     elements: segmentDashAnalyticsLib.JQuery,
-    event: segmentDashAnalyticsLib.Anon_Elm,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    event: segmentDashAnalyticsLib.Fn_Elm,
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
   def trackForm(elements: stdLib.Element, event: java.lang.String): scala.Unit = js.native
   def trackForm(elements: stdLib.Element, event: java.lang.String, properties: js.Object): scala.Unit = js.native
   def trackForm(
     elements: stdLib.Element,
     event: java.lang.String,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
-  def trackForm(elements: stdLib.Element, event: segmentDashAnalyticsLib.Anon_Elm): scala.Unit = js.native
-  def trackForm(elements: stdLib.Element, event: segmentDashAnalyticsLib.Anon_Elm, properties: js.Object): scala.Unit = js.native
+  def trackForm(elements: stdLib.Element, event: segmentDashAnalyticsLib.Fn_Elm): scala.Unit = js.native
+  def trackForm(elements: stdLib.Element, event: segmentDashAnalyticsLib.Fn_Elm, properties: js.Object): scala.Unit = js.native
   def trackForm(
     elements: stdLib.Element,
-    event: segmentDashAnalyticsLib.Anon_Elm,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    event: segmentDashAnalyticsLib.Fn_Elm,
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
   def trackLink(elements: js.Array[stdLib.Element], event: java.lang.String): scala.Unit = js.native
   def trackLink(elements: js.Array[stdLib.Element], event: java.lang.String, properties: js.Object): scala.Unit = js.native
   def trackLink(
     elements: js.Array[stdLib.Element],
     event: java.lang.String,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
-  def trackLink(elements: js.Array[stdLib.Element], event: segmentDashAnalyticsLib.Anon_Elm): scala.Unit = js.native
-  def trackLink(elements: js.Array[stdLib.Element], event: segmentDashAnalyticsLib.Anon_Elm, properties: js.Object): scala.Unit = js.native
+  def trackLink(elements: js.Array[stdLib.Element], event: segmentDashAnalyticsLib.Fn_Elm): scala.Unit = js.native
+  def trackLink(elements: js.Array[stdLib.Element], event: segmentDashAnalyticsLib.Fn_Elm, properties: js.Object): scala.Unit = js.native
   def trackLink(
     elements: js.Array[stdLib.Element],
-    event: segmentDashAnalyticsLib.Anon_Elm,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    event: segmentDashAnalyticsLib.Fn_Elm,
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
   /* trackLink is a helper that binds a track call to whenever a link is
     clicked. Usually the page would change before you could call track, but
@@ -195,32 +195,32 @@ trait AnalyticsJS extends js.Object {
   def trackLink(
     elements: segmentDashAnalyticsLib.JQuery,
     event: java.lang.String,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
-  def trackLink(elements: segmentDashAnalyticsLib.JQuery, event: segmentDashAnalyticsLib.Anon_Elm): scala.Unit = js.native
+  def trackLink(elements: segmentDashAnalyticsLib.JQuery, event: segmentDashAnalyticsLib.Fn_Elm): scala.Unit = js.native
   def trackLink(
     elements: segmentDashAnalyticsLib.JQuery,
-    event: segmentDashAnalyticsLib.Anon_Elm,
+    event: segmentDashAnalyticsLib.Fn_Elm,
     properties: js.Object
   ): scala.Unit = js.native
   def trackLink(
     elements: segmentDashAnalyticsLib.JQuery,
-    event: segmentDashAnalyticsLib.Anon_Elm,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    event: segmentDashAnalyticsLib.Fn_Elm,
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
   def trackLink(elements: stdLib.Element, event: java.lang.String): scala.Unit = js.native
   def trackLink(elements: stdLib.Element, event: java.lang.String, properties: js.Object): scala.Unit = js.native
   def trackLink(
     elements: stdLib.Element,
     event: java.lang.String,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
-  def trackLink(elements: stdLib.Element, event: segmentDashAnalyticsLib.Anon_Elm): scala.Unit = js.native
-  def trackLink(elements: stdLib.Element, event: segmentDashAnalyticsLib.Anon_Elm, properties: js.Object): scala.Unit = js.native
+  def trackLink(elements: stdLib.Element, event: segmentDashAnalyticsLib.Fn_Elm): scala.Unit = js.native
+  def trackLink(elements: stdLib.Element, event: segmentDashAnalyticsLib.Fn_Elm, properties: js.Object): scala.Unit = js.native
   def trackLink(
     elements: stdLib.Element,
-    event: segmentDashAnalyticsLib.Anon_Elm,
-    properties: segmentDashAnalyticsLib.Anon_ElmElement
+    event: segmentDashAnalyticsLib.Fn_Elm,
+    properties: segmentDashAnalyticsLib.Fn_ElmElement
   ): scala.Unit = js.native
   /* Once Analytics.js loaded, you can retrieve information about the
     currently identified user or group like their id and traits. */

@@ -12,5 +12,4 @@ package object stylesWithStylesMod {
     /* theme */ atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme, 
     StyleRules[ClassKey]
   ]
-  type WithStyles[T /* <: java.lang.String | StyleRules[java.lang.String] | StyleRulesCallback[java.lang.String] */, IncludeTheme /* <: js.UndefOr[scala.Boolean] */] = (js.Object | atMaterialDashUiCoreLib.Anon_Theme) with atMaterialDashUiCoreLib.Anon_Classes[T]
 }

@@ -10,7 +10,7 @@ trait Application
   extends IRouter[Application]
      with easyDashXapiDashSupertestLib.ExpressNs.Application {
   @JSName("get")
-  var get_Original_Application: easyDashXapiDashSupertestLib.Anon_Handlers = js.native
+  var get_Original_Application: easyDashXapiDashSupertestLib.Fn_Handlers = js.native
   var locals: js.Any = js.native
   var map: js.Any = js.native
   var resource: js.Any = js.native

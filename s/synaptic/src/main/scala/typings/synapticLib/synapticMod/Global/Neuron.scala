@@ -17,8 +17,8 @@ class Neuron ()
 @js.native
 object Neuron
   extends org.scalablytyped.runtime.Instantiable0[synapticLib.synapticMod.Neuron] {
-  var Connection: synapticLib.Anon_From = js.native
-  val squashNs: synapticLib.Anon_HLIM = js.native
+  var Connection: synapticLib.TypeofClassConnection = js.native
+  val squashNs: synapticLib.Typeofsquash = js.native
   def quantity(): synapticLib.Anon_Connections = js.native
   def uid(): scala.Double = js.native
 }

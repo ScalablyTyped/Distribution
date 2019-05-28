@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object httpsMod
   extends org.scalablytyped.runtime.TopLevel[
       followDashRedirectsLib.followDashRedirectsMod.Override[
-        Anon_AgentCallback, 
+        TypeofcoreHttps, 
         followDashRedirectsLib.followDashRedirectsMod.RedirectScheme[
           nodeLib.httpsMod.RequestOptions, 
           nodeLib.httpMod.ClientRequest, 

@@ -18,8 +18,8 @@ import scala.scalajs.js.annotation._
 object AllElectron {
   @scala.inline
   def apply(
-    BrowserView: electronLib.Anon_FromId,
-    BrowserWindow: electronLib.Anon_AddDevToolsExtension,
+    BrowserView: electronLib.TypeofClassBrowserView,
+    BrowserWindow: electronLib.TypeofClassBrowserWindow,
     BrowserWindowProxy: org.scalablytyped.runtime.Instantiable0[BrowserWindowProxy],
     ClientRequest: org.scalablytyped.runtime.Instantiable1[
       /* options */ electronLib.electronLibStrings.method | electronLib.electronLibStrings.url | electronLib.electronLibStrings.session | electronLib.electronLibStrings.partition | electronLib.electronLibStrings.protocol | electronLib.electronLibStrings.host | electronLib.electronLibStrings.hostname | electronLib.electronLibStrings.port | electronLib.electronLibStrings.path | electronLib.electronLibStrings.redirect, 
@@ -29,10 +29,10 @@ object AllElectron {
     Debugger: org.scalablytyped.runtime.Instantiable0[Debugger],
     DownloadItem: org.scalablytyped.runtime.Instantiable0[DownloadItem],
     IncomingMessage: org.scalablytyped.runtime.Instantiable0[IncomingMessage],
-    Menu: electronLib.Anon_Action,
+    Menu: electronLib.TypeofClassMenu,
     MenuItem: org.scalablytyped.runtime.Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem],
-    Notification: electronLib.Anon_IsSupported,
-    TouchBar: electronLib.Anon_Options,
+    Notification: electronLib.TypeofClassNotification,
+    TouchBar: electronLib.TypeofClassTouchBar,
     Tray: org.scalablytyped.runtime.Instantiable1[/* image */ NativeImage | java.lang.String, Tray],
     WebRequest: org.scalablytyped.runtime.Instantiable0[WebRequest],
     app: App,
@@ -46,7 +46,7 @@ object AllElectron {
     inAppPurchase: InAppPurchase,
     ipcMain: IpcMain,
     ipcRenderer: IpcRenderer,
-    nativeImage: electronLib.Anon_Buffer,
+    nativeImage: electronLib.TypeofClassNativeImage,
     net: Net,
     netLog: NetLog,
     powerMonitor: PowerMonitor,
@@ -54,10 +54,10 @@ object AllElectron {
     protocol: Protocol,
     remote: Remote,
     screen: Screen,
-    session: electronLib.Anon_DefaultSession,
+    session: electronLib.TypeofClassSession,
     shell: Shell,
     systemPreferences: SystemPreferences,
-    webContents: electronLib.Anon_FromIdGetAllWebContents,
+    webContents: electronLib.TypeofClassWebContents,
     webFrame: WebFrame,
     webviewTag: WebviewTag
   ): AllElectron = {

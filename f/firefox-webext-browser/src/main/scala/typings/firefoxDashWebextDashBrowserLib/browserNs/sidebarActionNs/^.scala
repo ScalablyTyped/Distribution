@@ -23,7 +23,7 @@ object ^ extends js.Object {
     * pixel data from a canvas element, or as dictionary of either one of those. Either the **path** or the
     * **imageData** property must be specified.
     */
-  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_ImageDataKeyPathTabId): js.Promise[scala.Unit] = js.native
+  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_ImageDataKeyPath): js.Promise[scala.Unit] = js.native
   /**
     * Sets the url to the html document to be opened in the sidebar when the user clicks on the sidebar action's icon.
     */

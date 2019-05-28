@@ -11,7 +11,7 @@ trait Options
    // Deprecated
   var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined
   var auth: js.UndefOr[
-    java.lang.String | atOctokitRestLib.Anon_On2fa | atOctokitRestLib.Anon_ClientId | atOctokitRestLib.Anon_Promise
+    java.lang.String | atOctokitRestLib.Anon_On2fa | atOctokitRestLib.Anon_ClientId | atOctokitRestLib.Fn_Promise
   ] = js.undefined
   var baseUrl: js.UndefOr[java.lang.String] = js.undefined
    // Deprecated
@@ -29,7 +29,7 @@ object Options {
     StringDictionary:  // Deprecated
   /* option */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     agent: nodeLib.httpMod.Agent = null,
-    auth: java.lang.String | atOctokitRestLib.Anon_On2fa | atOctokitRestLib.Anon_ClientId | atOctokitRestLib.Anon_Promise = null,
+    auth: java.lang.String | atOctokitRestLib.Anon_On2fa | atOctokitRestLib.Anon_ClientId | atOctokitRestLib.Fn_Promise = null,
     baseUrl: java.lang.String = null,
     headers: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     log: atOctokitRestLib.Anon_Debug = null,

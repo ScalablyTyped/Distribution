@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rc-editor-core/lib", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var EditorCore: rcDashEditorDashCoreLib.Anon_ChildContextTypesDefaultProps = js.native
+  var EditorCore: rcDashEditorDashCoreLib.TypeofClassEditorCoreChildContextTypes = js.native
   def GetHTML(editorState: js.Any): js.Any = js.native
   def GetText(editorState: js.Any): java.lang.String = js.native
   def GetText(editorState: js.Any, options: rcDashEditorDashCoreLib.Anon_Encode): java.lang.String = js.native

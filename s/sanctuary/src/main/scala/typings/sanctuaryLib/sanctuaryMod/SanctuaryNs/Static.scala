@@ -28,8 +28,8 @@ trait Static extends js.Object {
   def apSecond(x: sanctuaryLib.sanctuaryMod.Apply[_]): js.Function1[/* y */ sanctuaryLib.sanctuaryMod.Apply[_], sanctuaryLib.sanctuaryMod.Apply[_]] = js.native
   //  Array
   //  TODO: Fantasyland overloads, non-curried versions
-  def append[A](x: A): sanctuaryLib.Anon_Xs[A] = js.native
-  def at(p: sanctuaryLib.Integer): sanctuaryLib.Anon_QA = js.native
+  def append[A](x: A): sanctuaryLib.Fn_Xs[A] = js.native
+  def at(p: sanctuaryLib.Integer): sanctuaryLib.Fn_QA = js.native
   def bimap[A, B](p: sanctuaryLib.sanctuaryMod.Fn[A, B]): js.Function1[
     /* q */ sanctuaryLib.sanctuaryMod.Fn[_, _], 
     js.Function1[
@@ -41,7 +41,7 @@ trait Static extends js.Object {
     /* chain_ */ sanctuaryLib.sanctuaryMod.Chain[A], 
     sanctuaryLib.sanctuaryMod.Chain[B]
   ] = js.native
-  def chainRec(typeRep: sanctuaryLib.sanctuaryMod.TypeRep): sanctuaryLib.Anon_F = js.native
+  def chainRec(typeRep: sanctuaryLib.sanctuaryMod.TypeRep): sanctuaryLib.Fn_F = js.native
   @JSName("chain")
   def chain_ABX[A, B, X](f: sanctuaryLib.sanctuaryMod.Fn2[A, X, B]): js.Function1[
     /* chain_ */ sanctuaryLib.sanctuaryMod.Fn[X, A], 
@@ -61,7 +61,7 @@ trait Static extends js.Object {
     sanctuaryLib.sanctuaryMod.Semigroup[A]
   ] = js.native
   def concat[A](x: sanctuaryLib.sanctuaryMod.StrMap[A]): js.Function1[/* y */ sanctuaryLib.sanctuaryMod.StrMap[A], sanctuaryLib.sanctuaryMod.StrMap[A]] = js.native
-  def contramap[A, B](f: sanctuaryLib.sanctuaryMod.Fn[B, A]): sanctuaryLib.Anon_Contravariant[A, B] = js.native
+  def contramap[A, B](f: sanctuaryLib.sanctuaryMod.Fn[B, A]): sanctuaryLib.Fn_Contravariant[A, B] = js.native
   //  Function
   def curry2[A, B, C](f: sanctuaryLib.sanctuaryMod.Fn2_[A, B, C]): sanctuaryLib.sanctuaryMod.Fn2[A, B, C] = js.native
   def curry3[A, B, C, D](f: sanctuaryLib.sanctuaryMod.Fn3_[A, B, C, D]): sanctuaryLib.sanctuaryMod.Fn3[A, B, C, D] = js.native
@@ -108,8 +108,8 @@ trait Static extends js.Object {
     sanctuaryLib.sanctuaryMod.Extend[B]
   ] = js.native
   def extract[A](comonad: sanctuaryLib.sanctuaryMod.Comonad[A]): A = js.native
-  def filter[A](pred: sanctuaryLib.sanctuaryMod.Predicate[A]): sanctuaryLib.Anon_M[A] = js.native
-  def filterM[A](pred: sanctuaryLib.sanctuaryMod.Predicate[A]): sanctuaryLib.Anon_M[A] = js.native
+  def filter[A](pred: sanctuaryLib.sanctuaryMod.Predicate[A]): sanctuaryLib.Fn_M[A] = js.native
+  def filterM[A](pred: sanctuaryLib.sanctuaryMod.Predicate[A]): sanctuaryLib.Fn_M[A] = js.native
   def find[A](p: sanctuaryLib.sanctuaryMod.Predicate[A]): js.Function1[
     /* q */ js.Array[A] | sanctuaryLib.sanctuaryMod.StrMap[A] | sanctuaryLib.sanctuaryMod.Foldable[A], 
     sanctuaryLib.sanctuaryMod.Maybe[A]
@@ -156,12 +156,12 @@ trait Static extends js.Object {
   def last(xs: java.lang.String): sanctuaryLib.sanctuaryMod.Maybe[java.lang.String] = js.native
   def last[A](xs: js.Array[A]): sanctuaryLib.sanctuaryMod.Maybe[A] = js.native
   def lefts[A](p: js.Array[sanctuaryLib.sanctuaryMod.Either[A, _]]): js.Array[A] = js.native
-  def lift2[A, B, C](f: sanctuaryLib.sanctuaryMod.Fn2[A, B, C]): sanctuaryLib.Anon_X[A, B, C] = js.native
-  def lift3[A, B, C, D](f: sanctuaryLib.sanctuaryMod.Fn3[A, B, C, D]): sanctuaryLib.Anon_XY[A, B, C, D] = js.native
+  def lift2[A, B, C](f: sanctuaryLib.sanctuaryMod.Fn2[A, B, C]): sanctuaryLib.Fn_X[A, B, C] = js.native
+  def lift3[A, B, C, D](f: sanctuaryLib.sanctuaryMod.Fn3[A, B, C, D]): sanctuaryLib.Fn_XY[A, B, C, D] = js.native
   def lines(s: java.lang.String): js.Array[java.lang.String] = js.native
   def lt[A](x: sanctuaryLib.sanctuaryMod.Ord[A]): js.Function1[/* y */ sanctuaryLib.sanctuaryMod.Ord[A], scala.Boolean] = js.native
   def lte[A](x: sanctuaryLib.sanctuaryMod.Ord[A]): js.Function1[/* y */ sanctuaryLib.sanctuaryMod.Ord[A], scala.Boolean] = js.native
-  def map[A, B](p: sanctuaryLib.sanctuaryMod.Fn[A, B]): sanctuaryLib.Anon_Q[A, B] = js.native
+  def map[A, B](p: sanctuaryLib.sanctuaryMod.Fn[A, B]): sanctuaryLib.Fn_Q[A, B] = js.native
   def mapMaybe[A](p: sanctuaryLib.sanctuaryMod.Fn[A, sanctuaryLib.sanctuaryMod.Maybe[_]]): js.Function1[/* q */ js.Array[A], js.Array[A]] = js.native
   def `match`(pattern: stdLib.RegExp): js.Function1[
     /* q */ java.lang.String, 
@@ -232,10 +232,10 @@ trait Static extends js.Object {
     sanctuaryLib.sanctuaryMod.Functor[_]
   ] = js.native
   def pow(p: sanctuaryLib.FiniteNumber): js.Function1[/* q */ sanctuaryLib.FiniteNumber, sanctuaryLib.FiniteNumber] = js.native
-  def prepend[A](x: A): sanctuaryLib.Anon_Xs[A] = js.native
+  def prepend[A](x: A): sanctuaryLib.Fn_Xs[A] = js.native
   def product(p: js.Array[sanctuaryLib.FiniteNumber]): sanctuaryLib.FiniteNumber = js.native
   def product(p: sanctuaryLib.sanctuaryMod.Foldable[sanctuaryLib.FiniteNumber]): sanctuaryLib.FiniteNumber = js.native
-  def promap[A, B](p: sanctuaryLib.sanctuaryMod.Fn[A, B]): js.Function1[/* q */ sanctuaryLib.sanctuaryMod.Fn[_, _], sanctuaryLib.Anon_R[B, _, A, _]] = js.native
+  def promap[A, B](p: sanctuaryLib.sanctuaryMod.Fn[A, B]): js.Function1[/* q */ sanctuaryLib.sanctuaryMod.Fn[_, _], sanctuaryLib.Fn_R[B, _, A, _]] = js.native
   //  Object
   def prop(p: java.lang.String): js.Function1[/* q */ js.Any, _] = js.native
   def props(p: js.Array[java.lang.String]): js.Function1[/* q */ js.Any, _] = js.native
@@ -261,7 +261,7 @@ trait Static extends js.Object {
   def slice(p: sanctuaryLib.Integer): js.Function1[/* q */ sanctuaryLib.Integer, sanctuaryLib.sanctuaryMod.ListToMaybeList] = js.native
   def sort[A](foldable: js.Array[A]): js.Array[A] = js.native
   def sort[A](foldable: sanctuaryLib.sanctuaryMod.Foldable[A]): sanctuaryLib.sanctuaryMod.Foldable[A] = js.native
-  def sortBy[A](f: sanctuaryLib.sanctuaryMod.Fn[A, sanctuaryLib.sanctuaryMod.Ord[_]]): sanctuaryLib.Anon_Foldable[A] = js.native
+  def sortBy[A](f: sanctuaryLib.sanctuaryMod.Fn[A, sanctuaryLib.sanctuaryMod.Ord[_]]): sanctuaryLib.Fn_Foldable[A] = js.native
   def splitOn(separator: java.lang.String): js.Function1[/* q */ java.lang.String, js.Array[java.lang.String]] = js.native
   def splitOnRegex(pattern: stdLib.RegExp): js.Function1[/* q */ java.lang.String, js.Array[java.lang.String]] = js.native
   def stripPrefix(prefix: java.lang.String): js.Function1[/* q */ java.lang.String, sanctuaryLib.sanctuaryMod.Maybe[java.lang.String]] = js.native

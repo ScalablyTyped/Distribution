@@ -31,7 +31,7 @@ object ^ extends js.Object {
     * data from a canvas element, or as dictionary of either one of those. Either the **path** or the **imageData**
     * property must be specified.
     */
-  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_ImageDataKeyPath): js.Promise[scala.Unit] = js.native
+  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_ImageDataKey): js.Promise[scala.Unit] = js.native
   /** Sets the html document to be opened as a popup when the user clicks on the page action's icon. */
   def setPopup(details: firefoxDashWebextDashBrowserLib.Anon_PopupTabId): scala.Unit = js.native
   /** Sets the title of the page action. This is displayed in a tooltip over the page action. */

@@ -16,12 +16,6 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait JS extends js.Object
   
   @js.native
-  sealed trait PartialDialogContentTextProps extends js.Object
-  
-  @js.native
-  sealed trait PartialTypographyProps extends js.Object
-  
-  @js.native
   sealed trait absolute
     extends atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey
   
@@ -331,6 +325,9 @@ object atMaterialDashUiCoreLibStrings {
   
   @js.native
   sealed trait central extends js.Object
+  
+  @js.native
+  sealed trait char extends js.Object
   
   @js.native
   sealed trait checkbox
@@ -2212,10 +2209,6 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def JS: JS = "js".asInstanceOf[JS]
   @scala.inline
-  def PartialDialogContentTextProps: PartialDialogContentTextProps = "PartialDialogContentTextProps".asInstanceOf[PartialDialogContentTextProps]
-  @scala.inline
-  def PartialTypographyProps: PartialTypographyProps = "PartialTypographyProps".asInstanceOf[PartialTypographyProps]
-  @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   @scala.inline
   def action: action = "action".asInstanceOf[action]
@@ -2365,6 +2358,8 @@ object atMaterialDashUiCoreLibStrings {
   def centered: centered = "centered".asInstanceOf[centered]
   @scala.inline
   def central: central = "central".asInstanceOf[central]
+  @scala.inline
+  def char: char = "char".asInstanceOf[char]
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline

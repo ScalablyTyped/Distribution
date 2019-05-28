@@ -7,28 +7,26 @@ import scala.scalajs.js.annotation._
 
 trait LifecycleCallbacks extends js.Object {
   var afterCreate: js.UndefOr[
-    js.Array[waterlineLib.Anon_NewlyCreatedRecord] | waterlineLib.Anon_NewlyCreatedRecord
+    js.Array[waterlineLib.Fn_NewlyCreatedRecord] | waterlineLib.Fn_NewlyCreatedRecord
   ] = js.undefined
-  var afterDestroy: js.UndefOr[
-    js.Array[waterlineLib.Anon_DestroyedInstance] | waterlineLib.Anon_DestroyedInstance
-  ] = js.undefined
-  var afterUpdate: js.UndefOr[js.Array[waterlineLib.Anon_Next] | waterlineLib.Anon_Next] = js.undefined
-  var beforeCreate: js.UndefOr[js.Array[waterlineLib.Anon_Next] | waterlineLib.Anon_Next] = js.undefined
-  var beforeDestroy: js.UndefOr[js.Array[waterlineLib.Anon_Criteria] | waterlineLib.Anon_Next] = js.undefined
-  var beforeUpdate: js.UndefOr[js.Array[waterlineLib.Anon_Next] | waterlineLib.Anon_Next] = js.undefined
-  var beforeValidate: js.UndefOr[js.Array[waterlineLib.Anon_Next] | waterlineLib.Anon_Next] = js.undefined
+  var afterDestroy: js.UndefOr[js.Array[waterlineLib.Fn_DestroyedInstance] | waterlineLib.Fn_DestroyedInstance] = js.undefined
+  var afterUpdate: js.UndefOr[js.Array[waterlineLib.Fn_Next] | waterlineLib.Fn_Next] = js.undefined
+  var beforeCreate: js.UndefOr[js.Array[waterlineLib.Fn_Next] | waterlineLib.Fn_Next] = js.undefined
+  var beforeDestroy: js.UndefOr[js.Array[waterlineLib.Fn_Criteria] | waterlineLib.Fn_Next] = js.undefined
+  var beforeUpdate: js.UndefOr[js.Array[waterlineLib.Fn_Next] | waterlineLib.Fn_Next] = js.undefined
+  var beforeValidate: js.UndefOr[js.Array[waterlineLib.Fn_Next] | waterlineLib.Fn_Next] = js.undefined
 }
 
 object LifecycleCallbacks {
   @scala.inline
   def apply(
-    afterCreate: js.Array[waterlineLib.Anon_NewlyCreatedRecord] | waterlineLib.Anon_NewlyCreatedRecord = null,
-    afterDestroy: js.Array[waterlineLib.Anon_DestroyedInstance] | waterlineLib.Anon_DestroyedInstance = null,
-    afterUpdate: js.Array[waterlineLib.Anon_Next] | waterlineLib.Anon_Next = null,
-    beforeCreate: js.Array[waterlineLib.Anon_Next] | waterlineLib.Anon_Next = null,
-    beforeDestroy: js.Array[waterlineLib.Anon_Criteria] | waterlineLib.Anon_Next = null,
-    beforeUpdate: js.Array[waterlineLib.Anon_Next] | waterlineLib.Anon_Next = null,
-    beforeValidate: js.Array[waterlineLib.Anon_Next] | waterlineLib.Anon_Next = null
+    afterCreate: js.Array[waterlineLib.Fn_NewlyCreatedRecord] | waterlineLib.Fn_NewlyCreatedRecord = null,
+    afterDestroy: js.Array[waterlineLib.Fn_DestroyedInstance] | waterlineLib.Fn_DestroyedInstance = null,
+    afterUpdate: js.Array[waterlineLib.Fn_Next] | waterlineLib.Fn_Next = null,
+    beforeCreate: js.Array[waterlineLib.Fn_Next] | waterlineLib.Fn_Next = null,
+    beforeDestroy: js.Array[waterlineLib.Fn_Criteria] | waterlineLib.Fn_Next = null,
+    beforeUpdate: js.Array[waterlineLib.Fn_Next] | waterlineLib.Fn_Next = null,
+    beforeValidate: js.Array[waterlineLib.Fn_Next] | waterlineLib.Fn_Next = null
   ): LifecycleCallbacks = {
     val __obj = js.Dynamic.literal()
     if (afterCreate != null) __obj.updateDynamic("afterCreate")(afterCreate.asInstanceOf[js.Any])

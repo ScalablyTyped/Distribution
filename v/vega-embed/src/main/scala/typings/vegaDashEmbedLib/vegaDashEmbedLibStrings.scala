@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 object vegaDashEmbedLibStrings {
   @js.native
-  sealed trait Anon_0 extends js.Object
+  sealed trait Typeofaxis extends js.Object
   
   @js.native
-  sealed trait Anon_AXISPARTS extends js.Object
+  sealed trait Typeofencoding extends js.Object
   
   @js.native
-  sealed trait Anon_Acc extends js.Object
+  sealed trait Typeofheader extends js.Object
   
   @js.native
-  sealed trait Anon_Anchor extends js.Object
+  sealed trait Typeofmark extends js.Object
   
   @js.native
   sealed trait align extends js.Object
@@ -549,13 +549,13 @@ object vegaDashEmbedLibStrings {
   sealed trait zindex extends js.Object
   
   @scala.inline
-  def Anon_0: Anon_0 = "Anon_0".asInstanceOf[Anon_0]
+  def Typeofaxis: Typeofaxis = "Typeofaxis".asInstanceOf[Typeofaxis]
   @scala.inline
-  def Anon_AXISPARTS: Anon_AXISPARTS = "Anon_AXISPARTS".asInstanceOf[Anon_AXISPARTS]
+  def Typeofencoding: Typeofencoding = "Typeofencoding".asInstanceOf[Typeofencoding]
   @scala.inline
-  def Anon_Acc: Anon_Acc = "Anon_Acc".asInstanceOf[Anon_Acc]
+  def Typeofheader: Typeofheader = "Typeofheader".asInstanceOf[Typeofheader]
   @scala.inline
-  def Anon_Anchor: Anon_Anchor = "Anon_Anchor".asInstanceOf[Anon_Anchor]
+  def Typeofmark: Typeofmark = "Typeofmark".asInstanceOf[Typeofmark]
   @scala.inline
   def align: align = "align".asInstanceOf[align]
   @scala.inline

@@ -20,7 +20,7 @@ trait Utils extends js.Object {
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
   @JSName("mergeDefaults")
-  var mergeDefaults_Original: sequelizeLib.Anon_Object = js.native
+  var mergeDefaults_Original: sequelizeLib.Fn_Object = js.native
   var or: orStatic = js.native
   var where: whereStatic = js.native
   /**

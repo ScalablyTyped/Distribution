@@ -19,14 +19,14 @@ object DelayedTransitionDefinition {
     in: StateValue = null,
     internal: js.UndefOr[scala.Boolean] = js.undefined,
     meta: stdLib.Record[java.lang.String, _] = null,
-    target: java.lang.String | js.Array[java.lang.String] = null
+    target: js.Array[java.lang.String] = null
   ): DelayedTransitionDefinition[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(actions = actions, delay = delay.asInstanceOf[js.Any], event = event)
     if (cond != null) __obj.updateDynamic("cond")(cond.asInstanceOf[js.Any])
     if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
     if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
     if (meta != null) __obj.updateDynamic("meta")(meta)
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
     __obj.asInstanceOf[DelayedTransitionDefinition[TContext, TEvent]]
   }
 }

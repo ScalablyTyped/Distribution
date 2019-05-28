@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ts-mockito"
-version := "2.3.1-cc9dc0"
+version := "2.3.1-eba85b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

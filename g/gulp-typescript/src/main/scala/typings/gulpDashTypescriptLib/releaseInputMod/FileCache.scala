@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-typescript/release/input", "FileCache")
 @js.native
 class FileCache protected () extends js.Object {
-  def this(typescript: gulpDashTypescriptLib.Anon_08, options: typescriptLib.typescriptMod.CompilerOptions) = this()
+  def this(typescript: gulpDashTypescriptLib.Typeofts, options: typescriptLib.typescriptMod.CompilerOptions) = this()
   var commonBasePath: java.lang.String = js.native
   var commonSourceDirectory: java.lang.String = js.native
   var createDictionary: js.Any = js.native
@@ -18,7 +18,7 @@ class FileCache protected () extends js.Object {
   var noParse: scala.Boolean = js.native
   var options: typescriptLib.typescriptMod.CompilerOptions = js.native
   var previous: FileDictionary = js.native
-  var typescript: gulpDashTypescriptLib.Anon_08 = js.native
+  var typescript: gulpDashTypescriptLib.Typeofts = js.native
   var version: scala.Double = js.native
   def addContent(fileName: java.lang.String, content: java.lang.String): File = js.native
   def addGulp(gFile: gulpDashTypescriptLib.releaseTypesMod.VinylFile): File = js.native

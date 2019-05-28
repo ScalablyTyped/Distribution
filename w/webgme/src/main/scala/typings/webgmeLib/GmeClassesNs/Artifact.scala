@@ -9,34 +9,34 @@ import scala.scalajs.js.annotation._
 trait Artifact extends js.Object {
   /** Adds files as soft-link. */
   @JSName("addFileAsSoftLink")
-  var addFileAsSoftLink_Original: webgmeLib.Anon_Callback = js.native
+  var addFileAsSoftLink_Original: webgmeLib.Fn_Callback = js.native
   /** Adds content to the artifact as a file. */
   @JSName("addFile")
-  var addFile_Original: webgmeLib.Anon_Callback = js.native
+  var addFile_Original: webgmeLib.Fn_Callback = js.native
   /** Adds multiple files as soft-links. */
   @JSName("addFilesAsSoftLinks")
-  var addFilesAsSoftLinks_Original: webgmeLib.Anon_CallbackFilesName = js.native
+  var addFilesAsSoftLinks_Original: webgmeLib.Fn_CallbackFilesName = js.native
   /** Adds multiple files. */
   @JSName("addFiles")
-  var addFiles_Original: webgmeLib.Anon_CallbackFiles = js.native
+  var addFiles_Original: webgmeLib.Fn_CallbackFiles = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
   @JSName("addMetadataHash")
-  var addMetadataHash_Original: webgmeLib.Anon_CallbackMetadataHash = js.native
+  var addMetadataHash_Original: webgmeLib.Fn_CallbackMetadataHash = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
   @JSName("addMetadataHashes")
-  var addMetadataHashes_Original: webgmeLib.Anon_CallbackMetadataHashName = js.native
+  var addMetadataHashes_Original: webgmeLib.Fn_CallbackMetadataHashName = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
   @JSName("addObjectHash")
-  var addObjectHash_Original: webgmeLib.Anon_CallbackMetadataHashNamePromise = js.native
+  var addObjectHash_Original: webgmeLib.Fn_CallbackMetadataHashNamePromise = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
   @JSName("addObjectHashes")
-  var addObjectHashes_Original: webgmeLib.Anon_CallbackName = js.native
+  var addObjectHashes_Original: webgmeLib.Fn_CallbackName = js.native
   var blobClient: webgmeLib.BlobsNs.BlobClient = js.native
   var descriptor: webgmeLib.BlobsNs.BlobMetadata = js.native
   var name: webgmeLib.GmeCommonNs.Name = js.native
   /** Saves this artifact and uploads the metadata to the server's storage. */
   @JSName("save")
-  var save_Original: webgmeLib.Anon_CallbackMessage = js.native
+  var save_Original: webgmeLib.Fn_CallbackMessage = js.native
   /** Adds content to the artifact as a file. */
   def addFile(name: webgmeLib.GmeCommonNs.Name, content: webgmeLib.BlobsNs.ObjectBlob): js.Promise[webgmeLib.GmeCommonNs.MetadataHash] = js.native
   /** Adds content to the artifact as a file. */

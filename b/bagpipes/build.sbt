@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bagpipes"
-version := "0.1-dt-20180214Z-15f477"
+version := "0.1-dt-20180214Z-4e545b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

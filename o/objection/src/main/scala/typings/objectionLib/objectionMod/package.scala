@@ -96,7 +96,7 @@ package object objectionMod {
   type PartialUpdate[QM /* <: Model */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof QM ]:? QM[P] | objection.objection.Raw | objection.objection.Reference | objection.objection.QueryBuilder<any, std.Array<any>, any>}
     */ objectionLib.objectionLibStrings.PartialUpdate with QM
-  type Plugin = js.Function1[/* modelClass */ objectionLib.Anon_Args, objectionLib.Anon_Args]
+  type Plugin = js.Function1[/* modelClass */ objectionLib.TypeofClassModel, objectionLib.TypeofClassModel]
   type Pojo = org.scalablytyped.runtime.StringDictionary[js.Any]
   type Properties = org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   type QueryBuilderYieldingOne[QM /* <: Model */] = QueryBuilder[QM, QM, QM]

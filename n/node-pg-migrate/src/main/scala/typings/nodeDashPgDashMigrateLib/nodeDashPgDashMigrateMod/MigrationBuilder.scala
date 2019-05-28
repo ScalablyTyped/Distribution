@@ -18,10 +18,10 @@ trait MigrationBuilder extends js.Object {
   def addConstraint(tableName: Name, constraintName: java.lang.String, expression: ConstraintOptions): scala.Unit = js.native
   def addConstraint(tableName: Name, constraintName: scala.Null, expression: java.lang.String): scala.Unit = js.native
   def addConstraint(tableName: Name, constraintName: scala.Null, expression: ConstraintOptions): scala.Unit = js.native
-  def addExtension(extension: java.lang.String): scala.Unit = js.native
-  def addExtension(extension: java.lang.String, options: CreateExtensionOptions): scala.Unit = js.native
-  def addExtension(extension: js.Array[java.lang.String]): scala.Unit = js.native
-  def addExtension(extension: js.Array[java.lang.String], options: CreateExtensionOptions): scala.Unit = js.native
+  def addExtension(extension: js.Array[LiteralUnion[Extension, java.lang.String]]): scala.Unit = js.native
+  def addExtension(extension: js.Array[LiteralUnion[Extension, java.lang.String]], options: CreateExtensionOptions): scala.Unit = js.native
+  def addExtension(extension: LiteralUnion[Extension, java.lang.String]): scala.Unit = js.native
+  def addExtension(extension: LiteralUnion[Extension, java.lang.String], options: CreateExtensionOptions): scala.Unit = js.native
   def addIndex(tableName: Name, columns: java.lang.String): scala.Unit = js.native
   def addIndex(tableName: Name, columns: java.lang.String, options: CreateIndexOptions): scala.Unit = js.native
   def addIndex(tableName: Name, columns: js.Array[java.lang.String]): scala.Unit = js.native
@@ -48,11 +48,11 @@ trait MigrationBuilder extends js.Object {
   // Domains
   def createDomain(domainName: Name, `type`: Type): scala.Unit = js.native
   def createDomain(domainName: Name, `type`: Type, domainOptions: DomainOptionsCreate): scala.Unit = js.native
+  def createExtension(extension: js.Array[LiteralUnion[Extension, java.lang.String]]): scala.Unit = js.native
+  def createExtension(extension: js.Array[LiteralUnion[Extension, java.lang.String]], options: CreateExtensionOptions): scala.Unit = js.native
   // Extensions
-  def createExtension(extension: java.lang.String): scala.Unit = js.native
-  def createExtension(extension: java.lang.String, options: CreateExtensionOptions): scala.Unit = js.native
-  def createExtension(extension: js.Array[java.lang.String]): scala.Unit = js.native
-  def createExtension(extension: js.Array[java.lang.String], options: CreateExtensionOptions): scala.Unit = js.native
+  def createExtension(extension: LiteralUnion[Extension, java.lang.String]): scala.Unit = js.native
+  def createExtension(extension: LiteralUnion[Extension, java.lang.String], options: CreateExtensionOptions): scala.Unit = js.native
   // Functions
   def createFunction(
     functionName: Name,
@@ -123,10 +123,10 @@ trait MigrationBuilder extends js.Object {
   def dropConstraint(tableName: Name, constraintName: java.lang.String, options: DropOptions): scala.Unit = js.native
   def dropDomain(domainName: Name): scala.Unit = js.native
   def dropDomain(domainName: Name, dropOptions: DropOptions): scala.Unit = js.native
-  def dropExtension(extension: java.lang.String): scala.Unit = js.native
-  def dropExtension(extension: java.lang.String, dropOptions: DropOptions): scala.Unit = js.native
-  def dropExtension(extension: js.Array[java.lang.String]): scala.Unit = js.native
-  def dropExtension(extension: js.Array[java.lang.String], dropOptions: DropOptions): scala.Unit = js.native
+  def dropExtension(extension: js.Array[LiteralUnion[Extension, java.lang.String]]): scala.Unit = js.native
+  def dropExtension(extension: js.Array[LiteralUnion[Extension, java.lang.String]], dropOptions: DropOptions): scala.Unit = js.native
+  def dropExtension(extension: LiteralUnion[Extension, java.lang.String]): scala.Unit = js.native
+  def dropExtension(extension: LiteralUnion[Extension, java.lang.String], dropOptions: DropOptions): scala.Unit = js.native
   def dropFunction(functionName: Name, functionParams: js.Array[FunctionParam]): scala.Unit = js.native
   def dropFunction(functionName: Name, functionParams: js.Array[FunctionParam], dropOptions: DropOptions): scala.Unit = js.native
   def dropIndex(tableName: Name, columns: java.lang.String): scala.Unit = js.native

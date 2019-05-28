@@ -556,13 +556,13 @@ trait Static extends js.Object {
   def divide(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   def divide(a: scala.Double, b: scala.Double): scala.Double = js.native
   def drop(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
-  def drop[T](n: scala.Double): ramdaLib.Anon_Xs[T] = js.native
+  def drop[T](n: scala.Double): ramdaLib.Fn_Xs[T] = js.native
   /**
     * Returns a new list containing all but the first n elements of the given list.
     */
   def drop[T](n: scala.Double, xs: js.Array[T]): js.Array[T] = js.native
   def dropLast(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
-  def dropLast[T](n: scala.Double): ramdaLib.Anon_XsArray[T] = js.native
+  def dropLast[T](n: scala.Double): ramdaLib.Fn_XsArray[T] = js.native
   /**
     * Returns a list containing all but the last n elements of the given list.
     */
@@ -1202,7 +1202,7 @@ trait Static extends js.Object {
   def modulo(__ : Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
   def modulo(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   def modulo(a: scala.Double, b: scala.Double): scala.Double = js.native
-  def move(from: scala.Double): ramdaLib.Anon_List = js.native
+  def move(from: scala.Double): ramdaLib.Fn_List = js.native
   def move(from: scala.Double, to: scala.Double): js.Function1[/* list */ js.Array[_], js.Array[_]] = js.native
   /**
     * Moves an item, at index `from`, to index `to`, in a `list` of elements.
@@ -1853,8 +1853,8 @@ trait Static extends js.Object {
   ] = js.native
   def prop[P /* <: java.lang.String */](p: P): js.Function1[/* obj */ stdLib.Record[P, _], _] = js.native
   def prop[P /* <: java.lang.String */, T](p: P, obj: T): /* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any = js.native
-  def propEq(name: java.lang.String): ramdaLib.Anon_ObjVal = js.native
-  def propEq(name: scala.Double): ramdaLib.Anon_ObjVal = js.native
+  def propEq(name: java.lang.String): ramdaLib.Fn_Obj = js.native
+  def propEq(name: scala.Double): ramdaLib.Fn_Obj = js.native
   def propEq[T](name: java.lang.String, `val`: T): js.Function1[/* obj */ js.Any, scala.Boolean] = js.native
   /**
     * Determines whether the given property of an object has a specific
@@ -1864,7 +1864,7 @@ trait Static extends js.Object {
   def propEq[T](name: java.lang.String, `val`: T, obj: js.Any): scala.Boolean = js.native
   def propEq[T](name: scala.Double, `val`: T): js.Function1[/* obj */ js.Any, scala.Boolean] = js.native
   def propEq[T](name: scala.Double, `val`: T, obj: js.Any): scala.Boolean = js.native
-  def propIs(`type`: js.Any): ramdaLib.Anon_Name = js.native
+  def propIs(`type`: js.Any): ramdaLib.Fn_Name = js.native
   def propIs(`type`: js.Any, name: java.lang.String): js.Function1[/* obj */ js.Any, scala.Boolean] = js.native
   /**
     * Returns true if the specified object property is of the given type; false otherwise.
@@ -2080,8 +2080,8 @@ trait Static extends js.Object {
     * given value.
     */
   def set[T, U](lens: Lens, a: U, obj: T): T = js.native
-  def slice(a: scala.Double): ramdaLib.Anon_B = js.native
-  def slice(a: scala.Double, b: scala.Double): ramdaLib.Anon_ListArray = js.native
+  def slice(a: scala.Double): ramdaLib.Fn_B = js.native
+  def slice(a: scala.Double, b: scala.Double): ramdaLib.Fn_ListArray = js.native
   /**
     * Returns the elements from `xs` starting at `a` and ending at `b - 1`.
     */
@@ -2112,13 +2112,13 @@ trait Static extends js.Object {
   def split(sep: java.lang.String, str: java.lang.String): js.Array[java.lang.String] = js.native
   def split(sep: stdLib.RegExp): js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
   def split(sep: stdLib.RegExp, str: java.lang.String): js.Array[java.lang.String] = js.native
-  def splitAt(index: scala.Double): ramdaLib.Anon_ListArrayReadonlyArray = js.native
+  def splitAt(index: scala.Double): ramdaLib.Fn_ListArrayReadonlyArray = js.native
   def splitAt(index: scala.Double, list: java.lang.String): js.Tuple2[java.lang.String, java.lang.String] = js.native
   /**
     * Splits a given list or string at a given index.
     */
   def splitAt[T](index: scala.Double, list: js.Array[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
-  def splitEvery(a: scala.Double): ramdaLib.Anon_ListArrayReadonlyArrayString = js.native
+  def splitEvery(a: scala.Double): ramdaLib.Fn_ListArrayReadonlyArrayString = js.native
   def splitEvery(a: scala.Double, list: java.lang.String): js.Array[java.lang.String] = js.native
   /**
     * Splits a collection into slices of the specified length.
@@ -2169,13 +2169,13 @@ trait Static extends js.Object {
     */
   def tail[T](list: js.Array[T]): js.Array[T] = js.native
   def take(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
-  def take[T](n: scala.Double): ramdaLib.Anon_Xs[T] = js.native
+  def take[T](n: scala.Double): ramdaLib.Fn_Xs[T] = js.native
   /**
     * Returns a new list containing the first `n` elements of the given list.  If
     * `n > * list.length`, returns a list of `list.length` elements.
     */
   def take[T](n: scala.Double, xs: js.Array[T]): js.Array[T] = js.native
-  def takeLast(n: scala.Double): ramdaLib.Anon_XsArrayReadonlyArray = js.native
+  def takeLast(n: scala.Double): ramdaLib.Fn_XsArrayReadonlyArray = js.native
   def takeLast(n: scala.Double, xs: java.lang.String): java.lang.String = js.native
   /**
     * Returns a new list containing the last n elements of the given list. If n > list.length,

@@ -21,17 +21,17 @@ object actions extends js.Object {
     xstateLib.esTypesMod.DoneEventObject
   ] = js.native
   @JSName("log")
-  var log_Original: xstateLib.Anon_CtxEvent = js.native
+  var log_Original: xstateLib.Fn_Ctx = js.native
   @JSName("raise")
-  var raise_Original: xstateLib.Anon_Event = js.native
+  var raise_Original: xstateLib.Fn_Event = js.native
   @JSName("sendParent")
-  var sendParent_Original: xstateLib.Anon_EventOptions = js.native
+  var sendParent_Original: xstateLib.Fn_EventOptions = js.native
   @JSName("send")
-  var send_Original: xstateLib.Anon_EventOptions = js.native
+  var send_Original: xstateLib.Fn_EventOptions = js.native
   @JSName("start")
-  var start_Original: xstateLib.Anon_Activity = js.native
+  var start_Original: xstateLib.Fn_Activity = js.native
   @JSName("stop")
-  var stop_Original: xstateLib.Anon_Activity = js.native
+  var stop_Original: xstateLib.Fn_Activity = js.native
   def after(delayRef: java.lang.String): java.lang.String = js.native
   def after(delayRef: java.lang.String, id: java.lang.String): java.lang.String = js.native
   def after(delayRef: scala.Double): java.lang.String = js.native

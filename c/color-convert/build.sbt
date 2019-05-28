@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "color-convert"
-version := "1.9-dt-20180214Z-0fac1d"
+version := "1.9-dt-20180214Z-fb4986"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

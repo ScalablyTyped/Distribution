@@ -20,7 +20,7 @@ class GanttDependency () extends Model {
 object GanttDependency extends js.Object {
   var fields: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelFields = js.native
   var idField: java.lang.String = js.native
-  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray): kendoDashUiLib.Anon_DataDefineFieldsIdFieldOptions = js.native
-  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject): kendoDashUiLib.Anon_DataDefineFieldsIdFieldOptions = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray): kendoDashUiLib.TypeofClassGanttDependency = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject): kendoDashUiLib.TypeofClassGanttDependency = js.native
 }
 

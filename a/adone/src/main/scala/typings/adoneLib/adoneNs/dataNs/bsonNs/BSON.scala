@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("adone.data.bson.BSON")
 @js.native
 class BSON () extends js.Object {
-  def this(types: js.Array[adoneLib.Anon_ArgsAnyType]) = this()
+  def this(types: js.Array[adoneLib.Anon_ArgsAny]) = this()
   /**
     * Calculates the size BSON object for the given object
     */

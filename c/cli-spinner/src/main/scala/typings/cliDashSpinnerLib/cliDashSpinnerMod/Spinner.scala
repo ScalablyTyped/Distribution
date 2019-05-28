@@ -26,8 +26,8 @@ class Spinner () extends js.Object {
 @JSImport("cli-spinner", "Spinner")
 @js.native
 object Spinner extends js.Object {
-  def setDefaultSpinnerDelay(spinnerDelay: scala.Double): cliDashSpinnerLib.Anon_SetDefaultSpinnerDelay = js.native
-  def setDefaultSpinnerString(spinnerString: java.lang.String): cliDashSpinnerLib.Anon_SetDefaultSpinnerDelay = js.native
-  def setDefaultSpinnerString(spinnerString: scala.Double): cliDashSpinnerLib.Anon_SetDefaultSpinnerDelay = js.native
+  def setDefaultSpinnerDelay(spinnerDelay: scala.Double): cliDashSpinnerLib.TypeofClassSpinner = js.native
+  def setDefaultSpinnerString(spinnerString: java.lang.String): cliDashSpinnerLib.TypeofClassSpinner = js.native
+  def setDefaultSpinnerString(spinnerString: scala.Double): cliDashSpinnerLib.TypeofClassSpinner = js.native
 }
 

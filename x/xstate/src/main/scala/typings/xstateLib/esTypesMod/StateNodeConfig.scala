@@ -104,7 +104,7 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: 
   /**
     * @private
     */
-  var parent: js.UndefOr[xstateLib.esStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]]] = js.undefined
+  var parent: js.UndefOr[xstateLib.esStateNodeMod.StateNode[TContext, _, TEvent]] = js.undefined
   /**
     * The mapping of state node keys to their state node configurations (recursive).
     */
@@ -144,7 +144,7 @@ object StateNodeConfig {
     onExit: SingleOrArray[Action[TContext, TEvent]] = null,
     order: scala.Int | scala.Double = null,
     parallel: js.UndefOr[scala.Boolean] = js.undefined,
-    parent: xstateLib.esStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]] = null,
+    parent: xstateLib.esStateNodeMod.StateNode[TContext, _, TEvent] = null,
     states: StatesConfig[TContext, TStateSchema, TEvent] = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: StateTypes = null

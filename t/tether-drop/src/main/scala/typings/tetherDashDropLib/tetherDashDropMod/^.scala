@@ -15,6 +15,6 @@ class ^ protected () extends Drop {
 @JSImport("tether-drop", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createContext(options: IDropContextOptions): tetherDashDropLib.Anon_CreateContext = js.native
+  def createContext(options: IDropContextOptions): tetherDashDropLib.TypeofClassDrop = js.native
 }
 

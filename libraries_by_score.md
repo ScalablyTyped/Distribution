@@ -79,7 +79,6 @@
 | 0.8794049245194621 | [pify](./p/pify) | Promisify a callback-style function
 | 0.8793111233094311 | [react-router-redux](./r/react-router-redux) | Ruthlessly simple bindings to keep react-router an
 | 0.8780174255795559 | [aws-sdk](./a/aws-sdk) | AWS SDK for JavaScript
-| 0.8778824096619322 | [antd](./a/antd) | An enterprise-class UI design language and React-b
 | 0.8770448908707043 | [d3](./d/d3) | Data-Driven Documents
 | 0.8759344401061098 | [request-promise-native](./r/request-promise-native) | The simplified HTTP request client 'request' with 
 | 0.8758611465191484 | [micromatch](./m/micromatch) | Glob matching for javascript/node.js. A replacemen

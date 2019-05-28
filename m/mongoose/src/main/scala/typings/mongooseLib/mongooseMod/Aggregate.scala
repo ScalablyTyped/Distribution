@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 trait Aggregate[T] extends js.Object {
   /** Provides promise for aggregate. */
   @JSName("then")
-  var then_Original: mongooseLib.Anon_OnfulfilledOnrejected[T] = js.native
+  var then_Original: mongooseLib.Fn_OnfulfilledOnrejected[T] = js.native
   /** Adds a cursor flag */
   def addCursorFlag(flag: java.lang.String, value: scala.Boolean): this.type = js.native
   /**

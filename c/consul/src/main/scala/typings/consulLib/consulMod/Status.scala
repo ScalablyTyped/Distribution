@@ -12,12 +12,12 @@ trait Status extends js.Object {
     * Returns the current Raft leader.
     */
   @JSName("leader")
-  var leader_Original: consulLib.Anon_CallbackOptsLeaderOptions = js.native
+  var leader_Original: consulLib.Fn_CallbackOptsLeaderOptions = js.native
   /**
     * Returns the current Raft peer set
     */
   @JSName("peers")
-  var peers_Original: consulLib.Anon_CallbackOptsPeersOptions = js.native
+  var peers_Original: consulLib.Fn_CallbackOptsPeersOptions = js.native
   /**
     * Returns the current Raft leader.
     */

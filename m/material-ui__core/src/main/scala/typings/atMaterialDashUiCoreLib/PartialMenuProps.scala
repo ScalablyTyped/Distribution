@@ -10,19 +10,11 @@ trait PartialMenuProps extends js.Object {
   var BackdropComponent: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]
   ] = js.undefined
-  var BackdropProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]] = js.undefined
-  var MenuListProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps]] = js.undefined
-  var ModalClasses: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.modalModalMod.ModalClassKey]
-    ]
-  ] = js.undefined
-  var PaperProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
-  var PopoverClasses: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverClassKey]
-    ]
-  ] = js.undefined
+  var BackdropProps: js.UndefOr[PartialBackdropProps] = js.undefined
+  var MenuListProps: js.UndefOr[PartialMenuListProps] = js.undefined
+  var ModalClasses: js.UndefOr[PartialClassNameMapModalClassKey] = js.undefined
+  var PaperProps: js.UndefOr[PartialPaperProps] = js.undefined
+  var PopoverClasses: js.UndefOr[PartialClassNameMapPopoverClassKey] = js.undefined
   var TransitionComponent: js.UndefOr[
     reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
   ] = js.undefined
@@ -137,11 +129,7 @@ trait PartialMenuProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.menuMenuMod.MenuClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapMenuClassKey] = js.undefined
   var closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance]] = js.undefined
@@ -381,15 +369,11 @@ object PartialMenuProps {
   @scala.inline
   def apply(
     BackdropComponent: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    BackdropProps: stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    MenuListProps: stdLib.Partial[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps] = null,
-    ModalClasses: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.modalModalMod.ModalClassKey]
-    ] = null,
-    PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
-    PopoverClasses: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverClassKey]
-    ] = null,
+    BackdropProps: PartialBackdropProps = null,
+    MenuListProps: PartialMenuListProps = null,
+    ModalClasses: PartialClassNameMapModalClassKey = null,
+    PaperProps: PartialPaperProps = null,
+    PopoverClasses: PartialClassNameMapPopoverClassKey = null,
     TransitionComponent: reactLib.reactMod.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = null,
     TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null,
     about: java.lang.String = null,
@@ -452,9 +436,7 @@ object PartialMenuProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.menuMenuMod.MenuClassKey]
-    ] = null,
+    classes: PartialClassNameMapMenuClassKey = null,
     closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined,
     color: java.lang.String = null,
     container: reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] = null,

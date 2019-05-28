@@ -32,7 +32,7 @@ trait CopyOptions extends js.Object {
     js.Function3[
       /* readStream */ nodeLib.NodeJSNs.ReadableStream, 
       /* writeStream */ nodeLib.NodeJSNs.WritableStream, 
-      /* file */ adoneLib.Anon_AtimeMode, 
+      /* file */ adoneLib.Anon_Atime, 
       scala.Unit
     ]
   ] = js.undefined
@@ -44,7 +44,7 @@ object CopyOptions {
     clobber: js.UndefOr[scala.Boolean] = js.undefined,
     filter: stdLib.RegExp | (js.Function2[/* src */ java.lang.String, /* dst */ java.lang.String, scala.Boolean]) = null,
     overwrite: js.UndefOr[scala.Boolean] = js.undefined,
-    transform: (/* readStream */ nodeLib.NodeJSNs.ReadableStream, /* writeStream */ nodeLib.NodeJSNs.WritableStream, /* file */ adoneLib.Anon_AtimeMode) => scala.Unit = null
+    transform: (/* readStream */ nodeLib.NodeJSNs.ReadableStream, /* writeStream */ nodeLib.NodeJSNs.WritableStream, /* file */ adoneLib.Anon_Atime) => scala.Unit = null
   ): CopyOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(clobber)) __obj.updateDynamic("clobber")(clobber)

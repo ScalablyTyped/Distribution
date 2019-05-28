@@ -237,7 +237,7 @@
 	at com.olvind.tso.ts.parser.TsParser.$anonfun$FromString$1(TsParser.scala:27)
 	at com.olvind.tso.ts.parser.TsParser.apply(TsParser.scala:50)
 	at com.olvind.tso.ts.parser.package$.parseFile(package.scala:10)
-	at com.olvind.tso.importer.Main$.$anonfun$run$20(Main.scala:202)
+	at com.olvind.tso.importer.Main.$anonfun$run$18(Main.scala:188)
 	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:64)
 	at com.olvind.tso.importer.Phase1ReadTypescript.apply(Phase1ReadTypescript.scala:16)
 	at com.olvind.tso.phases.PhaseRunner$.$anonfun$doNext$5(PhaseRunner.scala:78)
@@ -448,7 +448,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.importer.Main$.$anonfun$run$23(Main.scala:233)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:219)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -459,8 +459,8 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.importer.Main$.run(Main.scala:233)
-	at com.olvind.tso.importer.Main$.main(Main.scala:32)
+	at com.olvind.tso.importer.Main.run(Main.scala:219)
+	at com.olvind.tso.importer.Main$.main(Main.scala:309)
 	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [react-md => scala.MatchError: List() (of class scala.collection.immutable.Nil$)] [id => react-md, phase => typescript] 

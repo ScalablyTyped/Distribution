@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular-deferred-bootstrap"
-version := "v0.1.9-dt-20190322Z-33dae2"
+version := "v0.1.9-dt-20190322Z-6652d1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-d7819f",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-016930",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

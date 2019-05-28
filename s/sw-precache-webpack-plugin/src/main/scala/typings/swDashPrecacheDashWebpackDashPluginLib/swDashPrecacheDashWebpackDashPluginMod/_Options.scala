@@ -23,7 +23,7 @@ object _Options {
     handleFetch: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreUrlParametersMatching: js.Array[stdLib.RegExp] = null,
     importScripts: js.Any = null,
-    logger: swDashPrecacheLib.Anon_Message = null,
+    logger: swDashPrecacheLib.Fn_Message = null,
     maximumFileSizeToCacheInBytes: scala.Int | scala.Double = null,
     navigateFallback: java.lang.String = null,
     navigateFallbackWhitelist: js.Array[stdLib.RegExp] = null,

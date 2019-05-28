@@ -5,10 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Anon_CtxEvent extends js.Object {
-  def apply[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](): Anon_Ctx[TContext, TEvent] = js.native
-  def apply[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _]): Anon_Ctx[TContext, TEvent] = js.native
-  def apply[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _], label: java.lang.String): Anon_Ctx[TContext, TEvent] = js.native
+trait Anon_CtxEvent[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */] extends js.Object {
+  var label: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: xstateLib.libTypesMod.ActionTypes
+  def expr(ctx: TContext, event: TEvent): js.Any
+}
+
+object Anon_CtxEvent {
+  @scala.inline
+  def apply[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
+    expr: (TContext, TEvent) => js.Any,
+    `type`: xstateLib.libTypesMod.ActionTypes,
+    label: java.lang.String = null
+  ): Anon_CtxEvent[TContext, TEvent] = {
+    val __obj = js.Dynamic.literal(expr = js.Any.fromFunction2(expr))
+    __obj.updateDynamic("type")(`type`)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[Anon_CtxEvent[TContext, TEvent]]
+  }
 }
 

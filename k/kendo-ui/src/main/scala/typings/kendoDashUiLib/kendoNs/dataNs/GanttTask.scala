@@ -25,7 +25,7 @@ class GanttTask () extends Model {
 object GanttTask extends js.Object {
   var fields: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelFields = js.native
   var idField: java.lang.String = js.native
-  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray): kendoDashUiLib.Anon_DataDefineFieldsIdField = js.native
-  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject): kendoDashUiLib.Anon_DataDefineFieldsIdField = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsArray): kendoDashUiLib.TypeofClassGanttTask = js.native
+  def define(options: kendoDashUiLib.kendoNs.dataNs.DataSourceSchemaModelWithFieldsObject): kendoDashUiLib.TypeofClassGanttTask = js.native
 }
 

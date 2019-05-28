@@ -10,7 +10,7 @@ trait astring extends js.Object {
   /** Base generator that can be used to extend Astring. See https://github.com/davidbonnet/astring#extending */
   var baseGenerator: astringLib.astringMod.Generator = js.native
   @JSName("generate")
-  var generate_Original: astringLib.Anon_Node = js.native
+  var generate_Original: astringLib.Fn_Node = js.native
   def generate(node: estreeLib.estreeMod.Node): java.lang.String = js.native
   def generate(node: estreeLib.estreeMod.Node, options: astringLib.astringMod.Options): java.lang.String = js.native
   @JSName("generate")

@@ -10,7 +10,7 @@ trait Request
   extends expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request {
   var CURRENT_APP: java.lang.String = js.native
   @JSName("ralP")
-  var ralP_Original: yog2DashKernelLib.Anon_Name = js.native
+  var ralP_Original: yog2DashKernelLib.Fn_Name = js.native
   @JSName("ral")
   var ral_Original: yog2DashKernelLib.Anon_AppendExtPath = js.native
   def ral(serviceName: java.lang.String): nodeDashRalLib.nodeDashRalMod.RALNs.RalRunner = js.native

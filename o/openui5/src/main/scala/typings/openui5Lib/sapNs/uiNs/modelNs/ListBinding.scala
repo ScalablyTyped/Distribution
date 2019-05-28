@@ -60,7 +60,7 @@ class ListBinding protected () extends Binding {
     * behaviour applies
     * @returns returns <code>this</code> to facilitate method chaining
     */
-  def filter(aFilters: js.Array[_], sFilterType: openui5Lib.Anon_Application): ListBinding = js.native
+  def filter(aFilters: js.Array[_], sFilterType: openui5Lib.TypeofFilterType): ListBinding = js.native
   /**
     * Returns an array of binding contexts for the bound target list.<strong>Note:</strong>The public
     * usage of this method is deprecated, as calls from outside of controls will leadto unexpected side

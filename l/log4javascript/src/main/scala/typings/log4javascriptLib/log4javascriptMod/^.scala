@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("log4javascript", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def addEventListener(eventType: java.lang.String, listener: log4javascriptLib.Anon_EventArgs): scala.Unit = js.native
+  def addEventListener(eventType: java.lang.String, listener: log4javascriptLib.Fn_EventArgs): scala.Unit = js.native
   def dispatchEvent(eventType: java.lang.String, eventArgs: js.Any): scala.Unit = js.native
   def evalInScope(expr: java.lang.String): js.Any = js.native
   def getDefaultLogger(): Logger = js.native
@@ -17,7 +17,7 @@ object ^ extends js.Object {
   def getNullLogger(): Logger = js.native
   def getRootLogger(): Logger = js.native
   def isEnabled(): scala.Boolean = js.native
-  def removeEventListener(eventType: java.lang.String, listener: log4javascriptLib.Anon_EventArgs): scala.Unit = js.native
+  def removeEventListener(eventType: java.lang.String, listener: log4javascriptLib.Fn_EventArgs): scala.Unit = js.native
   def resetConfiguration(): scala.Unit = js.native
   def setEnabled(enabled: scala.Boolean): scala.Unit = js.native
   def setEventTypes(eventTypes: js.Array[java.lang.String]): scala.Unit = js.native

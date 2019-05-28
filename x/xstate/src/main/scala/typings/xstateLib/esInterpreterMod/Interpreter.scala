@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("xstate/es/interpreter", "Interpreter")
 @js.native
-class Interpreter[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema */, TEvent /* <: xstateLib.esTypesMod.EventObject */] protected () extends js.Object {
+class Interpreter[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema */, TEvent /* <: xstateLib.esTypesMod.EventObject */] protected ()
+  extends xstateLib.esActorMod.Actor[
+      xstateLib.esStateMod.State[TContext, TEvent], 
+      xstateLib.esTypesMod.OmniEventObject[TEvent]
+    ] {
   /**
     * Creates a new Interpreter instance (i.e., service) for the given machine with the provided options, if any.
     *
@@ -33,12 +37,14 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema 
   var exec: js.Any = js.native
   var forward: js.Any = js.native
   var forwardTo: js.Any = js.native
-  var id: java.lang.String = js.native
   /**
-    * The initial state of the statechart.
+    * The initial state of the machine.
     */
-  val initialState: xstateLib.esStateMod.State[TContext, TEvent] = js.native
-  var initialized: js.Any = js.native
+  var initialState: xstateLib.esStateMod.State[TContext, TEvent] = js.native
+  /**
+    * Whether the service is started.
+    */
+  var initialized: scala.Boolean = js.native
   var listeners: js.Any = js.native
   var logger: js.Any = js.native
   var machine: xstateLib.esTypesMod.StateMachine[TContext, TStateSchema, TEvent] = js.native
@@ -47,10 +53,10 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema 
   var reportUnhandledExceptionOnInvocation: js.Any = js.native
   var scheduler: js.Any = js.native
   var sendListeners: js.Any = js.native
-  var spawn: js.Any = js.native
   var spawnActivity: js.Any = js.native
   var spawnCallback: js.Any = js.native
   var spawnEffect: js.Any = js.native
+  var spawnObservable: js.Any = js.native
   var spawnPromise: js.Any = js.native
   /**
     * The current state of the interpreted machine.
@@ -63,8 +69,13 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema 
     * Executes the actions of the given state, with that state's `context` and `event`.
     *
     * @param state The state whose actions will be executed
+    * @param actionsConfig The action implementations to use
     */
   def execute(state: xstateLib.esStateMod.State[TContext, TEvent]): scala.Unit = js.native
+  def execute(
+    state: xstateLib.esStateMod.State[TContext, TEvent],
+    actionsConfig: xstateLib.esTypesMod.ActionFunctionMap[TContext, TEvent]
+  ): scala.Unit = js.native
   /**
     * Alias for Interpreter.prototype.start
     */
@@ -96,44 +107,45 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema 
     * Adds a state listener that is notified when the statechart has reached its final state.
     * @param listener The state listener
     */
-  def onDone(listener: EventListener): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def onDone(listener: EventListener[xstateLib.esTypesMod.DoneEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
   /**
     * Adds an event listener that is notified whenever an event is sent to the running interpreter.
     * @param listener The event listener
     */
-  def onEvent(listener: EventListener): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def onEvent(listener: EventListener[xstateLib.esTypesMod.EventObject]): Interpreter[TContext, TStateSchema, TEvent] = js.native
   /**
     * Adds an event listener that is notified whenever a `send` event occurs.
     * @param listener The event listener
     */
-  def onSend(listener: EventListener): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def onSend(listener: EventListener[xstateLib.esTypesMod.EventObject]): Interpreter[TContext, TStateSchema, TEvent] = js.native
   /**
     * Adds a listener that is notified when the machine is stopped.
     * @param listener The listener
     */
   def onStop(listener: Listener): Interpreter[TContext, TStateSchema, TEvent] = js.native
   def onTransition(listener: StateListener[TContext, TEvent]): Interpreter[TContext, TStateSchema, TEvent] = js.native
-  /**
-    * Sends an event to the running interpreter to trigger a transition.
-    *
-    * An array of events (batched) can be sent as well, which will send all
-    * batched events to the running interpreter. The listeners will be
-    * notified only **once** when all events are processed.
-    *
-    * @param event The event(s) to send
-    */
-  def send(event: xstateLib.esTypesMod.SingleOrArray[xstateLib.esTypesMod.OmniEvent[TEvent]]): xstateLib.esStateMod.State[TContext, TEvent] = js.native
   def send(
     event: xstateLib.esTypesMod.SingleOrArray[xstateLib.esTypesMod.OmniEvent[TEvent]],
     payload: (stdLib.Record[java.lang.String, _]) with xstateLib.Anon_TypeUndefined
   ): xstateLib.esStateMod.State[TContext, TEvent] = js.native
   def sendTo(event: xstateLib.esTypesMod.OmniEventObject[TEvent], to: java.lang.String): scala.Unit = js.native
+  def sendTo(event: xstateLib.esTypesMod.OmniEventObject[TEvent], to: scala.Double): scala.Unit = js.native
+  def sendTo(
+    event: xstateLib.esTypesMod.OmniEventObject[TEvent],
+    to: xstateLib.esActorMod.Actor[_, xstateLib.esTypesMod.EventObject]
+  ): scala.Unit = js.native
   /**
     * Returns a send function bound to this interpreter instance.
     *
     * @param event The event to be sent by the sender.
     */
   def sender(event: xstateLib.esTypesMod.Event[TEvent]): js.Function0[xstateLib.esStateMod.State[TContext, TEvent]] = js.native
+  def spawn[TChildContext](entity: Spawnable[TChildContext], name: java.lang.String): xstateLib.esActorMod.Actor[_, xstateLib.esTypesMod.EventObject] = js.native
+  def spawnMachine[TChildContext, TChildStateSchema, TChildEvents /* <: xstateLib.esTypesMod.EventObject */](machine: xstateLib.esTypesMod.StateMachine[TChildContext, TChildStateSchema, TChildEvents]): Interpreter[TChildContext, TChildStateSchema, TChildEvents] = js.native
+  def spawnMachine[TChildContext, TChildStateSchema, TChildEvents /* <: xstateLib.esTypesMod.EventObject */](
+    machine: xstateLib.esTypesMod.StateMachine[TChildContext, TChildStateSchema, TChildEvents],
+    options: xstateLib.Anon_AutoForward
+  ): Interpreter[TChildContext, TChildStateSchema, TChildEvents] = js.native
   /**
     * Starts the interpreter from the given state, or the initial state.
     * @param initialState The state to start the statechart from
@@ -146,7 +158,8 @@ class Interpreter[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema 
     *
     * This will also notify the `onStop` listeners.
     */
-  def stop(): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  @JSName("stop")
+  def stop_MInterpreter(): Interpreter[TContext, TStateSchema, TEvent] = js.native
 }
 
 /* static members */
@@ -161,7 +174,7 @@ object Interpreter extends js.Object {
     */
   var defaultOptions: xstateLib.esTypesMod.InterpreterOptions = js.native
   @JSName("interpret")
-  var interpret_Original: xstateLib.Anon_Machine = js.native
+  var interpret_Original: xstateLib.Fn_Machine = js.native
   def interpret[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema */, TEvent /* <: xstateLib.esTypesMod.EventObject */](machine: xstateLib.esTypesMod.StateMachine[TContext, TStateSchema, TEvent]): xstateLib.esInterpreterMod.Interpreter[TContext, TStateSchema, TEvent] = js.native
   def interpret[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema */, TEvent /* <: xstateLib.esTypesMod.EventObject */](
     machine: xstateLib.esTypesMod.StateMachine[TContext, TStateSchema, TEvent],

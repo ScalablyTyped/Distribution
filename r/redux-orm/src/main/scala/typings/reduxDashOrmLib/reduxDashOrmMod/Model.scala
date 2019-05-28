@@ -31,7 +31,7 @@ object Model extends js.Object {
   var modelName: java.lang.String = js.native
    // TODO
   val query: reduxDashOrmLib.reduxDashOrmMod.QuerySet[_, js.Object, js.Object] = js.native
-  var querySetClass: reduxDashOrmLib.Anon_AddSharedMethod = js.native
+  var querySetClass: reduxDashOrmLib.TypeofClassQuerySet = js.native
   val session: reduxDashOrmLib.reduxDashOrmMod.SessionWithModels[_] = js.native
   var virtualFields: reduxDashOrmLib.reduxDashOrmMod.ModelVirtualFields = js.native
   def _findDatabaseRows(lookupObj: js.Object): js.Any = js.native
@@ -48,7 +48,7 @@ object Model extends js.Object {
   def options(): js.Object = js.native
   def reducer(
     action: js.Any,
-    modelClass: reduxDashOrmLib.Anon_Action,
+    modelClass: reduxDashOrmLib.TypeofClassModel,
     session: reduxDashOrmLib.reduxDashOrmMod.SessionWithModels[reduxDashOrmLib.reduxDashOrmMod.ORMCommonState]
   ): js.Any = js.native
   def upsert[Fields](props: stdLib.Partial[Fields]): reduxDashOrmLib.reduxDashOrmMod.ModelWithFields[Fields, _, _] = js.native

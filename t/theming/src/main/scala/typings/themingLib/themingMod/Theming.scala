@@ -9,7 +9,7 @@ trait Theming[C /* <: java.lang.String */] extends js.Object {
   var ThemeProvider: themingLib.themingMod.ThemeProvider
   var channel: C
   var themeListener: ThemeListener[C]
-  var withTheme: themingLib.Anon_Component
+  var withTheme: themingLib.Fn_Component
 }
 
 object Theming {
@@ -18,7 +18,7 @@ object Theming {
     ThemeProvider: ThemeProvider,
     channel: C,
     themeListener: ThemeListener[C],
-    withTheme: themingLib.Anon_Component
+    withTheme: themingLib.Fn_Component
   ): Theming[C] = {
     val __obj = js.Dynamic.literal(ThemeProvider = ThemeProvider, channel = channel.asInstanceOf[js.Any], themeListener = themeListener, withTheme = withTheme)
   

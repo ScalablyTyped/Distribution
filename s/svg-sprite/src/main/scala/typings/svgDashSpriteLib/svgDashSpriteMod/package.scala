@@ -10,7 +10,7 @@ package object svgDashSpriteMod {
   /**
     * Custom callback transformation
     */
-  type CustomCallbackTransform = org.scalablytyped.runtime.StringDictionary[svgDashSpriteLib.Anon_Callback]
+  type CustomCallbackTransform = org.scalablytyped.runtime.StringDictionary[svgDashSpriteLib.Fn_Callback]
   /**
     * Pre-defined shape transformation with custom configuration
     */

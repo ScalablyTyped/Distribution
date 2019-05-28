@@ -54,7 +54,7 @@ class Loki protected () extends LokiEventEmitter {
   var throttledSaves: scala.Boolean = js.native
   // alias of serialize
   @JSName("toJson")
-  var toJson_Original: Anon_Options = js.native
+  var toJson_Original: Fn_Options = js.native
   var verbose: scala.Boolean = js.native
   /**
     * Adds a collection to the database.

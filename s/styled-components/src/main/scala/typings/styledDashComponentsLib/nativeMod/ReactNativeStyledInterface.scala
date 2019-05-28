@@ -27,7 +27,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.DrawerLayoutAndroid], 
     T
   ] = js.native
-  var Image: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_AbortPrefetch, T] = js.native
+  var Image: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassImage, T] = js.native
   var ImageBackground: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ImageBackground], 
     T
@@ -36,7 +36,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.KeyboardAvoidingView], 
     T
   ] = js.native
-  var ListView: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_DataSource, T] = js.native
+  var ListView: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassListView, T] = js.native
   var Modal: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Modal], 
     T
@@ -45,8 +45,8 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.NavigatorIOS], 
     T
   ] = js.native
-  var Picker: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_Item, T] = js.native
-  var PickerIOS: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_ItemPickerIOS, T] = js.native
+  var Picker: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassPicker, T] = js.native
+  var PickerIOS: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassPickerIOS, T] = js.native
   var ProgressBarAndroid: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ProgressBarAndroid], 
     T
@@ -59,7 +59,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.RecyclerViewBackedScrollView], 
     T
   ] = js.native
-  var RefreshControl: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_SIZE, T] = js.native
+  var RefreshControl: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassRefreshControl, T] = js.native
   var SafeAreaView: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.SafeAreaView], 
     T
@@ -84,8 +84,8 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.SnapshotViewIOS], 
     T
   ] = js.native
-  var StatusBar: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_Animated, T] = js.native
-  var SwipeableListView: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_GetNewDataSource, T] = js.native
+  var StatusBar: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassStatusBar, T] = js.native
+  var SwipeableListView: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassSwipeableListView, T] = js.native
   var Switch: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Switch], 
     T
@@ -98,12 +98,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.SwitchIOS], 
     T
   ] = js.native
-  var TabBarIOS: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_ItemTabBarIOS, T] = js.native
+  var TabBarIOS: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassTabBarIOS, T] = js.native
   var Text: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Text], 
     T
   ] = js.native
-  var TextInput: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_State, T] = js.native
+  var TextInput: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassTextInput, T] = js.native
   var ToolbarAndroid: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ToolbarAndroid], 
     T
@@ -112,7 +112,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TouchableHighlight], 
     T
   ] = js.native
-  var TouchableNativeFeedback: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_Borderless, T] = js.native
+  var TouchableNativeFeedback: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassTouchableNativeFeedback, T] = js.native
   var TouchableOpacity: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TouchableOpacity], 
     T
@@ -121,7 +121,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedback], 
     T
   ] = js.native
-  var View: ReactNativeThemedStyledFunction[styledDashComponentsLib.Anon_ForceTouchAvailable, T] = js.native
+  var View: ReactNativeThemedStyledFunction[styledDashComponentsLib.TypeofClassView, T] = js.native
   var ViewPagerAndroid: ReactNativeThemedStyledFunction[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ViewPagerAndroid], 
     T

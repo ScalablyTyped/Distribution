@@ -27,10 +27,28 @@ object esActionsMod extends js.Object {
   def doneInvoke(id: java.lang.String): xstateLib.esTypesMod.DoneEvent = js.native
   def doneInvoke(id: java.lang.String, data: js.Any): xstateLib.esTypesMod.DoneEvent = js.native
   def error(data: js.Any, src: java.lang.String): xstateLib.esTypesMod.ErrorExecutionEvent = js.native
+  def getActionFunction[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](actionType: xstateLib.esTypesMod.ActionType): js.UndefOr[
+    (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])
+  ] = js.native
+  def getActionFunction[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
+    actionType: xstateLib.esTypesMod.ActionType,
+    actionFunctionMap: xstateLib.esTypesMod.ActionFunctionMap[TContext, TEvent]
+  ): js.UndefOr[
+    (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])
+  ] = js.native
   def isActionObject[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](action: xstateLib.esTypesMod.Action[TContext, TEvent]): /* is xstate.xstate/es/types.ActionObject<TContext, TEvent> */ scala.Boolean = js.native
   def log[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](): xstateLib.Anon_Ctx[TContext, TEvent] = js.native
   def log[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _]): xstateLib.Anon_Ctx[TContext, TEvent] = js.native
   def log[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](expr: js.Function2[/* ctx */ TContext, /* event */ TEvent, _], label: java.lang.String): xstateLib.Anon_Ctx[TContext, TEvent] = js.native
+  def pure[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
+    getActions: js.Function2[
+      /* context */ TContext, 
+      /* event */ xstateLib.esTypesMod.OmniEventObject[TEvent], 
+      js.UndefOr[
+        xstateLib.esTypesMod.SingleOrArray[xstateLib.esTypesMod.ActionObject[TContext, TEvent]]
+      ]
+    ]
+  ): xstateLib.esTypesMod.PureAction[TContext, TEvent] = js.native
   def raise[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](event: xstateLib.esTypesMod.Event[TEvent]): xstateLib.esTypesMod.RaiseEvent[TContext, TEvent] = js.native
   def resolveSend[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](action: xstateLib.esTypesMod.SendAction[TContext, TEvent], ctx: TContext, event: TEvent): xstateLib.esTypesMod.SendActionObject[TContext, xstateLib.esTypesMod.OmniEventObject[TEvent]] = js.native
   def send[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](event: xstateLib.esTypesMod.Event[TEvent]): xstateLib.esTypesMod.SendAction[TContext, TEvent] = js.native
@@ -63,6 +81,14 @@ object esActionsMod extends js.Object {
     actionFunctionMap: xstateLib.esTypesMod.ActionFunctionMap[TContext, TEvent]
   ): xstateLib.esTypesMod.ActionObject[TContext, TEvent] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](action: java.lang.String): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
+    action: java.lang.String,
+    actionFunctionMap: stdLib.Record[
+      java.lang.String, 
+      (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])
+    ]
+  ): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](action: js.Array[xstateLib.esTypesMod.Action[TContext, TEvent]]): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
     action: js.Array[xstateLib.esTypesMod.Action[TContext, TEvent]],
@@ -73,6 +99,22 @@ object esActionsMod extends js.Object {
   ): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
     action: js.UndefOr[scala.Nothing],
+    actionFunctionMap: stdLib.Record[
+      java.lang.String, 
+      (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])
+    ]
+  ): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](action: xstateLib.esTypesMod.ActionFunction[TContext, TEvent]): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
+    action: xstateLib.esTypesMod.ActionFunction[TContext, TEvent],
+    actionFunctionMap: stdLib.Record[
+      java.lang.String, 
+      (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])
+    ]
+  ): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](action: xstateLib.esTypesMod.ActionObject[TContext, TEvent]): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
+    action: xstateLib.esTypesMod.ActionObject[TContext, TEvent],
     actionFunctionMap: stdLib.Record[
       java.lang.String, 
       (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])
@@ -101,6 +143,7 @@ object esActionsMod extends js.Object {
     val send: xstateLib.esTypesMod.ActionTypes = js.native
     val start: xstateLib.esTypesMod.ActionTypes = js.native
     val stop: xstateLib.esTypesMod.ActionTypes = js.native
+    val update: xstateLib.esTypesMod.ActionTypes = js.native
   }
   
   @js.native

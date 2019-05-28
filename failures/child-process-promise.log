@@ -2,10 +2,10 @@
 [debug] PhaseRunner.scala:84 Success [id => child-process-promise, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/child-process-promise/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/child-process-promise),TsIdentLibrarySimple(child-process-promise)),TsIdentModule(None,List(child-process-promise))) [id => child-process-promise, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(child-process-promise)) [id => child-process-promise, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:227 Processing TsIdentLibrarySimple(child-process-promise) [id => child-process-promise, phase => typescript] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_Buffer) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise) / TsDeclFunction(exec) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeIntersect() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_Encoding) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise) / TsDeclFunction(exec) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeIntersect() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_EncodingString) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise) / TsDeclFunction(exec) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeIntersect() / TsTypeObject())] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(child-process-promise) [id => child-process-promise, phase => typescript] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Buffer) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise) / TsDeclFunction(exec) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeIntersect() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Encoding) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise) / TsDeclFunction(exec) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeIntersect() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_EncodingString) [id => child-process-promise, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(child-process-promise) / TsDeclFunction(exec) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeIntersect() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => child-process-promise, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing child-process-promise [id => child-process-promise, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: transpose requires all collections have the same size [id => child-process-promise, phase => scala.js] java.lang.IllegalArgumentException: transpose requires all collections have the same size
@@ -105,7 +105,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.importer.Main$.$anonfun$run$23(Main.scala:233)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:219)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -116,8 +116,8 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.importer.Main$.run(Main.scala:233)
-	at com.olvind.tso.importer.Main$.main(Main.scala:32)
+	at com.olvind.tso.importer.Main.run(Main.scala:219)
+	at com.olvind.tso.importer.Main$.main(Main.scala:309)
 	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [child-process-promise => java.lang.IllegalArgumentException: transpose requires all collections have the same size] [id => child-process-promise, phase => scala.js] 

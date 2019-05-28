@@ -1,7 +1,7 @@
 [debug] PhaseRunner.scala:84 Success [id => numeric, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/numeric),TsIdentLibrarySimple(numeric)),TsIdentModule(None,List(numeric))) [id => numeric, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(numeric)) [id => numeric, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:227 Processing TsIdentLibrarySimple(numeric) [id => numeric, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(numeric) [id => numeric, phase => typescript] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(abs) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(abseq) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 15 members for TsIdentSimple(acos) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
@@ -66,19 +66,19 @@
 [info ] ExpandTypeParams.scala:61 Expanding 14 members for TsIdentSimple(min) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 14 members for TsIdentSimple(getBlock) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
 [info ] ExpandTypeParams.scala:61 Expanding 14 members for TsIdentSimple(setBlock) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric))] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_E) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Tensor) / TsMemberFunction(eig) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_Random) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberProperty(seedrandom) / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_H) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(toUpperHessenberg) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_B) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(QRFrancis) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_E) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(eig) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_Hinv) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(uncmin) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_F) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(uncmin) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_LU) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(LU) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_LU) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(LUsolve) / TsFunSig() / TsFunParam() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_A) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(echelonize) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_Iterations) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(solveLP) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_Iact) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(solveQP) / TsFunSig() / TsTypeObject())] 
-[info ] ExtractInterfaces.scala:40 Extracted anonymous interface TsIdentSimple(Anon_S) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(svd) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_E) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Tensor) / TsMemberFunction(eig) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Random) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberProperty(seedrandom) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_H) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(toUpperHessenberg) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_B) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(QRFrancis) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_E) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(eig) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Hinv) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(uncmin) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_F) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(uncmin) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_LU) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(LU) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_LU) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(LUsolve) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_A) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(echelonize) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Iterations) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(solveLP) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Iact) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(solveQP) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_S) [id => numeric, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(numeric) / TsDeclInterface(Numeric) / TsMemberFunction(svd) / TsFunSig() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => numeric, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing numeric [id => numeric, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Cannot rename `Name(^)` [id => numeric, phase => scala.js] java.lang.RuntimeException: Cannot rename `Name(^)`
@@ -171,7 +171,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.importer.Main$.$anonfun$run$23(Main.scala:233)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:219)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -182,8 +182,8 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.importer.Main$.run(Main.scala:233)
-	at com.olvind.tso.importer.Main$.main(Main.scala:32)
+	at com.olvind.tso.importer.Main.run(Main.scala:219)
+	at com.olvind.tso.importer.Main$.main(Main.scala:309)
 	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [numeric => java.lang.RuntimeException: Cannot rename `Name(^)`] [id => numeric, phase => scala.js] 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DispatcherInterface extends js.Object {
   @JSName("getStore")
-  var getStore_Original: dispatchrLib.Anon_Name = js.native
+  var getStore_Original: dispatchrLib.Fn_Name = js.native
   @JSName("waitFor")
   var waitFor_Original: js.Function2[
     /* stores */ js.Array[java.lang.String | StoreClass], 

@@ -15,7 +15,12 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     */
   context: stdLib.Readonly[TContext]) = this()
   var __cache: js.Any = js.native
-  var _config: js.Any = js.native
+  var __xstatenode: xstateLib.xstateLibNumbers.`true` = js.native
+  /**
+    * Whether the state node is "transient". A state node is considered transient if it has
+    * an immediate transition from a "null event" (empty string), taken upon entering the state node.
+    */
+  var _transient: js.Any = js.native
   var _transition: js.Any = js.native
   /**
     * The activities to be started upon entering the state node,
@@ -29,7 +34,7 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
   /**
     * The raw config used to create the machine.
     */
-  val config: xstateLib.libTypesMod.StateNodeConfig[TContext, TStateSchema, TEvent] = js.native
+  var config: xstateLib.libTypesMod.StateNodeConfig[TContext, TStateSchema, TEvent] = js.native
   /**
     * The initial extended state
     */
@@ -94,13 +99,7 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     * entering the initial state.
     */
   val initialState: xstateLib.libStateMod.State[TContext, TEvent] = js.native
-  val initialStateNodes: js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
+  val initialStateNodes: js.Array[StateNode[TContext, _, TEvent]] = js.native
   val initialStateValue: js.Any = js.native
   /**
     * The services invoked by this state node.
@@ -113,11 +112,7 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
   /**
     * The root machine node.
     */
-  var machine: StateNode[
-    TContext, 
-    _, 
-    xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-  ] = js.native
+  var machine: StateNode[TContext, _, TEvent] = js.native
   /**
     * The meta data associated with this state node, which will be returned in State instances.
     */
@@ -158,13 +153,7 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
   /**
     * The parent state node.
     */
-  var parent: js.UndefOr[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
+  var parent: js.UndefOr[StateNode[TContext, _, TEvent]] = js.native
   /**
     * The string path from the root machine node to this node.
     */
@@ -192,12 +181,6 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     * default state value to transition to if no history value exists yet.
     */
   val target: js.UndefOr[xstateLib.libTypesMod.StateValue] = js.native
-  var toGuard: js.Any = js.native
-  /**
-    * Whether the state node is "transient". A state node is considered transient if it has
-    * an immediate transition from a "null event" (empty string), taken upon entering the state node.
-    */
-  var transient: scala.Boolean = js.native
   var transitionCompoundNode: js.Any = js.native
   var transitionLeafNode: js.Any = js.native
   var transitionParallelNode: js.Any = js.native
@@ -229,20 +212,8 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     * @param relativePath The relative path from this state node
     * @param historyValue
     */
-  def getFromRelativePath(relativePath: js.Array[java.lang.String]): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
-  def getFromRelativePath(relativePath: js.Array[java.lang.String], historyValue: xstateLib.libTypesMod.HistoryValue): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
+  def getFromRelativePath(relativePath: js.Array[java.lang.String]): js.Array[StateNode[TContext, _, TEvent]] = js.native
+  def getFromRelativePath(relativePath: js.Array[java.lang.String], historyValue: xstateLib.libTypesMod.HistoryValue): js.Array[StateNode[TContext, _, TEvent]] = js.native
   def getInitialState(stateValue: xstateLib.libTypesMod.StateValue): xstateLib.libStateMod.State[TContext, TEvent] = js.native
   def getInitialState(stateValue: xstateLib.libTypesMod.StateValue, context: TContext): xstateLib.libStateMod.State[TContext, TEvent] = js.native
   /**
@@ -252,108 +223,44 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     * @param history The previous state to retrieve history
     * @param resolve Whether state nodes should resolve to initial child state nodes
     */
-  def getRelativeStateNodes(relativeStateId: java.lang.String): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
-  def getRelativeStateNodes(relativeStateId: java.lang.String, historyValue: xstateLib.libTypesMod.HistoryValue): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
+  def getRelativeStateNodes(relativeStateId: java.lang.String): js.Array[StateNode[TContext, _, TEvent]] = js.native
+  def getRelativeStateNodes(relativeStateId: java.lang.String, historyValue: xstateLib.libTypesMod.HistoryValue): js.Array[StateNode[TContext, _, TEvent]] = js.native
   def getRelativeStateNodes(
     relativeStateId: java.lang.String,
     historyValue: xstateLib.libTypesMod.HistoryValue,
     resolve: scala.Boolean
-  ): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
-  def getRelativeStateNodes(relativeStateId: js.Array[java.lang.String]): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
-  def getRelativeStateNodes(relativeStateId: js.Array[java.lang.String], historyValue: xstateLib.libTypesMod.HistoryValue): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
+  ): js.Array[StateNode[TContext, _, TEvent]] = js.native
+  def getRelativeStateNodes(relativeStateId: js.Array[java.lang.String]): js.Array[StateNode[TContext, _, TEvent]] = js.native
+  def getRelativeStateNodes(relativeStateId: js.Array[java.lang.String], historyValue: xstateLib.libTypesMod.HistoryValue): js.Array[StateNode[TContext, _, TEvent]] = js.native
   def getRelativeStateNodes(
     relativeStateId: js.Array[java.lang.String],
     historyValue: xstateLib.libTypesMod.HistoryValue,
     resolve: scala.Boolean
-  ): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
+  ): js.Array[StateNode[TContext, _, TEvent]] = js.native
   /**
     * Returns the child state node from its relative `stateKey`, or throws.
     */
-  def getStateNode(stateKey: java.lang.String): StateNode[
-    TContext, 
-    _, 
-    xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-  ] = js.native
+  def getStateNode(stateKey: java.lang.String): StateNode[TContext, _, TEvent] = js.native
   /**
     * Returns the state node with the given `stateId`, or throws.
     *
     * @param stateId The state ID. The prefix "#" is removed.
     */
-  def getStateNodeById(stateId: java.lang.String): StateNode[
-    TContext, 
-    _, 
-    xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-  ] = js.native
+  def getStateNodeById(stateId: java.lang.String): StateNode[TContext, _, TEvent] = js.native
   /**
     * Returns the relative state node from the given `statePath`, or throws.
     *
     * @param statePath The string or string array relative path to the state node.
     */
-  def getStateNodeByPath(statePath: java.lang.String): StateNode[
-    TContext, 
-    _, 
-    xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-  ] = js.native
-  def getStateNodeByPath(statePath: js.Array[java.lang.String]): StateNode[
-    TContext, 
-    _, 
-    xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-  ] = js.native
-  def getStateNodes(state: xstateLib.libStateMod.State[TContext, TEvent]): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
+  def getStateNodeByPath(statePath: java.lang.String): StateNode[TContext, _, TEvent] = js.native
+  def getStateNodeByPath(statePath: js.Array[java.lang.String]): StateNode[TContext, _, TEvent] = js.native
+  def getStateNodes(state: xstateLib.libStateMod.State[TContext, TEvent]): js.Array[StateNode[TContext, _, TEvent]] = js.native
   /**
     * Returns the state nodes represented by the current state value.
     *
     * @param state The state value or State instance
     */
-  def getStateNodes(state: xstateLib.libTypesMod.StateValue): js.Array[
-    StateNode[
-      TContext, 
-      _, 
-      xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ]
-  ] = js.native
+  def getStateNodes(state: xstateLib.libTypesMod.StateValue): js.Array[StateNode[TContext, _, TEvent]] = js.native
   def getStates(stateValue: xstateLib.libTypesMod.StateValue): js.Array[
     StateNode[
       TContext, 
@@ -381,6 +288,7 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     * @param state The state to resolve
     */
   def resolveState(state: xstateLib.libStateMod.State[TContext, TEvent]): xstateLib.libStateMod.State[TContext, TEvent] = js.native
+  def toJSON(): xstateLib.libTypesMod.StateNodeDefinition[TContext, TStateSchema, TEvent] = js.native
   def transition(
     state: xstateLib.libStateMod.State[TContext, TEvent],
     event: xstateLib.libTypesMod.OmniEvent[TEvent]

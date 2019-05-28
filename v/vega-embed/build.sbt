@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vega-embed"
-version := "3.18.2-79da8b"
+version := "3.18.2-78a13a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

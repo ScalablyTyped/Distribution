@@ -114,10 +114,10 @@ object polishedMod extends js.Object {
   def lighten(amount: scala.Double): js.Function1[/* color */ java.lang.String, java.lang.String] = js.native
   def lighten(amount: scala.Double, color: java.lang.String): java.lang.String = js.native
   def margin(values: (scala.Null | scala.Unit | java.lang.String | scala.Double)*): polishedLib.libTypesStyleMod.Styles = js.native
-  def mix(weight: java.lang.String): polishedLib.Anon_Color = js.native
+  def mix(weight: java.lang.String): polishedLib.Fn_Color = js.native
   def mix(weight: java.lang.String, color: java.lang.String): js.Function1[/* otherColor */ java.lang.String, java.lang.String] = js.native
   def mix(weight: java.lang.String, color: java.lang.String, otherColor: java.lang.String): java.lang.String = js.native
-  def mix(weight: scala.Double): polishedLib.Anon_Color = js.native
+  def mix(weight: scala.Double): polishedLib.Fn_Color = js.native
   def mix(weight: scala.Double, color: java.lang.String): js.Function1[/* otherColor */ java.lang.String, java.lang.String] = js.native
   def mix(weight: scala.Double, color: java.lang.String, otherColor: java.lang.String): java.lang.String = js.native
   def modularScale(steps: scala.Double): java.lang.String = js.native

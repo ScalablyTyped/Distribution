@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
 trait KnockoutReadonlyObservable[T]
   extends KnockoutSubscribable[T]
      with KnockoutObservableFunctions[T] {
-  var valueHasMutated: js.UndefOr[Anon_Void] = js.native
-  var valueWillMutate: js.UndefOr[Anon_Void] = js.native
+  var valueHasMutated: js.UndefOr[Fn_Void] = js.native
+  var valueWillMutate: js.UndefOr[Fn_Void] = js.native
   def apply(): T = js.native
   /**
     * Returns the current value of the computed observable without creating a dependency.

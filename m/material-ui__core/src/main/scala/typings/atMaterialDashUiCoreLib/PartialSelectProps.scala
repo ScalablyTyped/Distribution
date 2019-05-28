@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/Select.SelectProps> */
 trait PartialSelectProps extends js.Object {
   var IconComponent: js.UndefOr[reactLib.reactMod.ReactType[_]] = js.undefined
-  var MenuProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps]] = js.undefined
+  var MenuProps: js.UndefOr[PartialMenuProps] = js.undefined
   var SelectDisplayProps: js.UndefOr[reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
@@ -114,11 +114,7 @@ trait PartialSelectProps extends js.Object {
   var autoWidth: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapSelectClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
@@ -382,7 +378,7 @@ object PartialSelectProps {
   @scala.inline
   def apply(
     IconComponent: reactLib.reactMod.ReactType[_] = null,
-    MenuProps: stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps] = null,
+    MenuProps: PartialMenuProps = null,
     SelectDisplayProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLDivElement] = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
@@ -442,9 +438,7 @@ object PartialSelectProps {
     autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey]
-    ] = null,
+    classes: PartialClassNameMapSelectClassKey = null,
     color: java.lang.String = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,

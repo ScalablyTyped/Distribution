@@ -12,7 +12,7 @@ trait Anon_DisplayHeight extends js.Object {
   var iconLink: java.lang.String = js.native
   var link: java.lang.String = js.native
   @JSName("preferences")
-  var preferences_Original: Anon_KeyString = js.native
+  var preferences_Original: Fn_KeyString = js.native
   var title: java.lang.String = js.native
   var `type`: java.lang.String = js.native
   var width: js.UndefOr[gapiDotCalendarLib.gapiNs.clientNs.calendarNs.integer] = js.native

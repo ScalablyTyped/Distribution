@@ -44,6 +44,9 @@ object xstateLibStrings {
   sealed trait deep extends js.Object
   
   @js.native
+  sealed trait external extends js.Object
+  
+  @js.native
   sealed trait `final`
     extends xstateLib.esTypesMod._StateTypes
        with xstateLib.libTypesMod._StateTypes
@@ -54,15 +57,24 @@ object xstateLibStrings {
        with xstateLib.libTypesMod._StateTypes
   
   @js.native
+  sealed trait internal extends js.Object
+  
+  @js.native
   sealed trait parallel
     extends xstateLib.esTypesMod._StateTypes
        with xstateLib.libTypesMod._StateTypes
   
   @js.native
+  sealed trait platform extends js.Object
+  
+  @js.native
+  sealed trait scxml extends js.Object
+  
+  @js.native
   sealed trait shallow extends js.Object
   
   @js.native
-  sealed trait xstateDOTcond extends js.Object
+  sealed trait xstateDOTguard extends js.Object
   
   @scala.inline
   def PropertyAssigner: PropertyAssigner = "PropertyAssigner".asInstanceOf[PropertyAssigner]
@@ -87,14 +99,22 @@ object xstateLibStrings {
   @scala.inline
   def deep: deep = "deep".asInstanceOf[deep]
   @scala.inline
+  def external: external = "external".asInstanceOf[external]
+  @scala.inline
   def `final`: `final` = "final".asInstanceOf[`final`]
   @scala.inline
   def history: history = "history".asInstanceOf[history]
   @scala.inline
+  def internal: internal = "internal".asInstanceOf[internal]
+  @scala.inline
   def parallel: parallel = "parallel".asInstanceOf[parallel]
+  @scala.inline
+  def platform: platform = "platform".asInstanceOf[platform]
+  @scala.inline
+  def scxml: scxml = "scxml".asInstanceOf[scxml]
   @scala.inline
   def shallow: shallow = "shallow".asInstanceOf[shallow]
   @scala.inline
-  def xstateDOTcond: xstateDOTcond = "xstate.cond".asInstanceOf[xstateDOTcond]
+  def xstateDOTguard: xstateDOTguard = "xstate.guard".asInstanceOf[xstateDOTguard]
 }
 

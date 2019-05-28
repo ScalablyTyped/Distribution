@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-pg-migrate
 
-Typings are for version 3.20.0
+Typings are for version 3.21.0
 
 ## Library description:
 Postgresql database migration management tool for node.js

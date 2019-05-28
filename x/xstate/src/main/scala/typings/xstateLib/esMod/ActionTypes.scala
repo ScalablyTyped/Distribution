@@ -19,10 +19,12 @@ object ActionTypes extends js.Object {
   /* "xstate.invoke" */ val Invoke: xstateLib.esTypesMod.ActionTypes.Invoke with java.lang.String = js.native
   /* "xstate.log" */ val Log: xstateLib.esTypesMod.ActionTypes.Log with java.lang.String = js.native
   /* "" */ val NullEvent: xstateLib.esTypesMod.ActionTypes.NullEvent with java.lang.String = js.native
+  /* "xstate.pure" */ val Pure: xstateLib.esTypesMod.ActionTypes.Pure with java.lang.String = js.native
   /* "xstate.raise" */ val Raise: xstateLib.esTypesMod.ActionTypes.Raise with java.lang.String = js.native
   /* "xstate.send" */ val Send: xstateLib.esTypesMod.ActionTypes.Send with java.lang.String = js.native
   /* "xstate.start" */ val Start: xstateLib.esTypesMod.ActionTypes.Start with java.lang.String = js.native
   /* "xstate.stop" */ val Stop: xstateLib.esTypesMod.ActionTypes.Stop with java.lang.String = js.native
+  /* "xstate.update" */ val Update: xstateLib.esTypesMod.ActionTypes.Update with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[xstateLib.esTypesMod.ActionTypes with java.lang.String] = js.native
 }

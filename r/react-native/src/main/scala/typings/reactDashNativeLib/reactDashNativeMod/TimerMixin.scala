@@ -12,8 +12,8 @@ trait TimerMixin extends js.Object {
   var clearTimeout: js.Function1[/* handle */ scala.Double, scala.Unit]
   var requestAnimationFrame: js.Function1[/* callback */ js.Function1[/* time */ scala.Double, scala.Unit], scala.Double]
   var setImmediate: js.Function1[/* handler */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Double]
-  var setInterval: reactDashNativeLib.Anon_ArgsHandler
-  var setTimeout: reactDashNativeLib.Anon_ArgsHandler
+  var setInterval: reactDashNativeLib.Fn_Args
+  var setTimeout: reactDashNativeLib.Fn_Args
 }
 
 object TimerMixin {
@@ -25,8 +25,8 @@ object TimerMixin {
     clearTimeout: /* handle */ scala.Double => scala.Unit,
     requestAnimationFrame: /* callback */ js.Function1[/* time */ scala.Double, scala.Unit] => scala.Double,
     setImmediate: /* handler */ js.Function1[/* repeated */ js.Any, scala.Unit] => scala.Double,
-    setInterval: reactDashNativeLib.Anon_ArgsHandler,
-    setTimeout: reactDashNativeLib.Anon_ArgsHandler
+    setInterval: reactDashNativeLib.Fn_Args,
+    setTimeout: reactDashNativeLib.Fn_Args
   ): TimerMixin = {
     val __obj = js.Dynamic.literal(cancelAnimationFrame = js.Any.fromFunction1(cancelAnimationFrame), clearImmediate = js.Any.fromFunction1(clearImmediate), clearInterval = js.Any.fromFunction1(clearInterval), clearTimeout = js.Any.fromFunction1(clearTimeout), requestAnimationFrame = js.Any.fromFunction1(requestAnimationFrame), setImmediate = js.Any.fromFunction1(setImmediate), setInterval = setInterval, setTimeout = setTimeout)
   

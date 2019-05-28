@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "moment-duration-format"
-version := "2.2-dt-20180815Z-d4769f"
+version := "2.2-dt-20180815Z-c448c9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

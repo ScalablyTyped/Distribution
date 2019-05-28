@@ -96,6 +96,7 @@ object libMod extends js.Object {
   val CalculatorTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val CalendarFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val CalendarOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val CalendarTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val CameraFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val CameraOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val CameraTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
@@ -392,6 +393,9 @@ object libMod extends js.Object {
   val InsuranceFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val InsuranceOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val InsuranceTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val InteractionFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val InteractionOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
+  val InteractionTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val InterationFill: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val InterationOutline: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native
   val InterationTwoTone: atAntDashDesignIconsLib.libTypesMod.IconDefinition = js.native

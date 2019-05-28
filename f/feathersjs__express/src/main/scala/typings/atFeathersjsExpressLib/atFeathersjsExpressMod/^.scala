@@ -11,10 +11,10 @@ object ^ extends js.Object {
   val default: (js.Function1[
     /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_], 
     Application[_]
-  ]) with atFeathersjsExpressLib.Anon_App = js.native
+  ]) with atFeathersjsExpressLib.Typeofself = js.native
   val original: (js.Function0[
     expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Express
-  ]) with atFeathersjsExpressLib.Anon_Application = js.native
+  ]) with atFeathersjsExpressLib.Typeofexpress = js.native
   def Router(): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
   def Router(options: expressLib.expressMod.RouterOptions): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
   def errorHandler(): expressLib.expressMod.ErrorRequestHandler = js.native

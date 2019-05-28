@@ -13,13 +13,20 @@ object libUtilsMod extends js.Object {
     /* message */ java.lang.String, 
     scala.Unit
   ] = js.native
-  def bindActionToState[TC, TE /* <: xstateLib.libTypesMod.EventObject */](action: xstateLib.libTypesMod.ActionObject[TC, TE], state: xstateLib.libStateMod.State[TC, TE]): xstateLib.libTypesMod.ActionObject[TC, TE] = js.native
-  def flatten[T](array: js.Array[js.Array[T]]): js.Array[T] = js.native
+  def bindActionToState[TC, TE /* <: xstateLib.libTypesMod.EventObject */](
+    action: xstateLib.libTypesMod.ActionObject[TC, TE],
+    state: xstateLib.libTypesMod.StateInterface[TC, TE]
+  ): xstateLib.libTypesMod.ActionObject[TC, TE] = js.native
+  def flatten[T](array: js.Array[T | js.Array[T]]): js.Array[T] = js.native
   def getActionType(action: xstateLib.libTypesMod.Action[_, _]): xstateLib.libTypesMod.ActionType = js.native
   def getEventType[TEvent /* <: xstateLib.libTypesMod.EventObject */](event: xstateLib.libTypesMod.Event[TEvent]): /* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any = js.native
   def isArray(value: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
   def isBuiltInEvent(eventType: xstateLib.libTypesMod.EventType): scala.Boolean = js.native
   def isFunction(value: js.Any): /* is std.Function */ scala.Boolean = js.native
+  def isMachine(value: js.Any): /* is xstate.xstate/lib/types.StateMachine<any, any, any> */ scala.Boolean = js.native
+  def isMachine(value: xstateLib.libTypesMod.StateMachine[_, _, _]): /* is xstate.xstate/lib/types.StateMachine<any, any, any> */ scala.Boolean = js.native
+  def isObservable[T](value: js.Any): /* is xstate.xstate/lib/types.Subscribable<T> */ scala.Boolean = js.native
+  def isObservable[T](value: xstateLib.libTypesMod.Subscribable[T]): /* is xstate.xstate/lib/types.Subscribable<T> */ scala.Boolean = js.native
   def isPromiseLike(value: js.Any): /* is std.PromiseLike<any> */ scala.Boolean = js.native
   def isString(value: js.Any): /* is string */ scala.Boolean = js.native
   def keys[T /* <: js.Object */](value: T): js.Array[java.lang.String] = js.native
@@ -59,19 +66,23 @@ object libUtilsMod extends js.Object {
   def toArray[T](): js.Array[T] = js.native
   def toArray[T](value: T): js.Array[T] = js.native
   def toArray[T](value: js.Array[T]): js.Array[T] = js.native
+  def toGuard[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](): js.UndefOr[xstateLib.libTypesMod.Guard[TContext, TEvent]] = js.native
+  def toGuard[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](condition: xstateLib.libTypesMod.Condition[TContext, TEvent]): js.UndefOr[xstateLib.libTypesMod.Guard[TContext, TEvent]] = js.native
+  def toGuard[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
+    condition: xstateLib.libTypesMod.Condition[TContext, TEvent],
+    guardMap: stdLib.Record[java.lang.String, xstateLib.libTypesMod.ConditionPredicate[TContext, TEvent]]
+  ): js.UndefOr[xstateLib.libTypesMod.Guard[TContext, TEvent]] = js.native
   def toStatePath(stateId: java.lang.String, delimiter: java.lang.String): js.Array[java.lang.String] = js.native
   def toStatePath(stateId: js.Array[java.lang.String], delimiter: java.lang.String): js.Array[java.lang.String] = js.native
   def toStatePaths(): js.Array[js.Array[java.lang.String]] = js.native
-  def toStatePaths(stateValue: java.lang.String): js.Array[js.Array[java.lang.String]] = js.native
-  def toStatePaths(
-    stateValue: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_xstate/lib/types.StateValueMap */ js.Any
-  ): js.Array[js.Array[java.lang.String]] = js.native
+  def toStatePaths(stateValue: xstateLib.libTypesMod.StateValue): js.Array[js.Array[java.lang.String]] = js.native
   def toStateValue(stateValue: js.Array[java.lang.String], delimiter: java.lang.String): xstateLib.libTypesMod.StateValue = js.native
   def toStateValue(
     stateValue: xstateLib.libTypesMod.StateInterface[_, xstateLib.libTypesMod.EventObject],
     delimiter: java.lang.String
   ): xstateLib.libTypesMod.StateValue = js.native
   def toStateValue(stateValue: xstateLib.libTypesMod.StateValue, delimiter: java.lang.String): xstateLib.libTypesMod.StateValue = js.native
+  def uniqueId(): java.lang.String = js.native
   def updateContext[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     context: TContext,
     event: xstateLib.libTypesMod.OmniEventObject[TEvent],

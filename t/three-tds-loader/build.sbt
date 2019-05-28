@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "three-tds-loader"
-version := "1.1-dt-20190328Z-4e54f0"
+version := "1.1-dt-20190328Z-6e6caf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

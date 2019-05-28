@@ -13,13 +13,13 @@ trait VictorySingleLabableProps extends VictoryLabableProps {
     * VictoryArea with VictoryScatter
     * @example: "Series 1", (data) => `${data.length} points`
     */
-  var label: js.UndefOr[java.lang.String | victoryLib.Anon_DataAnyString] = js.undefined
+  var label: js.UndefOr[java.lang.String | victoryLib.Fn_DataAnyString] = js.undefined
 }
 
 object VictorySingleLabableProps {
   @scala.inline
   def apply(
-    label: java.lang.String | victoryLib.Anon_DataAnyString = null,
+    label: java.lang.String | victoryLib.Fn_DataAnyString = null,
     labelComponent: reactLib.reactMod.ReactElement[_] = null
   ): VictorySingleLabableProps = {
     val __obj = js.Dynamic.literal()

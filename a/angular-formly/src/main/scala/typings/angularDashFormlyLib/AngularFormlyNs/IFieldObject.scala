@@ -190,7 +190,7 @@ trait IFieldObject extends js.Object {
   		 *
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#template-string--function
   		 */
-  var template: js.UndefOr[java.lang.String | angularDashFormlyLib.Anon_FieldConfiguration] = js.undefined
+  var template: js.UndefOr[java.lang.String | angularDashFormlyLib.Fn_FieldConfiguration] = js.undefined
   /**
   		 * Allows you to specify custom template manipulators for this specific field. (use defaultOptions in a
   		 * type configuration if you want it to apply to all fields of a certain type).
@@ -211,7 +211,7 @@ trait IFieldObject extends js.Object {
   		 *
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#templateurl-string--function
   		 */
-  var templateUrl: js.UndefOr[java.lang.String | angularDashFormlyLib.Anon_FieldConfiguration] = js.undefined
+  var templateUrl: js.UndefOr[java.lang.String | angularDashFormlyLib.Fn_FieldConfiguration] = js.undefined
   /**
   		 * The type of field to be rendered. This is the recommended method
   		 * for defining fields. Types must be pre-defined using formlyConfig.
@@ -302,10 +302,10 @@ object IFieldObject {
     optionsTypes: java.lang.String | js.Array[java.lang.String] = null,
     resetModel: () => scala.Unit = null,
     runExpressions: () => scala.Unit = null,
-    template: java.lang.String | angularDashFormlyLib.Anon_FieldConfiguration = null,
+    template: java.lang.String | angularDashFormlyLib.Fn_FieldConfiguration = null,
     templateManipulators: ITemplateManipulators = null,
     templateOptions: ITemplateOptions = null,
-    templateUrl: java.lang.String | angularDashFormlyLib.Anon_FieldConfiguration = null,
+    templateUrl: java.lang.String | angularDashFormlyLib.Fn_FieldConfiguration = null,
     `type`: java.lang.String = null,
     updateInitialValue: () => scala.Unit = null,
     validation: angularDashFormlyLib.Anon_ErrorExistsAndShouldBeVisible = null,

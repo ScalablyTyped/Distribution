@@ -28,39 +28,31 @@ class State[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */] protect
   var actions_State: js.Array[xstateLib.libTypesMod.ActionObject[TContext, TEvent]] = js.native
   /* CompleteClass */
   override var activities: xstateLib.libTypesMod.ActivityMap = js.native
-  /**
-    * Indicates whether the state has changed from the previous state. A state is considered "changed" if:
-    *
-    * - Its value is not equal to its previous value, or:
-    * - It has any new actions (side-effects) to execute.
-    *
-    * An initial state (with no history) will return `undefined`.
-    */
-  var changed: js.UndefOr[scala.Boolean] = js.native
   /* CompleteClass */
   override var context: TContext = js.native
-  var event: xstateLib.libTypesMod.OmniEventObject[TEvent] = js.native
+  /* CompleteClass */
+  override var event: xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject] = js.native
+  @JSName("event")
+  var event_State: xstateLib.libTypesMod.OmniEventObject[TEvent] = js.native
   /* CompleteClass */
   override var events: js.Array[xstateLib.libTypesMod.EventObject] = js.native
   @JSName("events")
   var events_State: js.Array[TEvent] = js.native
+  /* CompleteClass */
+  override var inert: js.Any = js.native
   /**
     * Returns a new `State` instance that is equal to this state no actions (side-effects).
     */
-  val inert: State[TContext, TEvent] = js.native
+  @JSName("inert")
+  val inert_State: State[TContext, TEvent] = js.native
   /* CompleteClass */
   override var meta: js.Any = js.native
-  /**
-    * The next events that will cause a transition from the current state.
-    */
-  val nextEvents: js.Array[xstateLib.libTypesMod.EventType] = js.native
+  /* CompleteClass */
+  override var nextEvents: js.Array[xstateLib.libTypesMod.EventType] = js.native
   /* CompleteClass */
   override var value: xstateLib.libTypesMod.StateValue = js.native
-  /**
-    * Whether the current state value is a subset of the given parent state value.
-    * @param parentStateValue
-    */
-  def matches(parentStateValue: xstateLib.libTypesMod.StateValue): scala.Boolean = js.native
+  /* CompleteClass */
+  override def matches(parentStateValue: xstateLib.libTypesMod.StateValue): scala.Boolean = js.native
   /* CompleteClass */
   override def toStrings(): js.Array[java.lang.String] = js.native
   def toStrings(stateValue: xstateLib.libTypesMod.StateValue): js.Array[java.lang.String] = js.native

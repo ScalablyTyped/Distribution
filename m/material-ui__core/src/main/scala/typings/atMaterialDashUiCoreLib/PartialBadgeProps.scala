@@ -109,11 +109,7 @@ trait PartialBadgeProps extends js.Object {
   var badgeContent: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapBadgeClassKey] = js.undefined
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
@@ -385,9 +381,7 @@ object PartialBadgeProps {
     badgeContent: reactLib.reactMod.ReactNode = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey]
-    ] = null,
+    classes: PartialClassNameMapBadgeClassKey = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

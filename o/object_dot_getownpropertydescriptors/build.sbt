@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "object_dot_getownpropertydescriptors"
-version := "2.0-dt-20180723Z-dcdd32"
+version := "2.0-dt-20180723Z-02575e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

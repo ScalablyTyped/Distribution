@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class QueryBuilder[QM /* <: Model */, RM, RV] ()
   extends QueryBuilderBase[QM, RM, RV]
      with Executable[RV] {
-  def castTo[T /* <: objectionLib.Anon_Args */](model: T): QueryBuilder[
+  def castTo[T /* <: objectionLib.TypeofClassModel */](model: T): QueryBuilder[
     QM, 
     js.Array[stdLib.InstanceType[T]], 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _

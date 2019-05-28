@@ -863,13 +863,13 @@ object ^ extends js.Object {
       T
     ]
   ] = js.native
-  def createSelectorCreator(memoize: js.Function1[/* func */ js.Function, js.Function]): reselectLib.Anon_Combiner = js.native
-  def createSelectorCreator[O1](memoize: js.Function2[/* func */ js.Function, /* option1 */ O1, js.Function], option1: O1): reselectLib.Anon_Combiner = js.native
+  def createSelectorCreator(memoize: js.Function1[/* func */ js.Function, js.Function]): reselectLib.Fn_Combiner = js.native
+  def createSelectorCreator[O1](memoize: js.Function2[/* func */ js.Function, /* option1 */ O1, js.Function], option1: O1): reselectLib.Fn_Combiner = js.native
   def createSelectorCreator[O1, O2](
     memoize: js.Function3[/* func */ js.Function, /* option1 */ O1, /* option2 */ O2, js.Function],
     option1: O1,
     option2: O2
-  ): reselectLib.Anon_Combiner = js.native
+  ): reselectLib.Fn_Combiner = js.native
   def createSelectorCreator[O1, O2, O3](
     memoize: js.Function5[
       /* func */ js.Function, 
@@ -883,7 +883,7 @@ object ^ extends js.Object {
     option2: O2,
     option3: O3,
     rest: js.Any*
-  ): reselectLib.Anon_Combiner = js.native
+  ): reselectLib.Fn_Combiner = js.native
   @JSName("createSelector")
   def createSelector_S1P1R1TOutputParametricSelector[S1, P1, R1, T](selectors: js.Array[ParametricSelector[S1, P1, R1]], combiner: js.Function1[/* res1 */ R1, T]): OutputParametricSelector[S1, P1, T, js.Function1[/* res1 */ R1, T]] = js.native
   @JSName("createSelector")
@@ -2456,7 +2456,7 @@ object ^ extends js.Object {
     selectors: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect.Selector<S, T[K]>}
     */ reselectLib.reselectLibStrings.createStructuredSelector with T,
-    selectorCreator: reselectLib.Anon_Combiner
+    selectorCreator: reselectLib.Fn_Combiner
   ): Selector[S, T] = js.native
   @JSName("createStructuredSelector")
   def createStructuredSelector_SPTParametricSelector[S, P, T](
@@ -2469,7 +2469,7 @@ object ^ extends js.Object {
     selectors: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: reselect.reselect.ParametricSelector<S, P, T[K]>}
     */ reselectLib.reselectLibStrings.createStructuredSelector with T,
-    selectorCreator: reselectLib.Anon_Combiner
+    selectorCreator: reselectLib.Fn_Combiner
   ): ParametricSelector[S, P, T] = js.native
   def defaultMemoize[F /* <: js.Function */](func: F): F = js.native
   def defaultMemoize[F /* <: js.Function */](

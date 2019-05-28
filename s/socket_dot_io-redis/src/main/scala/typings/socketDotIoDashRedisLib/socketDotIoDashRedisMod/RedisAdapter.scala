@@ -18,14 +18,14 @@ trait RedisAdapter
   		 * @param remote The optional flag, whether the packet came from another node
   		 */
   @JSName("broadcast")
-  var broadcast_Original: socketDotIoDashRedisLib.Anon_Opts = js.native
+  var broadcast_Original: socketDotIoDashRedisLib.Fn_Opts = js.native
   /**
   		 * Removes a socket from all the rooms that it's joined
   		 * @param id The ID of the socket that we're removing
   		 * @param callback An optional callback to call when the socket has been
   		 */
   @JSName("delAll")
-  var delAll_Original: socketDotIoDashRedisLib.Anon_Callback = js.native
+  var delAll_Original: socketDotIoDashRedisLib.Fn_Callback = js.native
   /**
   		 * The prefix of pub/sub events
   		 */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flot"
-version := "0.0-unknown-dt-20190322Z-f888ed"
+version := "0.0-unknown-dt-20190322Z-1112d7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

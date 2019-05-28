@@ -13,6 +13,6 @@ class ^ ()
 @JSImport("react-native-modal-dropdown", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var default: reactDashNativeDashModalDashDropdownLib.Anon_Default = js.native
+  var default: reactDashNativeDashModalDashDropdownLib.TypeofClassModalDropdown = js.native
 }
 

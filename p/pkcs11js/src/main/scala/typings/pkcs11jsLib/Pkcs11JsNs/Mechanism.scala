@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Mechanism extends js.Object {
   var mechanism: scala.Double
-  var parameter: nodeLib.Buffer | IParams
+  var parameter: js.UndefOr[nodeLib.Buffer | IParams] = js.undefined
 }
 
 object Mechanism {
   @scala.inline
-  def apply(mechanism: scala.Double, parameter: nodeLib.Buffer | IParams): Mechanism = {
-    val __obj = js.Dynamic.literal(mechanism = mechanism, parameter = parameter.asInstanceOf[js.Any])
-  
+  def apply(mechanism: scala.Double, parameter: nodeLib.Buffer | IParams = null): Mechanism = {
+    val __obj = js.Dynamic.literal(mechanism = mechanism)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mechanism]
   }
 }

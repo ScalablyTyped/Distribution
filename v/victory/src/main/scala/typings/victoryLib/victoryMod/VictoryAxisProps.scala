@@ -180,7 +180,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     * an array of display values for each tickValue.
     * @example d3.time.format("%Y"), (x) => x.toPrecision(2), ["first", "second", "third"]
     */
-  var tickFormat: js.UndefOr[js.Array[_] | victoryLib.Anon_Index] = js.undefined
+  var tickFormat: js.UndefOr[js.Array[_] | victoryLib.Fn_Index] = js.undefined
   /**
     * The tickLabelComponent prop takes in an entire component which will be used
     * to create the tick labels. The new element created from the passed tickLabelComponent
@@ -233,7 +233,7 @@ object VictoryAxisProps {
     theme: VictoryThemeDefinition = null,
     tickComponent: reactLib.reactMod.ReactElement[_] = null,
     tickCount: scala.Int | scala.Double = null,
-    tickFormat: js.Array[_] | victoryLib.Anon_Index = null,
+    tickFormat: js.Array[_] | victoryLib.Fn_Index = null,
     tickLabelComponent: reactLib.reactMod.ReactElement[_] = null,
     tickValues: js.Array[_] = null,
     width: scala.Int | scala.Double = null

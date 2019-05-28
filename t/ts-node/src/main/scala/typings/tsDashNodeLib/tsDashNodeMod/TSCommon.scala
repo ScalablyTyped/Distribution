@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TSCommon extends js.Object {
   var ModuleKind: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ModuleKind */ js.Any = js.native
-  var ScriptSnapshot: tsDashNodeLib.Anon_FromString = js.native
+  var ScriptSnapshot: tsDashNodeLib.TypeofScriptSnapshot = js.native
   var ScriptTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ScriptTarget */ js.Any = js.native
   @JSName("createLanguageService")
-  var createLanguageService_Original: tsDashNodeLib.Anon_DocumentRegistry = js.native
+  var createLanguageService_Original: tsDashNodeLib.Fn_DocumentRegistry = js.native
   @JSName("displayPartsToString")
-  var displayPartsToString_Original: tsDashNodeLib.Anon_DisplayParts = js.native
+  var displayPartsToString_Original: tsDashNodeLib.Fn_DisplayParts = js.native
   @JSName("findConfigFile")
-  var findConfigFile_Original: tsDashNodeLib.Anon_ConfigName = js.native
+  var findConfigFile_Original: tsDashNodeLib.Fn_ConfigName = js.native
   @JSName("flattenDiagnosticMessageText")
-  var flattenDiagnosticMessageText_Original: tsDashNodeLib.Anon_MessageText = js.native
+  var flattenDiagnosticMessageText_Original: tsDashNodeLib.Fn_MessageText = js.native
   @JSName("formatDiagnosticsWithColorAndContext")
   var formatDiagnosticsWithColorAndContext_Original: js.Function2[
     /* diagnostics */ js.Array[typescriptLib.typescriptMod.Diagnostic], 
@@ -33,9 +33,9 @@ trait TSCommon extends js.Object {
   @JSName("getDefaultLibFilePath")
   var getDefaultLibFilePath_Original: js.Function1[/* options */ typescriptLib.typescriptMod.CompilerOptions, java.lang.String] = js.native
   @JSName("getPreEmitDiagnostics")
-  var getPreEmitDiagnostics_Original: tsDashNodeLib.Anon_CancellationToken = js.native
+  var getPreEmitDiagnostics_Original: tsDashNodeLib.Fn_CancellationToken = js.native
   @JSName("parseJsonConfigFileContent")
-  var parseJsonConfigFileContent_Original: tsDashNodeLib.Anon_BasePath = js.native
+  var parseJsonConfigFileContent_Original: tsDashNodeLib.Fn_BasePath = js.native
   @JSName("readConfigFile")
   var readConfigFile_Original: js.Function2[
     /* fileName */ java.lang.String, 

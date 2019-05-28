@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "core-js"
-version := "2.5-dt-20180921Z-20c7e4"
+version := "2.5-dt-20180921Z-6eeff1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

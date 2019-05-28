@@ -134,13 +134,13 @@ trait IGridOptions[TEntity] extends js.Object {
     * can be a function, allowing page numbers and the like
     * @todo replace any with pdfmake format
     */
-  var exporterPdfFooter: js.UndefOr[java.lang.String | js.Any | uiDashGridLib.Anon_CurrentPage] = js.undefined
+  var exporterPdfFooter: js.UndefOr[java.lang.String | js.Any | uiDashGridLib.Fn_CurrentPage] = js.undefined
   /**
     * The header section for pdf exports. Can be simple text, a more complex object in pdfMake format, or it
     * can be a function, allowing page numbers and the like
     * @todo replace any with pdfmake format
     */
-  var exporterPdfHeader: js.UndefOr[java.lang.String | js.Any | uiDashGridLib.Anon_CurrentPage] = js.undefined
+  var exporterPdfHeader: js.UndefOr[java.lang.String | js.Any | uiDashGridLib.Fn_CurrentPage] = js.undefined
   /**
     * The maxium grid width - the current grid width will be scaled to match this,
     * with any fixed width columns being adjusted accordingly.
@@ -218,8 +218,8 @@ object IGridOptions {
     exporterPdfCustomFormatter: /* docDefinition */ js.Any => _ = null,
     exporterPdfDefaultStyle: js.Any = null,
     exporterPdfFilename: java.lang.String = null,
-    exporterPdfFooter: java.lang.String | js.Any | uiDashGridLib.Anon_CurrentPage = null,
-    exporterPdfHeader: java.lang.String | js.Any | uiDashGridLib.Anon_CurrentPage = null,
+    exporterPdfFooter: java.lang.String | js.Any | uiDashGridLib.Fn_CurrentPage = null,
+    exporterPdfHeader: java.lang.String | js.Any | uiDashGridLib.Fn_CurrentPage = null,
     exporterPdfMaxGridWidth: scala.Int | scala.Double = null,
     exporterPdfOrientation: java.lang.String = null,
     exporterPdfPageSize: java.lang.String = null,

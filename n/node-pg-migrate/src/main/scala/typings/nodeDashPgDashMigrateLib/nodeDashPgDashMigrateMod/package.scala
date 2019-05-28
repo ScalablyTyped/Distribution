@@ -14,6 +14,7 @@ package object nodeDashPgDashMigrateMod {
   type DropIndexOptions = DropIndexOptionsEn with DropOptions
   type DropOptions = IfExistsOption with CascadeOption
   type FunctionParam = java.lang.String | FunctionParamType
+  type LiteralUnion[T /* <: U */, U] = T | (U with nodeDashPgDashMigrateLib.Anon_ZzIGNOREME)
   type Name = java.lang.String | nodeDashPgDashMigrateLib.Anon_Name
   type RunnerOption = RunnerOptionConfig with (RunnerOptionClient | RunnerOptionUrl)
   type SequenceOptionsAlter = SequenceOptionsAlterEn with SequenceOptions

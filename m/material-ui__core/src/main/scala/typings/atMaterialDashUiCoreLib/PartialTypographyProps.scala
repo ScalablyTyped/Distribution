@@ -109,11 +109,7 @@ trait PartialTypographyProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapTypographyClassKey] = js.undefined
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
@@ -129,13 +125,7 @@ trait PartialTypographyProps extends js.Object {
   var dir: js.UndefOr[java.lang.String] = js.undefined
   var draggable: js.UndefOr[scala.Boolean] = js.undefined
   var gutterBottom: js.UndefOr[scala.Boolean] = js.undefined
-  var headlineMapping: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
-    */ js.UndefOr[
-    /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
-    */ atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.PartialTypographyProps with js.Any
-  ] = js.undefined
+  var headlineMapping: js.UndefOr[typeinStylestring] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
@@ -395,9 +385,7 @@ object PartialTypographyProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey]
-    ] = null,
+    classes: PartialClassNameMapTypographyClassKey = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -409,9 +397,7 @@ object PartialTypographyProps {
     dir: java.lang.String = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     gutterBottom: js.UndefOr[scala.Boolean] = js.undefined,
-    headlineMapping: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
-    */ atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.PartialTypographyProps with js.Any = null,
+    headlineMapping: typeinStylestring = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,

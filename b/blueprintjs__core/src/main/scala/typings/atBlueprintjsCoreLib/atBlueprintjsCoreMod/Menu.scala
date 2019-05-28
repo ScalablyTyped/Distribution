@@ -14,8 +14,8 @@ class Menu ()
 @JSImport("@blueprintjs/core", "Menu")
 @js.native
 object Menu extends js.Object {
-  var Divider: atBlueprintjsCoreLib.Anon_DisplayName = js.native
-  var Item: atBlueprintjsCoreLib.Anon_DefaultProps = js.native
+  var Divider: atBlueprintjsCoreLib.TypeofClassMenuDivider = js.native
+  var Item: atBlueprintjsCoreLib.TypeofClassMenuItem = js.native
   var displayName: java.lang.String = js.native
 }
 

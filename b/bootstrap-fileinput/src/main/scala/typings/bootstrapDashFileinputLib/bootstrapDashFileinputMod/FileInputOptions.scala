@@ -112,7 +112,7 @@ trait FileInputOptions extends js.Object {
     key: the key setting as setup in initialPreviewConfig['key']
     any other extra data passed as key: value pairs either via initialPreviewConfig['extra'] OR deleteExtraData if former is not set.
     */
-  var deleteExtraData: js.UndefOr[js.Object | bootstrapDashFileinputLib.Anon__1214679000] = js.undefined
+  var deleteExtraData: js.UndefOr[js.Object | bootstrapDashFileinputLib.Fn__1988189405] = js.undefined
   /**
     the URL for deleting the image/content in the initial preview via AJAX post response. This will be overridden by the initialPreviewConfig['url'] property.
     Note
@@ -744,7 +744,7 @@ object FileInputOptions {
     customLayoutTags: js.Object = null,
     customPreviewTags: js.Object = null,
     defaultPreviewContent: java.lang.String = null,
-    deleteExtraData: js.Object | bootstrapDashFileinputLib.Anon__1214679000 = null,
+    deleteExtraData: js.Object | bootstrapDashFileinputLib.Fn__1988189405 = null,
     deleteUrl: java.lang.String = null,
     dropZoneEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     dropZoneTitle: java.lang.String = null,

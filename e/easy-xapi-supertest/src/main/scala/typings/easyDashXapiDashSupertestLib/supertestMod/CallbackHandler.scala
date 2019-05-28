@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - easyDashXapiDashSupertestLib.Anon_ErrRes
-  - easyDashXapiDashSupertestLib.Anon_ResResponse
+  - easyDashXapiDashSupertestLib.Fn_ErrRes
+  - easyDashXapiDashSupertestLib.Fn_ResResponse
 */
 trait CallbackHandler extends js.Object
 

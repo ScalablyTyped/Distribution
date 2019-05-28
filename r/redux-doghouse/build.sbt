@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-doghouse"
-version := "1.0-dt-20180214Z-e396f4"
+version := "1.0-dt-20180214Z-f5fa0b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

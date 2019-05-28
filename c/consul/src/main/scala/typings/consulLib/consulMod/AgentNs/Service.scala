@@ -12,22 +12,22 @@ trait Service extends js.Object {
     * Deregister a local service
     */
   @JSName("deregister")
-  var deregister_Original: consulLib.Anon_CallbackIdOptsDeregisterOptionsString = js.native
+  var deregister_Original: consulLib.Fn_CallbackIdOptsDeregisterOptionsString = js.native
   /**
     * Returns the services local agent is managing
     */
   @JSName("list")
-  var list_Original: consulLib.Anon_CallbackOptsListOptionsTDataThenable = js.native
+  var list_Original: consulLib.Fn_CallbackOptsListOptionsTDataThenable = js.native
   /**
     * Manages node maintenance mode
     */
   @JSName("maintenance")
-  var maintenance_Original: consulLib.Anon_CallbackOptsMaintenanceOptions = js.native
+  var maintenance_Original: consulLib.Fn_CallbackOptsMaintenanceOptions = js.native
   /**
     * Registers a new local service
     */
   @JSName("register")
-  var register_Original: consulLib.Anon_CallbackName = js.native
+  var register_Original: consulLib.Fn_CallbackName = js.native
   /**
     * Deregister a local service
     */

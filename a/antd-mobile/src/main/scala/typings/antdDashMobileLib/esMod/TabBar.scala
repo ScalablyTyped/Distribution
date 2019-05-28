@@ -14,7 +14,7 @@ class TabBar ()
 @JSImport("antd-mobile/es", "TabBar")
 @js.native
 object TabBar extends js.Object {
-  var Item: antdDashMobileLib.Anon_DefaultPropsItem = js.native
+  var Item: antdDashMobileLib.TypeofClassItemDefaultPropsItem = js.native
   var defaultProps: antdDashMobileLib.esTabDashBarMod.AntTabbarProps = js.native
 }
 

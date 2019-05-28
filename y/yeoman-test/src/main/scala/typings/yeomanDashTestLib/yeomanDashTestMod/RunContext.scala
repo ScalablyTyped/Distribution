@@ -15,7 +15,7 @@ trait RunContext
   	 * Promise `.catch()` duck typing
   	 */
   @JSName("catch")
-  var catch_Original: yeomanDashTestLib.Anon_Onrejected = js.native
+  var catch_Original: yeomanDashTestLib.Fn_Onrejected = js.native
   var dependencies: js.Array[Dependency] = js.native
   var inDirSet: scala.Boolean = js.native
   var ran: scala.Boolean = js.native
@@ -23,7 +23,7 @@ trait RunContext
   	 * Promise `.then()` duck typing
   	 */
   @JSName("then")
-  var then_Original: yeomanDashTestLib.Anon_Onfulfilled = js.native
+  var then_Original: yeomanDashTestLib.Fn_Onfulfilled = js.native
   /* InferMemberOverrides */
   override def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   /* InferMemberOverrides */

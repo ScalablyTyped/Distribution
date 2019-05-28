@@ -31,8 +31,8 @@ trait Stream[S, T]
     `type`: adoneLib.adoneNs.fastNs.INs.pluginNs.compressorNs.Compressor,
     options: adoneLib.Anon_KeyRename
   ): this.type = js.native
-  def concat(file: adoneLib.Anon_PathString): this.type = js.native
-  def concat(file: adoneLib.Anon_PathString, options: adoneLib.Anon_NewLine): this.type = js.native
+  def concat(file: adoneLib.Anon_Path): this.type = js.native
+  def concat(file: adoneLib.Anon_Path, options: adoneLib.Anon_NewLine): this.type = js.native
   /**
     * concats all files into one
     */
@@ -68,8 +68,8 @@ trait Stream[S, T]
     * sets new filename
     */
   def rename(filename: java.lang.String): this.type = js.native
-  def rename(handle: adoneLib.Anon_BasenameDirname): this.type = js.native
-  def rename(handler: js.Function1[/* handle */ adoneLib.Anon_BasenameDirnameExtname, scala.Unit]): this.type = js.native
+  def rename(handle: adoneLib.Anon_Basename): this.type = js.native
+  def rename(handler: js.Function1[/* handle */ adoneLib.Anon_BasenameDirname, scala.Unit]): this.type = js.native
   /**
     * Replaces contents
     */

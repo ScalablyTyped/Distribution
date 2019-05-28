@@ -13,7 +13,7 @@ trait GetClusterResult extends js.Object {
   /**
     * Nested attribute containing `certificate-authority-data` for your cluster.
     */
-  val certificateAuthority: atPulumiAwsLib.Anon_DataString
+  val certificateAuthority: atPulumiAwsLib.Anon_Data
   /**
     * The Unix epoch time stamp in seconds for when the cluster was created.
     */
@@ -53,7 +53,7 @@ object GetClusterResult {
   @scala.inline
   def apply(
     arn: java.lang.String,
-    certificateAuthority: atPulumiAwsLib.Anon_DataString,
+    certificateAuthority: atPulumiAwsLib.Anon_Data,
     createdAt: java.lang.String,
     enabledClusterLogTypes: js.Array[java.lang.String],
     endpoint: java.lang.String,

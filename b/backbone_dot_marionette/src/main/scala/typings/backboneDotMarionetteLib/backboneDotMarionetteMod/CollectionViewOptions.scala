@@ -12,7 +12,7 @@ trait CollectionViewOptions[TModel /* <: backboneLib.backboneMod.Model */, TColl
     * Specify a child view to use.
     */
   var childView: js.UndefOr[
-    (js.Function1[/* model */ TModel, backboneDotMarionetteLib.Anon_ClassProperties]) | backboneDotMarionetteLib.Anon_ClassProperties
+    (js.Function1[/* model */ TModel, backboneDotMarionetteLib.TypeofClassView]) | backboneDotMarionetteLib.TypeofClassView
   ] = js.undefined
   /**
     * Define options to pass to the childView constructor.
@@ -22,7 +22,7 @@ trait CollectionViewOptions[TModel /* <: backboneLib.backboneMod.Model */, TColl
     * Specify a view to use if the collection has no children.
     */
   var emptyView: js.UndefOr[
-    js.Function0[backboneDotMarionetteLib.Anon_ClassProperties] | backboneDotMarionetteLib.Anon_ClassProperties
+    js.Function0[backboneDotMarionetteLib.TypeofClassView] | backboneDotMarionetteLib.TypeofClassView
   ] = js.undefined
   /**
     * Define options to pass to the emptyView constructor.
@@ -70,7 +70,7 @@ object CollectionViewOptions {
   def apply[TModel /* <: backboneLib.backboneMod.Model */, TCollection /* <: backboneLib.backboneMod.Collection[TModel] */](
     attributes: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     behaviors: js.Array[Behavior] = null,
-    childView: (js.Function1[/* model */ TModel, backboneDotMarionetteLib.Anon_ClassProperties]) | backboneDotMarionetteLib.Anon_ClassProperties = null,
+    childView: (js.Function1[/* model */ TModel, backboneDotMarionetteLib.TypeofClassView]) | backboneDotMarionetteLib.TypeofClassView = null,
     childViewEventPrefix: java.lang.String | backboneDotMarionetteLib.backboneDotMarionetteLibNumbers.`false` = null,
     childViewEvents: EventsHash = null,
     childViewOptions: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel] = null,
@@ -79,7 +79,7 @@ object CollectionViewOptions {
     collection: backboneLib.backboneMod.Collection[_] = null,
     collectionEvents: EventsHash = null,
     el: js.Any = null,
-    emptyView: js.Function0[backboneDotMarionetteLib.Anon_ClassProperties] | backboneDotMarionetteLib.Anon_ClassProperties = null,
+    emptyView: js.Function0[backboneDotMarionetteLib.TypeofClassView] | backboneDotMarionetteLib.TypeofClassView = null,
     emptyViewOptions: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel] = null,
     events: EventsHash = null,
     filter: (/* child */ js.UndefOr[TModel], /* index */ js.UndefOr[scala.Double], /* collection */ js.UndefOr[TCollection]) => scala.Boolean = null,

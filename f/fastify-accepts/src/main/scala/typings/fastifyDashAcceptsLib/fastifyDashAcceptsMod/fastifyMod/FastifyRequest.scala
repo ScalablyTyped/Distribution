@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FastifyRequest[HttpRequest] extends js.Object {
   @JSName("charset")
-  var charset_Original: fastifyDashAcceptsLib.Anon_Charsets = js.native
+  var charset_Original: fastifyDashAcceptsLib.Fn_Charsets = js.native
   @JSName("charsets")
-  var charsets_Original: fastifyDashAcceptsLib.Anon_Charsets = js.native
+  var charsets_Original: fastifyDashAcceptsLib.Fn_Charsets = js.native
   @JSName("encoding")
-  var encoding_Original: fastifyDashAcceptsLib.Anon_Encodings = js.native
+  var encoding_Original: fastifyDashAcceptsLib.Fn_Encodings = js.native
   @JSName("encodings")
-  var encodings_Original: fastifyDashAcceptsLib.Anon_Charsets = js.native
+  var encodings_Original: fastifyDashAcceptsLib.Fn_Charsets = js.native
   @JSName("language")
-  var language_Original: fastifyDashAcceptsLib.Anon_False = js.native
+  var language_Original: fastifyDashAcceptsLib.Fn_False = js.native
   @JSName("languages")
-  var languages_Original: fastifyDashAcceptsLib.Anon_False = js.native
+  var languages_Original: fastifyDashAcceptsLib.Fn_False = js.native
   @JSName("type")
-  var type_Original: fastifyDashAcceptsLib.Anon_FalseTypes = js.native
+  var type_Original: fastifyDashAcceptsLib.Fn_FalseTypes = js.native
   @JSName("types")
-  var types_Original: fastifyDashAcceptsLib.Anon_FalseTypes = js.native
+  var types_Original: fastifyDashAcceptsLib.Fn_FalseTypes = js.native
   def accepts(): acceptsLib.acceptsMod.Accepts = js.native
   def charset(): js.Array[java.lang.String] = js.native
   def charset(charsets: java.lang.String*): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native

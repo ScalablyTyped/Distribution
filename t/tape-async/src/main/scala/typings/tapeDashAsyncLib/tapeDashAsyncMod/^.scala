@@ -14,7 +14,7 @@ object ^ extends js.Object {
   /**
   	 * Create a new test harness instance, which is a function like test(), but with a new pending stack and test state.
   	 */
-  def createHarness(): tapeDashAsyncLib.Anon_Cb = js.native
+  def createHarness(): tapeDashAsyncLib.Fn_Cb = js.native
   /**
   	 * Create a stream of output, bypassing the default output stream that writes messages to console.log().
   	 * By default stream will be a text stream of TAP output, but you can get an object stream instead by setting opts.objectMode to true.

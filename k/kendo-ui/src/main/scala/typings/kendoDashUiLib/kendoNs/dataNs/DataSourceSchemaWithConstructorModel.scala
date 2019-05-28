@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DataSourceSchemaWithConstructorModel extends DataSourceSchema {
   @JSName("model")
-  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[kendoDashUiLib.Anon_Data] = js.undefined
+  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[kendoDashUiLib.TypeofClassModel] = js.undefined
 }
 
 object DataSourceSchemaWithConstructorModel {
@@ -17,7 +17,7 @@ object DataSourceSchemaWithConstructorModel {
     data: js.Any = null,
     errors: js.Any = null,
     groups: js.Any = null,
-    model: kendoDashUiLib.Anon_Data = null,
+    model: kendoDashUiLib.TypeofClassModel = null,
     parse: js.Function = null,
     total: js.Any = null,
     `type`: java.lang.String = null

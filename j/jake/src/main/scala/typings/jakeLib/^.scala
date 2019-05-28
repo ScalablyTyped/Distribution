@@ -63,17 +63,17 @@ object ^ extends js.Object {
     * @param definition A function that creates the package definition
     */
   def npmPublishTask(name: java.lang.String, packageFiles: js.Array[java.lang.String]): jakeLib.jakeNs.NpmPublishTask = js.native
-  def rule(pattern: stdLib.RegExp, source: Anon_Name): scala.Unit = js.native
-  def rule(pattern: stdLib.RegExp, source: Anon_Name, prereqs: js.Array[java.lang.String]): scala.Unit = js.native
+  def rule(pattern: stdLib.RegExp, source: Fn_Name): scala.Unit = js.native
+  def rule(pattern: stdLib.RegExp, source: Fn_Name, prereqs: js.Array[java.lang.String]): scala.Unit = js.native
   def rule(
     pattern: stdLib.RegExp,
-    source: Anon_Name,
+    source: Fn_Name,
     prereqs: js.Array[java.lang.String],
     action: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   def rule(
     pattern: stdLib.RegExp,
-    source: Anon_Name,
+    source: Fn_Name,
     prereqs: js.Array[java.lang.String],
     action: js.Function0[scala.Unit],
     opts: jakeLib.jakeNs.TaskOptions

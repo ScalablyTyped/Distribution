@@ -15,9 +15,9 @@ trait Autocomplete
   var blur: js.Function0[scala.Unit] = js.native
   var checkValidity: js.Function0[scala.Boolean] = js.native
   var click: js.Function0[scala.Unit] = js.native
-  var focus: reactDashAutocompleteLib.Anon_Options = js.native
+  var focus: reactDashAutocompleteLib.Fn_Options = js.native
   var select: js.Function0[scala.Unit] = js.native
   var setCustomValidity: js.Function1[/* error */ java.lang.String, scala.Unit] = js.native
-  var setSelectionRange: reactDashAutocompleteLib.Anon_Backward = js.native
+  var setSelectionRange: reactDashAutocompleteLib.Fn_Backward = js.native
 }
 

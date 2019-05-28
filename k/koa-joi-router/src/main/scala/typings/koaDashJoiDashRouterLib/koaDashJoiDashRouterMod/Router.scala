@@ -34,7 +34,7 @@ trait Router extends js.Object {
   var put_Original: Method = js.native
   var routes: js.Array[Spec] = js.native
   @JSName("use")
-  var use_Original: koaDashJoiDashRouterLib.Anon_Middleware = js.native
+  var use_Original: koaDashJoiDashRouterLib.Fn_Middleware = js.native
   def delete(path: java.lang.String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
   def delete(path: java.lang.String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
   def delete(path: stdLib.RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native

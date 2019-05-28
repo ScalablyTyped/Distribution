@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Promise[T] extends js.Object {
   @JSName("asCallback")
-  var asCallback_Original: bluebirdDashGlobalLib.Anon_Callback[T] = js.native
+  var asCallback_Original: bluebirdDashGlobalLib.Fn_Callback[T] = js.native
   @JSName("bind")
   var bind_Original: js.Function1[/* thisArg */ js.Any, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   @JSName("call")
@@ -28,12 +28,12 @@ trait Promise[T] extends js.Object {
   @JSName("cancel")
   var cancel_Original: js.Function0[scala.Unit] = js.native
   @JSName("catchReturn")
-  var catchReturn_Original: bluebirdDashGlobalLib.Anon_Filter1[T] = js.native
+  var catchReturn_Original: bluebirdDashGlobalLib.Fn_Filter1[T] = js.native
   @JSName("catchThrow")
-  var catchThrow_Original: bluebirdDashGlobalLib.Anon_Filter1Filter2[T] = js.native
+  var catchThrow_Original: bluebirdDashGlobalLib.Fn_Filter1Filter2[T] = js.native
   // catch: Bluebird<T>["catch"]; // Provided by lib.es5.d.ts
   @JSName("caught")
-  var caught_Original: bluebirdLib.Anon_Error[T] with bluebirdDashGlobalLib.Anon_Error[T] = js.native
+  var caught_Original: bluebirdLib.Fn_Error[T] with bluebirdDashGlobalLib.Fn_Error[T] = js.native
   @JSName("delay")
   var delay_Original: js.Function1[/* ms */ scala.Double, bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
   @JSName("disposer")
@@ -46,7 +46,7 @@ trait Promise[T] extends js.Object {
     bluebirdLib.bluebirdMod.Disposer[T]
   ] = js.native
   @JSName("done")
-  var done_Original: bluebirdDashGlobalLib.Anon_ErrorOnFulfilled[T] = js.native
+  var done_Original: bluebirdDashGlobalLib.Fn_ErrorOnFulfilled[T] = js.native
   @JSName("error")
   var error_Original: js.Function1[
     /* onReject */ js.Function1[/* reason */ js.Any, bluebirdLib.bluebirdMod.Resolvable[_]], 
@@ -74,19 +74,19 @@ trait Promise[T] extends js.Object {
     bluebirdLib.bluebirdMod.Bluebird[T]
   ] = js.native
   @JSName("nodeify")
-  var nodeify_Original: bluebirdDashGlobalLib.Anon_Callback[T] = js.native
+  var nodeify_Original: bluebirdDashGlobalLib.Fn_Callback[T] = js.native
   @JSName("props")
-  var props_Original: bluebirdDashGlobalLib.Anon_This = js.native
+  var props_Original: bluebirdDashGlobalLib.Fn_This = js.native
   @JSName("reason")
   var reason_Original: js.Function0[_] = js.native
   @JSName("reflect")
-  var reflect_Original: bluebirdDashGlobalLib.Anon_Any[T] = js.native
+  var reflect_Original: bluebirdDashGlobalLib.Fn_Any[T] = js.native
   @JSName("return")
-  var return_Original: bluebirdDashGlobalLib.Anon_Value = js.native
+  var return_Original: bluebirdDashGlobalLib.Fn_Value = js.native
   @JSName("suppressUnhandledRejections")
   var suppressUnhandledRejections_Original: js.Function0[scala.Unit] = js.native
   @JSName("tapCatch")
-  var tapCatch_Original: bluebirdDashGlobalLib.Anon_ErrorFilter1[T] = js.native
+  var tapCatch_Original: bluebirdDashGlobalLib.Fn_ErrorFilter1[T] = js.native
   @JSName("tap")
   var tap_Original: js.Function1[
     /* onFulFill */ js.Function1[/* value */ T, bluebirdLib.bluebirdMod.Resolvable[_]], 
@@ -94,13 +94,13 @@ trait Promise[T] extends js.Object {
   ] = js.native
   // then: Bluebird<T>["then"]; // Provided by lib.es5.d.ts
   @JSName("thenReturn")
-  var thenReturn_Original: bluebirdDashGlobalLib.Anon_Value = js.native
+  var thenReturn_Original: bluebirdDashGlobalLib.Fn_Value = js.native
   @JSName("thenThrow")
   var thenThrow_Original: js.Function1[/* reason */ stdLib.Error, bluebirdLib.bluebirdMod.Bluebird[scala.Nothing]] = js.native
   @JSName("throw")
   var throw_Original: js.Function1[/* reason */ stdLib.Error, bluebirdLib.bluebirdMod.Bluebird[scala.Nothing]] = js.native
   @JSName("timeout")
-  var timeout_Original: bluebirdDashGlobalLib.Anon_Message[T] = js.native
+  var timeout_Original: bluebirdDashGlobalLib.Fn_Message[T] = js.native
   @JSName("toJSON")
   var toJSON_Original: js.Function0[js.Object] = js.native
   @JSName("toString")

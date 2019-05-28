@@ -13,6 +13,11 @@ trait IAccount
     */
   var charges_enabled: scala.Boolean
   /**
+    * Information about the company or business.
+    * This field is null unless business_type is set to company.
+    */
+  var company: js.UndefOr[ICompany] = js.undefined
+  /**
     * The country of the account
     */
   var country: java.lang.String
@@ -26,6 +31,11 @@ trait IAccount
     * help you differentiate between accounts.
     */
   var display_name: java.lang.String
+  /**
+    * Information about the person represented by the account.
+    * This field is null unless business_type is set to individual.
+    */
+  var individual: js.UndefOr[IIndividual] = js.undefined
   /**
     * Whether or not Stripe will send automatic transfers for this account. This
     * is only false when Stripe is waiting for additional information from the
@@ -50,48 +60,28 @@ object IAccount {
     `object`: java.lang.String,
     payouts_enabled: scala.Boolean,
     verification: stripeLib.Anon_Disabledreason,
-    business_logo: java.lang.String = null,
-    business_name: java.lang.String = null,
-    business_primary_color: java.lang.String = null,
     business_profile: stripeLib.Anon_Mcc = null,
-    business_url: java.lang.String = null,
-    debit_negative_balances: js.UndefOr[scala.Boolean] = js.undefined,
-    decline_charge_on: stripeLib.Anon_Avsfailure = null,
+    business_type: stripeLib.stripeLibStrings.individual | stripeLib.stripeLibStrings.company = null,
+    company: ICompany = null,
     default_currency: java.lang.String = null,
     email: java.lang.String = null,
-    legal_entity: js.Object = null,
+    individual: IIndividual = null,
     metadata: stripeLib.stripeMod.IMetadata = null,
-    payout_schedule: stripeLib.Anon_Daily = null,
-    payout_statement_descriptor: java.lang.String = null,
     product_description: java.lang.String = null,
     settings: stripeLib.Anon_Branding = null,
-    statement_descriptor: java.lang.String = null,
-    support_email: java.lang.String = null,
-    support_phone: java.lang.String = null,
-    support_url: java.lang.String = null,
     tos_acceptance: stripeLib.Anon_Date = null
   ): IAccount = {
     val __obj = js.Dynamic.literal(charges_enabled = charges_enabled, country = country, details_submitted = details_submitted, display_name = display_name, id = id, payouts_enabled = payouts_enabled, verification = verification)
     __obj.updateDynamic("object")(`object`)
-    if (business_logo != null) __obj.updateDynamic("business_logo")(business_logo)
-    if (business_name != null) __obj.updateDynamic("business_name")(business_name)
-    if (business_primary_color != null) __obj.updateDynamic("business_primary_color")(business_primary_color)
     if (business_profile != null) __obj.updateDynamic("business_profile")(business_profile)
-    if (business_url != null) __obj.updateDynamic("business_url")(business_url)
-    if (!js.isUndefined(debit_negative_balances)) __obj.updateDynamic("debit_negative_balances")(debit_negative_balances)
-    if (decline_charge_on != null) __obj.updateDynamic("decline_charge_on")(decline_charge_on)
+    if (business_type != null) __obj.updateDynamic("business_type")(business_type.asInstanceOf[js.Any])
+    if (company != null) __obj.updateDynamic("company")(company)
     if (default_currency != null) __obj.updateDynamic("default_currency")(default_currency)
     if (email != null) __obj.updateDynamic("email")(email)
-    if (legal_entity != null) __obj.updateDynamic("legal_entity")(legal_entity)
+    if (individual != null) __obj.updateDynamic("individual")(individual)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
-    if (payout_schedule != null) __obj.updateDynamic("payout_schedule")(payout_schedule)
-    if (payout_statement_descriptor != null) __obj.updateDynamic("payout_statement_descriptor")(payout_statement_descriptor)
     if (product_description != null) __obj.updateDynamic("product_description")(product_description)
     if (settings != null) __obj.updateDynamic("settings")(settings)
-    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
-    if (support_email != null) __obj.updateDynamic("support_email")(support_email)
-    if (support_phone != null) __obj.updateDynamic("support_phone")(support_phone)
-    if (support_url != null) __obj.updateDynamic("support_url")(support_url)
     if (tos_acceptance != null) __obj.updateDynamic("tos_acceptance")(tos_acceptance)
     __obj.asInstanceOf[IAccount]
   }

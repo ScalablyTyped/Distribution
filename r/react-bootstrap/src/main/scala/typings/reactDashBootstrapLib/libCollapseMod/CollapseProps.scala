@@ -9,7 +9,7 @@ trait CollapseProps
   extends reactLib.reactMod.ClassAttributes[Collapse]
      with reactDashBootstrapLib.reactDashBootstrapMod.TransitionCallbacks {
   var dimension: js.UndefOr[
-    reactDashBootstrapLib.reactDashBootstrapLibStrings.height | reactDashBootstrapLib.reactDashBootstrapLibStrings.width | reactDashBootstrapLib.Anon_String
+    reactDashBootstrapLib.reactDashBootstrapLibStrings.height | reactDashBootstrapLib.reactDashBootstrapLibStrings.width | reactDashBootstrapLib.Fn_String
   ] = js.undefined
   var getDimensionValue: js.UndefOr[
     js.Function2[
@@ -27,7 +27,7 @@ trait CollapseProps
 object CollapseProps {
   @scala.inline
   def apply(
-    dimension: reactDashBootstrapLib.reactDashBootstrapLibStrings.height | reactDashBootstrapLib.reactDashBootstrapLibStrings.width | reactDashBootstrapLib.Anon_String = null,
+    dimension: reactDashBootstrapLib.reactDashBootstrapLibStrings.height | reactDashBootstrapLib.reactDashBootstrapLibStrings.width | reactDashBootstrapLib.Fn_String = null,
     getDimensionValue: (/* dimension */ scala.Double, /* element */ reactLib.reactMod.ReactElement[_]) => scala.Double = null,
     in: js.UndefOr[scala.Boolean] = js.undefined,
     key: reactLib.reactMod.Key = null,

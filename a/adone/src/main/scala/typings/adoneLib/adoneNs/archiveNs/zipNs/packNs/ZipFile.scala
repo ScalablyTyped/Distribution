@@ -25,7 +25,7 @@ class ZipFile () extends js.Object {
     * even if no other items in the zip file are contained in the directory
     */
   def addEmptyDirectory(metadataPath: java.lang.String): this.type = js.native
-  def addEmptyDirectory(metadataPath: java.lang.String, options: adoneLib.Anon_ModeMtime): this.type = js.native
+  def addEmptyDirectory(metadataPath: java.lang.String, options: adoneLib.Anon_Mode): this.type = js.native
   /**
     * Adds a file from the file system at realPath into the zipfile as metadataPath
     *

@@ -29,6 +29,6 @@ class Transition protected ()
 @js.native
 object Transition extends js.Object {
   /** @hidden */
-  var diToken: atUirouterCoreLib.Anon_DiToken = js.native
+  var diToken: atUirouterCoreLib.TypeofClassTransition = js.native
 }
 

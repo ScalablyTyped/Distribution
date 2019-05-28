@@ -1,26 +1,26 @@
 organization := "org.scalablytyped"
 name := "koa-pino-logger"
-version := "2.1-dt-20190212Z-2b292e"
+version := "2.1-dt-20190212Z-391e63"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-0af1bc",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-9371e4",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-d00fa7",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-fc55f3",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-eb949a",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-ba44ed",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-f538ef",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-732eb4",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-1699d9",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20190420Z-d28391",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-448e20",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-e586f1",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-b7c6ed",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-83298c",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-965a60",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190522Z-9c4bc7",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-169399",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190506Z-ceebfe",
-  "org.scalablytyped" %%% "pino-http" % "4.0-dt-20190301Z-c68669",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190506Z-da57c5",
+  "org.scalablytyped" %%% "pino-http" % "4.0-dt-20190301Z-3abff4",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-c144dc",
-  "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-80ab1c",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-1e3fd2",
+  "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-9514e3",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

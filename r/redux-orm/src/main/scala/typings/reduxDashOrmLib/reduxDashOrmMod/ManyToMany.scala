@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-orm", "ManyToMany")
 @js.native
 class ManyToMany () extends RelationalField {
-  def install(model: reduxDashOrmLib.Anon_Action, fieldName: java.lang.String, orm: ORM[ORMCommonState]): scala.Unit = js.native
+  def install(model: reduxDashOrmLib.TypeofClassModel, fieldName: java.lang.String, orm: ORM[ORMCommonState]): scala.Unit = js.native
 }
 

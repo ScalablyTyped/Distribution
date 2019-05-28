@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wiiu"
-version := "0.0-unknown-dt-20190322Z-c57a3c"
+version := "0.0-unknown-dt-20190322Z-37e481"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

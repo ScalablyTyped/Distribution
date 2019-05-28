@@ -116,11 +116,11 @@ class HttpAdapter ()
 @js.native
 object HttpAdapter extends js.Object {
   var version: jsDashDataDashHttpLib.Anon_Alpha = js.native
-  def extend(): jsDashDataDashHttpLib.Anon_ClassProps = js.native
-  def extend(instanceProps: jsDashDataDashHttpLib.jsDashDataDashHttpMod.IDict): jsDashDataDashHttpLib.Anon_ClassProps = js.native
+  def extend(): jsDashDataDashHttpLib.TypeofClassHttpAdapter = js.native
+  def extend(instanceProps: jsDashDataDashHttpLib.jsDashDataDashHttpMod.IDict): jsDashDataDashHttpLib.TypeofClassHttpAdapter = js.native
   def extend(
     instanceProps: jsDashDataDashHttpLib.jsDashDataDashHttpMod.IDict,
     classProps: jsDashDataDashHttpLib.jsDashDataDashHttpMod.IDict
-  ): jsDashDataDashHttpLib.Anon_ClassProps = js.native
+  ): jsDashDataDashHttpLib.TypeofClassHttpAdapter = js.native
 }
 

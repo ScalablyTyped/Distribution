@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "easy-x-headers"
-version := "1.0.1-122717"
+version := "1.0.1-b722b3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

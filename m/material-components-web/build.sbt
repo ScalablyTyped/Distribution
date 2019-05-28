@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-components-web"
-version := "0.43-dt-20190212Z-1d877d"
+version := "0.43-dt-20190212Z-d9af56"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "material__checkbox" % "0.35-dt-20190313Z-a4e51b",
   "org.scalablytyped" %%% "material__chips" % "0.35-dt-20190213Z-7c210b",
   "org.scalablytyped" %%% "material__dialog" % "0.35-dt-20190313Z-3a154a",
-  "org.scalablytyped" %%% "material__drawer" % "0.43-dt-20190213Z-78b9fe",
+  "org.scalablytyped" %%% "material__drawer" % "0.43-dt-20190213Z-61099d",
   "org.scalablytyped" %%% "material__floating-label" % "0.35-dt-20190213Z-9fcdaf",
   "org.scalablytyped" %%% "material__form-field" % "0.35-dt-20190313Z-07c6b5",
   "org.scalablytyped" %%% "material__grid-list" % "0.35-dt-20190213Z-22c77d",

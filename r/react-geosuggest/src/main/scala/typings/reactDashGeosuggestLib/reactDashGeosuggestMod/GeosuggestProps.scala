@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
       java.lang.String
     ]
   ] = js.undefined
-  var googleMaps: js.UndefOr[reactDashGeosuggestLib.Anon_Adsense] = js.undefined
+  var googleMaps: js.UndefOr[reactDashGeosuggestLib.Typeofmaps] = js.undefined
   var highlightMatch: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreTab: js.UndefOr[scala.Boolean] = js.undefined
   var initialValue: js.UndefOr[java.lang.String] = js.undefined
@@ -72,7 +72,7 @@ object GeosuggestProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fixtures: js.Array[Fixture] = null,
     getSuggestLabel: /* googleSuggest */ googlemapsLib.googleNs.mapsNs.placesNs.AutocompletePrediction => java.lang.String = null,
-    googleMaps: reactDashGeosuggestLib.Anon_Adsense = null,
+    googleMaps: reactDashGeosuggestLib.Typeofmaps = null,
     highlightMatch: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreTab: js.UndefOr[scala.Boolean] = js.undefined,
     initialValue: java.lang.String = null,

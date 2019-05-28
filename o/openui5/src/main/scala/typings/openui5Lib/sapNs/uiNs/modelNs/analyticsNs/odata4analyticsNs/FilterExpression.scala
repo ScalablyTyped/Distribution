@@ -26,7 +26,12 @@ class FilterExpression protected () extends js.Object {
     * @param oValue2 (optional) as second value to be used for this condition
     * @returns This object for method chaining
     */
-  def addCondition(sPropertyName: java.lang.String, sOperator: openui5Lib.Anon_BT, oValue: js.Any, oValue2: js.Any): FilterExpression = js.native
+  def addCondition(
+    sPropertyName: java.lang.String,
+    sOperator: openui5Lib.TypeofFilterOperator,
+    oValue: js.Any,
+    oValue2: js.Any
+  ): FilterExpression = js.native
   /**
     * Add a set condition to the filter expression.A set condition tests if the value of a property is
     * included in a set of given values. It is a convenience method forthis particular use case

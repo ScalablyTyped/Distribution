@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vortex-web-client"
-version := "1.2-dt-20190322Z-3d24fb"
+version := "1.2-dt-20190322Z-922900"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

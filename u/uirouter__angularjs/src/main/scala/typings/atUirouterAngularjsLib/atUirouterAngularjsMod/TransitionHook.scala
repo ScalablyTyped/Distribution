@@ -42,19 +42,19 @@ object TransitionHook extends js.Object {
     * These GetResultHandler(s) are used by [[invokeHook]] below
     * Each HookType chooses a GetResultHandler (See: [[TransitionService._defineCoreEvents]])
     */
-  /* Expanded */ def HANDLE_RESULT(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ResultHandler = js.native
+  def HANDLE_RESULT(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ResultHandler = js.native
   /**
     * These GetErrorHandler(s) are used by [[invokeHook]] below
     * Each HookType chooses a GetErrorHandler (See: [[TransitionService._defineCoreEvents]])
     */
-  /* Expanded */ def LOG_ERROR(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ErrorHandler = js.native
+  def LOG_ERROR(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ErrorHandler = js.native
   /**
     * If the result is a promise rejection, log it.
     * Otherwise, ignore the result.
     */
-  /* Expanded */ def LOG_REJECTED_RESULT(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ResultHandler = js.native
-  /* Expanded */ def REJECT_ERROR(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ErrorHandler = js.native
-  /* Expanded */ def THROW_ERROR(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ErrorHandler = js.native
+  def LOG_REJECTED_RESULT(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ResultHandler = js.native
+  def REJECT_ERROR(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ErrorHandler = js.native
+  def THROW_ERROR(hook: atUirouterCoreLib.libTransitionTransitionHookMod.TransitionHook): atUirouterCoreLib.libTransitionTransitionHookMod.ErrorHandler = js.native
   /**
     * Chains together an array of TransitionHooks.
     *

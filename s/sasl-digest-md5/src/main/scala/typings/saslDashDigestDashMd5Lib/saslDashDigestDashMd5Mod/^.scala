@@ -27,6 +27,6 @@ class ^ () extends DigestMd5Mechanism {
 @JSImport("sasl-digest-md5", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Mechanism: saslDashDigestDashMd5Lib.Anon_Mechanism = js.native
+  var Mechanism: saslDashDigestDashMd5Lib.TypeofClassDigestMd5Mechanism = js.native
 }
 

@@ -109,11 +109,7 @@ trait PartialChipProps extends js.Object {
   var avatar: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.chipChipMod.ChipClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapChipClassKey] = js.undefined
   var clickable: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.chipChipMod.ChipProps]] = js.undefined
@@ -385,9 +381,7 @@ object PartialChipProps {
     avatar: reactLib.reactMod.ReactElement[_] = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.chipChipMod.ChipClassKey]
-    ] = null,
+    classes: PartialClassNameMapChipClassKey = null,
     clickable: js.UndefOr[scala.Boolean] = js.undefined,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.chipChipMod.ChipProps] = null,

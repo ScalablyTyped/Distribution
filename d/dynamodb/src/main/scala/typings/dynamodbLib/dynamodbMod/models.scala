@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object models
   extends /* key */ org.scalablytyped.runtime.StringDictionary[
-      (org.scalablytyped.runtime.Instantiable1[/* attrs */ js.Any, dynamodbLib.modelMod.Model]) with dynamodbLib.Anon_After
+      (org.scalablytyped.runtime.Instantiable1[/* attrs */ js.Any, dynamodbLib.modelMod.Model]) with dynamodbLib.TypeofModel
     ]
 

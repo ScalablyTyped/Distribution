@@ -16,7 +16,7 @@ trait Options extends js.Object {
   var handleFetch: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreUrlParametersMatching: js.UndefOr[js.Array[stdLib.RegExp]] = js.undefined
   var importScripts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var logger: js.UndefOr[swDashPrecacheLib.Anon_Message] = js.undefined
+  var logger: js.UndefOr[swDashPrecacheLib.Fn_Message] = js.undefined
   var maximumFileSizeToCacheInBytes: js.UndefOr[scala.Double] = js.undefined
   var navigateFallback: js.UndefOr[java.lang.String] = js.undefined
   var navigateFallbackWhitelist: js.UndefOr[js.Array[stdLib.RegExp]] = js.undefined
@@ -41,7 +41,7 @@ object Options {
     handleFetch: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreUrlParametersMatching: js.Array[stdLib.RegExp] = null,
     importScripts: js.Array[java.lang.String] = null,
-    logger: swDashPrecacheLib.Anon_Message = null,
+    logger: swDashPrecacheLib.Fn_Message = null,
     maximumFileSizeToCacheInBytes: scala.Int | scala.Double = null,
     navigateFallback: java.lang.String = null,
     navigateFallbackWhitelist: js.Array[stdLib.RegExp] = null,

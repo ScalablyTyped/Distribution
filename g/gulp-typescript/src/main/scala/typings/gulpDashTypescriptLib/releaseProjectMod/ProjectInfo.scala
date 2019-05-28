@@ -14,7 +14,7 @@ trait ProjectInfo extends js.Object {
   var projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
   var reporter: gulpDashTypescriptLib.releaseReporterMod.Reporter
   var singleOutput: scala.Boolean
-  var typescript: gulpDashTypescriptLib.Anon_08
+  var typescript: gulpDashTypescriptLib.Typeofts
 }
 
 object ProjectInfo {
@@ -28,7 +28,7 @@ object ProjectInfo {
     projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference],
     reporter: gulpDashTypescriptLib.releaseReporterMod.Reporter,
     singleOutput: scala.Boolean,
-    typescript: gulpDashTypescriptLib.Anon_08
+    typescript: gulpDashTypescriptLib.Typeofts
   ): ProjectInfo = {
     val __obj = js.Dynamic.literal(compiler = compiler, directory = directory, input = input, options = options, output = output, projectReferences = projectReferences, reporter = reporter, singleOutput = singleOutput, typescript = typescript)
   

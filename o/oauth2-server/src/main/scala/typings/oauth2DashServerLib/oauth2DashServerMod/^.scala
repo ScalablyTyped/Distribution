@@ -20,6 +20,6 @@ class ^ protected () extends OAuth2Server {
 @JSImport("oauth2-server", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var OAuth2Server: oauth2DashServerLib.Anon_OAuth2Server = js.native
+  var OAuth2Server: oauth2DashServerLib.TypeofClassOAuth2Server = js.native
 }
 

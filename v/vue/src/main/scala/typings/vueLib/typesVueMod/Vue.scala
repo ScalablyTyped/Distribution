@@ -16,7 +16,7 @@ trait Vue extends js.Object {
   @JSName("$data")
   val $data: stdLib.Record[java.lang.String, _] = js.native
   @JSName("$delete")
-  var $delete_Original: vueLib.Anon_ArrayKey = js.native
+  var $delete_Original: vueLib.Fn_ArrayKey = js.native
   @JSName("$el")
   val $el: stdLib.Element = js.native
   @JSName("$isServer")
@@ -43,7 +43,7 @@ trait Vue extends js.Object {
   @JSName("$scopedSlots")
   val $scopedSlots: org.scalablytyped.runtime.StringDictionary[js.UndefOr[vueLib.typesVnodeMod.NormalizedScopedSlot]] = js.native
   @JSName("$set")
-  var $set_Original: vueLib.Anon_Array = js.native
+  var $set_Original: vueLib.Fn_Array = js.native
   @JSName("$slots")
   val $slots: org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Array[vueLib.typesVnodeMod.VNode]]] = js.native
   @JSName("$ssrContext")

@@ -46,7 +46,7 @@ class PluginBase () extends js.Object {
   var rootNode: webgmeLib.CoreNs.Node = js.native
    // returns a promise?
   @JSName("sendNotification")
-  var sendNotification_Original: webgmeLib.Anon_CallbackMessageDataObject = js.native
+  var sendNotification_Original: webgmeLib.Fn_CallbackMessageDataObject = js.native
   def addCommitToResult(status: java.lang.String): scala.Unit = js.native
   def baseIsMeta(node: js.Any): scala.Boolean = js.native
   def configure(config: webgmeLib.GmeConfigNs.GmeConfig): scala.Unit = js.native

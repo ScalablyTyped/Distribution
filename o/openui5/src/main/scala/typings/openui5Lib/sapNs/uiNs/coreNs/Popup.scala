@@ -175,8 +175,8 @@ class Popup protected ()
     */
   def open(
     iDuration: scala.Double,
-    my: js.UndefOr[openui5Lib.Anon_BeginBottom],
-    at: js.UndefOr[openui5Lib.Anon_BeginBottom],
+    my: js.UndefOr[openui5Lib.TypeofDock],
+    at: js.UndefOr[openui5Lib.TypeofDock],
     of: js.UndefOr[js.Any | Element | jqueryLib.JQueryStatic | java.lang.String],
     offset: js.UndefOr[java.lang.String],
     collision: js.UndefOr[java.lang.String],
@@ -264,38 +264,38 @@ class Popup protected ()
     */
   def setModal(bModal: scala.Boolean): Popup = js.native
   def setModal(bModal: scala.Boolean, sModalCSSClass: java.lang.String): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: js.Any): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: js.Any, of: java.lang.String): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: js.Any, of: java.lang.String, offset: java.lang.String): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: js.Any): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: js.Any, of: java.lang.String): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: js.Any, of: java.lang.String, offset: java.lang.String): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
     at: js.Any,
     of: java.lang.String,
     offset: java.lang.String,
     collision: java.lang.String
   ): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: js.Any, of: jqueryLib.JQueryStatic): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: js.Any, of: jqueryLib.JQueryStatic, offset: java.lang.String): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: js.Any, of: jqueryLib.JQueryStatic): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: js.Any, of: jqueryLib.JQueryStatic, offset: java.lang.String): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
     at: js.Any,
     of: jqueryLib.JQueryStatic,
     offset: java.lang.String,
     collision: java.lang.String
   ): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: js.Any, of: js.Any): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: js.Any, of: js.Any, offset: java.lang.String): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: js.Any, of: js.Any): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: js.Any, of: js.Any, offset: java.lang.String): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
     at: js.Any,
     of: js.Any,
     offset: java.lang.String,
     collision: java.lang.String
   ): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: js.Any, of: Element): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: js.Any, of: Element, offset: java.lang.String): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: js.Any, of: Element): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: js.Any, of: Element, offset: java.lang.String): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
     at: js.Any,
     of: Element,
     offset: java.lang.String,
@@ -318,59 +318,49 @@ class Popup protected ()
     * "fit" and "none".
     * @returns <code>this</code> to allow method chaining
     */
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: openui5Lib.Anon_BeginBottom): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: openui5Lib.Anon_BeginBottom, of: java.lang.String): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: openui5Lib.TypeofDock): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: openui5Lib.TypeofDock, of: java.lang.String): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
-    at: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
+    at: openui5Lib.TypeofDock,
     of: java.lang.String,
     offset: java.lang.String
   ): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
-    at: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
+    at: openui5Lib.TypeofDock,
     of: java.lang.String,
     offset: java.lang.String,
     collision: java.lang.String
   ): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: openui5Lib.Anon_BeginBottom, of: jqueryLib.JQueryStatic): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: openui5Lib.TypeofDock, of: jqueryLib.JQueryStatic): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
-    at: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
+    at: openui5Lib.TypeofDock,
     of: jqueryLib.JQueryStatic,
     offset: java.lang.String
   ): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
-    at: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
+    at: openui5Lib.TypeofDock,
     of: jqueryLib.JQueryStatic,
     offset: java.lang.String,
     collision: java.lang.String
   ): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: openui5Lib.Anon_BeginBottom, of: js.Any): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: openui5Lib.TypeofDock, of: js.Any): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: openui5Lib.TypeofDock, of: js.Any, offset: java.lang.String): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
-    at: openui5Lib.Anon_BeginBottom,
-    of: js.Any,
-    offset: java.lang.String
-  ): Popup = js.native
-  def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
-    at: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
+    at: openui5Lib.TypeofDock,
     of: js.Any,
     offset: java.lang.String,
     collision: java.lang.String
   ): Popup = js.native
-  def setPosition(my: openui5Lib.Anon_BeginBottom, at: openui5Lib.Anon_BeginBottom, of: Element): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: openui5Lib.TypeofDock, of: Element): Popup = js.native
+  def setPosition(my: openui5Lib.TypeofDock, at: openui5Lib.TypeofDock, of: Element, offset: java.lang.String): Popup = js.native
   def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
-    at: openui5Lib.Anon_BeginBottom,
-    of: Element,
-    offset: java.lang.String
-  ): Popup = js.native
-  def setPosition(
-    my: openui5Lib.Anon_BeginBottom,
-    at: openui5Lib.Anon_BeginBottom,
+    my: openui5Lib.TypeofDock,
+    at: openui5Lib.TypeofDock,
     of: Element,
     offset: java.lang.String,
     collision: java.lang.String

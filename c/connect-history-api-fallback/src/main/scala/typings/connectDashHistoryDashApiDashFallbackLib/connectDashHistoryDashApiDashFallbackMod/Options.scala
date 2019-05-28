@@ -11,7 +11,7 @@ trait Options extends js.Object {
   ] = js.undefined
   var htmlAcceptHeaders: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var index: js.UndefOr[java.lang.String] = js.undefined
-  var logger: js.UndefOr[connectDashHistoryDashApiDashFallbackLib.Anon_Message] = js.undefined
+  var logger: js.UndefOr[connectDashHistoryDashApiDashFallbackLib.Fn_Message] = js.undefined
   var rewrites: js.UndefOr[js.Array[Rewrite]] = js.undefined
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -22,7 +22,7 @@ object Options {
     disableDotRule: connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackLibNumbers.`true` = null,
     htmlAcceptHeaders: js.Array[java.lang.String] = null,
     index: java.lang.String = null,
-    logger: connectDashHistoryDashApiDashFallbackLib.Anon_Message = null,
+    logger: connectDashHistoryDashApiDashFallbackLib.Fn_Message = null,
     rewrites: js.Array[Rewrite] = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {

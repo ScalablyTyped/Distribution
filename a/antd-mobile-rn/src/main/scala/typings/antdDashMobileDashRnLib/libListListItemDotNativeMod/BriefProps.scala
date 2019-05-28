@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BriefProps
   extends antdDashMobileDashRnLib.libListPropsTypeMod.BriefProps {
-  var styles: js.UndefOr[antdDashMobileDashRnLib.Anon_BriefBriefText] = js.undefined
+  var styles: js.UndefOr[antdDashMobileDashRnLib.Anon_Brief] = js.undefined
 }
 
 object BriefProps {
@@ -15,7 +15,7 @@ object BriefProps {
   def apply(
     children: reactLib.reactMod.ReactNode = null,
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    styles: antdDashMobileDashRnLib.Anon_BriefBriefText = null,
+    styles: antdDashMobileDashRnLib.Anon_Brief = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): BriefProps = {
     val __obj = js.Dynamic.literal()

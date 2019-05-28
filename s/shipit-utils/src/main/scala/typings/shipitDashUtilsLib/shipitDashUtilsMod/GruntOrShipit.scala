@@ -24,7 +24,7 @@ trait GruntOrShipit extends js.Object {
   val doneCallback: js.UndefOr[js.Any] = js.native
   val emit: js.UndefOr[js.Function1[/* name */ java.lang.String, _]] = js.native
   val environment: js.UndefOr[java.lang.String] = js.native
-  val initConfig: js.UndefOr[js.Function1[/* config */ js.Object, shipitDashCliLib.Anon_BlTask]] = js.native
+  val initConfig: js.UndefOr[js.Function1[/* config */ js.Object, shipitDashCliLib.Typeofshipit]] = js.native
   val isRunning: js.UndefOr[scala.Boolean] = js.native
   val local: js.UndefOr[
     (js.Function1[
@@ -101,19 +101,19 @@ trait GruntOrShipit extends js.Object {
   val start: js.UndefOr[
     js.Function1[
       (/* tasks */ js.Array[java.lang.String]) | (/* tasks */ java.lang.String), 
-      shipitDashCliLib.Anon_BlTask
+      shipitDashCliLib.Typeofshipit
     ]
   ] = js.native
   val task: js.UndefOr[
     (js.Function2[
       /* name */ java.lang.String, 
       (/* depsOrFn */ js.Array[java.lang.String]) | (/* depsOrFn */ shipitDashCliLib.shipitDashCliMod.EmptyCallback), 
-      shipitDashCliLib.Anon_BlTask
+      shipitDashCliLib.Typeofshipit
     ]) | (js.Function3[
       /* name */ java.lang.String, 
       (/* depsOrFn */ js.Array[java.lang.String]) | (/* depsOrFn */ shipitDashCliLib.shipitDashCliMod.EmptyCallback), 
       /* fn */ js.Function0[scala.Unit], 
-      shipitDashCliLib.Anon_BlTask
+      shipitDashCliLib.Typeofshipit
     ])
   ] = js.native
   val tasks: js.UndefOr[shipitDashCliLib.shipitDashCliMod.Tasks] = js.native

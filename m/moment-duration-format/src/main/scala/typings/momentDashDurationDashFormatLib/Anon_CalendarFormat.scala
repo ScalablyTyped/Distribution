@@ -12,7 +12,7 @@ trait Anon_CalendarFormat extends js.Object {
   var RFC_2822: momentLib.momentMod.MomentBuiltinFormat = js.native
   var defaultFormat: java.lang.String = js.native
   var defaultFormatUtc: java.lang.String = js.native
-  val durationNs: Anon_Fn = js.native
+  val durationNs: Typeofduration = js.native
   var fn: momentLib.momentMod.Moment = js.native
   val unitOfTimeNs: js.Any = js.native
   var version: java.lang.String = js.native

@@ -30,7 +30,7 @@ trait IChargeCreationOptions
     */
   var capture: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * 3-letter ISO code for currency.
+    * Three-letter ISO currency code, in lowercase. Must be a supported currency.
     */
   var currency: java.lang.String
   /**
@@ -44,16 +44,6 @@ trait IChargeCreationOptions
     * will include the description of the charge(s) that they are describing.
     */
   var description: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * An account to make the charge on behalf of. If specified, the charge will be
-    * attributed to the destination account for tax reporting, and the funds from
-    * the charge will be transferred to the destination account. The ID of the
-    * resulting transfer will be returned in the transfer field of the response. See
-    * the documentation for details.
-    *
-    * Connect only.
-    */
-  var destination: js.UndefOr[java.lang.String | stripeLib.Anon_Account] = js.undefined
   /**
     * The Stripe account ID that these funds are intended for.
     * Automatically set if you use the destination parameter.
@@ -100,6 +90,11 @@ trait IChargeCreationOptions
     */
   var statement_descriptor: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * An optional dictionary including the account to automatically transfer
+    * to as part of a destination charge. See the Connect documentation for details.
+    */
+  var transfer_data: js.UndefOr[stripeLib.Anon_AmountDestination] = js.undefined
+  /**
     * A string that identifies this transaction as part of a group.
     * See the Connect documentation for details.
     *
@@ -117,7 +112,6 @@ object IChargeCreationOptions {
     capture: js.UndefOr[scala.Boolean] = js.undefined,
     customer: java.lang.String = null,
     description: java.lang.String = null,
-    destination: java.lang.String | stripeLib.Anon_Account = null,
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
@@ -126,6 +120,7 @@ object IChargeCreationOptions {
     shipping: stripeLib.stripeMod.IShippingInformation = null,
     source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions = null,
     statement_descriptor: java.lang.String = null,
+    transfer_data: stripeLib.Anon_AmountDestination = null,
     transfer_group: java.lang.String = null
   ): IChargeCreationOptions = {
     val __obj = js.Dynamic.literal(amount = amount, currency = currency)
@@ -133,7 +128,6 @@ object IChargeCreationOptions {
     if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
     if (customer != null) __obj.updateDynamic("customer")(customer)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
@@ -142,6 +136,7 @@ object IChargeCreationOptions {
     if (shipping != null) __obj.updateDynamic("shipping")(shipping)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (transfer_data != null) __obj.updateDynamic("transfer_data")(transfer_data)
     if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
     __obj.asInstanceOf[IChargeCreationOptions]
   }

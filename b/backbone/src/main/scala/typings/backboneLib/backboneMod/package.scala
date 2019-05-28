@@ -14,7 +14,7 @@ package object backboneMod {
   /**
     * DOM events (used in the events property of a View)
     */
-  type EventsHash = org.scalablytyped.runtime.StringDictionary[java.lang.String | backboneLib.Anon_EventObject]
+  type EventsHash = org.scalablytyped.runtime.StringDictionary[java.lang.String | backboneLib.Fn_EventObject]
   type Events_Off[BaseT] = js.ThisFunction3[
     /* this */ BaseT, 
     /* eventName */ js.UndefOr[java.lang.String], 
@@ -31,5 +31,5 @@ package object backboneMod {
   ]
   type Events_Trigger[BaseT] = js.ThisFunction2[/* this */ BaseT, /* eventName */ java.lang.String, /* repeated */ js.Any, BaseT]
   type ObjectHash = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type RoutesHash = org.scalablytyped.runtime.StringDictionary[java.lang.String | backboneLib.Anon_UrlParts]
+  type RoutesHash = org.scalablytyped.runtime.StringDictionary[java.lang.String | backboneLib.Fn_UrlParts]
 }

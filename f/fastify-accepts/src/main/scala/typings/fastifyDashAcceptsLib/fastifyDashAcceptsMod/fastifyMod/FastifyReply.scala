@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FastifyReply[HttpResponse] extends js.Object {
   @JSName("requestCharset")
-  var requestCharset_Original: fastifyDashAcceptsLib.Anon_Charsets = js.native
+  var requestCharset_Original: fastifyDashAcceptsLib.Fn_Charsets = js.native
   @JSName("requestCharsets")
-  var requestCharsets_Original: fastifyDashAcceptsLib.Anon_Charsets = js.native
+  var requestCharsets_Original: fastifyDashAcceptsLib.Fn_Charsets = js.native
   @JSName("requestEncoding")
-  var requestEncoding_Original: fastifyDashAcceptsLib.Anon_Encodings = js.native
+  var requestEncoding_Original: fastifyDashAcceptsLib.Fn_Encodings = js.native
   @JSName("requestEncodings")
-  var requestEncodings_Original: fastifyDashAcceptsLib.Anon_Charsets = js.native
+  var requestEncodings_Original: fastifyDashAcceptsLib.Fn_Charsets = js.native
   @JSName("requestLanguage")
-  var requestLanguage_Original: fastifyDashAcceptsLib.Anon_False = js.native
+  var requestLanguage_Original: fastifyDashAcceptsLib.Fn_False = js.native
   @JSName("requestLanguages")
-  var requestLanguages_Original: fastifyDashAcceptsLib.Anon_False = js.native
+  var requestLanguages_Original: fastifyDashAcceptsLib.Fn_False = js.native
   @JSName("requestType")
-  var requestType_Original: fastifyDashAcceptsLib.Anon_FalseTypes = js.native
+  var requestType_Original: fastifyDashAcceptsLib.Fn_FalseTypes = js.native
   @JSName("requestTypes")
-  var requestTypes_Original: fastifyDashAcceptsLib.Anon_FalseTypes = js.native
+  var requestTypes_Original: fastifyDashAcceptsLib.Fn_FalseTypes = js.native
   def requestAccepts(): acceptsLib.acceptsMod.Accepts = js.native
   def requestCharset(): js.Array[java.lang.String] = js.native
   def requestCharset(charsets: java.lang.String*): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native

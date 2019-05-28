@@ -87,7 +87,7 @@ object tsDashMockitoMod extends js.Object {
     @JSName("anyNumber")
     var anyNumber_Original: js.Function0[_] = js.native
     @JSName("anyOfClass")
-    var anyOfClass_Original: tsDashMockitoLib.Anon_ExpectedClass = js.native
+    var anyOfClass_Original: tsDashMockitoLib.Fn_ExpectedClass = js.native
     @JSName("anyString")
     var anyString_Original: js.Function0[_] = js.native
     @JSName("anything")
@@ -95,31 +95,31 @@ object tsDashMockitoMod extends js.Object {
     @JSName("between")
     var between_Original: js.Function2[/* min */ scala.Double, /* max */ scala.Double, _] = js.native
     @JSName("capture")
-    var capture_Original: tsDashMockitoLib.Anon_A = js.native
+    var capture_Original: tsDashMockitoLib.Fn_A = js.native
     @JSName("deepEqual")
     var deepEqual_Original: js.Function1[/* expectedValue */ js.Any, _] = js.native
     @JSName("instance")
-    var instance_Original: tsDashMockitoLib.Anon_MockedValue = js.native
+    var instance_Original: tsDashMockitoLib.Fn_MockedValue = js.native
     @JSName("match")
     var match_Original: js.Function1[/* expectedValue */ stdLib.RegExp | java.lang.String, _] = js.native
     @JSName("mock")
-    var mock_Original: tsDashMockitoLib.Anon_Clazz = js.native
+    var mock_Original: tsDashMockitoLib.Fn_Clazz = js.native
     @JSName("notNull")
     var notNull_Original: js.Function0[_] = js.native
     @JSName("objectContaining")
     var objectContaining_Original: js.Function1[/* expectedValue */ js.Object, _] = js.native
     @JSName("resetCalls")
-    var resetCalls_Original: tsDashMockitoLib.Anon_MockedValueT = js.native
+    var resetCalls_Original: tsDashMockitoLib.Fn_MockedValueT = js.native
     @JSName("reset")
-    var reset_Original: tsDashMockitoLib.Anon_MockedValueT = js.native
+    var reset_Original: tsDashMockitoLib.Fn_MockedValueT = js.native
     @JSName("spy")
-    var spy_Original: tsDashMockitoLib.Anon_InstanceToSpy = js.native
+    var spy_Original: tsDashMockitoLib.Fn_InstanceToSpy = js.native
     @JSName("strictEqual")
     var strictEqual_Original: js.Function1[/* expectedValue */ js.Any, _] = js.native
     @JSName("verify")
-    var verify_Original: tsDashMockitoLib.Anon_Method = js.native
+    var verify_Original: tsDashMockitoLib.Fn_Method = js.native
     @JSName("when")
-    var when_Original: tsDashMockitoLib.Anon_MethodAny = js.native
+    var when_Original: tsDashMockitoLib.Fn_MethodAny = js.native
     def anyFunction(): js.Any = js.native
     def anyNumber(): js.Any = js.native
     def anyOfClass[T](expectedClass: tsDashMockitoLib.Anon_Args[T]): js.Any = js.native

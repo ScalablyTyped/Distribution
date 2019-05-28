@@ -1008,7 +1008,7 @@ object defaultNs extends js.Object {
       * @deprecated
       */
     @JSName("cast")
-    var cast_Original: rsvpLib.Anon_Value = js.native
+    var cast_Original: rsvpLib.Fn_Value = js.native
     def all[T](values: js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[T]]): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[T]] = js.native
     def all[T](values: js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[T]], label: java.lang.String): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[T]] = js.native
     def all[T1, T2](values: js.Tuple2[rsvpLib.rsvpMod.RSVPNs.Arg[T1], rsvpLib.rsvpMod.RSVPNs.Arg[T2]]): rsvpLib.rsvpMod.RSVPNs.Promise[js.Tuple2[T1, T2]] = js.native

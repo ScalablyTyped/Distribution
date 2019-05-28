@@ -11,13 +11,13 @@ object ^ extends js.Object {
   @JSName("build$")
   var build$: js.Function2[
     /* element */ protractorLib.builtBrowserMod.ElementHelper, 
-    /* by */ protractorLib.Anon_ClassName, 
+    /* by */ protractorLib.TypeofClassBy, 
     js.Function1[/* selector */ java.lang.String, ElementFinder]
   ] = js.native
   @JSName("build$$")
   var build$$: js.Function2[
     /* element */ protractorLib.builtBrowserMod.ElementHelper, 
-    /* by */ protractorLib.Anon_ClassName, 
+    /* by */ protractorLib.TypeofClassBy, 
     js.Function1[/* selector */ java.lang.String, ElementArrayFinder]
   ] = js.native
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends SimpleEventEmitter {
   /* CompleteClass */
-  override var listeners: js.Array[mobservableLib.Anon_Data] = js.native
+  override var listeners: js.Array[mobservableLib.Fn_Data] = js.native
   /* CompleteClass */
   override def emit(data: js.Any*): js.Any = js.native
   /* CompleteClass */

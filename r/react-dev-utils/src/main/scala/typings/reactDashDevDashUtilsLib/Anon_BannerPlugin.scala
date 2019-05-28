@@ -13,7 +13,7 @@ trait Anon_BannerPlugin extends js.Object {
   var BannerPlugin: org.scalablytyped.runtime.Instantiable1[/* options */ java.lang.String, webpackLib.webpackMod.BannerPlugin] = js.native
   val BannerPluginNs: js.Any = js.native
   var Compiler: org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.Compiler] = js.native
-  val CompilerNs: Anon_Compiler = js.native
+  val CompilerNs: TypeofCompiler = js.native
   var ContextReplacementPlugin: org.scalablytyped.runtime.Instantiable1[/* resourceRegExp */ js.Any, webpackLib.webpackMod.ContextReplacementPlugin] = js.native
   var DefinePlugin: org.scalablytyped.runtime.Instantiable1[
     /* definitions */ org.scalablytyped.runtime.StringDictionary[js.Any], 
@@ -75,13 +75,13 @@ trait Anon_BannerPlugin extends js.Object {
     /* paths */ js.Array[java.lang.String | stdLib.RegExp], 
     webpackLib.webpackMod.WatchIgnorePlugin
   ] = js.native
-  val compilationNs: Anon_Asset = js.native
+  val compilationNs: Typeofcompilation = js.native
   /** @deprecated */
   val compilerNs: js.Any = js.native
-  val debugNs: Anon_ProfilingPlugin = js.native
+  val debugNs: Typeofdebug = js.native
   val dependenciesNs: js.Any = js.native
   val loaderNs: js.Any = js.native
-  val optimizeNs: Anon_AggressiveMergingPlugin = js.native
+  val optimizeNs: Typeofoptimize = js.native
   /** Webpack package version. */
   val version: js.UndefOr[java.lang.String] = js.native
   def apply(): webpackLib.webpackMod.Compiler = js.native

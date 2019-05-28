@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AST_Node () extends js.Object {
   def this(props: js.Object) = this()
-  var CTOR: terserLib.Anon_BASE = js.native
+  var CTOR: terserLib.TypeofClassAST_Node = js.native
   var TYPE: java.lang.String = js.native
   def print_to_string(): java.lang.String = js.native
   def print_to_string(options: OutputOptions): java.lang.String = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-orm", "QuerySet")
 @js.native
 class QuerySet[Fields, Additional, VirtualFields] protected () extends js.Object {
-  def this(modelClass: reduxDashOrmLib.Anon_Action, clauses: QuerySetClauses, opts: QuerySetOpts) = this()
+  def this(modelClass: reduxDashOrmLib.TypeofClassModel, clauses: QuerySetClauses, opts: QuerySetOpts) = this()
   /* private */ def _evaluate(): scala.Unit = js.native
   /* private */ def _new(clauses: QuerySetClauses, userOpts: QuerySetOpts): QuerySet[Fields, Additional, VirtualFields] = js.native
   def all(): QuerySet[Fields, Additional, VirtualFields] = js.native

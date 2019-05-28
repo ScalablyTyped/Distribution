@@ -10,10 +10,10 @@ trait PartialDrawerProps extends js.Object {
   var BackdropComponent: js.UndefOr[
     reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]
   ] = js.undefined
-  var BackdropProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]] = js.undefined
-  var ModalProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.modalModalMod.ModalProps]] = js.undefined
-  var PaperProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
-  var SlideProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.slideSlideMod.SlideProps]] = js.undefined
+  var BackdropProps: js.UndefOr[PartialBackdropProps] = js.undefined
+  var ModalProps: js.UndefOr[PartialModalProps] = js.undefined
+  var PaperProps: js.UndefOr[PartialPaperProps] = js.undefined
+  var SlideProps: js.UndefOr[PartialSlideProps] = js.undefined
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var anchor: js.UndefOr[
@@ -118,11 +118,7 @@ trait PartialDrawerProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapDrawerClassKey] = js.undefined
   var closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance]] = js.undefined
@@ -359,10 +355,10 @@ object PartialDrawerProps {
   @scala.inline
   def apply(
     BackdropComponent: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    BackdropProps: stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
-    ModalProps: stdLib.Partial[atMaterialDashUiCoreLib.modalModalMod.ModalProps] = null,
-    PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
-    SlideProps: stdLib.Partial[atMaterialDashUiCoreLib.slideSlideMod.SlideProps] = null,
+    BackdropProps: PartialBackdropProps = null,
+    ModalProps: PartialModalProps = null,
+    PaperProps: PartialPaperProps = null,
+    SlideProps: PartialSlideProps = null,
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     anchor: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.left | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.right | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom = null,
@@ -419,9 +415,7 @@ object PartialDrawerProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey]
-    ] = null,
+    classes: PartialClassNameMapDrawerClassKey = null,
     closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined,
     color: java.lang.String = null,
     container: reactLib.reactMod.ReactInstance | js.Function0[reactLib.reactMod.ReactInstance] = null,

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "bluebird-global"
-version := "3.5-dt-20190524Z-cbc696"
+version := "3.5-dt-20190524Z-1af2d5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-e943e4",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-8ef956",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

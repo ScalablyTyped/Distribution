@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object program extends js.Object {
   var envVars: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
-  var opts: jakeLib.Anon_NameQuiet = js.native
+  var opts: jakeLib.Anon_Name = js.native
   var taskArgs: js.Array[java.lang.String] = js.native
   var taskNames: js.Array[java.lang.String] = js.native
 }

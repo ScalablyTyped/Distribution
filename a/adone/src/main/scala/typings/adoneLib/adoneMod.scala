@@ -12,89 +12,89 @@ object adoneMod extends js.Object {
   object adone extends js.Object {
     val EMPTY_BUFFER: nodeLib.Buffer = js.native
     val ETC_PATH: java.lang.String = js.native
-    val INs: adoneLib.Anon_Datetime = js.native
+    val INs: adoneLib.TypeofI = js.native
     val ROOT_PATH: java.lang.String = js.native
     val _null: js.Symbol = js.native
-    val appNs: adoneLib.Anon_App = js.native
+    val appNs: adoneLib.Typeofapp = js.native
     /**
       * Various archivers
       */
-    val archiveNs: adoneLib.Anon_Tar = js.native
+    val archiveNs: adoneLib.Typeofarchive = js.native
     @JSName("assert")
     val assert_Original: adoneLib.adoneNs.assertionNs.INs.AssertFunction = js.native
     /**
       * assertion functions
       */
-    val assertionNs: adoneLib.Anon_Assert = js.native
+    val assertionNs: adoneLib.Typeofassertion = js.native
     val bad: adoneLib.adoneLibStrings.bad = js.native
     /**
       * Data structures
       */
-    val collectionNs: adoneLib.Anon_AAVLTree = js.native
+    val collectionNs: adoneLib.Typeofcollection = js.native
     /**
       * Various compressors
       */
-    val compressorNs: adoneLib.Anon_Brotli = js.native
+    val compressorNs: adoneLib.Typeofcompressor = js.native
     val configuration: js.Object = js.native
-    val cryptoNs: adoneLib.Anon_Asn1 = js.native
+    val cryptoNs: adoneLib.TypeofcryptoAsn1 = js.native
     /**
       * Various data [de]serializers
       */
-    val dataNs: adoneLib.Anon_AlphabetBase32 = js.native
+    val dataNs: adoneLib.Typeofdata = js.native
     /**
       * Creates a new datetime object
       */
     @JSName("datetime")
     val datetime_Original: adoneLib.adoneNs.INs.datetimeNs.DatetimeFunction = js.native
-    val errorNs: adoneLib.Anon_Bind = js.native
-    val eventNs: adoneLib.Anon_AsyncEmitter = js.native
+    val errorNs: adoneLib.Typeoferror = js.native
+    val eventNs: adoneLib.Typeofevent = js.native
     @JSName("expect")
     val expect_Original: adoneLib.adoneNs.assertionNs.INs.ExpectFunction = js.native
-    val fakeNs: adoneLib.Anon_AddressCommerce = js.native
+    val fakeNs: adoneLib.Typeoffake = js.native
     /**
       * Filesystem Automation Streaming Templates/Transforms
       */
-    val fastNs: adoneLib.Anon_File = js.native
+    val fastNs: adoneLib.Typeoffast = js.native
     /**
       * File system stuff
       */
-    val fsNs: adoneLib.Anon_AbstractRandomAccessReader = js.native
+    val fsNs: adoneLib.TypeoffsAbstractRandomAccessReader = js.native
     /**
       * predicates
       */
-    val isNs: adoneLib.Anon_1 = js.native
+    val isNs: adoneLib.Typeofis = js.native
     @JSName("lodash")
     val lodash_Original: lodashLib.lodashMod.LoDashStatic = js.native
     /**
       * math related things
       */
-    val mathNs: adoneLib.Anon_ArrayBigNumber = js.native
-    val metaNs: adoneLib.Anon_I = js.native
-    val netNs: adoneLib.Anon_Http = js.native
+    val mathNs: adoneLib.Typeofmath = js.native
+    val metaNs: adoneLib.Typeofmeta = js.native
+    val netNs: adoneLib.TypeofnetHttp = js.native
     val ok: adoneLib.adoneLibStrings.ok = js.native
     val `package`: js.Object = js.native
-    val prettyNs: adoneLib.Anon_DataI = js.native
+    val prettyNs: adoneLib.Typeofpretty = js.native
     /**
       * promise helpers
       */
-    val promiseNs: adoneLib.Anon_AArgs = js.native
-    val regexNs: adoneLib.Anon_Ansi = js.native
+    val promiseNs: adoneLib.Typeofpromise = js.native
+    val regexNs: adoneLib.Typeofregex = js.native
     val runtime: adoneLib.adoneNs.INs.Runtime = js.native
-    val semverNs: adoneLib.Anon_01 = js.native
+    val semverNs: adoneLib.Typeofsemver = js.native
     /**
       * testing framework
       */
-    val shaniNs: adoneLib.Anon_Engine = js.native
-    val streamNs: adoneLib.Anon_Core = js.native
-    val systemNs: adoneLib.Anon_Env = js.native
+    val shaniNs: adoneLib.Typeofshani = js.native
+    val streamNs: adoneLib.TypeofstreamCore = js.native
+    val systemNs: adoneLib.TypeofsystemEnv = js.native
     val tag: adoneLib.adoneNs.INs.Tag = js.native
-    val templatingNs: adoneLib.Anon_Dot = js.native
-    val textNs: adoneLib.Anon_CamelCaseToDashed = js.native
+    val templatingNs: adoneLib.Typeoftemplating = js.native
+    val textNs: adoneLib.Typeoftext = js.native
     /**
       * various utility functions
       */
-    val utilNs: adoneLib.Anon_AArgsArgument = js.native
-    val vaultNs: adoneLib.Anon_IId = js.native
+    val utilNs: adoneLib.TypeofutilA = js.native
+    val vaultNs: adoneLib.Typeofvault = js.native
     /**
       * Asserts that value is truthy
       */

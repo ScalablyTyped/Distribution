@@ -22,7 +22,7 @@ class ^ () extends VError {
 @JSImport("verror", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var VError: verrorLib.Anon_Cause = js.native
+  var VError: verrorLib.TypeofClassVError = js.native
   def cause(err: stdLib.Error): stdLib.Error | scala.Null = js.native
   def errorForEach(err: stdLib.Error, func: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def errorFromList[T /* <: stdLib.Error */](errors: js.Array[T]): scala.Null | T | MultiError = js.native

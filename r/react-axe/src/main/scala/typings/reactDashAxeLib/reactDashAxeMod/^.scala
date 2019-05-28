@@ -8,10 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("react-axe", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(react: reactDashAxeLib.Anon_A, reactDOM: reactDashAxeLib.Anon_AB, timeout: scala.Double): scala.Unit = js.native
   def apply(
-    react: reactDashAxeLib.Anon_A,
-    reactDOM: reactDashAxeLib.Anon_AB,
+    react: reactDashAxeLib.TypeofReact,
+    reactDOM: reactDashAxeLib.TypeofReactDOM,
+    timeout: scala.Double
+  ): scala.Unit = js.native
+  def apply(
+    react: reactDashAxeLib.TypeofReact,
+    reactDOM: reactDashAxeLib.TypeofReactDOM,
     timeout: scala.Double,
     config: ReactAxeConfig
   ): scala.Unit = js.native

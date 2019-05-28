@@ -180,7 +180,7 @@ object VictoryPieProps {
     innerRadius: scala.Int | scala.Double = null,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
     labelRadius: scala.Int | scala.Double = null,
-    labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
+    labels: js.Array[java.lang.String] | victoryLib.Fn_DataAnyString = null,
     name: java.lang.String = null,
     padAngle: scala.Int | scala.Double = null,
     padding: PaddingProps = null,

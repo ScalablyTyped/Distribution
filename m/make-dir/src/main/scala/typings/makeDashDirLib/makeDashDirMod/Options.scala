@@ -11,7 +11,7 @@ trait Options extends js.Object {
   		Using a custom `fs` implementation will block the use of the native `recursive` option if `fs.mkdir` or `fs.mkdirSync` is not the native function.
   		@default require('fs')
   		*/
-  val fs: js.UndefOr[makeDashDirLib.Anon_AccessAccessSync] = js.undefined
+  val fs: js.UndefOr[makeDashDirLib.Typeoffs] = js.undefined
   /**
   		Directory [permissions](https://x-team.com/blog/file-system-permissions-umask-node-js/).
   		@default 0o777 & (~process.umask())
@@ -21,7 +21,7 @@ trait Options extends js.Object {
 
 object Options {
   @scala.inline
-  def apply(fs: makeDashDirLib.Anon_AccessAccessSync = null, mode: scala.Int | scala.Double = null): Options = {
+  def apply(fs: makeDashDirLib.Typeoffs = null, mode: scala.Int | scala.Double = null): Options = {
     val __obj = js.Dynamic.literal()
     if (fs != null) __obj.updateDynamic("fs")(fs)
     if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])

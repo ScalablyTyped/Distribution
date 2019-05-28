@@ -13,5 +13,7 @@ object ^ extends js.Object {
     machine: xstateLib.esTypesMod.StateMachine[TContext, TStateSchema, TEvent],
     options: stdLib.Partial[xstateLib.esTypesMod.InterpreterOptions]
   ): Interpreter[TContext, TStateSchema, TEvent] = js.native
+  def spawn[TContext](entity: Spawnable[TContext]): xstateLib.esActorMod.Actor[TContext, xstateLib.esTypesMod.EventObject] = js.native
+  def spawn[TContext](entity: Spawnable[TContext], name: java.lang.String): xstateLib.esActorMod.Actor[TContext, xstateLib.esTypesMod.EventObject] = js.native
 }
 

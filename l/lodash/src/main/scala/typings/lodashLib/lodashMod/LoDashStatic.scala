@@ -338,11 +338,11 @@ trait LoDashStatic extends js.Object {
   @JSName("curry")
   var curry_Original: Curry = js.native
   @JSName("eachRight")
-  var eachRight_Original: lodashLib.Anon_Collection = js.native
+  var eachRight_Original: lodashLib.Fn_Collection = js.native
   @JSName("each")
-  var each_Original: lodashLib.Anon_Collection = js.native
+  var each_Original: lodashLib.Fn_Collection = js.native
   @JSName("first")
-  var first_Original: lodashLib.Anon_Array = js.native
+  var first_Original: lodashLib.Fn_Array = js.native
   /**
     * Creates a function that memoizes the result of func. If resolver is provided it determines the cache key for
     * storing the result based on the arguments provided to the memoized function. By default, the first argument
@@ -4134,7 +4134,7 @@ trait LoDashStatic extends js.Object {
   /**
     * @see _.iteratee
     */
-  def iteratee(): lodashLib.Anon_Value = js.native
+  def iteratee(): lodashLib.Fn_Value = js.native
   /**
     * @see _.iteratee
     */

@@ -10,7 +10,7 @@ trait FilterableOptions extends js.Object {
   var defaults: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var enhanced: js.UndefOr[scala.Boolean] = js.undefined
-  var filterCallback: js.UndefOr[Anon_Index] = js.undefined
+  var filterCallback: js.UndefOr[Fn_Index] = js.undefined
   var filterPlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var filterReveal: js.UndefOr[scala.Boolean] = js.undefined
   var filterTheme: js.UndefOr[java.lang.String] = js.undefined
@@ -25,7 +25,7 @@ object FilterableOptions {
     defaults: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     enhanced: js.UndefOr[scala.Boolean] = js.undefined,
-    filterCallback: Anon_Index = null,
+    filterCallback: Fn_Index = null,
     filterPlaceholder: java.lang.String = null,
     filterReveal: js.UndefOr[scala.Boolean] = js.undefined,
     filterTheme: java.lang.String = null

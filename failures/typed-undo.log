@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:92 Ignored [id => typed-undo, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:227 Processing TsIdentLibrarySimple(typed-undo) [id => typed-undo, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(typed-undo) [id => typed-undo, phase => typescript] 
 [debug] PhaseRunner.scala:84 Success [id => typed-undo, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing typed-undo [id => typed-undo, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Expected code path [id => typed-undo, phase => scala.js] java.lang.RuntimeException: Expected code path
@@ -9,7 +9,7 @@
 	at com.olvind.tso.ts.CodePath.forceHasPath(CodePath.scala:11)
 	at com.olvind.tso.ts.CodePath.forceHasPath$(CodePath.scala:10)
 	at com.olvind.tso.ts.CodePath$NoPath$.forceHasPath(CodePath.scala:30)
-	at com.olvind.tso.importer.ImportTree$.apply(ImportTree.scala:27)
+	at com.olvind.tso.importer.ImportTree$.apply(ImportTree.scala:25)
 	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$2(Phase2ToScalaJs.scala:63)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
 	at com.olvind.tso.phases.PhaseRes.map$(PhaseRes.scala:14)
@@ -43,7 +43,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:49)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:30)
-	at com.olvind.tso.importer.Main$.$anonfun$run$23(Main.scala:233)
+	at com.olvind.tso.importer.Main.$anonfun$run$21(Main.scala:219)
 	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
 	at scala.collection.Iterator.foreach(Iterator.scala:941)
 	at scala.collection.Iterator.foreach$(Iterator.scala:941)
@@ -54,8 +54,8 @@
 	at scala.collection.TraversableLike.map(TraversableLike.scala:237)
 	at scala.collection.TraversableLike.map$(TraversableLike.scala:230)
 	at scala.collection.AbstractTraversable.map(Traversable.scala:108)
-	at com.olvind.tso.importer.Main$.run(Main.scala:233)
-	at com.olvind.tso.importer.Main$.main(Main.scala:32)
+	at com.olvind.tso.importer.Main.run(Main.scala:219)
+	at com.olvind.tso.importer.Main$.main(Main.scala:309)
 	at com.olvind.tso.importer.Main.main(Main.scala)
 
 [error] PhaseRunner.scala:88 Failure, [typed-undo => java.lang.RuntimeException: Expected code path] [id => typed-undo, phase => scala.js] 

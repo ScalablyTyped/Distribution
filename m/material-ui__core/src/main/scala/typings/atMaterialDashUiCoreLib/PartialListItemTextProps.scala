@@ -108,11 +108,7 @@ trait PartialListItemTextProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapListItemTextClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
   var contextMenu: js.UndefOr[java.lang.String] = js.undefined
@@ -299,14 +295,14 @@ trait PartialListItemTextProps extends js.Object {
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var primary: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var primaryTypographyProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps]] = js.undefined
+  var primaryTypographyProps: js.UndefOr[PartialTypographyProps] = js.undefined
   var property: js.UndefOr[java.lang.String] = js.undefined
   var radioGroup: js.UndefOr[java.lang.String] = js.undefined
   var resource: js.UndefOr[java.lang.String] = js.undefined
   var results: js.UndefOr[scala.Double] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var secondary: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var secondaryTypographyProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps]] = js.undefined
+  var secondaryTypographyProps: js.UndefOr[PartialTypographyProps] = js.undefined
   var security: js.UndefOr[java.lang.String] = js.undefined
   var slot: js.UndefOr[java.lang.String] = js.undefined
   var spellCheck: js.UndefOr[scala.Boolean] = js.undefined
@@ -380,9 +376,7 @@ object PartialListItemTextProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextClassKey]
-    ] = null,
+    classes: PartialClassNameMapListItemTextClassKey = null,
     color: java.lang.String = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,
@@ -488,14 +482,14 @@ object PartialListItemTextProps {
     placeholder: java.lang.String = null,
     prefix: java.lang.String = null,
     primary: reactLib.reactMod.ReactNode = null,
-    primaryTypographyProps: stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null,
+    primaryTypographyProps: PartialTypographyProps = null,
     property: java.lang.String = null,
     radioGroup: java.lang.String = null,
     resource: java.lang.String = null,
     results: scala.Int | scala.Double = null,
     role: java.lang.String = null,
     secondary: reactLib.reactMod.ReactNode = null,
-    secondaryTypographyProps: stdLib.Partial[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = null,
+    secondaryTypographyProps: PartialTypographyProps = null,
     security: java.lang.String = null,
     slot: java.lang.String = null,
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,

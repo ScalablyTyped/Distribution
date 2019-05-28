@@ -10,7 +10,7 @@ trait IGridOptions extends js.Object {
     * If specified, either a value or function to be used by all columns before editing.
     * If falsy, then editing of cell is not allowed
     */
-  var cellEditableCondition: js.UndefOr[js.Any | uiDashGridLib.Anon_Scope] = js.undefined
+  var cellEditableCondition: js.UndefOr[js.Any | uiDashGridLib.Fn_Scope] = js.undefined
   /**
     * If specified, cellTemplate to use as the editor for all columns.
     * defaults to 'ui-grid/cellTextEditor'
@@ -36,7 +36,7 @@ trait IGridOptions extends js.Object {
 object IGridOptions {
   @scala.inline
   def apply(
-    cellEditableCondition: js.Any | uiDashGridLib.Anon_Scope = null,
+    cellEditableCondition: js.Any | uiDashGridLib.Fn_Scope = null,
     editableCellTemplate: java.lang.String = null,
     enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
     enableCellEditOnFocus: js.UndefOr[scala.Boolean] = js.undefined

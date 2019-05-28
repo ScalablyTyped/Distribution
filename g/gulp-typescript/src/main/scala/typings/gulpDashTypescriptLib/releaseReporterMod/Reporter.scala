@@ -9,7 +9,7 @@ trait Reporter extends js.Object {
   var error: js.UndefOr[
     js.Function2[
       /* error */ TypeScriptError, 
-      /* typescript */ gulpDashTypescriptLib.Anon_08, 
+      /* typescript */ gulpDashTypescriptLib.Typeofts, 
       scala.Unit
     ]
   ] = js.undefined
@@ -19,7 +19,7 @@ trait Reporter extends js.Object {
 object Reporter {
   @scala.inline
   def apply(
-    error: (/* error */ TypeScriptError, /* typescript */ gulpDashTypescriptLib.Anon_08) => scala.Unit = null,
+    error: (/* error */ TypeScriptError, /* typescript */ gulpDashTypescriptLib.Typeofts) => scala.Unit = null,
     finish: /* results */ CompilationResult => scala.Unit = null
   ): Reporter = {
     val __obj = js.Dynamic.literal()

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "mongoose-auto-increment"
-version := "5.0.1-dt-20190322Z-0ba98e"
+version := "5.0.1-dt-20190322Z-ce96ae"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-db4d7e",
-  "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190515Z-950532",
-  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20190524Z-4ca405",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190322Z-0d6154",
+  "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190515Z-33acbd",
+  "org.scalablytyped" %%% "mongoose" % "5.5.1-dt-20190524Z-eff672",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

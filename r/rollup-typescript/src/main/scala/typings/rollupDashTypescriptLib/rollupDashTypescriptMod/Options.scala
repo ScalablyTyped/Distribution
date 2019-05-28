@@ -10,7 +10,7 @@ trait Options extends js.Object {
   var include: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var module: js.UndefOr[java.lang.String] = js.undefined
   var tsconfig: js.UndefOr[scala.Boolean] = js.undefined
-  var typescript: js.UndefOr[rollupDashTypescriptLib.Anon_08] = js.undefined
+  var typescript: js.UndefOr[rollupDashTypescriptLib.Typeofts] = js.undefined
 }
 
 object Options {
@@ -20,7 +20,7 @@ object Options {
     include: java.lang.String | js.Array[java.lang.String] = null,
     module: java.lang.String = null,
     tsconfig: js.UndefOr[scala.Boolean] = js.undefined,
-    typescript: rollupDashTypescriptLib.Anon_08 = null
+    typescript: rollupDashTypescriptLib.Typeofts = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])

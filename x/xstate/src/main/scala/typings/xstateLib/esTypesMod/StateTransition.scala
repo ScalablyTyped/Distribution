@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StateTransition[TContext, TEvent /* <: EventObject */] extends js.Object {
   var actions: js.Array[ActionObject[TContext, TEvent]]
-  var reentryStates: js.UndefOr[
-    stdLib.Set[xstateLib.esStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]]]
-  ] = js.undefined
+  var context: js.UndefOr[TContext] = js.undefined
   /**
     * The source state that preceded the transition.
     */
@@ -21,12 +19,12 @@ object StateTransition {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](
     actions: js.Array[ActionObject[TContext, TEvent]],
-    reentryStates: stdLib.Set[xstateLib.esStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]]] = null,
+    context: TContext = null,
     source: xstateLib.esStateMod.State[TContext, EventObject] = null,
     tree: xstateLib.esStateTreeMod.StateTree = null
   ): StateTransition[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(actions = actions)
-    if (reentryStates != null) __obj.updateDynamic("reentryStates")(reentryStates)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (source != null) __obj.updateDynamic("source")(source)
     if (tree != null) __obj.updateDynamic("tree")(tree)
     __obj.asInstanceOf[StateTransition[TContext, TEvent]]

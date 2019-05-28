@@ -76,10 +76,10 @@ class UIRouter () extends js.Object {
   def getPlugin(pluginName: java.lang.String): atUirouterCoreLib.libInterfaceMod.UIRouterPlugin = js.native
   /** Add plugin (as ES6 class) */
   def plugin[T /* <: atUirouterCoreLib.libInterfaceMod.UIRouterPlugin */](plugin: atUirouterCoreLib.Anon_Options[T]): T = js.native
-  /** Add plugin (as javascript constructor function) */
-  def plugin[T /* <: atUirouterCoreLib.libInterfaceMod.UIRouterPlugin */](plugin: atUirouterCoreLib.Anon_OptionsRouter): T = js.native
-  def plugin[T /* <: atUirouterCoreLib.libInterfaceMod.UIRouterPlugin */](plugin: atUirouterCoreLib.Anon_OptionsRouter, options: js.Any): T = js.native
   def plugin[T /* <: atUirouterCoreLib.libInterfaceMod.UIRouterPlugin */](plugin: atUirouterCoreLib.Anon_Options[T], options: js.Any): T = js.native
+  /** Add plugin (as javascript constructor function) */
+  def plugin[T /* <: atUirouterCoreLib.libInterfaceMod.UIRouterPlugin */](plugin: atUirouterCoreLib.Fn_Options): T = js.native
+  def plugin[T /* <: atUirouterCoreLib.libInterfaceMod.UIRouterPlugin */](plugin: atUirouterCoreLib.Fn_Options, options: js.Any): T = js.native
   /** Add plugin (as javascript factory function) */
   def plugin[T /* <: atUirouterCoreLib.libInterfaceMod.UIRouterPlugin */](plugin: PluginFactory[T]): T = js.native
   def plugin[T /* <: atUirouterCoreLib.libInterfaceMod.UIRouterPlugin */](plugin: PluginFactory[T], options: js.Any): T = js.native

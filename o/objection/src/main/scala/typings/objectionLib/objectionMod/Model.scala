@@ -229,7 +229,7 @@ object Model extends js.Object {
   var JoinEagerAlgorithm: objectionLib.objectionMod.EagerAlgorithm = js.native
   var ManyToManyRelation: objectionLib.objectionMod.Relation = js.native
   var NaiveEagerAlgorithm: objectionLib.objectionMod.EagerAlgorithm = js.native
-  var QueryBuilder: objectionLib.Anon_ForClass = js.native
+  var QueryBuilder: objectionLib.TypeofClassQueryBuilder = js.native
   var WhereInEagerAlgorithm: objectionLib.objectionMod.EagerAlgorithm = js.native
   var columnNameMappers: objectionLib.objectionMod.ColumnNameMappers = js.native
   var dbRefProp: java.lang.String = js.native
@@ -370,12 +370,12 @@ object Model extends js.Object {
   def tableMetadata(): objectionLib.objectionMod.TableMetadata = js.native
   def tableMetadata(opt: objectionLib.objectionMod.TableMetadataOptions): objectionLib.objectionMod.TableMetadata = js.native
   def traverse(
-    filterConstructor: objectionLib.Anon_Args,
+    filterConstructor: objectionLib.TypeofClassModel,
     models: js.Array[objectionLib.objectionMod.Model],
     traverser: objectionLib.objectionMod.TraverserFunction
   ): scala.Unit = js.native
   def traverse(
-    filterConstructor: objectionLib.Anon_Args,
+    filterConstructor: objectionLib.TypeofClassModel,
     models: objectionLib.objectionMod.Model,
     traverser: objectionLib.objectionMod.TraverserFunction
   ): scala.Unit = js.native

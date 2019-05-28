@@ -109,11 +109,7 @@ trait PartialGridListProps extends js.Object {
   var cellHeight: js.UndefOr[scala.Double | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.gridListGridListMod.GridListClassKey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapGridListClassKey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var cols: js.UndefOr[scala.Double] = js.undefined
   var component: js.UndefOr[
@@ -381,9 +377,7 @@ object PartialGridListProps {
     cellHeight: scala.Double | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.gridListGridListMod.GridListClassKey]
-    ] = null,
+    classes: PartialClassNameMapGridListClassKey = null,
     color: java.lang.String = null,
     cols: scala.Int | scala.Double = null,
     component: reactLib.reactMod.ReactType[atMaterialDashUiCoreLib.gridListGridListMod.GridListProps] = null,

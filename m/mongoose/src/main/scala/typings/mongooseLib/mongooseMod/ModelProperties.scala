@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ModelProperties extends js.Object {
   /** Base Mongoose instance the model uses. */
-  var base: mongooseLib.Anon_Args
+  var base: mongooseLib.Typeofmongoose
   /**
     * If this is a discriminator model, baseModelName is the
     * name of the base model.
@@ -28,7 +28,7 @@ trait ModelProperties extends js.Object {
 object ModelProperties {
   @scala.inline
   def apply(
-    base: mongooseLib.Anon_Args,
+    base: mongooseLib.Typeofmongoose,
     collection: Collection,
     db: Connection,
     discriminators: js.Any,

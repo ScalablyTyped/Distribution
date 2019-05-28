@@ -14,7 +14,7 @@ trait Anon_ImageDataKey extends js.Object {
     * Note that 'details.imageData = foo' is equivalent to 'details.imageData = {'19': foo}'
     */
   var imageData: js.UndefOr[
-    firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.ImageDataType]
+    firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType]
   ] = js.undefined
   /**
     * Either a relative image path or a dictionary {size -> relative image path} pointing to icon to be set. If
@@ -24,32 +24,20 @@ trait Anon_ImageDataKey extends js.Object {
     * be specified. Note that 'details.path = foo' is equivalent to 'details.imageData = {'19': foo}'
     */
   var path: js.UndefOr[java.lang.String | org.scalablytyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
-  /**
-    * When setting a value, it will be specific to the specified tab, and will automatically reset when the tab
-    * navigates. When getting, specifies the tab to get the value from; if there is no tab-specific value, the
-    * window one will be inherited.
-    */
-  var tabId: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * When setting a value, it will be specific to the specified window. When getting, specifies the window to get
-    * the value from; if there is no window-specific value, the global one will be inherited.
-    */
-  var windowId: js.UndefOr[scala.Double] = js.undefined
+  /** The id of the tab for which you want to modify the page action. */
+  var tabId: scala.Double
 }
 
 object Anon_ImageDataKey {
   @scala.inline
   def apply(
-    imageData: firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.browserActionNs.ImageDataType] = null,
-    path: java.lang.String | org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null,
-    tabId: scala.Int | scala.Double = null,
-    windowId: scala.Int | scala.Double = null
+    tabId: scala.Double,
+    imageData: firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType] = null,
+    path: java.lang.String | org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null
   ): Anon_ImageDataKey = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(tabId = tabId)
     if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
     if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
-    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ImageDataKey]
   }
 }

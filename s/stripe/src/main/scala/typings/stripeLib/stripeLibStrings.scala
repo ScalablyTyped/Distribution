@@ -240,6 +240,9 @@ object stripeLibStrings {
     extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentCancelationReason
   
   @js.native
+  sealed trait female extends js.Object
+  
+  @js.native
   sealed trait file_upload extends js.Object
   
   @js.native
@@ -368,6 +371,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait lost_or_stolen_card extends js.Object
+  
+  @js.native
+  sealed trait male extends js.Object
   
   @js.native
   sealed trait manual extends js.Object
@@ -848,6 +854,8 @@ object stripeLibStrings {
   @scala.inline
   def failed_invoice: failed_invoice = "failed_invoice".asInstanceOf[failed_invoice]
   @scala.inline
+  def female: female = "female".asInstanceOf[female]
+  @scala.inline
   def file_upload: file_upload = "file_upload".asInstanceOf[file_upload]
   @scala.inline
   def finite: finite = "finite".asInstanceOf[finite]
@@ -925,6 +933,8 @@ object stripeLibStrings {
   def lost: lost = "lost".asInstanceOf[lost]
   @scala.inline
   def lost_or_stolen_card: lost_or_stolen_card = "lost_or_stolen_card".asInstanceOf[lost_or_stolen_card]
+  @scala.inline
+  def male: male = "male".asInstanceOf[male]
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline

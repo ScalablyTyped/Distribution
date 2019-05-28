@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Actual extends js.Object {
   @JSName("diff")
-  var diff_Original: Anon_A = js.native
+  var diff_Original: Fn_A = js.native
   def EXPECTED_COLOR(text: java.lang.String): java.lang.String = js.native
   def RECEIVED_COLOR(text: java.lang.String): java.lang.String = js.native
   def diff(a: js.Any, b: js.Any): java.lang.String = js.native

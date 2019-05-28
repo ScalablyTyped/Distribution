@@ -10,9 +10,9 @@ trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import war
   var cond: js.UndefOr[Condition[TContext, TEvent with xstateLib.Anon_TypeTEventType[TEventType]]] = js.undefined
   var event: TEventType
   var meta: js.UndefOr[MetaObject] = js.undefined
-  var source: xstateLib.esStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]]
-  var target: xstateLib.esStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]]
-  var transition: TransitionDefinition[TContext, TEvent]
+  var source: xstateLib.esStateNodeMod.StateNode[TContext, _, TEvent]
+  var target: xstateLib.esStateNodeMod.StateNode[TContext, _, TEvent]
+  var transition: TransitionDefinition[TContext, OmniEventObject[TEvent]]
 }
 
 object Edge {
@@ -20,9 +20,9 @@ object Edge {
   def apply[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: ImportType.apply Failed type conversion: TEvent['type'] */ js.Any */](
     actions: js.Array[Action[TContext, TEvent]],
     event: TEventType,
-    source: xstateLib.esStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]],
-    target: xstateLib.esStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]],
-    transition: TransitionDefinition[TContext, TEvent],
+    source: xstateLib.esStateNodeMod.StateNode[TContext, _, TEvent],
+    target: xstateLib.esStateNodeMod.StateNode[TContext, _, TEvent],
+    transition: TransitionDefinition[TContext, OmniEventObject[TEvent]],
     cond: Condition[TContext, TEvent with xstateLib.Anon_TypeTEventType[TEventType]] = null,
     meta: MetaObject = null
   ): Edge[TContext, TEvent, TEventType] = {

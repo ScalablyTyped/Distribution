@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Host protected ()
   extends typescriptLib.typescriptMod.CompilerHost {
-  def this(typescript: gulpDashTypescriptLib.Anon_08, currentDirectory: java.lang.String, input: gulpDashTypescriptLib.releaseInputMod.FileCache, options: typescriptLib.typescriptMod.CompilerOptions) = this()
+  def this(typescript: gulpDashTypescriptLib.Typeofts, currentDirectory: java.lang.String, input: gulpDashTypescriptLib.releaseInputMod.FileCache, options: typescriptLib.typescriptMod.CompilerOptions) = this()
   var currentDirectory: java.lang.String = js.native
   var fallback: typescriptLib.typescriptMod.CompilerHost = js.native
   var input: gulpDashTypescriptLib.releaseInputMod.FileCache = js.native
-  var typescript: gulpDashTypescriptLib.Anon_08 = js.native
+  var typescript: gulpDashTypescriptLib.Typeofts = js.native
   @JSName("directoryExists")
   def directoryExists_MHost(path: java.lang.String): scala.Boolean = js.native
   /* CompleteClass */

@@ -13,7 +13,7 @@ class default () extends SmoothScrollbar
 @JSImport("smooth-scrollbar", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var ScrollbarPlugin: smoothDashScrollbarLib.Anon_DefaultOptions = js.native
+  var ScrollbarPlugin: smoothDashScrollbarLib.TypeofClassScrollbarPlugin = js.native
   var version: java.lang.String = js.native
   /**
     * Attaches default style sheets to current document.
@@ -74,6 +74,6 @@ object default extends js.Object {
     *
     * @param ...Plugins Scrollbar plugin classes
     */
-  def use(Plugins: smoothDashScrollbarLib.Anon_DefaultOptions*): scala.Unit = js.native
+  def use(Plugins: smoothDashScrollbarLib.TypeofClassScrollbarPlugin*): scala.Unit = js.native
 }
 

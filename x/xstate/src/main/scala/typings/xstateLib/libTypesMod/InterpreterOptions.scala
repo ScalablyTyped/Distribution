@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait InterpreterOptions extends js.Object {
+trait InterpreterOptions
+  extends /* option */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var clock: xstateLib.libInterpreterMod.Clock
   /**
     * If `true`, defers processing of sent events until the service
@@ -41,10 +42,12 @@ object InterpreterOptions {
     devTools: scala.Boolean,
     execute: scala.Boolean,
     logger: /* repeated */ js.Any => scala.Unit,
+    StringDictionary: /* option */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     id: java.lang.String = null,
     parent: xstateLib.libInterpreterMod.Interpreter[_, _, _] = null
   ): InterpreterOptions = {
     val __obj = js.Dynamic.literal(clock = clock, deferEvents = deferEvents, devTools = devTools, execute = execute, logger = js.Any.fromFunction1(logger))
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (id != null) __obj.updateDynamic("id")(id)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     __obj.asInstanceOf[InterpreterOptions]

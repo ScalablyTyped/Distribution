@@ -46,7 +46,7 @@ trait IRoute extends js.Object {
     * is if the `redirectTo` is a function that returns `undefined`. In this case the route transition occurs
     * as though there was no redirection.
     */
-  var redirectTo: js.UndefOr[java.lang.String | angularDashRouteLib.Anon_LocationPath] = js.undefined
+  var redirectTo: js.UndefOr[java.lang.String | angularDashRouteLib.Fn_LocationPath] = js.undefined
   /**
     * {boolean=true}
     * Reload route when only `$location.search()` or `$location.hash()` changes.
@@ -134,7 +134,7 @@ trait IRoute extends js.Object {
     *
     * {Array.<Object>} - route parameters extracted from the current $location.path() by applying the current route
     */
-  var template: js.UndefOr[java.lang.String | angularDashRouteLib.Anon_RouteParams] = js.undefined
+  var template: js.UndefOr[java.lang.String | angularDashRouteLib.Fn_RouteParams] = js.undefined
   /**
     * {(string|Function)=}
     * Path or function that returns a path to an html template that should be used by ngView.
@@ -143,7 +143,7 @@ trait IRoute extends js.Object {
     *
     * {Array.<Object>} - route parameters extracted from the current $location.path() by applying the current route
     */
-  var templateUrl: js.UndefOr[java.lang.String | angularDashRouteLib.Anon_RouteParams] = js.undefined
+  var templateUrl: js.UndefOr[java.lang.String | angularDashRouteLib.Fn_RouteParams] = js.undefined
 }
 
 object IRoute {
@@ -152,7 +152,7 @@ object IRoute {
     caseInsensitiveMatch: js.UndefOr[scala.Boolean] = js.undefined,
     controller: java.lang.String | InlineAnnotatedFunction = null,
     controllerAs: java.lang.String = null,
-    redirectTo: java.lang.String | angularDashRouteLib.Anon_LocationPath = null,
+    redirectTo: java.lang.String | angularDashRouteLib.Fn_LocationPath = null,
     reloadOnSearch: js.UndefOr[scala.Boolean] = js.undefined,
     reloadOnUrl: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
@@ -163,8 +163,8 @@ object IRoute {
         js.UndefOr[angularLib.angularMod.IPromise[js.UndefOr[java.lang.String]] | java.lang.String]
       ]
     ] = null,
-    template: java.lang.String | angularDashRouteLib.Anon_RouteParams = null,
-    templateUrl: java.lang.String | angularDashRouteLib.Anon_RouteParams = null
+    template: java.lang.String | angularDashRouteLib.Fn_RouteParams = null,
+    templateUrl: java.lang.String | angularDashRouteLib.Fn_RouteParams = null
   ): IRoute = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(caseInsensitiveMatch)) __obj.updateDynamic("caseInsensitiveMatch")(caseInsensitiveMatch)

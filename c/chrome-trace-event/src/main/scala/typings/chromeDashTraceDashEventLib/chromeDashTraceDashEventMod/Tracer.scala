@@ -18,6 +18,7 @@ class Tracer ()
   var firstPush: js.UndefOr[js.Any] = js.native
   var noStream: js.Any = js.native
   var parent: js.Any = js.native
+  /* private */ def _flush(): js.Any = js.native
   /* private */ def _pushString(ev: js.Any): js.Any = js.native
   def begin(fields: Fields): scala.Unit = js.native
   def child(fields: Fields): Tracer = js.native

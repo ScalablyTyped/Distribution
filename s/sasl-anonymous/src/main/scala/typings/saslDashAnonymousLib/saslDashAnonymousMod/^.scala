@@ -26,6 +26,6 @@ class ^ () extends AnonymousMechanism {
 @JSImport("sasl-anonymous", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Mechanism: saslDashAnonymousLib.Anon_Mechanism = js.native
+  var Mechanism: saslDashAnonymousLib.TypeofClassAnonymousMechanism = js.native
 }
 

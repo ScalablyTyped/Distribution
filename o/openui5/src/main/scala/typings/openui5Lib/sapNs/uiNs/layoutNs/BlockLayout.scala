@@ -35,7 +35,7 @@ class BlockLayout protected ()
     * LayoutDefault value is <code>Default</code>.
     * @returns Value of property <code>background</code>
     */
-  def getBackground(): openui5Lib.Anon_DefaultLight = js.native
+  def getBackground(): openui5Lib.TypeofBlockBackgroundType = js.native
   /**
     * Gets content of aggregation <code>content</code>.The Rows to be included in the content of the
     * control
@@ -79,6 +79,6 @@ class BlockLayout protected ()
     * @param sBackground New value for property <code>background</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setBackground(sBackground: openui5Lib.Anon_DefaultLight): BlockLayout = js.native
+  def setBackground(sBackground: openui5Lib.TypeofBlockBackgroundType): BlockLayout = js.native
 }
 

@@ -37,6 +37,6 @@ object atSindresorhusStringDashHashMod extends js.Object {
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function fnv1a(string: string): number;
   // export = fnv1a;
-  /* Expanded */ def default(string: java.lang.String): scala.Double = js.native
+  def default(string: java.lang.String): scala.Double = js.native
 }
 

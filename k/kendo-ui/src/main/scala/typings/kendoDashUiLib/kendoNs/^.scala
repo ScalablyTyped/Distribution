@@ -93,8 +93,8 @@ object ^ extends js.Object {
   def unbind(element: kendoDashUiLib.JQuery): scala.Unit = js.native
   def unbind(element: stdLib.Element): scala.Unit = js.native
   def widgetInstance(element: kendoDashUiLib.JQuery): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
-  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Anon_ActionSheet): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
-  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Anon_Alert): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
-  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Anon_ArcGauge): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
+  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.Typeofui): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
+  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.TypeofuiActionSheet): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
+  def widgetInstance(element: kendoDashUiLib.JQuery, suite: kendoDashUiLib.TypeofuiArcGauge): kendoDashUiLib.kendoNs.uiNs.Widget = js.native
 }
 

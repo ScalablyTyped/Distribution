@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var React: singleDashSpaDashReactLib.Anon_A
-  var ReactDOM: singleDashSpaDashReactLib.Anon_AB
+  var React: singleDashSpaDashReactLib.TypeofReact
+  var ReactDOM: singleDashSpaDashReactLib.TypeofReactDOM
   var domElementGetter: js.UndefOr[js.Function0[stdLib.Element]] = js.undefined
   var loadRootComponent: js.UndefOr[js.Function0[js.Promise[reactLib.reactMod.ComponentClass[_, _]]]] = js.undefined
   var parcelCanUpdate: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,8 +18,8 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    React: singleDashSpaDashReactLib.Anon_A,
-    ReactDOM: singleDashSpaDashReactLib.Anon_AB,
+    React: singleDashSpaDashReactLib.TypeofReact,
+    ReactDOM: singleDashSpaDashReactLib.TypeofReactDOM,
     domElementGetter: () => stdLib.Element = null,
     loadRootComponent: () => js.Promise[reactLib.reactMod.ComponentClass[_, _]] = null,
     parcelCanUpdate: js.UndefOr[scala.Boolean] = js.undefined,

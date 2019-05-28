@@ -12,7 +12,7 @@ object ^ extends js.Object {
     /* root */ java.lang.String, 
     /* options */ js.UndefOr[easyDashXDashHeadersLib.Anon_Dotfiles], 
     Handler
-  ]) with easyDashXDashHeadersLib.Anon_Mime = js.native
+  ]) with easyDashXDashHeadersLib.TypeofserveStatic = js.native
   def apply(): Express = js.native
   def Router(): easyDashXDashHeadersLib.expressMod.Router = js.native
   def Router(options: js.Any): easyDashXDashHeadersLib.expressMod.Router = js.native

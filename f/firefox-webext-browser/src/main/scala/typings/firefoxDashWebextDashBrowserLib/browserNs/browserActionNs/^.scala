@@ -69,7 +69,7 @@ object ^ extends js.Object {
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_ImageDataKey): js.Promise[scala.Unit] = js.native
+  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_ImageData): js.Promise[scala.Unit] = js.native
   /**
     * Sets the html document to be opened as a popup when the user clicks on the browser action's icon.
     * @param details Specifies to which tab or window the value should be set, or from which one it should be

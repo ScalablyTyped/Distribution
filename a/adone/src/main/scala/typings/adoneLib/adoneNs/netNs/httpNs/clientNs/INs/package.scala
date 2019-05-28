@@ -10,7 +10,7 @@ package object INs {
   type Data = js.UndefOr[
     java.lang.String | nodeLib.Buffer | stdLib.ArrayBuffer | nodeLib.streamMod.Readable | stdLib.ArrayBufferView | js.Object
   ]
-  type FormValue = java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | adoneLib.Anon_OptionsValue
+  type FormValue = java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable | adoneLib.Anon_Options
   type Options = stdLib.Partial[Config]
   type Transformer = js.Function3[/* data */ Data, /* headers */ js.Object, /* config */ Options, Data]
 }

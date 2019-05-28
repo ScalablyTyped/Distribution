@@ -110,11 +110,7 @@ trait PartialStepProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.stepStepMod.StepClasskey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapStepClasskey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var connector: js.UndefOr[reactLib.reactMod.ReactElement[_]] = js.undefined
@@ -384,9 +380,7 @@ object PartialStepProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.stepStepMod.StepClasskey]
-    ] = null,
+    classes: PartialClassNameMapStepClasskey = null,
     color: java.lang.String = null,
     completed: js.UndefOr[scala.Boolean] = js.undefined,
     connector: reactLib.reactMod.ReactElement[_] = null,

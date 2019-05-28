@@ -22,7 +22,7 @@ object RendererInterface {
     crashReporter: CrashReporter,
     desktopCapturer: DesktopCapturer,
     ipcRenderer: IpcRenderer,
-    nativeImage: electronLib.Anon_Buffer,
+    nativeImage: electronLib.TypeofClassNativeImage,
     remote: Remote,
     screen: Screen,
     shell: Shell,

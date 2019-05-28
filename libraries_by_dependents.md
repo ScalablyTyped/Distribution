@@ -210,7 +210,6 @@
 | 1349 | [cli-color](./c/cli-color) | Colors, formatting and other tools for the console
 | 1347 | [webpack-dev-middleware](./w/webpack-dev-middleware) | A development middleware for webpack
 | 1340 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com
-| 1336 | [antd](./a/antd) | An enterprise-class UI design language and React-b
 | 1327 | [lodash_dot_get](./l/lodash_dot_get) | The lodash method _.get exported as a module.
 | 1325 | [strip-ansi](./s/strip-ansi) | Strip ANSI escape codes from a string
 | 1321 | [warning](./w/warning) | A mirror of Facebook's Warning

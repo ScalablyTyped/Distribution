@@ -108,13 +108,7 @@ trait PartialCircularProgressProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[
-        atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressClassKey
-      ]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapCircularProgressClassKey] = js.undefined
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit
   ] = js.undefined
@@ -385,11 +379,7 @@ object PartialCircularProgressProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[
-        atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressClassKey
-      ]
-    ] = null,
+    classes: PartialClassNameMapCircularProgressClassKey = null,
     color: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit = null,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,
     contextMenu: java.lang.String = null,

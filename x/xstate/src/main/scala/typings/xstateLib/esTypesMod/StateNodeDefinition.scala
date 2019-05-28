@@ -57,7 +57,7 @@ object StateNodeDefinition {
     invoke: InvokesConfig[TContext, TEvent] = null,
     onDone: java.lang.String | (SingleOrArray[TransitionConfig[TContext, DoneEventObject]]) = null,
     parallel: js.UndefOr[scala.Boolean] = js.undefined,
-    parent: xstateLib.esStateNodeMod.StateNode[TContext, _, OmniEventObject[EventObject]] = null,
+    parent: xstateLib.esStateNodeMod.StateNode[TContext, _, TEvent] = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     version: java.lang.String = null
   ): StateNodeDefinition[TContext, TStateSchema, TEvent] = {

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait DefaultTransitionSpec extends js.Object {
   var friction: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`35`
   var tension: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`300`
-  var timing: reactDashNativeDashTabDashViewLib.Anon_Config
+  var timing: reactDashNativeDashTabDashViewLib.Fn_Config
 }
 
 object DefaultTransitionSpec {
@@ -16,7 +16,7 @@ object DefaultTransitionSpec {
   def apply(
     friction: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`35`,
     tension: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibNumbers.`300`,
-    timing: reactDashNativeDashTabDashViewLib.Anon_Config
+    timing: reactDashNativeDashTabDashViewLib.Fn_Config
   ): DefaultTransitionSpec = {
     val __obj = js.Dynamic.literal(friction = friction, tension = tension, timing = timing)
   

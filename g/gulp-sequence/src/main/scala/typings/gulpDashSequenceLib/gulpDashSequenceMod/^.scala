@@ -373,6 +373,6 @@ object ^ extends js.Object {
     s25: Step,
     done: Done
   ): scala.Unit = js.native
-  def use(gulp: gulpLib.gulpMod.Gulp): gulpDashSequenceLib.Anon_AdditionalTasks = js.native
+  def use(gulp: gulpLib.gulpMod.Gulp): gulpDashSequenceLib.Fn_AdditionalTasks = js.native
 }
 

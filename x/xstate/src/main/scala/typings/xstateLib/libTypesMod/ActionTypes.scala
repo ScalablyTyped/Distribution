@@ -56,6 +56,10 @@ object ActionTypes extends js.Object {
     extends xstateLib.libTypesMod.ActionTypes
   
   @js.native
+  sealed trait Pure
+    extends xstateLib.libTypesMod.ActionTypes
+  
+  @js.native
   sealed trait Raise
     extends xstateLib.libTypesMod.ActionTypes
   
@@ -71,6 +75,10 @@ object ActionTypes extends js.Object {
   sealed trait Stop
     extends xstateLib.libTypesMod.ActionTypes
   
+  @js.native
+  sealed trait Update
+    extends xstateLib.libTypesMod.ActionTypes
+  
   /* "xstate.after" */ val After: After with java.lang.String = js.native
   /* "xstate.assign" */ val Assign: Assign with java.lang.String = js.native
   /* "xstate.cancel" */ val Cancel: Cancel with java.lang.String = js.native
@@ -82,10 +90,12 @@ object ActionTypes extends js.Object {
   /* "xstate.invoke" */ val Invoke: Invoke with java.lang.String = js.native
   /* "xstate.log" */ val Log: Log with java.lang.String = js.native
   /* "" */ val NullEvent: NullEvent with java.lang.String = js.native
+  /* "xstate.pure" */ val Pure: Pure with java.lang.String = js.native
   /* "xstate.raise" */ val Raise: Raise with java.lang.String = js.native
   /* "xstate.send" */ val Send: Send with java.lang.String = js.native
   /* "xstate.start" */ val Start: Start with java.lang.String = js.native
   /* "xstate.stop" */ val Stop: Stop with java.lang.String = js.native
+  /* "xstate.update" */ val Update: Update with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[xstateLib.libTypesMod.ActionTypes with java.lang.String] = js.native
 }

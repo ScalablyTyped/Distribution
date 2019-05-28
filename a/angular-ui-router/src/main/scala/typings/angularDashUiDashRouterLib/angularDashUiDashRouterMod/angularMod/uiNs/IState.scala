@@ -68,7 +68,7 @@ trait IState extends js.Object {
   /**
     * String HTML content, or function that returns an HTML string
     */
-  var template: js.UndefOr[java.lang.String | angularDashUiDashRouterLib.Anon_Params] = js.undefined
+  var template: js.UndefOr[java.lang.String | angularDashUiDashRouterLib.Fn_Params] = js.undefined
   /**
     * Function, returns HTML content string
     */
@@ -78,7 +78,7 @@ trait IState extends js.Object {
   /**
     * String URL path to template file OR Function, returns URL path string
     */
-  var templateUrl: js.UndefOr[java.lang.String | angularDashUiDashRouterLib.Anon_Params] = js.undefined
+  var templateUrl: js.UndefOr[java.lang.String | angularDashUiDashRouterLib.Fn_Params] = js.undefined
   /**
     * A url with optional parameters. When a state is navigated or transitioned to, the $stateParams service will be populated with any parameters that were passed.
     */
@@ -107,9 +107,9 @@ object IState {
     redirectTo: java.lang.String | angularLib.angularMod.Global.Function | IState = null,
     reloadOnSearch: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    template: java.lang.String | angularDashUiDashRouterLib.Anon_Params = null,
+    template: java.lang.String | angularDashUiDashRouterLib.Fn_Params = null,
     templateProvider: angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) = null,
-    templateUrl: java.lang.String | angularDashUiDashRouterLib.Anon_Params = null,
+    templateUrl: java.lang.String | angularDashUiDashRouterLib.Fn_Params = null,
     url: java.lang.String | IUrlMatcher = null,
     views: org.scalablytyped.runtime.StringDictionary[IState] = null
   ): IState = {

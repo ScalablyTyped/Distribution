@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CommonInterface extends js.Object {
   var clipboard: Clipboard
   var crashReporter: CrashReporter
-  var nativeImage: electronLib.Anon_Buffer
+  var nativeImage: electronLib.TypeofClassNativeImage
   var screen: Screen
   var shell: Shell
 }
@@ -18,7 +18,7 @@ object CommonInterface {
   def apply(
     clipboard: Clipboard,
     crashReporter: CrashReporter,
-    nativeImage: electronLib.Anon_Buffer,
+    nativeImage: electronLib.TypeofClassNativeImage,
     screen: Screen,
     shell: Shell
   ): CommonInterface = {

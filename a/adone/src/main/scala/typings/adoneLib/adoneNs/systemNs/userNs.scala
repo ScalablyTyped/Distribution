@@ -26,7 +26,7 @@ object userNs extends js.Object {
   /**
     * Returns uid by the given username
     */
-  def uid(username: java.lang.String): adoneLib.Anon_GidUidNumber = js.native
+  def uid(username: java.lang.String): adoneLib.Anon_GidUid = js.native
   /**
     * Returns username by the given uid
     */

@@ -259,7 +259,7 @@ class ODataModel protected ()
     * Returns the default count mode for retrieving the count of collections
     * @since 1.20
     */
-  def getDefaultCountMode(): openui5Lib.Anon_Both = js.native
+  def getDefaultCountMode(): openui5Lib.TypeofCountMode = js.native
   /**
     * Returns all headers and custom headers which are stored in the OData model.
     * @returns the header map
@@ -365,7 +365,7 @@ class ODataModel protected ()
     * @since 1.20
     * @param sCountMode undefined
     */
-  def setDefaultCountMode(sCountMode: openui5Lib.Anon_Both): scala.Unit = js.native
+  def setDefaultCountMode(sCountMode: openui5Lib.TypeofCountMode): scala.Unit = js.native
   /**
     * Set custom headers which are provided in a key/value map. These headers are used for requests
     * against the OData backend.Private headers which are set in the ODataModel cannot be modified.These

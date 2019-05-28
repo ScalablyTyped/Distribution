@@ -13,7 +13,7 @@ class default () extends Popover
 @JSImport("antd-mobile/es/popover", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: antdDashMobileLib.Anon_DefaultPropsMyName = js.native
+  var Item: antdDashMobileLib.TypeofClassItemDefaultProps = js.native
   var defaultProps: antdDashMobileLib.Anon_AlignPlacement = js.native
 }
 

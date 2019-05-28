@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Window extends js.Object {
-  var wiiu: Anon_Gamepad = js.native
+  var wiiu: Typeofwiiu = js.native
   @JSName("addEventListener")
   def addEventListener_wiiu_imageview_change_content(
     `type`: wiiuLib.wiiuLibStrings.wiiu_imageview_change_content,

@@ -12,7 +12,7 @@ trait Options extends js.Object {
   var exclusions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var htmlAcceptHeaders: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var index: js.UndefOr[java.lang.String] = js.undefined
-  var logger: js.UndefOr[connectDashHistoryDashApiDashFallbackDashExclusionsLib.Anon_Message] = js.undefined
+  var logger: js.UndefOr[connectDashHistoryDashApiDashFallbackDashExclusionsLib.Fn_Message] = js.undefined
   var rewrites: js.UndefOr[js.Array[Rewrite]] = js.undefined
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -24,7 +24,7 @@ object Options {
     exclusions: js.Array[java.lang.String] = null,
     htmlAcceptHeaders: js.Array[java.lang.String] = null,
     index: java.lang.String = null,
-    logger: connectDashHistoryDashApiDashFallbackDashExclusionsLib.Anon_Message = null,
+    logger: connectDashHistoryDashApiDashFallbackDashExclusionsLib.Fn_Message = null,
     rewrites: js.Array[Rewrite] = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {

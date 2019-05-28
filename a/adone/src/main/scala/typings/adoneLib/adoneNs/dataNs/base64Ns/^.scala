@@ -52,12 +52,12 @@ object ^ extends js.Object {
   @JSName("encode")
   def encode_String(
     str: java.lang.String,
-    options: adoneLib.adoneNs.dataNs.base64Ns.INs.EncodeOptions with adoneLib.Anon_BufferFalse
+    options: adoneLib.adoneNs.dataNs.base64Ns.INs.EncodeOptions with adoneLib.Anon_Buffer
   ): java.lang.String = js.native
   @JSName("encode")
   def encode_String(
     str: nodeLib.Buffer,
-    options: adoneLib.adoneNs.dataNs.base64Ns.INs.EncodeOptions with adoneLib.Anon_BufferFalse
+    options: adoneLib.adoneNs.dataNs.base64Ns.INs.EncodeOptions with adoneLib.Anon_Buffer
   ): java.lang.String = js.native
 }
 

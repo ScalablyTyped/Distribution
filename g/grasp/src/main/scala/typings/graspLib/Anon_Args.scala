@@ -18,7 +18,7 @@ trait Anon_Args extends js.Object {
   // it should be up to them to use a cast rather than the typedef to be
   // overly lenient. We never know if grasp might change their internal use of
   // fs, after all.
-  var fs: js.UndefOr[Anon_AccessAccessSync] = js.undefined
+  var fs: js.UndefOr[Typeoffs] = js.undefined
   var input: js.UndefOr[java.lang.String] = js.undefined
   var stdin: js.UndefOr[nodeLib.NodeJSNs.ReadStream] = js.undefined
   var textFormat: js.UndefOr[cliDashColorLib.cliDashColorMod.Format] = js.undefined
@@ -32,7 +32,7 @@ object Anon_Args {
     console: stdLib.Console = null,
     error: /* message */ java.lang.String => scala.Unit = null,
     exit: /* code */ scala.Double => scala.Unit = null,
-    fs: Anon_AccessAccessSync = null,
+    fs: Typeoffs = null,
     input: java.lang.String = null,
     stdin: nodeLib.NodeJSNs.ReadStream = null,
     textFormat: cliDashColorLib.cliDashColorMod.Format = null

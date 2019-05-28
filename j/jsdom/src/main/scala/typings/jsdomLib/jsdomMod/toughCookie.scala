@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSImport("jsdom", "toughCookie")
 @js.native
 object toughCookie extends js.Object {
-  var Cookie: jsdomLib.Anon_CookieString = js.native
-  var CookieJar: jsdomLib.Anon_Cb = js.native
+  var Cookie: jsdomLib.TypeofClassCookie = js.native
+  var CookieJar: jsdomLib.TypeofClassCookieJar = js.native
   val CookieJarNs: js.Any = js.native
   val CookieNs: js.Any = js.native
   var MemoryCookieStore: org.scalablytyped.runtime.Instantiable0[toughDashCookieLib.toughDashCookieMod.MemoryCookieStore] = js.native

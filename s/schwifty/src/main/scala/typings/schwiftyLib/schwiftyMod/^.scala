@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val plugin: hapiLib.hapiMod.Plugin[RegistrationOptions] = js.native
-  def assertCompatible(ModelA: schwiftyLib.Anon_GetJoiSchema, ModelB: schwiftyLib.Anon_GetJoiSchema): scala.Unit | stdLib.Error = js.native
+  def assertCompatible(ModelA: schwiftyLib.TypeofClassModel, ModelB: schwiftyLib.TypeofClassModel): scala.Unit | stdLib.Error = js.native
   def assertCompatible(
-    ModelA: schwiftyLib.Anon_GetJoiSchema,
-    ModelB: schwiftyLib.Anon_GetJoiSchema,
+    ModelA: schwiftyLib.TypeofClassModel,
+    ModelB: schwiftyLib.TypeofClassModel,
     message: java.lang.String
   ): scala.Unit | stdLib.Error = js.native
 }

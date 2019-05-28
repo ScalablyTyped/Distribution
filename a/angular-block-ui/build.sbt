@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "angular-block-ui"
-version := "0.2-dt-20180906Z-09b805"
+version := "0.2-dt-20180906Z-f6e0a4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-d7819f",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-016930",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

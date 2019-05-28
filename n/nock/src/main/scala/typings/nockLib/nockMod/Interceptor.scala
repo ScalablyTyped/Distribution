@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Interceptor extends js.Object {
   def basicAuth(options: nockLib.Anon_Pass): this.type = js.native
-  def delay(opts: nockLib.Anon_BodyHead): this.type = js.native
+  def delay(opts: nockLib.Anon_Body): this.type = js.native
   def delay(opts: scala.Double): this.type = js.native
   def delayBody(timeMs: scala.Double): this.type = js.native
   def delayConnection(timeMs: scala.Double): this.type = js.native
   def getTotalDelay(): scala.Double = js.native
   def matchHeader(name: java.lang.String, value: java.lang.String): this.type = js.native
-  def matchHeader(name: java.lang.String, value: nockLib.Anon_Value): this.type = js.native
+  def matchHeader(name: java.lang.String, value: nockLib.Fn_Value): this.type = js.native
   def matchHeader(name: java.lang.String, value: stdLib.RegExp): this.type = js.native
   def once(): this.type = js.native
   def optionally(): this.type = js.native
   def query(params: java.lang.String): this.type = js.native
-  def query(params: nockLib.Anon_QueryObject): this.type = js.native
+  def query(params: nockLib.Fn_QueryObject): this.type = js.native
   def query(params: POJO): this.type = js.native
   def query(params: scala.Boolean): this.type = js.native
   def reply(

@@ -29,7 +29,7 @@ trait Global extends js.Object {
   var Int16Array: stdLib.Int16ArrayConstructor = js.native
   var Int32Array: stdLib.Int32ArrayConstructor = js.native
   var Int8Array: stdLib.Int8ArrayConstructor = js.native
-  var Intl: nodeLib.Anon_Collator = js.native
+  var Intl: nodeLib.TypeofIntl = js.native
   var JSON: stdLib.JSON = js.native
   var Map: nodeLib.MapConstructor = js.native
   var Math: stdLib.Math = js.native
@@ -80,7 +80,7 @@ trait Global extends js.Object {
   @JSName("parseFloat")
   var parseFloat_Original: js.Function1[/* string */ java.lang.String, scala.Double] = js.native
   @JSName("parseInt")
-  var parseInt_Original: nodeLib.Anon_Radix = js.native
+  var parseInt_Original: nodeLib.Fn_Radix = js.native
   var process: Process = js.native
   @JSName("queueMicrotask")
   var queueMicrotask_Original: js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit] = js.native

@@ -31,7 +31,7 @@ object Interpreter extends js.Object {
     */
   var defaultOptions: xstateLib.esTypesMod.InterpreterOptions = js.native
   @JSName("interpret")
-  var interpret_Original: xstateLib.Anon_Machine = js.native
+  var interpret_Original: xstateLib.Fn_Machine = js.native
   def interpret[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema */, TEvent /* <: xstateLib.esTypesMod.EventObject */](machine: xstateLib.esTypesMod.StateMachine[TContext, TStateSchema, TEvent]): xstateLib.esInterpreterMod.Interpreter[TContext, TStateSchema, TEvent] = js.native
   def interpret[TContext, TStateSchema /* <: xstateLib.esTypesMod.StateSchema */, TEvent /* <: xstateLib.esTypesMod.EventObject */](
     machine: xstateLib.esTypesMod.StateMachine[TContext, TStateSchema, TEvent],

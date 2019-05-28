@@ -36,8 +36,8 @@ class Neuron () extends js.Object {
     * Returns true or false whether the neuron is connected to another neuron (parameter).
     * @param neuron
     */
-  def connected(): synapticLib.Anon_ConnectionResult | scala.Boolean = js.native
-  def connected(neuron: js.Any): synapticLib.Anon_ConnectionResult | scala.Boolean = js.native
+  def connected(): synapticLib.Anon_Connection | scala.Boolean = js.native
+  def connected(neuron: js.Any): synapticLib.Anon_Connection | scala.Boolean = js.native
   /**
     * A neuron can gate a connection between two neurons, or a neuron's self-connection. This allows you to create second order neural network architectures.
     * @param connection

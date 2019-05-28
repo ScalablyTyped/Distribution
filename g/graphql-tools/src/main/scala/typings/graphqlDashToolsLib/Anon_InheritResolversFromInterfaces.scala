@@ -9,7 +9,7 @@ trait Anon_InheritResolversFromInterfaces extends js.Object {
   var inheritResolversFromInterfaces: js.UndefOr[scala.Boolean] = js.undefined
   var onTypeConflict: js.UndefOr[graphqlDashToolsLib.distStitchingMergeSchemasMod.OnTypeConflict] = js.undefined
   var resolvers: js.UndefOr[graphqlDashToolsLib.distInterfacesMod.IResolversParameter] = js.undefined
-  var schemaDirectives: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Anon_Config]] = js.undefined
+  var schemaDirectives: js.UndefOr[org.scalablytyped.runtime.StringDictionary[TypeofClassSchemaDirectiveVisitor]] = js.undefined
   var schemas: js.Array[
     java.lang.String | graphqlLib.graphqlMod.GraphQLSchema | graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.typeDefinitionMod.GraphQLNamedType]
   ]
@@ -24,7 +24,7 @@ object Anon_InheritResolversFromInterfaces {
     inheritResolversFromInterfaces: js.UndefOr[scala.Boolean] = js.undefined,
     onTypeConflict: graphqlDashToolsLib.distStitchingMergeSchemasMod.OnTypeConflict = null,
     resolvers: graphqlDashToolsLib.distInterfacesMod.IResolversParameter = null,
-    schemaDirectives: org.scalablytyped.runtime.StringDictionary[Anon_Config] = null
+    schemaDirectives: org.scalablytyped.runtime.StringDictionary[TypeofClassSchemaDirectiveVisitor] = null
   ): Anon_InheritResolversFromInterfaces = {
     val __obj = js.Dynamic.literal(schemas = schemas)
     if (!js.isUndefined(inheritResolversFromInterfaces)) __obj.updateDynamic("inheritResolversFromInterfaces")(inheritResolversFromInterfaces)

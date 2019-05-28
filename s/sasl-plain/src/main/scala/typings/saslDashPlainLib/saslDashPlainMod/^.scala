@@ -26,6 +26,6 @@ class ^ () extends PlainMechanism {
 @JSImport("sasl-plain", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Mechanism: saslDashPlainLib.Anon_Mechanism = js.native
+  var Mechanism: saslDashPlainLib.TypeofClassPlainMechanism = js.native
 }
 

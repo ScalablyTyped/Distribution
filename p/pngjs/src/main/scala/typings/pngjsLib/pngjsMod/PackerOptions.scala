@@ -10,7 +10,7 @@ trait PackerOptions extends js.Object {
   var bitDepth: js.UndefOr[pngjsLib.pngjsLibNumbers.`8` | pngjsLib.pngjsLibNumbers.`16`] = js.undefined
   var colorType: js.UndefOr[ColorType] = js.undefined
   var deflateChunkSize: js.UndefOr[scala.Double] = js.undefined
-  var deflateFactory: js.UndefOr[pngjsLib.Anon_Options] = js.undefined
+  var deflateFactory: js.UndefOr[pngjsLib.Fn_Options] = js.undefined
   var deflateLevel: js.UndefOr[scala.Double] = js.undefined
   var deflateStrategy: js.UndefOr[scala.Double] = js.undefined
   var filterType: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
@@ -25,7 +25,7 @@ object PackerOptions {
     bitDepth: pngjsLib.pngjsLibNumbers.`8` | pngjsLib.pngjsLibNumbers.`16` = null,
     colorType: ColorType = null,
     deflateChunkSize: scala.Int | scala.Double = null,
-    deflateFactory: pngjsLib.Anon_Options = null,
+    deflateFactory: pngjsLib.Fn_Options = null,
     deflateLevel: scala.Int | scala.Double = null,
     deflateStrategy: scala.Int | scala.Double = null,
     filterType: scala.Double | js.Array[scala.Double] = null,

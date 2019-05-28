@@ -57,6 +57,6 @@ class PageableCollection[TModel /* <: backboneLib.backboneMod.Model */] ()
 @JSGlobal("backbone.PageableCollection")
 @js.native
 object PageableCollection extends js.Object {
-  def noConflict(): backboneDotPaginatorLib.Anon_Models = js.native
+  def noConflict(): backboneDotPaginatorLib.TypeofClassPageableCollection = js.native
 }
 

@@ -18,25 +18,25 @@ class BlobClient protected () extends js.Object {
     * @return resolved with Artifact artifact.
     */
   @JSName("getArtifact")
-  var getArtifact_Original: webgmeLib.Anon_CallbackMetadataHashArtifact = js.native
+  var getArtifact_Original: webgmeLib.Fn_CallbackMetadataHashArtifact = js.native
   @JSName("getMetadata")
-  var getMetadata_Original: webgmeLib.Anon_CallbackMetadataHashMetadata = js.native
+  var getMetadata_Original: webgmeLib.Fn_CallbackMetadataHashMetadata = js.native
   @JSName("getObjectAsJSON")
-  var getObjectAsJSON_Original: webgmeLib.Anon_CallbackMetadataHashJSON = js.native
+  var getObjectAsJSON_Original: webgmeLib.Fn_CallbackMetadataHashJSON = js.native
   @JSName("getObjectAsString")
-  var getObjectAsString_Original: webgmeLib.Anon_CallbackMetadataHashContentString = js.native
+  var getObjectAsString_Original: webgmeLib.Fn_CallbackMetadataHashContentString = js.native
   @JSName("getObject")
-  var getObject_Original: webgmeLib.Anon_CallbackMetadataHashSubpathContent = js.native
+  var getObject_Original: webgmeLib.Fn_CallbackMetadataHashSubpathContent = js.native
   @JSName("getSubObject")
-  var getSubObject_Original: webgmeLib.Anon_CallbackMetadataHashSubpath = js.native
+  var getSubObject_Original: webgmeLib.Fn_CallbackMetadataHashSubpath = js.native
   @JSName("putFile")
-  var putFile_Original: webgmeLib.Anon_CallbackData = js.native
+  var putFile_Original: webgmeLib.Fn_CallbackData = js.native
   @JSName("putFiles")
-  var putFiles_Original: webgmeLib.Anon_CallbackNameO = js.native
+  var putFiles_Original: webgmeLib.Fn_CallbackNameO = js.native
   @JSName("putMetadata")
-  var putMetadata_Original: webgmeLib.Anon_CallbackMetadataDescriptor = js.native
+  var putMetadata_Original: webgmeLib.Fn_CallbackMetadataDescriptor = js.native
   @JSName("saveAllArtifacts")
-  var saveAllArtifacts_Original: webgmeLib.Anon_CallbackArray = js.native
+  var saveAllArtifacts_Original: webgmeLib.Fn_CallbackArray = js.native
   /**
     * Creates a new artifact 
     * and adds it to array of artifacts of the instance.

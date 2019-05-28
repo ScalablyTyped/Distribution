@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Window extends js.Object {
-  var ej: Anon_Accordion
+  var ej: Typeofej
 }
 
 object Window {
   @scala.inline
-  def apply(ej: Anon_Accordion): Window = {
+  def apply(ej: Typeofej): Window = {
     val __obj = js.Dynamic.literal(ej = ej)
   
     __obj.asInstanceOf[Window]

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FsImplementationSync extends js.Object {
   @JSName("mkdirSync")
-  var mkdirSync_Original: mkdirpLib.Anon_Options = js.native
+  var mkdirSync_Original: mkdirpLib.Fn_Options = js.native
   @JSName("statSync")
   var statSync_Original: js.Function1[/* path */ nodeLib.fsMod.PathLike, nodeLib.fsMod.Stats] = js.native
   def mkdirSync(path: nodeLib.fsMod.PathLike): scala.Unit = js.native

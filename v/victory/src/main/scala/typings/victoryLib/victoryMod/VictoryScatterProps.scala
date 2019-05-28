@@ -79,7 +79,7 @@ trait VictoryScatterProps
   /**
     * The size prop determines how to scale each data point
     */
-  var size: js.UndefOr[scala.Double | victoryLib.Anon_Data] = js.undefined
+  var size: js.UndefOr[scala.Double | victoryLib.Fn_Data] = js.undefined
   /**
     * The style prop specifies styles for your VictoryScatter. Any valid inline style properties
     * will be applied. Height, width, and padding should be specified via the height,
@@ -93,7 +93,7 @@ trait VictoryScatterProps
   /**
     * The symbol prop determines which symbol should be drawn to represent data points.
     */
-  var symbol: js.UndefOr[ScatterSymbolType | victoryLib.Anon_DataAny] = js.undefined
+  var symbol: js.UndefOr[ScatterSymbolType | victoryLib.Fn_DataAny] = js.undefined
 }
 
 object VictoryScatterProps {
@@ -117,16 +117,16 @@ object VictoryScatterProps {
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
-    labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
+    labels: js.Array[java.lang.String] | victoryLib.Fn_DataAnyString = null,
     maxBubbleSize: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     padding: PaddingProps = null,
     samples: scala.Int | scala.Double = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
-    size: scala.Double | victoryLib.Anon_Data = null,
+    size: scala.Double | victoryLib.Fn_Data = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined,
     style: VictoryStyleInterface = null,
-    symbol: ScatterSymbolType | victoryLib.Anon_DataAny = null,
+    symbol: ScatterSymbolType | victoryLib.Fn_DataAny = null,
     theme: VictoryThemeDefinition = null,
     width: scala.Int | scala.Double = null,
     x: DataGetterPropType = null,

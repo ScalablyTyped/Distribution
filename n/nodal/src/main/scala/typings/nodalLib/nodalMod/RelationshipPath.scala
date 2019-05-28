@@ -12,7 +12,7 @@ class RelationshipPath protected () extends js.Object {
   var constructor: js.Any = js.native
   var path: js.Array[RelationshipEdge | RelationshipNode] = js.native
   def add(node: RelationshipNode, edge: RelationshipEdge): RelationshipPath = js.native
-  def getModel(): nodalLib.Anon_CalcField = js.native
+  def getModel(): nodalLib.TypeofClassModel = js.native
   def immediateMultiple(): scala.Boolean = js.native
   def joinName(): java.lang.String = js.native
   def joinName(reverse: scala.Boolean): java.lang.String = js.native

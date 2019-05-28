@@ -14,9 +14,9 @@ class Card ()
 @JSImport("antd-mobile", "Card")
 @js.native
 object Card extends js.Object {
-  var Body: antdDashMobileLib.Anon_DefaultPropsAnonPrefixClsDefault_1309556686 = js.native
-  var Footer: antdDashMobileLib.Anon_DefaultPropsAnonPrefixClsDefault_926869646 = js.native
-  var Header: antdDashMobileLib.Anon_DefaultPropsAnonPrefixClsThumbStyle = js.native
+  var Body: antdDashMobileLib.TypeofClassCardBodyDefaultProps = js.native
+  var Footer: antdDashMobileLib.TypeofClassCardFooterDefaultProps = js.native
+  var Header: antdDashMobileLib.TypeofClassCardHeaderDefaultProps = js.native
   var defaultProps: antdDashMobileLib.Anon_Full = js.native
 }
 

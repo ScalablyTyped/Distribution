@@ -21,5 +21,6 @@ object esActionTypesMod extends js.Object {
   val send: xstateLib.esTypesMod.ActionTypes = js.native
   val start: xstateLib.esTypesMod.ActionTypes = js.native
   val stop: xstateLib.esTypesMod.ActionTypes = js.native
+  val update: xstateLib.esTypesMod.ActionTypes = js.native
 }
 

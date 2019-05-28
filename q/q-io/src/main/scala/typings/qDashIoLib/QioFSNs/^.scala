@@ -63,7 +63,7 @@ object ^ extends js.Object {
   def remove(path: java.lang.String): qLib.qMod.Promise[scala.Unit] = js.native
   def removeTree(path: java.lang.String): qLib.qMod.Promise[scala.Unit] = js.native
   def rename(source: java.lang.String, target: java.lang.String): qLib.qMod.Promise[scala.Unit] = js.native
-  def reroot(path: java.lang.String): qDashIoLib.Anon_Absolute = js.native
+  def reroot(path: java.lang.String): qDashIoLib.TypeofQioFS = js.native
   def resolve(path: java.lang.String*): java.lang.String = js.native
   def resolve(paths: js.Array[java.lang.String]): java.lang.String = js.native
   def root(path: java.lang.String): java.lang.String = js.native

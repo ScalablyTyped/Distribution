@@ -42,8 +42,8 @@ object loadersNs extends js.Object {
   /* static members */
   @js.native
   object Loader extends js.Object {
-    var Resource: pixiDotJsLib.Anon_EMPTYGIF = js.native
-    var async: pixiDotJsLib.Anon_EMPTYGIF = js.native
+    var Resource: pixiDotJsLib.TypeofClassResource = js.native
+    var async: pixiDotJsLib.TypeofClassResource = js.native
     @JSName("base64")
     var base64_Original: js.Function1[/* input */ java.lang.String, java.lang.String] = js.native
     @JSName("encodeBinary")

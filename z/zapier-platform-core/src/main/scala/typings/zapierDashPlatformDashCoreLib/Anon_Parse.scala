@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Parse extends js.Object {
   @JSName("stringify")
-  var stringify_Original: Anon_Key = js.native
+  var stringify_Original: Fn_Key = js.native
   /**
     * Acts a lot like regular `JSON.parse`, but throws a nice error for improper json input
     */

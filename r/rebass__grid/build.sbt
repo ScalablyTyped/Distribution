@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "rebass__grid"
-version := "6.0-dt-20190510Z-fac2c1"
+version := "6.0-dt-20190510Z-d70d79"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-9d1c81",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-336e99",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2",
   "org.scalablytyped" %%% "styled-system" % "4.2-dt-20190521Z-1aca72")
 publishArtifact in packageDoc := false

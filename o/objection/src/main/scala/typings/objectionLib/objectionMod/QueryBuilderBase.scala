@@ -416,7 +416,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def mergeJoinEager(relationExpression: RelationExpression, filters: FilterExpression[QM]): this.type = js.native
   def mergeNaiveEager(relationExpression: RelationExpression): this.type = js.native
   def mergeNaiveEager(relationExpression: RelationExpression, filters: FilterExpression[QM]): this.type = js.native
-  def modelClass(): objectionLib.Anon_Args = js.native
+  def modelClass(): objectionLib.TypeofClassModel = js.native
   def modify(func: js.Function1[/* builder */ this.type, scala.Unit]): this.type = js.native
   def modify(namedFilter: java.lang.String): this.type = js.native
   def modifyEager[QM2 /* <: Model */](relationExpression: RelationExpression, modifier: java.lang.String): QueryBuilder[QM, RM, RV] = js.native
@@ -435,7 +435,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def naiveEager(relationExpression: RelationExpression): this.type = js.native
   def naiveEager(relationExpression: RelationExpression, filters: FilterExpression[QM]): this.type = js.native
   def nodeify(callback: NodeStyleCallback): js.Promise[QM] = js.native
-  def omit(modelClass: objectionLib.Anon_Args, properties: js.Array[java.lang.String]): this.type = js.native
+  def omit(modelClass: objectionLib.TypeofClassModel, properties: js.Array[java.lang.String]): this.type = js.native
   def omit(properties: js.Array[java.lang.String]): this.type = js.native
   def onBuild(fn: js.Function1[/* builder */ this.type, scala.Unit]): this.type = js.native
   def onBuildKnex(
@@ -483,7 +483,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def pick(modelClass: objectionLib.Anon_Args, properties: js.Array[java.lang.String]): this.type = js.native
+  def pick(modelClass: objectionLib.TypeofClassModel, properties: js.Array[java.lang.String]): this.type = js.native
   def pick(properties: js.Array[java.lang.String]): this.type = js.native
   def range(): QueryBuilder[
     QM, 
@@ -561,7 +561,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def timeout(ms: scala.Double): this.type = js.native
   def timeout(ms: scala.Double, options: TimeoutOptions): this.type = js.native
   def toSql(): java.lang.String = js.native
-  def traverse(modelClass: objectionLib.Anon_Args, traverser: TraverserFunction): this.type = js.native
+  def traverse(modelClass: objectionLib.TypeofClassModel, traverser: TraverserFunction): this.type = js.native
   def unrelate(): this.type = js.native
   /**
     * @return a Promise of the number of updated rows

@@ -12,12 +12,7 @@ package object styledDashComponentsMod {
   type BaseThemeProviderComponent[T /* <: js.Object */, U /* <: js.Object */] = reactLib.reactMod.ComponentClass[ThemeProviderProps[T, U], reactLib.reactMod.ComponentState]
   type BaseWithThemeFnInterface[T /* <: js.Object */] = js.Function1[
     /* component */ reactLib.reactMod.ComponentType[js.Any], 
-    reactLib.reactMod.ForwardRefExoticComponent[
-      WithOptionalTheme[
-        reactLib.reactMod.ComponentPropsWithRef[reactLib.reactMod.ComponentType[js.Any]], 
-        T
-      ]
-    ]
+    reactLib.reactMod.ForwardRefExoticComponent[styledDashComponentsLib.WithOptionalThemeComponentPropsWithRefCT[T]]
   ]
   type CSSKeyframes = js.Object with org.scalablytyped.runtime.StringDictionary[CSSObject]
   type CSSObject = (csstypeLib.csstypeMod.Properties[java.lang.String | scala.Double]) with styledDashComponentsLib.styledDashComponentsLibStrings.CSSObject with js.Any

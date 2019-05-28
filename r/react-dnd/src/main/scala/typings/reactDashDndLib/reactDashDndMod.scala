@@ -82,9 +82,9 @@ object reactDashDndMod extends js.Object {
   ): reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentEnhancer[CollectedProps] = js.native
   @js.native
   object __EXPERIMENTAL_DND_HOOKS_THAT_MAY_CHANGE_AND_BREAK_MY_BUILD__ extends js.Object {
-    var useDrag: reactDashDndLib.Anon_Spec = js.native
-    var useDragLayer: reactDashDndLib.Anon_Collect = js.native
-    var useDrop: reactDashDndLib.Anon_SpecCollectedProps = js.native
+    var useDrag: reactDashDndLib.Fn_Spec = js.native
+    var useDragLayer: reactDashDndLib.Fn_Collect = js.native
+    var useDrop: reactDashDndLib.Fn_SpecCollectedProps = js.native
   }
   
 }

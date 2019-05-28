@@ -12,7 +12,7 @@ class ModelFactory protected () extends js.Object {
     * Create the ModelFactory with a provided Model to use as a reference.
     * @param {Nodal.Model} modelConstructor Must pass the constructor for the type of ModelFactory you wish to create.
     */
-  def this(modelConstructor: nodalLib.Anon_CalcField) = this()
+  def this(modelConstructor: nodalLib.TypeofClassModel) = this()
   var Model: js.Any = js.native
   /**
     * Creates models from an array of Objects containing the model data
@@ -32,7 +32,7 @@ object ModelFactory extends js.Object {
     * @param {Function} callback What to execute upon completion
     */
   def createFromModels(
-    Models: js.Array[nodalLib.Anon_CalcField],
+    Models: js.Array[nodalLib.TypeofClassModel],
     objModelData: nodalLib.nodalMod.IModelData,
     callback: js.Function
   ): scala.Unit = js.native

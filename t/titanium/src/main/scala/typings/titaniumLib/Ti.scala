@@ -11,100 +11,100 @@ object Ti extends js.Object {
   /**
   	 * The top-level API module, containing methods to output messages to the system log.
   	 */
-  val APINs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackDebug = js.native
+  val APINs: titaniumLib.TypeofAPI = js.native
   /**
   	 * The top-level Accelerometer module, used to determine the device's physical position.
   	 */
-  val AccelerometerNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEvent = js.native
+  val AccelerometerNs: titaniumLib.TypeofAccelerometer = js.native
   /**
   	 * Used for transmitting developer-defined Analytics events to the Appcelerator Analytics product.
   	 */
-  val AnalyticsNs: titaniumLib.Anon_AddEvent = js.native
+  val AnalyticsNs: titaniumLib.TypeofAnalytics = js.native
   /**
   	 * The top-level Android module.
   	 */
-  val AndroidNs: titaniumLib.Anon_ACTIONAIRPLANEMODECHANGED = js.native
+  val AndroidNs: titaniumLib.TypeofAndroidACTIONAIRPLANEMODECHANGED = js.native
   /**
   	 * The top-level App module is mainly used for accessing information about the
   	 * application at runtime, and for sending or listening for system events.
   	 */
-  val AppNs: titaniumLib.Anon_AccessibilityEnabled = js.native
+  val AppNs: titaniumLib.TypeofApp = js.native
   /**
   	 * The Calendar module provides an API for accessing the native calendar functionality.
   	 */
-  val CalendarNs: titaniumLib.Anon_ATTENDEEROLECHAIR = js.native
+  val CalendarNs: titaniumLib.TypeofCalendarATTENDEEROLECHAIR = js.native
   /**
   	 * A module for translating between primitive types and raw byte streams.
   	 */
-  val CodecNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBIGENDIAN = js.native
+  val CodecNs: titaniumLib.TypeofCodec = js.native
   /**
   	 * The top-level Contacts module, used for accessing and modifying the system contacts address book.
   	 */
-  val ContactsNs: titaniumLib.Anon_AUTHORIZATIONAUTHORIZED = js.native
+  val ContactsNs: titaniumLib.TypeofContacts = js.native
   /**
   	 * The top-level `Database` module, used for creating and accessing the
   	 * in-application SQLite database.
   	 */
-  val DatabaseNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackDbName = js.native
+  val DatabaseNs: titaniumLib.TypeofDatabase = js.native
   /**
   	 * The top level filesystem module, used to access files and directories on the device.
   	 */
-  val FilesystemNs: titaniumLib.Anon_AddEventListenerApiNameApplicationCacheDirectory = js.native
+  val FilesystemNs: titaniumLib.TypeofFilesystem = js.native
   /**
   	 * The top level Geolocation module. The Geolocation module is used for accessing device location based information.
   	 */
-  val GeolocationNs: titaniumLib.Anon_ACCURACYBEST = js.native
+  val GeolocationNs: titaniumLib.TypeofGeolocation = js.native
   /**
   	 * The Gesture module is responsible for high-level device gestures such as orientation changes
   	 * and shake gestures.
   	 */
-  val GestureNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName = js.native
+  val GestureNs: titaniumLib.TypeofGesture = js.native
   /**
   	 * The top level Locale module.
   	 */
-  val LocaleNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackCurrencyCode = js.native
+  val LocaleNs: titaniumLib.TypeofLocale = js.native
   /**
   	 * The top-level Media module.
   	 */
-  val MediaNs: titaniumLib.Anon_AUDIOFILEFORMAT3GP2 = js.native
+  val MediaNs: titaniumLib.TypeofMedia = js.native
   /**
   	 * Base type for all Titanium modules.
   	 */
-  val ModuleNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEvent = js.native
+  val ModuleNs: titaniumLib.TypeofModule = js.native
   /**
   	 * The top level network module.
   	 */
-  val NetworkNs: titaniumLib.Anon_AddConnectivityListener = js.native
+  val NetworkNs: titaniumLib.TypeofNetwork = js.native
   /**
   	 * The top-level Platform module.  The Platform module is used to access the device's platform-related
   	 * functionality.
   	 */
-  val PlatformNs: titaniumLib.Anon_AddEventListenerAddress = js.native
+  val PlatformNs: titaniumLib.TypeofPlatform = js.native
   /**
   	 * Stream module containing stream utility methods.
   	 */
-  val StreamNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentBuffer = js.native
+  val StreamNs: titaniumLib.TypeofStream = js.native
   /**
   	 * The main <Titanium.UI> module.
   	 */
-  val UINs: titaniumLib.Anon_ANIMATIONCURVEEASEIN = js.native
+  val UINs: titaniumLib.TypeofUI = js.native
   /**
   	 * The top-level Utils module, containing a set of JavaScript methods that are often useful when
   	 * building applications.
   	 */
-  val UtilsNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBase64decode = js.native
+  val UtilsNs: titaniumLib.TypeofUtils = js.native
   /**
   	 * Used to enable data and file transfers between a watchOS and iOS application.
   	 */
-  val WatchSessionNs: titaniumLib.Anon_ACTIVATIONSTATEACTIVATED = js.native
+  val WatchSessionNs: titaniumLib.TypeofWatchSession = js.native
   /**
   	 * The top level XML module.  The XML module is used for parsing and processing XML-based content.
   	 */
-  val XMLNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiNameGetBubbleParentGetLifecycleContainer = js.native
+  val XMLNs: titaniumLib.TypeofXML = js.native
   /**
   	 * The top level Yahoo module.  The Yahoo module is used for accessing Yahoo related API services.
   	 */
-  val YahooNs: titaniumLib.Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiNameGetBubbleParentGetLifecycleContainerLifecycleContainer = js.native
+  val YahooNs: titaniumLib.TypeofYahoo = js.native
   /**
   	 * The name of the API that this proxy corresponds to.
   	 */

@@ -13,32 +13,32 @@ object SchemaTypes extends js.Object {
     * section schema/array.js
     * http://mongoosejs.com/docs/api.html#schema-array-js
     */
-  var Array: mongooseLib.Anon_Cast = js.native
+  var Array: mongooseLib.TypeofClassArray = js.native
   /*
     * section schema/boolean.js
     * http://mongoosejs.com/docs/api.html#schema-boolean-js
     */
-  var Boolean: mongooseLib.Anon_Options = js.native
+  var Boolean: mongooseLib.TypeofClassBoolean = js.native
   /*
     * section schema/buffer.js
     * http://mongoosejs.com/docs/api.html#schema-buffer-js
     */
-  var Buffer: mongooseLib.Anon_KeyOptionsSchemaNameAnyBuffer = js.native
+  var Buffer: mongooseLib.TypeofClassBuffer = js.native
   /*
     * section schema/date.js
     * http://mongoosejs.com/docs/api.html#schema-date-js
     */
-  var Date: mongooseLib.Anon_KeyOptionsSchemaNameAny = js.native
+  var Date: mongooseLib.TypeofClassDate = js.native
   /*
     * section schema/decimal128.js
     * http://mongoosejs.com/docs/api.html#schema-decimal128-js
     */
-  var Decimal128: mongooseLib.Anon_KeyOptionsSchemaNameAnyDecimal128 = js.native
+  var Decimal128: mongooseLib.TypeofClassDecimal128 = js.native
   /*
     * section schema/documentarray.js
     * http://mongoosejs.com/docs/api.html#schema-documentarray-js
     */
-  var DocumentArray: mongooseLib.Anon_KeyOptions = js.native
+  var DocumentArray: mongooseLib.TypeofClassDocumentArray = js.native
   /*
     * section schema/embedded.js
     * http://mongoosejs.com/docs/api.html#schema-embedded-js
@@ -53,21 +53,21 @@ object SchemaTypes extends js.Object {
     * section schema/mixed.js
     * http://mongoosejs.com/docs/api.html#schema-mixed-js
     */
-  var Mixed: mongooseLib.Anon_OptionsPath = js.native
+  var Mixed: mongooseLib.TypeofClassMixed = js.native
   /*
     * section schema/number.js
     * http://mongoosejs.com/docs/api.html#schema-number-js
     */
-  var Number: mongooseLib.Anon_KeyOptionsSchemaName = js.native
+  var Number: mongooseLib.TypeofClassNumber = js.native
   /*
     * section schema/objectid.js
     * http://mongoosejs.com/docs/api.html#schema-objectid-js
     */
-  var ObjectId: mongooseLib.Anon_KeyOptionsSchemaNameAnyObjectId = js.native
+  var ObjectId: mongooseLib.TypeofClassObjectId = js.native
   /*
     * section schema/string.js
     * http://mongoosejs.com/docs/api.html#schema-string-js
     */
-  var String: mongooseLib.Anon_Key = js.native
+  var String: mongooseLib.TypeofClassString = js.native
 }
 

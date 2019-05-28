@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("nodal", "ModelArray")
 @js.native
 class ModelArray[T] protected () extends ItemArray[T] {
-  def this(modelConstructor: nodalLib.Anon_CalcField) = this()
-  var Model: nodalLib.Anon_CalcField = js.native
+  def this(modelConstructor: nodalLib.TypeofClassModel) = this()
+  var Model: nodalLib.TypeofClassModel = js.native
   /* private */ def __saveAll__(callback: js.Any): js.Any = js.native
   def destroyAll(callback: js.Function): scala.Unit = js.native
   def destroyCascade(callback: js.Function): scala.Unit = js.native

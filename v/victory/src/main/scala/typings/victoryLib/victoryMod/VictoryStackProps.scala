@@ -128,7 +128,7 @@ object VictoryStackProps {
     height: scala.Int | scala.Double = null,
     horizontal: js.UndefOr[scala.Boolean] = js.undefined,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
-    labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null,
+    labels: js.Array[java.lang.String] | victoryLib.Fn_DataAnyString = null,
     name: java.lang.String = null,
     padding: PaddingProps = null,
     scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,

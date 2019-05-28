@@ -13,10 +13,10 @@ object reactLibStrings {
   sealed trait A extends js.Object
   
   @js.native
-  sealed trait Anon_TypeAny extends js.Object
+  sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Fn_TypeAny extends js.Object
   
   @js.native
   sealed trait I extends js.Object
@@ -788,9 +788,9 @@ object reactLibStrings {
   @scala.inline
   def A: A = "A".asInstanceOf[A]
   @scala.inline
-  def Anon_TypeAny: Anon_TypeAny = "Anon_TypeAny".asInstanceOf[Anon_TypeAny]
-  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
+  def Fn_TypeAny: Fn_TypeAny = "Fn_TypeAny".asInstanceOf[Fn_TypeAny]
   @scala.inline
   def I: I = "I".asInstanceOf[I]
   @scala.inline

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yadda"
-version := "2.0-dt-20190515Z-4f2bda"
+version := "2.0-dt-20190515Z-b074ea"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

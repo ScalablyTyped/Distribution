@@ -30,7 +30,7 @@ class Descent protected () extends js.Object {
   var n: scala.Double = js.native
   var numGridSnapNodes: scala.Double = js.native
   var offsetDir: js.Any = js.native
-  var project: js.Array[webcolaLib.Anon_R] = js.native
+  var project: js.Array[webcolaLib.Fn_R] = js.native
   var random: js.Any = js.native
   var scaleSnapByMaxH: scala.Boolean = js.native
   var snapGridSize: scala.Double = js.native

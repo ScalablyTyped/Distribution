@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "redis-scripto"
-version := "0.1.3-dt-20190322Z-6223c5"
+version := "0.1.3-dt-20190322Z-06902a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-07594f",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190326Z-1c69b9",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190326Z-c63b83",
   "org.scalablytyped" %%% "std" % "3.4-8a92b2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

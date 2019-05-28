@@ -33,7 +33,7 @@ trait IBinding extends js.Object {
     * Registers a type to a binding. This must be a callable function.
     * @param {T} target The target function.
     */
-  def function[T /* <: forgeDashDiLib.Anon_Args */](target: T): IBinding = js.native
+  def function[T /* <: forgeDashDiLib.Fn_Args */](target: T): IBinding = js.native
   /**
     * Registeres an instance to a binding. This instance will always be returned.
     * @param {T} target The target instance.

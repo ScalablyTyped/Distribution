@@ -109,11 +109,7 @@ trait PartialStepIconProps extends js.Object {
   var autoSave: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var classes: js.UndefOr[
-    stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconClasskey]
-    ]
-  ] = js.undefined
+  var classes: js.UndefOr[PartialClassNameMapStepIconClasskey] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var contentEditable: js.UndefOr[scala.Boolean] = js.undefined
@@ -379,9 +375,7 @@ object PartialStepIconProps {
     autoSave: java.lang.String = null,
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    classes: stdLib.Partial[
-      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconClasskey]
-    ] = null,
+    classes: PartialClassNameMapStepIconClasskey = null,
     color: java.lang.String = null,
     completed: js.UndefOr[scala.Boolean] = js.undefined,
     contentEditable: js.UndefOr[scala.Boolean] = js.undefined,

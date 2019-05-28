@@ -45,6 +45,6 @@ object stringWidth extends js.Object {
   // TODO: remove this in the next major version, refactor the whole definition to:
   // declare function stringWidth(string: string): number;
   // export = stringWidth;
-  /* Expanded */ def default(string: java.lang.String): scala.Double = js.native
+  def default(string: java.lang.String): scala.Double = js.native
 }
 

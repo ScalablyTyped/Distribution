@@ -12,12 +12,12 @@ trait ZObject extends js.Object {
   var cursor: zapierDashPlatformDashCoreLib.Anon_Cursor = js.native
   var errors: zapierDashPlatformDashCoreLib.Anon_ExpiredAuthError = js.native
   @JSName("request")
-  var request_Original: zapierDashPlatformDashCoreLib.Anon_Options = js.native
+  var request_Original: zapierDashPlatformDashCoreLib.Fn_Options = js.native
   /**
     * turns a file or request into a file into a publicly accessible url
     */
   @JSName("stashFile")
-  var stashFile_Original: zapierDashPlatformDashCoreLib.Anon_ContentType = js.native
+  var stashFile_Original: zapierDashPlatformDashCoreLib.Fn_ContentType = js.native
   def dehydrate[T](func: js.Function2[/* z */ this.type, /* bundle */ Bundle[T], _], inputData: js.Object): java.lang.String = js.native
   def generateCallbackUrl(): java.lang.String = js.native
   /**

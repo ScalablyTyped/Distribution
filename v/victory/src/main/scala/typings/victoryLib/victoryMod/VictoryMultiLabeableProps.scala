@@ -14,14 +14,14 @@ trait VictoryMultiLabeableProps extends VictoryLabableProps {
     * like data={[{x: 1, y: 1, label: "first"}]}.
     * @example ["spring", "summer", "fall", "winter"], (datum) => datum.title
     */
-  var labels: js.UndefOr[js.Array[java.lang.String] | victoryLib.Anon_DataAnyString] = js.undefined
+  var labels: js.UndefOr[js.Array[java.lang.String] | victoryLib.Fn_DataAnyString] = js.undefined
 }
 
 object VictoryMultiLabeableProps {
   @scala.inline
   def apply(
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
-    labels: js.Array[java.lang.String] | victoryLib.Anon_DataAnyString = null
+    labels: js.Array[java.lang.String] | victoryLib.Fn_DataAnyString = null
   ): VictoryMultiLabeableProps = {
     val __obj = js.Dynamic.literal()
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)

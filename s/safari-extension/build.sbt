@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "safari-extension"
-version := "0.0-unknown-dt-20190322Z-a47b7a"
+version := "0.0-unknown-dt-20190322Z-59f3b5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

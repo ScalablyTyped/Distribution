@@ -19,10 +19,10 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def done(bundleId: java.lang.String): scala.Unit = js.native
   def isDefined(bundleId: java.lang.String): scala.Boolean = js.native
-  def ready(bundleIds: java.lang.String, optionsOrCallback: LoadedFn): loadjsLib.Anon_BundleId = js.native
-  def ready(bundleIds: java.lang.String, optionsOrCallback: ReadyOptions): loadjsLib.Anon_BundleId = js.native
-  def ready(bundleIds: js.Array[java.lang.String], optionsOrCallback: LoadedFn): loadjsLib.Anon_BundleId = js.native
-  def ready(bundleIds: js.Array[java.lang.String], optionsOrCallback: ReadyOptions): loadjsLib.Anon_BundleId = js.native
+  def ready(bundleIds: java.lang.String, optionsOrCallback: LoadedFn): loadjsLib.Fn_BundleId = js.native
+  def ready(bundleIds: java.lang.String, optionsOrCallback: ReadyOptions): loadjsLib.Fn_BundleId = js.native
+  def ready(bundleIds: js.Array[java.lang.String], optionsOrCallback: LoadedFn): loadjsLib.Fn_BundleId = js.native
+  def ready(bundleIds: js.Array[java.lang.String], optionsOrCallback: ReadyOptions): loadjsLib.Fn_BundleId = js.native
   def reset(): scala.Unit = js.native
 }
 

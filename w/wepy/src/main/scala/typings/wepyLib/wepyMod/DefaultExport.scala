@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DefaultExport
   extends wepyLib.wxUnderscoreEnhancedMod.WxEnhances {
   @JSName("$copy")
-  var $copy_Original: wepyLib.Anon_Deep = js.native
+  var $copy_Original: wepyLib.Fn_Deep = js.native
   @JSName("$createApp")
   var $createApp_Original: js.Function2[
     /* appClass */ wepyLib.appMod.AppConstructor, 

@@ -16,7 +16,7 @@ trait EventPropTypeInterface[TTarget, TEventKey] extends js.Object {
     * Event handlers map. Keys are standard event names (such as onClick) and values are event callbacks
     */
   var eventHandlers: org.scalablytyped.runtime.StringDictionary[
-    (victoryLib.Anon_Event[TTarget, TEventKey]) | (victoryLib.Anon_EventAny[TTarget, TEventKey])
+    (victoryLib.Fn_Event[TTarget, TEventKey]) | (victoryLib.Fn_EventAny[TTarget, TEventKey])
   ]
   var eventKey: js.UndefOr[TEventKey] = js.undefined
   /**
@@ -29,7 +29,7 @@ object EventPropTypeInterface {
   @scala.inline
   def apply[TTarget, TEventKey](
     eventHandlers: org.scalablytyped.runtime.StringDictionary[
-      (victoryLib.Anon_Event[TTarget, TEventKey]) | (victoryLib.Anon_EventAny[TTarget, TEventKey])
+      (victoryLib.Fn_Event[TTarget, TEventKey]) | (victoryLib.Fn_EventAny[TTarget, TEventKey])
     ],
     target: TTarget,
     childName: java.lang.String = null,

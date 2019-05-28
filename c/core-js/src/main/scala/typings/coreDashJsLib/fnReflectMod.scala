@@ -233,7 +233,7 @@ object fnReflectMod extends js.Object {
     *  }
     * ```
     */
-  def metadata(metadataKey: js.Any, metadataValue: js.Any): coreDashJsLib.Anon_Target = js.native
+  def metadata(metadataKey: js.Any, metadataValue: js.Any): coreDashJsLib.Fn_Target = js.native
   def ownKeys(target: js.Any): coreDashJsLib.Array[stdLib.PropertyKey] = js.native
   def preventExtensions(target: js.Any): scala.Boolean = js.native
   def set(target: js.Any, propertyKey: stdLib.PropertyKey, value: js.Any): scala.Boolean = js.native

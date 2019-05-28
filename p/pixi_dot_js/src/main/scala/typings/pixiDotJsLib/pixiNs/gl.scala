@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pixi.gl")
 @js.native
 object gl extends js.Object {
-  var GLBuffer: pixiDotJsLib.Anon_Create = js.native
-  var GLFramebuffer: pixiDotJsLib.Anon_CreateFloat32 = js.native
+  var GLBuffer: pixiDotJsLib.TypeofClassGLBuffer = js.native
+  var GLFramebuffer: pixiDotJsLib.TypeofClassGLFramebuffer = js.native
   var GLShader: org.scalablytyped.runtime.Instantiable5[
     /* gl */ stdLib.WebGLRenderingContext, 
     /* vertexSrc */ java.lang.String | js.Array[java.lang.String], 
@@ -21,8 +21,8 @@ object gl extends js.Object {
     ], 
     pixiDotJsLib.PIXINs.glCoreNs.GLShader
   ] = js.native
-  var GLTexture: pixiDotJsLib.Anon_Data = js.native
-  var VertexArrayObject: pixiDotJsLib.Anon_FORCENATIVE = js.native
+  var GLTexture: pixiDotJsLib.TypeofClassGLTexture = js.native
+  var VertexArrayObject: pixiDotJsLib.TypeofClassVertexArrayObject = js.native
   def createContext(view: stdLib.HTMLCanvasElement): stdLib.WebGLRenderingContext = js.native
   def createContext(view: stdLib.HTMLCanvasElement, options: pixiDotJsLib.PIXINs.glCoreNs.ContextOptions): stdLib.WebGLRenderingContext = js.native
   def setVertexAttribArrays(gl: stdLib.WebGLRenderingContext, attribs: js.Array[pixiDotJsLib.PIXINs.glCoreNs.Attrib]): js.UndefOr[stdLib.WebGLRenderingContext] = js.native

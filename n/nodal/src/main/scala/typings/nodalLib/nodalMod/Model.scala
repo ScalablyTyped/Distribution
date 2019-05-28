@@ -30,7 +30,7 @@ class Model protected () extends js.Object {
   var _validationsList: js.Array[_] = js.native
   var _verificationsList: js.Any = js.native
   var aggregateBy: nodalLib.Anon_Createdat = js.native
-  var constructor: nodalLib.Anon_CalcFieldCalculates = js.native
+  var constructor: nodalLib.TypeofClassModelCalcField = js.native
   var data: js.Any = js.native
   var db: Database | js.Any = js.native
   var externalInterface: js.Array[java.lang.String] = js.native
@@ -396,7 +396,7 @@ object Model extends js.Object {
     *   "as": What to display the name of the child as when joined to the parent (default to camelCase of child name)
     *   "multiple": Whether the child exists in multiples for the parent (defaults to false)
     */
-  def joinsTo(modelClass: nodalLib.Anon_CalcFieldCalculates, options: nodalLib.Anon_As): nodalLib.nodalMod.RelationshipEdge | scala.Null = js.native
+  def joinsTo(modelClass: nodalLib.TypeofClassModelCalcField, options: nodalLib.Anon_As): nodalLib.nodalMod.RelationshipEdge | scala.Null = js.native
   /**
     * Creates a new Composer (ORM) instance to begin a new query.
     * @param {optional Nodal.Database} db Deprecated - provide a database to query from. Set the model's db in its constructor file, instead.

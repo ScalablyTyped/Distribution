@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 trait ReactPropTypes extends js.Object {
   var any: propDashTypesLib.propDashTypesMod.Requireable[_]
   var array: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]]
-  var arrayOf: reactLib.Anon_TypeArray
+  var arrayOf: reactLib.Fn_Type
   var bool: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean]
   var element: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactElementLike]
-  var exact: reactLib.Anon_TypeAnyInferPropsP
+  var exact: reactLib.Fn_TypeAnyInferPropsP
   var func: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]]
-  var instanceOf: reactLib.Anon_Args
+  var instanceOf: reactLib.Fn_Args
   var node: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike]
   var number: propDashTypesLib.propDashTypesMod.Requireable[scala.Double]
   var `object`: propDashTypesLib.propDashTypesMod.Requireable[js.Object]
-  var objectOf: reactLib.Anon_TypeAny
-  var oneOf: reactLib.Anon_Types
-  var oneOfType: reactLib.Anon_TypesAny
-  var shape: reactLib.Anon_TypeAnyInferProps
+  var objectOf: reactLib.Fn_TypeAny
+  var oneOf: reactLib.Fn_Types
+  var oneOfType: reactLib.Fn_TypesAny
+  var shape: reactLib.Fn_TypeAnyInferProps
   var string: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
 }
 
@@ -29,19 +29,19 @@ object ReactPropTypes {
   def apply(
     any: propDashTypesLib.propDashTypesMod.Requireable[_],
     array: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]],
-    arrayOf: reactLib.Anon_TypeArray,
+    arrayOf: reactLib.Fn_Type,
     bool: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean],
     element: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactElementLike],
-    exact: reactLib.Anon_TypeAnyInferPropsP,
+    exact: reactLib.Fn_TypeAnyInferPropsP,
     func: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]],
-    instanceOf: reactLib.Anon_Args,
+    instanceOf: reactLib.Fn_Args,
     node: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike],
     number: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
     `object`: propDashTypesLib.propDashTypesMod.Requireable[js.Object],
-    objectOf: reactLib.Anon_TypeAny,
-    oneOf: reactLib.Anon_Types,
-    oneOfType: reactLib.Anon_TypesAny,
-    shape: reactLib.Anon_TypeAnyInferProps,
+    objectOf: reactLib.Fn_TypeAny,
+    oneOf: reactLib.Fn_Types,
+    oneOfType: reactLib.Fn_TypesAny,
+    shape: reactLib.Fn_TypeAnyInferProps,
     string: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   ): ReactPropTypes = {
     val __obj = js.Dynamic.literal(any = any, array = array, arrayOf = arrayOf, bool = bool, element = element, exact = exact, func = func, instanceOf = instanceOf, node = node, number = number, objectOf = objectOf, oneOf = oneOf, oneOfType = oneOfType, shape = shape, string = string)

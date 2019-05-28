@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Router extends js.Object {
   @JSName("all")
-  var all_Original: arangodbLib.Anon_Handler = js.native
+  var all_Original: arangodbLib.Fn_Handler = js.native
   @JSName("delete")
-  var delete_Original: arangodbLib.Anon_Handler = js.native
+  var delete_Original: arangodbLib.Fn_Handler = js.native
   @JSName("get")
-  var get_Original: arangodbLib.Anon_Handler = js.native
+  var get_Original: arangodbLib.Fn_Handler = js.native
   @JSName("patch")
-  var patch_Original: arangodbLib.Anon_Handler = js.native
+  var patch_Original: arangodbLib.Fn_Handler = js.native
   @JSName("post")
-  var post_Original: arangodbLib.Anon_Handler = js.native
+  var post_Original: arangodbLib.Fn_Handler = js.native
   @JSName("put")
-  var put_Original: arangodbLib.Anon_Handler = js.native
+  var put_Original: arangodbLib.Fn_Handler = js.native
   def all(handler: Handler): Endpoint = js.native
   def all(handler: Handler, name: java.lang.String): Endpoint = js.native
   def all(pathOrMiddleware: SimpleMiddleware, handler: Handler): Endpoint = js.native

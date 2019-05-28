@@ -12,7 +12,7 @@ trait Column[T] extends js.Object {
   var desc: OrderByValueNode = js.native
   var descending: OrderByValueNode = js.native
   @JSName("multiply")
-  var multiply_Original: anydbDashSqlLib.Anon_N[T] = js.native
+  var multiply_Original: anydbDashSqlLib.Fn_N[T] = js.native
   var name: java.lang.String = js.native
   var table: Table[_] = js.native
   def as(name: java.lang.String): Column[T] = js.native

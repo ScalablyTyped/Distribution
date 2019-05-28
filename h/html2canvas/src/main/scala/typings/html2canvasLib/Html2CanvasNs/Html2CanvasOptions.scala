@@ -27,7 +27,7 @@ trait Html2CanvasOptions extends js.Object {
   /** Whether to log events in the console. */
   var logging: js.UndefOr[scala.Boolean] = js.undefined
   /** Callback function which is called when the Document has been cloned for rendering, can be used to modify the contents that will be rendered without affecting the original source document. */
-  var onclone: js.UndefOr[html2canvasLib.Anon_Doc] = js.undefined
+  var onclone: js.UndefOr[html2canvasLib.Fn_Doc] = js.undefined
   /** Url to the proxy which is to be used for loading cross-origin images. If left empty, cross-origin images won't be loaded. */
   var proxy: js.UndefOr[java.lang.String] = js.undefined
   /** Whether to cleanup the cloned DOM elements html2canvas creates temporarily */
@@ -69,7 +69,7 @@ object Html2CanvasOptions {
     imageTimeout: scala.Int | scala.Double = null,
     letterRendering: js.UndefOr[scala.Boolean] = js.undefined,
     logging: js.UndefOr[scala.Boolean] = js.undefined,
-    onclone: html2canvasLib.Anon_Doc = null,
+    onclone: html2canvasLib.Fn_Doc = null,
     proxy: java.lang.String = null,
     removeContainer: js.UndefOr[scala.Boolean] = js.undefined,
     scale: scala.Int | scala.Double = null,

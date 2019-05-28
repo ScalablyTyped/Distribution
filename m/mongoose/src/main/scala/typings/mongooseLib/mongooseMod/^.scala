@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var DocumentProvider: js.Any = js.native
   var Model: mongooseLib.mongooseMod.Model[js.Any, js.Object] = js.native
-  var Mongoose: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, mongooseLib.Anon_Args] = js.native
+  var Mongoose: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, mongooseLib.Typeofmongoose] = js.native
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
   var STATES: ConnectionStates = js.native
@@ -46,8 +46,8 @@ object ^ extends js.Object {
   def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema[_], collection: java.lang.String): U = js.native
   @JSName("model")
   def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema[_], collection: java.lang.String, skipInit: scala.Boolean): U = js.native
-  def plugin(fn: js.Function): mongooseLib.Anon_Args = js.native
-  def plugin[T](fn: js.Function, opts: T): mongooseLib.Anon_Args = js.native
+  def plugin(fn: js.Function): mongooseLib.Typeofmongoose = js.native
+  def plugin[T](fn: js.Function, opts: T): mongooseLib.Typeofmongoose = js.native
   def pluralize(): js.Function1[/* str */ java.lang.String, java.lang.String] = js.native
   def pluralize(fn: js.Function1[/* str */ java.lang.String, java.lang.String]): js.Function1[/* str */ java.lang.String, java.lang.String] = js.native
   def set(key: java.lang.String, value: js.Any): scala.Unit = js.native

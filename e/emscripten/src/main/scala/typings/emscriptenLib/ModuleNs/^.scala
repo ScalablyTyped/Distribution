@@ -36,9 +36,9 @@ object ^ extends js.Object {
   var logReadFiles: scala.Boolean = js.native
   var noExitRuntime: scala.Boolean = js.native
   var noInitialRun: scala.Boolean = js.native
-  var postRun: js.Array[emscriptenLib.Anon_Void] = js.native
-  var preInit: js.Array[emscriptenLib.Anon_Void] = js.native
-  var preRun: js.Array[emscriptenLib.Anon_Void] = js.native
+  var postRun: js.Array[emscriptenLib.Fn_Void] = js.native
+  var preInit: js.Array[emscriptenLib.Fn_Void] = js.native
+  var preRun: js.Array[emscriptenLib.Fn_Void] = js.native
   var preinitializedWebGLContext: stdLib.WebGLRenderingContext = js.native
   var preloadedAudios: js.Any = js.native
   var preloadedImages: js.Any = js.native
