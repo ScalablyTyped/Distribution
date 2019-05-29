@@ -71,12 +71,12 @@ object ^ extends js.Object {
     calledFunctionRefs: js.Any
   ): java.lang.String = js.native
   def decorateWithLogger(
-    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]],
+    fn: js.UndefOr[scala.Nothing],
     logger: graphqlDashToolsLib.distInterfacesMod.ILogger,
     hint: java.lang.String
   ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def decorateWithLogger(
-    fn: js.UndefOr[scala.Nothing],
+    fn: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     logger: graphqlDashToolsLib.distInterfacesMod.ILogger,
     hint: java.lang.String
   ): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Typeoftable extends js.Object {
   var BorderlessTable: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ adoneLib.adoneNs.textNs.tableNs.INs.BorderlessConstructorOptions], 
+    js.UndefOr[/* options */ adoneLib.adoneNs.textNs.tableNs.INs.BorderlessConstructorOptions], 
     adoneLib.adoneNs.textNs.tableNs.BorderlessTable
   ]
   val INs: js.Any
@@ -18,7 +18,7 @@ object Typeoftable {
   @scala.inline
   def apply(
     BorderlessTable: org.scalablytyped.runtime.Instantiable1[
-      /* options */ js.UndefOr[/* options */ adoneLib.adoneNs.textNs.tableNs.INs.BorderlessConstructorOptions], 
+      js.UndefOr[/* options */ adoneLib.adoneNs.textNs.tableNs.INs.BorderlessConstructorOptions], 
       adoneLib.adoneNs.textNs.tableNs.BorderlessTable
     ],
     INs: js.Any,

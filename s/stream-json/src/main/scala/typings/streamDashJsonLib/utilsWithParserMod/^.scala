@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(
     fn: js.Function1[
-      (/* options */ streamDashJsonLib.filtersFilterBaseMod.FilterOptions) | (/* options */ js.UndefOr[
-        streamDashJsonLib.streamersStreamBaseMod.StreamOptions | nodeLib.streamMod.TransformOptions
-      ]), 
+      js.UndefOr[
+        (/* options */ streamDashJsonLib.filtersFilterBaseMod.FilterOptions) | streamDashJsonLib.streamersStreamBaseMod.StreamOptions | nodeLib.streamMod.TransformOptions
+      ], 
       nodeLib.streamMod.Transform | streamDashJsonLib.filtersFilterBaseMod.^  | streamDashJsonLib.streamersStreamBaseMod.^ 
     ]
   ): streamDashChainLib.streamDashChainMod.^ = js.native

@@ -9,7 +9,7 @@ package object wsMod {
   /**
     * CertMeta represents the accepted types for certificate & key data.
     */
-  type CertMeta = java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer]
+  type CertMeta = java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer
   /**
     * Data represents the message payload received over the WebSocket.
     */

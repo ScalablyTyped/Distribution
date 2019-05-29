@@ -34,7 +34,7 @@ trait Database extends js.Object {
   def pragma(source: java.lang.String): js.Any = js.native
   def pragma(source: java.lang.String, options: betterDashSqlite3Lib.betterDashSqlite3Mod.PragmaOptions): js.Any = js.native
   // tslint:disable-next-line no-unnecessary-generics
-  def prepare[BindParameters /* <: js.Array[_] | js.Object */](source: java.lang.String): Statement[js.Array[BindParameters]] | Statement[BindParameters] = js.native
+  def prepare[BindParameters /* <: js.Array[_] | js.Object */](source: java.lang.String): Statement[js.Array[BindParameters] | BindParameters] = js.native
   def transaction[F /* <: betterDashSqlite3Lib.betterDashSqlite3Mod.VariableArgFunction */](fn: F): Transaction[F] = js.native
 }
 

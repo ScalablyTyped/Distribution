@@ -8060,6 +8060,12 @@ trait JQuery[TElement]
     selector_data: js.Any,
     handler: js.Function1[/* event */ JQueryEventObject, scala.Unit]
   ): this.type = js.native
+  def on(
+    events: java.lang.String,
+    selector: js.UndefOr[scala.Nothing],
+    data: js.Any,
+    handler: js.Function1[/* event */ JQueryEventObject, scala.Unit]
+  ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -8074,12 +8080,6 @@ trait JQuery[TElement]
   def on(
     events: java.lang.String,
     selector: jqueryLib.JQueryNs.Selector,
-    data: js.Any,
-    handler: js.Function1[/* event */ JQueryEventObject, scala.Unit]
-  ): this.type = js.native
-  def on(
-    events: java.lang.String,
-    selector: js.UndefOr[scala.Nothing],
     data: js.Any,
     handler: js.Function1[/* event */ JQueryEventObject, scala.Unit]
   ): this.type = js.native
@@ -8324,6 +8324,11 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def on[TData](events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement], data: TData): this.type = js.native
+  def on[TData](
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement],
+    selector: js.UndefOr[scala.Nothing],
+    data: TData
+  ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -8337,11 +8342,6 @@ trait JQuery[TElement]
   def on[TData](
     events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, _, _],
     selector: jqueryLib.JQueryNs.Selector,
-    data: TData
-  ): this.type = js.native
-  def on[TData](
-    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement],
-    selector: js.UndefOr[scala.Nothing],
     data: TData
   ): this.type = js.native
   /**
@@ -8379,6 +8379,12 @@ trait JQuery[TElement]
     data: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
+  def on[TType /* <: java.lang.String */, TData](
+    events: TType,
+    selector: js.UndefOr[scala.Nothing],
+    data: TData,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
+  ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -8394,12 +8400,6 @@ trait JQuery[TElement]
     selector: jqueryLib.JQueryNs.Selector,
     data: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, _, _, TType]
-  ): this.type = js.native
-  def on[TType /* <: java.lang.String */, TData](
-    events: TType,
-    selector: js.UndefOr[scala.Nothing],
-    data: TData,
-    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -8558,6 +8558,11 @@ trait JQuery[TElement]
     * @since 1.7
     */
   def one[TData](events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement], data: TData): this.type = js.native
+  def one[TData](
+    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement],
+    selector: js.UndefOr[scala.Nothing],
+    data: TData
+  ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -8571,11 +8576,6 @@ trait JQuery[TElement]
   def one[TData](
     events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, _, _],
     selector: jqueryLib.JQueryNs.Selector,
-    data: TData
-  ): this.type = js.native
-  def one[TData](
-    events: jqueryLib.JQueryNs.TypeEventHandlers[TElement, TData, TElement, TElement],
-    selector: js.UndefOr[scala.Nothing],
     data: TData
   ): this.type = js.native
   /**
@@ -8606,6 +8606,12 @@ trait JQuery[TElement]
     data: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
+  def one[TType /* <: java.lang.String */, TData](
+    events: TType,
+    selector: js.UndefOr[scala.Nothing],
+    data: TData,
+    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
+  ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -8621,12 +8627,6 @@ trait JQuery[TElement]
     selector: jqueryLib.JQueryNs.Selector,
     data: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, _, _, TType]
-  ): this.type = js.native
-  def one[TType /* <: java.lang.String */, TData](
-    events: TType,
-    selector: js.UndefOr[scala.Nothing],
-    data: TData,
-    handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.

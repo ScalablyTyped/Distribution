@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val barrier: org.scalablytyped.runtime.Instantiable1[/* size */ scala.Double, tstlLib.experimentalThreadBarrierMod.Barrier] = js.native
   val flex_barrier: org.scalablytyped.runtime.Instantiable2[
     /* size */ scala.Double, 
-    /* complete */ js.UndefOr[/* complete */ js.Function0[scala.Double]], 
+    js.UndefOr[/* complete */ js.Function0[scala.Double]], 
     tstlLib.experimentalThreadFlexBarrierMod.FlexBarrier
   ] = js.native
   val latch: org.scalablytyped.runtime.Instantiable1[/* size */ scala.Double, tstlLib.experimentalThreadLatchMod.Latch] = js.native

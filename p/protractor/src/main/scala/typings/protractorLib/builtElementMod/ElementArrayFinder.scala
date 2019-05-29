@@ -500,13 +500,13 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
   def `then`[T](): js.Promise[T] = js.native
   def `then`[T](
     fn: js.Function1[
-      /* value */ js.Array[ElementFinder] | js.Array[_], 
+      /* value */ js.Array[_ | ElementFinder], 
       T | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ _)
     ]
   ): js.Promise[T] = js.native
   def `then`[T](
     fn: js.Function1[
-      /* value */ js.Array[ElementFinder] | js.Array[_], 
+      /* value */ js.Array[_ | ElementFinder], 
       T | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ _)
     ],
     errorFn: js.Function1[/* error */ js.Any, _]

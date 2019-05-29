@@ -10,7 +10,7 @@ trait Typeofcollection extends js.Object {
     * Represents an AVL tree, a self-balancing binary search tree
     */
   var AVLTree: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[
+    js.UndefOr[
       /* options */ adoneLib.adoneNs.collectionNs.INs.BinarySearchTreeNs.ConstructorOptions[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any, 
@@ -37,7 +37,7 @@ trait Typeofcollection extends js.Object {
     * Represents a binary search tree
     */
   var BinarySearchTree: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[
+    js.UndefOr[
       /* options */ adoneLib.adoneNs.collectionNs.INs.BinarySearchTreeNs.ConstructorOptions[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any, 
@@ -62,13 +62,13 @@ trait Typeofcollection extends js.Object {
     * Each get of non-existent key goes through the factory
     */
   var DefaultMap: org.scalablytyped.runtime.Instantiable2[
-    /* factory */ js.UndefOr[
-      /* factory */ (js.Function1[
+    js.UndefOr[
+      (js.Function1[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* key */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
       ]) | (org.scalablytyped.runtime.StringDictionary[/* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any])
     ], 
-    /* iterable */ js.UndefOr[
+    js.UndefOr[
       /* iterable */ stdLib.Iterable[
         js.Tuple2[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
@@ -82,7 +82,7 @@ trait Typeofcollection extends js.Object {
     * Represents a faster LRU cache but with less functionality
     */
   var FastLRU: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ Anon_DisposeKey], 
+    js.UndefOr[/* options */ Anon_DisposeKey], 
     adoneLib.adoneNs.collectionNs.FastLRU[js.Object, js.Object]
   ]
   val INs: TypeofIBinarySearchTree
@@ -90,7 +90,7 @@ trait Typeofcollection extends js.Object {
     * Represent an LRU cache
     */
   var LRU: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[
+    js.UndefOr[
       /* options */ adoneLib.adoneNs.collectionNs.INs.LRUNs.ConstructorOptions[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
@@ -120,14 +120,14 @@ trait Typeofcollection extends js.Object {
     * Represents a fully persistent red-black tree
     */
   var RedBlackTree: org.scalablytyped.runtime.Instantiable2[
-    /* compare */ js.UndefOr[
+    js.UndefOr[
       /* compare */ js.Function2[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* a */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* b */ js.Any, 
         scala.Double
       ]
     ], 
-    /* root */ js.UndefOr[
+    js.UndefOr[
       /* root */ adoneLib.adoneNs.collectionNs.RedBlackTree[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
@@ -137,7 +137,7 @@ trait Typeofcollection extends js.Object {
   ]
   var RefcountedCache: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.RefcountedCache[js.Object]]
   var Set: org.scalablytyped.runtime.Instantiable1[
-    /* key */ js.UndefOr[
+    js.UndefOr[
       /* key */ js.Function1[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* x */ js.Any, 
         js.Any
@@ -153,8 +153,8 @@ trait Typeofcollection extends js.Object {
     * Represents a Map that keeps keys only for a specified interval of time
     */
   var TimeMap: org.scalablytyped.runtime.Instantiable2[
-    /* timeout */ js.UndefOr[/* timeout */ scala.Double], 
-    /* callback */ js.UndefOr[
+    js.UndefOr[/* timeout */ scala.Double], 
+    js.UndefOr[
       /* callback */ js.Function1[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* key */ js.Any, 
         scala.Unit
@@ -168,7 +168,7 @@ object Typeofcollection {
   @scala.inline
   def apply(
     AVLTree: org.scalablytyped.runtime.Instantiable1[
-      /* options */ js.UndefOr[
+      js.UndefOr[
         /* options */ adoneLib.adoneNs.collectionNs.INs.BinarySearchTreeNs.ConstructorOptions[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any, 
@@ -183,7 +183,7 @@ object Typeofcollection {
     ArraySet: TypeofClassArraySet,
     AsyncQueue: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.AsyncQueue[js.Object]],
     BinarySearchTree: org.scalablytyped.runtime.Instantiable1[
-      /* options */ js.UndefOr[
+      js.UndefOr[
         /* options */ adoneLib.adoneNs.collectionNs.INs.BinarySearchTreeNs.ConstructorOptions[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any, 
@@ -198,13 +198,13 @@ object Typeofcollection {
     BufferList: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.BufferList],
     ByteArray: TypeofClassByteArray,
     DefaultMap: org.scalablytyped.runtime.Instantiable2[
-      /* factory */ js.UndefOr[
-        /* factory */ (js.Function1[
+      js.UndefOr[
+        (js.Function1[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* key */ js.Any, 
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
         ]) | (org.scalablytyped.runtime.StringDictionary[/* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any])
       ], 
-      /* iterable */ js.UndefOr[
+      js.UndefOr[
         /* iterable */ stdLib.Iterable[
           js.Tuple2[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
@@ -215,12 +215,12 @@ object Typeofcollection {
       adoneLib.adoneNs.collectionNs.DefaultMap[js.Object, js.Object]
     ],
     FastLRU: org.scalablytyped.runtime.Instantiable1[
-      /* options */ js.UndefOr[/* options */ Anon_DisposeKey], 
+      js.UndefOr[/* options */ Anon_DisposeKey], 
       adoneLib.adoneNs.collectionNs.FastLRU[js.Object, js.Object]
     ],
     INs: TypeofIBinarySearchTree,
     LRU: org.scalablytyped.runtime.Instantiable1[
-      /* options */ js.UndefOr[
+      js.UndefOr[
         /* options */ adoneLib.adoneNs.collectionNs.INs.LRUNs.ConstructorOptions[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
@@ -238,14 +238,14 @@ object Typeofcollection {
     PriorityQueue: TypeofClassPriorityQueue,
     Queue: TypeofClassQueue,
     RedBlackTree: org.scalablytyped.runtime.Instantiable2[
-      /* compare */ js.UndefOr[
+      js.UndefOr[
         /* compare */ js.Function2[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* a */ js.Any, 
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* b */ js.Any, 
           scala.Double
         ]
       ], 
-      /* root */ js.UndefOr[
+      js.UndefOr[
         /* root */ adoneLib.adoneNs.collectionNs.RedBlackTree[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
@@ -255,7 +255,7 @@ object Typeofcollection {
     ],
     RefcountedCache: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.RefcountedCache[js.Object]],
     Set: org.scalablytyped.runtime.Instantiable1[
-      /* key */ js.UndefOr[
+      js.UndefOr[
         /* key */ js.Function1[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* x */ js.Any, 
           js.Any
@@ -265,8 +265,8 @@ object Typeofcollection {
     ],
     Stack: TypeofClassStack,
     TimeMap: org.scalablytyped.runtime.Instantiable2[
-      /* timeout */ js.UndefOr[/* timeout */ scala.Double], 
-      /* callback */ js.UndefOr[
+      js.UndefOr[/* timeout */ scala.Double], 
+      js.UndefOr[
         /* callback */ js.Function1[
           /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* key */ js.Any, 
           scala.Unit

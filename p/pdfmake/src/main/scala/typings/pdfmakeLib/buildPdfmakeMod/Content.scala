@@ -18,7 +18,7 @@ trait Content
   var stack: js.UndefOr[js.Array[Content]] = js.undefined
   var style: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var table: js.UndefOr[Table] = js.undefined
-  var text: js.UndefOr[java.lang.String | js.Array[java.lang.String] | js.Array[Content]] = js.undefined
+  var text: js.UndefOr[java.lang.String | (js.Array[Content | java.lang.String])] = js.undefined
   var ul: js.UndefOr[js.Array[Content]] = js.undefined
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
@@ -38,7 +38,7 @@ object Content {
     stack: js.Array[Content] = null,
     style: java.lang.String | js.Array[java.lang.String] = null,
     table: Table = null,
-    text: java.lang.String | js.Array[java.lang.String] | js.Array[Content] = null,
+    text: java.lang.String | (js.Array[Content | java.lang.String]) = null,
     ul: js.Array[Content] = null,
     width: java.lang.String | scala.Double = null
   ): Content = {

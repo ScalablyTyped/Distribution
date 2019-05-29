@@ -11,25 +11,25 @@ trait IonicConfig extends js.Object {
   /**
     * Provides a custom enter animation for all `ion-action-sheet`, overriding the default "animation".
     */
-  var actionSheetEnter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var actionSheetEnter: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * Provides a custom leave animation for all `ion-action-sheet`, overriding the default "animation".
     */
-  var actionSheetLeave: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var actionSheetLeave: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * Provides a custom enter animation for all `ion-alert`, overriding the default "animation".
     */
-  var alertEnter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var alertEnter: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * Provides a custom leave animation for all `ion-alert`, overriding the default "animation".
     */
-  var alertLeave: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var alertLeave: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
@@ -63,13 +63,13 @@ trait IonicConfig extends js.Object {
   /**
     * Provides a custom enter animation for all `ion-loading`, overriding the default "animation".
     */
-  var loadingEnter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var loadingEnter: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * Provides a custom leave animation for all `ion-loading`, overriding the default "animation".
     */
-  var loadingLeave: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var loadingLeave: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
@@ -91,51 +91,51 @@ trait IonicConfig extends js.Object {
   /**
     * Provides a custom enter animation for all `ion-modal`, overriding the default "animation".
     */
-  var modalEnter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var modalEnter: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * Provides a custom leave animation for all `ion-modal`, overriding the default "animation".
     */
-  var modalLeave: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var modalLeave: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * The mode determines which platform styles to use for the whole application.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
+  var mode: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
   ] = js.undefined
   /**
     * Overrides the default "animation" of all `ion-nav` and `ion-router-outlet` across the whole application.
     * This prop allows to replace the default transition and provide a custom one that applies to all navigation outlets.
     */
-  var navAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var navAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   var persistConfig: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Provides a custom enter animation for all `ion-picker`, overriding the default "animation".
     */
-  var pickerEnter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var pickerEnter: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * Provides a custom leave animation for all `ion-picker`, overriding the default "animation".
     */
-  var pickerLeave: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var pickerLeave: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * Provides a custom enter animation for all `ion-popover`, overriding the default "animation".
     */
-  var popoverEnter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var popoverEnter: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * Provides a custom leave animation for all `ion-popover`, overriding the default "animation".
     */
-  var popoverLeave: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var popoverLeave: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
@@ -159,7 +159,7 @@ trait IonicConfig extends js.Object {
     * Overrides the default spinner in all `<ion-spinner>` components.
     * By default the spinner type is chosen based in the mode (ios or md).
     */
-  var spinner: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.UndefOr[
+  var spinner: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any
   ] = js.undefined
   /**
@@ -175,19 +175,19 @@ trait IonicConfig extends js.Object {
   /**
     * Overrides the default "layout" of all `ion-bar-button` across the whole application.
     */
-  var tabButtonLayout: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TabButtonLayout */ js.UndefOr[
+  var tabButtonLayout: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TabButtonLayout */ js.Any
   ] = js.undefined
   /**
     * Provides a custom enter animation for all `ion-toast`, overriding the default "animation".
     */
-  var toastEnter: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var toastEnter: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
     * Provides a custom leave animation for all `ion-toast`, overriding the default "animation".
     */
-  var toastLeave: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var toastLeave: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
 }

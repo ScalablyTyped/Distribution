@@ -304,10 +304,7 @@ trait Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEl
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.label.rich
     */
-  var rich: /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.label.rich.%3Cuser%20defined%20style%20name%3E
-    */
-  js.UndefOr[
+  var rich: js.UndefOr[
     /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.label.rich.%3Cuser%20defined%20style%20name%3E
     */

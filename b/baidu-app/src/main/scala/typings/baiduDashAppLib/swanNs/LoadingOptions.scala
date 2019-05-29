@@ -10,9 +10,7 @@ trait LoadingOptions
   /**
   		 * 是否显示透明蒙层，防止触摸穿透，默认：false
   		 */
-  var mask: js.UndefOr[
-    scala.Boolean | baiduDashAppLib.baiduDashAppLibStrings.`true` | baiduDashAppLib.baiduDashAppLibStrings.`false`
-  ] = js.undefined
+  var mask: js.UndefOr[scala.Boolean] = js.undefined
   /**
   		 * 提示的内容
   		 */
@@ -25,13 +23,13 @@ object LoadingOptions {
     title: java.lang.String,
     complete: /* res */ js.Any => scala.Unit = null,
     fail: js.Any => scala.Unit = null,
-    mask: scala.Boolean | baiduDashAppLib.baiduDashAppLibStrings.`true` | baiduDashAppLib.baiduDashAppLibStrings.`false` = null,
+    mask: js.UndefOr[scala.Boolean] = js.undefined,
     success: js.Any => scala.Unit = null
   ): LoadingOptions = {
     val __obj = js.Dynamic.literal(title = title)
     if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1(complete))
     if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1(fail))
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
     if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1(success))
     __obj.asInstanceOf[LoadingOptions]
   }

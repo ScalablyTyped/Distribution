@@ -26,10 +26,10 @@ package object svgDotJsMod {
     - G
   */
   type ParentTypeAlias = _ParentTypeAlias | java.lang.String
-  type PathArrayAlias = PathArray | (js.Array[java.lang.String | scala.Double]) | js.Array[PathArrayPoint] | java.lang.String
+  type PathArrayAlias = PathArray | (js.Array[scala.Double | PathArrayPoint | java.lang.String]) | java.lang.String
   // path.js
   type PathArrayPoint = js.Array[scala.Double | java.lang.String]
-  type PointArrayAlias = js.Array[ArrayPoint] | js.Array[scala.Double] | PointArray | java.lang.String
+  type PointArrayAlias = (js.Array[ArrayPoint | scala.Double]) | PointArray | java.lang.String
   // viewbox.js
   /* Rewritten from type alias, can be one of: 
     - ViewBoxLike

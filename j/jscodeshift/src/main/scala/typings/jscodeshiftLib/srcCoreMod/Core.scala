@@ -12,7 +12,7 @@ trait Core extends js.Object {
   @JSName("registerMethods")
   var registerMethods_Original: js.Function2[
     /* methods */ js.Object, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<any> */ /* type */ js.UndefOr[
+    /* type */ js.UndefOr[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify recast.Type<any> */ js.Any
     ], 
     scala.Unit

@@ -118,6 +118,29 @@ trait StorageGateway
     ]
   ): awsDashSdkLib.libRequestMod.Request[AddWorkingStorageOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (Glacier or Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+    */
+  def assignTapePool(): awsDashSdkLib.libRequestMod.Request[AssignTapePoolOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def assignTapePool(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssignTapePoolOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssignTapePoolOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Assigns a tape to a tape pool for archiving. The tape assigned to a pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the S3 storage class (Glacier or Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+    */
+  def assignTapePool(params: AssignTapePoolInput): awsDashSdkLib.libRequestMod.Request[AssignTapePoolOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def assignTapePool(
+    params: AssignTapePoolInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ AssignTapePoolOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[AssignTapePoolOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Connects a volume to an iSCSI connection and then attaches the volume to the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
     */
   def attachVolume(): awsDashSdkLib.libRequestMod.Request[AttachVolumeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native

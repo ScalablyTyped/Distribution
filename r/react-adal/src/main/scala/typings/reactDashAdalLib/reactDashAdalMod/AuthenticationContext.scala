@@ -26,6 +26,30 @@ class AuthenticationContext protected () extends js.Object {
     * @param callback The callback provided by the caller. It will be called with token or error.
     */
   def acquireToken(resource: java.lang.String, callback: TokenCallback): scala.Unit = js.native
+  def acquireTokenPopup(
+    resource: java.lang.String,
+    extraQueryParameters: js.UndefOr[scala.Nothing],
+    claims: js.UndefOr[scala.Nothing],
+    callback: TokenCallback
+  ): scala.Unit = js.native
+  def acquireTokenPopup(
+    resource: java.lang.String,
+    extraQueryParameters: js.UndefOr[scala.Nothing],
+    claims: java.lang.String,
+    callback: TokenCallback
+  ): scala.Unit = js.native
+  def acquireTokenPopup(
+    resource: java.lang.String,
+    extraQueryParameters: js.UndefOr[scala.Nothing],
+    claims: scala.Null,
+    callback: TokenCallback
+  ): scala.Unit = js.native
+  def acquireTokenPopup(
+    resource: java.lang.String,
+    extraQueryParameters: java.lang.String,
+    claims: js.UndefOr[scala.Nothing],
+    callback: TokenCallback
+  ): scala.Unit = js.native
   /**
     * Acquires token (interactive flow using a popup window) by sending request to AAD to obtain a new token.
     * @param resource Resource URI identifying the target resource.
@@ -42,43 +66,19 @@ class AuthenticationContext protected () extends js.Object {
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: java.lang.String,
-    claims: js.UndefOr[scala.Nothing],
-    callback: TokenCallback
-  ): scala.Unit = js.native
-  def acquireTokenPopup(
-    resource: java.lang.String,
-    extraQueryParameters: java.lang.String,
-    claims: scala.Null,
-    callback: TokenCallback
-  ): scala.Unit = js.native
-  def acquireTokenPopup(
-    resource: java.lang.String,
-    extraQueryParameters: js.UndefOr[scala.Nothing],
-    claims: java.lang.String,
-    callback: TokenCallback
-  ): scala.Unit = js.native
-  def acquireTokenPopup(
-    resource: java.lang.String,
-    extraQueryParameters: js.UndefOr[scala.Nothing],
-    claims: js.UndefOr[scala.Nothing],
-    callback: TokenCallback
-  ): scala.Unit = js.native
-  def acquireTokenPopup(
-    resource: java.lang.String,
-    extraQueryParameters: js.UndefOr[scala.Nothing],
     claims: scala.Null,
     callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: scala.Null,
-    claims: java.lang.String,
+    claims: js.UndefOr[scala.Nothing],
     callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(
     resource: java.lang.String,
     extraQueryParameters: scala.Null,
-    claims: js.UndefOr[scala.Nothing],
+    claims: java.lang.String,
     callback: TokenCallback
   ): scala.Unit = js.native
   def acquireTokenPopup(

@@ -10,8 +10,8 @@ trait Eth extends js.Object {
   var BatchRequest: org.scalablytyped.runtime.Instantiable0[web3Lib.ethTypesMod.BatchRequest] = js.native
   var Contract: org.scalablytyped.runtime.Instantiable3[
     /* jsonInterface */ js.Array[js.Any], 
-    /* address */ js.UndefOr[/* address */ java.lang.String], 
-    /* options */ js.UndefOr[/* options */ web3Lib.ethContractMod.CustomOptions], 
+    js.UndefOr[/* address */ java.lang.String], 
+    js.UndefOr[/* options */ web3Lib.ethContractMod.CustomOptions], 
     web3Lib.ethContractMod.default
   ] = js.native
   var Iban: web3Lib.ethTypesMod.Iban = js.native

@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   var `final`: js.UndefOr[
     js.ThisFunction1[
       (/* this */ Duplex) | (/* this */ Writable), 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation._
       (/* this */ Duplex) | (/* this */ Writable), 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined
@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
     js.ThisFunction2[
       (/* this */ Duplex) | (/* this */ Writable), 
       /* chunks */ js.Array[nodeLib.Anon_Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.undefined

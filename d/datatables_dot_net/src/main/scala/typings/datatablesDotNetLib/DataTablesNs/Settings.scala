@@ -102,13 +102,13 @@ trait Settings extends js.Object {
     * Change the options in the page length select list. Since: 1.10
     */
   var lengthMenu: js.UndefOr[
-    (js.Array[scala.Double | java.lang.String]) | (js.Array[js.Array[scala.Double | java.lang.String]])
+    js.Array[(js.Array[scala.Double | java.lang.String]) | scala.Double | java.lang.String]
   ] = js.undefined
   /**
     * Initial order (sort) to apply to the table. Since: 1.10
     */
   var order: js.UndefOr[
-    (js.Array[scala.Double | java.lang.String]) | (js.Array[js.Array[scala.Double | java.lang.String]])
+    js.Array[(js.Array[scala.Double | java.lang.String]) | scala.Double | java.lang.String]
   ] = js.undefined
   /**
     * Control which cell the order event handler will be applied to in a column. Since: 1.10
@@ -122,7 +122,7 @@ trait Settings extends js.Object {
     * Ordering to always be applied to the table. Since: 1.10
     */
   var orderFixed: js.UndefOr[
-    (js.Array[scala.Double | java.lang.String]) | (js.Array[js.Array[scala.Double | java.lang.String]]) | js.Object
+    (js.Array[(js.Array[scala.Double | java.lang.String]) | scala.Double | java.lang.String]) | js.Object
   ] = js.undefined
   /**
     * Multiple column ordering ability control. Since: 1.10
@@ -270,11 +270,11 @@ object Settings {
     jQueryUI: js.UndefOr[scala.Boolean] = js.undefined,
     language: LanguageSettings = null,
     lengthChange: js.UndefOr[scala.Boolean] = js.undefined,
-    lengthMenu: (js.Array[scala.Double | java.lang.String]) | (js.Array[js.Array[scala.Double | java.lang.String]]) = null,
-    order: (js.Array[scala.Double | java.lang.String]) | (js.Array[js.Array[scala.Double | java.lang.String]]) = null,
+    lengthMenu: js.Array[(js.Array[scala.Double | java.lang.String]) | scala.Double | java.lang.String] = null,
+    order: js.Array[(js.Array[scala.Double | java.lang.String]) | scala.Double | java.lang.String] = null,
     orderCellsTop: js.UndefOr[scala.Boolean] = js.undefined,
     orderClasses: js.UndefOr[scala.Boolean] = js.undefined,
-    orderFixed: (js.Array[scala.Double | java.lang.String]) | (js.Array[js.Array[scala.Double | java.lang.String]]) | js.Object = null,
+    orderFixed: (js.Array[(js.Array[scala.Double | java.lang.String]) | scala.Double | java.lang.String]) | js.Object = null,
     orderMulti: js.UndefOr[scala.Boolean] = js.undefined,
     ordering: js.UndefOr[scala.Boolean] = js.undefined,
     pageLength: scala.Int | scala.Double = null,
@@ -328,8 +328,8 @@ object Settings {
     if (!js.isUndefined(jQueryUI)) __obj.updateDynamic("jQueryUI")(jQueryUI)
     if (language != null) __obj.updateDynamic("language")(language)
     if (!js.isUndefined(lengthChange)) __obj.updateDynamic("lengthChange")(lengthChange)
-    if (lengthMenu != null) __obj.updateDynamic("lengthMenu")(lengthMenu.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (lengthMenu != null) __obj.updateDynamic("lengthMenu")(lengthMenu)
+    if (order != null) __obj.updateDynamic("order")(order)
     if (!js.isUndefined(orderCellsTop)) __obj.updateDynamic("orderCellsTop")(orderCellsTop)
     if (!js.isUndefined(orderClasses)) __obj.updateDynamic("orderClasses")(orderClasses)
     if (orderFixed != null) __obj.updateDynamic("orderFixed")(orderFixed.asInstanceOf[js.Any])

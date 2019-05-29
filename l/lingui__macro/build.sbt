@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "lingui__macro"
-version := "2.7-dt-20190320Z-c422a2"
+version := "2.7-dt-20190320Z-3a0b7e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
-  "org.scalablytyped" %%% "lingui__core" % "2.7-dt-20190320Z-cfbb2f",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-336e99",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "csstype" % "2.6.4-a0e5c1",
+  "org.scalablytyped" %%% "lingui__core" % "2.7-dt-20190320Z-52220c",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-b94c72",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1cea03",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

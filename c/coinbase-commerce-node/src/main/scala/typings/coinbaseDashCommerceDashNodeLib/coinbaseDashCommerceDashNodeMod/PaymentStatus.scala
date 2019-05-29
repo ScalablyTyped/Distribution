@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
   - coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.UNRESOLVED
   - coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.RESOLVED
   - coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.EXPIRED
+  - coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.CANCELED
 */
 trait PaymentStatus extends js.Object
 

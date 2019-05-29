@@ -149,7 +149,7 @@ object _Impl {
     silent: scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(bottomOffset = bottomOffset, className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, error = error.asInstanceOf[js.Any], jitter = jitter, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onBottom = js.Any.fromFunction1(onBottom), onReposition = js.Any.fromFunction1(onReposition), onScroll = js.Any.fromFunction1(onScroll), onStick = js.Any.fromFunction1(onStick), onTop = js.Any.fromFunction1(onTop), onUnstick = js.Any.fromFunction1(onUnstick), performance = performance, pushing = pushing, scrollContext = scrollContext.asInstanceOf[js.Any], setSize = setSize, silent = silent, verbose = verbose)
+    val __obj = js.Dynamic.literal(bottomOffset = bottomOffset, className = className, context = context.asInstanceOf[js.Any], debug = debug, error = error, jitter = jitter, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onBottom = js.Any.fromFunction1(onBottom), onReposition = js.Any.fromFunction1(onReposition), onScroll = js.Any.fromFunction1(onScroll), onStick = js.Any.fromFunction1(onStick), onTop = js.Any.fromFunction1(onTop), onUnstick = js.Any.fromFunction1(onUnstick), performance = performance, pushing = pushing, scrollContext = scrollContext.asInstanceOf[js.Any], setSize = setSize, silent = silent, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

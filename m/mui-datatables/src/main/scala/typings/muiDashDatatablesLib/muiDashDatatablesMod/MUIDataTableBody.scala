@@ -9,7 +9,7 @@ trait MUIDataTableBody extends js.Object {
   var classes: js.Object
   var columns: js.Array[MUIDataTableColumnDef]
   var count: scala.Double
-  var data: js.Array[js.Object | js.Array[scala.Double] | js.Array[java.lang.String]]
+  var data: js.Array[js.Object | (js.Array[scala.Double | java.lang.String])]
   var filterList: js.UndefOr[js.Array[js.Array[java.lang.String]]] = js.undefined
   var onRowClick: js.UndefOr[
     js.Function2[
@@ -31,7 +31,7 @@ object MUIDataTableBody {
     classes: js.Object,
     columns: js.Array[MUIDataTableColumnDef],
     count: scala.Double,
-    data: js.Array[js.Object | js.Array[scala.Double] | js.Array[java.lang.String]],
+    data: js.Array[js.Object | (js.Array[scala.Double | java.lang.String])],
     options: js.Object,
     filterList: js.Array[js.Array[java.lang.String]] = null,
     onRowClick: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndexRowIndex) => scala.Unit = null,

@@ -17,8 +17,8 @@ object ^ extends js.Object {
   def lookupByCoords(lat: scala.Double, lon: scala.Double): java.lang.String | scala.Null = js.native
   def lookupByName(city: java.lang.String, state: java.lang.String): js.Array[ZipCode] = js.native
   def lookupByState(state: java.lang.String): js.Array[ZipCode] = js.native
-  def radius(zip: java.lang.String, miles: scala.Double, full: scala.Boolean): js.Array[java.lang.String] | js.Array[ZipCode] = js.native
-  def radius(zip: scala.Double, miles: scala.Double, full: scala.Boolean): js.Array[java.lang.String] | js.Array[ZipCode] = js.native
+  def radius(zip: java.lang.String, miles: scala.Double, full: scala.Boolean): js.Array[java.lang.String | ZipCode] = js.native
+  def radius(zip: scala.Double, miles: scala.Double, full: scala.Boolean): js.Array[java.lang.String | ZipCode] = js.native
   def toKilometers(miles: scala.Double): scala.Double = js.native
   def toMiles(kilos: scala.Double): scala.Double = js.native
 }

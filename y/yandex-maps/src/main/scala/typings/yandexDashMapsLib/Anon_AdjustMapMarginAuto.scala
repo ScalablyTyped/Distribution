@@ -22,7 +22,7 @@ trait Anon_AdjustMapMarginAuto extends js.Object {
   var layout: js.UndefOr[
     java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISearchControlLayout]
   ] = js.undefined
-  var maxWidth: js.UndefOr[js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double] = js.undefined
+  var maxWidth: js.UndefOr[(js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double] = js.undefined
   var noCentering: js.UndefOr[scala.Boolean] = js.undefined
   var noPlacemark: js.UndefOr[scala.Boolean] = js.undefined
   var noPopup: js.UndefOr[scala.Boolean] = js.undefined
@@ -63,7 +63,7 @@ object Anon_AdjustMapMarginAuto {
     formLayout: java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ILayout] = null,
     kind: yandexDashMapsLib.yandexDashMapsLibStrings.house | yandexDashMapsLib.yandexDashMapsLibStrings.street | yandexDashMapsLib.yandexDashMapsLibStrings.metro | yandexDashMapsLib.yandexDashMapsLibStrings.district | yandexDashMapsLib.yandexDashMapsLibStrings.locality = null,
     layout: java.lang.String | yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISearchControlLayout] = null,
-    maxWidth: js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double = null,
+    maxWidth: (js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double = null,
     noCentering: js.UndefOr[scala.Boolean] = js.undefined,
     noPlacemark: js.UndefOr[scala.Boolean] = js.undefined,
     noPopup: js.UndefOr[scala.Boolean] = js.undefined,

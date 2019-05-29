@@ -77,7 +77,7 @@ trait RatingProps extends js.Object {
   /**
     * Exposes style prop to add additonal styling to the container view
     */
-  var style: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ViewPropTypes.style */ js.UndefOr[
+  var style: js.UndefOr[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ViewPropTypes.style */ js.Any
   ] = js.undefined
   /**

@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * SODA support in node-oracledb is in Preview status and should not be used in production.
-  * It will be supported with a future version of Oracle Client libraries.
-  *
   * The SodaDatabase class is the top level object for node-oracledb SODA operations.
   * A ‘SODA database’ is an abstraction, allowing access to SODA collections in that ‘SODA database’,
   * which then allow access to documents in those collections.

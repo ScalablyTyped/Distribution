@@ -27,10 +27,10 @@ trait Paragraph extends js.Object {
   def getChild(childIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Element = js.native
   def getChildIndex(child: Element): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getHeading(): ParagraphHeading = js.native
-  def getIndentEnd(): stdLib.Number = js.native
-  def getIndentFirstLine(): stdLib.Number = js.native
-  def getIndentStart(): stdLib.Number = js.native
-  def getLineSpacing(): stdLib.Number = js.native
+  def getIndentEnd(): scala.Double = js.native
+  def getIndentFirstLine(): scala.Double = js.native
+  def getIndentStart(): scala.Double = js.native
+  def getLineSpacing(): scala.Double = js.native
   def getLinkUrl(): java.lang.String = js.native
   def getNextSibling(): Element = js.native
   def getNumChildren(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
@@ -38,8 +38,8 @@ trait Paragraph extends js.Object {
   def getPositionedImage(id: java.lang.String): PositionedImage = js.native
   def getPositionedImages(): js.Array[PositionedImage] = js.native
   def getPreviousSibling(): Element = js.native
-  def getSpacingAfter(): stdLib.Number = js.native
-  def getSpacingBefore(): stdLib.Number = js.native
+  def getSpacingAfter(): scala.Double = js.native
+  def getSpacingBefore(): scala.Double = js.native
   def getText(): java.lang.String = js.native
   def getTextAlignment(): TextAlignment = js.native
   def getType(): ElementType = js.native
@@ -63,14 +63,14 @@ trait Paragraph extends js.Object {
   def setAlignment(alignment: HorizontalAlignment): Paragraph = js.native
   def setAttributes(attributes: js.Object): Paragraph = js.native
   def setHeading(heading: ParagraphHeading): Paragraph = js.native
-  def setIndentEnd(indentEnd: stdLib.Number): Paragraph = js.native
-  def setIndentFirstLine(indentFirstLine: stdLib.Number): Paragraph = js.native
-  def setIndentStart(indentStart: stdLib.Number): Paragraph = js.native
+  def setIndentEnd(indentEnd: scala.Double): Paragraph = js.native
+  def setIndentFirstLine(indentFirstLine: scala.Double): Paragraph = js.native
+  def setIndentStart(indentStart: scala.Double): Paragraph = js.native
   def setLeftToRight(leftToRight: scala.Boolean): Paragraph = js.native
-  def setLineSpacing(multiplier: stdLib.Number): Paragraph = js.native
+  def setLineSpacing(multiplier: scala.Double): Paragraph = js.native
   def setLinkUrl(url: java.lang.String): Paragraph = js.native
-  def setSpacingAfter(spacingAfter: stdLib.Number): Paragraph = js.native
-  def setSpacingBefore(spacingBefore: stdLib.Number): Paragraph = js.native
+  def setSpacingAfter(spacingAfter: scala.Double): Paragraph = js.native
+  def setSpacingBefore(spacingBefore: scala.Double): Paragraph = js.native
   def setText(text: java.lang.String): scala.Unit = js.native
   def setTextAlignment(textAlignment: TextAlignment): Paragraph = js.native
 }

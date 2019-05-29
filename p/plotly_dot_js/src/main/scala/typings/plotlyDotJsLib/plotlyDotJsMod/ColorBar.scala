@@ -34,9 +34,9 @@ trait ColorBar extends js.Object {
   var tickprefix: java.lang.String
   var ticks: plotlyDotJsLib.plotlyDotJsLibStrings.outside | plotlyDotJsLib.plotlyDotJsLibStrings.inside | plotlyDotJsLib.plotlyDotJsLibStrings.Empty
   var ticksuffix: java.lang.String
-  var ticktext: js.Array[Datum] | js.Array[js.Array[Datum]] | js.Array[js.Array[js.Array[Datum]]] | TypedArray
+  var ticktext: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray
   var ticktextsrc: js.Any
-  var tickvals: js.Array[Datum] | js.Array[js.Array[Datum]] | js.Array[js.Array[js.Array[Datum]]] | TypedArray
+  var tickvals: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray
   var tickvalssrc: js.Any
   var tickwidth: scala.Double
   var title: java.lang.String
@@ -81,9 +81,9 @@ object ColorBar {
     tickprefix: java.lang.String,
     ticks: plotlyDotJsLib.plotlyDotJsLibStrings.outside | plotlyDotJsLib.plotlyDotJsLibStrings.inside | plotlyDotJsLib.plotlyDotJsLibStrings.Empty,
     ticksuffix: java.lang.String,
-    ticktext: js.Array[Datum] | js.Array[js.Array[Datum]] | js.Array[js.Array[js.Array[Datum]]] | TypedArray,
+    ticktext: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
     ticktextsrc: js.Any,
-    tickvals: js.Array[Datum] | js.Array[js.Array[Datum]] | js.Array[js.Array[js.Array[Datum]]] | TypedArray,
+    tickvals: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
     tickvalssrc: js.Any,
     tickwidth: scala.Double,
     title: java.lang.String,

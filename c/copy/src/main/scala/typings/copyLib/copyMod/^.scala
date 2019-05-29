@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(
-    patterns: java.lang.String | vinylLib.vinylMod.File | js.Array[java.lang.String] | js.Array[vinylLib.vinylMod.File],
+    patterns: java.lang.String | vinylLib.vinylMod.File | (js.Array[vinylLib.vinylMod.File | java.lang.String]),
     dir: java.lang.String,
     callback: Callback
   ): scala.Unit = js.native
@@ -30,7 +30,7 @@ object ^ extends js.Object {
     * @param `cb` Callback function if no options are specified
     */
   def apply(
-    patterns: java.lang.String | vinylLib.vinylMod.File | js.Array[java.lang.String] | js.Array[vinylLib.vinylMod.File],
+    patterns: java.lang.String | vinylLib.vinylMod.File | (js.Array[vinylLib.vinylMod.File | java.lang.String]),
     dir: java.lang.String,
     options: Options,
     callback: Callback

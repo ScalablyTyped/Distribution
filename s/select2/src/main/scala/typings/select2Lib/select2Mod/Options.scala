@@ -15,7 +15,7 @@ trait Options[Result, RemoteResult] extends js.Object {
   var containerCssClass: js.UndefOr[java.lang.String] = js.undefined
   // Not in https://select2.org/configuration/options-api
   var createTag: js.UndefOr[js.Function1[/* params */ SearchOptions, IdTextPair | scala.Null]] = js.undefined
-  var data: js.UndefOr[js.Array[DataFormat] | js.Array[GroupedDataFormat]] = js.undefined
+  var data: js.UndefOr[js.Array[DataFormat | GroupedDataFormat]] = js.undefined
   var dataAdapter: js.UndefOr[js.Any] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var dir: js.UndefOr[select2Lib.select2LibStrings.ltr | select2Lib.select2LibStrings.rtl] = js.undefined
@@ -97,7 +97,7 @@ object Options {
     containerCss: js.Any = null,
     containerCssClass: java.lang.String = null,
     createTag: /* params */ SearchOptions => IdTextPair | scala.Null = null,
-    data: js.Array[DataFormat] | js.Array[GroupedDataFormat] = null,
+    data: js.Array[DataFormat | GroupedDataFormat] = null,
     dataAdapter: js.Any = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     dir: select2Lib.select2LibStrings.ltr | select2Lib.select2LibStrings.rtl = null,
@@ -139,7 +139,7 @@ object Options {
     if (containerCss != null) __obj.updateDynamic("containerCss")(containerCss)
     if (containerCssClass != null) __obj.updateDynamic("containerCssClass")(containerCssClass)
     if (createTag != null) __obj.updateDynamic("createTag")(js.Any.fromFunction1(createTag))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (dataAdapter != null) __obj.updateDynamic("dataAdapter")(dataAdapter)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])

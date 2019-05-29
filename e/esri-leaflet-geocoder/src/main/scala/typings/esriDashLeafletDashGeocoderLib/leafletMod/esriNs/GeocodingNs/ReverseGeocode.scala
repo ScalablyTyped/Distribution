@@ -16,7 +16,7 @@ class ReverseGeocode ()
   def latlng(latlng: leafletLib.leafletMod.LatLngExpression): this.type = js.native
   def run(
     callback: js.Function3[
-      /* error */ js.UndefOr[_], 
+      /* error */ js.UndefOr[js.Any], 
       /* results */ esriDashLeafletDashGeocoderLib.Anon_Address, 
       /* response */ js.Any, 
       scala.Unit
@@ -24,7 +24,7 @@ class ReverseGeocode ()
   ): this.type = js.native
   def run(
     callback: js.Function3[
-      /* error */ js.UndefOr[_], 
+      /* error */ js.UndefOr[js.Any], 
       /* results */ esriDashLeafletDashGeocoderLib.Anon_Address, 
       /* response */ js.Any, 
       scala.Unit

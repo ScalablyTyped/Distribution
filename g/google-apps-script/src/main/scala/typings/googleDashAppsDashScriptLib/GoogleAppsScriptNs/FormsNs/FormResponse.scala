@@ -13,7 +13,7 @@ trait FormResponse extends js.Object {
   def getItemResponses(): js.Array[ItemResponse]
   def getRespondentEmail(): java.lang.String
   def getResponseForItem(item: Item): ItemResponse
-  def getTimestamp(): stdLib.Date
+  def getTimestamp(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date
   def submit(): FormResponse
   def toPrefilledUrl(): java.lang.String
   def withItemGrade(gradedResponse: ItemResponse): FormResponse
@@ -30,7 +30,7 @@ object FormResponse {
     getItemResponses: () => js.Array[ItemResponse],
     getRespondentEmail: () => java.lang.String,
     getResponseForItem: Item => ItemResponse,
-    getTimestamp: () => stdLib.Date,
+    getTimestamp: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date,
     submit: () => FormResponse,
     toPrefilledUrl: () => java.lang.String,
     withItemGrade: ItemResponse => FormResponse,

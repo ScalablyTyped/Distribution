@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "req-cwd"
-version := "2.0-dt-20180730Z-b0ade9"
+version := "2.0-dt-20180730Z-18653e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

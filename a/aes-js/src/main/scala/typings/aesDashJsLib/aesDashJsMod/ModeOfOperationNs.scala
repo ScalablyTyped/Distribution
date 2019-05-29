@@ -82,7 +82,7 @@ object ModeOfOperationNs extends js.Object {
   ] = js.native
   val ctr: org.scalablytyped.runtime.Instantiable2[
     /* key */ aesDashJsLib.aesDashJsMod.ByteSource, 
-    /* counter */ js.UndefOr[/* counter */ aesDashJsLib.aesDashJsMod.Counter], 
+    js.UndefOr[/* counter */ aesDashJsLib.aesDashJsMod.Counter], 
     ModeOfOperationCTR
   ] = js.native
   val ecb: org.scalablytyped.runtime.Instantiable1[/* key */ aesDashJsLib.aesDashJsMod.ByteSource, ModeOfOperationECB] = js.native

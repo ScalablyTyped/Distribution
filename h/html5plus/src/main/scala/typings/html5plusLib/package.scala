@@ -10,9 +10,18 @@ package object html5plusLib {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/downloader.html](http://www.html5plus.org/doc/zh_cn/downloader.html)
     */
-  type PlusDownloaderDownloadState = js.UndefOr[
-    html5plusLib.html5plusLibNumbers.`0` | html5plusLib.html5plusLibNumbers.`1` | html5plusLib.html5plusLibNumbers.`2` | html5plusLib.html5plusLibNumbers.`3` | html5plusLib.html5plusLibNumbers.`4` | html5plusLib.html5plusLibNumbers.`5` | html5plusLib.html5plusLibNumbers.`-1`
-  ]
+  /* Rewritten from type alias, can be one of: 
+    - `js.undefined`
+    - scala.Nothing
+    - html5plusLib.html5plusLibNumbers.`0`
+    - html5plusLib.html5plusLibNumbers.`1`
+    - html5plusLib.html5plusLibNumbers.`2`
+    - html5plusLib.html5plusLibNumbers.`3`
+    - html5plusLib.html5plusLibNumbers.`4`
+    - html5plusLib.html5plusLibNumbers.`5`
+    - html5plusLib.html5plusLibNumbers.`-1`
+  */
+  type PlusDownloaderDownloadState = js.UndefOr[_PlusDownloaderDownloadState]
   /**
     * 本地路径URL
     * 可在html页面中直接访问本地资源，以“file:///”开头，后面跟随系统的绝对路径。
@@ -42,7 +51,16 @@ package object html5plusLib {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
-  type PlusUploaderUploadState = js.UndefOr[
-    html5plusLib.html5plusLibNumbers.`0` | html5plusLib.html5plusLibNumbers.`1` | html5plusLib.html5plusLibNumbers.`2` | html5plusLib.html5plusLibNumbers.`3` | html5plusLib.html5plusLibNumbers.`4` | html5plusLib.html5plusLibNumbers.`5` | html5plusLib.html5plusLibNumbers.`-1`
-  ]
+  /* Rewritten from type alias, can be one of: 
+    - `js.undefined`
+    - scala.Nothing
+    - html5plusLib.html5plusLibNumbers.`0`
+    - html5plusLib.html5plusLibNumbers.`1`
+    - html5plusLib.html5plusLibNumbers.`2`
+    - html5plusLib.html5plusLibNumbers.`3`
+    - html5plusLib.html5plusLibNumbers.`4`
+    - html5plusLib.html5plusLibNumbers.`5`
+    - html5plusLib.html5plusLibNumbers.`-1`
+  */
+  type PlusUploaderUploadState = js.UndefOr[_PlusUploaderUploadState]
 }

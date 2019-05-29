@@ -11,12 +11,9 @@ trait CacheableRequest
       /* requestFn */ RequestFn, 
       (/* storageAdapter */ StorageAdapter) | (/* storageAdapter */ java.lang.String), 
       js.Function2[
-        /* opts */ java.lang.String | nodeLib.urlMod.URL | (nodeLib.httpMod.RequestOptions with httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.Options), 
-        /* cb */ js.UndefOr[
-          js.Function1[
-            /* response */ nodeLib.httpMod.ServerResponse | responselikeLib.responselikeMod.^ , 
-            scala.Unit
-          ]
+        (nodeLib.httpMod.RequestOptions with httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.Options) | java.lang.String | nodeLib.urlMod.URL, 
+        js.UndefOr[
+          js.Function1[nodeLib.httpMod.ServerResponse | responselikeLib.responselikeMod.^ , scala.Unit]
         ], 
         Emitter
       ]
@@ -24,12 +21,9 @@ trait CacheableRequest
      with org.scalablytyped.runtime.Instantiable1[
       /* requestFn */ RequestFn, 
       js.Function2[
-        /* opts */ java.lang.String | nodeLib.urlMod.URL | (nodeLib.httpMod.RequestOptions with httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.Options), 
-        /* cb */ js.UndefOr[
-          js.Function1[
-            /* response */ nodeLib.httpMod.ServerResponse | responselikeLib.responselikeMod.^ , 
-            scala.Unit
-          ]
+        (nodeLib.httpMod.RequestOptions with httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.Options) | java.lang.String | nodeLib.urlMod.URL, 
+        js.UndefOr[
+          js.Function1[nodeLib.httpMod.ServerResponse | responselikeLib.responselikeMod.^ , scala.Unit]
         ], 
         Emitter
       ]

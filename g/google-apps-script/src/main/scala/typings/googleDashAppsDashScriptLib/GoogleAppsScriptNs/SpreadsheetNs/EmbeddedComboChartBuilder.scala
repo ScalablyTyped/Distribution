@@ -38,7 +38,7 @@ trait EmbeddedComboChartBuilder extends js.Object {
     offsetX: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetY: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): EmbeddedChartBuilder
-  def setRange(start: stdLib.Number, end: stdLib.Number): EmbeddedComboChartBuilder
+  def setRange(start: scala.Double, end: scala.Double): EmbeddedComboChartBuilder
   def setStacked(): EmbeddedComboChartBuilder
   def setTitle(chartTitle: java.lang.String): EmbeddedComboChartBuilder
   def setTitleTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedComboChartBuilder
@@ -82,7 +82,7 @@ object EmbeddedComboChartBuilder {
     setNumHeaders: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => EmbeddedChartBuilder,
     setOption: (java.lang.String, js.Object) => EmbeddedChartBuilder,
     setPosition: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => EmbeddedChartBuilder,
-    setRange: (stdLib.Number, stdLib.Number) => EmbeddedComboChartBuilder,
+    setRange: (scala.Double, scala.Double) => EmbeddedComboChartBuilder,
     setStacked: () => EmbeddedComboChartBuilder,
     setTitle: java.lang.String => EmbeddedComboChartBuilder,
     setTitleTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedComboChartBuilder,

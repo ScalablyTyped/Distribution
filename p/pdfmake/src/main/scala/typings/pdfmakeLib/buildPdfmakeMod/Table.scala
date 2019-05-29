@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Table extends js.Object {
-  var body: js.Array[js.Array[Content]] | js.Array[js.Array[TableCell]]
+  var body: js.Array[js.Array[Content | TableCell]]
   var dontBreakRows: js.UndefOr[scala.Boolean] = js.undefined
   var headerRows: js.UndefOr[scala.Double] = js.undefined
   var heights: js.UndefOr[(js.Array[java.lang.String | scala.Double]) | TableRowFunction] = js.undefined
@@ -17,14 +17,14 @@ trait Table extends js.Object {
 object Table {
   @scala.inline
   def apply(
-    body: js.Array[js.Array[Content]] | js.Array[js.Array[TableCell]],
+    body: js.Array[js.Array[Content | TableCell]],
     dontBreakRows: js.UndefOr[scala.Boolean] = js.undefined,
     headerRows: scala.Int | scala.Double = null,
     heights: (js.Array[java.lang.String | scala.Double]) | TableRowFunction = null,
     layout: java.lang.String | TableLayoutFunctions = null,
     widths: js.Array[java.lang.String | scala.Double] = null
   ): Table = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body)
     if (!js.isUndefined(dontBreakRows)) __obj.updateDynamic("dontBreakRows")(dontBreakRows)
     if (headerRows != null) __obj.updateDynamic("headerRows")(headerRows.asInstanceOf[js.Any])
     if (heights != null) __obj.updateDynamic("heights")(heights.asInstanceOf[js.Any])

@@ -200,12 +200,12 @@ object ^ extends js.Object {
     node: graphqlLib.Anon_Description,
     options: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.utilitiesBuildASTSchemaMod.BuildSchemaOptions]
   ): js.UndefOr[java.lang.String] = js.native
-  def getDirectiveValues(directiveDef: graphqlLib.typeDirectivesMod.GraphQLDirective, node: graphqlLib.Anon_Directives): js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def getDirectiveValues(directiveDef: graphqlLib.typeDirectivesMod.GraphQLDirective, node: graphqlLib.Anon_Directives): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def getDirectiveValues(
     directiveDef: graphqlLib.typeDirectivesMod.GraphQLDirective,
     node: graphqlLib.Anon_Directives,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
-  ): js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  ): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def getIntrospectionQuery(): java.lang.String = js.native
   def getIntrospectionQuery(options: graphqlLib.utilitiesIntrospectionQueryMod.IntrospectionOptions): java.lang.String = js.native
   def getLocation(source: graphqlLib.languageSourceMod.Source, position: scala.Double): graphqlLib.languageLocationMod.SourceLocation = js.native

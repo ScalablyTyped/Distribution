@@ -558,7 +558,7 @@ class Application protected () extends js.Object {
     HelpFile: js.UndefOr[java.lang.String],
     HelpContextID: js.UndefOr[scala.Double],
     Type: js.UndefOr[InputBoxReturnType]
-  ): java.lang.String | scala.Double | scala.Boolean | Range | Error | stdLib.SafeArray[java.lang.String] | stdLib.SafeArray[scala.Double] | stdLib.SafeArray[scala.Boolean] = js.native
+  ): java.lang.String | scala.Double | scala.Boolean | Range | Error | (stdLib.SafeArray[scala.Boolean | scala.Double | java.lang.String]) = js.native
   def International[T](Index: T): InternationalResult[T] = js.native
   def Intersect(
     Arg1: Range,
@@ -595,8 +595,8 @@ class Application protected () extends js.Object {
   def MacroOptions(
     Macro: js.UndefOr[java.lang.String],
     Description: js.UndefOr[java.lang.String],
-    HasMenu: js.UndefOr[js.UndefOr[scala.Nothing]],
-    MenuText: js.UndefOr[js.UndefOr[scala.Nothing]],
+    HasMenu: js.UndefOr[scala.Nothing],
+    MenuText: js.UndefOr[scala.Nothing],
     HasShortcutKey: js.UndefOr[scala.Boolean],
     ShortcutKey: js.UndefOr[java.lang.String],
     Category: js.UndefOr[FunctionCategory | java.lang.String],
@@ -612,13 +612,13 @@ class Application protected () extends js.Object {
   def MailLogon(Name: java.lang.String, Password: java.lang.String, DownloadNewMail: scala.Boolean): scala.Unit = js.native
   def MenuBars(Index: js.Any): MenuBar = js.native
   def Modules(Index: js.Any): js.Any = js.native
-  def Names(Index: java.lang.String): Name = js.native
-  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
   def Names(
     Index: js.UndefOr[scala.Nothing],
     IndexLocal: js.UndefOr[scala.Nothing],
     RefersTo: java.lang.String
   ): Name = js.native
+  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
+  def Names(Index: java.lang.String): Name = js.native
   def Names(Index: scala.Double): Name = js.native
   def NextLetter(): Workbook = js.native
   def ODBCErrors(Index: scala.Double): ODBCError = js.native
@@ -653,9 +653,9 @@ class Application protected () extends js.Object {
   ): scala.Unit = js.native
   def RegisterXLL(Filename: java.lang.String): scala.Boolean = js.native
   def RegisteredFunctions(): stdLib.SafeArray[_] | scala.Null = js.native
+  def RegisteredFunctions(Index1: js.UndefOr[scala.Nothing], Index2: java.lang.String): stdLib.SafeArray[_] | scala.Null = js.native
   def RegisteredFunctions(Index1: java.lang.String): stdLib.SafeArray[_] | scala.Null = js.native
   def RegisteredFunctions(Index1: java.lang.String, Index2: java.lang.String): stdLib.SafeArray[_] | scala.Null = js.native
-  def RegisteredFunctions(Index1: js.UndefOr[scala.Nothing], Index2: java.lang.String): stdLib.SafeArray[_] | scala.Null = js.native
   def Repeat(): scala.Unit = js.native
   def ResetTipWizard(): scala.Unit = js.native
   def Rows(Address: java.lang.String): Range = js.native

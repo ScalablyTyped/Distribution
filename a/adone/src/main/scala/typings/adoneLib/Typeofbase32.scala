@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Typeofbase32 extends js.Object {
   var Decoder: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ adoneLib.adoneNs.dataNs.base32Ns.INs.DecoderOptions], 
+    js.UndefOr[/* options */ adoneLib.adoneNs.dataNs.base32Ns.INs.DecoderOptions], 
     adoneLib.adoneNs.dataNs.base32Ns.Decoder
   ] = js.native
   var Encoder: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ adoneLib.adoneNs.dataNs.base32Ns.INs.EncoderOptions], 
+    js.UndefOr[/* options */ adoneLib.adoneNs.dataNs.base32Ns.INs.EncoderOptions], 
     adoneLib.adoneNs.dataNs.base32Ns.Encoder
   ] = js.native
   val INs: js.Any = js.native

@@ -81,6 +81,13 @@ object esActionsMod extends js.Object {
     actionFunctionMap: xstateLib.esTypesMod.ActionFunctionMap[TContext, TEvent]
   ): xstateLib.esTypesMod.ActionObject[TContext, TEvent] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
+    action: js.UndefOr[scala.Nothing],
+    actionFunctionMap: stdLib.Record[
+      java.lang.String, 
+      (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])
+    ]
+  ): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](action: java.lang.String): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
     action: java.lang.String,
@@ -92,13 +99,6 @@ object esActionsMod extends js.Object {
   def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](action: js.Array[xstateLib.esTypesMod.Action[TContext, TEvent]]): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
     action: js.Array[xstateLib.esTypesMod.Action[TContext, TEvent]],
-    actionFunctionMap: stdLib.Record[
-      java.lang.String, 
-      (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])
-    ]
-  ): js.Array[xstateLib.esTypesMod.ActionObject[TContext, TEvent]] = js.native
-  def toActionObjects[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](
-    action: js.UndefOr[scala.Nothing],
     actionFunctionMap: stdLib.Record[
       java.lang.String, 
       (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])

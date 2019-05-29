@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-statusbar"
-version := "2.4.2-5fe5c4"
+version := "2.4.2-e26c2a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

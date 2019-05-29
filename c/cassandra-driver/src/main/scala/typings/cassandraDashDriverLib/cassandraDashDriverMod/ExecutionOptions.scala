@@ -11,7 +11,7 @@ trait ExecutionOptions extends js.Object {
   def getCustomPayload(): org.scalablytyped.runtime.StringDictionary[js.Any]
   def getFetchSize(): scala.Double
   def getFixedHost(): Host
-  def getHints(): js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]
+  def getHints(): js.Array[js.Array[java.lang.String] | java.lang.String]
   def getKeyspace(): java.lang.String
   def getLoadBalancingPolicy(): cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.loadBalancingNs.LoadBalancingPolicy
   def getPageState(): nodeLib.Buffer
@@ -46,7 +46,7 @@ class ExecutionOptionsCls () extends ExecutionOptions {
   /* CompleteClass */
   override def getFixedHost(): Host = js.native
   /* CompleteClass */
-  override def getHints(): js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = js.native
+  override def getHints(): js.Array[js.Array[java.lang.String] | java.lang.String] = js.native
   /* CompleteClass */
   override def getKeyspace(): java.lang.String = js.native
   /* CompleteClass */
@@ -91,7 +91,7 @@ object ExecutionOptions {
     getCustomPayload: () => org.scalablytyped.runtime.StringDictionary[js.Any],
     getFetchSize: () => scala.Double,
     getFixedHost: () => Host,
-    getHints: () => js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]],
+    getHints: () => js.Array[js.Array[java.lang.String] | java.lang.String],
     getKeyspace: () => java.lang.String,
     getLoadBalancingPolicy: () => cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.loadBalancingNs.LoadBalancingPolicy,
     getPageState: () => nodeLib.Buffer,

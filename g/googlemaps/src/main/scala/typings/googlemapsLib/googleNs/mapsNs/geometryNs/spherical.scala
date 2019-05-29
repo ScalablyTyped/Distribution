@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Utility functions for computing geodesic angles, distances and areas.
+  * The default radius is Earth's radius of 6378137 meters.
+  */
 @JSGlobal("google.maps.geometry.spherical")
 @js.native
 class spherical () extends js.Object

@@ -19,7 +19,7 @@ trait ojChartItem
   ] = js.native
   var groupId: js.Array[java.lang.String | scala.Double] = js.native
   var high: js.UndefOr[scala.Double] = js.native
-  var items: js.UndefOr[js.Array[js.Object] | js.Array[scala.Double]] = js.native
+  var items: js.UndefOr[js.Array[scala.Double | js.Object]] = js.native
   var label: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
   var labelPosition: js.UndefOr[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.outsideSlice | atOracleOraclejetLib.atOracleOraclejetLibStrings.aboveMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.belowMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.beforeMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.afterMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.insideBarEdge | atOracleOraclejetLib.atOracleOraclejetLibStrings.outsideBarEdge | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
@@ -74,7 +74,7 @@ trait ojChartItem
     _
   ]) | scala.Null = js.native
   var onItemsChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[js.Object] | js.Array[scala.Double]]], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[scala.Double | js.Object]]], 
     _
   ]) | scala.Null = js.native
   var onLabelChanged: (js.Function1[
@@ -896,7 +896,7 @@ trait ojChartItem
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.itemsChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[js.Object] | js.Array[scala.Double]]], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[scala.Double | js.Object]]], 
       _
     ]
   ): scala.Unit = js.native
@@ -905,7 +905,7 @@ trait ojChartItem
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.itemsChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[js.Object] | js.Array[scala.Double]]], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[scala.Double | js.Object]]], 
       _
     ],
     useCapture: scala.Boolean
@@ -1955,7 +1955,7 @@ trait ojChartItem
   @JSName("getProperty")
   def getProperty_high(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.high): js.UndefOr[scala.Double] = js.native
   @JSName("getProperty")
-  def getProperty_items(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.items): js.UndefOr[js.Array[js.Object] | js.Array[scala.Double]] = js.native
+  def getProperty_items(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.items): js.UndefOr[js.Array[scala.Double | js.Object]] = js.native
   @JSName("getProperty")
   def getProperty_label(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.label): js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
   @JSName("getProperty")

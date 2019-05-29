@@ -13,7 +13,7 @@ trait GoalData extends js.Object {
   var goalPreviousStep1: js.UndefOr[java.lang.String] = js.undefined
   var goalPreviousStep2: js.UndefOr[java.lang.String] = js.undefined
   var goalPreviousStep3: js.UndefOr[java.lang.String] = js.undefined
-  var goalValue: js.UndefOr[stdLib.Number] = js.undefined
+  var goalValue: js.UndefOr[scala.Double] = js.undefined
 }
 
 object GoalData {
@@ -26,7 +26,7 @@ object GoalData {
     goalPreviousStep1: java.lang.String = null,
     goalPreviousStep2: java.lang.String = null,
     goalPreviousStep3: java.lang.String = null,
-    goalValue: stdLib.Number = null
+    goalValue: scala.Int | scala.Double = null
   ): GoalData = {
     val __obj = js.Dynamic.literal()
     if (goalCompletionLocation != null) __obj.updateDynamic("goalCompletionLocation")(goalCompletionLocation)
@@ -36,7 +36,7 @@ object GoalData {
     if (goalPreviousStep1 != null) __obj.updateDynamic("goalPreviousStep1")(goalPreviousStep1)
     if (goalPreviousStep2 != null) __obj.updateDynamic("goalPreviousStep2")(goalPreviousStep2)
     if (goalPreviousStep3 != null) __obj.updateDynamic("goalPreviousStep3")(goalPreviousStep3)
-    if (goalValue != null) __obj.updateDynamic("goalValue")(goalValue)
+    if (goalValue != null) __obj.updateDynamic("goalValue")(goalValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoalData]
   }
 }

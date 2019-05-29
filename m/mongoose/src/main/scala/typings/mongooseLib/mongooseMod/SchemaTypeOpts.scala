@@ -63,7 +63,7 @@ trait SchemaTypeOpts[T]
     * Sets a maximum date validator.
     */
   var max: js.UndefOr[
-    scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | stdLib.Date | (js.Tuple2[stdLib.Date, java.lang.String]) | js.Any
+    scala.Double | (js.Tuple2[stdLib.Date | scala.Double, java.lang.String]) | stdLib.Date | js.Any
   ] = js.undefined
   /** String only - Sets a maximum length validator. */
   var maxlength: js.UndefOr[scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any] = js.undefined
@@ -72,7 +72,7 @@ trait SchemaTypeOpts[T]
     * Sets a minimum date validator.
     */
   var min: js.UndefOr[
-    scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | stdLib.Date | (js.Tuple2[stdLib.Date, java.lang.String]) | js.Any
+    scala.Double | (js.Tuple2[stdLib.Date | scala.Double, java.lang.String]) | stdLib.Date | js.Any
   ] = js.undefined
   /** String only - Sets a minimum length validator. */
   var minlength: js.UndefOr[scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any] = js.undefined
@@ -81,7 +81,7 @@ trait SchemaTypeOpts[T]
     * to the front of this SchemaType's validators array using unshift().
     */
   var required: js.UndefOr[
-    mongooseLib.mongooseMod.SchemaTypeOptsNs.RequiredFn[T] | scala.Boolean | (js.Tuple2[scala.Boolean, java.lang.String]) | java.lang.String | (js.Tuple2[java.lang.String, java.lang.String]) | js.Any
+    mongooseLib.mongooseMod.SchemaTypeOptsNs.RequiredFn[T] | scala.Boolean | (js.Tuple2[scala.Boolean | java.lang.String, java.lang.String]) | java.lang.String | js.Any
   ] = js.undefined
   /**
     * Sets default select() behavior for this path.
@@ -113,7 +113,10 @@ trait SchemaTypeOpts[T]
     * and must return Boolean. Returning false means validation failed.
     */
   var validate: js.UndefOr[
-    stdLib.RegExp | (js.Tuple2[stdLib.RegExp, java.lang.String]) | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T] | (js.Tuple2[mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T], java.lang.String]) | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationOpts | (js.Array[
+    stdLib.RegExp | (js.Tuple2[
+      stdLib.RegExp | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T], 
+      java.lang.String
+    ]) | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationOpts | (js.Array[
       mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationOpts
     ])
   ] = js.undefined
@@ -132,11 +135,11 @@ object SchemaTypeOpts {
     index: mongooseLib.mongooseMod.SchemaTypeOptsNs.IndexOpts | scala.Boolean | java.lang.String = null,
     lowercase: scala.Boolean | js.Any = null,
     `match`: stdLib.RegExp | (js.Tuple2[stdLib.RegExp, java.lang.String]) | js.Any = null,
-    max: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | stdLib.Date | (js.Tuple2[stdLib.Date, java.lang.String]) | js.Any = null,
+    max: scala.Double | (js.Tuple2[stdLib.Date | scala.Double, java.lang.String]) | stdLib.Date | js.Any = null,
     maxlength: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any = null,
-    min: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | stdLib.Date | (js.Tuple2[stdLib.Date, java.lang.String]) | js.Any = null,
+    min: scala.Double | (js.Tuple2[stdLib.Date | scala.Double, java.lang.String]) | stdLib.Date | js.Any = null,
     minlength: scala.Double | (js.Tuple2[scala.Double, java.lang.String]) | js.Any = null,
-    required: mongooseLib.mongooseMod.SchemaTypeOptsNs.RequiredFn[T] | scala.Boolean | (js.Tuple2[scala.Boolean, java.lang.String]) | java.lang.String | (js.Tuple2[java.lang.String, java.lang.String]) | js.Any = null,
+    required: mongooseLib.mongooseMod.SchemaTypeOptsNs.RequiredFn[T] | scala.Boolean | (js.Tuple2[scala.Boolean | java.lang.String, java.lang.String]) | java.lang.String | js.Any = null,
     select: scala.Boolean | js.Any = null,
     set: (/* value */ T, /* schematype */ js.UndefOr[SchemaTypeOpts[T]]) => T | _ = null,
     sparse: scala.Boolean | js.Any = null,
@@ -145,7 +148,10 @@ object SchemaTypeOpts {
     `type`: T = null,
     unique: scala.Boolean | js.Any = null,
     uppercase: scala.Boolean | js.Any = null,
-    validate: stdLib.RegExp | (js.Tuple2[stdLib.RegExp, java.lang.String]) | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T] | (js.Tuple2[mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T], java.lang.String]) | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationOpts | (js.Array[
+    validate: stdLib.RegExp | (js.Tuple2[
+      stdLib.RegExp | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T], 
+      java.lang.String
+    ]) | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationOpts | (js.Array[
       mongooseLib.mongooseMod.SchemaTypeOptsNs.ValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncValidateOpts | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationFn[T] | mongooseLib.mongooseMod.SchemaTypeOptsNs.AsyncPromiseValidationOpts
     ]) = null
   ): SchemaTypeOpts[T] = {

@@ -17,22 +17,28 @@ trait DataValidationBuilder extends js.Object {
   def requireCheckbox(checkedValue: js.Object): DataValidationBuilder = js.native
   def requireCheckbox(checkedValue: js.Object, uncheckedValue: js.Object): DataValidationBuilder = js.native
   def requireDate(): DataValidationBuilder = js.native
-  def requireDateAfter(date: stdLib.Date): DataValidationBuilder = js.native
-  def requireDateBefore(date: stdLib.Date): DataValidationBuilder = js.native
-  def requireDateBetween(start: stdLib.Date, end: stdLib.Date): DataValidationBuilder = js.native
-  def requireDateEqualTo(date: stdLib.Date): DataValidationBuilder = js.native
-  def requireDateNotBetween(start: stdLib.Date, end: stdLib.Date): DataValidationBuilder = js.native
-  def requireDateOnOrAfter(date: stdLib.Date): DataValidationBuilder = js.native
-  def requireDateOnOrBefore(date: stdLib.Date): DataValidationBuilder = js.native
+  def requireDateAfter(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DataValidationBuilder = js.native
+  def requireDateBefore(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DataValidationBuilder = js.native
+  def requireDateBetween(
+    start: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date,
+    end: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date
+  ): DataValidationBuilder = js.native
+  def requireDateEqualTo(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DataValidationBuilder = js.native
+  def requireDateNotBetween(
+    start: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date,
+    end: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date
+  ): DataValidationBuilder = js.native
+  def requireDateOnOrAfter(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DataValidationBuilder = js.native
+  def requireDateOnOrBefore(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DataValidationBuilder = js.native
   def requireFormulaSatisfied(formula: java.lang.String): DataValidationBuilder = js.native
-  def requireNumberBetween(start: stdLib.Number, end: stdLib.Number): DataValidationBuilder = js.native
-  def requireNumberEqualTo(number: stdLib.Number): DataValidationBuilder = js.native
-  def requireNumberGreaterThan(number: stdLib.Number): DataValidationBuilder = js.native
-  def requireNumberGreaterThanOrEqualTo(number: stdLib.Number): DataValidationBuilder = js.native
-  def requireNumberLessThan(number: stdLib.Number): DataValidationBuilder = js.native
-  def requireNumberLessThanOrEqualTo(number: stdLib.Number): DataValidationBuilder = js.native
-  def requireNumberNotBetween(start: stdLib.Number, end: stdLib.Number): DataValidationBuilder = js.native
-  def requireNumberNotEqualTo(number: stdLib.Number): DataValidationBuilder = js.native
+  def requireNumberBetween(start: scala.Double, end: scala.Double): DataValidationBuilder = js.native
+  def requireNumberEqualTo(number: scala.Double): DataValidationBuilder = js.native
+  def requireNumberGreaterThan(number: scala.Double): DataValidationBuilder = js.native
+  def requireNumberGreaterThanOrEqualTo(number: scala.Double): DataValidationBuilder = js.native
+  def requireNumberLessThan(number: scala.Double): DataValidationBuilder = js.native
+  def requireNumberLessThanOrEqualTo(number: scala.Double): DataValidationBuilder = js.native
+  def requireNumberNotBetween(start: scala.Double, end: scala.Double): DataValidationBuilder = js.native
+  def requireNumberNotEqualTo(number: scala.Double): DataValidationBuilder = js.native
   def requireTextContains(text: java.lang.String): DataValidationBuilder = js.native
   def requireTextDoesNotContain(text: java.lang.String): DataValidationBuilder = js.native
   def requireTextEqualTo(text: java.lang.String): DataValidationBuilder = js.native

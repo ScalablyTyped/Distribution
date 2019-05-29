@@ -6,6 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IProgressBar extends IComponent {
+  /** [Config Option] (Boolean/Object) */
+  @JSName("animate")
+  var animate_IProgressBar: js.UndefOr[js.Any] = js.undefined
+  /** [Method] Initialized the renderData to be used when rendering the renderTpl
+  		* @returns Object Object with keys and values that are going to be applied to the renderTpl
+  		*/
+  @JSName("initRenderData")
+  var initRenderData_IProgressBar: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns true if the progress bar is currently in a wait operation
   		* @returns Boolean True if waiting, else false
   		*/

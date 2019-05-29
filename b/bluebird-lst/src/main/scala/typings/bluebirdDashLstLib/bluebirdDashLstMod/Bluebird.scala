@@ -51,296 +51,216 @@ trait Bluebird[R]
     * Alias `.caught();` for compatibility with earlier ECMAScript version.
     */
   def `catch`(): Bluebird[R] = js.native
-  def `catch`(
-    onReject: js.Function1[/* error */ js.Any, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
-  ): Bluebird[R] = js.native
+  def `catch`(onReject: js.Function1[/* error */ js.Any, R | (js.Thenable[R | scala.Unit]) | scala.Unit]): Bluebird[R] = js.native
   def `catch`[E1](
     filter1: E1 with js.Object,
-    onReject: js.Function1[/* error */ E1, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
-    onReject: js.Function1[/* error */ E1, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1 /* <: stdLib.Error */](
     filter1: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E1],
-    onReject: js.Function1[/* error */ E1, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1 /* <: stdLib.Error */, E2 /* <: stdLib.Error */](
     filter1: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E1],
     filter2: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E2],
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1 /* <: stdLib.Error */, E2 /* <: stdLib.Error */, E3 /* <: stdLib.Error */](
     filter1: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E1],
     filter2: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E2],
     filter3: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E3],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1 /* <: stdLib.Error */, E2 /* <: stdLib.Error */, E3 /* <: stdLib.Error */, E4 /* <: stdLib.Error */](
     filter1: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E1],
     filter2: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E2],
     filter3: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E3],
     filter4: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E4],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def `catch`[E1, E2, E3, E4, E5](
     filter1: (js.Function1[/* error */ E1, scala.Boolean]) | (E1 with js.Object),
@@ -348,10 +268,7 @@ trait Bluebird[R]
     filter3: (js.Function1[/* error */ E3, scala.Boolean]) | (E3 with js.Object),
     filter4: (js.Function1[/* error */ E4, scala.Boolean]) | (E4 with js.Object),
     filter5: (js.Function1[/* error */ E5, scala.Boolean]) | (E5 with js.Object),
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4 | E5, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   /**
     * This extends `.catch` to work more like catch-clauses in languages like Java or C#. Instead of manually checking `instanceof` or `.name === "SomeError"`, you may specify a number of error constructors which are eligible for this catch handler. The catch handler that is first met that has eligible constructors specified, is the one that will be called.
@@ -368,10 +285,7 @@ trait Bluebird[R]
     filter3: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E3],
     filter4: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E4],
     filter5: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E5],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4 | E5, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   /**
     * Convenience method for:
@@ -776,302 +690,219 @@ trait Bluebird[R]
     filter3: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E3],
     filter4: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E4],
     filter5: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E5],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4 | E5, 
-      U | js.Thenable[U] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, U | (js.Thenable[U | scala.Unit]) | scala.Unit]
   ): Bluebird[U | R] = js.native
   def caught(): Bluebird[R] = js.native
-  def caught(
-    onReject: js.Function1[/* error */ js.Any, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
-  ): Bluebird[R] = js.native
+  def caught(onReject: js.Function1[/* error */ js.Any, R | (js.Thenable[R | scala.Unit]) | scala.Unit]): Bluebird[R] = js.native
   def caught[E1](
     filter1: E1 with js.Object,
-    onReject: js.Function1[/* error */ E1, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
-    onReject: js.Function1[/* error */ E1, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1 /* <: stdLib.Error */](
     filter1: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E1],
-    onReject: js.Function1[/* error */ E1, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1 /* <: stdLib.Error */, E2 /* <: stdLib.Error */](
     filter1: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E1],
     filter2: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E2],
-    onReject: js.Function1[/* error */ E1 | E2, R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E1 | E2, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1 /* <: stdLib.Error */, E2 /* <: stdLib.Error */, E3 /* <: stdLib.Error */](
     filter1: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E1],
     filter2: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E2],
     filter3: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E3],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: E1 with js.Object,
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: E3 with js.Object,
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: E2 with js.Object,
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: E3 with js.Object,
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: E4 with js.Object,
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4](
     filter1: js.Function1[/* error */ E1, scala.Boolean],
     filter2: js.Function1[/* error */ E2, scala.Boolean],
     filter3: js.Function1[/* error */ E3, scala.Boolean],
     filter4: js.Function1[/* error */ E4, scala.Boolean],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1 /* <: stdLib.Error */, E2 /* <: stdLib.Error */, E3 /* <: stdLib.Error */, E4 /* <: stdLib.Error */](
     filter1: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E1],
     filter2: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E2],
     filter3: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E3],
     filter4: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E4],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1, E2, E3, E4, E5](
     filter1: (js.Function1[/* error */ E1, scala.Boolean]) | (E1 with js.Object),
@@ -1079,10 +910,7 @@ trait Bluebird[R]
     filter3: (js.Function1[/* error */ E3, scala.Boolean]) | (E3 with js.Object),
     filter4: (js.Function1[/* error */ E4, scala.Boolean]) | (E4 with js.Object),
     filter5: (js.Function1[/* error */ E5, scala.Boolean]) | (E5 with js.Object),
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4 | E5, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   def caught[E1 /* <: stdLib.Error */, E2 /* <: stdLib.Error */, E3 /* <: stdLib.Error */, E4 /* <: stdLib.Error */, E5 /* <: stdLib.Error */](
     filter1: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E1],
@@ -1090,10 +918,7 @@ trait Bluebird[R]
     filter3: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E3],
     filter4: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E4],
     filter5: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E5],
-    onReject: js.Function1[
-      /* error */ E1 | E2 | E3 | E4 | E5, 
-      R | js.Thenable[R] | scala.Unit | js.Thenable[scala.Unit]
-    ]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, R | (js.Thenable[R | scala.Unit]) | scala.Unit]
   ): Bluebird[R] = js.native
   @JSName("caught")
   def caught_U[U](): Bluebird[U | R] = js.native

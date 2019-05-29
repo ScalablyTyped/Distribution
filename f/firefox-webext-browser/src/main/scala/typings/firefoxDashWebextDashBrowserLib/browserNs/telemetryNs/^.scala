@@ -30,7 +30,7 @@ object ^ extends js.Object {
     method: java.lang.String,
     `object`: java.lang.String,
     value: scala.Double,
-    extra: java.lang.String
+    extra: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   ): js.Promise[_] = js.native
   /**
     * Register new events to record them from addons. See nsITelemetry.idl for more details.
@@ -38,14 +38,14 @@ object ^ extends js.Object {
     * @param data An object that contains registration data for 1+ events. Each property name is the category name,
     *     and the corresponding property value is an object of EventData type.
     */
-  def registerEvents(category: java.lang.String, data: EventData): js.Promise[_] = js.native
+  def registerEvents(category: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[EventData]): js.Promise[_] = js.native
   /**
     * Register new scalars to record them from addons. See nsITelemetry.idl for more details.
     * @param category The unique category the scalars are registered in.
     * @param data An object that contains registration data for multiple scalars. Each property name is the scalar
     *     name, and the corresponding property value is an object of ScalarData type.
     */
-  def registerScalars(category: java.lang.String, data: ScalarData): js.Promise[_] = js.native
+  def registerScalars(category: java.lang.String, data: org.scalablytyped.runtime.StringDictionary[ScalarData]): js.Promise[_] = js.native
   /**
     * Adds the value to the given scalar.
     * @param name The scalar name.
@@ -58,7 +58,7 @@ object ^ extends js.Object {
     * @param value The value to set the scalar to
     */
   def scalarSet(name: java.lang.String, value: java.lang.String): js.Promise[_] = js.native
-  def scalarSet(name: java.lang.String, value: js.Object): js.Promise[_] = js.native
+  def scalarSet(name: java.lang.String, value: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[_] = js.native
   def scalarSet(name: java.lang.String, value: scala.Boolean): js.Promise[_] = js.native
   def scalarSet(name: java.lang.String, value: scala.Double): js.Promise[_] = js.native
   /**
@@ -84,7 +84,7 @@ object ^ extends js.Object {
     */
   def submitPing(
     `type`: java.lang.String,
-    message: js.Any,
+    message: org.scalablytyped.runtime.StringDictionary[js.Any],
     options: firefoxDashWebextDashBrowserLib.Anon_AddClientId
   ): js.Promise[_] = js.native
 }

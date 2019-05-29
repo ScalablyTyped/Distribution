@@ -15,13 +15,6 @@ trait FormatConditions extends js.Object {
   def apply(Index: scala.Double): FormatCondition = js.native
   def Add(
     Type: XlFormatConditionType,
-    Operator: XlFormatConditionOperator,
-    Formula1: java.lang.String,
-    Formula2: java.lang.String
-  ): FormatCondition = js.native
-  def Add(Type: XlFormatConditionType, Operator: js.UndefOr[scala.Nothing], Formula1: java.lang.String): FormatCondition = js.native
-  def Add(
-    Type: XlFormatConditionType,
     Operator: js.UndefOr[XlFormatConditionOperator],
     Formula1: js.UndefOr[java.lang.String],
     Formula2: js.UndefOr[java.lang.String],
@@ -29,6 +22,13 @@ trait FormatConditions extends js.Object {
     TextOperator: js.UndefOr[js.Any],
     DateOperator: js.UndefOr[js.Any],
     ScopeType: js.UndefOr[js.Any]
+  ): FormatCondition = js.native
+  def Add(Type: XlFormatConditionType, Operator: js.UndefOr[scala.Nothing], Formula1: java.lang.String): FormatCondition = js.native
+  def Add(
+    Type: XlFormatConditionType,
+    Operator: XlFormatConditionOperator,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
   ): FormatCondition = js.native
   def AddAboveAverage(): AboveAverage = js.native
   def AddColorScale(ColorScaleType: scala.Double): ColorScale = js.native

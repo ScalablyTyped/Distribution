@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** A circle on the Earth's surface; also known as a "spherical cap". */
 @JSGlobal("google.maps.Circle")
 @js.native
 /**

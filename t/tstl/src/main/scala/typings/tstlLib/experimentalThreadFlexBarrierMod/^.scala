@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val flex_barrier: org.scalablytyped.runtime.Instantiable2[
     /* size */ scala.Double, 
-    /* complete */ js.UndefOr[/* complete */ js.Function0[scala.Double]], 
+    js.UndefOr[/* complete */ js.Function0[scala.Double]], 
     FlexBarrier
   ] = js.native
 }

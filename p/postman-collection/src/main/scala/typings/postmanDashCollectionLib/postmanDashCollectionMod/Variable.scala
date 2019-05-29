@@ -12,8 +12,8 @@ class Variable () extends Property[VariableDefinition] {
   def this(definition: org.scalablytyped.runtime.StringDictionary[VariableDefinition]) = this()
   def this(definition: VariableDefinition) = this()
   var key: js.UndefOr[java.lang.String] = js.native
-  var `type`: java.lang.String | js.UndefOr[java.lang.String] = js.native
-  var value: js.Any | js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[java.lang.String] = js.native
+  var value: js.UndefOr[js.Any] = js.native
   def cast(value: js.Any): js.Any = js.native
   def castIn(value: js.Any): js.Any = js.native
   def castOut(value: js.Any): js.Any = js.native

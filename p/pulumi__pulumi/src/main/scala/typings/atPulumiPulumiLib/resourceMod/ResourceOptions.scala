@@ -10,7 +10,7 @@ trait ResourceOptions extends js.Object {
     * An optional additional explicit dependencies on other resources.
     */
   var dependsOn: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]]] | atPulumiPulumiLib.outputMod.Input[Resource]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]] | Resource]
   ] = js.undefined
   /**
     * An optional existing ID to load, rather than create.
@@ -39,7 +39,7 @@ trait ResourceOptions extends js.Object {
 object ResourceOptions {
   @scala.inline
   def apply(
-    dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]]] | atPulumiPulumiLib.outputMod.Input[Resource] = null,
+    dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]] | Resource] = null,
     id: atPulumiPulumiLib.outputMod.Input[ID] = null,
     ignoreChanges: js.Array[java.lang.String] = null,
     parent: Resource = null,

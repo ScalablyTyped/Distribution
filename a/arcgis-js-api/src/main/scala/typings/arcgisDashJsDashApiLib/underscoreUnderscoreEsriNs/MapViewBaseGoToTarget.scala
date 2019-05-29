@@ -24,9 +24,7 @@ trait MapViewBaseGoToTarget
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#goTo)
     */
-  var target: js.UndefOr[
-    js.Array[scala.Double] | Geometry | js.Array[Geometry] | Graphic | js.Array[Graphic] | Viewpoint
-  ] = js.undefined
+  var target: js.UndefOr[(js.Array[scala.Double | Geometry | Graphic]) | Geometry | Graphic | Viewpoint] = js.undefined
   /**
     * The [MapView.zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapViewBase.html#zoom) to go to.
     *
@@ -43,7 +41,7 @@ object MapViewBaseGoToTarget {
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     center: js.Array[scala.Double] = null,
     scale: scala.Int | scala.Double = null,
-    target: js.Array[scala.Double] | Geometry | js.Array[Geometry] | Graphic | js.Array[Graphic] | Viewpoint = null,
+    target: (js.Array[scala.Double | Geometry | Graphic]) | Geometry | Graphic | Viewpoint = null,
     zoom: scala.Int | scala.Double = null
   ): MapViewBaseGoToTarget = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))

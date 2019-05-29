@@ -38,7 +38,7 @@ trait EmbeddedColumnChartBuilder extends js.Object {
     offsetX: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetY: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): EmbeddedChartBuilder
-  def setRange(start: stdLib.Number, end: stdLib.Number): EmbeddedColumnChartBuilder
+  def setRange(start: scala.Double, end: scala.Double): EmbeddedColumnChartBuilder
   def setStacked(): EmbeddedColumnChartBuilder
   def setTitle(chartTitle: java.lang.String): EmbeddedColumnChartBuilder
   def setTitleTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedColumnChartBuilder
@@ -82,7 +82,7 @@ object EmbeddedColumnChartBuilder {
     setNumHeaders: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => EmbeddedChartBuilder,
     setOption: (java.lang.String, js.Object) => EmbeddedChartBuilder,
     setPosition: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => EmbeddedChartBuilder,
-    setRange: (stdLib.Number, stdLib.Number) => EmbeddedColumnChartBuilder,
+    setRange: (scala.Double, scala.Double) => EmbeddedColumnChartBuilder,
     setStacked: () => EmbeddedColumnChartBuilder,
     setTitle: java.lang.String => EmbeddedColumnChartBuilder,
     setTitleTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedColumnChartBuilder,

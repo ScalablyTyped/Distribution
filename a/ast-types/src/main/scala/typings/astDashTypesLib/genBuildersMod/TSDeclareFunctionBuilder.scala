@@ -7,6 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TSDeclareFunctionBuilder extends js.Object {
+  def apply(id: js.UndefOr[scala.Nothing], params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    returnType: astDashTypesLib.genKindsMod.NoopKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def apply(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind]
@@ -18,17 +29,6 @@ trait TSDeclareFunctionBuilder extends js.Object {
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def apply(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
-    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
-    returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
-  def apply(id: js.UndefOr[scala.Nothing], params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
-  def apply(
-    id: js.UndefOr[scala.Nothing],
-    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
-    returnType: astDashTypesLib.genKindsMod.NoopKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
-  def apply(
-    id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native

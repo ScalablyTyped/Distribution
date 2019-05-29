@@ -65,8 +65,8 @@ class Record ()
     * @param  options The query options.
     * @promise {Object[]}        The loaded record.
     */
-  def get(records: js.Array[RID | Record]): bluebirdLib.bluebirdMod.^[js.Array[Record] | js.Array[nodeLib.Buffer]] = js.native
-  def get(records: js.Array[RID | Record], options: js.Any): bluebirdLib.bluebirdMod.^[js.Array[Record] | js.Array[nodeLib.Buffer]] = js.native
+  def get(records: js.Array[RID | Record]): bluebirdLib.bluebirdMod.^[js.Array[nodeLib.Buffer | Record]] = js.native
+  def get(records: js.Array[RID | Record], options: js.Any): bluebirdLib.bluebirdMod.^[js.Array[nodeLib.Buffer | Record]] = js.native
   /**
     * Determines whether an object has a property with the specified name.
     * @param v A property name.

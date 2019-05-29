@@ -19,7 +19,7 @@ class AnimatedSprite protected ()
   var currentFrame: scala.Double = js.native
   var loop: scala.Boolean = js.native
   var playing: scala.Boolean = js.native
-  var textures: js.Array[pixiDotJsLib.PIXINs.Texture] | js.Array[AnimatedSpriteTextureTimeObject] = js.native
+  var textures: js.Array[AnimatedSpriteTextureTimeObject | pixiDotJsLib.PIXINs.Texture] = js.native
   var totalFrames: scala.Double = js.native
   var updateAnchor: scala.Boolean = js.native
   def gotoAndPlay(frameNumber: scala.Double): scala.Unit = js.native

@@ -17,6 +17,11 @@ trait Typeofloader extends js.Object {
   def load(input: nodeLib.Buffer): js.Any = js.native
   def load(input: nodeLib.Buffer, options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options): js.Any = js.native
   def loadAll(input: java.lang.String): js.Array[_] = js.native
+  def loadAll(
+    input: java.lang.String,
+    iterator: js.UndefOr[scala.Nothing],
+    options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
+  ): js.Array[_] = js.native
   /**
     * Same as safeLoadAll() but uses DEFAULT_FULL by default
     */
@@ -26,23 +31,18 @@ trait Typeofloader extends js.Object {
     iterator: js.Function1[/* doc */ js.Any, scala.Unit],
     options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
   ): scala.Unit = js.native
+  def loadAll(input: nodeLib.Buffer): js.Array[_] = js.native
   def loadAll(
-    input: java.lang.String,
+    input: nodeLib.Buffer,
     iterator: js.UndefOr[scala.Nothing],
     options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
   ): js.Array[_] = js.native
-  def loadAll(input: nodeLib.Buffer): js.Array[_] = js.native
   def loadAll(input: nodeLib.Buffer, iterator: js.Function1[/* doc */ js.Any, scala.Unit]): scala.Unit = js.native
   def loadAll(
     input: nodeLib.Buffer,
     iterator: js.Function1[/* doc */ js.Any, scala.Unit],
     options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
   ): scala.Unit = js.native
-  def loadAll(
-    input: nodeLib.Buffer,
-    iterator: js.UndefOr[scala.Nothing],
-    options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
-  ): js.Array[_] = js.native
   /**
     * Same as safeLoad(), but understands multi-document sources.
     * Applies iterator to each document if specified, or returns array of documents
@@ -52,6 +52,11 @@ trait Typeofloader extends js.Object {
   def safeLoad(input: nodeLib.Buffer): js.Any = js.native
   def safeLoad(input: nodeLib.Buffer, options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options): js.Any = js.native
   def safeLoadAll(input: java.lang.String): js.Array[_] = js.native
+  def safeLoadAll(
+    input: java.lang.String,
+    iterator: js.UndefOr[scala.Nothing],
+    options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
+  ): js.Array[_] = js.native
   /**
     * Parses string as single YAML document. Returns a JavaScript object or throws YAMLException on error.
     * By default, does not support regexps, functions and undefined.
@@ -63,22 +68,17 @@ trait Typeofloader extends js.Object {
     iterator: js.Function1[/* doc */ js.Any, scala.Unit],
     options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
   ): scala.Unit = js.native
+  def safeLoadAll(input: nodeLib.Buffer): js.Array[_] = js.native
   def safeLoadAll(
-    input: java.lang.String,
+    input: nodeLib.Buffer,
     iterator: js.UndefOr[scala.Nothing],
     options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
   ): js.Array[_] = js.native
-  def safeLoadAll(input: nodeLib.Buffer): js.Array[_] = js.native
   def safeLoadAll(input: nodeLib.Buffer, iterator: js.Function1[/* doc */ js.Any, scala.Unit]): scala.Unit = js.native
   def safeLoadAll(
     input: nodeLib.Buffer,
     iterator: js.Function1[/* doc */ js.Any, scala.Unit],
     options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
   ): scala.Unit = js.native
-  def safeLoadAll(
-    input: nodeLib.Buffer,
-    iterator: js.UndefOr[scala.Nothing],
-    options: adoneLib.adoneNs.dataNs.yamlNs.loaderNs.INs.Options
-  ): js.Array[_] = js.native
 }
 

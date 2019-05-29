@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-mobile"
-version := "0.3-dt-20180525Z-7b50db"
+version := "0.3-dt-20180525Z-3fd9c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

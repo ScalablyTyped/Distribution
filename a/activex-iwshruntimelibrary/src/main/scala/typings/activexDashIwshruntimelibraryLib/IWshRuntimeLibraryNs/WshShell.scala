@@ -104,7 +104,7 @@ class WshShell protected () extends js.Object {
     * * **REG_EXPAND_SZ** -- an expandable string
     * * **REG_MULTI_SZ** -- an array of srings, as a COM SafeArray
     */
-  def RegRead(Name: java.lang.String): java.lang.String | scala.Double | stdLib.SafeArray[java.lang.String] | stdLib.SafeArray[scala.Double] = js.native
+  def RegRead(Name: java.lang.String): java.lang.String | scala.Double | (stdLib.SafeArray[scala.Double | java.lang.String]) = js.native
   /**
     * Creates a new key, adds another value-name to an existing key and assigns it a value, or changes the value of an existing value-name
     * @param Name Key (ends with a final `\`) or value-name (doesn't end with a final `\`)

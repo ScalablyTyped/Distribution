@@ -60,7 +60,9 @@ object multiRouterNs extends js.Object {
     def getPoints(): js.Array[WayPointModel | ViaPointModel] = js.native
     def getReferencePointIndexes(): js.Object = js.native
     def getReferencePoints(): js.Array[yandexDashMapsLib.yandexDashMapsMod.IMultiRouteReferencePoint] = js.native
-    def getRoutes(): js.Array[yandexDashMapsLib.yandexDashMapsMod.multiRouterNs.drivingNs.RouteModel] | js.Array[yandexDashMapsLib.yandexDashMapsMod.multiRouterNs.masstransitNs.RouteModel] = js.native
+    def getRoutes(): js.Array[
+        yandexDashMapsLib.yandexDashMapsMod.multiRouterNs.drivingNs.RouteModel | yandexDashMapsLib.yandexDashMapsMod.multiRouterNs.masstransitNs.RouteModel
+      ] = js.native
     def getViaPoints(): js.Array[ViaPointModel] = js.native
     def getWayPoints(): js.Array[WayPointModel] = js.native
     def setParams(params: yandexDashMapsLib.yandexDashMapsMod.IMultiRouteParams): scala.Unit = js.native

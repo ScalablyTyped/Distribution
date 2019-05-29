@@ -18,9 +18,9 @@ trait IonPickerController extends js.Object {
     */
   def dismiss(): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[scala.Boolean] = js.native
+  def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: java.lang.String): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any, role: java.lang.String): js.Promise[scala.Boolean] = js.native
   def dismiss(data: js.Any, role: java.lang.String, id: java.lang.String): js.Promise[scala.Boolean] = js.native
-  def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
     * Get the most recently opened picker overlay.
     */

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RouteOptionsCache extends js.Object {
-  var expiresAt: js.UndefOr[scala.Nothing | java.lang.String] = js.undefined
-  var expiresIn: js.UndefOr[scala.Double | scala.Nothing] = js.undefined
+  var expiresAt: js.UndefOr[java.lang.String] = js.undefined
+  var expiresIn: js.UndefOr[scala.Double] = js.undefined
   var otherwise: js.UndefOr[java.lang.String] = js.undefined
   var privacy: js.UndefOr[
     hapiLib.hapiLibStrings.default | hapiLib.hapiLibStrings.public | hapiLib.hapiLibStrings.`private`

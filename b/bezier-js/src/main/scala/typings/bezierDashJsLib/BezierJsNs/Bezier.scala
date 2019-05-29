@@ -53,9 +53,9 @@ class Bezier protected () extends js.Object {
   def getUtils(): bezierDashJsLib.Typeofutils = js.native
   def hull(t: scala.Double): js.Array[Point] = js.native
   def inflections(): js.Array[scala.Double] = js.native
-  def intersects(curve: Bezier): js.Array[java.lang.String] | js.Array[scala.Double] = js.native
-  def intersects(curve: Bezier, curveIntersectionThreshold: scala.Double): js.Array[java.lang.String] | js.Array[scala.Double] = js.native
-  def intersects(curve: Line): js.Array[java.lang.String] | js.Array[scala.Double] = js.native
+  def intersects(curve: Bezier): js.Array[scala.Double | java.lang.String] = js.native
+  def intersects(curve: Bezier, curveIntersectionThreshold: scala.Double): js.Array[scala.Double | java.lang.String] = js.native
+  def intersects(curve: Line): js.Array[scala.Double | java.lang.String] = js.native
   def length(): scala.Double = js.native
   def lineIntersects(line: Line): js.Array[scala.Double] = js.native
   def normal(t: scala.Double): Point = js.native

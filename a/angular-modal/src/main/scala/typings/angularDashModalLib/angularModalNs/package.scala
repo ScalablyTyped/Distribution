@@ -11,5 +11,5 @@ package object angularModalNs {
     /* settings */ AngularModalSettingsWithTemplate | AngularModalSettingsWithTemplateUrl, 
     AngularModal
   ]
-  type AngularModalJQuerySelector = java.lang.String | stdLib.Element | js.Array[stdLib.Element] | angularLib.JQuery | js.Function | js.Array[js.Any] | js.Object
+  type AngularModalJQuerySelector = java.lang.String | stdLib.Element | (js.Array[js.Any | stdLib.Element]) | angularLib.JQuery | js.Function | js.Object
 }

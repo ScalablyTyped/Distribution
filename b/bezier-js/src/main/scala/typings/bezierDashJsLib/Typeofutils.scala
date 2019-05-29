@@ -77,13 +77,13 @@ trait Typeofutils extends js.Object {
     bbox1: bezierDashJsLib.BezierJsNs.BBox,
     s2: bezierDashJsLib.BezierJsNs.Shape,
     bbox2: bezierDashJsLib.BezierJsNs.BBox
-  ): js.Array[js.Array[java.lang.String]] | js.Array[js.Array[scala.Double]] = js.native
+  ): js.Array[js.Array[scala.Double | java.lang.String]] = js.native
   def shapeintersections(
     s1: bezierDashJsLib.BezierJsNs.Shape,
     bbox1: bezierDashJsLib.BezierJsNs.BBox,
     s2: bezierDashJsLib.BezierJsNs.Shape,
     bbox2: bezierDashJsLib.BezierJsNs.BBox,
     curveIntersectionThreshold: scala.Double
-  ): js.Array[js.Array[java.lang.String]] | js.Array[js.Array[scala.Double]] = js.native
+  ): js.Array[js.Array[scala.Double | java.lang.String]] = js.native
 }
 

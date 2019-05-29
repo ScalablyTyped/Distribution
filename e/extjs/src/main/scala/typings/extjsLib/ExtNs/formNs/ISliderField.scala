@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ISliderField
   extends extjsLib.ExtNs.sliderNs.IMulti {
+  /** [Method] Returns the current value of the slider
+  		* @returns any The current value of the slider
+  		*/
+  @JSName("getValue")
+  var getValue_ISliderField: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Programmatically sets the value of the Slider
   		* @param value Number The value to set the slider to. (This will be constrained within minValue and maxValue)
   		* @param animate Boolean Turn on or off animation

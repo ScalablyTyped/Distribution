@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-gtm-module"
-version := "2.0-dt-20190522Z-2e3e14"
+version := "2.0-dt-20190522Z-be5b73"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

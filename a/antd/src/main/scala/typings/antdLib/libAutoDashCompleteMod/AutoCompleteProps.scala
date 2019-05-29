@@ -10,7 +10,7 @@ trait AutoCompleteProps
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var backfill: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[
-    ValidInputElement | reactLib.reactMod.ReactElement[antdLib.libInputInputMod.InputProps] | reactLib.reactMod.ReactElement[antdLib.libSelectMod.OptionProps] | js.Array[reactLib.reactMod.ReactElement[antdLib.libSelectMod.OptionProps]]
+    ValidInputElement | (reactLib.reactMod.ReactElement[antdLib.libInputInputMod.InputProps | antdLib.libSelectMod.OptionProps]) | js.Array[reactLib.reactMod.ReactElement[antdLib.libSelectMod.OptionProps]]
   ] = js.undefined
   var dataSource: js.UndefOr[js.Array[DataSourceItemType]] = js.undefined
   var defaultValue: js.UndefOr[antdLib.libSelectMod.SelectValue] = js.undefined
@@ -31,7 +31,7 @@ object AutoCompleteProps {
     autoClearSearchValue: js.UndefOr[scala.Boolean] = js.undefined,
     autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
     backfill: js.UndefOr[scala.Boolean] = js.undefined,
-    children: ValidInputElement | reactLib.reactMod.ReactElement[antdLib.libInputInputMod.InputProps] | reactLib.reactMod.ReactElement[antdLib.libSelectMod.OptionProps] | js.Array[reactLib.reactMod.ReactElement[antdLib.libSelectMod.OptionProps]] = null,
+    children: ValidInputElement | (reactLib.reactMod.ReactElement[antdLib.libInputInputMod.InputProps | antdLib.libSelectMod.OptionProps]) | js.Array[reactLib.reactMod.ReactElement[antdLib.libSelectMod.OptionProps]] = null,
     choiceTransitionName: java.lang.String = null,
     className: java.lang.String = null,
     dataSource: js.Array[DataSourceItemType] = null,

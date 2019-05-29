@@ -102,7 +102,7 @@ trait ButtonBar
   /**
   			 * Array of labels for the button bar.
   			 */
-  var labels: js.Array[java.lang.String] | js.Array[titaniumLib.BarItemType] = js.native
+  var labels: js.Array[titaniumLib.BarItemType | java.lang.String] = js.native
   /**
   			 * Specifies how the view positions its children.
   			 * One of: 'composite', 'vertical', or 'horizontal'.
@@ -286,7 +286,7 @@ trait ButtonBar
   /**
   			 * Gets the value of the <Titanium.UI.ButtonBar.labels> property.
   			 */
-  def getLabels(): js.Array[java.lang.String] | js.Array[titaniumLib.BarItemType] = js.native
+  def getLabels(): js.Array[titaniumLib.BarItemType | java.lang.String] = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ButtonBar.layout> property.
   			 */

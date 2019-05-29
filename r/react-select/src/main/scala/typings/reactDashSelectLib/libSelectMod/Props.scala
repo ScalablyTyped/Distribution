@@ -97,7 +97,7 @@ import scala.scalajs.js.annotation._
     js.Function2[
       /* option */ OptionType, 
       /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType], 
-      scala.Boolean | reactDashSelectLib.reactDashSelectLibNumbers.`false`
+      scala.Boolean
     ]
   ] = js.undefined
   /* Override the built-in logic to detect whether an option is selected */
@@ -239,7 +239,7 @@ object Props {
     isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
     isLoading: js.UndefOr[scala.Boolean] = js.undefined,
     isMulti: js.UndefOr[scala.Boolean] = js.undefined,
-    isOptionDisabled: (/* option */ OptionType, /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType]) => scala.Boolean | reactDashSelectLib.reactDashSelectLibNumbers.`false` = null,
+    isOptionDisabled: (/* option */ OptionType, /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType]) => scala.Boolean = null,
     isOptionSelected: (/* option */ OptionType, /* options */ reactDashSelectLib.libTypesMod.OptionsType[OptionType]) => scala.Boolean = null,
     isRtl: js.UndefOr[scala.Boolean] = js.undefined,
     isSearchable: js.UndefOr[scala.Boolean] = js.undefined,

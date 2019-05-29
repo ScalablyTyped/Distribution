@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 trait Typeofgeometry extends js.Object {
   var encoding: TypeofClassencoding
   var poly: TypeofClasspoly
+  /**
+    * Utility functions for computing geodesic angles, distances and areas.
+    * The default radius is Earth's radius of 6378137 meters.
+    */
   var spherical: TypeofClassspherical
 }
 

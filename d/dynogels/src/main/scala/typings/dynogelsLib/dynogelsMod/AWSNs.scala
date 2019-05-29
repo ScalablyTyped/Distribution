@@ -813,6 +813,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class GroundStation ()
+    extends awsDashSdkLib.awsDashSdkMod.GroundStation {
+    def this(options: awsDashSdkLib.clientsGroundstationMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class GuardDuty ()
     extends awsDashSdkLib.awsDashSdkMod.GuardDuty {
     def this(options: awsDashSdkLib.clientsGuarddutyMod.ClientConfiguration) = this()

@@ -492,7 +492,9 @@ object namedTypesNs extends js.Object {
     var body: astDashTypesLib.genKindsMod.ClassBodyKind
     var id: astDashTypesLib.genKindsMod.IdentifierKind | scala.Null
     var implements: js.UndefOr[
-        js.Array[astDashTypesLib.genKindsMod.ClassImplementsKind] | js.Array[astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind]
+        js.Array[
+          astDashTypesLib.genKindsMod.ClassImplementsKind | astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind
+        ]
       ] = js.undefined
     var superClass: js.UndefOr[astDashTypesLib.genKindsMod.ExpressionKind | scala.Null] = js.undefined
     var superTypeParameters: js.UndefOr[
@@ -513,7 +515,9 @@ object namedTypesNs extends js.Object {
     var body: astDashTypesLib.genKindsMod.ClassBodyKind
     var id: js.UndefOr[astDashTypesLib.genKindsMod.IdentifierKind | scala.Null] = js.undefined
     var implements: js.UndefOr[
-        js.Array[astDashTypesLib.genKindsMod.ClassImplementsKind] | js.Array[astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind]
+        js.Array[
+          astDashTypesLib.genKindsMod.ClassImplementsKind | astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind
+        ]
       ] = js.undefined
     var superClass: js.UndefOr[astDashTypesLib.genKindsMod.ExpressionKind | scala.Null] = js.undefined
     var superTypeParameters: js.UndefOr[

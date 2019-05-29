@@ -235,12 +235,12 @@ object vega extends js.Object {
   def utcquarter(date: scala.Double): scala.Double = js.native
   def utcquarter(date: stdLib.Date): scala.Double = js.native
   def visitArray(
-    array: js.Array[_],
+    array: js.UndefOr[scala.Nothing],
     filter: js.Function1[/* any */ js.Any, js.UndefOr[scala.Boolean]],
     visitor: js.Function3[/* v */ js.Any, /* i */ scala.Double, /* arr */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
   def visitArray(
-    array: js.UndefOr[scala.Nothing],
+    array: js.Array[_],
     filter: js.Function1[/* any */ js.Any, js.UndefOr[scala.Boolean]],
     visitor: js.Function3[/* v */ js.Any, /* i */ scala.Double, /* arr */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native

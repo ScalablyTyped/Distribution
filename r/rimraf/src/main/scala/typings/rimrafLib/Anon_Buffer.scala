@@ -17,19 +17,19 @@ trait Anon_Buffer extends js.Object {
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
-    options: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
+      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* files */ js.Array[nodeLib.Buffer | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
-    options: js.UndefOr[scala.Nothing],
+    options: java.lang.String,
     callback: js.Function2[
-      nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
+      /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
+      /* files */ js.Array[nodeLib.Buffer | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -47,7 +47,7 @@ trait Anon_Buffer extends js.Object {
     options: nodeLib.Anon_EncodingFalseWithFileTypes,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
+      /* files */ js.Array[nodeLib.Buffer | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -92,7 +92,7 @@ trait Anon_Buffer extends js.Object {
     options: scala.Null,
     callback: js.Function2[
       nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      (/* files */ js.Array[java.lang.String]) | js.Array[nodeLib.Buffer], 
+      /* files */ js.Array[nodeLib.Buffer | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -102,10 +102,10 @@ trait Anon_Buffer extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[js.Array[java.lang.String]] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[js.Array[nodeLib.Buffer | java.lang.String]] = js.native
   def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingFalse): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Promise[js.Array[nodeLib.Buffer | java.lang.String]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

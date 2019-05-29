@@ -36,5 +36,7 @@ package object buildSrcSpecMod {
   type TopLevel[S /* <: BaseSpec */] = S with vegaDashLiteLib.buildSrcToplevelpropsMod.TopLevelProperties with vegaDashLiteLib.Anon_Config
   type TopLevelFacetSpec = (TopLevel[GenericFacetSpec[CompositeUnitSpec, ExtendedLayerSpec]]) with DataMixins
   type TopLevelFacetedUnitSpec = TopLevel[FacetedCompositeUnitSpec] with DataMixins
-  type TopLevelSpec = TopLevelFacetedUnitSpec | TopLevelFacetSpec | TopLevel[ExtendedLayerSpec] | (TopLevel[GenericRepeatSpec[CompositeUnitSpec, ExtendedLayerSpec]]) | (TopLevel[GenericVConcatSpec[CompositeUnitSpec, ExtendedLayerSpec]]) | (TopLevel[GenericHConcatSpec[CompositeUnitSpec, ExtendedLayerSpec]])
+  type TopLevelSpec = TopLevelFacetedUnitSpec | TopLevelFacetSpec | (TopLevel[
+    ExtendedLayerSpec | (GenericHConcatSpec[CompositeUnitSpec, ExtendedLayerSpec]) | (GenericRepeatSpec[CompositeUnitSpec, ExtendedLayerSpec]) | (GenericVConcatSpec[CompositeUnitSpec, ExtendedLayerSpec])
+  ])
 }

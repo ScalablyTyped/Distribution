@@ -21,7 +21,7 @@ trait Typeofstorage extends js.Object {
     */
   val onChanged: WebExtEvent[
     js.Function2[
-      /* changes */ firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageChange, 
+      /* changes */ org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageChange], 
       /* areaName */ java.lang.String, 
       scala.Unit
     ]
@@ -38,7 +38,7 @@ object Typeofstorage {
     managed: firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageArea,
     onChanged: WebExtEvent[
       js.Function2[
-        /* changes */ firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageChange, 
+        /* changes */ org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.browserNs.storageNs.StorageChange], 
         /* areaName */ java.lang.String, 
         scala.Unit
       ]

@@ -21,7 +21,7 @@ trait Editable[TRow /* <: js.Object */, K /* <: java.lang.String */] extends js.
   /**
   	 * Default value to show in the edit field in the Insert Modal for this column.
   	 */
-  var defaultValue: /* import warning: ImportType.apply Failed type conversion: TRow[K] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: TRow[K] */ js.Any] = js.undefined
+  var defaultValue: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: TRow[K] */ js.Any] = js.undefined
   /**
   	 * Data in a select or checkbox. If a checkbox, use a string with a ':'(colon) to separate the two values, ex: Y:N
   	 * The callback function can be used to customize the select options based on other field values within the row.

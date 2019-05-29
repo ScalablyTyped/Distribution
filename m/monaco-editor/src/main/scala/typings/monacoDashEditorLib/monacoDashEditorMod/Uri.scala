@@ -84,15 +84,9 @@ object Uri extends js.Object {
     */
   def parse(value: java.lang.String): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
   def parse(value: java.lang.String, _strict: scala.Boolean): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
-  def revive(): monacoDashEditorLib.monacoDashEditorMod.Uri | scala.Null = js.native
-  def revive(data: monacoDashEditorLib.monacoDashEditorMod.Uri): monacoDashEditorLib.monacoDashEditorMod.Uri | scala.Null = js.native
-  def revive(data: monacoDashEditorLib.monacoDashEditorMod.UriComponents): monacoDashEditorLib.monacoDashEditorMod.Uri | scala.Null = js.native
-  @JSName("revive")
-  def revive_UndefOr(): js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri] = js.native
-  @JSName("revive")
-  def revive_UndefOr(data: monacoDashEditorLib.monacoDashEditorMod.Uri): js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri] = js.native
-  @JSName("revive")
-  def revive_UndefOr(data: monacoDashEditorLib.monacoDashEditorMod.UriComponents): js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri] = js.native
+  def revive(): js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri] = js.native
+  def revive(data: monacoDashEditorLib.monacoDashEditorMod.Uri): js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri] = js.native
+  def revive(data: monacoDashEditorLib.monacoDashEditorMod.UriComponents): js.UndefOr[monacoDashEditorLib.monacoDashEditorMod.Uri] = js.native
   @JSName("revive")
   def revive_Uri(data: monacoDashEditorLib.monacoDashEditorMod.Uri): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
   @JSName("revive")

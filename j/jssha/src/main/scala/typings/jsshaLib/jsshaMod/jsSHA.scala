@@ -17,12 +17,12 @@ trait jsSHA
 org.scalablytyped.runtime.Instantiable2[
       /* variant */ java.lang.String, 
       (/* inputFormat */ ArrayBufferDataFormat) | (/* inputFormat */ StringDataFormat), 
-      Hasher[java.lang.String] | Hasher[stdLib.ArrayBuffer]
+      Hasher[stdLib.ArrayBuffer | java.lang.String]
     ]
      with org.scalablytyped.runtime.Instantiable3[
       /* variant */ java.lang.String, 
       (/* inputFormat */ ArrayBufferDataFormat) | (/* inputFormat */ StringDataFormat), 
       /* options */ Options, 
-      Hasher[java.lang.String] | Hasher[stdLib.ArrayBuffer]
+      Hasher[stdLib.ArrayBuffer | java.lang.String]
     ]
 

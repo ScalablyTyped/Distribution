@@ -74,7 +74,7 @@ import scala.scalajs.js.annotation._
     * function
     * renderSeparator will be called to render the list separators which will be displayed between the list elements in the result view below the text input.
     */
-  var renderSeparator: /* import warning: ImportType.apply Failed type conversion: any['renderSeparator'] */ js.UndefOr[
+  var renderSeparator: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: any['renderSeparator'] */ js.Any
   ] = js.undefined
   /**

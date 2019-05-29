@@ -68,8 +68,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onFieldErrorChange: js.UndefOr[
     js.Function2[
-      /* field */ js.UndefOr[extjsLib.ExtNs.formNs.ILabelable], 
-      /* error */ js.UndefOr[java.lang.String], 
+      js.UndefOr[extjsLib.ExtNs.formNs.ILabelable], 
+      js.UndefOr[java.lang.String], 
       scala.Unit
     ]
   ] = js.undefined
@@ -79,8 +79,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onFieldValidityChange: js.UndefOr[
     js.Function2[
-      /* field */ js.UndefOr[extjsLib.ExtNs.formNs.fieldNs.IField], 
-      /* valid */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.formNs.fieldNs.IField], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined

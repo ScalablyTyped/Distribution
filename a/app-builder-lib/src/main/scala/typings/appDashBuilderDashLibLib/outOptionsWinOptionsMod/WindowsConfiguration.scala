@@ -88,7 +88,7 @@ import scala.scalajs.js.annotation._
     *
     * @default nsis
     */
-  val target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfigType */ js.UndefOr[
+  val target: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfigType */ js.Any
   ] = js.undefined
   /**

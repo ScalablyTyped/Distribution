@@ -1,7 +1,7 @@
 
 # Scala.js typings for detox
 
-Typings are for version 9.0
+Typings are for version 12.8
 
 ## Library description:
 E2E tests and automation for mobile
@@ -35,9 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for detox 9.0
+// Type definitions for detox 12.8
 // Project: https://github.com/wix/detox
-// Definitions by: Tareq El-Masri <https://github.com/TareqElMasri>, Steve Chun <https://github.com/stevechun>
+// Definitions by: Tareq El-Masri <https://github.com/TareqElMasri>
+//                 Steve Chun <https://github.com/stevechun>
+//                 Hammad Jutt <https://github.com/hammadj>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

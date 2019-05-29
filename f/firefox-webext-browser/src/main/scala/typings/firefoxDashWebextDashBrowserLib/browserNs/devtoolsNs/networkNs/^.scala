@@ -21,6 +21,6 @@ object ^ extends js.Object {
   val onRequestFinished: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* request */ Request, scala.Unit]] = js.native
   /* devtools.network functions */
   /** Returns HAR log that contains all known network requests. */
-  def getHAR(): js.Promise[_] = js.native
+  def getHAR(): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
 }
 

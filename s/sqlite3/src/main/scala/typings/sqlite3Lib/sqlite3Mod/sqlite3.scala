@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait sqlite3 extends js.Object {
   var Database: org.scalablytyped.runtime.Instantiable2[
     /* filename */ java.lang.String, 
-    /* callback */ js.UndefOr[/* callback */ js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]], 
+    js.UndefOr[/* callback */ js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]], 
     Database
   ]
   var OPEN_CREATE: scala.Double
@@ -28,7 +28,7 @@ object sqlite3 {
   def apply(
     Database: org.scalablytyped.runtime.Instantiable2[
       /* filename */ java.lang.String, 
-      /* callback */ js.UndefOr[/* callback */ js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]], 
+      js.UndefOr[/* callback */ js.Function1[/* err */ stdLib.Error | scala.Null, scala.Unit]], 
       Database
     ],
     OPEN_CREATE: scala.Double,

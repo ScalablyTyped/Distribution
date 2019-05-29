@@ -11,9 +11,9 @@ object ^ extends js.Object {
   val JsonPatchError: org.scalablytyped.runtime.Instantiable5[
     /* message */ java.lang.String, 
     /* name */ fastDashJsonDashPatchLib.libHelpersMod.JsonPatchErrorName, 
-    /* index */ js.UndefOr[/* index */ scala.Double], 
-    /* operation */ js.UndefOr[/* operation */ js.Any], 
-    /* tree */ js.UndefOr[/* tree */ js.Any], 
+    js.UndefOr[/* index */ scala.Double], 
+    js.UndefOr[/* operation */ js.Any], 
+    js.UndefOr[/* tree */ js.Any], 
     fastDashJsonDashPatchLib.libHelpersMod.PatchError
   ] = js.native
   val deepClone: js.Function1[/* obj */ js.Any, js.Any] = js.native

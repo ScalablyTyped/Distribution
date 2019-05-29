@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - Dropped any */ trait PickerPropsType extends js.Object {
   var cascade: js.UndefOr[scala.Boolean] = js.undefined
   var cols: js.UndefOr[scala.Double] = js.undefined
-  var data: js.Array[PickerData] | js.Array[js.Array[PickerData]]
+  var data: js.Array[js.Array[PickerData] | PickerData]
   var extra: js.UndefOr[java.lang.String] = js.undefined
   var format: js.UndefOr[
     js.Function1[
@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
 object PickerPropsType {
   @scala.inline
   def apply(
-    data: js.Array[PickerData] | js.Array[js.Array[PickerData]],
+    data: js.Array[js.Array[PickerData] | PickerData],
     cascade: js.UndefOr[scala.Boolean] = js.undefined,
     cols: scala.Int | scala.Double = null,
     extra: java.lang.String = null,
@@ -45,7 +45,7 @@ object PickerPropsType {
     onPickerChange: /* value */ rmcDashCascaderLib.libCascaderTypesMod.CascaderValue => scala.Unit = null,
     value: js.Array[java.lang.String | scala.Double] = null
   ): PickerPropsType = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra)

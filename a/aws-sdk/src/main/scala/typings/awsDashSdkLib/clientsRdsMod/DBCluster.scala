@@ -87,7 +87,7 @@ trait DBCluster extends js.Object {
     */
   var DbClusterResourceId: js.UndefOr[String] = js.undefined
   /**
-    * Indicates if the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. 
+    * Indicates if the DB cluster has deletion protection enabled. The database can't be deleted when this value is set to true. 
     */
   var DeletionProtection: js.UndefOr[Boolean] = js.undefined
   /**
@@ -123,15 +123,15 @@ trait DBCluster extends js.Object {
     */
   var HostedZoneId: js.UndefOr[String] = js.undefined
   /**
-    *  HTTP endpoint functionality is in beta for Aurora Serverless and is subject to change.  A value that indicates whether the HTTP endpoint for an Aurora Serverless DB cluster is enabled. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless DB cluster. You can also query your database from inside the RDS console with the query editor. For more information about Aurora Serverless, see Using Amazon Aurora Serverless in the Amazon Aurora User Guide.
+    *  HTTP endpoint functionality is in beta for Aurora Serverless and is subject to change.  Value that is true if the HTTP endpoint for an Aurora Serverless DB cluster is enabled and false otherwise. When enabled, the HTTP endpoint provides a connectionless web service API for running SQL queries on the Aurora Serverless DB cluster. You can also query your database from inside the RDS console with the query editor. For more information about Aurora Serverless, see Using Amazon Aurora Serverless in the Amazon Aurora User Guide.
     */
   var HttpEndpointEnabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * A value that indicates whether the mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled.
+    * True if mapping of AWS Identity and Access Management (IAM) accounts to database accounts is enabled, and otherwise false.
     */
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   /**
-    * If StorageEncrypted is enabled, the AWS KMS key identifier for the encrypted DB cluster.
+    * If StorageEncrypted is true, the AWS KMS key identifier for the encrypted DB cluster.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**

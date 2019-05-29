@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-ionic"
-version := "0.0-unknown-dt-20190322Z-155e5c"
+version := "0.0-unknown-dt-20190322Z-c9cb7c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

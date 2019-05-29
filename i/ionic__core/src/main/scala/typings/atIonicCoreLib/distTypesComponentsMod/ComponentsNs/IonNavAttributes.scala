@@ -14,7 +14,7 @@ trait IonNavAttributes
   /**
     * By default `ion-nav` animates transition between pages based in the mode (ios or material design). However, this property allows to create custom transition using `AnimateBuilder` functions.
     */
-  var animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var animation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   /**
@@ -28,13 +28,13 @@ trait IonNavAttributes
   /**
     * Root NavComponent to load
     */
-  var root: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.UndefOr[
+  var root: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any
   ] = js.undefined
   /**
     * Any parameters for the root component
     */
-  var rootParams: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.UndefOr[
+  var rootParams: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
   ] = js.undefined
   /**

@@ -33,8 +33,8 @@ class ObservableObjectAdministration protected ()
   ): scala.Unit = js.native
   def addObservableProp(propName: java.lang.String, newValue: js.Any): scala.Unit = js.native
   def addObservableProp(propName: java.lang.String, newValue: js.Any, enhancer: mobxLib.libTypesModifiersMod.IEnhancer[_]): scala.Unit = js.native
-  def defaultEnhancer(newValue: js.Any, oldValue: js.Any, name: java.lang.String): js.Any = js.native
   def defaultEnhancer(newValue: js.Any, oldValue: js.UndefOr[scala.Nothing], name: java.lang.String): js.Any = js.native
+  def defaultEnhancer(newValue: js.Any, oldValue: js.Any, name: java.lang.String): js.Any = js.native
   def getKeys(): js.Array[java.lang.String] = js.native
   def has(key: java.lang.String): js.Any = js.native
   def illegalAccess(owner: js.Any, propName: js.Any): scala.Unit = js.native

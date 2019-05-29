@@ -13,8 +13,20 @@ package object createDashEmotionMod {
   type ClassNameArg = js.UndefOr[
     scala.Null | scala.Boolean | java.lang.String | (org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Null | scala.Boolean | java.lang.String]]) | ArrayClassNameArg
   ]
+  /* Rewritten from type alias, can be one of: 
+    - `js.undefined`
+    - scala.Nothing
+    - scala.Null
+    - scala.Boolean
+    - java.lang.String
+    - scala.Double
+    - stdLib.TemplateStringsArray
+    - CSSObject
+    - ArrayInterpolation
+    - ClassInterpolation
+  */
   type Interpolation = js.UndefOr[
-    scala.Null | scala.Boolean | java.lang.String | scala.Double | stdLib.TemplateStringsArray | CSSObject | ArrayInterpolation | ClassInterpolation
+    _Interpolation | scala.Null | scala.Boolean | java.lang.String | scala.Double | stdLib.TemplateStringsArray
   ]
   type StylisPlugins = scala.Null | (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[js.Function1[/* repeated */ js.Any, js.Any]])
 }

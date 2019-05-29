@@ -10,7 +10,7 @@ package object koaDashJwtMod {
     /* header */ js.Any, 
     /* payload */ js.Any, 
     js.Promise[
-      java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer]
+      java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer
     ]
   ]
 }

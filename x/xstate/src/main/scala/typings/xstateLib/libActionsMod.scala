@@ -81,6 +81,13 @@ object libActionsMod extends js.Object {
     actionFunctionMap: xstateLib.libTypesMod.ActionFunctionMap[TContext, TEvent]
   ): xstateLib.libTypesMod.ActionObject[TContext, TEvent] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](): js.Array[xstateLib.libTypesMod.ActionObject[TContext, TEvent]] = js.native
+  def toActionObjects[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
+    action: js.UndefOr[scala.Nothing],
+    actionFunctionMap: stdLib.Record[
+      java.lang.String, 
+      (xstateLib.libTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.libTypesMod.ActionFunction[TContext, TEvent])
+    ]
+  ): js.Array[xstateLib.libTypesMod.ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](action: java.lang.String): js.Array[xstateLib.libTypesMod.ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     action: java.lang.String,
@@ -92,13 +99,6 @@ object libActionsMod extends js.Object {
   def toActionObjects[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](action: js.Array[xstateLib.libTypesMod.Action[TContext, TEvent]]): js.Array[xstateLib.libTypesMod.ActionObject[TContext, TEvent]] = js.native
   def toActionObjects[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
     action: js.Array[xstateLib.libTypesMod.Action[TContext, TEvent]],
-    actionFunctionMap: stdLib.Record[
-      java.lang.String, 
-      (xstateLib.libTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.libTypesMod.ActionFunction[TContext, TEvent])
-    ]
-  ): js.Array[xstateLib.libTypesMod.ActionObject[TContext, TEvent]] = js.native
-  def toActionObjects[TContext, TEvent /* <: xstateLib.libTypesMod.EventObject */](
-    action: js.UndefOr[scala.Nothing],
     actionFunctionMap: stdLib.Record[
       java.lang.String, 
       (xstateLib.libTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.libTypesMod.ActionFunction[TContext, TEvent])

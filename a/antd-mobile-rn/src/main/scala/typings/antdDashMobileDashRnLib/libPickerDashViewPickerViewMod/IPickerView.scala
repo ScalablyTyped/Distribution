@@ -9,7 +9,9 @@ trait IPickerView extends js.Object {
   var cascade: js.UndefOr[scala.Boolean] = js.undefined
   var cols: js.UndefOr[scala.Double] = js.undefined
   var data: js.UndefOr[
-    js.Array[antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData] | js.Array[js.Array[antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData]]
+    js.Array[
+      js.Array[antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData] | antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData
+    ]
   ] = js.undefined
   var indicatorStyle: js.UndefOr[js.Any] = js.undefined
   var itemStyle: js.UndefOr[js.Any] = js.undefined
@@ -26,7 +28,9 @@ object IPickerView {
   def apply(
     cascade: js.UndefOr[scala.Boolean] = js.undefined,
     cols: scala.Int | scala.Double = null,
-    data: js.Array[antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData] | js.Array[js.Array[antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData]] = null,
+    data: js.Array[
+      js.Array[antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData] | antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData
+    ] = null,
     indicatorStyle: js.Any = null,
     itemStyle: js.Any = null,
     onChange: /* value */ js.UndefOr[js.Any] => scala.Unit = null,
@@ -39,7 +43,7 @@ object IPickerView {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle)
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

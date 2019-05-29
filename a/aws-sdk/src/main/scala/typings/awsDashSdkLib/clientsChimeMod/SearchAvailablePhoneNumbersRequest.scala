@@ -30,6 +30,10 @@ trait SearchAvailablePhoneNumbersRequest extends js.Object {
     * The state used to filter results.
     */
   var State: js.UndefOr[String] = js.undefined
+  /**
+    * The toll-free prefix that you use to filter results.
+    */
+  var TollFreePrefix: js.UndefOr[TollFreePrefix] = js.undefined
 }
 
 object SearchAvailablePhoneNumbersRequest {
@@ -40,7 +44,8 @@ object SearchAvailablePhoneNumbersRequest {
     Country: String = null,
     MaxResults: js.UndefOr[PhoneNumberMaxResults] = js.undefined,
     NextToken: String = null,
-    State: String = null
+    State: String = null,
+    TollFreePrefix: TollFreePrefix = null
   ): SearchAvailablePhoneNumbersRequest = {
     val __obj = js.Dynamic.literal()
     if (AreaCode != null) __obj.updateDynamic("AreaCode")(AreaCode)
@@ -49,6 +54,7 @@ object SearchAvailablePhoneNumbersRequest {
     if (!js.isUndefined(MaxResults)) __obj.updateDynamic("MaxResults")(MaxResults)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     if (State != null) __obj.updateDynamic("State")(State)
+    if (TollFreePrefix != null) __obj.updateDynamic("TollFreePrefix")(TollFreePrefix)
     __obj.asInstanceOf[SearchAvailablePhoneNumbersRequest]
   }
 }

@@ -149,7 +149,9 @@ trait SeriesFunnel extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.data
     */
   var data: js.UndefOr[
-    js.Array[scala.Double] | js.Array[js.Array[scala.Double]] | js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesFunnelNs.DataObject]
+    js.Array[
+      js.Array[scala.Double] | echartsLib.echartsNs.EChartOptionNs.SeriesFunnelNs.DataObject | scala.Double
+    ]
   ] = js.undefined
   /**
     * If
@@ -381,7 +383,9 @@ object SeriesFunnel {
     animationEasing: java.lang.String = null,
     animationEasingUpdate: java.lang.String = null,
     animationThreshold: scala.Int | scala.Double = null,
-    data: js.Array[scala.Double] | js.Array[js.Array[scala.Double]] | js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesFunnelNs.DataObject] = null,
+    data: js.Array[
+      js.Array[scala.Double] | echartsLib.echartsNs.EChartOptionNs.SeriesFunnelNs.DataObject | scala.Double
+    ] = null,
     datasetIndex: scala.Int | scala.Double = null,
     emphasis: echartsLib.Anon_ItemStyleLabelLabelLine = null,
     funnelAlign: java.lang.String = null,
@@ -413,7 +417,7 @@ object SeriesFunnel {
     if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
     if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
     if (funnelAlign != null) __obj.updateDynamic("funnelAlign")(funnelAlign)

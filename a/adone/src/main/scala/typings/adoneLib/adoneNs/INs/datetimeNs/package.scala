@@ -8,12 +8,31 @@ import scala.scalajs.js.annotation._
 package object datetimeNs {
   type CalendarSpecVal = java.lang.String | (js.Function2[/* m */ js.UndefOr[DatetimeInput], /* now */ js.UndefOr[Datetime], java.lang.String])
   type DatetimeFormatSpecification = java.lang.String | js.Array[java.lang.String]
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - scala.Double
+    - js.Array[scala.Double | java.lang.String]
+    - DatetimeInputObject
+    - Datetime
+    - stdLib.Date
+    - scala.Null
+    - `js.undefined`
+    - scala.Nothing
+  */
   type DatetimeInput = js.UndefOr[
-    java.lang.String | scala.Double | (js.Array[scala.Double | java.lang.String]) | DatetimeInputObject | Datetime | stdLib.Date | scala.Null
+    _DatetimeInput | (js.Array[scala.Double | java.lang.String]) | java.lang.String | scala.Double | stdLib.Date | scala.Null
   ]
-  type DurationInputArg1 = js.UndefOr[
-    Duration | scala.Double | java.lang.String | FromTo | DurationInputObject | scala.Null
-  ]
+  /* Rewritten from type alias, can be one of: 
+    - Duration
+    - scala.Double
+    - java.lang.String
+    - FromTo
+    - DurationInputObject
+    - scala.Null
+    - `js.undefined`
+    - scala.Nothing
+  */
+  type DurationInputArg1 = js.UndefOr[_DurationInputArg1 | scala.Double | java.lang.String | scala.Null]
   type DurationInputArg2 = adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.DurationConstructor
   /* Rewritten from type alias, can be one of: 
     - java.lang.String

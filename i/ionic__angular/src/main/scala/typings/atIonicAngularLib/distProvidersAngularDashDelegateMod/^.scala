@@ -11,7 +11,7 @@ object ^ extends js.Object {
   def attachView(
     resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver,
     injector: atAngularCoreLib.atAngularCoreMod.Injector,
-    location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef,
+    location: js.UndefOr[scala.Nothing],
     appRef: atAngularCoreLib.atAngularCoreMod.ApplicationRef,
     elRefMap: stdLib.WeakMap[stdLib.HTMLElement, _],
     elEventsMap: stdLib.WeakMap[stdLib.HTMLElement, js.Function0[scala.Unit]],
@@ -22,7 +22,7 @@ object ^ extends js.Object {
   def attachView(
     resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver,
     injector: atAngularCoreLib.atAngularCoreMod.Injector,
-    location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef,
+    location: js.UndefOr[scala.Nothing],
     appRef: atAngularCoreLib.atAngularCoreMod.ApplicationRef,
     elRefMap: stdLib.WeakMap[stdLib.HTMLElement, _],
     elEventsMap: stdLib.WeakMap[stdLib.HTMLElement, js.Function0[scala.Unit]],
@@ -34,7 +34,7 @@ object ^ extends js.Object {
   def attachView(
     resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver,
     injector: atAngularCoreLib.atAngularCoreMod.Injector,
-    location: js.UndefOr[scala.Nothing],
+    location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef,
     appRef: atAngularCoreLib.atAngularCoreMod.ApplicationRef,
     elRefMap: stdLib.WeakMap[stdLib.HTMLElement, _],
     elEventsMap: stdLib.WeakMap[stdLib.HTMLElement, js.Function0[scala.Unit]],
@@ -45,7 +45,7 @@ object ^ extends js.Object {
   def attachView(
     resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver,
     injector: atAngularCoreLib.atAngularCoreMod.Injector,
-    location: js.UndefOr[scala.Nothing],
+    location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef,
     appRef: atAngularCoreLib.atAngularCoreMod.ApplicationRef,
     elRefMap: stdLib.WeakMap[stdLib.HTMLElement, _],
     elEventsMap: stdLib.WeakMap[stdLib.HTMLElement, js.Function0[scala.Unit]],

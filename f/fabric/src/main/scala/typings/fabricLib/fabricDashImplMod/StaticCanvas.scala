@@ -23,6 +23,7 @@ class StaticCanvas protected ()
   def this(element: java.lang.String, options: ICanvasOptions) = this()
   def this(element: stdLib.HTMLCanvasElement, options: ICanvasOptions) = this()
   var _activeObject: js.UndefOr[Object | Group] = js.native
+  var freeDrawingBrush: FreeDrawingBrush = js.native
   /**
   	 * Pan viewport so as to place point at top left corner of canvas
   	 * @param {fabric.Point} point to move to

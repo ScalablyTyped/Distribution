@@ -12,13 +12,17 @@ trait Anon_Except extends js.Object {
   var only: js.UndefOr[
     js.Function0[scala.Unit] | java.lang.String | js.Array[java.lang.String] | angularLib.angularMod.IPromise[_]
   ] = js.undefined
-  var redirectTo: java.lang.String | js.Function0[java.lang.String] | js.Function0[angularDashPermissionLib.angularMod.permissionNs.PermissionRedirectConfigation] | org.scalablytyped.runtime.StringDictionary[angularDashPermissionLib.angularMod.permissionNs.PermissionRedirectConfigation]
+  var redirectTo: java.lang.String | (js.Function0[
+    angularDashPermissionLib.angularMod.permissionNs.PermissionRedirectConfigation | java.lang.String
+  ]) | org.scalablytyped.runtime.StringDictionary[angularDashPermissionLib.angularMod.permissionNs.PermissionRedirectConfigation]
 }
 
 object Anon_Except {
   @scala.inline
   def apply(
-    redirectTo: java.lang.String | js.Function0[java.lang.String] | js.Function0[angularDashPermissionLib.angularMod.permissionNs.PermissionRedirectConfigation] | org.scalablytyped.runtime.StringDictionary[angularDashPermissionLib.angularMod.permissionNs.PermissionRedirectConfigation],
+    redirectTo: java.lang.String | (js.Function0[
+      angularDashPermissionLib.angularMod.permissionNs.PermissionRedirectConfigation | java.lang.String
+    ]) | org.scalablytyped.runtime.StringDictionary[angularDashPermissionLib.angularMod.permissionNs.PermissionRedirectConfigation],
     except: js.Function0[scala.Unit] | java.lang.String | js.Array[java.lang.String] | angularLib.angularMod.IPromise[_] = null,
     only: js.Function0[scala.Unit] | java.lang.String | js.Array[java.lang.String] | angularLib.angularMod.IPromise[_] = null
   ): Anon_Except = {

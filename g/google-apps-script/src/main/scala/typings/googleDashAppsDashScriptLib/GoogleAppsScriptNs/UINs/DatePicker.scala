@@ -12,7 +12,7 @@ trait DatePicker extends js.Object {
   def getId(): java.lang.String
   def getTag(): java.lang.String
   def getType(): java.lang.String
-  def setCurrentMonth(date: stdLib.Date): DatePicker
+  def setCurrentMonth(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DatePicker
   def setHeight(height: java.lang.String): DatePicker
   def setId(id: java.lang.String): DatePicker
   def setLayoutData(layout: js.Object): DatePicker
@@ -28,7 +28,7 @@ trait DatePicker extends js.Object {
   def setStylePrimaryName(styleName: java.lang.String): DatePicker
   def setTag(tag: java.lang.String): DatePicker
   def setTitle(title: java.lang.String): DatePicker
-  def setValue(date: stdLib.Date): DatePicker
+  def setValue(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DatePicker
   def setVisible(visible: scala.Boolean): DatePicker
   def setWidth(width: java.lang.String): DatePicker
 }
@@ -42,7 +42,7 @@ object DatePicker {
     getId: () => java.lang.String,
     getTag: () => java.lang.String,
     getType: () => java.lang.String,
-    setCurrentMonth: stdLib.Date => DatePicker,
+    setCurrentMonth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date => DatePicker,
     setHeight: java.lang.String => DatePicker,
     setId: java.lang.String => DatePicker,
     setLayoutData: js.Object => DatePicker,
@@ -55,7 +55,7 @@ object DatePicker {
     setStylePrimaryName: java.lang.String => DatePicker,
     setTag: java.lang.String => DatePicker,
     setTitle: java.lang.String => DatePicker,
-    setValue: stdLib.Date => DatePicker,
+    setValue: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date => DatePicker,
     setVisible: scala.Boolean => DatePicker,
     setWidth: java.lang.String => DatePicker
   ): DatePicker = {

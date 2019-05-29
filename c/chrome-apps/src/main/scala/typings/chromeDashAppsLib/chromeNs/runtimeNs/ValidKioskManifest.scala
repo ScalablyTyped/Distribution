@@ -68,8 +68,8 @@ object ValidKioskManifest {
     nacl_modules: js.Array[chromeDashAppsLib.Anon_Mimetype] = null,
     oauth2: chromeDashAppsLib.Anon_Clientid = null,
     offline_enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    optional_permissions: js.Array[OptionalPermission] | (js.Array[OptionalPermission | js.Array[UrlMatches]]) | (js.Array[OptionalPermission | js.Array[UrlMatches] | java.lang.String]) = null,
-    permissions: js.Array[Permission] | (js.Array[Permission | java.lang.String]) = null,
+    optional_permissions: js.Array[js.Array[UrlMatches] | OptionalPermission | java.lang.String] = null,
+    permissions: js.Array[Permission | java.lang.String] = null,
     platforms: js.Array[chromeDashAppsLib.Anon_Arm] = null,
     requirements: chromeDashAppsLib.Anon_3D = null,
     sandbox: chromeDashAppsLib.Anon_Contentsecuritypolicy = null,
@@ -108,8 +108,8 @@ object ValidKioskManifest {
     if (nacl_modules != null) __obj.updateDynamic("nacl_modules")(nacl_modules)
     if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2)
     if (!js.isUndefined(offline_enabled)) __obj.updateDynamic("offline_enabled")(offline_enabled)
-    if (optional_permissions != null) __obj.updateDynamic("optional_permissions")(optional_permissions.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (optional_permissions != null) __obj.updateDynamic("optional_permissions")(optional_permissions)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
     if (platforms != null) __obj.updateDynamic("platforms")(platforms)
     if (requirements != null) __obj.updateDynamic("requirements")(requirements)
     if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)

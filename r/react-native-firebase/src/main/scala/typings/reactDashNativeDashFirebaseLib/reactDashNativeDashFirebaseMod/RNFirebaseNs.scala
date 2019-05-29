@@ -1151,8 +1151,8 @@ object RNFirebaseNs extends js.Object {
       val metadata: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.SnapshotMetadata = js.native
       val ref: DocumentReference = js.native
       def data(): js.Object | scala.Unit = js.native
-      def get(fieldPath: java.lang.String): js.UndefOr[_] = js.native
-      def get(fieldPath: FieldPath): js.UndefOr[_] = js.native
+      def get(fieldPath: java.lang.String): js.UndefOr[js.Any] = js.native
+      def get(fieldPath: FieldPath): js.UndefOr[js.Any] = js.native
     }
     
     @js.native

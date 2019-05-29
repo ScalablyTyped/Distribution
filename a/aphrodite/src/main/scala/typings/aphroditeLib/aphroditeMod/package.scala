@@ -11,6 +11,6 @@ package object aphroditeMod {
     BaseCSSProperties, 
     aphroditeLib.aphroditeLibStrings.fontFamily | aphroditeLib.aphroditeLibStrings.transition | aphroditeLib.aphroditeLibStrings.animationName
   ]) with aphroditeLib.Anon_AnimationName
-  type FontFamily = js.UndefOr[csstypeLib.csstypeMod.FontFamilyProperty] | csstypeLib.csstypeMod.FontFace
+  type FontFamily = js.UndefOr[csstypeLib.csstypeMod.FontFamilyProperty | csstypeLib.csstypeMod.FontFace]
   type StyleDeclaration = org.scalablytyped.runtime.StringDictionary[OpenCSSProperties]
 }

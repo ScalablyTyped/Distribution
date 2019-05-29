@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ArgsType extends js.Object {
-  var value: /* import warning: ImportType.apply Failed type conversion: infer T */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: infer T */ js.Any] = js.undefined
+  var value: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: infer T */ js.Any] = js.undefined
   def `type`(args: js.Any*): /* import warning: ImportType.apply Failed type conversion: infer T */ js.Any
 }
 

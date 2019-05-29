@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "contentful-resolve-response"
-version := "v0.1.2-dt-20190322Z-465e0f"
+version := "v0.1.2-dt-20190322Z-c34efe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

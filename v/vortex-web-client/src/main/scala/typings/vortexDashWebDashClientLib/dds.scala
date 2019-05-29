@@ -39,8 +39,8 @@ object dds extends js.Object {
     /* did */ scala.Double, 
     /* tname */ java.lang.String, 
     /* qos */ vortexDashWebDashClientLib.DDSNs.EntityQos, 
-    /* ttype */ js.UndefOr[/* ttype */ java.lang.String], 
-    /* tregtype */ js.UndefOr[/* tregtype */ java.lang.String], 
+    js.UndefOr[/* ttype */ java.lang.String], 
+    js.UndefOr[/* tregtype */ java.lang.String], 
     vortexDashWebDashClientLib.DDSNs.Topic
   ] = js.native
   var TopicQos: vortexDashWebDashClientLib.DDSNs.EntityQos = js.native

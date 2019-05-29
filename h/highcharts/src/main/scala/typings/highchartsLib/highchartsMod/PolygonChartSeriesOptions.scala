@@ -61,7 +61,7 @@ import scala.scalajs.js.annotation._
     */
   var data: js.UndefOr[
     js.Array[
-      scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, scala.Double]) | (js.Tuple3[java.lang.String, scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | DataPoint
+      scala.Double | (js.Tuple2[scala.Double | java.lang.String, scala.Double]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
     ]
   ] = js.undefined
   /**
@@ -136,7 +136,7 @@ object PolygonChartSeriesOptions {
     cursor: java.lang.String = null,
     dashStyle: java.lang.String = null,
     data: js.Array[
-      scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, scala.Double]) | (js.Tuple3[java.lang.String, scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | DataPoint
+      scala.Double | (js.Tuple2[scala.Double | java.lang.String, scala.Double]) | (js.Tuple3[scala.Double | java.lang.String, scala.Double, scala.Double]) | DataPoint
     ] = null,
     dataLabels: DataLabels | js.Array[DataLabels] = null,
     description: java.lang.String = null,

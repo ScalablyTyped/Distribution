@@ -125,8 +125,8 @@ object ^ extends js.Object {
     stateChangeExpr: js.Function4[
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
-      /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata
@@ -146,8 +146,8 @@ object ^ extends js.Object {
     stateChangeExpr: js.Function4[
       /* fromState */ java.lang.String, 
       /* toState */ java.lang.String, 
-      /* element */ js.UndefOr[js.Any], 
-      /* params */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
       scala.Boolean
     ],
     steps: js.Array[atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationMetadata]

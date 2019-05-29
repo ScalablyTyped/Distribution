@@ -15,7 +15,7 @@ trait Config extends js.Object {
   /**
     * An alias of the `defaultSource`-property.
     */
-  var default: /* import warning: ImportType.apply Failed type conversion: this['defaultSource'] */ js.UndefOr[
+  var default: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['defaultSource'] */ js.Any
   ] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait Config extends js.Object {
   /**
     * An alias of the `defaultIconSetUrl`-property.
     */
-  var defaultSvgIconSetUrl: /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.UndefOr[
+  var defaultSvgIconSetUrl: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any
   ] = js.undefined
   /**
@@ -41,13 +41,13 @@ trait Config extends js.Object {
   /**
     * An alias of the `defaultIconSetUrl`-property.
     */
-  var defaultSvgSetUrl: /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.UndefOr[
+  var defaultSvgSetUrl: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['defaultIconSetUrl'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `fonts`-property.
     */
-  var font: /* import warning: ImportType.apply Failed type conversion: this['fonts'] */ js.UndefOr[
+  var font: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['fonts'] */ js.Any
   ] = js.undefined
   /**
@@ -62,19 +62,19 @@ trait Config extends js.Object {
   /**
     * An alias of the `icons`-property.
     */
-  var icon: /* import warning: ImportType.apply Failed type conversion: this['icons'] */ js.UndefOr[
+  var icon: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['icons'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `svgSets`-property.
     */
-  var iconSet: /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.UndefOr[
+  var iconSet: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `svgSets`-property.
     */
-  var iconSets: /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.UndefOr[
+  var iconSets: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.Any
   ] = js.undefined
   /**
@@ -89,13 +89,13 @@ trait Config extends js.Object {
   /**
     * An alias of the `alias`-property.
     */
-  var sourceAlias: /* import warning: ImportType.apply Failed type conversion: this['alias'] */ js.UndefOr[
+  var sourceAlias: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['alias'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `sprites`-property.
     */
-  var sprite: /* import warning: ImportType.apply Failed type conversion: this['sprites'] */ js.UndefOr[
+  var sprite: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['sprites'] */ js.Any
   ] = js.undefined
   /**
@@ -110,7 +110,7 @@ trait Config extends js.Object {
   /**
     * An alias of the `svgSets`-property.
     */
-  var svgSet: /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.UndefOr[
+  var svgSet: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['svgSets'] */ js.Any
   ] = js.undefined
   /**

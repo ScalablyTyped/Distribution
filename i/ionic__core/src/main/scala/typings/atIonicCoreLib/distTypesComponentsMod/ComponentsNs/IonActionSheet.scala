@@ -28,7 +28,7 @@ trait IonActionSheet extends js.Object {
   /**
     * Animation to use when the action sheet is presented.
     */
-  var enterAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var enterAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.native
   /**
@@ -42,7 +42,7 @@ trait IonActionSheet extends js.Object {
   /**
     * Animation to use when the action sheet is dismissed.
     */
-  var leaveAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var leaveAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.native
   /**

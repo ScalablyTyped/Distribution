@@ -20,9 +20,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Binds listeners for this component to the store
   		* @param store Ext.data.AbstractStore The store to bind to
   		*/
-  var bindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
   /** [Method] Deselects a record instance by record instance or index
   		* @param records Ext.data.Model[]/Number An array of records or an index
   		* @param suppressEvent Boolean True to not fire a deselect event
@@ -104,8 +102,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onBindStore: js.UndefOr[
     js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -115,8 +113,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onUnbindStore: js.UndefOr[
     js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -171,9 +169,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Unbinds listeners from this component to the store
   		* @param store Ext.data.AbstractStore The store to unbind from
   		*/
-  var unbindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
 }
 
 object IAbstractSelectionModel {

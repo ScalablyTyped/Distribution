@@ -10,10 +10,7 @@ trait Typeofapp extends js.Object {
   var Application: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.appNs.Application] = js.native
   var CliApplication: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.appNs.CliApplication] = js.native
   val INs: js.Any = js.native
-  var Subsystem: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ Anon_Name], 
-    adoneLib.adoneNs.appNs.Subsystem
-  ] = js.native
+  var Subsystem: org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* options */ Anon_Name], adoneLib.adoneNs.appNs.Subsystem] = js.native
   def DApplication(): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def DApplication(info: adoneLib.adoneNs.appNs.INs.ApplicationInfo): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def DCliCommand(): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native

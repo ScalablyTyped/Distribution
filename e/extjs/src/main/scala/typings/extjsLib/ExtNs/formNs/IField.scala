@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
   		* @param fn Object A function containing the transaction code
   		*/
-  var batchChanges: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var batchChanges: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var beforeBodyEl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
@@ -86,7 +86,7 @@ import scala.scalajs.js.annotation._
   		* @param value Object The value to get errors for (defaults to the current field value)
   		* @returns String[] All error messages for this field; an empty Array if none.
   		*/
-  var getErrors: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _ | extjsLib.ExtNs.Array]] = js.undefined
+  var getErrors: js.UndefOr[js.Function1[js.UndefOr[js.Any], _ | extjsLib.ExtNs.Array]] = js.undefined
   /** [Method] Returns the label for the field
   		* @returns String The configured field label, or empty string if not defined
   		*/
@@ -151,6 +151,11 @@ import scala.scalajs.js.annotation._
   var initField: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Performs initialization of this mixin  */
   var initLabelable: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /** [Method] Initialized the renderData to be used when rendering the renderTpl
+  		* @returns Object Object with keys and values that are going to be applied to the renderTpl
+  		*/
+  @JSName("initRenderData")
+  var initRenderData_IField: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Initializes the field s value based on the initial config  */
   var initValue: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
@@ -174,9 +179,7 @@ import scala.scalajs.js.annotation._
   		* @param value2 Object The second value to compare
   		* @returns Boolean True if the values are equal, false if inequal.
   		*/
-  var isEqual: js.UndefOr[
-    js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], _ | scala.Boolean]
-  ] = js.undefined
+  var isEqual: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], _ | scala.Boolean]] = js.undefined
   /** [Property] (Boolean) */
   var isFieldLabelable: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
@@ -212,7 +215,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Display one or more error messages associated with this field using msgTarget to determine how to display the messag
   		* @param errors String/String[] The validation message(s) to display.
   		*/
-  var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (String) */
   var msgTarget: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (String) */
@@ -245,19 +248,19 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the active error message to the given string
   		* @param msg String The error message
   		*/
-  var setActiveError: js.UndefOr[js.Function1[/* msg */ js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
+  var setActiveError: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
   /** [Method] Set the active error message to an Array of error messages
   		* @param errors String[] The error messages
   		*/
-  var setActiveErrors: js.UndefOr[js.Function1[/* errors */ js.UndefOr[extjsLib.ExtNs.Array], scala.Unit]] = js.undefined
+  var setActiveErrors: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.Array], scala.Unit]] = js.undefined
   /** [Method] Applies a set of default configuration values to this Labelable instance
   		* @param defaults Object The defaults to apply to the object.
   		*/
-  var setFieldDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var setFieldDefaults: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Set the label of this field
   		* @param label String The new label. The labelSeparator will be automatically appended to the label string.
   		*/
-  var setFieldLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
+  var setFieldLabel: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
   /** [Method] Set the CSS style of the field input element
   		* @param style String/Object/Function The style(s) to apply. Should be a valid argument to Ext.Element.applyStyles.
   		*/
@@ -275,7 +278,7 @@ import scala.scalajs.js.annotation._
   		* @param value Object The value to set
   		* @returns any this
   		*/
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (Boolean) */
   var submitValue: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Number) */
@@ -284,7 +287,7 @@ import scala.scalajs.js.annotation._
   		* @param value Object The initial value
   		* @returns Object The modified initial value
   		*/
-  var transformOriginalValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
+  var transformOriginalValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Transform the raw value before it is set
   		* @param value Object The value
   		* @returns Object The value to set

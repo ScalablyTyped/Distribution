@@ -32,9 +32,22 @@ class OLEObjects protected () extends js.Object {
   var Width: scala.Double = js.native
   val ZOrder: scala.Double = js.native
   def Add(
-    ClassType: java.lang.String,
-    Filename: js.UndefOr[scala.Nothing],
-    Link: js.UndefOr[scala.Nothing],
+    ClassType: js.UndefOr[scala.Nothing],
+    Filename: java.lang.String,
+    Link: js.UndefOr[scala.Boolean],
+    DisplayAsIcon: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`false`],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
+    Left: js.UndefOr[scala.Double],
+    Top: js.UndefOr[scala.Double],
+    Width: js.UndefOr[scala.Double],
+    Height: js.UndefOr[scala.Double]
+  ): OLEObject = js.native
+  def Add(
+    ClassType: js.UndefOr[scala.Nothing],
+    Filename: java.lang.String,
+    Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: js.UndefOr[java.lang.String],
     IconIndex: js.UndefOr[scala.Double],
@@ -46,34 +59,21 @@ class OLEObjects protected () extends js.Object {
   ): OLEObject = js.native
   def Add(
     ClassType: java.lang.String,
-    Filename: js.UndefOr[js.UndefOr[scala.Nothing]],
-    Link: js.UndefOr[js.UndefOr[scala.Nothing]],
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`false`],
-    IconFileName: js.UndefOr[js.UndefOr[scala.Nothing]],
-    IconIndex: js.UndefOr[js.UndefOr[scala.Nothing]],
-    IconLabel: js.UndefOr[js.UndefOr[scala.Nothing]],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
     Left: js.UndefOr[scala.Double],
     Top: js.UndefOr[scala.Double],
     Width: js.UndefOr[scala.Double],
     Height: js.UndefOr[scala.Double]
   ): OLEObject = js.native
   def Add(
-    ClassType: js.UndefOr[scala.Nothing],
-    Filename: java.lang.String,
-    Link: js.UndefOr[scala.Boolean],
-    DisplayAsIcon: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`false`],
-    IconFileName: js.UndefOr[js.UndefOr[scala.Nothing]],
-    IconIndex: js.UndefOr[js.UndefOr[scala.Nothing]],
-    IconLabel: js.UndefOr[js.UndefOr[scala.Nothing]],
-    Left: js.UndefOr[scala.Double],
-    Top: js.UndefOr[scala.Double],
-    Width: js.UndefOr[scala.Double],
-    Height: js.UndefOr[scala.Double]
-  ): OLEObject = js.native
-  def Add(
-    ClassType: js.UndefOr[scala.Nothing],
-    Filename: java.lang.String,
-    Link: scala.Boolean,
+    ClassType: java.lang.String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: js.UndefOr[java.lang.String],
     IconIndex: js.UndefOr[scala.Double],

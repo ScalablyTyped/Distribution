@@ -100,11 +100,7 @@ import scala.scalajs.js.annotation._
   		* @returns Ext.util.Sorter[]
   		*/
   var sort: js.UndefOr[
-    js.Function2[
-      /* sorters */ js.UndefOr[js.Any], 
-      /* direction */ js.UndefOr[java.lang.String], 
-      extjsLib.ExtNs.Array
-    ]
+    js.Function2[js.UndefOr[js.Any], js.UndefOr[java.lang.String], extjsLib.ExtNs.Array]
   ] = js.undefined
   /** [Config Option] (Boolean) */
   var sortOnLoad: js.UndefOr[scala.Boolean] = js.undefined

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "dd-trace"
-version := "0.11.2-b39ecc"
+version := "0.11.2-172bc1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
-  "org.scalablytyped" %%% "opentracing" % "0.14.3-0794a7",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-17198b",
+  "org.scalablytyped" %%% "opentracing" % "0.14.3-b87583",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

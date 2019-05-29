@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object levelupMod {
-  type InferDBDel[DB] = (LevelUpDel[js.Any, abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractOptions]) | (LevelUpDel[js.Any, js.Any])
-  type InferDBGet[DB] = (LevelUpGet[js.Any, js.Any, abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractGetOptions]) | (LevelUpGet[js.Any, js.Any, js.Any])
-  type InferDBPut[DB] = (LevelUpPut[js.Any, js.Any, abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractOptions]) | (LevelUpPut[js.Any, js.Any, js.Any])
+  type InferDBDel[DB] = LevelUpDel[js.Any, abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractOptions | js.Any]
+  type InferDBGet[DB] = LevelUpGet[
+    js.Any, 
+    js.Any, 
+    abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractGetOptions | js.Any
+  ]
+  type InferDBPut[DB] = LevelUpPut[
+    js.Any, 
+    js.Any, 
+    abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractOptions | js.Any
+  ]
   type LevelUpBatch[K, O] = (js.Function2[
     /* key */ K, 
     /* callback */ abstractDashLeveldownLib.abstractDashLeveldownMod.ErrorCallback, 

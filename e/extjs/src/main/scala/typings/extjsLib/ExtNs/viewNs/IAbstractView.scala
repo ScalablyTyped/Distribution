@@ -11,15 +11,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Changes the data store bound to this view and refreshes it
   		* @param store Ext.data.Store The store to bind to this view
   		*/
-  var bindStore: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IStore], scala.Unit]
-  ] = js.undefined
+  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IStore], scala.Unit]] = js.undefined
   /** [Method] Binds listeners for this component to the store
   		* @param store Ext.data.AbstractStore The store to bind to
   		*/
-  var bindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var blockRefresh: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Deselects all selected records  */
@@ -225,9 +221,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Unbinds listeners from this component to the store
   		* @param store Ext.data.AbstractStore The store to unbind from
   		*/
-  var unbindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
 }
 
 object IAbstractView {

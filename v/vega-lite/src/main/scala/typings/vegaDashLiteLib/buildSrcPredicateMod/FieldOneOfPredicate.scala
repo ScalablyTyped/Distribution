@@ -13,17 +13,21 @@ trait FieldOneOfPredicate
     * A set of values that the `field`'s value should be a member of,
     * for a data item included in the filtered data.
     */
-  var oneOf: js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[scala.Boolean] | js.Array[vegaDashLiteLib.buildSrcDatetimeMod.DateTime]
+  var oneOf: js.Array[
+    scala.Boolean | vegaDashLiteLib.buildSrcDatetimeMod.DateTime | scala.Double | java.lang.String
+  ]
 }
 
 object FieldOneOfPredicate {
   @scala.inline
   def apply(
     field: java.lang.String,
-    oneOf: js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[scala.Boolean] | js.Array[vegaDashLiteLib.buildSrcDatetimeMod.DateTime],
+    oneOf: js.Array[
+      scala.Boolean | vegaDashLiteLib.buildSrcDatetimeMod.DateTime | scala.Double | java.lang.String
+    ],
     timeUnit: vegaDashLiteLib.buildSrcTimeunitMod.TimeUnit = null
   ): FieldOneOfPredicate = {
-    val __obj = js.Dynamic.literal(field = field, oneOf = oneOf.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(field = field, oneOf = oneOf)
     if (timeUnit != null) __obj.updateDynamic("timeUnit")(timeUnit)
     __obj.asInstanceOf[FieldOneOfPredicate]
   }

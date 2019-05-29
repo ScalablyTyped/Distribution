@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait Instruction extends js.Object {
   var identity: java.lang.String
-  var list_index: js.UndefOr[_] = js.undefined
-  var new_identity: js.UndefOr[_] = js.undefined
-  var object_identity: js.UndefOr[_] = js.undefined
+  var list_index: js.UndefOr[js.Any] = js.undefined
+  var new_identity: js.UndefOr[js.Any] = js.undefined
+  var object_identity: js.UndefOr[js.Any] = js.undefined
   var object_type: java.lang.String
   var primary_key: js.UndefOr[java.lang.String] = js.undefined
-  var properties: js.UndefOr[_] = js.undefined
-  var property: js.UndefOr[_] = js.undefined
+  var properties: js.UndefOr[js.Any] = js.undefined
+  var property: js.UndefOr[js.Any] = js.undefined
   var `type`: realmLib.realmLibStrings.INSERT | realmLib.realmLibStrings.SET | realmLib.realmLibStrings.DELETE | realmLib.realmLibStrings.CLEAR | realmLib.realmLibStrings.LIST_SET | realmLib.realmLibStrings.LIST_INSERT | realmLib.realmLibStrings.LIST_ERASE | realmLib.realmLibStrings.LIST_CLEAR | realmLib.realmLibStrings.ADD_TYPE | realmLib.realmLibStrings.ADD_PROPERTIES | realmLib.realmLibStrings.CHANGE_IDENTITY | realmLib.realmLibStrings.SWAP_IDENTITY
-  var values: js.UndefOr[_] = js.undefined
+  var values: js.UndefOr[js.Any] = js.undefined
 }
 
 object Instruction {

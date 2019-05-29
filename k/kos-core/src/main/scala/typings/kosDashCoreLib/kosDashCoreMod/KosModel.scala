@@ -26,7 +26,12 @@ trait KosModel[T] extends js.Object {
     js.Function2[/* state */ T, /* hasPayload */ kosDashCoreLib.Anon_Payload[T], scala.Unit]
   ]
   var setup: js.UndefOr[
-    js.Function2[/* dispatch */ KosDispatch, /* getState */ GetKosState[T], scala.Unit]
+    js.Function3[
+      /* dispatch */ KosDispatch, 
+      /* getState */ GetKosState[T], 
+      /* action */ kosDashCoreLib.Anon_PayloadAnonParam, 
+      scala.Unit
+    ]
   ] = js.undefined
 }
 
@@ -47,11 +52,11 @@ object KosModel {
       js.Function2[/* state */ T, /* hasPayload */ kosDashCoreLib.Anon_Payload[T], scala.Unit]
     ],
     getAsync: /* key */ java.lang.String => js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[_]], scala.Unit] = null,
-    setup: (/* dispatch */ KosDispatch, /* getState */ GetKosState[T]) => scala.Unit = null
+    setup: (/* dispatch */ KosDispatch, /* getState */ GetKosState[T], /* action */ kosDashCoreLib.Anon_PayloadAnonParam) => scala.Unit = null
   ): KosModel[T] = {
     val __obj = js.Dynamic.literal(asyncs = asyncs, initial = initial.asInstanceOf[js.Any], namespace = namespace, reducers = reducers)
     if (getAsync != null) __obj.updateDynamic("getAsync")(js.Any.fromFunction1(getAsync))
-    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction2(setup))
+    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction3(setup))
     __obj.asInstanceOf[KosModel[T]]
   }
 }

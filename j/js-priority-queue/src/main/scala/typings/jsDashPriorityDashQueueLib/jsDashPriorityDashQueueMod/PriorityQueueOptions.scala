@@ -22,7 +22,7 @@ trait PriorityQueueOptions[T] extends js.Object {
     */
   var strategy: js.UndefOr[
     org.scalablytyped.runtime.Instantiable1[
-      /* options */ js.UndefOr[
+      js.UndefOr[
         /* options */ PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
       ], 
       AbstractPriorityQueue[js.Object]
@@ -36,7 +36,7 @@ object PriorityQueueOptions {
     comparator: (/* a */ T, /* b */ T) => scala.Double = null,
     initialValues: js.Array[T] = null,
     strategy: org.scalablytyped.runtime.Instantiable1[
-      /* options */ js.UndefOr[
+      js.UndefOr[
         /* options */ PriorityQueueOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
       ], 
       AbstractPriorityQueue[js.Object]

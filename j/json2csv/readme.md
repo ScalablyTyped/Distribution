@@ -1,7 +1,7 @@
 
 # Scala.js typings for json2csv
 
-Typings are for version 4.4
+Typings are for version 4.5
 
 ## Library description:
 Convert JSON to CSV
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for json2csv 4.4
+// Type definitions for json2csv 4.5
 // Project: https://github.com/zemirco/json2csv
 // Definitions by: Juanjo Diaz <https://github.com/juanjoDiaz>
 //                 Daniel Gooß <https://github.com/dangoo>

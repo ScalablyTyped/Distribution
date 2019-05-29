@@ -279,6 +279,8 @@ object pluginsNs extends js.Object {
     var overrideParams: js.UndefOr[scala.Boolean] = js.undefined
   }
   
+  trait _TMetricsCallback extends js.Object
+  
   // *************** This module includes the following header parser plugins:
   /**
     * Check the client's Accept header can be handled by this server.
@@ -462,6 +464,12 @@ object pluginsNs extends js.Object {
     /* route */ restifyLib.restifyMod.Route, 
     scala.Unit
   ]
-  type TMetricsCallback = js.UndefOr[restifyLib.restifyLibStrings.close | restifyLib.restifyLibStrings.aborted]
+  /* Rewritten from type alias, can be one of: 
+    - restifyLib.restifyLibStrings.close
+    - restifyLib.restifyLibStrings.aborted
+    - `js.undefined`
+    - scala.Nothing
+  */
+  type TMetricsCallback = js.UndefOr[_TMetricsCallback]
 }
 

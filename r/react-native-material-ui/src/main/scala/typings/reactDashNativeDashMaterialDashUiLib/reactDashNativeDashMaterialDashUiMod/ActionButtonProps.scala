@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait ActionButtonProps extends js.Object {
   var actions: js.UndefOr[
-    js.Array[java.lang.String] | js.Array[reactLib.reactMod.Global.JSXNs.Element] | js.Array[reactDashNativeDashMaterialDashUiLib.Anon_Icon]
+    js.Array[
+      reactDashNativeDashMaterialDashUiLib.Anon_Icon | reactLib.reactMod.Global.JSXNs.Element | java.lang.String
+    ]
   ] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined
@@ -22,7 +24,9 @@ trait ActionButtonProps extends js.Object {
 object ActionButtonProps {
   @scala.inline
   def apply(
-    actions: js.Array[java.lang.String] | js.Array[reactLib.reactMod.Global.JSXNs.Element] | js.Array[reactDashNativeDashMaterialDashUiLib.Anon_Icon] = null,
+    actions: js.Array[
+      reactDashNativeDashMaterialDashUiLib.Anon_Icon | reactLib.reactMod.Global.JSXNs.Element | java.lang.String
+    ] = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     icon: java.lang.String = null,
     onLongPress: () => scala.Unit = null,
@@ -31,7 +35,7 @@ object ActionButtonProps {
     transition: reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.toolbar | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.speedDial = null
   ): ActionButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (actions != null) __obj.updateDynamic("actions")(actions)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction0(onLongPress))

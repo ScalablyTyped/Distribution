@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object JQueryNs {
   type AnimationHook[TElement] = js.Function1[/* fx */ Tween[TElement], scala.Unit]
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type CoordinatesPartial = (stdLib.Pick[Coordinates, cypressLib.cypressLibStrings.left]) | (stdLib.Pick[Coordinates, cypressLib.cypressLibStrings.top]) | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  type CoordinatesPartial = (stdLib.Pick[Coordinates, cypressLib.cypressLibStrings.left | cypressLib.cypressLibStrings.top]) | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // endregion
   // region Effects
   /* Rewritten from type alias, can be one of: 

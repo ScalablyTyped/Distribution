@@ -10,9 +10,9 @@ trait Typeofthrottle extends js.Object {
   val DROPPED: js.Symbol = js.native
   val INs: js.Any = js.native
   var RateLimiter: org.scalablytyped.runtime.Instantiable3[
-    /* tokensPerInterval */ js.UndefOr[/* tokensPerInterval */ scala.Double], 
-    /* interval */ js.UndefOr[/* interval */ scala.Double], 
-    /* fireImmediately */ js.UndefOr[/* fireImmediately */ scala.Boolean], 
+    js.UndefOr[/* tokensPerInterval */ scala.Double], 
+    js.UndefOr[/* interval */ scala.Double], 
+    js.UndefOr[/* fireImmediately */ scala.Boolean], 
     adoneLib.adoneNs.utilNs.throttleNs.RateLimiter
   ] = js.native
   def create(): adoneLib.adoneNs.utilNs.throttleNs.INs.CreateFunction = js.native

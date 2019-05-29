@@ -10,7 +10,7 @@ package object JQuerySortableNs {
   type GenericEventHandler = js.Function4[
     /* $item */ js.UndefOr[jqueryDashSortableLib.JQuery], 
     /* container */ js.UndefOr[Container], 
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.GenericEventHandler */ /* _super */ js.UndefOr[
+    /* _super */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.GenericEventHandler */ js.Object
     ], 
     /* event */ js.UndefOr[stdLib.Event], 
@@ -19,7 +19,7 @@ package object JQuerySortableNs {
   type OnCancelHandler = js.Function4[
     /* $item */ js.UndefOr[jqueryDashSortableLib.JQuery], 
     /* container */ js.UndefOr[Container], 
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnCancelHandler */ /* _super */ js.UndefOr[
+    /* _super */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnCancelHandler */ js.Object
     ], 
     /* event */ js.UndefOr[stdLib.Event], 
@@ -28,7 +28,7 @@ package object JQuerySortableNs {
   type OnDragEventHandler = js.Function4[
     /* $item */ js.UndefOr[jqueryDashSortableLib.JQuery], 
     /* position */ js.UndefOr[Position], 
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnDragEventHandler */ /* _super */ js.UndefOr[
+    /* _super */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnDragEventHandler */ js.Object
     ], 
     /* event */ js.UndefOr[stdLib.Event], 
@@ -36,7 +36,7 @@ package object JQuerySortableNs {
   ]
   type OnMousedownHandler = js.Function3[
     /* $item */ js.UndefOr[jqueryDashSortableLib.JQuery], 
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnMousedownHandler */ /* _super */ js.UndefOr[
+    /* _super */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnMousedownHandler */ js.Object
     ], 
     /* event */ js.UndefOr[stdLib.Event], 

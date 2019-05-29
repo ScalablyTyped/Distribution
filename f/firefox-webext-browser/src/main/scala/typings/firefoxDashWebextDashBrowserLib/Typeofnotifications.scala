@@ -76,7 +76,9 @@ trait Typeofnotifications extends js.Object {
   def create(options: firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.CreateNotificationOptions): js.Promise[js.UndefOr[java.lang.String]] = js.native
   /** Retrieves all the notifications. */
   def getAll(): js.Promise[
-    firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.CreateNotificationOptions
+    org.scalablytyped.runtime.StringDictionary[
+      firefoxDashWebextDashBrowserLib.browserNs.notificationsNs.CreateNotificationOptions
+    ]
   ] = js.native
   /**
     * Retrieves whether the user has enabled notifications from this app or extension.

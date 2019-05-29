@@ -13,7 +13,7 @@ class HighLevelConsumer protected () extends js.Object {
   def addTopics(topics: js.Array[java.lang.String | Topic]): scala.Unit = js.native
   def addTopics(
     topics: js.Array[java.lang.String | Topic],
-    cb: js.Function2[/* error */ js.Any, js.Array[java.lang.String] | js.Array[Topic], _]
+    cb: js.Function2[/* error */ js.Any, /* added */ js.Array[java.lang.String | Topic], _]
   ): scala.Unit = js.native
   def close(cb: js.Function0[_]): scala.Unit = js.native
   def close(force: scala.Boolean, cb: js.Function1[/* error */ js.Any, _]): scala.Unit = js.native

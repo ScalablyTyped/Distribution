@@ -11,7 +11,7 @@ trait Anon_AddClientId extends js.Object {
   /** True if the ping should contain the environment data. */
   var addEnvironment: js.UndefOr[scala.Boolean] = js.undefined
   /** Set to override the environment data. */
-  var overrideEnvironment: js.UndefOr[js.Any] = js.undefined
+  var overrideEnvironment: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /** If true, send the ping using the PingSender. */
   var usePingSender: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -21,7 +21,7 @@ object Anon_AddClientId {
   def apply(
     addClientId: js.UndefOr[scala.Boolean] = js.undefined,
     addEnvironment: js.UndefOr[scala.Boolean] = js.undefined,
-    overrideEnvironment: js.Any = null,
+    overrideEnvironment: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     usePingSender: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_AddClientId = {
     val __obj = js.Dynamic.literal()

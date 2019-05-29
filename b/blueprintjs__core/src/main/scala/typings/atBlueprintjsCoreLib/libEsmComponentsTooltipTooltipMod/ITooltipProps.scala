@@ -55,10 +55,10 @@ object ITooltipProps {
     position: atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition = null,
     targetClassName: java.lang.String = null,
     targetProps: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
-    targetTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
+    targetTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
     transitionDuration: scala.Int | scala.Double = null,
     usePortal: js.UndefOr[scala.Boolean] = js.undefined,
-    wrapperTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null
+    wrapperTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null
   ): ITooltipProps = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)

@@ -10,13 +10,13 @@ trait GeosearchProvider extends js.Object {
   def results(
     text: java.lang.String,
     key: java.lang.String,
-    bounds: leafletLib.leafletMod.LatLngBoundsExpression | js.UndefOr[scala.Nothing],
+    bounds: js.UndefOr[leafletLib.leafletMod.LatLngBoundsExpression],
     callback: GeosearchCallback
   ): esriDashLeafletLib.esriDashLeafletMod.Task = js.native
   def results(text: java.lang.String, key: java.lang.String, bounds: scala.Null, callback: GeosearchCallback): esriDashLeafletLib.esriDashLeafletMod.Task = js.native
   def suggestions(
     text: java.lang.String,
-    bounds: leafletLib.leafletMod.LatLngBoundsExpression | js.UndefOr[scala.Nothing],
+    bounds: js.UndefOr[leafletLib.leafletMod.LatLngBoundsExpression],
     callback: GeosearchCallback
   ): esriDashLeafletLib.esriDashLeafletMod.Task = js.native
   def suggestions(text: java.lang.String, bounds: scala.Null, callback: GeosearchCallback): esriDashLeafletLib.esriDashLeafletMod.Task = js.native

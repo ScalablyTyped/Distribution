@@ -33,7 +33,7 @@ object ^ extends js.Object {
   val stack: org.scalablytyped.runtime.Instantiable0[tstlLib.containerStackMod.Stack[js.Object]] = js.native
   var system_error: org.scalablytyped.runtime.Instantiable2[
     /* code */ tstlLib.exceptionErrorCodeMod.ErrorCode, 
-    /* message */ js.UndefOr[/* message */ java.lang.String], 
+    js.UndefOr[/* message */ java.lang.String], 
     tstlLib.exceptionSystemErrorMod.SystemError
   ] = js.native
   val timed_mutex: org.scalablytyped.runtime.Instantiable0[tstlLib.threadTimedMutexMod.TimedMutex] = js.native

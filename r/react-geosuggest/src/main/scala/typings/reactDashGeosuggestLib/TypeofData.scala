@@ -10,7 +10,9 @@ trait TypeofData extends js.Object {
   var Geometry: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DataNs.Geometry]
   var GeometryCollection: org.scalablytyped.runtime.Instantiable1[
     /* elements */ js.Array[
-      js.Array[googlemapsLib.googleNs.mapsNs.DataNs.Geometry] | js.Array[googlemapsLib.googleNs.mapsNs.LatLng] | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+      (js.Array[
+        googlemapsLib.googleNs.mapsNs.DataNs.Geometry | googlemapsLib.googleNs.mapsNs.LatLng
+      ]) | googlemapsLib.googleNs.mapsNs.LatLngLiteral
     ], 
     googlemapsLib.googleNs.mapsNs.DataNs.GeometryCollection
   ]
@@ -71,7 +73,9 @@ object TypeofData {
     Geometry: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DataNs.Geometry],
     GeometryCollection: org.scalablytyped.runtime.Instantiable1[
       /* elements */ js.Array[
-        js.Array[googlemapsLib.googleNs.mapsNs.DataNs.Geometry] | js.Array[googlemapsLib.googleNs.mapsNs.LatLng] | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+        (js.Array[
+          googlemapsLib.googleNs.mapsNs.DataNs.Geometry | googlemapsLib.googleNs.mapsNs.LatLng
+        ]) | googlemapsLib.googleNs.mapsNs.LatLngLiteral
       ], 
       googlemapsLib.googleNs.mapsNs.DataNs.GeometryCollection
     ],

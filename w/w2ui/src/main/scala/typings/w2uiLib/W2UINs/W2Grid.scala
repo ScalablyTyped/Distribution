@@ -83,8 +83,8 @@ trait W2Grid
   def editField(recid: java.lang.String, column: scala.Double, value: java.lang.String, event: js.Object): scala.Unit = js.native
   def error(msg: java.lang.String): scala.Unit = js.native
   def expand(recid: java.lang.String): scala.Boolean = js.native
-  def find(`match`: js.Object): js.Array[js.Object] | js.Array[scala.Double] = js.native
-  def find(`match`: js.Object, returnIndex: scala.Boolean): js.Array[js.Object] | js.Array[scala.Double] = js.native
+  def find(`match`: js.Object): js.Array[scala.Double | js.Object] = js.native
+  def find(`match`: js.Object, returnIndex: scala.Boolean): js.Array[scala.Double | js.Object] = js.native
   def get(recid: java.lang.String): js.Object | scala.Double | scala.Unit = js.native
   def get(recid: java.lang.String, returnIndex: scala.Boolean): js.Object | scala.Double | scala.Unit = js.native
   def getCellHTML(index: scala.Double, columnIndex: scala.Double): java.lang.String = js.native

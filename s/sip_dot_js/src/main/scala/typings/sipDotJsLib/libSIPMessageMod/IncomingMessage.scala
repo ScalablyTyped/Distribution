@@ -54,8 +54,8 @@ class IncomingMessage () extends js.Object {
     * @returns {Object|undefined} Parsed header object, undefined if the
     *   header is not present or in case of a parsing error.
     */
-  def parseHeader(name: java.lang.String): js.UndefOr[_] = js.native
-  def parseHeader(name: java.lang.String, idx: scala.Double): js.UndefOr[_] = js.native
+  def parseHeader(name: java.lang.String): js.UndefOr[js.Any] = js.native
+  def parseHeader(name: java.lang.String, idx: scala.Double): js.UndefOr[js.Any] = js.native
   /**
     * Message Header attribute selector. Alias of parseHeader.
     * @param {String} name header name
@@ -66,8 +66,8 @@ class IncomingMessage () extends js.Object {
     * @example
     * message.s('via',3).port
     */
-  def s(name: java.lang.String): js.UndefOr[_] = js.native
-  def s(name: java.lang.String, idx: scala.Double): js.UndefOr[_] = js.native
+  def s(name: java.lang.String): js.UndefOr[js.Any] = js.native
+  def s(name: java.lang.String, idx: scala.Double): js.UndefOr[js.Any] = js.native
   /**
     * Replace the value of the given header by the value.
     * @param {String} name header name

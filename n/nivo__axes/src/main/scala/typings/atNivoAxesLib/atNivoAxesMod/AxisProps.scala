@@ -17,7 +17,7 @@ trait AxisProps extends js.Object {
   var tickRotation: js.UndefOr[scala.Double] = js.undefined
   var tickSize: js.UndefOr[scala.Double] = js.undefined
   var tickValues: js.UndefOr[
-    scala.Double | js.Array[scala.Double] | js.Array[java.lang.String] | js.Array[stdLib.Date] | java.lang.String
+    scala.Double | (js.Array[stdLib.Date | scala.Double | java.lang.String]) | java.lang.String
   ] = js.undefined
 }
 
@@ -32,7 +32,7 @@ object AxisProps {
     tickPadding: scala.Int | scala.Double = null,
     tickRotation: scala.Int | scala.Double = null,
     tickSize: scala.Int | scala.Double = null,
-    tickValues: scala.Double | js.Array[scala.Double] | js.Array[java.lang.String] | js.Array[stdLib.Date] | java.lang.String = null
+    tickValues: scala.Double | (js.Array[stdLib.Date | scala.Double | java.lang.String]) | java.lang.String = null
   ): AxisProps = {
     val __obj = js.Dynamic.literal()
     if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])

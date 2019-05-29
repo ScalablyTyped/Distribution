@@ -119,7 +119,7 @@ trait _Middleware extends js.Object {
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDocumentSymbolsSignature, 
       vscodeLib.vscodeMod.ProviderResult[
-        js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
+        js.Array[vscodeLib.vscodeMod.DocumentSymbol | vscodeLib.vscodeMod.SymbolInformation]
       ]
     ]
   ] = js.undefined
@@ -318,7 +318,7 @@ object _Middleware {
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDocumentSymbolsSignature, 
       vscodeLib.vscodeMod.ProviderResult[
-        js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
+        js.Array[vscodeLib.vscodeMod.DocumentSymbol | vscodeLib.vscodeMod.SymbolInformation]
       ]
     ] = null,
     provideHover: js.ThisFunction4[

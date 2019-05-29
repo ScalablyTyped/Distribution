@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 - Dropped {[ T in eslint.eslint.Rule.NodeTypes ]:? (node : estree.estree.Node): void} */ trait RuleListener
   extends /* key */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[
-        (js.Function2[/* codePath */ CodePath, /* node */ estreeLib.estreeMod.Node, scala.Unit]) | (js.Function2[/* segment */ CodePathSegment, /* node */ estreeLib.estreeMod.Node, scala.Unit]) | (js.Function3[
+        (js.Function2[
+          (/* codePath */ CodePath) | (/* segment */ CodePathSegment), 
+          /* node */ estreeLib.estreeMod.Node, 
+          scala.Unit
+        ]) | (js.Function3[
           /* fromSegment */ CodePathSegment, 
           /* toSegment */ CodePathSegment, 
           /* node */ estreeLib.estreeMod.Node, 
@@ -44,7 +48,11 @@ object RuleListener {
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[
-        (js.Function2[/* codePath */ CodePath, /* node */ estreeLib.estreeMod.Node, scala.Unit]) | (js.Function2[/* segment */ CodePathSegment, /* node */ estreeLib.estreeMod.Node, scala.Unit]) | (js.Function3[
+        (js.Function2[
+          (/* codePath */ CodePath) | (/* segment */ CodePathSegment), 
+          /* node */ estreeLib.estreeMod.Node, 
+          scala.Unit
+        ]) | (js.Function3[
           /* fromSegment */ CodePathSegment, 
           /* toSegment */ CodePathSegment, 
           /* node */ estreeLib.estreeMod.Node, 

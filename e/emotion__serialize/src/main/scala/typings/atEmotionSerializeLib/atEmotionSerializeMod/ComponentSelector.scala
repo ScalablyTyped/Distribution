@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ComponentSelector extends js.Object {
+trait ComponentSelector
+  extends _CSSInterpolation
+     with _Interpolation[js.Any] {
   var __emotion_styles: js.Any
 }
 

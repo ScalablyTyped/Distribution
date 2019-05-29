@@ -18,7 +18,7 @@ object MosaicWithoutDragDropContext extends js.Object {
   var defaultProps: reactDashMosaicDashComponentLib.Anon_ClassName = js.native
   def ofType[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](): org.scalablytyped.runtime.Instantiable2[
     /* props */ reactDashMosaicDashComponentLib.libMosaicMod.MosaicProps[T], 
-    /* context */ js.UndefOr[/* context */ js.Any], 
+    js.UndefOr[/* context */ js.Any], 
     reactDashMosaicDashComponentLib.libMosaicMod.MosaicWithoutDragDropContext[T]
   ] = js.native
 }

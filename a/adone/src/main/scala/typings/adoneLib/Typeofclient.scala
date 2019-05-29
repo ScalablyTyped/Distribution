@@ -10,7 +10,7 @@ trait Typeofclient extends js.Object {
   var Cancel: org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, adoneLib.adoneNs.netNs.httpNs.clientNs.Cancel] = js.native
   var CancelToken: TypeofClassCancelToken = js.native
   var Client: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options], 
+    js.UndefOr[/* options */ adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options], 
     adoneLib.adoneNs.netNs.httpNs.clientNs.Client
   ] = js.native
   val INs: js.Any = js.native

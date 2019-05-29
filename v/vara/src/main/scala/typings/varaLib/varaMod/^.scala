@@ -13,7 +13,7 @@ object ^
         /* queryDom */ java.lang.String, 
         /* fontJSONSource */ java.lang.String, 
         /* textStep */ js.Array[TextStep], 
-        /* textGlobals */ js.UndefOr[/* textGlobals */ TextProperties], 
+        js.UndefOr[/* textGlobals */ TextProperties], 
         VaraType
       ]
     ]

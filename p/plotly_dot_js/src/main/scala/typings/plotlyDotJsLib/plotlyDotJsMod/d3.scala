@@ -204,10 +204,7 @@ object d3 extends js.Object {
   @JSName("area")
   def area_Datum[Datum](): d3DashShapeLib.d3DashShapeMod.Area[Datum] = js.native
   def ascending(): scala.Double = js.native
-  def ascending(
-    a: d3DashArrayLib.d3DashArrayMod.Primitive | js.UndefOr[scala.Nothing],
-    b: d3DashArrayLib.d3DashArrayMod.Primitive
-  ): scala.Double = js.native
+  def ascending(a: js.UndefOr[d3DashArrayLib.d3DashArrayMod.Primitive], b: d3DashArrayLib.d3DashArrayMod.Primitive): scala.Double = js.native
   def ascending(a: d3DashArrayLib.d3DashArrayMod.Primitive): scala.Double = js.native
   def axisBottom[Domain /* <: d3DashAxisLib.d3DashAxisMod.AxisDomain */](scale: d3DashAxisLib.d3DashAxisMod.AxisScale[Domain]): d3DashAxisLib.d3DashAxisMod.Axis[Domain] = js.native
   def axisLeft[Domain /* <: d3DashAxisLib.d3DashAxisMod.AxisDomain */](scale: d3DashAxisLib.d3DashAxisMod.AxisScale[Domain]): d3DashAxisLib.d3DashAxisMod.Axis[Domain] = js.native
@@ -2034,10 +2031,7 @@ object d3 extends js.Object {
     args: js.Any*
   ): Result = js.native
   def descending(): scala.Double = js.native
-  def descending(
-    a: d3DashArrayLib.d3DashArrayMod.Primitive | js.UndefOr[scala.Nothing],
-    b: d3DashArrayLib.d3DashArrayMod.Primitive
-  ): scala.Double = js.native
+  def descending(a: js.UndefOr[d3DashArrayLib.d3DashArrayMod.Primitive], b: d3DashArrayLib.d3DashArrayMod.Primitive): scala.Double = js.native
   def descending(a: d3DashArrayLib.d3DashArrayMod.Primitive): scala.Double = js.native
   def deviation[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.Iterable[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
   def deviation[T](
@@ -2168,7 +2162,7 @@ object d3 extends js.Object {
   def entries(obj: js.Object): js.Array[d3DashCollectionLib.Anon_KeyValue] = js.native
   def entries[T](obj: org.scalablytyped.runtime.StringDictionary[T]): js.Array[d3DashCollectionLib.Anon_Key[T]] = js.native
   def entries[T](obj: stdLib.ArrayLike[T]): js.Array[d3DashCollectionLib.Anon_Key[T]] = js.native
-  def extent(array: stdLib.Iterable[java.lang.String]): (js.Tuple2[java.lang.String, java.lang.String]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
+  def extent(array: stdLib.Iterable[java.lang.String]): js.Tuple2[js.UndefOr[java.lang.String], js.UndefOr[java.lang.String]] = js.native
   def extent[T](
     array: stdLib.Iterable[T],
     accessor: js.Function3[
@@ -2177,9 +2171,9 @@ object d3 extends js.Object {
       /* array */ stdLib.Iterable[T], 
       js.UndefOr[java.lang.String | scala.Null]
     ]
-  ): (js.Tuple2[java.lang.String, java.lang.String]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
+  ): js.Tuple2[js.UndefOr[java.lang.String], js.UndefOr[java.lang.String]] = js.native
   @JSName("extent")
-  def extent_TNumeric[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.Iterable[T]): (js.Tuple2[T, T]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
+  def extent_TNumeric[T /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](array: stdLib.Iterable[T]): js.Tuple2[js.UndefOr[T], js.UndefOr[T]] = js.native
   @JSName("extent")
   def extent_TUNumeric[T, U /* <: d3DashArrayLib.d3DashArrayMod.Numeric */](
     array: stdLib.Iterable[T],
@@ -2189,7 +2183,7 @@ object d3 extends js.Object {
       /* array */ stdLib.Iterable[T], 
       js.UndefOr[U | scala.Null]
     ]
-  ): (js.Tuple2[U, U]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
+  ): js.Tuple2[js.UndefOr[U], js.UndefOr[U]] = js.native
   def forceCenter[NodeDatum /* <: d3DashForceLib.d3DashForceMod.SimulationNodeDatum */](): d3DashForceLib.d3DashForceMod.ForceCenter[NodeDatum] = js.native
   def forceCenter[NodeDatum /* <: d3DashForceLib.d3DashForceMod.SimulationNodeDatum */](x: scala.Double): d3DashForceLib.d3DashForceMod.ForceCenter[NodeDatum] = js.native
   def forceCenter[NodeDatum /* <: d3DashForceLib.d3DashForceMod.SimulationNodeDatum */](x: scala.Double, y: scala.Double): d3DashForceLib.d3DashForceMod.ForceCenter[NodeDatum] = js.native
@@ -2537,9 +2531,9 @@ object d3 extends js.Object {
   def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[js.Array[Datum] | scala.Null]]): d3DashHierarchyLib.d3DashHierarchyMod.HierarchyNode[Datum] = js.native
   def histogram(): d3DashArrayLib.d3DashArrayMod.HistogramGeneratorNumber[scala.Double, scala.Double] = js.native
   @JSName("histogram")
-  def histogram_DatumValueUndefOr[Datum, Value /* <: js.UndefOr[scala.Double] */](): d3DashArrayLib.d3DashArrayMod.HistogramGeneratorNumber[Datum, Value] = js.native
+  def `histogram_DatumValue<union>`[Datum, Value /* <: js.UndefOr[scala.Double] */](): d3DashArrayLib.d3DashArrayMod.HistogramGeneratorNumber[Datum, Value] = js.native
   @JSName("histogram")
-  def histogram_DatumValueUndefOrHistogramGeneratorDate[Datum, Value /* <: js.UndefOr[stdLib.Date] */](): d3DashArrayLib.d3DashArrayMod.HistogramGeneratorDate[Datum, Value] = js.native
+  def `histogram_DatumValue<union>HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[stdLib.Date] */](): d3DashArrayLib.d3DashArrayMod.HistogramGeneratorDate[Datum, Value] = js.native
   def hsl(color: d3DashColorLib.d3DashColorMod.ColorCommonInstance): d3DashColorLib.d3DashColorMod.HSLColor = js.native
   /**
     * Converts the provided color instance and returns an HSL color.

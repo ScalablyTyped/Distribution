@@ -25,13 +25,13 @@ object ^ extends js.Object {
   def escapeXML(markup: java.lang.String): java.lang.String = js.native
   def fileLoader(filePath: java.lang.String): java.lang.String = js.native
   def render(template: java.lang.String): java.lang.String | js.Promise[java.lang.String] = js.native
-  def render(template: java.lang.String, data: Data): java.lang.String | js.Promise[java.lang.String] = js.native
-  def render(template: java.lang.String, data: Data, opts: Options): java.lang.String | js.Promise[java.lang.String] = js.native
   def render(
     template: java.lang.String,
     data: js.UndefOr[scala.Nothing],
     opts: Options with ejsLib.Anon_AsyncTrue
   ): js.Promise[java.lang.String] = js.native
+  def render(template: java.lang.String, data: Data): java.lang.String | js.Promise[java.lang.String] = js.native
+  def render(template: java.lang.String, data: Data, opts: Options): java.lang.String | js.Promise[java.lang.String] = js.native
   def renderFile[T](path: java.lang.String): js.Promise[T] = js.native
   def renderFile[T](path: java.lang.String, cb: RenderFileCallback[T]): T = js.native
   def renderFile[T](path: java.lang.String, data: Data): js.Promise[T] = js.native
@@ -43,18 +43,18 @@ object ^ extends js.Object {
   @JSName("render")
   def render_String(template: java.lang.String): java.lang.String = js.native
   @JSName("render")
+  def render_String(
+    template: java.lang.String,
+    data: js.UndefOr[scala.Nothing],
+    opts: Options with ejsLib.Anon_AsyncNever
+  ): java.lang.String = js.native
+  @JSName("render")
   def render_String(template: java.lang.String, data: Data): java.lang.String = js.native
   @JSName("render")
   def render_String(
     template: java.lang.String,
     data: Data,
     opts: Options with (ejsLib.Anon_Async | ejsLib.Anon_AsyncNever)
-  ): java.lang.String = js.native
-  @JSName("render")
-  def render_String(
-    template: java.lang.String,
-    data: js.UndefOr[scala.Nothing],
-    opts: Options with ejsLib.Anon_AsyncNever
   ): java.lang.String = js.native
   def resolveInclude(name: java.lang.String, filename: java.lang.String, isDir: scala.Boolean): java.lang.String = js.native
 }

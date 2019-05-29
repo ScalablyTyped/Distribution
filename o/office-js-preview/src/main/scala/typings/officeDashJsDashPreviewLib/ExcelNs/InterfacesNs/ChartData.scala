@@ -29,7 +29,7 @@ trait ChartData extends js.Object {
     * [Api set: ExcelApi 1.7]
     */
   var chartType: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 84 */ js.Any
   ] = js.undefined
   /**
     *
@@ -185,7 +185,7 @@ object ChartData {
   def apply(
     axes: ChartAxesData = null,
     categoryLabelLevel: scala.Int | scala.Double = null,
-    chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any = null,
+    chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 84 */ js.Any = null,
     dataLabels: ChartDataLabelsData = null,
     displayBlanksAs: officeDashJsDashPreviewLib.ExcelNs.ChartDisplayBlanksAs | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NotPlotted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Zero | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Interplotted = null,
     format: ChartAreaFormatData = null,

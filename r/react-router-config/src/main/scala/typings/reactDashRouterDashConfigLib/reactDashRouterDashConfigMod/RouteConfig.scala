@@ -7,9 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RouteConfig
   extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var component: js.UndefOr[
-    reactLib.reactMod.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ComponentType[js.Object]
-  ] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ComponentType[js.Object | RouteConfigComponentProps[_]]] = js.undefined
   var exact: js.UndefOr[scala.Boolean] = js.undefined
   var key: js.UndefOr[reactLib.reactMod.Key] = js.undefined
   var location: js.UndefOr[historyLib.historyMod.Location[historyLib.historyMod.LocationState]] = js.undefined
@@ -22,7 +20,7 @@ object RouteConfig {
   @scala.inline
   def apply(
     StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    component: reactLib.reactMod.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ComponentType[js.Object] = null,
+    component: reactLib.reactMod.ComponentType[js.Object | RouteConfigComponentProps[_]] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     key: reactLib.reactMod.Key = null,
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,

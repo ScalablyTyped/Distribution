@@ -35,12 +35,18 @@ trait IMultiSlider
   var getValues: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Number) */
   var increment: js.UndefOr[scala.Double] = js.undefined
+  /** [Method] private override */
+  @JSName("initValue")
+  var initValue_IMultiSlider: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (Number) */
   var keyIncrement: js.UndefOr[scala.Double] = js.undefined
   /** [Config Option] (Number) */
   var maxValue: js.UndefOr[scala.Double] = js.undefined
   /** [Config Option] (Number) */
   var minValue: js.UndefOr[scala.Double] = js.undefined
+  /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
+  @JSName("reset")
+  var reset_IMultiSlider: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Sets the maximum value for the slider instance
   		* @param val Number The new maximum value
   		*/

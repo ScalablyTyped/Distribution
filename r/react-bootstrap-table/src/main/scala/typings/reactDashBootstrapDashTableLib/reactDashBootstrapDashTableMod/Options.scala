@@ -529,11 +529,11 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 *   `sortOrder`: The sort ordering, or array of ordering if multi-column sort is active.
   	 */
   var onSortChange: js.UndefOr[
-    (js.Function2[/* sortName */ java.lang.String, /* sortOrder */ SortOrder, scala.Unit]) | (js.Function2[
-      /* sortName */ js.Array[java.lang.String], 
-      /* sortOrder */ js.Array[SortOrder], 
+    js.Function2[
+      (/* sortName */ js.Array[java.lang.String]) | (/* sortName */ java.lang.String), 
+      (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder), 
       scala.Unit
-    ])
+    ]
   ] = js.undefined
   /**
   	 * Specify that only one row should be able to be expanded at the same time.
@@ -758,11 +758,7 @@ object Options {
     onRowMouseOver: (/* row */ TRow, /* e */ reactLib.reactMod.MouseEvent[_, reactLib.NativeMouseEvent]) => scala.Unit = null,
     onSearchChange: (/* searchText */ java.lang.String, /* colInfos */ js.Array[ColumnDescription[TRow]], /* multiColumnSearch */ scala.Boolean) => scala.Unit = null,
     onSizePerPageList: /* sizePerPage */ scala.Double => scala.Unit = null,
-    onSortChange: (js.Function2[/* sortName */ java.lang.String, /* sortOrder */ SortOrder, scala.Unit]) | (js.Function2[
-      /* sortName */ js.Array[java.lang.String], 
-      /* sortOrder */ js.Array[SortOrder], 
-      scala.Unit
-    ]) = null,
+    onSortChange: ((/* sortName */ js.Array[java.lang.String]) | (/* sortName */ java.lang.String), (/* sortOrder */ js.Array[SortOrder]) | (/* sortOrder */ SortOrder)) => scala.Unit = null,
     onlyOneExpanding: js.UndefOr[scala.Boolean] = js.undefined,
     page: scala.Int | scala.Double = null,
     pageStartIndex: scala.Int | scala.Double = null,
@@ -855,7 +851,7 @@ object Options {
     if (onRowMouseOver != null) __obj.updateDynamic("onRowMouseOver")(js.Any.fromFunction2(onRowMouseOver))
     if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction3(onSearchChange))
     if (onSizePerPageList != null) __obj.updateDynamic("onSizePerPageList")(js.Any.fromFunction1(onSizePerPageList))
-    if (onSortChange != null) __obj.updateDynamic("onSortChange")(onSortChange.asInstanceOf[js.Any])
+    if (onSortChange != null) __obj.updateDynamic("onSortChange")(js.Any.fromFunction2(onSortChange))
     if (!js.isUndefined(onlyOneExpanding)) __obj.updateDynamic("onlyOneExpanding")(onlyOneExpanding)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     if (pageStartIndex != null) __obj.updateDynamic("pageStartIndex")(pageStartIndex.asInstanceOf[js.Any])
@@ -873,7 +869,7 @@ object Options {
     if (showSelectedOnlyBtn != null) __obj.updateDynamic("showSelectedOnlyBtn")(js.Any.fromFunction2(showSelectedOnlyBtn))
     if (sizePerPage != null) __obj.updateDynamic("sizePerPage")(sizePerPage.asInstanceOf[js.Any])
     if (sizePerPageDropDown != null) __obj.updateDynamic("sizePerPageDropDown")(js.Any.fromFunction1(sizePerPageDropDown))
-    if (sizePerPageList != null) __obj.updateDynamic("sizePerPageList")(sizePerPageList.asInstanceOf[js.Any])
+    if (sizePerPageList != null) __obj.updateDynamic("sizePerPageList")(sizePerPageList)
     if (!js.isUndefined(sortIndicator)) __obj.updateDynamic("sortIndicator")(sortIndicator)
     if (sortName != null) __obj.updateDynamic("sortName")(sortName.asInstanceOf[js.Any])
     if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])

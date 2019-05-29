@@ -157,8 +157,12 @@ class Tabulator protected () extends js.Object {
   /** To get an array of Column Components for the current table setup, call the getColumns function. This will only return actual data columns not column groups.
     ** To get a structured array of Column Components that includes column groups, pass a value of true as an argument.
     */
-  def getColumns(): js.Array[tabulatorDashTablesLib.TabulatorNs.ColumnComponent] | js.Array[tabulatorDashTablesLib.TabulatorNs.GroupComponent] = js.native
-  def getColumns(includeColumnGroups: scala.Boolean): js.Array[tabulatorDashTablesLib.TabulatorNs.ColumnComponent] | js.Array[tabulatorDashTablesLib.TabulatorNs.GroupComponent] = js.native
+  def getColumns(): js.Array[
+    tabulatorDashTablesLib.TabulatorNs.ColumnComponent | tabulatorDashTablesLib.TabulatorNs.GroupComponent
+  ] = js.native
+  def getColumns(includeColumnGroups: scala.Boolean): js.Array[
+    tabulatorDashTablesLib.TabulatorNs.ColumnComponent | tabulatorDashTablesLib.TabulatorNs.GroupComponent
+  ] = js.native
   /** You can retrieve the data stored in the table using the getData function. */
   def getData(): js.Array[_] = js.native
   def getData(activeOnly: scala.Boolean): js.Array[_] = js.native

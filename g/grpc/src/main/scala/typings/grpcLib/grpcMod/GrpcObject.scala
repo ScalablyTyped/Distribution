@@ -10,7 +10,7 @@ trait GrpcObject
       GrpcObject | (org.scalablytyped.runtime.Instantiable3[
         /* address */ java.lang.String, 
         /* credentials */ ChannelCredentials, 
-        /* options */ js.UndefOr[/* options */ js.Object], 
+        js.UndefOr[/* options */ js.Object], 
         Client
       ]) | protobufjsLib.protobufjsMod.Message[js.Object]
     ]
@@ -22,7 +22,7 @@ object GrpcObject {
       GrpcObject | (org.scalablytyped.runtime.Instantiable3[
         /* address */ java.lang.String, 
         /* credentials */ ChannelCredentials, 
-        /* options */ js.UndefOr[/* options */ js.Object], 
+        js.UndefOr[/* options */ js.Object], 
         Client
       ]) | protobufjsLib.protobufjsMod.Message[js.Object]
     ] = null

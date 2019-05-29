@@ -17,7 +17,7 @@ package object jsplumbMod {
   */
   type ConnectorId = _ConnectorId | UserDefinedConnectorId
   type ConnectorSpec = ConnectorId | (js.Tuple2[ConnectorId, ConnectorOptions])
-  type ElementGroupRef = ElementId | stdLib.Element | js.Array[ElementId] | js.Array[stdLib.Element]
+  type ElementGroupRef = ElementId | stdLib.Element | (js.Array[stdLib.Element | ElementId])
   type ElementId = java.lang.String
   type ElementRef = ElementId | stdLib.Element
   /* -------------------------------------------- ENDPOINTS ------------------------------------------------------ */

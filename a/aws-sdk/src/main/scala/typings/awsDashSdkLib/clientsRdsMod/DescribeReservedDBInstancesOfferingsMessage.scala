@@ -27,7 +27,7 @@ trait DescribeReservedDBInstancesOfferingsMessage extends js.Object {
     */
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * A value that indicates whether to show only those reservations that support Multi-AZ.
+    * The Multi-AZ filter value. Specify this parameter to show only the available offerings matching the specified Multi-AZ parameter.
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   /**

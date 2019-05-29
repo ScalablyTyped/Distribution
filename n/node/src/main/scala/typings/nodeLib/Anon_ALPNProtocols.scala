@@ -14,14 +14,14 @@ trait Anon_ALPNProtocols extends js.Object {
     * to the client.
     */
   var ALPNProtocols: js.UndefOr[
-    js.Array[java.lang.String] | js.Array[Buffer] | js.Array[stdLib.Uint8Array] | Buffer | stdLib.Uint8Array
+    (js.Array[Buffer | java.lang.String | stdLib.Uint8Array]) | Buffer | stdLib.Uint8Array
   ] = js.undefined
   /**
     * An array of strings or a Buffer naming possible NPN protocols.
     * (Protocols should be ordered by their priority.)
     */
   var NPNProtocols: js.UndefOr[
-    js.Array[java.lang.String] | js.Array[Buffer] | js.Array[stdLib.Uint8Array] | Buffer | stdLib.Uint8Array
+    (js.Array[Buffer | java.lang.String | stdLib.Uint8Array]) | Buffer | stdLib.Uint8Array
   ] = js.undefined
   /**
     * SNICallback(servername, cb) <Function> A function that will be
@@ -79,8 +79,8 @@ trait Anon_ALPNProtocols extends js.Object {
 object Anon_ALPNProtocols {
   @scala.inline
   def apply(
-    ALPNProtocols: js.Array[java.lang.String] | js.Array[Buffer] | js.Array[stdLib.Uint8Array] | Buffer | stdLib.Uint8Array = null,
-    NPNProtocols: js.Array[java.lang.String] | js.Array[Buffer] | js.Array[stdLib.Uint8Array] | Buffer | stdLib.Uint8Array = null,
+    ALPNProtocols: (js.Array[Buffer | java.lang.String | stdLib.Uint8Array]) | Buffer | stdLib.Uint8Array = null,
+    NPNProtocols: (js.Array[Buffer | java.lang.String | stdLib.Uint8Array]) | Buffer | stdLib.Uint8Array = null,
     SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[/* err */ Error | scala.Null, /* ctx */ nodeLib.tlsMod.SecureContext, scala.Unit]) => scala.Unit = null,
     isServer: js.UndefOr[scala.Boolean] = js.undefined,
     rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,

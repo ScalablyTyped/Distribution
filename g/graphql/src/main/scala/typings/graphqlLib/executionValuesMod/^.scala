@@ -41,12 +41,12 @@ object ^ extends js.Object {
     node: graphqlLib.languageAstMod.FieldNode,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
   ): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  def getDirectiveValues(directiveDef: graphqlLib.typeDirectivesMod.GraphQLDirective, node: graphqlLib.Anon_Directives): js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def getDirectiveValues(directiveDef: graphqlLib.typeDirectivesMod.GraphQLDirective, node: graphqlLib.Anon_Directives): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def getDirectiveValues(
     directiveDef: graphqlLib.typeDirectivesMod.GraphQLDirective,
     node: graphqlLib.Anon_Directives,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
-  ): js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  ): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def getVariableValues(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     varDefNodes: js.Array[graphqlLib.languageAstMod.VariableDefinitionNode],

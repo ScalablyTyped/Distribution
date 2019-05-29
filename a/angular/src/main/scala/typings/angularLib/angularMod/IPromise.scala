@@ -14,7 +14,7 @@ trait IPromise[T] extends js.Object {
   def `catch`[TResult](
     onRejected: js.Function1[
       /* reason */ js.Any, 
-      IPromise[scala.Nothing] | IPromise[TResult] | TResult | js.Thenable[scala.Nothing] | js.Thenable[TResult]
+      (IPromise[scala.Nothing | TResult]) | TResult | (js.Thenable[scala.Nothing | TResult])
     ]
   ): IPromise[T | TResult] = js.native
   /**
@@ -40,34 +40,34 @@ trait IPromise[T] extends js.Object {
   def `then`[TResult1, TResult2](
     successCallback: js.Function1[
       /* value */ T, 
-      IPromise[scala.Nothing] | IPromise[TResult1] | TResult1 | js.Thenable[scala.Nothing] | js.Thenable[TResult1]
+      (IPromise[scala.Nothing | TResult1]) | TResult1 | (js.Thenable[scala.Nothing | TResult1])
     ]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     successCallback: js.Function1[
       /* value */ T, 
-      IPromise[scala.Nothing] | IPromise[TResult1] | TResult1 | js.Thenable[scala.Nothing] | js.Thenable[TResult1]
+      (IPromise[scala.Nothing | TResult1]) | TResult1 | (js.Thenable[scala.Nothing | TResult1])
     ],
     errorCallback: js.Function1[
       /* reason */ js.Any, 
-      IPromise[scala.Nothing] | IPromise[TResult2] | TResult2 | js.Thenable[scala.Nothing] | js.Thenable[TResult2]
+      (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
     ]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     successCallback: js.Function1[
       /* value */ T, 
-      IPromise[scala.Nothing] | IPromise[TResult1] | TResult1 | js.Thenable[scala.Nothing] | js.Thenable[TResult1]
+      (IPromise[scala.Nothing | TResult1]) | TResult1 | (js.Thenable[scala.Nothing | TResult1])
     ],
     errorCallback: js.Function1[
       /* reason */ js.Any, 
-      IPromise[scala.Nothing] | IPromise[TResult2] | TResult2 | js.Thenable[scala.Nothing] | js.Thenable[TResult2]
+      (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
     ],
     notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     successCallback: js.Function1[
       /* value */ T, 
-      IPromise[scala.Nothing] | IPromise[TResult1] | TResult1 | js.Thenable[scala.Nothing] | js.Thenable[TResult1]
+      (IPromise[scala.Nothing | TResult1]) | TResult1 | (js.Thenable[scala.Nothing | TResult1])
     ],
     errorCallback: scala.Null,
     notifyCallback: js.Function1[/* state */ js.Any, _]
@@ -76,14 +76,14 @@ trait IPromise[T] extends js.Object {
     successCallback: scala.Null,
     errorCallback: js.Function1[
       /* reason */ js.Any, 
-      IPromise[scala.Nothing] | IPromise[TResult2] | TResult2 | js.Thenable[scala.Nothing] | js.Thenable[TResult2]
+      (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
     ]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     successCallback: scala.Null,
     errorCallback: js.Function1[
       /* reason */ js.Any, 
-      IPromise[scala.Nothing] | IPromise[TResult2] | TResult2 | js.Thenable[scala.Nothing] | js.Thenable[TResult2]
+      (IPromise[scala.Nothing | TResult2]) | TResult2 | (js.Thenable[scala.Nothing | TResult2])
     ],
     notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult1 | TResult2] = js.native

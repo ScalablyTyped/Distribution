@@ -14,7 +14,7 @@ class Script () extends Property[ScriptDefinition] {
   def this(options: ScriptDefinition) = this()
   var exec: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.native
   var src: js.UndefOr[java.lang.String | Url] = js.native
-  var `type`: java.lang.String | js.UndefOr[java.lang.String] = js.native
+  var `type`: js.UndefOr[java.lang.String] = js.native
   def toSource(): js.UndefOr[java.lang.String] = js.native
   def update(options: java.lang.String): scala.Unit = js.native
   def update(options: js.Array[java.lang.String]): scala.Unit = js.native

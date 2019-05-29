@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Configuration of a columns header section */
-trait HeaderProps extends js.Object {
+trait HeaderProps[D] extends js.Object {
   /**
     * Default: undefined
     * A function that returns a primitive, or JSX / React Component
@@ -14,7 +14,7 @@ trait HeaderProps extends js.Object {
     * @example 'Header Name'
     * @example ({data, column}) => <div>Header Name</div>,
     */
-  var Header: reactDashTableLib.reactDashTableMod.TableCellRenderer
+  var Header: reactDashTableLib.reactDashTableMod.TableCellRenderer[D]
   /**
     * Default: (state, rowInfo, column, instance) => ({})
     * A function that returns props to decorate the `th` element of the column
@@ -34,15 +34,15 @@ trait HeaderProps extends js.Object {
 
 object HeaderProps {
   @scala.inline
-  def apply(
-    Header: reactDashTableLib.reactDashTableMod.TableCellRenderer,
+  def apply[D](
+    Header: reactDashTableLib.reactDashTableMod.TableCellRenderer[D],
     getHeaderProps: reactDashTableLib.reactDashTableMod.ReactTableFunction,
     headerClassName: java.lang.String,
     headerStyle: js.Object
-  ): HeaderProps = {
+  ): HeaderProps[D] = {
     val __obj = js.Dynamic.literal(Header = Header.asInstanceOf[js.Any], getHeaderProps = getHeaderProps, headerClassName = headerClassName, headerStyle = headerStyle)
   
-    __obj.asInstanceOf[HeaderProps]
+    __obj.asInstanceOf[HeaderProps[D]]
   }
 }
 

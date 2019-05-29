@@ -9,7 +9,7 @@ trait SymbolIcon extends js.Object {
   var anchor: js.UndefOr[Point | PointLiteral | Position] = js.undefined
   var fillColor: js.UndefOr[java.lang.String] = js.undefined
   var fillOpacity: js.UndefOr[scala.Double] = js.undefined
-  var path: SymbolPath | js.Array[Point] | js.Array[PointLiteral]
+  var path: SymbolPath | (js.Array[Point | PointLiteral])
   var radius: js.UndefOr[scala.Double] = js.undefined
   var strokeColor: js.UndefOr[java.lang.String] = js.undefined
   var strokeOpacity: js.UndefOr[scala.Double] = js.undefined
@@ -20,7 +20,7 @@ trait SymbolIcon extends js.Object {
 object SymbolIcon {
   @scala.inline
   def apply(
-    path: SymbolPath | js.Array[Point] | js.Array[PointLiteral],
+    path: SymbolPath | (js.Array[Point | PointLiteral]),
     anchor: Point | PointLiteral | Position = null,
     fillColor: java.lang.String = null,
     fillOpacity: scala.Int | scala.Double = null,

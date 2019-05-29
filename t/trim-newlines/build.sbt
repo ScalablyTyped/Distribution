@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "trim-newlines"
-version := "3.0.0-ff23cb"
+version := "3.0.0-99b094"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

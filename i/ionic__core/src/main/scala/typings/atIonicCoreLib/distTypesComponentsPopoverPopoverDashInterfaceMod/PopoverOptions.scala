@@ -9,23 +9,23 @@ trait PopoverOptions[T /* <: /* import warning: QualifyReferences.resolveTypeRef
   var animated: js.UndefOr[scala.Boolean] = js.undefined
   var backdropDismiss: js.UndefOr[scala.Boolean] = js.undefined
   var component: T
-  var componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.UndefOr[
+  var componentProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any
   ] = js.undefined
   var cssClass: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var delegate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.UndefOr[
+  var delegate: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any
   ] = js.undefined
-  var enterAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var enterAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   var event: js.UndefOr[stdLib.Event] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var keyboardClose: js.UndefOr[scala.Boolean] = js.undefined
-  var leaveAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var leaveAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
+  var mode: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
   ] = js.undefined
   var showBackdrop: js.UndefOr[scala.Boolean] = js.undefined

@@ -10,49 +10,35 @@ trait SpeedDialIconProps extends js.Object {
   var about: js.UndefOr[java.lang.String] = js.undefined
   var accessKey: js.UndefOr[java.lang.String] = js.undefined
   var `aria-activedescendant`: js.UndefOr[java.lang.String] = js.undefined
-  var `aria-atomic`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-atomic`: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-autocomplete`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.none | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`inline` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.list | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.both
   ] = js.undefined
-  var `aria-busy`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
-  var `aria-checked`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-busy`: js.UndefOr[scala.Boolean] = js.undefined
+  var `aria-checked`: js.UndefOr[scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed] = js.undefined
   var `aria-colcount`: js.UndefOr[scala.Double] = js.undefined
   var `aria-colindex`: js.UndefOr[scala.Double] = js.undefined
   var `aria-colspan`: js.UndefOr[scala.Double] = js.undefined
   var `aria-controls`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-current`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.page | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.step | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.location | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.date | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.time
+    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.page | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.step | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.location | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.date | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.time
   ] = js.undefined
   var `aria-describedby`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-details`: js.UndefOr[java.lang.String] = js.undefined
-  var `aria-disabled`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-disabled`: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-dropeffect`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.none | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.copy | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.execute | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.link | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.move | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.popup
   ] = js.undefined
   var `aria-errormessage`: js.UndefOr[java.lang.String] = js.undefined
-  var `aria-expanded`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-expanded`: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-flowto`: js.UndefOr[java.lang.String] = js.undefined
-  var `aria-grabbed`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-grabbed`: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-haspopup`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.menu | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.listbox | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.tree | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grid | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.dialog
+    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.menu | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.listbox | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.tree | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grid | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.dialog
   ] = js.undefined
-  var `aria-hidden`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-hidden`: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-invalid`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grammar | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.spelling
+    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grammar | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.spelling
   ] = js.undefined
   var `aria-keyshortcuts`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-label`: js.UndefOr[java.lang.String] = js.undefined
@@ -61,40 +47,26 @@ trait SpeedDialIconProps extends js.Object {
   var `aria-live`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.off | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.assertive | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.polite
   ] = js.undefined
-  var `aria-modal`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
-  var `aria-multiline`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
-  var `aria-multiselectable`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-modal`: js.UndefOr[scala.Boolean] = js.undefined
+  var `aria-multiline`: js.UndefOr[scala.Boolean] = js.undefined
+  var `aria-multiselectable`: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-orientation`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.horizontal | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.vertical
   ] = js.undefined
   var `aria-owns`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-placeholder`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-posinset`: js.UndefOr[scala.Double] = js.undefined
-  var `aria-pressed`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
-  var `aria-readonly`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-pressed`: js.UndefOr[scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed] = js.undefined
+  var `aria-readonly`: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-relevant`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.additions | (atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`additions text`) | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.all | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.removals | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.text
   ] = js.undefined
-  var `aria-required`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-required`: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-roledescription`: js.UndefOr[java.lang.String] = js.undefined
   var `aria-rowcount`: js.UndefOr[scala.Double] = js.undefined
   var `aria-rowindex`: js.UndefOr[scala.Double] = js.undefined
   var `aria-rowspan`: js.UndefOr[scala.Double] = js.undefined
-  var `aria-selected`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.undefined
+  var `aria-selected`: js.UndefOr[scala.Boolean] = js.undefined
   var `aria-setsize`: js.UndefOr[scala.Double] = js.undefined
   var `aria-sort`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.none | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.ascending | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.descending | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.other
@@ -320,47 +292,47 @@ object SpeedDialIconProps {
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     `aria-activedescendant`: java.lang.String = null,
-    `aria-atomic`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
+    `aria-atomic`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-autocomplete`: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.none | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`inline` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.list | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.both = null,
-    `aria-busy`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
-    `aria-checked`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
+    `aria-busy`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-checked`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed = null,
     `aria-colcount`: scala.Int | scala.Double = null,
     `aria-colindex`: scala.Int | scala.Double = null,
     `aria-colspan`: scala.Int | scala.Double = null,
     `aria-controls`: java.lang.String = null,
-    `aria-current`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.page | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.step | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.location | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.date | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.time = null,
+    `aria-current`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.page | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.step | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.location | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.date | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.time = null,
     `aria-describedby`: java.lang.String = null,
     `aria-details`: java.lang.String = null,
-    `aria-disabled`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
+    `aria-disabled`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-dropeffect`: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.none | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.copy | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.execute | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.link | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.move | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.popup = null,
     `aria-errormessage`: java.lang.String = null,
-    `aria-expanded`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
+    `aria-expanded`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-flowto`: java.lang.String = null,
-    `aria-grabbed`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
-    `aria-haspopup`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.menu | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.listbox | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.tree | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grid | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.dialog = null,
-    `aria-hidden`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
-    `aria-invalid`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grammar | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.spelling = null,
+    `aria-grabbed`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-haspopup`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.menu | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.listbox | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.tree | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grid | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.dialog = null,
+    `aria-hidden`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-invalid`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grammar | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.spelling = null,
     `aria-keyshortcuts`: java.lang.String = null,
     `aria-label`: java.lang.String = null,
     `aria-labelledby`: java.lang.String = null,
     `aria-level`: scala.Int | scala.Double = null,
     `aria-live`: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.off | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.assertive | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.polite = null,
-    `aria-modal`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
-    `aria-multiline`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
-    `aria-multiselectable`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
+    `aria-modal`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-multiline`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-multiselectable`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-orientation`: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.horizontal | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.vertical = null,
     `aria-owns`: java.lang.String = null,
     `aria-placeholder`: java.lang.String = null,
     `aria-posinset`: scala.Int | scala.Double = null,
-    `aria-pressed`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
-    `aria-readonly`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
+    `aria-pressed`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed = null,
+    `aria-readonly`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-relevant`: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.additions | (atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`additions text`) | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.all | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.removals | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.text = null,
-    `aria-required`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
+    `aria-required`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-roledescription`: java.lang.String = null,
     `aria-rowcount`: scala.Int | scala.Double = null,
     `aria-rowindex`: scala.Int | scala.Double = null,
     `aria-rowspan`: scala.Int | scala.Double = null,
-    `aria-selected`: scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` = null,
+    `aria-selected`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-setsize`: scala.Int | scala.Double = null,
     `aria-sort`: atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.none | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.ascending | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.descending | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.other = null,
     `aria-valuemax`: scala.Int | scala.Double = null,
@@ -498,9 +470,9 @@ object SpeedDialIconProps {
     if (about != null) __obj.updateDynamic("about")(about)
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
-    if (`aria-atomic` != null) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`)
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (`aria-busy` != null) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`)
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
     if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
     if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
@@ -509,36 +481,36 @@ object SpeedDialIconProps {
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`)
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`)
-    if (`aria-disabled` != null) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`)
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`)
-    if (`aria-expanded` != null) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`)
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`)
-    if (`aria-grabbed` != null) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`)
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (`aria-hidden` != null) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`)
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`)
     if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (`aria-modal` != null) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (`aria-multiline` != null) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (`aria-multiselectable` != null) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`)
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`)
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`)
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`)
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`)
     if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (`aria-readonly` != null) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`)
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (`aria-required` != null) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`)
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`)
     if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
     if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
     if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (`aria-selected` != null) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`)
     if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
     if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])

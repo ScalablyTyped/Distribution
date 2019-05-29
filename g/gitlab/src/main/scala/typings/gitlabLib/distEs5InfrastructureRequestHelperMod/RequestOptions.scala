@@ -16,7 +16,7 @@ trait RequestOptions extends js.Object {
   var code: js.UndefOr[java.lang.String] = js.undefined
   var commitMessage: js.UndefOr[java.lang.String] = js.undefined
   var content: js.UndefOr[java.lang.String] = js.undefined
-  var cron: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.UndefOr[
+  var cron: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.Any
   ] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
@@ -31,7 +31,7 @@ trait RequestOptions extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var imageUrl: js.UndefOr[java.lang.String] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
-  var labelId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.UndefOr[
+  var labelId: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.Any
   ] = js.undefined
   var linkUrl: js.UndefOr[java.lang.String] = js.undefined
@@ -40,14 +40,14 @@ trait RequestOptions extends js.Object {
   var note: js.UndefOr[java.lang.String] = js.undefined
   var password: js.UndefOr[java.lang.String] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
-  var position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.UndefOr[
+  var position: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.Any
   ] = js.undefined
   var public: js.UndefOr[scala.Boolean] = js.undefined
   var ref: js.UndefOr[java.lang.String] = js.undefined
   var runnerId: js.UndefOr[java.lang.String] = js.undefined
   var scope: js.UndefOr[java.lang.String] = js.undefined
-  var scopes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.UndefOr[
+  var scopes: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.Any
   ] = js.undefined
   var search: js.UndefOr[java.lang.String] = js.undefined
@@ -62,7 +62,7 @@ trait RequestOptions extends js.Object {
   var to: js.UndefOr[java.lang.String] = js.undefined
   var token: js.UndefOr[java.lang.String] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
-  var userId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.UndefOr[
+  var userId: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify UserId */ js.Any
   ] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined

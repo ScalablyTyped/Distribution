@@ -70,7 +70,7 @@ trait Options extends js.Object {
     *
     * Defaults to `window.location.reload()`
     */
-  var onRefresh: js.UndefOr[js.Function0[js.Thenable[scala.Unit]] | js.Function0[scala.Unit]] = js.undefined
+  var onRefresh: js.UndefOr[js.Function0[js.Thenable[scala.Unit] | scala.Unit]] = js.undefined
   /**
     * This value will be passed as `{ passive: true|false }` to `touchmove`
     * listeners if passive-handlers are supported.
@@ -122,7 +122,7 @@ object Options {
     instructionsReleaseToRefresh: java.lang.String = null,
     mainElement: java.lang.String = null,
     onInit: () => scala.Unit = null,
-    onRefresh: js.Function0[js.Thenable[scala.Unit]] | js.Function0[scala.Unit] = null,
+    onRefresh: () => js.Thenable[scala.Unit] | scala.Unit = null,
     passive: js.UndefOr[scala.Boolean] = js.undefined,
     ptrElement: java.lang.String = null,
     refreshTimeout: scala.Int | scala.Double = null,
@@ -143,7 +143,7 @@ object Options {
     if (instructionsReleaseToRefresh != null) __obj.updateDynamic("instructionsReleaseToRefresh")(instructionsReleaseToRefresh)
     if (mainElement != null) __obj.updateDynamic("mainElement")(mainElement)
     if (onInit != null) __obj.updateDynamic("onInit")(js.Any.fromFunction0(onInit))
-    if (onRefresh != null) __obj.updateDynamic("onRefresh")(onRefresh.asInstanceOf[js.Any])
+    if (onRefresh != null) __obj.updateDynamic("onRefresh")(js.Any.fromFunction0(onRefresh))
     if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive)
     if (ptrElement != null) __obj.updateDynamic("ptrElement")(ptrElement)
     if (refreshTimeout != null) __obj.updateDynamic("refreshTimeout")(refreshTimeout.asInstanceOf[js.Any])

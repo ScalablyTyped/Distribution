@@ -9,7 +9,7 @@ trait TextStyleBuilder extends js.Object {
   def build(): TextStyle
   def setColor(cssValue: java.lang.String): TextStyleBuilder
   def setFontName(fontName: java.lang.String): TextStyleBuilder
-  def setFontSize(fontSize: stdLib.Number): TextStyleBuilder
+  def setFontSize(fontSize: scala.Double): TextStyleBuilder
 }
 
 object TextStyleBuilder {
@@ -18,7 +18,7 @@ object TextStyleBuilder {
     build: () => TextStyle,
     setColor: java.lang.String => TextStyleBuilder,
     setFontName: java.lang.String => TextStyleBuilder,
-    setFontSize: stdLib.Number => TextStyleBuilder
+    setFontSize: scala.Double => TextStyleBuilder
   ): TextStyleBuilder = {
     val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), setColor = js.Any.fromFunction1(setColor), setFontName = js.Any.fromFunction1(setFontName), setFontSize = js.Any.fromFunction1(setFontSize))
   

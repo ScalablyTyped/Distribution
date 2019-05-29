@@ -54,7 +54,7 @@ object PaginationPanelProps {
     sizePerPageList: SizePerPageList,
     toggleDropDown: () => scala.Unit
   ): PaginationPanelProps = {
-    val __obj = js.Dynamic.literal(changePage = js.Any.fromFunction1(changePage), changeSizePerPage = js.Any.fromFunction1(changeSizePerPage), components = components, currPage = currPage, pageStartIndex = pageStartIndex, sizePerPage = sizePerPage, sizePerPageList = sizePerPageList.asInstanceOf[js.Any], toggleDropDown = js.Any.fromFunction0(toggleDropDown))
+    val __obj = js.Dynamic.literal(changePage = js.Any.fromFunction1(changePage), changeSizePerPage = js.Any.fromFunction1(changeSizePerPage), components = components, currPage = currPage, pageStartIndex = pageStartIndex, sizePerPage = sizePerPage, sizePerPageList = sizePerPageList, toggleDropDown = js.Any.fromFunction0(toggleDropDown))
   
     __obj.asInstanceOf[PaginationPanelProps]
   }

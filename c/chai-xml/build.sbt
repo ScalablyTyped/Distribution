@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chai-xml"
-version := "0.3-dt-20180214Z-c84ad5"
+version := "0.3-dt-20180214Z-ce237f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

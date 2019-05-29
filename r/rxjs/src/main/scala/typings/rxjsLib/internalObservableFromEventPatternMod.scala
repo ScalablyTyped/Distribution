@@ -13,7 +13,7 @@ object internalObservableFromEventPatternMod extends js.Object {
     addHandler: js.Function1[/* handler */ rxjsLib.internalObservableFromEventMod.NodeEventHandler, _],
     removeHandler: js.Function2[
       /* handler */ rxjsLib.internalObservableFromEventMod.NodeEventHandler, 
-      /* signal */ js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
       scala.Unit
     ]
   ): rxjsLib.internalObservableMod.Observable[T] = js.native

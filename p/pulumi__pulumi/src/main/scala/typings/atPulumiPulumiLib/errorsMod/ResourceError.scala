@@ -11,8 +11,8 @@ class ResourceError protected ()
   extends stdLib.Error {
   def this(message: java.lang.String) = this()
   def this(message: java.lang.String, resource: atPulumiPulumiLib.resourceMod.Resource) = this()
-  def this(message: java.lang.String, resource: atPulumiPulumiLib.resourceMod.Resource, hideStack: scala.Boolean) = this()
   def this(message: java.lang.String, resource: js.UndefOr[scala.Nothing], hideStack: scala.Boolean) = this()
+  def this(message: java.lang.String, resource: atPulumiPulumiLib.resourceMod.Resource, hideStack: scala.Boolean) = this()
   var hideStack: js.UndefOr[scala.Boolean] = js.native
   /* CompleteClass */
   override var message: java.lang.String = js.native

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "cacheable-request"
-version := "6.0-dt-20190326Z-b22dd2"
+version := "6.0-dt-20190326Z-8e400f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "http-cache-semantics" % "4.0-dt-20190127Z-495c82",
-  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-57bbc4",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
-  "org.scalablytyped" %%% "responselike" % "1.0-dt-20190127Z-56ca1e",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "http-cache-semantics" % "4.0-dt-20190127Z-e07482",
+  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-56e3d6",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-17198b",
+  "org.scalablytyped" %%% "responselike" % "1.0-dt-20190127Z-f108d1",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

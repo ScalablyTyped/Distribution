@@ -23,6 +23,11 @@ class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
     */
   var autoValidationEnabled: scala.Boolean = js.native
   /**
+    * The first error from any sub (if any) or form error
+    */
+  @JSName("error")
+  val error_FormState: js.UndefOr[java.lang.String | scala.Null] = js.native
+  /**
     * Error from some sub field if any
     */
   val fieldError: js.UndefOr[java.lang.String | scala.Null] = js.native

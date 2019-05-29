@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Typeofshani extends js.Object {
   var Engine: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ adoneLib.adoneNs.shaniNs.INs.EngineOptions], 
+    js.UndefOr[/* options */ adoneLib.adoneNs.shaniNs.INs.EngineOptions], 
     adoneLib.adoneNs.shaniNs.Engine
   ]
   val INs: TypeofIBlock
@@ -18,7 +18,7 @@ object Typeofshani {
   @scala.inline
   def apply(
     Engine: org.scalablytyped.runtime.Instantiable1[
-      /* options */ js.UndefOr[/* options */ adoneLib.adoneNs.shaniNs.INs.EngineOptions], 
+      js.UndefOr[/* options */ adoneLib.adoneNs.shaniNs.INs.EngineOptions], 
       adoneLib.adoneNs.shaniNs.Engine
     ],
     INs: TypeofIBlock,

@@ -144,7 +144,7 @@ object _Impl {
     variation: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibNumbers.`false` | java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], closable = closable.asInstanceOf[js.Any], debug = debug, dimmerName = dimmerName.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error, name = name, namespace = namespace, on = on.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onHide = js.Any.fromFunction1(onHide), onShow = js.Any.fromFunction1(onShow), opacity = opacity.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, template = template, transition = transition, useCSS = useCSS, variation = variation.asInstanceOf[js.Any], verbose = verbose)
+    val __obj = js.Dynamic.literal(className = className, closable = closable.asInstanceOf[js.Any], debug = debug, dimmerName = dimmerName.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error, name = name, namespace = namespace, on = on.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onHide = js.Any.fromFunction1(onHide), onShow = js.Any.fromFunction1(onShow), opacity = opacity.asInstanceOf[js.Any], performance = performance, selector = selector, silent = silent, template = template, transition = transition, useCSS = useCSS, variation = variation.asInstanceOf[js.Any], verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

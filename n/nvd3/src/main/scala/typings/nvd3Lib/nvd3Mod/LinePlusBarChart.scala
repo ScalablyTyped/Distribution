@@ -60,7 +60,10 @@ trait LinePlusBarChart extends Chart {
     ],
     args: js.Any*
   ): js.Any = js.native
-  def brushExtent(): (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]]) = js.native
+  def brushExtent(): js.Tuple2[
+    scala.Double | (js.Tuple2[scala.Double, scala.Double]), 
+    scala.Double | (js.Tuple2[scala.Double, scala.Double])
+  ] = js.native
   def brushExtent(
     value: js.Tuple2[
       scala.Double | (js.Tuple2[scala.Double, scala.Double]), 

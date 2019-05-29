@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** A directions query to be sent to the DirectionsService. */
 trait DirectionsRequest extends js.Object {
   /**
     * If true, instructs the Directions service to avoid ferries where

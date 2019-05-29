@@ -116,7 +116,7 @@ trait VictoryTooltipProps extends js.Object {
     * The text prop defines the text VictoryTooltip will render. The text prop may be given as a string, number, or function of datum.
     * When VictoryLabel is used as the labelComponent, strings may include newline characters, which VictoryLabel will split in to separate <tspan/> elements.
     */
-  var text: js.UndefOr[StringOrNumberOrCallback | js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
+  var text: js.UndefOr[StringOrNumberOrCallback | (js.Array[scala.Double | java.lang.String])] = js.undefined
   /**
     * VictoryAxis uses the standard theme prop. Read about it here
     * @default VictoryTheme.grayscale
@@ -161,7 +161,7 @@ object VictoryTooltipProps {
     pointerWidth: NumberOrCallback = null,
     renderInPortal: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,
-    text: StringOrNumberOrCallback | js.Array[java.lang.String] | js.Array[scala.Double] = null,
+    text: StringOrNumberOrCallback | (js.Array[scala.Double | java.lang.String]) = null,
     theme: VictoryThemeDefinition = null,
     width: NumberOrCallback = null,
     x: scala.Int | scala.Double = null,

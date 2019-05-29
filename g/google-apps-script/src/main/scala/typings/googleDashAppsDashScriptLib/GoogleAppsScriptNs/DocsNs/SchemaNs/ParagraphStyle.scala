@@ -20,7 +20,7 @@ trait ParagraphStyle extends js.Object {
   var indentStart: js.UndefOr[Dimension] = js.undefined
   var keepLinesTogether: js.UndefOr[scala.Boolean] = js.undefined
   var keepWithNext: js.UndefOr[scala.Boolean] = js.undefined
-  var lineSpacing: js.UndefOr[stdLib.Number] = js.undefined
+  var lineSpacing: js.UndefOr[scala.Double] = js.undefined
   var namedStyleType: js.UndefOr[java.lang.String] = js.undefined
   var shading: js.UndefOr[Shading] = js.undefined
   var spaceAbove: js.UndefOr[Dimension] = js.undefined
@@ -46,7 +46,7 @@ object ParagraphStyle {
     indentStart: Dimension = null,
     keepLinesTogether: js.UndefOr[scala.Boolean] = js.undefined,
     keepWithNext: js.UndefOr[scala.Boolean] = js.undefined,
-    lineSpacing: stdLib.Number = null,
+    lineSpacing: scala.Int | scala.Double = null,
     namedStyleType: java.lang.String = null,
     shading: Shading = null,
     spaceAbove: Dimension = null,
@@ -69,7 +69,7 @@ object ParagraphStyle {
     if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart)
     if (!js.isUndefined(keepLinesTogether)) __obj.updateDynamic("keepLinesTogether")(keepLinesTogether)
     if (!js.isUndefined(keepWithNext)) __obj.updateDynamic("keepWithNext")(keepWithNext)
-    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing)
+    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
     if (namedStyleType != null) __obj.updateDynamic("namedStyleType")(namedStyleType)
     if (shading != null) __obj.updateDynamic("shading")(shading)
     if (spaceAbove != null) __obj.updateDynamic("spaceAbove")(spaceAbove)

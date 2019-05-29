@@ -10,6 +10,6 @@ package object CanvasGaugesNs {
   type DrawEventCallback = js.Function1[/* percent */ scala.Double, js.Any]
   type EndEventCallback = js.Function0[js.Any]
   type EventListeners = org.scalablytyped.runtime.StringDictionary[js.Function | js.Array[js.Function]]
-  type MajorTicks = js.Array[java.lang.String] | js.Array[scala.Double]
+  type MajorTicks = js.Array[scala.Double | java.lang.String]
   type RenderTarget = java.lang.String | stdLib.HTMLElement
 }

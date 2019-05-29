@@ -59,7 +59,7 @@ class FBResult () extends js.Object {
     * @param rowCount number of rows to fetch from results;
     * @param asObject format of returned rows. When false - methods returns array of array, when true - array of objects.
     */
-  def fetchSync(rowCount: scala.Double, asObject: scala.Boolean): js.Array[js.Array[DataType]] | js.Array[org.scalablytyped.runtime.StringDictionary[DataType]] = js.native
+  def fetchSync(rowCount: scala.Double, asObject: scala.Boolean): js.Array[js.Array[DataType] | org.scalablytyped.runtime.StringDictionary[DataType]] = js.native
   @JSName("fetchSync")
   def fetchSync_TObject[T /* <: js.Object */](rowCount: scala.Double, asObject: firebirdLib.firebirdLibNumbers.`true`): js.Array[T] = js.native
   @JSName("fetchSync")
@@ -67,7 +67,7 @@ class FBResult () extends js.Object {
   @JSName("fetchSync")
   def fetchSync_all(rowCount: firebirdLib.firebirdLibStrings.all, asObject: firebirdLib.firebirdLibNumbers.`true`): js.Array[org.scalablytyped.runtime.StringDictionary[DataType]] = js.native
   @JSName("fetchSync")
-  def fetchSync_all(rowCount: firebirdLib.firebirdLibStrings.all, asObject: scala.Boolean): js.Array[js.Array[DataType]] | js.Array[org.scalablytyped.runtime.StringDictionary[DataType]] = js.native
+  def fetchSync_all(rowCount: firebirdLib.firebirdLibStrings.all, asObject: scala.Boolean): js.Array[js.Array[DataType] | org.scalablytyped.runtime.StringDictionary[DataType]] = js.native
   @JSName("fetchSync")
   def fetchSync_all_TObject[T /* <: js.Object */](rowCount: firebirdLib.firebirdLibStrings.all, asObject: firebirdLib.firebirdLibNumbers.`true`): js.Array[T] = js.native
   @JSName("fetch")

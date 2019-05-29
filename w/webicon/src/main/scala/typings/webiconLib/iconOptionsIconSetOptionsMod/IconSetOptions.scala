@@ -15,19 +15,19 @@ import scala.scalajs.js.annotation._
   /**
     * An alias of the `iconSize`-property.
     */
-  var size: /* import warning: ImportType.apply Failed type conversion: this['iconSize'] */ js.UndefOr[
+  var size: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['iconSize'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `iconSize`-property.
     */
-  var svgIconSize: /* import warning: ImportType.apply Failed type conversion: this['iconSize'] */ js.UndefOr[
+  var svgIconSize: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['iconSize'] */ js.Any
   ] = js.undefined
   /**
     * An alias of the `url`-property.
     */
-  var uri: /* import warning: ImportType.apply Failed type conversion: this['url'] */ js.UndefOr[
+  var uri: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['url'] */ js.Any
   ] = js.undefined
   /**

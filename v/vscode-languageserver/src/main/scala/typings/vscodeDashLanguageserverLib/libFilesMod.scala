@@ -10,17 +10,7 @@ import scala.scalajs.js.annotation._
 object libFilesMod extends js.Object {
   def resolve(
     moduleName: java.lang.String,
-    nodePath: java.lang.String,
-    cwd: java.lang.String,
-    tracer: js.Function2[
-      /* message */ java.lang.String, 
-      /* verbose */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ]
-  ): vscodeDashLanguageserverLib.Thenable[java.lang.String] = js.native
-  def resolve(
-    moduleName: java.lang.String,
-    nodePath: java.lang.String,
+    nodePath: js.UndefOr[scala.Nothing],
     cwd: js.UndefOr[scala.Nothing],
     tracer: js.Function2[
       /* message */ java.lang.String, 
@@ -40,8 +30,18 @@ object libFilesMod extends js.Object {
   ): vscodeDashLanguageserverLib.Thenable[java.lang.String] = js.native
   def resolve(
     moduleName: java.lang.String,
-    nodePath: js.UndefOr[scala.Nothing],
+    nodePath: java.lang.String,
     cwd: js.UndefOr[scala.Nothing],
+    tracer: js.Function2[
+      /* message */ java.lang.String, 
+      /* verbose */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ]
+  ): vscodeDashLanguageserverLib.Thenable[java.lang.String] = js.native
+  def resolve(
+    moduleName: java.lang.String,
+    nodePath: java.lang.String,
+    cwd: java.lang.String,
     tracer: js.Function2[
       /* message */ java.lang.String, 
       /* verbose */ js.UndefOr[java.lang.String], 

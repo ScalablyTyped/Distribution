@@ -20,7 +20,7 @@ trait NewmanRunOptions extends js.Object {
     * Default value: false
     */
   var bail: js.UndefOr[
-    scala.Boolean | js.Array[newmanLib.newmanLibStrings.folder] | js.Array[newmanLib.newmanLibStrings.failure]
+    scala.Boolean | (js.Array[newmanLib.newmanLibStrings.folder | newmanLib.newmanLibStrings.failure])
   ] = js.undefined
   /** A JSON / Collection / String representing the collection. */
   var collection: postmanDashCollectionLib.postmanDashCollectionMod.Collection | postmanDashCollectionLib.postmanDashCollectionMod.CollectionDefinition | java.lang.String
@@ -131,7 +131,7 @@ object NewmanRunOptions {
   @scala.inline
   def apply(
     collection: postmanDashCollectionLib.postmanDashCollectionMod.Collection | postmanDashCollectionLib.postmanDashCollectionMod.CollectionDefinition | java.lang.String,
-    bail: scala.Boolean | js.Array[newmanLib.newmanLibStrings.folder] | js.Array[newmanLib.newmanLibStrings.failure] = null,
+    bail: scala.Boolean | (js.Array[newmanLib.newmanLibStrings.folder | newmanLib.newmanLibStrings.failure]) = null,
     color: js.UndefOr[scala.Boolean] = js.undefined,
     delayRequest: scala.Int | scala.Double = null,
     environment: postmanDashCollectionLib.postmanDashCollectionMod.VariableScope | postmanDashCollectionLib.postmanDashCollectionMod.VariableScopeDefinition | java.lang.String = null,

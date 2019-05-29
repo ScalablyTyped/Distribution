@@ -53,7 +53,7 @@ object ecNs extends js.Object {
   
   trait SignOptions extends js.Object {
     var canonical: js.UndefOr[scala.Boolean] = js.undefined
-    var k: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.UndefOr[
+    var k: js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.undefined
     var pers: js.UndefOr[js.Any] = js.undefined

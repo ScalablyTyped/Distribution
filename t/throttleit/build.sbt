@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "throttleit"
-version := "1.0-dt-20190416Z-dd86ee"
+version := "1.0-dt-20190416Z-62ac6d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

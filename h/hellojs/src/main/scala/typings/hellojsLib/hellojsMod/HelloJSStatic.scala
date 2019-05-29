@@ -12,6 +12,14 @@ trait HelloJSStatic extends HelloJSEvent {
   def apply(network: java.lang.String): HelloJSStatic = js.native
   def api(): js.Thenable[_] = js.native
   def api(options: js.Object): js.Thenable[_] = js.native
+  def api(
+    path: js.UndefOr[java.lang.String],
+    query: js.UndefOr[js.Object],
+    method: js.UndefOr[java.lang.String],
+    data: js.UndefOr[js.Object],
+    timeout: js.UndefOr[scala.Double],
+    callback: js.UndefOr[js.Function1[/* json */ js.Any, scala.Unit]]
+  ): js.Thenable[_] = js.native
   def api(path: java.lang.String): js.Thenable[_] = js.native
   def api(path: java.lang.String, method: java.lang.String): js.Thenable[_] = js.native
   def api(path: java.lang.String, method: java.lang.String, data: js.Object): js.Thenable[_] = js.native
@@ -20,14 +28,6 @@ trait HelloJSStatic extends HelloJSEvent {
     method: java.lang.String,
     data: js.Object,
     callback: js.Function1[/* json */ js.Any, scala.Unit]
-  ): js.Thenable[_] = js.native
-  def api(
-    path: js.UndefOr[java.lang.String],
-    query: js.UndefOr[js.Object],
-    method: js.UndefOr[java.lang.String],
-    data: js.UndefOr[js.Object],
-    timeout: js.UndefOr[scala.Double],
-    callback: js.UndefOr[js.Function1[/* json */ js.Any, scala.Unit]]
   ): js.Thenable[_] = js.native
   def getAuthResponse(): HelloJSAuthResponse = js.native
   def getAuthResponse(network: java.lang.String): HelloJSAuthResponse = js.native

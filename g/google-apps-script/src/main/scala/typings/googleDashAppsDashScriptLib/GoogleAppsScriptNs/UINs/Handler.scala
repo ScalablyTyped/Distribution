@@ -32,11 +32,11 @@ trait Handler extends js.Object {
   def validateNotMatches(widget: Widget, pattern: java.lang.String, flags: java.lang.String): Handler = js.native
   def validateNotNumber(widget: Widget): Handler = js.native
   def validateNotOptions(widget: Widget, options: js.Array[java.lang.String]): Handler = js.native
-  def validateNotRange(widget: Widget, min: stdLib.Number, max: stdLib.Number): Handler = js.native
+  def validateNotRange(widget: Widget, min: scala.Double, max: scala.Double): Handler = js.native
   def validateNotSum(widgets: js.Array[Widget], sum: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Handler = js.native
   def validateNumber(widget: Widget): Handler = js.native
   def validateOptions(widget: Widget, options: js.Array[java.lang.String]): Handler = js.native
-  def validateRange(widget: Widget, min: stdLib.Number, max: stdLib.Number): Handler = js.native
+  def validateRange(widget: Widget, min: scala.Double, max: scala.Double): Handler = js.native
   def validateSum(widgets: js.Array[Widget], sum: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Handler = js.native
 }
 

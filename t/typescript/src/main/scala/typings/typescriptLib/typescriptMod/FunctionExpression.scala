@@ -14,7 +14,7 @@ trait FunctionExpression
      with _HasJSDoc {
   var _functionLikeDeclarationBrand: js.Any = js.native
   var asteriskToken: js.UndefOr[AsteriskToken] = js.native
-  var body: FunctionBody | (js.UndefOr[Block | Expression]) = js.native
+  var body: js.UndefOr[Block | Expression | FunctionBody] = js.native
   var exclamationToken: js.UndefOr[ExclamationToken] = js.native
   var name: js.UndefOr[Identifier] = js.native
   var questionToken: js.UndefOr[QuestionToken] = js.native

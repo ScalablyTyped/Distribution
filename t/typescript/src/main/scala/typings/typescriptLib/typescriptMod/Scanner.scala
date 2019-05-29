@@ -36,11 +36,11 @@ trait Scanner extends js.Object {
   def setOnError(onError: ErrorCallback): scala.Unit = js.native
   def setScriptTarget(scriptTarget: ScriptTarget): scala.Unit = js.native
   def setText(): scala.Unit = js.native
+  def setText(text: js.UndefOr[scala.Nothing], start: scala.Double): scala.Unit = js.native
+  def setText(text: js.UndefOr[scala.Nothing], start: scala.Double, length: scala.Double): scala.Unit = js.native
   def setText(text: java.lang.String): scala.Unit = js.native
   def setText(text: java.lang.String, start: scala.Double): scala.Unit = js.native
   def setText(text: java.lang.String, start: scala.Double, length: scala.Double): scala.Unit = js.native
-  def setText(text: js.UndefOr[scala.Nothing], start: scala.Double): scala.Unit = js.native
-  def setText(text: js.UndefOr[scala.Nothing], start: scala.Double, length: scala.Double): scala.Unit = js.native
   def setTextPos(textPos: scala.Double): scala.Unit = js.native
   def tryScan[T](callback: js.Function0[T]): T = js.native
 }

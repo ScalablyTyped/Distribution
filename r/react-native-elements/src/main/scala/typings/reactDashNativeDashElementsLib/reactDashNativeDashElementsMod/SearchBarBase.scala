@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation._
   /**
     * Optional props to pass to the ActivityIndicator
     */
-  var loadingProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.UndefOr[
+  var loadingProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any
   ] = js.undefined
   /**

@@ -165,7 +165,7 @@ object libStylesMod extends js.Object {
     theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme,
     inset: js.UndefOr[scala.Double],
     position: js.UndefOr[atUifabricStylingLib.atUifabricStylingLibStrings.absolute],
-    highContrastStyle: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle | js.UndefOr[scala.Nothing]],
+    highContrastStyle: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle],
     borderColor: js.UndefOr[java.lang.String],
     outlineColor: js.UndefOr[java.lang.String],
     isFocusedOnly: js.UndefOr[scala.Boolean]
@@ -175,7 +175,7 @@ object libStylesMod extends js.Object {
     theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme,
     inset: js.UndefOr[scala.Double],
     position: js.UndefOr[atUifabricStylingLib.atUifabricStylingLibStrings.relative],
-    highContrastStyle: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle | js.UndefOr[scala.Nothing]],
+    highContrastStyle: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle],
     borderColor: js.UndefOr[java.lang.String],
     outlineColor: js.UndefOr[java.lang.String],
     isFocusedOnly: js.UndefOr[scala.Boolean]

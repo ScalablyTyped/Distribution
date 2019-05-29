@@ -256,6 +256,8 @@ class QuestionPanelDynamicModel protected ()
   /* CompleteClass */
   override def getPanelItemData(item: ISurveyData): js.Any = js.native
   /* CompleteClass */
+  override def getSharedQuestionFromArray(name: java.lang.String, panelIndex: scala.Double): Question = js.native
+  /* CompleteClass */
   override def getSurvey(): ISurvey = js.native
   /**
     * Returns the type of the object as a string as it represents in the json. It should be in lowcase.

@@ -11,7 +11,7 @@ trait Anon_ReqRequestRes extends js.Object {
     */
   var request: js.UndefOr[
     js.Function3[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ /* span */ js.UndefOr[
+      /* span */ js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ js.Any
       ], 
       /* req */ js.UndefOr[nodeLib.httpMod.IncomingMessage | nodeLib.httpMod.ClientRequest], 
@@ -24,7 +24,7 @@ trait Anon_ReqRequestRes extends js.Object {
 object Anon_ReqRequestRes {
   @scala.inline
   def apply(
-    request: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ /* span */ js.UndefOr[
+    request: (/* span */ js.UndefOr[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ js.Any
     ], /* req */ js.UndefOr[nodeLib.httpMod.IncomingMessage | nodeLib.httpMod.ClientRequest], /* res */ js.UndefOr[nodeLib.httpMod.ServerResponse | nodeLib.httpMod.IncomingMessage]) => _ = null
   ): Anon_ReqRequestRes = {

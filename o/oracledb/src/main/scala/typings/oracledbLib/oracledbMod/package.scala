@@ -11,5 +11,5 @@ package object oracledbMod {
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#executebindParams
     */
-  type BindParametersObject = org.scalablytyped.runtime.StringDictionary[BindParameter | java.lang.String | scala.Double | scala.Null]
+  type BindParameters = (stdLib.Record[java.lang.String, BindParameter | java.lang.String | scala.Double | scala.Null]) | (js.Array[js.Any | BindParameter])
 }

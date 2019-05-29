@@ -11,7 +11,7 @@ trait FastFieldConfig[T] extends js.Object {
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ComponentType[FastFieldProps[_]] | reactLib.reactMod.ComponentType[scala.Unit]
+    java.lang.String | (reactLib.reactMod.ComponentType[FastFieldProps[_] | scala.Unit])
   ] = js.undefined
   var innerRef: js.UndefOr[js.Function1[/* instance */ js.Any, scala.Unit]] = js.undefined
   var name: java.lang.String
@@ -36,7 +36,7 @@ object FastFieldConfig {
     name: java.lang.String,
     children: (js.Function1[/* props */ FastFieldProps[_], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
-    component: java.lang.String | reactLib.reactMod.ComponentType[FastFieldProps[_]] | reactLib.reactMod.ComponentType[scala.Unit] = null,
+    component: java.lang.String | (reactLib.reactMod.ComponentType[FastFieldProps[_] | scala.Unit]) = null,
     innerRef: /* instance */ js.Any => scala.Unit = null,
     render: /* props */ FastFieldProps[_] => reactLib.reactMod.ReactNode = null,
     shouldUpdate: (/* nextProps */ T with formikLib.distTypesMod.GenericFieldHTMLAttributes with formikLib.Anon_Formik, /* props */ js.Object) => scala.Boolean = null,

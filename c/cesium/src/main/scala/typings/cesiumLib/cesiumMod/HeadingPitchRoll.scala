@@ -17,10 +17,10 @@ class HeadingPitchRoll () extends js.Object {
   def clone(result: HeadingPitchRoll): HeadingPitchRoll = js.native
   def equals(): scala.Boolean = js.native
   def equals(right: HeadingPitchRoll): scala.Boolean = js.native
-  def equalsEpsilon(right: HeadingPitchRoll, relativeEpsilon: scala.Double): scala.Boolean = js.native
-  def equalsEpsilon(right: HeadingPitchRoll, relativeEpsilon: scala.Double, absoluteEpsilon: scala.Double): scala.Boolean = js.native
   def equalsEpsilon(right: js.UndefOr[scala.Nothing], relativeEpsilon: scala.Double): scala.Boolean = js.native
   def equalsEpsilon(right: js.UndefOr[scala.Nothing], relativeEpsilon: scala.Double, absoluteEpsilon: scala.Double): scala.Boolean = js.native
+  def equalsEpsilon(right: HeadingPitchRoll, relativeEpsilon: scala.Double): scala.Boolean = js.native
+  def equalsEpsilon(right: HeadingPitchRoll, relativeEpsilon: scala.Double, absoluteEpsilon: scala.Double): scala.Boolean = js.native
   def equalsEpsilon(right: scala.Null, relativeEpsilon: scala.Double): scala.Boolean = js.native
   def equalsEpsilon(right: scala.Null, relativeEpsilon: scala.Double, absoluteEpsilon: scala.Double): scala.Boolean = js.native
 }
@@ -35,54 +35,25 @@ object HeadingPitchRoll extends js.Object {
     result: cesiumLib.cesiumMod.HeadingPitchRoll
   ): cesiumLib.cesiumMod.HeadingPitchRoll = js.native
   def equals(): scala.Boolean = js.native
+  def equals(left: js.UndefOr[scala.Nothing], right: cesiumLib.cesiumMod.HeadingPitchRoll): scala.Boolean = js.native
   def equals(left: cesiumLib.cesiumMod.HeadingPitchRoll): scala.Boolean = js.native
   def equals(left: cesiumLib.cesiumMod.HeadingPitchRoll, right: cesiumLib.cesiumMod.HeadingPitchRoll): scala.Boolean = js.native
-  def equals(left: js.UndefOr[scala.Nothing], right: cesiumLib.cesiumMod.HeadingPitchRoll): scala.Boolean = js.native
   def equals(left: scala.Null, right: cesiumLib.cesiumMod.HeadingPitchRoll): scala.Boolean = js.native
-  def equalsEpsilon(
-    left: cesiumLib.cesiumMod.HeadingPitchRoll,
-    right: cesiumLib.cesiumMod.HeadingPitchRoll,
-    relativeEpsilon: scala.Double
-  ): scala.Boolean = js.native
-  def equalsEpsilon(
-    left: cesiumLib.cesiumMod.HeadingPitchRoll,
-    right: cesiumLib.cesiumMod.HeadingPitchRoll,
-    relativeEpsilon: scala.Double,
-    absoluteEpsilon: scala.Double
-  ): scala.Boolean = js.native
-  def equalsEpsilon(
-    left: cesiumLib.cesiumMod.HeadingPitchRoll,
-    right: js.UndefOr[scala.Nothing],
-    relativeEpsilon: scala.Double
-  ): scala.Boolean = js.native
-  def equalsEpsilon(
-    left: cesiumLib.cesiumMod.HeadingPitchRoll,
-    right: js.UndefOr[scala.Nothing],
-    relativeEpsilon: scala.Double,
-    absoluteEpsilon: scala.Double
-  ): scala.Boolean = js.native
-  def equalsEpsilon(left: cesiumLib.cesiumMod.HeadingPitchRoll, right: scala.Null, relativeEpsilon: scala.Double): scala.Boolean = js.native
-  def equalsEpsilon(
-    left: cesiumLib.cesiumMod.HeadingPitchRoll,
-    right: scala.Null,
-    relativeEpsilon: scala.Double,
-    absoluteEpsilon: scala.Double
-  ): scala.Boolean = js.native
-  def equalsEpsilon(
-    left: js.UndefOr[scala.Nothing],
-    right: cesiumLib.cesiumMod.HeadingPitchRoll,
-    relativeEpsilon: scala.Double
-  ): scala.Boolean = js.native
-  def equalsEpsilon(
-    left: js.UndefOr[scala.Nothing],
-    right: cesiumLib.cesiumMod.HeadingPitchRoll,
-    relativeEpsilon: scala.Double,
-    absoluteEpsilon: scala.Double
-  ): scala.Boolean = js.native
   def equalsEpsilon(left: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], relativeEpsilon: scala.Double): scala.Boolean = js.native
   def equalsEpsilon(
     left: js.UndefOr[scala.Nothing],
     right: js.UndefOr[scala.Nothing],
+    relativeEpsilon: scala.Double,
+    absoluteEpsilon: scala.Double
+  ): scala.Boolean = js.native
+  def equalsEpsilon(
+    left: js.UndefOr[scala.Nothing],
+    right: cesiumLib.cesiumMod.HeadingPitchRoll,
+    relativeEpsilon: scala.Double
+  ): scala.Boolean = js.native
+  def equalsEpsilon(
+    left: js.UndefOr[scala.Nothing],
+    right: cesiumLib.cesiumMod.HeadingPitchRoll,
     relativeEpsilon: scala.Double,
     absoluteEpsilon: scala.Double
   ): scala.Boolean = js.native
@@ -93,10 +64,32 @@ object HeadingPitchRoll extends js.Object {
     relativeEpsilon: scala.Double,
     absoluteEpsilon: scala.Double
   ): scala.Boolean = js.native
-  def equalsEpsilon(left: scala.Null, right: cesiumLib.cesiumMod.HeadingPitchRoll, relativeEpsilon: scala.Double): scala.Boolean = js.native
   def equalsEpsilon(
-    left: scala.Null,
+    left: cesiumLib.cesiumMod.HeadingPitchRoll,
+    right: js.UndefOr[scala.Nothing],
+    relativeEpsilon: scala.Double
+  ): scala.Boolean = js.native
+  def equalsEpsilon(
+    left: cesiumLib.cesiumMod.HeadingPitchRoll,
+    right: js.UndefOr[scala.Nothing],
+    relativeEpsilon: scala.Double,
+    absoluteEpsilon: scala.Double
+  ): scala.Boolean = js.native
+  def equalsEpsilon(
+    left: cesiumLib.cesiumMod.HeadingPitchRoll,
     right: cesiumLib.cesiumMod.HeadingPitchRoll,
+    relativeEpsilon: scala.Double
+  ): scala.Boolean = js.native
+  def equalsEpsilon(
+    left: cesiumLib.cesiumMod.HeadingPitchRoll,
+    right: cesiumLib.cesiumMod.HeadingPitchRoll,
+    relativeEpsilon: scala.Double,
+    absoluteEpsilon: scala.Double
+  ): scala.Boolean = js.native
+  def equalsEpsilon(left: cesiumLib.cesiumMod.HeadingPitchRoll, right: scala.Null, relativeEpsilon: scala.Double): scala.Boolean = js.native
+  def equalsEpsilon(
+    left: cesiumLib.cesiumMod.HeadingPitchRoll,
+    right: scala.Null,
     relativeEpsilon: scala.Double,
     absoluteEpsilon: scala.Double
   ): scala.Boolean = js.native
@@ -104,6 +97,13 @@ object HeadingPitchRoll extends js.Object {
   def equalsEpsilon(
     left: scala.Null,
     right: js.UndefOr[scala.Nothing],
+    relativeEpsilon: scala.Double,
+    absoluteEpsilon: scala.Double
+  ): scala.Boolean = js.native
+  def equalsEpsilon(left: scala.Null, right: cesiumLib.cesiumMod.HeadingPitchRoll, relativeEpsilon: scala.Double): scala.Boolean = js.native
+  def equalsEpsilon(
+    left: scala.Null,
+    right: cesiumLib.cesiumMod.HeadingPitchRoll,
     relativeEpsilon: scala.Double,
     absoluteEpsilon: scala.Double
   ): scala.Boolean = js.native

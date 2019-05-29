@@ -45,7 +45,7 @@ trait TernOptions extends js.Object {
     ]
   ] = js.undefined
   /** An object mapping plugin names to configuration options. */
-  var plugins: /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.UndefOr[
+  var plugins: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.ConstructorOptions['plugins'] */ js.Any
   ] = js.undefined
   /** This function will be applied to the Tern responses before treating them */

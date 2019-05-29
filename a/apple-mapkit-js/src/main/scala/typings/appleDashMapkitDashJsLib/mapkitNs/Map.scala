@@ -67,8 +67,8 @@ class Map () extends js.Object {
   def removeOverlays(overlays: js.Array[Overlay]): js.Array[Overlay] = js.native
   def removeTileOverlay(tileOverlay: TileOverlay): TileOverlay = js.native
   def removeTileOverlays(tileOverlays: js.Array[TileOverlay]): js.Array[TileOverlay] = js.native
-  def showItems(items: js.Array[Annotation | Overlay]): js.Array[Annotation] | js.Array[Overlay] = js.native
-  def showItems(items: js.Array[Annotation | Overlay], options: MapShowItemsOptions): js.Array[Annotation] | js.Array[Overlay] = js.native
+  def showItems(items: js.Array[Annotation | Overlay]): js.Array[Annotation | Overlay] = js.native
+  def showItems(items: js.Array[Annotation | Overlay], options: MapShowItemsOptions): js.Array[Annotation | Overlay] = js.native
   def topOverlayAtPoint(point: stdLib.DOMPoint): Overlay = js.native
 }
 

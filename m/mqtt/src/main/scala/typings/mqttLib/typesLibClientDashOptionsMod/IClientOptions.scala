@@ -84,8 +84,8 @@ trait IClientOptions extends ISecureClientOptions {
 object IClientOptions {
   @scala.inline
   def apply(
-    ca: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
-    cert: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
+    ca: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer = null,
+    cert: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer = null,
     clean: js.UndefOr[scala.Boolean] = js.undefined,
     clientId: java.lang.String = null,
     connectTimeout: scala.Int | scala.Double = null,
@@ -93,7 +93,7 @@ object IClientOptions {
     hostname: java.lang.String = null,
     incomingStore: mqttLib.typesLibStoreMod.Store = null,
     keepalive: scala.Int | scala.Double = null,
-    key: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | js.Array[js.Object] = null,
+    key: java.lang.String | (js.Array[nodeLib.Buffer | js.Object | java.lang.String]) | nodeLib.Buffer = null,
     outgoingStore: mqttLib.typesLibStoreMod.Store = null,
     password: java.lang.String = null,
     path: java.lang.String = null,

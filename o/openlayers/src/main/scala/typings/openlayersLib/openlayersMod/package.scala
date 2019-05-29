@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object openlayersMod {
-  type AttributionLike = java.lang.String | js.Array[java.lang.String] | Attribution | js.Array[Attribution]
+  type AttributionLike = java.lang.String | (js.Array[Attribution | java.lang.String]) | Attribution
   type CanvasFunctionType = js.Function5[
     /* extent */ Extent, 
     /* resolution */ scala.Double, 
@@ -21,13 +21,13 @@ package object openlayersMod {
   type CoordinateFormatType = js.Function1[/* coords */ js.UndefOr[Coordinate], java.lang.String]
   type DragBoxEndConditionType = js.Function3[/* event */ MapBrowserEvent, /* pixel1 */ Pixel, /* pixel2 */ Pixel, scala.Boolean]
   type DrawGeometryFunctionType = js.Function2[
-    /* coords */ Coordinate | js.Array[Coordinate] | js.Array[js.Array[Coordinate]], 
+    /* coords */ Coordinate | (js.Array[js.Array[Coordinate] | Coordinate]), 
     /* geo */ js.UndefOr[openlayersLib.openlayersMod.geomNs.SimpleGeometry], 
     openlayersLib.openlayersMod.geomNs.SimpleGeometry
   ]
   type EventsConditionType = js.Function1[/* event */ MapBrowserEvent, scala.Boolean]
   type EventsKey = GlobalObject
-  type EventsListenerFunctionType = (js.Function1[/* evt */ openlayersLib.openlayersMod.eventsNs.Event, scala.Unit]) | (js.Function1[/* evt */ openlayersLib.openlayersMod.eventsNs.Event, scala.Boolean])
+  type EventsListenerFunctionType = js.Function1[/* evt */ openlayersLib.openlayersMod.eventsNs.Event, scala.Boolean | scala.Unit]
   type Extent = js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
   type FeatureLoader = js.Function3[
     /* extent */ Extent, 
@@ -58,7 +58,7 @@ package object openlayersMod {
   ]
   type ProjectionLike = js.UndefOr[openlayersLib.openlayersMod.projNs.Projection | java.lang.String]
   type RasterOperation = js.Function2[
-    /* data */ js.Array[js.Array[scala.Double]] | js.Array[stdLib.ImageData], 
+    /* data */ js.Array[js.Array[scala.Double] | stdLib.ImageData], 
     /* obj */ GlobalObject, 
     js.Array[scala.Double] | stdLib.ImageData
   ]

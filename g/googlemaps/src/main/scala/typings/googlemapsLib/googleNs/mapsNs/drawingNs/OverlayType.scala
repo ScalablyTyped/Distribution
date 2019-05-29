@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait OverlayType extends js.Object
 
+/**
+  * The types of overlay that may be created by the DrawingManager. Specify
+  * these by value, or by using the constant's name. For example, 'polygon'
+  * or google.maps.drawing.OverlayType.POLYGON.
+  */
 @JSGlobal("google.maps.drawing.OverlayType")
 @js.native
 object OverlayType extends js.Object {

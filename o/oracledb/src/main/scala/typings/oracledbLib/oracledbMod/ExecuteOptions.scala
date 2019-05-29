@@ -52,7 +52,7 @@ trait ExecuteOptions extends js.Object {
     *          "HIRE_DETAILS": { type: oracledb.DEFAULT }  // override fetchAsString or fetchAsBuffer
     *      }
     */
-  var fetchInfo: js.UndefOr[org.scalablytyped.runtime.StringDictionary[oracledbLib.Anon_Type]] = js.undefined
+  var fetchInfo: js.UndefOr[stdLib.Record[java.lang.String, oracledbLib.Anon_Type]] = js.undefined
   /**
     * The maximum number of rows that are fetched by a query with connection.execute() when not using a ResultSet.
     * Rows beyond this limit are not fetched from the database. A value of 0 means there is no limit.
@@ -98,7 +98,7 @@ object ExecuteOptions {
     autoCommit: js.UndefOr[scala.Boolean] = js.undefined,
     extendedMetaData: js.UndefOr[scala.Boolean] = js.undefined,
     fetchArraySize: scala.Int | scala.Double = null,
-    fetchInfo: org.scalablytyped.runtime.StringDictionary[oracledbLib.Anon_Type] = null,
+    fetchInfo: stdLib.Record[java.lang.String, oracledbLib.Anon_Type] = null,
     maxRows: scala.Int | scala.Double = null,
     outFormat: scala.Int | scala.Double = null,
     resultSet: js.UndefOr[scala.Boolean] = js.undefined

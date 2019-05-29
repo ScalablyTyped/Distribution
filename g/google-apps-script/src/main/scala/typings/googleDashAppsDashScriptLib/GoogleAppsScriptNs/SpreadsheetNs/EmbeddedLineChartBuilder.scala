@@ -40,7 +40,7 @@ trait EmbeddedLineChartBuilder extends js.Object {
     offsetX: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetY: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): EmbeddedChartBuilder
-  def setRange(start: stdLib.Number, end: stdLib.Number): EmbeddedLineChartBuilder
+  def setRange(start: scala.Double, end: scala.Double): EmbeddedLineChartBuilder
   def setTitle(chartTitle: java.lang.String): EmbeddedLineChartBuilder
   def setTitleTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedLineChartBuilder
   def setTransposeRowsAndColumns(transpose: scala.Boolean): EmbeddedChartBuilder
@@ -85,7 +85,7 @@ object EmbeddedLineChartBuilder {
     setOption: (java.lang.String, js.Object) => EmbeddedChartBuilder,
     setPointStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.PointStyle => EmbeddedLineChartBuilder,
     setPosition: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => EmbeddedChartBuilder,
-    setRange: (stdLib.Number, stdLib.Number) => EmbeddedLineChartBuilder,
+    setRange: (scala.Double, scala.Double) => EmbeddedLineChartBuilder,
     setTitle: java.lang.String => EmbeddedLineChartBuilder,
     setTitleTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedLineChartBuilder,
     setTransposeRowsAndColumns: scala.Boolean => EmbeddedChartBuilder,

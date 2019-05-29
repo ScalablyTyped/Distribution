@@ -40,5 +40,5 @@ package object cleanDashCssMod {
   /**
     * Union of all types acceptable as input for the minify function
     */
-  type Sources = java.lang.String | js.Array[java.lang.String] | Source | js.Array[Source] | nodeLib.Buffer
+  type Sources = java.lang.String | (js.Array[Source | java.lang.String]) | Source | nodeLib.Buffer
 }

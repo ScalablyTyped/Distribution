@@ -54,21 +54,21 @@ trait TypeofTHREE extends js.Object {
   var Box3: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Box3] = js.native
   var Box3Helper: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Box3Helper] = js.native
   var BoxBufferGeometry: org.scalablytyped.runtime.Instantiable6[
-    /* width */ js.UndefOr[/* width */ scala.Double], 
-    /* height */ js.UndefOr[/* height */ scala.Double], 
-    /* depth */ js.UndefOr[/* depth */ scala.Double], 
-    /* widthSegments */ js.UndefOr[/* widthSegments */ scala.Double], 
-    /* heightSegments */ js.UndefOr[/* heightSegments */ scala.Double], 
-    /* depthSegments */ js.UndefOr[/* depthSegments */ scala.Double], 
+    js.UndefOr[/* width */ scala.Double], 
+    js.UndefOr[/* height */ scala.Double], 
+    js.UndefOr[/* depth */ scala.Double], 
+    js.UndefOr[/* widthSegments */ scala.Double], 
+    js.UndefOr[/* heightSegments */ scala.Double], 
+    js.UndefOr[/* depthSegments */ scala.Double], 
     threeLib.threeMod.BoxBufferGeometry
   ] = js.native
   var BoxGeometry: org.scalablytyped.runtime.Instantiable6[
-    /* width */ js.UndefOr[/* width */ scala.Double], 
-    /* height */ js.UndefOr[/* height */ scala.Double], 
-    /* depth */ js.UndefOr[/* depth */ scala.Double], 
-    /* widthSegments */ js.UndefOr[/* widthSegments */ scala.Double], 
-    /* heightSegments */ js.UndefOr[/* heightSegments */ scala.Double], 
-    /* depthSegments */ js.UndefOr[/* depthSegments */ scala.Double], 
+    js.UndefOr[/* width */ scala.Double], 
+    js.UndefOr[/* height */ scala.Double], 
+    js.UndefOr[/* depth */ scala.Double], 
+    js.UndefOr[/* widthSegments */ scala.Double], 
+    js.UndefOr[/* heightSegments */ scala.Double], 
+    js.UndefOr[/* depthSegments */ scala.Double], 
     threeLib.threeMod.BoxGeometry
   ] = js.native
   var BoxHelper: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.BoxHelper] = js.native
@@ -86,14 +86,14 @@ trait TypeofTHREE extends js.Object {
   var CameraHelper: org.scalablytyped.runtime.Instantiable1[/* camera */ threeLib.srcCamerasCameraMod.Camera, threeLib.threeMod.CameraHelper] = js.native
   var CanvasTexture: org.scalablytyped.runtime.Instantiable9[
     /* canvas */ stdLib.HTMLImageElement, 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
-    /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
+    js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
+    js.UndefOr[/* anisotropy */ scala.Double], 
     threeLib.threeMod.CanvasTexture
   ] = js.native
   var CatmullRomCurve3: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CatmullRomCurve3] = js.native
@@ -114,52 +114,52 @@ trait TypeofTHREE extends js.Object {
     /* mipmaps */ js.Array[stdLib.ImageData], 
     /* width */ scala.Double, 
     /* height */ scala.Double, 
-    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
-    /* encoding */ js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
+    js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
+    js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* anisotropy */ scala.Double], 
+    js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
     threeLib.threeMod.CompressedTexture
   ] = js.native
   var CompressedTextureLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CompressedTextureLoader] = js.native
   var ConeBufferGeometry: org.scalablytyped.runtime.Instantiable7[
-    /* radius */ js.UndefOr[/* radius */ scala.Double], 
-    /* height */ js.UndefOr[/* height */ scala.Double], 
-    /* radialSegment */ js.UndefOr[/* radialSegment */ scala.Double], 
-    /* heightSegment */ js.UndefOr[/* heightSegment */ scala.Double], 
-    /* openEnded */ js.UndefOr[/* openEnded */ scala.Boolean], 
-    /* thetaStart */ js.UndefOr[/* thetaStart */ scala.Double], 
-    /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
+    js.UndefOr[/* radius */ scala.Double], 
+    js.UndefOr[/* height */ scala.Double], 
+    js.UndefOr[/* radialSegment */ scala.Double], 
+    js.UndefOr[/* heightSegment */ scala.Double], 
+    js.UndefOr[/* openEnded */ scala.Boolean], 
+    js.UndefOr[/* thetaStart */ scala.Double], 
+    js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.ConeBufferGeometry
   ] = js.native
   var ConeGeometry: org.scalablytyped.runtime.Instantiable7[
-    /* radius */ js.UndefOr[/* radius */ scala.Double], 
-    /* height */ js.UndefOr[/* height */ scala.Double], 
-    /* radialSegment */ js.UndefOr[/* radialSegment */ scala.Double], 
-    /* heightSegment */ js.UndefOr[/* heightSegment */ scala.Double], 
-    /* openEnded */ js.UndefOr[/* openEnded */ scala.Boolean], 
-    /* thetaStart */ js.UndefOr[/* thetaStart */ scala.Double], 
-    /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
+    js.UndefOr[/* radius */ scala.Double], 
+    js.UndefOr[/* height */ scala.Double], 
+    js.UndefOr[/* radialSegment */ scala.Double], 
+    js.UndefOr[/* heightSegment */ scala.Double], 
+    js.UndefOr[/* openEnded */ scala.Boolean], 
+    js.UndefOr[/* thetaStart */ scala.Double], 
+    js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.ConeGeometry
   ] = js.native
   var CubeCamera: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CubeCamera] = js.native
   val CubeReflectionMapping: threeLib.srcConstantsMod.Mapping = js.native
   val CubeRefractionMapping: threeLib.srcConstantsMod.Mapping = js.native
   var CubeTexture: org.scalablytyped.runtime.Instantiable10[
-    /* images */ js.UndefOr[/* images */ js.Array[js.Any]], 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
-    /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
-    /* encoding */ js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
+    js.UndefOr[/* images */ js.Array[js.Any]], 
+    js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
+    js.UndefOr[/* anisotropy */ scala.Double], 
+    js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
     threeLib.threeMod.CubeTexture
   ] = js.native
   var CubeTextureLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CubeTextureLoader] = js.native
@@ -194,25 +194,25 @@ trait TypeofTHREE extends js.Object {
   val CurveUtilsNs: TypeofCurveUtils = js.native
   val CustomBlending: threeLib.srcConstantsMod.Blending = js.native
   var CylinderBufferGeometry: org.scalablytyped.runtime.Instantiable8[
-    /* radiusTop */ js.UndefOr[/* radiusTop */ scala.Double], 
-    /* radiusBottom */ js.UndefOr[/* radiusBottom */ scala.Double], 
-    /* height */ js.UndefOr[/* height */ scala.Double], 
-    /* radialSegments */ js.UndefOr[/* radialSegments */ scala.Double], 
-    /* heightSegments */ js.UndefOr[/* heightSegments */ scala.Double], 
-    /* openEnded */ js.UndefOr[/* openEnded */ scala.Boolean], 
-    /* thetaStart */ js.UndefOr[/* thetaStart */ scala.Double], 
-    /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
+    js.UndefOr[/* radiusTop */ scala.Double], 
+    js.UndefOr[/* radiusBottom */ scala.Double], 
+    js.UndefOr[/* height */ scala.Double], 
+    js.UndefOr[/* radialSegments */ scala.Double], 
+    js.UndefOr[/* heightSegments */ scala.Double], 
+    js.UndefOr[/* openEnded */ scala.Boolean], 
+    js.UndefOr[/* thetaStart */ scala.Double], 
+    js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.CylinderBufferGeometry
   ] = js.native
   var CylinderGeometry: org.scalablytyped.runtime.Instantiable8[
-    /* radiusTop */ js.UndefOr[/* radiusTop */ scala.Double], 
-    /* radiusBottom */ js.UndefOr[/* radiusBottom */ scala.Double], 
-    /* height */ js.UndefOr[/* height */ scala.Double], 
-    /* radiusSegments */ js.UndefOr[/* radiusSegments */ scala.Double], 
-    /* heightSegments */ js.UndefOr[/* heightSegments */ scala.Double], 
-    /* openEnded */ js.UndefOr[/* openEnded */ scala.Boolean], 
-    /* thetaStart */ js.UndefOr[/* thetaStart */ scala.Double], 
-    /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
+    js.UndefOr[/* radiusTop */ scala.Double], 
+    js.UndefOr[/* radiusBottom */ scala.Double], 
+    js.UndefOr[/* height */ scala.Double], 
+    js.UndefOr[/* radiusSegments */ scala.Double], 
+    js.UndefOr[/* heightSegments */ scala.Double], 
+    js.UndefOr[/* openEnded */ scala.Boolean], 
+    js.UndefOr[/* thetaStart */ scala.Double], 
+    js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.CylinderGeometry
   ] = js.native
   var Cylindrical: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Cylindrical] = js.native
@@ -220,15 +220,15 @@ trait TypeofTHREE extends js.Object {
     /* data */ stdLib.ArrayBuffer, 
     /* width */ scala.Double, 
     /* height */ scala.Double, 
-    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
-    /* encoding */ js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
+    js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
+    js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* anisotropy */ scala.Double], 
+    js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
     threeLib.threeMod.DataTexture
   ] = js.native
   var DataTexture3D: org.scalablytyped.runtime.Instantiable4[
@@ -245,13 +245,13 @@ trait TypeofTHREE extends js.Object {
   var DepthTexture: org.scalablytyped.runtime.Instantiable9[
     /* width */ scala.Double, 
     /* heighht */ scala.Double, 
-    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
+    js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
+    js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* anisotropy */ scala.Double], 
     threeLib.threeMod.DepthTexture
   ] = js.native
   var DirectGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.DirectGeometry] = js.native
@@ -328,12 +328,12 @@ trait TypeofTHREE extends js.Object {
   val FrontFaceDirectionCW: threeLib.srcConstantsMod.FrontFaceDirection = js.native
   val FrontSide: threeLib.srcConstantsMod.Side = js.native
   var Frustum: org.scalablytyped.runtime.Instantiable6[
-    /* p0 */ js.UndefOr[/* p0 */ threeLib.srcMathPlaneMod.Plane], 
-    /* p1 */ js.UndefOr[/* p1 */ threeLib.srcMathPlaneMod.Plane], 
-    /* p2 */ js.UndefOr[/* p2 */ threeLib.srcMathPlaneMod.Plane], 
-    /* p3 */ js.UndefOr[/* p3 */ threeLib.srcMathPlaneMod.Plane], 
-    /* p4 */ js.UndefOr[/* p4 */ threeLib.srcMathPlaneMod.Plane], 
-    /* p5 */ js.UndefOr[/* p5 */ threeLib.srcMathPlaneMod.Plane], 
+    js.UndefOr[/* p0 */ threeLib.srcMathPlaneMod.Plane], 
+    js.UndefOr[/* p1 */ threeLib.srcMathPlaneMod.Plane], 
+    js.UndefOr[/* p2 */ threeLib.srcMathPlaneMod.Plane], 
+    js.UndefOr[/* p3 */ threeLib.srcMathPlaneMod.Plane], 
+    js.UndefOr[/* p4 */ threeLib.srcMathPlaneMod.Plane], 
+    js.UndefOr[/* p5 */ threeLib.srcMathPlaneMod.Plane], 
     threeLib.threeMod.Frustum
   ] = js.native
   val GammaEncoding: threeLib.srcConstantsMod.TextureEncoding = js.native
@@ -667,21 +667,21 @@ trait TypeofTHREE extends js.Object {
   val RepeatWrapping: threeLib.srcConstantsMod.Wrapping = js.native
   val ReverseSubtractEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
   var RingBufferGeometry: org.scalablytyped.runtime.Instantiable6[
-    /* innerRadius */ js.UndefOr[/* innerRadius */ scala.Double], 
-    /* outerRadius */ js.UndefOr[/* outerRadius */ scala.Double], 
-    /* thetaSegments */ js.UndefOr[/* thetaSegments */ scala.Double], 
-    /* phiSegments */ js.UndefOr[/* phiSegments */ scala.Double], 
-    /* thetaStart */ js.UndefOr[/* thetaStart */ scala.Double], 
-    /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
+    js.UndefOr[/* innerRadius */ scala.Double], 
+    js.UndefOr[/* outerRadius */ scala.Double], 
+    js.UndefOr[/* thetaSegments */ scala.Double], 
+    js.UndefOr[/* phiSegments */ scala.Double], 
+    js.UndefOr[/* thetaStart */ scala.Double], 
+    js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.RingBufferGeometry
   ] = js.native
   var RingGeometry: org.scalablytyped.runtime.Instantiable6[
-    /* innerRadius */ js.UndefOr[/* innerRadius */ scala.Double], 
-    /* outerRadius */ js.UndefOr[/* outerRadius */ scala.Double], 
-    /* thetaSegments */ js.UndefOr[/* thetaSegments */ scala.Double], 
-    /* phiSegments */ js.UndefOr[/* phiSegments */ scala.Double], 
-    /* thetaStart */ js.UndefOr[/* thetaStart */ scala.Double], 
-    /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
+    js.UndefOr[/* innerRadius */ scala.Double], 
+    js.UndefOr[/* outerRadius */ scala.Double], 
+    js.UndefOr[/* thetaSegments */ scala.Double], 
+    js.UndefOr[/* phiSegments */ scala.Double], 
+    js.UndefOr[/* thetaStart */ scala.Double], 
+    js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.RingGeometry
   ] = js.native
   var Scene: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Scene] = js.native
@@ -705,35 +705,35 @@ trait TypeofTHREE extends js.Object {
   val SmoothShading: threeLib.srcConstantsMod.Shading = js.native
   var Sphere: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Sphere] = js.native
   var SphereBufferGeometry: org.scalablytyped.runtime.Instantiable7[
-    /* radius */ js.UndefOr[/* radius */ scala.Double], 
-    /* widthSegments */ js.UndefOr[/* widthSegments */ scala.Double], 
-    /* heightSegments */ js.UndefOr[/* heightSegments */ scala.Double], 
-    /* phiStart */ js.UndefOr[/* phiStart */ scala.Double], 
-    /* phiLength */ js.UndefOr[/* phiLength */ scala.Double], 
-    /* thetaStart */ js.UndefOr[/* thetaStart */ scala.Double], 
-    /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
+    js.UndefOr[/* radius */ scala.Double], 
+    js.UndefOr[/* widthSegments */ scala.Double], 
+    js.UndefOr[/* heightSegments */ scala.Double], 
+    js.UndefOr[/* phiStart */ scala.Double], 
+    js.UndefOr[/* phiLength */ scala.Double], 
+    js.UndefOr[/* thetaStart */ scala.Double], 
+    js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.SphereBufferGeometry
   ] = js.native
   var SphereGeometry: org.scalablytyped.runtime.Instantiable7[
-    /* radius */ js.UndefOr[/* radius */ scala.Double], 
-    /* widthSegments */ js.UndefOr[/* widthSegments */ scala.Double], 
-    /* heightSegments */ js.UndefOr[/* heightSegments */ scala.Double], 
-    /* phiStart */ js.UndefOr[/* phiStart */ scala.Double], 
-    /* phiLength */ js.UndefOr[/* phiLength */ scala.Double], 
-    /* thetaStart */ js.UndefOr[/* thetaStart */ scala.Double], 
-    /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
+    js.UndefOr[/* radius */ scala.Double], 
+    js.UndefOr[/* widthSegments */ scala.Double], 
+    js.UndefOr[/* heightSegments */ scala.Double], 
+    js.UndefOr[/* phiStart */ scala.Double], 
+    js.UndefOr[/* phiLength */ scala.Double], 
+    js.UndefOr[/* thetaStart */ scala.Double], 
+    js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.SphereGeometry
   ] = js.native
   var Spherical: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Spherical] = js.native
   val SphericalReflectionMapping: threeLib.srcConstantsMod.Mapping = js.native
   var SplineCurve: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.SplineCurve] = js.native
   var SpotLight: org.scalablytyped.runtime.Instantiable6[
-    /* color */ js.UndefOr[/* color */ threeLib.srcMathColorMod.Color], 
-    /* intensity */ js.UndefOr[/* intensity */ scala.Double], 
-    /* distance */ js.UndefOr[/* distance */ scala.Double], 
-    /* angle */ js.UndefOr[/* angle */ scala.Double], 
-    /* exponent */ js.UndefOr[/* exponent */ scala.Double], 
-    /* decay */ js.UndefOr[/* decay */ scala.Double], 
+    js.UndefOr[/* color */ threeLib.srcMathColorMod.Color], 
+    js.UndefOr[/* intensity */ scala.Double], 
+    js.UndefOr[/* distance */ scala.Double], 
+    js.UndefOr[/* angle */ scala.Double], 
+    js.UndefOr[/* exponent */ scala.Double], 
+    js.UndefOr[/* decay */ scala.Double], 
     threeLib.threeMod.SpotLight
   ] = js.native
   var SpotLightHelper: org.scalablytyped.runtime.Instantiable1[/* light */ threeLib.srcLightsLightMod.Light, threeLib.threeMod.SpotLightHelper] = js.native
@@ -763,21 +763,21 @@ trait TypeofTHREE extends js.Object {
   var TorusBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.TorusBufferGeometry] = js.native
   var TorusGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.TorusGeometry] = js.native
   var TorusKnotBufferGeometry: org.scalablytyped.runtime.Instantiable6[
-    /* radius */ js.UndefOr[/* radius */ scala.Double], 
-    /* tube */ js.UndefOr[/* tube */ scala.Double], 
-    /* tubularSegments */ js.UndefOr[/* tubularSegments */ scala.Double], 
-    /* radialSegments */ js.UndefOr[/* radialSegments */ scala.Double], 
-    /* p */ js.UndefOr[/* p */ scala.Double], 
-    /* q */ js.UndefOr[/* q */ scala.Double], 
+    js.UndefOr[/* radius */ scala.Double], 
+    js.UndefOr[/* tube */ scala.Double], 
+    js.UndefOr[/* tubularSegments */ scala.Double], 
+    js.UndefOr[/* radialSegments */ scala.Double], 
+    js.UndefOr[/* p */ scala.Double], 
+    js.UndefOr[/* q */ scala.Double], 
     threeLib.threeMod.TorusKnotBufferGeometry
   ] = js.native
   var TorusKnotGeometry: org.scalablytyped.runtime.Instantiable6[
-    /* radius */ js.UndefOr[/* radius */ scala.Double], 
-    /* tube */ js.UndefOr[/* tube */ scala.Double], 
-    /* tubularSegments */ js.UndefOr[/* tubularSegments */ scala.Double], 
-    /* radialSegments */ js.UndefOr[/* radialSegments */ scala.Double], 
-    /* p */ js.UndefOr[/* p */ scala.Double], 
-    /* q */ js.UndefOr[/* q */ scala.Double], 
+    js.UndefOr[/* radius */ scala.Double], 
+    js.UndefOr[/* tube */ scala.Double], 
+    js.UndefOr[/* tubularSegments */ scala.Double], 
+    js.UndefOr[/* radialSegments */ scala.Double], 
+    js.UndefOr[/* p */ scala.Double], 
+    js.UndefOr[/* q */ scala.Double], 
     threeLib.threeMod.TorusKnotGeometry
   ] = js.native
   var Triangle: TypeofClassTriangle = js.native
@@ -848,14 +848,14 @@ trait TypeofTHREE extends js.Object {
   ] = js.native
   var VideoTexture: org.scalablytyped.runtime.Instantiable9[
     /* video */ stdLib.HTMLVideoElement, 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
-    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
-    /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
+    js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
+    js.UndefOr[/* anisotropy */ scala.Double], 
     threeLib.threeMod.VideoTexture
   ] = js.native
   var WebGLBufferRenderer: org.scalablytyped.runtime.Instantiable3[

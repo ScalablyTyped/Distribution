@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sasl-digest-md5"
-version := "0.1-dt-20181205Z-370b16"
+version := "0.1-dt-20181205Z-085aa0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "saslmechanisms" % "0.1-dt-20181126Z-e91402",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "saslmechanisms" % "0.1-dt-20181126Z-5ec890",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

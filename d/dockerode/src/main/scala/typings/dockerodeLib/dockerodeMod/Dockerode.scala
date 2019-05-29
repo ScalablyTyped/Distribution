@@ -26,6 +26,8 @@ trait Dockerode extends js.Object {
   ): scala.Unit = js.native
   def checkAuth(options: js.Any): js.Promise[_] = js.native
   def checkAuth(options: js.Any, callback: Callback[_]): scala.Unit = js.native
+  def createConfig(options: js.Object): js.Promise[_] = js.native
+  def createConfig(options: js.Object, callback: Callback[_]): scala.Unit = js.native
   def createContainer(options: ContainerCreateOptions): js.Promise[Container] = js.native
   def createContainer(options: ContainerCreateOptions, callback: Callback[Container]): scala.Unit = js.native
   def createImage(auth: js.Any, options: js.Object): js.Promise[nodeLib.NodeJSNs.ReadableStream] = js.native

@@ -34,7 +34,7 @@ trait DateBox extends js.Object {
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): DateBox
   def setTag(tag: java.lang.String): DateBox
   def setTitle(title: java.lang.String): DateBox
-  def setValue(date: stdLib.Date): DateBox
+  def setValue(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DateBox
   def setVisible(visible: scala.Boolean): DateBox
   def setWidth(width: java.lang.String): DateBox
   def showDatePicker(): DateBox
@@ -68,7 +68,7 @@ object DateBox {
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => DateBox,
     setTag: java.lang.String => DateBox,
     setTitle: java.lang.String => DateBox,
-    setValue: stdLib.Date => DateBox,
+    setValue: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date => DateBox,
     setVisible: scala.Boolean => DateBox,
     setWidth: java.lang.String => DateBox,
     showDatePicker: () => DateBox

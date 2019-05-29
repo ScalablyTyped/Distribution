@@ -23,5 +23,5 @@ package object immerMod {
   {readonly [ P in keyof T ]: immer.immer.Immutable<T[P]>}
     */ immerLib.immerLibStrings.ImmutableTuple with T
   type PatchListener = js.Function2[/* patches */ js.Array[Patch], /* inversePatches */ js.Array[Patch], scala.Unit]
-  type Produced[T, Return] = T | (FromNothing[stdLib.Exclude[Return, scala.Unit]]) | FromNothing[Return]
+  type Produced[T, Return] = T | (FromNothing[(stdLib.Exclude[Return, scala.Unit]) | Return])
 }

@@ -804,6 +804,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsAppmeshMod._apiVersion
   
   @js.native
+  sealed trait `2019-05-23`
+    extends awsDashSdkLib.clientsGroundstationMod._apiVersion
+  
+  @js.native
   sealed trait `237`
     extends awsDashSdkLib.clientsApigatewayMod._CacheClusterSize
   
@@ -972,6 +976,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDiscoveryMod._ContinuousExportStatus
        with awsDashSdkLib.clientsIotanalyticsMod._DatasetStatus
        with awsDashSdkLib.clientsIotanalyticsMod._DatastoreStatus
+       with awsDashSdkLib.clientsPinpointemailMod._DeliverabilityDashboardAccountStatus
        with awsDashSdkLib.clientsFirehoseMod._DeliveryStreamStatus
        with awsDashSdkLib.clientsWorklinkMod._DeviceStatus
        with awsDashSdkLib.clientsWorkdocsMod._DocumentStatusType
@@ -2158,6 +2163,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDynamodbMod._BackupStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupStatus
        with awsDashSdkLib.clientsApigatewayMod._CacheClusterStatus
+       with awsDashSdkLib.clientsGroundstationMod._ContactStatus
        with awsDashSdkLib.clientsDevicefarmMod._DeviceAvailability
        with awsDashSdkLib.clientsRoute53domainsMod._DomainAvailability
        with awsDashSdkLib.clientsAmplifyMod._DomainStatus
@@ -2510,6 +2516,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupType
        with awsDashSdkLib.clientsDynamodbMod._BackupTypeFilter
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupTypeFilter
+  
+  @js.native
+  sealed trait AWS_CANCELLED
+    extends awsDashSdkLib.clientsGroundstationMod._ContactStatus
   
   @js.native
   sealed trait AWS_CLOUDHSM
@@ -3816,7 +3826,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CANCELLED
-    extends awsDashSdkLib.clientsCloudwatchlogsMod._ExportTaskStatusCode
+    extends awsDashSdkLib.clientsGroundstationMod._ContactStatus
+       with awsDashSdkLib.clientsCloudwatchlogsMod._ExportTaskStatusCode
        with awsDashSdkLib.clientsGameliftMod._GameSessionPlacementState
        with awsDashSdkLib.clientsAmplifyMod._JobStatus
        with awsDashSdkLib.clientsGlueMod._LastCrawlStatus
@@ -4342,6 +4353,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsPinpointMod._CampaignStatus
        with awsDashSdkLib.clientsSwfMod._CloseStatus
        with awsDashSdkLib.clientsSagemakerMod._CompilationJobStatus
+       with awsDashSdkLib.clientsGroundstationMod._ContactStatus
        with awsDashSdkLib.clientsWorkspacesMod._DedicatedTenancyModificationStateEnum
        with awsDashSdkLib.clientsPinpointemailMod._DeliverabilityTestStatus
        with awsDashSdkLib.clientsEsMod._DeploymentStatus
@@ -5029,7 +5041,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Canceled
-    extends awsDashSdkLib.clientsSignerMod._SigningProfileStatus
+    extends awsDashSdkLib.clientsRobomakerMod._DeploymentStatus
+       with awsDashSdkLib.clientsSignerMod._SigningProfileStatus
        with awsDashSdkLib.clientsRobomakerMod._SimulationJobStatus
   
   @js.native
@@ -5723,6 +5736,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._InputRotate
   
   @js.native
+  sealed trait DEGREE_ANGLE
+    extends awsDashSdkLib.clientsGroundstationMod._AngleUnits
+  
+  @js.native
   sealed trait DEINTERLACE
     extends awsDashSdkLib.clientsMediaconvertMod._DeinterlacerMode
   
@@ -6146,6 +6163,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ContinuousBackupsStatus
        with awsDashSdkLib.clientsMediaconvertMod._DashIsoWriteSegmentTimelineInRepresentation
        with awsDashSdkLib.clientsWorkspacesMod._DedicatedTenancySupportResultEnum
+       with awsDashSdkLib.clientsPinpointemailMod._DeliverabilityDashboardAccountStatus
        with awsDashSdkLib.clientsFirehoseMod._DeliveryStreamEncryptionStatus
        with awsDashSdkLib.clientsGuarddutyMod._DetectorStatus
        with awsDashSdkLib.clientsClouddirectoryMod._DirectoryState
@@ -8032,6 +8050,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSagemakerMod._CompilationJobStatus
        with awsDashSdkLib.clientsSecurityhubMod._ComplianceStatus
        with awsDashSdkLib.clientsKmsMod._ConnectionStateType
+       with awsDashSdkLib.clientsGroundstationMod._ContactStatus
        with awsDashSdkLib.clientsServicecatalogMod._CopyProductStatus
        with awsDashSdkLib.clientsOrganizationsMod._CreateAccountState
        with awsDashSdkLib.clientsIotanalyticsMod._DatasetContentState
@@ -8143,6 +8162,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FAILED_TO_DISASSOCIATE
     extends awsDashSdkLib.clientsWorklinkMod._DomainStatus
+  
+  @js.native
+  sealed trait FAILED_TO_SCHEDULE
+    extends awsDashSdkLib.clientsGroundstationMod._ContactStatus
   
   @js.native
   sealed trait FAILING
@@ -9046,6 +9069,11 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRoute53domainsMod._CountryCode
        with awsDashSdkLib.clientsWafregionalMod._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafMod._GeoMatchConstraintValue
+  
+  @js.native
+  sealed trait GHz
+    extends awsDashSdkLib.clientsGroundstationMod._BandwidthUnits
+       with awsDashSdkLib.clientsGroundstationMod._FrequencyUnits
   
   @js.native
   sealed trait GI
@@ -11785,6 +11813,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._DvbSubtitleAlignment
   
   @js.native
+  sealed trait LEFT_HAND
+    extends awsDashSdkLib.clientsGroundstationMod._Polarization
+  
+  @js.native
   sealed trait LEGAL_ENTITY_NAME
     extends awsDashSdkLib.clientsCostexplorerMod._Dimension
   
@@ -12337,6 +12369,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Local
     extends awsDashSdkLib.clientsSsmMod._AutomationType
+       with awsDashSdkLib.clientsChimeMod._PhoneNumberType
        with awsDashSdkLib.clientsIamMod._policyScopeType
   
   @js.native
@@ -12723,6 +12756,11 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRoute53domainsMod._CountryCode
        with awsDashSdkLib.clientsWafregionalMod._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafMod._GeoMatchConstraintValue
+  
+  @js.native
+  sealed trait MHz
+    extends awsDashSdkLib.clientsGroundstationMod._BandwidthUnits
+       with awsDashSdkLib.clientsGroundstationMod._FrequencyUnits
   
   @js.native
   sealed trait MICRO_SECONDS
@@ -13629,6 +13667,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDatasyncMod._Mtime
        with awsDashSdkLib.clientsFirehoseMod._OrcCompression
        with awsDashSdkLib.clientsMediapackageMod._PlaylistType
+       with awsDashSdkLib.clientsGroundstationMod._Polarization
        with awsDashSdkLib.clientsLightsailMod._PortInfoSourceType
        with awsDashSdkLib.clientsDatasyncMod._PosixPermissions
        with awsDashSdkLib.clientsDatasyncMod._PreserveDevices
@@ -14739,6 +14778,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEsMod._ReservedElasticsearchInstancePaymentOption
   
   @js.native
+  sealed trait PASS
+    extends awsDashSdkLib.clientsGroundstationMod._ContactStatus
+  
+  @js.native
   sealed trait PASSED
     extends awsDashSdkLib.clientsSecurityhubMod._ComplianceStatus
        with awsDashSdkLib.clientsDevicefarmMod._ExecutionResult
@@ -14975,6 +15018,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsOrganizationsMod._PolicyTypeStatus
   
   @js.native
+  sealed trait PENDING_EXPIRATION
+    extends awsDashSdkLib.clientsPinpointemailMod._DeliverabilityDashboardAccountStatus
+  
+  @js.native
   sealed trait PENDING_NEXT_RUN
     extends awsDashSdkLib.clientsPinpointMod._CampaignStatus
   
@@ -15174,6 +15221,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCloudfrontMod._Method
   
   @js.native
+  sealed trait POSTPASS
+    extends awsDashSdkLib.clientsGroundstationMod._ContactStatus
+  
+  @js.native
   sealed trait POST_BUILD
     extends awsDashSdkLib.clientsCodebuildMod._BuildPhaseType
   
@@ -15200,6 +15251,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWafMod._GeoMatchConstraintValue
   
   @js.native
+  sealed trait PREFERRED
+    extends awsDashSdkLib.clientsGroundstationMod._Criticality
+  
+  @js.native
   sealed trait PREFIX
     extends awsDashSdkLib.clientsSecurityhubMod._StringFilterComparison
   
@@ -15213,6 +15268,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDevicefarmMod._InstanceStatus
        with awsDashSdkLib.clientsServerlessapplicationrepositoryMod._Status
        with awsDashSdkLib.clientsDatasyncMod._TaskExecutionStatus
+  
+  @js.native
+  sealed trait PREPASS
+    extends awsDashSdkLib.clientsGroundstationMod._ContactStatus
   
   @js.native
   sealed trait PRESENT
@@ -15980,6 +16039,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCodepipelineMod._JobStatus
   
   @js.native
+  sealed trait RADIAN
+    extends awsDashSdkLib.clientsGroundstationMod._AngleUnits
+  
+  @js.native
   sealed trait RAI_ADAPT
     extends awsDashSdkLib.clientsMediaconvertMod._M2tsSegmentationMarkers
        with awsDashSdkLib.clientsMedialiveMod._M2tsSegmentationMarkers
@@ -16321,7 +16384,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait REMOVED
-    extends awsDashSdkLib.clientsIotMod._JobExecutionStatus
+    extends awsDashSdkLib.clientsGroundstationMod._Criticality
+       with awsDashSdkLib.clientsIotMod._JobExecutionStatus
        with awsDashSdkLib.clientsIotjobsdataplaneMod._JobExecutionStatus
        with awsDashSdkLib.clientsSecurityhubMod._MalwareState
   
@@ -16424,6 +16488,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait REQUEST_TOO_LARGE
     extends awsDashSdkLib.clientsApigatewayMod._GatewayResponseType
+  
+  @js.native
+  sealed trait REQUIRED
+    extends awsDashSdkLib.clientsGroundstationMod._Criticality
   
   @js.native
   sealed trait REQUIRED_ALWAYS
@@ -16623,6 +16691,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait RIFF
     extends awsDashSdkLib.clientsMediaconvertMod._WavFormat
+  
+  @js.native
+  sealed trait RIGHT_HAND
+    extends awsDashSdkLib.clientsGroundstationMod._Polarization
   
   @js.native
   sealed trait RINGCENTRAL
@@ -17427,6 +17499,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SCHEDULED
     extends awsDashSdkLib.clientsPinpointMod._CampaignStatus
+       with awsDashSdkLib.clientsGroundstationMod._ContactStatus
        with awsDashSdkLib.clientsGlueMod._ScheduleState
        with awsDashSdkLib.clientsGlueMod._TriggerType
   
@@ -17444,7 +17517,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SCHEDULING
-    extends awsDashSdkLib.clientsDevicefarmMod._ExecutionStatus
+    extends awsDashSdkLib.clientsGroundstationMod._ContactStatus
+       with awsDashSdkLib.clientsDevicefarmMod._ExecutionStatus
   
   @js.native
   sealed trait SCONJ
@@ -20335,6 +20409,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCognitoidentityMod._RoleMappingType
   
   @js.native
+  sealed trait TollFree
+    extends awsDashSdkLib.clientsChimeMod._PhoneNumberType
+  
+  @js.native
   sealed trait Topic extends js.Object
   
   @js.native
@@ -22174,6 +22252,18 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsGreengrassMod._UpdateTargetsOperatingSystem
   
   @js.native
+  sealed trait `antenna-downlink`
+    extends awsDashSdkLib.clientsGroundstationMod._ConfigCapabilityType
+  
+  @js.native
+  sealed trait `antenna-downlink-demod-decode`
+    extends awsDashSdkLib.clientsGroundstationMod._ConfigCapabilityType
+  
+  @js.native
+  sealed trait `antenna-uplink`
+    extends awsDashSdkLib.clientsGroundstationMod._ConfigCapabilityType
+  
+  @js.native
   sealed trait anyInstanceInService extends js.Object
   
   @js.native
@@ -22274,6 +22364,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ar
     extends awsDashSdkLib.clientsCloudsearchMod._AnalysisSchemeLanguage
+  
+  @js.native
+  sealed trait `ar-SA`
+    extends awsDashSdkLib.clientsTranscribeserviceMod._LanguageCode
   
   @js.native
   sealed trait arb
@@ -23157,8 +23251,13 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._SnapshotAttributeName
   
   @js.native
+  sealed trait created
+    extends awsDashSdkLib.clientsGroundstationMod._EndpointStatus
+  
+  @js.native
   sealed trait creating
     extends awsDashSdkLib.clientsEc2Mod._ClientVpnRouteStatusCode
+       with awsDashSdkLib.clientsGroundstationMod._EndpointStatus
        with awsDashSdkLib.clientsCloud9Mod._EnvironmentStatus
        with awsDashSdkLib.clientsEfsMod._LifeCycleState
        with awsDashSdkLib.clientsEc2Mod._VolumeState
@@ -23267,6 +23366,9 @@ object awsDashSdkLibStrings {
   sealed trait dBSnapshotDeleted extends js.Object
   
   @js.native
+  sealed trait dBW extends js.Object
+  
+  @js.native
   sealed trait da
     extends awsDashSdkLib.clientsCloudsearchMod._AnalysisSchemeLanguage
   
@@ -23308,6 +23410,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait dataSourceAvailable extends js.Object
+  
+  @js.native
+  sealed trait `dataflow-endpoint`
+    extends awsDashSdkLib.clientsGroundstationMod._ConfigCapabilityType
   
   @js.native
   sealed trait date
@@ -23417,6 +23523,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDirectconnectMod._ConnectionState
        with awsDashSdkLib.clientsDirectconnectMod._DirectConnectGatewayAssociationProposalState
        with awsDashSdkLib.clientsDirectconnectMod._DirectConnectGatewayState
+       with awsDashSdkLib.clientsGroundstationMod._EndpointStatus
        with awsDashSdkLib.clientsEc2Mod._FleetStateCode
        with awsDashSdkLib.clientsDirectconnectMod._InterconnectState
        with awsDashSdkLib.clientsDirectconnectMod._LagState
@@ -23447,6 +23554,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEc2Mod._ClientVpnRouteStatusCode
        with awsDashSdkLib.clientsDirectconnectMod._ConnectionState
        with awsDashSdkLib.clientsDirectconnectMod._DirectConnectGatewayState
+       with awsDashSdkLib.clientsGroundstationMod._EndpointStatus
        with awsDashSdkLib.clientsCloud9Mod._EnvironmentStatus
        with awsDashSdkLib.clientsDirectconnectMod._InterconnectState
        with awsDashSdkLib.clientsDirectconnectMod._LagState
@@ -24007,6 +24115,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEc2Mod._ClientVpnRouteStatusCode
        with awsDashSdkLib.clientsElasticbeanstalkMod._ConfigurationDeploymentStatus
        with awsDashSdkLib.clientsSesMod._DsnAction
+       with awsDashSdkLib.clientsGroundstationMod._EndpointStatus
        with awsDashSdkLib.clientsEc2Mod._FleetStateCode
        with awsDashSdkLib.clientsEc2Mod._FpgaImageStateCode
        with awsDashSdkLib.clientsEc2Mod._ImageState
@@ -24867,6 +24976,11 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEcsMod._LogDriver
   
   @js.native
+  sealed trait kHz
+    extends awsDashSdkLib.clientsGroundstationMod._BandwidthUnits
+       with awsDashSdkLib.clientsGroundstationMod._FrequencyUnits
+  
+  @js.native
   sealed trait kernel
     extends awsDashSdkLib.clientsEc2Mod._ImageAttributeName
        with awsDashSdkLib.clientsEc2Mod._ImageTypeValues
@@ -24937,6 +25051,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDiscoveryMod._apiVersion
        with awsDashSdkLib.clientsMediastoreMod._apiVersion
        with awsDashSdkLib.clientsMachinelearningMod._apiVersion
+       with awsDashSdkLib.clientsGroundstationMod._apiVersion
        with awsDashSdkLib.clientsPricingMod._apiVersion
        with awsDashSdkLib.clientsServicediscoveryMod._apiVersion
        with awsDashSdkLib.clientsKafkaMod._apiVersion
@@ -27667,6 +27782,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsPollyMod._LanguageCode
   
   @js.native
+  sealed trait tracking
+    extends awsDashSdkLib.clientsGroundstationMod._ConfigCapabilityType
+  
+  @js.native
   sealed trait trackingOptions
     extends awsDashSdkLib.clientsSesMod._ConfigurationSetAttribute
   
@@ -27794,6 +27913,10 @@ object awsDashSdkLibStrings {
   sealed trait updating
     extends awsDashSdkLib.clientsDirectconnectMod._DirectConnectGatewayAssociationState
        with awsDashSdkLib.clientsEfsMod._LifeCycleState
+  
+  @js.native
+  sealed trait `uplink-echo`
+    extends awsDashSdkLib.clientsGroundstationMod._ConfigCapabilityType
   
   @js.native
   sealed trait upperJawlineLeft
@@ -28536,6 +28659,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `2019-01-25`: `2019-01-25` = "2019-01-25".asInstanceOf[`2019-01-25`]
   @scala.inline
+  def `2019-05-23`: `2019-05-23` = "2019-05-23".asInstanceOf[`2019-05-23`]
+  @scala.inline
   def `237`: `237` = "237".asInstanceOf[`237`]
   @scala.inline
   def `28DOT4`: `28DOT4` = "28.4".asInstanceOf[`28DOT4`]
@@ -29253,6 +29378,8 @@ object awsDashSdkLibStrings {
   def AWSWAF: AWSWAF = "AWSWAF".asInstanceOf[AWSWAF]
   @scala.inline
   def AWS_BACKUP: AWS_BACKUP = "AWS_BACKUP".asInstanceOf[AWS_BACKUP]
+  @scala.inline
+  def AWS_CANCELLED: AWS_CANCELLED = "AWS_CANCELLED".asInstanceOf[AWS_CANCELLED]
   @scala.inline
   def AWS_CLOUDHSM: AWS_CLOUDHSM = "AWS_CLOUDHSM".asInstanceOf[AWS_CLOUDHSM]
   @scala.inline
@@ -30582,6 +30709,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def DEGREE_0: DEGREE_0 = "DEGREE_0".asInstanceOf[DEGREE_0]
   @scala.inline
+  def DEGREE_ANGLE: DEGREE_ANGLE = "DEGREE_ANGLE".asInstanceOf[DEGREE_ANGLE]
+  @scala.inline
   def DEINTERLACE: DEINTERLACE = "DEINTERLACE".asInstanceOf[DEINTERLACE]
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
@@ -31460,6 +31589,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def FAILED_TO_DISASSOCIATE: FAILED_TO_DISASSOCIATE = "FAILED_TO_DISASSOCIATE".asInstanceOf[FAILED_TO_DISASSOCIATE]
   @scala.inline
+  def FAILED_TO_SCHEDULE: FAILED_TO_SCHEDULE = "FAILED_TO_SCHEDULE".asInstanceOf[FAILED_TO_SCHEDULE]
+  @scala.inline
   def FAILING: FAILING = "FAILING".asInstanceOf[FAILING]
   @scala.inline
   def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
@@ -31831,6 +31962,8 @@ object awsDashSdkLibStrings {
   def GG: GG = "GG".asInstanceOf[GG]
   @scala.inline
   def GH: GH = "GH".asInstanceOf[GH]
+  @scala.inline
+  def GHz: GHz = "GHz".asInstanceOf[GHz]
   @scala.inline
   def GI: GI = "GI".asInstanceOf[GI]
   @scala.inline
@@ -32970,6 +33103,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   @scala.inline
+  def LEFT_HAND: LEFT_HAND = "LEFT_HAND".asInstanceOf[LEFT_HAND]
+  @scala.inline
   def LEGAL_ENTITY_NAME: LEGAL_ENTITY_NAME = "LEGAL_ENTITY_NAME".asInstanceOf[LEGAL_ENTITY_NAME]
   @scala.inline
   def LESS_THAN: LESS_THAN = "LESS_THAN".asInstanceOf[LESS_THAN]
@@ -33379,6 +33514,8 @@ object awsDashSdkLibStrings {
   def MG: MG = "MG".asInstanceOf[MG]
   @scala.inline
   def MH: MH = "MH".asInstanceOf[MH]
+  @scala.inline
+  def MHz: MHz = "MHz".asInstanceOf[MHz]
   @scala.inline
   def MICRO_SECONDS: MICRO_SECONDS = "MICRO_SECONDS".asInstanceOf[MICRO_SECONDS]
   @scala.inline
@@ -34198,6 +34335,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PARTIAL_UPFRONT: PARTIAL_UPFRONT = "PARTIAL_UPFRONT".asInstanceOf[PARTIAL_UPFRONT]
   @scala.inline
+  def PASS: PASS = "PASS".asInstanceOf[PASS]
+  @scala.inline
   def PASSED: PASSED = "PASSED".asInstanceOf[PASSED]
   @scala.inline
   def PASSTHROUGH: PASSTHROUGH = "PASSTHROUGH".asInstanceOf[PASSTHROUGH]
@@ -34277,6 +34416,8 @@ object awsDashSdkLibStrings {
   def PENDING_DISABLE: PENDING_DISABLE = "PENDING_DISABLE".asInstanceOf[PENDING_DISABLE]
   @scala.inline
   def PENDING_ENABLE: PENDING_ENABLE = "PENDING_ENABLE".asInstanceOf[PENDING_ENABLE]
+  @scala.inline
+  def PENDING_EXPIRATION: PENDING_EXPIRATION = "PENDING_EXPIRATION".asInstanceOf[PENDING_EXPIRATION]
   @scala.inline
   def PENDING_NEXT_RUN: PENDING_NEXT_RUN = "PENDING_NEXT_RUN".asInstanceOf[PENDING_NEXT_RUN]
   @scala.inline
@@ -34364,6 +34505,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
+  def POSTPASS: POSTPASS = "POSTPASS".asInstanceOf[POSTPASS]
+  @scala.inline
   def POST_BUILD: POST_BUILD = "POST_BUILD".asInstanceOf[POST_BUILD]
   @scala.inline
   def POTENTIALLY_UNWANTED: POTENTIALLY_UNWANTED = "POTENTIALLY_UNWANTED".asInstanceOf[POTENTIALLY_UNWANTED]
@@ -34376,11 +34519,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PR: PR = "PR".asInstanceOf[PR]
   @scala.inline
+  def PREFERRED: PREFERRED = "PREFERRED".asInstanceOf[PREFERRED]
+  @scala.inline
   def PREFIX: PREFIX = "PREFIX".asInstanceOf[PREFIX]
   @scala.inline
   def PREMIUM: PREMIUM = "PREMIUM".asInstanceOf[PREMIUM]
   @scala.inline
   def PREPARING: PREPARING = "PREPARING".asInstanceOf[PREPARING]
+  @scala.inline
+  def PREPASS: PREPASS = "PREPASS".asInstanceOf[PREPASS]
   @scala.inline
   def PRESENT: PRESENT = "PRESENT".asInstanceOf[PRESENT]
   @scala.inline
@@ -34710,6 +34857,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Queued: Queued = "Queued".asInstanceOf[Queued]
   @scala.inline
+  def RADIAN: RADIAN = "RADIAN".asInstanceOf[RADIAN]
+  @scala.inline
   def RAI_ADAPT: RAI_ADAPT = "RAI_ADAPT".asInstanceOf[RAI_ADAPT]
   @scala.inline
   def RAI_SEGSTART: RAI_SEGSTART = "RAI_SEGSTART".asInstanceOf[RAI_SEGSTART]
@@ -34902,6 +35051,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def REQUEST_TOO_LARGE: REQUEST_TOO_LARGE = "REQUEST_TOO_LARGE".asInstanceOf[REQUEST_TOO_LARGE]
   @scala.inline
+  def REQUIRED: REQUIRED = "REQUIRED".asInstanceOf[REQUIRED]
+  @scala.inline
   def REQUIRED_ALWAYS: REQUIRED_ALWAYS = "REQUIRED_ALWAYS".asInstanceOf[REQUIRED_ALWAYS]
   @scala.inline
   def REQUIRES_ACCEPTANCE: REQUIRES_ACCEPTANCE = "REQUIRES_ACCEPTANCE".asInstanceOf[REQUIRES_ACCEPTANCE]
@@ -34993,6 +35144,8 @@ object awsDashSdkLibStrings {
   def RFC_6381: RFC_6381 = "RFC_6381".asInstanceOf[RFC_6381]
   @scala.inline
   def RIFF: RIFF = "RIFF".asInstanceOf[RIFF]
+  @scala.inline
+  def RIGHT_HAND: RIGHT_HAND = "RIGHT_HAND".asInstanceOf[RIGHT_HAND]
   @scala.inline
   def RINGCENTRAL: RINGCENTRAL = "RINGCENTRAL".asInstanceOf[RINGCENTRAL]
   @scala.inline
@@ -36586,6 +36739,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Token: Token = "Token".asInstanceOf[Token]
   @scala.inline
+  def TollFree: TollFree = "TollFree".asInstanceOf[TollFree]
+  @scala.inline
   def Topic: Topic = "Topic".asInstanceOf[Topic]
   @scala.inline
   def `Topic not found`: `Topic not found` = "Topic not found".asInstanceOf[`Topic not found`]
@@ -37370,6 +37525,12 @@ object awsDashSdkLibStrings {
   @scala.inline
   def amazon_linux: amazon_linux = "amazon_linux".asInstanceOf[amazon_linux]
   @scala.inline
+  def `antenna-downlink`: `antenna-downlink` = "antenna-downlink".asInstanceOf[`antenna-downlink`]
+  @scala.inline
+  def `antenna-downlink-demod-decode`: `antenna-downlink-demod-decode` = "antenna-downlink-demod-decode".asInstanceOf[`antenna-downlink-demod-decode`]
+  @scala.inline
+  def `antenna-uplink`: `antenna-uplink` = "antenna-uplink".asInstanceOf[`antenna-uplink`]
+  @scala.inline
   def anyInstanceInService: anyInstanceInService = "anyInstanceInService".asInstanceOf[anyInstanceInService]
   @scala.inline
   def `ap-east-1`: `ap-east-1` = "ap-east-1".asInstanceOf[`ap-east-1`]
@@ -37407,6 +37568,8 @@ object awsDashSdkLibStrings {
   def `appstream:fleet:DesiredCapacity`: `appstream:fleet:DesiredCapacity` = "appstream:fleet:DesiredCapacity".asInstanceOf[`appstream:fleet:DesiredCapacity`]
   @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
+  @scala.inline
+  def `ar-SA`: `ar-SA` = "ar-SA".asInstanceOf[`ar-SA`]
   @scala.inline
   def arb: arb = "arb".asInstanceOf[arb]
   @scala.inline
@@ -37810,6 +37973,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def createVolumePermission: createVolumePermission = "createVolumePermission".asInstanceOf[createVolumePermission]
   @scala.inline
+  def created: created = "created".asInstanceOf[created]
+  @scala.inline
   def creating: creating = "creating".asInstanceOf[creating]
   @scala.inline
   def `cross-az`: `cross-az` = "cross-az".asInstanceOf[`cross-az`]
@@ -37866,6 +38031,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def dBSnapshotDeleted: dBSnapshotDeleted = "dBSnapshotDeleted".asInstanceOf[dBSnapshotDeleted]
   @scala.inline
+  def dBW: dBW = "dBW".asInstanceOf[dBW]
+  @scala.inline
   def da: da = "da".asInstanceOf[da]
   @scala.inline
   def `da-DK`: `da-DK` = "da-DK".asInstanceOf[`da-DK`]
@@ -37887,6 +38054,8 @@ object awsDashSdkLibStrings {
   def `data-reload`: `data-reload` = "data-reload".asInstanceOf[`data-reload`]
   @scala.inline
   def dataSourceAvailable: dataSourceAvailable = "dataSourceAvailable".asInstanceOf[dataSourceAvailable]
+  @scala.inline
+  def `dataflow-endpoint`: `dataflow-endpoint` = "dataflow-endpoint".asInstanceOf[`dataflow-endpoint`]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
@@ -38567,6 +38736,8 @@ object awsDashSdkLibStrings {
   def json: json = "json".asInstanceOf[json]
   @scala.inline
   def `json-file`: `json-file` = "json-file".asInstanceOf[`json-file`]
+  @scala.inline
+  def kHz: kHz = "kHz".asInstanceOf[kHz]
   @scala.inline
   def kernel: kernel = "kernel".asInstanceOf[kernel]
   @scala.inline
@@ -39782,6 +39953,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `tr-TR`: `tr-TR` = "tr-TR".asInstanceOf[`tr-TR`]
   @scala.inline
+  def tracking: tracking = "tracking".asInstanceOf[tracking]
+  @scala.inline
   def trackingOptions: trackingOptions = "trackingOptions".asInstanceOf[trackingOptions]
   @scala.inline
   def trainingJobCompletedOrStopped: trainingJobCompletedOrStopped = "trainingJobCompletedOrStopped".asInstanceOf[trainingJobCompletedOrStopped]
@@ -39837,6 +40010,8 @@ object awsDashSdkLibStrings {
   def update_dependencies: update_dependencies = "update_dependencies".asInstanceOf[update_dependencies]
   @scala.inline
   def updating: updating = "updating".asInstanceOf[updating]
+  @scala.inline
+  def `uplink-echo`: `uplink-echo` = "uplink-echo".asInstanceOf[`uplink-echo`]
   @scala.inline
   def upperJawlineLeft: upperJawlineLeft = "upperJawlineLeft".asInstanceOf[upperJawlineLeft]
   @scala.inline

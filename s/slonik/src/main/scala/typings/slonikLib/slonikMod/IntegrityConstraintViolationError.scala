@@ -7,5 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("slonik", "IntegrityConstraintViolationError")
 @js.native
-class IntegrityConstraintViolationError () extends SlonikError
+class IntegrityConstraintViolationError protected () extends SlonikError {
+  def this(error: stdLib.Error, constraint: java.lang.String) = this()
+  var constraint: java.lang.String = js.native
+  var originalError: stdLib.Error = js.native
+}
 

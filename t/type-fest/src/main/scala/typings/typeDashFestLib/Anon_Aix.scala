@@ -66,9 +66,7 @@ trait Anon_Aix
   /**
   	Engines that this package runs on.
   	*/
-  var engines: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ EngineName in 'npm' | 'node' | string ]: string}
-    */ js.UndefOr[
+  var engines: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ EngineName in 'npm' | 'node' | string ]: string}
     */ typeDashFestLib.typeDashFestLibStrings.Anon_Aix with js.Any

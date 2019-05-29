@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object vscodeDashJsonrpcMod {
   type GenericNotificationHandler = js.Function1[/* repeated */ js.Any, scala.Unit]
   type GenericRequestHandler[R, E] = js.Function1[/* repeated */ js.Any, HandlerResult[R, E]]
-  type HandlerResult[R, E] = R | vscodeDashJsonrpcLib.libMessagesMod.ResponseError[E] | vscodeDashJsonrpcLib.Thenable[R] | vscodeDashJsonrpcLib.Thenable[vscodeDashJsonrpcLib.libMessagesMod.ResponseError[E]] | (vscodeDashJsonrpcLib.Thenable[R | vscodeDashJsonrpcLib.libMessagesMod.ResponseError[E]])
+  type HandlerResult[R, E] = R | vscodeDashJsonrpcLib.libMessagesMod.ResponseError[E] | (vscodeDashJsonrpcLib.Thenable[R | vscodeDashJsonrpcLib.libMessagesMod.ResponseError[E]])
   type MessageQueue = vscodeDashJsonrpcLib.libLinkedMapMod.LinkedMap[java.lang.String, vscodeDashJsonrpcLib.libMessagesMod.Message]
   type NotificationHandler[P] = js.Function1[/* params */ P, scala.Unit]
   type NotificationHandler0 = js.Function0[scala.Unit]

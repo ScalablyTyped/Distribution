@@ -387,13 +387,11 @@ trait SeriesPictorialBar extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.data
     */
   var data: js.UndefOr[
-    (js.Array[
-      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesPictorialBarNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    js.Array[
+      (js.Array[
         scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesPictorialBarNs.DataObject
-      ]
-    ])
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesPictorialBarNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ]
   ] = js.undefined
   /**
     * `dimensions` can be used to define dimension info for `series.data`
@@ -1202,13 +1200,11 @@ object SeriesPictorialBar {
     barWidth: scala.Int | scala.Double = null,
     coordinateSystem: java.lang.String = null,
     cursor: java.lang.String = null,
-    data: (js.Array[
-      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesPictorialBarNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    data: js.Array[
+      (js.Array[
         scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesPictorialBarNs.DataObject
-      ]
-    ]) = null,
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesPictorialBarNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ] = null,
     dimensions: js.Array[_] = null,
     emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = null,
     encode: js.Object = null,
@@ -1254,7 +1250,7 @@ object SeriesPictorialBar {
     if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
     if (encode != null) __obj.updateDynamic("encode")(encode)

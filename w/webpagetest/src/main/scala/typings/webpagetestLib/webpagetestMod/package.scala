@@ -12,7 +12,5 @@ package object webpagetestMod {
     /* info */ js.Any, 
     scala.Unit
   ]
-  type TestScriptCommand = java.lang.String | (org.scalablytyped.runtime.StringDictionary[
-    java.lang.String | scala.Double | js.Array[java.lang.String] | js.Array[scala.Double]
-  ])
+  type TestScriptCommand = java.lang.String | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | (js.Array[scala.Double | java.lang.String])])
 }

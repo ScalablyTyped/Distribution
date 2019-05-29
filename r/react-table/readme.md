@@ -41,8 +41,9 @@ These comments are from the typescript definitions and might be useful:
 //                 Pavel Sakalo <https://github.com/psakalo>,
 //                 Krzysztof Porębski <https://github.com/Havret>,
 //                 Andy S <https://github.com/andys8>,
-//                 Grzegorz Rozdzialik <https://github.com/Gelio>
-//                 Cam Pepin <https://github.com/cpepin>
+//                 Grzegorz Rozdzialik <https://github.com/Gelio>,
+//                 Cam Pepin <https://github.com/cpepin>,
+//                 Sarid Shinwari <https://github.com/ngrok-sarid>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

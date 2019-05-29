@@ -84,17 +84,7 @@ trait ChessInstance extends js.Object {
     * if not passed the verbose flag.
     */
   def history(options: chessDotJsLib.Anon_True): js.Array[Move] = js.native
-  def history(options: chessDotJsLib.Anon_Verbose): js.Array[java.lang.String] | js.Array[Move] = js.native
-  /**
-    * Returns a list containing the moves of the current game.
-    * Options is an optional parameter which may contain a 'verbose' flag.
-    * See .moves() for a description of the verbose move fields.
-    * @param options an optional parameter which may contain a 'verbose' flag.
-    * @returns a list of all moves of the current game. They will be strings
-    * if not passed the verbose flag.
-    */
-  @JSName("history")
-  def `history_<union>`(): js.Array[java.lang.String] | js.Array[Move] = js.native
+  def history(options: chessDotJsLib.Anon_Verbose): js.Array[Move | java.lang.String] = js.native
   /**
     * Returns true or false if the side to move is in check.
     * @returns true or false if the side to move is in check.
@@ -190,18 +180,7 @@ trait ChessInstance extends js.Object {
     * verbose objects.
     */
   def moves(options: chessDotJsLib.Anon_Square): js.Array[Move] = js.native
-  def moves(options: chessDotJsLib.Anon_SquareVerbose): js.Array[java.lang.String] | js.Array[Move] = js.native
-  /**
-    * Returns a list of legal moves from the current position.
-    * The function takes an optional parameter which controls the
-    * single-square move generation and verbosity.
-    * @param options an optional parameter which controls the single-square
-    * move generation and verbosity.
-    * @returns The list of all valid moves, either in SAN format, or as
-    * verbose objects.
-    */
-  @JSName("moves")
-  def `moves_<union>`(): js.Array[java.lang.String] | js.Array[Move] = js.native
+  def moves(options: chessDotJsLib.Anon_SquareVerbose): js.Array[Move | java.lang.String] = js.native
   /**
     * Returns the game in PGN format.
     * Options is an optional parameter which may include max width and/or a

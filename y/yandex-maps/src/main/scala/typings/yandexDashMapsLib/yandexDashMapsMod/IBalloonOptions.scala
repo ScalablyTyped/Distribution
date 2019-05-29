@@ -9,7 +9,7 @@ trait IBalloonOptions extends js.Object {
   var autoPan: js.UndefOr[scala.Boolean] = js.undefined
   var autoPanCheckZoomRange: js.UndefOr[scala.Boolean] = js.undefined
   var autoPanDuration: js.UndefOr[scala.Double] = js.undefined
-  var autoPanMargin: js.UndefOr[js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double] = js.undefined
+  var autoPanMargin: js.UndefOr[(js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double] = js.undefined
   var autoPanUseMapMargin: js.UndefOr[scala.Boolean] = js.undefined
   var closeButton: js.UndefOr[scala.Boolean] = js.undefined
   var contentLayout: js.UndefOr[IClassConstructor[ILayout] | java.lang.String] = js.undefined
@@ -34,7 +34,7 @@ object IBalloonOptions {
     autoPan: js.UndefOr[scala.Boolean] = js.undefined,
     autoPanCheckZoomRange: js.UndefOr[scala.Boolean] = js.undefined,
     autoPanDuration: scala.Int | scala.Double = null,
-    autoPanMargin: js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double = null,
+    autoPanMargin: (js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double = null,
     autoPanUseMapMargin: js.UndefOr[scala.Boolean] = js.undefined,
     closeButton: js.UndefOr[scala.Boolean] = js.undefined,
     contentLayout: IClassConstructor[ILayout] | java.lang.String = null,

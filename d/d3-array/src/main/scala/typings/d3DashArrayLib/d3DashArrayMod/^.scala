@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def ascending(): scala.Double = js.native
-  def ascending(a: Primitive | js.UndefOr[scala.Nothing], b: Primitive): scala.Double = js.native
+  def ascending(a: js.UndefOr[Primitive], b: Primitive): scala.Double = js.native
   def ascending(a: Primitive): scala.Double = js.native
   def bisectLeft(array: stdLib.ArrayLike[java.lang.String], x: java.lang.String): scala.Double = js.native
   def bisectLeft(array: stdLib.ArrayLike[java.lang.String], x: java.lang.String, lo: scala.Double): scala.Double = js.native
@@ -34,7 +34,7 @@ object ^ extends js.Object {
   def cross[S, T](a: stdLib.Iterable[S], b: stdLib.Iterable[T]): js.Array[js.Tuple2[S, T]] = js.native
   def cross[S, T, U](a: stdLib.Iterable[S], b: stdLib.Iterable[T], reducer: js.Function2[/* a */ S, /* b */ T, U]): js.Array[U] = js.native
   def descending(): scala.Double = js.native
-  def descending(a: Primitive | js.UndefOr[scala.Nothing], b: Primitive): scala.Double = js.native
+  def descending(a: js.UndefOr[Primitive], b: Primitive): scala.Double = js.native
   def descending(a: Primitive): scala.Double = js.native
   def deviation[T /* <: Numeric */](array: stdLib.Iterable[js.UndefOr[T | scala.Null]]): js.UndefOr[scala.Double] = js.native
   def deviation[T](
@@ -46,7 +46,7 @@ object ^ extends js.Object {
       js.UndefOr[scala.Double | scala.Null]
     ]
   ): js.UndefOr[scala.Double] = js.native
-  def extent(array: stdLib.Iterable[java.lang.String]): (js.Tuple2[java.lang.String, java.lang.String]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
+  def extent(array: stdLib.Iterable[java.lang.String]): js.Tuple2[js.UndefOr[java.lang.String], js.UndefOr[java.lang.String]] = js.native
   def extent[T](
     array: stdLib.Iterable[T],
     accessor: js.Function3[
@@ -55,9 +55,9 @@ object ^ extends js.Object {
       /* array */ stdLib.Iterable[T], 
       js.UndefOr[java.lang.String | scala.Null]
     ]
-  ): (js.Tuple2[java.lang.String, java.lang.String]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
+  ): js.Tuple2[js.UndefOr[java.lang.String], js.UndefOr[java.lang.String]] = js.native
   @JSName("extent")
-  def extent_TNumeric[T /* <: Numeric */](array: stdLib.Iterable[T]): (js.Tuple2[T, T]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
+  def extent_TNumeric[T /* <: Numeric */](array: stdLib.Iterable[T]): js.Tuple2[js.UndefOr[T], js.UndefOr[T]] = js.native
   @JSName("extent")
   def extent_TUNumeric[T, U /* <: Numeric */](
     array: stdLib.Iterable[T],
@@ -67,13 +67,13 @@ object ^ extends js.Object {
       /* array */ stdLib.Iterable[T], 
       js.UndefOr[U | scala.Null]
     ]
-  ): (js.Tuple2[U, U]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]]) = js.native
+  ): js.Tuple2[js.UndefOr[U], js.UndefOr[U]] = js.native
   def group[TObject, TKey](a: stdLib.Iterable[TObject], key: js.Function1[/* value */ TObject, TKey]): stdLib.Map[TKey, js.Array[TObject]] = js.native
   def histogram(): HistogramGeneratorNumber[scala.Double, scala.Double] = js.native
   @JSName("histogram")
-  def histogram_DatumValueUndefOr[Datum, Value /* <: js.UndefOr[scala.Double] */](): HistogramGeneratorNumber[Datum, Value] = js.native
+  def `histogram_DatumValue<union>`[Datum, Value /* <: js.UndefOr[scala.Double] */](): HistogramGeneratorNumber[Datum, Value] = js.native
   @JSName("histogram")
-  def histogram_DatumValueUndefOrHistogramGeneratorDate[Datum, Value /* <: js.UndefOr[stdLib.Date] */](): HistogramGeneratorDate[Datum, Value] = js.native
+  def `histogram_DatumValue<union>HistogramGeneratorDate`[Datum, Value /* <: js.UndefOr[stdLib.Date] */](): HistogramGeneratorDate[Datum, Value] = js.native
   def max(array: stdLib.Iterable[java.lang.String]): js.UndefOr[java.lang.String] = js.native
   def max[T](
     array: stdLib.Iterable[T],

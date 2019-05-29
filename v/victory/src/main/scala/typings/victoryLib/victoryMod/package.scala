@@ -47,7 +47,7 @@ package object victoryMod {
   /**
     * Data domain type
     */
-  type DomainTuple = (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[stdLib.Date, stdLib.Date])
+  type DomainTuple = js.Tuple2[stdLib.Date | scala.Double, stdLib.Date | scala.Double]
   type NumberOrCallback = (js.Function2[/* datum */ js.Any, /* active */ scala.Boolean, scala.Double]) | scala.Double
   /**
     * @see https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html

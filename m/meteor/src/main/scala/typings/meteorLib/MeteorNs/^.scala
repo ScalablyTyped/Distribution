@@ -25,15 +25,15 @@ object ^ extends js.Object {
   var users: meteorLib.MongoNs.Collection[User] = js.native
   def _debug(args: js.Any*): scala.Unit = js.native
   @JSName("apply")
-  def apply[Result /* <: meteorLib.EJSONable | js.Array[meteorLib.EJSONable] | meteorLib.EJSONableProperty | js.Array[meteorLib.EJSONableProperty] */](name: java.lang.String, args: js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty]): js.Any = js.native
+  def apply[Result /* <: meteorLib.EJSONable | (js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty]) | meteorLib.EJSONableProperty */](name: java.lang.String, args: js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty]): js.Any = js.native
   @JSName("apply")
-  def apply[Result /* <: meteorLib.EJSONable | js.Array[meteorLib.EJSONable] | meteorLib.EJSONableProperty | js.Array[meteorLib.EJSONableProperty] */](
+  def apply[Result /* <: meteorLib.EJSONable | (js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty]) | meteorLib.EJSONableProperty */](
     name: java.lang.String,
     args: js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty],
     options: meteorLib.Anon_Error[Result]
   ): js.Any = js.native
   @JSName("apply")
-  def apply[Result /* <: meteorLib.EJSONable | js.Array[meteorLib.EJSONable] | meteorLib.EJSONableProperty | js.Array[meteorLib.EJSONableProperty] */](
+  def apply[Result /* <: meteorLib.EJSONable | (js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty]) | meteorLib.EJSONableProperty */](
     name: java.lang.String,
     args: js.Array[meteorLib.EJSONable | meteorLib.EJSONableProperty],
     options: meteorLib.Anon_Error[Result],

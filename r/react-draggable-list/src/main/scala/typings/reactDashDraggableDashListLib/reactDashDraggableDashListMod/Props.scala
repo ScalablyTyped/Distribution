@@ -24,7 +24,7 @@ trait Props[I, C, T] extends js.Object {
   ] = js.undefined
   var padding: js.UndefOr[scala.Double] = js.undefined
   var springConfig: js.UndefOr[js.Object] = js.undefined
-  var template: org.scalablytyped.runtime.Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[/* context */ js.Any], T]
+  var template: org.scalablytyped.runtime.Instantiable2[/* props */ js.Any, js.UndefOr[/* context */ js.Any], T]
   var unsetZIndex: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -33,7 +33,7 @@ object Props {
   def apply[I, C, T](
     itemKey: java.lang.String | (js.Function1[/* item */ I, java.lang.String]),
     list: js.Array[I],
-    template: org.scalablytyped.runtime.Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[/* context */ js.Any], T],
+    template: org.scalablytyped.runtime.Instantiable2[/* props */ js.Any, js.UndefOr[/* context */ js.Any], T],
     autoScrollMaxSpeed: scala.Int | scala.Double = null,
     autoScrollRegionSize: scala.Int | scala.Double = null,
     commonProps: C = null,

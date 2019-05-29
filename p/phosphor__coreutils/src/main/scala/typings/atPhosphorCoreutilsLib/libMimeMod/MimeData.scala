@@ -31,7 +31,7 @@ class MimeData () extends js.Object {
     * @returns The value for the given MIME type, or `undefined` if
     *   the dataset does not contain a value for the type.
     */
-  def getData(mime: java.lang.String): js.UndefOr[_] = js.native
+  def getData(mime: java.lang.String): js.UndefOr[js.Any] = js.native
   /**
     * Test whether the dataset has an entry for the given type.
     *

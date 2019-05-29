@@ -18,7 +18,7 @@ trait FeatureFormViewModelProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#fieldConfig)
     */
-  var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties] | js.Array[FieldGroupConfigProperties]] = js.undefined
+  var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties | FieldGroupConfigProperties]] = js.undefined
   /**
     * Layer containing the editable feature attributes. If this layer is not specified, it is the same as the [graphic's layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#layer).
     *
@@ -37,13 +37,13 @@ object FeatureFormViewModelProperties {
   @scala.inline
   def apply(
     feature: GraphicProperties = null,
-    fieldConfig: js.Array[FieldConfigProperties] | js.Array[FieldGroupConfigProperties] = null,
+    fieldConfig: js.Array[FieldConfigProperties | FieldGroupConfigProperties] = null,
     layer: FeatureLayerProperties = null,
     valid: js.UndefOr[scala.Boolean] = js.undefined
   ): FeatureFormViewModelProperties = {
     val __obj = js.Dynamic.literal()
     if (feature != null) __obj.updateDynamic("feature")(feature)
-    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
+    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
     __obj.asInstanceOf[FeatureFormViewModelProperties]

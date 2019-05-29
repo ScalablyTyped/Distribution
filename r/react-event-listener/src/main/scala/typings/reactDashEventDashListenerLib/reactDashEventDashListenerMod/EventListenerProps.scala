@@ -56,10 +56,10 @@ trait EventListenerProps extends js.Object {
   var onEmptiedCapture: js.UndefOr[js.Function1[/* ev */ stdLib.Event, _]] = js.undefined
   var onEnded: js.UndefOr[js.Function1[/* ev */ stdLib.Event, _]] = js.undefined
   var onEndedCapture: js.UndefOr[js.Function1[/* ev */ stdLib.Event, _]] = js.undefined
-  var onError: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.UndefOr[
+  var onError: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any
   ] = js.undefined
-  var onErrorCapture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.UndefOr[
+  var onErrorCapture: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any
   ] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* ev */ stdLib.FocusEvent, _]] = js.undefined

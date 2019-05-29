@@ -29,7 +29,9 @@ trait Scale extends js.Object {
     * The `selection` property can be used to [interactively determine](https://vega.github.io/vega-lite/docs/selection.html#scale-domains) the scale domain.
     */
   var domain: js.UndefOr[
-    js.Array[scala.Double] | js.Array[java.lang.String] | js.Array[scala.Boolean] | js.Array[vegaDashLiteLib.buildSrcDatetimeMod.DateTime] | vegaDashLiteLib.vegaDashLiteLibStrings.unaggregated | SelectionDomain
+    (js.Array[
+      scala.Boolean | vegaDashLiteLib.buildSrcDatetimeMod.DateTime | scala.Double | java.lang.String
+    ]) | vegaDashLiteLib.vegaDashLiteLibStrings.unaggregated | SelectionDomain
   ] = js.undefined
   /**
     * The exponent of the `pow` scale.
@@ -103,7 +105,7 @@ trait Scale extends js.Object {
     *
     * 2) Any directly specified `range` for `x` and `y` channels will be ignored. Range can be customized via the view's corresponding [size](https://vega.github.io/vega-lite/docs/size.html) (`width` and `height`) or via [range steps and paddings properties](#range-step) for [band](#band) and [point](#point) scales.
     */
-  var range: js.UndefOr[js.Array[scala.Double] | js.Array[java.lang.String] | java.lang.String] = js.undefined
+  var range: js.UndefOr[(js.Array[scala.Double | java.lang.String]) | java.lang.String] = js.undefined
   /**
     * The distance between the starts of adjacent bands or points in [band](https://vega.github.io/vega-lite/docs/scale.html#band) and [point](https://vega.github.io/vega-lite/docs/scale.html#point) scales.
     *
@@ -164,14 +166,16 @@ object Scale {
   def apply(
     base: scala.Int | scala.Double = null,
     clamp: js.UndefOr[scala.Boolean] = js.undefined,
-    domain: js.Array[scala.Double] | js.Array[java.lang.String] | js.Array[scala.Boolean] | js.Array[vegaDashLiteLib.buildSrcDatetimeMod.DateTime] | vegaDashLiteLib.vegaDashLiteLibStrings.unaggregated | SelectionDomain = null,
+    domain: (js.Array[
+      scala.Boolean | vegaDashLiteLib.buildSrcDatetimeMod.DateTime | scala.Double | java.lang.String
+    ]) | vegaDashLiteLib.vegaDashLiteLibStrings.unaggregated | SelectionDomain = null,
     exponent: scala.Int | scala.Double = null,
     interpolate: vegaDashLiteLib.buildSrcVegaDotSchemaMod.ScaleInterpolate | vegaDashLiteLib.buildSrcVegaDotSchemaMod.ScaleInterpolateParams = null,
     nice: scala.Boolean | scala.Double | NiceTime | vegaDashLiteLib.Anon_Interval = null,
     padding: scala.Int | scala.Double = null,
     paddingInner: scala.Int | scala.Double = null,
     paddingOuter: scala.Int | scala.Double = null,
-    range: js.Array[scala.Double] | js.Array[java.lang.String] | java.lang.String = null,
+    range: (js.Array[scala.Double | java.lang.String]) | java.lang.String = null,
     rangeStep: scala.Int | scala.Double = null,
     reverse: js.UndefOr[scala.Boolean] = js.undefined,
     round: js.UndefOr[scala.Boolean] = js.undefined,

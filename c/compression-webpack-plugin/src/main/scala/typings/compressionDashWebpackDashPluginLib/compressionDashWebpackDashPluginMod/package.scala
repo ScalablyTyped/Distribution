@@ -14,5 +14,5 @@ package object compressionDashWebpackDashPluginMod {
   ]
   type AlgorithmCallback = js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
   type CompressionPlugin[O] = webpackLib.webpackMod.Plugin
-  type Pattern = java.lang.String | stdLib.RegExp | js.Array[stdLib.RegExp] | js.Array[java.lang.String]
+  type Pattern = java.lang.String | stdLib.RegExp | (js.Array[stdLib.RegExp | java.lang.String])
 }

@@ -29,7 +29,7 @@ trait IPolygonOptions extends js.Object {
   var polygonOverlay: js.UndefOr[java.lang.String] = js.undefined
   var strokeColor: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var strokeOpacity: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
-  var strokeStyle: js.UndefOr[java.lang.String | js.Array[java.lang.String] | js.Object | js.Array[js.Object]] = js.undefined
+  var strokeStyle: js.UndefOr[java.lang.String | (js.Array[js.Object | java.lang.String]) | js.Object] = js.undefined
   var strokeWidth: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var syncOverlayInit: js.UndefOr[scala.Boolean] = js.undefined
   var useMapMarginInDragging: js.UndefOr[scala.Boolean] = js.undefined
@@ -64,7 +64,7 @@ object IPolygonOptions {
     polygonOverlay: java.lang.String = null,
     strokeColor: java.lang.String | js.Array[java.lang.String] = null,
     strokeOpacity: scala.Double | js.Array[scala.Double] = null,
-    strokeStyle: java.lang.String | js.Array[java.lang.String] | js.Object | js.Array[js.Object] = null,
+    strokeStyle: java.lang.String | (js.Array[js.Object | java.lang.String]) | js.Object = null,
     strokeWidth: scala.Double | js.Array[scala.Double] = null,
     syncOverlayInit: js.UndefOr[scala.Boolean] = js.undefined,
     useMapMarginInDragging: js.UndefOr[scala.Boolean] = js.undefined,

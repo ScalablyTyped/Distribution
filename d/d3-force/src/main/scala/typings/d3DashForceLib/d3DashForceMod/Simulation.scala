@@ -95,7 +95,7 @@ trait Simulation[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: js.Unde
     * @param name Name of the registered force.
     */
   @JSName("force")
-  def force_FForceUndefOr[F /* <: Force[NodeDatum, LinkDatum] */](name: java.lang.String): js.UndefOr[F] = js.native
+  def `force_FForce<union>`[F /* <: Force[NodeDatum, LinkDatum] */](name: java.lang.String): js.UndefOr[F] = js.native
   /**
     * Returns the simulation’s array of nodes as specified to the constructor.
     */

@@ -77,7 +77,7 @@ trait IonDatetime extends js.Object {
   /**
     * Any additional options that the picker interface can accept. See the [Picker API docs](../picker) for the picker options.
     */
-  var pickerOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.UndefOr[
+  var pickerOptions: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any
   ] = js.undefined
   /**

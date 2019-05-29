@@ -127,8 +127,8 @@ class Worksheet protected () extends Sheet {
   def Columns(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native
   def Comments(Index: scala.Double): Comment = js.native
   def Copy(): scala.Unit = js.native
-  def Copy(Before: Sheet): scala.Unit = js.native
   def Copy(Before: js.UndefOr[scala.Nothing], After: Sheet): scala.Unit = js.native
+  def Copy(Before: Sheet): scala.Unit = js.native
   def CustomProperties(Index: java.lang.String): CustomProperty = js.native
   def CustomProperties(Index: scala.Double): CustomProperty = js.native
   def Delete(): scala.Unit = js.native
@@ -168,13 +168,13 @@ class Worksheet protected () extends Sheet {
   def Move(): scala.Unit = js.native
   def Move(Before: Sheet): scala.Unit = js.native
   def Move(Before: Sheet, After: Sheet): scala.Unit = js.native
-  def Names(Index: java.lang.String): Name = js.native
-  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
   def Names(
     Index: js.UndefOr[scala.Nothing],
     IndexLocal: js.UndefOr[scala.Nothing],
     RefersTo: java.lang.String
   ): Name = js.native
+  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
+  def Names(Index: java.lang.String): Name = js.native
   def Names(Index: scala.Double): Name = js.native
   def OLEObjects(): activexDashExcelLib.ExcelNs.OLEObjects = js.native
   def OLEObjects(Index: java.lang.String): OLEObject = js.native
@@ -187,121 +187,51 @@ class Worksheet protected () extends Sheet {
   def Paste(Destination: Range): scala.Unit = js.native
   def Paste(Destination: Range, Link: scala.Boolean): scala.Unit = js.native
   def PasteSpecial(
-    Format: java.lang.String,
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: java.lang.String,
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: java.lang.String,
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String,
-    IconIndex: scala.Double
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: java.lang.String,
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String,
-    IconIndex: scala.Double,
-    IconLabel: java.lang.String
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: java.lang.String,
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String,
-    IconIndex: scala.Double,
-    IconLabel: java.lang.String,
-    NoHTMLFormatting: scala.Boolean
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: java.lang.String,
-    Link: scala.Boolean,
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: java.lang.String,
-    Link: scala.Boolean,
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: java.lang.String,
-    Link: scala.Boolean,
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String,
-    IconIndex: scala.Double
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: java.lang.String,
-    Link: scala.Boolean,
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String,
-    IconIndex: scala.Double,
-    IconLabel: java.lang.String
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: java.lang.String,
-    Link: scala.Boolean,
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String,
-    IconIndex: scala.Double,
-    IconLabel: java.lang.String,
-    NoHTMLFormatting: scala.Boolean
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: js.UndefOr[scala.Nothing],
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: js.UndefOr[scala.Nothing],
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: js.UndefOr[scala.Nothing],
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String,
-    IconIndex: scala.Double
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: js.UndefOr[scala.Nothing],
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String,
-    IconIndex: scala.Double,
-    IconLabel: java.lang.String
-  ): scala.Unit = js.native
-  def PasteSpecial(
-    Format: js.UndefOr[scala.Nothing],
-    Link: js.UndefOr[scala.Nothing],
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: java.lang.String,
-    IconIndex: scala.Double,
-    IconLabel: java.lang.String,
-    NoHTMLFormatting: scala.Boolean
-  ): scala.Unit = js.native
-  def PasteSpecial(
     Format: js.UndefOr[java.lang.String],
     Link: js.UndefOr[scala.Boolean],
     DisplayAsIcon: js.UndefOr[scala.Boolean],
-    IconFileName: js.UndefOr[js.UndefOr[scala.Nothing]],
-    IconIndex: js.UndefOr[js.UndefOr[scala.Nothing]],
-    IconLabel: js.UndefOr[js.UndefOr[scala.Nothing]],
+    IconFileName: js.UndefOr[scala.Nothing],
+    IconIndex: js.UndefOr[scala.Nothing],
+    IconLabel: js.UndefOr[scala.Nothing],
     NoHTMLFormatting: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
   def PasteSpecial(
     Format: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String,
+    IconIndex: scala.Double
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String,
+    IconIndex: scala.Double,
+    IconLabel: java.lang.String
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String,
+    IconIndex: scala.Double,
+    IconLabel: java.lang.String,
+    NoHTMLFormatting: scala.Boolean
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: js.UndefOr[scala.Nothing],
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): scala.Unit = js.native
@@ -328,6 +258,76 @@ class Worksheet protected () extends Sheet {
   ): scala.Unit = js.native
   def PasteSpecial(
     Format: js.UndefOr[scala.Nothing],
+    Link: scala.Boolean,
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String,
+    IconIndex: scala.Double,
+    IconLabel: java.lang.String,
+    NoHTMLFormatting: scala.Boolean
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String,
+    IconIndex: scala.Double
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String,
+    IconIndex: scala.Double,
+    IconLabel: java.lang.String
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
+    Link: js.UndefOr[scala.Nothing],
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String,
+    IconIndex: scala.Double,
+    IconLabel: java.lang.String,
+    NoHTMLFormatting: scala.Boolean
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
+    Link: scala.Boolean,
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
+    Link: scala.Boolean,
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
+    Link: scala.Boolean,
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String,
+    IconIndex: scala.Double
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
+    Link: scala.Boolean,
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: java.lang.String,
+    IconIndex: scala.Double,
+    IconLabel: java.lang.String
+  ): scala.Unit = js.native
+  def PasteSpecial(
+    Format: java.lang.String,
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: java.lang.String,
@@ -348,7 +348,7 @@ class Worksheet protected () extends Sheet {
     SaveData: js.UndefOr[scala.Boolean],
     HasAutoFormat: js.UndefOr[scala.Boolean],
     AutoPage: js.UndefOr[PivotTableWizardAutoPage[TSourceType]],
-    Reserved: js.UndefOr[js.UndefOr[scala.Nothing]],
+    Reserved: js.UndefOr[scala.Nothing],
     BackgroundQuery: js.UndefOr[scala.Boolean],
     OptimizeCache: js.UndefOr[scala.Boolean],
     PageFieldOrder: js.UndefOr[XlOrder],
@@ -364,9 +364,9 @@ class Worksheet protected () extends Sheet {
     Copies: js.UndefOr[scala.Double],
     Preview: js.UndefOr[scala.Boolean],
     ActivePrinter: js.UndefOr[java.lang.String],
-    PrintToFile: js.UndefOr[scala.Boolean | js.UndefOr[scala.Nothing]],
+    PrintToFile: js.UndefOr[scala.Boolean],
     Collate: js.UndefOr[scala.Boolean],
-    PrToFileName: js.UndefOr[PrintToFileName[scala.Boolean | js.UndefOr[scala.Nothing]]],
+    PrToFileName: js.UndefOr[PrintToFileName[js.UndefOr[scala.Boolean]]],
     IgnorePrintAreas: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
   def PrintPreview(): scala.Unit = js.native

@@ -100,21 +100,21 @@ trait TypeofImmutable extends js.Object {
   def isValueObject(maybeValue: js.Any): /* is immutable.immutable.ValueObject */ scala.Boolean = js.native
   def merge[C](
     collection: C,
-    collections: (stdLib.Iterable[_] | (stdLib.Iterable[js.Tuple2[_, _]]) | org.scalablytyped.runtime.StringDictionary[js.Any])*
+    collections: ((stdLib.Iterable[_ | (js.Tuple2[_, _])]) | org.scalablytyped.runtime.StringDictionary[js.Any])*
   ): C = js.native
   def mergeDeep[C](
     collection: C,
-    collections: (stdLib.Iterable[_] | (stdLib.Iterable[js.Tuple2[_, _]]) | org.scalablytyped.runtime.StringDictionary[js.Any])*
+    collections: ((stdLib.Iterable[_ | (js.Tuple2[_, _])]) | org.scalablytyped.runtime.StringDictionary[js.Any])*
   ): C = js.native
   def mergeDeepWith[C](
     merger: js.Function3[/* oldVal */ js.Any, /* newVal */ js.Any, /* key */ js.Any, _],
     collection: C,
-    collections: (stdLib.Iterable[_] | (stdLib.Iterable[js.Tuple2[_, _]]) | org.scalablytyped.runtime.StringDictionary[js.Any])*
+    collections: ((stdLib.Iterable[_ | (js.Tuple2[_, _])]) | org.scalablytyped.runtime.StringDictionary[js.Any])*
   ): C = js.native
   def mergeWith[C](
     merger: js.Function3[/* oldVal */ js.Any, /* newVal */ js.Any, /* key */ js.Any, _],
     collection: C,
-    collections: (stdLib.Iterable[_] | (stdLib.Iterable[js.Tuple2[_, _]]) | org.scalablytyped.runtime.StringDictionary[js.Any])*
+    collections: ((stdLib.Iterable[_ | (js.Tuple2[_, _])]) | org.scalablytyped.runtime.StringDictionary[js.Any])*
   ): C = js.native
   def remove[C /* <: js.Array[_] */](collection: C, key: scala.Double): C = js.native
   def remove[K, C /* <: immutableLib.immutableMod.Collection[K, _] */](collection: C, key: K): C = js.native

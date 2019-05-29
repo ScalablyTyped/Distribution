@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "connect-pg-simple"
-version := "4.2-dt-20180214Z-1dcb09"
+version := "4.2-dt-20180214Z-563b1e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-732eb4",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-1699d9",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-448e20",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-e586f1",
-  "org.scalablytyped" %%% "express-session" % "1.15-dt-20190212Z-35ad54",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-169399",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
-  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-bc5287",
-  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-d52fb4",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-acf35f",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-1e3fd2",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-bfc0a3",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-468aa7",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-c27d44",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-c3ce7d",
+  "org.scalablytyped" %%% "express-session" % "1.15-dt-20190212Z-7201ef",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-6731ec",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-17198b",
+  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-217971",
+  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-d1ef24",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-3e1146",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-d55a89",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -107,7 +107,7 @@ trait ContentControlData extends js.Object {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any
   ] = js.undefined
   /**
     *
@@ -173,7 +173,7 @@ object ContentControlData {
     placeholderText: java.lang.String = null,
     removeWhenEdited: js.UndefOr[scala.Boolean] = js.undefined,
     style: java.lang.String = null,
-    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any = null,
     subtype: officeDashJsDashPreviewLib.WordNs.ContentControlType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextInline | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextParagraphs | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextTableCell | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextTableRow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichTextTable | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlainTextInline | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlainTextParagraph | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Picture | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BuildingBlockGallery | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CheckBox | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ComboBox | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DropDownList | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DatePicker | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RepeatingSection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RichText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlainText = null,
     tables: js.Array[TableData] = null,
     tag: java.lang.String = null,

@@ -46,7 +46,7 @@ import scala.scalajs.js.annotation._
   		* @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
   		* @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
   		*/
-  var child: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], _]] = js.undefined
+  var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Determines whether the passed Component is either an immediate child of this Container or whether it is a descendant
   		* @param comp Ext.Component The Component to test.
   		* @param deep Boolean Pass true to test for the Component being a descendant at any level.
@@ -78,7 +78,7 @@ import scala.scalajs.js.annotation._
   		* @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
   		* @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
   		*/
-  var down: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], _]] = js.undefined
+  var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Examines this container s items property and gets a direct child component of this container
   		* @param comp String/Number This parameter may be any of the following:  a String : representing the itemId or id of the child component. a Number : representing the position of the child component within the items property For additional information see Ext.util.MixedCollection.get.
   		* @returns Ext.Component The component (if found).
@@ -163,20 +163,18 @@ import scala.scalajs.js.annotation._
   		* @param selector String Selector complying to an Ext.ComponentQuery selector. If no selector is specified all items will be returned.
   		* @returns Ext.Component[] Components which matched the selector
   		*/
-  var query: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], extjsLib.ExtNs.Array]] = js.undefined
+  var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], extjsLib.ExtNs.Array]] = js.undefined
   /** [Method] Retrieves all descendant components which match the passed function
   		* @param fn Function The matcher function. It will be called with a single argument, the component being tested.
   		* @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
   		* @returns Ext.Component[] Components matched by the passed function
   		*/
-  var queryBy: js.UndefOr[
-    js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], extjsLib.ExtNs.Array]
-  ] = js.undefined
+  var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], extjsLib.ExtNs.Array]] = js.undefined
   /** [Method] Finds a component at any level under this container matching the id itemId
   		* @param id String The id to find
   		* @returns Ext.Component The matching id, null if not found
   		*/
-  var queryById: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], extjsLib.ExtNs.IComponent]] = js.undefined
+  var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], extjsLib.ExtNs.IComponent]] = js.undefined
   /** [Method] Removes a component from this container
   		* @param component Ext.Component/String The component reference or id to remove.
   		* @param autoDestroy Boolean True to automatically invoke the removed Component's Ext.Component.destroy function. Defaults to the value of this Container's autoDestroy config.

@@ -11,10 +11,21 @@ trait ITextArea
   var cols: js.UndefOr[scala.Double] = js.undefined
   /** [Config Option] (Boolean) */
   var enterIsSpecial: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Method] Returns the current data value of the field
+  		* @returns Object value The field value
+  		*/
+  @JSName("getValue")
+  var getValue_ITextArea: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Boolean) */
   var preventScrollbars: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Number) */
   var rows: js.UndefOr[scala.Double] = js.undefined
+  /** [Method] Allows for any necessary modifications before the original value is set
+  		* @param value Object
+  		* @returns Object The modified initial value
+  		*/
+  @JSName("transformOriginalValue")
+  var transformOriginalValue_ITextArea: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
 }
 
 object ITextArea {

@@ -15,6 +15,8 @@ class UserAgentClient protected ()
   var challenged: js.Any = js.native
   var core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore = js.native
   var credentials: js.Any = js.native
+  @JSName("delegate")
+  var delegate_UserAgentClient: js.UndefOr[sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate] = js.native
   var init: js.Any = js.native
   var logger: sipDotJsLib.libLoggerFactoryMod.Logger = js.native
   val loggerFactory: sipDotJsLib.libLoggerFactoryMod.LoggerFactory = js.native

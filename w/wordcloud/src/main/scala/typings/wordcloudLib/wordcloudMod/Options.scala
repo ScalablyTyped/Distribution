@@ -75,7 +75,7 @@ trait Options extends js.Object {
   		 * List of words/text to paint on the canvas in a 2-d array, in the form of [word, size],
   		 * e.g. [['foo', 12] , ['bar', 6]].
   		 */
-  var list: js.UndefOr[js.Array[ListEntry] | js.Array[_]] = js.undefined
+  var list: js.UndefOr[js.Array[_ | ListEntry]] = js.undefined
   /** color of the mask squares. */
   var maskColor: js.UndefOr[java.lang.String] = js.undefined
   /** width of the gaps between mask squares. */
@@ -140,7 +140,7 @@ object Options {
     fontWeight: java.lang.String | scala.Double = null,
     gridSize: scala.Int | scala.Double = null,
     hover: EventCallback = null,
-    list: js.Array[ListEntry] | js.Array[_] = null,
+    list: js.Array[_ | ListEntry] = null,
     maskColor: java.lang.String = null,
     maskGapWidth: scala.Int | scala.Double = null,
     maxRotation: scala.Int | scala.Double = null,
@@ -168,7 +168,7 @@ object Options {
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
     if (hover != null) __obj.updateDynamic("hover")(hover)
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
+    if (list != null) __obj.updateDynamic("list")(list)
     if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor)
     if (maskGapWidth != null) __obj.updateDynamic("maskGapWidth")(maskGapWidth.asInstanceOf[js.Any])
     if (maxRotation != null) __obj.updateDynamic("maxRotation")(maxRotation.asInstanceOf[js.Any])

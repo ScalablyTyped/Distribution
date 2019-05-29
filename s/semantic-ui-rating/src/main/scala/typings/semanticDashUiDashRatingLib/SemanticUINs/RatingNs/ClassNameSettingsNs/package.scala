@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ClassNameSettingsNs {
-  type Param = ((stdLib.Pick[_Impl, semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.active]) | (stdLib.Pick[_Impl, semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.hover]) | (stdLib.Pick[_Impl, semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.loading])) with (stdLib.Partial[
+  type Param = (stdLib.Pick[
+    _Impl, 
+    semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.active | semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.hover | semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.loading
+  ]) with (stdLib.Partial[
     stdLib.Pick[
       _Impl, 
       semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.active | semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.hover | semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.loading

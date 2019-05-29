@@ -175,7 +175,7 @@ object _Impl {
     transition: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(allowMultiple = allowMultiple, autofocus = autofocus, className = className.asInstanceOf[js.Any], closable = closable, context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, dimmerSettings = dimmerSettings.asInstanceOf[js.Any], duration = duration, error = error, keyboardShortcuts = keyboardShortcuts, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onApprove = js.Any.fromFunction2(onApprove), onDeny = js.Any.fromFunction2(onDeny), onHidden = js.Any.fromFunction1(onHidden), onHide = js.Any.fromFunction2(onHide), onShow = js.Any.fromFunction1(onShow), onVisible = js.Any.fromFunction1(onVisible), performance = performance, queue = queue, selector = selector.asInstanceOf[js.Any], silent = silent, transition = transition, verbose = verbose)
+    val __obj = js.Dynamic.literal(allowMultiple = allowMultiple, autofocus = autofocus, className = className, closable = closable, context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, dimmerSettings = dimmerSettings, duration = duration, error = error, keyboardShortcuts = keyboardShortcuts, name = name, namespace = namespace, observeChanges = observeChanges, offset = offset, onApprove = js.Any.fromFunction2(onApprove), onDeny = js.Any.fromFunction2(onDeny), onHidden = js.Any.fromFunction1(onHidden), onHide = js.Any.fromFunction2(onHide), onShow = js.Any.fromFunction1(onShow), onVisible = js.Any.fromFunction1(onVisible), performance = performance, queue = queue, selector = selector, silent = silent, transition = transition, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

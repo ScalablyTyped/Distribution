@@ -47,7 +47,7 @@ trait Form extends js.Object {
   def getPublishedUrl(): java.lang.String = js.native
   def getResponse(responseId: java.lang.String): FormResponse = js.native
   def getResponses(): js.Array[FormResponse] = js.native
-  def getResponses(timestamp: stdLib.Date): js.Array[FormResponse] = js.native
+  def getResponses(timestamp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): js.Array[FormResponse] = js.native
   def getShuffleQuestions(): scala.Boolean = js.native
   def getSummaryUrl(): java.lang.String = js.native
   def getTitle(): java.lang.String = js.native

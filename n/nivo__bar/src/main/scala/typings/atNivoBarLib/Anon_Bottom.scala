@@ -14,7 +14,7 @@ trait Anon_Bottom extends js.Object {
   var tickPadding: scala.Double
   var tickRotation: scala.Double
   var tickSize: scala.Double
-  var tickValues: scala.Double | js.Array[java.lang.String] | js.Array[scala.Double]
+  var tickValues: scala.Double | (js.Array[scala.Double | java.lang.String])
 }
 
 object Anon_Bottom {
@@ -28,7 +28,7 @@ object Anon_Bottom {
     tickPadding: scala.Double,
     tickRotation: scala.Double,
     tickSize: scala.Double,
-    tickValues: scala.Double | js.Array[java.lang.String] | js.Array[scala.Double]
+    tickValues: scala.Double | (js.Array[scala.Double | java.lang.String])
   ): Anon_Bottom = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], legend = legend, legendOffset = legendOffset, legendPosition = legendPosition.asInstanceOf[js.Any], orient = orient.asInstanceOf[js.Any], tickPadding = tickPadding, tickRotation = tickRotation, tickSize = tickSize, tickValues = tickValues.asInstanceOf[js.Any])
   

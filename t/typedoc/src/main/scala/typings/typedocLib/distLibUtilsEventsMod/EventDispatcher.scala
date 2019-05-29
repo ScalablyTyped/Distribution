@@ -27,11 +27,11 @@ class EventDispatcher () extends js.Object {
   def off(eventMap: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
   def off(eventMap: EventMap): js.Any = js.native
   def off(eventMap: EventMap, context: js.Any): js.Any = js.native
+  def off(name: js.UndefOr[scala.Nothing], callback: EventCallback): js.Any = js.native
+  def off(name: js.UndefOr[scala.Nothing], callback: EventCallback, context: js.Any): js.Any = js.native
   def off(name: java.lang.String): js.Any = js.native
   def off(name: java.lang.String, callback: EventCallback): js.Any = js.native
   def off(name: java.lang.String, callback: EventCallback, context: js.Any): js.Any = js.native
-  def off(name: js.UndefOr[scala.Nothing], callback: EventCallback): js.Any = js.native
-  def off(name: js.UndefOr[scala.Nothing], callback: EventCallback, context: js.Any): js.Any = js.native
   def on(eventMap: EventMap): js.Any = js.native
   def on(eventMap: EventMap, callback: EventCallback): js.Any = js.native
   def on(eventMap: EventMap, callback: EventCallback, context: js.Any): js.Any = js.native

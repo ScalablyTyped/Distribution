@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/es/statistic", JSImport.Namespace)
 @js.native
 object esStatisticMod extends js.Object {
-  val default: reactLib.reactMod.FunctionComponent[antdLib.esStatisticStatisticMod.StatisticProps] with antdLib.esStatisticStatisticMod.StatisticComponent = js.native
+  @js.native
+  object default extends js.Object {
+    var Countdown: antdLib.TypeofClassCountdown = js.native
+    var contextTypes: js.UndefOr[reactLib.reactMod.ValidationMap[_]] = js.native
+    var defaultProps: js.UndefOr[antdLib.PartialStatisticProps] = js.native
+    var displayName: js.UndefOr[java.lang.String] = js.native
+    var propTypes: js.UndefOr[antdLib.WeakValidationMapStatisticProps] = js.native
+    def apply(props: antdLib.PropsWithChildrenStatisticProps): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+    def apply(props: antdLib.PropsWithChildrenStatisticProps, context: js.Any): reactLib.reactMod.ReactElement[_] | scala.Null = js.native
+  }
+  
 }
 

@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait ProductShippingDimension extends js.Object {
   var unit: js.UndefOr[java.lang.String] = js.undefined
-  var value: js.UndefOr[stdLib.Number] = js.undefined
+  var value: js.UndefOr[scala.Double] = js.undefined
 }
 
 object ProductShippingDimension {
   @scala.inline
-  def apply(unit: java.lang.String = null, value: stdLib.Number = null): ProductShippingDimension = {
+  def apply(unit: java.lang.String = null, value: scala.Int | scala.Double = null): ProductShippingDimension = {
     val __obj = js.Dynamic.literal()
     if (unit != null) __obj.updateDynamic("unit")(unit)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProductShippingDimension]
   }
 }

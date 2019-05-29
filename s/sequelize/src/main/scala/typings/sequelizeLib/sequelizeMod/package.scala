@@ -445,7 +445,7 @@ package object sequelizeMod {
     * Shortcut for types used in FindOptions.attributes
     */
   type FindOptionsAttributesArray = js.Array[
-    java.lang.String | literal | (js.Tuple2[java.lang.String, java.lang.String]) | fn | (js.Tuple2[fn, java.lang.String]) | cast | (js.Tuple2[cast, java.lang.String]) | (js.Tuple2[literal, java.lang.String])
+    java.lang.String | literal | (js.Tuple2[java.lang.String | cast | fn | literal, java.lang.String]) | fn | cast
   ]
   /**
     * Shortcut for order type in FindOptions.attributes

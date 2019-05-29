@@ -6,8 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GoogleMaps extends js.Object {
+  /***** Layers *****/
   var BicyclingLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.BicyclingLayer]
+  /** A circle on the Earth's surface; also known as a "spherical cap". */
   var Circle: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.Circle]
+  /***** Data *****/
   var Data: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.Data]
   val DataNs: reactDashGoogleDashMapsDashLoaderLib.TypeofData
   var DirectionsRenderer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.DirectionsRenderer]
@@ -18,6 +21,7 @@ trait GoogleMaps extends js.Object {
     /* options */ googlemapsLib.googleNs.mapsNs.FusionTablesLayerOptions, 
     googlemapsLib.googleNs.mapsNs.FusionTablesLayer
   ]
+  /***** Services *****/
   var Geocoder: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.Geocoder]
   var GroundOverlay: org.scalablytyped.runtime.Instantiable2[
     /* url */ java.lang.String, 
@@ -28,15 +32,50 @@ trait GoogleMaps extends js.Object {
     /* opts */ googlemapsLib.googleNs.mapsNs.ImageMapTypeOptions, 
     googlemapsLib.googleNs.mapsNs.ImageMapType
   ]
+  /**
+    * An overlay that looks like a bubble and is often connected to a marker.
+    * This class extends MVCObject.
+    */
   var InfoWindow: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.InfoWindow]
   var KmlLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.KmlLayer]
+  /* **** Base **** */
+  /**
+    * A LatLng is a point in geographical coordinates: latitude and longitude.
+    *
+    * * Latitude ranges between -90 and 90 degrees, inclusive. Values above or
+    *   below this range will be clamped to the range [-90, 90]. This means
+    *   that if the value specified is less than -90, it will be set to -90.
+    *   And if the value is greater than 90, it will be set to 90.
+    * * Longitude ranges between -180 and 180 degrees, inclusive. Values above
+    *   or below this range will be wrapped so that they fall within the
+    *   range. For example, a value of -190 will be converted to 170. A value
+    *   of 190 will be converted to -170. This reflects the fact that
+    *   longitudes wrap around the globe.
+    *
+    * Although the default map projection associates longitude with the
+    * x-coordinate of the map, and latitude with the y-coordinate, the
+    * latitude coordinate is always written first, followed by the longitude.
+    * Notice that you cannot modify the coordinates of a LatLng. If you want
+    * to compute another point, you have to create a new one.
+    */
   var LatLng: org.scalablytyped.runtime.Instantiable2[/* lat */ scala.Double, /* lng */ scala.Double, googlemapsLib.googleNs.mapsNs.LatLng]
+  /**
+    * A LatLngBounds instance represents a rectangle in geographical coordinates,
+    * including one that crosses the 180 degrees longitudinal meridian.
+    */
   var LatLngBounds: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.LatLngBounds]
+  /** This class extends MVCObject. */
   var MVCArray: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MVCArray[js.Object]]
+  /***** MVC *****/
+  /** Base class implementing KVO. */
   var MVCObject: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MVCObject]
+  /***** Map *****/
   var Map: org.scalablytyped.runtime.Instantiable1[/* mapDiv */ stdLib.Element, googlemapsLib.googleNs.mapsNs.Map]
   var MapCanvasProjection: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MapCanvasProjection]
   var MapTypeRegistry: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MapTypeRegistry]
+  /**
+    * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Marker Maps JavaScript API}
+    */
   var Marker: reactDashGoogleDashMapsDashLoaderLib.TypeofClassMarker
   var MaxZoomService: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.MaxZoomService]
   var OverlayView: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.OverlayView]
@@ -51,6 +90,7 @@ trait GoogleMaps extends js.Object {
     googlemapsLib.googleNs.mapsNs.Size
   ]
   var StreetViewCoverageLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.StreetViewCoverageLayer]
+  /***** Street View *****/
   var StreetViewPanorama: org.scalablytyped.runtime.Instantiable1[/* container */ stdLib.Element, googlemapsLib.googleNs.mapsNs.StreetViewPanorama]
   var StreetViewService: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.StreetViewService]
   var StyledMapType: org.scalablytyped.runtime.Instantiable1[
@@ -59,11 +99,16 @@ trait GoogleMaps extends js.Object {
   ]
   var TrafficLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.TrafficLayer]
   var TransitLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.TransitLayer]
+  /***** AdSense Library *****/
   val adsenseNs: reactDashGoogleDashMapsDashLoaderLib.Typeofadsense
+  /***** Drawing Library *****/
   val drawingNs: reactDashGoogleDashMapsDashLoaderLib.Typeofdrawing
   var event: reactDashGoogleDashMapsDashLoaderLib.TypeofClassevent
+  /***** Geometry Library *****/
   val geometryNs: reactDashGoogleDashMapsDashLoaderLib.Typeofgeometry
+  /***** Places Library *****/
   val placesNs: reactDashGoogleDashMapsDashLoaderLib.Typeofplaces
+  /***** Visualization Library *****/
   val visualizationNs: reactDashGoogleDashMapsDashLoaderLib.Typeofvisualization
 }
 

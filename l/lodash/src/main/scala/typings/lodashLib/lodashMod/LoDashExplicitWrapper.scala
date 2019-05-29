@@ -1605,10 +1605,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.get
     */
-  def get[T](
-    `this`: LoDashExplicitWrapper[NumericDictionary[T] | (js.UndefOr[NumericDictionary[T] | scala.Null])],
-    path: scala.Double
-  ): LoDashExplicitWrapper[T] = js.native
+  def get[T](`this`: LoDashExplicitWrapper[js.UndefOr[scala.Null | NumericDictionary[T]]], path: scala.Double): LoDashExplicitWrapper[T] = js.native
   /**
     * @see _.get
     */
@@ -2161,7 +2158,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.mapValues
     */
   @JSName("mapValues")
-  def mapValues_TObject[T /* <: js.Object */](`this`: LoDashExplicitWrapper[T | (js.UndefOr[T | scala.Null])]): LoDashExplicitWrapper[T] = js.native
+  def mapValues_TObject[T /* <: js.Object */](`this`: LoDashExplicitWrapper[js.UndefOr[scala.Null | T]]): LoDashExplicitWrapper[T] = js.native
   /**
     * @see _.mapValues
     */

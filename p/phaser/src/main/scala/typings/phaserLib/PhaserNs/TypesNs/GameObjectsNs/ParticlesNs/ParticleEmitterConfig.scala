@@ -102,7 +102,7 @@ trait ParticleEmitterConfig extends js.Object {
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#frames}.
     */
   var frame: js.UndefOr[
-    scala.Double | js.Array[scala.Double] | java.lang.String | js.Array[java.lang.String] | phaserLib.PhaserNs.TexturesNs.Frame | js.Array[phaserLib.PhaserNs.TexturesNs.Frame] | ParticleEmitterFrameConfig
+    scala.Double | (js.Array[scala.Double | phaserLib.PhaserNs.TexturesNs.Frame | java.lang.String]) | java.lang.String | phaserLib.PhaserNs.TexturesNs.Frame | ParticleEmitterFrameConfig
   ] = js.undefined
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#frequency}.
@@ -244,7 +244,7 @@ object ParticleEmitterConfig {
     followOffset: js.Object = null,
     `followOffset.x`: scala.Int | scala.Double = null,
     `followOffset.y`: scala.Int | scala.Double = null,
-    frame: scala.Double | js.Array[scala.Double] | java.lang.String | js.Array[java.lang.String] | phaserLib.PhaserNs.TexturesNs.Frame | js.Array[phaserLib.PhaserNs.TexturesNs.Frame] | ParticleEmitterFrameConfig = null,
+    frame: scala.Double | (js.Array[scala.Double | phaserLib.PhaserNs.TexturesNs.Frame | java.lang.String]) | java.lang.String | phaserLib.PhaserNs.TexturesNs.Frame | ParticleEmitterFrameConfig = null,
     frequency: scala.Int | scala.Double = null,
     gravityX: scala.Int | scala.Double = null,
     gravityY: scala.Int | scala.Double = null,

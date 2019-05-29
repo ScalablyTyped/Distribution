@@ -11,7 +11,7 @@ trait Shape extends js.Object {
   var endcap: BezierCap
   var forward: Bezier
   var startcap: BezierCap
-  def intersections(shape: Shape): js.Array[js.Array[java.lang.String]] | js.Array[js.Array[scala.Double]]
+  def intersections(shape: Shape): js.Array[js.Array[scala.Double | java.lang.String]]
 }
 
 object Shape {
@@ -21,7 +21,7 @@ object Shape {
     bbox: BBox,
     endcap: BezierCap,
     forward: Bezier,
-    intersections: Shape => js.Array[js.Array[java.lang.String]] | js.Array[js.Array[scala.Double]],
+    intersections: Shape => js.Array[js.Array[scala.Double | java.lang.String]],
     startcap: BezierCap
   ): Shape = {
     val __obj = js.Dynamic.literal(back = back, bbox = bbox, endcap = endcap, forward = forward, intersections = js.Any.fromFunction1(intersections), startcap = startcap)

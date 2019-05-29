@@ -32,7 +32,7 @@ object ^ extends js.Object {
   ): js.Promise[appDashBuilderDashLibLib.Anon_Provider | scala.Null] = js.native
   def getPublishConfigs(
     platformPackager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any,
+    targetSpecificOptions: js.UndefOr[scala.Nothing],
     arch: builderDashUtilLib.outArchMod.Arch,
     errorIfCannot: scala.Boolean
   ): js.Promise[
@@ -40,7 +40,7 @@ object ^ extends js.Object {
   ] = js.native
   def getPublishConfigs(
     platformPackager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any,
+    targetSpecificOptions: js.UndefOr[scala.Nothing],
     arch: scala.Null,
     errorIfCannot: scala.Boolean
   ): js.Promise[
@@ -48,7 +48,7 @@ object ^ extends js.Object {
   ] = js.native
   def getPublishConfigs(
     platformPackager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
-    targetSpecificOptions: js.UndefOr[scala.Nothing],
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any,
     arch: builderDashUtilLib.outArchMod.Arch,
     errorIfCannot: scala.Boolean
   ): js.Promise[
@@ -56,7 +56,7 @@ object ^ extends js.Object {
   ] = js.native
   def getPublishConfigs(
     platformPackager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
-    targetSpecificOptions: js.UndefOr[scala.Nothing],
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any,
     arch: scala.Null,
     errorIfCannot: scala.Boolean
   ): js.Promise[

@@ -14,22 +14,22 @@ trait IonNav extends js.Object {
   /**
     * By default `ion-nav` animates transition between pages based in the mode (ios or material design). However, this property allows to create custom transition using `AnimateBuilder` functions.
     */
-  var animation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var animation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.native
-  var delegate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.UndefOr[
+  var delegate: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any
   ] = js.native
   /**
     * Root NavComponent to load
     */
-  var root: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.UndefOr[
+  var root: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any
   ] = js.native
   /**
     * Any parameters for the root component
     */
-  var rootParams: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.UndefOr[
+  var rootParams: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
   ] = js.native
   /**
@@ -86,12 +86,46 @@ trait IonNav extends js.Object {
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     insertIndex: scala.Double,
     component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    insertIndex: scala.Double,
+    component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    insertIndex: scala.Double,
+    component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    insertIndex: scala.Double,
+    component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: scala.Null,
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    insertIndex: scala.Double,
+    component: T,
     componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     insertIndex: scala.Double,
     component: T,
     componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    insertIndex: scala.Double,
+    component: T,
+    componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -99,13 +133,6 @@ trait IonNav extends js.Object {
     component: T,
     componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    insertIndex: scala.Double,
-    component: T,
-    componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -118,28 +145,8 @@ trait IonNav extends js.Object {
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     insertIndex: scala.Double,
     component: T,
-    componentProps: js.UndefOr[scala.Nothing],
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    insertIndex: scala.Double,
-    component: T,
-    componentProps: js.UndefOr[scala.Nothing],
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    insertIndex: scala.Double,
-    component: T,
-    componentProps: js.UndefOr[scala.Nothing],
+    componentProps: scala.Null,
     opts: js.UndefOr[scala.Nothing],
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    insertIndex: scala.Double,
-    component: T,
-    componentProps: js.UndefOr[scala.Nothing],
-    opts: scala.Null,
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -153,13 +160,6 @@ trait IonNav extends js.Object {
     component: T,
     componentProps: scala.Null,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    insertIndex: scala.Double,
-    component: T,
-    componentProps: scala.Null,
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def insert[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -183,6 +183,14 @@ trait IonNav extends js.Object {
     insertComponents: js.Array[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ _
     ],
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def insertPages(
+    insertIndex: scala.Double,
+    insertComponents: js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ _
+    ],
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def insertPages(
@@ -191,14 +199,6 @@ trait IonNav extends js.Object {
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ _
     ],
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def insertPages(
-    insertIndex: scala.Double,
-    insertComponents: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ _
-    ],
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def insertPages(
@@ -214,14 +214,14 @@ trait IonNav extends js.Object {
     */
   def pop(): js.Promise[scala.Boolean] = js.native
   def pop(
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def pop(
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def pop(
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def pop(
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def pop(
@@ -233,16 +233,16 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   def popTo(
     indexOrViewCtrl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewController */ js.Any,
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def popTo(
+    indexOrViewCtrl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewController */ js.Any,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def popTo(
     indexOrViewCtrl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewController */ js.Any,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def popTo(
-    indexOrViewCtrl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewController */ js.Any,
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def popTo(
@@ -256,16 +256,16 @@ trait IonNav extends js.Object {
   def popTo(indexOrViewCtrl: scala.Double): js.Promise[scala.Boolean] = js.native
   def popTo(
     indexOrViewCtrl: scala.Double,
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def popTo(
+    indexOrViewCtrl: scala.Double,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def popTo(
     indexOrViewCtrl: scala.Double,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def popTo(
-    indexOrViewCtrl: scala.Double,
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def popTo(
@@ -278,14 +278,14 @@ trait IonNav extends js.Object {
     */
   def popToRoot(): js.Promise[scala.Boolean] = js.native
   def popToRoot(
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def popToRoot(
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def popToRoot(
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def popToRoot(
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def popToRoot(
@@ -298,23 +298,46 @@ trait IonNav extends js.Object {
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](component: T): js.Promise[scala.Boolean] = js.native
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: scala.Null,
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
     componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     component: T,
     componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
+    componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     component: T,
     componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -325,25 +348,8 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     component: T,
-    componentProps: js.UndefOr[scala.Nothing],
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: js.UndefOr[scala.Nothing],
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: js.UndefOr[scala.Nothing],
+    componentProps: scala.Null,
     opts: js.UndefOr[scala.Nothing],
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: js.UndefOr[scala.Nothing],
-    opts: scala.Null,
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -355,12 +361,6 @@ trait IonNav extends js.Object {
     component: T,
     componentProps: scala.Null,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: scala.Null,
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def push[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -377,18 +377,18 @@ trait IonNav extends js.Object {
   def removeIndex(
     startIndex: scala.Double,
     removeCount: scala.Double,
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def removeIndex(
+    startIndex: scala.Double,
+    removeCount: scala.Double,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def removeIndex(
     startIndex: scala.Double,
     removeCount: scala.Double,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def removeIndex(
-    startIndex: scala.Double,
-    removeCount: scala.Double,
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def removeIndex(
@@ -403,16 +403,16 @@ trait IonNav extends js.Object {
   def setPages(views: js.Array[_]): js.Promise[scala.Boolean] = js.native
   def setPages(
     views: js.Array[_],
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def setPages(
+    views: js.Array[_],
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def setPages(
     views: js.Array[_],
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def setPages(
-    views: js.Array[_],
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def setPages(
@@ -426,23 +426,46 @@ trait IonNav extends js.Object {
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](component: T): js.Promise[scala.Boolean] = js.native
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
+    componentProps: js.UndefOr[scala.Nothing],
+    opts: scala.Null,
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
     componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     component: T,
     componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
+    opts: js.UndefOr[scala.Nothing],
+    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
+  ): js.Promise[scala.Boolean] = js.native
+  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
+    component: T,
+    componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     component: T,
     componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps<T> */ js.Any,
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -453,25 +476,8 @@ trait IonNav extends js.Object {
   ): js.Promise[scala.Boolean] = js.native
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
     component: T,
-    componentProps: js.UndefOr[scala.Nothing],
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: js.UndefOr[scala.Nothing],
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: js.UndefOr[scala.Nothing],
+    componentProps: scala.Null,
     opts: js.UndefOr[scala.Nothing],
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: js.UndefOr[scala.Nothing],
-    opts: scala.Null,
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
@@ -483,12 +489,6 @@ trait IonNav extends js.Object {
     component: T,
     componentProps: scala.Null,
     opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavOptions */ js.Any,
-    done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
-  ): js.Promise[scala.Boolean] = js.native
-  def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](
-    component: T,
-    componentProps: scala.Null,
-    opts: js.UndefOr[scala.Nothing],
     done: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionDoneFn */ js.Any
   ): js.Promise[scala.Boolean] = js.native
   def setRoot[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any */](

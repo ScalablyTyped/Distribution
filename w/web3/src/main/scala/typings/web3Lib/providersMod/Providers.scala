@@ -6,15 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Providers extends js.Object {
-  var HttpProvider: org.scalablytyped.runtime.Instantiable2[
-    /* host */ java.lang.String, 
-    /* timeout */ js.UndefOr[/* timeout */ scala.Double], 
-    HttpProvider
-  ]
+  var HttpProvider: org.scalablytyped.runtime.Instantiable2[/* host */ java.lang.String, js.UndefOr[/* timeout */ scala.Double], HttpProvider]
   var IpcProvider: org.scalablytyped.runtime.Instantiable2[/* path */ java.lang.String, /* net */ js.Any, IpcProvider]
   var WebsocketProvider: org.scalablytyped.runtime.Instantiable2[
     /* host */ java.lang.String, 
-    /* timeout */ js.UndefOr[/* timeout */ scala.Double], 
+    js.UndefOr[/* timeout */ scala.Double], 
     WebsocketProvider
   ]
 }
@@ -22,15 +18,11 @@ trait Providers extends js.Object {
 object Providers {
   @scala.inline
   def apply(
-    HttpProvider: org.scalablytyped.runtime.Instantiable2[
-      /* host */ java.lang.String, 
-      /* timeout */ js.UndefOr[/* timeout */ scala.Double], 
-      HttpProvider
-    ],
+    HttpProvider: org.scalablytyped.runtime.Instantiable2[/* host */ java.lang.String, js.UndefOr[/* timeout */ scala.Double], HttpProvider],
     IpcProvider: org.scalablytyped.runtime.Instantiable2[/* path */ java.lang.String, /* net */ js.Any, IpcProvider],
     WebsocketProvider: org.scalablytyped.runtime.Instantiable2[
       /* host */ java.lang.String, 
-      /* timeout */ js.UndefOr[/* timeout */ scala.Double], 
+      js.UndefOr[/* timeout */ scala.Double], 
       WebsocketProvider
     ]
   ): Providers = {

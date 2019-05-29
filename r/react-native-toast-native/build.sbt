@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-toast-native"
-version := "0.1-dt-20190212Z-56ae46"
+version := "0.1-dt-20190212Z-191305"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

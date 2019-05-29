@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JobStatistics extends js.Object {
-  var completionRatio: js.UndefOr[stdLib.Number] = js.undefined
+  var completionRatio: js.UndefOr[scala.Double] = js.undefined
   var creationTime: js.UndefOr[java.lang.String] = js.undefined
   var endTime: js.UndefOr[java.lang.String] = js.undefined
   var extract: js.UndefOr[JobStatistics4] = js.undefined
@@ -24,7 +24,7 @@ trait JobStatistics extends js.Object {
 object JobStatistics {
   @scala.inline
   def apply(
-    completionRatio: stdLib.Number = null,
+    completionRatio: scala.Int | scala.Double = null,
     creationTime: java.lang.String = null,
     endTime: java.lang.String = null,
     extract: JobStatistics4 = null,
@@ -39,7 +39,7 @@ object JobStatistics {
     totalSlotMs: java.lang.String = null
   ): JobStatistics = {
     val __obj = js.Dynamic.literal()
-    if (completionRatio != null) __obj.updateDynamic("completionRatio")(completionRatio)
+    if (completionRatio != null) __obj.updateDynamic("completionRatio")(completionRatio.asInstanceOf[js.Any])
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)
     if (extract != null) __obj.updateDynamic("extract")(extract)

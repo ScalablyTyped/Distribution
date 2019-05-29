@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-levenshtein"
-version := "1.1-dt-20190111Z-f6793b"
+version := "1.1-dt-20190111Z-b7237c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

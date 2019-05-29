@@ -274,9 +274,9 @@ object UtilsNs extends js.Object {
       * @param prefix Optional prefix to place before the number. If provided the array will contain strings, not integers.
       * @param suffix Optional suffix to place after the number. If provided the array will contain strings, not integers.
       */
-    def NumberArray(start: scala.Double, end: scala.Double): js.Array[scala.Double] | js.Array[java.lang.String] = js.native
-    def NumberArray(start: scala.Double, end: scala.Double, prefix: java.lang.String): js.Array[scala.Double] | js.Array[java.lang.String] = js.native
-    def NumberArray(start: scala.Double, end: scala.Double, prefix: java.lang.String, suffix: java.lang.String): js.Array[scala.Double] | js.Array[java.lang.String] = js.native
+    def NumberArray(start: scala.Double, end: scala.Double): js.Array[scala.Double | java.lang.String] = js.native
+    def NumberArray(start: scala.Double, end: scala.Double, prefix: java.lang.String): js.Array[scala.Double | java.lang.String] = js.native
+    def NumberArray(start: scala.Double, end: scala.Double, prefix: java.lang.String, suffix: java.lang.String): js.Array[scala.Double | java.lang.String] = js.native
     /**
       * Create an array of numbers (positive and/or negative) progressing from `start`
       * up to but not including `end` by advancing by `step`.

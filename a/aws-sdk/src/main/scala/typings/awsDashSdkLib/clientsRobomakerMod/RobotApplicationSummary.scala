@@ -19,6 +19,10 @@ trait RobotApplicationSummary extends js.Object {
     */
   var name: js.UndefOr[Name] = js.undefined
   /**
+    * Information about a robot software suite.
+    */
+  var robotSoftwareSuite: js.UndefOr[RobotSoftwareSuite] = js.undefined
+  /**
     * The version of the robot application.
     */
   var version: js.UndefOr[Version] = js.undefined
@@ -26,11 +30,18 @@ trait RobotApplicationSummary extends js.Object {
 
 object RobotApplicationSummary {
   @scala.inline
-  def apply(arn: Arn = null, lastUpdatedAt: LastUpdatedAt = null, name: Name = null, version: Version = null): RobotApplicationSummary = {
+  def apply(
+    arn: Arn = null,
+    lastUpdatedAt: LastUpdatedAt = null,
+    name: Name = null,
+    robotSoftwareSuite: RobotSoftwareSuite = null,
+    version: Version = null
+  ): RobotApplicationSummary = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt)
     if (name != null) __obj.updateDynamic("name")(name)
+    if (robotSoftwareSuite != null) __obj.updateDynamic("robotSoftwareSuite")(robotSoftwareSuite)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[RobotApplicationSummary]
   }

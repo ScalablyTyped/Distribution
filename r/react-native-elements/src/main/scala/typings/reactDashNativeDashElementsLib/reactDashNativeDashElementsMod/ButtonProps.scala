@@ -93,7 +93,7 @@ import scala.scalajs.js.annotation._
   /**
     * Additional props to applied to the ActivityIndicator
     */
-  var loadingProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.UndefOr[
+  var loadingProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any
   ] = js.undefined
   /**
@@ -115,7 +115,7 @@ import scala.scalajs.js.annotation._
   /**
     * Optional props for the title inside the button
     */
-  var titleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.UndefOr[
+  var titleProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
   ] = js.undefined
   /**

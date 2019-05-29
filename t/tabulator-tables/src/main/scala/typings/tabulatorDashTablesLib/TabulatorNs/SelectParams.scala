@@ -9,13 +9,13 @@ trait SelectParams extends _EditorParams {
   var listItemFormatter: js.UndefOr[
     js.Function2[/* value */ java.lang.String, /* text */ java.lang.String, java.lang.String]
   ] = js.undefined
-  var values: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`true` | js.Array[java.lang.String] | JSONRecord | js.Array[SelectParamsGroup]
+  var values: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`true` | (js.Array[SelectParamsGroup | java.lang.String]) | JSONRecord
 }
 
 object SelectParams {
   @scala.inline
   def apply(
-    values: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`true` | js.Array[java.lang.String] | JSONRecord | js.Array[SelectParamsGroup],
+    values: tabulatorDashTablesLib.tabulatorDashTablesLibNumbers.`true` | (js.Array[SelectParamsGroup | java.lang.String]) | JSONRecord,
     listItemFormatter: (/* value */ java.lang.String, /* text */ java.lang.String) => java.lang.String = null
   ): SelectParams = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])

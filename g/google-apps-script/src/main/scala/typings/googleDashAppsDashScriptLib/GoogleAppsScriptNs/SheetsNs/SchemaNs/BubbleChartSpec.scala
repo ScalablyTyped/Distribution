@@ -10,7 +10,7 @@ trait BubbleChartSpec extends js.Object {
   var bubbleLabels: js.UndefOr[ChartData] = js.undefined
   var bubbleMaxRadiusSize: js.UndefOr[scala.Double] = js.undefined
   var bubbleMinRadiusSize: js.UndefOr[scala.Double] = js.undefined
-  var bubbleOpacity: js.UndefOr[stdLib.Number] = js.undefined
+  var bubbleOpacity: js.UndefOr[scala.Double] = js.undefined
   var bubbleSizes: js.UndefOr[ChartData] = js.undefined
   var bubbleTextStyle: js.UndefOr[TextFormat] = js.undefined
   var domain: js.UndefOr[ChartData] = js.undefined
@@ -26,7 +26,7 @@ object BubbleChartSpec {
     bubbleLabels: ChartData = null,
     bubbleMaxRadiusSize: scala.Int | scala.Double = null,
     bubbleMinRadiusSize: scala.Int | scala.Double = null,
-    bubbleOpacity: stdLib.Number = null,
+    bubbleOpacity: scala.Int | scala.Double = null,
     bubbleSizes: ChartData = null,
     bubbleTextStyle: TextFormat = null,
     domain: ChartData = null,
@@ -39,7 +39,7 @@ object BubbleChartSpec {
     if (bubbleLabels != null) __obj.updateDynamic("bubbleLabels")(bubbleLabels)
     if (bubbleMaxRadiusSize != null) __obj.updateDynamic("bubbleMaxRadiusSize")(bubbleMaxRadiusSize.asInstanceOf[js.Any])
     if (bubbleMinRadiusSize != null) __obj.updateDynamic("bubbleMinRadiusSize")(bubbleMinRadiusSize.asInstanceOf[js.Any])
-    if (bubbleOpacity != null) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity)
+    if (bubbleOpacity != null) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity.asInstanceOf[js.Any])
     if (bubbleSizes != null) __obj.updateDynamic("bubbleSizes")(bubbleSizes)
     if (bubbleTextStyle != null) __obj.updateDynamic("bubbleTextStyle")(bubbleTextStyle)
     if (domain != null) __obj.updateDynamic("domain")(domain)

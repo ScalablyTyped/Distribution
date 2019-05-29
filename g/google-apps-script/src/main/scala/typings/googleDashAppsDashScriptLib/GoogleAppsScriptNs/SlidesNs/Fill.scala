@@ -11,11 +11,11 @@ trait Fill extends js.Object {
   def getType(): FillType = js.native
   def isVisible(): scala.Boolean = js.native
   def setSolidFill(color: Color): scala.Unit = js.native
-  def setSolidFill(color: Color, alpha: stdLib.Number): scala.Unit = js.native
+  def setSolidFill(color: Color, alpha: scala.Double): scala.Unit = js.native
   def setSolidFill(color: ThemeColorType): scala.Unit = js.native
-  def setSolidFill(color: ThemeColorType, alpha: stdLib.Number): scala.Unit = js.native
+  def setSolidFill(color: ThemeColorType, alpha: scala.Double): scala.Unit = js.native
   def setSolidFill(hexString: java.lang.String): scala.Unit = js.native
-  def setSolidFill(hexString: java.lang.String, alpha: stdLib.Number): scala.Unit = js.native
+  def setSolidFill(hexString: java.lang.String, alpha: scala.Double): scala.Unit = js.native
   def setSolidFill(
     red: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     green: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -25,7 +25,7 @@ trait Fill extends js.Object {
     red: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     green: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     blue: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    alpha: stdLib.Number
+    alpha: scala.Double
   ): scala.Unit = js.native
   def setTransparent(): scala.Unit = js.native
 }

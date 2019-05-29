@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "passport-steam"
-version := "1.0-dt-20180214Z-e01003"
+version := "1.0-dt-20180214Z-6cac5e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

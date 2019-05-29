@@ -36,12 +36,12 @@ trait JdbcResultSet extends js.Object {
   def getDate(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, timeZone: java.lang.String): JdbcDate = js.native
   def getDate(columnLabel: java.lang.String): JdbcDate = js.native
   def getDate(columnLabel: java.lang.String, timeZone: java.lang.String): JdbcDate = js.native
-  def getDouble(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): stdLib.Number = js.native
-  def getDouble(columnLabel: java.lang.String): stdLib.Number = js.native
+  def getDouble(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Double = js.native
+  def getDouble(columnLabel: java.lang.String): scala.Double = js.native
   def getFetchDirection(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getFetchSize(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
-  def getFloat(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): stdLib.Number = js.native
-  def getFloat(columnLabel: java.lang.String): stdLib.Number = js.native
+  def getFloat(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Double = js.native
+  def getFloat(columnLabel: java.lang.String): scala.Double = js.native
   def getHoldability(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getInt(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getInt(columnLabel: java.lang.String): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
@@ -121,10 +121,10 @@ trait JdbcResultSet extends js.Object {
   def updateClob(columnLabel: java.lang.String, x: JdbcClob): scala.Unit = js.native
   def updateDate(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: JdbcDate): scala.Unit = js.native
   def updateDate(columnLabel: java.lang.String, x: JdbcDate): scala.Unit = js.native
-  def updateDouble(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: stdLib.Number): scala.Unit = js.native
-  def updateDouble(columnLabel: java.lang.String, x: stdLib.Number): scala.Unit = js.native
-  def updateFloat(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: stdLib.Number): scala.Unit = js.native
-  def updateFloat(columnLabel: java.lang.String, x: stdLib.Number): scala.Unit = js.native
+  def updateDouble(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: scala.Double): scala.Unit = js.native
+  def updateDouble(columnLabel: java.lang.String, x: scala.Double): scala.Unit = js.native
+  def updateFloat(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: scala.Double): scala.Unit = js.native
+  def updateFloat(columnLabel: java.lang.String, x: scala.Double): scala.Unit = js.native
   def updateInt(
     columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     x: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer

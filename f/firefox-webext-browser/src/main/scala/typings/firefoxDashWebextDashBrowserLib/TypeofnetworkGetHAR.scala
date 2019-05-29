@@ -24,13 +24,13 @@ trait TypeofnetworkGetHAR extends js.Object {
   ]
   /* devtools.network functions */
   /** Returns HAR log that contains all known network requests. */
-  def getHAR(): js.Promise[_]
+  def getHAR(): js.Promise[org.scalablytyped.runtime.StringDictionary[_]]
 }
 
 object TypeofnetworkGetHAR {
   @scala.inline
   def apply(
-    getHAR: () => js.Promise[_],
+    getHAR: () => js.Promise[org.scalablytyped.runtime.StringDictionary[_]],
     onNavigated: WebExtEvent[js.Function1[/* url */ java.lang.String, scala.Unit]],
     onRequestFinished: WebExtEvent[
       js.Function1[

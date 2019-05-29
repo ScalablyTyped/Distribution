@@ -80,7 +80,7 @@ trait Options extends js.Object {
   /**
     * The start option sets the number of handles and their start positions, relative to range.
     */
-  var start: scala.Double | js.Array[scala.Double] | js.Array[js.Array[scala.Double]]
+  var start: scala.Double | (js.Array[js.Array[scala.Double] | scala.Double])
   /**
     * By default, the slider slides fluently.
     * In order to make the handles jump between intervals, you can use this option.
@@ -100,7 +100,7 @@ object Options {
   @scala.inline
   def apply(
     range: org.scalablytyped.runtime.StringDictionary[scala.Double | js.Array[scala.Double]],
-    start: scala.Double | js.Array[scala.Double] | js.Array[js.Array[scala.Double]],
+    start: scala.Double | (js.Array[js.Array[scala.Double] | scala.Double]),
     animate: js.UndefOr[scala.Boolean] = js.undefined,
     animationDuration: scala.Int | scala.Double = null,
     behaviour: java.lang.String = null,

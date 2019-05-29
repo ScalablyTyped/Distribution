@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @see {@link MarkerOptions} */
 trait ReadonlyMarkerOptions extends js.Object {
   /** @see {@link MarkerOptions#anchorPoint} */
   val anchorPoint: js.UndefOr[Point] = js.undefined

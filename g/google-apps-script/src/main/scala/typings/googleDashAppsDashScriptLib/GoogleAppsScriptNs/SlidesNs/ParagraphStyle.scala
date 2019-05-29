@@ -6,22 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ParagraphStyle extends js.Object {
-  def getIndentEnd(): stdLib.Number
-  def getIndentFirstLine(): stdLib.Number
-  def getIndentStart(): stdLib.Number
-  def getLineSpacing(): stdLib.Number
+  def getIndentEnd(): scala.Double
+  def getIndentFirstLine(): scala.Double
+  def getIndentStart(): scala.Double
+  def getLineSpacing(): scala.Double
   def getParagraphAlignment(): ParagraphAlignment
-  def getSpaceAbove(): stdLib.Number
-  def getSpaceBelow(): stdLib.Number
+  def getSpaceAbove(): scala.Double
+  def getSpaceBelow(): scala.Double
   def getSpacingMode(): SpacingMode
   def getTextDirection(): TextDirection
-  def setIndentEnd(indent: stdLib.Number): ParagraphStyle
-  def setIndentFirstLine(indent: stdLib.Number): ParagraphStyle
-  def setIndentStart(indent: stdLib.Number): ParagraphStyle
-  def setLineSpacing(spacing: stdLib.Number): ParagraphStyle
+  def setIndentEnd(indent: scala.Double): ParagraphStyle
+  def setIndentFirstLine(indent: scala.Double): ParagraphStyle
+  def setIndentStart(indent: scala.Double): ParagraphStyle
+  def setLineSpacing(spacing: scala.Double): ParagraphStyle
   def setParagraphAlignment(alignment: ParagraphAlignment): ParagraphStyle
-  def setSpaceAbove(space: stdLib.Number): ParagraphStyle
-  def setSpaceBelow(space: stdLib.Number): ParagraphStyle
+  def setSpaceAbove(space: scala.Double): ParagraphStyle
+  def setSpaceBelow(space: scala.Double): ParagraphStyle
   def setSpacingMode(mode: SpacingMode): ParagraphStyle
   def setTextDirection(direction: TextDirection): ParagraphStyle
 }
@@ -29,22 +29,22 @@ trait ParagraphStyle extends js.Object {
 object ParagraphStyle {
   @scala.inline
   def apply(
-    getIndentEnd: () => stdLib.Number,
-    getIndentFirstLine: () => stdLib.Number,
-    getIndentStart: () => stdLib.Number,
-    getLineSpacing: () => stdLib.Number,
+    getIndentEnd: () => scala.Double,
+    getIndentFirstLine: () => scala.Double,
+    getIndentStart: () => scala.Double,
+    getLineSpacing: () => scala.Double,
     getParagraphAlignment: () => ParagraphAlignment,
-    getSpaceAbove: () => stdLib.Number,
-    getSpaceBelow: () => stdLib.Number,
+    getSpaceAbove: () => scala.Double,
+    getSpaceBelow: () => scala.Double,
     getSpacingMode: () => SpacingMode,
     getTextDirection: () => TextDirection,
-    setIndentEnd: stdLib.Number => ParagraphStyle,
-    setIndentFirstLine: stdLib.Number => ParagraphStyle,
-    setIndentStart: stdLib.Number => ParagraphStyle,
-    setLineSpacing: stdLib.Number => ParagraphStyle,
+    setIndentEnd: scala.Double => ParagraphStyle,
+    setIndentFirstLine: scala.Double => ParagraphStyle,
+    setIndentStart: scala.Double => ParagraphStyle,
+    setLineSpacing: scala.Double => ParagraphStyle,
     setParagraphAlignment: ParagraphAlignment => ParagraphStyle,
-    setSpaceAbove: stdLib.Number => ParagraphStyle,
-    setSpaceBelow: stdLib.Number => ParagraphStyle,
+    setSpaceAbove: scala.Double => ParagraphStyle,
+    setSpaceBelow: scala.Double => ParagraphStyle,
     setSpacingMode: SpacingMode => ParagraphStyle,
     setTextDirection: TextDirection => ParagraphStyle
   ): ParagraphStyle = {

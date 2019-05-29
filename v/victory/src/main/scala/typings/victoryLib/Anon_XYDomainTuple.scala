@@ -14,8 +14,8 @@ trait Anon_XYDomainTuple
 object Anon_XYDomainTuple {
   @scala.inline
   def apply(x: victoryLib.victoryMod.DomainTuple, y: victoryLib.victoryMod.DomainTuple = null): Anon_XYDomainTuple = {
-    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(x = x)
+    if (y != null) __obj.updateDynamic("y")(y)
     __obj.asInstanceOf[Anon_XYDomainTuple]
   }
 }

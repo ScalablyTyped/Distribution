@@ -25,7 +25,7 @@ trait TypeofPath extends js.Object {
   ]
   var Rectangle: org.scalablytyped.runtime.Instantiable2[
     /* rectangle */ paperLib.paperNs.Rectangle, 
-    /* radius */ js.UndefOr[/* radius */ scala.Double], 
+    js.UndefOr[/* radius */ scala.Double], 
     paperLib.paperNs.PathNs.Rectangle
   ]
   var RegularPolygon: org.scalablytyped.runtime.Instantiable3[
@@ -65,7 +65,7 @@ object TypeofPath {
     ],
     Rectangle: org.scalablytyped.runtime.Instantiable2[
       /* rectangle */ paperLib.paperNs.Rectangle, 
-      /* radius */ js.UndefOr[/* radius */ scala.Double], 
+      js.UndefOr[/* radius */ scala.Double], 
       paperLib.paperNs.PathNs.Rectangle
     ],
     RegularPolygon: org.scalablytyped.runtime.Instantiable3[

@@ -2118,7 +2118,8 @@ object adoneLibStrings {
     extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait ignore
+    extends adoneLib.adoneNs.systemNs.processNs.INs._StdIOOption
   
   @js.native
   sealed trait indices extends js.Object
@@ -2127,7 +2128,8 @@ object adoneLibStrings {
   sealed trait inherit extends js.Object
   
   @js.native
-  sealed trait ipc extends js.Object
+  sealed trait ipc
+    extends adoneLib.adoneNs.systemNs.processNs.INs._StdIOOption
   
   @js.native
   sealed trait isoWeek
@@ -2354,7 +2356,8 @@ object adoneLibStrings {
   sealed trait pem extends js.Object
   
   @js.native
-  sealed trait pipe extends js.Object
+  sealed trait pipe
+    extends adoneLib.adoneNs.systemNs.processNs.INs._StdIOOption
   
   @js.native
   sealed trait pl

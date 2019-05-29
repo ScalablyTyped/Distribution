@@ -920,25 +920,15 @@ trait MathJsStatic extends js.Object {
     */
   def factorial(n: scala.Double): scala.Double | BigNumber | MathArray | Matrix = js.native
   def filter(
-    x: js.Array[java.lang.String],
+    x: js.Array[java.lang.String] | MathArray,
     test: js.Function3[
       /* value */ js.Any, 
       /* index */ js.Any, 
-      /* matrix */ Matrix | MathArray | js.Array[java.lang.String], 
+      js.Array[java.lang.String] | MathArray | Matrix, 
       scala.Boolean
     ]
   ): Matrix | MathArray = js.native
-  def filter(x: js.Array[java.lang.String], test: stdLib.RegExp): Matrix | MathArray = js.native
-  def filter(
-    x: MathArray,
-    test: js.Function3[
-      /* value */ js.Any, 
-      /* index */ js.Any, 
-      /* matrix */ Matrix | MathArray | js.Array[java.lang.String], 
-      scala.Boolean
-    ]
-  ): Matrix | MathArray = js.native
-  def filter(x: MathArray, test: stdLib.RegExp): Matrix | MathArray = js.native
+  def filter(x: js.Array[java.lang.String] | MathArray, test: stdLib.RegExp): Matrix | MathArray = js.native
   /**
     * Filter the items in an array or one dimensional matrix.
     * @param x A one dimensional matrix or array to filter
@@ -1122,10 +1112,8 @@ trait MathJsStatic extends js.Object {
     */
   def identity(m: scala.Double, n: scala.Double): Matrix | MathArray | scala.Double = js.native
   def identity(m: scala.Double, n: scala.Double, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
-  def identity(size: js.Array[scala.Double]): Matrix | MathArray | scala.Double = js.native
-  def identity(size: js.Array[scala.Double], format: java.lang.String): Matrix | MathArray | scala.Double = js.native
-  def identity(size: MathArray): Matrix | MathArray | scala.Double = js.native
-  def identity(size: MathArray, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
+  def identity(size: js.Array[scala.Double] | MathArray): Matrix | MathArray | scala.Double = js.native
+  def identity(size: js.Array[scala.Double] | MathArray, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
   def identity(size: Matrix): Matrix | MathArray | scala.Double = js.native
   def identity(size: Matrix, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
   /**
@@ -1683,6 +1671,7 @@ trait MathJsStatic extends js.Object {
     * @returns multinomial coefficent
     */
   def multinomial(a: js.Array[BigNumber | scala.Double]): scala.Double | BigNumber = js.native
+  def multiply(x: MathArray, y: MathType): Matrix | MathArray = js.native
   def multiply(x: MathType, y: MathType): MathType = js.native
   /**
     * Multiply two values, x * y. The result is squeezed. For matrices, the
@@ -1694,8 +1683,6 @@ trait MathJsStatic extends js.Object {
   def multiply(x: Matrix, y: MathType): Matrix | MathArray = js.native
   def multiply(x: Unit, y: Unit): Unit = js.native
   def multiply(x: scala.Double, y: scala.Double): scala.Double = js.native
-  @JSName("multiply")
-  def `multiply_<union>`(x: MathArray, y: MathType): Matrix | MathArray = js.native
   def norm(x: BigNumber): scala.Double | BigNumber = js.native
   def norm(x: BigNumber, p: java.lang.String): scala.Double | BigNumber = js.native
   def norm(x: BigNumber, p: BigNumber): scala.Double | BigNumber = js.native

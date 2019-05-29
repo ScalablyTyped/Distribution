@@ -11,7 +11,7 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var BacktrackWindow: js.UndefOr[LongOptional] = js.undefined
   /**
-    * A value that indicates whether to copy all tags from the restored DB cluster to snapshots of the restored DB cluster. The default is not to copy them.
+    * True to copy all tags from the restored DB cluster to snapshots of the restored DB cluster, and otherwise false. The default is false.
     */
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. 
+    * Indicates if the DB cluster should have deletion protection enabled. The database can't be deleted when this value is set to true. The default is false. 
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   /**
-    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled.
+    * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
     */
   var Port: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * The date and time to restore the DB cluster to. Valid Values: Value must be a time in Universal Coordinated Time (UTC) format Constraints:   Must be before the latest restorable time for the DB instance   Must be specified if UseLatestRestorableTime parameter is not provided   Can't be specified if the UseLatestRestorableTime parameter is enabled   Can't be specified if the RestoreType parameter is copy-on-write    Example: 2015-03-07T23:45:00Z 
+    * The date and time to restore the DB cluster to. Valid Values: Value must be a time in Universal Coordinated Time (UTC) format Constraints:   Must be before the latest restorable time for the DB instance   Must be specified if UseLatestRestorableTime parameter is not provided   Can't be specified if UseLatestRestorableTime parameter is true   Can't be specified if RestoreType parameter is copy-on-write    Example: 2015-03-07T23:45:00Z 
     */
   var RestoreToTime: js.UndefOr[TStamp] = js.undefined
   /**
@@ -64,7 +64,7 @@ trait RestoreDBClusterToPointInTimeMessage extends js.Object {
   var SourceDBClusterIdentifier: String
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
-    * A value that indicates whether to restore the DB cluster to the latest restorable backup time. By default, the DB cluster is not restored to the latest restorable backup time.  Constraints: Can't be specified if RestoreToTime parameter is provided.
+    * A value that is set to true to restore the DB cluster to the latest restorable backup time, and false otherwise.  Default: false  Constraints: Can't be specified if RestoreToTime parameter is provided.
     */
   var UseLatestRestorableTime: js.UndefOr[Boolean] = js.undefined
   /**

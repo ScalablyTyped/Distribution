@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 trait QueryOptions extends js.Object {
   var forceFetch: js.UndefOr[scala.Boolean] = js.undefined
   var fragments: js.UndefOr[
-    js.Array[typedDashGraphqlLib.graphqlMod.FragmentDefinition] | js.Array[js.Array[typedDashGraphqlLib.graphqlMod.FragmentDefinition]]
+    js.Array[
+      js.Array[typedDashGraphqlLib.graphqlMod.FragmentDefinition] | typedDashGraphqlLib.graphqlMod.FragmentDefinition
+    ]
   ] = js.undefined
   var noFetch: js.UndefOr[scala.Boolean] = js.undefined
   var pollInterval: js.UndefOr[scala.Double] = js.undefined
@@ -22,7 +24,9 @@ object QueryOptions {
   @scala.inline
   def apply(
     forceFetch: js.UndefOr[scala.Boolean] = js.undefined,
-    fragments: js.Array[typedDashGraphqlLib.graphqlMod.FragmentDefinition] | js.Array[js.Array[typedDashGraphqlLib.graphqlMod.FragmentDefinition]] = null,
+    fragments: js.Array[
+      js.Array[typedDashGraphqlLib.graphqlMod.FragmentDefinition] | typedDashGraphqlLib.graphqlMod.FragmentDefinition
+    ] = null,
     noFetch: js.UndefOr[scala.Boolean] = js.undefined,
     pollInterval: scala.Int | scala.Double = null,
     returnPartialData: js.UndefOr[scala.Boolean] = js.undefined,
@@ -32,7 +36,7 @@ object QueryOptions {
   ): QueryOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(forceFetch)) __obj.updateDynamic("forceFetch")(forceFetch)
-    if (fragments != null) __obj.updateDynamic("fragments")(fragments.asInstanceOf[js.Any])
+    if (fragments != null) __obj.updateDynamic("fragments")(fragments)
     if (!js.isUndefined(noFetch)) __obj.updateDynamic("noFetch")(noFetch)
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
     if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData)

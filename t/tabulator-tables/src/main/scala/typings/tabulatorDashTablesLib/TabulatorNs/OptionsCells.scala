@@ -11,7 +11,7 @@ trait OptionsCells extends CellCallbacks {
     js.Function3[
       /* cell */ CellComponent, 
       /* value */ js.Any, 
-      /* validators */ js.Array[Validator] | js.Array[StandardValidatorType], 
+      /* validators */ js.Array[StandardValidatorType | Validator], 
       scala.Unit
     ]
   ] = js.undefined
@@ -34,7 +34,7 @@ object OptionsCells {
     cellMouseOver: CellEventCallback = null,
     cellTap: CellEventCallback = null,
     cellTapHold: CellEventCallback = null,
-    validationFailed: (/* cell */ CellComponent, /* value */ js.Any, /* validators */ js.Array[Validator] | js.Array[StandardValidatorType]) => scala.Unit = null
+    validationFailed: (/* cell */ CellComponent, /* value */ js.Any, /* validators */ js.Array[StandardValidatorType | Validator]) => scala.Unit = null
   ): OptionsCells = {
     val __obj = js.Dynamic.literal()
     if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)

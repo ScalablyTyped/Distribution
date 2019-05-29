@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MessageProperties extends js.Object {
-  var appId: js.UndefOr[_] = js.undefined
-  var clusterId: js.UndefOr[_] = js.undefined
-  var contentEncoding: js.UndefOr[_] = js.undefined
-  var contentType: js.UndefOr[_] = js.undefined
-  var correlationId: js.UndefOr[_] = js.undefined
-  var deliveryMode: js.UndefOr[_] = js.undefined
-  var expiration: js.UndefOr[_] = js.undefined
+  var appId: js.UndefOr[js.Any] = js.undefined
+  var clusterId: js.UndefOr[js.Any] = js.undefined
+  var contentEncoding: js.UndefOr[js.Any] = js.undefined
+  var contentType: js.UndefOr[js.Any] = js.undefined
+  var correlationId: js.UndefOr[js.Any] = js.undefined
+  var deliveryMode: js.UndefOr[js.Any] = js.undefined
+  var expiration: js.UndefOr[js.Any] = js.undefined
   var headers: MessagePropertyHeaders
-  var messageId: js.UndefOr[_] = js.undefined
-  var priority: js.UndefOr[_] = js.undefined
-  var replyTo: js.UndefOr[_] = js.undefined
-  var timestamp: js.UndefOr[_] = js.undefined
-  var `type`: js.UndefOr[_] = js.undefined
-  var userId: js.UndefOr[_] = js.undefined
+  var messageId: js.UndefOr[js.Any] = js.undefined
+  var priority: js.UndefOr[js.Any] = js.undefined
+  var replyTo: js.UndefOr[js.Any] = js.undefined
+  var timestamp: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[js.Any] = js.undefined
+  var userId: js.UndefOr[js.Any] = js.undefined
 }
 
 object MessageProperties {

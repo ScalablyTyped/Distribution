@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait TableProps[D, ResolvedData]
   extends TextProps
-     with ComponentDecoratorProps
+     with ComponentDecoratorProps[D]
      with ControlledStateCallbackProps
      with PivotingProps
-     with ControlledStateOverrideProps
+     with ControlledStateOverrideProps[D]
      with ComponentProps {
   /**
     * Default: string
@@ -25,7 +25,7 @@ trait TableProps[D, ResolvedData]
   /** Default: true */
   var collapseOnSortingChange: scala.Boolean
   /** Global Column Defaults */
-  var column: stdLib.Partial[GlobalColumn]
+  var column: stdLib.Partial[GlobalColumn[D]]
   /** Array of all Available Columns */
   var columns: js.UndefOr[js.Array[Column[ResolvedData]]] = js.undefined
   /** Default: [] */
@@ -73,7 +73,7 @@ trait TableProps[D, ResolvedData]
   /** Default: [5, 10, 20, 25, 50, 100] */
   var pageSizeOptions: js.Array[scala.Double]
   /** Privot defaults. */
-  var pivotDefaults: stdLib.Partial[PivotDefaults]
+  var pivotDefaults: stdLib.Partial[PivotDefaults[D]]
   /** Default: true */
   var resizable: scala.Boolean
   var resolveData: js.UndefOr[js.Function1[/* data */ js.Array[D], js.Array[ResolvedData]]] = js.undefined
@@ -120,7 +120,7 @@ object TableProps {
     PivotValueComponent: reactLib.reactMod.ReactType[_],
     PreviousComponent: reactLib.reactMod.ReactType[_],
     ResizerComponent: reactLib.reactMod.ReactType[_],
-    SubComponent: SubComponentFunction,
+    SubComponent: SubComponentFunction[D],
     TableComponent: reactLib.reactMod.ReactType[_],
     TbodyComponent: reactLib.reactMod.ReactType[_],
     TdComponent: reactLib.reactMod.ReactType[_],
@@ -135,7 +135,7 @@ object TableProps {
     collapseOnDataChange: scala.Boolean,
     collapseOnPageChange: scala.Boolean,
     collapseOnSortingChange: scala.Boolean,
-    column: stdLib.Partial[GlobalColumn],
+    column: stdLib.Partial[GlobalColumn[D]],
     data: js.Array[D],
     defaultFilterMethod: DefaultFilterFunction,
     defaultFiltered: js.Array[Filter],
@@ -155,24 +155,24 @@ object TableProps {
     getLoadingProps: ComponentPropsGetter0,
     getNoDataProps: ComponentPropsGetter0,
     getPaginationProps: ComponentPropsGetter0,
-    getProps: ComponentPropsGetterRC | ComponentPropsGetterC | ComponentPropsGetter0,
+    getProps: ComponentPropsGetterRC[D] | ComponentPropsGetterC[D] | ComponentPropsGetter0,
     getResizerProps: ComponentPropsGetter0,
     getTableProps: ComponentPropsGetter0,
     getTbodyProps: ComponentPropsGetter0,
-    getTdProps: ComponentPropsGetterRC | ComponentPropsGetterR,
+    getTdProps: ComponentPropsGetterRC[D] | ComponentPropsGetterR[D],
     getTfootProps: ComponentPropsGetter0,
     getTfootTrProps: ComponentPropsGetter0,
     getTheadFilterProps: ComponentPropsGetter0,
-    getTheadFilterThProps: ComponentPropsGetterC,
+    getTheadFilterThProps: ComponentPropsGetterC[D],
     getTheadFilterTrProps: ComponentPropsGetter0,
     getTheadGroupProps: ComponentPropsGetter0,
-    getTheadGroupThProps: ComponentPropsGetterC,
+    getTheadGroupThProps: ComponentPropsGetterC[D],
     getTheadGroupTrProps: ComponentPropsGetter0,
     getTheadProps: ComponentPropsGetter0,
-    getTheadThProps: ComponentPropsGetterC,
+    getTheadThProps: ComponentPropsGetterC[D],
     getTheadTrProps: ComponentPropsGetter0,
-    getTrGroupProps: ComponentPropsGetterR | ComponentPropsGetter0,
-    getTrProps: ComponentPropsGetterR | ComponentPropsGetter0,
+    getTrGroupProps: ComponentPropsGetterR[D] | ComponentPropsGetter0,
+    getTrProps: ComponentPropsGetterR[D] | ComponentPropsGetter0,
     groupedByPivotKey: java.lang.String,
     indexKey: java.lang.String,
     loading: scala.Boolean,
@@ -197,7 +197,7 @@ object TableProps {
     pageText: reactLib.reactMod.ReactNode,
     pivotBy: js.Array[java.lang.String],
     pivotColumnWidth: scala.Double,
-    pivotDefaults: stdLib.Partial[PivotDefaults],
+    pivotDefaults: stdLib.Partial[PivotDefaults[D]],
     pivotIDKey: java.lang.String,
     pivotValKey: java.lang.String,
     previousText: reactLib.reactMod.ReactNode,

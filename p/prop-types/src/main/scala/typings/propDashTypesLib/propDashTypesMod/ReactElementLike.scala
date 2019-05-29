@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ReactElementLike extends js.Object {
+trait ReactElementLike extends _ReactNodeLike {
   var key: java.lang.String | scala.Double | scala.Null
   var props: js.Any
   var `type`: ReactComponentLike

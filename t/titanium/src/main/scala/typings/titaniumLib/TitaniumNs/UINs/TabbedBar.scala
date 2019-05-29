@@ -17,7 +17,7 @@ trait TabbedBar extends View {
   /**
   			 * Array of labels for the tabbed bar.
   			 */
-  var labels: js.Array[java.lang.String] | js.Array[titaniumLib.BarItemType] = js.native
+  var labels: js.Array[titaniumLib.BarItemType | java.lang.String] = js.native
   /**
   			 * Style of the tabbed bar.
   			 */
@@ -29,7 +29,7 @@ trait TabbedBar extends View {
   /**
   			 * Gets the value of the <Titanium.UI.TabbedBar.labels> property.
   			 */
-  def getLabels(): js.Array[java.lang.String] | js.Array[titaniumLib.BarItemType] = js.native
+  def getLabels(): js.Array[titaniumLib.BarItemType | java.lang.String] = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TabbedBar.style> property.
   			 */

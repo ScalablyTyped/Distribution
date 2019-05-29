@@ -148,7 +148,7 @@ class Loki protected () extends LokiEventEmitter {
     *
     * @param callback - (Optional) user supplied async callback / error handler
     */
-  def deleteDatabase(callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], scala.Unit]): scala.Unit = js.native
+  def deleteDatabase(callback: js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], scala.Unit]): scala.Unit = js.native
   def deleteDatabase(
     options: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], scala.Unit],
     callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], scala.Unit]

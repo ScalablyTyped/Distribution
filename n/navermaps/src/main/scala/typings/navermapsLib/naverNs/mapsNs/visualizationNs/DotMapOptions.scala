@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DotMapOptions extends js.Object {
-  var data: js.Array[navermapsLib.naverNs.mapsNs.LatLng] | js.Array[navermapsLib.naverNs.mapsNs.PointArrayLiteral] | js.Array[WeightedLocation]
+  var data: js.Array[
+    navermapsLib.naverNs.mapsNs.LatLng | navermapsLib.naverNs.mapsNs.PointArrayLiteral | WeightedLocation
+  ]
   var fillColor: js.UndefOr[java.lang.String] = js.undefined
   var map: navermapsLib.naverNs.mapsNs.Map
   var opacity: js.UndefOr[scala.Double] = js.undefined
@@ -20,7 +22,9 @@ trait DotMapOptions extends js.Object {
 object DotMapOptions {
   @scala.inline
   def apply(
-    data: js.Array[navermapsLib.naverNs.mapsNs.LatLng] | js.Array[navermapsLib.naverNs.mapsNs.PointArrayLiteral] | js.Array[WeightedLocation],
+    data: js.Array[
+      navermapsLib.naverNs.mapsNs.LatLng | navermapsLib.naverNs.mapsNs.PointArrayLiteral | WeightedLocation
+    ],
     map: navermapsLib.naverNs.mapsNs.Map,
     fillColor: java.lang.String = null,
     opacity: scala.Int | scala.Double = null,
@@ -30,7 +34,7 @@ object DotMapOptions {
     strokeLineJoin: navermapsLib.naverNs.mapsNs.strokeLineJoinType = null,
     strokeWeight: scala.Int | scala.Double = null
   ): DotMapOptions = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], map = map)
+    val __obj = js.Dynamic.literal(data = data, map = map)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])

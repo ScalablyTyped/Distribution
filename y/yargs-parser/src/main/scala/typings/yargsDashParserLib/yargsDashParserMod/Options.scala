@@ -15,7 +15,7 @@ trait Options extends js.Object {
     * Indicate that keys should be parsed as an array and coerced to booleans / numbers:
     * { array: [ { key: 'foo', boolean: true }, {key: 'bar', number: true} ] }`.
     */
-  var array: js.UndefOr[js.Array[java.lang.String] | js.Array[yargsDashParserLib.Anon_Boolean]] = js.undefined
+  var array: js.UndefOr[js.Array[yargsDashParserLib.Anon_Boolean | java.lang.String]] = js.undefined
   /** Arguments should be parsed as booleans: `{ boolean: ['x', 'y'] }`. */
   var boolean: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
@@ -49,7 +49,7 @@ object Options {
   @scala.inline
   def apply(
     alias: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] = null,
-    array: js.Array[java.lang.String] | js.Array[yargsDashParserLib.Anon_Boolean] = null,
+    array: js.Array[yargsDashParserLib.Anon_Boolean | java.lang.String] = null,
     boolean: js.Array[java.lang.String] = null,
     coerce: org.scalablytyped.runtime.StringDictionary[js.Function1[/* arg */ js.Any, _]] = null,
     config: java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
@@ -64,7 +64,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (array != null) __obj.updateDynamic("array")(array.asInstanceOf[js.Any])
+    if (array != null) __obj.updateDynamic("array")(array)
     if (boolean != null) __obj.updateDynamic("boolean")(boolean)
     if (coerce != null) __obj.updateDynamic("coerce")(coerce)
     if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])

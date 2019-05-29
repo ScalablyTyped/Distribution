@@ -16,7 +16,7 @@ class Polygon () extends OverlayView {
   def getOptions(): PolygonOptions = js.native
   def getOptions(key: java.lang.String): PolygonOptions = js.native
   def getPath(): ArrayOfCoords | KVOArrayOfCoords = js.native
-  def getPaths(): js.Array[ArrayOfCoords] | js.Array[KVOArrayOfCoords] = js.native
+  def getPaths(): js.Array[ArrayOfCoords | KVOArrayOfCoords] = js.native
   def getStyles(): PolygonOptions = js.native
   def getStyles(key: java.lang.String): PolygonOptions = js.native
   def getVisible(): scala.Boolean = js.native
@@ -26,8 +26,7 @@ class Polygon () extends OverlayView {
   def setOptions(options: PolygonOptions): scala.Unit = js.native
   def setPath(path: ArrayOfCoords | ArrayOfCoordsLiteral): scala.Unit = js.native
   def setPath(path: KVOArrayOfCoords): scala.Unit = js.native
-  def setPaths(paths: js.Array[ArrayOfCoords]): scala.Unit = js.native
-  def setPaths(paths: ArrayOfCoordsLiteral): scala.Unit = js.native
+  def setPaths(paths: js.Array[ArrayOfCoords] | ArrayOfCoordsLiteral): scala.Unit = js.native
    // TODO. KVOArray.<KVOArrayOfCoords>
   def setStyles(key: java.lang.String, value: js.Any): scala.Unit = js.native
   def setStyles(options: PolygonOptions): scala.Unit = js.native

@@ -201,6 +201,7 @@ object luxonLibStrings {
   @js.native
   sealed trait narrow
     extends luxonLib.luxonMod.StringUnitLength
+       with luxonLib.luxonMod.ZoneOffsetFormat
   
   @js.native
   sealed trait numeric
@@ -239,10 +240,15 @@ object luxonLibStrings {
   @js.native
   sealed trait short
     extends luxonLib.luxonMod.StringUnitLength
+       with luxonLib.luxonMod.ZoneOffsetFormat
   
   @js.native
   sealed trait tamldec
     extends luxonLib.luxonMod.NumberingSystem
+  
+  @js.native
+  sealed trait techie
+    extends luxonLib.luxonMod.ZoneOffsetFormat
   
   @js.native
   sealed trait telu
@@ -390,6 +396,8 @@ object luxonLibStrings {
   def short: short = "short".asInstanceOf[short]
   @scala.inline
   def tamldec: tamldec = "tamldec".asInstanceOf[tamldec]
+  @scala.inline
+  def techie: techie = "techie".asInstanceOf[techie]
   @scala.inline
   def telu: telu = "telu".asInstanceOf[telu]
   @scala.inline

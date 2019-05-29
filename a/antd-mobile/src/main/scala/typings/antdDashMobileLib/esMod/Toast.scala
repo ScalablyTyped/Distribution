@@ -14,6 +14,12 @@ object Toast extends js.Object {
   def fail(
     content: reactLib.reactMod.ReactNode,
     duration: js.UndefOr[scala.Nothing],
+    onClose: js.UndefOr[scala.Nothing],
+    mask: scala.Boolean
+  ): scala.Unit = js.native
+  def fail(
+    content: reactLib.reactMod.ReactNode,
+    duration: js.UndefOr[scala.Nothing],
     onClose: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   def fail(
@@ -22,13 +28,13 @@ object Toast extends js.Object {
     onClose: js.Function0[scala.Unit],
     mask: scala.Boolean
   ): scala.Unit = js.native
+  def fail(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def fail(
     content: reactLib.reactMod.ReactNode,
-    duration: js.UndefOr[scala.Nothing],
+    duration: scala.Double,
     onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def fail(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def fail(content: reactLib.reactMod.ReactNode, duration: scala.Double, onClose: js.Function0[scala.Unit]): scala.Unit = js.native
   def fail(
     content: reactLib.reactMod.ReactNode,
@@ -36,14 +42,14 @@ object Toast extends js.Object {
     onClose: js.Function0[scala.Unit],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def fail(
+  def hide(): scala.Unit = js.native
+  def info(content: reactLib.reactMod.ReactNode): scala.Unit = js.native
+  def info(
     content: reactLib.reactMod.ReactNode,
-    duration: scala.Double,
+    duration: js.UndefOr[scala.Nothing],
     onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def hide(): scala.Unit = js.native
-  def info(content: reactLib.reactMod.ReactNode): scala.Unit = js.native
   def info(
     content: reactLib.reactMod.ReactNode,
     duration: js.UndefOr[scala.Nothing],
@@ -55,13 +61,13 @@ object Toast extends js.Object {
     onClose: js.Function0[scala.Unit],
     mask: scala.Boolean
   ): scala.Unit = js.native
+  def info(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def info(
     content: reactLib.reactMod.ReactNode,
-    duration: js.UndefOr[scala.Nothing],
+    duration: scala.Double,
     onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def info(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def info(content: reactLib.reactMod.ReactNode, duration: scala.Double, onClose: js.Function0[scala.Unit]): scala.Unit = js.native
   def info(
     content: reactLib.reactMod.ReactNode,
@@ -69,13 +75,13 @@ object Toast extends js.Object {
     onClose: js.Function0[scala.Unit],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def info(
+  def loading(content: reactLib.reactMod.ReactNode): scala.Unit = js.native
+  def loading(
     content: reactLib.reactMod.ReactNode,
-    duration: scala.Double,
+    duration: js.UndefOr[scala.Nothing],
     onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def loading(content: reactLib.reactMod.ReactNode): scala.Unit = js.native
   def loading(
     content: reactLib.reactMod.ReactNode,
     duration: js.UndefOr[scala.Nothing],
@@ -87,13 +93,13 @@ object Toast extends js.Object {
     onClose: js.Function0[scala.Unit],
     mask: scala.Boolean
   ): scala.Unit = js.native
+  def loading(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def loading(
     content: reactLib.reactMod.ReactNode,
-    duration: js.UndefOr[scala.Nothing],
+    duration: scala.Double,
     onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def loading(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def loading(content: reactLib.reactMod.ReactNode, duration: scala.Double, onClose: js.Function0[scala.Unit]): scala.Unit = js.native
   def loading(
     content: reactLib.reactMod.ReactNode,
@@ -101,13 +107,13 @@ object Toast extends js.Object {
     onClose: js.Function0[scala.Unit],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def loading(
+  def offline(content: reactLib.reactMod.ReactNode): scala.Unit = js.native
+  def offline(
     content: reactLib.reactMod.ReactNode,
-    duration: scala.Double,
+    duration: js.UndefOr[scala.Nothing],
     onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def offline(content: reactLib.reactMod.ReactNode): scala.Unit = js.native
   def offline(
     content: reactLib.reactMod.ReactNode,
     duration: js.UndefOr[scala.Nothing],
@@ -119,24 +125,18 @@ object Toast extends js.Object {
     onClose: js.Function0[scala.Unit],
     mask: scala.Boolean
   ): scala.Unit = js.native
+  def offline(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def offline(
     content: reactLib.reactMod.ReactNode,
-    duration: js.UndefOr[scala.Nothing],
+    duration: scala.Double,
     onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def offline(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def offline(content: reactLib.reactMod.ReactNode, duration: scala.Double, onClose: js.Function0[scala.Unit]): scala.Unit = js.native
   def offline(
     content: reactLib.reactMod.ReactNode,
     duration: scala.Double,
     onClose: js.Function0[scala.Unit],
-    mask: scala.Boolean
-  ): scala.Unit = js.native
-  def offline(
-    content: reactLib.reactMod.ReactNode,
-    duration: scala.Double,
-    onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
   def show(content: reactLib.reactMod.ReactNode): scala.Unit = js.native
@@ -147,6 +147,12 @@ object Toast extends js.Object {
   def success(
     content: reactLib.reactMod.ReactNode,
     duration: js.UndefOr[scala.Nothing],
+    onClose: js.UndefOr[scala.Nothing],
+    mask: scala.Boolean
+  ): scala.Unit = js.native
+  def success(
+    content: reactLib.reactMod.ReactNode,
+    duration: js.UndefOr[scala.Nothing],
     onClose: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   def success(
@@ -155,24 +161,18 @@ object Toast extends js.Object {
     onClose: js.Function0[scala.Unit],
     mask: scala.Boolean
   ): scala.Unit = js.native
+  def success(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def success(
     content: reactLib.reactMod.ReactNode,
-    duration: js.UndefOr[scala.Nothing],
+    duration: scala.Double,
     onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
-  def success(content: reactLib.reactMod.ReactNode, duration: scala.Double): scala.Unit = js.native
   def success(content: reactLib.reactMod.ReactNode, duration: scala.Double, onClose: js.Function0[scala.Unit]): scala.Unit = js.native
   def success(
     content: reactLib.reactMod.ReactNode,
     duration: scala.Double,
     onClose: js.Function0[scala.Unit],
-    mask: scala.Boolean
-  ): scala.Unit = js.native
-  def success(
-    content: reactLib.reactMod.ReactNode,
-    duration: scala.Double,
-    onClose: js.UndefOr[scala.Nothing],
     mask: scala.Boolean
   ): scala.Unit = js.native
 }

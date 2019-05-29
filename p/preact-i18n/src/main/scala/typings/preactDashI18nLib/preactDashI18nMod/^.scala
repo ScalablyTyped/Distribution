@@ -23,11 +23,7 @@ object ^ extends js.Object {
   ): preactLib.preactMod.VNode[_] = js.native
   def withText[Props, Context](mapping: js.Object): js.Function1[
     /* Child */ preactLib.preactMod.ComponentChild, 
-    org.scalablytyped.runtime.Instantiable2[
-      /* props */ js.UndefOr[/* props */ Props], 
-      /* context */ js.UndefOr[/* context */ Context], 
-      js.Any
-    ]
+    org.scalablytyped.runtime.Instantiable2[js.UndefOr[/* props */ Props], js.UndefOr[/* context */ Context], js.Any]
   ] = js.native
 }
 

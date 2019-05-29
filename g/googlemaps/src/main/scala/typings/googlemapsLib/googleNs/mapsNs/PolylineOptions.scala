@@ -39,7 +39,7 @@ trait PolylineOptions extends js.Object {
     * converted to an MVCArray Inserting or removing LatLngs in the MVCArray
     * will automatically update the polyline on the map.
     */
-  var path: js.UndefOr[MVCArray[LatLng] | js.Array[LatLng] | js.Array[LatLngLiteral]] = js.undefined
+  var path: js.UndefOr[MVCArray[LatLng] | (js.Array[LatLng | LatLngLiteral])] = js.undefined
   /**
     * The stroke color. All CSS3 colors are supported except for extended
     * named colors.
@@ -64,7 +64,7 @@ object PolylineOptions {
     geodesic: js.UndefOr[scala.Boolean] = js.undefined,
     icons: js.Array[IconSequence] = null,
     map: Map = null,
-    path: MVCArray[LatLng] | js.Array[LatLng] | js.Array[LatLngLiteral] = null,
+    path: MVCArray[LatLng] | (js.Array[LatLng | LatLngLiteral]) = null,
     strokeColor: java.lang.String = null,
     strokeOpacity: scala.Int | scala.Double = null,
     strokeWeight: scala.Int | scala.Double = null,

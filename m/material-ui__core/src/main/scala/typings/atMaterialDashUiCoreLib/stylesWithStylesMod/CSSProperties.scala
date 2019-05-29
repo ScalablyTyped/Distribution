@@ -9,9 +9,9 @@ trait CSSProperties
   extends csstypeLib.csstypeMod.Properties[scala.Double | java.lang.String]
      with // Allow pseudo selectors and media queries
 /* k */ org.scalablytyped.runtime.StringDictionary[
-      (js.UndefOr[
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 488 */ js.Any
-      ]) | CSSProperties
+      js.UndefOr[
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 491 */ js.Any
+      ]
     ]
 
 object CSSProperties {
@@ -20,9 +20,9 @@ object CSSProperties {
     Properties: csstypeLib.csstypeMod.Properties[scala.Double | java.lang.String] = null,
     StringDictionary: // Allow pseudo selectors and media queries
   /* k */ org.scalablytyped.runtime.StringDictionary[
-      (js.UndefOr[
-        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 488 */ js.Any
-      ]) | CSSProperties
+      js.UndefOr[
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 491 */ js.Any
+      ]
     ] = null
   ): CSSProperties = {
     val __obj = js.Dynamic.literal()

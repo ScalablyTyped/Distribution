@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular/dist/directives/navigation/stack-utils", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def computeStackId(prefixUrl: js.Array[java.lang.String], url: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def computeStackId(prefixUrl: js.UndefOr[scala.Nothing], url: java.lang.String): js.UndefOr[java.lang.String] = js.native
+  def computeStackId(prefixUrl: js.Array[java.lang.String], url: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def destroyView(): scala.Unit = js.native
   def destroyView(view: RouteView): scala.Unit = js.native
   def getUrl(

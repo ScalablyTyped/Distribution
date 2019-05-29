@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A single route containing a set of legs in a DirectionsResult.
+  * Note that though this object is "JSON-like," it is not strictly JSON,
+  * as it directly and indirectly includes LatLng objects.
+  */
 trait DirectionsRoute extends js.Object {
   /** The bounds for this route. */
   var bounds: LatLngBounds

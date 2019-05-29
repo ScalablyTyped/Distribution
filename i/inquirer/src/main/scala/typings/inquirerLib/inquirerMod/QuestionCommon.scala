@@ -12,7 +12,7 @@ trait QuestionCommon[A] extends js.Object {
     * the current inquirer session answers.
     */
   var default: js.UndefOr[
-    java.lang.String | scala.Double | scala.Boolean | js.Array[_] | (js.Function1[/* answers */ A, _]) | (js.Function1[/* answers */ A, js.Promise[_]])
+    java.lang.String | scala.Double | scala.Boolean | js.Array[_] | (js.Function1[/* answers */ A, _ | js.Promise[_]])
   ] = js.undefined
   /**
     * The question to print. If defined as a function, the first parameter will be
@@ -45,7 +45,7 @@ trait QuestionCommon[A] extends js.Object {
 object QuestionCommon {
   @scala.inline
   def apply[A](
-    default: java.lang.String | scala.Double | scala.Boolean | js.Array[_] | (js.Function1[/* answers */ A, _]) | (js.Function1[/* answers */ A, js.Promise[_]]) = null,
+    default: java.lang.String | scala.Double | scala.Boolean | js.Array[_] | (js.Function1[/* answers */ A, _ | js.Promise[_]]) = null,
     message: java.lang.String | (js.Function1[/* answers */ A, java.lang.String]) = null,
     name: java.lang.String = null,
     prefix: java.lang.String = null,

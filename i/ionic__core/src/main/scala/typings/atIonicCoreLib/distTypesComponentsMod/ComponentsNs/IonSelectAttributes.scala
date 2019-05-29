@@ -24,7 +24,7 @@ trait IonSelectAttributes
   /**
     * The interface the select should use: `action-sheet`, `popover` or `alert`.
     */
-  var interface: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SelectInterface */ js.UndefOr[
+  var interface: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SelectInterface */ js.Any
   ] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait IonSelectAttributes
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
+  var mode: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
   ] = js.undefined
   /**

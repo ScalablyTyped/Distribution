@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 package object distCreateDashReducerMod {
   type CreateReducerChainApi[TState, TPrevNotHandledAction /* <: typesafeDashActionsLib.distTypeDashHelpersMod.Action[typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant] */, TRootAction /* <: typesafeDashActionsLib.distTypeDashHelpersMod.Action[typesafeDashActionsLib.distTypeDashHelpersMod.TypeConstant] */] = js.Function2[
     /* singleOrMultipleCreatorsAndTypes */ (/* import warning: ImportType.apply Failed type conversion: TPrevNotHandledAction['type'] */ js.Any) | (js.Array[
-      /* import warning: ImportType.apply Failed type conversion: TPrevNotHandledAction['type'] */ js.Any
-    ]) | (js.Function1[/* repeated */ js.Any, TPrevNotHandledAction]) | (js.Array[js.Function1[/* repeated */ js.Any, TPrevNotHandledAction]]), 
+      (/* import warning: ImportType.apply Failed type conversion: TPrevNotHandledAction['type'] */ js.Any) | (js.Function1[/* repeated */ js.Any, TPrevNotHandledAction])
+    ]) | (js.Function1[/* repeated */ js.Any, TPrevNotHandledAction]), 
     /* reducer */ js.Function2[/* state */ TState, /* action */ TPrevNotHandledAction, TState], 
     ((typesafeDashActionsLib.distTypeDashHelpersMod.Reducer[TState, TRootAction]) with (typesafeDashActionsLib.Anon_ActionHandleAction[TRootAction, TPrevNotHandledAction, TPrevNotHandledAction, TPrevNotHandledAction, TState])) | ((typesafeDashActionsLib.distTypeDashHelpersMod.Reducer[TState, TRootAction]) with (typesafeDashActionsLib.Anon_ActionHandlers[TRootAction, TState]))
   ]

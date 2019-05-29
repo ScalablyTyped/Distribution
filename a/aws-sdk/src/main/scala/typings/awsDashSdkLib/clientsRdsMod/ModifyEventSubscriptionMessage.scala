@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ModifyEventSubscriptionMessage extends js.Object {
   /**
-    *  A value that indicates whether to activate the subscription. 
+    *  A Boolean value; set to true to activate the subscription. 
     */
   var Enabled: js.UndefOr[BooleanOptional] = js.undefined
   /**

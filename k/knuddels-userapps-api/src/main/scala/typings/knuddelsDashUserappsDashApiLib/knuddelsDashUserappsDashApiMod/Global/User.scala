@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 	 */
 @JSGlobal("User")
 @js.native
-class User () extends js.Object {
+class User ()
+  extends knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod._KnuddelsSerializable {
   /**
   		 * @see https://developer.knuddels.de/docs/classes/User.html#method_addNicklistIcon
   		 */

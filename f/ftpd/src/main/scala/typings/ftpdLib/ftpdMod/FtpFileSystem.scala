@@ -33,13 +33,8 @@ trait FtpFileSystem extends js.Object {
     scala.Unit
   ]) | (js.Function3[
     /* path */ java.lang.String, 
-    /* mode */ scala.Double, 
-    /* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException], scala.Unit]], 
-    scala.Unit
-  ]) | (js.Function3[
-    /* path */ java.lang.String, 
-    /* mode */ java.lang.String, 
-    /* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException], scala.Unit]], 
+    (/* mode */ scala.Double) | (/* mode */ java.lang.String), 
+    js.UndefOr[js.Function1[js.UndefOr[nodeLib.NodeJSNs.ErrnoException], scala.Unit]], 
     scala.Unit
   ]) = js.native
   var open: (js.Function3[
@@ -56,25 +51,9 @@ trait FtpFileSystem extends js.Object {
   ]) | (js.Function4[
     /* path */ java.lang.String, 
     /* flags */ java.lang.String, 
-    /* mode */ scala.Double, 
-    /* callback */ js.UndefOr[
-      js.Function2[
-        /* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException], 
-        /* fd */ js.UndefOr[scala.Double], 
-        _
-      ]
-    ], 
-    scala.Unit
-  ]) | (js.Function4[
-    /* path */ java.lang.String, 
-    /* flags */ java.lang.String, 
-    /* mode */ java.lang.String, 
-    /* callback */ js.UndefOr[
-      js.Function2[
-        /* err */ js.UndefOr[nodeLib.NodeJSNs.ErrnoException], 
-        /* fd */ js.UndefOr[scala.Double], 
-        _
-      ]
+    (/* mode */ scala.Double) | (/* mode */ java.lang.String), 
+    js.UndefOr[
+      js.Function2[js.UndefOr[nodeLib.NodeJSNs.ErrnoException], js.UndefOr[scala.Double], _]
     ], 
     scala.Unit
   ]) = js.native
@@ -84,18 +63,12 @@ trait FtpFileSystem extends js.Object {
   var readFile: js.UndefOr[
     (js.Function3[
       /* filename */ java.lang.String, 
-      /* encoding */ java.lang.String, 
-      /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]) | (js.Function3[
-      /* filename */ java.lang.String, 
-      /* options */ ftpdLib.Anon_EncodingFlag, 
-      /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit], 
-      scala.Unit
-    ]) | (js.Function3[
-      /* filename */ java.lang.String, 
-      /* options */ ftpdLib.Anon_Flag, 
-      /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit], 
+      (/* options */ ftpdLib.Anon_EncodingFlag) | (/* options */ ftpdLib.Anon_Flag) | (/* encoding */ java.lang.String), 
+      /* callback */ js.Function2[
+        /* err */ nodeLib.NodeJSNs.ErrnoException, 
+        (/* data */ nodeLib.Buffer) | (/* data */ java.lang.String), 
+        scala.Unit
+      ], 
       scala.Unit
     ]) | (js.Function2[
       /* filename */ java.lang.String, 
@@ -115,14 +88,8 @@ trait FtpFileSystem extends js.Object {
     ]) | (js.Function4[
       /* filename */ java.lang.String, 
       /* data */ js.Any, 
-      /* options */ ftpdLib.Anon_EncodingFlagMode, 
-      /* callback */ js.UndefOr[js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]], 
-      scala.Unit
-    ]) | (js.Function4[
-      /* filename */ java.lang.String, 
-      /* data */ js.Any, 
-      /* options */ ftpdLib.Anon_EncodingFlagModeString, 
-      /* callback */ js.UndefOr[js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]], 
+      (/* options */ ftpdLib.Anon_EncodingFlagMode) | (/* options */ ftpdLib.Anon_EncodingFlagModeString), 
+      js.UndefOr[js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]], 
       scala.Unit
     ])
   ] = js.native

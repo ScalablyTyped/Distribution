@@ -155,7 +155,7 @@ object Options {
     localized: (/* locale */ java.lang.String, /* lang */ js.Any) => scala.Unit = null,
     movableColumns: js.UndefOr[scala.Boolean] = js.undefined,
     movableRows: js.UndefOr[scala.Boolean] = js.undefined,
-    movableRowsConnectedTables: java.lang.String | js.Array[java.lang.String] | stdLib.HTMLElement | js.Array[stdLib.HTMLElement] = null,
+    movableRowsConnectedTables: java.lang.String | (js.Array[stdLib.HTMLElement | java.lang.String]) | stdLib.HTMLElement = null,
     movableRowsReceived: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ tabulatorDashTablesLib.Tabulator) => scala.Unit = null,
     movableRowsReceivedFailed: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ tabulatorDashTablesLib.Tabulator) => scala.Unit = null,
     movableRowsReceiver: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.insert | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.add | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.update | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.replace | (js.Function3[

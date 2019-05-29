@@ -13,7 +13,7 @@ class Scheduler protected ()
       /* scheduler */ rxjsLib.internalSchedulerMod.Scheduler, 
       /* work */ js.ThisFunction1[
         /* this */ rxjsLib.internalTypesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+        /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
         scala.Unit
       ], 
       rxjsLib.internalSchedulerActionMod.Action[js.Object]
@@ -22,7 +22,7 @@ class Scheduler protected ()
       /* scheduler */ rxjsLib.internalSchedulerMod.Scheduler, 
       /* work */ js.ThisFunction1[
         /* this */ rxjsLib.internalTypesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+        /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
         scala.Unit
       ], 
       rxjsLib.internalSchedulerActionMod.Action[js.Object]

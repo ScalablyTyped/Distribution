@@ -45,7 +45,7 @@ trait GridSettings
     scala.Boolean | js.Array[java.lang.String] | (js.Function1[/* index */ scala.Double, java.lang.String])
   ] = js.undefined
   var colWidths: js.UndefOr[
-    scala.Double | js.Array[scala.Double] | java.lang.String | js.Array[java.lang.String] | (js.Function1[/* index */ scala.Double, java.lang.String | scala.Double])
+    scala.Double | (js.Array[scala.Double | java.lang.String]) | java.lang.String | (js.Function1[/* index */ scala.Double, java.lang.String | scala.Double])
   ] = js.undefined
   var collapsibleColumns: js.UndefOr[
     scala.Boolean | js.Array[handsontableLib.handsontableMod.HandsontableNs.collapsibleColumnsNs.Settings]
@@ -80,7 +80,7 @@ trait GridSettings
   var customBorders: js.UndefOr[
     scala.Boolean | js.Array[handsontableLib.handsontableMod.HandsontableNs.customBordersNs.Settings]
   ] = js.undefined
-  var data: js.UndefOr[js.Array[js.Array[CellValue]] | js.Array[RowObject]] = js.undefined
+  var data: js.UndefOr[js.Array[js.Array[CellValue] | RowObject]] = js.undefined
   var dataSchema: js.UndefOr[
     RowObject | js.Array[CellValue] | (js.Function1[/* row */ scala.Double, RowObject | js.Array[CellValue]])
   ] = js.undefined
@@ -208,7 +208,7 @@ trait GridSettings
     scala.Boolean | js.Array[java.lang.String] | (js.Function1[/* index */ scala.Double, java.lang.String])
   ] = js.undefined
   var rowHeights: js.UndefOr[
-    scala.Double | js.Array[scala.Double] | java.lang.String | js.Array[java.lang.String] | (js.Function1[/* index */ scala.Double, java.lang.String | scala.Double])
+    scala.Double | (js.Array[scala.Double | java.lang.String]) | java.lang.String | (js.Function1[/* index */ scala.Double, java.lang.String | scala.Double])
   ] = js.undefined
   var search: js.UndefOr[scala.Boolean] = js.undefined
   var selectOptions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -285,7 +285,7 @@ object GridSettings {
     checkedTemplate: scala.Boolean | java.lang.String | scala.Double = null,
     className: java.lang.String | js.Array[java.lang.String] = null,
     colHeaders: scala.Boolean | js.Array[java.lang.String] | (js.Function1[/* index */ scala.Double, java.lang.String]) = null,
-    colWidths: scala.Double | js.Array[scala.Double] | java.lang.String | js.Array[java.lang.String] | (js.Function1[/* index */ scala.Double, java.lang.String | scala.Double]) = null,
+    colWidths: scala.Double | (js.Array[scala.Double | java.lang.String]) | java.lang.String | (js.Function1[/* index */ scala.Double, java.lang.String | scala.Double]) = null,
     collapsibleColumns: scala.Boolean | js.Array[handsontableLib.handsontableMod.HandsontableNs.collapsibleColumnsNs.Settings] = null,
     columnHeaderHeight: scala.Double | js.Array[js.UndefOr[scala.Double]] = null,
     columnSorting: scala.Boolean | handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Settings = null,
@@ -305,7 +305,7 @@ object GridSettings {
     currentHeaderClassName: java.lang.String = null,
     currentRowClassName: java.lang.String = null,
     customBorders: scala.Boolean | js.Array[handsontableLib.handsontableMod.HandsontableNs.customBordersNs.Settings] = null,
-    data: js.Array[js.Array[CellValue]] | js.Array[RowObject] = null,
+    data: js.Array[js.Array[CellValue] | RowObject] = null,
     dataSchema: RowObject | js.Array[CellValue] | (js.Function1[/* row */ scala.Double, RowObject | js.Array[CellValue]]) = null,
     dateFormat: java.lang.String = null,
     datePickerConfig: pikadayLib.pikadayMod.PikadayOptions = null,
@@ -394,7 +394,7 @@ object GridSettings {
     renderer: RendererType | java.lang.String | handsontableLib.handsontableMod.HandsontableNs.renderersNs.Base = null,
     rowHeaderWidth: scala.Double | js.Array[scala.Double] = null,
     rowHeaders: scala.Boolean | js.Array[java.lang.String] | (js.Function1[/* index */ scala.Double, java.lang.String]) = null,
-    rowHeights: scala.Double | js.Array[scala.Double] | java.lang.String | js.Array[java.lang.String] | (js.Function1[/* index */ scala.Double, java.lang.String | scala.Double]) = null,
+    rowHeights: scala.Double | (js.Array[scala.Double | java.lang.String]) | java.lang.String | (js.Function1[/* index */ scala.Double, java.lang.String | scala.Double]) = null,
     search: js.UndefOr[scala.Boolean] = js.undefined,
     selectOptions: js.Array[java.lang.String] = null,
     selectionMode: handsontableLib.handsontableLibStrings.single | handsontableLib.handsontableLibStrings.range | handsontableLib.handsontableLibStrings.multiple = null,
@@ -465,7 +465,7 @@ object GridSettings {
     if (currentHeaderClassName != null) __obj.updateDynamic("currentHeaderClassName")(currentHeaderClassName)
     if (currentRowClassName != null) __obj.updateDynamic("currentRowClassName")(currentRowClassName)
     if (customBorders != null) __obj.updateDynamic("customBorders")(customBorders.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (dataSchema != null) __obj.updateDynamic("dataSchema")(dataSchema.asInstanceOf[js.Any])
     if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
     if (datePickerConfig != null) __obj.updateDynamic("datePickerConfig")(datePickerConfig)

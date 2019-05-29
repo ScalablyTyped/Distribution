@@ -9,7 +9,7 @@ trait PageConfig extends js.Object {
   var cache: js.UndefOr[js.Any] = js.undefined
   var cacheKey: js.UndefOr[java.lang.String] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
-  var dependencies: js.Array[lassoLib.libDependenciesMod.DependencyConfig] | js.Array[java.lang.String] | java.lang.String | scala.Null
+  var dependencies: (js.Array[lassoLib.libDependenciesMod.DependencyConfig | java.lang.String]) | java.lang.String | scala.Null
   var flags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var from: js.UndefOr[java.lang.String] = js.undefined
   var lassoContext: js.UndefOr[lassoLib.libLassoContextMod.default] = js.undefined
@@ -25,7 +25,7 @@ object PageConfig {
     cache: js.Any = null,
     cacheKey: java.lang.String = null,
     data: js.Any = null,
-    dependencies: js.Array[lassoLib.libDependenciesMod.DependencyConfig] | js.Array[java.lang.String] | java.lang.String = null,
+    dependencies: (js.Array[lassoLib.libDependenciesMod.DependencyConfig | java.lang.String]) | java.lang.String = null,
     flags: js.Array[java.lang.String] = null,
     from: java.lang.String = null,
     lassoContext: lassoLib.libLassoContextMod.default = null,

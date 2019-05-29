@@ -78,7 +78,7 @@ trait QueryParameters
     * Hierarchical facets are a sub type of disjunctive facets that
     * let you filter faceted attributes hierarchically.
     */
-  var hierarchicalFacets: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Object]] = js.undefined
+  var hierarchicalFacets: js.UndefOr[js.Array[js.Object | java.lang.String]] = js.undefined
   /**
     * This attribute contains all the filters that need to be
     * applied on the hierarchical facets. Each facet must be properly
@@ -162,7 +162,7 @@ object QueryParameters {
     distinct: scala.Double | scala.Boolean = null,
     enableExactOnSingleWordQuery: js.UndefOr[scala.Boolean] = js.undefined,
     exactOnSingleWordQuery: algoliasearchLib.algoliasearchLibStrings.attribute | algoliasearchLib.algoliasearchLibStrings.none | algoliasearchLib.algoliasearchLibStrings.word = null,
-    facetFilters: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
+    facetFilters: js.Array[js.Array[java.lang.String] | java.lang.String] = null,
     facetingAfterDistinct: js.UndefOr[scala.Boolean] = js.undefined,
     facets: js.Array[java.lang.String] = null,
     facetsExcludes: org.scalablytyped.runtime.StringDictionary[
@@ -173,7 +173,7 @@ object QueryParameters {
     ] = null,
     filters: java.lang.String = null,
     getRankingInfo: js.UndefOr[scala.Boolean] = js.undefined,
-    hierarchicalFacets: js.Array[java.lang.String] | js.Array[js.Object] = null,
+    hierarchicalFacets: js.Array[js.Object | java.lang.String] = null,
     hierarchicalFacetsRefinements: org.scalablytyped.runtime.StringDictionary[
       algoliasearchDashHelperLib.algoliasearchDashHelperMod.SearchParametersNs.FacetList
     ] = null,
@@ -238,14 +238,14 @@ object QueryParameters {
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
     if (!js.isUndefined(enableExactOnSingleWordQuery)) __obj.updateDynamic("enableExactOnSingleWordQuery")(enableExactOnSingleWordQuery)
     if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
-    if (facetFilters != null) __obj.updateDynamic("facetFilters")(facetFilters.asInstanceOf[js.Any])
+    if (facetFilters != null) __obj.updateDynamic("facetFilters")(facetFilters)
     if (!js.isUndefined(facetingAfterDistinct)) __obj.updateDynamic("facetingAfterDistinct")(facetingAfterDistinct)
     if (facets != null) __obj.updateDynamic("facets")(facets)
     if (facetsExcludes != null) __obj.updateDynamic("facetsExcludes")(facetsExcludes)
     if (facetsRefinements != null) __obj.updateDynamic("facetsRefinements")(facetsRefinements)
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (!js.isUndefined(getRankingInfo)) __obj.updateDynamic("getRankingInfo")(getRankingInfo)
-    if (hierarchicalFacets != null) __obj.updateDynamic("hierarchicalFacets")(hierarchicalFacets.asInstanceOf[js.Any])
+    if (hierarchicalFacets != null) __obj.updateDynamic("hierarchicalFacets")(hierarchicalFacets)
     if (hierarchicalFacetsRefinements != null) __obj.updateDynamic("hierarchicalFacetsRefinements")(hierarchicalFacetsRefinements)
     if (highlightPostTag != null) __obj.updateDynamic("highlightPostTag")(highlightPostTag)
     if (highlightPreTag != null) __obj.updateDynamic("highlightPreTag")(highlightPreTag)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mock-require"
-version := "2.0-dt-20190322Z-5ef585"
+version := "2.0-dt-20190322Z-28ca73"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

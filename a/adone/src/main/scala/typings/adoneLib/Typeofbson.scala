@@ -11,7 +11,7 @@ trait Typeofbson extends js.Object {
     * Represents a BSON serializer
     */
   var BSON: org.scalablytyped.runtime.Instantiable1[
-    /* types */ js.UndefOr[/* types */ js.Array[Anon_ArgsAny]], 
+    js.UndefOr[/* types */ js.Array[Anon_ArgsAny]], 
     adoneLib.adoneNs.dataNs.bsonNs.BSON
   ] = js.native
   /**
@@ -19,7 +19,7 @@ trait Typeofbson extends js.Object {
     */
   var BSONRegExp: org.scalablytyped.runtime.Instantiable2[
     /* pattern */ java.lang.String, 
-    /* options */ js.UndefOr[/* options */ java.lang.String], 
+    js.UndefOr[/* options */ java.lang.String], 
     adoneLib.adoneNs.dataNs.bsonNs.BSONRegExp
   ] = js.native
   /**
@@ -31,7 +31,7 @@ trait Typeofbson extends js.Object {
     */
   var Code: org.scalablytyped.runtime.Instantiable2[
     /* code */ java.lang.String | (js.Function1[/* repeated */ js.Any, scala.Unit]), 
-    /* scope */ js.UndefOr[/* scope */ js.Object], 
+    js.UndefOr[/* scope */ js.Object], 
     adoneLib.adoneNs.dataNs.bsonNs.Code
   ] = js.native
   /**
@@ -40,7 +40,7 @@ trait Typeofbson extends js.Object {
   var DBRef: org.scalablytyped.runtime.Instantiable3[
     /* namespace */ java.lang.String, 
     /* oid */ adoneLib.adoneNs.dataNs.bsonNs.ObjectId, 
-    /* db */ js.UndefOr[/* db */ java.lang.String], 
+    js.UndefOr[/* db */ java.lang.String], 
     adoneLib.adoneNs.dataNs.bsonNs.DBRef
   ] = js.native
   /**

@@ -115,7 +115,7 @@ object TerminalSessionNs extends js.Object {
     /**
       * The server settings for the session.
       */
-    var serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.UndefOr[
+    var serverSettings: js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
       ] = js.undefined
   }

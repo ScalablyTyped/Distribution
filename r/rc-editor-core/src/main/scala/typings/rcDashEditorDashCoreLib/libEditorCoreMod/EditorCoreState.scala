@@ -12,7 +12,7 @@ trait EditorCoreState extends js.Object {
       draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.DraftBlockRenderConfig
     ]
   ] = js.undefined
-  var compositeDecorator: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CompositeDecorator */ js.UndefOr[
+  var compositeDecorator: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CompositeDecorator */ js.Any
   ] = js.undefined
   var customBlockStyleMap: js.UndefOr[js.Object] = js.undefined

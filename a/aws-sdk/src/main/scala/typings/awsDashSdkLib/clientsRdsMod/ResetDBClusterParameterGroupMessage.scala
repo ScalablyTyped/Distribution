@@ -11,11 +11,11 @@ trait ResetDBClusterParameterGroupMessage extends js.Object {
     */
   var DBClusterParameterGroupName: String
   /**
-    * A list of parameter names in the DB cluster parameter group to reset to the default values. You can't use this parameter if the ResetAllParameters parameter is enabled.
+    * A list of parameter names in the DB cluster parameter group to reset to the default values. You can't use this parameter if the ResetAllParameters parameter is set to true.
     */
   var Parameters: js.UndefOr[ParametersList] = js.undefined
   /**
-    * A value that indicates whether to reset all parameters in the DB cluster parameter group to their default values. You can't use this parameter if there is a list of parameter names specified for the Parameters parameter.
+    * A value that is set to true to reset all parameters in the DB cluster parameter group to their default values, and false otherwise. You can't use this parameter if there is a list of parameter names specified for the Parameters parameter.
     */
   var ResetAllParameters: js.UndefOr[Boolean] = js.undefined
 }

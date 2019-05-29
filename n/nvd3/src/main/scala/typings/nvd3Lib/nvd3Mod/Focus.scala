@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Focus extends Nvd3Element {
-  def brushExtent(): (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]]) = js.native
+  def brushExtent(): js.Tuple2[
+    scala.Double | (js.Tuple2[scala.Double, scala.Double]), 
+    scala.Double | (js.Tuple2[scala.Double, scala.Double])
+  ] = js.native
   def brushExtent(
     value: js.Tuple2[
       scala.Double | (js.Tuple2[scala.Double, scala.Double]), 

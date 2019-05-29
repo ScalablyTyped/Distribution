@@ -94,7 +94,9 @@ trait GameConfig extends js.Object {
     * A scene or scenes to add to the game. If several are given, the first is started; the remainder are started only if they have `{ active: true }`. See the `sceneConfig` argument in `Phaser.Scenes.SceneManager#add`.
     */
   var scene: js.UndefOr[
-    phaserLib.PhaserNs.Scene | js.Array[phaserLib.PhaserNs.Scene] | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig | js.Array[phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig] | phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | js.Array[phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig] | js.Function
+    phaserLib.PhaserNs.Scene | (js.Array[
+      phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | phaserLib.PhaserNs.Scene | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig
+    ]) | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig | phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | js.Function
   ] = js.undefined
   /**
     * Seed for the random number generator.
@@ -154,7 +156,9 @@ object GameConfig {
     render: RenderConfig = null,
     resolution: scala.Int | scala.Double = null,
     scale: ScaleConfig = null,
-    scene: phaserLib.PhaserNs.Scene | js.Array[phaserLib.PhaserNs.Scene] | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig | js.Array[phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig] | phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | js.Array[phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig] | js.Function = null,
+    scene: phaserLib.PhaserNs.Scene | (js.Array[
+      phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | phaserLib.PhaserNs.Scene | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig
+    ]) | phaserLib.PhaserNs.TypesNs.ScenesNs.SettingsConfig | phaserLib.PhaserNs.TypesNs.ScenesNs.CreateSceneFromObjectConfig | js.Function = null,
     seed: js.Array[java.lang.String] = null,
     title: java.lang.String = null,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,

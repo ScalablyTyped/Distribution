@@ -16,7 +16,7 @@ class Request protected () extends Property[RequestDefinition] {
   var certificate: js.UndefOr[Certificate | CertificateDefinition] = js.native
   var header: js.UndefOr[HeaderDefinition] = js.native
   var headers: HeaderList = js.native
-  var method: java.lang.String | js.UndefOr[java.lang.String] = js.native
+  var method: js.UndefOr[java.lang.String] = js.native
   var proxy: js.UndefOr[ProxyConfig | ProxyConfigDefinition] = js.native
   var url: java.lang.String | Url = js.native
   def addHeader(header: Header): scala.Unit = js.native

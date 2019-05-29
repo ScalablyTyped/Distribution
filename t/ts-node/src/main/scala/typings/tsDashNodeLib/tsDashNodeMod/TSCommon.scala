@@ -71,8 +71,8 @@ trait TSCommon extends js.Object {
     fileExists: js.Function1[/* fileName */ java.lang.String, scala.Boolean],
     configName: java.lang.String
   ): js.UndefOr[java.lang.String] = js.native
-  def flattenDiagnosticMessageText(messageText: java.lang.String, newLine: java.lang.String): java.lang.String = js.native
   def flattenDiagnosticMessageText(messageText: js.UndefOr[scala.Nothing], newLine: java.lang.String): java.lang.String = js.native
+  def flattenDiagnosticMessageText(messageText: java.lang.String, newLine: java.lang.String): java.lang.String = js.native
   def flattenDiagnosticMessageText(messageText: typescriptLib.typescriptMod.DiagnosticMessageChain, newLine: java.lang.String): java.lang.String = js.native
   def formatDiagnostics(
     diagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],

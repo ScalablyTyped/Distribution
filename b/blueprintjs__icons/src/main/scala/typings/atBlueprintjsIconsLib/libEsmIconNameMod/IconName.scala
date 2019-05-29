@@ -80,6 +80,7 @@ import scala.scalajs.js.annotation._
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.sort
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`circle-arrow-left`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`series-configuration`
+  - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`greater-than-or-equal-to`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`heart-broken`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`cloud-download`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.add
@@ -189,6 +190,7 @@ import scala.scalajs.js.annotation._
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.flag
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.flash
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.paragraph
+  - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`less-than-or-equal-to`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.dollar
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`timeline-bar-chart`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`send-to-graph`
@@ -277,6 +279,7 @@ import scala.scalajs.js.annotation._
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`flow-linear`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`chevron-forward`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`rotate-document`
+  - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`less-than`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`cloud-upload`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.follower
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.hand
@@ -369,6 +372,7 @@ import scala.scalajs.js.annotation._
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.clean
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.database
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`warning-sign`
+  - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`filter-open`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`segmented-control`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`mobile-phone`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`th-filtered`
@@ -381,6 +385,7 @@ import scala.scalajs.js.annotation._
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`feed-subscribed`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`timeline-area-chart`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`key-backspace`
+  - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`th-disconnect`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`hand-right`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.confirm
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.print
@@ -429,6 +434,7 @@ import scala.scalajs.js.annotation._
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`vertical-distribution`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`log-out`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.time
+  - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`not-equal-to`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`remove-column`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`mobile-video`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`expand-all`
@@ -455,13 +461,16 @@ import scala.scalajs.js.annotation._
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`derive-column`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.manual
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.pin
+  - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.equals
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`blocked-person`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`arrow-bottom-right`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`add-row-top`
+  - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`greater-than`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.map
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.font
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.bookmark
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.inbox
+  - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.reset
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`align-left`
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.heart
   - atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`tick-circle`

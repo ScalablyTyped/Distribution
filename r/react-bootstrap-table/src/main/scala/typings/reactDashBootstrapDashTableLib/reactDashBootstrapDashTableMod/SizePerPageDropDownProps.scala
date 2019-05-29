@@ -33,7 +33,7 @@ trait SizePerPageDropDownProps extends js.Object {
   /**
   	 * Size Per Page options list
   	 */
-  var options: js.UndefOr[js.Array[scala.Double] | js.Array[reactDashBootstrapDashTableLib.Anon_Text]] = js.undefined
+  var options: js.UndefOr[js.Array[reactDashBootstrapDashTableLib.Anon_Text | scala.Double]] = js.undefined
   /**
   	 * Whether the button menu should 'dropup' or 'dropdown'.
   	 */
@@ -49,7 +49,7 @@ object SizePerPageDropDownProps {
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: /* toggleDropDown */ js.Function0[scala.Unit] => scala.Unit = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
-    options: js.Array[scala.Double] | js.Array[reactDashBootstrapDashTableLib.Anon_Text] = null,
+    options: js.Array[reactDashBootstrapDashTableLib.Anon_Text | scala.Double] = null,
     variation: DropDirection = null
   ): SizePerPageDropDownProps = {
     val __obj = js.Dynamic.literal()
@@ -59,7 +59,7 @@ object SizePerPageDropDownProps {
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1(onClick))
     if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options)
     if (variation != null) __obj.updateDynamic("variation")(variation)
     __obj.asInstanceOf[SizePerPageDropDownProps]
   }

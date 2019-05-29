@@ -206,6 +206,7 @@
 | [ant-design__create-react-](./a/ant-design__create-react-context) | A fork of create-react-context in MIT license | react, context, contextTypes, polyfill, ponyfill |
 | [ant-design__icons](./a/ant-design__icons) | Ant Design Icons | - |
 | [ant-design__icons-react](./a/ant-design__icons-react) |  Ant Design Icons for React  | - |
+| [antd](./a/antd) | An enterprise-class UI design language and React-b | ant, design, react, react-component, component, components, ui, framework, frontend |
 | [antd-mobile](./a/antd-mobile) | 基于 React 的移动设计规范实现 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile |
 | [antd-mobile-rn](./a/antd-mobile-rn) | 基于蚂蚁金服移动设计规范的 React Native 组件库 | ant, design, react, react-component, component, components, ui, framework, frontend, mobile, react native |
 | [antlr4](./a/antlr4) | JavaScript runtime for ANTLR4 | lexer, parser, antlr, antlr4, grammar |
@@ -1815,6 +1816,7 @@
 | [framesync](./f/framesync) | A Unity-inspired render loop for JavaScript | animation, raf |
 | [franc](./f/franc) | Detect the language of text | natural, language, writing, system, detect, guess |
 | [frctl__fractal](./f/frctl__fractal) | A tool to help you build and document web componen | - |
+| [frecency](./f/frecency) | Frecency sorting for search results. | - |
 | [freedom](./f/freedom) | Embracing a distributed web | - |
 | [freeport](./f/freeport) | Find a free port. | - |
 | [fresh](./f/fresh) | HTTP response freshness testing | fresh, http, conditional, cache |
@@ -2713,6 +2715,7 @@
 | [ix_dot_js](./i/ix_dot_js) | - | - |
 | [jackrabbit](./j/jackrabbit) | Easy RabbitMQ for node | amqp, rabbit, job, jobs, queue, task, resqueue |
 | [jade](./j/jade) | A clean, whitespace-sensitive template language fo | - |
+| [jaeger-client](./j/jaeger-client) | Jaeger binding for OpenTracing Node | - |
 | [jake](./j/jake) | JavaScript build tool, similar to Make or Rake | build, cli, make, rake |
 | [jalaali-js](./j/jalaali-js) | Converts Gregorian and Jalaali calendars to each o | jalaali, jalali, persian, khorshidi, shamsi, calendar, date |
 | [japanese-holidays](./j/japanese-holidays) | Provides utilities to manipulate japanese holidays | - |
@@ -2915,6 +2918,7 @@
 | [jqueryui](./j/jqueryui) | A curated set of user interface interactions, effe | - |
 | [js-base64](./j/js-base64) | Yet another Base64 transcoder in pure-JS | base64 |
 | [js-beautify](./j/js-beautify) | beautifier.io for node | beautify, beautifier, code-quality |
+| [js-captcha](./j/js-captcha) | Simple captcha component written in pure JavaScrip | captcha, vanilla, simple, dependency-free, lightweight, javascript |
 | [js-clipper](./j/js-clipper) | common.js compatible version of JSClipper | JsClipper, js-clipper, clipperlib |
 | [js-combinatorics](./j/js-combinatorics) | Simple combinatorics like power set, combination,  | Combinatorics, combination, permutation |
 | [js-cookie](./j/js-cookie) | A simple, lightweight JavaScript API for handling  | jquery-plugin, cookie, cookies, browser, amd, commonjs, client, js-cookie, browserify |
@@ -4009,6 +4013,7 @@
 | [multi-typeof](./m/multi-typeof) | Check something against an array of types. | check, multi, multiple, test, type, typeof |
 | [multimatch](./m/multimatch) | Extends minimatch.match() with support for multipl | expand, find, glob, globbing, globs, match, matcher, minimatch, pattern, patterns, wildcard |
 | [multiparty](./m/multiparty) | multipart/form-data parser which supports streamin | file, upload, formidable, stream, s3 |
+| [multireducer](./m/multireducer) | A utility to wrap many copies of a single Redux re | react, reactjs, flux, redux, react-redux, multireducer, decorator |
 | [multisort](./m/multisort) | Sort an array using any number of separate, ranked | sort, sorting, multiple, multi, multisort, comparator |
 | [multistream](./m/multistream) | A stream that emits multiple other streams one aft | combine streams, join streams, concat streams, multiple streams, combine, join, concat, multiple, file stream, append, append streams, combiner, joiner |
 | [multy](./m/multy) | Koa(v2)/Express middleware for handle multipart fo | express, koa, multipart, form, parse, busboy |
@@ -4520,7 +4525,6 @@
 | [pause](./p/pause) | Pause a stream's data events | - |
 | [payment](./p/payment) | A general purpose library for building credit card | payment, cc, card |
 | [paypal-cordova-plugin](./p/paypal-cordova-plugin) | - | - |
-| [paypal-rest-sdk](./p/paypal-rest-sdk) | SDK for PayPal REST APIs | paypal, rest, api, sdk |
 | [pbf](./p/pbf) | a low-level, lightweight protocol buffers implemen | protocol, buffer, pbf, protobuf, binary, format, serialization, encoder, decoder |
 | [pbkdf2](./p/pbkdf2) | This library provides the functionality of PBKDF2  | pbkdf2, kdf, salt, hash |
 | [pdf2image](./p/pdf2image) | Converts a given pdf to the desired images | pdf, convert, image, imagemagick, pdf2image, pdf2img |
@@ -4709,6 +4713,7 @@
 | [preloadjs](./p/preloadjs) | PreloadJS makes it easy to preload your assets: im | createjs, preloadjs, gskinner, preload, preloading, progress, XHR, javascript, html5 |
 | [prelude-ls](./p/prelude-ls) | prelude.ls is a functionally oriented utility libr | prelude, livescript, utility, ls, coffeescript, javascript, library, functional, array, list, object, string |
 | [prettier](./p/prettier) | Prettier is an opinionated code formatter | - |
+| [prettier-package-json](./p/prettier-package-json) | Prettier formatter for package.json files | cleanup, formatter, json, keys, object, package, package.json, prettier, sort |
 | [pretty](./p/pretty) | Some tweaks for beautifying HTML with js-beautify  | beautify, format, formatter, html, js, js-beautify, prettify, pretty |
 | [pretty-bytes](./p/pretty-bytes) | Convert bytes to a human readable string: 1337 → 1 | pretty, bytes, byte, filesize, size, file, human, humanized, readable, si, data, locale, localization, localized |
 | [pretty-error](./p/pretty-error) | See nodejs errors with less clutter | pretty, error, exception, debug, error-handling, readable, colorful, prettify, format, human |
@@ -4826,6 +4831,7 @@
 | [pupa](./p/pupa) | Simple micro templating | string, formatting, template, object, format, interpolate, interpolation, templating, str, obj, tpl, expand, simple, replace, placeholders, values, fmt, transform, micro |
 | [puppeteer](./p/puppeteer) | A high-level API to control headless Chrome over t | - |
 | [puppeteer-core](./p/puppeteer-core) | A high-level API to control headless Chrome over t | - |
+| [purdy](./p/purdy) | Pretty print objects in real purdy colors. Allows  | ansi, terminal, colors, pretty, print, color |
 | [pure-render-decorator](./p/pure-render-decorator) | Makes React components pure. | react, pure, render, decorator |
 | [purl](./p/purl) | A minuscule library to parse URLs | url, parse, browser, javascript, isomorphic |
 | [pusher-js](./p/pusher-js) | Pusher JavaScript library for browsers, React Nati | pusher, client, websocket, http, fallback, isomorphic, events, pubsub |
@@ -5027,6 +5033,7 @@
 | [react-dynamic-number](./r/react-dynamic-number) | Highly customizable react component for numbers | react, component, number, format, comma, dot, number separator, thousand separator, decimal separator |
 | [react-easy-chart](./r/react-easy-chart) | React component implementations of Mike Bostok's D | - |
 | [react-editext](./r/react-editext) | Editable Text Component for React Applications | react, editable, editable text, editable content, contenteditable, content editable, inline edit |
+| [react-elemental](./r/react-elemental) | Flat UI library for React | - |
 | [react-event-listener](./r/react-event-listener) | A React component that allow to bind events on the | react, event, listener, binding |
 | [react-fa](./r/react-fa) | Font Awesome icons as React components | react, react-component, font-awesome, icons |
 | [react-facade](./r/react-facade) | - | - |
@@ -5183,6 +5190,7 @@
 | [react-native-goby](./r/react-native-goby) | React Native plugin for the Goby service | react-native, code, push |
 | [react-native-google-analy](./r/react-native-google-analytics-bridge) | React Native bridge for using native Google Analyt | react, native, google, analytics, tracking, native, bridge, events, screen, hits, react-native, ios, android |
 | [react-native-google-signi](./r/react-native-google-signin) | Google Signin for your react native applications | react-component, react-native, google signin, google login, google+, oauth, oauth2, ios, android |
+| [react-native-honeywell-sc](./r/react-native-honeywell-scanner) | A barcode scanner for Honeywell handheld devices l | honeywell, barcode, scanner |
 | [react-native-htmlview](./r/react-native-htmlview) | A component which renders HTML content as native v | react, html, react-native, react-component, react-native-component, mobile, ui |
 | [react-native-huawei-prote](./r/react-native-huawei-protected-apps) | Customized dialog alerting the user of the battery | react-native, react-component, android, Huawei, Protected, apps |
 | [react-native-i18n](./r/react-native-i18n) | Provide I18n to your React Native application | react-native, react-component, ios, i18n |
@@ -5247,6 +5255,7 @@
 | [react-native-uuid](./r/react-native-uuid) | Rigorous implementation of RFC4122 (v1 and v4) UUI | react-native, react, iOS, Android, guid, rfc4122, uuid |
 | [react-native-uuid-generat](./r/react-native-uuid-generator) | A simple wrapper around the native iOS and Android | react-native, uuid |
 | [react-native-vector-icons](./r/react-native-vector-icons) | Customizable Icons for React Native with support f | react-native, react-component, react-native-component, react, mobile, ios, android, osx, windows, macos, ui, icon, icons, vector, retina, font |
+| [react-native-version-chec](./r/react-native-version-check) | A version checker for react-native applications | react-native, android, ios, version check, version, app version, market version, app store version |
 | [react-native-version-numb](./r/react-native-version-number) | Access app version inside React Native | react, react-native, ios, react-component |
 | [react-native-video](./r/react-native-video) | A  element for react-native | - |
 | [react-native-view-pdf](./r/react-native-view-pdf) | React native Pdf viewer implementation | react-native react-component pdf viewer view android ios pdf |
@@ -5314,6 +5323,7 @@
 | [react-scrollbar](./r/react-scrollbar) | ScrollArea component for react | react, react-component, component, scrollbar, scroll, scrollarea |
 | [react-scrollspy](./r/react-scrollspy) | react scrollspy component | react, react-component, component, scrollspy, scroll |
 | [react-select](./r/react-select) | A Select control built with and for ReactJS | combobox, form, input, multiselect, react, react-component, select, ui |
+| [react-shadow-dom-retarget](./r/react-shadow-dom-retarget-events) | Retargets event in a shadow root to react | - |
 | [react-share](./r/react-share) | Social media share buttons and share counts for Re | react, component, react-component, social, media, social-media, share, button, count |
 | [react-show-more](./r/react-show-more) | React component for truncating multi-line spans an | react, show more, ellipsis, multiline |
 | [react-side-effect](./r/react-side-effect) | Create components whose prop changes map to a glob | react, component, side, effect |
@@ -5824,6 +5834,7 @@
 | [semver-truncate](./s/semver-truncate) | Truncate a semver version: 1.2.3 → 1.2.0 | semver, version, semantic, truncate, shorten, simplify |
 | [sencha_touch](./s/sencha_touch) | - | - |
 | [send](./s/send) | Better streaming static file server with Range and | static, file, server |
+| [sendgrid](./s/sendgrid) | Official SendGrid NodeJS library. | - |
 | [sendmail](./s/sendmail) | Sendmail without setting up SMTP server | email sender, send mail, sendmail, node sendmail, no smtp, without server, without smtp server, dev mode, dkim sign mail |
 | [seneca](./s/seneca) | A Microservices Framework for Node.js | micro, service, microservice, micro-service, microservices, micro-services, services, micro services, micro service, framework, minimum, viable, product, toolkit, startup |
 | [sentence-case](./s/sentence-case) | Sentence case a string | sentence, case, upper-case, first, lower-case |
@@ -6187,6 +6198,7 @@
 | [stylelint](./s/stylelint) | A mighty, modern CSS linter. | css, less, sass, scss, sugarss, lint, linter, stylelint |
 | [stylelint-webpack-plugin](./s/stylelint-webpack-plugin) | A stylelint plugin for webpack | stylelint, lint, linter, node-sass, webpack, plugin, webpack-plugin |
 | [stylenames](./s/stylenames) | Improves usage of html inline styles in javascript | inline-styles, styles, es6, middleware |
+| [styletron-engine-atomic](./s/styletron-engine-atomic) | Universal, high-performance JavaScript styles | - |
 | [styletron-react](./s/styletron-react) | React bindings for Styletron | - |
 | [styletron-standard](./s/styletron-standard) | Standard interfaces for Styletron | - |
 | [stylis](./s/stylis) | light - weight css preprocessor | css, preprocessor |
@@ -6936,6 +6948,7 @@
 | [yazl](./y/yazl) | yet another zip library for node | zip, stream, archive, file |
 | [ydn-db](./y/ydn-db) | - | - |
 | [year-days](./y/year-days) | Get the number of days in a year | year, days, date, number, count |
+| [yeast](./y/yeast) | Tiny but linear growing unique id generator | yeast, id, generator, unique |
 | [yeoman-assert](./y/yeoman-assert) | Assert utility from yeoman | assert, assertion, test, testing, utility, helper, yeoman |
 | [yeoman-environment](./y/yeoman-environment) | Handles the lifecyle and bootstrapping of generato | development, dev, build, tool, cli, scaffold, scaffolding, generate, generator, yeoman, app |
 | [yeoman-generator](./y/yeoman-generator) | Rails-inspired generator system that provides scaf | development, dev, build, tool, cli, scaffold, scaffolding, generate, generator, yeoman, app |

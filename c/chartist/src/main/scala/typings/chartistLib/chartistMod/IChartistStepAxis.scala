@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IChartistStepAxis extends ILineChartAxis {
   var stretch: js.UndefOr[scala.Boolean] = js.undefined
-  var ticks: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
+  var ticks: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
   var `type`: js.UndefOr[IStepAxisStatic] = js.undefined
 }
 
@@ -21,7 +21,7 @@ object IChartistStepAxis {
     showGrid: js.UndefOr[scala.Boolean] = js.undefined,
     showLabel: js.UndefOr[scala.Boolean] = js.undefined,
     stretch: js.UndefOr[scala.Boolean] = js.undefined,
-    ticks: js.Array[java.lang.String] | js.Array[scala.Double] = null,
+    ticks: js.Array[scala.Double | java.lang.String] = null,
     `type`: IStepAxisStatic = null
   ): IChartistStepAxis = {
     val __obj = js.Dynamic.literal()
@@ -32,7 +32,7 @@ object IChartistStepAxis {
     if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid)
     if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel)
     if (!js.isUndefined(stretch)) __obj.updateDynamic("stretch")(stretch)
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IChartistStepAxis]
   }

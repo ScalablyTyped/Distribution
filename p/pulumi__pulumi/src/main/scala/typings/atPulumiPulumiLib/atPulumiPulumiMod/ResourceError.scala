@@ -11,8 +11,8 @@ class ResourceError protected ()
   extends atPulumiPulumiLib.errorsMod.ResourceError {
   def this(message: java.lang.String) = this()
   def this(message: java.lang.String, resource: atPulumiPulumiLib.resourceMod.Resource) = this()
-  def this(message: java.lang.String, resource: atPulumiPulumiLib.resourceMod.Resource, hideStack: scala.Boolean) = this()
   def this(message: java.lang.String, resource: js.UndefOr[scala.Nothing], hideStack: scala.Boolean) = this()
+  def this(message: java.lang.String, resource: atPulumiPulumiLib.resourceMod.Resource, hideStack: scala.Boolean) = this()
 }
 
 /* static members */

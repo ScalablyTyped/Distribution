@@ -25,19 +25,19 @@ trait FS extends js.Object {
   ): scala.Unit = js.native
   def readFile(
     path: nodeLib.fsMod.PathLike,
-    options: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      nodeLib.Buffer | (/* data */ java.lang.String), 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def readFile(
     path: nodeLib.fsMod.PathLike,
-    options: js.UndefOr[scala.Nothing],
+    options: java.lang.String,
     callback: js.Function2[
       nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      (/* data */ nodeLib.Buffer) | java.lang.String, 
+      nodeLib.Buffer | (/* data */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -87,19 +87,19 @@ trait FS extends js.Object {
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
-    options: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      nodeLib.Buffer | (/* data */ java.lang.String), 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
-    options: js.UndefOr[scala.Nothing],
+    options: java.lang.String,
     callback: js.Function2[
       nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      (/* data */ nodeLib.Buffer) | java.lang.String, 
+      nodeLib.Buffer | (/* data */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native

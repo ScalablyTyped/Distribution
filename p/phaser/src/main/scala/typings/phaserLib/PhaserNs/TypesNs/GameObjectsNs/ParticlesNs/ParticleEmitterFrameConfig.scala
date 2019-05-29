@@ -14,7 +14,7 @@ trait ParticleEmitterFrameConfig extends js.Object {
     * One or more texture frames.
     */
   var frames: js.UndefOr[
-    scala.Double | js.Array[scala.Double] | java.lang.String | js.Array[java.lang.String] | phaserLib.PhaserNs.TexturesNs.Frame | js.Array[phaserLib.PhaserNs.TexturesNs.Frame]
+    scala.Double | (js.Array[scala.Double | phaserLib.PhaserNs.TexturesNs.Frame | java.lang.String]) | java.lang.String | phaserLib.PhaserNs.TexturesNs.Frame
   ] = js.undefined
   /**
     * The number of consecutive particles receiving each texture frame, when `cycle` is true.
@@ -26,7 +26,7 @@ object ParticleEmitterFrameConfig {
   @scala.inline
   def apply(
     cycle: js.UndefOr[scala.Boolean] = js.undefined,
-    frames: scala.Double | js.Array[scala.Double] | java.lang.String | js.Array[java.lang.String] | phaserLib.PhaserNs.TexturesNs.Frame | js.Array[phaserLib.PhaserNs.TexturesNs.Frame] = null,
+    frames: scala.Double | (js.Array[scala.Double | phaserLib.PhaserNs.TexturesNs.Frame | java.lang.String]) | java.lang.String | phaserLib.PhaserNs.TexturesNs.Frame = null,
     quantity: js.UndefOr[phaserLib.integer] = js.undefined
   ): ParticleEmitterFrameConfig = {
     val __obj = js.Dynamic.literal()

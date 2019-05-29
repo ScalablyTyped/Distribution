@@ -66,6 +66,12 @@ class MarkdownSerializerState[S /* <: prosemirrorDashModelLib.prosemirrorDashMod
     */
   def text(text: java.lang.String): scala.Unit = js.native
   def text(text: java.lang.String, escape: scala.Boolean): scala.Unit = js.native
+  def wrapBlock(
+    delim: java.lang.String,
+    firstDelim: js.UndefOr[scala.Nothing],
+    node: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
+    f: js.Function0[scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Render a block, prefixing each line with `delim`, and the first
     * line in `firstDelim`. `node` should be the node that is closed at
@@ -75,12 +81,6 @@ class MarkdownSerializerState[S /* <: prosemirrorDashModelLib.prosemirrorDashMod
   def wrapBlock(
     delim: java.lang.String,
     firstDelim: java.lang.String,
-    node: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
-    f: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
-  def wrapBlock(
-    delim: java.lang.String,
-    firstDelim: js.UndefOr[scala.Nothing],
     node: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
     f: js.Function0[scala.Unit]
   ): scala.Unit = js.native

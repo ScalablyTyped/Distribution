@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "gl-react-headless"
-version := "3.15-dt-20181122Z-d80609"
+version := "3.15-dt-20181122Z-8b646e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
-  "org.scalablytyped" %%% "gl-react" % "3.15-dt-20181122Z-5677bd",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-336e99",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "csstype" % "2.6.4-a0e5c1",
+  "org.scalablytyped" %%% "gl-react" % "3.15-dt-20181122Z-3d1f41",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-b94c72",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1cea03",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

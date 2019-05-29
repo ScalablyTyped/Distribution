@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
-  extends reactLib.reactMod.FunctionComponent[
+  extends atEmotionSerializeLib.atEmotionSerializeMod.ComponentSelector
+     with reactLib.reactMod.FunctionComponent[
       InnerProps with StyleProps with atEmotionStyledDashBaseLib.Anon_ThemeOptional[Theme]
-    ]
-     with atEmotionSerializeLib.atEmotionSerializeMod.ComponentSelector {
+    ] {
   def withComponent[Tag /* <: reactLib.reactMod.ComponentType[_] */](tag: Tag): StyledComponent[atEmotionStyledDashBaseLib.typesHelperMod.PropsOf[Tag], StyleProps, Theme] = js.native
   /**
     * @desc this method is type-unsafe
@@ -877,6 +877,15 @@ trait StyledComponent[InnerProps, StyleProps, Theme /* <: js.Object */]
     reactLib.reactMod.DetailedHTMLProps[
       reactLib.reactMod.TdHTMLAttributes[reactLib.HTMLTableDataCellElement], 
       reactLib.HTMLTableDataCellElement
+    ], 
+    StyleProps, 
+    Theme
+  ] = js.native
+  @JSName("withComponent")
+  def withComponent_template(tag: atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.template): StyledComponent[
+    reactLib.reactMod.DetailedHTMLProps[
+      reactLib.reactMod.HTMLAttributes[reactLib.HTMLTemplateElement], 
+      reactLib.HTMLTemplateElement
     ], 
     StyleProps, 
     Theme

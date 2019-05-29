@@ -17,6 +17,8 @@ trait Reference extends js.Object {
   def delete(): js.Promise[scala.Unit] = js.native
   def getDownloadURL(): js.Promise[java.lang.String] = js.native
   def getMetadata(): js.Promise[FullMetadata] = js.native
+  def list(): js.Promise[ListResult] = js.native
+  def list(options: ListOptions): js.Promise[ListResult] = js.native
   def put(data: stdLib.ArrayBuffer): UploadTask = js.native
   def put(data: stdLib.ArrayBuffer, metadata: UploadMetadata): UploadTask = js.native
   def put(data: stdLib.Blob): UploadTask = js.native

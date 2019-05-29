@@ -184,9 +184,9 @@ trait SeriesSankey extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.data
     */
   var data: js.UndefOr[
-    (js.Array[scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject]) | (js.Array[
-      js.Array[scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject]
-    ])
+    js.Array[
+      (js.Array[scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject]) | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject | scala.Double
+    ]
   ] = js.undefined
   /**
     * The drag-and-drop interaction of the node, which is enabled by
@@ -466,9 +466,9 @@ object SeriesSankey {
     animationEasingUpdate: java.lang.String = null,
     animationThreshold: scala.Int | scala.Double = null,
     bottom: scala.Double | java.lang.String = null,
-    data: (js.Array[scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject]) | (js.Array[
-      js.Array[scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject]
-    ]) = null,
+    data: js.Array[
+      (js.Array[scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject]) | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject | scala.Double
+    ] = null,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
     edges: js.Array[_] = null,
     emphasis: echartsLib.Anon_ItemStyleLabelLineStyle = null,
@@ -504,7 +504,7 @@ object SeriesSankey {
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
     if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
     if (edges != null) __obj.updateDynamic("edges")(edges)
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)

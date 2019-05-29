@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ProjectIdAny extends js.Object {
-  var projectId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProjectId */ js.UndefOr[
+  var projectId: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProjectId */ js.Any
   ] = js.undefined
 }

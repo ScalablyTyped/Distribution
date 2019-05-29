@@ -57,20 +57,20 @@ class ContactCls protected () extends Contact {
 object Contact
   extends /** Constructor of Contact object */
 org.scalablytyped.runtime.Instantiable14[
-      /* id */ js.UndefOr[/* id */ java.lang.String], 
-      /* displayName */ js.UndefOr[/* displayName */ java.lang.String], 
-      /* name */ js.UndefOr[/* name */ ContactName], 
-      /* nickname */ js.UndefOr[/* nickname */ java.lang.String], 
-      /* phoneNumbers */ js.UndefOr[/* phoneNumbers */ js.Array[ContactField]], 
-      /* emails */ js.UndefOr[/* emails */ js.Array[ContactField]], 
-      /* addresses */ js.UndefOr[/* addresses */ js.Array[ContactAddress]], 
-      /* ims */ js.UndefOr[/* ims */ js.Array[ContactField]], 
-      /* organizations */ js.UndefOr[/* organizations */ js.Array[ContactOrganization]], 
-      /* birthday */ js.UndefOr[/* birthday */ stdLib.Date], 
-      /* note */ js.UndefOr[/* note */ java.lang.String], 
-      /* photos */ js.UndefOr[/* photos */ js.Array[ContactField]], 
-      /* categories */ js.UndefOr[/* categories */ ContactField], 
-      /* urls */ js.UndefOr[/* urls */ js.Array[ContactField]], 
+      js.UndefOr[/* id */ java.lang.String], 
+      js.UndefOr[/* displayName */ java.lang.String], 
+      js.UndefOr[/* name */ ContactName], 
+      js.UndefOr[/* nickname */ java.lang.String], 
+      js.UndefOr[/* phoneNumbers */ js.Array[ContactField]], 
+      js.UndefOr[/* emails */ js.Array[ContactField]], 
+      js.UndefOr[/* addresses */ js.Array[ContactAddress]], 
+      js.UndefOr[/* ims */ js.Array[ContactField]], 
+      js.UndefOr[/* organizations */ js.Array[ContactOrganization]], 
+      js.UndefOr[/* birthday */ stdLib.Date], 
+      js.UndefOr[/* note */ java.lang.String], 
+      js.UndefOr[/* photos */ js.Array[ContactField]], 
+      js.UndefOr[/* categories */ ContactField], 
+      js.UndefOr[/* urls */ js.Array[ContactField]], 
       Contact
     ]
 

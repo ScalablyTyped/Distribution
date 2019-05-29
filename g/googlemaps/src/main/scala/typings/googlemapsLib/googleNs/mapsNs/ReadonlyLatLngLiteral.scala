@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @see {@link LatLngLiteral}. */
 trait ReadonlyLatLngLiteral extends js.Object {
   /** @see {@link LatLngLiteral#lat} */
   val lat: scala.Double

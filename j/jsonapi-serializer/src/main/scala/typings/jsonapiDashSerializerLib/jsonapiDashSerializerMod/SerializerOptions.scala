@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SerializerOptions extends js.Object {
   var attributes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var dataLinks: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Function0[scala.Unit]]] = js.undefined
+  var dataLinks: js.UndefOr[js.Array[js.Function0[scala.Unit] | java.lang.String]] = js.undefined
   var dataMeta: js.UndefOr[js.Function0[scala.Unit] | js.Object] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var ignoreRelationshipData: js.UndefOr[scala.Boolean] = js.undefined
@@ -19,7 +19,7 @@ trait SerializerOptions extends js.Object {
   var ref: js.UndefOr[js.Function0[scala.Unit] | scala.Boolean | java.lang.String] = js.undefined
   var relationshipLinks: js.UndefOr[js.Object] = js.undefined
   var relationshipMeta: js.UndefOr[js.Object] = js.undefined
-  var topLevelLinks: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Function0[scala.Unit]]] = js.undefined
+  var topLevelLinks: js.UndefOr[js.Array[js.Function0[scala.Unit] | java.lang.String]] = js.undefined
   var transform: js.UndefOr[Transform] = js.undefined
   var typeForAttribute: js.UndefOr[TypeForAttribute] = js.undefined
 }
@@ -28,7 +28,7 @@ object SerializerOptions {
   @scala.inline
   def apply(
     attributes: js.Array[java.lang.String] = null,
-    dataLinks: js.Array[java.lang.String] | js.Array[js.Function0[scala.Unit]] = null,
+    dataLinks: js.Array[js.Function0[scala.Unit] | java.lang.String] = null,
     dataMeta: js.Function0[scala.Unit] | js.Object = null,
     id: java.lang.String = null,
     ignoreRelationshipData: js.UndefOr[scala.Boolean] = js.undefined,
@@ -40,13 +40,13 @@ object SerializerOptions {
     ref: js.Function0[scala.Unit] | scala.Boolean | java.lang.String = null,
     relationshipLinks: js.Object = null,
     relationshipMeta: js.Object = null,
-    topLevelLinks: js.Array[java.lang.String] | js.Array[js.Function0[scala.Unit]] = null,
+    topLevelLinks: js.Array[js.Function0[scala.Unit] | java.lang.String] = null,
     transform: Transform = null,
     typeForAttribute: TypeForAttribute = null
   ): SerializerOptions = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes)
-    if (dataLinks != null) __obj.updateDynamic("dataLinks")(dataLinks.asInstanceOf[js.Any])
+    if (dataLinks != null) __obj.updateDynamic("dataLinks")(dataLinks)
     if (dataMeta != null) __obj.updateDynamic("dataMeta")(dataMeta.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(ignoreRelationshipData)) __obj.updateDynamic("ignoreRelationshipData")(ignoreRelationshipData)
@@ -58,7 +58,7 @@ object SerializerOptions {
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     if (relationshipLinks != null) __obj.updateDynamic("relationshipLinks")(relationshipLinks)
     if (relationshipMeta != null) __obj.updateDynamic("relationshipMeta")(relationshipMeta)
-    if (topLevelLinks != null) __obj.updateDynamic("topLevelLinks")(topLevelLinks.asInstanceOf[js.Any])
+    if (topLevelLinks != null) __obj.updateDynamic("topLevelLinks")(topLevelLinks)
     if (transform != null) __obj.updateDynamic("transform")(transform)
     if (typeForAttribute != null) __obj.updateDynamic("typeForAttribute")(typeForAttribute)
     __obj.asInstanceOf[SerializerOptions]

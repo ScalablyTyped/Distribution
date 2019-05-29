@@ -131,7 +131,7 @@ object _Impl {
     useFailSafe: scala.Boolean,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(allowRepeats = allowRepeats, animation = animation, className = className.asInstanceOf[js.Any], debug = debug, displayType = displayType.asInstanceOf[js.Any], duration = duration, error = error.asInstanceOf[js.Any], interval = interval, name = name, namespace = namespace, onComplete = js.Any.fromFunction1(onComplete), onHide = js.Any.fromFunction1(onHide), onShow = js.Any.fromFunction1(onShow), onStart = js.Any.fromFunction1(onStart), performance = performance, queue = queue, reverse = reverse.asInstanceOf[js.Any], silent = silent, useFailSafe = useFailSafe, verbose = verbose)
+    val __obj = js.Dynamic.literal(allowRepeats = allowRepeats, animation = animation, className = className, debug = debug, displayType = displayType.asInstanceOf[js.Any], duration = duration, error = error, interval = interval, name = name, namespace = namespace, onComplete = js.Any.fromFunction1(onComplete), onHide = js.Any.fromFunction1(onHide), onShow = js.Any.fromFunction1(onShow), onStart = js.Any.fromFunction1(onStart), performance = performance, queue = queue, reverse = reverse.asInstanceOf[js.Any], silent = silent, useFailSafe = useFailSafe, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

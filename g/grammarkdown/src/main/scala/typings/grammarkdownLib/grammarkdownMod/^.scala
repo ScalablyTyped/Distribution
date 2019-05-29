@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def forEachChild[T](
-    node: grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind],
+    node: js.UndefOr[scala.Nothing],
     cbNode: js.Function1[
       /* node */ grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind], 
       js.UndefOr[T]
     ]
   ): js.UndefOr[T] = js.native
   def forEachChild[T](
-    node: js.UndefOr[scala.Nothing],
+    node: grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind],
     cbNode: js.Function1[
       /* node */ grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind], 
       js.UndefOr[T]

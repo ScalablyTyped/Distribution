@@ -24,11 +24,11 @@ trait Presentation extends js.Object {
   def getMasters(): js.Array[Master] = js.native
   def getName(): java.lang.String = js.native
   def getNotesMaster(): NotesMaster = js.native
-  def getNotesPageHeight(): stdLib.Number = js.native
-  def getNotesPageWidth(): stdLib.Number = js.native
+  def getNotesPageHeight(): scala.Double = js.native
+  def getNotesPageWidth(): scala.Double = js.native
   def getPageElementById(id: java.lang.String): PageElement = js.native
-  def getPageHeight(): stdLib.Number = js.native
-  def getPageWidth(): stdLib.Number = js.native
+  def getPageHeight(): scala.Double = js.native
+  def getPageWidth(): scala.Double = js.native
   def getSelection(): Selection = js.native
   def getSlideById(id: java.lang.String): Slide = js.native
   def getSlides(): js.Array[Slide] = js.native

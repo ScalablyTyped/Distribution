@@ -977,6 +977,10 @@ object grommetLibStrings {
     extends grommetLib.utilsMod._PolymorphicType
   
   @js.native
+  sealed trait template
+    extends grommetLib.utilsMod._PolymorphicType
+  
+  @js.native
   sealed trait text
     extends grommetLib.utilsMod._PolymorphicType
   
@@ -1633,6 +1637,8 @@ object grommetLibStrings {
   def tbody: tbody = "tbody".asInstanceOf[tbody]
   @scala.inline
   def td: td = "td".asInstanceOf[td]
+  @scala.inline
+  def template: template = "template".asInstanceOf[template]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline

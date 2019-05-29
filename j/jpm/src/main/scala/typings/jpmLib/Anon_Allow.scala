@@ -14,9 +14,7 @@ trait Anon_Allow extends js.Object {
     jpmLib.jpmLibStrings.start | jpmLib.jpmLibStrings.ready | jpmLib.jpmLibStrings.end
   ] = js.undefined
   var contentURL: js.UndefOr[java.lang.String] = js.undefined
-  var include: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp]
-  ] = js.undefined
+  var include: js.UndefOr[java.lang.String | (js.Array[stdLib.RegExp | java.lang.String]) | stdLib.RegExp] = js.undefined
   var onMessage: js.UndefOr[js.Function1[/* message */ java.lang.String, _]] = js.undefined
 }
 
@@ -29,7 +27,7 @@ object Anon_Allow {
     contentScriptOptions: js.Any = null,
     contentScriptWhen: jpmLib.jpmLibStrings.start | jpmLib.jpmLibStrings.ready | jpmLib.jpmLibStrings.end = null,
     contentURL: java.lang.String = null,
-    include: java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp] = null,
+    include: java.lang.String | (js.Array[stdLib.RegExp | java.lang.String]) | stdLib.RegExp = null,
     onMessage: /* message */ java.lang.String => _ = null
   ): Anon_Allow = {
     val __obj = js.Dynamic.literal()

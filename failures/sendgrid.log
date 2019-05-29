@@ -1,6 +1,0 @@
-[debug] PhaseRunner.scala:84 Success [id => sendgrid, phase => typescript] 
-[warn ] PhaseRunner.scala:70 Failed because of, [bottleneck => InFile(/home/tso/tmp/tso-cache/npm/node_modules/bottleneck/bottleneck.d.ts): Parse error at 1.1 end of input expected] [id => sendgrid, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [bottleneck => InFile(/home/tso/tmp/tso-cache/npm/node_modules/bottleneck/bottleneck.d.ts): Parse error at 1.1 end of input expected] [id => sendgrid, phase => typescript] 
-[error] PhaseRunner.scala:88 Failure, [bottleneck => InFile(/home/tso/tmp/tso-cache/npm/node_modules/bottleneck/bottleneck.d.ts): Parse error at 1.1 end of input expected] [id => sendgrid, phase => scala.js] 
-[error] PhaseRunner.scala:88 Failure, [bottleneck => InFile(/home/tso/tmp/tso-cache/npm/node_modules/bottleneck/bottleneck.d.ts): Parse error at 1.1 end of input expected] [id => sendgrid, phase => build] 
-[error] PhaseRunner.scala:88 Failure, [bottleneck => InFile(/home/tso/tmp/tso-cache/npm/node_modules/bottleneck/bottleneck.d.ts): Parse error at 1.1 end of input expected] [id => sendgrid, phase => publish] 

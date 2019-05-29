@@ -29,7 +29,9 @@ class Bulk protected () extends js.Object {
     input: java.lang.String,
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[jsforceLib.batchMod.BatchResultInfo], 
+      /* result */ js.Array[
+        jsforceLib.batchMod.BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult
+      ], 
       scala.Unit
     ]
   ): jsforceLib.batchMod.Batch = js.native
@@ -46,7 +48,9 @@ class Bulk protected () extends js.Object {
     input: js.Array[jsforceLib.recordMod.Record[_]],
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[jsforceLib.batchMod.BatchResultInfo], 
+      /* result */ js.Array[
+        jsforceLib.batchMod.BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult
+      ], 
       scala.Unit
     ]
   ): jsforceLib.batchMod.Batch = js.native
@@ -63,7 +67,9 @@ class Bulk protected () extends js.Object {
     input: nodeLib.streamMod.Stream,
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[jsforceLib.batchMod.BatchResultInfo], 
+      /* result */ js.Array[
+        jsforceLib.batchMod.BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult
+      ], 
       scala.Unit
     ]
   ): jsforceLib.batchMod.Batch = js.native

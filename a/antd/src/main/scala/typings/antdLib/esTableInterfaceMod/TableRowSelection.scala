@@ -13,7 +13,7 @@ trait TableRowSelection[T] extends js.Object {
   var hideDefaultSelections: js.UndefOr[scala.Boolean] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], 
+      /* selectedRowKeys */ js.Array[scala.Double | java.lang.String], 
       /* selectedRows */ js.Array[T], 
       scala.Unit
     ]
@@ -28,10 +28,7 @@ trait TableRowSelection[T] extends js.Object {
     ]
   ] = js.undefined
   var onSelectInvert: js.UndefOr[
-    js.Function1[
-      /* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], 
-      scala.Unit
-    ]
+    js.Function1[/* selectedRowKeys */ js.Array[scala.Double | java.lang.String], scala.Unit]
   ] = js.undefined
   var onSelectMultiple: js.UndefOr[
     js.Function3[
@@ -42,7 +39,7 @@ trait TableRowSelection[T] extends js.Object {
     ]
   ] = js.undefined
   var selectWay: js.UndefOr[TableSelectWay] = js.undefined
-  var selectedRowKeys: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
+  var selectedRowKeys: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
   var selections: js.UndefOr[js.Array[SelectionItem] | scala.Boolean] = js.undefined
   var `type`: js.UndefOr[RowSelectionType] = js.undefined
 }
@@ -55,13 +52,13 @@ object TableRowSelection {
     fixed: js.UndefOr[scala.Boolean] = js.undefined,
     getCheckboxProps: /* record */ T => js.Object = null,
     hideDefaultSelections: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: (/* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], /* selectedRows */ js.Array[T]) => scala.Unit = null,
+    onChange: (/* selectedRowKeys */ js.Array[scala.Double | java.lang.String], /* selectedRows */ js.Array[T]) => scala.Unit = null,
     onSelect: SelectionSelectFn[T] = null,
     onSelectAll: (/* selected */ scala.Boolean, /* selectedRows */ js.Array[T], /* changeRows */ js.Array[T]) => scala.Unit = null,
-    onSelectInvert: /* selectedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double] => scala.Unit = null,
+    onSelectInvert: /* selectedRowKeys */ js.Array[scala.Double | java.lang.String] => scala.Unit = null,
     onSelectMultiple: (/* selected */ scala.Boolean, /* selectedRows */ js.Array[T], /* changeRows */ js.Array[T]) => scala.Unit = null,
     selectWay: TableSelectWay = null,
-    selectedRowKeys: js.Array[java.lang.String] | js.Array[scala.Double] = null,
+    selectedRowKeys: js.Array[scala.Double | java.lang.String] = null,
     selections: js.Array[SelectionItem] | scala.Boolean = null,
     `type`: RowSelectionType = null
   ): TableRowSelection[T] = {
@@ -77,7 +74,7 @@ object TableRowSelection {
     if (onSelectInvert != null) __obj.updateDynamic("onSelectInvert")(js.Any.fromFunction1(onSelectInvert))
     if (onSelectMultiple != null) __obj.updateDynamic("onSelectMultiple")(js.Any.fromFunction3(onSelectMultiple))
     if (selectWay != null) __obj.updateDynamic("selectWay")(selectWay)
-    if (selectedRowKeys != null) __obj.updateDynamic("selectedRowKeys")(selectedRowKeys.asInstanceOf[js.Any])
+    if (selectedRowKeys != null) __obj.updateDynamic("selectedRowKeys")(selectedRowKeys)
     if (selections != null) __obj.updateDynamic("selections")(selections.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[TableRowSelection[T]]

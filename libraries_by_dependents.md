@@ -210,6 +210,7 @@
 | 1349 | [cli-color](./c/cli-color) | Colors, formatting and other tools for the console
 | 1347 | [webpack-dev-middleware](./w/webpack-dev-middleware) | A development middleware for webpack
 | 1340 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com
+| 1336 | [antd](./a/antd) | An enterprise-class UI design language and React-b
 | 1327 | [lodash_dot_get](./l/lodash_dot_get) | The lodash method _.get exported as a module.
 | 1325 | [strip-ansi](./s/strip-ansi) | Strip ANSI escape codes from a string
 | 1321 | [warning](./w/warning) | A mirror of Facebook's Warning
@@ -1493,6 +1494,7 @@
 | 118 | [keytar](./k/keytar) | Bindings to native Mac/Linux/Windows password APIs
 | 118 | [mdns](./m/mdns) | multicast DNS service discovery
 | 118 | [pubsub-js](./p/pubsub-js) | Dependency free publish/subscribe library
+| 118 | [sendgrid](./s/sendgrid) | Official SendGrid NodeJS library.
 | 118 | [whatwg-url](./w/whatwg-url) | An implementation of the WHATWG URL Standard's URL
 | 117 | [d3-ease](./d/d3-ease) | Easing functions for smooth animation.
 | 117 | [howler](./h/howler) | Javascript audio library for the modern web.
@@ -2446,6 +2448,7 @@
 | 47 | [is-blank](./i/is-blank) | Check whether a value is empty or blank, includes 
 | 47 | [is-png](./i/is-png) | Check if a Buffer/Uint8Array is a PNG image
 | 47 | [is-svg](./i/is-svg) | Check if a string or buffer is SVG
+| 47 | [jaeger-client](./j/jaeger-client) | Jaeger binding for OpenTracing Node
 | 47 | [jsonapi-serializer](./j/jsonapi-serializer) | A Node.js framework agnostic library for serializi
 | 47 | [lab](./l/lab) | Test utility
 | 47 | [lodash_dot_assignin](./l/lodash_dot_assignin) | The lodash method _.assignIn exported as a module.
@@ -2601,7 +2604,6 @@
 | 41 | [mapbox__polyline](./m/mapbox__polyline) | Polyline encoding and decoding
 | 41 | [material__textfield](./m/material__textfield) | The Material Components for the web text field com
 | 41 | [npm-packlist](./n/npm-packlist) | Get a list of the files to add from a folder into 
-| 41 | [paypal-rest-sdk](./p/paypal-rest-sdk) | SDK for PayPal REST APIs
 | 41 | [prosemirror-commands](./p/prosemirror-commands) | Editing commands for ProseMirror
 | 41 | [pure-render-decorator](./p/pure-render-decorator) | Makes React components pure.
 | 41 | [react-virtualized-select](./r/react-virtualized-select) | Drop-down menu for React with windowing to support
@@ -2761,6 +2763,7 @@
 | 36 | [tabbable](./t/tabbable) | Returns an array of all tabbable DOM nodes within 
 | 36 | [triple-beam](./t/triple-beam) | Definitions of levels for logging purposes & share
 | 36 | [webpagetest](./w/webpagetest) | WebPageTest API wrapper for NodeJS
+| 36 | [yeast](./y/yeast) | Tiny but linear growing unique id generator
 | 35 | [7zip-bin](./7/7zip-bin) | 7-Zip precompiled binaries
 | 35 | [apollo-cache](./a/apollo-cache) | Core abstract of Caching layer for Apollo Client
 | 35 | [charset](./c/charset) | Get the content charset from header and html conte
@@ -3519,6 +3522,7 @@
 | 18 | [pino-http](./p/pino-http) | High-speed HTTP logger for Node.js
 | 18 | [protobufjs__base64](./p/protobufjs__base64) | A minimal base64 implementation for number arrays.
 | 18 | [protobufjs__utf8](./p/protobufjs__utf8) | A minimal UTF8 implementation for number arrays.
+| 18 | [purdy](./p/purdy) | Pretty print objects in real purdy colors. Allows 
 | 18 | [react-bootstrap-date-pick](./r/react-bootstrap-date-picker) | React-Bootstrap based date picker.
 | 18 | [react-countup](./r/react-countup) | A React component wrapper around CountUp.js
 | 18 | [react-github-button](./r/react-github-button) | Unofficial GitHub buttons in React.
@@ -3573,6 +3577,7 @@
 | 17 | [material__chips](./m/material__chips) | The Material Components for the Web chips componen
 | 17 | [mathjax](./m/mathjax) | Beautiful math in all browsers. MathJax is an open
 | 17 | [minimist-options](./m/minimist-options) | Pretty options for minimist
+| 17 | [multireducer](./m/multireducer) | A utility to wrap many copies of a single Redux re
 | 17 | [node-waves](./n/node-waves) | Click effect insipired by Google Material Design
 | 17 | [npm-keyword](./n/npm-keyword) | Get a list of npm packages with a certain keyword
 | 17 | [observe-js](./o/observe-js) | observe-js is a library for observing changes on J
@@ -4036,6 +4041,7 @@
 | 11 | [socketcluster-server](./s/socketcluster-server) | Server module for SocketCluster
 | 11 | [split-array-stream](./s/split-array-stream) | Safely push each item of an array to a stream
 | 11 | [sql-bricks](./s/sql-bricks) | Transparent, Schemaless SQL Generation
+| 11 | [styletron-engine-atomic](./s/styletron-engine-atomic) | Universal, high-performance JavaScript styles
 | 11 | [telebot](./t/telebot) | The easy way to write Telegram bots.
 | 11 | [temp-file](./t/temp-file) | typescript export function getTempName(prefix?: st
 | 11 | [textextensions](./t/textextensions) | A package that contains an array of every single f
@@ -4436,6 +4442,7 @@
 | 7 | [pouchdb-adapter-node-webs](./p/pouchdb-adapter-node-websql) | PouchDB adapter using Node-based SQLite as its dat
 | 7 | [power-assert-formatter](./p/power-assert-formatter) | Power Assert output formatter
 | 7 | [prando](./p/prando) | Deterministic pseudo-random number generator for J
+| 7 | [prettier-package-json](./p/prettier-package-json) | Prettier formatter for package.json files
 | 7 | [proclaim](./p/proclaim) | A simple assertion library for server and client s
 | 7 | [progressbar](./p/progressbar) | A nice wrapper around 
 | 7 | [radius](./r/radius) | RADIUS packet encoding/decoding
@@ -4756,6 +4763,7 @@
 | 5 | [react-native-background-t](./r/react-native-background-timer) | Emit event periodically (even when app is in the b
 | 5 | [react-native-document-pic](./r/react-native-document-picker) | A react native interface to access Documents from 
 | 5 | [react-native-indicators](./r/react-native-indicators) | Activity indicator collection
+| 5 | [react-shadow-dom-retarget](./r/react-shadow-dom-retarget-events) | Retargets event in a shadow root to react
 | 5 | [react-window-size](./r/react-window-size) | React HOC that passes browser window size to wrapp
 | 5 | [reactjs-popup](./r/reactjs-popup) | React Popup Component - Modals,Tooltips and Menus 
 | 5 | [redux-little-router](./r/redux-little-router) | A barebones routing solution for Redux application
@@ -5845,6 +5853,7 @@
 | 1 | [react-native-snackbar-com](./r/react-native-snackbar-component) | A snackbar component for Android and iOS
 | 1 | [react-native-sortable-lis](./r/react-native-sortable-list) | React Native Sortable List component
 | 1 | [react-native-svg-charts](./r/react-native-svg-charts) | Customizable charts (Line, Bar, Area, Pie, Circle,
+| 1 | [react-native-version-chec](./r/react-native-version-check) | A version checker for react-native applications
 | 1 | [react-native-version-numb](./r/react-native-version-number) | Access app version inside React Native
 | 1 | [react-native-zeroconf](./r/react-native-zeroconf) | A Zeroconf discovery utility for react-native
 | 1 | [react-owl-carousel](./r/react-owl-carousel) | React.js + Owl Carousel
@@ -6105,6 +6114,7 @@
 | 0 | [flowjs](./f/flowjs) | asynchronous flow-control micro library
 | 0 | [fluent-react](./f/fluent-react) | Fluent bindings for React
 | 0 | [fm-websync](./f/fm-websync) | > npm install --save @types/fm-websync
+| 0 | [frecency](./f/frecency) | Frecency sorting for search results.
 | 0 | [fs-mock](./f/fs-mock) | -
 | 0 | [ftdomdelegate](./f/ftdomdelegate) | Create and manage a DOM event delegator.
 | 0 | [fuzzyset](./f/fuzzyset) | A fuzzy string set for JavaScript
@@ -6184,6 +6194,7 @@
 | 0 | [jquery_dot_placeholder](./j/jquery_dot_placeholder) | A jQuery plugin that enables HTML5 placeholder beh
 | 0 | [jquery_dot_tipsy](./j/jquery_dot_tipsy) | Facebook-style tooltip plugin for jQuery
 | 0 | [jquery_dot_ui_dot_layout](./j/jquery_dot_ui_dot_layout) | Jquery UI Layout package
+| 0 | [js-captcha](./j/js-captcha) | Simple captcha component written in pure JavaScrip
 | 0 | [js-fixtures](./j/js-fixtures) | jasmine-like fixtures without testing framework de
 | 0 | [jsnox](./j/jsnox) | Write concise React components without JSX
 | 0 | [jsonabc](./j/jsonabc) | Sorts JSON object alphabetically. It supports nest
@@ -6338,6 +6349,7 @@
 | 0 | [react-daum-postcode](./r/react-daum-postcode) | React daum-postcode component
 | 0 | [react-easy-chart](./r/react-easy-chart) | React component implementations of Mike Bostok's D
 | 0 | [react-editext](./r/react-editext) | Editable Text Component for React Applications
+| 0 | [react-elemental](./r/react-elemental) | Flat UI library for React
 | 0 | [react-google-login-compon](./r/react-google-login-component) | React Component that lets you instantly login thro
 | 0 | [react-gtm-module](./r/react-gtm-module) | React Google Tag Manager Module
 | 0 | [react-holder](./r/react-holder) | React image Holder (with holder.js)
@@ -6354,6 +6366,7 @@
 | 0 | [react-native-bluetooth-se](./r/react-native-bluetooth-serial) | 'Bluetooth serial for react native'
 | 0 | [react-native-canvas](./r/react-native-canvas) |   react-native-canvas 
 | 0 | [react-native-goby](./r/react-native-goby) | React Native plugin for the Goby service
+| 0 | [react-native-honeywell-sc](./r/react-native-honeywell-scanner) | A barcode scanner for Honeywell handheld devices l
 | 0 | [react-native-huawei-prote](./r/react-native-huawei-protected-apps) | Customized dialog alerting the user of the battery
 | 0 | [react-native-modal-filter](./r/react-native-modal-filter-picker) | Cross-platform modal picker for React Native which
 | 0 | [react-native-percentage-c](./r/react-native-percentage-circle) | react native percentage circle and also be a progr

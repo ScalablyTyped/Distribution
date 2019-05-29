@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ThemedStyledFunction[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] extends ThemedStyledFunctionBase[C, T, O, A] {
+trait ThemedStyledFunction[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] extends ThemedStyledFunctionBase[C, T, O, A] {
   // Fun thing: 'attrs' can also provide a polymorphic 'as' prop
   // My head already hurts enough so maybe later...
   def attrs[U, NewA /* <: (stdLib.Partial[StyledComponentPropsWithRef[C] with U]) with org.scalablytyped.runtime.StringDictionary[js.Any] */](attrs: Attrs[StyledComponentPropsWithRef[C] with U, NewA, T]): ThemedStyledFunction[C, T, O with NewA, A | java.lang.String] = js.native

@@ -22,7 +22,7 @@ package object strictDashEventDashEmitterDashTypesMod {
     /* import warning: ImportType.apply Failed type conversion: TEmitter[' _emitType'] */ js.Any
   ] */] = java.lang.String
   type InnerEEMethodReturnType[T, TValue, FValue] = FValue | TValue
-  type ListenerType[T] = js.Array[T] | js.Array[js.Any]
+  type ListenerType[T] = js.Array[js.Any | T]
   type MatchingKeys[TRecord, TMatch, K /* <: java.lang.String */] = K
   type NoUndefined[T] = T
   type OnEventNames[TEmitter /* <: TypeRecord[_, _, _] */, TEventRecord /* <: NoUndefined[

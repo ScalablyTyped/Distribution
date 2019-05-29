@@ -35,7 +35,7 @@ trait VideoProperties
   var onPlaybackStalled: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onProgress: js.UndefOr[js.Function1[/* data */ OnProgressData, scala.Unit]] = js.undefined
   var onReadyForDisplay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onSeek: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onSeek: js.UndefOr[js.Function1[/* data */ OnSeekData, scala.Unit]] = js.undefined
   var onTimedMetadata: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onVideoBuffer: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onVideoEnd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -142,7 +142,7 @@ object VideoProperties {
     onResponderStart: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
     onResponderTerminate: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Unit = null,
     onResponderTerminationRequest: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
-    onSeek: () => scala.Unit = null,
+    onSeek: /* data */ OnSeekData => scala.Unit = null,
     onStartShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     onTimedMetadata: () => scala.Unit = null,
@@ -252,7 +252,7 @@ object VideoProperties {
     if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1(onResponderStart))
     if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1(onResponderTerminate))
     if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1(onResponderTerminationRequest))
-    if (onSeek != null) __obj.updateDynamic("onSeek")(js.Any.fromFunction0(onSeek))
+    if (onSeek != null) __obj.updateDynamic("onSeek")(js.Any.fromFunction1(onSeek))
     if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1(onStartShouldSetResponder))
     if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
     if (onTimedMetadata != null) __obj.updateDynamic("onTimedMetadata")(js.Any.fromFunction0(onTimedMetadata))

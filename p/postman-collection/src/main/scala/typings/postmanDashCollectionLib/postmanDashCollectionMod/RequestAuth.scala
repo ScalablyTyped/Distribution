@@ -12,7 +12,7 @@ class RequestAuth protected () extends Property[RequestAuthDefinition] {
   def this(options: RequestAuthDefinition) = this()
   def this(options: RequestAuthDefinition, parent: Property[PropertyDefinition]) = this()
   def this(options: RequestAuthDefinition, parent: PropertyList[RequestAuth]) = this()
-  var `type`: java.lang.String | js.UndefOr[java.lang.String] = js.native
+  var `type`: js.UndefOr[java.lang.String] = js.native
   def clear(`type`: java.lang.String): scala.Unit = js.native
   def current(): js.Any = js.native
   def parameters(): VariableList = js.native

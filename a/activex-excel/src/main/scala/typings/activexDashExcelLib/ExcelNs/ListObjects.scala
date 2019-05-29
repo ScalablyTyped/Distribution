@@ -13,6 +13,18 @@ trait ListObjects extends js.Object {
   val Parent: js.Any = js.native
   def apply(Index: java.lang.String): ListObject = js.native
   def apply(Index: scala.Double): ListObject = js.native
+  /**
+    * @param SourceType [SourceType=1]
+    * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
+    */
+  def Add(
+    SourceType: js.UndefOr[XlListObjectSourceType],
+    Source: js.UndefOr[js.Any],
+    LinkSource: js.UndefOr[scala.Boolean],
+    XlListObjectHasHeaders: js.UndefOr[XlYesNoGuess],
+    Destination: js.UndefOr[Range],
+    TableStyleName: js.UndefOr[java.lang.String]
+  ): ListObject = js.native
   def Add(SourceType: XlListObjectSourceType): ListObject = js.native
   def Add(SourceType: XlListObjectSourceType, Source: Range): ListObject = js.native
   def Add(
@@ -43,18 +55,6 @@ trait ListObjects extends js.Object {
     XlListObjectHasHeaders: XlYesNoGuess,
     Destination: Range,
     TableStyleName: java.lang.String
-  ): ListObject = js.native
-  /**
-    * @param SourceType [SourceType=1]
-    * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
-    */
-  def Add(
-    SourceType: js.UndefOr[XlListObjectSourceType],
-    Source: js.UndefOr[js.Any],
-    LinkSource: js.UndefOr[scala.Boolean],
-    XlListObjectHasHeaders: js.UndefOr[XlYesNoGuess],
-    Destination: js.UndefOr[Range],
-    TableStyleName: js.UndefOr[java.lang.String]
   ): ListObject = js.native
   def Item(Index: java.lang.String): ListObject = js.native
   def Item(Index: scala.Double): ListObject = js.native

@@ -25,12 +25,12 @@ trait ScatterChartBuilder extends js.Object {
   def setTitle(chartTitle: java.lang.String): ScatterChartBuilder = js.native
   def setTitleTextStyle(textStyle: TextStyle): ScatterChartBuilder = js.native
   def setXAxisLogScale(): ScatterChartBuilder = js.native
-  def setXAxisRange(start: stdLib.Number, end: stdLib.Number): ScatterChartBuilder = js.native
+  def setXAxisRange(start: scala.Double, end: scala.Double): ScatterChartBuilder = js.native
   def setXAxisTextStyle(textStyle: TextStyle): ScatterChartBuilder = js.native
   def setXAxisTitle(title: java.lang.String): ScatterChartBuilder = js.native
   def setXAxisTitleTextStyle(textStyle: TextStyle): ScatterChartBuilder = js.native
   def setYAxisLogScale(): ScatterChartBuilder = js.native
-  def setYAxisRange(start: stdLib.Number, end: stdLib.Number): ScatterChartBuilder = js.native
+  def setYAxisRange(start: scala.Double, end: scala.Double): ScatterChartBuilder = js.native
   def setYAxisTextStyle(textStyle: TextStyle): ScatterChartBuilder = js.native
   def setYAxisTitle(title: java.lang.String): ScatterChartBuilder = js.native
   def setYAxisTitleTextStyle(textStyle: TextStyle): ScatterChartBuilder = js.native

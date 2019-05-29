@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait Typeofmedia extends js.Object {
   var DEFAULT_MEDIA_RECEIVER_APP_ID: java.lang.String
   var EditTracksInfoRequest: org.scalablytyped.runtime.Instantiable2[
-    /* activeTrackIds */ js.UndefOr[/* activeTrackIds */ js.Array[scala.Double]], 
-    /* textTrackStyle */ js.UndefOr[/* textTrackStyle */ chromeLib.chromeNs.castNs.mediaNs.TextTrackStyle], 
+    js.UndefOr[/* activeTrackIds */ js.Array[scala.Double]], 
+    js.UndefOr[/* textTrackStyle */ chromeLib.chromeNs.castNs.mediaNs.TextTrackStyle], 
     chromeLib.chromeNs.castNs.mediaNs.EditTracksInfoRequest
   ]
   var GenericMediaMetadata: org.scalablytyped.runtime.Instantiable0[chromeLib.chromeNs.castNs.mediaNs.GenericMediaMetadata]
@@ -82,8 +82,8 @@ object Typeofmedia {
   def apply(
     DEFAULT_MEDIA_RECEIVER_APP_ID: java.lang.String,
     EditTracksInfoRequest: org.scalablytyped.runtime.Instantiable2[
-      /* activeTrackIds */ js.UndefOr[/* activeTrackIds */ js.Array[scala.Double]], 
-      /* textTrackStyle */ js.UndefOr[/* textTrackStyle */ chromeLib.chromeNs.castNs.mediaNs.TextTrackStyle], 
+      js.UndefOr[/* activeTrackIds */ js.Array[scala.Double]], 
+      js.UndefOr[/* textTrackStyle */ chromeLib.chromeNs.castNs.mediaNs.TextTrackStyle], 
       chromeLib.chromeNs.castNs.mediaNs.EditTracksInfoRequest
     ],
     GenericMediaMetadata: org.scalablytyped.runtime.Instantiable0[chromeLib.chromeNs.castNs.mediaNs.GenericMediaMetadata],

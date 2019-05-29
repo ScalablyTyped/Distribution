@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isReadOnly, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, value */ @JSImport("survey-knockout", "Question")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isReadOnly, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, getQuestionFromArray, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
   extends SurveyElement
@@ -282,6 +282,7 @@ class Question protected ()
   def getPlainData(options: surveyDashKnockoutLib.Anon_Calculations): js.Any = js.native
   def getProcessedText(text: java.lang.String): java.lang.String = js.native
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): scala.Unit = js.native
+  def getQuestionFromArray(name: java.lang.String, index: scala.Double): IQuestion = js.native
   /* protected */ def getQuestionTitleTemplate(): java.lang.String = js.native
   /* protected */ def getRootCss(classes: js.Any): js.Any = js.native
   /**

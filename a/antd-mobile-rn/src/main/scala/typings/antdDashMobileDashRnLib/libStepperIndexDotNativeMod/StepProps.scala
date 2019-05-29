@@ -10,7 +10,7 @@ trait StepProps
   var style: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
-  var styles: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof styles */ js.UndefOr[
+  var styles: js.UndefOr[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof styles */ js.Any
   ] = js.undefined
 }

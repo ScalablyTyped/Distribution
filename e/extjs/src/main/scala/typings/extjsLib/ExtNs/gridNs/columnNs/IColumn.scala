@@ -75,6 +75,11 @@ trait IColumn
   var hide_IColumn: js.UndefOr[js.Function1[/* fromOwner */ js.UndefOr[js.Any], extjsLib.ExtNs.IComponent]] = js.undefined
   /** [Config Option] (Boolean) */
   var hideable: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Method] Initialized the renderData to be used when rendering the renderTpl
+  		* @returns Object Object with keys and values that are going to be applied to the renderTpl
+  		*/
+  @JSName("initRenderData")
+  var initRenderData_IColumn: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Property] (Boolean) */
   var isColumn: js.UndefOr[scala.Boolean] = js.undefined
   /** [Property] (Boolean) */

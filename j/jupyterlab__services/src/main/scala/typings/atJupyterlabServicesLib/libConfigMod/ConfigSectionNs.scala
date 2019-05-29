@@ -19,7 +19,7 @@ object ConfigSectionNs extends js.Object {
     /**
       * The optional server settings.
       */
-    var serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.UndefOr[
+    var serverSettings: js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
       ] = js.undefined
   }

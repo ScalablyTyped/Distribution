@@ -16,8 +16,8 @@ object ConfirmQuestion {
   @scala.inline
   def apply[A](
     `type`: inquirerLib.inquirerLibStrings.confirm,
-    choices: js.Array[ChoiceType[A]] | (js.Function1[A, js.Array[ChoiceType[A]]]) | (js.Function1[A, js.Promise[js.Array[ChoiceType[A]]]]) = null,
-    default: java.lang.String | scala.Double | scala.Boolean | js.Array[_] | (js.Function1[A, _]) | (js.Function1[A, js.Promise[_]]) = null,
+    choices: js.Array[ChoiceType[A]] | (js.Function1[A, js.Array[ChoiceType[A]] | js.Promise[js.Array[ChoiceType[A]]]]) = null,
+    default: java.lang.String | scala.Double | scala.Boolean | js.Array[_] | (js.Function1[A, _ | js.Promise[_]]) = null,
     filter: /* input */ java.lang.String => _ = null,
     message: java.lang.String | (js.Function1[A, java.lang.String]) = null,
     name: java.lang.String = null,

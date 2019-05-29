@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DatetimeInputObject extends js.Object {
+trait DatetimeInputObject extends _DatetimeInput {
   /**
     * Day of month, 1..31
     */

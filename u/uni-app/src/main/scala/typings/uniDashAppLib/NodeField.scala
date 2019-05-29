@@ -7,54 +7,60 @@ import scala.scalajs.js.annotation._
 
 trait NodeField extends js.Object {
   /**
-    * 节点的dataset
+    * 指定样式名列表，返回节点对应样式名的当前值
     */
-  var dataset: js.UndefOr[js.Any] = js.undefined
+  var computedStyle: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * 节点的高度
+    * 是否返回节点对应的 Context 对象
     */
-  var height: js.UndefOr[scala.Double] = js.undefined
+  var context: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * 节点的水平滚动位置
+    * 是否返回节点 dataset
     */
-  var scrollLeft: js.UndefOr[scala.Double] = js.undefined
+  var dataset: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * 节点的竖直滚动位置
+    * 是否返回节点 id
     */
-  var scrollTop: js.UndefOr[scala.Double] = js.undefined
+  var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * 节点 scroll-x 属性的当前值
+    * 指定属性名列表，返回节点对应属性名的当前属性值（只能获得组件文档中标注的常规属性值，id class style 和事件绑定的属性值不可获取）
     */
-  var scrollX: js.UndefOr[scala.Double] = js.undefined
+  var properties: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * 节点 scroll-y 属性的当前值
+    * 是否返回节点布局位置（left right top bottom）
     */
-  var scrollY: js.UndefOr[scala.Double] = js.undefined
+  var rect: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * 节点的宽度
+    * 是否返回节点的 scrollLeft scrollTop，节点必须是 scroll-view 或者 viewport
     */
-  var width: js.UndefOr[scala.Double] = js.undefined
+  var scrollOffset: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * 是否返回节点尺寸（width height）
+    */
+  var size: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object NodeField {
   @scala.inline
   def apply(
-    dataset: js.Any = null,
-    height: scala.Int | scala.Double = null,
-    scrollLeft: scala.Int | scala.Double = null,
-    scrollTop: scala.Int | scala.Double = null,
-    scrollX: scala.Int | scala.Double = null,
-    scrollY: scala.Int | scala.Double = null,
-    width: scala.Int | scala.Double = null
+    computedStyle: js.Array[java.lang.String] = null,
+    context: js.UndefOr[scala.Boolean] = js.undefined,
+    dataset: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    properties: js.Array[java.lang.String] = null,
+    rect: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollOffset: js.UndefOr[scala.Boolean] = js.undefined,
+    size: js.UndefOr[scala.Boolean] = js.undefined
   ): NodeField = {
     val __obj = js.Dynamic.literal()
-    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (scrollX != null) __obj.updateDynamic("scrollX")(scrollX.asInstanceOf[js.Any])
-    if (scrollY != null) __obj.updateDynamic("scrollY")(scrollY.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (computedStyle != null) __obj.updateDynamic("computedStyle")(computedStyle)
+    if (!js.isUndefined(context)) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(dataset)) __obj.updateDynamic("dataset")(dataset)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (!js.isUndefined(rect)) __obj.updateDynamic("rect")(rect)
+    if (!js.isUndefined(scrollOffset)) __obj.updateDynamic("scrollOffset")(scrollOffset)
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
     __obj.asInstanceOf[NodeField]
   }
 }

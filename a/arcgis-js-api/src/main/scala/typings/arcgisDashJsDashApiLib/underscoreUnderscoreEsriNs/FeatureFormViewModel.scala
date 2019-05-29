@@ -21,13 +21,13 @@ trait FeatureFormViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#fieldConfig)
     */
-  var fieldConfig: js.Array[FieldConfig] | js.Array[FieldGroupConfig] = js.native
+  var fieldConfig: js.Array[FieldConfig | FieldGroupConfig] = js.native
   /**
     * The input fields and/or grouped field rendered by the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#inputField)
     */
-  val inputField: js.Array[InputField] | js.Array[InputFieldGroup] = js.native
+  val inputField: js.Array[InputField | InputFieldGroup] = js.native
   /**
     * Layer containing the editable feature attributes. If this layer is not specified, it is the same as the [graphic's layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#layer).
     *

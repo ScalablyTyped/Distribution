@@ -64,10 +64,6 @@ object elasticsearchLibStrings {
     extends elasticsearchLib.elasticsearchMod.VersionType
   
   @js.native
-  sealed trait `false`
-    extends elasticsearchLib.elasticsearchMod._Refresh
-  
-  @js.native
   sealed trait force
     extends elasticsearchLib.elasticsearchMod.VersionType
   
@@ -179,10 +175,6 @@ object elasticsearchLibStrings {
     extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
-  sealed trait `true`
-    extends elasticsearchLib.elasticsearchMod._Refresh
-  
-  @js.native
   sealed trait urgent extends js.Object
   
   @js.native
@@ -227,8 +219,6 @@ object elasticsearchLibStrings {
   def external: external = "external".asInstanceOf[external]
   @scala.inline
   def external_gte: external_gte = "external_gte".asInstanceOf[external_gte]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
   @scala.inline
   def force: force = "force".asInstanceOf[force]
   @scala.inline
@@ -293,8 +283,6 @@ object elasticsearchLibStrings {
   def t: t = "t".asInstanceOf[t]
   @scala.inline
   def tb: tb = "tb".asInstanceOf[tb]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def urgent: urgent = "urgent".asInstanceOf[urgent]
   @scala.inline

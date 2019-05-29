@@ -82,6 +82,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var globalaccelerator: js.UndefOr[awsDashSdkLib.clientsGlobalacceleratorMod.apiVersion] = js.undefined
   var glue: js.UndefOr[awsDashSdkLib.clientsGlueMod.apiVersion] = js.undefined
   var greengrass: js.UndefOr[awsDashSdkLib.clientsGreengrassMod.apiVersion] = js.undefined
+  var groundstation: js.UndefOr[awsDashSdkLib.clientsGroundstationMod.apiVersion] = js.undefined
   var guardduty: js.UndefOr[awsDashSdkLib.clientsGuarddutyMod.apiVersion] = js.undefined
   var health: js.UndefOr[awsDashSdkLib.clientsHealthMod.apiVersion] = js.undefined
   var iam: js.UndefOr[awsDashSdkLib.clientsIamMod.apiVersion] = js.undefined
@@ -262,6 +263,7 @@ object ConfigurationServiceApiVersions {
     globalaccelerator: awsDashSdkLib.clientsGlobalacceleratorMod.apiVersion = null,
     glue: awsDashSdkLib.clientsGlueMod.apiVersion = null,
     greengrass: awsDashSdkLib.clientsGreengrassMod.apiVersion = null,
+    groundstation: awsDashSdkLib.clientsGroundstationMod.apiVersion = null,
     guardduty: awsDashSdkLib.clientsGuarddutyMod.apiVersion = null,
     health: awsDashSdkLib.clientsHealthMod.apiVersion = null,
     iam: awsDashSdkLib.clientsIamMod.apiVersion = null,
@@ -439,6 +441,7 @@ object ConfigurationServiceApiVersions {
     if (globalaccelerator != null) __obj.updateDynamic("globalaccelerator")(globalaccelerator.asInstanceOf[js.Any])
     if (glue != null) __obj.updateDynamic("glue")(glue.asInstanceOf[js.Any])
     if (greengrass != null) __obj.updateDynamic("greengrass")(greengrass.asInstanceOf[js.Any])
+    if (groundstation != null) __obj.updateDynamic("groundstation")(groundstation.asInstanceOf[js.Any])
     if (guardduty != null) __obj.updateDynamic("guardduty")(guardduty.asInstanceOf[js.Any])
     if (health != null) __obj.updateDynamic("health")(health.asInstanceOf[js.Any])
     if (iam != null) __obj.updateDynamic("iam")(iam.asInstanceOf[js.Any])

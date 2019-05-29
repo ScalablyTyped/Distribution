@@ -14,18 +14,18 @@ class Duplex () extends Readable {
   var _writev: js.UndefOr[
     js.Function2[
       /* chunks */ js.Array[nodeLib.Anon_Chunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      /* callback */ js.Function1[js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
   ] = js.native
   var writable: scala.Boolean = js.native
   val writableHighWaterMark: scala.Double = js.native
   val writableLength: scala.Double = js.native
-  def _final(callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]): scala.Unit = js.native
+  def _final(callback: js.Function1[js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]): scala.Unit = js.native
   def _write(
     chunk: js.Any,
     encoding: java.lang.String,
-    callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    callback: js.Function1[js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   @JSName("addListener")
   def addListener_drain(event: nodeLib.nodeLibStrings.drain, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -93,12 +93,12 @@ class Duplex () extends Readable {
   def setDefaultEncoding(encoding: java.lang.String): this.type = js.native
   def uncork(): scala.Unit = js.native
   def write(chunk: js.Any): scala.Boolean = js.native
-  def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]): scala.Boolean = js.native
+  def write(chunk: js.Any, cb: js.Function1[js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]): scala.Boolean = js.native
   def write(chunk: js.Any, encoding: java.lang.String): scala.Boolean = js.native
   def write(
     chunk: js.Any,
     encoding: java.lang.String,
-    cb: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
+    cb: js.Function1[js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
   ): scala.Boolean = js.native
 }
 

@@ -14,7 +14,7 @@ trait ExportingContextButton extends Button {
     * can be customized by defining a new array of items and assigning null to unwanted positions.
     * @since 2.0
     */
-  var menuItems: js.UndefOr[js.Array[java.lang.String] | js.Array[MenuItem]] = js.undefined
+  var menuItems: js.UndefOr[js.Array[MenuItem | java.lang.String]] = js.undefined
   /**
     * A click handler callback to use on the button directly instead of the popup menu.
     * @since 2.0
@@ -39,7 +39,7 @@ object ExportingContextButton {
     align: java.lang.String = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
-    menuItems: js.Array[java.lang.String] | js.Array[MenuItem] = null,
+    menuItems: js.Array[MenuItem | java.lang.String] = null,
     onclick: () => scala.Unit = null,
     symbol: java.lang.String = null,
     symbolFill: java.lang.String = null,
@@ -59,7 +59,7 @@ object ExportingContextButton {
     if (align != null) __obj.updateDynamic("align")(align)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems.asInstanceOf[js.Any])
+    if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems)
     if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction0(onclick))
     if (symbol != null) __obj.updateDynamic("symbol")(symbol)
     if (symbolFill != null) __obj.updateDynamic("symbolFill")(symbolFill)

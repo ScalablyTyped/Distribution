@@ -72,7 +72,7 @@ trait VNodeProperties
     * Do not use className, use class instead
     */
   val className: js.UndefOr[
-    scala.Nothing | (maquetteLib.maquetteLibStrings.`Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead`)
+    maquetteLib.maquetteLibStrings.`Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead`
   ] = js.undefined
   /**
     * An object literal like `{important:true}` which allows css classes, like `important` to be added and removed
@@ -213,7 +213,7 @@ object VNodeProperties {
     bind: js.Object = null,
     checked: js.UndefOr[scala.Boolean] = js.undefined,
     `class`: java.lang.String = null,
-    className: scala.Nothing | (maquetteLib.maquetteLibStrings.`Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead`) = null,
+    className: maquetteLib.maquetteLibStrings.`Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead` = null,
     classes: org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean | scala.Null]] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     draggable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -284,7 +284,7 @@ object VNodeProperties {
     if (bind != null) __obj.updateDynamic("bind")(bind)
     if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
     if (`class` != null) __obj.updateDynamic("class")(`class`)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
     if (classes != null) __obj.updateDynamic("classes")(classes)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)

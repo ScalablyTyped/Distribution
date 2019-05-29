@@ -15,7 +15,10 @@ package object spectedMod {
     */ spectedLib.spectedLibStrings.Result with js.Any
   type Spec[INPUT, ROOTINPUT] = js.Tuple2[Predicate[INPUT, ROOTINPUT], ErrorMsg[INPUT]]
   type SpecArray[INPUT, ROOTINPUT] = js.Array[Spec[INPUT, ROOTINPUT]]
-  type SpecFunction[INPUT, ROOTINPUT] = (js.Function1[/* value */ INPUT, SpecArray[INPUT, ROOTINPUT]]) | (js.Function1[/* value */ INPUT, SpecObject[INPUT, ROOTINPUT]]) | (js.Function1[/* value */ INPUT, js.Array[SpecArray[js.Any, ROOTINPUT]]])
+  type SpecFunction[INPUT, ROOTINPUT] = js.Function1[
+    /* value */ INPUT, 
+    (js.Array[SpecArray[js.Any, ROOTINPUT]]) | (SpecArray[INPUT, ROOTINPUT]) | (SpecObject[INPUT, ROOTINPUT])
+  ]
   type SpecObject[INPUT, ROOTINPUT] = stdLib.Partial[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof INPUT ]: spected.spected.SpecValue<INPUT[key], ROOTINPUT>}

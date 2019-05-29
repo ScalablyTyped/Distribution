@@ -16,6 +16,10 @@ trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema */, TEvent /*
   ] = js.undefined
   @JSName("id")
   var id_StateNodeDefinition: java.lang.String
+  @JSName("initial")
+  var initial_StateNodeDefinition: js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
+  ] = js.undefined
   @JSName("key")
   var key_StateNodeDefinition: java.lang.String
   @JSName("onEntry")

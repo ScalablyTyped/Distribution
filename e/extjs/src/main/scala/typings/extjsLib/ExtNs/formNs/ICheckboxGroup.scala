@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
   		* @param fn Object A function containing the transaction code
   		*/
-  var batchChanges: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var batchChanges: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Template method before a field is reset  */
   var beforeReset: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (String) */
@@ -66,9 +66,7 @@ import scala.scalajs.js.annotation._
   		* @param value2 Object
   		* @returns Boolean True if the values are equal, false if inequal.
   		*/
-  var isEqual: js.UndefOr[
-    js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], _ | scala.Boolean]
-  ] = js.undefined
+  var isEqual: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], _ | scala.Boolean]] = js.undefined
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
   		* @returns Boolean
   		*/
@@ -82,7 +80,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Associate one or more error messages with this field
   		* @param errors String/String[] The error message(s) for the field.
   		*/
-  var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (String) */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] When a checkbox is added to the group monitor it for changes
@@ -105,14 +103,14 @@ import scala.scalajs.js.annotation._
   		* @param value Object The mapping of checkbox names to values.
   		* @returns Ext.form.CheckboxGroup this
   		*/
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type | _]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], this.type | _]] = js.undefined
   /** [Config Option] (Boolean) */
   var submitValue: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Allows for any necessary modifications before the original value is set
   		* @param value Object The initial value
   		* @returns Object The modified initial value
   		*/
-  var transformOriginalValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
+  var transformOriginalValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
   		* @returns Boolean True if the value is valid, else false
   		*/

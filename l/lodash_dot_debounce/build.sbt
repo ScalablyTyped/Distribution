@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_debounce"
-version := "4.0-dt-20190214Z-fd0ce9"
+version := "4.0-dt-20190214Z-f33c70"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

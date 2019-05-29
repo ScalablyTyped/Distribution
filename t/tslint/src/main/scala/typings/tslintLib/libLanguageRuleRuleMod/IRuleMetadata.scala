@@ -30,9 +30,7 @@ trait IRuleMetadata extends js.Object {
     * Examples of what a standard config for the rule might look like.
     * Using a string[] here is deprecated. Write the options as a JSON object instead.
     */
-  var optionExamples: js.UndefOr[
-    (js.Array[tslintLib.tslintLibNumbers.`true` | js.Array[_]]) | js.Array[java.lang.String]
-  ] = js.undefined
+  var optionExamples: js.UndefOr[js.Array[tslintLib.tslintLibNumbers.`true` | js.Array[_] | java.lang.String]] = js.undefined
   /**
     * Schema of the options the rule accepts.
     * The first boolean for whether the rule is enabled or not is already implied.
@@ -79,7 +77,7 @@ object IRuleMetadata {
     deprecationMessage: java.lang.String = null,
     descriptionDetails: java.lang.String = null,
     hasFix: js.UndefOr[scala.Boolean] = js.undefined,
-    optionExamples: (js.Array[tslintLib.tslintLibNumbers.`true` | js.Array[_]]) | js.Array[java.lang.String] = null,
+    optionExamples: js.Array[tslintLib.tslintLibNumbers.`true` | js.Array[_] | java.lang.String] = null,
     rationale: java.lang.String = null,
     requiresTypeInfo: js.UndefOr[scala.Boolean] = js.undefined
   ): IRuleMetadata = {
@@ -89,7 +87,7 @@ object IRuleMetadata {
     if (deprecationMessage != null) __obj.updateDynamic("deprecationMessage")(deprecationMessage)
     if (descriptionDetails != null) __obj.updateDynamic("descriptionDetails")(descriptionDetails)
     if (!js.isUndefined(hasFix)) __obj.updateDynamic("hasFix")(hasFix)
-    if (optionExamples != null) __obj.updateDynamic("optionExamples")(optionExamples.asInstanceOf[js.Any])
+    if (optionExamples != null) __obj.updateDynamic("optionExamples")(optionExamples)
     if (rationale != null) __obj.updateDynamic("rationale")(rationale)
     if (!js.isUndefined(requiresTypeInfo)) __obj.updateDynamic("requiresTypeInfo")(requiresTypeInfo)
     __obj.asInstanceOf[IRuleMetadata]

@@ -19,13 +19,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Binds a store to this instance
   		* @param store Ext.data.AbstractStore/String The store to bind or ID of the store. When no store given (or when null or undefined passed), unbinds the existing store.
   		*/
-  var bindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Binds listeners for this component to the store
   		* @param store Ext.data.AbstractStore The store to bind to
   		*/
-  var bindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var displayInfo: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (String) */
@@ -66,8 +64,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onBindStore: js.UndefOr[
     js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -77,8 +75,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onUnbindStore: js.UndefOr[
     js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -97,9 +95,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Unbinds listeners from this component to the store
   		* @param store Ext.data.AbstractStore The store to unbind from
   		*/
-  var unbindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
 }
 
 object IPagingToolbar {

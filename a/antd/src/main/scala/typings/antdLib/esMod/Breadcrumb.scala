@@ -14,7 +14,7 @@ class Breadcrumb ()
 @JSImport("antd/es", "Breadcrumb")
 @js.native
 object Breadcrumb extends js.Object {
-  var Item: antdLib.Anon_ANTBREADCRUMBITEM = js.native
+  var Item: antdLib.TypeofClassBreadcrumbItem = js.native
   var defaultProps: antdLib.Anon_Separator = js.native
   var propTypes: antdLib.Anon_Params = js.native
 }

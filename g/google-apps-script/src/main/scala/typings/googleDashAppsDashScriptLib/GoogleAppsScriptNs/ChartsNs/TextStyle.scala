@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TextStyle extends js.Object {
   def getColor(): java.lang.String
   def getFontName(): java.lang.String
-  def getFontSize(): stdLib.Number
+  def getFontSize(): scala.Double
 }
 
 object TextStyle {
@@ -16,7 +16,7 @@ object TextStyle {
   def apply(
     getColor: () => java.lang.String,
     getFontName: () => java.lang.String,
-    getFontSize: () => stdLib.Number
+    getFontSize: () => scala.Double
   ): TextStyle = {
     val __obj = js.Dynamic.literal(getColor = js.Any.fromFunction0(getColor), getFontName = js.Any.fromFunction0(getFontName), getFontSize = js.Any.fromFunction0(getFontSize))
   

@@ -17,7 +17,7 @@ class Polyline[T /* <: geojsonLib.geojsonMod.GeometryObject */, P] protected () 
   def addLatLng(latlng: LatLngExpression): this.type = js.native
   def getBounds(): LatLngBounds = js.native
   def getCenter(): LatLng = js.native
-  def getLatLngs(): js.Array[LatLng] | js.Array[js.Array[LatLng]] | js.Array[js.Array[js.Array[LatLng]]] = js.native
+  def getLatLngs(): js.Array[(js.Array[js.Array[LatLng] | LatLng]) | LatLng] = js.native
   def isEmpty(): scala.Boolean = js.native
   def setLatLngs(latlngs: js.Array[(js.Array[js.Array[LatLngExpression] | LatLngExpression]) | LatLngExpression]): this.type = js.native
   def toGeoJSON(): geojsonLib.geojsonMod.Feature[T, P] = js.native

@@ -14,7 +14,7 @@ trait CoreOptions extends js.Object {
   var baseUrl: js.UndefOr[java.lang.String] = js.undefined
   var body: js.UndefOr[js.Any] = js.undefined
   var ca: js.UndefOr[
-    java.lang.String | nodeLib.Buffer | js.Array[java.lang.String] | js.Array[nodeLib.Buffer]
+    java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | java.lang.String])
   ] = js.undefined
   var callback: js.UndefOr[RequestCallback] = js.undefined
   var cert: js.UndefOr[nodeLib.Buffer] = js.undefined
@@ -72,7 +72,7 @@ object CoreOptions {
     aws: AWSOptions = null,
     baseUrl: java.lang.String = null,
     body: js.Any = null,
-    ca: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = null,
+    ca: java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | java.lang.String]) = null,
     callback: RequestCallback = null,
     cert: nodeLib.Buffer = null,
     encoding: java.lang.String = null,

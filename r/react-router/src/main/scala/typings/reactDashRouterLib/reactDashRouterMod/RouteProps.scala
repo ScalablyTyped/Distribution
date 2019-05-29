@@ -13,7 +13,7 @@ trait RouteProps extends js.Object {
     ]) | reactLib.reactMod.ReactNode
   ] = js.undefined
   var component: js.UndefOr[
-    (reactLib.reactMod.ComponentType[RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState]]) | reactLib.reactMod.ComponentType[_]
+    reactLib.reactMod.ComponentType[_ | (RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState])]
   ] = js.undefined
   var exact: js.UndefOr[scala.Boolean] = js.undefined
   var location: js.UndefOr[historyLib.historyMod.Location[historyLib.historyMod.LocationState]] = js.undefined
@@ -35,7 +35,7 @@ object RouteProps {
       /* props */ RouteChildrenProps[_, historyLib.historyMod.LocationState], 
       reactLib.reactMod.ReactNode
     ]) | reactLib.reactMod.ReactNode = null,
-    component: (reactLib.reactMod.ComponentType[RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState]]) | reactLib.reactMod.ComponentType[_] = null,
+    component: reactLib.reactMod.ComponentType[_ | (RouteComponentProps[_, StaticContext, historyLib.historyMod.LocationState])] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,
     path: java.lang.String | js.Array[java.lang.String] = null,

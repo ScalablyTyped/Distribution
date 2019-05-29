@@ -10,7 +10,9 @@ trait Anon_BodyCommentsIdImplements extends js.Object {
   var comments: js.UndefOr[js.Array[astDashTypesLib.genKindsMod.CommentKind] | scala.Null] = js.undefined
   var id: js.UndefOr[astDashTypesLib.genKindsMod.IdentifierKind | scala.Null] = js.undefined
   var implements: js.UndefOr[
-    js.Array[astDashTypesLib.genKindsMod.ClassImplementsKind] | js.Array[astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind]
+    js.Array[
+      astDashTypesLib.genKindsMod.ClassImplementsKind | astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind
+    ]
   ] = js.undefined
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
   var superClass: js.UndefOr[astDashTypesLib.genKindsMod.ExpressionKind | scala.Null] = js.undefined
@@ -28,7 +30,9 @@ object Anon_BodyCommentsIdImplements {
     body: astDashTypesLib.genKindsMod.ClassBodyKind,
     comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
     id: astDashTypesLib.genKindsMod.IdentifierKind = null,
-    implements: js.Array[astDashTypesLib.genKindsMod.ClassImplementsKind] | js.Array[astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind] = null,
+    implements: js.Array[
+      astDashTypesLib.genKindsMod.ClassImplementsKind | astDashTypesLib.genKindsMod.TSExpressionWithTypeArgumentsKind
+    ] = null,
     loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
     superClass: astDashTypesLib.genKindsMod.ExpressionKind = null,
     superTypeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind | astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null,
@@ -37,7 +41,7 @@ object Anon_BodyCommentsIdImplements {
     val __obj = js.Dynamic.literal(body = body)
     if (comments != null) __obj.updateDynamic("comments")(comments)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
+    if (implements != null) __obj.updateDynamic("implements")(implements)
     if (loc != null) __obj.updateDynamic("loc")(loc)
     if (superClass != null) __obj.updateDynamic("superClass")(superClass)
     if (superTypeParameters != null) __obj.updateDynamic("superTypeParameters")(superTypeParameters.asInstanceOf[js.Any])

@@ -28,7 +28,7 @@ trait BodyUpdateData extends js.Object {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any
   ] = js.undefined
 }
 
@@ -37,7 +37,7 @@ object BodyUpdateData {
   def apply(
     font: FontUpdateData = null,
     style: java.lang.String = null,
-    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any = null
   ): BodyUpdateData = {
     val __obj = js.Dynamic.literal()
     if (font != null) __obj.updateDynamic("font")(font)

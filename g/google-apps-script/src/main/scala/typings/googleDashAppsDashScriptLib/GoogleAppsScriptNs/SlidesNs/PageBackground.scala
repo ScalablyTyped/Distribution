@@ -14,11 +14,11 @@ trait PageBackground extends js.Object {
   def setPictureFill(blobSource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource): scala.Unit = js.native
   def setPictureFill(imageUrl: java.lang.String): scala.Unit = js.native
   def setSolidFill(color: Color): scala.Unit = js.native
-  def setSolidFill(color: Color, alpha: stdLib.Number): scala.Unit = js.native
+  def setSolidFill(color: Color, alpha: scala.Double): scala.Unit = js.native
   def setSolidFill(color: ThemeColorType): scala.Unit = js.native
-  def setSolidFill(color: ThemeColorType, alpha: stdLib.Number): scala.Unit = js.native
+  def setSolidFill(color: ThemeColorType, alpha: scala.Double): scala.Unit = js.native
   def setSolidFill(hexString: java.lang.String): scala.Unit = js.native
-  def setSolidFill(hexString: java.lang.String, alpha: stdLib.Number): scala.Unit = js.native
+  def setSolidFill(hexString: java.lang.String, alpha: scala.Double): scala.Unit = js.native
   def setSolidFill(
     red: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     green: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -28,7 +28,7 @@ trait PageBackground extends js.Object {
     red: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     green: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     blue: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    alpha: stdLib.Number
+    alpha: scala.Double
   ): scala.Unit = js.native
   def setTransparent(): scala.Unit = js.native
 }

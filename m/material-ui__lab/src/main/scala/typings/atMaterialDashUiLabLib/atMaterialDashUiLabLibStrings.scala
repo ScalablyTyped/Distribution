@@ -106,9 +106,6 @@ object atMaterialDashUiLabLibStrings {
     extends atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialClassKey
   
   @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
   sealed trait flat extends js.Object
   
   @js.native
@@ -301,9 +298,6 @@ object atMaterialDashUiLabLibStrings {
   sealed trait tree extends js.Object
   
   @js.native
-  sealed trait `true` extends js.Object
-  
-  @js.native
   sealed trait up extends js.Object
   
   @js.native
@@ -368,8 +362,6 @@ object atMaterialDashUiLabLibStrings {
   def extendedFab: extendedFab = "extendedFab".asInstanceOf[extendedFab]
   @scala.inline
   def fab: fab = "fab".asInstanceOf[fab]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
   @scala.inline
   def flat: flat = "flat".asInstanceOf[flat]
   @scala.inline
@@ -484,8 +476,6 @@ object atMaterialDashUiLabLibStrings {
   def trackBefore: trackBefore = "trackBefore".asInstanceOf[trackBefore]
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   @scala.inline

@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var events: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]: (event : std.CustomEvent<any>): void}
-    */ js.UndefOr[
+  var events: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ eventType in youtube-player.youtube-player/dist/eventNames.EventType ]: (event : std.CustomEvent<any>): void}
     */ youtubeDashPlayerLib.youtubeDashPlayerLibStrings.Options with js.Any

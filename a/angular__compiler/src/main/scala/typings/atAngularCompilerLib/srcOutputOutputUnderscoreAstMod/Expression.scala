@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Expression () extends js.Object {
   def this(`type`: Type) = this()
-  def this(`type`: Type, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
   def this(`type`: js.UndefOr[scala.Nothing], sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
+  def this(`type`: Type, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
   def this(`type`: scala.Null, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
   var sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan | scala.Null = js.native
   var `type`: Type | scala.Null = js.native

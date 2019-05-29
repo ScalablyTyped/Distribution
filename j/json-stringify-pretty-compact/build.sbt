@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-stringify-pretty-compact"
-version := "1.2.0-e34399"
+version := "1.2.0-7dc8ae"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

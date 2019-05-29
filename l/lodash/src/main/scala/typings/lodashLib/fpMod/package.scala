@@ -841,7 +841,9 @@ package object fpMod {
     js.Array[T]
   ]
   type LodashOrderBy1x6[T] = js.Function1[
-    /* iteratees */ (lodashLib.lodashMod.Many[js.Function1[/* value */ T, lodashLib.lodashMod.NotVoid]]) | lodashLib.lodashMod.Many[lodashLib.lodashMod.ValueIteratee[T]], 
+    /* iteratees */ lodashLib.lodashMod.Many[
+      (js.Function1[/* value */ T, lodashLib.lodashMod.NotVoid]) | lodashLib.lodashMod.ValueIteratee[T]
+    ], 
     js.Array[T]
   ]
   type LodashOrderBy2x5[T] = js.Function1[
@@ -853,14 +855,12 @@ package object fpMod {
     js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashOrderBy3x6[T] = js.Function1[
-    /* iteratees */ (lodashLib.lodashMod.Many[
-      js.Function1[
+    /* iteratees */ lodashLib.lodashMod.Many[
+      (js.Function1[
         /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         lodashLib.lodashMod.NotVoid
-      ]
-    ]) | (lodashLib.lodashMod.Many[
-      lodashLib.lodashMod.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
-    ]), 
+      ]) | (lodashLib.lodashMod.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any])
+    ], 
     js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ]
   type LodashOrderBy4x5[T] = js.Function1[

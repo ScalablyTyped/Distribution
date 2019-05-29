@@ -66,18 +66,6 @@ object ^ extends js.Object {
     name: java.lang.String,
     clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
   ): js.Function1[/* x */ js.Any, /* is T */ scala.Boolean] = js.native
-  def createObservableArray[T](initialValues: js.Array[_], enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T]): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
-  def createObservableArray[T](
-    initialValues: js.Array[_],
-    enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T],
-    name: java.lang.String
-  ): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
-  def createObservableArray[T](
-    initialValues: js.Array[_],
-    enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T],
-    name: java.lang.String,
-    owned: scala.Boolean
-  ): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
   def createObservableArray[T](initialValues: js.UndefOr[scala.Nothing], enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T]): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
   def createObservableArray[T](
     initialValues: js.UndefOr[scala.Nothing],
@@ -86,6 +74,18 @@ object ^ extends js.Object {
   ): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
   def createObservableArray[T](
     initialValues: js.UndefOr[scala.Nothing],
+    enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T],
+    name: java.lang.String,
+    owned: scala.Boolean
+  ): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
+  def createObservableArray[T](initialValues: js.Array[_], enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T]): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
+  def createObservableArray[T](
+    initialValues: js.Array[_],
+    enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T],
+    name: java.lang.String
+  ): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native
+  def createObservableArray[T](
+    initialValues: js.Array[_],
     enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T],
     name: java.lang.String,
     owned: scala.Boolean

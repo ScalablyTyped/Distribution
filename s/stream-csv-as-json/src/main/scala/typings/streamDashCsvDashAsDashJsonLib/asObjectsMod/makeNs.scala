@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object makeNs extends js.Object {
   val Constructor: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ streamDashCsvDashAsDashJsonLib.asObjectsMod.AsObjectOptions], 
+    js.UndefOr[/* options */ streamDashCsvDashAsDashJsonLib.asObjectsMod.AsObjectOptions], 
     streamDashCsvDashAsDashJsonLib.asObjectsMod.AsObjects
   ] = js.native
   type Constructor = streamDashCsvDashAsDashJsonLib.asObjectsMod.AsObjects

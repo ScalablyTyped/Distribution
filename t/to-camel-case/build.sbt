@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "to-camel-case"
-version := "1.0-dt-20180214Z-90f081"
+version := "1.0-dt-20180214Z-aba9f1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

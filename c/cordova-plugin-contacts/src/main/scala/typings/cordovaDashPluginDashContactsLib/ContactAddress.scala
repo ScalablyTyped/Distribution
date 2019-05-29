@@ -40,14 +40,14 @@ class ContactAddressCls protected () extends ContactAddress {
 object ContactAddress
   extends /** Constructor of ContactAddress object */
 org.scalablytyped.runtime.Instantiable8[
-      /* pref */ js.UndefOr[/* pref */ scala.Boolean], 
-      /* type */ js.UndefOr[/* type */ java.lang.String], 
-      /* formatted */ js.UndefOr[/* formatted */ java.lang.String], 
-      /* streetAddress */ js.UndefOr[/* streetAddress */ java.lang.String], 
-      /* locality */ js.UndefOr[/* locality */ java.lang.String], 
-      /* region */ js.UndefOr[/* region */ java.lang.String], 
-      /* postalCode */ js.UndefOr[/* postalCode */ java.lang.String], 
-      /* country */ js.UndefOr[/* country */ java.lang.String], 
+      js.UndefOr[/* pref */ scala.Boolean], 
+      js.UndefOr[/* type */ java.lang.String], 
+      js.UndefOr[/* formatted */ java.lang.String], 
+      js.UndefOr[/* streetAddress */ java.lang.String], 
+      js.UndefOr[/* locality */ java.lang.String], 
+      js.UndefOr[/* region */ java.lang.String], 
+      js.UndefOr[/* postalCode */ java.lang.String], 
+      js.UndefOr[/* country */ java.lang.String], 
       ContactAddress
     ]
 

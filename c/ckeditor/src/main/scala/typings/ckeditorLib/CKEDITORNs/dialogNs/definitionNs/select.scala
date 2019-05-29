@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait select extends labeledElement {
   var default: js.UndefOr[java.lang.String] = js.undefined
-  var items: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
+  var items: js.UndefOr[js.Array[js.Array[java.lang.String] | java.lang.String]] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
   var validate: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
@@ -23,7 +23,7 @@ object select {
     default: java.lang.String = null,
     id: java.lang.String = null,
     inputStyle: java.lang.String = null,
-    items: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
+    items: js.Array[js.Array[java.lang.String] | java.lang.String] = null,
     label: java.lang.String = null,
     labelLayout: java.lang.String = null,
     labelStyle: java.lang.String = null,
@@ -48,7 +48,7 @@ object select {
     if (default != null) __obj.updateDynamic("default")(default)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle)
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items)
     if (label != null) __obj.updateDynamic("label")(label)
     if (labelLayout != null) __obj.updateDynamic("labelLayout")(labelLayout)
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)

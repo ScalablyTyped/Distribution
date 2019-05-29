@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 - extjsLib.ExtNs.utilNs.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners- extjsLib.ExtNs.chartNs.INavigation because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined restoreZoom, setZoom- extjsLib.ExtNs.chartNs.IMask because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined mask */ trait IChart
   extends extjsLib.ExtNs.drawNs.IComponent
      with extjsLib.ExtNs.chartNs.themeNs.ITheme {
+  /** [Config Option] (Boolean/Object) */
+  @JSName("animate")
+  var animate_IChart: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Ext.chart.axis.Axis[]) */
   var axes: js.UndefOr[extjsLib.ExtNs.Array] = js.undefined
   /** [Config Option] (Object/Boolean) */
@@ -23,9 +26,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Binds listeners for this component to the store
   		* @param store Ext.data.AbstractStore The store to bind to
   		*/
-  var bindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
   /** [Method] Gets the current store instance
   		* @returns Ext.data.AbstractStore The store, null if one does not exist.
   		*/
@@ -48,8 +49,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onBindStore: js.UndefOr[
     js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -62,8 +63,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onUnbindStore: js.UndefOr[
     js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -83,7 +84,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Zooms the chart to the specified selection range
   		* @param zoomConfig Object
   		*/
-  var setZoom: js.UndefOr[js.Function1[/* zoomConfig */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var setZoom: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (Ext.data.Store) */
   var store: js.UndefOr[extjsLib.ExtNs.dataNs.IStore] = js.undefined
   /** [Config Option] (String) */
@@ -91,9 +92,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Unbinds listeners from this component to the store
   		* @param store Ext.data.AbstractStore The store to unbind from
   		*/
-  var unbindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
 }
 
 object IChart {

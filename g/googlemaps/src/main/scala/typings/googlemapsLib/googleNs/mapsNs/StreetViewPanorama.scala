@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/***** Street View *****/
 @JSGlobal("google.maps.StreetViewPanorama")
 @js.native
 class StreetViewPanorama protected () extends MVCObject {

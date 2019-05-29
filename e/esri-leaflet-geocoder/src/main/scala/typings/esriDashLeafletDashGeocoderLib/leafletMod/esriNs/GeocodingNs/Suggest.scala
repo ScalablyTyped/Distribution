@@ -14,10 +14,20 @@ class Suggest ()
   def category(text: java.lang.String): this.type = js.native
   def nearby(latlng: leafletLib.leafletMod.LatLngExpression, distance: scala.Double): this.type = js.native
   def run(
-    callback: js.Function3[/* error */ js.UndefOr[_], /* results */ js.Any, /* response */ js.Any, scala.Unit]
+    callback: js.Function3[
+      /* error */ js.UndefOr[js.Any], 
+      /* results */ js.Any, 
+      /* response */ js.Any, 
+      scala.Unit
+    ]
   ): this.type = js.native
   def run(
-    callback: js.Function3[/* error */ js.UndefOr[_], /* results */ js.Any, /* response */ js.Any, scala.Unit],
+    callback: js.Function3[
+      /* error */ js.UndefOr[js.Any], 
+      /* results */ js.Any, 
+      /* response */ js.Any, 
+      scala.Unit
+    ],
     context: js.Any
   ): this.type = js.native
   def text(text: java.lang.String): this.type = js.native

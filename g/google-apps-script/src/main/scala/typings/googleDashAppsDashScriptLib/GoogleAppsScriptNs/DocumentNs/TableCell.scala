@@ -32,10 +32,10 @@ trait TableCell extends js.Object {
   def getLinkUrl(): java.lang.String = js.native
   def getNextSibling(): Element = js.native
   def getNumChildren(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
-  def getPaddingBottom(): stdLib.Number = js.native
-  def getPaddingLeft(): stdLib.Number = js.native
-  def getPaddingRight(): stdLib.Number = js.native
-  def getPaddingTop(): stdLib.Number = js.native
+  def getPaddingBottom(): scala.Double = js.native
+  def getPaddingLeft(): scala.Double = js.native
+  def getPaddingRight(): scala.Double = js.native
+  def getPaddingTop(): scala.Double = js.native
   def getParent(): ContainerElement = js.native
   def getParentRow(): TableRow = js.native
   def getParentTable(): Table = js.native
@@ -45,7 +45,7 @@ trait TableCell extends js.Object {
   def getTextAlignment(): TextAlignment = js.native
   def getType(): ElementType = js.native
   def getVerticalAlignment(): VerticalAlignment = js.native
-  def getWidth(): stdLib.Number = js.native
+  def getWidth(): scala.Double = js.native
   def insertHorizontalRule(childIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): HorizontalRule = js.native
   def insertImage(
     childIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -70,13 +70,13 @@ trait TableCell extends js.Object {
   def setAttributes(attributes: js.Object): TableCell = js.native
   def setBackgroundColor(color: java.lang.String): TableCell = js.native
   def setLinkUrl(url: java.lang.String): TableCell = js.native
-  def setPaddingBottom(paddingBottom: stdLib.Number): TableCell = js.native
-  def setPaddingLeft(paddingLeft: stdLib.Number): TableCell = js.native
-  def setPaddingRight(paddingTop: stdLib.Number): TableCell = js.native
-  def setPaddingTop(paddingTop: stdLib.Number): TableCell = js.native
+  def setPaddingBottom(paddingBottom: scala.Double): TableCell = js.native
+  def setPaddingLeft(paddingLeft: scala.Double): TableCell = js.native
+  def setPaddingRight(paddingTop: scala.Double): TableCell = js.native
+  def setPaddingTop(paddingTop: scala.Double): TableCell = js.native
   def setText(text: java.lang.String): TableCell = js.native
   def setTextAlignment(textAlignment: TextAlignment): TableCell = js.native
   def setVerticalAlignment(alignment: VerticalAlignment): TableCell = js.native
-  def setWidth(width: stdLib.Number): TableCell = js.native
+  def setWidth(width: scala.Double): TableCell = js.native
 }
 

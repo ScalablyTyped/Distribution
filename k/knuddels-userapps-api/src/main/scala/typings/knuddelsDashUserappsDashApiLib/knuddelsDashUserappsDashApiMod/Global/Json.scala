@@ -9,6 +9,7 @@ trait Json
   extends /* x */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.JsonData]
     ]
+     with knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod._JsonData
      with knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod._KnuddelsEvent
 
 object Json {

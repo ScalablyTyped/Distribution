@@ -11,7 +11,7 @@ trait CreateEmailIdentityRequest extends js.Object {
     */
   var EmailIdentity: Identity
   /**
-    * An object that defines the tags (keys and values) that you want to associate with the email identity.
+    * An array of objects that define the tags (keys and values) that you want to associate with the email identity.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

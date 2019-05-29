@@ -12,7 +12,7 @@ class PaperScope () extends Base {
     /* red */ scala.Double, 
     /* green */ scala.Double, 
     /* blue */ scala.Double, 
-    /* alpha */ js.UndefOr[/* alpha */ scala.Double], 
+    js.UndefOr[/* alpha */ scala.Double], 
     Color
   ] = js.native
   var CompoundPath: org.scalablytyped.runtime.Instantiable1[/* object */ js.Any, CompoundPath] = js.native
@@ -20,24 +20,24 @@ class PaperScope () extends Base {
   var CurveLocation: org.scalablytyped.runtime.Instantiable3[
     /* curve */ Curve, 
     /* time */ scala.Double, 
-    /* point */ js.UndefOr[/* point */ Point], 
+    js.UndefOr[/* point */ Point], 
     CurveLocation
   ] = js.native
   var Gradient: org.scalablytyped.runtime.Instantiable2[
-    /* stops */ js.UndefOr[
-      /* stops */ js.Array[GradientStop] | js.Array[java.lang.String] | (js.Array[js.Array[java.lang.String | scala.Double]])
+    js.UndefOr[
+      /* stops */ js.Array[(js.Array[java.lang.String | scala.Double]) | GradientStop | java.lang.String]
     ], 
-    /* radial */ js.UndefOr[/* radial */ scala.Boolean], 
+    js.UndefOr[/* radial */ scala.Boolean], 
     Gradient
   ] = js.native
   var GradientStop: org.scalablytyped.runtime.Instantiable2[
-    /* color */ js.UndefOr[/* color */ Color | java.lang.String], 
-    /* rampPoint */ js.UndefOr[/* rampPoint */ scala.Double], 
+    js.UndefOr[Color | java.lang.String], 
+    js.UndefOr[/* rampPoint */ scala.Double], 
     GradientStop
   ] = js.native
-  var Group: org.scalablytyped.runtime.Instantiable1[/* children */ js.UndefOr[/* children */ js.Array[Item]], Group] = js.native
+  var Group: org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* children */ js.Array[Item]], Group] = js.native
   var Item: org.scalablytyped.runtime.Instantiable0[Item] = js.native
-  var Layer: org.scalablytyped.runtime.Instantiable1[/* children */ js.UndefOr[/* children */ js.Array[Item]], Layer] = js.native
+  var Layer: org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* children */ js.Array[Item]], Layer] = js.native
   /**
     * All the classes for paper can be constructed via the PaperScope instance, so
     * that they are associated with that scope
@@ -53,34 +53,30 @@ class PaperScope () extends Base {
   ] = js.native
   var PaperScope: paperLib.TypeofClassPaperScope = js.native
   var Path: paperLib.TypeofPath with (org.scalablytyped.runtime.Instantiable1[
-    /* segments */ js.UndefOr[
-      /* segments */ js.Array[Segment] | js.Array[Point] | js.Array[js.Array[scala.Double]]
-    ], 
+    js.UndefOr[/* segments */ js.Array[js.Array[scala.Double] | Point | Segment]], 
     Path
   ]) = js.native
   var PathItem: paperLib.TypeofClassPathItem = js.native
-  var PlacedSymbol: org.scalablytyped.runtime.Instantiable2[/* symbol */ Symbol, /* point */ js.UndefOr[/* point */ Point], PlacedSymbol] = js.native
+  var PlacedSymbol: org.scalablytyped.runtime.Instantiable2[/* symbol */ Symbol, js.UndefOr[/* point */ Point], PlacedSymbol] = js.native
   var Point: paperLib.TypeofClassPoint = js.native
   var PointText: org.scalablytyped.runtime.Instantiable1[/* point */ Point, PointText] = js.native
   var Project: org.scalablytyped.runtime.Instantiable1[/* element */ stdLib.HTMLCanvasElement | java.lang.String, Project] = js.native
   var Raster: org.scalablytyped.runtime.Instantiable2[
-    /* source */ js.UndefOr[
-      /* source */ stdLib.HTMLImageElement | stdLib.HTMLCanvasElement | java.lang.String
-    ], 
-    /* position */ js.UndefOr[/* position */ Point], 
+    js.UndefOr[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement | java.lang.String], 
+    js.UndefOr[/* position */ Point], 
     Raster
   ] = js.native
   var Rectangle: org.scalablytyped.runtime.Instantiable2[/* point */ Point, /* size */ Size, Rectangle] = js.native
   var Segment: org.scalablytyped.runtime.Instantiable3[
-    /* point */ js.UndefOr[/* point */ Point], 
-    /* handleIn */ js.UndefOr[/* handleIn */ Point], 
-    /* handleOut */ js.UndefOr[/* handleOut */ Point], 
+    js.UndefOr[/* point */ Point], 
+    js.UndefOr[/* handleIn */ Point], 
+    js.UndefOr[/* handleOut */ Point], 
     Segment
   ] = js.native
   var Shape: paperLib.TypeofClassShape = js.native
   var Size: paperLib.TypeofClassSize = js.native
   var Style: org.scalablytyped.runtime.Instantiable0[Style] = js.native
-  var Symbol: org.scalablytyped.runtime.Instantiable2[/* item */ Item, /* dontCenter */ js.UndefOr[/* dontCenter */ scala.Boolean], Symbol] = js.native
+  var Symbol: org.scalablytyped.runtime.Instantiable2[/* item */ Item, js.UndefOr[/* dontCenter */ scala.Boolean], Symbol] = js.native
   var TextItem: org.scalablytyped.runtime.Instantiable0[TextItem] = js.native
   var Tool: org.scalablytyped.runtime.Instantiable0[Tool] = js.native
   var View: org.scalablytyped.runtime.Instantiable0[View] = js.native

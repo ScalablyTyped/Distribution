@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Address extends js.Object {
+trait Address extends AddressOrGroup {
   var address: java.lang.String
   var name: java.lang.String
 }

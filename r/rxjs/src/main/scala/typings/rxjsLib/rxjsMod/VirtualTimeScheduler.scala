@@ -13,7 +13,7 @@ class VirtualTimeScheduler ()
       /* scheduler */ rxjsLib.internalSchedulerAsyncSchedulerMod.AsyncScheduler, 
       /* work */ js.ThisFunction1[
         /* this */ rxjsLib.internalTypesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+        /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
         scala.Unit
       ], 
       rxjsLib.internalSchedulerAsyncActionMod.AsyncAction[js.Object]
@@ -22,7 +22,7 @@ class VirtualTimeScheduler ()
       /* scheduler */ rxjsLib.internalSchedulerAsyncSchedulerMod.AsyncScheduler, 
       /* work */ js.ThisFunction1[
         /* this */ rxjsLib.internalTypesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+        /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
         scala.Unit
       ], 
       rxjsLib.internalSchedulerAsyncActionMod.AsyncAction[js.Object]

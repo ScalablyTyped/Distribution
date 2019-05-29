@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 
 package object plotlyDotJsMod {
   type ButtonClickEvent = js.Function2[/* gd */ PlotlyHTMLElement, /* ev */ stdLib.MouseEvent, scala.Unit]
-  type Color = java.lang.String | (js.Array[js.UndefOr[java.lang.String | scala.Null]]) | (js.Array[js.Array[js.UndefOr[java.lang.String | scala.Null]]])
+  type Color = java.lang.String | (js.Array[
+    js.UndefOr[
+      (js.Array[js.UndefOr[java.lang.String | scala.Null]]) | scala.Null | java.lang.String
+    ]
+  ])
   type Data = stdLib.Partial[PlotData]
   type DataTransform = stdLib.Partial[Transform]
   type Datum = java.lang.String | scala.Double | stdLib.Date | scala.Null

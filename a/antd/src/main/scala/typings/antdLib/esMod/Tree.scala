@@ -14,7 +14,7 @@ class Tree ()
 @JSImport("antd/es", "Tree")
 @js.native
 object Tree extends js.Object {
-  var DirectoryTree: antdLib.Anon_DefaultPropsGetDerivedStateFromProps = js.native
+  var DirectoryTree: antdLib.TypeofClassDirectoryTree = js.native
   var TreeNode: reactLib.reactMod.ComponentClass[antdLib.esTreeTreeMod.AntTreeNodeProps, reactLib.reactMod.ComponentState] = js.native
   var defaultProps: antdLib.Anon_BlockNode = js.native
 }

@@ -319,13 +319,11 @@ trait SeriesLine extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data
     */
   var data: js.UndefOr[
-    (js.Array[
-      scala.Unit | java.lang.String | scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesLineNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    js.Array[
+      (js.Array[
         scala.Unit | java.lang.String | scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesLineNs.DataObject
-      ]
-    ])
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesLineNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ]
   ] = js.undefined
   /**
     * If
@@ -884,13 +882,11 @@ object SeriesLine {
     connectNulls: js.UndefOr[scala.Boolean] = js.undefined,
     coordinateSystem: java.lang.String = null,
     cursor: java.lang.String = null,
-    data: (js.Array[
-      scala.Unit | java.lang.String | scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesLineNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    data: js.Array[
+      (js.Array[
         scala.Unit | java.lang.String | scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesLineNs.DataObject
-      ]
-    ]) = null,
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesLineNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ] = null,
     datasetIndex: scala.Int | scala.Double = null,
     dimensions: js.Array[_] = null,
     emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = null,
@@ -941,7 +937,7 @@ object SeriesLine {
     if (!js.isUndefined(connectNulls)) __obj.updateDynamic("connectNulls")(connectNulls)
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)

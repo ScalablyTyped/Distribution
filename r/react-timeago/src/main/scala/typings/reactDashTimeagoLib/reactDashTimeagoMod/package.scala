@@ -11,7 +11,7 @@ package object reactDashTimeagoMod {
     /* unit */ Unit, 
     /* suffix */ Suffix, 
     /* epochMiliseconds */ scala.Double, 
-    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-timeago.react-timeago.Formatter */ /* nextFormatter */ js.UndefOr[
+    /* nextFormatter */ js.UndefOr[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-timeago.react-timeago.Formatter */ js.Object
     ], 
     reactLib.reactMod.ReactNode

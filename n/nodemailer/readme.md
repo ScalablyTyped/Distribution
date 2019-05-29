@@ -1,7 +1,7 @@
 
 # Scala.js typings for nodemailer
 
-Typings are for version 6.1
+Typings are for version 6.2
 
 ## Library description:
 Easy as cake e-mail sending from your Node.js applications
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Nodemailer 6.1
+// Type definitions for Nodemailer 6.2
 // Project: https://github.com/nodemailer/nodemailer, https://nodemailer.com
 // Definitions by: Rogier Schouten <https://github.com/rogierschouten>
 //                 Piotr Roszatycki <https://github.com/dex4er>

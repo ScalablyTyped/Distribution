@@ -41,6 +41,14 @@ class Router protected () extends js.Object {
     */
   def mount(options: RouteOptions, handlers: RequestHandlerType*): java.lang.String = js.native
   /**
+    * takes an object of route params and query params, and 'renders' a URL.
+    * @param    routeName the route name
+    * @param    params    an object of route params
+    * @param    query     an object of query params
+    */
+  def render(routeName: java.lang.String, params: js.Object): java.lang.String = js.native
+  def render(routeName: java.lang.String, params: js.Object, query: js.Object): java.lang.String = js.native
+  /**
     * unmounts a route.
     * @param    name the route name
     * @returns       the name of the deleted route.

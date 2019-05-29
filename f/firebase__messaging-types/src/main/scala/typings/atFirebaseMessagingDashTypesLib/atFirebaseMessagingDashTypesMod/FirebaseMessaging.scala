@@ -50,6 +50,10 @@ class FirebaseMessaging protected () extends js.Object {
     error: atFirebaseUtilLib.distSrcSubscribeMod.ErrorFn,
     completed: atFirebaseUtilLib.distSrcSubscribeMod.CompleteFn
   ): atFirebaseUtilLib.distSrcSubscribeMod.Unsubscribe = js.native
+  /**
+    * @deprecated Use Notification.requestPermission() instead.
+    * https://developer.mozilla.org/en-US/docs/Web/API/Notification/requestPermission
+    */
   def requestPermission(): js.Promise[scala.Unit] = js.native
   def setBackgroundMessageHandler(callback: js.Function1[/* payload */ js.Any, js.Promise[_] | scala.Unit]): scala.Unit = js.native
   def usePublicVapidKey(b64PublicKey: java.lang.String): scala.Unit = js.native

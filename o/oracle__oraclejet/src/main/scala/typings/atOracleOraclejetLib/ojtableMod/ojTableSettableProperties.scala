@@ -25,11 +25,9 @@ trait ojTableSettableProperties[K, D]
   var scrollPolicy: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.loadMoreOnScroll
   var scrollPolicyOptions: atOracleOraclejetLib.Anon_FetchSizeMaxCount
   var scrollPosition: atOracleOraclejetLib.Anon_ColumnIndexColumnKey
-  var selection: (js.Array[
-    atOracleOraclejetLib.ojtableMod.ojTableNs.RowSelectionStart[K] with atOracleOraclejetLib.ojtableMod.ojTableNs.RowSelectionEnd[K]
-  ]) | (js.Array[
-    atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnSelectionStart[K] with atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnSelectionEnd[K]
-  ])
+  var selection: js.Array[
+    (atOracleOraclejetLib.ojtableMod.ojTableNs.RowSelectionStart[K] with atOracleOraclejetLib.ojtableMod.ojTableNs.RowSelectionEnd[K]) | (atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnSelectionStart[K] with atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnSelectionEnd[K])
+  ]
   var selectionMode: atOracleOraclejetLib.Anon_ColumnMultiple
   var selectionRequired: scala.Boolean
   @JSName("translations")
@@ -51,11 +49,9 @@ object ojTableSettableProperties {
     scrollPolicy: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.loadMoreOnScroll,
     scrollPolicyOptions: atOracleOraclejetLib.Anon_FetchSizeMaxCount,
     scrollPosition: atOracleOraclejetLib.Anon_ColumnIndexColumnKey,
-    selection: (js.Array[
-      atOracleOraclejetLib.ojtableMod.ojTableNs.RowSelectionStart[K] with atOracleOraclejetLib.ojtableMod.ojTableNs.RowSelectionEnd[K]
-    ]) | (js.Array[
-      atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnSelectionStart[K] with atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnSelectionEnd[K]
-    ]),
+    selection: js.Array[
+      (atOracleOraclejetLib.ojtableMod.ojTableNs.RowSelectionStart[K] with atOracleOraclejetLib.ojtableMod.ojTableNs.RowSelectionEnd[K]) | (atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnSelectionStart[K] with atOracleOraclejetLib.ojtableMod.ojTableNs.ColumnSelectionEnd[K])
+    ],
     selectionMode: atOracleOraclejetLib.Anon_ColumnMultiple,
     selectionRequired: scala.Boolean,
     translations: atOracleOraclejetLib.Anon_LabelAccSelectionAffordanceBottom,
@@ -65,7 +61,7 @@ object ojTableSettableProperties {
     data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null,
     rowRenderer: /* context */ atOracleOraclejetLib.ojtableMod.ojTableNs.RowRendererContext[K, D] => java.lang.String | stdLib.HTMLElement | scala.Unit = null
   ): ojTableSettableProperties[K, D] = {
-    val __obj = js.Dynamic.literal(accessibility = accessibility, as = as, columnsDefault = columnsDefault, display = display.asInstanceOf[js.Any], dnd = dnd, editMode = editMode.asInstanceOf[js.Any], firstSelectedRow = firstSelectedRow, horizontalGridVisible = horizontalGridVisible.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions, scrollPosition = scrollPosition, selection = selection.asInstanceOf[js.Any], selectionMode = selectionMode, selectionRequired = selectionRequired, translations = translations, verticalGridVisible = verticalGridVisible.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accessibility = accessibility, as = as, columnsDefault = columnsDefault, display = display.asInstanceOf[js.Any], dnd = dnd, editMode = editMode.asInstanceOf[js.Any], firstSelectedRow = firstSelectedRow, horizontalGridVisible = horizontalGridVisible.asInstanceOf[js.Any], scrollPolicy = scrollPolicy.asInstanceOf[js.Any], scrollPolicyOptions = scrollPolicyOptions, scrollPosition = scrollPosition, selection = selection, selectionMode = selectionMode, selectionRequired = selectionRequired, translations = translations, verticalGridVisible = verticalGridVisible.asInstanceOf[js.Any])
     if (columns != null) __obj.updateDynamic("columns")(columns)
     if (currentRow != null) __obj.updateDynamic("currentRow")(currentRow)
     if (data != null) __obj.updateDynamic("data")(data)

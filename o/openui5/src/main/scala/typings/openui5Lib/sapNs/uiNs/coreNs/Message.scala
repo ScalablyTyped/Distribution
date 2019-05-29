@@ -28,16 +28,8 @@ class Message protected () extends Element {
     * message has a higher level.
     */
   def compareByType(
-    oMessage1: org.scalablytyped.runtime.Instantiable2[
-      /* sId */ java.lang.String, 
-      /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-      Message
-    ],
-    oMessage2: org.scalablytyped.runtime.Instantiable2[
-      /* sId */ java.lang.String, 
-      /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-      Message
-    ]
+    oMessage1: org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Message],
+    oMessage2: org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Message]
   ): scala.Double = js.native
   /**
     * Compares the given message with <code>this</code> message. The types of{@link
@@ -49,11 +41,7 @@ class Message protected () extends Element {
     * message has a higher level.
     */
   def compareByType(
-    oOther: org.scalablytyped.runtime.Instantiable2[
-      /* sId */ java.lang.String, 
-      /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-      Message
-    ]
+    oOther: org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Message]
   ): scala.Double = js.native
   /**
     * Returns the icon's default URI depending on given size.There are default icons for messages
@@ -102,11 +90,7 @@ class Message protected () extends Element {
     * @param sIcon New value for property <code>icon</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setIcon(sIcon: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Message
-  ] = js.native
+  def setIcon(sIcon: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Message] = js.native
   /**
     * Sets a new value for property <code>level</code>.Setting the message's level.When called with a
     * value of <code>null</code> or <code>undefined</code>, the default value of the property will be
@@ -114,11 +98,7 @@ class Message protected () extends Element {
     * @param sLevel New value for property <code>level</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setLevel(sLevel: MessageType): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Message
-  ] = js.native
+  def setLevel(sLevel: MessageType): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Message] = js.native
   /**
     * Sets a new value for property <code>readOnly</code>.Determines whether the message should be read
     * only. This helps the application to handle a message a different way if the application
@@ -129,22 +109,14 @@ class Message protected () extends Element {
     * @param bReadOnly New value for property <code>readOnly</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setReadOnly(bReadOnly: scala.Boolean): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Message
-  ] = js.native
+  def setReadOnly(bReadOnly: scala.Boolean): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Message] = js.native
   /**
     * Sets a new value for property <code>text</code>.Message textWhen called with a value of
     * <code>null</code> or <code>undefined</code>, the default value of the property will be restored.
     * @param sText New value for property <code>text</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setText(sText: java.lang.String): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Message
-  ] = js.native
+  def setText(sText: java.lang.String): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Message] = js.native
   /**
     * Sets a new value for property <code>timestamp</code>.Message's timestamp. It is just a simple String
     * that will be used without any transformation. So the application that uses messages needs to format
@@ -153,10 +125,6 @@ class Message protected () extends Element {
     * @param sTimestamp New value for property <code>timestamp</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setTimestamp(sTimestamp: java.lang.String): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Message
-  ] = js.native
+  def setTimestamp(sTimestamp: java.lang.String): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Message] = js.native
 }
 

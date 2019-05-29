@@ -28,18 +28,14 @@ trait Anon_App extends js.Object {
   ] = js.native
   var PhoneAuthProvider: TypeofClassPhoneAuthProvider = js.native
   var PhoneAuthProvider_Instance: org.scalablytyped.runtime.Instantiable1[
-    /* auth */ js.UndefOr[
-      /* auth */ atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.FirebaseAuth | scala.Null
-    ], 
+    js.UndefOr[atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.FirebaseAuth | scala.Null], 
     atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.PhoneAuthProvider_Instance
   ] = js.native
   var RecaptchaVerifier: org.scalablytyped.runtime.Instantiable0[atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.RecaptchaVerifier] = js.native
   var RecaptchaVerifier_Instance: org.scalablytyped.runtime.Instantiable3[
     /* container */ js.Any | java.lang.String, 
-    /* parameters */ js.UndefOr[/* parameters */ js.Object | scala.Null], 
-    /* app */ js.UndefOr[
-      /* app */ atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp | scala.Null
-    ], 
+    js.UndefOr[js.Object | scala.Null], 
+    js.UndefOr[atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp | scala.Null], 
     atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.RecaptchaVerifier_Instance
   ] = js.native
   var SAMLAuthProvider: org.scalablytyped.runtime.Instantiable0[atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.SAMLAuthProvider] = js.native

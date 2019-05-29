@@ -37,7 +37,7 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_IsSlot) [id => @uifabric/foundation, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(@uifabric/foundation/lib/ISlots) / TsDeclTypeAlias(ISlot) / TsTypeIntersect() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => @uifabric/foundation, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing @uifabric/foundation [id => @uifabric/foundation, phase => scala.js] 
-[info ] ImportType.scala:230 Failed type conversion: react.react.Global.JSX.IntrinsicElements[TElement] [id => @uifabric/foundation, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@uifabric/foundation/lib/IHTMLSlots) / TsDeclTypeAlias(IHTMLElementSlot) / TsTypeRef() / TsTypeLookup())] 
+[info ] ImportType.scala:237 Failed type conversion: react.react.Global.JSX.IntrinsicElements[TElement] [id => @uifabric/foundation, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(@uifabric/foundation/lib/IHTMLSlots) / TsDeclTypeAlias(IHTMLElementSlot) / TsTypeRef() / TsTypeLookup())] 
 [debug] PhaseRunner.scala:84 Success [id => @uifabric/foundation, phase => scala.js] 
 [error] package.scala:30 illegal cyclic reference involving type ITokenFunctionOrObject,     (ITokenFunctionOrObject[TViewProps, TTokens]) | atUifabricFoundationLib.atUifabricFoundationLibNumbers.`false` | scala.Null [id => @uifabric/foundation, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [@uifabric/foundation => Compilation failed] [id => @uifabric/foundation, phase => build] 

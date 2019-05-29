@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Datetime
   extends stdLib.Object
+     with _DatetimeInput
      with _LocaleSpecifier {
   /**
     * Mutates the original moment by adding time, by default milliseconds

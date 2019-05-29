@@ -68,5 +68,5 @@ package object transitionGroupMod {
     js.Object, 
     js.Any
   ]
-  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any */, V /* <: reactLib.reactMod.ReactType[_] */] = ((IntrinsicTransitionGroupProps[T] with (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[T] */ js.Any)) | ComponentTransitionGroupProps[V]) with reactDashTransitionDashGroupLib.Anon_Child
+  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, V /* <: reactLib.reactMod.ReactType[_] */] = ((IntrinsicTransitionGroupProps[T] with (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[T] */ js.Any)) | ComponentTransitionGroupProps[V]) with reactDashTransitionDashGroupLib.Anon_Child
 }

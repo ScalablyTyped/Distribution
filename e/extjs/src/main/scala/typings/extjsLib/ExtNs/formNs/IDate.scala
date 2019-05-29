@@ -22,6 +22,9 @@ trait IDate
   var disabledDaysText: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (String) */
   var format: js.UndefOr[java.lang.String] = js.undefined
+  /** [Method] Initializes the field s value based on the initial config  */
+  @JSName("initValue")
+  var initValue_IDate: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (String) */
   var maxText: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (Date/String) */

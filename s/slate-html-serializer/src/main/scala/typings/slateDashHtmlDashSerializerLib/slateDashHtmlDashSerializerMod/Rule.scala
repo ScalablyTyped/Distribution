@@ -10,7 +10,7 @@ trait Rule extends js.Object {
     js.Function2[
       /* el */ stdLib.Element, 
       /* next */ js.Function1[
-        /* elements */ js.Array[stdLib.Element] | stdLib.NodeList | (js.Array[stdLib.Node with stdLib.ChildNode]), 
+        /* elements */ (js.Array[(stdLib.Node with stdLib.ChildNode) | stdLib.Element]) | stdLib.NodeList, 
         _
       ], 
       _
@@ -25,7 +25,7 @@ object Rule {
   @scala.inline
   def apply(
     deserialize: (/* el */ stdLib.Element, /* next */ js.Function1[
-      /* elements */ js.Array[stdLib.Element] | stdLib.NodeList | (js.Array[stdLib.Node with stdLib.ChildNode]), 
+      /* elements */ (js.Array[(stdLib.Node with stdLib.ChildNode) | stdLib.Element]) | stdLib.NodeList, 
       _
     ]) => _ = null,
     serialize: (/* obj */ js.Any, /* children */ java.lang.String) => reactLib.reactMod.ReactNode = null

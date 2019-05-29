@@ -15,7 +15,7 @@ class default[T] protected () extends List[T] {
 @JSImport("antd/lib/list", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: antdLib.Anon_ContextTypesMetaAnonGrid = js.native
+  var Item: antdLib.TypeofClassItemContextTypes = js.native
   var childContextTypes: antdLib.Anon_Grid = js.native
   var defaultProps: antdLib.Anon_BorderedDataSourceFalse = js.native
 }

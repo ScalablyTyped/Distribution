@@ -18,7 +18,7 @@ trait Reference extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var ignoreFpMatch: js.UndefOr[scala.Boolean] = js.undefined
   var kind: js.UndefOr[java.lang.String] = js.undefined
-  var length: js.UndefOr[stdLib.Number] = js.undefined
+  var length: js.UndefOr[scala.Double] = js.undefined
   var origination: js.UndefOr[Origination] = js.undefined
   var status: js.UndefOr[java.lang.String] = js.undefined
   var statusReason: js.UndefOr[java.lang.String] = js.undefined
@@ -40,7 +40,7 @@ object Reference {
     id: java.lang.String = null,
     ignoreFpMatch: js.UndefOr[scala.Boolean] = js.undefined,
     kind: java.lang.String = null,
-    length: stdLib.Number = null,
+    length: scala.Int | scala.Double = null,
     origination: Origination = null,
     status: java.lang.String = null,
     statusReason: java.lang.String = null,
@@ -59,7 +59,7 @@ object Reference {
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(ignoreFpMatch)) __obj.updateDynamic("ignoreFpMatch")(ignoreFpMatch)
     if (kind != null) __obj.updateDynamic("kind")(kind)
-    if (length != null) __obj.updateDynamic("length")(length)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (origination != null) __obj.updateDynamic("origination")(origination)
     if (status != null) __obj.updateDynamic("status")(status)
     if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason)

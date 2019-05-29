@@ -176,7 +176,7 @@ trait ColumnDefinition
   /** Validators are used to ensure that any user input into your editable cells matches your requirements.
     Validators can be applied by using the validator property in a columns definition object (see Define Columns for more details). */
   var validator: js.UndefOr[
-    StandardValidatorType | js.Array[StandardValidatorType] | Validator | js.Array[Validator]
+    StandardValidatorType | (js.Array[StandardValidatorType | Validator]) | Validator
   ] = js.undefined
   /** alter the row height to fit the contents of the cell instead of hiding overflow */
   var variableHeight: js.UndefOr[scala.Boolean] = js.undefined
@@ -281,7 +281,7 @@ object ColumnDefinition {
     topCalcFormatter: Formatter = null,
     topCalcFormatterParams: FormatterParams = null,
     topCalcParams: ColumnCalcParams = null,
-    validator: StandardValidatorType | js.Array[StandardValidatorType] | Validator | js.Array[Validator] = null,
+    validator: StandardValidatorType | (js.Array[StandardValidatorType | Validator]) | Validator = null,
     variableHeight: js.UndefOr[scala.Boolean] = js.undefined,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Double | java.lang.String = null,

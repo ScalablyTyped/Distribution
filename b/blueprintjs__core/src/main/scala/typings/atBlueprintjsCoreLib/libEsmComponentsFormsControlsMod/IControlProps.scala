@@ -44,7 +44,7 @@ import scala.scalajs.js.annotation._
     * @default "label"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
 }
 
@@ -64,7 +64,7 @@ object IControlProps {
     labelElement: reactLib.reactMod.ReactNode = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
     onChange: reactLib.reactMod.FormEventHandler[stdLib.HTMLInputElement] = null,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null
   ): IControlProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IProps)

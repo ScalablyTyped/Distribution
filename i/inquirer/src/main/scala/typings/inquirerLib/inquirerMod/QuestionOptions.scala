@@ -15,7 +15,7 @@ trait QuestionOptions[A] extends js.Object {
     * [a Separator](https://github.com/SBoudrias/Inquirer.js#separator).
     */
   var choices: js.UndefOr[
-    js.Array[ChoiceType[A]] | (js.Function1[/* answers */ A, js.Array[ChoiceType[A]]]) | (js.Function1[/* answers */ A, js.Promise[js.Array[ChoiceType[A]]]])
+    js.Array[ChoiceType[A]] | (js.Function1[/* answers */ A, js.Array[ChoiceType[A]] | js.Promise[js.Array[ChoiceType[A]]]])
   ] = js.undefined
   /**
     * Receive the user input and return the filtered value to be used inside the program.
@@ -40,7 +40,7 @@ trait QuestionOptions[A] extends js.Object {
 object QuestionOptions {
   @scala.inline
   def apply[A](
-    choices: js.Array[ChoiceType[A]] | (js.Function1[/* answers */ A, js.Array[ChoiceType[A]]]) | (js.Function1[/* answers */ A, js.Promise[js.Array[ChoiceType[A]]]]) = null,
+    choices: js.Array[ChoiceType[A]] | (js.Function1[/* answers */ A, js.Array[ChoiceType[A]] | js.Promise[js.Array[ChoiceType[A]]]]) = null,
     filter: /* input */ java.lang.String => _ = null,
     pageSize: scala.Int | scala.Double = null,
     transformer: (/* input */ java.lang.String, /* answers */ A, /* flags */ js.Any) => java.lang.String = null

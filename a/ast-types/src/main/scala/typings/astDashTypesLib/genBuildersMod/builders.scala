@@ -565,28 +565,13 @@ trait builders
     ]
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CallExpression = js.native
   def catchClause(
-    param: astDashTypesLib.genKindsMod.PatternKind,
-    guard: astDashTypesLib.genKindsMod.ExpressionKind,
-    body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
-  def catchClause(
-    param: astDashTypesLib.genKindsMod.PatternKind,
+    param: js.UndefOr[scala.Nothing],
     guard: js.UndefOr[scala.Nothing],
-    body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
-  def catchClause(
-    param: astDashTypesLib.genKindsMod.PatternKind,
-    guard: scala.Null,
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
   def catchClause(
     param: js.UndefOr[scala.Nothing],
     guard: astDashTypesLib.genKindsMod.ExpressionKind,
-    body: astDashTypesLib.genKindsMod.BlockStatementKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
-  def catchClause(
-    param: js.UndefOr[scala.Nothing],
-    guard: js.UndefOr[scala.Nothing],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
   def catchClause(
@@ -595,13 +580,28 @@ trait builders
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
   def catchClause(
-    param: scala.Null,
+    param: astDashTypesLib.genKindsMod.PatternKind,
+    guard: js.UndefOr[scala.Nothing],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
+  def catchClause(
+    param: astDashTypesLib.genKindsMod.PatternKind,
     guard: astDashTypesLib.genKindsMod.ExpressionKind,
+    body: astDashTypesLib.genKindsMod.BlockStatementKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
+  def catchClause(
+    param: astDashTypesLib.genKindsMod.PatternKind,
+    guard: scala.Null,
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
   def catchClause(
     param: scala.Null,
     guard: js.UndefOr[scala.Nothing],
+    body: astDashTypesLib.genKindsMod.BlockStatementKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
+  def catchClause(
+    param: scala.Null,
+    guard: astDashTypesLib.genKindsMod.ExpressionKind,
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
   def catchClause(param: scala.Null, guard: scala.Null, body: astDashTypesLib.genKindsMod.BlockStatementKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.CatchClause = js.native
@@ -622,15 +622,15 @@ trait builders
     body: astDashTypesLib.genKindsMod.ClassBodyKind,
     superClass: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassDeclaration = js.native
-  def classExpression(id: astDashTypesLib.genKindsMod.IdentifierKind, body: astDashTypesLib.genKindsMod.ClassBodyKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassExpression = js.native
-  def classExpression(
-    id: astDashTypesLib.genKindsMod.IdentifierKind,
-    body: astDashTypesLib.genKindsMod.ClassBodyKind,
-    superClass: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassExpression = js.native
   def classExpression(id: js.UndefOr[scala.Nothing], body: astDashTypesLib.genKindsMod.ClassBodyKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassExpression = js.native
   def classExpression(
     id: js.UndefOr[scala.Nothing],
+    body: astDashTypesLib.genKindsMod.ClassBodyKind,
+    superClass: astDashTypesLib.genKindsMod.ExpressionKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassExpression = js.native
+  def classExpression(id: astDashTypesLib.genKindsMod.IdentifierKind, body: astDashTypesLib.genKindsMod.ClassBodyKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassExpression = js.native
+  def classExpression(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     body: astDashTypesLib.genKindsMod.ClassBodyKind,
     superClass: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ClassExpression = js.native
@@ -1177,11 +1177,11 @@ trait builders
     source: astDashTypesLib.genKindsMod.LiteralKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportNamedDeclaration = js.native
   def exportNamespaceSpecifier(exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportNamespaceSpecifier = js.native
+  def exportSpecifier(local: js.UndefOr[scala.Nothing], exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier = js.native
   def exportSpecifier(
     local: astDashTypesLib.genKindsMod.IdentifierKind,
     exported: astDashTypesLib.genKindsMod.IdentifierKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier = js.native
-  def exportSpecifier(local: js.UndefOr[scala.Nothing], exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier = js.native
   def exportSpecifier(local: scala.Null, exported: astDashTypesLib.genKindsMod.IdentifierKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExportSpecifier = js.native
   def expressionStatement(expression: astDashTypesLib.genKindsMod.ExpressionKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ExpressionStatement = js.native
   def file(program: astDashTypesLib.genKindsMod.ProgramKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.File = js.native
@@ -1307,36 +1307,36 @@ trait builders
     expression: scala.Boolean
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionDeclaration = js.native
   def functionExpression(
-    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionExpression = js.native
   def functionExpression(
-    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     generator: scala.Boolean
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionExpression = js.native
   def functionExpression(
-    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     generator: scala.Boolean,
     expression: scala.Boolean
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionExpression = js.native
   def functionExpression(
-    id: js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionExpression = js.native
   def functionExpression(
-    id: js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     generator: scala.Boolean
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.FunctionExpression = js.native
   def functionExpression(
-    id: js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     body: astDashTypesLib.genKindsMod.BlockStatementKind,
     generator: scala.Boolean,
@@ -1416,21 +1416,13 @@ trait builders
     alternate: astDashTypesLib.genKindsMod.StatementKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.IfStatement = js.native
   def `import`(): astDashTypesLib.genNamedTypesMod.namedTypesNs.Import = js.native
+  def importDeclaration(specifiers: js.UndefOr[scala.Nothing], source: astDashTypesLib.genKindsMod.LiteralKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
   def importDeclaration(
     specifiers: js.Array[
       astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
     ],
     source: astDashTypesLib.genKindsMod.LiteralKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
-  def importDeclaration(specifiers: js.UndefOr[scala.Nothing], source: astDashTypesLib.genKindsMod.LiteralKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
-  @JSName("importDeclaration")
-  def importDeclaration_type(
-    specifiers: js.Array[
-      astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
-    ],
-    source: astDashTypesLib.genKindsMod.LiteralKind,
-    importKind: astDashTypesLib.astDashTypesLibStrings.`type`
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
   @JSName("importDeclaration")
   def importDeclaration_type(
     specifiers: js.UndefOr[scala.Nothing],
@@ -1438,16 +1430,24 @@ trait builders
     importKind: astDashTypesLib.astDashTypesLibStrings.`type`
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
   @JSName("importDeclaration")
-  def importDeclaration_value(
+  def importDeclaration_type(
     specifiers: js.Array[
       astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
     ],
+    source: astDashTypesLib.genKindsMod.LiteralKind,
+    importKind: astDashTypesLib.astDashTypesLibStrings.`type`
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
+  @JSName("importDeclaration")
+  def importDeclaration_value(
+    specifiers: js.UndefOr[scala.Nothing],
     source: astDashTypesLib.genKindsMod.LiteralKind,
     importKind: astDashTypesLib.astDashTypesLibStrings.value
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
   @JSName("importDeclaration")
   def importDeclaration_value(
-    specifiers: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[
+      astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
+    ],
     source: astDashTypesLib.genKindsMod.LiteralKind,
     importKind: astDashTypesLib.astDashTypesLibStrings.value
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.ImportDeclaration = js.native
@@ -2178,6 +2178,17 @@ trait builders
       astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSConstructorType = js.native
+  def tsDeclareFunction(id: js.UndefOr[scala.Nothing], params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
+  def tsDeclareFunction(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    returnType: astDashTypesLib.genKindsMod.NoopKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
+  def tsDeclareFunction(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind]
@@ -2189,17 +2200,6 @@ trait builders
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: astDashTypesLib.genKindsMod.IdentifierKind,
-    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
-    returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
-  def tsDeclareFunction(id: js.UndefOr[scala.Nothing], params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
-  def tsDeclareFunction(
-    id: js.UndefOr[scala.Nothing],
-    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
-    returnType: astDashTypesLib.genKindsMod.NoopKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
-  def tsDeclareFunction(
-    id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSDeclareFunction = js.native
@@ -2316,6 +2316,11 @@ trait builders
   def tsImportType(argument: astDashTypesLib.genKindsMod.StringLiteralKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportType = js.native
   def tsImportType(
     argument: astDashTypesLib.genKindsMod.StringLiteralKind,
+    qualifier: js.UndefOr[scala.Nothing],
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportType = js.native
+  def tsImportType(
+    argument: astDashTypesLib.genKindsMod.StringLiteralKind,
     qualifier: astDashTypesLib.genKindsMod.IdentifierKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportType = js.native
   def tsImportType(
@@ -2330,11 +2335,6 @@ trait builders
   def tsImportType(
     argument: astDashTypesLib.genKindsMod.StringLiteralKind,
     qualifier: astDashTypesLib.genKindsMod.TSQualifiedNameKind,
-    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportType = js.native
-  def tsImportType(
-    argument: astDashTypesLib.genKindsMod.StringLiteralKind,
-    qualifier: js.UndefOr[scala.Nothing],
     typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSImportType = js.native
   def tsIndexSignature(parameters: js.Array[astDashTypesLib.genKindsMod.IdentifierKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSIndexSignature = js.native
@@ -2475,15 +2475,15 @@ trait builders
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeLiteral = js.native
   def tsTypeOperator(operator: java.lang.String): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeOperator = js.native
   def tsTypeParameter(name: java.lang.String): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameter = js.native
+  def tsTypeParameter(
+    name: java.lang.String,
+    constraint: js.UndefOr[scala.Nothing],
+    defaultParam: astDashTypesLib.genKindsMod.TSTypeKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameter = js.native
   def tsTypeParameter(name: java.lang.String, constraint: astDashTypesLib.genKindsMod.TSTypeKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameter = js.native
   def tsTypeParameter(
     name: java.lang.String,
     constraint: astDashTypesLib.genKindsMod.TSTypeKind,
-    defaultParam: astDashTypesLib.genKindsMod.TSTypeKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameter = js.native
-  def tsTypeParameter(
-    name: java.lang.String,
-    constraint: js.UndefOr[scala.Nothing],
     defaultParam: astDashTypesLib.genKindsMod.TSTypeKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameter = js.native
   def tsTypeParameterDeclaration(params: js.Array[astDashTypesLib.genKindsMod.TSTypeParameterKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.TSTypeParameterDeclaration = js.native

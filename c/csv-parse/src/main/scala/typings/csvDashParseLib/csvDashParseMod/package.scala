@@ -14,7 +14,13 @@ package object csvDashParseMod {
   ]
   type CastingDateFunction = js.Function2[/* value */ java.lang.String, /* context */ CastingContext, stdLib.Date]
   type CastingFunction = js.Function2[/* value */ java.lang.String, /* context */ CastingContext, js.Any]
-  type ColumnOption = js.UndefOr[
-    java.lang.String | scala.Null | csvDashParseLib.csvDashParseLibNumbers.`false` | csvDashParseLib.Anon_Name
-  ]
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - `js.undefined`
+    - scala.Nothing
+    - scala.Null
+    - csvDashParseLib.csvDashParseLibNumbers.`false`
+    - csvDashParseLib.Anon_Name
+  */
+  type ColumnOption = js.UndefOr[_ColumnOption | java.lang.String | scala.Null]
 }

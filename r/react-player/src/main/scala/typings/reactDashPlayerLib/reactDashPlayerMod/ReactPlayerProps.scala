@@ -36,7 +36,7 @@ trait ReactPlayerProps
   var progressInterval: js.UndefOr[scala.Double] = js.undefined
   var soundcloudConfig: js.UndefOr[SoundCloudConfig] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
-  var url: js.UndefOr[java.lang.String | js.Array[java.lang.String] | js.Array[SourceProps]] = js.undefined
+  var url: js.UndefOr[java.lang.String | (js.Array[SourceProps | java.lang.String])] = js.undefined
   var vimeoConfig: js.UndefOr[VimeoConfig] = js.undefined
   var volume: js.UndefOr[scala.Double] = js.undefined
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -78,7 +78,7 @@ object ReactPlayerProps {
     progressInterval: scala.Int | scala.Double = null,
     soundcloudConfig: SoundCloudConfig = null,
     style: js.Object = null,
-    url: java.lang.String | js.Array[java.lang.String] | js.Array[SourceProps] = null,
+    url: java.lang.String | (js.Array[SourceProps | java.lang.String]) = null,
     vimeoConfig: VimeoConfig = null,
     volume: scala.Int | scala.Double = null,
     width: java.lang.String | scala.Double = null,

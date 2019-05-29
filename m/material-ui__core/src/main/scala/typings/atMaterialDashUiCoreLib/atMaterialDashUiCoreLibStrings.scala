@@ -825,9 +825,6 @@ object atMaterialDashUiCoreLibStrings {
     extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
   sealed trait filled
     extends atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextClassKey
        with atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelClassKey
@@ -2127,9 +2124,6 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait tree extends js.Object
   
   @js.native
-  sealed trait `true` extends js.Object
-  
-  @js.native
   sealed trait underline
     extends atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputClassKey
        with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
@@ -2570,8 +2564,6 @@ object atMaterialDashUiCoreLibStrings {
   def extendedFab: extendedFab = "extendedFab".asInstanceOf[extendedFab]
   @scala.inline
   def fab: fab = "fab".asInstanceOf[fab]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
   @scala.inline
   def filled: filled = "filled".asInstanceOf[filled]
   @scala.inline
@@ -3148,8 +3140,6 @@ object atMaterialDashUiCoreLibStrings {
   def transition: transition = "transition".asInstanceOf[transition]
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   @scala.inline

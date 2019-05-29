@@ -33,11 +33,11 @@ trait Converter extends js.Object {
   def asPosition(): js.UndefOr[scala.Nothing] = js.native
   def asPosition(value: vscodeLib.vscodeMod.Position): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position = js.native
   @JSName("asPosition")
-  def asPosition_Null(): scala.Null = js.native
-  @JSName("asPosition")
-  def asPosition_UndefOr(value: vscodeLib.vscodeMod.Position): js.UndefOr[
+  def `asPosition_<union>`(value: vscodeLib.vscodeMod.Position): js.UndefOr[
     vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position | scala.Null
   ] = js.native
+  @JSName("asPosition")
+  def asPosition_Null(): scala.Null = js.native
   def asRange(): js.UndefOr[scala.Nothing] = js.native
   def asRange(value: vscodeLib.vscodeMod.Range): js.UndefOr[
     vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range | scala.Null

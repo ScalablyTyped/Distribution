@@ -42,7 +42,7 @@ trait Props[HolderProps /* <: js.Object */]
     * Defaults to 'div'.
     */
   var holderCmp: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 117 */ js.Any
   ] = js.undefined
   /**
     * These props will be used to create `holderElement`.
@@ -115,7 +115,7 @@ trait Props[HolderProps /* <: js.Object */]
     * Defaults to 'div'.
     */
   var wrapperCmp: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 117 */ js.Any
   ] = js.undefined
 }
 
@@ -127,7 +127,7 @@ object Props {
     boundaryElement: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     hideOnBoundaryHit: js.UndefOr[scala.Boolean] = js.undefined,
-    holderCmp: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any = null,
+    holderCmp: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 117 */ js.Any = null,
     holderProps: HolderProps = null,
     mode: reactDashStickyDashElLib.reactDashStickyDashElLibStrings.top | reactDashStickyDashElLib.reactDashStickyDashElLibStrings.bottom = null,
     onFixedToggle: /* fixed */ scala.Boolean => scala.Unit = null,
@@ -136,7 +136,7 @@ object Props {
     stickyClassName: java.lang.String = null,
     stickyStyle: reactLib.reactMod.CSSProperties = null,
     topOffset: scala.Int | scala.Double = null,
-    wrapperCmp: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any = null
+    wrapperCmp: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 117 */ js.Any = null
   ): Props[HolderProps] = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

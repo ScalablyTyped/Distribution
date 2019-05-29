@@ -102,7 +102,7 @@ trait TableData extends js.Object {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any
   ] = js.undefined
   /**
     *
@@ -172,7 +172,7 @@ object TableData {
     style: java.lang.String = null,
     styleBandedColumns: js.UndefOr[scala.Boolean] = js.undefined,
     styleBandedRows: js.UndefOr[scala.Boolean] = js.undefined,
-    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any = null,
     styleFirstColumn: js.UndefOr[scala.Boolean] = js.undefined,
     styleLastColumn: js.UndefOr[scala.Boolean] = js.undefined,
     styleTotalRow: js.UndefOr[scala.Boolean] = js.undefined,

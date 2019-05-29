@@ -1403,6 +1403,15 @@ trait StyledFn extends js.Object {
     ]
   ] = js.native
   def apply(
+    component: styletronDashReactLib.styletronDashReactLibStrings.template,
+    style: styletronDashStandardLib.styletronDashStandardMod.StyleObject
+  ): StyletronComponent[
+    stdLib.Pick[
+      reactLib.reactMod.ComponentProps[styletronDashReactLib.styletronDashReactLibStrings.template], 
+      stdLib.Exclude[java.lang.String, styletronDashReactLib.Anon_ClassName]
+    ]
+  ] = js.native
+  def apply(
     component: styletronDashReactLib.styletronDashReactLibStrings.textPath,
     style: styletronDashStandardLib.styletronDashStandardMod.StyleObject
   ): StyletronComponent[
@@ -2962,6 +2971,15 @@ trait StyledFn extends js.Object {
   ): StyletronComponent[
     (stdLib.Pick[
       reactLib.reactMod.ComponentProps[styletronDashReactLib.styletronDashReactLibStrings.td], 
+      stdLib.Exclude[java.lang.String, styletronDashReactLib.Anon_ClassName]
+    ]) with P
+  ] = js.native
+  def apply[P /* <: js.Object */](
+    component: styletronDashReactLib.styletronDashReactLibStrings.template,
+    style: js.Function1[/* props */ P, styletronDashStandardLib.styletronDashStandardMod.StyleObject]
+  ): StyletronComponent[
+    (stdLib.Pick[
+      reactLib.reactMod.ComponentProps[styletronDashReactLib.styletronDashReactLibStrings.template], 
       stdLib.Exclude[java.lang.String, styletronDashReactLib.Anon_ClassName]
     ]) with P
   ] = js.native

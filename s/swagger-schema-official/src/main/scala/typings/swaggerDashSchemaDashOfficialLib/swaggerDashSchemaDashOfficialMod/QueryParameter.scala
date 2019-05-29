@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
   var multipleOf: js.UndefOr[scala.Double] = js.undefined
   var pattern: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: java.lang.String | js.UndefOr[java.lang.String]
+  var `type`: js.UndefOr[java.lang.String]
   var uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
 }
 

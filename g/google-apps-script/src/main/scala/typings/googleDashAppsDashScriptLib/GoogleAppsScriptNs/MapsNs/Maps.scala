@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait Maps extends js.Object {
   var DirectionFinder: DirectionFinderEnums
   var StaticMap: StaticMapEnums
-  def decodePolyline(polyline: java.lang.String): js.Array[stdLib.Number]
-  def encodePolyline(points: js.Array[stdLib.Number]): java.lang.String
+  def decodePolyline(polyline: java.lang.String): js.Array[scala.Double]
+  def encodePolyline(points: js.Array[scala.Double]): java.lang.String
   def newDirectionFinder(): DirectionFinder
   def newElevationSampler(): ElevationSampler
   def newGeocoder(): Geocoder
@@ -22,8 +22,8 @@ object Maps {
   def apply(
     DirectionFinder: DirectionFinderEnums,
     StaticMap: StaticMapEnums,
-    decodePolyline: java.lang.String => js.Array[stdLib.Number],
-    encodePolyline: js.Array[stdLib.Number] => java.lang.String,
+    decodePolyline: java.lang.String => js.Array[scala.Double],
+    encodePolyline: js.Array[scala.Double] => java.lang.String,
     newDirectionFinder: () => DirectionFinder,
     newElevationSampler: () => ElevationSampler,
     newGeocoder: () => Geocoder,

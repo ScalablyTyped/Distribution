@@ -16,7 +16,9 @@ package object StatsNs {
     - webpackLib.webpackLibStrings.verbose
   */
   type Preset = _Preset | scala.Boolean
-  type StatsExcludeFilter = java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp] | (js.Function1[/* assetName */ java.lang.String, scala.Boolean]) | (js.Array[js.Function1[/* assetName */ java.lang.String, scala.Boolean]])
+  type StatsExcludeFilter = java.lang.String | (js.Array[
+    (js.Function1[/* assetName */ java.lang.String, scala.Boolean]) | stdLib.RegExp | java.lang.String
+  ]) | stdLib.RegExp | (js.Function1[/* assetName */ java.lang.String, scala.Boolean])
   /* Rewritten from type alias, can be one of: 
     - Preset
     - ToJsonOptionsObject

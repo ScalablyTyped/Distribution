@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "text-clipper"
-version := "1.2-dt-20190128Z-91b11e"
+version := "1.2-dt-20190128Z-d24ad0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def stateValuesEqual(): scala.Boolean = js.native
-  def stateValuesEqual(
-    a: xstateLib.libTypesMod.StateValue | js.UndefOr[scala.Nothing],
-    b: xstateLib.libTypesMod.StateValue
-  ): scala.Boolean = js.native
+  def stateValuesEqual(a: js.UndefOr[xstateLib.libTypesMod.StateValue], b: xstateLib.libTypesMod.StateValue): scala.Boolean = js.native
   def stateValuesEqual(a: xstateLib.libTypesMod.StateValue): scala.Boolean = js.native
 }
 

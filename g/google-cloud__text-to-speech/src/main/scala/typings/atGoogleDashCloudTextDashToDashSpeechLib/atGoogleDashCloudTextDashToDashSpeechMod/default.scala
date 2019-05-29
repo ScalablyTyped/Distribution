@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object default extends js.Object {
   var TextToSpeechClient: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[
+    js.UndefOr[
       /* options */ atGoogleDashCloudTextDashToDashSpeechLib.atGoogleDashCloudTextDashToDashSpeechMod.ClientOptions
     ], 
     atGoogleDashCloudTextDashToDashSpeechLib.atGoogleDashCloudTextDashToDashSpeechMod.TextToSpeechClient

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SplitLayoutPanel extends js.Object {
   def add(widget: Widget): SplitLayoutPanel = js.native
-  def addEast(widget: Widget, width: stdLib.Number): SplitLayoutPanel = js.native
-  def addNorth(widget: Widget, height: stdLib.Number): SplitLayoutPanel = js.native
-  def addSouth(widget: Widget, height: stdLib.Number): SplitLayoutPanel = js.native
+  def addEast(widget: Widget, width: scala.Double): SplitLayoutPanel = js.native
+  def addNorth(widget: Widget, height: scala.Double): SplitLayoutPanel = js.native
+  def addSouth(widget: Widget, height: scala.Double): SplitLayoutPanel = js.native
   def addStyleDependentName(styleName: java.lang.String): SplitLayoutPanel = js.native
   def addStyleName(styleName: java.lang.String): SplitLayoutPanel = js.native
-  def addWest(widget: Widget, width: stdLib.Number): SplitLayoutPanel = js.native
+  def addWest(widget: Widget, width: scala.Double): SplitLayoutPanel = js.native
   def clear(): SplitLayoutPanel = js.native
   def getId(): java.lang.String = js.native
   def getTag(): java.lang.String = js.native

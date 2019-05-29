@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "storybook__theming"
-version := "5.0.11-c0c2aa"
+version := "5.0.11-4f8b72"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.4-b274af",
-  "org.scalablytyped" %%% "emotion-theming" % "10.0.10-8e82b3",
-  "org.scalablytyped" %%% "emotion__core" % "10.0.10-b0f9f9",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-e2d852",
-  "org.scalablytyped" %%% "emotion__styled" % "10.0.11-106b08",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-2873ea",
-  "org.scalablytyped" %%% "emotion__utils" % "0.11.1-0e800f",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-ff94fb",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190520Z-336e99",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "csstype" % "2.6.4-a0e5c1",
+  "org.scalablytyped" %%% "emotion-theming" % "10.0.10-176daf",
+  "org.scalablytyped" %%% "emotion__core" % "10.0.10-f98101",
+  "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-75a634",
+  "org.scalablytyped" %%% "emotion__styled" % "10.0.11-7a6534",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-7f8f36",
+  "org.scalablytyped" %%% "emotion__utils" % "0.11.1-2712ac",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-b94c72",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1cea03",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

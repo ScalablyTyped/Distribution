@@ -17,7 +17,7 @@ class TextStyle protected () extends TextStyleOptions {
   var _dropShadowBlur: scala.Double = js.native
   var _dropShadowColor: java.lang.String | scala.Double = js.native
   var _dropShadowDistance: scala.Double = js.native
-  var _fill: java.lang.String | js.Array[java.lang.String] | scala.Double | js.Array[scala.Double] | stdLib.CanvasGradient | stdLib.CanvasPattern = js.native
+  var _fill: java.lang.String | (js.Array[scala.Double | java.lang.String]) | scala.Double | stdLib.CanvasGradient | stdLib.CanvasPattern = js.native
   var _fillGradientStops: js.Array[scala.Double] = js.native
   var _fillGradientType: scala.Double = js.native
   var _fontFamily: java.lang.String | js.Array[java.lang.String] = js.native
@@ -59,7 +59,7 @@ class TextStyle protected () extends TextStyleOptions {
   @JSName("fillGradientType")
   var fillGradientType_TextStyle: scala.Double = js.native
   @JSName("fill")
-  var fill_TextStyle: java.lang.String | js.Array[java.lang.String] | scala.Double | js.Array[scala.Double] | stdLib.CanvasGradient | stdLib.CanvasPattern = js.native
+  var fill_TextStyle: java.lang.String | (js.Array[scala.Double | java.lang.String]) | scala.Double | stdLib.CanvasGradient | stdLib.CanvasPattern = js.native
   @JSName("fontFamily")
   var fontFamily_TextStyle: java.lang.String | js.Array[java.lang.String] = js.native
   @JSName("fontSize")

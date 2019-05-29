@@ -10,7 +10,9 @@ trait StreamConstructor
   extends org.scalablytyped.runtime.Instantiable2[
       (/* patterns */ js.Array[java.lang.String]) | (/* patterns */ java.lang.String), 
       (/* options */ StreamOptions with adoneLib.Anon_PatternIndex) | (/* options */ StreamOptions with adoneLib.Anon_Stat) | (/* options */ StreamOptions with adoneLib.Anon_PatternIndexTrue) | (/* options */ StreamOptions), 
-      Stream[adoneLib.Anon_PathPatternIndex] | Stream[adoneLib.Anon_PathStat] | Stream[adoneLib.Anon_PathPatternIndexNumber] | Stream[java.lang.String]
+      Stream[
+        adoneLib.Anon_PathPatternIndex | adoneLib.Anon_PathPatternIndexNumber | adoneLib.Anon_PathStat | java.lang.String
+      ]
     ]
      with org.scalablytyped.runtime.Instantiable1[
       (/* patterns */ js.Array[java.lang.String]) | (/* patterns */ java.lang.String), 

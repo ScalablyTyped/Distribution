@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redent"
-version := "2.0-dt-20181216Z-696c53"
+version := "2.0-dt-20181216Z-24c12c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

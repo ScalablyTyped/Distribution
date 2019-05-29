@@ -104,9 +104,9 @@ trait TypeofReact extends js.Object {
     props: reactLib.reactMod.ClassAttributes[T] with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
   ): reactLib.reactMod.DOMElement[P, T] = js.native
-  def createElement[P /* <: reactLib.reactMod.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any): reactLib.reactMod.DetailedReactHTMLElement[P, T] = js.native
+  def createElement[P /* <: reactLib.reactMod.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): reactLib.reactMod.DetailedReactHTMLElement[P, T] = js.native
   def createElement[P /* <: reactLib.reactMod.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any,
     props: reactLib.reactMod.ClassAttributes[T] with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
   ): reactLib.reactMod.DetailedReactHTMLElement[P, T] = js.native
@@ -172,7 +172,7 @@ trait TypeofReact extends js.Object {
   // ----------------------------------------------------------------------
   // DOM Elements
   @JSName("createFactory")
-  def createFactory_THTMLElementHTMLFactory[T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any): reactLib.reactMod.HTMLFactory[T] = js.native
+  def createFactory_THTMLElementHTMLFactory[T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): reactLib.reactMod.HTMLFactory[T] = js.native
   def createRef[T](): reactLib.reactMod.RefObject[T] = js.native
   def forwardRef[T, P](Component: reactLib.reactMod.RefForwardingComponent[T, P]): reactLib.reactMod.ForwardRefExoticComponent[reactLib.reactMod.PropsWithoutRef[P] with reactLib.reactMod.RefAttributes[T]] = js.native
   def isValidElement[P](): /* is react.react.ReactElement<P> */ scala.Boolean = js.native
@@ -250,9 +250,9 @@ trait TypeofReact extends js.Object {
     * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#useimperativehandle
     */
-  def useImperativeHandle[T, R /* <: T */](ref: reactLib.reactMod.Ref[T] | js.UndefOr[scala.Nothing], init: js.Function0[R]): scala.Unit = js.native
+  def useImperativeHandle[T, R /* <: T */](ref: js.UndefOr[reactLib.reactMod.Ref[T]], init: js.Function0[R]): scala.Unit = js.native
   def useImperativeHandle[T, R /* <: T */](
-    ref: reactLib.reactMod.Ref[T] | js.UndefOr[scala.Nothing],
+    ref: js.UndefOr[reactLib.reactMod.Ref[T]],
     init: js.Function0[R],
     deps: reactLib.reactMod.DependencyList
   ): scala.Unit = js.native

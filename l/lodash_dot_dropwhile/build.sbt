@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_dropwhile"
-version := "4.6-dt-20190214Z-ff57c1"
+version := "4.6-dt-20190214Z-16c66c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

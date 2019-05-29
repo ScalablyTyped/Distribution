@@ -685,7 +685,7 @@ object KernelNs extends js.Object {
     /**
       * The server settings for the manager.
       */
-    var serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.UndefOr[
+    var serverSettings: js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
       ] = js.native
     /**
@@ -802,7 +802,7 @@ object KernelNs extends js.Object {
     /**
       * The server settings for the kernel.
       */
-    var serverSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.UndefOr[
+    var serverSettings: js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ServerConnection.ISettings */ js.Any
       ] = js.undefined
     /**

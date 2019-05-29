@@ -65,7 +65,7 @@ trait Request extends js.Object {
   /**
     * Returns the currently-assigned listener for the specified type, if any.
     */
-  def on(`type`: java.lang.String): js.UndefOr[js.ThisFunction1[/* this */ this.type, /* data */ _, scala.Unit]] = js.native
+  def on(`type`: java.lang.String): js.UndefOr[js.ThisFunction1[/* this */ this.type, /* data */ js.Any, scala.Unit]] = js.native
   /**
     * Sets the event listener for the specified type,
     * and returns this request instance.
@@ -108,7 +108,7 @@ trait Request extends js.Object {
     * Returns the currently-assigned listener for the "error" type, if any.
     */
   @JSName("on")
-  def on_error(`type`: d3DashRequestLib.d3DashRequestLibStrings.error): js.UndefOr[js.ThisFunction1[/* this */ this.type, /* error */ _, scala.Unit]] = js.native
+  def on_error(`type`: d3DashRequestLib.d3DashRequestLibStrings.error): js.UndefOr[js.ThisFunction1[/* this */ this.type, /* error */ js.Any, scala.Unit]] = js.native
   /**
     * Sets the event listener for the "error" type,
     * when the request completes unsuccessfully; this includes 4xx and 5xx response codes,

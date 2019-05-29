@@ -49,9 +49,33 @@ trait Promise[T] extends js.Object {
   def spread[A1, A2, A3, A4, A5, T](onFulfilled: whenLib.WhenNs.underscoreNs.Fn5[A1, A2, A3, A4, A5, Promise[T] | T]): Promise[T] = js.native
   def tap(onFulfilledSideEffect: js.Function1[/* value */ T, scala.Unit]): Promise[T] = js.native
   def `then`(): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
+  ): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]
+  ): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]],
+    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
+  ): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: scala.Null,
+    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
+  ): Promise[T] = js.native
   def `then`(onFulfilled: js.Function1[/* value */ T, T | Thenable[T]]): Promise[T] = js.native
   def `then`(
     onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
+    onRejected: js.UndefOr[scala.Nothing],
+    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
+  ): Promise[T] = js.native
+  def `then`(
+    onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
     onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]
   ): Promise[T] = js.native
   def `then`(
@@ -61,31 +85,12 @@ trait Promise[T] extends js.Object {
   ): Promise[T] = js.native
   def `then`(
     onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
-    onRejected: js.UndefOr[scala.Nothing],
-    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
-  ): Promise[T] = js.native
-  def `then`(
-    onFulfilled: js.Function1[/* value */ T, T | Thenable[T]],
     onRejected: scala.Null,
     onProgress: js.Function1[/* update */ js.Any, scala.Unit]
   ): Promise[T] = js.native
   def `then`(
-    onFulfilled: js.UndefOr[scala.Nothing],
-    onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]
-  ): Promise[T] = js.native
-  def `then`(
-    onFulfilled: js.UndefOr[scala.Nothing],
-    onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]],
-    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
-  ): Promise[T] = js.native
-  def `then`(
-    onFulfilled: js.UndefOr[scala.Nothing],
+    onFulfilled: scala.Null,
     onRejected: js.UndefOr[scala.Nothing],
-    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
-  ): Promise[T] = js.native
-  def `then`(
-    onFulfilled: js.UndefOr[scala.Nothing],
-    onRejected: scala.Null,
     onProgress: js.Function1[/* update */ js.Any, scala.Unit]
   ): Promise[T] = js.native
   def `then`(onFulfilled: scala.Null, onRejected: js.Function1[/* reason */ js.Any, T | Thenable[T]]): Promise[T] = js.native
@@ -96,31 +101,37 @@ trait Promise[T] extends js.Object {
   ): Promise[T] = js.native
   def `then`(
     onFulfilled: scala.Null,
-    onRejected: js.UndefOr[scala.Nothing],
-    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
-  ): Promise[T] = js.native
-  def `then`(
-    onFulfilled: scala.Null,
     onRejected: scala.Null,
     onProgress: js.Function1[/* update */ js.Any, scala.Unit]
   ): Promise[T] = js.native
+  @JSName("then")
+  def then_TResult[TResult](
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]
+  ): Promise[T | TResult] = js.native
+  @JSName("then")
+  def then_TResult[TResult](
+    onFulfilled: js.UndefOr[scala.Nothing],
+    onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
+    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
+  ): Promise[T | TResult] = js.native
   @JSName("then")
   def then_TResult[TResult](onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]]): Promise[TResult] = js.native
   @JSName("then")
   def then_TResult[TResult](
-    onFulfilled: js.Function1[/* value */ T, T | TResult | Thenable[TResult] | Thenable[T]],
-    onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]
-  ): Promise[TResult] = js.native
-  @JSName("then")
-  def then_TResult[TResult](
-    onFulfilled: js.Function1[/* value */ T, T | TResult | Thenable[TResult] | Thenable[T]],
-    onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
+    onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
+    onRejected: js.UndefOr[scala.Nothing],
     onProgress: js.Function1[/* update */ js.Any, scala.Unit]
   ): Promise[TResult] = js.native
   @JSName("then")
   def then_TResult[TResult](
-    onFulfilled: js.Function1[/* value */ T, TResult | Thenable[TResult]],
-    onRejected: js.UndefOr[scala.Nothing],
+    onFulfilled: js.Function1[/* value */ T, T | TResult | (Thenable[T | TResult])],
+    onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]
+  ): Promise[TResult] = js.native
+  @JSName("then")
+  def then_TResult[TResult](
+    onFulfilled: js.Function1[/* value */ T, T | TResult | (Thenable[T | TResult])],
+    onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
     onProgress: js.Function1[/* update */ js.Any, scala.Unit]
   ): Promise[TResult] = js.native
   @JSName("then")
@@ -129,17 +140,6 @@ trait Promise[T] extends js.Object {
     onRejected: scala.Null,
     onProgress: js.Function1[/* update */ js.Any, scala.Unit]
   ): Promise[TResult] = js.native
-  @JSName("then")
-  def then_TResult[TResult](
-    onFulfilled: js.UndefOr[scala.Nothing],
-    onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]]
-  ): Promise[T | TResult] = js.native
-  @JSName("then")
-  def then_TResult[TResult](
-    onFulfilled: js.UndefOr[scala.Nothing],
-    onRejected: js.Function1[/* reason */ js.Any, TResult | Thenable[TResult]],
-    onProgress: js.Function1[/* update */ js.Any, scala.Unit]
-  ): Promise[T | TResult] = js.native
   @JSName("then")
   def then_TResult[TResult](
     onFulfilled: scala.Null,

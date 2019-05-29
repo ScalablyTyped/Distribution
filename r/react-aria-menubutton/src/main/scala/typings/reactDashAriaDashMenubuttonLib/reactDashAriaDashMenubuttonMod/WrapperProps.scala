@@ -37,7 +37,7 @@ trait WrapperProps[T /* <: stdLib.HTMLElement */]
       _
     ]
   ] = js.undefined
-  var tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.UndefOr[
+  var tag: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any
   ] = js.undefined
 }

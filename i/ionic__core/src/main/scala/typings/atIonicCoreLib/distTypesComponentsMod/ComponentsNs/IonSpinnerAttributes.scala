@@ -11,7 +11,7 @@ trait IonSpinnerAttributes
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
   @JSName("color")
-  var color_IonSpinnerAttributes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.UndefOr[
+  var color_IonSpinnerAttributes: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
   ] = js.undefined
   /**
@@ -21,7 +21,7 @@ trait IonSpinnerAttributes
   /**
     * The name of the SVG spinner to use. If a name is not provided, the platform's default spinner will be used.
     */
-  var name: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.UndefOr[
+  var name: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SpinnerTypes */ js.Any
   ] = js.undefined
   /**

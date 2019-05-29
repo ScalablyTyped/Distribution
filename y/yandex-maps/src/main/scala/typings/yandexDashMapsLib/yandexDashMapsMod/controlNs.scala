@@ -43,7 +43,7 @@ object controlNs extends js.Object {
     var layout: js.UndefOr[
         yandexDashMapsLib.yandexDashMapsMod.IClassConstructor[yandexDashMapsLib.yandexDashMapsMod.ISelectableControlLayout] | java.lang.String
       ] = js.undefined
-    var maxWidth: js.UndefOr[js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double] = js.undefined
+    var maxWidth: js.UndefOr[(js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double] = js.undefined
     var position: js.UndefOr[yandexDashMapsLib.Anon_Bottom] = js.undefined
     var visible: js.UndefOr[scala.Boolean] = js.undefined
   }

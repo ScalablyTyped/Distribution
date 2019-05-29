@@ -68,7 +68,7 @@ trait DragDropMonitor extends js.Object {
   def isDraggingSource(): scala.Boolean = js.native
   def isDraggingSource(sourceId: Identifier): scala.Boolean = js.native
   def isOverTarget(): scala.Boolean = js.native
-  def isOverTarget(targetId: Identifier | js.UndefOr[scala.Nothing], options: dndDashCoreLib.Anon_Shallow): scala.Boolean = js.native
+  def isOverTarget(targetId: js.UndefOr[Identifier], options: dndDashCoreLib.Anon_Shallow): scala.Boolean = js.native
   def isOverTarget(targetId: Identifier): scala.Boolean = js.native
   def isSourcePublic(): scala.Boolean | scala.Null = js.native
   def subscribeToOffsetChange(listener: Listener): Unsubscribe = js.native

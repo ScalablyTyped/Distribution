@@ -15,13 +15,10 @@ package object graphqlDashRelayMod {
     /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
     js.Promise[js.Any] | js.Any
   ]
-  type typeResolverFn = (js.Function1[
+  type typeResolverFn = js.Function1[
     /* any */ js.Any, 
-    graphqlLib.graphqlMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
-  ]) | (js.Function1[
-    /* any */ js.Any, 
-    js.Promise[
+    (graphqlLib.graphqlMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | (js.Promise[
       graphqlLib.graphqlMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
-    ]
-  ])
+    ])
+  ]
 }

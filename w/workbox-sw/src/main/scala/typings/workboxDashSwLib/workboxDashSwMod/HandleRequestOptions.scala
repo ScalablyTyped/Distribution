@@ -12,7 +12,7 @@ trait HandleRequestOptions extends js.Object {
   /**
   	 * The event that triggered the request, if applicable.
   	 */
-  var event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.UndefOr[
+  var event: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
   ] = js.undefined
   /**

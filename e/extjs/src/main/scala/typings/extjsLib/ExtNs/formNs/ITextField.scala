@@ -72,6 +72,9 @@ trait ITextField
   var regexText: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (String) */
   var requiredCls: js.UndefOr[java.lang.String] = js.undefined
+  /** [Method] Resets the current field value to the originally loaded value and clears any validation messages  */
+  @JSName("reset")
+  var reset_ITextField: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var selectOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Selects text in this field
@@ -81,6 +84,12 @@ trait ITextField
   var selectText: js.UndefOr[
     js.Function2[/* start */ js.UndefOr[scala.Double], /* end */ js.UndefOr[scala.Double], scala.Unit]
   ] = js.undefined
+  /** [Method] Sets a data value into the field and runs the change detection and validation
+  		* @param value Object The value to set
+  		* @returns any this
+  		*/
+  @JSName("setValue")
+  var setValue_ITextField: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (Number) */
   var size: js.UndefOr[scala.Double] = js.undefined
   /** [Config Option] (RegExp) */

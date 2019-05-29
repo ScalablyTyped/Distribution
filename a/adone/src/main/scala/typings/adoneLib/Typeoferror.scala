@@ -16,8 +16,8 @@ trait Typeoferror extends js.Object {
   var Empty: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.errorNs.Empty]
   var Encoding: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.errorNs.Encoding]
   var Exception: org.scalablytyped.runtime.Instantiable2[
-    /* message */ js.UndefOr[/* message */ java.lang.String | stdLib.Error], 
-    /* captureStackTrace */ js.UndefOr[/* captureStackTrace */ scala.Boolean], 
+    js.UndefOr[java.lang.String | stdLib.Error], 
+    js.UndefOr[/* captureStackTrace */ scala.Boolean], 
     adoneLib.adoneNs.errorNs.Exception
   ]
   var Exists: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.errorNs.Exists]
@@ -56,8 +56,8 @@ object Typeoferror {
     Empty: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.errorNs.Empty],
     Encoding: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.errorNs.Encoding],
     Exception: org.scalablytyped.runtime.Instantiable2[
-      /* message */ js.UndefOr[/* message */ java.lang.String | stdLib.Error], 
-      /* captureStackTrace */ js.UndefOr[/* captureStackTrace */ scala.Boolean], 
+      js.UndefOr[java.lang.String | stdLib.Error], 
+      js.UndefOr[/* captureStackTrace */ scala.Boolean], 
       adoneLib.adoneNs.errorNs.Exception
     ],
     Exists: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.errorNs.Exists],

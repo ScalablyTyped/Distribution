@@ -11,11 +11,11 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * A value that indicates whether minor engine upgrades are applied automatically to the DB instance during the maintenance window. By default, minor engine upgrades are not applied automatically. 
+    * True to indicate that minor engine upgrades are applied automatically to the DB instance during the maintenance window, and otherwise false.  Default: true 
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The Availability Zone that the DB instance is created in. For information about AWS Regions and Availability Zones, see Regions and Availability Zones in the Amazon RDS User Guide.  Default: A random, system-chosen Availability Zone in the endpoint's AWS Region.   Example: us-east-1d  Constraint: The AvailabilityZone parameter can't be specified if the DB instance is a Multi-AZ deployment. The specified Availability Zone must be in the same AWS Region as the current endpoint. 
+    * The Availability Zone that the DB instance is created in. For information about AWS Regions and Availability Zones, see Regions and Availability Zones in the Amazon RDS User Guide.  Default: A random, system-chosen Availability Zone in the endpoint's AWS Region.   Example: us-east-1d  Constraint: The AvailabilityZone parameter can't be specified if the MultiAZ parameter is set to true. The specified Availability Zone must be in the same AWS Region as the current endpoint. 
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * A value that indicates whether to copy all tags from the DB instance to snapshots of the DB instance. By default, tags are not copied. 
+    * True to copy all tags from the restored DB instance to snapshots of the restored DB instance, and otherwise false.  Default: false. 
     */
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates whether the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. For more information, see  Deleting a DB Instance. 
+    * Indicates if the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to true. The default is false. For more information, see  Deleting a DB Instance. 
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -59,11 +59,11 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   /**
-    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled.
+    * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false.  Default: false 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * A value that indicates whether to enable Performance Insights for the DB instance.  For more information, see Using Amazon Performance Insights in the Amazon Relational Database Service User Guide. 
+    * True to enable Performance Insights for the DB instance, and otherwise false.  For more information, see Using Amazon Performance Insights in the Amazon Relational Database Service User Guide. 
     */
   var EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -79,7 +79,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * The AWS KMS key identifier for an encrypted DB instance.  The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are creating a DB instance with the same AWS account that owns the KMS encryption key used to encrypt the new DB instance, then you can use the KMS key alias instead of the ARN for the KM encryption key.  If the StorageEncrypted parameter is enabled, and you do not specify a value for the KmsKeyId parameter, then Amazon RDS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region. 
+    * The AWS KMS key identifier for an encrypted DB instance.  The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are creating a DB instance with the same AWS account that owns the KMS encryption key used to encrypt the new DB instance, then you can use the KMS key alias instead of the ARN for the KM encryption key.  If the StorageEncrypted parameter is true, and you do not specify a value for the KmsKeyId parameter, then Amazon RDS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region. 
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
@@ -103,7 +103,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var MonitoringRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates whether the DB instance is a Multi-AZ deployment. If the DB instance is a Multi-AZ deployment, you can't set the AvailabilityZone parameter. 
+    * Specifies whether the DB instance is a Multi-AZ deployment. If MultiAZ is set to true, you can't set the AvailabilityZone parameter. 
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -111,7 +111,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var OptionGroupName: js.UndefOr[String] = js.undefined
   /**
-    * The AWS KMS key identifier for encryption of Performance Insights data. The KMS key ID is the Amazon Resource Name (ARN), the KMS key identifier, or the KMS key alias for the KMS encryption key.  If you do not specify a value for PerformanceInsightsKMSKeyId, then Amazon RDS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * The AWS KMS key identifier for encryption of Performance Insights data. The KMS key ID is the Amazon Resource Name (ARN), the KMS key identifier, or the KMS key alias for the KMS encryption key. 
     */
   var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
   /**
@@ -135,7 +135,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.undefined
   /**
-    * A value that indicates whether the DB instance is publicly accessible. When the DB instance is publicly accessible, it is an Internet-facing instance with a publicly resolvable DNS name, which resolves to a public IP address. When the DB instance is not publicly accessible, it is an internal instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
+    * Specifies the accessibility options for the DB instance. A value of true specifies an Internet-facing instance with a publicly resolvable DNS name, which resolves to a public IP address. A value of false specifies an internal instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
     */
   var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -159,11 +159,11 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var SourceEngineVersion: String
   /**
-    * A value that indicates whether the new DB instance is encrypted or not. 
+    * Specifies whether the new DB instance is encrypted or not. 
     */
   var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * Specifies the storage type to be associated with the DB instance.  Valid values: standard | gp2 | io1  If you specify io1, you must also include a value for the Iops parameter.  Default: io1 if the Iops parameter is specified; otherwise gp2 
+    * Specifies the storage type to be associated with the DB instance.  Valid values: standard | gp2 | io1  If you specify io1, you must also include a value for the Iops parameter.  Default: io1 if the Iops parameter is specified; otherwise standard 
     */
   var StorageType: js.UndefOr[String] = js.undefined
   /**
@@ -171,7 +171,7 @@ trait RestoreDBInstanceFromS3Message extends js.Object {
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
-    * A value that indicates whether the DB instance class of the DB instance uses its default processor features.
+    * A value that specifies that the DB instance class of the DB instance uses its default processor features.
     */
   var UseDefaultProcessorFeatures: js.UndefOr[BooleanOptional] = js.undefined
   /**

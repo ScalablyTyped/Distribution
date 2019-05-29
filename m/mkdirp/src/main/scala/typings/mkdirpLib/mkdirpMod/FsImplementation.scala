@@ -25,12 +25,12 @@ trait FsImplementation extends js.Object {
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
-    options: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
-    options: js.UndefOr[scala.Nothing],
+    options: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def mkdir(

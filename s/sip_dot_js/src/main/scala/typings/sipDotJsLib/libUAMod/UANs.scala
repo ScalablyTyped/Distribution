@@ -24,7 +24,7 @@ object UANs extends js.Object {
     var autostart: js.UndefOr[scala.Boolean] = js.undefined
     var autostop: js.UndefOr[scala.Boolean] = js.undefined
     var displayName: js.UndefOr[java.lang.String] = js.undefined
-    var dtmfType: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DtmfType */ js.UndefOr[
+    var dtmfType: js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DtmfType */ js.Any
       ] = js.undefined
     var experimentalFeatures: js.UndefOr[scala.Boolean] = js.undefined

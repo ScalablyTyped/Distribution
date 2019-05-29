@@ -12,7 +12,7 @@ trait PassportLocalSchema extends js.Object {
   def plugin(
     plugin: js.Function2[
       (/* schema */ this.type) | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Schema */ /* schema */ js.Any), 
-      /* options */ js.UndefOr[js.Object | PassportLocalOptions], 
+      js.UndefOr[js.Object | PassportLocalOptions], 
       scala.Unit
     ]
   ): this.type = js.native

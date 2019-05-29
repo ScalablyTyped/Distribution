@@ -81,7 +81,7 @@ object AnimatedNs extends js.Object {
     var extrapolateLeft: js.UndefOr[ExtrapolateType] = js.undefined
     var extrapolateRight: js.UndefOr[ExtrapolateType] = js.undefined
     var inputRange: js.Array[scala.Double]
-    var outputRange: js.Array[scala.Double] | js.Array[java.lang.String]
+    var outputRange: js.Array[scala.Double | java.lang.String]
   }
   
   trait LoopAnimationConfig extends js.Object {

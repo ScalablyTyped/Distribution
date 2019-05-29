@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 abstract class WebHook[TData /* <: WebHookData */, TApiData /* <: typedDashGithubDashApiLib.distApiDashInterfacesWebDashHooksMod.WebHookData */] protected ()
   extends typedDashGithubDashApiLib.distGithubDashRefMod.GitHubRef {
   def this(options: typedDashGithubDashApiLib.distGithubDashRefMod.OptionsOrRef) = this()
-  def this(secret: java.lang.String, options: typedDashGithubDashApiLib.distGithubDashRefMod.OptionsOrRef) = this()
   def this(secret: js.UndefOr[scala.Nothing], options: typedDashGithubDashApiLib.distGithubDashRefMod.OptionsOrRef) = this()
+  def this(secret: java.lang.String, options: typedDashGithubDashApiLib.distGithubDashRefMod.OptionsOrRef) = this()
   val handlers: js.Any = js.native
   val router: expressLib.expressMod.Router = js.native
   var secret: js.UndefOr[js.Any] = js.native

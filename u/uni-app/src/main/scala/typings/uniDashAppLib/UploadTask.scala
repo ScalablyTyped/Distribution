@@ -5,26 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait UploadTask extends js.Object {
   /**
     * 中断上传任务
     */
-  def abort(): scala.Unit
+  def abort(): scala.Unit = js.native
   /**
     * 监听上传进度变化
     */
-  def onProgressUpdate(callback: js.Function1[/* result */ OnProgressUpdateResult, scala.Unit]): scala.Unit
-}
-
-object UploadTask {
-  @scala.inline
-  def apply(
-    abort: () => scala.Unit,
-    onProgressUpdate: js.Function1[/* result */ OnProgressUpdateResult, scala.Unit] => scala.Unit
-  ): UploadTask = {
-    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), onProgressUpdate = js.Any.fromFunction1(onProgressUpdate))
-  
-    __obj.asInstanceOf[UploadTask]
-  }
+  def onProgressUpdate(): scala.Unit = js.native
+  def onProgressUpdate(callback: js.Function1[/* result */ OnProgressUpdateResult, scala.Unit]): scala.Unit = js.native
 }
 

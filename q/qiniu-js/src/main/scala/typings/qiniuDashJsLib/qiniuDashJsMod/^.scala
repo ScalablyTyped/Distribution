@@ -27,14 +27,14 @@ object ^ extends js.Object {
   ): java.lang.String = js.native
   def upload(
     file: stdLib.Blob,
-    key: java.lang.String,
+    key: js.UndefOr[scala.Nothing],
     token: java.lang.String,
     putExtra: stdLib.Partial[Extra],
     config: stdLib.Partial[Config]
   ): Observable = js.native
   def upload(
     file: stdLib.Blob,
-    key: js.UndefOr[scala.Nothing],
+    key: java.lang.String,
     token: java.lang.String,
     putExtra: stdLib.Partial[Extra],
     config: stdLib.Partial[Config]

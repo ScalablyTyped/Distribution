@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PivotDataSourceOptions extends DataSourceOptions {
-  var columns: js.UndefOr[js.Array[java.lang.String] | js.Array[PivotDataSourceAxisOptions]] = js.undefined
+  var columns: js.UndefOr[js.Array[PivotDataSourceAxisOptions | java.lang.String]] = js.undefined
   var measures: js.UndefOr[js.Array[java.lang.String] | PivotDataSourceMeasureOptions] = js.undefined
-  var rows: js.UndefOr[js.Array[java.lang.String] | js.Array[PivotDataSourceAxisOptions]] = js.undefined
+  var rows: js.UndefOr[js.Array[PivotDataSourceAxisOptions | java.lang.String]] = js.undefined
   @JSName("schema")
   var schema_PivotDataSourceOptions: js.UndefOr[PivotSchema] = js.undefined
   @JSName("transport")
@@ -22,7 +22,7 @@ object PivotDataSourceOptions {
     autoSync: js.UndefOr[scala.Boolean] = js.undefined,
     batch: js.UndefOr[scala.Boolean] = js.undefined,
     change: /* e */ DataSourceChangeEvent => scala.Unit = null,
-    columns: js.Array[java.lang.String] | js.Array[PivotDataSourceAxisOptions] = null,
+    columns: js.Array[PivotDataSourceAxisOptions | java.lang.String] = null,
     data: js.Any = null,
     error: /* e */ DataSourceErrorEvent => scala.Unit = null,
     filter: js.Any = null,
@@ -35,7 +35,7 @@ object PivotDataSourceOptions {
     push: /* e */ DataSourcePushEvent => scala.Unit = null,
     requestEnd: /* e */ DataSourceRequestEndEvent => scala.Unit = null,
     requestStart: /* e */ DataSourceRequestStartEvent => scala.Unit = null,
-    rows: js.Array[java.lang.String] | js.Array[PivotDataSourceAxisOptions] = null,
+    rows: js.Array[PivotDataSourceAxisOptions | java.lang.String] = null,
     schema: PivotSchema = null,
     serverAggregates: js.UndefOr[scala.Boolean] = js.undefined,
     serverFiltering: js.UndefOr[scala.Boolean] = js.undefined,
@@ -52,7 +52,7 @@ object PivotDataSourceOptions {
     if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync)
     if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch)
     if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1(change))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns)
     if (data != null) __obj.updateDynamic("data")(data)
     if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1(error))
     if (filter != null) __obj.updateDynamic("filter")(filter)
@@ -65,7 +65,7 @@ object PivotDataSourceOptions {
     if (push != null) __obj.updateDynamic("push")(js.Any.fromFunction1(push))
     if (requestEnd != null) __obj.updateDynamic("requestEnd")(js.Any.fromFunction1(requestEnd))
     if (requestStart != null) __obj.updateDynamic("requestStart")(js.Any.fromFunction1(requestStart))
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows)
     if (schema != null) __obj.updateDynamic("schema")(schema)
     if (!js.isUndefined(serverAggregates)) __obj.updateDynamic("serverAggregates")(serverAggregates)
     if (!js.isUndefined(serverFiltering)) __obj.updateDynamic("serverFiltering")(serverFiltering)

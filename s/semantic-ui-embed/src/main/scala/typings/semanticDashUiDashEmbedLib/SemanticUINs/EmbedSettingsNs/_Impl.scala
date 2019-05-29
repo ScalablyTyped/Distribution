@@ -161,7 +161,7 @@ object _Impl {
     url: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibNumbers.`false` | java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any], brandedUI = brandedUI, className = className.asInstanceOf[js.Any], color = color, debug = debug, error = error.asInstanceOf[js.Any], hd = hd, icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name, namespace = namespace, onCreate = js.Any.fromFunction2(onCreate), onDisplay = js.Any.fromFunction1(onDisplay), onEmbed = js.Any.fromFunction2(onEmbed), onPlaceholderDisplay = js.Any.fromFunction1(onPlaceholderDisplay), parameters = parameters.asInstanceOf[js.Any], performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, source = source.asInstanceOf[js.Any], templates = templates.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], verbose = verbose)
+    val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any], brandedUI = brandedUI, className = className, color = color, debug = debug, error = error, hd = hd, icon = icon.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], metadata = metadata, name = name, namespace = namespace, onCreate = js.Any.fromFunction2(onCreate), onDisplay = js.Any.fromFunction1(onDisplay), onEmbed = js.Any.fromFunction2(onEmbed), onPlaceholderDisplay = js.Any.fromFunction1(onPlaceholderDisplay), parameters = parameters.asInstanceOf[js.Any], performance = performance, selector = selector, silent = silent, source = source.asInstanceOf[js.Any], templates = templates, url = url.asInstanceOf[js.Any], verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

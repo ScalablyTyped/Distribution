@@ -10,7 +10,7 @@ trait ArrayConstructor
   extends org.scalablytyped.runtime.Instantiable0[js.Array[js.Any]]
      with org.scalablytyped.runtime.Instantiable1[
       (/* arrayLength */ scala.Double) | (/* items (repeated) */ js.Object), 
-      js.Array[js.Any] | js.Array[js.Object]
+      js.Array[js.Any | js.Object]
     ] {
   @JSName(scala.scalajs.js.Symbol.species)
   val species: ArrayConstructor = js.native

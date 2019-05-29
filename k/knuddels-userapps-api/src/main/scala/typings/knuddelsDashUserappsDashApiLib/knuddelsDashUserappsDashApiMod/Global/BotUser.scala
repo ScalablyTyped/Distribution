@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 	 * @see https://developer.knuddels.de/docs/classes/BotUser.html
 	 */
-@JSGlobal("BotUser")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod._KnuddelsSerializable because Already inherited */ @JSGlobal("BotUser")
 @js.native
 class BotUser () extends User {
   def sendPostMessage(topic: java.lang.String, text: java.lang.String, receivingUser: User): scala.Unit = js.native

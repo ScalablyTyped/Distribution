@@ -7175,7 +7175,7 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
   def ZRANK(key: java.lang.String, member: java.lang.String): R = js.native
-  def ZRANK(key: java.lang.String, member: java.lang.String, cb: Callback[js.UndefOr[scala.Double]]): R = js.native
+  def ZRANK(key: java.lang.String, member: java.lang.String, cb: Callback[scala.Double | scala.Null]): R = js.native
   def ZREM(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   def ZREM(key: java.lang.String, arg1: java.lang.String): R = js.native
   def ZREM(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
@@ -7499,7 +7499,7 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
   def ZREVRANK(key: java.lang.String, member: java.lang.String): R = js.native
-  def ZREVRANK(key: java.lang.String, member: java.lang.String, cb: Callback[js.UndefOr[scala.Double]]): R = js.native
+  def ZREVRANK(key: java.lang.String, member: java.lang.String, cb: Callback[scala.Double | scala.Null]): R = js.native
   def ZSCAN(args: (java.lang.String | (Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]))*): R = js.native
   def ZSCAN(key: java.lang.String, arg1: java.lang.String): R = js.native
   def ZSCAN(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
@@ -16188,7 +16188,7 @@ trait Commands[R] extends js.Object {
     * Determine the index of a member in a sorted set.
     */
   def zrank(key: java.lang.String, member: java.lang.String): R = js.native
-  def zrank(key: java.lang.String, member: java.lang.String, cb: Callback[js.UndefOr[scala.Double]]): R = js.native
+  def zrank(key: java.lang.String, member: java.lang.String, cb: Callback[scala.Double | scala.Null]): R = js.native
   /**
     * Remove one or more members from a sorted set.
     */
@@ -16557,7 +16557,7 @@ trait Commands[R] extends js.Object {
     * Determine the index of a member in a sorted set, with scores ordered from high to low.
     */
   def zrevrank(key: java.lang.String, member: java.lang.String): R = js.native
-  def zrevrank(key: java.lang.String, member: java.lang.String, cb: Callback[js.UndefOr[scala.Double]]): R = js.native
+  def zrevrank(key: java.lang.String, member: java.lang.String, cb: Callback[scala.Double | scala.Null]): R = js.native
   /**
     * Incrementally iterate sorted sets elements and associated scores.
     */

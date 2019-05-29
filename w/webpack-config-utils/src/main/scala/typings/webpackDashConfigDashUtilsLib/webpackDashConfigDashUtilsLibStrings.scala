@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object webpackDashConfigDashUtilsLibStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod._Falsy
   
   @js.native
   sealed trait NonEmptyObject extends js.Object
@@ -21,7 +22,8 @@ object webpackDashConfigDashUtilsLibStrings {
     extends webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod._Falsy
   
   @js.native
   sealed trait getIfUtils extends js.Object

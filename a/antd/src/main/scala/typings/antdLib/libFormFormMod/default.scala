@@ -15,7 +15,7 @@ class default protected () extends Form {
 @JSImport("antd/lib/form/Form", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: antdLib.Anon_DefaultPropsPropTypesAnon = js.native
+  var Item: antdLib.TypeofClassFormItemDefaultProps = js.native
   var createFormField: js.Any = js.native
   var defaultProps: antdLib.Anon_Colon = js.native
   var propTypes: antdLib.Anon_ArgsChildren = js.native

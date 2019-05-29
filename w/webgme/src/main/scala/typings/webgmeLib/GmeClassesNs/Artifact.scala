@@ -54,7 +54,7 @@ trait Artifact extends js.Object {
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeCommonNs.MetadataHash]
   ): scala.Unit = js.native
   /** Adds multiple files. */
-  def addFiles(files: org.scalablytyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob]): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash]] | js.Promise[java.lang.String] = js.native
+  def addFiles(files: org.scalablytyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob]): js.Promise[js.Array[webgmeLib.GmeCommonNs.MetadataHash] | java.lang.String] = js.native
   /** Adds multiple files. */
   def addFiles(
     files: org.scalablytyped.runtime.StringDictionary[webgmeLib.BlobsNs.ObjectBlob],

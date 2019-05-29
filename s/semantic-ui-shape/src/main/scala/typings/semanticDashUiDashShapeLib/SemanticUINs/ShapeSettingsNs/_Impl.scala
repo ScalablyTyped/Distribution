@@ -97,7 +97,7 @@ object _Impl {
     verbose: scala.Boolean,
     width: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.next | semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.initial | scala.Double
   ): _Impl = {
-    val __obj = js.Dynamic.literal(beforeChange = js.Any.fromFunction1(beforeChange), className = className.asInstanceOf[js.Any], debug = debug, duration = duration, error = error.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name, namespace = namespace, onChange = js.Any.fromFunction1(onChange), performance = performance, selector = selector.asInstanceOf[js.Any], silent = silent, verbose = verbose, width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(beforeChange = js.Any.fromFunction1(beforeChange), className = className, debug = debug, duration = duration, error = error, height = height.asInstanceOf[js.Any], name = name, namespace = namespace, onChange = js.Any.fromFunction1(onChange), performance = performance, selector = selector, silent = silent, verbose = verbose, width = width.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[_Impl]
   }

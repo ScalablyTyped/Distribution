@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def chooseNotNull(): js.UndefOr[java.lang.String | scala.Null] = js.native
+  def chooseNotNull(v1: js.UndefOr[scala.Nothing], v2: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = js.native
   def chooseNotNull(v1: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = js.native
   def chooseNotNull(v1: java.lang.String, v2: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = js.native
-  def chooseNotNull(v1: js.UndefOr[scala.Nothing], v2: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = js.native
   def chooseNotNull(v1: scala.Null, v2: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = js.native
   def isSafeGithubName(name: java.lang.String): scala.Boolean = js.native
   def normalizeExt(ext: java.lang.String): java.lang.String = js.native

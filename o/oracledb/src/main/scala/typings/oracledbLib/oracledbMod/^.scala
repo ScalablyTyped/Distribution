@@ -289,19 +289,6 @@ object ^ extends js.Object {
     */
   var fetchAsString: js.Array[scala.Double] = js.native
   /**
-    * This attribute is temporarily disabled. Setting it has no effect.
-    *
-    * Node-oracledb internally uses Oracle LOB Locators to manipulate long object (LOB) data.
-    * LOB Prefetching allows LOB data to be returned early to node-oracledb when these locators are first returned.
-    * This is similar to the way row prefetching allows for efficient use of resources and round-trips between
-    * node-oracledb and the database.
-    *
-    * Prefetching of LOBs is mostly useful for small LOBs.
-    *
-    * @default 16384
-    */
-  var lobPrefetchSize: scala.Double = js.native
-  /**
     * The maximum number of rows that are fetched by a query with connection.execute() when not using a ResultSet.
     * Rows beyond this limit are not fetched from the database. A value of 0 means there is no limit.
     *

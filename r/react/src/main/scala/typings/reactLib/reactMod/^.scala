@@ -63,9 +63,9 @@ object ^ extends js.Object {
   def createElement[P /* <: js.Object */](`type`: FunctionComponent[P]): ReactElement[P] = js.native
   def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with (P | scala.Null), children: ReactNode*): ReactElement[P] = js.native
   def createElement[P /* <: DOMAttributes[T] */, T /* <: reactLib.Element */](`type`: java.lang.String, props: ClassAttributes[T] with (P | scala.Null), children: ReactNode*): DOMElement[P, T] = js.native
-  def createElement[P /* <: HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any): DetailedReactHTMLElement[P, T] = js.native
+  def createElement[P /* <: HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): DetailedReactHTMLElement[P, T] = js.native
   def createElement[P /* <: HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any,
     props: ClassAttributes[T] with (P | scala.Null),
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = js.native
@@ -111,7 +111,7 @@ object ^ extends js.Object {
   // ----------------------------------------------------------------------
   // DOM Elements
   @JSName("createFactory")
-  def createFactory_THTMLElementHTMLFactory[T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any): HTMLFactory[T] = js.native
+  def createFactory_THTMLElementHTMLFactory[T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): HTMLFactory[T] = js.native
   def createRef[T](): RefObject[T] = js.native
   def forwardRef[T, P](Component: RefForwardingComponent[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
   def isValidElement[P](): /* is react.react.ReactElement<P> */ scala.Boolean = js.native
@@ -189,8 +189,8 @@ object ^ extends js.Object {
     * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#useimperativehandle
     */
-  def useImperativeHandle[T, R /* <: T */](ref: Ref[T] | js.UndefOr[scala.Nothing], init: js.Function0[R]): scala.Unit = js.native
-  def useImperativeHandle[T, R /* <: T */](ref: Ref[T] | js.UndefOr[scala.Nothing], init: js.Function0[R], deps: DependencyList): scala.Unit = js.native
+  def useImperativeHandle[T, R /* <: T */](ref: js.UndefOr[Ref[T]], init: js.Function0[R]): scala.Unit = js.native
+  def useImperativeHandle[T, R /* <: T */](ref: js.UndefOr[Ref[T]], init: js.Function0[R], deps: DependencyList): scala.Unit = js.native
   /**
     * The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
     * Use this to read layout from the DOM and synchronously re-render. Updates scheduled inside

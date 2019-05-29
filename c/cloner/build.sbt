@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cloner"
-version := "0.4-dt-20180501Z-333042"
+version := "0.4-dt-20180501Z-8b3e1c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

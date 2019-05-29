@@ -13,7 +13,7 @@ trait IDropOptions extends js.Object {
   var constrainToScrollParent: js.UndefOr[scala.Boolean] = js.undefined
   var constrainToWindow: js.UndefOr[scala.Boolean] = js.undefined
   var content: js.UndefOr[
-    stdLib.Element | java.lang.String | (js.Function1[/* drop */ js.UndefOr[Drop], java.lang.String]) | (js.Function1[/* drop */ js.UndefOr[Drop], stdLib.Element])
+    stdLib.Element | java.lang.String | (js.Function1[js.UndefOr[Drop], stdLib.Element | java.lang.String])
   ] = js.undefined
   var focusDelay: js.UndefOr[scala.Double] = js.undefined
   var hoverCloseDelay: js.UndefOr[scala.Double] = js.undefined
@@ -35,7 +35,7 @@ object IDropOptions {
     closeDelay: scala.Int | scala.Double = null,
     constrainToScrollParent: js.UndefOr[scala.Boolean] = js.undefined,
     constrainToWindow: js.UndefOr[scala.Boolean] = js.undefined,
-    content: stdLib.Element | java.lang.String | (js.Function1[/* drop */ js.UndefOr[Drop], java.lang.String]) | (js.Function1[/* drop */ js.UndefOr[Drop], stdLib.Element]) = null,
+    content: stdLib.Element | java.lang.String | (js.Function1[js.UndefOr[Drop], stdLib.Element | java.lang.String]) = null,
     focusDelay: scala.Int | scala.Double = null,
     hoverCloseDelay: scala.Int | scala.Double = null,
     hoverOpenDelay: scala.Int | scala.Double = null,

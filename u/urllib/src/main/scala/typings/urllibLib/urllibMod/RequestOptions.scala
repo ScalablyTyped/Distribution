@@ -19,7 +19,7 @@ trait RequestOptions extends js.Object {
     * Notes: This is necessary only if the server uses the self - signed certificate
     */
   var ca: js.UndefOr[
-    java.lang.String | nodeLib.Buffer | js.Array[java.lang.String] | js.Array[nodeLib.Buffer]
+    java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | java.lang.String])
   ] = js.undefined
   /**
     * A string or Buffer containing the certificate key of the client in PEM format.
@@ -134,7 +134,7 @@ object RequestOptions {
     agent: nodeLib.httpMod.Agent = null,
     auth: java.lang.String = null,
     beforeRequest: /* repeated */ js.Any => scala.Unit = null,
-    ca: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = null,
+    ca: java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | java.lang.String]) = null,
     cert: java.lang.String | nodeLib.Buffer = null,
     checkAddress: (/* ip */ java.lang.String, /* family */ scala.Double | java.lang.String) => scala.Boolean = null,
     ciphers: java.lang.String = null,

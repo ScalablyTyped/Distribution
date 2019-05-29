@@ -28,6 +28,10 @@ class FormatCondition protected () extends js.Object {
   def IsMemberSafe(dispid: scala.Double): scala.Boolean = js.native
   /** @param Operator [Operator=0] */
   def Modify(Type: AcFormatConditionType): scala.Unit = js.native
+  /** @param Operator [Operator=0] */
+  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: java.lang.String): scala.Unit = js.native
+  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: scala.Boolean): scala.Unit = js.native
+  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: scala.Double): scala.Unit = js.native
   def Modify(Type: AcFormatConditionType, Operator: AcFormatConditionOperator): scala.Unit = js.native
   def Modify(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: java.lang.String): scala.Unit = js.native
   /** @param Operator [Operator=0] */
@@ -87,9 +91,5 @@ class FormatCondition protected () extends js.Object {
     Expression1: scala.Double,
     Expression2: scala.Double
   ): scala.Unit = js.native
-  /** @param Operator [Operator=0] */
-  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: java.lang.String): scala.Unit = js.native
-  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: scala.Boolean): scala.Unit = js.native
-  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: scala.Double): scala.Unit = js.native
 }
 

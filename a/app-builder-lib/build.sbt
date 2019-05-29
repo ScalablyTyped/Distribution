@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "app-builder-lib"
-version := "20.41.0-fbf421"
+version := "20.41.0-96c1c3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "builder-util" % "10.0.0-d8bafb",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.2-283506",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190411Z-da708a",
-  "org.scalablytyped" %%% "electron-publish" % "20.41.0-b21e6d",
-  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-441a04",
-  "org.scalablytyped" %%% "lazy-val" % "1.0.4-39fe74",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190517Z-1fb914",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "temp-file" % "3.3.2-e0982f")
+  "org.scalablytyped" %%% "builder-util" % "10.0.0-324c66",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.2-2b61d8",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20190411Z-dbddcd",
+  "org.scalablytyped" %%% "electron-publish" % "20.41.0-5eb399",
+  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-dc9453",
+  "org.scalablytyped" %%% "lazy-val" % "1.0.4-5c7059",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-17198b",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb",
+  "org.scalablytyped" %%% "temp-file" % "3.3.2-158f9a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -138,7 +138,7 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchUnsuspendUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates phone number product types. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types.
+    * Updates phone number product types. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
     */
   def batchUpdatePhoneNumber(): awsDashSdkLib.libRequestMod.Request[BatchUpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchUpdatePhoneNumber(
@@ -149,7 +149,7 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchUpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates phone number product types. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types.
+    * Updates phone number product types. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
     */
   def batchUpdatePhoneNumber(params: BatchUpdatePhoneNumberRequest): awsDashSdkLib.libRequestMod.Request[BatchUpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def batchUpdatePhoneNumber(
@@ -230,7 +230,7 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateBotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types.
+    * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
     */
   def createPhoneNumberOrder(): awsDashSdkLib.libRequestMod.Request[CreatePhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPhoneNumberOrder(
@@ -241,7 +241,7 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreatePhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types.
+    * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
     */
   def createPhoneNumberOrder(params: CreatePhoneNumberOrderRequest): awsDashSdkLib.libRequestMod.Request[CreatePhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createPhoneNumberOrder(
@@ -1197,7 +1197,7 @@ trait Chime
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates phone number details, such as product type, for the specified phone number ID.
+    * Updates phone number details, such as product type, for the specified phone number ID. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
     */
   def updatePhoneNumber(): awsDashSdkLib.libRequestMod.Request[UpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePhoneNumber(
@@ -1208,7 +1208,7 @@ trait Chime
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates phone number details, such as product type, for the specified phone number ID.
+    * Updates phone number details, such as product type, for the specified phone number ID. For toll-free numbers, you can use only the Amazon Chime Voice Connector product type.
     */
   def updatePhoneNumber(params: UpdatePhoneNumberRequest): awsDashSdkLib.libRequestMod.Request[UpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePhoneNumber(

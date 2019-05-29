@@ -14,7 +14,7 @@ class RelationalField protected () extends js.Object {
   @JSName("getClass")
   var getClass_FRelationalField: org.scalablytyped.runtime.Instantiable2[
     /* toModelName */ java.lang.String, 
-    /* relatedName */ js.UndefOr[/* relatedName */ java.lang.String], 
+    js.UndefOr[/* relatedName */ java.lang.String], 
     RelationalField
   ] = js.native
 }

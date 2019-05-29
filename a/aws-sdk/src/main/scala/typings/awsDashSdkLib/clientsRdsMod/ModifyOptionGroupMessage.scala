@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ModifyOptionGroupMessage extends js.Object {
   /**
-    * A value that indicates whether to apply the change immediately or during the next maintenance window for each instance associated with the option group.
+    * Indicates whether the changes should be applied immediately, or during the next maintenance window for each instance associated with the option group.
     */
   var ApplyImmediately: js.UndefOr[Boolean] = js.undefined
   /**

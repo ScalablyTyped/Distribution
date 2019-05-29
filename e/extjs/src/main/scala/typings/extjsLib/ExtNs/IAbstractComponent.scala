@@ -80,10 +80,10 @@ import scala.scalajs.js.annotation._
   		*/
   var alignTo: js.UndefOr[
     js.Function4[
-      /* element */ js.UndefOr[js.Any], 
-      /* position */ js.UndefOr[java.lang.String], 
-      /* offsets */ js.UndefOr[Array], 
-      /* animate */ js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[java.lang.String], 
+      js.UndefOr[Array], 
+      js.UndefOr[js.Any], 
       this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
@@ -98,12 +98,12 @@ import scala.scalajs.js.annotation._
   		*/
   var anchorTo: js.UndefOr[
     js.Function6[
-      /* element */ js.UndefOr[js.Any], 
-      /* position */ js.UndefOr[java.lang.String], 
-      /* offsets */ js.UndefOr[Array], 
-      /* animate */ js.UndefOr[js.Any], 
-      /* monitorScroll */ js.UndefOr[js.Any], 
-      /* callback */ js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[java.lang.String], 
+      js.UndefOr[Array], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
       this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
@@ -153,10 +153,10 @@ import scala.scalajs.js.annotation._
   		*/
   var calculateConstrainedPosition: js.UndefOr[
     js.Function4[
-      /* constrainTo */ js.UndefOr[js.Any], 
-      /* proposedPosition */ js.UndefOr[Array], 
-      /* local */ js.UndefOr[scala.Boolean], 
-      /* proposedSize */ js.UndefOr[Array], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[Array], 
+      js.UndefOr[scala.Boolean], 
+      js.UndefOr[Array], 
       Array
     ]
   ] = js.undefined
@@ -197,7 +197,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Ensures that this component is attached to document body
   		* @param runLayout Boolean True to run the component's layout.
   		*/
-  var ensureAttachedToBody: js.UndefOr[js.Function1[/* runLayout */ js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
+  var ensureAttachedToBody: js.UndefOr[js.Function1[js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
   /** [Method] Retrieves plugin from this component s collection by its ptype
   		* @param ptype String The Plugin's ptype as specified by the class's alias configuration.
   		* @returns Ext.AbstractPlugin plugin instance.
@@ -222,12 +222,7 @@ import scala.scalajs.js.annotation._
   		* @returns Number[] [x, y]
   		*/
   var getAlignToXY: js.UndefOr[
-    js.Function3[
-      /* element */ js.UndefOr[js.Any], 
-      /* position */ js.UndefOr[java.lang.String], 
-      /* offsets */ js.UndefOr[Array], 
-      Array
-    ]
+    js.Function3[js.UndefOr[js.Any], js.UndefOr[java.lang.String], js.UndefOr[Array], Array]
   ] = js.undefined
   /** [Method] Gets the x y coordinates specified by the anchor position on the element
   		* @param anchor String The specified anchor position. See alignTo for details on supported anchor positions.
@@ -236,21 +231,14 @@ import scala.scalajs.js.annotation._
   		* @returns Number[] [x, y] An array containing the element's x and y coordinates
   		*/
   var getAnchorXY: js.UndefOr[
-    js.Function3[
-      /* anchor */ js.UndefOr[java.lang.String], 
-      /* local */ js.UndefOr[scala.Boolean], 
-      /* size */ js.UndefOr[js.Any], 
-      Array
-    ]
+    js.Function3[js.UndefOr[java.lang.String], js.UndefOr[scala.Boolean], js.UndefOr[js.Any], Array]
   ] = js.undefined
   /** [Method] Return an object defining the area of this Element which can be passed to setBox to set another Element s size locati
   		* @param contentBox Boolean If true a box for the content of the element is returned.
   		* @param local Boolean If true the element's left and top relative to its offsetParent are returned instead of page x/y.
   		* @returns Object box An object in the format: {  x: &lt;Element's X position&gt;,  y: &lt;Element's Y position&gt;,  left: &lt;Element's X position (an alias for x)&gt;,  top: &lt;Element's Y position (an alias for y)&gt;,  width: &lt;Element's width&gt;,  height: &lt;Element's height&gt;,  bottom: &lt;Element's lower bound&gt;,  right: &lt;Element's rightmost bound&gt; }  The returned object may also be addressed as an Array where index 0 contains the X position and index 1 contains the Y position. The result may also be used for setXY
   		*/
-  var getBox: js.UndefOr[
-    js.Function2[/* contentBox */ js.UndefOr[scala.Boolean], /* local */ js.UndefOr[scala.Boolean], _]
-  ] = js.undefined
+  var getBox: js.UndefOr[js.Function2[js.UndefOr[scala.Boolean], js.UndefOr[scala.Boolean], _]] = js.undefined
   /** [Method] Provides the link for Observable s fireEvent method to bubble up the ownership hierarchy
   		* @returns Ext.container.Container the Container which owns this Component.
   		*/
@@ -261,14 +249,7 @@ import scala.scalajs.js.annotation._
   		* @param proposedSize Number[] A proposed [width, height] size to constrain instead of using the element's current size
   		* @returns Number[]/Boolean If the element needs to be translated, an [X, Y] vector by which this element must be translated. Otherwise, false.
   		*/
-  var getConstrainVector: js.UndefOr[
-    js.Function3[
-      /* constrainTo */ js.UndefOr[js.Any], 
-      /* proposedPosition */ js.UndefOr[Array], 
-      /* proposedSize */ js.UndefOr[Array], 
-      _
-    ]
-  ] = js.undefined
+  var getConstrainVector: js.UndefOr[js.Function3[js.UndefOr[js.Any], js.UndefOr[Array], js.UndefOr[Array], _]] = js.undefined
   /** [Method] Retrieves the top level element representing this component
   		* @returns Ext.dom.Element
   		*/
@@ -285,7 +266,7 @@ import scala.scalajs.js.annotation._
   		* @param position String/Number/Ext.dom.Element/HTMLElement Index, element id or element you want to put this component before.
   		* @returns HTMLElement DOM element that you can use in the insertBefore
   		*/
-  var getInsertPosition: js.UndefOr[js.Function1[/* position */ js.UndefOr[js.Any], stdLib.HTMLElement]] = js.undefined
+  var getInsertPosition: js.UndefOr[js.Function1[js.UndefOr[js.Any], stdLib.HTMLElement]] = js.undefined
   /** [Method] Returns the value of itemId assigned to this component or when that is not set returns the value of id
   		* @returns String
   		*/
@@ -310,7 +291,7 @@ import scala.scalajs.js.annotation._
   		* @param offsetsTo Ext.util.Positionable/HTMLElement/String The Positionable, HTMLElement, or element id to get get the offsets from.
   		* @returns Number[] The XY page offsets (e.g. [100, -200])
   		*/
-  var getOffsetsTo: js.UndefOr[js.Function1[/* offsetsTo */ js.UndefOr[js.Any], Array]] = js.undefined
+  var getOffsetsTo: js.UndefOr[js.Function1[js.UndefOr[js.Any], Array]] = js.undefined
   /** [Method] Retrieves a plugin from this component s collection by its pluginId
   		* @param pluginId String
   		* @returns Ext.AbstractPlugin plugin instance.
@@ -459,12 +440,7 @@ import scala.scalajs.js.annotation._
   		* @param animate Boolean/Object true for the default animation or a standard Element animation config object
   		*/
   var move: js.UndefOr[
-    js.Function3[
-      /* direction */ js.UndefOr[java.lang.String], 
-      /* distance */ js.UndefOr[scala.Double], 
-      /* animate */ js.UndefOr[js.Any], 
-      scala.Unit
-    ]
+    js.Function3[js.UndefOr[java.lang.String], js.UndefOr[scala.Double], js.UndefOr[js.Any], scala.Unit]
   ] = js.undefined
   /** [Method] Returns the next node in the Component tree in tree traversal order
   		* @param selector String A ComponentQuery selector to filter the following nodes.
@@ -507,11 +483,7 @@ import scala.scalajs.js.annotation._
   		* @param containerIdx Number The index within the parent Container's child collection of this Component.
   		*/
   var onRender: js.UndefOr[
-    js.Function2[
-      /* parentNode */ js.UndefOr[extjsLib.ExtNs.coreNs.IElement], 
-      /* containerIdx */ js.UndefOr[scala.Double], 
-      scala.Unit
-    ]
+    js.Function2[js.UndefOr[extjsLib.ExtNs.coreNs.IElement], js.UndefOr[scala.Double], scala.Unit]
   ] = js.undefined
   /** [Method] Allows addition of behavior to the resize operation
   		* @param width Object
@@ -561,7 +533,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
   		* @param testFn Function The test function.
   		*/
-  var removeChildEls: js.UndefOr[js.Function1[/* testFn */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Removes a CSS class from the top level element representing this component
   		* @param cls String/String[] The CSS class name to remove.
   		* @returns Ext.Component Returns the Component to allow method chaining.
@@ -579,9 +551,7 @@ import scala.scalajs.js.annotation._
   		* @param container Ext.Element/HTMLElement/String The element this Component should be rendered into. If it is being created from existing markup, this should be omitted.
   		* @param position String/Number The element ID or DOM node index within the container before which this component will be inserted (defaults to appending to the end of the container)
   		*/
-  var render: js.UndefOr[
-    js.Function2[/* container */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any], scala.Unit]
-  ] = js.undefined
+  var render: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (Object) */
   var renderData: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Object) */
@@ -609,8 +579,8 @@ import scala.scalajs.js.annotation._
   		*/
   var setBox: js.UndefOr[
     js.Function2[
-      /* box */ js.UndefOr[js.Any], 
-      /* animate */ js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any], 
       this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
@@ -640,10 +610,7 @@ import scala.scalajs.js.annotation._
   		* @returns Ext.util.Positionable this
   		*/
   var setLocalX: js.UndefOr[
-    js.Function1[
-      /* x */ js.UndefOr[js.Any | scala.Double], 
-      this.type | extjsLib.ExtNs.utilNs.IPositionable
-    ]
+    js.Function1[js.UndefOr[js.Any | scala.Double], this.type | extjsLib.ExtNs.utilNs.IPositionable]
   ] = js.undefined
   /** [Method] Overridden in Ext rtl AbstractComponent
   		* @param x Object
@@ -652,8 +619,8 @@ import scala.scalajs.js.annotation._
   		*/
   var setLocalXY: js.UndefOr[
     js.Function2[
-      /* x */ js.UndefOr[js.Any], 
-      /* y */ js.UndefOr[js.Any | scala.Double], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[js.Any | scala.Double], 
       this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
@@ -662,10 +629,7 @@ import scala.scalajs.js.annotation._
   		* @returns Ext.util.Positionable this
   		*/
   var setLocalY: js.UndefOr[
-    js.Function1[
-      /* y */ js.UndefOr[js.Any | scala.Double], 
-      this.type | extjsLib.ExtNs.utilNs.IPositionable
-    ]
+    js.Function1[js.UndefOr[js.Any | scala.Double], this.type | extjsLib.ExtNs.utilNs.IPositionable]
   ] = js.undefined
   /** [Method] Sets the margin on the target element
   		* @param margin Number/String The margin to set. See the margin config.
@@ -678,8 +642,8 @@ import scala.scalajs.js.annotation._
   		*/
   var setRegion: js.UndefOr[
     js.Function2[
-      /* region */ js.UndefOr[extjsLib.ExtNs.utilNs.IRegion], 
-      /* animate */ js.UndefOr[js.Any], 
+      js.UndefOr[extjsLib.ExtNs.utilNs.IRegion], 
+      js.UndefOr[js.Any], 
       this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
@@ -712,8 +676,8 @@ import scala.scalajs.js.annotation._
   		*/
   var setX: js.UndefOr[
     js.Function2[
-      /* x */ /* The */ js.UndefOr[js.Any | scala.Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      js.UndefOr[js.Any | scala.Double], 
+      js.UndefOr[js.Any], 
       this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
@@ -724,8 +688,8 @@ import scala.scalajs.js.annotation._
   		*/
   var setXY: js.UndefOr[
     js.Function2[
-      /* xy */ /* pos */ js.UndefOr[js.Any | Array], 
-      /* animate */ js.UndefOr[js.Any], 
+      js.UndefOr[js.Any | Array], 
+      js.UndefOr[js.Any], 
       this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
@@ -736,8 +700,8 @@ import scala.scalajs.js.annotation._
   		*/
   var setY: js.UndefOr[
     js.Function2[
-      /* y */ /* The */ js.UndefOr[js.Any | scala.Double], 
-      /* animate */ js.UndefOr[js.Any], 
+      js.UndefOr[js.Any | scala.Double], 
+      js.UndefOr[js.Any], 
       this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
@@ -766,7 +730,7 @@ import scala.scalajs.js.annotation._
   		* @param y Number The page y, required if x is not an array
   		* @returns Object An object with left and top properties. e.g. {left: (value), top: (value)}
   		*/
-  var translatePoints: js.UndefOr[js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[scala.Double], _]] = js.undefined
+  var translatePoints: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[scala.Double], _]] = js.undefined
   /** [Config Option] (String) */
   var ui: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Navigates up the ownership hierarchy searching for an ancestor Container which matches any passed simple selector or

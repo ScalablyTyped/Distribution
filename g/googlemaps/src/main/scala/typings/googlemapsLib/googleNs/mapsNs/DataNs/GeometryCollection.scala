@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeometryCollection protected () extends Geometry {
   def this(elements: js.Array[
-      js.Array[Geometry] | js.Array[googlemapsLib.googleNs.mapsNs.LatLng] | googlemapsLib.googleNs.mapsNs.LatLngLiteral
+      (js.Array[Geometry | googlemapsLib.googleNs.mapsNs.LatLng]) | googlemapsLib.googleNs.mapsNs.LatLngLiteral
     ]) = this()
   def getArray(): js.Array[Geometry] = js.native
   def getAt(n: scala.Double): Geometry = js.native

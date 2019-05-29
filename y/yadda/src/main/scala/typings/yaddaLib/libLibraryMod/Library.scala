@@ -293,7 +293,7 @@ trait Library
     signatures: js.Array[stdLib.RegExp | java.lang.String],
     fn: js.ThisFunction1[
       /* this */ yaddaLib.libMod.StepFn, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg1 */ /* repeated */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg1 */ /* repeated */ java.lang.String), 
       js.Promise[scala.Unit] | scala.Unit
     ]
   ): this.type = js.native
@@ -301,7 +301,7 @@ trait Library
     signatures: js.Array[stdLib.RegExp | java.lang.String],
     fn: js.ThisFunction1[
       /* this */ yaddaLib.libMod.StepFn, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg1 */ /* repeated */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg1 */ /* repeated */ java.lang.String), 
       js.Promise[scala.Unit] | scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^
@@ -310,7 +310,7 @@ trait Library
     signatures: js.Array[stdLib.RegExp | java.lang.String],
     fn: js.ThisFunction1[
       /* this */ yaddaLib.libMod.StepFn, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg1 */ /* repeated */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg1 */ /* repeated */ java.lang.String), 
       js.Promise[scala.Unit] | scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^,
@@ -321,7 +321,7 @@ trait Library
     fn: js.ThisFunction2[
       /* this */ yaddaLib.libMod.StepFn, 
       /* arg1 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg2 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg2 */ java.lang.String), 
       scala.Unit
     ]
   ): this.type = js.native
@@ -330,7 +330,7 @@ trait Library
     fn: js.ThisFunction2[
       /* this */ yaddaLib.libMod.StepFn, 
       /* arg1 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg2 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg2 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^
@@ -340,7 +340,7 @@ trait Library
     fn: js.ThisFunction2[
       /* this */ yaddaLib.libMod.StepFn, 
       /* arg1 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg2 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg2 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^,
@@ -352,7 +352,7 @@ trait Library
       /* this */ yaddaLib.libMod.StepFn, 
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg3 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg3 */ java.lang.String), 
       scala.Unit
     ]
   ): this.type = js.native
@@ -362,7 +362,7 @@ trait Library
       /* this */ yaddaLib.libMod.StepFn, 
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg3 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg3 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^
@@ -373,7 +373,7 @@ trait Library
       /* this */ yaddaLib.libMod.StepFn, 
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg3 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg3 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^,
@@ -386,7 +386,7 @@ trait Library
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg4 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg4 */ java.lang.String), 
       scala.Unit
     ]
   ): this.type = js.native
@@ -397,7 +397,7 @@ trait Library
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg4 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg4 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^
@@ -409,7 +409,7 @@ trait Library
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg4 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg4 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^,
@@ -423,7 +423,7 @@ trait Library
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg5 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg5 */ java.lang.String), 
       scala.Unit
     ]
   ): this.type = js.native
@@ -435,7 +435,7 @@ trait Library
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg5 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg5 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^
@@ -448,7 +448,7 @@ trait Library
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg5 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg5 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^,
@@ -463,7 +463,7 @@ trait Library
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg6 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg6 */ java.lang.String), 
       scala.Unit
     ]
   ): this.type = js.native
@@ -476,7 +476,7 @@ trait Library
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg6 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg6 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^
@@ -490,7 +490,7 @@ trait Library
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg6 */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* arg6 */ java.lang.String), 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^,
@@ -506,7 +506,7 @@ trait Library
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
       /* arg6 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -520,7 +520,7 @@ trait Library
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
       /* arg6 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^
@@ -535,7 +535,7 @@ trait Library
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
       /* arg6 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ],
     macro_context: yaddaLib.libContextMod.^,

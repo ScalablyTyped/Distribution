@@ -7,33 +7,33 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LinearOptimizationEngine extends js.Object {
-  def addConstraint(lowerBound: stdLib.Number, upperBound: stdLib.Number): LinearOptimizationConstraint = js.native
+  def addConstraint(lowerBound: scala.Double, upperBound: scala.Double): LinearOptimizationConstraint = js.native
   def addConstraints(
-    lowerBounds: js.Array[stdLib.Number],
-    upperBounds: js.Array[stdLib.Number],
+    lowerBounds: js.Array[scala.Double],
+    upperBounds: js.Array[scala.Double],
     variableNames: js.Array[js.Array[java.lang.String]],
-    coefficients: js.Array[js.Array[stdLib.Number]]
+    coefficients: js.Array[js.Array[scala.Double]]
   ): LinearOptimizationEngine = js.native
-  def addVariable(name: java.lang.String, lowerBound: stdLib.Number, upperBound: stdLib.Number): LinearOptimizationEngine = js.native
-  def addVariable(name: java.lang.String, lowerBound: stdLib.Number, upperBound: stdLib.Number, `type`: VariableType): LinearOptimizationEngine = js.native
+  def addVariable(name: java.lang.String, lowerBound: scala.Double, upperBound: scala.Double): LinearOptimizationEngine = js.native
+  def addVariable(name: java.lang.String, lowerBound: scala.Double, upperBound: scala.Double, `type`: VariableType): LinearOptimizationEngine = js.native
   def addVariable(
     name: java.lang.String,
-    lowerBound: stdLib.Number,
-    upperBound: stdLib.Number,
+    lowerBound: scala.Double,
+    upperBound: scala.Double,
     `type`: VariableType,
-    objectiveCoefficient: stdLib.Number
+    objectiveCoefficient: scala.Double
   ): LinearOptimizationEngine = js.native
   def addVariables(
     names: js.Array[java.lang.String],
-    lowerBounds: js.Array[stdLib.Number],
-    upperBounds: js.Array[stdLib.Number],
+    lowerBounds: js.Array[scala.Double],
+    upperBounds: js.Array[scala.Double],
     types: js.Array[VariableType],
-    objectiveCoefficients: js.Array[stdLib.Number]
+    objectiveCoefficients: js.Array[scala.Double]
   ): LinearOptimizationEngine = js.native
   def setMaximization(): LinearOptimizationEngine = js.native
   def setMinimization(): LinearOptimizationEngine = js.native
-  def setObjectiveCoefficient(variableName: java.lang.String, coefficient: stdLib.Number): LinearOptimizationEngine = js.native
+  def setObjectiveCoefficient(variableName: java.lang.String, coefficient: scala.Double): LinearOptimizationEngine = js.native
   def solve(): LinearOptimizationSolution = js.native
-  def solve(seconds: stdLib.Number): LinearOptimizationSolution = js.native
+  def solve(seconds: scala.Double): LinearOptimizationSolution = js.native
 }
 

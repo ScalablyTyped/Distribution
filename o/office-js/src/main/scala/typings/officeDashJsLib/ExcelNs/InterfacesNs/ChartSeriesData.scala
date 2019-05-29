@@ -44,7 +44,7 @@ trait ChartSeriesData extends js.Object {
     * [Api set: ExcelApi 1.7]
     */
   var chartType: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 84 */ js.Any
   ] = js.undefined
   /**
     *
@@ -358,7 +358,7 @@ object ChartSeriesData {
     binOptions: ChartBinOptionsData = null,
     boxwhiskerOptions: ChartBoxwhiskerOptionsData = null,
     bubbleScale: scala.Int | scala.Double = null,
-    chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any = null,
+    chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 84 */ js.Any = null,
     dataLabels: ChartDataLabelsData = null,
     doughnutHoleSize: scala.Int | scala.Double = null,
     explosion: scala.Int | scala.Double = null,

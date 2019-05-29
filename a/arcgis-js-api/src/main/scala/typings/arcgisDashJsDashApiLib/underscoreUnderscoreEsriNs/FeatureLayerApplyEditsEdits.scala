@@ -18,7 +18,7 @@ trait FeatureLayerApplyEditsEdits
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
-  var deleteFeatures: js.UndefOr[js.Array[Graphic] | js.Array[_]] = js.undefined
+  var deleteFeatures: js.UndefOr[js.Array[_ | Graphic]] = js.undefined
   /**
     * Array of features to be updated. Each feature must have valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField). Values of non nullable fields must be provided when updating features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
     *
@@ -34,12 +34,12 @@ object FeatureLayerApplyEditsEdits {
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     addFeatures: js.Array[Graphic] = null,
-    deleteFeatures: js.Array[Graphic] | js.Array[_] = null,
+    deleteFeatures: js.Array[_ | Graphic] = null,
     updateFeatures: js.Array[Graphic] = null
   ): FeatureLayerApplyEditsEdits = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (addFeatures != null) __obj.updateDynamic("addFeatures")(addFeatures)
-    if (deleteFeatures != null) __obj.updateDynamic("deleteFeatures")(deleteFeatures.asInstanceOf[js.Any])
+    if (deleteFeatures != null) __obj.updateDynamic("deleteFeatures")(deleteFeatures)
     if (updateFeatures != null) __obj.updateDynamic("updateFeatures")(updateFeatures)
     __obj.asInstanceOf[FeatureLayerApplyEditsEdits]
   }

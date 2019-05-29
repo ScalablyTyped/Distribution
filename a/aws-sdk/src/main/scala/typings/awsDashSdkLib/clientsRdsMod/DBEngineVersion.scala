@@ -35,6 +35,10 @@ trait DBEngineVersion extends js.Object {
     */
   var ExportableLogTypes: js.UndefOr[LogTypeList] = js.undefined
   /**
+    * The status of the DB engine version, either available or deprecated.
+    */
+  var Status: js.UndefOr[String] = js.undefined
+  /**
     *  A list of the character sets supported by this engine for the CharacterSetName parameter of the CreateDBInstance action. 
     */
   var SupportedCharacterSets: js.UndefOr[SupportedCharacterSetsList] = js.undefined
@@ -74,6 +78,7 @@ object DBEngineVersion {
     Engine: String = null,
     EngineVersion: String = null,
     ExportableLogTypes: LogTypeList = null,
+    Status: String = null,
     SupportedCharacterSets: SupportedCharacterSetsList = null,
     SupportedEngineModes: EngineModeList = null,
     SupportedFeatureNames: FeatureNameList = null,
@@ -90,6 +95,7 @@ object DBEngineVersion {
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (ExportableLogTypes != null) __obj.updateDynamic("ExportableLogTypes")(ExportableLogTypes)
+    if (Status != null) __obj.updateDynamic("Status")(Status)
     if (SupportedCharacterSets != null) __obj.updateDynamic("SupportedCharacterSets")(SupportedCharacterSets)
     if (SupportedEngineModes != null) __obj.updateDynamic("SupportedEngineModes")(SupportedEngineModes)
     if (SupportedFeatureNames != null) __obj.updateDynamic("SupportedFeatureNames")(SupportedFeatureNames)

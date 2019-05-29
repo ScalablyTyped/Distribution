@@ -9,7 +9,7 @@ trait VanillaModalConfig extends js.Object {
   var `class`: js.UndefOr[java.lang.String] = js.undefined
   var clickOutside: js.UndefOr[scala.Boolean] = js.undefined
   var close: js.UndefOr[java.lang.String] = js.undefined
-  var closeKeys: js.UndefOr[js.Array[scala.Double] | js.Array[js.UndefOr[scala.Nothing]] | scala.Boolean] = js.undefined
+  var closeKeys: js.UndefOr[js.Array[js.UndefOr[scala.Double]] | scala.Boolean] = js.undefined
   var loadClass: js.UndefOr[java.lang.String] = js.undefined
   var modal: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined
   var modalContent: js.UndefOr[java.lang.String] = js.undefined
@@ -30,7 +30,7 @@ object VanillaModalConfig {
     `class`: java.lang.String = null,
     clickOutside: js.UndefOr[scala.Boolean] = js.undefined,
     close: java.lang.String = null,
-    closeKeys: js.Array[scala.Double] | js.Array[js.UndefOr[scala.Nothing]] | scala.Boolean = null,
+    closeKeys: js.Array[js.UndefOr[scala.Double]] | scala.Boolean = null,
     loadClass: java.lang.String = null,
     modal: java.lang.String | stdLib.HTMLElement = null,
     modalContent: java.lang.String = null,

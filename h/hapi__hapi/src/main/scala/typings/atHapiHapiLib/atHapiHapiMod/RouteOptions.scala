@@ -78,9 +78,7 @@ trait RouteOptions extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsext)
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#request-lifecycle)
     */
-  var ext: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in @hapi/hapi.@hapi/hapi.RouteRequestExtType ]:? @hapi/hapi.@hapi/hapi.RouteExtObject | std.Array<@hapi/hapi.@hapi/hapi.RouteExtObject>}
-    */ js.UndefOr[
+  var ext: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in @hapi/hapi.@hapi/hapi.RouteRequestExtType ]:? @hapi/hapi.@hapi/hapi.RouteExtObject | std.Array<@hapi/hapi.@hapi/hapi.RouteExtObject>}
     */ atHapiHapiLib.atHapiHapiLibStrings.RouteOptions with js.Any

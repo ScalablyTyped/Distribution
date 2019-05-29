@@ -25,6 +25,7 @@ class MatrixDropdownColumn protected ()
   val isVisible: scala.Boolean = js.native
   val locRequiredErrorText: LocalizableString = js.native
   val locTitle: LocalizableString = js.native
+  val locTotalFormat: LocalizableString = js.native
   var minWidth: java.lang.String = js.native
   var name: java.lang.String = js.native
   var readOnly: scala.Boolean = js.native
@@ -32,7 +33,12 @@ class MatrixDropdownColumn protected ()
   var requiredIf: java.lang.String = js.native
   val templateQuestion: Question = js.native
   var title: java.lang.String = js.native
+  var totalCurrency: java.lang.String = js.native
+  var totalDisplayStyle: java.lang.String = js.native
   var totalExpression: java.lang.String = js.native
+  var totalFormat: java.lang.String = js.native
+  var totalMaximumFractionDigits: scala.Double = js.native
+  var totalMinimumFractionDigits: scala.Double = js.native
   var totalType: java.lang.String = js.native
   var validators: js.Array[SurveyValidator] = js.native
   val value: java.lang.String = js.native

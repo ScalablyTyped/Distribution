@@ -102,6 +102,59 @@ trait Typeofts extends js.Object {
     oldProgram: typescriptLib.typescriptMod.BuilderProgram,
     configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
   ): typescriptLib.typescriptMod.BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost
+  ): typescriptLib.typescriptMod.BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.BuilderProgram
+  ): typescriptLib.typescriptMod.BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.BuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
+  ): typescriptLib.typescriptMod.BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.BuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
+    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
+  ): typescriptLib.typescriptMod.BuilderProgram = js.native
+  def createAbstractBuilder(rootNames: js.UndefOr[scala.Nothing], options: typescriptLib.typescriptMod.CompilerOptions): typescriptLib.typescriptMod.BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost
+  ): typescriptLib.typescriptMod.BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.BuilderProgram
+  ): typescriptLib.typescriptMod.BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.BuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
+  ): typescriptLib.typescriptMod.BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.BuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
+    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
+  ): typescriptLib.typescriptMod.BuilderProgram = js.native
   def createAbstractBuilder(rootNames: js.Array[java.lang.String]): typescriptLib.typescriptMod.BuilderProgram = js.native
   def createAbstractBuilder(
     rootNames: js.Array[java.lang.String],
@@ -156,59 +209,6 @@ trait Typeofts extends js.Object {
     configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
     projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
   ): typescriptLib.typescriptMod.BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost
-  ): typescriptLib.typescriptMod.BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.BuilderProgram
-  ): typescriptLib.typescriptMod.BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.BuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
-  ): typescriptLib.typescriptMod.BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.BuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
-    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
-  ): typescriptLib.typescriptMod.BuilderProgram = js.native
-  def createAbstractBuilder(rootNames: js.UndefOr[scala.Nothing], options: typescriptLib.typescriptMod.CompilerOptions): typescriptLib.typescriptMod.BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost
-  ): typescriptLib.typescriptMod.BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.BuilderProgram
-  ): typescriptLib.typescriptMod.BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.BuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
-  ): typescriptLib.typescriptMod.BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.BuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
-    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
-  ): typescriptLib.typescriptMod.BuilderProgram = js.native
   def createAdd(left: typescriptLib.typescriptMod.Expression, right: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.BinaryExpression = js.native
   def createArrayBindingPattern(elements: js.Array[typescriptLib.typescriptMod.ArrayBindingElement]): typescriptLib.typescriptMod.ArrayBindingPattern = js.native
   def createArrayLiteral(): typescriptLib.typescriptMod.ArrayLiteralExpression = js.native
@@ -216,39 +216,7 @@ trait Typeofts extends js.Object {
   def createArrayLiteral(elements: js.Array[typescriptLib.typescriptMod.Expression], multiLine: scala.Boolean): typescriptLib.typescriptMod.ArrayLiteralExpression = js.native
   def createArrayTypeNode(elementType: typescriptLib.typescriptMod.TypeNode): typescriptLib.typescriptMod.ArrayTypeNode = js.native
   def createArrowFunction(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: js.UndefOr[scala.Nothing],
-    body: typescriptLib.typescriptMod.ConciseBody
-  ): typescriptLib.typescriptMod.ArrowFunction = js.native
-  def createArrowFunction(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: typescriptLib.typescriptMod.EqualsGreaterThanToken,
-    body: typescriptLib.typescriptMod.ConciseBody
-  ): typescriptLib.typescriptMod.ArrowFunction = js.native
-  def createArrowFunction(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    equalsGreaterThanToken: js.UndefOr[scala.Nothing],
-    body: typescriptLib.typescriptMod.ConciseBody
-  ): typescriptLib.typescriptMod.ArrowFunction = js.native
-  def createArrowFunction(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    equalsGreaterThanToken: typescriptLib.typescriptMod.EqualsGreaterThanToken,
-    body: typescriptLib.typescriptMod.ConciseBody
-  ): typescriptLib.typescriptMod.ArrowFunction = js.native
-  def createArrowFunction(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -256,7 +224,7 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.ConciseBody
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -264,7 +232,7 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.ConciseBody
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -272,7 +240,7 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.ConciseBody
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -312,7 +280,7 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.ConciseBody
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -320,7 +288,7 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.ConciseBody
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -328,7 +296,7 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.ConciseBody
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -336,8 +304,40 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.ConciseBody
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    equalsGreaterThanToken: typescriptLib.typescriptMod.EqualsGreaterThanToken,
+    body: typescriptLib.typescriptMod.ConciseBody
+  ): typescriptLib.typescriptMod.ArrowFunction = js.native
+  def createArrowFunction(
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    equalsGreaterThanToken: js.UndefOr[scala.Nothing],
+    body: typescriptLib.typescriptMod.ConciseBody
+  ): typescriptLib.typescriptMod.ArrowFunction = js.native
+  def createArrowFunction(
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    equalsGreaterThanToken: typescriptLib.typescriptMod.EqualsGreaterThanToken,
+    body: typescriptLib.typescriptMod.ConciseBody
+  ): typescriptLib.typescriptMod.ArrowFunction = js.native
+  def createArrowFunction(
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    equalsGreaterThanToken: js.UndefOr[scala.Nothing],
+    body: typescriptLib.typescriptMod.ConciseBody
+  ): typescriptLib.typescriptMod.ArrowFunction = js.native
+  def createArrowFunction(
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode,
     equalsGreaterThanToken: typescriptLib.typescriptMod.EqualsGreaterThanToken,
@@ -365,6 +365,28 @@ trait Typeofts extends js.Object {
     operator: typescriptLib.typescriptMod.BinaryOperator,
     right: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.BinaryExpression = js.native
+  def createBindingElement(
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    propertyName: js.UndefOr[scala.Nothing],
+    name: java.lang.String
+  ): typescriptLib.typescriptMod.BindingElement = js.native
+  def createBindingElement(
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    propertyName: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.BindingElement = js.native
+  def createBindingElement(
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    propertyName: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName
+  ): typescriptLib.typescriptMod.BindingElement = js.native
+  def createBindingElement(
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    propertyName: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: java.lang.String, name: java.lang.String): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: js.UndefOr[scala.Nothing],
@@ -385,28 +407,6 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing],
-    name: java.lang.String
-  ): typescriptLib.typescriptMod.BindingElement = js.native
-  def createBindingElement(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.BindingElement = js.native
-  def createBindingElement(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName
-  ): typescriptLib.typescriptMod.BindingElement = js.native
-  def createBindingElement(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.BindingElement = js.native
-  def createBindingElement(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
     propertyName: typescriptLib.typescriptMod.PropertyName,
     name: java.lang.String
   ): typescriptLib.typescriptMod.BindingElement = js.native
@@ -429,45 +429,45 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    propertyName: java.lang.String,
+    propertyName: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    propertyName: java.lang.String,
+    propertyName: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    propertyName: java.lang.String,
+    propertyName: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    propertyName: java.lang.String,
+    propertyName: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing],
+    propertyName: java.lang.String,
     name: java.lang.String
   ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing],
+    propertyName: java.lang.String,
     name: java.lang.String,
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing],
+    propertyName: java.lang.String,
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    propertyName: js.UndefOr[scala.Nothing],
+    propertyName: java.lang.String,
     name: typescriptLib.typescriptMod.BindingName,
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.BindingElement = js.native
@@ -508,6 +508,11 @@ trait Typeofts extends js.Object {
   def createCall(expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.CallExpression = js.native
   def createCall(
     expression: typescriptLib.typescriptMod.Expression,
+    typeArguments: js.UndefOr[scala.Nothing],
+    argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
+  ): typescriptLib.typescriptMod.CallExpression = js.native
+  def createCall(
+    expression: typescriptLib.typescriptMod.Expression,
     typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode]
   ): typescriptLib.typescriptMod.CallExpression = js.native
   def createCall(
@@ -515,26 +520,21 @@ trait Typeofts extends js.Object {
     typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
   ): typescriptLib.typescriptMod.CallExpression = js.native
-  def createCall(
-    expression: typescriptLib.typescriptMod.Expression,
-    typeArguments: js.UndefOr[scala.Nothing],
-    argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
-  ): typescriptLib.typescriptMod.CallExpression = js.native
   def createCallSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.CallSignatureDeclaration = js.native
   def createCallSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.CallSignatureDeclaration = js.native
   def createCallSignature(
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.CallSignatureDeclaration = js.native
   def createCallSignature(
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.CallSignatureDeclaration = js.native
@@ -543,8 +543,8 @@ trait Typeofts extends js.Object {
     expression: typescriptLib.typescriptMod.Expression,
     statements: js.Array[typescriptLib.typescriptMod.Statement]
   ): typescriptLib.typescriptMod.CaseClause = js.native
-  def createCatchClause(variableDeclaration: java.lang.String, block: typescriptLib.typescriptMod.Block): typescriptLib.typescriptMod.CatchClause = js.native
   def createCatchClause(variableDeclaration: js.UndefOr[scala.Nothing], block: typescriptLib.typescriptMod.Block): typescriptLib.typescriptMod.CatchClause = js.native
+  def createCatchClause(variableDeclaration: java.lang.String, block: typescriptLib.typescriptMod.Block): typescriptLib.typescriptMod.CatchClause = js.native
   def createCatchClause(
     variableDeclaration: typescriptLib.typescriptMod.VariableDeclaration,
     block: typescriptLib.typescriptMod.Block
@@ -589,15 +589,6 @@ trait Typeofts extends js.Object {
     falseType: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ConditionalTypeNode = js.native
   def createConstructSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.ConstructSignatureDeclaration = js.native
-  def createConstructSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.ConstructSignatureDeclaration = js.native
-  def createConstructSignature(
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.ConstructSignatureDeclaration = js.native
@@ -606,13 +597,33 @@ trait Typeofts extends js.Object {
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ConstructSignatureDeclaration = js.native
+  def createConstructSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
+  ): typescriptLib.typescriptMod.ConstructSignatureDeclaration = js.native
+  def createConstructSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.ConstructSignatureDeclaration = js.native
   def createConstructor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
+  ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
+  def createConstructor(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    body: typescriptLib.typescriptMod.Block
+  ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
+  def createConstructor(
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
   def createConstructor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     body: typescriptLib.typescriptMod.Block
@@ -629,42 +640,31 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
   def createConstructor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
   def createConstructor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    body: typescriptLib.typescriptMod.Block
-  ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
-  def createConstructor(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
-  def createConstructor(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
   def createConstructorTypeNode(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.ConstructorTypeNode = js.native
   def createConstructorTypeNode(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ConstructorTypeNode = js.native
   def createConstructorTypeNode(
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.ConstructorTypeNode = js.native
   def createConstructorTypeNode(
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ConstructorTypeNode = js.native
@@ -703,6 +703,59 @@ trait Typeofts extends js.Object {
     host: typescriptLib.typescriptMod.BuilderProgramHost,
     oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram,
     configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
+  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost
+  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram
+  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
+  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
+    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
+  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: typescriptLib.typescriptMod.CompilerOptions): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost
+  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram
+  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
+  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
+    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
   ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
   def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.Array[java.lang.String]): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
   def createEmitAndSemanticDiagnosticsBuilderProgram(
@@ -758,80 +811,15 @@ trait Typeofts extends js.Object {
     configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
     projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
   ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost
-  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram
-  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
-  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
-    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
-  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: typescriptLib.typescriptMod.CompilerOptions): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost
-  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram
-  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
-  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
-    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
-  ): typescriptLib.typescriptMod.EmitAndSemanticDiagnosticsBuilderProgram = js.native
   def createEmptyStatement(): typescriptLib.typescriptMod.EmptyStatement = js.native
   def createEnumDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    members: js.Array[typescriptLib.typescriptMod.EnumMember]
-  ): typescriptLib.typescriptMod.EnumDeclaration = js.native
-  def createEnumDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    members: js.Array[typescriptLib.typescriptMod.EnumMember]
-  ): typescriptLib.typescriptMod.EnumDeclaration = js.native
-  def createEnumDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     members: js.Array[typescriptLib.typescriptMod.EnumMember]
   ): typescriptLib.typescriptMod.EnumDeclaration = js.native
   def createEnumDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
     members: js.Array[typescriptLib.typescriptMod.EnumMember]
@@ -849,14 +837,26 @@ trait Typeofts extends js.Object {
     members: js.Array[typescriptLib.typescriptMod.EnumMember]
   ): typescriptLib.typescriptMod.EnumDeclaration = js.native
   def createEnumDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     members: js.Array[typescriptLib.typescriptMod.EnumMember]
   ): typescriptLib.typescriptMod.EnumDeclaration = js.native
   def createEnumDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    members: js.Array[typescriptLib.typescriptMod.EnumMember]
+  ): typescriptLib.typescriptMod.EnumDeclaration = js.native
+  def createEnumDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    members: js.Array[typescriptLib.typescriptMod.EnumMember]
+  ): typescriptLib.typescriptMod.EnumDeclaration = js.native
+  def createEnumDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.Identifier,
     members: js.Array[typescriptLib.typescriptMod.EnumMember]
   ): typescriptLib.typescriptMod.EnumDeclaration = js.native
@@ -868,25 +868,13 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.EnumMember = js.native
   def createExportAssignment(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    isExportEquals: js.UndefOr[scala.Nothing],
-    expression: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportAssignment = js.native
-  def createExportAssignment(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    isExportEquals: scala.Boolean,
-    expression: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportAssignment = js.native
-  def createExportAssignment(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     isExportEquals: js.UndefOr[scala.Nothing],
     expression: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportAssignment = js.native
   def createExportAssignment(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     isExportEquals: scala.Boolean,
     expression: typescriptLib.typescriptMod.Expression
@@ -904,53 +892,43 @@ trait Typeofts extends js.Object {
     expression: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportAssignment = js.native
   def createExportAssignment(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     isExportEquals: js.UndefOr[scala.Nothing],
     expression: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportAssignment = js.native
   def createExportAssignment(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    isExportEquals: scala.Boolean,
+    expression: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportAssignment = js.native
+  def createExportAssignment(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    isExportEquals: js.UndefOr[scala.Nothing],
+    expression: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportAssignment = js.native
+  def createExportAssignment(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     isExportEquals: scala.Boolean,
     expression: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportAssignment = js.native
   def createExportDeclaration(): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def createExportDeclaration(decorators: js.Array[typescriptLib.typescriptMod.Decorator]): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier]
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    exportClause: typescriptLib.typescriptMod.NamedExports
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    exportClause: typescriptLib.typescriptMod.NamedExports,
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: typescriptLib.typescriptMod.NamedExports
   ): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: typescriptLib.typescriptMod.NamedExports,
     moduleSpecifier: typescriptLib.typescriptMod.Expression
@@ -973,36 +951,58 @@ trait Typeofts extends js.Object {
     exportClause: typescriptLib.typescriptMod.NamedExports,
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def createExportDeclaration(decorators: js.Array[typescriptLib.typescriptMod.Decorator]): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: typescriptLib.typescriptMod.NamedExports
   ): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: typescriptLib.typescriptMod.NamedExports,
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier]
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    exportClause: typescriptLib.typescriptMod.NamedExports
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    exportClause: typescriptLib.typescriptMod.NamedExports,
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def createExportDefault(expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.ExportAssignment = js.native
-  def createExportSpecifier(propertyName: java.lang.String, name: java.lang.String): typescriptLib.typescriptMod.ExportSpecifier = js.native
-  def createExportSpecifier(propertyName: java.lang.String, name: typescriptLib.typescriptMod.Identifier): typescriptLib.typescriptMod.ExportSpecifier = js.native
   def createExportSpecifier(propertyName: js.UndefOr[scala.Nothing], name: java.lang.String): typescriptLib.typescriptMod.ExportSpecifier = js.native
   def createExportSpecifier(propertyName: js.UndefOr[scala.Nothing], name: typescriptLib.typescriptMod.Identifier): typescriptLib.typescriptMod.ExportSpecifier = js.native
+  def createExportSpecifier(propertyName: java.lang.String, name: java.lang.String): typescriptLib.typescriptMod.ExportSpecifier = js.native
+  def createExportSpecifier(propertyName: java.lang.String, name: typescriptLib.typescriptMod.Identifier): typescriptLib.typescriptMod.ExportSpecifier = js.native
   def createExportSpecifier(propertyName: typescriptLib.typescriptMod.Identifier, name: java.lang.String): typescriptLib.typescriptMod.ExportSpecifier = js.native
   def createExportSpecifier(propertyName: typescriptLib.typescriptMod.Identifier, name: typescriptLib.typescriptMod.Identifier): typescriptLib.typescriptMod.ExportSpecifier = js.native
   def createExpressionStatement(expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.ExpressionStatement = js.native
+  def createExpressionWithTypeArguments(typeArguments: js.UndefOr[scala.Nothing], expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.ExpressionWithTypeArguments = js.native
   def createExpressionWithTypeArguments(
     typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     expression: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExpressionWithTypeArguments = js.native
-  def createExpressionWithTypeArguments(typeArguments: js.UndefOr[scala.Nothing], expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.ExpressionWithTypeArguments = js.native
   def createExternalModuleExport(exportName: typescriptLib.typescriptMod.Identifier): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def createExternalModuleReference(expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.ExternalModuleReference = js.native
   def createFalse(): typescriptLib.typescriptMod.BooleanLiteral with typescriptLib.typescriptMod.Token[typescriptLib.typescriptMod.SyntaxKind] = js.native
@@ -1110,15 +1110,6 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.FunctionExpression = js.native
   def createFunctionTypeNode(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.FunctionTypeNode = js.native
-  def createFunctionTypeNode(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.FunctionTypeNode = js.native
-  def createFunctionTypeNode(
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.FunctionTypeNode = js.native
@@ -1127,63 +1118,30 @@ trait Typeofts extends js.Object {
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.FunctionTypeNode = js.native
-  def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
+  def createFunctionTypeNode(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
-  def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
+  ): typescriptLib.typescriptMod.FunctionTypeNode = js.native
+  def createFunctionTypeNode(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  ): typescriptLib.typescriptMod.FunctionTypeNode = js.native
   def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    body: typescriptLib.typescriptMod.Block
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
-  def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
-  def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
-  def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    body: typescriptLib.typescriptMod.Block
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
-  def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -1191,20 +1149,20 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -1254,20 +1212,20 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -1275,21 +1233,63 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def createGetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    body: typescriptLib.typescriptMod.Block
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def createGetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def createGetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def createGetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    body: typescriptLib.typescriptMod.Block
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def createGetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def createGetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def createGetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -1329,25 +1329,13 @@ trait Typeofts extends js.Object {
     namedBindings: typescriptLib.typescriptMod.NamedImportBindings
   ): typescriptLib.typescriptMod.ImportClause = js.native
   def createImportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    importClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    importClause: typescriptLib.typescriptMod.ImportClause,
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ImportDeclaration = js.native
   def createImportDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: typescriptLib.typescriptMod.ImportClause,
     moduleSpecifier: typescriptLib.typescriptMod.Expression
@@ -1365,37 +1353,37 @@ trait Typeofts extends js.Object {
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ImportDeclaration = js.native
   def createImportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ImportDeclaration = js.native
   def createImportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    importClause: typescriptLib.typescriptMod.ImportClause,
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ImportDeclaration = js.native
+  def createImportDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    importClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ImportDeclaration = js.native
+  def createImportDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     importClause: typescriptLib.typescriptMod.ImportClause,
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ImportDeclaration = js.native
   def createImportEqualsDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    moduleReference: typescriptLib.typescriptMod.ModuleReference
-  ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    moduleReference: typescriptLib.typescriptMod.ModuleReference
-  ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     moduleReference: typescriptLib.typescriptMod.ModuleReference
   ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
   def createImportEqualsDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
     moduleReference: typescriptLib.typescriptMod.ModuleReference
@@ -1413,14 +1401,26 @@ trait Typeofts extends js.Object {
     moduleReference: typescriptLib.typescriptMod.ModuleReference
   ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
   def createImportEqualsDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     moduleReference: typescriptLib.typescriptMod.ModuleReference
   ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
   def createImportEqualsDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    moduleReference: typescriptLib.typescriptMod.ModuleReference
+  ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
+  def createImportEqualsDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    moduleReference: typescriptLib.typescriptMod.ModuleReference
+  ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
+  def createImportEqualsDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.Identifier,
     moduleReference: typescriptLib.typescriptMod.ModuleReference
   ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
@@ -1440,13 +1440,7 @@ trait Typeofts extends js.Object {
     isTypeOf: scala.Boolean
   ): typescriptLib.typescriptMod.ImportTypeNode = js.native
   def createIndexSignature(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.IndexSignatureDeclaration = js.native
-  def createIndexSignature(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
@@ -1458,8 +1452,14 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.IndexSignatureDeclaration = js.native
   def createIndexSignature(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.IndexSignatureDeclaration = js.native
+  def createIndexSignature(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.IndexSignatureDeclaration = js.native
@@ -1469,12 +1469,87 @@ trait Typeofts extends js.Object {
   def createInputFiles(
     javascriptText: java.lang.String,
     declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    declarationMapText: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: java.lang.String,
+    declarationMapText: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: java.lang.String,
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    declarationMapText: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: java.lang.String,
+    declarationMapPath: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: java.lang.String,
+    declarationMapPath: java.lang.String,
+    declarationMapText: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: java.lang.String
   ): typescriptLib.typescriptMod.InputFiles = js.native
   def createInputFiles(
     javascriptText: java.lang.String,
     declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    declarationMapText: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: java.lang.String,
+    declarationMapText: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: java.lang.String,
     javascriptMapText: java.lang.String
   ): typescriptLib.typescriptMod.InputFiles = js.native
   def createInputFiles(
@@ -1482,6 +1557,14 @@ trait Typeofts extends js.Object {
     declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
     javascriptMapText: java.lang.String,
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    declarationMapText: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    javascriptMapText: java.lang.String,
     declarationMapPath: java.lang.String
   ): typescriptLib.typescriptMod.InputFiles = js.native
   def createInputFiles(
@@ -1491,118 +1574,6 @@ trait Typeofts extends js.Object {
     javascriptMapText: java.lang.String,
     declarationMapPath: java.lang.String,
     declarationMapText: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    javascriptMapText: java.lang.String,
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    declarationMapText: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: java.lang.String,
-    declarationMapText: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    declarationMapText: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: java.lang.String,
-    declarationMapPath: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: java.lang.String,
-    declarationMapPath: java.lang.String,
-    declarationMapText: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: java.lang.String,
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    declarationMapText: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: java.lang.String,
-    declarationMapText: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    declarationMapText: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
-    javascriptPath: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    declarationPath: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
-    javascriptPath: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    declarationPath: java.lang.String,
-    declarationMapPath: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
-    javascriptPath: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    declarationPath: java.lang.String,
-    declarationMapPath: java.lang.String,
-    buildInfoPath: java.lang.String
-  ): typescriptLib.typescriptMod.InputFiles = js.native
-  def createInputFiles(
-    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
-    javascriptPath: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    declarationPath: java.lang.String,
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    buildInfoPath: java.lang.String
   ): typescriptLib.typescriptMod.InputFiles = js.native
   def createInputFiles(
     readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
@@ -1615,6 +1586,14 @@ trait Typeofts extends js.Object {
     javascriptPath: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     declarationPath: java.lang.String,
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    buildInfoPath: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    declarationPath: java.lang.String,
     declarationMapPath: java.lang.String
   ): typescriptLib.typescriptMod.InputFiles = js.native
   def createInputFiles(
@@ -1628,9 +1607,30 @@ trait Typeofts extends js.Object {
   def createInputFiles(
     readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
     javascriptPath: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
     declarationPath: java.lang.String,
     declarationMapPath: js.UndefOr[scala.Nothing],
+    buildInfoPath: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String,
+    declarationMapPath: java.lang.String
+  ): typescriptLib.typescriptMod.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String,
+    declarationMapPath: java.lang.String,
     buildInfoPath: java.lang.String
   ): typescriptLib.typescriptMod.InputFiles = js.native
   def createInterfaceDeclaration(
@@ -1672,23 +1672,23 @@ trait Typeofts extends js.Object {
   def createJsxJsxClosingFragment(): typescriptLib.typescriptMod.JsxClosingFragment = js.native
   def createJsxOpeningElement(
     tagName: typescriptLib.typescriptMod.JsxTagNameExpression,
-    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     attributes: typescriptLib.typescriptMod.JsxAttributes
   ): typescriptLib.typescriptMod.JsxOpeningElement = js.native
   def createJsxOpeningElement(
     tagName: typescriptLib.typescriptMod.JsxTagNameExpression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     attributes: typescriptLib.typescriptMod.JsxAttributes
   ): typescriptLib.typescriptMod.JsxOpeningElement = js.native
   def createJsxOpeningFragment(): typescriptLib.typescriptMod.JsxOpeningFragment = js.native
   def createJsxSelfClosingElement(
     tagName: typescriptLib.typescriptMod.JsxTagNameExpression,
-    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     attributes: typescriptLib.typescriptMod.JsxAttributes
   ): typescriptLib.typescriptMod.JsxSelfClosingElement = js.native
   def createJsxSelfClosingElement(
     tagName: typescriptLib.typescriptMod.JsxTagNameExpression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     attributes: typescriptLib.typescriptMod.JsxAttributes
   ): typescriptLib.typescriptMod.JsxSelfClosingElement = js.native
   def createJsxSpreadAttribute(expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.JsxSpreadAttribute = js.native
@@ -1749,16 +1749,22 @@ trait Typeofts extends js.Object {
   /** Create a unique temporary variable for use in a loop. */
   def createLoopVariable(): typescriptLib.typescriptMod.Identifier = js.native
   def createMappedTypeNode(
-    readonlyToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken | js.UndefOr[scala.Nothing],
+    readonlyToken: js.UndefOr[
+      typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken
+    ],
     typeParameter: typescriptLib.typescriptMod.TypeParameterDeclaration
   ): typescriptLib.typescriptMod.MappedTypeNode = js.native
   def createMappedTypeNode(
-    readonlyToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken | js.UndefOr[scala.Nothing],
+    readonlyToken: js.UndefOr[
+      typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken
+    ],
     typeParameter: typescriptLib.typescriptMod.TypeParameterDeclaration,
     questionToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.MappedTypeNode = js.native
   def createMappedTypeNode(
-    readonlyToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken | js.UndefOr[scala.Nothing],
+    readonlyToken: js.UndefOr[
+      typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken
+    ],
     typeParameter: typescriptLib.typescriptMod.TypeParameterDeclaration,
     questionToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode
@@ -1795,58 +1801,6 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.MethodDeclaration = js.native
   def createMethodSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: java.lang.String
-  ): typescriptLib.typescriptMod.MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.PropertyName
-  ): typescriptLib.typescriptMod.MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    name: java.lang.String
-  ): typescriptLib.typescriptMod.MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    name: typescriptLib.typescriptMod.PropertyName
-  ): typescriptLib.typescriptMod.MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.MethodSignature = js.native
-  def createMethodSignature(
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -1893,6 +1847,58 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.MethodSignature = js.native
   def createMethodSignature(
     typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    name: java.lang.String
+  ): typescriptLib.typescriptMod.MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName
+  ): typescriptLib.typescriptMod.MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    name: java.lang.String
+  ): typescriptLib.typescriptMod.MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    name: typescriptLib.typescriptMod.PropertyName
+  ): typescriptLib.typescriptMod.MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode,
     name: typescriptLib.typescriptMod.PropertyName,
@@ -1902,50 +1908,25 @@ trait Typeofts extends js.Object {
   def createModifiersFromModifierFlags(flags: typescriptLib.typescriptMod.ModifierFlags): js.Array[typescriptLib.typescriptMod.Modifier] = js.native
   def createModuleBlock(statements: js.Array[typescriptLib.typescriptMod.Statement]): typescriptLib.typescriptMod.ModuleBlock = js.native
   def createModuleDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.ModuleName
-  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.ModuleName,
-    body: js.UndefOr[scala.Nothing],
-    flags: typescriptLib.typescriptMod.NodeFlags
-  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.ModuleName,
-    body: typescriptLib.typescriptMod.ModuleBody
-  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.ModuleName,
-    body: typescriptLib.typescriptMod.ModuleBody,
-    flags: typescriptLib.typescriptMod.NodeFlags
-  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName,
     body: js.UndefOr[scala.Nothing],
     flags: typescriptLib.typescriptMod.NodeFlags
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName,
     body: typescriptLib.typescriptMod.ModuleBody
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName,
     body: typescriptLib.typescriptMod.ModuleBody,
@@ -1977,26 +1958,51 @@ trait Typeofts extends js.Object {
     flags: typescriptLib.typescriptMod.NodeFlags
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName,
     body: js.UndefOr[scala.Nothing],
     flags: typescriptLib.typescriptMod.NodeFlags
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName,
     body: typescriptLib.typescriptMod.ModuleBody
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.ModuleName,
+    body: typescriptLib.typescriptMod.ModuleBody,
+    flags: typescriptLib.typescriptMod.NodeFlags
+  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
+  def createModuleDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.ModuleName
+  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
+  def createModuleDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.ModuleName,
+    body: js.UndefOr[scala.Nothing],
+    flags: typescriptLib.typescriptMod.NodeFlags
+  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
+  def createModuleDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.ModuleName,
+    body: typescriptLib.typescriptMod.ModuleBody
+  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
+  def createModuleDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.ModuleName,
     body: typescriptLib.typescriptMod.ModuleBody,
     flags: typescriptLib.typescriptMod.NodeFlags
@@ -2013,16 +2019,16 @@ trait Typeofts extends js.Object {
   def createNew(expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.NewExpression = js.native
   def createNew(
     expression: typescriptLib.typescriptMod.Expression,
+    typeArguments: js.UndefOr[scala.Nothing],
+    argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
+  ): typescriptLib.typescriptMod.NewExpression = js.native
+  def createNew(
+    expression: typescriptLib.typescriptMod.Expression,
     typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode]
   ): typescriptLib.typescriptMod.NewExpression = js.native
   def createNew(
     expression: typescriptLib.typescriptMod.Expression,
     typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
-    argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
-  ): typescriptLib.typescriptMod.NewExpression = js.native
-  def createNew(
-    expression: typescriptLib.typescriptMod.Expression,
-    typeArguments: js.UndefOr[scala.Nothing],
     argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
   ): typescriptLib.typescriptMod.NewExpression = js.native
   def createNoSubstitutionTemplateLiteral(text: java.lang.String): typescriptLib.typescriptMod.NoSubstitutionTemplateLiteral = js.native
@@ -2055,140 +2061,20 @@ trait Typeofts extends js.Object {
   def createOptimisticUniqueName(text: java.lang.String): typescriptLib.typescriptMod.Identifier = js.native
   def createOptionalTypeNode(`type`: typescriptLib.typescriptMod.TypeNode): typescriptLib.typescriptMod.OptionalTypeNode = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: java.lang.String
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: typescriptLib.typescriptMod.BindingName
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionToken: typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -2196,7 +2082,7 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -2205,20 +2091,20 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
     questionToken: typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -2226,7 +2112,7 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -2235,20 +2121,20 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
     questionToken: typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -2256,7 +2142,7 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -2265,20 +2151,20 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
     questionToken: typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
@@ -2286,7 +2172,7 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
@@ -2415,20 +2301,20 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionToken: typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -2436,7 +2322,7 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -2445,20 +2331,20 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
     questionToken: typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -2466,7 +2352,7 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -2475,20 +2361,20 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
     questionToken: typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -2496,7 +2382,7 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -2505,20 +2391,20 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
     questionToken: typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
@@ -2526,8 +2412,128 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: java.lang.String
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: typescriptLib.typescriptMod.BindingName
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
     questionToken: typescriptLib.typescriptMod.QuestionToken,
@@ -2606,77 +2612,25 @@ trait Typeofts extends js.Object {
     configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
   ): typescriptLib.typescriptMod.Program = js.native
   def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -2684,25 +2638,25 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -2762,25 +2716,25 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -2788,26 +2742,78 @@ trait Typeofts extends js.Object {
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def createProperty(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def createProperty(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def createProperty(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def createProperty(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def createProperty(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def createProperty(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def createProperty(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def createProperty(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def createProperty(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -2821,6 +2827,44 @@ trait Typeofts extends js.Object {
     name: typescriptLib.typescriptMod.PropertyName,
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.PropertyAssignment = js.native
+  def createPropertySignature(modifiers: js.UndefOr[scala.Nothing], name: java.lang.String): typescriptLib.typescriptMod.PropertySignature = js.native
+  def createPropertySignature(
+    modifiers: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def createPropertySignature(
+    modifiers: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def createPropertySignature(
+    modifiers: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def createPropertySignature(modifiers: js.UndefOr[scala.Nothing], name: typescriptLib.typescriptMod.PropertyName): typescriptLib.typescriptMod.PropertySignature = js.native
+  def createPropertySignature(
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def createPropertySignature(
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def createPropertySignature(
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
   def createPropertySignature(modifiers: js.Array[typescriptLib.typescriptMod.Modifier], name: java.lang.String): typescriptLib.typescriptMod.PropertySignature = js.native
   def createPropertySignature(
     modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
@@ -2857,44 +2901,6 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PropertySignature = js.native
   def createPropertySignature(
     modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def createPropertySignature(modifiers: js.UndefOr[scala.Nothing], name: java.lang.String): typescriptLib.typescriptMod.PropertySignature = js.native
-  def createPropertySignature(
-    modifiers: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def createPropertySignature(
-    modifiers: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def createPropertySignature(
-    modifiers: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def createPropertySignature(modifiers: js.UndefOr[scala.Nothing], name: typescriptLib.typescriptMod.PropertyName): typescriptLib.typescriptMod.PropertySignature = js.native
-  def createPropertySignature(
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def createPropertySignature(
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def createPropertySignature(
-    modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionToken: typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -2961,6 +2967,59 @@ trait Typeofts extends js.Object {
     oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram,
     configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
   ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost
+  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram
+  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
+  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
+    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
+  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: typescriptLib.typescriptMod.CompilerOptions): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost
+  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram
+  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
+  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.CompilerHost,
+    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
+    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
+  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
   def createSemanticDiagnosticsBuilderProgram(rootNames: js.Array[java.lang.String]): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
   def createSemanticDiagnosticsBuilderProgram(
     rootNames: js.Array[java.lang.String],
@@ -3015,107 +3074,28 @@ trait Typeofts extends js.Object {
     configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
     projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
   ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost
-  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram
-  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
-  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
-    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
-  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: typescriptLib.typescriptMod.CompilerOptions): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost
-  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram
-  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic]
-  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.CompilerHost,
-    oldProgram: typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
-    projectReferences: js.Array[typescriptLib.typescriptMod.ProjectReference]
-  ): typescriptLib.typescriptMod.SemanticDiagnosticsBuilderProgram = js.native
   def createSemicolonClassElement(): typescriptLib.typescriptMod.SemicolonClassElement = js.native
   def createSetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
-  def createSetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    body: typescriptLib.typescriptMod.Block
-  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
-  def createSetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
-  def createSetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    body: typescriptLib.typescriptMod.Block
-  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
-  def createSetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -3148,27 +3128,53 @@ trait Typeofts extends js.Object {
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    body: typescriptLib.typescriptMod.Block
+  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
+  def createSetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
+  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
+  def createSetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    body: typescriptLib.typescriptMod.Block
+  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
+  def createSetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
+  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
+  def createSetAccessor(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     body: typescriptLib.typescriptMod.Block
@@ -3223,12 +3229,12 @@ trait Typeofts extends js.Object {
   /** @deprecated */ def createTaggedTemplate(tag: typescriptLib.typescriptMod.Expression, template: typescriptLib.typescriptMod.TemplateLiteral): typescriptLib.typescriptMod.TaggedTemplateExpression = js.native
   def createTaggedTemplate(
     tag: typescriptLib.typescriptMod.Expression,
-    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     template: typescriptLib.typescriptMod.TemplateLiteral
   ): typescriptLib.typescriptMod.TaggedTemplateExpression = js.native
   def createTaggedTemplate(
     tag: typescriptLib.typescriptMod.Expression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     template: typescriptLib.typescriptMod.TemplateLiteral
   ): typescriptLib.typescriptMod.TaggedTemplateExpression = js.native
   def createTempVariable(): typescriptLib.typescriptMod.Identifier = js.native
@@ -3271,86 +3277,9 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.TryStatement = js.native
   def createTupleTypeNode(elementTypes: js.Array[typescriptLib.typescriptMod.TypeNode]): typescriptLib.typescriptMod.TupleTypeNode = js.native
   def createTypeAliasDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
@@ -3364,7 +3293,7 @@ trait Typeofts extends js.Object {
   def createTypeAliasDeclaration(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
+    name: typescriptLib.typescriptMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
@@ -3377,9 +3306,86 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
   def createTypeAliasDeclaration(
     decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
   def createTypeAssertion(`type`: typescriptLib.typescriptMod.TypeNode, expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.TypeAssertion = js.native
@@ -3427,9 +3433,9 @@ trait Typeofts extends js.Object {
   /** Create a unique name based on the supplied text. */
   def createUniqueName(text: java.lang.String): typescriptLib.typescriptMod.Identifier = js.native
   def createUnparsedSourceFile(text: java.lang.String): typescriptLib.typescriptMod.UnparsedSource = js.native
+  def createUnparsedSourceFile(text: java.lang.String, mapPath: js.UndefOr[scala.Nothing], map: java.lang.String): typescriptLib.typescriptMod.UnparsedSource = js.native
   def createUnparsedSourceFile(text: java.lang.String, mapPath: java.lang.String): typescriptLib.typescriptMod.UnparsedSource = js.native
   def createUnparsedSourceFile(text: java.lang.String, mapPath: java.lang.String, map: java.lang.String): typescriptLib.typescriptMod.UnparsedSource = js.native
-  def createUnparsedSourceFile(text: java.lang.String, mapPath: js.UndefOr[scala.Nothing], map: java.lang.String): typescriptLib.typescriptMod.UnparsedSource = js.native
   @JSName("createUnparsedSourceFile")
   def createUnparsedSourceFile_dts(
     inputFile: typescriptLib.typescriptMod.InputFiles,
@@ -3472,19 +3478,19 @@ trait Typeofts extends js.Object {
     flags: typescriptLib.typescriptMod.NodeFlags
   ): typescriptLib.typescriptMod.VariableDeclarationList = js.native
   def createVariableStatement(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     declarationList: js.Array[typescriptLib.typescriptMod.VariableDeclaration]
   ): typescriptLib.typescriptMod.VariableStatement = js.native
   def createVariableStatement(
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     declarationList: typescriptLib.typescriptMod.VariableDeclarationList
   ): typescriptLib.typescriptMod.VariableStatement = js.native
   def createVariableStatement(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     declarationList: js.Array[typescriptLib.typescriptMod.VariableDeclaration]
   ): typescriptLib.typescriptMod.VariableStatement = js.native
   def createVariableStatement(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     declarationList: typescriptLib.typescriptMod.VariableDeclarationList
   ): typescriptLib.typescriptMod.VariableStatement = js.native
   def createVoid(expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.VoidExpression = js.native
@@ -3621,8 +3627,8 @@ trait Typeofts extends js.Object {
     fileExists: js.Function1[/* fileName */ java.lang.String, scala.Boolean],
     configName: java.lang.String
   ): js.UndefOr[java.lang.String] = js.native
-  def flattenDiagnosticMessageText(messageText: java.lang.String, newLine: java.lang.String): java.lang.String = js.native
   def flattenDiagnosticMessageText(messageText: js.UndefOr[scala.Nothing], newLine: java.lang.String): java.lang.String = js.native
+  def flattenDiagnosticMessageText(messageText: java.lang.String, newLine: java.lang.String): java.lang.String = js.native
   def flattenDiagnosticMessageText(messageText: typescriptLib.typescriptMod.DiagnosticMessageChain, newLine: java.lang.String): java.lang.String = js.native
   /**
     * Invokes a callback for each child of the given node. The 'cbNode' callback is invoked for all child nodes
@@ -3854,7 +3860,7 @@ trait Typeofts extends js.Object {
   @JSName("getOriginalNode")
   def getOriginalNode_Node(node: typescriptLib.typescriptMod.Node): typescriptLib.typescriptMod.Node = js.native
   @JSName("getOriginalNode")
-  def getOriginalNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `getOriginalNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: typescriptLib.typescriptMod.Node,
     nodeTest: js.Function1[/* node */ js.UndefOr[typescriptLib.typescriptMod.Node], /* is T */ scala.Boolean]
   ): js.UndefOr[T] = js.native
@@ -3882,7 +3888,7 @@ trait Typeofts extends js.Object {
     * @returns The original parse tree node if found; otherwise, undefined.
     */
   @JSName("getParseTreeNode")
-  def getParseTreeNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](node: typescriptLib.typescriptMod.Node): js.UndefOr[T] = js.native
+  def `getParseTreeNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](node: typescriptLib.typescriptMod.Node): js.UndefOr[T] = js.native
   /**
     * Reads the config file, reports errors if any and exits if the config file cannot be found
     */
@@ -4383,6 +4389,19 @@ trait Typeofts extends js.Object {
     */
   def resolveProjectReferencePath(ref: typescriptLib.typescriptMod.ProjectReference): typescriptLib.typescriptMod.ResolvedConfigFileName = js.native
   def resolveTripleslashReference(moduleName: java.lang.String, containingFile: java.lang.String): java.lang.String = js.native
+  def resolveTypeReferenceDirective(
+    typeReferenceDirectiveName: java.lang.String,
+    containingFile: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.ModuleResolutionHost
+  ): typescriptLib.typescriptMod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+  def resolveTypeReferenceDirective(
+    typeReferenceDirectiveName: java.lang.String,
+    containingFile: js.UndefOr[scala.Nothing],
+    options: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.ModuleResolutionHost,
+    redirectedReference: typescriptLib.typescriptMod.ResolvedProjectReference
+  ): typescriptLib.typescriptMod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   /**
     * @param {string | undefined} containingFile - file that contains type reference directive, can be undefined if containing file is unknown.
     * This is possible in case if resolution is performed for directives specified via 'types' parameter. In this case initial path for secondary lookups
@@ -4397,19 +4416,6 @@ trait Typeofts extends js.Object {
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: java.lang.String,
     containingFile: java.lang.String,
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.ModuleResolutionHost,
-    redirectedReference: typescriptLib.typescriptMod.ResolvedProjectReference
-  ): typescriptLib.typescriptMod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-  def resolveTypeReferenceDirective(
-    typeReferenceDirectiveName: java.lang.String,
-    containingFile: js.UndefOr[scala.Nothing],
-    options: typescriptLib.typescriptMod.CompilerOptions,
-    host: typescriptLib.typescriptMod.ModuleResolutionHost
-  ): typescriptLib.typescriptMod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-  def resolveTypeReferenceDirective(
-    typeReferenceDirectiveName: java.lang.String,
-    containingFile: js.UndefOr[scala.Nothing],
     options: typescriptLib.typescriptMod.CompilerOptions,
     host: typescriptLib.typescriptMod.ModuleResolutionHost,
     redirectedReference: typescriptLib.typescriptMod.ResolvedProjectReference
@@ -4527,25 +4533,7 @@ trait Typeofts extends js.Object {
   def updateArrayTypeNode(node: typescriptLib.typescriptMod.ArrayTypeNode, elementType: typescriptLib.typescriptMod.TypeNode): typescriptLib.typescriptMod.ArrayTypeNode = js.native
   def updateArrowFunction(
     node: typescriptLib.typescriptMod.ArrowFunction,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: typescriptLib.typescriptMod.Token[typescriptLib.typescriptMod.SyntaxKind],
-    body: typescriptLib.typescriptMod.ConciseBody
-  ): typescriptLib.typescriptMod.ArrowFunction = js.native
-  def updateArrowFunction(
-    node: typescriptLib.typescriptMod.ArrowFunction,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    equalsGreaterThanToken: typescriptLib.typescriptMod.Token[typescriptLib.typescriptMod.SyntaxKind],
-    body: typescriptLib.typescriptMod.ConciseBody
-  ): typescriptLib.typescriptMod.ArrowFunction = js.native
-  def updateArrowFunction(
-    node: typescriptLib.typescriptMod.ArrowFunction,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -4554,7 +4542,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def updateArrowFunction(
     node: typescriptLib.typescriptMod.ArrowFunction,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -4581,7 +4569,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def updateArrowFunction(
     node: typescriptLib.typescriptMod.ArrowFunction,
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -4590,8 +4578,26 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ArrowFunction = js.native
   def updateArrowFunction(
     node: typescriptLib.typescriptMod.ArrowFunction,
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    equalsGreaterThanToken: typescriptLib.typescriptMod.Token[typescriptLib.typescriptMod.SyntaxKind],
+    body: typescriptLib.typescriptMod.ConciseBody
+  ): typescriptLib.typescriptMod.ArrowFunction = js.native
+  def updateArrowFunction(
+    node: typescriptLib.typescriptMod.ArrowFunction,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    equalsGreaterThanToken: typescriptLib.typescriptMod.Token[typescriptLib.typescriptMod.SyntaxKind],
+    body: typescriptLib.typescriptMod.ConciseBody
+  ): typescriptLib.typescriptMod.ArrowFunction = js.native
+  def updateArrowFunction(
+    node: typescriptLib.typescriptMod.ArrowFunction,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode,
     equalsGreaterThanToken: typescriptLib.typescriptMod.Token[typescriptLib.typescriptMod.SyntaxKind],
@@ -4693,13 +4699,13 @@ trait Typeofts extends js.Object {
   def updateCall(
     node: typescriptLib.typescriptMod.CallExpression,
     expression: typescriptLib.typescriptMod.Expression,
-    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
   ): typescriptLib.typescriptMod.CallExpression = js.native
   def updateCall(
     node: typescriptLib.typescriptMod.CallExpression,
     expression: typescriptLib.typescriptMod.Expression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
   ): typescriptLib.typescriptMod.CallExpression = js.native
   def updateCallSignature(
@@ -4754,81 +4760,9 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ClassDeclaration = js.native
   def updateClassExpression(
     node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.ClassElement]
-  ): typescriptLib.typescriptMod.ClassExpression = js.native
-  def updateClassExpression(
-    node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.ClassElement]
-  ): typescriptLib.typescriptMod.ClassExpression = js.native
-  def updateClassExpression(
-    node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.ClassElement]
-  ): typescriptLib.typescriptMod.ClassExpression = js.native
-  def updateClassExpression(
-    node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.ClassElement]
-  ): typescriptLib.typescriptMod.ClassExpression = js.native
-  def updateClassExpression(
-    node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.ClassElement]
-  ): typescriptLib.typescriptMod.ClassExpression = js.native
-  def updateClassExpression(
-    node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.ClassElement]
-  ): typescriptLib.typescriptMod.ClassExpression = js.native
-  def updateClassExpression(
-    node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.ClassElement]
-  ): typescriptLib.typescriptMod.ClassExpression = js.native
-  def updateClassExpression(
-    node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.ClassElement]
-  ): typescriptLib.typescriptMod.ClassExpression = js.native
-  def updateClassExpression(
-    node: typescriptLib.typescriptMod.ClassExpression,
     modifiers: js.UndefOr[scala.Nothing],
     name: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.ClassElement]
-  ): typescriptLib.typescriptMod.ClassExpression = js.native
-  def updateClassExpression(
-    node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
     members: js.Array[typescriptLib.typescriptMod.ClassElement]
   ): typescriptLib.typescriptMod.ClassExpression = js.native
@@ -4844,6 +4778,22 @@ trait Typeofts extends js.Object {
     node: typescriptLib.typescriptMod.ClassExpression,
     modifiers: js.UndefOr[scala.Nothing],
     name: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.ClassElement]
+  ): typescriptLib.typescriptMod.ClassExpression = js.native
+  def updateClassExpression(
+    node: typescriptLib.typescriptMod.ClassExpression,
+    modifiers: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.ClassElement]
+  ): typescriptLib.typescriptMod.ClassExpression = js.native
+  def updateClassExpression(
+    node: typescriptLib.typescriptMod.ClassExpression,
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
     members: js.Array[typescriptLib.typescriptMod.ClassElement]
@@ -4852,7 +4802,7 @@ trait Typeofts extends js.Object {
     node: typescriptLib.typescriptMod.ClassExpression,
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
     members: js.Array[typescriptLib.typescriptMod.ClassElement]
   ): typescriptLib.typescriptMod.ClassExpression = js.native
@@ -4868,16 +4818,72 @@ trait Typeofts extends js.Object {
     node: typescriptLib.typescriptMod.ClassExpression,
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.ClassElement]
+  ): typescriptLib.typescriptMod.ClassExpression = js.native
+  def updateClassExpression(
+    node: typescriptLib.typescriptMod.ClassExpression,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: js.UndefOr[scala.Nothing],
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.ClassElement]
+  ): typescriptLib.typescriptMod.ClassExpression = js.native
+  def updateClassExpression(
+    node: typescriptLib.typescriptMod.ClassExpression,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
     members: js.Array[typescriptLib.typescriptMod.ClassElement]
   ): typescriptLib.typescriptMod.ClassExpression = js.native
   def updateClassExpression(
     node: typescriptLib.typescriptMod.ClassExpression,
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.ClassElement]
+  ): typescriptLib.typescriptMod.ClassExpression = js.native
+  def updateClassExpression(
+    node: typescriptLib.typescriptMod.ClassExpression,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.ClassElement]
+  ): typescriptLib.typescriptMod.ClassExpression = js.native
+  def updateClassExpression(
+    node: typescriptLib.typescriptMod.ClassExpression,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.ClassElement]
+  ): typescriptLib.typescriptMod.ClassExpression = js.native
+  def updateClassExpression(
+    node: typescriptLib.typescriptMod.ClassExpression,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.ClassElement]
+  ): typescriptLib.typescriptMod.ClassExpression = js.native
+  def updateClassExpression(
+    node: typescriptLib.typescriptMod.ClassExpression,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.ClassElement]
+  ): typescriptLib.typescriptMod.ClassExpression = js.native
+  def updateClassExpression(
+    node: typescriptLib.typescriptMod.ClassExpression,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
     members: js.Array[typescriptLib.typescriptMod.ClassElement]
   ): typescriptLib.typescriptMod.ClassExpression = js.native
   def updateCommaList(
@@ -4927,26 +4933,13 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ConstructSignatureDeclaration = js.native
   def updateConstructor(
     node: typescriptLib.typescriptMod.ConstructorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
-  def updateConstructor(
-    node: typescriptLib.typescriptMod.ConstructorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    body: typescriptLib.typescriptMod.Block
-  ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
-  def updateConstructor(
-    node: typescriptLib.typescriptMod.ConstructorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
   def updateConstructor(
     node: typescriptLib.typescriptMod.ConstructorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     body: typescriptLib.typescriptMod.Block
@@ -4966,14 +4959,27 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
   def updateConstructor(
     node: typescriptLib.typescriptMod.ConstructorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
   def updateConstructor(
     node: typescriptLib.typescriptMod.ConstructorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    body: typescriptLib.typescriptMod.Block
+  ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
+  def updateConstructor(
+    node: typescriptLib.typescriptMod.ConstructorDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
+  ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
+  def updateConstructor(
+    node: typescriptLib.typescriptMod.ConstructorDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     body: typescriptLib.typescriptMod.Block
   ): typescriptLib.typescriptMod.ConstructorDeclaration = js.native
@@ -5022,14 +5028,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ElementAccessExpression = js.native
   def updateEnumDeclaration(
     node: typescriptLib.typescriptMod.EnumDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    members: js.Array[typescriptLib.typescriptMod.EnumMember]
-  ): typescriptLib.typescriptMod.EnumDeclaration = js.native
-  def updateEnumDeclaration(
-    node: typescriptLib.typescriptMod.EnumDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
     members: js.Array[typescriptLib.typescriptMod.EnumMember]
@@ -5043,8 +5042,15 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.EnumDeclaration = js.native
   def updateEnumDeclaration(
     node: typescriptLib.typescriptMod.EnumDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    members: js.Array[typescriptLib.typescriptMod.EnumMember]
+  ): typescriptLib.typescriptMod.EnumDeclaration = js.native
+  def updateEnumDeclaration(
+    node: typescriptLib.typescriptMod.EnumDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.Identifier,
     members: js.Array[typescriptLib.typescriptMod.EnumMember]
   ): typescriptLib.typescriptMod.EnumDeclaration = js.native
@@ -5056,13 +5062,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.EnumMember = js.native
   def updateExportAssignment(
     node: typescriptLib.typescriptMod.ExportAssignment,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    expression: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportAssignment = js.native
-  def updateExportAssignment(
-    node: typescriptLib.typescriptMod.ExportAssignment,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     expression: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportAssignment = js.native
@@ -5074,11 +5074,62 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ExportAssignment = js.native
   def updateExportAssignment(
     node: typescriptLib.typescriptMod.ExportAssignment,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    expression: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportAssignment = js.native
+  def updateExportAssignment(
+    node: typescriptLib.typescriptMod.ExportAssignment,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     expression: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportAssignment = js.native
   def updateExportDeclaration(node: typescriptLib.typescriptMod.ExportDeclaration): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: typescriptLib.typescriptMod.NamedExports
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: typescriptLib.typescriptMod.NamedExports,
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier]
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    exportClause: typescriptLib.typescriptMod.NamedExports
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    exportClause: typescriptLib.typescriptMod.NamedExports,
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def updateExportDeclaration(
     node: typescriptLib.typescriptMod.ExportDeclaration,
     decorators: js.Array[typescriptLib.typescriptMod.Decorator]
@@ -5086,6 +5137,26 @@ trait Typeofts extends js.Object {
   def updateExportDeclaration(
     node: typescriptLib.typescriptMod.ExportDeclaration,
     decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: typescriptLib.typescriptMod.NamedExports
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: typescriptLib.typescriptMod.NamedExports,
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: typescriptLib.typescriptMod.ExportDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.Array[typescriptLib.typescriptMod.Modifier]
   ): typescriptLib.typescriptMod.ExportDeclaration = js.native
   def updateExportDeclaration(
@@ -5105,71 +5176,6 @@ trait Typeofts extends js.Object {
     node: typescriptLib.typescriptMod.ExportDeclaration,
     decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    exportClause: typescriptLib.typescriptMod.NamedExports,
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    exportClause: typescriptLib.typescriptMod.NamedExports
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    exportClause: typescriptLib.typescriptMod.NamedExports,
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier]
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    exportClause: typescriptLib.typescriptMod.NamedExports
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    exportClause: typescriptLib.typescriptMod.NamedExports,
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    exportClause: typescriptLib.typescriptMod.NamedExports
-  ): typescriptLib.typescriptMod.ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: typescriptLib.typescriptMod.ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
     exportClause: typescriptLib.typescriptMod.NamedExports,
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExportDeclaration = js.native
@@ -5189,12 +5195,12 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ExpressionStatement = js.native
   def updateExpressionWithTypeArguments(
     node: typescriptLib.typescriptMod.ExpressionWithTypeArguments,
-    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     expression: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExpressionWithTypeArguments = js.native
   def updateExpressionWithTypeArguments(
     node: typescriptLib.typescriptMod.ExpressionWithTypeArguments,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     expression: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ExpressionWithTypeArguments = js.native
   def updateExternalModuleReference(
@@ -5341,47 +5347,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.FunctionTypeNode = js.native
   def updateGetAccessor(
     node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
-  def updateGetAccessor(
-    node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    body: typescriptLib.typescriptMod.Block
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
-  def updateGetAccessor(
-    node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
-  def updateGetAccessor(
-    node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    body: typescriptLib.typescriptMod.Block
-  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
-  def updateGetAccessor(
-    node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -5390,7 +5363,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -5398,7 +5371,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -5440,14 +5413,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -5456,7 +5429,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -5464,8 +5437,41 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: typescriptLib.typescriptMod.GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    body: typescriptLib.typescriptMod.Block
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def updateGetAccessor(
+    node: typescriptLib.typescriptMod.GetAccessorDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def updateGetAccessor(
+    node: typescriptLib.typescriptMod.GetAccessorDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    body: typescriptLib.typescriptMod.Block
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def updateGetAccessor(
+    node: typescriptLib.typescriptMod.GetAccessorDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.GetAccessorDeclaration = js.native
+  def updateGetAccessor(
+    node: typescriptLib.typescriptMod.GetAccessorDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -5501,28 +5507,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ImportClause = js.native
   def updateImportDeclaration(
     node: typescriptLib.typescriptMod.ImportDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    importClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: typescriptLib.typescriptMod.ImportDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    importClause: typescriptLib.typescriptMod.ImportClause,
-    moduleSpecifier: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: typescriptLib.typescriptMod.ImportDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ImportDeclaration = js.native
   def updateImportDeclaration(
     node: typescriptLib.typescriptMod.ImportDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: typescriptLib.typescriptMod.ImportClause,
     moduleSpecifier: typescriptLib.typescriptMod.Expression
@@ -5543,28 +5535,35 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ImportDeclaration = js.native
   def updateImportDeclaration(
     node: typescriptLib.typescriptMod.ImportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ImportDeclaration = js.native
   def updateImportDeclaration(
     node: typescriptLib.typescriptMod.ImportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    importClause: typescriptLib.typescriptMod.ImportClause,
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ImportDeclaration = js.native
+  def updateImportDeclaration(
+    node: typescriptLib.typescriptMod.ImportDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    importClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ImportDeclaration = js.native
+  def updateImportDeclaration(
+    node: typescriptLib.typescriptMod.ImportDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     importClause: typescriptLib.typescriptMod.ImportClause,
     moduleSpecifier: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.ImportDeclaration = js.native
   def updateImportEqualsDeclaration(
     node: typescriptLib.typescriptMod.ImportEqualsDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    moduleReference: typescriptLib.typescriptMod.ModuleReference
-  ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
-  def updateImportEqualsDeclaration(
-    node: typescriptLib.typescriptMod.ImportEqualsDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
     moduleReference: typescriptLib.typescriptMod.ModuleReference
@@ -5578,8 +5577,15 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
   def updateImportEqualsDeclaration(
     node: typescriptLib.typescriptMod.ImportEqualsDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    moduleReference: typescriptLib.typescriptMod.ModuleReference
+  ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
+  def updateImportEqualsDeclaration(
+    node: typescriptLib.typescriptMod.ImportEqualsDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.Identifier,
     moduleReference: typescriptLib.typescriptMod.ModuleReference
   ): typescriptLib.typescriptMod.ImportEqualsDeclaration = js.native
@@ -5614,14 +5620,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ImportTypeNode = js.native
   def updateIndexSignature(
     node: typescriptLib.typescriptMod.IndexSignatureDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.IndexSignatureDeclaration = js.native
-  def updateIndexSignature(
-    node: typescriptLib.typescriptMod.IndexSignatureDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
@@ -5635,8 +5634,15 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.IndexSignatureDeclaration = js.native
   def updateIndexSignature(
     node: typescriptLib.typescriptMod.IndexSignatureDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.IndexSignatureDeclaration = js.native
+  def updateIndexSignature(
+    node: typescriptLib.typescriptMod.IndexSignatureDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.IndexSignatureDeclaration = js.native
@@ -5651,127 +5657,10 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.InferTypeNode = js.native
   def updateInterfaceDeclaration(
     node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
-    members: js.Array[typescriptLib.typescriptMod.TypeElement]
-  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: typescriptLib.typescriptMod.InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
     members: js.Array[typescriptLib.typescriptMod.TypeElement]
   ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
@@ -5789,8 +5678,125 @@ trait Typeofts extends js.Object {
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[typescriptLib.typescriptMod.TypeElement]
+  ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: typescriptLib.typescriptMod.InterfaceDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    heritageClauses: js.Array[typescriptLib.typescriptMod.HeritageClause],
     members: js.Array[typescriptLib.typescriptMod.TypeElement]
   ): typescriptLib.typescriptMod.InterfaceDeclaration = js.native
   def updateIntersectionTypeNode(
@@ -5835,25 +5841,25 @@ trait Typeofts extends js.Object {
   def updateJsxOpeningElement(
     node: typescriptLib.typescriptMod.JsxOpeningElement,
     tagName: typescriptLib.typescriptMod.JsxTagNameExpression,
-    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     attributes: typescriptLib.typescriptMod.JsxAttributes
   ): typescriptLib.typescriptMod.JsxOpeningElement = js.native
   def updateJsxOpeningElement(
     node: typescriptLib.typescriptMod.JsxOpeningElement,
     tagName: typescriptLib.typescriptMod.JsxTagNameExpression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     attributes: typescriptLib.typescriptMod.JsxAttributes
   ): typescriptLib.typescriptMod.JsxOpeningElement = js.native
   def updateJsxSelfClosingElement(
     node: typescriptLib.typescriptMod.JsxSelfClosingElement,
     tagName: typescriptLib.typescriptMod.JsxTagNameExpression,
-    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     attributes: typescriptLib.typescriptMod.JsxAttributes
   ): typescriptLib.typescriptMod.JsxSelfClosingElement = js.native
   def updateJsxSelfClosingElement(
     node: typescriptLib.typescriptMod.JsxSelfClosingElement,
     tagName: typescriptLib.typescriptMod.JsxTagNameExpression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     attributes: typescriptLib.typescriptMod.JsxAttributes
   ): typescriptLib.typescriptMod.JsxSelfClosingElement = js.native
   def updateJsxSpreadAttribute(
@@ -5910,18 +5916,24 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.LiteralTypeNode = js.native
   def updateMappedTypeNode(
     node: typescriptLib.typescriptMod.MappedTypeNode,
-    readonlyToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken | js.UndefOr[scala.Nothing],
+    readonlyToken: js.UndefOr[
+      typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken
+    ],
     typeParameter: typescriptLib.typescriptMod.TypeParameterDeclaration
   ): typescriptLib.typescriptMod.MappedTypeNode = js.native
   def updateMappedTypeNode(
     node: typescriptLib.typescriptMod.MappedTypeNode,
-    readonlyToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken | js.UndefOr[scala.Nothing],
+    readonlyToken: js.UndefOr[
+      typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken
+    ],
     typeParameter: typescriptLib.typescriptMod.TypeParameterDeclaration,
     questionToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.MappedTypeNode = js.native
   def updateMappedTypeNode(
     node: typescriptLib.typescriptMod.MappedTypeNode,
-    readonlyToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken | js.UndefOr[scala.Nothing],
+    readonlyToken: js.UndefOr[
+      typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.ReadonlyToken
+    ],
     typeParameter: typescriptLib.typescriptMod.TypeParameterDeclaration,
     questionToken: typescriptLib.typescriptMod.MinusToken | typescriptLib.typescriptMod.PlusToken | typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode
@@ -6026,26 +6038,13 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ModuleBlock = js.native
   def updateModuleDeclaration(
     node: typescriptLib.typescriptMod.ModuleDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.ModuleName
-  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
-  def updateModuleDeclaration(
-    node: typescriptLib.typescriptMod.ModuleDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.ModuleName,
-    body: typescriptLib.typescriptMod.ModuleBody
-  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
-  def updateModuleDeclaration(
-    node: typescriptLib.typescriptMod.ModuleDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def updateModuleDeclaration(
     node: typescriptLib.typescriptMod.ModuleDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName,
     body: typescriptLib.typescriptMod.ModuleBody
@@ -6065,14 +6064,27 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def updateModuleDeclaration(
     node: typescriptLib.typescriptMod.ModuleDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.ModuleName
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
   def updateModuleDeclaration(
     node: typescriptLib.typescriptMod.ModuleDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.ModuleName,
+    body: typescriptLib.typescriptMod.ModuleBody
+  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
+  def updateModuleDeclaration(
+    node: typescriptLib.typescriptMod.ModuleDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.ModuleName
+  ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
+  def updateModuleDeclaration(
+    node: typescriptLib.typescriptMod.ModuleDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.ModuleName,
     body: typescriptLib.typescriptMod.ModuleBody
   ): typescriptLib.typescriptMod.ModuleDeclaration = js.native
@@ -6096,18 +6108,18 @@ trait Typeofts extends js.Object {
   def updateNew(
     node: typescriptLib.typescriptMod.NewExpression,
     expression: typescriptLib.typescriptMod.Expression,
+    typeArguments: js.UndefOr[scala.Nothing],
+    argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
+  ): typescriptLib.typescriptMod.NewExpression = js.native
+  def updateNew(
+    node: typescriptLib.typescriptMod.NewExpression,
+    expression: typescriptLib.typescriptMod.Expression,
     typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode]
   ): typescriptLib.typescriptMod.NewExpression = js.native
   def updateNew(
     node: typescriptLib.typescriptMod.NewExpression,
     expression: typescriptLib.typescriptMod.Expression,
     typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
-    argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
-  ): typescriptLib.typescriptMod.NewExpression = js.native
-  def updateNew(
-    node: typescriptLib.typescriptMod.NewExpression,
-    expression: typescriptLib.typescriptMod.Expression,
-    typeArguments: js.UndefOr[scala.Nothing],
     argumentsArray: js.Array[typescriptLib.typescriptMod.Expression]
   ): typescriptLib.typescriptMod.NewExpression = js.native
   def updateNonNullExpression(
@@ -6125,150 +6137,14 @@ trait Typeofts extends js.Object {
   def updateOptionalTypeNode(node: typescriptLib.typescriptMod.OptionalTypeNode, `type`: typescriptLib.typescriptMod.TypeNode): typescriptLib.typescriptMod.OptionalTypeNode = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: java.lang.String
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: java.lang.String,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: typescriptLib.typescriptMod.BindingName
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
-    name: typescriptLib.typescriptMod.BindingName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
-  def updateParameter(
-    node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -6276,7 +6152,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -6285,7 +6161,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -6295,14 +6171,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -6310,7 +6186,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -6319,7 +6195,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -6329,14 +6205,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -6344,7 +6220,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -6353,7 +6229,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -6363,14 +6239,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
@@ -6378,7 +6254,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
@@ -6387,7 +6263,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
@@ -6533,14 +6409,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -6548,7 +6424,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -6557,7 +6433,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -6567,14 +6443,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -6582,7 +6458,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -6591,7 +6467,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.BindingName,
@@ -6601,14 +6477,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -6616,7 +6492,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -6625,7 +6501,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: java.lang.String,
@@ -6635,14 +6511,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
@@ -6650,7 +6526,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
@@ -6659,8 +6535,144 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
   def updateParameter(
     node: typescriptLib.typescriptMod.ParameterDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: java.lang.String
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: java.lang.String,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: typescriptLib.typescriptMod.BindingName
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
+    name: typescriptLib.typescriptMod.BindingName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.ParameterDeclaration = js.native
+  def updateParameter(
+    node: typescriptLib.typescriptMod.ParameterDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     dotDotDotToken: typescriptLib.typescriptMod.DotDotDotToken,
     name: typescriptLib.typescriptMod.BindingName,
     questionToken: typescriptLib.typescriptMod.QuestionToken,
@@ -6689,80 +6701,20 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PrefixUnaryExpression = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def updateProperty(
-    node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def updateProperty(
-    node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def updateProperty(
-    node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: java.lang.String,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def updateProperty(
-    node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def updateProperty(
-    node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def updateProperty(
-    node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def updateProperty(
-    node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def updateProperty(
-    node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -6770,7 +6722,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -6779,20 +6731,20 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -6800,7 +6752,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -6869,20 +6821,20 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -6890,7 +6842,7 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -6899,20 +6851,20 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
@@ -6920,8 +6872,68 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
   def updateProperty(
     node: typescriptLib.typescriptMod.PropertyDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def updateProperty(
+    node: typescriptLib.typescriptMod.PropertyDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def updateProperty(
+    node: typescriptLib.typescriptMod.PropertyDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def updateProperty(
+    node: typescriptLib.typescriptMod.PropertyDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def updateProperty(
+    node: typescriptLib.typescriptMod.PropertyDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: java.lang.String,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def updateProperty(
+    node: typescriptLib.typescriptMod.PropertyDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def updateProperty(
+    node: typescriptLib.typescriptMod.PropertyDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def updateProperty(
+    node: typescriptLib.typescriptMod.PropertyDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
+  def updateProperty(
+    node: typescriptLib.typescriptMod.PropertyDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.PropertyName,
     questionOrExclamationToken: typescriptLib.typescriptMod.ExclamationToken | typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -6939,63 +6951,6 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.PropertyAssignment = js.native
   def updatePropertySignature(
     node: typescriptLib.typescriptMod.PropertySignature,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def updatePropertySignature(
-    node: typescriptLib.typescriptMod.PropertySignature,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def updatePropertySignature(
-    node: typescriptLib.typescriptMod.PropertySignature,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: js.UndefOr[scala.Nothing],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def updatePropertySignature(
-    node: typescriptLib.typescriptMod.PropertySignature,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: js.UndefOr[scala.Nothing],
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def updatePropertySignature(
-    node: typescriptLib.typescriptMod.PropertySignature,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def updatePropertySignature(
-    node: typescriptLib.typescriptMod.PropertySignature,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: js.UndefOr[scala.Nothing],
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def updatePropertySignature(
-    node: typescriptLib.typescriptMod.PropertySignature,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def updatePropertySignature(
-    node: typescriptLib.typescriptMod.PropertySignature,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    questionToken: typescriptLib.typescriptMod.QuestionToken,
-    `type`: typescriptLib.typescriptMod.TypeNode,
-    initializer: typescriptLib.typescriptMod.Expression
-  ): typescriptLib.typescriptMod.PropertySignature = js.native
-  def updatePropertySignature(
-    node: typescriptLib.typescriptMod.PropertySignature,
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName
   ): typescriptLib.typescriptMod.PropertySignature = js.native
@@ -7046,6 +7001,63 @@ trait Typeofts extends js.Object {
   def updatePropertySignature(
     node: typescriptLib.typescriptMod.PropertySignature,
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def updatePropertySignature(
+    node: typescriptLib.typescriptMod.PropertySignature,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def updatePropertySignature(
+    node: typescriptLib.typescriptMod.PropertySignature,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[scala.Nothing],
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def updatePropertySignature(
+    node: typescriptLib.typescriptMod.PropertySignature,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def updatePropertySignature(
+    node: typescriptLib.typescriptMod.PropertySignature,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode,
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def updatePropertySignature(
+    node: typescriptLib.typescriptMod.PropertySignature,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def updatePropertySignature(
+    node: typescriptLib.typescriptMod.PropertySignature,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: js.UndefOr[scala.Nothing],
+    initializer: typescriptLib.typescriptMod.Expression
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def updatePropertySignature(
+    node: typescriptLib.typescriptMod.PropertySignature,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    questionToken: typescriptLib.typescriptMod.QuestionToken,
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.PropertySignature = js.native
+  def updatePropertySignature(
+    node: typescriptLib.typescriptMod.PropertySignature,
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.PropertyName,
     questionToken: typescriptLib.typescriptMod.QuestionToken,
     `type`: typescriptLib.typescriptMod.TypeNode,
@@ -7064,29 +7076,14 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.ReturnStatement = js.native
   def updateSetAccessor(
     node: typescriptLib.typescriptMod.SetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
-  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
-  def updateSetAccessor(
-    node: typescriptLib.typescriptMod.SetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.PropertyName,
-    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
-    body: typescriptLib.typescriptMod.Block
-  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
-  def updateSetAccessor(
-    node: typescriptLib.typescriptMod.SetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def updateSetAccessor(
     node: typescriptLib.typescriptMod.SetAccessorDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
@@ -7109,15 +7106,30 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def updateSetAccessor(
     node: typescriptLib.typescriptMod.SetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
   ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
   def updateSetAccessor(
     node: typescriptLib.typescriptMod.SetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
+    body: typescriptLib.typescriptMod.Block
+  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
+  def updateSetAccessor(
+    node: typescriptLib.typescriptMod.SetAccessorDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.PropertyName,
+    parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration]
+  ): typescriptLib.typescriptMod.SetAccessorDeclaration = js.native
+  def updateSetAccessor(
+    node: typescriptLib.typescriptMod.SetAccessorDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     name: typescriptLib.typescriptMod.PropertyName,
     parameters: js.Array[typescriptLib.typescriptMod.ParameterDeclaration],
     body: typescriptLib.typescriptMod.Block
@@ -7207,13 +7219,13 @@ trait Typeofts extends js.Object {
   def updateTaggedTemplate(
     node: typescriptLib.typescriptMod.TaggedTemplateExpression,
     tag: typescriptLib.typescriptMod.Expression,
-    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     template: typescriptLib.typescriptMod.TemplateLiteral
   ): typescriptLib.typescriptMod.TaggedTemplateExpression = js.native
   def updateTaggedTemplate(
     node: typescriptLib.typescriptMod.TaggedTemplateExpression,
     tag: typescriptLib.typescriptMod.Expression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[typescriptLib.typescriptMod.TypeNode],
     template: typescriptLib.typescriptMod.TemplateLiteral
   ): typescriptLib.typescriptMod.TaggedTemplateExpression = js.native
   def updateTemplateExpression(
@@ -7259,48 +7271,8 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.TupleTypeNode = js.native
   def updateTypeAliasDeclaration(
     node: typescriptLib.typescriptMod.TypeAliasDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
-    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
     decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
-    name: typescriptLib.typescriptMod.Identifier,
-    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
-    `type`: typescriptLib.typescriptMod.TypeNode
-  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     `type`: typescriptLib.typescriptMod.TypeNode
@@ -7316,9 +7288,49 @@ trait Typeofts extends js.Object {
   def updateTypeAliasDeclaration(
     node: typescriptLib.typescriptMod.TypeAliasDeclaration,
     decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: typescriptLib.typescriptMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: typescriptLib.typescriptMod.TypeNode
+  ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: typescriptLib.typescriptMod.TypeAliasDeclaration,
+    decorators: js.Array[typescriptLib.typescriptMod.Decorator],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    name: typescriptLib.typescriptMod.Identifier,
+    typeParameters: js.Array[typescriptLib.typescriptMod.TypeParameterDeclaration],
     `type`: typescriptLib.typescriptMod.TypeNode
   ): typescriptLib.typescriptMod.TypeAliasDeclaration = js.native
   def updateTypeAssertion(
@@ -7407,12 +7419,12 @@ trait Typeofts extends js.Object {
   ): typescriptLib.typescriptMod.VariableDeclarationList = js.native
   def updateVariableStatement(
     node: typescriptLib.typescriptMod.VariableStatement,
-    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     declarationList: typescriptLib.typescriptMod.VariableDeclarationList
   ): typescriptLib.typescriptMod.VariableStatement = js.native
   def updateVariableStatement(
     node: typescriptLib.typescriptMod.VariableStatement,
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[typescriptLib.typescriptMod.Modifier],
     declarationList: typescriptLib.typescriptMod.VariableDeclarationList
   ): typescriptLib.typescriptMod.VariableStatement = js.native
   def updateVoid(
@@ -7500,7 +7512,7 @@ trait Typeofts extends js.Object {
     * @param context A lexical environment context for the visitor.
     */
   @JSName("visitEachChild")
-  def visitEachChild_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `visitEachChild_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: T,
     visitor: typescriptLib.typescriptMod.Visitor,
     context: typescriptLib.typescriptMod.TransformationContext
@@ -7630,17 +7642,17 @@ trait Typeofts extends js.Object {
     ]
   ): T = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](node: T): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](node: T): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: T,
     visitor: js.UndefOr[scala.Nothing],
     test: js.Function1[/* node */ typescriptLib.typescriptMod.Node, scala.Boolean]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: T,
     visitor: js.UndefOr[scala.Nothing],
     test: js.Function1[/* node */ typescriptLib.typescriptMod.Node, scala.Boolean],
@@ -7658,15 +7670,15 @@ trait Typeofts extends js.Object {
     * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
     */
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](node: T, visitor: typescriptLib.typescriptMod.Visitor): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](node: T, visitor: typescriptLib.typescriptMod.Visitor): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: T,
     visitor: typescriptLib.typescriptMod.Visitor,
     test: js.Function1[/* node */ typescriptLib.typescriptMod.Node, scala.Boolean]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: T,
     visitor: typescriptLib.typescriptMod.Visitor,
     test: js.Function1[/* node */ typescriptLib.typescriptMod.Node, scala.Boolean],
@@ -7676,13 +7688,13 @@ trait Typeofts extends js.Object {
     ]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: js.UndefOr[scala.Nothing],
     test: js.Function1[/* node */ typescriptLib.typescriptMod.Node, scala.Boolean]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: js.UndefOr[scala.Nothing],
     test: js.Function1[/* node */ typescriptLib.typescriptMod.Node, scala.Boolean],
@@ -7692,15 +7704,15 @@ trait Typeofts extends js.Object {
     ]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](node: js.UndefOr[scala.Nothing], visitor: typescriptLib.typescriptMod.Visitor): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](node: js.UndefOr[scala.Nothing], visitor: typescriptLib.typescriptMod.Visitor): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: typescriptLib.typescriptMod.Visitor,
     test: js.Function1[/* node */ typescriptLib.typescriptMod.Node, scala.Boolean]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: typescriptLib.typescriptMod.Node */](
+  def `visitNode_TNode<union>`[T /* <: typescriptLib.typescriptMod.Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: typescriptLib.typescriptMod.Visitor,
     test: js.Function1[/* node */ typescriptLib.typescriptMod.Node, scala.Boolean],

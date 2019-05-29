@@ -94,9 +94,9 @@ class Window protected () extends js.Object {
     Copies: js.UndefOr[scala.Double],
     Preview: js.UndefOr[scala.Boolean],
     ActivePrinter: js.UndefOr[java.lang.String],
-    PrintToFile: js.UndefOr[scala.Boolean | js.UndefOr[scala.Nothing]],
+    PrintToFile: js.UndefOr[scala.Boolean],
     Collate: js.UndefOr[scala.Boolean],
-    PrToFileName: js.UndefOr[PrintToFileName[scala.Boolean | js.UndefOr[scala.Nothing]]]
+    PrToFileName: js.UndefOr[PrintToFileName[js.UndefOr[scala.Boolean]]]
   ): js.Any = js.native
   def PrintPreview(): js.Any = js.native
   def PrintPreview(EnableChanges: scala.Boolean): js.Any = js.native

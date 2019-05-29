@@ -30,7 +30,9 @@ trait Legend
     * Explicitly set the visible legend values.
     */
   var values: js.UndefOr[
-    js.Array[scala.Double] | js.Array[java.lang.String] | js.Array[scala.Boolean] | js.Array[vegaDashLiteLib.buildSrcDatetimeMod.DateTime]
+    js.Array[
+      scala.Boolean | vegaDashLiteLib.buildSrcDatetimeMod.DateTime | scala.Double | java.lang.String
+    ]
   ] = js.undefined
   /**
     * A non-positive integer indicating z-index of the legend.
@@ -54,7 +56,9 @@ object Legend {
     tickCount: scala.Int | scala.Double = null,
     title: java.lang.String = null,
     `type`: vegaDashLiteLib.vegaDashLiteLibStrings.symbol | vegaDashLiteLib.vegaDashLiteLibStrings.gradient = null,
-    values: js.Array[scala.Double] | js.Array[java.lang.String] | js.Array[scala.Boolean] | js.Array[vegaDashLiteLib.buildSrcDatetimeMod.DateTime] = null,
+    values: js.Array[
+      scala.Boolean | vegaDashLiteLib.buildSrcDatetimeMod.DateTime | scala.Double | java.lang.String
+    ] = null,
     zindex: scala.Int | scala.Double = null
   ): Legend = {
     val __obj = js.Dynamic.literal()
@@ -67,7 +71,7 @@ object Legend {
     if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values)
     if (zindex != null) __obj.updateDynamic("zindex")(zindex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Legend]
   }

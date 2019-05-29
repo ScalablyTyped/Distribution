@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 trait IGeoJsonObject extends js.Object {
   /** Geometric coordinates of the object */
   var coordinates: js.UndefOr[
-    js.Array[scala.Double] | js.Array[js.Array[scala.Double]] | js.Array[js.Array[js.Array[scala.Double]]] | js.Array[js.Array[js.Array[js.Array[scala.Double]]]]
+    js.Array[
+      (js.Array[(js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double]) | scala.Double
+    ]
   ] = js.undefined
   /** Set of features (only applicable if the type is 'featurecollection') */
   var features: js.UndefOr[js.Array[IGeoJsonObject]] = js.undefined
@@ -40,7 +42,9 @@ object IGeoJsonObject {
   @scala.inline
   def apply(
     `type`: java.lang.String,
-    coordinates: js.Array[scala.Double] | js.Array[js.Array[scala.Double]] | js.Array[js.Array[js.Array[scala.Double]]] | js.Array[js.Array[js.Array[js.Array[scala.Double]]]] = null,
+    coordinates: js.Array[
+      (js.Array[(js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double]) | scala.Double
+    ] = null,
     features: js.Array[IGeoJsonObject] = null,
     geometries: js.Array[IGeoJsonObject] = null,
     geometry: IGeoJsonObject = null,
@@ -49,7 +53,7 @@ object IGeoJsonObject {
   ): IGeoJsonObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`)
-    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates.asInstanceOf[js.Any])
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
     if (features != null) __obj.updateDynamic("features")(features)
     if (geometries != null) __obj.updateDynamic("geometries")(geometries)
     if (geometry != null) __obj.updateDynamic("geometry")(geometry)

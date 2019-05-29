@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorSettingsNs {
-  type Param = ((stdLib.Pick[_Impl, semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.close]) | (stdLib.Pick[_Impl, semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.approve]) | (stdLib.Pick[_Impl, semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.deny])) with (stdLib.Partial[
+  type Param = (stdLib.Pick[
+    _Impl, 
+    semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.close | semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.approve | semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.deny
+  ]) with (stdLib.Partial[
     stdLib.Pick[
       _Impl, 
       semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.close | semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.approve | semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.deny

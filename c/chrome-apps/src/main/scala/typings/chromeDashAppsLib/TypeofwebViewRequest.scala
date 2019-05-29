@@ -118,7 +118,7 @@ trait TypeofwebViewRequest extends js.Object {
     * @description Matches network events by various criteria.
     */
   var RequestMatcher: org.scalablytyped.runtime.Instantiable1[
-    /* parameters */ js.UndefOr[
+    js.UndefOr[
       /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.RequestMatcherFields
     ], 
     chromeDashAppsLib.chromeNs.webViewRequestNs.RequestMatcher
@@ -203,7 +203,7 @@ object TypeofwebViewRequest {
       chromeDashAppsLib.chromeNs.webViewRequestNs.RemoveResponseHeader
     ],
     RequestMatcher: org.scalablytyped.runtime.Instantiable1[
-      /* parameters */ js.UndefOr[
+      js.UndefOr[
         /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.RequestMatcherFields
       ], 
       chromeDashAppsLib.chromeNs.webViewRequestNs.RequestMatcher

@@ -193,7 +193,7 @@ object RadialGaugeOptions {
     if (highlights != null) __obj.updateDynamic("highlights")(highlights)
     if (highlightsWidth != null) __obj.updateDynamic("highlightsWidth")(highlightsWidth.asInstanceOf[js.Any])
     if (listeners != null) __obj.updateDynamic("listeners")(listeners)
-    if (majorTicks != null) __obj.updateDynamic("majorTicks")(majorTicks.asInstanceOf[js.Any])
+    if (majorTicks != null) __obj.updateDynamic("majorTicks")(majorTicks)
     if (majorTicksDec != null) __obj.updateDynamic("majorTicksDec")(majorTicksDec.asInstanceOf[js.Any])
     if (majorTicksInt != null) __obj.updateDynamic("majorTicksInt")(majorTicksInt.asInstanceOf[js.Any])
     if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])

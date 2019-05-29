@@ -9,9 +9,7 @@ trait RouteProps extends js.Object {
   var children: js.UndefOr[
     (js.Function1[/* props */ RouteComponentProps[_], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
   ] = js.undefined
-  var component: js.UndefOr[
-    reactLib.reactMod.ComponentType[RouteComponentProps[_]] | reactLib.reactMod.ComponentType[_]
-  ] = js.undefined
+  var component: js.UndefOr[reactLib.reactMod.ComponentType[_ | RouteComponentProps[_]]] = js.undefined
   var exact: js.UndefOr[scala.Boolean] = js.undefined
   var location: js.UndefOr[historyLib.historyMod.Location[historyLib.historyMod.LocationState]] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
@@ -23,7 +21,7 @@ object RouteProps {
   @scala.inline
   def apply(
     children: (js.Function1[/* props */ RouteComponentProps[_], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode = null,
-    component: reactLib.reactMod.ComponentType[RouteComponentProps[_]] | reactLib.reactMod.ComponentType[_] = null,
+    component: reactLib.reactMod.ComponentType[_ | RouteComponentProps[_]] = null,
     exact: js.UndefOr[scala.Boolean] = js.undefined,
     location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,
     path: java.lang.String = null,

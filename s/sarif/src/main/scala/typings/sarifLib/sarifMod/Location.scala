@@ -15,9 +15,9 @@ trait Location extends js.Object {
     */
   var id: js.UndefOr[scala.Double] = js.undefined
   /**
-    * The logical location associated with the result.
+    * The logical locations associated with the result.
     */
-  var logicalLocation: js.UndefOr[LogicalLocation] = js.undefined
+  var logicalLocations: js.UndefOr[js.Array[LogicalLocation]] = js.undefined
   /**
     * A message relevant to the location.
     */
@@ -41,7 +41,7 @@ object Location {
   def apply(
     annotations: js.Array[Region] = null,
     id: scala.Int | scala.Double = null,
-    logicalLocation: LogicalLocation = null,
+    logicalLocations: js.Array[LogicalLocation] = null,
     message: Message = null,
     physicalLocation: PhysicalLocation = null,
     properties: PropertyBag = null,
@@ -50,7 +50,7 @@ object Location {
     val __obj = js.Dynamic.literal()
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (logicalLocation != null) __obj.updateDynamic("logicalLocation")(logicalLocation)
+    if (logicalLocations != null) __obj.updateDynamic("logicalLocations")(logicalLocations)
     if (message != null) __obj.updateDynamic("message")(message)
     if (physicalLocation != null) __obj.updateDynamic("physicalLocation")(physicalLocation)
     if (properties != null) __obj.updateDynamic("properties")(properties)

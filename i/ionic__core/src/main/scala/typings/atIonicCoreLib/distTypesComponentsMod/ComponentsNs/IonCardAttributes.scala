@@ -15,7 +15,7 @@ trait IonCardAttributes
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
   @JSName("color")
-  var color_IonCardAttributes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.UndefOr[
+  var color_IonCardAttributes: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
   ] = js.undefined
   /**
@@ -29,13 +29,13 @@ trait IonCardAttributes
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
+  var mode: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
   ] = js.undefined
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.UndefOr[
+  var routerDirection: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
   ] = js.undefined
   /**

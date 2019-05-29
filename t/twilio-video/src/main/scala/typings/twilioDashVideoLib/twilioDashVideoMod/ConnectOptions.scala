@@ -19,8 +19,8 @@ trait ConnectOptions extends js.Object {
   var name: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var networkQuality: js.UndefOr[scala.Boolean] = js.undefined
   var preferredAudioCodecs: js.UndefOr[js.Array[AudioCodec]] = js.undefined
-  var preferredVideoCodecs: js.UndefOr[js.Array[VideoCodec] | js.Array[VideoCodecSettings]] = js.undefined
-  var tracks: js.UndefOr[js.Array[LocalTrack] | js.Array[stdLib.MediaStreamTrack]] = js.undefined
+  var preferredVideoCodecs: js.UndefOr[js.Array[VideoCodec | VideoCodecSettings]] = js.undefined
+  var tracks: js.UndefOr[js.Array[LocalTrack | stdLib.MediaStreamTrack]] = js.undefined
   var video: js.UndefOr[scala.Boolean | CreateLocalTrackOptions] = js.undefined
 }
 
@@ -40,8 +40,8 @@ object ConnectOptions {
     name: java.lang.String = null,
     networkQuality: js.UndefOr[scala.Boolean] = js.undefined,
     preferredAudioCodecs: js.Array[AudioCodec] = null,
-    preferredVideoCodecs: js.Array[VideoCodec] | js.Array[VideoCodecSettings] = null,
-    tracks: js.Array[LocalTrack] | js.Array[stdLib.MediaStreamTrack] = null,
+    preferredVideoCodecs: js.Array[VideoCodec | VideoCodecSettings] = null,
+    tracks: js.Array[LocalTrack | stdLib.MediaStreamTrack] = null,
     video: scala.Boolean | CreateLocalTrackOptions = null
   ): ConnectOptions = {
     val __obj = js.Dynamic.literal()
@@ -58,8 +58,8 @@ object ConnectOptions {
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(networkQuality)) __obj.updateDynamic("networkQuality")(networkQuality)
     if (preferredAudioCodecs != null) __obj.updateDynamic("preferredAudioCodecs")(preferredAudioCodecs)
-    if (preferredVideoCodecs != null) __obj.updateDynamic("preferredVideoCodecs")(preferredVideoCodecs.asInstanceOf[js.Any])
-    if (tracks != null) __obj.updateDynamic("tracks")(tracks.asInstanceOf[js.Any])
+    if (preferredVideoCodecs != null) __obj.updateDynamic("preferredVideoCodecs")(preferredVideoCodecs)
+    if (tracks != null) __obj.updateDynamic("tracks")(tracks)
     if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectOptions]
   }

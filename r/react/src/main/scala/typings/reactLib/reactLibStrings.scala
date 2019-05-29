@@ -220,9 +220,6 @@ object reactLibStrings {
   sealed trait execute extends js.Object
   
   @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
   sealed trait feBlend extends js.Object
   
   @js.native
@@ -697,6 +694,9 @@ object reactLibStrings {
   sealed trait td extends js.Object
   
   @js.native
+  sealed trait template extends js.Object
+  
+  @js.native
   sealed trait terminal extends js.Object
   
   @js.native
@@ -740,9 +740,6 @@ object reactLibStrings {
   
   @js.native
   sealed trait tree extends js.Object
-  
-  @js.native
-  sealed trait `true` extends js.Object
   
   @js.native
   sealed trait tspan extends js.Object
@@ -925,8 +922,6 @@ object reactLibStrings {
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   @scala.inline
   def execute: execute = "execute".asInstanceOf[execute]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
   @scala.inline
   def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
   @scala.inline
@@ -1244,6 +1239,8 @@ object reactLibStrings {
   @scala.inline
   def td: td = "td".asInstanceOf[td]
   @scala.inline
+  def template: template = "template".asInstanceOf[template]
+  @scala.inline
   def terminal: terminal = "terminal".asInstanceOf[terminal]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
@@ -1273,8 +1270,6 @@ object reactLibStrings {
   def track: track = "track".asInstanceOf[track]
   @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def tspan: tspan = "tspan".asInstanceOf[tspan]
   @scala.inline

@@ -46,9 +46,6 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   sealed trait dropup extends js.Object
   
   @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
   sealed trait flip extends js.Object
   
   @js.native
@@ -189,9 +186,6 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait `true` extends js.Object
-  
-  @js.native
   sealed trait width extends js.Object
   
   @scala.inline
@@ -218,8 +212,6 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   def div: div = "div".asInstanceOf[div]
   @scala.inline
   def dropup: dropup = "dropup".asInstanceOf[dropup]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
   @scala.inline
   def flip: flip = "flip".asInstanceOf[flip]
   @scala.inline
@@ -294,8 +286,6 @@ object reactDashBootstrapDashTypeaheadLibStrings {
   def small: small = "small".asInstanceOf[small]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def width: width = "width".asInstanceOf[width]
 }

@@ -27,9 +27,9 @@ trait PoolCluster extends js.Object {
     selector: java.lang.String,
     callback: js.Function2[/* err */ MysqlError, /* connection */ PoolConnection, scala.Unit]
   ): scala.Unit = js.native
+  def of(pattern: js.UndefOr[scala.Nothing], selector: java.lang.String): Pool = js.native
   def of(pattern: java.lang.String): Pool = js.native
   def of(pattern: java.lang.String, selector: java.lang.String): Pool = js.native
-  def of(pattern: js.UndefOr[scala.Nothing], selector: java.lang.String): Pool = js.native
   def of(pattern: mysqlLib.mysqlLibNumbers.`false`, selector: java.lang.String): Pool = js.native
   def of(pattern: scala.Null, selector: java.lang.String): Pool = js.native
   /**

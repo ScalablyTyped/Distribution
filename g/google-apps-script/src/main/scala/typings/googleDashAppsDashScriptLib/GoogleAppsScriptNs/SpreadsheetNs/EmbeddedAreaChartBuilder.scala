@@ -39,7 +39,7 @@ trait EmbeddedAreaChartBuilder extends js.Object {
     offsetX: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetY: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): EmbeddedChartBuilder
-  def setRange(start: stdLib.Number, end: stdLib.Number): EmbeddedAreaChartBuilder
+  def setRange(start: scala.Double, end: scala.Double): EmbeddedAreaChartBuilder
   def setStacked(): EmbeddedAreaChartBuilder
   def setTitle(chartTitle: java.lang.String): EmbeddedAreaChartBuilder
   def setTitleTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedAreaChartBuilder
@@ -84,7 +84,7 @@ object EmbeddedAreaChartBuilder {
     setOption: (java.lang.String, js.Object) => EmbeddedChartBuilder,
     setPointStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.PointStyle => EmbeddedAreaChartBuilder,
     setPosition: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => EmbeddedChartBuilder,
-    setRange: (stdLib.Number, stdLib.Number) => EmbeddedAreaChartBuilder,
+    setRange: (scala.Double, scala.Double) => EmbeddedAreaChartBuilder,
     setStacked: () => EmbeddedAreaChartBuilder,
     setTitle: java.lang.String => EmbeddedAreaChartBuilder,
     setTitleTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedAreaChartBuilder,

@@ -111,9 +111,9 @@ class Client protected () extends js.Object {
   def sendEmailBatch(message: js.Array[PostmarkMessage], callback: PostmarkCallback[js.Array[SendStatus]]): js.UndefOr[scala.Nothing] = js.native
   def sendEmailWithTemplate(message: PostmarkMessageWithTemplate): js.Promise[SendStatus] = js.native
   def sendEmailWithTemplate(message: PostmarkMessageWithTemplate, callback: PostmarkCallback[SendStatus]): js.UndefOr[scala.Nothing] = js.native
-  def validateTemplate[T /* <: js.Object */](templateObject: TemplateValidator[T]): js.Promise[TemplateValidationResult[T]] = js.native
+  def validateTemplate[T /* <: js.Object */](templateObject: TemplateValidator[T]): js.UndefOr[scala.Nothing] = js.native
   def validateTemplate[T /* <: js.Object */](templateObject: TemplateValidator[T], callback: PostmarkCallback[TemplateValidationResult[T]]): js.UndefOr[scala.Nothing] = js.native
   @JSName("validateTemplate")
-  def validateTemplate_TObjectUndefOr[T /* <: js.Object */](templateObject: TemplateValidator[T]): js.UndefOr[scala.Nothing] = js.native
+  def validateTemplate_TObjectPromise[T /* <: js.Object */](templateObject: TemplateValidator[T]): js.Promise[TemplateValidationResult[T]] = js.native
 }
 

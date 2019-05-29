@@ -16,24 +16,24 @@ package object reactDashTableMod {
     /* instance */ js.UndefOr[js.Any], 
     js.UndefOr[js.Object]
   ]
-  type ComponentPropsGetterC = js.Function4[
+  type ComponentPropsGetterC[D] = js.Function4[
     /* finalState */ js.Any, 
     /* rowInfo */ js.UndefOr[scala.Nothing], 
-    /* column */ js.UndefOr[Column[js.Any]], 
+    /* column */ js.UndefOr[Column[D]], 
     /* instance */ js.UndefOr[js.Any], 
     js.UndefOr[js.Object]
   ]
-  type ComponentPropsGetterR = js.Function4[
+  type ComponentPropsGetterR[D] = js.Function4[
     /* finalState */ js.Any, 
-    /* rowInfo */ js.UndefOr[RowInfo], 
+    /* rowInfo */ js.UndefOr[RowInfo[D]], 
     /* column */ js.UndefOr[scala.Nothing], 
     /* instance */ js.UndefOr[js.Any], 
     js.UndefOr[js.Object]
   ]
-  type ComponentPropsGetterRC = js.Function4[
+  type ComponentPropsGetterRC[D] = js.Function4[
     /* finalState */ js.Any, 
-    /* rowInfo */ js.UndefOr[RowInfo], 
-    /* column */ js.UndefOr[Column[js.Any]], 
+    /* rowInfo */ js.UndefOr[RowInfo[D]], 
+    /* column */ js.UndefOr[Column[D]], 
     /* instance */ js.UndefOr[js.Any], 
     js.UndefOr[js.Object]
   ]
@@ -45,7 +45,10 @@ package object reactDashTableMod {
     /* column */ js.Any, 
     js.Array[js.Any]
   ]
-  type FilterRender = js.Function1[/* params */ reactDashTableLib.Anon_Column, reactLib.reactMod.ReactElement[js.Any]]
+  type FilterRender[D] = js.Function1[
+    /* params */ reactDashTableLib.Anon_Column[D], 
+    reactLib.reactMod.ReactElement[js.Any]
+  ]
   type FilteredChangeFunction = js.Function3[
     /* newFiltering */ js.Array[Filter], 
     /* column */ js.Any, 
@@ -54,7 +57,7 @@ package object reactDashTableMod {
   ]
   type PageChangeFunction = js.Function1[/* page */ scala.Double, scala.Unit]
   type PageSizeChangeFunction = js.Function2[/* newPageSize */ scala.Double, /* newPage */ scala.Double, scala.Unit]
-  type PivotRenderer = (js.Function1[/* cellInfo */ CellInfo, reactLib.reactMod.ReactNode]) | js.Function0[js.Any] | java.lang.String | reactLib.reactMod.ReactNode
+  type PivotRenderer[D] = (js.Function1[/* cellInfo */ CellInfo[D], reactLib.reactMod.ReactNode]) | js.Function0[js.Any] | java.lang.String | reactLib.reactMod.ReactNode
   type ReactTable[D] = reactLib.reactMod.Component[stdLib.Partial[TableProps[D, D]], js.Object, js.Any]
   type ReactTableFunction = js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit]
   type ResizedChangeFunction = js.Function2[/* newResized */ js.Array[Resize], /* event */ js.Any, scala.Unit]
@@ -65,6 +68,6 @@ package object reactDashTableMod {
     /* additive */ scala.Boolean, 
     scala.Unit
   ]
-  type SubComponentFunction = js.Function1[/* rowInfo */ RowInfo, reactLib.reactMod.ReactNode]
-  type TableCellRenderer = (js.Function2[/* cellInfo */ CellInfo, /* column */ js.Any, reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
+  type SubComponentFunction[D] = js.Function1[/* rowInfo */ RowInfo[D], reactLib.reactMod.ReactNode]
+  type TableCellRenderer[D] = (js.Function2[/* cellInfo */ CellInfo[D], /* column */ js.Any, reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
 }

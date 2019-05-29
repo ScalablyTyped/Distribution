@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object reactDashBootstrapDashTableMod {
   type CustomAttrs = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
   type EditCheckboxOptionValue = java.lang.String
-  type EditSelectOptionValue = js.Array[reactDashBootstrapDashTableLib.Anon_TextValue] | js.Array[java.lang.String] | js.Array[scala.Double]
+  type EditSelectOptionValue = js.Array[reactDashBootstrapDashTableLib.Anon_TextValue | scala.Double | java.lang.String]
   /* Rewritten from type alias, can be one of: 
     - TextFilter
     - SelectFilter
@@ -22,12 +22,11 @@ package object reactDashBootstrapDashTableMod {
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
     - scala.Double
-    - js.Array[java.lang.String]
-    - js.Array[scala.Double]
+    - js.Array[scala.Double | java.lang.String]
     - DateFilterValue
     - NumberFilterValue
   */
-  type FilterValueData = _FilterValueData | js.Array[java.lang.String] | js.Array[scala.Double] | java.lang.String | scala.Double
+  type FilterValueData = _FilterValueData | (js.Array[scala.Double | java.lang.String]) | java.lang.String | scala.Double
   type SelectFilterOptionsType = (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]) with (org.scalablytyped.runtime.NumberDictionary[java.lang.String | scala.Double | scala.Boolean])
-  type SizePerPageList = js.Array[scala.Double] | js.Array[reactDashBootstrapDashTableLib.Anon_Text]
+  type SizePerPageList = js.Array[reactDashBootstrapDashTableLib.Anon_Text | scala.Double]
 }

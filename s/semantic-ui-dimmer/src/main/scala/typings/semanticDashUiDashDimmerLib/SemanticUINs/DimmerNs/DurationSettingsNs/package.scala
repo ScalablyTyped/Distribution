@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DurationSettingsNs {
-  type Param = ((stdLib.Pick[_Impl, semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.show]) | (stdLib.Pick[_Impl, semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.hide])) with (stdLib.Partial[
+  type Param = (stdLib.Pick[
+    _Impl, 
+    semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.show | semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.hide
+  ]) with (stdLib.Partial[
     stdLib.Pick[
       _Impl, 
       semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.show | semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.hide

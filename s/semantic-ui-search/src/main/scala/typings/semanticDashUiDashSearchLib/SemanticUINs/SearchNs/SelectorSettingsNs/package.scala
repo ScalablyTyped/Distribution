@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorSettingsNs {
-  type Param = ((stdLib.Pick[_Impl, semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.prompt]) | (stdLib.Pick[_Impl, semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.searchButton]) | (stdLib.Pick[_Impl, semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.results]) | (stdLib.Pick[_Impl, semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.category]) | (stdLib.Pick[_Impl, semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.result])) with (stdLib.Partial[
+  type Param = (stdLib.Pick[
+    _Impl, 
+    semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.prompt | semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.searchButton | semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.results | semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.category | semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.result
+  ]) with (stdLib.Partial[
     stdLib.Pick[
       _Impl, 
       semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.prompt | semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.searchButton | semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.results | semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.category | semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.result

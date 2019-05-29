@@ -15,8 +15,8 @@ object gl extends js.Object {
     /* gl */ stdLib.WebGLRenderingContext, 
     /* vertexSrc */ java.lang.String | js.Array[java.lang.String], 
     /* fragmentSrc */ java.lang.String | js.Array[java.lang.String], 
-    /* precision */ js.UndefOr[/* precision */ java.lang.String], 
-    /* attributeLocations */ js.UndefOr[
+    js.UndefOr[/* precision */ java.lang.String], 
+    js.UndefOr[
       /* attributeLocations */ org.scalablytyped.runtime.StringDictionary[scala.Double]
     ], 
     pixiDotJsLib.PIXINs.glCoreNs.GLShader

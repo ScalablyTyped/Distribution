@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "natsort"
-version := "1.0-dt-20190425Z-958aae"
+version := "1.0-dt-20190425Z-f0ae67"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

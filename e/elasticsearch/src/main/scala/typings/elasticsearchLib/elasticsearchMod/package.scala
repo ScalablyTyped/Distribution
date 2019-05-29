@@ -12,8 +12,6 @@ package object elasticsearchMod {
   type PingParams = GenericParams
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
-    - elasticsearchLib.elasticsearchLibStrings.`true`
-    - elasticsearchLib.elasticsearchLibStrings.`false`
     - elasticsearchLib.elasticsearchLibStrings.wait_for
     - elasticsearchLib.elasticsearchLibStrings.Empty
   */

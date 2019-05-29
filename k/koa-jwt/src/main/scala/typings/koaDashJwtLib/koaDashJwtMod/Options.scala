@@ -24,14 +24,14 @@ trait Options extends js.Object {
   var issuer: js.UndefOr[java.lang.String] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   var passthrough: js.UndefOr[scala.Boolean] = js.undefined
-  var secret: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | SecretLoader
+  var secret: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer | SecretLoader
   var tokenKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Options {
   @scala.inline
   def apply(
-    secret: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | SecretLoader,
+    secret: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer | SecretLoader,
     algorithms: js.Array[java.lang.String] = null,
     audience: java.lang.String = null,
     cookie: java.lang.String = null,

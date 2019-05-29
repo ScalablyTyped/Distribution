@@ -30,11 +30,11 @@ object AreaChartProps {
     tickTimeDisplayFormat: java.lang.String = null,
     verticalGrid: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null,
-    xDomainRange: js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[java.lang.String] = null,
+    xDomainRange: js.Array[stdLib.Date | scala.Double | java.lang.String] = null,
     xTicks: scala.Int | scala.Double = null,
     xType: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null,
     yAxisOrientRight: js.UndefOr[scala.Boolean] = js.undefined,
-    yDomainRange: js.Array[scala.Double] | js.Array[java.lang.String] = null,
+    yDomainRange: js.Array[scala.Double | java.lang.String] = null,
     yTicks: scala.Int | scala.Double = null,
     yType: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null
   ): AreaChartProps = {
@@ -55,11 +55,11 @@ object AreaChartProps {
     if (tickTimeDisplayFormat != null) __obj.updateDynamic("tickTimeDisplayFormat")(tickTimeDisplayFormat)
     if (!js.isUndefined(verticalGrid)) __obj.updateDynamic("verticalGrid")(verticalGrid)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xDomainRange != null) __obj.updateDynamic("xDomainRange")(xDomainRange.asInstanceOf[js.Any])
+    if (xDomainRange != null) __obj.updateDynamic("xDomainRange")(xDomainRange)
     if (xTicks != null) __obj.updateDynamic("xTicks")(xTicks.asInstanceOf[js.Any])
     if (xType != null) __obj.updateDynamic("xType")(xType.asInstanceOf[js.Any])
     if (!js.isUndefined(yAxisOrientRight)) __obj.updateDynamic("yAxisOrientRight")(yAxisOrientRight)
-    if (yDomainRange != null) __obj.updateDynamic("yDomainRange")(yDomainRange.asInstanceOf[js.Any])
+    if (yDomainRange != null) __obj.updateDynamic("yDomainRange")(yDomainRange)
     if (yTicks != null) __obj.updateDynamic("yTicks")(yTicks.asInstanceOf[js.Any])
     if (yType != null) __obj.updateDynamic("yType")(yType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaChartProps]

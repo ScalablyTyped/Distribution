@@ -46,7 +46,7 @@ object anchorsNs extends js.Object {
   }
   
   trait GenericAnchorJSON[K /* <: AnchorType */] extends js.Object {
-    var args: /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.anchors.AnchorArgumentsMap[K] */ js.UndefOr[
+    var args: js.UndefOr[
         /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.anchors.AnchorArgumentsMap[K] */ js.Any
       ] = js.undefined
     var name: K

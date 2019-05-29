@@ -2490,12 +2490,14 @@ trait Static extends js.Object {
     * both lists. Note: `zip` is equivalent to `zipWith(function(a, b) { return [a, b] })`.
     */
   def zip[K, V](list1: js.Array[K], list2: js.Array[V]): js.Array[KeyValuePair[K, V]] = js.native
-  def zipObj(keys: js.Array[java.lang.String]): js.Function1[/* values */ js.Array[_], org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def zipObj(keys: js.Array[scala.Double | java.lang.String]): js.Function1[/* values */ js.Array[_], org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * Creates a new object out of a list of keys and a list of values.
     */
   // TODO: Dictionary<T> as a return value is to specific, any seems to loose
   def zipObj[T](keys: js.Array[java.lang.String], values: js.Array[T]): org.scalablytyped.runtime.StringDictionary[T] = js.native
+  @JSName("zipObj")
+  def zipObj_TNumberDictionary[T](keys: js.Array[scala.Double], values: js.Array[T]): org.scalablytyped.runtime.NumberDictionary[T] = js.native
   def zipWith[T, U, TResult](fn: js.Function2[/* x */ T, /* y */ U, TResult]): js.Function2[/* list1 */ js.Array[T], /* list2 */ js.Array[U], js.Array[TResult]] = js.native
   def zipWith[T, U, TResult](fn: js.Function2[/* x */ T, /* y */ U, TResult], list1: js.Array[T]): js.Function1[/* list2 */ js.Array[U], js.Array[TResult]] = js.native
   /**

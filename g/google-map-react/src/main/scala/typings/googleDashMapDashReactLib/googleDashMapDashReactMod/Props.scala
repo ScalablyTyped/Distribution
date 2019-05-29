@@ -46,6 +46,7 @@ trait Props extends js.Object {
   var onZoomAnimationStart: js.UndefOr[js.Function1[/* args */ js.Any, scala.Unit]] = js.undefined
   var options: js.UndefOr[MapOptions | (js.Function1[/* maps */ Maps, MapOptions])] = js.undefined
   var resetBoundsOnResize: js.UndefOr[scala.Boolean] = js.undefined
+  var style: js.UndefOr[reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement]] = js.undefined
   var yesIWantToUseGoogleMapApiInternals: js.UndefOr[scala.Boolean] = js.undefined
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
@@ -80,6 +81,7 @@ object Props {
     onZoomAnimationStart: /* args */ js.Any => scala.Unit = null,
     options: MapOptions | (js.Function1[/* maps */ Maps, MapOptions]) = null,
     resetBoundsOnResize: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.HTMLProps[stdLib.HTMLDivElement] = null,
     yesIWantToUseGoogleMapApiInternals: js.UndefOr[scala.Boolean] = js.undefined,
     zoom: scala.Int | scala.Double = null
   ): Props = {
@@ -111,6 +113,7 @@ object Props {
     if (onZoomAnimationStart != null) __obj.updateDynamic("onZoomAnimationStart")(js.Any.fromFunction1(onZoomAnimationStart))
     if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     if (!js.isUndefined(resetBoundsOnResize)) __obj.updateDynamic("resetBoundsOnResize")(resetBoundsOnResize)
+    if (style != null) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(yesIWantToUseGoogleMapApiInternals)) __obj.updateDynamic("yesIWantToUseGoogleMapApiInternals")(yesIWantToUseGoogleMapApiInternals)
     if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[Props]

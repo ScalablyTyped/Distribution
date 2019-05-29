@@ -31,6 +31,12 @@ object ^ extends js.Object {
   var Content: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Content = js.native
   var ContentService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ContentNs.ContentService = js.native
   var DataStudioApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.DataStudioApp = js.native
+  // The name `Date` conflicts with lib.es5.d.ts.
+  // - We cannot include lib.es5.d.ts with Apps Script though because Apps Script is ES3
+  //   and doesn't include all ES5+ features.
+  //   Thus developers using the Date class must alias the type in their own TS projects.
+  // - We cannot use lib.es3.d.ts because it is no longer by dtslint.
+  var Date2: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.DateConstructor = js.native
   var Dfareporting: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Dfareporting = js.native
   var DigestAlgorithm: googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.DigestAlgorithm = js.native
   var Docs: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Docs = js.native

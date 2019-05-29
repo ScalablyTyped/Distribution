@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
   		* @param fn Object A function containing the transaction code
   		*/
-  var batchChanges: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var batchChanges: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var beforeIFrameTpl: js.UndefOr[js.Any] = js.undefined
   /** [Method] Template method before a field is reset  */
@@ -90,7 +90,7 @@ import scala.scalajs.js.annotation._
   		* @param value Object The value to get errors for (defaults to the current field value)
   		* @returns String[] All error messages for this field; an empty Array if none.
   		*/
-  var getErrors: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _ | extjsLib.ExtNs.Array]] = js.undefined
+  var getErrors: js.UndefOr[js.Function1[js.UndefOr[js.Any], _ | extjsLib.ExtNs.Array]] = js.undefined
   /** [Method] Returns the value s that should be saved to the Ext data Model instance for this field when Ext form Basic updateRe
   		* @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
   		*/
@@ -130,9 +130,7 @@ import scala.scalajs.js.annotation._
   		* @param value2 Object
   		* @returns Boolean True if the values are equal, false if inequal.
   		*/
-  var isEqual: js.UndefOr[
-    js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], _ | scala.Boolean]
-  ] = js.undefined
+  var isEqual: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], _ | scala.Boolean]] = js.undefined
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
   		* @returns Boolean
   		*/
@@ -146,7 +144,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Associate one or more error messages with this field
   		* @param errors String/String[] The error message(s) for the field.
   		*/
-  var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var markInvalid: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (String) */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** [Property] (Object) */
@@ -172,7 +170,7 @@ import scala.scalajs.js.annotation._
   		* @param value Object
   		* @returns any this
   		*/
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.undefined
   /** [Config Option] (Boolean) */
   var submitValue: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Syncs the contents of the editor iframe with the textarea  */
@@ -185,7 +183,7 @@ import scala.scalajs.js.annotation._
   		* @param value Object The initial value
   		* @returns Object The modified initial value
   		*/
-  var transformOriginalValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
+  var transformOriginalValue: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Triggers a toolbar update by reading the markup state of the current selection in the editor  */
   var updateToolbar: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali

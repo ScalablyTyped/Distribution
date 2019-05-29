@@ -12,6 +12,9 @@ package object atomMod {
   ]) | FilesystemChangeRename
   type FilesystemChangeEvent = js.Array[FilesystemChange]
   type PointCompatible = PointLike | (js.Tuple2[scala.Double, scala.Double])
-  type RangeCompatible = RangeLike | (js.Tuple2[PointLike, PointLike]) | (js.Tuple2[PointLike, js.Tuple2[scala.Double, scala.Double]]) | (js.Tuple2[js.Tuple2[scala.Double, scala.Double], PointLike]) | (js.Tuple2[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]])
+  type RangeCompatible = RangeLike | (js.Tuple2[
+    PointLike | (js.Tuple2[scala.Double, scala.Double]), 
+    PointLike | (js.Tuple2[scala.Double, scala.Double])
+  ])
   type TestRunner = js.Function1[/* params */ TestRunnerParams, js.Promise[scala.Double]]
 }

@@ -812,6 +812,12 @@ trait ThemedBaseStyledInterface[T /* <: js.Object */] extends js.Object {
     scala.Nothing
   ] = js.native
   var td: ThemedStyledFunction[styledDashComponentsLib.styledDashComponentsLibStrings.td, T, js.Object, scala.Nothing] = js.native
+  var template: ThemedStyledFunction[
+    styledDashComponentsLib.styledDashComponentsLibStrings.template, 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   var text: ThemedStyledFunction[
     styledDashComponentsLib.styledDashComponentsLibStrings.text, 
     T, 
@@ -2336,6 +2342,16 @@ trait ThemedBaseStyledInterface[T /* <: js.Object */] extends js.Object {
   // causes tests to fail in TS 3.1
   component: styledDashComponentsLib.styledDashComponentsLibStrings.td
   ): ThemedStyledFunction[styledDashComponentsLib.styledDashComponentsLibStrings.td, T, js.Object, scala.Nothing] = js.native
+  def apply(
+    // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
+  // causes tests to fail in TS 3.1
+  component: styledDashComponentsLib.styledDashComponentsLibStrings.template
+  ): ThemedStyledFunction[
+    styledDashComponentsLib.styledDashComponentsLibStrings.template, 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def apply(
     // unfortunately using a conditional type to validate that it can receive a `theme?: Theme`
   // causes tests to fail in TS 3.1

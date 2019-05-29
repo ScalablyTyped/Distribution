@@ -17,7 +17,7 @@ class Url protected () extends PropertyBase[UrlDefinition] {
   var path: js.Array[java.lang.String] | java.lang.String = js.native
   var port: js.UndefOr[java.lang.String] = js.native
   var protocol: js.UndefOr[java.lang.String] = js.native
-  var query: PropertyList[QueryParam] | (js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | java.lang.String]) = js.native
+  var query: js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | java.lang.String] = js.native
   var variable: js.UndefOr[js.Array[VariableDefinition]] = js.native
   var variables: VariableList = js.native
   def addQueryParams(params: java.lang.String): scala.Unit = js.native

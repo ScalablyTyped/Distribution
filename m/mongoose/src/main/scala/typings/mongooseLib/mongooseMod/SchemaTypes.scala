@@ -46,7 +46,7 @@ object SchemaTypes extends js.Object {
   var Embedded: org.scalablytyped.runtime.Instantiable3[
     /* schema */ mongooseLib.mongooseMod.Schema[js.Any], 
     /* key */ java.lang.String, 
-    /* options */ js.UndefOr[/* options */ js.Any], 
+    js.UndefOr[/* options */ js.Any], 
     mongooseLib.mongooseMod.SchemaNs.TypesNs.Embedded
   ] = js.native
   /*

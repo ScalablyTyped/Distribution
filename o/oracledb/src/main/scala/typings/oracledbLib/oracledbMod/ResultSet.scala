@@ -42,15 +42,14 @@ trait ResultSet extends js.Object {
     * Performance of getRow() can be tuned by adjusting the value of oracledb.fetchArraySize or
     * the execute() option fetchArraySize.
     */
-  def getRow(): js.Promise[org.scalablytyped.runtime.StringDictionary[_] | js.Array[_]] = js.native
+  def getRow(): js.Promise[(stdLib.Record[java.lang.String, _]) | js.Array[_]] = js.native
   def getRow(
     callback: js.Function2[
       /* error */ DBError, 
-      /* row */ org.scalablytyped.runtime.StringDictionary[js.Any] | js.Array[_], 
+      /* row */ (stdLib.Record[java.lang.String, _]) | js.Array[_], 
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def getRows(callback: js.Function2[/* error */ DBError, /* numRows */ scala.Double, scala.Unit]): scala.Unit = js.native
   /**
     * This call fetches numRows rows of the ResultSet as an object or an array of column values,
     * depending on the value of outFormat.
@@ -59,8 +58,18 @@ trait ResultSet extends js.Object {
     *
     * Different values of numRows may alter the time needed for fetching data from Oracle Database.
     * The value of fetchArraySize has no effect on getRows() performance or internal buffering.
+    * 
+    * @param numRows The number of rows to fetch
     */
-  def getRows(numRows: scala.Double): js.Promise[scala.Unit] = js.native
+  def getRows(numRows: scala.Double): js.Promise[js.Array[(stdLib.Record[java.lang.String, _]) | js.Array[_]]] = js.native
+  def getRows(
+    numRows: scala.Double,
+    callback: js.Function2[
+      /* error */ DBError, 
+      /* rows */ js.Array[(stdLib.Record[java.lang.String, _]) | js.Array[_]], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   /**
     * This synchronous method converts a ResultSet into a stream.
     *

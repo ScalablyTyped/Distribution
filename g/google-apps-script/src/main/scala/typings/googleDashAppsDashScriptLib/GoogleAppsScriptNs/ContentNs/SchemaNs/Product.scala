@@ -35,7 +35,7 @@ trait Product extends js.Object {
   var displayAdsLink: js.UndefOr[java.lang.String] = js.undefined
   var displayAdsSimilarIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var displayAdsTitle: js.UndefOr[java.lang.String] = js.undefined
-  var displayAdsValue: js.UndefOr[stdLib.Number] = js.undefined
+  var displayAdsValue: js.UndefOr[scala.Double] = js.undefined
   var energyEfficiencyClass: js.UndefOr[java.lang.String] = js.undefined
   var expirationDate: js.UndefOr[java.lang.String] = js.undefined
   var gender: js.UndefOr[java.lang.String] = js.undefined
@@ -118,7 +118,7 @@ object Product {
     displayAdsLink: java.lang.String = null,
     displayAdsSimilarIds: js.Array[java.lang.String] = null,
     displayAdsTitle: java.lang.String = null,
-    displayAdsValue: stdLib.Number = null,
+    displayAdsValue: scala.Int | scala.Double = null,
     energyEfficiencyClass: java.lang.String = null,
     expirationDate: java.lang.String = null,
     gender: java.lang.String = null,
@@ -198,7 +198,7 @@ object Product {
     if (displayAdsLink != null) __obj.updateDynamic("displayAdsLink")(displayAdsLink)
     if (displayAdsSimilarIds != null) __obj.updateDynamic("displayAdsSimilarIds")(displayAdsSimilarIds)
     if (displayAdsTitle != null) __obj.updateDynamic("displayAdsTitle")(displayAdsTitle)
-    if (displayAdsValue != null) __obj.updateDynamic("displayAdsValue")(displayAdsValue)
+    if (displayAdsValue != null) __obj.updateDynamic("displayAdsValue")(displayAdsValue.asInstanceOf[js.Any])
     if (energyEfficiencyClass != null) __obj.updateDynamic("energyEfficiencyClass")(energyEfficiencyClass)
     if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
     if (gender != null) __obj.updateDynamic("gender")(gender)

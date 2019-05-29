@@ -195,13 +195,11 @@ trait SeriesThemeRiver extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.data
     */
   var data: js.UndefOr[
-    (js.Array[
-      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesThemeRiverNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    js.Array[
+      (js.Array[
         scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesThemeRiverNs.DataObject
-      ]
-    ])
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesThemeRiverNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ]
   ] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis
@@ -362,13 +360,11 @@ object SeriesThemeRiver {
     bottom: scala.Double | java.lang.String = null,
     boundaryGap: js.Array[_] = null,
     coordinateSystem: java.lang.String = null,
-    data: (js.Array[
-      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesThemeRiverNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    data: js.Array[
+      (js.Array[
         scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesThemeRiverNs.DataObject
-      ]
-    ]) = null,
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesThemeRiverNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ] = null,
     emphasis: echartsLib.Anon_ItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle = null,
     height: scala.Double | java.lang.String = null,
     id: java.lang.String = null,
@@ -388,7 +384,7 @@ object SeriesThemeRiver {
     if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
     if (boundaryGap != null) __obj.updateDynamic("boundaryGap")(boundaryGap)
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)

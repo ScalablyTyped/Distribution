@@ -260,7 +260,7 @@ object wxNs extends js.Object {
   trait CameraDevice extends js.Object
   
   trait CanvasAction extends js.Object {
-    var data: js.Array[CanvasAction] | (js.Array[scala.Double | java.lang.String])
+    var data: js.Array[CanvasAction | scala.Double | java.lang.String]
     var method: java.lang.String
   }
   

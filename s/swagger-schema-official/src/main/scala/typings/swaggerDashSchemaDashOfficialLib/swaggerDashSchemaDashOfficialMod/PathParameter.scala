@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
   @JSName("required")
   var required_PathParameter: scala.Boolean
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: java.lang.String | js.UndefOr[java.lang.String]
+  var `type`: js.UndefOr[java.lang.String]
   var uniqueItems: js.UndefOr[scala.Boolean] = js.undefined
 }
 

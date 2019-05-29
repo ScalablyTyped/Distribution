@@ -10,26 +10,10 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val COMMON_PIPES: js.Array[
     (org.scalablytyped.runtime.Instantiable1[
-      /* _ref */ atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef, 
-      atAngularCommonLib.srcPipesAsyncUnderscorePipeMod.AsyncPipe
-    ]) | org.scalablytyped.runtime.Instantiable0[atAngularCommonLib.srcPipesSliceUnderscorePipeMod.SlicePipe] | (org.scalablytyped.runtime.Instantiable1[
-      /* _locale */ java.lang.String, 
-      atAngularCommonLib.srcPipesNumberUnderscorePipeMod.DecimalPipe
-    ]) | (org.scalablytyped.runtime.Instantiable1[
-      /* _locale */ java.lang.String, 
-      atAngularCommonLib.srcPipesNumberUnderscorePipeMod.PercentPipe
-    ]) | (org.scalablytyped.runtime.Instantiable1[
-      /* _locale */ java.lang.String, 
-      atAngularCommonLib.srcPipesNumberUnderscorePipeMod.CurrencyPipe
-    ]) | (org.scalablytyped.runtime.Instantiable1[
-      /* locale */ java.lang.String, 
-      atAngularCommonLib.srcPipesDateUnderscorePipeMod.DatePipe
-    ]) | (org.scalablytyped.runtime.Instantiable1[
-      /* _localization */ atAngularCommonLib.srcI18nLocalizationMod.NgLocalization, 
-      atAngularCommonLib.srcPipesI18nUnderscorePluralUnderscorePipeMod.I18nPluralPipe
-    ]) | org.scalablytyped.runtime.Instantiable0[atAngularCommonLib.srcPipesI18nUnderscoreSelectUnderscorePipeMod.I18nSelectPipe] | (org.scalablytyped.runtime.Instantiable1[
-      /* differs */ atAngularCoreLib.atAngularCoreMod.KeyValueDiffers, 
-      atAngularCommonLib.srcPipesKeyvalueUnderscorePipeMod.KeyValuePipe
+      (/* _ref */ atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef) | (/* differs */ atAngularCoreLib.atAngularCoreMod.KeyValueDiffers) | (/* _localization */ atAngularCommonLib.srcI18nLocalizationMod.NgLocalization) | (/* _locale */ java.lang.String), 
+      atAngularCommonLib.srcPipesAsyncUnderscorePipeMod.AsyncPipe | atAngularCommonLib.srcPipesNumberUnderscorePipeMod.CurrencyPipe | atAngularCommonLib.srcPipesDateUnderscorePipeMod.DatePipe | atAngularCommonLib.srcPipesNumberUnderscorePipeMod.DecimalPipe | atAngularCommonLib.srcPipesI18nUnderscorePluralUnderscorePipeMod.I18nPluralPipe | atAngularCommonLib.srcPipesKeyvalueUnderscorePipeMod.KeyValuePipe | atAngularCommonLib.srcPipesNumberUnderscorePipeMod.PercentPipe
+    ]) | (org.scalablytyped.runtime.Instantiable0[
+      atAngularCommonLib.srcPipesI18nUnderscoreSelectUnderscorePipeMod.I18nSelectPipe | atAngularCommonLib.srcPipesSliceUnderscorePipeMod.SlicePipe
     ])
   ] = js.native
 }

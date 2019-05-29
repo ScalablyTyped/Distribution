@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object atIonicCoreLibStrings {
   @js.native
-  sealed trait A extends js.Object
+  sealed trait A
+    extends atIonicCoreLib.distTypesComponentsRangeRangeDashInterfaceMod._KnobName
   
   @js.native
-  sealed trait B extends js.Object
+  sealed trait B
+    extends atIonicCoreLib.distTypesComponentsRangeRangeDashInterfaceMod._KnobName
   
   @js.native
   sealed trait `action-sheet`

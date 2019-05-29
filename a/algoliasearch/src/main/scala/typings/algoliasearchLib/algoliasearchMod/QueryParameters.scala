@@ -125,7 +125,7 @@ trait QueryParameters extends js.Object {
     * Default: []
     * https://www.algolia.com/doc/api-reference/api-parameters/facetFilters/
     */
-  var facetFilters: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
+  var facetFilters: js.UndefOr[js.Array[js.Array[java.lang.String] | java.lang.String]] = js.undefined
   /**
     * Force faceting to be applied after de-duplication (via the Distinct setting).
     * When using the distinct setting in combination with faceting, facet counts may be higher than expected.
@@ -379,7 +379,7 @@ object QueryParameters {
     disableTypoToleranceOnAttributes: js.Array[java.lang.String] = null,
     distinct: scala.Double | scala.Boolean = null,
     exactOnSingleWordQuery: algoliasearchLib.algoliasearchLibStrings.attribute | algoliasearchLib.algoliasearchLibStrings.none | algoliasearchLib.algoliasearchLibStrings.word = null,
-    facetFilters: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
+    facetFilters: js.Array[js.Array[java.lang.String] | java.lang.String] = null,
     facetingAfterDistinct: js.UndefOr[scala.Boolean] = js.undefined,
     facets: js.Array[java.lang.String] = null,
     filters: java.lang.String = null,
@@ -435,7 +435,7 @@ object QueryParameters {
     if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes)
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
     if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
-    if (facetFilters != null) __obj.updateDynamic("facetFilters")(facetFilters.asInstanceOf[js.Any])
+    if (facetFilters != null) __obj.updateDynamic("facetFilters")(facetFilters)
     if (!js.isUndefined(facetingAfterDistinct)) __obj.updateDynamic("facetingAfterDistinct")(facetingAfterDistinct)
     if (facets != null) __obj.updateDynamic("facets")(facets)
     if (filters != null) __obj.updateDynamic("filters")(filters)

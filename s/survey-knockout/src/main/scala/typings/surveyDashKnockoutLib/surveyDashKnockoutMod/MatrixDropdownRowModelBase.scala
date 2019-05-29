@@ -42,6 +42,7 @@ class MatrixDropdownRowModelBase protected ()
   override def getProcessedText(text: java.lang.String): java.lang.String = js.native
   def getQuestionByColumn(column: MatrixDropdownColumn): Question = js.native
   def getQuestionByColumnName(columnName: java.lang.String): Question = js.native
+  /* protected */ def getSharedQuestionByName(columnName: java.lang.String): Question = js.native
   /* CompleteClass */
   override def getSurvey(): ISurvey = js.native
   /* CompleteClass */
@@ -50,6 +51,7 @@ class MatrixDropdownRowModelBase protected ()
   override def getValue(name: java.lang.String): js.Any = js.native
   def locStrsChanged(): scala.Unit = js.native
   def onAnyValueChanged(name: java.lang.String): scala.Unit = js.native
+  def onQuestionReadOnlyChanged(parentIsReadOnly: scala.Boolean): scala.Unit = js.native
   /* CompleteClass */
   override def processText(text: java.lang.String, returnDisplayValue: scala.Boolean): java.lang.String = js.native
   def processTextEx(text: java.lang.String, returnDisplayValue: scala.Boolean): js.Any = js.native

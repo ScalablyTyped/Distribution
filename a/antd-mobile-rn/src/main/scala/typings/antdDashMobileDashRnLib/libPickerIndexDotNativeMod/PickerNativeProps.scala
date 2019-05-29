@@ -13,7 +13,9 @@ trait PickerNativeProps
 object PickerNativeProps {
   @scala.inline
   def apply(
-    data: js.Array[antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData] | js.Array[js.Array[antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData]],
+    data: js.Array[
+      js.Array[antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData] | antdDashMobileDashRnLib.libPickerPropsTypeMod.PickerData
+    ],
     cascade: js.UndefOr[scala.Boolean] = js.undefined,
     cols: scala.Int | scala.Double = null,
     extra: java.lang.String = null,
@@ -25,7 +27,7 @@ object PickerNativeProps {
     styles: antdDashMobileDashRnLib.libPickerStyleIndexDotNativeMod.IPickerStyle = null,
     value: js.Array[java.lang.String | scala.Double] = null
   ): PickerNativeProps = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data)
     if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
     if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
     if (extra != null) __obj.updateDynamic("extra")(extra)

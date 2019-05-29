@@ -5,7 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TargetTransitionConfig[TContext, TEvent /* <: EventObject */] extends TransitionConfig[TContext, TEvent]
+trait TargetTransitionConfig[TContext, TEvent /* <: EventObject */] extends TransitionConfig[TContext, TEvent] {
+  @JSName("target")
+  var target_TargetTransitionConfig: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+}
 
 object TargetTransitionConfig {
   @scala.inline

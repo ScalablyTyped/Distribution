@@ -21,7 +21,7 @@ trait LassoConfig extends js.Object {
   var minifyJS: js.UndefOr[scala.Boolean] = js.undefined
   var noConflict: js.UndefOr[java.lang.String] = js.undefined
   var outputDir: js.UndefOr[java.lang.String] = js.undefined
-  var plugins: js.UndefOr[js.Array[java.lang.String] | js.Array[CustomPlugin]] = js.undefined
+  var plugins: js.UndefOr[js.Array[CustomPlugin | java.lang.String]] = js.undefined
   var relativeUrlsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var require: js.UndefOr[js.Any] = js.undefined
   var resolveCssUrls: js.UndefOr[scala.Boolean] = js.undefined
@@ -46,7 +46,7 @@ object LassoConfig {
     minifyJS: js.UndefOr[scala.Boolean] = js.undefined,
     noConflict: java.lang.String = null,
     outputDir: java.lang.String = null,
-    plugins: js.Array[java.lang.String] | js.Array[CustomPlugin] = null,
+    plugins: js.Array[CustomPlugin | java.lang.String] = null,
     relativeUrlsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     require: js.Any = null,
     resolveCssUrls: js.UndefOr[scala.Boolean] = js.undefined,
@@ -68,7 +68,7 @@ object LassoConfig {
     if (!js.isUndefined(minifyJS)) __obj.updateDynamic("minifyJS")(minifyJS)
     if (noConflict != null) __obj.updateDynamic("noConflict")(noConflict)
     if (outputDir != null) __obj.updateDynamic("outputDir")(outputDir)
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (!js.isUndefined(relativeUrlsEnabled)) __obj.updateDynamic("relativeUrlsEnabled")(relativeUrlsEnabled)
     if (require != null) __obj.updateDynamic("require")(require)
     if (!js.isUndefined(resolveCssUrls)) __obj.updateDynamic("resolveCssUrls")(resolveCssUrls)

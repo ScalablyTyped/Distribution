@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * An overlay that looks like a bubble and is often connected to a marker.
+  * This class extends MVCObject.
+  */
 @JSGlobal("google.maps.InfoWindow")
 @js.native
 /**

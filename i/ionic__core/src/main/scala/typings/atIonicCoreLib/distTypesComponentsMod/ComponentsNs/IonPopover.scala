@@ -22,20 +22,20 @@ trait IonPopover extends js.Object {
   /**
     * The data to pass to the popover component.
     */
-  var componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.UndefOr[
+  var componentProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
   ] = js.native
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
   var cssClass: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
-  var delegate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.UndefOr[
+  var delegate: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any
   ] = js.native
   /**
     * Animation to use when the popover is presented.
     */
-  var enterAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var enterAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.native
   /**
@@ -49,7 +49,7 @@ trait IonPopover extends js.Object {
   /**
     * Animation to use when the popover is dismissed.
     */
-  var leaveAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var leaveAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.native
   /**

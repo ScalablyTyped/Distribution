@@ -24,9 +24,9 @@ trait ThenPromise[T] extends js.Object {
     * @param onrejected The callback to execute when the ThenPromise is rejected.
     */
   def done(): scala.Unit = js.native
+  def done(onfulfilled: js.UndefOr[scala.Nothing], onrejected: js.Function1[/* reason */ js.Any, _]): scala.Unit = js.native
   def done(onfulfilled: js.Function1[/* value */ T, _]): scala.Unit = js.native
   def done(onfulfilled: js.Function1[/* value */ T, _], onrejected: js.Function1[/* reason */ js.Any, _]): scala.Unit = js.native
-  def done(onfulfilled: js.UndefOr[scala.Nothing], onrejected: js.Function1[/* reason */ js.Any, _]): scala.Unit = js.native
   def done(onfulfilled: scala.Null, onrejected: js.Function1[/* reason */ js.Any, _]): scala.Unit = js.native
   def nodeify(): ThenPromise[T] = js.native
   def nodeify(callback: js.Function2[/* err */ stdLib.Error, /* value */ T, scala.Unit]): scala.Unit = js.native
@@ -41,13 +41,13 @@ trait ThenPromise[T] extends js.Object {
     * @returns A ThenPromise for the completion of which ever callback is executed.
     */
   def `then`[TResult1, TResult2](): ThenPromise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
+  ): ThenPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]]): ThenPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ T, TResult1 | Thenable[TResult1]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
-  ): ThenPromise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    onfulfilled: js.UndefOr[scala.Nothing],
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | Thenable[TResult2]]
   ): ThenPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](

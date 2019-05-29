@@ -14,19 +14,19 @@ object ActionSheet extends js.Object {
     callback: js.Function1[/* index */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   def showShareActionSheetWithOptions(config: js.Any): scala.Unit = js.native
-  def showShareActionSheetWithOptions(config: js.Any, failureCallback: js.Function1[/* arg0 */ js.Any, scala.Unit]): scala.Unit = js.native
   def showShareActionSheetWithOptions(
     config: js.Any,
-    failureCallback: js.Function1[/* arg0 */ js.Any, scala.Unit],
+    failureCallback: js.UndefOr[scala.Nothing],
     successCallback: js.Function2[
       /* arg0 */ scala.Boolean, 
       /* activityType */ js.UndefOr[java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def showShareActionSheetWithOptions(config: js.Any, failureCallback: js.Function1[/* arg0 */ js.Any, scala.Unit]): scala.Unit = js.native
   def showShareActionSheetWithOptions(
     config: js.Any,
-    failureCallback: js.UndefOr[scala.Nothing],
+    failureCallback: js.Function1[/* arg0 */ js.Any, scala.Unit],
     successCallback: js.Function2[
       /* arg0 */ scala.Boolean, 
       /* activityType */ js.UndefOr[java.lang.String], 

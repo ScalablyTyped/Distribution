@@ -62,8 +62,8 @@ class Tree () extends js.Object {
   /**
     * Recursively walk the tree in breadth-first order. Fires an event for each entry.
     */
-  def walk(): nodeLib.NodeJSNs.EventEmitter = js.native
-  def walk(blobsOnly: scala.Boolean): nodeLib.NodeJSNs.EventEmitter = js.native
+  def walk(): nodeLib.NodeJSNs.EventEmitter with nodegitLib.Anon_Start = js.native
+  def walk(blobsOnly: scala.Boolean): nodeLib.NodeJSNs.EventEmitter with nodegitLib.Anon_Start = js.native
 }
 
 /* static members */

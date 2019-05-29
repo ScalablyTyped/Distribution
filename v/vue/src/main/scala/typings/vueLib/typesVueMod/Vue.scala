@@ -37,7 +37,7 @@ trait Vue extends js.Object {
   @JSName("$props")
   val $props: stdLib.Record[java.lang.String, _] = js.native
   @JSName("$refs")
-  val $refs: org.scalablytyped.runtime.StringDictionary[Vue | stdLib.Element | js.Array[Vue] | js.Array[stdLib.Element]] = js.native
+  val $refs: org.scalablytyped.runtime.StringDictionary[Vue | stdLib.Element | (js.Array[stdLib.Element | Vue])] = js.native
   @JSName("$root")
   val $root: Vue = js.native
   @JSName("$scopedSlots")

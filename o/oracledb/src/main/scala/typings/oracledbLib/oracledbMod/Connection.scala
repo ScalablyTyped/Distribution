@@ -150,19 +150,6 @@ trait Connection extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#querystream For an alternative
     */
   def execute(sql: java.lang.String): js.Promise[Result] = js.native
-  def execute(sql: java.lang.String, bindParams: js.Array[_]): js.Promise[Result] = js.native
-  def execute(
-    sql: java.lang.String,
-    bindParams: js.Array[_],
-    callback: js.Function2[/* error */ DBError, /* result */ Result, scala.Unit]
-  ): scala.Unit = js.native
-  def execute(sql: java.lang.String, bindParams: js.Array[_], options: ExecuteOptions): js.Promise[Result] = js.native
-  def execute(
-    sql: java.lang.String,
-    bindParams: js.Array[_],
-    options: ExecuteOptions,
-    callback: js.Function2[/* error */ DBError, /* result */ Result, scala.Unit]
-  ): scala.Unit = js.native
   /**
     * This call executes a single SQL or PL/SQL statement.
     *
@@ -172,10 +159,10 @@ trait Connection extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sqlexecution
     * @see https://oracle.github.io/node-oracledb/doc/api.html#querystream For an alternative
     */
-  def execute(sql: java.lang.String, bindParams: BindParametersObject): js.Promise[Result] = js.native
+  def execute(sql: java.lang.String, bindParams: BindParameters): js.Promise[Result] = js.native
   def execute(
     sql: java.lang.String,
-    bindParams: BindParametersObject,
+    bindParams: BindParameters,
     callback: js.Function2[/* error */ DBError, /* result */ Result, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -188,10 +175,10 @@ trait Connection extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sqlexecution
     * @see https://oracle.github.io/node-oracledb/doc/api.html#querystream For an alternative
     */
-  def execute(sql: java.lang.String, bindParams: BindParametersObject, options: ExecuteOptions): js.Promise[Result] = js.native
+  def execute(sql: java.lang.String, bindParams: BindParameters, options: ExecuteOptions): js.Promise[Result] = js.native
   def execute(
     sql: java.lang.String,
-    bindParams: BindParametersObject,
+    bindParams: BindParameters,
     options: ExecuteOptions,
     callback: js.Function2[/* error */ DBError, /* result */ Result, scala.Unit]
   ): scala.Unit = js.native
@@ -199,13 +186,10 @@ trait Connection extends js.Object {
     sql: java.lang.String,
     callback: js.Function2[/* error */ DBError, /* result */ Result, scala.Unit]
   ): scala.Unit = js.native
+  def executeMany(sql: java.lang.String, binds: js.Array[(stdLib.Record[java.lang.String, _]) | js.Array[_]]): js.Promise[Results] = js.native
   def executeMany(
     sql: java.lang.String,
-    binds: js.Array[org.scalablytyped.runtime.StringDictionary[_] | js.Array[_]]
-  ): js.Promise[Results] = js.native
-  def executeMany(
-    sql: java.lang.String,
-    binds: js.Array[org.scalablytyped.runtime.StringDictionary[_] | js.Array[_]],
+    binds: js.Array[(stdLib.Record[java.lang.String, _]) | js.Array[_]],
     callback: js.Function2[/* error */ DBError, /* result */ Results, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -249,12 +233,12 @@ trait Connection extends js.Object {
     */
   def executeMany(
     sql: java.lang.String,
-    binds: js.Array[org.scalablytyped.runtime.StringDictionary[_] | js.Array[_]],
+    binds: js.Array[(stdLib.Record[java.lang.String, _]) | js.Array[_]],
     options: ExecuteManyOptions
   ): js.Promise[Results] = js.native
   def executeMany(
     sql: java.lang.String,
-    binds: js.Array[org.scalablytyped.runtime.StringDictionary[_] | js.Array[_]],
+    binds: js.Array[(stdLib.Record[java.lang.String, _]) | js.Array[_]],
     options: ExecuteManyOptions,
     callback: js.Function2[/* error */ DBError, /* result */ Results, scala.Unit]
   ): scala.Unit = js.native
@@ -289,9 +273,6 @@ trait Connection extends js.Object {
   ): scala.Unit = js.native
   /**
     * Returns a parent SodaDatabase object for use with Simple Oracle Document Access (SODA).
-    *
-    * SODA support in node-oracledb is in Preview status and should not be used in production.
-    * It will be supported with a future version of Oracle Client libraries.
     *
     * @since 3.0
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaoverview
@@ -334,9 +315,7 @@ trait Connection extends js.Object {
   def ping(): js.Promise[scala.Unit] = js.native
   def ping(callback: js.Function1[/* error */ DBError, scala.Unit]): scala.Unit = js.native
   def queryStream(sql: java.lang.String): nodeLib.streamMod.Readable = js.native
-  def queryStream(sql: java.lang.String, bindParams: js.Array[_]): nodeLib.streamMod.Readable = js.native
-  def queryStream(sql: java.lang.String, bindParams: js.Array[_], options: ExecuteOptions): nodeLib.streamMod.Readable = js.native
-  def queryStream(sql: java.lang.String, bindParams: BindParametersObject): nodeLib.streamMod.Readable = js.native
+  def queryStream(sql: java.lang.String, bindParams: BindParameters): nodeLib.streamMod.Readable = js.native
   /**
     * This function provides query streaming support. The parameters are the same as execute() except
     * a callback is not used. Instead this function returns a stream used to fetch data.
@@ -355,7 +334,7 @@ trait Connection extends js.Object {
     * @since 1.8
     * @see https://oracle.github.io/node-oracledb/doc/api.html#streamingresults
     */
-  def queryStream(sql: java.lang.String, bindParams: BindParametersObject, options: ExecuteOptions): nodeLib.streamMod.Readable = js.native
+  def queryStream(sql: java.lang.String, bindParams: BindParameters, options: ExecuteOptions): nodeLib.streamMod.Readable = js.native
   def release(): js.Promise[scala.Unit] = js.native
   def release(callback: js.Function1[/* error */ DBError, scala.Unit]): scala.Unit = js.native
   /**

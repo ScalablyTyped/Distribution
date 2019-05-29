@@ -11,10 +11,9 @@ package object mapkitNs {
   /* Rewritten from type alias, can be one of: 
     - Annotation
     - Overlay
-    - js.Array[Annotation]
-    - js.Array[Overlay]
+    - js.Array[Annotation | Overlay]
   */
-  type ItemType = _ItemType | js.Array[Annotation] | js.Array[Overlay]
+  type ItemType = _ItemType | (js.Array[Annotation | Overlay])
   type SearchCallback = js.Function0[scala.Unit]
   type TileCallbackFunction = js.Function5[
     /* x */ scala.Double, 

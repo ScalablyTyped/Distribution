@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object vscodeMod {
   type CharacterPair = js.Tuple2[java.lang.String, java.lang.String]
-  type Declaration = Location | js.Array[Location] | js.Array[LocationLink]
+  type Declaration = Location | (js.Array[Location | LocationLink])
   type Definition = Location | js.Array[Location]
   type DefinitionLink = LocationLink
   type DocumentSelector = DocumentFilter | java.lang.String | (js.Array[DocumentFilter | java.lang.String])

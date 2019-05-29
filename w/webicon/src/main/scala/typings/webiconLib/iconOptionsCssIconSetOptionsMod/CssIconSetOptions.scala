@@ -10,7 +10,7 @@ trait CssIconSetOptions
   /**
     * An alias of the `className`-property.
     */
-  var `class`: /* import warning: ImportType.apply Failed type conversion: this['className'] */ js.UndefOr[
+  var `class`: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['className'] */ js.Any
   ] = js.undefined
   /**
@@ -22,7 +22,7 @@ trait CssIconSetOptions
   /**
     * An alias of the `className`-property.
     */
-  var cssClass: /* import warning: ImportType.apply Failed type conversion: this['className'] */ js.UndefOr[
+  var cssClass: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['className'] */ js.Any
   ] = js.undefined
 }

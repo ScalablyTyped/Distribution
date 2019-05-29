@@ -14,7 +14,7 @@ trait ImageProps
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
   var width: js.UndefOr[NumberProp] = js.undefined
   var x: js.UndefOr[NumberProp] = js.undefined
-  var xlinkHref: /* import warning: ImportType.apply Failed type conversion: any['source'] */ js.UndefOr[
+  var xlinkHref: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: any['source'] */ js.Any
   ] = js.undefined
   var y: js.UndefOr[NumberProp] = js.undefined

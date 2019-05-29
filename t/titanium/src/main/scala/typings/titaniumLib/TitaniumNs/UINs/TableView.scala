@@ -22,7 +22,7 @@ trait TableView extends View {
   /**
   			 * Rows of the table view.
   			 */
-  var data: js.Array[TableViewRow] | js.Array[TableViewSection] = js.native
+  var data: js.Array[TableViewRow | TableViewSection] = js.native
   /**
   			 * A Boolean indicating whether the underlying content is dimmed during a search.
   			 */
@@ -236,7 +236,7 @@ trait TableView extends View {
   /**
   			 * Gets the value of the <Titanium.UI.TableView.data> property.
   			 */
-  def getData(): js.Array[TableViewRow] | js.Array[TableViewSection] = js.native
+  def getData(): js.Array[TableViewRow | TableViewSection] = js.native
   /**
   			 * Gets the value of the <Titanium.UI.TableView.dimBackgroundForSearch> property.
   			 */

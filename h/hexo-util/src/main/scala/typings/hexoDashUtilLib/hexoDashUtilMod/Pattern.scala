@@ -26,8 +26,8 @@ class PatternCls[T] protected () extends Pattern[T] {
 object Pattern
   extends org.scalablytyped.runtime.Instantiable1[
       (/* rule */ js.Function1[/* str */ java.lang.String, js.Object]) | (/* rule */ Pattern[js.Object]) | (/* rule */ stdLib.RegExp) | (/* rule */ java.lang.String), 
-      Pattern[js.Object] | (Pattern[stdLib.RegExpMatchArray | scala.Null]) | (Pattern[
-        hexoDashUtilLib.Anon_0 with js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]
-      ])
+      Pattern[
+        (hexoDashUtilLib.Anon_0 with js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]]) | scala.Null | js.Object | stdLib.RegExpMatchArray
+      ]
     ]
 

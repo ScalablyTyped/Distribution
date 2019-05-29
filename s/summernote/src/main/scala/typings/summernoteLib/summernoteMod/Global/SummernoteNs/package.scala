@@ -33,7 +33,12 @@ package object SummernoteNs {
   type toolbarColorGroupOptions = summernoteLib.summernoteLibStrings.color
   // type toolbarDef = [string, string[]][]
   type toolbarDef = js.Array[
-    (js.Tuple2[summernoteLib.summernoteLibStrings.style, js.Array[toolbarStyleGroupOptions]]) | (js.Tuple2[summernoteLib.summernoteLibStrings.font, js.Array[toolbarFontGroupOptions]]) | (js.Tuple2[summernoteLib.summernoteLibStrings.fontsize, js.Array[toolbarFontsizeGroupOptions]]) | (js.Tuple2[summernoteLib.summernoteLibStrings.color, js.Array[toolbarColorGroupOptions]]) | (js.Tuple2[summernoteLib.summernoteLibStrings.para, js.Array[toolbarParaGroupOptions]]) | (js.Tuple2[summernoteLib.summernoteLibStrings.height, js.Array[toolbarHeightGroupOptions]]) | (js.Tuple2[summernoteLib.summernoteLibStrings.table, js.Array[toolbarTableGroupOptions]]) | (js.Tuple2[summernoteLib.summernoteLibStrings.insert, js.Array[toolbarInsertGroupOptions]]) | (js.Tuple2[summernoteLib.summernoteLibStrings.view, js.Array[toolbarViewGroupOptions]]) | (js.Tuple2[summernoteLib.summernoteLibStrings.help, js.Array[toolbarHelpGroupOptions]])
+    js.Tuple2[
+      summernoteLib.summernoteLibStrings.style | summernoteLib.summernoteLibStrings.font | summernoteLib.summernoteLibStrings.fontsize | summernoteLib.summernoteLibStrings.color | summernoteLib.summernoteLibStrings.para | summernoteLib.summernoteLibStrings.height | summernoteLib.summernoteLibStrings.table | summernoteLib.summernoteLibStrings.insert | summernoteLib.summernoteLibStrings.view | summernoteLib.summernoteLibStrings.help, 
+      js.Array[
+        toolbarColorGroupOptions | toolbarFontGroupOptions | toolbarFontsizeGroupOptions | toolbarHeightGroupOptions | toolbarHelpGroupOptions | toolbarInsertGroupOptions | toolbarParaGroupOptions | toolbarStyleGroupOptions | toolbarTableGroupOptions | toolbarViewGroupOptions
+      ]
+    ]
   ]
   type toolbarFontsizeGroupOptions = summernoteLib.summernoteLibStrings.fontsize
   type toolbarHeightGroupOptions = summernoteLib.summernoteLibStrings.height

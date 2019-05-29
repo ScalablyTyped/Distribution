@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JSDocTag extends js.Object {
-  var tagName: js.UndefOr[JSDocTagName | scala.Nothing | java.lang.String] = js.undefined
+  var tagName: js.UndefOr[JSDocTagName | java.lang.String] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 

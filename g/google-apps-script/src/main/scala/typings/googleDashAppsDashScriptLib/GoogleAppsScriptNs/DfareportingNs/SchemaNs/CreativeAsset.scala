@@ -27,13 +27,13 @@ trait CreativeAsset extends js.Object {
   var expandedDimension: js.UndefOr[Size] = js.undefined
   var fileSize: js.UndefOr[java.lang.String] = js.undefined
   var flashVersion: js.UndefOr[scala.Double] = js.undefined
-  var frameRate: js.UndefOr[stdLib.Number] = js.undefined
+  var frameRate: js.UndefOr[scala.Double] = js.undefined
   var hideFlashObjects: js.UndefOr[scala.Boolean] = js.undefined
   var hideSelectionBoxes: js.UndefOr[scala.Boolean] = js.undefined
   var horizontallyLocked: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
-  var mediaDuration: js.UndefOr[stdLib.Number] = js.undefined
+  var mediaDuration: js.UndefOr[scala.Double] = js.undefined
   var mimeType: js.UndefOr[java.lang.String] = js.undefined
   var offset: js.UndefOr[OffsetPosition] = js.undefined
   var orientation: js.UndefOr[java.lang.String] = js.undefined
@@ -44,7 +44,7 @@ trait CreativeAsset extends js.Object {
   var positionTopUnit: js.UndefOr[java.lang.String] = js.undefined
   var progressiveServingUrl: js.UndefOr[java.lang.String] = js.undefined
   var pushdown: js.UndefOr[scala.Boolean] = js.undefined
-  var pushdownDuration: js.UndefOr[stdLib.Number] = js.undefined
+  var pushdownDuration: js.UndefOr[scala.Double] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[Size] = js.undefined
   var sslCompliant: js.UndefOr[scala.Boolean] = js.undefined
@@ -82,13 +82,13 @@ object CreativeAsset {
     expandedDimension: Size = null,
     fileSize: java.lang.String = null,
     flashVersion: scala.Int | scala.Double = null,
-    frameRate: stdLib.Number = null,
+    frameRate: scala.Int | scala.Double = null,
     hideFlashObjects: js.UndefOr[scala.Boolean] = js.undefined,
     hideSelectionBoxes: js.UndefOr[scala.Boolean] = js.undefined,
     horizontallyLocked: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     idDimensionValue: DimensionValue = null,
-    mediaDuration: stdLib.Number = null,
+    mediaDuration: scala.Int | scala.Double = null,
     mimeType: java.lang.String = null,
     offset: OffsetPosition = null,
     orientation: java.lang.String = null,
@@ -99,7 +99,7 @@ object CreativeAsset {
     positionTopUnit: java.lang.String = null,
     progressiveServingUrl: java.lang.String = null,
     pushdown: js.UndefOr[scala.Boolean] = js.undefined,
-    pushdownDuration: stdLib.Number = null,
+    pushdownDuration: scala.Int | scala.Double = null,
     role: java.lang.String = null,
     size: Size = null,
     sslCompliant: js.UndefOr[scala.Boolean] = js.undefined,
@@ -134,13 +134,13 @@ object CreativeAsset {
     if (expandedDimension != null) __obj.updateDynamic("expandedDimension")(expandedDimension)
     if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize)
     if (flashVersion != null) __obj.updateDynamic("flashVersion")(flashVersion.asInstanceOf[js.Any])
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate)
+    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
     if (!js.isUndefined(hideFlashObjects)) __obj.updateDynamic("hideFlashObjects")(hideFlashObjects)
     if (!js.isUndefined(hideSelectionBoxes)) __obj.updateDynamic("hideSelectionBoxes")(hideSelectionBoxes)
     if (!js.isUndefined(horizontallyLocked)) __obj.updateDynamic("horizontallyLocked")(horizontallyLocked)
     if (id != null) __obj.updateDynamic("id")(id)
     if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue)
-    if (mediaDuration != null) __obj.updateDynamic("mediaDuration")(mediaDuration)
+    if (mediaDuration != null) __obj.updateDynamic("mediaDuration")(mediaDuration.asInstanceOf[js.Any])
     if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
     if (offset != null) __obj.updateDynamic("offset")(offset)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
@@ -151,7 +151,7 @@ object CreativeAsset {
     if (positionTopUnit != null) __obj.updateDynamic("positionTopUnit")(positionTopUnit)
     if (progressiveServingUrl != null) __obj.updateDynamic("progressiveServingUrl")(progressiveServingUrl)
     if (!js.isUndefined(pushdown)) __obj.updateDynamic("pushdown")(pushdown)
-    if (pushdownDuration != null) __obj.updateDynamic("pushdownDuration")(pushdownDuration)
+    if (pushdownDuration != null) __obj.updateDynamic("pushdownDuration")(pushdownDuration.asInstanceOf[js.Any])
     if (role != null) __obj.updateDynamic("role")(role)
     if (size != null) __obj.updateDynamic("size")(size)
     if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant)

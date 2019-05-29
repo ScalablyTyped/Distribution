@@ -77,11 +77,11 @@ trait JdbcPreparedStatement extends js.Object {
     x: JdbcDate,
     timeZone: java.lang.String
   ): scala.Unit = js.native
-  def setDouble(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: stdLib.Number): scala.Unit = js.native
+  def setDouble(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: scala.Double): scala.Unit = js.native
   def setEscapeProcessing(enable: scala.Boolean): scala.Unit = js.native
   def setFetchDirection(direction: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
   def setFetchSize(rows: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
-  def setFloat(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: stdLib.Number): scala.Unit = js.native
+  def setFloat(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: scala.Double): scala.Unit = js.native
   def setInt(
     parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     x: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer

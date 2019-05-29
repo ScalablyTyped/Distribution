@@ -41,7 +41,7 @@ package object GmeCommonNs {
   type Path = java.lang.String
   type Payload = java.lang.String | Buffer | js.Array[Buffer]
   type Primitive = java.lang.String | scala.Double
-  type ProjectStart = java.lang.String | webgmeLib.GmeStorageNs.CommitHash | js.Array[java.lang.String] | js.Array[webgmeLib.GmeStorageNs.CommitHash]
+  type ProjectStart = java.lang.String | webgmeLib.GmeStorageNs.CommitHash | (js.Array[webgmeLib.GmeStorageNs.CommitHash | java.lang.String])
   type Registry = js.Any
   type RelId = java.lang.String
   type ResultCallback[T] = js.Function2[/* err */ stdLib.Error | scala.Null, /* result */ T, scala.Unit]

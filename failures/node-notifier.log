@@ -12,7 +12,7 @@
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing node-notifier [id => node-notifier, phase => scala.js] 
 [debug] PhaseRunner.scala:84 Success [id => node-notifier, phase => scala.js] 
-[error] NodeNotifier.scala:60 method notify_^ is defined twice;
-  the conflicting method notify_^ was defined at line 58:7,   def `notify_^`(): nodeDashNotifierLib.notifiersToasterMod.^ = js.native [id => node-notifier, phase => build] 
+[error] NodeNotifier.scala:51 method notify_^ is defined twice;
+  the conflicting method notify_^ was defined at line 49:7,   def `notify_^`(): nodeDashNotifierLib.notifiersToasterMod.^ = js.native [id => node-notifier, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [node-notifier => Compilation failed] [id => node-notifier, phase => build] 
 [error] PhaseRunner.scala:88 Failure, [node-notifier => Compilation failed] [id => node-notifier, phase => publish] 

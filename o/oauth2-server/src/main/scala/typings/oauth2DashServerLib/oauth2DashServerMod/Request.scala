@@ -25,7 +25,7 @@ class Request () extends js.Object {
     * Returns the specified HTTP header field. The match is case-insensitive.
     *
     */
-  def get(field: java.lang.String): js.UndefOr[_] = js.native
+  def get(field: java.lang.String): js.UndefOr[js.Any] = js.native
   /**
     * Checks if the request’s Content-Type HTTP header matches any of the given MIME types.
     *

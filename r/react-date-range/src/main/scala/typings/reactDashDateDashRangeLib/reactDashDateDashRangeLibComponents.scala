@@ -16,5 +16,10 @@ object reactDashDateDashRangeLibComponents {
   @scala.inline
   def DateRangeProps: reactDashDateDashRangeLib.reactDashDateDashRangeMod.DateRangeProps.type = reactDashDateDashRangeLib.reactDashDateDashRangeMod.DateRangeProps
   type DateRangeProps = reactDashDateDashRangeLib.reactDashDateDashRangeMod.DateRangeProps
+  @scala.inline
+  def DateRangePicker: reactLib.reactMod.ComponentType[reactDashDateDashRangeLib.reactDashDateDashRangeMod.DateRangeProps] = js.constructorOf[reactDashDateDashRangeLib.reactDashDateDashRangeMod.DateRangePicker].asInstanceOf[reactLib.reactMod.ComponentType[reactDashDateDashRangeLib.reactDashDateDashRangeMod.DateRangeProps]]
+  @scala.inline
+  def DateRangePickerProps: reactDashDateDashRangeLib.reactDashDateDashRangeMod.DateRangeProps.type = reactDashDateDashRangeLib.reactDashDateDashRangeMod.DateRangeProps
+  type DateRangePickerProps = reactDashDateDashRangeLib.reactDashDateDashRangeMod.DateRangeProps
 }
 

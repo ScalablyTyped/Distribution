@@ -92,10 +92,12 @@ object IGeoObjectOptions {
     preset: java.lang.String = null,
     rectangleOverlay: OverlayKey = null,
     setMapCursorInDragging: js.UndefOr[scala.Boolean] = js.undefined,
-    strokeColor: js.Array[js.Array[java.lang.String]] | js.Array[java.lang.String] | java.lang.String = null,
-    strokeOpacity: js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double = null,
-    strokeStyle: js.Array[js.Array[js.Array[java.lang.String]]] | js.Array[js.Array[js.Object]] | js.Array[java.lang.String] | js.Array[js.Object] | java.lang.String | js.Object = null,
-    strokeWidth: js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double = null,
+    strokeColor: (js.Array[js.Array[java.lang.String] | java.lang.String]) | java.lang.String = null,
+    strokeOpacity: (js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double = null,
+    strokeStyle: (js.Array[
+      (js.Array[js.Array[java.lang.String] | js.Object]) | js.Object | java.lang.String
+    ]) | java.lang.String | js.Object = null,
+    strokeWidth: (js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double = null,
     syncOverlayInit: js.UndefOr[scala.Boolean] = js.undefined,
     useMapMarginInDragging: js.UndefOr[scala.Boolean] = js.undefined,
     visible: js.UndefOr[scala.Boolean] = js.undefined,

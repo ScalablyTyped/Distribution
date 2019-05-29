@@ -24,7 +24,7 @@ trait LineChartBuilder extends js.Object {
   def setLegendTextStyle(textStyle: TextStyle): LineChartBuilder = js.native
   def setOption(option: java.lang.String, value: js.Object): LineChartBuilder = js.native
   def setPointStyle(style: PointStyle): LineChartBuilder = js.native
-  def setRange(start: stdLib.Number, end: stdLib.Number): LineChartBuilder = js.native
+  def setRange(start: scala.Double, end: scala.Double): LineChartBuilder = js.native
   def setTitle(chartTitle: java.lang.String): LineChartBuilder = js.native
   def setTitleTextStyle(textStyle: TextStyle): LineChartBuilder = js.native
   def setXAxisTextStyle(textStyle: TextStyle): LineChartBuilder = js.native

@@ -35,7 +35,7 @@ trait DescribeOrderableDBInstanceOptionsMessage extends js.Object {
     */
   var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   /**
-    * A value that indicates whether to show only VPC or non-VPC offerings.
+    * The VPC filter value. Specify this parameter to show only the available VPC or non-VPC offerings.
     */
   var Vpc: js.UndefOr[BooleanOptional] = js.undefined
 }

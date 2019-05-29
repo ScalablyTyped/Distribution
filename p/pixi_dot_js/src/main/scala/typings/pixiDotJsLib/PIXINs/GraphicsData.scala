@@ -26,7 +26,7 @@ class GraphicsData protected () extends js.Object {
   var fill: scala.Boolean = js.native
   var fillAlpha: scala.Double = js.native
   var fillColor: scala.Double = js.native
-  var holes: js.Array[Circle] | js.Array[Rectangle] | js.Array[Ellipse] | js.Array[Polygon] | js.Array[RoundedRectangle] | js.Array[_] = js.native
+  var holes: js.Array[_ | Circle | Ellipse | Polygon | Rectangle | RoundedRectangle] = js.native
   var lineAlignment: scala.Double = js.native
   var lineAlpha: scala.Double = js.native
   var lineColor: scala.Double = js.native

@@ -675,7 +675,7 @@ trait Collection[K, V] extends ValueObject {
     * `Collection.Indexed`, and `Collection.Set` produce an Array of values.
     * `Collection.Keyed` produce an Array of [key, value] tuples.
     */
-  def toArray(): js.Array[V] | (js.Array[js.Tuple2[K, V]]) = js.native
+  def toArray(): js.Array[(js.Tuple2[K, V]) | V] = js.native
   /**
     * Returns an Seq.Indexed of the values of this Collection, discarding keys.
     */

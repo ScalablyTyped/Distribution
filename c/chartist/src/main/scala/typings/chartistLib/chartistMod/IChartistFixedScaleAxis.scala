@@ -9,7 +9,7 @@ trait IChartistFixedScaleAxis extends ILineChartAxis {
   var divisor: js.UndefOr[scala.Double] = js.undefined
   var high: js.UndefOr[scala.Double] = js.undefined
   var low: js.UndefOr[scala.Double] = js.undefined
-  var ticks: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
+  var ticks: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
   var `type`: js.UndefOr[IFixedScaleAxisStatic] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object IChartistFixedScaleAxis {
     position: java.lang.String = null,
     showGrid: js.UndefOr[scala.Boolean] = js.undefined,
     showLabel: js.UndefOr[scala.Boolean] = js.undefined,
-    ticks: js.Array[java.lang.String] | js.Array[scala.Double] = null,
+    ticks: js.Array[scala.Double | java.lang.String] = null,
     `type`: IFixedScaleAxisStatic = null
   ): IChartistFixedScaleAxis = {
     val __obj = js.Dynamic.literal()
@@ -38,7 +38,7 @@ object IChartistFixedScaleAxis {
     if (position != null) __obj.updateDynamic("position")(position)
     if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid)
     if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel)
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IChartistFixedScaleAxis]
   }

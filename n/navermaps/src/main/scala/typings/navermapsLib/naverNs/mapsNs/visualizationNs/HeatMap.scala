@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 class HeatMap () extends js.Object {
   def this(heatMapOptions: HeatMapOptions) = this()
   def getColorMap(): SpectrumStyle = js.native
-  def getData(): js.Array[navermapsLib.naverNs.mapsNs.LatLng] | js.Array[navermapsLib.naverNs.mapsNs.PointArrayLiteral] = js.native
+  def getData(): js.Array[
+    navermapsLib.naverNs.mapsNs.LatLng | navermapsLib.naverNs.mapsNs.PointArrayLiteral
+  ] = js.native
   def getMap(): navermapsLib.naverNs.mapsNs.Map | scala.Null = js.native
   def getOptions(): HeatMapOptions = js.native
   def getOptions(key: java.lang.String): HeatMapOptions = js.native

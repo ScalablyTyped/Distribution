@@ -68,7 +68,7 @@ object Storage extends js.Object {
   var Bucket: org.scalablytyped.runtime.Instantiable3[
     /* storage */ atGoogleDashCloudStorageLib.buildSrcStorageMod.Storage, 
     /* name */ java.lang.String, 
-    /* options */ js.UndefOr[/* options */ atGoogleDashCloudStorageLib.buildSrcBucketMod.BucketOptions], 
+    js.UndefOr[/* options */ atGoogleDashCloudStorageLib.buildSrcBucketMod.BucketOptions], 
     atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket
   ] = js.native
   /**
@@ -94,7 +94,7 @@ object Storage extends js.Object {
   var File: org.scalablytyped.runtime.Instantiable3[
     /* bucket */ atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, 
     /* name */ java.lang.String, 
-    /* options */ js.UndefOr[/* options */ atGoogleDashCloudStorageLib.buildSrcFileMod.FileOptions], 
+    js.UndefOr[/* options */ atGoogleDashCloudStorageLib.buildSrcFileMod.FileOptions], 
     atGoogleDashCloudStorageLib.buildSrcFileMod.File
   ] = js.native
   /**

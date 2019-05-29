@@ -38,12 +38,7 @@ trait CanCan extends js.Object {
     model: js.Any,
     actions: java.lang.String,
     targets: js.Array[java.lang.String | T],
-    condition: js.Function3[
-      /* performer */ js.Any, 
-      /* target */ js.Any, 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Boolean
-    ]
+    condition: js.Function3[/* performer */ js.Any, /* target */ js.Any, js.UndefOr[js.Any], scala.Boolean]
   ): scala.Unit = js.native
   def allow[T](
     model: js.Any,
@@ -87,12 +82,7 @@ trait CanCan extends js.Object {
     model: js.Any,
     actions: js.Array[java.lang.String],
     targets: js.Array[java.lang.String | T],
-    condition: js.Function3[
-      /* performer */ js.Any, 
-      /* target */ js.Any, 
-      /* options */ js.UndefOr[js.Any], 
-      scala.Boolean
-    ]
+    condition: js.Function3[/* performer */ js.Any, /* target */ js.Any, js.UndefOr[js.Any], scala.Boolean]
   ): scala.Unit = js.native
   def allow[T](
     model: js.Any,

@@ -65,12 +65,12 @@ class FileTransferErrorCls protected () extends FileTransferError {
 object FileTransferError
   extends /** Constructor for FileTransferError object */
 org.scalablytyped.runtime.Instantiable6[
-      /* code */ js.UndefOr[/* code */ scala.Double], 
-      /* source */ js.UndefOr[/* source */ java.lang.String], 
-      /* target */ js.UndefOr[/* target */ java.lang.String], 
-      /* status */ js.UndefOr[/* status */ scala.Double], 
-      /* body */ js.UndefOr[/* body */ js.Any], 
-      /* exception */ js.UndefOr[/* exception */ js.Any], 
+      js.UndefOr[/* code */ scala.Double], 
+      js.UndefOr[/* source */ java.lang.String], 
+      js.UndefOr[/* target */ java.lang.String], 
+      js.UndefOr[/* status */ scala.Double], 
+      js.UndefOr[/* body */ js.Any], 
+      js.UndefOr[/* exception */ js.Any], 
       FileTransferError
     ] {
   var ABORT_ERR: scala.Double = js.native

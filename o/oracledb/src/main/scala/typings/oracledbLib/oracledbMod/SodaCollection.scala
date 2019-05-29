@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * SODA support in node-oracledb is in Preview status and should not be used in production.
-  * It will be supported with a future version of Oracle Client libraries.
+  * SODA can be used with Oracle Client 18.5 and Oracle Client 19.3, or later.
   */
 @js.native
 trait SodaCollection extends js.Object {
@@ -128,9 +127,9 @@ trait SodaCollection extends js.Object {
     *
     * @since 3.0
     */
-  def insertOne(newDocumentContent: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[scala.Unit] = js.native
+  def insertOne(newDocumentContent: stdLib.Record[java.lang.String, _]): js.Promise[scala.Unit] = js.native
   def insertOne(
-    newDocumentContent: org.scalablytyped.runtime.StringDictionary[js.Any],
+    newDocumentContent: stdLib.Record[java.lang.String, _],
     callback: js.Function1[/* error */ DBError, scala.Unit]
   ): js.Promise[scala.Unit] = js.native
   /**
@@ -170,9 +169,9 @@ trait SodaCollection extends js.Object {
     *
     * @since 3.0
     */
-  def insertOneAndGet(newDocumentContent: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[SodaDocument] = js.native
+  def insertOneAndGet(newDocumentContent: stdLib.Record[java.lang.String, _]): js.Promise[SodaDocument] = js.native
   def insertOneAndGet(
-    newDocumentContent: org.scalablytyped.runtime.StringDictionary[js.Any],
+    newDocumentContent: stdLib.Record[java.lang.String, _],
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, scala.Unit]
   ): js.Promise[scala.Unit] = js.native
   /**

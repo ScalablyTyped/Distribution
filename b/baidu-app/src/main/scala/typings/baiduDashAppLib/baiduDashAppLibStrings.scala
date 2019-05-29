@@ -148,9 +148,6 @@ object baiduDashAppLibStrings {
   sealed trait easeOut extends js.Object
   
   @js.native
-  sealed trait `false` extends js.Object
-  
-  @js.native
   sealed trait form
     extends baiduDashAppLib.swanNs.EventType
   
@@ -314,9 +311,6 @@ object baiduDashAppLibStrings {
     extends baiduDashAppLib.swanNs.TransitionEventType
   
   @js.native
-  sealed trait `true` extends js.Object
-  
-  @js.native
   sealed trait ui extends js.Object
   
   @js.native
@@ -417,8 +411,6 @@ object baiduDashAppLibStrings {
   @scala.inline
   def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
   @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
   def form: form = "form".asInstanceOf[form]
   @scala.inline
   def front: front = "front".asInstanceOf[front]
@@ -506,8 +498,6 @@ object baiduDashAppLibStrings {
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   @scala.inline
   def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def ui: ui = "ui".asInstanceOf[ui]
   @scala.inline

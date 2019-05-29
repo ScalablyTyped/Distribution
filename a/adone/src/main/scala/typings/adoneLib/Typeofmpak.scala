@@ -25,7 +25,7 @@ trait Typeofmpak extends js.Object {
     * Represents a MessagePack serializer
     */
   var Serializer: org.scalablytyped.runtime.Instantiable1[
-    /* initialCapacity */ js.UndefOr[/* initialCapacity */ scala.Double], 
+    js.UndefOr[/* initialCapacity */ scala.Double], 
     adoneLib.adoneNs.dataNs.mpakNs.Serializer
   ]
   /**
@@ -58,7 +58,7 @@ object Typeofmpak {
     ],
     INs: js.Any,
     Serializer: org.scalablytyped.runtime.Instantiable1[
-      /* initialCapacity */ js.UndefOr[/* initialCapacity */ scala.Double], 
+      js.UndefOr[/* initialCapacity */ scala.Double], 
       adoneLib.adoneNs.dataNs.mpakNs.Serializer
     ],
     decode: adoneLib.adoneNs.collectionNs.INs.ByteArrayNs.Wrappable => js.Any,

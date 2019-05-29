@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a native manifest file */
 trait NativeManifest extends js.Object {
   var allowed_extensions: js.UndefOr[js.Array[ExtensionID]] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[ExtensionID | java.lang.String] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
@@ -21,7 +21,7 @@ object NativeManifest {
   @scala.inline
   def apply(
     allowed_extensions: js.Array[ExtensionID] = null,
-    data: js.Any = null,
+    data: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     description: java.lang.String = null,
     name: java.lang.String = null,
     path: java.lang.String = null,

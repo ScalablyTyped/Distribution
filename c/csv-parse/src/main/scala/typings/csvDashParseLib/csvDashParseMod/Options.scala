@@ -91,7 +91,7 @@ trait Options extends js.Object {
     * Supported auto discovery method are Linux ("\n"), Apple ("\r") and Windows ("\r\n") row delimiters.
     */
   var record_delimiter: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer]
+    java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer
   ] = js.undefined
   /**
     * Preserve quotes inside unquoted field.
@@ -154,7 +154,7 @@ object Options {
     objname: java.lang.String = null,
     quote: java.lang.String | scala.Boolean | nodeLib.Buffer = null,
     raw: js.UndefOr[scala.Boolean] = js.undefined,
-    record_delimiter: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
+    record_delimiter: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer = null,
     relax: js.UndefOr[scala.Boolean] = js.undefined,
     relax_column_count: js.UndefOr[scala.Boolean] = js.undefined,
     rtrim: js.UndefOr[scala.Boolean] = js.undefined,

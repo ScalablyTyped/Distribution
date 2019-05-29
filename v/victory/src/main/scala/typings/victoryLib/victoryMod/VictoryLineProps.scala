@@ -63,7 +63,7 @@ trait VictoryLineProps
     * The labels prop defines the labels that will appear above each point.
     * This prop should be given as an array or as a function of data.
     */
-  var labels: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double] | js.Function] = js.undefined
+  var labels: js.UndefOr[(js.Array[scala.Double | java.lang.String]) | js.Function] = js.undefined
   /**
     * The samples prop specifies how many individual points to plot when plotting
     * y as a function of x. Samples is ignored if x props are provided instead.
@@ -108,7 +108,7 @@ object VictoryLineProps {
     interpolation: InterpolationPropType = null,
     label: java.lang.String | victoryLib.Fn_DataAnyString = null,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
-    labels: js.Array[java.lang.String] | js.Array[scala.Double] | js.Function = null,
+    labels: (js.Array[scala.Double | java.lang.String]) | js.Function = null,
     name: java.lang.String = null,
     padding: PaddingProps = null,
     samples: scala.Int | scala.Double = null,

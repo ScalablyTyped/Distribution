@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ScopedSlotReturnArray
   extends stdLib.Array[ScopedSlotReturnValue]
+     with _ScopedSlotReturnValue
 

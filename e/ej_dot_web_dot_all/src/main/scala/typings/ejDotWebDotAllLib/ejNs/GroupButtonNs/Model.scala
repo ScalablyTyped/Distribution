@@ -64,7 +64,7 @@ trait Model extends js.Object {
   /** Sets the list of button elements to be selected. To enable this option groupButtonMode should be in â€œcheckboxâ€ mode.
     * @Default {[]}
     */
-  var selectedItemIndex: js.UndefOr[js.Array[scala.Double] | js.Array[java.lang.String]] = js.undefined
+  var selectedItemIndex: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
   /** Sets the rounder corner to the GroupButton, if sets as true.
     * @Default {false}
     */
@@ -96,7 +96,7 @@ object Model {
     orientation: ejDotWebDotAllLib.ejNs.Orientation | java.lang.String = null,
     query: js.Any = null,
     select: /* e */ SelectEventArgs => scala.Unit = null,
-    selectedItemIndex: js.Array[scala.Double] | js.Array[java.lang.String] = null,
+    selectedItemIndex: js.Array[scala.Double | java.lang.String] = null,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
     size: ejDotWebDotAllLib.ejNs.ButtonSize | java.lang.String = null,
     width: java.lang.String | scala.Double = null
@@ -117,7 +117,7 @@ object Model {
     if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
     if (query != null) __obj.updateDynamic("query")(query)
     if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1(select))
-    if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.asInstanceOf[js.Any])
+    if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

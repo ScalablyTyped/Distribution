@@ -14,9 +14,7 @@ trait Permissions extends js.Object {
     * you can request an origin of http://help.example.com/.
     * Any path is ignored.
     */
-  var origins: js.UndefOr[
-    js.Array[chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches] | js.Array[java.lang.String]
-  ] = js.undefined
+  var origins: js.UndefOr[js.Array[java.lang.String | chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches]] = js.undefined
   /**
     * List of named permissions (does not include hosts or origins).
     * Anything listed here must appear in the optional_permissions list in the manifest.
@@ -27,11 +25,11 @@ trait Permissions extends js.Object {
 object Permissions {
   @scala.inline
   def apply(
-    origins: js.Array[chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches] | js.Array[java.lang.String] = null,
+    origins: js.Array[java.lang.String | chromeDashAppsLib.chromeNs.runtimeNs.UrlMatches] = null,
     permissions: js.Array[chromeDashAppsLib.chromeNs.runtimeNs.OptionalPermission] = null
   ): Permissions = {
     val __obj = js.Dynamic.literal()
-    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    if (origins != null) __obj.updateDynamic("origins")(origins)
     if (permissions != null) __obj.updateDynamic("permissions")(permissions)
     __obj.asInstanceOf[Permissions]
   }

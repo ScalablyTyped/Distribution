@@ -1560,7 +1560,12 @@ trait LoDashFp extends js.Object {
   def dropWhile_TArray[T](predicate: lodashLib.lodashMod.ValueIteratee[T]): js.Array[T] = js.native
   @JSName("drop")
   def drop_TArray[T](n: scala.Double): js.Array[T] = js.native
-  def each[T](iteratee: js.Function1[/* value */ T, _]): LodashForEach1x1[T] = js.native
+  def each[T /* <: js.Object */](
+    iteratee: js.Function1[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      _
+    ]
+  ): js.UndefOr[T | scala.Null] = js.native
   def each[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -1589,6 +1594,13 @@ trait LoDashFp extends js.Object {
   def eachRight[T](iteratee: lodashLib.lodashMod.__, collection: js.Array[T]): LodashForEachRight1x2[T] = js.native
   def eachRight[T](iteratee: lodashLib.lodashMod.__, collection: lodashLib.lodashMod.List[T]): LodashForEachRight2x2[T] = js.native
   @JSName("eachRight")
+  def `eachRight_TObject<union>`[T /* <: js.Object */](
+    iteratee: js.Function1[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      _
+    ]
+  ): js.UndefOr[T | scala.Null] = js.native
+  @JSName("eachRight")
   def eachRight_TObjectLodashForEachRight6x2[T /* <: js.Object */](iteratee: lodashLib.lodashMod.__, collection: T): LodashForEachRight6x2[T] = js.native
   @JSName("eachRight")
   def eachRight_TObjectT[T /* <: js.Object */](
@@ -1599,29 +1611,24 @@ trait LoDashFp extends js.Object {
     collection: T
   ): T = js.native
   @JSName("eachRight")
-  def eachRight_TObjectUndefOr[T /* <: js.Object */](
-    iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      _
-    ]
-  ): js.UndefOr[T | scala.Null] = js.native
+  def `eachRight_TTArray<union>LodashForEachRight4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](iteratee: lodashLib.lodashMod.__, collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])): LodashForEachRight4x2[T, TArray] = js.native
   @JSName("eachRight")
-  def eachRight_TTArrayUndefOrLodashForEachRight4x2[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](iteratee: lodashLib.lodashMod.__, collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])): LodashForEachRight4x2[T, TArray] = js.native
-  @JSName("eachRight")
-  def eachRight_TTArrayUndefOrTArray[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](
+  def `eachRight_TTArray<union>TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](
     iteratee: js.Function1[/* value */ T, _],
     collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])
   ): TArray = js.native
   @JSName("eachRight")
-  def eachRight_TTListUndefOrLodashForEachRight5x2[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
+  def `eachRight_TTList<union>LodashForEachRight5x2`[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
     iteratee: lodashLib.lodashMod.__,
     collection: TList with (js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null])
   ): LodashForEachRight5x2[T, TList] = js.native
   @JSName("eachRight")
-  def eachRight_TTListUndefOrTList[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
+  def `eachRight_TTList<union>TList`[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
     iteratee: js.Function1[/* value */ T, _],
     collection: TList with (js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null])
   ): TList = js.native
+  @JSName("each")
+  def each_TLodashForEach1x1[T](iteratee: js.Function1[/* value */ T, _]): LodashForEach1x1[T] = js.native
   @JSName("each")
   def each_TObjectLodashForEach3x2[T /* <: js.Object */](iteratee: lodashLib.lodashMod.__, collection: T): LodashForEach3x2[T] = js.native
   @JSName("each")
@@ -1633,26 +1640,19 @@ trait LoDashFp extends js.Object {
     collection: T
   ): T = js.native
   @JSName("each")
-  def each_TObjectUndefOr[T /* <: js.Object */](
-    iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      _
-    ]
-  ): js.UndefOr[T | scala.Null] = js.native
+  def `each_TTArray<union>LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](iteratee: lodashLib.lodashMod.__, collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])): LodashForEach4x2[T, TArray] = js.native
   @JSName("each")
-  def each_TTArrayUndefOrLodashForEach4x2[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](iteratee: lodashLib.lodashMod.__, collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])): LodashForEach4x2[T, TArray] = js.native
-  @JSName("each")
-  def each_TTArrayUndefOrTArray[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](
+  def `each_TTArray<union>TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](
     iteratee: js.Function1[/* value */ T, _],
     collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])
   ): TArray = js.native
   @JSName("each")
-  def each_TTListUndefOrLodashForEach5x2[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
+  def `each_TTList<union>LodashForEach5x2`[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
     iteratee: lodashLib.lodashMod.__,
     collection: TList with (js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null])
   ): LodashForEach5x2[T, TList] = js.native
   @JSName("each")
-  def each_TTListUndefOrTList[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
+  def `each_TTList<union>TList`[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
     iteratee: js.Function1[/* value */ T, _],
     collection: TList with (js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null])
   ): TList = js.native
@@ -1917,7 +1917,13 @@ trait LoDashFp extends js.Object {
     fromIndex: lodashLib.lodashMod.__,
     collection: lodashLib.lodashMod.List[T]
   ): LodashFindFrom2x5[T] = js.native
-  def findFrom[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean], fromIndex: scala.Double): LodashFindFrom2x3[T] = js.native
+  def findFrom[T /* <: js.Object */](
+    predicate: lodashLib.lodashMod.ValueIterateeCustom[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      scala.Boolean
+    ],
+    fromIndex: scala.Double
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def findFrom[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.ValueIterateeCustom[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -1985,7 +1991,11 @@ trait LoDashFp extends js.Object {
     collection: lodashLib.lodashMod.List[T]
   ): js.UndefOr[S] = js.native
   @JSName("findFrom")
+  def findFrom_T[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean], fromIndex: scala.Double): js.UndefOr[T] = js.native
+  @JSName("findFrom")
   def findFrom_TLodashFindFrom1x6[T](predicate: lodashLib.lodashMod.__, fromIndex: scala.Double): LodashFindFrom1x6[T] = js.native
+  @JSName("findFrom")
+  def findFrom_TLodashFindFrom2x3[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean], fromIndex: scala.Double): LodashFindFrom2x3[T] = js.native
   @JSName("findFrom")
   def findFrom_TLodashFindFrom2x5[T](
     predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean],
@@ -2012,21 +2022,11 @@ trait LoDashFp extends js.Object {
     fromIndex: scala.Double
   ): LodashFindFrom3x3[T, S] = js.native
   @JSName("findFrom")
-  def findFrom_TObjectUndefOr[T /* <: js.Object */](
-    predicate: lodashLib.lodashMod.ValueIterateeCustom[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      scala.Boolean
-    ],
-    fromIndex: scala.Double
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
-  @JSName("findFrom")
   def findFrom_TSTLodashFindFrom1x1[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S]): LodashFindFrom1x1[T, S] = js.native
   @JSName("findFrom")
   def findFrom_TSTLodashFindFrom1x3[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): LodashFindFrom1x3[T, S] = js.native
   @JSName("findFrom")
   def findFrom_TSTLodashFindFrom1x5[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: lodashLib.lodashMod.__): LodashFindFrom1x5[S] = js.native
-  @JSName("findFrom")
-  def findFrom_TUndefOr[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean], fromIndex: scala.Double): js.UndefOr[T] = js.native
   def findIndex[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean]): LodashFindIndex1x1[T] = js.native
   def findIndex[T](
     predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean],
@@ -2072,10 +2072,15 @@ trait LoDashFp extends js.Object {
   def findKey[T](predicate: lodashLib.lodashMod.__): LodashFindKey1x2[T] = js.native
   def findKey[T](predicate: lodashLib.lodashMod.__, `object`: T): LodashFindKey1x2[T] = js.native
   @JSName("findKey")
-  def findKey_TUndefOr[T](
+  def `findKey_T<union>`[T](
     predicate: lodashLib.lodashMod.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): js.UndefOr[java.lang.String] = js.native
-  def findLast[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean]): LodashFindLast2x1[T] = js.native
+  def findLast[T /* <: js.Object */](
+    predicate: lodashLib.lodashMod.ValueIterateeCustom[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      scala.Boolean
+    ]
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def findLast[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.ValueIterateeCustom[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -2090,7 +2095,7 @@ trait LoDashFp extends js.Object {
   def findLast[T](predicate: lodashLib.lodashMod.__): LodashFindLast1x2[T] = js.native
   def findLast[T /* <: js.Object */](predicate: lodashLib.lodashMod.__, collection: T): LodashFindLast3x2[T] = js.native
   def findLast[T](predicate: lodashLib.lodashMod.__, collection: lodashLib.lodashMod.List[T]): LodashFindLast1x2[T] = js.native
-  def findLast[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S]): LodashFindLast1x1[T, S] = js.native
+  def findLast[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
   def findLast[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -2121,7 +2126,13 @@ trait LoDashFp extends js.Object {
     fromIndex: lodashLib.lodashMod.__,
     collection: lodashLib.lodashMod.List[T]
   ): LodashFindLastFrom2x5[T] = js.native
-  def findLastFrom[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean], fromIndex: scala.Double): js.UndefOr[T] = js.native
+  def findLastFrom[T /* <: js.Object */](
+    predicate: lodashLib.lodashMod.ValueIterateeCustom[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      scala.Boolean
+    ],
+    fromIndex: scala.Double
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def findLastFrom[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.ValueIterateeCustom[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -2174,7 +2185,7 @@ trait LoDashFp extends js.Object {
     fromIndex: lodashLib.lodashMod.__,
     collection: lodashLib.lodashMod.List[T]
   ): LodashFindLastFrom1x5[S] = js.native
-  def findLastFrom[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): LodashFindLastFrom1x3[T, S] = js.native
+  def findLastFrom[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): js.UndefOr[S] = js.native
   def findLastFrom[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -2189,17 +2200,11 @@ trait LoDashFp extends js.Object {
     collection: lodashLib.lodashMod.List[T]
   ): js.UndefOr[S] = js.native
   @JSName("findLastFrom")
+  def findLastFrom_T[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean], fromIndex: scala.Double): js.UndefOr[T] = js.native
+  @JSName("findLastFrom")
   def findLastFrom_TLodashFindLastFrom1x6[T](predicate: lodashLib.lodashMod.__, fromIndex: scala.Double): LodashFindLastFrom1x6[T] = js.native
   @JSName("findLastFrom")
   def findLastFrom_TLodashFindLastFrom2x3[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean], fromIndex: scala.Double): LodashFindLastFrom2x3[T] = js.native
-  @JSName("findLastFrom")
-  def findLastFrom_TObject[T /* <: js.Object */](
-    predicate: lodashLib.lodashMod.ValueIterateeCustom[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      scala.Boolean
-    ],
-    fromIndex: scala.Double
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("findLastFrom")
   def findLastFrom_TObjectLodashFindLastFrom3x4[T /* <: js.Object */](predicate: lodashLib.lodashMod.__, fromIndex: lodashLib.lodashMod.__): LodashFindLastFrom3x4[T] = js.native
   @JSName("findLastFrom")
@@ -2213,6 +2218,14 @@ trait LoDashFp extends js.Object {
     fromIndex: lodashLib.lodashMod.__
   ): LodashFindLastFrom4x5[T] = js.native
   @JSName("findLastFrom")
+  def findLastFrom_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
+    predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      S
+    ],
+    fromIndex: scala.Double
+  ): js.UndefOr[S] = js.native
+  @JSName("findLastFrom")
   def findLastFrom_TObjectSAnyLodashFindLastFrom3x3[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -2221,19 +2234,11 @@ trait LoDashFp extends js.Object {
     fromIndex: scala.Double
   ): LodashFindLastFrom3x3[T, S] = js.native
   @JSName("findLastFrom")
-  def findLastFrom_TObjectSAnyUndefOr[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
-    predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      S
-    ],
-    fromIndex: scala.Double
-  ): js.UndefOr[S] = js.native
-  @JSName("findLastFrom")
   def findLastFrom_TSTLodashFindLastFrom1x1[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S]): LodashFindLastFrom1x1[T, S] = js.native
   @JSName("findLastFrom")
-  def findLastFrom_TSTLodashFindLastFrom1x5[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: lodashLib.lodashMod.__): LodashFindLastFrom1x5[S] = js.native
+  def findLastFrom_TSTLodashFindLastFrom1x3[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): LodashFindLastFrom1x3[T, S] = js.native
   @JSName("findLastFrom")
-  def findLastFrom_TSTUndefOr[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): js.UndefOr[S] = js.native
+  def findLastFrom_TSTLodashFindLastFrom1x5[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: lodashLib.lodashMod.__): LodashFindLastFrom1x5[S] = js.native
   def findLastIndex[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean]): LodashFindLastIndex1x1[T] = js.native
   def findLastIndex[T](
     predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean],
@@ -2283,7 +2288,18 @@ trait LoDashFp extends js.Object {
   @JSName("findLastKey")
   def findLastKey_TLodashFindLastKey1x1[T](predicate: lodashLib.lodashMod.ValueIteratee[T]): LodashFindLastKey1x1[T] = js.native
   @JSName("findLast")
+  def findLast_T[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean]): js.UndefOr[T] = js.native
+  @JSName("findLast")
+  def findLast_TLodashFindLast2x1[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean]): LodashFindLast2x1[T] = js.native
+  @JSName("findLast")
   def findLast_TObjectLodashFindLast3x2[T /* <: js.Object */](predicate: lodashLib.lodashMod.__): LodashFindLast3x2[T] = js.native
+  @JSName("findLast")
+  def findLast_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
+    predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      S
+    ]
+  ): js.UndefOr[S] = js.native
   @JSName("findLast")
   def findLast_TObjectSAnyLodashFindLast3x1[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[
@@ -2292,23 +2308,16 @@ trait LoDashFp extends js.Object {
     ]
   ): LodashFindLast3x1[T, S] = js.native
   @JSName("findLast")
-  def findLast_TObjectSAnyUndefOr[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
-    predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      S
-    ]
-  ): js.UndefOr[S] = js.native
-  @JSName("findLast")
-  def findLast_TObjectUndefOr[T /* <: js.Object */](
+  def findLast_TSTLodashFindLast1x1[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S]): LodashFindLast1x1[T, S] = js.native
+  @JSName("find")
+  def `find_T<union>`[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean]): js.UndefOr[T] = js.native
+  @JSName("find")
+  def `find_TObject<union>`[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.ValueIterateeCustom[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ]
   ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
-  @JSName("findLast")
-  def findLast_TSTUndefOr[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S]): js.UndefOr[S] = js.native
-  @JSName("findLast")
-  def findLast_TUndefOr[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean]): js.UndefOr[T] = js.native
   @JSName("find")
   def find_TObjectLodashFind3x2[T /* <: js.Object */](predicate: lodashLib.lodashMod.__): LodashFind3x2[T] = js.native
   @JSName("find")
@@ -2326,16 +2335,7 @@ trait LoDashFp extends js.Object {
     ]
   ): LodashFind3x1[T, S] = js.native
   @JSName("find")
-  def find_TObjectUndefOr[T /* <: js.Object */](
-    predicate: lodashLib.lodashMod.ValueIterateeCustom[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      scala.Boolean
-    ]
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
-  @JSName("find")
   def find_TSTLodashFind1x1[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S]): LodashFind1x1[T, S] = js.native
-  @JSName("find")
-  def find_TUndefOr[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean]): js.UndefOr[T] = js.native
   def first[T](): js.UndefOr[T] = js.native
   def first[T](array: lodashLib.lodashMod.List[T]): js.UndefOr[T] = js.native
   def flatMap(iteratee: java.lang.String): js.Array[_] = js.native
@@ -3089,7 +3089,12 @@ trait LoDashFp extends js.Object {
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function1[/* a1 */ A1, R1]
   ): js.Function1[/* a1 */ A1, R7] = js.native
-  def forEach[T](iteratee: js.Function1[/* value */ T, _]): LodashForEach1x1[T] = js.native
+  def forEach[T /* <: js.Object */](
+    iteratee: js.Function1[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      _
+    ]
+  ): js.UndefOr[T | scala.Null] = js.native
   def forEach[T /* <: js.Object */](
     iteratee: js.Function1[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -3118,6 +3123,13 @@ trait LoDashFp extends js.Object {
   def forEachRight[T](iteratee: lodashLib.lodashMod.__, collection: js.Array[T]): LodashForEachRight1x2[T] = js.native
   def forEachRight[T](iteratee: lodashLib.lodashMod.__, collection: lodashLib.lodashMod.List[T]): LodashForEachRight2x2[T] = js.native
   @JSName("forEachRight")
+  def `forEachRight_TObject<union>`[T /* <: js.Object */](
+    iteratee: js.Function1[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      _
+    ]
+  ): js.UndefOr[T | scala.Null] = js.native
+  @JSName("forEachRight")
   def forEachRight_TObjectLodashForEachRight6x2[T /* <: js.Object */](iteratee: lodashLib.lodashMod.__, collection: T): LodashForEachRight6x2[T] = js.native
   @JSName("forEachRight")
   def forEachRight_TObjectT[T /* <: js.Object */](
@@ -3128,29 +3140,24 @@ trait LoDashFp extends js.Object {
     collection: T
   ): T = js.native
   @JSName("forEachRight")
-  def forEachRight_TObjectUndefOr[T /* <: js.Object */](
-    iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      _
-    ]
-  ): js.UndefOr[T | scala.Null] = js.native
+  def `forEachRight_TTArray<union>LodashForEachRight4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](iteratee: lodashLib.lodashMod.__, collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])): LodashForEachRight4x2[T, TArray] = js.native
   @JSName("forEachRight")
-  def forEachRight_TTArrayUndefOrLodashForEachRight4x2[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](iteratee: lodashLib.lodashMod.__, collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])): LodashForEachRight4x2[T, TArray] = js.native
-  @JSName("forEachRight")
-  def forEachRight_TTArrayUndefOrTArray[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](
+  def `forEachRight_TTArray<union>TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](
     iteratee: js.Function1[/* value */ T, _],
     collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])
   ): TArray = js.native
   @JSName("forEachRight")
-  def forEachRight_TTListUndefOrLodashForEachRight5x2[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
+  def `forEachRight_TTList<union>LodashForEachRight5x2`[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
     iteratee: lodashLib.lodashMod.__,
     collection: TList with (js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null])
   ): LodashForEachRight5x2[T, TList] = js.native
   @JSName("forEachRight")
-  def forEachRight_TTListUndefOrTList[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
+  def `forEachRight_TTList<union>TList`[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
     iteratee: js.Function1[/* value */ T, _],
     collection: TList with (js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null])
   ): TList = js.native
+  @JSName("forEach")
+  def forEach_TLodashForEach1x1[T](iteratee: js.Function1[/* value */ T, _]): LodashForEach1x1[T] = js.native
   @JSName("forEach")
   def forEach_TObjectLodashForEach3x2[T /* <: js.Object */](iteratee: lodashLib.lodashMod.__, collection: T): LodashForEach3x2[T] = js.native
   @JSName("forEach")
@@ -3162,26 +3169,19 @@ trait LoDashFp extends js.Object {
     collection: T
   ): T = js.native
   @JSName("forEach")
-  def forEach_TObjectUndefOr[T /* <: js.Object */](
-    iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      _
-    ]
-  ): js.UndefOr[T | scala.Null] = js.native
+  def `forEach_TTArray<union>LodashForEach4x2`[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](iteratee: lodashLib.lodashMod.__, collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])): LodashForEach4x2[T, TArray] = js.native
   @JSName("forEach")
-  def forEach_TTArrayUndefOrLodashForEach4x2[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](iteratee: lodashLib.lodashMod.__, collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])): LodashForEach4x2[T, TArray] = js.native
-  @JSName("forEach")
-  def forEach_TTArrayUndefOrTArray[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](
+  def `forEach_TTArray<union>TArray`[T, TArray /* <: js.UndefOr[js.Array[T] | scala.Null] */](
     iteratee: js.Function1[/* value */ T, _],
     collection: TArray with (js.UndefOr[js.Array[T] | scala.Null])
   ): TArray = js.native
   @JSName("forEach")
-  def forEach_TTListUndefOrLodashForEach5x2[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
+  def `forEach_TTList<union>LodashForEach5x2`[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
     iteratee: lodashLib.lodashMod.__,
     collection: TList with (js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null])
   ): LodashForEach5x2[T, TList] = js.native
   @JSName("forEach")
-  def forEach_TTListUndefOrTList[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
+  def `forEach_TTList<union>TList`[T, TList /* <: js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null] */](
     iteratee: js.Function1[/* value */ T, _],
     collection: TList with (js.UndefOr[lodashLib.lodashMod.List[T] | scala.Null])
   ): TList = js.native
@@ -3206,6 +3206,13 @@ trait LoDashFp extends js.Object {
   def forInRight[T](iteratee: lodashLib.lodashMod.__): LodashForInRight2x2[T] = js.native
   def forInRight[T](iteratee: lodashLib.lodashMod.__, `object`: T): LodashForInRight2x2[T] = js.native
   @JSName("forInRight")
+  def `forInRight_T<union>`[T](
+    iteratee: js.Function1[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      _
+    ]
+  ): js.UndefOr[T | scala.Null] = js.native
+  @JSName("forInRight")
   def forInRight_TLodashForInRight1x2[T](iteratee: lodashLib.lodashMod.__, `object`: T): LodashForInRight1x2[T] = js.native
   @JSName("forInRight")
   def forInRight_TT[T](
@@ -3215,8 +3222,8 @@ trait LoDashFp extends js.Object {
     ],
     `object`: T
   ): T = js.native
-  @JSName("forInRight")
-  def forInRight_TUndefOr[T](
+  @JSName("forIn")
+  def `forIn_T<union>`[T](
     iteratee: js.Function1[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
@@ -3232,13 +3239,6 @@ trait LoDashFp extends js.Object {
     ],
     `object`: T
   ): T = js.native
-  @JSName("forIn")
-  def forIn_TUndefOr[T](
-    iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      _
-    ]
-  ): js.UndefOr[T | scala.Null] = js.native
   def forOwn[T](
     iteratee: js.Function1[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -3265,6 +3265,13 @@ trait LoDashFp extends js.Object {
   def forOwnRight[T](iteratee: lodashLib.lodashMod.__): LodashForOwnRight2x2[T] = js.native
   def forOwnRight[T](iteratee: lodashLib.lodashMod.__, `object`: T): LodashForOwnRight1x2[T] = js.native
   @JSName("forOwnRight")
+  def `forOwnRight_T<union>`[T](
+    iteratee: js.Function1[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
+      _
+    ]
+  ): js.UndefOr[T | scala.Null] = js.native
+  @JSName("forOwnRight")
   def forOwnRight_TLodashForOwnRight2x2[T](iteratee: lodashLib.lodashMod.__, `object`: T): LodashForOwnRight2x2[T] = js.native
   @JSName("forOwnRight")
   def forOwnRight_TT[T](
@@ -3274,13 +3281,6 @@ trait LoDashFp extends js.Object {
     ],
     `object`: T
   ): T = js.native
-  @JSName("forOwnRight")
-  def forOwnRight_TUndefOr[T](
-    iteratee: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      _
-    ]
-  ): js.UndefOr[T | scala.Null] = js.native
   @JSName("forOwn")
   def forOwn_TLodashForOwn1x1[T](iteratee: js.Function1[/* value */ T, _]): LodashForOwn1x1[T] = js.native
   @JSName("forOwn")
@@ -3301,7 +3301,7 @@ trait LoDashFp extends js.Object {
   def fromPairs_T[T](pairs: lodashLib.lodashMod.List[js.Tuple2[lodashLib.lodashMod.PropertyName, T]]): lodashLib.lodashMod.Dictionary[T] = js.native
   def functions(`object`: js.Any): js.Array[java.lang.String] = js.native
   def functionsIn(`object`: js.Any): js.Array[java.lang.String] = js.native
-  def get(path: lodashLib.lodashMod.PropertyPath): LodashGet5x1 = js.native
+  def get(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def get(path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
   def get(path: lodashLib.lodashMod.__): LodashGet5x2 = js.native
   def get(path: lodashLib.lodashMod.__, `object`: js.Any): LodashGet6x2 = js.native
@@ -3397,6 +3397,10 @@ trait LoDashFp extends js.Object {
   @JSName("getOr")
   def getOr_TTDefaultLodashGetOr2x5[T, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashGetOr2x5[T, TDefault] = js.native
   @JSName("get")
+  def get_LodashGet5x1(path: lodashLib.lodashMod.PropertyPath): LodashGet5x1 = js.native
+  @JSName("get")
+  def `get_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
+  @JSName("get")
   def get_TLodashGet3x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashGet3x2[T] = js.native
   @JSName("get")
   def get_TLodashGet4x2[T](path: lodashLib.lodashMod.__): LodashGet4x2[T] = js.native
@@ -3414,10 +3418,6 @@ trait LoDashFp extends js.Object {
   def get_TObjectObjectTKeyStringLodashGet1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): LodashGet1x1[TObject, TKey] = js.native
   @JSName("get")
   def get_TT[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T = js.native
-  @JSName("get")
-  def get_TUndefOr[T](path: scala.Double): js.UndefOr[T] = js.native
-  @JSName("get")
-  def get_UndefOr(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def groupBy[T](iteratee: lodashLib.lodashMod.ValueIteratee[T]): LodashGroupBy1x1[T] = js.native
   def groupBy[T /* <: js.Object */](
     iteratee: lodashLib.lodashMod.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
@@ -4038,7 +4038,7 @@ trait LoDashFp extends js.Object {
   def maxBy[T](iteratee: lodashLib.lodashMod.__): LodashMaxBy1x2[T] = js.native
   def maxBy[T](iteratee: lodashLib.lodashMod.__, collection: lodashLib.lodashMod.List[T]): LodashMaxBy1x2[T] = js.native
   @JSName("maxBy")
-  def maxBy_TUndefOr[T](iteratee: lodashLib.lodashMod.ValueIteratee[T]): js.UndefOr[T] = js.native
+  def `maxBy_T<union>`[T](iteratee: lodashLib.lodashMod.ValueIteratee[T]): js.UndefOr[T] = js.native
   def mean(): scala.Double = js.native
   def mean(collection: lodashLib.lodashMod.List[_]): scala.Double = js.native
   def meanBy[T](iteratee: lodashLib.lodashMod.ValueIteratee[T]): scala.Double = js.native
@@ -4079,7 +4079,7 @@ trait LoDashFp extends js.Object {
   def minBy[T](iteratee: lodashLib.lodashMod.__): LodashMinBy1x2[T] = js.native
   def minBy[T](iteratee: lodashLib.lodashMod.__, collection: lodashLib.lodashMod.List[T]): LodashMinBy1x2[T] = js.native
   @JSName("minBy")
-  def minBy_TUndefOr[T](iteratee: lodashLib.lodashMod.ValueIteratee[T]): js.UndefOr[T] = js.native
+  def `minBy_T<union>`[T](iteratee: lodashLib.lodashMod.ValueIteratee[T]): js.UndefOr[T] = js.native
   def multiply(multiplier: lodashLib.lodashMod.__, multiplicand: scala.Double): LodashMultiply1x2 = js.native
   def multiply(multiplier: scala.Double): LodashMultiply1x1 = js.native
   def multiply(multiplier: scala.Double, multiplicand: scala.Double): scala.Double = js.native
@@ -4100,7 +4100,7 @@ trait LoDashFp extends js.Object {
   def nth[T](n: scala.Double, array: lodashLib.lodashMod.List[T]): js.UndefOr[T] = js.native
   def nthArg(n: scala.Double): js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("nth")
-  def nth_TUndefOr[T](n: scala.Double): js.UndefOr[T] = js.native
+  def `nth_T<union>`[T](n: scala.Double): js.UndefOr[T] = js.native
   def omit(paths: lodashLib.lodashMod.Many[lodashLib.lodashMod.PropertyName]): LodashOmit1x1 = js.native
   def omit[T /* <: lodashLib.lodashMod.AnyKindOfDictionary */](paths: lodashLib.lodashMod.Many[lodashLib.lodashMod.PropertyName], `object`: T): T = js.native
   def omit[T /* <: lodashLib.lodashMod.AnyKindOfDictionary */](paths: lodashLib.lodashMod.__): LodashOmit1x2[T] = js.native
@@ -4724,6 +4724,8 @@ trait LoDashFp extends js.Object {
   @JSName("path")
   def path_LodashPath5x1(path: lodashLib.lodashMod.PropertyPath): LodashPath5x1 = js.native
   @JSName("path")
+  def `path_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
+  @JSName("path")
   def path_TLodashPath4x2[T](path: lodashLib.lodashMod.__): LodashPath4x2[T] = js.native
   @JSName("path")
   def path_TLodashPath4x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPath4x2[T] = js.native
@@ -4741,8 +4743,6 @@ trait LoDashFp extends js.Object {
   def path_TObjectObjectTKeyStringLodashPath1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): LodashPath1x1[TObject, TKey] = js.native
   @JSName("path")
   def path_TT[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T = js.native
-  @JSName("path")
-  def path_TUndefOr[T](path: scala.Double): js.UndefOr[T] = js.native
   def paths(props: lodashLib.lodashMod.PropertyPath): LodashAt1x1 = js.native
   def paths[T /* <: js.Object */](props: lodashLib.lodashMod.Many[java.lang.String], `object`: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def paths[T](props: lodashLib.lodashMod.PropertyPath, `object`: lodashLib.lodashMod.Dictionary[T]): js.Array[T] = js.native
@@ -5329,6 +5329,10 @@ trait LoDashFp extends js.Object {
   @JSName("propOr")
   def propOr_TTDefaultLodashPropOr2x5[T, TDefault](defaultValue: TDefault, path: lodashLib.lodashMod.__): LodashPropOr2x5[T, TDefault] = js.native
   @JSName("prop")
+  def `prop_<union>`(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
+  @JSName("prop")
+  def `prop_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
+  @JSName("prop")
   def prop_TLodashProp4x2[T](path: lodashLib.lodashMod.__): LodashProp4x2[T] = js.native
   @JSName("prop")
   def prop_TLodashProp4x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProp4x2[T] = js.native
@@ -5346,11 +5350,7 @@ trait LoDashFp extends js.Object {
   def prop_TObjectObjectTKeyStringLodashProp1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): LodashProp1x1[TObject, TKey] = js.native
   @JSName("prop")
   def prop_TT[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T = js.native
-  @JSName("prop")
-  def prop_TUndefOr[T](path: scala.Double): js.UndefOr[T] = js.native
-  @JSName("prop")
-  def prop_UndefOr(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
-  def property(path: lodashLib.lodashMod.PropertyPath): LodashProperty5x1 = js.native
+  def property(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def property(path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
   def property(path: lodashLib.lodashMod.__): LodashProperty5x2 = js.native
   def property(path: lodashLib.lodashMod.__, `object`: js.Any): LodashProperty6x2 = js.native
@@ -5391,6 +5391,10 @@ trait LoDashFp extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   @JSName("propertyOf")
+  def `propertyOf_<union>`(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
+  @JSName("propertyOf")
+  def `propertyOf_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
+  @JSName("propertyOf")
   def propertyOf_TLodashPropertyOf4x2[T](path: lodashLib.lodashMod.__): LodashPropertyOf4x2[T] = js.native
   @JSName("propertyOf")
   def propertyOf_TLodashPropertyOf4x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashPropertyOf4x2[T] = js.native
@@ -5408,10 +5412,10 @@ trait LoDashFp extends js.Object {
   def propertyOf_TObjectObjectTKeyStringLodashPropertyOf1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): LodashPropertyOf1x1[TObject, TKey] = js.native
   @JSName("propertyOf")
   def propertyOf_TT[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T = js.native
-  @JSName("propertyOf")
-  def propertyOf_TUndefOr[T](path: scala.Double): js.UndefOr[T] = js.native
-  @JSName("propertyOf")
-  def propertyOf_UndefOr(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
+  @JSName("property")
+  def property_LodashProperty5x1(path: lodashLib.lodashMod.PropertyPath): LodashProperty5x1 = js.native
+  @JSName("property")
+  def `property_T<union>`[T](path: scala.Double): js.UndefOr[T] = js.native
   @JSName("property")
   def property_TLodashProperty3x2[T](path: lodashLib.lodashMod.__, `object`: lodashLib.lodashMod.NumericDictionary[T]): LodashProperty3x2[T] = js.native
   @JSName("property")
@@ -5430,10 +5434,6 @@ trait LoDashFp extends js.Object {
   def property_TObjectObjectTKeyStringLodashProperty1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): LodashProperty1x1[TObject, TKey] = js.native
   @JSName("property")
   def property_TT[T](path: scala.Double, `object`: lodashLib.lodashMod.NumericDictionary[T]): T = js.native
-  @JSName("property")
-  def property_TUndefOr[T](path: scala.Double): js.UndefOr[T] = js.native
-  @JSName("property")
-  def property_UndefOr(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def props(props: lodashLib.lodashMod.PropertyPath): LodashAt1x1 = js.native
   def props[T /* <: js.Object */](props: lodashLib.lodashMod.Many[java.lang.String], `object`: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def props[T](props: lodashLib.lodashMod.PropertyPath, `object`: lodashLib.lodashMod.Dictionary[T]): js.Array[T] = js.native
@@ -5914,7 +5914,7 @@ trait LoDashFp extends js.Object {
   def reverse[TList /* <: lodashLib.lodashMod.List[_] */](array: TList): TList = js.native
   def round(n: scala.Double): scala.Double = js.native
   def runInContext(context: js.Object): lodashLib.lodashMod.LoDashStatic = js.native
-  def sample[T](): js.UndefOr[T] = js.native
+  def sample[T /* <: js.Object */](): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def sample[T /* <: js.Object */](collection: T): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def sample[T](collection: lodashLib.lodashMod.Dictionary[T]): js.UndefOr[T] = js.native
   def sample[T](collection: lodashLib.lodashMod.List[T]): js.UndefOr[T] = js.native
@@ -5936,7 +5936,7 @@ trait LoDashFp extends js.Object {
   @JSName("sampleSize")
   def sampleSize_TObjectArray[T /* <: js.Object */](n: scala.Double): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("sample")
-  def sample_TObject[T /* <: js.Object */](): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def sample_T[T](): js.UndefOr[T] = js.native
   def set(path: lodashLib.lodashMod.PropertyPath): LodashSet1x1 = js.native
   def set(path: lodashLib.lodashMod.PropertyPath, value: js.Any): LodashSet1x3 = js.native
   def set(path: lodashLib.lodashMod.PropertyPath, value: lodashLib.lodashMod.__, `object`: js.Object): LodashSet2x5 = js.native

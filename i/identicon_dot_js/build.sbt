@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "identicon_dot_js"
-version := "2.3-dt-20190330Z-d0599e"
+version := "2.3-dt-20190330Z-1ef319"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

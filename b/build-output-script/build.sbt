@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "build-output-script"
-version := "1.0-dt-20190201Z-91d6b4"
+version := "1.0-dt-20190201Z-5a0e33"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

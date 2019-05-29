@@ -204,6 +204,8 @@ object atPulumiAwsMod extends js.Object {
     val GlueNs: atPulumiAwsLib.TypeofGlue = js.native
     var Greengrass: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Greengrass] = js.native
     val GreengrassNs: atPulumiAwsLib.TypeofGreengrass = js.native
+    var GroundStation: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.GroundStation] = js.native
+    val GroundStationNs: atPulumiAwsLib.TypeofGroundStation = js.native
     var GuardDuty: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.GuardDuty] = js.native
     val GuardDutyNs: atPulumiAwsLib.TypeofGuardDuty = js.native
     var Health: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Health] = js.native

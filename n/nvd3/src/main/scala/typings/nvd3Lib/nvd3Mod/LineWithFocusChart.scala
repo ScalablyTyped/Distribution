@@ -18,7 +18,10 @@ trait LineWithFocusChart extends Chart {
   var xAxis: Nvd3Axis = js.native
   var y2Axis: Nvd3Axis = js.native
   var yAxis: Nvd3Axis = js.native
-  def brushExtent(): (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[js.Tuple2[scala.Double, scala.Double], js.Tuple2[scala.Double, scala.Double]]) = js.native
+  def brushExtent(): js.Tuple2[
+    scala.Double | (js.Tuple2[scala.Double, scala.Double]), 
+    scala.Double | (js.Tuple2[scala.Double, scala.Double])
+  ] = js.native
   def brushExtent(
     value: js.Tuple2[
       scala.Double | (js.Tuple2[scala.Double, scala.Double]), 

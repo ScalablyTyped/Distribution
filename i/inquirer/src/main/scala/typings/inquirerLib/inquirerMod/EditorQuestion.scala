@@ -28,7 +28,7 @@ object EditorQuestion {
   @scala.inline
   def apply[A](
     `type`: inquirerLib.inquirerLibStrings.editor,
-    default: java.lang.String | scala.Double | scala.Boolean | js.Array[_] | (js.Function1[A, _]) | (js.Function1[A, js.Promise[_]]) = null,
+    default: java.lang.String | scala.Double | scala.Boolean | js.Array[_] | (js.Function1[A, _ | js.Promise[_]]) = null,
     message: java.lang.String | (js.Function1[A, java.lang.String]) = null,
     name: java.lang.String = null,
     prefix: java.lang.String = null,

@@ -13,9 +13,7 @@ object ^ extends js.Object {
   val Drawer: reactLib.reactMod.FunctionComponent[antdLib.esDrawerMod.DrawerProps] = js.native
   val Empty: antdLib.esEmptyMod.EmptyType = js.native
   val Icon: antdLib.esIconMod.IconComponent[antdLib.esIconMod.IconProps] = js.native
-  val Layout: (reactLib.reactMod.ComponentClass[antdLib.esLayoutLayoutMod.BasicProps, reactLib.reactMod.ComponentState]) with antdLib.Anon_Content = js.native
   val PageHeader: reactLib.reactMod.SFC[antdLib.esPageDashHeaderMod.PageHeaderProps] = js.native
-  val Statistic: reactLib.reactMod.FunctionComponent[antdLib.esStatisticStatisticMod.StatisticProps] with antdLib.esStatisticStatisticMod.StatisticComponent = js.native
   val Typography: antdLib.esTypographyMod.TypographyProps = js.native
   val message: antdLib.esMessageMod.MessageApi = js.native
   val notification: antdLib.esNotificationMod.NotificationApi = js.native

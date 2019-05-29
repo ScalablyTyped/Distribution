@@ -160,12 +160,6 @@ object ^ extends js.Object {
   @JSName("open")
   def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`, drivers: js.Array[java.lang.String]): Dataset = js.native
   @JSName("open")
-  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w): Dataset = js.native
-  @JSName("open")
-  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w, drivers: java.lang.String): Dataset = js.native
-  @JSName("open")
-  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w, drivers: js.Array[java.lang.String]): Dataset = js.native
-  @JSName("open")
   def open_w(
     path: java.lang.String,
     mode: js.UndefOr[gdalLib.gdalLibStrings.w],
@@ -176,6 +170,12 @@ object ^ extends js.Object {
     data_type: js.UndefOr[scala.Double],
     creation_options: js.UndefOr[js.Array[java.lang.String] | js.Object]
   ): Dataset = js.native
+  @JSName("open")
+  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w): Dataset = js.native
+  @JSName("open")
+  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w, drivers: java.lang.String): Dataset = js.native
+  @JSName("open")
+  def open_w(path: java.lang.String, mode: gdalLib.gdalLibStrings.w, drivers: js.Array[java.lang.String]): Dataset = js.native
   def polygonize(options: PolygonizeOptions): scala.Unit = js.native
   def quiet(): scala.Unit = js.native
   def reprojectImage(options: ReprojectImageOptions): scala.Unit = js.native

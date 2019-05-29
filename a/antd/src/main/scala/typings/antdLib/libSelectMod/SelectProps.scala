@@ -29,7 +29,7 @@ trait SelectProps[T] extends AbstractSelectProps {
       scala.Unit
     ]
   ] = js.undefined
-  var onDeselect: js.UndefOr[js.Function1[/* value */ SelectedValue, _]] = js.undefined
+  var onDeselect: js.UndefOr[js.Function1[/* value */ T, _]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onInputKeyDown: js.UndefOr[
     js.Function1[/* e */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement], scala.Unit]
@@ -47,9 +47,7 @@ trait SelectProps[T] extends AbstractSelectProps {
     ]
   ] = js.undefined
   var onPopupScroll: js.UndefOr[reactLib.reactMod.UIEventHandler[stdLib.HTMLDivElement]] = js.undefined
-  var onSelect: js.UndefOr[
-    js.Function2[/* value */ SelectedValue, /* option */ reactLib.reactMod.ReactElement[_], _]
-  ] = js.undefined
+  var onSelect: js.UndefOr[js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactElement[_], _]] = js.undefined
   var optionFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var optionLabelProp: js.UndefOr[java.lang.String] = js.undefined
   var removeIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
@@ -95,7 +93,7 @@ object SelectProps {
     notFoundContent: reactLib.reactMod.ReactNode = null,
     onBlur: /* value */ T => scala.Unit = null,
     onChange: (/* value */ T, /* option */ reactLib.reactMod.ReactElement[_] | js.Array[reactLib.reactMod.ReactElement[_]]) => scala.Unit = null,
-    onDeselect: /* value */ SelectedValue => _ = null,
+    onDeselect: /* value */ T => _ = null,
     onDropdownVisibleChange: /* open */ scala.Boolean => scala.Unit = null,
     onFocus: () => scala.Unit = null,
     onInputKeyDown: /* e */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement] => scala.Unit = null,
@@ -103,7 +101,7 @@ object SelectProps {
     onMouseLeave: /* e */ reactLib.reactMod.MouseEvent[stdLib.HTMLInputElement, reactLib.NativeMouseEvent] => _ = null,
     onPopupScroll: reactLib.reactMod.UIEventHandler[stdLib.HTMLDivElement] = null,
     onSearch: /* value */ java.lang.String => _ = null,
-    onSelect: (/* value */ SelectedValue, /* option */ reactLib.reactMod.ReactElement[_]) => _ = null,
+    onSelect: (/* value */ T, /* option */ reactLib.reactMod.ReactElement[_]) => _ = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     optionFilterProp: java.lang.String = null,
     optionLabelProp: java.lang.String = null,

@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A structure representing a Marker icon image.
+  * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Icon Maps JavaScript API}
+  */
 trait Icon extends js.Object {
   /**
     * The position at which to anchor an image in correspondence to the

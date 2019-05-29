@@ -79,7 +79,7 @@ package object libClientMod {
     /* document */ vscodeLib.vscodeMod.TextDocument, 
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
     vscodeLib.vscodeMod.ProviderResult[
-      js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
+      js.Array[vscodeLib.vscodeMod.DocumentSymbol | vscodeLib.vscodeMod.SymbolInformation]
     ]
   ]
   type ProvideHoverSignature = js.Function3[

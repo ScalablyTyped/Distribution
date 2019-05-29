@@ -15,7 +15,9 @@ object StyledProps {
   @scala.inline
   def apply(
     errorBefore: js.UndefOr[scala.Boolean] = js.undefined,
-    field: java.lang.String | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactText] | (js.Array[java.lang.String | js.Array[reactLib.reactMod.ReactText]]) = null,
+    field: java.lang.String | (js.Array[
+      js.Array[reactLib.reactMod.ReactText] | reactLib.reactMod.ReactText | java.lang.String
+    ]) = null,
     isForm: js.UndefOr[scala.Boolean] = js.undefined,
     messageBefore: js.UndefOr[scala.Boolean] = js.undefined,
     noMessage: js.UndefOr[scala.Boolean] = js.undefined,

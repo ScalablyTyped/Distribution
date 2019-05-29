@@ -28,14 +28,14 @@ object default extends js.Object {
   var PanInput: atEgjsAxesLib.TypeofClassPanInput = js.native
   var PinchInput: org.scalablytyped.runtime.Instantiable2[
     /* el */ js.Any, 
-    /* options */ js.UndefOr[/* options */ atEgjsAxesLib.inputTypePinchInputMod.PinchInputOption], 
+    js.UndefOr[/* options */ atEgjsAxesLib.inputTypePinchInputMod.PinchInputOption], 
     atEgjsAxesLib.inputTypePinchInputMod.PinchInput
   ] = js.native
   var TRANSFORM: java.lang.String = js.native
   var VERSION: java.lang.String = js.native
   var WheelInput: org.scalablytyped.runtime.Instantiable2[
     /* el */ js.Any, 
-    /* options */ js.UndefOr[/* options */ atEgjsAxesLib.inputTypeWheelInputMod.WheelInputOption], 
+    js.UndefOr[/* options */ atEgjsAxesLib.inputTypeWheelInputMod.WheelInputOption], 
     atEgjsAxesLib.inputTypeWheelInputMod.WheelInput
   ] = js.native
 }

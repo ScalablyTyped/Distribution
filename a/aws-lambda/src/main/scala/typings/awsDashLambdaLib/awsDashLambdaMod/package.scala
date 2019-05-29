@@ -23,7 +23,14 @@ package object awsDashLambdaMod {
   type CloudFrontHeaders = org.scalablytyped.runtime.StringDictionary[js.Array[awsDashLambdaLib.Anon_KeyValue]]
   type CloudFrontRequestCallback = Callback[CloudFrontRequestResult]
   type CloudFrontRequestHandler = Handler[CloudFrontRequestEvent, CloudFrontRequestResult]
-  type CloudFrontRequestResult = js.UndefOr[scala.Null | CloudFrontResultResponse | CloudFrontRequest]
+  /* Rewritten from type alias, can be one of: 
+    - `js.undefined`
+    - scala.Nothing
+    - scala.Null
+    - CloudFrontResultResponse
+    - CloudFrontRequest
+  */
+  type CloudFrontRequestResult = js.UndefOr[_CloudFrontRequestResult | scala.Null]
   type CloudFrontResponseCallback = Callback[CloudFrontResponseResult]
   type CloudFrontResponseHandler = Handler[CloudFrontResponseEvent, CloudFrontResponseResult]
   type CloudFrontResponseResult = js.UndefOr[scala.Null | CloudFrontResultResponse]

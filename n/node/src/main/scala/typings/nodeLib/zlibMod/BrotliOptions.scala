@@ -18,10 +18,7 @@ trait BrotliOptions extends js.Object {
     * @default constants.BROTLI_OPERATION_PROCESS
     */
   var flush: js.UndefOr[scala.Double] = js.undefined
-  var params: /**
-    * Each key is a `constants.BROTLI_*` constant.
-    */
-  js.UndefOr[
+  var params: js.UndefOr[
     /**
     * Each key is a `constants.BROTLI_*` constant.
     */

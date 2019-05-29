@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProxyConfig () extends Property[ProxyConfigDefinition] {
   def this(options: ProxyConfigDefinition) = this()
-  var host: java.lang.String | js.UndefOr[java.lang.String] = js.native
-  var `match`: (js.UndefOr[java.lang.String | postmanDashCollectionLib.Anon_Pattern | UrlMatchPattern]) | UrlMatchPattern = js.native
-  var port: scala.Double | js.UndefOr[scala.Double] = js.native
-  var tunnel: scala.Boolean | js.UndefOr[scala.Boolean] = js.native
+  var host: js.UndefOr[java.lang.String] = js.native
+  var `match`: js.UndefOr[postmanDashCollectionLib.Anon_Pattern | java.lang.String | UrlMatchPattern] = js.native
+  var port: js.UndefOr[scala.Double] = js.native
+  var tunnel: js.UndefOr[scala.Boolean] = js.native
   def getProtocols(): js.Array[java.lang.String] = js.native
   def getProxyUrl(): java.lang.String = js.native
   def test(): scala.Boolean = js.native

@@ -55,6 +55,46 @@ trait ProgramHost[T /* <: BuilderProgram */] extends js.Object {
   /** If provided would be used to write log about compilation */
   var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, scala.Unit]] = js.native
   def createProgram(): T = js.native
+  def createProgram(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): T = js.native
+  def createProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: T
+  ): T = js.native
+  def createProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: T,
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): T = js.native
+  def createProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: T,
+    configFileParsingDiagnostics: js.Array[Diagnostic],
+    projectReferences: js.Array[ProjectReference]
+  ): T = js.native
+  def createProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): T = js.native
+  def createProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): T = js.native
+  def createProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost, oldProgram: T): T = js.native
+  def createProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: T,
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): T = js.native
+  def createProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: T,
+    configFileParsingDiagnostics: js.Array[Diagnostic],
+    projectReferences: js.Array[ProjectReference]
+  ): T = js.native
   def createProgram(rootNames: js.Array[java.lang.String]): T = js.native
   def createProgram(rootNames: js.Array[java.lang.String], options: js.UndefOr[scala.Nothing], host: CompilerHost): T = js.native
   def createProgram(
@@ -93,46 +133,6 @@ trait ProgramHost[T /* <: BuilderProgram */] extends js.Object {
   ): T = js.native
   def createProgram(
     rootNames: js.Array[java.lang.String],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: T,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): T = js.native
-  def createProgram(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): T = js.native
-  def createProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: T
-  ): T = js.native
-  def createProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: T,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): T = js.native
-  def createProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: T,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): T = js.native
-  def createProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): T = js.native
-  def createProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): T = js.native
-  def createProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost, oldProgram: T): T = js.native
-  def createProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: T,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): T = js.native
-  def createProgram(
-    rootNames: js.UndefOr[scala.Nothing],
     options: CompilerOptions,
     host: CompilerHost,
     oldProgram: T,

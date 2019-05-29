@@ -11,8 +11,8 @@ class ParameterList protected ()
   extends Node[grammarkdownLib.distTokensMod.SyntaxKind] {
   def this(openParenToken: Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
   def this(openParenToken: Token[grammarkdownLib.distTokensMod.SyntaxKind], elements: js.Array[Parameter]) = this()
-  def this(openParenToken: Token[grammarkdownLib.distTokensMod.SyntaxKind], elements: js.Array[Parameter], closeParenToken: Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
   def this(openParenToken: Token[grammarkdownLib.distTokensMod.SyntaxKind], elements: js.UndefOr[scala.Nothing], closeParenToken: Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
+  def this(openParenToken: Token[grammarkdownLib.distTokensMod.SyntaxKind], elements: js.Array[Parameter], closeParenToken: Token[grammarkdownLib.distTokensMod.SyntaxKind]) = this()
   val closeParenToken: js.UndefOr[Token[grammarkdownLib.distTokensMod.SyntaxKind]] = js.native
   val elements: js.UndefOr[js.Array[Parameter]] = js.native
   val openParenToken: Token[grammarkdownLib.distTokensMod.SyntaxKind] = js.native

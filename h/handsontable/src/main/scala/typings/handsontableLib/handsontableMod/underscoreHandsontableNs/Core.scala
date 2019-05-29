@@ -361,11 +361,21 @@ trait Core extends js.Object {
   def getSelectedRange(): js.UndefOr[js.Array[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange]] = js.native
   def getSelectedRangeLast(): js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange] = js.native
   def getSettings(): handsontableLib.handsontableMod.HandsontableNs.GridSettings = js.native
-  def getSourceData(): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
-  def getSourceData(row: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
-  def getSourceData(row: scala.Double, column: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
-  def getSourceData(row: scala.Double, column: scala.Double, row2: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
-  def getSourceData(row: scala.Double, column: scala.Double, row2: scala.Double, column2: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] | js.Array[handsontableLib.handsontableMod.HandsontableNs.RowObject] = js.native
+  def getSourceData(): js.Array[
+    js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] | handsontableLib.handsontableMod.HandsontableNs.RowObject
+  ] = js.native
+  def getSourceData(row: scala.Double): js.Array[
+    js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] | handsontableLib.handsontableMod.HandsontableNs.RowObject
+  ] = js.native
+  def getSourceData(row: scala.Double, column: scala.Double): js.Array[
+    js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] | handsontableLib.handsontableMod.HandsontableNs.RowObject
+  ] = js.native
+  def getSourceData(row: scala.Double, column: scala.Double, row2: scala.Double): js.Array[
+    js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] | handsontableLib.handsontableMod.HandsontableNs.RowObject
+  ] = js.native
+  def getSourceData(row: scala.Double, column: scala.Double, row2: scala.Double, column2: scala.Double): js.Array[
+    js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue] | handsontableLib.handsontableMod.HandsontableNs.RowObject
+  ] = js.native
   def getSourceDataArray(): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] = js.native
   def getSourceDataArray(row: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] = js.native
   def getSourceDataArray(row: scala.Double, column: scala.Double): js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]] = js.native

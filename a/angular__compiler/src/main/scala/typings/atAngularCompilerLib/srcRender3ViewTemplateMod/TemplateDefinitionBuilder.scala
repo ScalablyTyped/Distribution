@@ -131,18 +131,18 @@ class TemplateDefinitionBuilder protected ()
   def i18nEnd(span: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan): scala.Unit = js.native
   def i18nEnd(span: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan, selfClosing: scala.Boolean): scala.Unit = js.native
   def i18nEnd(span: scala.Null, selfClosing: scala.Boolean): scala.Unit = js.native
+  def i18nStart(span: js.UndefOr[scala.Nothing], meta: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST): scala.Unit = js.native
+  def i18nStart(
+    span: js.UndefOr[scala.Nothing],
+    meta: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST,
+    selfClosing: scala.Boolean
+  ): scala.Unit = js.native
   def i18nStart(
     span: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
     meta: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST
   ): scala.Unit = js.native
   def i18nStart(
     span: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
-    meta: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST,
-    selfClosing: scala.Boolean
-  ): scala.Unit = js.native
-  def i18nStart(span: js.UndefOr[scala.Nothing], meta: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST): scala.Unit = js.native
-  def i18nStart(
-    span: js.UndefOr[scala.Nothing],
     meta: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST,
     selfClosing: scala.Boolean
   ): scala.Unit = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait PropertyIndexedKeyframes
   extends /* property */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[
-        java.lang.String | js.Array[java.lang.String] | scala.Double | scala.Null | (js.Array[scala.Double | scala.Null])
+        java.lang.String | (js.Array[scala.Double | scala.Null | java.lang.String]) | scala.Double | scala.Null
       ]
     ] {
   var composite: js.UndefOr[CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]] = js.undefined
@@ -21,7 +21,7 @@ object PropertyIndexedKeyframes {
   def apply(
     StringDictionary: /* property */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[
-        java.lang.String | js.Array[java.lang.String] | scala.Double | scala.Null | (js.Array[scala.Double | scala.Null])
+        java.lang.String | (js.Array[scala.Double | scala.Null | java.lang.String]) | scala.Double | scala.Null
       ]
     ] = null,
     composite: CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto] = null,

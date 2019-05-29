@@ -17,7 +17,7 @@ class LocaleProvider protected ()
 @js.native
 object LocaleProvider extends js.Object {
   var childContextTypes: antdLib.Anon_AntLocale = js.native
-  var defaultProps: antdLib.Anon_Locale_1003398695 = js.native
+  var defaultProps: antdLib.Anon_Locale_480078694 = js.native
   var propTypes: antdLib.Anon_Locale = js.native
 }
 

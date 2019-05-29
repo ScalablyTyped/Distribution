@@ -11,7 +11,7 @@ trait IonAnchorAttributes
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
   @JSName("color")
-  var color_IonAnchorAttributes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.UndefOr[
+  var color_IonAnchorAttributes: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
   ] = js.undefined
   /**
@@ -21,7 +21,7 @@ trait IonAnchorAttributes
   /**
     * When using a router, it specifies the transition direction when navigating to another page using `href`.
     */
-  var routerDirection: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.UndefOr[
+  var routerDirection: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RouterDirection */ js.Any
   ] = js.undefined
 }

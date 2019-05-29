@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/***** Events *****/
 trait MapsEventListener extends js.Object {
   /**
     * Removes the listener.  Equivalent to calling

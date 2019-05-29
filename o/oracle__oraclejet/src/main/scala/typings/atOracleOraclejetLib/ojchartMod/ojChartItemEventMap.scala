@@ -20,7 +20,7 @@ trait ojChartItemEventMap
   ]
   var groupIdChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[java.lang.String | scala.Double]]
   var highChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[scala.Double]]
-  var itemsChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[js.Object] | js.Array[scala.Double]]]
+  var itemsChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[scala.Double | js.Object]]]
   var labelChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[java.lang.String | js.Array[java.lang.String]]]
   var labelPositionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     js.UndefOr[
@@ -117,7 +117,7 @@ object ojChartItemEventMap {
     highChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[scala.Double]],
     input: stdLib.Event,
     invalid: stdLib.Event,
-    itemsChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[js.Object] | js.Array[scala.Double]]],
+    itemsChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[js.Array[scala.Double | js.Object]]],
     keydown: stdLib.KeyboardEvent,
     keypress: stdLib.KeyboardEvent,
     keyup: stdLib.KeyboardEvent,

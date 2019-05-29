@@ -9,18 +9,22 @@ import scala.scalajs.js.annotation._
 // this definition gives some intellisense, but does not protect the user from misuse
 // TODO: come in and tidy this up and make it fit better
 trait IChartistData extends js.Object {
-  var labels: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[stdLib.Date]] = js.undefined
-  var series: js.Array[IChartistSeriesData] | js.Array[js.Array[IChartistSeriesData]] | js.Array[js.Array[IChartistData]] | js.Array[scala.Double] | js.Array[js.Array[scala.Double]]
+  var labels: js.UndefOr[js.Array[stdLib.Date | scala.Double | java.lang.String]] = js.undefined
+  var series: js.Array[
+    (js.Array[scala.Double | IChartistData | IChartistSeriesData]) | scala.Double | IChartistSeriesData
+  ]
 }
 
 object IChartistData {
   @scala.inline
   def apply(
-    series: js.Array[IChartistSeriesData] | js.Array[js.Array[IChartistSeriesData]] | js.Array[js.Array[IChartistData]] | js.Array[scala.Double] | js.Array[js.Array[scala.Double]],
-    labels: js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[stdLib.Date] = null
+    series: js.Array[
+      (js.Array[scala.Double | IChartistData | IChartistSeriesData]) | scala.Double | IChartistSeriesData
+    ],
+    labels: js.Array[stdLib.Date | scala.Double | java.lang.String] = null
   ): IChartistData = {
-    val __obj = js.Dynamic.literal(series = series.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(series = series)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
     __obj.asInstanceOf[IChartistData]
   }
 }

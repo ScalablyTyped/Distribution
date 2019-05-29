@@ -23,7 +23,7 @@ object ^ extends js.Object {
     options: (AsyncOptions with (OptionsAll | OptionsFirst)) | AsyncOptions,
     cb: js.Function2[
       stdLib.Error | scala.Null, 
-      /* path */ /* paths */ js.UndefOr[js.Array[java.lang.String] | java.lang.String], 
+      js.UndefOr[js.Array[java.lang.String] | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native

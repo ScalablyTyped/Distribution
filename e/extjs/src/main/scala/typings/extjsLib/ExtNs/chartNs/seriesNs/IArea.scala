@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 trait IArea extends ICartesian {
   /** [Method] Draws the series for the current chart  */
   var drawSeries: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /** [Method] Highlight the specified item
+  		* @param item Object {Object} Info about the item; same format as returned by getItemForPoint
+  		*/
+  @JSName("highlightItem")
+  var highlightItem_IArea: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Highlight this entire series
   		* @param item Object Info about the item; same format as returned by getItemForPoint.
   		*/

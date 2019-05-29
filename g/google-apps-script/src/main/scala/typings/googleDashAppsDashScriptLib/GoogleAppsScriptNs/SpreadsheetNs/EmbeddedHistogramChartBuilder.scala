@@ -38,7 +38,7 @@ trait EmbeddedHistogramChartBuilder extends js.Object {
     offsetX: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     offsetY: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): EmbeddedChartBuilder
-  def setRange(start: stdLib.Number, end: stdLib.Number): EmbeddedHistogramChartBuilder
+  def setRange(start: scala.Double, end: scala.Double): EmbeddedHistogramChartBuilder
   def setStacked(): EmbeddedHistogramChartBuilder
   def setTitle(chartTitle: java.lang.String): EmbeddedHistogramChartBuilder
   def setTitleTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedHistogramChartBuilder
@@ -82,7 +82,7 @@ object EmbeddedHistogramChartBuilder {
     setNumHeaders: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => EmbeddedChartBuilder,
     setOption: (java.lang.String, js.Object) => EmbeddedChartBuilder,
     setPosition: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => EmbeddedChartBuilder,
-    setRange: (stdLib.Number, stdLib.Number) => EmbeddedHistogramChartBuilder,
+    setRange: (scala.Double, scala.Double) => EmbeddedHistogramChartBuilder,
     setStacked: () => EmbeddedHistogramChartBuilder,
     setTitle: java.lang.String => EmbeddedHistogramChartBuilder,
     setTitleTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedHistogramChartBuilder,

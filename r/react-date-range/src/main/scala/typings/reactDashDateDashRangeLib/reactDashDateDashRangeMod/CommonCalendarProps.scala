@@ -11,13 +11,13 @@ trait CommonCalendarProps extends js.Object {
   /** default: DD/MM/YYY */
   var format: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Calendar languages.
-  	 * ('cn' - Chinese, 'jp' - Japanese,
-  	 * 'fr' - French, 'it' - Italian,
-  	 * 'de' - German, 'ko' - Korean,
-  	 * 'es' - Spanish, 'ru' - Russian,
-  	 * 'tr' - Turkish) default: none
-  	 */
+    * Calendar languages.
+    * ('cn' - Chinese, 'jp' - Japanese,
+    * 'fr' - French, 'it' - Italian,
+    * 'de' - German, 'ko' - Korean,
+    * 'es' - Spanish, 'ru' - Russian,
+    * 'tr' - Turkish) default: none
+    */
   var lang: js.UndefOr[LanguageType] = js.undefined
   /** default: none */
   var maxDate: js.UndefOr[DateInputType] = js.undefined

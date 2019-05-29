@@ -21,14 +21,14 @@ class Chart protected ()
   def this(releaseName: java.lang.String, config: LocalChartOpts, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   def parseTemplate(
     yamlStream: java.lang.String,
-    transformations: js.Array[js.Function1[/* o */ _, scala.Unit]],
+    transformations: js.UndefOr[scala.Nothing],
     dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
   ): atPulumiPulumiLib.outputMod.Output[
     org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
   ] = js.native
   def parseTemplate(
     yamlStream: java.lang.String,
-    transformations: js.UndefOr[scala.Nothing],
+    transformations: js.Array[js.Function1[/* o */ _, scala.Unit]],
     dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
   ): atPulumiPulumiLib.outputMod.Output[
     org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]

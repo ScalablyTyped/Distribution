@@ -17,8 +17,8 @@ class Input protected ()
 @js.native
 object Input extends js.Object {
   var Group: reactLib.reactMod.StatelessComponent[antdLib.esInputGroupMod.GroupProps] = js.native
-  var Password: antdLib.Anon_DefaultPropsAnonAction = js.native
-  var Search: antdLib.Anon_DefaultPropsAnonEnterButton = js.native
+  var Password: antdLib.TypeofClassPassword = js.native
+  var Search: antdLib.TypeofClassSearch = js.native
   var TextArea: org.scalablytyped.runtime.Instantiable0[antdLib.esInputTextAreaMod.default] = js.native
   var defaultProps: antdLib.Anon_DisabledType = js.native
   var propTypes: antdLib.Anon_AddonAfter = js.native

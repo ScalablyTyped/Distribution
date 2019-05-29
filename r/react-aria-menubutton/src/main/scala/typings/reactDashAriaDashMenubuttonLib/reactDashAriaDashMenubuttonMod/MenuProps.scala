@@ -10,7 +10,7 @@ trait MenuProps[T /* <: stdLib.HTMLElement */]
   /**
   	 * The HTML tag for this element. Default: 'span'.
   	 */
-  var tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.UndefOr[
+  var tag: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any
   ] = js.undefined
 }

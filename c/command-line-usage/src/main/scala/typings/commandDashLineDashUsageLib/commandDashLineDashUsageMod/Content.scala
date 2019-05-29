@@ -16,7 +16,7 @@ trait Content extends Section {
     *  4. An object with two properties - data and options. In this case, the data and options will be passed directly to the underlying table layout module for rendering.
     */
   var content: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | js.Array[_] | commandDashLineDashUsageLib.Anon_Data
+    java.lang.String | (js.Array[_ | java.lang.String]) | commandDashLineDashUsageLib.Anon_Data
   ] = js.undefined
   /** The section header, always bold and underlined. */
   var header: js.UndefOr[java.lang.String] = js.undefined
@@ -27,7 +27,7 @@ trait Content extends Section {
 object Content {
   @scala.inline
   def apply(
-    content: java.lang.String | js.Array[java.lang.String] | js.Array[_] | commandDashLineDashUsageLib.Anon_Data = null,
+    content: java.lang.String | (js.Array[_ | java.lang.String]) | commandDashLineDashUsageLib.Anon_Data = null,
     header: java.lang.String = null,
     raw: js.UndefOr[scala.Boolean] = js.undefined
   ): Content = {

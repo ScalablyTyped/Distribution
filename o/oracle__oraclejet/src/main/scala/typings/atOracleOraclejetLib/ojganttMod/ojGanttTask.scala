@@ -1379,7 +1379,7 @@ trait ojGanttTask
   @JSName("getProperty")
   def getProperty_progress(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.progress): atOracleOraclejetLib.Anon_BorderRadiusHeightSvgClassName = js.native
   @JSName("getProperty")
-  def getProperty_rowId(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rowId): js.UndefOr[_] = js.native
+  def getProperty_rowId(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rowId): js.UndefOr[js.Any] = js.native
   @JSName("getProperty")
   def getProperty_shortDesc(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.shortDesc): java.lang.String | scala.Null = js.native
   @JSName("getProperty")

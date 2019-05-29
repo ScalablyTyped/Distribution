@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("p-timeout", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var TimeoutError: org.scalablytyped.runtime.Instantiable1[/* message */ js.UndefOr[/* message */ java.lang.String], TimeoutErrorClass] = js.native
+  var TimeoutError: org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* message */ java.lang.String], TimeoutErrorClass] = js.native
   // TODO: Remove this for the next major release
   @JSName("default")
   var default_Original: pDashTimeoutLib.Anon_Default = js.native

@@ -22,7 +22,7 @@ object ^ extends js.Object {
   var runtime_error: org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, tstlLib.exceptionRuntimeErrorMod.RuntimeError] = js.native
   var system_error: org.scalablytyped.runtime.Instantiable2[
     /* code */ tstlLib.exceptionErrorCodeMod.ErrorCode, 
-    /* message */ js.UndefOr[/* message */ java.lang.String], 
+    js.UndefOr[/* message */ java.lang.String], 
     tstlLib.exceptionSystemErrorMod.SystemError
   ] = js.native
   var underflow_error: org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, tstlLib.exceptionRuntimeErrorMod.UnderflowError] = js.native

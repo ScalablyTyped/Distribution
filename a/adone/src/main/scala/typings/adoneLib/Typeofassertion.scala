@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Typeofassertion extends js.Object {
   var AssertionError: org.scalablytyped.runtime.Instantiable3[
-    /* message */ js.UndefOr[/* message */ java.lang.String], 
-    /* props */ js.UndefOr[/* props */ js.Object], 
-    /* ssf */ js.UndefOr[/* ssf */ js.Object], 
+    js.UndefOr[/* message */ java.lang.String], 
+    js.UndefOr[/* props */ js.Object], 
+    js.UndefOr[/* ssf */ js.Object], 
     adoneLib.adoneNs.assertionNs.AssertionError
   ] = js.native
   val INs: js.Any = js.native

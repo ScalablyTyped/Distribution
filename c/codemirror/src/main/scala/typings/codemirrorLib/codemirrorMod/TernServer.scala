@@ -27,7 +27,7 @@ trait TernServer extends js.Object {
     query: Q,
     callback: js.Function2[
       /* error */ js.UndefOr[stdLib.Error], 
-      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ /* data */ js.UndefOr[
+      /* data */ js.UndefOr[
         /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ js.Any
       ], 
       scala.Unit
@@ -38,7 +38,7 @@ trait TernServer extends js.Object {
     query: Q,
     callback: js.Function2[
       /* error */ js.UndefOr[stdLib.Error], 
-      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ /* data */ js.UndefOr[
+      /* data */ js.UndefOr[
         /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q['type']]['result'] */ js.Any
       ], 
       scala.Unit
@@ -51,7 +51,7 @@ trait TernServer extends js.Object {
     query: Q,
     callback: js.Function2[
       /* error */ js.UndefOr[stdLib.Error], 
-      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q]['result'] */ /* data */ js.UndefOr[
+      /* data */ js.UndefOr[
         /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q]['result'] */ js.Any
       ], 
       scala.Unit
@@ -63,7 +63,7 @@ trait TernServer extends js.Object {
     query: Q,
     callback: js.Function2[
       /* error */ js.UndefOr[stdLib.Error], 
-      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q]['result'] */ /* data */ js.UndefOr[
+      /* data */ js.UndefOr[
         /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[Q]['result'] */ js.Any
       ], 
       scala.Unit

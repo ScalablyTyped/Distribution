@@ -42,9 +42,7 @@ trait ExecuteManyOptions extends js.Object {
     *
     * It should be an array or an object, depending on the structure of the binds parameter.
     */
-  var bindDefs: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[BindDefinition] | js.Array[BindDefinition]
-  ] = js.undefined
+  var bindDefs: js.UndefOr[(stdLib.Record[java.lang.String, BindDefinition]) | js.Array[BindDefinition]] = js.undefined
   /**
     * When true, this optional property enables output of the number of rows affected by each input data record.
     * It can only be set true for INSERT, UPDATE, DELETE or MERGE statements.
@@ -61,7 +59,7 @@ object ExecuteManyOptions {
   def apply(
     autoCommit: js.UndefOr[scala.Boolean] = js.undefined,
     batchErrors: js.UndefOr[scala.Boolean] = js.undefined,
-    bindDefs: org.scalablytyped.runtime.StringDictionary[BindDefinition] | js.Array[BindDefinition] = null,
+    bindDefs: (stdLib.Record[java.lang.String, BindDefinition]) | js.Array[BindDefinition] = null,
     dmlRowCounts: js.UndefOr[scala.Boolean] = js.undefined
   ): ExecuteManyOptions = {
     val __obj = js.Dynamic.literal()

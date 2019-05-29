@@ -20,16 +20,16 @@ object ^ extends js.Object {
   def load(str: java.lang.String): js.Any = js.native
   def load(str: java.lang.String, opts: LoadOptions): js.Any = js.native
   def loadAll(str: java.lang.String): js.Array[_] = js.native
+  def loadAll(str: java.lang.String, iterator: js.UndefOr[scala.Nothing], opts: LoadOptions): js.Array[_] = js.native
   def loadAll(str: java.lang.String, iterator: js.Function1[/* doc */ js.Any, scala.Unit]): js.UndefOr[scala.Nothing] = js.native
   def loadAll(str: java.lang.String, iterator: js.Function1[/* doc */ js.Any, scala.Unit], opts: LoadOptions): js.UndefOr[scala.Nothing] = js.native
-  def loadAll(str: java.lang.String, iterator: js.UndefOr[scala.Nothing], opts: LoadOptions): js.Array[_] = js.native
   def safeDump(obj: js.Any): java.lang.String = js.native
   def safeDump(obj: js.Any, opts: DumpOptions): java.lang.String = js.native
   def safeLoad(str: java.lang.String): js.Any = js.native
   def safeLoad(str: java.lang.String, opts: LoadOptions): js.Any = js.native
   def safeLoadAll(str: java.lang.String): js.Array[_] = js.native
+  def safeLoadAll(str: java.lang.String, iterator: js.UndefOr[scala.Nothing], opts: LoadOptions): js.Array[_] = js.native
   def safeLoadAll(str: java.lang.String, iterator: js.Function1[/* doc */ js.Any, scala.Unit]): js.UndefOr[scala.Nothing] = js.native
   def safeLoadAll(str: java.lang.String, iterator: js.Function1[/* doc */ js.Any, scala.Unit], opts: LoadOptions): js.UndefOr[scala.Nothing] = js.native
-  def safeLoadAll(str: java.lang.String, iterator: js.UndefOr[scala.Nothing], opts: LoadOptions): js.Array[_] = js.native
 }
 

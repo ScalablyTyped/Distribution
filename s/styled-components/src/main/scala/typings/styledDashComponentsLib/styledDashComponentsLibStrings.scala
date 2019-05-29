@@ -487,6 +487,9 @@ object styledDashComponentsLibStrings {
   sealed trait td extends js.Object
   
   @js.native
+  sealed trait template extends js.Object
+  
+  @js.native
   sealed trait text extends js.Object
   
   @js.native
@@ -863,6 +866,8 @@ object styledDashComponentsLibStrings {
   def tbody: tbody = "tbody".asInstanceOf[tbody]
   @scala.inline
   def td: td = "td".asInstanceOf[td]
+  @scala.inline
+  def template: template = "template".asInstanceOf[template]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline

@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IRawStyle
-  extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IRawStyleBase {
+  extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IRawStyleBase
+     with _IStyleBase {
   /**
     * Display name for the style.
     */
@@ -21,11 +22,13 @@ object IRawStyle {
   @scala.inline
   def apply(
     IRawStyleBase: atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IRawStyleBase = null,
+    _IStyleBase: _IStyleBase = null,
     displayName: java.lang.String = null,
     selectors: org.scalablytyped.runtime.StringDictionary[IStyle] = null
   ): IRawStyle = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, IRawStyleBase)
+    js.Dynamic.global.Object.assign(__obj, _IStyleBase)
     if (displayName != null) __obj.updateDynamic("displayName")(displayName)
     if (selectors != null) __obj.updateDynamic("selectors")(selectors)
     __obj.asInstanceOf[IRawStyle]

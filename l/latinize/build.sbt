@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "latinize"
-version := "0.2.0-dt-20190322Z-626a6a"
+version := "0.2.0-dt-20190322Z-4fb9e7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

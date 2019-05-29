@@ -13,7 +13,9 @@ object parseNs extends js.Object {
     var header: js.Object
     var input: nodeLib.Buffer | java.lang.String | js.Object
     var `type`: nodeDashJoseLib.nodeDashJoseLibStrings.JWS | nodeDashJoseLib.nodeDashJoseLibStrings.JWE
-    def perform(ks: nodeDashJoseLib.nodeDashJoseMod.JWKNs.KeyStore): js.Promise[nodeDashJoseLib.nodeDashJoseMod.JWENs.DecryptResult] | js.Promise[nodeDashJoseLib.nodeDashJoseMod.JWSNs.VerificationResult]
+    def perform(ks: nodeDashJoseLib.nodeDashJoseMod.JWKNs.KeyStore): js.Promise[
+        nodeDashJoseLib.nodeDashJoseMod.JWENs.DecryptResult | nodeDashJoseLib.nodeDashJoseMod.JWSNs.VerificationResult
+      ]
   }
   
   def compact(input: java.lang.String): ParseReturn = js.native

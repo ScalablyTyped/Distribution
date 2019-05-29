@@ -10,7 +10,7 @@ trait IonTabAttributes
   /**
     * The component to display inside of the tab.
     */
-  var component: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.UndefOr[
+  var component: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentRef */ js.Any
   ] = js.undefined
   /**

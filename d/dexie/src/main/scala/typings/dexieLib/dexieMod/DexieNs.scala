@@ -425,26 +425,26 @@ object DexieNs extends js.Object {
     def `finally`(onFinally: js.Function0[scala.Unit]): Promise[T] = js.native
     // From Promise<T> in lib.es2015.d.ts and lib.es2015.symbol.wellknown.d.ts but with return type Dexie.Promise<T>:
     def `then`(): Promise[T] = js.native
+    def `then`(
+      onfulfilled: js.UndefOr[scala.Nothing],
+      onrejected: js.Function1[/* reason */ js.Any, T | js.Thenable[T]]
+    ): Promise[T] = js.native
     def `then`(onfulfilled: js.Function1[/* value */ T, T | js.Thenable[T]]): Promise[T] = js.native
     def `then`(
       onfulfilled: js.Function1[/* value */ T, T | js.Thenable[T]],
       onrejected: js.Function1[/* reason */ js.Any, T | js.Thenable[T]]
     ): Promise[T] = js.native
-    def `then`(
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, T | js.Thenable[T]]
-    ): Promise[T] = js.native
     def `then`(onfulfilled: scala.Null, onrejected: js.Function1[/* reason */ js.Any, T | js.Thenable[T]]): Promise[T] = js.native
+    @JSName("then")
+    def then_TResult[TResult](
+      onfulfilled: js.UndefOr[scala.Nothing],
+      onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]
+    ): Promise[T | TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](onfulfilled: js.Function1[/* value */ T, TResult | js.Thenable[TResult]]): Promise[TResult] = js.native
     @JSName("then")
     def then_TResult[TResult](
-      onfulfilled: js.Function1[/* value */ T, T | TResult | js.Thenable[T] | js.Thenable[TResult]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]
-    ): Promise[T | TResult] = js.native
-    @JSName("then")
-    def then_TResult[TResult](
-      onfulfilled: js.UndefOr[scala.Nothing],
+      onfulfilled: js.Function1[/* value */ T, T | TResult | (js.Thenable[T | TResult])],
       onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]
     ): Promise[T | TResult] = js.native
     @JSName("then")

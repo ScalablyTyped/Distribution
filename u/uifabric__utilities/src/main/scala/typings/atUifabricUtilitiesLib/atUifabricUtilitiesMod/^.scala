@@ -121,10 +121,10 @@ object ^ extends js.Object {
   def getFocusableByIndexPath(parent: stdLib.HTMLElement, path: js.Array[scala.Double]): js.UndefOr[stdLib.HTMLElement] = js.native
   def getId(): java.lang.String = js.native
   def getId(prefix: java.lang.String): java.lang.String = js.native
-  def getInitials(displayName: java.lang.String, isRtl: scala.Boolean): java.lang.String = js.native
-  def getInitials(displayName: java.lang.String, isRtl: scala.Boolean, allowPhoneInitials: scala.Boolean): java.lang.String = js.native
   def getInitials(displayName: js.UndefOr[scala.Nothing], isRtl: scala.Boolean): java.lang.String = js.native
   def getInitials(displayName: js.UndefOr[scala.Nothing], isRtl: scala.Boolean, allowPhoneInitials: scala.Boolean): java.lang.String = js.native
+  def getInitials(displayName: java.lang.String, isRtl: scala.Boolean): java.lang.String = js.native
+  def getInitials(displayName: java.lang.String, isRtl: scala.Boolean, allowPhoneInitials: scala.Boolean): java.lang.String = js.native
   def getInitials(displayName: scala.Null, isRtl: scala.Boolean): java.lang.String = js.native
   def getInitials(displayName: scala.Null, isRtl: scala.Boolean, allowPhoneInitials: scala.Boolean): java.lang.String = js.native
   def getLanguage(): java.lang.String | scala.Null = js.native

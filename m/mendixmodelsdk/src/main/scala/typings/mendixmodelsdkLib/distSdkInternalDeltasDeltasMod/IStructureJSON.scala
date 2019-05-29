@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IStructureJSON
   extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[
-      PrimitiveValue | js.Array[PrimitiveValue] | IStructureJSON | js.Array[IStructureJSON] | scala.Null
+      PrimitiveValue | (js.Array[IStructureJSON | PrimitiveValue]) | IStructureJSON | scala.Null
     ] {
   @JSName("$ID")
   var $ID: java.lang.String
@@ -21,7 +21,7 @@ object IStructureJSON {
     $ID: java.lang.String,
     $Type: java.lang.String,
     StringDictionary: /* propertyName */ org.scalablytyped.runtime.StringDictionary[
-      PrimitiveValue | js.Array[PrimitiveValue] | IStructureJSON | js.Array[IStructureJSON] | scala.Null
+      PrimitiveValue | (js.Array[IStructureJSON | PrimitiveValue]) | IStructureJSON | scala.Null
     ] = null
   ): IStructureJSON = {
     val __obj = js.Dynamic.literal($ID = $ID, $Type = $Type)

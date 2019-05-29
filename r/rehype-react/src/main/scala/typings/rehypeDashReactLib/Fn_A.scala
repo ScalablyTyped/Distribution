@@ -58,9 +58,9 @@ trait Fn_A extends js.Object {
     props: reactLib.reactMod.ClassAttributes[T] with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
   ): reactLib.reactMod.DOMElement[P, T] = js.native
-  def apply[P /* <: reactLib.reactMod.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any): reactLib.reactMod.DetailedReactHTMLElement[P, T] = js.native
+  def apply[P /* <: reactLib.reactMod.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any): reactLib.reactMod.DetailedReactHTMLElement[P, T] = js.native
   def apply[P /* <: reactLib.reactMod.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any,
     props: reactLib.reactMod.ClassAttributes[T] with (P | scala.Null),
     children: reactLib.reactMod.ReactNode*
   ): reactLib.reactMod.DetailedReactHTMLElement[P, T] = js.native

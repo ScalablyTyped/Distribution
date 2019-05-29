@@ -226,7 +226,7 @@ trait Options extends js.Object {
     * Default: []
     * Note: Requires at least version 2.8.0.
     */
-  var serveStatic: js.UndefOr[js.Array[StaticOptions] | js.Array[java.lang.String]] = js.undefined
+  var serveStatic: js.UndefOr[js.Array[StaticOptions | java.lang.String]] = js.undefined
   /**
     * Options that are passed to the serve-static middleware when you use the
     * string[] syntax: eg: `serveStatic: ['./app']`.
@@ -351,7 +351,7 @@ object Options {
     scrollProportionally: js.UndefOr[scala.Boolean] = js.undefined,
     scrollRestoreTechnique: java.lang.String = null,
     scrollThrottle: scala.Int | scala.Double = null,
-    serveStatic: js.Array[StaticOptions] | js.Array[java.lang.String] = null,
+    serveStatic: js.Array[StaticOptions | java.lang.String] = null,
     serveStaticOptions: serveDashStaticLib.serveDashStaticMod.ServeStaticOptions = null,
     server: java.lang.String | scala.Boolean | js.Array[java.lang.String] | ServerOptions = null,
     single: js.UndefOr[scala.Boolean] = js.undefined,
@@ -406,7 +406,7 @@ object Options {
     if (!js.isUndefined(scrollProportionally)) __obj.updateDynamic("scrollProportionally")(scrollProportionally)
     if (scrollRestoreTechnique != null) __obj.updateDynamic("scrollRestoreTechnique")(scrollRestoreTechnique)
     if (scrollThrottle != null) __obj.updateDynamic("scrollThrottle")(scrollThrottle.asInstanceOf[js.Any])
-    if (serveStatic != null) __obj.updateDynamic("serveStatic")(serveStatic.asInstanceOf[js.Any])
+    if (serveStatic != null) __obj.updateDynamic("serveStatic")(serveStatic)
     if (serveStaticOptions != null) __obj.updateDynamic("serveStaticOptions")(serveStaticOptions)
     if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)

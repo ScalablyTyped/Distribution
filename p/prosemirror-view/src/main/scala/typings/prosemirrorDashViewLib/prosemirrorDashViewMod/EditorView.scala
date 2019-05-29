@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("prosemirror-view", "EditorView")
 @js.native
 class EditorView[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] protected () extends js.Object {
-  def this(place: js.Function1[/* p */ stdLib.Node, scala.Unit], props: DirectEditorProps[S]) = this()
   def this(place: js.UndefOr[scala.Nothing], props: DirectEditorProps[S]) = this()
+  def this(place: js.Function1[/* p */ stdLib.Node, scala.Unit], props: DirectEditorProps[S]) = this()
   def this(place: prosemirrorDashViewLib.Anon_Mount, props: DirectEditorProps[S]) = this()
   /**
     * Create a view. `place` may be a DOM node that the editor should

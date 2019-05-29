@@ -135,7 +135,7 @@ trait ParagraphData extends js.Object {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any
   ] = js.undefined
   /**
     *
@@ -173,7 +173,7 @@ object ParagraphData {
     spaceAfter: scala.Int | scala.Double = null,
     spaceBefore: scala.Int | scala.Double = null,
     style: java.lang.String = null,
-    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any = null,
     tableNestingLevel: scala.Int | scala.Double = null,
     text: java.lang.String = null
   ): ParagraphData = {

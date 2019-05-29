@@ -14,7 +14,7 @@ trait IonItemOptionsAttributes
   /**
     * The side the option button should be on. Possible values: `"start"` and `"end"`. If you have multiple `ion-item-options`, a side must be provided for each.
     */
-  var side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.UndefOr[
+  var side: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any
   ] = js.undefined
 }

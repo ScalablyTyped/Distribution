@@ -22,10 +22,12 @@ object schedulerLibNumbers {
   sealed trait `5` extends js.Object
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends schedulerLib.tracingMod._EnableSchedulerTracing
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait `true`
+    extends schedulerLib.tracingMod._EnableSchedulerTracing
   
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]

@@ -62,7 +62,9 @@ package object fetchDashMockMod {
     * Function(url, opts): A function that is passed the url and opts fetch()
     *  is called with and that returns any of the responses listed above
     */
-  type MockResponse = stdLib.Response | js.Promise[stdLib.Response] | scala.Double | js.Promise[scala.Double] | java.lang.String | js.Promise[java.lang.String] | js.Object | js.Promise[js.Object] | MockResponseObject | js.Promise[MockResponseObject]
+  type MockResponse = stdLib.Response | (js.Promise[
+    scala.Double | MockResponseObject | js.Object | stdLib.Response | java.lang.String
+  ]) | scala.Double | java.lang.String | js.Object | MockResponseObject
   /**
     * Mock response function
     */

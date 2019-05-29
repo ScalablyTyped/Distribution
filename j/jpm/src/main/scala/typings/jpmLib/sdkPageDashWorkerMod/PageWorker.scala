@@ -11,9 +11,7 @@ trait PageWorker extends js.Object {
   var contentScript: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
   var contentScriptFile: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
   var contentURL: js.UndefOr[java.lang.String] = js.native
-  var include: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp]
-  ] = js.native
+  var include: js.UndefOr[java.lang.String | (js.Array[stdLib.RegExp | java.lang.String]) | stdLib.RegExp] = js.native
   var port: jpmLib.FFAddonSDKNs.Port = js.native
   def destroy(): scala.Unit = js.native
   def on(

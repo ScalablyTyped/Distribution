@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StyleSheetManagerProps extends js.Object {
-  var sheet: js.UndefOr[scala.Nothing | ServerStyleSheet] = js.undefined
-  var target: js.UndefOr[stdLib.HTMLElement | scala.Nothing] = js.undefined
+  var sheet: js.UndefOr[ServerStyleSheet] = js.undefined
+  var target: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
 object StyleSheetManagerProps {

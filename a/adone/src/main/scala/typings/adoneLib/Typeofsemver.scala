@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 trait Typeofsemver extends js.Object {
   var Comparator: org.scalablytyped.runtime.Instantiable2[
     /* comp */ java.lang.String | adoneLib.adoneNs.semverNs.Comparator, 
-    /* loose */ js.UndefOr[/* loose */ scala.Boolean], 
+    js.UndefOr[/* loose */ scala.Boolean], 
     adoneLib.adoneNs.semverNs.Comparator
   ] = js.native
   val INs: js.Any = js.native
   var Range: org.scalablytyped.runtime.Instantiable2[
     /* range */ java.lang.String | adoneLib.adoneNs.semverNs.Range, 
-    /* loose */ js.UndefOr[/* loose */ scala.Boolean], 
+    js.UndefOr[/* loose */ scala.Boolean], 
     adoneLib.adoneNs.semverNs.Range
   ] = js.native
   val SEMVER_SPEC_VERSION: adoneLib.adoneLibStrings.`2DOT0DOT0` = js.native
   var SemVer: org.scalablytyped.runtime.Instantiable2[
     /* version */ java.lang.String | adoneLib.adoneNs.semverNs.SemVer, 
-    /* loose */ js.UndefOr[/* loose */ scala.Boolean], 
+    js.UndefOr[/* loose */ scala.Boolean], 
     adoneLib.adoneNs.semverNs.SemVer
   ] = js.native
   /**

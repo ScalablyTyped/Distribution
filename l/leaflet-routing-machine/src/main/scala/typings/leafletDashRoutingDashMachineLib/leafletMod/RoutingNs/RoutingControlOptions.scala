@@ -22,7 +22,7 @@ trait RoutingControlOptions extends ItineraryOptions {
   var showAlternatives: js.UndefOr[scala.Boolean] = js.undefined
   var useZoomParameter: js.UndefOr[scala.Boolean] = js.undefined
   var waypointMode: js.UndefOr[java.lang.String] = js.undefined
-  var waypoints: js.UndefOr[js.Array[Waypoint] | js.Array[leafletLib.leafletMod.LatLng]] = js.undefined
+  var waypoints: js.UndefOr[js.Array[leafletLib.leafletMod.LatLng | Waypoint]] = js.undefined
 }
 
 object RoutingControlOptions {
@@ -56,7 +56,7 @@ object RoutingControlOptions {
     totalDistanceRoundingSensitivity: scala.Int | scala.Double = null,
     useZoomParameter: js.UndefOr[scala.Boolean] = js.undefined,
     waypointMode: java.lang.String = null,
-    waypoints: js.Array[Waypoint] | js.Array[leafletLib.leafletMod.LatLng] = null
+    waypoints: js.Array[leafletLib.leafletMod.LatLng | Waypoint] = null
   ): RoutingControlOptions = {
     val __obj = js.Dynamic.literal()
     if (altLineOptions != null) __obj.updateDynamic("altLineOptions")(altLineOptions)
@@ -87,7 +87,7 @@ object RoutingControlOptions {
     if (totalDistanceRoundingSensitivity != null) __obj.updateDynamic("totalDistanceRoundingSensitivity")(totalDistanceRoundingSensitivity.asInstanceOf[js.Any])
     if (!js.isUndefined(useZoomParameter)) __obj.updateDynamic("useZoomParameter")(useZoomParameter)
     if (waypointMode != null) __obj.updateDynamic("waypointMode")(waypointMode)
-    if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints.asInstanceOf[js.Any])
+    if (waypoints != null) __obj.updateDynamic("waypoints")(waypoints)
     __obj.asInstanceOf[RoutingControlOptions]
   }
 }

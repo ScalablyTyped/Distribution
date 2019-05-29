@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "badgen"
-version := "2.6-dt-20190123Z-f5f4e6"
+version := "2.6-dt-20190123Z-379760"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

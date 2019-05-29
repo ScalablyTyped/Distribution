@@ -269,7 +269,7 @@ trait IOptions[T, U] extends js.Object {
     * Default: null
     */
   var plugins: js.UndefOr[
-    js.Array[java.lang.String] | js.Array[IPluginOption] | org.scalablytyped.runtime.StringDictionary[js.Any]
+    (js.Array[IPluginOption | java.lang.String]) | org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.undefined
   /**
     * If true, the "load" function will be called upon control initialization (with an empty search).
@@ -378,7 +378,7 @@ object IOptions {
     options: js.Array[U] = null,
     persist: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String = null,
-    plugins: js.Array[java.lang.String] | js.Array[IPluginOption] | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    plugins: (js.Array[IPluginOption | java.lang.String]) | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     preload: scala.Boolean | selectizeLib.selectizeLibStrings.focus = null,
     render: ICustomRenderers[U] = null,
     score: /* search */ ISearch => js.Function1[/* item */ _, scala.Double] = null,

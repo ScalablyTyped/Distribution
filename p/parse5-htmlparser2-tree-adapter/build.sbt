@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "parse5-htmlparser2-tree-adapter"
-version := "5.0-dt-20180606Z-5859cf"
+version := "5.0-dt-20180606Z-ce0c9b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "parse5" % "5.0-dt-20180611Z-b8837a",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "parse5" % "5.0-dt-20180611Z-1846a4",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

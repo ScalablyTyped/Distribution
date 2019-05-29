@@ -112,7 +112,9 @@ object ^ extends js.Object {
     rrtype: java.lang.String,
     callback: js.Function2[
       nodeLib.NodeJSNs.ErrnoException | (/* err */ stdLib.Error) | scala.Null, 
-      (/* addresses */ js.Array[java.lang.String]) | js.Array[nodeLib.dnsMod.MxRecord] | js.Array[nodeLib.dnsMod.NaptrRecord] | js.Array[nodeLib.dnsMod.SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[nodeLib.dnsMod.AnyRecord] | nodeLib.dnsMod.SoaRecord, 
+      (/* addresses */ js.Array[
+        nodeLib.dnsMod.AnyRecord | js.Array[java.lang.String] | nodeLib.dnsMod.MxRecord | nodeLib.dnsMod.NaptrRecord | nodeLib.dnsMod.SrvRecord | java.lang.String
+      ]) | nodeLib.dnsMod.SoaRecord, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -130,7 +132,7 @@ object ^ extends js.Object {
     options: nodeLib.dnsMod.ResolveOptions,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl], 
+      /* addresses */ js.Array[nodeLib.dnsMod.RecordWithTtl | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -157,7 +159,7 @@ object ^ extends js.Object {
     options: nodeLib.dnsMod.ResolveOptions,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.RecordWithTtl], 
+      /* addresses */ js.Array[nodeLib.dnsMod.RecordWithTtl | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native

@@ -598,21 +598,27 @@ class SObject[T] () extends js.Object {
   def upsertBulk(
     input: java.lang.String,
     callback: jsforceLib.connectionMod.Callback[
-      js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[jsforceLib.batchMod.BatchResultInfo]
+      js.Array[
+        jsforceLib.batchMod.BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult
+      ]
     ]
   ): jsforceLib.batchMod.Batch = js.native
   def upsertBulk(input: js.Array[jsforceLib.recordMod.Record[T]]): jsforceLib.batchMod.Batch = js.native
   def upsertBulk(
     input: js.Array[jsforceLib.recordMod.Record[T]],
     callback: jsforceLib.connectionMod.Callback[
-      js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[jsforceLib.batchMod.BatchResultInfo]
+      js.Array[
+        jsforceLib.batchMod.BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult
+      ]
     ]
   ): jsforceLib.batchMod.Batch = js.native
   def upsertBulk(input: nodeLib.streamMod.Stream): jsforceLib.batchMod.Batch = js.native
   def upsertBulk(
     input: nodeLib.streamMod.Stream,
     callback: jsforceLib.connectionMod.Callback[
-      js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[jsforceLib.batchMod.BatchResultInfo]
+      js.Array[
+        jsforceLib.batchMod.BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult
+      ]
     ]
   ): jsforceLib.batchMod.Batch = js.native
 }

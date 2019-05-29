@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CloudFrontOrigin extends js.Object {
-  var custom: js.UndefOr[CloudFrontCustomOrigin | scala.Nothing] = js.undefined
-  var s3: js.UndefOr[CloudFrontS3Origin | scala.Nothing] = js.undefined
+  var custom: js.UndefOr[CloudFrontCustomOrigin] = js.undefined
+  var s3: js.UndefOr[CloudFrontS3Origin] = js.undefined
 }
 
 object CloudFrontOrigin {

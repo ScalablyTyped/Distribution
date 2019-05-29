@@ -103,6 +103,15 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def text(
+    txt: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
+    cb: js.Function2[
+      /* error */ stdLib.Error | scala.Null, 
+      /* result */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   /**
     * @desc
     * This `unified-signatures` is disabled because `Fonts` type is too long
@@ -111,15 +120,6 @@ object ^ extends js.Object {
   def text(
     txt: java.lang.String,
     options: Options,
-    cb: js.Function2[
-      /* error */ stdLib.Error | scala.Null, 
-      /* result */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def text(
-    txt: java.lang.String,
-    options: js.UndefOr[scala.Nothing],
     cb: js.Function2[
       /* error */ stdLib.Error | scala.Null, 
       /* result */ js.UndefOr[java.lang.String], 

@@ -190,7 +190,7 @@ trait Spreadsheet extends js.Object {
   def sort(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ascending: scala.Boolean): Sheet = js.native
   def toast(msg: java.lang.String): scala.Unit = js.native
   def toast(msg: java.lang.String, title: java.lang.String): scala.Unit = js.native
-  def toast(msg: java.lang.String, title: java.lang.String, timeoutSeconds: stdLib.Number): scala.Unit = js.native
+  def toast(msg: java.lang.String, title: java.lang.String, timeoutSeconds: scala.Double): scala.Unit = js.native
   def unhideColumn(column: Range): scala.Unit = js.native
   def unhideRow(row: Range): scala.Unit = js.native
   def updateMenu(name: java.lang.String, subMenus: js.Array[js.Object]): scala.Unit = js.native

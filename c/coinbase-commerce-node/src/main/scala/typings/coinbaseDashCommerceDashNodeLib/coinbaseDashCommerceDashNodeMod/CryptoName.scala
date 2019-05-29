@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   - coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.ethereum
   - coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.bitcoincash
   - coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.litecoin
+  - coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeLibStrings.usdc
 */
 trait CryptoName extends js.Object
 

@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object SelectorSettingsNs {
-  type Param = ((stdLib.Pick[_Impl, semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.fixed]) | (stdLib.Pick[_Impl, semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.omitted]) | (stdLib.Pick[_Impl, semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.pusher]) | (stdLib.Pick[_Impl, semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.sidebar])) with (stdLib.Partial[
+  type Param = (stdLib.Pick[
+    _Impl, 
+    semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.fixed | semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.omitted | semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.pusher | semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.sidebar
+  ]) with (stdLib.Partial[
     stdLib.Pick[
       _Impl, 
       semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.fixed | semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.omitted | semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.pusher | semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.sidebar

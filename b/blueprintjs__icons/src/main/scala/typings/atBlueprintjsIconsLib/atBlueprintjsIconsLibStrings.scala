@@ -1390,6 +1390,33 @@ object atBlueprintjsIconsLibStrings {
   sealed trait BACKSLASHuE7D5 extends js.Object
   
   @js.native
+  sealed trait BACKSLASHuE7D6 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE7D7 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE7D8 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE7D9 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE7E0 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE7E1 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE7E2 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE7E3 extends js.Object
+  
+  @js.native
+  sealed trait BACKSLASHuE7E4 extends js.Object
+  
+  @js.native
   sealed trait BACKSLASHuE900 extends js.Object
   
   @js.native
@@ -1900,6 +1927,10 @@ object atBlueprintjsIconsLibStrings {
     extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
   
   @js.native
+  sealed trait equals
+    extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
+  
+  @js.native
   sealed trait eraser
     extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
   
@@ -1969,6 +2000,10 @@ object atBlueprintjsIconsLibStrings {
   
   @js.native
   sealed trait `filter-list`
+    extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
+  
+  @js.native
+  sealed trait `filter-open`
     extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
   
   @js.native
@@ -2129,6 +2164,14 @@ object atBlueprintjsIconsLibStrings {
   
   @js.native
   sealed trait `graph-remove`
+    extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
+  
+  @js.native
+  sealed trait `greater-than`
+    extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
+  
+  @js.native
+  sealed trait `greater-than-or-equal-to`
     extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
   
   @js.native
@@ -2416,6 +2459,14 @@ object atBlueprintjsIconsLibStrings {
     extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
   
   @js.native
+  sealed trait `less-than`
+    extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
+  
+  @js.native
+  sealed trait `less-than-or-equal-to`
+    extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
+  
+  @js.native
   sealed trait lifesaver
     extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
   
@@ -2573,6 +2624,10 @@ object atBlueprintjsIconsLibStrings {
   
   @js.native
   sealed trait ninja
+    extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
+  
+  @js.native
+  sealed trait `not-equal-to`
     extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
   
   @js.native
@@ -2773,6 +2828,10 @@ object atBlueprintjsIconsLibStrings {
   
   @js.native
   sealed trait repeat
+    extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
+  
+  @js.native
+  sealed trait reset
     extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
   
   @js.native
@@ -3049,6 +3108,10 @@ object atBlueprintjsIconsLibStrings {
   
   @js.native
   sealed trait `th-derived`
+    extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
+  
+  @js.native
+  sealed trait `th-disconnect`
     extends atBlueprintjsIconsLib.libEsmIconNameMod.IconName
   
   @js.native
@@ -4170,6 +4233,24 @@ object atBlueprintjsIconsLibStrings {
   @scala.inline
   def BACKSLASHuE7D5: BACKSLASHuE7D5 = "\uE7D5".asInstanceOf[BACKSLASHuE7D5]
   @scala.inline
+  def BACKSLASHuE7D6: BACKSLASHuE7D6 = "\uE7D6".asInstanceOf[BACKSLASHuE7D6]
+  @scala.inline
+  def BACKSLASHuE7D7: BACKSLASHuE7D7 = "\uE7D7".asInstanceOf[BACKSLASHuE7D7]
+  @scala.inline
+  def BACKSLASHuE7D8: BACKSLASHuE7D8 = "\uE7D8".asInstanceOf[BACKSLASHuE7D8]
+  @scala.inline
+  def BACKSLASHuE7D9: BACKSLASHuE7D9 = "\uE7D9".asInstanceOf[BACKSLASHuE7D9]
+  @scala.inline
+  def BACKSLASHuE7E0: BACKSLASHuE7E0 = "\uE7E0".asInstanceOf[BACKSLASHuE7E0]
+  @scala.inline
+  def BACKSLASHuE7E1: BACKSLASHuE7E1 = "\uE7E1".asInstanceOf[BACKSLASHuE7E1]
+  @scala.inline
+  def BACKSLASHuE7E2: BACKSLASHuE7E2 = "\uE7E2".asInstanceOf[BACKSLASHuE7E2]
+  @scala.inline
+  def BACKSLASHuE7E3: BACKSLASHuE7E3 = "\uE7E3".asInstanceOf[BACKSLASHuE7E3]
+  @scala.inline
+  def BACKSLASHuE7E4: BACKSLASHuE7E4 = "\uE7E4".asInstanceOf[BACKSLASHuE7E4]
+  @scala.inline
   def BACKSLASHuE900: BACKSLASHuE900 = "\uE900".asInstanceOf[BACKSLASHuE900]
   @scala.inline
   def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
@@ -4426,6 +4507,8 @@ object atBlueprintjsIconsLibStrings {
   @scala.inline
   def envelope: envelope = "envelope".asInstanceOf[envelope]
   @scala.inline
+  def equals: equals = "equals".asInstanceOf[equals]
+  @scala.inline
   def eraser: eraser = "eraser".asInstanceOf[eraser]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
@@ -4461,6 +4544,8 @@ object atBlueprintjsIconsLibStrings {
   def `filter-keep`: `filter-keep` = "filter-keep".asInstanceOf[`filter-keep`]
   @scala.inline
   def `filter-list`: `filter-list` = "filter-list".asInstanceOf[`filter-list`]
+  @scala.inline
+  def `filter-open`: `filter-open` = "filter-open".asInstanceOf[`filter-open`]
   @scala.inline
   def `filter-remove`: `filter-remove` = "filter-remove".asInstanceOf[`filter-remove`]
   @scala.inline
@@ -4541,6 +4626,10 @@ object atBlueprintjsIconsLibStrings {
   def graph: graph = "graph".asInstanceOf[graph]
   @scala.inline
   def `graph-remove`: `graph-remove` = "graph-remove".asInstanceOf[`graph-remove`]
+  @scala.inline
+  def `greater-than`: `greater-than` = "greater-than".asInstanceOf[`greater-than`]
+  @scala.inline
+  def `greater-than-or-equal-to`: `greater-than-or-equal-to` = "greater-than-or-equal-to".asInstanceOf[`greater-than-or-equal-to`]
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   @scala.inline
@@ -4684,6 +4773,10 @@ object atBlueprintjsIconsLibStrings {
   @scala.inline
   def `left-join`: `left-join` = "left-join".asInstanceOf[`left-join`]
   @scala.inline
+  def `less-than`: `less-than` = "less-than".asInstanceOf[`less-than`]
+  @scala.inline
+  def `less-than-or-equal-to`: `less-than-or-equal-to` = "less-than-or-equal-to".asInstanceOf[`less-than-or-equal-to`]
+  @scala.inline
   def lifesaver: lifesaver = "lifesaver".asInstanceOf[lifesaver]
   @scala.inline
   def lightbulb: lightbulb = "lightbulb".asInstanceOf[lightbulb]
@@ -4763,6 +4856,8 @@ object atBlueprintjsIconsLibStrings {
   def `new-text-box`: `new-text-box` = "new-text-box".asInstanceOf[`new-text-box`]
   @scala.inline
   def ninja: ninja = "ninja".asInstanceOf[ninja]
+  @scala.inline
+  def `not-equal-to`: `not-equal-to` = "not-equal-to".asInstanceOf[`not-equal-to`]
   @scala.inline
   def notifications: notifications = "notifications".asInstanceOf[notifications]
   @scala.inline
@@ -4863,6 +4958,8 @@ object atBlueprintjsIconsLibStrings {
   def `remove-row-top`: `remove-row-top` = "remove-row-top".asInstanceOf[`remove-row-top`]
   @scala.inline
   def repeat: repeat = "repeat".asInstanceOf[repeat]
+  @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def resolve: resolve = "resolve".asInstanceOf[resolve]
   @scala.inline
@@ -5001,6 +5098,8 @@ object atBlueprintjsIconsLibStrings {
   def th: th = "th".asInstanceOf[th]
   @scala.inline
   def `th-derived`: `th-derived` = "th-derived".asInstanceOf[`th-derived`]
+  @scala.inline
+  def `th-disconnect`: `th-disconnect` = "th-disconnect".asInstanceOf[`th-disconnect`]
   @scala.inline
   def `th-filtered`: `th-filtered` = "th-filtered".asInstanceOf[`th-filtered`]
   @scala.inline

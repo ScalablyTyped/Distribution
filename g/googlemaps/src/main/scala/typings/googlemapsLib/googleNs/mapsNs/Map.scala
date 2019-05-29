@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/***** Map *****/
 @JSGlobal("google.maps.Map")
 @js.native
 class Map () extends MVCObject {

@@ -175,7 +175,7 @@ trait PublicApi extends js.Object {
     */
   def svgSet(
     id: java.lang.String,
-    urlConfig: webiconLib.webUrlConfigMod.UrlConfig[js.Array[java.lang.String] | js.UndefOr[scala.Nothing]]
+    urlConfig: webiconLib.webUrlConfigMod.UrlConfig[js.UndefOr[js.Array[java.lang.String]]]
   ): this.type = js.native
   def svgSet(
     id: java.lang.String,

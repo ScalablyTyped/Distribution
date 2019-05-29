@@ -46,7 +46,7 @@ package object typescriptMod {
   type ColonToken = Token[SyntaxKind]
   type CommentKind = SyntaxKind
   type CompilerOptionsValue = js.UndefOr[
-    java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double]) | js.Array[java.lang.String] | MapLike[js.Array[java.lang.String]] | js.Array[PluginImport] | js.Array[ProjectReference] | scala.Null
+    java.lang.String | scala.Double | scala.Boolean | (js.Array[scala.Double | PluginImport | ProjectReference | java.lang.String]) | MapLike[js.Array[java.lang.String]] | scala.Null
   ]
   type CompoundAssignmentOperator = SyntaxKind
   type ConciseBody = FunctionBody | Expression

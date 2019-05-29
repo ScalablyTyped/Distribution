@@ -15,9 +15,7 @@ trait IPartialTheme extends js.Object {
   var fonts: js.UndefOr[stdLib.Partial[atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles]] = js.undefined
   var isInverted: js.UndefOr[scala.Boolean] = js.undefined
   var palette: js.UndefOr[stdLib.Partial[atUifabricStylingLib.libInterfacesIPaletteMod.IPalette]] = js.undefined
-  var schemes: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.ISchemeNames ]:? @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.IScheme}
-    */ js.UndefOr[
+  var schemes: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.ISchemeNames ]:? @uifabric/styling.@uifabric/styling/lib/interfaces/ITheme.IScheme}
     */ atUifabricStylingLib.atUifabricStylingLibStrings.IPartialTheme with js.Any

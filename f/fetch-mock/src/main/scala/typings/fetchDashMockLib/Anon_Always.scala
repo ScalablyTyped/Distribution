@@ -32,7 +32,7 @@ trait Anon_Always extends js.Object {
   var Request: js.UndefOr[
     org.scalablytyped.runtime.Instantiable2[
       /* input */ java.lang.String | stdLib.Request, 
-      /* init */ js.UndefOr[/* init */ stdLib.RequestInit], 
+      js.UndefOr[/* init */ stdLib.RequestInit], 
       stdLib.Request
     ]
   ] = js.undefined
@@ -103,7 +103,7 @@ object Anon_Always {
     ] = null,
     Request: org.scalablytyped.runtime.Instantiable2[
       /* input */ java.lang.String | stdLib.Request, 
-      /* init */ js.UndefOr[/* init */ stdLib.RequestInit], 
+      js.UndefOr[/* init */ stdLib.RequestInit], 
       stdLib.Request
     ] = null,
     Response: org.scalablytyped.runtime.Instantiable0[stdLib.Response] = null,

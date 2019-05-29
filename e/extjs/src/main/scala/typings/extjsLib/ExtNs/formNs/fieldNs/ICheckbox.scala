@@ -40,6 +40,9 @@ trait ICheckbox extends IBase {
   var getValue_ICheckbox: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
   /** [Config Option] (Function) */
   var handler: js.UndefOr[js.Any] = js.undefined
+  /** [Method] Initializes the field s value based on the initial config  */
+  @JSName("initValue")
+  var initValue_ICheckbox: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (String) */
   var inputValue: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Resets the field s originalValue property so it matches the current value

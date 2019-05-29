@@ -94,7 +94,7 @@ trait AppointmentForm extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var optionalAttendees: js.Array[java.lang.String] | js.Array[EmailAddressDetails]
+  var optionalAttendees: js.Array[EmailAddressDetails | java.lang.String]
   /**
     * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
     *
@@ -114,7 +114,7 @@ trait AppointmentForm extends js.Object {
     * 
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
     */
-  var requiredAttendees: js.Array[java.lang.String] | js.Array[EmailAddressDetails]
+  var requiredAttendees: js.Array[EmailAddressDetails | java.lang.String]
   /**
     * Provides access to the resources of an event. Returns an array of strings containing the resources required for the appointment.
     *
@@ -183,13 +183,13 @@ object AppointmentForm {
     body: java.lang.String,
     end: stdLib.Date,
     location: java.lang.String,
-    optionalAttendees: js.Array[java.lang.String] | js.Array[EmailAddressDetails],
-    requiredAttendees: js.Array[java.lang.String] | js.Array[EmailAddressDetails],
+    optionalAttendees: js.Array[EmailAddressDetails | java.lang.String],
+    requiredAttendees: js.Array[EmailAddressDetails | java.lang.String],
     resources: js.Array[java.lang.String],
     start: stdLib.Date,
     subject: java.lang.String
   ): AppointmentForm = {
-    val __obj = js.Dynamic.literal(body = body, end = end, location = location, optionalAttendees = optionalAttendees.asInstanceOf[js.Any], requiredAttendees = requiredAttendees.asInstanceOf[js.Any], resources = resources, start = start, subject = subject)
+    val __obj = js.Dynamic.literal(body = body, end = end, location = location, optionalAttendees = optionalAttendees, requiredAttendees = requiredAttendees, resources = resources, start = start, subject = subject)
   
     __obj.asInstanceOf[AppointmentForm]
   }

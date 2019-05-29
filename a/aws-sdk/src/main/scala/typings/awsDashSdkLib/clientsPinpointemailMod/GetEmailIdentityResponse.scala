@@ -23,6 +23,10 @@ trait GetEmailIdentityResponse extends js.Object {
     */
   var MailFromAttributes: js.UndefOr[MailFromAttributes] = js.undefined
   /**
+    * An array of objects that define the tags (keys and values) that are associated with the email identity.
+    */
+  var Tags: js.UndefOr[TagList] = js.undefined
+  /**
     * Specifies whether or not the identity is verified. In Amazon Pinpoint, you can only send email from verified email addresses or domains. For more information about verifying identities, see the Amazon Pinpoint User Guide.
     */
   var VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
@@ -35,6 +39,7 @@ object GetEmailIdentityResponse {
     FeedbackForwardingStatus: js.UndefOr[Enabled] = js.undefined,
     IdentityType: IdentityType = null,
     MailFromAttributes: MailFromAttributes = null,
+    Tags: TagList = null,
     VerifiedForSendingStatus: js.UndefOr[Enabled] = js.undefined
   ): GetEmailIdentityResponse = {
     val __obj = js.Dynamic.literal()
@@ -42,6 +47,7 @@ object GetEmailIdentityResponse {
     if (!js.isUndefined(FeedbackForwardingStatus)) __obj.updateDynamic("FeedbackForwardingStatus")(FeedbackForwardingStatus)
     if (IdentityType != null) __obj.updateDynamic("IdentityType")(IdentityType.asInstanceOf[js.Any])
     if (MailFromAttributes != null) __obj.updateDynamic("MailFromAttributes")(MailFromAttributes)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
     if (!js.isUndefined(VerifiedForSendingStatus)) __obj.updateDynamic("VerifiedForSendingStatus")(VerifiedForSendingStatus)
     __obj.asInstanceOf[GetEmailIdentityResponse]
   }

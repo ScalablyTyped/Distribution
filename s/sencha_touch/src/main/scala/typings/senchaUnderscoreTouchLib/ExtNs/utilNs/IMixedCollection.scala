@@ -26,10 +26,10 @@ import scala.scalajs.js.annotation._
   		*/
   var sort: js.UndefOr[
     js.Function4[
-      /* sorters */ js.UndefOr[js.Any], 
-      /* direction */ js.UndefOr[java.lang.String], 
-      /* where */ js.UndefOr[java.lang.String], 
-      /* doSort */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[java.lang.String], 
+      js.UndefOr[java.lang.String], 
+      js.UndefOr[scala.Boolean], 
       senchaUnderscoreTouchLib.ExtNs.Array
     ]
   ] = js.undefined

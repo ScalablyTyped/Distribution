@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Note SODA support in node-oracledb is in Preview status and should not be used in production.
-  * It will be supported with a future version of Oracle Client libraries.
-  *
   * SodaDocuments represents the document for SODA read and write operations.
   */
 trait SodaDocument extends js.Object {

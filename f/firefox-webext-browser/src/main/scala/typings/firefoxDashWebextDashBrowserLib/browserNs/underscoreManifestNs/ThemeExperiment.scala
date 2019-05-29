@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ThemeExperiment extends js.Object {
-  var colors: js.UndefOr[java.lang.String] = js.undefined
-  var images: js.UndefOr[java.lang.String] = js.undefined
-  var properties: js.UndefOr[java.lang.String] = js.undefined
+  var colors: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var images: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var stylesheet: js.UndefOr[ExtensionURL] = js.undefined
 }
 
 object ThemeExperiment {
   @scala.inline
   def apply(
-    colors: java.lang.String = null,
-    images: java.lang.String = null,
-    properties: java.lang.String = null,
+    colors: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    images: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     stylesheet: ExtensionURL = null
   ): ThemeExperiment = {
     val __obj = js.Dynamic.literal()

@@ -15,7 +15,7 @@ class CredentialProviderChain () extends js.Object {
   /**
     * Returns a list of credentials objects or functions that return credentials objects. If the provider is a function, the function will be executed lazily when the provider needs to be checked for valid credentials. By default, this object will be set to the defaultProviders.
     */
-  var providers: js.Array[awsDashSdkLib.libCredentialsMod.Credentials] | js.Array[provider] = js.native
+  var providers: js.Array[awsDashSdkLib.libCredentialsMod.Credentials | provider] = js.native
   /**
     * Resolves the provider chain by searching for the first set of credentials in providers.
     */

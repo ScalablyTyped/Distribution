@@ -18,7 +18,14 @@ package object distInterfacesMod {
     /* trigger */ js.UndefOr[stdLib.Event], 
     scala.Unit
   ]
-  type VNodeChild = js.UndefOr[
-    java.lang.String | VNode | VNodeChildren | maquetteLib.maquetteLibNumbers.`false` | scala.Null
-  ]
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - VNode
+    - VNodeChildren
+    - maquetteLib.maquetteLibNumbers.`false`
+    - scala.Null
+    - `js.undefined`
+    - scala.Nothing
+  */
+  type VNodeChild = js.UndefOr[_VNodeChild | java.lang.String | scala.Null]
 }

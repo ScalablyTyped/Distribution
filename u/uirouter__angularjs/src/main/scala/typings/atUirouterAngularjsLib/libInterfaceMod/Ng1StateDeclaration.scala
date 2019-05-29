@@ -272,10 +272,7 @@ object Ng1StateDeclaration {
     parent: java.lang.String | atUirouterCoreLib.libStateInterfaceMod.StateDeclaration = null,
     redirectTo: atUirouterCoreLib.libStateInterfaceMod.RedirectToResult | (js.Function1[
       /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
-      atUirouterCoreLib.libStateInterfaceMod.RedirectToResult
-    ]) | (js.Function1[
-      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
-      js.Promise[atUirouterCoreLib.libStateInterfaceMod.RedirectToResult]
+      js.Promise[atUirouterCoreLib.libStateInterfaceMod.RedirectToResult] | atUirouterCoreLib.libStateInterfaceMod.RedirectToResult
     ]) = null,
     reloadOnSearch: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: js.Array[atUirouterCoreLib.libStateInterfaceMod.ResolveTypes] | org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libCommonCommonMod.IInjectable] = null,

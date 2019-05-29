@@ -8,6 +8,23 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageserver-types", "DocumentSymbol")
 @js.native
 object DocumentSymbolNs extends js.Object {
+  def create(
+    name: java.lang.String,
+    detail: js.UndefOr[scala.Nothing],
+    kind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind,
+    range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
+    selectionRange: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range
+  ): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentSymbol = js.native
+  def create(
+    name: java.lang.String,
+    detail: js.UndefOr[scala.Nothing],
+    kind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind,
+    range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
+    selectionRange: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
+    children: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentSymbol
+    ]
+  ): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentSymbol = js.native
   /**
     * Creates a new symbol information literal.
     *
@@ -28,23 +45,6 @@ object DocumentSymbolNs extends js.Object {
   def create(
     name: java.lang.String,
     detail: java.lang.String,
-    kind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind,
-    range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
-    selectionRange: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
-    children: js.Array[
-      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentSymbol
-    ]
-  ): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentSymbol = js.native
-  def create(
-    name: java.lang.String,
-    detail: js.UndefOr[scala.Nothing],
-    kind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind,
-    range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
-    selectionRange: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range
-  ): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentSymbol = js.native
-  def create(
-    name: java.lang.String,
-    detail: js.UndefOr[scala.Nothing],
     kind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind,
     range: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,
     selectionRange: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range,

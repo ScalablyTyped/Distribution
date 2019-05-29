@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Options for the rendering of the Street View pegman control on the map. */
 trait StreetViewControlOptions extends js.Object {
   /**
     * Position id. Used to specify the position of the control on the map. The

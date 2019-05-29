@@ -50,7 +50,7 @@ object ICopyCellsMenuItemProps {
     onCopy: /* success */ scala.Boolean => scala.Unit = null,
     popoverProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = null,
     shouldDismissPopover: js.UndefOr[scala.Boolean] = js.undefined,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
     target: java.lang.String = null,
     text: reactLib.reactMod.ReactNode = null,
     textClassName: java.lang.String = null

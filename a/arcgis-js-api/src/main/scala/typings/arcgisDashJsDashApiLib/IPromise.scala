@@ -21,13 +21,13 @@ trait IPromise[T] extends js.Object {
   def otherwise[TResult](): IPromise[T | TResult] = js.native
   def otherwise[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | IPromiseLike[TResult]]): IPromise[T | TResult] = js.native
   def `then`[TResult1, TResult2](): IPromise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | IPromiseLike[TResult2]]
+  ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | IPromiseLike[TResult1]]): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ T, TResult1 | IPromiseLike[TResult1]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | IPromiseLike[TResult2]]
-  ): IPromise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    onfulfilled: js.UndefOr[scala.Nothing],
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | IPromiseLike[TResult2]]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](

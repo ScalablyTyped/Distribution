@@ -14,8 +14,8 @@ class default () extends Menu
 @js.native
 object default extends js.Object {
   var Divider: js.Any = js.native
-  var Item: antdLib.Anon_IsMenuItemBoolean = js.native
+  var Item: antdLib.TypeofClassItemIsMenuItemBoolean = js.native
   var ItemGroup: js.Any = js.native
-  var SubMenu: antdLib.Anon_ContextTypesIsSubMenuAnonAntdMenuTheme = js.native
+  var SubMenu: antdLib.TypeofClassSubMenuContextTypes = js.native
 }
 

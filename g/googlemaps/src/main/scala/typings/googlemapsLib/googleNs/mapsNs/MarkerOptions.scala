@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * `MarkerOptions` object used to define the properties that can be set on a
+  * {@link Marker}.
+  * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#MarkerOptions Maps JavaScript API}
+  */
 trait MarkerOptions extends js.Object {
   /**
     * The offset from the marker's position to the tip of an InfoWindow that

@@ -24,7 +24,7 @@ object RequestRetryOptions {
     aws: requestLib.requestMod.AWSOptions = null,
     baseUrl: java.lang.String = null,
     body: js.Any = null,
-    ca: java.lang.String | nodeLib.Buffer | js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = null,
+    ca: java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | java.lang.String]) = null,
     callback: requestLib.requestMod.RequestCallback = null,
     cert: nodeLib.Buffer = null,
     encoding: java.lang.String = null,

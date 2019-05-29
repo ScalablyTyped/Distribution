@@ -9,7 +9,7 @@ trait Anon_0110 extends js.Object {
   var disableHeader: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`
   var estimatedRowSize: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`30`
   var headerHeight: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`
-  var headerRowRenderer: reactDashVirtualizedLib.distEsTableMod.TableHeaderRenderer
+  var headerRowRenderer: reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer
   var overscanRowCount: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`10`
   var rowRenderer: reactDashVirtualizedLib.distEsTableMod.TableRowRenderer
   var scrollToAlignment: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.auto
@@ -25,7 +25,7 @@ object Anon_0110 {
     disableHeader: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`,
     estimatedRowSize: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`30`,
     headerHeight: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`,
-    headerRowRenderer: reactDashVirtualizedLib.distEsTableMod.TableHeaderRenderer,
+    headerRowRenderer: reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer,
     noRowsRenderer: () => scala.Null,
     onRowsRendered: () => scala.Null,
     onScroll: () => scala.Null,

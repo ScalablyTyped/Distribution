@@ -26,7 +26,13 @@ trait LodashFindLastFrom extends js.Object {
     fromIndex: lodashLib.lodashMod.__,
     collection: lodashLib.lodashMod.List[T]
   ): LodashFindLastFrom2x5[T] = js.native
-  def apply[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean], fromIndex: scala.Double): js.UndefOr[T] = js.native
+  def apply[T /* <: js.Object */](
+    predicate: lodashLib.lodashMod.ValueIterateeCustom[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      scala.Boolean
+    ],
+    fromIndex: scala.Double
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def apply[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.ValueIterateeCustom[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
@@ -79,7 +85,7 @@ trait LodashFindLastFrom extends js.Object {
     fromIndex: lodashLib.lodashMod.__,
     collection: lodashLib.lodashMod.List[T]
   ): LodashFindLastFrom1x5[S] = js.native
-  def apply[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): LodashFindLastFrom1x3[T, S] = js.native
+  def apply[T, S /* <: T */](predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): js.UndefOr[S] = js.native
   def apply[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.ValueIteratorTypeGuard[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 

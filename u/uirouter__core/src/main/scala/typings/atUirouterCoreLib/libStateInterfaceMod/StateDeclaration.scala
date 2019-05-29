@@ -367,10 +367,7 @@ trait StateDeclaration
   var redirectTo: js.UndefOr[
     RedirectToResult | (js.Function1[
       /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
-      RedirectToResult
-    ]) | (js.Function1[
-      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
-      js.Promise[RedirectToResult]
+      js.Promise[RedirectToResult] | RedirectToResult
     ])
   ] = js.undefined
   /**
@@ -608,10 +605,7 @@ object StateDeclaration {
     parent: java.lang.String | StateDeclaration = null,
     redirectTo: RedirectToResult | (js.Function1[
       /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
-      RedirectToResult
-    ]) | (js.Function1[
-      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
-      js.Promise[RedirectToResult]
+      js.Promise[RedirectToResult] | RedirectToResult
     ]) = null,
     reloadOnSearch: js.UndefOr[scala.Boolean] = js.undefined,
     resolve: js.Array[ResolveTypes] | org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libCommonCommonMod.IInjectable] = null,

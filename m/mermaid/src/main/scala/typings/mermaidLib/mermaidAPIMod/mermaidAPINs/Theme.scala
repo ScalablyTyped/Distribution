@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   - mermaidLib.mermaidLibStrings.default
   - mermaidLib.mermaidLibStrings.forest
   - mermaidLib.mermaidLibStrings.dark
-  - mermaidLib.mermaidLibStrings.netural
+  - mermaidLib.mermaidLibStrings.neutral
 */
 trait Theme extends js.Object
 

@@ -50,7 +50,7 @@ trait TooltipOptions extends SeriesTooltipOptions {
     * @default null
     */
   var crosshairs: js.UndefOr[
-    scala.Boolean | (js.Tuple2[scala.Boolean, scala.Boolean]) | CrosshairObject | (js.Tuple2[CrosshairObject, CrosshairObject]) | scala.Null
+    scala.Boolean | (js.Tuple2[scala.Boolean | CrosshairObject, scala.Boolean | CrosshairObject]) | CrosshairObject | scala.Null
   ] = js.undefined
   /**
     * Enable or disable the tooltip.
@@ -175,7 +175,7 @@ object TooltipOptions {
     borderColor: java.lang.String | Gradient = null,
     borderRadius: scala.Int | scala.Double = null,
     borderWidth: scala.Int | scala.Double = null,
-    crosshairs: scala.Boolean | (js.Tuple2[scala.Boolean, scala.Boolean]) | CrosshairObject | (js.Tuple2[CrosshairObject, CrosshairObject]) = null,
+    crosshairs: scala.Boolean | (js.Tuple2[scala.Boolean | CrosshairObject, scala.Boolean | CrosshairObject]) | CrosshairObject = null,
     dateTimeLabelFormats: DateTimeFormats = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     followPointer: js.UndefOr[scala.Boolean] = js.undefined,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "touch-events"
-version := "0.0-unknown-dt-20190322Z-1dab4b"
+version := "0.0-unknown-dt-20190322Z-c0d571"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

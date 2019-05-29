@@ -24,7 +24,7 @@ trait Condition[T, P /* <: java.lang.String */]
   @JSName("$elemMatch")
   var $elemMatch: js.UndefOr[js.Object] = js.undefined
   @JSName("$eq")
-  var $eq: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
+  var $eq: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$expr")
   var $expr: js.UndefOr[js.Any] = js.undefined
   @JSName("$geoIntersects")
@@ -32,9 +32,9 @@ trait Condition[T, P /* <: java.lang.String */]
   @JSName("$geoWithin")
   var $geoWithin: js.UndefOr[js.Object] = js.undefined
   @JSName("$gt")
-  var $gt: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
+  var $gt: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$gte")
-  var $gte: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
+  var $gte: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$in")
   var $in: js.UndefOr[
     js.Array[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]
@@ -42,13 +42,13 @@ trait Condition[T, P /* <: java.lang.String */]
   @JSName("$jsonSchema")
   var $jsonSchema: js.UndefOr[js.Any] = js.undefined
   @JSName("$lt")
-  var $lt: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
+  var $lt: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$lte")
-  var $lte: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
+  var $lte: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$mod")
   var $mod: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   @JSName("$ne")
-  var $ne: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
+  var $ne: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$near")
   var $near: js.UndefOr[js.Object] = js.undefined
   @JSName("$nearSphere")

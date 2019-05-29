@@ -227,7 +227,9 @@ trait SeriesPie extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data
     */
   var data: js.UndefOr[
-    js.Array[scala.Double] | js.Array[js.Array[scala.Double]] | js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesPieNs.DataObject]
+    js.Array[
+      js.Array[scala.Double] | echartsLib.echartsNs.EChartOptionNs.SeriesPieNs.DataObject | scala.Double
+    ]
   ] = js.undefined
   /**
     * If
@@ -533,7 +535,9 @@ object SeriesPie {
     center: js.Array[_] = null,
     clockwise: js.UndefOr[scala.Boolean] = js.undefined,
     cursor: java.lang.String = null,
-    data: js.Array[scala.Double] | js.Array[js.Array[scala.Double]] | js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesPieNs.DataObject] = null,
+    data: js.Array[
+      js.Array[scala.Double] | echartsLib.echartsNs.EChartOptionNs.SeriesPieNs.DataObject | scala.Double
+    ] = null,
     datasetIndex: scala.Int | scala.Double = null,
     emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSize = null,
     hoverAnimation: js.UndefOr[scala.Boolean] = js.undefined,
@@ -575,7 +579,7 @@ object SeriesPie {
     if (center != null) __obj.updateDynamic("center")(center)
     if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
     if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation)

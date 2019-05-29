@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vega-schema-url-parser"
-version := "1.1.0-0b350f"
+version := "1.1.0-528712"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

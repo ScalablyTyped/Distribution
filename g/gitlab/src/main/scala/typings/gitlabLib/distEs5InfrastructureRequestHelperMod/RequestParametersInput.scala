@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RequestParametersInput extends js.Object {
   var body: js.UndefOr[js.Object] = js.undefined
-  var formData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.UndefOr[
+  var formData: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify temporaryAny */ js.Any
   ] = js.undefined
   var headers: /* import warning: ImportType.apply Failed type conversion: any['headers'] */ js.Any

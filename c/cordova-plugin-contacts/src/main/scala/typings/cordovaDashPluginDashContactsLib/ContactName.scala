@@ -33,12 +33,12 @@ class ContactNameCls protected () extends ContactName {
 object ContactName
   extends /** Constructor for ContactName object */
 org.scalablytyped.runtime.Instantiable6[
-      /* formatted */ js.UndefOr[/* formatted */ java.lang.String], 
-      /* familyName */ js.UndefOr[/* familyName */ java.lang.String], 
-      /* givenName */ js.UndefOr[/* givenName */ java.lang.String], 
-      /* middleName */ js.UndefOr[/* middleName */ java.lang.String], 
-      /* honorificPrefix */ js.UndefOr[/* honorificPrefix */ java.lang.String], 
-      /* honorificSuffix */ js.UndefOr[/* honorificSuffix */ java.lang.String], 
+      js.UndefOr[/* formatted */ java.lang.String], 
+      js.UndefOr[/* familyName */ java.lang.String], 
+      js.UndefOr[/* givenName */ java.lang.String], 
+      js.UndefOr[/* middleName */ java.lang.String], 
+      js.UndefOr[/* honorificPrefix */ java.lang.String], 
+      js.UndefOr[/* honorificSuffix */ java.lang.String], 
       ContactName
     ]
 

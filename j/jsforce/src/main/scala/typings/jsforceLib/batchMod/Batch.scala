@@ -17,7 +17,7 @@ class Batch ()
     input: java.lang.String,
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo], 
+      /* result */ js.Array[BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
   ): Batch = js.native
@@ -26,7 +26,7 @@ class Batch ()
     input: js.Array[jsforceLib.recordMod.Record[_]],
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo], 
+      /* result */ js.Array[BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
   ): Batch = js.native
@@ -35,17 +35,13 @@ class Batch ()
     input: nodeLib.streamMod.Stream,
     callback: js.Function2[
       /* err */ stdLib.Error, 
-      /* result */ js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo], 
+      /* result */ js.Array[BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult], 
       scala.Unit
     ]
   ): Batch = js.native
   def poll(interval: scala.Double, timeout: scala.Double): scala.Unit = js.native
-  def retrieve(): js.Promise[
-    js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo]
-  ] = js.native
-  def retrieve(callback: js.Function1[/* batchInfo */ BatchInfo, scala.Unit]): js.Promise[
-    js.Array[jsforceLib.recordDashResultMod.RecordResult] | js.Array[BatchResultInfo]
-  ] = js.native
+  def retrieve(): js.Promise[js.Array[BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult]] = js.native
+  def retrieve(callback: js.Function1[/* batchInfo */ BatchInfo, scala.Unit]): js.Promise[js.Array[BatchResultInfo | jsforceLib.recordDashResultMod.RecordResult]] = js.native
   def `then`(): js.Promise[_] = js.native
   def thenAll(callback: js.Function1[/* data */ js.Any, scala.Unit]): scala.Unit = js.native
 }

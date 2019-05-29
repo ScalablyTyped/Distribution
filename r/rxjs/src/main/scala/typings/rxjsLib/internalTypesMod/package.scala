@@ -16,13 +16,7 @@ package object internalTypesMod {
     rxjsLib.internalObservableMod.Observable[T], 
     rxjsLib.internalObservableMod.Observable[R]
   ]
-  /* Rewritten from type alias, can be one of: 
-    - Subscribable[T]
-    - Subscribable[scala.Nothing]
-    - js.Thenable[T]
-    - InteropObservable[T]
-  */
-  type SubscribableOrPromise[T] = _SubscribableOrPromise[T] | Subscribable[scala.Nothing] | js.Thenable[T]
+  type SubscribableOrPromise[T] = (Subscribable[scala.Nothing | T]) | js.Thenable[T] | InteropObservable[T]
   type TeardownLogic = Unsubscribable | js.Function | scala.Unit
   type UnaryFunction[T, R] = js.Function1[/* source */ T, R]
 }

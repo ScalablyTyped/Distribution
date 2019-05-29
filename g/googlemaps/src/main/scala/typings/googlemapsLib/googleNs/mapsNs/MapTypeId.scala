@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait MapTypeId extends js.Object
 
+/**
+  * Identifiers for common MapTypes. Specify these by value, or by using the
+  * constant's name. For example, 'satellite' or
+  * google.maps.MapTypeId.SATELLITE.
+  */
 @JSGlobal("google.maps.MapTypeId")
 @js.native
 object MapTypeId extends js.Object {

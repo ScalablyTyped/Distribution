@@ -66,7 +66,7 @@ class Object () extends BaseObject {
   def fetchWithInclude(keys: java.lang.String, options: RequestOptions): js.Promise[this.type] = js.native
   def fetchWithInclude(keys: js.Array[java.lang.String | js.Array[java.lang.String]]): js.Promise[this.type] = js.native
   def fetchWithInclude(keys: js.Array[java.lang.String | js.Array[java.lang.String]], options: RequestOptions): js.Promise[this.type] = js.native
-  def get(attr: java.lang.String): js.UndefOr[_] = js.native
+  def get(attr: java.lang.String): js.UndefOr[js.Any] = js.native
   def getACL(): js.UndefOr[ACL] = js.native
   def has(attr: java.lang.String): scala.Boolean = js.native
   def hasChanged(attr: java.lang.String): scala.Boolean = js.native
@@ -137,7 +137,7 @@ object Object extends js.Object {
   def pinAllWithName(name: java.lang.String, objects: js.Array[parseLib.ParseNs.Object]): js.Promise[scala.Unit] = js.native
   def registerSubclass[T /* <: parseLib.ParseNs.Object */](
     className: java.lang.String,
-    clazz: org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], T]
+    clazz: org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* options */ js.Any], T]
   ): scala.Unit = js.native
   def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
   def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.SaveAllOptions): js.Promise[js.Array[T]] = js.native

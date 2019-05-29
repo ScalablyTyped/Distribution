@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inversify-inject-decorators"
-version := "3.1.0-6df4ed"
+version := "3.1.0-b874ba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

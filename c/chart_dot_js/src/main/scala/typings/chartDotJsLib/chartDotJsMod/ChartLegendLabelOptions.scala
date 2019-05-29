@@ -12,7 +12,7 @@ trait ChartLegendLabelOptions extends js.Object {
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined
   var fontSize: js.UndefOr[scala.Double] = js.undefined
   var fontStyle: js.UndefOr[java.lang.String] = js.undefined
-  var generateLabels: js.UndefOr[js.Function1[/* chart */ js.Any, _]] = js.undefined
+  var generateLabels: js.UndefOr[js.Function1[/* chart */ Chart, js.Array[ChartLegendLabelItem]]] = js.undefined
   var padding: js.UndefOr[scala.Double] = js.undefined
   var usePointStyle: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -26,7 +26,7 @@ object ChartLegendLabelOptions {
     fontFamily: java.lang.String = null,
     fontSize: scala.Int | scala.Double = null,
     fontStyle: java.lang.String = null,
-    generateLabels: /* chart */ js.Any => _ = null,
+    generateLabels: /* chart */ Chart => js.Array[ChartLegendLabelItem] = null,
     padding: scala.Int | scala.Double = null,
     usePointStyle: js.UndefOr[scala.Boolean] = js.undefined
   ): ChartLegendLabelOptions = {

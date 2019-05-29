@@ -447,6 +447,8 @@ object ^ extends js.Object {
   ): scala.Unit = js.native
   def scryptSync(password: BinaryLike, salt: BinaryLike, keylen: scala.Double): nodeLib.Buffer = js.native
   def scryptSync(password: BinaryLike, salt: BinaryLike, keylen: scala.Double, options: ScryptOptions): nodeLib.Buffer = js.native
+  def sign(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: KeyLike): nodeLib.Buffer = js.native
+  def sign(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: SignPrivateKeyInput): nodeLib.Buffer = js.native
   /**
     * Calculates and returns the signature for `data` using the given private key and
     * algorithm. If `algorithm` is `null` or `undefined`, then the algorithm is
@@ -457,11 +459,11 @@ object ^ extends js.Object {
     */
   def sign(algorithm: java.lang.String, data: Binary, key: KeyLike): nodeLib.Buffer = js.native
   def sign(algorithm: java.lang.String, data: Binary, key: SignPrivateKeyInput): nodeLib.Buffer = js.native
-  def sign(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: KeyLike): nodeLib.Buffer = js.native
-  def sign(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: SignPrivateKeyInput): nodeLib.Buffer = js.native
   def sign(algorithm: scala.Null, data: Binary, key: KeyLike): nodeLib.Buffer = js.native
   def sign(algorithm: scala.Null, data: Binary, key: SignPrivateKeyInput): nodeLib.Buffer = js.native
   def timingSafeEqual(a: Binary, b: Binary): scala.Boolean = js.native
+  def verify(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: KeyLike, signature: Binary): nodeLib.Buffer = js.native
+  def verify(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: VerifyKeyWithOptions, signature: Binary): nodeLib.Buffer = js.native
   /**
     * Calculates and returns the signature for `data` using the given private key and
     * algorithm. If `algorithm` is `null` or `undefined`, then the algorithm is
@@ -472,8 +474,6 @@ object ^ extends js.Object {
     */
   def verify(algorithm: java.lang.String, data: Binary, key: KeyLike, signature: Binary): nodeLib.Buffer = js.native
   def verify(algorithm: java.lang.String, data: Binary, key: VerifyKeyWithOptions, signature: Binary): nodeLib.Buffer = js.native
-  def verify(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: KeyLike, signature: Binary): nodeLib.Buffer = js.native
-  def verify(algorithm: js.UndefOr[scala.Nothing], data: Binary, key: VerifyKeyWithOptions, signature: Binary): nodeLib.Buffer = js.native
   def verify(algorithm: scala.Null, data: Binary, key: KeyLike, signature: Binary): nodeLib.Buffer = js.native
   def verify(algorithm: scala.Null, data: Binary, key: VerifyKeyWithOptions, signature: Binary): nodeLib.Buffer = js.native
 }

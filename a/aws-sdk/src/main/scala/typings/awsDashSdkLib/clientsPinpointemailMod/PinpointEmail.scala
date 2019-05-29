@@ -356,7 +356,7 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDedicatedIpsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+    * Retrieve information about the status of the Deliverability dashboard for your Amazon Pinpoint account. When the Deliverability dashboard is enabled, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon Pinpoint. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon Pinpoint Pricing.
     */
   def getDeliverabilityDashboardOptions(): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDeliverabilityDashboardOptions(
@@ -367,7 +367,7 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Show the status of the Deliverability dashboard. When the Deliverability dashboard is enabled, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, AWS prorates the monthly charge based on how many days have elapsed in the current calendar month.
+    * Retrieve information about the status of the Deliverability dashboard for your Amazon Pinpoint account. When the Deliverability dashboard is enabled, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon Pinpoint. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon Pinpoint Pricing.
     */
   def getDeliverabilityDashboardOptions(params: GetDeliverabilityDashboardOptionsRequest): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityDashboardOptionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getDeliverabilityDashboardOptions(
@@ -401,6 +401,29 @@ trait PinpointEmail
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetDeliverabilityTestReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieve all the deliverability data for a specific campaign. This data is available for a campaign only if the campaign sent email by using a domain that the Deliverability dashboard is enabled for (PutDeliverabilityDashboardOption operation).
+    */
+  def getDomainDeliverabilityCampaign(): awsDashSdkLib.libRequestMod.Request[GetDomainDeliverabilityCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getDomainDeliverabilityCampaign(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetDomainDeliverabilityCampaignResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetDomainDeliverabilityCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieve all the deliverability data for a specific campaign. This data is available for a campaign only if the campaign sent email by using a domain that the Deliverability dashboard is enabled for (PutDeliverabilityDashboardOption operation).
+    */
+  def getDomainDeliverabilityCampaign(params: GetDomainDeliverabilityCampaignRequest): awsDashSdkLib.libRequestMod.Request[GetDomainDeliverabilityCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getDomainDeliverabilityCampaign(
+    params: GetDomainDeliverabilityCampaignRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetDomainDeliverabilityCampaignResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetDomainDeliverabilityCampaignResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Retrieve inbox placement and engagement rates for the domains that you use to send email.
     */
@@ -517,6 +540,29 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListDeliverabilityTestReportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Retrieve deliverability data for all the campaigns that used a specific domain to send email during a specified time range. This data is available for a domain only if you enabled the Deliverability dashboard (PutDeliverabilityDashboardOption operation) for the domain.
+    */
+  def listDomainDeliverabilityCampaigns(): awsDashSdkLib.libRequestMod.Request[ListDomainDeliverabilityCampaignsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listDomainDeliverabilityCampaigns(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListDomainDeliverabilityCampaignsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListDomainDeliverabilityCampaignsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Retrieve deliverability data for all the campaigns that used a specific domain to send email during a specified time range. This data is available for a domain only if you enabled the Deliverability dashboard (PutDeliverabilityDashboardOption operation) for the domain.
+    */
+  def listDomainDeliverabilityCampaigns(params: ListDomainDeliverabilityCampaignsRequest): awsDashSdkLib.libRequestMod.Request[ListDomainDeliverabilityCampaignsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listDomainDeliverabilityCampaigns(
+    params: ListDomainDeliverabilityCampaignsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListDomainDeliverabilityCampaignsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListDomainDeliverabilityCampaignsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Returns a list of all of the email identities that are associated with your Amazon Pinpoint account. An identity can be either an email address or a domain. This operation returns identities that are verified as well as those that aren't.
     */
   def listEmailIdentities(): awsDashSdkLib.libRequestMod.Request[ListEmailIdentitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -540,7 +586,7 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListEmailIdentitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieve a list of the tags (keys and values) that are associated with a specific resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+    * Retrieve a list of the tags (keys and values) that are associated with a specified resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
   def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
@@ -551,7 +597,7 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieve a list of the tags (keys and values) that are associated with a specific resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+    * Retrieve a list of the tags (keys and values) that are associated with a specified resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
   def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTagsForResource(
@@ -747,7 +793,7 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+    * Enable or disable the Deliverability dashboard for your Amazon Pinpoint account. When you enable the Deliverability dashboard, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon Pinpoint. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon Pinpoint Pricing.
     */
   def putDeliverabilityDashboardOption(): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putDeliverabilityDashboardOption(
@@ -758,7 +804,7 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Enable or disable the Deliverability dashboard. When you enable the Deliverability dashboard, you gain access to reputation metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly charge of USD$1,250.00, in addition to any other fees that you accrue by using Amazon Pinpoint. If you enable the Deliverability dashboard after the first day of a calendar month, we prorate the monthly charge based on how many days have elapsed in the current calendar month.
+    * Enable or disable the Deliverability dashboard for your Amazon Pinpoint account. When you enable the Deliverability dashboard, you gain access to reputation, deliverability, and other metrics for the domains that you use to send email using Amazon Pinpoint. You also gain the ability to perform predictive inbox placement tests. When you use the Deliverability dashboard, you pay a monthly subscription charge, in addition to any other fees that you accrue by using Amazon Pinpoint. For more information about the features and cost of a Deliverability dashboard subscription, see Amazon Pinpoint Pricing.
     */
   def putDeliverabilityDashboardOption(params: PutDeliverabilityDashboardOptionRequest): awsDashSdkLib.libRequestMod.Request[PutDeliverabilityDashboardOptionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putDeliverabilityDashboardOption(
@@ -862,7 +908,7 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[SendEmailResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Add one or more tags (keys and values) to one or more specified resources. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Tags can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags. Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+    * Add one or more tags (keys and values) to a specified resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Tags can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags. Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
   def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(
@@ -873,7 +919,7 @@ trait PinpointEmail
     ]
   ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Add one or more tags (keys and values) to one or more specified resources. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Tags can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags. Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+    * Add one or more tags (keys and values) to a specified resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Tags can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags. Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
     */
   def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def tagResource(

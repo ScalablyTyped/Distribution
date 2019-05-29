@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "kolite"
-version := "1.1-dt-20190322Z-3bf773"
+version := "1.1-dt-20190322Z-f794b3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190515Z-8327c3",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190515Z-3fbc25",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

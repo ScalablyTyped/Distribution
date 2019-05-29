@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Error[Result /* <: EJSONable | js.Array[EJSONable] | EJSONableProperty | js.Array[EJSONableProperty] */] extends js.Object {
+trait Anon_Error[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] extends js.Object {
   var onResultReceived: js.UndefOr[
     js.Function2[
       /* error */ js.UndefOr[global_Error | meteorLib.MeteorNs.Error], 
@@ -21,7 +21,7 @@ trait Anon_Error[Result /* <: EJSONable | js.Array[EJSONable] | EJSONablePropert
 
 object Anon_Error {
   @scala.inline
-  def apply[Result /* <: EJSONable | js.Array[EJSONable] | EJSONableProperty | js.Array[EJSONableProperty] */](
+  def apply[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */](
     onResultReceived: (/* error */ js.UndefOr[global_Error | meteorLib.MeteorNs.Error], /* result */ js.UndefOr[Result]) => scala.Unit = null,
     returnStubValue: js.UndefOr[scala.Boolean] = js.undefined,
     throwStubExceptions: js.UndefOr[scala.Boolean] = js.undefined,

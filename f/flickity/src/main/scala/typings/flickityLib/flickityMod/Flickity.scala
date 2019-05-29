@@ -75,11 +75,7 @@ trait Flickity extends js.Object {
     */
   def off(
     eventname: FlickityEvents,
-    callback: js.Function2[
-      /* event */ js.UndefOr[stdLib.Event], 
-      /* cellElement */ /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 
-      _
-    ]
+    callback: js.Function2[js.UndefOr[stdLib.Event], js.UndefOr[stdLib.Element | stdLib.Touch], _]
   ): scala.Unit = js.native
   /**
     * Remove event listener
@@ -117,11 +113,7 @@ trait Flickity extends js.Object {
     */
   def on(
     eventname: FlickityEvents,
-    callback: js.Function2[
-      /* event */ js.UndefOr[stdLib.Event], 
-      /* cellElement */ /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 
-      _
-    ]
+    callback: js.Function2[js.UndefOr[stdLib.Event], js.UndefOr[stdLib.Element | stdLib.Touch], _]
   ): scala.Unit = js.native
   /**
     * bind event listener
@@ -159,11 +151,7 @@ trait Flickity extends js.Object {
     */
   def once(
     eventname: java.lang.String,
-    callback: js.Function2[
-      /* event */ js.UndefOr[stdLib.Event], 
-      /* cellElement */ /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 
-      _
-    ]
+    callback: js.Function2[js.UndefOr[stdLib.Event], js.UndefOr[stdLib.Element | stdLib.Touch], _]
   ): scala.Unit = js.native
   /**
     * one time event handl`er

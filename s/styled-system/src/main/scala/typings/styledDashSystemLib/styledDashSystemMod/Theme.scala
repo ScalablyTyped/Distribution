@@ -50,7 +50,7 @@ object Theme {
     borderStyles: ObjectOrArray[csstypeLib.csstypeMod.BorderProperty[js.Object]] = null,
     borderWidths: ObjectOrArray[csstypeLib.csstypeMod.BorderWidthProperty[js.Object]] = null,
     borders: ObjectOrArray[csstypeLib.csstypeMod.BorderProperty[js.Object]] = null,
-    breakpoints: js.Array[java.lang.String] | js.Array[scala.Double] | js.Object = null,
+    breakpoints: (js.Array[scala.Double | java.lang.String]) | js.Object = null,
     buttons: ObjectOrArray[
       csstypeLib.csstypeMod.StandardProperties[java.lang.String | styledDashSystemLib.styledDashSystemLibNumbers.`0`]
     ] = null,

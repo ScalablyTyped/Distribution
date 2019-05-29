@@ -17,7 +17,7 @@ object ModalProviderProps {
     backgroundComponent: styledDashComponentsLib.styledDashComponentsMod.AnyStyledComponent = null
   ): ModalProviderProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    if (backgroundComponent != null) __obj.updateDynamic("backgroundComponent")(backgroundComponent.asInstanceOf[js.Any])
+    if (backgroundComponent != null) __obj.updateDynamic("backgroundComponent")(backgroundComponent)
     __obj.asInstanceOf[ModalProviderProps]
   }
 }

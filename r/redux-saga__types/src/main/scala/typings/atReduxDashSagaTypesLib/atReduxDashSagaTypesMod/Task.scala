@@ -13,7 +13,7 @@ trait Task extends js.Object {
   /**
     * Returns task thrown error. `undefined` if task is still running
     */
-  def error(): js.UndefOr[_]
+  def error(): js.UndefOr[js.Any]
   /**
     * Returns true if the task has been cancelled
     */
@@ -39,7 +39,7 @@ object Task {
   @scala.inline
   def apply(
     cancel: () => scala.Unit,
-    error: () => js.UndefOr[_],
+    error: () => js.UndefOr[js.Any],
     isCancelled: () => scala.Boolean,
     isRunning: () => scala.Boolean,
     result: () => js.UndefOr[js.Any],

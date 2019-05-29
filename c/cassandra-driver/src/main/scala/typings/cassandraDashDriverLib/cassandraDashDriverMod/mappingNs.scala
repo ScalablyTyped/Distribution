@@ -263,7 +263,7 @@ object mappingNs extends js.Object {
     var columns: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
     var keyspace: js.UndefOr[java.lang.String] = js.undefined
     var mappings: js.UndefOr[TableMappings] = js.undefined
-    var tables: js.UndefOr[js.Array[java.lang.String] | js.Array[ModelTables]] = js.undefined
+    var tables: js.UndefOr[js.Array[ModelTables | java.lang.String]] = js.undefined
   }
   
   trait ModelTables extends js.Object {

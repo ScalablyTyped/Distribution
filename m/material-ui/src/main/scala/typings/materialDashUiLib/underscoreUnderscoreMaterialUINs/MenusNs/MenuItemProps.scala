@@ -15,6 +15,8 @@ trait MenuItemProps
     ]
   ] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined
+  @JSName("containerElement")
+  var containerElement_MenuItemProps: js.UndefOr[reactLib.reactMod.ReactNode | java.lang.String] = js.undefined
   var desktop: js.UndefOr[scala.Boolean] = js.undefined
   var focusState: js.UndefOr[java.lang.String] = js.undefined
   var label: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNode] = js.undefined

@@ -30,7 +30,7 @@ trait ScatterplotChartProps extends js.Object {
   /** Width of the chart in pixels */
   var width: js.UndefOr[scala.Double] = js.undefined
   /** The range that the x axis should show (otherwise automatically calculated) */
-  var xDomainRange: js.UndefOr[js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[java.lang.String]] = js.undefined
+  var xDomainRange: js.UndefOr[js.Array[stdLib.Date | scala.Double | java.lang.String]] = js.undefined
   /** What data type the x axis is */
   var xType: js.UndefOr[
     reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear
@@ -38,7 +38,7 @@ trait ScatterplotChartProps extends js.Object {
   /** Whether to show the axis on the right (default false: left) */
   var yAxisOrientRight: js.UndefOr[scala.Boolean] = js.undefined
   /** The range that the y axis should show (otherwise automatically calculated) */
-  var yDomainRange: js.UndefOr[js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[java.lang.String]] = js.undefined
+  var yDomainRange: js.UndefOr[js.Array[stdLib.Date | scala.Double | java.lang.String]] = js.undefined
   /** What data type the x axis is */
   var yType: js.UndefOr[
     reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear
@@ -62,10 +62,10 @@ object ScatterplotChartProps {
     mouseOverHandler: (/* data */ ScatterplotData, /* mouseEvent */ stdLib.MouseEvent) => _ = null,
     verticalGrid: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null,
-    xDomainRange: js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[java.lang.String] = null,
+    xDomainRange: js.Array[stdLib.Date | scala.Double | java.lang.String] = null,
     xType: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null,
     yAxisOrientRight: js.UndefOr[scala.Boolean] = js.undefined,
-    yDomainRange: js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[java.lang.String] = null,
+    yDomainRange: js.Array[stdLib.Date | scala.Double | java.lang.String] = null,
     yType: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null
   ): ScatterplotChartProps = {
     val __obj = js.Dynamic.literal(data = data)
@@ -82,10 +82,10 @@ object ScatterplotChartProps {
     if (mouseOverHandler != null) __obj.updateDynamic("mouseOverHandler")(js.Any.fromFunction2(mouseOverHandler))
     if (!js.isUndefined(verticalGrid)) __obj.updateDynamic("verticalGrid")(verticalGrid)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xDomainRange != null) __obj.updateDynamic("xDomainRange")(xDomainRange.asInstanceOf[js.Any])
+    if (xDomainRange != null) __obj.updateDynamic("xDomainRange")(xDomainRange)
     if (xType != null) __obj.updateDynamic("xType")(xType.asInstanceOf[js.Any])
     if (!js.isUndefined(yAxisOrientRight)) __obj.updateDynamic("yAxisOrientRight")(yAxisOrientRight)
-    if (yDomainRange != null) __obj.updateDynamic("yDomainRange")(yDomainRange.asInstanceOf[js.Any])
+    if (yDomainRange != null) __obj.updateDynamic("yDomainRange")(yDomainRange)
     if (yType != null) __obj.updateDynamic("yType")(yType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScatterplotChartProps]
   }

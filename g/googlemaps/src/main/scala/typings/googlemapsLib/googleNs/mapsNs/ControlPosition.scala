@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait ControlPosition extends js.Object
 
+/**
+  * Identifiers used to specify the placement of controls on the map. Controls
+  * are positioned relative to other controls in the same layout position.
+  * Controls that are added first are positioned closer to the edge of the map.
+  */
 @JSGlobal("google.maps.ControlPosition")
 @js.native
 object ControlPosition extends js.Object {

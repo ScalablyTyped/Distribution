@@ -103,6 +103,11 @@ import scala.scalajs.js.annotation._
   var initFieldAncestor: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Performs initialization of this mixin  */
   var initLabelable: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /** [Method] Initialized the renderData to be used when rendering the renderTpl
+  		* @returns Object Object with keys and values that are going to be applied to the renderTpl
+  		*/
+  @JSName("initRenderData")
+  var initRenderData_IFieldContainer: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (String) */
   var invalidCls: js.UndefOr[java.lang.String] = js.undefined
   /** [Property] (Boolean) */
@@ -153,8 +158,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onFieldValidityChange: js.UndefOr[
     js.Function2[
-      /* field */ js.UndefOr[extjsLib.ExtNs.formNs.fieldNs.IField], 
-      /* valid */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.formNs.fieldNs.IField], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -168,19 +173,19 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the active error message to the given string
   		* @param msg String The error message
   		*/
-  var setActiveError: js.UndefOr[js.Function1[/* msg */ js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
+  var setActiveError: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
   /** [Method] Set the active error message to an Array of error messages
   		* @param errors String[] The error messages
   		*/
-  var setActiveErrors: js.UndefOr[js.Function1[/* errors */ js.UndefOr[extjsLib.ExtNs.Array], scala.Unit]] = js.undefined
+  var setActiveErrors: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.Array], scala.Unit]] = js.undefined
   /** [Method] Applies a set of default configuration values to this Labelable instance
   		* @param defaults Object The defaults to apply to the object.
   		*/
-  var setFieldDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var setFieldDefaults: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Set the label of this field
   		* @param label String The new label. The labelSeparator will be automatically appended to the label string.
   		*/
-  var setFieldLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
+  var setFieldLabel: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
   /** [Method] Returns the trimmed label by slicing off the label separator character
   		* @returns String The trimmed field label, or empty string if not defined
   		*/

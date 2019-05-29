@@ -36,8 +36,8 @@ package object atBabelParserMod {
     - ParserPluginWithOptions
   */
   type ParserPlugin = _ParserPlugin | ParserPluginWithOptions
-  type ParserPluginWithOptions = (js.Tuple2[atBabelParserLib.atBabelParserLibStrings.decorators, DecoratorsPluginOptions]) | (js.Tuple2[
-    atBabelParserLib.atBabelParserLibStrings.pipelineOperator, 
-    PipelineOperatorPluginOptions
-  ]) | (js.Tuple2[atBabelParserLib.atBabelParserLibStrings.flow, FlowPluginOptions])
+  type ParserPluginWithOptions = js.Tuple2[
+    atBabelParserLib.atBabelParserLibStrings.decorators | atBabelParserLib.atBabelParserLibStrings.pipelineOperator | atBabelParserLib.atBabelParserLibStrings.flow, 
+    DecoratorsPluginOptions | FlowPluginOptions | PipelineOperatorPluginOptions
+  ]
 }

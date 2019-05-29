@@ -2505,7 +2505,7 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/prop/ }\`
     * @since 1.6
     */
-  def prop(propertyName: java.lang.String): js.UndefOr[_] = js.native
+  def prop(propertyName: java.lang.String): js.UndefOr[js.Any] = js.native
   /**
     * Set one or more properties for the set of matched elements.
     *
@@ -3200,14 +3200,14 @@ trait JQuery[TElement]
   def trigger(eventType: java.lang.String, extraParameters: java.lang.String): this.type = js.native
   def trigger(eventType: java.lang.String, extraParameters: js.Array[_]): this.type = js.native
   def trigger(eventType: java.lang.String, extraParameters: scala.Double): this.type = js.native
-  def triggerHandler(eventType: cypressLib.JQueryNs.Event[TElement, scala.Null]): js.UndefOr[_] = js.native
+  def triggerHandler(eventType: cypressLib.JQueryNs.Event[TElement, scala.Null]): js.UndefOr[js.Any] = js.native
   def triggerHandler(
     eventType: cypressLib.JQueryNs.Event[TElement, scala.Null],
     extraParameters: cypressLib.JQueryNs.PlainObject[_]
-  ): js.UndefOr[_] = js.native
-  def triggerHandler(eventType: cypressLib.JQueryNs.Event[TElement, scala.Null], extraParameters: java.lang.String): js.UndefOr[_] = js.native
-  def triggerHandler(eventType: cypressLib.JQueryNs.Event[TElement, scala.Null], extraParameters: js.Array[_]): js.UndefOr[_] = js.native
-  def triggerHandler(eventType: cypressLib.JQueryNs.Event[TElement, scala.Null], extraParameters: scala.Double): js.UndefOr[_] = js.native
+  ): js.UndefOr[js.Any] = js.native
+  def triggerHandler(eventType: cypressLib.JQueryNs.Event[TElement, scala.Null], extraParameters: java.lang.String): js.UndefOr[js.Any] = js.native
+  def triggerHandler(eventType: cypressLib.JQueryNs.Event[TElement, scala.Null], extraParameters: js.Array[_]): js.UndefOr[js.Any] = js.native
+  def triggerHandler(eventType: cypressLib.JQueryNs.Event[TElement, scala.Null], extraParameters: scala.Double): js.UndefOr[js.Any] = js.native
   /**
     * Execute all handlers attached to an element for an event.
     *
@@ -3218,11 +3218,11 @@ trait JQuery[TElement]
     * @since 1.2
     * @since 1.3
     */
-  def triggerHandler(eventType: java.lang.String): js.UndefOr[_] = js.native
-  def triggerHandler(eventType: java.lang.String, extraParameters: cypressLib.JQueryNs.PlainObject[_]): js.UndefOr[_] = js.native
-  def triggerHandler(eventType: java.lang.String, extraParameters: java.lang.String): js.UndefOr[_] = js.native
-  def triggerHandler(eventType: java.lang.String, extraParameters: js.Array[_]): js.UndefOr[_] = js.native
-  def triggerHandler(eventType: java.lang.String, extraParameters: scala.Double): js.UndefOr[_] = js.native
+  def triggerHandler(eventType: java.lang.String): js.UndefOr[js.Any] = js.native
+  def triggerHandler(eventType: java.lang.String, extraParameters: cypressLib.JQueryNs.PlainObject[_]): js.UndefOr[js.Any] = js.native
+  def triggerHandler(eventType: java.lang.String, extraParameters: java.lang.String): js.UndefOr[js.Any] = js.native
+  def triggerHandler(eventType: java.lang.String, extraParameters: js.Array[_]): js.UndefOr[js.Any] = js.native
+  def triggerHandler(eventType: java.lang.String, extraParameters: scala.Double): js.UndefOr[js.Any] = js.native
   /**
     * Remove a previously-attached event handler from the elements.
     *

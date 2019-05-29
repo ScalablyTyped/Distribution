@@ -15,9 +15,10 @@ trait PlotData extends js.Object {
   var fill: plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.tozeroy | plotlyDotJsLib.plotlyDotJsLibStrings.tozerox | plotlyDotJsLib.plotlyDotJsLibStrings.tonexty | plotlyDotJsLib.plotlyDotJsLibStrings.tonextx | plotlyDotJsLib.plotlyDotJsLibStrings.toself | plotlyDotJsLib.plotlyDotJsLibStrings.tonext
   var fillcolor: java.lang.String
   var hole: scala.Double
-  var hoverinfo: plotlyDotJsLib.plotlyDotJsLibStrings.all | plotlyDotJsLib.plotlyDotJsLibStrings.name | plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.skip | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.`x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+name`
+  var hoverinfo: plotlyDotJsLib.plotlyDotJsLibStrings.all | plotlyDotJsLib.plotlyDotJsLibStrings.name | plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.skip | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.`x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+name`
   var hoverlabel: stdLib.Partial[Label]
   var hoveron: plotlyDotJsLib.plotlyDotJsLibStrings.points | plotlyDotJsLib.plotlyDotJsLibStrings.fills
+  var hovertemplate: java.lang.String | js.Array[java.lang.String]
   var labels: js.Array[Datum]
   var legendgroup: java.lang.String
   var line: stdLib.Partial[ScatterLine]
@@ -57,15 +58,15 @@ trait PlotData extends js.Object {
   var values: js.Array[Datum]
   var visible: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibStrings.legendonly
   var width: scala.Double | js.Array[scala.Double]
-  var x: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray
+  var x: (js.Array[js.Array[Datum] | Datum]) | TypedArray
   var xaxis: java.lang.String
   var xbins: plotlyDotJsLib.Anon_End
   var xgap: scala.Double
   var xy: stdLib.Float32Array
-  var y: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray
+  var y: (js.Array[js.Array[Datum] | Datum]) | TypedArray
   var yaxis: java.lang.String
   var ygap: scala.Double
-  var z: js.Array[Datum] | js.Array[js.Array[Datum]] | js.Array[js.Array[js.Array[Datum]]] | TypedArray
+  var z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray
   var zsmooth: plotlyDotJsLib.plotlyDotJsLibStrings.fast | plotlyDotJsLib.plotlyDotJsLibStrings.best | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`
 }
 
@@ -81,9 +82,10 @@ object PlotData {
     fill: plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.tozeroy | plotlyDotJsLib.plotlyDotJsLibStrings.tozerox | plotlyDotJsLib.plotlyDotJsLibStrings.tonexty | plotlyDotJsLib.plotlyDotJsLibStrings.tonextx | plotlyDotJsLib.plotlyDotJsLibStrings.toself | plotlyDotJsLib.plotlyDotJsLibStrings.tonext,
     fillcolor: java.lang.String,
     hole: scala.Double,
-    hoverinfo: plotlyDotJsLib.plotlyDotJsLibStrings.all | plotlyDotJsLib.plotlyDotJsLibStrings.name | plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.skip | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.`x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+name`,
+    hoverinfo: plotlyDotJsLib.plotlyDotJsLibStrings.all | plotlyDotJsLib.plotlyDotJsLibStrings.name | plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.skip | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.`x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+name`,
     hoverlabel: stdLib.Partial[Label],
     hoveron: plotlyDotJsLib.plotlyDotJsLibStrings.points | plotlyDotJsLib.plotlyDotJsLibStrings.fills,
+    hovertemplate: java.lang.String | js.Array[java.lang.String],
     labels: js.Array[Datum],
     legendgroup: java.lang.String,
     line: stdLib.Partial[ScatterLine],
@@ -121,18 +123,18 @@ object PlotData {
     values: js.Array[Datum],
     visible: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibStrings.legendonly,
     width: scala.Double | js.Array[scala.Double],
-    x: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray,
+    x: (js.Array[js.Array[Datum] | Datum]) | TypedArray,
     xaxis: java.lang.String,
     xbins: plotlyDotJsLib.Anon_End,
     xgap: scala.Double,
     xy: stdLib.Float32Array,
-    y: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray,
+    y: (js.Array[js.Array[Datum] | Datum]) | TypedArray,
     yaxis: java.lang.String,
     ygap: scala.Double,
-    z: js.Array[Datum] | js.Array[js.Array[Datum]] | js.Array[js.Array[js.Array[Datum]]] | TypedArray,
+    z: (js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray,
     zsmooth: plotlyDotJsLib.plotlyDotJsLibStrings.fast | plotlyDotJsLib.plotlyDotJsLibStrings.best | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`
   ): PlotData = {
-    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, orientation = orientation.asInstanceOf[js.Any], r = r, rotation = rotation, stackgroup = stackgroup, text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, values = values, visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], hovertemplate = hovertemplate.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, orientation = orientation.asInstanceOf[js.Any], r = r, rotation = rotation, stackgroup = stackgroup, text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, values = values, visible = visible.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
     __obj.updateDynamic("line.color")(`line.color`.asInstanceOf[js.Any])
     __obj.updateDynamic("line.dash")(`line.dash`)
     __obj.updateDynamic("line.shape")(`line.shape`.asInstanceOf[js.Any])

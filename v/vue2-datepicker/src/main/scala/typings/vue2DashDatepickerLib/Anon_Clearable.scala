@@ -11,7 +11,7 @@ trait Anon_Clearable extends js.Object {
   var confirmText: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var disabledDays: js.UndefOr[
-    js.Array[scala.Double] | js.Array[java.lang.String] | (js.Function1[/* date */ stdLib.Date, js.Array[stdLib.Date]])
+    (js.Array[scala.Double | java.lang.String]) | (js.Function1[/* date */ stdLib.Date, js.Array[stdLib.Date]])
   ] = js.undefined
   var editable: js.UndefOr[scala.Boolean] = js.undefined
   var firstDayOfWeek: js.UndefOr[scala.Double] = js.undefined
@@ -44,7 +44,7 @@ object Anon_Clearable {
     confirm: js.UndefOr[scala.Boolean] = js.undefined,
     confirmText: java.lang.String = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
-    disabledDays: js.Array[scala.Double] | js.Array[java.lang.String] | (js.Function1[/* date */ stdLib.Date, js.Array[stdLib.Date]]) = null,
+    disabledDays: (js.Array[scala.Double | java.lang.String]) | (js.Function1[/* date */ stdLib.Date, js.Array[stdLib.Date]]) = null,
     editable: js.UndefOr[scala.Boolean] = js.undefined,
     firstDayOfWeek: scala.Int | scala.Double = null,
     format: java.lang.String = null,

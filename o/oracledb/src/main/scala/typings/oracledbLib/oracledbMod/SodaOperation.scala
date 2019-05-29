@@ -37,7 +37,7 @@ trait SodaOperation extends js.Object {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaqbesearches
     * @since 3.0
     */
-  def filter(filterSpec: org.scalablytyped.runtime.StringDictionary[js.Any]): SodaOperation = js.native
+  def filter(filterSpec: stdLib.Record[java.lang.String, _]): SodaOperation = js.native
   /**
     * Returns a SodaDocumentCursor for documents that match the SodaOperation query criteria.
     * The cursor can be iterated over with sodaDocumentCursor.getNext() to access each SodaDocument.
@@ -150,9 +150,9 @@ trait SodaOperation extends js.Object {
     *
     * @since 3.0
     */
-  def replaceOne(newDocumentContent: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[SodaReplaceOneResult] = js.native
+  def replaceOne(newDocumentContent: stdLib.Record[java.lang.String, _]): js.Promise[SodaReplaceOneResult] = js.native
   def replaceOne(
-    newDocumentContent: org.scalablytyped.runtime.StringDictionary[js.Any],
+    newDocumentContent: stdLib.Record[java.lang.String, _],
     callback: js.Function2[/* error */ DBError, /* result */ SodaReplaceOneResult, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -195,9 +195,9 @@ trait SodaOperation extends js.Object {
     *
     * @since 3.0
     */
-  def replaceOneAndGet(newDocumentContent: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[SodaDocument] = js.native
+  def replaceOneAndGet(newDocumentContent: stdLib.Record[java.lang.String, _]): js.Promise[SodaDocument] = js.native
   def replaceOneAndGet(
-    newDocumentContent: org.scalablytyped.runtime.StringDictionary[js.Any],
+    newDocumentContent: stdLib.Record[java.lang.String, _],
     callback: js.Function2[/* error */ DBError, /* document */ SodaDocument, scala.Unit]
   ): scala.Unit = js.native
   /**

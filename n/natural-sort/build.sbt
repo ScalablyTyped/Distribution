@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "natural-sort"
-version := "0.0-unknown-dt-20190322Z-f9e3a9"
+version := "0.0-unknown-dt-20190322Z-16ab29"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

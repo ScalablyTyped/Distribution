@@ -116,6 +116,65 @@ trait Typeofchild_process extends js.Object {
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def execFile(file: java.lang.String): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      nodeLib.Error | scala.Null, 
+      nodeLib.Buffer | (/* stdout */ java.lang.String), 
+      nodeLib.Buffer | (/* stderr */ java.lang.String), 
+      scala.Unit
+    ]
+  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: nodeLib.Anon_EncodingNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
+  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding,
+    callback: js.Function3[
+      /* error */ nodeLib.Error | scala.Null, 
+      /* stdout */ nodeLib.Buffer, 
+      /* stderr */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[
+      /* error */ nodeLib.Error | scala.Null, 
+      /* stdout */ java.lang.String | nodeLib.Buffer, 
+      /* stderr */ java.lang.String | nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding,
+    callback: js.Function3[
+      /* error */ nodeLib.Error | scala.Null, 
+      /* stdout */ java.lang.String, 
+      /* stderr */ java.lang.String, 
+      scala.Unit
+    ]
+  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: nodeLib.childUnderscoreProcessMod.ExecFileOptions,
+    callback: js.Function3[
+      /* error */ nodeLib.Error | scala.Null, 
+      /* stdout */ java.lang.String, 
+      /* stderr */ java.lang.String, 
+      scala.Unit
+    ]
+  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def execFile(file: java.lang.String, args: js.Array[java.lang.String]): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def execFile(
     file: java.lang.String,
@@ -179,65 +238,6 @@ trait Typeofchild_process extends js.Object {
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
-    options: nodeLib.childUnderscoreProcessMod.ExecFileOptions,
-    callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* stdout */ java.lang.String, 
-      /* stderr */ java.lang.String, 
-      scala.Unit
-    ]
-  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      nodeLib.Error | scala.Null, 
-      nodeLib.Buffer | (/* stdout */ java.lang.String), 
-      nodeLib.Buffer | (/* stderr */ java.lang.String), 
-      scala.Unit
-    ]
-  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    options: nodeLib.Anon_EncodingNull with nodeLib.childUnderscoreProcessMod.ExecFileOptions
-  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* stdout */ nodeLib.Buffer, 
-      /* stderr */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithOtherEncoding,
-    callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* stdout */ java.lang.String | nodeLib.Buffer, 
-      /* stderr */ java.lang.String | nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    options: nodeLib.childUnderscoreProcessMod.ExecFileOptionsWithStringEncoding,
-    callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* stdout */ java.lang.String, 
-      /* stderr */ java.lang.String, 
-      scala.Unit
-    ]
-  ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
     options: nodeLib.childUnderscoreProcessMod.ExecFileOptions,
     callback: js.Function3[
       /* error */ nodeLib.Error | scala.Null, 

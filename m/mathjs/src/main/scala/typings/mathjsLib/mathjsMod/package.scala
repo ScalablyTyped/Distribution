@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object mathjsMod {
   type BigNumber = decimalDotJsLib.decimalDotJsMod.Decimal
   type ImportObject = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type MathArray = js.Array[scala.Double] | js.Array[js.Array[scala.Double]]
+  type MathArray = js.Array[js.Array[scala.Double] | scala.Double]
   type MathExpression = java.lang.String | js.Array[java.lang.String] | MathArray | Matrix
   /* Rewritten from type alias, can be one of: 
     - scala.Double

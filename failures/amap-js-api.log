@@ -179,9 +179,9 @@
 [info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Timeout) [id => amap-js-api, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(AMap) / TsDeclNamespace(Util) / TsDeclFunction(requestIdleCallback) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [debug] PhaseRunner.scala:84 Success [id => amap-js-api, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:42 Processing amap-js-api [id => amap-js-api, phase => scala.js] 
-[info ] ImportType.scala:230 Failed type conversion: {[ K in keyof T ]: -? undefined extends T[K]? K : never}[keyof T] [id => amap-js-api, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclNamespace(AMap) / TsDeclTypeAlias(OptionalKey) / TsTypeLookup())] 
-[info ] ImportType.scala:230 Failed type conversion: typeof DomUtil [id => amap-js-api, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(TypeofDomUtil) / TsMemberFunction(setCss) / TsTypeQuery())] 
-[info ] ImportType.scala:230 Failed type conversion: typeof DomUtil [id => amap-js-api, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(TypeofDomUtil) / TsMemberFunction(setCss) / TsTypeQuery())] 
+[info ] ImportType.scala:237 Failed type conversion: {[ K in keyof T ]: -? undefined extends T[K]? K : never}[keyof T] [id => amap-js-api, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclNamespace(AMap) / TsDeclTypeAlias(OptionalKey) / TsTypeLookup())] 
+[info ] ImportType.scala:237 Failed type conversion: typeof DomUtil [id => amap-js-api, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(TypeofDomUtil) / TsMemberFunction(setCss) / TsTypeQuery())] 
+[info ] ImportType.scala:237 Failed type conversion: typeof DomUtil [id => amap-js-api, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclInterface(TypeofDomUtil) / TsMemberFunction(setCss) / TsTypeQuery())] 
 [debug] PhaseRunner.scala:84 Success [id => amap-js-api, phase => scala.js] 
 [warn ] Npmjs.scala:108 Could't fetch metadata for TsIdentLibrarySimple(amap-js-api) [id => amap-js-api, phase => build] gigahorse.StatusError: Unexpected status: 404
 	at gigahorse.StatusError$.apply(StatusError.scala:29)

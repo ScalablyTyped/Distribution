@@ -10,9 +10,9 @@ trait Converter extends js.Object {
   def asCodeAction(): js.UndefOr[scala.Nothing] = js.native
   def asCodeAction(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeAction): js.UndefOr[vscodeLib.vscodeMod.CodeAction] = js.native
   def asCodeActionKind(): js.UndefOr[scala.Nothing] = js.native
-  def asCodeActionKind(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind): vscodeLib.vscodeMod.CodeActionKind = js.native
+  def asCodeActionKind(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind): js.UndefOr[vscodeLib.vscodeMod.CodeActionKind] = js.native
   @JSName("asCodeActionKind")
-  def asCodeActionKind_UndefOr(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind): js.UndefOr[vscodeLib.vscodeMod.CodeActionKind] = js.native
+  def asCodeActionKind_CodeActionKind(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind): vscodeLib.vscodeMod.CodeActionKind = js.native
   def asCodeActionKinds(): js.UndefOr[scala.Nothing] = js.native
   def asCodeActionKinds(
     items: js.Array[
@@ -20,7 +20,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.CodeActionKind] = js.native
   @JSName("asCodeActionKinds")
-  def asCodeActionKinds_UndefOr(
+  def `asCodeActionKinds_<union>`(
     item: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind
     ]
@@ -38,7 +38,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.CodeLens] = js.native
   @JSName("asCodeLenses")
-  def asCodeLenses_UndefOr(
+  def `asCodeLenses_<union>`(
     items: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeLens
     ]
@@ -52,7 +52,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.ColorInformation] = js.native
   @JSName("asColorInformations")
-  def asColorInformations_UndefOr(): js.UndefOr[scala.Nothing] = js.native
+  def `asColorInformations_<union>`(): js.UndefOr[scala.Nothing] = js.native
   def asColorPresentation(cp: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ColorPresentation): vscodeLib.vscodeMod.ColorPresentation = js.native
   def asColorPresentations(): js.UndefOr[scala.Nothing] = js.native
   def asColorPresentations(
@@ -61,7 +61,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.ColorPresentation] = js.native
   @JSName("asColorPresentations")
-  def asColorPresentations_UndefOr(
+  def `asColorPresentations_<union>`(
     colorPresentations: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ColorPresentation
     ]
@@ -74,7 +74,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.Command] = js.native
   @JSName("asCommands")
-  def asCommands_UndefOr(
+  def `asCommands_<union>`(
     items: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Command
     ]
@@ -90,15 +90,15 @@ trait Converter extends js.Object {
     js.Array[vscodeLib.vscodeMod.CompletionItem] | vscodeLib.vscodeMod.CompletionList
   ] = js.native
   @JSName("asCompletionResult")
-  def asCompletionResult_CompletionList(result: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionList): vscodeLib.vscodeMod.CompletionList = js.native
-  @JSName("asCompletionResult")
-  def asCompletionResult_UndefOr(
+  def `asCompletionResult_<union>`(
     result: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItem
     ]
   ): js.UndefOr[
     js.Array[vscodeLib.vscodeMod.CompletionItem] | vscodeLib.vscodeMod.CompletionList
   ] = js.native
+  @JSName("asCompletionResult")
+  def asCompletionResult_CompletionList(result: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionList): vscodeLib.vscodeMod.CompletionList = js.native
   def asDeclarationResult(): js.UndefOr[scala.Nothing] = js.native
   def asDeclarationResult(
     item: js.Array[
@@ -107,13 +107,11 @@ trait Converter extends js.Object {
   ): js.Array[vscodeLib.vscodeMod.LocationLink] = js.native
   def asDeclarationResult(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Declaration): vscodeLib.vscodeMod.Location | js.Array[vscodeLib.vscodeMod.Location] = js.native
   @JSName("asDeclarationResult")
-  def asDeclarationResult_UndefOr(
+  def `asDeclarationResult_<union>`(
     item: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DeclarationLink
     ]
   ): js.UndefOr[vscodeLib.vscodeMod.Declaration] = js.native
-  @JSName("asDeclarationResult")
-  def asDeclarationResult_UndefOr(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Declaration): js.UndefOr[vscodeLib.vscodeMod.Declaration] = js.native
   def asDefinitionResult(): js.UndefOr[scala.Nothing] = js.native
   def asDefinitionResult(
     item: js.Array[
@@ -122,13 +120,13 @@ trait Converter extends js.Object {
   ): js.Array[vscodeLib.vscodeMod.DefinitionLink] = js.native
   def asDefinitionResult(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition): js.UndefOr[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]] = js.native
   @JSName("asDefinitionResult")
-  def asDefinitionResult_Definition(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition): vscodeLib.vscodeMod.Definition = js.native
-  @JSName("asDefinitionResult")
-  def asDefinitionResult_UndefOr(
+  def `asDefinitionResult_<union>`(
     item: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DefinitionLink
     ]
   ): js.UndefOr[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]] = js.native
+  @JSName("asDefinitionResult")
+  def asDefinitionResult_Definition(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition): vscodeLib.vscodeMod.Definition = js.native
   def asDiagnostic(diagnostic: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Diagnostic): vscodeLib.vscodeMod.Diagnostic = js.native
   def asDiagnosticSeverity(): vscodeLib.vscodeMod.DiagnosticSeverity = js.native
   def asDiagnosticSeverity(value: scala.Double): vscodeLib.vscodeMod.DiagnosticSeverity = js.native
@@ -146,7 +144,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.DocumentHighlight] = js.native
   @JSName("asDocumentHighlights")
-  def asDocumentHighlights_UndefOr(
+  def `asDocumentHighlights_<union>`(
     values: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentHighlight
     ]
@@ -159,7 +157,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.DocumentLink] = js.native
   @JSName("asDocumentLinks")
-  def asDocumentLinks_UndefOr(
+  def `asDocumentLinks_<union>`(
     items: js.Array[
       vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.DocumentLink
     ]
@@ -174,7 +172,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.DocumentSymbol] = js.native
   @JSName("asDocumentSymbols")
-  def asDocumentSymbols_UndefOr(
+  def `asDocumentSymbols_<union>`(
     value: js.Array[
       vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.DocumentSymbol
     ]
@@ -189,7 +187,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.FoldingRange] = js.native
   @JSName("asFoldingRanges")
-  def asFoldingRanges_UndefOr(
+  def `asFoldingRanges_<union>`(
     foldingRanges: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FoldingRange
     ]
@@ -201,7 +199,7 @@ trait Converter extends js.Object {
   def asLocation(): js.UndefOr[scala.Nothing] = js.native
   def asLocation(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Location): vscodeLib.vscodeMod.Location = js.native
   @JSName("asLocation")
-  def asLocation_UndefOr(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Location): js.UndefOr[vscodeLib.vscodeMod.Location] = js.native
+  def `asLocation_<union>`(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Location): js.UndefOr[vscodeLib.vscodeMod.Location] = js.native
   def asParameterInformation(
     item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ParameterInformation
   ): vscodeLib.vscodeMod.ParameterInformation = js.native
@@ -213,7 +211,7 @@ trait Converter extends js.Object {
   def asPosition(): js.UndefOr[scala.Nothing] = js.native
   def asPosition(value: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position): vscodeLib.vscodeMod.Position = js.native
   @JSName("asPosition")
-  def asPosition_UndefOr(value: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position): js.UndefOr[vscodeLib.vscodeMod.Position] = js.native
+  def `asPosition_<union>`(value: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Position): js.UndefOr[vscodeLib.vscodeMod.Position] = js.native
   def asRange(): js.UndefOr[scala.Nothing] = js.native
   def asRange(value: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range): js.UndefOr[vscodeLib.vscodeMod.Range] = js.native
   @JSName("asRange")
@@ -225,7 +223,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.Location] = js.native
   @JSName("asReferences")
-  def asReferences_UndefOr(
+  def `asReferences_<union>`(
     values: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Location
     ]
@@ -248,6 +246,7 @@ trait Converter extends js.Object {
     uri: vscodeLib.vscodeMod.Uri
   ): vscodeLib.vscodeMod.SymbolInformation = js.native
   def asSymbolInformations(): js.UndefOr[scala.Nothing] = js.native
+  def asSymbolInformations(values: js.UndefOr[scala.Nothing], uri: vscodeLib.vscodeMod.Uri): js.UndefOr[scala.Nothing] = js.native
   def asSymbolInformations(
     values: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolInformation
@@ -259,16 +258,15 @@ trait Converter extends js.Object {
     ],
     uri: vscodeLib.vscodeMod.Uri
   ): js.Array[vscodeLib.vscodeMod.SymbolInformation] = js.native
-  def asSymbolInformations(values: js.UndefOr[scala.Nothing], uri: vscodeLib.vscodeMod.Uri): js.UndefOr[scala.Nothing] = js.native
   def asSymbolInformations(values: scala.Null, uri: vscodeLib.vscodeMod.Uri): js.UndefOr[scala.Nothing] = js.native
   @JSName("asSymbolInformations")
-  def asSymbolInformations_UndefOr(
+  def `asSymbolInformations_<union>`(
     values: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolInformation
     ]
   ): js.UndefOr[js.Array[vscodeLib.vscodeMod.SymbolInformation]] = js.native
   @JSName("asSymbolInformations")
-  def asSymbolInformations_UndefOr(
+  def `asSymbolInformations_<union>`(
     values: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolInformation
     ],
@@ -285,7 +283,7 @@ trait Converter extends js.Object {
     ]
   ): js.Array[vscodeLib.vscodeMod.TextEdit] = js.native
   @JSName("asTextEdits")
-  def asTextEdits_UndefOr(
+  def `asTextEdits_<union>`(
     items: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextEdit
     ]
@@ -294,6 +292,6 @@ trait Converter extends js.Object {
   def asWorkspaceEdit(): js.UndefOr[scala.Nothing] = js.native
   def asWorkspaceEdit(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit): vscodeLib.vscodeMod.WorkspaceEdit = js.native
   @JSName("asWorkspaceEdit")
-  def asWorkspaceEdit_UndefOr(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit): js.UndefOr[vscodeLib.vscodeMod.WorkspaceEdit] = js.native
+  def `asWorkspaceEdit_<union>`(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.WorkspaceEdit): js.UndefOr[vscodeLib.vscodeMod.WorkspaceEdit] = js.native
 }
 

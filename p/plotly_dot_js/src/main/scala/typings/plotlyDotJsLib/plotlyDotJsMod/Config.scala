@@ -44,9 +44,9 @@ trait Config extends js.Object {
   	 * buttons config objects or names of default buttons
   	 * (see ./components/modebar/buttons.js for more info)
   	 */
-  var modeBarButtons: js.Array[js.Array[ModeBarDefaultButtons]] | js.Array[js.Array[ModeBarButton]] | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`
+  var modeBarButtons: (js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`
   /** add mode bar button using config objects (see ./components/modebar/buttons.js for list of arguments) */
-  var modeBarButtonsToAdd: js.Array[ModeBarDefaultButtons] | js.Array[ModeBarButton]
+  var modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons]
   /** remove mode bar button by name (see ./components/modebar/buttons.js for the list of names) */
   var modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons]
   /** increase the pixel ratio for Gl plot images */
@@ -96,8 +96,8 @@ object Config {
     locale: java.lang.String,
     logging: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibNumbers.`0` | plotlyDotJsLib.plotlyDotJsLibNumbers.`1` | plotlyDotJsLib.plotlyDotJsLibNumbers.`2`,
     mapboxAccessToken: java.lang.String,
-    modeBarButtons: js.Array[js.Array[ModeBarDefaultButtons]] | js.Array[js.Array[ModeBarButton]] | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`,
-    modeBarButtonsToAdd: js.Array[ModeBarDefaultButtons] | js.Array[ModeBarButton],
+    modeBarButtons: (js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`,
+    modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons],
     modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons],
     plotGlPixelRatio: scala.Double,
     queueLength: scala.Double,
@@ -113,7 +113,7 @@ object Config {
     staticPlot: scala.Boolean,
     topojsonURL: java.lang.String
   ): Config = {
-    val __obj = js.Dynamic.literal(autosizable = autosizable, displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo, doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable, edits = edits, fillFrame = fillFrame, frameMargins = frameMargins, globalTransforms = globalTransforms, linkText = linkText, locale = locale, logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken, modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove, plotGlPixelRatio = plotGlPixelRatio, queueLength = queueLength, responsive = responsive, scrollZoom = scrollZoom, sendData = sendData, setBackground = js.Any.fromFunction0(setBackground), showAxisDragHandles = showAxisDragHandles, showAxisRangeEntryBoxes = showAxisRangeEntryBoxes, showLink = showLink, showSources = showSources, showTips = showTips, staticPlot = staticPlot, topojsonURL = topojsonURL)
+    val __obj = js.Dynamic.literal(autosizable = autosizable, displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo, doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable, edits = edits, fillFrame = fillFrame, frameMargins = frameMargins, globalTransforms = globalTransforms, linkText = linkText, locale = locale, logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken, modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd, modeBarButtonsToRemove = modeBarButtonsToRemove, plotGlPixelRatio = plotGlPixelRatio, queueLength = queueLength, responsive = responsive, scrollZoom = scrollZoom, sendData = sendData, setBackground = js.Any.fromFunction0(setBackground), showAxisDragHandles = showAxisDragHandles, showAxisRangeEntryBoxes = showAxisRangeEntryBoxes, showLink = showLink, showSources = showSources, showTips = showTips, staticPlot = staticPlot, topojsonURL = topojsonURL)
   
     __obj.asInstanceOf[Config]
   }

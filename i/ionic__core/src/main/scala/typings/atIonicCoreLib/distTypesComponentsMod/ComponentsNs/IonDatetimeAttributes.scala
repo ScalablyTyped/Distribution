@@ -54,7 +54,7 @@ trait IonDatetimeAttributes
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
+  var mode: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
   ] = js.undefined
   /**
@@ -103,7 +103,7 @@ trait IonDatetimeAttributes
   /**
     * Any additional options that the picker interface can accept. See the [Picker API docs](../picker) for the picker options.
     */
-  var pickerOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.UndefOr[
+  var pickerOptions: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DatetimeOptions */ js.Any
   ] = js.undefined
   /**

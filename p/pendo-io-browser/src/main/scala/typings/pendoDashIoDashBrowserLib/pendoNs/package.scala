@@ -11,7 +11,7 @@ package object pendoNs {
   {[ K in 'ready' | 'guidesLoaded' | 'guidesFailed' ]: -? (callback : pendo-io-browser.pendo.EventCallbacks[K]): object}
     */ pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibStrings.Events with EventCallbacks
   type Metadata = org.scalablytyped.runtime.StringDictionary[
-    java.lang.String | scala.Double | scala.Boolean | stdLib.Date | js.Array[java.lang.String] | js.Array[scala.Double]
+    java.lang.String | scala.Double | scala.Boolean | stdLib.Date | (js.Array[scala.Double | java.lang.String])
   ]
   type Visitor = pendoDashIoDashBrowserLib.Anon_Id with Metadata
 }

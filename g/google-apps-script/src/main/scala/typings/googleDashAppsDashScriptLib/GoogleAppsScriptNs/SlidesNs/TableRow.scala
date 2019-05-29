@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TableRow extends js.Object {
   def getCell(cellIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): TableCell
   def getIndex(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  def getMinimumHeight(): stdLib.Number
+  def getMinimumHeight(): scala.Double
   def getNumCells(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   def getParentTable(): Table
   def remove(): scala.Unit
@@ -19,7 +19,7 @@ object TableRow {
   def apply(
     getCell: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => TableCell,
     getIndex: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    getMinimumHeight: () => stdLib.Number,
+    getMinimumHeight: () => scala.Double,
     getNumCells: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     getParentTable: () => Table,
     remove: () => scala.Unit

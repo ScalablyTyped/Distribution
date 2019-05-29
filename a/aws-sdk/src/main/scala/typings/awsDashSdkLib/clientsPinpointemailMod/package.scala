@@ -18,6 +18,7 @@ package object clientsPinpointemailMod {
   type BlacklistItemNames = js.Array[BlacklistItemName]
   type BlacklistReport = org.scalablytyped.runtime.StringDictionary[BlacklistEntries]
   type BlacklistingDescription = java.lang.String
+  type CampaignId = java.lang.String
   type Charset = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CloudWatchDimensionConfigurations = js.Array[CloudWatchDimensionConfiguration]
@@ -27,6 +28,13 @@ package object clientsPinpointemailMod {
   type DailyVolumes = js.Array[DailyVolume]
   type DedicatedIpList = js.Array[DedicatedIp]
   type DefaultDimensionValue = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING_EXPIRATION
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
+  type DeliverabilityDashboardAccountStatus = _DeliverabilityDashboardAccountStatus | java.lang.String
   type DeliverabilityTestReports = js.Array[DeliverabilityTestReport]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
@@ -54,10 +62,15 @@ package object clientsPinpointemailMod {
   type DkimStatus = _DkimStatus | java.lang.String
   type DnsToken = java.lang.String
   type DnsTokenList = js.Array[DnsToken]
+  type Domain = java.lang.String
+  type DomainDeliverabilityCampaignList = js.Array[DomainDeliverabilityCampaign]
+  type DomainDeliverabilityTrackingOptions = js.Array[DomainDeliverabilityTrackingOption]
   type DomainIspPlacements = js.Array[DomainIspPlacement]
   type EmailAddress = java.lang.String
   type EmailAddressList = js.Array[EmailAddress]
   type Enabled = scala.Boolean
+  type Esp = java.lang.String
+  type Esps = js.Array[Esp]
   type EventDestinationName = java.lang.String
   type EventDestinations = js.Array[EventDestination]
   /* Rewritten from type alias, can be one of: 
@@ -83,8 +96,11 @@ package object clientsPinpointemailMod {
     - java.lang.String
   */
   type IdentityType = _IdentityType | java.lang.String
+  type ImageUrl = java.lang.String
   type Ip = java.lang.String
+  type IpList = js.Array[Ip]
   type IspName = java.lang.String
+  type IspNameList = js.Array[IspName]
   type IspPlacements = js.Array[IspPlacement]
   type LastFreshStart = stdLib.Date
   type ListOfDedicatedIpPools = js.Array[PoolName]
@@ -116,6 +132,7 @@ package object clientsPinpointemailMod {
   type ReportName = java.lang.String
   type SendingPoolName = java.lang.String
   type SentLast24Hours = scala.Double
+  type Subject = java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]

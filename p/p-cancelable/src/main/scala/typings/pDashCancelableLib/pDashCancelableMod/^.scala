@@ -41,7 +41,7 @@ object ^ extends js.Object {
   	Rejection reason when `.cancel()` is called.
   	It includes a `.isCanceled` property for convenience.
   	*/
-  var CancelError: org.scalablytyped.runtime.Instantiable1[/* reason */ js.UndefOr[/* reason */ java.lang.String], CancelErrorClass] = js.native
+  var CancelError: org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* reason */ java.lang.String], CancelErrorClass] = js.native
   def fn[ReturnType](userFn: js.Function1[/* repeated */ js.Any, js.Thenable[ReturnType]]): js.Function1[/* repeated */ js.Any, PCancelable[ReturnType]] = js.native
   def fn[Agument1Type, ReturnType](
     userFn: js.Function2[

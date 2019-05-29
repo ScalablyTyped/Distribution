@@ -12,6 +12,8 @@ trait Anon_Get extends js.Object {
   @JSName("is")
   var is_Original: typpyLib.typpyMod.CompareFn = js.native
   def get(): scala.Unit = js.native
+  def get(input: js.UndefOr[scala.Nothing], asString: typpyLib.typpyLibNumbers.`false`): scala.Unit = js.native
+  def get(input: js.UndefOr[scala.Nothing], asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.undefined = js.native
   def get(input: java.lang.String): stdLib.StringConstructor = js.native
   def get(input: java.lang.String, asString: typpyLib.typpyLibNumbers.`false`): stdLib.StringConstructor = js.native
   def get(input: java.lang.String, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.string = js.native
@@ -26,8 +28,6 @@ trait Anon_Get extends js.Object {
   def get(input: js.Function): stdLib.FunctionConstructor = js.native
   def get(input: js.Function, asString: typpyLib.typpyLibNumbers.`false`): stdLib.FunctionConstructor = js.native
   def get(input: js.Function, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.function = js.native
-  def get(input: js.UndefOr[scala.Nothing], asString: typpyLib.typpyLibNumbers.`false`): scala.Unit = js.native
-  def get(input: js.UndefOr[scala.Nothing], asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.undefined = js.native
   def get(input: scala.Boolean): stdLib.BooleanConstructor = js.native
   def get(input: scala.Boolean, asString: typpyLib.typpyLibNumbers.`false`): stdLib.BooleanConstructor = js.native
   def get(input: scala.Boolean, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.boolean = js.native

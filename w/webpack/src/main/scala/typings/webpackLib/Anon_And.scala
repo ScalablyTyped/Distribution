@@ -18,13 +18,13 @@ trait Anon_And
   /**
     * Exclude all modules matching any of these conditions
     */
-  var exclude: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.RuleSetCondition */ js.UndefOr[
+  var exclude: js.UndefOr[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.RuleSetCondition */ js.Object
   ] = js.undefined
   /**
     * Exclude all modules matching not any of these conditions
     */
-  var include: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.RuleSetCondition */ js.UndefOr[
+  var include: js.UndefOr[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.RuleSetCondition */ js.Object
   ] = js.undefined
   /**
@@ -46,7 +46,7 @@ trait Anon_And
   /**
     * Exclude all modules matching any of these conditions
     */
-  var test: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.RuleSetCondition */ js.UndefOr[
+  var test: js.UndefOr[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias webpack.webpack.RuleSetCondition */ js.Object
   ] = js.undefined
 }

@@ -8,10 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SignedData extends js.Object {
   var certificates: js.UndefOr[
-    js.Array[pkijsLib.srcCertificateMod.default] | js.Array[pkijsLib.srcOtherCertificateFormatMod.default]
+    js.Array[
+      pkijsLib.srcCertificateMod.default | pkijsLib.srcOtherCertificateFormatMod.default
+    ]
   ] = js.native
   var crls: js.UndefOr[
-    js.Array[pkijsLib.srcCertificateRevocationListMod.default] | js.Array[pkijsLib.srcOtherRevocationInfoFormatMod.default]
+    js.Array[
+      pkijsLib.srcCertificateRevocationListMod.default | pkijsLib.srcOtherRevocationInfoFormatMod.default
+    ]
   ] = js.native
   var digestAlgorithms: js.Array[pkijsLib.srcAlgorithmIdentifierMod.default] = js.native
   var encapContentInfo: pkijsLib.srcEncapsulatedContentInfoMod.default = js.native

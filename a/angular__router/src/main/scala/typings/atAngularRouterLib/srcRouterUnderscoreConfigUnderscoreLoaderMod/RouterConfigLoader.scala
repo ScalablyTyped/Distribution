@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class RouterConfigLoader protected () extends js.Object {
   def this(loader: atAngularCoreLib.atAngularCoreMod.NgModuleFactoryLoader, compiler: atAngularCoreLib.atAngularCoreMod.Compiler) = this()
   def this(loader: atAngularCoreLib.atAngularCoreMod.NgModuleFactoryLoader, compiler: atAngularCoreLib.atAngularCoreMod.Compiler, onLoadStartListener: js.Function1[/* r */ atAngularRouterLib.srcConfigMod.Route, scala.Unit]) = this()
-  def this(loader: atAngularCoreLib.atAngularCoreMod.NgModuleFactoryLoader, compiler: atAngularCoreLib.atAngularCoreMod.Compiler, onLoadStartListener: js.Function1[/* r */ atAngularRouterLib.srcConfigMod.Route, scala.Unit], onLoadEndListener: js.Function1[/* r */ atAngularRouterLib.srcConfigMod.Route, scala.Unit]) = this()
   def this(loader: atAngularCoreLib.atAngularCoreMod.NgModuleFactoryLoader, compiler: atAngularCoreLib.atAngularCoreMod.Compiler, onLoadStartListener: js.UndefOr[scala.Nothing], onLoadEndListener: js.Function1[/* r */ atAngularRouterLib.srcConfigMod.Route, scala.Unit]) = this()
+  def this(loader: atAngularCoreLib.atAngularCoreMod.NgModuleFactoryLoader, compiler: atAngularCoreLib.atAngularCoreMod.Compiler, onLoadStartListener: js.Function1[/* r */ atAngularRouterLib.srcConfigMod.Route, scala.Unit], onLoadEndListener: js.Function1[/* r */ atAngularRouterLib.srcConfigMod.Route, scala.Unit]) = this()
   var compiler: js.Any = js.native
   var loadModuleFactory: js.Any = js.native
   var loader: js.Any = js.native

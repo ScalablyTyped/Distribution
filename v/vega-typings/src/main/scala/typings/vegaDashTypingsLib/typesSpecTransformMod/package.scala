@@ -12,17 +12,14 @@ package object typesSpecTransformMod {
     - CollectTransform
     - CountPatternTransform
     - ContourTransform
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.cross]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.crossfilter]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.density]
+    - _TODO_[
+  vegaDashTypingsLib.vegaDashTypingsLibStrings.cross | vegaDashTypingsLib.vegaDashTypingsLibStrings.crossfilter | vegaDashTypingsLib.vegaDashTypingsLibStrings.density | vegaDashTypingsLib.vegaDashTypingsLibStrings.force | vegaDashTypingsLib.vegaDashTypingsLibStrings.geopath | vegaDashTypingsLib.vegaDashTypingsLibStrings.linkpath | vegaDashTypingsLib.vegaDashTypingsLibStrings.nest | vegaDashTypingsLib.vegaDashTypingsLibStrings.pack | vegaDashTypingsLib.vegaDashTypingsLibStrings.partition | vegaDashTypingsLib.vegaDashTypingsLibStrings.pie | vegaDashTypingsLib.vegaDashTypingsLibStrings.project | vegaDashTypingsLib.vegaDashTypingsLibStrings.resolvefilter | vegaDashTypingsLib.vegaDashTypingsLibStrings.sequence | vegaDashTypingsLib.vegaDashTypingsLibStrings.stratify | vegaDashTypingsLib.vegaDashTypingsLibStrings.tree | vegaDashTypingsLib.vegaDashTypingsLibStrings.treelinks | vegaDashTypingsLib.vegaDashTypingsLibStrings.treemap | vegaDashTypingsLib.vegaDashTypingsLibStrings.voronoi]
     - ExtentTransform
     - FilterTransform
     - FlattenTransform
     - FoldTransform
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.force]
     - FormulaTransform
     - GeoJSONTransform
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.geopath]
     - GeoPointTransform
     - GeoShapeTransform
     - GraticuleTransform
@@ -30,26 +27,15 @@ package object typesSpecTransformMod {
     - ImputeTransform
     - JoinAggregateTransform
     - KDETransform
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.linkpath]
     - LoessTransform
     - LookupTransform
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.nest]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.pack]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.partition]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.pie]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.project]
     - RegressionTransform
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.resolvefilter]
     - SampleTransform
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.sequence]
     - StackTransform
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.stratify]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.tree]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.treelinks]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.treemap]
-    - _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.voronoi]
     - WindowTransform
     - WordcloudTransform
   */
-  type Transforms = _Transforms | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.cross] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.crossfilter] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.density] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.force] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.geopath] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.linkpath] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.nest] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.pack] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.partition] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.pie] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.project] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.resolvefilter] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.sequence] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.stratify] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.tree] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.treelinks] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.treemap] | _TODO_[vegaDashTypingsLib.vegaDashTypingsLibStrings.voronoi]
+  type Transforms = _Transforms | (_TODO_[
+    vegaDashTypingsLib.vegaDashTypingsLibStrings.cross | vegaDashTypingsLib.vegaDashTypingsLibStrings.crossfilter | vegaDashTypingsLib.vegaDashTypingsLibStrings.density | vegaDashTypingsLib.vegaDashTypingsLibStrings.force | vegaDashTypingsLib.vegaDashTypingsLibStrings.geopath | vegaDashTypingsLib.vegaDashTypingsLibStrings.linkpath | vegaDashTypingsLib.vegaDashTypingsLibStrings.nest | vegaDashTypingsLib.vegaDashTypingsLibStrings.pack | vegaDashTypingsLib.vegaDashTypingsLibStrings.partition | vegaDashTypingsLib.vegaDashTypingsLibStrings.pie | vegaDashTypingsLib.vegaDashTypingsLibStrings.project | vegaDashTypingsLib.vegaDashTypingsLibStrings.resolvefilter | vegaDashTypingsLib.vegaDashTypingsLibStrings.sequence | vegaDashTypingsLib.vegaDashTypingsLibStrings.stratify | vegaDashTypingsLib.vegaDashTypingsLibStrings.tree | vegaDashTypingsLib.vegaDashTypingsLibStrings.treelinks | vegaDashTypingsLib.vegaDashTypingsLibStrings.treemap | vegaDashTypingsLib.vegaDashTypingsLibStrings.voronoi
+  ])
 }

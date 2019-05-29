@@ -16,7 +16,7 @@ trait TextStyleOptions extends js.Object {
   var dropShadowColor: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var dropShadowDistance: js.UndefOr[scala.Double] = js.undefined
   var fill: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | scala.Double | js.Array[scala.Double] | stdLib.CanvasGradient | stdLib.CanvasPattern
+    java.lang.String | (js.Array[scala.Double | java.lang.String]) | scala.Double | stdLib.CanvasGradient | stdLib.CanvasPattern
   ] = js.undefined
   var fillGradientStops: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var fillGradientType: js.UndefOr[scala.Double] = js.undefined
@@ -51,7 +51,7 @@ object TextStyleOptions {
     dropShadowBlur: scala.Int | scala.Double = null,
     dropShadowColor: java.lang.String | scala.Double = null,
     dropShadowDistance: scala.Int | scala.Double = null,
-    fill: java.lang.String | js.Array[java.lang.String] | scala.Double | js.Array[scala.Double] | stdLib.CanvasGradient | stdLib.CanvasPattern = null,
+    fill: java.lang.String | (js.Array[scala.Double | java.lang.String]) | scala.Double | stdLib.CanvasGradient | stdLib.CanvasPattern = null,
     fillGradientStops: js.Array[scala.Double] = null,
     fillGradientType: scala.Int | scala.Double = null,
     fontFamily: java.lang.String | js.Array[java.lang.String] = null,

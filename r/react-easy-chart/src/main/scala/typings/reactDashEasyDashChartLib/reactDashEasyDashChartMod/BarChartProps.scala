@@ -35,7 +35,7 @@ trait BarChartProps extends js.Object {
   /** Width of the chart in pixels */
   var width: js.UndefOr[scala.Double] = js.undefined
   /** The range that the x axis should show (otherwise automatically calculated) */
-  var xDomainRange: js.UndefOr[js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[java.lang.String]] = js.undefined
+  var xDomainRange: js.UndefOr[js.Array[stdLib.Date | scala.Double | java.lang.String]] = js.undefined
   /** The amount of ticks to be shown on the x axis */
   var xTickNumber: js.UndefOr[scala.Double] = js.undefined
   /** What data type the x axis is */
@@ -74,7 +74,7 @@ object BarChartProps {
     mouseOverHandler: (/* data */ BarData, /* mouseEvent */ stdLib.MouseEvent) => _ = null,
     tickTimeDisplayFormat: java.lang.String = null,
     width: scala.Int | scala.Double = null,
-    xDomainRange: js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[java.lang.String] = null,
+    xDomainRange: js.Array[stdLib.Date | scala.Double | java.lang.String] = null,
     xTickNumber: scala.Int | scala.Double = null,
     xType: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null,
     y2Type: reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.time | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.text | reactDashEasyDashChartLib.reactDashEasyDashChartLibStrings.linear = null,
@@ -99,7 +99,7 @@ object BarChartProps {
     if (mouseOverHandler != null) __obj.updateDynamic("mouseOverHandler")(js.Any.fromFunction2(mouseOverHandler))
     if (tickTimeDisplayFormat != null) __obj.updateDynamic("tickTimeDisplayFormat")(tickTimeDisplayFormat)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xDomainRange != null) __obj.updateDynamic("xDomainRange")(xDomainRange.asInstanceOf[js.Any])
+    if (xDomainRange != null) __obj.updateDynamic("xDomainRange")(xDomainRange)
     if (xTickNumber != null) __obj.updateDynamic("xTickNumber")(xTickNumber.asInstanceOf[js.Any])
     if (xType != null) __obj.updateDynamic("xType")(xType.asInstanceOf[js.Any])
     if (y2Type != null) __obj.updateDynamic("y2Type")(y2Type.asInstanceOf[js.Any])

@@ -20,6 +20,6 @@ package object googleDashProtobufMod {
   type FieldValue = js.UndefOr[
     java.lang.String | scala.Double | scala.Boolean | stdLib.Uint8Array | FieldValueArray
   ]
-  type RepeatedFieldType = js.Array[ScalarFieldType] | js.Array[stdLib.Uint8Array]
+  type RepeatedFieldType = js.Array[ScalarFieldType | stdLib.Uint8Array]
   type ScalarFieldType = scala.Boolean | scala.Double | java.lang.String
 }

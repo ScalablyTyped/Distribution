@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "treeify"
-version := "1.0-dt-20190102Z-ed5a4a"
+version := "1.0-dt-20190102Z-4c1220"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

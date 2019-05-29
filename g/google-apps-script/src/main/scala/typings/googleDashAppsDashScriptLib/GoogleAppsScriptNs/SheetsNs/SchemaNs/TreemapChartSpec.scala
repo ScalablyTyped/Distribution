@@ -13,8 +13,8 @@ trait TreemapChartSpec extends js.Object {
   var hintedLevels: js.UndefOr[scala.Double] = js.undefined
   var labels: js.UndefOr[ChartData] = js.undefined
   var levels: js.UndefOr[scala.Double] = js.undefined
-  var maxValue: js.UndefOr[stdLib.Number] = js.undefined
-  var minValue: js.UndefOr[stdLib.Number] = js.undefined
+  var maxValue: js.UndefOr[scala.Double] = js.undefined
+  var minValue: js.UndefOr[scala.Double] = js.undefined
   var parentLabels: js.UndefOr[ChartData] = js.undefined
   var sizeData: js.UndefOr[ChartData] = js.undefined
   var textFormat: js.UndefOr[TextFormat] = js.undefined
@@ -30,8 +30,8 @@ object TreemapChartSpec {
     hintedLevels: scala.Int | scala.Double = null,
     labels: ChartData = null,
     levels: scala.Int | scala.Double = null,
-    maxValue: stdLib.Number = null,
-    minValue: stdLib.Number = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
     parentLabels: ChartData = null,
     sizeData: ChartData = null,
     textFormat: TextFormat = null
@@ -44,8 +44,8 @@ object TreemapChartSpec {
     if (hintedLevels != null) __obj.updateDynamic("hintedLevels")(hintedLevels.asInstanceOf[js.Any])
     if (labels != null) __obj.updateDynamic("labels")(labels)
     if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
     if (parentLabels != null) __obj.updateDynamic("parentLabels")(parentLabels)
     if (sizeData != null) __obj.updateDynamic("sizeData")(sizeData)
     if (textFormat != null) __obj.updateDynamic("textFormat")(textFormat)

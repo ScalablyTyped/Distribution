@@ -18,14 +18,14 @@ trait Table extends js.Object {
   def findText(searchPattern: java.lang.String, from: RangeElement): RangeElement = js.native
   def getAttributes(): js.Object = js.native
   def getBorderColor(): java.lang.String = js.native
-  def getBorderWidth(): stdLib.Number = js.native
+  def getBorderWidth(): scala.Double = js.native
   def getCell(
     rowIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     cellIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): TableCell = js.native
   def getChild(childIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Element = js.native
   def getChildIndex(child: Element): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
-  def getColumnWidth(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): stdLib.Number = js.native
+  def getColumnWidth(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Double = js.native
   def getLinkUrl(): java.lang.String = js.native
   def getNextSibling(): Element = js.native
   def getNumChildren(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
@@ -45,8 +45,8 @@ trait Table extends js.Object {
   def replaceText(searchPattern: java.lang.String, replacement: java.lang.String): Element = js.native
   def setAttributes(attributes: js.Object): Table = js.native
   def setBorderColor(color: java.lang.String): Table = js.native
-  def setBorderWidth(width: stdLib.Number): Table = js.native
-  def setColumnWidth(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, width: stdLib.Number): Table = js.native
+  def setBorderWidth(width: scala.Double): Table = js.native
+  def setColumnWidth(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, width: scala.Double): Table = js.native
   def setLinkUrl(url: java.lang.String): Table = js.native
   def setTextAlignment(textAlignment: TextAlignment): Table = js.native
 }

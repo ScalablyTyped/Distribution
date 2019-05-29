@@ -13,12 +13,12 @@ class PassThrough () extends Transform {
   def this(options: TransformOptions) = this()
   def _transform[T](
     chunk: T,
-    encoding: java.lang.String,
+    encoding: js.UndefOr[scala.Nothing],
     callback: js.Function2[/* error */ js.Any, /* data */ T, scala.Unit]
   ): scala.Unit = js.native
   def _transform[T](
     chunk: T,
-    encoding: js.UndefOr[scala.Nothing],
+    encoding: java.lang.String,
     callback: js.Function2[/* error */ js.Any, /* data */ T, scala.Unit]
   ): scala.Unit = js.native
   def _transform[T](

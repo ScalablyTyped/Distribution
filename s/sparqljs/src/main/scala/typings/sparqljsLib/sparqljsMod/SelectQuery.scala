@@ -18,7 +18,7 @@ trait SelectQuery
   var order: js.UndefOr[js.Array[Ordering]] = js.undefined
   var queryType: sparqljsLib.sparqljsLibStrings.SELECT
   var reduced: js.UndefOr[scala.Boolean] = js.undefined
-  var variables: js.Array[Variable] | js.Array[sparqljsLib.sparqljsLibStrings.`*`]
+  var variables: js.Array[sparqljsLib.sparqljsLibStrings.`*` | Variable]
 }
 
 object SelectQuery {
@@ -27,7 +27,7 @@ object SelectQuery {
     prefixes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     queryType: sparqljsLib.sparqljsLibStrings.SELECT,
     `type`: sparqljsLib.sparqljsLibStrings.query,
-    variables: js.Array[Variable] | js.Array[sparqljsLib.sparqljsLibStrings.`*`],
+    variables: js.Array[sparqljsLib.sparqljsLibStrings.`*` | Variable],
     base: java.lang.String = null,
     distinct: js.UndefOr[scala.Boolean] = js.undefined,
     from: sparqljsLib.Anon_Default = null,
@@ -40,7 +40,7 @@ object SelectQuery {
     values: js.Array[ValuePatternRow] = null,
     where: js.Array[Pattern] = null
   ): SelectQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes, queryType = queryType, variables = variables.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(prefixes = prefixes, queryType = queryType, variables = variables)
     __obj.updateDynamic("type")(`type`)
     if (base != null) __obj.updateDynamic("base")(base)
     if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)

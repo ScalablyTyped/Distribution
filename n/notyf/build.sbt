@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "notyf"
-version := "2.0-dt-20180214Z-66b530"
+version := "2.0-dt-20180214Z-dec369"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

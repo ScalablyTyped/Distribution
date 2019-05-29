@@ -17,6 +17,6 @@ class Equation protected ()
   /* CompleteClass */
   override var rhs: algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Expression = js.native
   /* CompleteClass */
-  override def solveFor(variable: java.lang.String): algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction | js.Array[algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction] | js.Array[scala.Double] = js.native
+  override def solveFor(variable: java.lang.String): algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction | (js.Array[scala.Double | algebraDotJsLib.algebraDotJsMod.algebraNs.jsNs.Fraction]) = js.native
 }
 

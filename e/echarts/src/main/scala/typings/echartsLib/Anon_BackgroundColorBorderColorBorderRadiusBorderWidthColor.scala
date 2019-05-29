@@ -176,22 +176,7 @@ trait Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor extends js.Obj
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.rich
     */
-  var rich: /**
-    * The text color. Defaults to use
-    * [the color of section](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.color)
-    * where the numerical value belongs to.
-    *
-    *
-    * @todo check that the option is valid and should be here
-    * @default
-    * "auto"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.rich.color
-    */
-  // color?: string;
-  /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail.rich.%3Cuser%20defined%20style%20name%3E
-    */
-  js.UndefOr[
+  var rich: js.UndefOr[
     /**
     * The text color. Defaults to use
     * [the color of section](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle.color)

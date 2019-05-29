@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 class modal () extends js.Object {
   def this(options: Options) = this()
   def addFooterBtn(label: java.lang.String): stdLib.HTMLButtonElement = js.native
+  def addFooterBtn(
+    label: java.lang.String,
+    cssClass: js.UndefOr[scala.Nothing],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.MouseEvent, _]
+  ): stdLib.HTMLButtonElement = js.native
   def addFooterBtn(label: java.lang.String, cssClass: java.lang.String): stdLib.HTMLButtonElement = js.native
   def addFooterBtn(
     label: java.lang.String,
     cssClass: java.lang.String,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.MouseEvent, _]
-  ): stdLib.HTMLButtonElement = js.native
-  def addFooterBtn(
-    label: java.lang.String,
-    cssClass: js.UndefOr[scala.Nothing],
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.MouseEvent, _]
   ): stdLib.HTMLButtonElement = js.native
   def checkOverflow(): scala.Unit = js.native

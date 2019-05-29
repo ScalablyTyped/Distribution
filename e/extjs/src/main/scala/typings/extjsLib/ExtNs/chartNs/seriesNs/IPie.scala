@@ -18,6 +18,11 @@ trait IPie extends ISeries {
   var field: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (Number) */
   var highlightDuration: js.UndefOr[scala.Double] = js.undefined
+  /** [Method] Highlight the specified item
+  		* @param item Object {Object} Info about the item; same format as returned by getItemForPoint
+  		*/
+  @JSName("highlightItem")
+  var highlightItem_IPie: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (String) */
   var lengthField: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (Object) */

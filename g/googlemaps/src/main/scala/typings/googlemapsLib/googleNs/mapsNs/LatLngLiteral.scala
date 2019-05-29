@@ -5,6 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Object literals are accepted in place of {@link LatLng} objects, as a
+  * convenience, in many places. These are converted to {@link LatLng} objects
+  * when the Maps API encounters them.
+  * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngLiteral Maps JavaScript API}
+  */
 trait LatLngLiteral
   extends googlemapsLib.googleNs.mapsNs.placesNs._LocationBias {
   /**

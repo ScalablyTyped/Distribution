@@ -31,7 +31,7 @@ trait ExternalProperties extends js.Object {
     */
   var externalizedProperties: js.UndefOr[PropertyBag] = js.undefined
   /**
-    * An array of graph objects that will merged with a separate run.
+    * An array of graph objects that will be merged with a separate run.
     */
   var graphs: js.UndefOr[js.Array[Graph]] = js.undefined
   /**

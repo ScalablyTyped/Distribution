@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
 }
 
@@ -22,7 +22,7 @@ object IDividerProps {
   def apply(
     HTMLAttributes: reactLib.reactMod.HTMLAttributes[stdLib.HTMLElement] = null,
     IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null
   ): IDividerProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLAttributes)

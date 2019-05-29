@@ -60,9 +60,9 @@ trait Shapes extends js.Object {
   ): Shape = js.native
   def AddLine(BeginX: scala.Double, BeginY: scala.Double, EndX: scala.Double, EndY: scala.Double): Shape = js.native
   def AddOLEObject(
-    ClassType: java.lang.String,
-    Filename: js.UndefOr[js.UndefOr[scala.Nothing]],
-    Link: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`false`],
+    ClassType: js.UndefOr[scala.Nothing],
+    Filename: java.lang.String,
+    Link: js.UndefOr[scala.Boolean],
     DisplayAsIcon: js.UndefOr[scala.Boolean],
     IconFileName: js.UndefOr[java.lang.String],
     IconIndex: js.UndefOr[scala.Double],
@@ -73,9 +73,9 @@ trait Shapes extends js.Object {
     Height: js.UndefOr[scala.Double]
   ): Shape = js.native
   def AddOLEObject(
-    ClassType: js.UndefOr[scala.Nothing],
-    Filename: java.lang.String,
-    Link: js.UndefOr[scala.Boolean],
+    ClassType: java.lang.String,
+    Filename: js.UndefOr[scala.Nothing],
+    Link: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`false`],
     DisplayAsIcon: js.UndefOr[scala.Boolean],
     IconFileName: js.UndefOr[java.lang.String],
     IconIndex: js.UndefOr[scala.Double],

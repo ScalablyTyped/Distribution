@@ -25,7 +25,7 @@ trait Typeofui extends js.Object {
   var Dialog: TypeofClassDialog = js.native
   var Draggable: org.scalablytyped.runtime.Instantiable2[
     /* element */ stdLib.Element, 
-    /* options */ js.UndefOr[/* options */ kendoDashUiLib.kendoNs.uiNs.DraggableOptions], 
+    js.UndefOr[/* options */ kendoDashUiLib.kendoNs.uiNs.DraggableOptions], 
     kendoDashUiLib.kendoNs.uiNs.Draggable
   ] = js.native
   var DropDownList: TypeofClassDropDownList = js.native
@@ -33,7 +33,7 @@ trait Typeofui extends js.Object {
   var DropTarget: TypeofClassDropTarget = js.native
   var DropTargetArea: org.scalablytyped.runtime.Instantiable2[
     /* element */ stdLib.Element, 
-    /* options */ js.UndefOr[/* options */ kendoDashUiLib.kendoNs.uiNs.DropTargetAreaOptions], 
+    js.UndefOr[/* options */ kendoDashUiLib.kendoNs.uiNs.DropTargetAreaOptions], 
     kendoDashUiLib.kendoNs.uiNs.DropTargetArea
   ] = js.native
   var Editor: TypeofClassEditor = js.native

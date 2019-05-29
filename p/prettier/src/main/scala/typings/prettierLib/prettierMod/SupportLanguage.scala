@@ -15,7 +15,7 @@ trait SupportLanguage extends js.Object {
   var group: js.UndefOr[java.lang.String] = js.undefined
   var linguistLanguageId: scala.Double
   var name: java.lang.String
-  var parsers: js.Array[BuiltInParserName] | js.Array[java.lang.String]
+  var parsers: js.Array[BuiltInParserName | java.lang.String]
   var since: js.UndefOr[java.lang.String] = js.undefined
   var tmScope: java.lang.String
   var vscodeLanguageIds: js.Array[java.lang.String]
@@ -30,7 +30,7 @@ object SupportLanguage {
     extensions: js.Array[java.lang.String],
     linguistLanguageId: scala.Double,
     name: java.lang.String,
-    parsers: js.Array[BuiltInParserName] | js.Array[java.lang.String],
+    parsers: js.Array[BuiltInParserName | java.lang.String],
     tmScope: java.lang.String,
     vscodeLanguageIds: js.Array[java.lang.String],
     aliases: js.Array[java.lang.String] = null,
@@ -38,7 +38,7 @@ object SupportLanguage {
     group: java.lang.String = null,
     since: java.lang.String = null
   ): SupportLanguage = {
-    val __obj = js.Dynamic.literal(aceMode = aceMode, codemirrorMimeType = codemirrorMimeType, codemirrorMode = codemirrorMode, extensions = extensions, linguistLanguageId = linguistLanguageId, name = name, parsers = parsers.asInstanceOf[js.Any], tmScope = tmScope, vscodeLanguageIds = vscodeLanguageIds)
+    val __obj = js.Dynamic.literal(aceMode = aceMode, codemirrorMimeType = codemirrorMimeType, codemirrorMode = codemirrorMode, extensions = extensions, linguistLanguageId = linguistLanguageId, name = name, parsers = parsers, tmScope = tmScope, vscodeLanguageIds = vscodeLanguageIds)
     if (aliases != null) __obj.updateDynamic("aliases")(aliases)
     if (filenames != null) __obj.updateDynamic("filenames")(filenames)
     if (group != null) __obj.updateDynamic("group")(group)

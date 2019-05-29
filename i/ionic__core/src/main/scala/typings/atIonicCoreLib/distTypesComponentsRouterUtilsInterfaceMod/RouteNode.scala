@@ -15,7 +15,7 @@ object RouteNode {
     children: RouteTree,
     id: java.lang.String,
     path: js.Array[java.lang.String],
-    params: org.scalablytyped.runtime.StringDictionary[_] = null
+    params: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): RouteNode = {
     val __obj = js.Dynamic.literal(children = children, id = id, path = path)
     if (params != null) __obj.updateDynamic("params")(params)

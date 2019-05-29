@@ -10,9 +10,9 @@ trait Request
   extends nodeLib.streamMod.Stream
      with caselessLib.caselessMod.Httpified {
   var agent: requestLib.requestLibNumbers.`false` | nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent = js.native
-  var body: nodeLib.Buffer | js.Array[nodeLib.Buffer] | java.lang.String | js.Array[java.lang.String] | nodeLib.streamMod.Readable = js.native
+  var body: nodeLib.Buffer | (js.Array[nodeLib.Buffer | java.lang.String]) | java.lang.String | nodeLib.streamMod.Readable = js.native
   var ca: js.UndefOr[
-    java.lang.String | nodeLib.Buffer | js.Array[java.lang.String] | js.Array[nodeLib.Buffer]
+    java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | java.lang.String])
   ] = js.native
   var callback: js.UndefOr[RequestCallback] = js.native
   var cert: js.UndefOr[nodeLib.Buffer] = js.native

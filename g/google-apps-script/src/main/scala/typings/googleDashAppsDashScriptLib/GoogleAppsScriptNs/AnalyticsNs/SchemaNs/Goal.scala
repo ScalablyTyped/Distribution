@@ -20,7 +20,7 @@ trait Goal extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var updated: js.UndefOr[java.lang.String] = js.undefined
   var urlDestinationDetails: js.UndefOr[GoalUrlDestinationDetails] = js.undefined
-  var value: js.UndefOr[stdLib.Number] = js.undefined
+  var value: js.UndefOr[scala.Double] = js.undefined
   var visitNumPagesDetails: js.UndefOr[GoalVisitNumPagesDetails] = js.undefined
   var visitTimeOnSiteDetails: js.UndefOr[GoalVisitTimeOnSiteDetails] = js.undefined
   var webPropertyId: js.UndefOr[java.lang.String] = js.undefined
@@ -43,7 +43,7 @@ object Goal {
     `type`: java.lang.String = null,
     updated: java.lang.String = null,
     urlDestinationDetails: GoalUrlDestinationDetails = null,
-    value: stdLib.Number = null,
+    value: scala.Int | scala.Double = null,
     visitNumPagesDetails: GoalVisitNumPagesDetails = null,
     visitTimeOnSiteDetails: GoalVisitTimeOnSiteDetails = null,
     webPropertyId: java.lang.String = null
@@ -63,7 +63,7 @@ object Goal {
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (updated != null) __obj.updateDynamic("updated")(updated)
     if (urlDestinationDetails != null) __obj.updateDynamic("urlDestinationDetails")(urlDestinationDetails)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (visitNumPagesDetails != null) __obj.updateDynamic("visitNumPagesDetails")(visitNumPagesDetails)
     if (visitTimeOnSiteDetails != null) __obj.updateDynamic("visitTimeOnSiteDetails")(visitTimeOnSiteDetails)
     if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId)

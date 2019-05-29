@@ -186,15 +186,13 @@ trait PartialManifest extends js.Object {
     * at run time rather than install time, so users understand why the
     * permissions are needed and grant only those that are necessary.
     */
-  var optional_permissions: js.UndefOr[
-    js.Array[OptionalPermission] | (js.Array[OptionalPermission | js.Array[UrlMatches]]) | (js.Array[OptionalPermission | js.Array[UrlMatches] | java.lang.String])
-  ] = js.undefined
+  var optional_permissions: js.UndefOr[js.Array[js.Array[UrlMatches] | OptionalPermission | java.lang.String]] = js.undefined
   /**
     * Permissions help to limit damage if your app is compromised by malware.
     * Some permissions are also displayed to users before installation,
     * as detailed in Permission Warnings.
     */
-  var permissions: js.UndefOr[js.Array[Permission] | (js.Array[Permission | java.lang.String])] = js.undefined
+  var permissions: js.UndefOr[js.Array[Permission | java.lang.String]] = js.undefined
   /**
     * Native Client
     * @see[NDK Docs]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/doc/devguide/distributing.rst}
@@ -345,8 +343,8 @@ object PartialManifest {
     nacl_modules: js.Array[chromeDashAppsLib.Anon_Mimetype] = null,
     oauth2: chromeDashAppsLib.Anon_Clientid = null,
     offline_enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    optional_permissions: js.Array[OptionalPermission] | (js.Array[OptionalPermission | js.Array[UrlMatches]]) | (js.Array[OptionalPermission | js.Array[UrlMatches] | java.lang.String]) = null,
-    permissions: js.Array[Permission] | (js.Array[Permission | java.lang.String]) = null,
+    optional_permissions: js.Array[js.Array[UrlMatches] | OptionalPermission | java.lang.String] = null,
+    permissions: js.Array[Permission | java.lang.String] = null,
     platforms: js.Array[chromeDashAppsLib.Anon_Arm] = null,
     requirements: chromeDashAppsLib.Anon_3D = null,
     sandbox: chromeDashAppsLib.Anon_Contentsecuritypolicy = null,
@@ -382,8 +380,8 @@ object PartialManifest {
     if (nacl_modules != null) __obj.updateDynamic("nacl_modules")(nacl_modules)
     if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2)
     if (!js.isUndefined(offline_enabled)) __obj.updateDynamic("offline_enabled")(offline_enabled)
-    if (optional_permissions != null) __obj.updateDynamic("optional_permissions")(optional_permissions.asInstanceOf[js.Any])
-    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (optional_permissions != null) __obj.updateDynamic("optional_permissions")(optional_permissions)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
     if (platforms != null) __obj.updateDynamic("platforms")(platforms)
     if (requirements != null) __obj.updateDynamic("requirements")(requirements)
     if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)

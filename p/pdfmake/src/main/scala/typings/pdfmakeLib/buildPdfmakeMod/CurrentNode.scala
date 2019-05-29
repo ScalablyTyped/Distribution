@@ -20,7 +20,7 @@ trait CurrentNode extends js.Object {
   var startPosition: pdfmakeLib.Anon_HorizontalRatio
   var style: java.lang.String | js.Array[java.lang.String]
   var table: Table
-  var text: java.lang.String | js.Array[java.lang.String] | js.Array[Content]
+  var text: java.lang.String | (js.Array[Content | java.lang.String])
   var ul: js.Array[Content]
 }
 
@@ -41,7 +41,7 @@ object CurrentNode {
     startPosition: pdfmakeLib.Anon_HorizontalRatio,
     style: java.lang.String | js.Array[java.lang.String],
     table: Table,
-    text: java.lang.String | js.Array[java.lang.String] | js.Array[Content],
+    text: java.lang.String | (js.Array[Content | java.lang.String]),
     ul: js.Array[Content]
   ): CurrentNode = {
     val __obj = js.Dynamic.literal(canvas = canvas, columns = columns, headlineLevel = headlineLevel, id = id, image = image, ol = ol, pageNumbers = pageNumbers, pageOrientation = pageOrientation, pages = pages, qr = qr, stack = stack, startPosition = startPosition, style = style.asInstanceOf[js.Any], table = table, text = text.asInstanceOf[js.Any], ul = ul)

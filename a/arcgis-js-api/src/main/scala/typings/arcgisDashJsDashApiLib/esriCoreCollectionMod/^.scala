@@ -19,14 +19,14 @@ object ^ extends js.Object {
   def isCollection[T](value: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Collection[T]): /* is arcgis-js-api.__esri.Collection<T> */ scala.Boolean = js.native
   def isCollection[T](value: js.Any): /* is arcgis-js-api.__esri.Collection<T> */ scala.Boolean = js.native
   def ofType[T /* <: Base */, Base](`type`: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Constructor[T]): org.scalablytyped.runtime.Instantiable1[
-    /* items */ js.UndefOr[
-      /* items */ js.Array[T] | arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Collection[T] | arcgisDashJsDashApiLib.Anon_Items[T]
+    js.UndefOr[
+      js.Array[T] | arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Collection[T] | arcgisDashJsDashApiLib.Anon_Items[T]
     ], 
     arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Collection[T]
   ] = js.native
   def ofType[T /* <: Base */, Base](`type`: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Types[T, Base]): org.scalablytyped.runtime.Instantiable1[
-    /* items */ js.UndefOr[
-      /* items */ js.Array[T] | arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Collection[T] | arcgisDashJsDashApiLib.Anon_Items[T]
+    js.UndefOr[
+      js.Array[T] | arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Collection[T] | arcgisDashJsDashApiLib.Anon_Items[T]
     ], 
     arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Collection[T]
   ] = js.native

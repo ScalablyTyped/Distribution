@@ -30,12 +30,12 @@ trait Post extends js.Object {
     fn: js.Function1[/* err */ js.Any, scala.Unit]
   ): js.Promise[scala.Unit] = js.native
   def render(
-    source: java.lang.String,
+    source: js.UndefOr[scala.Nothing],
     data: hexoLib.hexoMod.PostNs.RenderData,
     fn: js.Function1[/* err */ js.Any, scala.Unit]
   ): js.Promise[scala.Unit] = js.native
   def render(
-    source: js.UndefOr[scala.Nothing],
+    source: java.lang.String,
     data: hexoLib.hexoMod.PostNs.RenderData,
     fn: js.Function1[/* err */ js.Any, scala.Unit]
   ): js.Promise[scala.Unit] = js.native

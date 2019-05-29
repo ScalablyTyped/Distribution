@@ -73,13 +73,10 @@ trait Options extends js.Object {
     * The data source to query against
     */
   var source: js.UndefOr[
-    js.Array[java.lang.String] | js.Array[js.Object] | (js.Function2[
+    (js.Array[js.Object | java.lang.String]) | (js.Function2[
       /* query */ js.UndefOr[java.lang.String], 
       /* process */ js.UndefOr[
-        js.Function1[
-          /* callback */ js.Any, 
-          java.lang.String | js.Array[java.lang.String] | js.Array[js.Object]
-        ]
+        js.Function1[/* callback */ js.Any, java.lang.String | (js.Array[js.Object | java.lang.String])]
       ], 
       scala.Unit
     ])
@@ -107,13 +104,10 @@ object Options {
     scrollHeight: scala.Double | js.Function0[scala.Double] = null,
     showHintOnFocus: scala.Boolean | bootstrapDash3DashTypeaheadLib.bootstrapDash3DashTypeaheadLibStrings.all = null,
     sorter: /* items */ js.Array[java.lang.String] => js.Array[java.lang.String] = null,
-    source: js.Array[java.lang.String] | js.Array[js.Object] | (js.Function2[
+    source: (js.Array[js.Object | java.lang.String]) | (js.Function2[
       /* query */ js.UndefOr[java.lang.String], 
       /* process */ js.UndefOr[
-        js.Function1[
-          /* callback */ js.Any, 
-          java.lang.String | js.Array[java.lang.String] | js.Array[js.Object]
-        ]
+        js.Function1[/* callback */ js.Any, java.lang.String | (js.Array[js.Object | java.lang.String])]
       ], 
       scala.Unit
     ]) = null,

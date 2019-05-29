@@ -67,8 +67,8 @@ object ^ extends js.Object {
   ): js.Promise[java.lang.String] = js.native
   def getArchCliNames(): js.Array[java.lang.String] = js.native
   def getArchSuffix(arch: builderDashUtilLib.outArchMod.Arch): java.lang.String = js.native
-  def getPlatformIconFileName(value: java.lang.String, isMac: scala.Boolean): js.UndefOr[java.lang.String | scala.Null] = js.native
   def getPlatformIconFileName(value: js.UndefOr[scala.Nothing], isMac: scala.Boolean): js.UndefOr[java.lang.String | scala.Null] = js.native
+  def getPlatformIconFileName(value: java.lang.String, isMac: scala.Boolean): js.UndefOr[java.lang.String | scala.Null] = js.native
   def getPlatformIconFileName(value: scala.Null, isMac: scala.Boolean): js.UndefOr[java.lang.String | scala.Null] = js.native
   def isEmptyOrSpaces(): scala.Boolean = js.native
   def isEmptyOrSpaces(s: java.lang.String): scala.Boolean = js.native
@@ -77,8 +77,8 @@ object ^ extends js.Object {
   def isPullRequest(): js.UndefOr[scala.Boolean | builderDashUtilLib.builderDashUtilLibStrings.Empty] = js.native
   def isTokenCharValid(token: java.lang.String): scala.Boolean = js.native
   def removePassword(input: java.lang.String): java.lang.String = js.native
-  def replaceDefault(inList: js.Array[java.lang.String], defaultList: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def replaceDefault(inList: js.UndefOr[scala.Nothing], defaultList: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
+  def replaceDefault(inList: js.Array[java.lang.String], defaultList: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def replaceDefault(inList: scala.Null, defaultList: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def safeStringifyJson(data: js.Any): java.lang.String = js.native
   def safeStringifyJson(data: js.Any, skippedNames: stdLib.Set[java.lang.String]): java.lang.String = js.native

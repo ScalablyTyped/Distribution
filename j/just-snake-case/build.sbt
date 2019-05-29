@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "just-snake-case"
-version := "1.1-dt-20190514Z-f022f8"
+version := "1.1-dt-20190514Z-eeaa7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

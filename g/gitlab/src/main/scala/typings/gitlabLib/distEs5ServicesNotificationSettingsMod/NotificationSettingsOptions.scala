@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NotificationSettingsOptions extends js.Object {
   var groupId: js.UndefOr[java.lang.String] = js.undefined
-  var projectId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProjectId */ js.UndefOr[
+  var projectId: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProjectId */ js.Any
   ] = js.undefined
 }

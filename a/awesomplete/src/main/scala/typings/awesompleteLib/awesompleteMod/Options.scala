@@ -17,7 +17,9 @@ trait Options extends js.Object {
     js.Function2[/* text */ java.lang.String, /* input */ java.lang.String, stdLib.HTMLElement]
   ] = js.undefined
   var list: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | stdLib.Element | js.Array[awesompleteLib.Anon_LabelValue] | (js.Array[js.Tuple2[java.lang.String, java.lang.String]])
+    java.lang.String | (js.Array[
+      awesompleteLib.Anon_LabelValue | java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])
+    ]) | stdLib.Element
   ] = js.undefined
   var maxItems: js.UndefOr[scala.Double] = js.undefined
   var minChars: js.UndefOr[scala.Double] = js.undefined
@@ -32,7 +34,9 @@ object Options {
     data: (/* item */ Suggestion, /* input */ java.lang.String) => java.lang.String = null,
     filter: (/* text */ java.lang.String, /* input */ java.lang.String) => scala.Boolean = null,
     item: (/* text */ java.lang.String, /* input */ java.lang.String) => stdLib.HTMLElement = null,
-    list: java.lang.String | js.Array[java.lang.String] | stdLib.Element | js.Array[awesompleteLib.Anon_LabelValue] | (js.Array[js.Tuple2[java.lang.String, java.lang.String]]) = null,
+    list: java.lang.String | (js.Array[
+      awesompleteLib.Anon_LabelValue | java.lang.String | (js.Tuple2[java.lang.String, java.lang.String])
+    ]) | stdLib.Element = null,
     maxItems: scala.Int | scala.Double = null,
     minChars: scala.Int | scala.Double = null,
     replace: /* text */ java.lang.String => scala.Unit = null,

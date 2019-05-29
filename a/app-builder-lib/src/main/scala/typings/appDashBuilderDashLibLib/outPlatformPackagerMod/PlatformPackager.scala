@@ -146,58 +146,23 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Target */ _
     ]
   ): js.Promise[scala.Unit] = js.native
-  def expandArtifactBeautyNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
-    ext: java.lang.String
-  ): java.lang.String = js.native
-  def expandArtifactBeautyNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
-    ext: java.lang.String,
-    arch: builderDashUtilLib.outArchMod.Arch
-  ): java.lang.String = js.native
   def expandArtifactBeautyNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: java.lang.String): java.lang.String = js.native
   def expandArtifactBeautyNamePattern(
     targetSpecificOptions: js.UndefOr[scala.Nothing],
     ext: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch
   ): java.lang.String = js.native
-  def expandArtifactBeautyNamePattern(targetSpecificOptions: scala.Null, ext: java.lang.String): java.lang.String = js.native
-  def expandArtifactBeautyNamePattern(targetSpecificOptions: scala.Null, ext: java.lang.String, arch: builderDashUtilLib.outArchMod.Arch): java.lang.String = js.native
-  def expandArtifactNamePattern(
+  def expandArtifactBeautyNamePattern(
     targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
     ext: java.lang.String
   ): java.lang.String = js.native
-  def expandArtifactNamePattern(
+  def expandArtifactBeautyNamePattern(
     targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
     ext: java.lang.String,
     arch: builderDashUtilLib.outArchMod.Arch
   ): java.lang.String = js.native
-  def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
-    ext: java.lang.String,
-    arch: builderDashUtilLib.outArchMod.Arch,
-    defaultPattern: java.lang.String
-  ): java.lang.String = js.native
-  def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
-    ext: java.lang.String,
-    arch: builderDashUtilLib.outArchMod.Arch,
-    defaultPattern: java.lang.String,
-    skipArchIfX64: scala.Boolean
-  ): java.lang.String = js.native
-  def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
-    ext: java.lang.String,
-    arch: scala.Null,
-    defaultPattern: java.lang.String
-  ): java.lang.String = js.native
-  def expandArtifactNamePattern(
-    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
-    ext: java.lang.String,
-    arch: scala.Null,
-    defaultPattern: java.lang.String,
-    skipArchIfX64: scala.Boolean
-  ): java.lang.String = js.native
+  def expandArtifactBeautyNamePattern(targetSpecificOptions: scala.Null, ext: java.lang.String): java.lang.String = js.native
+  def expandArtifactBeautyNamePattern(targetSpecificOptions: scala.Null, ext: java.lang.String, arch: builderDashUtilLib.outArchMod.Arch): java.lang.String = js.native
   def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: java.lang.String): java.lang.String = js.native
   def expandArtifactNamePattern(
     targetSpecificOptions: js.UndefOr[scala.Nothing],
@@ -225,6 +190,41 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
   ): java.lang.String = js.native
   def expandArtifactNamePattern(
     targetSpecificOptions: js.UndefOr[scala.Nothing],
+    ext: java.lang.String,
+    arch: scala.Null,
+    defaultPattern: java.lang.String,
+    skipArchIfX64: scala.Boolean
+  ): java.lang.String = js.native
+  def expandArtifactNamePattern(
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    ext: java.lang.String
+  ): java.lang.String = js.native
+  def expandArtifactNamePattern(
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    ext: java.lang.String,
+    arch: builderDashUtilLib.outArchMod.Arch
+  ): java.lang.String = js.native
+  def expandArtifactNamePattern(
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    ext: java.lang.String,
+    arch: builderDashUtilLib.outArchMod.Arch,
+    defaultPattern: java.lang.String
+  ): java.lang.String = js.native
+  def expandArtifactNamePattern(
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    ext: java.lang.String,
+    arch: builderDashUtilLib.outArchMod.Arch,
+    defaultPattern: java.lang.String,
+    skipArchIfX64: scala.Boolean
+  ): java.lang.String = js.native
+  def expandArtifactNamePattern(
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
+    ext: java.lang.String,
+    arch: scala.Null,
+    defaultPattern: java.lang.String
+  ): java.lang.String = js.native
+  def expandArtifactNamePattern(
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetSpecificOptions */ js.Any,
     ext: java.lang.String,
     arch: scala.Null,
     defaultPattern: java.lang.String,
@@ -269,11 +269,11 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
   ): java.lang.String = js.native
   def expandMacro(pattern: java.lang.String, arch: scala.Null, extra: js.Any): java.lang.String = js.native
   def expandMacro(pattern: java.lang.String, arch: scala.Null, extra: js.Any, isProductNameSanitized: scala.Boolean): java.lang.String = js.native
-  def generateName2(ext: java.lang.String, classifier: java.lang.String, deployment: scala.Boolean): java.lang.String = js.native
   def generateName2(ext: java.lang.String, classifier: js.UndefOr[scala.Nothing], deployment: scala.Boolean): java.lang.String = js.native
+  def generateName2(ext: java.lang.String, classifier: java.lang.String, deployment: scala.Boolean): java.lang.String = js.native
   def generateName2(ext: java.lang.String, classifier: scala.Null, deployment: scala.Boolean): java.lang.String = js.native
-  def generateName2(ext: scala.Null, classifier: java.lang.String, deployment: scala.Boolean): java.lang.String = js.native
   def generateName2(ext: scala.Null, classifier: js.UndefOr[scala.Nothing], deployment: scala.Boolean): java.lang.String = js.native
+  def generateName2(ext: scala.Null, classifier: java.lang.String, deployment: scala.Boolean): java.lang.String = js.native
   def generateName2(ext: scala.Null, classifier: scala.Null, deployment: scala.Boolean): java.lang.String = js.native
   /* protected */ def getCscLink(): js.UndefOr[java.lang.String | scala.Null] = js.native
   /* protected */ def getCscLink(extraEnvName: java.lang.String): js.UndefOr[java.lang.String | scala.Null] = js.native

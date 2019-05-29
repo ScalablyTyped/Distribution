@@ -25,48 +25,28 @@ class Calendar protected ()
     * @param vAriaLabelledBy the ariaLabelledBy to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def addAriaLabelledBy(vAriaLabelledBy: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
-  def addAriaLabelledBy(vAriaLabelledBy: openui5Lib.sapNs.uiNs.coreNs.Control): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def addAriaLabelledBy(vAriaLabelledBy: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
+  def addAriaLabelledBy(vAriaLabelledBy: openui5Lib.sapNs.uiNs.coreNs.Control): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Adds some disabledDate to the aggregation <code>disabledDates</code>.
     * @since 1.38.0
     * @param oDisabledDate the disabledDate to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def addDisabledDate(oDisabledDate: DateRange): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def addDisabledDate(oDisabledDate: DateRange): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Adds some selectedDate to the aggregation <code>selectedDates</code>.
     * @param oSelectedDate the selectedDate to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def addSelectedDate(oSelectedDate: DateRange): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def addSelectedDate(oSelectedDate: DateRange): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Adds some specialDate to the aggregation <code>specialDates</code>.
     * @since 1.24.0
     * @param oSpecialDate the specialDate to add; if empty, nothing is inserted
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def addSpecialDate(oSpecialDate: DateTypeRange): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def addSpecialDate(oSpecialDate: DateTypeRange): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>cancel</code> event of this
     * <code>sap.ui.unified.Calendar</code>.When called, the context of the event handler (its
@@ -79,16 +59,8 @@ class Calendar protected ()
     * <code>sap.ui.unified.Calendar</code> itself
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def attachCancel(oData: js.Any, fnFunction: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
-  def attachCancel(oData: js.Any, fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def attachCancel(oData: js.Any, fnFunction: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
+  def attachCancel(oData: js.Any, fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this
     * <code>sap.ui.unified.Calendar</code>.When called, the context of the event handler (its
@@ -101,16 +73,8 @@ class Calendar protected ()
     * <code>sap.ui.unified.Calendar</code> itself
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def attachSelect(oData: js.Any, fnFunction: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
-  def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def attachSelect(oData: js.Any, fnFunction: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
+  def attachSelect(oData: js.Any, fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>startDateChange</code> event of this
     * <code>sap.ui.unified.Calendar</code>.When called, the context of the event handler (its
@@ -126,45 +90,25 @@ class Calendar protected ()
     * <code>sap.ui.unified.Calendar</code> itself
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def attachStartDateChange(oData: js.Any, fnFunction: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
-  def attachStartDateChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def attachStartDateChange(oData: js.Any, fnFunction: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
+  def attachStartDateChange(oData: js.Any, fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Destroys all the disabledDates in the aggregation <code>disabledDates</code>.
     * @since 1.38.0
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def destroyDisabledDates(): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def destroyDisabledDates(): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Destroys all the selectedDates in the aggregation <code>selectedDates</code>.
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def destroySelectedDates(): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def destroySelectedDates(): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Destroys all the specialDates in the aggregation <code>specialDates</code>.
     * @since 1.24.0
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def destroySpecialDates(): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def destroySpecialDates(): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>cancel</code> event of this
     * <code>sap.ui.unified.Calendar</code>.The passed function and listener object must match the ones
@@ -173,11 +117,7 @@ class Calendar protected ()
     * @param oListener Context object on which the given function had to be called
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def detachCancel(fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def detachCancel(fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>select</code> event of this
     * <code>sap.ui.unified.Calendar</code>.The passed function and listener object must match the ones
@@ -186,11 +126,7 @@ class Calendar protected ()
     * @param oListener Context object on which the given function had to be called
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def detachSelect(fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def detachSelect(fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Detaches event handler <code>fnFunction</code> from the <code>startDateChange</code> event of this
     * <code>sap.ui.unified.Calendar</code>.The passed function and listener object must match the ones
@@ -200,63 +136,39 @@ class Calendar protected ()
     * @param oListener Context object on which the given function had to be called
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def detachStartDateChange(fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def detachStartDateChange(fnFunction: js.Any, oListener: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Displays a date in the calendar but don't set the focus.
     * @since 1.28.0
     * @param oDate JavaScript date object for focused date.
     * @returns <code>this</code> to allow method chaining
     */
-  def displayDate(oDate: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def displayDate(oDate: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Fires event <code>cancel</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def fireCancel(mArguments: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def fireCancel(mArguments: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Fires event <code>select</code> to attached listeners.
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def fireSelect(mArguments: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def fireSelect(mArguments: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Fires event <code>startDateChange</code> to attached listeners.
     * @since 1.34.0
     * @param mArguments The arguments to pass along with the event
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def fireStartDateChange(mArguments: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def fireStartDateChange(mArguments: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Sets the focused date of the calendar.
     * @param oDate JavaScript date object for focused date.
     * @returns <code>this</code> to allow method chaining
     */
-  def focusDate(oDate: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def focusDate(oDate: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
@@ -401,11 +313,7 @@ class Calendar protected ()
     *  the last position
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def insertDisabledDate(oDisabledDate: DateRange, iIndex: scala.Double): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def insertDisabledDate(oDisabledDate: DateRange, iIndex: scala.Double): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Inserts a selectedDate into the aggregation <code>selectedDates</code>.
     * @param oSelectedDate the selectedDate to insert; if empty, nothing is inserted
@@ -415,11 +323,7 @@ class Calendar protected ()
     *  the last position
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def insertSelectedDate(oSelectedDate: DateRange, iIndex: scala.Double): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def insertSelectedDate(oSelectedDate: DateRange, iIndex: scala.Double): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Inserts a specialDate into the aggregation <code>specialDates</code>.
     * @since 1.24.0
@@ -430,11 +334,7 @@ class Calendar protected ()
     * the last position
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def insertSpecialDate(oSpecialDate: DateTypeRange, iIndex: scala.Double): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def insertSpecialDate(oSpecialDate: DateTypeRange, iIndex: scala.Double): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @since 1.28.0
@@ -513,11 +413,7 @@ class Calendar protected ()
     * @param bIntervalSelection New value for property <code>intervalSelection</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setIntervalSelection(bIntervalSelection: scala.Boolean): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def setIntervalSelection(bIntervalSelection: scala.Boolean): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Sets the associated <code>legend</code>.
     * @since 1.38.5
@@ -525,16 +421,8 @@ class Calendar protected ()
     * alternatively, an element instance may be given
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setLegend(oLegend: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
-  def setLegend(oLegend: CalendarLegend): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def setLegend(oLegend: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
+  def setLegend(oLegend: CalendarLegend): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Sets a new value for property <code>maxDate</code>.Maximum date that can be shown and selected in
     * the Calendar. This must be a JavaScript date object.<b>Note:</b> if the date is inside of a month
@@ -546,11 +434,7 @@ class Calendar protected ()
     * @param oMaxDate New value for property <code>maxDate</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setMaxDate(oMaxDate: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def setMaxDate(oMaxDate: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Sets a new value for property <code>minDate</code>.Minimum date that can be shown and selected in
     * the Calendar. This must be a JavaScript date object.<b>Note:</b> if the date is inside of a month
@@ -562,11 +446,7 @@ class Calendar protected ()
     * @param oMinDate New value for property <code>minDate</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setMinDate(oMinDate: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def setMinDate(oMinDate: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Sets a new value for property <code>months</code>.number of months displayedon phones always only
     * one month is displayedWhen called with a value of <code>null</code> or <code>undefined</code>, the
@@ -585,11 +465,7 @@ class Calendar protected ()
     * @param sNonWorkingDays New value for property <code>nonWorkingDays</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setNonWorkingDays(sNonWorkingDays: scala.Double): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def setNonWorkingDays(sNonWorkingDays: scala.Double): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Sets a new value for property <code>primaryCalendarType</code>.If set, the calendar type is used for
     * display.If not set, the calendar type of the global configuration is used.When called with a value
@@ -598,11 +474,7 @@ class Calendar protected ()
     * @param sPrimaryCalendarType New value for property <code>primaryCalendarType</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setPrimaryCalendarType(sPrimaryCalendarType: openui5Lib.sapNs.uiNs.coreNs.CalendarType): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def setPrimaryCalendarType(sPrimaryCalendarType: openui5Lib.sapNs.uiNs.coreNs.CalendarType): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Sets a new value for property <code>secondaryCalendarType</code>.If set, the days are also displayed
     * in this calendar typeIf not set, the dates are only displayed in the primary calendar typeWhen
@@ -612,11 +484,7 @@ class Calendar protected ()
     * @param sSecondaryCalendarType New value for property <code>secondaryCalendarType</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setSecondaryCalendarType(sSecondaryCalendarType: openui5Lib.sapNs.uiNs.coreNs.CalendarType): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def setSecondaryCalendarType(sSecondaryCalendarType: openui5Lib.sapNs.uiNs.coreNs.CalendarType): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Sets a new value for property <code>singleSelection</code>.If set, only a single date or interval,
     * if intervalSelection is enabled, can be selectedWhen called with a value of <code>null</code> or
@@ -625,11 +493,7 @@ class Calendar protected ()
     * @param bSingleSelection New value for property <code>singleSelection</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setSingleSelection(bSingleSelection: scala.Boolean): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def setSingleSelection(bSingleSelection: scala.Boolean): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
   /**
     * Sets a new value for property <code>width</code>.Width of Calendar<b>Note:</b> There is a theme
     * depending minimum width, so the calendar can not be set smaller.When called with a value of
@@ -638,10 +502,6 @@ class Calendar protected ()
     * @param sWidth New value for property <code>width</code>
     * @returns Reference to <code>this</code> in order to allow method chaining
     */
-  def setWidth(sWidth: js.Any): org.scalablytyped.runtime.Instantiable2[
-    /* sId */ java.lang.String, 
-    /* mSettings */ js.UndefOr[/* mSettings */ js.Any], 
-    Calendar
-  ] = js.native
+  def setWidth(sWidth: js.Any): org.scalablytyped.runtime.Instantiable2[/* sId */ java.lang.String, js.UndefOr[/* mSettings */ js.Any], Calendar] = js.native
 }
 

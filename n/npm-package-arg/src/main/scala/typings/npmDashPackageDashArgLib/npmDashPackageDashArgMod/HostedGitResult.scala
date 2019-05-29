@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 trait HostedGitResult extends Result {
   @JSName("fetchSpec")
   var fetchSpec_HostedGitResult: scala.Null | java.lang.String = js.native
+  @JSName("gitCommittish")
+  var gitCommittish_HostedGitResult: js.UndefOr[java.lang.String] = js.native
+  @JSName("gitRange")
+  var gitRange_HostedGitResult: js.UndefOr[java.lang.String] = js.native
   @JSName("hosted")
   var hosted_HostedGitResult: HostedGit = js.native
   @JSName("saveSpec")

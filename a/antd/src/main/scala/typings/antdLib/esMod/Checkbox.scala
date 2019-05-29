@@ -14,7 +14,7 @@ class Checkbox ()
 @JSImport("antd/es", "Checkbox")
 @js.native
 object Checkbox extends js.Object {
-  var Group: antdLib.Anon_ChildContextTypes = js.native
+  var Group: antdLib.TypeofClassCheckboxGroup = js.native
   var contextTypes: antdLib.Anon_CheckboxGroup = js.native
   var defaultProps: antdLib.Anon_Indeterminate = js.native
 }

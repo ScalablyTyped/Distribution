@@ -17,6 +17,11 @@ class FormStateLazy[TValue /* <: ValidatableArray */] protected ()
   var _error: js.UndefOr[java.lang.String | scala.Null] = js.native
   var _validators: js.Array[formstateLib.libCoreTypesMod.Validator[TValue]] = js.native
   /**
+    * The first error from any sub (if any) or form error
+    */
+  @JSName("error")
+  val error_FormStateLazy: js.UndefOr[java.lang.String | scala.Null] = js.native
+  /**
     * Error from some sub field if any
     */
   val fieldError: js.UndefOr[java.lang.String | scala.Null] = js.native

@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 trait ITrigger extends IText {
   /** [Config Option] (Boolean) */
   var editable: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Method] Generates the arguments for the field decorations rendering template
+  		* @returns Object The template arguments
+  		*/
+  @JSName("getLabelableRenderData")
+  var getLabelableRenderData_ITrigger: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Get the total width of the trigger button area
   		* @returns Number The total trigger width
   		*/

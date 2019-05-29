@@ -15,9 +15,9 @@ trait CommonProps[OptionType] extends js.Object {
   def clearValue(): scala.Unit = js.native
   def cx(): java.lang.String | scala.Unit = js.native
   def cx(a: java.lang.String): java.lang.String | scala.Unit = js.native
-  def cx(a: java.lang.String, b: ClassNamesState | js.UndefOr[scala.Nothing], c: java.lang.String): java.lang.String | scala.Unit = js.native
+  def cx(a: java.lang.String, b: js.UndefOr[ClassNamesState], c: java.lang.String): java.lang.String | scala.Unit = js.native
   def cx(a: java.lang.String, b: ClassNamesState): java.lang.String | scala.Unit = js.native
-  def cx(a: scala.Null, b: ClassNamesState | js.UndefOr[scala.Nothing], c: java.lang.String): java.lang.String | scala.Unit = js.native
+  def cx(a: scala.Null, b: js.UndefOr[ClassNamesState], c: java.lang.String): java.lang.String | scala.Unit = js.native
   def cx(a: scala.Null, b: ClassNamesState): java.lang.String | scala.Unit = js.native
   /*
     Get the styles of a particular part of the select. Pass in the name of the

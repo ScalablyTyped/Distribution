@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait KosProps[T] extends js.Object {
   var dispatch: js.UndefOr[js.Function1[/* action */ Action[T], scala.Unit]] = js.undefined
   var getNamespace: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
-  var getParam: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  var getParam: js.UndefOr[js.Function0[_]] = js.undefined
 }
 
 object KosProps {
@@ -16,7 +16,7 @@ object KosProps {
   def apply[T](
     dispatch: /* action */ Action[T] => scala.Unit = null,
     getNamespace: () => java.lang.String = null,
-    getParam: () => java.lang.String = null
+    getParam: () => _ = null
   ): KosProps[T] = {
     val __obj = js.Dynamic.literal()
     if (dispatch != null) __obj.updateDynamic("dispatch")(js.Any.fromFunction1(dispatch))

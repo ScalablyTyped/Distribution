@@ -19,7 +19,7 @@ trait CourseWork extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.undefined
   var materials: js.UndefOr[js.Array[Material]] = js.undefined
-  var maxPoints: js.UndefOr[stdLib.Number] = js.undefined
+  var maxPoints: js.UndefOr[scala.Double] = js.undefined
   var multipleChoiceQuestion: js.UndefOr[MultipleChoiceQuestion] = js.undefined
   var scheduledTime: js.UndefOr[java.lang.String] = js.undefined
   var state: js.UndefOr[java.lang.String] = js.undefined
@@ -45,7 +45,7 @@ object CourseWork {
     id: java.lang.String = null,
     individualStudentsOptions: IndividualStudentsOptions = null,
     materials: js.Array[Material] = null,
-    maxPoints: stdLib.Number = null,
+    maxPoints: scala.Int | scala.Double = null,
     multipleChoiceQuestion: MultipleChoiceQuestion = null,
     scheduledTime: java.lang.String = null,
     state: java.lang.String = null,
@@ -68,7 +68,7 @@ object CourseWork {
     if (id != null) __obj.updateDynamic("id")(id)
     if (individualStudentsOptions != null) __obj.updateDynamic("individualStudentsOptions")(individualStudentsOptions)
     if (materials != null) __obj.updateDynamic("materials")(materials)
-    if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints)
+    if (maxPoints != null) __obj.updateDynamic("maxPoints")(maxPoints.asInstanceOf[js.Any])
     if (multipleChoiceQuestion != null) __obj.updateDynamic("multipleChoiceQuestion")(multipleChoiceQuestion)
     if (scheduledTime != null) __obj.updateDynamic("scheduledTime")(scheduledTime)
     if (state != null) __obj.updateDynamic("state")(state)

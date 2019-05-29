@@ -14,7 +14,7 @@ package object json2mdMod {
   {[ TConverter in 'blockquote' | 'code' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'img' | 'ol' | 'p' | 'table' | 'ul' ]:? json2md.json2md.DefaultConverters.Converters[TConverter]}
     */ json2mdLib.json2mdLibStrings.DataObject with json2mdLib.json2mdMod.DefaultConvertersNs.Converters
   type json2md = js.Function2[
-    /* data */ DataObject | js.Array[DataObject] | java.lang.String | js.Array[java.lang.String], 
+    /* data */ DataObject | (js.Array[DataObject | java.lang.String]) | java.lang.String, 
     /* prefix */ js.UndefOr[java.lang.String], 
     java.lang.String
   ]

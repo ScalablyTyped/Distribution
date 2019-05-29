@@ -12,7 +12,7 @@ abstract class ReflectionSerializerComponent[T /* <: typedocLib.distLibModelsMod
   var serializeGroupSymbol_ReflectionSerializerComponent: org.scalablytyped.runtime.Instantiable3[
     /* name */ java.lang.String, 
     /* kind */ typedocLib.distLibModelsReflectionsAbstractMod.ReflectionKind, 
-    /* parent */ js.UndefOr[/* parent */ typedocLib.distLibModelsReflectionsAbstractMod.Reflection], 
+    js.UndefOr[/* parent */ typedocLib.distLibModelsReflectionsAbstractMod.Reflection], 
     typedocLib.distLibModelsMod.Reflection
   ] = js.native
 }

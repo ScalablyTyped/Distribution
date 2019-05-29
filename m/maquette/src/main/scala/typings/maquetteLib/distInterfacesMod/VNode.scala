@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VNode extends js.Object {
+trait VNode extends _VNodeChild {
   /**
     * Array of [[VNode]]s to be used as children. This array is already flattened.
     */

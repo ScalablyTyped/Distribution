@@ -6,21 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FileImageMediaMetadata extends js.Object {
-  var aperture: js.UndefOr[stdLib.Number] = js.undefined
+  var aperture: js.UndefOr[scala.Double] = js.undefined
   var cameraMake: js.UndefOr[java.lang.String] = js.undefined
   var cameraModel: js.UndefOr[java.lang.String] = js.undefined
   var colorSpace: js.UndefOr[java.lang.String] = js.undefined
   var date: js.UndefOr[java.lang.String] = js.undefined
-  var exposureBias: js.UndefOr[stdLib.Number] = js.undefined
+  var exposureBias: js.UndefOr[scala.Double] = js.undefined
   var exposureMode: js.UndefOr[java.lang.String] = js.undefined
-  var exposureTime: js.UndefOr[stdLib.Number] = js.undefined
+  var exposureTime: js.UndefOr[scala.Double] = js.undefined
   var flashUsed: js.UndefOr[scala.Boolean] = js.undefined
-  var focalLength: js.UndefOr[stdLib.Number] = js.undefined
+  var focalLength: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var isoSpeed: js.UndefOr[scala.Double] = js.undefined
   var lens: js.UndefOr[java.lang.String] = js.undefined
   var location: js.UndefOr[FileImageMediaMetadataLocation] = js.undefined
-  var maxApertureValue: js.UndefOr[stdLib.Number] = js.undefined
+  var maxApertureValue: js.UndefOr[scala.Double] = js.undefined
   var meteringMode: js.UndefOr[java.lang.String] = js.undefined
   var rotation: js.UndefOr[scala.Double] = js.undefined
   var sensor: js.UndefOr[java.lang.String] = js.undefined
@@ -32,21 +32,21 @@ trait FileImageMediaMetadata extends js.Object {
 object FileImageMediaMetadata {
   @scala.inline
   def apply(
-    aperture: stdLib.Number = null,
+    aperture: scala.Int | scala.Double = null,
     cameraMake: java.lang.String = null,
     cameraModel: java.lang.String = null,
     colorSpace: java.lang.String = null,
     date: java.lang.String = null,
-    exposureBias: stdLib.Number = null,
+    exposureBias: scala.Int | scala.Double = null,
     exposureMode: java.lang.String = null,
-    exposureTime: stdLib.Number = null,
+    exposureTime: scala.Int | scala.Double = null,
     flashUsed: js.UndefOr[scala.Boolean] = js.undefined,
-    focalLength: stdLib.Number = null,
+    focalLength: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,
     isoSpeed: scala.Int | scala.Double = null,
     lens: java.lang.String = null,
     location: FileImageMediaMetadataLocation = null,
-    maxApertureValue: stdLib.Number = null,
+    maxApertureValue: scala.Int | scala.Double = null,
     meteringMode: java.lang.String = null,
     rotation: scala.Int | scala.Double = null,
     sensor: java.lang.String = null,
@@ -55,21 +55,21 @@ object FileImageMediaMetadata {
     width: scala.Int | scala.Double = null
   ): FileImageMediaMetadata = {
     val __obj = js.Dynamic.literal()
-    if (aperture != null) __obj.updateDynamic("aperture")(aperture)
+    if (aperture != null) __obj.updateDynamic("aperture")(aperture.asInstanceOf[js.Any])
     if (cameraMake != null) __obj.updateDynamic("cameraMake")(cameraMake)
     if (cameraModel != null) __obj.updateDynamic("cameraModel")(cameraModel)
     if (colorSpace != null) __obj.updateDynamic("colorSpace")(colorSpace)
     if (date != null) __obj.updateDynamic("date")(date)
-    if (exposureBias != null) __obj.updateDynamic("exposureBias")(exposureBias)
+    if (exposureBias != null) __obj.updateDynamic("exposureBias")(exposureBias.asInstanceOf[js.Any])
     if (exposureMode != null) __obj.updateDynamic("exposureMode")(exposureMode)
-    if (exposureTime != null) __obj.updateDynamic("exposureTime")(exposureTime)
+    if (exposureTime != null) __obj.updateDynamic("exposureTime")(exposureTime.asInstanceOf[js.Any])
     if (!js.isUndefined(flashUsed)) __obj.updateDynamic("flashUsed")(flashUsed)
-    if (focalLength != null) __obj.updateDynamic("focalLength")(focalLength)
+    if (focalLength != null) __obj.updateDynamic("focalLength")(focalLength.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (isoSpeed != null) __obj.updateDynamic("isoSpeed")(isoSpeed.asInstanceOf[js.Any])
     if (lens != null) __obj.updateDynamic("lens")(lens)
     if (location != null) __obj.updateDynamic("location")(location)
-    if (maxApertureValue != null) __obj.updateDynamic("maxApertureValue")(maxApertureValue)
+    if (maxApertureValue != null) __obj.updateDynamic("maxApertureValue")(maxApertureValue.asInstanceOf[js.Any])
     if (meteringMode != null) __obj.updateDynamic("meteringMode")(meteringMode)
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (sensor != null) __obj.updateDynamic("sensor")(sensor)

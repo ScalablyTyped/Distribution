@@ -11,7 +11,7 @@ trait DescribeDBEngineVersionsMessage extends js.Object {
     */
   var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates whether only the default version of the specified engine or engine and major version combination is returned.
+    * Indicates that only the default version of the specified engine or engine and major version combination is returned.
     */
   var DefaultOnly: js.UndefOr[Boolean] = js.undefined
   /**
@@ -27,11 +27,15 @@ trait DescribeDBEngineVersionsMessage extends js.Object {
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   /**
-    * A value that indicates whether to list the supported character sets for each engine version. If this parameter is enabled and the requested engine supports the CharacterSetName parameter for CreateDBInstance, the response includes a list of supported character sets for each engine version. 
+    * Whether to include non-available engine versions in the list. The default is to list only available engine versions.
+    */
+  var IncludeAll: js.UndefOr[BooleanOptional] = js.undefined
+  /**
+    * If this parameter is specified and the requested engine supports the CharacterSetName parameter for CreateDBInstance, the response includes a list of supported character sets for each engine version. 
     */
   var ListSupportedCharacterSets: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * A value that indicates whether to list the supported time zones for each engine version. If this parameter is enabled and the requested engine supports the TimeZone parameter for CreateDBInstance, the response includes a list of supported time zones for each engine version. 
+    * If this parameter is specified and the requested engine supports the TimeZone parameter for CreateDBInstance, the response includes a list of supported time zones for each engine version. 
     */
   var ListSupportedTimezones: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -52,6 +56,7 @@ object DescribeDBEngineVersionsMessage {
     Engine: String = null,
     EngineVersion: String = null,
     Filters: FilterList = null,
+    IncludeAll: js.UndefOr[BooleanOptional] = js.undefined,
     ListSupportedCharacterSets: js.UndefOr[BooleanOptional] = js.undefined,
     ListSupportedTimezones: js.UndefOr[BooleanOptional] = js.undefined,
     Marker: String = null,
@@ -63,6 +68,7 @@ object DescribeDBEngineVersionsMessage {
     if (Engine != null) __obj.updateDynamic("Engine")(Engine)
     if (EngineVersion != null) __obj.updateDynamic("EngineVersion")(EngineVersion)
     if (Filters != null) __obj.updateDynamic("Filters")(Filters)
+    if (!js.isUndefined(IncludeAll)) __obj.updateDynamic("IncludeAll")(IncludeAll)
     if (!js.isUndefined(ListSupportedCharacterSets)) __obj.updateDynamic("ListSupportedCharacterSets")(ListSupportedCharacterSets)
     if (!js.isUndefined(ListSupportedTimezones)) __obj.updateDynamic("ListSupportedTimezones")(ListSupportedTimezones)
     if (Marker != null) __obj.updateDynamic("Marker")(Marker)

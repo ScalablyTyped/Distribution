@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait DockerOptions extends js.Object {
   var Promise: js.UndefOr[stdLib.PromiseConstructor] = js.undefined
   var ca: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer]
+    java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer
   ] = js.undefined
   var cert: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer]
+    java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer
   ] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
   var key: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | js.Array[KeyObject]
+    java.lang.String | (js.Array[nodeLib.Buffer | KeyObject | java.lang.String]) | nodeLib.Buffer
   ] = js.undefined
   var port: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var protocol: js.UndefOr[dockerodeLib.dockerodeLibStrings.https | dockerodeLib.dockerodeLibStrings.http] = js.undefined
@@ -28,10 +28,10 @@ object DockerOptions {
   @scala.inline
   def apply(
     Promise: stdLib.PromiseConstructor = null,
-    ca: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
-    cert: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
+    ca: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer = null,
+    cert: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer = null,
     host: java.lang.String = null,
-    key: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | js.Array[KeyObject] = null,
+    key: java.lang.String | (js.Array[nodeLib.Buffer | KeyObject | java.lang.String]) | nodeLib.Buffer = null,
     port: scala.Double | java.lang.String = null,
     protocol: dockerodeLib.dockerodeLibStrings.https | dockerodeLib.dockerodeLibStrings.http = null,
     socketPath: java.lang.String = null,

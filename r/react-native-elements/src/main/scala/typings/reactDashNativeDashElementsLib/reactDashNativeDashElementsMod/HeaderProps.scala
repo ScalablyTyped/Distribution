@@ -72,7 +72,7 @@ import scala.scalajs.js.annotation._
   /**
     * Accepts all props for StatusBar
     */
-  var statusBarProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StatusBarProperties */ js.UndefOr[
+  var statusBarProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StatusBarProperties */ js.Any
   ] = js.undefined
 }

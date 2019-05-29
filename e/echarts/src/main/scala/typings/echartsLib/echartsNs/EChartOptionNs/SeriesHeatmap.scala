@@ -214,13 +214,11 @@ trait SeriesHeatmap extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.data
     */
   var data: js.UndefOr[
-    (js.Array[
-      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesHeatmapNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    js.Array[
+      (js.Array[
         scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesHeatmapNs.DataObject
-      ]
-    ])
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesHeatmapNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ]
   ] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.emphasis
@@ -407,13 +405,11 @@ object SeriesHeatmap {
     blurSize: scala.Int | scala.Double = null,
     calendarIndex: scala.Int | scala.Double = null,
     coordinateSystem: java.lang.String = null,
-    data: (js.Array[
-      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesHeatmapNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    data: js.Array[
+      (js.Array[
         scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesHeatmapNs.DataObject
-      ]
-    ]) = null,
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesHeatmapNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ] = null,
     emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorOptional = null,
     geoIndex: scala.Int | scala.Double = null,
     id: java.lang.String = null,
@@ -437,7 +433,7 @@ object SeriesHeatmap {
     if (blurSize != null) __obj.updateDynamic("blurSize")(blurSize.asInstanceOf[js.Any])
     if (calendarIndex != null) __obj.updateDynamic("calendarIndex")(calendarIndex.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
     if (geoIndex != null) __obj.updateDynamic("geoIndex")(geoIndex.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)

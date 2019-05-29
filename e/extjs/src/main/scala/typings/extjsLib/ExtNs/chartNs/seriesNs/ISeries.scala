@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Highlight the given series item
   		* @param item Object Info about the item; same format as returned by #getItemForPoint.
   		*/
-  var highlightItem: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var highlightItem: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Determines whether the series item at the given index has been excluded i e
   		* @param index Object
   		*/
@@ -54,10 +54,10 @@ import scala.scalajs.js.annotation._
   		*/
   var onCreateLabel: js.UndefOr[
     js.Function4[
-      /* storeItem */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
-      /* item */ js.UndefOr[js.Any], 
-      /* i */ js.UndefOr[scala.Double], 
-      /* display */ js.UndefOr[java.lang.String], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[java.lang.String], 
       extjsLib.ExtNs.drawNs.ISprite
     ]
   ] = js.undefined
@@ -72,13 +72,13 @@ import scala.scalajs.js.annotation._
   		*/
   var onPlaceLabel: js.UndefOr[
     js.Function7[
-      /* label */ js.UndefOr[extjsLib.ExtNs.drawNs.ISprite], 
-      /* storeItem */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
-      /* item */ js.UndefOr[js.Any], 
-      /* i */ js.UndefOr[scala.Double], 
-      /* display */ js.UndefOr[java.lang.String], 
-      /* animate */ js.UndefOr[scala.Boolean], 
-      /* index */ js.UndefOr[scala.Double], 
+      js.UndefOr[extjsLib.ExtNs.drawNs.ISprite], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
+      js.UndefOr[js.Any], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[java.lang.String], 
+      js.UndefOr[scala.Boolean], 
+      js.UndefOr[scala.Double], 
       scala.Unit
     ]
   ] = js.undefined

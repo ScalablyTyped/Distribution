@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SCBrokerClusterServerOptions extends js.Object {
   var appBrokerControllerPath: js.UndefOr[java.lang.String] = js.undefined
-  var brokerOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.UndefOr[
+  var brokerOptions: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any
   ] = js.undefined
   var brokers: js.Array[java.lang.String]

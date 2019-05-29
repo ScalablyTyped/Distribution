@@ -16,7 +16,7 @@ trait TypeofutilA extends js.Object {
     */
   var LogRotator: org.scalablytyped.runtime.Instantiable2[
     /* target */ java.lang.String, 
-    /* options */ js.UndefOr[/* options */ Anon_CheckInterval], 
+    js.UndefOr[/* options */ Anon_CheckInterval], 
     adoneLib.adoneNs.utilNs.LogRotator
   ] = js.native
   @JSName("binarySearch")

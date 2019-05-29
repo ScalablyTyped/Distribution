@@ -16,7 +16,7 @@ class LoggerFactory () extends js.Object {
       /* level */ java.lang.String, 
       /* category */ java.lang.String, 
       /* label */ js.UndefOr[java.lang.String], 
-      /* content */ _, 
+      /* content */ js.Any, 
       scala.Unit
     ]
   ] = js.native
@@ -25,8 +25,8 @@ class LoggerFactory () extends js.Object {
   var loggers: js.Any = js.native
   var print: js.Any = js.native
   var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
-  def genericLog(levelToLog: Levels, category: java.lang.String, label: java.lang.String, content: js.Any): scala.Unit = js.native
   def genericLog(levelToLog: Levels, category: java.lang.String, label: js.UndefOr[scala.Nothing], content: js.Any): scala.Unit = js.native
+  def genericLog(levelToLog: Levels, category: java.lang.String, label: java.lang.String, content: js.Any): scala.Unit = js.native
   def getLogger(category: java.lang.String): Logger = js.native
   def getLogger(category: java.lang.String, label: java.lang.String): Logger = js.native
 }

@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LinearGradient
   extends org.scalablytyped.runtime.Instantiable6[
-      /* x */ js.UndefOr[/* x */ X], 
-      /* y */ js.UndefOr[/* y */ Y], 
-      /* x2 */ js.UndefOr[/* x2 */ X2], 
-      /* y2 */ js.UndefOr[/* y2 */ Y2], 
-      /* colorStops */ js.UndefOr[/* colorStops */ ColorStops], 
-      /* globalCoord */ js.UndefOr[/* globalCoord */ GlobalCoords], 
+      js.UndefOr[/* x */ X], 
+      js.UndefOr[/* y */ Y], 
+      js.UndefOr[/* x2 */ X2], 
+      js.UndefOr[/* y2 */ Y2], 
+      js.UndefOr[/* colorStops */ ColorStops], 
+      js.UndefOr[/* globalCoord */ GlobalCoords], 
       zrenderLib.Anon_AddColorStop
     ]
 

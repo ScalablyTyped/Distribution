@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class Client () extends js.Object {
   var BugsnagBreadcrumb: org.scalablytyped.runtime.Instantiable4[
     /* name */ java.lang.String, 
-    /* metaData */ js.UndefOr[/* metaData */ js.Object], 
-    /* type */ js.UndefOr[/* type */ java.lang.String], 
-    /* timestamp */ js.UndefOr[/* timestamp */ java.lang.String], 
+    js.UndefOr[/* metaData */ js.Object], 
+    js.UndefOr[/* type */ java.lang.String], 
+    js.UndefOr[/* timestamp */ java.lang.String], 
     bugsnagDashJsLib.typesBreadcrumbMod.default
   ] = js.native
   var BugsnagReport: bugsnagDashJsLib.Anon_EnsureReport = js.native

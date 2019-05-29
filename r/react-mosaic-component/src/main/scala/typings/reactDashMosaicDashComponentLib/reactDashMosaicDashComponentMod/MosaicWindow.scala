@@ -16,7 +16,7 @@ class MosaicWindow[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey
 object MosaicWindow extends js.Object {
   def ofType[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](): org.scalablytyped.runtime.Instantiable2[
     /* props */ reactDashMosaicDashComponentLib.libMosaicWindowMod.MosaicWindowProps[T], 
-    /* context */ js.UndefOr[/* context */ js.Any], 
+    js.UndefOr[/* context */ js.Any], 
     reactDashMosaicDashComponentLib.libMosaicWindowMod.MosaicWindow[T]
   ] = js.native
 }

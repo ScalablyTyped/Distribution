@@ -612,6 +612,16 @@ object ^ extends js.Object {
     keylen: scala.Double,
     options: nodeLib.cryptoMod.ScryptOptions
   ): nodeLib.Buffer = js.native
+  def sign(
+    algorithm: js.UndefOr[scala.Nothing],
+    data: nodeLib.cryptoMod.Binary,
+    key: nodeLib.cryptoMod.KeyLike
+  ): nodeLib.Buffer = js.native
+  def sign(
+    algorithm: js.UndefOr[scala.Nothing],
+    data: nodeLib.cryptoMod.Binary,
+    key: nodeLib.cryptoMod.SignPrivateKeyInput
+  ): nodeLib.Buffer = js.native
   /**
     * Calculates and returns the signature for `data` using the given private key and
     * algorithm. If `algorithm` is `null` or `undefined`, then the algorithm is
@@ -626,19 +636,21 @@ object ^ extends js.Object {
     data: nodeLib.cryptoMod.Binary,
     key: nodeLib.cryptoMod.SignPrivateKeyInput
   ): nodeLib.Buffer = js.native
-  def sign(
-    algorithm: js.UndefOr[scala.Nothing],
-    data: nodeLib.cryptoMod.Binary,
-    key: nodeLib.cryptoMod.KeyLike
-  ): nodeLib.Buffer = js.native
-  def sign(
-    algorithm: js.UndefOr[scala.Nothing],
-    data: nodeLib.cryptoMod.Binary,
-    key: nodeLib.cryptoMod.SignPrivateKeyInput
-  ): nodeLib.Buffer = js.native
   def sign(algorithm: scala.Null, data: nodeLib.cryptoMod.Binary, key: nodeLib.cryptoMod.KeyLike): nodeLib.Buffer = js.native
   def sign(algorithm: scala.Null, data: nodeLib.cryptoMod.Binary, key: nodeLib.cryptoMod.SignPrivateKeyInput): nodeLib.Buffer = js.native
   def timingSafeEqual(a: nodeLib.cryptoMod.Binary, b: nodeLib.cryptoMod.Binary): scala.Boolean = js.native
+  def verify(
+    algorithm: js.UndefOr[scala.Nothing],
+    data: nodeLib.cryptoMod.Binary,
+    key: nodeLib.cryptoMod.KeyLike,
+    signature: nodeLib.cryptoMod.Binary
+  ): nodeLib.Buffer = js.native
+  def verify(
+    algorithm: js.UndefOr[scala.Nothing],
+    data: nodeLib.cryptoMod.Binary,
+    key: nodeLib.cryptoMod.VerifyKeyWithOptions,
+    signature: nodeLib.cryptoMod.Binary
+  ): nodeLib.Buffer = js.native
   /**
     * Calculates and returns the signature for `data` using the given private key and
     * algorithm. If `algorithm` is `null` or `undefined`, then the algorithm is
@@ -655,18 +667,6 @@ object ^ extends js.Object {
   ): nodeLib.Buffer = js.native
   def verify(
     algorithm: java.lang.String,
-    data: nodeLib.cryptoMod.Binary,
-    key: nodeLib.cryptoMod.VerifyKeyWithOptions,
-    signature: nodeLib.cryptoMod.Binary
-  ): nodeLib.Buffer = js.native
-  def verify(
-    algorithm: js.UndefOr[scala.Nothing],
-    data: nodeLib.cryptoMod.Binary,
-    key: nodeLib.cryptoMod.KeyLike,
-    signature: nodeLib.cryptoMod.Binary
-  ): nodeLib.Buffer = js.native
-  def verify(
-    algorithm: js.UndefOr[scala.Nothing],
     data: nodeLib.cryptoMod.Binary,
     key: nodeLib.cryptoMod.VerifyKeyWithOptions,
     signature: nodeLib.cryptoMod.Binary

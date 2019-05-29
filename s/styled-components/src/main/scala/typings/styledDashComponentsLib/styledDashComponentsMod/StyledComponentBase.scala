@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* Inlined parent styled-components.ForwardRefExoticBase<styled-components.styled-components.StyledComponentProps<C, T, O, A>> */
 @js.native
-trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] extends js.Object {
+trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] extends js.Object {
   @JSName("$$typeof")
   var $$typeof: js.Symbol = js.native
   var defaultProps: js.UndefOr[
@@ -345,6 +345,8 @@ trait StyledComponentBase[C /* <: /* import warning: LimitUnionLength.enterTypeR
   def withComponent_tbody(component: styledDashComponentsLib.styledDashComponentsLibStrings.tbody): StyledComponent[styledDashComponentsLib.styledDashComponentsLibStrings.tbody, T, O, A] = js.native
   @JSName("withComponent")
   def withComponent_td(component: styledDashComponentsLib.styledDashComponentsLibStrings.td): StyledComponent[styledDashComponentsLib.styledDashComponentsLibStrings.td, T, O, A] = js.native
+  @JSName("withComponent")
+  def withComponent_template(component: styledDashComponentsLib.styledDashComponentsLibStrings.template): StyledComponent[styledDashComponentsLib.styledDashComponentsLibStrings.template, T, O, A] = js.native
   @JSName("withComponent")
   def withComponent_text(component: styledDashComponentsLib.styledDashComponentsLibStrings.text): StyledComponent[styledDashComponentsLib.styledDashComponentsLibStrings.text, T, O, A] = js.native
   @JSName("withComponent")

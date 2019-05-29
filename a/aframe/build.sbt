@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aframe"
-version := "0.8-dt-20190328Z-ab845c"
+version := "0.8-dt-20190328Z-f1eaa2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "three" % "0.104.0-9d28d3",
-  "org.scalablytyped" %%% "tween_dot_js" % "17.2-dt-20190124Z-ab98d9")
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb",
+  "org.scalablytyped" %%% "three" % "0.104.0-3896f3",
+  "org.scalablytyped" %%% "tween_dot_js" % "17.2-dt-20190124Z-cea512")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -54,7 +54,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of dynamic
   		* @param dynamic Boolean The new value.
   		*/
-  var setDynamic: js.UndefOr[js.Function1[/* dynamic */ js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
+  var setDynamic: js.UndefOr[js.Function1[js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
   /** [Method] Sets the value of fallbackText
   		* @param fallbackText String/Object The new value.
   		*/
@@ -66,7 +66,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of maxProgressInput
   		* @param maxProgressInput Number The new value.
   		*/
-  var setMaxProgressInput: js.UndefOr[js.Function1[/* maxProgressInput */ js.UndefOr[scala.Double], scala.Unit]] = js.undefined
+  var setMaxProgressInput: js.UndefOr[js.Function1[js.UndefOr[scala.Double], scala.Unit]] = js.undefined
   /** [Method] Sets the value of maxProgressOutput
   		* @param maxProgressOutput Number The new value.
   		*/
@@ -74,7 +74,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of minProgressInput
   		* @param minProgressInput Number The new value.
   		*/
-  var setMinProgressInput: js.UndefOr[js.Function1[/* minProgressInput */ js.UndefOr[scala.Double], scala.Unit]] = js.undefined
+  var setMinProgressInput: js.UndefOr[js.Function1[js.UndefOr[scala.Double], scala.Unit]] = js.undefined
   /** [Method] Sets the value of minProgressOutput
   		* @param minProgressOutput Number The new value.
   		*/

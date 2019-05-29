@@ -11,7 +11,7 @@ trait CreateGlobalClusterMessage extends js.Object {
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   /**
-    *  The deletion protection setting for the new global database. The global database can't be deleted when deletion protection is enabled. 
+    *  The deletion protection setting for the new global database. The global database can't be deleted when this value is set to true. 
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**

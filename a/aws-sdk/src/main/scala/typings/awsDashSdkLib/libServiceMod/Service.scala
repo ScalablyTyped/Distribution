@@ -28,8 +28,8 @@ class Service () extends js.Object {
     * @param {string[]} versions - a list of versions that work with this service.
     * @param {Object} features - an object to attach to the prototype.
     */
-  def defineService(serviceIdentifier: java.lang.String, versions: js.Array[java.lang.String]): org.scalablytyped.runtime.Instantiable1[/* config */ js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
-  def defineService(serviceIdentifier: java.lang.String, versions: js.Array[java.lang.String], features: js.Any): org.scalablytyped.runtime.Instantiable1[/* config */ js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
+  def defineService(serviceIdentifier: java.lang.String, versions: js.Array[java.lang.String]): org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
+  def defineService(serviceIdentifier: java.lang.String, versions: js.Array[java.lang.String], features: js.Any): org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* config */ ServiceConfigurationOptions], Service] = js.native
   /**
     * Calls an operation on a service with the given input parameters.
     * 

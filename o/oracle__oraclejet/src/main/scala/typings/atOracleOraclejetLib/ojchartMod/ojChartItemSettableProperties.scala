@@ -18,7 +18,7 @@ trait ojChartItemSettableProperties
   ] = js.undefined
   var groupId: js.Array[java.lang.String | scala.Double]
   var high: js.UndefOr[scala.Double] = js.undefined
-  var items: js.UndefOr[js.Array[js.Object] | js.Array[scala.Double]] = js.undefined
+  var items: js.UndefOr[js.Array[scala.Double | js.Object]] = js.undefined
   var label: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var labelPosition: js.UndefOr[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.outsideSlice | atOracleOraclejetLib.atOracleOraclejetLibStrings.aboveMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.belowMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.beforeMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.afterMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.insideBarEdge | atOracleOraclejetLib.atOracleOraclejetLibStrings.outsideBarEdge | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
@@ -68,7 +68,7 @@ object ojChartItemSettableProperties {
     color: java.lang.String = null,
     drilling: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.inherit = null,
     high: scala.Int | scala.Double = null,
-    items: js.Array[js.Object] | js.Array[scala.Double] = null,
+    items: js.Array[scala.Double | js.Object] = null,
     label: java.lang.String | js.Array[java.lang.String] = null,
     labelPosition: atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.outsideSlice | atOracleOraclejetLib.atOracleOraclejetLibStrings.aboveMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.belowMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.beforeMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.afterMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.insideBarEdge | atOracleOraclejetLib.atOracleOraclejetLibStrings.outsideBarEdge | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto = null,
     labelStyle: js.Object | js.Array[js.Object] = null,
@@ -104,7 +104,7 @@ object ojChartItemSettableProperties {
     if (color != null) __obj.updateDynamic("color")(color)
     if (drilling != null) __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
     if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (items != null) __obj.updateDynamic("items")(items)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
     if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])

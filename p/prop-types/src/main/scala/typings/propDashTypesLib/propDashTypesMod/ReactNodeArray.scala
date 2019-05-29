@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ReactNodeArray
   extends stdLib.Array[ReactNodeLike]
+     with _ReactNodeLike
 

@@ -17,7 +17,7 @@ trait IonSegmentButton extends js.Object {
   /**
     * Set the layout of the text and icon in the segment.
     */
-  var layout: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SegmentButtonLayout */ js.UndefOr[
+  var layout: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SegmentButtonLayout */ js.Any
   ] = js.undefined
   /**

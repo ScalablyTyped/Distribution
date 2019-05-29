@@ -12,6 +12,6 @@ trait PropertyAccessExpression
      with BindingOrAssignmentElementTarget
      with _BindingOrAssignmentElement {
   var expression: LeftHandSideExpression = js.native
-  var name: Identifier | js.UndefOr[DeclarationName] = js.native
+  var name: js.UndefOr[DeclarationName | Identifier] = js.native
 }
 

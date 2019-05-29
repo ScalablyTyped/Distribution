@@ -107,7 +107,7 @@ trait ContentControlData extends js.Object {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any
   ] = js.undefined
   /**
     *
@@ -173,7 +173,7 @@ object ContentControlData {
     placeholderText: java.lang.String = null,
     removeWhenEdited: js.UndefOr[scala.Boolean] = js.undefined,
     style: java.lang.String = null,
-    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any = null,
     subtype: officeDashJsLib.WordNs.ContentControlType | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.RichTextInline | officeDashJsLib.officeDashJsLibStrings.RichTextParagraphs | officeDashJsLib.officeDashJsLibStrings.RichTextTableCell | officeDashJsLib.officeDashJsLibStrings.RichTextTableRow | officeDashJsLib.officeDashJsLibStrings.RichTextTable | officeDashJsLib.officeDashJsLibStrings.PlainTextInline | officeDashJsLib.officeDashJsLibStrings.PlainTextParagraph | officeDashJsLib.officeDashJsLibStrings.Picture | officeDashJsLib.officeDashJsLibStrings.BuildingBlockGallery | officeDashJsLib.officeDashJsLibStrings.CheckBox | officeDashJsLib.officeDashJsLibStrings.ComboBox | officeDashJsLib.officeDashJsLibStrings.DropDownList | officeDashJsLib.officeDashJsLibStrings.DatePicker | officeDashJsLib.officeDashJsLibStrings.RepeatingSection | officeDashJsLib.officeDashJsLibStrings.RichText | officeDashJsLib.officeDashJsLibStrings.PlainText = null,
     tables: js.Array[TableData] = null,
     tag: java.lang.String = null,

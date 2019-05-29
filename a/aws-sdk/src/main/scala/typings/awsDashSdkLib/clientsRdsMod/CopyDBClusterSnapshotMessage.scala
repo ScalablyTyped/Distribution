@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CopyDBClusterSnapshotMessage extends js.Object {
   /**
-    * A value that indicates whether to copy all tags from the source DB cluster snapshot to the target DB cluster snapshot. By default, tags are not copied.
+    * True to copy all tags from the source DB cluster snapshot to the target DB cluster snapshot, and otherwise false. The default is false.
     */
   var CopyTags: js.UndefOr[BooleanOptional] = js.undefined
   /**

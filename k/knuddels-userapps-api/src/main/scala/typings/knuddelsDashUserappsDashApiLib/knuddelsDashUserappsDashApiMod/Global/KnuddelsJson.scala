@@ -9,6 +9,7 @@ trait KnuddelsJson
   extends /* x */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.KnuddelsJsonData]
     ]
+     with knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod._KnuddelsJsonData
 
 object KnuddelsJson {
   @scala.inline

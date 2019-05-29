@@ -171,7 +171,7 @@ object _Impl {
     transition: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], debug = debug, defaults = defaults, delay = delay, duration = duration, error = error, fields = fields, keyboardShortcuts = keyboardShortcuts, metadata = metadata, name = name, namespace = namespace, on = on.asInstanceOf[js.Any], onFailure = js.Any.fromFunction3(onFailure), onInvalid = js.Any.fromFunction1(onInvalid), onSuccess = js.Any.fromFunction3(onSuccess), onValid = js.Any.fromFunction1(onValid), performance = performance, prompt = prompt.asInstanceOf[js.Any], revalidate = revalidate, rules = rules, selector = selector.asInstanceOf[js.Any], silent = silent, templates = templates.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], transition = transition, verbose = verbose)
+    val __obj = js.Dynamic.literal(className = className, debug = debug, defaults = defaults, delay = delay, duration = duration, error = error, fields = fields, keyboardShortcuts = keyboardShortcuts, metadata = metadata, name = name, namespace = namespace, on = on.asInstanceOf[js.Any], onFailure = js.Any.fromFunction3(onFailure), onInvalid = js.Any.fromFunction1(onInvalid), onSuccess = js.Any.fromFunction3(onSuccess), onValid = js.Any.fromFunction1(onValid), performance = performance, prompt = prompt, revalidate = revalidate, rules = rules, selector = selector, silent = silent, templates = templates, text = text, transition = transition, verbose = verbose)
     __obj.updateDynamic("inline")(`inline`)
     __obj.asInstanceOf[_Impl]
   }

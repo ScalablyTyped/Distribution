@@ -40,7 +40,7 @@ trait Anon_Absolute extends js.Object {
   var MozAnimationPlayState: js.UndefOr[java.lang.String] = js.undefined
   var MozAnimationTimingFunction: js.UndefOr[java.lang.String] = js.undefined
   var MozAppearance: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 117 */ js.Any
   ] = js.undefined
   var MozBackfaceVisibility: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
@@ -223,7 +223,7 @@ trait Anon_Absolute extends js.Object {
   var WebkitAnimationPlayState: js.UndefOr[java.lang.String] = js.undefined
   var WebkitAnimationTimingFunction: js.UndefOr[java.lang.String] = js.undefined
   var WebkitAppearance: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 53 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any
   ] = js.undefined
   var WebkitBackdropFilter: js.UndefOr[java.lang.String] = js.undefined
   var WebkitBackfaceVisibility: js.UndefOr[
@@ -1211,7 +1211,7 @@ object Anon_Absolute {
     MozAnimationName: java.lang.String = null,
     MozAnimationPlayState: java.lang.String = null,
     MozAnimationTimingFunction: java.lang.String = null,
-    MozAppearance: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any = null,
+    MozAppearance: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 117 */ js.Any = null,
     MozBackfaceVisibility: antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset = null,
     MozBackgroundClip: java.lang.String = null,
     MozBackgroundInlinePolicy: antdLib.antdLibStrings.slice | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clone = null,
@@ -1330,7 +1330,7 @@ object Anon_Absolute {
     WebkitAnimationName: java.lang.String = null,
     WebkitAnimationPlayState: java.lang.String = null,
     WebkitAnimationTimingFunction: java.lang.String = null,
-    WebkitAppearance: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 53 */ js.Any = null,
+    WebkitAppearance: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any = null,
     WebkitBackdropFilter: java.lang.String = null,
     WebkitBackfaceVisibility: antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset = null,
     WebkitBackgroundClip: java.lang.String = null,

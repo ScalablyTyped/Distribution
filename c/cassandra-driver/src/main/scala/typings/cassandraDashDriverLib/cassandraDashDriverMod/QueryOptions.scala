@@ -13,7 +13,7 @@ trait QueryOptions extends js.Object {
   var customPayload: js.UndefOr[js.Any] = js.undefined
   var executionProfile: js.UndefOr[java.lang.String | ExecutionProfile] = js.undefined
   var fetchSize: js.UndefOr[scala.Double] = js.undefined
-  var hints: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
+  var hints: js.UndefOr[js.Array[js.Array[java.lang.String] | java.lang.String]] = js.undefined
   var host: js.UndefOr[Host] = js.undefined
   var isIdempotent: js.UndefOr[scala.Boolean] = js.undefined
   var keyspace: js.UndefOr[java.lang.String] = js.undefined
@@ -40,7 +40,7 @@ object QueryOptions {
     customPayload: js.Any = null,
     executionProfile: java.lang.String | ExecutionProfile = null,
     fetchSize: scala.Int | scala.Double = null,
-    hints: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
+    hints: js.Array[js.Array[java.lang.String] | java.lang.String] = null,
     host: Host = null,
     isIdempotent: js.UndefOr[scala.Boolean] = js.undefined,
     keyspace: java.lang.String = null,
@@ -64,7 +64,7 @@ object QueryOptions {
     if (customPayload != null) __obj.updateDynamic("customPayload")(customPayload)
     if (executionProfile != null) __obj.updateDynamic("executionProfile")(executionProfile.asInstanceOf[js.Any])
     if (fetchSize != null) __obj.updateDynamic("fetchSize")(fetchSize.asInstanceOf[js.Any])
-    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
+    if (hints != null) __obj.updateDynamic("hints")(hints)
     if (host != null) __obj.updateDynamic("host")(host)
     if (!js.isUndefined(isIdempotent)) __obj.updateDynamic("isIdempotent")(isIdempotent)
     if (keyspace != null) __obj.updateDynamic("keyspace")(keyspace)

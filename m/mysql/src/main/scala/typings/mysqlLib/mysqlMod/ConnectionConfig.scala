@@ -34,7 +34,7 @@ trait ConnectionConfig extends ConnectionOptions {
     *
     * (Default: false)
     */
-  var debug: js.UndefOr[scala.Boolean | js.Array[java.lang.String] | js.Array[Types]] = js.undefined
+  var debug: js.UndefOr[scala.Boolean | (js.Array[java.lang.String | Types])] = js.undefined
   /**
     * List of connection flags to use other than the default ones. It is also possible to blacklist default ones
     */
@@ -124,7 +124,7 @@ object ConnectionConfig {
     dateStrings: scala.Boolean | (js.Array[
       mysqlLib.mysqlLibStrings.TIMESTAMP | mysqlLib.mysqlLibStrings.DATETIME | mysqlLib.mysqlLibStrings.DATE
     ]) = null,
-    debug: scala.Boolean | js.Array[java.lang.String] | js.Array[Types] = null,
+    debug: scala.Boolean | (js.Array[java.lang.String | Types]) = null,
     flags: js.Array[java.lang.String] = null,
     host: java.lang.String = null,
     insecureAuth: js.UndefOr[scala.Boolean] = js.undefined,

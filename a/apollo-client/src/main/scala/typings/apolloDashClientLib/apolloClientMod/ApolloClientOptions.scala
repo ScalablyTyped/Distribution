@@ -20,7 +20,7 @@ trait ApolloClientOptions[TCacheShape] extends js.Object {
   var ssrForceFetchDelay: js.UndefOr[scala.Double] = js.undefined
   var ssrMode: js.UndefOr[scala.Boolean] = js.undefined
   var typeDefs: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.languageAstMod.DocumentNode]
+    java.lang.String | (js.Array[graphqlLib.languageAstMod.DocumentNode | java.lang.String]) | graphqlLib.languageAstMod.DocumentNode
   ] = js.undefined
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -39,7 +39,7 @@ object ApolloClientOptions {
     resolvers: apolloDashClientLib.coreTypesMod.Resolvers | js.Array[apolloDashClientLib.coreTypesMod.Resolvers] = null,
     ssrForceFetchDelay: scala.Int | scala.Double = null,
     ssrMode: js.UndefOr[scala.Boolean] = js.undefined,
-    typeDefs: java.lang.String | js.Array[java.lang.String] | graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.languageAstMod.DocumentNode] = null,
+    typeDefs: java.lang.String | (js.Array[graphqlLib.languageAstMod.DocumentNode | java.lang.String]) | graphqlLib.languageAstMod.DocumentNode = null,
     version: java.lang.String = null
   ): ApolloClientOptions[TCacheShape] = {
     val __obj = js.Dynamic.literal(cache = cache)

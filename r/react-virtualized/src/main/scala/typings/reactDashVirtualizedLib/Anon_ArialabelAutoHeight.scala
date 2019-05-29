@@ -53,7 +53,7 @@ trait Anon_ArialabelAutoHeight extends js.Object {
   ]
   var onRowsRendered: reactLib.reactMod.Requireable[
     js.Function1[
-      /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+      /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange with reactDashVirtualizedLib.reactDashVirtualizedMod.OverscanIndexRange, 
       scala.Unit
     ]
   ]
@@ -150,7 +150,7 @@ object Anon_ArialabelAutoHeight {
     ],
     onRowsRendered: reactLib.reactMod.Requireable[
       js.Function1[
-        /* params */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+        /* params */ reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange with reactDashVirtualizedLib.reactDashVirtualizedMod.OverscanIndexRange, 
         scala.Unit
       ]
     ],

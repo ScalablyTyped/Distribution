@@ -30,7 +30,7 @@ object CustomResourceOptions {
   def apply(
     additionalSecretOutputs: js.Array[java.lang.String] = null,
     deleteBeforeReplace: js.UndefOr[scala.Boolean] = js.undefined,
-    dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]]] | atPulumiPulumiLib.outputMod.Input[Resource] = null,
+    dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]] | Resource] = null,
     id: atPulumiPulumiLib.outputMod.Input[ID] = null,
     ignoreChanges: js.Array[java.lang.String] = null,
     parent: Resource = null,

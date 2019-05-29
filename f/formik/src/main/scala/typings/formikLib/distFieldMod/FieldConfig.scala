@@ -9,9 +9,7 @@ trait FieldConfig extends js.Object {
   var children: js.UndefOr[
     (js.Function1[/* props */ FieldProps[_], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode
   ] = js.undefined
-  var component: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ComponentType[FieldProps[_]] | reactLib.reactMod.ComponentType[scala.Unit]
-  ] = js.undefined
+  var component: js.UndefOr[java.lang.String | (reactLib.reactMod.ComponentType[FieldProps[_] | scala.Unit])] = js.undefined
   var innerRef: js.UndefOr[js.Function1[/* instance */ js.Any, scala.Unit]] = js.undefined
   var name: java.lang.String
   var render: js.UndefOr[js.Function1[/* props */ FieldProps[_], reactLib.reactMod.ReactNode]] = js.undefined
@@ -27,7 +25,7 @@ object FieldConfig {
   def apply(
     name: java.lang.String,
     children: (js.Function1[/* props */ FieldProps[_], reactLib.reactMod.ReactNode]) | reactLib.reactMod.ReactNode = null,
-    component: java.lang.String | reactLib.reactMod.ComponentType[FieldProps[_]] | reactLib.reactMod.ComponentType[scala.Unit] = null,
+    component: java.lang.String | (reactLib.reactMod.ComponentType[FieldProps[_] | scala.Unit]) = null,
     innerRef: /* instance */ js.Any => scala.Unit = null,
     render: /* props */ FieldProps[_] => reactLib.reactMod.ReactNode = null,
     `type`: java.lang.String = null,

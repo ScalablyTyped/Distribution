@@ -134,6 +134,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val EJECT: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.eject = js.native
   val ENDORSED: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.endorsed = js.native
   val ENVELOPE: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.envelope = js.native
+  val EQUALS: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.equals = js.native
   val ERASER: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.eraser = js.native
   val ERROR: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.error = js.native
   val EURO: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.euro = js.native
@@ -152,6 +153,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val FILTER: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.filter = js.native
   val FILTER_KEEP: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`filter-keep` = js.native
   val FILTER_LIST: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`filter-list` = js.native
+  val FILTER_OPEN: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`filter-open` = js.native
   val FILTER_REMOVE: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`filter-remove` = js.native
   val FLAG: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.flag = js.native
   val FLAME: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.flame = js.native
@@ -192,6 +194,8 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val GLOBE_NETWORK: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`globe-network` = js.native
   val GRAPH: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.graph = js.native
   val GRAPH_REMOVE: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`graph-remove` = js.native
+  val GREATER_THAN: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`greater-than` = js.native
+  val GREATER_THAN_OR_EQUAL_TO: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`greater-than-or-equal-to` = js.native
   val GRID: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.grid = js.native
   val GRID_VIEW: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`grid-view` = js.native
   val GROUPED_BAR_CHART: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`grouped-bar-chart` = js.native
@@ -263,6 +267,8 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val LAYOUT_SKEW_GRID: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`layout-skew-grid` = js.native
   val LAYOUT_SORTED_CLUSTERS: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`layout-sorted-clusters` = js.native
   val LEFT_JOIN: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`left-join` = js.native
+  val LESS_THAN: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`less-than` = js.native
+  val LESS_THAN_OR_EQUAL_TO: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`less-than-or-equal-to` = js.native
   val LIFESAVER: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.lifesaver = js.native
   val LIGHTBULB: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.lightbulb = js.native
   val LINK: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.link = js.native
@@ -305,6 +311,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val NINJA: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.ninja = js.native
   val NOTIFICATIONS: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.notifications = js.native
   val NOTIFICATIONS_UPDATED: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`notifications-updated` = js.native
+  val NOT_EQUAL_TO: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`not-equal-to` = js.native
   val NUMBERED_LIST: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`numbered-list` = js.native
   val NUMERICAL: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.numerical = js.native
   val OFFICE: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.office = js.native
@@ -353,6 +360,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val REMOVE_ROW_BOTTOM: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`remove-row-bottom` = js.native
   val REMOVE_ROW_TOP: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`remove-row-top` = js.native
   val REPEAT: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.repeat = js.native
+  val RESET: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.reset = js.native
   val RESOLVE: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.resolve = js.native
   val RIG: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.rig = js.native
   val RIGHT_JOIN: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`right-join` = js.native
@@ -424,6 +432,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val THUMBS_DOWN: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`thumbs-down` = js.native
   val THUMBS_UP: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`thumbs-up` = js.native
   val TH_DERIVED: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`th-derived` = js.native
+  val TH_DISCONNECT: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`th-disconnect` = js.native
   val TH_FILTERED: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`th-filtered` = js.native
   val TH_LIST: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.`th-list` = js.native
   val TICK: atBlueprintjsIconsLib.atBlueprintjsIconsLibStrings.tick = js.native

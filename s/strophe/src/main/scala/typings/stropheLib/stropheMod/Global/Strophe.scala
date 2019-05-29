@@ -35,7 +35,7 @@ object Strophe extends js.Object {
     */
   var Builder: org.scalablytyped.runtime.Instantiable2[
     /* name */ java.lang.String, 
-    /* attrs */ js.UndefOr[/* attrs */ js.Any], 
+    js.UndefOr[/* attrs */ js.Any], 
     stropheLib.stropheMod.StropheNs.Builder
   ] = js.native
   /** Class: Strophe.Connection
@@ -61,7 +61,7 @@ object Strophe extends js.Object {
     */
   var Connection: org.scalablytyped.runtime.Instantiable2[
     /* service */ java.lang.String, 
-    /* options */ js.UndefOr[/* options */ stropheLib.stropheMod.StropheNs.ConnectionOptions], 
+    js.UndefOr[/* options */ stropheLib.stropheMod.StropheNs.ConnectionOptions], 
     stropheLib.stropheMod.StropheNs.Connection
   ] = js.native
   val MUCNs: js.Any = js.native

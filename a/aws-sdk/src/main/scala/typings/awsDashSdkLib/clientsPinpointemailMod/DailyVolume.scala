@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DailyVolume extends js.Object {
   /**
-    * An object that contains inbox placement metrics for a specifid day in the analysis period, broken out by the recipient's email provider.
+    * An object that contains inbox placement metrics for a specified day in the analysis period, broken out by the recipient's email provider.
     */
   var DomainIspPlacements: js.UndefOr[DomainIspPlacements] = js.undefined
   /**

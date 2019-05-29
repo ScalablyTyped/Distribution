@@ -60,6 +60,7 @@ package object reactLib {
   type HTMLTableHeaderCellElement = HTMLElement
   type HTMLTableRowElement = HTMLElement
   type HTMLTableSectionElement = HTMLElement
+  type HTMLTemplateElement = HTMLElement
   type HTMLTextAreaElement = HTMLElement
   type HTMLTitleElement = HTMLElement
   type HTMLTrackElement = HTMLElement

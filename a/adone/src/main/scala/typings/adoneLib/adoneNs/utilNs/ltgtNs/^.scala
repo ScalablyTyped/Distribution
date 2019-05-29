@@ -31,7 +31,7 @@ object ^ extends js.Object {
   def start[T, R](range: adoneLib.adoneNs.utilNs.ltgtNs.INs.Range[T], defaultValue: R): T | R = js.native
   def startInclusive[T](range: adoneLib.adoneNs.utilNs.ltgtNs.INs.Range[_]): scala.Boolean = js.native
   @JSName("start")
-  def `start_TR<union>`[T, R](range: adoneLib.adoneNs.utilNs.ltgtNs.INs.Range[T]): T | R = js.native
+  def start_TR[T, R](range: adoneLib.adoneNs.utilNs.ltgtNs.INs.Range[T]): T | R = js.native
   def toLtgt[T, R](range: adoneLib.adoneNs.utilNs.ltgtNs.INs.Range[T], _range: js.Object): adoneLib.adoneNs.utilNs.ltgtNs.INs.Range[R] = js.native
   def toLtgt[T, R](
     range: adoneLib.adoneNs.utilNs.ltgtNs.INs.Range[T],

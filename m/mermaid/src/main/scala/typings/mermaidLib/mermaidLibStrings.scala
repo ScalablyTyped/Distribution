@@ -19,7 +19,7 @@ object mermaidLibStrings {
     extends mermaidLib.mermaidAPIMod.mermaidAPINs.Theme
   
   @js.native
-  sealed trait netural
+  sealed trait neutral
     extends mermaidLib.mermaidAPIMod.mermaidAPINs.Theme
   
   @scala.inline
@@ -29,6 +29,6 @@ object mermaidLibStrings {
   @scala.inline
   def forest: forest = "forest".asInstanceOf[forest]
   @scala.inline
-  def netural: netural = "netural".asInstanceOf[netural]
+  def neutral: neutral = "neutral".asInstanceOf[neutral]
 }
 

@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object jqueryLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends jqueryLib.JQueryNs.__Falsy
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends jqueryLib.JQueryNs.__Falsy
   
   @js.native
   sealed trait `true` extends js.Object

@@ -14,7 +14,7 @@ class Polygon () extends EventBindable {
   def getBounds(): Bounds = js.native
   def getExtData(): js.Any = js.native
   def getOptions(): PolygonOptions = js.native
-  def getPath(): js.Array[LngLat] | js.Array[js.Array[LngLat]] = js.native
+  def getPath(): js.Array[js.Array[LngLat] | LngLat] = js.native
   def hide(): scala.Unit = js.native
   def setExtData(ext: js.Any): scala.Unit = js.native
   def setMap(map: Map): scala.Unit = js.native

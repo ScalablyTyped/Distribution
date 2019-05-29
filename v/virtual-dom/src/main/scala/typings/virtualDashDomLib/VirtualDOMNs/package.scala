@@ -13,5 +13,5 @@ package object VirtualDOMNs {
     /* renderOptions */ VPatchOptions[T], 
     T
   ]
-  type VChild = js.Array[VTree] | VTree | js.Array[java.lang.String] | java.lang.String
+  type VChild = (js.Array[java.lang.String | VTree]) | VTree | java.lang.String
 }

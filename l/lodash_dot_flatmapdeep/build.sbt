@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_flatmapdeep"
-version := "4.10-dt-20190214Z-09256f"
+version := "4.10-dt-20190214Z-55f660"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

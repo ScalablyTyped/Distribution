@@ -5,31 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait NodesRef extends js.Object {
   /**
     * 添加节点的布局位置的查询请求，相对于显示区域，以像素为单位
     */
-  def boundingClientRect(callback: js.Function1[/* result */ NodeRect, scala.Unit]): scala.Unit
+  def boundingClientRect(): scala.Unit = js.native
+  def boundingClientRect(callback: js.Function1[/* result */ NodeInfo, scala.Unit]): scala.Unit = js.native
+  /**
+    * 添加节点的 Context 对象查询请求
+    */
+  def context(): SelectorQuery = js.native
+  def context(callback: js.Function1[/* result */ NodeInfo, scala.Unit]): SelectorQuery = js.native
   /**
     * 获取节点的相关信息，需要获取的字段在fields中指定
     */
-  def fields(fields: NodeField, callback: js.Function1[/* result */ NodeRect, scala.Unit]): SelectorQuery
+  def fields(): SelectorQuery = js.native
+  def fields(fields: NodeField): SelectorQuery = js.native
+  def fields(fields: NodeField, callback: js.Function1[/* result */ NodeInfo, scala.Unit]): SelectorQuery = js.native
   /**
     * 添加节点的滚动位置查询请求，以像素为单位
     */
-  def scrollOffset(callback: js.Function1[/* result */ NodeRect, scala.Unit]): SelectorQuery
-}
-
-object NodesRef {
-  @scala.inline
-  def apply(
-    boundingClientRect: js.Function1[/* result */ NodeRect, scala.Unit] => scala.Unit,
-    fields: (NodeField, js.Function1[/* result */ NodeRect, scala.Unit]) => SelectorQuery,
-    scrollOffset: js.Function1[/* result */ NodeRect, scala.Unit] => SelectorQuery
-  ): NodesRef = {
-    val __obj = js.Dynamic.literal(boundingClientRect = js.Any.fromFunction1(boundingClientRect), fields = js.Any.fromFunction2(fields), scrollOffset = js.Any.fromFunction1(scrollOffset))
-  
-    __obj.asInstanceOf[NodesRef]
-  }
+  def scrollOffset(): SelectorQuery = js.native
+  def scrollOffset(callback: js.Function1[/* result */ NodeInfo, scala.Unit]): SelectorQuery = js.native
 }
 

@@ -14,13 +14,13 @@ class View[TModel /* <: Model */] ()
   var afterDispose_FView: js.UndefOr[js.Function0[js.Any]] = js.native
   var afterInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
   var app: App = js.native
-  var appEvents: StringMap | js.UndefOr[StringMap] = js.native
+  var appEvents: js.UndefOr[StringMap] = js.native
   @JSName("beforeDispose")
   var beforeDispose_FView: js.UndefOr[js.Function0[js.Any]] = js.native
   var beforeInitialize: js.UndefOr[js.Function0[js.Any]] = js.native
   var children: js.Array[View[TModel]] = js.native
-  var dataEvents: StringMap | js.UndefOr[StringMap] = js.native
-  var defaultOptions: DefaultOptions | js.UndefOr[DefaultOptions] = js.native
+  var dataEvents: js.UndefOr[StringMap] = js.native
+  var defaultOptions: js.UndefOr[DefaultOptions] = js.native
   @JSName("dispose")
   var dispose_FView: js.UndefOr[js.Function0[js.Any]] = js.native
   var documentTitle: java.lang.String = js.native

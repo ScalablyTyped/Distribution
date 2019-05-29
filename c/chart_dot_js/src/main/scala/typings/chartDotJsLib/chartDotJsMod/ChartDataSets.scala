@@ -21,7 +21,7 @@ trait ChartDataSets extends js.Object {
   var cubicInterpolationMode: js.UndefOr[
     chartDotJsLib.chartDotJsLibStrings.default | chartDotJsLib.chartDotJsLibStrings.monotone
   ] = js.undefined
-  var data: js.UndefOr[(js.Array[js.UndefOr[scala.Double | scala.Null]]) | js.Array[ChartPoint]] = js.undefined
+  var data: js.UndefOr[js.Array[js.UndefOr[ChartPoint | scala.Double | scala.Null]]] = js.undefined
   var fill: js.UndefOr[scala.Boolean | scala.Double | java.lang.String] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var hideInLegendAndTooltip: js.UndefOr[scala.Boolean] = js.undefined
@@ -65,7 +65,7 @@ object ChartDataSets {
     borderSkipped: PositionType = null,
     borderWidth: scala.Double | js.Array[scala.Double] = null,
     cubicInterpolationMode: chartDotJsLib.chartDotJsLibStrings.default | chartDotJsLib.chartDotJsLibStrings.monotone = null,
-    data: (js.Array[js.UndefOr[scala.Double | scala.Null]]) | js.Array[ChartPoint] = null,
+    data: js.Array[js.UndefOr[ChartPoint | scala.Double | scala.Null]] = null,
     fill: scala.Boolean | scala.Double | java.lang.String = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     hideInLegendAndTooltip: js.UndefOr[scala.Boolean] = js.undefined,
@@ -102,7 +102,7 @@ object ChartDataSets {
     if (borderSkipped != null) __obj.updateDynamic("borderSkipped")(borderSkipped)
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (cubicInterpolationMode != null) __obj.updateDynamic("cubicInterpolationMode")(cubicInterpolationMode.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (!js.isUndefined(hideInLegendAndTooltip)) __obj.updateDynamic("hideInLegendAndTooltip")(hideInLegendAndTooltip)

@@ -11,8 +11,8 @@ class CommentSerializer ()
   extends typedocLib.distLibSerializationComponentsMod.SerializerComponent[typedocLib.distLibModelsMod.Comment] {
   @JSName("serializeGroupSymbol")
   var serializeGroupSymbol_CommentSerializer: org.scalablytyped.runtime.Instantiable2[
-    /* shortText */ js.UndefOr[/* shortText */ java.lang.String], 
-    /* text */ js.UndefOr[/* text */ java.lang.String], 
+    js.UndefOr[/* shortText */ java.lang.String], 
+    js.UndefOr[/* text */ java.lang.String], 
     typedocLib.distLibModelsMod.Comment
   ] = js.native
 }

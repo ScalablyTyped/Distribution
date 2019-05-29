@@ -37,7 +37,7 @@ trait CallSite extends js.Object {
   /**
   		Returns the value of `this`.
   		*/
-  def getThis(): js.UndefOr[_]
+  def getThis(): js.UndefOr[js.Any]
   /**
   		Returns the type of `this` as a string. This is the name of the function stored in the constructor field of `this`, if available, otherwise the object's `[[Class]]` internal property.
   		*/
@@ -70,7 +70,7 @@ object CallSite {
     getFunctionName: () => java.lang.String | scala.Null,
     getLineNumber: () => scala.Double | scala.Null,
     getMethodName: () => js.UndefOr[java.lang.String],
-    getThis: () => js.UndefOr[_],
+    getThis: () => js.UndefOr[js.Any],
     getTypeName: () => java.lang.String | scala.Null,
     isConstructor: () => scala.Boolean,
     isEval: () => scala.Boolean,

@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 trait FieldProps extends js.Object {
   var errorBefore: js.UndefOr[scala.Boolean] = js.undefined
   var field: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactText] | (js.Array[java.lang.String | js.Array[reactLib.reactMod.ReactText]])
+    java.lang.String | (js.Array[
+      js.Array[reactLib.reactMod.ReactText] | reactLib.reactMod.ReactText | java.lang.String
+    ])
   ] = js.undefined
   var isForm: js.UndefOr[scala.Boolean] = js.undefined
   var showErrors: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,7 +20,9 @@ object FieldProps {
   @scala.inline
   def apply(
     errorBefore: js.UndefOr[scala.Boolean] = js.undefined,
-    field: java.lang.String | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactText] | (js.Array[java.lang.String | js.Array[reactLib.reactMod.ReactText]]) = null,
+    field: java.lang.String | (js.Array[
+      js.Array[reactLib.reactMod.ReactText] | reactLib.reactMod.ReactText | java.lang.String
+    ]) = null,
     isForm: js.UndefOr[scala.Boolean] = js.undefined,
     showErrors: js.UndefOr[scala.Boolean] = js.undefined
   ): FieldProps = {

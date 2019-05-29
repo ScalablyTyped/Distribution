@@ -25,8 +25,8 @@ class ElementElement () extends Element {
     org.scalablytyped.runtime.Instantiable4[
       /* nsName */ java.lang.String, 
       /* attrs */ js.Any, 
-      /* options */ js.UndefOr[/* options */ soapLib.libTypesMod.IWsdlBaseOptions], 
-      /* schemaAttrs */ js.UndefOr[/* schemaAttrs */ js.Any], 
+      js.UndefOr[/* options */ soapLib.libTypesMod.IWsdlBaseOptions], 
+      js.UndefOr[/* schemaAttrs */ js.Any], 
       Element
     ]
   ] = js.native

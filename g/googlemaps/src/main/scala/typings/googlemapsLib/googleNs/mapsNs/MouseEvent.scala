@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * This object is returned from various mouse events on the map and overlays,
+  * and contains all the fields shown below.
+  */
 trait MouseEvent extends js.Object {
   /**
     * The latitude/longitude that was below the cursor when the event

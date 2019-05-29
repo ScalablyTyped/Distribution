@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BaseTheme extends js.Object {
-  var breakpoints: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double] | js.Object] = js.undefined
+  var breakpoints: js.UndefOr[(js.Array[scala.Double | java.lang.String]) | js.Object] = js.undefined
   var colors: js.UndefOr[ObjectOrArray[csstypeLib.csstypeMod.ColorProperty]] = js.undefined
   var fontSizes: js.UndefOr[ObjectOrArray[csstypeLib.csstypeMod.FontSizeProperty[scala.Double]]] = js.undefined
   var space: js.UndefOr[ObjectOrArray[scala.Double | java.lang.String]] = js.undefined
@@ -15,7 +15,7 @@ trait BaseTheme extends js.Object {
 object BaseTheme {
   @scala.inline
   def apply(
-    breakpoints: js.Array[java.lang.String] | js.Array[scala.Double] | js.Object = null,
+    breakpoints: (js.Array[scala.Double | java.lang.String]) | js.Object = null,
     colors: ObjectOrArray[csstypeLib.csstypeMod.ColorProperty] = null,
     fontSizes: ObjectOrArray[csstypeLib.csstypeMod.FontSizeProperty[scala.Double]] = null,
     space: ObjectOrArray[scala.Double | java.lang.String] = null

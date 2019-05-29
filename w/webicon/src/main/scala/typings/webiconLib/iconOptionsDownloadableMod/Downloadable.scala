@@ -10,7 +10,7 @@ trait Downloadable[TUriParam]
   /**
     * An alias of the `url`-property.
     */
-  var uri: /* import warning: ImportType.apply Failed type conversion: this['url'] */ js.UndefOr[
+  var uri: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: this['url'] */ js.Any
   ] = js.undefined
   /**

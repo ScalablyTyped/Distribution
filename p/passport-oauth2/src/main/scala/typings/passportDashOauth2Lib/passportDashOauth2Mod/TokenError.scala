@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class TokenError protected ()
   extends stdLib.Error {
-  def this(message: java.lang.String, code: java.lang.String) = this()
   def this(message: js.UndefOr[scala.Nothing], code: java.lang.String) = this()
-  def this(message: java.lang.String, code: java.lang.String, uri: java.lang.String) = this()
+  def this(message: java.lang.String, code: java.lang.String) = this()
   def this(message: js.UndefOr[scala.Nothing], code: java.lang.String, uri: java.lang.String) = this()
-  def this(message: java.lang.String, code: java.lang.String, uri: java.lang.String, status: scala.Double) = this()
+  def this(message: java.lang.String, code: java.lang.String, uri: java.lang.String) = this()
   def this(message: js.UndefOr[scala.Nothing], code: java.lang.String, uri: java.lang.String, status: scala.Double) = this()
+  def this(message: java.lang.String, code: java.lang.String, uri: java.lang.String, status: scala.Double) = this()
   var code: java.lang.String = js.native
   /* CompleteClass */
   override var message: java.lang.String = js.native

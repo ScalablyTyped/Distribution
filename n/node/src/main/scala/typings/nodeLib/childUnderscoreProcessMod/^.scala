@@ -101,6 +101,65 @@ object ^ extends js.Object {
     ]
   ): ChildProcess = js.native
   def execFile(file: java.lang.String): ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    callback: js.Function3[
+      nodeLib.Error | scala.Null, 
+      nodeLib.Buffer | (/* stdout */ java.lang.String), 
+      nodeLib.Buffer | (/* stderr */ java.lang.String), 
+      scala.Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: nodeLib.Anon_EncodingNull with ExecFileOptions
+  ): ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: ExecFileOptionsWithBufferEncoding,
+    callback: js.Function3[
+      /* error */ nodeLib.Error | scala.Null, 
+      /* stdout */ nodeLib.Buffer, 
+      /* stderr */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: ExecFileOptionsWithOtherEncoding,
+    callback: js.Function3[
+      /* error */ nodeLib.Error | scala.Null, 
+      /* stdout */ java.lang.String | nodeLib.Buffer, 
+      /* stderr */ java.lang.String | nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: ExecFileOptionsWithStringEncoding,
+    callback: js.Function3[
+      /* error */ nodeLib.Error | scala.Null, 
+      /* stdout */ java.lang.String, 
+      /* stderr */ java.lang.String, 
+      scala.Unit
+    ]
+  ): ChildProcess = js.native
+  def execFile(
+    file: java.lang.String,
+    args: js.UndefOr[scala.Nothing],
+    options: ExecFileOptions,
+    callback: js.Function3[
+      /* error */ nodeLib.Error | scala.Null, 
+      /* stdout */ java.lang.String, 
+      /* stderr */ java.lang.String, 
+      scala.Unit
+    ]
+  ): ChildProcess = js.native
   def execFile(file: java.lang.String, args: js.Array[java.lang.String]): ChildProcess = js.native
   def execFile(
     file: java.lang.String,
@@ -164,65 +223,6 @@ object ^ extends js.Object {
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
-    options: ExecFileOptions,
-    callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* stdout */ java.lang.String, 
-      /* stderr */ java.lang.String, 
-      scala.Unit
-    ]
-  ): ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    callback: js.Function3[
-      nodeLib.Error | scala.Null, 
-      nodeLib.Buffer | (/* stdout */ java.lang.String), 
-      nodeLib.Buffer | (/* stderr */ java.lang.String), 
-      scala.Unit
-    ]
-  ): ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    options: nodeLib.Anon_EncodingNull with ExecFileOptions
-  ): ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    options: ExecFileOptionsWithBufferEncoding,
-    callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* stdout */ nodeLib.Buffer, 
-      /* stderr */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    options: ExecFileOptionsWithOtherEncoding,
-    callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* stdout */ java.lang.String | nodeLib.Buffer, 
-      /* stderr */ java.lang.String | nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
-    options: ExecFileOptionsWithStringEncoding,
-    callback: js.Function3[
-      /* error */ nodeLib.Error | scala.Null, 
-      /* stdout */ java.lang.String, 
-      /* stderr */ java.lang.String, 
-      scala.Unit
-    ]
-  ): ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: js.UndefOr[scala.Nothing],
     options: ExecFileOptions,
     callback: js.Function3[
       /* error */ nodeLib.Error | scala.Null, 

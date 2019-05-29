@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Configuration of a columns cell section */
-trait CellProps extends js.Object {
+trait CellProps[D] extends js.Object {
   /**
     * Default: undefined
     * A function that returns a primitive, or JSX / React Component
@@ -14,7 +14,7 @@ trait CellProps extends js.Object {
     * @example 'Cell Value'
     * @example ({data, column}) => <div>Cell Value</div>,
     */
-  var Cell: reactDashTableLib.reactDashTableMod.TableCellRenderer
+  var Cell: reactDashTableLib.reactDashTableMod.TableCellRenderer[D]
   /**
     * Set the classname of the `td` element of the column
     * @default string
@@ -33,15 +33,15 @@ trait CellProps extends js.Object {
 
 object CellProps {
   @scala.inline
-  def apply(
-    Cell: reactDashTableLib.reactDashTableMod.TableCellRenderer,
+  def apply[D](
+    Cell: reactDashTableLib.reactDashTableMod.TableCellRenderer[D],
     className: java.lang.String,
     getProps: reactDashTableLib.reactDashTableMod.ReactTableFunction,
     style: js.Object
-  ): CellProps = {
+  ): CellProps[D] = {
     val __obj = js.Dynamic.literal(Cell = Cell.asInstanceOf[js.Any], className = className, getProps = getProps, style = style)
   
-    __obj.asInstanceOf[CellProps]
+    __obj.asInstanceOf[CellProps[D]]
   }
 }
 

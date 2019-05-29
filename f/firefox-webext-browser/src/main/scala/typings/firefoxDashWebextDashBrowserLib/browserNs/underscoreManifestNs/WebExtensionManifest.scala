@@ -16,14 +16,18 @@ trait WebExtensionManifest extends js.Object {
   var browser_specific_settings: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Gecko] = js.undefined
   var chrome_settings_overrides: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Homepage] = js.undefined
   var chrome_url_overrides: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Bookmarks] = js.undefined
-  var commands: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_DescriptionSuggestedkey] = js.undefined
+  var commands: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.Anon_DescriptionSuggestedkey]
+  ] = js.undefined
   var content_scripts: js.UndefOr[js.Array[ContentScript]] = js.undefined
   var content_security_policy: js.UndefOr[java.lang.String] = js.undefined
   var default_locale: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var developer: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_NameUrl] = js.undefined
   var devtools_page: js.UndefOr[ExtensionURL] = js.undefined
-  var experiment_apis: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.ExperimentAPI] = js.undefined
+  var experiment_apis: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.ExperimentAPI]
+  ] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var homepage_url: js.UndefOr[java.lang.String] = js.undefined
   var icons: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[ExtensionFileUrl]] = js.undefined
@@ -60,14 +64,14 @@ object WebExtensionManifest {
     browser_specific_settings: firefoxDashWebextDashBrowserLib.Anon_Gecko = null,
     chrome_settings_overrides: firefoxDashWebextDashBrowserLib.Anon_Homepage = null,
     chrome_url_overrides: firefoxDashWebextDashBrowserLib.Anon_Bookmarks = null,
-    commands: firefoxDashWebextDashBrowserLib.Anon_DescriptionSuggestedkey = null,
+    commands: org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.Anon_DescriptionSuggestedkey] = null,
     content_scripts: js.Array[ContentScript] = null,
     content_security_policy: java.lang.String = null,
     default_locale: java.lang.String = null,
     description: java.lang.String = null,
     developer: firefoxDashWebextDashBrowserLib.Anon_NameUrl = null,
     devtools_page: ExtensionURL = null,
-    experiment_apis: firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.ExperimentAPI = null,
+    experiment_apis: org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.ExperimentAPI] = null,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     homepage_url: java.lang.String = null,
     icons: org.scalablytyped.runtime.NumberDictionary[ExtensionFileUrl] = null,

@@ -11,13 +11,13 @@ trait Names extends js.Object {
   val Count: scala.Double = js.native
   val Creator: XlCreator = js.native
   val Parent: js.Any = js.native
-  def apply(Index: java.lang.String): Name = js.native
-  def apply(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
   def apply(
     Index: js.UndefOr[scala.Nothing],
     IndexLocal: js.UndefOr[scala.Nothing],
     RefersTo: java.lang.String
   ): Name = js.native
+  def apply(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
+  def apply(Index: java.lang.String): Name = js.native
   def apply(Index: scala.Double): Name = js.native
   def Add(
     Name: js.UndefOr[java.lang.String],
@@ -34,13 +34,13 @@ trait Names extends js.Object {
     RefersToR1C1: js.UndefOr[java.lang.String],
     RefersToR1C1Local: js.UndefOr[java.lang.String]
   ): Name = js.native
-  def Item(Index: java.lang.String): Name = js.native
-  def Item(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
   def Item(
     Index: js.UndefOr[scala.Nothing],
     IndexLocal: js.UndefOr[scala.Nothing],
     RefersTo: java.lang.String
   ): Name = js.native
+  def Item(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
+  def Item(Index: java.lang.String): Name = js.native
   def Item(Index: scala.Double): Name = js.native
   def _Default(): Name = js.native
   def _Default(Index: js.Any): Name = js.native

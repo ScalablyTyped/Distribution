@@ -10,8 +10,8 @@ trait ErrorOptions extends js.Object {
   var errorClass: js.UndefOr[
     org.scalablytyped.runtime.Instantiable3[
       /* message */ java.lang.String, 
-      /* code */ js.UndefOr[/* code */ java.lang.String], 
-      /* properties */ js.UndefOr[/* properties */ stdLib.Record[java.lang.String, js.Any]], 
+      js.UndefOr[/* code */ java.lang.String], 
+      js.UndefOr[/* properties */ stdLib.Record[java.lang.String, js.Any]], 
       ApolloError
     ]
   ] = js.undefined
@@ -23,8 +23,8 @@ object ErrorOptions {
     code: java.lang.String = null,
     errorClass: org.scalablytyped.runtime.Instantiable3[
       /* message */ java.lang.String, 
-      /* code */ js.UndefOr[/* code */ java.lang.String], 
-      /* properties */ js.UndefOr[/* properties */ stdLib.Record[java.lang.String, js.Any]], 
+      js.UndefOr[/* code */ java.lang.String], 
+      js.UndefOr[/* properties */ stdLib.Record[java.lang.String, js.Any]], 
       ApolloError
     ] = null
   ): ErrorOptions = {

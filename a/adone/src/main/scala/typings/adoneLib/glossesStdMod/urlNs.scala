@@ -40,6 +40,11 @@ object urlNs extends js.Object {
   def format(urlObject: java.lang.String): java.lang.String = js.native
   def format(urlObject: nodeLib.urlMod.UrlObject): java.lang.String = js.native
   def parse(urlStr: java.lang.String): nodeLib.urlMod.UrlWithStringQuery = js.native
+  def parse(
+    urlStr: java.lang.String,
+    parseQueryString: js.UndefOr[scala.Nothing],
+    slashesDenoteHost: scala.Boolean
+  ): nodeLib.urlMod.UrlWithStringQuery = js.native
   def parse(urlStr: java.lang.String, parseQueryString: adoneLib.adoneLibNumbers.`false`): nodeLib.urlMod.UrlWithStringQuery = js.native
   def parse(
     urlStr: java.lang.String,
@@ -52,11 +57,6 @@ object urlNs extends js.Object {
     parseQueryString: adoneLib.adoneLibNumbers.`true`,
     slashesDenoteHost: scala.Boolean
   ): nodeLib.urlMod.UrlWithParsedQuery = js.native
-  def parse(
-    urlStr: java.lang.String,
-    parseQueryString: js.UndefOr[scala.Nothing],
-    slashesDenoteHost: scala.Boolean
-  ): nodeLib.urlMod.UrlWithStringQuery = js.native
   def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean): nodeLib.urlMod.Url = js.native
   def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean, slashesDenoteHost: scala.Boolean): nodeLib.urlMod.Url = js.native
   /**

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait BoostrapOptions extends js.Object {
   var container: js.UndefOr[java.lang.String] = js.undefined
-  var createHistory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify History.CreateHistory<History.HistoryOptions, History.History> */ js.UndefOr[
+  var createHistory: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify History.CreateHistory<History.HistoryOptions, History.History> */ js.Any
   ] = js.undefined
   var devToolsOptions: js.UndefOr[DevToolsOptions] = js.undefined
   var enhancers: js.UndefOr[js.Array[reduxLib.reduxMod.StoreEnhancer[_, js.Object]]] = js.undefined
-  var historyOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify History.HistoryOptions */ js.UndefOr[
+  var historyOptions: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify History.HistoryOptions */ js.Any
   ] = js.undefined
   var initialState: js.UndefOr[js.Any] = js.undefined

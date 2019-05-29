@@ -76,7 +76,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
   		* @param testFn Function The test function.
   		*/
-  var removeChildEls: js.UndefOr[js.Function1[/* testFn */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var removeChildEls: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
 }
 
 object IContainer {

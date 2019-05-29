@@ -329,14 +329,14 @@ class ArcadePhysics protected () extends js.Object {
     * @param includeDynamic Should the search include Dynamic Bodies? Default true.
     * @param includeStatic Should the search include Static Bodies? Default false.
     */
-  def overlapRect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): js.Array[Body] | js.Array[StaticBody] = js.native
+  def overlapRect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): js.Array[Body | StaticBody] = js.native
   def overlapRect(
     x: scala.Double,
     y: scala.Double,
     width: scala.Double,
     height: scala.Double,
     includeDynamic: scala.Boolean
-  ): js.Array[Body] | js.Array[StaticBody] = js.native
+  ): js.Array[Body | StaticBody] = js.native
   def overlapRect(
     x: scala.Double,
     y: scala.Double,
@@ -344,7 +344,7 @@ class ArcadePhysics protected () extends js.Object {
     height: scala.Double,
     includeDynamic: scala.Boolean,
     includeStatic: scala.Boolean
-  ): js.Array[Body] | js.Array[StaticBody] = js.native
+  ): js.Array[Body | StaticBody] = js.native
   /**
     * This advanced method is specifically for testing for overlaps between a single Sprite and an array of Tile objects.
     * 

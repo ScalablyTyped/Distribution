@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation._
 
 object restifyLibStrings {
   @js.native
-  sealed trait aborted extends js.Object
+  sealed trait aborted
+    extends restifyLib.restifyMod.pluginsNs._TMetricsCallback
   
   @js.native
   sealed trait after extends js.Object
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait close
+    extends restifyLib.restifyMod.pluginsNs._TMetricsCallback
   
   @js.native
   sealed trait pre extends js.Object

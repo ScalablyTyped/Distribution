@@ -21,7 +21,7 @@ trait MonacoEditorProps extends MonacoEditorBaseProps {
   /**
     * Refer to Monaco interface {monaco.editor.IEditorConstructionOptions}.
     */
-  var options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.UndefOr[
+  var options: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.Any
   ] = js.undefined
   /**

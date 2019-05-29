@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-universal-links-plugin"
-version := "1.2-dt-20180214Z-35eb80"
+version := "1.2-dt-20180214Z-bc5dc8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

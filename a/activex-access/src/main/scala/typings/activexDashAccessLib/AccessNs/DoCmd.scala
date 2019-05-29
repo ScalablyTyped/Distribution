@@ -250,6 +250,17 @@ class DoCmd protected () extends js.Object {
   /** @param OutputQuality [OutputQuality=0] */
   def OutputTo(
     ObjectType: AcOutputObjectType,
+    ObjectName: js.UndefOr[java.lang.String],
+    OutputFormat: js.UndefOr[AcOutputFormat],
+    OutputFile: js.UndefOr[java.lang.String],
+    AutoStart: js.UndefOr[scala.Boolean],
+    TemplateFile: js.UndefOr[java.lang.String],
+    Encoding: js.UndefOr[js.Any],
+    OutputQuality: js.UndefOr[AcExportQuality]
+  ): scala.Unit = js.native
+  /** @param OutputQuality [OutputQuality=0] */
+  def OutputTo(
+    ObjectType: AcOutputObjectType,
     ObjectName: java.lang.String,
     OutputFormat: AcOutputFormat,
     OutputFile: java.lang.String,
@@ -266,17 +277,6 @@ class DoCmd protected () extends js.Object {
     TemplateFile: java.lang.String,
     Encoding: js.Any,
     OutputQuality: AcExportQuality
-  ): scala.Unit = js.native
-  /** @param OutputQuality [OutputQuality=0] */
-  def OutputTo(
-    ObjectType: AcOutputObjectType,
-    ObjectName: js.UndefOr[java.lang.String],
-    OutputFormat: js.UndefOr[AcOutputFormat],
-    OutputFile: js.UndefOr[java.lang.String],
-    AutoStart: js.UndefOr[scala.Boolean],
-    TemplateFile: js.UndefOr[java.lang.String],
-    Encoding: js.UndefOr[js.Any],
-    OutputQuality: js.UndefOr[AcExportQuality]
   ): scala.Unit = js.native
   def OutputToOld0(ObjectType: AcOutputObjectType): scala.Unit = js.native
   def OutputToOld0(ObjectType: AcOutputObjectType, ObjectName: js.Any): scala.Unit = js.native
@@ -312,6 +312,20 @@ class DoCmd protected () extends js.Object {
     * @param Copies [Copies=1]
     * @param CollateCopies [CollateCopies=true]
     */
+  def PrintOut(
+    PrintRange: js.UndefOr[AcPrintRange],
+    PageFrom: js.UndefOr[scala.Nothing],
+    PageTo: js.UndefOr[scala.Nothing],
+    PrintQuality: js.UndefOr[AcPrintQuality],
+    Copies: js.UndefOr[scala.Double],
+    CollateCopies: js.UndefOr[scala.Boolean]
+  ): scala.Unit = js.native
+  /**
+    * @param PrintRange [PrintRange=0]
+    * @param PrintQuality [PrintQuality=0]
+    * @param Copies [Copies=1]
+    * @param CollateCopies [CollateCopies=true]
+    */
   def PrintOut(PrintRange: AcPrintRange): scala.Unit = js.native
   def PrintOut(PrintRange: AcPrintRange, PageFrom: scala.Double): scala.Unit = js.native
   def PrintOut(PrintRange: AcPrintRange, PageFrom: scala.Double, PageTo: scala.Double): scala.Unit = js.native
@@ -336,20 +350,6 @@ class DoCmd protected () extends js.Object {
     Copies: scala.Double,
     CollateCopies: scala.Boolean
   ): scala.Unit = js.native
-  /**
-    * @param PrintRange [PrintRange=0]
-    * @param PrintQuality [PrintQuality=0]
-    * @param Copies [Copies=1]
-    * @param CollateCopies [CollateCopies=true]
-    */
-  def PrintOut(
-    PrintRange: js.UndefOr[AcPrintRange],
-    PageFrom: js.UndefOr[js.UndefOr[scala.Nothing]],
-    PageTo: js.UndefOr[js.UndefOr[scala.Nothing]],
-    PrintQuality: js.UndefOr[AcPrintQuality],
-    Copies: js.UndefOr[scala.Double],
-    CollateCopies: js.UndefOr[scala.Boolean]
-  ): scala.Unit = js.native
   /** @param Options [Options=1] */
   def Quit(): scala.Unit = js.native
   def Quit(Options: AcQuitOption): scala.Unit = js.native
@@ -372,9 +372,9 @@ class DoCmd protected () extends js.Object {
   def RunSQL(SQLStatement: java.lang.String, UseTransaction: scala.Boolean): scala.Unit = js.native
   def RunSavedImportExport(SavedImportExportName: java.lang.String): scala.Unit = js.native
   def Save(): scala.Unit = js.native
+  def Save(ObjectType: js.UndefOr[scala.Nothing], ObjectName: java.lang.String): scala.Unit = js.native
   /** @param ObjectType [ObjectType=-1] */
   def Save(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Unit = js.native
-  def Save(ObjectType: js.UndefOr[scala.Nothing], ObjectName: java.lang.String): scala.Unit = js.native
   /**
     * @param ObjectType [ObjectType=-1]
     * @param Record [Record=2]
@@ -389,15 +389,15 @@ class DoCmd protected () extends js.Object {
     Record: AcRecord,
     WhereCondition: java.lang.String
   ): scala.Unit = js.native
+  def SelectObject(
+    ObjectType: AcObjectType,
+    ObjectName: js.UndefOr[scala.Nothing],
+    InDatabaseWindow: activexDashAccessLib.activexDashAccessLibNumbers.`true`
+  ): scala.Unit = js.native
   def SelectObject(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Unit = js.native
   def SelectObject(
     ObjectType: AcObjectType,
     ObjectName: java.lang.String,
-    InDatabaseWindow: activexDashAccessLib.activexDashAccessLibNumbers.`true`
-  ): scala.Unit = js.native
-  def SelectObject(
-    ObjectType: AcObjectType,
-    ObjectName: js.UndefOr[scala.Nothing],
     InDatabaseWindow: activexDashAccessLib.activexDashAccessLibNumbers.`true`
   ): scala.Unit = js.native
   /** @param ObjectType [ObjectType=-1] */
@@ -551,7 +551,7 @@ class DoCmd protected () extends js.Object {
     TableName: js.UndefOr[java.lang.String],
     FileName: js.UndefOr[java.lang.String],
     HasFieldNames: js.UndefOr[scala.Boolean],
-    HTMLTableName: js.UndefOr[java.lang.String | js.UndefOr[scala.Nothing]],
+    HTMLTableName: js.UndefOr[java.lang.String],
     CodePage: js.UndefOr[scala.Double]
   ): scala.Unit = js.native
 }

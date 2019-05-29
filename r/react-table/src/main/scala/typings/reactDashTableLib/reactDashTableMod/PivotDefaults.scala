@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PivotDefaults extends js.Object {
+trait PivotDefaults[D] extends js.Object {
   /** Will be overriden in methods.js to display ExpanderComponent */
-  var render: TableCellRenderer
+  var render: TableCellRenderer[D]
 }
 
 object PivotDefaults {
   @scala.inline
-  def apply(render: TableCellRenderer): PivotDefaults = {
+  def apply[D](render: TableCellRenderer[D]): PivotDefaults[D] = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[PivotDefaults]
+    __obj.asInstanceOf[PivotDefaults[D]]
   }
 }
 

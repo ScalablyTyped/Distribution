@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "detect-indent"
-version := "5.0-dt-20180214Z-11f1f8"
+version := "5.0-dt-20180214Z-aeb7f8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

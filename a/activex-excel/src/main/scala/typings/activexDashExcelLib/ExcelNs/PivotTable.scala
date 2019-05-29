@@ -379,7 +379,7 @@ class PivotTable protected () extends js.Object {
     SaveData: js.UndefOr[scala.Boolean],
     HasAutoFormat: js.UndefOr[scala.Boolean],
     AutoPage: js.UndefOr[PivotTableWizardAutoPage[TSourceType]],
-    Reserved: js.UndefOr[js.UndefOr[scala.Nothing]],
+    Reserved: js.UndefOr[scala.Nothing],
     BackgroundQuery: js.UndefOr[scala.Boolean],
     OptimizeCache: js.UndefOr[scala.Boolean],
     PageFieldOrder: js.UndefOr[XlOrder],

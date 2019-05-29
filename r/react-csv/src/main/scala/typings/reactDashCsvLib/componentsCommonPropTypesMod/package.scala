@@ -12,7 +12,7 @@ package object componentsCommonPropTypesMod {
     scala.Unit
   ]
   type Data = js.Array[js.Object]
-  type Headers = js.Array[LabelKeyObject] | js.Array[java.lang.String]
+  type Headers = js.Array[LabelKeyObject | java.lang.String]
   type SyncClickHandler = js.Function1[
     /* event */ reactLib.reactMod.MouseEventHandler[stdLib.HTMLAnchorElement], 
     scala.Boolean | scala.Unit

@@ -15,6 +15,10 @@ object coinbaseDashCommerceDashNodeLibStrings {
     extends coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.CryptoCurrency
   
   @js.native
+  sealed trait CANCELED
+    extends coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.PaymentStatus
+  
+  @js.native
   sealed trait CONFIRMED
     extends coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.PaymentStatus
   
@@ -92,6 +96,10 @@ object coinbaseDashCommerceDashNodeLibStrings {
     extends coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod._FiatCurrency
   
   @js.native
+  sealed trait USDC
+    extends coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.CryptoCurrency
+  
+  @js.native
   sealed trait `application/json` extends js.Object
   
   @js.native
@@ -160,10 +168,16 @@ object coinbaseDashCommerceDashNodeLibStrings {
   @js.native
   sealed trait pricing_type extends js.Object
   
+  @js.native
+  sealed trait usdc
+    extends coinbaseDashCommerceDashNodeLib.coinbaseDashCommerceDashNodeMod.CryptoName
+  
   @scala.inline
   def BCH: BCH = "BCH".asInstanceOf[BCH]
   @scala.inline
   def BTC: BTC = "BTC".asInstanceOf[BTC]
+  @scala.inline
+  def CANCELED: CANCELED = "CANCELED".asInstanceOf[CANCELED]
   @scala.inline
   def CONFIRMED: CONFIRMED = "CONFIRMED".asInstanceOf[CONFIRMED]
   @scala.inline
@@ -209,6 +223,8 @@ object coinbaseDashCommerceDashNodeLibStrings {
   @scala.inline
   def USD: USD = "USD".asInstanceOf[USD]
   @scala.inline
+  def USDC: USDC = "USDC".asInstanceOf[USDC]
+  @scala.inline
   def `application/json`: `application/json` = "application/json".asInstanceOf[`application/json`]
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
@@ -250,5 +266,7 @@ object coinbaseDashCommerceDashNodeLibStrings {
   def no_price: no_price = "no_price".asInstanceOf[no_price]
   @scala.inline
   def pricing_type: pricing_type = "pricing_type".asInstanceOf[pricing_type]
+  @scala.inline
+  def usdc: usdc = "usdc".asInstanceOf[usdc]
 }
 

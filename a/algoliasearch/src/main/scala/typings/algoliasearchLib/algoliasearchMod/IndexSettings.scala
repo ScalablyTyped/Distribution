@@ -95,9 +95,7 @@ trait IndexSettings extends js.Object {
     * each of the languages supported (German, Dutch, and Finnish as of 05/2018)
     * default: {de: [], nl: [], fi: []}
     */
-  var decompoundedAttributes: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in std.Partial<'nl' | 'de' | 'fi'> ]: std.Array<string>}
-    */ js.UndefOr[
+  var decompoundedAttributes: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in std.Partial<'nl' | 'de' | 'fi'> ]: std.Array<string>}
     */ algoliasearchLib.algoliasearchLibStrings.IndexSettings with js.Any

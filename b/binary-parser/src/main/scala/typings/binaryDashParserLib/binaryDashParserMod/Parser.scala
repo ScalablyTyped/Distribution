@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Parser[O /* <: js.UndefOr[js.Object] */] extends js.Object {
-  def array[N /* <: java.lang.String */, Q /* <: binaryDashParserLib.binaryDashParserMod.ParserNs.ArrayOptions */](name: N, options: Q): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, js.Array[scala.Double] | js.Array[_] | js.Array[js.Object]] = js.native
+  def array[N /* <: java.lang.String */, Q /* <: binaryDashParserLib.binaryDashParserMod.ParserNs.ArrayOptions */](name: N, options: Q): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, js.Array[_ | scala.Double | js.Object]] = js.native
   def bit1[N /* <: java.lang.String */](name: N): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, scala.Double] = js.native
   def bit1[N /* <: java.lang.String */](name: N, options: binaryDashParserLib.binaryDashParserMod.ParserNs.Options): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, scala.Double] = js.native
   def bit10[N /* <: java.lang.String */](name: N): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, scala.Double] = js.native

@@ -50,7 +50,9 @@ trait ImageView extends View {
   			 * When using this property, an initial `start()` needs to be called upon the ImageView before any image will show in this imageview.
   			 * Related properties/methods to look at: `start`, `stop`, `pause`, `reverse`, `resume` and `repeatCount`
   			 */
-  var images: js.Array[java.lang.String] | js.Array[titaniumLib.TitaniumNs.Blob] | js.Array[titaniumLib.TitaniumNs.FilesystemNs.File] = js.native
+  var images: js.Array[
+    titaniumLib.TitaniumNs.Blob | titaniumLib.TitaniumNs.FilesystemNs.File | java.lang.String
+  ] = js.native
   /**
   			 * Indicates whether the animation is paused.
   			 */
@@ -107,7 +109,9 @@ trait ImageView extends View {
   /**
   			 * Gets the value of the <Titanium.UI.ImageView.images> property.
   			 */
-  def getImages(): js.Array[java.lang.String] | js.Array[titaniumLib.TitaniumNs.Blob] | js.Array[titaniumLib.TitaniumNs.FilesystemNs.File] = js.native
+  def getImages(): js.Array[
+    titaniumLib.TitaniumNs.Blob | titaniumLib.TitaniumNs.FilesystemNs.File | java.lang.String
+  ] = js.native
   /**
   			 * Gets the value of the <Titanium.UI.ImageView.paused> property.
   			 */

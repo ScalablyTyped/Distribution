@@ -25,9 +25,9 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
   def on[T /* <: java.lang.String */](
     eventName: T,
     handler: js.Function1[
-      (/* import warning: ImportType.apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any) | (/* import warning: ImportType.apply Failed type conversion: OptionalEmissions[T] */ /* value */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: OptionalEmissions[T] */ js.Any
-      ]), 
+      js.UndefOr[
+        /* import warning: ImportType.apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any
+      ], 
       scala.Unit
     ]
   ): Disposable = js.native
@@ -38,9 +38,9 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
   def once[T /* <: java.lang.String */](
     eventName: T,
     handler: js.Function1[
-      (/* import warning: ImportType.apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any) | (/* import warning: ImportType.apply Failed type conversion: OptionalEmissions[T] */ /* value */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: OptionalEmissions[T] */ js.Any
-      ]), 
+      js.UndefOr[
+        /* import warning: ImportType.apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any
+      ], 
       scala.Unit
     ]
   ): Disposable = js.native
@@ -52,9 +52,9 @@ class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
   def preempt[T /* <: java.lang.String */](
     eventName: T,
     handler: js.Function1[
-      (/* import warning: ImportType.apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any) | (/* import warning: ImportType.apply Failed type conversion: OptionalEmissions[T] */ /* value */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: OptionalEmissions[T] */ js.Any
-      ]), 
+      js.UndefOr[
+        /* import warning: ImportType.apply Failed type conversion: RequiredEmissions[T] */ /* value */ js.Any
+      ], 
       scala.Unit
     ]
   ): Disposable = js.native

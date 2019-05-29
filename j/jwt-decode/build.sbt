@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jwt-decode"
-version := "2.2-dt-20180214Z-81edab"
+version := "2.2-dt-20180214Z-9651f7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

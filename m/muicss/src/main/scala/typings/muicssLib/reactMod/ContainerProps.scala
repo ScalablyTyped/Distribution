@@ -16,47 +16,47 @@ object ContainerProps {
     about: java.lang.String = null,
     accessKey: java.lang.String = null,
     `aria-activedescendant`: java.lang.String = null,
-    `aria-atomic`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
+    `aria-atomic`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-autocomplete`: reactLib.reactLibStrings.none | reactLib.reactLibStrings.`inline` | reactLib.reactLibStrings.list | reactLib.reactLibStrings.both = null,
-    `aria-busy`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
-    `aria-checked`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.mixed | reactLib.reactLibStrings.`true` = null,
+    `aria-busy`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-checked`: scala.Boolean | reactLib.reactLibStrings.mixed = null,
     `aria-colcount`: scala.Int | scala.Double = null,
     `aria-colindex`: scala.Int | scala.Double = null,
     `aria-colspan`: scala.Int | scala.Double = null,
     `aria-controls`: java.lang.String = null,
-    `aria-current`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` | reactLib.reactLibStrings.page | reactLib.reactLibStrings.step | reactLib.reactLibStrings.location | reactLib.reactLibStrings.date | reactLib.reactLibStrings.time = null,
+    `aria-current`: scala.Boolean | reactLib.reactLibStrings.page | reactLib.reactLibStrings.step | reactLib.reactLibStrings.location | reactLib.reactLibStrings.date | reactLib.reactLibStrings.time = null,
     `aria-describedby`: java.lang.String = null,
     `aria-details`: java.lang.String = null,
-    `aria-disabled`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
+    `aria-disabled`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-dropeffect`: reactLib.reactLibStrings.none | reactLib.reactLibStrings.copy | reactLib.reactLibStrings.execute | reactLib.reactLibStrings.link | reactLib.reactLibStrings.move | reactLib.reactLibStrings.popup = null,
     `aria-errormessage`: java.lang.String = null,
-    `aria-expanded`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
+    `aria-expanded`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-flowto`: java.lang.String = null,
-    `aria-grabbed`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
-    `aria-haspopup`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` | reactLib.reactLibStrings.menu | reactLib.reactLibStrings.listbox | reactLib.reactLibStrings.tree | reactLib.reactLibStrings.grid | reactLib.reactLibStrings.dialog = null,
-    `aria-hidden`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
-    `aria-invalid`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` | reactLib.reactLibStrings.grammar | reactLib.reactLibStrings.spelling = null,
+    `aria-grabbed`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-haspopup`: scala.Boolean | reactLib.reactLibStrings.menu | reactLib.reactLibStrings.listbox | reactLib.reactLibStrings.tree | reactLib.reactLibStrings.grid | reactLib.reactLibStrings.dialog = null,
+    `aria-hidden`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-invalid`: scala.Boolean | reactLib.reactLibStrings.grammar | reactLib.reactLibStrings.spelling = null,
     `aria-keyshortcuts`: java.lang.String = null,
     `aria-label`: java.lang.String = null,
     `aria-labelledby`: java.lang.String = null,
     `aria-level`: scala.Int | scala.Double = null,
     `aria-live`: reactLib.reactLibStrings.off | reactLib.reactLibStrings.assertive | reactLib.reactLibStrings.polite = null,
-    `aria-modal`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
-    `aria-multiline`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
-    `aria-multiselectable`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
+    `aria-modal`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-multiline`: js.UndefOr[scala.Boolean] = js.undefined,
+    `aria-multiselectable`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-orientation`: reactLib.reactLibStrings.horizontal | reactLib.reactLibStrings.vertical = null,
     `aria-owns`: java.lang.String = null,
     `aria-placeholder`: java.lang.String = null,
     `aria-posinset`: scala.Int | scala.Double = null,
-    `aria-pressed`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.mixed | reactLib.reactLibStrings.`true` = null,
-    `aria-readonly`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
+    `aria-pressed`: scala.Boolean | reactLib.reactLibStrings.mixed = null,
+    `aria-readonly`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-relevant`: reactLib.reactLibStrings.additions | (reactLib.reactLibStrings.`additions text`) | reactLib.reactLibStrings.all | reactLib.reactLibStrings.removals | reactLib.reactLibStrings.text = null,
-    `aria-required`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
+    `aria-required`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-roledescription`: java.lang.String = null,
     `aria-rowcount`: scala.Int | scala.Double = null,
     `aria-rowindex`: scala.Int | scala.Double = null,
     `aria-rowspan`: scala.Int | scala.Double = null,
-    `aria-selected`: scala.Boolean | reactLib.reactLibStrings.`false` | reactLib.reactLibStrings.`true` = null,
+    `aria-selected`: js.UndefOr[scala.Boolean] = js.undefined,
     `aria-setsize`: scala.Int | scala.Double = null,
     `aria-sort`: reactLib.reactLibStrings.none | reactLib.reactLibStrings.ascending | reactLib.reactLibStrings.descending | reactLib.reactLibStrings.other = null,
     `aria-valuemax`: scala.Int | scala.Double = null,
@@ -272,9 +272,9 @@ object ContainerProps {
     if (about != null) __obj.updateDynamic("about")(about)
     if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey)
     if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`)
-    if (`aria-atomic` != null) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`)
     if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (`aria-busy` != null) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`)
     if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
     if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
     if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
@@ -283,36 +283,36 @@ object ContainerProps {
     if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
     if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`)
     if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`)
-    if (`aria-disabled` != null) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`)
     if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
     if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`)
-    if (`aria-expanded` != null) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`)
     if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`)
-    if (`aria-grabbed` != null) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`)
     if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (`aria-hidden` != null) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`)
     if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
     if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`)
     if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
     if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`)
     if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
     if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (`aria-modal` != null) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (`aria-multiline` != null) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (`aria-multiselectable` != null) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`)
+    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`)
+    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`)
     if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
     if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`)
     if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`)
     if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
     if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (`aria-readonly` != null) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`)
     if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (`aria-required` != null) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`)
     if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`)
     if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
     if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
     if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (`aria-selected` != null) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
+    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`)
     if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
     if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
     if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])

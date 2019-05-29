@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "grammarkdown"
-version := "2.0.12-67f395"
+version := "2.0.12-c2c800"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.5-49523f",
-  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.5-49dc17",
-  "org.scalablytyped" %%% "prex" % "0.4.6-64d238",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2")
+  "org.scalablytyped" %%% "esfx__cancelable" % "1.0.0-pre.5-77f332",
+  "org.scalablytyped" %%% "esfx__disposable" % "1.0.0-pre.5-2146c7",
+  "org.scalablytyped" %%% "prex" % "0.4.6-89a9d5",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

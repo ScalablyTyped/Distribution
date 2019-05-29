@@ -13,8 +13,8 @@ class SimpleStore () extends Container {
   var _completedQueries: js.Object = js.native
   var _pendingQueries: js.Object = js.native
   var collectionClass: org.scalablytyped.runtime.Instantiable2[
-    /* records */ js.UndefOr[/* records */ js.Array[js.Any]], 
-    /* opts */ js.UndefOr[/* opts */ js.Any], 
+    js.UndefOr[/* records */ js.Array[js.Any]], 
+    js.UndefOr[/* opts */ js.Any], 
     Collection
   ] = js.native
   var usePendingFind: scala.Boolean = js.native

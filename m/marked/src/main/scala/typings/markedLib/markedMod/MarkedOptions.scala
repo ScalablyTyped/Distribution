@@ -33,7 +33,9 @@ trait MarkedOptions extends js.Object {
     js.Function3[
       /* code */ java.lang.String, 
       /* lang */ java.lang.String, 
-      /* callback */ js.UndefOr[js.Function2[/* error */ js.UndefOr[_], /* code */ java.lang.String, scala.Unit]], 
+      /* callback */ js.UndefOr[
+        js.Function2[/* error */ js.UndefOr[js.Any], /* code */ java.lang.String, scala.Unit]
+      ], 
       java.lang.String
     ]
   ] = js.undefined
@@ -93,7 +95,9 @@ object MarkedOptions {
     gfm: js.UndefOr[scala.Boolean] = js.undefined,
     headerIds: js.UndefOr[scala.Boolean] = js.undefined,
     headerPrefix: java.lang.String = null,
-    highlight: (/* code */ java.lang.String, /* lang */ java.lang.String, /* callback */ js.UndefOr[js.Function2[/* error */ js.UndefOr[_], /* code */ java.lang.String, scala.Unit]]) => java.lang.String = null,
+    highlight: (/* code */ java.lang.String, /* lang */ java.lang.String, /* callback */ js.UndefOr[
+      js.Function2[/* error */ js.UndefOr[js.Any], /* code */ java.lang.String, scala.Unit]
+    ]) => java.lang.String = null,
     langPrefix: java.lang.String = null,
     mangle: js.UndefOr[scala.Boolean] = js.undefined,
     pedantic: js.UndefOr[scala.Boolean] = js.undefined,

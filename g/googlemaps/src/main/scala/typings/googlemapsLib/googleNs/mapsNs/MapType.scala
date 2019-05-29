@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/***** Map Types *****/
 trait MapType extends js.Object {
   var alt: js.UndefOr[java.lang.String] = js.undefined
   var maxZoom: js.UndefOr[scala.Double] = js.undefined

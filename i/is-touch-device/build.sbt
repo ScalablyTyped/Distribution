@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-touch-device"
-version := "1.0-dt-20180607Z-cd79ab"
+version := "1.0-dt-20180607Z-0924c0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

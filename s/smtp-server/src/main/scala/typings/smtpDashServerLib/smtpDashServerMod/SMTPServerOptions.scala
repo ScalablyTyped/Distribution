@@ -32,12 +32,12 @@ trait SMTPServerOptions
   /** optionally override the trusted CA certificates */
   @JSName("ca")
   var ca_SMTPServerOptions: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer]
+    java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer
   ] = js.undefined
   /** optional cert chains in PEM format */
   @JSName("cert")
   var cert_SMTPServerOptions: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer]
+    java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer
   ] = js.undefined
   /**
     * How many millisceonds to wait before disconnecting pending
@@ -78,7 +78,7 @@ trait SMTPServerOptions
   /** optional private keys in PEM format */
   @JSName("key")
   var key_SMTPServerOptions: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | js.Array[smtpDashServerLib.Anon_Passphrase]
+    java.lang.String | (js.Array[smtpDashServerLib.Anon_Passphrase | nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer
   ] = js.undefined
   /**
     * boolean, if set to true use LMTP protocol instead of SMTP
@@ -218,8 +218,8 @@ trait SMTPServerOptions
 object SMTPServerOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
-    NPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
+    ALPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
+    NPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
     SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[
       /* err */ nodeLib.Error | scala.Null, 
       /* ctx */ nodeLib.tlsMod.SecureContext, 
@@ -229,8 +229,8 @@ object SMTPServerOptions {
     authMethods: js.Array[java.lang.String] = null,
     authOptional: js.UndefOr[scala.Boolean] = js.undefined,
     banner: java.lang.String = null,
-    ca: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
-    cert: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] = null,
+    ca: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer = null,
+    cert: java.lang.String | (js.Array[nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer = null,
     ciphers: java.lang.String = null,
     clientCertEngine: java.lang.String = null,
     closeTimeout: js.UndefOr[ms] = js.undefined,
@@ -245,7 +245,7 @@ object SMTPServerOptions {
     hideSMTPUTF8: js.UndefOr[scala.Boolean] = js.undefined,
     hideSTARTTLS: js.UndefOr[scala.Boolean] = js.undefined,
     honorCipherOrder: js.UndefOr[scala.Boolean] = js.undefined,
-    key: java.lang.String | js.Array[java.lang.String] | nodeLib.Buffer | js.Array[nodeLib.Buffer] | js.Array[smtpDashServerLib.Anon_Passphrase] = null,
+    key: java.lang.String | (js.Array[smtpDashServerLib.Anon_Passphrase | nodeLib.Buffer | java.lang.String]) | nodeLib.Buffer = null,
     lmtp: js.UndefOr[scala.Boolean] = js.undefined,
     logger: nodemailerLib.libSharedMod.Logger | scala.Boolean = null,
     maxClients: scala.Int | scala.Double = null,

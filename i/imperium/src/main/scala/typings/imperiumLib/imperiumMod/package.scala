@@ -10,10 +10,7 @@ package object imperiumMod {
   type Context = js.Array[
     imperiumLib.imperiumLibStrings.params | imperiumLib.imperiumLibStrings.query | imperiumLib.imperiumLibStrings.headers | imperiumLib.imperiumLibStrings.body
   ]
-  type GetAcl = js.Function1[
-    /* req */ expressLib.expressMod.Request, 
-    js.Promise[scala.Boolean] | js.Promise[js.Object]
-  ]
+  type GetAcl = js.Function1[/* req */ expressLib.expressMod.Request, js.Promise[scala.Boolean | js.Object]]
   type RoleParams = org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type Roles = org.scalablytyped.runtime.StringDictionary[RoleActions]
 }

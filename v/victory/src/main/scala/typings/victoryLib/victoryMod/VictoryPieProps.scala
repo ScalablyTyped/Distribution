@@ -95,7 +95,7 @@ trait VictoryPieProps
     js.Array[
       EventPropTypeInterface[
         victoryLib.victoryLibStrings.data | victoryLib.victoryLibStrings.labels | victoryLib.victoryLibStrings.parent, 
-        StringOrNumberOrCallback | js.Array[java.lang.String] | js.Array[scala.Double]
+        StringOrNumberOrCallback | (js.Array[scala.Double | java.lang.String])
       ]
     ]
   ] = js.undefined
@@ -171,7 +171,7 @@ object VictoryPieProps {
     events: js.Array[
       EventPropTypeInterface[
         victoryLib.victoryLibStrings.data | victoryLib.victoryLibStrings.labels | victoryLib.victoryLibStrings.parent, 
-        StringOrNumberOrCallback | js.Array[java.lang.String] | js.Array[scala.Double]
+        StringOrNumberOrCallback | (js.Array[scala.Double | java.lang.String])
       ]
     ] = null,
     groupComponent: reactLib.reactMod.ReactElement[_] = null,

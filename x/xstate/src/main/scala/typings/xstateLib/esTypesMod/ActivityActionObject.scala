@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait ActivityActionObject[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
   var activity: ActivityDefinition[TContext, TEvent]
+  @JSName("exec")
+  var exec_ActivityActionObject: js.UndefOr[ActionFunction[TContext, TEvent]] = js.undefined
   @JSName("type")
   var type_ActivityActionObject: ActionTypes
 }

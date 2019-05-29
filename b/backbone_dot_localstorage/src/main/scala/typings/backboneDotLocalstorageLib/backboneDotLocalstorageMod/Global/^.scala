@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val Store: org.scalablytyped.runtime.Instantiable2[
     /* name */ java.lang.String, 
-    /* serializer */ js.UndefOr[
+    js.UndefOr[
       /* serializer */ backboneDotLocalstorageLib.backboneDotLocalstorageMod.backboneMod.Serializer
     ], 
     backboneDotLocalstorageLib.backboneDotLocalstorageMod.backboneMod.LocalStorage

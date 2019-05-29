@@ -15,7 +15,7 @@ object ^ extends js.Object {
   var mapObj: js.Function3[
     /* collection */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* callback */ Mapper[js.Any, js.Any], 
-    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ /* target */ js.UndefOr[
+    /* target */ js.UndefOr[
       /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
     ], 
     org.scalablytyped.runtime.StringDictionary[js.Any]

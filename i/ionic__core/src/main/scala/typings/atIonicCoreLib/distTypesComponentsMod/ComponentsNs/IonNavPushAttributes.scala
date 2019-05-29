@@ -10,13 +10,13 @@ trait IonNavPushAttributes
   /**
     * Component to navigate to
     */
-  var component: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.UndefOr[
+  var component: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify NavComponent */ js.Any
   ] = js.undefined
   /**
     * Data you want to pass to the component as props
     */
-  var componentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.UndefOr[
+  var componentProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
   ] = js.undefined
 }

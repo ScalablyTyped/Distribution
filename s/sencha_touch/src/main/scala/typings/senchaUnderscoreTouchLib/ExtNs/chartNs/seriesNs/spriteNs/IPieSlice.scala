@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
   		*/
   var bindMarker: js.UndefOr[
     js.Function2[
-      /* name */ js.UndefOr[java.lang.String], 
-      /* marker */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.IMarkers], 
+      js.UndefOr[java.lang.String], 
+      js.UndefOr[senchaUnderscoreTouchLib.ExtNs.chartNs.IMarkers], 
       scala.Unit
     ]
   ] = js.undefined

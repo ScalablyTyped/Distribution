@@ -25,8 +25,8 @@ trait Sheets[TSheet] extends js.Object {
   def Add[T](Before: Sheet, After: Sheet, Count: scala.Double): AddSheetResult[T] = js.native
   def Add[T](Before: Sheet, After: Sheet, Count: scala.Double, Type: T): AddSheetResult[T] = js.native
   def Copy(): scala.Unit = js.native
-  def Copy(Before: Sheet): scala.Unit = js.native
   def Copy(Before: js.UndefOr[scala.Nothing], After: Sheet): scala.Unit = js.native
+  def Copy(Before: Sheet): scala.Unit = js.native
   def Delete(): scala.Unit = js.native
   /** @param Type [Type=-4104] */
   def FillAcrossSheets(Range: Range): scala.Unit = js.native
@@ -36,9 +36,9 @@ trait Sheets[TSheet] extends js.Object {
   def Item(Index: java.lang.String): TSheet = js.native
   def Item(Index: scala.Double): TSheet = js.native
   def Move(): scala.Unit = js.native
-  def Move(Before: Sheet): scala.Unit = js.native
   def Move(Before: js.UndefOr[scala.Nothing], After: Sheet): scala.Unit = js.native
   def Move(Before: js.UndefOr[scala.Nothing], After: scala.Double): scala.Unit = js.native
+  def Move(Before: Sheet): scala.Unit = js.native
   def Move(Before: scala.Double): scala.Unit = js.native
   def PrintOut(
     From: js.UndefOr[scala.Double],
@@ -46,9 +46,9 @@ trait Sheets[TSheet] extends js.Object {
     Copies: js.UndefOr[scala.Double],
     Preview: js.UndefOr[scala.Boolean],
     ActivePrinter: js.UndefOr[java.lang.String],
-    PrintToFile: js.UndefOr[scala.Boolean | js.UndefOr[scala.Nothing]],
+    PrintToFile: js.UndefOr[scala.Boolean],
     Collate: js.UndefOr[scala.Boolean],
-    PrToFileName: js.UndefOr[PrintToFileName[scala.Boolean | js.UndefOr[scala.Nothing]]],
+    PrToFileName: js.UndefOr[PrintToFileName[js.UndefOr[scala.Boolean]]],
     IgnorePrintAreas: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
   def PrintPreview(): scala.Unit = js.native

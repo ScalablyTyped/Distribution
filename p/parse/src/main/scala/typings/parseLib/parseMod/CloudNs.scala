@@ -55,7 +55,7 @@ object CloudNs extends js.Object {
     arg1: js.Any,
     func: js.Function1[
       /* request */ parseLib.ParseNs.CloudNs.BeforeFindRequest, 
-      js.Promise[scala.Unit] | js.Promise[parseLib.ParseNs.Query[parseLib.ParseNs.Object]] | parseLib.ParseNs.Query[parseLib.ParseNs.Object] | scala.Unit
+      (js.Promise[parseLib.ParseNs.Query[parseLib.ParseNs.Object] | scala.Unit]) | parseLib.ParseNs.Query[parseLib.ParseNs.Object] | scala.Unit
     ]
   ): scala.Unit = js.native
   def beforeSave(arg1: js.Any): scala.Unit = js.native

@@ -14,22 +14,22 @@ trait Typeofcast extends js.Object {
       /* receiverAvailability */ chromeLib.chromeNs.castNs.ReceiverAvailability, 
       scala.Unit
     ], 
-    /* autoJoinPolicy */ js.UndefOr[/* autoJoinPolicy */ chromeLib.chromeNs.castNs.AutoJoinPolicy], 
-    /* defaultActionPolicy */ js.UndefOr[/* defaultActionPolicy */ chromeLib.chromeNs.castNs.DefaultActionPolicy], 
+    js.UndefOr[/* autoJoinPolicy */ chromeLib.chromeNs.castNs.AutoJoinPolicy], 
+    js.UndefOr[/* defaultActionPolicy */ chromeLib.chromeNs.castNs.DefaultActionPolicy], 
     chromeLib.chromeNs.castNs.ApiConfig
   ] = js.native
   var Error: org.scalablytyped.runtime.Instantiable3[
     /* code */ chromeLib.chromeNs.castNs.ErrorCode, 
-    /* description */ js.UndefOr[/* description */ java.lang.String], 
-    /* details */ js.UndefOr[/* details */ js.Object], 
+    js.UndefOr[/* description */ java.lang.String], 
+    js.UndefOr[/* details */ js.Object], 
     chromeLib.chromeNs.castNs.Error
   ] = js.native
   var Image: org.scalablytyped.runtime.Instantiable1[/* url */ java.lang.String, chromeLib.chromeNs.castNs.Image] = js.native
   var Receiver: org.scalablytyped.runtime.Instantiable4[
     /* label */ java.lang.String, 
     /* friendlyName */ java.lang.String, 
-    /* capabilities */ js.UndefOr[/* capabilities */ js.Array[chromeLib.chromeNs.castNs.Capability]], 
-    /* volume */ js.UndefOr[/* volume */ chromeLib.chromeNs.castNs.Volume], 
+    js.UndefOr[/* capabilities */ js.Array[chromeLib.chromeNs.castNs.Capability]], 
+    js.UndefOr[/* volume */ chromeLib.chromeNs.castNs.Volume], 
     chromeLib.chromeNs.castNs.Receiver
   ] = js.native
   var ReceiverDisplayStatus: org.scalablytyped.runtime.Instantiable2[
@@ -51,14 +51,14 @@ trait Typeofcast extends js.Object {
   ] = js.native
   var SessionRequest: org.scalablytyped.runtime.Instantiable3[
     /* appId */ java.lang.String, 
-    /* capabilities */ js.UndefOr[/* capabilities */ js.Array[chromeLib.chromeNs.castNs.Capability]], 
-    /* timeout */ js.UndefOr[/* timeout */ scala.Double], 
+    js.UndefOr[/* capabilities */ js.Array[chromeLib.chromeNs.castNs.Capability]], 
+    js.UndefOr[/* timeout */ scala.Double], 
     chromeLib.chromeNs.castNs.SessionRequest
   ] = js.native
   var VERSION: js.Array[scala.Double] = js.native
   var Volume: org.scalablytyped.runtime.Instantiable2[
-    /* level */ js.UndefOr[/* level */ scala.Double], 
-    /* muted */ js.UndefOr[/* muted */ scala.Boolean], 
+    js.UndefOr[/* level */ scala.Double], 
+    js.UndefOr[/* muted */ scala.Boolean], 
     chromeLib.chromeNs.castNs.Volume
   ] = js.native
   var isAvailable: scala.Boolean = js.native

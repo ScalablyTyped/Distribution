@@ -19,59 +19,45 @@ trait ObservableStatic extends js.Object {
   def toAsync[TResult](func: js.Function0[TResult]): js.Function0[rxDashCoreLib.RxNs.Observable[TResult]] = js.native
   def toAsync[TResult](func: js.Function0[TResult], context: js.Any): js.Function0[rxDashCoreLib.RxNs.Observable[TResult]] = js.native
   def toAsync[TResult](func: js.Function0[TResult], context: js.Any, scheduler: rxDashCoreLib.RxNs.IScheduler): js.Function0[rxDashCoreLib.RxNs.Observable[TResult]] = js.native
-  def toAsync[T1, TResult](func: js.Function1[(/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), TResult]): js.Function1[/* arg1 */ T1, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
-  def toAsync[T1, TResult](func: js.Function1[(/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), TResult], context: js.Any): js.Function1[/* arg1 */ T1, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
+  def toAsync[T1, TResult](func: js.Function1[js.UndefOr[/* arg1 */ T1], TResult]): js.Function1[/* arg1 */ T1, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
+  def toAsync[T1, TResult](func: js.Function1[js.UndefOr[/* arg1 */ T1], TResult], context: js.Any): js.Function1[/* arg1 */ T1, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
   def toAsync[T1, TResult](
-    func: js.Function1[(/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), TResult],
+    func: js.Function1[js.UndefOr[/* arg1 */ T1], TResult],
     context: js.Any,
     scheduler: rxDashCoreLib.RxNs.IScheduler
   ): js.Function1[/* arg1 */ T1, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
+  def toAsync[T1, T2, TResult](func: js.Function2[js.UndefOr[/* arg1 */ T1], js.UndefOr[/* arg2 */ /* repeated */ T2], TResult]): js.Function2[/* arg1 */ T1, /* arg2 */ T2, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
   def toAsync[T1, T2, TResult](
-    func: js.Function2[
-      (/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), 
-      (/* arg2 */ /* repeated */ T2) | (/* arg2 */ js.UndefOr[T2]), 
-      TResult
-    ]
-  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
-  def toAsync[T1, T2, TResult](
-    func: js.Function2[
-      (/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), 
-      (/* arg2 */ /* repeated */ T2) | (/* arg2 */ js.UndefOr[T2]), 
-      TResult
-    ],
+    func: js.Function2[js.UndefOr[/* arg1 */ T1], js.UndefOr[/* arg2 */ /* repeated */ T2], TResult],
     context: js.Any
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
   def toAsync[T1, T2, TResult](
-    func: js.Function2[
-      (/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), 
-      (/* arg2 */ /* repeated */ T2) | (/* arg2 */ js.UndefOr[T2]), 
-      TResult
-    ],
+    func: js.Function2[js.UndefOr[/* arg1 */ T1], js.UndefOr[/* arg2 */ /* repeated */ T2], TResult],
     context: js.Any,
     scheduler: rxDashCoreLib.RxNs.IScheduler
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
   def toAsync[T1, T2, T3, TResult](
     func: js.Function3[
-      (/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), 
-      (/* arg2 */ T2) | (/* arg2 */ js.UndefOr[T2]), 
-      (/* arg3 */ /* repeated */ T3) | (/* arg3 */ js.UndefOr[T3]), 
+      js.UndefOr[/* arg1 */ T1], 
+      js.UndefOr[/* arg2 */ T2], 
+      js.UndefOr[/* arg3 */ /* repeated */ T3], 
       TResult
     ]
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
   def toAsync[T1, T2, T3, TResult](
     func: js.Function3[
-      (/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), 
-      (/* arg2 */ T2) | (/* arg2 */ js.UndefOr[T2]), 
-      (/* arg3 */ /* repeated */ T3) | (/* arg3 */ js.UndefOr[T3]), 
+      js.UndefOr[/* arg1 */ T1], 
+      js.UndefOr[/* arg2 */ T2], 
+      js.UndefOr[/* arg3 */ /* repeated */ T3], 
       TResult
     ],
     context: js.Any
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
   def toAsync[T1, T2, T3, TResult](
     func: js.Function3[
-      (/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), 
-      (/* arg2 */ T2) | (/* arg2 */ js.UndefOr[T2]), 
-      (/* arg3 */ /* repeated */ T3) | (/* arg3 */ js.UndefOr[T3]), 
+      js.UndefOr[/* arg1 */ T1], 
+      js.UndefOr[/* arg2 */ T2], 
+      js.UndefOr[/* arg3 */ /* repeated */ T3], 
       TResult
     ],
     context: js.Any,
@@ -79,10 +65,10 @@ trait ObservableStatic extends js.Object {
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, rxDashCoreLib.RxNs.Observable[TResult]] = js.native
   def toAsync[T1, T2, T3, T4, TResult](
     func: js.Function4[
-      (/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), 
-      (/* arg2 */ T2) | (/* arg2 */ js.UndefOr[T2]), 
-      (/* arg3 */ T3) | (/* arg3 */ js.UndefOr[T3]), 
-      (/* arg4 */ /* repeated */ T4) | (/* arg4 */ js.UndefOr[T4]), 
+      js.UndefOr[/* arg1 */ T1], 
+      js.UndefOr[/* arg2 */ T2], 
+      js.UndefOr[/* arg3 */ T3], 
+      js.UndefOr[/* arg4 */ /* repeated */ T4], 
       TResult
     ]
   ): js.Function4[
@@ -94,10 +80,10 @@ trait ObservableStatic extends js.Object {
   ] = js.native
   def toAsync[T1, T2, T3, T4, TResult](
     func: js.Function4[
-      (/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), 
-      (/* arg2 */ T2) | (/* arg2 */ js.UndefOr[T2]), 
-      (/* arg3 */ T3) | (/* arg3 */ js.UndefOr[T3]), 
-      (/* arg4 */ /* repeated */ T4) | (/* arg4 */ js.UndefOr[T4]), 
+      js.UndefOr[/* arg1 */ T1], 
+      js.UndefOr[/* arg2 */ T2], 
+      js.UndefOr[/* arg3 */ T3], 
+      js.UndefOr[/* arg4 */ /* repeated */ T4], 
       TResult
     ],
     context: js.Any
@@ -110,10 +96,10 @@ trait ObservableStatic extends js.Object {
   ] = js.native
   def toAsync[T1, T2, T3, T4, TResult](
     func: js.Function4[
-      (/* arg1 */ T1) | (/* arg1 */ js.UndefOr[T1]), 
-      (/* arg2 */ T2) | (/* arg2 */ js.UndefOr[T2]), 
-      (/* arg3 */ T3) | (/* arg3 */ js.UndefOr[T3]), 
-      (/* arg4 */ /* repeated */ T4) | (/* arg4 */ js.UndefOr[T4]), 
+      js.UndefOr[/* arg1 */ T1], 
+      js.UndefOr[/* arg2 */ T2], 
+      js.UndefOr[/* arg3 */ T3], 
+      js.UndefOr[/* arg4 */ /* repeated */ T4], 
       TResult
     ],
     context: js.Any,

@@ -20,7 +20,7 @@ trait ApolloClient[TCacheShape]
   var resetStoreCallbacks: js.Any = js.native
   var store: apolloDashClientLib.dataStoreMod.DataStore[TCacheShape] = js.native
   val typeDefs: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | graphqlLib.languageAstMod.DocumentNode | js.Array[graphqlLib.languageAstMod.DocumentNode]
+    java.lang.String | (js.Array[graphqlLib.languageAstMod.DocumentNode | java.lang.String]) | graphqlLib.languageAstMod.DocumentNode
   ] = js.native
   var version: java.lang.String = js.native
   def __actionHookForDevTools(cb: js.Function0[_]): scala.Unit = js.native

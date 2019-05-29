@@ -10,7 +10,7 @@ trait CacheStrategyMakeRequestOptions extends js.Object {
   	 * If provided, `event.waitUntil()` will
   	 * be called automatically to extend the service worker's lifetime.
   	 */
-  var event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.UndefOr[
+  var event: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
   ] = js.undefined
   /**

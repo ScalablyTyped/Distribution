@@ -84,6 +84,51 @@ object ^ extends js.Object {
     oldProgram: BuilderProgram,
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): BuilderProgram = js.native
+  def createAbstractBuilder(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: BuilderProgram
+  ): BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: BuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: BuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic],
+    projectReferences: js.Array[ProjectReference]
+  ): BuilderProgram = js.native
+  def createAbstractBuilder(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): BuilderProgram = js.native
+  def createAbstractBuilder(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: BuilderProgram
+  ): BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: BuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): BuilderProgram = js.native
+  def createAbstractBuilder(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: BuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic],
+    projectReferences: js.Array[ProjectReference]
+  ): BuilderProgram = js.native
   def createAbstractBuilder(rootNames: js.Array[java.lang.String]): BuilderProgram = js.native
   def createAbstractBuilder(rootNames: js.Array[java.lang.String], options: js.UndefOr[scala.Nothing], host: CompilerHost): BuilderProgram = js.native
   def createAbstractBuilder(
@@ -130,51 +175,6 @@ object ^ extends js.Object {
     configFileParsingDiagnostics: js.Array[Diagnostic],
     projectReferences: js.Array[ProjectReference]
   ): BuilderProgram = js.native
-  def createAbstractBuilder(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: BuilderProgram
-  ): BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): BuilderProgram = js.native
-  def createAbstractBuilder(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): BuilderProgram = js.native
-  def createAbstractBuilder(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: BuilderProgram
-  ): BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): BuilderProgram = js.native
-  def createAbstractBuilder(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: BuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): BuilderProgram = js.native
   def createAdd(left: Expression, right: Expression): BinaryExpression = js.native
   def createArrayBindingPattern(elements: js.Array[ArrayBindingElement]): ArrayBindingPattern = js.native
   def createArrayLiteral(): ArrayLiteralExpression = js.native
@@ -182,39 +182,7 @@ object ^ extends js.Object {
   def createArrayLiteral(elements: js.Array[Expression], multiLine: scala.Boolean): ArrayLiteralExpression = js.native
   def createArrayTypeNode(elementType: TypeNode): ArrayTypeNode = js.native
   def createArrowFunction(
-    modifiers: js.Array[Modifier],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: js.UndefOr[scala.Nothing],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def createArrowFunction(
-    modifiers: js.Array[Modifier],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: EqualsGreaterThanToken,
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def createArrowFunction(
-    modifiers: js.Array[Modifier],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    equalsGreaterThanToken: js.UndefOr[scala.Nothing],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def createArrowFunction(
-    modifiers: js.Array[Modifier],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    equalsGreaterThanToken: EqualsGreaterThanToken,
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def createArrowFunction(
-    modifiers: js.Array[Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -222,7 +190,7 @@ object ^ extends js.Object {
     body: ConciseBody
   ): ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.Array[Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -230,7 +198,7 @@ object ^ extends js.Object {
     body: ConciseBody
   ): ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.Array[Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
@@ -238,7 +206,7 @@ object ^ extends js.Object {
     body: ConciseBody
   ): ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.Array[Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
@@ -278,7 +246,7 @@ object ^ extends js.Object {
     body: ConciseBody
   ): ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -286,7 +254,7 @@ object ^ extends js.Object {
     body: ConciseBody
   ): ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -294,7 +262,7 @@ object ^ extends js.Object {
     body: ConciseBody
   ): ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
@@ -302,8 +270,40 @@ object ^ extends js.Object {
     body: ConciseBody
   ): ArrowFunction = js.native
   def createArrowFunction(
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode,
+    equalsGreaterThanToken: EqualsGreaterThanToken,
+    body: ConciseBody
+  ): ArrowFunction = js.native
+  def createArrowFunction(
+    modifiers: js.Array[Modifier],
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    equalsGreaterThanToken: js.UndefOr[scala.Nothing],
+    body: ConciseBody
+  ): ArrowFunction = js.native
+  def createArrowFunction(
+    modifiers: js.Array[Modifier],
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    equalsGreaterThanToken: EqualsGreaterThanToken,
+    body: ConciseBody
+  ): ArrowFunction = js.native
+  def createArrowFunction(
+    modifiers: js.Array[Modifier],
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode,
+    equalsGreaterThanToken: js.UndefOr[scala.Nothing],
+    body: ConciseBody
+  ): ArrowFunction = js.native
+  def createArrowFunction(
+    modifiers: js.Array[Modifier],
+    typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
     equalsGreaterThanToken: EqualsGreaterThanToken,
@@ -317,20 +317,6 @@ object ^ extends js.Object {
   def createBigIntLiteral(value: java.lang.String): BigIntLiteral = js.native
   def createBinary(left: Expression, operator: BinaryOperatorToken, right: Expression): BinaryExpression = js.native
   def createBinary(left: Expression, operator: BinaryOperator, right: Expression): BinaryExpression = js.native
-  def createBindingElement(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: java.lang.String, name: java.lang.String): BindingElement = js.native
-  def createBindingElement(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: java.lang.String,
-    name: java.lang.String,
-    initializer: Expression
-  ): BindingElement = js.native
-  def createBindingElement(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: java.lang.String, name: BindingName): BindingElement = js.native
-  def createBindingElement(
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    propertyName: java.lang.String,
-    name: BindingName,
-    initializer: Expression
-  ): BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: js.UndefOr[scala.Nothing],
     propertyName: js.UndefOr[scala.Nothing],
@@ -353,6 +339,20 @@ object ^ extends js.Object {
     name: BindingName,
     initializer: Expression
   ): BindingElement = js.native
+  def createBindingElement(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: java.lang.String, name: java.lang.String): BindingElement = js.native
+  def createBindingElement(
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    propertyName: java.lang.String,
+    name: java.lang.String,
+    initializer: Expression
+  ): BindingElement = js.native
+  def createBindingElement(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: java.lang.String, name: BindingName): BindingElement = js.native
+  def createBindingElement(
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    propertyName: java.lang.String,
+    name: BindingName,
+    initializer: Expression
+  ): BindingElement = js.native
   def createBindingElement(dotDotDotToken: js.UndefOr[scala.Nothing], propertyName: PropertyName, name: java.lang.String): BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: js.UndefOr[scala.Nothing],
@@ -367,20 +367,6 @@ object ^ extends js.Object {
     name: BindingName,
     initializer: Expression
   ): BindingElement = js.native
-  def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: java.lang.String, name: java.lang.String): BindingElement = js.native
-  def createBindingElement(
-    dotDotDotToken: DotDotDotToken,
-    propertyName: java.lang.String,
-    name: java.lang.String,
-    initializer: Expression
-  ): BindingElement = js.native
-  def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: java.lang.String, name: BindingName): BindingElement = js.native
-  def createBindingElement(
-    dotDotDotToken: DotDotDotToken,
-    propertyName: java.lang.String,
-    name: BindingName,
-    initializer: Expression
-  ): BindingElement = js.native
   def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: js.UndefOr[scala.Nothing], name: java.lang.String): BindingElement = js.native
   def createBindingElement(
     dotDotDotToken: DotDotDotToken,
@@ -392,6 +378,20 @@ object ^ extends js.Object {
   def createBindingElement(
     dotDotDotToken: DotDotDotToken,
     propertyName: js.UndefOr[scala.Nothing],
+    name: BindingName,
+    initializer: Expression
+  ): BindingElement = js.native
+  def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: java.lang.String, name: java.lang.String): BindingElement = js.native
+  def createBindingElement(
+    dotDotDotToken: DotDotDotToken,
+    propertyName: java.lang.String,
+    name: java.lang.String,
+    initializer: Expression
+  ): BindingElement = js.native
+  def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: java.lang.String, name: BindingName): BindingElement = js.native
+  def createBindingElement(
+    dotDotDotToken: DotDotDotToken,
+    propertyName: java.lang.String,
     name: BindingName,
     initializer: Expression
   ): BindingElement = js.native
@@ -417,29 +417,29 @@ object ^ extends js.Object {
   def createBundle(sourceFiles: js.Array[SourceFile]): Bundle = js.native
   def createBundle(sourceFiles: js.Array[SourceFile], prepends: js.Array[UnparsedSource | InputFiles]): Bundle = js.native
   def createCall(expression: Expression): CallExpression = js.native
-  def createCall(expression: Expression, typeArguments: js.Array[TypeNode]): CallExpression = js.native
-  def createCall(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): CallExpression = js.native
   def createCall(
     expression: Expression,
     typeArguments: js.UndefOr[scala.Nothing],
     argumentsArray: js.Array[Expression]
   ): CallExpression = js.native
-  def createCallSignature(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): CallSignatureDeclaration = js.native
-  def createCallSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): CallSignatureDeclaration = js.native
+  def createCall(expression: Expression, typeArguments: js.Array[TypeNode]): CallExpression = js.native
+  def createCall(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): CallExpression = js.native
   def createCallSignature(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[ParameterDeclaration]): CallSignatureDeclaration = js.native
   def createCallSignature(
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): CallSignatureDeclaration = js.native
+  def createCallSignature(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): CallSignatureDeclaration = js.native
+  def createCallSignature(
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode
+  ): CallSignatureDeclaration = js.native
   def createCaseBlock(clauses: js.Array[CaseOrDefaultClause]): CaseBlock = js.native
   def createCaseClause(expression: Expression, statements: js.Array[Statement]): CaseClause = js.native
-  def createCatchClause(variableDeclaration: java.lang.String, block: Block): CatchClause = js.native
   def createCatchClause(variableDeclaration: js.UndefOr[scala.Nothing], block: Block): CatchClause = js.native
+  def createCatchClause(variableDeclaration: java.lang.String, block: Block): CatchClause = js.native
   def createCatchClause(variableDeclaration: VariableDeclaration, block: Block): CatchClause = js.native
   def createClassDeclaration(
     decorators: js.UndefOr[js.Array[Decorator]],
@@ -471,71 +471,71 @@ object ^ extends js.Object {
   ): ConditionalExpression = js.native
   /** @deprecated */ def createConditional(condition: Expression, whenTrue: Expression, whenFalse: Expression): ConditionalExpression = js.native
   def createConditionalTypeNode(checkType: TypeNode, extendsType: TypeNode, trueType: TypeNode, falseType: TypeNode): ConditionalTypeNode = js.native
-  def createConstructSignature(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): ConstructSignatureDeclaration = js.native
-  def createConstructSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): ConstructSignatureDeclaration = js.native
   def createConstructSignature(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[ParameterDeclaration]): ConstructSignatureDeclaration = js.native
   def createConstructSignature(
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): ConstructSignatureDeclaration = js.native
-  def createConstructor(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def createConstructor(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def createConstructor(
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def createConstructor(
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def createConstructor(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def createConstructor(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def createConstructor(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def createConstructor(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def createConstructorTypeNode(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): ConstructorTypeNode = js.native
-  def createConstructorTypeNode(
+  def createConstructSignature(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): ConstructSignatureDeclaration = js.native
+  def createConstructSignature(
     typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
-  ): ConstructorTypeNode = js.native
+  ): ConstructSignatureDeclaration = js.native
+  def createConstructor(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration]
+  ): ConstructorDeclaration = js.native
+  def createConstructor(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    body: Block
+  ): ConstructorDeclaration = js.native
+  def createConstructor(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    parameters: js.Array[ParameterDeclaration]
+  ): ConstructorDeclaration = js.native
+  def createConstructor(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    parameters: js.Array[ParameterDeclaration],
+    body: Block
+  ): ConstructorDeclaration = js.native
+  def createConstructor(
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration]
+  ): ConstructorDeclaration = js.native
+  def createConstructor(
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    body: Block
+  ): ConstructorDeclaration = js.native
+  def createConstructor(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    parameters: js.Array[ParameterDeclaration]
+  ): ConstructorDeclaration = js.native
+  def createConstructor(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    parameters: js.Array[ParameterDeclaration],
+    body: Block
+  ): ConstructorDeclaration = js.native
   def createConstructorTypeNode(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[ParameterDeclaration]): ConstructorTypeNode = js.native
   def createConstructorTypeNode(
     typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode
+  ): ConstructorTypeNode = js.native
+  def createConstructorTypeNode(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): ConstructorTypeNode = js.native
+  def createConstructorTypeNode(
+    typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): ConstructorTypeNode = js.native
@@ -568,6 +568,51 @@ object ^ extends js.Object {
     host: BuilderProgramHost,
     oldProgram: EmitAndSemanticDiagnosticsBuilderProgram,
     configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram
+  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic],
+    projectReferences: js.Array[ProjectReference]
+  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram
+  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
+  def createEmitAndSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic],
+    projectReferences: js.Array[ProjectReference]
   ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
   def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.Array[java.lang.String]): EmitAndSemanticDiagnosticsBuilderProgram = js.native
   def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.Array[java.lang.String], options: js.UndefOr[scala.Nothing], host: CompilerHost): EmitAndSemanticDiagnosticsBuilderProgram = js.native
@@ -615,72 +660,15 @@ object ^ extends js.Object {
     configFileParsingDiagnostics: js.Array[Diagnostic],
     projectReferences: js.Array[ProjectReference]
   ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram
-  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram
-  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
-  def createEmitAndSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: EmitAndSemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
   def createEmptyStatement(): EmptyStatement = js.native
   def createEnumDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def createEnumDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def createEnumDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     members: js.Array[EnumMember]
   ): EnumDeclaration = js.native
   def createEnumDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
     members: js.Array[EnumMember]
@@ -698,14 +686,26 @@ object ^ extends js.Object {
     members: js.Array[EnumMember]
   ): EnumDeclaration = js.native
   def createEnumDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     members: js.Array[EnumMember]
   ): EnumDeclaration = js.native
   def createEnumDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    members: js.Array[EnumMember]
+  ): EnumDeclaration = js.native
+  def createEnumDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: java.lang.String,
+    members: js.Array[EnumMember]
+  ): EnumDeclaration = js.native
+  def createEnumDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: Identifier,
     members: js.Array[EnumMember]
   ): EnumDeclaration = js.native
@@ -714,25 +714,13 @@ object ^ extends js.Object {
   def createEnumMember(name: PropertyName): EnumMember = js.native
   def createEnumMember(name: PropertyName, initializer: Expression): EnumMember = js.native
   def createExportAssignment(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isExportEquals: js.UndefOr[scala.Nothing],
-    expression: Expression
-  ): ExportAssignment = js.native
-  def createExportAssignment(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isExportEquals: scala.Boolean,
-    expression: Expression
-  ): ExportAssignment = js.native
-  def createExportAssignment(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     isExportEquals: js.UndefOr[scala.Nothing],
     expression: Expression
   ): ExportAssignment = js.native
   def createExportAssignment(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     isExportEquals: scala.Boolean,
     expression: Expression
@@ -750,42 +738,43 @@ object ^ extends js.Object {
     expression: Expression
   ): ExportAssignment = js.native
   def createExportAssignment(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     isExportEquals: js.UndefOr[scala.Nothing],
     expression: Expression
   ): ExportAssignment = js.native
   def createExportAssignment(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    isExportEquals: scala.Boolean,
+    expression: Expression
+  ): ExportAssignment = js.native
+  def createExportAssignment(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    isExportEquals: js.UndefOr[scala.Nothing],
+    expression: Expression
+  ): ExportAssignment = js.native
+  def createExportAssignment(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     isExportEquals: scala.Boolean,
     expression: Expression
   ): ExportAssignment = js.native
   def createExportDeclaration(): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: js.Array[Decorator]): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], exportClause: NamedExports): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    exportClause: NamedExports,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.UndefOr[scala.Nothing], exportClause: NamedExports): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    exportClause: NamedExports
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: NamedExports,
     moduleSpecifier: Expression
@@ -804,33 +793,44 @@ object ^ extends js.Object {
     exportClause: NamedExports,
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
+  def createExportDeclaration(decorators: js.Array[Decorator]): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
+  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.UndefOr[scala.Nothing], exportClause: NamedExports): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    exportClause: NamedExports
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: NamedExports,
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
+  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression
+  ): ExportDeclaration = js.native
+  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], exportClause: NamedExports): ExportDeclaration = js.native
+  def createExportDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    exportClause: NamedExports,
+    moduleSpecifier: Expression
+  ): ExportDeclaration = js.native
   def createExportDefault(expression: Expression): ExportAssignment = js.native
-  def createExportSpecifier(propertyName: java.lang.String, name: java.lang.String): ExportSpecifier = js.native
-  def createExportSpecifier(propertyName: java.lang.String, name: Identifier): ExportSpecifier = js.native
   def createExportSpecifier(propertyName: js.UndefOr[scala.Nothing], name: java.lang.String): ExportSpecifier = js.native
   def createExportSpecifier(propertyName: js.UndefOr[scala.Nothing], name: Identifier): ExportSpecifier = js.native
+  def createExportSpecifier(propertyName: java.lang.String, name: java.lang.String): ExportSpecifier = js.native
+  def createExportSpecifier(propertyName: java.lang.String, name: Identifier): ExportSpecifier = js.native
   def createExportSpecifier(propertyName: Identifier, name: java.lang.String): ExportSpecifier = js.native
   def createExportSpecifier(propertyName: Identifier, name: Identifier): ExportSpecifier = js.native
   def createExpressionStatement(expression: Expression): ExpressionStatement = js.native
-  def createExpressionWithTypeArguments(typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = js.native
   def createExpressionWithTypeArguments(typeArguments: js.UndefOr[scala.Nothing], expression: Expression): ExpressionWithTypeArguments = js.native
+  def createExpressionWithTypeArguments(typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = js.native
   def createExternalModuleExport(exportName: Identifier): ExportDeclaration = js.native
   def createExternalModuleReference(expression: Expression): ExternalModuleReference = js.native
   def createFalse(): BooleanLiteral with Token[SyntaxKind] = js.native
@@ -928,15 +928,15 @@ object ^ extends js.Object {
     `type`: js.UndefOr[TypeNode],
     body: Block
   ): FunctionExpression = js.native
-  def createFunctionTypeNode(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): FunctionTypeNode = js.native
-  def createFunctionTypeNode(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): FunctionTypeNode = js.native
   def createFunctionTypeNode(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[ParameterDeclaration]): FunctionTypeNode = js.native
   def createFunctionTypeNode(
     typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode
+  ): FunctionTypeNode = js.native
+  def createFunctionTypeNode(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): FunctionTypeNode = js.native
+  def createFunctionTypeNode(
+    typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): FunctionTypeNode = js.native
@@ -974,25 +974,13 @@ object ^ extends js.Object {
   def createImportClause(name: Identifier): ImportClause = js.native
   def createImportClause(name: Identifier, namedBindings: NamedImportBindings): ImportClause = js.native
   def createImportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
   def createImportDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: ImportClause,
     moduleSpecifier: Expression
@@ -1010,37 +998,37 @@ object ^ extends js.Object {
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
   def createImportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
   def createImportDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    importClause: ImportClause,
+    moduleSpecifier: Expression
+  ): ImportDeclaration = js.native
+  def createImportDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    importClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression
+  ): ImportDeclaration = js.native
+  def createImportDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     importClause: ImportClause,
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
   def createImportEqualsDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     moduleReference: ModuleReference
   ): ImportEqualsDeclaration = js.native
   def createImportEqualsDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
     moduleReference: ModuleReference
@@ -1058,14 +1046,26 @@ object ^ extends js.Object {
     moduleReference: ModuleReference
   ): ImportEqualsDeclaration = js.native
   def createImportEqualsDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     moduleReference: ModuleReference
   ): ImportEqualsDeclaration = js.native
   def createImportEqualsDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    moduleReference: ModuleReference
+  ): ImportEqualsDeclaration = js.native
+  def createImportEqualsDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: java.lang.String,
+    moduleReference: ModuleReference
+  ): ImportEqualsDeclaration = js.native
+  def createImportEqualsDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: Identifier,
     moduleReference: ModuleReference
   ): ImportEqualsDeclaration = js.native
@@ -1081,13 +1081,7 @@ object ^ extends js.Object {
     isTypeOf: scala.Boolean
   ): ImportTypeNode = js.native
   def createIndexSignature(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def createIndexSignature(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
@@ -1099,8 +1093,14 @@ object ^ extends js.Object {
     `type`: TypeNode
   ): IndexSignatureDeclaration = js.native
   def createIndexSignature(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode
+  ): IndexSignatureDeclaration = js.native
+  def createIndexSignature(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): IndexSignatureDeclaration = js.native
@@ -1110,12 +1110,87 @@ object ^ extends js.Object {
   def createInputFiles(
     javascriptText: java.lang.String,
     declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    declarationMapText: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: java.lang.String,
+    declarationMapText: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: java.lang.String,
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    declarationMapText: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: java.lang.String,
+    declarationMapPath: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapText: java.lang.String,
+    declarationMapPath: java.lang.String,
+    declarationMapText: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: java.lang.String
   ): InputFiles = js.native
   def createInputFiles(
     javascriptText: java.lang.String,
     declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    declarationMapText: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    javascriptMapText: js.UndefOr[scala.Nothing],
+    declarationMapPath: java.lang.String,
+    declarationMapText: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: java.lang.String,
     javascriptMapText: java.lang.String
   ): InputFiles = js.native
   def createInputFiles(
@@ -1123,6 +1198,14 @@ object ^ extends js.Object {
     declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
     javascriptMapText: java.lang.String,
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    declarationMapText: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    javascriptMapText: java.lang.String,
     declarationMapPath: java.lang.String
   ): InputFiles = js.native
   def createInputFiles(
@@ -1132,118 +1215,6 @@ object ^ extends js.Object {
     javascriptMapText: java.lang.String,
     declarationMapPath: java.lang.String,
     declarationMapText: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    javascriptMapText: java.lang.String,
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    declarationMapText: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: java.lang.String,
-    declarationMapText: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    declarationMapText: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: java.lang.String,
-    declarationMapPath: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: java.lang.String,
-    declarationMapPath: java.lang.String,
-    declarationMapText: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: java.lang.String,
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    declarationMapText: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: java.lang.String,
-    declarationMapText: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    javascriptText: java.lang.String,
-    declarationText: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
-    javascriptMapText: js.UndefOr[scala.Nothing],
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    declarationMapText: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
-    javascriptPath: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    declarationPath: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
-    javascriptPath: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    declarationPath: java.lang.String,
-    declarationMapPath: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
-    javascriptPath: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    declarationPath: java.lang.String,
-    declarationMapPath: java.lang.String,
-    buildInfoPath: java.lang.String
-  ): InputFiles = js.native
-  def createInputFiles(
-    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
-    javascriptPath: java.lang.String,
-    javascriptMapPath: java.lang.String,
-    declarationPath: java.lang.String,
-    declarationMapPath: js.UndefOr[scala.Nothing],
-    buildInfoPath: java.lang.String
   ): InputFiles = js.native
   def createInputFiles(
     readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
@@ -1256,6 +1227,14 @@ object ^ extends js.Object {
     javascriptPath: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     declarationPath: java.lang.String,
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    buildInfoPath: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    declarationPath: java.lang.String,
     declarationMapPath: java.lang.String
   ): InputFiles = js.native
   def createInputFiles(
@@ -1269,9 +1248,30 @@ object ^ extends js.Object {
   def createInputFiles(
     readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
     javascriptPath: java.lang.String,
-    javascriptMapPath: js.UndefOr[scala.Nothing],
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
     declarationPath: java.lang.String,
     declarationMapPath: js.UndefOr[scala.Nothing],
+    buildInfoPath: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String,
+    declarationMapPath: java.lang.String
+  ): InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String,
+    declarationMapPath: java.lang.String,
     buildInfoPath: java.lang.String
   ): InputFiles = js.native
   def createInterfaceDeclaration(
@@ -1298,11 +1298,11 @@ object ^ extends js.Object {
     closingFragment: JsxClosingFragment
   ): JsxFragment = js.native
   def createJsxJsxClosingFragment(): JsxClosingFragment = js.native
-  def createJsxOpeningElement(tagName: JsxTagNameExpression, typeArguments: js.Array[TypeNode], attributes: JsxAttributes): JsxOpeningElement = js.native
   def createJsxOpeningElement(tagName: JsxTagNameExpression, typeArguments: js.UndefOr[scala.Nothing], attributes: JsxAttributes): JsxOpeningElement = js.native
+  def createJsxOpeningElement(tagName: JsxTagNameExpression, typeArguments: js.Array[TypeNode], attributes: JsxAttributes): JsxOpeningElement = js.native
   def createJsxOpeningFragment(): JsxOpeningFragment = js.native
-  def createJsxSelfClosingElement(tagName: JsxTagNameExpression, typeArguments: js.Array[TypeNode], attributes: JsxAttributes): JsxSelfClosingElement = js.native
   def createJsxSelfClosingElement(tagName: JsxTagNameExpression, typeArguments: js.UndefOr[scala.Nothing], attributes: JsxAttributes): JsxSelfClosingElement = js.native
+  def createJsxSelfClosingElement(tagName: JsxTagNameExpression, typeArguments: js.Array[TypeNode], attributes: JsxAttributes): JsxSelfClosingElement = js.native
   def createJsxSpreadAttribute(expression: Expression): JsxSpreadAttribute = js.native
   def createJsxText(text: java.lang.String): JsxText = js.native
   def createJsxText(text: java.lang.String, containsOnlyTriviaWhiteSpaces: scala.Boolean): JsxText = js.native
@@ -1400,58 +1400,6 @@ object ^ extends js.Object {
     body: Block
   ): MethodDeclaration = js.native
   def createMethodSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: java.lang.String
-  ): MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: QuestionToken
-  ): MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: PropertyName
-  ): MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    name: PropertyName,
-    questionToken: QuestionToken
-  ): MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    name: java.lang.String
-  ): MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    name: java.lang.String,
-    questionToken: QuestionToken
-  ): MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    name: PropertyName
-  ): MethodSignature = js.native
-  def createMethodSignature(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    name: PropertyName,
-    questionToken: QuestionToken
-  ): MethodSignature = js.native
-  def createMethodSignature(
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -1498,6 +1446,58 @@ object ^ extends js.Object {
   ): MethodSignature = js.native
   def createMethodSignature(
     typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode,
+    name: PropertyName,
+    questionToken: QuestionToken
+  ): MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    name: java.lang.String
+  ): MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: QuestionToken
+  ): MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    name: PropertyName
+  ): MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    name: PropertyName,
+    questionToken: QuestionToken
+  ): MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode,
+    name: java.lang.String
+  ): MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode,
+    name: java.lang.String,
+    questionToken: QuestionToken
+  ): MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode,
+    name: PropertyName
+  ): MethodSignature = js.native
+  def createMethodSignature(
+    typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
     name: PropertyName,
@@ -1506,38 +1506,22 @@ object ^ extends js.Object {
   def createModifier[T /* <: /* import warning: ImportType.apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any */](kind: T): Token[T] = js.native
   def createModifiersFromModifierFlags(flags: ModifierFlags): js.Array[Modifier] = js.native
   def createModuleBlock(statements: js.Array[Statement]): ModuleBlock = js.native
-  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
+  def createModuleDeclaration(decorators: js.UndefOr[scala.Nothing], modifiers: js.UndefOr[scala.Nothing], name: ModuleName): ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: ModuleName,
-    body: js.UndefOr[scala.Nothing],
-    flags: NodeFlags
-  ): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: ModuleName,
-    body: ModuleBody,
-    flags: NodeFlags
-  ): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.UndefOr[scala.Nothing], name: ModuleName): ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName,
     body: js.UndefOr[scala.Nothing],
     flags: NodeFlags
   ): ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName,
     body: ModuleBody
   ): ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName,
     body: ModuleBody,
@@ -1564,23 +1548,39 @@ object ^ extends js.Object {
     body: ModuleBody,
     flags: NodeFlags
   ): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: js.UndefOr[scala.Nothing], modifiers: js.UndefOr[scala.Nothing], name: ModuleName): ModuleDeclaration = js.native
+  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.UndefOr[scala.Nothing], name: ModuleName): ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName,
     body: js.UndefOr[scala.Nothing],
     flags: NodeFlags
   ): ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName,
     body: ModuleBody
   ): ModuleDeclaration = js.native
   def createModuleDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: ModuleName,
+    body: ModuleBody,
+    flags: NodeFlags
+  ): ModuleDeclaration = js.native
+  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
+  def createModuleDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: ModuleName,
+    body: js.UndefOr[scala.Nothing],
+    flags: NodeFlags
+  ): ModuleDeclaration = js.native
+  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
+  def createModuleDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: ModuleName,
     body: ModuleBody,
     flags: NodeFlags
@@ -1595,13 +1595,13 @@ object ^ extends js.Object {
   def createNamespaceExportDeclaration(name: Identifier): NamespaceExportDeclaration = js.native
   def createNamespaceImport(name: Identifier): NamespaceImport = js.native
   def createNew(expression: Expression): NewExpression = js.native
-  def createNew(expression: Expression, typeArguments: js.Array[TypeNode]): NewExpression = js.native
-  def createNew(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): NewExpression = js.native
   def createNew(
     expression: Expression,
     typeArguments: js.UndefOr[scala.Nothing],
     argumentsArray: js.Array[Expression]
   ): NewExpression = js.native
+  def createNew(expression: Expression, typeArguments: js.Array[TypeNode]): NewExpression = js.native
+  def createNew(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): NewExpression = js.native
   def createNoSubstitutionTemplateLiteral(text: java.lang.String): NoSubstitutionTemplateLiteral = js.native
   def createNode(kind: SyntaxKind): Node = js.native
   def createNode(kind: SyntaxKind, pos: scala.Double): Node = js.native
@@ -1629,140 +1629,20 @@ object ^ extends js.Object {
   def createOptimisticUniqueName(text: java.lang.String): Identifier = js.native
   def createOptionalTypeNode(`type`: TypeNode): OptionalTypeNode = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: QuestionToken
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: QuestionToken,
-    `type`: TypeNode
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    questionToken: QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: BindingName
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: BindingName,
-    questionToken: QuestionToken
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: BindingName,
-    questionToken: QuestionToken,
-    `type`: TypeNode
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: js.UndefOr[scala.Nothing],
-    name: BindingName,
-    questionToken: QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: DotDotDotToken,
-    name: java.lang.String
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: DotDotDotToken,
-    name: java.lang.String,
-    questionToken: QuestionToken
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: DotDotDotToken,
-    name: java.lang.String,
-    questionToken: QuestionToken,
-    `type`: TypeNode
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: DotDotDotToken,
-    name: java.lang.String,
-    questionToken: QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: DotDotDotToken,
-    name: BindingName
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: DotDotDotToken,
-    name: BindingName,
-    questionToken: QuestionToken
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: DotDotDotToken,
-    name: BindingName,
-    questionToken: QuestionToken,
-    `type`: TypeNode
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    dotDotDotToken: DotDotDotToken,
-    name: BindingName,
-    questionToken: QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): ParameterDeclaration = js.native
-  def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionToken: QuestionToken
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -1770,7 +1650,7 @@ object ^ extends js.Object {
     `type`: TypeNode
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -1779,20 +1659,20 @@ object ^ extends js.Object {
     initializer: Expression
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: BindingName
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: BindingName,
     questionToken: QuestionToken
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: BindingName,
@@ -1800,7 +1680,7 @@ object ^ extends js.Object {
     `type`: TypeNode
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: BindingName,
@@ -1809,20 +1689,20 @@ object ^ extends js.Object {
     initializer: Expression
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: java.lang.String
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: java.lang.String,
     questionToken: QuestionToken
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: java.lang.String,
@@ -1830,7 +1710,7 @@ object ^ extends js.Object {
     `type`: TypeNode
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: java.lang.String,
@@ -1839,20 +1719,20 @@ object ^ extends js.Object {
     initializer: Expression
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: BindingName
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: BindingName,
     questionToken: QuestionToken
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: BindingName,
@@ -1860,7 +1740,7 @@ object ^ extends js.Object {
     `type`: TypeNode
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: BindingName,
@@ -1989,20 +1869,20 @@ object ^ extends js.Object {
     initializer: Expression
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     questionToken: QuestionToken
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -2010,7 +1890,7 @@ object ^ extends js.Object {
     `type`: TypeNode
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: java.lang.String,
@@ -2019,20 +1899,20 @@ object ^ extends js.Object {
     initializer: Expression
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: BindingName
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: BindingName,
     questionToken: QuestionToken
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: BindingName,
@@ -2040,7 +1920,7 @@ object ^ extends js.Object {
     `type`: TypeNode
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: js.UndefOr[scala.Nothing],
     name: BindingName,
@@ -2049,20 +1929,20 @@ object ^ extends js.Object {
     initializer: Expression
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: java.lang.String
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: java.lang.String,
     questionToken: QuestionToken
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: java.lang.String,
@@ -2070,7 +1950,7 @@ object ^ extends js.Object {
     `type`: TypeNode
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: java.lang.String,
@@ -2079,20 +1959,20 @@ object ^ extends js.Object {
     initializer: Expression
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: BindingName
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: BindingName,
     questionToken: QuestionToken
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     dotDotDotToken: DotDotDotToken,
     name: BindingName,
@@ -2100,8 +1980,128 @@ object ^ extends js.Object {
     `type`: TypeNode
   ): ParameterDeclaration = js.native
   def createParameter(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    dotDotDotToken: DotDotDotToken,
+    name: BindingName,
+    questionToken: QuestionToken,
+    `type`: TypeNode,
+    initializer: Expression
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: QuestionToken
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: QuestionToken,
+    `type`: TypeNode
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    questionToken: QuestionToken,
+    `type`: TypeNode,
+    initializer: Expression
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: BindingName
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: BindingName,
+    questionToken: QuestionToken
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: BindingName,
+    questionToken: QuestionToken,
+    `type`: TypeNode
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: js.UndefOr[scala.Nothing],
+    name: BindingName,
+    questionToken: QuestionToken,
+    `type`: TypeNode,
+    initializer: Expression
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: DotDotDotToken,
+    name: java.lang.String
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: DotDotDotToken,
+    name: java.lang.String,
+    questionToken: QuestionToken
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: DotDotDotToken,
+    name: java.lang.String,
+    questionToken: QuestionToken,
+    `type`: TypeNode
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: DotDotDotToken,
+    name: java.lang.String,
+    questionToken: QuestionToken,
+    `type`: TypeNode,
+    initializer: Expression
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: DotDotDotToken,
+    name: BindingName
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: DotDotDotToken,
+    name: BindingName,
+    questionToken: QuestionToken
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    dotDotDotToken: DotDotDotToken,
+    name: BindingName,
+    questionToken: QuestionToken,
+    `type`: TypeNode
+  ): ParameterDeclaration = js.native
+  def createParameter(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     dotDotDotToken: DotDotDotToken,
     name: BindingName,
     questionToken: QuestionToken,
@@ -2266,6 +2266,51 @@ object ^ extends js.Object {
     oldProgram: SemanticDiagnosticsBuilderProgram,
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: SemanticDiagnosticsBuilderProgram
+  ): SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: SemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: js.UndefOr[scala.Nothing],
+    host: CompilerHost,
+    oldProgram: SemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic],
+    projectReferences: js.Array[ProjectReference]
+  ): SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: SemanticDiagnosticsBuilderProgram
+  ): SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: SemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic]
+  ): SemanticDiagnosticsBuilderProgram = js.native
+  def createSemanticDiagnosticsBuilderProgram(
+    rootNames: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: CompilerHost,
+    oldProgram: SemanticDiagnosticsBuilderProgram,
+    configFileParsingDiagnostics: js.Array[Diagnostic],
+    projectReferences: js.Array[ProjectReference]
+  ): SemanticDiagnosticsBuilderProgram = js.native
   def createSemanticDiagnosticsBuilderProgram(rootNames: js.Array[java.lang.String]): SemanticDiagnosticsBuilderProgram = js.native
   def createSemanticDiagnosticsBuilderProgram(rootNames: js.Array[java.lang.String], options: js.UndefOr[scala.Nothing], host: CompilerHost): SemanticDiagnosticsBuilderProgram = js.native
   def createSemanticDiagnosticsBuilderProgram(
@@ -2312,99 +2357,28 @@ object ^ extends js.Object {
     configFileParsingDiagnostics: js.Array[Diagnostic],
     projectReferences: js.Array[ProjectReference]
   ): SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic]
-  ): SemanticDiagnosticsBuilderProgram = js.native
-  def createSemanticDiagnosticsBuilderProgram(
-    rootNames: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: CompilerHost,
-    oldProgram: SemanticDiagnosticsBuilderProgram,
-    configFileParsingDiagnostics: js.Array[Diagnostic],
-    projectReferences: js.Array[ProjectReference]
-  ): SemanticDiagnosticsBuilderProgram = js.native
   def createSemicolonClassElement(): SemicolonClassElement = js.native
   def createSetAccessor(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessor(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessor(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessor(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessor(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[ParameterDeclaration]
   ): SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[ParameterDeclaration],
     body: Block
   ): SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration]
   ): SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
@@ -2437,27 +2411,53 @@ object ^ extends js.Object {
     body: Block
   ): SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[ParameterDeclaration]
   ): SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
     parameters: js.Array[ParameterDeclaration],
     body: Block
   ): SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration]
   ): SetAccessorDeclaration = js.native
   def createSetAccessor(
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: PropertyName,
+    parameters: js.Array[ParameterDeclaration],
+    body: Block
+  ): SetAccessorDeclaration = js.native
+  def createSetAccessor(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: java.lang.String,
+    parameters: js.Array[ParameterDeclaration]
+  ): SetAccessorDeclaration = js.native
+  def createSetAccessor(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: java.lang.String,
+    parameters: js.Array[ParameterDeclaration],
+    body: Block
+  ): SetAccessorDeclaration = js.native
+  def createSetAccessor(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    parameters: js.Array[ParameterDeclaration]
+  ): SetAccessorDeclaration = js.native
+  def createSetAccessor(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
     body: Block
@@ -2498,8 +2498,8 @@ object ^ extends js.Object {
   def createSuper(): SuperExpression = js.native
   def createSwitch(expression: Expression, caseBlock: CaseBlock): SwitchStatement = js.native
   /** @deprecated */ def createTaggedTemplate(tag: Expression, template: TemplateLiteral): TaggedTemplateExpression = js.native
-  def createTaggedTemplate(tag: Expression, typeArguments: js.Array[TypeNode], template: TemplateLiteral): TaggedTemplateExpression = js.native
   def createTaggedTemplate(tag: Expression, typeArguments: js.UndefOr[scala.Nothing], template: TemplateLiteral): TaggedTemplateExpression = js.native
+  def createTaggedTemplate(tag: Expression, typeArguments: js.Array[TypeNode], template: TemplateLiteral): TaggedTemplateExpression = js.native
   def createTempVariable(): Identifier = js.native
   /** Create a unique temporary variable. */
   def createTempVariable(recordTempVariable: js.Function1[/* node */ Identifier, scala.Unit]): Identifier = js.native
@@ -2523,86 +2523,9 @@ object ^ extends js.Object {
   def createTry(tryBlock: Block, catchClause: CatchClause, finallyBlock: Block): TryStatement = js.native
   def createTupleTypeNode(elementTypes: js.Array[TypeNode]): TupleTypeNode = js.native
   def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     `type`: TypeNode
   ): TypeAliasDeclaration = js.native
@@ -2616,7 +2539,7 @@ object ^ extends js.Object {
   def createTypeAliasDeclaration(
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
-    name: java.lang.String,
+    name: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     `type`: TypeNode
   ): TypeAliasDeclaration = js.native
@@ -2629,9 +2552,86 @@ object ^ extends js.Object {
   ): TypeAliasDeclaration = js.native
   def createTypeAliasDeclaration(
     decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: java.lang.String,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: java.lang.String,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: java.lang.String,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: java.lang.String,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: java.lang.String,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
     `type`: TypeNode
   ): TypeAliasDeclaration = js.native
   def createTypeAssertion(`type`: TypeNode, expression: Expression): TypeAssertion = js.native
@@ -2659,9 +2659,9 @@ object ^ extends js.Object {
   /** Create a unique name based on the supplied text. */
   def createUniqueName(text: java.lang.String): Identifier = js.native
   def createUnparsedSourceFile(text: java.lang.String): UnparsedSource = js.native
+  def createUnparsedSourceFile(text: java.lang.String, mapPath: js.UndefOr[scala.Nothing], map: java.lang.String): UnparsedSource = js.native
   def createUnparsedSourceFile(text: java.lang.String, mapPath: java.lang.String): UnparsedSource = js.native
   def createUnparsedSourceFile(text: java.lang.String, mapPath: java.lang.String, map: java.lang.String): UnparsedSource = js.native
-  def createUnparsedSourceFile(text: java.lang.String, mapPath: js.UndefOr[scala.Nothing], map: java.lang.String): UnparsedSource = js.native
   @JSName("createUnparsedSourceFile")
   def createUnparsedSourceFile_dts(inputFile: InputFiles, `type`: typescriptLib.typescriptLibStrings.dts): UnparsedSource = js.native
   @JSName("createUnparsedSourceFile")
@@ -2682,10 +2682,10 @@ object ^ extends js.Object {
   def createVariableDeclaration(name: BindingName, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
   def createVariableDeclarationList(declarations: js.Array[VariableDeclaration]): VariableDeclarationList = js.native
   def createVariableDeclarationList(declarations: js.Array[VariableDeclaration], flags: NodeFlags): VariableDeclarationList = js.native
-  def createVariableStatement(modifiers: js.Array[Modifier], declarationList: js.Array[VariableDeclaration]): VariableStatement = js.native
-  def createVariableStatement(modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = js.native
   def createVariableStatement(modifiers: js.UndefOr[scala.Nothing], declarationList: js.Array[VariableDeclaration]): VariableStatement = js.native
   def createVariableStatement(modifiers: js.UndefOr[scala.Nothing], declarationList: VariableDeclarationList): VariableStatement = js.native
+  def createVariableStatement(modifiers: js.Array[Modifier], declarationList: js.Array[VariableDeclaration]): VariableStatement = js.native
+  def createVariableStatement(modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = js.native
   def createVoid(expression: Expression): VoidExpression = js.native
   def createVoidZero(): VoidExpression = js.native
   def createWatchCompilerHost[T /* <: BuilderProgram */](configFileName: java.lang.String, optionsToExtend: js.UndefOr[scala.Nothing], system: System): WatchCompilerHostOfConfigFile[T] = js.native
@@ -2799,8 +2799,8 @@ object ^ extends js.Object {
     fileExists: js.Function1[/* fileName */ java.lang.String, scala.Boolean],
     configName: java.lang.String
   ): js.UndefOr[java.lang.String] = js.native
-  def flattenDiagnosticMessageText(messageText: java.lang.String, newLine: java.lang.String): java.lang.String = js.native
   def flattenDiagnosticMessageText(messageText: js.UndefOr[scala.Nothing], newLine: java.lang.String): java.lang.String = js.native
+  def flattenDiagnosticMessageText(messageText: java.lang.String, newLine: java.lang.String): java.lang.String = js.native
   def flattenDiagnosticMessageText(messageText: DiagnosticMessageChain, newLine: java.lang.String): java.lang.String = js.native
   /**
     * Invokes a callback for each child of the given node. The 'cbNode' callback is invoked for all child nodes
@@ -3000,7 +3000,7 @@ object ^ extends js.Object {
   @JSName("getOriginalNode")
   def getOriginalNode_Node(node: Node): Node = js.native
   @JSName("getOriginalNode")
-  def getOriginalNode_TNodeUndefOr[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ scala.Boolean]): js.UndefOr[T] = js.native
+  def `getOriginalNode_TNode<union>`[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ scala.Boolean]): js.UndefOr[T] = js.native
   /**
     * Gets the original parse tree node for a node.
     *
@@ -3019,7 +3019,7 @@ object ^ extends js.Object {
     * @returns The original parse tree node if found; otherwise, undefined.
     */
   @JSName("getParseTreeNode")
-  def getParseTreeNode_TNodeUndefOr[T /* <: Node */](node: Node): js.UndefOr[T] = js.native
+  def `getParseTreeNode_TNode<union>`[T /* <: Node */](node: Node): js.UndefOr[T] = js.native
   /**
     * Reads the config file, reports errors if any and exits if the config file cannot be found
     */
@@ -3485,6 +3485,19 @@ object ^ extends js.Object {
     */
   def resolveProjectReferencePath(ref: ProjectReference): ResolvedConfigFileName = js.native
   def resolveTripleslashReference(moduleName: java.lang.String, containingFile: java.lang.String): java.lang.String = js.native
+  def resolveTypeReferenceDirective(
+    typeReferenceDirectiveName: java.lang.String,
+    containingFile: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: ModuleResolutionHost
+  ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
+  def resolveTypeReferenceDirective(
+    typeReferenceDirectiveName: java.lang.String,
+    containingFile: js.UndefOr[scala.Nothing],
+    options: CompilerOptions,
+    host: ModuleResolutionHost,
+    redirectedReference: ResolvedProjectReference
+  ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   /**
     * @param {string | undefined} containingFile - file that contains type reference directive, can be undefined if containing file is unknown.
     * This is possible in case if resolution is performed for directives specified via 'types' parameter. In this case initial path for secondary lookups
@@ -3499,19 +3512,6 @@ object ^ extends js.Object {
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: java.lang.String,
     containingFile: java.lang.String,
-    options: CompilerOptions,
-    host: ModuleResolutionHost,
-    redirectedReference: ResolvedProjectReference
-  ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-  def resolveTypeReferenceDirective(
-    typeReferenceDirectiveName: java.lang.String,
-    containingFile: js.UndefOr[scala.Nothing],
-    options: CompilerOptions,
-    host: ModuleResolutionHost
-  ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-  def resolveTypeReferenceDirective(
-    typeReferenceDirectiveName: java.lang.String,
-    containingFile: js.UndefOr[scala.Nothing],
     options: CompilerOptions,
     host: ModuleResolutionHost,
     redirectedReference: ResolvedProjectReference
@@ -3611,25 +3611,7 @@ object ^ extends js.Object {
   def updateArrayTypeNode(node: ArrayTypeNode, elementType: TypeNode): ArrayTypeNode = js.native
   def updateArrowFunction(
     node: ArrowFunction,
-    modifiers: js.Array[Modifier],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: Token[SyntaxKind],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def updateArrowFunction(
-    node: ArrowFunction,
-    modifiers: js.Array[Modifier],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    equalsGreaterThanToken: Token[SyntaxKind],
-    body: ConciseBody
-  ): ArrowFunction = js.native
-  def updateArrowFunction(
-    node: ArrowFunction,
-    modifiers: js.Array[Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -3638,7 +3620,7 @@ object ^ extends js.Object {
   ): ArrowFunction = js.native
   def updateArrowFunction(
     node: ArrowFunction,
-    modifiers: js.Array[Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
@@ -3665,7 +3647,7 @@ object ^ extends js.Object {
   ): ArrowFunction = js.native
   def updateArrowFunction(
     node: ArrowFunction,
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
@@ -3674,8 +3656,26 @@ object ^ extends js.Object {
   ): ArrowFunction = js.native
   def updateArrowFunction(
     node: ArrowFunction,
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
     typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode,
+    equalsGreaterThanToken: Token[SyntaxKind],
+    body: ConciseBody
+  ): ArrowFunction = js.native
+  def updateArrowFunction(
+    node: ArrowFunction,
+    modifiers: js.Array[Modifier],
+    typeParameters: js.Array[TypeParameterDeclaration],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    equalsGreaterThanToken: Token[SyntaxKind],
+    body: ConciseBody
+  ): ArrowFunction = js.native
+  def updateArrowFunction(
+    node: ArrowFunction,
+    modifiers: js.Array[Modifier],
+    typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
     equalsGreaterThanToken: Token[SyntaxKind],
@@ -3746,13 +3746,13 @@ object ^ extends js.Object {
   def updateCall(
     node: CallExpression,
     expression: Expression,
-    typeArguments: js.Array[TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     argumentsArray: js.Array[Expression]
   ): CallExpression = js.native
   def updateCall(
     node: CallExpression,
     expression: Expression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[TypeNode],
     argumentsArray: js.Array[Expression]
   ): CallExpression = js.native
   def updateCallSignature(
@@ -3792,81 +3792,9 @@ object ^ extends js.Object {
   ): ClassDeclaration = js.native
   def updateClassExpression(
     node: ClassExpression,
-    modifiers: js.Array[Modifier],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    modifiers: js.Array[Modifier],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    modifiers: js.Array[Modifier],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    modifiers: js.Array[Modifier],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
     modifiers: js.UndefOr[scala.Nothing],
     name: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    modifiers: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    typeParameters: js.Array[TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
     members: js.Array[ClassElement]
   ): ClassExpression = js.native
@@ -3882,6 +3810,22 @@ object ^ extends js.Object {
     node: ClassExpression,
     modifiers: js.UndefOr[scala.Nothing],
     name: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[ClassElement]
+  ): ClassExpression = js.native
+  def updateClassExpression(
+    node: ClassExpression,
+    modifiers: js.UndefOr[scala.Nothing],
+    name: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[ClassElement]
+  ): ClassExpression = js.native
+  def updateClassExpression(
+    node: ClassExpression,
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
     members: js.Array[ClassElement]
@@ -3890,7 +3834,7 @@ object ^ extends js.Object {
     node: ClassExpression,
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.Array[HeritageClause],
     members: js.Array[ClassElement]
   ): ClassExpression = js.native
@@ -3906,16 +3850,72 @@ object ^ extends js.Object {
     node: ClassExpression,
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[ClassElement]
+  ): ClassExpression = js.native
+  def updateClassExpression(
+    node: ClassExpression,
+    modifiers: js.Array[Modifier],
+    name: js.UndefOr[scala.Nothing],
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[ClassElement]
+  ): ClassExpression = js.native
+  def updateClassExpression(
+    node: ClassExpression,
+    modifiers: js.Array[Modifier],
+    name: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.Array[HeritageClause],
     members: js.Array[ClassElement]
   ): ClassExpression = js.native
   def updateClassExpression(
     node: ClassExpression,
-    modifiers: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[ClassElement]
+  ): ClassExpression = js.native
+  def updateClassExpression(
+    node: ClassExpression,
+    modifiers: js.Array[Modifier],
+    name: js.UndefOr[scala.Nothing],
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[ClassElement]
+  ): ClassExpression = js.native
+  def updateClassExpression(
+    node: ClassExpression,
+    modifiers: js.Array[Modifier],
     name: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[ClassElement]
+  ): ClassExpression = js.native
+  def updateClassExpression(
+    node: ClassExpression,
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[ClassElement]
+  ): ClassExpression = js.native
+  def updateClassExpression(
+    node: ClassExpression,
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[ClassElement]
+  ): ClassExpression = js.native
+  def updateClassExpression(
+    node: ClassExpression,
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.Array[HeritageClause],
     members: js.Array[ClassElement]
   ): ClassExpression = js.native
   def updateCommaList(node: CommaListExpression, elements: js.Array[Expression]): CommaListExpression = js.native
@@ -3959,26 +3959,13 @@ object ^ extends js.Object {
   ): ConstructSignatureDeclaration = js.native
   def updateConstructor(
     node: ConstructorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def updateConstructor(
-    node: ConstructorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def updateConstructor(
-    node: ConstructorDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration]
   ): ConstructorDeclaration = js.native
   def updateConstructor(
     node: ConstructorDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     body: Block
@@ -3998,14 +3985,27 @@ object ^ extends js.Object {
   ): ConstructorDeclaration = js.native
   def updateConstructor(
     node: ConstructorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration]
   ): ConstructorDeclaration = js.native
   def updateConstructor(
     node: ConstructorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    body: Block
+  ): ConstructorDeclaration = js.native
+  def updateConstructor(
+    node: ConstructorDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    parameters: js.Array[ParameterDeclaration]
+  ): ConstructorDeclaration = js.native
+  def updateConstructor(
+    node: ConstructorDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     parameters: js.Array[ParameterDeclaration],
     body: Block
   ): ConstructorDeclaration = js.native
@@ -4040,14 +4040,7 @@ object ^ extends js.Object {
   def updateElementAccess(node: ElementAccessExpression, expression: Expression, argumentExpression: Expression): ElementAccessExpression = js.native
   def updateEnumDeclaration(
     node: EnumDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def updateEnumDeclaration(
-    node: EnumDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
     members: js.Array[EnumMember]
@@ -4061,8 +4054,15 @@ object ^ extends js.Object {
   ): EnumDeclaration = js.native
   def updateEnumDeclaration(
     node: EnumDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    members: js.Array[EnumMember]
+  ): EnumDeclaration = js.native
+  def updateEnumDeclaration(
+    node: EnumDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: Identifier,
     members: js.Array[EnumMember]
   ): EnumDeclaration = js.native
@@ -4070,13 +4070,7 @@ object ^ extends js.Object {
   def updateEnumMember(node: EnumMember, name: PropertyName, initializer: Expression): EnumMember = js.native
   def updateExportAssignment(
     node: ExportAssignment,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    expression: Expression
-  ): ExportAssignment = js.native
-  def updateExportAssignment(
-    node: ExportAssignment,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     expression: Expression
   ): ExportAssignment = js.native
@@ -4088,49 +4082,33 @@ object ^ extends js.Object {
   ): ExportAssignment = js.native
   def updateExportAssignment(
     node: ExportAssignment,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    expression: Expression
+  ): ExportAssignment = js.native
+  def updateExportAssignment(
+    node: ExportAssignment,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     expression: Expression
   ): ExportAssignment = js.native
   def updateExportDeclaration(node: ExportDeclaration): ExportDeclaration = js.native
-  def updateExportDeclaration(node: ExportDeclaration, decorators: js.Array[Decorator]): ExportDeclaration = js.native
-  def updateExportDeclaration(node: ExportDeclaration, decorators: js.Array[Decorator], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    exportClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    exportClause: NamedExports
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    exportClause: NamedExports,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: NamedExports
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: NamedExports,
     moduleSpecifier: Expression
@@ -4156,35 +4134,57 @@ object ^ extends js.Object {
     exportClause: NamedExports,
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
+  def updateExportDeclaration(node: ExportDeclaration, decorators: js.Array[Decorator]): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     exportClause: NamedExports
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    exportClause: NamedExports,
+    moduleSpecifier: Expression
+  ): ExportDeclaration = js.native
+  def updateExportDeclaration(node: ExportDeclaration, decorators: js.Array[Decorator], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: ExportDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    exportClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression
+  ): ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: ExportDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    exportClause: NamedExports
+  ): ExportDeclaration = js.native
+  def updateExportDeclaration(
+    node: ExportDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     exportClause: NamedExports,
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
   def updateExportSpecifier(node: ExportSpecifier, propertyName: js.UndefOr[scala.Nothing], name: Identifier): ExportSpecifier = js.native
   def updateExportSpecifier(node: ExportSpecifier, propertyName: Identifier, name: Identifier): ExportSpecifier = js.native
   def updateExpressionStatement(node: ExpressionStatement, expression: Expression): ExpressionStatement = js.native
-  def updateExpressionWithTypeArguments(node: ExpressionWithTypeArguments, typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = js.native
   def updateExpressionWithTypeArguments(
     node: ExpressionWithTypeArguments,
     typeArguments: js.UndefOr[scala.Nothing],
     expression: Expression
   ): ExpressionWithTypeArguments = js.native
+  def updateExpressionWithTypeArguments(node: ExpressionWithTypeArguments, typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = js.native
   def updateExternalModuleReference(node: ExternalModuleReference, expression: Expression): ExternalModuleReference = js.native
   def updateFor(
     node: ForStatement,
@@ -4321,47 +4321,14 @@ object ^ extends js.Object {
   ): FunctionTypeNode = js.native
   def updateGetAccessor(
     node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessor(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[scala.Nothing],
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessor(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessor(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessor(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration]
   ): GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
@@ -4370,7 +4337,7 @@ object ^ extends js.Object {
   ): GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
@@ -4378,7 +4345,7 @@ object ^ extends js.Object {
   ): GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
@@ -4420,14 +4387,14 @@ object ^ extends js.Object {
   ): GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration]
   ): GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
@@ -4436,7 +4403,7 @@ object ^ extends js.Object {
   ): GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
@@ -4444,8 +4411,41 @@ object ^ extends js.Object {
   ): GetAccessorDeclaration = js.native
   def updateGetAccessor(
     node: GetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: PropertyName,
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode,
+    body: Block
+  ): GetAccessorDeclaration = js.native
+  def updateGetAccessor(
+    node: GetAccessorDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    parameters: js.Array[ParameterDeclaration]
+  ): GetAccessorDeclaration = js.native
+  def updateGetAccessor(
+    node: GetAccessorDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    parameters: js.Array[ParameterDeclaration],
+    `type`: js.UndefOr[scala.Nothing],
+    body: Block
+  ): GetAccessorDeclaration = js.native
+  def updateGetAccessor(
+    node: GetAccessorDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode
+  ): GetAccessorDeclaration = js.native
+  def updateGetAccessor(
+    node: GetAccessorDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
@@ -4461,28 +4461,14 @@ object ^ extends js.Object {
   def updateImportClause(node: ImportClause, name: Identifier, namedBindings: NamedImportBindings): ImportClause = js.native
   def updateImportDeclaration(
     node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: js.UndefOr[scala.Nothing],
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
   def updateImportDeclaration(
     node: ImportDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: ImportClause,
     moduleSpecifier: Expression
@@ -4503,28 +4489,35 @@ object ^ extends js.Object {
   ): ImportDeclaration = js.native
   def updateImportDeclaration(
     node: ImportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     importClause: js.UndefOr[scala.Nothing],
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
   def updateImportDeclaration(
     node: ImportDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    importClause: ImportClause,
+    moduleSpecifier: Expression
+  ): ImportDeclaration = js.native
+  def updateImportDeclaration(
+    node: ImportDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    importClause: js.UndefOr[scala.Nothing],
+    moduleSpecifier: Expression
+  ): ImportDeclaration = js.native
+  def updateImportDeclaration(
+    node: ImportDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     importClause: ImportClause,
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
   def updateImportEqualsDeclaration(
     node: ImportEqualsDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def updateImportEqualsDeclaration(
-    node: ImportEqualsDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
     moduleReference: ModuleReference
@@ -4538,8 +4531,15 @@ object ^ extends js.Object {
   ): ImportEqualsDeclaration = js.native
   def updateImportEqualsDeclaration(
     node: ImportEqualsDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    moduleReference: ModuleReference
+  ): ImportEqualsDeclaration = js.native
+  def updateImportEqualsDeclaration(
+    node: ImportEqualsDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: Identifier,
     moduleReference: ModuleReference
   ): ImportEqualsDeclaration = js.native
@@ -4557,14 +4557,7 @@ object ^ extends js.Object {
   ): ImportTypeNode = js.native
   def updateIndexSignature(
     node: IndexSignatureDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def updateIndexSignature(
-    node: IndexSignatureDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
@@ -4578,8 +4571,15 @@ object ^ extends js.Object {
   ): IndexSignatureDeclaration = js.native
   def updateIndexSignature(
     node: IndexSignatureDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    parameters: js.Array[ParameterDeclaration],
+    `type`: TypeNode
+  ): IndexSignatureDeclaration = js.native
+  def updateIndexSignature(
+    node: IndexSignatureDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): IndexSignatureDeclaration = js.native
@@ -4587,127 +4587,10 @@ object ^ extends js.Object {
   def updateInferTypeNode(node: InferTypeNode, typeParameter: TypeParameterDeclaration): InferTypeNode = js.native
   def updateInterfaceDeclaration(
     node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    heritageClauses: js.UndefOr[scala.Nothing],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
+    typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
@@ -4725,8 +4608,125 @@ object ^ extends js.Object {
     decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    heritageClauses: js.Array[HeritageClause],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.UndefOr[scala.Nothing],
+    members: js.Array[TypeElement]
+  ): InterfaceDeclaration = js.native
+  def updateInterfaceDeclaration(
+    node: InterfaceDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    heritageClauses: js.Array[HeritageClause],
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
   def updateIntersectionTypeNode(node: IntersectionTypeNode, types: NodeArray[TypeNode]): IntersectionTypeNode = js.native
@@ -4751,25 +4751,25 @@ object ^ extends js.Object {
   def updateJsxOpeningElement(
     node: JsxOpeningElement,
     tagName: JsxTagNameExpression,
-    typeArguments: js.Array[TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     attributes: JsxAttributes
   ): JsxOpeningElement = js.native
   def updateJsxOpeningElement(
     node: JsxOpeningElement,
     tagName: JsxTagNameExpression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[TypeNode],
     attributes: JsxAttributes
   ): JsxOpeningElement = js.native
   def updateJsxSelfClosingElement(
     node: JsxSelfClosingElement,
     tagName: JsxTagNameExpression,
-    typeArguments: js.Array[TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     attributes: JsxAttributes
   ): JsxSelfClosingElement = js.native
   def updateJsxSelfClosingElement(
     node: JsxSelfClosingElement,
     tagName: JsxTagNameExpression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[TypeNode],
     attributes: JsxAttributes
   ): JsxSelfClosingElement = js.native
   def updateJsxSpreadAttribute(node: JsxSpreadAttribute, expression: Expression): JsxSpreadAttribute = js.native
@@ -4915,26 +4915,13 @@ object ^ extends js.Object {
   def updateModuleBlock(node: ModuleBlock, statements: js.Array[Statement]): ModuleBlock = js.native
   def updateModuleDeclaration(
     node: ModuleDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: ModuleName
-  ): ModuleDeclaration = js.native
-  def updateModuleDeclaration(
-    node: ModuleDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: ModuleName,
-    body: ModuleBody
-  ): ModuleDeclaration = js.native
-  def updateModuleDeclaration(
-    node: ModuleDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName
   ): ModuleDeclaration = js.native
   def updateModuleDeclaration(
     node: ModuleDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName,
     body: ModuleBody
@@ -4954,14 +4941,27 @@ object ^ extends js.Object {
   ): ModuleDeclaration = js.native
   def updateModuleDeclaration(
     node: ModuleDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: ModuleName
   ): ModuleDeclaration = js.native
   def updateModuleDeclaration(
     node: ModuleDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: ModuleName,
+    body: ModuleBody
+  ): ModuleDeclaration = js.native
+  def updateModuleDeclaration(
+    node: ModuleDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: ModuleName
+  ): ModuleDeclaration = js.native
+  def updateModuleDeclaration(
+    node: ModuleDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: ModuleName,
     body: ModuleBody
   ): ModuleDeclaration = js.native
@@ -4970,17 +4970,17 @@ object ^ extends js.Object {
   def updateNamespaceExportDeclaration(node: NamespaceExportDeclaration, name: Identifier): NamespaceExportDeclaration = js.native
   def updateNamespaceImport(node: NamespaceImport, name: Identifier): NamespaceImport = js.native
   def updateNew(node: NewExpression, expression: Expression): NewExpression = js.native
+  def updateNew(
+    node: NewExpression,
+    expression: Expression,
+    typeArguments: js.UndefOr[scala.Nothing],
+    argumentsArray: js.Array[Expression]
+  ): NewExpression = js.native
   def updateNew(node: NewExpression, expression: Expression, typeArguments: js.Array[TypeNode]): NewExpression = js.native
   def updateNew(
     node: NewExpression,
     expression: Expression,
     typeArguments: js.Array[TypeNode],
-    argumentsArray: js.Array[Expression]
-  ): NewExpression = js.native
-  def updateNew(
-    node: NewExpression,
-    expression: Expression,
-    typeArguments: js.UndefOr[scala.Nothing],
     argumentsArray: js.Array[Expression]
   ): NewExpression = js.native
   def updateNonNullExpression(node: NonNullExpression, expression: Expression): NonNullExpression = js.native
@@ -5058,59 +5058,6 @@ object ^ extends js.Object {
   ): PropertyDeclaration = js.native
   def updatePropertyAccess(node: PropertyAccessExpression, expression: Expression, name: Identifier): PropertyAccessExpression = js.native
   def updatePropertyAssignment(node: PropertyAssignment, name: PropertyName, initializer: Expression): PropertyAssignment = js.native
-  def updatePropertySignature(node: PropertySignature, modifiers: js.Array[Modifier], name: PropertyName): PropertySignature = js.native
-  def updatePropertySignature(
-    node: PropertySignature,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionToken: js.UndefOr[scala.Nothing],
-    `type`: js.UndefOr[scala.Nothing],
-    initializer: Expression
-  ): PropertySignature = js.native
-  def updatePropertySignature(
-    node: PropertySignature,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionToken: js.UndefOr[scala.Nothing],
-    `type`: TypeNode
-  ): PropertySignature = js.native
-  def updatePropertySignature(
-    node: PropertySignature,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionToken: js.UndefOr[scala.Nothing],
-    `type`: TypeNode,
-    initializer: Expression
-  ): PropertySignature = js.native
-  def updatePropertySignature(
-    node: PropertySignature,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionToken: QuestionToken
-  ): PropertySignature = js.native
-  def updatePropertySignature(
-    node: PropertySignature,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionToken: QuestionToken,
-    `type`: js.UndefOr[scala.Nothing],
-    initializer: Expression
-  ): PropertySignature = js.native
-  def updatePropertySignature(
-    node: PropertySignature,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionToken: QuestionToken,
-    `type`: TypeNode
-  ): PropertySignature = js.native
-  def updatePropertySignature(
-    node: PropertySignature,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    questionToken: QuestionToken,
-    `type`: TypeNode,
-    initializer: Expression
-  ): PropertySignature = js.native
   def updatePropertySignature(node: PropertySignature, modifiers: js.UndefOr[scala.Nothing], name: PropertyName): PropertySignature = js.native
   def updatePropertySignature(
     node: PropertySignature,
@@ -5164,35 +5111,73 @@ object ^ extends js.Object {
     `type`: TypeNode,
     initializer: Expression
   ): PropertySignature = js.native
+  def updatePropertySignature(node: PropertySignature, modifiers: js.Array[Modifier], name: PropertyName): PropertySignature = js.native
+  def updatePropertySignature(
+    node: PropertySignature,
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    questionToken: js.UndefOr[scala.Nothing],
+    `type`: js.UndefOr[scala.Nothing],
+    initializer: Expression
+  ): PropertySignature = js.native
+  def updatePropertySignature(
+    node: PropertySignature,
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    questionToken: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): PropertySignature = js.native
+  def updatePropertySignature(
+    node: PropertySignature,
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    questionToken: js.UndefOr[scala.Nothing],
+    `type`: TypeNode,
+    initializer: Expression
+  ): PropertySignature = js.native
+  def updatePropertySignature(
+    node: PropertySignature,
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    questionToken: QuestionToken
+  ): PropertySignature = js.native
+  def updatePropertySignature(
+    node: PropertySignature,
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    questionToken: QuestionToken,
+    `type`: js.UndefOr[scala.Nothing],
+    initializer: Expression
+  ): PropertySignature = js.native
+  def updatePropertySignature(
+    node: PropertySignature,
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    questionToken: QuestionToken,
+    `type`: TypeNode
+  ): PropertySignature = js.native
+  def updatePropertySignature(
+    node: PropertySignature,
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    questionToken: QuestionToken,
+    `type`: TypeNode,
+    initializer: Expression
+  ): PropertySignature = js.native
   def updateQualifiedName(node: QualifiedName, left: EntityName, right: Identifier): QualifiedName = js.native
   def updateRestTypeNode(node: RestTypeNode, `type`: TypeNode): RestTypeNode = js.native
   def updateReturn(node: ReturnStatement): ReturnStatement = js.native
   def updateReturn(node: ReturnStatement, expression: Expression): ReturnStatement = js.native
   def updateSetAccessor(
     node: SetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def updateSetAccessor(
-    node: SetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def updateSetAccessor(
-    node: SetAccessorDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration]
   ): SetAccessorDeclaration = js.native
   def updateSetAccessor(
     node: SetAccessorDeclaration,
-    decorators: js.Array[Decorator],
+    decorators: js.UndefOr[scala.Nothing],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
@@ -5215,15 +5200,30 @@ object ^ extends js.Object {
   ): SetAccessorDeclaration = js.native
   def updateSetAccessor(
     node: SetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration]
   ): SetAccessorDeclaration = js.native
   def updateSetAccessor(
     node: SetAccessorDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
+    name: PropertyName,
+    parameters: js.Array[ParameterDeclaration],
+    body: Block
+  ): SetAccessorDeclaration = js.native
+  def updateSetAccessor(
+    node: SetAccessorDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: PropertyName,
+    parameters: js.Array[ParameterDeclaration]
+  ): SetAccessorDeclaration = js.native
+  def updateSetAccessor(
+    node: SetAccessorDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
     name: PropertyName,
     parameters: js.Array[ParameterDeclaration],
     body: Block
@@ -5276,13 +5276,13 @@ object ^ extends js.Object {
   def updateTaggedTemplate(
     node: TaggedTemplateExpression,
     tag: Expression,
-    typeArguments: js.Array[TypeNode],
+    typeArguments: js.UndefOr[scala.Nothing],
     template: TemplateLiteral
   ): TaggedTemplateExpression = js.native
   def updateTaggedTemplate(
     node: TaggedTemplateExpression,
     tag: Expression,
-    typeArguments: js.UndefOr[scala.Nothing],
+    typeArguments: js.Array[TypeNode],
     template: TemplateLiteral
   ): TaggedTemplateExpression = js.native
   def updateTemplateExpression(node: TemplateExpression, head: TemplateHead, templateSpans: js.Array[TemplateSpan]): TemplateExpression = js.native
@@ -5296,48 +5296,8 @@ object ^ extends js.Object {
   def updateTupleTypeNode(node: TupleTypeNode, elementTypes: js.Array[TypeNode]): TupleTypeNode = js.native
   def updateTypeAliasDeclaration(
     node: TypeAliasDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.UndefOr[scala.Nothing],
-    name: Identifier,
-    typeParameters: js.UndefOr[scala.Nothing],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
     decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: js.UndefOr[scala.Nothing],
-    modifiers: js.Array[Modifier],
+    modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
     `type`: TypeNode
@@ -5353,9 +5313,49 @@ object ^ extends js.Object {
   def updateTypeAliasDeclaration(
     node: TypeAliasDeclaration,
     decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: TypeAliasDeclaration,
+    decorators: js.UndefOr[scala.Nothing],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: TypeAliasDeclaration,
+    decorators: js.Array[Decorator],
     modifiers: js.UndefOr[scala.Nothing],
     name: Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: TypeAliasDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.UndefOr[scala.Nothing],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: TypeAliasDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    `type`: TypeNode
+  ): TypeAliasDeclaration = js.native
+  def updateTypeAliasDeclaration(
+    node: TypeAliasDeclaration,
+    decorators: js.Array[Decorator],
+    modifiers: js.Array[Modifier],
+    name: Identifier,
+    typeParameters: js.Array[TypeParameterDeclaration],
     `type`: TypeNode
   ): TypeAliasDeclaration = js.native
   def updateTypeAssertion(node: TypeAssertion, `type`: TypeNode, expression: Expression): TypeAssertion = js.native
@@ -5387,12 +5387,12 @@ object ^ extends js.Object {
   def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, `type`: TypeNode): VariableDeclaration = js.native
   def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
   def updateVariableDeclarationList(node: VariableDeclarationList, declarations: js.Array[VariableDeclaration]): VariableDeclarationList = js.native
-  def updateVariableStatement(node: VariableStatement, modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = js.native
   def updateVariableStatement(
     node: VariableStatement,
     modifiers: js.UndefOr[scala.Nothing],
     declarationList: VariableDeclarationList
   ): VariableStatement = js.native
+  def updateVariableStatement(node: VariableStatement, modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = js.native
   def updateVoid(node: VoidExpression, expression: Expression): VoidExpression = js.native
   def updateWhile(node: WhileStatement, expression: Expression, statement: Statement): WhileStatement = js.native
   def updateWith(node: WithStatement, expression: Expression, statement: Statement): WithStatement = js.native
@@ -5442,7 +5442,7 @@ object ^ extends js.Object {
     * @param context A lexical environment context for the visitor.
     */
   @JSName("visitEachChild")
-  def visitEachChild_TNodeUndefOr[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
+  def `visitEachChild_TNode<union>`[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
   def visitFunctionBody(node: js.UndefOr[scala.Nothing], visitor: Visitor, context: TransformationContext): js.UndefOr[FunctionBody] = js.native
   /**
     * Resumes a suspended lexical environment and visits a function body, ending the lexical
@@ -5528,13 +5528,13 @@ object ^ extends js.Object {
     lift: js.Function1[/* node */ NodeArray[Node], T]
   ): T = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: Node */](): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](node: T): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: Node */](node: T): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](node: T, visitor: js.UndefOr[scala.Nothing], test: js.Function1[/* node */ Node, scala.Boolean]): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: Node */](node: T, visitor: js.UndefOr[scala.Nothing], test: js.Function1[/* node */ Node, scala.Boolean]): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](
+  def `visitNode_TNode<union>`[T /* <: Node */](
     node: T,
     visitor: js.UndefOr[scala.Nothing],
     test: js.Function1[/* node */ Node, scala.Boolean],
@@ -5549,39 +5549,39 @@ object ^ extends js.Object {
     * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
     */
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](node: T, visitor: Visitor): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: Node */](node: T, visitor: Visitor): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, scala.Boolean]): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, scala.Boolean]): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](
+  def `visitNode_TNode<union>`[T /* <: Node */](
     node: T,
     visitor: Visitor,
     test: js.Function1[/* node */ Node, scala.Boolean],
     lift: js.Function1[/* node */ NodeArray[Node], T]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](
+  def `visitNode_TNode<union>`[T /* <: Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: js.UndefOr[scala.Nothing],
     test: js.Function1[/* node */ Node, scala.Boolean]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](
+  def `visitNode_TNode<union>`[T /* <: Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: js.UndefOr[scala.Nothing],
     test: js.Function1[/* node */ Node, scala.Boolean],
     lift: js.Function1[/* node */ NodeArray[Node], T]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](node: js.UndefOr[scala.Nothing], visitor: Visitor): js.UndefOr[T] = js.native
+  def `visitNode_TNode<union>`[T /* <: Node */](node: js.UndefOr[scala.Nothing], visitor: Visitor): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](
+  def `visitNode_TNode<union>`[T /* <: Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     test: js.Function1[/* node */ Node, scala.Boolean]
   ): js.UndefOr[T] = js.native
   @JSName("visitNode")
-  def visitNode_TNodeUndefOr[T /* <: Node */](
+  def `visitNode_TNode<union>`[T /* <: Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: Visitor,
     test: js.Function1[/* node */ Node, scala.Boolean],

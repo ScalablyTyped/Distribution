@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CloudFrontResultResponse extends js.Object {
+trait CloudFrontResultResponse extends _CloudFrontRequestResult {
   var body: js.UndefOr[java.lang.String] = js.undefined
   var bodyEncoding: js.UndefOr[
     awsDashLambdaLib.awsDashLambdaLibStrings.text | awsDashLambdaLib.awsDashLambdaLibStrings.base64

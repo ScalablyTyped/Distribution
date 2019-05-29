@@ -32,38 +32,38 @@ object ^ extends js.Object {
   def loadPartialConfig(options: TransformOptions): stdLib.Readonly[PartialConfig] | scala.Null = js.native
   def parse(code: java.lang.String): ParseResult | scala.Null = js.native
   def parse(code: java.lang.String, callback: FileParseCallback): scala.Unit = js.native
+  def parse(code: java.lang.String, options: js.UndefOr[scala.Nothing], callback: FileParseCallback): scala.Unit = js.native
   def parse(code: java.lang.String, options: TransformOptions): ParseResult | scala.Null = js.native
   def parse(code: java.lang.String, options: TransformOptions, callback: FileParseCallback): scala.Unit = js.native
-  def parse(code: java.lang.String, options: js.UndefOr[scala.Nothing], callback: FileParseCallback): scala.Unit = js.native
   def parseAsync(code: java.lang.String): js.Promise[ParseResult | scala.Null] = js.native
   def parseAsync(code: java.lang.String, options: TransformOptions): js.Promise[ParseResult | scala.Null] = js.native
   def parseSync(code: java.lang.String): ParseResult | scala.Null = js.native
   def parseSync(code: java.lang.String, options: TransformOptions): ParseResult | scala.Null = js.native
   def transform(code: java.lang.String): BabelFileResult | scala.Null = js.native
   def transform(code: java.lang.String, callback: FileResultCallback): scala.Unit = js.native
+  def transform(code: java.lang.String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): scala.Unit = js.native
   def transform(code: java.lang.String, opts: TransformOptions): BabelFileResult | scala.Null = js.native
   def transform(code: java.lang.String, opts: TransformOptions, callback: FileResultCallback): scala.Unit = js.native
-  def transform(code: java.lang.String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): scala.Unit = js.native
   def transformAsync(code: java.lang.String): js.Promise[BabelFileResult | scala.Null] = js.native
   def transformAsync(code: java.lang.String, opts: TransformOptions): js.Promise[BabelFileResult | scala.Null] = js.native
   def transformFile(filename: java.lang.String, callback: FileResultCallback): scala.Unit = js.native
-  def transformFile(filename: java.lang.String, opts: TransformOptions, callback: FileResultCallback): scala.Unit = js.native
   def transformFile(filename: java.lang.String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): scala.Unit = js.native
+  def transformFile(filename: java.lang.String, opts: TransformOptions, callback: FileResultCallback): scala.Unit = js.native
   def transformFileAsync(filename: java.lang.String): js.Promise[BabelFileResult | scala.Null] = js.native
   def transformFileAsync(filename: java.lang.String, opts: TransformOptions): js.Promise[BabelFileResult | scala.Null] = js.native
   def transformFileSync(filename: java.lang.String): BabelFileResult | scala.Null = js.native
   def transformFileSync(filename: java.lang.String, opts: TransformOptions): BabelFileResult | scala.Null = js.native
-  def transformFromAst(ast: Node, code: java.lang.String, callback: FileResultCallback): scala.Unit = js.native
-  def transformFromAst(ast: Node, code: java.lang.String, opts: TransformOptions, callback: FileResultCallback): scala.Unit = js.native
-  def transformFromAst(ast: Node, code: java.lang.String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): scala.Unit = js.native
   def transformFromAst(ast: Node, code: js.UndefOr[scala.Nothing], callback: FileResultCallback): scala.Unit = js.native
-  def transformFromAst(ast: Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions, callback: FileResultCallback): scala.Unit = js.native
   def transformFromAst(
     ast: Node,
     code: js.UndefOr[scala.Nothing],
     opts: js.UndefOr[scala.Nothing],
     callback: FileResultCallback
   ): scala.Unit = js.native
+  def transformFromAst(ast: Node, code: js.UndefOr[scala.Nothing], opts: TransformOptions, callback: FileResultCallback): scala.Unit = js.native
+  def transformFromAst(ast: Node, code: java.lang.String, callback: FileResultCallback): scala.Unit = js.native
+  def transformFromAst(ast: Node, code: java.lang.String, opts: js.UndefOr[scala.Nothing], callback: FileResultCallback): scala.Unit = js.native
+  def transformFromAst(ast: Node, code: java.lang.String, opts: TransformOptions, callback: FileResultCallback): scala.Unit = js.native
   def transformFromAstAsync(ast: Node): js.Promise[BabelFileResult | scala.Null] = js.native
   def transformFromAstAsync(ast: Node, code: java.lang.String): js.Promise[BabelFileResult | scala.Null] = js.native
   def transformFromAstAsync(ast: Node, code: java.lang.String, opts: TransformOptions): js.Promise[BabelFileResult | scala.Null] = js.native

@@ -15,10 +15,10 @@ object readdirNs extends js.Object {
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
   def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[js.Array[java.lang.String]] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[js.Array[nodeLib.Buffer | java.lang.String]] = js.native
   def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingFalse): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Promise[js.Array[nodeLib.Buffer | java.lang.String]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.

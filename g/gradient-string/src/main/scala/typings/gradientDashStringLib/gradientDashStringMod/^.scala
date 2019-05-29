@@ -22,6 +22,6 @@ object ^ extends js.Object {
   val teen: Gradient = js.native
   val vice: Gradient = js.native
   def apply(colors: (tinycolor2Lib.tinycolor2Mod.ColorInput | PositionedColorInput)*): Gradient = js.native
-  def apply(colors: js.Array[tinycolor2Lib.tinycolor2Mod.ColorInput] | js.Array[PositionedColorInput]): Gradient = js.native
+  def apply(colors: js.Array[tinycolor2Lib.tinycolor2Mod.ColorInput | PositionedColorInput]): Gradient = js.native
 }
 

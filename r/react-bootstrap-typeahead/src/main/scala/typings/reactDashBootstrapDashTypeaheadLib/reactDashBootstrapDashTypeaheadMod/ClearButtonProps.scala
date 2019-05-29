@@ -11,6 +11,12 @@ trait ClearButtonProps
     ] {
   var bsSize: js.UndefOr[TypeaheadBsSizes] = js.undefined
   var label: js.UndefOr[java.lang.String] = js.undefined
+  @JSName("onClick")
+  var onClick_ClearButtonProps: js.UndefOr[
+    reactLib.reactMod.MouseEventHandler[
+      reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.button
+    ]
+  ] = js.undefined
 }
 
 object ClearButtonProps {

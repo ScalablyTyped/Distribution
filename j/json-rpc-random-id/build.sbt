@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-rpc-random-id"
-version := "1.0-dt-20181101Z-e2b217"
+version := "1.0-dt-20181101Z-3ce94d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

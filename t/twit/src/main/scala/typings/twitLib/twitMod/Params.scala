@@ -13,6 +13,7 @@ trait Params extends js.Object {
   var follow: js.UndefOr[scala.Boolean | java.lang.String | js.Array[java.lang.String]] = js.undefined
   var geocode: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
+  var in_reply_to_status_id: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var include_email: js.UndefOr[scala.Boolean] = js.undefined
   var include_entities: js.UndefOr[scala.Boolean] = js.undefined
   var include_rts: js.UndefOr[scala.Boolean] = js.undefined
@@ -55,6 +56,7 @@ object Params {
     follow: scala.Boolean | java.lang.String | js.Array[java.lang.String] = null,
     geocode: java.lang.String = null,
     id: java.lang.String = null,
+    in_reply_to_status_id: scala.Double | java.lang.String = null,
     include_email: js.UndefOr[scala.Boolean] = js.undefined,
     include_entities: js.UndefOr[scala.Boolean] = js.undefined,
     include_rts: js.UndefOr[scala.Boolean] = js.undefined,
@@ -92,6 +94,7 @@ object Params {
     if (follow != null) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
     if (geocode != null) __obj.updateDynamic("geocode")(geocode)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (in_reply_to_status_id != null) __obj.updateDynamic("in_reply_to_status_id")(in_reply_to_status_id.asInstanceOf[js.Any])
     if (!js.isUndefined(include_email)) __obj.updateDynamic("include_email")(include_email)
     if (!js.isUndefined(include_entities)) __obj.updateDynamic("include_entities")(include_entities)
     if (!js.isUndefined(include_rts)) __obj.updateDynamic("include_rts")(include_rts)

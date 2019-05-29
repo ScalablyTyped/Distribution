@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for json3 3.3
-// Project: http://bestiejs.github.io/json3
+// Project: https://bestiejs.github.io/json3
 // Definitions by: NN <https://github.com/NN--->
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 

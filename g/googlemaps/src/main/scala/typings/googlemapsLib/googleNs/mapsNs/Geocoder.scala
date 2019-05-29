@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/***** Services *****/
 @JSGlobal("google.maps.Geocoder")
 @js.native
 class Geocoder () extends js.Object {

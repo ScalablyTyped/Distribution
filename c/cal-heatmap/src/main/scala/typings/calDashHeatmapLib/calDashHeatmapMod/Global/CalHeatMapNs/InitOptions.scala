@@ -97,9 +97,7 @@ trait InitOptions extends js.Object {
   			 * Highlight selected subDomain cells. Default: false
   			 * Takes an array of Date object. Can also accepts the now string, equivalent to Date.now().
   			 */
-  var highlight: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | js.Array[stdLib.Date] | js.Array[_]
-  ] = js.undefined
+  var highlight: js.UndefOr[java.lang.String | (js.Array[_ | stdLib.Date | java.lang.String])] = js.undefined
   // ================================================
   // i18n
   // ================================================
@@ -292,7 +290,7 @@ object InitOptions {
     domainGutter: scala.Int | scala.Double = null,
     domainLabelFormat: java.lang.String | js.Function = null,
     domainMargin: scala.Double | js.Array[scala.Double] = null,
-    highlight: java.lang.String | js.Array[java.lang.String] | js.Array[stdLib.Date] | js.Array[_] = null,
+    highlight: java.lang.String | (js.Array[_ | stdLib.Date | java.lang.String]) = null,
     itemName: java.lang.String | js.Array[java.lang.String] = null,
     itemNamespace: java.lang.String = null,
     itemSelector: java.lang.String | stdLib.HTMLElement | stdLib.Element | stdLib.EventTarget = null,

@@ -12,12 +12,12 @@ trait SecureServerSessionOptions
 object SecureServerSessionOptions {
   @scala.inline
   def apply(
-    ALPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
+    ALPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
     Http1IncomingMessage: org.scalablytyped.runtime.Instantiable1[/* socket */ nodeLib.netMod.Socket, nodeLib.httpMod.IncomingMessage] = null,
     Http1ServerResponse: org.scalablytyped.runtime.Instantiable1[/* req */ nodeLib.httpMod.IncomingMessage, nodeLib.httpMod.ServerResponse] = null,
     Http2ServerRequest: org.scalablytyped.runtime.Instantiable0[Http2ServerRequest] = null,
     Http2ServerResponse: org.scalablytyped.runtime.Instantiable0[Http2ServerResponse] = null,
-    NPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
+    NPNProtocols: (js.Array[nodeLib.Buffer | java.lang.String | stdLib.Uint8Array]) | nodeLib.Buffer | stdLib.Uint8Array = null,
     SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[
       /* err */ nodeLib.Error | scala.Null, 
       /* ctx */ nodeLib.tlsMod.SecureContext, 

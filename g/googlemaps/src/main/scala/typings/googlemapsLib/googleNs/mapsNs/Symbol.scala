@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Describes a symbol, which consists of a vector path with styling. A symbol
+  * can be used as the icon of a marker, or placed on a polyline.
+  * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol Maps JavaScript API}
+  */
 trait Symbol extends js.Object {
   /**
     * The position of the symbol relative to the marker or polyline. The

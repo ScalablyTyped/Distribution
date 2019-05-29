@@ -61,6 +61,14 @@ trait LanguageService extends js.Object {
     position: scala.Double,
     name: java.lang.String,
     formatOptions: js.UndefOr[scala.Nothing],
+    source: js.UndefOr[scala.Nothing],
+    preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: scala.Double,
+    name: java.lang.String,
+    formatOptions: js.UndefOr[scala.Nothing],
     source: java.lang.String
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -69,14 +77,6 @@ trait LanguageService extends js.Object {
     name: java.lang.String,
     formatOptions: js.UndefOr[scala.Nothing],
     source: java.lang.String,
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: scala.Double,
-    name: java.lang.String,
-    formatOptions: js.UndefOr[scala.Nothing],
-    source: js.UndefOr[scala.Nothing],
     preferences: UserPreferences
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -90,6 +90,14 @@ trait LanguageService extends js.Object {
     position: scala.Double,
     name: java.lang.String,
     formatOptions: FormatCodeOptions,
+    source: js.UndefOr[scala.Nothing],
+    preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: scala.Double,
+    name: java.lang.String,
+    formatOptions: FormatCodeOptions,
     source: java.lang.String
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -98,14 +106,6 @@ trait LanguageService extends js.Object {
     name: java.lang.String,
     formatOptions: FormatCodeOptions,
     source: java.lang.String,
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: scala.Double,
-    name: java.lang.String,
-    formatOptions: FormatCodeOptions,
-    source: js.UndefOr[scala.Nothing],
     preferences: UserPreferences
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -119,6 +119,14 @@ trait LanguageService extends js.Object {
     position: scala.Double,
     name: java.lang.String,
     formatOptions: FormatCodeSettings,
+    source: js.UndefOr[scala.Nothing],
+    preferences: UserPreferences
+  ): js.UndefOr[CompletionEntryDetails] = js.native
+  def getCompletionEntryDetails(
+    fileName: java.lang.String,
+    position: scala.Double,
+    name: java.lang.String,
+    formatOptions: FormatCodeSettings,
     source: java.lang.String
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntryDetails(
@@ -127,14 +135,6 @@ trait LanguageService extends js.Object {
     name: java.lang.String,
     formatOptions: FormatCodeSettings,
     source: java.lang.String,
-    preferences: UserPreferences
-  ): js.UndefOr[CompletionEntryDetails] = js.native
-  def getCompletionEntryDetails(
-    fileName: java.lang.String,
-    position: scala.Double,
-    name: java.lang.String,
-    formatOptions: FormatCodeSettings,
-    source: js.UndefOr[scala.Nothing],
     preferences: UserPreferences
   ): js.UndefOr[CompletionEntryDetails] = js.native
   def getCompletionEntrySymbol(fileName: java.lang.String, position: scala.Double, name: java.lang.String): js.UndefOr[Symbol] = js.native

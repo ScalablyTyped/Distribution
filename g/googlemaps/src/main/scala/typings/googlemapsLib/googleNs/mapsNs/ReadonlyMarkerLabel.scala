@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @see {@link MarkerLabel} */
 trait ReadonlyMarkerLabel extends js.Object {
   /** @see {@link MarkerLabel#color} */
   var color: js.UndefOr[java.lang.String] = js.undefined

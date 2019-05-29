@@ -130,7 +130,7 @@ object _Impl {
     value: js.Any,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, displayTime = displayTime, domain = domain.asInstanceOf[js.Any], easing = easing, error = error.asInstanceOf[js.Any], expires = expires, key = key, name = name, namespace = namespace, onHide = js.Any.fromFunction1(onHide), path = path, performance = performance, persist = persist, selector = selector, silent = silent, speed = speed, storageMethod = storageMethod.asInstanceOf[js.Any], value = value, verbose = verbose)
+    val __obj = js.Dynamic.literal(animation = animation, className = className, context = context.asInstanceOf[js.Any], debug = debug, detachable = detachable, displayTime = displayTime, domain = domain.asInstanceOf[js.Any], easing = easing, error = error, expires = expires, key = key, name = name, namespace = namespace, onHide = js.Any.fromFunction1(onHide), path = path, performance = performance, persist = persist, selector = selector, silent = silent, speed = speed, storageMethod = storageMethod.asInstanceOf[js.Any], value = value, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

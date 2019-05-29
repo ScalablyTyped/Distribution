@@ -46,7 +46,7 @@ trait Dispatch[T /* <: stdLib.EventTarget */] extends js.Object {
     * @param types An event typename.
     * @param callback A callback.
     */
-  def on(typenames: java.lang.String): js.UndefOr[js.ThisFunction1[/* this */ T, /* repeated */ _, scala.Unit]] = js.native
+  def on(typenames: java.lang.String): js.UndefOr[js.ThisFunction1[/* this */ T, /* repeated */ js.Any, scala.Unit]] = js.native
   /**
     * Adds the callback for the specified typenames.
     * The callback is registered for the specified (fully-qualified) typenames.

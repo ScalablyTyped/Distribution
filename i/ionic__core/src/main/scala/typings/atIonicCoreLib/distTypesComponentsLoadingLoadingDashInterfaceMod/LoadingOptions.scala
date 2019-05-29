@@ -10,16 +10,16 @@ trait LoadingOptions extends js.Object {
   var backdropDismiss: js.UndefOr[scala.Boolean] = js.undefined
   var cssClass: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined
-  var enterAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var enterAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var keyboardClose: js.UndefOr[scala.Boolean] = js.undefined
-  var leaveAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var leaveAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   var message: js.UndefOr[java.lang.String] = js.undefined
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
+  var mode: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
   ] = js.undefined
   var showBackdrop: js.UndefOr[scala.Boolean] = js.undefined

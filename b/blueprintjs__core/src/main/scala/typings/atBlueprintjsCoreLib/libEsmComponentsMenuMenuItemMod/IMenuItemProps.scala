@@ -56,7 +56,7 @@ trait IMenuItemProps
     * @default "a"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
   ] = js.undefined
   /**
     * A space-delimited list of class names to pass along to the text wrapper element.
@@ -85,7 +85,7 @@ object IMenuItemProps {
     onClick: /* event */ reactLib.reactMod.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent] => scala.Unit = null,
     popoverProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = null,
     shouldDismissPopover: js.UndefOr[scala.Boolean] = js.undefined,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any = null,
     target: java.lang.String = null,
     textClassName: java.lang.String = null
   ): IMenuItemProps = {

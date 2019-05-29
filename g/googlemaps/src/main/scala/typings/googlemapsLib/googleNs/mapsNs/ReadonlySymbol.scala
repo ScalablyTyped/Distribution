@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** @see {@link Symbol} */
 trait ReadonlySymbol extends js.Object {
   /** @see {@link Symbol#anchor} */
   val anchor: js.UndefOr[Point] = js.undefined

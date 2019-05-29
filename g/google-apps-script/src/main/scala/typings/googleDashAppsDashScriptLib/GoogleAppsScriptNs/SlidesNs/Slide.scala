@@ -38,55 +38,55 @@ trait Slide extends js.Object {
   def insertImage(blobSource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource): Image = js.native
   def insertImage(
     blobSource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource,
-    left: stdLib.Number,
-    top: stdLib.Number,
-    width: stdLib.Number,
-    height: stdLib.Number
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double,
+    height: scala.Double
   ): Image = js.native
   def insertImage(imageUrl: java.lang.String): Image = js.native
   def insertImage(
     imageUrl: java.lang.String,
-    left: stdLib.Number,
-    top: stdLib.Number,
-    width: stdLib.Number,
-    height: stdLib.Number
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double,
+    height: scala.Double
   ): Image = js.native
   def insertImage(image: Image): Image = js.native
   def insertLine(lineCategory: LineCategory, startConnectionSite: ConnectionSite, endConnectionSite: ConnectionSite): Line = js.native
   def insertLine(
     lineCategory: LineCategory,
-    startLeft: stdLib.Number,
-    startTop: stdLib.Number,
-    endLeft: stdLib.Number,
-    endTop: stdLib.Number
+    startLeft: scala.Double,
+    startTop: scala.Double,
+    endLeft: scala.Double,
+    endTop: scala.Double
   ): Line = js.native
   def insertLine(line: Line): Line = js.native
   def insertPageElement(pageElement: PageElement): PageElement = js.native
   def insertShape(shapeType: ShapeType): Shape = js.native
   def insertShape(
     shapeType: ShapeType,
-    left: stdLib.Number,
-    top: stdLib.Number,
-    width: stdLib.Number,
-    height: stdLib.Number
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double,
+    height: scala.Double
   ): Shape = js.native
   def insertShape(shape: Shape): Shape = js.native
   def insertSheetsChart(sheetsChart: SheetsChart): SheetsChart = js.native
   def insertSheetsChart(sourceChart: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.EmbeddedChart): SheetsChart = js.native
   def insertSheetsChart(
     sourceChart: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.EmbeddedChart,
-    left: stdLib.Number,
-    top: stdLib.Number,
-    width: stdLib.Number,
-    height: stdLib.Number
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double,
+    height: scala.Double
   ): SheetsChart = js.native
   def insertSheetsChartAsImage(sourceChart: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.EmbeddedChart): Image = js.native
   def insertSheetsChartAsImage(
     sourceChart: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.EmbeddedChart,
-    left: stdLib.Number,
-    top: stdLib.Number,
-    width: stdLib.Number,
-    height: stdLib.Number
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double,
+    height: scala.Double
   ): Image = js.native
   def insertTable(
     numRows: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -95,27 +95,27 @@ trait Slide extends js.Object {
   def insertTable(
     numRows: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     numColumns: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    left: stdLib.Number,
-    top: stdLib.Number,
-    width: stdLib.Number,
-    height: stdLib.Number
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double,
+    height: scala.Double
   ): Table = js.native
   def insertTable(table: Table): Table = js.native
   def insertTextBox(text: java.lang.String): Shape = js.native
   def insertTextBox(
     text: java.lang.String,
-    left: stdLib.Number,
-    top: stdLib.Number,
-    width: stdLib.Number,
-    height: stdLib.Number
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double,
+    height: scala.Double
   ): Shape = js.native
   def insertVideo(videoUrl: java.lang.String): Video = js.native
   def insertVideo(
     videoUrl: java.lang.String,
-    left: stdLib.Number,
-    top: stdLib.Number,
-    width: stdLib.Number,
-    height: stdLib.Number
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double,
+    height: scala.Double
   ): Video = js.native
   def insertVideo(video: Video): Video = js.native
   def insertWordArt(wordArt: WordArt): WordArt = js.native

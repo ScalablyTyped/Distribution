@@ -17,6 +17,9 @@ import scala.scalajs.js.annotation._
   var afterHide: js.UndefOr[
     js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit]
   ] = js.undefined
+  /** [Method] Allows addition of behavior after rendering is complete  */
+  @JSName("afterRender")
+  var afterRender_IComponent: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Template method called after a Component has been positioned
   		* @param ax Object
   		* @param ay Object
@@ -80,7 +83,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Moves this floating Component into a constrain region
   		* @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this floating Component was rendered.
   		*/
-  var doConstrain: js.UndefOr[js.Function1[/* constrainTo */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var doConstrain: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Find a container above this component at any level by a custom function
   		* @param fn Function The custom function to call with the arguments (container, this component).
   		* @returns Ext.container.Container The first Container for which the custom function returns true
@@ -210,11 +213,7 @@ import scala.scalajs.js.annotation._
   		* @param newActive Ext.Component The newly active Component which is taking over topmost zIndex position.
   		*/
   var setActive: js.UndefOr[
-    js.Function2[
-      /* active */ js.UndefOr[scala.Boolean], 
-      /* newActive */ js.UndefOr[this.type | IComponent], 
-      scala.Unit
-    ]
+    js.Function2[js.UndefOr[scala.Boolean], js.UndefOr[this.type | IComponent], scala.Unit]
   ] = js.undefined
   /** [Method] Sets the overflow on the content element of the component
   		* @param scroll Boolean True to allow the Component to auto scroll.
@@ -333,9 +332,7 @@ import scala.scalajs.js.annotation._
   		* @param preventFocus Boolean Specify true to prevent the Component from being focused.
   		* @returns Ext.Component this
   		*/
-  var toFront: js.UndefOr[
-    js.Function1[/* preventFocus */ js.UndefOr[scala.Boolean], this.type | IComponent]
-  ] = js.undefined
+  var toFront: js.UndefOr[js.Function1[js.UndefOr[scala.Boolean], this.type | IComponent]] = js.undefined
   /** [Config Option] (Boolean) */
   var toFrontOnShow: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Sets the current box measurements of the component s underlying element

@@ -15,13 +15,13 @@ trait TableProps[T] extends js.Object {
   var components: js.UndefOr[TableComponents] = js.undefined
   var dataSource: js.UndefOr[js.Array[T]] = js.undefined
   var defaultExpandAllRows: js.UndefOr[scala.Boolean] = js.undefined
-  var defaultExpandedRowKeys: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
+  var defaultExpandedRowKeys: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
   var dropdownPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var expandIcon: js.UndefOr[js.Function1[/* props */ ExpandIconProps[T], reactLib.reactMod.ReactNode]] = js.undefined
   var expandIconAsCell: js.UndefOr[scala.Boolean] = js.undefined
   var expandIconColumnIndex: js.UndefOr[scala.Double] = js.undefined
   var expandRowByClick: js.UndefOr[scala.Boolean] = js.undefined
-  var expandedRowKeys: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double]] = js.undefined
+  var expandedRowKeys: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
   var expandedRowRender: js.UndefOr[
     js.Function4[
       /* record */ T, 
@@ -48,10 +48,7 @@ trait TableProps[T] extends js.Object {
   ] = js.undefined
   var onExpand: js.UndefOr[js.Function2[/* expanded */ scala.Boolean, /* record */ T, scala.Unit]] = js.undefined
   var onExpandedRowsChange: js.UndefOr[
-    js.Function1[
-      /* expandedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double], 
-      scala.Unit
-    ]
+    js.Function1[/* expandedRowKeys */ js.Array[scala.Double | java.lang.String], scala.Unit]
   ] = js.undefined
   var onHeaderRow: js.UndefOr[
     js.Function2[/* columns */ js.Array[ColumnProps[T]], /* index */ scala.Double, _]
@@ -92,13 +89,13 @@ object TableProps {
     components: TableComponents = null,
     dataSource: js.Array[T] = null,
     defaultExpandAllRows: js.UndefOr[scala.Boolean] = js.undefined,
-    defaultExpandedRowKeys: js.Array[java.lang.String] | js.Array[scala.Double] = null,
+    defaultExpandedRowKeys: js.Array[scala.Double | java.lang.String] = null,
     dropdownPrefixCls: java.lang.String = null,
     expandIcon: /* props */ ExpandIconProps[T] => reactLib.reactMod.ReactNode = null,
     expandIconAsCell: js.UndefOr[scala.Boolean] = js.undefined,
     expandIconColumnIndex: scala.Int | scala.Double = null,
     expandRowByClick: js.UndefOr[scala.Boolean] = js.undefined,
-    expandedRowKeys: js.Array[java.lang.String] | js.Array[scala.Double] = null,
+    expandedRowKeys: js.Array[scala.Double | java.lang.String] = null,
     expandedRowRender: (/* record */ T, /* index */ scala.Double, /* indent */ scala.Double, /* expanded */ scala.Boolean) => reactLib.reactMod.ReactNode = null,
     footer: /* currentPageData */ js.Array[js.Object] => reactLib.reactMod.ReactNode = null,
     indentSize: scala.Int | scala.Double = null,
@@ -106,7 +103,7 @@ object TableProps {
     locale: TableLocale = null,
     onChange: (/* pagination */ antdLib.esPaginationPaginationMod.PaginationConfig, /* filters */ antdLib.RecordkeyofTArraystring, /* sorter */ SorterResult[T], /* extra */ TableCurrentDataSource[T]) => scala.Unit = null,
     onExpand: (/* expanded */ scala.Boolean, /* record */ T) => scala.Unit = null,
-    onExpandedRowsChange: /* expandedRowKeys */ js.Array[java.lang.String] | js.Array[scala.Double] => scala.Unit = null,
+    onExpandedRowsChange: /* expandedRowKeys */ js.Array[scala.Double | java.lang.String] => scala.Unit = null,
     onHeaderRow: (/* columns */ js.Array[ColumnProps[T]], /* index */ scala.Double) => _ = null,
     onRow: (/* record */ T, /* index */ scala.Double) => _ = null,
     onRowClick: (/* record */ T, /* index */ scala.Double, /* event */ stdLib.Event) => scala.Unit = null,
@@ -133,13 +130,13 @@ object TableProps {
     if (components != null) __obj.updateDynamic("components")(components)
     if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
     if (!js.isUndefined(defaultExpandAllRows)) __obj.updateDynamic("defaultExpandAllRows")(defaultExpandAllRows)
-    if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys.asInstanceOf[js.Any])
+    if (defaultExpandedRowKeys != null) __obj.updateDynamic("defaultExpandedRowKeys")(defaultExpandedRowKeys)
     if (dropdownPrefixCls != null) __obj.updateDynamic("dropdownPrefixCls")(dropdownPrefixCls)
     if (expandIcon != null) __obj.updateDynamic("expandIcon")(js.Any.fromFunction1(expandIcon))
     if (!js.isUndefined(expandIconAsCell)) __obj.updateDynamic("expandIconAsCell")(expandIconAsCell)
     if (expandIconColumnIndex != null) __obj.updateDynamic("expandIconColumnIndex")(expandIconColumnIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(expandRowByClick)) __obj.updateDynamic("expandRowByClick")(expandRowByClick)
-    if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys.asInstanceOf[js.Any])
+    if (expandedRowKeys != null) __obj.updateDynamic("expandedRowKeys")(expandedRowKeys)
     if (expandedRowRender != null) __obj.updateDynamic("expandedRowRender")(js.Any.fromFunction4(expandedRowRender))
     if (footer != null) __obj.updateDynamic("footer")(js.Any.fromFunction1(footer))
     if (indentSize != null) __obj.updateDynamic("indentSize")(indentSize.asInstanceOf[js.Any])

@@ -28,11 +28,11 @@ trait Experiment extends js.Object {
   var snippet: js.UndefOr[java.lang.String] = js.undefined
   var startTime: js.UndefOr[java.lang.String] = js.undefined
   var status: js.UndefOr[java.lang.String] = js.undefined
-  var trafficCoverage: js.UndefOr[stdLib.Number] = js.undefined
+  var trafficCoverage: js.UndefOr[scala.Double] = js.undefined
   var updated: js.UndefOr[java.lang.String] = js.undefined
   var variations: js.UndefOr[js.Array[ExperimentVariations]] = js.undefined
   var webPropertyId: js.UndefOr[java.lang.String] = js.undefined
-  var winnerConfidenceLevel: js.UndefOr[stdLib.Number] = js.undefined
+  var winnerConfidenceLevel: js.UndefOr[scala.Double] = js.undefined
   var winnerFound: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -61,11 +61,11 @@ object Experiment {
     snippet: java.lang.String = null,
     startTime: java.lang.String = null,
     status: java.lang.String = null,
-    trafficCoverage: stdLib.Number = null,
+    trafficCoverage: scala.Int | scala.Double = null,
     updated: java.lang.String = null,
     variations: js.Array[ExperimentVariations] = null,
     webPropertyId: java.lang.String = null,
-    winnerConfidenceLevel: stdLib.Number = null,
+    winnerConfidenceLevel: scala.Int | scala.Double = null,
     winnerFound: js.UndefOr[scala.Boolean] = js.undefined
   ): Experiment = {
     val __obj = js.Dynamic.literal()
@@ -91,11 +91,11 @@ object Experiment {
     if (snippet != null) __obj.updateDynamic("snippet")(snippet)
     if (startTime != null) __obj.updateDynamic("startTime")(startTime)
     if (status != null) __obj.updateDynamic("status")(status)
-    if (trafficCoverage != null) __obj.updateDynamic("trafficCoverage")(trafficCoverage)
+    if (trafficCoverage != null) __obj.updateDynamic("trafficCoverage")(trafficCoverage.asInstanceOf[js.Any])
     if (updated != null) __obj.updateDynamic("updated")(updated)
     if (variations != null) __obj.updateDynamic("variations")(variations)
     if (webPropertyId != null) __obj.updateDynamic("webPropertyId")(webPropertyId)
-    if (winnerConfidenceLevel != null) __obj.updateDynamic("winnerConfidenceLevel")(winnerConfidenceLevel)
+    if (winnerConfidenceLevel != null) __obj.updateDynamic("winnerConfidenceLevel")(winnerConfidenceLevel.asInstanceOf[js.Any])
     if (!js.isUndefined(winnerFound)) __obj.updateDynamic("winnerFound")(winnerFound)
     __obj.asInstanceOf[Experiment]
   }

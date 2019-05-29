@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Options extends js.Object {
   var SSL: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ foreverDashAgentLib.foreverDashAgentMod.ForeverAgentOptions], 
+    js.UndefOr[/* options */ foreverDashAgentLib.foreverDashAgentMod.ForeverAgentOptions], 
     foreverDashAgentLib.foreverDashAgentMod.ForeverAgentSSL
   ]
 }
@@ -16,7 +16,7 @@ object Anon_Options {
   @scala.inline
   def apply(
     SSL: org.scalablytyped.runtime.Instantiable1[
-      /* options */ js.UndefOr[/* options */ foreverDashAgentLib.foreverDashAgentMod.ForeverAgentOptions], 
+      js.UndefOr[/* options */ foreverDashAgentLib.foreverDashAgentMod.ForeverAgentOptions], 
       foreverDashAgentLib.foreverDashAgentMod.ForeverAgentSSL
     ]
   ): Anon_Options = {

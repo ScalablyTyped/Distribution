@@ -18,7 +18,7 @@ trait QueryParameterValues
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#parameterValues)
     */
-  var value: java.lang.String | js.Array[java.lang.String] | scala.Double | js.Array[scala.Double] | stdLib.Date | js.Array[stdLib.Date]
+  var value: java.lang.String | (js.Array[stdLib.Date | scala.Double | java.lang.String]) | scala.Double | stdLib.Date
 }
 
 object QueryParameterValues {
@@ -28,7 +28,7 @@ object QueryParameterValues {
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     name: java.lang.String,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
-    value: java.lang.String | js.Array[java.lang.String] | scala.Double | js.Array[scala.Double] | stdLib.Date | js.Array[stdLib.Date]
+    value: java.lang.String | (js.Array[stdLib.Date | scala.Double | java.lang.String]) | scala.Double | stdLib.Date
   ): QueryParameterValues = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), value = value.asInstanceOf[js.Any])
   

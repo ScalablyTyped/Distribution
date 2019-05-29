@@ -6,52 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LocaleObject extends js.Object {
-  var array: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.ArraySchema<any> ]:? string}
-    */ js.UndefOr[
+  var array: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.ArraySchema<any> ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any
   ] = js.undefined
-  var bool: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.BooleanSchema ]:? string}
-    */ js.UndefOr[
+  var bool: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.BooleanSchema ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any
   ] = js.undefined
-  var boolean: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.BooleanSchema ]:? string}
-    */ js.UndefOr[
+  var boolean: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.BooleanSchema ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any
   ] = js.undefined
-  var date: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.DateSchema ]:? string}
-    */ js.UndefOr[
+  var date: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.DateSchema ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any
   ] = js.undefined
   var mixed: js.UndefOr[yupLib.yupLibStrings.LocaleObject with js.Any with yupLib.Anon_NotType] = js.undefined
-  var number: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.NumberSchema ]:? string}
-    */ js.UndefOr[
+  var number: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.NumberSchema ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any
   ] = js.undefined
-  var `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.ObjectSchema<any> ]:? string}
-    */ js.UndefOr[
+  var `object`: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.ObjectSchema<any> ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any
   ] = js.undefined
-  var string: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in keyof yup.yup.StringSchema ]:? string}
-    */ js.UndefOr[
+  var string: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof yup.yup.StringSchema ]:? string}
     */ yupLib.yupLibStrings.LocaleObject with js.Any

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait SubscribeOptions extends js.Object {
   /** An array (bind by position) or object (bind by name) containing the bind values to use in the sql property. */
-  var binds: js.UndefOr[BindParametersObject | js.Array[_]] = js.undefined
+  var binds: js.UndefOr[BindParameters] = js.undefined
   /**
     * An integer mask which currently, if set, can only contain the value SUBSCR_GROUPING_CLASS_TIME.
     * If this value is set then notifications are grouped by time into a single notification.
@@ -63,7 +63,7 @@ object SubscribeOptions {
   def apply(
     callback: SubscriptionMessage => scala.Unit,
     sql: java.lang.String,
-    binds: BindParametersObject | js.Array[_] = null,
+    binds: BindParameters = null,
     groupingClass: scala.Int | scala.Double = null,
     groupingType: scala.Int | scala.Double = null,
     groupingValue: scala.Int | scala.Double = null,

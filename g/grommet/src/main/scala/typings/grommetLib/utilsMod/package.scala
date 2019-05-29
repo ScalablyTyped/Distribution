@@ -115,6 +115,7 @@ package object utilsMod {
     - grommetLib.grommetLibStrings.summary
     - grommetLib.grommetLibStrings.sup
     - grommetLib.grommetLibStrings.table
+    - grommetLib.grommetLibStrings.template
     - grommetLib.grommetLibStrings.tbody
     - grommetLib.grommetLibStrings.td
     - grommetLib.grommetLibStrings.textarea

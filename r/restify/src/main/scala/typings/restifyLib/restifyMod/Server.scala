@@ -32,7 +32,7 @@ trait Server
   var name: java.lang.String = js.native
   /** Prevents calling next multiple times */
   var onceNext: scala.Boolean = js.native
-  var passphrase: js.UndefOr[java.lang.String] | scala.Null = js.native
+  var passphrase: js.UndefOr[java.lang.String | scala.Null] = js.native
   /** Pre handlers */
   var preChain: Chain = js.native
   /** Router instance */

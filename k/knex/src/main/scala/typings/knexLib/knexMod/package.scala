@@ -38,7 +38,7 @@ package object knexMod {
     - QueryBuilder
   */
   type TableName = _TableName | java.lang.String
-  type Value = java.lang.String | scala.Double | scala.Boolean | stdLib.Date | js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[stdLib.Date] | js.Array[scala.Boolean] | nodeLib.Buffer | Raw
+  type Value = java.lang.String | scala.Double | scala.Boolean | stdLib.Date | (js.Array[scala.Boolean | stdLib.Date | scala.Double | java.lang.String]) | nodeLib.Buffer | Raw
   type ValueMap = org.scalablytyped.runtime.StringDictionary[Value | QueryBuilder]
   type WhereBetween = js.Function2[/* columnName */ java.lang.String, /* range */ js.Tuple2[Value, Value], QueryBuilder]
   type WhereNull = js.Function1[/* columnName */ java.lang.String, QueryBuilder]

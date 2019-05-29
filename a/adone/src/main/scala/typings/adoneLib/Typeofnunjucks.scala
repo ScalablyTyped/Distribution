@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Typeofnunjucks extends js.Object {
   var Environment: org.scalablytyped.runtime.Instantiable2[
-    /* loader */ js.UndefOr[
-      /* loader */ adoneLib.adoneNs.templatingNs.nunjucksNs.INs.Loader | js.Array[adoneLib.adoneNs.templatingNs.nunjucksNs.INs.Loader] | scala.Null
+    js.UndefOr[
+      adoneLib.adoneNs.templatingNs.nunjucksNs.INs.Loader | js.Array[adoneLib.adoneNs.templatingNs.nunjucksNs.INs.Loader] | scala.Null
     ], 
-    /* opts */ js.UndefOr[/* opts */ adoneLib.adoneNs.templatingNs.nunjucksNs.INs.EnvironmentOptions], 
+    js.UndefOr[/* opts */ adoneLib.adoneNs.templatingNs.nunjucksNs.INs.EnvironmentOptions], 
     adoneLib.adoneNs.templatingNs.nunjucksNs.Environment
   ] = js.native
   var FileSystemLoader: org.scalablytyped.runtime.Instantiable2[
-    /* searchPaths */ js.UndefOr[/* searchPaths */ java.lang.String | js.Array[java.lang.String]], 
-    /* opts */ js.UndefOr[/* opts */ adoneLib.adoneNs.templatingNs.nunjucksNs.INs.FileSystemLoaderOptions], 
+    js.UndefOr[java.lang.String | js.Array[java.lang.String]], 
+    js.UndefOr[/* opts */ adoneLib.adoneNs.templatingNs.nunjucksNs.INs.FileSystemLoaderOptions], 
     adoneLib.adoneNs.templatingNs.nunjucksNs.FileSystemLoader
   ] = js.native
   val INs: js.Any = js.native
@@ -24,8 +24,8 @@ trait Typeofnunjucks extends js.Object {
   var PrecompiledLoader: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.templatingNs.nunjucksNs.PrecompiledLoader] = js.native
   var Template: org.scalablytyped.runtime.Instantiable3[
     /* src */ java.lang.String, 
-    /* env */ js.UndefOr[/* env */ adoneLib.adoneNs.templatingNs.nunjucksNs.Environment], 
-    /* eagerCompile */ js.UndefOr[/* eagerCompile */ scala.Boolean], 
+    js.UndefOr[/* env */ adoneLib.adoneNs.templatingNs.nunjucksNs.Environment], 
+    js.UndefOr[/* eagerCompile */ scala.Boolean], 
     adoneLib.adoneNs.templatingNs.nunjucksNs.Template
   ] = js.native
   def compile(src: java.lang.String): adoneLib.adoneNs.templatingNs.nunjucksNs.Template = js.native

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "knockback"
-version := "0.0-unknown-dt-20190322Z-628158"
+version := "0.0-unknown-dt-20190322Z-3208a7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "backbone" % "1.4.0-dt-20190514Z-9c77e4",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-49ff4d",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190515Z-8327c3",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-fbd298",
-  "org.scalablytyped" %%% "std" % "3.4-8a92b2",
-  "org.scalablytyped" %%% "underscore" % "1.8-dt-20190515Z-ca0b10")
+  "org.scalablytyped" %%% "backbone" % "1.4.0-dt-20190514Z-639d45",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-dfa39a",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190515Z-3fbc25",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-fd7d83",
+  "org.scalablytyped" %%% "std" % "3.4-ef47bb",
+  "org.scalablytyped" %%% "underscore" % "1.8-dt-20190515Z-404ac4")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -125,6 +125,12 @@ package object clientsChimeMod {
     - java.lang.String
   */
   type PhoneNumberStatus = _PhoneNumberStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Local
+    - awsDashSdkLib.awsDashSdkLibStrings.TollFree
+    - java.lang.String
+  */
+  type PhoneNumberType = _PhoneNumberType | java.lang.String
   type Port = scala.Double
   type ProfileServiceMaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
@@ -139,6 +145,7 @@ package object clientsChimeMod {
   type SensitiveStringList = js.Array[SensitiveString]
   type String = java.lang.String
   type StringList = js.Array[String]
+  type TollFreePrefix = java.lang.String
   type UpdatePhoneNumberRequestItemList = js.Array[UpdatePhoneNumberRequestItem]
   type UpdateUserRequestItemList = js.Array[UpdateUserRequestItem]
   type UserEmailList = js.Array[EmailAddress]

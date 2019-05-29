@@ -49,7 +49,7 @@ trait RangeData extends js.Object {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any
   ] = js.undefined
   /**
     *
@@ -68,7 +68,7 @@ object RangeData {
     inlinePictures: js.Array[InlinePictureData] = null,
     isEmpty: js.UndefOr[scala.Boolean] = js.undefined,
     style: java.lang.String = null,
-    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any = null,
     text: java.lang.String = null
   ): RangeData = {
     val __obj = js.Dynamic.literal()

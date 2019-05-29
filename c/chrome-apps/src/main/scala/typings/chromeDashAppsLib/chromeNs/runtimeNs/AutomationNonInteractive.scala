@@ -9,7 +9,7 @@ trait AutomationNonInteractive extends _AutomationOptions {
   var desktop: js.UndefOr[chromeDashAppsLib.chromeDashAppsLibNumbers.`false`] = js.undefined
   var interact: chromeDashAppsLib.chromeDashAppsLibNumbers.`false`
   /** Patterns for matching, use chrome url pattern */
-  var matches: js.UndefOr[js.Array[UrlMatches] | js.Array[java.lang.String]] = js.undefined
+  var matches: js.UndefOr[js.Array[java.lang.String | UrlMatches]] = js.undefined
 }
 
 object AutomationNonInteractive {
@@ -17,11 +17,11 @@ object AutomationNonInteractive {
   def apply(
     interact: chromeDashAppsLib.chromeDashAppsLibNumbers.`false`,
     desktop: chromeDashAppsLib.chromeDashAppsLibNumbers.`false` = null,
-    matches: js.Array[UrlMatches] | js.Array[java.lang.String] = null
+    matches: js.Array[java.lang.String | UrlMatches] = null
   ): AutomationNonInteractive = {
     val __obj = js.Dynamic.literal(interact = interact)
     if (desktop != null) __obj.updateDynamic("desktop")(desktop)
-    if (matches != null) __obj.updateDynamic("matches")(matches.asInstanceOf[js.Any])
+    if (matches != null) __obj.updateDynamic("matches")(matches)
     __obj.asInstanceOf[AutomationNonInteractive]
   }
 }

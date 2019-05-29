@@ -27,9 +27,9 @@ trait Typeofej extends js.Object {
   val ComboBoxNs: js.Any = js.native
   var CurrencyTextbox: org.scalablytyped.runtime.Instantiable0[ejDotWebDotAllLib.ejNs.CurrencyTextbox] = js.native
   var DataManager: org.scalablytyped.runtime.Instantiable3[
-    /* dataSource */ js.UndefOr[/* dataSource */ js.Any], 
-    /* query */ js.UndefOr[/* query */ ejDotWebDotAllLib.ejNs.Query], 
-    /* adaptor */ js.UndefOr[/* adaptor */ js.Any], 
+    js.UndefOr[/* dataSource */ js.Any], 
+    js.UndefOr[/* query */ ejDotWebDotAllLib.ejNs.Query], 
+    js.UndefOr[/* adaptor */ js.Any], 
     ejDotWebDotAllLib.ejNs.DataManager
   ] = js.native
   var DatePicker: TypeofClassDatePicker = js.native

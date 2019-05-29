@@ -49,7 +49,7 @@ trait PolygonOptions extends js.Object {
     * map.
     */
   var paths: js.UndefOr[
-    MVCArray[MVCArray[LatLng]] | MVCArray[LatLng] | js.Array[js.Array[LatLng]] | js.Array[js.Array[LatLngLiteral]] | js.Array[LatLng] | js.Array[LatLngLiteral]
+    (MVCArray[LatLng | MVCArray[LatLng]]) | (js.Array[(js.Array[LatLng | LatLngLiteral]) | LatLng | LatLngLiteral])
   ] = js.undefined
   /**
     * The stroke color.
@@ -81,7 +81,7 @@ object PolygonOptions {
     fillOpacity: scala.Int | scala.Double = null,
     geodesic: js.UndefOr[scala.Boolean] = js.undefined,
     map: Map = null,
-    paths: MVCArray[MVCArray[LatLng]] | MVCArray[LatLng] | js.Array[js.Array[LatLng]] | js.Array[js.Array[LatLngLiteral]] | js.Array[LatLng] | js.Array[LatLngLiteral] = null,
+    paths: (MVCArray[LatLng | MVCArray[LatLng]]) | (js.Array[(js.Array[LatLng | LatLngLiteral]) | LatLng | LatLngLiteral]) = null,
     strokeColor: java.lang.String = null,
     strokeOpacity: scala.Int | scala.Double = null,
     strokePosition: StrokePosition = null,

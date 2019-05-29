@@ -16,7 +16,7 @@ trait ServerOptions extends js.Object {
   var schema: js.UndefOr[graphqlLib.graphqlMod.GraphQLSchema] = js.undefined
   var subscribe: js.UndefOr[SubscribeFunction] = js.undefined
   var validationRules: js.UndefOr[
-    (js.Array[js.Function1[/* context */ graphqlLib.graphqlMod.ValidationContext, _]]) | js.Array[_]
+    js.Array[_ | (js.Function1[/* context */ graphqlLib.graphqlMod.ValidationContext, _])]
   ] = js.undefined
 }
 
@@ -32,7 +32,7 @@ object ServerOptions {
     rootValue: js.Any = null,
     schema: graphqlLib.graphqlMod.GraphQLSchema = null,
     subscribe: SubscribeFunction = null,
-    validationRules: (js.Array[js.Function1[/* context */ graphqlLib.graphqlMod.ValidationContext, _]]) | js.Array[_] = null
+    validationRules: js.Array[_ | (js.Function1[/* context */ graphqlLib.graphqlMod.ValidationContext, _])] = null
   ): ServerOptions = {
     val __obj = js.Dynamic.literal()
     if (execute != null) __obj.updateDynamic("execute")(execute)
@@ -44,7 +44,7 @@ object ServerOptions {
     if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
     if (schema != null) __obj.updateDynamic("schema")(schema)
     if (subscribe != null) __obj.updateDynamic("subscribe")(subscribe)
-    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules.asInstanceOf[js.Any])
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
     __obj.asInstanceOf[ServerOptions]
   }
 }

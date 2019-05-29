@@ -32,10 +32,10 @@ trait MoveToOpts extends FindPathOpts {
 object MoveToOpts {
   @scala.inline
   def apply(
-    avoid: js.Array[_] | js.Array[RoomPosition] = null,
+    avoid: js.Array[_ | RoomPosition] = null,
     costCallback: (/* roomName */ java.lang.String, /* costMatrix */ CostMatrix) => scala.Boolean | CostMatrix = null,
     heuristicWeight: scala.Int | scala.Double = null,
-    ignore: js.Array[_] | js.Array[RoomPosition] = null,
+    ignore: js.Array[_ | RoomPosition] = null,
     ignoreCreeps: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreDestructibleStructures: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreRoads: js.UndefOr[scala.Boolean] = js.undefined,
@@ -51,10 +51,10 @@ object MoveToOpts {
     visualizePathStyle: PolyStyle = null
   ): MoveToOpts = {
     val __obj = js.Dynamic.literal()
-    if (avoid != null) __obj.updateDynamic("avoid")(avoid.asInstanceOf[js.Any])
+    if (avoid != null) __obj.updateDynamic("avoid")(avoid)
     if (costCallback != null) __obj.updateDynamic("costCallback")(js.Any.fromFunction2(costCallback))
     if (heuristicWeight != null) __obj.updateDynamic("heuristicWeight")(heuristicWeight.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
     if (!js.isUndefined(ignoreCreeps)) __obj.updateDynamic("ignoreCreeps")(ignoreCreeps)
     if (!js.isUndefined(ignoreDestructibleStructures)) __obj.updateDynamic("ignoreDestructibleStructures")(ignoreDestructibleStructures)
     if (!js.isUndefined(ignoreRoads)) __obj.updateDynamic("ignoreRoads")(ignoreRoads)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "require-relative"
-version := "0.8-dt-20180214Z-64bfec"
+version := "0.8-dt-20180214Z-38b8e7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

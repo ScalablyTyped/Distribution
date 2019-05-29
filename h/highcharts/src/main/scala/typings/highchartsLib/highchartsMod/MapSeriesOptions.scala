@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait MapSeriesOptions extends js.Object {
   var data: js.UndefOr[
-    js.Array[scala.Double] | (js.Array[js.Tuple2[scala.Double, scala.Double]]) | (js.Array[js.Tuple2[java.lang.String, scala.Double]]) | js.Array[DataPoint]
+    js.Array[
+      DataPoint | scala.Double | (js.Tuple2[scala.Double | java.lang.String, scala.Double])
+    ]
   ] = js.undefined
   var dataLabels: js.UndefOr[MapSeriesOptionsDataLabels] = js.undefined
   var joinBy: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -21,7 +23,9 @@ trait MapSeriesOptions extends js.Object {
 object MapSeriesOptions {
   @scala.inline
   def apply(
-    data: js.Array[scala.Double] | (js.Array[js.Tuple2[scala.Double, scala.Double]]) | (js.Array[js.Tuple2[java.lang.String, scala.Double]]) | js.Array[DataPoint] = null,
+    data: js.Array[
+      DataPoint | scala.Double | (js.Tuple2[scala.Double | java.lang.String, scala.Double])
+    ] = null,
     dataLabels: MapSeriesOptionsDataLabels = null,
     joinBy: js.Array[java.lang.String] = null,
     mapData: geojsonLib.geojsonMod.GeoJsonObject = null,
@@ -31,7 +35,7 @@ object MapSeriesOptions {
     `type`: java.lang.String = null
   ): MapSeriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (joinBy != null) __obj.updateDynamic("joinBy")(joinBy)
     if (mapData != null) __obj.updateDynamic("mapData")(mapData)

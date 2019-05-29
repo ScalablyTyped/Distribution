@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "random-obj-prop"
-version := "2.0.0-01a0d2"
+version := "2.0.0-7fea4a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

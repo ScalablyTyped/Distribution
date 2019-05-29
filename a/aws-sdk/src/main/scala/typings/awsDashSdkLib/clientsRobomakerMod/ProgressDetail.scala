@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ProgressDetail extends js.Object {
   /**
-    * The current progress status.  Validating  Validating the deployment.  Downloading/Extracting  Downloading and extracting the bundle on the robot.  Executing pre-launch script(s)  Executing pre-launch script(s) if provided.  Launching  Launching the robot application.  Executing post-launch script(s)  Executing post-launch script(s) if provided.  Finished  Deployment is complete.  
+    * The current progress status.  Validating  Validating the deployment.  DownloadingExtracting  Downloading and extracting the bundle on the robot.  ExecutingPreLaunch  Executing pre-launch script(s) if provided.  Launching  Launching the robot application.  ExecutingPostLaunch  Executing post-launch script(s) if provided.  Finished  Deployment is complete.  
     */
   var currentProgress: js.UndefOr[RobotDeploymentStep] = js.undefined
   /**

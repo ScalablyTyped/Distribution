@@ -42,12 +42,12 @@ trait EmbeddedScatterChartBuilder extends js.Object {
   def setTitleTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedScatterChartBuilder
   def setTransposeRowsAndColumns(transpose: scala.Boolean): EmbeddedChartBuilder
   def setXAxisLogScale(): EmbeddedScatterChartBuilder
-  def setXAxisRange(start: stdLib.Number, end: stdLib.Number): EmbeddedScatterChartBuilder
+  def setXAxisRange(start: scala.Double, end: scala.Double): EmbeddedScatterChartBuilder
   def setXAxisTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedScatterChartBuilder
   def setXAxisTitle(title: java.lang.String): EmbeddedScatterChartBuilder
   def setXAxisTitleTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedScatterChartBuilder
   def setYAxisLogScale(): EmbeddedScatterChartBuilder
-  def setYAxisRange(start: stdLib.Number, end: stdLib.Number): EmbeddedScatterChartBuilder
+  def setYAxisRange(start: scala.Double, end: scala.Double): EmbeddedScatterChartBuilder
   def setYAxisTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedScatterChartBuilder
   def setYAxisTitle(title: java.lang.String): EmbeddedScatterChartBuilder
   def setYAxisTitleTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedScatterChartBuilder
@@ -87,12 +87,12 @@ object EmbeddedScatterChartBuilder {
     setTitleTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedScatterChartBuilder,
     setTransposeRowsAndColumns: scala.Boolean => EmbeddedChartBuilder,
     setXAxisLogScale: () => EmbeddedScatterChartBuilder,
-    setXAxisRange: (stdLib.Number, stdLib.Number) => EmbeddedScatterChartBuilder,
+    setXAxisRange: (scala.Double, scala.Double) => EmbeddedScatterChartBuilder,
     setXAxisTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedScatterChartBuilder,
     setXAxisTitle: java.lang.String => EmbeddedScatterChartBuilder,
     setXAxisTitleTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedScatterChartBuilder,
     setYAxisLogScale: () => EmbeddedScatterChartBuilder,
-    setYAxisRange: (stdLib.Number, stdLib.Number) => EmbeddedScatterChartBuilder,
+    setYAxisRange: (scala.Double, scala.Double) => EmbeddedScatterChartBuilder,
     setYAxisTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedScatterChartBuilder,
     setYAxisTitle: java.lang.String => EmbeddedScatterChartBuilder,
     setYAxisTitleTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedScatterChartBuilder

@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ArrayCSSInterpolation
   extends stdLib.Array[CSSInterpolation]
+     with _CSSInterpolation
 

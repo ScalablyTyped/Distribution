@@ -9,14 +9,12 @@ trait ParserOptions extends js.Object {
   var Element: js.UndefOr[
     org.scalablytyped.runtime.Instantiable2[
       /* name */ java.lang.String, 
-      /* attrs */ js.UndefOr[
-        /* attrs */ java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]
-      ], 
+      js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]], 
       ltxLib.libElementMod.Element
     ]
   ] = js.undefined
   var Parser: js.UndefOr[
-    org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ ParserOptions], Parser]
+    org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* options */ ParserOptions], Parser]
   ] = js.undefined
 }
 
@@ -25,12 +23,10 @@ object ParserOptions {
   def apply(
     Element: org.scalablytyped.runtime.Instantiable2[
       /* name */ java.lang.String, 
-      /* attrs */ js.UndefOr[
-        /* attrs */ java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]
-      ], 
+      js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]], 
       ltxLib.libElementMod.Element
     ] = null,
-    Parser: org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ ParserOptions], Parser] = null
+    Parser: org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* options */ ParserOptions], Parser] = null
   ): ParserOptions = {
     val __obj = js.Dynamic.literal()
     if (Element != null) __obj.updateDynamic("Element")(Element)

@@ -39,6 +39,10 @@ trait PhoneNumber extends js.Object {
     */
   var Status: js.UndefOr[PhoneNumberStatus] = js.undefined
   /**
+    * The phone number type.
+    */
+  var Type: js.UndefOr[PhoneNumberType] = js.undefined
+  /**
     * The updated phone number timestamp, in ISO 8601 format.
     */
   var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
@@ -55,6 +59,7 @@ object PhoneNumber {
     PhoneNumberId: String = null,
     ProductType: PhoneNumberProductType = null,
     Status: PhoneNumberStatus = null,
+    Type: PhoneNumberType = null,
     UpdatedTimestamp: Iso8601Timestamp = null
   ): PhoneNumber = {
     val __obj = js.Dynamic.literal()
@@ -66,6 +71,7 @@ object PhoneNumber {
     if (PhoneNumberId != null) __obj.updateDynamic("PhoneNumberId")(PhoneNumberId)
     if (ProductType != null) __obj.updateDynamic("ProductType")(ProductType.asInstanceOf[js.Any])
     if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
     if (UpdatedTimestamp != null) __obj.updateDynamic("UpdatedTimestamp")(UpdatedTimestamp)
     __obj.asInstanceOf[PhoneNumber]
   }

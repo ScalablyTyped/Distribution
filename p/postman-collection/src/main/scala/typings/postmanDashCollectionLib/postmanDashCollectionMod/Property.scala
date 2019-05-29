@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefinition] {
   def this(definition: TDefinition) = this()
   def this(definition: postmanDashCollectionLib.Anon_Disabled[TDefinition]) = this()
-  var disabled: scala.Boolean | js.UndefOr[scala.Boolean] = js.native
-  var id: java.lang.String | js.UndefOr[java.lang.String] = js.native
-  var name: java.lang.String | js.UndefOr[java.lang.String] = js.native
+  var disabled: js.UndefOr[scala.Boolean] = js.native
+  var id: js.UndefOr[java.lang.String] = js.native
+  var name: js.UndefOr[java.lang.String] = js.native
   def describe(content: java.lang.String): scala.Unit = js.native
   def describe(content: java.lang.String, `type`: java.lang.String): scala.Unit = js.native
   def toObjectResolved(scope: postmanDashCollectionLib.Anon_Variables, overrides: js.Array[_]): TDefinition = js.native

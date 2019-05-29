@@ -48,6 +48,7 @@ package object clientsRobomakerMod {
     - awsDashSdkLib.awsDashSdkLibStrings.InProgress
     - awsDashSdkLib.awsDashSdkLibStrings.Failed
     - awsDashSdkLib.awsDashSdkLibStrings.Succeeded
+    - awsDashSdkLib.awsDashSdkLibStrings.Canceled
     - java.lang.String
   */
   type DeploymentStatus = _DeploymentStatus | java.lang.String
@@ -69,6 +70,7 @@ package object clientsRobomakerMod {
   type IamRole = java.lang.String
   type Id = java.lang.String
   type JobDuration = scala.Double
+  type LastStartedAt = stdLib.Date
   type LastUpdatedAt = stdLib.Date
   type MaxResults = scala.Double
   type Name = java.lang.String

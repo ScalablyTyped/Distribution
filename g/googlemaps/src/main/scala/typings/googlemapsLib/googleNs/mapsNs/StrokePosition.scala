@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait StrokePosition extends js.Object
 
+/**
+  * The possible positions of the stroke on a polygon.
+  */
 @JSGlobal("google.maps.StrokePosition")
 @js.native
 object StrokePosition extends js.Object {

@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mapsNs {
-  type ArrayOfBounds = js.Array[PointBounds] | js.Array[LatLngBounds]
-  type ArrayOfBoundsLiteral = js.Array[PointBoundsLiteral] | js.Array[LatLngBoundsLiteral]
-  type ArrayOfCoords = js.Array[Point] | js.Array[LatLng]
-  type ArrayOfCoordsLiteral = js.Array[PointLiteral] | js.Array[LatLngLiteral]
+  type ArrayOfBounds = js.Array[LatLngBounds | PointBounds]
+  type ArrayOfBoundsLiteral = js.Array[LatLngBoundsLiteral | PointBoundsLiteral]
+  type ArrayOfCoords = js.Array[LatLng | Point]
+  type ArrayOfCoordsLiteral = js.Array[LatLngLiteral | PointLiteral]
   type BoundsLiteral = PointBoundsLiteral | LatLngBoundsLiteral
   type CoordLiteral = PointLiteral | LatLngLiteral
   type DOMEvent = stdLib.Event

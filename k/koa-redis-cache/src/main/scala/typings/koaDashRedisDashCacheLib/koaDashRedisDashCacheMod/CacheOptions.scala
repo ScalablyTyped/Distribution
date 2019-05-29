@@ -42,7 +42,7 @@ trait CacheOptions extends js.Object {
     * the routes to cache, default is ['(.*)'].
     * can be set to an array of routes (string), or an array of RouteOptions
     */
-  var routes: js.UndefOr[js.Array[RouteOptions] | js.Array[java.lang.String]] = js.undefined
+  var routes: js.UndefOr[js.Array[RouteOptions | java.lang.String]] = js.undefined
 }
 
 object CacheOptions {
@@ -55,7 +55,7 @@ object CacheOptions {
     passParam: java.lang.String = null,
     prefix: java.lang.String | getPrefixCallback = null,
     redis: RedisOptions = null,
-    routes: js.Array[RouteOptions] | js.Array[java.lang.String] = null
+    routes: js.Array[RouteOptions | java.lang.String] = null
   ): CacheOptions = {
     val __obj = js.Dynamic.literal()
     if (exclude != null) __obj.updateDynamic("exclude")(exclude)
@@ -65,7 +65,7 @@ object CacheOptions {
     if (passParam != null) __obj.updateDynamic("passParam")(passParam)
     if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
     if (redis != null) __obj.updateDynamic("redis")(redis)
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
+    if (routes != null) __obj.updateDynamic("routes")(routes)
     __obj.asInstanceOf[CacheOptions]
   }
 }

@@ -99,7 +99,9 @@ trait CoverFlowView
   /**
   				 * Images to display in the view.
   				 */
-  var images: js.Array[java.lang.String] | js.Array[titaniumLib.TitaniumNs.Blob] | js.Array[titaniumLib.TitaniumNs.FilesystemNs.File] | js.Array[titaniumLib.CoverFlowImageType] = js.native
+  var images: js.Array[
+    titaniumLib.TitaniumNs.Blob | titaniumLib.CoverFlowImageType | titaniumLib.TitaniumNs.FilesystemNs.File | java.lang.String
+  ] = js.native
   /**
   				 * Specifies how the view positions its children.
   				 * One of: 'composite', 'vertical', or 'horizontal'.
@@ -283,7 +285,9 @@ trait CoverFlowView
   /**
   				 * Gets the value of the <Titanium.UI.iOS.CoverFlowView.images> property.
   				 */
-  def getImages(): js.Array[java.lang.String] | js.Array[titaniumLib.TitaniumNs.Blob] | js.Array[titaniumLib.TitaniumNs.FilesystemNs.File] | js.Array[titaniumLib.CoverFlowImageType] = js.native
+  def getImages(): js.Array[
+    titaniumLib.TitaniumNs.Blob | titaniumLib.CoverFlowImageType | titaniumLib.TitaniumNs.FilesystemNs.File | java.lang.String
+  ] = js.native
   /**
   				 * Gets the value of the <Titanium.UI.iOS.CoverFlowView.layout> property.
   				 */

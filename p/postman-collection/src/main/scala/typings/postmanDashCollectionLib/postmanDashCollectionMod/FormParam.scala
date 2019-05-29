@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FormParam protected () extends Property[FormParamDefinition] {
   def this(options: FormParamDefinition) = this()
-  var key: java.lang.String | js.UndefOr[java.lang.String] = js.native
-  var value: js.Any | js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[java.lang.String] = js.native
+  var value: js.UndefOr[js.Any] = js.native
 }
 

@@ -52,6 +52,6 @@ abstract class NodeVisitor () extends js.Object {
   def visitUnicodeCharacterLiteral(node: grammarkdownLib.distNodesMod.UnicodeCharacterLiteral): grammarkdownLib.distNodesMod.UnicodeCharacterLiteral = js.native
   def visitUnicodeCharacterRange(node: grammarkdownLib.distNodesMod.UnicodeCharacterRange): grammarkdownLib.distNodesMod.UnicodeCharacterRange = js.native
   @JSName("visit")
-  def visit_TNodeUndefOr[T /* <: grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind] */](node: T): js.UndefOr[T] = js.native
+  def `visit_TNode<union>`[T /* <: grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind] */](node: T): js.UndefOr[T] = js.native
 }
 

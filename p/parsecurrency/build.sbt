@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parsecurrency"
-version := "0.2-dt-20180725Z-b9e44c"
+version := "0.2-dt-20180725Z-7904a6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -20,7 +20,9 @@ trait Anon_A extends js.Object {
     rrtype: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* addresses */ js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.MxRecord] | js.Array[nodeLib.dnsMod.NaptrRecord] | nodeLib.dnsMod.SoaRecord | js.Array[nodeLib.dnsMod.SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[nodeLib.dnsMod.AnyRecord], 
+      /* addresses */ (js.Array[
+        nodeLib.dnsMod.AnyRecord | js.Array[java.lang.String] | nodeLib.dnsMod.MxRecord | nodeLib.dnsMod.NaptrRecord | nodeLib.dnsMod.SrvRecord | java.lang.String
+      ]) | nodeLib.dnsMod.SoaRecord, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -125,7 +127,9 @@ trait Anon_A extends js.Object {
   ): scala.Unit = js.native
   def __promisify__(hostname: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def __promisify__(hostname: java.lang.String, rrtype: java.lang.String): js.Promise[
-    js.Array[java.lang.String] | js.Array[nodeLib.dnsMod.MxRecord] | js.Array[nodeLib.dnsMod.NaptrRecord] | nodeLib.dnsMod.SoaRecord | js.Array[nodeLib.dnsMod.SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[nodeLib.dnsMod.AnyRecord]
+    (js.Array[
+      nodeLib.dnsMod.AnyRecord | js.Array[java.lang.String] | nodeLib.dnsMod.MxRecord | nodeLib.dnsMod.NaptrRecord | nodeLib.dnsMod.SrvRecord | java.lang.String
+    ]) | nodeLib.dnsMod.SoaRecord
   ] = js.native
   @JSName("__promisify__")
   def __promisify___A(hostname: java.lang.String, rrtype: nodeLib.nodeLibStrings.A): js.Promise[js.Array[java.lang.String]] = js.native

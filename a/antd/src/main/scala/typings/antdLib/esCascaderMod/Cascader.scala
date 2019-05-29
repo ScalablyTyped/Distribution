@@ -14,11 +14,11 @@ trait Cascader
   def clearSelection(e: reactLib.reactMod.MouseEvent[stdLib.HTMLElement, stdLib.MouseEvent]): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def generateFilteredOptions(
-    prefixCls: java.lang.String,
+    prefixCls: js.UndefOr[scala.Nothing],
     renderEmpty: antdLib.esConfigDashProviderRenderEmptyMod.RenderEmptyHandler
   ): js.Array[CascaderOptionType] = js.native
   def generateFilteredOptions(
-    prefixCls: js.UndefOr[scala.Nothing],
+    prefixCls: java.lang.String,
     renderEmpty: antdLib.esConfigDashProviderRenderEmptyMod.RenderEmptyHandler
   ): js.Array[CascaderOptionType] = js.native
   def getLabel(): js.Any = js.native

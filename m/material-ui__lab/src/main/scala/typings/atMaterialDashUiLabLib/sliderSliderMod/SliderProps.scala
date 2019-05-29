@@ -11,49 +11,35 @@ trait SliderProps extends js.Object {
   var about: js.UndefOr[java.lang.String] = js.native
   var accessKey: js.UndefOr[java.lang.String] = js.native
   var `aria-activedescendant`: js.UndefOr[java.lang.String] = js.native
-  var `aria-atomic`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-atomic`: js.UndefOr[scala.Boolean] = js.native
   var `aria-autocomplete`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.none | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`inline` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.list | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.both
   ] = js.native
-  var `aria-busy`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
-  var `aria-checked`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-busy`: js.UndefOr[scala.Boolean] = js.native
+  var `aria-checked`: js.UndefOr[scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed] = js.native
   var `aria-colcount`: js.UndefOr[scala.Double] = js.native
   var `aria-colindex`: js.UndefOr[scala.Double] = js.native
   var `aria-colspan`: js.UndefOr[scala.Double] = js.native
   var `aria-controls`: js.UndefOr[java.lang.String] = js.native
   var `aria-current`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.page | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.step | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.location | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.date | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.time
+    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.page | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.step | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.location | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.date | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.time
   ] = js.native
   var `aria-describedby`: js.UndefOr[java.lang.String] = js.native
   var `aria-details`: js.UndefOr[java.lang.String] = js.native
-  var `aria-disabled`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-disabled`: js.UndefOr[scala.Boolean] = js.native
   var `aria-dropeffect`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.none | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.copy | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.execute | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.link | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.move | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.popup
   ] = js.native
   var `aria-errormessage`: js.UndefOr[java.lang.String] = js.native
-  var `aria-expanded`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-expanded`: js.UndefOr[scala.Boolean] = js.native
   var `aria-flowto`: js.UndefOr[java.lang.String] = js.native
-  var `aria-grabbed`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-grabbed`: js.UndefOr[scala.Boolean] = js.native
   var `aria-haspopup`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.menu | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.listbox | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.tree | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grid | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.dialog
+    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.menu | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.listbox | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.tree | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grid | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.dialog
   ] = js.native
-  var `aria-hidden`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-hidden`: js.UndefOr[scala.Boolean] = js.native
   var `aria-invalid`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grammar | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.spelling
+    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.grammar | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.spelling
   ] = js.native
   var `aria-keyshortcuts`: js.UndefOr[java.lang.String] = js.native
   var `aria-label`: js.UndefOr[java.lang.String] = js.native
@@ -62,40 +48,26 @@ trait SliderProps extends js.Object {
   var `aria-live`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.off | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.assertive | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.polite
   ] = js.native
-  var `aria-modal`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
-  var `aria-multiline`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
-  var `aria-multiselectable`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-modal`: js.UndefOr[scala.Boolean] = js.native
+  var `aria-multiline`: js.UndefOr[scala.Boolean] = js.native
+  var `aria-multiselectable`: js.UndefOr[scala.Boolean] = js.native
   var `aria-orientation`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.horizontal | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.vertical
   ] = js.native
   var `aria-owns`: js.UndefOr[java.lang.String] = js.native
   var `aria-placeholder`: js.UndefOr[java.lang.String] = js.native
   var `aria-posinset`: js.UndefOr[scala.Double] = js.native
-  var `aria-pressed`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
-  var `aria-readonly`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-pressed`: js.UndefOr[scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.mixed] = js.native
+  var `aria-readonly`: js.UndefOr[scala.Boolean] = js.native
   var `aria-relevant`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.additions | (atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`additions text`) | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.all | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.removals | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.text
   ] = js.native
-  var `aria-required`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-required`: js.UndefOr[scala.Boolean] = js.native
   var `aria-roledescription`: js.UndefOr[java.lang.String] = js.native
   var `aria-rowcount`: js.UndefOr[scala.Double] = js.native
   var `aria-rowindex`: js.UndefOr[scala.Double] = js.native
   var `aria-rowspan`: js.UndefOr[scala.Double] = js.native
-  var `aria-selected`: js.UndefOr[
-    scala.Boolean | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`false` | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.`true`
-  ] = js.native
+  var `aria-selected`: js.UndefOr[scala.Boolean] = js.native
   var `aria-setsize`: js.UndefOr[scala.Double] = js.native
   var `aria-sort`: js.UndefOr[
     atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.none | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.ascending | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.descending | atMaterialDashUiLabLib.atMaterialDashUiLabLibStrings.other

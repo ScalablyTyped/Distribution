@@ -22,12 +22,12 @@ class StateTree protected () extends js.Object {
       xstateLib.libTypesMod.DefaultContext, 
       _, 
       xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ], stateValue: xstateLib.libTypesMod.StateValue | js.UndefOr[scala.Nothing], options: StateTreeOptions) = this()
+    ], stateValue: js.UndefOr[xstateLib.libTypesMod.StateValue], options: StateTreeOptions) = this()
   def this(stateNode: xstateLib.libStateNodeMod.StateNode[
       xstateLib.libTypesMod.DefaultContext, 
       _, 
       xstateLib.libTypesMod.OmniEventObject[xstateLib.libTypesMod.EventObject]
-    ], stateValue: xstateLib.libTypesMod.StateValue | js.UndefOr[scala.Nothing], options: StateTreeOptions, parent: StateTree) = this()
+    ], stateValue: js.UndefOr[xstateLib.libTypesMod.StateValue], options: StateTreeOptions, parent: StateTree) = this()
   val absolute: StateTree = js.native
   val atomicNodes: js.Array[
     xstateLib.libStateNodeMod.StateNode[

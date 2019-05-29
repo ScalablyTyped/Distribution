@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashProperty extends js.Object {
-  def apply(path: lodashLib.lodashMod.PropertyPath): LodashProperty5x1 = js.native
+  def apply(path: lodashLib.lodashMod.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def apply(path: lodashLib.lodashMod.PropertyPath, `object`: js.Any): js.Any = js.native
   def apply(path: lodashLib.lodashMod.__): LodashProperty5x2 = js.native
   def apply(path: lodashLib.lodashMod.__, `object`: js.Any): LodashProperty6x2 = js.native

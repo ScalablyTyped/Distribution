@@ -5,6 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/***** MVC *****/
+/** Base class implementing KVO. */
 @JSGlobal("google.maps.MVCObject")
 @js.native
 /**

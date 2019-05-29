@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation._
   var children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]]
   var className: js.UndefOr[java.lang.String] = js.undefined
   var inputRef: js.UndefOr[
-    reactLib.reactMod.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.RefObject[stdLib.HTMLInputElement]
+    reactLib.reactMod.RefObject[stdLib.HTMLInputElement | stdLib.HTMLTextAreaElement]
   ] = js.undefined
   var onBlur: js.UndefOr[
     js.Function2[
-      /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.FocusEvent[stdLib.HTMLTextAreaElement], 
+      /* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLInputElement | stdLib.HTMLTextAreaElement], 
       /* clickedSuggestion */ scala.Boolean, 
       scala.Unit
     ]
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
   var onChange: js.UndefOr[OnChangeHandlerFunc] = js.undefined
   var onKeyDown: js.UndefOr[
     js.Function1[
-      /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLTextAreaElement] | reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement], 
+      /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement | stdLib.HTMLTextAreaElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -50,10 +50,10 @@ object MentionsInputProps {
     children: reactLib.reactMod.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactElement[MentionProps]],
     allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
-    inputRef: reactLib.reactMod.RefObject[stdLib.HTMLTextAreaElement] | reactLib.reactMod.RefObject[stdLib.HTMLInputElement] = null,
-    onBlur: (/* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLInputElement] | reactLib.reactMod.FocusEvent[stdLib.HTMLTextAreaElement], /* clickedSuggestion */ scala.Boolean) => scala.Unit = null,
+    inputRef: reactLib.reactMod.RefObject[stdLib.HTMLInputElement | stdLib.HTMLTextAreaElement] = null,
+    onBlur: (/* event */ reactLib.reactMod.FocusEvent[stdLib.HTMLInputElement | stdLib.HTMLTextAreaElement], /* clickedSuggestion */ scala.Boolean) => scala.Unit = null,
     onChange: OnChangeHandlerFunc = null,
-    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLTextAreaElement] | reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement] => scala.Unit = null,
+    onKeyDown: /* event */ reactLib.reactMod.KeyboardEvent[stdLib.HTMLInputElement | stdLib.HTMLTextAreaElement] => scala.Unit = null,
     onSelect: /* event */ reactLib.reactMod.UIEvent[reactLib.Element] => scala.Unit = null,
     placeholder: java.lang.String = null,
     singleLine: js.UndefOr[scala.Boolean] = js.undefined,
@@ -64,7 +64,7 @@ object MentionsInputProps {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (!js.isUndefined(allowSpaceInQuery)) __obj.updateDynamic("allowSpaceInQuery")(allowSpaceInQuery)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef)
     if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2(onBlur))
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1(onKeyDown))

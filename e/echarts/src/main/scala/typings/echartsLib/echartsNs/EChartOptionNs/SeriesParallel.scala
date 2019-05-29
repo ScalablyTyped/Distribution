@@ -259,13 +259,11 @@ trait SeriesParallel extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data
     */
   var data: js.UndefOr[
-    (js.Array[
-      scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesParallelNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    js.Array[
+      (js.Array[
         scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesParallelNs.DataObject
-      ]
-    ])
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesParallelNs.DataObject | scala.Double | java.lang.String
+    ]
   ] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.emphasis
@@ -447,13 +445,11 @@ object SeriesParallel {
     animationEasingUpdate: java.lang.String = null,
     animationThreshold: scala.Int | scala.Double = null,
     coordinateSystem: java.lang.String = null,
-    data: (js.Array[
-      scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesParallelNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    data: js.Array[
+      (js.Array[
         scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesParallelNs.DataObject
-      ]
-    ]) = null,
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesParallelNs.DataObject | scala.Double | java.lang.String
+    ] = null,
     emphasis: echartsLib.Anon_LineStyleAnonColorOpacityShadowBlur = null,
     id: java.lang.String = null,
     inactiveOpacity: scala.Int | scala.Double = null,
@@ -482,7 +478,7 @@ object SeriesParallel {
     if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
     if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
     if (id != null) __obj.updateDynamic("id")(id)
     if (inactiveOpacity != null) __obj.updateDynamic("inactiveOpacity")(inactiveOpacity.asInstanceOf[js.Any])

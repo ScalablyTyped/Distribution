@@ -44,7 +44,7 @@ trait Creative extends js.Object {
   var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
   var latestTraffickedCreativeId: js.UndefOr[java.lang.String] = js.undefined
   var mediaDescription: js.UndefOr[java.lang.String] = js.undefined
-  var mediaDuration: js.UndefOr[stdLib.Number] = js.undefined
+  var mediaDuration: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var overrideCss: js.UndefOr[java.lang.String] = js.undefined
   var progressOffset: js.UndefOr[VideoOffset] = js.undefined
@@ -113,7 +113,7 @@ object Creative {
     lastModifiedInfo: LastModifiedInfo = null,
     latestTraffickedCreativeId: java.lang.String = null,
     mediaDescription: java.lang.String = null,
-    mediaDuration: stdLib.Number = null,
+    mediaDuration: scala.Int | scala.Double = null,
     name: java.lang.String = null,
     overrideCss: java.lang.String = null,
     progressOffset: VideoOffset = null,
@@ -179,7 +179,7 @@ object Creative {
     if (lastModifiedInfo != null) __obj.updateDynamic("lastModifiedInfo")(lastModifiedInfo)
     if (latestTraffickedCreativeId != null) __obj.updateDynamic("latestTraffickedCreativeId")(latestTraffickedCreativeId)
     if (mediaDescription != null) __obj.updateDynamic("mediaDescription")(mediaDescription)
-    if (mediaDuration != null) __obj.updateDynamic("mediaDuration")(mediaDuration)
+    if (mediaDuration != null) __obj.updateDynamic("mediaDuration")(mediaDuration.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (overrideCss != null) __obj.updateDynamic("overrideCss")(overrideCss)
     if (progressOffset != null) __obj.updateDynamic("progressOffset")(progressOffset)

@@ -18,14 +18,11 @@ package object ArcadeNs {
     - phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Group
     - phaserLib.PhaserNs.TilemapsNs.DynamicTilemapLayer
     - phaserLib.PhaserNs.TilemapsNs.StaticTilemapLayer
-    - js.Array[phaserLib.PhaserNs.GameObjectsNs.GameObject]
-    - js.Array[phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Sprite]
-    - js.Array[phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Image]
-    - js.Array[phaserLib.PhaserNs.PhysicsNs.ArcadeNs.StaticGroup]
-    - js.Array[phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Group]
-    - js.Array[phaserLib.PhaserNs.TilemapsNs.DynamicTilemapLayer]
-    - js.Array[phaserLib.PhaserNs.TilemapsNs.StaticTilemapLayer]
+    - js.Array[
+  phaserLib.PhaserNs.TilemapsNs.DynamicTilemapLayer | phaserLib.PhaserNs.GameObjectsNs.GameObject | phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Group | phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Image | phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Sprite | phaserLib.PhaserNs.PhysicsNs.ArcadeNs.StaticGroup | phaserLib.PhaserNs.TilemapsNs.StaticTilemapLayer]
   */
-  type ArcadeColliderType = _ArcadeColliderType | js.Array[phaserLib.PhaserNs.GameObjectsNs.GameObject] | js.Array[phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Sprite] | js.Array[phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Image] | js.Array[phaserLib.PhaserNs.PhysicsNs.ArcadeNs.StaticGroup] | js.Array[phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Group] | js.Array[phaserLib.PhaserNs.TilemapsNs.DynamicTilemapLayer] | js.Array[phaserLib.PhaserNs.TilemapsNs.StaticTilemapLayer]
+  type ArcadeColliderType = _ArcadeColliderType | (js.Array[
+    phaserLib.PhaserNs.TilemapsNs.DynamicTilemapLayer | phaserLib.PhaserNs.GameObjectsNs.GameObject | phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Group | phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Image | phaserLib.PhaserNs.PhysicsNs.ArcadeNs.Sprite | phaserLib.PhaserNs.PhysicsNs.ArcadeNs.StaticGroup | phaserLib.PhaserNs.TilemapsNs.StaticTilemapLayer
+  ])
   type PhysicsGroupConfig = phaserLib.PhaserNs.TypesNs.GameObjectsNs.GroupNs.GroupConfig with phaserLib.Anon_AccelerationX
 }

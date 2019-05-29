@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object parserNs extends js.Object {
   val Constructor: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ streamDashCsvDashAsDashJsonLib.parserMod.ParserOptions], 
+    js.UndefOr[/* options */ streamDashCsvDashAsDashJsonLib.parserMod.ParserOptions], 
     streamDashCsvDashAsDashJsonLib.parserMod.Parser
   ] = js.native
   type Constructor = streamDashCsvDashAsDashJsonLib.parserMod.Parser

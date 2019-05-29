@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LodashFindFrom1x2 extends js.Object {
-  def apply[T](predicate: lodashLib.lodashMod.ValueIterateeCustom[T, scala.Boolean]): LodashFindFrom2x3[T] = js.native
+  def apply[T /* <: js.Object */](
+    predicate: lodashLib.lodashMod.ValueIterateeCustom[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      scala.Boolean
+    ]
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def apply[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.ValueIterateeCustom[
       /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 

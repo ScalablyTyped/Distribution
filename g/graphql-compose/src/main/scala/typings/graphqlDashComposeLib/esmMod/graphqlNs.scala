@@ -23,9 +23,7 @@ object graphqlNs extends js.Object {
   @js.native
   class GraphQLError protected ()
     extends graphqlDashComposeLib.esmGraphqlMod.GraphQLError {
-    def this(message: java.lang.String, nodes: js.UndefOr[
-          graphqlLib.languageAstMod.ASTNode | js.Array[graphqlLib.languageAstMod.ASTNode] | js.UndefOr[scala.Nothing]
-        ], source: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageSourceMod.Source]], positions: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[scala.Double]]], path: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[scala.Double | java.lang.String]]], originalError: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[stdLib.Error]], extensions: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]]) = this()
+    def this(message: java.lang.String, nodes: js.UndefOr[graphqlLib.languageAstMod.ASTNode | js.Array[graphqlLib.languageAstMod.ASTNode]], source: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageSourceMod.Source]], positions: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[scala.Double]]], path: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[scala.Double | java.lang.String]]], originalError: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[stdLib.Error]], extensions: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]]) = this()
   }
   
   @js.native
@@ -298,12 +296,12 @@ object graphqlNs extends js.Object {
     node: graphqlLib.Anon_Description,
     options: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.utilitiesBuildASTSchemaMod.BuildSchemaOptions]
   ): js.UndefOr[java.lang.String] = js.native
-  def getDirectiveValues(directiveDef: graphqlLib.typeDirectivesMod.GraphQLDirective, node: graphqlLib.Anon_Directives): js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def getDirectiveValues(directiveDef: graphqlLib.typeDirectivesMod.GraphQLDirective, node: graphqlLib.Anon_Directives): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def getDirectiveValues(
     directiveDef: graphqlLib.typeDirectivesMod.GraphQLDirective,
     node: graphqlLib.Anon_Directives,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
-  ): js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  ): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def getIntrospectionQuery(): java.lang.String = js.native
   def getIntrospectionQuery(options: graphqlLib.utilitiesIntrospectionQueryMod.IntrospectionOptions): java.lang.String = js.native
   def getLocation(source: graphqlLib.languageSourceMod.Source, position: scala.Double): graphqlLib.languageLocationMod.SourceLocation = js.native

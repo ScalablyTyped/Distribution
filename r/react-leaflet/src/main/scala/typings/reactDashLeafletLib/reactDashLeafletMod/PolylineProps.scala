@@ -8,14 +8,18 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - leafletLib.leafletMod.PolylineOptions because var conflicts: attribution, bubblingMouseEvents, className, color, dashArray, dashOffset, fill, fillColor, fillOpacity, fillRule, interactive, lineCap, lineJoin, opacity, pane, renderer, stroke, weight. Inlined noClip, smoothFactor */ trait PolylineProps extends PathProps {
   var noClip: js.UndefOr[scala.Boolean] = js.undefined
-  var positions: js.Array[leafletLib.leafletMod.LatLngExpression] | js.Array[js.Array[leafletLib.leafletMod.LatLngExpression]]
+  var positions: js.Array[
+    js.Array[leafletLib.leafletMod.LatLngExpression] | leafletLib.leafletMod.LatLngExpression
+  ]
   var smoothFactor: js.UndefOr[scala.Double] = js.undefined
 }
 
 object PolylineProps {
   @scala.inline
   def apply(
-    positions: js.Array[leafletLib.leafletMod.LatLngExpression] | js.Array[js.Array[leafletLib.leafletMod.LatLngExpression]],
+    positions: js.Array[
+      js.Array[leafletLib.leafletMod.LatLngExpression] | leafletLib.leafletMod.LatLngExpression
+    ],
     attribution: java.lang.String = null,
     bubblingMouseEvents: js.UndefOr[scala.Boolean] = js.undefined,
     children: Children = null,
@@ -49,7 +53,7 @@ object PolylineProps {
     stroke: js.UndefOr[scala.Boolean] = js.undefined,
     weight: scala.Int | scala.Double = null
   ): PolylineProps = {
-    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(positions = positions)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])

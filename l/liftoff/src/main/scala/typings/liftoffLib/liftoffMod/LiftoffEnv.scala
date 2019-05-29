@@ -31,7 +31,7 @@ trait LiftoffEnv extends js.Object {
   /**
     * the contents of the local module's package.json (if found)
     */
-  var modulePackage: js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]] = js.undefined
+  var modulePackage: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   /**
     * the full path to the local module your project relies on (if found)
     */
@@ -51,7 +51,7 @@ object LiftoffEnv {
     configBase: java.lang.String = null,
     configFiles: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]] = null,
     configPath: java.lang.String = null,
-    modulePackage: org.scalablytyped.runtime.StringDictionary[_] = null,
+    modulePackage: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     modulePath: java.lang.String = null
   ): LiftoffEnv = {
     val __obj = js.Dynamic.literal(configNameSearch = configNameSearch, cwd = cwd, require = require)

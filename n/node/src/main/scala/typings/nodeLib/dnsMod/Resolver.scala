@@ -133,7 +133,9 @@ class Resolver () extends js.Object {
     rrtype: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* addresses */ js.Array[java.lang.String] | js.Array[MxRecord] | js.Array[NaptrRecord] | SoaRecord | js.Array[SrvRecord] | js.Array[js.Array[java.lang.String]] | js.Array[AnyRecord], 
+      /* addresses */ (js.Array[
+        AnyRecord | js.Array[java.lang.String] | MxRecord | NaptrRecord | SrvRecord | java.lang.String
+      ]) | SoaRecord, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -150,7 +152,7 @@ class Resolver () extends js.Object {
     options: ResolveOptions,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* addresses */ js.Array[java.lang.String] | js.Array[RecordWithTtl], 
+      /* addresses */ js.Array[RecordWithTtl | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -176,7 +178,7 @@ class Resolver () extends js.Object {
     options: ResolveOptions,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* addresses */ js.Array[java.lang.String] | js.Array[RecordWithTtl], 
+      /* addresses */ js.Array[RecordWithTtl | java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native

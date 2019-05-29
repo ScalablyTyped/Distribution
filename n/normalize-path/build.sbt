@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "normalize-path"
-version := "3.0-dt-20181225Z-fee41a"
+version := "3.0-dt-20181225Z-b79d41"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

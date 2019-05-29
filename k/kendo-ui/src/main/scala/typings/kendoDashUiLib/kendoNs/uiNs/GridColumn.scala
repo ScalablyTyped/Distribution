@@ -10,7 +10,7 @@ trait GridColumn extends js.Object {
   var attributes: js.UndefOr[js.Any] = js.undefined
   var columns: js.UndefOr[js.Any] = js.undefined
   var command: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | GridColumnCommandItem | js.Array[GridColumnCommandItem]
+    java.lang.String | (js.Array[GridColumnCommandItem | java.lang.String]) | GridColumnCommandItem
   ] = js.undefined
   var editable: js.UndefOr[js.Function] = js.undefined
   var editor: js.UndefOr[
@@ -53,7 +53,7 @@ object GridColumn {
     aggregates: js.Any = null,
     attributes: js.Any = null,
     columns: js.Any = null,
-    command: java.lang.String | js.Array[java.lang.String] | GridColumnCommandItem | js.Array[GridColumnCommandItem] = null,
+    command: java.lang.String | (js.Array[GridColumnCommandItem | java.lang.String]) | GridColumnCommandItem = null,
     editable: js.Function = null,
     editor: (/* container */ kendoDashUiLib.JQuery, /* options */ GridColumnEditorOptions) => scala.Unit = null,
     encoded: js.UndefOr[scala.Boolean] = js.undefined,

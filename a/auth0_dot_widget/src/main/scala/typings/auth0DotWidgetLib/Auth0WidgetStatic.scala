@@ -19,10 +19,10 @@ trait Auth0WidgetStatic
   def signup(
     options: Auth0Options,
     callback: js.Function5[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Auth0Error */ /* error */ js.UndefOr[
+      /* error */ js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Auth0Error */ js.Any
       ], 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Auth0UserProfile */ /* profile */ js.UndefOr[
+      /* profile */ js.UndefOr[
         /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Auth0UserProfile */ js.Any
       ], 
       /* id_token */ js.UndefOr[java.lang.String], 

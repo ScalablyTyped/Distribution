@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Formatter extends js.Object {
-  def interpolate(message: java.lang.String, values: js.UndefOr[scala.Nothing] | Values, path: java.lang.String): js.Array[_] | scala.Null = js.native
+  def interpolate(message: java.lang.String, values: js.UndefOr[Values], path: java.lang.String): js.Array[_] | scala.Null = js.native
 }
 

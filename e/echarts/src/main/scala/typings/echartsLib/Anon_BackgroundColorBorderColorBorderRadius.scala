@@ -173,10 +173,7 @@ trait Anon_BackgroundColorBorderColorBorderRadius extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLabel.rich
     */
-  var rich: /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLabel.rich.%3Cuser%20defined%20style%20name%3E
-    */
-  js.UndefOr[
+  var rich: js.UndefOr[
     /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLabel.rich.%3Cuser%20defined%20style%20name%3E
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fastify-favicon"
-version := "0.3-dt-20190123Z-218cf9"
+version := "0.3-dt-20190123Z-03c26f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

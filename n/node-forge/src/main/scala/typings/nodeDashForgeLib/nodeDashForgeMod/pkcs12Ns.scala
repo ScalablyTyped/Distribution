@@ -32,14 +32,14 @@ object pkcs12Ns extends js.Object {
   }
   
   def generateKey(
-    password: java.lang.String,
+    password: js.UndefOr[scala.Nothing],
     salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
     id: nodeDashForgeLib.nodeDashForgeMod.Byte,
     iter: scala.Double,
     n: scala.Double
   ): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer = js.native
   def generateKey(
-    password: java.lang.String,
+    password: js.UndefOr[scala.Nothing],
     salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
     id: nodeDashForgeLib.nodeDashForgeMod.Byte,
     iter: scala.Double,
@@ -47,14 +47,14 @@ object pkcs12Ns extends js.Object {
     md: nodeDashForgeLib.nodeDashForgeMod.mdNs.MessageDigest
   ): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer = js.native
   def generateKey(
-    password: js.UndefOr[scala.Nothing],
+    password: java.lang.String,
     salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
     id: nodeDashForgeLib.nodeDashForgeMod.Byte,
     iter: scala.Double,
     n: scala.Double
   ): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer = js.native
   def generateKey(
-    password: js.UndefOr[scala.Nothing],
+    password: java.lang.String,
     salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
     id: nodeDashForgeLib.nodeDashForgeMod.Byte,
     iter: scala.Double,

@@ -21,7 +21,11 @@ trait Resource extends js.Object {
     * @deprecated Unsupported on Firefox at this time.
     */
   var setContent: js.UndefOr[
-    js.Function2[/* content */ java.lang.String, /* commit */ scala.Boolean, js.Promise[_]]
+    js.Function2[
+      /* content */ java.lang.String, 
+      /* commit */ scala.Boolean, 
+      js.Promise[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]]
+    ]
   ] = js.undefined
   /** The URL of the resource. */
   var url: java.lang.String
@@ -32,7 +36,7 @@ object Resource {
   def apply(
     url: java.lang.String,
     getContent: () => js.Promise[js.Object] = null,
-    setContent: (/* content */ java.lang.String, /* commit */ scala.Boolean) => js.Promise[_] = null
+    setContent: (/* content */ java.lang.String, /* commit */ scala.Boolean) => js.Promise[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = null
   ): Resource = {
     val __obj = js.Dynamic.literal(url = url)
     if (getContent != null) __obj.updateDynamic("getContent")(js.Any.fromFunction0(getContent))

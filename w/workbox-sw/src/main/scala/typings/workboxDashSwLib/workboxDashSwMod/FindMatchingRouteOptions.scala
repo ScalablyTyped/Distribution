@@ -9,7 +9,7 @@ trait FindMatchingRouteOptions extends js.Object {
   /**
   	 * The corresponding event (unless N/A).
   	 */
-  var event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.UndefOr[
+  var event: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
   ] = js.undefined
   /**

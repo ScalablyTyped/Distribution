@@ -32,7 +32,7 @@ trait ParsedOptions extends js.Object {
   var enable: js.Array[DateLimit[stdLib.Date]]
   var enableSeconds: scala.Boolean
   var enableTime: scala.Boolean
-  var formatDate: /* import warning: ImportType.apply Failed type conversion: flatpickr.flatpickr/dist/types/options.Options['formatDate'] */ js.UndefOr[
+  var formatDate: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: flatpickr.flatpickr/dist/types/options.Options['formatDate'] */ js.Any
   ] = js.undefined
   var hourIncrement: scala.Double

@@ -19,7 +19,7 @@ trait FeatureForm extends Widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#fieldConfig)
     */
-  var fieldConfig: js.Array[FieldConfig] | js.Array[FieldGroupConfig] = js.native
+  var fieldConfig: js.Array[FieldConfig | FieldGroupConfig] = js.native
   /**
     * Defines how groups will be displayed to the user.  **Possible Values:**
     *

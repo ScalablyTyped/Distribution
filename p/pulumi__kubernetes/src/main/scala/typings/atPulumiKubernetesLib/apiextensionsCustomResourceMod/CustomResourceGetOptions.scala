@@ -33,9 +33,9 @@ object CustomResourceGetOptions {
     kind: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     additionalSecretOutputs: js.Array[java.lang.String] = null,
     deleteBeforeReplace: js.UndefOr[scala.Boolean] = js.undefined,
-    dependsOn: (atPulumiPulumiLib.outputMod.Input[
-      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.Resource]]
-    ]) | atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.Resource] = null,
+    dependsOn: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.Resource]] | atPulumiPulumiLib.resourceMod.Resource
+    ] = null,
     ignoreChanges: js.Array[java.lang.String] = null,
     parent: atPulumiPulumiLib.resourceMod.Resource = null,
     protect: js.UndefOr[scala.Boolean] = js.undefined,

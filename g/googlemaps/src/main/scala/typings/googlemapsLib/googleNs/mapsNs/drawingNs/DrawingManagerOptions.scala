@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Options for the drawing manager. */
 trait DrawingManagerOptions extends js.Object {
   /**
     * Options to apply to any new circles created with this DrawingManager.

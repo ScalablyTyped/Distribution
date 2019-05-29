@@ -13,7 +13,7 @@ class Feature protected () extends KVO {
   def getBounds(): Bounds = js.native
   def getGeometries(): js.Array[Geometry] = js.native
   def getId(): java.lang.String = js.native
-  def getOverlays(): js.Array[Marker] | js.Array[Polyline] | js.Array[Polygon] = js.native
+  def getOverlays(): js.Array[Marker | Polygon | Polyline] = js.native
   def getProperty(name: java.lang.String): js.Any = js.native
   def getRaw(): GeoJSON = js.native
   def setProperty(name: java.lang.String, value: js.Any): scala.Unit = js.native

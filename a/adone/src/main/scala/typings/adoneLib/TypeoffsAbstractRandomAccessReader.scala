@@ -50,14 +50,14 @@ trait TypeoffsAbstractRandomAccessReader extends js.Object {
     */
   var TailWatcher: org.scalablytyped.runtime.Instantiable2[
     /* filename */ java.lang.String, 
-    /* options */ js.UndefOr[/* options */ adoneLib.adoneNs.fsNs.INs.TailWatcherNs.ConstructorOptions], 
+    js.UndefOr[/* options */ adoneLib.adoneNs.fsNs.INs.TailWatcherNs.ConstructorOptions], 
     adoneLib.adoneNs.fsNs.TailWatcher
   ] = js.native
   /**
     * Represents a file watcher
     */
   var Watcher: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ adoneLib.adoneNs.fsNs.INs.WatcherNs.ConstructorOptions], 
+    js.UndefOr[/* options */ adoneLib.adoneNs.fsNs.INs.WatcherNs.ConstructorOptions], 
     adoneLib.adoneNs.fsNs.Watcher
   ] = js.native
   val constantsNs: TypeofconstantsFOK = js.native
@@ -150,13 +150,13 @@ trait TypeoffsAbstractRandomAccessReader extends js.Object {
     */
   def copyTo(src: java.lang.String, dst: java.lang.String): js.Promise[scala.Unit] = js.native
   def copyTo(src: java.lang.String, dst: java.lang.String, options: adoneLib.adoneNs.fsNs.INs.CopyToOptions): js.Promise[scala.Unit] = js.native
+  def createReadStream(path: js.UndefOr[scala.Nothing], options: adoneLib.adoneNs.fsNs.INs.ReadStreamOptionsFD): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
   def createReadStream(path: adoneLib.adoneNs.fsNs.INs.URL): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
   def createReadStream(path: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
   def createReadStream(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.adoneNs.fsNs.INs.ReadStreamOptions): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
   def createReadStream(path: java.lang.String): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
   def createReadStream(path: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
   def createReadStream(path: java.lang.String, options: adoneLib.adoneNs.fsNs.INs.ReadStreamOptions): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
-  def createReadStream(path: js.UndefOr[scala.Nothing], options: adoneLib.adoneNs.fsNs.INs.ReadStreamOptionsFD): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
   def createReadStream(path: nodeLib.Buffer): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
   def createReadStream(path: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
   def createReadStream(path: nodeLib.Buffer, options: adoneLib.adoneNs.fsNs.INs.ReadStreamOptions): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
@@ -164,13 +164,13 @@ trait TypeoffsAbstractRandomAccessReader extends js.Object {
     * Returns a read stream for the given file
     */
   def createReadStream(path: scala.Null, options: adoneLib.adoneNs.fsNs.INs.ReadStreamOptionsFD): adoneLib.adoneNs.fsNs.INs.ReadStream = js.native
+  def createWriteStream(path: js.UndefOr[scala.Nothing], options: adoneLib.adoneNs.fsNs.INs.WriteStreamOptionsFD): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
   def createWriteStream(path: adoneLib.adoneNs.fsNs.INs.URL): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
   def createWriteStream(path: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
   def createWriteStream(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.adoneNs.fsNs.INs.WriteStreamOptions): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
   def createWriteStream(path: java.lang.String): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
   def createWriteStream(path: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
   def createWriteStream(path: java.lang.String, options: adoneLib.adoneNs.fsNs.INs.WriteStreamOptions): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
-  def createWriteStream(path: js.UndefOr[scala.Nothing], options: adoneLib.adoneNs.fsNs.INs.WriteStreamOptionsFD): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
   def createWriteStream(path: nodeLib.Buffer): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
   def createWriteStream(path: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native
   def createWriteStream(path: nodeLib.Buffer, options: adoneLib.adoneNs.fsNs.INs.WriteStreamOptions): adoneLib.adoneNs.fsNs.INs.WriteStream = js.native

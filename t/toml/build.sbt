@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "toml"
-version := "2.3.6-9a6a8c"
+version := "2.3.6-2a6676"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

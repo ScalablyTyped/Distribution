@@ -46,7 +46,7 @@ trait XTickConfiguration extends js.Object {
     * If this option is provided, the position of the ticks will be determined based on those values. This option works with timeseries data and the x values will be parsed accoding to the type
     * of the value and data.xFormat option.
     */
-  var values: js.UndefOr[js.Array[scala.Double] | js.Array[java.lang.String]] = js.undefined
+  var values: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
   /**
     * Set width of x axis tick.
     */
@@ -64,7 +64,7 @@ object XTickConfiguration {
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
     outer: js.UndefOr[scala.Boolean] = js.undefined,
     rotate: scala.Int | scala.Double = null,
-    values: js.Array[scala.Double] | js.Array[java.lang.String] = null,
+    values: js.Array[scala.Double | java.lang.String] = null,
     width: scala.Int | scala.Double = null
   ): XTickConfiguration = {
     val __obj = js.Dynamic.literal()
@@ -76,7 +76,7 @@ object XTickConfiguration {
     if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
     if (!js.isUndefined(outer)) __obj.updateDynamic("outer")(outer)
     if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[XTickConfiguration]
   }

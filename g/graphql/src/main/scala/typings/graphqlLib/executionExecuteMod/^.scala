@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val defaultFieldResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
-  def addPath(prev: graphqlLib.typeDefinitionMod.ResponsePath, key: java.lang.String): graphqlLib.Anon_Key = js.native
-  def addPath(prev: graphqlLib.typeDefinitionMod.ResponsePath, key: scala.Double): graphqlLib.Anon_Key = js.native
   def addPath(prev: js.UndefOr[scala.Nothing], key: java.lang.String): graphqlLib.Anon_Key = js.native
   def addPath(prev: js.UndefOr[scala.Nothing], key: scala.Double): graphqlLib.Anon_Key = js.native
+  def addPath(prev: graphqlLib.typeDefinitionMod.ResponsePath, key: java.lang.String): graphqlLib.Anon_Key = js.native
+  def addPath(prev: graphqlLib.typeDefinitionMod.ResponsePath, key: scala.Double): graphqlLib.Anon_Key = js.native
   def assertValidExecutionArguments(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,

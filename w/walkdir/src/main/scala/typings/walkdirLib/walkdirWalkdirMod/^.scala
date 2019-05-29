@@ -23,24 +23,14 @@ object ^ extends js.Object {
   ): org.scalablytyped.runtime.StringDictionary[nodeLib.fsMod.Stats] = js.native
   def apply(path: java.lang.String, options: WalkOptions | WalkEventListener): WalkEmitter | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[nodeLib.fsMod.Stats] = js.native
   def apply(path: java.lang.String, options: WalkOptions | WalkEventListener, eventListener: WalkEventListener): WalkEmitter | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[nodeLib.fsMod.Stats] = js.native
-  def async(path: java.lang.String): js.Promise[js.Array[java.lang.String]] | js.Promise[org.scalablytyped.runtime.StringDictionary[nodeLib.fsMod.Stats]] = js.native
-  def async(path: java.lang.String, options: WalkOptions with walkdirLib.Anon_ReturnobjectBoolean): js.Promise[js.Array[java.lang.String]] | js.Promise[org.scalablytyped.runtime.StringDictionary[nodeLib.fsMod.Stats]] = js.native
+  def async(path: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def async(
     path: java.lang.String,
-    options: WalkOptions with walkdirLib.Anon_ReturnobjectBoolean,
-    eventListener: WalkEventListener
-  ): js.Promise[js.Array[java.lang.String]] | js.Promise[org.scalablytyped.runtime.StringDictionary[nodeLib.fsMod.Stats]] = js.native
-  @JSName("async")
-  def async_Promise(path: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
-  @JSName("async")
-  def async_Promise(
-    path: java.lang.String,
-    options: WalkOptions with (walkdirLib.Anon_FalseReturnobject | walkdirLib.Anon_ReturnobjectTrue)
+    options: WalkOptions with (walkdirLib.Anon_FalseReturnobject | walkdirLib.Anon_ReturnobjectBoolean | walkdirLib.Anon_ReturnobjectTrue)
   ): js.Promise[org.scalablytyped.runtime.StringDictionary[nodeLib.fsMod.Stats]] = js.native
-  @JSName("async")
-  def async_Promise(
+  def async(
     path: java.lang.String,
-    options: WalkOptions with (walkdirLib.Anon_FalseReturnobject | walkdirLib.Anon_ReturnobjectTrue),
+    options: WalkOptions with (walkdirLib.Anon_FalseReturnobject | walkdirLib.Anon_ReturnobjectBoolean | walkdirLib.Anon_ReturnobjectTrue),
     eventListener: WalkEventListener
   ): js.Promise[org.scalablytyped.runtime.StringDictionary[nodeLib.fsMod.Stats]] = js.native
   def find(path: java.lang.String): WalkEmitter = js.native

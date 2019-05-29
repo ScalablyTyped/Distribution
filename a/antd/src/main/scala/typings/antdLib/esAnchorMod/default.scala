@@ -14,7 +14,7 @@ class default ()
 @JSImport("antd/es/anchor", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Link: antdLib.Anon_ContextTypes = js.native
+  var Link: antdLib.TypeofClassAnchorLink = js.native
   var childContextTypes: antdLib.Anon_AntAnchor = js.native
   var defaultProps: antdLib.Anon_Affix = js.native
 }

@@ -21,7 +21,7 @@ trait Resolve extends js.Object {
     *
     * @see alias
     */
-  var aliasFields: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
+  var aliasFields: js.UndefOr[js.Array[js.Array[java.lang.String] | java.lang.String]] = js.undefined
   /**
     * A function used to decide whether to cache the given resolve request.
     *
@@ -59,7 +59,7 @@ trait Resolve extends js.Object {
     * Defaults to `["browser", "module", "main"]` or `["module", "main"]`,
     * depending on the value of the `target` `Configuration` value.
     */
-  var mainFields: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
+  var mainFields: js.UndefOr[js.Array[js.Array[java.lang.String] | java.lang.String]] = js.undefined
   /**
     * A list of file names to search for when requiring directories that
     * don't contain a package description file.
@@ -102,13 +102,13 @@ object Resolve {
   @scala.inline
   def apply(
     alias: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    aliasFields: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
+    aliasFields: js.Array[js.Array[java.lang.String] | java.lang.String] = null,
     cachePredicate: /* data */ webpackLib.Anon_Path => scala.Boolean = null,
     cacheWithContext: js.UndefOr[scala.Boolean] = js.undefined,
     descriptionFiles: js.Array[java.lang.String] = null,
     enforceExtension: js.UndefOr[scala.Boolean] = js.undefined,
     extensions: js.Array[java.lang.String] = null,
-    mainFields: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
+    mainFields: js.Array[js.Array[java.lang.String] | java.lang.String] = null,
     mainFiles: js.Array[java.lang.String] = null,
     modules: js.Array[java.lang.String] = null,
     plugins: js.Array[ResolvePlugin] = null,
@@ -117,13 +117,13 @@ object Resolve {
   ): Resolve = {
     val __obj = js.Dynamic.literal()
     if (alias != null) __obj.updateDynamic("alias")(alias)
-    if (aliasFields != null) __obj.updateDynamic("aliasFields")(aliasFields.asInstanceOf[js.Any])
+    if (aliasFields != null) __obj.updateDynamic("aliasFields")(aliasFields)
     if (cachePredicate != null) __obj.updateDynamic("cachePredicate")(js.Any.fromFunction1(cachePredicate))
     if (!js.isUndefined(cacheWithContext)) __obj.updateDynamic("cacheWithContext")(cacheWithContext)
     if (descriptionFiles != null) __obj.updateDynamic("descriptionFiles")(descriptionFiles)
     if (!js.isUndefined(enforceExtension)) __obj.updateDynamic("enforceExtension")(enforceExtension)
     if (extensions != null) __obj.updateDynamic("extensions")(extensions)
-    if (mainFields != null) __obj.updateDynamic("mainFields")(mainFields.asInstanceOf[js.Any])
+    if (mainFields != null) __obj.updateDynamic("mainFields")(mainFields)
     if (mainFiles != null) __obj.updateDynamic("mainFiles")(mainFiles)
     if (modules != null) __obj.updateDynamic("modules")(modules)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)

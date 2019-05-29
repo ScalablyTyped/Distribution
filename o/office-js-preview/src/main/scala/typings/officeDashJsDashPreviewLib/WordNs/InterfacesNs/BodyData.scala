@@ -56,7 +56,7 @@ trait BodyData extends js.Object {
     * [Api set: WordApi 1.3]
     */
   var styleBuiltIn: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any
   ] = js.undefined
   /**
     *
@@ -92,7 +92,7 @@ object BodyData {
     lists: js.Array[ListData] = null,
     paragraphs: js.Array[ParagraphData] = null,
     style: java.lang.String = null,
-    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 149 */ js.Any = null,
+    styleBuiltIn: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 150 */ js.Any = null,
     tables: js.Array[TableData] = null,
     text: java.lang.String = null,
     `type`: officeDashJsDashPreviewLib.WordNs.BodyType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MainDoc | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Section | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Header | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Footer | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TableCell = null

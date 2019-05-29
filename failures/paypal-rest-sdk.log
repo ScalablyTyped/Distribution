@@ -1,0 +1,46 @@
+[info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(paypal-rest-sdk) [id => paypal-rest-sdk, phase => typescript, file => ../types/paypal-rest-sdk/index.d.ts] 
+[debug] PhaseRunner.scala:84 Success [id => paypal-rest-sdk, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/paypal-rest-sdk/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/paypal-rest-sdk),TsIdentLibrarySimple(paypal-rest-sdk)),TsIdentModule(None,List(paypal-rest-sdk))) [id => paypal-rest-sdk, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(paypal-rest-sdk)) [id => paypal-rest-sdk, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(paypal-rest-sdk) [id => paypal-rest-sdk, phase => typescript] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Giftwrap) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Amount) / TsMemberProperty(details) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Items) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Transaction) / TsMemberProperty(item_list) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Allowedpaymentmethod) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Transaction) / TsMemberProperty(payment_options) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Brandname) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Payee) / TsMemberProperty(payee_display_metadata) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Paymentmethod) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Payment) / TsMemberProperty(payer) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Cancelurl) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclInterface(Payment) / TsMemberProperty(redirect_urls) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Cancelledby) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclNamespace(invoice) / TsDeclInterface(Invoice) / TsMemberProperty(metadata) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Address) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclNamespace(invoice) / TsDeclInterface(Invoice) / TsMemberProperty(shipping_info) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Other) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclNamespace(invoice) / TsDeclInterface(Invoice) / TsMemberProperty(payment_summary) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Other) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclNamespace(invoice) / TsDeclInterface(Invoice) / TsMemberProperty(refunded_amount) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Other) [id => paypal-rest-sdk, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(paypal-rest-sdk) / TsDeclNamespace(invoice) / TsDeclInterface(Invoice) / TsMemberProperty(paid_amount) / TsTypeObject())] 
+[debug] PhaseRunner.scala:84 Success [id => paypal-rest-sdk, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing paypal-rest-sdk [id => paypal-rest-sdk, phase => scala.js] 
+[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(SaleResponse)] 
+[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(CaptureResponse)] 
+[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(RefundResponse)] 
+[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(paymentNs) / Name(AuthorizationResponse)] 
+[info ] InferMemberOverrides.scala:83 added override fields List(Name(create_time)) [id => paypal-rest-sdk, phase => scala.js, this => Name(paypalDashRestDashSdkLib) / Name(paypalDashRestDashSdkMod) / Name(PaymentResponse)] 
+[debug] PhaseRunner.scala:84 Success [id => paypal-rest-sdk, phase => scala.js] 
+[error] PaymentResponse.scala:8 trait PaymentResponse inherits conflicting members:
+  value create_time in trait Payment of type scala.scalajs.js.UndefOr[String]  and
+  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
+(Note: this can be resolved by declaring an override in trait PaymentResponse.), trait PaymentResponse [id => paypal-rest-sdk, phase => build] 
+[error] paymentNs.scala:11 trait AuthorizationResponse inherits conflicting members:
+  value create_time in trait Resource of type scala.scalajs.js.UndefOr[String]  and
+  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
+(Note: this can be resolved by declaring an override in trait AuthorizationResponse.),   trait AuthorizationResponse [id => paypal-rest-sdk, phase => build] 
+[error] paymentNs.scala:18 trait CaptureResponse inherits conflicting members:
+  value create_time in trait Resource of type scala.scalajs.js.UndefOr[String]  and
+  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
+(Note: this can be resolved by declaring an override in trait CaptureResponse.),   trait CaptureResponse [id => paypal-rest-sdk, phase => build] 
+[error] paymentNs.scala:37 trait RefundResponse inherits conflicting members:
+  value create_time in trait Resource of type scala.scalajs.js.UndefOr[String]  and
+  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
+(Note: this can be resolved by declaring an override in trait RefundResponse.),   trait RefundResponse [id => paypal-rest-sdk, phase => build] 
+[error] paymentNs.scala:44 trait SaleResponse inherits conflicting members:
+  value create_time in trait Resource of type scala.scalajs.js.UndefOr[String]  and
+  value create_time in trait Response of type scala.scalajs.js.UndefOr[String]
+(Note: this can be resolved by declaring an override in trait SaleResponse.),   trait SaleResponse [id => paypal-rest-sdk, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [paypal-rest-sdk => Compilation failed] [id => paypal-rest-sdk, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [paypal-rest-sdk => Compilation failed] [id => paypal-rest-sdk, phase => publish] 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Shadow extends js.Object {
   var alignment: js.UndefOr[java.lang.String] = js.undefined
-  var alpha: js.UndefOr[stdLib.Number] = js.undefined
+  var alpha: js.UndefOr[scala.Double] = js.undefined
   var blurRadius: js.UndefOr[Dimension] = js.undefined
   var color: js.UndefOr[OpaqueColor] = js.undefined
   var propertyState: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +20,7 @@ object Shadow {
   @scala.inline
   def apply(
     alignment: java.lang.String = null,
-    alpha: stdLib.Number = null,
+    alpha: scala.Int | scala.Double = null,
     blurRadius: Dimension = null,
     color: OpaqueColor = null,
     propertyState: java.lang.String = null,
@@ -30,7 +30,7 @@ object Shadow {
   ): Shadow = {
     val __obj = js.Dynamic.literal()
     if (alignment != null) __obj.updateDynamic("alignment")(alignment)
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha)
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
     if (blurRadius != null) __obj.updateDynamic("blurRadius")(blurRadius)
     if (color != null) __obj.updateDynamic("color")(color)
     if (propertyState != null) __obj.updateDynamic("propertyState")(propertyState)

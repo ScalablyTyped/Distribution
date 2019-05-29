@@ -39,5 +39,7 @@ class QuestionExpressionModel protected () extends Question {
   var minimumFractionDigits: scala.Double = js.native
   var useGrouping: scala.Boolean = js.native
   /* protected */ def getValueAsStr(`val`: js.Any): java.lang.String = js.native
+  def locCalculation(): scala.Unit = js.native
+  def unlocCalculation(): scala.Unit = js.native
 }
 

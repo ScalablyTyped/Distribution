@@ -23,7 +23,7 @@ trait RestoreDBClusterFromS3Message extends js.Object {
     */
   var CharacterSetName: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates whether to copy all tags from the restored DB cluster to snapshots of the restored DB cluster. The default is not to copy them.
+    * True to copy all tags from the restored DB cluster to snapshots of the restored DB cluster, and otherwise false. The default is false.
     */
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -43,7 +43,7 @@ trait RestoreDBClusterFromS3Message extends js.Object {
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates whether the DB cluster has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. 
+    * Indicates if the DB cluster should have deletion protection enabled. The database can't be deleted when this value is set to true. The default is false. 
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait RestoreDBClusterFromS3Message extends js.Object {
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   /**
-    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled.
+    * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. Default: false 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait RestoreDBClusterFromS3Message extends js.Object {
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   /**
-    * The AWS KMS key identifier for an encrypted DB cluster. The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are creating a DB cluster with the same AWS account that owns the KMS encryption key used to encrypt the new DB cluster, then you can use the KMS key alias instead of the ARN for the KM encryption key. If the StorageEncrypted parameter is enabled, and you do not specify a value for the KmsKeyId parameter, then Amazon RDS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * The AWS KMS key identifier for an encrypted DB cluster. The KMS key identifier is the Amazon Resource Name (ARN) for the KMS encryption key. If you are creating a DB cluster with the same AWS account that owns the KMS encryption key used to encrypt the new DB cluster, then you can use the KMS key alias instead of the ARN for the KM encryption key. If the StorageEncrypted parameter is true, and you do not specify a value for the KmsKeyId parameter, then Amazon RDS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
@@ -111,7 +111,7 @@ trait RestoreDBClusterFromS3Message extends js.Object {
     */
   var SourceEngineVersion: String
   /**
-    * A value that indicates whether the restored DB cluster is encrypted.
+    * Specifies whether the restored DB cluster is encrypted.
     */
   var StorageEncrypted: js.UndefOr[BooleanOptional] = js.undefined
   var Tags: js.UndefOr[TagList] = js.undefined

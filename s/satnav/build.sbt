@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "satnav"
-version := "0.0-unknown-dt-20190322Z-346ff9"
+version := "0.0-unknown-dt-20190322Z-37385d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

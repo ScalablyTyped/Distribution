@@ -22,19 +22,19 @@ trait IonVirtualScrollAttributes
   /**
     * Section footers and the data used within its given template can be dynamically created by passing a function to `footerFn`. The logic within the footer function can decide if the footer template should be used, and what data to give to the footer template. The function must return `null` if a footer cell shouldn't be created.
     */
-  var footerFn: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderFn */ js.UndefOr[
+  var footerFn: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderFn */ js.Any
   ] = js.undefined
   /**
     * Section headers and the data used within its given template can be dynamically created by passing a function to `headerFn`. For example, a large list of contacts usually has dividers between each letter in the alphabet. App's can provide their own custom `headerFn` which is called with each record within the dataset. The logic within the header function can decide if the header template should be used, and what data to give to the header template. The function must return `null` if a header cell shouldn't be created.
     */
-  var headerFn: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderFn */ js.UndefOr[
+  var headerFn: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HeaderFn */ js.Any
   ] = js.undefined
   /**
     * An optional function that maps each item within their height. When this function is provides, heavy optimizations and fast path can be taked by `ion-virtual-scroll` leading to massive performance improvements.  This function allows to skip all DOM reads, which can be Doing so leads to massive performance
     */
-  var itemHeight: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ItemHeightFn */ js.UndefOr[
+  var itemHeight: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ItemHeightFn */ js.Any
   ] = js.undefined
   /**
@@ -44,7 +44,7 @@ trait IonVirtualScrollAttributes
   /**
     * NOTE: only Vanilla JS API.
     */
-  var nodeRender: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ItemRenderFn */ js.UndefOr[
+  var nodeRender: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ItemRenderFn */ js.Any
   ] = js.undefined
   /**

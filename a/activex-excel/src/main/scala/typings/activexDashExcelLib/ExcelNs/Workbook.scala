@@ -256,7 +256,7 @@ class Workbook protected () extends js.Object {
     Address: java.lang.String,
     SubAddress: js.UndefOr[java.lang.String],
     NewWindow: js.UndefOr[scala.Boolean],
-    AddHistory: js.UndefOr[js.UndefOr[scala.Nothing]],
+    AddHistory: js.UndefOr[scala.Nothing],
     ExtraInfo: js.UndefOr[activexDashOfficeLib.OfficeNs.ByteArray | java.lang.String],
     Method: js.UndefOr[activexDashOfficeLib.OfficeNs.MsoExtraInfoMethod],
     HeaderInfo: js.UndefOr[java.lang.String]
@@ -298,13 +298,13 @@ class Workbook protected () extends js.Object {
   def Modules(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
   def Modules(Index: java.lang.String): Sheet = js.native
   def Modules(Index: scala.Double): Sheet = js.native
-  def Names(Index: java.lang.String): Name = js.native
-  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
   def Names(
     Index: js.UndefOr[scala.Nothing],
     IndexLocal: js.UndefOr[scala.Nothing],
     RefersTo: java.lang.String
   ): Name = js.native
+  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
+  def Names(Index: java.lang.String): Name = js.native
   def Names(Index: scala.Double): Name = js.native
   def NewWindow(): Window = js.native
   def OpenLinks(Name: java.lang.String): scala.Unit = js.native
@@ -323,7 +323,7 @@ class Workbook protected () extends js.Object {
     SaveData: js.UndefOr[scala.Boolean],
     HasAutoFormat: js.UndefOr[scala.Boolean],
     AutoPage: js.UndefOr[PivotTableWizardAutoPage[TSourceType]],
-    Reserved: js.UndefOr[js.UndefOr[scala.Nothing]],
+    Reserved: js.UndefOr[scala.Nothing],
     BackgroundQuery: js.UndefOr[scala.Boolean],
     OptimizeCache: js.UndefOr[scala.Boolean],
     PageFieldOrder: js.UndefOr[XlOrder],
@@ -338,9 +338,9 @@ class Workbook protected () extends js.Object {
     Copies: js.UndefOr[scala.Double],
     Preview: js.UndefOr[scala.Boolean],
     ActivePrinter: js.UndefOr[java.lang.String],
-    PrintToFile: js.UndefOr[scala.Boolean | js.UndefOr[scala.Nothing]],
+    PrintToFile: js.UndefOr[scala.Boolean],
     Collate: js.UndefOr[scala.Boolean],
-    PrToFileName: js.UndefOr[PrintToFileName[scala.Boolean | js.UndefOr[scala.Nothing]]],
+    PrToFileName: js.UndefOr[PrintToFileName[js.UndefOr[scala.Boolean]]],
     IgnorePrintAreas: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
   def PrintPreview(): scala.Unit = js.native

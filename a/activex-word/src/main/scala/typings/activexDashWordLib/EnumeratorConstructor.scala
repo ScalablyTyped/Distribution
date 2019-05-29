@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait EnumeratorConstructor
   extends org.scalablytyped.runtime.Instantiable1[
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 112 */ js.Any, 
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 101 */ js.Any
+      stdLib.Enumerator[
+        /* import warning: LimitUnionLength.enterTypeRef Was union type with length 101 */ js.Any
+      ]
     ]
 

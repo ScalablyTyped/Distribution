@@ -18,7 +18,7 @@ trait Anon_AttachTo extends js.Object {
   var contentStyle: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var contentStyleFile: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var exclude: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var include: java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp]
+  var include: java.lang.String | (js.Array[stdLib.RegExp | java.lang.String]) | stdLib.RegExp
   var onAttach: js.UndefOr[js.Function1[/* worker */ jpmLib.FFAddonSDKNs.ContentWorker, _]] = js.undefined
   var onError: js.UndefOr[js.Function1[/* error */ stdLib.Error, _]] = js.undefined
 }
@@ -26,7 +26,7 @@ trait Anon_AttachTo extends js.Object {
 object Anon_AttachTo {
   @scala.inline
   def apply(
-    include: java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp],
+    include: java.lang.String | (js.Array[stdLib.RegExp | java.lang.String]) | stdLib.RegExp,
     attachTo: jpmLib.sdkPageDashModMod.attachmentMode | js.Array[jpmLib.sdkPageDashModMod.attachmentMode] = null,
     contentScript: java.lang.String | js.Array[java.lang.String] = null,
     contentScriptFile: java.lang.String | js.Array[java.lang.String] = null,

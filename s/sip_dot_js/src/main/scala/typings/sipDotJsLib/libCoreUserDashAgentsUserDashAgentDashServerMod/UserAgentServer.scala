@@ -14,6 +14,8 @@ class UserAgentServer protected ()
   var _transaction: js.Any = js.native
   val acceptable: scala.Boolean = js.native
   var core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore = js.native
+  @JSName("delegate")
+  var delegate_UserAgentServer: js.UndefOr[sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequestDelegate] = js.native
   var init: js.Any = js.native
   var logger: sipDotJsLib.libLoggerFactoryMod.Logger = js.native
   val loggerFactory: sipDotJsLib.libLoggerFactoryMod.LoggerFactory = js.native

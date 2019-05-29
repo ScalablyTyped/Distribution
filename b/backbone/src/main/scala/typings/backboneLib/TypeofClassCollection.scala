@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 trait TypeofClassCollection
   extends org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model]]
      with org.scalablytyped.runtime.Instantiable2[
-      (/* models */ js.Array[
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any
-      ]) | (/* models */ js.Array[js.Object]), 
+      /* models */ js.Array[
+        (/* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any) | js.Object
+      ], 
       /* options */ js.Any, 
       backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model]
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* models */ js.Array[
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any
-      ]) | (/* models */ js.Array[js.Object]), 
+      /* models */ js.Array[
+        (/* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any) | js.Object
+      ], 
       backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model]
     ] {
   /**

@@ -165,6 +165,11 @@ object antdLibComponents {
   def ConfigProviderProps: antdLib.esConfigDashProviderMod.ConfigProviderProps.type = antdLib.esConfigDashProviderMod.ConfigProviderProps
   type ConfigProviderProps = antdLib.esConfigDashProviderMod.ConfigProviderProps
   @scala.inline
+  def Content: reactLib.reactMod.ComponentType[antdLib.esLayoutLayoutMod.BasicProps] = antdLib.esLayoutMod.default.Content.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esLayoutLayoutMod.BasicProps]]
+  @scala.inline
+  def ContentProps: antdLib.esLayoutLayoutMod.BasicProps.type = antdLib.esLayoutLayoutMod.BasicProps
+  type ContentProps = antdLib.esLayoutLayoutMod.BasicProps
+  @scala.inline
   def Countdown: reactLib.reactMod.ComponentType[antdLib.esStatisticCountdownMod.CountdownProps] = js.constructorOf[antdLib.esStatisticCountdownMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esStatisticCountdownMod.CountdownProps]]
   @scala.inline
   def CountdownProps: antdLib.esStatisticCountdownMod.CountdownProps.type = antdLib.esStatisticCountdownMod.CountdownProps
@@ -196,6 +201,8 @@ object antdLibComponents {
   type DividerProps = antdLib.esDividerMod.DividerProps
   @scala.inline
   def Dragger: reactLib.reactMod.ComponentType[antdLib.esUploadDraggerMod.DraggerProps] = js.constructorOf[antdLib.esUploadDraggerMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esUploadDraggerMod.DraggerProps]]
+  @scala.inline
+  def DraggerProps: antdLib.esUploadDraggerMod.DraggerProps.type = antdLib.esUploadDraggerMod.DraggerProps
   type DraggerProps = antdLib.esUploadDraggerMod.DraggerProps
   @scala.inline
   def Drawer: reactLib.reactMod.ComponentType[antdLib.esDrawerMod.DrawerProps] = antdLib.esDrawerMod.^.default.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esDrawerMod.DrawerProps]]
@@ -212,6 +219,11 @@ object antdLibComponents {
   @scala.inline
   def DropdownDashButtonProps: antdLib.esDropdownDropdownDashButtonMod.DropdownButtonProps.type = antdLib.esDropdownDropdownDashButtonMod.DropdownButtonProps
   type DropdownDashButtonProps = antdLib.esDropdownDropdownDashButtonMod.DropdownButtonProps
+  @scala.inline
+  def Footer: reactLib.reactMod.ComponentType[antdLib.esLayoutLayoutMod.BasicProps] = antdLib.esLayoutMod.default.Footer.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esLayoutLayoutMod.BasicProps]]
+  @scala.inline
+  def FooterProps: antdLib.esLayoutLayoutMod.BasicProps.type = antdLib.esLayoutLayoutMod.BasicProps
+  type FooterProps = antdLib.esLayoutLayoutMod.BasicProps
   @scala.inline
   def Form: reactLib.reactMod.ComponentType[antdLib.esFormFormMod.FormProps] = js.constructorOf[antdLib.esFormMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esFormFormMod.FormProps]]
   @scala.inline
@@ -397,8 +409,10 @@ object antdLibComponents {
   def SelectProps: antdLib.esSelectMod.SelectProps.type = antdLib.esSelectMod.SelectProps
   type SelectProps[T] = antdLib.esSelectMod.SelectProps[T]
   @scala.inline
-  def Sider: reactLib.reactMod.ComponentType[js.Object] = js.constructorOf[antdLib.esLayoutSiderMod.default].asInstanceOf[reactLib.reactMod.ComponentType[js.Object]]
-  type SiderProps = js.Object
+  def Sider: reactLib.reactMod.ComponentType[antdLib.esLayoutSiderMod.SiderProps] = antdLib.esLayoutMod.default.Sider.asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esLayoutSiderMod.SiderProps]]
+  @scala.inline
+  def SiderProps: antdLib.esLayoutSiderMod.SiderProps.type = antdLib.esLayoutSiderMod.SiderProps
+  type SiderProps = antdLib.esLayoutSiderMod.SiderProps
   @scala.inline
   def Skeleton: reactLib.reactMod.ComponentType[antdLib.esSkeletonMod.SkeletonProps] = js.constructorOf[antdLib.esSkeletonMod.default].asInstanceOf[reactLib.reactMod.ComponentType[antdLib.esSkeletonMod.SkeletonProps]]
   @scala.inline

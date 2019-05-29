@@ -23,14 +23,12 @@ import scala.scalajs.js.annotation._
   /** [Method] This method adds a filter
   		* @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
   		*/
-  var addFilter: js.UndefOr[js.Function1[/* filter */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var addFilter: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] This method adds all the filters in a passed array
   		* @param filters Object
   		* @returns Object
   		*/
-  var addFilters: js.UndefOr[
-    js.Function1[/* filters */ js.UndefOr[js.Any | senchaUnderscoreTouchLib.ExtNs.Array], _]
-  ] = js.undefined
+  var addFilters: js.UndefOr[js.Function1[js.UndefOr[js.Any | senchaUnderscoreTouchLib.ExtNs.Array], _]] = js.undefined
   /** [Property] (Array) */
   var all: js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] = js.undefined
   /** [Method] Removes all items from the collection  */
@@ -210,9 +208,7 @@ import scala.scalajs.js.annotation._
   		* @param filter Ext.util.Sorter/Function/Object Can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
   		* @returns Object
   		*/
-  var insertFilter: js.UndefOr[
-    js.Function2[/* index */ js.UndefOr[scala.Double], /* filter */ js.UndefOr[js.Any], _]
-  ] = js.undefined
+  var insertFilter: js.UndefOr[js.Function2[js.UndefOr[scala.Double], js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] This method inserts all the filters in the passed array at the given index
   		* @param index Number The index at which to insert the filters.
   		* @param filters Array Each filter can be an instance of Ext.util.Filter, an object representing an Ext.util.Filter configuration, or a filter function.
@@ -220,8 +216,8 @@ import scala.scalajs.js.annotation._
   		*/
   var insertFilters: js.UndefOr[
     js.Function2[
-      /* index */ js.UndefOr[scala.Double], 
-      /* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
+      js.UndefOr[scala.Double], 
+      js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
       senchaUnderscoreTouchLib.ExtNs.Array
     ]
   ] = js.undefined
@@ -269,10 +265,7 @@ import scala.scalajs.js.annotation._
   		* @returns Ext.util.Collection this
   		*/
   var removeFilters: js.UndefOr[
-    js.Function1[
-      /* filters */ js.UndefOr[js.Any | senchaUnderscoreTouchLib.ExtNs.Array], 
-      this.type | scala.Unit
-    ]
+    js.Function1[js.UndefOr[js.Any | senchaUnderscoreTouchLib.ExtNs.Array], this.type | scala.Unit]
   ] = js.undefined
   /** [Method] This method removes all the sorters in a passed array
   		* @param sorters Object
@@ -299,13 +292,11 @@ import scala.scalajs.js.annotation._
   /** [Method] Sets the value of filterRoot
   		* @param filterRoot String The new value.
   		*/
-  var setFilterRoot: js.UndefOr[js.Function1[/* filterRoot */ js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
+  var setFilterRoot: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
   /** [Method] Sets the value of filters
   		* @param filters Array The new value.
   		*/
-  var setFilters: js.UndefOr[
-    js.Function1[/* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit]
-  ] = js.undefined
+  var setFilters: js.UndefOr[js.Function1[js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit]] = js.undefined
   /** [Method] This method will sort an array based on the currently configured sorters
   		* @param sorters Object
   		* @param defaultDirection Object

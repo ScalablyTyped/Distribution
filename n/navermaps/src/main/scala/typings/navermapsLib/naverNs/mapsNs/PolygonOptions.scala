@@ -10,7 +10,7 @@ trait PolygonOptions extends js.Object {
   var fillColor: js.UndefOr[java.lang.String] = js.undefined
   var fillOpacity: js.UndefOr[scala.Double] = js.undefined
   var map: js.UndefOr[Map] = js.undefined
-  var paths: js.Array[ArrayOfCoords] | js.Array[KVOArrayOfCoords] | js.Array[ArrayOfCoordsLiteral]
+  var paths: js.Array[ArrayOfCoords | ArrayOfCoordsLiteral | KVOArrayOfCoords]
   var strokeColor: js.UndefOr[java.lang.String] = js.undefined
   var strokeLineCap: js.UndefOr[strokeLineCapType] = js.undefined
   var strokeLineJoin: js.UndefOr[strokeLineJoinType] = js.undefined
@@ -24,7 +24,7 @@ trait PolygonOptions extends js.Object {
 object PolygonOptions {
   @scala.inline
   def apply(
-    paths: js.Array[ArrayOfCoords] | js.Array[KVOArrayOfCoords] | js.Array[ArrayOfCoordsLiteral],
+    paths: js.Array[ArrayOfCoords | ArrayOfCoordsLiteral | KVOArrayOfCoords],
     clickable: js.UndefOr[scala.Boolean] = js.undefined,
     fillColor: java.lang.String = null,
     fillOpacity: scala.Int | scala.Double = null,
@@ -38,7 +38,7 @@ object PolygonOptions {
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     zIndex: scala.Int | scala.Double = null
   ): PolygonOptions = {
-    val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(paths = paths)
     if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
     if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
     if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])

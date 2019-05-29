@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait CompoundStateNodeConfig[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */]
   extends StateNodeConfig[TContext, TStateSchema, TEvent]
-     with SimpleOrCompoundStateNodeConfig[TContext, TStateSchema, TEvent]
+     with SimpleOrCompoundStateNodeConfig[TContext, TStateSchema, TEvent] {
+  @JSName("parallel")
+  var parallel_CompoundStateNodeConfig: js.UndefOr[scala.Boolean] = js.undefined
+  @JSName("states")
+  var states_CompoundStateNodeConfig: js.UndefOr[StatesConfig[TContext, TStateSchema, TEvent]] = js.undefined
+}
 
 object CompoundStateNodeConfig {
   @scala.inline

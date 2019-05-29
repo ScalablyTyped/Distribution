@@ -35,14 +35,14 @@ trait ICircleOptions extends js.Object {
   var openHintOnHover: js.UndefOr[scala.Boolean] = js.undefined
   var outline: js.UndefOr[scala.Boolean] = js.undefined
   var pane: js.UndefOr[java.lang.String] = js.undefined
-  var strokeColor: js.UndefOr[
-    js.Array[js.Array[java.lang.String]] | js.Array[java.lang.String] | java.lang.String
-  ] = js.undefined
-  var strokeOpacity: js.UndefOr[js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double] = js.undefined
+  var strokeColor: js.UndefOr[(js.Array[js.Array[java.lang.String] | java.lang.String]) | java.lang.String] = js.undefined
+  var strokeOpacity: js.UndefOr[(js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double] = js.undefined
   var strokeStyle: js.UndefOr[
-    js.Array[js.Array[js.Array[java.lang.String]]] | js.Array[js.Array[js.Object]] | js.Array[java.lang.String] | js.Array[js.Object] | java.lang.String | js.Object
+    (js.Array[
+      (js.Array[js.Array[java.lang.String] | js.Object]) | js.Object | java.lang.String
+    ]) | java.lang.String | js.Object
   ] = js.undefined
-  var strokeWidth: js.UndefOr[js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double] = js.undefined
+  var strokeWidth: js.UndefOr[(js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double] = js.undefined
   var syncOverlayInit: js.UndefOr[scala.Boolean] = js.undefined
   var useMapMarginInDragging: js.UndefOr[scala.Boolean] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
@@ -80,10 +80,12 @@ object ICircleOptions {
     openHintOnHover: js.UndefOr[scala.Boolean] = js.undefined,
     outline: js.UndefOr[scala.Boolean] = js.undefined,
     pane: java.lang.String = null,
-    strokeColor: js.Array[js.Array[java.lang.String]] | js.Array[java.lang.String] | java.lang.String = null,
-    strokeOpacity: js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double = null,
-    strokeStyle: js.Array[js.Array[js.Array[java.lang.String]]] | js.Array[js.Array[js.Object]] | js.Array[java.lang.String] | js.Array[js.Object] | java.lang.String | js.Object = null,
-    strokeWidth: js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double = null,
+    strokeColor: (js.Array[js.Array[java.lang.String] | java.lang.String]) | java.lang.String = null,
+    strokeOpacity: (js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double = null,
+    strokeStyle: (js.Array[
+      (js.Array[js.Array[java.lang.String] | js.Object]) | js.Object | java.lang.String
+    ]) | java.lang.String | js.Object = null,
+    strokeWidth: (js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double = null,
     syncOverlayInit: js.UndefOr[scala.Boolean] = js.undefined,
     useMapMarginInDragging: js.UndefOr[scala.Boolean] = js.undefined,
     visible: js.UndefOr[scala.Boolean] = js.undefined,

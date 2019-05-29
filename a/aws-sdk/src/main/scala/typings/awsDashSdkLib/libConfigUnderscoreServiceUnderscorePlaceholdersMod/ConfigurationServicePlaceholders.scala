@@ -84,6 +84,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var globalaccelerator: js.UndefOr[awsDashSdkLib.clientsGlobalacceleratorMod.ClientConfiguration] = js.native
   var glue: js.UndefOr[awsDashSdkLib.clientsGlueMod.ClientConfiguration] = js.native
   var greengrass: js.UndefOr[awsDashSdkLib.clientsGreengrassMod.ClientConfiguration] = js.native
+  var groundstation: js.UndefOr[awsDashSdkLib.clientsGroundstationMod.ClientConfiguration] = js.native
   var guardduty: js.UndefOr[awsDashSdkLib.clientsGuarddutyMod.ClientConfiguration] = js.native
   var health: js.UndefOr[awsDashSdkLib.clientsHealthMod.ClientConfiguration] = js.native
   var iam: js.UndefOr[awsDashSdkLib.clientsIamMod.ClientConfiguration] = js.native

@@ -9,7 +9,7 @@ trait CreateConfigurationSetRequest extends js.Object {
   /**
     * The name of the configuration set.
     */
-  var ConfigurationSetName: js.UndefOr[ConfigurationSetName] = js.undefined
+  var ConfigurationSetName: awsDashSdkLib.clientsPinpointemailMod.ConfigurationSetName
   /**
     * An object that defines the dedicated IP pool that is used to send emails that you send using the configuration set.
     */
@@ -23,7 +23,7 @@ trait CreateConfigurationSetRequest extends js.Object {
     */
   var SendingOptions: js.UndefOr[SendingOptions] = js.undefined
   /**
-    * An object that defines the tags (keys and values) that you want to associate with the configuration set.
+    * An array of objects that define the tags (keys and values) that you want to associate with the configuration set.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
@@ -35,15 +35,14 @@ trait CreateConfigurationSetRequest extends js.Object {
 object CreateConfigurationSetRequest {
   @scala.inline
   def apply(
-    ConfigurationSetName: ConfigurationSetName = null,
+    ConfigurationSetName: ConfigurationSetName,
     DeliveryOptions: DeliveryOptions = null,
     ReputationOptions: ReputationOptions = null,
     SendingOptions: SendingOptions = null,
     Tags: TagList = null,
     TrackingOptions: TrackingOptions = null
   ): CreateConfigurationSetRequest = {
-    val __obj = js.Dynamic.literal()
-    if (ConfigurationSetName != null) __obj.updateDynamic("ConfigurationSetName")(ConfigurationSetName)
+    val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName)
     if (DeliveryOptions != null) __obj.updateDynamic("DeliveryOptions")(DeliveryOptions)
     if (ReputationOptions != null) __obj.updateDynamic("ReputationOptions")(ReputationOptions)
     if (SendingOptions != null) __obj.updateDynamic("SendingOptions")(SendingOptions)

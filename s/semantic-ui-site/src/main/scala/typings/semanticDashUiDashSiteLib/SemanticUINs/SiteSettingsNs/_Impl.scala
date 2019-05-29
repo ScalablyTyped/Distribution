@@ -52,7 +52,7 @@ object _Impl {
     siteNamespace: java.lang.String,
     verbose: scala.Boolean
   ): _Impl = {
-    val __obj = js.Dynamic.literal(debug = debug, modules = modules, name = name, namespace = namespace, namespaceStub = namespaceStub.asInstanceOf[js.Any], performance = performance, silent = silent, siteNamespace = siteNamespace, verbose = verbose)
+    val __obj = js.Dynamic.literal(debug = debug, modules = modules, name = name, namespace = namespace, namespaceStub = namespaceStub, performance = performance, silent = silent, siteNamespace = siteNamespace, verbose = verbose)
   
     __obj.asInstanceOf[_Impl]
   }

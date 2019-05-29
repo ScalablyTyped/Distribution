@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DateTimeItem extends js.Object {
-  def createResponse(response: stdLib.Date): ItemResponse
+  def createResponse(response: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): ItemResponse
   def duplicate(): DateTimeItem
   def getGeneralFeedback(): QuizFeedback
   def getHelpText(): java.lang.String
@@ -28,7 +28,7 @@ trait DateTimeItem extends js.Object {
 object DateTimeItem {
   @scala.inline
   def apply(
-    createResponse: stdLib.Date => ItemResponse,
+    createResponse: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date => ItemResponse,
     duplicate: () => DateTimeItem,
     getGeneralFeedback: () => QuizFeedback,
     getHelpText: () => java.lang.String,

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object velocityNs {
   type Easing = java.lang.String | js.Array[scala.Double]
-  type EffectCall = js.Array[Properties] | (js.Tuple2[Properties, scala.Double]) | (js.Tuple2[Properties, EffectCallOptions]) | (js.Tuple3[Properties, scala.Double, EffectCallOptions])
+  type EffectCall = js.Array[Properties] | (js.Tuple2[Properties, scala.Double | EffectCallOptions]) | (js.Tuple3[Properties, scala.Double, EffectCallOptions])
   type ElementCallback = js.Function1[/* elements */ stdLib.NodeListOf[stdLib.HTMLElement], scala.Unit]
   type ProgressCallback = js.Function5[
     /* elements */ stdLib.NodeListOf[stdLib.HTMLElement], 

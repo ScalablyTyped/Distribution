@@ -21,7 +21,7 @@ trait Conversion extends js.Object {
   var quantity: js.UndefOr[java.lang.String] = js.undefined
   var timestampMicros: js.UndefOr[java.lang.String] = js.undefined
   var treatmentForUnderage: js.UndefOr[scala.Boolean] = js.undefined
-  var value: js.UndefOr[stdLib.Number] = js.undefined
+  var value: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Conversion {
@@ -42,7 +42,7 @@ object Conversion {
     quantity: java.lang.String = null,
     timestampMicros: java.lang.String = null,
     treatmentForUnderage: js.UndefOr[scala.Boolean] = js.undefined,
-    value: stdLib.Number = null
+    value: scala.Int | scala.Double = null
   ): Conversion = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(childDirectedTreatment)) __obj.updateDynamic("childDirectedTreatment")(childDirectedTreatment)
@@ -60,7 +60,7 @@ object Conversion {
     if (quantity != null) __obj.updateDynamic("quantity")(quantity)
     if (timestampMicros != null) __obj.updateDynamic("timestampMicros")(timestampMicros)
     if (!js.isUndefined(treatmentForUnderage)) __obj.updateDynamic("treatmentForUnderage")(treatmentForUnderage)
-    if (value != null) __obj.updateDynamic("value")(value)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Conversion]
   }
 }

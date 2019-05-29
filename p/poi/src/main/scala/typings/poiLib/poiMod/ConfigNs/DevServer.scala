@@ -32,9 +32,7 @@ trait DevServer extends js.Object {
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var port: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var proxy: js.UndefOr[
-    java.lang.String | (js.UndefOr[
-      webpackDashDevDashServerLib.webpackDashDevDashServerMod.ProxyConfigMap | webpackDashDevDashServerLib.webpackDashDevDashServerMod.ProxyConfigArray
-    ])
+    java.lang.String | webpackDashDevDashServerLib.webpackDashDevDashServerMod.ProxyConfigMap | webpackDashDevDashServerLib.webpackDashDevDashServerMod.ProxyConfigArray
   ] = js.undefined
 }
 
@@ -52,9 +50,7 @@ object DevServer {
     https: scala.Boolean | nodeLib.httpsMod.ServerOptions = null,
     open: js.UndefOr[scala.Boolean] = js.undefined,
     port: java.lang.String | scala.Double = null,
-    proxy: java.lang.String | (js.UndefOr[
-      webpackDashDevDashServerLib.webpackDashDevDashServerMod.ProxyConfigMap | webpackDashDevDashServerLib.webpackDashDevDashServerMod.ProxyConfigArray
-    ]) = null
+    proxy: java.lang.String | webpackDashDevDashServerLib.webpackDashDevDashServerMod.ProxyConfigMap | webpackDashDevDashServerLib.webpackDashDevDashServerMod.ProxyConfigArray = null
   ): DevServer = {
     val __obj = js.Dynamic.literal()
     if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction2(after))

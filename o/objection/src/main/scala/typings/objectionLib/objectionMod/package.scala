@@ -128,7 +128,7 @@ package object objectionMod {
   // https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/knex/index.d.ts,
   // to change the signatures to return Objection's typed QueryBuilder wrapper:
   //
-  type Value = java.lang.String | scala.Double | scala.Boolean | stdLib.Date | js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[scala.Boolean] | js.Array[stdLib.Date] | scala.Null | nodeLib.Buffer | Raw | Literal
+  type Value = java.lang.String | scala.Double | scala.Boolean | stdLib.Date | (js.Array[scala.Boolean | stdLib.Date | scala.Double | java.lang.String]) | scala.Null | nodeLib.Buffer | Raw | Literal
   type WhereBetween[QM /* <: Model */, RM, RV] = js.Function2[
     /* column */ ColumnRef, 
     /* range */ js.Tuple2[Value, Value], 

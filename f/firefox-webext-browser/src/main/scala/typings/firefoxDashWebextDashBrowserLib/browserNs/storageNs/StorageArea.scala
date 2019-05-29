@@ -27,10 +27,10 @@ trait StorageArea extends js.Object {
     *     description of the object). An empty list or object will return an empty result object. Pass in `null`
     *     to get the entire contents of storage.
     */
-  def get(): js.Promise[_] = js.native
-  def get(keys: java.lang.String): js.Promise[_] = js.native
-  def get(keys: js.Array[java.lang.String]): js.Promise[_] = js.native
-  def get(keys: js.Object): js.Promise[_] = js.native
+  def get(): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def get(keys: java.lang.String): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def get(keys: js.Array[java.lang.String]): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  def get(keys: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * Removes one or more items from storage.
     * @param keys A single key or a list of keys for items to remove.
@@ -46,6 +46,6 @@ trait StorageArea extends js.Object {
     *     `"function"` will typically serialize to `{}`, with the exception of `Array` (serializes as expected),
     *     `Date`, and `Regex` (serialize using their `String` representation).
     */
-  def set(items: js.Any): js.Promise[scala.Unit] = js.native
+  def set(items: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Promise[scala.Unit] = js.native
 }
 

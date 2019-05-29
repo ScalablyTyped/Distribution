@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReactImageFallbackProps extends js.Object {
-  var fallbackImage: java.lang.String | reactLib.reactMod.ReactElement[_] | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactElement[_]]
+  var fallbackImage: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Array[reactLib.reactMod.ReactElement[_] | java.lang.String])
   var initialImage: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[_]] = js.undefined
   var initialTimeout: js.UndefOr[scala.Double] = js.undefined
   var onError: js.UndefOr[
@@ -27,7 +27,7 @@ trait ReactImageFallbackProps extends js.Object {
 object ReactImageFallbackProps {
   @scala.inline
   def apply(
-    fallbackImage: java.lang.String | reactLib.reactMod.ReactElement[_] | js.Array[java.lang.String] | js.Array[reactLib.reactMod.ReactElement[_]],
+    fallbackImage: java.lang.String | reactLib.reactMod.ReactElement[_] | (js.Array[reactLib.reactMod.ReactElement[_] | java.lang.String]),
     src: java.lang.String,
     initialImage: java.lang.String | reactLib.reactMod.ReactElement[_] = null,
     initialTimeout: scala.Int | scala.Double = null,

@@ -18,14 +18,14 @@ object ^ extends js.Object {
   def concatStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](styleSet: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet] = js.native
   def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: js.UndefOr[scala.Nothing], styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
     styleSet1: js.UndefOr[scala.Nothing],
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: scala.Null, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
@@ -455,14 +455,14 @@ object ^ extends js.Object {
   def mergeStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](styleSet: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: js.UndefOr[scala.Nothing], styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
     styleSet1: js.UndefOr[scala.Nothing],
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: scala.Null, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native

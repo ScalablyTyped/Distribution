@@ -21,14 +21,14 @@ trait URLParse extends js.Object {
   val slashes: scala.Boolean = js.native
   val username: java.lang.String = js.native
   def set(part: URLPart): URLParse = js.native
+  def set(part: URLPart, value: js.UndefOr[scala.Nothing], fn: scala.Boolean): URLParse = js.native
+  def set(part: URLPart, value: js.UndefOr[scala.Nothing], fn: QueryParser): URLParse = js.native
   def set(part: URLPart, value: java.lang.String): URLParse = js.native
   def set(part: URLPart, value: java.lang.String, fn: scala.Boolean): URLParse = js.native
   def set(part: URLPart, value: java.lang.String, fn: QueryParser): URLParse = js.native
   def set(part: URLPart, value: js.Object): URLParse = js.native
   def set(part: URLPart, value: js.Object, fn: scala.Boolean): URLParse = js.native
   def set(part: URLPart, value: js.Object, fn: QueryParser): URLParse = js.native
-  def set(part: URLPart, value: js.UndefOr[scala.Nothing], fn: scala.Boolean): URLParse = js.native
-  def set(part: URLPart, value: js.UndefOr[scala.Nothing], fn: QueryParser): URLParse = js.native
   def set(part: URLPart, value: scala.Double): URLParse = js.native
   def set(part: URLPart, value: scala.Double, fn: scala.Boolean): URLParse = js.native
   def set(part: URLPart, value: scala.Double, fn: QueryParser): URLParse = js.native

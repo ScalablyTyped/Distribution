@@ -24,7 +24,7 @@ package object PouchDBNs {
     */
   type Reducer[Content /* <: js.Object */, Reduction] = js.Function3[
     /* keys */ js.Any | scala.Null, 
-    /* values */ js.Array[Content] | js.Array[Reduction], 
+    /* values */ js.Array[Content | Reduction], 
     /* rereduce */ scala.Boolean, 
     js.Array[Reduction] | Reduction
   ]

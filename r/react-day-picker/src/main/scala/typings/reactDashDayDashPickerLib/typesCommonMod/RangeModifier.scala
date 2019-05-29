@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RangeModifier extends js.Object {
+trait RangeModifier extends _Modifier {
   var from: stdLib.Date
   var to: stdLib.Date
 }

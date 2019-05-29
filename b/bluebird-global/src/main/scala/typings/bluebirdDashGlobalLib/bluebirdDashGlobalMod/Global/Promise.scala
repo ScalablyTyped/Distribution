@@ -129,16 +129,16 @@ trait Promise[T] extends js.Object {
     */
   def `catch`(
     predicate: js.Function1[/* error */ js.Any, scala.Boolean],
-    onReject: js.Function1[/* error */ js.Any, T | js.Thenable[T] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ js.Any, T | (js.Thenable[T | scala.Unit]) | scala.Unit]
   ): bluebirdLib.bluebirdMod.^[T] = js.native
   def `catch`(
     predicate: js.Object,
-    onReject: js.Function1[/* error */ js.Any, T | js.Thenable[T] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ js.Any, T | (js.Thenable[T | scala.Unit]) | scala.Unit]
   ): bluebirdLib.bluebirdMod.^[T] = js.native
   def `catch`[TResult](): Promise[T | TResult] = js.native
   def `catch`[E /* <: stdLib.Error */](
     ErrorClass: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, E],
-    onReject: js.Function1[/* error */ E, T | js.Thenable[T] | scala.Unit | js.Thenable[scala.Unit]]
+    onReject: js.Function1[/* error */ E, T | (js.Thenable[T | scala.Unit]) | scala.Unit]
   ): bluebirdLib.bluebirdMod.^[T] = js.native
   def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): Promise[T | TResult] = js.native
   def catchReturn[U](
@@ -1104,13 +1104,13 @@ trait Promise[T] extends js.Object {
     * @todo See the comment near the top of the file about code marked with #std-lib-copy&paste-to-remove
     */
   def `then`[TResult1, TResult2](): Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-  ): Promise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    onfulfilled: js.UndefOr[scala.Nothing],
     onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
   ): Promise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](

@@ -26,9 +26,9 @@ object default extends js.Object {
     /* type */ java.lang.String, 
     /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* value */ js.Any, 
     /* text */ java.lang.String, 
-    /* pos */ js.UndefOr[/* pos */ scala.Double], 
-    /* line */ js.UndefOr[/* line */ scala.Double], 
-    /* column */ js.UndefOr[/* column */ scala.Double], 
+    js.UndefOr[/* pos */ scala.Double], 
+    js.UndefOr[/* line */ scala.Double], 
+    js.UndefOr[/* column */ scala.Double], 
     tokenizrLib.tokenizrMod.Token[js.Object]
   ] = js.native
 }

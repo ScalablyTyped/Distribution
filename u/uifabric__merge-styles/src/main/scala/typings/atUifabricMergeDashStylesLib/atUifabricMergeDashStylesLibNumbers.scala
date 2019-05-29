@@ -55,7 +55,8 @@ object atUifabricMergeDashStylesLibNumbers {
     extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontWeight
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends atUifabricMergeDashStylesLib.libIStyleMod._IStyleBase
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

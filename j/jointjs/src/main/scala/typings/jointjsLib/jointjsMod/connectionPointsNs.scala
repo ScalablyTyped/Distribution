@@ -37,7 +37,7 @@ object connectionPointsNs extends js.Object {
   }
   
   trait GenericConnectionPointJSON[K /* <: ConnectionPointType */] extends js.Object {
-    var args: /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.connectionPoints.ConnectionPointArgumentsMap[K] */ js.UndefOr[
+    var args: js.UndefOr[
         /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.connectionPoints.ConnectionPointArgumentsMap[K] */ js.Any
       ] = js.undefined
     var name: K

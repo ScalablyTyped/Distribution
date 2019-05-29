@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HelloJSUtils extends js.Object {
   var Event: HelloJSEvent = js.native
-  def append(node: java.lang.String, attr: js.Object, target: java.lang.String): stdLib.HTMLElement = js.native
-  def append(node: java.lang.String, attr: js.Object, target: stdLib.HTMLElement): stdLib.HTMLElement = js.native
   def append(node: java.lang.String, attr: js.UndefOr[scala.Nothing], target: java.lang.String): stdLib.HTMLElement = js.native
   def append(node: java.lang.String, attr: js.UndefOr[scala.Nothing], target: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+  def append(node: java.lang.String, attr: js.Object, target: java.lang.String): stdLib.HTMLElement = js.native
+  def append(node: java.lang.String, attr: js.Object, target: stdLib.HTMLElement): stdLib.HTMLElement = js.native
   def append(node: java.lang.String, attr: scala.Null, target: java.lang.String): stdLib.HTMLElement = js.native
   def append(node: java.lang.String, attr: scala.Null, target: stdLib.HTMLElement): stdLib.HTMLElement = js.native
-  def append(node: stdLib.HTMLElement, attr: js.Object, target: java.lang.String): stdLib.HTMLElement = js.native
-  def append(node: stdLib.HTMLElement, attr: js.Object, target: stdLib.HTMLElement): stdLib.HTMLElement = js.native
   def append(node: stdLib.HTMLElement, attr: js.UndefOr[scala.Nothing], target: java.lang.String): stdLib.HTMLElement = js.native
   def append(node: stdLib.HTMLElement, attr: js.UndefOr[scala.Nothing], target: stdLib.HTMLElement): stdLib.HTMLElement = js.native
+  def append(node: stdLib.HTMLElement, attr: js.Object, target: java.lang.String): stdLib.HTMLElement = js.native
+  def append(node: stdLib.HTMLElement, attr: js.Object, target: stdLib.HTMLElement): stdLib.HTMLElement = js.native
   def append(node: stdLib.HTMLElement, attr: scala.Null, target: java.lang.String): stdLib.HTMLElement = js.native
   def append(node: stdLib.HTMLElement, attr: scala.Null, target: stdLib.HTMLElement): stdLib.HTMLElement = js.native
   def args(o: js.Object, args: js.Object): js.Any | hellojsLib.hellojsLibNumbers.`false` = js.native

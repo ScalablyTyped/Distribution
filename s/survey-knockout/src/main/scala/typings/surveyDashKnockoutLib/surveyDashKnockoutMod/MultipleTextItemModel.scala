@@ -29,6 +29,7 @@ class MultipleTextItemModel ()
     */
   var isRequired: scala.Boolean = js.native
   val locPlaceHolder: LocalizableString = js.native
+  val locRequiredErrorText: LocalizableString = js.native
   val locTitle: LocalizableString = js.native
   /**
     * The maximim text length. If it is -1, defaul value, then the survey maxTextLength property will be used.
@@ -44,6 +45,10 @@ class MultipleTextItemModel ()
     * The input place holder.
     */
   var placeHolder: java.lang.String = js.native
+  /**
+    * The custom text that will be shown on required error. Use this property, if you do not want to show the default text.
+    */
+  var requiredErrorText: java.lang.String = js.native
   /**
     * Item title. If it is empty, the item name is rendered as title. This property supports markdown.
     * @see name

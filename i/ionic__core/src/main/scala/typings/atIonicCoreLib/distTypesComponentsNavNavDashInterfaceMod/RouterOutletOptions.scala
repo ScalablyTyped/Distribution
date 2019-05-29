@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RouterOutletOptions extends js.Object {
   var animated: js.UndefOr[scala.Boolean] = js.undefined
-  var animationBuilder: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var animationBuilder: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.undefined
   var deepWait: js.UndefOr[scala.Boolean] = js.undefined
@@ -15,7 +15,7 @@ trait RouterOutletOptions extends js.Object {
   var duration: js.UndefOr[scala.Double] = js.undefined
   var easing: js.UndefOr[java.lang.String] = js.undefined
   var keyboardClose: js.UndefOr[scala.Boolean] = js.undefined
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
+  var mode: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
   ] = js.undefined
   var progressAnimation: js.UndefOr[scala.Boolean] = js.undefined

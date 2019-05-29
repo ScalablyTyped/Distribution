@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * These options specify the appearance of a marker label. A marker label is a
+  * single character of text which will appear inside the marker. If you are
+  * using it with a custom marker, you can reposition it with the
+  * {@link Icon#labelOrigin labelOrigin} property in the {@link Icon} class.
+  * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#MarkerLabel Maps JavaScript API}
+  */
 trait MarkerLabel extends js.Object {
   /**
     * The color of the label text.

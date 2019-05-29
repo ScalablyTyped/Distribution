@@ -1014,11 +1014,11 @@ trait Redis
   def zrangebyscore(key: KeyType, min: java.lang.String, max: scala.Double, args: java.lang.String*): js.Any = js.native
   def zrangebyscore(key: KeyType, min: scala.Double, max: java.lang.String, args: java.lang.String*): js.Any = js.native
   def zrangebyscore(key: KeyType, min: scala.Double, max: scala.Double, args: java.lang.String*): js.Any = js.native
-  def zrank(key: KeyType, member: java.lang.String): js.Promise[scala.Double] = js.native
+  def zrank(key: KeyType, member: java.lang.String): js.Promise[scala.Double | scala.Null] = js.native
   def zrank(
     key: KeyType,
     member: java.lang.String,
-    callback: js.Function2[/* err */ stdLib.Error, /* res */ scala.Double, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* res */ scala.Double | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def zrem(key: KeyType, members: js.Any*): js.Any = js.native
   def zremrangebyrank(key: KeyType, start: scala.Double, stop: scala.Double): js.Promise[_] = js.native
@@ -1082,11 +1082,11 @@ trait Redis
   def zrevrangebyscore(key: KeyType, max: java.lang.String, min: scala.Double, args: java.lang.String*): js.Any = js.native
   def zrevrangebyscore(key: KeyType, max: scala.Double, min: java.lang.String, args: java.lang.String*): js.Any = js.native
   def zrevrangebyscore(key: KeyType, max: scala.Double, min: scala.Double, args: java.lang.String*): js.Any = js.native
-  def zrevrank(key: KeyType, member: java.lang.String): js.Promise[scala.Double] = js.native
+  def zrevrank(key: KeyType, member: java.lang.String): js.Promise[scala.Double | scala.Null] = js.native
   def zrevrank(
     key: KeyType,
     member: java.lang.String,
-    callback: js.Function2[/* err */ stdLib.Error, /* res */ scala.Double, scala.Unit]
+    callback: js.Function2[/* err */ stdLib.Error, /* res */ scala.Double | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def zscan(key: KeyType, cursor: scala.Double, args: js.Any*): js.Any = js.native
   def zscanStream(key: KeyType): nodeLib.NodeJSNs.EventEmitter = js.native

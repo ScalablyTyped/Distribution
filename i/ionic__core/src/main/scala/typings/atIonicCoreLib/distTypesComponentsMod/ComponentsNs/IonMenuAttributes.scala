@@ -42,7 +42,7 @@ trait IonMenuAttributes
   /**
     * Which side of the view the menu should be placed.
     */
-  var side: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.UndefOr[
+  var side: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Side */ js.Any
   ] = js.undefined
   /**

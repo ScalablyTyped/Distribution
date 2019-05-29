@@ -1,7 +1,7 @@
 
 # Scala.js typings for kos-core
 
-Typings are for version 0.4
+Typings are for version 0.6
 
 ## Library description:
 基于react-redux的可使用封装
@@ -35,11 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for kos-core 0.4
+// Type definitions for kos-core 0.6
 // Project: https://github.com/ali-Kos/Kos
 // Definitions by: alibaba ali-Kos <https://github.com/ali-Kos>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.4
 
 ```
 

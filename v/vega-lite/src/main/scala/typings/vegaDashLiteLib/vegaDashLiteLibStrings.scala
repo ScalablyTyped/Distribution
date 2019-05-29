@@ -322,7 +322,8 @@ object vegaDashLiteLibStrings {
     extends vegaDashLiteLib.buildSrcVegaDotSchemaMod.Cursor
   
   @js.native
-  sealed trait continuous extends js.Object
+  sealed trait continuous
+    extends vegaDashLiteLib.buildSrcCompileScaleTypeMod._RangeType
   
   @js.native
   sealed trait copy
@@ -401,7 +402,8 @@ object vegaDashLiteLibStrings {
     extends vegaDashLiteLib.buildSrcVegaDotSchemaMod.VgEncodeChannel
   
   @js.native
-  sealed trait discrete extends js.Object
+  sealed trait discrete
+    extends vegaDashLiteLib.buildSrcCompileScaleTypeMod._RangeType
   
   @js.native
   sealed trait distance extends js.Object
@@ -496,7 +498,8 @@ object vegaDashLiteLibStrings {
     extends vegaDashLiteLib.buildSrcToplevelpropsMod.AutosizeType
   
   @js.native
-  sealed trait flexible extends js.Object
+  sealed trait flexible
+    extends vegaDashLiteLib.buildSrcCompileScaleTypeMod._RangeType
   
   @js.native
   sealed trait flush extends js.Object

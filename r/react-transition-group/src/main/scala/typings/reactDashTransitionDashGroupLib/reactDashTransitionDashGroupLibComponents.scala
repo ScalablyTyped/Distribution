@@ -21,6 +21,6 @@ object reactDashTransitionDashGroupLibComponents {
     reactDashTransitionDashGroupLib.transitionGroupMod.TransitionGroupProps[reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.div, js.Any]
   ] = js.constructorOf[reactDashTransitionDashGroupLib.transitionGroupMod.^].asInstanceOf[reactLib.reactMod.ComponentType[
   reactDashTransitionDashGroupLib.transitionGroupMod.TransitionGroupProps[reactDashTransitionDashGroupLib.reactDashTransitionDashGroupLibStrings.div, js.Any]]]
-  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any */, V /* <: reactLib.reactMod.ReactType[_] */] = reactDashTransitionDashGroupLib.transitionGroupMod.TransitionGroupProps[T, V]
+  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 174 */ js.Any */, V /* <: reactLib.reactMod.ReactType[_] */] = reactDashTransitionDashGroupLib.transitionGroupMod.TransitionGroupProps[T, V]
 }
 

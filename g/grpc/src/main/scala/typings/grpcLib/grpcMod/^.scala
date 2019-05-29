@@ -25,7 +25,7 @@ object ^ extends js.Object {
   def makeGenericClientConstructor(methods: ServiceDefinition[_], serviceName: java.lang.String, classOptions: GenericClientOptions): org.scalablytyped.runtime.Instantiable3[
     /* address */ java.lang.String, 
     /* credentials */ ChannelCredentials, 
-    /* options */ js.UndefOr[/* options */ js.Object], 
+    js.UndefOr[/* options */ js.Object], 
     Client
   ] = js.native
   def setLogVerbosity(verbosity: logVerbosity): scala.Unit = js.native

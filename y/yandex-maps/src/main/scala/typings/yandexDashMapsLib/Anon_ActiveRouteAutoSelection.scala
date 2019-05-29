@@ -12,7 +12,7 @@ trait Anon_ActiveRouteAutoSelection
   var dragUpdateInterval: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var preventDragUpdate: js.UndefOr[scala.Boolean] = js.undefined
   var useMapMargin: js.UndefOr[scala.Boolean] = js.undefined
-  var zoomMargin: js.UndefOr[js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double] = js.undefined
+  var zoomMargin: js.UndefOr[(js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double] = js.undefined
 }
 
 object Anon_ActiveRouteAutoSelection {
@@ -24,7 +24,7 @@ object Anon_ActiveRouteAutoSelection {
     dragUpdateInterval: java.lang.String | scala.Double = null,
     preventDragUpdate: js.UndefOr[scala.Boolean] = js.undefined,
     useMapMargin: js.UndefOr[scala.Boolean] = js.undefined,
-    zoomMargin: js.Array[js.Array[scala.Double]] | js.Array[scala.Double] | scala.Double = null
+    zoomMargin: (js.Array[js.Array[scala.Double] | scala.Double]) | scala.Double = null
   ): Anon_ActiveRouteAutoSelection = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)

@@ -25,7 +25,7 @@ trait ButtonGroupProps extends js.Object {
   /**
     * Array of buttons for component, if returning a component, must be an object with { element: componentName }
     */
-  var buttons: js.Array[java.lang.String] | js.Array[ElementObject]
+  var buttons: js.Array[ElementObject | java.lang.String]
   /**
     * Border radius for the container
     */
@@ -144,7 +144,7 @@ trait ButtonGroupProps extends js.Object {
 object ButtonGroupProps {
   @scala.inline
   def apply(
-    buttons: js.Array[java.lang.String] | js.Array[ElementObject],
+    buttons: js.Array[ElementObject | java.lang.String],
     onPress: scala.Double => scala.Unit,
     selectedIndex: scala.Double,
     Component: reactLib.reactMod.ComponentType[_] = null,
@@ -171,7 +171,7 @@ object ButtonGroupProps {
     textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     underlayColor: java.lang.String = null
   ): ButtonGroupProps = {
-    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], onPress = js.Any.fromFunction1(onPress), selectedIndex = selectedIndex)
+    val __obj = js.Dynamic.literal(buttons = buttons, onPress = js.Any.fromFunction1(onPress), selectedIndex = selectedIndex)
     if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
     if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
     if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])

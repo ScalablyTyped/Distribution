@@ -20,10 +20,10 @@ trait RecordProxy extends js.Object {
   def getValue(name: java.lang.String, args: Variables): js.Any = js.native
   def setLinkedRecord(record: RecordProxy, name: java.lang.String): RecordProxy = js.native
   def setLinkedRecord(record: RecordProxy, name: java.lang.String, args: Variables): RecordProxy = js.native
-  def setLinkedRecords(records: js.Array[RecordProxy | scala.Null], name: java.lang.String): RecordProxy = js.native
-  def setLinkedRecords(records: js.Array[RecordProxy | scala.Null], name: java.lang.String, args: Variables): RecordProxy = js.native
   def setLinkedRecords(records: js.UndefOr[scala.Nothing], name: java.lang.String): RecordProxy = js.native
   def setLinkedRecords(records: js.UndefOr[scala.Nothing], name: java.lang.String, args: Variables): RecordProxy = js.native
+  def setLinkedRecords(records: js.Array[RecordProxy | scala.Null], name: java.lang.String): RecordProxy = js.native
+  def setLinkedRecords(records: js.Array[RecordProxy | scala.Null], name: java.lang.String, args: Variables): RecordProxy = js.native
   def setLinkedRecords(records: scala.Null, name: java.lang.String): RecordProxy = js.native
   def setLinkedRecords(records: scala.Null, name: java.lang.String, args: Variables): RecordProxy = js.native
   def setValue(value: js.Any, name: java.lang.String): RecordProxy = js.native

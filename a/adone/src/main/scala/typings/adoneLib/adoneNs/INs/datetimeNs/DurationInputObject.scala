@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DurationInputObject extends DatetimeInputObject {
+trait DurationInputObject
+  extends DatetimeInputObject
+     with _DurationInputArg1 {
   /**
     * Quarter, 1..4
     */

@@ -9,7 +9,7 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var cache: js.UndefOr[
     apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String]
   ] = js.undefined
-  var cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.UndefOr[
+  var cacheControl: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
   ] = js.undefined
   var context: js.UndefOr[TContext | js.Function0[scala.Nothing]] = js.undefined

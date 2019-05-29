@@ -34,10 +34,10 @@ object ReadableStream
      with org.scalablytyped.runtime.Instantiable2[
       (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
       (/* strategy */ Anon_HighWaterMarkSize) | (/* strategy */ QueuingStrategy[js.Object]), 
-      ReadableStream[Uint8Array] | ReadableStream[js.Object]
+      ReadableStream[js.Object | Uint8Array]
     ]
      with org.scalablytyped.runtime.Instantiable1[
       (/* underlyingSource */ UnderlyingByteSource) | (/* underlyingSource */ UnderlyingSource[js.Object]), 
-      ReadableStream[Uint8Array] | ReadableStream[js.Object]
+      ReadableStream[js.Object | Uint8Array]
     ]
 

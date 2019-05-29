@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object emitterNs extends js.Object {
   val Constructor: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ nodeLib.streamMod.WritableOptions], 
+    js.UndefOr[/* options */ nodeLib.streamMod.WritableOptions], 
     streamDashJsonLib.emitterMod.Emitter
   ] = js.native
   type Constructor = streamDashJsonLib.emitterMod.Emitter

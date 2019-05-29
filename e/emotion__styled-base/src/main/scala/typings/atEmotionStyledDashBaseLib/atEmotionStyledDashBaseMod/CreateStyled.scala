@@ -1103,6 +1103,16 @@ trait CreateStyled[Theme /* <: js.Object */] extends js.Object {
   ] = js.native
   def apply[ExtraProps](tag: atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.td): CreateStyledComponentIntrinsic[atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.td, ExtraProps, Theme] = js.native
   def apply[ExtraProps](tag: atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.td, options: StyledOptions): CreateStyledComponentIntrinsic[atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.td, ExtraProps, Theme] = js.native
+  def apply[ExtraProps](tag: atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.template): CreateStyledComponentIntrinsic[
+    atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.template, 
+    ExtraProps, 
+    Theme
+  ] = js.native
+  def apply[ExtraProps](tag: atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.template, options: StyledOptions): CreateStyledComponentIntrinsic[
+    atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.template, 
+    ExtraProps, 
+    Theme
+  ] = js.native
   def apply[ExtraProps](tag: atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.text): CreateStyledComponentIntrinsic[atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.text, ExtraProps, Theme] = js.native
   def apply[ExtraProps](tag: atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.textPath): CreateStyledComponentIntrinsic[
     atEmotionStyledDashBaseLib.atEmotionStyledDashBaseLibStrings.textPath, 

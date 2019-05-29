@@ -18,7 +18,7 @@ trait FeatureFormProperties extends WidgetProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#fieldConfig)
     */
-  var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties] | js.Array[FieldGroupConfigProperties]] = js.undefined
+  var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties | FieldGroupConfigProperties]] = js.undefined
   /**
     * Defines how groups will be displayed to the user.  **Possible Values:**
     *
@@ -53,7 +53,7 @@ object FeatureFormProperties {
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     feature: GraphicProperties = null,
-    fieldConfig: js.Array[FieldConfigProperties] | js.Array[FieldGroupConfigProperties] = null,
+    fieldConfig: js.Array[FieldConfigProperties | FieldGroupConfigProperties] = null,
     groupDisplay: java.lang.String = null,
     id: java.lang.String = null,
     label: java.lang.String = null,
@@ -64,7 +64,7 @@ object FeatureFormProperties {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (feature != null) __obj.updateDynamic("feature")(feature)
-    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
+    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig)
     if (groupDisplay != null) __obj.updateDynamic("groupDisplay")(groupDisplay)
     if (id != null) __obj.updateDynamic("id")(id)
     if (label != null) __obj.updateDynamic("label")(label)

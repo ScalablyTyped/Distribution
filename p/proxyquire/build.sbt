@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "proxyquire"
-version := "1.3.0-dt-20190322Z-43d6c8"
+version := "1.3.0-dt-20190322Z-994fd3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

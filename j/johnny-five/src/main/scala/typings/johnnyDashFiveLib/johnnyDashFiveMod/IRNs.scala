@@ -11,7 +11,7 @@ object IRNs extends js.Object {
   trait ArrayOption extends js.Object {
     var emitter: scala.Double | java.lang.String
     var freq: js.UndefOr[scala.Double] = js.undefined
-    var pins: js.Array[scala.Double] | js.Array[java.lang.String]
+    var pins: js.Array[scala.Double | java.lang.String]
   }
   
   trait LoadCalibrationOption extends js.Object {

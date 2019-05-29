@@ -13,7 +13,7 @@ trait IObservableDecorator extends js.Object {
   def apply(target: js.Object, property: java.lang.String, descriptor: stdLib.PropertyDescriptor): scala.Unit = js.native
   def apply(target: js.Object, property: js.Symbol): scala.Unit = js.native
   def apply(target: js.Object, property: js.Symbol, descriptor: stdLib.PropertyDescriptor): scala.Unit = js.native
-  def enhancer(newValue: js.Any, oldValue: js.Any, name: java.lang.String): js.Any = js.native
   def enhancer(newValue: js.Any, oldValue: js.UndefOr[scala.Nothing], name: java.lang.String): js.Any = js.native
+  def enhancer(newValue: js.Any, oldValue: js.Any, name: java.lang.String): js.Any = js.native
 }
 

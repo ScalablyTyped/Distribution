@@ -42,7 +42,7 @@ trait ShapeData extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var geometricShapeType: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 178 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 179 */ js.Any
   ] = js.undefined
   /**
     *
@@ -150,7 +150,7 @@ object ShapeData {
     altTextTitle: java.lang.String = null,
     connectionSiteCount: scala.Int | scala.Double = null,
     fill: ShapeFillData = null,
-    geometricShapeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 178 */ js.Any = null,
+    geometricShapeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 179 */ js.Any = null,
     height: scala.Int | scala.Double = null,
     id: java.lang.String = null,
     left: scala.Int | scala.Double = null,

@@ -16,7 +16,7 @@ trait MutationConfig[T /* <: OperationBase */] extends js.Object {
     ]
   ] = js.undefined
   var onError: js.UndefOr[js.Function1[/* error */ js.UndefOr[stdLib.Error], scala.Unit]] = js.undefined
-  var optimisticResponse: /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.UndefOr[
+  var optimisticResponse: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
   ] = js.undefined
   var optimisticUpdater: js.UndefOr[

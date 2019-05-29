@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Ref extends js.Object {
-  var ref: /* import warning: ImportType.apply Failed type conversion: infer R */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: infer R */ js.Any] = js.undefined
+  var ref: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: infer R */ js.Any] = js.undefined
 }
 
 object Anon_Ref {

@@ -13,7 +13,7 @@ trait MVTOptions extends js.Object {
     ]) | (js.Function4[
       /* geom */ openlayersLib.openlayersMod.geomNs.GeometryType, 
       /* arg2 */ js.Array[scala.Double], 
-      /* arg3 */ js.Array[scala.Double] | js.Array[js.Array[scala.Double]], 
+      /* arg3 */ js.Array[js.Array[scala.Double] | scala.Double], 
       /* arg4 */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       _
     ])
@@ -32,7 +32,7 @@ object MVTOptions {
     ]) | (js.Function4[
       /* geom */ openlayersLib.openlayersMod.geomNs.GeometryType, 
       /* arg2 */ js.Array[scala.Double], 
-      /* arg3 */ js.Array[scala.Double] | js.Array[js.Array[scala.Double]], 
+      /* arg3 */ js.Array[js.Array[scala.Double] | scala.Double], 
       /* arg4 */ org.scalablytyped.runtime.StringDictionary[js.Any], 
       _
     ]) = null,

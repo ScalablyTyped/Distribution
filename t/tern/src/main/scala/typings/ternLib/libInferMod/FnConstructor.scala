@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FnConstructor
   extends org.scalablytyped.runtime.Instantiable5[
-      (/* name */ java.lang.String) | (/* name */ js.UndefOr[scala.Nothing]), 
+      js.UndefOr[/* name */ java.lang.String], 
       /* self */ AVal, 
       /* args */ js.Array[AVal], 
       /* argNames */ js.Array[java.lang.String], 

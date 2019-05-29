@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object jqueryLibStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends jqueryLib.JQueryNs.__Falsy
   
   @js.native
   sealed trait Promise extends js.Object

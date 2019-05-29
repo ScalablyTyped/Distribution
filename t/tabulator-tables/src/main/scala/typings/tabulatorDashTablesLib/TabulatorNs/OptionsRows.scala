@@ -18,7 +18,7 @@ trait OptionsRows extends js.Object {
   var movableRows: js.UndefOr[scala.Boolean] = js.undefined
   /** Tabulator also allows you to move rows between tables. To enable this you should supply either a valid CSS selector string a DOM node for the table or the Tabuator object for the table to the movableRowsConnectedTables option. if you want to connect to multple tables then you can pass in an array of values to this option. */
   var movableRowsConnectedTables: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | stdLib.HTMLElement | js.Array[stdLib.HTMLElement]
+    java.lang.String | (js.Array[stdLib.HTMLElement | java.lang.String]) | stdLib.HTMLElement
   ] = js.undefined
   /** The movableRowsReceived callback is triggered on a receiving table when a row has been successfuly received.*/
   var movableRowsReceived: js.UndefOr[
@@ -181,7 +181,7 @@ object OptionsRows {
     dataTreeRowCollapsed: (/* row */ RowComponent, /* level */ scala.Double) => scala.Unit = null,
     dataTreeRowExpanded: (/* row */ RowComponent, /* level */ scala.Double) => scala.Unit = null,
     movableRows: js.UndefOr[scala.Boolean] = js.undefined,
-    movableRowsConnectedTables: java.lang.String | js.Array[java.lang.String] | stdLib.HTMLElement | js.Array[stdLib.HTMLElement] = null,
+    movableRowsConnectedTables: java.lang.String | (js.Array[stdLib.HTMLElement | java.lang.String]) | stdLib.HTMLElement = null,
     movableRowsReceived: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ tabulatorDashTablesLib.Tabulator) => scala.Unit = null,
     movableRowsReceivedFailed: (/* fromRow */ RowComponent, /* toRow */ RowComponent, /* fromTable */ tabulatorDashTablesLib.Tabulator) => scala.Unit = null,
     movableRowsReceiver: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.insert | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.add | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.update | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.replace | (js.Function3[

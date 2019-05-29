@@ -20,7 +20,7 @@ trait LoadURLOptions extends js.Object {
     * An HTTP Referrer url.
     */
   var httpReferrer: js.UndefOr[java.lang.String | Referrer] = js.undefined
-  var postData: js.UndefOr[js.Array[UploadRawData] | js.Array[UploadFile] | js.Array[UploadBlob]] = js.undefined
+  var postData: js.UndefOr[js.Array[UploadBlob | UploadFile | UploadRawData]] = js.undefined
   /**
     * A user agent originating the request.
     */
@@ -33,14 +33,14 @@ object LoadURLOptions {
     baseURLForDataURL: java.lang.String = null,
     extraHeaders: java.lang.String = null,
     httpReferrer: java.lang.String | Referrer = null,
-    postData: js.Array[UploadRawData] | js.Array[UploadFile] | js.Array[UploadBlob] = null,
+    postData: js.Array[UploadBlob | UploadFile | UploadRawData] = null,
     userAgent: java.lang.String = null
   ): LoadURLOptions = {
     val __obj = js.Dynamic.literal()
     if (baseURLForDataURL != null) __obj.updateDynamic("baseURLForDataURL")(baseURLForDataURL)
     if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
     if (httpReferrer != null) __obj.updateDynamic("httpReferrer")(httpReferrer.asInstanceOf[js.Any])
-    if (postData != null) __obj.updateDynamic("postData")(postData.asInstanceOf[js.Any])
+    if (postData != null) __obj.updateDynamic("postData")(postData)
     if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
     __obj.asInstanceOf[LoadURLOptions]
   }

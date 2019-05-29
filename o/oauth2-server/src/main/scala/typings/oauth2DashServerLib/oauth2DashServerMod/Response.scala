@@ -24,7 +24,7 @@ class Response () extends js.Object {
     * Returns the specified HTTP header field. The match is case-insensitive.
     *
     */
-  def get(field: java.lang.String): js.UndefOr[_] = js.native
+  def get(field: java.lang.String): js.UndefOr[js.Any] = js.native
   /**
     * Redirects to the specified URL using 302 Found.
     *

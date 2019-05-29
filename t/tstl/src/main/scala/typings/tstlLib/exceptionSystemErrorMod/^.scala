@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var system_error: org.scalablytyped.runtime.Instantiable2[
     /* code */ tstlLib.exceptionErrorCodeMod.ErrorCode, 
-    /* message */ js.UndefOr[/* message */ java.lang.String], 
+    js.UndefOr[/* message */ java.lang.String], 
     SystemError
   ] = js.native
 }

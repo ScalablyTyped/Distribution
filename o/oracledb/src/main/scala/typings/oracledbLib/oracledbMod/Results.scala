@@ -33,7 +33,7 @@ trait Results extends js.Object {
     * the array passed as the binds parameter. It will be present only if there is at least one OUT bind
     * variable identified.
     */
-  var outBinds: js.Array[org.scalablytyped.runtime.StringDictionary[_] | js.Array[_]]
+  var outBinds: js.Array[(stdLib.Record[java.lang.String, _]) | js.Array[_]]
   /**
     * An integer identifying the total number of database rows affected by the processing of all records
     * of the binds parameter. It is only present if a DML statement was executed.
@@ -46,7 +46,7 @@ object Results {
   def apply(
     batchErrors: js.Array[DBError],
     dmlRowCounts: js.Array[scala.Double],
-    outBinds: js.Array[org.scalablytyped.runtime.StringDictionary[_] | js.Array[_]],
+    outBinds: js.Array[(stdLib.Record[java.lang.String, _]) | js.Array[_]],
     rowsAffected: scala.Double
   ): Results = {
     val __obj = js.Dynamic.literal(batchErrors = batchErrors, dmlRowCounts = dmlRowCounts, outBinds = outBinds, rowsAffected = rowsAffected)

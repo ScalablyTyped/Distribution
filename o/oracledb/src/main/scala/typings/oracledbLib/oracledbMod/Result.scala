@@ -22,7 +22,7 @@ trait Result extends js.Object {
     * then outBinds is returned as an array. If bindParams is passed as an object,
     * then outBinds is returned as an object. If there are no OUT or IN OUT binds, the value is undefined.
     */
-  var outBinds: org.scalablytyped.runtime.StringDictionary[js.Any] | js.Array[_]
+  var outBinds: (stdLib.Record[java.lang.String, _]) | js.Array[_]
   /**
     * For SELECT statements when the resultSet option is true, use the resultSet object to fetch rows.
     *
@@ -43,7 +43,7 @@ trait Result extends js.Object {
     * The number of rows returned is limited by oracledb.maxRows or the maxRows option in an execute() call.
     * If maxRows is 0, then the number of rows is limited by Node.js memory constraints.
     */
-  var rows: js.Array[js.Array[_] | org.scalablytyped.runtime.StringDictionary[_]]
+  var rows: js.Array[js.Array[_] | (stdLib.Record[java.lang.String, _])]
   /**
     * For DML statements (including SELECT FOR UPDATE) this contains the number of rows affected,
     * for example the number of rows inserted. For non-DML statements such as queries and PL/SQL statements,
@@ -56,9 +56,9 @@ object Result {
   @scala.inline
   def apply(
     metaData: js.Array[Metadata],
-    outBinds: org.scalablytyped.runtime.StringDictionary[js.Any] | js.Array[_],
+    outBinds: (stdLib.Record[java.lang.String, _]) | js.Array[_],
     resultSet: ResultSet,
-    rows: js.Array[js.Array[_] | org.scalablytyped.runtime.StringDictionary[_]],
+    rows: js.Array[js.Array[_] | (stdLib.Record[java.lang.String, _])],
     rowsAffected: scala.Double
   ): Result = {
     val __obj = js.Dynamic.literal(metaData = metaData, outBinds = outBinds.asInstanceOf[js.Any], resultSet = resultSet, rows = rows, rowsAffected = rowsAffected)

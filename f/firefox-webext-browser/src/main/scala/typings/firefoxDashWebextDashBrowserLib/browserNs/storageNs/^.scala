@@ -22,7 +22,11 @@ object ^ extends js.Object {
     * @param areaName The name of the storage area (`"sync"`, `"local"` or `"managed"`) the changes are for.
     */
   val onChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function2[/* changes */ StorageChange, /* areaName */ java.lang.String, scala.Unit]
+    js.Function2[
+      /* changes */ org.scalablytyped.runtime.StringDictionary[StorageChange], 
+      /* areaName */ java.lang.String, 
+      scala.Unit
+    ]
   ] = js.native
   /* storage properties */
   /** Items in the `sync` storage area are synced by the browser. */

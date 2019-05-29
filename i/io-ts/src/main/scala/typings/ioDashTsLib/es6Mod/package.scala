@@ -115,7 +115,22 @@ package object es6Mod {
     - RecursiveType[js.Any, A, O, js.Any]
   */
   type Tagged[Tag /* <: java.lang.String */, A, O] = (_Tagged[Tag, A, O]) | (InterfaceType[TaggedProps[Tag], A, O, js.Any]) | (StrictType[TaggedProps[Tag], A, O, js.Any]) | (RecursiveType[js.Any, A, O, js.Any])
-  type TaggedIntersectionArgument[Tag /* <: java.lang.String */] = (js.Array[Tagged[Tag, js.Any, js.Any]]) | (js.Tuple2[Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple2[Mixed, Tagged[Tag, js.Any, js.Any]]) | (js.Tuple3[Tagged[Tag, js.Any, js.Any], Mixed, Mixed]) | (js.Tuple3[Mixed, Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple3[Mixed, Mixed, Tagged[Tag, js.Any, js.Any]]) | (js.Tuple4[Tagged[Tag, js.Any, js.Any], Mixed, Mixed, Mixed]) | (js.Tuple4[Mixed, Tagged[Tag, js.Any, js.Any], Mixed, Mixed]) | (js.Tuple4[Mixed, Mixed, Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple4[Mixed, Mixed, Mixed, Tagged[Tag, js.Any, js.Any]]) | (js.Tuple5[Tagged[Tag, js.Any, js.Any], Mixed, Mixed, Mixed, Mixed]) | (js.Tuple5[Mixed, Tagged[Tag, js.Any, js.Any], Mixed, Mixed, Mixed]) | (js.Tuple5[Mixed, Mixed, Tagged[Tag, js.Any, js.Any], Mixed, Mixed]) | (js.Tuple5[Mixed, Mixed, Mixed, Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple5[Mixed, Mixed, Mixed, Mixed, Tagged[Tag, js.Any, js.Any]])
+  type TaggedIntersectionArgument[Tag /* <: java.lang.String */] = (js.Array[Tagged[Tag, js.Any, js.Any]]) | (js.Tuple2[Mixed | (Tagged[Tag, js.Any, js.Any]), Mixed | (Tagged[Tag, js.Any, js.Any])]) | (js.Tuple3[
+    Mixed | (Tagged[Tag, js.Any, js.Any]), 
+    Mixed | (Tagged[Tag, js.Any, js.Any]), 
+    Mixed | (Tagged[Tag, js.Any, js.Any])
+  ]) | (js.Tuple4[
+    Mixed | (Tagged[Tag, js.Any, js.Any]), 
+    Mixed | (Tagged[Tag, js.Any, js.Any]), 
+    Mixed | (Tagged[Tag, js.Any, js.Any]), 
+    Mixed | (Tagged[Tag, js.Any, js.Any])
+  ]) | (js.Tuple5[
+    Mixed | (Tagged[Tag, js.Any, js.Any]), 
+    Mixed | (Tagged[Tag, js.Any, js.Any]), 
+    Mixed | (Tagged[Tag, js.Any, js.Any]), 
+    Mixed | (Tagged[Tag, js.Any, js.Any]), 
+    Mixed | (Tagged[Tag, js.Any, js.Any])
+  ])
   type TaggedProps[Tag /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in Tag ]: io-ts.io-ts/es6.LiteralType<any>}
     */ ioDashTsLib.ioDashTsLibStrings.TaggedProps with js.Any

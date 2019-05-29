@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AfterModifier extends js.Object {
+trait AfterModifier extends _Modifier {
   var after: stdLib.Date
 }
 

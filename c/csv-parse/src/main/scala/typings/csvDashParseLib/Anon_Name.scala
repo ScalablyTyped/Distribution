@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Name extends js.Object {
+trait Anon_Name
+  extends csvDashParseLib.csvDashParseMod._ColumnOption {
   var name: java.lang.String
 }
 

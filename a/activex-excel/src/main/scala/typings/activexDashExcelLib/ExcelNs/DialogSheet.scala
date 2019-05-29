@@ -86,8 +86,8 @@ class DialogSheet protected () extends Sheet {
   def ClearCircles(): scala.Unit = js.native
   def Comments(Index: scala.Double): Comment = js.native
   def Copy(): scala.Unit = js.native
-  def Copy(Before: Sheet): scala.Unit = js.native
   def Copy(Before: js.UndefOr[scala.Nothing], After: Sheet): scala.Unit = js.native
+  def Copy(Before: Sheet): scala.Unit = js.native
   def CustomProperties(Index: java.lang.String): CustomProperty = js.native
   def CustomProperties(Index: scala.Double): CustomProperty = js.native
   def Delete(): scala.Unit = js.native
@@ -129,13 +129,13 @@ class DialogSheet protected () extends Sheet {
   def Move(): scala.Unit = js.native
   def Move(Before: Sheet): scala.Unit = js.native
   def Move(Before: Sheet, After: Sheet): scala.Unit = js.native
-  def Names(Index: java.lang.String): Name = js.native
-  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
   def Names(
     Index: js.UndefOr[scala.Nothing],
     IndexLocal: js.UndefOr[scala.Nothing],
     RefersTo: java.lang.String
   ): Name = js.native
+  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
+  def Names(Index: java.lang.String): Name = js.native
   def Names(Index: scala.Double): Name = js.native
   def OLEObjects(): js.Any = js.native
   def OLEObjects(Index: js.Any): js.Any = js.native
@@ -163,9 +163,9 @@ class DialogSheet protected () extends Sheet {
     Copies: js.UndefOr[scala.Double],
     Preview: js.UndefOr[scala.Boolean],
     ActivePrinter: js.UndefOr[java.lang.String],
-    PrintToFile: js.UndefOr[scala.Boolean | js.UndefOr[scala.Nothing]],
+    PrintToFile: js.UndefOr[scala.Boolean],
     Collate: js.UndefOr[scala.Boolean],
-    PrToFileName: js.UndefOr[PrintToFileName[scala.Boolean | js.UndefOr[scala.Nothing]]]
+    PrToFileName: js.UndefOr[PrintToFileName[js.UndefOr[scala.Boolean]]]
   ): js.Any = js.native
   def PrintPreview(): scala.Unit = js.native
   def PrintPreview(EnableChanges: js.Any): scala.Unit = js.native

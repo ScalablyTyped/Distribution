@@ -15,7 +15,7 @@ trait ServerRoute extends js.Object {
     * (only when an exact match was not found, and any match with a specific method will be given a higher priority over a wildcard match). Can be assigned an array of methods which has the same
     * result as adding the same route with different methods manually.
     */
-  var method: atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL | js.Array[atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL] | java.lang.String | js.Array[java.lang.String]
+  var method: atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL | (js.Array[atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL | java.lang.String]) | java.lang.String
   /**
     * additional route options. The options value can be an object or a function that returns an object using the signature function(server) where server is the server the route is being added to
     * and this is bound to the current realm's bind option.
@@ -41,7 +41,7 @@ trait ServerRoute extends js.Object {
 object ServerRoute {
   @scala.inline
   def apply(
-    method: atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL | js.Array[atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL] | java.lang.String | js.Array[java.lang.String],
+    method: atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL | (js.Array[atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL | java.lang.String]) | java.lang.String,
     path: java.lang.String,
     handler: atHapiHapiLib.atHapiHapiMod.LifecycleNs.Method | HandlerDecorations = null,
     options: RouteOptions | (js.Function1[/* server */ Server, RouteOptions]) = null,

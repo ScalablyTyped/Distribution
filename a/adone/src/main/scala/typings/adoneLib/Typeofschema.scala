@@ -27,10 +27,7 @@ trait Typeofschema extends js.Object {
     * all JSON-supported types
     */
   val JSON: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema = js.native
-  var Schema: org.scalablytyped.runtime.Instantiable1[
-    /* _ */ js.UndefOr[/* _ */ Anon_Explicit], 
-    adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema
-  ] = js.native
+  var Schema: org.scalablytyped.runtime.Instantiable1[js.UndefOr[/* _ */ Anon_Explicit], adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema] = js.native
   def create(
     schemas: adoneLib.adoneNs.dataNs.yamlNs.schemaNs.Schema,
     types: adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[_]

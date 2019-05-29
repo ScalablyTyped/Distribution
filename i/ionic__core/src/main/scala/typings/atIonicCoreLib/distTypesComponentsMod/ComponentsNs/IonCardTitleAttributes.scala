@@ -11,13 +11,13 @@ trait IonCardTitleAttributes
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
   @JSName("color")
-  var color_IonCardTitleAttributes: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.UndefOr[
+  var color_IonCardTitleAttributes: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any
   ] = js.undefined
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.UndefOr[
+  var mode: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any
   ] = js.undefined
 }

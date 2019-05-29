@@ -42,14 +42,14 @@ trait ListItemProps extends js.Object {
   var rightElement: js.UndefOr[reactLib.reactMod.ReactElement[js.Object]] = js.undefined
   var rightIcon: js.UndefOr[stdLib.Partial[IconProps] | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
   var rightSubtitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
-  var rightSubtitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.UndefOr[
+  var rightSubtitleProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
   ] = js.undefined
   var rightSubtitleStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   var rightTitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
-  var rightTitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.UndefOr[
+  var rightTitleProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
   ] = js.undefined
   var rightTitleStyle: js.UndefOr[
@@ -57,17 +57,17 @@ trait ListItemProps extends js.Object {
   ] = js.undefined
   var scaleProps: js.UndefOr[ScaleProps] = js.undefined
   var subtitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
-  var subtitleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.UndefOr[
+  var subtitleProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
   ] = js.undefined
   var subtitleStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
-  var switch: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SwitchProperties */ js.UndefOr[
+  var switch: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SwitchProperties */ js.Any
   ] = js.undefined
   var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactElement[js.Object]] = js.undefined
-  var titleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.UndefOr[
+  var titleProps: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
   ] = js.undefined
   var titleStyle: js.UndefOr[

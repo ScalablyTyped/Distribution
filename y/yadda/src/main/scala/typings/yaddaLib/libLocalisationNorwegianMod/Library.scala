@@ -81,7 +81,7 @@ trait Library
   def gitt(
     step: js.Array[stdLib.RegExp | java.lang.String],
     fn: js.Function1[
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* repeated */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* repeated */ java.lang.String), 
       js.Promise[scala.Unit] | scala.Unit
     ]
   ): this.type = js.native
@@ -89,7 +89,7 @@ trait Library
     step: js.Array[stdLib.RegExp | java.lang.String],
     fn: js.Function2[
       /* arg1 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -98,7 +98,7 @@ trait Library
     fn: js.Function3[
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -108,7 +108,7 @@ trait Library
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -119,7 +119,7 @@ trait Library
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -131,7 +131,7 @@ trait Library
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -144,7 +144,7 @@ trait Library
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
       /* arg6 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -291,7 +291,7 @@ trait Library
   def når(
     step: js.Array[stdLib.RegExp | java.lang.String],
     fn: js.Function1[
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* repeated */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* repeated */ java.lang.String), 
       js.Promise[scala.Unit] | scala.Unit
     ]
   ): this.type = js.native
@@ -299,7 +299,7 @@ trait Library
     step: js.Array[stdLib.RegExp | java.lang.String],
     fn: js.Function2[
       /* arg1 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -308,7 +308,7 @@ trait Library
     fn: js.Function3[
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -318,7 +318,7 @@ trait Library
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -329,7 +329,7 @@ trait Library
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -341,7 +341,7 @@ trait Library
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -354,7 +354,7 @@ trait Library
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
       /* arg6 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -501,7 +501,7 @@ trait Library
   def så(
     step: js.Array[stdLib.RegExp | java.lang.String],
     fn: js.Function1[
-      (/* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]) | (/* repeated */ java.lang.String), 
+      (/* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit]) | (/* repeated */ java.lang.String), 
       js.Promise[scala.Unit] | scala.Unit
     ]
   ): this.type = js.native
@@ -509,7 +509,7 @@ trait Library
     step: js.Array[stdLib.RegExp | java.lang.String],
     fn: js.Function2[
       /* arg1 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -518,7 +518,7 @@ trait Library
     fn: js.Function3[
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -528,7 +528,7 @@ trait Library
       /* arg1 */ java.lang.String, 
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -539,7 +539,7 @@ trait Library
       /* arg2 */ java.lang.String, 
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -551,7 +551,7 @@ trait Library
       /* arg3 */ java.lang.String, 
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -564,7 +564,7 @@ trait Library
       /* arg4 */ java.lang.String, 
       /* arg5 */ java.lang.String, 
       /* arg6 */ java.lang.String, 
-      /* next */ js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit], 
+      /* next */ js.Function1[js.UndefOr[stdLib.Error], scala.Unit], 
       scala.Unit
     ]
   ): this.type = js.native

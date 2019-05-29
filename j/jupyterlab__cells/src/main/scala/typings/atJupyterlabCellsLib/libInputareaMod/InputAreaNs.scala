@@ -95,7 +95,7 @@ object InputAreaNs extends js.Object {
         * If this is not passed, a default CodeMirror editor factory
         * will be used.
         */
-      var editorFactory: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.UndefOr[
+      var editorFactory: js.UndefOr[
             /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CodeEditor.Factory */ js.Any
           ] = js.undefined
     }

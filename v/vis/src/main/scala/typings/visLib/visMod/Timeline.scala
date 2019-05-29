@@ -13,8 +13,10 @@ class Timeline protected () extends js.Object {
   def this(container: stdLib.HTMLElement, items: DataItemCollectionType, options: TimelineOptions) = this()
   def this(container: stdLib.HTMLElement, items: DataItemCollectionType, groups: DataGroupCollectionType, options: TimelineOptions) = this()
   /**
-    * Add new vertical bar representing a custom time that can be dragged by the user. Parameter time can be a Date, Number, or String, and is new Date() by default.
-    * Parameter id can be Number or String and is undefined by default. The id is added as CSS class name of the custom time bar, allowing to style multiple time bars differently.
+    * Add new vertical bar representing a custom time that can be dragged by the user.
+    * Parameter time can be a Date, Number, or String, and is new Date() by default.
+    * Parameter id can be Number or String and is undefined by default.
+    * The id is added as CSS class name of the custom time bar, allowing to style multiple time bars differently.
     * The method returns id of the created bar.
     */
   def addCustomTime(time: DateType): IdType = js.native
@@ -99,7 +101,8 @@ class Timeline protected () extends js.Object {
     */
   def removeCustomTime(id: IdType): scala.Unit = js.native
   /**
-    * Set a current time. This can be used for example to ensure that a client's time is synchronized with a shared server time. Only applicable when option showCurrentTime is true.
+    * Set a current time. This can be used for example to ensure that a client's time is synchronized with a shared server time.
+    * Only applicable when option showCurrentTime is true.
     */
   def setCurrentTime(time: DateType): scala.Unit = js.native
   /**
@@ -135,13 +138,15 @@ class Timeline protected () extends js.Object {
     */
   def setItems(items: DataItemCollectionType): scala.Unit = js.native
   /**
-    * Set or update options. It is possible to change any option of the timeline at any time. You can for example switch orientation on the fly.
+    * Set or update options. It is possible to change any option of the timeline at any time.
+    * You can for example switch orientation on the fly.
     */
   def setOptions(options: TimelineOptions): scala.Unit = js.native
   def setSelection(ids: js.Array[IdType]): scala.Unit = js.native
   def setSelection(ids: js.Array[IdType], options: visLib.Anon_Animation): scala.Unit = js.native
   /**
-    * Select one or multiple items by their id. The currently selected items will be unselected. To unselect all selected items, call `setSelection([])`.
+    * Select one or multiple items by their id. The currently selected items will be unselected.
+    * To unselect all selected items, call `setSelection([])`.
     */
   def setSelection(ids: IdType): scala.Unit = js.native
   def setSelection(ids: IdType, options: visLib.Anon_Animation): scala.Unit = js.native

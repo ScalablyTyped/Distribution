@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-loading-bar"
-version := "0.0-unknown-dt-20190322Z-0746cb"
+version := "0.0-unknown-dt-20190322Z-ef0f09"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

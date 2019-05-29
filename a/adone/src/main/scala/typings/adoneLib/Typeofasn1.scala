@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait Typeofasn1 extends js.Object {
   var Any: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.AnyParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.AnyParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.Any
   ]
   var BaseBlock: org.scalablytyped.runtime.Instantiable2[
-    /* parameters */ js.UndefOr[/* parameters */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BaseBlockParams], 
-    /* import warning: ImportType.apply Failed type conversion: typeof I.LocalValueBlock */ /* valueBlockType */ js.UndefOr[
+    js.UndefOr[/* parameters */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BaseBlockParams], 
+    js.UndefOr[
       /* import warning: ImportType.apply Failed type conversion: typeof I.LocalValueBlock */ /* valueBlockType */ js.Any
     ], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.BaseBlock[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalValueBlock]
   ]
   var BitString: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBitStringValueBlockParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBitStringValueBlockParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.BitString
   ]
   var BmpString: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BmpStringParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BmpStringParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.BmpString
   ]
   var Boolean: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Boolean]
   var CharacterString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.CharacterString]
   var Choice: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.ChoiceParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.ChoiceParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.Choice
   ]
   var Constructed: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Constructed]
@@ -43,19 +43,19 @@ trait Typeofasn1 extends js.Object {
   var IA5String: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.IA5String]
   val INs: TypeofILocalBaseBlock
   var Integer: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.IntegerParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.IntegerParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.Integer
   ]
   var Null: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Null]
   var NumericString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.NumericString]
   var ObjectIdentifier: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[
+    js.UndefOr[
       /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalObjectIdentifierValueBlockParams
     ], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.ObjectIdentifier
   ]
   var OctetString: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[
+    js.UndefOr[
       /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalOctetStringValueBlockParams
     ], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.OctetString
@@ -63,11 +63,11 @@ trait Typeofasn1 extends js.Object {
   var Primitive: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Primitive]
   var PrintableString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.PrintableString]
   var RawData: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RawDataParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RawDataParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.RawData
   ]
   var Repeated: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RepeatedParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RepeatedParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.Repeated
   ]
   var Sequence: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Sequence]
@@ -76,15 +76,15 @@ trait Typeofasn1 extends js.Object {
   var TeletexString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.TeletexString]
   var TimeOfDay: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.TimeOfDay]
   var UTCTime: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UTCTimeParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UTCTimeParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.UTCTime
   ]
   var UniversalString: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UniversalStringParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UniversalStringParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.UniversalString
   ]
   var Utf8String: org.scalablytyped.runtime.Instantiable1[
-    /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.Utf8StringParams], 
+    js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.Utf8StringParams], 
     adoneLib.adoneNs.cryptoNs.asn1Ns.Utf8String
   ]
   var VideotexString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.VideotexString]
@@ -116,28 +116,28 @@ object Typeofasn1 {
   @scala.inline
   def apply(
     Any: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.AnyParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.AnyParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.Any
     ],
     BaseBlock: org.scalablytyped.runtime.Instantiable2[
-      /* parameters */ js.UndefOr[/* parameters */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BaseBlockParams], 
-      /* import warning: ImportType.apply Failed type conversion: typeof I.LocalValueBlock */ /* valueBlockType */ js.UndefOr[
+      js.UndefOr[/* parameters */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BaseBlockParams], 
+      js.UndefOr[
         /* import warning: ImportType.apply Failed type conversion: typeof I.LocalValueBlock */ /* valueBlockType */ js.Any
       ], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.BaseBlock[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalValueBlock]
     ],
     BitString: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBitStringValueBlockParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBitStringValueBlockParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.BitString
     ],
     BmpString: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BmpStringParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.BmpStringParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.BmpString
     ],
     Boolean: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Boolean],
     CharacterString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.CharacterString],
     Choice: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.ChoiceParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.ChoiceParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.Choice
     ],
     Constructed: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Constructed],
@@ -152,19 +152,19 @@ object Typeofasn1 {
     IA5String: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.IA5String],
     INs: TypeofILocalBaseBlock,
     Integer: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.IntegerParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.IntegerParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.Integer
     ],
     Null: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Null],
     NumericString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.NumericString],
     ObjectIdentifier: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[
+      js.UndefOr[
         /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalObjectIdentifierValueBlockParams
       ], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.ObjectIdentifier
     ],
     OctetString: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[
+      js.UndefOr[
         /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalOctetStringValueBlockParams
       ], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.OctetString
@@ -172,11 +172,11 @@ object Typeofasn1 {
     Primitive: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Primitive],
     PrintableString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.PrintableString],
     RawData: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RawDataParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RawDataParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.RawData
     ],
     Repeated: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RepeatedParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.RepeatedParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.Repeated
     ],
     Sequence: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.Sequence],
@@ -185,15 +185,15 @@ object Typeofasn1 {
     TeletexString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.TeletexString],
     TimeOfDay: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.TimeOfDay],
     UTCTime: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UTCTimeParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UTCTimeParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.UTCTime
     ],
     UniversalString: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UniversalStringParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.UniversalStringParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.UniversalString
     ],
     Utf8String: org.scalablytyped.runtime.Instantiable1[
-      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.Utf8StringParams], 
+      js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.Utf8StringParams], 
       adoneLib.adoneNs.cryptoNs.asn1Ns.Utf8String
     ],
     VideotexString: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.VideotexString],

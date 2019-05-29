@@ -21,13 +21,13 @@ trait Query[T /* <: SupportedTypes */] extends js.Object {
   @JSName("$elemMatch")
   var $elemMatch: js.UndefOr[ExternalQuery[T]] = js.undefined
   @JSName("$eq")
-  var $eq: /* import warning: ImportType.apply Failed type conversion: T[0] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
+  var $eq: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
   @JSName("$exists")
   var $exists: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("$gt")
-  var $gt: /* import warning: ImportType.apply Failed type conversion: T[0] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
+  var $gt: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
   @JSName("$gte")
-  var $gte: /* import warning: ImportType.apply Failed type conversion: T[0] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
+  var $gte: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
   @JSName("$in")
   var $in: js.UndefOr[
     js.Array[
@@ -35,13 +35,13 @@ trait Query[T /* <: SupportedTypes */] extends js.Object {
     ]
   ] = js.undefined
   @JSName("$lt")
-  var $lt: /* import warning: ImportType.apply Failed type conversion: T[0] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
+  var $lt: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
   @JSName("$lte")
-  var $lte: /* import warning: ImportType.apply Failed type conversion: T[0] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
+  var $lte: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
   @JSName("$mod")
   var $mod: js.UndefOr[js.Array[scala.Double]] = js.undefined
   @JSName("$ne")
-  var $ne: /* import warning: ImportType.apply Failed type conversion: T[0] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
+  var $ne: js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any] = js.undefined
   @JSName("$nin")
   var $nin: js.UndefOr[
     js.Array[

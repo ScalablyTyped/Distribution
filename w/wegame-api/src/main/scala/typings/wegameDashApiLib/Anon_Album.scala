@@ -12,14 +12,18 @@ trait Anon_Album extends js.Object {
   /**
     * 所选的图片的尺寸
     */
-  var sizeType: js.Array[wegameDashApiLib.wegameDashApiLibStrings.original] | js.Array[wegameDashApiLib.wegameDashApiLibStrings.compressed] | (js.Tuple2[
+  var sizeType: (js.Array[
+    wegameDashApiLib.wegameDashApiLibStrings.original | wegameDashApiLib.wegameDashApiLibStrings.compressed
+  ]) | (js.Tuple2[
     wegameDashApiLib.wegameDashApiLibStrings.original, 
     wegameDashApiLib.wegameDashApiLibStrings.compressed
   ])
   /**
     * 选择图片的来源
     */
-  var sourceType: js.Array[wegameDashApiLib.wegameDashApiLibStrings.album] | js.Array[wegameDashApiLib.wegameDashApiLibStrings.camera] | (js.Tuple2[
+  var sourceType: (js.Array[
+    wegameDashApiLib.wegameDashApiLibStrings.album | wegameDashApiLib.wegameDashApiLibStrings.camera
+  ]) | (js.Tuple2[
     wegameDashApiLib.wegameDashApiLibStrings.album, 
     wegameDashApiLib.wegameDashApiLibStrings.camera
   ])
@@ -30,11 +34,15 @@ object Anon_Album {
   @scala.inline
   def apply(
     count: scala.Double,
-    sizeType: js.Array[wegameDashApiLib.wegameDashApiLibStrings.original] | js.Array[wegameDashApiLib.wegameDashApiLibStrings.compressed] | (js.Tuple2[
+    sizeType: (js.Array[
+      wegameDashApiLib.wegameDashApiLibStrings.original | wegameDashApiLib.wegameDashApiLibStrings.compressed
+    ]) | (js.Tuple2[
       wegameDashApiLib.wegameDashApiLibStrings.original, 
       wegameDashApiLib.wegameDashApiLibStrings.compressed
     ]),
-    sourceType: js.Array[wegameDashApiLib.wegameDashApiLibStrings.album] | js.Array[wegameDashApiLib.wegameDashApiLibStrings.camera] | (js.Tuple2[
+    sourceType: (js.Array[
+      wegameDashApiLib.wegameDashApiLibStrings.album | wegameDashApiLib.wegameDashApiLibStrings.camera
+    ]) | (js.Tuple2[
       wegameDashApiLib.wegameDashApiLibStrings.album, 
       wegameDashApiLib.wegameDashApiLibStrings.camera
     ]),

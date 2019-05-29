@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_menuaim"
-version := "0.0-unknown-dt-20190322Z-41e4d1"
+version := "0.0-unknown-dt-20190322Z-3fbb0d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

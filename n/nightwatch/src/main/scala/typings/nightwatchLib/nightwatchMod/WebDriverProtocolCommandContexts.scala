@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebDriverProtocolCommandContexts extends js.Object {
   def frame(): this.type = js.native
+  def frame(
+    frameId: js.UndefOr[scala.Nothing],
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[scala.Unit], 
+      scala.Unit
+    ]
+  ): this.type = js.native
   /**
     * Change focus to another frame on the page. If the frame id is missing or null, the server should switch to the page's default content.
     *
@@ -21,14 +29,6 @@ trait WebDriverProtocolCommandContexts extends js.Object {
   def frame(frameId: java.lang.String): this.type = js.native
   def frame(
     frameId: java.lang.String,
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[scala.Unit], 
-      scala.Unit
-    ]
-  ): this.type = js.native
-  def frame(
-    frameId: js.UndefOr[scala.Nothing],
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
       /* result */ NightwatchCallbackResult[scala.Unit], 

@@ -14,10 +14,18 @@ trait IBar extends ICartesian {
   var groupGutter: js.UndefOr[scala.Double] = js.undefined
   /** [Config Option] (Number) */
   var gutter: js.UndefOr[scala.Double] = js.undefined
+  /** [Method] Highlight the given series item
+  		* @param item Object
+  		*/
+  @JSName("highlightItem")
+  var highlightItem_IBar: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var stacked: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Object) */
   var style: js.UndefOr[js.Any] = js.undefined
+  /** [Method] Un highlight any existing highlights */
+  @JSName("unHighlightItem")
+  var unHighlightItem_IBar: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (Number/Object) */
   var xPadding: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Number/Object) */

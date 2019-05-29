@@ -17,7 +17,7 @@ class Map protected () extends EventBindable {
   def clearMap(): scala.Unit = js.native
   def containerToLngLat(pixel: Pixel, level: scala.Double): LngLat = js.native
   def destroy(): scala.Unit = js.native
-  def getAllOverlays(`type`: java.lang.String): js.Array[Marker] | js.Array[Circle] | js.Array[Polygon] | js.Array[Polyline] = js.native
+  def getAllOverlays(`type`: java.lang.String): js.Array[Circle | Marker | Polygon | Polyline] = js.native
   def getBounds(): Bounds = js.native
   def getCenter(): LngLat = js.native
   def getCity(callback: js.Function1[/* result */ amapDashJsDashSdkLib.Anon_City, scala.Unit]): scala.Unit = js.native

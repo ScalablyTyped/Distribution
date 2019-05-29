@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lodash_dot_divide"
-version := "4.9-dt-20190214Z-23106d"
+version := "4.9-dt-20190214Z-2ed6b9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

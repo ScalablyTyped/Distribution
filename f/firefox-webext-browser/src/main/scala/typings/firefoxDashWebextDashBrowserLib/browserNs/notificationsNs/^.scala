@@ -68,7 +68,7 @@ object ^ extends js.Object {
     */
   def create(options: CreateNotificationOptions): js.Promise[js.UndefOr[java.lang.String]] = js.native
   /** Retrieves all the notifications. */
-  def getAll(): js.Promise[CreateNotificationOptions] = js.native
+  def getAll(): js.Promise[org.scalablytyped.runtime.StringDictionary[CreateNotificationOptions]] = js.native
   /**
     * Retrieves whether the user has enabled notifications from this app or extension.
     * @deprecated Unsupported on Firefox at this time.

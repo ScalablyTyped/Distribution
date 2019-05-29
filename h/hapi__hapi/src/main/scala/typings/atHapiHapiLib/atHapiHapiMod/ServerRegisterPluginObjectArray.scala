@@ -7,11 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ServerRegisterPluginObjectArray[T, U, V, W, X, Y, Z]
-  extends stdLib.Array[
-      js.UndefOr[
-        ServerRegisterPluginObject[T] | ServerRegisterPluginObject[U] | ServerRegisterPluginObject[V] | ServerRegisterPluginObject[W] | ServerRegisterPluginObject[X] | ServerRegisterPluginObject[Y] | ServerRegisterPluginObject[Z]
-      ]
-    ] {
+  extends stdLib.Array[js.UndefOr[ServerRegisterPluginObject[T | U | V | W | X | Y | Z]]] {
   var `0`: ServerRegisterPluginObject[T] = js.native
   var `1`: js.UndefOr[ServerRegisterPluginObject[U]] = js.native
   var `2`: js.UndefOr[ServerRegisterPluginObject[V]] = js.native

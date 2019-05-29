@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "utils-merge"
-version := "0.0-unknown-dt-20190322Z-5c046e"
+version := "0.0-unknown-dt-20190322Z-8eefdd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

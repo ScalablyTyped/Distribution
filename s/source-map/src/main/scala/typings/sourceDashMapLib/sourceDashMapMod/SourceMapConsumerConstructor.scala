@@ -10,11 +10,11 @@ trait SourceMapConsumerConstructor
   extends org.scalablytyped.runtime.Instantiable2[
       (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ RawSourceMap) | (/* rawSourceMap */ java.lang.String), 
       /* sourceMapUrl */ SourceMapUrl, 
-      js.Promise[BasicSourceMapConsumer] | js.Promise[IndexedSourceMapConsumer] | (js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer])
+      js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer]
     ]
      with org.scalablytyped.runtime.Instantiable1[
       (/* rawSourceMap */ RawIndexMap) | (/* rawSourceMap */ RawSourceMap) | (/* rawSourceMap */ java.lang.String), 
-      js.Promise[BasicSourceMapConsumer] | js.Promise[IndexedSourceMapConsumer] | (js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer])
+      js.Promise[BasicSourceMapConsumer | IndexedSourceMapConsumer]
     ] {
   var GENERATED_ORDER: scala.Double = js.native
   var GREATEST_LOWER_BOUND: scala.Double = js.native

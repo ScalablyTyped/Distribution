@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RowInfo extends js.Object {
+trait RowInfo[D] extends js.Object {
   /** A boolean stating if the row is an aggregation row */
   var aggregated: scala.Boolean
   /** A boolean stating if the row is grouped by Pivot */
@@ -17,7 +17,7 @@ trait RowInfo extends js.Object {
   /** The nesting path of the row */
   var nestingPath: js.Array[scala.Double]
   /** Original object passed to row */
-  var original: js.Any
+  var original: D
   /** The index of page */
   var page: scala.Double
   /** The size of the page */
@@ -34,23 +34,23 @@ trait RowInfo extends js.Object {
 
 object RowInfo {
   @scala.inline
-  def apply(
+  def apply[D](
     aggregated: scala.Boolean,
     groupedByPivot: scala.Boolean,
     index: scala.Double,
     level: scala.Double,
     nestingPath: js.Array[scala.Double],
-    original: js.Any,
+    original: D,
     page: scala.Double,
     pageSize: scala.Double,
     row: js.Any,
     rowValues: js.Any,
     subRows: js.Array[_],
     viewIndex: scala.Double
-  ): RowInfo = {
-    val __obj = js.Dynamic.literal(aggregated = aggregated, groupedByPivot = groupedByPivot, index = index, level = level, nestingPath = nestingPath, original = original, page = page, pageSize = pageSize, row = row, rowValues = rowValues, subRows = subRows, viewIndex = viewIndex)
+  ): RowInfo[D] = {
+    val __obj = js.Dynamic.literal(aggregated = aggregated, groupedByPivot = groupedByPivot, index = index, level = level, nestingPath = nestingPath, original = original.asInstanceOf[js.Any], page = page, pageSize = pageSize, row = row, rowValues = rowValues, subRows = subRows, viewIndex = viewIndex)
   
-    __obj.asInstanceOf[RowInfo]
+    __obj.asInstanceOf[RowInfo[D]]
   }
 }
 

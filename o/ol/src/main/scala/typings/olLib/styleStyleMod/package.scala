@@ -11,7 +11,7 @@ package object styleStyleMod {
     olLib.geomGeometryMod.default | olLib.renderFeatureMod.default
   ]
   type RenderFunction = js.Function2[
-    /* param0 */ olLib.coordinateMod.Coordinate | js.Array[olLib.coordinateMod.Coordinate] | js.Array[js.Array[olLib.coordinateMod.Coordinate]], 
+    /* param0 */ olLib.coordinateMod.Coordinate | (js.Array[js.Array[olLib.coordinateMod.Coordinate] | olLib.coordinateMod.Coordinate]), 
     /* param1 */ olLib.renderMod.State, 
     scala.Unit
   ]

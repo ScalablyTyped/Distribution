@@ -26,13 +26,13 @@ object ^ extends js.Object {
     */
   def apply(
     src: java.lang.String,
-    callback: js.Function2[/* error */ js.UndefOr[_], /* parseResult */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ java.lang.String, scala.Unit]
   ): java.lang.String = js.native
   def apply(src: java.lang.String, options: MarkedOptions): java.lang.String = js.native
   def apply(
     src: java.lang.String,
     options: MarkedOptions,
-    callback: js.Function2[/* error */ js.UndefOr[_], /* parseResult */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ java.lang.String, scala.Unit]
   ): java.lang.String = js.native
   /**
     * @param src String of markdown source to be compiled
@@ -66,13 +66,13 @@ object ^ extends js.Object {
     */
   def parse(
     src: java.lang.String,
-    callback: js.Function2[/* error */ js.UndefOr[_], /* parseResult */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ java.lang.String, scala.Unit]
   ): java.lang.String = js.native
   def parse(src: java.lang.String, options: MarkedOptions): java.lang.String = js.native
   def parse(
     src: java.lang.String,
     options: MarkedOptions,
-    callback: js.Function2[/* error */ js.UndefOr[_], /* parseResult */ java.lang.String, scala.Unit]
+    callback: js.Function2[/* error */ js.UndefOr[js.Any], /* parseResult */ java.lang.String, scala.Unit]
   ): java.lang.String = js.native
   /**
     * @param src Tokenized source as array of tokens

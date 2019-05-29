@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-sensor-manager"
-version := "0.1-dt-20180806Z-7b3f06"
+version := "0.1-dt-20180806Z-c19790"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

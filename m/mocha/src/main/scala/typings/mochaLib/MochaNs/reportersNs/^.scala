@@ -11,7 +11,7 @@ object ^ extends js.Object {
   // value-only aliases
   val base: mochaLib.TypeofBase with (org.scalablytyped.runtime.Instantiable2[
     /* runner */ mochaLib.MochaNs.Runner, 
-    /* options */ js.UndefOr[/* options */ mochaLib.MochaNs.MochaOptions], 
+    js.UndefOr[/* options */ mochaLib.MochaNs.MochaOptions], 
     Base
   ]) = js.native
   val doc: org.scalablytyped.runtime.Instantiable0[Doc] = js.native
@@ -24,14 +24,14 @@ object ^ extends js.Object {
   val nyan: org.scalablytyped.runtime.Instantiable0[Nyan] = js.native
   val progress: org.scalablytyped.runtime.Instantiable2[
     /* runner */ mochaLib.MochaNs.Runner, 
-    /* options */ js.UndefOr[/* options */ mochaLib.MochaNs.reportersNs.ProgressNs.MochaOptions], 
+    js.UndefOr[/* options */ mochaLib.MochaNs.reportersNs.ProgressNs.MochaOptions], 
     Progress
   ] = js.native
   val spec: org.scalablytyped.runtime.Instantiable0[Spec] = js.native
   val tap: org.scalablytyped.runtime.Instantiable0[TAP] = js.native
   val xunit: org.scalablytyped.runtime.Instantiable2[
     /* runner */ mochaLib.MochaNs.Runner, 
-    /* options */ js.UndefOr[/* options */ mochaLib.MochaNs.reportersNs.XUnitNs.MochaOptions], 
+    js.UndefOr[/* options */ mochaLib.MochaNs.reportersNs.XUnitNs.MochaOptions], 
     XUnit
   ] = js.native
 }

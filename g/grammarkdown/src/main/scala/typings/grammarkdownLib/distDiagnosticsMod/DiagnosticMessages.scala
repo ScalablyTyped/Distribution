@@ -50,13 +50,13 @@ class DiagnosticMessages () extends js.Object {
   def getMessage(diagnosticIndex: scala.Double, options: grammarkdownLib.Anon_Detailed): java.lang.String = js.native
   def report(pos: scala.Double, message: Diagnostic, args: js.Any*): scala.Unit = js.native
   def reportNode(
-    sourceFile: grammarkdownLib.distNodesMod.SourceFile,
+    sourceFile: js.UndefOr[scala.Nothing],
     node: grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind],
     message: Diagnostic,
     args: js.Any*
   ): scala.Unit = js.native
   def reportNode(
-    sourceFile: js.UndefOr[scala.Nothing],
+    sourceFile: grammarkdownLib.distNodesMod.SourceFile,
     node: grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind],
     message: Diagnostic,
     args: js.Any*

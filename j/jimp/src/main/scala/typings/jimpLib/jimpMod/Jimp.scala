@@ -304,9 +304,9 @@ org.scalablytyped.runtime.Instantiable1[
   def opaque(): this.type = js.native
   def opaque(cb: ImageCallback[_]): this.type = js.native
   def parseBitmap(data: nodeLib.Buffer): scala.Unit = js.native
+  def parseBitmap(data: nodeLib.Buffer, path: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): scala.Unit = js.native
   def parseBitmap(data: nodeLib.Buffer, path: java.lang.String): scala.Unit = js.native
   def parseBitmap(data: nodeLib.Buffer, path: java.lang.String, cb: ImageCallback[_]): scala.Unit = js.native
-  def parseBitmap(data: nodeLib.Buffer, path: js.UndefOr[scala.Nothing], cb: ImageCallback[_]): scala.Unit = js.native
   def parseBitmap(data: nodeLib.Buffer, path: scala.Null, cb: ImageCallback[_]): scala.Unit = js.native
   def pixelate(size: scala.Double): this.type = js.native
   def pixelate(size: scala.Double, cb: ImageCallback[_]): this.type = js.native

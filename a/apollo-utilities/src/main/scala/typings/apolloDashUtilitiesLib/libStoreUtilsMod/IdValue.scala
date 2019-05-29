@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IdValue extends js.Object {
+trait IdValue extends _StoreValue {
   var generated: scala.Boolean
   var id: java.lang.String
   var `type`: apolloDashUtilitiesLib.apolloDashUtilitiesLibStrings.id

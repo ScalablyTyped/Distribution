@@ -13,20 +13,21 @@ import scala.scalajs.js.annotation._
   /** [Method] Changes the data store bound to this LoadMask
   		* @param store Ext.data.Store The store to bind to this LoadMask
   		*/
-  var bindStore: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IStore], scala.Unit]
-  ] = js.undefined
+  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IStore], scala.Unit]] = js.undefined
   /** [Method] Binds listeners for this component to the store
   		* @param store Ext.data.AbstractStore The store to bind to
   		*/
-  var bindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
   /** [Method] Center this Component in its container
   		* @returns Ext.Component this
   		*/
   @JSName("center")
   var center_ILoadMask: js.UndefOr[js.Function0[IComponent]] = js.undefined
+  /** [Method] Moves this floating Component into a constrain region
+  		* @param constrainTo String/HTMLElement/Ext.Element/Ext.util.Region The Element or Region into which this Component is to be constrained. Defaults to the element into which this floating Component was rendered.
+  		*/
+  @JSName("doConstrain")
+  var doConstrain_ILoadMask: js.UndefOr[js.Function1[/* constrainTo */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Gets the current store instance
   		* @returns Ext.data.AbstractStore The store, null if one does not exist.
   		*/
@@ -35,7 +36,7 @@ import scala.scalajs.js.annotation._
   		* @param store Object
   		* @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
   		*/
-  var getStoreListeners: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IStore], _]] = js.undefined
+  var getStoreListeners: js.UndefOr[js.Function1[js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IStore], _]] = js.undefined
   /** [Method] Hides this Component setting it to invisible using the configured hideMode
   		* @returns Ext.Component this
   		*/
@@ -53,8 +54,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onBindStore: js.UndefOr[
     js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -70,8 +71,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onUnbindStore: js.UndefOr[
     js.Function2[
-      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[scala.Boolean], 
+      js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      js.UndefOr[scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -110,9 +111,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Unbinds listeners from this component to the store
   		* @param store Ext.data.AbstractStore The store to unbind from
   		*/
-  var unbindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var useMsg: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Boolean) */

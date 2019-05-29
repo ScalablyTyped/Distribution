@@ -34,6 +34,29 @@ trait RoboMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[BatchDescribeSimulationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Cancels the specified deployment job.
+    */
+  def cancelDeploymentJob(): awsDashSdkLib.libRequestMod.Request[CancelDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def cancelDeploymentJob(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CancelDeploymentJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CancelDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Cancels the specified deployment job.
+    */
+  def cancelDeploymentJob(params: CancelDeploymentJobRequest): awsDashSdkLib.libRequestMod.Request[CancelDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def cancelDeploymentJob(
+    params: CancelDeploymentJobRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CancelDeploymentJobResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CancelDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Cancels the specified simulation job.
     */
   def cancelSimulationJob(): awsDashSdkLib.libRequestMod.Request[CancelSimulationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native

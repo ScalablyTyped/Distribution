@@ -12,7 +12,7 @@ object DetailedReactHTMLElement {
   def apply[P /* <: HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
     props: P,
     ref: LegacyRef[T],
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any,
     key: Key = null
   ): DetailedReactHTMLElement[P, T] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])

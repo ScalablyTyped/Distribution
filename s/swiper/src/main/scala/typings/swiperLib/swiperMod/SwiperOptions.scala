@@ -138,9 +138,7 @@ trait SwiperOptions extends js.Object {
   /**
     * Register event handlers.
     */
-  var on: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ key in swiper.swiper.SwiperEvent ]:? (): void}
-    */ js.UndefOr[
+  var on: js.UndefOr[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in swiper.swiper.SwiperEvent ]:? (): void}
     */ swiperLib.swiperLibStrings.SwiperOptions with js.Any

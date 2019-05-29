@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** This class extends MVCObject. */
 @JSGlobal("google.maps.MVCArray")
 @js.native
 /** A mutable MVC Array. */

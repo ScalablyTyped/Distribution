@@ -125,7 +125,7 @@ trait QueryParameters extends js.Object {
     * Default: []
     * https://www.algolia.com/doc/api-reference/api-parameters/facetFilters/
     */
-  var facetFilters: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
+  var facetFilters: js.UndefOr[js.Array[js.Array[java.lang.String] | java.lang.String]] = js.undefined
   /**
     * You can use facets to retrieve only a part of your attributes declared in attributesForFaceting attributes
     * default: []
@@ -381,7 +381,7 @@ object QueryParameters {
     disableTypoToleranceOnAttributes: js.Array[java.lang.String] = null,
     distinct: scala.Double | scala.Boolean = null,
     exactOnSingleWordQuery: algoliasearchLib.algoliasearchLibStrings.attribute | algoliasearchLib.algoliasearchLibStrings.none | algoliasearchLib.algoliasearchLibStrings.word = null,
-    facetFilters: js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = null,
+    facetFilters: js.Array[js.Array[java.lang.String] | java.lang.String] = null,
     facets: js.Array[java.lang.String] = null,
     filters: java.lang.String = null,
     getRankingInfo: js.UndefOr[scala.Boolean] = js.undefined,
@@ -439,7 +439,7 @@ object QueryParameters {
     if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes)
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
     if (exactOnSingleWordQuery != null) __obj.updateDynamic("exactOnSingleWordQuery")(exactOnSingleWordQuery.asInstanceOf[js.Any])
-    if (facetFilters != null) __obj.updateDynamic("facetFilters")(facetFilters.asInstanceOf[js.Any])
+    if (facetFilters != null) __obj.updateDynamic("facetFilters")(facetFilters)
     if (facets != null) __obj.updateDynamic("facets")(facets)
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (!js.isUndefined(getRankingInfo)) __obj.updateDynamic("getRankingInfo")(getRankingInfo)

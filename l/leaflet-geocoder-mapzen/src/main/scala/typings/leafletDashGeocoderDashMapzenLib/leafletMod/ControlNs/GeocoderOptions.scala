@@ -123,7 +123,7 @@ trait GeocoderOptions extends js.Object {
     *
     * Default value: 'topleft'.
     */
-  var position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PositionString */ js.UndefOr[
+  var position: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PositionString */ js.Any
   ] = js.undefined
   /**

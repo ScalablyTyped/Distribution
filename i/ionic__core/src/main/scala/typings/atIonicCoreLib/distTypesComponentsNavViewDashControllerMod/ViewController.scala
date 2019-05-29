@@ -11,13 +11,13 @@ class ViewController protected () extends js.Object {
   def this(component: js.Any) = this()
   def this(component: js.Any, params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any) = this()
   var component: js.Any = js.native
-  var delegate: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.UndefOr[
+  var delegate: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FrameworkDelegate */ js.Any
   ] = js.native
   var element: js.UndefOr[stdLib.HTMLElement] = js.native
   var nav: js.UndefOr[js.Any] = js.native
   var params: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ComponentProps */ js.Any
   ] = js.native
   var state: scala.Double = js.native
   /**

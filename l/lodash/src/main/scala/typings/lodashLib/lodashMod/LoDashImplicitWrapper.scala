@@ -729,16 +729,16 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.find
     */
-  def find[T](`this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]]): js.UndefOr[T] = js.native
-  def find[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]],
-    predicate: ListIterateeCustom[T, scala.Boolean]
-  ): js.UndefOr[T] = js.native
-  def find[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]],
-    predicate: ListIterateeCustom[T, scala.Boolean],
+  def find[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]]): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def find[T /* <: js.Object */](
+    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
+    predicate: ObjectIterateeCustom[T, scala.Boolean]
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def find[T /* <: js.Object */](
+    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
+    predicate: ObjectIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double
-  ): js.UndefOr[T] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   /**
     * @see _.find
     */
@@ -772,16 +772,16 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.findLast
     */
-  def findLast[T](`this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]]): js.UndefOr[T] = js.native
-  def findLast[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]],
-    predicate: ListIterateeCustom[T, scala.Boolean]
-  ): js.UndefOr[T] = js.native
-  def findLast[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]],
-    predicate: ListIterateeCustom[T, scala.Boolean],
+  def findLast[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]]): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def findLast[T /* <: js.Object */](
+    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
+    predicate: ObjectIterateeCustom[T, scala.Boolean]
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def findLast[T /* <: js.Object */](
+    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
+    predicate: ObjectIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double
-  ): js.UndefOr[T] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   /**
     * @see _.findLast
     */
@@ -816,18 +816,18 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.findLast
     */
   @JSName("findLast")
-  def findLast_TObject[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]]): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def findLast_T[T](`this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]]): js.UndefOr[T] = js.native
   @JSName("findLast")
-  def findLast_TObject[T /* <: js.Object */](
-    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
-    predicate: ObjectIterateeCustom[T, scala.Boolean]
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def findLast_T[T](
+    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]],
+    predicate: ListIterateeCustom[T, scala.Boolean]
+  ): js.UndefOr[T] = js.native
   @JSName("findLast")
-  def findLast_TObject[T /* <: js.Object */](
-    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
-    predicate: ObjectIterateeCustom[T, scala.Boolean],
+  def findLast_T[T](
+    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]],
+    predicate: ListIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  ): js.UndefOr[T] = js.native
   /**
     * @see _.findLast
     */
@@ -846,18 +846,18 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.find
     */
   @JSName("find")
-  def find_TObject[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]]): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def find_T[T](`this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]]): js.UndefOr[T] = js.native
   @JSName("find")
-  def find_TObject[T /* <: js.Object */](
-    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
-    predicate: ObjectIterateeCustom[T, scala.Boolean]
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def find_T[T](
+    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]],
+    predicate: ListIterateeCustom[T, scala.Boolean]
+  ): js.UndefOr[T] = js.native
   @JSName("find")
-  def find_TObject[T /* <: js.Object */](
-    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
-    predicate: ObjectIterateeCustom[T, scala.Boolean],
+  def find_T[T](
+    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | scala.Null]],
+    predicate: ListIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  ): js.UndefOr[T] = js.native
   /**
     * @see _.find
     */
@@ -2140,7 +2140,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.mapValues
     */
   @JSName("mapValues")
-  def mapValues_TObject[T /* <: js.Object */](`this`: LoDashImplicitWrapper[T | (js.UndefOr[T | scala.Null])]): LoDashImplicitWrapper[T] = js.native
+  def mapValues_TObject[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[scala.Null | T]]): LoDashImplicitWrapper[T] = js.native
   /**
     * @see _.mapValues
     */
@@ -2933,10 +2933,14 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.reduce
     **/
-  def reduce[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
-    callback: MemoListIterator[T, T, js.Array[T] | List[T]]
-  ): js.UndefOr[T] = js.native
+  def reduce[T /* <: js.Object */](
+    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
+    callback: MemoObjectIterator[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      T
+    ]
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   /**
     * @see _.reduce
     **/
@@ -2951,10 +2955,14 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.reduceRight
     **/
-  def reduceRight[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
-    callback: MemoListIterator[T, T, js.Array[T] | List[T]]
-  ): js.UndefOr[T] = js.native
+  def reduceRight[T /* <: js.Object */](
+    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
+    callback: MemoObjectIterator[
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
+      T
+    ]
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   /**
     * @see _.reduceRight
     **/
@@ -2967,14 +2975,10 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.reduceRight
     **/
   @JSName("reduceRight")
-  def reduceRight_TObject[T /* <: js.Object */](
-    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
-    callback: MemoObjectIterator[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      T
-    ]
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def reduceRight_T[T](
+    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
+    callback: MemoListIterator[T, T, js.Array[T] | List[T]]
+  ): js.UndefOr[T] = js.native
   /**
     * @see _.reduceRight
     **/
@@ -2992,14 +2996,10 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.reduce
     **/
   @JSName("reduce")
-  def reduce_TObject[T /* <: js.Object */](
-    `this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]],
-    callback: MemoObjectIterator[
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
-      T
-    ]
-  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def reduce_T[T](
+    `this`: LoDashImplicitWrapper[js.UndefOr[js.Array[T] | List[T] | scala.Null]],
+    callback: MemoListIterator[T, T, js.Array[T] | List[T]]
+  ): js.UndefOr[T] = js.native
   /**
     * @see _.reduce
     **/
@@ -3089,9 +3089,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.sample
     */
-  def sample[T](
-    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | Dictionary[T] | NumericDictionary[T] | scala.Null]]
-  ): js.UndefOr[T] = js.native
+  def sample[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]]): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   /**
     * @see _.sampleSize
     */
@@ -3117,7 +3115,9 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.sample
     */
   @JSName("sample")
-  def sample_TObject[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]]): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
+  def sample_T[T](
+    `this`: LoDashImplicitWrapper[js.UndefOr[List[T] | Dictionary[T] | NumericDictionary[T] | scala.Null]]
+  ): js.UndefOr[T] = js.native
   /**
     * @see _.set
     */

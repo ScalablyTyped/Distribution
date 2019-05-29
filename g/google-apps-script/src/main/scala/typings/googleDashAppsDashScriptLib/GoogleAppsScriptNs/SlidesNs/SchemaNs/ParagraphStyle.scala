@@ -11,7 +11,7 @@ trait ParagraphStyle extends js.Object {
   var indentEnd: js.UndefOr[Dimension] = js.undefined
   var indentFirstLine: js.UndefOr[Dimension] = js.undefined
   var indentStart: js.UndefOr[Dimension] = js.undefined
-  var lineSpacing: js.UndefOr[stdLib.Number] = js.undefined
+  var lineSpacing: js.UndefOr[scala.Double] = js.undefined
   var spaceAbove: js.UndefOr[Dimension] = js.undefined
   var spaceBelow: js.UndefOr[Dimension] = js.undefined
   var spacingMode: js.UndefOr[java.lang.String] = js.undefined
@@ -25,7 +25,7 @@ object ParagraphStyle {
     indentEnd: Dimension = null,
     indentFirstLine: Dimension = null,
     indentStart: Dimension = null,
-    lineSpacing: stdLib.Number = null,
+    lineSpacing: scala.Int | scala.Double = null,
     spaceAbove: Dimension = null,
     spaceBelow: Dimension = null,
     spacingMode: java.lang.String = null
@@ -36,7 +36,7 @@ object ParagraphStyle {
     if (indentEnd != null) __obj.updateDynamic("indentEnd")(indentEnd)
     if (indentFirstLine != null) __obj.updateDynamic("indentFirstLine")(indentFirstLine)
     if (indentStart != null) __obj.updateDynamic("indentStart")(indentStart)
-    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing)
+    if (lineSpacing != null) __obj.updateDynamic("lineSpacing")(lineSpacing.asInstanceOf[js.Any])
     if (spaceAbove != null) __obj.updateDynamic("spaceAbove")(spaceAbove)
     if (spaceBelow != null) __obj.updateDynamic("spaceBelow")(spaceBelow)
     if (spacingMode != null) __obj.updateDynamic("spacingMode")(spacingMode)

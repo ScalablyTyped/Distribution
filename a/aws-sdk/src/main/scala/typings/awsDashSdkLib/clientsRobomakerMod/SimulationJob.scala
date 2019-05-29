@@ -27,9 +27,13 @@ trait SimulationJob extends js.Object {
     */
   var failureReason: js.UndefOr[GenericString] = js.undefined
   /**
-    * The IAM role that allows the simulation instance to call the AWS APIs that are specified in its associated policies on your behalf. This is how credentials are passed in to your simulation job. See how to specify AWS security credentials for your application. 
+    * The IAM role that allows the simulation instance to call the AWS APIs that are specified in its associated policies on your behalf. This is how credentials are passed in to your simulation job. 
     */
   var iamRole: js.UndefOr[IamRole] = js.undefined
+  /**
+    * The time, in milliseconds since the epoch, when the simulation job was last started.
+    */
+  var lastStartedAt: js.UndefOr[LastStartedAt] = js.undefined
   /**
     * The time, in milliseconds since the epoch, when the simulation job was last updated.
     */
@@ -81,6 +85,7 @@ object SimulationJob {
     failureCode: SimulationJobErrorCode = null,
     failureReason: GenericString = null,
     iamRole: IamRole = null,
+    lastStartedAt: LastStartedAt = null,
     lastUpdatedAt: LastUpdatedAt = null,
     maxJobDurationInSeconds: js.UndefOr[JobDuration] = js.undefined,
     name: Name = null,
@@ -99,6 +104,7 @@ object SimulationJob {
     if (failureCode != null) __obj.updateDynamic("failureCode")(failureCode.asInstanceOf[js.Any])
     if (failureReason != null) __obj.updateDynamic("failureReason")(failureReason)
     if (iamRole != null) __obj.updateDynamic("iamRole")(iamRole)
+    if (lastStartedAt != null) __obj.updateDynamic("lastStartedAt")(lastStartedAt)
     if (lastUpdatedAt != null) __obj.updateDynamic("lastUpdatedAt")(lastUpdatedAt)
     if (!js.isUndefined(maxJobDurationInSeconds)) __obj.updateDynamic("maxJobDurationInSeconds")(maxJobDurationInSeconds)
     if (name != null) __obj.updateDynamic("name")(name)

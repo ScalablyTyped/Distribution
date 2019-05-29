@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateDBInstanceReadReplicaMessage extends js.Object {
   /**
-    * A value that indicates whether minor engine upgrades are applied automatically to the Read Replica during the maintenance window. Default: Inherits from the source DB instance
+    * Indicates that minor engine upgrades are applied automatically to the Read Replica during the maintenance window. Default: Inherits from the source DB instance
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates whether to copy all tags from the Read Replica to snapshots of the Read Replica. By default, tags are not copied.
+    * True to copy all tags from the Read Replica to snapshots of the Read Replica, and otherwise false. The default is false.
     */
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -31,7 +31,7 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates whether the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. For more information, see  Deleting a DB Instance. 
+    * Indicates if the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to true. The default is false. For more information, see  Deleting a DB Instance. 
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -39,11 +39,11 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   /**
-    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled. You can enable IAM database authentication for the following database engines   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Aurora MySQL 5.6 or higher  
+    * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. You can enable IAM database authentication for the following database engines   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Aurora MySQL 5.6 or higher   Default: false 
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * A value that indicates whether to enable Performance Insights for the Read Replica.  For more information, see Using Amazon Performance Insights in the Amazon RDS User Guide. 
+    * True to enable Performance Insights for the Read Replica, and otherwise false.  For more information, see Using Amazon Performance Insights in the Amazon RDS User Guide. 
     */
   var EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -63,7 +63,7 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var MonitoringRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * A value that indicates whether the Read Replica is in a Multi-AZ deployment.  You can create a Read Replica as a Multi-AZ DB instance. RDS creates a standby of your replica in another Availability Zone for failover support for the replica. Creating your Read Replica as a Multi-AZ DB instance is independent of whether the source database is a Multi-AZ DB instance. 
+    * Specifies whether the Read Replica is in a Multi-AZ deployment.  You can create a Read Replica as a Multi-AZ DB instance. RDS creates a standby of your replica in another Availability Zone for failover support for the replica. Creating your Read Replica as a Multi-AZ DB instance is independent of whether the source database is a Multi-AZ DB instance. 
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -71,7 +71,7 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var OptionGroupName: js.UndefOr[String] = js.undefined
   /**
-    * The AWS KMS key identifier for encryption of Performance Insights data. The KMS key ID is the Amazon Resource Name (ARN), KMS key identifier, or the KMS key alias for the KMS encryption key. If you do not specify a value for PerformanceInsightsKMSKeyId, then Amazon RDS uses your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS Region.
+    * The AWS KMS key identifier for encryption of Performance Insights data. The KMS key ID is the Amazon Resource Name (ARN), KMS key identifier, or the KMS key alias for the KMS encryption key.
     */
   var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.undefined
   /**
-    * A value that indicates whether the DB instance is publicly accessible. When the DB instance is publicly accessible, it is an Internet-facing instance with a publicly resolvable DNS name, which resolves to a public IP address. When the DB instance is not publicly accessible, it is an internal instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
+    * Specifies the accessibility options for the DB instance. A value of true specifies an Internet-facing instance with a publicly resolvable DNS name, which resolves to a public IP address. A value of false specifies an internal instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
     */
   var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -103,12 +103,12 @@ trait CreateDBInstanceReadReplicaMessage extends js.Object {
     */
   var SourceRegion: js.UndefOr[String] = js.undefined
   /**
-    * Specifies the storage type to be associated with the Read Replica.  Valid values: standard | gp2 | io1   If you specify io1, you must also include a value for the Iops parameter.   Default: io1 if the Iops parameter is specified, otherwise gp2 
+    * Specifies the storage type to be associated with the Read Replica.  Valid values: standard | gp2 | io1   If you specify io1, you must also include a value for the Iops parameter.   Default: io1 if the Iops parameter is specified, otherwise standard 
     */
   var StorageType: js.UndefOr[String] = js.undefined
   var Tags: js.UndefOr[TagList] = js.undefined
   /**
-    * A value that indicates whether the DB instance class of the DB instance uses its default processor features.
+    * A value that specifies that the DB instance class of the DB instance uses its default processor features.
     */
   var UseDefaultProcessorFeatures: js.UndefOr[BooleanOptional] = js.undefined
   /**

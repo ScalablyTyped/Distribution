@@ -19,7 +19,7 @@ trait CreateDeliverabilityTestReportRequest extends js.Object {
     */
   var ReportName: js.UndefOr[ReportName] = js.undefined
   /**
-    * An object that defines the tags (keys and values) that you want to associate with the predictive inbox placement test.
+    * An array of objects that define the tags (keys and values) that you want to associate with the predictive inbox placement test.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

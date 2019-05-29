@@ -12,8 +12,8 @@ class CommentTagSerializer ()
   @JSName("serializeGroupSymbol")
   var serializeGroupSymbol_CommentTagSerializer: org.scalablytyped.runtime.Instantiable3[
     /* tagName */ java.lang.String, 
-    /* paramName */ js.UndefOr[/* paramName */ java.lang.String], 
-    /* text */ js.UndefOr[/* text */ java.lang.String], 
+    js.UndefOr[/* paramName */ java.lang.String], 
+    js.UndefOr[/* text */ java.lang.String], 
     typedocLib.distLibModelsMod.CommentTag
   ] = js.native
 }

@@ -32,7 +32,7 @@ object KeyframesProps {
     times: js.Array[scala.Double] = null,
     yoyo: scala.Int | scala.Double = null
   ): KeyframesProps = {
-    val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(values = values)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (ease != null) __obj.updateDynamic("ease")(ease.asInstanceOf[js.Any])
     if (easings != null) __obj.updateDynamic("easings")(easings)

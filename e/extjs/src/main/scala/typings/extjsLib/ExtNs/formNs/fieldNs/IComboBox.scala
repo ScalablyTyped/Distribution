@@ -24,16 +24,17 @@ import scala.scalajs.js.annotation._
   		* @param queryPlan Object An object containing details about the query to be executed.
   		*/
   var beforeQuery: js.UndefOr[js.Function1[/* queryPlan */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  /** [Method] Template method before a field is reset  */
+  @JSName("beforeReset")
+  var beforeReset_IComboBox: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Binds a store to this instance
   		* @param store Ext.data.AbstractStore/String The store to bind or ID of the store. When no store given (or when null or undefined passed), unbinds the existing store.
   		*/
-  var bindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var bindStore: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Binds listeners for this component to the store
   		* @param store Ext.data.AbstractStore The store to bind to
   		*/
-  var bindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var bindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Clears any value currently set in the ComboBox  */
@@ -103,6 +104,11 @@ import scala.scalajs.js.annotation._
   		*/
   @JSName("getSubmitValue")
   var getSubmitValue_IComboBox: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  /** [Method] Returns the current data value of the field
+  		* @returns Object value The field value
+  		*/
+  @JSName("getValue")
+  var getValue_IComboBox: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Config Option] (Boolean) */
   var growToLongestValue: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (String) */
@@ -121,8 +127,8 @@ import scala.scalajs.js.annotation._
   		*/
   var onBindStore: js.UndefOr[
     js.Function2[
-      /* store */ js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IAbstractStore], 
-      /* initial */ js.UndefOr[js.Any | scala.Boolean], 
+      js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IAbstractStore], 
+      js.UndefOr[js.Any | scala.Boolean], 
       scala.Unit
     ]
   ] = js.undefined
@@ -165,9 +171,7 @@ import scala.scalajs.js.annotation._
   /** [Method] Unbinds listeners from this component to the store
   		* @param store Ext.data.AbstractStore The store to unbind from
   		*/
-  var unbindStoreListeners: js.UndefOr[
-    js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]
-  ] = js.undefined
+  var unbindStoreListeners: js.UndefOr[js.Function1[js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], scala.Unit]] = js.undefined
   /** [Config Option] (String) */
   var valueField: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (String) */

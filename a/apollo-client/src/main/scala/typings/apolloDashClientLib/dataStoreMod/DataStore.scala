@@ -23,6 +23,13 @@ class DataStore[TSerialized] protected () extends js.Object {
     result: graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault],
     document: graphqlLib.languageAstMod.DocumentNode,
     variables: js.Any,
+    fetchMoreForQueryId: js.UndefOr[scala.Nothing],
+    ignoreErrors: scala.Boolean
+  ): scala.Unit = js.native
+  def markQueryResult(
+    result: graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault],
+    document: graphqlLib.languageAstMod.DocumentNode,
+    variables: js.Any,
     fetchMoreForQueryId: java.lang.String
   ): scala.Unit = js.native
   def markQueryResult(
@@ -30,13 +37,6 @@ class DataStore[TSerialized] protected () extends js.Object {
     document: graphqlLib.languageAstMod.DocumentNode,
     variables: js.Any,
     fetchMoreForQueryId: java.lang.String,
-    ignoreErrors: scala.Boolean
-  ): scala.Unit = js.native
-  def markQueryResult(
-    result: graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault],
-    document: graphqlLib.languageAstMod.DocumentNode,
-    variables: js.Any,
-    fetchMoreForQueryId: js.UndefOr[scala.Nothing],
     ignoreErrors: scala.Boolean
   ): scala.Unit = js.native
   def markSubscriptionResult(

@@ -58,13 +58,11 @@ import scala.scalajs.js.annotation._
   		* @param attributes Object The source attributes.
   		* @param changes Object The changes to be popped up.
   		*/
-  var popUp: js.UndefOr[
-    js.Function2[/* attributes */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], scala.Unit]
-  ] = js.undefined
+  var popUp: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Method] Validate attribute set before use
   		* @param attr Object The attribute to be validated. Note that it may be already initialized, so do not override properties that have already been used.
   		*/
-  var prepareAttributes: js.UndefOr[js.Function1[/* attr */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var prepareAttributes: js.UndefOr[js.Function1[js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (Ext.draw.modifier.Modifier) */
   var previous: js.UndefOr[IModifier] = js.undefined
   /** [Method] Invoked when changes need to be pushed down to the sprite
@@ -72,7 +70,7 @@ import scala.scalajs.js.annotation._
   		* @param changes Object The changes to make. This object might be changed unexpectedly inside the method.
   		* @returns Mixed
   		*/
-  var pushDown: js.UndefOr[js.Function2[/* attr */ js.UndefOr[js.Any], /* changes */ js.UndefOr[js.Any], _]] = js.undefined
+  var pushDown: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
   		* @param object Object The Observable whose events this object is to relay.
   		* @param events String/Array/Object Array of event names to relay.

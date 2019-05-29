@@ -36,6 +36,7 @@ class FormatCondition protected () extends js.Object {
   def Borders(Index: XlBordersIndex): Border = js.native
   def Delete(): scala.Unit = js.native
   def Modify(Type: XlFormatConditionType): scala.Unit = js.native
+  def Modify(Type: XlFormatConditionType, Operator: js.UndefOr[scala.Nothing], Formula1: java.lang.String): scala.Unit = js.native
   def Modify(Type: XlFormatConditionType, Operator: XlFormatConditionOperator): scala.Unit = js.native
   def Modify(Type: XlFormatConditionType, Operator: XlFormatConditionOperator, Formula1: java.lang.String): scala.Unit = js.native
   def Modify(
@@ -59,7 +60,6 @@ class FormatCondition protected () extends js.Object {
     String: js.Any,
     Operator2: js.Any
   ): scala.Unit = js.native
-  def Modify(Type: XlFormatConditionType, Operator: js.UndefOr[scala.Nothing], Formula1: java.lang.String): scala.Unit = js.native
   def ModifyAppliesToRange(Range: Range): scala.Unit = js.native
   def SetFirstPriority(): scala.Unit = js.native
   def SetLastPriority(): scala.Unit = js.native

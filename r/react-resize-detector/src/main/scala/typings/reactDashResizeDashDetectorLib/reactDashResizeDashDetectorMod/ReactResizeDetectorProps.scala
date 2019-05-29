@@ -26,7 +26,7 @@ trait ReactResizeDetectorProps
     * Default: "div"
     */
   var nodeType: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 116 */ js.Any
   ] = js.undefined
   /**
     * Function that will be invoked with width and height arguments.
@@ -79,7 +79,7 @@ object ReactResizeDetectorProps {
     handleHeight: js.UndefOr[scala.Boolean] = js.undefined,
     handleWidth: js.UndefOr[scala.Boolean] = js.undefined,
     key: reactLib.reactMod.Key = null,
-    nodeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any = null,
+    nodeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 116 */ js.Any = null,
     onResize: (/* width */ scala.Double, /* height */ scala.Double) => scala.Unit = null,
     querySelector: java.lang.String = null,
     ref: reactLib.reactMod.LegacyRef[ReactResizeDetector] = null,

@@ -13,11 +13,11 @@ trait OverlayInterface extends js.Object {
   var didDismiss: atIonicCoreLib.distTypesStencilDotCoreMod.EventEmitter[OverlayEventDetail[_]] = js.native
   var didPresent: atIonicCoreLib.distTypesStencilDotCoreMod.EventEmitter[scala.Unit] = js.native
   var el: stdLib.HTMLElement = js.native
-  var enterAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var enterAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.native
   var keyboardClose: scala.Boolean = js.native
-  var leaveAnimation: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.UndefOr[
+  var leaveAnimation: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AnimationBuilder */ js.Any
   ] = js.native
   var mode: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mode */ js.Any = js.native

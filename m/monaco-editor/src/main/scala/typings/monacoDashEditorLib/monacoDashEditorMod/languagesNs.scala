@@ -1913,14 +1913,14 @@ object languagesNs extends js.Object {
     }
     
     type CompilerOptionsValue = js.UndefOr[
-        java.lang.String | scala.Double | scala.Boolean | (js.Array[java.lang.String | scala.Double]) | js.Array[java.lang.String] | MapLike[js.Array[java.lang.String]] | scala.Null
+        java.lang.String | scala.Double | scala.Boolean | (js.Array[scala.Double | java.lang.String]) | MapLike[js.Array[java.lang.String]] | scala.Null
       ]
     type MapLike[T] = org.scalablytyped.runtime.StringDictionary[T]
   }
   
   type CharacterPair = js.Tuple2[java.lang.String, java.lang.String]
-  type Definition = Location | js.Array[Location] | js.Array[LocationLink]
-  type IMonarchLanguageAction = IShortMonarchLanguageAction | IExpandedMonarchLanguageAction | js.Array[IShortMonarchLanguageAction] | js.Array[IExpandedMonarchLanguageAction]
+  type Definition = Location | (js.Array[Location | LocationLink])
+  type IMonarchLanguageAction = IShortMonarchLanguageAction | IExpandedMonarchLanguageAction | (js.Array[IExpandedMonarchLanguageAction | IShortMonarchLanguageAction])
   type IMonarchLanguageRule = IShortMonarchLanguageRule1 | IShortMonarchLanguageRule2 | IExpandedMonarchLanguageRule
   type IShortMonarchLanguageAction = java.lang.String
   type IShortMonarchLanguageRule1 = js.Tuple2[stdLib.RegExp, IMonarchLanguageAction]

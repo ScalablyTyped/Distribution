@@ -311,13 +311,11 @@ trait SeriesScatter extends Series {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.data
     */
   var data: js.UndefOr[
-    (js.Array[
-      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesScatterNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    js.Array[
+      (js.Array[
         scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesScatterNs.DataObject
-      ]
-    ])
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesScatterNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ]
   ] = js.undefined
   /**
     * If
@@ -788,13 +786,11 @@ object SeriesScatter {
     calendarIndex: scala.Int | scala.Double = null,
     coordinateSystem: java.lang.String = null,
     cursor: java.lang.String = null,
-    data: (js.Array[
-      scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesScatterNs.DataObject
-    ]) | (js.Array[
-      js.Array[
+    data: js.Array[
+      (js.Array[
         scala.Unit | scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesScatterNs.DataObject
-      ]
-    ]) = null,
+      ]) | echartsLib.echartsNs.EChartOptionNs.SeriesScatterNs.DataObject | scala.Double | java.lang.String | scala.Unit
+    ] = null,
     datasetIndex: scala.Int | scala.Double = null,
     dimensions: js.Array[_] = null,
     emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor = null,
@@ -840,7 +836,7 @@ object SeriesScatter {
     if (calendarIndex != null) __obj.updateDynamic("calendarIndex")(calendarIndex.asInstanceOf[js.Any])
     if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
     if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
     if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)

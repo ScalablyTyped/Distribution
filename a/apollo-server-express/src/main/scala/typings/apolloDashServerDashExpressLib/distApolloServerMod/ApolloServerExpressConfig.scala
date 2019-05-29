@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait ApolloServerExpressConfig extends js.Object {
-  var context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ContextFunction<ExpressContext, Context> */ js.UndefOr[
+  var context: js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ContextFunction<ExpressContext, Context> */ js.Any
   ] = js.undefined
 }

@@ -36,6 +36,7 @@ object Node {
     size: scala.Int | scala.Double = null,
     title: java.lang.String = null,
     value: scala.Int | scala.Double = null,
+    widthConstraint: scala.Double | scala.Boolean | visLib.Anon_Maximum = null,
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null
   ): Node = {
@@ -64,6 +65,7 @@ object Node {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (widthConstraint != null) __obj.updateDynamic("widthConstraint")(widthConstraint.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]

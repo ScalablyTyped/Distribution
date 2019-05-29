@@ -54,12 +54,12 @@ trait JdbcCallableStatement extends js.Object {
   def getDate(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, timeZone: java.lang.String): JdbcDate = js.native
   def getDate(parameterName: java.lang.String): JdbcDate = js.native
   def getDate(parameterName: java.lang.String, timeZone: java.lang.String): JdbcDate = js.native
-  def getDouble(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): stdLib.Number = js.native
-  def getDouble(parameterName: java.lang.String): stdLib.Number = js.native
+  def getDouble(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Double = js.native
+  def getDouble(parameterName: java.lang.String): scala.Double = js.native
   def getFetchDirection(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getFetchSize(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
-  def getFloat(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): stdLib.Number = js.native
-  def getFloat(parameterName: java.lang.String): stdLib.Number = js.native
+  def getFloat(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Double = js.native
+  def getFloat(parameterName: java.lang.String): scala.Double = js.native
   def getGeneratedKeys(): JdbcResultSet = js.native
   def getInt(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getInt(parameterName: java.lang.String): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
@@ -162,13 +162,13 @@ trait JdbcCallableStatement extends js.Object {
   ): scala.Unit = js.native
   def setDate(parameterName: java.lang.String, x: JdbcDate): scala.Unit = js.native
   def setDate(parameterName: java.lang.String, x: JdbcDate, timeZone: java.lang.String): scala.Unit = js.native
-  def setDouble(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: stdLib.Number): scala.Unit = js.native
-  def setDouble(parameterName: java.lang.String, x: stdLib.Number): scala.Unit = js.native
+  def setDouble(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: scala.Double): scala.Unit = js.native
+  def setDouble(parameterName: java.lang.String, x: scala.Double): scala.Unit = js.native
   def setEscapeProcessing(enable: scala.Boolean): scala.Unit = js.native
   def setFetchDirection(direction: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
   def setFetchSize(rows: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
-  def setFloat(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: stdLib.Number): scala.Unit = js.native
-  def setFloat(parameterName: java.lang.String, x: stdLib.Number): scala.Unit = js.native
+  def setFloat(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: scala.Double): scala.Unit = js.native
+  def setFloat(parameterName: java.lang.String, x: scala.Double): scala.Unit = js.native
   def setInt(
     parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     x: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer

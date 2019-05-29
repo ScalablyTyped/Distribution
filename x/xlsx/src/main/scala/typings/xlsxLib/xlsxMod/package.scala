@@ -15,11 +15,9 @@ package object xlsxMod {
   type SheetKeys = _SheetKeys | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - SheetKeys
-    - js.Array[ColInfo]
-    - js.Array[RowInfo]
-    - js.Array[Range]
+    - js.Array[ColInfo | Range | RowInfo]
     - ProtectInfo
     - AutoFilterInfo
   */
-  type WSKeys = _WSKeys | js.Array[ColInfo] | js.Array[RowInfo] | js.Array[Range] | java.lang.String
+  type WSKeys = _WSKeys | (js.Array[ColInfo | Range | RowInfo]) | java.lang.String
 }
