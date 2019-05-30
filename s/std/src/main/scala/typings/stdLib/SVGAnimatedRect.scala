@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGAnimatedRect interface is used for attributes of basic SVGRect which can be animated. */
+/** Used for attributes of basic SVGRect which can be animated. */
 trait SVGAnimatedRect extends js.Object {
   val animVal: DOMRectReadOnly
   val baseVal: DOMRect

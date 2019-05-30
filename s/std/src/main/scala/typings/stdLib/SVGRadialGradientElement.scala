@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGRadialGradientElement interface corresponds to the <RadialGradient> element. */
+/** Corresponds to the <RadialGradient> element. */
 @js.native
 trait SVGRadialGradientElement extends SVGGradientElement {
   val cx: SVGAnimatedLength = js.native
@@ -22,6 +22,8 @@ class SVGRadialGradientElementCls () extends SVGRadialGradientElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val href: SVGAnimatedString = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

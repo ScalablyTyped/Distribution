@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class BoundEventAst protected ()
   extends atAngularCompilerLib.srcCompilerMod.BoundEventAst {
-  def this(name: java.lang.String, target: java.lang.String, phase: java.lang.String, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
-  def this(name: java.lang.String, target: java.lang.String, phase: scala.Null, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
-  def this(name: java.lang.String, target: scala.Null, phase: java.lang.String, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
-  def this(name: java.lang.String, target: scala.Null, phase: scala.Null, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
+  def this(name: java.lang.String, target: java.lang.String, phase: java.lang.String, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan, handlerSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
+  def this(name: java.lang.String, target: java.lang.String, phase: scala.Null, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan, handlerSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
+  def this(name: java.lang.String, target: scala.Null, phase: java.lang.String, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan, handlerSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
+  def this(name: java.lang.String, target: scala.Null, phase: scala.Null, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan, handlerSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
 }
 
 /* static members */

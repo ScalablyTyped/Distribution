@@ -17,6 +17,7 @@ trait Colors extends js.Object {
     */
   @JSName("failure")
   var failure_Original: ColorFunction = js.native
+  var help: HelpColors = js.native
   /**
     * Used to mark text as input such as commands, inputs, options, etc.
     */

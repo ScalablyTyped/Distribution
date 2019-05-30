@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait With
-  extends WithRaw
-     with WithWrapped {
+trait With[TRecord, TResult]
+  extends WithRaw[TRecord, TResult]
+     with WithWrapped[TRecord, TResult] {
   /* InferMemberOverrides */
-  override def apply(alias: java.lang.String, raw: QueryBuilder): QueryBuilder = js.native
+  override def apply(alias: java.lang.String, raw: QueryBuilder[_, js.Array[SafePartial[_]]]): QueryBuilder[TRecord, TResult] = js.native
 }
 

@@ -15,7 +15,7 @@ trait DBClusterMember extends js.Object {
     */
   var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
   /**
-    * Value that is true if the cluster member is the primary instance for the DB cluster and false otherwise.
+    * A value that indicates whehter the cluster member is the primary instance for the DB cluster.
     */
   var IsClusterWriter: js.UndefOr[Boolean] = js.undefined
   /**

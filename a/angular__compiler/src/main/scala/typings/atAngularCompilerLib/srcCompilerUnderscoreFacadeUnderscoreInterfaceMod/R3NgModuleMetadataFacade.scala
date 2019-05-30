@@ -11,6 +11,7 @@ trait R3NgModuleMetadataFacade extends js.Object {
   var emitInline: scala.Boolean
   var exports: js.Array[js.Function]
   var imports: js.Array[js.Function]
+  var schemas: js.Array[atAngularCompilerLib.Anon_NameString] | scala.Null
   var `type`: js.Any
 }
 
@@ -22,10 +23,12 @@ object R3NgModuleMetadataFacade {
     emitInline: scala.Boolean,
     exports: js.Array[js.Function],
     imports: js.Array[js.Function],
-    `type`: js.Any
+    `type`: js.Any,
+    schemas: js.Array[atAngularCompilerLib.Anon_NameString] = null
   ): R3NgModuleMetadataFacade = {
     val __obj = js.Dynamic.literal(bootstrap = bootstrap, declarations = declarations, emitInline = emitInline, exports = exports, imports = imports)
     __obj.updateDynamic("type")(`type`)
+    if (schemas != null) __obj.updateDynamic("schemas")(schemas)
     __obj.asInstanceOf[R3NgModuleMetadataFacade]
   }
 }

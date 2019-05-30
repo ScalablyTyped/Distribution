@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/router", "PreloadAllModules")
 @js.native
-class PreloadAllModules ()
-  extends atAngularRouterLib.publicUnderscoreApiMod.PreloadAllModules
+class PreloadAllModules () extends PreloadingStrategy
 

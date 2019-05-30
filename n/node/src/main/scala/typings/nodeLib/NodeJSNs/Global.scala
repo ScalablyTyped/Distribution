@@ -67,7 +67,7 @@ trait Global extends js.Object {
   @JSName("decodeURI")
   var decodeURI_Original: js.Function1[/* encodedURI */ java.lang.String, java.lang.String] = js.native
   @JSName("encodeURIComponent")
-  var encodeURIComponent_Original: js.Function1[/* uriComponent */ java.lang.String, java.lang.String] = js.native
+  var encodeURIComponent_Original: nodeLib.Fn_UriComponent = js.native
   @JSName("encodeURI")
   var encodeURI_Original: js.Function1[/* uri */ java.lang.String, java.lang.String] = js.native
   @JSName("eval")
@@ -92,8 +92,8 @@ trait Global extends js.Object {
   def Array[T](items: T*): js.Array[T] = js.native
   @JSName("Array")
   def Array_T[T](arrayLength: scala.Double): js.Array[T] = js.native
-  def Boolean(): scala.Boolean = js.native
-  def Boolean(value: js.Any): scala.Boolean = js.native
+  def Boolean[T](): scala.Boolean = js.native
+  def Boolean[T](value: T): scala.Boolean = js.native
   def Date(): java.lang.String = js.native
   def Error(): stdLib.Error = js.native
   def Error(message: java.lang.String): stdLib.Error = js.native
@@ -127,6 +127,8 @@ trait Global extends js.Object {
   def decodeURIComponent(encodedURIComponent: java.lang.String): java.lang.String = js.native
   def encodeURI(uri: java.lang.String): java.lang.String = js.native
   def encodeURIComponent(uriComponent: java.lang.String): java.lang.String = js.native
+  def encodeURIComponent(uriComponent: scala.Boolean): java.lang.String = js.native
+  def encodeURIComponent(uriComponent: scala.Double): java.lang.String = js.native
   def escape(str: java.lang.String): java.lang.String = js.native
   def eval(x: java.lang.String): js.Any = js.native
   def gc(): scala.Unit = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteInsightRequest extends js.Object {
   /**
-    * The ARN of the insight that you want to delete.
+    * The ARN of the insight to delete.
     */
   var InsightArn: NonEmptyString
 }

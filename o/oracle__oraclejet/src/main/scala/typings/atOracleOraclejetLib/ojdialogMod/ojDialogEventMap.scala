@@ -45,7 +45,7 @@ object ojDialogEventMap {
     animationend: stdLib.AnimationEvent,
     animationiteration: stdLib.AnimationEvent,
     animationstart: stdLib.AnimationEvent,
-    auxclick: stdLib.Event,
+    auxclick: stdLib.MouseEvent,
     blur: stdLib.FocusEvent,
     cancel: stdLib.Event,
     cancelBehaviorChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[

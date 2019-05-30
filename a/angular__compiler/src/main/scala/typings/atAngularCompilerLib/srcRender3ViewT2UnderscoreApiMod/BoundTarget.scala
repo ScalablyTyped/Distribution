@@ -60,5 +60,9 @@ trait BoundTarget[DirectiveT /* <: DirectiveMeta */] extends js.Object {
     * Get a list of all the directives used by the target.
     */
   def getUsedDirectives(): js.Array[DirectiveT] = js.native
+  /**
+    * Get a list of all the pipes used by the target.
+    */
+  def getUsedPipes(): js.Array[java.lang.String] = js.native
 }
 

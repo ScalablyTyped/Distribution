@@ -75,7 +75,6 @@ object VendorPropertiesFallback {
     MozUserModify: MozUserModifyProperty | js.Array[MozUserModifyProperty] = null,
     MozUserSelect: UserSelectProperty | js.Array[UserSelectProperty] = null,
     MozWindowDragging: MozWindowDraggingProperty | js.Array[MozWindowDraggingProperty] = null,
-    MozWindowShadow: MozWindowShadowProperty | js.Array[MozWindowShadowProperty] = null,
     OObjectFit: ObjectFitProperty | js.Array[ObjectFitProperty] = null,
     OObjectPosition: ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]] = null,
     OTabSize: TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]] = null,
@@ -192,6 +191,7 @@ object VendorPropertiesFallback {
     WebkitUserModify: WebkitUserModifyProperty | js.Array[WebkitUserModifyProperty] = null,
     WebkitUserSelect: UserSelectProperty | js.Array[UserSelectProperty] = null,
     WebkitWritingMode: WritingModeProperty | js.Array[WritingModeProperty] = null,
+    WebkitmaskSize: MaskSizeProperty[TLength] | js.Array[MaskSizeProperty[TLength]] = null,
     msAccelerator: MsAcceleratorProperty | js.Array[MsAcceleratorProperty] = null,
     msAlignSelf: AlignSelfProperty | js.Array[AlignSelfProperty] = null,
     msBlockProgression: MsBlockProgressionProperty | js.Array[MsBlockProgressionProperty] = null,
@@ -235,6 +235,14 @@ object VendorPropertiesFallback {
     msScrollSnapX: GlobalsString | js.Array[GlobalsString] = null,
     msScrollSnapY: GlobalsString | js.Array[GlobalsString] = null,
     msScrollTranslation: MsScrollTranslationProperty | js.Array[MsScrollTranslationProperty] = null,
+    msScrollbar3dlightColor: MsScrollbar3dlightColorProperty | js.Array[MsScrollbar3dlightColorProperty] = null,
+    msScrollbarArrowColor: MsScrollbarArrowColorProperty | js.Array[MsScrollbarArrowColorProperty] = null,
+    msScrollbarBaseColor: MsScrollbarBaseColorProperty | js.Array[MsScrollbarBaseColorProperty] = null,
+    msScrollbarDarkshadowColor: MsScrollbarDarkshadowColorProperty | js.Array[MsScrollbarDarkshadowColorProperty] = null,
+    msScrollbarFaceColor: MsScrollbarFaceColorProperty | js.Array[MsScrollbarFaceColorProperty] = null,
+    msScrollbarHighlightColor: MsScrollbarHighlightColorProperty | js.Array[MsScrollbarHighlightColorProperty] = null,
+    msScrollbarShadowColor: MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty] = null,
+    msScrollbarTrackColor: MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty] = null,
     msTextAutospace: MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty] = null,
     msTextCombineHorizontal: TextCombineUprightProperty | js.Array[TextCombineUprightProperty] = null,
     msTextOverflow: TextOverflowProperty | js.Array[TextOverflowProperty] = null,
@@ -314,7 +322,6 @@ object VendorPropertiesFallback {
     if (MozUserModify != null) __obj.updateDynamic("MozUserModify")(MozUserModify.asInstanceOf[js.Any])
     if (MozUserSelect != null) __obj.updateDynamic("MozUserSelect")(MozUserSelect.asInstanceOf[js.Any])
     if (MozWindowDragging != null) __obj.updateDynamic("MozWindowDragging")(MozWindowDragging.asInstanceOf[js.Any])
-    if (MozWindowShadow != null) __obj.updateDynamic("MozWindowShadow")(MozWindowShadow.asInstanceOf[js.Any])
     if (OObjectFit != null) __obj.updateDynamic("OObjectFit")(OObjectFit.asInstanceOf[js.Any])
     if (OObjectPosition != null) __obj.updateDynamic("OObjectPosition")(OObjectPosition.asInstanceOf[js.Any])
     if (OTabSize != null) __obj.updateDynamic("OTabSize")(OTabSize.asInstanceOf[js.Any])
@@ -431,6 +438,7 @@ object VendorPropertiesFallback {
     if (WebkitUserModify != null) __obj.updateDynamic("WebkitUserModify")(WebkitUserModify.asInstanceOf[js.Any])
     if (WebkitUserSelect != null) __obj.updateDynamic("WebkitUserSelect")(WebkitUserSelect.asInstanceOf[js.Any])
     if (WebkitWritingMode != null) __obj.updateDynamic("WebkitWritingMode")(WebkitWritingMode.asInstanceOf[js.Any])
+    if (WebkitmaskSize != null) __obj.updateDynamic("WebkitmaskSize")(WebkitmaskSize.asInstanceOf[js.Any])
     if (msAccelerator != null) __obj.updateDynamic("msAccelerator")(msAccelerator.asInstanceOf[js.Any])
     if (msAlignSelf != null) __obj.updateDynamic("msAlignSelf")(msAlignSelf.asInstanceOf[js.Any])
     if (msBlockProgression != null) __obj.updateDynamic("msBlockProgression")(msBlockProgression.asInstanceOf[js.Any])
@@ -474,6 +482,14 @@ object VendorPropertiesFallback {
     if (msScrollSnapX != null) __obj.updateDynamic("msScrollSnapX")(msScrollSnapX.asInstanceOf[js.Any])
     if (msScrollSnapY != null) __obj.updateDynamic("msScrollSnapY")(msScrollSnapY.asInstanceOf[js.Any])
     if (msScrollTranslation != null) __obj.updateDynamic("msScrollTranslation")(msScrollTranslation.asInstanceOf[js.Any])
+    if (msScrollbar3dlightColor != null) __obj.updateDynamic("msScrollbar3dlightColor")(msScrollbar3dlightColor.asInstanceOf[js.Any])
+    if (msScrollbarArrowColor != null) __obj.updateDynamic("msScrollbarArrowColor")(msScrollbarArrowColor.asInstanceOf[js.Any])
+    if (msScrollbarBaseColor != null) __obj.updateDynamic("msScrollbarBaseColor")(msScrollbarBaseColor.asInstanceOf[js.Any])
+    if (msScrollbarDarkshadowColor != null) __obj.updateDynamic("msScrollbarDarkshadowColor")(msScrollbarDarkshadowColor.asInstanceOf[js.Any])
+    if (msScrollbarFaceColor != null) __obj.updateDynamic("msScrollbarFaceColor")(msScrollbarFaceColor.asInstanceOf[js.Any])
+    if (msScrollbarHighlightColor != null) __obj.updateDynamic("msScrollbarHighlightColor")(msScrollbarHighlightColor.asInstanceOf[js.Any])
+    if (msScrollbarShadowColor != null) __obj.updateDynamic("msScrollbarShadowColor")(msScrollbarShadowColor.asInstanceOf[js.Any])
+    if (msScrollbarTrackColor != null) __obj.updateDynamic("msScrollbarTrackColor")(msScrollbarTrackColor.asInstanceOf[js.Any])
     if (msTextAutospace != null) __obj.updateDynamic("msTextAutospace")(msTextAutospace.asInstanceOf[js.Any])
     if (msTextCombineHorizontal != null) __obj.updateDynamic("msTextCombineHorizontal")(msTextCombineHorizontal.asInstanceOf[js.Any])
     if (msTextOverflow != null) __obj.updateDynamic("msTextOverflow")(msTextOverflow.asInstanceOf[js.Any])

@@ -286,19 +286,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.caption, E] = js.native
   @JSName("h")
-  def h_circle[E /* <: stdLib.SVGCircleElement */](`type`: petitDashDomLib.petitDashDomLibStrings.circle): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.circle, E] = js.native
-  @JSName("h")
-  def h_circle[E /* <: stdLib.SVGCircleElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.circle,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.circle, E] = js.native
-  @JSName("h")
-  def h_circle[E /* <: stdLib.SVGCircleElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.circle,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.circle, E] = js.native
-  @JSName("h")
   def h_cite[E /* <: stdLib.HTMLElement */](`type`: petitDashDomLib.petitDashDomLibStrings.cite): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.cite, E] = js.native
   @JSName("h")
   def h_cite[E /* <: stdLib.HTMLElement */](
@@ -311,19 +298,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.cite, E] = js.native
-  @JSName("h")
-  def h_clipPath[E /* <: stdLib.SVGClipPathElement */](`type`: petitDashDomLib.petitDashDomLibStrings.clipPath): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.clipPath, E] = js.native
-  @JSName("h")
-  def h_clipPath[E /* <: stdLib.SVGClipPathElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.clipPath,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.clipPath, E] = js.native
-  @JSName("h")
-  def h_clipPath[E /* <: stdLib.SVGClipPathElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.clipPath,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.clipPath, E] = js.native
   @JSName("h")
   def h_code[E /* <: stdLib.HTMLElement */](`type`: petitDashDomLib.petitDashDomLibStrings.code): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.code, E] = js.native
   @JSName("h")
@@ -403,19 +377,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.dd, E] = js.native
   @JSName("h")
-  def h_defs[E /* <: stdLib.SVGDefsElement */](`type`: petitDashDomLib.petitDashDomLibStrings.defs): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.defs, E] = js.native
-  @JSName("h")
-  def h_defs[E /* <: stdLib.SVGDefsElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.defs,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.defs, E] = js.native
-  @JSName("h")
-  def h_defs[E /* <: stdLib.SVGDefsElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.defs,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.defs, E] = js.native
-  @JSName("h")
   def h_del[E /* <: stdLib.HTMLModElement */](`type`: petitDashDomLib.petitDashDomLibStrings.del): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.del, E] = js.native
   @JSName("h")
   def h_del[E /* <: stdLib.HTMLModElement */](
@@ -428,19 +389,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.del, E] = js.native
-  @JSName("h")
-  def h_desc[E /* <: stdLib.SVGDescElement */](`type`: petitDashDomLib.petitDashDomLibStrings.desc): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.desc, E] = js.native
-  @JSName("h")
-  def h_desc[E /* <: stdLib.SVGDescElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.desc,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.desc, E] = js.native
-  @JSName("h")
-  def h_desc[E /* <: stdLib.SVGDescElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.desc,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.desc, E] = js.native
   @JSName("h")
   def h_details[E /* <: stdLib.HTMLDetailsElement */](`type`: petitDashDomLib.petitDashDomLibStrings.details): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.details, E] = js.native
   @JSName("h")
@@ -533,19 +481,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.dt, E] = js.native
   @JSName("h")
-  def h_ellipse[E /* <: stdLib.SVGEllipseElement */](`type`: petitDashDomLib.petitDashDomLibStrings.ellipse): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.ellipse, E] = js.native
-  @JSName("h")
-  def h_ellipse[E /* <: stdLib.SVGEllipseElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.ellipse,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.ellipse, E] = js.native
-  @JSName("h")
-  def h_ellipse[E /* <: stdLib.SVGEllipseElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.ellipse,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.ellipse, E] = js.native
-  @JSName("h")
   def h_em[E /* <: stdLib.HTMLElement */](`type`: petitDashDomLib.petitDashDomLibStrings.em): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.em, E] = js.native
   @JSName("h")
   def h_em[E /* <: stdLib.HTMLElement */](
@@ -571,318 +506,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.embed, E] = js.native
-  @JSName("h")
-  def h_feBlend[E /* <: stdLib.SVGFEBlendElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feBlend): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feBlend, E] = js.native
-  @JSName("h")
-  def h_feBlend[E /* <: stdLib.SVGFEBlendElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feBlend,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feBlend, E] = js.native
-  @JSName("h")
-  def h_feBlend[E /* <: stdLib.SVGFEBlendElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feBlend,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feBlend, E] = js.native
-  @JSName("h")
-  def h_feColorMatrix[E /* <: stdLib.SVGFEColorMatrixElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feColorMatrix): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feColorMatrix, E] = js.native
-  @JSName("h")
-  def h_feColorMatrix[E /* <: stdLib.SVGFEColorMatrixElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feColorMatrix,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feColorMatrix, E] = js.native
-  @JSName("h")
-  def h_feColorMatrix[E /* <: stdLib.SVGFEColorMatrixElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feColorMatrix,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feColorMatrix, E] = js.native
-  @JSName("h")
-  def h_feComponentTransfer[E /* <: stdLib.SVGFEComponentTransferElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feComponentTransfer): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feComponentTransfer, E] = js.native
-  @JSName("h")
-  def h_feComponentTransfer[E /* <: stdLib.SVGFEComponentTransferElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feComponentTransfer,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feComponentTransfer, E] = js.native
-  @JSName("h")
-  def h_feComponentTransfer[E /* <: stdLib.SVGFEComponentTransferElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feComponentTransfer,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feComponentTransfer, E] = js.native
-  @JSName("h")
-  def h_feComposite[E /* <: stdLib.SVGFECompositeElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feComposite): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feComposite, E] = js.native
-  @JSName("h")
-  def h_feComposite[E /* <: stdLib.SVGFECompositeElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feComposite,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feComposite, E] = js.native
-  @JSName("h")
-  def h_feComposite[E /* <: stdLib.SVGFECompositeElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feComposite,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feComposite, E] = js.native
-  @JSName("h")
-  def h_feConvolveMatrix[E /* <: stdLib.SVGFEConvolveMatrixElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feConvolveMatrix): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feConvolveMatrix, E] = js.native
-  @JSName("h")
-  def h_feConvolveMatrix[E /* <: stdLib.SVGFEConvolveMatrixElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feConvolveMatrix,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feConvolveMatrix, E] = js.native
-  @JSName("h")
-  def h_feConvolveMatrix[E /* <: stdLib.SVGFEConvolveMatrixElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feConvolveMatrix,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feConvolveMatrix, E] = js.native
-  @JSName("h")
-  def h_feDiffuseLighting[E /* <: stdLib.SVGFEDiffuseLightingElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feDiffuseLighting): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feDiffuseLighting, E] = js.native
-  @JSName("h")
-  def h_feDiffuseLighting[E /* <: stdLib.SVGFEDiffuseLightingElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feDiffuseLighting,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feDiffuseLighting, E] = js.native
-  @JSName("h")
-  def h_feDiffuseLighting[E /* <: stdLib.SVGFEDiffuseLightingElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feDiffuseLighting,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feDiffuseLighting, E] = js.native
-  @JSName("h")
-  def h_feDisplacementMap[E /* <: stdLib.SVGFEDisplacementMapElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feDisplacementMap): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feDisplacementMap, E] = js.native
-  @JSName("h")
-  def h_feDisplacementMap[E /* <: stdLib.SVGFEDisplacementMapElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feDisplacementMap,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feDisplacementMap, E] = js.native
-  @JSName("h")
-  def h_feDisplacementMap[E /* <: stdLib.SVGFEDisplacementMapElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feDisplacementMap,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feDisplacementMap, E] = js.native
-  @JSName("h")
-  def h_feDistantLight[E /* <: stdLib.SVGFEDistantLightElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feDistantLight): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feDistantLight, E] = js.native
-  @JSName("h")
-  def h_feDistantLight[E /* <: stdLib.SVGFEDistantLightElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feDistantLight,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feDistantLight, E] = js.native
-  @JSName("h")
-  def h_feDistantLight[E /* <: stdLib.SVGFEDistantLightElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feDistantLight,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feDistantLight, E] = js.native
-  @JSName("h")
-  def h_feFlood[E /* <: stdLib.SVGFEFloodElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feFlood): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFlood, E] = js.native
-  @JSName("h")
-  def h_feFlood[E /* <: stdLib.SVGFEFloodElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFlood,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFlood, E] = js.native
-  @JSName("h")
-  def h_feFlood[E /* <: stdLib.SVGFEFloodElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFlood,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFlood, E] = js.native
-  @JSName("h")
-  def h_feFuncA[E /* <: stdLib.SVGFEFuncAElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feFuncA): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncA, E] = js.native
-  @JSName("h")
-  def h_feFuncA[E /* <: stdLib.SVGFEFuncAElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFuncA,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncA, E] = js.native
-  @JSName("h")
-  def h_feFuncA[E /* <: stdLib.SVGFEFuncAElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFuncA,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncA, E] = js.native
-  @JSName("h")
-  def h_feFuncB[E /* <: stdLib.SVGFEFuncBElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feFuncB): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncB, E] = js.native
-  @JSName("h")
-  def h_feFuncB[E /* <: stdLib.SVGFEFuncBElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFuncB,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncB, E] = js.native
-  @JSName("h")
-  def h_feFuncB[E /* <: stdLib.SVGFEFuncBElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFuncB,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncB, E] = js.native
-  @JSName("h")
-  def h_feFuncG[E /* <: stdLib.SVGFEFuncGElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feFuncG): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncG, E] = js.native
-  @JSName("h")
-  def h_feFuncG[E /* <: stdLib.SVGFEFuncGElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFuncG,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncG, E] = js.native
-  @JSName("h")
-  def h_feFuncG[E /* <: stdLib.SVGFEFuncGElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFuncG,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncG, E] = js.native
-  @JSName("h")
-  def h_feFuncR[E /* <: stdLib.SVGFEFuncRElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feFuncR): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncR, E] = js.native
-  @JSName("h")
-  def h_feFuncR[E /* <: stdLib.SVGFEFuncRElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFuncR,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncR, E] = js.native
-  @JSName("h")
-  def h_feFuncR[E /* <: stdLib.SVGFEFuncRElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feFuncR,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feFuncR, E] = js.native
-  @JSName("h")
-  def h_feGaussianBlur[E /* <: stdLib.SVGFEGaussianBlurElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feGaussianBlur): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feGaussianBlur, E] = js.native
-  @JSName("h")
-  def h_feGaussianBlur[E /* <: stdLib.SVGFEGaussianBlurElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feGaussianBlur,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feGaussianBlur, E] = js.native
-  @JSName("h")
-  def h_feGaussianBlur[E /* <: stdLib.SVGFEGaussianBlurElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feGaussianBlur,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feGaussianBlur, E] = js.native
-  @JSName("h")
-  def h_feImage[E /* <: stdLib.SVGFEImageElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feImage): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feImage, E] = js.native
-  @JSName("h")
-  def h_feImage[E /* <: stdLib.SVGFEImageElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feImage,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feImage, E] = js.native
-  @JSName("h")
-  def h_feImage[E /* <: stdLib.SVGFEImageElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feImage,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feImage, E] = js.native
-  @JSName("h")
-  def h_feMerge[E /* <: stdLib.SVGFEMergeElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feMerge): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feMerge, E] = js.native
-  @JSName("h")
-  def h_feMerge[E /* <: stdLib.SVGFEMergeElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feMerge,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feMerge, E] = js.native
-  @JSName("h")
-  def h_feMerge[E /* <: stdLib.SVGFEMergeElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feMerge,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feMerge, E] = js.native
-  @JSName("h")
-  def h_feMergeNode[E /* <: stdLib.SVGFEMergeNodeElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feMergeNode): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feMergeNode, E] = js.native
-  @JSName("h")
-  def h_feMergeNode[E /* <: stdLib.SVGFEMergeNodeElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feMergeNode,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feMergeNode, E] = js.native
-  @JSName("h")
-  def h_feMergeNode[E /* <: stdLib.SVGFEMergeNodeElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feMergeNode,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feMergeNode, E] = js.native
-  @JSName("h")
-  def h_feMorphology[E /* <: stdLib.SVGFEMorphologyElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feMorphology): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feMorphology, E] = js.native
-  @JSName("h")
-  def h_feMorphology[E /* <: stdLib.SVGFEMorphologyElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feMorphology,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feMorphology, E] = js.native
-  @JSName("h")
-  def h_feMorphology[E /* <: stdLib.SVGFEMorphologyElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feMorphology,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feMorphology, E] = js.native
-  @JSName("h")
-  def h_feOffset[E /* <: stdLib.SVGFEOffsetElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feOffset): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feOffset, E] = js.native
-  @JSName("h")
-  def h_feOffset[E /* <: stdLib.SVGFEOffsetElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feOffset,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feOffset, E] = js.native
-  @JSName("h")
-  def h_feOffset[E /* <: stdLib.SVGFEOffsetElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feOffset,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feOffset, E] = js.native
-  @JSName("h")
-  def h_fePointLight[E /* <: stdLib.SVGFEPointLightElement */](`type`: petitDashDomLib.petitDashDomLibStrings.fePointLight): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.fePointLight, E] = js.native
-  @JSName("h")
-  def h_fePointLight[E /* <: stdLib.SVGFEPointLightElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.fePointLight,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.fePointLight, E] = js.native
-  @JSName("h")
-  def h_fePointLight[E /* <: stdLib.SVGFEPointLightElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.fePointLight,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.fePointLight, E] = js.native
-  @JSName("h")
-  def h_feSpecularLighting[E /* <: stdLib.SVGFESpecularLightingElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feSpecularLighting): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feSpecularLighting, E] = js.native
-  @JSName("h")
-  def h_feSpecularLighting[E /* <: stdLib.SVGFESpecularLightingElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feSpecularLighting,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feSpecularLighting, E] = js.native
-  @JSName("h")
-  def h_feSpecularLighting[E /* <: stdLib.SVGFESpecularLightingElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feSpecularLighting,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feSpecularLighting, E] = js.native
-  @JSName("h")
-  def h_feSpotLight[E /* <: stdLib.SVGFESpotLightElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feSpotLight): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feSpotLight, E] = js.native
-  @JSName("h")
-  def h_feSpotLight[E /* <: stdLib.SVGFESpotLightElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feSpotLight,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feSpotLight, E] = js.native
-  @JSName("h")
-  def h_feSpotLight[E /* <: stdLib.SVGFESpotLightElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feSpotLight,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feSpotLight, E] = js.native
-  @JSName("h")
-  def h_feTile[E /* <: stdLib.SVGFETileElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feTile): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feTile, E] = js.native
-  @JSName("h")
-  def h_feTile[E /* <: stdLib.SVGFETileElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feTile,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feTile, E] = js.native
-  @JSName("h")
-  def h_feTile[E /* <: stdLib.SVGFETileElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feTile,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feTile, E] = js.native
-  @JSName("h")
-  def h_feTurbulence[E /* <: stdLib.SVGFETurbulenceElement */](`type`: petitDashDomLib.petitDashDomLibStrings.feTurbulence): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feTurbulence, E] = js.native
-  @JSName("h")
-  def h_feTurbulence[E /* <: stdLib.SVGFETurbulenceElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feTurbulence,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feTurbulence, E] = js.native
-  @JSName("h")
-  def h_feTurbulence[E /* <: stdLib.SVGFETurbulenceElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.feTurbulence,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.feTurbulence, E] = js.native
   @JSName("h")
   def h_fieldset[E /* <: stdLib.HTMLFieldSetElement */](`type`: petitDashDomLib.petitDashDomLibStrings.fieldset): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.fieldset, E] = js.native
   @JSName("h")
@@ -923,19 +546,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.figure, E] = js.native
   @JSName("h")
-  def h_filter[E /* <: stdLib.SVGFilterElement */](`type`: petitDashDomLib.petitDashDomLibStrings.filter): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.filter, E] = js.native
-  @JSName("h")
-  def h_filter[E /* <: stdLib.SVGFilterElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.filter,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.filter, E] = js.native
-  @JSName("h")
-  def h_filter[E /* <: stdLib.SVGFilterElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.filter,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.filter, E] = js.native
-  @JSName("h")
   def h_font[E /* <: stdLib.HTMLFontElement */](`type`: petitDashDomLib.petitDashDomLibStrings.font): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.font, E] = js.native
   @JSName("h")
   def h_font[E /* <: stdLib.HTMLFontElement */](
@@ -961,19 +571,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.footer, E] = js.native
-  @JSName("h")
-  def h_foreignObject[E /* <: stdLib.SVGForeignObjectElement */](`type`: petitDashDomLib.petitDashDomLibStrings.foreignObject): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.foreignObject, E] = js.native
-  @JSName("h")
-  def h_foreignObject[E /* <: stdLib.SVGForeignObjectElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.foreignObject,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.foreignObject, E] = js.native
-  @JSName("h")
-  def h_foreignObject[E /* <: stdLib.SVGForeignObjectElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.foreignObject,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.foreignObject, E] = js.native
   @JSName("h")
   def h_form[E /* <: stdLib.HTMLFormElement */](`type`: petitDashDomLib.petitDashDomLibStrings.form): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.form, E] = js.native
   @JSName("h")
@@ -1013,19 +610,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.frameset, E] = js.native
-  @JSName("h")
-  def h_g[E /* <: stdLib.SVGGElement */](`type`: petitDashDomLib.petitDashDomLibStrings.g): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.g, E] = js.native
-  @JSName("h")
-  def h_g[E /* <: stdLib.SVGGElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.g,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.g, E] = js.native
-  @JSName("h")
-  def h_g[E /* <: stdLib.SVGGElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.g,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.g, E] = js.native
   @JSName("h")
   def h_h1[E /* <: stdLib.HTMLHeadingElement */](`type`: petitDashDomLib.petitDashDomLibStrings.h1): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.h1, E] = js.native
   @JSName("h")
@@ -1196,19 +780,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.iframe, E] = js.native
   @JSName("h")
-  def h_image[E /* <: stdLib.SVGImageElement */](`type`: petitDashDomLib.petitDashDomLibStrings.image): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.image, E] = js.native
-  @JSName("h")
-  def h_image[E /* <: stdLib.SVGImageElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.image,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.image, E] = js.native
-  @JSName("h")
-  def h_image[E /* <: stdLib.SVGImageElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.image,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.image, E] = js.native
-  @JSName("h")
   def h_img[E /* <: stdLib.HTMLImageElement */](`type`: petitDashDomLib.petitDashDomLibStrings.img): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.img, E] = js.native
   @JSName("h")
   def h_img[E /* <: stdLib.HTMLImageElement */](
@@ -1300,32 +871,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.li, E] = js.native
   @JSName("h")
-  def h_line[E /* <: stdLib.SVGLineElement */](`type`: petitDashDomLib.petitDashDomLibStrings.line): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.line, E] = js.native
-  @JSName("h")
-  def h_line[E /* <: stdLib.SVGLineElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.line,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.line, E] = js.native
-  @JSName("h")
-  def h_line[E /* <: stdLib.SVGLineElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.line,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.line, E] = js.native
-  @JSName("h")
-  def h_linearGradient[E /* <: stdLib.SVGLinearGradientElement */](`type`: petitDashDomLib.petitDashDomLibStrings.linearGradient): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.linearGradient, E] = js.native
-  @JSName("h")
-  def h_linearGradient[E /* <: stdLib.SVGLinearGradientElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.linearGradient,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.linearGradient, E] = js.native
-  @JSName("h")
-  def h_linearGradient[E /* <: stdLib.SVGLinearGradientElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.linearGradient,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.linearGradient, E] = js.native
-  @JSName("h")
   def h_link[E /* <: stdLib.HTMLLinkElement */](`type`: petitDashDomLib.petitDashDomLibStrings.link): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.link, E] = js.native
   @JSName("h")
   def h_link[E /* <: stdLib.HTMLLinkElement */](
@@ -1378,19 +923,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.mark, E] = js.native
   @JSName("h")
-  def h_marker[E /* <: stdLib.SVGMarkerElement */](`type`: petitDashDomLib.petitDashDomLibStrings.marker): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.marker, E] = js.native
-  @JSName("h")
-  def h_marker[E /* <: stdLib.SVGMarkerElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.marker,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.marker, E] = js.native
-  @JSName("h")
-  def h_marker[E /* <: stdLib.SVGMarkerElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.marker,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.marker, E] = js.native
-  @JSName("h")
   def h_marquee[E /* <: stdLib.HTMLMarqueeElement */](`type`: petitDashDomLib.petitDashDomLibStrings.marquee): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.marquee, E] = js.native
   @JSName("h")
   def h_marquee[E /* <: stdLib.HTMLMarqueeElement */](
@@ -1403,19 +935,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.marquee, E] = js.native
-  @JSName("h")
-  def h_mask[E /* <: stdLib.SVGMaskElement */](`type`: petitDashDomLib.petitDashDomLibStrings.mask): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.mask, E] = js.native
-  @JSName("h")
-  def h_mask[E /* <: stdLib.SVGMaskElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.mask,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.mask, E] = js.native
-  @JSName("h")
-  def h_mask[E /* <: stdLib.SVGMaskElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.mask,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.mask, E] = js.native
   @JSName("h")
   def h_menu[E /* <: stdLib.HTMLMenuElement */](`type`: petitDashDomLib.petitDashDomLibStrings.menu): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.menu, E] = js.native
   @JSName("h")
@@ -1442,19 +961,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.meta, E] = js.native
-  @JSName("h")
-  def h_metadata[E /* <: stdLib.SVGMetadataElement */](`type`: petitDashDomLib.petitDashDomLibStrings.metadata): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.metadata, E] = js.native
-  @JSName("h")
-  def h_metadata[E /* <: stdLib.SVGMetadataElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.metadata,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.metadata, E] = js.native
-  @JSName("h")
-  def h_metadata[E /* <: stdLib.SVGMetadataElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.metadata,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.metadata, E] = js.native
   @JSName("h")
   def h_meter[E /* <: stdLib.HTMLMeterElement */](`type`: petitDashDomLib.petitDashDomLibStrings.meter): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.meter, E] = js.native
   @JSName("h")
@@ -1586,32 +1092,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.param, E] = js.native
   @JSName("h")
-  def h_path[E /* <: stdLib.SVGPathElement */](`type`: petitDashDomLib.petitDashDomLibStrings.path): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.path, E] = js.native
-  @JSName("h")
-  def h_path[E /* <: stdLib.SVGPathElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.path,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.path, E] = js.native
-  @JSName("h")
-  def h_path[E /* <: stdLib.SVGPathElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.path,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.path, E] = js.native
-  @JSName("h")
-  def h_pattern[E /* <: stdLib.SVGPatternElement */](`type`: petitDashDomLib.petitDashDomLibStrings.pattern): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.pattern, E] = js.native
-  @JSName("h")
-  def h_pattern[E /* <: stdLib.SVGPatternElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.pattern,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.pattern, E] = js.native
-  @JSName("h")
-  def h_pattern[E /* <: stdLib.SVGPatternElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.pattern,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.pattern, E] = js.native
-  @JSName("h")
   def h_picture[E /* <: stdLib.HTMLPictureElement */](`type`: petitDashDomLib.petitDashDomLibStrings.picture): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.picture, E] = js.native
   @JSName("h")
   def h_picture[E /* <: stdLib.HTMLPictureElement */](
@@ -1624,32 +1104,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.picture, E] = js.native
-  @JSName("h")
-  def h_polygon[E /* <: stdLib.SVGPolygonElement */](`type`: petitDashDomLib.petitDashDomLibStrings.polygon): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.polygon, E] = js.native
-  @JSName("h")
-  def h_polygon[E /* <: stdLib.SVGPolygonElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.polygon,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.polygon, E] = js.native
-  @JSName("h")
-  def h_polygon[E /* <: stdLib.SVGPolygonElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.polygon,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.polygon, E] = js.native
-  @JSName("h")
-  def h_polyline[E /* <: stdLib.SVGPolylineElement */](`type`: petitDashDomLib.petitDashDomLibStrings.polyline): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.polyline, E] = js.native
-  @JSName("h")
-  def h_polyline[E /* <: stdLib.SVGPolylineElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.polyline,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.polyline, E] = js.native
-  @JSName("h")
-  def h_polyline[E /* <: stdLib.SVGPolylineElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.polyline,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.polyline, E] = js.native
   @JSName("h")
   def h_pre[E /* <: stdLib.HTMLPreElement */](`type`: petitDashDomLib.petitDashDomLibStrings.pre): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.pre, E] = js.native
   @JSName("h")
@@ -1689,32 +1143,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.q, E] = js.native
-  @JSName("h")
-  def h_radialGradient[E /* <: stdLib.SVGRadialGradientElement */](`type`: petitDashDomLib.petitDashDomLibStrings.radialGradient): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.radialGradient, E] = js.native
-  @JSName("h")
-  def h_radialGradient[E /* <: stdLib.SVGRadialGradientElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.radialGradient,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.radialGradient, E] = js.native
-  @JSName("h")
-  def h_radialGradient[E /* <: stdLib.SVGRadialGradientElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.radialGradient,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.radialGradient, E] = js.native
-  @JSName("h")
-  def h_rect[E /* <: stdLib.SVGRectElement */](`type`: petitDashDomLib.petitDashDomLibStrings.rect): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.rect, E] = js.native
-  @JSName("h")
-  def h_rect[E /* <: stdLib.SVGRectElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.rect,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.rect, E] = js.native
-  @JSName("h")
-  def h_rect[E /* <: stdLib.SVGRectElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.rect,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.rect, E] = js.native
   @JSName("h")
   def h_rp[E /* <: stdLib.HTMLElement */](`type`: petitDashDomLib.petitDashDomLibStrings.rp): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.rp, E] = js.native
   @JSName("h")
@@ -1872,19 +1300,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.span, E] = js.native
   @JSName("h")
-  def h_stop[E /* <: stdLib.SVGStopElement */](`type`: petitDashDomLib.petitDashDomLibStrings.stop): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.stop, E] = js.native
-  @JSName("h")
-  def h_stop[E /* <: stdLib.SVGStopElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.stop,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.stop, E] = js.native
-  @JSName("h")
-  def h_stop[E /* <: stdLib.SVGStopElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.stop,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.stop, E] = js.native
-  @JSName("h")
   def h_strong[E /* <: stdLib.HTMLElement */](`type`: petitDashDomLib.petitDashDomLibStrings.strong): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.strong, E] = js.native
   @JSName("h")
   def h_strong[E /* <: stdLib.HTMLElement */](
@@ -1950,45 +1365,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.sup, E] = js.native
   @JSName("h")
-  def h_svg[E /* <: stdLib.SVGSVGElement */](`type`: petitDashDomLib.petitDashDomLibStrings.svg): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.svg, E] = js.native
-  @JSName("h")
-  def h_svg[E /* <: stdLib.SVGSVGElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.svg,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.svg, E] = js.native
-  @JSName("h")
-  def h_svg[E /* <: stdLib.SVGSVGElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.svg,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.svg, E] = js.native
-  @JSName("h")
-  def h_switch[E /* <: stdLib.SVGSwitchElement */](`type`: petitDashDomLib.petitDashDomLibStrings.switch): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.switch, E] = js.native
-  @JSName("h")
-  def h_switch[E /* <: stdLib.SVGSwitchElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.switch,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.switch, E] = js.native
-  @JSName("h")
-  def h_switch[E /* <: stdLib.SVGSwitchElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.switch,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.switch, E] = js.native
-  @JSName("h")
-  def h_symbol[E /* <: stdLib.SVGSymbolElement */](`type`: petitDashDomLib.petitDashDomLibStrings.symbol): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.symbol, E] = js.native
-  @JSName("h")
-  def h_symbol[E /* <: stdLib.SVGSymbolElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.symbol,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.symbol, E] = js.native
-  @JSName("h")
-  def h_symbol[E /* <: stdLib.SVGSymbolElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.symbol,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.symbol, E] = js.native
-  @JSName("h")
   def h_table[E /* <: stdLib.HTMLTableElement */](`type`: petitDashDomLib.petitDashDomLibStrings.table): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.table, E] = js.native
   @JSName("h")
   def h_table[E /* <: stdLib.HTMLTableElement */](
@@ -2040,32 +1416,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.template, E] = js.native
-  @JSName("h")
-  def h_text[E /* <: stdLib.SVGTextElement */](`type`: petitDashDomLib.petitDashDomLibStrings.text): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.text, E] = js.native
-  @JSName("h")
-  def h_text[E /* <: stdLib.SVGTextElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.text,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.text, E] = js.native
-  @JSName("h")
-  def h_text[E /* <: stdLib.SVGTextElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.text,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.text, E] = js.native
-  @JSName("h")
-  def h_textPath[E /* <: stdLib.SVGTextPathElement */](`type`: petitDashDomLib.petitDashDomLibStrings.textPath): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.textPath, E] = js.native
-  @JSName("h")
-  def h_textPath[E /* <: stdLib.SVGTextPathElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.textPath,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.textPath, E] = js.native
-  @JSName("h")
-  def h_textPath[E /* <: stdLib.SVGTextPathElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.textPath,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.textPath, E] = js.native
   @JSName("h")
   def h_textarea[E /* <: stdLib.HTMLTextAreaElement */](`type`: petitDashDomLib.petitDashDomLibStrings.textarea): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.textarea, E] = js.native
   @JSName("h")
@@ -2171,19 +1521,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.track, E] = js.native
   @JSName("h")
-  def h_tspan[E /* <: stdLib.SVGTSpanElement */](`type`: petitDashDomLib.petitDashDomLibStrings.tspan): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.tspan, E] = js.native
-  @JSName("h")
-  def h_tspan[E /* <: stdLib.SVGTSpanElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.tspan,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.tspan, E] = js.native
-  @JSName("h")
-  def h_tspan[E /* <: stdLib.SVGTSpanElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.tspan,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.tspan, E] = js.native
-  @JSName("h")
   def h_u[E /* <: stdLib.HTMLElement */](`type`: petitDashDomLib.petitDashDomLibStrings.u): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.u, E] = js.native
   @JSName("h")
   def h_u[E /* <: stdLib.HTMLElement */](
@@ -2210,19 +1547,6 @@ object ^ extends js.Object {
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.ul, E] = js.native
   @JSName("h")
-  def h_use[E /* <: stdLib.SVGUseElement */](`type`: petitDashDomLib.petitDashDomLibStrings.use): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.use, E] = js.native
-  @JSName("h")
-  def h_use[E /* <: stdLib.SVGUseElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.use,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.use, E] = js.native
-  @JSName("h")
-  def h_use[E /* <: stdLib.SVGUseElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.use,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.use, E] = js.native
-  @JSName("h")
   def h_var[E /* <: stdLib.HTMLElement */](`type`: petitDashDomLib.petitDashDomLibStrings.`var`): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.`var`, E] = js.native
   @JSName("h")
   def h_var[E /* <: stdLib.HTMLElement */](
@@ -2248,19 +1572,6 @@ object ^ extends js.Object {
     props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
     children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
   ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.video, E] = js.native
-  @JSName("h")
-  def h_view[E /* <: stdLib.SVGViewElement */](`type`: petitDashDomLib.petitDashDomLibStrings.view): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.view, E] = js.native
-  @JSName("h")
-  def h_view[E /* <: stdLib.SVGViewElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.view,
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.view, E] = js.native
-  @JSName("h")
-  def h_view[E /* <: stdLib.SVGViewElement */](
-    `type`: petitDashDomLib.petitDashDomLibStrings.view,
-    props: petitDashDomLib.petitDashDomMod.PetitDomNs.Props[E],
-    children: petitDashDomLib.petitDashDomMod.PetitDomNs.Content*
-  ): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.view, E] = js.native
   @JSName("h")
   def h_wbr[E /* <: stdLib.HTMLElement */](`type`: petitDashDomLib.petitDashDomLibStrings.wbr): petitDashDomLib.petitDashDomMod.PetitDomNs.ElementNode[petitDashDomLib.petitDashDomLibStrings.wbr, E] = js.native
   @JSName("h")

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The CSSStyleDeclaration API represents an object that is a CSS declaration block, that exposes style information and various style-related methods and properties. */
+/** An object that is a CSS declaration block, and exposes style information and various style-related methods and properties. */
 @js.native
 trait CSSStyleDeclaration
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
@@ -70,33 +70,34 @@ trait CSSStyleDeclaration
   var borderWidth: java.lang.String | scala.Null = js.native
   var bottom: java.lang.String | scala.Null = js.native
   var boxShadow: java.lang.String | scala.Null = js.native
-  var boxSizing: java.lang.String | scala.Null = js.native
+  var boxSizing: java.lang.String = js.native
   var breakAfter: java.lang.String | scala.Null = js.native
   var breakBefore: java.lang.String | scala.Null = js.native
   var breakInside: java.lang.String | scala.Null = js.native
   var captionSide: java.lang.String | scala.Null = js.native
+  var caretColor: java.lang.String = js.native
   var clear: java.lang.String | scala.Null = js.native
   var clip: java.lang.String | scala.Null = js.native
   var clipPath: java.lang.String | scala.Null = js.native
   var clipRule: java.lang.String | scala.Null = js.native
   var color: java.lang.String | scala.Null = js.native
   var colorInterpolationFilters: java.lang.String | scala.Null = js.native
-  var columnCount: js.Any = js.native
-  var columnFill: java.lang.String | scala.Null = js.native
-  var columnGap: js.Any = js.native
-  var columnRule: java.lang.String | scala.Null = js.native
-  var columnRuleColor: js.Any = js.native
-  var columnRuleStyle: java.lang.String | scala.Null = js.native
-  var columnRuleWidth: js.Any = js.native
-  var columnSpan: java.lang.String | scala.Null = js.native
-  var columnWidth: js.Any = js.native
-  var columns: java.lang.String | scala.Null = js.native
+  var columnCount: java.lang.String = js.native
+  var columnFill: java.lang.String = js.native
+  var columnGap: java.lang.String = js.native
+  var columnRule: java.lang.String = js.native
+  var columnRuleColor: java.lang.String = js.native
+  var columnRuleStyle: java.lang.String = js.native
+  var columnRuleWidth: java.lang.String = js.native
+  var columnSpan: java.lang.String = js.native
+  var columnWidth: java.lang.String = js.native
+  var columns: java.lang.String = js.native
   var content: java.lang.String | scala.Null = js.native
   var counterIncrement: java.lang.String | scala.Null = js.native
   var counterReset: java.lang.String | scala.Null = js.native
   var cssFloat: java.lang.String | scala.Null = js.native
   var cssText: java.lang.String = js.native
-  var cursor: java.lang.String | scala.Null = js.native
+  var cursor: java.lang.String = js.native
   var direction: java.lang.String | scala.Null = js.native
   var display: java.lang.String | scala.Null = js.native
   var dominantBaseline: java.lang.String | scala.Null = js.native
@@ -146,6 +147,8 @@ trait CSSStyleDeclaration
   var gridTemplateColumns: java.lang.String | scala.Null = js.native
   var gridTemplateRows: java.lang.String | scala.Null = js.native
   var height: java.lang.String | scala.Null = js.native
+  var imageOrientation: java.lang.String = js.native
+  var imageRendering: java.lang.String = js.native
   var imeMode: java.lang.String | scala.Null = js.native
   @JSName(scala.scalajs.js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]] = js.native
@@ -230,16 +233,16 @@ trait CSSStyleDeclaration
   var msWrapFlow: java.lang.String = js.native
   var msWrapMargin: js.Any = js.native
   var msWrapThrough: java.lang.String = js.native
-  var objectFit: java.lang.String | scala.Null = js.native
-  var objectPosition: java.lang.String | scala.Null = js.native
+  var objectFit: java.lang.String = js.native
+  var objectPosition: java.lang.String = js.native
   var opacity: java.lang.String | scala.Null = js.native
   var order: java.lang.String | scala.Null = js.native
   var orphans: java.lang.String | scala.Null = js.native
-  var outline: java.lang.String | scala.Null = js.native
-  var outlineColor: java.lang.String | scala.Null = js.native
-  var outlineOffset: java.lang.String | scala.Null = js.native
-  var outlineStyle: java.lang.String | scala.Null = js.native
-  var outlineWidth: java.lang.String | scala.Null = js.native
+  var outline: java.lang.String = js.native
+  var outlineColor: java.lang.String = js.native
+  var outlineOffset: java.lang.String = js.native
+  var outlineStyle: java.lang.String = js.native
+  var outlineWidth: java.lang.String = js.native
   var overflow: java.lang.String | scala.Null = js.native
   var overflowX: java.lang.String | scala.Null = js.native
   var overflowY: java.lang.String | scala.Null = js.native
@@ -287,7 +290,7 @@ trait CSSStyleDeclaration
   var textJustify: java.lang.String | scala.Null = js.native
   var textKashida: java.lang.String | scala.Null = js.native
   var textKashidaSpace: java.lang.String | scala.Null = js.native
-  var textOverflow: java.lang.String | scala.Null = js.native
+  var textOverflow: java.lang.String = js.native
   var textShadow: java.lang.String | scala.Null = js.native
   var textTransform: java.lang.String | scala.Null = js.native
   var textUnderlinePosition: java.lang.String | scala.Null = js.native
@@ -462,6 +465,7 @@ trait CSSStyleDeclaration
   var whiteSpace: java.lang.String | scala.Null = js.native
   var widows: java.lang.String | scala.Null = js.native
   var width: java.lang.String | scala.Null = js.native
+  var willChange: java.lang.String = js.native
   var wordBreak: java.lang.String | scala.Null = js.native
   var wordSpacing: java.lang.String | scala.Null = js.native
   var wordWrap: java.lang.String | scala.Null = js.native

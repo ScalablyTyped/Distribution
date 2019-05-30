@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/render3/view/compiler", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def compileBaseDefFromMetadata(meta: R3BaseRefMetaData): atAngularCompilerLib.Anon_ExpressionType = js.native
+  def compileBaseDefFromMetadata(
+    meta: R3BaseRefMetaData,
+    constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool
+  ): atAngularCompilerLib.Anon_ExpressionType = js.native
   def compileComponentFromMetadata(
     meta: atAngularCompilerLib.srcRender3ViewApiMod.R3ComponentMetadata,
     constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool,
@@ -34,6 +37,14 @@ object ^ extends js.Object {
     reflector: atAngularCompilerLib.srcCompileUnderscoreReflectorMod.CompileReflector,
     bindingParser: atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser
   ): scala.Unit = js.native
-  def parseHostBindings(host: org.scalablytyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_Attributes = js.native
+  def parseHostBindings(
+    host: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
+    ]
+  ): ParsedHostBindings = js.native
+  def verifyHostBindings(
+    bindings: ParsedHostBindings,
+    sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan
+  ): js.Array[atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseError] = js.native
 }
 

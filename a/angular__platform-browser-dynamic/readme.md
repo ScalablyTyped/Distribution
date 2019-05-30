@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__platform-browser-dynamic
 
-Typings are for version 7.2.15
+Typings are for version 8.0.0
 
 ## Library description:
 Angular - library for using Angular in a web browser with JIT compilation
@@ -36,25 +36,11 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * @license Angular v8.0.0
+ * (c) 2010-2019 Google LLC. https://angular.io/
+ * License: MIT
  */
-/**
- * Generated bundle index. Do not edit.
- */
-/**
- * @module
- * @description
- * Entry point for all public APIs of this package.
- */
-/**
- * @module
- * @description
- * Entry point for all public APIs of the common package.
- */
+
 
 ```
 

@@ -5,12 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait ɵQueryBindingType extends js.Object
+
 @JSImport("@angular/core", "ɵQueryBindingType")
 @js.native
 object ɵQueryBindingType extends js.Object {
-  /* 1 */ val All: atAngularCoreLib.srcViewTypesMod.QueryBindingType.All with scala.Double = js.native
-  /* 0 */ val First: atAngularCoreLib.srcViewTypesMod.QueryBindingType.First with scala.Double = js.native
+  @js.native
+  sealed trait All
+    extends atAngularCoreLib.atAngularCoreMod.ɵQueryBindingType
+  
+  @js.native
+  sealed trait First
+    extends atAngularCoreLib.atAngularCoreMod.ɵQueryBindingType
+  
+  /* 1 */ val All: All with scala.Double = js.native
+  /* 0 */ val First: First with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[atAngularCoreLib.srcViewTypesMod.QueryBindingType with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[atAngularCoreLib.atAngularCoreMod.ɵQueryBindingType with scala.Double] = js.native
 }
 

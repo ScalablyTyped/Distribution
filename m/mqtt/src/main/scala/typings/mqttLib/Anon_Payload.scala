@@ -10,6 +10,10 @@ trait Anon_Payload extends js.Object {
     * the message to publish
     */
   var payload: java.lang.String
+  /*
+    *  properies object of will
+    * */
+  var properties: js.UndefOr[Anon_ContentType] = js.undefined
   /**
     * the QoS
     */
@@ -30,10 +34,11 @@ object Anon_Payload {
     payload: java.lang.String,
     qos: mqttDashPacketLib.mqttDashPacketMod.QoS,
     retain: scala.Boolean,
-    topic: java.lang.String
+    topic: java.lang.String,
+    properties: Anon_ContentType = null
   ): Anon_Payload = {
     val __obj = js.Dynamic.literal(payload = payload, qos = qos, retain = retain, topic = topic)
-  
+    if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[Anon_Payload]
   }
 }

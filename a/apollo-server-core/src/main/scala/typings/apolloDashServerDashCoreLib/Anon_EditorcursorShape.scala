@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EditorcursorShape extends js.Object {
-  var `editor.cursorShape`: java.lang.String
+  var `editor.cursorShape`: atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.CursorShape
   var `editor.fontFamily`: java.lang.String
   var `editor.fontSize`: scala.Double
   var `editor.reuseHeaders`: scala.Boolean
@@ -19,7 +19,7 @@ trait Anon_EditorcursorShape extends js.Object {
 object Anon_EditorcursorShape {
   @scala.inline
   def apply(
-    `editor.cursorShape`: java.lang.String,
+    `editor.cursorShape`: atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.CursorShape,
     `editor.fontFamily`: java.lang.String,
     `editor.fontSize`: scala.Double,
     `editor.reuseHeaders`: scala.Boolean,

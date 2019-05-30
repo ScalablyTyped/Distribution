@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Screen interface represents a screen, usually the one on which the current window is being rendered, and is obtained using window.screen. */
+/** A screen, usually the one on which the current window is being rendered, and is obtained using window.screen. */
 trait Screen extends js.Object {
   val availHeight: scala.Double
   val availWidth: scala.Double

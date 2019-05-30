@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait NumberFilter extends js.Object {
   /**
-    * Represents the "equal to" condition to be applied to a single field when querying for findings.
+    * The equal-to condition to be applied to a single field when querying for findings.
     */
   var Eq: js.UndefOr[Double] = js.undefined
   /**
-    * Represents the "greater than equal" condition to be applied to a single field when querying for findings. 
+    * The greater-than-equal condition to be applied to a single field when querying for findings. 
     */
   var Gte: js.UndefOr[Double] = js.undefined
   /**
-    * Represents the "less than equal" condition to be applied to a single field when querying for findings. 
+    * The less-than-equal condition to be applied to a single field when querying for findings. 
     */
   var Lte: js.UndefOr[Double] = js.undefined
 }

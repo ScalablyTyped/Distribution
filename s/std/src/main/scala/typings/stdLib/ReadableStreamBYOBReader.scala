@@ -14,14 +14,3 @@ trait ReadableStreamBYOBReader extends js.Object {
   def releaseLock(): scala.Unit = js.native
 }
 
-@JSGlobal("ReadableStreamBYOBReader")
-@js.native
-class ReadableStreamBYOBReaderCls protected () extends ReadableStreamBYOBReader {
-  def this(stream: ReadableStream[Uint8Array]) = this()
-}
-
-@JSGlobal("ReadableStreamBYOBReader")
-@js.native
-object ReadableStreamBYOBReader
-  extends org.scalablytyped.runtime.Instantiable1[/* stream */ ReadableStream[Uint8Array], ReadableStreamBYOBReader]
-

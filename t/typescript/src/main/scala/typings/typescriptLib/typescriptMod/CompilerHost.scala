@@ -11,6 +11,7 @@ trait CompilerHost extends ModuleResolutionHost {
   var getCancellationToken: js.UndefOr[js.Function0[CancellationToken]] = js.native
   var getDefaultLibLocation: js.UndefOr[js.Function0[java.lang.String]] = js.native
   var getEnvironmentVariable: js.UndefOr[js.Function1[/* name */ java.lang.String, js.UndefOr[java.lang.String]]] = js.native
+  var getParsedCommandLine: js.UndefOr[js.Function1[/* fileName */ java.lang.String, js.UndefOr[ParsedCommandLine]]] = js.native
   var getSourceFileByPath: js.UndefOr[
     js.Function5[
       /* fileName */ java.lang.String, 

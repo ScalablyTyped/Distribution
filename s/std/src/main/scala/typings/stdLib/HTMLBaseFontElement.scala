@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLBaseFontElement interface provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating <basefont> elements. */
+/** Provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating <basefont> elements. */
 @js.native
 trait HTMLBaseFontElement
   extends HTMLElement
@@ -51,6 +51,8 @@ class HTMLBaseFontElementCls () extends HTMLBaseFontElement {
   override var color: java.lang.String = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

@@ -11,11 +11,11 @@ trait GetMaintenanceWindowExecutionTaskInvocationRequest extends js.Object {
     */
   var InvocationId: MaintenanceWindowExecutionTaskInvocationId
   /**
-    * The ID of the specific task in the Maintenance Window task that should be retrieved. 
+    * The ID of the specific task in the maintenance window task that should be retrieved. 
     */
   var TaskId: MaintenanceWindowExecutionTaskId
   /**
-    * The ID of the Maintenance Window execution for which the task is a part.
+    * The ID of the maintenance window execution for which the task is a part.
     */
   var WindowExecutionId: MaintenanceWindowExecutionId
 }

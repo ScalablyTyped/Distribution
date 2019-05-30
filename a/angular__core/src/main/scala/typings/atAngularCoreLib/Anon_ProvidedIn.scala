@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ProvidedIn extends js.Object {
-  var providedIn: atAngularCoreLib.srcTypeMod.Type[_] | atAngularCoreLib.atAngularCoreLibStrings.root | scala.Null
+  var providedIn: atAngularCoreLib.atAngularCoreMod.Type[_] | atAngularCoreLib.atAngularCoreLibStrings.root | scala.Null
 }
 
 object Anon_ProvidedIn {
   @scala.inline
   def apply(
-    providedIn: atAngularCoreLib.srcTypeMod.Type[_] | atAngularCoreLib.atAngularCoreLibStrings.root = null
+    providedIn: atAngularCoreLib.atAngularCoreMod.Type[_] | atAngularCoreLib.atAngularCoreLibStrings.root = null
   ): Anon_ProvidedIn = {
     val __obj = js.Dynamic.literal()
     if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])

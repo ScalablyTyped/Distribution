@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "react-google-maps-loader"
-version := "4.2-dt-20180803Z-f12a7a"
+version := "4.2-dt-20180803Z-670a99"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.4-a0e5c1",
-  "org.scalablytyped" %%% "googlemaps" % "3.36-dt-20190528Z-a5c0d0",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-b94c72",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1cea03",
-  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
+  "org.scalablytyped" %%% "csstype" % "2.6.5-8a2cd0",
+  "org.scalablytyped" %%% "googlemaps" % "3.36-dt-20190528Z-b5365a",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c843c9",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1fde1d",
+  "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

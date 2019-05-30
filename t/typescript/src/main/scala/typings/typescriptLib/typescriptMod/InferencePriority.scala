@@ -36,6 +36,10 @@ object InferencePriority extends js.Object {
     extends typescriptLib.typescriptMod.InferencePriority
   
   @js.native
+  sealed trait PartialHomomorphicMappedType
+    extends typescriptLib.typescriptMod.InferencePriority
+  
+  @js.native
   sealed trait PriorityImpliesCombination
     extends typescriptLib.typescriptMod.InferencePriority
   
@@ -43,14 +47,15 @@ object InferencePriority extends js.Object {
   sealed trait ReturnType
     extends typescriptLib.typescriptMod.InferencePriority
   
-  /* 64 */ val AlwaysStrict: AlwaysStrict with scala.Double = js.native
+  /* 128 */ val AlwaysStrict: AlwaysStrict with scala.Double = js.native
   /* 2 */ val HomomorphicMappedType: HomomorphicMappedType with scala.Double = js.native
-  /* 16 */ val LiteralKeyof: LiteralKeyof with scala.Double = js.native
-  /* 4 */ val MappedTypeConstraint: MappedTypeConstraint with scala.Double = js.native
+  /* 32 */ val LiteralKeyof: LiteralKeyof with scala.Double = js.native
+  /* 8 */ val MappedTypeConstraint: MappedTypeConstraint with scala.Double = js.native
   /* 1 */ val NakedTypeVariable: NakedTypeVariable with scala.Double = js.native
-  /* 32 */ val NoConstraints: NoConstraints with scala.Double = js.native
-  /* 28 */ val PriorityImpliesCombination: PriorityImpliesCombination with scala.Double = js.native
-  /* 8 */ val ReturnType: ReturnType with scala.Double = js.native
+  /* 64 */ val NoConstraints: NoConstraints with scala.Double = js.native
+  /* 4 */ val PartialHomomorphicMappedType: PartialHomomorphicMappedType with scala.Double = js.native
+  /* 56 */ val PriorityImpliesCombination: PriorityImpliesCombination with scala.Double = js.native
+  /* 16 */ val ReturnType: ReturnType with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.InferencePriority with scala.Double] = js.native
 }

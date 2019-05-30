@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait DeregisterTargetFromMaintenanceWindowRequest extends js.Object {
   /**
-    * The system checks if the target is being referenced by a task. If the target is being referenced, the system returns an error and does not deregister the target from the Maintenance Window.
+    * The system checks if the target is being referenced by a task. If the target is being referenced, the system returns an error and does not deregister the target from the maintenance window.
     */
   var Safe: js.UndefOr[Boolean] = js.undefined
   /**
-    * The ID of the Maintenance Window the target should be removed from.
+    * The ID of the maintenance window the target should be removed from.
     */
   var WindowId: MaintenanceWindowId
   /**

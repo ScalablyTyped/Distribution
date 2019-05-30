@@ -13,7 +13,7 @@ class IonicStorageModule () extends js.Object
 @JSImport("@ionic/storage", "IonicStorageModule")
 @js.native
 object IonicStorageModule extends js.Object {
-  def forRoot(): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[_] = js.native
-  def forRoot(storageConfig: atIonicStorageLib.atIonicStorageStorageMod.StorageConfig): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[_] = js.native
+  def forRoot(): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[_] = js.native
+  def forRoot(storageConfig: atIonicStorageLib.atIonicStorageStorageMod.StorageConfig): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[_] = js.native
 }
 

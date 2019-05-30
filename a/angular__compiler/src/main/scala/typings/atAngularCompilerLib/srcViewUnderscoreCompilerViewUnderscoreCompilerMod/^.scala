@@ -10,5 +10,31 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def elementEventFullName(target: java.lang.String, name: java.lang.String): java.lang.String = js.native
   def elementEventFullName(target: scala.Null, name: java.lang.String): java.lang.String = js.native
+  def findStaticQueryIds(
+    nodes: js.Array[
+      atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst
+    ]
+  ): stdLib.Map[
+    atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst, 
+    StaticAndDynamicQueryIds
+  ] = js.native
+  def findStaticQueryIds(
+    nodes: js.Array[
+      atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst
+    ],
+    result: stdLib.Map[
+      atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst, 
+      StaticAndDynamicQueryIds
+    ]
+  ): stdLib.Map[
+    atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst, 
+    StaticAndDynamicQueryIds
+  ] = js.native
+  def staticViewQueryIds(
+    nodeStaticQueryIds: stdLib.Map[
+      atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst, 
+      StaticAndDynamicQueryIds
+    ]
+  ): StaticAndDynamicQueryIds = js.native
 }
 

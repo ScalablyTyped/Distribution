@@ -27,7 +27,7 @@ trait InstanceNetworkInterfaceSpecification extends js.Object {
     */
   var Groups: js.UndefOr[SecurityGroupIdStringList] = js.undefined
   /**
-    * The type of network interface. To create an Elastic Fabric Adapter (EFA), specify efa. For more information, see Elastic Fabric Adapter in the Amazon Elastic Compute Cloud User Guide. If you are not creating an EFA, specify interface or omit this parameter. Valide values: interface | efa 
+    * The type of network interface. To create an Elastic Fabric Adapter (EFA), specify efa. For more information, see Elastic Fabric Adapter in the Amazon Elastic Compute Cloud User Guide. If you are not creating an EFA, specify interface or omit this parameter. Valid values: interface | efa 
     */
   var InterfaceType: js.UndefOr[String] = js.undefined
   /**

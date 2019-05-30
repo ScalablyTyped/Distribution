@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IpFilter extends js.Object {
   /**
-    * Finding's CIDR value.
+    * A finding's CIDR value.
     */
   var Cidr: js.UndefOr[NonEmptyString] = js.undefined
 }

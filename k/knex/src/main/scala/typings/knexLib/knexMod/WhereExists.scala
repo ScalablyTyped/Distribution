@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait WhereExists extends js.Object {
-  def apply(callback: QueryCallback): QueryBuilder = js.native
-  def apply(query: QueryBuilder): QueryBuilder = js.native
+trait WhereExists[TRecord, TResult] extends js.Object {
+  def apply(callback: QueryCallback[_, js.Array[_]]): QueryBuilder[TRecord, TResult] = js.native
+  def apply[TRecordInner, TResultInner](query: QueryBuilder[TRecordInner, TResultInner]): QueryBuilder[TRecord, TResult] = js.native
 }
 

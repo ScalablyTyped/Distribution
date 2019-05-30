@@ -11,7 +11,7 @@ trait DescribeMaintenanceWindowsResult extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * Information about the Maintenance Windows.
+    * Information about the maintenance windows.
     */
   var WindowIdentities: js.UndefOr[MaintenanceWindowIdentityList] = js.undefined
 }

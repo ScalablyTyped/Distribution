@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MediaStreamTrackEventMap extends js.Object {
-  var ended: MediaStreamErrorEvent
+  var ended: Event
   var isolationchange: Event
   var mute: Event
   var overconstrained: MediaStreamErrorEvent
@@ -16,7 +16,7 @@ trait MediaStreamTrackEventMap extends js.Object {
 object MediaStreamTrackEventMap {
   @scala.inline
   def apply(
-    ended: MediaStreamErrorEvent,
+    ended: Event,
     isolationchange: Event,
     mute: Event,
     overconstrained: MediaStreamErrorEvent,

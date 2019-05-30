@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateMembersRequest extends js.Object {
   /**
-    * A list of account ID and email address pairs of the accounts that you want to associate with the master Security Hub account.
+    * A list of account ID and email address pairs of the accounts to associate with the Security Hub master account.
     */
   var AccountDetails: js.UndefOr[AccountDetailsList] = js.undefined
 }

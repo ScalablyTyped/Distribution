@@ -38,7 +38,7 @@ object ojNBoxNodeEventMap {
     animationend: stdLib.AnimationEvent,
     animationiteration: stdLib.AnimationEvent,
     animationstart: stdLib.AnimationEvent,
-    auxclick: stdLib.Event,
+    auxclick: stdLib.MouseEvent,
     blur: stdLib.FocusEvent,
     borderColorChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
     borderWidthChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double],

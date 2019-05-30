@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The AudioTrack interface represents a single audio track from one of the HTML media elements, <audio> or <video>.  */
+/** A single audio track from one of the HTML media elements, <audio> or <video>.  */
 trait AudioTrack extends js.Object {
   var enabled: scala.Boolean
   val id: java.lang.String

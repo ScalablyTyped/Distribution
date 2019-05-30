@@ -15,7 +15,12 @@ class default protected () extends URI {
   /**
     * @internal
     */
+  protected def this(scheme: java.lang.String) = this()
+  protected def this(scheme: java.lang.String, authority: java.lang.String) = this()
+  protected def this(scheme: java.lang.String, authority: java.lang.String, path: java.lang.String) = this()
+  protected def this(scheme: java.lang.String, authority: java.lang.String, path: java.lang.String, query: java.lang.String) = this()
   protected def this(scheme: java.lang.String, authority: java.lang.String, path: java.lang.String, query: java.lang.String, fragment: java.lang.String) = this()
+  protected def this(scheme: java.lang.String, authority: java.lang.String, path: java.lang.String, query: java.lang.String, fragment: java.lang.String, _strict: scala.Boolean) = this()
   /* CompleteClass */
   override var authority: java.lang.String = js.native
   /* CompleteClass */
@@ -63,7 +68,13 @@ object default extends js.Object {
     * @param value A string which represents an URI (see `URI#toString`).
     */
   def parse(value: java.lang.String): vscodeDashUriLib.vscodeDashUriMod.URI = js.native
-  def revive(data: js.Any): vscodeDashUriLib.vscodeDashUriMod.URI = js.native
-  def revive(data: vscodeDashUriLib.vscodeDashUriMod.UriComponents): vscodeDashUriLib.vscodeDashUriMod.URI = js.native
+  def parse(value: java.lang.String, _strict: scala.Boolean): vscodeDashUriLib.vscodeDashUriMod.URI = js.native
+  def revive(): js.UndefOr[vscodeDashUriLib.vscodeDashUriMod.URI] = js.native
+  def revive(data: vscodeDashUriLib.vscodeDashUriMod.URI): js.UndefOr[vscodeDashUriLib.vscodeDashUriMod.URI] = js.native
+  def revive(data: vscodeDashUriLib.vscodeDashUriMod.UriComponents): js.UndefOr[vscodeDashUriLib.vscodeDashUriMod.URI] = js.native
+  @JSName("revive")
+  def revive_URI(data: vscodeDashUriLib.vscodeDashUriMod.URI): vscodeDashUriLib.vscodeDashUriMod.URI = js.native
+  @JSName("revive")
+  def revive_URI(data: vscodeDashUriLib.vscodeDashUriMod.UriComponents): vscodeDashUriLib.vscodeDashUriMod.URI = js.native
 }
 

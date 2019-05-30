@@ -7,47 +7,47 @@ import scala.scalajs.js.annotation._
 
 trait MaintenanceWindowIdentity extends js.Object {
   /**
-    * The number of hours before the end of the Maintenance Window that Systems Manager stops scheduling new tasks for execution.
+    * The number of hours before the end of the maintenance window that Systems Manager stops scheduling new tasks for execution.
     */
   var Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.undefined
   /**
-    * A description of the Maintenance Window.
+    * A description of the maintenance window.
     */
   var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   /**
-    * The duration of the Maintenance Window in hours.
+    * The duration of the maintenance window in hours.
     */
   var Duration: js.UndefOr[MaintenanceWindowDurationHours] = js.undefined
   /**
-    * Whether the Maintenance Window is enabled.
+    * Indicates whether the maintenance window is enabled.
     */
   var Enabled: js.UndefOr[MaintenanceWindowEnabled] = js.undefined
   /**
-    * The date and time, in ISO-8601 Extended format, for when the Maintenance Window is scheduled to become inactive.
+    * The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become inactive.
     */
   var EndDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   /**
-    * The name of the Maintenance Window.
+    * The name of the maintenance window.
     */
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   /**
-    * The next time the Maintenance Window will actually run, taking into account any specified times for the Maintenance Window to become active or inactive.
+    * The next time the maintenance window will actually run, taking into account any specified times for the maintenance window to become active or inactive.
     */
   var NextExecutionTime: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   /**
-    * The schedule of the Maintenance Window in the form of a cron or rate expression.
+    * The schedule of the maintenance window in the form of a cron or rate expression.
     */
   var Schedule: js.UndefOr[MaintenanceWindowSchedule] = js.undefined
   /**
-    * The time zone that the scheduled Maintenance Window executions are based on, in Internet Assigned Numbers Authority (IANA) format.
+    * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format.
     */
   var ScheduleTimezone: js.UndefOr[MaintenanceWindowTimezone] = js.undefined
   /**
-    * The date and time, in ISO-8601 Extended format, for when the Maintenance Window is scheduled to become active.
+    * The date and time, in ISO-8601 Extended format, for when the maintenance window is scheduled to become active.
     */
   var StartDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   /**
-    * The ID of the Maintenance Window.
+    * The ID of the maintenance window.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }

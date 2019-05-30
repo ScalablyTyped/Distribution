@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEDistantLightElement interface corresponds to the <feDistantLight> element. */
+/** Corresponds to the <feDistantLight> element. */
 @js.native
 trait SVGFEDistantLightElement extends SVGElement {
   val azimuth: SVGAnimatedNumber = js.native
@@ -17,6 +17,8 @@ trait SVGFEDistantLightElement extends SVGElement {
 class SVGFEDistantLightElementCls () extends SVGFEDistantLightElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

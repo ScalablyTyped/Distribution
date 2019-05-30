@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/platform-browser", "BrowserModule")
 @js.native
-class BrowserModule ()
-  extends atAngularPlatformDashBrowserLib.publicUnderscoreApiMod.BrowserModule {
-  def this(parentModule: atAngularPlatformDashBrowserLib.srcBrowserMod.BrowserModule) = this()
+class BrowserModule () extends js.Object {
+  def this(parentModule: BrowserModule) = this()
 }
 
 /* static members */
@@ -24,6 +23,6 @@ object BrowserModule extends js.Object {
     * The ID must match between the client and server versions of the app.
     * @returns The reconfigured `BrowserModule` to import into the app's root `AppModule`.
     */
-  def withServerTransition(params: atAngularPlatformDashBrowserLib.Anon_AppId): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularPlatformDashBrowserLib.srcBrowserMod.BrowserModule] = js.native
+  def withServerTransition(params: atAngularPlatformDashBrowserLib.Anon_AppId): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[atAngularPlatformDashBrowserLib.atAngularPlatformDashBrowserMod.BrowserModule] = js.native
 }
 

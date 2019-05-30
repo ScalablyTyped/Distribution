@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait NotificationConfig extends js.Object {
   /**
-    * An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
+    * An Amazon Resource Name (ARN) for an Amazon Simple Notification Service (Amazon SNS) topic. Run Command pushes notifications about command status changes to this topic.
     */
   var NotificationArn: js.UndefOr[NotificationArn] = js.undefined
   /**
-    * The different events for which you can receive notifications. These events include the following: All (events), InProgress, Success, TimedOut, Cancelled, Failed. To learn more about these events, see Configuring Amazon SNS Notifications for Run Command in the AWS Systems Manager User Guide.
+    * The different events for which you can receive notifications. These events include the following: All (events), InProgress, Success, TimedOut, Cancelled, Failed. To learn more about these events, see Configuring Amazon SNS Notifications for AWS Systems Manager in the AWS Systems Manager User Guide.
     */
   var NotificationEvents: js.UndefOr[NotificationEventList] = js.undefined
   /**

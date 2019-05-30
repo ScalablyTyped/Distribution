@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLCanvasElement interface provides properties and methods for manipulating the layout and presentation of <canvas> elements. The HTMLCanvasElement interface also inherits the properties and methods of the HTMLElement interface. */
+/** Provides properties and methods for manipulating the layout and presentation of <canvas> elements. The HTMLCanvasElement interface also inherits the properties and methods of the HTMLElement interface. */
 @js.native
 trait HTMLCanvasElement
   extends HTMLElement
@@ -67,6 +67,7 @@ trait HTMLCanvasElement
   def toDataURL(): java.lang.String = js.native
   def toDataURL(`type`: java.lang.String): java.lang.String = js.native
   def toDataURL(`type`: java.lang.String, quality: js.Any): java.lang.String = js.native
+  def transferControlToOffscreen(): OffscreenCanvas = js.native
 }
 
 @JSGlobal("HTMLCanvasElement")
@@ -76,6 +77,8 @@ class HTMLCanvasElementCls () extends HTMLCanvasElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

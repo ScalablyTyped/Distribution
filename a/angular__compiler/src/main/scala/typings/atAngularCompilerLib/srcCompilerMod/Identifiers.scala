@@ -45,7 +45,6 @@ object Identifiers extends js.Object {
   var createComponentFactory: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var createModuleFactory: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var createRendererType2: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
-  var defineInjectable: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var directiveDef: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var elementDef: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var inject: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
@@ -65,5 +64,6 @@ object Identifiers extends js.Object {
   var textDef: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var unwrapValue: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
   var viewDef: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
+  var ɵɵdefineInjectable: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference = js.native
 }
 

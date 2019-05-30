@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLOutputElement interface provides properties and methods (beyond those inherited from HTMLElement) for manipulating the layout and presentation of <output> elements. */
+/** Provides properties and methods (beyond those inherited from HTMLElement) for manipulating the layout and presentation of <output> elements. */
 @js.native
 trait HTMLOutputElement extends HTMLElement {
   var defaultValue: java.lang.String = js.native
@@ -30,6 +30,8 @@ class HTMLOutputElementCls () extends HTMLOutputElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

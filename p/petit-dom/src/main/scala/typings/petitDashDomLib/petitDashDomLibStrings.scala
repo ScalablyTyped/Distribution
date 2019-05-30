@@ -70,13 +70,7 @@ object petitDashDomLibStrings {
   sealed trait caption extends js.Object
   
   @js.native
-  sealed trait circle extends js.Object
-  
-  @js.native
   sealed trait cite extends js.Object
-  
-  @js.native
-  sealed trait clipPath extends js.Object
   
   @js.native
   sealed trait code extends js.Object
@@ -97,13 +91,7 @@ object petitDashDomLibStrings {
   sealed trait dd extends js.Object
   
   @js.native
-  sealed trait defs extends js.Object
-  
-  @js.native
   sealed trait del extends js.Object
-  
-  @js.native
-  sealed trait desc extends js.Object
   
   @js.native
   sealed trait details extends js.Object
@@ -127,85 +115,10 @@ object petitDashDomLibStrings {
   sealed trait dt extends js.Object
   
   @js.native
-  sealed trait ellipse extends js.Object
-  
-  @js.native
   sealed trait em extends js.Object
   
   @js.native
   sealed trait embed extends js.Object
-  
-  @js.native
-  sealed trait feBlend extends js.Object
-  
-  @js.native
-  sealed trait feColorMatrix extends js.Object
-  
-  @js.native
-  sealed trait feComponentTransfer extends js.Object
-  
-  @js.native
-  sealed trait feComposite extends js.Object
-  
-  @js.native
-  sealed trait feConvolveMatrix extends js.Object
-  
-  @js.native
-  sealed trait feDiffuseLighting extends js.Object
-  
-  @js.native
-  sealed trait feDisplacementMap extends js.Object
-  
-  @js.native
-  sealed trait feDistantLight extends js.Object
-  
-  @js.native
-  sealed trait feFlood extends js.Object
-  
-  @js.native
-  sealed trait feFuncA extends js.Object
-  
-  @js.native
-  sealed trait feFuncB extends js.Object
-  
-  @js.native
-  sealed trait feFuncG extends js.Object
-  
-  @js.native
-  sealed trait feFuncR extends js.Object
-  
-  @js.native
-  sealed trait feGaussianBlur extends js.Object
-  
-  @js.native
-  sealed trait feImage extends js.Object
-  
-  @js.native
-  sealed trait feMerge extends js.Object
-  
-  @js.native
-  sealed trait feMergeNode extends js.Object
-  
-  @js.native
-  sealed trait feMorphology extends js.Object
-  
-  @js.native
-  sealed trait feOffset extends js.Object
-  
-  @js.native
-  sealed trait fePointLight extends js.Object
-  
-  @js.native
-  sealed trait feSpecularLighting extends js.Object
-  
-  @js.native
-  sealed trait feSpotLight extends js.Object
-  
-  @js.native
-  sealed trait feTile extends js.Object
-  
-  @js.native
-  sealed trait feTurbulence extends js.Object
   
   @js.native
   sealed trait fieldset extends js.Object
@@ -217,16 +130,10 @@ object petitDashDomLibStrings {
   sealed trait figure extends js.Object
   
   @js.native
-  sealed trait filter extends js.Object
-  
-  @js.native
   sealed trait font extends js.Object
   
   @js.native
   sealed trait footer extends js.Object
-  
-  @js.native
-  sealed trait foreignObject extends js.Object
   
   @js.native
   sealed trait form extends js.Object
@@ -236,9 +143,6 @@ object petitDashDomLibStrings {
   
   @js.native
   sealed trait frameset extends js.Object
-  
-  @js.native
-  sealed trait g extends js.Object
   
   @js.native
   sealed trait h1 extends js.Object
@@ -280,9 +184,6 @@ object petitDashDomLibStrings {
   sealed trait iframe extends js.Object
   
   @js.native
-  sealed trait image extends js.Object
-  
-  @js.native
   sealed trait img extends js.Object
   
   @js.native
@@ -304,12 +205,6 @@ object petitDashDomLibStrings {
   sealed trait li extends js.Object
   
   @js.native
-  sealed trait line extends js.Object
-  
-  @js.native
-  sealed trait linearGradient extends js.Object
-  
-  @js.native
   sealed trait link extends js.Object
   
   @js.native
@@ -322,22 +217,13 @@ object petitDashDomLibStrings {
   sealed trait mark extends js.Object
   
   @js.native
-  sealed trait marker extends js.Object
-  
-  @js.native
   sealed trait marquee extends js.Object
-  
-  @js.native
-  sealed trait mask extends js.Object
   
   @js.native
   sealed trait menu extends js.Object
   
   @js.native
   sealed trait meta extends js.Object
-  
-  @js.native
-  sealed trait metadata extends js.Object
   
   @js.native
   sealed trait meter extends js.Object
@@ -370,19 +256,7 @@ object petitDashDomLibStrings {
   sealed trait param extends js.Object
   
   @js.native
-  sealed trait path extends js.Object
-  
-  @js.native
-  sealed trait pattern extends js.Object
-  
-  @js.native
   sealed trait picture extends js.Object
-  
-  @js.native
-  sealed trait polygon extends js.Object
-  
-  @js.native
-  sealed trait polyline extends js.Object
   
   @js.native
   sealed trait pre extends js.Object
@@ -392,12 +266,6 @@ object petitDashDomLibStrings {
   
   @js.native
   sealed trait q extends js.Object
-  
-  @js.native
-  sealed trait radialGradient extends js.Object
-  
-  @js.native
-  sealed trait rect extends js.Object
   
   @js.native
   sealed trait rp extends js.Object
@@ -436,9 +304,6 @@ object petitDashDomLibStrings {
   sealed trait span extends js.Object
   
   @js.native
-  sealed trait stop extends js.Object
-  
-  @js.native
   sealed trait strong extends js.Object
   
   @js.native
@@ -454,15 +319,6 @@ object petitDashDomLibStrings {
   sealed trait sup extends js.Object
   
   @js.native
-  sealed trait svg extends js.Object
-  
-  @js.native
-  sealed trait switch extends js.Object
-  
-  @js.native
-  sealed trait symbol extends js.Object
-  
-  @js.native
   sealed trait table extends js.Object
   
   @js.native
@@ -473,12 +329,6 @@ object petitDashDomLibStrings {
   
   @js.native
   sealed trait template extends js.Object
-  
-  @js.native
-  sealed trait text extends js.Object
-  
-  @js.native
-  sealed trait textPath extends js.Object
   
   @js.native
   sealed trait textarea extends js.Object
@@ -505,25 +355,16 @@ object petitDashDomLibStrings {
   sealed trait track extends js.Object
   
   @js.native
-  sealed trait tspan extends js.Object
-  
-  @js.native
   sealed trait u extends js.Object
   
   @js.native
   sealed trait ul extends js.Object
   
   @js.native
-  sealed trait use extends js.Object
-  
-  @js.native
   sealed trait `var` extends js.Object
   
   @js.native
   sealed trait video extends js.Object
-  
-  @js.native
-  sealed trait view extends js.Object
   
   @js.native
   sealed trait wbr extends js.Object
@@ -571,11 +412,7 @@ object petitDashDomLibStrings {
   @scala.inline
   def caption: caption = "caption".asInstanceOf[caption]
   @scala.inline
-  def circle: circle = "circle".asInstanceOf[circle]
-  @scala.inline
   def cite: cite = "cite".asInstanceOf[cite]
-  @scala.inline
-  def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
@@ -589,11 +426,7 @@ object petitDashDomLibStrings {
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
   @scala.inline
-  def defs: defs = "defs".asInstanceOf[defs]
-  @scala.inline
   def del: del = "del".asInstanceOf[del]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
   def details: details = "details".asInstanceOf[details]
   @scala.inline
@@ -609,59 +442,9 @@ object petitDashDomLibStrings {
   @scala.inline
   def dt: dt = "dt".asInstanceOf[dt]
   @scala.inline
-  def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
-  @scala.inline
   def em: em = "em".asInstanceOf[em]
   @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
-  @scala.inline
-  def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
-  @scala.inline
-  def feColorMatrix: feColorMatrix = "feColorMatrix".asInstanceOf[feColorMatrix]
-  @scala.inline
-  def feComponentTransfer: feComponentTransfer = "feComponentTransfer".asInstanceOf[feComponentTransfer]
-  @scala.inline
-  def feComposite: feComposite = "feComposite".asInstanceOf[feComposite]
-  @scala.inline
-  def feConvolveMatrix: feConvolveMatrix = "feConvolveMatrix".asInstanceOf[feConvolveMatrix]
-  @scala.inline
-  def feDiffuseLighting: feDiffuseLighting = "feDiffuseLighting".asInstanceOf[feDiffuseLighting]
-  @scala.inline
-  def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
-  @scala.inline
-  def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
-  @scala.inline
-  def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
-  @scala.inline
-  def feFuncA: feFuncA = "feFuncA".asInstanceOf[feFuncA]
-  @scala.inline
-  def feFuncB: feFuncB = "feFuncB".asInstanceOf[feFuncB]
-  @scala.inline
-  def feFuncG: feFuncG = "feFuncG".asInstanceOf[feFuncG]
-  @scala.inline
-  def feFuncR: feFuncR = "feFuncR".asInstanceOf[feFuncR]
-  @scala.inline
-  def feGaussianBlur: feGaussianBlur = "feGaussianBlur".asInstanceOf[feGaussianBlur]
-  @scala.inline
-  def feImage: feImage = "feImage".asInstanceOf[feImage]
-  @scala.inline
-  def feMerge: feMerge = "feMerge".asInstanceOf[feMerge]
-  @scala.inline
-  def feMergeNode: feMergeNode = "feMergeNode".asInstanceOf[feMergeNode]
-  @scala.inline
-  def feMorphology: feMorphology = "feMorphology".asInstanceOf[feMorphology]
-  @scala.inline
-  def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
-  @scala.inline
-  def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
-  @scala.inline
-  def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
-  @scala.inline
-  def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
-  @scala.inline
-  def feTile: feTile = "feTile".asInstanceOf[feTile]
-  @scala.inline
-  def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
   @scala.inline
   def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   @scala.inline
@@ -669,21 +452,15 @@ object petitDashDomLibStrings {
   @scala.inline
   def figure: figure = "figure".asInstanceOf[figure]
   @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
   def font: font = "font".asInstanceOf[font]
   @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
-  @scala.inline
-  def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
   @scala.inline
   def form: form = "form".asInstanceOf[form]
   @scala.inline
   def frame: frame = "frame".asInstanceOf[frame]
   @scala.inline
   def frameset: frameset = "frameset".asInstanceOf[frameset]
-  @scala.inline
-  def g: g = "g".asInstanceOf[g]
   @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   @scala.inline
@@ -711,8 +488,6 @@ object petitDashDomLibStrings {
   @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
   def img: img = "img".asInstanceOf[img]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
@@ -727,10 +502,6 @@ object petitDashDomLibStrings {
   @scala.inline
   def li: li = "li".asInstanceOf[li]
   @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
-  @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
   def main: main = "main".asInstanceOf[main]
@@ -739,17 +510,11 @@ object petitDashDomLibStrings {
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
   @scala.inline
-  def marker: marker = "marker".asInstanceOf[marker]
-  @scala.inline
   def marquee: marquee = "marquee".asInstanceOf[marquee]
-  @scala.inline
-  def mask: mask = "mask".asInstanceOf[mask]
   @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
   @scala.inline
   def meta: meta = "meta".asInstanceOf[meta]
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
   @scala.inline
@@ -771,25 +536,13 @@ object petitDashDomLibStrings {
   @scala.inline
   def param: param = "param".asInstanceOf[param]
   @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def pattern: pattern = "pattern".asInstanceOf[pattern]
-  @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
-  @scala.inline
-  def polygon: polygon = "polygon".asInstanceOf[polygon]
-  @scala.inline
-  def polyline: polyline = "polyline".asInstanceOf[polyline]
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
-  @scala.inline
-  def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
-  @scala.inline
-  def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
   def rp: rp = "rp".asInstanceOf[rp]
   @scala.inline
@@ -815,8 +568,6 @@ object petitDashDomLibStrings {
   @scala.inline
   def span: span = "span".asInstanceOf[span]
   @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
-  @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
   @scala.inline
   def style: style = "style".asInstanceOf[style]
@@ -827,12 +578,6 @@ object petitDashDomLibStrings {
   @scala.inline
   def sup: sup = "sup".asInstanceOf[sup]
   @scala.inline
-  def svg: svg = "svg".asInstanceOf[svg]
-  @scala.inline
-  def switch: switch = "switch".asInstanceOf[switch]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline
   def tbody: tbody = "tbody".asInstanceOf[tbody]
@@ -840,10 +585,6 @@ object petitDashDomLibStrings {
   def td: td = "td".asInstanceOf[td]
   @scala.inline
   def template: template = "template".asInstanceOf[template]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def textPath: textPath = "textPath".asInstanceOf[textPath]
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
@@ -861,19 +602,13 @@ object petitDashDomLibStrings {
   @scala.inline
   def track: track = "track".asInstanceOf[track]
   @scala.inline
-  def tspan: tspan = "tspan".asInstanceOf[tspan]
-  @scala.inline
   def u: u = "u".asInstanceOf[u]
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
   @scala.inline
-  def use: use = "use".asInstanceOf[use]
-  @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
   @scala.inline
   def wbr: wbr = "wbr".asInstanceOf[wbr]
 }

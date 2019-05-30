@@ -23,11 +23,11 @@ trait MaintenanceWindowExecution extends js.Object {
     */
   var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
   /**
-    * The ID of the Maintenance Window execution.
+    * The ID of the maintenance window execution.
     */
   var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
   /**
-    * The ID of the Maintenance Window.
+    * The ID of the maintenance window.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }

@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/router", "ChildActivationEnd")
 @js.native
-class ChildActivationEnd protected ()
-  extends atAngularRouterLib.publicUnderscoreApiMod.ChildActivationEnd {
+class ChildActivationEnd protected () extends Event {
   def this(/** @docsNotRequired */
-  snapshot: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot) = this()
+  snapshot: ActivatedRouteSnapshot) = this()
+  /** @docsNotRequired */
+  var snapshot: ActivatedRouteSnapshot = js.native
 }
 

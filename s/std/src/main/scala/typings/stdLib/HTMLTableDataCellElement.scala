@@ -16,6 +16,8 @@ class HTMLTableDataCellElementCls () extends HTMLTableDataCellElement {
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
   /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
+  /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */
   override val isContentEditable: scala.Boolean = js.native

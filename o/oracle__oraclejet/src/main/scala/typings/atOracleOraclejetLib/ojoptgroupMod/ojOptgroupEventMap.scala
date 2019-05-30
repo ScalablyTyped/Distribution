@@ -19,7 +19,7 @@ object ojOptgroupEventMap {
     animationend: stdLib.AnimationEvent,
     animationiteration: stdLib.AnimationEvent,
     animationstart: stdLib.AnimationEvent,
-    auxclick: stdLib.Event,
+    auxclick: stdLib.MouseEvent,
     blur: stdLib.FocusEvent,
     cancel: stdLib.Event,
     canplay: stdLib.Event,

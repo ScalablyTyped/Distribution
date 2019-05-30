@@ -5,18 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait ɵBindingFlags extends js.Object
+
 @JSImport("@angular/core", "ɵBindingFlags")
 @js.native
 object ɵBindingFlags extends js.Object {
-  /* 48 */ val CatSyntheticProperty: atAngularCoreLib.srcViewTypesMod.BindingFlags.CatSyntheticProperty with scala.Double = js.native
-  /* 32 */ val SyntheticHostProperty: atAngularCoreLib.srcViewTypesMod.BindingFlags.SyntheticHostProperty with scala.Double = js.native
-  /* 16 */ val SyntheticProperty: atAngularCoreLib.srcViewTypesMod.BindingFlags.SyntheticProperty with scala.Double = js.native
-  /* 1 */ val TypeElementAttribute: atAngularCoreLib.srcViewTypesMod.BindingFlags.TypeElementAttribute with scala.Double = js.native
-  /* 2 */ val TypeElementClass: atAngularCoreLib.srcViewTypesMod.BindingFlags.TypeElementClass with scala.Double = js.native
-  /* 4 */ val TypeElementStyle: atAngularCoreLib.srcViewTypesMod.BindingFlags.TypeElementStyle with scala.Double = js.native
-  /* 8 */ val TypeProperty: atAngularCoreLib.srcViewTypesMod.BindingFlags.TypeProperty with scala.Double = js.native
-  /* 15 */ val Types: atAngularCoreLib.srcViewTypesMod.BindingFlags.Types with scala.Double = js.native
+  @js.native
+  sealed trait CatSyntheticProperty
+    extends atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
+  
+  @js.native
+  sealed trait SyntheticHostProperty
+    extends atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
+  
+  @js.native
+  sealed trait SyntheticProperty
+    extends atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
+  
+  @js.native
+  sealed trait TypeElementAttribute
+    extends atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
+  
+  @js.native
+  sealed trait TypeElementClass
+    extends atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
+  
+  @js.native
+  sealed trait TypeElementStyle
+    extends atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
+  
+  @js.native
+  sealed trait TypeProperty
+    extends atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
+  
+  @js.native
+  sealed trait Types
+    extends atAngularCoreLib.atAngularCoreMod.ɵBindingFlags
+  
+  /* 48 */ val CatSyntheticProperty: CatSyntheticProperty with scala.Double = js.native
+  /* 32 */ val SyntheticHostProperty: SyntheticHostProperty with scala.Double = js.native
+  /* 16 */ val SyntheticProperty: SyntheticProperty with scala.Double = js.native
+  /* 1 */ val TypeElementAttribute: TypeElementAttribute with scala.Double = js.native
+  /* 2 */ val TypeElementClass: TypeElementClass with scala.Double = js.native
+  /* 4 */ val TypeElementStyle: TypeElementStyle with scala.Double = js.native
+  /* 8 */ val TypeProperty: TypeProperty with scala.Double = js.native
+  /* 15 */ val Types: Types with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[atAngularCoreLib.srcViewTypesMod.BindingFlags with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[atAngularCoreLib.atAngularCoreMod.ɵBindingFlags with scala.Double] = js.native
 }
 

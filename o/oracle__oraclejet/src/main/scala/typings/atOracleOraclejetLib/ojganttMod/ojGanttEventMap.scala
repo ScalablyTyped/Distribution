@@ -57,7 +57,7 @@ object ojGanttEventMap {
     animationiteration: stdLib.AnimationEvent,
     animationstart: stdLib.AnimationEvent,
     asChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
-    auxclick: stdLib.Event,
+    auxclick: stdLib.MouseEvent,
     axisPositionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.top
     ],

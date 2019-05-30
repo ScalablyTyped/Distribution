@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLFrameSetElement interface provides special properties (beyond those of the regular HTMLElement interface they also inherit) for manipulating <frameset> elements. */
+/** Provides special properties (beyond those of the regular HTMLElement interface they also inherit) for manipulating <frameset> elements. */
 @js.native
 trait HTMLFrameSetElement
   extends HTMLElement
@@ -49,6 +49,8 @@ class HTMLFrameSetElementCls () extends HTMLFrameSetElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

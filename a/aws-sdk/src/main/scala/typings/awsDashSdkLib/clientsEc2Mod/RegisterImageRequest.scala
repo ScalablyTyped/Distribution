@@ -31,7 +31,7 @@ trait RegisterImageRequest extends js.Object {
     */
   var EnaSupport: js.UndefOr[Boolean] = js.undefined
   /**
-    * The full path to your AMI manifest in Amazon S3 storage.
+    * The full path to your AMI manifest in Amazon S3 storage. The specified bucket must have the aws-exec-read canned access control list (ACL) to ensure that it can be accessed by Amazon EC2. For more information, see Canned ACLs in the Amazon S3 Service Developer Guide.
     */
   var ImageLocation: js.UndefOr[String] = js.undefined
   /**

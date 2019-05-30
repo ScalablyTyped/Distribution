@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The MediaKeyMessageEvent interface of the EncryptedMediaExtensions API contains the content and related data when the content decryption module generates a message for the session. */
+/** An interface of the EncryptedMediaExtensions API contains the content and related data when the content decryption module generates a message for the session. */
 @js.native
 trait MediaKeyMessageEvent extends Event {
   val message: ArrayBuffer = js.native

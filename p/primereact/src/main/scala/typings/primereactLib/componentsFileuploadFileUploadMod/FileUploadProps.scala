@@ -26,6 +26,7 @@ trait FileUploadProps extends js.Object {
   var onProgress: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventProgress, scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_FilesOriginalEvent, scala.Unit]] = js.undefined
   var onUpload: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_Files, scala.Unit]] = js.undefined
+  var onValidationFail: js.UndefOr[js.Function1[/* file */ stdLib.File, scala.Unit]] = js.undefined
   var previewWidth: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
   var uploadLabel: js.UndefOr[java.lang.String] = js.undefined
@@ -56,6 +57,7 @@ object FileUploadProps {
     onProgress: /* e */ primereactLib.Anon_OriginalEventProgress => scala.Unit = null,
     onSelect: /* e */ primereactLib.Anon_FilesOriginalEvent => scala.Unit = null,
     onUpload: /* e */ primereactLib.Anon_Files => scala.Unit = null,
+    onValidationFail: /* file */ stdLib.File => scala.Unit = null,
     previewWidth: scala.Int | scala.Double = null,
     style: js.Object = null,
     uploadLabel: java.lang.String = null,
@@ -83,6 +85,7 @@ object FileUploadProps {
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
     if (onUpload != null) __obj.updateDynamic("onUpload")(js.Any.fromFunction1(onUpload))
+    if (onValidationFail != null) __obj.updateDynamic("onValidationFail")(js.Any.fromFunction1(onValidationFail))
     if (previewWidth != null) __obj.updateDynamic("previewWidth")(previewWidth.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (uploadLabel != null) __obj.updateDynamic("uploadLabel")(uploadLabel)

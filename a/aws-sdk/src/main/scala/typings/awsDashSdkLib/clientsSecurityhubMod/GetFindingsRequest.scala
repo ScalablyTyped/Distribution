@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetFindingsRequest extends js.Object {
   /**
-    * A collection of attributes that is use for querying findings.
+    * A collection of attributes that is used for querying findings.
     */
   var Filters: js.UndefOr[AwsSecurityFindingFilters] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait GetFindingsRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[MaxResults] = js.undefined
   /**
-    * Paginates results. Set the value of this parameter to NULL on your first call to the GetFindings operation. For subsequent calls to the operation, fill nextToken in the request with the value of nextToken from the previous response to continue listing data.
+    * Paginates results. On your first call to the GetFindings operation, set the value of this parameter to NULL. For subsequent calls to the operation, fill nextToken in the request with the value of nextToken from the previous response to continue listing data.
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**

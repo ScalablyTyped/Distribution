@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
   - ionicLib.ionicLibStrings.ionic
   - ionicLib.ionicLibStrings.capacitor
   - ionicLib.ionicLibStrings.cordova
+  - ionicLib.ionicLibStrings.utility
   - ionicLib.ionicLibStrings.system
   - ionicLib.ionicLibStrings.environment
 */

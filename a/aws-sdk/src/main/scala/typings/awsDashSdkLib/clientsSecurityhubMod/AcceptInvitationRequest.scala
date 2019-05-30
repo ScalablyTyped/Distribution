@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait AcceptInvitationRequest extends js.Object {
   /**
-    * The ID of the invitation that is sent to the AWS account by the Security Hub master account. 
+    * The ID of the invitation that the Security Hub master account sends to the AWS account.
     */
   var InvitationId: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The account ID of the master Security Hub account whose invitation you're accepting. 
+    * The account ID of the Security Hub master account whose invitation you're accepting.
     */
   var MasterId: js.UndefOr[NonEmptyString] = js.undefined
 }

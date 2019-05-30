@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGAnimatedLength interface is used for attributes of basic type <length> which can be animated. */
+/** Used for attributes of basic type <length> which can be animated. */
 trait SVGAnimatedLength extends js.Object {
   val animVal: SVGLength
   val baseVal: SVGLength

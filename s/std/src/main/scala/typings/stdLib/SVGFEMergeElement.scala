@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEMergeElement interface corresponds to the <feMerge> element. */
+/** Corresponds to the <feMerge> element. */
 @js.native
 trait SVGFEMergeElement
   extends SVGElement
@@ -39,6 +39,8 @@ class SVGFEMergeElementCls () extends SVGFEMergeElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val height: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

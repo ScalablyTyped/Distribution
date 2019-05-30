@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "twilio-mcs-client"
-version := "0.2.2-0fcf79"
+version := "0.2.2-d979b5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-17198b",
-  "org.scalablytyped" %%% "std" % "3.4-ef47bb",
-  "org.scalablytyped" %%% "twilio-transport" % "0.3.3-0e994e")
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-2c614a",
+  "org.scalablytyped" %%% "std" % "3.5-f010ac",
+  "org.scalablytyped" %%% "twilio-transport" % "0.3.3-c36f60")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

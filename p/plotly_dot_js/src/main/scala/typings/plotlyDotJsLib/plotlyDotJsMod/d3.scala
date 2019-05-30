@@ -364,21 +364,7 @@ object d3 extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
-  def create_circle(name: plotlyDotJsLib.plotlyDotJsLibStrings.circle): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGCircleElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_cite(name: plotlyDotJsLib.plotlyDotJsLibStrings.cite): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSName("create")
-  def create_clipPath(name: plotlyDotJsLib.plotlyDotJsLibStrings.clipPath): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGClipPathElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
   @JSName("create")
   def create_code(name: plotlyDotJsLib.plotlyDotJsLibStrings.code): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
@@ -412,22 +398,8 @@ object d3 extends js.Object {
   @JSName("create")
   def create_dd(name: plotlyDotJsLib.plotlyDotJsLibStrings.dd): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
-  def create_defs(name: plotlyDotJsLib.plotlyDotJsLibStrings.defs): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGDefsElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_del(name: plotlyDotJsLib.plotlyDotJsLibStrings.del): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLModElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_desc(name: plotlyDotJsLib.plotlyDotJsLibStrings.desc): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGDescElement, 
     js.UndefOr[scala.Nothing], 
     scala.Null, 
     js.UndefOr[scala.Nothing]
@@ -472,185 +444,10 @@ object d3 extends js.Object {
   @JSName("create")
   def create_dt(name: plotlyDotJsLib.plotlyDotJsLibStrings.dt): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
-  def create_ellipse(name: plotlyDotJsLib.plotlyDotJsLibStrings.ellipse): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGEllipseElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_em(name: plotlyDotJsLib.plotlyDotJsLibStrings.em): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_embed(name: plotlyDotJsLib.plotlyDotJsLibStrings.embed): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLEmbedElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feBlend(name: plotlyDotJsLib.plotlyDotJsLibStrings.feBlend): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEBlendElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feColorMatrix(name: plotlyDotJsLib.plotlyDotJsLibStrings.feColorMatrix): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEColorMatrixElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feComponentTransfer(name: plotlyDotJsLib.plotlyDotJsLibStrings.feComponentTransfer): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEComponentTransferElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feComposite(name: plotlyDotJsLib.plotlyDotJsLibStrings.feComposite): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFECompositeElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feConvolveMatrix(name: plotlyDotJsLib.plotlyDotJsLibStrings.feConvolveMatrix): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEConvolveMatrixElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feDiffuseLighting(name: plotlyDotJsLib.plotlyDotJsLibStrings.feDiffuseLighting): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEDiffuseLightingElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feDisplacementMap(name: plotlyDotJsLib.plotlyDotJsLibStrings.feDisplacementMap): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEDisplacementMapElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feDistantLight(name: plotlyDotJsLib.plotlyDotJsLibStrings.feDistantLight): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEDistantLightElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feFlood(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFlood): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEFloodElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feFuncA(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFuncA): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEFuncAElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feFuncB(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFuncB): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEFuncBElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feFuncG(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFuncG): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEFuncGElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feFuncR(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFuncR): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEFuncRElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feGaussianBlur(name: plotlyDotJsLib.plotlyDotJsLibStrings.feGaussianBlur): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEGaussianBlurElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feImage(name: plotlyDotJsLib.plotlyDotJsLibStrings.feImage): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEImageElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feMerge(name: plotlyDotJsLib.plotlyDotJsLibStrings.feMerge): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEMergeElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feMergeNode(name: plotlyDotJsLib.plotlyDotJsLibStrings.feMergeNode): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEMergeNodeElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feMorphology(name: plotlyDotJsLib.plotlyDotJsLibStrings.feMorphology): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEMorphologyElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feOffset(name: plotlyDotJsLib.plotlyDotJsLibStrings.feOffset): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEOffsetElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_fePointLight(name: plotlyDotJsLib.plotlyDotJsLibStrings.fePointLight): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFEPointLightElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feSpecularLighting(name: plotlyDotJsLib.plotlyDotJsLibStrings.feSpecularLighting): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFESpecularLightingElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feSpotLight(name: plotlyDotJsLib.plotlyDotJsLibStrings.feSpotLight): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFESpotLightElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feTile(name: plotlyDotJsLib.plotlyDotJsLibStrings.feTile): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFETileElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_feTurbulence(name: plotlyDotJsLib.plotlyDotJsLibStrings.feTurbulence): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFETurbulenceElement, 
     js.UndefOr[scala.Nothing], 
     scala.Null, 
     js.UndefOr[scala.Nothing]
@@ -667,13 +464,6 @@ object d3 extends js.Object {
   @JSName("create")
   def create_figure(name: plotlyDotJsLib.plotlyDotJsLibStrings.figure): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
-  def create_filter(name: plotlyDotJsLib.plotlyDotJsLibStrings.filter): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGFilterElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_font(name: plotlyDotJsLib.plotlyDotJsLibStrings.font): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLFontElement, 
     js.UndefOr[scala.Nothing], 
@@ -682,13 +472,6 @@ object d3 extends js.Object {
   ] = js.native
   @JSName("create")
   def create_footer(name: plotlyDotJsLib.plotlyDotJsLibStrings.footer): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSName("create")
-  def create_foreignObject(name: plotlyDotJsLib.plotlyDotJsLibStrings.foreignObject): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGForeignObjectElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
   @JSName("create")
   def create_form(name: plotlyDotJsLib.plotlyDotJsLibStrings.form): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLFormElement, 
@@ -710,8 +493,6 @@ object d3 extends js.Object {
     scala.Null, 
     js.UndefOr[scala.Nothing]
   ] = js.native
-  @JSName("create")
-  def create_g(name: plotlyDotJsLib.plotlyDotJsLibStrings.g): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.SVGGElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_h1(name: plotlyDotJsLib.plotlyDotJsLibStrings.h1): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLHeadingElement, 
@@ -784,13 +565,6 @@ object d3 extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
-  def create_image(name: plotlyDotJsLib.plotlyDotJsLibStrings.image): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGImageElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_img(name: plotlyDotJsLib.plotlyDotJsLibStrings.img): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLImageElement, 
     js.UndefOr[scala.Nothing], 
@@ -830,20 +604,6 @@ object d3 extends js.Object {
   @JSName("create")
   def create_li(name: plotlyDotJsLib.plotlyDotJsLibStrings.li): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLLIElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
-  def create_line(name: plotlyDotJsLib.plotlyDotJsLibStrings.line): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGLineElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_linearGradient(name: plotlyDotJsLib.plotlyDotJsLibStrings.linearGradient): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGLinearGradientElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_link(name: plotlyDotJsLib.plotlyDotJsLibStrings.link): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLLinkElement, 
     js.UndefOr[scala.Nothing], 
@@ -862,22 +622,8 @@ object d3 extends js.Object {
   @JSName("create")
   def create_mark(name: plotlyDotJsLib.plotlyDotJsLibStrings.mark): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
-  def create_marker(name: plotlyDotJsLib.plotlyDotJsLibStrings.marker): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGMarkerElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_marquee(name: plotlyDotJsLib.plotlyDotJsLibStrings.marquee): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLMarqueeElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_mask(name: plotlyDotJsLib.plotlyDotJsLibStrings.mask): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGMaskElement, 
     js.UndefOr[scala.Nothing], 
     scala.Null, 
     js.UndefOr[scala.Nothing]
@@ -892,13 +638,6 @@ object d3 extends js.Object {
   @JSName("create")
   def create_meta(name: plotlyDotJsLib.plotlyDotJsLibStrings.meta): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLMetaElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_metadata(name: plotlyDotJsLib.plotlyDotJsLibStrings.metadata): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGMetadataElement, 
     js.UndefOr[scala.Nothing], 
     scala.Null, 
     js.UndefOr[scala.Nothing]
@@ -964,36 +703,8 @@ object d3 extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
-  def create_path(name: plotlyDotJsLib.plotlyDotJsLibStrings.path): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGPathElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_pattern(name: plotlyDotJsLib.plotlyDotJsLibStrings.pattern): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGPatternElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_picture(name: plotlyDotJsLib.plotlyDotJsLibStrings.picture): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLPictureElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_polygon(name: plotlyDotJsLib.plotlyDotJsLibStrings.polygon): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGPolygonElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_polyline(name: plotlyDotJsLib.plotlyDotJsLibStrings.polyline): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGPolylineElement, 
     js.UndefOr[scala.Nothing], 
     scala.Null, 
     js.UndefOr[scala.Nothing]
@@ -1015,20 +726,6 @@ object d3 extends js.Object {
   @JSName("create")
   def create_q(name: plotlyDotJsLib.plotlyDotJsLibStrings.q): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLQuoteElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_radialGradient(name: plotlyDotJsLib.plotlyDotJsLibStrings.radialGradient): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGRadialGradientElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_rect(name: plotlyDotJsLib.plotlyDotJsLibStrings.rect): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGRectElement, 
     js.UndefOr[scala.Nothing], 
     scala.Null, 
     js.UndefOr[scala.Nothing]
@@ -1083,13 +780,6 @@ object d3 extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
-  def create_stop(name: plotlyDotJsLib.plotlyDotJsLibStrings.stop): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGStopElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_strong(name: plotlyDotJsLib.plotlyDotJsLibStrings.strong): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_style(name: plotlyDotJsLib.plotlyDotJsLibStrings.style): d3DashSelectionLib.d3DashSelectionMod.Selection[
@@ -1104,22 +794,6 @@ object d3 extends js.Object {
   def create_summary(name: plotlyDotJsLib.plotlyDotJsLibStrings.summary): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_sup(name: plotlyDotJsLib.plotlyDotJsLibStrings.sup): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSName("create")
-  def create_svg(name: plotlyDotJsLib.plotlyDotJsLibStrings.svg): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.SVGSVGElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSName("create")
-  def create_switch(name: plotlyDotJsLib.plotlyDotJsLibStrings.switch): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGSwitchElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_symbol(name: plotlyDotJsLib.plotlyDotJsLibStrings.symbol): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGSymbolElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
   @JSName("create")
   def create_table(name: plotlyDotJsLib.plotlyDotJsLibStrings.table): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLTableElement, 
@@ -1144,20 +818,6 @@ object d3 extends js.Object {
   @JSName("create")
   def create_template(name: plotlyDotJsLib.plotlyDotJsLibStrings.template): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLTemplateElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_text(name: plotlyDotJsLib.plotlyDotJsLibStrings.text): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGTextElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_textPath(name: plotlyDotJsLib.plotlyDotJsLibStrings.textPath): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGTextPathElement, 
     js.UndefOr[scala.Nothing], 
     scala.Null, 
     js.UndefOr[scala.Nothing]
@@ -1219,13 +879,6 @@ object d3 extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
-  def create_tspan(name: plotlyDotJsLib.plotlyDotJsLibStrings.tspan): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGTSpanElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
   def create_u(name: plotlyDotJsLib.plotlyDotJsLibStrings.u): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_ul(name: plotlyDotJsLib.plotlyDotJsLibStrings.ul): d3DashSelectionLib.d3DashSelectionMod.Selection[
@@ -1235,19 +888,10 @@ object d3 extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
-  def create_use(name: plotlyDotJsLib.plotlyDotJsLibStrings.use): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.SVGUseElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSName("create")
   def create_var(name: plotlyDotJsLib.plotlyDotJsLibStrings.`var`): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_video(name: plotlyDotJsLib.plotlyDotJsLibStrings.video): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLVideoElement, 
-    js.UndefOr[scala.Nothing], 
-    scala.Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSName("create")
-  def create_view(name: plotlyDotJsLib.plotlyDotJsLibStrings.view): d3DashSelectionLib.d3DashSelectionMod.Selection[
-    stdLib.SVGViewElement, 
     js.UndefOr[scala.Nothing], 
     scala.Null, 
     js.UndefOr[scala.Nothing]
@@ -1312,14 +956,7 @@ object d3 extends js.Object {
     stdLib.HTMLTableCaptionElement
   ] = js.native
   @JSName("creator")
-  def creator_circle(name: plotlyDotJsLib.plotlyDotJsLibStrings.circle): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGCircleElement] = js.native
-  @JSName("creator")
   def creator_cite(name: plotlyDotJsLib.plotlyDotJsLibStrings.cite): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
-  @JSName("creator")
-  def creator_clipPath(name: plotlyDotJsLib.plotlyDotJsLibStrings.clipPath): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGClipPathElement
-  ] = js.native
   @JSName("creator")
   def creator_code(name: plotlyDotJsLib.plotlyDotJsLibStrings.code): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
@@ -1342,11 +979,7 @@ object d3 extends js.Object {
   @JSName("creator")
   def creator_dd(name: plotlyDotJsLib.plotlyDotJsLibStrings.dd): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
-  def creator_defs(name: plotlyDotJsLib.plotlyDotJsLibStrings.defs): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGDefsElement] = js.native
-  @JSName("creator")
   def creator_del(name: plotlyDotJsLib.plotlyDotJsLibStrings.del): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLModElement] = js.native
-  @JSName("creator")
-  def creator_desc(name: plotlyDotJsLib.plotlyDotJsLibStrings.desc): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGDescElement] = js.native
   @JSName("creator")
   def creator_details(name: plotlyDotJsLib.plotlyDotJsLibStrings.details): js.ThisFunction0[
     /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
@@ -1371,131 +1004,9 @@ object d3 extends js.Object {
   @JSName("creator")
   def creator_dt(name: plotlyDotJsLib.plotlyDotJsLibStrings.dt): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
-  def creator_ellipse(name: plotlyDotJsLib.plotlyDotJsLibStrings.ellipse): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGEllipseElement
-  ] = js.native
-  @JSName("creator")
   def creator_em(name: plotlyDotJsLib.plotlyDotJsLibStrings.em): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_embed(name: plotlyDotJsLib.plotlyDotJsLibStrings.embed): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLEmbedElement] = js.native
-  @JSName("creator")
-  def creator_feBlend(name: plotlyDotJsLib.plotlyDotJsLibStrings.feBlend): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEBlendElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feColorMatrix(name: plotlyDotJsLib.plotlyDotJsLibStrings.feColorMatrix): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEColorMatrixElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feComponentTransfer(name: plotlyDotJsLib.plotlyDotJsLibStrings.feComponentTransfer): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEComponentTransferElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feComposite(name: plotlyDotJsLib.plotlyDotJsLibStrings.feComposite): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFECompositeElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feConvolveMatrix(name: plotlyDotJsLib.plotlyDotJsLibStrings.feConvolveMatrix): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEConvolveMatrixElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feDiffuseLighting(name: plotlyDotJsLib.plotlyDotJsLibStrings.feDiffuseLighting): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEDiffuseLightingElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feDisplacementMap(name: plotlyDotJsLib.plotlyDotJsLibStrings.feDisplacementMap): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEDisplacementMapElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feDistantLight(name: plotlyDotJsLib.plotlyDotJsLibStrings.feDistantLight): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEDistantLightElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feFlood(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFlood): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEFloodElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feFuncA(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFuncA): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEFuncAElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feFuncB(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFuncB): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEFuncBElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feFuncG(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFuncG): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEFuncGElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feFuncR(name: plotlyDotJsLib.plotlyDotJsLibStrings.feFuncR): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEFuncRElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feGaussianBlur(name: plotlyDotJsLib.plotlyDotJsLibStrings.feGaussianBlur): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEGaussianBlurElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feImage(name: plotlyDotJsLib.plotlyDotJsLibStrings.feImage): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEImageElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feMerge(name: plotlyDotJsLib.plotlyDotJsLibStrings.feMerge): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEMergeElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feMergeNode(name: plotlyDotJsLib.plotlyDotJsLibStrings.feMergeNode): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEMergeNodeElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feMorphology(name: plotlyDotJsLib.plotlyDotJsLibStrings.feMorphology): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEMorphologyElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feOffset(name: plotlyDotJsLib.plotlyDotJsLibStrings.feOffset): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEOffsetElement
-  ] = js.native
-  @JSName("creator")
-  def creator_fePointLight(name: plotlyDotJsLib.plotlyDotJsLibStrings.fePointLight): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFEPointLightElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feSpecularLighting(name: plotlyDotJsLib.plotlyDotJsLibStrings.feSpecularLighting): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFESpecularLightingElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feSpotLight(name: plotlyDotJsLib.plotlyDotJsLibStrings.feSpotLight): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFESpotLightElement
-  ] = js.native
-  @JSName("creator")
-  def creator_feTile(name: plotlyDotJsLib.plotlyDotJsLibStrings.feTile): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGFETileElement] = js.native
-  @JSName("creator")
-  def creator_feTurbulence(name: plotlyDotJsLib.plotlyDotJsLibStrings.feTurbulence): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGFETurbulenceElement
-  ] = js.native
   @JSName("creator")
   def creator_fieldset(name: plotlyDotJsLib.plotlyDotJsLibStrings.fieldset): js.ThisFunction0[
     /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
@@ -1506,16 +1017,9 @@ object d3 extends js.Object {
   @JSName("creator")
   def creator_figure(name: plotlyDotJsLib.plotlyDotJsLibStrings.figure): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
-  def creator_filter(name: plotlyDotJsLib.plotlyDotJsLibStrings.filter): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGFilterElement] = js.native
-  @JSName("creator")
   def creator_font(name: plotlyDotJsLib.plotlyDotJsLibStrings.font): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLFontElement] = js.native
   @JSName("creator")
   def creator_footer(name: plotlyDotJsLib.plotlyDotJsLibStrings.footer): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
-  @JSName("creator")
-  def creator_foreignObject(name: plotlyDotJsLib.plotlyDotJsLibStrings.foreignObject): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGForeignObjectElement
-  ] = js.native
   @JSName("creator")
   def creator_form(name: plotlyDotJsLib.plotlyDotJsLibStrings.form): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLFormElement] = js.native
   @JSName("creator")
@@ -1525,8 +1029,6 @@ object d3 extends js.Object {
     /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
     stdLib.HTMLFrameSetElement
   ] = js.native
-  @JSName("creator")
-  def creator_g(name: plotlyDotJsLib.plotlyDotJsLibStrings.g): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGGElement] = js.native
   @JSName("creator")
   def creator_h1(name: plotlyDotJsLib.plotlyDotJsLibStrings.h1): js.ThisFunction0[
     /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
@@ -1575,8 +1077,6 @@ object d3 extends js.Object {
     stdLib.HTMLIFrameElement
   ] = js.native
   @JSName("creator")
-  def creator_image(name: plotlyDotJsLib.plotlyDotJsLibStrings.image): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGImageElement] = js.native
-  @JSName("creator")
   def creator_img(name: plotlyDotJsLib.plotlyDotJsLibStrings.img): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLImageElement] = js.native
   @JSName("creator")
   def creator_input(name: plotlyDotJsLib.plotlyDotJsLibStrings.input): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLInputElement] = js.native
@@ -1594,13 +1094,6 @@ object d3 extends js.Object {
   @JSName("creator")
   def creator_li(name: plotlyDotJsLib.plotlyDotJsLibStrings.li): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLLIElement] = js.native
   @JSName("creator")
-  def creator_line(name: plotlyDotJsLib.plotlyDotJsLibStrings.line): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGLineElement] = js.native
-  @JSName("creator")
-  def creator_linearGradient(name: plotlyDotJsLib.plotlyDotJsLibStrings.linearGradient): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGLinearGradientElement
-  ] = js.native
-  @JSName("creator")
   def creator_link(name: plotlyDotJsLib.plotlyDotJsLibStrings.link): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLLinkElement] = js.native
   @JSName("creator")
   def creator_main(name: plotlyDotJsLib.plotlyDotJsLibStrings.main): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
@@ -1609,23 +1102,14 @@ object d3 extends js.Object {
   @JSName("creator")
   def creator_mark(name: plotlyDotJsLib.plotlyDotJsLibStrings.mark): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
-  def creator_marker(name: plotlyDotJsLib.plotlyDotJsLibStrings.marker): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGMarkerElement] = js.native
-  @JSName("creator")
   def creator_marquee(name: plotlyDotJsLib.plotlyDotJsLibStrings.marquee): js.ThisFunction0[
     /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
     stdLib.HTMLMarqueeElement
   ] = js.native
   @JSName("creator")
-  def creator_mask(name: plotlyDotJsLib.plotlyDotJsLibStrings.mask): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGMaskElement] = js.native
-  @JSName("creator")
   def creator_menu(name: plotlyDotJsLib.plotlyDotJsLibStrings.menu): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLMenuElement] = js.native
   @JSName("creator")
   def creator_meta(name: plotlyDotJsLib.plotlyDotJsLibStrings.meta): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLMetaElement] = js.native
-  @JSName("creator")
-  def creator_metadata(name: plotlyDotJsLib.plotlyDotJsLibStrings.metadata): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGMetadataElement
-  ] = js.native
   @JSName("creator")
   def creator_meter(name: plotlyDotJsLib.plotlyDotJsLibStrings.meter): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLMeterElement] = js.native
   @JSName("creator")
@@ -1662,26 +1146,9 @@ object d3 extends js.Object {
   @JSName("creator")
   def creator_param(name: plotlyDotJsLib.plotlyDotJsLibStrings.param): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLParamElement] = js.native
   @JSName("creator")
-  def creator_path(name: plotlyDotJsLib.plotlyDotJsLibStrings.path): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGPathElement] = js.native
-  @JSName("creator")
-  def creator_pattern(name: plotlyDotJsLib.plotlyDotJsLibStrings.pattern): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGPatternElement
-  ] = js.native
-  @JSName("creator")
   def creator_picture(name: plotlyDotJsLib.plotlyDotJsLibStrings.picture): js.ThisFunction0[
     /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
     stdLib.HTMLPictureElement
-  ] = js.native
-  @JSName("creator")
-  def creator_polygon(name: plotlyDotJsLib.plotlyDotJsLibStrings.polygon): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGPolygonElement
-  ] = js.native
-  @JSName("creator")
-  def creator_polyline(name: plotlyDotJsLib.plotlyDotJsLibStrings.polyline): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGPolylineElement
   ] = js.native
   @JSName("creator")
   def creator_pre(name: plotlyDotJsLib.plotlyDotJsLibStrings.pre): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLPreElement] = js.native
@@ -1692,13 +1159,6 @@ object d3 extends js.Object {
   ] = js.native
   @JSName("creator")
   def creator_q(name: plotlyDotJsLib.plotlyDotJsLibStrings.q): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLQuoteElement] = js.native
-  @JSName("creator")
-  def creator_radialGradient(name: plotlyDotJsLib.plotlyDotJsLibStrings.radialGradient): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGRadialGradientElement
-  ] = js.native
-  @JSName("creator")
-  def creator_rect(name: plotlyDotJsLib.plotlyDotJsLibStrings.rect): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGRectElement] = js.native
   @JSName("creator")
   def creator_rp(name: plotlyDotJsLib.plotlyDotJsLibStrings.rp): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
@@ -1733,8 +1193,6 @@ object d3 extends js.Object {
   @JSName("creator")
   def creator_span(name: plotlyDotJsLib.plotlyDotJsLibStrings.span): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLSpanElement] = js.native
   @JSName("creator")
-  def creator_stop(name: plotlyDotJsLib.plotlyDotJsLibStrings.stop): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGStopElement] = js.native
-  @JSName("creator")
   def creator_strong(name: plotlyDotJsLib.plotlyDotJsLibStrings.strong): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_style(name: plotlyDotJsLib.plotlyDotJsLibStrings.style): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLStyleElement] = js.native
@@ -1744,12 +1202,6 @@ object d3 extends js.Object {
   def creator_summary(name: plotlyDotJsLib.plotlyDotJsLibStrings.summary): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_sup(name: plotlyDotJsLib.plotlyDotJsLibStrings.sup): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
-  @JSName("creator")
-  def creator_svg(name: plotlyDotJsLib.plotlyDotJsLibStrings.svg): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGSVGElement] = js.native
-  @JSName("creator")
-  def creator_switch(name: plotlyDotJsLib.plotlyDotJsLibStrings.switch): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGSwitchElement] = js.native
-  @JSName("creator")
-  def creator_symbol(name: plotlyDotJsLib.plotlyDotJsLibStrings.symbol): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGSymbolElement] = js.native
   @JSName("creator")
   def creator_table(name: plotlyDotJsLib.plotlyDotJsLibStrings.table): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLTableElement] = js.native
   @JSName("creator")
@@ -1766,13 +1218,6 @@ object d3 extends js.Object {
   def creator_template(name: plotlyDotJsLib.plotlyDotJsLibStrings.template): js.ThisFunction0[
     /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
     stdLib.HTMLTemplateElement
-  ] = js.native
-  @JSName("creator")
-  def creator_text(name: plotlyDotJsLib.plotlyDotJsLibStrings.text): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGTextElement] = js.native
-  @JSName("creator")
-  def creator_textPath(name: plotlyDotJsLib.plotlyDotJsLibStrings.textPath): js.ThisFunction0[
-    /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
-    stdLib.SVGTextPathElement
   ] = js.native
   @JSName("creator")
   def creator_textarea(name: plotlyDotJsLib.plotlyDotJsLibStrings.textarea): js.ThisFunction0[
@@ -1806,19 +1251,13 @@ object d3 extends js.Object {
   @JSName("creator")
   def creator_track(name: plotlyDotJsLib.plotlyDotJsLibStrings.track): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLTrackElement] = js.native
   @JSName("creator")
-  def creator_tspan(name: plotlyDotJsLib.plotlyDotJsLibStrings.tspan): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGTSpanElement] = js.native
-  @JSName("creator")
   def creator_u(name: plotlyDotJsLib.plotlyDotJsLibStrings.u): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_ul(name: plotlyDotJsLib.plotlyDotJsLibStrings.ul): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLUListElement] = js.native
   @JSName("creator")
-  def creator_use(name: plotlyDotJsLib.plotlyDotJsLibStrings.use): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGUseElement] = js.native
-  @JSName("creator")
   def creator_var(name: plotlyDotJsLib.plotlyDotJsLibStrings.`var`): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_video(name: plotlyDotJsLib.plotlyDotJsLibStrings.video): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLVideoElement] = js.native
-  @JSName("creator")
-  def creator_view(name: plotlyDotJsLib.plotlyDotJsLibStrings.view): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGViewElement] = js.native
   @JSName("creator")
   def creator_wbr(name: plotlyDotJsLib.plotlyDotJsLibStrings.wbr): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   def cross[S, T](a: stdLib.Iterable[S], b: stdLib.Iterable[T]): js.Array[js.Tuple2[S, T]] = js.native

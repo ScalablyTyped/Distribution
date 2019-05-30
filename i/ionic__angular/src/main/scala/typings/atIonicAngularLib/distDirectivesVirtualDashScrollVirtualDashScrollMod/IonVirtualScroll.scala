@@ -95,7 +95,7 @@ class IonVirtualScroll protected () extends js.Object {
     * Same as `ngForTrackBy` which can be used on `ngFor`.
     */
   @JSName("trackBy")
-  var trackBy_Original: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.TrackByFunction[_] = js.native
+  var trackBy_Original: atAngularCoreLib.atAngularCoreMod.TrackByFunction[_] = js.native
   var zone: js.Any = js.native
   /**
     * This method marks the tail the items array as dirty, so they can be re-rendered.  It's equivalent to calling:  ```js    * virtualScroll.checkRange(lastItemLen, items.length - lastItemLen);    * ```
@@ -107,7 +107,7 @@ class IonVirtualScroll protected () extends js.Object {
   def checkRange(offset: scala.Double): scala.Unit = js.native
   def checkRange(offset: scala.Double, len: scala.Double): scala.Unit = js.native
   def ngDoCheck(): scala.Unit = js.native
-  def ngOnChanges(changes: atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.SimpleChanges): scala.Unit = js.native
+  def ngOnChanges(changes: atAngularCoreLib.atAngularCoreMod.SimpleChanges): scala.Unit = js.native
   /**
     * Returns the position of the virtual item at the given index.
     */

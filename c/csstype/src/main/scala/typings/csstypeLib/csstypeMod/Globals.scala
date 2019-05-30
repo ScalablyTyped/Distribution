@@ -110,6 +110,7 @@ trait Globals
      with RubyMergeProperty
      with RubyPositionProperty
      with ScrollBehaviorProperty
+     with ScrollSnapStopProperty
      with ScrollSnapTypeXProperty
      with ScrollSnapTypeYProperty
      with ScrollbarWidthProperty
@@ -351,8 +352,6 @@ trait Globals
      with _OutlineProperty[js.Any]
      with _OutlineStyleProperty
      with _OutlineWidthProperty[js.Any]
-     with _OverflowBlockProperty
-     with _OverflowInlineProperty
      with _OverflowProperty
      with _OverscrollBehaviorProperty
      with _PaintOrderProperty

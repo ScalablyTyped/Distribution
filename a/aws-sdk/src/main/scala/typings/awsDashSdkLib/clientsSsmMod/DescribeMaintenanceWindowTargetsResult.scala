@@ -11,7 +11,7 @@ trait DescribeMaintenanceWindowTargetsResult extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * Information about the targets in the Maintenance Window.
+    * Information about the targets in the maintenance window.
     */
   var Targets: js.UndefOr[MaintenanceWindowTargetList] = js.undefined
 }

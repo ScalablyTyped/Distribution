@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLFieldSetElement interface has special properties and methods (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of field-set elements. */
+/** Provides special properties and methods (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of <fieldset> elements. */
 @js.native
 trait HTMLFieldSetElement extends HTMLElement {
   var disabled: scala.Boolean = js.native
@@ -47,6 +47,8 @@ class HTMLFieldSetElementCls () extends HTMLFieldSetElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

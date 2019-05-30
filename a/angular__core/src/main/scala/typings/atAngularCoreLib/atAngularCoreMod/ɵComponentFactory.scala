@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @publicApi
+  */
 @JSImport("@angular/core", "ɵComponentFactory")
 @js.native
-abstract class ɵComponentFactory[C] ()
-  extends atAngularCoreLib.publicUnderscoreApiMod.ɵComponentFactory[C]
+abstract class ɵComponentFactory[C] () extends ComponentFactory[C]
 

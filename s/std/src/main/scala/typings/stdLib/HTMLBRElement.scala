@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLBRElement interface represents a HTML line break element (<br>). It inherits from HTMLElement. */
+/** A HTML line break element (<br>). It inherits from HTMLElement. */
 @js.native
 trait HTMLBRElement extends HTMLElement {
   /**
@@ -22,6 +22,8 @@ class HTMLBRElementCls () extends HTMLBRElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

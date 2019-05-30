@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ModifyGlobalClusterMessage extends js.Object {
   /**
-    *  Indicates if the global database cluster has deletion protection enabled. The global database cluster can't be deleted when this value is set to true. 
+    *  Indicates if the global database cluster has deletion protection enabled. The global database cluster can't be deleted when deletion protection is enabled. 
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**

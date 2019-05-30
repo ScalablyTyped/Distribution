@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGTextPathElement interface corresponds to the <textPath> element. */
+/** Corresponds to the <textPath> element. */
 @js.native
 trait SVGTextPathElement
   extends SVGTextContentElement
@@ -48,6 +48,8 @@ class SVGTextPathElementCls () extends SVGTextPathElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val href: SVGAnimatedString = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

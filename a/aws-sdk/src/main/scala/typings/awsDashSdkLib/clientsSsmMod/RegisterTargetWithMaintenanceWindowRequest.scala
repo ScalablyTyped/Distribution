@@ -19,19 +19,19 @@ trait RegisterTargetWithMaintenanceWindowRequest extends js.Object {
     */
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   /**
-    * User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this Maintenance Window.
+    * User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this maintenance window.
     */
   var OwnerInformation: js.UndefOr[OwnerInformation] = js.undefined
   /**
-    * The type of target being registered with the Maintenance Window.
+    * The type of target being registered with the maintenance window.
     */
   var ResourceType: MaintenanceWindowResourceType
   /**
-    * The targets (either instances or tags).  Specify instances using the following format:  Key=InstanceIds,Values=&lt;instance-id-1&gt;,&lt;instance-id-2&gt;  Specify tags using either of the following formats:  Key=tag:&lt;tag-key&gt;,Values=&lt;tag-value-1&gt;,&lt;tag-value-2&gt;   Key=tag-key,Values=&lt;tag-key-1&gt;,&lt;tag-key-2&gt; 
+    * The targets to register with the maintenance window. In other words, the instances to run commands on when the maintenance window runs. You can specify targets using either instance IDs or tags that have been applied to instances.  Example 1: Specify instance IDs  Key=InstanceIds,Values=instance-id-1,instance-id-2,instance-id-3    Example 2: Use tag key-pairs applied to instances  Key=tag:my-tag-key,Values=my-tag-value-1,my-tag-value-2    Example 3: Use tag-keys applied to instances  Key=tag-key,Values=my-tag-key-1,my-tag-key-2   For more information about these examples formats, including the best use case for each one, see Examples: Register Targets with a Maintenance Window in the AWS Systems Manager User Guide.
     */
   var Targets: awsDashSdkLib.clientsSsmMod.Targets
   /**
-    * The ID of the Maintenance Window the target should be registered with.
+    * The ID of the maintenance window the target should be registered with.
     */
   var WindowId: MaintenanceWindowId
 }

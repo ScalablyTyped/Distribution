@@ -35,7 +35,7 @@ trait ParameterHistory extends js.Object {
     */
   var Name: js.UndefOr[PSParameterName] = js.undefined
   /**
-    * Information about the policies assigned to a parameter.
+    * Information about the policies assigned to a parameter.  Working with Parameter Policies in the AWS Systems Manager User Guide.
     */
   var Policies: js.UndefOr[ParameterPolicyList] = js.undefined
   /**

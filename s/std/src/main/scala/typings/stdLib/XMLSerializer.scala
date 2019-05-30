@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The XMLSerializer interface provides the serializeToString() method to construct an XML string representing a DOM tree. */
+/** Provides the serializeToString() method to construct an XML string representing a DOM tree. */
 trait XMLSerializer extends js.Object {
   def serializeToString(root: Node): java.lang.String
 }

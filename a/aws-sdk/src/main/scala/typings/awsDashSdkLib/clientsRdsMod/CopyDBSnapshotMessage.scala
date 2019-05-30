@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CopyDBSnapshotMessage extends js.Object {
   /**
-    * True to copy all tags from the source DB snapshot to the target DB snapshot, and otherwise false. The default is false.
+    * A value that indicates whether to copy all tags from the source DB snapshot to the target DB snapshot. By default, tags are not copied.
     */
   var CopyTags: js.UndefOr[BooleanOptional] = js.undefined
   /**

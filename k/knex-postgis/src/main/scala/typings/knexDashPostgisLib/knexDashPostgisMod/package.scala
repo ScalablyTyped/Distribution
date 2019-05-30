@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object knexDashPostgisMod {
   // Same as in Knex but not exported
-  type ColumnName = java.lang.String | knexLib.knexMod.Raw | knexLib.knexMod.QueryBuilder
+  type ColumnName = java.lang.String | knexLib.knexMod.Raw[js.Any] | (knexLib.knexMod.QueryBuilder[js.Any, js.Array[knexLib.knexMod.SafePartial[js.Any]]])
 }

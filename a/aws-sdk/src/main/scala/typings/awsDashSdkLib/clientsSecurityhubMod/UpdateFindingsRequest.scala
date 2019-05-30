@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateFindingsRequest extends js.Object {
   /**
-    * A collection of attributes that specify what findings you want to update.
+    * A collection of attributes that specify which findings you want to update.
     */
   var Filters: AwsSecurityFindingFilters
   /**

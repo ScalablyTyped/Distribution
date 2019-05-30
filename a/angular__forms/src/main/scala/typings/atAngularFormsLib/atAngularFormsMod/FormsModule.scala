@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/forms", "FormsModule")
 @js.native
-class FormsModule ()
-  extends atAngularFormsLib.publicUnderscoreApiMod.FormsModule
+class FormsModule () extends js.Object
 
 /* static members */
 @JSImport("@angular/forms", "FormsModule")
@@ -22,6 +21,6 @@ object FormsModule extends js.Object {
     * * `warnOnDeprecatedNgFormSelector` Configures when to emit a warning when the deprecated
     * `ngForm` selector is used.
     */
-  def withConfig(opts: atAngularFormsLib.Anon_Always): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularFormsLib.srcFormUnderscoreProvidersMod.FormsModule] = js.native
+  def withConfig(opts: atAngularFormsLib.Anon_Always): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[atAngularFormsLib.atAngularFormsMod.FormsModule] = js.native
 }
 

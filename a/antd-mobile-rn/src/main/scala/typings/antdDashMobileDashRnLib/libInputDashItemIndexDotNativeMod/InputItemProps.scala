@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait InputItemProps
+- Dropped {[ P in std.Exclude<keyof any, 'onChange' | 'onFocus' | 'onBlur'> ]: any[P]} */ trait InputItemProps
   extends antdDashMobileDashRnLib.libInputDashItemPropsTypeMod.InputItemPropsType {
   var last: js.UndefOr[scala.Boolean] = js.undefined
   var onErrorClick: js.UndefOr[

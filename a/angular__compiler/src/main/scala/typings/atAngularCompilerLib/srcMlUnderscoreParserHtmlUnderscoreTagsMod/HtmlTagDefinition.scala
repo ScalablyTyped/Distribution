@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HtmlTagDefinition ()
   extends atAngularCompilerLib.srcMlUnderscoreParserTagsMod.TagDefinition {
-  def this(hasClosedByChildrenRequiredParentsImplicitNamespacePrefixContentTypeClosedByParentIsVoidIgnoreFirstLf: atAngularCompilerLib.Anon_ClosedByChildren) = this()
+  def this(hasClosedByChildrenImplicitNamespacePrefixContentTypeClosedByParentIsVoidIgnoreFirstLf: atAngularCompilerLib.Anon_ClosedByChildren) = this()
   /* CompleteClass */
   override var canSelfClose: scala.Boolean = js.native
   var closedByChildren: js.Any = js.native
@@ -24,12 +24,6 @@ class HtmlTagDefinition ()
   /* CompleteClass */
   override var isVoid: scala.Boolean = js.native
   /* CompleteClass */
-  override var parentToAdd: java.lang.String = js.native
-  /* CompleteClass */
-  override var requiredParents: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
-  /* CompleteClass */
   override def isClosedByChild(name: java.lang.String): scala.Boolean = js.native
-  /* CompleteClass */
-  override def requireExtraParent(currentParent: java.lang.String): scala.Boolean = js.native
 }
 

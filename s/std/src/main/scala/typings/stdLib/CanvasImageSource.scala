@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - HTMLVideoElement
   - HTMLCanvasElement
   - ImageBitmap
+  - OffscreenCanvas
 */
 trait CanvasImageSource extends ImageBitmapSource
 

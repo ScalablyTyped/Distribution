@@ -10,7 +10,7 @@ object rollupDashTypescriptLibStrings {
   sealed trait `0DOT8` extends js.Object
   
   @js.native
-  sealed trait `3DOT4` extends js.Object
+  sealed trait `3DOT5` extends js.Object
   
   @js.native
   sealed trait JS extends js.Object
@@ -21,7 +21,7 @@ object rollupDashTypescriptLibStrings {
   @scala.inline
   def `0DOT8`: `0DOT8` = "0.8".asInstanceOf[`0DOT8`]
   @scala.inline
-  def `3DOT4`: `3DOT4` = "3.4".asInstanceOf[`3DOT4`]
+  def `3DOT5`: `3DOT5` = "3.5".asInstanceOf[`3DOT5`]
   @scala.inline
   def JS: JS = "js".asInstanceOf[JS]
   @scala.inline

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGGraphicsElement interface represents SVG elements whose primary purpose is to directly render graphics into a group. */
+/** SVG elements whose primary purpose is to directly render graphics into a group. */
 @js.native
 trait SVGGraphicsElement
   extends SVGElement
@@ -42,6 +42,8 @@ trait SVGGraphicsElement
 class SVGGraphicsElementCls () extends SVGGraphicsElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

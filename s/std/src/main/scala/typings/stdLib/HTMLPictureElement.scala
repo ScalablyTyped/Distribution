@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLPictureElement interface represents a <picture> HTML element. It doesn't implement specific properties or methods. */
+/** A <picture> HTML element. It doesn't implement specific properties or methods. */
 @js.native
 trait HTMLPictureElement extends HTMLElement
 
@@ -16,6 +16,8 @@ class HTMLPictureElementCls () extends HTMLPictureElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

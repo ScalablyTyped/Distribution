@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Document interface represents any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. */
+/** Any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. */
 @js.native
 trait Document
   extends Node
      with NonElementParentNode
      with DocumentOrShadowRoot
      with ParentNode
+     with XPathEvaluatorBase
      with GlobalEventHandlers
      with DocumentAndElementEventHandlers {
   /**
@@ -1304,35 +1305,6 @@ trait Document
   def createTreeWalker(root: Node, whatToShow: scala.Double, filter: scala.Null, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: scala.Double, filter: NodeFilter): TreeWalker = js.native
   def createTreeWalker(root: Node, whatToShow: scala.Double, filter: NodeFilter, entityReferenceExpansion: scala.Boolean): TreeWalker = js.native
-  def evaluate(
-    expression: java.lang.String,
-    contextNode: Node,
-    resolver: js.Function1[/* prefix */ java.lang.String, java.lang.String | scala.Null],
-    `type`: scala.Double
-  ): XPathResult = js.native
-  def evaluate(
-    expression: java.lang.String,
-    contextNode: Node,
-    resolver: js.Function1[/* prefix */ java.lang.String, java.lang.String | scala.Null],
-    `type`: scala.Double,
-    result: XPathResult
-  ): XPathResult = js.native
-  def evaluate(expression: java.lang.String, contextNode: Node, resolver: scala.Null, `type`: scala.Double): XPathResult = js.native
-  def evaluate(
-    expression: java.lang.String,
-    contextNode: Node,
-    resolver: scala.Null,
-    `type`: scala.Double,
-    result: XPathResult
-  ): XPathResult = js.native
-  def evaluate(expression: java.lang.String, contextNode: Node, resolver: XPathNSResolver, `type`: scala.Double): XPathResult = js.native
-  def evaluate(
-    expression: java.lang.String,
-    contextNode: Node,
-    resolver: XPathNSResolver,
-    `type`: scala.Double,
-    result: XPathResult
-  ): XPathResult = js.native
   /**
     * Executes a command on the current document, current selection, or the given range.
     * @param commandId String that specifies the command to execute. This command can be any of the command identifiers that can be executed in script.

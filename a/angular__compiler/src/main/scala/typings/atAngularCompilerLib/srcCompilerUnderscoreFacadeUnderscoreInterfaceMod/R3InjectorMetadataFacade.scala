@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait R3InjectorMetadataFacade extends js.Object {
   var deps: js.Array[R3DependencyMetadataFacade] | scala.Null
-  var imports: js.Any
+  var imports: js.Array[_]
   var name: java.lang.String
-  var providers: js.Any
+  var providers: js.Array[_]
   var `type`: js.Any
 }
 
 object R3InjectorMetadataFacade {
   @scala.inline
   def apply(
-    imports: js.Any,
+    imports: js.Array[_],
     name: java.lang.String,
-    providers: js.Any,
+    providers: js.Array[_],
     `type`: js.Any,
     deps: js.Array[R3DependencyMetadataFacade] = null
   ): R3InjectorMetadataFacade = {

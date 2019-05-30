@@ -40,7 +40,7 @@ object ojDataGridEventMap {
     animationend: stdLib.AnimationEvent,
     animationiteration: stdLib.AnimationEvent,
     animationstart: stdLib.AnimationEvent,
-    auxclick: stdLib.Event,
+    auxclick: stdLib.MouseEvent,
     bandingIntervalChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_Column],
     blur: stdLib.FocusEvent,
     cancel: stdLib.Event,

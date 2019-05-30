@@ -7,20 +7,25 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/router", "Scroll")
 @js.native
-class Scroll protected ()
-  extends atAngularRouterLib.publicUnderscoreApiMod.Scroll {
+class Scroll protected () extends Event {
   def this(/** @docsNotRequired */
-  routerEvent: atAngularRouterLib.srcEventsMod.NavigationEnd) = this()
+  routerEvent: NavigationEnd) = this()
   def this(/** @docsNotRequired */
-  routerEvent: atAngularRouterLib.srcEventsMod.NavigationEnd, /** @docsNotRequired */
+  routerEvent: NavigationEnd, /** @docsNotRequired */
   position: js.Tuple2[scala.Double, scala.Double]) = this()
   def this(/** @docsNotRequired */
-  routerEvent: atAngularRouterLib.srcEventsMod.NavigationEnd, /** @docsNotRequired */
+  routerEvent: NavigationEnd, /** @docsNotRequired */
   position: js.Tuple2[scala.Double, scala.Double], /** @docsNotRequired */
   anchor: java.lang.String) = this()
   def this(/** @docsNotRequired */
-  routerEvent: atAngularRouterLib.srcEventsMod.NavigationEnd, /** @docsNotRequired */
+  routerEvent: NavigationEnd, /** @docsNotRequired */
   position: scala.Null, /** @docsNotRequired */
   anchor: java.lang.String) = this()
+  /** @docsNotRequired */
+  val anchor: java.lang.String | scala.Null = js.native
+  /** @docsNotRequired */
+  val position: (js.Tuple2[scala.Double, scala.Double]) | scala.Null = js.native
+  /** @docsNotRequired */
+  val routerEvent: NavigationEnd = js.native
 }
 

@@ -50,12 +50,8 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.canvas, attrs: js.Object, children: js.Any*): stdLib.HTMLCanvasElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.caption): stdLib.HTMLTableCaptionElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.caption, attrs: js.Object, children: js.Any*): stdLib.HTMLTableCaptionElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.circle): stdLib.SVGCircleElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.circle, attrs: js.Object, children: js.Any*): stdLib.SVGCircleElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.cite): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.cite, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.clipPath): stdLib.SVGClipPathElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.clipPath, attrs: js.Object, children: js.Any*): stdLib.SVGClipPathElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.code): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.code, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.col): stdLib.HTMLTableColElement = js.native
@@ -68,12 +64,8 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.datalist, attrs: js.Object, children: js.Any*): stdLib.HTMLDataListElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.dd): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.dd, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.defs): stdLib.SVGDefsElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.defs, attrs: js.Object, children: js.Any*): stdLib.SVGDefsElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.del): stdLib.HTMLModElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.del, attrs: js.Object, children: js.Any*): stdLib.HTMLModElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.desc): stdLib.SVGDescElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.desc, attrs: js.Object, children: js.Any*): stdLib.SVGDescElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.details): stdLib.HTMLDetailsElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.details, attrs: js.Object, children: js.Any*): stdLib.HTMLDetailsElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.dfn): stdLib.HTMLElement = js.native
@@ -88,102 +80,26 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.dl, attrs: js.Object, children: js.Any*): stdLib.HTMLDListElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.dt): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.dt, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.ellipse): stdLib.SVGEllipseElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.ellipse, attrs: js.Object, children: js.Any*): stdLib.SVGEllipseElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.em): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.em, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.embed): stdLib.HTMLEmbedElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.embed, attrs: js.Object, children: js.Any*): stdLib.HTMLEmbedElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feBlend): stdLib.SVGFEBlendElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feBlend, attrs: js.Object, children: js.Any*): stdLib.SVGFEBlendElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feColorMatrix): stdLib.SVGFEColorMatrixElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feColorMatrix, attrs: js.Object, children: js.Any*): stdLib.SVGFEColorMatrixElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feComponentTransfer): stdLib.SVGFEComponentTransferElement = js.native
-  def apply(
-    tagName: hyperscriptLib.hyperscriptLibStrings.feComponentTransfer,
-    attrs: js.Object,
-    children: js.Any*
-  ): stdLib.SVGFEComponentTransferElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feComposite): stdLib.SVGFECompositeElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feComposite, attrs: js.Object, children: js.Any*): stdLib.SVGFECompositeElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feConvolveMatrix): stdLib.SVGFEConvolveMatrixElement = js.native
-  def apply(
-    tagName: hyperscriptLib.hyperscriptLibStrings.feConvolveMatrix,
-    attrs: js.Object,
-    children: js.Any*
-  ): stdLib.SVGFEConvolveMatrixElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feDiffuseLighting): stdLib.SVGFEDiffuseLightingElement = js.native
-  def apply(
-    tagName: hyperscriptLib.hyperscriptLibStrings.feDiffuseLighting,
-    attrs: js.Object,
-    children: js.Any*
-  ): stdLib.SVGFEDiffuseLightingElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feDisplacementMap): stdLib.SVGFEDisplacementMapElement = js.native
-  def apply(
-    tagName: hyperscriptLib.hyperscriptLibStrings.feDisplacementMap,
-    attrs: js.Object,
-    children: js.Any*
-  ): stdLib.SVGFEDisplacementMapElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feDistantLight): stdLib.SVGFEDistantLightElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feDistantLight, attrs: js.Object, children: js.Any*): stdLib.SVGFEDistantLightElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFlood): stdLib.SVGFEFloodElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFlood, attrs: js.Object, children: js.Any*): stdLib.SVGFEFloodElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFuncA): stdLib.SVGFEFuncAElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFuncA, attrs: js.Object, children: js.Any*): stdLib.SVGFEFuncAElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFuncB): stdLib.SVGFEFuncBElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFuncB, attrs: js.Object, children: js.Any*): stdLib.SVGFEFuncBElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFuncG): stdLib.SVGFEFuncGElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFuncG, attrs: js.Object, children: js.Any*): stdLib.SVGFEFuncGElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFuncR): stdLib.SVGFEFuncRElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feFuncR, attrs: js.Object, children: js.Any*): stdLib.SVGFEFuncRElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feGaussianBlur): stdLib.SVGFEGaussianBlurElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feGaussianBlur, attrs: js.Object, children: js.Any*): stdLib.SVGFEGaussianBlurElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feImage): stdLib.SVGFEImageElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feImage, attrs: js.Object, children: js.Any*): stdLib.SVGFEImageElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feMerge): stdLib.SVGFEMergeElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feMergeNode): stdLib.SVGFEMergeNodeElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feMergeNode, attrs: js.Object, children: js.Any*): stdLib.SVGFEMergeNodeElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feMerge, attrs: js.Object, children: js.Any*): stdLib.SVGFEMergeElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feMorphology): stdLib.SVGFEMorphologyElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feMorphology, attrs: js.Object, children: js.Any*): stdLib.SVGFEMorphologyElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feOffset): stdLib.SVGFEOffsetElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feOffset, attrs: js.Object, children: js.Any*): stdLib.SVGFEOffsetElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.fePointLight): stdLib.SVGFEPointLightElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.fePointLight, attrs: js.Object, children: js.Any*): stdLib.SVGFEPointLightElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feSpecularLighting): stdLib.SVGFESpecularLightingElement = js.native
-  def apply(
-    tagName: hyperscriptLib.hyperscriptLibStrings.feSpecularLighting,
-    attrs: js.Object,
-    children: js.Any*
-  ): stdLib.SVGFESpecularLightingElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feSpotLight): stdLib.SVGFESpotLightElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feSpotLight, attrs: js.Object, children: js.Any*): stdLib.SVGFESpotLightElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feTile): stdLib.SVGFETileElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feTile, attrs: js.Object, children: js.Any*): stdLib.SVGFETileElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feTurbulence): stdLib.SVGFETurbulenceElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.feTurbulence, attrs: js.Object, children: js.Any*): stdLib.SVGFETurbulenceElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.fieldset): stdLib.HTMLFieldSetElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.fieldset, attrs: js.Object, children: js.Any*): stdLib.HTMLFieldSetElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.figcaption): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.figcaption, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.figure): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.figure, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.filter): stdLib.SVGFilterElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.filter, attrs: js.Object, children: js.Any*): stdLib.SVGFilterElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.font): stdLib.HTMLFontElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.font, attrs: js.Object, children: js.Any*): stdLib.HTMLFontElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.footer): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.footer, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.foreignObject): stdLib.SVGForeignObjectElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.foreignObject, attrs: js.Object, children: js.Any*): stdLib.SVGForeignObjectElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.form): stdLib.HTMLFormElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.form, attrs: js.Object, children: js.Any*): stdLib.HTMLFormElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.frame): stdLib.HTMLFrameElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.frame, attrs: js.Object, children: js.Any*): stdLib.HTMLFrameElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.frameset): stdLib.HTMLFrameSetElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.frameset, attrs: js.Object, children: js.Any*): stdLib.HTMLFrameSetElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.g): stdLib.SVGGElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.g, attrs: js.Object, children: js.Any*): stdLib.SVGGElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.h1): stdLib.HTMLHeadingElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.h1, attrs: js.Object, children: js.Any*): stdLib.HTMLHeadingElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.h2): stdLib.HTMLHeadingElement = js.native
@@ -210,8 +126,6 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.i, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.iframe): stdLib.HTMLIFrameElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.iframe, attrs: js.Object, children: js.Any*): stdLib.HTMLIFrameElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.image): stdLib.SVGImageElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.image, attrs: js.Object, children: js.Any*): stdLib.SVGImageElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.img): stdLib.HTMLImageElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.img, attrs: js.Object, children: js.Any*): stdLib.HTMLImageElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.input): stdLib.HTMLInputElement = js.native
@@ -226,10 +140,6 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.legend, attrs: js.Object, children: js.Any*): stdLib.HTMLLegendElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.li): stdLib.HTMLLIElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.li, attrs: js.Object, children: js.Any*): stdLib.HTMLLIElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.line): stdLib.SVGLineElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.linearGradient): stdLib.SVGLinearGradientElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.linearGradient, attrs: js.Object, children: js.Any*): stdLib.SVGLinearGradientElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.line, attrs: js.Object, children: js.Any*): stdLib.SVGLineElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.link): stdLib.HTMLLinkElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.link, attrs: js.Object, children: js.Any*): stdLib.HTMLLinkElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.main): stdLib.HTMLElement = js.native
@@ -238,18 +148,12 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.map, attrs: js.Object, children: js.Any*): stdLib.HTMLMapElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.mark): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.mark, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.marker): stdLib.SVGMarkerElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.marker, attrs: js.Object, children: js.Any*): stdLib.SVGMarkerElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.marquee): stdLib.HTMLMarqueeElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.marquee, attrs: js.Object, children: js.Any*): stdLib.HTMLMarqueeElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.mask): stdLib.SVGMaskElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.mask, attrs: js.Object, children: js.Any*): stdLib.SVGMaskElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.menu): stdLib.HTMLMenuElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.menu, attrs: js.Object, children: js.Any*): stdLib.HTMLMenuElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.meta): stdLib.HTMLMetaElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.meta, attrs: js.Object, children: js.Any*): stdLib.HTMLMetaElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.metadata): stdLib.SVGMetadataElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.metadata, attrs: js.Object, children: js.Any*): stdLib.SVGMetadataElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.meter): stdLib.HTMLMeterElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.meter, attrs: js.Object, children: js.Any*): stdLib.HTMLMeterElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.nav): stdLib.HTMLElement = js.native
@@ -267,27 +171,15 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.p): stdLib.HTMLParagraphElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.param): stdLib.HTMLParamElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.param, attrs: js.Object, children: js.Any*): stdLib.HTMLParamElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.path): stdLib.SVGPathElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.path, attrs: js.Object, children: js.Any*): stdLib.SVGPathElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.pattern): stdLib.SVGPatternElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.pattern, attrs: js.Object, children: js.Any*): stdLib.SVGPatternElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.p, attrs: js.Object, children: js.Any*): stdLib.HTMLParagraphElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.picture): stdLib.HTMLPictureElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.picture, attrs: js.Object, children: js.Any*): stdLib.HTMLPictureElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.polygon): stdLib.SVGPolygonElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.polygon, attrs: js.Object, children: js.Any*): stdLib.SVGPolygonElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.polyline): stdLib.SVGPolylineElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.polyline, attrs: js.Object, children: js.Any*): stdLib.SVGPolylineElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.pre): stdLib.HTMLPreElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.pre, attrs: js.Object, children: js.Any*): stdLib.HTMLPreElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.progress): stdLib.HTMLProgressElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.progress, attrs: js.Object, children: js.Any*): stdLib.HTMLProgressElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.q): stdLib.HTMLQuoteElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.q, attrs: js.Object, children: js.Any*): stdLib.HTMLQuoteElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.radialGradient): stdLib.SVGRadialGradientElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.radialGradient, attrs: js.Object, children: js.Any*): stdLib.SVGRadialGradientElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.rect): stdLib.SVGRectElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.rect, attrs: js.Object, children: js.Any*): stdLib.SVGRectElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.rp): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.rp, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.rt): stdLib.HTMLElement = js.native
@@ -312,8 +204,6 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.source, attrs: js.Object, children: js.Any*): stdLib.HTMLSourceElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.span): stdLib.HTMLSpanElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.span, attrs: js.Object, children: js.Any*): stdLib.HTMLSpanElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.stop): stdLib.SVGStopElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.stop, attrs: js.Object, children: js.Any*): stdLib.SVGStopElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.strong): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.strong, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.style): stdLib.HTMLStyleElement = js.native
@@ -324,12 +214,6 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.summary, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.sup): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.sup, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.svg): stdLib.SVGSVGElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.svg, attrs: js.Object, children: js.Any*): stdLib.SVGSVGElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.switch): stdLib.SVGSwitchElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.switch, attrs: js.Object, children: js.Any*): stdLib.SVGSwitchElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.symbol): stdLib.SVGSymbolElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.symbol, attrs: js.Object, children: js.Any*): stdLib.SVGSymbolElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.table): stdLib.HTMLTableElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.table, attrs: js.Object, children: js.Any*): stdLib.HTMLTableElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.tbody): stdLib.HTMLTableSectionElement = js.native
@@ -338,12 +222,8 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.td, attrs: js.Object, children: js.Any*): stdLib.HTMLTableDataCellElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.template): stdLib.HTMLTemplateElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.template, attrs: js.Object, children: js.Any*): stdLib.HTMLTemplateElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.text): stdLib.SVGTextElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.textPath): stdLib.SVGTextPathElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.textPath, attrs: js.Object, children: js.Any*): stdLib.SVGTextPathElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.textarea): stdLib.HTMLTextAreaElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.textarea, attrs: js.Object, children: js.Any*): stdLib.HTMLTextAreaElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.text, attrs: js.Object, children: js.Any*): stdLib.SVGTextElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.tfoot): stdLib.HTMLTableSectionElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.tfoot, attrs: js.Object, children: js.Any*): stdLib.HTMLTableSectionElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.th): stdLib.HTMLTableHeaderCellElement = js.native
@@ -358,18 +238,12 @@ trait HyperScript extends js.Object {
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.track): stdLib.HTMLTrackElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.track, attrs: js.Object, children: js.Any*): stdLib.HTMLTrackElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.tr, attrs: js.Object, children: js.Any*): stdLib.HTMLTableRowElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.tspan): stdLib.SVGTSpanElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.tspan, attrs: js.Object, children: js.Any*): stdLib.SVGTSpanElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.u): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.u, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.ul): stdLib.HTMLUListElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.ul, attrs: js.Object, children: js.Any*): stdLib.HTMLUListElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.use): stdLib.SVGUseElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.use, attrs: js.Object, children: js.Any*): stdLib.SVGUseElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.video): stdLib.HTMLVideoElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.video, attrs: js.Object, children: js.Any*): stdLib.HTMLVideoElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.view): stdLib.SVGViewElement = js.native
-  def apply(tagName: hyperscriptLib.hyperscriptLibStrings.view, attrs: js.Object, children: js.Any*): stdLib.SVGViewElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.wbr): stdLib.HTMLElement = js.native
   def apply(tagName: hyperscriptLib.hyperscriptLibStrings.wbr, attrs: js.Object, children: js.Any*): stdLib.HTMLElement = js.native
   def apply[T /* <: stdLib.Element */](tagName: java.lang.String): T = js.native

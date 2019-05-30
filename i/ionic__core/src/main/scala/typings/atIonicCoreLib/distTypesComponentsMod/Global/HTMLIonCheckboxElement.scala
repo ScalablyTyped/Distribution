@@ -62,6 +62,8 @@ class HTMLIonCheckboxElementCls () extends HTMLIonCheckboxElement {
   /* CompleteClass */
   override var indeterminate: scala.Boolean = js.native
   /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
+  /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */
   override val isContentEditable: scala.Boolean = js.native

@@ -303,16 +303,16 @@ trait Fn_Abort extends js.Object {
   ): scala.Unit = js.native
   def apply(
     `type`: downshiftLib.downshiftLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.MouseEvent, _]
   ): scala.Unit = js.native
   def apply(
     `type`: downshiftLib.downshiftLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.MouseEvent, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   def apply(
     `type`: downshiftLib.downshiftLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.MouseEvent, _],
     options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   def apply(
@@ -523,6 +523,20 @@ trait Fn_Abort extends js.Object {
   def apply(
     `type`: downshiftLib.downshiftLibStrings.devicemotion,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.DeviceMotionEvent, _],
+    options: stdLib.AddEventListenerOptions
+  ): scala.Unit = js.native
+  def apply(
+    `type`: downshiftLib.downshiftLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.DeviceOrientationEvent, _]
+  ): scala.Unit = js.native
+  def apply(
+    `type`: downshiftLib.downshiftLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.DeviceOrientationEvent, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  def apply(
+    `type`: downshiftLib.downshiftLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.DeviceOrientationEvent, _],
     options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   def apply(

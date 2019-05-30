@@ -11,7 +11,7 @@ trait DeleteFlowLogsRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * One or more flow log IDs.
+    * One or more flow log IDs. Constraint: Maximum of 1000 flow log IDs.
     */
   var FlowLogIds: ValueStringList
 }

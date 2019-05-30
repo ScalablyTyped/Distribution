@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEPointLightElement interface corresponds to the <fePointLight> element. */
+/** Corresponds to the <fePointLight> element. */
 @js.native
 trait SVGFEPointLightElement extends SVGElement {
   val x: SVGAnimatedNumber = js.native
@@ -18,6 +18,8 @@ trait SVGFEPointLightElement extends SVGElement {
 class SVGFEPointLightElementCls () extends SVGFEPointLightElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

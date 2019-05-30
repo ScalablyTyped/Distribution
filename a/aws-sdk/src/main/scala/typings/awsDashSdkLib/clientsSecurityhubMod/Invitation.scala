@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Invitation extends js.Object {
   /**
-    * The account ID of the master Security Hub account who sent the invitation. 
+    * The account ID of the Security Hub master account that sent the invitation. 
     */
   var AccountId: js.UndefOr[AccountId] = js.undefined
   /**
-    * The ID of the invitation sent by the master Security Hub account.
+    * The ID of the invitation that the Security Hub master account sent.
     */
   var InvitationId: js.UndefOr[NonEmptyString] = js.undefined
   /**

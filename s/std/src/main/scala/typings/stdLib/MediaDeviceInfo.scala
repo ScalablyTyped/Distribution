@@ -11,6 +11,7 @@ trait MediaDeviceInfo extends js.Object {
   val groupId: java.lang.String
   val kind: MediaDeviceKind
   val label: java.lang.String
+  def toJSON(): js.Any
 }
 
 @JSGlobal("MediaDeviceInfo")
@@ -24,6 +25,8 @@ class MediaDeviceInfoCls () extends MediaDeviceInfo {
   override val kind: MediaDeviceKind = js.native
   /* CompleteClass */
   override val label: java.lang.String = js.native
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("MediaDeviceInfo")

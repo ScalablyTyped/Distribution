@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/forms", "Validators")
 @js.native
-class Validators ()
-  extends atAngularFormsLib.publicUnderscoreApiMod.Validators
+class Validators () extends js.Object
 
 /* static members */
 @JSImport("@angular/forms", "Validators")
@@ -23,11 +22,7 @@ object Validators extends js.Object {
     * merged error maps of the validators if the validation check fails, otherwise `null`.
     */
   def compose(): scala.Null = js.native
-  def compose(
-    validators: js.Array[
-      js.UndefOr[atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn | scala.Null]
-    ]
-  ): atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn | scala.Null = js.native
+  def compose(validators: js.Array[js.UndefOr[atAngularFormsLib.atAngularFormsMod.ValidatorFn | scala.Null]]): atAngularFormsLib.atAngularFormsMod.ValidatorFn | scala.Null = js.native
   /**
     * @description
     * Compose multiple async validators into a single function that returns the union
@@ -36,7 +31,7 @@ object Validators extends js.Object {
     * @returns A validator function that returns an error map with the
     * merged error objects of the async validators if the validation check fails, otherwise `null`.
     */
-  def composeAsync(validators: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn | scala.Null]): atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn | scala.Null = js.native
+  def composeAsync(validators: js.Array[atAngularFormsLib.atAngularFormsMod.AsyncValidatorFn | scala.Null]): atAngularFormsLib.atAngularFormsMod.AsyncValidatorFn | scala.Null = js.native
   /**
     * @description
     * Validator that requires the control's value pass an email validation test.
@@ -55,7 +50,7 @@ object Validators extends js.Object {
     * if the validation check fails, otherwise `null`.
     *
     */
-  def email(control: atAngularFormsLib.srcModelMod.AbstractControl): atAngularFormsLib.srcDirectivesValidatorsMod.ValidationErrors | scala.Null = js.native
+  def email(control: atAngularFormsLib.atAngularFormsMod.AbstractControl): atAngularFormsLib.atAngularFormsMod.ValidationErrors | scala.Null = js.native
   /**
     * @description
     * Validator that requires the control's value to be less than or equal to the provided number.
@@ -75,7 +70,7 @@ object Validators extends js.Object {
     * `max` property if the validation check fails, otherwise `null`.
     *
     */
-  def max(max: scala.Double): atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn = js.native
+  def max(max: scala.Double): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
   /**
     * @description
     * Validator that requires the length of the control's value to be less than or equal
@@ -99,7 +94,7 @@ object Validators extends js.Object {
     * @returns A validator function that returns an error map with the
     * `maxlength` property if the validation check fails, otherwise `null`.
     */
-  def maxLength(maxLength: scala.Double): atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn = js.native
+  def maxLength(maxLength: scala.Double): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
   /**
     * @description
     * Validator that requires the control's value to be greater than or equal to the provided number.
@@ -119,7 +114,7 @@ object Validators extends js.Object {
     * `min` property if the validation check fails, otherwise `null`.
     *
     */
-  def min(min: scala.Double): atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn = js.native
+  def min(min: scala.Double): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
   /**
     * @description
     * Validator that requires the length of the control's value to be greater than or equal
@@ -143,12 +138,12 @@ object Validators extends js.Object {
     * @returns A validator function that returns an error map with the
     * `minlength` if the validation check fails, otherwise `null`.
     */
-  def minLength(minLength: scala.Double): atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn = js.native
+  def minLength(minLength: scala.Double): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
   /**
     * @description
     * Validator that performs no operation.
     */
-  def nullValidator(control: atAngularFormsLib.srcModelMod.AbstractControl): atAngularFormsLib.srcDirectivesValidatorsMod.ValidationErrors | scala.Null = js.native
+  def nullValidator(control: atAngularFormsLib.atAngularFormsMod.AbstractControl): atAngularFormsLib.atAngularFormsMod.ValidationErrors | scala.Null = js.native
   /**
     * @description
     * Validator that requires the control's value to match a regex pattern. This validator is also
@@ -176,8 +171,8 @@ object Validators extends js.Object {
     * @returns A validator function that returns an error map with the
     * `pattern` property if the validation check fails, otherwise `null`.
     */
-  def pattern(pattern: java.lang.String): atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn = js.native
-  def pattern(pattern: stdLib.RegExp): atAngularFormsLib.srcDirectivesValidatorsMod.ValidatorFn = js.native
+  def pattern(pattern: java.lang.String): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
+  def pattern(pattern: stdLib.RegExp): atAngularFormsLib.atAngularFormsMod.ValidatorFn = js.native
   /**
     * @description
     * Validator that requires the control have a non-empty value.
@@ -196,7 +191,7 @@ object Validators extends js.Object {
     * if the validation check fails, otherwise `null`.
     *
     */
-  def required(control: atAngularFormsLib.srcModelMod.AbstractControl): atAngularFormsLib.srcDirectivesValidatorsMod.ValidationErrors | scala.Null = js.native
+  def required(control: atAngularFormsLib.atAngularFormsMod.AbstractControl): atAngularFormsLib.atAngularFormsMod.ValidationErrors | scala.Null = js.native
   /**
     * @description
     * Validator that requires the control's value be true. This validator is commonly
@@ -215,6 +210,6 @@ object Validators extends js.Object {
     * @returns An error map that contains the `required` property
     * set to `true` if the validation check fails, otherwise `null`.
     */
-  def requiredTrue(control: atAngularFormsLib.srcModelMod.AbstractControl): atAngularFormsLib.srcDirectivesValidatorsMod.ValidationErrors | scala.Null = js.native
+  def requiredTrue(control: atAngularFormsLib.atAngularFormsMod.AbstractControl): atAngularFormsLib.atAngularFormsMod.ValidationErrors | scala.Null = js.native
 }
 

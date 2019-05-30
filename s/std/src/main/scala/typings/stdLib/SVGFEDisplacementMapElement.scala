@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEDisplacementMapElement interface corresponds to the <feDisplacementMap> element. */
+/** Corresponds to the <feDisplacementMap> element. */
 @js.native
 trait SVGFEDisplacementMapElement
   extends SVGElement
@@ -49,6 +49,8 @@ class SVGFEDisplacementMapElementCls () extends SVGFEDisplacementMapElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val height: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

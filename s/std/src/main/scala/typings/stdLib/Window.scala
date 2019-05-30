@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Window interface represents a window containing a DOM document; the document property points to the DOM document loaded in that window. */
+/** A window containing a DOM document; the document property points to the DOM document loaded in that window. */
 @js.native
 trait Window
   extends EventTarget
@@ -18,8 +18,11 @@ trait Window
      with WindowBase64
      with GlobalFetch
      with WindowOrWorkerGlobalScope
-     with WindowEventHandlers {
+     with WindowEventHandlers
+     with /* index */ org.scalablytyped.runtime.NumberDictionary[Window] {
   var Blob: Anon_BlobParts = js.native
+  var TextDecoder: Anon_Label = js.native
+  var TextEncoder: Anon_TextEncoder = js.native
   var URL: Anon_Base = js.native
   var URLSearchParams: Anon_Init = js.native
   val applicationCache: ApplicationCache = js.native
@@ -54,6 +57,7 @@ trait Window
   var ondevicelight: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceLightEvent, _]) | scala.Null = js.native
   var ondevicemotion: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceMotionEvent, _]) | scala.Null = js.native
   var ondeviceorientation: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]) | scala.Null = js.native
+  var ondeviceorientationabsolute: (js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]) | scala.Null = js.native
   var onmousewheel: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onmsgesturechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onmsgesturedoubletap: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
@@ -437,6 +441,23 @@ trait Window
   @JSName("addEventListener")
   def addEventListener_deviceorientation(
     `type`: stdLib.stdLibStrings.deviceorientation,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
@@ -1020,6 +1041,23 @@ trait Window
   @JSName("removeEventListener")
   def removeEventListener_deviceorientation(
     `type`: stdLib.stdLibStrings.deviceorientation,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ DeviceOrientationEvent, _],
     options: EventListenerOptions
   ): scala.Unit = js.native

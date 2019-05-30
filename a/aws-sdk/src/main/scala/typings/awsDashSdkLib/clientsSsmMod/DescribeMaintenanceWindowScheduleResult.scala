@@ -11,7 +11,7 @@ trait DescribeMaintenanceWindowScheduleResult extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * Information about Maintenance Window executions scheduled for the specified time range.
+    * Information about maintenance window executions scheduled for the specified time range.
     */
   var ScheduledWindowExecutions: js.UndefOr[ScheduledWindowExecutionList] = js.undefined
 }

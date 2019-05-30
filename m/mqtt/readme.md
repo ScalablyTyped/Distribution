@@ -1,7 +1,7 @@
 
 # Scala.js typings for mqtt
 
-Typings are for version 2.18.8
+Typings are for version 3.0.0
 
 ## Library description:
 A library for the MQTT protocol

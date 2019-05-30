@@ -53,7 +53,7 @@ class NamespaceStringHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definition
     */
   def formatBeforeSummary(meta: atIonicCliDashFrameworkLib.definitionsMod.NamespaceMetadata): js.Promise[java.lang.String] = js.native
   def formatCommandGroup(
-    title: java.lang.String,
+    titleText: java.lang.String,
     commands: js.Array[atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]]
   ): js.Promise[java.lang.String] = js.native
   def formatCommands(): js.Promise[java.lang.String] = js.native

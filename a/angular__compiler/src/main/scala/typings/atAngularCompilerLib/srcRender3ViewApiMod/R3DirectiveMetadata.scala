@@ -14,7 +14,7 @@ trait R3DirectiveMetadata extends js.Object {
     * Reference name under which to export the directive's type in a template,
     * if any.
     */
-  var exportAs: java.lang.String | scala.Null
+  var exportAs: js.Array[java.lang.String] | scala.Null
   /**
     * Mappings indicating how the directive interacts with its host element (host bindings,
     * listeners, etc).
@@ -65,6 +65,10 @@ trait R3DirectiveMetadata extends js.Object {
     * Whether or not the component or directive inherits from another class
     */
   var usesInheritance: scala.Boolean
+  /**
+    * Information about the view queries made by the directive.
+    */
+  var viewQueries: js.Array[R3QueryMetadata]
 }
 
 object R3DirectiveMetadata {
@@ -80,12 +84,13 @@ object R3DirectiveMetadata {
     typeArgumentCount: scala.Double,
     typeSourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
     usesInheritance: scala.Boolean,
+    viewQueries: js.Array[R3QueryMetadata],
     deps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null,
-    exportAs: java.lang.String = null,
+    exportAs: js.Array[java.lang.String] = null,
     providers: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
     selector: java.lang.String = null
   ): R3DirectiveMetadata = {
-    val __obj = js.Dynamic.literal(host = host, inputs = inputs, lifecycle = lifecycle, name = name, outputs = outputs, queries = queries, typeArgumentCount = typeArgumentCount, typeSourceSpan = typeSourceSpan, usesInheritance = usesInheritance)
+    val __obj = js.Dynamic.literal(host = host, inputs = inputs, lifecycle = lifecycle, name = name, outputs = outputs, queries = queries, typeArgumentCount = typeArgumentCount, typeSourceSpan = typeSourceSpan, usesInheritance = usesInheritance, viewQueries = viewQueries)
     __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)

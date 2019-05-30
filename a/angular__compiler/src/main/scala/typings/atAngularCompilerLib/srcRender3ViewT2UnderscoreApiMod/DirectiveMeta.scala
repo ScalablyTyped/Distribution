@@ -11,7 +11,7 @@ trait DirectiveMeta extends js.Object {
     *
     * Null otherwise
     */
-  var exportAs: java.lang.String | scala.Null
+  var exportAs: js.Array[java.lang.String] | scala.Null
   /**
     * Set of inputs which this directive claims.
     *
@@ -41,7 +41,7 @@ object DirectiveMeta {
     isComponent: scala.Boolean,
     name: java.lang.String,
     outputs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
-    exportAs: java.lang.String = null
+    exportAs: js.Array[java.lang.String] = null
   ): DirectiveMeta = {
     val __obj = js.Dynamic.literal(inputs = inputs, isComponent = isComponent, name = name, outputs = outputs)
     if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)

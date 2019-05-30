@@ -104,12 +104,12 @@ trait ojAvatar
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.MouseEvent, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.MouseEvent, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")

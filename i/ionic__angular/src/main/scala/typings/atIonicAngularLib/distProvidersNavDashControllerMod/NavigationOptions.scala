@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigationOptions
-  extends atAngularRouterLib.srcRouterMod.NavigationExtras
+  extends atAngularRouterLib.atAngularRouterMod.NavigationExtras
      with AnimationOptions
 
 object NavigationOptions {
@@ -17,9 +17,9 @@ object NavigationOptions {
     fragment: java.lang.String = null,
     preserveFragment: js.UndefOr[scala.Boolean] = js.undefined,
     preserveQueryParams: js.UndefOr[scala.Boolean] = js.undefined,
-    queryParams: atAngularRouterLib.srcSharedMod.Params = null,
-    queryParamsHandling: atAngularRouterLib.srcConfigMod.QueryParamsHandling = null,
-    relativeTo: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRoute = null,
+    queryParams: atAngularRouterLib.atAngularRouterMod.Params = null,
+    queryParamsHandling: atAngularRouterLib.atAngularRouterMod.QueryParamsHandling = null,
+    relativeTo: atAngularRouterLib.atAngularRouterMod.ActivatedRoute = null,
     replaceUrl: js.UndefOr[scala.Boolean] = js.undefined,
     skipLocationChange: js.UndefOr[scala.Boolean] = js.undefined,
     state: org.scalablytyped.runtime.StringDictionary[js.Any] = null

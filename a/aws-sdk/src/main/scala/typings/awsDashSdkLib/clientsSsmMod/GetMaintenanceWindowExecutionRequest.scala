@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetMaintenanceWindowExecutionRequest extends js.Object {
   /**
-    * The ID of the Maintenance Window execution that includes the task.
+    * The ID of the maintenance window execution that includes the task.
     */
   var WindowExecutionId: MaintenanceWindowExecutionId
 }

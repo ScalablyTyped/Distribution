@@ -6,16 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ProjectId extends js.Object {
-  var projectId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProjectId */ js.Any
+  var projectId: js.UndefOr[ProjectId] = js.undefined
 }
 
 object Anon_ProjectId {
   @scala.inline
-  def apply(
-    projectId: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProjectId */ js.Any
-  ): Anon_ProjectId = {
-    val __obj = js.Dynamic.literal(projectId = projectId)
-  
+  def apply(projectId: ProjectId = null): Anon_ProjectId = {
+    val __obj = js.Dynamic.literal()
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_ProjectId]
   }
 }

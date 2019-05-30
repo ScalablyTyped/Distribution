@@ -19,11 +19,11 @@ trait TargetLocation extends js.Object {
     */
   var Regions: js.UndefOr[Regions] = js.undefined
   /**
-    * The maxium number of AWS accounts and AWS regions allowed to run the Automation concurrently 
+    * The maximum number of AWS accounts and AWS regions allowed to run the Automation concurrently 
     */
   var TargetLocationMaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
   /**
-    * The maxium number of errors allowed before the system stops queueing additional Automation executions for the currently running Automation. 
+    * The maximum number of errors allowed before the system stops queueing additional Automation executions for the currently running Automation. 
     */
   var TargetLocationMaxErrors: js.UndefOr[MaxErrors] = js.undefined
 }

@@ -44,6 +44,7 @@ object ThingShadowOptions {
     path: java.lang.String = null,
     port: scala.Int | scala.Double = null,
     privateKey: java.lang.String | nodeLib.Buffer = null,
+    properties: mqttLib.Anon_AuthenticationData = null,
     protocol: awsDashIotDashDeviceDashSdkLib.awsDashIotDashDeviceDashSdkLibStrings.mqtts | awsDashIotDashDeviceDashSdkLib.awsDashIotDashDeviceDashSdkLibStrings.wss = null,
     protocolId: java.lang.String = null,
     protocolVersion: scala.Int | scala.Double = null,
@@ -94,6 +95,7 @@ object ThingShadowOptions {
     if (path != null) __obj.updateDynamic("path")(path)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (protocolId != null) __obj.updateDynamic("protocolId")(protocolId)
     if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])

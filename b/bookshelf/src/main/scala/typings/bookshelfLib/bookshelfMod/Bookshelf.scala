@@ -12,16 +12,16 @@ trait Bookshelf
   var Model: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Bookshelf.Model */ js.Any = js.native
   var VERSION: java.lang.String = js.native
   @JSName("knex")
-  var knex_Original: knexLib.knexMod.Knex = js.native
-  def knex(): knexLib.knexMod.QueryBuilder = js.native
-  def knex(tableName: knexLib.knexMod.Identifier): knexLib.knexMod.QueryBuilder = js.native
-  def knex(tableName: knexLib.knexMod.TableName): knexLib.knexMod.QueryBuilder = js.native
+  var knex_Original: knexLib.knexMod.Knex[_, js.Array[_]] = js.native
+  def knex[TRecord2, TResult2](): knexLib.knexMod.QueryBuilder[TRecord2, TResult2] = js.native
+  def knex[TRecord2, TResult2](tableName: knexLib.knexMod.AliasDict): knexLib.knexMod.QueryBuilder[TRecord2, TResult2] = js.native
+  def knex[TRecord2, TResult2](tableName: knexLib.knexMod.TableDescriptor): knexLib.knexMod.QueryBuilder[TRecord2, TResult2] = js.native
   def plugin(name: java.lang.String): Bookshelf = js.native
   def plugin(name: java.lang.String, options: js.Any): Bookshelf = js.native
   def plugin(name: js.Array[java.lang.String]): Bookshelf = js.native
   def plugin(name: js.Array[java.lang.String], options: js.Any): Bookshelf = js.native
   def plugin(name: js.Function): Bookshelf = js.native
   def plugin(name: js.Function, options: js.Any): Bookshelf = js.native
-  def transaction[T](callback: js.Function1[/* transaction */ knexLib.knexMod.Transaction, js.Thenable[T]]): bluebirdLib.bluebirdMod.^[T] = js.native
+  def transaction[T](callback: js.Function1[/* transaction */ knexLib.knexMod.Transaction[_, _], js.Thenable[T]]): bluebirdLib.bluebirdMod.^[T] = js.native
 }
 

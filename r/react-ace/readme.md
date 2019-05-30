@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-ace
 
-Typings are for version 6.6.0
+Typings are for version 7.0.1
 
 ## Library description:
 A react component for Ace Editor
@@ -31,13 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for react-ace 4.1.3
-// Project: https://github.com/securingsincity/react-ace
-// Definitions by: Alberto Nicoletti <https://github.com/illbexyz>
-
-```
 

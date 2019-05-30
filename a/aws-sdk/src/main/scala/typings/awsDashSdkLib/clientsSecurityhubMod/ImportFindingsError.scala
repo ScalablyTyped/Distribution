@@ -15,7 +15,7 @@ trait ImportFindingsError extends js.Object {
     */
   var ErrorMessage: NonEmptyString
   /**
-    * The id of the error made during the BatchImportFindings operation.
+    * The ID of the error made during the BatchImportFindings operation.
     */
   var Id: NonEmptyString
 }

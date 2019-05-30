@@ -31,7 +31,7 @@ trait AwsEc2InstanceDetails extends js.Object {
     */
   var LaunchedAt: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The identifier of the subnet in which the instance was launched.
+    * The identifier of the subnet that the instance was launched in.
     */
   var SubnetId: js.UndefOr[NonEmptyString] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait AwsEc2InstanceDetails extends js.Object {
     */
   var Type: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * The identifier of the VPC in which the instance was launched.
+    * The identifier of the VPC that the instance was launched in.
     */
   var VpcId: js.UndefOr[NonEmptyString] = js.undefined
 }

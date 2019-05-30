@@ -37,7 +37,7 @@ object ^ extends js.Object {
   ] = js.native
   def createPrefixedFormatter(prefix: java.lang.String): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
   def createPrefixedFormatter(prefix: js.Function0[java.lang.String]): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
-  def createPromptChoiceSeparator(): inquirerLib.inquirerMod.objectsNs.Separator = js.native
+  def createPromptChoiceSeparator(): atIonicCliDashFrameworkLib.libPromptsMod.Separator = js.native
   def createPromptModule(): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
   def createPromptModule(hasInteractiveOnFallback: atIonicCliDashFrameworkLib.libPromptsMod.CreatePromptModuleOptions): js.Promise[atIonicCliDashFrameworkLib.libPromptsMod.PromptModule] = js.native
   def createTaggedFormatter(): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
@@ -69,6 +69,7 @@ object ^ extends js.Object {
   def generateCommandPath[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](cmd: C): js.Promise[
     js.Array[atIonicCliDashFrameworkLib.definitionsMod.CommandPathItem[C, N, M, I, O]]
   ] = js.native
+  def getCompletionWords[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](ns: N, argv: js.Array[java.lang.String]): js.Promise[js.Array[java.lang.String]] = js.native
   def getLoggerLevelColor(colors: atIonicCliDashFrameworkLib.libColorsMod.Colors): js.UndefOr[atIonicCliDashFrameworkLib.libColorsMod.ColorFunction] = js.native
   def getLoggerLevelColor(
     colors: atIonicCliDashFrameworkLib.libColorsMod.Colors,

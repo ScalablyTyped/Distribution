@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core", "IterableDiffers")
 @js.native
-class IterableDiffers protected ()
-  extends atAngularCoreLib.publicUnderscoreApiMod.IterableDiffers {
-  def this(factories: js.Array[
-      atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDifferFactory
-    ]) = this()
+class IterableDiffers protected () extends js.Object {
+  def this(factories: js.Array[IterableDifferFactory]) = this()
+  /**
+    * @deprecated v4.0.0 - Should be private
+    */
+  var factories: js.Array[IterableDifferFactory] = js.native
+  def find(iterable: js.Any): IterableDifferFactory = js.native
 }
 
 /* static members */
@@ -20,17 +22,11 @@ class IterableDiffers protected ()
 object IterableDiffers extends js.Object {
   /** @nocollapse */
   var ngInjectableDef: scala.Nothing = js.native
+  def create(factories: js.Array[atAngularCoreLib.atAngularCoreMod.IterableDifferFactory]): atAngularCoreLib.atAngularCoreMod.IterableDiffers = js.native
   def create(
-    factories: js.Array[
-      atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDifferFactory
-    ]
-  ): atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDiffers = js.native
-  def create(
-    factories: js.Array[
-      atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDifferFactory
-    ],
-    parent: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDiffers
-  ): atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDiffers = js.native
+    factories: js.Array[atAngularCoreLib.atAngularCoreMod.IterableDifferFactory],
+    parent: atAngularCoreLib.atAngularCoreMod.IterableDiffers
+  ): atAngularCoreLib.atAngularCoreMod.IterableDiffers = js.native
   /**
     * Takes an array of {@link IterableDifferFactory} and returns a provider used to extend the
     * inherited {@link IterableDiffers} instance with the provided factories and return a new
@@ -51,10 +47,6 @@ object IterableDiffers extends js.Object {
     * })
     * ```
     */
-  def extend(
-    factories: js.Array[
-      atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDifferFactory
-    ]
-  ): atAngularCoreLib.srcDiProviderMod.StaticProvider = js.native
+  def extend(factories: js.Array[atAngularCoreLib.atAngularCoreMod.IterableDifferFactory]): atAngularCoreLib.atAngularCoreMod.StaticProvider = js.native
 }
 

@@ -11,6 +11,7 @@ trait R3PipeMetadataFacade extends js.Object {
   var pipeName: java.lang.String
   var pure: scala.Boolean
   var `type`: js.Any
+  var typeArgumentCount: scala.Double
 }
 
 object R3PipeMetadataFacade {
@@ -20,9 +21,10 @@ object R3PipeMetadataFacade {
     pipeName: java.lang.String,
     pure: scala.Boolean,
     `type`: js.Any,
+    typeArgumentCount: scala.Double,
     deps: js.Array[R3DependencyMetadataFacade] = null
   ): R3PipeMetadataFacade = {
-    val __obj = js.Dynamic.literal(name = name, pipeName = pipeName, pure = pure)
+    val __obj = js.Dynamic.literal(name = name, pipeName = pipeName, pure = pure, typeArgumentCount = typeArgumentCount)
     __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     __obj.asInstanceOf[R3PipeMetadataFacade]

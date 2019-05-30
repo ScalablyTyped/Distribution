@@ -15,7 +15,7 @@ class BaseExecutor[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C,
   @JSName("emit")
   def `emit_operation-rpc`(
     event: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`operation-rpc`,
-    rpc: atIonicCliDashFrameworkLib.utilsIpcMod.RPCProcess
+    rpc: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/cli-framework/utils/ipc.RPCProcess */ js.Any
   ): scala.Boolean = js.native
   def formatHelp(location: atIonicCliDashFrameworkLib.definitionsMod.NamespaceLocateResult[C, N, M, I, O]): js.Promise[java.lang.String] = js.native
   def formatHelp(
@@ -25,7 +25,10 @@ class BaseExecutor[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C,
   @JSName("on")
   def `on_operation-rpc`(
     event: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`operation-rpc`,
-    callback: js.Function1[/* rpc */ atIonicCliDashFrameworkLib.utilsIpcMod.RPCProcess, scala.Unit]
+    callback: js.Function1[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/cli-framework/utils/ipc.RPCProcess */ /* rpc */ js.Any, 
+      scala.Unit
+    ]
   ): this.type = js.native
   /**
     * Initiate RPC operation.

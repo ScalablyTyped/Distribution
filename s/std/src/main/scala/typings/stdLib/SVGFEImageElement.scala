@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEImageElement interface corresponds to the <feImage> element. */
+/** Corresponds to the <feImage> element. */
 @js.native
 trait SVGFEImageElement
   extends SVGElement
@@ -43,6 +43,8 @@ class SVGFEImageElementCls () extends SVGFEImageElement {
   override val height: SVGAnimatedLength = js.native
   /* CompleteClass */
   override val href: SVGAnimatedString = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

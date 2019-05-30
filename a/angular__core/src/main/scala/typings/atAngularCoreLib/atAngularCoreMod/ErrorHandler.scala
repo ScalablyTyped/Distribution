@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core", "ErrorHandler")
 @js.native
-class ErrorHandler ()
-  extends atAngularCoreLib.publicUnderscoreApiMod.ErrorHandler
+class ErrorHandler () extends js.Object {
+  def handleError(error: js.Any): scala.Unit = js.native
+}
 

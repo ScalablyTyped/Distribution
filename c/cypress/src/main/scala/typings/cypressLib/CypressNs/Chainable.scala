@@ -19684,7 +19684,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("trigger")
   def trigger_auxclick(
     eventName: cypressLib.cypressLibStrings.auxclick,
-    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_auxclick(eventName: cypressLib.cypressLibStrings.auxclick, position: PositionType): Chainable[Subject] = js.native
@@ -19692,7 +19692,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_auxclick(
     eventName: cypressLib.cypressLibStrings.auxclick,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_auxclick(eventName: cypressLib.cypressLibStrings.auxclick, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
@@ -19701,7 +19701,7 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.auxclick,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.Event]
+    options: stdLib.Partial[TriggerOptions with ObjectLike with stdLib.MouseEvent]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_blur(eventName: cypressLib.cypressLibStrings.blur): Chainable[Subject] = js.native

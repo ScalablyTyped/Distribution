@@ -19,7 +19,7 @@ trait DescribeMaintenanceWindowExecutionTasksRequest extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * The ID of the Maintenance Window execution whose task executions should be retrieved.
+    * The ID of the maintenance window execution whose task executions should be retrieved.
     */
   var WindowExecutionId: MaintenanceWindowExecutionId
 }

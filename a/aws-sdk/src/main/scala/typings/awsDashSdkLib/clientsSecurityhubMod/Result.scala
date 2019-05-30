@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Result extends js.Object {
   /**
-    * An ID of the AWS account that could not be processed. 
+    * An ID of the AWS account that couldn't be processed. 
     */
   var AccountId: js.UndefOr[AccountId] = js.undefined
   /**
-    * The reason for why an account could not be processed.
+    * The reason for why an account couldn't be processed.
     */
   var ProcessingResult: js.UndefOr[NonEmptyString] = js.undefined
 }

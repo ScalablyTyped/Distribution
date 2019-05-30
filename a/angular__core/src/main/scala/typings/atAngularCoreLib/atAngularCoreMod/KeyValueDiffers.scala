@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/core", "KeyValueDiffers")
 @js.native
-class KeyValueDiffers protected ()
-  extends atAngularCoreLib.publicUnderscoreApiMod.KeyValueDiffers {
-  def this(factories: js.Array[
-      atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDifferFactory
-    ]) = this()
+class KeyValueDiffers protected () extends js.Object {
+  def this(factories: js.Array[KeyValueDifferFactory]) = this()
+  /**
+    * @deprecated v4.0.0 - Should be private.
+    */
+  var factories: js.Array[KeyValueDifferFactory] = js.native
+  def find(kv: js.Any): KeyValueDifferFactory = js.native
 }
 
 /* static members */
@@ -20,17 +22,11 @@ class KeyValueDiffers protected ()
 object KeyValueDiffers extends js.Object {
   /** @nocollapse */
   var ngInjectableDef: scala.Nothing = js.native
+  def create[S](factories: js.Array[atAngularCoreLib.atAngularCoreMod.KeyValueDifferFactory]): atAngularCoreLib.atAngularCoreMod.KeyValueDiffers = js.native
   def create[S](
-    factories: js.Array[
-      atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDifferFactory
-    ]
-  ): atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDiffers = js.native
-  def create[S](
-    factories: js.Array[
-      atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDifferFactory
-    ],
-    parent: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDiffers
-  ): atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDiffers = js.native
+    factories: js.Array[atAngularCoreLib.atAngularCoreMod.KeyValueDifferFactory],
+    parent: atAngularCoreLib.atAngularCoreMod.KeyValueDiffers
+  ): atAngularCoreLib.atAngularCoreMod.KeyValueDiffers = js.native
   /**
     * Takes an array of {@link KeyValueDifferFactory} and returns a provider used to extend the
     * inherited {@link KeyValueDiffers} instance with the provided factories and return a new
@@ -51,10 +47,6 @@ object KeyValueDiffers extends js.Object {
     * })
     * ```
     */
-  def extend[S](
-    factories: js.Array[
-      atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDifferFactory
-    ]
-  ): atAngularCoreLib.srcDiProviderMod.StaticProvider = js.native
+  def extend[S](factories: js.Array[atAngularCoreLib.atAngularCoreMod.KeyValueDifferFactory]): atAngularCoreLib.atAngularCoreMod.StaticProvider = js.native
 }
 

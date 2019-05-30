@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeMaintenanceWindowScheduleRequest extends js.Object {
   /**
-    * Filters used to limit the range of results. For example, you can limit Maintenance Window executions to only those scheduled before or after a certain date and time.
+    * Filters used to limit the range of results. For example, you can limit maintenance window executions to only those scheduled before or after a certain date and time.
     */
   var Filters: js.UndefOr[PatchOrchestratorFilterList] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait DescribeMaintenanceWindowScheduleRequest extends js.Object {
     */
   var Targets: js.UndefOr[Targets] = js.undefined
   /**
-    * The ID of the Maintenance Window to retrieve information about.
+    * The ID of the maintenance window to retrieve information about.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }

@@ -31,7 +31,7 @@ trait TypeofClassModelArgs
   var pickJsonSchemaProperties: scala.Boolean = js.native
   var propRefRegex: stdLib.RegExp = js.native
   @JSName("raw")
-  var raw_Original: knexLib.knexMod.RawBuilder = js.native
+  var raw_Original: knexLib.knexMod.RawBuilder[_, js.Array[_]] = js.native
   var relatedFindQueryMutates: scala.Boolean = js.native
   var relatedInsertQueryMutates: scala.Boolean = js.native
   var relationMappings: objectionLib.objectionMod.RelationMappings | js.Function0[objectionLib.objectionMod.RelationMappings] = js.native
@@ -39,7 +39,7 @@ trait TypeofClassModelArgs
   var uidProp: java.lang.String = js.native
   var uidRefProp: java.lang.String = js.native
   var virtualAttributes: js.Array[java.lang.String] = js.native
-  def bindKnex[M](`this`: M, knex: knexLib.knexMod.Knex): M = js.native
+  def bindKnex[M](`this`: M, knex: knexLib.knexMod.Knex[_, js.Array[_]]): M = js.native
   def bindTransaction[M](`this`: M, transaction: objectionLib.objectionMod.Transaction): M = js.native
   def createNotFoundError(): stdLib.Error = js.native
   def createValidationError(args: objectionLib.objectionMod.CreateValidationErrorArgs): stdLib.Error = js.native
@@ -55,9 +55,9 @@ trait TypeofClassModelArgs
     opt: objectionLib.objectionMod.ModelOptions
   ): M = js.native
   def getRelations(): org.scalablytyped.runtime.StringDictionary[objectionLib.objectionMod.Relation] = js.native
-  def knex(): knexLib.knexMod.Knex = js.native
-  def knex(knex: knexLib.knexMod.Knex): knexLib.knexMod.Knex = js.native
-  def knexQuery(): knexLib.knexMod.QueryBuilder = js.native
+  def knex(): knexLib.knexMod.Knex[_, js.Array[_]] = js.native
+  def knex(knex: knexLib.knexMod.Knex[_, js.Array[_]]): knexLib.knexMod.Knex[_, js.Array[_]] = js.native
+  def knexQuery(): knexLib.knexMod.QueryBuilder[_, js.Array[knexLib.knexMod.SafePartial[_]]] = js.native
   def loadRelated[QM /* <: objectionLib.objectionMod.Model */](
     `this`: objectionLib.objectionMod.Constructor[QM],
     model: QM,
@@ -74,7 +74,7 @@ trait TypeofClassModelArgs
     model: QM,
     expression: objectionLib.objectionMod.RelationExpression,
     filters: objectionLib.objectionMod.Filters[QM],
-    trxOrKnex: knexLib.knexMod.Knex
+    trxOrKnex: knexLib.knexMod.Knex[_, js.Array[_]]
   ): objectionLib.objectionMod.QueryBuilderYieldingOne[QM] = js.native
   def loadRelated[QM /* <: objectionLib.objectionMod.Model */](
     `this`: objectionLib.objectionMod.Constructor[QM],
@@ -108,7 +108,7 @@ trait TypeofClassModelArgs
     models: js.Array[QM],
     expression: objectionLib.objectionMod.RelationExpression,
     filters: objectionLib.objectionMod.Filters[QM],
-    trxOrKnex: knexLib.knexMod.Knex
+    trxOrKnex: knexLib.knexMod.Knex[_, js.Array[_]]
   ): objectionLib.objectionMod.QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
@@ -131,7 +131,7 @@ trait TypeofClassModelArgs
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def query[QM /* <: objectionLib.objectionMod.Model */](`this`: objectionLib.objectionMod.Constructor[QM], trxOrKnex: knexLib.knexMod.Knex): objectionLib.objectionMod.QueryBuilder[
+  def query[QM /* <: objectionLib.objectionMod.Model */](`this`: objectionLib.objectionMod.Constructor[QM], trxOrKnex: knexLib.knexMod.Knex[_, js.Array[_]]): objectionLib.objectionMod.QueryBuilder[
     QM, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
@@ -144,10 +144,10 @@ trait TypeofClassModelArgs
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RM */ _, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for RV */ _
   ] = js.native
-  def raw(sql: java.lang.String, bindings: (knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder)*): knexLib.knexMod.Raw = js.native
-  def raw(sql: java.lang.String, bindings: js.Array[knexLib.knexMod.Value | knexLib.knexMod.QueryBuilder]): knexLib.knexMod.Raw = js.native
-  def raw(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): knexLib.knexMod.Raw = js.native
-  def raw(value: knexLib.knexMod.Value): knexLib.knexMod.Raw = js.native
+  def raw[TResult2](sql: java.lang.String, bindings: knexLib.knexMod.RawBinding*): knexLib.knexMod.Raw[TResult2] = js.native
+  def raw[TResult2](sql: java.lang.String, bindings: js.Array[knexLib.knexMod.RawBinding]): knexLib.knexMod.Raw[TResult2] = js.native
+  def raw[TResult2](sql: java.lang.String, bindings: knexLib.knexMod.ValueDict): knexLib.knexMod.Raw[TResult2] = js.native
+  def raw[TResult2](value: knexLib.knexMod.Value): knexLib.knexMod.Raw[TResult2] = js.native
   // This can only be used as a subquery so the result model type is irrelevant.
   def relatedQuery(relationName: java.lang.String): objectionLib.objectionMod.QueryBuilder[
     _, 

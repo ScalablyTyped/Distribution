@@ -355,12 +355,6 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     */
   var `-moz-window-dragging`: js.UndefOr[MozWindowDraggingProperty] = js.undefined
   /**
-    * The **`-moz-window-shadow`** CSS property specifies whether a window will have a shadow. It only works on Mac OS X.
-    *
-    * **Initial value**: `default`
-    */
-  var `-moz-window-shadow`: js.UndefOr[MozWindowShadowProperty] = js.undefined
-  /**
     * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a string indicating whether the object represents a keyboard shortcut.
     *
     * **Initial value**: `false`
@@ -582,6 +576,54 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     * **Initial value**: `none`
     */
   var `-ms-scroll-translation`: js.UndefOr[MsScrollTranslationProperty] = js.undefined
+  /**
+    * The **`-ms-scrollbar-3dlight-color`** CSS property is a Microsoft extension specifying the color of the top and left edges of the scroll box and scroll arrows of a scroll bar.
+    *
+    * **Initial value**: depends on user agent
+    */
+  var `-ms-scrollbar-3dlight-color`: js.UndefOr[MsScrollbar3dlightColorProperty] = js.undefined
+  /**
+    * The **`-ms-scrollbar-arrow-color`** CSS property is a Microsoft extension that specifies the color of the arrow elements of a scroll arrow.
+    *
+    * **Initial value**: `ButtonText`
+    */
+  var `-ms-scrollbar-arrow-color`: js.UndefOr[MsScrollbarArrowColorProperty] = js.undefined
+  /**
+    * The `**-ms-scrollbar-base-color**` CSS property is a Microsoft extension that specifies the base color of the main elements of a scroll bar.
+    *
+    * **Initial value**: depends on user agent
+    */
+  var `-ms-scrollbar-base-color`: js.UndefOr[MsScrollbarBaseColorProperty] = js.undefined
+  /**
+    * The **`-ms-scrollbar-darkshadow-color`** CSS property is a Microsoft extension that specifies the color of a scroll bar's gutter.
+    *
+    * **Initial value**: `ThreeDDarkShadow`
+    */
+  var `-ms-scrollbar-darkshadow-color`: js.UndefOr[MsScrollbarDarkshadowColorProperty] = js.undefined
+  /**
+    * The `**-ms-scrollbar-face-color**` CSS property is a Microsoft extension that specifies the color of the scroll box and scroll arrows of a scroll bar.
+    *
+    * **Initial value**: `ThreeDFace`
+    */
+  var `-ms-scrollbar-face-color`: js.UndefOr[MsScrollbarFaceColorProperty] = js.undefined
+  /**
+    * The `**-ms-scrollbar-highlight-color**` CSS property is a Microsoft extension that specifies the color of the slider tray, the top and left edges of the scroll box, and the scroll arrows of a scroll bar.
+    *
+    * **Initial value**: `ThreeDHighlight`
+    */
+  var `-ms-scrollbar-highlight-color`: js.UndefOr[MsScrollbarHighlightColorProperty] = js.undefined
+  /**
+    * The **`-ms-scrollbar-shadow-color`** CSS property is a Microsoft extension that specifies the color of the bottom and right edges of the scroll box and scroll arrows of a scroll bar.
+    *
+    * **Initial value**: `ThreeDDarkShadow`
+    */
+  var `-ms-scrollbar-shadow-color`: js.UndefOr[MsScrollbarShadowColorProperty] = js.undefined
+  /**
+    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
+    *
+    * **Initial value**: `Scrollbar`
+    */
+  var `-ms-scrollbar-track-color`: js.UndefOr[MsScrollbarTrackColorProperty] = js.undefined
   /**
     * The **`-ms-text-autospace`** CSS property is a Microsoft extension that specifies the autospacing and narrow space width adjustment of text.
     *
@@ -985,6 +1027,12 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     */
   var `-webkit-line-break`: js.UndefOr[LineBreakProperty] = js.undefined
   /**
+    * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
+    *
+    * **Initial value**: `none`
+    */
+  var `-webkit-line-clamp`: js.UndefOr[WebkitLineClampProperty] = js.undefined
+  /**
     * The **`margin-inline-end`** CSS property defines the logical inline end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. In other words, it corresponds to the `margin-top`, `margin-right`, `margin-bottom` or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `0`
@@ -1268,6 +1316,12 @@ trait VendorLonghandPropertiesHyphen[TLength] extends js.Object {
     * **Initial value**: `horizontal-tb`
     */
   var `-webkit-writing-mode`: js.UndefOr[WritingModeProperty] = js.undefined
+  /**
+    * The **`mask-size`** CSS property specifies the sizes of the mask images. The size of the image can be fully or partially constrained in order to preserve its intrinsic ratio.
+    *
+    * **Initial value**: `auto`
+    */
+  var `-webkitmask-size`: js.UndefOr[MaskSizeProperty[TLength]] = js.undefined
 }
 
 object VendorLonghandPropertiesHyphen {
@@ -1331,7 +1385,6 @@ object VendorLonghandPropertiesHyphen {
     `-moz-user-modify`: MozUserModifyProperty = null,
     `-moz-user-select`: UserSelectProperty = null,
     `-moz-window-dragging`: MozWindowDraggingProperty = null,
-    `-moz-window-shadow`: MozWindowShadowProperty = null,
     `-ms-accelerator`: MsAcceleratorProperty = null,
     `-ms-align-self`: AlignSelfProperty = null,
     `-ms-block-progression`: MsBlockProgressionProperty = null,
@@ -1369,6 +1422,14 @@ object VendorLonghandPropertiesHyphen {
     `-ms-scroll-snap-points-y`: GlobalsString = null,
     `-ms-scroll-snap-type`: MsScrollSnapTypeProperty = null,
     `-ms-scroll-translation`: MsScrollTranslationProperty = null,
+    `-ms-scrollbar-3dlight-color`: MsScrollbar3dlightColorProperty = null,
+    `-ms-scrollbar-arrow-color`: MsScrollbarArrowColorProperty = null,
+    `-ms-scrollbar-base-color`: MsScrollbarBaseColorProperty = null,
+    `-ms-scrollbar-darkshadow-color`: MsScrollbarDarkshadowColorProperty = null,
+    `-ms-scrollbar-face-color`: MsScrollbarFaceColorProperty = null,
+    `-ms-scrollbar-highlight-color`: MsScrollbarHighlightColorProperty = null,
+    `-ms-scrollbar-shadow-color`: MsScrollbarShadowColorProperty = null,
+    `-ms-scrollbar-track-color`: MsScrollbarTrackColorProperty = null,
     `-ms-text-autospace`: MsTextAutospaceProperty = null,
     `-ms-text-combine-horizontal`: TextCombineUprightProperty = null,
     `-ms-text-overflow`: TextOverflowProperty = null,
@@ -1438,6 +1499,7 @@ object VendorLonghandPropertiesHyphen {
     `-webkit-hyphens`: HyphensProperty = null,
     `-webkit-justify-content`: JustifyContentProperty = null,
     `-webkit-line-break`: LineBreakProperty = null,
+    `-webkit-line-clamp`: WebkitLineClampProperty = null,
     `-webkit-margin-end`: MarginInlineEndProperty[TLength] = null,
     `-webkit-margin-start`: MarginInlineStartProperty[TLength] = null,
     `-webkit-mask-attachment`: WebkitMaskAttachmentProperty = null,
@@ -1485,7 +1547,8 @@ object VendorLonghandPropertiesHyphen {
     `-webkit-transition-timing-function`: TransitionTimingFunctionProperty = null,
     `-webkit-user-modify`: WebkitUserModifyProperty = null,
     `-webkit-user-select`: UserSelectProperty = null,
-    `-webkit-writing-mode`: WritingModeProperty = null
+    `-webkit-writing-mode`: WritingModeProperty = null,
+    `-webkitmask-size`: MaskSizeProperty[TLength] = null
   ): VendorLonghandPropertiesHyphen[TLength] = {
     val __obj = js.Dynamic.literal()
     if (`-moz-animation-delay` != null) __obj.updateDynamic("-moz-animation-delay")(`-moz-animation-delay`.asInstanceOf[js.Any])
@@ -1546,7 +1609,6 @@ object VendorLonghandPropertiesHyphen {
     if (`-moz-user-modify` != null) __obj.updateDynamic("-moz-user-modify")(`-moz-user-modify`)
     if (`-moz-user-select` != null) __obj.updateDynamic("-moz-user-select")(`-moz-user-select`)
     if (`-moz-window-dragging` != null) __obj.updateDynamic("-moz-window-dragging")(`-moz-window-dragging`)
-    if (`-moz-window-shadow` != null) __obj.updateDynamic("-moz-window-shadow")(`-moz-window-shadow`)
     if (`-ms-accelerator` != null) __obj.updateDynamic("-ms-accelerator")(`-ms-accelerator`)
     if (`-ms-align-self` != null) __obj.updateDynamic("-ms-align-self")(`-ms-align-self`.asInstanceOf[js.Any])
     if (`-ms-block-progression` != null) __obj.updateDynamic("-ms-block-progression")(`-ms-block-progression`)
@@ -1584,6 +1646,14 @@ object VendorLonghandPropertiesHyphen {
     if (`-ms-scroll-snap-points-y` != null) __obj.updateDynamic("-ms-scroll-snap-points-y")(`-ms-scroll-snap-points-y`.asInstanceOf[js.Any])
     if (`-ms-scroll-snap-type` != null) __obj.updateDynamic("-ms-scroll-snap-type")(`-ms-scroll-snap-type`)
     if (`-ms-scroll-translation` != null) __obj.updateDynamic("-ms-scroll-translation")(`-ms-scroll-translation`)
+    if (`-ms-scrollbar-3dlight-color` != null) __obj.updateDynamic("-ms-scrollbar-3dlight-color")(`-ms-scrollbar-3dlight-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-arrow-color` != null) __obj.updateDynamic("-ms-scrollbar-arrow-color")(`-ms-scrollbar-arrow-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-base-color` != null) __obj.updateDynamic("-ms-scrollbar-base-color")(`-ms-scrollbar-base-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-darkshadow-color` != null) __obj.updateDynamic("-ms-scrollbar-darkshadow-color")(`-ms-scrollbar-darkshadow-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-face-color` != null) __obj.updateDynamic("-ms-scrollbar-face-color")(`-ms-scrollbar-face-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-highlight-color` != null) __obj.updateDynamic("-ms-scrollbar-highlight-color")(`-ms-scrollbar-highlight-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-shadow-color` != null) __obj.updateDynamic("-ms-scrollbar-shadow-color")(`-ms-scrollbar-shadow-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-track-color` != null) __obj.updateDynamic("-ms-scrollbar-track-color")(`-ms-scrollbar-track-color`.asInstanceOf[js.Any])
     if (`-ms-text-autospace` != null) __obj.updateDynamic("-ms-text-autospace")(`-ms-text-autospace`)
     if (`-ms-text-combine-horizontal` != null) __obj.updateDynamic("-ms-text-combine-horizontal")(`-ms-text-combine-horizontal`.asInstanceOf[js.Any])
     if (`-ms-text-overflow` != null) __obj.updateDynamic("-ms-text-overflow")(`-ms-text-overflow`.asInstanceOf[js.Any])
@@ -1653,6 +1723,7 @@ object VendorLonghandPropertiesHyphen {
     if (`-webkit-hyphens` != null) __obj.updateDynamic("-webkit-hyphens")(`-webkit-hyphens`)
     if (`-webkit-justify-content` != null) __obj.updateDynamic("-webkit-justify-content")(`-webkit-justify-content`.asInstanceOf[js.Any])
     if (`-webkit-line-break` != null) __obj.updateDynamic("-webkit-line-break")(`-webkit-line-break`)
+    if (`-webkit-line-clamp` != null) __obj.updateDynamic("-webkit-line-clamp")(`-webkit-line-clamp`.asInstanceOf[js.Any])
     if (`-webkit-margin-end` != null) __obj.updateDynamic("-webkit-margin-end")(`-webkit-margin-end`.asInstanceOf[js.Any])
     if (`-webkit-margin-start` != null) __obj.updateDynamic("-webkit-margin-start")(`-webkit-margin-start`.asInstanceOf[js.Any])
     if (`-webkit-mask-attachment` != null) __obj.updateDynamic("-webkit-mask-attachment")(`-webkit-mask-attachment`.asInstanceOf[js.Any])
@@ -1701,6 +1772,7 @@ object VendorLonghandPropertiesHyphen {
     if (`-webkit-user-modify` != null) __obj.updateDynamic("-webkit-user-modify")(`-webkit-user-modify`)
     if (`-webkit-user-select` != null) __obj.updateDynamic("-webkit-user-select")(`-webkit-user-select`)
     if (`-webkit-writing-mode` != null) __obj.updateDynamic("-webkit-writing-mode")(`-webkit-writing-mode`)
+    if (`-webkitmask-size` != null) __obj.updateDynamic("-webkitmask-size")(`-webkitmask-size`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VendorLonghandPropertiesHyphen[TLength]]
   }
 }

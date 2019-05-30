@@ -46,7 +46,6 @@ trait VendorShorthandPropertiesHyphenFallback[TLength] extends js.Object {
   var `-webkit-flex`: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.undefined
   /** The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` properties. */
   var `-webkit-flex-flow`: js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]] = js.undefined
-  var `-webkit-line-clamp`: js.UndefOr[WebkitLineClampProperty | js.Array[WebkitLineClampProperty]] = js.undefined
   /** The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points. */
   var `-webkit-mask`: js.UndefOr[WebkitMaskProperty[TLength] | js.Array[WebkitMaskProperty[TLength]]] = js.undefined
   /** The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`. */
@@ -79,7 +78,6 @@ object VendorShorthandPropertiesHyphenFallback {
     `-webkit-columns`: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]] = null,
     `-webkit-flex`: FlexProperty[TLength] | js.Array[FlexProperty[TLength]] = null,
     `-webkit-flex-flow`: FlexFlowProperty | js.Array[FlexFlowProperty] = null,
-    `-webkit-line-clamp`: WebkitLineClampProperty | js.Array[WebkitLineClampProperty] = null,
     `-webkit-mask`: WebkitMaskProperty[TLength] | js.Array[WebkitMaskProperty[TLength]] = null,
     `-webkit-text-emphasis`: TextEmphasisProperty | js.Array[TextEmphasisProperty] = null,
     `-webkit-text-stroke`: WebkitTextStrokeProperty[TLength] | js.Array[WebkitTextStrokeProperty[TLength]] = null,
@@ -105,7 +103,6 @@ object VendorShorthandPropertiesHyphenFallback {
     if (`-webkit-columns` != null) __obj.updateDynamic("-webkit-columns")(`-webkit-columns`.asInstanceOf[js.Any])
     if (`-webkit-flex` != null) __obj.updateDynamic("-webkit-flex")(`-webkit-flex`.asInstanceOf[js.Any])
     if (`-webkit-flex-flow` != null) __obj.updateDynamic("-webkit-flex-flow")(`-webkit-flex-flow`.asInstanceOf[js.Any])
-    if (`-webkit-line-clamp` != null) __obj.updateDynamic("-webkit-line-clamp")(`-webkit-line-clamp`.asInstanceOf[js.Any])
     if (`-webkit-mask` != null) __obj.updateDynamic("-webkit-mask")(`-webkit-mask`.asInstanceOf[js.Any])
     if (`-webkit-text-emphasis` != null) __obj.updateDynamic("-webkit-text-emphasis")(`-webkit-text-emphasis`.asInstanceOf[js.Any])
     if (`-webkit-text-stroke` != null) __obj.updateDynamic("-webkit-text-stroke")(`-webkit-text-stroke`.asInstanceOf[js.Any])

@@ -7,11 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/router", "NavigationEnd")
 @js.native
-class NavigationEnd protected ()
-  extends atAngularRouterLib.publicUnderscoreApiMod.NavigationEnd {
+class NavigationEnd protected () extends RouterEvent {
   def this(/** @docsNotRequired */
   id: scala.Double, /** @docsNotRequired */
   url: java.lang.String, /** @docsNotRequired */
   urlAfterRedirects: java.lang.String) = this()
+  /** @docsNotRequired */
+  var urlAfterRedirects: java.lang.String = js.native
 }
 

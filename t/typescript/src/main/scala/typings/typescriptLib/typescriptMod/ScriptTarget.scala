@@ -32,6 +32,10 @@ object ScriptTarget extends js.Object {
     extends typescriptLib.typescriptMod.ScriptTarget
   
   @js.native
+  sealed trait ES2020
+    extends typescriptLib.typescriptMod.ScriptTarget
+  
+  @js.native
   sealed trait ES3
     extends typescriptLib.typescriptMod.ScriptTarget
   
@@ -56,11 +60,12 @@ object ScriptTarget extends js.Object {
   /* 4 */ val ES2017: ES2017 with scala.Double = js.native
   /* 5 */ val ES2018: ES2018 with scala.Double = js.native
   /* 6 */ val ES2019: ES2019 with scala.Double = js.native
+  /* 7 */ val ES2020: ES2020 with scala.Double = js.native
   /* 0 */ val ES3: ES3 with scala.Double = js.native
   /* 1 */ val ES5: ES5 with scala.Double = js.native
-  /* 7 */ val ESNext: ESNext with scala.Double = js.native
+  /* 8 */ val ESNext: ESNext with scala.Double = js.native
   /* 100 */ val JSON: JSON with scala.Double = js.native
-  /* 7 */ val Latest: Latest with scala.Double = js.native
+  /* 8 */ val Latest: Latest with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[typescriptLib.typescriptMod.ScriptTarget with scala.Double] = js.native
 }

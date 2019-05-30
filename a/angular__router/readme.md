@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__router
 
-Typings are for version 7.2.15
+Typings are for version 8.0.0
 
 ## Library description:
 Angular - the routing library
@@ -36,41 +36,11 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * @license Angular v8.0.0
+ * (c) 2010-2019 Google LLC. https://angular.io/
+ * License: MIT
  */
-/**
- * @module
- * @description
- * Entry point for all public APIs of this package.
- */
-/**
- * Generated bundle index. Do not edit.
- */
-/**
- * This component is used internally within the router to be a placeholder when an empty
- * router-outlet is needed. For example, with a config such as:
- *
- * `{path: 'parent', outlet: 'nav', children: [...]}`
- *
- * In order to render, there needs to be a component on this config, which will default
- * to this `EmptyOutletComponent`.
- */
-/**
-*@license
-*Copyright Google Inc. All Rights Reserved.
-*
-*Use of this source code is governed by an MIT-style license that can be
-*found in the LICENSE file at https://angular.io/license
-*/
-/**
- * @module
- * @description
- * Entry point for all public APIs of the common package.
- */
+
 
 ```
 

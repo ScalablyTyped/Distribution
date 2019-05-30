@@ -19,7 +19,7 @@ trait DescribeMaintenanceWindowExecutionsRequest extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * The ID of the Maintenance Window whose executions should be retrieved.
+    * The ID of the maintenance window whose executions should be retrieved.
     */
   var WindowId: MaintenanceWindowId
 }

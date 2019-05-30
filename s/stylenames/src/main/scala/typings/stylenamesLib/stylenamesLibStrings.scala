@@ -205,6 +205,9 @@ object stylenamesLibStrings {
   sealed trait captionSide extends js.Object
   
   @js.native
+  sealed trait caretColor extends js.Object
+  
+  @js.native
   sealed trait clear extends js.Object
   
   @js.native
@@ -416,6 +419,12 @@ object stylenamesLibStrings {
   
   @js.native
   sealed trait height extends js.Object
+  
+  @js.native
+  sealed trait imageOrientation extends js.Object
+  
+  @js.native
+  sealed trait imageRendering extends js.Object
   
   @js.native
   sealed trait imeMode extends js.Object
@@ -1159,6 +1168,9 @@ object stylenamesLibStrings {
   sealed trait width extends js.Object
   
   @js.native
+  sealed trait willChange extends js.Object
+  
+  @js.native
   sealed trait wordBreak extends js.Object
   
   @js.native
@@ -1309,6 +1321,8 @@ object stylenamesLibStrings {
   @scala.inline
   def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
   @scala.inline
+  def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
+  @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
   def clip: clip = "clip".asInstanceOf[clip]
@@ -1450,6 +1464,10 @@ object stylenamesLibStrings {
   def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
   @scala.inline
   def height: height = "height".asInstanceOf[height]
+  @scala.inline
+  def imageOrientation: imageOrientation = "imageOrientation".asInstanceOf[imageOrientation]
+  @scala.inline
+  def imageRendering: imageRendering = "imageRendering".asInstanceOf[imageRendering]
   @scala.inline
   def imeMode: imeMode = "imeMode".asInstanceOf[imeMode]
   @scala.inline
@@ -1944,6 +1962,8 @@ object stylenamesLibStrings {
   def widows: widows = "widows".asInstanceOf[widows]
   @scala.inline
   def width: width = "width".asInstanceOf[width]
+  @scala.inline
+  def willChange: willChange = "willChange".asInstanceOf[willChange]
   @scala.inline
   def wordBreak: wordBreak = "wordBreak".asInstanceOf[wordBreak]
   @scala.inline

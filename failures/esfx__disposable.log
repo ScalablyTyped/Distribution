@@ -1,0 +1,7 @@
+[debug] PhaseRunner.scala:84 Success [id => @esfx/disposable, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => @esfx/disposable, phase => typescript] 
+[warn ] PhaseRunner.scala:70 Failed because of, [@esfx/type-model => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@esfx/type-model/dist/index.d.ts): Parse error at 24.62 end of input expected] [id => @esfx/disposable, phase => typescript] 
+[error] PhaseRunner.scala:88 Failure, [@esfx/type-model => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@esfx/type-model/dist/index.d.ts): Parse error at 24.62 end of input expected] [id => @esfx/disposable, phase => typescript] 
+[error] PhaseRunner.scala:88 Failure, [@esfx/type-model => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@esfx/type-model/dist/index.d.ts): Parse error at 24.62 end of input expected] [id => @esfx/disposable, phase => scala.js] 
+[error] PhaseRunner.scala:88 Failure, [@esfx/type-model => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@esfx/type-model/dist/index.d.ts): Parse error at 24.62 end of input expected] [id => @esfx/disposable, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [@esfx/type-model => InFile(/home/tso/tmp/tso-cache/npm/node_modules/@esfx/type-model/dist/index.d.ts): Parse error at 24.62 end of input expected] [id => @esfx/disposable, phase => publish] 

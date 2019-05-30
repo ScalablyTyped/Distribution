@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGStopElement interface corresponds to the <stop> element. */
+/** Corresponds to the <stop> element. */
 @js.native
 trait SVGStopElement extends SVGElement {
   val offset: SVGAnimatedNumber = js.native
@@ -16,6 +16,8 @@ trait SVGStopElement extends SVGElement {
 class SVGStopElementCls () extends SVGStopElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

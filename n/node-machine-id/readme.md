@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-machine-id
 
-Typings are for version 1.1.10
+Typings are for version 1.1.12
 
 ## Library description:
 Unique machine (desktop) id (no admin privileges required).

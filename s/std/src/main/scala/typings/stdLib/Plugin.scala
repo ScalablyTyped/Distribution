@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Plugin interface provides information about a browser plugin. */
+/** Provides information about a browser plugin. */
 @js.native
 trait Plugin
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[MimeType] {

@@ -98,7 +98,7 @@ object ojThematicMapEventMap {
     animationstart: stdLib.AnimationEvent,
     areaDataChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[(atOracleOraclejetLib.ojdataproviderMod.DataProvider[K1, D1]) | scala.Null],
     asChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
-    auxclick: stdLib.Event,
+    auxclick: stdLib.MouseEvent,
     blur: stdLib.FocusEvent,
     cancel: stdLib.Event,
     canplay: stdLib.Event,

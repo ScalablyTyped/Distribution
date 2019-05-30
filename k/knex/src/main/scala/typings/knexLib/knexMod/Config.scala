@@ -16,6 +16,7 @@ trait Config extends js.Object {
   ] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var dialect: js.UndefOr[java.lang.String] = js.undefined
+  var log: js.UndefOr[Logger] = js.undefined
   var migrations: js.UndefOr[MigratorConfig] = js.undefined
   var pool: js.UndefOr[PoolConfig] = js.undefined
   var postProcessResponse: js.UndefOr[js.Function2[/* result */ js.Any, /* queryContext */ js.Any, _]] = js.undefined
@@ -42,6 +43,7 @@ object Config {
     connection: java.lang.String | ConnectionConfig | MariaSqlConnectionConfig | MySqlConnectionConfig | MsSqlConnectionConfig | Sqlite3ConnectionConfig | SocketConnectionConfig = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     dialect: java.lang.String = null,
+    log: Logger = null,
     migrations: MigratorConfig = null,
     pool: PoolConfig = null,
     postProcessResponse: (/* result */ js.Any, /* queryContext */ js.Any) => _ = null,
@@ -58,6 +60,7 @@ object Config {
     if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
     if (dialect != null) __obj.updateDynamic("dialect")(dialect)
+    if (log != null) __obj.updateDynamic("log")(log)
     if (migrations != null) __obj.updateDynamic("migrations")(migrations)
     if (pool != null) __obj.updateDynamic("pool")(pool)
     if (postProcessResponse != null) __obj.updateDynamic("postProcessResponse")(js.Any.fromFunction2(postProcessResponse))

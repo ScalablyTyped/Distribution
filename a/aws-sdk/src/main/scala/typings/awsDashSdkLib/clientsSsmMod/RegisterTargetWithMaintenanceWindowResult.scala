@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RegisterTargetWithMaintenanceWindowResult extends js.Object {
   /**
-    * The ID of the target definition in this Maintenance Window.
+    * The ID of the target definition in this maintenance window.
     */
   var WindowTargetId: js.UndefOr[MaintenanceWindowTargetId] = js.undefined
 }

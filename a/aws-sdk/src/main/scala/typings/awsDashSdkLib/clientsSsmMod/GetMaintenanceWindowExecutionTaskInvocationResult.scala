@@ -19,7 +19,7 @@ trait GetMaintenanceWindowExecutionTaskInvocationResult extends js.Object {
     */
   var InvocationId: js.UndefOr[MaintenanceWindowExecutionTaskInvocationId] = js.undefined
   /**
-    * User-provided value to be included in any CloudWatch events raised while running tasks for these targets in this Maintenance Window. 
+    * User-provided value to be included in any CloudWatch events raised while running tasks for these targets in this maintenance window. 
     */
   var OwnerInformation: js.UndefOr[OwnerInformation] = js.undefined
   /**
@@ -43,15 +43,15 @@ trait GetMaintenanceWindowExecutionTaskInvocationResult extends js.Object {
     */
   var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
   /**
-    * Retrieves the task type for a Maintenance Window. Task types include the following: LAMBDA, STEP_FUNCTION, AUTOMATION, RUN_COMMAND.
+    * Retrieves the task type for a maintenance window. Task types include the following: LAMBDA, STEP_FUNCTION, AUTOMATION, RUN_COMMAND.
     */
   var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   /**
-    * The Maintenance Window execution ID.
+    * The maintenance window execution ID.
     */
   var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
   /**
-    * The Maintenance Window target ID.
+    * The maintenance window target ID.
     */
   var WindowTargetId: js.UndefOr[MaintenanceWindowTaskTargetId] = js.undefined
 }

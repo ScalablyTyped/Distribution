@@ -753,6 +753,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsPinpointsmsvoiceMod._apiVersion
   
   @js.native
+  sealed trait `2018-09-06`
+    extends awsDashSdkLib.clientsIotthingsgraphMod._apiVersion
+  
+  @js.native
   sealed trait `2018-09-24`
     extends awsDashSdkLib.clientsManagedblockchainMod._apiVersion
   
@@ -866,6 +870,7 @@ object awsDashSdkLibStrings {
   sealed trait ABORTED
     extends awsDashSdkLib.clientsBackupMod._BackupJobState
        with awsDashSdkLib.clientsStepfunctionsMod._ExecutionStatus
+       with awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionStatus
        with awsDashSdkLib.clientsBackupMod._RestoreJobStatus
   
   @js.native
@@ -936,6 +941,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ACCOUNT_SETTINGS
     extends awsDashSdkLib.clientsIotMod._ResourceType
+  
+  @js.native
+  sealed trait ACKNOWLEDGE_TASK_MESSAGE
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait ACTION
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityType
   
   @js.native
   sealed trait ACTION_FAILED
@@ -1046,12 +1059,28 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSwfMod._ScheduleActivityTaskFailedCause
   
   @js.native
+  sealed trait ACTIVITY_FAILED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
   sealed trait ACTIVITY_ID_ALREADY_IN_USE
     extends awsDashSdkLib.clientsSwfMod._ScheduleActivityTaskFailedCause
   
   @js.native
   sealed trait ACTIVITY_ID_UNKNOWN
     extends awsDashSdkLib.clientsSwfMod._RequestCancelActivityTaskFailedCause
+  
+  @js.native
+  sealed trait ACTIVITY_SCHEDULED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait ACTIVITY_STARTED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait ACTIVITY_SUCCEEDED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
   
   @js.native
   sealed trait ACTIVITY_TYPE_DEPRECATED
@@ -3402,6 +3431,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsClouddirectoryMod._FacetAttributeType
   
   @js.native
+  sealed trait BOOTSTRAP
+    extends awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceDeploymentStatus
+  
+  @js.native
   sealed trait BOOTSTRAPPING
     extends awsDashSdkLib.clientsEmrMod._ClusterState
        with awsDashSdkLib.clientsEmrMod._InstanceFleetState
@@ -3853,6 +3886,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEmrMod._StepState
   
   @js.native
+  sealed trait CAPABILITY
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityType
+  
+  @js.native
   sealed trait CAPABILITY_AUTO_EXPAND
     extends awsDashSdkLib.clientsServerlessapplicationrepositoryMod._Capability
        with awsDashSdkLib.clientsCloudformationMod._Capability
@@ -4119,6 +4156,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSwfMod._ExecutionStatus
        with awsDashSdkLib.clientsLightsailMod._PortInfoSourceType
        with awsDashSdkLib.clientsCodecommitMod._PullRequestStatusEnum
+  
+  @js.native
+  sealed trait CLOUD
+    extends awsDashSdkLib.clientsIotthingsgraphMod._DeploymentTarget
   
   @js.native
   sealed trait CLOUDFORMATION extends js.Object
@@ -4602,7 +4643,6 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWafregionalMod._PositionalConstraint
        with awsDashSdkLib.clientsWafMod._PositionalConstraint
        with awsDashSdkLib.clientsDevicefarmMod._RuleOperator
-       with awsDashSdkLib.clientsSecurityhubMod._StringFilterComparison
   
   @js.native
   sealed trait CONTAINS_WORD
@@ -5801,6 +5841,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAppmeshMod._VirtualServiceStatusCode
   
   @js.native
+  sealed trait DELETED_IN_TARGET
+    extends awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceDeploymentStatus
+  
+  @js.native
   sealed trait DELETE_COMPLETE
     extends awsDashSdkLib.clientsCloudformationMod._ChangeSetStatus
        with awsDashSdkLib.clientsDiscoveryMod._ImportStatus
@@ -5969,6 +6013,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsApigatewayv2Mod._DeploymentStatus
   
   @js.native
+  sealed trait DEPLOYED_IN_TARGET
+    extends awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceDeploymentStatus
+  
+  @js.native
   sealed trait DEPLOYMENT_FAILURE
     extends awsDashSdkLib.clientsCodedeployMod._AutoRollbackEvent
   
@@ -5987,6 +6035,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DEPLOYMENT_STOP_ON_REQUEST
     extends awsDashSdkLib.clientsCodedeployMod._AutoRollbackEvent
+  
+  @js.native
+  sealed trait DEPLOY_IN_PROGRESS
+    extends awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceDeploymentStatus
   
   @js.native
   sealed trait DEPRECATED
@@ -6072,12 +6124,23 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsAmplifyMod._Stage
   
   @js.native
+  sealed trait DEVICE
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityType
+  
+  @js.native
   sealed trait DEVICE_CERTIFICATE
     extends awsDashSdkLib.clientsIotMod._ResourceType
   
   @js.native
   sealed trait DEVICE_LOG
     extends awsDashSdkLib.clientsDevicefarmMod._ArtifactType
+  
+  @js.native
+  sealed trait DEVICE_MODEL
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityType
+  
+  @js.native
+  sealed trait DEVICE_MODEL_ID extends js.Object
   
   @js.native
   sealed trait DEVICE_PASSWORD_VERIFIER
@@ -7065,6 +7128,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._M2tsSegmentationMarkers
   
   @js.native
+  sealed trait EBS_SNAPSHOT_MANAGEMENT extends js.Object
+  
+  @js.native
   sealed trait EC
     extends awsDashSdkLib.clientsRoute53domainsMod._CountryCode
        with awsDashSdkLib.clientsWafregionalMod._GeoMatchConstraintValue
@@ -7450,6 +7516,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconnectMod._SourceType
   
   @js.native
+  sealed trait ENUM
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityType
+  
+  @js.native
   sealed trait EN_US extends js.Object
   
   @js.native
@@ -7587,6 +7657,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait EVENT
     extends awsDashSdkLib.clientsComprehendMod._EntityType
+       with awsDashSdkLib.clientsIotthingsgraphMod._EntityType
        with awsDashSdkLib.clientsPinpointMod._Frequency
        with awsDashSdkLib.clientsMediapackageMod._PlaylistType
        with awsDashSdkLib.clientsCodebuildMod._WebhookFilterType
@@ -7665,6 +7736,22 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait EXECUTING
     extends awsDashSdkLib.clientsPinpointMod._CampaignStatus
+  
+  @js.native
+  sealed trait EXECUTION_ABORTED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait EXECUTION_FAILED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait EXECUTION_STARTED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait EXECUTION_SUCCEEDED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
   
   @js.native
   sealed trait EXERCISER_MONKEY_OUTPUT
@@ -8070,6 +8157,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsLexmodelbuildingserviceMod._ExportStatus
        with awsDashSdkLib.clientsCloudwatchlogsMod._ExportTaskStatusCode
        with awsDashSdkLib.clientsFsxMod._FileSystemLifecycle
+       with awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionStatus
        with awsDashSdkLib.clientsAppstreamMod._ImageBuilderState
        with awsDashSdkLib.clientsAppstreamMod._ImageState
        with awsDashSdkLib.clientsLexmodelbuildingserviceMod._ImportStatus
@@ -8092,6 +8180,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsOpsworkscmMod._MaintenanceStatus
        with awsDashSdkLib.clientsSsmMod._MaintenanceWindowExecutionStatus
        with awsDashSdkLib.clientsGameliftMod._MatchmakingConfigurationStatus
+       with awsDashSdkLib.clientsIotthingsgraphMod._NamespaceDeletionStatus
        with awsDashSdkLib.clientsOpsworkscmMod._NodeAssociationStatus
        with awsDashSdkLib.clientsManagedblockchainMod._NodeStatus
        with awsDashSdkLib.clientsRoute53domainsMod._OperationStatus
@@ -8126,11 +8215,13 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEmrMod._StepExecutionState
        with awsDashSdkLib.clientsEmrMod._StepState
        with awsDashSdkLib.clientsRekognitionMod._StreamProcessorStatus
+       with awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceDeploymentStatus
        with awsDashSdkLib.clientsRedshiftMod._TableRestoreStatusType
        with awsDashSdkLib.clientsDatapipelineMod._TaskStatus
        with awsDashSdkLib.clientsTranscribeserviceMod._TranscriptionJobStatus
        with awsDashSdkLib.clientsEsMod._UpgradeStatus
        with awsDashSdkLib.clientsDevicefarmMod._UploadStatus
+       with awsDashSdkLib.clientsIotthingsgraphMod._UploadStatus
        with awsDashSdkLib.clientsRekognitionMod._VideoJobStatus
        with awsDashSdkLib.clientsTranscribeserviceMod._VocabularyState
        with awsDashSdkLib.clientsApigatewayMod._VpcLinkStatus
@@ -8475,6 +8566,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._CmafManifestDurationFormat
        with awsDashSdkLib.clientsMediaconvertMod._HlsManifestDurationFormat
        with awsDashSdkLib.clientsMedialiveMod._HlsManifestDurationFormat
+  
+  @js.native
+  sealed trait FLOW_TEMPLATE_ID extends js.Object
   
   @js.native
   sealed trait FLUSH_IN_PROGRESS
@@ -9203,6 +9297,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDiscoveryMod._ExportDataFormat
   
   @js.native
+  sealed trait GRAPHQL extends js.Object
+  
+  @js.native
   sealed trait GREATER_THAN
     extends awsDashSdkLib.clientsSsmMod._AssociationFilterOperatorType
        with awsDashSdkLib.clientsBudgetsMod._ComparisonOperator
@@ -9233,6 +9330,14 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._DvbSubDestinationOutlineColor
        with awsDashSdkLib.clientsMediaconvertMod._DvbSubtitleFontColor
        with awsDashSdkLib.clientsMediaconvertMod._DvbSubtitleOutlineColor
+  
+  @js.native
+  sealed trait GREENGRASS
+    extends awsDashSdkLib.clientsIotthingsgraphMod._DeploymentTarget
+  
+  @js.native
+  sealed trait GREENGRASS_GROUP_NAME
+    extends awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceFilterName
   
   @js.native
   sealed trait GRN
@@ -10273,6 +10378,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsClouddirectoryMod._RangeMode
   
   @js.native
+  sealed trait INCOMPLETE
+    extends awsDashSdkLib.clientsSecurityhubMod._StandardsStatus
+  
+  @js.native
   sealed trait INCREASE_DATA_RETENTION
     extends awsDashSdkLib.clientsKinesisvideoMod._UpdateDataRetentionOperation
   
@@ -10409,6 +10518,7 @@ object awsDashSdkLibStrings {
   sealed trait INSTANCE
     extends awsDashSdkLib.clientsServicediscoveryMod._OperationTargetType
        with awsDashSdkLib.clientsLightsailMod._PortInfoSourceType
+       with awsDashSdkLib.clientsDlmMod._ResourceTypeValues
   
   @js.native
   sealed trait `INSTANCE-ATTACH`
@@ -10726,6 +10836,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsComprehendMod._JobStatus
        with awsDashSdkLib.clientsEcrMod._LifecyclePolicyPreviewStatus
        with awsDashSdkLib.clientsSsmMod._MaintenanceWindowExecutionStatus
+       with awsDashSdkLib.clientsIotthingsgraphMod._NamespaceDeletionStatus
        with awsDashSdkLib.clientsOpsworkscmMod._NodeAssociationStatus
        with awsDashSdkLib.clientsRoute53domainsMod._OperationStatus
        with awsDashSdkLib.clientsManagedblockchainMod._ProposalStatus
@@ -10737,6 +10848,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsRedshiftMod._TableRestoreStatusType
        with awsDashSdkLib.clientsTranscribeserviceMod._TranscriptionJobStatus
        with awsDashSdkLib.clientsEsMod._UpgradeStatus
+       with awsDashSdkLib.clientsIotthingsgraphMod._UploadStatus
        with awsDashSdkLib.clientsRekognitionMod._VideoJobStatus
        with awsDashSdkLib.clientsPinpointemailMod._WarmupStatus
        with awsDashSdkLib.clientsSecurityhubMod._WorkflowState
@@ -12515,6 +12627,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDevicefarmMod._DeviceFilterAttribute
   
   @js.native
+  sealed trait MAPPING
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityType
+  
+  @js.native
   sealed trait MAR
     extends awsDashSdkLib.clientsMediaconvertMod._LanguageCode
   
@@ -13371,6 +13487,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NAME
     extends awsDashSdkLib.clientsRekognitionMod._ContentModerationSortBy
+       with awsDashSdkLib.clientsIotthingsgraphMod._EntityFilterName
        with awsDashSdkLib.clientsComprehendmedicalMod._EntitySubType
        with awsDashSdkLib.clientsDatasyncMod._Gid
        with awsDashSdkLib.clientsDiscoveryMod._ImportTaskFilterName
@@ -13384,7 +13501,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NAMESPACE
-    extends awsDashSdkLib.clientsServicediscoveryMod._OperationTargetType
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityFilterName
+       with awsDashSdkLib.clientsServicediscoveryMod._OperationTargetType
   
   @js.native
   sealed trait NAMESPACE_ID
@@ -13782,6 +13900,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NOT_DEFAULT
     extends awsDashSdkLib.clientsMediaconvertMod._AudioDefaultSelection
+  
+  @js.native
+  sealed trait NOT_DEPLOYED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceDeploymentStatus
   
   @js.native
   sealed trait NOT_ELIGIBLE
@@ -14997,6 +15119,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDevicefarmMod._ExecutionStatus
   
   @js.native
+  sealed trait PENDING_DELETE
+    extends awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceDeploymentStatus
+  
+  @js.native
   sealed trait PENDING_DELETION
     extends awsDashSdkLib.clientsFmsMod._AccountRoleStatus
        with awsDashSdkLib.clientsCloudhsmv2Mod._BackupState
@@ -15422,6 +15548,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PROPERTIES
     extends awsDashSdkLib.clientsServicecatalogMod._ResourceAttribute
+  
+  @js.native
+  sealed trait PROPERTY
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityType
   
   @js.native
   sealed trait PROPN
@@ -16247,6 +16377,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsGlacierMod._StorageClass
   
   @js.native
+  sealed trait REFERENCED_ENTITY_ID
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityFilterName
+  
+  @js.native
   sealed trait REFERRER
     extends awsDashSdkLib.clientsShieldMod._AttackPropertyIdentifier
   
@@ -16879,6 +17013,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsStepfunctionsMod._ExecutionStatus
        with awsDashSdkLib.clientsCloudwatchlogsMod._ExportTaskStatusCode
        with awsDashSdkLib.clientsAppstreamMod._FleetState
+       with awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionStatus
        with awsDashSdkLib.clientsCloudhsmMod._HsmStatus
        with awsDashSdkLib.clientsAppstreamMod._ImageBuilderState
        with awsDashSdkLib.clientsEmrMod._InstanceFleetState
@@ -17508,6 +17643,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsIotMod._AuditTaskType
   
   @js.native
+  sealed trait SCHEDULE_NEXT_READY_STEPS_TASK
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
   sealed trait SCHEDULE_TO_CLOSE
     extends awsDashSdkLib.clientsSwfMod._ActivityTaskTimeoutType
   
@@ -17743,6 +17882,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod._SmoothGroupCertificateMode
   
   @js.native
+  sealed trait SEMANTIC_TYPE_PATH
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityFilterName
+  
+  @js.native
   sealed trait SEND
     extends awsDashSdkLib.clientsPinpointemailMod._EventType
        with awsDashSdkLib.clientsMedialiveMod._SmoothGroupStreamManifestBehavior
@@ -17816,6 +17959,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SERVICE
     extends awsDashSdkLib.clientsCostexplorerMod._Dimension
+       with awsDashSdkLib.clientsIotthingsgraphMod._EntityType
        with awsDashSdkLib.clientsServicediscoveryMod._OperationTargetType
        with awsDashSdkLib.clientsEcsMod._PropagateTags
   
@@ -18507,12 +18651,20 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsTransferMod._State
   
   @js.native
+  sealed trait START_FLOW_EXECUTION_TASK
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
   sealed trait START_IN_PROGRESS
     extends awsDashSdkLib.clientsDiscoveryMod._ContinuousExportStatus
   
   @js.native
   sealed trait START_TO_CLOSE
     extends awsDashSdkLib.clientsSwfMod._ActivityTaskTimeoutType
+  
+  @js.native
+  sealed trait STATE
+    extends awsDashSdkLib.clientsIotthingsgraphMod._EntityType
   
   @js.native
   sealed trait STATIC
@@ -18534,11 +18686,16 @@ object awsDashSdkLibStrings {
   sealed trait STATUS
     extends awsDashSdkLib.clientsDiscoveryMod._ImportTaskFilterName
        with awsDashSdkLib.clientsServicediscoveryMod._OperationFilterName
+       with awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceFilterName
        with awsDashSdkLib.clientsIotMod._ThingConnectivityIndexingMode
   
   @js.native
   sealed trait STEADY_STATE
     extends awsDashSdkLib.clientsEcsMod._StabilityStatus
+  
+  @js.native
+  sealed trait STEP_FAILED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
   
   @js.native
   sealed trait STEP_FAILURE
@@ -18547,6 +18704,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait STEP_FUNCTIONS
     extends awsDashSdkLib.clientsSsmMod._MaintenanceWindowTaskType
+  
+  @js.native
+  sealed trait STEP_STARTED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait STEP_SUCCEEDED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
   
   @js.native
   sealed trait STIX
@@ -18727,12 +18892,14 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIamMod._DeletionTaskStatusType
        with awsDashSdkLib.clientsStepfunctionsMod._ExecutionStatus
        with awsDashSdkLib.clientsDiscoveryMod._ExportStatus
+       with awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionStatus
        with awsDashSdkLib.clientsIotMod._JobExecutionStatus
        with awsDashSdkLib.clientsIotjobsdataplaneMod._JobExecutionStatus
        with awsDashSdkLib.clientsGlueMod._JobRunState
        with awsDashSdkLib.clientsTextractMod._JobStatus
        with awsDashSdkLib.clientsBatchMod._JobStatus
        with awsDashSdkLib.clientsGlueMod._LastCrawlStatus
+       with awsDashSdkLib.clientsIotthingsgraphMod._NamespaceDeletionStatus
        with awsDashSdkLib.clientsAthenaMod._QueryExecutionState
        with awsDashSdkLib.clientsServicecatalogMod._RecordStatus
        with awsDashSdkLib.clientsConfigserviceMod._RemediationExecutionState
@@ -18744,6 +18911,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsRedshiftMod._TableRestoreStatusType
        with awsDashSdkLib.clientsEsMod._UpgradeStatus
        with awsDashSdkLib.clientsDevicefarmMod._UploadStatus
+       with awsDashSdkLib.clientsIotthingsgraphMod._UploadStatus
        with awsDashSdkLib.clientsRekognitionMod._VideoJobStatus
   
   @js.native
@@ -18910,6 +19078,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SYSTEM_ORGAN_SITE
     extends awsDashSdkLib.clientsComprehendmedicalMod._EntitySubType
+  
+  @js.native
+  sealed trait SYSTEM_TEMPLATE_ID
+    extends awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceFilterName
   
   @js.native
   sealed trait SYSTEM_USER
@@ -19782,6 +19954,18 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsIotMod._EventType
   
   @js.native
+  sealed trait THING_ACTION_TASK
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait THING_ACTION_TASK_FAILED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
+  sealed trait THING_ACTION_TASK_SUCCEEDED
+    extends awsDashSdkLib.clientsIotthingsgraphMod._FlowExecutionEventType
+  
+  @js.native
   sealed trait THING_GROUP
     extends awsDashSdkLib.clientsIotMod._EventType
        with awsDashSdkLib.clientsIotMod._LogTargetType
@@ -20585,6 +20769,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMedialiveMod._AudioType
   
   @js.native
+  sealed trait UNDEPLOY_IN_PROGRESS
+    extends awsDashSdkLib.clientsIotthingsgraphMod._SystemInstanceDeploymentStatus
+  
+  @js.native
   sealed trait UNDER_CHANGE
     extends awsDashSdkLib.clientsServicecatalogMod._AccessStatus
        with awsDashSdkLib.clientsServicecatalogMod._ProvisionedProductStatus
@@ -21258,6 +21446,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEmrMod._InstanceStateChangeReasonCode
   
   @js.native
+  sealed trait VALIDATION_FAILED extends js.Object
+  
+  @js.native
   sealed trait VALIDATION_IN_PROGRESS
     extends awsDashSdkLib.clientsSmsMod._AppLaunchStatus
        with awsDashSdkLib.clientsSmsMod._AppReplicationStatus
@@ -21461,6 +21652,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VOLUME
     extends awsDashSdkLib.clientsAlexaforbusinessMod._Feature
+       with awsDashSdkLib.clientsDlmMod._ResourceTypeValues
   
   @js.native
   sealed trait VPC
@@ -25179,6 +25371,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsShieldMod._apiVersion
        with awsDashSdkLib.clientsRoute53Mod._apiVersion
        with awsDashSdkLib.clientsRobomakerMod._apiVersion
+       with awsDashSdkLib.clientsIotthingsgraphMod._apiVersion
        with awsDashSdkLib.clientsTranslateMod._apiVersion
        with awsDashSdkLib.clientsCloudhsmMod._apiVersion
        with awsDashSdkLib.clientsCloudwatcheventsMod._apiVersion
@@ -28635,6 +28828,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `2018-09-05`: `2018-09-05` = "2018-09-05".asInstanceOf[`2018-09-05`]
   @scala.inline
+  def `2018-09-06`: `2018-09-06` = "2018-09-06".asInstanceOf[`2018-09-06`]
+  @scala.inline
   def `2018-09-24`: `2018-09-24` = "2018-09-24".asInstanceOf[`2018-09-24`]
   @scala.inline
   def `2018-09-25`: `2018-09-25` = "2018-09-25".asInstanceOf[`2018-09-25`]
@@ -28717,6 +28912,10 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ACCOUNT_SETTINGS: ACCOUNT_SETTINGS = "ACCOUNT_SETTINGS".asInstanceOf[ACCOUNT_SETTINGS]
   @scala.inline
+  def ACKNOWLEDGE_TASK_MESSAGE: ACKNOWLEDGE_TASK_MESSAGE = "ACKNOWLEDGE_TASK_MESSAGE".asInstanceOf[ACKNOWLEDGE_TASK_MESSAGE]
+  @scala.inline
+  def ACTION: ACTION = "ACTION".asInstanceOf[ACTION]
+  @scala.inline
   def ACTION_FAILED: ACTION_FAILED = "ACTION_FAILED".asInstanceOf[ACTION_FAILED]
   @scala.inline
   def ACTION_NEEDED: ACTION_NEEDED = "ACTION_NEEDED".asInstanceOf[ACTION_NEEDED]
@@ -28735,9 +28934,17 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ACTIVITY_CREATION_RATE_EXCEEDED: ACTIVITY_CREATION_RATE_EXCEEDED = "ACTIVITY_CREATION_RATE_EXCEEDED".asInstanceOf[ACTIVITY_CREATION_RATE_EXCEEDED]
   @scala.inline
+  def ACTIVITY_FAILED: ACTIVITY_FAILED = "ACTIVITY_FAILED".asInstanceOf[ACTIVITY_FAILED]
+  @scala.inline
   def ACTIVITY_ID_ALREADY_IN_USE: ACTIVITY_ID_ALREADY_IN_USE = "ACTIVITY_ID_ALREADY_IN_USE".asInstanceOf[ACTIVITY_ID_ALREADY_IN_USE]
   @scala.inline
   def ACTIVITY_ID_UNKNOWN: ACTIVITY_ID_UNKNOWN = "ACTIVITY_ID_UNKNOWN".asInstanceOf[ACTIVITY_ID_UNKNOWN]
+  @scala.inline
+  def ACTIVITY_SCHEDULED: ACTIVITY_SCHEDULED = "ACTIVITY_SCHEDULED".asInstanceOf[ACTIVITY_SCHEDULED]
+  @scala.inline
+  def ACTIVITY_STARTED: ACTIVITY_STARTED = "ACTIVITY_STARTED".asInstanceOf[ACTIVITY_STARTED]
+  @scala.inline
+  def ACTIVITY_SUCCEEDED: ACTIVITY_SUCCEEDED = "ACTIVITY_SUCCEEDED".asInstanceOf[ACTIVITY_SUCCEEDED]
   @scala.inline
   def ACTIVITY_TYPE_DEPRECATED: ACTIVITY_TYPE_DEPRECATED = "ACTIVITY_TYPE_DEPRECATED".asInstanceOf[ACTIVITY_TYPE_DEPRECATED]
   @scala.inline
@@ -29761,6 +29968,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def BOOLEAN: BOOLEAN = "BOOLEAN".asInstanceOf[BOOLEAN]
   @scala.inline
+  def BOOTSTRAP: BOOTSTRAP = "BOOTSTRAP".asInstanceOf[BOOTSTRAP]
+  @scala.inline
   def BOOTSTRAPPING: BOOTSTRAPPING = "BOOTSTRAPPING".asInstanceOf[BOOTSTRAPPING]
   @scala.inline
   def BOOTSTRAP_FAILURE: BOOTSTRAP_FAILURE = "BOOTSTRAP_FAILURE".asInstanceOf[BOOTSTRAP_FAILURE]
@@ -29955,6 +30164,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CANCEL_PENDING: CANCEL_PENDING = "CANCEL_PENDING".asInstanceOf[CANCEL_PENDING]
   @scala.inline
+  def CAPABILITY: CAPABILITY = "CAPABILITY".asInstanceOf[CAPABILITY]
+  @scala.inline
   def CAPABILITY_AUTO_EXPAND: CAPABILITY_AUTO_EXPAND = "CAPABILITY_AUTO_EXPAND".asInstanceOf[CAPABILITY_AUTO_EXPAND]
   @scala.inline
   def CAPABILITY_IAM: CAPABILITY_IAM = "CAPABILITY_IAM".asInstanceOf[CAPABILITY_IAM]
@@ -30068,6 +30279,8 @@ object awsDashSdkLibStrings {
   def CLIPBOARD_COPY_TO_LOCAL_DEVICE: CLIPBOARD_COPY_TO_LOCAL_DEVICE = "CLIPBOARD_COPY_TO_LOCAL_DEVICE".asInstanceOf[CLIPBOARD_COPY_TO_LOCAL_DEVICE]
   @scala.inline
   def CLOSED: CLOSED = "CLOSED".asInstanceOf[CLOSED]
+  @scala.inline
+  def CLOUD: CLOUD = "CLOUD".asInstanceOf[CLOUD]
   @scala.inline
   def CLOUDFORMATION: CLOUDFORMATION = "CLOUDFORMATION".asInstanceOf[CLOUDFORMATION]
   @scala.inline
@@ -30717,6 +30930,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def DELETED: DELETED = "DELETED".asInstanceOf[DELETED]
   @scala.inline
+  def DELETED_IN_TARGET: DELETED_IN_TARGET = "DELETED_IN_TARGET".asInstanceOf[DELETED_IN_TARGET]
+  @scala.inline
   def DELETE_COMPLETE: DELETE_COMPLETE = "DELETE_COMPLETE".asInstanceOf[DELETE_COMPLETE]
   @scala.inline
   def DELETE_DOMAIN: DELETE_DOMAIN = "DELETE_DOMAIN".asInstanceOf[DELETE_DOMAIN]
@@ -30765,6 +30980,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def DEPLOYED: DEPLOYED = "DEPLOYED".asInstanceOf[DEPLOYED]
   @scala.inline
+  def DEPLOYED_IN_TARGET: DEPLOYED_IN_TARGET = "DEPLOYED_IN_TARGET".asInstanceOf[DEPLOYED_IN_TARGET]
+  @scala.inline
   def DEPLOYMENT_FAILURE: DEPLOYMENT_FAILURE = "DEPLOYMENT_FAILURE".asInstanceOf[DEPLOYMENT_FAILURE]
   @scala.inline
   def DEPLOYMENT_GROUP_MISSING: DEPLOYMENT_GROUP_MISSING = "DEPLOYMENT_GROUP_MISSING".asInstanceOf[DEPLOYMENT_GROUP_MISSING]
@@ -30774,6 +30991,8 @@ object awsDashSdkLibStrings {
   def DEPLOYMENT_STOP_ON_ALARM: DEPLOYMENT_STOP_ON_ALARM = "DEPLOYMENT_STOP_ON_ALARM".asInstanceOf[DEPLOYMENT_STOP_ON_ALARM]
   @scala.inline
   def DEPLOYMENT_STOP_ON_REQUEST: DEPLOYMENT_STOP_ON_REQUEST = "DEPLOYMENT_STOP_ON_REQUEST".asInstanceOf[DEPLOYMENT_STOP_ON_REQUEST]
+  @scala.inline
+  def DEPLOY_IN_PROGRESS: DEPLOY_IN_PROGRESS = "DEPLOY_IN_PROGRESS".asInstanceOf[DEPLOY_IN_PROGRESS]
   @scala.inline
   def DEPRECATED: DEPRECATED = "DEPRECATED".asInstanceOf[DEPRECATED]
   @scala.inline
@@ -30811,9 +31030,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def DEVELOPMENT: DEVELOPMENT = "DEVELOPMENT".asInstanceOf[DEVELOPMENT]
   @scala.inline
+  def DEVICE: DEVICE = "DEVICE".asInstanceOf[DEVICE]
+  @scala.inline
   def DEVICE_CERTIFICATE: DEVICE_CERTIFICATE = "DEVICE_CERTIFICATE".asInstanceOf[DEVICE_CERTIFICATE]
   @scala.inline
   def DEVICE_LOG: DEVICE_LOG = "DEVICE_LOG".asInstanceOf[DEVICE_LOG]
+  @scala.inline
+  def DEVICE_MODEL: DEVICE_MODEL = "DEVICE_MODEL".asInstanceOf[DEVICE_MODEL]
+  @scala.inline
+  def DEVICE_MODEL_ID: DEVICE_MODEL_ID = "DEVICE_MODEL_ID".asInstanceOf[DEVICE_MODEL_ID]
   @scala.inline
   def DEVICE_PASSWORD_VERIFIER: DEVICE_PASSWORD_VERIFIER = "DEVICE_PASSWORD_VERIFIER".asInstanceOf[DEVICE_PASSWORD_VERIFIER]
   @scala.inline
@@ -31213,6 +31438,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def EBP_LEGACY: EBP_LEGACY = "EBP_LEGACY".asInstanceOf[EBP_LEGACY]
   @scala.inline
+  def EBS_SNAPSHOT_MANAGEMENT: EBS_SNAPSHOT_MANAGEMENT = "EBS_SNAPSHOT_MANAGEMENT".asInstanceOf[EBS_SNAPSHOT_MANAGEMENT]
+  @scala.inline
   def EC: EC = "EC".asInstanceOf[EC]
   @scala.inline
   def EC2: EC2 = "EC2".asInstanceOf[EC2]
@@ -31337,6 +31564,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ENTITLED: ENTITLED = "ENTITLED".asInstanceOf[ENTITLED]
   @scala.inline
+  def ENUM: ENUM = "ENUM".asInstanceOf[ENUM]
+  @scala.inline
   def EN_US: EN_US = "EN_US".asInstanceOf[EN_US]
   @scala.inline
   def EPO: EPO = "EPO".asInstanceOf[EPO]
@@ -31414,6 +31643,14 @@ object awsDashSdkLibStrings {
   def EXECUTE_SUCCESS: EXECUTE_SUCCESS = "EXECUTE_SUCCESS".asInstanceOf[EXECUTE_SUCCESS]
   @scala.inline
   def EXECUTING: EXECUTING = "EXECUTING".asInstanceOf[EXECUTING]
+  @scala.inline
+  def EXECUTION_ABORTED: EXECUTION_ABORTED = "EXECUTION_ABORTED".asInstanceOf[EXECUTION_ABORTED]
+  @scala.inline
+  def EXECUTION_FAILED: EXECUTION_FAILED = "EXECUTION_FAILED".asInstanceOf[EXECUTION_FAILED]
+  @scala.inline
+  def EXECUTION_STARTED: EXECUTION_STARTED = "EXECUTION_STARTED".asInstanceOf[EXECUTION_STARTED]
+  @scala.inline
+  def EXECUTION_SUCCEEDED: EXECUTION_SUCCEEDED = "EXECUTION_SUCCEEDED".asInstanceOf[EXECUTION_SUCCEEDED]
   @scala.inline
   def EXERCISER_MONKEY_OUTPUT: EXERCISER_MONKEY_OUTPUT = "EXERCISER_MONKEY_OUTPUT".asInstanceOf[EXERCISER_MONKEY_OUTPUT]
   @scala.inline
@@ -31729,6 +31966,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def FLOATING_POINT: FLOATING_POINT = "FLOATING_POINT".asInstanceOf[FLOATING_POINT]
   @scala.inline
+  def FLOW_TEMPLATE_ID: FLOW_TEMPLATE_ID = "FLOW_TEMPLATE_ID".asInstanceOf[FLOW_TEMPLATE_ID]
+  @scala.inline
   def FLUSH_IN_PROGRESS: FLUSH_IN_PROGRESS = "FLUSH_IN_PROGRESS".asInstanceOf[FLUSH_IN_PROGRESS]
   @scala.inline
   def FM: FM = "FM".asInstanceOf[FM]
@@ -32019,6 +32258,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def GRAPHML: GRAPHML = "GRAPHML".asInstanceOf[GRAPHML]
   @scala.inline
+  def GRAPHQL: GRAPHQL = "GRAPHQL".asInstanceOf[GRAPHQL]
+  @scala.inline
   def GREATER_THAN: GREATER_THAN = "GREATER_THAN".asInstanceOf[GREATER_THAN]
   @scala.inline
   def GREATER_THAN_OR_EQUAL: GREATER_THAN_OR_EQUAL = "GREATER_THAN_OR_EQUAL".asInstanceOf[GREATER_THAN_OR_EQUAL]
@@ -32028,6 +32269,10 @@ object awsDashSdkLibStrings {
   def GREATER_THAN_OR_EQUAL_TO: GREATER_THAN_OR_EQUAL_TO = "GREATER_THAN_OR_EQUAL_TO".asInstanceOf[GREATER_THAN_OR_EQUAL_TO]
   @scala.inline
   def GREEN: GREEN = "GREEN".asInstanceOf[GREEN]
+  @scala.inline
+  def GREENGRASS: GREENGRASS = "GREENGRASS".asInstanceOf[GREENGRASS]
+  @scala.inline
+  def GREENGRASS_GROUP_NAME: GREENGRASS_GROUP_NAME = "GREENGRASS_GROUP_NAME".asInstanceOf[GREENGRASS_GROUP_NAME]
   @scala.inline
   def GRN: GRN = "GRN".asInstanceOf[GRN]
   @scala.inline
@@ -32456,6 +32701,8 @@ object awsDashSdkLibStrings {
   def INCLUDE: INCLUDE = "INCLUDE".asInstanceOf[INCLUDE]
   @scala.inline
   def INCLUSIVE: INCLUSIVE = "INCLUSIVE".asInstanceOf[INCLUSIVE]
+  @scala.inline
+  def INCOMPLETE: INCOMPLETE = "INCOMPLETE".asInstanceOf[INCOMPLETE]
   @scala.inline
   def INCREASE_DATA_RETENTION: INCREASE_DATA_RETENTION = "INCREASE_DATA_RETENTION".asInstanceOf[INCREASE_DATA_RETENTION]
   @scala.inline
@@ -33409,6 +33656,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def MANUFACTURER: MANUFACTURER = "MANUFACTURER".asInstanceOf[MANUFACTURER]
   @scala.inline
+  def MAPPING: MAPPING = "MAPPING".asInstanceOf[MAPPING]
+  @scala.inline
   def MAR: MAR = "MAR".asInstanceOf[MAR]
   @scala.inline
   def MARKETPLACE: MARKETPLACE = "MARKETPLACE".asInstanceOf[MARKETPLACE]
@@ -33909,6 +34158,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def NOT_DEFAULT: NOT_DEFAULT = "NOT_DEFAULT".asInstanceOf[NOT_DEFAULT]
   @scala.inline
+  def NOT_DEPLOYED: NOT_DEPLOYED = "NOT_DEPLOYED".asInstanceOf[NOT_DEPLOYED]
+  @scala.inline
   def NOT_ELIGIBLE: NOT_ELIGIBLE = "NOT_ELIGIBLE".asInstanceOf[NOT_ELIGIBLE]
   @scala.inline
   def NOT_EQUAL: NOT_EQUAL = "NOT_EQUAL".asInstanceOf[NOT_EQUAL]
@@ -34407,6 +34658,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PENDING_CONCURRENCY: PENDING_CONCURRENCY = "PENDING_CONCURRENCY".asInstanceOf[PENDING_CONCURRENCY]
   @scala.inline
+  def PENDING_DELETE: PENDING_DELETE = "PENDING_DELETE".asInstanceOf[PENDING_DELETE]
+  @scala.inline
   def PENDING_DELETION: PENDING_DELETION = "PENDING_DELETION".asInstanceOf[PENDING_DELETION]
   @scala.inline
   def PENDING_DEPLOYMENT: PENDING_DEPLOYMENT = "PENDING_DEPLOYMENT".asInstanceOf[PENDING_DEPLOYMENT]
@@ -34588,6 +34841,8 @@ object awsDashSdkLibStrings {
   def PROOF_POINT: PROOF_POINT = "PROOF_POINT".asInstanceOf[PROOF_POINT]
   @scala.inline
   def PROPERTIES: PROPERTIES = "PROPERTIES".asInstanceOf[PROPERTIES]
+  @scala.inline
+  def PROPERTY: PROPERTY = "PROPERTY".asInstanceOf[PROPERTY]
   @scala.inline
   def PROPN: PROPN = "PROPN".asInstanceOf[PROPN]
   @scala.inline
@@ -34940,6 +35195,8 @@ object awsDashSdkLibStrings {
   def REDSHIFT: REDSHIFT = "REDSHIFT".asInstanceOf[REDSHIFT]
   @scala.inline
   def REDUCED_REDUNDANCY: REDUCED_REDUNDANCY = "REDUCED_REDUNDANCY".asInstanceOf[REDUCED_REDUNDANCY]
+  @scala.inline
+  def REFERENCED_ENTITY_ID: REFERENCED_ENTITY_ID = "REFERENCED_ENTITY_ID".asInstanceOf[REFERENCED_ENTITY_ID]
   @scala.inline
   def REFERRER: REFERRER = "REFERRER".asInstanceOf[REFERRER]
   @scala.inline
@@ -35507,6 +35764,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def SCHEDULED_AUDIT_TASK: SCHEDULED_AUDIT_TASK = "SCHEDULED_AUDIT_TASK".asInstanceOf[SCHEDULED_AUDIT_TASK]
   @scala.inline
+  def SCHEDULE_NEXT_READY_STEPS_TASK: SCHEDULE_NEXT_READY_STEPS_TASK = "SCHEDULE_NEXT_READY_STEPS_TASK".asInstanceOf[SCHEDULE_NEXT_READY_STEPS_TASK]
+  @scala.inline
   def SCHEDULE_TO_CLOSE: SCHEDULE_TO_CLOSE = "SCHEDULE_TO_CLOSE".asInstanceOf[SCHEDULE_TO_CLOSE]
   @scala.inline
   def SCHEDULE_TO_START: SCHEDULE_TO_START = "SCHEDULE_TO_START".asInstanceOf[SCHEDULE_TO_START]
@@ -35612,6 +35871,8 @@ object awsDashSdkLibStrings {
   def SELF_CONTAINED: SELF_CONTAINED = "SELF_CONTAINED".asInstanceOf[SELF_CONTAINED]
   @scala.inline
   def SELF_SIGNED: SELF_SIGNED = "SELF_SIGNED".asInstanceOf[SELF_SIGNED]
+  @scala.inline
+  def SEMANTIC_TYPE_PATH: SEMANTIC_TYPE_PATH = "SEMANTIC_TYPE_PATH".asInstanceOf[SEMANTIC_TYPE_PATH]
   @scala.inline
   def SEND: SEND = "SEND".asInstanceOf[SEND]
   @scala.inline
@@ -35945,9 +36206,13 @@ object awsDashSdkLibStrings {
   @scala.inline
   def START_FAILED: START_FAILED = "START_FAILED".asInstanceOf[START_FAILED]
   @scala.inline
+  def START_FLOW_EXECUTION_TASK: START_FLOW_EXECUTION_TASK = "START_FLOW_EXECUTION_TASK".asInstanceOf[START_FLOW_EXECUTION_TASK]
+  @scala.inline
   def START_IN_PROGRESS: START_IN_PROGRESS = "START_IN_PROGRESS".asInstanceOf[START_IN_PROGRESS]
   @scala.inline
   def START_TO_CLOSE: START_TO_CLOSE = "START_TO_CLOSE".asInstanceOf[START_TO_CLOSE]
+  @scala.inline
+  def STATE: STATE = "STATE".asInstanceOf[STATE]
   @scala.inline
   def STATIC: STATIC = "STATIC".asInstanceOf[STATIC]
   @scala.inline
@@ -35959,9 +36224,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def STEADY_STATE: STEADY_STATE = "STEADY_STATE".asInstanceOf[STEADY_STATE]
   @scala.inline
+  def STEP_FAILED: STEP_FAILED = "STEP_FAILED".asInstanceOf[STEP_FAILED]
+  @scala.inline
   def STEP_FAILURE: STEP_FAILURE = "STEP_FAILURE".asInstanceOf[STEP_FAILURE]
   @scala.inline
   def STEP_FUNCTIONS: STEP_FUNCTIONS = "STEP_FUNCTIONS".asInstanceOf[STEP_FUNCTIONS]
+  @scala.inline
+  def STEP_STARTED: STEP_STARTED = "STEP_STARTED".asInstanceOf[STEP_STARTED]
+  @scala.inline
+  def STEP_SUCCEEDED: STEP_SUCCEEDED = "STEP_SUCCEEDED".asInstanceOf[STEP_SUCCEEDED]
   @scala.inline
   def STIX: STIX = "STIX".asInstanceOf[STIX]
   @scala.inline
@@ -36092,6 +36363,8 @@ object awsDashSdkLibStrings {
   def SYSTEM_CLOCK: SYSTEM_CLOCK = "SYSTEM_CLOCK".asInstanceOf[SYSTEM_CLOCK]
   @scala.inline
   def SYSTEM_ORGAN_SITE: SYSTEM_ORGAN_SITE = "SYSTEM_ORGAN_SITE".asInstanceOf[SYSTEM_ORGAN_SITE]
+  @scala.inline
+  def SYSTEM_TEMPLATE_ID: SYSTEM_TEMPLATE_ID = "SYSTEM_TEMPLATE_ID".asInstanceOf[SYSTEM_TEMPLATE_ID]
   @scala.inline
   def SYSTEM_USER: SYSTEM_USER = "SYSTEM_USER".asInstanceOf[SYSTEM_USER]
   @scala.inline
@@ -36461,6 +36734,12 @@ object awsDashSdkLibStrings {
   @scala.inline
   def THING: THING = "THING".asInstanceOf[THING]
   @scala.inline
+  def THING_ACTION_TASK: THING_ACTION_TASK = "THING_ACTION_TASK".asInstanceOf[THING_ACTION_TASK]
+  @scala.inline
+  def THING_ACTION_TASK_FAILED: THING_ACTION_TASK_FAILED = "THING_ACTION_TASK_FAILED".asInstanceOf[THING_ACTION_TASK_FAILED]
+  @scala.inline
+  def THING_ACTION_TASK_SUCCEEDED: THING_ACTION_TASK_SUCCEEDED = "THING_ACTION_TASK_SUCCEEDED".asInstanceOf[THING_ACTION_TASK_SUCCEEDED]
+  @scala.inline
   def THING_GROUP: THING_GROUP = "THING_GROUP".asInstanceOf[THING_GROUP]
   @scala.inline
   def THING_GROUP_HIERARCHY: THING_GROUP_HIERARCHY = "THING_GROUP_HIERARCHY".asInstanceOf[THING_GROUP_HIERARCHY]
@@ -36821,6 +37100,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def UNDEFINED: UNDEFINED = "UNDEFINED".asInstanceOf[UNDEFINED]
   @scala.inline
+  def UNDEPLOY_IN_PROGRESS: UNDEPLOY_IN_PROGRESS = "UNDEPLOY_IN_PROGRESS".asInstanceOf[UNDEPLOY_IN_PROGRESS]
+  @scala.inline
   def UNDER_CHANGE: UNDER_CHANGE = "UNDER_CHANGE".asInstanceOf[UNDER_CHANGE]
   @scala.inline
   def UNDER_MAINTENANCE: UNDER_MAINTENANCE = "UNDER_MAINTENANCE".asInstanceOf[UNDER_MAINTENANCE]
@@ -37090,6 +37371,8 @@ object awsDashSdkLibStrings {
   def VALIDATING: VALIDATING = "VALIDATING".asInstanceOf[VALIDATING]
   @scala.inline
   def VALIDATION_ERROR: VALIDATION_ERROR = "VALIDATION_ERROR".asInstanceOf[VALIDATION_ERROR]
+  @scala.inline
+  def VALIDATION_FAILED: VALIDATION_FAILED = "VALIDATION_FAILED".asInstanceOf[VALIDATION_FAILED]
   @scala.inline
   def VALIDATION_IN_PROGRESS: VALIDATION_IN_PROGRESS = "VALIDATION_IN_PROGRESS".asInstanceOf[VALIDATION_IN_PROGRESS]
   @scala.inline

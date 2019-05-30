@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/forms", "NgFormSelectorWarning")
 @js.native
-class NgFormSelectorWarning ()
-  extends atAngularFormsLib.publicUnderscoreApiMod.NgFormSelectorWarning {
+class NgFormSelectorWarning () extends js.Object {
   def this(ngFormWarning: java.lang.String) = this()
 }
 

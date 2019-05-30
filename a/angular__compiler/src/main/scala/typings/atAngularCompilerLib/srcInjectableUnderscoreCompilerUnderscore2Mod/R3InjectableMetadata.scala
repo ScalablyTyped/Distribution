@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait R3InjectableMetadata extends js.Object {
-  var ctorDeps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] | scala.Null
+  var ctorDeps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] | atAngularCompilerLib.atAngularCompilerLibStrings.invalid | scala.Null
   var name: java.lang.String
   var providedIn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
@@ -27,7 +27,7 @@ object R3InjectableMetadata {
     providedIn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     typeArgumentCount: scala.Double,
-    ctorDeps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null,
+    ctorDeps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] | atAngularCompilerLib.atAngularCompilerLibStrings.invalid = null,
     useClass: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
     useExisting: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
     useFactory: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
@@ -36,7 +36,7 @@ object R3InjectableMetadata {
   ): R3InjectableMetadata = {
     val __obj = js.Dynamic.literal(name = name, providedIn = providedIn, typeArgumentCount = typeArgumentCount)
     __obj.updateDynamic("type")(`type`)
-    if (ctorDeps != null) __obj.updateDynamic("ctorDeps")(ctorDeps)
+    if (ctorDeps != null) __obj.updateDynamic("ctorDeps")(ctorDeps.asInstanceOf[js.Any])
     if (useClass != null) __obj.updateDynamic("useClass")(useClass)
     if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)
     if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory)

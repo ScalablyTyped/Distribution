@@ -19,11 +19,11 @@ trait DescribeMaintenanceWindowExecutionTaskInvocationsRequest extends js.Object
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * The ID of the specific task in the Maintenance Window task that should be retrieved.
+    * The ID of the specific task in the maintenance window task that should be retrieved.
     */
   var TaskId: MaintenanceWindowExecutionTaskId
   /**
-    * The ID of the Maintenance Window execution the task is part of.
+    * The ID of the maintenance window execution the task is part of.
     */
   var WindowExecutionId: MaintenanceWindowExecutionId
 }

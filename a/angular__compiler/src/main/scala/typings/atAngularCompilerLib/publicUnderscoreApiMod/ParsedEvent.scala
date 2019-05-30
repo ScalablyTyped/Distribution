@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ParsedEvent protected ()
   extends atAngularCompilerLib.srcCompilerMod.ParsedEvent {
-  def this(name: java.lang.String, targetOrPhase: java.lang.String, `type`: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.ParsedEventType, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
+  def this(name: java.lang.String, targetOrPhase: java.lang.String, `type`: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.ParsedEventType, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan, handlerSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
 }
 

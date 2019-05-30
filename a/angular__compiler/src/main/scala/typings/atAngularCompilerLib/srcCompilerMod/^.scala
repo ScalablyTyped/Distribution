@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val CONTENT_ATTR: java.lang.String = js.native
   val DEFAULT_INTERPOLATION_CONFIG: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig = js.native
+  val DYNAMIC_TYPE: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.BuiltinType = js.native
   val EOF: atAngularCompilerLib.srcExpressionUnderscoreParserLexerMod.Token = js.native
   val ERROR_COMPONENT_TYPE: atAngularCompilerLib.atAngularCompilerLibStrings.ngComponentType = js.native
   val HOST_ATTR: java.lang.String = js.native
@@ -41,7 +42,10 @@ object ^ extends js.Object {
     metadataResolver: atAngularCompilerLib.srcMetadataUnderscoreResolverMod.CompileMetadataResolver
   ): atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedModules = js.native
   def collectExternalReferences(stmts: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]): js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference] = js.native
-  def compileBaseDefFromMetadata(meta: atAngularCompilerLib.srcRender3ViewCompilerMod.R3BaseRefMetaData): atAngularCompilerLib.Anon_ExpressionType = js.native
+  def compileBaseDefFromMetadata(
+    meta: atAngularCompilerLib.srcRender3ViewCompilerMod.R3BaseRefMetaData,
+    constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool
+  ): atAngularCompilerLib.Anon_ExpressionType = js.native
   def compileComponentFromMetadata(
     meta: atAngularCompilerLib.srcRender3ViewApiMod.R3ComponentMetadata,
     constantPool: atAngularCompilerLib.srcConstantUnderscorePoolMod.ConstantPool,
@@ -76,6 +80,26 @@ object ^ extends js.Object {
   def debugOutputAstAsTypeScript(ast: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Type): java.lang.String = js.native
   def debugOutputAstAsTypeScript(ast: js.Array[_]): java.lang.String = js.native
   def findNode(nodes: js.Array[atAngularCompilerLib.srcMlUnderscoreParserAstMod.Node], position: scala.Double): atAngularCompilerLib.srcMlUnderscoreParserAstMod.HtmlAstPath = js.native
+  def findStaticQueryIds(
+    nodes: js.Array[
+      atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst
+    ]
+  ): stdLib.Map[
+    atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst, 
+    atAngularCompilerLib.srcViewUnderscoreCompilerViewUnderscoreCompilerMod.StaticAndDynamicQueryIds
+  ] = js.native
+  def findStaticQueryIds(
+    nodes: js.Array[
+      atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst
+    ],
+    result: stdLib.Map[
+      atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst, 
+      atAngularCompilerLib.srcViewUnderscoreCompilerViewUnderscoreCompilerMod.StaticAndDynamicQueryIds
+    ]
+  ): stdLib.Map[
+    atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst, 
+    atAngularCompilerLib.srcViewUnderscoreCompilerViewUnderscoreCompilerMod.StaticAndDynamicQueryIds
+  ] = js.native
   def flatten[T](list: js.Array[T | js.Array[T]]): js.Array[T] = js.native
   def formattedError(chain: atAngularCompilerLib.srcAotFormattedUnderscoreErrorMod.FormattedMessageChain): atAngularCompilerLib.srcAotFormattedUnderscoreErrorMod.FormattedError = js.native
   def getHtmlTagDefinition(tagName: java.lang.String): atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreTagsMod.HtmlTagDefinition = js.native
@@ -87,6 +111,7 @@ object ^ extends js.Object {
   def identifierModuleUrl(compileIdentifier: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata): java.lang.String = js.native
   def identifierName(): java.lang.String | scala.Null = js.native
   def identifierName(compileIdentifier: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata): java.lang.String | scala.Null = js.native
+  def isEmptyExpression(ast: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST): scala.Boolean = js.native
   def isFormattedError(error: stdLib.Error): /* is @angular/compiler.@angular/compiler/src/aot/formatted_error.FormattedError */ scala.Boolean = js.native
   def isIdentifier(input: java.lang.String): scala.Boolean = js.native
   def isLoweredSymbol(name: java.lang.String): scala.Boolean = js.native
@@ -95,12 +120,11 @@ object ^ extends js.Object {
   def isNgTemplate(tagName: java.lang.String): scala.Boolean = js.native
   def isQuote(code: scala.Double): scala.Boolean = js.native
   def isSyntaxError(error: stdLib.Error): scala.Boolean = js.native
-  def jitExpression(
-    `def`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
-    context: org.scalablytyped.runtime.StringDictionary[js.Any],
-    sourceUrl: java.lang.String,
-    preStatements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
-  ): js.Any = js.native
+  def literalMap(values: js.Array[atAngularCompilerLib.Anon_Key]): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralMapExpr = js.native
+  def literalMap(
+    values: js.Array[atAngularCompilerLib.Anon_Key],
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.MapType
+  ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralMapExpr = js.native
   def makeBindingParser(): atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser = js.native
   def makeBindingParser(
     interpolationConfig: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig
@@ -108,7 +132,11 @@ object ^ extends js.Object {
   def mergeAnalyzedFiles(analyzedFiles: js.Array[atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedFile]): atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedModules = js.native
   def mergeNsAndName(prefix: java.lang.String, localName: java.lang.String): java.lang.String = js.native
   def ngModuleJitUrl(moduleMeta: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileNgModuleMetadata): java.lang.String = js.native
-  def parseHostBindings(host: org.scalablytyped.runtime.StringDictionary[java.lang.String]): atAngularCompilerLib.Anon_Attributes = js.native
+  def parseHostBindings(
+    host: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
+    ]
+  ): atAngularCompilerLib.srcRender3ViewCompilerMod.ParsedHostBindings = js.native
   def parseTemplate(template: java.lang.String, templateUrl: java.lang.String): atAngularCompilerLib.Anon_Errors = js.native
   def parseTemplate(
     template: java.lang.String,
@@ -120,6 +148,7 @@ object ^ extends js.Object {
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Boolean, defaultSetting: scala.Boolean): scala.Boolean = js.native
   def preserveWhitespacesDefault(preserveWhitespacesOption: scala.Null, defaultSetting: scala.Boolean): scala.Boolean = js.native
   def publishFacade(global: js.Any): scala.Unit = js.native
+  def r3JitTypeSourceSpan(kind: java.lang.String, typeName: java.lang.String, sourceUrl: java.lang.String): atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan = js.native
   def removeSummaryDuplicates[T /* <: atAngularCompilerLib.Anon_TypeCompileTypeMetadata */](items: js.Array[T]): js.Array[T] = js.native
   def rendererTypeName(compType: js.Any): java.lang.String = js.native
   def sanitizeIdentifier(name: java.lang.String): java.lang.String = js.native
@@ -129,6 +158,12 @@ object ^ extends js.Object {
   ): java.lang.String = js.native
   def splitClasses(classAttrValue: java.lang.String): js.Array[java.lang.String] = js.native
   def splitNsName(elementName: java.lang.String): js.Tuple2[java.lang.String | scala.Null, java.lang.String] = js.native
+  def staticViewQueryIds(
+    nodeStaticQueryIds: stdLib.Map[
+      atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.TemplateAst, 
+      atAngularCompilerLib.srcViewUnderscoreCompilerViewUnderscoreCompilerMod.StaticAndDynamicQueryIds
+    ]
+  ): atAngularCompilerLib.srcViewUnderscoreCompilerViewUnderscoreCompilerMod.StaticAndDynamicQueryIds = js.native
   def syntaxError(msg: java.lang.String): stdLib.Error = js.native
   def syntaxError(
     msg: java.lang.String,
@@ -169,6 +204,10 @@ object ^ extends js.Object {
   ): atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan = js.native
   def unescapeIdentifier(identifier: java.lang.String): java.lang.String = js.native
   def unwrapResolvedMetadata(metadata: js.Any): js.Any = js.native
+  def verifyHostBindings(
+    bindings: atAngularCompilerLib.srcRender3ViewCompilerMod.ParsedHostBindings,
+    sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan
+  ): js.Array[atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseError] = js.native
   def viewClassName(compType: js.Any, embeddedTemplateIndex: scala.Double): java.lang.String = js.native
   def visitAll(
     visitor: atAngularCompilerLib.srcMlUnderscoreParserAstMod.Visitor,

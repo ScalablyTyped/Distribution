@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFilterElement interface provides access to the properties of <filter> elements, as well as methods to manipulate them. */
+/** Provides access to the properties of <filter> elements, as well as methods to manipulate them. */
 @js.native
 trait SVGFilterElement
   extends SVGElement
@@ -51,6 +51,8 @@ class SVGFilterElementCls () extends SVGFilterElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val href: SVGAnimatedString = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

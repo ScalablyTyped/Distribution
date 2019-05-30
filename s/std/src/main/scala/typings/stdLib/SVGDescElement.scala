@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGDescElement interface corresponds to the <desc> element. */
+/** Corresponds to the <desc> element. */
 @js.native
 trait SVGDescElement extends SVGElement
 
@@ -14,6 +14,8 @@ trait SVGDescElement extends SVGElement
 class SVGDescElementCls () extends SVGDescElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

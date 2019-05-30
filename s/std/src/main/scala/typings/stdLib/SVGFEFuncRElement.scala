@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEFuncRElement interface corresponds to the <feFuncR> element. */
+/** Corresponds to the <feFuncR> element. */
 @js.native
 trait SVGFEFuncRElement extends SVGComponentTransferFunctionElement
 
@@ -14,6 +14,8 @@ trait SVGFEFuncRElement extends SVGComponentTransferFunctionElement
 class SVGFEFuncRElementCls () extends SVGFEFuncRElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

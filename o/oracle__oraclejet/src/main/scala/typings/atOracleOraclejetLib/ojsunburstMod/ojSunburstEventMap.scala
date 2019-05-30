@@ -79,7 +79,7 @@ object ojSunburstEventMap {
     animationiteration: stdLib.AnimationEvent,
     animationstart: stdLib.AnimationEvent,
     asChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
-    auxclick: stdLib.Event,
+    auxclick: stdLib.MouseEvent,
     blur: stdLib.FocusEvent,
     cancel: stdLib.Event,
     canplay: stdLib.Event,

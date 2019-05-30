@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeMaintenanceWindowsRequest extends js.Object {
   /**
-    * Optional filters used to narrow down the scope of the returned Maintenance Windows. Supported filter keys are Name and Enabled.
+    * Optional filters used to narrow down the scope of the returned maintenance windows. Supported filter keys are Name and Enabled.
     */
   var Filters: js.UndefOr[MaintenanceWindowFilterList] = js.undefined
   /**

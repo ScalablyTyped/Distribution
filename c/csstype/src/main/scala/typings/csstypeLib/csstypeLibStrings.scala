@@ -14,7 +14,9 @@ object csstypeLibStrings {
   sealed trait `-moz-fit-content`
     extends csstypeLib.csstypeMod._BlockSizeProperty[js.Any]
        with csstypeLib.csstypeMod._InlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxHeightProperty[js.Any]
        with csstypeLib.csstypeMod._MaxInlineSizeProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxWidthProperty[js.Any]
        with csstypeLib.csstypeMod._MinHeightProperty[js.Any]
        with csstypeLib.csstypeMod._MinInlineSizeProperty[js.Any]
        with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
@@ -213,7 +215,9 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait `-webkit-fit-content`
-    extends csstypeLib.csstypeMod._MinHeightProperty[js.Any]
+    extends csstypeLib.csstypeMod._MaxHeightProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxWidthProperty[js.Any]
+       with csstypeLib.csstypeMod._MinHeightProperty[js.Any]
        with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
        with csstypeLib.csstypeMod._WidthProperty[js.Any]
   
@@ -442,6 +446,10 @@ object csstypeLibStrings {
   @js.native
   sealed trait `::grammar-error`
     extends csstypeLib.csstypeMod.SimplePseudos
+  
+  @js.native
+  sealed trait `::part`
+    extends csstypeLib.csstypeMod.AdvancedPseudos
   
   @js.native
   sealed trait `::placeholder`
@@ -2727,6 +2735,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.BreakBeforeProperty
        with csstypeLib.csstypeMod.PageBreakAfterProperty
        with csstypeLib.csstypeMod.PageBreakBeforeProperty
+       with csstypeLib.csstypeMod.ScrollSnapStopProperty
   
   @js.native
   sealed trait antiquewhite
@@ -2842,8 +2851,6 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._OffsetRotateProperty
        with csstypeLib.csstypeMod._OutlineProperty[js.Any]
        with csstypeLib.csstypeMod._OutlineStyleProperty
-       with csstypeLib.csstypeMod._OverflowBlockProperty
-       with csstypeLib.csstypeMod._OverflowInlineProperty
        with csstypeLib.csstypeMod._OverflowProperty
        with csstypeLib.csstypeMod._OverscrollBehaviorProperty
        with csstypeLib.csstypeMod._PlaceSelfProperty
@@ -3206,8 +3213,6 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
        with csstypeLib.csstypeMod._BlockOverflowProperty
-       with csstypeLib.csstypeMod._OverflowBlockProperty
-       with csstypeLib.csstypeMod._OverflowInlineProperty
        with csstypeLib.csstypeMod._OverflowProperty
        with csstypeLib.csstypeMod._TextOverflowProperty
   
@@ -3891,8 +3896,6 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
        with csstypeLib.csstypeMod.VisibilityProperty
-       with csstypeLib.csstypeMod._OverflowBlockProperty
-       with csstypeLib.csstypeMod._OverflowInlineProperty
        with csstypeLib.csstypeMod._OverflowProperty
   
   @js.native
@@ -4060,7 +4063,8 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait intrinsic
-    extends csstypeLib.csstypeMod._MaxWidthProperty[js.Any]
+    extends csstypeLib.csstypeMod._MaxHeightProperty[js.Any]
+       with csstypeLib.csstypeMod._MaxWidthProperty[js.Any]
        with csstypeLib.csstypeMod._MinHeightProperty[js.Any]
        with csstypeLib.csstypeMod._MinWidthProperty[js.Any]
        with csstypeLib.csstypeMod._WidthProperty[js.Any]
@@ -4896,6 +4900,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.LineBreakProperty
        with csstypeLib.csstypeMod.MozUserFocusProperty
        with csstypeLib.csstypeMod.OverflowWrapProperty
+       with csstypeLib.csstypeMod.ScrollSnapStopProperty
        with csstypeLib.csstypeMod.UnicodeBidiProperty
        with csstypeLib.csstypeMod.WhiteSpaceProperty
        with csstypeLib.csstypeMod.WordBreakProperty
@@ -5532,8 +5537,6 @@ object csstypeLibStrings {
     extends csstypeLib.csstypeMod.Attachment
        with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
-       with csstypeLib.csstypeMod._OverflowBlockProperty
-       with csstypeLib.csstypeMod._OverflowInlineProperty
        with csstypeLib.csstypeMod._OverflowProperty
   
   @js.native
@@ -6306,8 +6309,6 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.OverflowYProperty
        with csstypeLib.csstypeMod.PointerEventsProperty
        with csstypeLib.csstypeMod.VisibilityProperty
-       with csstypeLib.csstypeMod._OverflowBlockProperty
-       with csstypeLib.csstypeMod._OverflowInlineProperty
        with csstypeLib.csstypeMod._OverflowProperty
   
   @js.native
@@ -6623,6 +6624,8 @@ object csstypeLibStrings {
   def `::first-line`: `::first-line` = "::first-line".asInstanceOf[`::first-line`]
   @scala.inline
   def `::grammar-error`: `::grammar-error` = "::grammar-error".asInstanceOf[`::grammar-error`]
+  @scala.inline
+  def `::part`: `::part` = "::part".asInstanceOf[`::part`]
   @scala.inline
   def `::placeholder`: `::placeholder` = "::placeholder".asInstanceOf[`::placeholder`]
   @scala.inline

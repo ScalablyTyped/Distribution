@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetMembersRequest extends js.Object {
   /**
-    * A list of account IDs for the Security Hub member accounts on which you want to return the details. 
+    * A list of account IDs for the Security Hub member accounts that you want to return the details for. 
     */
   var AccountIds: AccountIdList
 }

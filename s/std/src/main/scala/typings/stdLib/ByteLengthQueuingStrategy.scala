@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The ByteLengthQueuingStrategy interface of the the Streams API provides a built-in byte length queuing strategy that can be used when constructing streams. */
+/** An interface of the Streams API provides a built-in byte length queuing strategy that can be used when constructing streams. */
 trait ByteLengthQueuingStrategy extends QueuingStrategy[ArrayBufferView] {
   @JSName("highWaterMark")
   var highWaterMark_ByteLengthQueuingStrategy: scala.Double

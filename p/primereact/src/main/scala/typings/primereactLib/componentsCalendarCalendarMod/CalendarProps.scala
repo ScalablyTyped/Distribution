@@ -55,6 +55,7 @@ trait CalendarProps extends js.Object {
   var showOtherMonths: js.UndefOr[scala.Boolean] = js.undefined
   var showSeconds: js.UndefOr[scala.Boolean] = js.undefined
   var showTime: js.UndefOr[scala.Boolean] = js.undefined
+  var showWeek: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PropTypes.bool */ js.Any
   var stepHour: js.UndefOr[scala.Double] = js.undefined
   var stepMinute: js.UndefOr[scala.Double] = js.undefined
   var stepSecond: js.UndefOr[scala.Double] = js.undefined
@@ -75,6 +76,7 @@ trait CalendarProps extends js.Object {
 object CalendarProps {
   @scala.inline
   def apply(
+    showWeek: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PropTypes.bool */ js.Any,
     appendTo: js.Any = null,
     autoZIndex: js.UndefOr[scala.Boolean] = js.undefined,
     baseZIndex: scala.Int | scala.Double = null,
@@ -140,7 +142,7 @@ object CalendarProps {
     yearNavigator: js.UndefOr[scala.Boolean] = js.undefined,
     yearRange: java.lang.String = null
   ): CalendarProps = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(showWeek = showWeek)
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
     if (!js.isUndefined(autoZIndex)) __obj.updateDynamic("autoZIndex")(autoZIndex)
     if (baseZIndex != null) __obj.updateDynamic("baseZIndex")(baseZIndex.asInstanceOf[js.Any])

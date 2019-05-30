@@ -75,7 +75,6 @@ object VendorProperties {
     MozUserModify: MozUserModifyProperty = null,
     MozUserSelect: UserSelectProperty = null,
     MozWindowDragging: MozWindowDraggingProperty = null,
-    MozWindowShadow: MozWindowShadowProperty = null,
     OObjectFit: ObjectFitProperty = null,
     OObjectPosition: ObjectPositionProperty[TLength] = null,
     OTabSize: TabSizeProperty[TLength] = null,
@@ -192,6 +191,7 @@ object VendorProperties {
     WebkitUserModify: WebkitUserModifyProperty = null,
     WebkitUserSelect: UserSelectProperty = null,
     WebkitWritingMode: WritingModeProperty = null,
+    WebkitmaskSize: MaskSizeProperty[TLength] = null,
     msAccelerator: MsAcceleratorProperty = null,
     msAlignSelf: AlignSelfProperty = null,
     msBlockProgression: MsBlockProgressionProperty = null,
@@ -235,6 +235,14 @@ object VendorProperties {
     msScrollSnapX: GlobalsString = null,
     msScrollSnapY: GlobalsString = null,
     msScrollTranslation: MsScrollTranslationProperty = null,
+    msScrollbar3dlightColor: MsScrollbar3dlightColorProperty = null,
+    msScrollbarArrowColor: MsScrollbarArrowColorProperty = null,
+    msScrollbarBaseColor: MsScrollbarBaseColorProperty = null,
+    msScrollbarDarkshadowColor: MsScrollbarDarkshadowColorProperty = null,
+    msScrollbarFaceColor: MsScrollbarFaceColorProperty = null,
+    msScrollbarHighlightColor: MsScrollbarHighlightColorProperty = null,
+    msScrollbarShadowColor: MsScrollbarShadowColorProperty = null,
+    msScrollbarTrackColor: MsScrollbarTrackColorProperty = null,
     msTextAutospace: MsTextAutospaceProperty = null,
     msTextCombineHorizontal: TextCombineUprightProperty = null,
     msTextOverflow: TextOverflowProperty = null,
@@ -314,7 +322,6 @@ object VendorProperties {
     if (MozUserModify != null) __obj.updateDynamic("MozUserModify")(MozUserModify)
     if (MozUserSelect != null) __obj.updateDynamic("MozUserSelect")(MozUserSelect)
     if (MozWindowDragging != null) __obj.updateDynamic("MozWindowDragging")(MozWindowDragging)
-    if (MozWindowShadow != null) __obj.updateDynamic("MozWindowShadow")(MozWindowShadow)
     if (OObjectFit != null) __obj.updateDynamic("OObjectFit")(OObjectFit)
     if (OObjectPosition != null) __obj.updateDynamic("OObjectPosition")(OObjectPosition.asInstanceOf[js.Any])
     if (OTabSize != null) __obj.updateDynamic("OTabSize")(OTabSize.asInstanceOf[js.Any])
@@ -431,6 +438,7 @@ object VendorProperties {
     if (WebkitUserModify != null) __obj.updateDynamic("WebkitUserModify")(WebkitUserModify)
     if (WebkitUserSelect != null) __obj.updateDynamic("WebkitUserSelect")(WebkitUserSelect)
     if (WebkitWritingMode != null) __obj.updateDynamic("WebkitWritingMode")(WebkitWritingMode)
+    if (WebkitmaskSize != null) __obj.updateDynamic("WebkitmaskSize")(WebkitmaskSize.asInstanceOf[js.Any])
     if (msAccelerator != null) __obj.updateDynamic("msAccelerator")(msAccelerator)
     if (msAlignSelf != null) __obj.updateDynamic("msAlignSelf")(msAlignSelf.asInstanceOf[js.Any])
     if (msBlockProgression != null) __obj.updateDynamic("msBlockProgression")(msBlockProgression)
@@ -474,6 +482,14 @@ object VendorProperties {
     if (msScrollSnapX != null) __obj.updateDynamic("msScrollSnapX")(msScrollSnapX.asInstanceOf[js.Any])
     if (msScrollSnapY != null) __obj.updateDynamic("msScrollSnapY")(msScrollSnapY.asInstanceOf[js.Any])
     if (msScrollTranslation != null) __obj.updateDynamic("msScrollTranslation")(msScrollTranslation)
+    if (msScrollbar3dlightColor != null) __obj.updateDynamic("msScrollbar3dlightColor")(msScrollbar3dlightColor.asInstanceOf[js.Any])
+    if (msScrollbarArrowColor != null) __obj.updateDynamic("msScrollbarArrowColor")(msScrollbarArrowColor.asInstanceOf[js.Any])
+    if (msScrollbarBaseColor != null) __obj.updateDynamic("msScrollbarBaseColor")(msScrollbarBaseColor.asInstanceOf[js.Any])
+    if (msScrollbarDarkshadowColor != null) __obj.updateDynamic("msScrollbarDarkshadowColor")(msScrollbarDarkshadowColor.asInstanceOf[js.Any])
+    if (msScrollbarFaceColor != null) __obj.updateDynamic("msScrollbarFaceColor")(msScrollbarFaceColor.asInstanceOf[js.Any])
+    if (msScrollbarHighlightColor != null) __obj.updateDynamic("msScrollbarHighlightColor")(msScrollbarHighlightColor.asInstanceOf[js.Any])
+    if (msScrollbarShadowColor != null) __obj.updateDynamic("msScrollbarShadowColor")(msScrollbarShadowColor.asInstanceOf[js.Any])
+    if (msScrollbarTrackColor != null) __obj.updateDynamic("msScrollbarTrackColor")(msScrollbarTrackColor.asInstanceOf[js.Any])
     if (msTextAutospace != null) __obj.updateDynamic("msTextAutospace")(msTextAutospace)
     if (msTextCombineHorizontal != null) __obj.updateDynamic("msTextCombineHorizontal")(msTextCombineHorizontal.asInstanceOf[js.Any])
     if (msTextOverflow != null) __obj.updateDynamic("msTextOverflow")(msTextOverflow.asInstanceOf[js.Any])

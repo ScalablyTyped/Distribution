@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/forms", "ReactiveFormsModule")
 @js.native
-class ReactiveFormsModule ()
-  extends atAngularFormsLib.publicUnderscoreApiMod.ReactiveFormsModule
+class ReactiveFormsModule () extends js.Object
 
 /* static members */
 @JSImport("@angular/forms", "ReactiveFormsModule")
@@ -22,6 +21,6 @@ object ReactiveFormsModule extends js.Object {
     * * `warnOnNgModelWithFormControl` Configures when to emit a warning when an `ngModel`
     * binding is used with reactive form directives.
     */
-  def withConfig(opts: atAngularFormsLib.Anon_AlwaysNever): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularFormsLib.srcFormUnderscoreProvidersMod.ReactiveFormsModule] = js.native
+  def withConfig(opts: atAngularFormsLib.Anon_AlwaysNever): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[atAngularFormsLib.atAngularFormsMod.ReactiveFormsModule] = js.native
 }
 

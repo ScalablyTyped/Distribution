@@ -11,6 +11,10 @@ trait TerminalInfo extends js.Object {
     */
   val ci: scala.Boolean
   /**
+    * Path to the user's shell program.
+    */
+  val shell: java.lang.String
+  /**
     * Whether the terminal is an interactive TTY or not.
     */
   val tty: scala.Boolean
@@ -22,8 +26,8 @@ trait TerminalInfo extends js.Object {
 
 object TerminalInfo {
   @scala.inline
-  def apply(ci: scala.Boolean, tty: scala.Boolean, windows: scala.Boolean): TerminalInfo = {
-    val __obj = js.Dynamic.literal(ci = ci, tty = tty, windows = windows)
+  def apply(ci: scala.Boolean, shell: java.lang.String, tty: scala.Boolean, windows: scala.Boolean): TerminalInfo = {
+    val __obj = js.Dynamic.literal(ci = ci, shell = shell, tty = tty, windows = windows)
   
     __obj.asInstanceOf[TerminalInfo]
   }

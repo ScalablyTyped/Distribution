@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An object implementing the CSSGroupingRule interface represents any CSS at-rule that contains other rules nested within it. */
+/** Any CSS at-rule that contains other rules nested within it. */
 trait CSSGroupingRule extends CSSRule {
   val cssRules: CSSRuleList
   def deleteRule(index: scala.Double): scala.Unit

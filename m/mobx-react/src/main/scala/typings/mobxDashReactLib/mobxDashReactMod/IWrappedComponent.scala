@@ -7,14 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait IWrappedComponent[P] extends js.Object {
   var wrappedComponent: IReactComponent[P]
-  var wrappedInstance: js.UndefOr[reactLib.reactMod.ReactInstance] = js.undefined
 }
 
 object IWrappedComponent {
   @scala.inline
-  def apply[P](wrappedComponent: IReactComponent[P], wrappedInstance: reactLib.reactMod.ReactInstance = null): IWrappedComponent[P] = {
+  def apply[P](wrappedComponent: IReactComponent[P]): IWrappedComponent[P] = {
     val __obj = js.Dynamic.literal(wrappedComponent = wrappedComponent.asInstanceOf[js.Any])
-    if (wrappedInstance != null) __obj.updateDynamic("wrappedInstance")(wrappedInstance.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[IWrappedComponent[P]]
   }
 }

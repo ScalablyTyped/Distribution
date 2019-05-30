@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait BatchImportFindingsResponse extends js.Object {
   /**
-    * The number of findings that cannot be imported.
+    * The number of findings that failed to import.
     */
   var FailedCount: Integer
   /**
-    * The list of the findings that cannot be imported.
+    * The list of the findings that failed to import.
     */
   var FailedFindings: js.UndefOr[ImportFindingsErrorList] = js.undefined
   /**

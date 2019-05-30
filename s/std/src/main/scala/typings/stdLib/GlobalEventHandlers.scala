@@ -16,7 +16,7 @@ trait GlobalEventHandlers extends js.Object {
   var onanimationend: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | scala.Null = js.native
   var onanimationiteration: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | scala.Null = js.native
   var onanimationstart: (js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | scala.Null = js.native
-  var onauxclick: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
+  var onauxclick: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | scala.Null = js.native
   /**
     * Fires when the object loses the input focus.
     * @param ev The focus event.
@@ -368,18 +368,18 @@ trait GlobalEventHandlers extends js.Object {
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1837,18 +1837,18 @@ trait GlobalEventHandlers extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")

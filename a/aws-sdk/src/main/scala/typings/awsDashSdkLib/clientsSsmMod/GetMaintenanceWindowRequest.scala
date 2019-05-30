@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetMaintenanceWindowRequest extends js.Object {
   /**
-    * The ID of the desired Maintenance Window.
+    * The ID of the maintenance window for which you want to retrieve information.
     */
   var WindowId: MaintenanceWindowId
 }

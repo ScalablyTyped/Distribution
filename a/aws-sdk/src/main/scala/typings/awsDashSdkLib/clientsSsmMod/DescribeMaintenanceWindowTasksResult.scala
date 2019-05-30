@@ -11,7 +11,7 @@ trait DescribeMaintenanceWindowTasksResult extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * Information about the tasks in the Maintenance Window.
+    * Information about the tasks in the maintenance window.
     */
   var Tasks: js.UndefOr[MaintenanceWindowTaskList] = js.undefined
 }

@@ -17,6 +17,7 @@ object ^ extends js.Object {
   def indent(): java.lang.String = js.native
   def indent(n: scala.Double): java.lang.String = js.native
   def prettyPath(p: java.lang.String): java.lang.String = js.native
+  def stripAnsi(string: java.lang.String): java.lang.String = js.native
   def wordWrap(msg: java.lang.String, hasWidthIndentationAppend: WordWrapOptions): java.lang.String = js.native
 }
 

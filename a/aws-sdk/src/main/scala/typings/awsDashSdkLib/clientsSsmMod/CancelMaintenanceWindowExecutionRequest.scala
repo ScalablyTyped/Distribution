@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CancelMaintenanceWindowExecutionRequest extends js.Object {
   /**
-    * The ID of the Maintenance Window execution to stop.
+    * The ID of the maintenance window execution to stop.
     */
   var WindowExecutionId: MaintenanceWindowExecutionId
 }

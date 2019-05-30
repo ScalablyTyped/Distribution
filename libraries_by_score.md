@@ -554,6 +554,7 @@
 | 0.8040454553982556 | [wordwrap](./w/wordwrap) | Wrap those words. Show them at what columns to sta
 | 0.8039205592293398 | [dotenv-webpack](./d/dotenv-webpack) | A simple webpack plugin to support dotenv.
 | 0.8039127799383637 | [get-port](./g/get-port) | Get an available port
+| 0.8038732979262541 | [binary-extensions](./b/binary-extensions) | List of binary file extensions
 | 0.8037992489077195 | [react-apollo](./r/react-apollo) | React data container for Apollo Client
 | 0.8035657170021379 | [node-emoji](./n/node-emoji) | simple emoji support for node.js projects
 | 0.8035355572711975 | [emotion-theming](./e/emotion-theming) | A CSS-in-JS theming solution, inspired by styled-c
@@ -1194,6 +1195,7 @@
 | 0.7586575457971836 | [temp-dir](./t/temp-dir) | Get the real path of the system temp directory
 | 0.7586425375087155 | [lodash_dot_sum](./l/lodash_dot_sum) | The lodash method _.sum exported as a module.
 | 0.7585971724889321 | [hash-sum](./h/hash-sum) | Blazing fast unique hash generator
+| 0.7585442128592432 | [rc-drawer](./r/rc-drawer) | drawer component for react
 | 0.7584746392455013 | [sentence-case](./s/sentence-case) | Sentence case a string
 | 0.7584571246996459 | [replacestream](./r/replacestream) | A node.js through stream that does basic streaming
 | 0.7584435226005992 | [lodash_dot_constant](./l/lodash_dot_constant) | The modern build of lodash’s _.constant as a modul
@@ -1920,6 +1922,7 @@
 | 0.718294267194971 | [node-gettext](./n/node-gettext) | A JavaScript implementation of gettext, a localiza
 | 0.7182582380893705 | [normalize-package-data](./n/normalize-package-data) | Normalizes data that can be found in package.json 
 | 0.7182434651188706 | [electron-publish](./e/electron-publish) | Part of 
+| 0.7182348306079495 | [mobx-react-lite](./m/mobx-react-lite) | Lightweight React bindings for MobX based on React
 | 0.718228765017123 | [koa-joi-router](./k/koa-joi-router) | Configurable, input validated routing for koa.
 | 0.7181509878808617 | [waterline](./w/waterline) | An ORM for Node.js and the Sails framework
 | 0.7180957733338605 | [aos](./a/aos) | Animate on scroll library
@@ -2329,6 +2332,7 @@
 | 0.6968981756066432 | [yar](./y/yar) | Cookie jar plugin for Hapi
 | 0.6968858621326055 | [throng](./t/throng) | A simple worker-manager for clustered apps
 | 0.6967079555175266 | [cheap-ruler](./c/cheap-ruler) | A collection of fast approximations to common geog
+| 0.6966793194011422 | [ky](./k/ky) | Tiny and elegant HTTP client based on the browser 
 | 0.6966622923140614 | [rehype-react](./r/rehype-react) | Compile Hast tree to React with remark
 | 0.6966449059187012 | [window-or-global](./w/window-or-global) | Use either the window object in the browser or the
 | 0.6966213970404564 | [fullname](./f/fullname) | Get the fullname of the current user
@@ -3059,7 +3063,6 @@
 | 0.6652573554416863 | [ascii-art](./a/ascii-art) | Ansi codes, figlet fonts, and ascii art. 100% JS
 | 0.665244118579083 | [vue-tel-input](./v/vue-tel-input) | International Telephone Input with Vue
 | 0.6651750796585449 | [crumb](./c/crumb) | CSRF crumb generation and validation plugin
-| 0.6651241055062017 | [grammarkdown](./g/grammarkdown) | Markdown-like DSL for defining syntactic grammars 
 | 0.665121535102387 | [pg-format](./p/pg-format) | Node.js implementation of PostgreSQL's format() to
 | 0.6651137272878562 | [hapi__cookie](./h/hapi__cookie) | Cookie authentication plugin
 | 0.6650540553526563 | [favicons](./f/favicons) | Favicon generator for Node.js
@@ -3858,6 +3861,7 @@
 | 0.6102952355064419 | [atom-mocha-test-runner](./a/atom-mocha-test-runner) | Run your Atom package tests using Mocha
 | 0.6102501513578058 | [bitcore-lib](./b/bitcore-lib) | A pure and powerful JavaScript Bitcoin library.
 | 0.6102148705563804 | [jwt-simple](./j/jwt-simple) | JWT(JSON Web Token) encode and decode module
+| 0.6101020193536455 | [ky-universal](./k/ky-universal) | Use Ky in both Node.js and browsers
 | 0.6097799116180841 | [csw-aas-js](./c/csw-aas-js) | This library is a javascript adapter for csw-aas. 
 | 0.6096922934543529 | [recase](./r/recase) | Deep rekey Objects and Arrays as either camel case
 | 0.6096788668647866 | [postcss-url](./p/postcss-url) | PostCSS plugin to rebase or inline on url().
@@ -4157,7 +4161,6 @@
 | 0.5759710118347608 | [tunnel](./t/tunnel) | Node HTTP/HTTPS Agents for tunneling proxies
 | 0.5757906335332574 | [dayzed](./d/dayzed) | Primitives to build simple, flexible, WAI-ARIA com
 | 0.5756421781968437 | [dicer](./d/dicer) | A very fast streaming multipart parser for node.js
-| 0.5751903205471058 | [tabris](./t/tabris) | Mobile apps with native UIs in JavaScript
 | 0.5751350608111138 | [djv](./d/djv) | dynamic json-schema validator
 | 0.5750593881667232 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co
 | 0.5750321168320068 | [require-directory](./r/require-directory) | Recursively iterates over specified directory, req
@@ -4196,7 +4199,6 @@
 | 0.569807070883184 | [osrm](./o/osrm) | The Open Source Routing Machine is a high performa
 | 0.5696982468421821 | [react-plyr](./r/react-plyr) | A simple, accessible HTML5 media player React Comp
 | 0.5696976994618062 | [images](./i/images) | Cross-platform image decoder(webp/png/jpeg/gif) an
-| 0.5696393137343254 | [esfx__cancelable](./e/esfx__cancelable) | A low-level Symbol-based API for defining a common
 | 0.5695884679627609 | [babel-traverse](./b/babel-traverse) | The Babel Traverse module maintains the overall tr
 | 0.5695706211756228 | [pixi-spine](./p/pixi-spine) | Spine implementation for pixi v^3 and v^4
 | 0.5694709671664616 | [crypto-js](./c/crypto-js) | JavaScript library of crypto standards.
@@ -4223,7 +4225,6 @@
 | 0.5658870605851297 | [friendly-errors-webpack-p](./f/friendly-errors-webpack-plugin) | Recognizes certain classes of webpack errors and c
 | 0.5658281754814082 | [node-gcm](./n/node-gcm) | Easy interface for Google's Cloud Messaging servic
 | 0.5657547511249157 | [babel-generator](./b/babel-generator) | Turns an AST into code.
-| 0.5655405357477384 | [esfx__disposable](./e/esfx__disposable) | A low-level API for defining explicit resource man
 | 0.5654567145626752 | [libxmljs](./l/libxmljs) | libxml bindings for v8 javascript engine
 | 0.5653506485745806 | [node-zookeeper-client](./n/node-zookeeper-client) | A pure Javascript ZooKeeper client for Node.js.
 | 0.5652804634549196 | [nightmare](./n/nightmare) | A high-level browser automation library.
@@ -4650,7 +4651,6 @@
 | 0.49497412658042994 | [torrent-stream](./t/torrent-stream) | Low level streaming torrent client that exposes fi
 | 0.4949259554595935 | [requestidlecallback](./r/requestidlecallback) | A polyfill for the requestIdleCallback.
 | 0.49437134795852133 | [jackrabbit](./j/jackrabbit) | Easy RabbitMQ for node
-| 0.4940326778994787 | [ecmarkup](./e/ecmarkup) | Custom element definitions and core utilities for 
 | 0.4940268537012061 | [protractor-http-mock](./p/protractor-http-mock) | Mock HTTP calls in your protractor specs.
 | 0.4937527311889099 | [jsftp](./j/jsftp) | A sane FTP client implementation for NodeJS
 | 0.49324970574335314 | [react-resizable](./r/react-resizable) | A component that is resizable with handles.
@@ -4825,7 +4825,6 @@
 | 0.46376690101277573 | [qwest](./q/qwest) | Ajax library with XHR2, promises and request limit
 | 0.4635605953915495 | [react-toastr](./r/react-toastr) | React.js toastr component
 | 0.4635569916866934 | [leaflet-mouse-position](./l/leaflet-mouse-position) | An npm wrapper for Ardhi Lukianto’s Leaflet.MouseP
-| 0.4633369043579578 | [prex](./p/prex) | Async coordination primitives and extensions on to
 | 0.46326602306431786 | [ontime](./o/ontime) | a human-readable cron
 | 0.4631806749429655 | [concat-map](./c/concat-map) | concatenative mapdashery
 | 0.4630271607426235 | [worker-rpc](./w/worker-rpc) | A simple RPC layer for communicating with web work
@@ -5039,6 +5038,7 @@
 | 0.43268901378031044 | [xmlserializer](./x/xmlserializer) | Serializes a document to XML/XHTML
 | 0.4323645491235273 | [millisecond](./m/millisecond) | Convert time strings to milliseconds
 | 0.43233069643529254 | [xmlrpc](./x/xmlrpc) | A pure JavaScript XML-RPC client and server.
+| 0.43220201721971374 | [esfx__internal-tag](./e/esfx__internal-tag) | This package provides internal utilities for &
 | 0.4321660076300793 | [detect-it](./d/detect-it) | Detect if a device is mouse only, touch only, or h
 | 0.43200739904884256 | [google-translate-api](./g/google-translate-api) | A free and unlimited API for Google Translate
 | 0.43193787562443636 | [fortawesome__free-solid-s](./f/fortawesome__free-solid-svg-icons) | The iconic font, CSS, and SVG framework

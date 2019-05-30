@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGMetadataElement interface corresponds to the <metadata> element. */
+/** Corresponds to the <metadata> element. */
 @js.native
 trait SVGMetadataElement extends SVGElement
 
@@ -14,6 +14,8 @@ trait SVGMetadataElement extends SVGElement
 class SVGMetadataElementCls () extends SVGMetadataElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

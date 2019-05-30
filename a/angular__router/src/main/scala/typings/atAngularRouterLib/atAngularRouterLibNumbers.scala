@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 object atAngularRouterLibNumbers {
   @js.native
   sealed trait `false`
-    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
+    extends atAngularRouterLib.atAngularRouterMod.InitialNavigation
   
   @js.native
   sealed trait `true`
-    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
+    extends atAngularRouterLib.atAngularRouterMod.InitialNavigation
   
   @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]

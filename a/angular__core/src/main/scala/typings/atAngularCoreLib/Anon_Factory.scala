@@ -5,19 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Factory extends js.Object {
-  var imports: js.UndefOr[js.Array[_]] = js.undefined
-  var providers: js.UndefOr[js.Array[_]] = js.undefined
-  def factory(): js.Any
+trait Anon_Factory[T] extends js.Object {
+  var providedIn: js.UndefOr[
+    atAngularCoreLib.atAngularCoreMod.Type[_] | atAngularCoreLib.atAngularCoreLibStrings.root | scala.Null
+  ] = js.undefined
+  def factory(): T
 }
 
 object Anon_Factory {
   @scala.inline
-  def apply(factory: () => js.Any, imports: js.Array[_] = null, providers: js.Array[_] = null): Anon_Factory = {
+  def apply[T](
+    factory: () => T,
+    providedIn: atAngularCoreLib.atAngularCoreMod.Type[_] | atAngularCoreLib.atAngularCoreLibStrings.root = null
+  ): Anon_Factory[T] = {
     val __obj = js.Dynamic.literal(factory = js.Any.fromFunction0(factory))
-    if (imports != null) __obj.updateDynamic("imports")(imports)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
-    __obj.asInstanceOf[Anon_Factory]
+    if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Factory[T]]
   }
 }
 

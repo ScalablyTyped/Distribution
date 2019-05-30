@@ -6,93 +6,123 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Branches extends js.Object {
-  var Branches: gitlabLib.distEs5ServicesMod.Branches
-  var CommitDiscussions: gitlabLib.distEs5ServicesMod.CommitDiscussions
-  var Commits: gitlabLib.distEs5ServicesMod.Commits
-  var DeployKeys: gitlabLib.distEs5ServicesMod.DeployKeys
-  var Deployments: gitlabLib.distEs5ServicesMod.Deployments
-  var Environments: gitlabLib.distEs5ServicesMod.Environments
-  var IssueAwardEmojis: gitlabLib.distEs5ServicesMod.IssueAwardEmojis
-  var IssueDiscussions: gitlabLib.distEs5ServicesMod.IssueDiscussions
-  var IssueNotes: gitlabLib.distEs5ServicesMod.IssueNotes
-  var Issues: gitlabLib.distEs5ServicesMod.Issues
-  var Jobs: gitlabLib.distEs5ServicesMod.Jobs
-  var Labels: gitlabLib.distEs5ServicesMod.Labels
-  var MergeRequestAwardEmojis: gitlabLib.distEs5ServicesMod.MergeRequestAwardEmojis
-  var MergeRequestDiscussions: gitlabLib.distEs5ServicesMod.MergeRequestDiscussions
-  var MergeRequestNotes: gitlabLib.distEs5ServicesMod.MergeRequestNotes
-  var MergeRequests: gitlabLib.distEs5ServicesMod.MergeRequests
-  var PipelineScheduleVariables: gitlabLib.distEs5ServicesMod.PipelineScheduleVariables
-  var PipelineSchedules: gitlabLib.distEs5ServicesMod.PipelineSchedules
-  var Pipelines: gitlabLib.distEs5ServicesMod.Pipelines
-  var ProjectAccessRequests: gitlabLib.distEs5ServicesMod.ProjectAccessRequests
-  var ProjectBadges: gitlabLib.distEs5ServicesMod.ProjectBadges
-  var ProjectCustomAttributes: gitlabLib.distEs5ServicesMod.ProjectCustomAttributes
-  var ProjectHooks: gitlabLib.distEs5ServicesMod.ProjectHooks
-  var ProjectImportExport: gitlabLib.distEs5ServicesMod.ProjectImportExport
-  var ProjectIssueBoards: gitlabLib.distEs5ServicesMod.ProjectIssueBoards
-  var ProjectMembers: gitlabLib.distEs5ServicesMod.ProjectMembers
-  var ProjectMilestones: gitlabLib.distEs5ServicesMod.ProjectMilestones
-  var ProjectSnippetAwardEmojis: gitlabLib.distEs5ServicesMod.ProjectSnippetAwardEmojis
-  var ProjectSnippetDiscussions: gitlabLib.distEs5ServicesMod.ProjectSnippetDiscussions
-  var ProjectSnippetNotes: gitlabLib.distEs5ServicesMod.ProjectSnippetNotes
-  var ProjectSnippets: gitlabLib.distEs5ServicesMod.ProjectSnippets
-  var ProjectVariables: gitlabLib.distEs5ServicesMod.ProjectVariables
-  var Projects: gitlabLib.distEs5ServicesMod.Projects
-  var ProtectedBranches: gitlabLib.distEs5ServicesMod.ProtectedBranches
-  var ProtectedTags: gitlabLib.distEs5ServicesMod.ProtectedTags
-  var Repositories: gitlabLib.distEs5ServicesMod.Repositories
-  var RepositoryFiles: gitlabLib.distEs5ServicesMod.RepositoryFiles
-  var Runners: gitlabLib.distEs5ServicesMod.Runners
-  var Services: gitlabLib.distEs5ServicesMod.Services
-  var Tags: gitlabLib.distEs5ServicesMod.Tags
-  var Triggers: gitlabLib.distEs5ServicesMod.Triggers
+  var Branches: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Branches]
+  var CommitDiscussions: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.CommitDiscussions]
+  var Commits: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Commits]
+  var DeployKeys: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.DeployKeys]
+  var Deployments: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Deployments]
+  var Environments: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Environments]
+  var IssueAwardEmojis: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.IssueAwardEmojis]
+  var IssueDiscussions: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.IssueDiscussions]
+  var IssueNotes: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.IssueNotes]
+  var Issues: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Issues]
+  var Jobs: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Jobs]
+  var Labels: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Labels]
+  var MergeRequestAwardEmojis: org.scalablytyped.runtime.Instantiable1[
+    /* options */ BaseServiceOptions, 
+    gitlabLib.distServicesMod.MergeRequestAwardEmojis
+  ]
+  var MergeRequestDiscussions: org.scalablytyped.runtime.Instantiable1[
+    /* options */ BaseServiceOptions, 
+    gitlabLib.distServicesMod.MergeRequestDiscussions
+  ]
+  var MergeRequestNotes: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.MergeRequestNotes]
+  var MergeRequests: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.MergeRequests]
+  var PipelineScheduleVariables: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.PipelineScheduleVariables]
+  var PipelineSchedules: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.PipelineSchedules]
+  var Pipelines: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Pipelines]
+  var ProjectAccessRequests: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectAccessRequests]
+  var ProjectBadges: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectBadges]
+  var ProjectCustomAttributes: org.scalablytyped.runtime.Instantiable1[
+    /* options */ BaseServiceOptions, 
+    gitlabLib.distServicesMod.ProjectCustomAttributes
+  ]
+  var ProjectHooks: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProjectHooks]
+  var ProjectImportExport: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProjectImportExport]
+  var ProjectIssueBoards: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectIssueBoards]
+  var ProjectMembers: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectMembers]
+  var ProjectMilestones: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectMilestones]
+  var ProjectSnippetAwardEmojis: org.scalablytyped.runtime.Instantiable1[
+    /* options */ BaseServiceOptions, 
+    gitlabLib.distServicesMod.ProjectSnippetAwardEmojis
+  ]
+  var ProjectSnippetDiscussions: org.scalablytyped.runtime.Instantiable1[
+    /* options */ BaseServiceOptions, 
+    gitlabLib.distServicesMod.ProjectSnippetDiscussions
+  ]
+  var ProjectSnippetNotes: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectSnippetNotes]
+  var ProjectSnippets: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProjectSnippets]
+  var ProjectVariables: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectVariables]
+  var Projects: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Projects]
+  var ProtectedBranches: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProtectedBranches]
+  var ProtectedTags: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProtectedTags]
+  var Repositories: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Repositories]
+  var RepositoryFiles: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.RepositoryFiles]
+  var Runners: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Runners]
+  var Services: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Services]
+  var Tags: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Tags]
+  var Triggers: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Triggers]
 }
 
 object Anon_Branches {
   @scala.inline
   def apply(
-    Branches: gitlabLib.distEs5ServicesMod.Branches,
-    CommitDiscussions: gitlabLib.distEs5ServicesMod.CommitDiscussions,
-    Commits: gitlabLib.distEs5ServicesMod.Commits,
-    DeployKeys: gitlabLib.distEs5ServicesMod.DeployKeys,
-    Deployments: gitlabLib.distEs5ServicesMod.Deployments,
-    Environments: gitlabLib.distEs5ServicesMod.Environments,
-    IssueAwardEmojis: gitlabLib.distEs5ServicesMod.IssueAwardEmojis,
-    IssueDiscussions: gitlabLib.distEs5ServicesMod.IssueDiscussions,
-    IssueNotes: gitlabLib.distEs5ServicesMod.IssueNotes,
-    Issues: gitlabLib.distEs5ServicesMod.Issues,
-    Jobs: gitlabLib.distEs5ServicesMod.Jobs,
-    Labels: gitlabLib.distEs5ServicesMod.Labels,
-    MergeRequestAwardEmojis: gitlabLib.distEs5ServicesMod.MergeRequestAwardEmojis,
-    MergeRequestDiscussions: gitlabLib.distEs5ServicesMod.MergeRequestDiscussions,
-    MergeRequestNotes: gitlabLib.distEs5ServicesMod.MergeRequestNotes,
-    MergeRequests: gitlabLib.distEs5ServicesMod.MergeRequests,
-    PipelineScheduleVariables: gitlabLib.distEs5ServicesMod.PipelineScheduleVariables,
-    PipelineSchedules: gitlabLib.distEs5ServicesMod.PipelineSchedules,
-    Pipelines: gitlabLib.distEs5ServicesMod.Pipelines,
-    ProjectAccessRequests: gitlabLib.distEs5ServicesMod.ProjectAccessRequests,
-    ProjectBadges: gitlabLib.distEs5ServicesMod.ProjectBadges,
-    ProjectCustomAttributes: gitlabLib.distEs5ServicesMod.ProjectCustomAttributes,
-    ProjectHooks: gitlabLib.distEs5ServicesMod.ProjectHooks,
-    ProjectImportExport: gitlabLib.distEs5ServicesMod.ProjectImportExport,
-    ProjectIssueBoards: gitlabLib.distEs5ServicesMod.ProjectIssueBoards,
-    ProjectMembers: gitlabLib.distEs5ServicesMod.ProjectMembers,
-    ProjectMilestones: gitlabLib.distEs5ServicesMod.ProjectMilestones,
-    ProjectSnippetAwardEmojis: gitlabLib.distEs5ServicesMod.ProjectSnippetAwardEmojis,
-    ProjectSnippetDiscussions: gitlabLib.distEs5ServicesMod.ProjectSnippetDiscussions,
-    ProjectSnippetNotes: gitlabLib.distEs5ServicesMod.ProjectSnippetNotes,
-    ProjectSnippets: gitlabLib.distEs5ServicesMod.ProjectSnippets,
-    ProjectVariables: gitlabLib.distEs5ServicesMod.ProjectVariables,
-    Projects: gitlabLib.distEs5ServicesMod.Projects,
-    ProtectedBranches: gitlabLib.distEs5ServicesMod.ProtectedBranches,
-    ProtectedTags: gitlabLib.distEs5ServicesMod.ProtectedTags,
-    Repositories: gitlabLib.distEs5ServicesMod.Repositories,
-    RepositoryFiles: gitlabLib.distEs5ServicesMod.RepositoryFiles,
-    Runners: gitlabLib.distEs5ServicesMod.Runners,
-    Services: gitlabLib.distEs5ServicesMod.Services,
-    Tags: gitlabLib.distEs5ServicesMod.Tags,
-    Triggers: gitlabLib.distEs5ServicesMod.Triggers
+    Branches: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Branches],
+    CommitDiscussions: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.CommitDiscussions],
+    Commits: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Commits],
+    DeployKeys: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.DeployKeys],
+    Deployments: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Deployments],
+    Environments: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Environments],
+    IssueAwardEmojis: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.IssueAwardEmojis],
+    IssueDiscussions: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.IssueDiscussions],
+    IssueNotes: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.IssueNotes],
+    Issues: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Issues],
+    Jobs: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Jobs],
+    Labels: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Labels],
+    MergeRequestAwardEmojis: org.scalablytyped.runtime.Instantiable1[
+      /* options */ BaseServiceOptions, 
+      gitlabLib.distServicesMod.MergeRequestAwardEmojis
+    ],
+    MergeRequestDiscussions: org.scalablytyped.runtime.Instantiable1[
+      /* options */ BaseServiceOptions, 
+      gitlabLib.distServicesMod.MergeRequestDiscussions
+    ],
+    MergeRequestNotes: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.MergeRequestNotes],
+    MergeRequests: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.MergeRequests],
+    PipelineScheduleVariables: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.PipelineScheduleVariables],
+    PipelineSchedules: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.PipelineSchedules],
+    Pipelines: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Pipelines],
+    ProjectAccessRequests: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectAccessRequests],
+    ProjectBadges: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectBadges],
+    ProjectCustomAttributes: org.scalablytyped.runtime.Instantiable1[
+      /* options */ BaseServiceOptions, 
+      gitlabLib.distServicesMod.ProjectCustomAttributes
+    ],
+    ProjectHooks: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProjectHooks],
+    ProjectImportExport: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProjectImportExport],
+    ProjectIssueBoards: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectIssueBoards],
+    ProjectMembers: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectMembers],
+    ProjectMilestones: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectMilestones],
+    ProjectSnippetAwardEmojis: org.scalablytyped.runtime.Instantiable1[
+      /* options */ BaseServiceOptions, 
+      gitlabLib.distServicesMod.ProjectSnippetAwardEmojis
+    ],
+    ProjectSnippetDiscussions: org.scalablytyped.runtime.Instantiable1[
+      /* options */ BaseServiceOptions, 
+      gitlabLib.distServicesMod.ProjectSnippetDiscussions
+    ],
+    ProjectSnippetNotes: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectSnippetNotes],
+    ProjectSnippets: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProjectSnippets],
+    ProjectVariables: org.scalablytyped.runtime.Instantiable1[/* options */ BaseServiceOptions, gitlabLib.distServicesMod.ProjectVariables],
+    Projects: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Projects],
+    ProtectedBranches: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProtectedBranches],
+    ProtectedTags: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.ProtectedTags],
+    Repositories: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Repositories],
+    RepositoryFiles: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.RepositoryFiles],
+    Runners: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Runners],
+    Services: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Services],
+    Tags: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Tags],
+    Triggers: org.scalablytyped.runtime.Instantiable0[gitlabLib.distServicesMod.Triggers]
   ): Anon_Branches = {
     val __obj = js.Dynamic.literal(Branches = Branches, CommitDiscussions = CommitDiscussions, Commits = Commits, DeployKeys = DeployKeys, Deployments = Deployments, Environments = Environments, IssueAwardEmojis = IssueAwardEmojis, IssueDiscussions = IssueDiscussions, IssueNotes = IssueNotes, Issues = Issues, Jobs = Jobs, Labels = Labels, MergeRequestAwardEmojis = MergeRequestAwardEmojis, MergeRequestDiscussions = MergeRequestDiscussions, MergeRequestNotes = MergeRequestNotes, MergeRequests = MergeRequests, PipelineScheduleVariables = PipelineScheduleVariables, PipelineSchedules = PipelineSchedules, Pipelines = Pipelines, ProjectAccessRequests = ProjectAccessRequests, ProjectBadges = ProjectBadges, ProjectCustomAttributes = ProjectCustomAttributes, ProjectHooks = ProjectHooks, ProjectImportExport = ProjectImportExport, ProjectIssueBoards = ProjectIssueBoards, ProjectMembers = ProjectMembers, ProjectMilestones = ProjectMilestones, ProjectSnippetAwardEmojis = ProjectSnippetAwardEmojis, ProjectSnippetDiscussions = ProjectSnippetDiscussions, ProjectSnippetNotes = ProjectSnippetNotes, ProjectSnippets = ProjectSnippets, ProjectVariables = ProjectVariables, Projects = Projects, ProtectedBranches = ProtectedBranches, ProtectedTags = ProtectedTags, Repositories = Repositories, RepositoryFiles = RepositoryFiles, Runners = Runners, Services = Services, Tags = Tags, Triggers = Triggers)
   

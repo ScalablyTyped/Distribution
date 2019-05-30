@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Resource extends js.Object {
   /**
-    * Provides additional details about the resource.
+    * Additional details about the resource.
     */
   var Details: js.UndefOr[ResourceDetails] = js.undefined
   /**
@@ -15,11 +15,11 @@ trait Resource extends js.Object {
     */
   var Id: NonEmptyString
   /**
-    * The canonical AWS partition name to which the region is assigned.
+    * The canonical AWS partition name that the Region is assigned to.
     */
   var Partition: js.UndefOr[Partition] = js.undefined
   /**
-    * The canonical AWS external region name where this resource is located.
+    * The canonical AWS external Region name where this resource is located.
     */
   var Region: js.UndefOr[NonEmptyString] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait Resource extends js.Object {
     */
   var Tags: js.UndefOr[FieldMap] = js.undefined
   /**
-    * Specifies the type of the resource for which details are provided.
+    * The type of the resource that details are provided for.
     */
   var Type: NonEmptyString
 }

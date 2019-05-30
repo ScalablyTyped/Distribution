@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Transaction extends Knex {
-  def commit(): QueryBuilder = js.native
-  def commit(value: js.Any): QueryBuilder = js.native
-  def rollback(): QueryBuilder = js.native
-  def rollback(error: js.Any): QueryBuilder = js.native
-  def savepoint(transactionScope: js.Function1[/* trx */ this.type, _]): bluebirdLib.bluebirdMod.^[_] = js.native
+trait Transaction[TRecord /* <: js.Object */, TResult] extends Knex[TRecord, TResult] {
+  def commit(): QueryBuilder[TRecord, TResult] = js.native
+  def commit(value: js.Any): QueryBuilder[TRecord, TResult] = js.native
+  def query[TRecord /* <: js.Object */, TResult](conn: js.Any, sql: js.Any, status: js.Any, value: js.Any): QueryBuilder[TRecord, TResult] = js.native
+  def rollback(): QueryBuilder[TRecord, TResult] = js.native
+  def rollback(error: js.Any): QueryBuilder[TRecord, TResult] = js.native
+  def savepoint[T](transactionScope: js.Function1[/* trx */ Transaction[_, _], _]): bluebirdLib.bluebirdMod.^[T] = js.native
 }
 

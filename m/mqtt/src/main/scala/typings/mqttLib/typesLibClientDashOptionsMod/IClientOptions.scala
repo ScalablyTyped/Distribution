@@ -40,6 +40,7 @@ trait IClientOptions extends ISecureClientOptions {
   var password: js.UndefOr[java.lang.String] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
   var port: js.UndefOr[scala.Double] = js.undefined
+  var properties: js.UndefOr[mqttLib.Anon_AuthenticationData] = js.undefined
   var protocol: js.UndefOr[
     mqttLib.mqttLibStrings.wss | mqttLib.mqttLibStrings.ws | mqttLib.mqttLibStrings.mqtt | mqttLib.mqttLibStrings.mqtts | mqttLib.mqttLibStrings.tcp | mqttLib.mqttLibStrings.ssl | mqttLib.mqttLibStrings.wx | mqttLib.mqttLibStrings.wxs
   ] = js.undefined
@@ -98,6 +99,7 @@ object IClientOptions {
     password: java.lang.String = null,
     path: java.lang.String = null,
     port: scala.Int | scala.Double = null,
+    properties: mqttLib.Anon_AuthenticationData = null,
     protocol: mqttLib.mqttLibStrings.wss | mqttLib.mqttLibStrings.ws | mqttLib.mqttLibStrings.mqtt | mqttLib.mqttLibStrings.mqtts | mqttLib.mqttLibStrings.tcp | mqttLib.mqttLibStrings.ssl | mqttLib.mqttLibStrings.wx | mqttLib.mqttLibStrings.wxs = null,
     protocolId: java.lang.String = null,
     protocolVersion: scala.Int | scala.Double = null,
@@ -127,6 +129,7 @@ object IClientOptions {
     if (password != null) __obj.updateDynamic("password")(password)
     if (path != null) __obj.updateDynamic("path")(path)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (protocolId != null) __obj.updateDynamic("protocolId")(protocolId)
     if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEDiffuseLightingElement interface corresponds to the <feDiffuseLighting> element. */
+/** Corresponds to the <feDiffuseLighting> element. */
 @js.native
 trait SVGFEDiffuseLightingElement
   extends SVGElement
@@ -44,6 +44,8 @@ class SVGFEDiffuseLightingElementCls () extends SVGFEDiffuseLightingElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val height: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

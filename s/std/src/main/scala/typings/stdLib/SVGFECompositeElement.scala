@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFECompositeElement interface corresponds to the <feComposite> element. */
+/** Corresponds to the <feComposite> element. */
 @js.native
 trait SVGFECompositeElement
   extends SVGElement
@@ -53,6 +53,8 @@ class SVGFECompositeElementCls () extends SVGFECompositeElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val height: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

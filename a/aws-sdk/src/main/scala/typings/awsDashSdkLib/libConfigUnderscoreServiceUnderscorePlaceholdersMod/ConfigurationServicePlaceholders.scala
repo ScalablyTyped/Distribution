@@ -96,6 +96,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var iotanalytics: js.UndefOr[awsDashSdkLib.clientsIotanalyticsMod.ClientConfiguration] = js.native
   var iotdata: js.UndefOr[awsDashSdkLib.clientsIotdataMod.ClientConfiguration] = js.native
   var iotjobsdataplane: js.UndefOr[awsDashSdkLib.clientsIotjobsdataplaneMod.ClientConfiguration] = js.native
+  var iotthingsgraph: js.UndefOr[awsDashSdkLib.clientsIotthingsgraphMod.ClientConfiguration] = js.native
   var kafka: js.UndefOr[awsDashSdkLib.clientsKafkaMod.ClientConfiguration] = js.native
   var kinesis: js.UndefOr[awsDashSdkLib.clientsKinesisMod.ClientConfiguration] = js.native
   var kinesisanalytics: js.UndefOr[awsDashSdkLib.clientsKinesisanalyticsMod.ClientConfiguration] = js.native

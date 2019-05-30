@@ -56,7 +56,7 @@ object ojComboboxOneEventMap {
     animationiteration: stdLib.AnimationEvent,
     animationstart: stdLib.AnimationEvent,
     asyncValidatorsChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojvalidationDashBaseMod.AsyncValidator[_]]],
-    auxclick: stdLib.Event,
+    auxclick: stdLib.MouseEvent,
     blur: stdLib.FocusEvent,
     cancel: stdLib.Event,
     canplay: stdLib.Event,

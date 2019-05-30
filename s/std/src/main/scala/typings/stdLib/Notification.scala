@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Notification interface of the Notifications API is used to configure and display desktop notifications to the user. */
+/** An interface of the Notifications API is used to configure and display desktop notifications to the user. */
 @js.native
 trait Notification extends EventTarget {
   val actions: js.Array[NotificationAction] = js.native

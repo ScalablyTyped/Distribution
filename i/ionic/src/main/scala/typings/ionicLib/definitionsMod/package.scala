@@ -47,4 +47,5 @@ package object definitionsMod {
   type PaginatorRequestGenerator = js.Function0[js.Promise[ionicLib.Anon_Req]]
   type ResourcesConfig = org.scalablytyped.runtime.StringDictionary[ResourcesPlatform]
   type ResourcesPlatform = org.scalablytyped.runtime.StringDictionary[ionicLib.Anon_Images]
+  type SuperAgentRequest = superagentLib.superagentMod.SuperAgentRequest
 }

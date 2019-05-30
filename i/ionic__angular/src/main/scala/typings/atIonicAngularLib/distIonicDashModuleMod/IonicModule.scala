@@ -13,7 +13,7 @@ class IonicModule () extends js.Object
 @JSImport("@ionic/angular/dist/ionic-module", "IonicModule")
 @js.native
 object IonicModule extends js.Object {
-  def forRoot(): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[_] = js.native
-  def forRoot(config: atIonicCoreLib.distTypesUtilsConfigMod.IonicConfig): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[_] = js.native
+  def forRoot(): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[_] = js.native
+  def forRoot(config: atIonicCoreLib.distTypesUtilsConfigMod.IonicConfig): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[_] = js.native
 }
 

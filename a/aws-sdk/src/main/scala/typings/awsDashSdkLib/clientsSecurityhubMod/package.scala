@@ -18,6 +18,7 @@ package object clientsSecurityhubMod {
   type AwsIamAccessKeyStatus = _AwsIamAccessKeyStatus | java.lang.String
   type AwsSecurityFindingList = js.Array[AwsSecurityFinding]
   type Boolean = scala.Boolean
+  type CategoryList = js.Array[NonEmptyString]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.PASSED
@@ -65,7 +66,7 @@ package object clientsSecurityhubMod {
     - java.lang.String
   */
   type MalwareType = _MalwareType | java.lang.String
-  type MapFilterComparison = awsDashSdkLib.awsDashSdkLibStrings.CONTAINS | java.lang.String
+  type MapFilterComparison = awsDashSdkLib.awsDashSdkLibStrings.EQUALS | java.lang.String
   type MapFilterList = js.Array[MapFilter]
   type MaxResults = scala.Double
   type MemberList = js.Array[Member]
@@ -85,7 +86,9 @@ package object clientsSecurityhubMod {
     - java.lang.String
   */
   type Partition = _Partition | java.lang.String
+  type ProductSubscribersList = js.Array[NonEmptyString]
   type ProductSubscriptionArnList = js.Array[NonEmptyString]
+  type ProductsList = js.Array[Product]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
     - awsDashSdkLib.awsDashSdkLibStrings.ARCHIVED
@@ -108,6 +111,7 @@ package object clientsSecurityhubMod {
     - awsDashSdkLib.awsDashSdkLibStrings.READY
     - awsDashSdkLib.awsDashSdkLibStrings.FAILED
     - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - awsDashSdkLib.awsDashSdkLibStrings.INCOMPLETE
     - java.lang.String
   */
   type StandardsStatus = _StandardsStatus | java.lang.String
@@ -116,7 +120,6 @@ package object clientsSecurityhubMod {
   type StandardsSubscriptions = js.Array[StandardsSubscription]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.EQUALS
-    - awsDashSdkLib.awsDashSdkLibStrings.CONTAINS
     - awsDashSdkLib.awsDashSdkLibStrings.PREFIX
     - java.lang.String
   */

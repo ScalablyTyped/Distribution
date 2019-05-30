@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "griddle-react"
-version := "1.13.1-6fa4e5"
+version := "1.13.1-1375e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.4-a0e5c1",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-4c5137",
-  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-e6b22c",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-b94c72",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1cea03",
-  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190513Z-e877c2",
-  "org.scalablytyped" %%% "redux" % "4.0.1-14a8b8",
-  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
+  "org.scalablytyped" %%% "csstype" % "2.6.5-8a2cd0",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-32bfd8",
+  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-70f5d8",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c843c9",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1fde1d",
+  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190513Z-b69b2a",
+  "org.scalablytyped" %%% "redux" % "4.0.1-cd375e",
+  "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

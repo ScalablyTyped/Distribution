@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Navigator interface represents the state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities. */
+/** The state and the identity of the user agent. It allows scripts to query it and to register themselves to carry on some activities. */
 @js.native
 trait Navigator
   extends NavigatorID
@@ -32,6 +32,7 @@ trait Navigator
   val msManipulationViewsEnabled: scala.Boolean = js.native
   val msMaxTouchPoints: scala.Double = js.native
   val msPointerEnabled: scala.Boolean = js.native
+  val permissions: Permissions = js.native
   val plugins: PluginArray = js.native
   val pointerEnabled: scala.Boolean = js.native
   val serviceWorker: ServiceWorkerContainer = js.native

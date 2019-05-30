@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ResolvedStarterTemplate extends StarterTemplate {
+trait ResolvedStarterTemplate extends BaseStarterTemplate {
   var archive: java.lang.String
 }
 
@@ -13,13 +13,11 @@ object ResolvedStarterTemplate {
   @scala.inline
   def apply(
     archive: java.lang.String,
-    id: java.lang.String,
     name: java.lang.String,
-    `type`: ProjectType,
+    projectType: ProjectType,
     description: java.lang.String = null
   ): ResolvedStarterTemplate = {
-    val __obj = js.Dynamic.literal(archive = archive, id = id, name = name)
-    __obj.updateDynamic("type")(`type`)
+    val __obj = js.Dynamic.literal(archive = archive, name = name, projectType = projectType)
     if (description != null) __obj.updateDynamic("description")(description)
     __obj.asInstanceOf[ResolvedStarterTemplate]
   }

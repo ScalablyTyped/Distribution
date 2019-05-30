@@ -19,7 +19,7 @@ object ^ extends js.Object {
   val updateStatement: js.Function2[/* node */ ExpressionStatement, /* expression */ Expression, ExpressionStatement] = js.native
   /** The version of the TypeScript compiler release */
   val version: java.lang.String = js.native
-  val versionMajorMinor: typescriptLib.typescriptLibStrings.`3DOT4` = js.native
+  val versionMajorMinor: typescriptLib.typescriptLibStrings.`3DOT5` = js.native
   /**
     * Adds an EmitHelper to a node.
     */
@@ -1589,6 +1589,11 @@ object ^ extends js.Object {
     currentDirectory: java.lang.String,
     getCanonicalFileName: js.Function1[/* s */ java.lang.String, java.lang.String]
   ): ModuleResolutionCache = js.native
+  def createModuleResolutionCache(
+    currentDirectory: java.lang.String,
+    getCanonicalFileName: js.Function1[/* s */ java.lang.String, java.lang.String],
+    options: CompilerOptions
+  ): ModuleResolutionCache = js.native
   def createNamedExports(elements: js.Array[ExportSpecifier]): NamedExports = js.native
   def createNamedImports(elements: js.Array[ImportSpecifier]): NamedImports = js.native
   def createNamespaceExportDeclaration(name: java.lang.String): NamespaceExportDeclaration = js.native
@@ -2192,7 +2197,6 @@ object ^ extends js.Object {
     `type`: TypeNode,
     initializer: Expression
   ): PropertyDeclaration = js.native
-  def createPropertyAccess(expression: Expression): PropertyAccessExpression = js.native
   def createPropertyAccess(expression: Expression, name: java.lang.String): PropertyAccessExpression = js.native
   def createPropertyAccess(expression: Expression, name: Identifier): PropertyAccessExpression = js.native
   def createPropertyAssignment(name: java.lang.String, initializer: Expression): PropertyAssignment = js.native
@@ -2872,8 +2876,6 @@ object ^ extends js.Object {
   def formatDiagnostic(diagnostic: Diagnostic, host: FormatDiagnosticsHost): java.lang.String = js.native
   def formatDiagnostics(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): java.lang.String = js.native
   def formatDiagnosticsWithColorAndContext(diagnostics: js.Array[Diagnostic], host: FormatDiagnosticsHost): java.lang.String = js.native
-  def generateTypesForGlobal(name: java.lang.String, globalValue: js.Any, formatSettings: FormatCodeSettings): java.lang.String = js.native
-  def generateTypesForModule(name: java.lang.String, moduleValue: js.Any, formatSettings: FormatCodeSettings): java.lang.String = js.native
   /** Gets all JSDoc tags of a specified kind, or undefined if not present. */
   def getAllJSDocTagsOfKind(node: Node, kind: SyntaxKind): js.Array[JSDocTag] = js.native
   /**
@@ -3024,6 +3026,12 @@ object ^ extends js.Object {
     * Reads the config file, reports errors if any and exits if the config file cannot be found
     */
   def getParsedCommandLineOfConfigFile(configFileName: java.lang.String, optionsToExtend: CompilerOptions, host: ParseConfigFileHost): js.UndefOr[ParsedCommandLine] = js.native
+  def getParsedCommandLineOfConfigFile(
+    configFileName: java.lang.String,
+    optionsToExtend: CompilerOptions,
+    host: ParseConfigFileHost,
+    extendedConfigCache: Map[ExtendedConfigCacheEntry]
+  ): js.UndefOr[ParsedCommandLine] = js.native
   def getPositionOfLineAndCharacter(sourceFile: SourceFileLike, line: scala.Double, character: scala.Double): scala.Double = js.native
   def getPreEmitDiagnostics(program: Program): js.Array[Diagnostic] = js.native
   def getPreEmitDiagnostics(program: Program, sourceFile: SourceFile): js.Array[Diagnostic] = js.native
@@ -3355,6 +3363,16 @@ object ^ extends js.Object {
     resolutionStack: js.Array[Path],
     extraFileExtensions: js.Array[FileExtensionInfo]
   ): ParsedCommandLine = js.native
+  def parseJsonConfigFileContent(
+    json: js.Any,
+    host: ParseConfigHost,
+    basePath: java.lang.String,
+    existingOptions: CompilerOptions,
+    configFileName: java.lang.String,
+    resolutionStack: js.Array[Path],
+    extraFileExtensions: js.Array[FileExtensionInfo],
+    extendedConfigCache: Map[ExtendedConfigCacheEntry]
+  ): ParsedCommandLine = js.native
   /**
     * Parse the contents of a config file (tsconfig.json).
     * @param jsonNode The contents of the config file to parse
@@ -3392,6 +3410,16 @@ object ^ extends js.Object {
     configFileName: java.lang.String,
     resolutionStack: js.Array[Path],
     extraFileExtensions: js.Array[FileExtensionInfo]
+  ): ParsedCommandLine = js.native
+  def parseJsonSourceFileConfigFileContent(
+    sourceFile: TsConfigSourceFile,
+    host: ParseConfigHost,
+    basePath: java.lang.String,
+    existingOptions: CompilerOptions,
+    configFileName: java.lang.String,
+    resolutionStack: js.Array[Path],
+    extraFileExtensions: js.Array[FileExtensionInfo],
+    extendedConfigCache: Map[ExtendedConfigCacheEntry]
   ): ParsedCommandLine = js.native
   /**
     * Parse json text into SyntaxTree and return node and parse errors if any
@@ -3742,7 +3770,7 @@ object ^ extends js.Object {
   def updateBreak(node: BreakStatement): BreakStatement = js.native
   def updateBreak(node: BreakStatement, label: Identifier): BreakStatement = js.native
   def updateBundle(node: Bundle, sourceFiles: js.Array[SourceFile]): Bundle = js.native
-  def updateBundle(node: Bundle, sourceFiles: js.Array[SourceFile], prepends: js.Array[UnparsedSource]): Bundle = js.native
+  def updateBundle(node: Bundle, sourceFiles: js.Array[SourceFile], prepends: js.Array[UnparsedSource | InputFiles]): Bundle = js.native
   def updateCall(
     node: CallExpression,
     expression: Expression,

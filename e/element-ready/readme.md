@@ -1,7 +1,7 @@
 
 # Scala.js typings for element-ready
 
-Typings are for version 3.1.0
+Typings are for version 4.1.0
 
 ## Library description:
 Detect when an element is ready in the DOM

@@ -18,5 +18,7 @@ trait Migrator extends js.Object {
   def rollback(config: MigratorConfig, all: scala.Boolean): bluebirdLib.bluebirdMod.^[_] = js.native
   def status(): bluebirdLib.bluebirdMod.^[scala.Double] = js.native
   def status(config: MigratorConfig): bluebirdLib.bluebirdMod.^[scala.Double] = js.native
+  def up(): bluebirdLib.bluebirdMod.^[_] = js.native
+  def up(config: MigratorConfig): bluebirdLib.bluebirdMod.^[_] = js.native
 }
 

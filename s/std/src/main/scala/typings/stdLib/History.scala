@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The History interface allows manipulation of the browser session history, that is the pages visited in the tab or frame that the current page is loaded in. */
+/** Allows manipulation of the browser session history, that is the pages visited in the tab or frame that the current page is loaded in. */
 @js.native
 trait History extends js.Object {
   val length: scala.Double = js.native

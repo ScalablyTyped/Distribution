@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteMaintenanceWindowResult extends js.Object {
   /**
-    * The ID of the deleted Maintenance Window.
+    * The ID of the deleted maintenance window.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }

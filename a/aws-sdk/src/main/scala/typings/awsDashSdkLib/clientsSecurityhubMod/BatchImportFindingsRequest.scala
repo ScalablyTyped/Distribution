@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchImportFindingsRequest extends js.Object {
   /**
-    * A list of findings that you want to import. Must be submitted in the AWSSecurityFinding format.
+    * A list of findings to import. You must submit them in the AwsSecurityFinding format.
     */
   var Findings: AwsSecurityFindingList
 }

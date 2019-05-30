@@ -11,7 +11,7 @@ trait MaintenanceWindowTask extends js.Object {
     */
   var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   /**
-    * Information about an Amazon S3 bucket to write task-level logs to.   LoggingInfo has been deprecated. To specify an S3 bucket to contain logs, instead use the OutputS3BucketName and OutputS3KeyPrefix options in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters. 
+    * Information about an Amazon S3 bucket to write task-level logs to.   LoggingInfo has been deprecated. To specify an S3 bucket to contain logs, instead use the OutputS3BucketName and OutputS3KeyPrefix options in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters. 
     */
   var LoggingInfo: js.UndefOr[LoggingInfo] = js.undefined
   /**
@@ -27,11 +27,11 @@ trait MaintenanceWindowTask extends js.Object {
     */
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   /**
-    * The priority of the task in the Maintenance Window. The lower the number, the higher the priority. Tasks that have the same priority are scheduled in parallel.
+    * The priority of the task in the maintenance window. The lower the number, the higher the priority. Tasks that have the same priority are scheduled in parallel.
     */
   var Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined
   /**
-    * The role that should be assumed when running the task.
+    * The ARN of the IAM service role to use to publish Amazon Simple Notification Service (Amazon SNS) notifications for maintenance window Run Command tasks.
     */
   var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
   /**
@@ -43,7 +43,7 @@ trait MaintenanceWindowTask extends js.Object {
     */
   var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
   /**
-    * The parameters that should be passed to the task when it is run.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters. 
+    * The parameters that should be passed to the task when it is run.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters. 
     */
   var TaskParameters: js.UndefOr[MaintenanceWindowTaskParameters] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait MaintenanceWindowTask extends js.Object {
     */
   var Type: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   /**
-    * The ID of the Maintenance Window where the task is registered.
+    * The ID of the maintenance window where the task is registered.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
   /**

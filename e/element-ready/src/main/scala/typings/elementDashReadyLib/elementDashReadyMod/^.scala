@@ -8,695 +8,365 @@ import scala.scalajs.js.annotation._
 @JSImport("element-ready", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default[ElementName /* <: stdLib.Element */](selector: java.lang.String): pDashCancelableLib.pDashCancelableMod.^[ElementName] = js.native
-  def default[ElementName /* <: stdLib.Element */](selector: java.lang.String, options: Options): pDashCancelableLib.pDashCancelableMod.^[ElementName] = js.native
-  @JSName("default")
-  def default_a(selector: elementDashReadyLib.elementDashReadyLibStrings.a): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLAnchorElement] = js.native
-  @JSName("default")
-  def default_a(selector: elementDashReadyLib.elementDashReadyLibStrings.a, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLAnchorElement] = js.native
-  @JSName("default")
-  def default_abbr(selector: elementDashReadyLib.elementDashReadyLibStrings.abbr): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_abbr(selector: elementDashReadyLib.elementDashReadyLibStrings.abbr, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_address(selector: elementDashReadyLib.elementDashReadyLibStrings.address): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_address(selector: elementDashReadyLib.elementDashReadyLibStrings.address, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_applet(selector: elementDashReadyLib.elementDashReadyLibStrings.applet): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLAppletElement] = js.native
-  @JSName("default")
-  def default_applet(selector: elementDashReadyLib.elementDashReadyLibStrings.applet, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLAppletElement] = js.native
-  @JSName("default")
-  def default_area(selector: elementDashReadyLib.elementDashReadyLibStrings.area): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLAreaElement] = js.native
-  @JSName("default")
-  def default_area(selector: elementDashReadyLib.elementDashReadyLibStrings.area, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLAreaElement] = js.native
-  @JSName("default")
-  def default_article(selector: elementDashReadyLib.elementDashReadyLibStrings.article): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_article(selector: elementDashReadyLib.elementDashReadyLibStrings.article, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_aside(selector: elementDashReadyLib.elementDashReadyLibStrings.aside): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_aside(selector: elementDashReadyLib.elementDashReadyLibStrings.aside, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_audio(selector: elementDashReadyLib.elementDashReadyLibStrings.audio): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLAudioElement] = js.native
-  @JSName("default")
-  def default_audio(selector: elementDashReadyLib.elementDashReadyLibStrings.audio, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLAudioElement] = js.native
-  @JSName("default")
-  def default_b(selector: elementDashReadyLib.elementDashReadyLibStrings.b): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_b(selector: elementDashReadyLib.elementDashReadyLibStrings.b, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_base(selector: elementDashReadyLib.elementDashReadyLibStrings.base): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLBaseElement] = js.native
-  @JSName("default")
-  def default_base(selector: elementDashReadyLib.elementDashReadyLibStrings.base, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLBaseElement] = js.native
-  @JSName("default")
-  def default_basefont(selector: elementDashReadyLib.elementDashReadyLibStrings.basefont): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLBaseFontElement] = js.native
-  @JSName("default")
-  def default_basefont(selector: elementDashReadyLib.elementDashReadyLibStrings.basefont, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLBaseFontElement] = js.native
-  @JSName("default")
-  def default_bdi(selector: elementDashReadyLib.elementDashReadyLibStrings.bdi): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_bdi(selector: elementDashReadyLib.elementDashReadyLibStrings.bdi, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_bdo(selector: elementDashReadyLib.elementDashReadyLibStrings.bdo): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_bdo(selector: elementDashReadyLib.elementDashReadyLibStrings.bdo, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_blockquote(selector: elementDashReadyLib.elementDashReadyLibStrings.blockquote): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLQuoteElement] = js.native
-  @JSName("default")
-  def default_blockquote(selector: elementDashReadyLib.elementDashReadyLibStrings.blockquote, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLQuoteElement] = js.native
-  @JSName("default")
-  def default_body(selector: elementDashReadyLib.elementDashReadyLibStrings.body): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLBodyElement] = js.native
-  @JSName("default")
-  def default_body(selector: elementDashReadyLib.elementDashReadyLibStrings.body, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLBodyElement] = js.native
-  @JSName("default")
-  def default_br(selector: elementDashReadyLib.elementDashReadyLibStrings.br): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLBRElement] = js.native
-  @JSName("default")
-  def default_br(selector: elementDashReadyLib.elementDashReadyLibStrings.br, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLBRElement] = js.native
-  @JSName("default")
-  def default_button(selector: elementDashReadyLib.elementDashReadyLibStrings.button): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLButtonElement] = js.native
-  @JSName("default")
-  def default_button(selector: elementDashReadyLib.elementDashReadyLibStrings.button, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLButtonElement] = js.native
-  @JSName("default")
-  def default_canvas(selector: elementDashReadyLib.elementDashReadyLibStrings.canvas): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLCanvasElement] = js.native
-  @JSName("default")
-  def default_canvas(selector: elementDashReadyLib.elementDashReadyLibStrings.canvas, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLCanvasElement] = js.native
-  @JSName("default")
-  def default_caption(selector: elementDashReadyLib.elementDashReadyLibStrings.caption): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableCaptionElement] = js.native
-  @JSName("default")
-  def default_caption(selector: elementDashReadyLib.elementDashReadyLibStrings.caption, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableCaptionElement] = js.native
-  @JSName("default")
-  def default_circle(selector: elementDashReadyLib.elementDashReadyLibStrings.circle): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGCircleElement] = js.native
-  @JSName("default")
-  def default_circle(selector: elementDashReadyLib.elementDashReadyLibStrings.circle, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGCircleElement] = js.native
-  @JSName("default")
-  def default_cite(selector: elementDashReadyLib.elementDashReadyLibStrings.cite): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_cite(selector: elementDashReadyLib.elementDashReadyLibStrings.cite, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_clipPath(selector: elementDashReadyLib.elementDashReadyLibStrings.clipPath): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGClipPathElement] = js.native
-  @JSName("default")
-  def default_clipPath(selector: elementDashReadyLib.elementDashReadyLibStrings.clipPath, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGClipPathElement] = js.native
-  @JSName("default")
-  def default_code(selector: elementDashReadyLib.elementDashReadyLibStrings.code): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_code(selector: elementDashReadyLib.elementDashReadyLibStrings.code, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_col(selector: elementDashReadyLib.elementDashReadyLibStrings.col): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableColElement] = js.native
-  @JSName("default")
-  def default_col(selector: elementDashReadyLib.elementDashReadyLibStrings.col, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableColElement] = js.native
-  @JSName("default")
-  def default_colgroup(selector: elementDashReadyLib.elementDashReadyLibStrings.colgroup): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableColElement] = js.native
-  @JSName("default")
-  def default_colgroup(selector: elementDashReadyLib.elementDashReadyLibStrings.colgroup, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableColElement] = js.native
-  @JSName("default")
-  def default_data(selector: elementDashReadyLib.elementDashReadyLibStrings.data): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDataElement] = js.native
-  @JSName("default")
-  def default_data(selector: elementDashReadyLib.elementDashReadyLibStrings.data, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDataElement] = js.native
-  @JSName("default")
-  def default_datalist(selector: elementDashReadyLib.elementDashReadyLibStrings.datalist): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDataListElement] = js.native
-  @JSName("default")
-  def default_datalist(selector: elementDashReadyLib.elementDashReadyLibStrings.datalist, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDataListElement] = js.native
-  @JSName("default")
-  def default_dd(selector: elementDashReadyLib.elementDashReadyLibStrings.dd): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_dd(selector: elementDashReadyLib.elementDashReadyLibStrings.dd, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_defs(selector: elementDashReadyLib.elementDashReadyLibStrings.defs): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGDefsElement] = js.native
-  @JSName("default")
-  def default_defs(selector: elementDashReadyLib.elementDashReadyLibStrings.defs, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGDefsElement] = js.native
-  @JSName("default")
-  def default_del(selector: elementDashReadyLib.elementDashReadyLibStrings.del): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLModElement] = js.native
-  @JSName("default")
-  def default_del(selector: elementDashReadyLib.elementDashReadyLibStrings.del, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLModElement] = js.native
-  @JSName("default")
-  def default_desc(selector: elementDashReadyLib.elementDashReadyLibStrings.desc): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGDescElement] = js.native
-  @JSName("default")
-  def default_desc(selector: elementDashReadyLib.elementDashReadyLibStrings.desc, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGDescElement] = js.native
-  @JSName("default")
-  def default_details(selector: elementDashReadyLib.elementDashReadyLibStrings.details): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDetailsElement] = js.native
-  @JSName("default")
-  def default_details(selector: elementDashReadyLib.elementDashReadyLibStrings.details, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDetailsElement] = js.native
-  @JSName("default")
-  def default_dfn(selector: elementDashReadyLib.elementDashReadyLibStrings.dfn): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_dfn(selector: elementDashReadyLib.elementDashReadyLibStrings.dfn, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_dialog(selector: elementDashReadyLib.elementDashReadyLibStrings.dialog): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDialogElement] = js.native
-  @JSName("default")
-  def default_dialog(selector: elementDashReadyLib.elementDashReadyLibStrings.dialog, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDialogElement] = js.native
-  @JSName("default")
-  def default_dir(selector: elementDashReadyLib.elementDashReadyLibStrings.dir): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDirectoryElement] = js.native
-  @JSName("default")
-  def default_dir(selector: elementDashReadyLib.elementDashReadyLibStrings.dir, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDirectoryElement] = js.native
-  @JSName("default")
-  def default_div(selector: elementDashReadyLib.elementDashReadyLibStrings.div): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDivElement] = js.native
-  @JSName("default")
-  def default_div(selector: elementDashReadyLib.elementDashReadyLibStrings.div, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDivElement] = js.native
-  @JSName("default")
-  def default_dl(selector: elementDashReadyLib.elementDashReadyLibStrings.dl): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDListElement] = js.native
-  @JSName("default")
-  def default_dl(selector: elementDashReadyLib.elementDashReadyLibStrings.dl, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLDListElement] = js.native
-  @JSName("default")
-  def default_dt(selector: elementDashReadyLib.elementDashReadyLibStrings.dt): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_dt(selector: elementDashReadyLib.elementDashReadyLibStrings.dt, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_ellipse(selector: elementDashReadyLib.elementDashReadyLibStrings.ellipse): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGEllipseElement] = js.native
-  @JSName("default")
-  def default_ellipse(selector: elementDashReadyLib.elementDashReadyLibStrings.ellipse, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGEllipseElement] = js.native
-  @JSName("default")
-  def default_em(selector: elementDashReadyLib.elementDashReadyLibStrings.em): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_em(selector: elementDashReadyLib.elementDashReadyLibStrings.em, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_embed(selector: elementDashReadyLib.elementDashReadyLibStrings.embed): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLEmbedElement] = js.native
-  @JSName("default")
-  def default_embed(selector: elementDashReadyLib.elementDashReadyLibStrings.embed, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLEmbedElement] = js.native
-  @JSName("default")
-  def default_feBlend(selector: elementDashReadyLib.elementDashReadyLibStrings.feBlend): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEBlendElement] = js.native
-  @JSName("default")
-  def default_feBlend(selector: elementDashReadyLib.elementDashReadyLibStrings.feBlend, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEBlendElement] = js.native
-  @JSName("default")
-  def default_feColorMatrix(selector: elementDashReadyLib.elementDashReadyLibStrings.feColorMatrix): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEColorMatrixElement] = js.native
-  @JSName("default")
-  def default_feColorMatrix(selector: elementDashReadyLib.elementDashReadyLibStrings.feColorMatrix, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEColorMatrixElement] = js.native
-  @JSName("default")
-  def default_feComponentTransfer(selector: elementDashReadyLib.elementDashReadyLibStrings.feComponentTransfer): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEComponentTransferElement] = js.native
-  @JSName("default")
-  def default_feComponentTransfer(selector: elementDashReadyLib.elementDashReadyLibStrings.feComponentTransfer, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEComponentTransferElement] = js.native
-  @JSName("default")
-  def default_feComposite(selector: elementDashReadyLib.elementDashReadyLibStrings.feComposite): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFECompositeElement] = js.native
-  @JSName("default")
-  def default_feComposite(selector: elementDashReadyLib.elementDashReadyLibStrings.feComposite, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFECompositeElement] = js.native
-  @JSName("default")
-  def default_feConvolveMatrix(selector: elementDashReadyLib.elementDashReadyLibStrings.feConvolveMatrix): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEConvolveMatrixElement] = js.native
-  @JSName("default")
-  def default_feConvolveMatrix(selector: elementDashReadyLib.elementDashReadyLibStrings.feConvolveMatrix, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEConvolveMatrixElement] = js.native
-  @JSName("default")
-  def default_feDiffuseLighting(selector: elementDashReadyLib.elementDashReadyLibStrings.feDiffuseLighting): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEDiffuseLightingElement] = js.native
-  @JSName("default")
-  def default_feDiffuseLighting(selector: elementDashReadyLib.elementDashReadyLibStrings.feDiffuseLighting, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEDiffuseLightingElement] = js.native
-  @JSName("default")
-  def default_feDisplacementMap(selector: elementDashReadyLib.elementDashReadyLibStrings.feDisplacementMap): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEDisplacementMapElement] = js.native
-  @JSName("default")
-  def default_feDisplacementMap(selector: elementDashReadyLib.elementDashReadyLibStrings.feDisplacementMap, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEDisplacementMapElement] = js.native
-  @JSName("default")
-  def default_feDistantLight(selector: elementDashReadyLib.elementDashReadyLibStrings.feDistantLight): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEDistantLightElement] = js.native
-  @JSName("default")
-  def default_feDistantLight(selector: elementDashReadyLib.elementDashReadyLibStrings.feDistantLight, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEDistantLightElement] = js.native
-  @JSName("default")
-  def default_feFlood(selector: elementDashReadyLib.elementDashReadyLibStrings.feFlood): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFloodElement] = js.native
-  @JSName("default")
-  def default_feFlood(selector: elementDashReadyLib.elementDashReadyLibStrings.feFlood, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFloodElement] = js.native
-  @JSName("default")
-  def default_feFuncA(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncA): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFuncAElement] = js.native
-  @JSName("default")
-  def default_feFuncA(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncA, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFuncAElement] = js.native
-  @JSName("default")
-  def default_feFuncB(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncB): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFuncBElement] = js.native
-  @JSName("default")
-  def default_feFuncB(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncB, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFuncBElement] = js.native
-  @JSName("default")
-  def default_feFuncG(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncG): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFuncGElement] = js.native
-  @JSName("default")
-  def default_feFuncG(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncG, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFuncGElement] = js.native
-  @JSName("default")
-  def default_feFuncR(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncR): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFuncRElement] = js.native
-  @JSName("default")
-  def default_feFuncR(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncR, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEFuncRElement] = js.native
-  @JSName("default")
-  def default_feGaussianBlur(selector: elementDashReadyLib.elementDashReadyLibStrings.feGaussianBlur): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEGaussianBlurElement] = js.native
-  @JSName("default")
-  def default_feGaussianBlur(selector: elementDashReadyLib.elementDashReadyLibStrings.feGaussianBlur, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEGaussianBlurElement] = js.native
-  @JSName("default")
-  def default_feImage(selector: elementDashReadyLib.elementDashReadyLibStrings.feImage): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEImageElement] = js.native
-  @JSName("default")
-  def default_feImage(selector: elementDashReadyLib.elementDashReadyLibStrings.feImage, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEImageElement] = js.native
-  @JSName("default")
-  def default_feMerge(selector: elementDashReadyLib.elementDashReadyLibStrings.feMerge): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEMergeElement] = js.native
-  @JSName("default")
-  def default_feMerge(selector: elementDashReadyLib.elementDashReadyLibStrings.feMerge, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEMergeElement] = js.native
-  @JSName("default")
-  def default_feMergeNode(selector: elementDashReadyLib.elementDashReadyLibStrings.feMergeNode): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEMergeNodeElement] = js.native
-  @JSName("default")
-  def default_feMergeNode(selector: elementDashReadyLib.elementDashReadyLibStrings.feMergeNode, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEMergeNodeElement] = js.native
-  @JSName("default")
-  def default_feMorphology(selector: elementDashReadyLib.elementDashReadyLibStrings.feMorphology): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEMorphologyElement] = js.native
-  @JSName("default")
-  def default_feMorphology(selector: elementDashReadyLib.elementDashReadyLibStrings.feMorphology, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEMorphologyElement] = js.native
-  @JSName("default")
-  def default_feOffset(selector: elementDashReadyLib.elementDashReadyLibStrings.feOffset): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEOffsetElement] = js.native
-  @JSName("default")
-  def default_feOffset(selector: elementDashReadyLib.elementDashReadyLibStrings.feOffset, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEOffsetElement] = js.native
-  @JSName("default")
-  def default_fePointLight(selector: elementDashReadyLib.elementDashReadyLibStrings.fePointLight): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEPointLightElement] = js.native
-  @JSName("default")
-  def default_fePointLight(selector: elementDashReadyLib.elementDashReadyLibStrings.fePointLight, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFEPointLightElement] = js.native
-  @JSName("default")
-  def default_feSpecularLighting(selector: elementDashReadyLib.elementDashReadyLibStrings.feSpecularLighting): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFESpecularLightingElement] = js.native
-  @JSName("default")
-  def default_feSpecularLighting(selector: elementDashReadyLib.elementDashReadyLibStrings.feSpecularLighting, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFESpecularLightingElement] = js.native
-  @JSName("default")
-  def default_feSpotLight(selector: elementDashReadyLib.elementDashReadyLibStrings.feSpotLight): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFESpotLightElement] = js.native
-  @JSName("default")
-  def default_feSpotLight(selector: elementDashReadyLib.elementDashReadyLibStrings.feSpotLight, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFESpotLightElement] = js.native
-  @JSName("default")
-  def default_feTile(selector: elementDashReadyLib.elementDashReadyLibStrings.feTile): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFETileElement] = js.native
-  @JSName("default")
-  def default_feTile(selector: elementDashReadyLib.elementDashReadyLibStrings.feTile, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFETileElement] = js.native
-  @JSName("default")
-  def default_feTurbulence(selector: elementDashReadyLib.elementDashReadyLibStrings.feTurbulence): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFETurbulenceElement] = js.native
-  @JSName("default")
-  def default_feTurbulence(selector: elementDashReadyLib.elementDashReadyLibStrings.feTurbulence, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFETurbulenceElement] = js.native
-  @JSName("default")
-  def default_fieldset(selector: elementDashReadyLib.elementDashReadyLibStrings.fieldset): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFieldSetElement] = js.native
-  @JSName("default")
-  def default_fieldset(selector: elementDashReadyLib.elementDashReadyLibStrings.fieldset, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFieldSetElement] = js.native
-  @JSName("default")
-  def default_figcaption(selector: elementDashReadyLib.elementDashReadyLibStrings.figcaption): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_figcaption(selector: elementDashReadyLib.elementDashReadyLibStrings.figcaption, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_figure(selector: elementDashReadyLib.elementDashReadyLibStrings.figure): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_figure(selector: elementDashReadyLib.elementDashReadyLibStrings.figure, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_filter(selector: elementDashReadyLib.elementDashReadyLibStrings.filter): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFilterElement] = js.native
-  @JSName("default")
-  def default_filter(selector: elementDashReadyLib.elementDashReadyLibStrings.filter, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGFilterElement] = js.native
-  @JSName("default")
-  def default_font(selector: elementDashReadyLib.elementDashReadyLibStrings.font): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFontElement] = js.native
-  @JSName("default")
-  def default_font(selector: elementDashReadyLib.elementDashReadyLibStrings.font, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFontElement] = js.native
-  @JSName("default")
-  def default_footer(selector: elementDashReadyLib.elementDashReadyLibStrings.footer): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_footer(selector: elementDashReadyLib.elementDashReadyLibStrings.footer, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_foreignObject(selector: elementDashReadyLib.elementDashReadyLibStrings.foreignObject): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGForeignObjectElement] = js.native
-  @JSName("default")
-  def default_foreignObject(selector: elementDashReadyLib.elementDashReadyLibStrings.foreignObject, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGForeignObjectElement] = js.native
-  @JSName("default")
-  def default_form(selector: elementDashReadyLib.elementDashReadyLibStrings.form): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFormElement] = js.native
-  @JSName("default")
-  def default_form(selector: elementDashReadyLib.elementDashReadyLibStrings.form, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFormElement] = js.native
-  @JSName("default")
-  def default_frame(selector: elementDashReadyLib.elementDashReadyLibStrings.frame): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFrameElement] = js.native
-  @JSName("default")
-  def default_frame(selector: elementDashReadyLib.elementDashReadyLibStrings.frame, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFrameElement] = js.native
-  @JSName("default")
-  def default_frameset(selector: elementDashReadyLib.elementDashReadyLibStrings.frameset): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFrameSetElement] = js.native
-  @JSName("default")
-  def default_frameset(selector: elementDashReadyLib.elementDashReadyLibStrings.frameset, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLFrameSetElement] = js.native
-  @JSName("default")
-  def default_g(selector: elementDashReadyLib.elementDashReadyLibStrings.g): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGGElement] = js.native
-  @JSName("default")
-  def default_g(selector: elementDashReadyLib.elementDashReadyLibStrings.g, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGGElement] = js.native
-  @JSName("default")
-  def default_h1(selector: elementDashReadyLib.elementDashReadyLibStrings.h1): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h1(selector: elementDashReadyLib.elementDashReadyLibStrings.h1, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h2(selector: elementDashReadyLib.elementDashReadyLibStrings.h2): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h2(selector: elementDashReadyLib.elementDashReadyLibStrings.h2, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h3(selector: elementDashReadyLib.elementDashReadyLibStrings.h3): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h3(selector: elementDashReadyLib.elementDashReadyLibStrings.h3, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h4(selector: elementDashReadyLib.elementDashReadyLibStrings.h4): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h4(selector: elementDashReadyLib.elementDashReadyLibStrings.h4, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h5(selector: elementDashReadyLib.elementDashReadyLibStrings.h5): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h5(selector: elementDashReadyLib.elementDashReadyLibStrings.h5, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h6(selector: elementDashReadyLib.elementDashReadyLibStrings.h6): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_h6(selector: elementDashReadyLib.elementDashReadyLibStrings.h6, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadingElement] = js.native
-  @JSName("default")
-  def default_head(selector: elementDashReadyLib.elementDashReadyLibStrings.head): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadElement] = js.native
-  @JSName("default")
-  def default_head(selector: elementDashReadyLib.elementDashReadyLibStrings.head, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHeadElement] = js.native
-  @JSName("default")
-  def default_header(selector: elementDashReadyLib.elementDashReadyLibStrings.header): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_header(selector: elementDashReadyLib.elementDashReadyLibStrings.header, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_hgroup(selector: elementDashReadyLib.elementDashReadyLibStrings.hgroup): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_hgroup(selector: elementDashReadyLib.elementDashReadyLibStrings.hgroup, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_hr(selector: elementDashReadyLib.elementDashReadyLibStrings.hr): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHRElement] = js.native
-  @JSName("default")
-  def default_hr(selector: elementDashReadyLib.elementDashReadyLibStrings.hr, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHRElement] = js.native
-  @JSName("default")
-  def default_html(selector: elementDashReadyLib.elementDashReadyLibStrings.html): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHtmlElement] = js.native
-  @JSName("default")
-  def default_html(selector: elementDashReadyLib.elementDashReadyLibStrings.html, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLHtmlElement] = js.native
-  @JSName("default")
-  def default_i(selector: elementDashReadyLib.elementDashReadyLibStrings.i): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_i(selector: elementDashReadyLib.elementDashReadyLibStrings.i, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_iframe(selector: elementDashReadyLib.elementDashReadyLibStrings.iframe): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLIFrameElement] = js.native
-  @JSName("default")
-  def default_iframe(selector: elementDashReadyLib.elementDashReadyLibStrings.iframe, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLIFrameElement] = js.native
-  @JSName("default")
-  def default_image(selector: elementDashReadyLib.elementDashReadyLibStrings.image): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGImageElement] = js.native
-  @JSName("default")
-  def default_image(selector: elementDashReadyLib.elementDashReadyLibStrings.image, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGImageElement] = js.native
-  @JSName("default")
-  def default_img(selector: elementDashReadyLib.elementDashReadyLibStrings.img): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLImageElement] = js.native
-  @JSName("default")
-  def default_img(selector: elementDashReadyLib.elementDashReadyLibStrings.img, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLImageElement] = js.native
-  @JSName("default")
-  def default_input(selector: elementDashReadyLib.elementDashReadyLibStrings.input): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLInputElement] = js.native
-  @JSName("default")
-  def default_input(selector: elementDashReadyLib.elementDashReadyLibStrings.input, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLInputElement] = js.native
-  @JSName("default")
-  def default_ins(selector: elementDashReadyLib.elementDashReadyLibStrings.ins): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLModElement] = js.native
-  @JSName("default")
-  def default_ins(selector: elementDashReadyLib.elementDashReadyLibStrings.ins, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLModElement] = js.native
-  @JSName("default")
-  def default_kbd(selector: elementDashReadyLib.elementDashReadyLibStrings.kbd): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_kbd(selector: elementDashReadyLib.elementDashReadyLibStrings.kbd, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_label(selector: elementDashReadyLib.elementDashReadyLibStrings.label): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLLabelElement] = js.native
-  @JSName("default")
-  def default_label(selector: elementDashReadyLib.elementDashReadyLibStrings.label, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLLabelElement] = js.native
-  @JSName("default")
-  def default_legend(selector: elementDashReadyLib.elementDashReadyLibStrings.legend): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLLegendElement] = js.native
-  @JSName("default")
-  def default_legend(selector: elementDashReadyLib.elementDashReadyLibStrings.legend, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLLegendElement] = js.native
-  @JSName("default")
-  def default_li(selector: elementDashReadyLib.elementDashReadyLibStrings.li): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLLIElement] = js.native
-  @JSName("default")
-  def default_li(selector: elementDashReadyLib.elementDashReadyLibStrings.li, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLLIElement] = js.native
-  @JSName("default")
-  def default_line(selector: elementDashReadyLib.elementDashReadyLibStrings.line): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGLineElement] = js.native
-  @JSName("default")
-  def default_line(selector: elementDashReadyLib.elementDashReadyLibStrings.line, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGLineElement] = js.native
-  @JSName("default")
-  def default_linearGradient(selector: elementDashReadyLib.elementDashReadyLibStrings.linearGradient): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGLinearGradientElement] = js.native
-  @JSName("default")
-  def default_linearGradient(selector: elementDashReadyLib.elementDashReadyLibStrings.linearGradient, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGLinearGradientElement] = js.native
-  @JSName("default")
-  def default_link(selector: elementDashReadyLib.elementDashReadyLibStrings.link): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLLinkElement] = js.native
-  @JSName("default")
-  def default_link(selector: elementDashReadyLib.elementDashReadyLibStrings.link, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLLinkElement] = js.native
-  @JSName("default")
-  def default_main(selector: elementDashReadyLib.elementDashReadyLibStrings.main): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_main(selector: elementDashReadyLib.elementDashReadyLibStrings.main, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_map(selector: elementDashReadyLib.elementDashReadyLibStrings.map): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMapElement] = js.native
-  @JSName("default")
-  def default_map(selector: elementDashReadyLib.elementDashReadyLibStrings.map, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMapElement] = js.native
-  @JSName("default")
-  def default_mark(selector: elementDashReadyLib.elementDashReadyLibStrings.mark): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_mark(selector: elementDashReadyLib.elementDashReadyLibStrings.mark, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_marker(selector: elementDashReadyLib.elementDashReadyLibStrings.marker): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGMarkerElement] = js.native
-  @JSName("default")
-  def default_marker(selector: elementDashReadyLib.elementDashReadyLibStrings.marker, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGMarkerElement] = js.native
-  @JSName("default")
-  def default_marquee(selector: elementDashReadyLib.elementDashReadyLibStrings.marquee): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMarqueeElement] = js.native
-  @JSName("default")
-  def default_marquee(selector: elementDashReadyLib.elementDashReadyLibStrings.marquee, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMarqueeElement] = js.native
-  @JSName("default")
-  def default_mask(selector: elementDashReadyLib.elementDashReadyLibStrings.mask): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGMaskElement] = js.native
-  @JSName("default")
-  def default_mask(selector: elementDashReadyLib.elementDashReadyLibStrings.mask, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGMaskElement] = js.native
-  @JSName("default")
-  def default_menu(selector: elementDashReadyLib.elementDashReadyLibStrings.menu): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMenuElement] = js.native
-  @JSName("default")
-  def default_menu(selector: elementDashReadyLib.elementDashReadyLibStrings.menu, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMenuElement] = js.native
-  @JSName("default")
-  def default_meta(selector: elementDashReadyLib.elementDashReadyLibStrings.meta): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMetaElement] = js.native
-  @JSName("default")
-  def default_meta(selector: elementDashReadyLib.elementDashReadyLibStrings.meta, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMetaElement] = js.native
-  @JSName("default")
-  def default_metadata(selector: elementDashReadyLib.elementDashReadyLibStrings.metadata): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGMetadataElement] = js.native
-  @JSName("default")
-  def default_metadata(selector: elementDashReadyLib.elementDashReadyLibStrings.metadata, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGMetadataElement] = js.native
-  @JSName("default")
-  def default_meter(selector: elementDashReadyLib.elementDashReadyLibStrings.meter): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMeterElement] = js.native
-  @JSName("default")
-  def default_meter(selector: elementDashReadyLib.elementDashReadyLibStrings.meter, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLMeterElement] = js.native
-  @JSName("default")
-  def default_nav(selector: elementDashReadyLib.elementDashReadyLibStrings.nav): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_nav(selector: elementDashReadyLib.elementDashReadyLibStrings.nav, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_noscript(selector: elementDashReadyLib.elementDashReadyLibStrings.noscript): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_noscript(selector: elementDashReadyLib.elementDashReadyLibStrings.noscript, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_object(selector: elementDashReadyLib.elementDashReadyLibStrings.`object`): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLObjectElement] = js.native
-  @JSName("default")
-  def default_object(selector: elementDashReadyLib.elementDashReadyLibStrings.`object`, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLObjectElement] = js.native
-  @JSName("default")
-  def default_ol(selector: elementDashReadyLib.elementDashReadyLibStrings.ol): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLOListElement] = js.native
-  @JSName("default")
-  def default_ol(selector: elementDashReadyLib.elementDashReadyLibStrings.ol, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLOListElement] = js.native
-  @JSName("default")
-  def default_optgroup(selector: elementDashReadyLib.elementDashReadyLibStrings.optgroup): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLOptGroupElement] = js.native
-  @JSName("default")
-  def default_optgroup(selector: elementDashReadyLib.elementDashReadyLibStrings.optgroup, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLOptGroupElement] = js.native
-  @JSName("default")
-  def default_option(selector: elementDashReadyLib.elementDashReadyLibStrings.option): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLOptionElement] = js.native
-  @JSName("default")
-  def default_option(selector: elementDashReadyLib.elementDashReadyLibStrings.option, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLOptionElement] = js.native
-  @JSName("default")
-  def default_output(selector: elementDashReadyLib.elementDashReadyLibStrings.output): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLOutputElement] = js.native
-  @JSName("default")
-  def default_output(selector: elementDashReadyLib.elementDashReadyLibStrings.output, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLOutputElement] = js.native
-  @JSName("default")
-  def default_p(selector: elementDashReadyLib.elementDashReadyLibStrings.p): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLParagraphElement] = js.native
-  @JSName("default")
-  def default_p(selector: elementDashReadyLib.elementDashReadyLibStrings.p, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLParagraphElement] = js.native
-  @JSName("default")
-  def default_param(selector: elementDashReadyLib.elementDashReadyLibStrings.param): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLParamElement] = js.native
-  @JSName("default")
-  def default_param(selector: elementDashReadyLib.elementDashReadyLibStrings.param, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLParamElement] = js.native
-  @JSName("default")
-  def default_path(selector: elementDashReadyLib.elementDashReadyLibStrings.path): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGPathElement] = js.native
-  @JSName("default")
-  def default_path(selector: elementDashReadyLib.elementDashReadyLibStrings.path, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGPathElement] = js.native
-  @JSName("default")
-  def default_pattern(selector: elementDashReadyLib.elementDashReadyLibStrings.pattern): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGPatternElement] = js.native
-  @JSName("default")
-  def default_pattern(selector: elementDashReadyLib.elementDashReadyLibStrings.pattern, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGPatternElement] = js.native
-  @JSName("default")
-  def default_picture(selector: elementDashReadyLib.elementDashReadyLibStrings.picture): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLPictureElement] = js.native
-  @JSName("default")
-  def default_picture(selector: elementDashReadyLib.elementDashReadyLibStrings.picture, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLPictureElement] = js.native
-  @JSName("default")
-  def default_polygon(selector: elementDashReadyLib.elementDashReadyLibStrings.polygon): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGPolygonElement] = js.native
-  @JSName("default")
-  def default_polygon(selector: elementDashReadyLib.elementDashReadyLibStrings.polygon, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGPolygonElement] = js.native
-  @JSName("default")
-  def default_polyline(selector: elementDashReadyLib.elementDashReadyLibStrings.polyline): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGPolylineElement] = js.native
-  @JSName("default")
-  def default_polyline(selector: elementDashReadyLib.elementDashReadyLibStrings.polyline, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGPolylineElement] = js.native
-  @JSName("default")
-  def default_pre(selector: elementDashReadyLib.elementDashReadyLibStrings.pre): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLPreElement] = js.native
-  @JSName("default")
-  def default_pre(selector: elementDashReadyLib.elementDashReadyLibStrings.pre, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLPreElement] = js.native
-  @JSName("default")
-  def default_progress(selector: elementDashReadyLib.elementDashReadyLibStrings.progress): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLProgressElement] = js.native
-  @JSName("default")
-  def default_progress(selector: elementDashReadyLib.elementDashReadyLibStrings.progress, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLProgressElement] = js.native
-  @JSName("default")
-  def default_q(selector: elementDashReadyLib.elementDashReadyLibStrings.q): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLQuoteElement] = js.native
-  @JSName("default")
-  def default_q(selector: elementDashReadyLib.elementDashReadyLibStrings.q, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLQuoteElement] = js.native
-  @JSName("default")
-  def default_radialGradient(selector: elementDashReadyLib.elementDashReadyLibStrings.radialGradient): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGRadialGradientElement] = js.native
-  @JSName("default")
-  def default_radialGradient(selector: elementDashReadyLib.elementDashReadyLibStrings.radialGradient, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGRadialGradientElement] = js.native
-  @JSName("default")
-  def default_rect(selector: elementDashReadyLib.elementDashReadyLibStrings.rect): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGRectElement] = js.native
-  @JSName("default")
-  def default_rect(selector: elementDashReadyLib.elementDashReadyLibStrings.rect, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGRectElement] = js.native
-  @JSName("default")
-  def default_rp(selector: elementDashReadyLib.elementDashReadyLibStrings.rp): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_rp(selector: elementDashReadyLib.elementDashReadyLibStrings.rp, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_rt(selector: elementDashReadyLib.elementDashReadyLibStrings.rt): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_rt(selector: elementDashReadyLib.elementDashReadyLibStrings.rt, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_ruby(selector: elementDashReadyLib.elementDashReadyLibStrings.ruby): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_ruby(selector: elementDashReadyLib.elementDashReadyLibStrings.ruby, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_s(selector: elementDashReadyLib.elementDashReadyLibStrings.s): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_s(selector: elementDashReadyLib.elementDashReadyLibStrings.s, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_samp(selector: elementDashReadyLib.elementDashReadyLibStrings.samp): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_samp(selector: elementDashReadyLib.elementDashReadyLibStrings.samp, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_script(selector: elementDashReadyLib.elementDashReadyLibStrings.script): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLScriptElement] = js.native
-  @JSName("default")
-  def default_script(selector: elementDashReadyLib.elementDashReadyLibStrings.script, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLScriptElement] = js.native
-  @JSName("default")
-  def default_section(selector: elementDashReadyLib.elementDashReadyLibStrings.section): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_section(selector: elementDashReadyLib.elementDashReadyLibStrings.section, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_select(selector: elementDashReadyLib.elementDashReadyLibStrings.select): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLSelectElement] = js.native
-  @JSName("default")
-  def default_select(selector: elementDashReadyLib.elementDashReadyLibStrings.select, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLSelectElement] = js.native
-  @JSName("default")
-  def default_slot(selector: elementDashReadyLib.elementDashReadyLibStrings.slot): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLSlotElement] = js.native
-  @JSName("default")
-  def default_slot(selector: elementDashReadyLib.elementDashReadyLibStrings.slot, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLSlotElement] = js.native
-  @JSName("default")
-  def default_small(selector: elementDashReadyLib.elementDashReadyLibStrings.small): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_small(selector: elementDashReadyLib.elementDashReadyLibStrings.small, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_source(selector: elementDashReadyLib.elementDashReadyLibStrings.source): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLSourceElement] = js.native
-  @JSName("default")
-  def default_source(selector: elementDashReadyLib.elementDashReadyLibStrings.source, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLSourceElement] = js.native
-  @JSName("default")
-  def default_span(selector: elementDashReadyLib.elementDashReadyLibStrings.span): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLSpanElement] = js.native
-  @JSName("default")
-  def default_span(selector: elementDashReadyLib.elementDashReadyLibStrings.span, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLSpanElement] = js.native
-  @JSName("default")
-  def default_stop(selector: elementDashReadyLib.elementDashReadyLibStrings.stop): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGStopElement] = js.native
-  @JSName("default")
-  def default_stop(selector: elementDashReadyLib.elementDashReadyLibStrings.stop, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGStopElement] = js.native
-  @JSName("default")
-  def default_strong(selector: elementDashReadyLib.elementDashReadyLibStrings.strong): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_strong(selector: elementDashReadyLib.elementDashReadyLibStrings.strong, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_style(selector: elementDashReadyLib.elementDashReadyLibStrings.style): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLStyleElement] = js.native
-  @JSName("default")
-  def default_style(selector: elementDashReadyLib.elementDashReadyLibStrings.style, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLStyleElement] = js.native
-  @JSName("default")
-  def default_sub(selector: elementDashReadyLib.elementDashReadyLibStrings.sub): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_sub(selector: elementDashReadyLib.elementDashReadyLibStrings.sub, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_summary(selector: elementDashReadyLib.elementDashReadyLibStrings.summary): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_summary(selector: elementDashReadyLib.elementDashReadyLibStrings.summary, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_sup(selector: elementDashReadyLib.elementDashReadyLibStrings.sup): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_sup(selector: elementDashReadyLib.elementDashReadyLibStrings.sup, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_svg(selector: elementDashReadyLib.elementDashReadyLibStrings.svg): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGSVGElement] = js.native
-  @JSName("default")
-  def default_svg(selector: elementDashReadyLib.elementDashReadyLibStrings.svg, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGSVGElement] = js.native
-  @JSName("default")
-  def default_switch(selector: elementDashReadyLib.elementDashReadyLibStrings.switch): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGSwitchElement] = js.native
-  @JSName("default")
-  def default_switch(selector: elementDashReadyLib.elementDashReadyLibStrings.switch, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGSwitchElement] = js.native
-  @JSName("default")
-  def default_symbol(selector: elementDashReadyLib.elementDashReadyLibStrings.symbol): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGSymbolElement] = js.native
-  @JSName("default")
-  def default_symbol(selector: elementDashReadyLib.elementDashReadyLibStrings.symbol, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGSymbolElement] = js.native
-  @JSName("default")
-  def default_table(selector: elementDashReadyLib.elementDashReadyLibStrings.table): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableElement] = js.native
-  @JSName("default")
-  def default_table(selector: elementDashReadyLib.elementDashReadyLibStrings.table, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableElement] = js.native
-  @JSName("default")
-  def default_tbody(selector: elementDashReadyLib.elementDashReadyLibStrings.tbody): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableSectionElement] = js.native
-  @JSName("default")
-  def default_tbody(selector: elementDashReadyLib.elementDashReadyLibStrings.tbody, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableSectionElement] = js.native
-  @JSName("default")
-  def default_td(selector: elementDashReadyLib.elementDashReadyLibStrings.td): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableDataCellElement] = js.native
-  @JSName("default")
-  def default_td(selector: elementDashReadyLib.elementDashReadyLibStrings.td, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableDataCellElement] = js.native
-  @JSName("default")
-  def default_template(selector: elementDashReadyLib.elementDashReadyLibStrings.template): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTemplateElement] = js.native
-  @JSName("default")
-  def default_template(selector: elementDashReadyLib.elementDashReadyLibStrings.template, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTemplateElement] = js.native
-  @JSName("default")
-  def default_text(selector: elementDashReadyLib.elementDashReadyLibStrings.text): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGTextElement] = js.native
-  @JSName("default")
-  def default_text(selector: elementDashReadyLib.elementDashReadyLibStrings.text, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGTextElement] = js.native
-  @JSName("default")
-  def default_textPath(selector: elementDashReadyLib.elementDashReadyLibStrings.textPath): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGTextPathElement] = js.native
-  @JSName("default")
-  def default_textPath(selector: elementDashReadyLib.elementDashReadyLibStrings.textPath, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGTextPathElement] = js.native
-  @JSName("default")
-  def default_textarea(selector: elementDashReadyLib.elementDashReadyLibStrings.textarea): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTextAreaElement] = js.native
-  @JSName("default")
-  def default_textarea(selector: elementDashReadyLib.elementDashReadyLibStrings.textarea, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTextAreaElement] = js.native
-  @JSName("default")
-  def default_tfoot(selector: elementDashReadyLib.elementDashReadyLibStrings.tfoot): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableSectionElement] = js.native
-  @JSName("default")
-  def default_tfoot(selector: elementDashReadyLib.elementDashReadyLibStrings.tfoot, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableSectionElement] = js.native
-  @JSName("default")
-  def default_th(selector: elementDashReadyLib.elementDashReadyLibStrings.th): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableHeaderCellElement] = js.native
-  @JSName("default")
-  def default_th(selector: elementDashReadyLib.elementDashReadyLibStrings.th, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableHeaderCellElement] = js.native
-  @JSName("default")
-  def default_thead(selector: elementDashReadyLib.elementDashReadyLibStrings.thead): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableSectionElement] = js.native
-  @JSName("default")
-  def default_thead(selector: elementDashReadyLib.elementDashReadyLibStrings.thead, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableSectionElement] = js.native
-  @JSName("default")
-  def default_time(selector: elementDashReadyLib.elementDashReadyLibStrings.time): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTimeElement] = js.native
-  @JSName("default")
-  def default_time(selector: elementDashReadyLib.elementDashReadyLibStrings.time, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTimeElement] = js.native
-  @JSName("default")
-  def default_title(selector: elementDashReadyLib.elementDashReadyLibStrings.title): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTitleElement] = js.native
-  @JSName("default")
-  def default_title(selector: elementDashReadyLib.elementDashReadyLibStrings.title, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTitleElement] = js.native
-  @JSName("default")
-  def default_tr(selector: elementDashReadyLib.elementDashReadyLibStrings.tr): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableRowElement] = js.native
-  @JSName("default")
-  def default_tr(selector: elementDashReadyLib.elementDashReadyLibStrings.tr, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTableRowElement] = js.native
-  @JSName("default")
-  def default_track(selector: elementDashReadyLib.elementDashReadyLibStrings.track): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTrackElement] = js.native
-  @JSName("default")
-  def default_track(selector: elementDashReadyLib.elementDashReadyLibStrings.track, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLTrackElement] = js.native
-  @JSName("default")
-  def default_tspan(selector: elementDashReadyLib.elementDashReadyLibStrings.tspan): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGTSpanElement] = js.native
-  @JSName("default")
-  def default_tspan(selector: elementDashReadyLib.elementDashReadyLibStrings.tspan, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGTSpanElement] = js.native
-  @JSName("default")
-  def default_u(selector: elementDashReadyLib.elementDashReadyLibStrings.u): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_u(selector: elementDashReadyLib.elementDashReadyLibStrings.u, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_ul(selector: elementDashReadyLib.elementDashReadyLibStrings.ul): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLUListElement] = js.native
-  @JSName("default")
-  def default_ul(selector: elementDashReadyLib.elementDashReadyLibStrings.ul, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLUListElement] = js.native
-  @JSName("default")
-  def default_use(selector: elementDashReadyLib.elementDashReadyLibStrings.use): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGUseElement] = js.native
-  @JSName("default")
-  def default_use(selector: elementDashReadyLib.elementDashReadyLibStrings.use, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGUseElement] = js.native
-  @JSName("default")
-  def default_var(selector: elementDashReadyLib.elementDashReadyLibStrings.`var`): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_var(selector: elementDashReadyLib.elementDashReadyLibStrings.`var`, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_video(selector: elementDashReadyLib.elementDashReadyLibStrings.video): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLVideoElement] = js.native
-  @JSName("default")
-  def default_video(selector: elementDashReadyLib.elementDashReadyLibStrings.video, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLVideoElement] = js.native
-  @JSName("default")
-  def default_view(selector: elementDashReadyLib.elementDashReadyLibStrings.view): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGViewElement] = js.native
-  @JSName("default")
-  def default_view(selector: elementDashReadyLib.elementDashReadyLibStrings.view, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.SVGViewElement] = js.native
-  @JSName("default")
-  def default_wbr(selector: elementDashReadyLib.elementDashReadyLibStrings.wbr): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
-  @JSName("default")
-  def default_wbr(selector: elementDashReadyLib.elementDashReadyLibStrings.wbr, options: Options): pDashCancelableLib.pDashCancelableMod.^[stdLib.HTMLElement] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.`object`): StoppablePromise[js.UndefOr[stdLib.HTMLObjectElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.`object`, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLObjectElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.`var`): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.`var`, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  /**
+  Detect when an element is ready in the DOM.
+  @param selector - [CSS selector.](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors)
+  @returns The matching element, or `undefined` if the element could not be found.
+  @example
+  ```
+  import elementReady = require('element-ready');
+  (async () => {
+  	const element = await elementReady('#unicorn');
+  	console.log(element.id);
+  	//=> 'unicorn'
+  })();
+  ```
+  */
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.a): StoppablePromise[js.UndefOr[stdLib.SVGAElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.abbr): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.abbr, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.address): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.address, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.a, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGAElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.applet): StoppablePromise[js.UndefOr[stdLib.HTMLAppletElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.applet, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLAppletElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.area): StoppablePromise[js.UndefOr[stdLib.HTMLAreaElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.area, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLAreaElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.article): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.article, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.aside): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.aside, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.audio): StoppablePromise[js.UndefOr[stdLib.HTMLAudioElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.audio, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLAudioElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.b): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.base): StoppablePromise[js.UndefOr[stdLib.HTMLBaseElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.basefont): StoppablePromise[js.UndefOr[stdLib.HTMLBaseFontElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.basefont, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLBaseFontElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.base, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLBaseElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.bdi): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.bdi, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.bdo): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.bdo, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.blockquote): StoppablePromise[js.UndefOr[stdLib.HTMLQuoteElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.blockquote, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLQuoteElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.body): StoppablePromise[js.UndefOr[stdLib.HTMLBodyElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.body, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLBodyElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.b, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.br): StoppablePromise[js.UndefOr[stdLib.HTMLBRElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.br, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLBRElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.button): StoppablePromise[js.UndefOr[stdLib.HTMLButtonElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.button, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLButtonElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.canvas): StoppablePromise[js.UndefOr[stdLib.HTMLCanvasElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.canvas, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLCanvasElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.caption): StoppablePromise[js.UndefOr[stdLib.HTMLTableCaptionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.caption, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableCaptionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.circle): StoppablePromise[js.UndefOr[stdLib.SVGCircleElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.circle, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGCircleElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.cite): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.cite, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.clipPath): StoppablePromise[js.UndefOr[stdLib.SVGClipPathElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.clipPath, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGClipPathElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.code): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.code, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.col): StoppablePromise[js.UndefOr[stdLib.HTMLTableColElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.colgroup): StoppablePromise[js.UndefOr[stdLib.HTMLTableColElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.colgroup, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableColElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.col, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableColElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.data): StoppablePromise[js.UndefOr[stdLib.HTMLDataElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.datalist): StoppablePromise[js.UndefOr[stdLib.HTMLDataListElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.datalist, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLDataListElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.data, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLDataElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dd): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dd, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.defs): StoppablePromise[js.UndefOr[stdLib.SVGDefsElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.defs, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGDefsElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.del): StoppablePromise[js.UndefOr[stdLib.HTMLModElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.del, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLModElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.desc): StoppablePromise[js.UndefOr[stdLib.SVGDescElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.desc, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGDescElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.details): StoppablePromise[js.UndefOr[stdLib.HTMLDetailsElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.details, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLDetailsElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dfn): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dfn, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dialog): StoppablePromise[js.UndefOr[stdLib.HTMLDialogElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dialog, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLDialogElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dir): StoppablePromise[js.UndefOr[stdLib.HTMLDirectoryElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dir, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLDirectoryElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.div): StoppablePromise[js.UndefOr[stdLib.HTMLDivElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.div, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLDivElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dl): StoppablePromise[js.UndefOr[stdLib.HTMLDListElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dl, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLDListElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dt): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.dt, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ellipse): StoppablePromise[js.UndefOr[stdLib.SVGEllipseElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ellipse, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGEllipseElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.em): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.embed): StoppablePromise[js.UndefOr[stdLib.HTMLEmbedElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.embed, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLEmbedElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.em, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feBlend): StoppablePromise[js.UndefOr[stdLib.SVGFEBlendElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feBlend, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEBlendElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feColorMatrix): StoppablePromise[js.UndefOr[stdLib.SVGFEColorMatrixElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feColorMatrix, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEColorMatrixElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feComponentTransfer): StoppablePromise[js.UndefOr[stdLib.SVGFEComponentTransferElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feComponentTransfer, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEComponentTransferElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feComposite): StoppablePromise[js.UndefOr[stdLib.SVGFECompositeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feComposite, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFECompositeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feConvolveMatrix): StoppablePromise[js.UndefOr[stdLib.SVGFEConvolveMatrixElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feConvolveMatrix, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEConvolveMatrixElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feDiffuseLighting): StoppablePromise[js.UndefOr[stdLib.SVGFEDiffuseLightingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feDiffuseLighting, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEDiffuseLightingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feDisplacementMap): StoppablePromise[js.UndefOr[stdLib.SVGFEDisplacementMapElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feDisplacementMap, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEDisplacementMapElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feDistantLight): StoppablePromise[js.UndefOr[stdLib.SVGFEDistantLightElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feDistantLight, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEDistantLightElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFlood): StoppablePromise[js.UndefOr[stdLib.SVGFEFloodElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFlood, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEFloodElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncA): StoppablePromise[js.UndefOr[stdLib.SVGFEFuncAElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncA, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEFuncAElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncB): StoppablePromise[js.UndefOr[stdLib.SVGFEFuncBElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncB, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEFuncBElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncG): StoppablePromise[js.UndefOr[stdLib.SVGFEFuncGElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncG, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEFuncGElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncR): StoppablePromise[js.UndefOr[stdLib.SVGFEFuncRElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feFuncR, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEFuncRElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feGaussianBlur): StoppablePromise[js.UndefOr[stdLib.SVGFEGaussianBlurElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feGaussianBlur, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEGaussianBlurElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feImage): StoppablePromise[js.UndefOr[stdLib.SVGFEImageElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feImage, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEImageElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feMerge): StoppablePromise[js.UndefOr[stdLib.SVGFEMergeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feMergeNode): StoppablePromise[js.UndefOr[stdLib.SVGFEMergeNodeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feMergeNode, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEMergeNodeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feMerge, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEMergeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feMorphology): StoppablePromise[js.UndefOr[stdLib.SVGFEMorphologyElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feMorphology, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEMorphologyElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feOffset): StoppablePromise[js.UndefOr[stdLib.SVGFEOffsetElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feOffset, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEOffsetElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.fePointLight): StoppablePromise[js.UndefOr[stdLib.SVGFEPointLightElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.fePointLight, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFEPointLightElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feSpecularLighting): StoppablePromise[js.UndefOr[stdLib.SVGFESpecularLightingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feSpecularLighting, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFESpecularLightingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feSpotLight): StoppablePromise[js.UndefOr[stdLib.SVGFESpotLightElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feSpotLight, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFESpotLightElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feTile): StoppablePromise[js.UndefOr[stdLib.SVGFETileElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feTile, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFETileElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feTurbulence): StoppablePromise[js.UndefOr[stdLib.SVGFETurbulenceElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.feTurbulence, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFETurbulenceElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.fieldset): StoppablePromise[js.UndefOr[stdLib.HTMLFieldSetElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.fieldset, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLFieldSetElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.figcaption): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.figcaption, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.figure): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.figure, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.filter): StoppablePromise[js.UndefOr[stdLib.SVGFilterElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.filter, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGFilterElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.font): StoppablePromise[js.UndefOr[stdLib.HTMLFontElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.font, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLFontElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.footer): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.footer, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.foreignObject): StoppablePromise[js.UndefOr[stdLib.SVGForeignObjectElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.foreignObject, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGForeignObjectElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.form): StoppablePromise[js.UndefOr[stdLib.HTMLFormElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.form, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLFormElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.frame): StoppablePromise[js.UndefOr[stdLib.HTMLFrameElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.frame, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLFrameElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.frameset): StoppablePromise[js.UndefOr[stdLib.HTMLFrameSetElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.frameset, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLFrameSetElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.g): StoppablePromise[js.UndefOr[stdLib.SVGGElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.g, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGGElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h1): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h1, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h2): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h2, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h3): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h3, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h4): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h4, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h5): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h5, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h6): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.h6, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLHeadingElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.head): StoppablePromise[js.UndefOr[stdLib.HTMLHeadElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.header): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.header, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.head, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLHeadElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.hgroup): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.hgroup, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.hr): StoppablePromise[js.UndefOr[stdLib.HTMLHRElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.hr, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLHRElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.html): StoppablePromise[js.UndefOr[stdLib.HTMLHtmlElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.html, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLHtmlElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.i): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.iframe): StoppablePromise[js.UndefOr[stdLib.HTMLIFrameElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.iframe, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLIFrameElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.image): StoppablePromise[js.UndefOr[stdLib.SVGImageElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.image, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGImageElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.img): StoppablePromise[js.UndefOr[stdLib.HTMLImageElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.img, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLImageElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.input): StoppablePromise[js.UndefOr[stdLib.HTMLInputElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.input, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLInputElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ins): StoppablePromise[js.UndefOr[stdLib.HTMLModElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ins, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLModElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.i, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.kbd): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.kbd, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.label): StoppablePromise[js.UndefOr[stdLib.HTMLLabelElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.label, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLLabelElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.legend): StoppablePromise[js.UndefOr[stdLib.HTMLLegendElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.legend, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLLegendElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.li): StoppablePromise[js.UndefOr[stdLib.HTMLLIElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.line): StoppablePromise[js.UndefOr[stdLib.SVGLineElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.linearGradient): StoppablePromise[js.UndefOr[stdLib.SVGLinearGradientElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.linearGradient, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGLinearGradientElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.line, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGLineElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.link): StoppablePromise[js.UndefOr[stdLib.HTMLLinkElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.link, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLLinkElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.li, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLLIElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.main): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.main, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.map): StoppablePromise[js.UndefOr[stdLib.HTMLMapElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.map, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLMapElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.mark): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.marker): StoppablePromise[js.UndefOr[stdLib.SVGMarkerElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.marker, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGMarkerElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.mark, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.marquee): StoppablePromise[js.UndefOr[stdLib.HTMLMarqueeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.marquee, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLMarqueeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.mask): StoppablePromise[js.UndefOr[stdLib.SVGMaskElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.mask, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGMaskElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.menu): StoppablePromise[js.UndefOr[stdLib.HTMLMenuElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.menu, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLMenuElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.meta): StoppablePromise[js.UndefOr[stdLib.HTMLMetaElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.metadata): StoppablePromise[js.UndefOr[stdLib.SVGMetadataElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.metadata, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGMetadataElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.meta, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLMetaElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.meter): StoppablePromise[js.UndefOr[stdLib.HTMLMeterElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.meter, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLMeterElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.nav): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.nav, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.noscript): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.noscript, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ol): StoppablePromise[js.UndefOr[stdLib.HTMLOListElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ol, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLOListElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.optgroup): StoppablePromise[js.UndefOr[stdLib.HTMLOptGroupElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.optgroup, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLOptGroupElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.option): StoppablePromise[js.UndefOr[stdLib.HTMLOptionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.option, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLOptionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.output): StoppablePromise[js.UndefOr[stdLib.HTMLOutputElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.output, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLOutputElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.p): StoppablePromise[js.UndefOr[stdLib.HTMLParagraphElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.param): StoppablePromise[js.UndefOr[stdLib.HTMLParamElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.param, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLParamElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.path): StoppablePromise[js.UndefOr[stdLib.SVGPathElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.path, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGPathElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.pattern): StoppablePromise[js.UndefOr[stdLib.SVGPatternElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.pattern, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGPatternElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.picture): StoppablePromise[js.UndefOr[stdLib.HTMLPictureElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.picture, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLPictureElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.polygon): StoppablePromise[js.UndefOr[stdLib.SVGPolygonElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.polygon, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGPolygonElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.polyline): StoppablePromise[js.UndefOr[stdLib.SVGPolylineElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.polyline, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGPolylineElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.p, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLParagraphElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.pre): StoppablePromise[js.UndefOr[stdLib.HTMLPreElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.pre, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLPreElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.progress): StoppablePromise[js.UndefOr[stdLib.HTMLProgressElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.progress, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLProgressElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.q): StoppablePromise[js.UndefOr[stdLib.HTMLQuoteElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.q, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLQuoteElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.radialGradient): StoppablePromise[js.UndefOr[stdLib.SVGRadialGradientElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.radialGradient, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGRadialGradientElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.rect): StoppablePromise[js.UndefOr[stdLib.SVGRectElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.rect, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGRectElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.rp): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.rp, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.rt): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.rt, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ruby): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ruby, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.s): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.samp): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.samp, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.script): StoppablePromise[js.UndefOr[stdLib.SVGScriptElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.script, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGScriptElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.section): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.section, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.select): StoppablePromise[js.UndefOr[stdLib.HTMLSelectElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.select, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLSelectElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.slot): StoppablePromise[js.UndefOr[stdLib.HTMLSlotElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.slot, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLSlotElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.small): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.small, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.s, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.source): StoppablePromise[js.UndefOr[stdLib.HTMLSourceElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.source, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLSourceElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.span): StoppablePromise[js.UndefOr[stdLib.HTMLSpanElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.span, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLSpanElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.stop): StoppablePromise[js.UndefOr[stdLib.SVGStopElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.stop, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGStopElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.strong): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.strong, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.style): StoppablePromise[js.UndefOr[stdLib.SVGStyleElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.style, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGStyleElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.sub): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.sub, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.summary): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.summary, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.sup): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.sup, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.svg): StoppablePromise[js.UndefOr[stdLib.SVGSVGElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.svg, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGSVGElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.switch): StoppablePromise[js.UndefOr[stdLib.SVGSwitchElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.switch, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGSwitchElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.symbol): StoppablePromise[js.UndefOr[stdLib.SVGSymbolElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.symbol, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGSymbolElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.table): StoppablePromise[js.UndefOr[stdLib.HTMLTableElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.table, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.tbody): StoppablePromise[js.UndefOr[stdLib.HTMLTableSectionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.tbody, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableSectionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.td): StoppablePromise[js.UndefOr[stdLib.HTMLTableDataCellElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.td, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableDataCellElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.template): StoppablePromise[js.UndefOr[stdLib.HTMLTemplateElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.template, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTemplateElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.text): StoppablePromise[js.UndefOr[stdLib.SVGTextElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.textPath): StoppablePromise[js.UndefOr[stdLib.SVGTextPathElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.textPath, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGTextPathElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.textarea): StoppablePromise[js.UndefOr[stdLib.HTMLTextAreaElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.textarea, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTextAreaElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.text, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGTextElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.tfoot): StoppablePromise[js.UndefOr[stdLib.HTMLTableSectionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.tfoot, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableSectionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.th): StoppablePromise[js.UndefOr[stdLib.HTMLTableHeaderCellElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.thead): StoppablePromise[js.UndefOr[stdLib.HTMLTableSectionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.thead, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableSectionElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.th, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableHeaderCellElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.time): StoppablePromise[js.UndefOr[stdLib.HTMLTimeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.time, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTimeElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.title): StoppablePromise[js.UndefOr[stdLib.SVGTitleElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.title, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGTitleElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.tr): StoppablePromise[js.UndefOr[stdLib.HTMLTableRowElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.track): StoppablePromise[js.UndefOr[stdLib.HTMLTrackElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.track, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTrackElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.tr, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLTableRowElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.tspan): StoppablePromise[js.UndefOr[stdLib.SVGTSpanElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.tspan, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGTSpanElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.u): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ul): StoppablePromise[js.UndefOr[stdLib.HTMLUListElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.ul, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLUListElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.u, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.use): StoppablePromise[js.UndefOr[stdLib.SVGUseElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.use, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGUseElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.video): StoppablePromise[js.UndefOr[stdLib.HTMLVideoElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.video, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLVideoElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.view): StoppablePromise[js.UndefOr[stdLib.SVGViewElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.view, options: Options): StoppablePromise[js.UndefOr[stdLib.SVGViewElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.wbr): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply(selector: elementDashReadyLib.elementDashReadyLibStrings.wbr, options: Options): StoppablePromise[js.UndefOr[stdLib.HTMLElement]] = js.native
+  def apply[ElementName /* <: stdLib.Element */](selector: java.lang.String): StoppablePromise[js.UndefOr[ElementName]] = js.native
+  def apply[ElementName /* <: stdLib.Element */](selector: java.lang.String, options: Options): StoppablePromise[js.UndefOr[ElementName]] = js.native
 }
 

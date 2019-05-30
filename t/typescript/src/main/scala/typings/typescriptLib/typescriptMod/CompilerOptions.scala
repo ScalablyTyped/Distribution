@@ -9,6 +9,7 @@ trait CompilerOptions
   extends /* option */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[CompilerOptionsValue | TsConfigSourceFile]] {
   var allowJs: js.UndefOr[scala.Boolean] = js.undefined
   var allowSyntheticDefaultImports: js.UndefOr[scala.Boolean] = js.undefined
+  var allowUmdGlobalAccess: js.UndefOr[scala.Boolean] = js.undefined
   var allowUnreachableCode: js.UndefOr[scala.Boolean] = js.undefined
   var allowUnusedLabels: js.UndefOr[scala.Boolean] = js.undefined
   var alwaysStrict: js.UndefOr[scala.Boolean] = js.undefined
@@ -94,6 +95,7 @@ object CompilerOptions {
     StringDictionary: /* option */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[CompilerOptionsValue | TsConfigSourceFile]] = null,
     allowJs: js.UndefOr[scala.Boolean] = js.undefined,
     allowSyntheticDefaultImports: js.UndefOr[scala.Boolean] = js.undefined,
+    allowUmdGlobalAccess: js.UndefOr[scala.Boolean] = js.undefined,
     allowUnreachableCode: js.UndefOr[scala.Boolean] = js.undefined,
     allowUnusedLabels: js.UndefOr[scala.Boolean] = js.undefined,
     alwaysStrict: js.UndefOr[scala.Boolean] = js.undefined,
@@ -175,6 +177,7 @@ object CompilerOptions {
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (!js.isUndefined(allowJs)) __obj.updateDynamic("allowJs")(allowJs)
     if (!js.isUndefined(allowSyntheticDefaultImports)) __obj.updateDynamic("allowSyntheticDefaultImports")(allowSyntheticDefaultImports)
+    if (!js.isUndefined(allowUmdGlobalAccess)) __obj.updateDynamic("allowUmdGlobalAccess")(allowUmdGlobalAccess)
     if (!js.isUndefined(allowUnreachableCode)) __obj.updateDynamic("allowUnreachableCode")(allowUnreachableCode)
     if (!js.isUndefined(allowUnusedLabels)) __obj.updateDynamic("allowUnusedLabels")(allowUnusedLabels)
     if (!js.isUndefined(alwaysStrict)) __obj.updateDynamic("alwaysStrict")(alwaysStrict)

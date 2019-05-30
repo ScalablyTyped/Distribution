@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait ResourceDetails extends js.Object {
   /**
-    * The details of an AWS EC2 instance.
+    * The details of an Amazon EC2 instance.
     */
   var AwsEc2Instance: js.UndefOr[AwsEc2InstanceDetails] = js.undefined
   /**
-    * AWS IAM access key details related to a finding.
+    * IAM access key details related to a finding.
     */
   var AwsIamAccessKey: js.UndefOr[AwsIamAccessKeyDetails] = js.undefined
   /**
-    * The details of an AWS S3 Bucket.
+    * The details of an Amazon S3 Bucket.
     */
   var AwsS3Bucket: js.UndefOr[AwsS3BucketDetails] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait ResourceDetails extends js.Object {
     */
   var Container: js.UndefOr[ContainerDetails] = js.undefined
   /**
-    * The details of a resource that does not have a specific sub-field for the resource type defined.
+    * The details of a resource that doesn't have a specific subfield for the resource type defined.
     */
   var Other: js.UndefOr[FieldMap] = js.undefined
 }

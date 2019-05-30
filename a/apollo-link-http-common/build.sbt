@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "apollo-link-http-common"
-version := "0.2.13-710eb5"
+version := "0.2.13-8f68ba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.11-527c94",
-  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-3e2174",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-17198b",
-  "org.scalablytyped" %%% "std" % "3.4-ef47bb",
-  "org.scalablytyped" %%% "ts-invariant" % "0.4.2-0fbd4d",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.18-508485")
+  "org.scalablytyped" %%% "apollo-link" % "1.2.11-1d20bf",
+  "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-a67bc6",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-2c614a",
+  "org.scalablytyped" %%% "std" % "3.5-f010ac",
+  "org.scalablytyped" %%% "ts-invariant" % "0.4.2-23c313",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.18-7ac41d")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

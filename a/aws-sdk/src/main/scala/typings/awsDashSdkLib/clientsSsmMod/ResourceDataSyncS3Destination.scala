@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ResourceDataSyncS3Destination extends js.Object {
   /**
-    * The ARN of an encryption key for a destination in Amazon S3. Must belong to the same region as the destination Amazon S3 bucket.
+    * The ARN of an encryption key for a destination in Amazon S3. Must belong to the same Region as the destination Amazon S3 bucket.
     */
   var AWSKMSKeyARN: js.UndefOr[ResourceDataSyncAWSKMSKeyARN] = js.undefined
   /**

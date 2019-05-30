@@ -439,7 +439,11 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def omit(properties: js.Array[java.lang.String]): this.type = js.native
   def onBuild(fn: js.Function1[/* builder */ this.type, scala.Unit]): this.type = js.native
   def onBuildKnex(
-    fn: js.Function2[/* knexBuilder */ knexLib.knexMod.QueryBuilder, /* builder */ this.type, scala.Unit]
+    fn: js.Function2[
+      /* knexBuilder */ knexLib.knexMod.QueryBuilder[_, js.Array[knexLib.knexMod.SafePartial[_]]], 
+      /* builder */ this.type, 
+      scala.Unit
+    ]
   ): this.type = js.native
   def onError(fn: js.Function2[/* error */ stdLib.Error, /* builder */ this.type, _]): this.type = js.native
   def orWhereJsonHasAll(fieldExpression: FieldExpression, keys: java.lang.String): QueryBuilder[QM, RM, RV] = js.native

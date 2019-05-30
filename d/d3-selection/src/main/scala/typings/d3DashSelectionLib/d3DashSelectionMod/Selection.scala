@@ -93,11 +93,7 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_caption(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.caption): Selection[stdLib.HTMLTableCaptionElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_circle(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.circle): Selection[stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_cite(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.cite): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_clipPath(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath): Selection[stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_code(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.code): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
@@ -111,11 +107,7 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_dd(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.dd): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_defs(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.defs): Selection[stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_del(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.del): Selection[stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_desc(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.desc): Selection[stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_details(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.details): Selection[stdLib.HTMLDetailsElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
@@ -131,59 +123,9 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_dt(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.dt): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_ellipse(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse): Selection[stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_em(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.em): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_embed(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.embed): Selection[stdLib.HTMLEmbedElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feBlend(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend): Selection[stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feColorMatrix(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix): Selection[stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feComponentTransfer(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer): Selection[stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feComposite(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite): Selection[stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feConvolveMatrix(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix): Selection[stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feDiffuseLighting(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting): Selection[stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feDisplacementMap(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap): Selection[stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feDistantLight(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight): Selection[stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feFlood(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood): Selection[stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feFuncA(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA): Selection[stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feFuncB(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB): Selection[stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feFuncG(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG): Selection[stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feFuncR(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR): Selection[stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feGaussianBlur(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur): Selection[stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feImage(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feImage): Selection[stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feMerge(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge): Selection[stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feMergeNode(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode): Selection[stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feMorphology(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology): Selection[stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feOffset(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset): Selection[stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_fePointLight(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight): Selection[stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feSpecularLighting(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting): Selection[stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feSpotLight(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight): Selection[stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feTile(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feTile): Selection[stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_feTurbulence(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence): Selection[stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_fieldset(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.fieldset): Selection[stdLib.HTMLFieldSetElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
@@ -191,21 +133,15 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_figure(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.figure): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_filter(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.filter): Selection[stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_font(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.font): Selection[stdLib.HTMLFontElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_footer(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.footer): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_foreignObject(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject): Selection[stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_form(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.form): Selection[stdLib.HTMLFormElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_frame(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.frame): Selection[stdLib.HTMLFrameElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_frameset(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.frameset): Selection[stdLib.HTMLFrameSetElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_g(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.g): Selection[stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_h1(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.h1): Selection[stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
@@ -233,8 +169,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_iframe(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.iframe): Selection[stdLib.HTMLIFrameElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_image(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.image): Selection[stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_img(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.img): Selection[stdLib.HTMLImageElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_input(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.input): Selection[stdLib.HTMLInputElement, Datum, PElement, PDatum] = js.native
@@ -249,10 +183,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_li(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.li): Selection[stdLib.HTMLLIElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_line(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.line): Selection[stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_linearGradient(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient): Selection[stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_link(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.link): Selection[stdLib.HTMLLinkElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_main(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.main): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
@@ -261,17 +191,11 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_mark(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.mark): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_marker(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.marker): Selection[stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_marquee(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.marquee): Selection[stdLib.HTMLMarqueeElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_mask(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.mask): Selection[stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_menu(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.menu): Selection[stdLib.HTMLMenuElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_meta(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.meta): Selection[stdLib.HTMLMetaElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_metadata(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.metadata): Selection[stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_meter(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.meter): Selection[stdLib.HTMLMeterElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
@@ -293,25 +217,13 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_param(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.param): Selection[stdLib.HTMLParamElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_path(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.path): Selection[stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_pattern(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.pattern): Selection[stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_picture(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.picture): Selection[stdLib.HTMLPictureElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_polygon(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.polygon): Selection[stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_polyline(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.polyline): Selection[stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_pre(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.pre): Selection[stdLib.HTMLPreElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_progress(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.progress): Selection[stdLib.HTMLProgressElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_q(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.q): Selection[stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_radialGradient(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient): Selection[stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_rect(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rect): Selection[stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_rp(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rp): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
@@ -337,8 +249,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_span(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.span): Selection[stdLib.HTMLSpanElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_stop(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.stop): Selection[stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_strong(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.strong): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_style(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.style): Selection[stdLib.HTMLStyleElement, Datum, PElement, PDatum] = js.native
@@ -349,12 +259,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_sup(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.sup): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_svg(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.svg): Selection[stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_switch(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.switch): Selection[stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_symbol(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.symbol): Selection[stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_table(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.table): Selection[stdLib.HTMLTableElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_tbody(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.tbody): Selection[stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
@@ -362,10 +266,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   def append_td(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.td): Selection[stdLib.HTMLTableDataCellElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_template(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.template): Selection[stdLib.HTMLTemplateElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_text(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.text): Selection[stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_textPath(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.textPath): Selection[stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_textarea(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.textarea): Selection[stdLib.HTMLTextAreaElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
@@ -383,19 +283,13 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("append")
   def append_track(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.track): Selection[stdLib.HTMLTrackElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_tspan(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.tspan): Selection[stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_u(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.u): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_ul(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.ul): Selection[stdLib.HTMLUListElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
-  def append_use(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.use): Selection[stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
   def append_var(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.`var`): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_video(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.video): Selection[stdLib.HTMLVideoElement, Datum, PElement, PDatum] = js.native
-  @JSName("append")
-  def append_view(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.view): Selection[stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
   @JSName("append")
   def append_wbr(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.wbr): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   /**
@@ -914,15 +808,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_caption(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.caption, before: java.lang.String): Selection[stdLib.HTMLTableCaptionElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_circle(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.circle): Selection[stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_circle(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.circle,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_circle(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.circle, before: java.lang.String): Selection[stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_cite(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.cite): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_cite(
@@ -931,15 +816,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_cite(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.cite, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_clipPath(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath): Selection[stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_clipPath(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_clipPath(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath, before: java.lang.String): Selection[stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_code(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.code): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -995,15 +871,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_dd(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.dd, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_defs(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.defs): Selection[stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_defs(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.defs,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_defs(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.defs, before: java.lang.String): Selection[stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_del(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.del): Selection[stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_del(
@@ -1012,15 +879,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_del(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.del, before: java.lang.String): Selection[stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_desc(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.desc): Selection[stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_desc(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.desc,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_desc(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.desc, before: java.lang.String): Selection[stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_details(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.details): Selection[stdLib.HTMLDetailsElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -1085,15 +943,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_dt(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.dt, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_ellipse(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse): Selection[stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_ellipse(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_ellipse(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse, before: java.lang.String): Selection[stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_em(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.em): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_em(
@@ -1111,222 +960,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLEmbedElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_embed(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.embed, before: java.lang.String): Selection[stdLib.HTMLEmbedElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feBlend(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend): Selection[stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feBlend(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feBlend(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend, before: java.lang.String): Selection[stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feColorMatrix(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix): Selection[stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feColorMatrix(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feColorMatrix(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix, before: java.lang.String): Selection[stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feComponentTransfer(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer): Selection[stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feComponentTransfer(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feComponentTransfer(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer, before: java.lang.String): Selection[stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feComposite(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite): Selection[stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feComposite(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feComposite(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite, before: java.lang.String): Selection[stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feConvolveMatrix(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix): Selection[stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feConvolveMatrix(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feConvolveMatrix(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix, before: java.lang.String): Selection[stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feDiffuseLighting(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting): Selection[stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feDiffuseLighting(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feDiffuseLighting(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting, before: java.lang.String): Selection[stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feDisplacementMap(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap): Selection[stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feDisplacementMap(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feDisplacementMap(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap, before: java.lang.String): Selection[stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feDistantLight(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight): Selection[stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feDistantLight(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feDistantLight(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight, before: java.lang.String): Selection[stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFlood(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood): Selection[stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFlood(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFlood(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood, before: java.lang.String): Selection[stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncA(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA): Selection[stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncA(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncA(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA, before: java.lang.String): Selection[stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncB(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB): Selection[stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncB(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncB(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB, before: java.lang.String): Selection[stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncG(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG): Selection[stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncG(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncG(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG, before: java.lang.String): Selection[stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncR(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR): Selection[stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncR(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feFuncR(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR, before: java.lang.String): Selection[stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feGaussianBlur(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur): Selection[stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feGaussianBlur(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feGaussianBlur(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur, before: java.lang.String): Selection[stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feImage(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feImage): Selection[stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feImage(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feImage,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feImage(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feImage, before: java.lang.String): Selection[stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feMerge(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge): Selection[stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feMerge(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feMerge(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge, before: java.lang.String): Selection[stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feMergeNode(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode): Selection[stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feMergeNode(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feMergeNode(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode, before: java.lang.String): Selection[stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feMorphology(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology): Selection[stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feMorphology(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feMorphology(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology, before: java.lang.String): Selection[stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feOffset(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset): Selection[stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feOffset(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feOffset(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset, before: java.lang.String): Selection[stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_fePointLight(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight): Selection[stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_fePointLight(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_fePointLight(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight, before: java.lang.String): Selection[stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feSpecularLighting(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting): Selection[stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feSpecularLighting(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feSpecularLighting(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting, before: java.lang.String): Selection[stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feSpotLight(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight): Selection[stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feSpotLight(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feSpotLight(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight, before: java.lang.String): Selection[stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feTile(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feTile): Selection[stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feTile(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feTile,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feTile(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feTile, before: java.lang.String): Selection[stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feTurbulence(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence): Selection[stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feTurbulence(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_feTurbulence(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence, before: java.lang.String): Selection[stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_fieldset(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.fieldset): Selection[stdLib.HTMLFieldSetElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -1355,15 +988,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_figure(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.figure, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_filter(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.filter): Selection[stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_filter(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.filter,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_filter(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.filter, before: java.lang.String): Selection[stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_font(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.font): Selection[stdLib.HTMLFontElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_font(
@@ -1381,15 +1005,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_footer(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.footer, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_foreignObject(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject): Selection[stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_foreignObject(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_foreignObject(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject, before: java.lang.String): Selection[stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_form(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.form): Selection[stdLib.HTMLFormElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -1417,12 +1032,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLFrameSetElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_frameset(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.frameset, before: java.lang.String): Selection[stdLib.HTMLFrameSetElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_g(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.g): Selection[stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_g(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.g, before: ValueFn[GElement, Datum, BaseType]): Selection[stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_g(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.g, before: java.lang.String): Selection[stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_h1(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.h1): Selection[stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -1538,15 +1147,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_iframe(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.iframe, before: java.lang.String): Selection[stdLib.HTMLIFrameElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_image(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.image): Selection[stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_image(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.image,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_image(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.image, before: java.lang.String): Selection[stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_img(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.img): Selection[stdLib.HTMLImageElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_img(
@@ -1610,24 +1210,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_li(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.li, before: java.lang.String): Selection[stdLib.HTMLLIElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_line(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.line): Selection[stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_line(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.line,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_line(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.line, before: java.lang.String): Selection[stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_linearGradient(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient): Selection[stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_linearGradient(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_linearGradient(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient, before: java.lang.String): Selection[stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_link(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.link): Selection[stdLib.HTMLLinkElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_link(
@@ -1664,15 +1246,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_mark(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.mark, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_marker(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.marker): Selection[stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_marker(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.marker,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_marker(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.marker, before: java.lang.String): Selection[stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_marquee(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.marquee): Selection[stdLib.HTMLMarqueeElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_marquee(
@@ -1681,15 +1254,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLMarqueeElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_marquee(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.marquee, before: java.lang.String): Selection[stdLib.HTMLMarqueeElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_mask(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.mask): Selection[stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_mask(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.mask,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_mask(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.mask, before: java.lang.String): Selection[stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_menu(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.menu): Selection[stdLib.HTMLMenuElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -1708,15 +1272,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLMetaElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_meta(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.meta, before: java.lang.String): Selection[stdLib.HTMLMetaElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_metadata(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.metadata): Selection[stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_metadata(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.metadata,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_metadata(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.metadata, before: java.lang.String): Selection[stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_meter(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.meter): Selection[stdLib.HTMLMeterElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -1805,24 +1360,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_param(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.param, before: java.lang.String): Selection[stdLib.HTMLParamElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_path(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.path): Selection[stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_path(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.path,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_path(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.path, before: java.lang.String): Selection[stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_pattern(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.pattern): Selection[stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_pattern(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.pattern,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_pattern(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.pattern, before: java.lang.String): Selection[stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_picture(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.picture): Selection[stdLib.HTMLPictureElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_picture(
@@ -1831,24 +1368,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLPictureElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_picture(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.picture, before: java.lang.String): Selection[stdLib.HTMLPictureElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_polygon(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.polygon): Selection[stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_polygon(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.polygon,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_polygon(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.polygon, before: java.lang.String): Selection[stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_polyline(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.polyline): Selection[stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_polyline(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.polyline,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_polyline(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.polyline, before: java.lang.String): Selection[stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_pre(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.pre): Selection[stdLib.HTMLPreElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -1873,24 +1392,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   def insert_q(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.q, before: ValueFn[GElement, Datum, BaseType]): Selection[stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_q(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.q, before: java.lang.String): Selection[stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_radialGradient(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient): Selection[stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_radialGradient(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_radialGradient(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient, before: java.lang.String): Selection[stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_rect(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rect): Selection[stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_rect(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.rect,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_rect(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rect, before: java.lang.String): Selection[stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_rp(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rp): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -1997,15 +1498,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_span(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.span, before: java.lang.String): Selection[stdLib.HTMLSpanElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_stop(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.stop): Selection[stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_stop(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.stop,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_stop(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.stop, before: java.lang.String): Selection[stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_strong(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.strong): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_strong(
@@ -2051,33 +1543,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_sup(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.sup, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_svg(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.svg): Selection[stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_svg(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.svg,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_svg(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.svg, before: java.lang.String): Selection[stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_switch(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.switch): Selection[stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_switch(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.switch,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_switch(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.switch, before: java.lang.String): Selection[stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_symbol(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.symbol): Selection[stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_symbol(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.symbol,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_symbol(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.symbol, before: java.lang.String): Selection[stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_table(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.table): Selection[stdLib.HTMLTableElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_table(
@@ -2113,24 +1578,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLTemplateElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_template(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.template, before: java.lang.String): Selection[stdLib.HTMLTemplateElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_text(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.text): Selection[stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_text(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.text,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_text(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.text, before: java.lang.String): Selection[stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_textPath(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.textPath): Selection[stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_textPath(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.textPath,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_textPath(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.textPath, before: java.lang.String): Selection[stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_textarea(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.textarea): Selection[stdLib.HTMLTextAreaElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -2204,15 +1651,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_track(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.track, before: java.lang.String): Selection[stdLib.HTMLTrackElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
-  def insert_tspan(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.tspan): Selection[stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_tspan(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.tspan,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_tspan(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.tspan, before: java.lang.String): Selection[stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
   def insert_u(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.u): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_u(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.u, before: ValueFn[GElement, Datum, BaseType]): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
@@ -2227,15 +1665,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLUListElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_ul(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.ul, before: java.lang.String): Selection[stdLib.HTMLUListElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_use(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.use): Selection[stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_use(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.use,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_use(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.use, before: java.lang.String): Selection[stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_var(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.`var`): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -2254,15 +1683,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLVideoElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_video(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.video, before: java.lang.String): Selection[stdLib.HTMLVideoElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_view(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.view): Selection[stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_view(
-    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.view,
-    before: ValueFn[GElement, Datum, BaseType]
-  ): Selection[stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
-  @JSName("insert")
-  def insert_view(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.view, before: java.lang.String): Selection[stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_wbr(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.wbr): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
@@ -2695,25 +2115,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLTableCaptionElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_circle[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.circle): Selection[GElement | stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_circle[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.circle,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_circle[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.circle,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_cite[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.cite): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_cite[OldDatum](
@@ -2732,25 +2133,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_clipPath[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath): Selection[GElement | stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_clipPath[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_clipPath[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_code[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.code): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -2866,25 +2248,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_defs[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.defs): Selection[GElement | stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_defs[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.defs,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_defs[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.defs,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_del[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.del): Selection[GElement | stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_del[OldDatum](
@@ -2903,25 +2266,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_desc[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.desc): Selection[GElement | stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_desc[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.desc,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_desc[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.desc,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_details[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.details): Selection[GElement | stdLib.HTMLDetailsElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -3056,25 +2400,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_ellipse[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse): Selection[GElement | stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_ellipse[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_ellipse[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_em[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.em): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_em[OldDatum](
@@ -3112,462 +2437,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLEmbedElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feBlend[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend): Selection[GElement | stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feBlend[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feBlend[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feColorMatrix[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix): Selection[GElement | stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feColorMatrix[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feColorMatrix[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feComponentTransfer[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer): Selection[GElement | stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feComponentTransfer[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feComponentTransfer[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feComposite[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite): Selection[GElement | stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feComposite[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feComposite[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feConvolveMatrix[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix): Selection[GElement | stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feConvolveMatrix[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feConvolveMatrix[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feDiffuseLighting[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting): Selection[GElement | stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feDiffuseLighting[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feDiffuseLighting[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feDisplacementMap[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap): Selection[GElement | stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feDisplacementMap[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feDisplacementMap[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feDistantLight[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight): Selection[GElement | stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feDistantLight[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feDistantLight[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFlood[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood): Selection[GElement | stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFlood[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFlood[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncA[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA): Selection[GElement | stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncA[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncA[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncB[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB): Selection[GElement | stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncB[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncB[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncG[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG): Selection[GElement | stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncG[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncG[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncR[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR): Selection[GElement | stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncR[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feFuncR[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feGaussianBlur[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur): Selection[GElement | stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feGaussianBlur[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feGaussianBlur[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feImage[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feImage): Selection[GElement | stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feImage[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feImage,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feImage[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feImage,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feMerge[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge): Selection[GElement | stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feMerge[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feMerge[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feMergeNode[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode): Selection[GElement | stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feMergeNode[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feMergeNode[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feMorphology[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology): Selection[GElement | stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feMorphology[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feMorphology[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feOffset[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset): Selection[GElement | stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feOffset[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feOffset[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_fePointLight[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight): Selection[GElement | stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_fePointLight[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_fePointLight[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feSpecularLighting[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting): Selection[GElement | stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feSpecularLighting[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feSpecularLighting[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feSpotLight[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight): Selection[GElement | stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feSpotLight[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feSpotLight[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feTile[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTile): Selection[GElement | stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feTile[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTile,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feTile[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTile,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feTurbulence[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence): Selection[GElement | stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feTurbulence[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_feTurbulence[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_fieldset[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.fieldset): Selection[GElement | stdLib.HTMLFieldSetElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -3626,25 +2495,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_filter[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.filter): Selection[GElement | stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_filter[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.filter,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_filter[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.filter,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_font[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.font): Selection[GElement | stdLib.HTMLFontElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_font[OldDatum](
@@ -3682,25 +2532,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_foreignObject[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject): Selection[GElement | stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_foreignObject[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_foreignObject[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_form[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.form): Selection[GElement | stdLib.HTMLFormElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -3758,25 +2589,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLFrameSetElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_g[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.g): Selection[GElement | stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_g[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.g,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_g[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.g,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_h1[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.h1): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -4025,25 +2837,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLIFrameElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_image[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.image): Selection[GElement | stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_image[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.image,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_image[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.image,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_img[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.img): Selection[GElement | stdLib.HTMLImageElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_img[OldDatum](
@@ -4177,44 +2970,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLLIElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_line[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.line): Selection[GElement | stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_line[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.line,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_line[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.line,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_linearGradient[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient): Selection[GElement | stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_linearGradient[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_linearGradient[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_link[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.link): Selection[GElement | stdLib.HTMLLinkElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_link[OldDatum](
@@ -4291,25 +3046,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_marker[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.marker): Selection[GElement | stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_marker[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.marker,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_marker[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.marker,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_marquee[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.marquee): Selection[GElement | stdLib.HTMLMarqueeElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_marquee[OldDatum](
@@ -4328,25 +3064,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLMarqueeElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_mask[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.mask): Selection[GElement | stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_mask[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.mask,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_mask[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.mask,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_menu[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.menu): Selection[GElement | stdLib.HTMLMenuElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -4385,25 +3102,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLMetaElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_metadata[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.metadata): Selection[GElement | stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_metadata[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.metadata,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_metadata[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.metadata,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_meter[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.meter): Selection[GElement | stdLib.HTMLMeterElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -4595,44 +3293,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLParamElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_path[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.path): Selection[GElement | stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_path[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.path,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_path[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.path,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_pattern[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.pattern): Selection[GElement | stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_pattern[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.pattern,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_pattern[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.pattern,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_picture[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.picture): Selection[GElement | stdLib.HTMLPictureElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_picture[OldDatum](
@@ -4651,44 +3311,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLPictureElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_polygon[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.polygon): Selection[GElement | stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_polygon[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.polygon,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_polygon[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.polygon,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_polyline[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.polyline): Selection[GElement | stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_polyline[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.polyline,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_polyline[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.polyline,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_pre[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.pre): Selection[GElement | stdLib.HTMLPreElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -4746,44 +3368,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_radialGradient[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient): Selection[GElement | stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_radialGradient[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_radialGradient[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_rect[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.rect): Selection[GElement | stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_rect[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.rect,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_rect[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.rect,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_rp[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.rp): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -5013,25 +3597,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLSpanElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_stop[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.stop): Selection[GElement | stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_stop[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.stop,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_stop[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.stop,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_strong[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.strong): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_strong[OldDatum](
@@ -5127,63 +3692,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_svg[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.svg): Selection[GElement | stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_svg[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.svg,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_svg[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.svg,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_switch[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.switch): Selection[GElement | stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_switch[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.switch,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_switch[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.switch,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_symbol[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.symbol): Selection[GElement | stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_symbol[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.symbol,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_symbol[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.symbol,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_table[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.table): Selection[GElement | stdLib.HTMLTableElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_table[OldDatum](
@@ -5259,44 +3767,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLTemplateElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_text[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.text): Selection[GElement | stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_text[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.text,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_text[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.text,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_textPath[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.textPath): Selection[GElement | stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_textPath[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.textPath,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_textPath[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.textPath,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_textarea[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.textarea): Selection[GElement | stdLib.HTMLTextAreaElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
@@ -5450,25 +3920,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLTrackElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_tspan[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.tspan): Selection[GElement | stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_tspan[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tspan,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_tspan[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tspan,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_u[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.u): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_u[OldDatum](
@@ -5507,25 +3958,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLUListElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
-  def join_use[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.use): Selection[GElement | stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_use[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.use,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_use[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.use,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
   def join_var[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.`var`): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_var[OldDatum](
@@ -5563,25 +3995,6 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLVideoElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_view[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.view): Selection[GElement | stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_view[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.view,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ]
-  ): Selection[GElement | stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
-  @JSName("join")
-  def join_view[OldDatum](
-    enter: d3DashSelectionLib.d3DashSelectionLibStrings.view,
-    update: js.Function1[
-      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
-      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
-    ],
-    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
-  ): Selection[GElement | stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_wbr[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.wbr): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")

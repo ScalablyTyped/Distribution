@@ -11,7 +11,7 @@ trait Insight extends js.Object {
     */
   var Filters: AwsSecurityFindingFilters
   /**
-    * The attribute by which the insight's findings are grouped. This attribute is used as a findings aggregator for the purposes of viewing and managing multiple related findings under a single operand.
+    * The attribute that the insight's findings are grouped by. This attribute is used as a findings aggregator for the purposes of viewing and managing multiple related findings under a single operand.
     */
   var GroupByAttribute: NonEmptyString
   /**

@@ -24,12 +24,13 @@ class R3BoundTarget[DirectiveT /* <: atAngularCompilerLib.srcRender3ViewT2Unders
     ], symbols: stdLib.Map[
       atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Reference | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Variable, 
       atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template
-    ], nestingLevel: stdLib.Map[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template, scala.Double]) = this()
+    ], nestingLevel: stdLib.Map[atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template, scala.Double], usedPipes: stdLib.Set[java.lang.String]) = this()
   var bindings: js.Any = js.native
   var directives: js.Any = js.native
   var exprTargets: js.Any = js.native
   var nestingLevel: js.Any = js.native
   var references: js.Any = js.native
   var symbols: js.Any = js.native
+  var usedPipes: js.Any = js.native
 }
 

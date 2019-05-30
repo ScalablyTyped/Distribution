@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/router", "ɵangular_packages_router_router_n")
 @js.native
-class ɵangular_packages_router_router_n protected ()
-  extends atAngularRouterLib.srcRouterUnderscoreScrollerMod.RouterScroller {
-  def this(router: atAngularRouterLib.srcRouterMod.Router, /** @docsNotRequired */ viewportScroller: atAngularCommonLib.atAngularCommonMod.ViewportScroller) = this()
-  def this(router: atAngularRouterLib.srcRouterMod.Router, /** @docsNotRequired */ viewportScroller: atAngularCommonLib.atAngularCommonMod.ViewportScroller, options: atAngularRouterLib.Anon_AnchorScrolling) = this()
+class ɵangular_packages_router_router_n[T] protected () extends js.Object {
+  def this(value: T, children: js.Array[ɵangular_packages_router_router_n[T]]) = this()
+  var children: js.Array[ɵangular_packages_router_router_n[T]] = js.native
+  var value: T = js.native
 }
 

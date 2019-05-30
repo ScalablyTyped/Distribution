@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFETileElement interface corresponds to the <feTile> element. */
+/** Corresponds to the <feTile> element. */
 @js.native
 trait SVGFETileElement
   extends SVGElement
@@ -40,6 +40,8 @@ class SVGFETileElementCls () extends SVGFETileElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val height: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

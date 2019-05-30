@@ -13,6 +13,8 @@ trait SVGAnimateElement extends SVGAnimationElement
 class SVGAnimateElementCls () extends SVGAnimateElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLInputElement interface provides special properties and methods for manipulating the options, layout, and presentation of <input> elements. */
+/** Provides special properties and methods for manipulating the options, layout, and presentation of <input> elements. */
 @js.native
 trait HTMLInputElement extends HTMLElement {
   /**
@@ -154,7 +154,10 @@ trait HTMLInputElement extends HTMLElement {
     * Returns the value of the data at the cursor's current position.
     */
   var value: java.lang.String = js.native
-  var valueAsDate: js.Any = js.native
+  /**
+    * Returns a Date object representing the form control's value, if applicable; otherwise, returns null. Can be set, to change the value. Throws an "InvalidStateError" DOMException if the control isn't date- or time-based.
+    */
+  var valueAsDate: Date | scala.Null = js.native
   /**
     * Returns the input field value as a number.
     */
@@ -223,6 +226,8 @@ class HTMLInputElementCls () extends HTMLInputElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

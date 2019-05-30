@@ -63,7 +63,7 @@ trait SendCommandRequest extends js.Object {
     */
   var Parameters: js.UndefOr[Parameters] = js.undefined
   /**
-    * The IAM role that Systems Manager uses to send notifications. 
+    * The ARN of the IAM service role to use to publish Amazon Simple Notification Service (Amazon SNS) notifications for Run Command commands.
     */
   var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
   /**

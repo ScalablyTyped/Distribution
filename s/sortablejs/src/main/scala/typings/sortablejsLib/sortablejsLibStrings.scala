@@ -205,6 +205,9 @@ object sortablejsLibStrings {
   sealed trait captionSide extends js.Object
   
   @js.native
+  sealed trait caretColor extends js.Object
+  
+  @js.native
   sealed trait chosenClass extends js.Object
   
   @js.native
@@ -470,6 +473,12 @@ object sortablejsLibStrings {
   
   @js.native
   sealed trait ignore extends js.Object
+  
+  @js.native
+  sealed trait imageOrientation extends js.Object
+  
+  @js.native
+  sealed trait imageRendering extends js.Object
   
   @js.native
   sealed trait imeMode extends js.Object
@@ -1231,6 +1240,9 @@ object sortablejsLibStrings {
   sealed trait width extends js.Object
   
   @js.native
+  sealed trait willChange extends js.Object
+  
+  @js.native
   sealed trait wordBreak extends js.Object
   
   @js.native
@@ -1380,6 +1392,8 @@ object sortablejsLibStrings {
   def breakInside: breakInside = "breakInside".asInstanceOf[breakInside]
   @scala.inline
   def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
+  @scala.inline
+  def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
   @scala.inline
   def chosenClass: chosenClass = "chosenClass".asInstanceOf[chosenClass]
   @scala.inline
@@ -1556,6 +1570,10 @@ object sortablejsLibStrings {
   def height: height = "height".asInstanceOf[height]
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
+  def imageOrientation: imageOrientation = "imageOrientation".asInstanceOf[imageOrientation]
+  @scala.inline
+  def imageRendering: imageRendering = "imageRendering".asInstanceOf[imageRendering]
   @scala.inline
   def imeMode: imeMode = "imeMode".asInstanceOf[imeMode]
   @scala.inline
@@ -2062,6 +2080,8 @@ object sortablejsLibStrings {
   def widows: widows = "widows".asInstanceOf[widows]
   @scala.inline
   def width: width = "width".asInstanceOf[width]
+  @scala.inline
+  def willChange: willChange = "willChange".asInstanceOf[willChange]
   @scala.inline
   def wordBreak: wordBreak = "wordBreak".asInstanceOf[wordBreak]
   @scala.inline

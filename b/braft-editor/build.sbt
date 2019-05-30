@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "braft-editor"
-version := "1.9-dt-20190311Z-670c0e"
+version := "1.9-dt-20190311Z-0c798f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.4-a0e5c1",
-  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190513Z-401432",
-  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-e6b22c",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-b94c72",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1cea03",
-  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
+  "org.scalablytyped" %%% "csstype" % "2.6.5-8a2cd0",
+  "org.scalablytyped" %%% "draft-js" % "v0.10.5-dt-20190513Z-ac4048",
+  "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-70f5d8",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c843c9",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1fde1d",
+  "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

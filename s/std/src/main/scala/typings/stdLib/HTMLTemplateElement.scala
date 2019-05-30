@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLTemplateElement interface enables access to the contents of an HTML <template> element. */
+/** Enables access to the contents of an HTML <template> element. */
 @js.native
 trait HTMLTemplateElement extends HTMLElement {
   val content: DocumentFragment = js.native
@@ -18,6 +18,8 @@ class HTMLTemplateElementCls () extends HTMLTemplateElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

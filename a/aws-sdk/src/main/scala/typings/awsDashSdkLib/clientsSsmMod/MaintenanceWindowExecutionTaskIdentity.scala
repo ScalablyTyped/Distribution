@@ -27,7 +27,7 @@ trait MaintenanceWindowExecutionTaskIdentity extends js.Object {
     */
   var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
   /**
-    * The ID of the specific task execution in the Maintenance Window execution.
+    * The ID of the specific task execution in the maintenance window execution.
     */
   var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait MaintenanceWindowExecutionTaskIdentity extends js.Object {
     */
   var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   /**
-    * The ID of the Maintenance Window execution that ran the task.
+    * The ID of the maintenance window execution that ran the task.
     */
   var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
 }

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "rc-slider"
-version := "8.6-dt-20190218Z-ce8c5c"
+version := "8.6-dt-20190218Z-d45c0f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.4-a0e5c1",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-b94c72",
-  "org.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20190212Z-80adc1",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1cea03",
-  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
+  "org.scalablytyped" %%% "csstype" % "2.6.5-8a2cd0",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c843c9",
+  "org.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20190212Z-6c123b",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1fde1d",
+  "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

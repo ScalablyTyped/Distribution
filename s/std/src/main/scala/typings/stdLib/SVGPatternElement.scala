@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGPatternElement interface corresponds to the <pattern> element. */
+/** Corresponds to the <pattern> element. */
 @js.native
 trait SVGPatternElement
   extends SVGElement
@@ -48,6 +48,8 @@ class SVGPatternElementCls () extends SVGPatternElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val href: SVGAnimatedString = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

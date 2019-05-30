@@ -17,11 +17,11 @@ object R3ExpressionFactoryMetadata {
     injectFn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference,
     name: java.lang.String,
     `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
-    deps: js.Array[R3DependencyMetadata] = null
+    deps: js.Array[R3DependencyMetadata] | atAngularCompilerLib.atAngularCompilerLibStrings.invalid = null
   ): R3ExpressionFactoryMetadata = {
     val __obj = js.Dynamic.literal(expression = expression, injectFn = injectFn, name = name)
     __obj.updateDynamic("type")(`type`)
-    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (deps != null) __obj.updateDynamic("deps")(deps.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3ExpressionFactoryMetadata]
   }
 }

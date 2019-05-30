@@ -42,7 +42,7 @@ package object typescriptMod {
   type BindingOrAssignmentElementRestIndicator = _BindingOrAssignmentElementRestIndicator | DotDotDotToken
   type BitwiseOperator = SyntaxKind
   type BitwiseOperatorOrHigher = EqualityOperatorOrHigher | BitwiseOperator
-  type CodeActionCommand = InstallPackageAction | GenerateTypesAction
+  type CodeActionCommand = InstallPackageAction
   type ColonToken = Token[SyntaxKind]
   type CommentKind = SyntaxKind
   type CompilerOptionsValue = js.UndefOr[
@@ -60,6 +60,7 @@ package object typescriptMod {
     /* projectReferences */ js.UndefOr[js.Array[ProjectReference]], 
     T
   ]
+  type CustomTransformerFactory = js.Function1[/* context */ TransformationContext, CustomTransformer]
   type DiagnosticReporter = js.Function1[/* diagnostic */ Diagnostic, scala.Unit]
   type DirectoryWatcherCallback = js.Function1[/* fileName */ java.lang.String, scala.Unit]
   type DocumentRegistryBucketKey = java.lang.String with typescriptLib.Anon_BucketKey
@@ -78,7 +79,6 @@ package object typescriptMod {
   type FunctionBody = Block
   /** @deprecated Use SignatureDeclaration */
   type FunctionLike = SignatureDeclaration
-  type GenerateTypesAction = GenerateTypesOptions
   /* Rewritten from type alias, can be one of: 
     - ParameterDeclaration
     - CallSignatureDeclaration
@@ -118,7 +118,7 @@ package object typescriptMod {
   type IncrementExpression = UpdateExpression
   type InstantiableType = Type
   type IntersectionType = UnionOrIntersectionType
-  type JsDocSyntaxKind = SyntaxKind | KeywordSyntaxKind
+  type JSDocSyntaxKind = SyntaxKind | KeywordSyntaxKind
   /** @deprecated Use FileExtensionInfo instead. */
   type JsFileExtensionInfo = FileExtensionInfo
   type JsxTokenSyntaxKind = SyntaxKind

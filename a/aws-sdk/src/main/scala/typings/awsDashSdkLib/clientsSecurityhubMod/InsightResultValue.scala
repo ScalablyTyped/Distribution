@@ -11,7 +11,7 @@ trait InsightResultValue extends js.Object {
     */
   var Count: Integer
   /**
-    * The value of the attribute by which the findings are grouped for the insight's whose results are returned by the GetInsightResults operation.
+    * The value of the attribute that the findings are grouped by for the insight whose results are returned by the GetInsightResults operation.
     */
   var GroupByAttributeValue: NonEmptyString
 }

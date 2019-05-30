@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MapFilter extends js.Object {
   /**
-    * Represents the condition to be applied to a key value when querying for findings with a map filter.
+    * The condition to be applied to a key value when querying for findings with a map filter.
     */
   var Comparison: js.UndefOr[MapFilterComparison] = js.undefined
   /**

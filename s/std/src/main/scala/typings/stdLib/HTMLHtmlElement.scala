@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLHtmlElement interface serves as the root node for a given HTML document. This object inherits the properties and methods described in the HTMLElement interface. */
+/** Serves as the root node for a given HTML document. This object inherits the properties and methods described in the HTMLElement interface. */
 @js.native
 trait HTMLHtmlElement extends HTMLElement {
   /**
@@ -22,6 +22,8 @@ class HTMLHtmlElementCls () extends HTMLHtmlElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGLength interface correspond to the <length> basic data type. */
+/** Correspond to the <length> basic data type. */
 trait SVGLength extends js.Object {
   val SVG_LENGTHTYPE_CM: scala.Double
   val SVG_LENGTHTYPE_EMS: scala.Double

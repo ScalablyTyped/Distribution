@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SecurityPolicyViolationEvent interface inherits from Event, and represents the event object of an event sent on a document or worker when its content security policy is violated. */
+/** Inherits from Event, and represents the event object of an event sent on a document or worker when its content security policy is violated. */
 @js.native
 trait SecurityPolicyViolationEvent extends Event {
   val blockedURI: java.lang.String = js.native

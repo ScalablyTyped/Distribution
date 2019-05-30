@@ -75,7 +75,6 @@ object VendorPropertiesHyphenFallback {
     `-moz-user-modify`: MozUserModifyProperty | js.Array[MozUserModifyProperty] = null,
     `-moz-user-select`: UserSelectProperty | js.Array[UserSelectProperty] = null,
     `-moz-window-dragging`: MozWindowDraggingProperty | js.Array[MozWindowDraggingProperty] = null,
-    `-moz-window-shadow`: MozWindowShadowProperty | js.Array[MozWindowShadowProperty] = null,
     `-ms-accelerator`: MsAcceleratorProperty | js.Array[MsAcceleratorProperty] = null,
     `-ms-align-self`: AlignSelfProperty | js.Array[AlignSelfProperty] = null,
     `-ms-block-progression`: MsBlockProgressionProperty | js.Array[MsBlockProgressionProperty] = null,
@@ -119,6 +118,14 @@ object VendorPropertiesHyphenFallback {
     `-ms-scroll-snap-x`: GlobalsString | js.Array[GlobalsString] = null,
     `-ms-scroll-snap-y`: GlobalsString | js.Array[GlobalsString] = null,
     `-ms-scroll-translation`: MsScrollTranslationProperty | js.Array[MsScrollTranslationProperty] = null,
+    `-ms-scrollbar-3dlight-color`: MsScrollbar3dlightColorProperty | js.Array[MsScrollbar3dlightColorProperty] = null,
+    `-ms-scrollbar-arrow-color`: MsScrollbarArrowColorProperty | js.Array[MsScrollbarArrowColorProperty] = null,
+    `-ms-scrollbar-base-color`: MsScrollbarBaseColorProperty | js.Array[MsScrollbarBaseColorProperty] = null,
+    `-ms-scrollbar-darkshadow-color`: MsScrollbarDarkshadowColorProperty | js.Array[MsScrollbarDarkshadowColorProperty] = null,
+    `-ms-scrollbar-face-color`: MsScrollbarFaceColorProperty | js.Array[MsScrollbarFaceColorProperty] = null,
+    `-ms-scrollbar-highlight-color`: MsScrollbarHighlightColorProperty | js.Array[MsScrollbarHighlightColorProperty] = null,
+    `-ms-scrollbar-shadow-color`: MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty] = null,
+    `-ms-scrollbar-track-color`: MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty] = null,
     `-ms-text-autospace`: MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty] = null,
     `-ms-text-combine-horizontal`: TextCombineUprightProperty | js.Array[TextCombineUprightProperty] = null,
     `-ms-text-overflow`: TextOverflowProperty | js.Array[TextOverflowProperty] = null,
@@ -248,7 +255,8 @@ object VendorPropertiesHyphenFallback {
     `-webkit-transition-timing-function`: TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty] = null,
     `-webkit-user-modify`: WebkitUserModifyProperty | js.Array[WebkitUserModifyProperty] = null,
     `-webkit-user-select`: UserSelectProperty | js.Array[UserSelectProperty] = null,
-    `-webkit-writing-mode`: WritingModeProperty | js.Array[WritingModeProperty] = null
+    `-webkit-writing-mode`: WritingModeProperty | js.Array[WritingModeProperty] = null,
+    `-webkitmask-size`: MaskSizeProperty[TLength] | js.Array[MaskSizeProperty[TLength]] = null
   ): VendorPropertiesHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     if (`-moz-animation` != null) __obj.updateDynamic("-moz-animation")(`-moz-animation`.asInstanceOf[js.Any])
@@ -314,7 +322,6 @@ object VendorPropertiesHyphenFallback {
     if (`-moz-user-modify` != null) __obj.updateDynamic("-moz-user-modify")(`-moz-user-modify`.asInstanceOf[js.Any])
     if (`-moz-user-select` != null) __obj.updateDynamic("-moz-user-select")(`-moz-user-select`.asInstanceOf[js.Any])
     if (`-moz-window-dragging` != null) __obj.updateDynamic("-moz-window-dragging")(`-moz-window-dragging`.asInstanceOf[js.Any])
-    if (`-moz-window-shadow` != null) __obj.updateDynamic("-moz-window-shadow")(`-moz-window-shadow`.asInstanceOf[js.Any])
     if (`-ms-accelerator` != null) __obj.updateDynamic("-ms-accelerator")(`-ms-accelerator`.asInstanceOf[js.Any])
     if (`-ms-align-self` != null) __obj.updateDynamic("-ms-align-self")(`-ms-align-self`.asInstanceOf[js.Any])
     if (`-ms-block-progression` != null) __obj.updateDynamic("-ms-block-progression")(`-ms-block-progression`.asInstanceOf[js.Any])
@@ -358,6 +365,14 @@ object VendorPropertiesHyphenFallback {
     if (`-ms-scroll-snap-x` != null) __obj.updateDynamic("-ms-scroll-snap-x")(`-ms-scroll-snap-x`.asInstanceOf[js.Any])
     if (`-ms-scroll-snap-y` != null) __obj.updateDynamic("-ms-scroll-snap-y")(`-ms-scroll-snap-y`.asInstanceOf[js.Any])
     if (`-ms-scroll-translation` != null) __obj.updateDynamic("-ms-scroll-translation")(`-ms-scroll-translation`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-3dlight-color` != null) __obj.updateDynamic("-ms-scrollbar-3dlight-color")(`-ms-scrollbar-3dlight-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-arrow-color` != null) __obj.updateDynamic("-ms-scrollbar-arrow-color")(`-ms-scrollbar-arrow-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-base-color` != null) __obj.updateDynamic("-ms-scrollbar-base-color")(`-ms-scrollbar-base-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-darkshadow-color` != null) __obj.updateDynamic("-ms-scrollbar-darkshadow-color")(`-ms-scrollbar-darkshadow-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-face-color` != null) __obj.updateDynamic("-ms-scrollbar-face-color")(`-ms-scrollbar-face-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-highlight-color` != null) __obj.updateDynamic("-ms-scrollbar-highlight-color")(`-ms-scrollbar-highlight-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-shadow-color` != null) __obj.updateDynamic("-ms-scrollbar-shadow-color")(`-ms-scrollbar-shadow-color`.asInstanceOf[js.Any])
+    if (`-ms-scrollbar-track-color` != null) __obj.updateDynamic("-ms-scrollbar-track-color")(`-ms-scrollbar-track-color`.asInstanceOf[js.Any])
     if (`-ms-text-autospace` != null) __obj.updateDynamic("-ms-text-autospace")(`-ms-text-autospace`.asInstanceOf[js.Any])
     if (`-ms-text-combine-horizontal` != null) __obj.updateDynamic("-ms-text-combine-horizontal")(`-ms-text-combine-horizontal`.asInstanceOf[js.Any])
     if (`-ms-text-overflow` != null) __obj.updateDynamic("-ms-text-overflow")(`-ms-text-overflow`.asInstanceOf[js.Any])
@@ -488,6 +503,7 @@ object VendorPropertiesHyphenFallback {
     if (`-webkit-user-modify` != null) __obj.updateDynamic("-webkit-user-modify")(`-webkit-user-modify`.asInstanceOf[js.Any])
     if (`-webkit-user-select` != null) __obj.updateDynamic("-webkit-user-select")(`-webkit-user-select`.asInstanceOf[js.Any])
     if (`-webkit-writing-mode` != null) __obj.updateDynamic("-webkit-writing-mode")(`-webkit-writing-mode`.asInstanceOf[js.Any])
+    if (`-webkitmask-size` != null) __obj.updateDynamic("-webkitmask-size")(`-webkitmask-size`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VendorPropertiesHyphenFallback[TLength]]
   }
 }

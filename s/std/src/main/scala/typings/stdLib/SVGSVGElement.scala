@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGSVGElement interface provides access to the properties of <svg> elements, as well as methods to manipulate them. This interface contains also various miscellaneous commonly-used utility methods, such as matrix operations and the ability to control the time of redraw on visual rendering devices. */
+/** Provides access to the properties of <svg> elements, as well as methods to manipulate them. This interface contains also various miscellaneous commonly-used utility methods, such as matrix operations and the ability to control the time of redraw on visual rendering devices. */
 @js.native
 trait SVGSVGElement
   extends SVGGraphicsElement
@@ -78,6 +78,7 @@ trait SVGSVGElement
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
+  def animationsPaused(): scala.Boolean = js.native
   def checkEnclosure(element: SVGElement, rect: SVGRect): scala.Boolean = js.native
   def checkIntersection(element: SVGElement, rect: SVGRect): scala.Boolean = js.native
   def createSVGAngle(): SVGAngle = js.native
@@ -93,7 +94,6 @@ trait SVGSVGElement
   def forceRedraw(): scala.Unit = js.native
   def getComputedStyle(elt: Element): CSSStyleDeclaration = js.native
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
-  /** @deprecated */
   def getCurrentTime(): scala.Double = js.native
   def getElementById(elementId: java.lang.String): Element = js.native
   def getEnclosureList(rect: SVGRect, referenceElement: SVGElement): NodeListOf[
@@ -102,7 +102,6 @@ trait SVGSVGElement
   def getIntersectionList(rect: SVGRect, referenceElement: SVGElement): NodeListOf[
     SVGCircleElement | SVGEllipseElement | SVGImageElement | SVGLineElement | SVGPathElement | SVGPolygonElement | SVGPolylineElement | SVGRectElement | SVGTextElement | SVGUseElement
   ] = js.native
-  /** @deprecated */
   def pauseAnimations(): scala.Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
@@ -148,11 +147,9 @@ trait SVGSVGElement
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ SVGZoomEvent, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
-  /** @deprecated */
   def setCurrentTime(seconds: scala.Double): scala.Unit = js.native
   /** @deprecated */
   def suspendRedraw(maxWaitMilliseconds: scala.Double): scala.Double = js.native
-  /** @deprecated */
   def unpauseAnimations(): scala.Unit = js.native
   /** @deprecated */
   def unsuspendRedraw(suspendHandleID: scala.Double): scala.Unit = js.native
@@ -165,6 +162,8 @@ trait SVGSVGElement
 class SVGSVGElementCls () extends SVGSVGElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

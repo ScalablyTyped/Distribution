@@ -920,6 +920,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class IoTThingsGraph ()
+    extends awsDashSdkLib.awsDashSdkMod.IoTThingsGraph {
+    def this(options: awsDashSdkLib.clientsIotthingsgraphMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Iot ()
     extends awsDashSdkLib.awsDashSdkMod.Iot {
     def this(options: awsDashSdkLib.clientsIotMod.ClientConfiguration) = this()

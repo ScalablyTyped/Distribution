@@ -22,6 +22,9 @@ object atAngularCompilerLibStrings {
   sealed trait ctx extends js.Object
   
   @js.native
+  sealed trait invalid extends js.Object
+  
+  @js.native
   sealed trait ngComponentType extends js.Object
   
   @js.native
@@ -49,6 +52,8 @@ object atAngularCompilerLibStrings {
   def _t: _t = "_t".asInstanceOf[_t]
   @scala.inline
   def ctx: ctx = "ctx".asInstanceOf[ctx]
+  @scala.inline
+  def invalid: invalid = "invalid".asInstanceOf[invalid]
   @scala.inline
   def ngComponentType: ngComponentType = "ngComponentType".asInstanceOf[ngComponentType]
   @scala.inline

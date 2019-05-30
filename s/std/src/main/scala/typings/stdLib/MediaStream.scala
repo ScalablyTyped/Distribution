@@ -5,32 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The MediaStream interface represents a stream of media content. A stream consists of several tracks such as video or audio tracks. Each track is specified as an instance of MediaStreamTrack. */
+/** A stream of media content. A stream consists of several tracks such as video or audio tracks. Each track is specified as an instance of MediaStreamTrack. */
 @js.native
 trait MediaStream extends EventTarget {
   val active: scala.Boolean = js.native
   val id: java.lang.String = js.native
-  var onactive: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onaddtrack: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]) | scala.Null = js.native
-  var oninactive: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onremovetrack: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]) | scala.Null = js.native
-  @JSName("addEventListener")
-  def addEventListener_active(
-    `type`: stdLib.stdLibStrings.active,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_active(
-    `type`: stdLib.stdLibStrings.active,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_active(
-    `type`: stdLib.stdLibStrings.active,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: AddEventListenerOptions
-  ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_addtrack(
     `type`: stdLib.stdLibStrings.addtrack,
@@ -46,23 +27,6 @@ trait MediaStream extends EventTarget {
   def addEventListener_addtrack(
     `type`: stdLib.stdLibStrings.addtrack,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _],
-    options: AddEventListenerOptions
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_inactive(
-    `type`: stdLib.stdLibStrings.inactive,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_inactive(
-    `type`: stdLib.stdLibStrings.inactive,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_inactive(
-    `type`: stdLib.stdLibStrings.inactive,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -88,23 +52,6 @@ trait MediaStream extends EventTarget {
   def getTracks(): js.Array[MediaStreamTrack] = js.native
   def getVideoTracks(): js.Array[MediaStreamTrack] = js.native
   @JSName("removeEventListener")
-  def removeEventListener_active(
-    `type`: stdLib.stdLibStrings.active,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
-  ): scala.Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_active(
-    `type`: stdLib.stdLibStrings.active,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_active(
-    `type`: stdLib.stdLibStrings.active,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: EventListenerOptions
-  ): scala.Unit = js.native
-  @JSName("removeEventListener")
   def removeEventListener_addtrack(
     `type`: stdLib.stdLibStrings.addtrack,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _]
@@ -119,23 +66,6 @@ trait MediaStream extends EventTarget {
   def removeEventListener_addtrack(
     `type`: stdLib.stdLibStrings.addtrack,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaStreamTrackEvent, _],
-    options: EventListenerOptions
-  ): scala.Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_inactive(
-    `type`: stdLib.stdLibStrings.inactive,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
-  ): scala.Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_inactive(
-    `type`: stdLib.stdLibStrings.inactive,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
-    options: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_inactive(
-    `type`: stdLib.stdLibStrings.inactive,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -156,7 +86,6 @@ trait MediaStream extends EventTarget {
     options: EventListenerOptions
   ): scala.Unit = js.native
   def removeTrack(track: MediaStreamTrack): scala.Unit = js.native
-  def stop(): scala.Unit = js.native
 }
 
 @JSGlobal("MediaStream")

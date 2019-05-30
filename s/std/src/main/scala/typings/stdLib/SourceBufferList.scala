@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SourceBufferList interface represents a simple container list for multiple SourceBuffer objects. */
+/** A simple container list for multiple SourceBuffer objects. */
 @js.native
 trait SourceBufferList
   extends EventTarget

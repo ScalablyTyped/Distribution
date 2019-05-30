@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait PanelProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var collapseIcon: js.UndefOr[java.lang.String] = js.undefined
   var collapsed: js.UndefOr[scala.Boolean] = js.undefined
+  var expandIcon: js.UndefOr[java.lang.String] = js.undefined
   var header: js.UndefOr[js.Any] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
@@ -21,7 +23,9 @@ object PanelProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
+    collapseIcon: java.lang.String = null,
     collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    expandIcon: java.lang.String = null,
     header: js.Any = null,
     id: java.lang.String = null,
     onCollapse: /* event */ stdLib.Event => scala.Unit = null,
@@ -32,7 +36,9 @@ object PanelProps {
   ): PanelProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
+    if (collapseIcon != null) __obj.updateDynamic("collapseIcon")(collapseIcon)
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon)
     if (header != null) __obj.updateDynamic("header")(header)
     if (id != null) __obj.updateDynamic("id")(id)
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction1(onCollapse))

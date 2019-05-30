@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGAnimatedAngle interface is used for attributes of basic type <angle> which can be animated. */
+/** Used for attributes of basic type <angle> which can be animated. */
 trait SVGAnimatedAngle extends js.Object {
   val animVal: SVGAngle
   val baseVal: SVGAngle

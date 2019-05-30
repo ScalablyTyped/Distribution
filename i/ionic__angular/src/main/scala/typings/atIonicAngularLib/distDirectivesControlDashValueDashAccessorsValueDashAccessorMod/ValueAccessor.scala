@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/angular/dist/directives/control-value-accessors/value-accessor", "ValueAccessor")
 @js.native
 class ValueAccessor protected ()
-  extends atAngularFormsLib.srcDirectivesControlUnderscoreValueUnderscoreAccessorMod.ControlValueAccessor {
+  extends atAngularFormsLib.atAngularFormsMod.ControlValueAccessor {
   def this(el: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var el: atAngularCoreLib.atAngularCoreMod.ElementRef[_] = js.native
   var lastValue: js.Any = js.native
@@ -43,7 +43,7 @@ class ValueAccessor protected ()
     *
     * ```ts
     * host: {
-    *    (change): '_onChange($event.target.value)'
+    *    '(change)': '_onChange($event.target.value)'
     * }
     * ```
     *

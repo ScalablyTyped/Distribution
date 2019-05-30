@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The VideoTrack interface represents a single video track from a <video> element. */
+/** A single video track from a <video> element. */
 trait VideoTrack extends js.Object {
   val id: java.lang.String
   var kind: java.lang.String

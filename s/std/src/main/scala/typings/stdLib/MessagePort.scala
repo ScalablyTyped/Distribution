@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The MessagePort interface of the Channel Messaging API represents one of the two ports of a MessageChannel, allowing messages to be sent from one port and listening out for them arriving at the other. */
+/** An interface of the Channel Messaging API represents one of the two ports of a MessageChannel, allowing messages to be sent from one port and listening out for them arriving at the other. */
 @js.native
 trait MessagePort
   extends EventTarget
@@ -51,14 +51,8 @@ trait MessagePort
     * Disconnects the port, so that it is no longer active.
     */
   def close(): scala.Unit = js.native
-  /**
-    * Posts a message through the channel. Objects listed in transfer are
-    * transferred, not just cloned, meaning that they are no longer usable on the sending side.
-    * Throws a "DataCloneError" DOMException if
-    * transfer contains duplicate objects or port, or if message
-    * could not be cloned.
-    */
   def postMessage(message: js.Any): scala.Unit = js.native
+  def postMessage(message: js.Any, options: PostMessageOptions): scala.Unit = js.native
   def postMessage(message: js.Any, transfer: js.Array[Transferable]): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(

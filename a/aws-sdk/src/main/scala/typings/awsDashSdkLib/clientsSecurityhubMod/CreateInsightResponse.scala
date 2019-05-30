@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateInsightResponse extends js.Object {
   /**
-    * The ARN Of the created insight.
+    * The ARN of the insight created.
     */
   var InsightArn: NonEmptyString
 }

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait ConditionalType extends Type {
   var checkType: Type
   var extendsType: Type
-  var falseType: Type
+  var resolvedFalseType: Type
+  var resolvedTrueType: Type
   var root: ConditionalRoot
-  var trueType: Type
 }
 
 object ConditionalType {
@@ -18,7 +18,6 @@ object ConditionalType {
   def apply(
     checkType: Type,
     extendsType: Type,
-    falseType: Type,
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
@@ -42,14 +41,15 @@ object ConditionalType {
     isTypeParameter: () => /* is typescript.typescript.TypeParameter */ scala.Boolean,
     isUnion: () => /* is typescript.typescript.UnionType */ scala.Boolean,
     isUnionOrIntersection: () => /* is typescript.typescript.UnionOrIntersectionType */ scala.Boolean,
+    resolvedFalseType: Type,
+    resolvedTrueType: Type,
     root: ConditionalRoot,
     symbol: Symbol,
-    trueType: Type,
     aliasSymbol: Symbol = null,
     aliasTypeArguments: js.Array[Type] = null,
     pattern: DestructuringPattern = null
   ): ConditionalType = {
-    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, falseType = falseType, flags = flags, getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), root = root, symbol = symbol, trueType = trueType)
+    val __obj = js.Dynamic.literal(checkType = checkType, extendsType = extendsType, flags = flags, getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), resolvedFalseType = resolvedFalseType, resolvedTrueType = resolvedTrueType, root = root, symbol = symbol)
     if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol)
     if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments)
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)

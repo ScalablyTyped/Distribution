@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/router", "RouteConfigLoadStart")
 @js.native
-class RouteConfigLoadStart protected ()
-  extends atAngularRouterLib.publicUnderscoreApiMod.RouteConfigLoadStart {
+class RouteConfigLoadStart protected () extends Event {
   def this(/** @docsNotRequired */
-  route: atAngularRouterLib.srcConfigMod.Route) = this()
+  route: Route) = this()
+  /** @docsNotRequired */
+  var route: Route = js.native
 }
 

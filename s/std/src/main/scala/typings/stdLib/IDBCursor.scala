@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The IDBCursor interface of the IndexedDB API represents a cursor for traversing or iterating over multiple records in a database. */
+/** An interface of the IndexedDB API represents a cursor for traversing or iterating over multiple records in a database. */
 @js.native
 trait IDBCursor extends js.Object {
   /**

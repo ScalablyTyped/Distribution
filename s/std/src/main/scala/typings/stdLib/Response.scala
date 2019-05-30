@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Response interface of the Fetch API represents the response to a request. */
+/** An interface of the Fetch API represents the response to a request. */
 trait Response extends Body {
   val headers: Headers
   val ok: scala.Boolean

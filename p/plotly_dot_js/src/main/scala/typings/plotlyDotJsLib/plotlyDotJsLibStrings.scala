@@ -212,9 +212,6 @@ object plotlyDotJsLibStrings {
   sealed trait cite extends js.Object
   
   @js.native
-  sealed trait clipPath extends js.Object
-  
-  @js.native
   sealed trait clockwise extends js.Object
   
   @js.native
@@ -291,13 +288,7 @@ object plotlyDotJsLibStrings {
   sealed trait dd extends js.Object
   
   @js.native
-  sealed trait defs extends js.Object
-  
-  @js.native
   sealed trait del extends js.Object
-  
-  @js.native
-  sealed trait desc extends js.Object
   
   @js.native
   sealed trait descending extends js.Object
@@ -353,9 +344,6 @@ object plotlyDotJsLibStrings {
   sealed trait `elastic-out` extends js.Object
   
   @js.native
-  sealed trait ellipse extends js.Object
-  
-  @js.native
   sealed trait em extends js.Object
   
   @js.native
@@ -382,78 +370,6 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait fast extends js.Object
-  
-  @js.native
-  sealed trait feBlend extends js.Object
-  
-  @js.native
-  sealed trait feColorMatrix extends js.Object
-  
-  @js.native
-  sealed trait feComponentTransfer extends js.Object
-  
-  @js.native
-  sealed trait feComposite extends js.Object
-  
-  @js.native
-  sealed trait feConvolveMatrix extends js.Object
-  
-  @js.native
-  sealed trait feDiffuseLighting extends js.Object
-  
-  @js.native
-  sealed trait feDisplacementMap extends js.Object
-  
-  @js.native
-  sealed trait feDistantLight extends js.Object
-  
-  @js.native
-  sealed trait feFlood extends js.Object
-  
-  @js.native
-  sealed trait feFuncA extends js.Object
-  
-  @js.native
-  sealed trait feFuncB extends js.Object
-  
-  @js.native
-  sealed trait feFuncG extends js.Object
-  
-  @js.native
-  sealed trait feFuncR extends js.Object
-  
-  @js.native
-  sealed trait feGaussianBlur extends js.Object
-  
-  @js.native
-  sealed trait feImage extends js.Object
-  
-  @js.native
-  sealed trait feMerge extends js.Object
-  
-  @js.native
-  sealed trait feMergeNode extends js.Object
-  
-  @js.native
-  sealed trait feMorphology extends js.Object
-  
-  @js.native
-  sealed trait feOffset extends js.Object
-  
-  @js.native
-  sealed trait fePointLight extends js.Object
-  
-  @js.native
-  sealed trait feSpecularLighting extends js.Object
-  
-  @js.native
-  sealed trait feSpotLight extends js.Object
-  
-  @js.native
-  sealed trait feTile extends js.Object
-  
-  @js.native
-  sealed trait feTurbulence extends js.Object
   
   @js.native
   sealed trait fieldset extends js.Object
@@ -483,9 +399,6 @@ object plotlyDotJsLibStrings {
   sealed trait footer extends js.Object
   
   @js.native
-  sealed trait foreignObject extends js.Object
-  
-  @js.native
   sealed trait form extends js.Object
   
   @js.native
@@ -499,9 +412,6 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait free extends js.Object
-  
-  @js.native
-  sealed trait g extends js.Object
   
   @js.native
   sealed trait gregorian
@@ -608,9 +518,6 @@ object plotlyDotJsLibStrings {
   sealed trait iframe extends js.Object
   
   @js.native
-  sealed trait image extends js.Object
-  
-  @js.native
   sealed trait img extends js.Object
   
   @js.native
@@ -703,9 +610,6 @@ object plotlyDotJsLibStrings {
   sealed trait `linear-out` extends js.Object
   
   @js.native
-  sealed trait linearGradient extends js.Object
-  
-  @js.native
   sealed trait lines extends js.Object
   
   @js.native
@@ -739,16 +643,10 @@ object plotlyDotJsLibStrings {
   sealed trait mark extends js.Object
   
   @js.native
-  sealed trait marker extends js.Object
-  
-  @js.native
   sealed trait markers extends js.Object
   
   @js.native
   sealed trait marquee extends js.Object
-  
-  @js.native
-  sealed trait mask extends js.Object
   
   @js.native
   sealed trait max extends js.Object
@@ -768,9 +666,6 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait meta extends js.Object
-  
-  @js.native
-  sealed trait metadata extends js.Object
   
   @js.native
   sealed trait meter extends js.Object
@@ -892,9 +787,6 @@ object plotlyDotJsLibStrings {
   sealed trait path extends js.Object
   
   @js.native
-  sealed trait pattern extends js.Object
-  
-  @js.native
   sealed trait percent extends js.Object
   
   @js.native
@@ -1007,12 +899,6 @@ object plotlyDotJsLibStrings {
   sealed trait points extends js.Object
   
   @js.native
-  sealed trait polygon extends js.Object
-  
-  @js.native
-  sealed trait polyline extends js.Object
-  
-  @js.native
   sealed trait population extends js.Object
   
   @js.native
@@ -1041,9 +927,6 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait radial extends js.Object
-  
-  @js.native
-  sealed trait radialGradient extends js.Object
   
   @js.native
   sealed trait range extends js.Object
@@ -1201,9 +1084,6 @@ object plotlyDotJsLibStrings {
   sealed trait stddev extends js.Object
   
   @js.native
-  sealed trait stop extends js.Object
-  
-  @js.native
   sealed trait stretch extends js.Object
   
   @js.native
@@ -1229,12 +1109,6 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait svg extends js.Object
-  
-  @js.native
-  sealed trait switch extends js.Object
-  
-  @js.native
-  sealed trait symbol extends js.Object
   
   @js.native
   sealed trait table extends js.Object
@@ -1276,9 +1150,6 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait `text+value+percent` extends js.Object
-  
-  @js.native
-  sealed trait textPath extends js.Object
   
   @js.native
   sealed trait textarea extends js.Object
@@ -1366,9 +1237,6 @@ object plotlyDotJsLibStrings {
   sealed trait transparent extends js.Object
   
   @js.native
-  sealed trait tspan extends js.Object
-  
-  @js.native
   sealed trait turntable extends js.Object
   
   @js.native
@@ -1383,9 +1251,6 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait update extends js.Object
-  
-  @js.native
-  sealed trait use extends js.Object
   
   @js.native
   sealed trait v extends js.Object
@@ -1410,9 +1275,6 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait video extends js.Object
-  
-  @js.native
-  sealed trait view extends js.Object
   
   @js.native
   sealed trait wbr extends js.Object
@@ -1741,8 +1603,6 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def cite: cite = "cite".asInstanceOf[cite]
   @scala.inline
-  def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
-  @scala.inline
   def clockwise: clockwise = "clockwise".asInstanceOf[clockwise]
   @scala.inline
   def closest: closest = "closest".asInstanceOf[closest]
@@ -1791,11 +1651,7 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
   @scala.inline
-  def defs: defs = "defs".asInstanceOf[defs]
-  @scala.inline
   def del: del = "del".asInstanceOf[del]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
   @scala.inline
   def descending: descending = "descending".asInstanceOf[descending]
   @scala.inline
@@ -1831,8 +1687,6 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def `elastic-out`: `elastic-out` = "elastic-out".asInstanceOf[`elastic-out`]
   @scala.inline
-  def ellipse: ellipse = "ellipse".asInstanceOf[ellipse]
-  @scala.inline
   def em: em = "em".asInstanceOf[em]
   @scala.inline
   def embed: embed = "embed".asInstanceOf[embed]
@@ -1850,54 +1704,6 @@ object plotlyDotJsLibStrings {
   def `exp-out`: `exp-out` = "exp-out".asInstanceOf[`exp-out`]
   @scala.inline
   def fast: fast = "fast".asInstanceOf[fast]
-  @scala.inline
-  def feBlend: feBlend = "feBlend".asInstanceOf[feBlend]
-  @scala.inline
-  def feColorMatrix: feColorMatrix = "feColorMatrix".asInstanceOf[feColorMatrix]
-  @scala.inline
-  def feComponentTransfer: feComponentTransfer = "feComponentTransfer".asInstanceOf[feComponentTransfer]
-  @scala.inline
-  def feComposite: feComposite = "feComposite".asInstanceOf[feComposite]
-  @scala.inline
-  def feConvolveMatrix: feConvolveMatrix = "feConvolveMatrix".asInstanceOf[feConvolveMatrix]
-  @scala.inline
-  def feDiffuseLighting: feDiffuseLighting = "feDiffuseLighting".asInstanceOf[feDiffuseLighting]
-  @scala.inline
-  def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
-  @scala.inline
-  def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
-  @scala.inline
-  def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
-  @scala.inline
-  def feFuncA: feFuncA = "feFuncA".asInstanceOf[feFuncA]
-  @scala.inline
-  def feFuncB: feFuncB = "feFuncB".asInstanceOf[feFuncB]
-  @scala.inline
-  def feFuncG: feFuncG = "feFuncG".asInstanceOf[feFuncG]
-  @scala.inline
-  def feFuncR: feFuncR = "feFuncR".asInstanceOf[feFuncR]
-  @scala.inline
-  def feGaussianBlur: feGaussianBlur = "feGaussianBlur".asInstanceOf[feGaussianBlur]
-  @scala.inline
-  def feImage: feImage = "feImage".asInstanceOf[feImage]
-  @scala.inline
-  def feMerge: feMerge = "feMerge".asInstanceOf[feMerge]
-  @scala.inline
-  def feMergeNode: feMergeNode = "feMergeNode".asInstanceOf[feMergeNode]
-  @scala.inline
-  def feMorphology: feMorphology = "feMorphology".asInstanceOf[feMorphology]
-  @scala.inline
-  def feOffset: feOffset = "feOffset".asInstanceOf[feOffset]
-  @scala.inline
-  def fePointLight: fePointLight = "fePointLight".asInstanceOf[fePointLight]
-  @scala.inline
-  def feSpecularLighting: feSpecularLighting = "feSpecularLighting".asInstanceOf[feSpecularLighting]
-  @scala.inline
-  def feSpotLight: feSpotLight = "feSpotLight".asInstanceOf[feSpotLight]
-  @scala.inline
-  def feTile: feTile = "feTile".asInstanceOf[feTile]
-  @scala.inline
-  def feTurbulence: feTurbulence = "feTurbulence".asInstanceOf[feTurbulence]
   @scala.inline
   def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   @scala.inline
@@ -1917,8 +1723,6 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
   @scala.inline
-  def foreignObject: foreignObject = "foreignObject".asInstanceOf[foreignObject]
-  @scala.inline
   def form: form = "form".asInstanceOf[form]
   @scala.inline
   def fraction: fraction = "fraction".asInstanceOf[fraction]
@@ -1928,8 +1732,6 @@ object plotlyDotJsLibStrings {
   def frameset: frameset = "frameset".asInstanceOf[frameset]
   @scala.inline
   def free: free = "free".asInstanceOf[free]
-  @scala.inline
-  def g: g = "g".asInstanceOf[g]
   @scala.inline
   def gregorian: gregorian = "gregorian".asInstanceOf[gregorian]
   @scala.inline
@@ -1995,8 +1797,6 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
   def img: img = "img".asInstanceOf[img]
   @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
@@ -2055,8 +1855,6 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def `linear-out`: `linear-out` = "linear-out".asInstanceOf[`linear-out`]
   @scala.inline
-  def linearGradient: linearGradient = "linearGradient".asInstanceOf[linearGradient]
-  @scala.inline
   def lines: lines = "lines".asInstanceOf[lines]
   @scala.inline
   def `lines+markers`: `lines+markers` = "lines+markers".asInstanceOf[`lines+markers`]
@@ -2077,13 +1875,9 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
   @scala.inline
-  def marker: marker = "marker".asInstanceOf[marker]
-  @scala.inline
   def markers: markers = "markers".asInstanceOf[markers]
   @scala.inline
   def marquee: marquee = "marquee".asInstanceOf[marquee]
-  @scala.inline
-  def mask: mask = "mask".asInstanceOf[mask]
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
@@ -2096,8 +1890,6 @@ object plotlyDotJsLibStrings {
   def mesh3d: mesh3d = "mesh3d".asInstanceOf[mesh3d]
   @scala.inline
   def meta: meta = "meta".asInstanceOf[meta]
-  @scala.inline
-  def metadata: metadata = "metadata".asInstanceOf[metadata]
   @scala.inline
   def meter: meter = "meter".asInstanceOf[meter]
   @scala.inline
@@ -2175,8 +1967,6 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   @scala.inline
-  def pattern: pattern = "pattern".asInstanceOf[pattern]
-  @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
   @scala.inline
   def persian: persian = "persian".asInstanceOf[persian]
@@ -2251,10 +2041,6 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def points: points = "points".asInstanceOf[points]
   @scala.inline
-  def polygon: polygon = "polygon".asInstanceOf[polygon]
-  @scala.inline
-  def polyline: polyline = "polyline".asInstanceOf[polyline]
-  @scala.inline
   def population: population = "population".asInstanceOf[population]
   @scala.inline
   def power: power = "power".asInstanceOf[power]
@@ -2274,8 +2060,6 @@ object plotlyDotJsLibStrings {
   def `quad-out`: `quad-out` = "quad-out".asInstanceOf[`quad-out`]
   @scala.inline
   def radial: radial = "radial".asInstanceOf[radial]
-  @scala.inline
-  def radialGradient: radialGradient = "radialGradient".asInstanceOf[radialGradient]
   @scala.inline
   def range: range = "range".asInstanceOf[range]
   @scala.inline
@@ -2375,8 +2159,6 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def stddev: stddev = "stddev".asInstanceOf[stddev]
   @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
-  @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
@@ -2394,10 +2176,6 @@ object plotlyDotJsLibStrings {
   def surface: surface = "surface".asInstanceOf[surface]
   @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
-  @scala.inline
-  def switch: switch = "switch".asInstanceOf[switch]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline
@@ -2424,8 +2202,6 @@ object plotlyDotJsLibStrings {
   def `text+value`: `text+value` = "text+value".asInstanceOf[`text+value`]
   @scala.inline
   def `text+value+percent`: `text+value+percent` = "text+value+percent".asInstanceOf[`text+value+percent`]
-  @scala.inline
-  def textPath: textPath = "textPath".asInstanceOf[textPath]
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
@@ -2481,8 +2257,6 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def transparent: transparent = "transparent".asInstanceOf[transparent]
   @scala.inline
-  def tspan: tspan = "tspan".asInstanceOf[tspan]
-  @scala.inline
   def turntable: turntable = "turntable".asInstanceOf[turntable]
   @scala.inline
   def u: u = "u".asInstanceOf[u]
@@ -2492,8 +2266,6 @@ object plotlyDotJsLibStrings {
   def ummalqura: ummalqura = "ummalqura".asInstanceOf[ummalqura]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def use: use = "use".asInstanceOf[use]
   @scala.inline
   def v: v = "v".asInstanceOf[v]
   @scala.inline
@@ -2510,8 +2282,6 @@ object plotlyDotJsLibStrings {
   def vhv: vhv = "vhv".asInstanceOf[vhv]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
-  @scala.inline
-  def view: view = "view".asInstanceOf[view]
   @scala.inline
   def wbr: wbr = "wbr".asInstanceOf[wbr]
   @scala.inline

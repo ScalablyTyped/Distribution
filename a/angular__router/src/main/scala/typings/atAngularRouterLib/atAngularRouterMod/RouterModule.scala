@@ -7,9 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/router", "RouterModule")
 @js.native
-class RouterModule protected ()
-  extends atAngularRouterLib.publicUnderscoreApiMod.RouterModule {
-  def this(guard: js.Any, router: atAngularRouterLib.srcRouterMod.Router) = this()
+class RouterModule protected () extends js.Object {
+  def this(guard: js.Any, router: Router) = this()
 }
 
 /* static members */
@@ -19,7 +18,7 @@ object RouterModule extends js.Object {
   /**
     * Creates a module with all the router directives and a provider registering routes.
     */
-  def forChild(routes: atAngularRouterLib.srcConfigMod.Routes): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularRouterLib.srcRouterUnderscoreModuleMod.RouterModule] = js.native
+  def forChild(routes: atAngularRouterLib.atAngularRouterMod.Routes): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[atAngularRouterLib.atAngularRouterMod.RouterModule] = js.native
   /**
     * Creates a module with all the router providers and directives. It also optionally sets up an
     * application listener to perform an initial navigation.
@@ -50,10 +49,10 @@ object RouterModule extends js.Object {
     *
     * See `ExtraOptions` for more details about the above options.
     */
-  def forRoot(routes: atAngularRouterLib.srcConfigMod.Routes): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularRouterLib.srcRouterUnderscoreModuleMod.RouterModule] = js.native
+  def forRoot(routes: atAngularRouterLib.atAngularRouterMod.Routes): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[atAngularRouterLib.atAngularRouterMod.RouterModule] = js.native
   def forRoot(
-    routes: atAngularRouterLib.srcConfigMod.Routes,
-    config: atAngularRouterLib.srcRouterUnderscoreModuleMod.ExtraOptions
-  ): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularRouterLib.srcRouterUnderscoreModuleMod.RouterModule] = js.native
+    routes: atAngularRouterLib.atAngularRouterMod.Routes,
+    config: atAngularRouterLib.atAngularRouterMod.ExtraOptions
+  ): atAngularCoreLib.atAngularCoreMod.ModuleWithProviders[atAngularRouterLib.atAngularRouterMod.RouterModule] = js.native
 }
 

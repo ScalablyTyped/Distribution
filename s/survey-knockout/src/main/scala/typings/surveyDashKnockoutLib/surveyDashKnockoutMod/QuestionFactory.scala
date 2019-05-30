@@ -15,6 +15,7 @@ class QuestionFactory () extends js.Object {
     questionType: java.lang.String,
     questionCreator: js.Function1[/* name */ java.lang.String, Question]
   ): scala.Unit = js.native
+  def unregisterElement(elementType: java.lang.String): scala.Unit = js.native
 }
 
 /* static members */

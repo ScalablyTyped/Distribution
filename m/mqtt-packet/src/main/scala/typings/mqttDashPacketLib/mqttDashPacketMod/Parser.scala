@@ -19,5 +19,6 @@ trait Parser
     callback: js.Function1[/* packet */ Packet, scala.Unit]
   ): this.type = js.native
   def parse(buffer: nodeLib.Buffer): scala.Double = js.native
+  def parse(buffer: nodeLib.Buffer, opts: js.Object): scala.Double = js.native
 }
 

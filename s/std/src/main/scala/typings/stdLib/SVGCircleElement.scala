@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGCircleElement interface is an interface for the <circle> element. The circle element is defined by the cx and cy attributes that denote the coordinates of the centre of the circle. */
+/** An interface for the <circle> element. The circle element is defined by the cx and cy attributes that denote the coordinates of the centre of the circle. */
 @js.native
-trait SVGCircleElement extends SVGGraphicsElement {
+trait SVGCircleElement extends SVGGeometryElement {
   val cx: SVGAnimatedLength = js.native
   val cy: SVGAnimatedLength = js.native
   val r: SVGAnimatedLength = js.native
@@ -18,6 +18,8 @@ trait SVGCircleElement extends SVGGraphicsElement {
 class SVGCircleElementCls () extends SVGCircleElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

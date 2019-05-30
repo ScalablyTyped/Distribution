@@ -31,6 +31,7 @@ package object reactDashTooltipMod {
     - reactDashTooltipLib.reactDashTooltipLibStrings.devicelight
     - reactDashTooltipLib.reactDashTooltipLibStrings.devicemotion
     - reactDashTooltipLib.reactDashTooltipLibStrings.deviceorientation
+    - reactDashTooltipLib.reactDashTooltipLibStrings.deviceorientationabsolute
     - reactDashTooltipLib.reactDashTooltipLibStrings.drag
     - reactDashTooltipLib.reactDashTooltipLibStrings.dragend
     - reactDashTooltipLib.reactDashTooltipLibStrings.dragenter

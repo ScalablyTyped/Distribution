@@ -63,6 +63,7 @@ trait TypeChecker extends js.Object {
   def getSymbolsOfParameterPropertyDeclaration(parameter: ParameterDeclaration, parameterName: java.lang.String): js.Array[Symbol] = js.native
   def getTypeAtLocation(node: Node): Type = js.native
   def getTypeFromTypeNode(node: TypeNode): Type = js.native
+  def getTypeOfAssignmentPattern(pattern: AssignmentPattern): Type = js.native
   def getTypeOfSymbolAtLocation(symbol: Symbol, node: Node): Type = js.native
   def getWidenedType(`type`: Type): Type = js.native
   /** Note that the resulting nodes cannot be checked. */

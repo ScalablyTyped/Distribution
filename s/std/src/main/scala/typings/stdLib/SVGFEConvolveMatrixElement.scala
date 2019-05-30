@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEConvolveMatrixElement interface corresponds to the <feConvolveMatrix> element. */
+/** Corresponds to the <feConvolveMatrix> element. */
 @js.native
 trait SVGFEConvolveMatrixElement
   extends SVGElement
@@ -55,6 +55,8 @@ class SVGFEConvolveMatrixElementCls () extends SVGFEConvolveMatrixElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val height: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

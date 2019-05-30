@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The DOMError interface describes an error object that contains an error name. */
+/** An error object that contains an error name. */
 trait DOMError extends js.Object {
   val name: java.lang.String
 }

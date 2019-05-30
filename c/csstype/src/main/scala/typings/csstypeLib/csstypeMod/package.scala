@@ -1490,10 +1490,13 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-fit-content`
     - csstypeLib.csstypeLibStrings.`-moz-max-content`
     - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fit-content`
     - csstypeLib.csstypeLibStrings.`fill-available`
     - csstypeLib.csstypeLibStrings.`fit-content`
+    - csstypeLib.csstypeLibStrings.intrinsic
     - csstypeLib.csstypeLibStrings.`max-content`
     - csstypeLib.csstypeLibStrings.`min-content`
     - csstypeLib.csstypeLibStrings.none
@@ -1524,8 +1527,10 @@ package object csstypeMod {
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength
+    - csstypeLib.csstypeLibStrings.`-moz-fit-content`
     - csstypeLib.csstypeLibStrings.`-moz-max-content`
     - csstypeLib.csstypeLibStrings.`-moz-min-content`
+    - csstypeLib.csstypeLibStrings.`-webkit-fit-content`
     - csstypeLib.csstypeLibStrings.`-webkit-max-content`
     - csstypeLib.csstypeLibStrings.`-webkit-min-content`
     - csstypeLib.csstypeLibStrings.`fill-available`
@@ -1827,26 +1832,6 @@ package object csstypeMod {
     - csstypeLib.csstypeLibStrings.visible
     - java.lang.String
   */
-  type OverflowBlockProperty = _OverflowBlockProperty | java.lang.String
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - csstypeLib.csstypeLibStrings.auto
-    - csstypeLib.csstypeLibStrings.clip
-    - csstypeLib.csstypeLibStrings.hidden
-    - csstypeLib.csstypeLibStrings.scroll
-    - csstypeLib.csstypeLibStrings.visible
-    - java.lang.String
-  */
-  type OverflowInlineProperty = _OverflowInlineProperty | java.lang.String
-  /* Rewritten from type alias, can be one of: 
-    - Globals
-    - csstypeLib.csstypeLibStrings.auto
-    - csstypeLib.csstypeLibStrings.clip
-    - csstypeLib.csstypeLibStrings.hidden
-    - csstypeLib.csstypeLibStrings.scroll
-    - csstypeLib.csstypeLibStrings.visible
-    - java.lang.String
-  */
   type OverflowProperty = _OverflowProperty | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
@@ -2016,6 +2001,7 @@ package object csstypeMod {
     - csstypeLib.csstypeLibStrings.auto
   */
   type ScrollMarginInlineEndProperty[TLength] = _ScrollMarginInlineEndProperty[TLength] | TLength
+  type ScrollMarginInlineProperty[TLength] = Globals | TLength | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - Globals
     - TLength

@@ -366,18 +366,18 @@ class HTMLWebViewElement () extends HTMLElement {
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.MouseEvent, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.MouseEvent, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.MouseEvent, _],
     options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -2538,18 +2538,18 @@ class HTMLWebViewElement () extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_auxclick(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.MouseEvent, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_auxclick(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.MouseEvent, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_auxclick(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.MouseEvent, _],
     options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")

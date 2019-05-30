@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object stylenamesMod {
   type StyleObject = stdLib.Partial[
     stdLib.Record[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 390 */ js.Any, 
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 394 */ js.Any, 
       StyleValue
     ]
   ]

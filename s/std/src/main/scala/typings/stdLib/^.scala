@@ -109,7 +109,7 @@ object ^ extends js.Object {
   var onanimationend: (js.ThisFunction1[/* this */ Window, /* ev */ AnimationEvent, js.Any]) | scala.Null = js.native
   var onanimationiteration: (js.ThisFunction1[/* this */ Window, /* ev */ AnimationEvent, js.Any]) | scala.Null = js.native
   var onanimationstart: (js.ThisFunction1[/* this */ Window, /* ev */ AnimationEvent, js.Any]) | scala.Null = js.native
-  var onauxclick: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
+  var onauxclick: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   var onbeforeprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onbeforeunload: (js.ThisFunction1[/* this */ Window, /* ev */ BeforeUnloadEvent, js.Any]) | scala.Null = js.native
   /**
@@ -150,6 +150,7 @@ object ^ extends js.Object {
   var ondevicelight: (js.ThisFunction1[/* this */ Window, /* ev */ DeviceLightEvent, js.Any]) | scala.Null = js.native
   var ondevicemotion: (js.ThisFunction1[/* this */ Window, /* ev */ DeviceMotionEvent, js.Any]) | scala.Null = js.native
   var ondeviceorientation: (js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, js.Any]) | scala.Null = js.native
+  var ondeviceorientationabsolute: (js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, js.Any]) | scala.Null = js.native
   /**
     * Fires on the source object continuously during a drag operation.
     * @param ev The event.
@@ -808,18 +809,18 @@ object ^ extends js.Object {
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1091,6 +1092,23 @@ object ^ extends js.Object {
   @JSName("addEventListener")
   def addEventListener_deviceorientation(
     `type`: stdLib.stdLibStrings.deviceorientation,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, _],
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
@@ -2752,6 +2770,8 @@ object ^ extends js.Object {
     * @param uriComponent A value representing an encoded URI component.
     */
   def encodeURIComponent(uriComponent: java.lang.String): java.lang.String = js.native
+  def encodeURIComponent(uriComponent: scala.Boolean): java.lang.String = js.native
+  def encodeURIComponent(uriComponent: scala.Double): java.lang.String = js.native
   /**
     * Computes a new string in which certain characters have been replaced by a hexadecimal escape sequence.
     * @param string A string value
@@ -3189,18 +3209,18 @@ object ^ extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_auxclick(
     `type`: stdLib.stdLibStrings.auxclick,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -3472,6 +3492,23 @@ object ^ extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_deviceorientation(
     `type`: stdLib.stdLibStrings.deviceorientation,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, _],
+    options: EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_deviceorientationabsolute(
+    `type`: stdLib.stdLibStrings.deviceorientationabsolute,
     listener: js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, _],
     options: EventListenerOptions
   ): scala.Unit = js.native

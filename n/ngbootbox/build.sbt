@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "ngbootbox"
-version := "0.0-unknown-dt-20190322Z-e73b1a"
+version := "0.0-unknown-dt-20190322Z-d79a68"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bootbox" % "4.4.0-dt-20190322Z-439670",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-dfa39a",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-fd7d83",
-  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
+  "org.scalablytyped" %%% "bootbox" % "4.4.0-dt-20190322Z-84fa43",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-a823da",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-0995ad",
+  "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

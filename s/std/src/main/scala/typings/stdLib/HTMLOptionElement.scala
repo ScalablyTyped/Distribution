@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLOptionElement interface represents <option> elements and inherits all classes and methods of the HTMLElement interface. */
+/** <option> elements and inherits all classes and methods of the HTMLElement interface. */
 @js.native
 trait HTMLOptionElement extends HTMLElement {
   /**
@@ -46,6 +46,8 @@ class HTMLOptionElementCls () extends HTMLOptionElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

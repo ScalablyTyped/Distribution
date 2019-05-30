@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLBaseElement interface contains the base URI for a document. This object inherits all of the properties and methods as described in the HTMLElement interface. */
+/** Contains the base URI for a document. This object inherits all of the properties and methods as described in the HTMLElement interface. */
 @js.native
 trait HTMLBaseElement extends HTMLElement {
   /**
@@ -25,6 +25,8 @@ class HTMLBaseElementCls () extends HTMLBaseElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

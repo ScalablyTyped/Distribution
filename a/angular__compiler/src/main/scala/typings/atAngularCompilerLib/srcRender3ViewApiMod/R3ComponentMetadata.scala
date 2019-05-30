@@ -62,10 +62,6 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
     */
   var viewProviders: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
   /**
-    * Information about the view queries made by the component.
-    */
-  var viewQueries: js.Array[R3QueryMetadata]
-  /**
     * Whether to wrap the 'directives' and/or `pipes` array, if one is generated, in a closure.
     *
     * This is done when the directives or pipes contain forward references.
@@ -99,7 +95,7 @@ object R3ComponentMetadata {
     animations: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
     changeDetection: atAngularCompilerLib.srcCoreMod.ChangeDetectionStrategy = null,
     deps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null,
-    exportAs: java.lang.String = null,
+    exportAs: js.Array[java.lang.String] = null,
     providers: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
     selector: java.lang.String = null,
     viewProviders: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null

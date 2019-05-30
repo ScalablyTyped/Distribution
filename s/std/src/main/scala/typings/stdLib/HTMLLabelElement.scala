@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLLabelElement interface gives access to properties specific to <label> elements. It inherits methods and properties from the base HTMLElement interface. */
+/** Gives access to properties specific to <label> elements. It inherits methods and properties from the base HTMLElement interface. */
 @js.native
 trait HTMLLabelElement extends HTMLElement {
   val control: HTMLElement | scala.Null = js.native
@@ -26,6 +26,8 @@ class HTMLLabelElementCls () extends HTMLLabelElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

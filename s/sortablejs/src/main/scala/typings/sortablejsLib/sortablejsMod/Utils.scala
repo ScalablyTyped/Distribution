@@ -624,15 +624,13 @@ trait Utils extends js.Object {
   @JSName("css")
   def css_boxShadow_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.boxShadow): scala.Unit = js.native
   @JSName("css")
-  def css_boxSizing(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.boxSizing): java.lang.String | scala.Null = js.native
+  def css_boxSizing(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.boxSizing): java.lang.String = js.native
   @JSName("css")
   def css_boxSizing(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.boxSizing,
     value: java.lang.String
   ): scala.Unit = js.native
-  @JSName("css")
-  def css_boxSizing_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.boxSizing): scala.Unit = js.native
   @JSName("css")
   def css_breakAfter(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.breakAfter): java.lang.String | scala.Null = js.native
   @JSName("css")
@@ -673,6 +671,14 @@ trait Utils extends js.Object {
   ): scala.Unit = js.native
   @JSName("css")
   def css_captionSide_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.captionSide): scala.Unit = js.native
+  @JSName("css")
+  def css_caretColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.caretColor): java.lang.String = js.native
+  @JSName("css")
+  def css_caretColor(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.caretColor,
+    value: java.lang.String
+  ): scala.Unit = js.native
   @JSName("css")
   def css_clear(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.clear): java.lang.String | scala.Null = js.native
   @JSName("css")
@@ -734,11 +740,15 @@ trait Utils extends js.Object {
   @JSName("css")
   def css_color_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.color): scala.Unit = js.native
   @JSName("css")
-  def css_columnCount(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnCount): js.Any = js.native
+  def css_columnCount(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnCount): java.lang.String = js.native
   @JSName("css")
-  def css_columnCount(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnCount, value: js.Any): scala.Unit = js.native
+  def css_columnCount(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.columnCount,
+    value: java.lang.String
+  ): scala.Unit = js.native
   @JSName("css")
-  def css_columnFill(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnFill): java.lang.String | scala.Null = js.native
+  def css_columnFill(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnFill): java.lang.String = js.native
   @JSName("css")
   def css_columnFill(
     element: stdLib.HTMLElement,
@@ -746,13 +756,15 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_columnFill_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnFill): scala.Unit = js.native
+  def css_columnGap(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnGap): java.lang.String = js.native
   @JSName("css")
-  def css_columnGap(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnGap): js.Any = js.native
+  def css_columnGap(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.columnGap,
+    value: java.lang.String
+  ): scala.Unit = js.native
   @JSName("css")
-  def css_columnGap(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnGap, value: js.Any): scala.Unit = js.native
-  @JSName("css")
-  def css_columnRule(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRule): java.lang.String | scala.Null = js.native
+  def css_columnRule(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRule): java.lang.String = js.native
   @JSName("css")
   def css_columnRule(
     element: stdLib.HTMLElement,
@@ -760,15 +772,15 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_columnRuleColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRuleColor): js.Any = js.native
+  def css_columnRuleColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRuleColor): java.lang.String = js.native
   @JSName("css")
   def css_columnRuleColor(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.columnRuleColor,
-    value: js.Any
+    value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_columnRuleStyle(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRuleStyle): java.lang.String | scala.Null = js.native
+  def css_columnRuleStyle(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRuleStyle): java.lang.String = js.native
   @JSName("css")
   def css_columnRuleStyle(
     element: stdLib.HTMLElement,
@@ -776,19 +788,15 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_columnRuleStyle_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRuleStyle): scala.Unit = js.native
-  @JSName("css")
-  def css_columnRuleWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRuleWidth): js.Any = js.native
+  def css_columnRuleWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRuleWidth): java.lang.String = js.native
   @JSName("css")
   def css_columnRuleWidth(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.columnRuleWidth,
-    value: js.Any
+    value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_columnRule_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnRule): scala.Unit = js.native
-  @JSName("css")
-  def css_columnSpan(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnSpan): java.lang.String | scala.Null = js.native
+  def css_columnSpan(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnSpan): java.lang.String = js.native
   @JSName("css")
   def css_columnSpan(
     element: stdLib.HTMLElement,
@@ -796,21 +804,21 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_columnSpan_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnSpan): scala.Unit = js.native
+  def css_columnWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnWidth): java.lang.String = js.native
   @JSName("css")
-  def css_columnWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnWidth): js.Any = js.native
+  def css_columnWidth(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.columnWidth,
+    value: java.lang.String
+  ): scala.Unit = js.native
   @JSName("css")
-  def css_columnWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columnWidth, value: js.Any): scala.Unit = js.native
-  @JSName("css")
-  def css_columns(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columns): java.lang.String | scala.Null = js.native
+  def css_columns(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columns): java.lang.String = js.native
   @JSName("css")
   def css_columns(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.columns,
     value: java.lang.String
   ): scala.Unit = js.native
-  @JSName("css")
-  def css_columns_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.columns): scala.Unit = js.native
   @JSName("css")
   def css_content(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.content): java.lang.String | scala.Null = js.native
   @JSName("css")
@@ -860,15 +868,13 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_cursor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.cursor): java.lang.String | scala.Null = js.native
+  def css_cursor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.cursor): java.lang.String = js.native
   @JSName("css")
   def css_cursor(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.cursor,
     value: java.lang.String
   ): scala.Unit = js.native
-  @JSName("css")
-  def css_cursor_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.cursor): scala.Unit = js.native
   @JSName("css")
   def css_direction(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.direction): java.lang.String | scala.Null = js.native
   @JSName("css")
@@ -1355,6 +1361,22 @@ trait Utils extends js.Object {
   ): scala.Unit = js.native
   @JSName("css")
   def css_height_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.height): scala.Unit = js.native
+  @JSName("css")
+  def css_imageOrientation(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.imageOrientation): java.lang.String = js.native
+  @JSName("css")
+  def css_imageOrientation(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.imageOrientation,
+    value: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("css")
+  def css_imageRendering(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.imageRendering): java.lang.String = js.native
+  @JSName("css")
+  def css_imageRendering(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.imageRendering,
+    value: java.lang.String
+  ): scala.Unit = js.native
   @JSName("css")
   def css_imeMode(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.imeMode): java.lang.String | scala.Null = js.native
   @JSName("css")
@@ -2122,7 +2144,7 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_objectFit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.objectFit): java.lang.String | scala.Null = js.native
+  def css_objectFit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.objectFit): java.lang.String = js.native
   @JSName("css")
   def css_objectFit(
     element: stdLib.HTMLElement,
@@ -2130,17 +2152,13 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_objectFit_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.objectFit): scala.Unit = js.native
-  @JSName("css")
-  def css_objectPosition(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.objectPosition): java.lang.String | scala.Null = js.native
+  def css_objectPosition(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.objectPosition): java.lang.String = js.native
   @JSName("css")
   def css_objectPosition(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.objectPosition,
     value: java.lang.String
   ): scala.Unit = js.native
-  @JSName("css")
-  def css_objectPosition_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.objectPosition): scala.Unit = js.native
   @JSName("css")
   def css_opacity(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.opacity): java.lang.String | scala.Null = js.native
   @JSName("css")
@@ -2172,7 +2190,7 @@ trait Utils extends js.Object {
   @JSName("css")
   def css_orphans_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.orphans): scala.Unit = js.native
   @JSName("css")
-  def css_outline(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outline): java.lang.String | scala.Null = js.native
+  def css_outline(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outline): java.lang.String = js.native
   @JSName("css")
   def css_outline(
     element: stdLib.HTMLElement,
@@ -2180,7 +2198,7 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_outlineColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineColor): java.lang.String | scala.Null = js.native
+  def css_outlineColor(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineColor): java.lang.String = js.native
   @JSName("css")
   def css_outlineColor(
     element: stdLib.HTMLElement,
@@ -2188,9 +2206,7 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_outlineColor_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineColor): scala.Unit = js.native
-  @JSName("css")
-  def css_outlineOffset(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineOffset): java.lang.String | scala.Null = js.native
+  def css_outlineOffset(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineOffset): java.lang.String = js.native
   @JSName("css")
   def css_outlineOffset(
     element: stdLib.HTMLElement,
@@ -2198,9 +2214,7 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_outlineOffset_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineOffset): scala.Unit = js.native
-  @JSName("css")
-  def css_outlineStyle(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineStyle): java.lang.String | scala.Null = js.native
+  def css_outlineStyle(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineStyle): java.lang.String = js.native
   @JSName("css")
   def css_outlineStyle(
     element: stdLib.HTMLElement,
@@ -2208,19 +2222,13 @@ trait Utils extends js.Object {
     value: java.lang.String
   ): scala.Unit = js.native
   @JSName("css")
-  def css_outlineStyle_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineStyle): scala.Unit = js.native
-  @JSName("css")
-  def css_outlineWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineWidth): java.lang.String | scala.Null = js.native
+  def css_outlineWidth(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineWidth): java.lang.String = js.native
   @JSName("css")
   def css_outlineWidth(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.outlineWidth,
     value: java.lang.String
   ): scala.Unit = js.native
-  @JSName("css")
-  def css_outlineWidth_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outlineWidth): scala.Unit = js.native
-  @JSName("css")
-  def css_outline_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.outline): scala.Unit = js.native
   @JSName("css")
   def css_overflow(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.overflow): java.lang.String | scala.Null = js.native
   @JSName("css")
@@ -2688,15 +2696,13 @@ trait Utils extends js.Object {
   @JSName("css")
   def css_textKashida_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.textKashida): scala.Unit = js.native
   @JSName("css")
-  def css_textOverflow(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.textOverflow): java.lang.String | scala.Null = js.native
+  def css_textOverflow(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.textOverflow): java.lang.String = js.native
   @JSName("css")
   def css_textOverflow(
     element: stdLib.HTMLElement,
     prop: sortablejsLib.sortablejsLibStrings.textOverflow,
     value: java.lang.String
   ): scala.Unit = js.native
-  @JSName("css")
-  def css_textOverflow_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.textOverflow): scala.Unit = js.native
   @JSName("css")
   def css_textShadow(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.textShadow): java.lang.String | scala.Null = js.native
   @JSName("css")
@@ -3619,6 +3625,14 @@ trait Utils extends js.Object {
   ): scala.Unit = js.native
   @JSName("css")
   def css_width_Unit(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.width): scala.Unit = js.native
+  @JSName("css")
+  def css_willChange(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.willChange): java.lang.String = js.native
+  @JSName("css")
+  def css_willChange(
+    element: stdLib.HTMLElement,
+    prop: sortablejsLib.sortablejsLibStrings.willChange,
+    value: java.lang.String
+  ): scala.Unit = js.native
   @JSName("css")
   def css_wordBreak(element: stdLib.HTMLElement, prop: sortablejsLib.sortablejsLibStrings.wordBreak): java.lang.String | scala.Null = js.native
   @JSName("css")

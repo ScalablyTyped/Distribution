@@ -14,7 +14,7 @@ object DestroyOptions {
   def apply(
     debug: js.UndefOr[scala.Boolean] = js.undefined,
     require: js.UndefOr[scala.Boolean] = js.undefined,
-    transacting: knexLib.knexMod.Transaction = null,
+    transacting: knexLib.knexMod.Transaction[_, _] = null,
     withSchema: java.lang.String = null
   ): DestroyOptions = {
     val __obj = js.Dynamic.literal()

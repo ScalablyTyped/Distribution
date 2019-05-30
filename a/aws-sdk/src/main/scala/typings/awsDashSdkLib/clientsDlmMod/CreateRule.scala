@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateRule extends js.Object {
   /**
-    * The interval. The supported values are 12 and 24.
+    * The interval between snapshots. The supported values are 2, 3, 4, 6, 8, 12, and 24.
     */
   var Interval: awsDashSdkLib.clientsDlmMod.Interval
   /**
@@ -15,7 +15,7 @@ trait CreateRule extends js.Object {
     */
   var IntervalUnit: IntervalUnitValues
   /**
-    * The time, in UTC, to start the operation. The operation occurs within a one-hour window following the specified time.
+    * The time, in UTC, to start the operation. The supported format is hh:mm. The operation occurs within a one-hour window following the specified time.
     */
   var Times: js.UndefOr[TimesList] = js.undefined
 }

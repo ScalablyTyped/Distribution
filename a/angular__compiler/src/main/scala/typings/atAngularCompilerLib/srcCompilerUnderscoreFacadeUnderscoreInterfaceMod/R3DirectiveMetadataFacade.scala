@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait R3DirectiveMetadataFacade extends js.Object {
   var deps: js.Array[R3DependencyMetadataFacade] | scala.Null
-  var exportAs: java.lang.String | scala.Null
+  var exportAs: js.Array[java.lang.String] | scala.Null
   var host: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var inputs: js.Array[java.lang.String]
   var lifecycle: atAngularCompilerLib.Anon_UsesOnChanges
@@ -19,8 +19,9 @@ trait R3DirectiveMetadataFacade extends js.Object {
   var selector: java.lang.String | scala.Null
   var `type`: js.Any
   var typeArgumentCount: scala.Double
-  var typeSourceSpan: scala.Null
+  var typeSourceSpan: ParseSourceSpan
   var usesInheritance: scala.Boolean
+  var viewQueries: js.Array[R3QueryMetadataFacade]
 }
 
 object R3DirectiveMetadataFacade {
@@ -35,14 +36,15 @@ object R3DirectiveMetadataFacade {
     queries: js.Array[R3QueryMetadataFacade],
     `type`: js.Any,
     typeArgumentCount: scala.Double,
-    typeSourceSpan: scala.Null,
+    typeSourceSpan: ParseSourceSpan,
     usesInheritance: scala.Boolean,
+    viewQueries: js.Array[R3QueryMetadataFacade],
     deps: js.Array[R3DependencyMetadataFacade] = null,
-    exportAs: java.lang.String = null,
+    exportAs: js.Array[java.lang.String] = null,
     providers: js.Array[Provider] = null,
     selector: java.lang.String = null
   ): R3DirectiveMetadataFacade = {
-    val __obj = js.Dynamic.literal(host = host, inputs = inputs, lifecycle = lifecycle, name = name, outputs = outputs, propMetadata = propMetadata, queries = queries, typeArgumentCount = typeArgumentCount, typeSourceSpan = typeSourceSpan, usesInheritance = usesInheritance)
+    val __obj = js.Dynamic.literal(host = host, inputs = inputs, lifecycle = lifecycle, name = name, outputs = outputs, propMetadata = propMetadata, queries = queries, typeArgumentCount = typeArgumentCount, typeSourceSpan = typeSourceSpan, usesInheritance = usesInheritance, viewQueries = viewQueries)
     __obj.updateDynamic("type")(`type`)
     if (deps != null) __obj.updateDynamic("deps")(deps)
     if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)

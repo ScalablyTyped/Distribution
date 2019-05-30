@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The PaymentResponse interface of the Payment Request API is returned after a user selects a payment method and approves a payment request. */
+/** An interface of the Payment Request API is returned after a user selects a payment method and approves a payment request. */
 @js.native
 trait PaymentResponse extends js.Object {
   val details: js.Any = js.native

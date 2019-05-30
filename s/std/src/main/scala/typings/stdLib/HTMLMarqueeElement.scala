@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLMarqueeElement interface provides methods to manipulate <marquee> elements. */
+/** Provides methods to manipulate <marquee> elements. */
 @js.native
 trait HTMLMarqueeElement extends HTMLElement {
   /** @deprecated */
@@ -151,6 +151,8 @@ class HTMLMarqueeElementCls () extends HTMLMarqueeElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

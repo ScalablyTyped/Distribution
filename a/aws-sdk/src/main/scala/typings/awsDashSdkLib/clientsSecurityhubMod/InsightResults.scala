@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait InsightResults extends js.Object {
   /**
-    * The attribute by which the findings are grouped for the insight's whose results are returned by the GetInsightResults operation.
+    * The attribute that the findings are grouped by for the insight whose results are returned by the GetInsightResults operation.
     */
   var GroupByAttribute: NonEmptyString
   /**

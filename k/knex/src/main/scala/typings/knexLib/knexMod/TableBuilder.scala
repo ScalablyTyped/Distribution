@@ -16,6 +16,7 @@ trait TableBuilder extends js.Object {
   def comment(`val`: java.lang.String): TableBuilder = js.native
   def date(columnName: java.lang.String): ColumnBuilder = js.native
   def dateTime(columnName: java.lang.String): ColumnBuilder = js.native
+  def dateTime(columnName: java.lang.String, options: knexLib.Anon_Precision): ColumnBuilder = js.native
   def decimal(columnName: java.lang.String): ColumnBuilder = js.native
   def decimal(columnName: java.lang.String, precision: scala.Double): ColumnBuilder = js.native
   def decimal(columnName: java.lang.String, precision: scala.Double, scale: scala.Double): ColumnBuilder = js.native
@@ -24,13 +25,13 @@ trait TableBuilder extends js.Object {
   def dropColumns(columnNames: java.lang.String*): TableBuilder = js.native
   def dropForeign(columnNames: js.Array[java.lang.String]): TableBuilder = js.native
   def dropForeign(columnNames: js.Array[java.lang.String], foreignKeyName: java.lang.String): TableBuilder = js.native
-  def dropIndex(columnNames: js.Array[java.lang.String | Raw]): TableBuilder = js.native
-  def dropIndex(columnNames: js.Array[java.lang.String | Raw], indexName: java.lang.String): TableBuilder = js.native
+  def dropIndex(columnNames: js.Array[java.lang.String | Raw[_]]): TableBuilder = js.native
+  def dropIndex(columnNames: js.Array[java.lang.String | Raw[_]], indexName: java.lang.String): TableBuilder = js.native
   def dropPrimary(): TableBuilder = js.native
   def dropPrimary(constraintName: java.lang.String): TableBuilder = js.native
   def dropTimestamps(): ColumnBuilder = js.native
-  def dropUnique(columnNames: js.Array[java.lang.String | Raw]): TableBuilder = js.native
-  def dropUnique(columnNames: js.Array[java.lang.String | Raw], indexName: java.lang.String): TableBuilder = js.native
+  def dropUnique(columnNames: js.Array[java.lang.String | Raw[_]]): TableBuilder = js.native
+  def dropUnique(columnNames: js.Array[java.lang.String | Raw[_]], indexName: java.lang.String): TableBuilder = js.native
   def enu(columnName: java.lang.String, values: js.Array[Value]): ColumnBuilder = js.native
   def enu(columnName: java.lang.String, values: js.Array[Value], options: EnumOptions): ColumnBuilder = js.native
   def enum(columnName: java.lang.String, values: js.Array[Value]): ColumnBuilder = js.native
@@ -44,10 +45,10 @@ trait TableBuilder extends js.Object {
   def foreign(columns: js.Array[java.lang.String], foreignKeyName: java.lang.String): MultikeyForeignConstraintBuilder = js.native
   def increments(): ColumnBuilder = js.native
   def increments(columnName: java.lang.String): ColumnBuilder = js.native
-  def index(columnNames: js.Array[java.lang.String | Raw]): TableBuilder = js.native
-  def index(columnNames: js.Array[java.lang.String | Raw], indexName: java.lang.String): TableBuilder = js.native
+  def index(columnNames: js.Array[java.lang.String | Raw[_]]): TableBuilder = js.native
+  def index(columnNames: js.Array[java.lang.String | Raw[_]], indexName: java.lang.String): TableBuilder = js.native
   def index(
-    columnNames: js.Array[java.lang.String | Raw],
+    columnNames: js.Array[java.lang.String | Raw[_]],
     indexName: java.lang.String,
     indexType: java.lang.String
   ): TableBuilder = js.native
@@ -66,12 +67,14 @@ trait TableBuilder extends js.Object {
   def text(columnName: java.lang.String, textType: java.lang.String): ColumnBuilder = js.native
   def time(columnName: java.lang.String): ColumnBuilder = js.native
   def timestamp(columnName: java.lang.String): ColumnBuilder = js.native
-  def timestamp(columnName: java.lang.String, standard: scala.Boolean): ColumnBuilder = js.native
+  def timestamp(columnName: java.lang.String, options: knexLib.Anon_Precision): ColumnBuilder = js.native
+  def timestamp(columnName: java.lang.String, withoutTz: scala.Boolean): ColumnBuilder = js.native
+  def timestamp(columnName: java.lang.String, withoutTz: scala.Boolean, precision: scala.Double): ColumnBuilder = js.native
   def timestamps(): ColumnBuilder = js.native
   def timestamps(useTimestampType: scala.Boolean): ColumnBuilder = js.native
   def timestamps(useTimestampType: scala.Boolean, makeDefaultNow: scala.Boolean): ColumnBuilder = js.native
-  def unique(columnNames: js.Array[java.lang.String | Raw]): TableBuilder = js.native
-  def unique(columnNames: js.Array[java.lang.String | Raw], indexName: java.lang.String): TableBuilder = js.native
+  def unique(columnNames: js.Array[java.lang.String | Raw[_]]): TableBuilder = js.native
+  def unique(columnNames: js.Array[java.lang.String | Raw[_]], indexName: java.lang.String): TableBuilder = js.native
   def uuid(columnName: java.lang.String): ColumnBuilder = js.native
 }
 

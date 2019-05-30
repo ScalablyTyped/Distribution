@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait MaintenanceWindowRunCommandParameters extends js.Object {
   /**
-    * Information about the command(s) to run.
+    * Information about the commands to run.
     */
   var Comment: js.UndefOr[Comment] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait MaintenanceWindowRunCommandParameters extends js.Object {
     */
   var Parameters: js.UndefOr[Parameters] = js.undefined
   /**
-    * The IAM service role to assume during task execution.
+    * The ARN of the IAM service role to use to publish Amazon Simple Notification Service (Amazon SNS) notifications for maintenance window Run Command tasks.
     */
   var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
   /**

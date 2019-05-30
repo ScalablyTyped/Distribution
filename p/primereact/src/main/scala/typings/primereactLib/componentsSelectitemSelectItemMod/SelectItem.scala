@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SelectItem extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined
   var label: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
@@ -18,12 +19,14 @@ object SelectItem {
   def apply(
     value: js.Any,
     className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
     icon: java.lang.String = null,
     label: java.lang.String = null,
     title: java.lang.String = null
   ): SelectItem = {
     val __obj = js.Dynamic.literal(value = value)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (icon != null) __obj.updateDynamic("icon")(icon)
     if (label != null) __obj.updateDynamic("label")(label)
     if (title != null) __obj.updateDynamic("title")(title)

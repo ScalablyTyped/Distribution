@@ -12,7 +12,6 @@ trait Anon_ClosedByChildren extends js.Object {
   var ignoreFirstLf: js.UndefOr[scala.Boolean] = js.undefined
   var implicitNamespacePrefix: js.UndefOr[java.lang.String] = js.undefined
   var isVoid: js.UndefOr[scala.Boolean] = js.undefined
-  var requiredParents: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
 object Anon_ClosedByChildren {
@@ -23,8 +22,7 @@ object Anon_ClosedByChildren {
     contentType: atAngularCompilerLib.srcMlUnderscoreParserTagsMod.TagContentType = null,
     ignoreFirstLf: js.UndefOr[scala.Boolean] = js.undefined,
     implicitNamespacePrefix: java.lang.String = null,
-    isVoid: js.UndefOr[scala.Boolean] = js.undefined,
-    requiredParents: js.Array[java.lang.String] = null
+    isVoid: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_ClosedByChildren = {
     val __obj = js.Dynamic.literal()
     if (closedByChildren != null) __obj.updateDynamic("closedByChildren")(closedByChildren)
@@ -33,7 +31,6 @@ object Anon_ClosedByChildren {
     if (!js.isUndefined(ignoreFirstLf)) __obj.updateDynamic("ignoreFirstLf")(ignoreFirstLf)
     if (implicitNamespacePrefix != null) __obj.updateDynamic("implicitNamespacePrefix")(implicitNamespacePrefix)
     if (!js.isUndefined(isVoid)) __obj.updateDynamic("isVoid")(isVoid)
-    if (requiredParents != null) __obj.updateDynamic("requiredParents")(requiredParents)
     __obj.asInstanceOf[Anon_ClosedByChildren]
   }
 }

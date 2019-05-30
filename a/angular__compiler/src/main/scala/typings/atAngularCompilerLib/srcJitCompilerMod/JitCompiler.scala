@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/jit/compiler", "JitCompiler")
 @js.native
 class JitCompiler protected () extends js.Object {
-  def this(_metadataResolver: atAngularCompilerLib.srcMetadataUnderscoreResolverMod.CompileMetadataResolver, _templateParser: atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreParserMod.TemplateParser, _styleCompiler: atAngularCompilerLib.srcStyleUnderscoreCompilerMod.StyleCompiler, _viewCompiler: atAngularCompilerLib.srcViewUnderscoreCompilerViewUnderscoreCompilerMod.ViewCompiler, _ngModuleCompiler: atAngularCompilerLib.srcNgUnderscoreModuleUnderscoreCompilerMod.NgModuleCompiler, _summaryResolver: atAngularCompilerLib.srcSummaryUnderscoreResolverMod.SummaryResolver[atAngularCompilerLib.srcCoreMod.Type], _reflector: atAngularCompilerLib.srcCompileUnderscoreReflectorMod.CompileReflector, _compilerConfig: atAngularCompilerLib.srcConfigMod.CompilerConfig, _console: atAngularCompilerLib.srcUtilMod.Console, getExtraNgModuleProviders: js.Function1[
+  def this(_metadataResolver: atAngularCompilerLib.srcMetadataUnderscoreResolverMod.CompileMetadataResolver, _templateParser: atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreParserMod.TemplateParser, _styleCompiler: atAngularCompilerLib.srcStyleUnderscoreCompilerMod.StyleCompiler, _viewCompiler: atAngularCompilerLib.srcViewUnderscoreCompilerViewUnderscoreCompilerMod.ViewCompiler, _ngModuleCompiler: atAngularCompilerLib.srcNgUnderscoreModuleUnderscoreCompilerMod.NgModuleCompiler, _summaryResolver: atAngularCompilerLib.srcSummaryUnderscoreResolverMod.SummaryResolver[atAngularCompilerLib.srcCoreMod.Type], _reflector: atAngularCompilerLib.srcCompileUnderscoreReflectorMod.CompileReflector, _jitEvaluator: atAngularCompilerLib.srcOutputOutputUnderscoreJitMod.JitEvaluator, _compilerConfig: atAngularCompilerLib.srcConfigMod.CompilerConfig, _console: atAngularCompilerLib.srcUtilMod.Console, getExtraNgModuleProviders: js.Function1[
       /* ngModule */ js.Any, 
       js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileProviderMetadata]
     ]) = this()
@@ -28,6 +28,7 @@ class JitCompiler protected () extends js.Object {
   var _createCompiledTemplate: js.Any = js.native
   var _filterJitIdentifiers: js.Any = js.native
   var _interpretOrJit: js.Any = js.native
+  var _jitEvaluator: js.Any = js.native
   var _loadModules: js.Any = js.native
   var _metadataResolver: js.Any = js.native
   var _ngModuleCompiler: js.Any = js.native

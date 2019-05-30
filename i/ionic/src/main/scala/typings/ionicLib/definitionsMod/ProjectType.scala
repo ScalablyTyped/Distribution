@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
   - ionicLib.ionicLibStrings.ionic1
   - ionicLib.ionicLibStrings.custom
   - ionicLib.ionicLibStrings.bare
+  - ionicLib.ionicLibStrings.react
+  - ionicLib.ionicLibStrings.vue
 */
 trait ProjectType extends js.Object
 

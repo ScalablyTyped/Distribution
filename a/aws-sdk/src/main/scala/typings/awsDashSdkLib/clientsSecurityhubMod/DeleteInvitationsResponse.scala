@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteInvitationsResponse extends js.Object {
   /**
-    * A list of account ID and email address pairs of the AWS accounts that could not be processed. 
+    * A list of account ID and email address pairs of the AWS accounts that couldn't be processed. 
     */
   var UnprocessedAccounts: js.UndefOr[ResultList] = js.undefined
 }

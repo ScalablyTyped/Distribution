@@ -11,7 +11,7 @@ trait GlobalEventHandlersEventMap extends js.Object {
   var animationend: AnimationEvent
   var animationiteration: AnimationEvent
   var animationstart: AnimationEvent
-  var auxclick: Event
+  var auxclick: MouseEvent
   var blur: FocusEvent
   var cancel: Event
   var canplay: Event
@@ -102,7 +102,7 @@ object GlobalEventHandlersEventMap {
     animationend: AnimationEvent,
     animationiteration: AnimationEvent,
     animationstart: AnimationEvent,
-    auxclick: Event,
+    auxclick: MouseEvent,
     blur: FocusEvent,
     cancel: Event,
     canplay: Event,

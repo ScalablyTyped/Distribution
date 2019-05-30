@@ -71,6 +71,30 @@ trait ObsoleteProperties[TLength] extends js.Object {
     */
   var KhtmlBoxPack: js.UndefOr[BoxPackProperty] = js.undefined
   /**
+    * The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
+    *
+    * **Initial value**: `auto`
+    *
+    * @deprecated
+    */
+  var KhtmlLineBreak: js.UndefOr[LineBreakProperty] = js.undefined
+  /**
+    * The **`opacity`** CSS property sets the transparency of an element or the degree to which content behind an element is visible.
+    *
+    * **Initial value**: `1.0`
+    *
+    * @deprecated
+    */
+  var KhtmlOpacity: js.UndefOr[GlobalsNumber] = js.undefined
+  /**
+    * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
+    *
+    * **Initial value**: `auto`
+    *
+    * @deprecated
+    */
+  var KhtmlUserSelect: js.UndefOr[UserSelectProperty] = js.undefined
+  /**
     * The **`background-clip`** CSS property sets whether an element's background `<color>` or `<image>` extends underneath its border.
     *
     * **Initial value**: `border-box`
@@ -249,14 +273,6 @@ trait ObsoleteProperties[TLength] extends js.Object {
     */
   var MozOutlineWidth: js.UndefOr[OutlineWidthProperty[TLength]] = js.undefined
   /**
-    * The **`resize`** CSS property sets whether an element is resizable, and if so, in which directions.
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var MozResize: js.UndefOr[ResizeProperty] = js.undefined
-  /**
     * The **`text-align-last`** CSS property sets how the last line of a block or a line, right before a forced line break, is aligned.
     *
     * **Initial value**: `auto`
@@ -304,6 +320,14 @@ trait ObsoleteProperties[TLength] extends js.Object {
     * @deprecated
     */
   var MozUserInput: js.UndefOr[MozUserInputProperty] = js.undefined
+  /**
+    * The **`-moz-window-shadow`** CSS property specifies whether a window will have a shadow. It only works on Mac OS X.
+    *
+    * **Initial value**: `default`
+    *
+    * @deprecated
+    */
+  var MozWindowShadow: js.UndefOr[MozWindowShadowProperty] = js.undefined
   /**
     * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
     *
@@ -633,70 +657,6 @@ trait ObsoleteProperties[TLength] extends js.Object {
     */
   var msImeMode: js.UndefOr[ImeModeProperty] = js.undefined
   /**
-    * The **`-ms-scrollbar-3dlight-color`** CSS property is a Microsoft extension specifying the color of the top and left edges of the scroll box and scroll arrows of a scroll bar.
-    *
-    * **Initial value**: depends on user agent
-    *
-    * @deprecated
-    */
-  var msScrollbar3dlightColor: js.UndefOr[MsScrollbar3dlightColorProperty] = js.undefined
-  /**
-    * The **`-ms-scrollbar-arrow-color`** CSS property is a Microsoft extension that specifies the color of the arrow elements of a scroll arrow.
-    *
-    * **Initial value**: `ButtonText`
-    *
-    * @deprecated
-    */
-  var msScrollbarArrowColor: js.UndefOr[MsScrollbarArrowColorProperty] = js.undefined
-  /**
-    * The `**-ms-scrollbar-base-color**` CSS property is a Microsoft extension that specifies the base color of the main elements of a scroll bar.
-    *
-    * **Initial value**: depends on user agent
-    *
-    * @deprecated
-    */
-  var msScrollbarBaseColor: js.UndefOr[MsScrollbarBaseColorProperty] = js.undefined
-  /**
-    * The **`-ms-scrollbar-darkshadow-color`** CSS property is a Microsoft extension that specifies the color of a scroll bar's gutter.
-    *
-    * **Initial value**: `ThreeDDarkShadow`
-    *
-    * @deprecated
-    */
-  var msScrollbarDarkshadowColor: js.UndefOr[MsScrollbarDarkshadowColorProperty] = js.undefined
-  /**
-    * The `**-ms-scrollbar-face-color**` CSS property is a Microsoft extension that specifies the color of the scroll box and scroll arrows of a scroll bar.
-    *
-    * **Initial value**: `ThreeDFace`
-    *
-    * @deprecated
-    */
-  var msScrollbarFaceColor: js.UndefOr[MsScrollbarFaceColorProperty] = js.undefined
-  /**
-    * The `**-ms-scrollbar-highlight-color**` CSS property is a Microsoft extension that specifies the color of the slider tray, the top and left edges of the scroll box, and the scroll arrows of a scroll bar.
-    *
-    * **Initial value**: `ThreeDHighlight`
-    *
-    * @deprecated
-    */
-  var msScrollbarHighlightColor: js.UndefOr[MsScrollbarHighlightColorProperty] = js.undefined
-  /**
-    * The **`-ms-scrollbar-shadow-color`** CSS property is a Microsoft extension that specifies the color of the bottom and right edges of the scroll box and scroll arrows of a scroll bar.
-    *
-    * **Initial value**: `ThreeDDarkShadow`
-    *
-    * @deprecated
-    */
-  var msScrollbarShadowColor: js.UndefOr[MsScrollbarShadowColorProperty] = js.undefined
-  /**
-    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
-    *
-    * **Initial value**: `Scrollbar`
-    *
-    * @deprecated
-    */
-  var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty] = js.undefined
-  /**
     * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `auto`
@@ -813,6 +773,9 @@ object ObsoleteProperties {
     KhtmlBoxOrdinalGroup: GlobalsNumber = null,
     KhtmlBoxOrient: BoxOrientProperty = null,
     KhtmlBoxPack: BoxPackProperty = null,
+    KhtmlLineBreak: LineBreakProperty = null,
+    KhtmlOpacity: GlobalsNumber = null,
+    KhtmlUserSelect: UserSelectProperty = null,
     MozBackgroundClip: BackgroundClipProperty = null,
     MozBackgroundInlinePolicy: BoxDecorationBreakProperty = null,
     MozBackgroundOrigin: BackgroundOriginProperty = null,
@@ -836,13 +799,13 @@ object ObsoleteProperties {
     MozOutlineRadius: MozOutlineRadiusProperty[TLength] = null,
     MozOutlineStyle: OutlineStyleProperty = null,
     MozOutlineWidth: OutlineWidthProperty[TLength] = null,
-    MozResize: ResizeProperty = null,
     MozTextAlignLast: TextAlignLastProperty = null,
     MozTextBlink: MozTextBlinkProperty = null,
     MozTextDecorationColor: TextDecorationColorProperty = null,
     MozTextDecorationLine: TextDecorationLineProperty = null,
     MozTextDecorationStyle: TextDecorationStyleProperty = null,
     MozUserInput: MozUserInputProperty = null,
+    MozWindowShadow: MozWindowShadowProperty = null,
     OAnimation: AnimationProperty = null,
     OAnimationDelay: GlobalsString = null,
     OAnimationDirection: AnimationDirectionProperty = null,
@@ -885,14 +848,6 @@ object ObsoleteProperties {
     gridRowGap: GridRowGapProperty[TLength] = null,
     imeMode: ImeModeProperty = null,
     msImeMode: ImeModeProperty = null,
-    msScrollbar3dlightColor: MsScrollbar3dlightColorProperty = null,
-    msScrollbarArrowColor: MsScrollbarArrowColorProperty = null,
-    msScrollbarBaseColor: MsScrollbarBaseColorProperty = null,
-    msScrollbarDarkshadowColor: MsScrollbarDarkshadowColorProperty = null,
-    msScrollbarFaceColor: MsScrollbarFaceColorProperty = null,
-    msScrollbarHighlightColor: MsScrollbarHighlightColorProperty = null,
-    msScrollbarShadowColor: MsScrollbarShadowColorProperty = null,
-    msScrollbarTrackColor: MsScrollbarTrackColorProperty = null,
     offsetBlock: InsetBlockProperty[TLength] = null,
     offsetBlockEnd: InsetBlockEndProperty[TLength] = null,
     offsetBlockStart: InsetBlockStartProperty[TLength] = null,
@@ -916,6 +871,9 @@ object ObsoleteProperties {
     if (KhtmlBoxOrdinalGroup != null) __obj.updateDynamic("KhtmlBoxOrdinalGroup")(KhtmlBoxOrdinalGroup.asInstanceOf[js.Any])
     if (KhtmlBoxOrient != null) __obj.updateDynamic("KhtmlBoxOrient")(KhtmlBoxOrient)
     if (KhtmlBoxPack != null) __obj.updateDynamic("KhtmlBoxPack")(KhtmlBoxPack)
+    if (KhtmlLineBreak != null) __obj.updateDynamic("KhtmlLineBreak")(KhtmlLineBreak)
+    if (KhtmlOpacity != null) __obj.updateDynamic("KhtmlOpacity")(KhtmlOpacity.asInstanceOf[js.Any])
+    if (KhtmlUserSelect != null) __obj.updateDynamic("KhtmlUserSelect")(KhtmlUserSelect)
     if (MozBackgroundClip != null) __obj.updateDynamic("MozBackgroundClip")(MozBackgroundClip.asInstanceOf[js.Any])
     if (MozBackgroundInlinePolicy != null) __obj.updateDynamic("MozBackgroundInlinePolicy")(MozBackgroundInlinePolicy)
     if (MozBackgroundOrigin != null) __obj.updateDynamic("MozBackgroundOrigin")(MozBackgroundOrigin.asInstanceOf[js.Any])
@@ -939,13 +897,13 @@ object ObsoleteProperties {
     if (MozOutlineRadius != null) __obj.updateDynamic("MozOutlineRadius")(MozOutlineRadius.asInstanceOf[js.Any])
     if (MozOutlineStyle != null) __obj.updateDynamic("MozOutlineStyle")(MozOutlineStyle.asInstanceOf[js.Any])
     if (MozOutlineWidth != null) __obj.updateDynamic("MozOutlineWidth")(MozOutlineWidth.asInstanceOf[js.Any])
-    if (MozResize != null) __obj.updateDynamic("MozResize")(MozResize)
     if (MozTextAlignLast != null) __obj.updateDynamic("MozTextAlignLast")(MozTextAlignLast)
     if (MozTextBlink != null) __obj.updateDynamic("MozTextBlink")(MozTextBlink)
     if (MozTextDecorationColor != null) __obj.updateDynamic("MozTextDecorationColor")(MozTextDecorationColor.asInstanceOf[js.Any])
     if (MozTextDecorationLine != null) __obj.updateDynamic("MozTextDecorationLine")(MozTextDecorationLine.asInstanceOf[js.Any])
     if (MozTextDecorationStyle != null) __obj.updateDynamic("MozTextDecorationStyle")(MozTextDecorationStyle)
     if (MozUserInput != null) __obj.updateDynamic("MozUserInput")(MozUserInput)
+    if (MozWindowShadow != null) __obj.updateDynamic("MozWindowShadow")(MozWindowShadow)
     if (OAnimation != null) __obj.updateDynamic("OAnimation")(OAnimation.asInstanceOf[js.Any])
     if (OAnimationDelay != null) __obj.updateDynamic("OAnimationDelay")(OAnimationDelay.asInstanceOf[js.Any])
     if (OAnimationDirection != null) __obj.updateDynamic("OAnimationDirection")(OAnimationDirection.asInstanceOf[js.Any])
@@ -988,14 +946,6 @@ object ObsoleteProperties {
     if (gridRowGap != null) __obj.updateDynamic("gridRowGap")(gridRowGap.asInstanceOf[js.Any])
     if (imeMode != null) __obj.updateDynamic("imeMode")(imeMode)
     if (msImeMode != null) __obj.updateDynamic("msImeMode")(msImeMode)
-    if (msScrollbar3dlightColor != null) __obj.updateDynamic("msScrollbar3dlightColor")(msScrollbar3dlightColor.asInstanceOf[js.Any])
-    if (msScrollbarArrowColor != null) __obj.updateDynamic("msScrollbarArrowColor")(msScrollbarArrowColor.asInstanceOf[js.Any])
-    if (msScrollbarBaseColor != null) __obj.updateDynamic("msScrollbarBaseColor")(msScrollbarBaseColor.asInstanceOf[js.Any])
-    if (msScrollbarDarkshadowColor != null) __obj.updateDynamic("msScrollbarDarkshadowColor")(msScrollbarDarkshadowColor.asInstanceOf[js.Any])
-    if (msScrollbarFaceColor != null) __obj.updateDynamic("msScrollbarFaceColor")(msScrollbarFaceColor.asInstanceOf[js.Any])
-    if (msScrollbarHighlightColor != null) __obj.updateDynamic("msScrollbarHighlightColor")(msScrollbarHighlightColor.asInstanceOf[js.Any])
-    if (msScrollbarShadowColor != null) __obj.updateDynamic("msScrollbarShadowColor")(msScrollbarShadowColor.asInstanceOf[js.Any])
-    if (msScrollbarTrackColor != null) __obj.updateDynamic("msScrollbarTrackColor")(msScrollbarTrackColor.asInstanceOf[js.Any])
     if (offsetBlock != null) __obj.updateDynamic("offsetBlock")(offsetBlock.asInstanceOf[js.Any])
     if (offsetBlockEnd != null) __obj.updateDynamic("offsetBlockEnd")(offsetBlockEnd.asInstanceOf[js.Any])
     if (offsetBlockStart != null) __obj.updateDynamic("offsetBlockStart")(offsetBlockStart.asInstanceOf[js.Any])

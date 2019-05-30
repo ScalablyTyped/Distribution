@@ -23,7 +23,7 @@ trait UpdateMaintenanceWindowTargetResult extends js.Object {
     */
   var Targets: js.UndefOr[Targets] = js.undefined
   /**
-    * The Maintenance Window ID specified in the update request.
+    * The maintenance window ID specified in the update request.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
   /**

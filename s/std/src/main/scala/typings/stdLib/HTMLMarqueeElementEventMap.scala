@@ -19,7 +19,7 @@ object HTMLMarqueeElementEventMap {
     animationend: AnimationEvent,
     animationiteration: AnimationEvent,
     animationstart: AnimationEvent,
-    auxclick: Event,
+    auxclick: MouseEvent,
     blur: FocusEvent,
     bounce: Event,
     cancel: Event,

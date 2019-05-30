@@ -35,7 +35,7 @@ class CommandStringHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definitionsM
   def formatOptionDefault(opt: O): js.Promise[java.lang.String] = js.native
   def formatOptionLine(opt: O): js.Promise[java.lang.String] = js.native
   def formatOptions(): js.Promise[java.lang.String] = js.native
-  def formatOptionsGroup(title: java.lang.String, options: js.Array[O]): js.Promise[java.lang.String] = js.native
+  def formatOptionsGroup(titleText: java.lang.String, options: js.Array[O]): js.Promise[java.lang.String] = js.native
   def formatSummary(): js.Promise[java.lang.String] = js.native
   def formatUsage(): js.Promise[java.lang.String] = js.native
 }

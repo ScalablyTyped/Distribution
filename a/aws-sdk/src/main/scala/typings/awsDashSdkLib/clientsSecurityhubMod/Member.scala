@@ -15,11 +15,11 @@ trait Member extends js.Object {
     */
   var Email: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * Time stamp at which the member account was invited to Security Hub.
+    * The timestamp of when the member account was invited to Security Hub.
     */
   var InvitedAt: js.UndefOr[Timestamp] = js.undefined
   /**
-    * The AWS account ID of the master Security Hub account to this member account.
+    * The AWS account ID of the Security Hub master account to this member account.
     */
   var MasterId: js.UndefOr[NonEmptyString] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait Member extends js.Object {
     */
   var MemberStatus: js.UndefOr[NonEmptyString] = js.undefined
   /**
-    * Time stamp at which this member account was updated.
+    * The timestamp of when this member account was updated.
     */
   var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }

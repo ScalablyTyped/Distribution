@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The ScriptProcessorNode interface allows the generation, processing, or analyzing of audio using JavaScript. */
+/** Allows the generation, processing, or analyzing of audio using JavaScript. */
 @js.native
 trait ScriptProcessorNode extends AudioNode {
   /** @deprecated */

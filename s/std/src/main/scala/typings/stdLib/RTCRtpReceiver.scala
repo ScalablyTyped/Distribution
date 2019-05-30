@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The RTCRtpReceiver interface of the the WebRTC API manages the reception and decoding of data for a MediaStreamTrack on an RTCPeerConnection. */
+/** An interface of the WebRTC API manages the reception and decoding of data for a MediaStreamTrack on an RTCPeerConnection. */
 trait RTCRtpReceiver extends js.Object {
   val rtcpTransport: RTCDtlsTransport | scala.Null
   val track: MediaStreamTrack

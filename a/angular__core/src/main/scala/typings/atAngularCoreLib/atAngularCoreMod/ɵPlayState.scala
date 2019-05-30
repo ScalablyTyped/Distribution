@@ -5,15 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
+sealed trait ɵPlayState extends js.Object
+
 @JSImport("@angular/core", "ɵPlayState")
 @js.native
 object ɵPlayState extends js.Object {
-  /* 200 */ val Destroyed: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayState.Destroyed with scala.Double = js.native
-  /* 100 */ val Finished: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayState.Finished with scala.Double = js.native
-  /* 2 */ val Paused: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayState.Paused with scala.Double = js.native
-  /* 0 */ val Pending: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayState.Pending with scala.Double = js.native
-  /* 1 */ val Running: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayState.Running with scala.Double = js.native
+  @js.native
+  sealed trait Destroyed
+    extends atAngularCoreLib.atAngularCoreMod.ɵPlayState
+  
+  @js.native
+  sealed trait Finished
+    extends atAngularCoreLib.atAngularCoreMod.ɵPlayState
+  
+  @js.native
+  sealed trait Paused
+    extends atAngularCoreLib.atAngularCoreMod.ɵPlayState
+  
+  @js.native
+  sealed trait Pending
+    extends atAngularCoreLib.atAngularCoreMod.ɵPlayState
+  
+  @js.native
+  sealed trait Running
+    extends atAngularCoreLib.atAngularCoreMod.ɵPlayState
+  
+  /* 200 */ val Destroyed: Destroyed with scala.Double = js.native
+  /* 100 */ val Finished: Finished with scala.Double = js.native
+  /* 2 */ val Paused: Paused with scala.Double = js.native
+  /* 0 */ val Pending: Pending with scala.Double = js.native
+  /* 1 */ val Running: Running with scala.Double = js.native
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayState with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[atAngularCoreLib.atAngularCoreMod.ɵPlayState with scala.Double] = js.native
 }
 

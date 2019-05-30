@@ -34,7 +34,6 @@ trait VendorShorthandPropertiesFallback[TLength] extends js.Object {
   var WebkitFlex: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.undefined
   /** The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` properties. */
   var WebkitFlexFlow: js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]] = js.undefined
-  var WebkitLineClamp: js.UndefOr[WebkitLineClampProperty | js.Array[WebkitLineClampProperty]] = js.undefined
   /** The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points. */
   var WebkitMask: js.UndefOr[WebkitMaskProperty[TLength] | js.Array[WebkitMaskProperty[TLength]]] = js.undefined
   /** The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`. */
@@ -73,7 +72,6 @@ object VendorShorthandPropertiesFallback {
     WebkitColumns: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]] = null,
     WebkitFlex: FlexProperty[TLength] | js.Array[FlexProperty[TLength]] = null,
     WebkitFlexFlow: FlexFlowProperty | js.Array[FlexFlowProperty] = null,
-    WebkitLineClamp: WebkitLineClampProperty | js.Array[WebkitLineClampProperty] = null,
     WebkitMask: WebkitMaskProperty[TLength] | js.Array[WebkitMaskProperty[TLength]] = null,
     WebkitTextEmphasis: TextEmphasisProperty | js.Array[TextEmphasisProperty] = null,
     WebkitTextStroke: WebkitTextStrokeProperty[TLength] | js.Array[WebkitTextStrokeProperty[TLength]] = null,
@@ -99,7 +97,6 @@ object VendorShorthandPropertiesFallback {
     if (WebkitColumns != null) __obj.updateDynamic("WebkitColumns")(WebkitColumns.asInstanceOf[js.Any])
     if (WebkitFlex != null) __obj.updateDynamic("WebkitFlex")(WebkitFlex.asInstanceOf[js.Any])
     if (WebkitFlexFlow != null) __obj.updateDynamic("WebkitFlexFlow")(WebkitFlexFlow.asInstanceOf[js.Any])
-    if (WebkitLineClamp != null) __obj.updateDynamic("WebkitLineClamp")(WebkitLineClamp.asInstanceOf[js.Any])
     if (WebkitMask != null) __obj.updateDynamic("WebkitMask")(WebkitMask.asInstanceOf[js.Any])
     if (WebkitTextEmphasis != null) __obj.updateDynamic("WebkitTextEmphasis")(WebkitTextEmphasis.asInstanceOf[js.Any])
     if (WebkitTextStroke != null) __obj.updateDynamic("WebkitTextStroke")(WebkitTextStroke.asInstanceOf[js.Any])

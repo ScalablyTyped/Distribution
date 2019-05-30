@@ -15,8 +15,8 @@ trait Anon_Any extends js.Object {
   var number_Original: stdLib.NumberConstructor = js.native
   @JSName("string")
   var string_Original: stdLib.StringConstructor = js.native
-  def boolean(): scala.Boolean = js.native
-  def boolean(value: js.Any): scala.Boolean = js.native
+  def boolean[T](): scala.Boolean = js.native
+  def boolean[T](value: T): scala.Boolean = js.native
   def number(): scala.Double = js.native
   def number(value: js.Any): scala.Double = js.native
   def string(): java.lang.String = js.native

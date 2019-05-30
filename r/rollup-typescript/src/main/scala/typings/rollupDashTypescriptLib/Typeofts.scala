@@ -17,7 +17,7 @@ trait Typeofts extends js.Object {
   var unchangedTextChangeRange: typescriptLib.typescriptMod.TextChangeRange = js.native
   /** The version of the TypeScript compiler release */
   val version: java.lang.String = js.native
-  val versionMajorMinor: rollupDashTypescriptLib.rollupDashTypescriptLibStrings.`3DOT4` = js.native
+  val versionMajorMinor: rollupDashTypescriptLib.rollupDashTypescriptLibStrings.`3DOT5` = js.native
   /**
     * Adds an EmitHelper to a node.
     */
@@ -2011,6 +2011,11 @@ trait Typeofts extends js.Object {
     currentDirectory: java.lang.String,
     getCanonicalFileName: js.Function1[/* s */ java.lang.String, java.lang.String]
   ): typescriptLib.typescriptMod.ModuleResolutionCache = js.native
+  def createModuleResolutionCache(
+    currentDirectory: java.lang.String,
+    getCanonicalFileName: js.Function1[/* s */ java.lang.String, java.lang.String],
+    options: typescriptLib.typescriptMod.CompilerOptions
+  ): typescriptLib.typescriptMod.ModuleResolutionCache = js.native
   def createNamedExports(elements: js.Array[typescriptLib.typescriptMod.ExportSpecifier]): typescriptLib.typescriptMod.NamedExports = js.native
   def createNamedImports(elements: js.Array[typescriptLib.typescriptMod.ImportSpecifier]): typescriptLib.typescriptMod.NamedImports = js.native
   def createNamespaceExportDeclaration(name: java.lang.String): typescriptLib.typescriptMod.NamespaceExportDeclaration = js.native
@@ -2819,7 +2824,6 @@ trait Typeofts extends js.Object {
     `type`: typescriptLib.typescriptMod.TypeNode,
     initializer: typescriptLib.typescriptMod.Expression
   ): typescriptLib.typescriptMod.PropertyDeclaration = js.native
-  def createPropertyAccess(expression: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.PropertyAccessExpression = js.native
   def createPropertyAccess(expression: typescriptLib.typescriptMod.Expression, name: java.lang.String): typescriptLib.typescriptMod.PropertyAccessExpression = js.native
   def createPropertyAccess(expression: typescriptLib.typescriptMod.Expression, name: typescriptLib.typescriptMod.Identifier): typescriptLib.typescriptMod.PropertyAccessExpression = js.native
   def createPropertyAssignment(name: java.lang.String, initializer: typescriptLib.typescriptMod.Expression): typescriptLib.typescriptMod.PropertyAssignment = js.native
@@ -3715,16 +3719,6 @@ trait Typeofts extends js.Object {
     diagnostics: js.Array[typescriptLib.typescriptMod.Diagnostic],
     host: typescriptLib.typescriptMod.FormatDiagnosticsHost
   ): java.lang.String = js.native
-  def generateTypesForGlobal(
-    name: java.lang.String,
-    globalValue: js.Any,
-    formatSettings: typescriptLib.typescriptMod.FormatCodeSettings
-  ): java.lang.String = js.native
-  def generateTypesForModule(
-    name: java.lang.String,
-    moduleValue: js.Any,
-    formatSettings: typescriptLib.typescriptMod.FormatCodeSettings
-  ): java.lang.String = js.native
   /** Gets all JSDoc tags of a specified kind, or undefined if not present. */
   def getAllJSDocTagsOfKind(node: typescriptLib.typescriptMod.Node, kind: typescriptLib.typescriptMod.SyntaxKind): js.Array[typescriptLib.typescriptMod.JSDocTag] = js.native
   /**
@@ -3896,6 +3890,12 @@ trait Typeofts extends js.Object {
     configFileName: java.lang.String,
     optionsToExtend: typescriptLib.typescriptMod.CompilerOptions,
     host: typescriptLib.typescriptMod.ParseConfigFileHost
+  ): js.UndefOr[typescriptLib.typescriptMod.ParsedCommandLine] = js.native
+  def getParsedCommandLineOfConfigFile(
+    configFileName: java.lang.String,
+    optionsToExtend: typescriptLib.typescriptMod.CompilerOptions,
+    host: typescriptLib.typescriptMod.ParseConfigFileHost,
+    extendedConfigCache: typescriptLib.typescriptMod.Map[typescriptLib.typescriptMod.ExtendedConfigCacheEntry]
   ): js.UndefOr[typescriptLib.typescriptMod.ParsedCommandLine] = js.native
   def getPositionOfLineAndCharacter(
     sourceFile: typescriptLib.typescriptMod.SourceFileLike,
@@ -4248,6 +4248,16 @@ trait Typeofts extends js.Object {
     resolutionStack: js.Array[typescriptLib.typescriptMod.Path],
     extraFileExtensions: js.Array[typescriptLib.typescriptMod.FileExtensionInfo]
   ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
+  def parseJsonConfigFileContent(
+    json: js.Any,
+    host: typescriptLib.typescriptMod.ParseConfigHost,
+    basePath: java.lang.String,
+    existingOptions: typescriptLib.typescriptMod.CompilerOptions,
+    configFileName: java.lang.String,
+    resolutionStack: js.Array[typescriptLib.typescriptMod.Path],
+    extraFileExtensions: js.Array[typescriptLib.typescriptMod.FileExtensionInfo],
+    extendedConfigCache: typescriptLib.typescriptMod.Map[typescriptLib.typescriptMod.ExtendedConfigCacheEntry]
+  ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
   /**
     * Parse the contents of a config file (tsconfig.json).
     * @param jsonNode The contents of the config file to parse
@@ -4289,6 +4299,16 @@ trait Typeofts extends js.Object {
     configFileName: java.lang.String,
     resolutionStack: js.Array[typescriptLib.typescriptMod.Path],
     extraFileExtensions: js.Array[typescriptLib.typescriptMod.FileExtensionInfo]
+  ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
+  def parseJsonSourceFileConfigFileContent(
+    sourceFile: typescriptLib.typescriptMod.TsConfigSourceFile,
+    host: typescriptLib.typescriptMod.ParseConfigHost,
+    basePath: java.lang.String,
+    existingOptions: typescriptLib.typescriptMod.CompilerOptions,
+    configFileName: java.lang.String,
+    resolutionStack: js.Array[typescriptLib.typescriptMod.Path],
+    extraFileExtensions: js.Array[typescriptLib.typescriptMod.FileExtensionInfo],
+    extendedConfigCache: typescriptLib.typescriptMod.Map[typescriptLib.typescriptMod.ExtendedConfigCacheEntry]
   ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
   /**
     * Parse json text into SyntaxTree and return node and parse errors if any
@@ -4694,7 +4714,9 @@ trait Typeofts extends js.Object {
   def updateBundle(
     node: typescriptLib.typescriptMod.Bundle,
     sourceFiles: js.Array[typescriptLib.typescriptMod.SourceFile],
-    prepends: js.Array[typescriptLib.typescriptMod.UnparsedSource]
+    prepends: js.Array[
+      typescriptLib.typescriptMod.UnparsedSource | typescriptLib.typescriptMod.InputFiles
+    ]
   ): typescriptLib.typescriptMod.Bundle = js.native
   def updateCall(
     node: typescriptLib.typescriptMod.CallExpression,

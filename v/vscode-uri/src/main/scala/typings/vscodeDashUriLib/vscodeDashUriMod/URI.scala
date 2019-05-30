@@ -32,7 +32,7 @@ trait URI extends UriComponents {
     * with URIs that represent files on disk (`file` scheme).
     */
   val fsPath: java.lang.String = js.native
-  def toJSON(): js.Object = js.native
+  def toJSON(): UriComponents = js.native
   def toString(skipEncoding: scala.Boolean): java.lang.String = js.native
   def `with`(change: vscodeDashUriLib.Anon_AuthorityFragment): URI = js.native
 }

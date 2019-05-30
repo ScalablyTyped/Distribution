@@ -22,6 +22,14 @@ object ^ extends js.Object {
     interpolationFunction: InterpolationFunction
   ): ConvertActionBindingResult = js.native
   def convertActionBinding(
+    localResolver: LocalResolver,
+    implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    action: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
+    bindingId: java.lang.String,
+    interpolationFunction: InterpolationFunction,
+    baseSourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan
+  ): ConvertActionBindingResult = js.native
+  def convertActionBinding(
     localResolver: scala.Null,
     implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
     action: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
@@ -33,6 +41,14 @@ object ^ extends js.Object {
     action: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
     bindingId: java.lang.String,
     interpolationFunction: InterpolationFunction
+  ): ConvertActionBindingResult = js.native
+  def convertActionBinding(
+    localResolver: scala.Null,
+    implicitReceiver: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    action: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
+    bindingId: java.lang.String,
+    interpolationFunction: InterpolationFunction,
+    baseSourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan
   ): ConvertActionBindingResult = js.native
   def convertPropertyBinding(
     localResolver: LocalResolver,
@@ -68,6 +84,12 @@ object ^ extends js.Object {
     converterFactory: BuiltinConverterFactory,
     ast: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST
   ): atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST = js.native
+  def convertUpdateArguments(
+    localResolver: LocalResolver,
+    contextVariableExpression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    expressionWithArgumentsToExtract: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST,
+    bindingId: java.lang.String
+  ): atAngularCompilerLib.Anon_ArgsStmts = js.native
   def temporaryDeclaration(bindingId: java.lang.String, temporaryNumber: scala.Double): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement = js.native
 }
 

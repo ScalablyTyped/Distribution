@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@ionic/cli-framework/lib/output", "LogUpdateOutputStrategy")
 @js.native
-class LogUpdateOutputStrategy protected ()
+class LogUpdateOutputStrategy ()
   extends OutputStrategy
      with RedrawLine {
-  def this(hasLogUpdateStreamColors: LogUpdateOutputStrategyOptions) = this()
+  def this(hasStreamColors: LogUpdateOutputStrategyOptions) = this()
   val colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
   @JSName("logUpdate")
-  val logUpdate_Original: logDashUpdateLib.logDashUpdateMod.LogUpdate with logDashUpdateLib.Anon_CreateDefault = js.native
+  val logUpdate_Original: logDashUpdateLib.logDashUpdateMod.LogUpdate = js.native
   /* CompleteClass */
   override val stream: nodeLib.NodeJSNs.WritableStream = js.native
   /* CompleteClass */

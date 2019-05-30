@@ -94,6 +94,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var iotanalytics: js.UndefOr[awsDashSdkLib.clientsIotanalyticsMod.apiVersion] = js.undefined
   var iotdata: js.UndefOr[awsDashSdkLib.clientsIotdataMod.apiVersion] = js.undefined
   var iotjobsdataplane: js.UndefOr[awsDashSdkLib.clientsIotjobsdataplaneMod.apiVersion] = js.undefined
+  var iotthingsgraph: js.UndefOr[awsDashSdkLib.clientsIotthingsgraphMod.apiVersion] = js.undefined
   var kafka: js.UndefOr[awsDashSdkLib.clientsKafkaMod.apiVersion] = js.undefined
   var kinesis: js.UndefOr[awsDashSdkLib.clientsKinesisMod.apiVersion] = js.undefined
   var kinesisanalytics: js.UndefOr[awsDashSdkLib.clientsKinesisanalyticsMod.apiVersion] = js.undefined
@@ -275,6 +276,7 @@ object ConfigurationServiceApiVersions {
     iotanalytics: awsDashSdkLib.clientsIotanalyticsMod.apiVersion = null,
     iotdata: awsDashSdkLib.clientsIotdataMod.apiVersion = null,
     iotjobsdataplane: awsDashSdkLib.clientsIotjobsdataplaneMod.apiVersion = null,
+    iotthingsgraph: awsDashSdkLib.clientsIotthingsgraphMod.apiVersion = null,
     kafka: awsDashSdkLib.clientsKafkaMod.apiVersion = null,
     kinesis: awsDashSdkLib.clientsKinesisMod.apiVersion = null,
     kinesisanalytics: awsDashSdkLib.clientsKinesisanalyticsMod.apiVersion = null,
@@ -453,6 +455,7 @@ object ConfigurationServiceApiVersions {
     if (iotanalytics != null) __obj.updateDynamic("iotanalytics")(iotanalytics.asInstanceOf[js.Any])
     if (iotdata != null) __obj.updateDynamic("iotdata")(iotdata.asInstanceOf[js.Any])
     if (iotjobsdataplane != null) __obj.updateDynamic("iotjobsdataplane")(iotjobsdataplane.asInstanceOf[js.Any])
+    if (iotthingsgraph != null) __obj.updateDynamic("iotthingsgraph")(iotthingsgraph.asInstanceOf[js.Any])
     if (kafka != null) __obj.updateDynamic("kafka")(kafka.asInstanceOf[js.Any])
     if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis.asInstanceOf[js.Any])
     if (kinesisanalytics != null) __obj.updateDynamic("kinesisanalytics")(kinesisanalytics.asInstanceOf[js.Any])

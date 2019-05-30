@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The MessageChannel interface of the Channel Messaging API allows us to create a new message channel and send data through it via its two MessagePort properties. */
+/** An interface of the Channel Messaging API allows us to create a new message channel and send data through it via its two MessagePort properties. */
 trait MessageChannel extends js.Object {
   val port1: MessagePort
   val port2: MessagePort

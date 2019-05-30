@@ -355,12 +355,6 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     */
   var MozWindowDragging: js.UndefOr[MozWindowDraggingProperty] = js.undefined
   /**
-    * The **`-moz-window-shadow`** CSS property specifies whether a window will have a shadow. It only works on Mac OS X.
-    *
-    * **Initial value**: `default`
-    */
-  var MozWindowShadow: js.UndefOr[MozWindowShadowProperty] = js.undefined
-  /**
     * The **`object-fit`** CSS property sets how the content of a replaced element, such as an `<img>` or `<video>`, should be resized to fit its container.
     *
     * **Initial value**: `fill`
@@ -679,6 +673,12 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     */
   var WebkitLineBreak: js.UndefOr[LineBreakProperty] = js.undefined
   /**
+    * The **`-webkit-line-clamp`** CSS property allows limiting of the contents of a block container to the specified number of lines.
+    *
+    * **Initial value**: `none`
+    */
+  var WebkitLineClamp: js.UndefOr[WebkitLineClampProperty] = js.undefined
+  /**
     * The **`margin-inline-end`** CSS property defines the logical inline end margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. In other words, it corresponds to the `margin-top`, `margin-right`, `margin-bottom` or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `0`
@@ -963,6 +963,12 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     */
   var WebkitWritingMode: js.UndefOr[WritingModeProperty] = js.undefined
   /**
+    * The **`mask-size`** CSS property specifies the sizes of the mask images. The size of the image can be fully or partially constrained in order to preserve its intrinsic ratio.
+    *
+    * **Initial value**: `auto`
+    */
+  var WebkitmaskSize: js.UndefOr[MaskSizeProperty[TLength]] = js.undefined
+  /**
     * The **`-ms-accelerator`** CSS property is a Microsoft extension that sets or retrieves a string indicating whether the object represents a keyboard shortcut.
     *
     * **Initial value**: `false`
@@ -1185,6 +1191,54 @@ trait VendorLonghandProperties[TLength] extends js.Object {
     */
   var msScrollTranslation: js.UndefOr[MsScrollTranslationProperty] = js.undefined
   /**
+    * The **`-ms-scrollbar-3dlight-color`** CSS property is a Microsoft extension specifying the color of the top and left edges of the scroll box and scroll arrows of a scroll bar.
+    *
+    * **Initial value**: depends on user agent
+    */
+  var msScrollbar3dlightColor: js.UndefOr[MsScrollbar3dlightColorProperty] = js.undefined
+  /**
+    * The **`-ms-scrollbar-arrow-color`** CSS property is a Microsoft extension that specifies the color of the arrow elements of a scroll arrow.
+    *
+    * **Initial value**: `ButtonText`
+    */
+  var msScrollbarArrowColor: js.UndefOr[MsScrollbarArrowColorProperty] = js.undefined
+  /**
+    * The `**-ms-scrollbar-base-color**` CSS property is a Microsoft extension that specifies the base color of the main elements of a scroll bar.
+    *
+    * **Initial value**: depends on user agent
+    */
+  var msScrollbarBaseColor: js.UndefOr[MsScrollbarBaseColorProperty] = js.undefined
+  /**
+    * The **`-ms-scrollbar-darkshadow-color`** CSS property is a Microsoft extension that specifies the color of a scroll bar's gutter.
+    *
+    * **Initial value**: `ThreeDDarkShadow`
+    */
+  var msScrollbarDarkshadowColor: js.UndefOr[MsScrollbarDarkshadowColorProperty] = js.undefined
+  /**
+    * The `**-ms-scrollbar-face-color**` CSS property is a Microsoft extension that specifies the color of the scroll box and scroll arrows of a scroll bar.
+    *
+    * **Initial value**: `ThreeDFace`
+    */
+  var msScrollbarFaceColor: js.UndefOr[MsScrollbarFaceColorProperty] = js.undefined
+  /**
+    * The `**-ms-scrollbar-highlight-color**` CSS property is a Microsoft extension that specifies the color of the slider tray, the top and left edges of the scroll box, and the scroll arrows of a scroll bar.
+    *
+    * **Initial value**: `ThreeDHighlight`
+    */
+  var msScrollbarHighlightColor: js.UndefOr[MsScrollbarHighlightColorProperty] = js.undefined
+  /**
+    * The **`-ms-scrollbar-shadow-color`** CSS property is a Microsoft extension that specifies the color of the bottom and right edges of the scroll box and scroll arrows of a scroll bar.
+    *
+    * **Initial value**: `ThreeDDarkShadow`
+    */
+  var msScrollbarShadowColor: js.UndefOr[MsScrollbarShadowColorProperty] = js.undefined
+  /**
+    * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
+    *
+    * **Initial value**: `Scrollbar`
+    */
+  var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty] = js.undefined
+  /**
     * The **`-ms-text-autospace`** CSS property is a Microsoft extension that specifies the autospacing and narrow space width adjustment of text.
     *
     * **Initial value**: `none`
@@ -1331,7 +1385,6 @@ object VendorLonghandProperties {
     MozUserModify: MozUserModifyProperty = null,
     MozUserSelect: UserSelectProperty = null,
     MozWindowDragging: MozWindowDraggingProperty = null,
-    MozWindowShadow: MozWindowShadowProperty = null,
     OObjectFit: ObjectFitProperty = null,
     OObjectPosition: ObjectPositionProperty[TLength] = null,
     OTabSize: TabSizeProperty[TLength] = null,
@@ -1387,6 +1440,7 @@ object VendorLonghandProperties {
     WebkitHyphens: HyphensProperty = null,
     WebkitJustifyContent: JustifyContentProperty = null,
     WebkitLineBreak: LineBreakProperty = null,
+    WebkitLineClamp: WebkitLineClampProperty = null,
     WebkitMarginEnd: MarginInlineEndProperty[TLength] = null,
     WebkitMarginStart: MarginInlineStartProperty[TLength] = null,
     WebkitMaskAttachment: WebkitMaskAttachmentProperty = null,
@@ -1435,6 +1489,7 @@ object VendorLonghandProperties {
     WebkitUserModify: WebkitUserModifyProperty = null,
     WebkitUserSelect: UserSelectProperty = null,
     WebkitWritingMode: WritingModeProperty = null,
+    WebkitmaskSize: MaskSizeProperty[TLength] = null,
     msAccelerator: MsAcceleratorProperty = null,
     msAlignSelf: AlignSelfProperty = null,
     msBlockProgression: MsBlockProgressionProperty = null,
@@ -1472,6 +1527,14 @@ object VendorLonghandProperties {
     msScrollSnapPointsY: GlobalsString = null,
     msScrollSnapType: MsScrollSnapTypeProperty = null,
     msScrollTranslation: MsScrollTranslationProperty = null,
+    msScrollbar3dlightColor: MsScrollbar3dlightColorProperty = null,
+    msScrollbarArrowColor: MsScrollbarArrowColorProperty = null,
+    msScrollbarBaseColor: MsScrollbarBaseColorProperty = null,
+    msScrollbarDarkshadowColor: MsScrollbarDarkshadowColorProperty = null,
+    msScrollbarFaceColor: MsScrollbarFaceColorProperty = null,
+    msScrollbarHighlightColor: MsScrollbarHighlightColorProperty = null,
+    msScrollbarShadowColor: MsScrollbarShadowColorProperty = null,
+    msScrollbarTrackColor: MsScrollbarTrackColorProperty = null,
     msTextAutospace: MsTextAutospaceProperty = null,
     msTextCombineHorizontal: TextCombineUprightProperty = null,
     msTextOverflow: TextOverflowProperty = null,
@@ -1546,7 +1609,6 @@ object VendorLonghandProperties {
     if (MozUserModify != null) __obj.updateDynamic("MozUserModify")(MozUserModify)
     if (MozUserSelect != null) __obj.updateDynamic("MozUserSelect")(MozUserSelect)
     if (MozWindowDragging != null) __obj.updateDynamic("MozWindowDragging")(MozWindowDragging)
-    if (MozWindowShadow != null) __obj.updateDynamic("MozWindowShadow")(MozWindowShadow)
     if (OObjectFit != null) __obj.updateDynamic("OObjectFit")(OObjectFit)
     if (OObjectPosition != null) __obj.updateDynamic("OObjectPosition")(OObjectPosition.asInstanceOf[js.Any])
     if (OTabSize != null) __obj.updateDynamic("OTabSize")(OTabSize.asInstanceOf[js.Any])
@@ -1602,6 +1664,7 @@ object VendorLonghandProperties {
     if (WebkitHyphens != null) __obj.updateDynamic("WebkitHyphens")(WebkitHyphens)
     if (WebkitJustifyContent != null) __obj.updateDynamic("WebkitJustifyContent")(WebkitJustifyContent.asInstanceOf[js.Any])
     if (WebkitLineBreak != null) __obj.updateDynamic("WebkitLineBreak")(WebkitLineBreak)
+    if (WebkitLineClamp != null) __obj.updateDynamic("WebkitLineClamp")(WebkitLineClamp.asInstanceOf[js.Any])
     if (WebkitMarginEnd != null) __obj.updateDynamic("WebkitMarginEnd")(WebkitMarginEnd.asInstanceOf[js.Any])
     if (WebkitMarginStart != null) __obj.updateDynamic("WebkitMarginStart")(WebkitMarginStart.asInstanceOf[js.Any])
     if (WebkitMaskAttachment != null) __obj.updateDynamic("WebkitMaskAttachment")(WebkitMaskAttachment.asInstanceOf[js.Any])
@@ -1650,6 +1713,7 @@ object VendorLonghandProperties {
     if (WebkitUserModify != null) __obj.updateDynamic("WebkitUserModify")(WebkitUserModify)
     if (WebkitUserSelect != null) __obj.updateDynamic("WebkitUserSelect")(WebkitUserSelect)
     if (WebkitWritingMode != null) __obj.updateDynamic("WebkitWritingMode")(WebkitWritingMode)
+    if (WebkitmaskSize != null) __obj.updateDynamic("WebkitmaskSize")(WebkitmaskSize.asInstanceOf[js.Any])
     if (msAccelerator != null) __obj.updateDynamic("msAccelerator")(msAccelerator)
     if (msAlignSelf != null) __obj.updateDynamic("msAlignSelf")(msAlignSelf.asInstanceOf[js.Any])
     if (msBlockProgression != null) __obj.updateDynamic("msBlockProgression")(msBlockProgression)
@@ -1687,6 +1751,14 @@ object VendorLonghandProperties {
     if (msScrollSnapPointsY != null) __obj.updateDynamic("msScrollSnapPointsY")(msScrollSnapPointsY.asInstanceOf[js.Any])
     if (msScrollSnapType != null) __obj.updateDynamic("msScrollSnapType")(msScrollSnapType)
     if (msScrollTranslation != null) __obj.updateDynamic("msScrollTranslation")(msScrollTranslation)
+    if (msScrollbar3dlightColor != null) __obj.updateDynamic("msScrollbar3dlightColor")(msScrollbar3dlightColor.asInstanceOf[js.Any])
+    if (msScrollbarArrowColor != null) __obj.updateDynamic("msScrollbarArrowColor")(msScrollbarArrowColor.asInstanceOf[js.Any])
+    if (msScrollbarBaseColor != null) __obj.updateDynamic("msScrollbarBaseColor")(msScrollbarBaseColor.asInstanceOf[js.Any])
+    if (msScrollbarDarkshadowColor != null) __obj.updateDynamic("msScrollbarDarkshadowColor")(msScrollbarDarkshadowColor.asInstanceOf[js.Any])
+    if (msScrollbarFaceColor != null) __obj.updateDynamic("msScrollbarFaceColor")(msScrollbarFaceColor.asInstanceOf[js.Any])
+    if (msScrollbarHighlightColor != null) __obj.updateDynamic("msScrollbarHighlightColor")(msScrollbarHighlightColor.asInstanceOf[js.Any])
+    if (msScrollbarShadowColor != null) __obj.updateDynamic("msScrollbarShadowColor")(msScrollbarShadowColor.asInstanceOf[js.Any])
+    if (msScrollbarTrackColor != null) __obj.updateDynamic("msScrollbarTrackColor")(msScrollbarTrackColor.asInstanceOf[js.Any])
     if (msTextAutospace != null) __obj.updateDynamic("msTextAutospace")(msTextAutospace)
     if (msTextCombineHorizontal != null) __obj.updateDynamic("msTextCombineHorizontal")(msTextCombineHorizontal.asInstanceOf[js.Any])
     if (msTextOverflow != null) __obj.updateDynamic("msTextOverflow")(msTextOverflow.asInstanceOf[js.Any])

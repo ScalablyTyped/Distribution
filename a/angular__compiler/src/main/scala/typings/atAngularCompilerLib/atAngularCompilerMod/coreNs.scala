@@ -53,10 +53,12 @@ object coreNs extends js.Object {
   
   @js.native
   object AttributeMarker extends js.Object {
+    /* 3 */ val Bindings: atAngularCompilerLib.srcCoreMod.AttributeMarker.Bindings with scala.Double = js.native
     /* 1 */ val Classes: atAngularCompilerLib.srcCoreMod.AttributeMarker.Classes with scala.Double = js.native
     /* 0 */ val NamespaceURI: atAngularCompilerLib.srcCoreMod.AttributeMarker.NamespaceURI with scala.Double = js.native
-    /* 3 */ val SelectOnly: atAngularCompilerLib.srcCoreMod.AttributeMarker.SelectOnly with scala.Double = js.native
+    /* 5 */ val ProjectAs: atAngularCompilerLib.srcCoreMod.AttributeMarker.ProjectAs with scala.Double = js.native
     /* 2 */ val Styles: atAngularCompilerLib.srcCoreMod.AttributeMarker.Styles with scala.Double = js.native
+    /* 4 */ val Template: atAngularCompilerLib.srcCoreMod.AttributeMarker.Template with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.AttributeMarker with scala.Double] = js.native
   }

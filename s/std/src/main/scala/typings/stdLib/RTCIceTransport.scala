@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The RTCIceTransport interface provides access to information about the ICE transport layer over which the data is being sent and received. */
+/** Provides access to information about the ICE transport layer over which the data is being sent and received. */
 @js.native
 trait RTCIceTransport extends EventTarget {
   val component: RTCIceComponent = js.native

@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** An XPathExpression is a compiled XPath query returned from document.createExpression(). It has a method evaluate() which can be used to execute the compiled XPath. */
+/** This interface is a compiled XPath expression that can be evaluated on a document or specific node to return information its DOM tree. */
 @js.native
 trait XPathExpression extends js.Object {
+  def evaluate(contextNode: Node): XPathResult = js.native
   def evaluate(contextNode: Node, `type`: scala.Double): XPathResult = js.native
   def evaluate(contextNode: Node, `type`: scala.Double, result: XPathResult): XPathResult = js.native
 }

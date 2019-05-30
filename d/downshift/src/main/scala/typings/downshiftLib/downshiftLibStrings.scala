@@ -121,6 +121,9 @@ object downshiftLibStrings {
   sealed trait deviceorientation extends js.Object
   
   @js.native
+  sealed trait deviceorientationabsolute extends js.Object
+  
+  @js.native
   sealed trait drag extends js.Object
   
   @js.native
@@ -481,6 +484,8 @@ object downshiftLibStrings {
   def devicemotion: devicemotion = "devicemotion".asInstanceOf[devicemotion]
   @scala.inline
   def deviceorientation: deviceorientation = "deviceorientation".asInstanceOf[deviceorientation]
+  @scala.inline
+  def deviceorientationabsolute: deviceorientationabsolute = "deviceorientationabsolute".asInstanceOf[deviceorientationabsolute]
   @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
   @scala.inline

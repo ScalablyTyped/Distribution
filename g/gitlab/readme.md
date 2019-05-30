@@ -1,7 +1,7 @@
 
 # Scala.js typings for gitlab
 
-Typings are for version 4.5.1
+Typings are for version 5.0.1
 
 ## Library description:
 Full NodeJS implementation of the GitLab API. Supports Promises, Async/Await.
@@ -31,4 +31,11 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
+## Comments
+
+These comments are from the typescript definitions and might be useful:
+```
+// Bundler
+
+```
 

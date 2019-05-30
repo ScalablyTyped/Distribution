@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DeleteMaintenanceWindowRequest extends js.Object {
   /**
-    * The ID of the Maintenance Window to delete.
+    * The ID of the maintenance window to delete.
     */
   var WindowId: MaintenanceWindowId
 }

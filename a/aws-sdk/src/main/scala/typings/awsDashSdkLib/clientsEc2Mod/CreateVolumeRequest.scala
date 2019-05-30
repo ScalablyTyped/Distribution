@@ -15,7 +15,7 @@ trait CreateVolumeRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * Specifies the encryption state of the volume. The default effect of setting the Encrypted parameter to true through the console, API, or CLI depends on the volume's origin (new or from a snapshot), starting encryption state, ownership, and whether account-level encryption is enabled. Each default case can be overridden by specifying a customer master key (CMK) with the KmsKeyId parameter in addition to setting Encrypted to true. For a complete list of possible encryption cases, see Amazon EBS Encryption.  Encrypted Amazon EBS volumes may only be attached to instances that support Amazon EBS encryption. For more information, see Supported Instance Types.
+    * Specifies the encryption state of the volume. The default effect of setting the Encrypted parameter to true depends on the volume origin (new or from a snapshot), starting encryption state, ownership, and whether account-level encryption is enabled. Each default case can be overridden by specifying a customer master key (CMK) using the KmsKeyId parameter, in addition to setting Encrypted to true. For a complete list of possible encryption cases, see Amazon EBS Encryption. Encrypted Amazon EBS volumes may only be attached to instances that support Amazon EBS encryption. For more information, see Supported Instance Types.
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   /**

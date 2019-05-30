@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGStyleElement interface corresponds to the SVG <style> element. */
+/** Corresponds to the SVG <style> element. */
 @js.native
 trait SVGStyleElement extends SVGElement {
   var disabled: scala.Boolean = js.native
@@ -19,6 +19,8 @@ trait SVGStyleElement extends SVGElement {
 class SVGStyleElementCls () extends SVGStyleElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

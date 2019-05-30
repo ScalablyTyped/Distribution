@@ -23,7 +23,7 @@ trait Network extends js.Object {
     */
   var DestinationPort: js.UndefOr[Integer] = js.undefined
   /**
-    * Indicates the direction of network traffic associated with a finding.
+    * The direction of network traffic associated with a finding.
     */
   var Direction: js.UndefOr[NetworkDirection] = js.undefined
   /**

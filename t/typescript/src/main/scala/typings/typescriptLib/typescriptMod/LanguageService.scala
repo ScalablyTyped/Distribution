@@ -243,6 +243,7 @@ trait LanguageService extends js.Object {
   def getSemanticDiagnostics(fileName: java.lang.String): js.Array[Diagnostic] = js.native
   def getSignatureHelpItems(fileName: java.lang.String, position: scala.Double): js.UndefOr[SignatureHelpItems] = js.native
   def getSignatureHelpItems(fileName: java.lang.String, position: scala.Double, options: SignatureHelpItemsOptions): js.UndefOr[SignatureHelpItems] = js.native
+  def getSmartSelectionRange(fileName: java.lang.String, position: scala.Double): SelectionRange = js.native
   def getSpanOfEnclosingComment(fileName: java.lang.String, position: scala.Double, onlyMultiLine: scala.Boolean): js.UndefOr[TextSpan] = js.native
   def getSuggestionDiagnostics(fileName: java.lang.String): js.Array[DiagnosticWithLocation] = js.native
   /**

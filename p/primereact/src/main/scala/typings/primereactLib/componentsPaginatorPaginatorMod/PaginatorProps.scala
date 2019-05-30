@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PaginatorProps extends js.Object {
+  var alwaysShow: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var currentPageReportTemplate: js.UndefOr[java.lang.String] = js.undefined
   var first: js.UndefOr[scala.Double] = js.undefined
@@ -23,6 +24,7 @@ trait PaginatorProps extends js.Object {
 object PaginatorProps {
   @scala.inline
   def apply(
+    alwaysShow: js.UndefOr[scala.Boolean] = js.undefined,
     className: java.lang.String = null,
     currentPageReportTemplate: java.lang.String = null,
     first: scala.Int | scala.Double = null,
@@ -37,6 +39,7 @@ object PaginatorProps {
     totalRecords: scala.Int | scala.Double = null
   ): PaginatorProps = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alwaysShow)) __obj.updateDynamic("alwaysShow")(alwaysShow)
     if (className != null) __obj.updateDynamic("className")(className)
     if (currentPageReportTemplate != null) __obj.updateDynamic("currentPageReportTemplate")(currentPageReportTemplate)
     if (first != null) __obj.updateDynamic("first")(first.asInstanceOf[js.Any])

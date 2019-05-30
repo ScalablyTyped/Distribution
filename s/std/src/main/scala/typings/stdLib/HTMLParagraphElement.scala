@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLParagraphElement interface provides special properties (beyond those of the regular HTMLElement object interface it inherits) for manipulating <p> elements. */
+/** Provides special properties (beyond those of the regular HTMLElement object interface it inherits) for manipulating <p> elements. */
 @js.native
 trait HTMLParagraphElement extends HTMLElement {
   /**
@@ -22,6 +22,8 @@ class HTMLParagraphElementCls () extends HTMLParagraphElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

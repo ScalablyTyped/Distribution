@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetParametersResult extends js.Object {
   /**
-    * A list of parameters that are not formatted correctly or do not run when executed.
+    * A list of parameters that are not formatted correctly or do not run during an execution.
     */
   var InvalidParameters: js.UndefOr[ParameterNameList] = js.undefined
   /**

@@ -135,6 +135,10 @@ object reactDashTooltipLibStrings {
     extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
   
   @js.native
+  sealed trait deviceorientationabsolute
+    extends reactDashTooltipLib.reactDashTooltipMod._WindowEvents
+  
+  @js.native
   sealed trait div extends js.Object
   
   @js.native
@@ -505,6 +509,8 @@ object reactDashTooltipLibStrings {
   def devicemotion: devicemotion = "devicemotion".asInstanceOf[devicemotion]
   @scala.inline
   def deviceorientation: deviceorientation = "deviceorientation".asInstanceOf[deviceorientation]
+  @scala.inline
+  def deviceorientationabsolute: deviceorientationabsolute = "deviceorientationabsolute".asInstanceOf[deviceorientationabsolute]
   @scala.inline
   def div: div = "div".asInstanceOf[div]
   @scala.inline

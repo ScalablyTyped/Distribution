@@ -12,7 +12,7 @@ trait ISettings extends js.Object {
   var `editor.reuseHeaders`: scala.Boolean
   var `editor.theme`: Theme
   var `general.betaUpdates`: scala.Boolean
-  var `queryPlan.hideQueryPlanResponse`: scala.Boolean
+  var `queryPlan.hideQueryPlanResponse`: js.UndefOr[scala.Boolean] = js.undefined
   var `request.credentials`: java.lang.String
   var `tracing.hideTracingResponse`: scala.Boolean
 }
@@ -26,9 +26,9 @@ object ISettings {
     `editor.reuseHeaders`: scala.Boolean,
     `editor.theme`: Theme,
     `general.betaUpdates`: scala.Boolean,
-    `queryPlan.hideQueryPlanResponse`: scala.Boolean,
     `request.credentials`: java.lang.String,
-    `tracing.hideTracingResponse`: scala.Boolean
+    `tracing.hideTracingResponse`: scala.Boolean,
+    `queryPlan.hideQueryPlanResponse`: js.UndefOr[scala.Boolean] = js.undefined
   ): ISettings = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("editor.cursorShape")(`editor.cursorShape`)
@@ -37,9 +37,9 @@ object ISettings {
     __obj.updateDynamic("editor.reuseHeaders")(`editor.reuseHeaders`)
     __obj.updateDynamic("editor.theme")(`editor.theme`)
     __obj.updateDynamic("general.betaUpdates")(`general.betaUpdates`)
-    __obj.updateDynamic("queryPlan.hideQueryPlanResponse")(`queryPlan.hideQueryPlanResponse`)
     __obj.updateDynamic("request.credentials")(`request.credentials`)
     __obj.updateDynamic("tracing.hideTracingResponse")(`tracing.hideTracingResponse`)
+    if (!js.isUndefined(`queryPlan.hideQueryPlanResponse`)) __obj.updateDynamic("queryPlan.hideQueryPlanResponse")(`queryPlan.hideQueryPlanResponse`)
     __obj.asInstanceOf[ISettings]
   }
 }

@@ -11,7 +11,7 @@ trait SSM
   @JSName("config")
   var config_SSM: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
-    * Adds or overwrites one or more tags for the specified resource. Tags are metadata that you can assign to your documents, managed instances, Maintenance Windows, Parameter Store parameters, and patch baselines. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value, both of which you define. For example, you could define a set of tags for your account's managed instances that helps you track each instance's owner and stack level. For example: Key=Owner and Value=DbAdmin, SysAdmin, or Dev. Or Key=Stack and Value=Production, Pre-Production, or Test. Each resource can have a maximum of 50 tags.  We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. Tags don't have any semantic meaning to Amazon EC2 and are interpreted strictly as a string of characters.  For more information about tags, see Tagging Your Amazon EC2 Resources in the Amazon EC2 User Guide.
+    * Adds or overwrites one or more tags for the specified resource. Tags are metadata that you can assign to your documents, managed instances, maintenance windows, Parameter Store parameters, and patch baselines. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value, both of which you define. For example, you could define a set of tags for your account's managed instances that helps you track each instance's owner and stack level. For example: Key=Owner and Value=DbAdmin, SysAdmin, or Dev. Or Key=Stack and Value=Production, Pre-Production, or Test. Each resource can have a maximum of 50 tags.  We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. Tags don't have any semantic meaning to Amazon EC2 and are interpreted strictly as a string of characters.  For more information about tags, see Tagging Your Amazon EC2 Resources in the Amazon EC2 User Guide.
     */
   def addTagsToResource(): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addTagsToResource(
@@ -22,7 +22,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Adds or overwrites one or more tags for the specified resource. Tags are metadata that you can assign to your documents, managed instances, Maintenance Windows, Parameter Store parameters, and patch baselines. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value, both of which you define. For example, you could define a set of tags for your account's managed instances that helps you track each instance's owner and stack level. For example: Key=Owner and Value=DbAdmin, SysAdmin, or Dev. Or Key=Stack and Value=Production, Pre-Production, or Test. Each resource can have a maximum of 50 tags.  We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. Tags don't have any semantic meaning to Amazon EC2 and are interpreted strictly as a string of characters.  For more information about tags, see Tagging Your Amazon EC2 Resources in the Amazon EC2 User Guide.
+    * Adds or overwrites one or more tags for the specified resource. Tags are metadata that you can assign to your documents, managed instances, maintenance windows, Parameter Store parameters, and patch baselines. Tags enable you to categorize your resources in different ways, for example, by purpose, owner, or environment. Each tag consists of a key and an optional value, both of which you define. For example, you could define a set of tags for your account's managed instances that helps you track each instance's owner and stack level. For example: Key=Owner and Value=DbAdmin, SysAdmin, or Dev. Or Key=Stack and Value=Production, Pre-Production, or Test. Each resource can have a maximum of 50 tags.  We recommend that you devise a set of tag keys that meets your needs for each resource type. Using a consistent set of tag keys makes it easier for you to manage your resources. You can search and filter the resources based on the tags you add. Tags don't have any semantic meaning to Amazon EC2 and are interpreted strictly as a string of characters.  For more information about tags, see Tagging Your Amazon EC2 Resources in the Amazon EC2 User Guide.
     */
   def addTagsToResource(params: AddTagsToResourceRequest): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def addTagsToResource(
@@ -57,7 +57,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[CancelCommandResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Stops a Maintenance Window execution that is already in progress and cancels any tasks in the window that have not already starting running. (Tasks already in progress will continue to completion.)
+    * Stops a maintenance window execution that is already in progress and cancels any tasks in the window that have not already starting running. (Tasks already in progress will continue to completion.)
     */
   def cancelMaintenanceWindowExecution(): awsDashSdkLib.libRequestMod.Request[CancelMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelMaintenanceWindowExecution(
@@ -68,7 +68,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[CancelMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Stops a Maintenance Window execution that is already in progress and cancels any tasks in the window that have not already starting running. (Tasks already in progress will continue to completion.)
+    * Stops a maintenance window execution that is already in progress and cancels any tasks in the window that have not already starting running. (Tasks already in progress will continue to completion.)
     */
   def cancelMaintenanceWindowExecution(params: CancelMaintenanceWindowExecutionRequest): awsDashSdkLib.libRequestMod.Request[CancelMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def cancelMaintenanceWindowExecution(
@@ -80,7 +80,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[CancelMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Registers your on-premises server or virtual machine with Amazon EC2 so that you can manage these resources using Run Command. An on-premises server or virtual machine that has been registered with EC2 is called a managed instance. For more information about activations, see Setting Up Systems Manager in Hybrid Environments.
+    * Registers your on-premises server or virtual machine with Amazon EC2 so that you can manage these resources using Run Command. An on-premises server or virtual machine that has been registered with EC2 is called a managed instance. For more information about activations, see Setting Up AWS Systems Manager for Hybrid Environments.
     */
   def createActivation(): awsDashSdkLib.libRequestMod.Request[CreateActivationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createActivation(
@@ -91,7 +91,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateActivationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Registers your on-premises server or virtual machine with Amazon EC2 so that you can manage these resources using Run Command. An on-premises server or virtual machine that has been registered with EC2 is called a managed instance. For more information about activations, see Setting Up Systems Manager in Hybrid Environments.
+    * Registers your on-premises server or virtual machine with Amazon EC2 so that you can manage these resources using Run Command. An on-premises server or virtual machine that has been registered with EC2 is called a managed instance. For more information about activations, see Setting Up AWS Systems Manager for Hybrid Environments.
     */
   def createActivation(params: CreateActivationRequest): awsDashSdkLib.libRequestMod.Request[CreateActivationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createActivation(
@@ -172,7 +172,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateDocumentResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new Maintenance Window.
+    * Creates a new maintenance window.
     */
   def createMaintenanceWindow(): awsDashSdkLib.libRequestMod.Request[CreateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createMaintenanceWindow(
@@ -183,7 +183,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a new Maintenance Window.
+    * Creates a new maintenance window.
     */
   def createMaintenanceWindow(params: CreateMaintenanceWindowRequest): awsDashSdkLib.libRequestMod.Request[CreateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createMaintenanceWindow(
@@ -333,7 +333,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteInventoryResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a Maintenance Window.
+    * Deletes a maintenance window.
     */
   def deleteMaintenanceWindow(): awsDashSdkLib.libRequestMod.Request[DeleteMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMaintenanceWindow(
@@ -344,7 +344,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a Maintenance Window.
+    * Deletes a maintenance window.
     */
   def deleteMaintenanceWindow(params: DeleteMaintenanceWindowRequest): awsDashSdkLib.libRequestMod.Request[DeleteMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteMaintenanceWindow(
@@ -494,7 +494,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeregisterPatchBaselineForPatchGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes a target from a Maintenance Window.
+    * Removes a target from a maintenance window.
     */
   def deregisterTargetFromMaintenanceWindow(): awsDashSdkLib.libRequestMod.Request[DeregisterTargetFromMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deregisterTargetFromMaintenanceWindow(
@@ -505,7 +505,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeregisterTargetFromMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes a target from a Maintenance Window.
+    * Removes a target from a maintenance window.
     */
   def deregisterTargetFromMaintenanceWindow(params: DeregisterTargetFromMaintenanceWindowRequest): awsDashSdkLib.libRequestMod.Request[DeregisterTargetFromMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deregisterTargetFromMaintenanceWindow(
@@ -517,7 +517,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeregisterTargetFromMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes a task from a Maintenance Window.
+    * Removes a task from a maintenance window.
     */
   def deregisterTaskFromMaintenanceWindow(): awsDashSdkLib.libRequestMod.Request[DeregisterTaskFromMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deregisterTaskFromMaintenanceWindow(
@@ -528,7 +528,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeregisterTaskFromMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Removes a task from a Maintenance Window.
+    * Removes a task from a maintenance window.
     */
   def deregisterTaskFromMaintenanceWindow(params: DeregisterTaskFromMaintenanceWindowRequest): awsDashSdkLib.libRequestMod.Request[DeregisterTaskFromMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deregisterTaskFromMaintenanceWindow(
@@ -931,7 +931,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeInventoryDeletionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the individual task executions (one per target) for a particular task run as part of a Maintenance Window execution.
+    * Retrieves the individual task executions (one per target) for a particular task run as part of a maintenance window execution.
     */
   def describeMaintenanceWindowExecutionTaskInvocations(): awsDashSdkLib.libRequestMod.Request[
     DescribeMaintenanceWindowExecutionTaskInvocationsResult, 
@@ -948,7 +948,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves the individual task executions (one per target) for a particular task run as part of a Maintenance Window execution.
+    * Retrieves the individual task executions (one per target) for a particular task run as part of a maintenance window execution.
     */
   def describeMaintenanceWindowExecutionTaskInvocations(params: DescribeMaintenanceWindowExecutionTaskInvocationsRequest): awsDashSdkLib.libRequestMod.Request[
     DescribeMaintenanceWindowExecutionTaskInvocationsResult, 
@@ -966,7 +966,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * For a given Maintenance Window execution, lists the tasks that were run.
+    * For a given maintenance window execution, lists the tasks that were run.
     */
   def describeMaintenanceWindowExecutionTasks(): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowExecutionTasks(
@@ -977,7 +977,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * For a given Maintenance Window execution, lists the tasks that were run.
+    * For a given maintenance window execution, lists the tasks that were run.
     */
   def describeMaintenanceWindowExecutionTasks(params: DescribeMaintenanceWindowExecutionTasksRequest): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowExecutionTasks(
@@ -989,7 +989,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the executions of a Maintenance Window. This includes information about when the Maintenance Window was scheduled to be active, and information about tasks registered and run with the Maintenance Window.
+    * Lists the executions of a maintenance window. This includes information about when the maintenance window was scheduled to be active, and information about tasks registered and run with the maintenance window.
     */
   def describeMaintenanceWindowExecutions(): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowExecutions(
@@ -1000,7 +1000,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the executions of a Maintenance Window. This includes information about when the Maintenance Window was scheduled to be active, and information about tasks registered and run with the Maintenance Window.
+    * Lists the executions of a maintenance window. This includes information about when the maintenance window was scheduled to be active, and information about tasks registered and run with the maintenance window.
     */
   def describeMaintenanceWindowExecutions(params: DescribeMaintenanceWindowExecutionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowExecutions(
@@ -1012,7 +1012,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves information about upcoming executions of a Maintenance Window.
+    * Retrieves information about upcoming executions of a maintenance window.
     */
   def describeMaintenanceWindowSchedule(): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowScheduleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowSchedule(
@@ -1023,7 +1023,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowScheduleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves information about upcoming executions of a Maintenance Window.
+    * Retrieves information about upcoming executions of a maintenance window.
     */
   def describeMaintenanceWindowSchedule(params: DescribeMaintenanceWindowScheduleRequest): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowScheduleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowSchedule(
@@ -1035,7 +1035,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowScheduleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the targets registered with the Maintenance Window.
+    * Lists the targets registered with the maintenance window.
     */
   def describeMaintenanceWindowTargets(): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowTargetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowTargets(
@@ -1046,7 +1046,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowTargetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the targets registered with the Maintenance Window.
+    * Lists the targets registered with the maintenance window.
     */
   def describeMaintenanceWindowTargets(params: DescribeMaintenanceWindowTargetsRequest): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowTargetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowTargets(
@@ -1058,7 +1058,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowTargetsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the tasks in a Maintenance Window.
+    * Lists the tasks in a maintenance window.
     */
   def describeMaintenanceWindowTasks(): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowTasks(
@@ -1069,7 +1069,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the tasks in a Maintenance Window.
+    * Lists the tasks in a maintenance window.
     */
   def describeMaintenanceWindowTasks(params: DescribeMaintenanceWindowTasksRequest): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowTasks(
@@ -1081,7 +1081,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the Maintenance Windows in an AWS account.
+    * Retrieves the maintenance windows in an AWS account.
     */
   def describeMaintenanceWindows(): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindows(
@@ -1092,7 +1092,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the Maintenance Windows in an AWS account.
+    * Retrieves the maintenance windows in an AWS account.
     */
   def describeMaintenanceWindows(params: DescribeMaintenanceWindowsRequest): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindows(
@@ -1104,7 +1104,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves information about the Maintenance Windows targets or tasks that an instance is associated with.
+    * Retrieves information about the maintenance window targets or tasks that an instance is associated with.
     */
   def describeMaintenanceWindowsForTarget(): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowsForTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowsForTarget(
@@ -1115,7 +1115,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowsForTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves information about the Maintenance Windows targets or tasks that an instance is associated with.
+    * Retrieves information about the maintenance window targets or tasks that an instance is associated with.
     */
   def describeMaintenanceWindowsForTarget(params: DescribeMaintenanceWindowsForTargetRequest): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowsForTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeMaintenanceWindowsForTarget(
@@ -1449,7 +1449,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetInventorySchemaResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves a Maintenance Window.
+    * Retrieves a maintenance window.
     */
   def getMaintenanceWindow(): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindow(
@@ -1460,7 +1460,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves a Maintenance Window.
+    * Retrieves a maintenance window.
     */
   def getMaintenanceWindow(params: GetMaintenanceWindowRequest): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindow(
@@ -1472,7 +1472,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves details about a specific task run as part of a Maintenance Window execution.
+    * Retrieves details about a specific task run as part of a maintenance window execution.
     */
   def getMaintenanceWindowExecution(): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindowExecution(
@@ -1483,7 +1483,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves details about a specific task run as part of a Maintenance Window execution.
+    * Retrieves details about a specific task run as part of a maintenance window execution.
     */
   def getMaintenanceWindowExecution(params: GetMaintenanceWindowExecutionRequest): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindowExecution(
@@ -1495,7 +1495,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the details about a specific task run as part of a Maintenance Window execution.
+    * Retrieves the details about a specific task run as part of a maintenance window execution.
     */
   def getMaintenanceWindowExecutionTask(): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindowExecutionTask(
@@ -1506,7 +1506,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the details about a specific task run as part of a Maintenance Window execution.
+    * Retrieves the details about a specific task run as part of a maintenance window execution.
     */
   def getMaintenanceWindowExecutionTask(params: GetMaintenanceWindowExecutionTaskRequest): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindowExecutionTask(
@@ -1518,7 +1518,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves a task invocation. A task invocation is a specific task running on a specific target. Maintenance Windows report status for all invocations. 
+    * Retrieves a task invocation. A task invocation is a specific task running on a specific target. maintenance windows report status for all invocations. 
     */
   def getMaintenanceWindowExecutionTaskInvocation(): awsDashSdkLib.libRequestMod.Request[
     GetMaintenanceWindowExecutionTaskInvocationResult, 
@@ -1535,7 +1535,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves a task invocation. A task invocation is a specific task running on a specific target. Maintenance Windows report status for all invocations. 
+    * Retrieves a task invocation. A task invocation is a specific task running on a specific target. maintenance windows report status for all invocations. 
     */
   def getMaintenanceWindowExecutionTaskInvocation(params: GetMaintenanceWindowExecutionTaskInvocationRequest): awsDashSdkLib.libRequestMod.Request[
     GetMaintenanceWindowExecutionTaskInvocationResult, 
@@ -1553,7 +1553,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the tasks in a Maintenance Window.
+    * Lists the tasks in a maintenance window.
     */
   def getMaintenanceWindowTask(): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindowTask(
@@ -1564,7 +1564,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the tasks in a Maintenance Window.
+    * Lists the tasks in a maintenance window.
     */
   def getMaintenanceWindowTask(params: GetMaintenanceWindowTaskRequest): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getMaintenanceWindowTask(
@@ -2174,7 +2174,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[RegisterPatchBaselineForPatchGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Registers a target with a Maintenance Window.
+    * Registers a target with a maintenance window.
     */
   def registerTargetWithMaintenanceWindow(): awsDashSdkLib.libRequestMod.Request[RegisterTargetWithMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerTargetWithMaintenanceWindow(
@@ -2185,7 +2185,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[RegisterTargetWithMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Registers a target with a Maintenance Window.
+    * Registers a target with a maintenance window.
     */
   def registerTargetWithMaintenanceWindow(params: RegisterTargetWithMaintenanceWindowRequest): awsDashSdkLib.libRequestMod.Request[RegisterTargetWithMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerTargetWithMaintenanceWindow(
@@ -2197,7 +2197,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[RegisterTargetWithMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Adds a new task to a Maintenance Window.
+    * Adds a new task to a maintenance window.
     */
   def registerTaskWithMaintenanceWindow(): awsDashSdkLib.libRequestMod.Request[RegisterTaskWithMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerTaskWithMaintenanceWindow(
@@ -2208,7 +2208,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[RegisterTaskWithMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Adds a new task to a Maintenance Window.
+    * Adds a new task to a maintenance window.
     */
   def registerTaskWithMaintenanceWindow(params: RegisterTaskWithMaintenanceWindowRequest): awsDashSdkLib.libRequestMod.Request[RegisterTaskWithMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def registerTaskWithMaintenanceWindow(
@@ -2542,7 +2542,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateDocumentDefaultVersionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates an existing Maintenance Window. Only specified parameters are modified.
+    * Updates an existing maintenance window. Only specified parameters are modified.
     */
   def updateMaintenanceWindow(): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateMaintenanceWindow(
@@ -2553,7 +2553,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates an existing Maintenance Window. Only specified parameters are modified.
+    * Updates an existing maintenance window. Only specified parameters are modified.
     */
   def updateMaintenanceWindow(params: UpdateMaintenanceWindowRequest): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateMaintenanceWindow(
@@ -2565,7 +2565,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the target of an existing Maintenance Window. You can't change the target type, but you can change the following: The target from being an ID target to a Tag target, or a Tag target to an ID target. IDs for an ID target. Tags for a Tag target. Owner. Name. Description. If a parameter is null, then the corresponding field is not modified.
+    * Modifies the target of an existing maintenance window. You can't change the target type, but you can change the following: The target from being an ID target to a Tag target, or a Tag target to an ID target. IDs for an ID target. Tags for a Tag target. Owner. Name. Description. If a parameter is null, then the corresponding field is not modified.
     */
   def updateMaintenanceWindowTarget(): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateMaintenanceWindowTarget(
@@ -2576,7 +2576,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the target of an existing Maintenance Window. You can't change the target type, but you can change the following: The target from being an ID target to a Tag target, or a Tag target to an ID target. IDs for an ID target. Tags for a Tag target. Owner. Name. Description. If a parameter is null, then the corresponding field is not modified.
+    * Modifies the target of an existing maintenance window. You can't change the target type, but you can change the following: The target from being an ID target to a Tag target, or a Tag target to an ID target. IDs for an ID target. Tags for a Tag target. Owner. Name. Description. If a parameter is null, then the corresponding field is not modified.
     */
   def updateMaintenanceWindowTarget(params: UpdateMaintenanceWindowTargetRequest): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateMaintenanceWindowTarget(
@@ -2588,7 +2588,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies a task assigned to a Maintenance Window. You can't change the task type, but you can change the following values:   TaskARN. For example, you can change a RUN_COMMAND task from AWS-RunPowerShellScript to AWS-RunShellScript.   ServiceRoleArn   TaskInvocationParameters   Priority   MaxConcurrency   MaxErrors   If a parameter is null, then the corresponding field is not modified. Also, if you set Replace to true, then all fields required by the RegisterTaskWithMaintenanceWindow action are required for this request. Optional fields that aren't specified are set to null.
+    * Modifies a task assigned to a maintenance window. You can't change the task type, but you can change the following values:   TaskARN. For example, you can change a RUN_COMMAND task from AWS-RunPowerShellScript to AWS-RunShellScript.   ServiceRoleArn   TaskInvocationParameters   Priority   MaxConcurrency   MaxErrors   If a parameter is null, then the corresponding field is not modified. Also, if you set Replace to true, then all fields required by the RegisterTaskWithMaintenanceWindow action are required for this request. Optional fields that aren't specified are set to null.
     */
   def updateMaintenanceWindowTask(): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateMaintenanceWindowTask(
@@ -2599,7 +2599,7 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies a task assigned to a Maintenance Window. You can't change the task type, but you can change the following values:   TaskARN. For example, you can change a RUN_COMMAND task from AWS-RunPowerShellScript to AWS-RunShellScript.   ServiceRoleArn   TaskInvocationParameters   Priority   MaxConcurrency   MaxErrors   If a parameter is null, then the corresponding field is not modified. Also, if you set Replace to true, then all fields required by the RegisterTaskWithMaintenanceWindow action are required for this request. Optional fields that aren't specified are set to null.
+    * Modifies a task assigned to a maintenance window. You can't change the task type, but you can change the following values:   TaskARN. For example, you can change a RUN_COMMAND task from AWS-RunPowerShellScript to AWS-RunShellScript.   ServiceRoleArn   TaskInvocationParameters   Priority   MaxConcurrency   MaxErrors   If a parameter is null, then the corresponding field is not modified. Also, if you set Replace to true, then all fields required by the RegisterTaskWithMaintenanceWindow action are required for this request. Optional fields that aren't specified are set to null.
     */
   def updateMaintenanceWindowTask(params: UpdateMaintenanceWindowTaskRequest): awsDashSdkLib.libRequestMod.Request[UpdateMaintenanceWindowTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateMaintenanceWindowTask(

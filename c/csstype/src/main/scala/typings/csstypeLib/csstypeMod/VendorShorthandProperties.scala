@@ -32,7 +32,6 @@ trait VendorShorthandProperties[TLength] extends js.Object {
   var WebkitFlex: js.UndefOr[FlexProperty[TLength]] = js.undefined
   /** The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` properties. */
   var WebkitFlexFlow: js.UndefOr[FlexFlowProperty] = js.undefined
-  var WebkitLineClamp: js.UndefOr[WebkitLineClampProperty] = js.undefined
   /** The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points. */
   var WebkitMask: js.UndefOr[WebkitMaskProperty[TLength]] = js.undefined
   /** The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`. */
@@ -71,7 +70,6 @@ object VendorShorthandProperties {
     WebkitColumns: ColumnsProperty[TLength] = null,
     WebkitFlex: FlexProperty[TLength] = null,
     WebkitFlexFlow: FlexFlowProperty = null,
-    WebkitLineClamp: WebkitLineClampProperty = null,
     WebkitMask: WebkitMaskProperty[TLength] = null,
     WebkitTextEmphasis: TextEmphasisProperty = null,
     WebkitTextStroke: WebkitTextStrokeProperty[TLength] = null,
@@ -97,7 +95,6 @@ object VendorShorthandProperties {
     if (WebkitColumns != null) __obj.updateDynamic("WebkitColumns")(WebkitColumns.asInstanceOf[js.Any])
     if (WebkitFlex != null) __obj.updateDynamic("WebkitFlex")(WebkitFlex.asInstanceOf[js.Any])
     if (WebkitFlexFlow != null) __obj.updateDynamic("WebkitFlexFlow")(WebkitFlexFlow.asInstanceOf[js.Any])
-    if (WebkitLineClamp != null) __obj.updateDynamic("WebkitLineClamp")(WebkitLineClamp.asInstanceOf[js.Any])
     if (WebkitMask != null) __obj.updateDynamic("WebkitMask")(WebkitMask.asInstanceOf[js.Any])
     if (WebkitTextEmphasis != null) __obj.updateDynamic("WebkitTextEmphasis")(WebkitTextEmphasis.asInstanceOf[js.Any])
     if (WebkitTextStroke != null) __obj.updateDynamic("WebkitTextStroke")(WebkitTextStroke.asInstanceOf[js.Any])

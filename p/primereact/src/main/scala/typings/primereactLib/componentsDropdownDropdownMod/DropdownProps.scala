@@ -22,6 +22,7 @@ trait DropdownProps extends js.Object {
   var inputId: js.UndefOr[java.lang.String] = js.undefined
   var itemTemplate: js.UndefOr[js.Function1[/* option */ js.Any, reactLib.reactMod.ReactNode]] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
+  var maxLength: js.UndefOr[scala.Double] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
   var onMouseDown: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Unit]] = js.undefined
@@ -59,6 +60,7 @@ object DropdownProps {
     inputId: java.lang.String = null,
     itemTemplate: /* option */ js.Any => reactLib.reactMod.ReactNode = null,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
+    maxLength: scala.Int | scala.Double = null,
     onChange: /* e */ primereactLib.Anon_OriginalEventValue => scala.Unit = null,
     onContextMenu: /* event */ stdLib.Event => scala.Unit = null,
     onMouseDown: /* event */ stdLib.Event => scala.Unit = null,
@@ -93,6 +95,7 @@ object DropdownProps {
     if (inputId != null) __obj.updateDynamic("inputId")(inputId)
     if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1(itemTemplate))
     if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1(onContextMenu))
     if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1(onMouseDown))

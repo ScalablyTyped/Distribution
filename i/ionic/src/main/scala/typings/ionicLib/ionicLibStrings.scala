@@ -193,6 +193,12 @@ object ionicLibStrings {
     extends ionicLib.definitionsMod.DistTag
   
   @js.native
+  sealed trait localhost extends js.Object
+  
+  @js.native
+  sealed trait managed extends js.Object
+  
+  @js.native
   sealed trait max extends js.Object
   
   @js.native
@@ -215,7 +221,14 @@ object ionicLibStrings {
   sealed trait project extends js.Object
   
   @js.native
+  sealed trait react
+    extends ionicLib.definitionsMod.ProjectType
+  
+  @js.native
   sealed trait ready extends js.Object
+  
+  @js.native
+  sealed trait repo extends js.Object
   
   @js.native
   sealed trait reqgen extends js.Object
@@ -251,6 +264,14 @@ object ionicLibStrings {
   
   @js.native
   sealed trait unknown extends js.Object
+  
+  @js.native
+  sealed trait utility
+    extends ionicLib.definitionsMod.InfoItemGroup
+  
+  @js.native
+  sealed trait vue
+    extends ionicLib.definitionsMod.ProjectType
   
   @js.native
   sealed trait windows
@@ -365,6 +386,10 @@ object ionicLibStrings {
   @scala.inline
   def latest: latest = "latest".asInstanceOf[latest]
   @scala.inline
+  def localhost: localhost = "localhost".asInstanceOf[localhost]
+  @scala.inline
+  def managed: managed = "managed".asInstanceOf[managed]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
   @scala.inline
   def multiapp: multiapp = "multiapp".asInstanceOf[multiapp]
@@ -379,7 +404,11 @@ object ionicLibStrings {
   @scala.inline
   def project: project = "project".asInstanceOf[project]
   @scala.inline
+  def react: react = "react".asInstanceOf[react]
+  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
+  @scala.inline
+  def repo: repo = "repo".asInstanceOf[repo]
   @scala.inline
   def reqgen: reqgen = "reqgen".asInstanceOf[reqgen]
   @scala.inline
@@ -400,6 +429,10 @@ object ionicLibStrings {
   def testing: testing = "testing".asInstanceOf[testing]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @scala.inline
+  def utility: utility = "utility".asInstanceOf[utility]
+  @scala.inline
+  def vue: vue = "vue".asInstanceOf[vue]
   @scala.inline
   def windows: windows = "windows".asInstanceOf[windows]
   @scala.inline

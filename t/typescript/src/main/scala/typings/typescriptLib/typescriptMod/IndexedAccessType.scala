@@ -9,7 +9,8 @@ trait IndexedAccessType extends Type {
   var constraint: js.UndefOr[Type] = js.undefined
   var indexType: Type
   var objectType: Type
-  var simplified: js.UndefOr[Type] = js.undefined
+  var simplifiedForReading: js.UndefOr[Type] = js.undefined
+  var simplifiedForWriting: js.UndefOr[Type] = js.undefined
 }
 
 object IndexedAccessType {
@@ -45,14 +46,16 @@ object IndexedAccessType {
     aliasTypeArguments: js.Array[Type] = null,
     constraint: Type = null,
     pattern: DestructuringPattern = null,
-    simplified: Type = null
+    simplifiedForReading: Type = null,
+    simplifiedForWriting: Type = null
   ): IndexedAccessType = {
     val __obj = js.Dynamic.literal(flags = flags, getApparentProperties = js.Any.fromFunction0(getApparentProperties), getBaseTypes = js.Any.fromFunction0(getBaseTypes), getCallSignatures = js.Any.fromFunction0(getCallSignatures), getConstraint = js.Any.fromFunction0(getConstraint), getConstructSignatures = js.Any.fromFunction0(getConstructSignatures), getDefault = js.Any.fromFunction0(getDefault), getFlags = js.Any.fromFunction0(getFlags), getNonNullableType = js.Any.fromFunction0(getNonNullableType), getNumberIndexType = js.Any.fromFunction0(getNumberIndexType), getProperties = js.Any.fromFunction0(getProperties), getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = js.Any.fromFunction0(getStringIndexType), getSymbol = js.Any.fromFunction0(getSymbol), indexType = indexType, isClass = js.Any.fromFunction0(isClass), isClassOrInterface = js.Any.fromFunction0(isClassOrInterface), isIntersection = js.Any.fromFunction0(isIntersection), isLiteral = js.Any.fromFunction0(isLiteral), isNumberLiteral = js.Any.fromFunction0(isNumberLiteral), isStringLiteral = js.Any.fromFunction0(isStringLiteral), isTypeParameter = js.Any.fromFunction0(isTypeParameter), isUnion = js.Any.fromFunction0(isUnion), isUnionOrIntersection = js.Any.fromFunction0(isUnionOrIntersection), objectType = objectType, symbol = symbol)
     if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol)
     if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments)
     if (constraint != null) __obj.updateDynamic("constraint")(constraint)
     if (pattern != null) __obj.updateDynamic("pattern")(pattern)
-    if (simplified != null) __obj.updateDynamic("simplified")(simplified)
+    if (simplifiedForReading != null) __obj.updateDynamic("simplifiedForReading")(simplifiedForReading)
+    if (simplifiedForWriting != null) __obj.updateDynamic("simplifiedForWriting")(simplifiedForWriting)
     __obj.asInstanceOf[IndexedAccessType]
   }
 }

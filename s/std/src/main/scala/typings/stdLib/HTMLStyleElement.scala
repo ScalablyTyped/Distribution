@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLStyleElement interface represents a <style> element. It inherits properties and methods from its parent, HTMLElement, and from LinkStyle. */
+/** A <style> element. It inherits properties and methods from its parent, HTMLElement, and from LinkStyle. */
 @js.native
 trait HTMLStyleElement
   extends HTMLElement
@@ -48,6 +48,8 @@ class HTMLStyleElementCls () extends HTMLStyleElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

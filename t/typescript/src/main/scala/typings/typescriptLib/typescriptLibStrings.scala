@@ -30,7 +30,7 @@ object typescriptLibStrings {
   sealed trait `0DOT8` extends js.Object
   
   @js.native
-  sealed trait `3DOT4` extends js.Object
+  sealed trait `3DOT5` extends js.Object
   
   @js.native
   sealed trait `<`
@@ -64,9 +64,6 @@ object typescriptLibStrings {
   
   @js.native
   sealed trait `action::set` extends js.Object
-  
-  @js.native
-  sealed trait `action::valueInspected` extends js.Object
   
   @js.native
   sealed trait auto extends js.Object
@@ -153,7 +150,7 @@ object typescriptLibStrings {
   @scala.inline
   def `0DOT8`: `0DOT8` = "0.8".asInstanceOf[`0DOT8`]
   @scala.inline
-  def `3DOT4`: `3DOT4` = "3.4".asInstanceOf[`3DOT4`]
+  def `3DOT5`: `3DOT5` = "3.5".asInstanceOf[`3DOT5`]
   @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]
   @scala.inline
@@ -172,8 +169,6 @@ object typescriptLibStrings {
   def `action::packageInstalled`: `action::packageInstalled` = "action::packageInstalled".asInstanceOf[`action::packageInstalled`]
   @scala.inline
   def `action::set`: `action::set` = "action::set".asInstanceOf[`action::set`]
-  @scala.inline
-  def `action::valueInspected`: `action::valueInspected` = "action::valueInspected".asInstanceOf[`action::valueInspected`]
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline

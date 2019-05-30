@@ -6,22 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeviceMotionEventInit extends EventInit {
-  var acceleration: js.UndefOr[DeviceAccelerationDict | scala.Null] = js.undefined
-  var accelerationIncludingGravity: js.UndefOr[DeviceAccelerationDict | scala.Null] = js.undefined
-  var interval: js.UndefOr[scala.Double | scala.Null] = js.undefined
-  var rotationRate: js.UndefOr[DeviceRotationRateDict | scala.Null] = js.undefined
+  var acceleration: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
+  var accelerationIncludingGravity: js.UndefOr[DeviceMotionEventAccelerationInit] = js.undefined
+  var interval: js.UndefOr[scala.Double] = js.undefined
+  var rotationRate: js.UndefOr[DeviceMotionEventRotationRateInit] = js.undefined
 }
 
 object DeviceMotionEventInit {
   @scala.inline
   def apply(
-    acceleration: DeviceAccelerationDict = null,
-    accelerationIncludingGravity: DeviceAccelerationDict = null,
+    acceleration: DeviceMotionEventAccelerationInit = null,
+    accelerationIncludingGravity: DeviceMotionEventAccelerationInit = null,
     bubbles: js.UndefOr[scala.Boolean] = js.undefined,
     cancelable: js.UndefOr[scala.Boolean] = js.undefined,
     composed: js.UndefOr[scala.Boolean] = js.undefined,
     interval: scala.Int | scala.Double = null,
-    rotationRate: DeviceRotationRateDict = null
+    rotationRate: DeviceMotionEventRotationRateInit = null
   ): DeviceMotionEventInit = {
     val __obj = js.Dynamic.literal()
     if (acceleration != null) __obj.updateDynamic("acceleration")(acceleration)

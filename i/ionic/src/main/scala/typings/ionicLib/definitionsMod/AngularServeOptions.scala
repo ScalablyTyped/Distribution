@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait AngularServeOptions extends ServeOptions {
   var configuration: js.UndefOr[java.lang.String] = js.undefined
+  var consolelogs: js.UndefOr[scala.Boolean] = js.undefined
+  var consolelogsPort: js.UndefOr[scala.Double] = js.undefined
   var sourcemaps: js.UndefOr[scala.Boolean] = js.undefined
   var ssl: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -28,6 +30,8 @@ object AngularServeOptions {
     browser: java.lang.String = null,
     browserOption: java.lang.String = null,
     configuration: java.lang.String = null,
+    consolelogs: js.UndefOr[scala.Boolean] = js.undefined,
+    consolelogsPort: scala.Int | scala.Double = null,
     externalAddressRequired: js.UndefOr[scala.Boolean] = js.undefined,
     platform: java.lang.String = null,
     project: java.lang.String = null,
@@ -39,6 +43,8 @@ object AngularServeOptions {
     if (browser != null) __obj.updateDynamic("browser")(browser)
     if (browserOption != null) __obj.updateDynamic("browserOption")(browserOption)
     if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    if (!js.isUndefined(consolelogs)) __obj.updateDynamic("consolelogs")(consolelogs)
+    if (consolelogsPort != null) __obj.updateDynamic("consolelogsPort")(consolelogsPort.asInstanceOf[js.Any])
     if (!js.isUndefined(externalAddressRequired)) __obj.updateDynamic("externalAddressRequired")(externalAddressRequired)
     if (platform != null) __obj.updateDynamic("platform")(platform)
     if (project != null) __obj.updateDynamic("project")(project)

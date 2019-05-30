@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ShadowRoot
   extends DocumentFragment
-     with DocumentOrShadowRoot {
+     with DocumentOrShadowRoot
+     with InnerHTML {
   val host: Element = js.native
-  var innerHTML: java.lang.String = js.native
   val mode: ShadowRootMode = js.native
 }
 
@@ -21,6 +21,8 @@ class ShadowRootCls () extends ShadowRoot {
   override val activeElement: Element | scala.Null = js.native
   /* CompleteClass */
   override val fullscreenElement: Element | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override val pointerLockElement: Element | scala.Null = js.native
   /**

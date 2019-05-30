@@ -24,6 +24,7 @@ class ChoicesRestfull () extends Base {
   def clear(): scala.Unit = js.native
   def getCustomPropertiesNames(): js.Array[java.lang.String] = js.native
   def getData(): js.Any = js.native
+  def getItemValueCallback(item: js.Any): js.Any = js.native
   def getResultCallback(items: js.Array[ItemValue]): scala.Unit = js.native
   /* protected */ def onLoad(result: js.Any): scala.Unit = js.native
   /* protected */ def parseResponse(response: js.Any): js.Any = js.native

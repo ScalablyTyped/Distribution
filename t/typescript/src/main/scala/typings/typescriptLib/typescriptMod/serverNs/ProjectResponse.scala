@@ -12,7 +12,7 @@ trait ProjectResponse extends TypingInstallerResponse {
 object ProjectResponse {
   @scala.inline
   def apply(
-    kind: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | ActionValueInspected | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed,
+    kind: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed,
     projectName: java.lang.String
   ): ProjectResponse = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], projectName = projectName)

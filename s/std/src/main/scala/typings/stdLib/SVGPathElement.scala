@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGPathElement interface corresponds to the <path> element. */
+/** Corresponds to the <path> element. */
 @js.native
 trait SVGPathElement extends SVGGraphicsElement {
   /** @deprecated */
@@ -89,6 +89,8 @@ trait SVGPathElement extends SVGGraphicsElement {
 class SVGPathElementCls () extends SVGPathElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

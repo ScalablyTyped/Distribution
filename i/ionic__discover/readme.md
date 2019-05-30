@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__discover
 
-Typings are for version 1.0.13
+Typings are for version 2.0.0
 
 ## Library description:
 Simple UDP based protocol for service discovery implemented in pure JS.

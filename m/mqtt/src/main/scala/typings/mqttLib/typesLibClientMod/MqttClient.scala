@@ -23,13 +23,15 @@ class MqttClient protected ()
     *
     * @returns {MqttClient} this - for chaining
     * @param {Boolean} force - do not wait for all in-flight messages to be acked
+    * @param {Object} opts - opts disconnect
     * @param {Function} cb - called when the client has been closed
     *
     * @api public
     */
   def end(): this.type = js.native
   def end(force: scala.Boolean): this.type = js.native
-  def end(force: scala.Boolean, cb: CloseCallback): this.type = js.native
+  def end(force: scala.Boolean, opts: js.Object): this.type = js.native
+  def end(force: scala.Boolean, opts: js.Object, cb: CloseCallback): this.type = js.native
   /**
     * getLastMessageId
     */
@@ -72,9 +74,12 @@ class MqttClient protected ()
     * @param {Object}    [opts] - publish options, includes:
     *   @param {Number}  [opts.qos] - qos level to publish on
     *   @param {Boolean} [opts.retain] - whether or not to retain the message
+    *   @param {Function}[opts.cbStorePut] - function(){}
+    *       called when message is put into `outgoingStore`
     *
     * @param {Function} [callback] - function(err){}
     *    called when publish succeeds or fails
+    *
     * @returns {Client} this - for chaining
     * @api public
     *
@@ -173,15 +178,19 @@ class MqttClient protected ()
     * unsubscribe - unsubscribe from topic(s)
     *
     * @param {String, Array} topic - topics to unsubscribe from
+    * @param {Object} opts - opts of unsubscribe
     * @param {Function} [callback] - callback fired on unsuback
     * @returns {MqttClient} this - for chaining
     * @api public
     * @example client.unsubscribe('topic')
     * @example client.unsubscribe('topic', console.log)
+    * @example client.unsubscribe('topic', opts, console.log)
     */
   def unsubscribe(topic: java.lang.String): this.type = js.native
-  def unsubscribe(topic: java.lang.String, callback: PacketCallback): this.type = js.native
+  def unsubscribe(topic: java.lang.String, opts: js.Object): this.type = js.native
+  def unsubscribe(topic: java.lang.String, opts: js.Object, callback: PacketCallback): this.type = js.native
   def unsubscribe(topic: js.Array[java.lang.String]): this.type = js.native
-  def unsubscribe(topic: js.Array[java.lang.String], callback: PacketCallback): this.type = js.native
+  def unsubscribe(topic: js.Array[java.lang.String], opts: js.Object): this.type = js.native
+  def unsubscribe(topic: js.Array[java.lang.String], opts: js.Object, callback: PacketCallback): this.type = js.native
 }
 

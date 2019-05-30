@@ -8,12 +8,11 @@ import scala.scalajs.js.annotation._
 object atAngularRouterLibStrings {
   @js.native
   sealed trait Empty
-    extends atAngularRouterLib.srcConfigMod.QueryParamsHandling
+    extends atAngularRouterLib.atAngularRouterMod.QueryParamsHandling
   
   @js.native
   sealed trait always
-    extends atAngularRouterLib.srcRouterUnderscoreStateMod.ParamsInheritanceStrategy
-       with atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
+    extends atAngularRouterLib.atAngularRouterMod._RunGuardsAndResolvers
   
   @js.native
   sealed trait corrected extends js.Object
@@ -23,68 +22,64 @@ object atAngularRouterLibStrings {
   
   @js.native
   sealed trait disabled
-    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
+    extends atAngularRouterLib.atAngularRouterMod.InitialNavigation
   
   @js.native
   sealed trait eager extends js.Object
   
   @js.native
-  sealed trait emptyOnly
-    extends atAngularRouterLib.srcRouterUnderscoreStateMod.ParamsInheritanceStrategy
+  sealed trait emptyOnly extends js.Object
   
   @js.native
   sealed trait enabled
-    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
+    extends atAngularRouterLib.atAngularRouterMod.InitialNavigation
   
   @js.native
-  sealed trait hashchange
-    extends atAngularRouterLib.srcEventsMod.NavigationTrigger
+  sealed trait hashchange extends js.Object
   
   @js.native
   sealed trait ignore extends js.Object
   
   @js.native
-  sealed trait imperative
-    extends atAngularRouterLib.srcEventsMod.NavigationTrigger
+  sealed trait imperative extends js.Object
   
   @js.native
   sealed trait legacy extends js.Object
   
   @js.native
   sealed trait legacy_disabled
-    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
+    extends atAngularRouterLib.atAngularRouterMod.InitialNavigation
   
   @js.native
   sealed trait legacy_enabled
-    extends atAngularRouterLib.srcRouterUnderscoreModuleMod.InitialNavigation
+    extends atAngularRouterLib.atAngularRouterMod.InitialNavigation
   
   @js.native
   sealed trait merge
-    extends atAngularRouterLib.srcConfigMod.QueryParamsHandling
+    extends atAngularRouterLib.atAngularRouterMod.QueryParamsHandling
   
   @js.native
   sealed trait paramsChange
-    extends atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
+    extends atAngularRouterLib.atAngularRouterMod._RunGuardsAndResolvers
   
   @js.native
   sealed trait paramsOrQueryParamsChange
-    extends atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
+    extends atAngularRouterLib.atAngularRouterMod._RunGuardsAndResolvers
   
   @js.native
   sealed trait pathParamsChange
-    extends atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
+    extends atAngularRouterLib.atAngularRouterMod._RunGuardsAndResolvers
   
   @js.native
   sealed trait pathParamsOrQueryParamsChange
-    extends atAngularRouterLib.srcConfigMod._RunGuardsAndResolvers
+    extends atAngularRouterLib.atAngularRouterMod._RunGuardsAndResolvers
   
   @js.native
-  sealed trait popstate
-    extends atAngularRouterLib.srcEventsMod.NavigationTrigger
+  sealed trait popstate extends js.Object
   
   @js.native
   sealed trait preserve
-    extends atAngularRouterLib.srcConfigMod.QueryParamsHandling
+    extends atAngularRouterLib.atAngularRouterMod.QueryParamsHandling
   
   @js.native
   sealed trait primary extends js.Object

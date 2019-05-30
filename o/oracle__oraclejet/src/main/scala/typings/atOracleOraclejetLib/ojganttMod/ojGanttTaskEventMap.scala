@@ -39,7 +39,7 @@ object ojGanttTaskEventMap {
     animationend: stdLib.AnimationEvent,
     animationiteration: stdLib.AnimationEvent,
     animationstart: stdLib.AnimationEvent,
-    auxclick: stdLib.Event,
+    auxclick: stdLib.MouseEvent,
     baselineChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_BorderRadiusEnd],
     blur: stdLib.FocusEvent,
     borderRadiusChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],

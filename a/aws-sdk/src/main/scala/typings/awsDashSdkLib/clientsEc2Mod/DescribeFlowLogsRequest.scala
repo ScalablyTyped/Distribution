@@ -15,7 +15,7 @@ trait DescribeFlowLogsRequest extends js.Object {
     */
   var Filter: js.UndefOr[FilterList] = js.undefined
   /**
-    * One or more flow log IDs.
+    * One or more flow log IDs. Constraint: Maximum of 1000 flow log IDs.
     */
   var FlowLogIds: js.UndefOr[ValueStringList] = js.undefined
   /**

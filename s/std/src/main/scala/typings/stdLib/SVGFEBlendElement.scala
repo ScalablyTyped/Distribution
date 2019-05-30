@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEBlendElement interface corresponds to the <feBlend> element. */
+/** Corresponds to the <feBlend> element. */
 @js.native
 trait SVGFEBlendElement
   extends SVGElement
@@ -59,6 +59,8 @@ class SVGFEBlendElementCls () extends SVGFEBlendElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val height: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

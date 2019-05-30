@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFEOffsetElement interface corresponds to the <feOffset> element. */
+/** Corresponds to the <feOffset> element. */
 @js.native
 trait SVGFEOffsetElement
   extends SVGElement
@@ -42,6 +42,8 @@ class SVGFEOffsetElementCls () extends SVGFEOffsetElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override val height: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

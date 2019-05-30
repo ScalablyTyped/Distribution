@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLHeadingElement interface represents the different heading elements. It inherits methods and properties from the HTMLElement interface. */
+/** The different heading elements. It inherits methods and properties from the HTMLElement interface. */
 @js.native
 trait HTMLHeadingElement extends HTMLElement {
   /**
@@ -22,6 +22,8 @@ class HTMLHeadingElementCls () extends HTMLHeadingElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

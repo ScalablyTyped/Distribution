@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGFESpotLightElement interface corresponds to the <feSpotLight> element. */
+/** Corresponds to the <feSpotLight> element. */
 @js.native
 trait SVGFESpotLightElement extends SVGElement {
   val limitingConeAngle: SVGAnimatedNumber = js.native
@@ -23,6 +23,8 @@ trait SVGFESpotLightElement extends SVGElement {
 class SVGFESpotLightElementCls () extends SVGFESpotLightElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

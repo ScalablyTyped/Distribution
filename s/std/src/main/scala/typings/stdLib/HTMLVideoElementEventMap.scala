@@ -22,7 +22,7 @@ object HTMLVideoElementEventMap {
     animationend: AnimationEvent,
     animationiteration: AnimationEvent,
     animationstart: AnimationEvent,
-    auxclick: Event,
+    auxclick: MouseEvent,
     blur: FocusEvent,
     cancel: Event,
     canplay: Event,

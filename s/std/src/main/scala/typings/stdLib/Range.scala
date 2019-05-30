@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The Range interface represents a fragment of a document that can contain nodes and parts of text nodes. */
+/** A fragment of a document that can contain nodes and parts of text nodes. */
 @js.native
 trait Range extends AbstractRange {
   val END_TO_END: scala.Double = js.native

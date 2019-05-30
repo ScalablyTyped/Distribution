@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGSymbolElement interface corresponds to the <symbol> element. */
+/** Corresponds to the <symbol> element. */
 @js.native
 trait SVGSymbolElement
   extends SVGElement
@@ -37,6 +37,8 @@ trait SVGSymbolElement
 class SVGSymbolElementCls () extends SVGSymbolElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

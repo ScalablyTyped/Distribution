@@ -16,7 +16,6 @@ trait R3ComponentMetadataFacade extends R3DirectiveMetadataFacade {
   var styles: js.Array[java.lang.String]
   var template: java.lang.String
   var viewProviders: js.Array[Provider] | scala.Null
-  var viewQueries: js.Array[R3QueryMetadataFacade]
 }
 
 object R3ComponentMetadataFacade {
@@ -37,13 +36,13 @@ object R3ComponentMetadataFacade {
     template: java.lang.String,
     `type`: js.Any,
     typeArgumentCount: scala.Double,
-    typeSourceSpan: scala.Null,
+    typeSourceSpan: ParseSourceSpan,
     usesInheritance: scala.Boolean,
     viewQueries: js.Array[R3QueryMetadataFacade],
     animations: js.Array[_] = null,
     changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined,
     deps: js.Array[R3DependencyMetadataFacade] = null,
-    exportAs: java.lang.String = null,
+    exportAs: js.Array[java.lang.String] = null,
     interpolation: js.Tuple2[java.lang.String, java.lang.String] = null,
     providers: js.Array[Provider] = null,
     selector: java.lang.String = null,

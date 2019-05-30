@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
   - csstypeLib.csstypeLibStrings.`:-moz-dir`
   - csstypeLib.csstypeLibStrings.`:-webkit-any()`
   - csstypeLib.csstypeLibStrings.`::cue`
+  - csstypeLib.csstypeLibStrings.`::part`
   - csstypeLib.csstypeLibStrings.`::slotted`
   - csstypeLib.csstypeLibStrings.`:dir`
   - csstypeLib.csstypeLibStrings.`:has`

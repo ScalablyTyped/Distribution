@@ -96,6 +96,19 @@ trait ObjectConstructor
   @JSName("freeze")
   def freeze_TReadonly[T](o: T): Readonly[T] = js.native
   /**
+    * Returns an object created by key-value entries for properties and methods
+    * @param entries An iterable object that contains key-value entries for properties and methods.
+    */
+  def fromEntries(entries: Iterable[js.Array[_]]): js.Any = js.native
+  /**
+    * Returns an object created by key-value entries for properties and methods
+    * @param entries An iterable object that contains key-value entries for properties and methods.
+    */
+  @JSName("fromEntries")
+  def `fromEntries_T<intersection>`[T](entries: Iterable[js.Tuple2[PropertyKey, T]]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in std.PropertyKey ]: T}
+    */ stdLib.stdLibStrings.ObjectConstructor with js.Any = js.native
+  /**
     * Gets the own property descriptor of the specified object.
     * An own property descriptor is one that is defined directly on the object and is not inherited from the object's prototype.
     * @param o Object that contains the property.
@@ -145,7 +158,7 @@ trait ObjectConstructor
     */
   def isSealed(o: js.Any): scala.Boolean = js.native
   /**
-    * Returns the names of the enumerable properties and methods of an object.
+    * Returns the names of the enumerable string properties and methods of an object.
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
   def keys(o: js.Object): js.Array[java.lang.String] = js.native

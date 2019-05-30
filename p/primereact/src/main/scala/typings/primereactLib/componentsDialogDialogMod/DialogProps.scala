@@ -16,6 +16,7 @@ trait DialogProps extends js.Object {
   var dismissableMask: js.UndefOr[scala.Boolean] = js.undefined
   var footer: js.UndefOr[js.Any] = js.undefined
   var header: js.UndefOr[js.Any] = js.undefined
+  var iconsTemplate: js.UndefOr[js.Function0[js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var maximizable: js.UndefOr[scala.Boolean] = js.undefined
   var modal: js.UndefOr[scala.Boolean] = js.undefined
@@ -41,6 +42,7 @@ object DialogProps {
     dismissableMask: js.UndefOr[scala.Boolean] = js.undefined,
     footer: js.Any = null,
     header: js.Any = null,
+    iconsTemplate: () => js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = null,
     id: java.lang.String = null,
     maximizable: js.UndefOr[scala.Boolean] = js.undefined,
     modal: js.UndefOr[scala.Boolean] = js.undefined,
@@ -61,6 +63,7 @@ object DialogProps {
     if (!js.isUndefined(dismissableMask)) __obj.updateDynamic("dismissableMask")(dismissableMask)
     if (footer != null) __obj.updateDynamic("footer")(footer)
     if (header != null) __obj.updateDynamic("header")(header)
+    if (iconsTemplate != null) __obj.updateDynamic("iconsTemplate")(js.Any.fromFunction0(iconsTemplate))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(maximizable)) __obj.updateDynamic("maximizable")(maximizable)
     if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)

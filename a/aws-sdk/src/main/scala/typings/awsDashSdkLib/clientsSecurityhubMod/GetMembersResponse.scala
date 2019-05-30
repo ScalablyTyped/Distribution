@@ -11,7 +11,7 @@ trait GetMembersResponse extends js.Object {
     */
   var Members: js.UndefOr[MemberList] = js.undefined
   /**
-    * A list of account ID and email address pairs of the AWS accounts that could not be processed.
+    * A list of account ID and email address pairs of the AWS accounts that couldn't be processed.
     */
   var UnprocessedAccounts: js.UndefOr[ResultList] = js.undefined
 }

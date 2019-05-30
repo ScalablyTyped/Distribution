@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait ScheduledWindowExecution extends js.Object {
   /**
-    * The time, in ISO-8601 Extended format, that the Maintenance Window is scheduled to be run.
+    * The time, in ISO-8601 Extended format, that the maintenance window is scheduled to be run.
     */
   var ExecutionTime: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   /**
-    * The name of the Maintenance Window to be run.
+    * The name of the maintenance window to be run.
     */
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   /**
-    * The ID of the Maintenance Window to be run.
+    * The ID of the maintenance window to be run.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }

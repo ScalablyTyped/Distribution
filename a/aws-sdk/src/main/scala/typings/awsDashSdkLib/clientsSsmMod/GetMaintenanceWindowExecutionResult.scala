@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait GetMaintenanceWindowExecutionResult extends js.Object {
   /**
-    * The time the Maintenance Window finished running.
+    * The time the maintenance window finished running.
     */
   var EndTime: js.UndefOr[DateTime] = js.undefined
   /**
-    * The time the Maintenance Window started running.
+    * The time the maintenance window started running.
     */
   var StartTime: js.UndefOr[DateTime] = js.undefined
   /**
-    * The status of the Maintenance Window execution.
+    * The status of the maintenance window execution.
     */
   var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.undefined
   /**
@@ -23,11 +23,11 @@ trait GetMaintenanceWindowExecutionResult extends js.Object {
     */
   var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
   /**
-    * The ID of the task executions from the Maintenance Window execution.
+    * The ID of the task executions from the maintenance window execution.
     */
   var TaskIds: js.UndefOr[MaintenanceWindowExecutionTaskIdList] = js.undefined
   /**
-    * The ID of the Maintenance Window execution.
+    * The ID of the maintenance window execution.
     */
   var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
 }

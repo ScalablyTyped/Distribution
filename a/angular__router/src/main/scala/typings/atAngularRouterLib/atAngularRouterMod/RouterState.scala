@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/router", "RouterState")
 @js.native
-class RouterState ()
-  extends atAngularRouterLib.publicUnderscoreApiMod.RouterState
+class RouterState () extends ɵangular_packages_router_router_m[ActivatedRoute] {
+  /** The current snapshot of the router state */
+  var snapshot: RouterStateSnapshot = js.native
+}
 

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLElement interface represents any HTML element. Some elements directly implement this interface, others implement it via an interface that inherits it. */
+/** Any HTML element. Some elements directly implement this interface, while others implement it via an interface that inherits it. */
 @js.native
 trait HTMLElement
   extends Element
@@ -60,6 +60,8 @@ class HTMLElementCls () extends HTMLElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

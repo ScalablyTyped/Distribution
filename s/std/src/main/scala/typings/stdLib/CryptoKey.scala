@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The CryptoKey interface represents a cryptographic key derived from a specific key algorithm. */
+/** The CryptoKey dictionary of the Web Crypto API represents a cryptographic key. */
 trait CryptoKey extends js.Object {
   val algorithm: KeyAlgorithm
   val extractable: scala.Boolean

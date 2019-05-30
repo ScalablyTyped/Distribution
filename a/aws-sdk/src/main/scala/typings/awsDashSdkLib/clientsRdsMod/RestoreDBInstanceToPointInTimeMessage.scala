@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait RestoreDBInstanceToPointInTimeMessage extends js.Object {
   /**
-    * Indicates that minor version upgrades are applied automatically to the DB instance during the maintenance window.
+    * A value that indicates whether minor version upgrades are applied automatically to the DB instance during the maintenance window.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The Availability Zone (AZ) where the DB instance will be created. Default: A random, system-chosen Availability Zone. Constraint: You can't specify the AvailabilityZone parameter if the MultiAZ parameter is set to true. Example: us-east-1a 
+    * The Availability Zone (AZ) where the DB instance will be created. Default: A random, system-chosen Availability Zone. Constraint: You can't specify the AvailabilityZone parameter if the DB instance is a Multi-AZ deployment. Example: us-east-1a 
     */
   var AvailabilityZone: js.UndefOr[String] = js.undefined
   /**
-    * True to copy all tags from the restored DB instance to snapshots of the restored DB instance, and otherwise false. The default is false.
+    * A value that indicates whether to copy all tags from the restored DB instance to snapshots of the DB instance. By default, tags are not copied.
     */
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -35,7 +35,7 @@ trait RestoreDBInstanceToPointInTimeMessage extends js.Object {
     */
   var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   /**
-    * Indicates if the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to true. The default is false. For more information, see  Deleting a DB Instance. 
+    * A value that indicates whether the DB instance has deletion protection enabled. The database can't be deleted when deletion protection is enabled. By default, deletion protection is disabled. For more information, see  Deleting a DB Instance. 
     */
   var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -51,7 +51,7 @@ trait RestoreDBInstanceToPointInTimeMessage extends js.Object {
     */
   var EnableCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   /**
-    * True to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts, and otherwise false. You can enable IAM database authentication for the following database engines   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher   Default: false 
+    * A value that indicates whether to enable mapping of AWS Identity and Access Management (IAM) accounts to database accounts. By default, mapping is disabled. You can enable IAM database authentication for the following database engines   For MySQL 5.6, minor version 5.6.34 or higher   For MySQL 5.7, minor version 5.7.16 or higher  
     */
   var EnableIAMDatabaseAuthentication: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -67,7 +67,7 @@ trait RestoreDBInstanceToPointInTimeMessage extends js.Object {
     */
   var LicenseModel: js.UndefOr[String] = js.undefined
   /**
-    * Specifies if the DB instance is a Multi-AZ deployment. Constraint: You can't specify the AvailabilityZone parameter if the MultiAZ parameter is set to true.
+    * A value that indicates whether the DB instance is a Multi-AZ deployment. Constraint: You can't specify the AvailabilityZone parameter if the DB instance is a Multi-AZ deployment.
     */
   var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   /**
@@ -83,11 +83,11 @@ trait RestoreDBInstanceToPointInTimeMessage extends js.Object {
     */
   var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.undefined
   /**
-    * Specifies the accessibility options for the DB instance. A value of true specifies an Internet-facing instance with a publicly resolvable DNS name, which resolves to a public IP address. A value of false specifies an internal instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
+    * A value that indicates whether the DB instance is publicly accessible. When the DB instance is publicly accessible, it is an Internet-facing instance with a publicly resolvable DNS name, which resolves to a public IP address. When the DB instance is not publicly accessible, it is an internal instance with a DNS name that resolves to a private IP address. For more information, see CreateDBInstance.
     */
   var PubliclyAccessible: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * The date and time to restore from. Valid Values: Value must be a time in Universal Coordinated Time (UTC) format Constraints:   Must be before the latest restorable time for the DB instance   Can't be specified if UseLatestRestorableTime parameter is true   Example: 2009-09-07T23:45:00Z 
+    * The date and time to restore from. Valid Values: Value must be a time in Universal Coordinated Time (UTC) format Constraints:   Must be before the latest restorable time for the DB instance   Can't be specified if the UseLatestRestorableTime parameter is enabled   Example: 2009-09-07T23:45:00Z 
     */
   var RestoreTime: js.UndefOr[TStamp] = js.undefined
   /**
@@ -99,7 +99,7 @@ trait RestoreDBInstanceToPointInTimeMessage extends js.Object {
     */
   var SourceDbiResourceId: js.UndefOr[String] = js.undefined
   /**
-    * Specifies the storage type to be associated with the DB instance.  Valid values: standard | gp2 | io1   If you specify io1, you must also include a value for the Iops parameter.   Default: io1 if the Iops parameter is specified, otherwise standard 
+    * Specifies the storage type to be associated with the DB instance.  Valid values: standard | gp2 | io1   If you specify io1, you must also include a value for the Iops parameter.   Default: io1 if the Iops parameter is specified, otherwise gp2 
     */
   var StorageType: js.UndefOr[String] = js.undefined
   var Tags: js.UndefOr[TagList] = js.undefined
@@ -116,11 +116,11 @@ trait RestoreDBInstanceToPointInTimeMessage extends js.Object {
     */
   var TdeCredentialPassword: js.UndefOr[String] = js.undefined
   /**
-    * A value that specifies that the DB instance class of the DB instance uses its default processor features.
+    * A value that indicates whether the DB instance class of the DB instance uses its default processor features.
     */
   var UseDefaultProcessorFeatures: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    *  Specifies whether (true) or not (false) the DB instance is restored from the latest backup time.  Default: false  Constraints: Can't be specified if RestoreTime parameter is provided.
+    *  A value that indicates whether the DB instance is restored from the latest backup time. By default, the DB instance is not restored from the latest backup time.  Constraints: Can't be specified if the RestoreTime parameter is provided.
     */
   var UseLatestRestorableTime: js.UndefOr[Boolean] = js.undefined
   /**

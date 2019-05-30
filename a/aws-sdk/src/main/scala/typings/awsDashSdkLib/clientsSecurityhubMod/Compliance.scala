@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Compliance extends js.Object {
   /**
-    * Indicates the result of a compliance check.
+    * The result of a compliance check.
     */
   var Status: js.UndefOr[ComplianceStatus] = js.undefined
 }

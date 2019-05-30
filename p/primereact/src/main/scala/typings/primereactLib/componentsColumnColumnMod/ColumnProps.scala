@@ -35,12 +35,14 @@ trait ColumnProps extends js.Object {
   var headerClassName: js.UndefOr[java.lang.String] = js.undefined
   var headerStyle: js.UndefOr[js.Object] = js.undefined
   var loadingBody: js.UndefOr[js.Any] = js.undefined
+  var onEditorCancel: js.UndefOr[js.Function1[/* props */ js.Any, scala.Unit]] = js.undefined
+  var onEditorSubmit: js.UndefOr[js.Function1[/* props */ js.Any, scala.Unit]] = js.undefined
   var rowReorder: js.UndefOr[scala.Boolean] = js.undefined
   var rowReorderIcon: js.UndefOr[java.lang.String] = js.undefined
   var rowSpan: js.UndefOr[scala.Double] = js.undefined
   var selectionMode: js.UndefOr[java.lang.String] = js.undefined
   var sortField: js.UndefOr[java.lang.String] = js.undefined
-  var sortFunction: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var sortFunction: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_Field, scala.Unit]] = js.undefined
   var sortable: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
 }
@@ -75,12 +77,14 @@ object ColumnProps {
     headerClassName: java.lang.String = null,
     headerStyle: js.Object = null,
     loadingBody: js.Any = null,
+    onEditorCancel: /* props */ js.Any => scala.Unit = null,
+    onEditorSubmit: /* props */ js.Any => scala.Unit = null,
     rowReorder: js.UndefOr[scala.Boolean] = js.undefined,
     rowReorderIcon: java.lang.String = null,
     rowSpan: scala.Int | scala.Double = null,
     selectionMode: java.lang.String = null,
     sortField: java.lang.String = null,
-    sortFunction: () => scala.Unit = null,
+    sortFunction: /* e */ primereactLib.Anon_Field => scala.Unit = null,
     sortable: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.Object = null
   ): ColumnProps = {
@@ -112,12 +116,14 @@ object ColumnProps {
     if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName)
     if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
     if (loadingBody != null) __obj.updateDynamic("loadingBody")(loadingBody)
+    if (onEditorCancel != null) __obj.updateDynamic("onEditorCancel")(js.Any.fromFunction1(onEditorCancel))
+    if (onEditorSubmit != null) __obj.updateDynamic("onEditorSubmit")(js.Any.fromFunction1(onEditorSubmit))
     if (!js.isUndefined(rowReorder)) __obj.updateDynamic("rowReorder")(rowReorder)
     if (rowReorderIcon != null) __obj.updateDynamic("rowReorderIcon")(rowReorderIcon)
     if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
     if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
     if (sortField != null) __obj.updateDynamic("sortField")(sortField)
-    if (sortFunction != null) __obj.updateDynamic("sortFunction")(js.Any.fromFunction0(sortFunction))
+    if (sortFunction != null) __obj.updateDynamic("sortFunction")(js.Any.fromFunction1(sortFunction))
     if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ColumnProps]

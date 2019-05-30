@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Name extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var standalone: js.UndefOr[scala.Boolean] = js.undefined
-  var updateOn: js.UndefOr[atAngularFormsLib.srcModelMod.FormHooks] = js.undefined
+  var updateOn: js.UndefOr[atAngularFormsLib.atAngularFormsMod.FormHooks] = js.undefined
 }
 
 object Anon_Name {
@@ -16,7 +16,7 @@ object Anon_Name {
   def apply(
     name: java.lang.String = null,
     standalone: js.UndefOr[scala.Boolean] = js.undefined,
-    updateOn: atAngularFormsLib.srcModelMod.FormHooks = null
+    updateOn: atAngularFormsLib.atAngularFormsMod.FormHooks = null
   ): Anon_Name = {
     val __obj = js.Dynamic.literal()
     if (name != null) __obj.updateDynamic("name")(name)

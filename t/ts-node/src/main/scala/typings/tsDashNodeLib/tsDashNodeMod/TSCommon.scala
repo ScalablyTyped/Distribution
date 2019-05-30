@@ -121,6 +121,16 @@ trait TSCommon extends js.Object {
     resolutionStack: js.Array[typescriptLib.typescriptMod.Path],
     extraFileExtensions: js.Array[typescriptLib.typescriptMod.FileExtensionInfo]
   ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
+  def parseJsonConfigFileContent(
+    json: js.Any,
+    host: typescriptLib.typescriptMod.ParseConfigHost,
+    basePath: java.lang.String,
+    existingOptions: typescriptLib.typescriptMod.CompilerOptions,
+    configFileName: java.lang.String,
+    resolutionStack: js.Array[typescriptLib.typescriptMod.Path],
+    extraFileExtensions: js.Array[typescriptLib.typescriptMod.FileExtensionInfo],
+    extendedConfigCache: typescriptLib.typescriptMod.Map[typescriptLib.typescriptMod.ExtendedConfigCacheEntry]
+  ): typescriptLib.typescriptMod.ParsedCommandLine = js.native
   def readConfigFile(
     fileName: java.lang.String,
     readFile: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]]

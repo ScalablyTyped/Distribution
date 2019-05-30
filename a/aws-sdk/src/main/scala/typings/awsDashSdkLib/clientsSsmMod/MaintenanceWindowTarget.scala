@@ -11,15 +11,15 @@ trait MaintenanceWindowTarget extends js.Object {
     */
   var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   /**
-    * The target name.
+    * The name for the maintenance window target.
     */
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   /**
-    * A user-provided value that will be included in any CloudWatch events that are raised while running tasks for these targets in this Maintenance Window.
+    * A user-provided value that will be included in any CloudWatch events that are raised while running tasks for these targets in this maintenance window.
     */
   var OwnerInformation: js.UndefOr[OwnerInformation] = js.undefined
   /**
-    * The type of target that is being registered with the Maintenance Window.
+    * The type of target that is being registered with the maintenance window.
     */
   var ResourceType: js.UndefOr[MaintenanceWindowResourceType] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait MaintenanceWindowTarget extends js.Object {
     */
   var Targets: js.UndefOr[Targets] = js.undefined
   /**
-    * The ID of the Maintenance Window to register the target with.
+    * The ID of the maintenance window to register the target with.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
   /**

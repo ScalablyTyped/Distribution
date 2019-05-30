@@ -43,11 +43,11 @@ trait GetMaintenanceWindowExecutionTaskResult extends js.Object {
     */
   var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
   /**
-    * The ID of the specific task execution in the Maintenance Window task that was retrieved.
+    * The ID of the specific task execution in the maintenance window task that was retrieved.
     */
   var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
   /**
-    * The parameters passed to the task when it was run.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters.  The map has the following format: Key: string, between 1 and 255 characters Value: an array of strings, each string is between 1 and 255 characters
+    * The parameters passed to the task when it was run.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported maintenance window task types, see MaintenanceWindowTaskInvocationParameters.  The map has the following format: Key: string, between 1 and 255 characters Value: an array of strings, each string is between 1 and 255 characters
     */
   var TaskParameters: js.UndefOr[MaintenanceWindowTaskParametersList] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait GetMaintenanceWindowExecutionTaskResult extends js.Object {
     */
   var Type: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
   /**
-    * The ID of the Maintenance Window execution that includes the task.
+    * The ID of the maintenance window execution that includes the task.
     */
   var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
 }

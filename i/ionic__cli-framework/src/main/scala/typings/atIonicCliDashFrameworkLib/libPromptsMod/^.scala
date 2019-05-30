@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework/lib/prompts", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def createPromptChoiceSeparator(): inquirerLib.inquirerMod.objectsNs.Separator = js.native
+  def createPromptChoiceSeparator(): Separator = js.native
   def createPromptModule(): js.Promise[PromptModule] = js.native
   def createPromptModule(hasInteractiveOnFallback: CreatePromptModuleOptions): js.Promise[PromptModule] = js.native
 }

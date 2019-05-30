@@ -12,6 +12,8 @@ class ElementFactory () extends js.Object {
   def createElement(elementType: java.lang.String, name: java.lang.String): IElement = js.native
   def getAllTypes(): js.Array[java.lang.String] = js.native
   def registerElement(elementType: java.lang.String, elementCreator: js.Function1[/* name */ java.lang.String, IElement]): scala.Unit = js.native
+  def unregisterElement(elementType: java.lang.String): scala.Unit = js.native
+  def unregisterElement(elementType: java.lang.String, removeFromSerializer: scala.Boolean): scala.Unit = js.native
 }
 
 /* static members */

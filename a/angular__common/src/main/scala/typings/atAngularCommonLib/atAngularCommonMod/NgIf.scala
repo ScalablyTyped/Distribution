@@ -7,9 +7,27 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/common", "NgIf")
 @js.native
-class NgIf protected ()
-  extends atAngularCommonLib.publicUnderscoreApiMod.NgIf {
-  def this(_viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, templateRef: atAngularCoreLib.atAngularCoreMod.TemplateRef[atAngularCommonLib.srcDirectivesNgUnderscoreIfMod.NgIfContext]) = this()
+class NgIf protected () extends js.Object {
+  def this(_viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, templateRef: atAngularCoreLib.atAngularCoreMod.TemplateRef[NgIfContext]) = this()
+  var _context: js.Any = js.native
+  var _elseTemplateRef: js.Any = js.native
+  var _elseViewRef: js.Any = js.native
+  var _thenTemplateRef: js.Any = js.native
+  var _thenViewRef: js.Any = js.native
+  var _updateView: js.Any = js.native
+  var _viewContainer: js.Any = js.native
+  /**
+    * The Boolean expression to evaluate as the condition for showing a template.
+    */
+  var ngIf: js.Any = js.native
+  /**
+    * A template to show if the condition expression evaluates to false.
+    */
+  var ngIfElse: atAngularCoreLib.atAngularCoreMod.TemplateRef[NgIfContext] | scala.Null = js.native
+  /**
+    * A template to show if the condition expression evaluates to true.
+    */
+  var ngIfThen: atAngularCoreLib.atAngularCoreMod.TemplateRef[NgIfContext] | scala.Null = js.native
 }
 
 /* static members */
@@ -24,6 +42,6 @@ object NgIf extends js.Object {
     * should be narrowed in some way. For `NgIf`, it is narrowed to be non-null, which allows the
     * strictNullChecks feature of TypeScript to work with `NgIf`.
     */
-  def ngTemplateGuard_ngIf[E](dir: atAngularCommonLib.srcDirectivesNgUnderscoreIfMod.NgIf, expr: E): /* is std.NonNullable<E> */ scala.Boolean = js.native
+  def ngTemplateGuard_ngIf[E](dir: atAngularCommonLib.atAngularCommonMod.NgIf, expr: E): /* is std.NonNullable<E> */ scala.Boolean = js.native
 }
 

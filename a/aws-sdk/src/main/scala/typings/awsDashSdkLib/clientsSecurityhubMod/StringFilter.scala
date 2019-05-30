@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StringFilter extends js.Object {
   /**
-    * Represents the condition to be applied to a string value when querying for findings. 
+    * The condition to be applied to a string value when querying for findings. 
     */
   var Comparison: js.UndefOr[StringFilterComparison] = js.undefined
   /**

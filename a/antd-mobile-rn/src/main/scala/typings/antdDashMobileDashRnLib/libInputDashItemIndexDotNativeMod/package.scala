@@ -6,5 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libInputDashItemIndexDotNativeMod {
-  type TextInputProps = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Omit<TextInputProperties, 'onChange' | 'onFocus' | 'onBlur'> */ js.Any
+  type TextInputProps = stdLib.Omit[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ js.Any, 
+    antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.onChange | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.onFocus | antdDashMobileDashRnLib.antdDashMobileDashRnLibStrings.onBlur
+  ]
 }

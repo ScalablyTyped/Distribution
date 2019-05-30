@@ -551,14 +551,14 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[AuthorizeClientVpnIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * [VPC only] Adds the specified egress rules to a security group for use with a VPC. An outbound rule permits instances to send traffic to the specified destination IPv4 or IPv6 CIDR address ranges, or to the specified destination security groups for the same VPC. You specify a protocol for each rule (for example, TCP). For the TCP and UDP protocols, you must also specify the destination port or port range. For the ICMP protocol, you must also specify the ICMP type and code. You can use -1 for the type or code to mean all types or all codes. Rule changes are propagated to affected instances as quickly as possible. However, a small delay might occur. For more information about VPC security group limits, see Amazon VPC Limits.
+    * [VPC only] Adds the specified egress rules to a security group for use with a VPC. An outbound rule permits instances to send traffic to the specified IPv4 or IPv6 CIDR address ranges, or to the instances associated with the specified destination security groups. You specify a protocol for each rule (for example, TCP). For the TCP and UDP protocols, you must also specify the destination port or port range. For the ICMP protocol, you must also specify the ICMP type and code. You can use -1 for the type or code to mean all types or all codes. Rule changes are propagated to affected instances as quickly as possible. However, a small delay might occur. For more information about VPC security group limits, see Amazon VPC Limits.
     */
   def authorizeSecurityGroupEgress(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def authorizeSecurityGroupEgress(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * [VPC only] Adds the specified egress rules to a security group for use with a VPC. An outbound rule permits instances to send traffic to the specified destination IPv4 or IPv6 CIDR address ranges, or to the specified destination security groups for the same VPC. You specify a protocol for each rule (for example, TCP). For the TCP and UDP protocols, you must also specify the destination port or port range. For the ICMP protocol, you must also specify the ICMP type and code. You can use -1 for the type or code to mean all types or all codes. Rule changes are propagated to affected instances as quickly as possible. However, a small delay might occur. For more information about VPC security group limits, see Amazon VPC Limits.
+    * [VPC only] Adds the specified egress rules to a security group for use with a VPC. An outbound rule permits instances to send traffic to the specified IPv4 or IPv6 CIDR address ranges, or to the instances associated with the specified destination security groups. You specify a protocol for each rule (for example, TCP). For the TCP and UDP protocols, you must also specify the destination port or port range. For the ICMP protocol, you must also specify the ICMP type and code. You can use -1 for the type or code to mean all types or all codes. Rule changes are propagated to affected instances as quickly as possible. However, a small delay might occur. For more information about VPC security group limits, see Amazon VPC Limits.
     */
   def authorizeSecurityGroupEgress(params: AuthorizeSecurityGroupEgressRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def authorizeSecurityGroupEgress(
@@ -566,14 +566,14 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Adds the specified ingress rules to a security group. An inbound rule permits instances to receive traffic from the specified destination IPv4 or IPv6 CIDR address ranges, or from the specified destination security groups. You specify a protocol for each rule (for example, TCP). For TCP and UDP, you must also specify the destination port or port range. For ICMP/ICMPv6, you must also specify the ICMP/ICMPv6 type and code. You can use -1 to mean all types or all codes. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur. For more information about VPC security group limits, see Amazon VPC Limits.
+    * Adds the specified ingress rules to a security group. An inbound rule permits instances to receive traffic from the specified IPv4 or IPv6 CIDR address ranges, or from the instances associated with the specified destination security groups. You specify a protocol for each rule (for example, TCP). For TCP and UDP, you must also specify the destination port or port range. For ICMP/ICMPv6, you must also specify the ICMP/ICMPv6 type and code. You can use -1 to mean all types or all codes. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur. For more information about VPC security group limits, see Amazon VPC Limits.
     */
   def authorizeSecurityGroupIngress(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def authorizeSecurityGroupIngress(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Adds the specified ingress rules to a security group. An inbound rule permits instances to receive traffic from the specified destination IPv4 or IPv6 CIDR address ranges, or from the specified destination security groups. You specify a protocol for each rule (for example, TCP). For TCP and UDP, you must also specify the destination port or port range. For ICMP/ICMPv6, you must also specify the ICMP/ICMPv6 type and code. You can use -1 to mean all types or all codes. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur. For more information about VPC security group limits, see Amazon VPC Limits.
+    * Adds the specified ingress rules to a security group. An inbound rule permits instances to receive traffic from the specified IPv4 or IPv6 CIDR address ranges, or from the instances associated with the specified destination security groups. You specify a protocol for each rule (for example, TCP). For TCP and UDP, you must also specify the destination port or port range. For ICMP/ICMPv6, you must also specify the ICMP/ICMPv6 type and code. You can use -1 to mean all types or all codes. Rule changes are propagated to instances within the security group as quickly as possible. However, a small delay might occur. For more information about VPC security group limits, see Amazon VPC Limits.
     */
   def authorizeSecurityGroupIngress(params: AuthorizeSecurityGroupIngressRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def authorizeSecurityGroupIngress(
@@ -1467,6 +1467,29 @@ trait EC2
     params: CreateSnapshotRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Snapshot, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[Snapshot, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates crash-consistent snapshots of multiple EBS volumes and stores the data in S3. Volumes are chosen by specifying an instance. Any attached volumes will produce one snapshot each that is crash-consistent across the instance. Boot volumes can be excluded by changing the paramaters. 
+    */
+  def createSnapshots(): awsDashSdkLib.libRequestMod.Request[CreateSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createSnapshots(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateSnapshotsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates crash-consistent snapshots of multiple EBS volumes and stores the data in S3. Volumes are chosen by specifying an instance. Any attached volumes will produce one snapshot each that is crash-consistent across the instance. Boot volumes can be excluded by changing the paramaters. 
+    */
+  def createSnapshots(params: CreateSnapshotsRequest): awsDashSdkLib.libRequestMod.Request[CreateSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createSnapshots(
+    params: CreateSnapshotsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateSnapshotsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateSnapshotsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Creates a data feed for Spot Instances, enabling you to view Spot Instance usage logs. You can create one data feed per AWS account. For more information, see Spot Instance Data Feed in the Amazon EC2 User Guide for Linux Instances.
     */
@@ -5100,7 +5123,7 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[DisassociateVpcCidrBlockResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Enables default encryption for EBS volumes that are created in your account in the current region. Once encryption is enabled with this action, EBS volumes that are created in your account will always be encrypted even if encryption is not specified at launch. This setting overrides the encrypted setting to true in all API calls that create EBS volumes in your account. A volume will be encrypted even if you specify encryption to be false in the API call that creates the volume. If you do not specify a customer master key (CMK) in the API call that creates the EBS volume, then the volume is encrypted to your AWS account's default CMK. You can specify a default CMK of your choice using ModifyEbsDefaultKmsKeyId. Enabling default encryption for EBS volumes has no effect on existing unencrypted volumes in your account. Encrypting the data in these requires manual action. You can either create an encrypted snapshot of an unencrypted volume, or encrypt a copy of an unencrypted snapshot. Any volume restored from an encrypted snapshot is also encrypted. For more information, see Amazon EBS Snapshots. Once EBS encryption by default is enabled, you can no longer launch older-generation instance types that do not support encryption. For more information, see Supported Instance Types.
+    * Enables default encryption for EBS volumes that are created in your account in the current region. Once encryption is enabled with this action, EBS volumes that are created in your account will always be encrypted even if encryption is not specified at launch. This setting overrides the encrypted setting to true in all API calls that create EBS volumes in your account. A volume will be encrypted even if you specify encryption to be false in the API call that creates the volume. If you do not specify a customer master key (CMK) in the API call that creates the EBS volume, then the volume is encrypted to your AWS account's default CMK. You can specify a default CMK of your choice using ModifyEbsDefaultKmsKeyId. Enabling default encryption for EBS volumes has no effect on existing unencrypted volumes in your account. Encrypting the data in these requires manual action. You can either create an encrypted snapshot of an unencrypted volume, or encrypt a copy of an unencrypted snapshot. Any volume restored from an encrypted snapshot is also encrypted. For more information, see Amazon EBS Snapshots. After EBS encryption by default is enabled, you can no longer launch older-generation instance types that do not support encryption. For more information, see Supported Instance Types.
     */
   def enableEbsEncryptionByDefault(): awsDashSdkLib.libRequestMod.Request[EnableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableEbsEncryptionByDefault(
@@ -5111,7 +5134,7 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[EnableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Enables default encryption for EBS volumes that are created in your account in the current region. Once encryption is enabled with this action, EBS volumes that are created in your account will always be encrypted even if encryption is not specified at launch. This setting overrides the encrypted setting to true in all API calls that create EBS volumes in your account. A volume will be encrypted even if you specify encryption to be false in the API call that creates the volume. If you do not specify a customer master key (CMK) in the API call that creates the EBS volume, then the volume is encrypted to your AWS account's default CMK. You can specify a default CMK of your choice using ModifyEbsDefaultKmsKeyId. Enabling default encryption for EBS volumes has no effect on existing unencrypted volumes in your account. Encrypting the data in these requires manual action. You can either create an encrypted snapshot of an unencrypted volume, or encrypt a copy of an unencrypted snapshot. Any volume restored from an encrypted snapshot is also encrypted. For more information, see Amazon EBS Snapshots. Once EBS encryption by default is enabled, you can no longer launch older-generation instance types that do not support encryption. For more information, see Supported Instance Types.
+    * Enables default encryption for EBS volumes that are created in your account in the current region. Once encryption is enabled with this action, EBS volumes that are created in your account will always be encrypted even if encryption is not specified at launch. This setting overrides the encrypted setting to true in all API calls that create EBS volumes in your account. A volume will be encrypted even if you specify encryption to be false in the API call that creates the volume. If you do not specify a customer master key (CMK) in the API call that creates the EBS volume, then the volume is encrypted to your AWS account's default CMK. You can specify a default CMK of your choice using ModifyEbsDefaultKmsKeyId. Enabling default encryption for EBS volumes has no effect on existing unencrypted volumes in your account. Encrypting the data in these requires manual action. You can either create an encrypted snapshot of an unencrypted volume, or encrypt a copy of an unencrypted snapshot. Any volume restored from an encrypted snapshot is also encrypted. For more information, see Amazon EBS Snapshots. After EBS encryption by default is enabled, you can no longer launch older-generation instance types that do not support encryption. For more information, see Supported Instance Types.
     */
   def enableEbsEncryptionByDefault(params: EnableEbsEncryptionByDefaultRequest): awsDashSdkLib.libRequestMod.Request[EnableEbsEncryptionByDefaultResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def enableEbsEncryptionByDefault(
@@ -5764,7 +5787,7 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifyClientVpnEndpointResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Changes the default customer master key (CMK) that your account uses to encrypt EBS volumes if you don’t specify a CMK in the API call. Your account has an AWS-managed default CMK that is used for encrypting an EBS volume when no CMK is specified in the API call that creates the volume. By calling this API, you can specify a customer-managed CMK to use in place of the AWS-managed default CMK. Note: Deleting or disabling the custom CMK that you have specified to act as your default CMK will result in instance-launch failures.
+    * Changes the default customer master key (CMK) that your account uses to encrypt EBS volumes if you don't specify a CMK in the API call. Your account has an AWS-managed default CMK that is used for encrypting an EBS volume when no CMK is specified in the API call that creates the volume. By calling this API, you can specify a customer-managed CMK to use in place of the AWS-managed default CMK. Note: Deleting or disabling the custom CMK that you have specified to act as your default CMK will result in instance-launch failures.
     */
   def modifyEbsDefaultKmsKeyId(): awsDashSdkLib.libRequestMod.Request[ModifyEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyEbsDefaultKmsKeyId(
@@ -5775,7 +5798,7 @@ trait EC2
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifyEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Changes the default customer master key (CMK) that your account uses to encrypt EBS volumes if you don’t specify a CMK in the API call. Your account has an AWS-managed default CMK that is used for encrypting an EBS volume when no CMK is specified in the API call that creates the volume. By calling this API, you can specify a customer-managed CMK to use in place of the AWS-managed default CMK. Note: Deleting or disabling the custom CMK that you have specified to act as your default CMK will result in instance-launch failures.
+    * Changes the default customer master key (CMK) that your account uses to encrypt EBS volumes if you don't specify a CMK in the API call. Your account has an AWS-managed default CMK that is used for encrypting an EBS volume when no CMK is specified in the API call that creates the volume. By calling this API, you can specify a customer-managed CMK to use in place of the AWS-managed default CMK. Note: Deleting or disabling the custom CMK that you have specified to act as your default CMK will result in instance-launch failures.
     */
   def modifyEbsDefaultKmsKeyId(params: ModifyEbsDefaultKmsKeyIdRequest): awsDashSdkLib.libRequestMod.Request[ModifyEbsDefaultKmsKeyIdResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyEbsDefaultKmsKeyId(

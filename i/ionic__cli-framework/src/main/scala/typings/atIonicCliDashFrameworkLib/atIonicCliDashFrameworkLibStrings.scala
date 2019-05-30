@@ -30,6 +30,9 @@ object atIonicCliDashFrameworkLibStrings {
   sealed trait ERR_ICF_IPC_UNKNOWN_PROCEDURE extends js.Object
   
   @js.native
+  sealed trait HelpGroupColors extends js.Object
+  
+  @js.native
   sealed trait INFO
     extends atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel
   
@@ -60,9 +63,6 @@ object atIonicCliDashFrameworkLibStrings {
   
   @js.native
   sealed trait failure extends js.Object
-  
-  @js.native
-  sealed trait help extends js.Object
   
   @js.native
   sealed trait input
@@ -121,6 +121,8 @@ object atIonicCliDashFrameworkLibStrings {
   @scala.inline
   def ERR_ICF_IPC_UNKNOWN_PROCEDURE: ERR_ICF_IPC_UNKNOWN_PROCEDURE = "ERR_ICF_IPC_UNKNOWN_PROCEDURE".asInstanceOf[ERR_ICF_IPC_UNKNOWN_PROCEDURE]
   @scala.inline
+  def HelpGroupColors: HelpGroupColors = "HelpGroupColors".asInstanceOf[HelpGroupColors]
+  @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
   @scala.inline
   def IPCError: IPCError = "IPCError".asInstanceOf[IPCError]
@@ -140,8 +142,6 @@ object atIonicCliDashFrameworkLibStrings {
   def end: end = "end".asInstanceOf[end]
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
-  @scala.inline
-  def help: help = "help".asInstanceOf[help]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline

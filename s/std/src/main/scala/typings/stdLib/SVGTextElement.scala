@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGTextElement interface corresponds to the <text> elements. */
+/** Corresponds to the <text> elements. */
 @js.native
 trait SVGTextElement extends SVGTextPositioningElement
 
@@ -14,6 +14,8 @@ trait SVGTextElement extends SVGTextPositioningElement
 class SVGTextElementCls () extends SVGTextElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

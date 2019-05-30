@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("ngx-infinite-scroll/src/modules/infinite-scroll.directive", "InfiniteScrollDirective")
 @js.native
 class InfiniteScrollDirective protected ()
-  extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy
-     with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnChanges
-     with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.AfterViewInit {
+  extends atAngularCoreLib.atAngularCoreMod.OnDestroy
+     with atAngularCoreLib.atAngularCoreMod.OnChanges
+     with atAngularCoreLib.atAngularCoreMod.AfterViewInit {
   def this(element: atAngularCoreLib.atAngularCoreMod.ElementRef[_], zone: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   var alwaysCallback: scala.Boolean = js.native
   var disposeScroller: js.Any = js.native
@@ -45,7 +45,7 @@ class InfiniteScrollDirective protected ()
     * @param changes The changed properties.
     */
   /* CompleteClass */
-  override def ngOnChanges(changes: atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.SimpleChanges): scala.Unit = js.native
+  override def ngOnChanges(changes: atAngularCoreLib.atAngularCoreMod.SimpleChanges): scala.Unit = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately
     * after a directive, pipe, or service instance is destroyed.

@@ -11,6 +11,7 @@ trait Query extends js.Object {
   var isViewQuery: scala.Boolean
   var read: js.Any
   var selector: js.Any
+  var static: scala.Boolean
 }
 
 object Query {
@@ -20,9 +21,10 @@ object Query {
     first: scala.Boolean,
     isViewQuery: scala.Boolean,
     read: js.Any,
-    selector: js.Any
+    selector: js.Any,
+    static: scala.Boolean
   ): Query = {
-    val __obj = js.Dynamic.literal(descendants = descendants, first = first, isViewQuery = isViewQuery, read = read, selector = selector)
+    val __obj = js.Dynamic.literal(descendants = descendants, first = first, isViewQuery = isViewQuery, read = read, selector = selector, static = static)
   
     __obj.asInstanceOf[Query]
   }

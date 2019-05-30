@@ -53,7 +53,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox |  Safari  |  Edge  | IE  |
     * | :----: | :-----: | :------: | :----: | :-: |
-    * | **57** | **52**  | **10.1** | **16** | n/a |
+    * | **57** | **52**  | **10.1** | **16** | No  |
     *
     * ---
     *
@@ -92,10 +92,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     *
-    * | Chrome | Firefox | Safari  |  Edge  |   IE   |
-    * | :----: | :-----: | :-----: | :----: | :----: |
-    * | **43** | **16**  |  **9**  | **12** | **10** |
-    * |        | 5 _-x-_ | 4 _-x-_ |        |        |
+    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----: | :----: | :----: |
+    * | **43**  | **16**  |  **9**  | **12** | **10** |
+    * | 3 _-x-_ | 5 _-x-_ | 4 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-delay
     */
@@ -105,10 +105,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox |   Safari    |  Edge  |   IE   |
-    * | :----: | :-----: | :---------: | :----: | :----: |
-    * | **43** | **16**  | **4** _-x-_ | **12** | **10** |
-    * |        | 5 _-x-_ |             |        |        |
+    * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
+    * | :-----: | :-----: | :---------: | :----: | :----: |
+    * | **43**  | **16**  | **4** _-x-_ | **12** | **10** |
+    * | 3 _-x-_ | 5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-direction
     */
@@ -131,10 +131,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox |   Safari    |  Edge  |   IE   |
-    * | :----: | :-----: | :---------: | :----: | :----: |
-    * | **43** | **16**  | **4** _-x-_ | **12** | **10** |
-    * |        | 5 _-x-_ |             |        |        |
+    * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
+    * | :-----: | :-----: | :---------: | :----: | :----: |
+    * | **43**  | **16**  | **5** _-x-_ | **12** | **10** |
+    * | 3 _-x-_ | 5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-fill-mode
     */
@@ -144,10 +144,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `1`
     *
-    * | Chrome | Firefox |   Safari    |  Edge  |   IE   |
-    * | :----: | :-----: | :---------: | :----: | :----: |
-    * | **43** | **16**  | **4** _-x-_ | **12** | **10** |
-    * |        | 5 _-x-_ |             |        |        |
+    * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
+    * | :-----: | :-----: | :---------: | :----: | :----: |
+    * | **43**  | **16**  | **4** _-x-_ | **12** | **10** |
+    * | 3 _-x-_ | 5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-iteration-count
     */
@@ -157,10 +157,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox |   Safari    |  Edge  |   IE   |
-    * | :----: | :-----: | :---------: | :----: | :----: |
-    * | **43** | **16**  | **4** _-x-_ | **12** | **10** |
-    * |        | 5 _-x-_ |             |        |        |
+    * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
+    * | :-----: | :-----: | :---------: | :----: | :----: |
+    * | **43**  | **16**  | **4** _-x-_ | **12** | **10** |
+    * | 3 _-x-_ | 5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-name
     */
@@ -170,10 +170,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `running`
     *
-    * | Chrome | Firefox | Safari |  Edge  |   IE   |
-    * | :----: | :-----: | :----: | :----: | :----: |
-    * | **43** | **16**  |  Yes   | **12** | **10** |
-    * |        | 5 _-x-_ |        |        |        |
+    * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
+    * | :-----: | :-----: | :---------: | :----: | :----: |
+    * | **43**  | **16**  | **4** _-x-_ | **12** | **10** |
+    * | 3 _-x-_ | 5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-play-state
     */
@@ -183,10 +183,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `ease`
     *
-    * | Chrome | Firefox |   Safari    |  Edge  |   IE   |
-    * | :----: | :-----: | :---------: | :----: | :----: |
-    * | **43** | **16**  | **4** _-x-_ | **12** | **10** |
-    * |        | 5 _-x-_ |             |        |        |
+    * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
+    * | :-----: | :-----: | :---------: | :----: | :----: |
+    * | **43**  | **16**  | **4** _-x-_ | **12** | **10** |
+    * | 3 _-x-_ | 5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-timing-function
     */
@@ -257,9 +257,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `border-box`
     *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **4**  | **3**  | **12** | **9** |
+    * | Chrome | Firefox |   Safari    |  Edge  |  IE   |
+    * | :----: | :-----: | :---------: | :----: | :---: |
+    * | **1**  |  **4**  | **3** _-x-_ | **12** | **9** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/background-clip
     */
@@ -368,9 +368,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **57** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **57** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/block-size
     */
@@ -392,9 +392,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `currentcolor`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end-color
     */
@@ -404,9 +404,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end-style
     */
@@ -416,9 +416,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `medium`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end-width
     */
@@ -428,9 +428,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `currentcolor`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start-color
     */
@@ -440,9 +440,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start-style
     */
@@ -452,9 +452,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `medium`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start-width
     */
@@ -658,9 +658,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `currentcolor`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome |           Firefox           |  Safari  | Edge | IE  |
+    * | :----: | :-------------------------: | :------: | :--: | :-: |
+    * | **69** |           **41**            | **12.1** |  No  | No  |
+    * |        | 3 _(-moz-border-end-color)_ |          |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end-color
     */
@@ -670,10 +671,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome |           Firefox            | Safari | Edge | IE  |
-    * | :----: | :--------------------------: | :----: | :--: | :-: |
-    * | **69** |            **41**            |   No   |  No  | No  |
-    * |        | 38 _(-moz-border-end-style)_ |        |      |     |
+    * | Chrome |           Firefox           |  Safari  | Edge | IE  |
+    * | :----: | :-------------------------: | :------: | :--: | :-: |
+    * | **69** |           **41**            | **12.1** |  No  | No  |
+    * |        | 3 _(-moz-border-end-style)_ |          |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end-style
     */
@@ -683,9 +684,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `medium`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome |           Firefox           |  Safari  | Edge | IE  |
+    * | :----: | :-------------------------: | :------: | :--: | :-: |
+    * | **69** |           **41**            | **12.1** |  No  | No  |
+    * |        | 3 _(-moz-border-end-width)_ |          |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end-width
     */
@@ -695,10 +697,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `currentcolor`
     *
-    * | Chrome |            Firefox             | Safari | Edge | IE  |
-    * | :----: | :----------------------------: | :----: | :--: | :-: |
-    * | **69** |             **41**             |   No   |  No  | No  |
-    * |        | 38 _(-moz-border-start-color)_ |        |      |     |
+    * | Chrome |            Firefox            |  Safari  | Edge | IE  |
+    * | :----: | :---------------------------: | :------: | :--: | :-: |
+    * | **69** |            **41**             | **12.1** |  No  | No  |
+    * |        | 3 _(-moz-border-start-color)_ |          |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start-color
     */
@@ -708,9 +710,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome |            Firefox            |  Safari  | Edge | IE  |
+    * | :----: | :---------------------------: | :------: | :--: | :-: |
+    * | **69** |            **41**             | **12.1** |  No  | No  |
+    * |        | 3 _(-moz-border-start-style)_ |          |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start-style
     */
@@ -720,9 +723,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `medium`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start-width
     */
@@ -1114,10 +1117,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * |  Chrome  | Firefox | Safari |  Edge  | IE  |
-    * | :------: | :-----: | :----: | :----: | :-: |
-    * |  **55**  | **3.5** |   No   | **15** | Yes |
-    * | 24 _-x-_ |         |        |        |     |
+    * |  Chrome  | Firefox | Safari |  Edge  |   IE   |
+    * | :------: | :-----: | :----: | :----: | :----: |
+    * |  **55**  | **3.5** |   No   | **12** | **10** |
+    * | 24 _-x-_ |         |        |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/clip-path
     */
@@ -1127,9 +1130,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: Varies from one browser to another
     *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **1**  |  **1**  |  Yes   | **12** | Yes |
+    * | Chrome | Firefox | Safari |  Edge  |  IE   |
+    * | :----: | :-----: | :----: | :----: | :---: |
+    * | **1**  |  **1**  |  Yes   | **12** | **3** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/color
     */
@@ -1164,10 +1167,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `balance`
     *
-    * | Chrome | Firefox  | Safari |  Edge  | IE  |
-    * | :----: | :------: | :----: | :----: | :-: |
-    * | **50** |  **52**  |  n/a   | **12** | n/a |
-    * |        | 13 _-x-_ |        |        |     |
+    * | Chrome | Firefox  | Safari |  Edge  |   IE   |
+    * | :----: | :------: | :----: | :----: | :----: |
+    * | **50** |  **52**  |  n/a   | **12** | **10** |
+    * |        | 13 _-x-_ |        |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-fill
     */
@@ -1181,9 +1184,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * _Supported in Flex Layout_
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **63**  |   No   | n/a  | No  |
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * |   No   | **63**  | **3** _-x-_ | n/a  | No  |
     *
     * ---
     *
@@ -1226,9 +1229,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox |   Safari    |  Edge  |   IE   |
-    * | :----: | :-----: | :---------: | :----: | :----: |
-    * | **50** | **52**  | **3** _-x-_ | **12** | **10** |
+    * | Chrome |  Firefox  |   Safari    |  Edge  |   IE   |
+    * | :----: | :-------: | :---------: | :----: | :----: |
+    * | **50** |  **52**   | **3** _-x-_ | **12** | **10** |
+    * |        | 3.5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/column-rule-style
     */
@@ -1278,7 +1282,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **52** |   n/a   |   No   |  No  | n/a |
+    * | **52** |   n/a   |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/contain
     */
@@ -1300,9 +1304,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
-    * | :----: | :-----: | :-----: | :----: | :---: |
-    * | **2**  |  **1**  | **3.1** | **12** | **8** |
+    * | Chrome | Firefox | Safari |  Edge  |  IE   |
+    * | :----: | :-----: | :----: | :----: | :---: |
+    * | **2**  |  **1**  | **3**  | **12** | **8** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/counter-increment
     */
@@ -1312,9 +1316,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
-    * | :----: | :-----: | :-----: | :----: | :---: |
-    * | **2**  |  **1**  | **3.1** | **12** | **8** |
+    * | Chrome | Firefox | Safari |  Edge  |  IE   |
+    * | :----: | :-----: | :----: | :----: | :---: |
+    * | **2**  |  **1**  | **3**  | **12** | **8** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/counter-reset
     */
@@ -1336,9 +1340,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `ltr`
     *
-    * | Chrome | Firefox | Safari  |  Edge  |   IE    |
-    * | :----: | :-----: | :-----: | :----: | :-----: |
-    * | **2**  |  **1**  | **1.3** | **12** | **5.5** |
+    * | Chrome | Firefox | Safari |  Edge  |   IE    |
+    * | :----: | :-----: | :----: | :----: | :-----: |
+    * | **2**  |  **1**  | **1**  | **12** | **5.5** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/direction
     */
@@ -1669,9 +1673,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
-    * | :----: | :-----: | :-----: | :----: | :---: |
-    * | **2**  |  **1**  | **1.3** | **12** | **3** |
+    * | Chrome | Firefox | Safari |  Edge  |  IE   |
+    * | :----: | :-----: | :----: | :----: | :---: |
+    * | **2**  |  **1**  | **1**  | **12** | **3** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-weight
     */
@@ -1878,9 +1882,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **57** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **57** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/inline-size
     */
@@ -2089,10 +2093,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome  | Firefox | Safari |  Edge  |   IE    |
-    * | :-----: | :-----: | :----: | :----: | :-----: |
-    * | **58**  |   No    |  Yes   | **14** | **5.5** |
-    * | 1 _-x-_ |         |        |        |         |
+    * | Chrome  | Firefox |   Safari    |  Edge  |   IE    |
+    * | :-----: | :-----: | :---------: | :----: | :-----: |
+    * | **58**  |   No    | **3** _-x-_ | **14** | **5.5** |
+    * | 1 _-x-_ |         |             |        |         |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/line-break
     */
@@ -2116,7 +2120,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |   No    |   No   |  No  | n/a |
+    * |  n/a   |   No    |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/line-height-step
     */
@@ -2174,9 +2178,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-block-end
     */
@@ -2186,9 +2190,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-block-start
     */
@@ -2222,10 +2226,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * |          Chrome          |        Firefox        |            Safari            | Edge | IE  |
-    * | :----------------------: | :-------------------: | :--------------------------: | :--: | :-: |
-    * |          **69**          |        **41**         | **3** _(-webkit-margin-end)_ |  No  | No  |
-    * | 2 _(-webkit-margin-end)_ | 3 _(-moz-margin-end)_ |                              |      |     |
+    * |          Chrome          |        Firefox        |          Safari          | Edge | IE  |
+    * | :----------------------: | :-------------------: | :----------------------: | :--: | :-: |
+    * |          **69**          |        **41**         |         **12.1**         |  No  | No  |
+    * | 2 _(-webkit-margin-end)_ | 3 _(-moz-margin-end)_ | 3 _(-webkit-margin-end)_ |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-inline-end
     */
@@ -2235,10 +2239,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * |           Chrome           |         Firefox         |             Safari             | Edge | IE  |
-    * | :------------------------: | :---------------------: | :----------------------------: | :--: | :-: |
-    * |           **69**           |         **41**          | **3** _(-webkit-margin-start)_ |  No  | No  |
-    * | 2 _(-webkit-margin-start)_ | 3 _(-moz-margin-start)_ |                                |      |     |
+    * |           Chrome           |         Firefox         |           Safari           | Edge | IE  |
+    * | :------------------------: | :---------------------: | :------------------------: | :--: | :-: |
+    * |           **69**           |         **41**          |          **12.1**          |  No  | No  |
+    * | 2 _(-webkit-margin-start)_ | 3 _(-moz-margin-start)_ | 3 _(-webkit-margin-start)_ |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-inline-start
     */
@@ -2320,9 +2324,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `border-box`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   | **53**  |  Yes   |  No  | No  |
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * |  Yes   | **53**  | **4** _-x-_ |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-clip
     */
@@ -2368,9 +2372,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `border-box`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   | **53**  |  Yes   |  No  | n/a |
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * |  Yes   | **53**  | **4** _-x-_ |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-origin
     */
@@ -2382,7 +2386,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |   Chrome    | Firefox |   Safari    |  Edge  | IE  |
     * | :---------: | :-----: | :---------: | :----: | :-: |
-    * | **1** _-x-_ | **53**  | **4** _-x-_ | **18** | n/a |
+    * | **1** _-x-_ | **53**  | **4** _-x-_ | **18** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-position
     */
@@ -2394,7 +2398,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |   Chrome    | Firefox |   Safari    |  Edge  | IE  |
     * | :---------: | :-----: | :---------: | :----: | :-: |
-    * | **1** _-x-_ | **53**  | **4** _-x-_ | **18** | n/a |
+    * | **1** _-x-_ | **53**  | **4** _-x-_ | **18** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-repeat
     */
@@ -2404,9 +2408,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * |   No   | **53**  |   No   | **17** | n/a |
+    * | Chrome | Firefox |   Safari    |  Edge  | IE  |
+    * | :----: | :-----: | :---------: | :----: | :-: |
+    * |   No   | **53**  | **4** _-x-_ | **17** | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-size
     */
@@ -2418,7 +2422,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **24** | **35**  |  n/a   |  No  | n/a |
+    * | **24** | **35**  |  n/a   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/mask-type
     */
@@ -2428,9 +2432,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **57** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **57** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/max-block-size
     */
@@ -2440,9 +2444,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **18** |  **1**  | **1**  | **12** | **7** |
+    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
+    * | :----: | :-----: | :-----: | :----: | :---: |
+    * | **18** |  **1**  | **1.3** | **12** | **7** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/max-height
     */
@@ -2452,9 +2456,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox |     Safari     | Edge | IE  |
-    * | :----: | :-----: | :------------: | :--: | :-: |
-    * | **57** | **41**  | **10.1** _-x-_ |  No  | No  |
+    * | Chrome | Firefox |   Safari   | Edge | IE  |
+    * | :----: | :-----: | :--------: | :--: | :-: |
+    * | **57** | **41**  |  **12.1**  |  No  | No  |
+    * |        |         | 10.1 _-x-_ |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/max-inline-size
     */
@@ -2468,7 +2473,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **2**  | **12** | **7** |
+    * | **1**  |  **1**  | **1**  | **12** | **7** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/max-width
     */
@@ -2478,9 +2483,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **57** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **57** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/min-block-size
     */
@@ -2490,9 +2495,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **3**  | **1**  | **12** | **7** |
+    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
+    * | :----: | :-----: | :-----: | :----: | :---: |
+    * | **1**  |  **3**  | **1.3** | **12** | **7** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/min-height
     */
@@ -2502,9 +2507,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **57** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **57** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/min-inline-size
     */
@@ -2516,7 +2521,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
-    * | **1**  |  **1**  | **2**  | **12** | **7** |
+    * | **1**  |  **1**  | **1**  | **12** | **7** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/min-width
     */
@@ -2540,7 +2545,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         |   No    |   No   |  No  | n/a |
+    * |         **55**         |   No    |   No   |  No  | No  |
     * | 46 _(motion-distance)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
@@ -2553,7 +2558,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |       Chrome       | Firefox | Safari | Edge | IE  |
     * | :----------------: | :-----: | :----: | :--: | :-: |
-    * |       **55**       |   n/a   |   No   |  No  | n/a |
+    * |       **55**       |   n/a   |   No   |  No  | No  |
     * | 46 _(motion-path)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
@@ -2566,7 +2571,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   No    |   No   |  No  | n/a |
+    * |         **56**         |   No    |   No   |  No  | No  |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2605,7 +2610,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         |   No    |   No   |  No  | n/a |
+    * |         **55**         |   No    |   No   |  No  | No  |
     * | 46 _(motion-distance)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
@@ -2618,7 +2623,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |       Chrome       | Firefox | Safari | Edge | IE  |
     * | :----------------: | :-----: | :----: | :--: | :-: |
-    * |       **55**       |   n/a   |   No   |  No  | n/a |
+    * |       **55**       |   n/a   |   No   |  No  | No  |
     * | 46 _(motion-path)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
@@ -2633,7 +2638,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   No    |   No   |  No  | n/a |
+    * |         **56**         |   No    |   No   |  No  | No  |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2646,7 +2651,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * |         Chrome         | Firefox | Safari | Edge | IE  |
     * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         |   No    |   No   |  No  | n/a |
+    * |         **56**         |   No    |   No   |  No  | No  |
     * | 46 _(motion-rotation)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
@@ -2657,9 +2662,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `1.0`
     *
-    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
-    * | :----: | :-----: | :-----: | :----: | :---: |
-    * | **1**  |  **1**  | **1.2** | **12** | **9** |
+    * | Chrome | Firefox | Safari |  Edge  |  IE   |
+    * | :----: | :-----: | :----: | :----: | :---: |
+    * | **1**  |  **1**  | **2**  | **12** | **9** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/opacity
     */
@@ -2682,9 +2687,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `2`
     *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **25** |   No    |   No   | **12** | **8** |
+    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
+    * | :----: | :-----: | :-----: | :----: | :---: |
+    * | **25** |   No    | **1.3** | **12** | **8** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/orphans
     */
@@ -2759,8 +2764,6 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/overflow-anchor
     */
   var overflowAnchor: js.UndefOr[OverflowAnchorProperty] = js.undefined
-  /** **Initial value**: `auto` */
-  var overflowBlock: js.UndefOr[OverflowBlockProperty] = js.undefined
   /**
     * The **`overflow-clip-box`** CSS property specifies relative to which box the clipping happens when there is an overflow. It is short hand for the `overflow-clip-box-inline` and `overflow-clip-box-block` properties.
     *
@@ -2773,8 +2776,6 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Mozilla/CSS/overflow-clip-box
     */
   var overflowClipBox: js.UndefOr[OverflowClipBoxProperty] = js.undefined
-  /** **Initial value**: `auto` */
-  var overflowInline: js.UndefOr[OverflowInlineProperty] = js.undefined
   /**
     * The `**overflow-wrap**` CSS property sets whether the browser should insert line breaks within words to prevent text from overflowing its content box.
     *
@@ -2865,9 +2866,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-block-end
     */
@@ -2877,9 +2878,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-block-start
     */
@@ -2913,10 +2914,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * |          Chrome           |        Firefox         |            Safari             | Edge | IE  |
-    * | :-----------------------: | :--------------------: | :---------------------------: | :--: | :-: |
-    * |          **69**           |         **41**         | **3** _(-webkit-padding-end)_ |  No  | No  |
-    * | 2 _(-webkit-padding-end)_ | 3 _(-moz-padding-end)_ |                               |      |     |
+    * |          Chrome           |        Firefox         |          Safari           | Edge | IE  |
+    * | :-----------------------: | :--------------------: | :-----------------------: | :--: | :-: |
+    * |          **69**           |         **41**         |         **12.1**          |  No  | No  |
+    * | 2 _(-webkit-padding-end)_ | 3 _(-moz-padding-end)_ | 3 _(-webkit-padding-end)_ |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-inline-end
     */
@@ -2926,10 +2927,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0`
     *
-    * |           Chrome            |         Firefox          |             Safari              | Edge | IE  |
-    * | :-------------------------: | :----------------------: | :-----------------------------: | :--: | :-: |
-    * |           **69**            |          **41**          | **3** _(-webkit-padding-start)_ |  No  | No  |
-    * | 2 _(-webkit-padding-start)_ | 3 _(-moz-padding-start)_ |                                 |      |     |
+    * |           Chrome            |         Firefox          |           Safari            | Edge | IE  |
+    * | :-------------------------: | :----------------------: | :-------------------------: | :--: | :-: |
+    * |           **69**            |          **41**          |          **12.1**           |  No  | No  |
+    * | 2 _(-webkit-padding-start)_ | 3 _(-moz-padding-start)_ | 3 _(-webkit-padding-start)_ |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/padding-inline-start
     */
@@ -3023,10 +3024,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * |  Chrome  | Firefox  | Safari |  Edge  |   IE   |
-    * | :------: | :------: | :----: | :----: | :----: |
-    * |  **45**  |  **16**  |  Yes   | **12** | **10** |
-    * | 12 _-x-_ | 10 _-x-_ |        |        |        |
+    * |  Chrome  | Firefox  |   Safari    |  Edge  |   IE   |
+    * | :------: | :------: | :---------: | :----: | :----: |
+    * |  **45**  |  **16**  | **4** _-x-_ | **12** | **10** |
+    * | 12 _-x-_ | 10 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/perspective
     */
@@ -3036,10 +3037,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `50% 50%`
     *
-    * |    Chrome    | Firefox  | Safari |  Edge  |   IE   |
-    * | :----------: | :------: | :----: | :----: | :----: |
-    * | **12** _-x-_ |  **16**  |  Yes   | **12** | **10** |
-    * |              | 10 _-x-_ |        |        |        |
+    * |    Chrome    | Firefox  |   Safari    |  Edge  |   IE   |
+    * | :----------: | :------: | :---------: | :----: | :----: |
+    * | **12** _-x-_ |  **16**  | **4** _-x-_ | **12** | **10** |
+    * |              | 10 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/perspective-origin
     */
@@ -3055,7 +3056,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** |   Yes   |  Yes   |  No  | No  |
+    * | **59** | **45**  |  Yes   |  No  | No  |
     *
     * ---
     *
@@ -3085,7 +3086,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |   IE   |
     * | :----: | :-----: | :----: | :----: | :----: |
-    * | **1**  | **1.5** | **3**  | **12** | **11** |
+    * | **1**  | **1.5** | **4**  | **12** | **11** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/pointer-events
     */
@@ -3121,7 +3122,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **1**  |         | **3**  |  No  | No  |
+    * | **1**  |  **4**  | **3**  |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/resize
     */
@@ -3145,7 +3146,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   |   n/a   |   No   |  No  | No  |
+    * |   No   |   n/a   |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/rotate
     */
@@ -3161,7 +3162,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **63**  |   No   | n/a  | No  |
+    * |   No   | **63**  |   No   | n/a  | No  |
     *
     * ---
     *
@@ -3210,7 +3211,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   |   n/a   |   No   |  No  | No  |
+    * |   No   |   n/a   |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scale
     */
@@ -3234,7 +3235,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin
     */
@@ -3246,7 +3247,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    |   No   |  No  | No  |
+    * | **69** | **68**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-block
     */
@@ -3258,7 +3259,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-block-end
     */
@@ -3270,7 +3271,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-block-start
     */
@@ -3282,11 +3283,23 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-bottom
     */
   var scrollMarginBottom: js.UndefOr[ScrollMarginBottomProperty[TLength]] = js.undefined
+  /**
+    * The `scroll-margin-inline` property is a shorthand property which sets the scroll-margin longhands in the inline dimension.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   | **68**  |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-inline
+    */
+  var scrollMarginInline: js.UndefOr[ScrollMarginInlineProperty[TLength]] = js.undefined
   /**
     * The `scroll-margin-inline-end` property defines the margin of the scroll snap area at the end of the inline dimension that is used for snapping this box to the snapport. The scroll snap area is determined by taking the transformed border box, finding its rectangular bounding box (axis-aligned in the scroll container’s coordinate space), then adding the specified outsets.
     *
@@ -3294,7 +3307,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-inline-end
     */
@@ -3306,7 +3319,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-inline-start
     */
@@ -3318,7 +3331,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-left
     */
@@ -3330,7 +3343,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-right
     */
@@ -3342,7 +3355,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-top
     */
@@ -3356,7 +3369,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * 
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     * 
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding
     */
@@ -3370,7 +3383,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * 
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    |   No   |  No  | No  |
+    * | **69** | **68**  |   No   |  No  | No  |
     * 
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-block
     */
@@ -3382,7 +3395,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-block-end
     */
@@ -3394,7 +3407,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-block-start
     */
@@ -3406,7 +3419,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-bottom
     */
@@ -3420,7 +3433,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     * 
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    |   No   |  No  | No  |
+    * | **69** | **68**  |   No   |  No  | No  |
     * 
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-inline
     */
@@ -3432,7 +3445,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-inline-end
     */
@@ -3444,7 +3457,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-inline-start
     */
@@ -3456,7 +3469,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-left
     */
@@ -3468,7 +3481,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-right
     */
@@ -3480,7 +3493,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-top
     */
@@ -3492,11 +3505,23 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    | **11** |  No  | No  |
+    * | **69** | **68**  | **11** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-snap-align
     */
   var scrollSnapAlign: js.UndefOr[ScrollSnapAlignProperty] = js.undefined
+  /**
+    * The **`scroll-snap-stop`** CSS property defines whether the scroll container is allowed to "pass over" possible snap positions.
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **75** |   No    |   No   |  No  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-snap-stop
+    */
+  var scrollSnapStop: js.UndefOr[ScrollSnapStopProperty] = js.undefined
   /**
     * The **`scroll-snap-type`** CSS property sets how strictly snap points are enforced on the scroll container in case there is one.
     *
@@ -3504,7 +3529,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari  |     Edge     |      IE      |
     * | :----: | :-----: | :-----: | :----------: | :----------: |
-    * | **69** | **39**  | **11**  | **12** _-x-_ | **10** _-x-_ |
+    * | **69** |  39-68  | **11**  | **12** _-x-_ | **10** _-x-_ |
     * |        |         | 9 _-x-_ |              |              |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-snap-type
@@ -3611,9 +3636,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome | Firefox | Safari |  Edge  | IE  |
-    * | :----: | :-----: | :----: | :----: | :-: |
-    * | **47** | **49**  |   No   | **12** | Yes |
+    * | Chrome | Firefox | Safari |  Edge  |   IE    |
+    * | :----: | :-----: | :----: | :----: | :-----: |
+    * | **47** | **49**  |   No   | **12** | **5.5** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-align-last
     */
@@ -3623,9 +3648,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari |  Edge  |                   IE                   |
-    * | :----: | :-----: | :----: | :----: | :------------------------------------: |
-    * | **48** | **48**  |  Yes   | **15** | **11** _(-ms-text-combine-horizontal)_ |
+    * | Chrome | Firefox | Safari |                  Edge                  |                   IE                   |
+    * | :----: | :-----: | :----: | :------------------------------------: | :------------------------------------: |
+    * | **48** | **48**  |  Yes   | **12** _(-ms-text-combine-horizontal)_ | **11** _(-ms-text-combine-horizontal)_ |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-combine-upright
     */
@@ -3903,10 +3928,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `flat`
     *
-    * |    Chrome    | Firefox  | Safari |  Edge  | IE  |
-    * | :----------: | :------: | :----: | :----: | :-: |
-    * | **12** _-x-_ |  **16**  |  Yes   | **12** | No  |
-    * |              | 10 _-x-_ |        |        |     |
+    * |    Chrome    | Firefox  |   Safari    |  Edge  | IE  |
+    * | :----------: | :------: | :---------: | :----: | :-: |
+    * | **12** _-x-_ |  **16**  | **4** _-x-_ | **12** | No  |
+    * |              | 10 _-x-_ |             |        |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transform-style
     */
@@ -3918,7 +3943,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
     * | :-----: | :-----: | :---------: | :----: | :----: |
-    * | **26**  | **16**  | **3** _-x-_ | **12** | **10** |
+    * | **26**  | **16**  | **4** _-x-_ | **12** | **10** |
     * | 1 _-x-_ | 4 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition-delay
@@ -3929,10 +3954,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `0s`
     *
-    * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
-    * | :-----: | :-----: | :---------: | :----: | :----: |
-    * | **26**  | **16**  | **3** _-x-_ | **12** | **10** |
-    * | 1 _-x-_ | 4 _-x-_ |             |        |        |
+    * | Chrome  | Firefox |    Safari     |  Edge  |   IE   |
+    * | :-----: | :-----: | :-----------: | :----: | :----: |
+    * | **26**  | **16**  | **3.1** _-x-_ | **12** | **10** |
+    * | 1 _-x-_ | 4 _-x-_ |               |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition-duration
     */
@@ -3955,10 +3980,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `ease`
     *
-    * | Chrome | Firefox | Safari |  Edge  |   IE   |
-    * | :----: | :-----: | :----: | :----: | :----: |
-    * | **26** | **16**  |  Yes   | **12** | **10** |
-    * |        | 4 _-x-_ |        |        |        |
+    * | Chrome | Firefox |    Safari     |  Edge  |   IE   |
+    * | :----: | :-----: | :-----------: | :----: | :----: |
+    * | **26** | **16**  | **3.1** _-x-_ | **12** | **10** |
+    * |        | 4 _-x-_ |               |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition-timing-function
     */
@@ -3970,7 +3995,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  Yes   |   n/a   |   No   |  No  | No  |
+    * |   No   |   n/a   |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/translate
     */
@@ -3992,10 +4017,10 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
-    * | Chrome  |   Firefox   |    Safari     |     Edge     |   IE   |
-    * | :-----: | :---------: | :-----------: | :----------: | :----: |
-    * | **54**  | **1** _-x-_ | **3.1** _-x-_ | **12** _-x-_ | **10** |
-    * | 6 _-x-_ |             |               |              |        |
+    * | Chrome  | Firefox |   Safari    |     Edge     |      IE      |
+    * | :-----: | :-----: | :---------: | :----------: | :----------: |
+    * | **54**  | **69**  | **3** _-x-_ | **12** _-x-_ | **10** _-x-_ |
+    * | 6 _-x-_ | 1 _-x-_ |             |              |              |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/user-select
     */
@@ -4041,9 +4066,9 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * **Initial value**: `2`
     *
-    * | Chrome | Firefox | Safari |  Edge  |  IE   |
-    * | :----: | :-----: | :----: | :----: | :---: |
-    * | **25** |   No    |   No   | **12** | **8** |
+    * | Chrome | Firefox | Safari  |  Edge  |  IE   |
+    * | :----: | :-----: | :-----: | :----: | :---: |
+    * | **25** |   No    | **1.3** | **12** | **8** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/widows
     */
@@ -4079,7 +4104,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |   IE    |
     * | :----: | :-----: | :----: | :----: | :-----: |
-    * | **1**  | **15**  |  Yes   | **12** | **5.5** |
+    * | **1**  | **15**  | **3**  | **12** | **5.5** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/word-break
     */
@@ -4103,7 +4128,7 @@ trait StandardLonghandProperties[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari |  Edge  |   IE    |
     * | :----: | :-----: | :----: | :----: | :-----: |
-    * | **1**  | **3.5** | **1**  | **12** | **5.5** |
+    * | **1**  | **3.5** | **2**  | **12** | **5.5** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/overflow-wrap
     */
@@ -4367,9 +4392,7 @@ object StandardLonghandProperties {
     outlineWidth: OutlineWidthProperty[TLength] = null,
     overflow: OverflowProperty = null,
     overflowAnchor: OverflowAnchorProperty = null,
-    overflowBlock: OverflowBlockProperty = null,
     overflowClipBox: OverflowClipBoxProperty = null,
-    overflowInline: OverflowInlineProperty = null,
     overflowWrap: OverflowWrapProperty = null,
     overflowX: OverflowXProperty = null,
     overflowY: OverflowYProperty = null,
@@ -4402,7 +4425,9 @@ object StandardLonghandProperties {
     rowGap: RowGapProperty[TLength] = null,
     rubyAlign: RubyAlignProperty = null,
     rubyMerge: RubyMergeProperty = null,
-    rubyPosition: RubyPositionProperty = null
+    rubyPosition: RubyPositionProperty = null,
+    scale: ScaleProperty = null,
+    scrollBehavior: ScrollBehaviorProperty = null
   ): StandardLonghandProperties[TLength] = {
     val __obj = js.Dynamic.literal()
     if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
@@ -4623,9 +4648,7 @@ object StandardLonghandProperties {
     if (outlineWidth != null) __obj.updateDynamic("outlineWidth")(outlineWidth.asInstanceOf[js.Any])
     if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
     if (overflowAnchor != null) __obj.updateDynamic("overflowAnchor")(overflowAnchor)
-    if (overflowBlock != null) __obj.updateDynamic("overflowBlock")(overflowBlock.asInstanceOf[js.Any])
     if (overflowClipBox != null) __obj.updateDynamic("overflowClipBox")(overflowClipBox)
-    if (overflowInline != null) __obj.updateDynamic("overflowInline")(overflowInline.asInstanceOf[js.Any])
     if (overflowWrap != null) __obj.updateDynamic("overflowWrap")(overflowWrap)
     if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX)
     if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY)
@@ -4659,6 +4682,8 @@ object StandardLonghandProperties {
     if (rubyAlign != null) __obj.updateDynamic("rubyAlign")(rubyAlign)
     if (rubyMerge != null) __obj.updateDynamic("rubyMerge")(rubyMerge)
     if (rubyPosition != null) __obj.updateDynamic("rubyPosition")(rubyPosition)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (scrollBehavior != null) __obj.updateDynamic("scrollBehavior")(scrollBehavior)
     __obj.asInstanceOf[StandardLonghandProperties[TLength]]
   }
 }

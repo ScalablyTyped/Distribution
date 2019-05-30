@@ -103,6 +103,15 @@ object antdDashMobileDashRnLibStrings {
   sealed trait number extends js.Object
   
   @js.native
+  sealed trait onBlur extends js.Object
+  
+  @js.native
+  sealed trait onChange extends js.Object
+  
+  @js.native
+  sealed trait onFocus extends js.Object
+  
+  @js.native
   sealed trait password extends js.Object
   
   @js.native
@@ -235,6 +244,12 @@ object antdDashMobileDashRnLibStrings {
   def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
   @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
+  def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
+  @scala.inline
+  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
+  def onFocus: onFocus = "onFocus".asInstanceOf[onFocus]
   @scala.inline
   def password: password = "password".asInstanceOf[password]
   @scala.inline

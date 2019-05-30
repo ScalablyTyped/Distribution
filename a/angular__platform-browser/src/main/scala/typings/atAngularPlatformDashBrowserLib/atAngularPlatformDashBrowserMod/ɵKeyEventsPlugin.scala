@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/platform-browser", "ɵKeyEventsPlugin")
 @js.native
-class ɵKeyEventsPlugin protected ()
-  extends atAngularPlatformDashBrowserLib.publicUnderscoreApiMod.ɵKeyEventsPlugin {
+class ɵKeyEventsPlugin protected () extends ɵangular_packages_platform_browser_platform_browser_g {
   /**
     * Initializes an instance of the browser plug-in.
     * @param doc The document in which key events will be detected.

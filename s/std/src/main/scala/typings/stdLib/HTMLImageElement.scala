@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLImageElement interface provides special properties and methods  for manipulating the layout and presentation of <img> elements. */
+/** Provides special properties and methods for manipulating <img> elements. */
 @js.native
 trait HTMLImageElement
   extends HTMLElement
@@ -117,6 +117,8 @@ class HTMLImageElementCls () extends HTMLImageElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

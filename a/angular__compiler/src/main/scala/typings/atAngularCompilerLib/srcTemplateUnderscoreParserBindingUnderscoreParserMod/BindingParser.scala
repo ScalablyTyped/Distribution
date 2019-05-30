@@ -36,9 +36,21 @@ class BindingParser protected () extends js.Object {
     java.lang.String, 
     atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompilePipeSummary
   ]) | scala.Null = js.native
+  def calcPossibleSecurityContexts(selector: java.lang.String, propName: java.lang.String, isAttribute: scala.Boolean): js.Array[atAngularCompilerLib.srcCoreMod.SecurityContext] = js.native
   def createBoundElementProperty(
     elementSelector: java.lang.String,
     boundProp: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.ParsedProperty
+  ): atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.BoundElementProperty = js.native
+  def createBoundElementProperty(
+    elementSelector: java.lang.String,
+    boundProp: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.ParsedProperty,
+    skipValidation: scala.Boolean
+  ): atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.BoundElementProperty = js.native
+  def createBoundElementProperty(
+    elementSelector: java.lang.String,
+    boundProp: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.ParsedProperty,
+    skipValidation: scala.Boolean,
+    mapPropertyName: scala.Boolean
   ): atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.BoundElementProperty = js.native
   def createBoundHostProperties(
     dirMeta: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveSummary,
@@ -58,6 +70,7 @@ class BindingParser protected () extends js.Object {
     name: java.lang.String,
     expression: java.lang.String,
     sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
+    handlerSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan,
     targetMatchableAttrs: js.Array[js.Array[java.lang.String]],
     targetEvents: js.Array[atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.ParsedEvent]
   ): scala.Unit = js.native

@@ -43,7 +43,7 @@ trait CreateAssociationRequest extends js.Object {
     */
   var OutputLocation: js.UndefOr[InstanceAssociationOutputLocation] = js.undefined
   /**
-    * The parameters for the runtime configuration of the document. 
+    * The parameters for the runtime configuration of the document.
     */
   var Parameters: js.UndefOr[Parameters] = js.undefined
   /**

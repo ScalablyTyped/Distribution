@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/forms", "NgControlStatus")
 @js.native
-class NgControlStatus protected ()
-  extends atAngularFormsLib.publicUnderscoreApiMod.NgControlStatus {
-  def this(cd: atAngularFormsLib.srcDirectivesNgUnderscoreControlMod.NgControl) = this()
+class NgControlStatus protected () extends ɵangular_packages_forms_forms_g {
+  def this(cd: NgControl) = this()
 }
 

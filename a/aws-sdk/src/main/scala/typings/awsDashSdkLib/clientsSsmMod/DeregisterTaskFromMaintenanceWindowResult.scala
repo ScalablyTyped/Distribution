@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait DeregisterTaskFromMaintenanceWindowResult extends js.Object {
   /**
-    * The ID of the Maintenance Window the task was removed from.
+    * The ID of the maintenance window the task was removed from.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
   /**
-    * The ID of the task removed from the Maintenance Window.
+    * The ID of the task removed from the maintenance window.
     */
   var WindowTaskId: js.UndefOr[MaintenanceWindowTaskId] = js.undefined
 }

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait MaintenanceWindowIdentityForTarget extends js.Object {
   /**
-    * The name of the Maintenance Window.
+    * The name of the maintenance window.
     */
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   /**
-    * The ID of the Maintenance Window.
+    * The ID of the maintenance window.
     */
   var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }

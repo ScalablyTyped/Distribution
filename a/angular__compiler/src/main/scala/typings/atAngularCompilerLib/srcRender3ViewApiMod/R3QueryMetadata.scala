@@ -27,6 +27,20 @@ trait R3QueryMetadata extends js.Object {
     * for a given node is to be returned.
     */
   var read: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | scala.Null
+  /**
+    * Whether or not this query should collect only static results.
+    *
+    * If static is true, the query's results will be set on the component after nodes are created,
+    * but before change detection runs. This means that any results that relied upon change detection
+    * to run (e.g. results inside *ngIf or *ngFor views) will not be collected. Query results are
+    * available in the ngOnInit hook.
+    *
+    * If static is false, the query's results will be set on the component after change detection
+    * runs. This means that the query results can contain nodes inside *ngIf or *ngFor views, but
+    * the results will not be available in the ngOnInit hook (only in the ngAfterContentInit for
+    * content hooks and ngAfterViewInit for view hooks).
+    */
+  var static: scala.Boolean
 }
 
 object R3QueryMetadata {
@@ -36,9 +50,10 @@ object R3QueryMetadata {
     first: scala.Boolean,
     predicate: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression | js.Array[java.lang.String],
     propertyName: java.lang.String,
+    static: scala.Boolean,
     read: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null
   ): R3QueryMetadata = {
-    val __obj = js.Dynamic.literal(descendants = descendants, first = first, predicate = predicate.asInstanceOf[js.Any], propertyName = propertyName)
+    val __obj = js.Dynamic.literal(descendants = descendants, first = first, predicate = predicate.asInstanceOf[js.Any], propertyName = propertyName, static = static)
     if (read != null) __obj.updateDynamic("read")(read)
     __obj.asInstanceOf[R3QueryMetadata]
   }

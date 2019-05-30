@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGViewElement interface provides access to the properties of <view> elements, as well as methods to manipulate them. */
+/** Provides access to the properties of <view> elements, as well as methods to manipulate them. */
 @js.native
 trait SVGViewElement
   extends SVGElement
@@ -40,6 +40,8 @@ trait SVGViewElement
 class SVGViewElementCls () extends SVGViewElement {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

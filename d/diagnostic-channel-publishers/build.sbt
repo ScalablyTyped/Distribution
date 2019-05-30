@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "diagnostic-channel-publishers"
-version := "0.3.0-321250"
+version := "0.3.0-f43356"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "diagnostic-channel" % "0.2.0-e45267",
-  "org.scalablytyped" %%% "std" % "3.4-ef47bb")
+  "org.scalablytyped" %%% "diagnostic-channel" % "0.2.0-01e017",
+  "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

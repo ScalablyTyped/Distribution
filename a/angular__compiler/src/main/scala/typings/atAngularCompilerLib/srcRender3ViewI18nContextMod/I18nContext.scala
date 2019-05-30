@@ -15,10 +15,11 @@ class I18nContext protected () extends js.Object {
   var _registry: js.Any = js.native
   var _unresolvedCtxCount: js.Any = js.native
   var appendTag: js.Any = js.native
-  var bindings: stdLib.Set[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression] = js.native
+  var bindings: stdLib.Set[atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST] = js.native
   val icus: js.Any = js.native
   val id: scala.Double = js.native
   val index: scala.Double = js.native
+  var isEmitted: scala.Boolean = js.native
   val isResolved: scala.Boolean = js.native
   val isRoot: scala.Boolean = js.native
   val level: scala.Double = js.native
@@ -27,7 +28,7 @@ class I18nContext protected () extends js.Object {
   val ref: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr = js.native
   var registry: js.UndefOr[js.Any] = js.native
   val templateIndex: scala.Double | scala.Null = js.native
-  def appendBinding(binding: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression): scala.Unit = js.native
+  def appendBinding(binding: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST): scala.Unit = js.native
   def appendBoundText(node: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST): scala.Unit = js.native
   def appendElement(node: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.AST, index: scala.Double): scala.Unit = js.native
   def appendElement(

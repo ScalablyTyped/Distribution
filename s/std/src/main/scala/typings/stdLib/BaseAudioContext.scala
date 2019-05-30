@@ -87,7 +87,6 @@ trait BaseAudioContext extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
-  def resume(): js.Promise[scala.Unit] = js.native
 }
 
 @JSGlobal("BaseAudioContext")

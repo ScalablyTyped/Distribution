@@ -21,10 +21,10 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
     *
-    * | Chrome | Firefox |   Safari    |  Edge  |   IE   |
-    * | :----: | :-----: | :---------: | :----: | :----: |
-    * | **43** | **16**  | **4** _-x-_ | **12** | **10** |
-    * |        | 5 _-x-_ |             |        |        |
+    * | Chrome  | Firefox |   Safari    |  Edge  |   IE   |
+    * | :-----: | :-----: | :---------: | :----: | :----: |
+    * | **43**  | **16**  | **4** _-x-_ | **12** | **10** |
+    * | 3 _-x-_ | 5 _-x-_ |             |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation
     */
@@ -62,9 +62,9 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`border-block-end`** CSS property is a shorthand property for setting the individual logical block-end border property values in a single place in the style sheet.
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-end
     */
@@ -72,9 +72,9 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`border-block-start`** CSS property is a shorthand property for setting the individual logical block-start border property values in a single place in the style sheet.
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-block-start
     */
@@ -123,9 +123,9 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`border-inline-end`** CSS property is a shorthand property for setting the individual logical inline-end border property values in a single place in the style sheet.
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-end
     */
@@ -133,9 +133,9 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`border-inline-start`** CSS property is a shorthand property for setting the individual logical inline-start border property values in a single place in the style sheet.
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** | **41**  |   No   |  No  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **41**  | **12.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/border-inline-start
     */
@@ -230,7 +230,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * |  Chrome  | Firefox |  Safari   |  Edge  |    IE    |
     * | :------: | :-----: | :-------: | :----: | :------: |
-    * |  **29**  |  20-61  |   **9**   | **12** |  **11**  |
+    * |  **29**  | **20**  |   **9**   | **12** |  **11**  |
     * | 21 _-x-_ |         | 6.1 _-x-_ |        | 10 _-x-_ |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/flex
@@ -266,7 +266,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **63**  |   No   | n/a  | No  |
+    * |   No   | **63**  |   No   | n/a  | No  |
     *
     * ---
     *
@@ -379,7 +379,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * |    Chrome     | Firefox | Safari | Edge | IE  |
     * | :-----------: | :-----: | :----: | :--: | :-: |
-    * |    **55**     |   No    |   No   |  No  | n/a |
+    * |    **55**     |   No    |   No   |  No  | No  |
     * | 46 _(motion)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset
@@ -390,7 +390,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * |    Chrome     | Firefox | Safari | Edge | IE  |
     * | :-----------: | :-----: | :----: | :--: | :-: |
-    * |    **55**     |   No    |   No   |  No  | n/a |
+    * |    **55**     |   No    |   No   |  No  | No  |
     * | 46 _(motion)_ |         |        |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset
@@ -425,7 +425,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |  n/a   | n/a  | n/a |
+    * | **59** | **45**  |  n/a   | n/a  | No  |
     *
     * ---
     *
@@ -433,7 +433,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |  n/a   | n/a  | n/a |
+    * | **59** | **45**  |  n/a   | n/a  | No  |
     *
     * ---
     *
@@ -449,7 +449,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |   No   | n/a  | n/a |
+    * | **59** | **45**  |   No   | n/a  | No  |
     *
     * ---
     *
@@ -457,7 +457,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **59** | **45**  |   No   | n/a  | n/a |
+    * | **59** | **45**  |   No   | n/a  | No  |
     *
     * ---
     *
@@ -487,10 +487,10 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /**
     * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
     *
-    * | Chrome  | Firefox | Safari  |  Edge  |   IE   |
-    * | :-----: | :-----: | :-----: | :----: | :----: |
-    * | **26**  | **16**  | **6.1** | **12** | **10** |
-    * | 1 _-x-_ | 4 _-x-_ | 3 _-x-_ |        |        |
+    * | Chrome  | Firefox |  Safari   |  Edge  |   IE   |
+    * | :-----: | :-----: | :-------: | :----: | :----: |
+    * | **26**  | **16**  |  **6.1**  | **12** | **10** |
+    * | 1 _-x-_ | 4 _-x-_ | 3.1 _-x-_ |        |        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/transition
     */

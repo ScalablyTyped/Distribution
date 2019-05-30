@@ -9,6 +9,7 @@ package object clientsDlmMod {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CopyTags = scala.Boolean
   type Count = scala.Double
+  type ExcludeBootVolume = scala.Boolean
   type ExecutionRoleArn = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
@@ -23,7 +24,13 @@ package object clientsDlmMod {
   type PolicyDescription = java.lang.String
   type PolicyId = java.lang.String
   type PolicyIdList = js.Array[PolicyId]
-  type ResourceTypeValues = awsDashSdkLib.awsDashSdkLibStrings.VOLUME | java.lang.String
+  type PolicyTypeValues = awsDashSdkLib.awsDashSdkLibStrings.EBS_SNAPSHOT_MANAGEMENT | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.VOLUME
+    - awsDashSdkLib.awsDashSdkLibStrings.INSTANCE
+    - java.lang.String
+  */
+  type ResourceTypeValues = _ResourceTypeValues | java.lang.String
   type ResourceTypeValuesList = js.Array[ResourceTypeValues]
   type ScheduleList = js.Array[Schedule]
   type ScheduleName = java.lang.String
@@ -42,6 +49,7 @@ package object clientsDlmMod {
   type Time = java.lang.String
   type TimesList = js.Array[Time]
   type Timestamp = stdLib.Date
+  type VariableTagsList = js.Array[Tag]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2018-01-12`
     - awsDashSdkLib.awsDashSdkLibStrings.latest

@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@angular/common", "CommonModule")
 @js.native
-class CommonModule ()
-  extends atAngularCommonLib.publicUnderscoreApiMod.CommonModule
+class CommonModule () extends js.Object
 

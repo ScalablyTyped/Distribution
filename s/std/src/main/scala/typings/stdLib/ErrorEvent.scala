@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The ErrorEvent interface represents events providing information related to errors in scripts or in files. */
+/** Events providing information related to errors in scripts or in files. */
 @js.native
 trait ErrorEvent extends Event {
   val colno: scala.Double = js.native

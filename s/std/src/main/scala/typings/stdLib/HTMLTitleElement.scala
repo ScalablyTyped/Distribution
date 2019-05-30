@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The HTMLTitleElement interface contains the title for a document. This element inherits all of the properties and methods of the HTMLElement interface. */
+/** Contains the title for a document. This element inherits all of the properties and methods of the HTMLElement interface. */
 @js.native
 trait HTMLTitleElement extends HTMLElement {
   /**
@@ -21,6 +21,8 @@ class HTMLTitleElementCls () extends HTMLTitleElement {
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
   /* CompleteClass */
   override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /* CompleteClass */
   override var inputMode: java.lang.String = js.native
   /* CompleteClass */

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** The SVGAnimatedLengthList interface is used for attributes of type SVGLengthList which can be animated. */
+/** Used for attributes of type SVGLengthList which can be animated. */
 trait SVGAnimatedLengthList extends js.Object {
   val animVal: SVGLengthList
   val baseVal: SVGLengthList

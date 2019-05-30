@@ -1224,6 +1224,7 @@ object RNFirebaseNs extends js.Object {
       def get(
         options: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.GetOptions
       ): js.Promise[QuerySnapshot] = js.native
+      def isEqual(otherQuery: Query): scala.Boolean = js.native
       def limit(limit: scala.Double): Query = js.native
       def onSnapshot(
         metadataChanges: MetadataChanges,

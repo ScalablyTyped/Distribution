@@ -12,6 +12,7 @@ trait Element
      with ParentNode
      with NonDocumentTypeChildNode
      with Slotable
+     with InnerHTML
      with Animatable {
   val attributes: NamedNodeMap = js.native
   /**
@@ -33,7 +34,6 @@ trait Element
     * change it.
     */
   var id: java.lang.String = js.native
-  var innerHTML: java.lang.String = js.native
   /**
     * Returns the local name.
     */
@@ -935,6 +935,8 @@ trait Element
 class ElementCls () extends Element {
   /* CompleteClass */
   override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var innerHTML: java.lang.String = js.native
   /**
     * Returns the first following sibling that
     * is an element, and null otherwise.

@@ -269,6 +269,7 @@ package object clientsEc2Mod {
     - java.lang.String
   */
   type ConversionTaskState = _ConversionTaskState | java.lang.String
+  type CopyTagsFromSource = awsDashSdkLib.awsDashSdkLibStrings.volume | java.lang.String
   type CreateFleetErrorsSet = js.Array[CreateFleetError]
   type CreateFleetInstancesSet = js.Array[CreateFleetInstance]
   type CreateVolumePermissionList = js.Array[CreateVolumePermission]
@@ -1280,6 +1281,7 @@ package object clientsEc2Mod {
   type SnapshotDetailList = js.Array[SnapshotDetail]
   type SnapshotIdStringList = js.Array[String]
   type SnapshotList = js.Array[Snapshot]
+  type SnapshotSet = js.Array[SnapshotInfo]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.pending
     - awsDashSdkLib.awsDashSdkLibStrings.completed

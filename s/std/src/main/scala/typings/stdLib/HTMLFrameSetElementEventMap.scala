@@ -18,7 +18,7 @@ object HTMLFrameSetElementEventMap {
     animationend: AnimationEvent,
     animationiteration: AnimationEvent,
     animationstart: AnimationEvent,
-    auxclick: Event,
+    auxclick: MouseEvent,
     beforeprint: Event,
     beforeunload: BeforeUnloadEvent,
     blur: FocusEvent,

@@ -23,7 +23,7 @@ trait InstanceAssociationStatusInfo extends js.Object {
     */
   var DetailedStatus: js.UndefOr[StatusName] = js.undefined
   /**
-    * The association document verions.
+    * The association document versions.
     */
   var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
   /**

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait UpdateMaintenanceWindowRequest extends js.Object {
   /**
-    * Whether targets must be registered with the Maintenance Window before tasks can be defined for those targets.
+    * Whether targets must be registered with the maintenance window before tasks can be defined for those targets.
     */
   var AllowUnassociatedTargets: js.UndefOr[MaintenanceWindowAllowUnassociatedTargets] = js.undefined
   /**
-    * The number of hours before the end of the Maintenance Window that Systems Manager stops scheduling new tasks for execution.
+    * The number of hours before the end of the maintenance window that Systems Manager stops scheduling new tasks for execution.
     */
   var Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.undefined
   /**
@@ -19,19 +19,19 @@ trait UpdateMaintenanceWindowRequest extends js.Object {
     */
   var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   /**
-    * The duration of the Maintenance Window in hours.
+    * The duration of the maintenance window in hours.
     */
   var Duration: js.UndefOr[MaintenanceWindowDurationHours] = js.undefined
   /**
-    * Whether the Maintenance Window is enabled.
+    * Whether the maintenance window is enabled.
     */
   var Enabled: js.UndefOr[MaintenanceWindowEnabled] = js.undefined
   /**
-    * The date and time, in ISO-8601 Extended format, for when you want the Maintenance Window to become inactive. EndDate allows you to set a date and time in the future when the Maintenance Window will no longer run.
+    * The date and time, in ISO-8601 Extended format, for when you want the maintenance window to become inactive. EndDate allows you to set a date and time in the future when the maintenance window will no longer run.
     */
   var EndDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   /**
-    * The name of the Maintenance Window.
+    * The name of the maintenance window.
     */
   var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   /**
@@ -39,19 +39,19 @@ trait UpdateMaintenanceWindowRequest extends js.Object {
     */
   var Replace: js.UndefOr[Boolean] = js.undefined
   /**
-    * The schedule of the Maintenance Window in the form of a cron or rate expression.
+    * The schedule of the maintenance window in the form of a cron or rate expression.
     */
   var Schedule: js.UndefOr[MaintenanceWindowSchedule] = js.undefined
   /**
-    * The time zone that the scheduled Maintenance Window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
+    * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
     */
   var ScheduleTimezone: js.UndefOr[MaintenanceWindowTimezone] = js.undefined
   /**
-    * The time zone that the scheduled Maintenance Window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
+    * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
     */
   var StartDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   /**
-    * The ID of the Maintenance Window to update.
+    * The ID of the maintenance window to update.
     */
   var WindowId: MaintenanceWindowId
 }

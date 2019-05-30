@@ -42,6 +42,10 @@ abstract class ServeCLI[T /* <: ServeCLIOptions */] protected ()
     * Build the arguments for starting this Serve CLI. Called by `this.start()`.
     */
   /* protected */ def buildArgs(options: T): js.Promise[js.Array[java.lang.String]] = js.native
+  /**
+    * Build the environment variables to be passed to the Serve CLI. Called by `this.start()`;
+    */
+  /* protected */ def buildEnvVars(options: T): js.Promise[nodeLib.NodeJSNs.ProcessEnv] = js.native
   /* protected */ def createLoggerStream(): nodeLib.NodeJSNs.WritableStream = js.native
   /* protected */ def createStreamFilter(filter: js.Function1[/* line */ java.lang.String, scala.Boolean]): nodeLib.streamMod.Transform = js.native
   @JSName("emit")

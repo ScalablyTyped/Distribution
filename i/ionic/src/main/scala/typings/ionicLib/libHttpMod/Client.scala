@@ -13,7 +13,7 @@ class Client protected ()
   /* CompleteClass */
   override var config: ionicLib.definitionsMod.IConfig = js.native
   /* CompleteClass */
-  override def `do`(req: superagentLib.superagentMod.SuperAgentRequest): js.Promise[ionicLib.definitionsMod.APIResponseSuccess] = js.native
+  override def `do`(req: ionicLib.definitionsMod.SuperAgentRequest): js.Promise[ionicLib.definitionsMod.APIResponseSuccess] = js.native
   /* CompleteClass */
   override def make(method: ionicLib.definitionsMod.HttpMethod, path: java.lang.String): js.Promise[ionicLib.Anon_Req] = js.native
   /* CompleteClass */

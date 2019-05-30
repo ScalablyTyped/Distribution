@@ -16,6 +16,10 @@ object TokenType extends js.Object {
     extends atAngularCompilerLib.srcMlUnderscoreParserLexerMod.TokenType
   
   @js.native
+  sealed trait ATTR_QUOTE
+    extends atAngularCompilerLib.srcMlUnderscoreParserLexerMod.TokenType
+  
+  @js.native
   sealed trait ATTR_VALUE
     extends atAngularCompilerLib.srcMlUnderscoreParserLexerMod.TokenType
   
@@ -92,19 +96,20 @@ object TokenType extends js.Object {
     extends atAngularCompilerLib.srcMlUnderscoreParserLexerMod.TokenType
   
   /* 11 */ val ATTR_NAME: ATTR_NAME with scala.Double = js.native
-  /* 12 */ val ATTR_VALUE: ATTR_VALUE with scala.Double = js.native
+  /* 12 */ val ATTR_QUOTE: ATTR_QUOTE with scala.Double = js.native
+  /* 13 */ val ATTR_VALUE: ATTR_VALUE with scala.Double = js.native
   /* 10 */ val CDATA_END: CDATA_END with scala.Double = js.native
   /* 9 */ val CDATA_START: CDATA_START with scala.Double = js.native
   /* 8 */ val COMMENT_END: COMMENT_END with scala.Double = js.native
   /* 7 */ val COMMENT_START: COMMENT_START with scala.Double = js.native
-  /* 13 */ val DOC_TYPE: DOC_TYPE with scala.Double = js.native
-  /* 19 */ val EOF: EOF with scala.Double = js.native
+  /* 14 */ val DOC_TYPE: DOC_TYPE with scala.Double = js.native
+  /* 20 */ val EOF: EOF with scala.Double = js.native
   /* 5 */ val ESCAPABLE_RAW_TEXT: ESCAPABLE_RAW_TEXT with scala.Double = js.native
-  /* 17 */ val EXPANSION_CASE_EXP_END: EXPANSION_CASE_EXP_END with scala.Double = js.native
-  /* 16 */ val EXPANSION_CASE_EXP_START: EXPANSION_CASE_EXP_START with scala.Double = js.native
-  /* 15 */ val EXPANSION_CASE_VALUE: EXPANSION_CASE_VALUE with scala.Double = js.native
-  /* 18 */ val EXPANSION_FORM_END: EXPANSION_FORM_END with scala.Double = js.native
-  /* 14 */ val EXPANSION_FORM_START: EXPANSION_FORM_START with scala.Double = js.native
+  /* 18 */ val EXPANSION_CASE_EXP_END: EXPANSION_CASE_EXP_END with scala.Double = js.native
+  /* 17 */ val EXPANSION_CASE_EXP_START: EXPANSION_CASE_EXP_START with scala.Double = js.native
+  /* 16 */ val EXPANSION_CASE_VALUE: EXPANSION_CASE_VALUE with scala.Double = js.native
+  /* 19 */ val EXPANSION_FORM_END: EXPANSION_FORM_END with scala.Double = js.native
+  /* 15 */ val EXPANSION_FORM_START: EXPANSION_FORM_START with scala.Double = js.native
   /* 6 */ val RAW_TEXT: RAW_TEXT with scala.Double = js.native
   /* 3 */ val TAG_CLOSE: TAG_CLOSE with scala.Double = js.native
   /* 1 */ val TAG_OPEN_END: TAG_OPEN_END with scala.Double = js.native
