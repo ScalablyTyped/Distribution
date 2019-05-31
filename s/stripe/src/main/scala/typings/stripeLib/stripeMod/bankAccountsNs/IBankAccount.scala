@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IBankAccount extends IBankAccountHash {
+trait IBankAccount
+  extends IBankAccountHash
+     with stripeLib.stripeMod.IStripeSource {
   var account: js.UndefOr[java.lang.String] = js.undefined
   /**
     * This indicates whether or not this bank account is the default external account for its currency.

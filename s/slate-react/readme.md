@@ -1,7 +1,7 @@
 
 # Scala.js typings for slate-react
 
-Typings are for version 0.21
+Typings are for version 0.22
 
 ## Library description:
 A set of React components for building completely customizable rich-text editors.
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for slate-react 0.21
+// Type definitions for slate-react 0.22
 // Project: https://github.com/ianstormtaylor/slate
 // Definitions by: Andy Kent <https://github.com/andykent>
 //                 Jamie Talbot <https://github.com/majelbstoat>

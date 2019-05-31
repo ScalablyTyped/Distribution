@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "elasticsearch"
-version := "5.0-dt-20190314Z-d30a28"
+version := "5.0-dt-20190530Z-77af7f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -214,6 +214,9 @@ object xtermLibStrings {
   @js.native
   sealed trait visualBell extends js.Object
   
+  @js.native
+  sealed trait windowsMode extends js.Object
+  
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]
   @scala.inline
@@ -344,5 +347,7 @@ object xtermLibStrings {
   def visual: visual = "visual".asInstanceOf[visual]
   @scala.inline
   def visualBell: visualBell = "visualBell".asInstanceOf[visualBell]
+  @scala.inline
+  def windowsMode: windowsMode = "windowsMode".asInstanceOf[windowsMode]
 }
 

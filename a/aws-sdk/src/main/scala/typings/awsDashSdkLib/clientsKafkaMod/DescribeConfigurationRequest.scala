@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait DescribeConfigurationRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) that uniquely identifies an MSK configuration and all of its revisions.
+    * 
+    The Amazon Resource Name (ARN) that uniquely identifies an MSK configuration and all of its revisions.
+    
     */
   var Arn: __string
 }

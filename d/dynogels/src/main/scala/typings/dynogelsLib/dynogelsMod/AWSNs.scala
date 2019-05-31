@@ -911,6 +911,24 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class IoTEvents ()
+    extends awsDashSdkLib.awsDashSdkMod.IoTEvents {
+    def this(options: awsDashSdkLib.clientsIoteventsMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
+  class IoTEventsData ()
+    extends awsDashSdkLib.awsDashSdkMod.IoTEventsData {
+    def this(options: awsDashSdkLib.clientsIoteventsdataMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class IoTJobsDataPlane ()
     extends awsDashSdkLib.awsDashSdkMod.IoTJobsDataPlane {
     def this(options: awsDashSdkLib.clientsIotjobsdataplaneMod.ClientConfiguration) = this()

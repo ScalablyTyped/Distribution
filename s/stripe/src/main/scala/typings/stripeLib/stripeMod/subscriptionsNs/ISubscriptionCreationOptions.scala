@@ -28,7 +28,7 @@ object ISubscriptionCreationOptions {
     plan: java.lang.String = null,
     prorate: js.UndefOr[scala.Boolean] = js.undefined,
     quantity: scala.Int | scala.Double = null,
-    source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions = null,
+    source: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions = null,
     tax_percent: scala.Int | scala.Double = null,
     trial_end: scala.Double | stripeLib.stripeLibStrings.now = null,
     trial_from_plan: js.UndefOr[scala.Boolean] = js.undefined,

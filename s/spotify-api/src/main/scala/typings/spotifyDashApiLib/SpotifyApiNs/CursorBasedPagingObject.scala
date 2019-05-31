@@ -15,7 +15,7 @@ trait CursorBasedPagingObject[T] extends js.Object {
   var items: js.Array[T]
   var limit: scala.Double
   var next: java.lang.String
-  var total: scala.Double
+  var total: js.UndefOr[scala.Double] = js.undefined
 }
 
 object CursorBasedPagingObject {
@@ -26,10 +26,10 @@ object CursorBasedPagingObject {
     items: js.Array[T],
     limit: scala.Double,
     next: java.lang.String,
-    total: scala.Double
+    total: scala.Int | scala.Double = null
   ): CursorBasedPagingObject[T] = {
-    val __obj = js.Dynamic.literal(cursors = cursors, href = href, items = items, limit = limit, next = next, total = total)
-  
+    val __obj = js.Dynamic.literal(cursors = cursors, href = href, items = items, limit = limit, next = next)
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorBasedPagingObject[T]]
   }
 }

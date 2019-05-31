@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xterm"
-version := "3.13.2-06cf97"
+version := "3.14.0-dfd50a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Configuration of a columns footer section */
-trait FooterProps[D] extends js.Object {
+trait FooterProps extends js.Object {
   /**
     * Default: undefined
     * A function that returns a primitive, or JSX / React Component
@@ -14,7 +14,7 @@ trait FooterProps[D] extends js.Object {
     * @example 'Footer Name'
     * @example ({data, column}) => <div>Footer Name</div>,
     */
-  var Footer: reactDashTableLib.reactDashTableMod.TableCellRenderer[D]
+  var Footer: reactDashTableLib.reactDashTableMod.TableCellRenderer
   /**
     * Default: string
     * Set the classname of the `td` element of the column's footer
@@ -34,15 +34,15 @@ trait FooterProps[D] extends js.Object {
 
 object FooterProps {
   @scala.inline
-  def apply[D](
-    Footer: reactDashTableLib.reactDashTableMod.TableCellRenderer[D],
+  def apply(
+    Footer: reactDashTableLib.reactDashTableMod.TableCellRenderer,
     footerClassName: java.lang.String,
     footerStyle: js.Object,
     getFooterProps: reactDashTableLib.reactDashTableMod.ReactTableFunction
-  ): FooterProps[D] = {
+  ): FooterProps = {
     val __obj = js.Dynamic.literal(Footer = Footer.asInstanceOf[js.Any], footerClassName = footerClassName, footerStyle = footerStyle, getFooterProps = getFooterProps)
   
-    __obj.asInstanceOf[FooterProps[D]]
+    __obj.asInstanceOf[FooterProps]
   }
 }
 

@@ -2314,6 +2314,29 @@ trait RDS
     ]
   ): awsDashSdkLib.libRequestMod.Request[RevokeDBSecurityGroupIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Starts a database activity stream to monitor activity on the database. For more information, see Database Activity Streams in the Amazon Aurora User Guide.
+    */
+  def startActivityStream(): awsDashSdkLib.libRequestMod.Request[StartActivityStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def startActivityStream(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StartActivityStreamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StartActivityStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Starts a database activity stream to monitor activity on the database. For more information, see Database Activity Streams in the Amazon Aurora User Guide.
+    */
+  def startActivityStream(params: StartActivityStreamRequest): awsDashSdkLib.libRequestMod.Request[StartActivityStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def startActivityStream(
+    params: StartActivityStreamRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StartActivityStreamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StartActivityStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Starts an Amazon Aurora DB cluster that was stopped using the AWS console, the stop-db-cluster AWS CLI command, or the StopDBCluster action. For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */
   def startDBCluster(): awsDashSdkLib.libRequestMod.Request[StartDBClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2359,6 +2382,29 @@ trait RDS
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[StartDBInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Stops a database activity stream that was started using the AWS console, the start-activity-stream AWS CLI command, or the StartActivityStream action. For more information, see Database Activity Streams in the Amazon Aurora User Guide.
+    */
+  def stopActivityStream(): awsDashSdkLib.libRequestMod.Request[StopActivityStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def stopActivityStream(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StopActivityStreamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StopActivityStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Stops a database activity stream that was started using the AWS console, the start-activity-stream AWS CLI command, or the StartActivityStream action. For more information, see Database Activity Streams in the Amazon Aurora User Guide.
+    */
+  def stopActivityStream(params: StopActivityStreamRequest): awsDashSdkLib.libRequestMod.Request[StopActivityStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def stopActivityStream(
+    params: StopActivityStreamRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ StopActivityStreamResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[StopActivityStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     *  Stops an Amazon Aurora DB cluster. When you stop a DB cluster, Aurora retains the DB cluster's metadata, including its endpoints and DB parameter groups. Aurora also retains the transaction logs so you can do a point-in-time restore if necessary.  For more information, see  Stopping and Starting an Aurora Cluster in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. 
     */

@@ -7,27 +7,39 @@ import scala.scalajs.js.annotation._
 
 trait DescribeConfigurationResponse extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the configuration.
+    * 
+    The Amazon Resource Name (ARN) of the configuration.
+    
     */
   var Arn: js.UndefOr[__string] = js.undefined
   /**
-    * The time when the configuration was created.
+    * 
+    The time when the configuration was created.
+    
     */
   var CreationTime: js.UndefOr[__timestampIso8601] = js.undefined
   /**
-    * The description of the configuration.
+    * 
+    The description of the configuration.
+    
     */
   var Description: js.UndefOr[__string] = js.undefined
   /**
-    * The versions of Apache Kafka with which you can use this MSK configuration.
+    * 
+    The versions of Apache Kafka with which you can use this MSK configuration.
+    
     */
   var KafkaVersions: js.UndefOr[__listOf__string] = js.undefined
   /**
-    * Latest revision of the configuration.
+    * 
+    Latest revision of the configuration.
+    
     */
   var LatestRevision: js.UndefOr[ConfigurationRevision] = js.undefined
   /**
-    * The name of the configuration.
+    * 
+    The name of the configuration.
+    
     */
   var Name: js.UndefOr[__string] = js.undefined
 }

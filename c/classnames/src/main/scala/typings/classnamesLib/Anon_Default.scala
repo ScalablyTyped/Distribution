@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Anon_Default extends js.Object {
   @JSName("default")
   var default_Original: classnamesLib.classnamesMod.ClassNamesFn = js.native
-  def default(classes: classnamesLib.classnamesMod.ClassValue*): java.lang.String = js.native
+  def default(classes: classnamesLib.typesMod.ClassValue*): java.lang.String = js.native
 }
 

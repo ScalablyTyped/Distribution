@@ -7,24 +7,34 @@ import scala.scalajs.js.annotation._
 
 trait BrokerNodeGroupInfo extends js.Object {
   /**
-    * The distribution of broker nodes across Availability Zones.
+    * 
+    The distribution of broker nodes across Availability Zones.
+    
     */
   var BrokerAZDistribution: js.UndefOr[BrokerAZDistribution] = js.undefined
   /**
-    * The list of subnets to connect to in the client virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets. Client applications use elastic network interfaces to produce and consume data. Client subnets can't be in Availability Zone us-east-1e.
+    * 
+    The list of subnets to connect to in the client virtual private cloud (VPC). AWS creates elastic network interfaces inside these subnets. Client applications use elastic network interfaces to produce and consume data. Client subnets can't be in Availability Zone us-east-1e.
+    
     */
   var ClientSubnets: __listOf__string
   /**
-    * The type of Amazon EC2 instances to use for Kafka brokers. The following instance types are allowed: kafka.m5.large, kafka.m5.xlarge, kafka.m5.2xlarge,
+    * 
+    The type of Amazon EC2 instances to use for Kafka brokers. The following instance types are allowed: kafka.m5.large, kafka.m5.xlarge, kafka.m5.2xlarge,
   kafka.m5.4xlarge, kafka.m5.12xlarge, and kafka.m5.24xlarge.
+    
     */
   var InstanceType: __stringMin5Max32
   /**
-    * The AWS security groups to associate with the elastic network interfaces in order to specify who can connect to and communicate with the Amazon MSK cluster.
+    * 
+    The AWS security groups to associate with the elastic network interfaces in order to specify who can connect to and communicate with the Amazon MSK cluster. If you don't specify a security group, Amazon MSK uses the default security group associated with the VPC.
+    
     */
   var SecurityGroups: js.UndefOr[__listOf__string] = js.undefined
   /**
-    * Contains information about storage volumes attached to MSK broker nodes.
+    * 
+    Contains information about storage volumes attached to MSK broker nodes.
+    
     */
   var StorageInfo: js.UndefOr[StorageInfo] = js.undefined
 }

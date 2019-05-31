@@ -7,15 +7,21 @@ import scala.scalajs.js.annotation._
 
 trait BrokerSoftwareInfo extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the configuration used for the cluster.
+    * 
+    The Amazon Resource Name (ARN) of the configuration used for the cluster. This field isn't visible in this preview release.
+    
     */
   var ConfigurationArn: js.UndefOr[__string] = js.undefined
   /**
-    * The revision of the configuration to use.
+    * 
+    The revision of the configuration to use. This field isn't visible in this preview release.
+    
     */
   var ConfigurationRevision: js.UndefOr[__long] = js.undefined
   /**
-    * The version of Apache Kafka.
+    * 
+    The version of Apache Kafka.
+    
     */
   var KafkaVersion: js.UndefOr[__string] = js.undefined
 }

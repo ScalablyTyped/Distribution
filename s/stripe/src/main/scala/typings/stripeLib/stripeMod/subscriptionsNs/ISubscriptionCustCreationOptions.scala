@@ -55,7 +55,7 @@ trait ISubscriptionCustCreationOptions
     * the quantity attribute and will default to 1 unless you pass a quantity parameter.
     */
   var quantity: js.UndefOr[scala.Double] = js.undefined
-  var source: js.UndefOr[stripeLib.stripeMod.sourcesNs.ISourceCreationOptions] = js.undefined
+  var source: js.UndefOr[java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions] = js.undefined
   /**
     * A positive decimal (with at most two decimal places) between 1 and 100. This represents the percentage of the subscription invoice
     * subtotal that will be calculated and added as tax to the final amount each billing period. For example, a plan which charges $10/month
@@ -94,7 +94,7 @@ object ISubscriptionCustCreationOptions {
     plan: java.lang.String = null,
     prorate: js.UndefOr[scala.Boolean] = js.undefined,
     quantity: scala.Int | scala.Double = null,
-    source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions = null,
+    source: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions = null,
     tax_percent: scala.Int | scala.Double = null,
     trial_end: scala.Double | stripeLib.stripeLibStrings.now = null,
     trial_from_plan: js.UndefOr[scala.Boolean] = js.undefined,

@@ -25,8 +25,8 @@ object ^ extends js.Object {
   def open(port: scala.Double, host: java.lang.String): scala.Unit = js.native
   def open(port: scala.Double, host: java.lang.String, wait: scala.Boolean): scala.Unit = js.native
   /**
-    * Return the URL of the active inspector, or undefined if there is none.
+    * Return the URL of the active inspector, or `undefined` if there is none.
     */
-  def url(): java.lang.String = js.native
+  def url(): js.UndefOr[java.lang.String] = js.native
 }
 

@@ -7,20 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait CreateConfigurationRequest extends js.Object {
   /**
-    * The description of the configuration.
+    * 
+    The description of the configuration.
+    
     */
   var Description: js.UndefOr[__string] = js.undefined
   /**
-    * The versions of Apache Kafka with which you can use this MSK configuration.
+    * 
+    The versions of Apache Kafka with which you can use this MSK configuration.
+    
     */
   var KafkaVersions: __listOf__string
   /**
-    * The name of the configuration.
+    * 
+    The name of the configuration.
+    
     */
   var Name: __string
   /**
-    * Contents of the server.properties file. When using the API, you must ensure that the contents of the file are base64 encoded. 
+    * 
+    Contents of the server.properties file. When using the API, you must ensure that the contents of the file are base64 encoded. 
     When using the AWS Management Console, the SDK, or the AWS CLI, the contents of server.properties can be in plaintext.
+    
     */
   var ServerProperties: __blob
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Store[Q /* <: BaseQuad */]
-  extends Source[Quad]
-     with Sink[Quad] {
+  extends Source[Q]
+     with Sink[Q] {
   def deleteGraph(graph: java.lang.String): nodeLib.eventsMod.EventEmitter = js.native
   /**
     * Deletes the given named graph.

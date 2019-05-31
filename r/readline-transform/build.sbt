@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "readline-transform"
-version := "0.9-dt-20181011Z-f18af9"
+version := "0.9-dt-20181011Z-5ac150"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-2c614a",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

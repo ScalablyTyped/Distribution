@@ -142,7 +142,7 @@ trait ICharge
     * For most Stripe users, the source of every charge is a credit or debit card.
     * This hash is then the card object describing that card.
     */
-  var source: stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount
+  var source: stripeLib.stripeMod.IStripeSource
   /**
     * The transfer ID which created this charge. Only present if the charge came
     * from another Stripe account. See the Connect documentation for details.
@@ -190,7 +190,7 @@ object ICharge {
     receipt_url: java.lang.String,
     refunded: scala.Boolean,
     refunds: IChargeRefunds,
-    source: stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount,
+    source: stripeLib.stripeMod.IStripeSource,
     status: stripeLib.stripeLibStrings.succeeded | stripeLib.stripeLibStrings.pending | stripeLib.stripeLibStrings.failed,
     application: java.lang.String | stripeLib.stripeMod.applicationsNs.IApplication = null,
     application_fee: java.lang.String | stripeLib.stripeMod.applicationFeesNs.IApplicationFee = null,
@@ -213,7 +213,7 @@ object ICharge {
     transfer: java.lang.String | stripeLib.stripeMod.transfersNs.ITransfer = null,
     transfer_group: java.lang.String = null
   ): ICharge = {
-    val __obj = js.Dynamic.literal(amount = amount, amount_refunded = amount_refunded, balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured, created = created, currency = currency, fraud_details = fraud_details, id = id, livemode = livemode, metadata = metadata, paid = paid, receipt_url = receipt_url, refunded = refunded, refunds = refunds, source = source.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, amount_refunded = amount_refunded, balance_transaction = balance_transaction.asInstanceOf[js.Any], captured = captured, created = created, currency = currency, fraud_details = fraud_details, id = id, livemode = livemode, metadata = metadata, paid = paid, receipt_url = receipt_url, refunded = refunded, refunds = refunds, source = source, status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
     if (application != null) __obj.updateDynamic("application")(application.asInstanceOf[js.Any])
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])

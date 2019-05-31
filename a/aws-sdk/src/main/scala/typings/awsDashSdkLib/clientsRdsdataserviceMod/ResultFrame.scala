@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ResultFrame extends js.Object {
   /**
-    * ResultSet Metadata.
+    * The records in the result set.
     */
   var records: js.UndefOr[Records] = js.undefined
   /**
-    * ResultSet Metadata.
+    * The result-set metadata in the result set.
     */
   var resultSetMetadata: js.UndefOr[ResultSetMetadata] = js.undefined
 }

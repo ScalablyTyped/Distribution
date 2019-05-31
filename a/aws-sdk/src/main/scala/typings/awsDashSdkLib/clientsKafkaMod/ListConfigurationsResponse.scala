@@ -7,12 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait ListConfigurationsResponse extends js.Object {
   /**
-    * An array of MSK configurations.
+    * 
+    An array of MSK configurations.
+    
     */
   var Configurations: js.UndefOr[__listOfConfiguration] = js.undefined
   /**
-    * The paginated results marker. When the result of a ListConfigurations operation is truncated, the call returns NextToken in the response. 
+    * 
+    The paginated results marker. When the result of a ListConfigurations operation is truncated, the call returns NextToken in the response. 
     To get another batch of configurations, provide this token in your next request.
+    
     */
   var NextToken: js.UndefOr[__string] = js.undefined
 }

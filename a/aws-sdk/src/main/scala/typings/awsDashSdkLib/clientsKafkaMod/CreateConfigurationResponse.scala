@@ -7,19 +7,27 @@ import scala.scalajs.js.annotation._
 
 trait CreateConfigurationResponse extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the configuration.
+    * 
+    The Amazon Resource Name (ARN) of the configuration.
+    
     */
   var Arn: js.UndefOr[__string] = js.undefined
   /**
-    * The time when the configuration was created.
+    * 
+    The time when the configuration was created.
+    
     */
   var CreationTime: js.UndefOr[__timestampIso8601] = js.undefined
   /**
-    * Latest revision of the configuration.
+    * 
+    Latest revision of the configuration.
+    
     */
   var LatestRevision: js.UndefOr[ConfigurationRevision] = js.undefined
   /**
-    * The name of the configuration.
+    * 
+    The name of the configuration.
+    
     */
   var Name: js.UndefOr[__string] = js.undefined
 }

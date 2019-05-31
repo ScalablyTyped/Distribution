@@ -7,10 +7,18 @@ import scala.scalajs.js.annotation._
 
 package object clientsKafkaMod {
   type BrokerAZDistribution = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TLS
+    - awsDashSdkLib.awsDashSdkLibStrings.TLS_PLAINTEXT
+    - awsDashSdkLib.awsDashSdkLibStrings.PLAINTEXT
+    - java.lang.String
+  */
+  type ClientBroker = _ClientBroker | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
     - awsDashSdkLib.awsDashSdkLibStrings.CREATING
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
     - awsDashSdkLib.awsDashSdkLibStrings.DELETING
     - awsDashSdkLib.awsDashSdkLibStrings.FAILED
     - java.lang.String
@@ -26,12 +34,16 @@ package object clientsKafkaMod {
   type MaxResults = scala.Double
   type NodeType = awsDashSdkLib.awsDashSdkLibStrings.BROKER | java.lang.String
   type __blob = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String
+  type __boolean = scala.Boolean
   type __double = scala.Double
   type __integer = scala.Double
   type __integerMin1Max15 = scala.Double
   type __integerMin1Max16384 = scala.Double
+  type __listOfBrokerEBSVolumeInfo = js.Array[BrokerEBSVolumeInfo]
   type __listOfClusterInfo = js.Array[ClusterInfo]
+  type __listOfClusterOperationInfo = js.Array[ClusterOperationInfo]
   type __listOfConfiguration = js.Array[Configuration]
+  type __listOfConfigurationRevision = js.Array[ConfigurationRevision]
   type __listOfNodeInfo = js.Array[NodeInfo]
   type __listOf__string = js.Array[__string]
   type __long = scala.Double

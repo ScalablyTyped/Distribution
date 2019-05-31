@@ -55,11 +55,23 @@ object stripeLibStrings {
   sealed trait Visa extends js.Object
   
   @js.native
+  sealed trait accepted extends js.Object
+  
+  @js.native
+  sealed trait ach_credit_transfer extends js.Object
+  
+  @js.native
+  sealed trait ach_debit extends js.Object
+  
+  @js.native
   sealed trait active
     extends stripeLib.stripeMod.subscriptionsNs.SubscriptionStatus
   
   @js.native
   sealed trait adjustment extends js.Object
+  
+  @js.native
+  sealed trait alipay extends js.Object
   
   @js.native
   sealed trait alipay_account
@@ -103,6 +115,12 @@ object stripeLibStrings {
   sealed trait automatic extends js.Object
   
   @js.native
+  sealed trait available extends js.Object
+  
+  @js.native
+  sealed trait bancontact extends js.Object
+  
+  @js.native
   sealed trait bank_account
     extends stripeLib.stripeMod.payoutsNs.PayoutTypes
        with stripeLib.stripeMod.transfersNs.SourceTypes
@@ -140,6 +158,9 @@ object stripeLibStrings {
     extends stripeLib.stripeMod.errorsNs.RawType
   
   @js.native
+  sealed trait card_present extends js.Object
+  
+  @js.native
   sealed trait charge extends js.Object
   
   @js.native
@@ -150,7 +171,16 @@ object stripeLibStrings {
   sealed trait charge_refunded extends js.Object
   
   @js.native
+  sealed trait chargeable extends js.Object
+  
+  @js.native
+  sealed trait code_verification extends js.Object
+  
+  @js.native
   sealed trait company extends js.Object
+  
+  @js.native
+  sealed trait consumed extends js.Object
   
   @js.native
   sealed trait country_spec extends js.Object
@@ -188,6 +218,9 @@ object stripeLibStrings {
   sealed trait debit_not_authorized extends js.Object
   
   @js.native
+  sealed trait declined extends js.Object
+  
+  @js.native
   sealed trait declined_by_network extends js.Object
   
   @js.native
@@ -214,7 +247,13 @@ object stripeLibStrings {
     extends stripeLib.stripeMod.paymentIntentsNs.PaymentIntentCancelationReason
   
   @js.native
+  sealed trait email extends js.Object
+  
+  @js.native
   sealed trait ephemeral_key extends js.Object
+  
+  @js.native
+  sealed trait eps extends js.Object
   
   @js.native
   sealed trait errored extends js.Object
@@ -269,11 +308,17 @@ object stripeLibStrings {
   sealed trait general extends js.Object
   
   @js.native
+  sealed trait giropay extends js.Object
+  
+  @js.native
   sealed trait good
     extends stripeLib.stripeMod.productsNs.ProductType
   
   @js.native
   sealed trait graduated extends js.Object
+  
+  @js.native
+  sealed trait ideal extends js.Object
   
   @js.native
   sealed trait idempotency_error
@@ -388,6 +433,9 @@ object stripeLibStrings {
   sealed trait metered extends js.Object
   
   @js.native
+  sealed trait missing extends js.Object
+  
+  @js.native
   sealed trait monday extends js.Object
   
   @js.native
@@ -396,6 +444,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait monthly extends js.Object
+  
+  @js.native
+  sealed trait multibanco extends js.Object
   
   @js.native
   sealed trait needs_response extends js.Object
@@ -407,13 +458,28 @@ object stripeLibStrings {
   sealed trait `new` extends js.Object
   
   @js.native
+  sealed trait none extends js.Object
+  
+  @js.native
+  sealed trait not_required extends js.Object
+  
+  @js.native
   sealed trait not_sent_to_network extends js.Object
   
   @js.native
   sealed trait now extends js.Object
   
   @js.native
+  sealed trait offline extends js.Object
+  
+  @js.native
   sealed trait once extends js.Object
+  
+  @js.native
+  sealed trait one_time extends js.Object
+  
+  @js.native
+  sealed trait online extends js.Object
   
   @js.native
   sealed trait open extends js.Object
@@ -429,6 +495,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait out_of_stock extends js.Object
+  
+  @js.native
+  sealed trait p24 extends js.Object
   
   @js.native
   sealed trait paid
@@ -477,6 +546,9 @@ object stripeLibStrings {
   sealed trait processing extends js.Object
   
   @js.native
+  sealed trait processing_error extends js.Object
+  
+  @js.native
   sealed trait product extends js.Object
   
   @js.native
@@ -492,6 +564,12 @@ object stripeLibStrings {
   sealed trait range extends js.Object
   
   @js.native
+  sealed trait receiver extends js.Object
+  
+  @js.native
+  sealed trait redirect extends js.Object
+  
+  @js.native
   sealed trait redirect_to_url extends js.Object
   
   @js.native
@@ -504,7 +582,13 @@ object stripeLibStrings {
   sealed trait refunded_as_fraud extends js.Object
   
   @js.native
+  sealed trait refused extends js.Object
+  
+  @js.native
   sealed trait repeating extends js.Object
+  
+  @js.native
+  sealed trait requested extends js.Object
   
   @js.native
   sealed trait requested_by_customer
@@ -530,6 +614,9 @@ object stripeLibStrings {
     extends stripeLib.stripeMod.ordersNs.OrderStatus
   
   @js.native
+  sealed trait reusable extends js.Object
+  
+  @js.native
   sealed trait reversed_after_approval extends js.Object
   
   @js.native
@@ -545,11 +632,17 @@ object stripeLibStrings {
   sealed trait saturday extends js.Object
   
   @js.native
+  sealed trait scheduled extends js.Object
+  
+  @js.native
   sealed trait secret extends js.Object
   
   @js.native
   sealed trait send_invoice
     extends stripeLib.stripeMod.subscriptionsNs.SubscriptionBilling
+  
+  @js.native
+  sealed trait sepa_debit extends js.Object
   
   @js.native
   sealed trait service
@@ -563,7 +656,16 @@ object stripeLibStrings {
   sealed trait shipping extends js.Object
   
   @js.native
+  sealed trait single_use extends js.Object
+  
+  @js.native
   sealed trait sku extends js.Object
+  
+  @js.native
+  sealed trait sofort extends js.Object
+  
+  @js.native
+  sealed trait source extends js.Object
   
   @js.native
   sealed trait standard
@@ -610,6 +712,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait terms_of_service extends js.Object
+  
+  @js.native
+  sealed trait three_d_secure extends js.Object
   
   @js.native
   sealed trait thursday extends js.Object
@@ -671,7 +776,13 @@ object stripeLibStrings {
   sealed trait use_stripe_sdk extends js.Object
   
   @js.native
+  sealed trait user_abort extends js.Object
+  
+  @js.native
   sealed trait validated extends js.Object
+  
+  @js.native
+  sealed trait variable extends js.Object
   
   @js.native
   sealed trait verification_failed extends js.Object
@@ -693,6 +804,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait warning_under_review extends js.Object
+  
+  @js.native
+  sealed trait wechat extends js.Object
   
   @js.native
   sealed trait wednesday extends js.Object
@@ -744,9 +858,17 @@ object stripeLibStrings {
   @scala.inline
   def Visa: Visa = "Visa".asInstanceOf[Visa]
   @scala.inline
+  def accepted: accepted = "accepted".asInstanceOf[accepted]
+  @scala.inline
+  def ach_credit_transfer: ach_credit_transfer = "ach_credit_transfer".asInstanceOf[ach_credit_transfer]
+  @scala.inline
+  def ach_debit: ach_debit = "ach_debit".asInstanceOf[ach_debit]
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
   @scala.inline
   def adjustment: adjustment = "adjustment".asInstanceOf[adjustment]
+  @scala.inline
+  def alipay: alipay = "alipay".asInstanceOf[alipay]
   @scala.inline
   def alipay_account: alipay_account = "alipay_account".asInstanceOf[alipay_account]
   @scala.inline
@@ -774,6 +896,10 @@ object stripeLibStrings {
   @scala.inline
   def automatic: automatic = "automatic".asInstanceOf[automatic]
   @scala.inline
+  def available: available = "available".asInstanceOf[available]
+  @scala.inline
+  def bancontact: bancontact = "bancontact".asInstanceOf[bancontact]
+  @scala.inline
   def bank_account: bank_account = "bank_account".asInstanceOf[bank_account]
   @scala.inline
   def bank_cannot_process: bank_cannot_process = "bank_cannot_process".asInstanceOf[bank_cannot_process]
@@ -792,13 +918,21 @@ object stripeLibStrings {
   @scala.inline
   def card_error: card_error = "card_error".asInstanceOf[card_error]
   @scala.inline
+  def card_present: card_present = "card_present".asInstanceOf[card_present]
+  @scala.inline
   def charge: charge = "charge".asInstanceOf[charge]
   @scala.inline
   def charge_automatically: charge_automatically = "charge_automatically".asInstanceOf[charge_automatically]
   @scala.inline
   def charge_refunded: charge_refunded = "charge_refunded".asInstanceOf[charge_refunded]
   @scala.inline
+  def chargeable: chargeable = "chargeable".asInstanceOf[chargeable]
+  @scala.inline
+  def code_verification: code_verification = "code_verification".asInstanceOf[code_verification]
+  @scala.inline
   def company: company = "company".asInstanceOf[company]
+  @scala.inline
+  def consumed: consumed = "consumed".asInstanceOf[consumed]
   @scala.inline
   def country_spec: country_spec = "country_spec".asInstanceOf[country_spec]
   @scala.inline
@@ -822,6 +956,8 @@ object stripeLibStrings {
   @scala.inline
   def debit_not_authorized: debit_not_authorized = "debit_not_authorized".asInstanceOf[debit_not_authorized]
   @scala.inline
+  def declined: declined = "declined".asInstanceOf[declined]
+  @scala.inline
   def declined_by_network: declined_by_network = "declined_by_network".asInstanceOf[declined_by_network]
   @scala.inline
   def discount: discount = "discount".asInstanceOf[discount]
@@ -838,7 +974,11 @@ object stripeLibStrings {
   @scala.inline
   def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   @scala.inline
+  def email: email = "email".asInstanceOf[email]
+  @scala.inline
   def ephemeral_key: ephemeral_key = "ephemeral_key".asInstanceOf[ephemeral_key]
+  @scala.inline
+  def eps: eps = "eps".asInstanceOf[eps]
   @scala.inline
   def errored: errored = "errored".asInstanceOf[errored]
   @scala.inline
@@ -872,9 +1012,13 @@ object stripeLibStrings {
   @scala.inline
   def general: general = "general".asInstanceOf[general]
   @scala.inline
+  def giropay: giropay = "giropay".asInstanceOf[giropay]
+  @scala.inline
   def good: good = "good".asInstanceOf[good]
   @scala.inline
   def graduated: graduated = "graduated".asInstanceOf[graduated]
+  @scala.inline
+  def ideal: ideal = "ideal".asInstanceOf[ideal]
   @scala.inline
   def idempotency_error: idempotency_error = "idempotency_error".asInstanceOf[idempotency_error]
   @scala.inline
@@ -944,11 +1088,15 @@ object stripeLibStrings {
   @scala.inline
   def metered: metered = "metered".asInstanceOf[metered]
   @scala.inline
+  def missing: missing = "missing".asInstanceOf[missing]
+  @scala.inline
   def monday: monday = "monday".asInstanceOf[monday]
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   @scala.inline
   def monthly: monthly = "monthly".asInstanceOf[monthly]
+  @scala.inline
+  def multibanco: multibanco = "multibanco".asInstanceOf[multibanco]
   @scala.inline
   def needs_response: needs_response = "needs_response".asInstanceOf[needs_response]
   @scala.inline
@@ -956,11 +1104,21 @@ object stripeLibStrings {
   @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
   @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  @scala.inline
+  def not_required: not_required = "not_required".asInstanceOf[not_required]
+  @scala.inline
   def not_sent_to_network: not_sent_to_network = "not_sent_to_network".asInstanceOf[not_sent_to_network]
   @scala.inline
   def now: now = "now".asInstanceOf[now]
   @scala.inline
+  def offline: offline = "offline".asInstanceOf[offline]
+  @scala.inline
   def once: once = "once".asInstanceOf[once]
+  @scala.inline
+  def one_time: one_time = "one_time".asInstanceOf[one_time]
+  @scala.inline
+  def online: online = "online".asInstanceOf[online]
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   @scala.inline
@@ -971,6 +1129,8 @@ object stripeLibStrings {
   def other: other = "other".asInstanceOf[other]
   @scala.inline
   def out_of_stock: out_of_stock = "out_of_stock".asInstanceOf[out_of_stock]
+  @scala.inline
+  def p24: p24 = "p24".asInstanceOf[p24]
   @scala.inline
   def paid: paid = "paid".asInstanceOf[paid]
   @scala.inline
@@ -1000,6 +1160,8 @@ object stripeLibStrings {
   @scala.inline
   def processing: processing = "processing".asInstanceOf[processing]
   @scala.inline
+  def processing_error: processing_error = "processing_error".asInstanceOf[processing_error]
+  @scala.inline
   def product: product = "product".asInstanceOf[product]
   @scala.inline
   def product_not_received: product_not_received = "product_not_received".asInstanceOf[product_not_received]
@@ -1010,6 +1172,10 @@ object stripeLibStrings {
   @scala.inline
   def range: range = "range".asInstanceOf[range]
   @scala.inline
+  def receiver: receiver = "receiver".asInstanceOf[receiver]
+  @scala.inline
+  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  @scala.inline
   def redirect_to_url: redirect_to_url = "redirect_to_url".asInstanceOf[redirect_to_url]
   @scala.inline
   def refund: refund = "refund".asInstanceOf[refund]
@@ -1018,7 +1184,11 @@ object stripeLibStrings {
   @scala.inline
   def refunded_as_fraud: refunded_as_fraud = "refunded_as_fraud".asInstanceOf[refunded_as_fraud]
   @scala.inline
+  def refused: refused = "refused".asInstanceOf[refused]
+  @scala.inline
   def repeating: repeating = "repeating".asInstanceOf[repeating]
+  @scala.inline
+  def requested: requested = "requested".asInstanceOf[requested]
   @scala.inline
   def requested_by_customer: requested_by_customer = "requested_by_customer".asInstanceOf[requested_by_customer]
   @scala.inline
@@ -1034,6 +1204,8 @@ object stripeLibStrings {
   @scala.inline
   def returned: returned = "returned".asInstanceOf[returned]
   @scala.inline
+  def reusable: reusable = "reusable".asInstanceOf[reusable]
+  @scala.inline
   def reversed_after_approval: reversed_after_approval = "reversed_after_approval".asInstanceOf[reversed_after_approval]
   @scala.inline
   def review: review = "review".asInstanceOf[review]
@@ -1044,9 +1216,13 @@ object stripeLibStrings {
   @scala.inline
   def saturday: saturday = "saturday".asInstanceOf[saturday]
   @scala.inline
+  def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
+  @scala.inline
   def secret: secret = "secret".asInstanceOf[secret]
   @scala.inline
   def send_invoice: send_invoice = "send_invoice".asInstanceOf[send_invoice]
+  @scala.inline
+  def sepa_debit: sepa_debit = "sepa_debit".asInstanceOf[sepa_debit]
   @scala.inline
   def service: service = "service".asInstanceOf[service]
   @scala.inline
@@ -1054,7 +1230,13 @@ object stripeLibStrings {
   @scala.inline
   def shipping: shipping = "shipping".asInstanceOf[shipping]
   @scala.inline
+  def single_use: single_use = "single_use".asInstanceOf[single_use]
+  @scala.inline
   def sku: sku = "sku".asInstanceOf[sku]
+  @scala.inline
+  def sofort: sofort = "sofort".asInstanceOf[sofort]
+  @scala.inline
+  def source: source = "source".asInstanceOf[source]
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   @scala.inline
@@ -1085,6 +1267,8 @@ object stripeLibStrings {
   def tax: tax = "tax".asInstanceOf[tax]
   @scala.inline
   def terms_of_service: terms_of_service = "terms_of_service".asInstanceOf[terms_of_service]
+  @scala.inline
+  def three_d_secure: three_d_secure = "three_d_secure".asInstanceOf[three_d_secure]
   @scala.inline
   def thursday: thursday = "thursday".asInstanceOf[thursday]
   @scala.inline
@@ -1124,7 +1308,11 @@ object stripeLibStrings {
   @scala.inline
   def use_stripe_sdk: use_stripe_sdk = "use_stripe_sdk".asInstanceOf[use_stripe_sdk]
   @scala.inline
+  def user_abort: user_abort = "user_abort".asInstanceOf[user_abort]
+  @scala.inline
   def validated: validated = "validated".asInstanceOf[validated]
+  @scala.inline
+  def variable: variable = "variable".asInstanceOf[variable]
   @scala.inline
   def verification_failed: verification_failed = "verification_failed".asInstanceOf[verification_failed]
   @scala.inline
@@ -1139,6 +1327,8 @@ object stripeLibStrings {
   def warning_needs_response: warning_needs_response = "warning_needs_response".asInstanceOf[warning_needs_response]
   @scala.inline
   def warning_under_review: warning_under_review = "warning_under_review".asInstanceOf[warning_under_review]
+  @scala.inline
+  def wechat: wechat = "wechat".asInstanceOf[wechat]
   @scala.inline
   def wednesday: wednesday = "wednesday".asInstanceOf[wednesday]
   @scala.inline

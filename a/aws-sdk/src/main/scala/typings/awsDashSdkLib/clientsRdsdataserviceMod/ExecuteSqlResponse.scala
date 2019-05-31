@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait ExecuteSqlResponse extends js.Object {
   /**
-    * Results returned by executing the sql statement(s)
+    * The results of the SQL statement or statements.
     */
-  var sqlStatementResults: SqlStatementResults
+  var sqlStatementResults: js.UndefOr[SqlStatementResults] = js.undefined
 }
 
 object ExecuteSqlResponse {
   @scala.inline
-  def apply(sqlStatementResults: SqlStatementResults): ExecuteSqlResponse = {
-    val __obj = js.Dynamic.literal(sqlStatementResults = sqlStatementResults)
-  
+  def apply(sqlStatementResults: SqlStatementResults = null): ExecuteSqlResponse = {
+    val __obj = js.Dynamic.literal()
+    if (sqlStatementResults != null) __obj.updateDynamic("sqlStatementResults")(sqlStatementResults)
     __obj.asInstanceOf[ExecuteSqlResponse]
   }
 }

@@ -118,6 +118,7 @@ package object clientsIotanalyticsMod {
   type ResourceArn = java.lang.String
   type RetentionPeriodInDays = scala.Double
   type RoleArn = java.lang.String
+  type S3KeyPrefix = java.lang.String
   type ScheduleExpression = java.lang.String
   type SizeInBytes = scala.Double
   type SqlQuery = java.lang.String

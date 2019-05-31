@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Typeofself extends js.Object {
   val ExtractJwt: Anon_Authscheme = js.native
   var Verifier: org.scalablytyped.runtime.Instantiable2[
-    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Any], 
+    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Object], 
     /* options */ js.Any, 
     atFeathersjsAuthenticationDashJwtLib.atFeathersjsAuthenticationDashJwtMod.Verifier
   ] = js.native

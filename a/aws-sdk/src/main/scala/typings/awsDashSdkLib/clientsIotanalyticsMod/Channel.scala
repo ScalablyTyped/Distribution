@@ -30,6 +30,10 @@ trait Channel extends js.Object {
     * The status of the channel.
     */
   var status: js.UndefOr[ChannelStatus] = js.undefined
+  /**
+    * Where channel data is stored.
+    */
+  var storage: js.UndefOr[ChannelStorage] = js.undefined
 }
 
 object Channel {
@@ -40,7 +44,8 @@ object Channel {
     lastUpdateTime: Timestamp = null,
     name: ChannelName = null,
     retentionPeriod: RetentionPeriod = null,
-    status: ChannelStatus = null
+    status: ChannelStatus = null,
+    storage: ChannelStorage = null
   ): Channel = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
@@ -49,6 +54,7 @@ object Channel {
     if (name != null) __obj.updateDynamic("name")(name)
     if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage)
     __obj.asInstanceOf[Channel]
   }
 }

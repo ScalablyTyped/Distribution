@@ -33,7 +33,7 @@ class Base () extends js.Object {
   /**
     * Same as `exportJSON({ asString: false })`.
     */
-  def toJSON(): java.lang.String = js.native
+  def toJSON(): js.Object | js.Array[_] = js.native
 }
 
 /* static members */

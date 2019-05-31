@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait N3Store[Q_RDF /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */, Q_N3 /* <: BaseQuad */]
-  extends rdfDashJsLib.rdfDashJsMod.Sink[rdfDashJsLib.rdfDashJsMod.Quad] {
+  extends rdfDashJsLib.rdfDashJsMod.Store[Q_RDF] {
   val size: scala.Double = js.native
   def addQuad(quad: Q_RDF): scala.Unit = js.native
   def addQuad(
@@ -76,8 +76,6 @@ trait N3Store[Q_RDF /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */, Q_N3 /* <: Base
   def getSubjects(predicate: OTerm, `object`: OTerm, graph: OTerm): js.Array[
     /* import warning: ImportType.apply Failed type conversion: Q_N3['subject'] */ js.Any
   ] = js.native
-  // match, removeMatches and deleteGraph are missing for full RDF.Store adherence
-  def remove(stream: nodeLib.streamMod.Stream): nodeLib.eventsMod.EventEmitter = js.native
   def removeQuad(quad: Q_RDF): scala.Unit = js.native
   def removeQuad(
     subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,

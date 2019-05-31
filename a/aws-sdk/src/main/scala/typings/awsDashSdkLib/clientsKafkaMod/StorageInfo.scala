@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait StorageInfo extends js.Object {
   /**
-    * EBS volume information.
+    * 
+    EBS volume information.
+    
     */
   var EbsStorageInfo: js.UndefOr[EBSStorageInfo] = js.undefined
 }

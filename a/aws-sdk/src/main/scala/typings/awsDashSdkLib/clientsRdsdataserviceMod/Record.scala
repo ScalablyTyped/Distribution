@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Record extends js.Object {
   /**
-    * Record
+    * The values returned in the record.
     */
   var values: js.UndefOr[Row] = js.undefined
 }

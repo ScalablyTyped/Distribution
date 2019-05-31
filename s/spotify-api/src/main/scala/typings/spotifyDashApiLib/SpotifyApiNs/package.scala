@@ -79,6 +79,7 @@ package object SpotifyApiNs {
     * https://developer.spotify.com/web-api/get-current-users-profile/
     */
   type CurrentUsersProfileResponse = UserObjectPrivate
+  type CurrentlyPlayingResponse = CurrentlyPlayingObject
   /**
     * Follow artists or users
     * 
@@ -221,6 +222,13 @@ package object SpotifyApiNs {
     */
   type UnfollowPlaylistReponse = VoidResponse
   /**
+    * Upload a Custom Playlist Cover Image
+    * 
+    * PUT /v1/users/{user_id}/playlists/{playlist_id}/images
+    * https://developer.spotify.com/web-api/upload-a-custom-playlist-cover-image/
+    */
+  type UploadCustomPlaylistCoverImageReponse = VoidResponse
+  /**
     * Check if User Follows Users or Artists
     * 
     * GET /v1/me/following/contains
@@ -241,6 +249,13 @@ package object SpotifyApiNs {
     * https://developer.spotify.com/web-api/check-user-following-playlist/
     */
   type UsersFollowPlaylistReponse = js.Array[scala.Boolean]
+  /**
+    * Get a User’s Recently Played Tracks
+    * 
+    * GET /v1/me/player/recently-played
+    * https://developer.spotify.com/web-api/get-users-top-artists-and-tracks/
+    */
+  type UsersRecentlyPlayedTracksResponse = CursorBasedPagingObject[PlayHistoryObject]
   /**
     * Get user's saved albums
     * 

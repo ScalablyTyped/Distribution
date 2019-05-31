@@ -14,13 +14,13 @@ trait ICustomerSourceCreationOptions
     * dictionary containing a user’s credit card details (with the options shown
     * below). Stripe will automatically validate the card.
     */
-  var source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions
+  var source: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions
 }
 
 object ICustomerSourceCreationOptions {
   @scala.inline
   def apply(
-    source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions,
+    source: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions,
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null

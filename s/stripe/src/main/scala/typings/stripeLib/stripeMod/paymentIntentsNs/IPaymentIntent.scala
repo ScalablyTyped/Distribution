@@ -106,7 +106,7 @@ trait IPaymentIntent
   /**
     * ID of the source used in this PaymentIntent. [Expandable]
     */
-  var source: java.lang.String | stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount
+  var source: java.lang.String | stripeLib.stripeMod.IStripeSource
   /**
     * Extra information about a PaymentIntent. This will appear on your customer’s statement when this PaymentIntent succeeds in creating a charge.
     */
@@ -143,7 +143,7 @@ object IPaymentIntent {
     next_action: IPaymentIntentNextActionUseStripeSdk | IPaymentIntentNextActionRedirectToUrl,
     `object`: stripeLib.stripeLibStrings.payment_intent,
     payment_method_types: js.Array[java.lang.String],
-    source: java.lang.String | stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount,
+    source: java.lang.String | stripeLib.stripeMod.IStripeSource,
     status: stripeLib.stripeLibStrings.requires_payment_method | stripeLib.stripeLibStrings.requires_action | stripeLib.stripeLibStrings.processing | stripeLib.stripeLibStrings.requires_authorization | stripeLib.stripeLibStrings.requires_capture | stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.succeeded,
     application: java.lang.String | stripeLib.stripeMod.applicationsNs.IApplication = null,
     application_fee_amount: scala.Int | scala.Double = null,

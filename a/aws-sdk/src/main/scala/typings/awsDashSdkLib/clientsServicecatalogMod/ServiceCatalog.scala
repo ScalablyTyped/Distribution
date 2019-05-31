@@ -1578,6 +1578,29 @@ trait ServiceCatalog
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Returns summary information about stack instances that are associated with the specified CFN_STACKSET type provisioned product. You can filter for stack instances that are associated with a specific AWS account name or region. 
+    */
+  def listStackInstancesForProvisionedProduct(): awsDashSdkLib.libRequestMod.Request[ListStackInstancesForProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listStackInstancesForProvisionedProduct(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListStackInstancesForProvisionedProductOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListStackInstancesForProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns summary information about stack instances that are associated with the specified CFN_STACKSET type provisioned product. You can filter for stack instances that are associated with a specific AWS account name or region. 
+    */
+  def listStackInstancesForProvisionedProduct(params: ListStackInstancesForProvisionedProductInput): awsDashSdkLib.libRequestMod.Request[ListStackInstancesForProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def listStackInstancesForProvisionedProduct(
+    params: ListStackInstancesForProvisionedProductInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ListStackInstancesForProvisionedProductOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ListStackInstancesForProvisionedProductOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Lists the specified TagOptions or all TagOptions.
     */
   def listTagOptions(): awsDashSdkLib.libRequestMod.Request[ListTagOptionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native

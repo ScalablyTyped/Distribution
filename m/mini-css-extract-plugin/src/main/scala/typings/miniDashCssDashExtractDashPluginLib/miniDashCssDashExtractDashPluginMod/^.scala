@@ -20,6 +20,6 @@ class ^ () extends MiniCssExtractPlugin {
 @js.native
 object ^ extends js.Object {
   /** webpack loader used always at the end of loaders list */
-  var loader: webpackLib.webpackMod.Loader = js.native
+  var loader: java.lang.String = js.native
 }
 

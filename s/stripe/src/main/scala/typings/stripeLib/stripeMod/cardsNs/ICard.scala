@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
   * You can store multiple cards on a customer in order to charge the customer later. You
   * can also store multiple debit cards on a recipient in order to transfer to those cards later.
   */
-trait ICard extends ICardHash {
+trait ICard
+  extends ICardHash
+     with stripeLib.stripeMod.IStripeSource {
   /**
     * The account this card belongs to. This attribute will not be in the
     * card object if the card belongs to a customer or recipient instead.

@@ -348,6 +348,7 @@
 | 0.8278605802015875 | [cssnano](./c/cssnano) | A modular minifier, built on top of the PostCSS ec
 | 0.8277160146820661 | [which](./w/which) | Like which(1) unix command. Find the first instanc
 | 0.8274701304028199 | [cli-cursor](./c/cli-cursor) | Toggle the CLI cursor
+| 0.8270602116725498 | [ci-info](./c/ci-info) | Get details about the current Continuous Integrati
 | 0.826973034925748 | [lodash_dot_isfinite](./l/lodash_dot_isfinite) | The lodash method _.isFinite exported as a module.
 | 0.8266035171777489 | [graphql-tag](./g/graphql-tag) | A JavaScript template literal tag that parses Grap
 | 0.826277900667131 | [is-fullwidth-code-point](./i/is-fullwidth-code-point) | Check if the character represented by a given Unic
@@ -2706,6 +2707,7 @@
 | 0.6807896245987106 | [format-io](./f/format-io) | Format size, permissions
 | 0.6806508635773248 | [array-foreach](./a/array-foreach) | Array
 | 0.6806210722597948 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser
+| 0.6806057047053207 | [d3-interpolate-path](./d/d3-interpolate-path) | Interpolates path d attribute smoothly when A and 
 | 0.6805444857564188 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster) | Provides Beautiful Animated Marker Clustering func
 | 0.6805257964866605 | [catbox-memory](./c/catbox-memory) | Memory adapter for catbox
 | 0.6804174709429104 | [js-types](./j/js-types) | List of JavaScript types
@@ -3081,6 +3083,7 @@
 | 0.664464570271508 | [dd-trace](./d/dd-trace) | Datadog APM tracing client for JavaScript
 | 0.6644158158638933 | [fluxible-router](./f/fluxible-router) | Routing for Fluxible applications
 | 0.6643361484748407 | [hapi__crumb](./h/hapi__crumb) | CSRF crumb generation and validation plugin
+| 0.6642626275982007 | [dynamic-time-warping](./d/dynamic-time-warping) | Dynamic time warping for Javascript
 | 0.6641797735963251 | [math-sign](./m/math-sign) | ES2015 Math.sign() ponyfill
 | 0.6640232802546793 | [react-redux-epic](./r/react-redux-epic) | Server side rendering for Redux-Observable
 | 0.6640200016393546 | [dotenv-flow](./d/dotenv-flow) | Loads environment variables from .env.
@@ -3124,6 +3127,7 @@
 | 0.6621869997672357 | [cavy](./c/cavy) | An integration test framework for React Native.
 | 0.6621460670619517 | [fontfaceobserver](./f/fontfaceobserver) | Detect if web fonts are available
 | 0.6619225073110262 | [rc-time-picker](./r/rc-time-picker) | React TimePicker
+| 0.6618651436352434 | [json-to-ast](./j/json-to-ast) | JSON AST parser
 | 0.6617995253714086 | [fill-pdf](./f/fill-pdf) | Fill out pdf forms
 | 0.6616374452863563 | [sumo-logger](./s/sumo-logger) | Sumo Logic Javascript SDK for sending logs to a HT
 | 0.6615097073067235 | [pick-weight](./p/pick-weight) | Returns a single item from an array with relative 
@@ -3323,6 +3327,7 @@
 | 0.6514290936204287 | [browser-bunyan](./b/browser-bunyan) | Bunyan logging specifically for the browser
 | 0.6513270268255207 | [express-async-wrap](./e/express-async-wrap) | Allows the use of ES2016 async functions as Expres
 | 0.6511926796080174 | [docker-file-parser](./d/docker-file-parser) | Parses a Dockerfile and returns an array of comman
+| 0.6511818144923581 | [robust-point-in-polygon](./r/robust-point-in-polygon) | Exactly test if a point is inside, outside or on t
 | 0.651175282831609 | [react-paginate](./r/react-paginate) | A ReactJS component that creates a pagination.
 | 0.6511578743401281 | [tabtab](./t/tabtab) | tab completion helpers, for node cli programs. Ins
 | 0.6511456212712012 | [fetch_dot_io](./f/fetch_dot_io) | extends the whatwg fetch api, makes it easier to u
@@ -3934,6 +3939,7 @@
 | 0.6038352026381298 | [mmmagic](./m/mmmagic) | An async libmagic binding for node.js for detectin
 | 0.6035650834273439 | [inversify-restify-utils](./i/inversify-restify-utils) | Some utilities for the development of restify appl
 | 0.6034036246838766 | [sw-toolbox](./s/sw-toolbox) | Service Worker Toolbox provides some simple helper
+| 0.603393104999618 | [dir-walker-gen](./d/dir-walker-gen) | A javascript generator pattern for directlry listi
 | 0.6033663593763607 | [gulp-useref](./g/gulp-useref) | Parse build blocks in HTML files to replace refere
 | 0.6031736391011134 | [keyboardjs](./k/keyboardjs) | A library for binding to keys and key combos witho
 | 0.603102340225572 | [extsprintf](./e/extsprintf) | extended POSIX-style sprintf
@@ -5136,6 +5142,7 @@
 | 0.419100825285204 | [redux-persist-transform-e](./r/redux-persist-transform-encrypt) | Encrypt your Redux store.
 | 0.41903549540095897 | [dynatable](./d/dynatable) | A wrapper for DynamoDB tables, with a promise wrap
 | 0.4186802235775254 | [elementtree](./e/elementtree) | XML Serialization and Parsing module based on Pyth
+| 0.41864864789444994 | [react-native-mail](./r/react-native-mail) | A wrapper on top of MFMailComposeViewController fr
 | 0.41851392315501534 | [slack-winston](./s/slack-winston) | A Slack transport for winston
 | 0.41828865398580783 | [mjml-react](./m/mjml-react) |  &middot; 
 | 0.4180722268495598 | [local-dynamo](./l/local-dynamo) | A Node.js wrapper of AWS DynamoDB Local and utilit
@@ -6320,6 +6327,7 @@
 | 0.17839508694978123 | [json-rpc-random-id](./j/json-rpc-random-id) | Generates an id useable in json rpc payloads.
 | 0.17810371295167607 | [cadesplugin](./c/cadesplugin) | CryptoPro Browser plug-in
 | 0.1779477682526927 | [react-native-android-task](./r/react-native-android-taskdescription) | TaskDescription Android React Native module
+| 0.17765349375602885 | [ffmpeg](./f/ffmpeg) | Utility for managing video streams using ffmpeg
 | 0.1771593328919367 | [servicenow](./s/servicenow) | Wrapper library to ServiceNow's JSON/REST plugin
 | 0.17706578804135237 | [colresizable](./c/colresizable) | jQuery plugin to resize table columns
 | 0.17678982684186775 | [react-addons-update](./r/react-addons-update) | >**Note:** >This is a legacy React addon, and is n

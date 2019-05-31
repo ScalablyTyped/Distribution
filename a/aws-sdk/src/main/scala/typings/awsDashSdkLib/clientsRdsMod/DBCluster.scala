@@ -7,6 +7,22 @@ import scala.scalajs.js.annotation._
 
 trait DBCluster extends js.Object {
   /**
+    * The name of the Amazon Kinesis data stream used for the database activity stream.
+    */
+  var ActivityStreamKinesisStreamName: js.UndefOr[String] = js.undefined
+  /**
+    * The AWS KMS key identifier used for encrypting messages in the database activity stream.
+    */
+  var ActivityStreamKmsKeyId: js.UndefOr[String] = js.undefined
+  /**
+    * The mode of the database activity stream. Database events such as a change or access generate an activity stream event. The database session can handle these events either synchronously or asynchronously. 
+    */
+  var ActivityStreamMode: js.UndefOr[ActivityStreamMode] = js.undefined
+  /**
+    * The status of the database activity stream.
+    */
+  var ActivityStreamStatus: js.UndefOr[ActivityStreamStatus] = js.undefined
+  /**
     * For all database engines except Amazon Aurora, AllocatedStorage specifies the allocated storage size in gibibytes (GiB). For Aurora, AllocatedStorage always returns 1, because Aurora DB cluster storage size is not fixed, but instead automatically adjusts as needed.
     */
   var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
@@ -192,6 +208,10 @@ trait DBCluster extends js.Object {
 object DBCluster {
   @scala.inline
   def apply(
+    ActivityStreamKinesisStreamName: String = null,
+    ActivityStreamKmsKeyId: String = null,
+    ActivityStreamMode: ActivityStreamMode = null,
+    ActivityStreamStatus: ActivityStreamStatus = null,
     AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined,
     AssociatedRoles: DBClusterRoles = null,
     AvailabilityZones: AvailabilityZones = null,
@@ -240,6 +260,10 @@ object DBCluster {
     VpcSecurityGroups: VpcSecurityGroupMembershipList = null
   ): DBCluster = {
     val __obj = js.Dynamic.literal()
+    if (ActivityStreamKinesisStreamName != null) __obj.updateDynamic("ActivityStreamKinesisStreamName")(ActivityStreamKinesisStreamName)
+    if (ActivityStreamKmsKeyId != null) __obj.updateDynamic("ActivityStreamKmsKeyId")(ActivityStreamKmsKeyId)
+    if (ActivityStreamMode != null) __obj.updateDynamic("ActivityStreamMode")(ActivityStreamMode.asInstanceOf[js.Any])
+    if (ActivityStreamStatus != null) __obj.updateDynamic("ActivityStreamStatus")(ActivityStreamStatus.asInstanceOf[js.Any])
     if (!js.isUndefined(AllocatedStorage)) __obj.updateDynamic("AllocatedStorage")(AllocatedStorage)
     if (AssociatedRoles != null) __obj.updateDynamic("AssociatedRoles")(AssociatedRoles)
     if (AvailabilityZones != null) __obj.updateDynamic("AvailabilityZones")(AvailabilityZones)

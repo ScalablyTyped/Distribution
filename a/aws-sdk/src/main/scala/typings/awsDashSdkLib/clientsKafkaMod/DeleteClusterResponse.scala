@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait DeleteClusterResponse extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the cluster.
+    * 
+    The Amazon Resource Name (ARN) of the cluster.
+    
     */
   var ClusterArn: js.UndefOr[__string] = js.undefined
   /**
-    * The state of the cluster. The possible states are CREATING, ACTIVE, and FAILED.
+    * 
+    The state of the cluster. The possible states are CREATING, ACTIVE, and FAILED.
+    
     */
   var State: js.UndefOr[ClusterState] = js.undefined
 }

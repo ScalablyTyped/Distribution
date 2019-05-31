@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait DeleteClusterRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) that uniquely identifies the cluster.
+    * 
+    The Amazon Resource Name (ARN) that uniquely identifies the cluster.
+    
     */
   var ClusterArn: __string
   /**
-    * The current version of the MSK cluster.
+    * 
+    The current version of the MSK cluster.
+    
     */
   var CurrentVersion: js.UndefOr[__string] = js.undefined
 }

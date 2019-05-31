@@ -30,7 +30,11 @@ trait IRuleMetadata extends js.Object {
     * Examples of what a standard config for the rule might look like.
     * Using a string[] here is deprecated. Write the options as a JSON object instead.
     */
-  var optionExamples: js.UndefOr[js.Array[tslintLib.tslintLibNumbers.`true` | js.Array[_] | java.lang.String]] = js.undefined
+  var optionExamples: js.UndefOr[
+    js.Array[
+      tslintLib.tslintLibNumbers.`true` | tslintLib.Anon_Options | js.Array[_] | java.lang.String
+    ]
+  ] = js.undefined
   /**
     * Schema of the options the rule accepts.
     * The first boolean for whether the rule is enabled or not is already implied.
@@ -77,7 +81,9 @@ object IRuleMetadata {
     deprecationMessage: java.lang.String = null,
     descriptionDetails: java.lang.String = null,
     hasFix: js.UndefOr[scala.Boolean] = js.undefined,
-    optionExamples: js.Array[tslintLib.tslintLibNumbers.`true` | js.Array[_] | java.lang.String] = null,
+    optionExamples: js.Array[
+      tslintLib.tslintLibNumbers.`true` | tslintLib.Anon_Options | js.Array[_] | java.lang.String
+    ] = null,
     rationale: java.lang.String = null,
     requiresTypeInfo: js.UndefOr[scala.Boolean] = js.undefined
   ): IRuleMetadata = {

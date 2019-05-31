@@ -54,7 +54,9 @@ trait ICustomerUpdateOptions
     * default, use the card creation API. Whenever you attach a card to a
     * customer, Stripe will automatically validate the card.
     */
-  var source: js.UndefOr[stripeLib.stripeMod.sourcesNs.ISourceCreationOptionsExtended] = js.undefined
+  var source: js.UndefOr[
+    java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptionsExtended
+  ] = js.undefined
 }
 
 object ICustomerUpdateOptions {
@@ -73,7 +75,7 @@ object ICustomerUpdateOptions {
     name: java.lang.String = null,
     phone: java.lang.String = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
-    source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptionsExtended = null
+    source: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptionsExtended = null
   ): ICustomerUpdateOptions = {
     val __obj = js.Dynamic.literal()
     if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])

@@ -41,8 +41,9 @@ These comments are from the typescript definitions and might be useful:
 //                  Abraao Alves <https://github.com/AbraaoAlves>
 //                  Tim Mensch <https://github.com/TimMensch>
 //                  Jordan Tucker <https://github.com/jordanbtucker>
+//                  Desmond Koh <https://github.com/deskoh>
 // Definitions: https://github.com/feathersjs-ecosystem/feathers-typescript
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 
 ```
 

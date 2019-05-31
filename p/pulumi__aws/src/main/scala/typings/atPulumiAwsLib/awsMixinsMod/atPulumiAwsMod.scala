@@ -229,6 +229,10 @@ object atPulumiAwsMod extends js.Object {
     val IoT1ClickProjectsNs: atPulumiAwsLib.TypeofIoT1ClickProjects = js.native
     var IoTAnalytics: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.IoTAnalytics] = js.native
     val IoTAnalyticsNs: atPulumiAwsLib.TypeofIoTAnalytics = js.native
+    var IoTEvents: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.IoTEvents] = js.native
+    var IoTEventsData: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.IoTEventsData] = js.native
+    val IoTEventsDataNs: atPulumiAwsLib.TypeofIoTEventsData = js.native
+    val IoTEventsNs: atPulumiAwsLib.TypeofIoTEvents = js.native
     var IoTJobsDataPlane: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.IoTJobsDataPlane] = js.native
     val IoTJobsDataPlaneNs: atPulumiAwsLib.TypeofIoTJobsDataPlane = js.native
     var IoTThingsGraph: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.IoTThingsGraph] = js.native

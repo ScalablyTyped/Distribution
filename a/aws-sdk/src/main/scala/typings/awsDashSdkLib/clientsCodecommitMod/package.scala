@@ -119,6 +119,7 @@ package object clientsCodecommitMod {
   type RepositoryTriggerNameList = js.Array[RepositoryTriggerName]
   type RepositoryTriggersConfigurationId = java.lang.String
   type RepositoryTriggersList = js.Array[RepositoryTrigger]
+  type ResourceArn = java.lang.String
   type SetFileModeEntries = js.Array[SetFileModeEntry]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.repositoryName
@@ -128,6 +129,10 @@ package object clientsCodecommitMod {
   type SortByEnum = _SortByEnum | java.lang.String
   type SubModuleList = js.Array[SubModule]
   type SymbolicLinkList = js.Array[SymbolicLink]
+  type TagKey = java.lang.String
+  type TagKeysList = js.Array[TagKey]
+  type TagValue = java.lang.String
+  type TagsMap = org.scalablytyped.runtime.StringDictionary[TagValue]
   type TargetList = js.Array[Target]
   type Title = java.lang.String
   type _Date = java.lang.String

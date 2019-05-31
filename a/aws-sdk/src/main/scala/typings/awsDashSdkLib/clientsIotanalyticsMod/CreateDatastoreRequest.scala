@@ -11,6 +11,10 @@ trait CreateDatastoreRequest extends js.Object {
     */
   var datastoreName: DatastoreName
   /**
+    * Where data store data is stored.
+    */
+  var datastoreStorage: js.UndefOr[DatastoreStorage] = js.undefined
+  /**
     * How long, in days, message data is kept for the data store.
     */
   var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
@@ -22,8 +26,14 @@ trait CreateDatastoreRequest extends js.Object {
 
 object CreateDatastoreRequest {
   @scala.inline
-  def apply(datastoreName: DatastoreName, retentionPeriod: RetentionPeriod = null, tags: TagList = null): CreateDatastoreRequest = {
+  def apply(
+    datastoreName: DatastoreName,
+    datastoreStorage: DatastoreStorage = null,
+    retentionPeriod: RetentionPeriod = null,
+    tags: TagList = null
+  ): CreateDatastoreRequest = {
     val __obj = js.Dynamic.literal(datastoreName = datastoreName)
+    if (datastoreStorage != null) __obj.updateDynamic("datastoreStorage")(datastoreStorage)
     if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateDatastoreRequest]

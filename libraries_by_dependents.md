@@ -2487,6 +2487,7 @@
 | 45 | [ansi_up](./a/ansi_up) | Convert ansi sequences in strings to colorful HTML
 | 45 | [binary-extensions](./b/binary-extensions) | List of binary file extensions
 | 45 | [center-align](./c/center-align) | Center-align the text in a string.
+| 45 | [ci-info](./c/ci-info) | Get details about the current Continuous Integrati
 | 45 | [ckeditor](./c/ckeditor) | JavaScript WYSIWYG web text editor.
 | 45 | [editorconfig](./e/editorconfig) | EditorConfig File Locator and Interpreter for Node
 | 45 | [electron-builder](./e/electron-builder) | A complete solution to package and build a ready f
@@ -3223,6 +3224,7 @@
 | 23 | [credit-card-type](./c/credit-card-type) | A library for determining credit card type
 | 23 | [d3-hexbin](./d/d3-hexbin) | Group two-dimensional points into hexagonal bins.
 | 23 | [d3-polygon](./d/d3-polygon) | Operations for two-dimensional polygons.
+| 23 | [ffmpeg](./f/ffmpeg) | Utility for managing video streams using ffmpeg
 | 23 | [flatbuffers](./f/flatbuffers) | Memory Efficient Serialization Library
 | 23 | [gulp-mustache](./g/gulp-mustache) | A plugin for Gulp that renders mustache templates 
 | 23 | [ids](./i/ids) | Simple id generation and caching
@@ -3536,6 +3538,7 @@
 | 18 | [react-timeago](./r/react-timeago) | A simple Time-Ago component for ReactJs
 | 18 | [redux-batched-subscribe](./r/redux-batched-subscribe) | redux store enhancer which allows batching subscri
 | 18 | [rfc6902](./r/rfc6902) | Complete implementation of RFC6902 (patch and diff
+| 18 | [robust-point-in-polygon](./r/robust-point-in-polygon) | Exactly test if a point is inside, outside or on t
 | 18 | [sqs-producer](./s/sqs-producer) | Enqueues messages onto a given SQS queue
 | 18 | [svg-pan-zoom](./s/svg-pan-zoom) | JavaScript library for panning and zooming an SVG 
 | 18 | [thepiratebay](./t/thepiratebay) | The pirate bay client
@@ -3893,6 +3896,7 @@
 | 12 | [intercom-client](./i/intercom-client) | Official Node bindings to the Intercom API
 | 12 | [is-unc-path](./i/is-unc-path) | Returns true if a filepath is a windows UNC file p
 | 12 | [is-uuid](./i/is-uuid) | UUID check for Node and the browser
+| 12 | [json-to-ast](./j/json-to-ast) | JSON AST parser
 | 12 | [just-snake-case](./j/just-snake-case) | convert a string to snake case
 | 12 | [leaflet-rotatedmarker](./l/leaflet-rotatedmarker) | Enables rotation of marker icons in Leaflet.
 | 12 | [lodash_dot_assignwith](./l/lodash_dot_assignwith) | The lodash method _.assignWith exported as a modul
@@ -4073,6 +4077,7 @@
 | 10 | [create-subscription](./c/create-subscription) | utility for subscribing to external data sources i
 | 10 | [cwise-compiler](./c/cwise-compiler) | cwise's internal compiler
 | 10 | [d3-fetch](./d/d3-fetch) | Convenient parsing for Fetch.
+| 10 | [d3-interpolate-path](./d/d3-interpolate-path) | Interpolates path d attribute smoothly when A and 
 | 10 | [default-gateway](./d/default-gateway) | Get the default network gateway, cross-platform.
 | 10 | [egg-core](./e/egg-core) | A core Pluggable framework based on koa
 | 10 | [electron-publish](./e/electron-publish) | Part of 
@@ -5848,6 +5853,7 @@
 | 1 | [react-native-dotenv](./r/react-native-dotenv) | A Babel preset let you import application configs 
 | 1 | [react-native-fabric](./r/react-native-fabric) | A React Native library for Fabric, Crashlytics and
 | 1 | [react-native-form](./r/react-native-form) | A simple react-native component to wrap your form 
+| 1 | [react-native-mail](./r/react-native-mail) | A wrapper on top of MFMailComposeViewController fr
 | 1 | [react-native-material-des](./r/react-native-material-design-searchbar) | A React Native Material Design SearchBar
 | 1 | [react-native-mauron85-bac](./r/react-native-mauron85-background-geolocation) | optimized background location tracking
 | 1 | [react-native-snackbar-com](./r/react-native-snackbar-component) | A snackbar component for Android and iOS
@@ -6066,11 +6072,13 @@
 | 0 | [decorum](./d/decorum) | Vanilla, lightweight, simple JavaScript decorators
 | 0 | [deep-equal-in-any-order](./d/deep-equal-in-any-order) | chai plugin to match objects and arrays deep equal
 | 0 | [di-lite](./d/di-lite) | A ultra light-weight dependency injection containe
+| 0 | [dir-walker-gen](./d/dir-walker-gen) | A javascript generator pattern for directlry listi
 | 0 | [dirname-regex](./d/dirname-regex) | Regular expression for matching the directory part
 | 0 | [domo](./d/domo) | Markup, style, and code in one language.
 | 0 | [dookie](./d/dookie) | Stylus-inspired preprocessor for MongoDB data sets
 | 0 | [drag-timetable](./d/drag-timetable) | Simple, customizable draggable timetable.
 | 0 | [dragster](./d/dragster) | Better HTML5 drag events
+| 0 | [dynamic-time-warping](./d/dynamic-time-warping) | Dynamic time warping for Javascript
 | 0 | [dynatable](./d/dynatable) | A wrapper for DynamoDB tables, with a promise wrap
 | 0 | [dynatrace](./d/dynatrace) | This package is no longer supported and has been d
 | 0 | [easy-api-request](./e/easy-api-request) | Request wrapper providing cookie and header forwar

@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait DescribeClusterResponse extends js.Object {
   /**
-    * The cluster information.
+    * 
+    The cluster information.
+    
     */
   var ClusterInfo: js.UndefOr[ClusterInfo] = js.undefined
 }

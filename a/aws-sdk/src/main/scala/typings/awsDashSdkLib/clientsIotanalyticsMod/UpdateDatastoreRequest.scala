@@ -11,6 +11,10 @@ trait UpdateDatastoreRequest extends js.Object {
     */
   var datastoreName: DatastoreName
   /**
+    * Where data store data is stored.
+    */
+  var datastoreStorage: js.UndefOr[DatastoreStorage] = js.undefined
+  /**
     * How long, in days, message data is kept for the data store.
     */
   var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
@@ -18,8 +22,13 @@ trait UpdateDatastoreRequest extends js.Object {
 
 object UpdateDatastoreRequest {
   @scala.inline
-  def apply(datastoreName: DatastoreName, retentionPeriod: RetentionPeriod = null): UpdateDatastoreRequest = {
+  def apply(
+    datastoreName: DatastoreName,
+    datastoreStorage: DatastoreStorage = null,
+    retentionPeriod: RetentionPeriod = null
+  ): UpdateDatastoreRequest = {
     val __obj = js.Dynamic.literal(datastoreName = datastoreName)
+    if (datastoreStorage != null) __obj.updateDynamic("datastoreStorage")(datastoreStorage)
     if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod)
     __obj.asInstanceOf[UpdateDatastoreRequest]
   }

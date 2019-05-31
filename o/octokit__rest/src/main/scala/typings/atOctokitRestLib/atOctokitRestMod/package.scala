@@ -163,8 +163,6 @@ package object atOctokitRestMod {
   type ReposDeclineInvitationResponse = js.Object
   type ReposDeleteCommitCommentResponse = js.Object
   type ReposDeleteDownloadResponse = js.Object
-  type ReposDeleteFileParamsAuthor = js.Object
-  type ReposDeleteFileParamsCommitter = js.Object
   type ReposDeleteHookResponse = js.Object
   type ReposDeleteInvitationResponse = js.Object
   type ReposDeleteReleaseAssetResponse = js.Object

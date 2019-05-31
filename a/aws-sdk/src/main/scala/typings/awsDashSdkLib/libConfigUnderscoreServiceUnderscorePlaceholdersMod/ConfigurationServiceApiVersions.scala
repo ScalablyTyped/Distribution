@@ -93,6 +93,8 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var iot1clickprojects: js.UndefOr[awsDashSdkLib.clientsIot1clickprojectsMod.apiVersion] = js.undefined
   var iotanalytics: js.UndefOr[awsDashSdkLib.clientsIotanalyticsMod.apiVersion] = js.undefined
   var iotdata: js.UndefOr[awsDashSdkLib.clientsIotdataMod.apiVersion] = js.undefined
+  var iotevents: js.UndefOr[awsDashSdkLib.clientsIoteventsMod.apiVersion] = js.undefined
+  var ioteventsdata: js.UndefOr[awsDashSdkLib.clientsIoteventsdataMod.apiVersion] = js.undefined
   var iotjobsdataplane: js.UndefOr[awsDashSdkLib.clientsIotjobsdataplaneMod.apiVersion] = js.undefined
   var iotthingsgraph: js.UndefOr[awsDashSdkLib.clientsIotthingsgraphMod.apiVersion] = js.undefined
   var kafka: js.UndefOr[awsDashSdkLib.clientsKafkaMod.apiVersion] = js.undefined
@@ -275,6 +277,8 @@ object ConfigurationServiceApiVersions {
     iot1clickprojects: awsDashSdkLib.clientsIot1clickprojectsMod.apiVersion = null,
     iotanalytics: awsDashSdkLib.clientsIotanalyticsMod.apiVersion = null,
     iotdata: awsDashSdkLib.clientsIotdataMod.apiVersion = null,
+    iotevents: awsDashSdkLib.clientsIoteventsMod.apiVersion = null,
+    ioteventsdata: awsDashSdkLib.clientsIoteventsdataMod.apiVersion = null,
     iotjobsdataplane: awsDashSdkLib.clientsIotjobsdataplaneMod.apiVersion = null,
     iotthingsgraph: awsDashSdkLib.clientsIotthingsgraphMod.apiVersion = null,
     kafka: awsDashSdkLib.clientsKafkaMod.apiVersion = null,
@@ -454,6 +458,8 @@ object ConfigurationServiceApiVersions {
     if (iot1clickprojects != null) __obj.updateDynamic("iot1clickprojects")(iot1clickprojects.asInstanceOf[js.Any])
     if (iotanalytics != null) __obj.updateDynamic("iotanalytics")(iotanalytics.asInstanceOf[js.Any])
     if (iotdata != null) __obj.updateDynamic("iotdata")(iotdata.asInstanceOf[js.Any])
+    if (iotevents != null) __obj.updateDynamic("iotevents")(iotevents.asInstanceOf[js.Any])
+    if (ioteventsdata != null) __obj.updateDynamic("ioteventsdata")(ioteventsdata.asInstanceOf[js.Any])
     if (iotjobsdataplane != null) __obj.updateDynamic("iotjobsdataplane")(iotjobsdataplane.asInstanceOf[js.Any])
     if (iotthingsgraph != null) __obj.updateDynamic("iotthingsgraph")(iotthingsgraph.asInstanceOf[js.Any])
     if (kafka != null) __obj.updateDynamic("kafka")(kafka.asInstanceOf[js.Any])

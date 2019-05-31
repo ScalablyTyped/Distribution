@@ -10,7 +10,7 @@ trait HookContext[T] extends js.Object {
     * A read only property that contains the Feathers application object. This can be used to
     * retrieve other services (via context.app.service('name')) or configuration values.
     */
-  val app: Application[_]
+  val app: Application[js.Object]
   /**
     * A writeable property containing the data of a create, update and patch service
     * method call.
@@ -76,7 +76,7 @@ trait HookContext[T] extends js.Object {
 object HookContext {
   @scala.inline
   def apply[T](
-    app: Application[_],
+    app: Application[js.Object],
     method: java.lang.String,
     params: Params,
     path: java.lang.String,

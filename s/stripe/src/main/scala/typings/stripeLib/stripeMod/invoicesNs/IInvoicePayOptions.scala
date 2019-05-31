@@ -29,7 +29,7 @@ trait IInvoicePayOptions
     * A payment source to be charged. The source must be the ID of a source
     * belonging to the customer associated with the invoice being paid.
     */
-  var source: js.UndefOr[stripeLib.stripeMod.sourcesNs.ISourceCreationOptions] = js.undefined
+  var source: js.UndefOr[java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions] = js.undefined
 }
 
 object IInvoicePayOptions {
@@ -40,7 +40,7 @@ object IInvoicePayOptions {
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
     paid_out_of_band: js.UndefOr[scala.Boolean] = js.undefined,
-    source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions = null
+    source: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions = null
   ): IInvoicePayOptions = {
     val __obj = js.Dynamic.literal()
     if (expand != null) __obj.updateDynamic("expand")(expand)

@@ -84,6 +84,9 @@ object sequelizeLibStrings {
   @js.native
   sealed trait unique extends js.Object
   
+  @js.native
+  sealed trait where extends js.Object
+  
   @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
   @scala.inline
@@ -134,5 +137,7 @@ object sequelizeLibStrings {
   def `primary key`: `primary key` = "primary key".asInstanceOf[`primary key`]
   @scala.inline
   def unique: unique = "unique".asInstanceOf[unique]
+  @scala.inline
+  def where: where = "where".asInstanceOf[where]
 }
 

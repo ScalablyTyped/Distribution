@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof react-table.react-table.Column.Basics<D> ]:? react-table.react-table.Column.Basics<D>[P]}
-- Dropped {[ P in keyof react-table.react-table.Column.CellProps<D> ]:? react-table.react-table.Column.CellProps<D>[P]}
-- Dropped {[ P in keyof react-table.react-table.Column.FilterProps<D> ]:? react-table.react-table.Column.FilterProps<D>[P]}
-- Dropped {[ P in keyof react-table.react-table.Column.FooterProps<D> ]:? react-table.react-table.Column.FooterProps<D>[P]}
-- Dropped {[ P in keyof react-table.react-table.Column.HeaderProps<D> ]:? react-table.react-table.Column.HeaderProps<D>[P]} */ trait Column[D] extends js.Object {
+- Dropped {[ P in keyof react-table.react-table.Column.Basics ]:? react-table.react-table.Column.Basics[P]}
+- Dropped {[ P in keyof react-table.react-table.Column.CellProps ]:? react-table.react-table.Column.CellProps[P]}
+- Dropped {[ P in keyof react-table.react-table.Column.FilterProps ]:? react-table.react-table.Column.FilterProps[P]}
+- Dropped {[ P in keyof react-table.react-table.Column.FooterProps ]:? react-table.react-table.Column.FooterProps[P]}
+- Dropped {[ P in keyof react-table.react-table.Column.HeaderProps ]:? react-table.react-table.Column.HeaderProps[P]} */ trait Column[D] extends js.Object {
   /**
     * Property name as string or Accessor
     * @example: 'myProperty'

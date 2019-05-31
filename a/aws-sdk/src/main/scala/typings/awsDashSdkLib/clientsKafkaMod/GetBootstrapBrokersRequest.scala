@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait GetBootstrapBrokersRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) that uniquely identifies the cluster.
+    * 
+    The Amazon Resource Name (ARN) that uniquely identifies the cluster.
+    
     */
   var ClusterArn: __string
 }

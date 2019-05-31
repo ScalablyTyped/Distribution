@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * receivers to create Bitcoin payments.
   */
 trait IBitcoinReceiver
-  extends stripeLib.stripeMod.IResourceObject {
+  extends stripeLib.stripeMod.IResourceObject
+     with stripeLib.stripeMod.IStripeSource {
   /**
     * True when this bitcoin receiver has received a non-zero amount of bitcoin.
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slate-react"
-version := "0.21-dt-20190326Z-3e4ec8"
+version := "0.22-dt-20190530Z-706019"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-ci
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 Detect if the current environment is a CI server
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for is-ci 1.1
+// Type definitions for is-ci 2.0
 // Project: https://github.com/watson/is-ci
-// Definitions by: Arne Schubert <https://github.com/atd-schubert>
+// Definitions by: Arne Schubert <https://github.com/atd-schubert>,
+//                 Florian Keller <https://github.com/ffflorian>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

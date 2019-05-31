@@ -742,6 +742,7 @@
 | [chui](./c/chui) | A module for creating Web apps with ChocolateChip- | JavaScript, ChocolateChip-UI, Hybrid App, Mobile, Web App, iOS, Android |
 | [chunk](./c/chunk) | Chunk converts arrays like  | array, chunk |
 | [chunked-dc](./c/chunked-dc) | Binary chunking for WebRTC data channels & more. | saltyrtc, webrtc, ortc, chunking |
+| [ci-info](./c/ci-info) | Get details about the current Continuous Integrati | ci, continuous, integration, test, detect |
 | [cipher-base](./c/cipher-base) | abstract base class for crypto-streams | cipher, stream |
 | [circuit-breaker-js](./c/circuit-breaker-js) | Hystrix-like circuit breaker for JavaScript. | - |
 | [circular-dependency-plugi](./c/circular-dependency-plugin) | Detect modules with circular dependencies when bun | - |
@@ -1077,6 +1078,7 @@
 | [d3-hierarchy](./d/d3-hierarchy) | Layout algorithms for visualizing hierarchical dat | d3, d3-module, layout, tree, treemap, hierarchy, infovis |
 | [d3-hsv](./d/d3-hsv) | The HSV (Hue, Saturation, Value) color space. | d3, d3-module, color, hsv |
 | [d3-interpolate](./d/d3-interpolate) | Interpolate numbers, colors, strings, arrays, obje | d3, d3-module, interpolate, interpolation, color |
+| [d3-interpolate-path](./d/d3-interpolate-path) | Interpolates path d attribute smoothly when A and  | d3, d3-module, d3-interpolate, d3-interpolate-path |
 | [d3-path](./d/d3-path) | Serialize Canvas path commands to SVG. | d3, d3-module, canvas, path, svg, graphics, CanvasRenderingContext2D, CanvasPathMethods, Path2D |
 | [d3-polygon](./d/d3-polygon) | Operations for two-dimensional polygons. | d3, d3-module, polygon, hull, geometry, graphics |
 | [d3-quadtree](./d/d3-quadtree) | Two-dimensional recursive spatial subdivision. | d3, d3-module, quadtree |
@@ -1228,6 +1230,7 @@
 | [dingtalk-robot-sender](./d/dingtalk-robot-sender) | 钉钉机器人消息推送 | dingtalk, robot |
 | [dir-glob](./d/dir-glob) | Convert directories to glob compatible strings | convert, directory, extensions, files, glob |
 | [dir-resolve](./d/dir-resolve) | Extension for require.resolve which will resolve d | require, resolve, directory |
+| [dir-walker-gen](./d/dir-walker-gen) | A javascript generator pattern for directlry listi | utils, fs, filesystem, directory, generator |
 | [dirname-regex](./d/dirname-regex) | Regular expression for matching the directory part | dir, directory, dirname, expression, filepath, match, path, regex, regexp, regular |
 | [dirty-chai](./d/dirty-chai) | Extends Chai with lint-friendly terminating assert | chai, chai-plugin, browser, testing |
 | [discontinuous-range](./d/discontinuous-range) | for adding, subtracting, and indexing discontinuou | discontinuous, range, set |
@@ -1319,6 +1322,7 @@
 | [dwt](./d/dwt) | Dynamic Web TWAIN is a TWAIN/ICA/SANE-based scanni | TWAIN, JavaScript, document, scanning, web, browser, cross-platform, scanner, document management, HTML5 scan, JavaScript scan, Web scan, HTML5 scanner, JavaScript scanner, web scanner, HTML5 scanning, JavaScript scanning, Web scanning, TWAIN, WIA, Web TWAIN, document scanning, SANE |
 | [dygraphs](./d/dygraphs) | dygraphs is a fast, flexible open source JavaScrip | dygraphs, javascript, visualization, canvas, chart, timeseries |
 | [dymo-label-framework](./d/dymo-label-framework) | - | - |
+| [dynamic-time-warping](./d/dynamic-time-warping) | Dynamic time warping for Javascript | dynamic, time, warping |
 | [dynamodb](./d/dynamodb) | DynamoDB data mapper for node.js | datamapper, DynamoDB, aws, amazon, nosql |
 | [dynatable](./d/dynatable) | A wrapper for DynamoDB tables, with a promise wrap | dynamodb |
 | [dynatrace](./d/dynatrace) | This package is no longer supported and has been d | - |
@@ -1669,6 +1673,7 @@
 | [fetch_dot_io](./f/fetch_dot_io) | extends the whatwg fetch api, makes it easier to u | request, axios, fetch, ajax, http, api |
 | [ffi](./f/ffi) | A foreign function interface (FFI) for Node.js | foreign, function, interface, ffi, libffi, binding, c |
 | [ffi-napi](./f/ffi-napi) | A foreign function interface (FFI) for Node.js, N- | foreign, function, interface, ffi, libffi, binding, c, napi, stable |
+| [ffmpeg](./f/ffmpeg) | Utility for managing video streams using ffmpeg | - |
 | [ffmpeg-static](./f/ffmpeg-static) | ffmpeg static binaries for Mac OSX and Linux and W | ffmpeg, static, library, binary, binaries, mac, linux, windows |
 | [ffprobe-static](./f/ffprobe-static) | Static binaries for ffprobe. | ffprobe, ffmpeg |
 | [fhir](./f/fhir) | Library that assists in handling FHIR resources. S | fhir, healthcare, interoperability, xml, json, serialization, hl7, standards, clinical |
@@ -2981,6 +2986,7 @@
 | [json-stream-stringify](./j/json-stream-stringify) | JSON.Stringify as a readable stream | - |
 | [json-stringify-pretty-com](./j/json-stringify-pretty-compact) | The best of both JSON.stringify(obj) and JSON.stri | JSON, stringify, pretty, print, pretty-print, compact, indent, format, formatter |
 | [json-stringify-safe](./j/json-stringify-safe) | Like JSON.stringify, but doesn't blow up on circul | json, stringify, circular, safe |
+| [json-to-ast](./j/json-to-ast) | JSON AST parser | json-parser, parser, ast, json, tree |
 | [json2csv](./j/json2csv) | Convert JSON to CSV | json, to, csv, export, convert, parse |
 | [json2md](./j/json2md) | A JSON to Markdown converter. | json, markdown, converter, generator |
 | [json2mq](./j/json2mq) | Generate media query string from JSON or javascrip | - |
@@ -5201,6 +5207,7 @@
 | [react-native-keychain](./r/react-native-keychain) | Keychain Access for React Native | react-native, react-component, react-native-component, react, mobile, ios, android, keychain |
 | [react-native-linear-gradi](./r/react-native-linear-gradient) | A  element for React Native | - |
 | [react-native-loading-spin](./r/react-native-loading-spinner-overlay) | The only pure React Native Native iOS and Android  | activity, android, bar, full, indicator, ios, loading, modal, native, pop-up, popup, progress, react, react-native, screen, spinner, view |
+| [react-native-mail](./r/react-native-mail) | A wrapper on top of MFMailComposeViewController fr | react, react-native, react-component, ios, android, email, MFMailComposeViewController |
 | [react-native-maps](./r/react-native-maps) | React Native Mapview component for iOS + Android | react, react-native, react-component, map, mapview, google-maps, mapkit |
 | [react-native-material-des](./r/react-native-material-design-searchbar) | A React Native Material Design SearchBar | react-native, Search, component, SearchBar, Material Design |
 | [react-native-material-dro](./r/react-native-material-dropdown) | Material dropdown | react, react-component, react-native, ios, android, material, dropdown, spinner, select |
@@ -5644,6 +5651,7 @@
 | [roads](./r/roads) | An isomophic http framework | api, framework, isomorphic |
 | [roads-server](./r/roads-server) | A simple web server for the roads framework | - |
 | [roarr](./r/roarr) | JSON logger for Node.js and browser. | log, logger, json |
+| [robust-point-in-polygon](./r/robust-point-in-polygon) | Exactly test if a point is inside, outside or on t | robust, point, in, polygon, pnp, inside, outside, on, exact, arithmetic |
 | [rocksdb](./r/rocksdb) | A Node.js RocksDB binding, a backend for LevelUP | leveldb, level |
 | [roll](./r/roll) | node.js package for rolling dice and adding modifi | roll, random, dice, games, rpg, role playing |
 | [rolling-rate-limiter](./r/rolling-rate-limiter) | Rate limiter that supports a rolling window, eithe | rate, limiter, ratelimiter, redis, rolling, window |

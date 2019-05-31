@@ -223,16 +223,11 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Deletes a file in a repository.
     *
+    * You can provide an additional `committer` parameter, which is an object containing information about the committer. Or, you can provide an `author` parameter, which is an object containing information about the author.
+    *
     * The `author` section is optional and is filled in with the `committer` information if omitted. If the `committer` information is omitted, the authenticated user's information is used.
     *
     * You must provide values for both `name` and `email`, whether you choose to use `author` or `committer`. Otherwise, you'll receive a `422` status code.
-    *
-    * Both the `author` and `committer` parameters have the same keys:
-    *
-    * | name  | type   | description                                          |
-    * | ----- | ------ | ---------------------------------------------------- |
-    * | name  | string | The name of the author (or committer) of the commit  |
-    * | email | string | The email of the author (or committer) of the commit |
     */
   @JSName("deleteFile")
   var deleteFile_Original: Anon_EndpointParamsPromiseReposDeleteFileParams = js.native
@@ -1196,16 +1191,11 @@ trait Anon_AcceptInvitation extends js.Object {
   /**
     * Deletes a file in a repository.
     *
+    * You can provide an additional `committer` parameter, which is an object containing information about the committer. Or, you can provide an `author` parameter, which is an object containing information about the author.
+    *
     * The `author` section is optional and is filled in with the `committer` information if omitted. If the `committer` information is omitted, the authenticated user's information is used.
     *
     * You must provide values for both `name` and `email`, whether you choose to use `author` or `committer`. Otherwise, you'll receive a `422` status code.
-    *
-    * Both the `author` and `committer` parameters have the same keys:
-    *
-    * | name  | type   | description                                          |
-    * | ----- | ------ | ---------------------------------------------------- |
-    * | name  | string | The name of the author (or committer) of the commit  |
-    * | email | string | The email of the author (or committer) of the commit |
     */
   def deleteFile(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDeleteFileResponse]

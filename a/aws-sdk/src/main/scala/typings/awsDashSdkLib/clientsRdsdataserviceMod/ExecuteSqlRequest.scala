@@ -7,23 +7,26 @@ import scala.scalajs.js.annotation._
 
 trait ExecuteSqlRequest extends js.Object {
   /**
-    * ARN of the db credentials in AWS Secret Store or the friendly secret name
+    * The Amazon Resource Name (ARN) of the secret that enables access to the DB cluster.
     */
   var awsSecretStoreArn: Arn
   /**
-    * Target DB name
+    * The name of the database.
     */
   var database: js.UndefOr[DbName] = js.undefined
   /**
-    * ARN of the target db cluster or instance
+    * The ARN of the Aurora Serverless DB cluster.
     */
   var dbClusterOrInstanceArn: Arn
   /**
-    * Target Schema name
+    * The name of the database schema.
     */
   var schema: js.UndefOr[DbName] = js.undefined
   /**
-    * SQL statement(s) to be executed. Statements can be chained by using semicolons
+    * One or more SQL statements to run on the DB cluster.
+    You can separate SQL statements from each other with a semicolon (;). Any valid SQL
+    statement is permitted, including data definition, data manipulation, and commit
+    statements. 
     */
   var sqlStatements: SqlStatement
 }

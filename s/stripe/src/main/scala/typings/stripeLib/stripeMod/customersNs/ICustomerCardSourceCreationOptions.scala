@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait ICustomerCardSourceCreationOptions extends ICustomerSourceCreationOptions {
   @JSName("source")
-  var source_ICustomerCardSourceCreationOptions: stripeLib.stripeMod.cardsNs.ISourceCreationOptions
+  var source_ICustomerCardSourceCreationOptions: stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions
 }
 
 object ICustomerCardSourceCreationOptions {
   @scala.inline
   def apply(
-    source: stripeLib.stripeMod.cardsNs.ISourceCreationOptions,
+    source: stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions,
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null

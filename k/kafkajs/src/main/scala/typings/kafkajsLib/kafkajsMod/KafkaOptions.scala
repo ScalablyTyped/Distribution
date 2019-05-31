@@ -9,6 +9,7 @@ trait KafkaOptions extends js.Object {
   var brokers: js.Array[java.lang.String]
   var clientId: js.UndefOr[java.lang.String] = js.undefined
   var connectionTimeout: js.UndefOr[scala.Double] = js.undefined
+  var logCreator: js.UndefOr[js.Function0[js.Function1[/* message */ LoggerMessage, scala.Unit]]] = js.undefined
   var logLevel: js.UndefOr[logLevel] = js.undefined
   var requestTimeout: js.UndefOr[scala.Double] = js.undefined
   var retry: js.UndefOr[RetryOptions] = js.undefined
@@ -22,6 +23,7 @@ object KafkaOptions {
     brokers: js.Array[java.lang.String],
     clientId: java.lang.String = null,
     connectionTimeout: scala.Int | scala.Double = null,
+    logCreator: () => js.Function1[/* message */ LoggerMessage, scala.Unit] = null,
     logLevel: logLevel = null,
     requestTimeout: scala.Int | scala.Double = null,
     retry: RetryOptions = null,
@@ -31,6 +33,7 @@ object KafkaOptions {
     val __obj = js.Dynamic.literal(brokers = brokers)
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
+    if (logCreator != null) __obj.updateDynamic("logCreator")(js.Any.fromFunction0(logCreator))
     if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     if (retry != null) __obj.updateDynamic("retry")(retry)

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "cassanknex"
-version := "1.19-dt-20190304Z-fadb0b"
+version := "1.19-dt-20190304Z-a92814"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "cassandra-driver" % "4.0-dt-20190221Z-903212",
+  "org.scalablytyped" %%% "cassandra-driver" % "4.0-dt-20190221Z-369077",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20190322Z-872141",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-2c614a",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

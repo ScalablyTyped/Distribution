@@ -30,6 +30,10 @@ trait Datastore extends js.Object {
     * The status of a data store:  CREATING  The data store is being created.  ACTIVE  The data store has been created and can be used.  DELETING  The data store is being deleted.  
     */
   var status: js.UndefOr[DatastoreStatus] = js.undefined
+  /**
+    * Where data store data is stored.
+    */
+  var storage: js.UndefOr[DatastoreStorage] = js.undefined
 }
 
 object Datastore {
@@ -40,7 +44,8 @@ object Datastore {
     lastUpdateTime: Timestamp = null,
     name: DatastoreName = null,
     retentionPeriod: RetentionPeriod = null,
-    status: DatastoreStatus = null
+    status: DatastoreStatus = null,
+    storage: DatastoreStorage = null
   ): Datastore = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn)
@@ -49,6 +54,7 @@ object Datastore {
     if (name != null) __obj.updateDynamic("name")(name)
     if (retentionPeriod != null) __obj.updateDynamic("retentionPeriod")(retentionPeriod)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (storage != null) __obj.updateDynamic("storage")(storage)
     __obj.asInstanceOf[Datastore]
   }
 }

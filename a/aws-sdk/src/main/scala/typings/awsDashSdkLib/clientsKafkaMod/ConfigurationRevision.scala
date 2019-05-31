@@ -7,15 +7,21 @@ import scala.scalajs.js.annotation._
 
 trait ConfigurationRevision extends js.Object {
   /**
-    * The time when the configuration revision was created.
+    * 
+    The time when the configuration revision was created.
+    
     */
   var CreationTime: __timestampIso8601
   /**
-    * The description of the configuration revision.
+    * 
+    The description of the configuration revision.
+    
     */
   var Description: js.UndefOr[__string] = js.undefined
   /**
-    * The revision number.
+    * 
+    The revision number.
+    
     */
   var Revision: __long
 }

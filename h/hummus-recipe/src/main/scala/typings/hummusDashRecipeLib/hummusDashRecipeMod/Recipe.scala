@@ -22,7 +22,7 @@ trait Recipe extends js.Object {
   def editPage(pageNumber: scala.Double): Recipe = js.native
   def encrypt(options: EncryptOptions): Recipe = js.native
   def endPDF(): Recipe = js.native
-  def endPDF(callback: js.Function0[_]): Recipe = js.native
+  def endPDF(callback: EndPDFCallback): Recipe = js.native
   def endPage(): Recipe = js.native
   def image(imgSrc: java.lang.String, x: scala.Double, y: scala.Double): Recipe = js.native
   def image(imgSrc: java.lang.String, x: scala.Double, y: scala.Double, options: ImageOptions): Recipe = js.native

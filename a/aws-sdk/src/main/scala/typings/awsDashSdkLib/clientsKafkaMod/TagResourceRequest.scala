@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait TagResourceRequest extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) that uniquely identifies the resource.
+    * 
+    The Amazon Resource Name (ARN) that uniquely identifies the resource that's associated with the tags.
+    
     */
   var ResourceArn: __string
   /**
-    * The key-value pairs for the resource tags
+    * 
+    The key-value pair for the resource tag.
+    
     */
   var Tags: __mapOf__string
 }

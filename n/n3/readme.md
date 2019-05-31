@@ -1,7 +1,7 @@
 
 # Scala.js typings for n3
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Lightning fast, asynchronous, streaming Turtle / N3 / RDF library.
@@ -35,13 +35,13 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for N3 1.0
+// Type definitions for N3 1.1
 // Project: https://github.com/rdfjs/n3.js
 // Definitions by: Fred Eisele <https://github.com/phreed>
 //                 Ruben Taelman <https://github.com/rubensworks>
 //                 Laurens Rietveld <https://github.com/LaurensRietveld>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.4
 
 ```
 

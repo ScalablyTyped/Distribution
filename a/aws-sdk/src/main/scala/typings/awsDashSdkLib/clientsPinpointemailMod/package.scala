@@ -138,6 +138,12 @@ package object clientsPinpointemailMod {
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
   type Timestamp = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.REQUIRE
+    - awsDashSdkLib.awsDashSdkLibStrings.OPTIONAL
+    - java.lang.String
+  */
+  type TlsPolicy = _TlsPolicy | java.lang.String
   type Volume = scala.Double
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS

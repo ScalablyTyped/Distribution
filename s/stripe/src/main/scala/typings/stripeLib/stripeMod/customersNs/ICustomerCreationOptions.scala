@@ -53,7 +53,9 @@ trait ICustomerCreationOptions
     * The source can either be a token, like the ones returned by our Stripe.js, or
     * a dictionary containing a user’s credit card details.
     */
-  var source: js.UndefOr[stripeLib.stripeMod.sourcesNs.ISourceCreationOptionsExtended] = js.undefined
+  var source: js.UndefOr[
+    java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptionsExtended
+  ] = js.undefined
   /**
     * A positive decimal (with at most two decimal places) between 1 and 100.
     * This represents the percentage of the subscription invoice subtotal that
@@ -86,7 +88,7 @@ object ICustomerCreationOptions {
     plan: java.lang.String = null,
     quantity: scala.Int | scala.Double = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
-    source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptionsExtended = null,
+    source: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptionsExtended = null,
     tax_percent: scala.Int | scala.Double = null,
     trial_end: scala.Double | stripeLib.stripeLibStrings.now = null
   ): ICustomerCreationOptions = {

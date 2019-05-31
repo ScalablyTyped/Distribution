@@ -11,6 +11,10 @@ trait ChannelSummary extends js.Object {
     */
   var channelName: js.UndefOr[ChannelName] = js.undefined
   /**
+    * Where channel data is stored.
+    */
+  var channelStorage: js.UndefOr[ChannelStorageSummary] = js.undefined
+  /**
     * When the channel was created.
     */
   var creationTime: js.UndefOr[Timestamp] = js.undefined
@@ -28,12 +32,14 @@ object ChannelSummary {
   @scala.inline
   def apply(
     channelName: ChannelName = null,
+    channelStorage: ChannelStorageSummary = null,
     creationTime: Timestamp = null,
     lastUpdateTime: Timestamp = null,
     status: ChannelStatus = null
   ): ChannelSummary = {
     val __obj = js.Dynamic.literal()
     if (channelName != null) __obj.updateDynamic("channelName")(channelName)
+    if (channelStorage != null) __obj.updateDynamic("channelStorage")(channelStorage)
     if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
     if (lastUpdateTime != null) __obj.updateDynamic("lastUpdateTime")(lastUpdateTime)
     if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])

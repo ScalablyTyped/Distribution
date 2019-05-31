@@ -231,25 +231,88 @@ trait Model[TInstance, TAttributes, TCreationAttributes]
     */
   def findById[TCustomAttributes](): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findById[TCustomAttributes](identifier: java.lang.String): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
-  def findById[TCustomAttributes](identifier: java.lang.String, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findById[TCustomAttributes](identifier: nodeLib.Buffer): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
-  def findById[TCustomAttributes](identifier: nodeLib.Buffer, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findById[TCustomAttributes](identifier: scala.Double): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
-  def findById[TCustomAttributes](identifier: scala.Double, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
+  @JSName("findById")
+  def findById_where[TCustomAttributes](
+    identifier: java.lang.String,
+    options: sequelizeLib.Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      sequelizeLib.sequelizeLibStrings.where
+    ]
+  ): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
+  @JSName("findById")
+  def findById_where[TCustomAttributes](
+    identifier: nodeLib.Buffer,
+    options: sequelizeLib.Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      sequelizeLib.sequelizeLibStrings.where
+    ]
+  ): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
+  @JSName("findById")
+  def findById_where[TCustomAttributes](
+    identifier: scala.Double,
+    options: sequelizeLib.Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      sequelizeLib.sequelizeLibStrings.where
+    ]
+  ): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findByPk[TCustomAttributes](): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findByPk[TCustomAttributes](identifier: java.lang.String): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
-  def findByPk[TCustomAttributes](identifier: java.lang.String, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findByPk[TCustomAttributes](identifier: nodeLib.Buffer): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
-  def findByPk[TCustomAttributes](identifier: nodeLib.Buffer, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findByPk[TCustomAttributes](identifier: scala.Double): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
-  def findByPk[TCustomAttributes](identifier: scala.Double, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
+  @JSName("findByPk")
+  def findByPk_where[TCustomAttributes](
+    identifier: java.lang.String,
+    options: sequelizeLib.Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      sequelizeLib.sequelizeLibStrings.where
+    ]
+  ): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
+  @JSName("findByPk")
+  def findByPk_where[TCustomAttributes](
+    identifier: nodeLib.Buffer,
+    options: sequelizeLib.Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      sequelizeLib.sequelizeLibStrings.where
+    ]
+  ): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
+  @JSName("findByPk")
+  def findByPk_where[TCustomAttributes](
+    identifier: scala.Double,
+    options: sequelizeLib.Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      sequelizeLib.sequelizeLibStrings.where
+    ]
+  ): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findByPrimary[TCustomAttributes](): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findByPrimary[TCustomAttributes](identifier: java.lang.String): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
-  def findByPrimary[TCustomAttributes](identifier: java.lang.String, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findByPrimary[TCustomAttributes](identifier: nodeLib.Buffer): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
-  def findByPrimary[TCustomAttributes](identifier: nodeLib.Buffer, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   def findByPrimary[TCustomAttributes](identifier: scala.Double): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
-  def findByPrimary[TCustomAttributes](identifier: scala.Double, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
+  @JSName("findByPrimary")
+  def findByPrimary_where[TCustomAttributes](
+    identifier: java.lang.String,
+    options: sequelizeLib.Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      sequelizeLib.sequelizeLibStrings.where
+    ]
+  ): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
+  @JSName("findByPrimary")
+  def findByPrimary_where[TCustomAttributes](
+    identifier: nodeLib.Buffer,
+    options: sequelizeLib.Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      sequelizeLib.sequelizeLibStrings.where
+    ]
+  ): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
+  @JSName("findByPrimary")
+  def findByPrimary_where[TCustomAttributes](
+    identifier: scala.Double,
+    options: sequelizeLib.Omit[
+      FindOptions[TAttributes with TCustomAttributes], 
+      sequelizeLib.sequelizeLibStrings.where
+    ]
+  ): bluebirdLib.bluebirdMod.^[TInstance | scala.Null] = js.native
   /**
     * A more performant findOrCreate that will not work under a transaction (at least not in postgres)
     * Will execute a find call, if empty then attempt to create, if unique constraint then attempt to find again

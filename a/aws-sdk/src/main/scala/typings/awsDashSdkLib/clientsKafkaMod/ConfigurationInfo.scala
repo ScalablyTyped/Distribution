@@ -7,11 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait ConfigurationInfo extends js.Object {
   /**
-    * ARN of the configuration to use.
+    * 
+    ARN of the configuration to use.
+    
     */
   var Arn: __string
   /**
-    * The revision of the configuration to use.
+    * 
+    The revision of the configuration to use.
+    
     */
   var Revision: __long
 }

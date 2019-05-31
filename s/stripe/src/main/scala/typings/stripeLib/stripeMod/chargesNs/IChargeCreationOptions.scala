@@ -76,7 +76,7 @@ trait IChargeCreationOptions
     * below. Although not all information is required, the extra info helps
     * prevent fraud.
     */
-  var source: js.UndefOr[stripeLib.stripeMod.sourcesNs.ISourceCreationOptions] = js.undefined
+  var source: js.UndefOr[java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions] = js.undefined
   /**
     * An arbitrary string to be displayed on your customer's credit card
     * statement. This may be up to 22 characters. As an example, if your
@@ -118,7 +118,7 @@ object IChargeCreationOptions {
     on_behalf_of: java.lang.String = null,
     receipt_email: java.lang.String = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
-    source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions = null,
+    source: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions = null,
     statement_descriptor: java.lang.String = null,
     transfer_data: stripeLib.Anon_AmountDestination = null,
     transfer_group: java.lang.String = null

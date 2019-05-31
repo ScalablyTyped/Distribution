@@ -7,16 +7,22 @@ import scala.scalajs.js.annotation._
 
 trait ListClustersRequest extends js.Object {
   /**
-    * Specify a prefix of the name of the clusters that you want to list. The service lists all the clusters whose names start with this prefix.
+    * 
+    Specify a prefix of the name of the clusters that you want to list. The service lists all the clusters whose names start with this prefix.
+    
     */
   var ClusterNameFilter: js.UndefOr[__string] = js.undefined
   /**
-    * The maximum number of clusters to return in the response. If there are more clusters, the response includes a NextToken parameter.
+    * 
+    The maximum number of results to return in the response. If there are more results, the response includes a NextToken parameter.
+    
     */
   var MaxResults: js.UndefOr[MaxResults] = js.undefined
   /**
-    * The paginated results marker. When the result of a ListClusters operation is truncated, the call returns NextToken in the response. 
-    To get another batch of clusters, provide this token in your next request.
+    * 
+    The paginated results marker. When the result of the operation is truncated, the call returns NextToken in the response. 
+    To get the next batch, provide this token in your next request.
+    
     */
   var NextToken: js.UndefOr[__string] = js.undefined
 }

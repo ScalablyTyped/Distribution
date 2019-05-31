@@ -7,59 +7,59 @@ import scala.scalajs.js.annotation._
 
 trait ColumnMetadata extends js.Object {
   /**
-    * Homogenous array base SQL type from java.sql.Types.
+    * The type of the column.
     */
   var arrayBaseColumnType: js.UndefOr[Integer] = js.undefined
   /**
-    * Whether the designated column is automatically numbered
+    * A value that indicates whether the column increments automatically.
     */
   var isAutoIncrement: js.UndefOr[Boolean] = js.undefined
   /**
-    * Whether values in the designated column's case matters
+    * A value that indicates whether the column is case-sensitive.
     */
   var isCaseSensitive: js.UndefOr[Boolean] = js.undefined
   /**
-    * Whether values in the designated column is a cash value
+    * A value that indicates whether the column contains currency values.
     */
   var isCurrency: js.UndefOr[Boolean] = js.undefined
   /**
-    * Whether values in the designated column are signed numbers
+    * A value that indicates whether an integer column is signed.
     */
   var isSigned: js.UndefOr[Boolean] = js.undefined
   /**
-    * Usually specified by the SQL AS. If not specified, return column name.
+    * The label for the column.
     */
   var label: js.UndefOr[String] = js.undefined
   /**
-    * Name of the column.
+    * The name of the column.
     */
   var name: js.UndefOr[String] = js.undefined
   /**
-    * Indicates the nullability of values in the designated column. One of columnNoNulls (0), columnNullable (1), columnNullableUnknown (2)
+    * A value that indicates whether the column is nullable.
     */
   var nullable: js.UndefOr[Integer] = js.undefined
   /**
-    * Get the designated column's specified column size.For numeric data, this is the maximum precision.  For character data, this is the length in characters. For datetime datatypes, this is the length in characters of the String representation (assuming the maximum allowed precision of the fractional seconds component). For binary data, this is the length in bytes.  For the ROWID datatype, this is the length in bytes. 0 is returned for data types where the column size is not applicable.
+    * The precision value of a decimal number column.
     */
   var precision: js.UndefOr[Integer] = js.undefined
   /**
-    * Designated column's number of digits to right of the decimal point. 0 is returned for data types where the scale is not applicable.
+    * The scale value of a decimal number column.
     */
   var scale: js.UndefOr[Integer] = js.undefined
   /**
-    * Designated column's table's schema
+    * The name of the schema that owns the table that includes the column.
     */
   var schemaName: js.UndefOr[String] = js.undefined
   /**
-    * Designated column's table name
+    * The name of the table that includes the column.
     */
   var tableName: js.UndefOr[String] = js.undefined
   /**
-    * SQL type from java.sql.Types.
+    * The type of the column.
     */
   var `type`: js.UndefOr[Integer] = js.undefined
   /**
-    * Database-specific type name.
+    * The database-specific data type of the column.
     */
   var typeName: js.UndefOr[String] = js.undefined
 }

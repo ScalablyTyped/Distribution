@@ -33,6 +33,22 @@ trait Plugin extends js.Object {
   var onKeyDown: js.UndefOr[EventHook] = js.undefined
   var onPaste: js.UndefOr[EventHook] = js.undefined
   var onSelect: js.UndefOr[EventHook] = js.undefined
+  var renderBlock: js.UndefOr[
+    js.Function3[
+      /* props */ RenderBlockProps, 
+      /* editor */ slateLib.slateMod.Editor, 
+      /* next */ js.Function0[_], 
+      _
+    ]
+  ] = js.undefined
+  var renderDocument: js.UndefOr[
+    js.Function3[
+      /* props */ RenderDocumentProps, 
+      /* editor */ slateLib.slateMod.Editor, 
+      /* next */ js.Function0[_], 
+      _
+    ]
+  ] = js.undefined
   var renderEditor: js.UndefOr[
     js.Function3[
       /* props */ EditorProps, 
@@ -41,17 +57,17 @@ trait Plugin extends js.Object {
       _
     ]
   ] = js.undefined
-  var renderMark: js.UndefOr[
+  var renderInline: js.UndefOr[
     js.Function3[
-      /* props */ RenderMarkProps, 
+      /* props */ RenderInlineProps, 
       /* editor */ slateLib.slateMod.Editor, 
       /* next */ js.Function0[_], 
       _
     ]
   ] = js.undefined
-  var renderNode: js.UndefOr[
+  var renderMark: js.UndefOr[
     js.Function3[
-      /* props */ RenderNodeProps, 
+      /* props */ RenderMarkProps, 
       /* editor */ slateLib.slateMod.Editor, 
       /* next */ js.Function0[_], 
       _
@@ -91,9 +107,11 @@ object Plugin {
     onKeyDown: EventHook = null,
     onPaste: EventHook = null,
     onSelect: EventHook = null,
+    renderBlock: (/* props */ RenderBlockProps, /* editor */ slateLib.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
+    renderDocument: (/* props */ RenderDocumentProps, /* editor */ slateLib.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     renderEditor: (/* props */ EditorProps, /* editor */ slateLib.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
+    renderInline: (/* props */ RenderInlineProps, /* editor */ slateLib.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     renderMark: (/* props */ RenderMarkProps, /* editor */ slateLib.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
-    renderNode: (/* props */ RenderNodeProps, /* editor */ slateLib.slateMod.Editor, /* next */ js.Function0[_]) => _ = null,
     shouldNodeComponentUpdate: (/* previousProps */ RenderNodeProps, /* props */ RenderNodeProps, /* editor */ slateLib.slateMod.Editor, /* next */ js.Function0[_]) => _ = null
   ): Plugin = {
     val __obj = js.Dynamic.literal()
@@ -117,9 +135,11 @@ object Plugin {
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
     if (onPaste != null) __obj.updateDynamic("onPaste")(onPaste)
     if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (renderBlock != null) __obj.updateDynamic("renderBlock")(js.Any.fromFunction3(renderBlock))
+    if (renderDocument != null) __obj.updateDynamic("renderDocument")(js.Any.fromFunction3(renderDocument))
     if (renderEditor != null) __obj.updateDynamic("renderEditor")(js.Any.fromFunction3(renderEditor))
+    if (renderInline != null) __obj.updateDynamic("renderInline")(js.Any.fromFunction3(renderInline))
     if (renderMark != null) __obj.updateDynamic("renderMark")(js.Any.fromFunction3(renderMark))
-    if (renderNode != null) __obj.updateDynamic("renderNode")(js.Any.fromFunction3(renderNode))
     if (shouldNodeComponentUpdate != null) __obj.updateDynamic("shouldNodeComponentUpdate")(js.Any.fromFunction4(shouldNodeComponentUpdate))
     __obj.asInstanceOf[Plugin]
   }

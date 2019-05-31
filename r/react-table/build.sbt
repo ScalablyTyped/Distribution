@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-table"
-version := "6.8-dt-20190528Z-0c79d1"
+version := "6.8-dt-20190530Z-b2c05f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

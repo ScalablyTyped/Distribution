@@ -31,4 +31,5 @@ package object stripeMod {
     */
   type IOptionsMetadata = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
   type IResponseFn[R] = js.Function2[/* err */ IStripeError, /* value */ R, scala.Unit]
+  type ISource = stripeLib.stripeMod.sourcesNs.ISource
 }

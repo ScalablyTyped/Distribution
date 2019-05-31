@@ -1817,9 +1817,7 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.customersNs.ICustomerCardSourceCreationOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.cardsNs.ICard]
     ): js.Promise[stripeLib.stripeMod.cardsNs.ICard] = js.native
-    def createSource(customerId: java.lang.String, data: stripeLib.stripeMod.customersNs.ICustomerSourceCreationOptions): js.Promise[
-        stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-      ] = js.native
+    def createSource(customerId: java.lang.String, data: stripeLib.stripeMod.customersNs.ICustomerSourceCreationOptions): js.Promise[stripeLib.stripeMod.IStripeSource] = js.native
     /**
       * When adding a card to a customer, the parameter name is source. When
       * adding to an account, the parameter name is external_account. The
@@ -1835,28 +1833,18 @@ object resourcesNs extends js.Object {
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.ICustomerSourceCreationOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[
-        stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-      ] = js.native
+    ): js.Promise[stripeLib.stripeMod.IStripeSource] = js.native
     def createSource(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.ICustomerSourceCreationOptions,
       options: stripeLib.stripeMod.HeaderOptions,
-      response: stripeLib.stripeMod.IResponseFn[
-          stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-        ]
-    ): js.Promise[
-        stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-      ] = js.native
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IStripeSource]
+    ): js.Promise[stripeLib.stripeMod.IStripeSource] = js.native
     def createSource(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.customersNs.ICustomerSourceCreationOptions,
-      response: stripeLib.stripeMod.IResponseFn[
-          stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-        ]
-    ): js.Promise[
-        stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-      ] = js.native
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IStripeSource]
+    ): js.Promise[stripeLib.stripeMod.IStripeSource] = js.native
     def createSubscription(
       customerId: java.lang.String,
       data: stripeLib.stripeMod.subscriptionsNs.ISubscriptionCustCreationOptions
@@ -2147,6 +2135,23 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.customersNs.ICardSourceListOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]]
     ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.cardsNs.ICard]] = js.native
+    def listSources(customerId: java.lang.String, data: stripeLib.stripeMod.customersNs.ISourceListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]] = js.native
+    def listSources(
+      customerId: java.lang.String,
+      data: stripeLib.stripeMod.customersNs.ISourceListOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]] = js.native
+    def listSources(
+      customerId: java.lang.String,
+      data: stripeLib.stripeMod.customersNs.ISourceListOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]]
+    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]] = js.native
+    def listSources(
+      customerId: java.lang.String,
+      data: stripeLib.stripeMod.customersNs.ISourceListOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]]
+    ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.sourcesNs.ISource]] = js.native
     def listSubscriptions(customerId: java.lang.String): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
     def listSubscriptions(customerId: java.lang.String, data: stripeLib.stripeMod.IListOptions): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.subscriptionsNs.ISubscription]] = js.native
     /**
@@ -2245,9 +2250,7 @@ object resourcesNs extends js.Object {
       cardId: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.cardsNs.ICard]
     ): js.Promise[stripeLib.stripeMod.cardsNs.ICard] = js.native
-    def retrieveSource(customerId: java.lang.String, sourceId: java.lang.String): js.Promise[
-        stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-      ] = js.native
+    def retrieveSource(customerId: java.lang.String, sourceId: java.lang.String): js.Promise[stripeLib.stripeMod.IStripeSource] = js.native
     /**
       * By default, you can see the 10 most recent cards/bank accounts stored on a customer or recipient directly on the customer or recipient object, but
       * you can also retrieve details about a specific card/bank account stored on the customer or recipient.
@@ -2261,28 +2264,18 @@ object resourcesNs extends js.Object {
       customerId: java.lang.String,
       sourceId: java.lang.String,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[
-        stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-      ] = js.native
+    ): js.Promise[stripeLib.stripeMod.IStripeSource] = js.native
     def retrieveSource(
       customerId: java.lang.String,
       sourceId: java.lang.String,
       options: stripeLib.stripeMod.HeaderOptions,
-      response: stripeLib.stripeMod.IResponseFn[
-          stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-        ]
-    ): js.Promise[
-        stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-      ] = js.native
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IStripeSource]
+    ): js.Promise[stripeLib.stripeMod.IStripeSource] = js.native
     def retrieveSource(
       customerId: java.lang.String,
       sourceId: java.lang.String,
-      response: stripeLib.stripeMod.IResponseFn[
-          stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-        ]
-    ): js.Promise[
-        stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-      ] = js.native
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IStripeSource]
+    ): js.Promise[stripeLib.stripeMod.IStripeSource] = js.native
     def retrieveSubscription(customerId: java.lang.String, subscriptionId: java.lang.String): js.Promise[stripeLib.stripeMod.subscriptionsNs.ISubscription] = js.native
     /**
       * By default, you can see the 10 most recent active subscriptions stored on a customer directly on the customer
@@ -2393,14 +2386,14 @@ object resourcesNs extends js.Object {
       sourceId: java.lang.String,
       data: stripeLib.stripeMod.bankAccountsNs.IBankAccountUpdateOptions,
       options: stripeLib.stripeMod.HeaderOptions
-    ): js.Promise[stripeLib.stripeMod.cardsNs.ICard] = js.native
+    ): js.Promise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
     def updateSource(
       customerId: java.lang.String,
       sourceId: java.lang.String,
       data: stripeLib.stripeMod.bankAccountsNs.IBankAccountUpdateOptions,
       options: stripeLib.stripeMod.HeaderOptions,
-      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.cardsNs.ICard]
-    ): js.Promise[stripeLib.stripeMod.cardsNs.ICard] = js.native
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.bankAccountsNs.IBankAccount]
+    ): js.Promise[stripeLib.stripeMod.bankAccountsNs.IBankAccount] = js.native
     def updateSource(
       customerId: java.lang.String,
       sourceId: java.lang.String,
@@ -4069,6 +4062,70 @@ object resourcesNs extends js.Object {
       data: stripeLib.stripeMod.skusNs.ISkuUpdateOptions,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.skusNs.ISku]
     ): js.Promise[stripeLib.stripeMod.skusNs.ISku] = js.native
+  }
+  
+  @js.native
+  class Sources ()
+    extends stripeLib.stripeMod.StripeResource {
+    def create(data: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    /** Create Source: https://stripe.com/docs/api/sources/create */
+    def create(
+      data: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def create(
+      data: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.sourcesNs.ISource]
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def create(
+      data: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.sourcesNs.ISource]
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def retrieve(id: java.lang.String): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def retrieve(id: java.lang.String, data: js.UndefOr[scala.Nothing], options: stripeLib.stripeMod.HeaderOptions): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def retrieve(
+      id: java.lang.String,
+      data: js.UndefOr[scala.Nothing],
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.sourcesNs.ISource]
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def retrieve(id: java.lang.String, data: stripeLib.stripeMod.sourcesNs.ISourceRetrieveOptions): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    /** Retrieve Source: https://stripe.com/docs/api/sources/retrieve */
+    def retrieve(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.sourcesNs.ISourceRetrieveOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def retrieve(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.sourcesNs.ISourceRetrieveOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.sourcesNs.ISource]
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def retrieve(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.sourcesNs.ISourceRetrieveOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.sourcesNs.ISource]
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def update(id: java.lang.String, data: stripeLib.stripeMod.sourcesNs.ISourceUpdateOptions): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    /** Update Source: https://stripe.com/docs/api/sources/update */
+    def update(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.sourcesNs.ISourceUpdateOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def update(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.sourcesNs.ISourceUpdateOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.sourcesNs.ISource]
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
+    def update(
+      id: java.lang.String,
+      data: stripeLib.stripeMod.sourcesNs.ISourceUpdateOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.sourcesNs.ISource]
+    ): js.Promise[stripeLib.stripeMod.sourcesNs.ISource] = js.native
   }
   
   @js.native

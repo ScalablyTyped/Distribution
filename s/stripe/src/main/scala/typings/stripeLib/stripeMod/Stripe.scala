@@ -46,6 +46,7 @@ trait Stripe extends js.Object {
   var refunds: stripeLib.stripeMod.resourcesNs.Refunds = js.native
   var resources: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Stripe.resources */ js.Any = js.native
   var skus: stripeLib.stripeMod.resourcesNs.SKUs = js.native
+  var sources: stripeLib.stripeMod.resourcesNs.Sources = js.native
   var subscriptionItems: stripeLib.stripeMod.resourcesNs.SubscriptionItems = js.native
   var subscriptions: stripeLib.stripeMod.resourcesNs.Subscriptions = js.native
   var tokens: stripeLib.stripeMod.resourcesNs.Tokens = js.native

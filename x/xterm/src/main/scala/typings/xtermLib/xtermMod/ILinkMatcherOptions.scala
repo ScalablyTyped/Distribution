@@ -10,13 +10,7 @@ trait ILinkMatcherOptions extends js.Object {
     * A callback that fires when the mouse leaves a link. Note that this can
     * happen even when tooltipCallback hasn't fired for the link yet.
     */
-  var leaveCallback: js.UndefOr[
-    js.Function2[
-      /* event */ stdLib.MouseEvent, 
-      /* uri */ java.lang.String, 
-      scala.Boolean | scala.Unit
-    ]
-  ] = js.undefined
+  var leaveCallback: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
     * The index of the link from the regex.match(text) call. This defaults to 0
     * (for regular expressions without capture groups).
@@ -63,7 +57,7 @@ trait ILinkMatcherOptions extends js.Object {
 object ILinkMatcherOptions {
   @scala.inline
   def apply(
-    leaveCallback: (/* event */ stdLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean | scala.Unit = null,
+    leaveCallback: () => scala.Unit = null,
     matchIndex: scala.Int | scala.Double = null,
     priority: scala.Int | scala.Double = null,
     tooltipCallback: (/* event */ stdLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean | scala.Unit = null,
@@ -71,7 +65,7 @@ object ILinkMatcherOptions {
     willLinkActivate: (/* event */ stdLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean = null
   ): ILinkMatcherOptions = {
     val __obj = js.Dynamic.literal()
-    if (leaveCallback != null) __obj.updateDynamic("leaveCallback")(js.Any.fromFunction2(leaveCallback))
+    if (leaveCallback != null) __obj.updateDynamic("leaveCallback")(js.Any.fromFunction0(leaveCallback))
     if (matchIndex != null) __obj.updateDynamic("matchIndex")(matchIndex.asInstanceOf[js.Any])
     if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     if (tooltipCallback != null) __obj.updateDynamic("tooltipCallback")(js.Any.fromFunction2(tooltipCallback))

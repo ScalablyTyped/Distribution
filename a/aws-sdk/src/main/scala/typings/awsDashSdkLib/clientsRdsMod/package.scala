@@ -8,6 +8,20 @@ import scala.scalajs.js.annotation._
 package object clientsRdsMod {
   type AccountQuotaList = js.Array[AccountQuota]
   /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.sync
+    - awsDashSdkLib.awsDashSdkLibStrings.async
+    - java.lang.String
+  */
+  type ActivityStreamMode = _ActivityStreamMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.stopped
+    - awsDashSdkLib.awsDashSdkLibStrings.starting
+    - awsDashSdkLib.awsDashSdkLibStrings.started
+    - awsDashSdkLib.awsDashSdkLibStrings.stopping
+    - java.lang.String
+  */
+  type ActivityStreamStatus = _ActivityStreamStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.immediate
     - awsDashSdkLib.awsDashSdkLibStrings.`pending-reboot`
     - java.lang.String

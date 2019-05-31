@@ -36,6 +36,9 @@ object errorsNs extends js.Object {
   class ExpectationFailed () extends _Abstract
   
   @js.native
+  class Forbidden () extends _Abstract
+  
+  @js.native
   class GatewayTimeout () extends _Abstract
   
   @js.native

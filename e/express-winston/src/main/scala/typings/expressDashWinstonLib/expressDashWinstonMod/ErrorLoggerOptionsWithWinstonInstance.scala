@@ -19,7 +19,7 @@ object ErrorLoggerOptionsWithWinstonInstance {
     dynamicMeta: DynamicMetaFunction = null,
     level: java.lang.String | DynamicLevelFunction = null,
     metaField: java.lang.String = null,
-    msg: java.lang.String = null,
+    msg: MessageTemplate = null,
     requestFilter: RequestFilter = null,
     requestWhitelist: js.Array[java.lang.String] = null
   ): ErrorLoggerOptionsWithWinstonInstance = {
@@ -28,7 +28,7 @@ object ErrorLoggerOptionsWithWinstonInstance {
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(dynamicMeta)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (metaField != null) __obj.updateDynamic("metaField")(metaField)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
     if (requestFilter != null) __obj.updateDynamic("requestFilter")(requestFilter)
     if (requestWhitelist != null) __obj.updateDynamic("requestWhitelist")(requestWhitelist)
     __obj.asInstanceOf[ErrorLoggerOptionsWithWinstonInstance]

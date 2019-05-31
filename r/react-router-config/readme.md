@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-router-config
 
-Typings are for version 1.1
+Typings are for version 5.0
 
 ## Library description:
 Static route config matching for React Router
@@ -35,11 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-router-config 1.1
+// Type definitions for react-router-config 5.0
 // Project: https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config, https://github.com/reacttraining/react-router
 // Definitions by: François Nguyen <https://github.com/lith-light-g>
 //                 John Reilly <https://github.com/johnnyreilly>
 //                 Phoenix He <https://github.com/NullMDR>
+//                 Mathieu TUDISCO <https://github.com/mathieutu>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

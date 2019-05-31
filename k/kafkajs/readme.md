@@ -1,7 +1,7 @@
 
 # Scala.js typings for kafkajs
 
-Typings are for version 1.4
+Typings are for version 1.8
 
 ## Library description:
 A modern Apache Kafka client for node.js
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for kafkajs 1.4
+// Type definitions for kafkajs 1.8
 // Project: https://github.com/tulios/kafkajs, https://kafka.js.org
 // Definitions by: Michal Kaminski <https://github.com/michal-b-kaminski>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

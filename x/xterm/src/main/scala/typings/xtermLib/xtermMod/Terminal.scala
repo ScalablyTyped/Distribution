@@ -17,6 +17,12 @@ class Terminal ()
      with IDisposable {
   def this(options: ITerminalOptions) = this()
   /**
+    * (EXPERIMENTAL) The terminal's current buffer, this might be either the
+    * normal buffer or the alt buffer depending on what's running in the
+    * terminal.
+    */
+  val buffer: IBuffer = js.native
+  /**
     * The number of columns in the terminal's viewport. Use
     * `ITerminalOptions.cols` to set this in the constructor and
     * `Terminal.resize` for when the terminal exists.
@@ -186,7 +192,7 @@ class Terminal ()
     * @param key The option key.
     */
   def getOption(
-    key: xtermLib.xtermLibStrings.allowTransparency | xtermLib.xtermLibStrings.cancelEvents | xtermLib.xtermLibStrings.convertEol | xtermLib.xtermLibStrings.cursorBlink | xtermLib.xtermLibStrings.debug | xtermLib.xtermLibStrings.disableStdin | xtermLib.xtermLibStrings.enableBold | xtermLib.xtermLibStrings.macOptionIsMeta | xtermLib.xtermLibStrings.rightClickSelectsWord | xtermLib.xtermLibStrings.popOnBell | xtermLib.xtermLibStrings.screenKeys | xtermLib.xtermLibStrings.useFlowControl | xtermLib.xtermLibStrings.visualBell
+    key: xtermLib.xtermLibStrings.allowTransparency | xtermLib.xtermLibStrings.cancelEvents | xtermLib.xtermLibStrings.convertEol | xtermLib.xtermLibStrings.cursorBlink | xtermLib.xtermLibStrings.debug | xtermLib.xtermLibStrings.disableStdin | xtermLib.xtermLibStrings.enableBold | xtermLib.xtermLibStrings.macOptionIsMeta | xtermLib.xtermLibStrings.rightClickSelectsWord | xtermLib.xtermLibStrings.popOnBell | xtermLib.xtermLibStrings.screenKeys | xtermLib.xtermLibStrings.useFlowControl | xtermLib.xtermLibStrings.visualBell | xtermLib.xtermLibStrings.windowsMode
   ): scala.Boolean = js.native
   /**
     * Retrieves an option's value from the terminal.
@@ -249,9 +255,18 @@ class Terminal ()
     */
   def getSelection(): java.lang.String = js.native
   /**
+    * Gets the selection position or undefined if there is no selection.
+    */
+  def getSelectionPosition(): js.UndefOr[ISelectionPosition] = js.native
+  /**
     * Gets whether the terminal has an active selection.
     */
   def hasSelection(): scala.Boolean = js.native
+  /**
+    * (EXPERIMENTAL) Loads an addon into this instance of xterm.js.
+    * @param addon The addon to load.
+    */
+  def loadAddon(addon: ITerminalAddon): scala.Unit = js.native
   /**
     * Deregisters an event listener.
     * @param type The type of the event.
@@ -511,6 +526,13 @@ class Terminal ()
     */
   def scrollToTop(): scala.Unit = js.native
   /**
+    * Selects text within the terminal.
+    * @param column The column the selection starts at..
+    * @param row The row the selection starts at.
+    * @param length The length of the selection.
+    */
+  def select(column: scala.Double, row: scala.Double, length: scala.Double): scala.Unit = js.native
+  /**
     * Selects all text within the terminal.
     */
   def selectAll(): scala.Unit = js.native
@@ -526,7 +548,7 @@ class Terminal ()
     * @param value The option value.
     */
   def setOption(
-    key: xtermLib.xtermLibStrings.allowTransparency | xtermLib.xtermLibStrings.cancelEvents | xtermLib.xtermLibStrings.convertEol | xtermLib.xtermLibStrings.cursorBlink | xtermLib.xtermLibStrings.debug | xtermLib.xtermLibStrings.disableStdin | xtermLib.xtermLibStrings.enableBold | xtermLib.xtermLibStrings.macOptionIsMeta | xtermLib.xtermLibStrings.popOnBell | xtermLib.xtermLibStrings.rightClickSelectsWord | xtermLib.xtermLibStrings.screenKeys | xtermLib.xtermLibStrings.useFlowControl | xtermLib.xtermLibStrings.visualBell,
+    key: xtermLib.xtermLibStrings.allowTransparency | xtermLib.xtermLibStrings.cancelEvents | xtermLib.xtermLibStrings.convertEol | xtermLib.xtermLibStrings.cursorBlink | xtermLib.xtermLibStrings.debug | xtermLib.xtermLibStrings.disableStdin | xtermLib.xtermLibStrings.enableBold | xtermLib.xtermLibStrings.macOptionIsMeta | xtermLib.xtermLibStrings.popOnBell | xtermLib.xtermLibStrings.rightClickSelectsWord | xtermLib.xtermLibStrings.screenKeys | xtermLib.xtermLibStrings.useFlowControl | xtermLib.xtermLibStrings.visualBell | xtermLib.xtermLibStrings.windowsMode,
     value: scala.Boolean
   ): scala.Unit = js.native
   /**
@@ -638,6 +660,13 @@ class Terminal ()
     */
   def write(data: java.lang.String): scala.Unit = js.native
   /**
+    * Writes UTF8 data to the terminal.
+    * This has a slight performance advantage over the string based write method
+    * due to lesser data conversions needed on the way from the pty to xterm.js.
+    * @param data The data to write to the terminal.
+    */
+  def writeUtf8(data: stdLib.Uint8Array): scala.Unit = js.native
+  /**
     * Writes text to the terminal, followed by a break line character (\n).
     * @param data The text to write to the terminal.
     */
@@ -656,6 +685,7 @@ object Terminal extends js.Object {
     * Applies an addon to the Terminal prototype, making it available to all
     * newly created Terminals.
     * @param addon The addon to apply.
+    * @deprecated Use the new loadAddon API/addon format.
     */
   def applyAddon(addon: js.Any): scala.Unit = js.native
 }

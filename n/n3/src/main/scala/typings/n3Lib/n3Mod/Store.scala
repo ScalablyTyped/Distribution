@@ -21,6 +21,6 @@ class Store[Q_RDF /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */, Q_N3 /* <: BaseQu
     * @return The resulting event emitter.
     */
   /* CompleteClass */
-  override def `import`(stream: rdfDashJsLib.rdfDashJsMod.Stream[rdfDashJsLib.rdfDashJsMod.Quad]): nodeLib.eventsMod.EventEmitter = js.native
+  override def `import`(stream: rdfDashJsLib.rdfDashJsMod.Stream[Q_RDF]): nodeLib.eventsMod.EventEmitter = js.native
 }
 

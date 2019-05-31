@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "chai-jest-snapshot"
-version := "1.3-dt-20181116Z-ac8d65"
+version := "1.3-dt-20181116Z-abcc88"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190212Z-397d92",
+  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190530Z-ab0f2f",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

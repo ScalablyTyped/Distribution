@@ -46,6 +46,7 @@ trait Dockerode extends js.Object {
   def createVolume(options: js.Object, callback: Callback[_]): scala.Unit = js.native
   def df(): js.Promise[_] = js.native
   def df(callback: Callback[_]): scala.Unit = js.native
+  def getConfig(id: java.lang.String): Config = js.native
   def getContainer(id: java.lang.String): Container = js.native
   def getEvents(): js.Promise[nodeLib.NodeJSNs.ReadableStream] = js.native
   def getEvents(callback: Callback[nodeLib.NodeJSNs.ReadableStream]): scala.Unit = js.native
@@ -74,6 +75,10 @@ trait Dockerode extends js.Object {
   ): scala.Unit = js.native
   def info(): js.Promise[_] = js.native
   def info(callback: Callback[_]): scala.Unit = js.native
+  def listConfigs(): js.Promise[js.Array[ConfigInfo]] = js.native
+  def listConfigs(callback: Callback[js.Array[ConfigInfo]]): scala.Unit = js.native
+  def listConfigs(options: js.Object): js.Promise[js.Array[ConfigInfo]] = js.native
+  def listConfigs(options: js.Object, callback: Callback[js.Array[ConfigInfo]]): scala.Unit = js.native
   def listContainers(): js.Promise[js.Array[ContainerInfo]] = js.native
   def listContainers(callback: Callback[js.Array[ContainerInfo]]): scala.Unit = js.native
   def listContainers(options: js.Object): js.Promise[js.Array[ContainerInfo]] = js.native

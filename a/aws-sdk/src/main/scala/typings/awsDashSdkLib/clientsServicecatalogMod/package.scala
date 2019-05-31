@@ -313,6 +313,14 @@ package object clientsServicecatalogMod {
   type SortOrder = _SortOrder | java.lang.String
   type SourceProvisioningArtifactProperties = js.Array[SourceProvisioningArtifactPropertiesMap]
   type SourceProvisioningArtifactPropertiesMap = org.scalablytyped.runtime.StringDictionary[ProvisioningArtifactPropertyValue]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CURRENT
+    - awsDashSdkLib.awsDashSdkLibStrings.OUTDATED
+    - awsDashSdkLib.awsDashSdkLibStrings.INOPERABLE
+    - java.lang.String
+  */
+  type StackInstanceStatus = _StackInstanceStatus | java.lang.String
+  type StackInstances = js.Array[StackInstance]
   type StackSetAccounts = js.Array[AccountId]
   type StackSetFailureToleranceCount = scala.Double
   type StackSetFailureTolerancePercentage = scala.Double

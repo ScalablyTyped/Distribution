@@ -56,6 +56,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Duy Truong <https://github.com/truongkhanhduy95>
 //                 Emmanuel Gautier <https://github.com/emmanuelgautier>
 //                 Dan Rumney <https://github.com/dancrumb>
+//                 Kan Yueh Chen <https://github.com/lalayueh>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.2
 // ***************************** IMPORTANT NOTE *****************************

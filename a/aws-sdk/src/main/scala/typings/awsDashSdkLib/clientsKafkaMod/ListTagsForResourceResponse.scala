@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait ListTagsForResourceResponse extends js.Object {
   /**
-    * The key-value pairs for the resource tags
+    * 
+    The key-value pair for the resource tag.
+    
     */
   var Tags: js.UndefOr[__mapOf__string] = js.undefined
 }

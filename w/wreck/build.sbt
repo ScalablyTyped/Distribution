@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "wreck"
-version := "14.0.0-dt-20190322Z-6ab055"
+version := "14.0.0-dt-20190322Z-d21d68"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "boom" % "7.2-dt-20181116Z-5e1bbe",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190528Z-2c614a",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

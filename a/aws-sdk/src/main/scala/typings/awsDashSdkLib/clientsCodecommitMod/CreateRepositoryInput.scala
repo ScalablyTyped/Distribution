@@ -14,13 +14,22 @@ trait CreateRepositoryInput extends js.Object {
     * The name of the new repository to be created.  The repository name must be unique across the calling AWS account. In addition, repository names are limited to 100 alphanumeric, dash, and underscore characters, and cannot include certain characters. For a full description of the limits on repository names, see Limits in the AWS CodeCommit User Guide. The suffix ".git" is prohibited. 
     */
   var repositoryName: RepositoryName
+  /**
+    * One or more tag key-value pairs to use when tagging this repository.
+    */
+  var tags: js.UndefOr[TagsMap] = js.undefined
 }
 
 object CreateRepositoryInput {
   @scala.inline
-  def apply(repositoryName: RepositoryName, repositoryDescription: RepositoryDescription = null): CreateRepositoryInput = {
+  def apply(
+    repositoryName: RepositoryName,
+    repositoryDescription: RepositoryDescription = null,
+    tags: TagsMap = null
+  ): CreateRepositoryInput = {
     val __obj = js.Dynamic.literal(repositoryName = repositoryName)
     if (repositoryDescription != null) __obj.updateDynamic("repositoryDescription")(repositoryDescription)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[CreateRepositoryInput]
   }
 }

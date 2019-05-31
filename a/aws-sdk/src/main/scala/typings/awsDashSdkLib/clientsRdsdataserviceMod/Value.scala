@@ -7,43 +7,43 @@ import scala.scalajs.js.annotation._
 
 trait Value extends js.Object {
   /**
-    * Arbitrarily nested arrays
+    * An array of column values.
     */
-  var arrayValues: js.UndefOr[ArrayValues] = js.undefined
+  var arrayValues: js.UndefOr[ArrayValueList] = js.undefined
   /**
-    * Long value
+    * A value for a column of big integer data type.
     */
-  var bigIntValue: js.UndefOr[Long] = js.undefined
+  var bigIntValue: js.UndefOr[BoxedLong] = js.undefined
   /**
-    * Bit value
+    * A value for a column of BIT data type.
     */
-  var bitValue: js.UndefOr[Boolean] = js.undefined
+  var bitValue: js.UndefOr[BoxedBoolean] = js.undefined
   /**
-    * Blob value
+    * A value for a column of BLOB data type.
     */
   var blobValue: js.UndefOr[_Blob] = js.undefined
   /**
-    * Double value
+    * A value for a column of double data type.
     */
-  var doubleValue: js.UndefOr[Double] = js.undefined
+  var doubleValue: js.UndefOr[BoxedDouble] = js.undefined
   /**
-    * Integer value
+    * A value for a column of integer data type.
     */
-  var intValue: js.UndefOr[Integer] = js.undefined
+  var intValue: js.UndefOr[BoxedInteger] = js.undefined
   /**
-    * Is column null
+    * A NULL value.
     */
-  var isNull: js.UndefOr[Boolean] = js.undefined
+  var isNull: js.UndefOr[BoxedBoolean] = js.undefined
   /**
-    * Float value
+    * A value for a column of real data type.
     */
-  var realValue: js.UndefOr[Float] = js.undefined
+  var realValue: js.UndefOr[BoxedFloat] = js.undefined
   /**
-    * String value
+    * A value for a column of string data type.
     */
   var stringValue: js.UndefOr[String] = js.undefined
   /**
-    * Struct or UDT
+    * A value for a column of STRUCT data type.
     */
   var structValue: js.UndefOr[StructValue] = js.undefined
 }
@@ -51,14 +51,14 @@ trait Value extends js.Object {
 object Value {
   @scala.inline
   def apply(
-    arrayValues: ArrayValues = null,
-    bigIntValue: js.UndefOr[Long] = js.undefined,
-    bitValue: js.UndefOr[Boolean] = js.undefined,
+    arrayValues: ArrayValueList = null,
+    bigIntValue: js.UndefOr[BoxedLong] = js.undefined,
+    bitValue: js.UndefOr[BoxedBoolean] = js.undefined,
     blobValue: _Blob = null,
-    doubleValue: js.UndefOr[Double] = js.undefined,
-    intValue: js.UndefOr[Integer] = js.undefined,
-    isNull: js.UndefOr[Boolean] = js.undefined,
-    realValue: js.UndefOr[Float] = js.undefined,
+    doubleValue: js.UndefOr[BoxedDouble] = js.undefined,
+    intValue: js.UndefOr[BoxedInteger] = js.undefined,
+    isNull: js.UndefOr[BoxedBoolean] = js.undefined,
+    realValue: js.UndefOr[BoxedFloat] = js.undefined,
     stringValue: String = null,
     structValue: StructValue = null
   ): Value = {

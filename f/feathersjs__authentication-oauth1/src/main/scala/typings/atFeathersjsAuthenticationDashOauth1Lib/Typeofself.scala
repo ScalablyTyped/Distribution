@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Typeofself extends js.Object {
   var OAuth1Verifier: org.scalablytyped.runtime.Instantiable2[
-    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Any], 
+    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Object], 
     /* options */ js.Any, 
     atFeathersjsAuthenticationDashOauth1Lib.atFeathersjsAuthenticationDashOauth1Mod.OAuth1Verifier
   ] = js.native

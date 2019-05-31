@@ -26,7 +26,7 @@ object LoggerOptionsWithTransports {
     level: java.lang.String | DynamicLevelFunction = null,
     meta: js.UndefOr[scala.Boolean] = js.undefined,
     metaField: java.lang.String = null,
-    msg: java.lang.String = null,
+    msg: MessageTemplate = null,
     requestFilter: RequestFilter = null,
     requestWhitelist: js.Array[java.lang.String] = null,
     responseFilter: ResponseFilter = null,
@@ -46,7 +46,7 @@ object LoggerOptionsWithTransports {
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (!js.isUndefined(meta)) __obj.updateDynamic("meta")(meta)
     if (metaField != null) __obj.updateDynamic("metaField")(metaField)
-    if (msg != null) __obj.updateDynamic("msg")(msg)
+    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
     if (requestFilter != null) __obj.updateDynamic("requestFilter")(requestFilter)
     if (requestWhitelist != null) __obj.updateDynamic("requestWhitelist")(requestWhitelist)
     if (responseFilter != null) __obj.updateDynamic("responseFilter")(responseFilter)

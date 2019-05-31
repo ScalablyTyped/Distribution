@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait ResultSetMetadata extends js.Object {
   /**
-    * Number of columns
+    * The number of columns in the result set.
     */
   var columnCount: js.UndefOr[Long] = js.undefined
   /**
-    * List of columns and their types
+    * The metadata of the columns in the result set.
     */
-  var columnMetadata: js.UndefOr[ColumnMetadataList] = js.undefined
+  var columnMetadata: js.UndefOr[Metadata] = js.undefined
 }
 
 object ResultSetMetadata {
   @scala.inline
-  def apply(columnCount: js.UndefOr[Long] = js.undefined, columnMetadata: ColumnMetadataList = null): ResultSetMetadata = {
+  def apply(columnCount: js.UndefOr[Long] = js.undefined, columnMetadata: Metadata = null): ResultSetMetadata = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount)
     if (columnMetadata != null) __obj.updateDynamic("columnMetadata")(columnMetadata)

@@ -7,27 +7,39 @@ import scala.scalajs.js.annotation._
 
 trait NodeInfo extends js.Object {
   /**
-    * The start time.
+    * 
+    The start time.
+    
     */
   var AddedToClusterTime: js.UndefOr[__string] = js.undefined
   /**
-    * The broker node info.
+    * 
+    The broker node info.
+    
     */
   var BrokerNodeInfo: js.UndefOr[BrokerNodeInfo] = js.undefined
   /**
-    * The instance type.
+    * 
+    The instance type.
+    
     */
   var InstanceType: js.UndefOr[__string] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of the node.
+    * 
+    The Amazon Resource Name (ARN) of the node.
+    
     */
   var NodeARN: js.UndefOr[__string] = js.undefined
   /**
-    * The node type.
+    * 
+    The node type.
+    
     */
   var NodeType: js.UndefOr[NodeType] = js.undefined
   /**
-    * The ZookeeperNodeInfo.
+    * 
+    The ZookeeperNodeInfo.
+    
     */
   var ZookeeperNodeInfo: js.UndefOr[ZookeeperNodeInfo] = js.undefined
 }

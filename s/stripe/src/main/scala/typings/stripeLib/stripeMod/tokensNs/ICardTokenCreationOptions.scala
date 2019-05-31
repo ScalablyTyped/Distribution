@@ -12,13 +12,13 @@ trait ICardTokenCreationOptions extends ITokenCreationOptionsBase {
     * Otherwise, if you do not pass a customer, a object containing a
     * user's credit card details, with the options described below.
     */
-  var card: js.UndefOr[stripeLib.stripeMod.sourcesNs.ISourceCreationOptions] = js.undefined
+  var card: js.UndefOr[java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions] = js.undefined
 }
 
 object ICardTokenCreationOptions {
   @scala.inline
   def apply(
-    card: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions = null,
+    card: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions = null,
     customer: java.lang.String = null,
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null

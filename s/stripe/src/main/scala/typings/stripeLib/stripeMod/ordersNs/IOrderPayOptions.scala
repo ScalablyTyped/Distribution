@@ -33,7 +33,7 @@ trait IOrderPayOptions
     *
     * Either source or customer is required
     */
-  var source: js.UndefOr[stripeLib.stripeMod.sourcesNs.ISourceCreationOptions] = js.undefined
+  var source: js.UndefOr[java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions] = js.undefined
 }
 
 object IOrderPayOptions {
@@ -45,7 +45,7 @@ object IOrderPayOptions {
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
-    source: stripeLib.stripeMod.sourcesNs.ISourceCreationOptions = null
+    source: java.lang.String | stripeLib.stripeMod.cardsNs.ICardSourceCreationOptions = null
   ): IOrderPayOptions = {
     val __obj = js.Dynamic.literal()
     if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])

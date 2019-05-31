@@ -13,22 +13,34 @@ object spotifyDashApiLibStrings {
   sealed trait P extends js.Object
   
   @js.native
-  sealed trait album extends js.Object
+  sealed trait album
+    extends spotifyDashApiLib.SpotifyApiNs.ContextObjectType
   
   @js.native
-  sealed trait artist extends js.Object
+  sealed trait artist
+    extends spotifyDashApiLib.SpotifyApiNs.ContextObjectType
   
   @js.native
   sealed trait audio_features extends js.Object
   
   @js.native
+  sealed trait context
+    extends spotifyDashApiLib.SpotifyApiNs.PlaybackRepeatState
+  
+  @js.native
   sealed trait genre extends js.Object
   
   @js.native
-  sealed trait playlist extends js.Object
+  sealed trait off
+    extends spotifyDashApiLib.SpotifyApiNs.PlaybackRepeatState
   
   @js.native
-  sealed trait track extends js.Object
+  sealed trait playlist
+    extends spotifyDashApiLib.SpotifyApiNs.ContextObjectType
+  
+  @js.native
+  sealed trait track
+    extends spotifyDashApiLib.SpotifyApiNs.PlaybackRepeatState
   
   @js.native
   sealed trait user extends js.Object
@@ -44,7 +56,11 @@ object spotifyDashApiLibStrings {
   @scala.inline
   def audio_features: audio_features = "audio_features".asInstanceOf[audio_features]
   @scala.inline
+  def context: context = "context".asInstanceOf[context]
+  @scala.inline
   def genre: genre = "genre".asInstanceOf[genre]
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
   @scala.inline
   def playlist: playlist = "playlist".asInstanceOf[playlist]
   @scala.inline

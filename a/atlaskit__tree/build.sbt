@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atlaskit__tree"
-version := "4.1-dt-20181206Z-dd0ef3"
+version := "4.1-dt-20190530Z-dd0ef3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

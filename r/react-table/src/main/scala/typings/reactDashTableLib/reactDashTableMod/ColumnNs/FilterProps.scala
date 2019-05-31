@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Filtering related column props */
-trait FilterProps[D] extends js.Object {
+trait FilterProps extends js.Object {
   /** Default: ... */
-  var Filter: reactDashTableLib.reactDashTableMod.FilterRender[D]
+  var Filter: reactDashTableLib.reactDashTableMod.FilterRender
   /** Default: false */
   var filterAll: scala.Boolean
   /**
@@ -25,15 +25,15 @@ trait FilterProps[D] extends js.Object {
 
 object FilterProps {
   @scala.inline
-  def apply[D](
-    Filter: reactDashTableLib.reactDashTableMod.FilterRender[D],
+  def apply(
+    Filter: reactDashTableLib.reactDashTableMod.FilterRender,
     filterAll: scala.Boolean,
     filterMethod: reactDashTableLib.reactDashTableMod.FilterFunction | reactDashTableLib.reactDashTableMod.DefaultFilterFunction,
     hideFilter: scala.Boolean
-  ): FilterProps[D] = {
+  ): FilterProps = {
     val __obj = js.Dynamic.literal(Filter = Filter, filterAll = filterAll, filterMethod = filterMethod.asInstanceOf[js.Any], hideFilter = hideFilter)
   
-    __obj.asInstanceOf[FilterProps[D]]
+    __obj.asInstanceOf[FilterProps]
   }
 }
 

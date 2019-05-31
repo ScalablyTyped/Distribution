@@ -49,12 +49,12 @@ trait RecommendationsOptionsObject extends js.Object {
   var min_tempo: js.UndefOr[scala.Double] = js.undefined
   var min_time_signature: js.UndefOr[scala.Double] = js.undefined
   var min_valence: js.UndefOr[scala.Double] = js.undefined
-  var seed_artists: js.UndefOr[java.lang.String] = js.undefined
-     // Comma separated string
-  var seed_genres: js.UndefOr[java.lang.String] = js.undefined
-     // Comma separated string
-  var seed_tracks: js.UndefOr[java.lang.String] = js.undefined
-     // Comma separated string
+  var seed_artists: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
+     // Array of strings or Comma separated string
+  var seed_genres: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
+     // Array of strings or Comma separated string
+  var seed_tracks: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
+     // Array of strings or Comma separated string
   var target_acousticness: js.UndefOr[scala.Double] = js.undefined
   var target_danceability: js.UndefOr[scala.Double] = js.undefined
   var target_duration_ms: js.UndefOr[scala.Double] = js.undefined
@@ -104,9 +104,9 @@ object RecommendationsOptionsObject {
     min_tempo: scala.Int | scala.Double = null,
     min_time_signature: scala.Int | scala.Double = null,
     min_valence: scala.Int | scala.Double = null,
-    seed_artists: java.lang.String = null,
-    seed_genres: java.lang.String = null,
-    seed_tracks: java.lang.String = null,
+    seed_artists: js.Array[java.lang.String] | java.lang.String = null,
+    seed_genres: js.Array[java.lang.String] | java.lang.String = null,
+    seed_tracks: js.Array[java.lang.String] | java.lang.String = null,
     target_acousticness: scala.Int | scala.Double = null,
     target_danceability: scala.Int | scala.Double = null,
     target_duration_ms: scala.Int | scala.Double = null,
@@ -153,9 +153,9 @@ object RecommendationsOptionsObject {
     if (min_tempo != null) __obj.updateDynamic("min_tempo")(min_tempo.asInstanceOf[js.Any])
     if (min_time_signature != null) __obj.updateDynamic("min_time_signature")(min_time_signature.asInstanceOf[js.Any])
     if (min_valence != null) __obj.updateDynamic("min_valence")(min_valence.asInstanceOf[js.Any])
-    if (seed_artists != null) __obj.updateDynamic("seed_artists")(seed_artists)
-    if (seed_genres != null) __obj.updateDynamic("seed_genres")(seed_genres)
-    if (seed_tracks != null) __obj.updateDynamic("seed_tracks")(seed_tracks)
+    if (seed_artists != null) __obj.updateDynamic("seed_artists")(seed_artists.asInstanceOf[js.Any])
+    if (seed_genres != null) __obj.updateDynamic("seed_genres")(seed_genres.asInstanceOf[js.Any])
+    if (seed_tracks != null) __obj.updateDynamic("seed_tracks")(seed_tracks.asInstanceOf[js.Any])
     if (target_acousticness != null) __obj.updateDynamic("target_acousticness")(target_acousticness.asInstanceOf[js.Any])
     if (target_danceability != null) __obj.updateDynamic("target_danceability")(target_danceability.asInstanceOf[js.Any])
     if (target_duration_ms != null) __obj.updateDynamic("target_duration_ms")(target_duration_ms.asInstanceOf[js.Any])

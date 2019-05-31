@@ -29,7 +29,7 @@ trait ICustomer
   /**
     * ID of the default source attached to this customer. [Expandable]
     */
-  var default_source: java.lang.String | stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount | scala.Null
+  var default_source: java.lang.String | stripeLib.stripeMod.IStripeSource | scala.Null
   /**
     * Whether or not the latest charge for the customer's latest invoice has failed
     */
@@ -62,11 +62,7 @@ trait ICustomer
   /**
     * The customer’s payment sources, if any
     */
-  var sources: js.UndefOr[
-    stripeLib.stripeMod.IList[
-      stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-    ]
-  ] = js.undefined
+  var sources: js.UndefOr[stripeLib.stripeMod.IList[stripeLib.stripeMod.IStripeSource]] = js.undefined
   /**
     * The customer's current subscriptions, if any
     */
@@ -87,16 +83,14 @@ object ICustomer {
     address: stripeLib.stripeMod.IAddress = null,
     cards: stripeLib.stripeMod.resourcesNs.CustomerCards = null,
     currency: java.lang.String = null,
-    default_source: java.lang.String | stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount = null,
+    default_source: java.lang.String | stripeLib.stripeMod.IStripeSource = null,
     description: java.lang.String = null,
     discount: stripeLib.stripeMod.couponsNs.IDiscount = null,
     email: java.lang.String = null,
     name: java.lang.String = null,
     phone: java.lang.String = null,
     shipping: stripeLib.stripeMod.IShippingInformation = null,
-    sources: stripeLib.stripeMod.IList[
-      stripeLib.stripeMod.cardsNs.ICard | stripeLib.stripeMod.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.bankAccountsNs.IBankAccount
-    ] = null
+    sources: stripeLib.stripeMod.IList[stripeLib.stripeMod.IStripeSource] = null
   ): ICustomer = {
     val __obj = js.Dynamic.literal(created = created, delinquent = delinquent, id = id, livemode = livemode, metadata = metadata, subscriptions = subscriptions)
     __obj.updateDynamic("object")(`object`)
