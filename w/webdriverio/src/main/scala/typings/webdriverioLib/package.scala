@@ -17,7 +17,7 @@ package object webdriverioLib {
   type BrowserAsync = webdriverioLib.webdriverioLibStrings.BrowserAsync with js.Any with AsyncSelectors
   type BrowserObject = webdriverLib.WebDriverNs.ClientOptions with webdriverLib.WebDriverNs.ClientAsync with webdriverioLib.WebdriverIOAsyncNs.Browser
   // Browser commands that should be wrapper with Promise
-  type BrowserPromise = stdLib.Omit[
+  type BrowserPromise = webdriverLib.WdioOmit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ js.Any, 
     webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.options | webdriverioLib.webdriverioLibStrings.DOLLAR | webdriverioLib.webdriverioLibStrings.DOLLARDOLLAR
   ]
@@ -29,7 +29,7 @@ package object webdriverioLib {
   // Element commands wrapper with Promise
   type ElementAsync = webdriverioLib.webdriverioLibStrings.ElementAsync with js.Any with AsyncSelectors
   // Element commands that should be wrapper with Promise
-  type ElementPromise = stdLib.Omit[
+  type ElementPromise = webdriverLib.WdioOmit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
     webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.DOLLAR | webdriverioLib.webdriverioLibStrings.DOLLARDOLLAR
   ]

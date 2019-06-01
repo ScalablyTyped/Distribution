@@ -29,14 +29,14 @@ trait PushButton extends js.Object {
   def setHTML(html: java.lang.String): PushButton
   def setHeight(height: java.lang.String): PushButton
   def setId(id: java.lang.String): PushButton
-  def setLayoutData(layout: js.Object): PushButton
+  def setLayoutData(layout: js.Any): PushButton
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): PushButton
   def setSize(width: java.lang.String, height: java.lang.String): PushButton
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): PushButton
-  def setStyleAttributes(attributes: js.Object): PushButton
+  def setStyleAttributes(attributes: js.Any): PushButton
   def setStyleName(styleName: java.lang.String): PushButton
   def setStylePrimaryName(styleName: java.lang.String): PushButton
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): PushButton
@@ -73,11 +73,11 @@ object PushButton {
     setHTML: java.lang.String => PushButton,
     setHeight: java.lang.String => PushButton,
     setId: java.lang.String => PushButton,
-    setLayoutData: js.Object => PushButton,
+    setLayoutData: js.Any => PushButton,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => PushButton,
     setSize: (java.lang.String, java.lang.String) => PushButton,
     setStyleAttribute: (java.lang.String, java.lang.String) => PushButton,
-    setStyleAttributes: js.Object => PushButton,
+    setStyleAttributes: js.Any => PushButton,
     setStyleName: java.lang.String => PushButton,
     setStylePrimaryName: java.lang.String => PushButton,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => PushButton,

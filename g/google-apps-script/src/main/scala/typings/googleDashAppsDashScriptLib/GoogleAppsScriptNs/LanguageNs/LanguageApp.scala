@@ -12,7 +12,7 @@ trait LanguageApp extends js.Object {
     text: java.lang.String,
     sourceLanguage: java.lang.String,
     targetLanguage: java.lang.String,
-    advancedArgs: js.Object
+    advancedArgs: js.Any
   ): java.lang.String = js.native
 }
 

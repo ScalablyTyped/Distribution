@@ -45,6 +45,7 @@ These comments are from the typescript definitions and might be useful:
 // Generator: https://github.com/grant/google-apps-script-dts
 // Definitions by: grant <https://github.com/grant/>
 // Type definitions for Google Apps Script 2019-04-02
+//                 oshliaer <https://github.com/oshliaer>
 // Type definitions for Google Apps Script 2019-02-27
 // Definitions by: motemen <https://github.com/motemen/>
 // Type definitions for Google Apps Script 2019-01-23

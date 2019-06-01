@@ -9,11 +9,9 @@ import scala.scalajs.js.annotation._
 - Dropped any */ @JSImport("apollo-engine-reporting/dist/extension", "EngineReportingExtension")
 @js.native
 class EngineReportingExtension[TContext] protected () extends js.Object {
-  def this(options: apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[TContext], addTrace: js.Function3[
-      /* signature */ java.lang.String, 
-      /* operationName */ java.lang.String, 
-      /* trace */ apolloDashEngineDashReportingDashProtobufLib.apolloDashEngineDashReportingDashProtobufMod.Trace, 
-      scala.Unit
+  def this(options: apolloDashEngineDashReportingLib.distAgentMod.EngineReportingOptions[TContext], addTrace: js.Function1[
+      /* args */ apolloDashEngineDashReportingLib.distAgentMod.AddTraceArgs, 
+      js.Promise[scala.Unit]
     ]) = this()
   var addError: js.Any = js.native
   var addTrace: js.Any = js.native

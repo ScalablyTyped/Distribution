@@ -22,7 +22,7 @@ trait BarChartBuilder extends js.Object {
   ): BarChartBuilder = js.native
   def setLegendPosition(position: Position): BarChartBuilder = js.native
   def setLegendTextStyle(textStyle: TextStyle): BarChartBuilder = js.native
-  def setOption(option: java.lang.String, value: js.Object): BarChartBuilder = js.native
+  def setOption(option: java.lang.String, value: js.Any): BarChartBuilder = js.native
   def setRange(start: scala.Double, end: scala.Double): BarChartBuilder = js.native
   def setStacked(): BarChartBuilder = js.native
   def setTitle(chartTitle: java.lang.String): BarChartBuilder = js.native

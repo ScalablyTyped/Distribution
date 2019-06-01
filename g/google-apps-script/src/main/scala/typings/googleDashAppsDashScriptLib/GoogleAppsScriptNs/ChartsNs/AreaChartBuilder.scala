@@ -21,7 +21,7 @@ trait AreaChartBuilder extends js.Object {
   ): AreaChartBuilder = js.native
   def setLegendPosition(position: Position): AreaChartBuilder = js.native
   def setLegendTextStyle(textStyle: TextStyle): AreaChartBuilder = js.native
-  def setOption(option: java.lang.String, value: js.Object): AreaChartBuilder = js.native
+  def setOption(option: java.lang.String, value: js.Any): AreaChartBuilder = js.native
   def setPointStyle(style: PointStyle): AreaChartBuilder = js.native
   def setRange(start: scala.Double, end: scala.Double): AreaChartBuilder = js.native
   def setStacked(): AreaChartBuilder = js.native

@@ -10,7 +10,7 @@ trait DirectionFinder extends js.Object {
   def addWaypoint(address: java.lang.String): DirectionFinder = js.native
   def addWaypoint(latitude: scala.Double, longitude: scala.Double): DirectionFinder = js.native
   def clearWaypoints(): DirectionFinder = js.native
-  def getDirections(): js.Object = js.native
+  def getDirections(): js.Any = js.native
   def setAlternatives(useAlternatives: scala.Boolean): DirectionFinder = js.native
   def setArrive(time: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DirectionFinder = js.native
   def setAvoid(avoid: java.lang.String): DirectionFinder = js.native

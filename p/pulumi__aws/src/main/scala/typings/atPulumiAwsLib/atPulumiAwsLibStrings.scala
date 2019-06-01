@@ -251,6 +251,18 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
+  sealed trait SecureString
+    extends atPulumiAwsLib.ssmParameterTypeMod.ParameterType
+  
+  @js.native
+  sealed trait String
+    extends atPulumiAwsLib.ssmParameterTypeMod.ParameterType
+  
+  @js.native
+  sealed trait StringList
+    extends atPulumiAwsLib.ssmParameterTypeMod.ParameterType
+  
+  @js.native
   sealed trait TRIM_HORIZON extends js.Object
   
   @js.native
@@ -1301,6 +1313,12 @@ object atPulumiAwsLibStrings {
   def SYS_TIME: SYS_TIME = "SYS_TIME".asInstanceOf[SYS_TIME]
   @scala.inline
   def SYS_TTY_CONFIG: SYS_TTY_CONFIG = "SYS_TTY_CONFIG".asInstanceOf[SYS_TTY_CONFIG]
+  @scala.inline
+  def SecureString: SecureString = "SecureString".asInstanceOf[SecureString]
+  @scala.inline
+  def String: String = "String".asInstanceOf[String]
+  @scala.inline
+  def StringList: StringList = "StringList".asInstanceOf[StringList]
   @scala.inline
   def TRIM_HORIZON: TRIM_HORIZON = "TRIM_HORIZON".asInstanceOf[TRIM_HORIZON]
   @scala.inline

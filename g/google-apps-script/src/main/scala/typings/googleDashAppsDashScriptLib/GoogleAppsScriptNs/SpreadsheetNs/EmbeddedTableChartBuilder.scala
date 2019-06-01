@@ -38,7 +38,7 @@ trait EmbeddedTableChartBuilder extends js.Object {
   def setInitialSortingDescending(column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): EmbeddedTableChartBuilder = js.native
   def setMergeStrategy(mergeStrategy: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy): EmbeddedChartBuilder = js.native
   def setNumHeaders(headers: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): EmbeddedChartBuilder = js.native
-  def setOption(option: java.lang.String, value: js.Object): EmbeddedChartBuilder = js.native
+  def setOption(option: java.lang.String, value: js.Any): EmbeddedChartBuilder = js.native
   def setPosition(
     anchorRowPos: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     anchorColPos: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,

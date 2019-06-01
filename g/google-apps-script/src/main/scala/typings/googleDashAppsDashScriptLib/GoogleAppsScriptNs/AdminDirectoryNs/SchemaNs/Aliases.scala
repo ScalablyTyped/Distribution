@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Aliases extends js.Object {
-  var aliases: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var aliases: js.UndefOr[js.Array[_]] = js.undefined
   var etag: js.UndefOr[java.lang.String] = js.undefined
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Aliases {
   @scala.inline
-  def apply(aliases: js.Array[js.Object] = null, etag: java.lang.String = null, kind: java.lang.String = null): Aliases = {
+  def apply(aliases: js.Array[_] = null, etag: java.lang.String = null, kind: java.lang.String = null): Aliases = {
     val __obj = js.Dynamic.literal()
     if (aliases != null) __obj.updateDynamic("aliases")(aliases)
     if (etag != null) __obj.updateDynamic("etag")(etag)

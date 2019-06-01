@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait UrlField extends js.Object {
   def deleteUrlField(): scala.Unit = js.native
   def getAddress(): java.lang.String = js.native
-  def getLabel(): js.Object = js.native
+  def getLabel(): js.Any = js.native
   def isPrimary(): scala.Boolean = js.native
   def setAddress(address: java.lang.String): UrlField = js.native
   def setAsPrimary(): UrlField = js.native

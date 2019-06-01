@@ -10,10 +10,15 @@ trait GraphQLResponse extends js.Object {
   var errors: js.UndefOr[js.Array[graphqlLib.errorFormatErrorMod.GraphQLFormattedError]] = js.undefined
   var extensions: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
   var http: js.UndefOr[
-    stdLib.Pick[
+    (stdLib.Pick[
       apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Response, 
       apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.headers
-    ]
+    ]) with (stdLib.Partial[
+      stdLib.Pick[
+        Mutable[apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Response], 
+        apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.status
+      ]
+    ])
   ] = js.undefined
 }
 
@@ -23,10 +28,15 @@ object GraphQLResponse {
     data: stdLib.Record[java.lang.String, _] = null,
     errors: js.Array[graphqlLib.errorFormatErrorMod.GraphQLFormattedError] = null,
     extensions: stdLib.Record[java.lang.String, _] = null,
-    http: stdLib.Pick[
+    http: (stdLib.Pick[
       apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Response, 
       apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.headers
-    ] = null
+    ]) with (stdLib.Partial[
+      stdLib.Pick[
+        Mutable[apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Response], 
+        apolloDashServerDashCoreLib.apolloDashServerDashCoreLibStrings.status
+      ]
+    ]) = null
   ): GraphQLResponse = {
     val __obj = js.Dynamic.literal()
     if (data != null) __obj.updateDynamic("data")(data)

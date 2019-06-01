@@ -41,7 +41,7 @@ trait ParameterArgs extends js.Object {
   /**
     * The type of the parameter. Valid types are `String`, `StringList` and `SecureString`.
     */
-  val `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  val `type`: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.ssmParameterTypeMod.ParameterType]
   /**
     * The value of the parameter.
     */
@@ -51,7 +51,7 @@ trait ParameterArgs extends js.Object {
 object ParameterArgs {
   @scala.inline
   def apply(
-    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.ssmParameterTypeMod.ParameterType],
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     allowedPattern: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

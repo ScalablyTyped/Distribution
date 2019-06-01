@@ -23,7 +23,7 @@ trait SuggestBox extends js.Object {
   def setFocus(focus: scala.Boolean): SuggestBox = js.native
   def setHeight(height: java.lang.String): SuggestBox = js.native
   def setId(id: java.lang.String): SuggestBox = js.native
-  def setLayoutData(layout: js.Object): SuggestBox = js.native
+  def setLayoutData(layout: js.Any): SuggestBox = js.native
   def setLimit(limit: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): SuggestBox = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -32,7 +32,7 @@ trait SuggestBox extends js.Object {
   def setPopupStyleName(styleName: java.lang.String): SuggestBox = js.native
   def setSize(width: java.lang.String, height: java.lang.String): SuggestBox = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): SuggestBox = js.native
-  def setStyleAttributes(attributes: js.Object): SuggestBox = js.native
+  def setStyleAttributes(attributes: js.Any): SuggestBox = js.native
   def setStyleName(styleName: java.lang.String): SuggestBox = js.native
   def setStylePrimaryName(styleName: java.lang.String): SuggestBox = js.native
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): SuggestBox = js.native

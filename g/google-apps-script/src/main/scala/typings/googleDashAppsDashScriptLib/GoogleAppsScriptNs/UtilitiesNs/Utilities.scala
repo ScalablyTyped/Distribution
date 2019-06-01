@@ -44,7 +44,7 @@ trait Utilities extends js.Object {
   def computeRsaSignature(algorithm: RsaAlgorithm, value: java.lang.String, key: java.lang.String): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
   def computeRsaSignature(algorithm: RsaAlgorithm, value: java.lang.String, key: java.lang.String, charset: Charset): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
   def formatDate(date: stdLib.Date, timeZone: java.lang.String, format: java.lang.String): java.lang.String = js.native
-  def formatString(template: java.lang.String, args: js.Object*): java.lang.String = js.native
+  def formatString(template: java.lang.String, args: js.Any*): java.lang.String = js.native
   def getUuid(): java.lang.String = js.native
   def gzip(blob: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource): googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob = js.native
   def gzip(blob: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.BlobSource, name: java.lang.String): googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob = js.native

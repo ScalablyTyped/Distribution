@@ -145,7 +145,7 @@ trait UiInstance extends js.Object {
   def getId(): java.lang.String = js.native
   def isStandardsMode(): scala.Boolean = js.native
   def loadComponent(componentName: java.lang.String): Component = js.native
-  def loadComponent(componentName: java.lang.String, optAdvancedArgs: js.Object): Component = js.native
+  def loadComponent(componentName: java.lang.String, optAdvancedArgs: js.Any): Component = js.native
   def remove(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): UiInstance = js.native
   def remove(widget: Widget): UiInstance = js.native
   def setHeight(height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): UiInstance = js.native

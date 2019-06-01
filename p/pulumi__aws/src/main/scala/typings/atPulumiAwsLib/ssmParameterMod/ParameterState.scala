@@ -41,7 +41,9 @@ trait ParameterState extends js.Object {
   /**
     * The type of the parameter. Valid types are `String`, `StringList` and `SecureString`.
     */
-  val `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  val `type`: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.ssmParameterTypeMod.ParameterType]
+  ] = js.undefined
   /**
     * The value of the parameter.
     */
@@ -59,7 +61,7 @@ object ParameterState {
     overwrite: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     tier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    `type`: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.ssmParameterTypeMod.ParameterType] = null,
     value: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ParameterState = {
     val __obj = js.Dynamic.literal()

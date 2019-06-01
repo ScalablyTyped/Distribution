@@ -22,14 +22,14 @@ trait SplitLayoutPanel extends js.Object {
   def remove(widget: Widget): SplitLayoutPanel = js.native
   def setHeight(height: java.lang.String): SplitLayoutPanel = js.native
   def setId(id: java.lang.String): SplitLayoutPanel = js.native
-  def setLayoutData(layout: js.Object): SplitLayoutPanel = js.native
+  def setLayoutData(layout: js.Any): SplitLayoutPanel = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): SplitLayoutPanel = js.native
   def setSize(width: java.lang.String, height: java.lang.String): SplitLayoutPanel = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): SplitLayoutPanel = js.native
-  def setStyleAttributes(attributes: js.Object): SplitLayoutPanel = js.native
+  def setStyleAttributes(attributes: js.Any): SplitLayoutPanel = js.native
   def setStyleName(styleName: java.lang.String): SplitLayoutPanel = js.native
   def setStylePrimaryName(styleName: java.lang.String): SplitLayoutPanel = js.native
   def setTag(tag: java.lang.String): SplitLayoutPanel = js.native

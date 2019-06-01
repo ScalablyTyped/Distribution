@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Fields extends js.Object {
   def asArray(): js.Array[Field]
-  def build(): js.Array[js.Object]
+  def build(): js.Array[_]
   def forIds(ids: js.Array[java.lang.String]): Fields
   def getDefaultDimension(): Field
   def getDefaultMetric(): Field
@@ -22,7 +22,7 @@ object Fields {
   @scala.inline
   def apply(
     asArray: () => js.Array[Field],
-    build: () => js.Array[js.Object],
+    build: () => js.Array[_],
     forIds: js.Array[java.lang.String] => Fields,
     getDefaultDimension: () => Field,
     getDefaultMetric: () => Field,

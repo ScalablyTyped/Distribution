@@ -53,7 +53,7 @@ class Parameter protected ()
   /**
     * The type of the parameter. Valid types are `String`, `StringList` and `SecureString`.
     */
-  val `type`: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val `type`: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.ssmParameterTypeMod.ParameterType] = js.native
   /**
     * The value of the parameter.
     */

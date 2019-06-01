@@ -9,7 +9,7 @@ trait BooleanCondition extends js.Object {
   def getBackground(): java.lang.String
   def getBold(): scala.Boolean
   def getCriteriaType(): BooleanCriteria
-  def getCriteriaValues(): js.Array[js.Object]
+  def getCriteriaValues(): js.Array[_]
   def getFontColor(): java.lang.String
   def getItalic(): scala.Boolean
   def getStrikethrough(): scala.Boolean
@@ -22,7 +22,7 @@ object BooleanCondition {
     getBackground: () => java.lang.String,
     getBold: () => scala.Boolean,
     getCriteriaType: () => BooleanCriteria,
-    getCriteriaValues: () => js.Array[js.Object],
+    getCriteriaValues: () => js.Array[_],
     getFontColor: () => java.lang.String,
     getItalic: () => scala.Boolean,
     getStrikethrough: () => scala.Boolean,

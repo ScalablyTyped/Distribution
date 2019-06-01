@@ -20,7 +20,7 @@ trait DecoratedStackPanel extends js.Object {
   def remove(widget: Widget): DecoratedStackPanel = js.native
   def setHeight(height: java.lang.String): DecoratedStackPanel = js.native
   def setId(id: java.lang.String): DecoratedStackPanel = js.native
-  def setLayoutData(layout: js.Object): DecoratedStackPanel = js.native
+  def setLayoutData(layout: js.Any): DecoratedStackPanel = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
@@ -33,7 +33,7 @@ trait DecoratedStackPanel extends js.Object {
     asHtml: scala.Boolean
   ): DecoratedStackPanel = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): DecoratedStackPanel = js.native
-  def setStyleAttributes(attributes: js.Object): DecoratedStackPanel = js.native
+  def setStyleAttributes(attributes: js.Any): DecoratedStackPanel = js.native
   def setStyleName(styleName: java.lang.String): DecoratedStackPanel = js.native
   def setStylePrimaryName(styleName: java.lang.String): DecoratedStackPanel = js.native
   def setTag(tag: java.lang.String): DecoratedStackPanel = js.native

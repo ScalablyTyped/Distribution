@@ -53,6 +53,7 @@ object SliderProps {
     onBeforeChange: /* value */ scala.Double => scala.Unit = null,
     onChange: /* value */ scala.Double => scala.Unit = null,
     railStyle: reactLib.reactMod.CSSProperties = null,
+    reverse: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
     style: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     tabIndex: scala.Int | scala.Double = null,
@@ -79,6 +80,7 @@ object SliderProps {
     if (onBeforeChange != null) __obj.updateDynamic("onBeforeChange")(js.Any.fromFunction1(onBeforeChange))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (railStyle != null) __obj.updateDynamic("railStyle")(railStyle)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])

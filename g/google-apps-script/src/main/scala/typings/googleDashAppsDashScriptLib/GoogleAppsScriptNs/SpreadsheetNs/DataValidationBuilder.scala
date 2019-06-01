@@ -11,11 +11,11 @@ trait DataValidationBuilder extends js.Object {
   def copy(): DataValidationBuilder = js.native
   def getAllowInvalid(): scala.Boolean = js.native
   def getCriteriaType(): DataValidationCriteria = js.native
-  def getCriteriaValues(): js.Array[js.Object] = js.native
+  def getCriteriaValues(): js.Array[_] = js.native
   def getHelpText(): java.lang.String = js.native
   def requireCheckbox(): DataValidationBuilder = js.native
-  def requireCheckbox(checkedValue: js.Object): DataValidationBuilder = js.native
-  def requireCheckbox(checkedValue: js.Object, uncheckedValue: js.Object): DataValidationBuilder = js.native
+  def requireCheckbox(checkedValue: js.Any): DataValidationBuilder = js.native
+  def requireCheckbox(checkedValue: js.Any, uncheckedValue: js.Any): DataValidationBuilder = js.native
   def requireDate(): DataValidationBuilder = js.native
   def requireDateAfter(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DataValidationBuilder = js.native
   def requireDateBefore(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DataValidationBuilder = js.native
@@ -50,6 +50,6 @@ trait DataValidationBuilder extends js.Object {
   def requireValueInRange(range: Range, showDropdown: scala.Boolean): DataValidationBuilder = js.native
   def setAllowInvalid(allowInvalidData: scala.Boolean): DataValidationBuilder = js.native
   def setHelpText(helpText: java.lang.String): DataValidationBuilder = js.native
-  def withCriteria(criteria: DataValidationCriteria, args: js.Array[js.Object]): DataValidationBuilder = js.native
+  def withCriteria(criteria: DataValidationCriteria, args: js.Array[_]): DataValidationBuilder = js.native
 }
 

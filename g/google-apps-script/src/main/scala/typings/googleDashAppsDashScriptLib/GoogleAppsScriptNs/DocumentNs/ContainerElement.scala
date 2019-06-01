@@ -25,7 +25,7 @@ trait ContainerElement extends js.Object {
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: java.lang.String): RangeElement = js.native
   def findText(searchPattern: java.lang.String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getChild(childIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Element = js.native
   def getChildIndex(child: Element): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getLinkUrl(): java.lang.String = js.native
@@ -40,7 +40,7 @@ trait ContainerElement extends js.Object {
   def merge(): ContainerElement = js.native
   def removeFromParent(): ContainerElement = js.native
   def replaceText(searchPattern: java.lang.String, replacement: java.lang.String): Element = js.native
-  def setAttributes(attributes: js.Object): ContainerElement = js.native
+  def setAttributes(attributes: js.Any): ContainerElement = js.native
   def setLinkUrl(url: java.lang.String): ContainerElement = js.native
   def setTextAlignment(textAlignment: TextAlignment): ContainerElement = js.native
 }

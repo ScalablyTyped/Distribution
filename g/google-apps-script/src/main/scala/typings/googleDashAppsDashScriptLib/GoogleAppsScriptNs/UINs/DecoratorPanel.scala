@@ -15,14 +15,14 @@ trait DecoratorPanel extends js.Object {
   def getType(): java.lang.String
   def setHeight(height: java.lang.String): DecoratorPanel
   def setId(id: java.lang.String): DecoratorPanel
-  def setLayoutData(layout: js.Object): DecoratorPanel
+  def setLayoutData(layout: js.Any): DecoratorPanel
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): DecoratorPanel
   def setSize(width: java.lang.String, height: java.lang.String): DecoratorPanel
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): DecoratorPanel
-  def setStyleAttributes(attributes: js.Object): DecoratorPanel
+  def setStyleAttributes(attributes: js.Any): DecoratorPanel
   def setStyleName(styleName: java.lang.String): DecoratorPanel
   def setStylePrimaryName(styleName: java.lang.String): DecoratorPanel
   def setTag(tag: java.lang.String): DecoratorPanel
@@ -44,11 +44,11 @@ object DecoratorPanel {
     getType: () => java.lang.String,
     setHeight: java.lang.String => DecoratorPanel,
     setId: java.lang.String => DecoratorPanel,
-    setLayoutData: js.Object => DecoratorPanel,
+    setLayoutData: js.Any => DecoratorPanel,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => DecoratorPanel,
     setSize: (java.lang.String, java.lang.String) => DecoratorPanel,
     setStyleAttribute: (java.lang.String, java.lang.String) => DecoratorPanel,
-    setStyleAttributes: js.Object => DecoratorPanel,
+    setStyleAttributes: js.Any => DecoratorPanel,
     setStyleName: java.lang.String => DecoratorPanel,
     setStylePrimaryName: java.lang.String => DecoratorPanel,
     setTag: java.lang.String => DecoratorPanel,

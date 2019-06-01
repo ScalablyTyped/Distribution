@@ -74,6 +74,7 @@ object RangeProps {
     onChange: /* value */ js.Array[scala.Double] => scala.Unit = null,
     pushable: scala.Boolean | scala.Double = null,
     railStyle: reactLib.reactMod.CSSProperties = null,
+    reverse: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
     style: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     tabIndex: js.Array[scala.Double] = null,
@@ -103,6 +104,7 @@ object RangeProps {
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (pushable != null) __obj.updateDynamic("pushable")(pushable.asInstanceOf[js.Any])
     if (railStyle != null) __obj.updateDynamic("railStyle")(railStyle)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)

@@ -52,8 +52,8 @@ trait JdbcResultSet extends js.Object {
   def getNClob(columnLabel: java.lang.String): JdbcClob = js.native
   def getNString(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): java.lang.String = js.native
   def getNString(columnLabel: java.lang.String): java.lang.String = js.native
-  def getObject(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): js.Object = js.native
-  def getObject(columnLabel: java.lang.String): js.Object = js.native
+  def getObject(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): js.Any = js.native
+  def getObject(columnLabel: java.lang.String): js.Any = js.native
   def getRef(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): JdbcRef = js.native
   def getRef(columnLabel: java.lang.String): JdbcRef = js.native
   def getRow(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
@@ -141,16 +141,16 @@ trait JdbcResultSet extends js.Object {
   def updateNString(columnLabel: java.lang.String, x: java.lang.String): scala.Unit = js.native
   def updateNull(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
   def updateNull(columnLabel: java.lang.String): scala.Unit = js.native
-  def updateObject(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: js.Object): scala.Unit = js.native
+  def updateObject(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: js.Any): scala.Unit = js.native
   def updateObject(
     columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    x: js.Object,
+    x: js.Any,
     scaleOrLength: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): scala.Unit = js.native
-  def updateObject(columnLabel: java.lang.String, x: js.Object): scala.Unit = js.native
+  def updateObject(columnLabel: java.lang.String, x: js.Any): scala.Unit = js.native
   def updateObject(
     columnLabel: java.lang.String,
-    x: js.Object,
+    x: js.Any,
     scaleOrLength: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): scala.Unit = js.native
   def updateRef(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: JdbcRef): scala.Unit = js.native

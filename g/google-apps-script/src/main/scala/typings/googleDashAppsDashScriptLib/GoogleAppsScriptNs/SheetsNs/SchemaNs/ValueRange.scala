@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ValueRange extends js.Object {
   var majorDimension: js.UndefOr[java.lang.String] = js.undefined
   var range: js.UndefOr[java.lang.String] = js.undefined
-  var values: js.UndefOr[js.Array[js.Array[js.Object]]] = js.undefined
+  var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
 }
 
 object ValueRange {
@@ -16,7 +16,7 @@ object ValueRange {
   def apply(
     majorDimension: java.lang.String = null,
     range: java.lang.String = null,
-    values: js.Array[js.Array[js.Object]] = null
+    values: js.Array[js.Array[_]] = null
   ): ValueRange = {
     val __obj = js.Dynamic.literal()
     if (majorDimension != null) __obj.updateDynamic("majorDimension")(majorDimension)

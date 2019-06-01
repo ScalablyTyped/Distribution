@@ -88,6 +88,7 @@
 | [alt](./a/alt) | A flux implementation | alt, es6, flow, flux, react, unidirectional |
 | [amap-js-sdk](./a/amap-js-sdk) | - | - |
 | [amazon-cognito-auth-js](./a/amazon-cognito-auth-js) | Amazon Cognito Auth JavaScript SDK | amazon, aws, cognito, auth |
+| [amazon-connect-streams](./a/amazon-connect-streams) | - | - |
 | [amazon-product-api](./a/amazon-product-api) | Amazon Product Advertising API client | amazon, aws, product, ads, advertising |
 | [amcharts](./a/amcharts) | http://amcharts.com | - |
 | [amp](./a/amp) | Abstract messaging protocol | amp, actor, message, messaging, zmq, zeromq |
@@ -6060,6 +6061,7 @@
 | [splunk-logging](./s/splunk-logging) | Splunk HTTP Event Collector logging interface | splunk, HTTP, event, collector, logging, stream |
 | [spotify-api](./s/spotify-api) | API for the new "Spotify Web API" | spotify, web, api, rest |
 | [spotify-web-api-js](./s/spotify-web-api-js) | A client-side JS wrapper for the Spotify Web API | spotify |
+| [spotify-web-api-node](./s/spotify-web-api-node) | A Node.js wrapper for Spotify's Web API | spotify, echonest, music, api, wrapper, client, web api |
 | [spotify-web-playback-sdk](./s/spotify-web-playback-sdk) | - | - |
 | [sprintf](./s/sprintf) | Sprintf() for node.js | - |
 | [sprintf-js](./s/sprintf-js) | JavaScript sprintf implementation | - |

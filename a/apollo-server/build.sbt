@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "apollo-server"
-version := "2.5.1-2db19f"
+version := "2.6.1-ad1858"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "apollo-link" % "1.2.11-1d20bf",
-  "org.scalablytyped" %%% "apollo-server-express" % "2.5.1-a675c3",
+  "org.scalablytyped" %%% "apollo-server-express" % "2.6.1-a675c3",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-8931e7",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-85ff12",
   "org.scalablytyped" %%% "cors" % "2.8-dt-20190425Z-aed8fa",

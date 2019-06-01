@@ -12,6 +12,7 @@ trait Anon_EditorcursorShape extends js.Object {
   var `editor.reuseHeaders`: scala.Boolean
   var `editor.theme`: atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.Theme
   var `general.betaUpdates`: scala.Boolean
+  var `queryPlan.hideQueryPlanResponse`: scala.Boolean
   var `request.credentials`: java.lang.String
   var `tracing.hideTracingResponse`: scala.Boolean
 }
@@ -25,6 +26,7 @@ object Anon_EditorcursorShape {
     `editor.reuseHeaders`: scala.Boolean,
     `editor.theme`: atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.Theme,
     `general.betaUpdates`: scala.Boolean,
+    `queryPlan.hideQueryPlanResponse`: scala.Boolean,
     `request.credentials`: java.lang.String,
     `tracing.hideTracingResponse`: scala.Boolean
   ): Anon_EditorcursorShape = {
@@ -35,6 +37,7 @@ object Anon_EditorcursorShape {
     __obj.updateDynamic("editor.reuseHeaders")(`editor.reuseHeaders`)
     __obj.updateDynamic("editor.theme")(`editor.theme`)
     __obj.updateDynamic("general.betaUpdates")(`general.betaUpdates`)
+    __obj.updateDynamic("queryPlan.hideQueryPlanResponse")(`queryPlan.hideQueryPlanResponse`)
     __obj.updateDynamic("request.credentials")(`request.credentials`)
     __obj.updateDynamic("tracing.hideTracingResponse")(`tracing.hideTracingResponse`)
     __obj.asInstanceOf[Anon_EditorcursorShape]

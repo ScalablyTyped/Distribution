@@ -20,7 +20,7 @@ trait ScatterChartBuilder extends js.Object {
   ): ScatterChartBuilder = js.native
   def setLegendPosition(position: Position): ScatterChartBuilder = js.native
   def setLegendTextStyle(textStyle: TextStyle): ScatterChartBuilder = js.native
-  def setOption(option: java.lang.String, value: js.Object): ScatterChartBuilder = js.native
+  def setOption(option: java.lang.String, value: js.Any): ScatterChartBuilder = js.native
   def setPointStyle(style: PointStyle): ScatterChartBuilder = js.native
   def setTitle(chartTitle: java.lang.String): ScatterChartBuilder = js.native
   def setTitleTextStyle(textStyle: TextStyle): ScatterChartBuilder = js.native

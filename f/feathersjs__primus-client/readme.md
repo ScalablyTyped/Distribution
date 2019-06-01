@@ -39,7 +39,7 @@ These comments are from the typescript definitions and might be useful:
 // Project: https://feathersjs.com
 // Definitions by: Jan Lohage <https://github.com/j2L4e>
 // Definitions: https://github.com/feathersjs-ecosystem/feathers-typescript
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 // primus removed its typings from the repo https://github.com/primus/primus/pull/623, as of 01/2018 there are none on DT
 
 ```

@@ -20,14 +20,14 @@ trait TabBar extends js.Object {
   def selectTab(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): TabBar = js.native
   def setHeight(height: java.lang.String): TabBar = js.native
   def setId(id: java.lang.String): TabBar = js.native
-  def setLayoutData(layout: js.Object): TabBar = js.native
+  def setLayoutData(layout: js.Any): TabBar = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): TabBar = js.native
   def setSize(width: java.lang.String, height: java.lang.String): TabBar = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): TabBar = js.native
-  def setStyleAttributes(attributes: js.Object): TabBar = js.native
+  def setStyleAttributes(attributes: js.Any): TabBar = js.native
   def setStyleName(styleName: java.lang.String): TabBar = js.native
   def setStylePrimaryName(styleName: java.lang.String): TabBar = js.native
   def setTabEnabled(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, enabled: scala.Boolean): TabBar = js.native

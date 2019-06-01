@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "intl-relativeformat"
-version := "2.1-dt-20180823Z-1e08b7"
+version := "2.1-dt-20190531Z-1e08b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

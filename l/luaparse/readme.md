@@ -1,6 +1,7 @@
 
 # Scala.js typings for luaparse
 
+Typings are for version 0.2
 
 ## Library description:
 A Lua parser in JavaScript
@@ -34,10 +35,12 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for luaparse
-// Project: https://github.com/oxyc/luaparse
+// Type definitions for luaparse 0.2
+// Project: https://oxyc.github.io/luaparse
 // Definitions by: Sam Saint-Pettersen <https://github.com/stpettersens>
+//                 thomasfn <https://github.com/thomasfn>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.4
 
 ```
 

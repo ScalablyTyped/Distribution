@@ -23,6 +23,10 @@ class RoleAlias protected ()
     */
   val alias: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * The ARN assigned by AWS to this role alias.
+    */
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The duration of the credential, in seconds. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 900 seconds (15 minutes) to 3600 seconds (60 minutes).
     */
   val credentialDuration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native

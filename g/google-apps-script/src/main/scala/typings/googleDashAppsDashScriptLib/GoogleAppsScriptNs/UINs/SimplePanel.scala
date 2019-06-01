@@ -15,14 +15,14 @@ trait SimplePanel extends js.Object {
   def getType(): java.lang.String
   def setHeight(height: java.lang.String): SimplePanel
   def setId(id: java.lang.String): SimplePanel
-  def setLayoutData(layout: js.Object): SimplePanel
+  def setLayoutData(layout: js.Any): SimplePanel
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): SimplePanel
   def setSize(width: java.lang.String, height: java.lang.String): SimplePanel
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): SimplePanel
-  def setStyleAttributes(attributes: js.Object): SimplePanel
+  def setStyleAttributes(attributes: js.Any): SimplePanel
   def setStyleName(styleName: java.lang.String): SimplePanel
   def setStylePrimaryName(styleName: java.lang.String): SimplePanel
   def setTag(tag: java.lang.String): SimplePanel
@@ -44,11 +44,11 @@ object SimplePanel {
     getType: () => java.lang.String,
     setHeight: java.lang.String => SimplePanel,
     setId: java.lang.String => SimplePanel,
-    setLayoutData: js.Object => SimplePanel,
+    setLayoutData: js.Any => SimplePanel,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => SimplePanel,
     setSize: (java.lang.String, java.lang.String) => SimplePanel,
     setStyleAttribute: (java.lang.String, java.lang.String) => SimplePanel,
-    setStyleAttributes: js.Object => SimplePanel,
+    setStyleAttributes: js.Any => SimplePanel,
     setStyleName: java.lang.String => SimplePanel,
     setStylePrimaryName: java.lang.String => SimplePanel,
     setTag: java.lang.String => SimplePanel,

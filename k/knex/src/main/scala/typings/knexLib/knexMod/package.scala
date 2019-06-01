@@ -9,16 +9,14 @@ package object knexMod {
   type AliasDict = Dict[java.lang.String]
   type AlterColumnBuilder = ColumnBuilder
   type AlterTableBuilder = TableBuilder
+  type ArrayIfAlready[T1, T2] = T2 | js.Array[T2]
   // If T is an array, get the type of member, else fall back to never
   type ArrayMember[T] = js.Any
   // Intersection conditionally applied only when TParams is non-empty
   // This is primarily to keep the signatures more intuitive.
   type AugmentParams[TTarget, TParams] = (js.Object with TTarget with TParams) | TTarget
   type ColumnDescriptor[TRecord, TResult] = java.lang.String | Raw[js.Any] | (QueryBuilder[TRecord, TResult]) | Dict[java.lang.String]
-  type CountQueryBuilder[TRecord] = QueryBuilder[
-    TRecord, 
-    js.Array[org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]]
-  ]
+  type CountQueryBuilder[TRecord, TResult] = QueryBuilder[TRecord, ArrayIfAlready[TResult, Dict[scala.Double | java.lang.String]]]
   type CreateTableBuilder = TableBuilder
   // Convenience alias and associated companion namespace for working
   // with DeferredSelection having TSingle=true.
@@ -31,6 +29,7 @@ package object knexMod {
   type Distinct[TRecord /* <: js.Object */, TResult] = ColumnNameQueryBuilder[TRecord, TResult]
   // If T can't be assigned to TBase fallback to an alternate type TAlt
   type IncompatibleToAlt[T, TBase, TAlt] = TAlt | T
+  type InferrableColumnDescriptor[TRecord /* <: js.Object */] = java.lang.String | (Ref[js.Any, js.Any]) | Dict[java.lang.String]
   type IntersectAliases[AliasUT] = UnionToIntersection[IncompatibleToAlt[js.Any, Dict[js.Any], js.Object]]
   type JoinCallback = js.ThisFunction1[/* this */ JoinClause, /* join */ JoinClause, scala.Unit]
   type JoinRaw[TRecord, TResult] = js.Function2[

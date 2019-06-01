@@ -29,14 +29,14 @@ trait ResetButton extends js.Object {
   def setHTML(html: java.lang.String): ResetButton
   def setHeight(height: java.lang.String): ResetButton
   def setId(id: java.lang.String): ResetButton
-  def setLayoutData(layout: js.Object): ResetButton
+  def setLayoutData(layout: js.Any): ResetButton
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): ResetButton
   def setSize(width: java.lang.String, height: java.lang.String): ResetButton
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): ResetButton
-  def setStyleAttributes(attributes: js.Object): ResetButton
+  def setStyleAttributes(attributes: js.Any): ResetButton
   def setStyleName(styleName: java.lang.String): ResetButton
   def setStylePrimaryName(styleName: java.lang.String): ResetButton
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): ResetButton
@@ -73,11 +73,11 @@ object ResetButton {
     setHTML: java.lang.String => ResetButton,
     setHeight: java.lang.String => ResetButton,
     setId: java.lang.String => ResetButton,
-    setLayoutData: js.Object => ResetButton,
+    setLayoutData: js.Any => ResetButton,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => ResetButton,
     setSize: (java.lang.String, java.lang.String) => ResetButton,
     setStyleAttribute: (java.lang.String, java.lang.String) => ResetButton,
-    setStyleAttributes: js.Object => ResetButton,
+    setStyleAttributes: js.Any => ResetButton,
     setStyleName: java.lang.String => ResetButton,
     setStylePrimaryName: java.lang.String => ResetButton,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ResetButton,

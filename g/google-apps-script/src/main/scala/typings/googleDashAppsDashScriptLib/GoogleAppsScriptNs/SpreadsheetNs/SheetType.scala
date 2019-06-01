@@ -16,11 +16,11 @@ object SheetType extends js.Object {
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.SheetType
   
   @js.native
-  sealed trait OBJECT
+  sealed trait any
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.SheetType
   
   val GRID: GRID with java.lang.String = js.native
-  val OBJECT: OBJECT with java.lang.String = js.native
+  val any: any with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[
     googleDashAppsDashScriptLib.GoogleAppsScriptNs.SpreadsheetNs.SheetType with java.lang.String

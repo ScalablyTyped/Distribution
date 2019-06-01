@@ -38,13 +38,13 @@ trait Site extends js.Object {
   def createWebPage(title: java.lang.String, name: java.lang.String, html: java.lang.String): Page = js.native
   def deleteSite(): scala.Unit = js.native
   def getAllDescendants(): js.Array[Page] = js.native
-  def getAllDescendants(options: js.Object): js.Array[Page] = js.native
+  def getAllDescendants(options: js.Any): js.Array[Page] = js.native
   def getAnnouncements(): js.Array[Page] = js.native
   def getAnnouncementsPages(): js.Array[Page] = js.native
   def getAttachments(): js.Array[Attachment] = js.native
   def getChildByName(name: java.lang.String): Page = js.native
   def getChildren(): js.Array[Page] = js.native
-  def getChildren(options: js.Object): js.Array[Page] = js.native
+  def getChildren(options: js.Any): js.Array[Page] = js.native
   def getCollaborators(): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User] = js.native
   def getComments(): js.Array[Comment] = js.native
   def getEditors(): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User] = js.native
@@ -72,7 +72,7 @@ trait Site extends js.Object {
   def removeViewer(emailAddress: java.lang.String): Site = js.native
   def removeViewer(user: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User): Site = js.native
   def search(query: java.lang.String): js.Array[Page] = js.native
-  def search(query: java.lang.String, options: js.Object): js.Array[Page] = js.native
+  def search(query: java.lang.String, options: js.Any): js.Array[Page] = js.native
   def setSummary(summary: java.lang.String): Site = js.native
   def setTheme(theme: java.lang.String): Site = js.native
   def setTitle(title: java.lang.String): Site = js.native

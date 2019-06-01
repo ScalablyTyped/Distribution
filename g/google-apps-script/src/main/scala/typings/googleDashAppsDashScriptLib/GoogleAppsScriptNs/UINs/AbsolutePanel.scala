@@ -23,14 +23,14 @@ trait AbsolutePanel extends js.Object {
   def remove(widget: Widget): AbsolutePanel = js.native
   def setHeight(height: java.lang.String): AbsolutePanel = js.native
   def setId(id: java.lang.String): AbsolutePanel = js.native
-  def setLayoutData(layout: js.Object): AbsolutePanel = js.native
+  def setLayoutData(layout: js.Any): AbsolutePanel = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): AbsolutePanel = js.native
   def setSize(width: java.lang.String, height: java.lang.String): AbsolutePanel = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): AbsolutePanel = js.native
-  def setStyleAttributes(attributes: js.Object): AbsolutePanel = js.native
+  def setStyleAttributes(attributes: js.Any): AbsolutePanel = js.native
   def setStyleName(styleName: java.lang.String): AbsolutePanel = js.native
   def setStylePrimaryName(styleName: java.lang.String): AbsolutePanel = js.native
   def setTag(tag: java.lang.String): AbsolutePanel = js.native

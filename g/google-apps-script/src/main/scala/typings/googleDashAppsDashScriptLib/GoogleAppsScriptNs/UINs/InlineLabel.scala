@@ -22,14 +22,14 @@ trait InlineLabel extends js.Object {
   def setHeight(height: java.lang.String): InlineLabel
   def setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): InlineLabel
   def setId(id: java.lang.String): InlineLabel
-  def setLayoutData(layout: js.Object): InlineLabel
+  def setLayoutData(layout: js.Any): InlineLabel
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): InlineLabel
   def setSize(width: java.lang.String, height: java.lang.String): InlineLabel
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): InlineLabel
-  def setStyleAttributes(attributes: js.Object): InlineLabel
+  def setStyleAttributes(attributes: js.Any): InlineLabel
   def setStyleName(styleName: java.lang.String): InlineLabel
   def setStylePrimaryName(styleName: java.lang.String): InlineLabel
   def setTag(tag: java.lang.String): InlineLabel
@@ -59,11 +59,11 @@ object InlineLabel {
     setHeight: java.lang.String => InlineLabel,
     setHorizontalAlignment: HorizontalAlignment => InlineLabel,
     setId: java.lang.String => InlineLabel,
-    setLayoutData: js.Object => InlineLabel,
+    setLayoutData: js.Any => InlineLabel,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => InlineLabel,
     setSize: (java.lang.String, java.lang.String) => InlineLabel,
     setStyleAttribute: (java.lang.String, java.lang.String) => InlineLabel,
-    setStyleAttributes: js.Object => InlineLabel,
+    setStyleAttributes: js.Any => InlineLabel,
     setStyleName: java.lang.String => InlineLabel,
     setStylePrimaryName: java.lang.String => InlineLabel,
     setTag: java.lang.String => InlineLabel,

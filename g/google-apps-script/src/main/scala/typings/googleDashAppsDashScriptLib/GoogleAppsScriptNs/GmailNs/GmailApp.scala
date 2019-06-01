@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GmailApp extends js.Object {
   def createDraft(recipient: java.lang.String, subject: java.lang.String, body: java.lang.String): GmailDraft = js.native
-  def createDraft(recipient: java.lang.String, subject: java.lang.String, body: java.lang.String, options: js.Object): GmailDraft = js.native
+  def createDraft(recipient: java.lang.String, subject: java.lang.String, body: java.lang.String, options: js.Any): GmailDraft = js.native
   def createLabel(name: java.lang.String): GmailLabel = js.native
   def deleteLabel(label: GmailLabel): GmailApp = js.native
   def getAliases(): js.Array[java.lang.String] = js.native
@@ -88,7 +88,7 @@ trait GmailApp extends js.Object {
     max: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): js.Array[GmailThread] = js.native
   def sendEmail(recipient: java.lang.String, subject: java.lang.String, body: java.lang.String): GmailApp = js.native
-  def sendEmail(recipient: java.lang.String, subject: java.lang.String, body: java.lang.String, options: js.Object): GmailApp = js.native
+  def sendEmail(recipient: java.lang.String, subject: java.lang.String, body: java.lang.String, options: js.Any): GmailApp = js.native
   def setCurrentMessageAccessToken(accessToken: java.lang.String): scala.Unit = js.native
   def starMessage(message: GmailMessage): GmailApp = js.native
   def starMessages(messages: js.Array[GmailMessage]): GmailApp = js.native

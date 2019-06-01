@@ -29,7 +29,7 @@ trait SimpleCheckBox extends js.Object {
   def setFocus(focus: scala.Boolean): SimpleCheckBox
   def setHeight(height: java.lang.String): SimpleCheckBox
   def setId(id: java.lang.String): SimpleCheckBox
-  def setLayoutData(layout: js.Object): SimpleCheckBox
+  def setLayoutData(layout: js.Any): SimpleCheckBox
   def setName(name: java.lang.String): SimpleCheckBox
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -37,7 +37,7 @@ trait SimpleCheckBox extends js.Object {
   ): SimpleCheckBox
   def setSize(width: java.lang.String, height: java.lang.String): SimpleCheckBox
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): SimpleCheckBox
-  def setStyleAttributes(attributes: js.Object): SimpleCheckBox
+  def setStyleAttributes(attributes: js.Any): SimpleCheckBox
   def setStyleName(styleName: java.lang.String): SimpleCheckBox
   def setStylePrimaryName(styleName: java.lang.String): SimpleCheckBox
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): SimpleCheckBox
@@ -73,12 +73,12 @@ object SimpleCheckBox {
     setFocus: scala.Boolean => SimpleCheckBox,
     setHeight: java.lang.String => SimpleCheckBox,
     setId: java.lang.String => SimpleCheckBox,
-    setLayoutData: js.Object => SimpleCheckBox,
+    setLayoutData: js.Any => SimpleCheckBox,
     setName: java.lang.String => SimpleCheckBox,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => SimpleCheckBox,
     setSize: (java.lang.String, java.lang.String) => SimpleCheckBox,
     setStyleAttribute: (java.lang.String, java.lang.String) => SimpleCheckBox,
-    setStyleAttributes: js.Object => SimpleCheckBox,
+    setStyleAttributes: js.Any => SimpleCheckBox,
     setStyleName: java.lang.String => SimpleCheckBox,
     setStylePrimaryName: java.lang.String => SimpleCheckBox,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => SimpleCheckBox,

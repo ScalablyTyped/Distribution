@@ -260,14 +260,14 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   @JSName("andWhere")
   def andWhere_TResult2[TResult2](raw: Raw[TResult2]): QueryBuilder[TRecord, TResult2] = js.native
   def as(columnName: java.lang.String): QueryBuilder[TRecord, TResult] = js.native
-  def avg[TResult2 /* <: js.Array[js.Object] */](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
-  def avg[TResult2 /* <: js.Array[js.Object] */](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
-  def avg[TResult2 /* <: js.Array[js.Object] */](
+  def avg[TResult2](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
+  def avg[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
+  def avg[TResult2](
     columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
   ): QueryBuilder[TRecord, TResult2] = js.native
-  def avgDistinct[TResult2 /* <: js.Array[js.Object] */](columnName: java.lang.String): QueryBuilder[TRecord, TResult2] = js.native
-  def avgDistinct[TResult2 /* <: js.Array[js.Object] */](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
-  def avgDistinct[TResult2 /* <: js.Array[js.Object] */](columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): QueryBuilder[TRecord, TResult2] = js.native
+  def avgDistinct[TResult2](columnName: java.lang.String): QueryBuilder[TRecord, TResult2] = js.native
+  def avgDistinct[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
+  def avgDistinct[TResult2](columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): QueryBuilder[TRecord, TResult2] = js.native
   def clearCounters(): QueryBuilder[TRecord, TResult] = js.native
   def clearHaving(): QueryBuilder[TRecord, TResult] = js.native
   def clearOrder(): QueryBuilder[TRecord, TResult] = js.native
@@ -290,9 +290,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   // specify result type and if not widen the result to entire record type with any omissions permitted
   def column[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
   def column[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def column[AliasUT /* <: js.Array[
-    java.lang.String | (Ref[_, _]) | org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  ] */, TResult2](
+  def column[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
   ): QueryBuilder[TRecord, TResult2] = js.native
   // When all columns are known to be keys of original record,
@@ -327,9 +325,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   // specify result type and if not widen the result to entire record type with any omissions permitted
   def columns[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
   def columns[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def columns[AliasUT /* <: js.Array[
-    java.lang.String | (Ref[_, _]) | org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  ] */, TResult2](
+  def columns[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
   ): QueryBuilder[TRecord, TResult2] = js.native
   // When all columns are known to be keys of original record,
@@ -359,15 +355,15 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def columns_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: (QueryBuilder[TInnerRecord, TInnerResult])*): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("columns")
   def columns_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def count(columnName: Raw[_]): CountQueryBuilder[TRecord] = js.native
+  def count(columnName: Raw[_]): CountQueryBuilder[TRecord, TResult] = js.native
   // Aggregation
-  def count(columnNames: java.lang.String*): CountQueryBuilder[TRecord] = js.native
+  def count(columnNames: java.lang.String*): CountQueryBuilder[TRecord, TResult] = js.native
   def count(
     columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
-  ): CountQueryBuilder[TRecord] = js.native
-  def countDistinct(columnName: java.lang.String): CountQueryBuilder[TRecord] = js.native
-  def countDistinct(columnName: Raw[_]): CountQueryBuilder[TRecord] = js.native
-  def countDistinct(columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): CountQueryBuilder[TRecord] = js.native
+  ): CountQueryBuilder[TRecord, TResult] = js.native
+  def countDistinct(columnName: java.lang.String): CountQueryBuilder[TRecord, TResult] = js.native
+  def countDistinct(columnName: Raw[_]): CountQueryBuilder[TRecord, TResult] = js.native
+  def countDistinct(columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): CountQueryBuilder[TRecord, TResult] = js.native
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: AliasDict, clause: JoinCallback): QueryBuilder[TRecord2, TResult2] = js.native
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: AliasDict, column1: java.lang.String, column2: java.lang.String): QueryBuilder[TRecord2, TResult2] = js.native
@@ -469,9 +465,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     ]
   ): QueryBuilder[TRecord, TResult2] = js.native
   // Others
-  def first[AliasUT /* <: js.Array[
-    java.lang.String | (Ref[_, _]) | org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  ] */, TResult2](
+  def first[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
   ): QueryBuilder[TRecord, TResult2] = js.native
   // When all columns are known to be keys of original record,
@@ -833,14 +827,14 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   ): QueryBuilder[TRecord2, TResult2] = js.native
   def leftOuterJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableDescriptor, raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def limit(limit: scala.Double): QueryBuilder[TRecord, TResult] = js.native
-  def max[TResult2 /* <: js.Array[js.Object] */](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
-  def max[TResult2 /* <: js.Array[js.Object] */](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
-  def max[TResult2 /* <: js.Array[js.Object] */](
+  def max[TResult2](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
+  def max[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
+  def max[TResult2](
     columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
   ): QueryBuilder[TRecord, TResult2] = js.native
-  def min[TResult2 /* <: js.Array[js.Object] */](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
-  def min[TResult2 /* <: js.Array[js.Object] */](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
-  def min[TResult2 /* <: js.Array[js.Object] */](
+  def min[TResult2](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
+  def min[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
+  def min[TResult2](
     columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
   ): QueryBuilder[TRecord, TResult2] = js.native
   def modify[TRecord2 /* <: js.Object */, TResult2 /* <: js.Object */](callback: QueryCallbackWithArgs[TRecord, _], args: js.Any*): QueryBuilder[TRecord2, TResult2] = js.native
@@ -1193,9 +1187,7 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   // specify result type and if not widen the result to entire record type with any omissions permitted
   def select[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
   def select[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def select[AliasUT /* <: js.Array[
-    java.lang.String | (Ref[_, _]) | org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  ] */, TResult2](
+  def select[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
   ): QueryBuilder[TRecord, TResult2] = js.native
   // When all columns are known to be keys of original record,
@@ -1225,14 +1217,14 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def select_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: (QueryBuilder[TInnerRecord, TInnerResult])*): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("select")
   def select_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def sum[TResult2 /* <: js.Array[js.Object] */](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
-  def sum[TResult2 /* <: js.Array[js.Object] */](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
-  def sum[TResult2 /* <: js.Array[js.Object] */](
+  def sum[TResult2](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
+  def sum[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
+  def sum[TResult2](
     columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
   ): QueryBuilder[TRecord, TResult2] = js.native
-  def sumDistinct[TResult2 /* <: js.Array[js.Object] */](columnName: java.lang.String): QueryBuilder[TRecord, TResult2] = js.native
-  def sumDistinct[TResult2 /* <: js.Array[js.Object] */](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
-  def sumDistinct[TResult2 /* <: js.Array[js.Object] */](columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): QueryBuilder[TRecord, TResult2] = js.native
+  def sumDistinct[TResult2](columnName: java.lang.String): QueryBuilder[TRecord, TResult2] = js.native
+  def sumDistinct[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
+  def sumDistinct[TResult2](columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): QueryBuilder[TRecord, TResult2] = js.native
   def table[TRecord2, TResult2](callback: js.Function): QueryBuilder[TRecord2, TResult2] = js.native
   def table[TRecord2, TResult2](raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def table[TRecord2, TResult2](tableName: AliasDict): QueryBuilder[TRecord2, TResult2] = js.native

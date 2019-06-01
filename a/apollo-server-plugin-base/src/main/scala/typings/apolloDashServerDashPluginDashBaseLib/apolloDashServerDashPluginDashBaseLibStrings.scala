@@ -10,6 +10,9 @@ object apolloDashServerDashPluginDashBaseLibStrings {
   sealed trait document extends js.Object
   
   @js.native
+  sealed trait errors extends js.Object
+  
+  @js.native
   sealed trait metrics extends js.Object
   
   @js.native
@@ -26,6 +29,8 @@ object apolloDashServerDashPluginDashBaseLibStrings {
   
   @scala.inline
   def document: document = "document".asInstanceOf[document]
+  @scala.inline
+  def errors: errors = "errors".asInstanceOf[errors]
   @scala.inline
   def metrics: metrics = "metrics".asInstanceOf[metrics]
   @scala.inline

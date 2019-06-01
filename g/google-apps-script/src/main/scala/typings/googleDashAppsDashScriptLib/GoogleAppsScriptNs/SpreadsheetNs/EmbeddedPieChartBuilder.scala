@@ -32,7 +32,7 @@ trait EmbeddedPieChartBuilder extends js.Object {
   def setLegendTextStyle(textStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle): EmbeddedPieChartBuilder
   def setMergeStrategy(mergeStrategy: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy): EmbeddedChartBuilder
   def setNumHeaders(headers: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): EmbeddedChartBuilder
-  def setOption(option: java.lang.String, value: js.Object): EmbeddedChartBuilder
+  def setOption(option: java.lang.String, value: js.Any): EmbeddedChartBuilder
   def setPosition(
     anchorRowPos: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     anchorColPos: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -73,7 +73,7 @@ object EmbeddedPieChartBuilder {
     setLegendTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedPieChartBuilder,
     setMergeStrategy: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartMergeStrategy => EmbeddedChartBuilder,
     setNumHeaders: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => EmbeddedChartBuilder,
-    setOption: (java.lang.String, js.Object) => EmbeddedChartBuilder,
+    setOption: (java.lang.String, js.Any) => EmbeddedChartBuilder,
     setPosition: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => EmbeddedChartBuilder,
     setTitle: java.lang.String => EmbeddedPieChartBuilder,
     setTitleTextStyle: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.TextStyle => EmbeddedPieChartBuilder,

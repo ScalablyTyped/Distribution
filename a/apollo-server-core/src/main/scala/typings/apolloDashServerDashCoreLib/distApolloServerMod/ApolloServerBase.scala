@@ -11,6 +11,7 @@ class ApolloServerBase protected () extends js.Object {
   def this(config: apolloDashServerDashCoreLib.distTypesMod.Config) = this()
   var context: js.UndefOr[js.Any] = js.native
   var documentStore: js.UndefOr[js.Any] = js.native
+  var engineApiKeyHash: js.UndefOr[js.Any] = js.native
   var engineReportingAgent: js.UndefOr[js.Any] = js.native
   var engineServiceId: js.UndefOr[js.Any] = js.native
   var ensurePluginInstantiation: js.Any = js.native

@@ -32,7 +32,7 @@ trait Anchor extends js.Object {
   def setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): Anchor
   def setHref(href: java.lang.String): Anchor
   def setId(id: java.lang.String): Anchor
-  def setLayoutData(layout: js.Object): Anchor
+  def setLayoutData(layout: js.Any): Anchor
   def setName(name: java.lang.String): Anchor
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -40,7 +40,7 @@ trait Anchor extends js.Object {
   ): Anchor
   def setSize(width: java.lang.String, height: java.lang.String): Anchor
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): Anchor
-  def setStyleAttributes(attributes: js.Object): Anchor
+  def setStyleAttributes(attributes: js.Any): Anchor
   def setStyleName(styleName: java.lang.String): Anchor
   def setStylePrimaryName(styleName: java.lang.String): Anchor
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Anchor
@@ -82,12 +82,12 @@ object Anchor {
     setHorizontalAlignment: HorizontalAlignment => Anchor,
     setHref: java.lang.String => Anchor,
     setId: java.lang.String => Anchor,
-    setLayoutData: js.Object => Anchor,
+    setLayoutData: js.Any => Anchor,
     setName: java.lang.String => Anchor,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Anchor,
     setSize: (java.lang.String, java.lang.String) => Anchor,
     setStyleAttribute: (java.lang.String, java.lang.String) => Anchor,
-    setStyleAttributes: js.Object => Anchor,
+    setStyleAttributes: js.Any => Anchor,
     setStyleName: java.lang.String => Anchor,
     setStylePrimaryName: java.lang.String => Anchor,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => Anchor,

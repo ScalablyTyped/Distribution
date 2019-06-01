@@ -24,7 +24,7 @@ trait HorizontalPanel extends js.Object {
   def setHeight(height: java.lang.String): HorizontalPanel = js.native
   def setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): HorizontalPanel = js.native
   def setId(id: java.lang.String): HorizontalPanel = js.native
-  def setLayoutData(layout: js.Object): HorizontalPanel = js.native
+  def setLayoutData(layout: js.Any): HorizontalPanel = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
@@ -32,7 +32,7 @@ trait HorizontalPanel extends js.Object {
   def setSize(width: java.lang.String, height: java.lang.String): HorizontalPanel = js.native
   def setSpacing(spacing: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): HorizontalPanel = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): HorizontalPanel = js.native
-  def setStyleAttributes(attributes: js.Object): HorizontalPanel = js.native
+  def setStyleAttributes(attributes: js.Any): HorizontalPanel = js.native
   def setStyleName(styleName: java.lang.String): HorizontalPanel = js.native
   def setStylePrimaryName(styleName: java.lang.String): HorizontalPanel = js.native
   def setTag(tag: java.lang.String): HorizontalPanel = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sax
 
-Typings are for version 1.x
+Typings are for version 1.2
 
 ## Library description:
 An evented streaming XML parser in JavaScript
@@ -35,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for sax-js 1.x
+// Type definitions for sax-js 1.2
 // Project: https://github.com/isaacs/sax-js
-// Definitions by: Asana <https://asana.com>
-//                 Evert Pot <https://evertpot.com/>
+// Definitions by: Vincent Siao (Asana, Inc.) <https://github.com/vsiao>
+//                 Evert Pot <https://github.com/evert>
+//                 Daniel Cassidy <https://github.com/djcsdy>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

@@ -93,6 +93,20 @@ object ec2transitgatewayNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  @js.native
+  class VpcAttachmentAccepter protected ()
+    extends atPulumiAwsLib.ec2transitgatewayMod.VpcAttachmentAccepter {
+    /**
+      * Create a VpcAttachmentAccepter resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: java.lang.String, args: atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepterArgs) = this()
+    def this(name: java.lang.String, args: atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  }
+  
   def getRouteTable(): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] = js.native
   def getRouteTable(args: atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] = js.native
   def getRouteTable(
@@ -264,6 +278,31 @@ object ec2transitgatewayNs extends js.Object {
       state: atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachment = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object VpcAttachmentAccepter extends js.Object {
+    /**
+      * Get an existing VpcAttachmentAccepter resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
+    def get(
+      name: java.lang.String,
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      state: atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepterState
+    ): atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
+    def get(
+      name: java.lang.String,
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      state: atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepterState,
+      opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+    ): atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
   }
   
 }

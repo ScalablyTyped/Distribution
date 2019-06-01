@@ -21,7 +21,7 @@ trait ColumnChartBuilder extends js.Object {
   ): ColumnChartBuilder = js.native
   def setLegendPosition(position: Position): ColumnChartBuilder = js.native
   def setLegendTextStyle(textStyle: TextStyle): ColumnChartBuilder = js.native
-  def setOption(option: java.lang.String, value: js.Object): ColumnChartBuilder = js.native
+  def setOption(option: java.lang.String, value: js.Any): ColumnChartBuilder = js.native
   def setRange(start: scala.Double, end: scala.Double): ColumnChartBuilder = js.native
   def setStacked(): ColumnChartBuilder = js.native
   def setTitle(chartTitle: java.lang.String): ColumnChartBuilder = js.native

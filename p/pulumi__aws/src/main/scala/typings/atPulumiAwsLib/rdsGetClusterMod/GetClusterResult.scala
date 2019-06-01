@@ -20,6 +20,7 @@ trait GetClusterResult extends js.Object {
   val engine: java.lang.String
   val engineVersion: java.lang.String
   val finalSnapshotIdentifier: java.lang.String
+  val hostedZoneId: java.lang.String
   val iamDatabaseAuthenticationEnabled: scala.Boolean
   val iamRoles: js.Array[java.lang.String]
   /**
@@ -55,6 +56,7 @@ object GetClusterResult {
     engine: java.lang.String,
     engineVersion: java.lang.String,
     finalSnapshotIdentifier: java.lang.String,
+    hostedZoneId: java.lang.String,
     iamDatabaseAuthenticationEnabled: scala.Boolean,
     iamRoles: js.Array[java.lang.String],
     id: java.lang.String,
@@ -69,7 +71,7 @@ object GetClusterResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcSecurityGroupIds: js.Array[java.lang.String]
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(arn = arn, availabilityZones = availabilityZones, backupRetentionPeriod = backupRetentionPeriod, clusterIdentifier = clusterIdentifier, clusterMembers = clusterMembers, clusterResourceId = clusterResourceId, databaseName = databaseName, dbClusterParameterGroupName = dbClusterParameterGroupName, dbSubnetGroupName = dbSubnetGroupName, enabledCloudwatchLogsExports = enabledCloudwatchLogsExports, endpoint = endpoint, engine = engine, engineVersion = engineVersion, finalSnapshotIdentifier = finalSnapshotIdentifier, iamDatabaseAuthenticationEnabled = iamDatabaseAuthenticationEnabled, iamRoles = iamRoles, id = id, kmsKeyId = kmsKeyId, masterUsername = masterUsername, port = port, preferredBackupWindow = preferredBackupWindow, preferredMaintenanceWindow = preferredMaintenanceWindow, readerEndpoint = readerEndpoint, replicationSourceIdentifier = replicationSourceIdentifier, storageEncrypted = storageEncrypted, tags = tags, vpcSecurityGroupIds = vpcSecurityGroupIds)
+    val __obj = js.Dynamic.literal(arn = arn, availabilityZones = availabilityZones, backupRetentionPeriod = backupRetentionPeriod, clusterIdentifier = clusterIdentifier, clusterMembers = clusterMembers, clusterResourceId = clusterResourceId, databaseName = databaseName, dbClusterParameterGroupName = dbClusterParameterGroupName, dbSubnetGroupName = dbSubnetGroupName, enabledCloudwatchLogsExports = enabledCloudwatchLogsExports, endpoint = endpoint, engine = engine, engineVersion = engineVersion, finalSnapshotIdentifier = finalSnapshotIdentifier, hostedZoneId = hostedZoneId, iamDatabaseAuthenticationEnabled = iamDatabaseAuthenticationEnabled, iamRoles = iamRoles, id = id, kmsKeyId = kmsKeyId, masterUsername = masterUsername, port = port, preferredBackupWindow = preferredBackupWindow, preferredMaintenanceWindow = preferredMaintenanceWindow, readerEndpoint = readerEndpoint, replicationSourceIdentifier = replicationSourceIdentifier, storageEncrypted = storageEncrypted, tags = tags, vpcSecurityGroupIds = vpcSecurityGroupIds)
   
     __obj.asInstanceOf[GetClusterResult]
   }

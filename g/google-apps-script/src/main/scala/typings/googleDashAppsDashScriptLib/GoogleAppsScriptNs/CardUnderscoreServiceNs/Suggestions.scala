@@ -7,12 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait Suggestions extends js.Object {
   def addSuggestion(suggestion: java.lang.String): Suggestions
-  def addSuggestions(suggestions: js.Array[js.Object]): Suggestions
+  def addSuggestions(suggestions: js.Array[java.lang.String]): Suggestions
 }
 
 object Suggestions {
   @scala.inline
-  def apply(addSuggestion: java.lang.String => Suggestions, addSuggestions: js.Array[js.Object] => Suggestions): Suggestions = {
+  def apply(
+    addSuggestion: java.lang.String => Suggestions,
+    addSuggestions: js.Array[java.lang.String] => Suggestions
+  ): Suggestions = {
     val __obj = js.Dynamic.literal(addSuggestion = js.Any.fromFunction1(addSuggestion), addSuggestions = js.Any.fromFunction1(addSuggestions))
   
     __obj.asInstanceOf[Suggestions]

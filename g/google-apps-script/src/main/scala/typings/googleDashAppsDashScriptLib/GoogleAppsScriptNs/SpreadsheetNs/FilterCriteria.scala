@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait FilterCriteria extends js.Object {
   def copy(): FilterCriteriaBuilder
   def getCriteriaType(): BooleanCriteria
-  def getCriteriaValues(): js.Array[js.Object]
+  def getCriteriaValues(): js.Array[_]
   def getHiddenValues(): js.Array[java.lang.String]
   def getVisibleValues(): js.Array[java.lang.String]
 }
@@ -18,7 +18,7 @@ object FilterCriteria {
   def apply(
     copy: () => FilterCriteriaBuilder,
     getCriteriaType: () => BooleanCriteria,
-    getCriteriaValues: () => js.Array[js.Object],
+    getCriteriaValues: () => js.Array[_],
     getHiddenValues: () => js.Array[java.lang.String],
     getVisibleValues: () => js.Array[java.lang.String]
   ): FilterCriteria = {

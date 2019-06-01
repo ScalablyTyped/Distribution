@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Geocoder extends js.Object {
-  def geocode(address: java.lang.String): js.Object = js.native
-  def reverseGeocode(latitude: scala.Double, longitude: scala.Double): js.Object = js.native
+  def geocode(address: java.lang.String): js.Any = js.native
+  def reverseGeocode(latitude: scala.Double, longitude: scala.Double): js.Any = js.native
   def reverseGeocode(
     swLatitude: scala.Double,
     swLongitude: scala.Double,
     neLatitude: scala.Double,
     neLongitude: scala.Double
-  ): js.Object = js.native
+  ): js.Any = js.native
   def setBounds(
     swLatitude: scala.Double,
     swLongitude: scala.Double,

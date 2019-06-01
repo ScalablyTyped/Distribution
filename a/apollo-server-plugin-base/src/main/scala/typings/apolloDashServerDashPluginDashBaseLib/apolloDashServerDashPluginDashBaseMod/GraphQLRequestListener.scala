@@ -6,6 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLRequestListener[TContext] extends js.Object {
+  var didEncounterErrors: js.UndefOr[
+    js.Function1[
+      /* requestContext */ WithRequired[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
+        apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.errors
+      ], 
+      ValueOrPromise[scala.Unit]
+    ]
+  ] = js.undefined
   var didResolveOperation: js.UndefOr[
     js.Function1[
       /* requestContext */ WithRequired[
@@ -67,6 +76,10 @@ trait GraphQLRequestListener[TContext] extends js.Object {
 object GraphQLRequestListener {
   @scala.inline
   def apply[TContext](
+    didEncounterErrors: /* requestContext */ WithRequired[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
+      apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.errors
+    ] => ValueOrPromise[scala.Unit] = null,
     didResolveOperation: /* requestContext */ WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
       apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.metrics | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.source | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.document | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operationName | apolloDashServerDashPluginDashBaseLib.apolloDashServerDashPluginDashBaseLibStrings.operation
@@ -95,6 +108,7 @@ object GraphQLRequestListener {
     ] => ValueOrPromise[scala.Unit] = null
   ): GraphQLRequestListener[TContext] = {
     val __obj = js.Dynamic.literal()
+    if (didEncounterErrors != null) __obj.updateDynamic("didEncounterErrors")(js.Any.fromFunction1(didEncounterErrors))
     if (didResolveOperation != null) __obj.updateDynamic("didResolveOperation")(js.Any.fromFunction1(didResolveOperation))
     if (executionDidStart != null) __obj.updateDynamic("executionDidStart")(js.Any.fromFunction1(executionDidStart))
     if (parsingDidStart != null) __obj.updateDynamic("parsingDidStart")(js.Any.fromFunction1(parsingDidStart))

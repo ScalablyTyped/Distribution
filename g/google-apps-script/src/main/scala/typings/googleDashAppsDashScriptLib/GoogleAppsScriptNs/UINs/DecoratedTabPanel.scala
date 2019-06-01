@@ -22,14 +22,14 @@ trait DecoratedTabPanel extends js.Object {
   def setAnimationEnabled(animationEnabled: scala.Boolean): DecoratedTabPanel = js.native
   def setHeight(height: java.lang.String): DecoratedTabPanel = js.native
   def setId(id: java.lang.String): DecoratedTabPanel = js.native
-  def setLayoutData(layout: js.Object): DecoratedTabPanel = js.native
+  def setLayoutData(layout: js.Any): DecoratedTabPanel = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): DecoratedTabPanel = js.native
   def setSize(width: java.lang.String, height: java.lang.String): DecoratedTabPanel = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): DecoratedTabPanel = js.native
-  def setStyleAttributes(attributes: js.Object): DecoratedTabPanel = js.native
+  def setStyleAttributes(attributes: js.Any): DecoratedTabPanel = js.native
   def setStyleName(styleName: java.lang.String): DecoratedTabPanel = js.native
   def setStylePrimaryName(styleName: java.lang.String): DecoratedTabPanel = js.native
   def setTag(tag: java.lang.String): DecoratedTabPanel = js.native

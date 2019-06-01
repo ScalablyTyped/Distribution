@@ -20,7 +20,7 @@ trait DateBox extends js.Object {
   def setFormat(dateTimeFormat: DateTimeFormat): DateBox
   def setHeight(height: java.lang.String): DateBox
   def setId(id: java.lang.String): DateBox
-  def setLayoutData(layout: js.Object): DateBox
+  def setLayoutData(layout: js.Any): DateBox
   def setName(name: java.lang.String): DateBox
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -28,7 +28,7 @@ trait DateBox extends js.Object {
   ): DateBox
   def setSize(width: java.lang.String, height: java.lang.String): DateBox
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): DateBox
-  def setStyleAttributes(attributes: js.Object): DateBox
+  def setStyleAttributes(attributes: js.Any): DateBox
   def setStyleName(styleName: java.lang.String): DateBox
   def setStylePrimaryName(styleName: java.lang.String): DateBox
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): DateBox
@@ -57,12 +57,12 @@ object DateBox {
     setFormat: DateTimeFormat => DateBox,
     setHeight: java.lang.String => DateBox,
     setId: java.lang.String => DateBox,
-    setLayoutData: js.Object => DateBox,
+    setLayoutData: js.Any => DateBox,
     setName: java.lang.String => DateBox,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => DateBox,
     setSize: (java.lang.String, java.lang.String) => DateBox,
     setStyleAttribute: (java.lang.String, java.lang.String) => DateBox,
-    setStyleAttributes: js.Object => DateBox,
+    setStyleAttributes: js.Any => DateBox,
     setStyleName: java.lang.String => DateBox,
     setStylePrimaryName: java.lang.String => DateBox,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => DateBox,

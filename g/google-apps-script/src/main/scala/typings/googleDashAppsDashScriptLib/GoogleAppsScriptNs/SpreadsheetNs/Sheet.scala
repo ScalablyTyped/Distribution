@@ -12,7 +12,7 @@ trait Sheet extends js.Object {
   def addDeveloperMetadata(key: java.lang.String, value: java.lang.String): Sheet = js.native
   def addDeveloperMetadata(key: java.lang.String, value: java.lang.String, visibility: DeveloperMetadataVisibility): Sheet = js.native
   def addDeveloperMetadata(key: java.lang.String, visibility: DeveloperMetadataVisibility): Sheet = js.native
-  def appendRow(rowContents: js.Array[js.Object]): Sheet = js.native
+  def appendRow(rowContents: js.Array[_]): Sheet = js.native
   def autoResizeColumn(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def autoResizeColumns(
     startColumn: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -23,7 +23,7 @@ trait Sheet extends js.Object {
     numRows: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): Sheet = js.native
   def clear(): Sheet = js.native
-  def clear(options: js.Object): Sheet = js.native
+  def clear(options: js.Any): Sheet = js.native
   def clearConditionalFormatRules(): scala.Unit = js.native
   def clearContents(): Sheet = js.native
   def clearFormats(): Sheet = js.native
@@ -112,7 +112,7 @@ trait Sheet extends js.Object {
     startColumn: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     numRows: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     numColumns: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): js.Array[js.Array[js.Object]] = js.native
+  ): js.Array[js.Array[_]] = js.native
   def getTabColor(): java.lang.String = js.native
   def getType(): SheetType = js.native
   def hasHiddenGridlines(): scala.Boolean = js.native

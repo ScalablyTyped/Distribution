@@ -8,8 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("sax", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var EVENTS: js.Array[java.lang.String] = js.native
+  val EVENTS: js.Array[java.lang.String] = js.native
+  def createStream(): SAXStream = js.native
+  def createStream(strict: scala.Boolean): SAXStream = js.native
   def createStream(strict: scala.Boolean, opt: SAXOptions): SAXStream = js.native
+  def parser(): SAXParser = js.native
+  def parser(strict: scala.Boolean): SAXParser = js.native
   def parser(strict: scala.Boolean, opt: SAXOptions): SAXParser = js.native
 }
 

@@ -63,6 +63,12 @@ trait CommonApiProps extends js.Object {
     */
   var railStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   /**
+    * Reverse the direction of the slider.
+    * From Left to Right To Right to Left
+    * @default false
+    */
+  var reverse: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Value to be added or subtracted on each step the slider makes. Must be greater than zero, and max - min should be evenly divisible by the step value.
     *  @default 1
     */
@@ -107,6 +113,7 @@ object CommonApiProps {
     max: scala.Int | scala.Double = null,
     min: scala.Int | scala.Double = null,
     railStyle: reactLib.reactMod.CSSProperties = null,
+    reverse: js.UndefOr[scala.Boolean] = js.undefined,
     step: scala.Int | scala.Double = null,
     style: js.Array[reactLib.reactMod.CSSProperties] | reactLib.reactMod.CSSProperties = null,
     tipFormatter: /* value */ js.Any => js.UndefOr[_] = null,
@@ -127,6 +134,7 @@ object CommonApiProps {
     if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     if (railStyle != null) __obj.updateDynamic("railStyle")(railStyle)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
     if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1(tipFormatter))

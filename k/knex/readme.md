@@ -1,7 +1,7 @@
 
 # Scala.js typings for knex
 
-Typings are for version 0.17.0
+Typings are for version 0.17.1
 
 ## Library description:
 A batteries-included SQL query & schema builder for Postgres, MySQL and SQLite3 and the Browser

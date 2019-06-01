@@ -150,6 +150,9 @@ object ssmNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.ssmResourceDataSyncMod.ResourceDataSyncArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  var SecureStringParameter: atPulumiAwsLib.ssmParameterTypeMod.ParameterType = js.native
+  var StringListParameter: atPulumiAwsLib.ssmParameterTypeMod.ParameterType = js.native
+  var StringParameter: atPulumiAwsLib.ssmParameterTypeMod.ParameterType = js.native
   def getDocument(args: atPulumiAwsLib.ssmGetDocumentMod.GetDocumentArgs): js.Promise[atPulumiAwsLib.ssmGetDocumentMod.GetDocumentResult] = js.native
   def getDocument(
     args: atPulumiAwsLib.ssmGetDocumentMod.GetDocumentArgs,

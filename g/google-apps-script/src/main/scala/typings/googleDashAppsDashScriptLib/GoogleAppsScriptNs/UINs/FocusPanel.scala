@@ -29,14 +29,14 @@ trait FocusPanel extends js.Object {
   def setFocus(focus: scala.Boolean): FocusPanel
   def setHeight(height: java.lang.String): FocusPanel
   def setId(id: java.lang.String): FocusPanel
-  def setLayoutData(layout: js.Object): FocusPanel
+  def setLayoutData(layout: js.Any): FocusPanel
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): FocusPanel
   def setSize(width: java.lang.String, height: java.lang.String): FocusPanel
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): FocusPanel
-  def setStyleAttributes(attributes: js.Object): FocusPanel
+  def setStyleAttributes(attributes: js.Any): FocusPanel
   def setStyleName(styleName: java.lang.String): FocusPanel
   def setStylePrimaryName(styleName: java.lang.String): FocusPanel
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): FocusPanel
@@ -73,11 +73,11 @@ object FocusPanel {
     setFocus: scala.Boolean => FocusPanel,
     setHeight: java.lang.String => FocusPanel,
     setId: java.lang.String => FocusPanel,
-    setLayoutData: js.Object => FocusPanel,
+    setLayoutData: js.Any => FocusPanel,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => FocusPanel,
     setSize: (java.lang.String, java.lang.String) => FocusPanel,
     setStyleAttribute: (java.lang.String, java.lang.String) => FocusPanel,
-    setStyleAttributes: js.Object => FocusPanel,
+    setStyleAttributes: js.Any => FocusPanel,
     setStyleName: java.lang.String => FocusPanel,
     setStylePrimaryName: java.lang.String => FocusPanel,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => FocusPanel,

@@ -22,7 +22,7 @@ class AggregationCursor[T] ()
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#geoNear */
   def geoNear(document: js.Object): AggregationCursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#group */
-  def group(document: js.Object): AggregationCursor[T] = js.native
+  def group[U](document: js.Object): AggregationCursor[U] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#hasNext */
   def hasNext(): js.Promise[scala.Boolean] = js.native
   def hasNext(callback: MongoCallback[scala.Boolean]): scala.Unit = js.native
@@ -40,7 +40,7 @@ class AggregationCursor[T] ()
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#out */
   def out(destination: java.lang.String): AggregationCursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#project */
-  def project(document: js.Object): AggregationCursor[T] = js.native
+  def project[U](document: js.Object): AggregationCursor[U] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#redact */
   def redact(document: js.Object): AggregationCursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#rewind */
@@ -53,6 +53,6 @@ class AggregationCursor[T] ()
   def toArray(): js.Promise[js.Array[T]] = js.native
   def toArray(callback: MongoCallback[js.Array[T]]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/AggregationCursor.html#unwind */
-  def unwind(field: java.lang.String): AggregationCursor[T] = js.native
+  def unwind[U](field: java.lang.String): AggregationCursor[U] = js.native
 }
 

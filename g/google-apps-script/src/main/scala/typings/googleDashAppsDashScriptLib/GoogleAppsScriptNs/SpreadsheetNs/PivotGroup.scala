@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PivotGroup extends js.Object {
-  def addManualGroupingRule(groupName: java.lang.String, groupMembers: js.Array[js.Object]): PivotGroup
+  def addManualGroupingRule(groupName: java.lang.String, groupMembers: js.Array[_]): PivotGroup
   def areLabelsRepeated(): scala.Boolean
   def clearGroupingRule(): PivotGroup
   def clearSort(): PivotGroup
@@ -29,7 +29,7 @@ trait PivotGroup extends js.Object {
   def showRepeatedLabels(): PivotGroup
   def showTotals(showTotals: scala.Boolean): PivotGroup
   def sortAscending(): PivotGroup
-  def sortBy(value: PivotValue, oppositeGroupValues: js.Array[js.Object]): PivotGroup
+  def sortBy(value: PivotValue, oppositeGroupValues: js.Array[_]): PivotGroup
   def sortDescending(): PivotGroup
   def totalsAreShown(): scala.Boolean
 }
@@ -37,7 +37,7 @@ trait PivotGroup extends js.Object {
 object PivotGroup {
   @scala.inline
   def apply(
-    addManualGroupingRule: (java.lang.String, js.Array[js.Object]) => PivotGroup,
+    addManualGroupingRule: (java.lang.String, js.Array[_]) => PivotGroup,
     areLabelsRepeated: () => scala.Boolean,
     clearGroupingRule: () => PivotGroup,
     clearSort: () => PivotGroup,
@@ -56,7 +56,7 @@ object PivotGroup {
     showRepeatedLabels: () => PivotGroup,
     showTotals: scala.Boolean => PivotGroup,
     sortAscending: () => PivotGroup,
-    sortBy: (PivotValue, js.Array[js.Object]) => PivotGroup,
+    sortBy: (PivotValue, js.Array[_]) => PivotGroup,
     sortDescending: () => PivotGroup,
     totalsAreShown: () => scala.Boolean
   ): PivotGroup = {

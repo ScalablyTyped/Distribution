@@ -24,7 +24,7 @@ trait VerticalPanel extends js.Object {
   def setHeight(height: java.lang.String): VerticalPanel = js.native
   def setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): VerticalPanel = js.native
   def setId(id: java.lang.String): VerticalPanel = js.native
-  def setLayoutData(layout: js.Object): VerticalPanel = js.native
+  def setLayoutData(layout: js.Any): VerticalPanel = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
@@ -32,7 +32,7 @@ trait VerticalPanel extends js.Object {
   def setSize(width: java.lang.String, height: java.lang.String): VerticalPanel = js.native
   def setSpacing(spacing: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): VerticalPanel = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): VerticalPanel = js.native
-  def setStyleAttributes(attributes: js.Object): VerticalPanel = js.native
+  def setStyleAttributes(attributes: js.Any): VerticalPanel = js.native
   def setStyleName(styleName: java.lang.String): VerticalPanel = js.native
   def setStylePrimaryName(styleName: java.lang.String): VerticalPanel = js.native
   def setTag(tag: java.lang.String): VerticalPanel = js.native

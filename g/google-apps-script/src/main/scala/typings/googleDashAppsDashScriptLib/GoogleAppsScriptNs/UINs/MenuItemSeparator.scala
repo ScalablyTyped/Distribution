@@ -19,7 +19,7 @@ trait MenuItemSeparator extends js.Object {
   ): MenuItemSeparator
   def setSize(width: java.lang.String, height: java.lang.String): MenuItemSeparator
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): MenuItemSeparator
-  def setStyleAttributes(attributes: js.Object): MenuItemSeparator
+  def setStyleAttributes(attributes: js.Any): MenuItemSeparator
   def setStyleName(styleName: java.lang.String): MenuItemSeparator
   def setStylePrimaryName(styleName: java.lang.String): MenuItemSeparator
   def setTag(tag: java.lang.String): MenuItemSeparator
@@ -41,7 +41,7 @@ object MenuItemSeparator {
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => MenuItemSeparator,
     setSize: (java.lang.String, java.lang.String) => MenuItemSeparator,
     setStyleAttribute: (java.lang.String, java.lang.String) => MenuItemSeparator,
-    setStyleAttributes: js.Object => MenuItemSeparator,
+    setStyleAttributes: js.Any => MenuItemSeparator,
     setStyleName: java.lang.String => MenuItemSeparator,
     setStylePrimaryName: java.lang.String => MenuItemSeparator,
     setTag: java.lang.String => MenuItemSeparator,

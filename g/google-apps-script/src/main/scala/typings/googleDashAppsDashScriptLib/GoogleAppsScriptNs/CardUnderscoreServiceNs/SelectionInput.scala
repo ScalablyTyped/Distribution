@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectionInput extends js.Object {
-  def addItem(text: js.Object, value: js.Object, selected: scala.Boolean): SelectionInput
+  def addItem(text: js.Any, value: js.Any, selected: scala.Boolean): SelectionInput
   def setFieldName(fieldName: java.lang.String): SelectionInput
   def setOnChangeAction(action: Action): SelectionInput
   def setTitle(title: java.lang.String): SelectionInput
@@ -16,7 +16,7 @@ trait SelectionInput extends js.Object {
 object SelectionInput {
   @scala.inline
   def apply(
-    addItem: (js.Object, js.Object, scala.Boolean) => SelectionInput,
+    addItem: (js.Any, js.Any, scala.Boolean) => SelectionInput,
     setFieldName: java.lang.String => SelectionInput,
     setOnChangeAction: Action => SelectionInput,
     setTitle: java.lang.String => SelectionInput,

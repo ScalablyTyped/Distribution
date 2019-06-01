@@ -22,7 +22,7 @@ trait PopupPanel extends js.Object {
   def setGlassStyleName(styleName: java.lang.String): PopupPanel
   def setHeight(height: java.lang.String): PopupPanel
   def setId(id: java.lang.String): PopupPanel
-  def setLayoutData(layout: js.Object): PopupPanel
+  def setLayoutData(layout: js.Any): PopupPanel
   def setModal(modal: scala.Boolean): PopupPanel
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -36,7 +36,7 @@ trait PopupPanel extends js.Object {
   def setPreviewingAllNativeEvents(previewing: scala.Boolean): PopupPanel
   def setSize(width: java.lang.String, height: java.lang.String): PopupPanel
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): PopupPanel
-  def setStyleAttributes(attributes: js.Object): PopupPanel
+  def setStyleAttributes(attributes: js.Any): PopupPanel
   def setStyleName(styleName: java.lang.String): PopupPanel
   def setStylePrimaryName(styleName: java.lang.String): PopupPanel
   def setTag(tag: java.lang.String): PopupPanel
@@ -66,7 +66,7 @@ object PopupPanel {
     setGlassStyleName: java.lang.String => PopupPanel,
     setHeight: java.lang.String => PopupPanel,
     setId: java.lang.String => PopupPanel,
-    setLayoutData: js.Object => PopupPanel,
+    setLayoutData: js.Any => PopupPanel,
     setModal: scala.Boolean => PopupPanel,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => PopupPanel,
     setPopupPosition: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => PopupPanel,
@@ -74,7 +74,7 @@ object PopupPanel {
     setPreviewingAllNativeEvents: scala.Boolean => PopupPanel,
     setSize: (java.lang.String, java.lang.String) => PopupPanel,
     setStyleAttribute: (java.lang.String, java.lang.String) => PopupPanel,
-    setStyleAttributes: js.Object => PopupPanel,
+    setStyleAttributes: js.Any => PopupPanel,
     setStyleName: java.lang.String => PopupPanel,
     setStylePrimaryName: java.lang.String => PopupPanel,
     setTag: java.lang.String => PopupPanel,

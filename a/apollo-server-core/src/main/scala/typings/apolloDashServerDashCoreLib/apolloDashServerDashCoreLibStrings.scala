@@ -55,6 +55,9 @@ object apolloDashServerDashCoreLibStrings {
   sealed trait rootValue extends js.Object
   
   @js.native
+  sealed trait status extends js.Object
+  
+  @js.native
   sealed trait tracing extends js.Object
   
   @js.native
@@ -95,6 +98,8 @@ object apolloDashServerDashCoreLibStrings {
   def plugins: plugins = "plugins".asInstanceOf[plugins]
   @scala.inline
   def rootValue: rootValue = "rootValue".asInstanceOf[rootValue]
+  @scala.inline
+  def status: status = "status".asInstanceOf[status]
   @scala.inline
   def tracing: tracing = "tracing".asInstanceOf[tracing]
   @scala.inline

@@ -27,7 +27,7 @@ trait TableChartBuilder extends js.Object {
   def setFirstRowNumber(number: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): TableChartBuilder = js.native
   def setInitialSortingAscending(column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): TableChartBuilder = js.native
   def setInitialSortingDescending(column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): TableChartBuilder = js.native
-  def setOption(option: java.lang.String, value: js.Object): TableChartBuilder = js.native
+  def setOption(option: java.lang.String, value: js.Any): TableChartBuilder = js.native
   def showRowNumberColumn(showRowNumber: scala.Boolean): TableChartBuilder = js.native
   def useAlternatingRowStyle(alternate: scala.Boolean): TableChartBuilder = js.native
 }

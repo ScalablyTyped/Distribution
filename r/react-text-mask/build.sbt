@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-text-mask"
-version := "5.4-dt-20190212Z-c73a99"
+version := "5.4-dt-20190531Z-ebc76a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

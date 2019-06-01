@@ -22,7 +22,7 @@ trait RouteOptionsAccess extends js.Object {
     * strategy.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthaccessentity)
     */
-  var entity: js.UndefOr[RouteOptionsAccessEntity] = js.undefined
+  var entity: js.UndefOr[AccessEntity] = js.undefined
   /**
     * Default value: 'required'.
     * The authentication mode. Available values:
@@ -31,9 +31,7 @@ trait RouteOptionsAccess extends js.Object {
     * * 'try' - similar to 'optional', any request credentials are attempted authentication, but if the credentials are invalid, the request proceeds regardless of the authentication error.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthmode)
     */
-  var mode: js.UndefOr[
-    atHapiHapiLib.atHapiHapiLibStrings.required | atHapiHapiLib.atHapiHapiLibStrings.optional | atHapiHapiLib.atHapiHapiLibStrings.`try`
-  ] = js.undefined
+  var mode: js.UndefOr[AuthMode] = js.undefined
   /**
     * Default value: false, unless the scheme requires payload authentication.
     * If set, the incoming request payload is authenticated after it is processed. Requires a strategy with payload authentication support (e.g. Hawk). Cannot be set to a value other than 'required'
@@ -73,8 +71,8 @@ object RouteOptionsAccess {
   @scala.inline
   def apply(
     access: RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject] = null,
-    entity: RouteOptionsAccessEntity = null,
-    mode: atHapiHapiLib.atHapiHapiLibStrings.required | atHapiHapiLib.atHapiHapiLibStrings.optional | atHapiHapiLib.atHapiHapiLibStrings.`try` = null,
+    entity: AccessEntity = null,
+    mode: AuthMode = null,
     payload: atHapiHapiLib.atHapiHapiLibNumbers.`false` | atHapiHapiLib.atHapiHapiLibStrings.required | atHapiHapiLib.atHapiHapiLibStrings.optional = null,
     scope: RouteOptionsAccessScope = null,
     strategies: js.Array[java.lang.String] = null,
@@ -83,7 +81,7 @@ object RouteOptionsAccess {
     val __obj = js.Dynamic.literal()
     if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (entity != null) __obj.updateDynamic("entity")(entity)
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
     if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     if (strategies != null) __obj.updateDynamic("strategies")(strategies)

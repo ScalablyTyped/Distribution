@@ -18,7 +18,7 @@ trait ScrollPanel extends js.Object {
   def setHeight(height: java.lang.String): ScrollPanel
   def setHorizontalScrollPosition(position: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): ScrollPanel
   def setId(id: java.lang.String): ScrollPanel
-  def setLayoutData(layout: js.Object): ScrollPanel
+  def setLayoutData(layout: js.Any): ScrollPanel
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
@@ -26,7 +26,7 @@ trait ScrollPanel extends js.Object {
   def setScrollPosition(position: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): ScrollPanel
   def setSize(width: java.lang.String, height: java.lang.String): ScrollPanel
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): ScrollPanel
-  def setStyleAttributes(attributes: js.Object): ScrollPanel
+  def setStyleAttributes(attributes: js.Any): ScrollPanel
   def setStyleName(styleName: java.lang.String): ScrollPanel
   def setStylePrimaryName(styleName: java.lang.String): ScrollPanel
   def setTag(tag: java.lang.String): ScrollPanel
@@ -51,12 +51,12 @@ object ScrollPanel {
     setHeight: java.lang.String => ScrollPanel,
     setHorizontalScrollPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ScrollPanel,
     setId: java.lang.String => ScrollPanel,
-    setLayoutData: js.Object => ScrollPanel,
+    setLayoutData: js.Any => ScrollPanel,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => ScrollPanel,
     setScrollPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ScrollPanel,
     setSize: (java.lang.String, java.lang.String) => ScrollPanel,
     setStyleAttribute: (java.lang.String, java.lang.String) => ScrollPanel,
-    setStyleAttributes: js.Object => ScrollPanel,
+    setStyleAttributes: js.Any => ScrollPanel,
     setStyleName: java.lang.String => ScrollPanel,
     setStylePrimaryName: java.lang.String => ScrollPanel,
     setTag: java.lang.String => ScrollPanel,

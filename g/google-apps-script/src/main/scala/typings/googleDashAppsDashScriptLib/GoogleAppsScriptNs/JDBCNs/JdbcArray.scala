@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JdbcArray extends js.Object {
   def free(): scala.Unit = js.native
-  def getArray(): js.Object = js.native
+  def getArray(): js.Any = js.native
   def getArray(
     index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     count: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): js.Object = js.native
+  ): js.Any = js.native
   def getBaseType(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getBaseTypeName(): java.lang.String = js.native
   def getResultSet(): JdbcResultSet = js.native

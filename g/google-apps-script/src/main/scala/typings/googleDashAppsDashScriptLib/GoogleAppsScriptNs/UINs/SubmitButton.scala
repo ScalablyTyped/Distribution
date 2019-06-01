@@ -29,14 +29,14 @@ trait SubmitButton extends js.Object {
   def setHTML(html: java.lang.String): SubmitButton
   def setHeight(height: java.lang.String): SubmitButton
   def setId(id: java.lang.String): SubmitButton
-  def setLayoutData(layout: js.Object): SubmitButton
+  def setLayoutData(layout: js.Any): SubmitButton
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): SubmitButton
   def setSize(width: java.lang.String, height: java.lang.String): SubmitButton
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): SubmitButton
-  def setStyleAttributes(attributes: js.Object): SubmitButton
+  def setStyleAttributes(attributes: js.Any): SubmitButton
   def setStyleName(styleName: java.lang.String): SubmitButton
   def setStylePrimaryName(styleName: java.lang.String): SubmitButton
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): SubmitButton
@@ -73,11 +73,11 @@ object SubmitButton {
     setHTML: java.lang.String => SubmitButton,
     setHeight: java.lang.String => SubmitButton,
     setId: java.lang.String => SubmitButton,
-    setLayoutData: js.Object => SubmitButton,
+    setLayoutData: js.Any => SubmitButton,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => SubmitButton,
     setSize: (java.lang.String, java.lang.String) => SubmitButton,
     setStyleAttribute: (java.lang.String, java.lang.String) => SubmitButton,
-    setStyleAttributes: js.Object => SubmitButton,
+    setStyleAttributes: js.Any => SubmitButton,
     setStyleName: java.lang.String => SubmitButton,
     setStylePrimaryName: java.lang.String => SubmitButton,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => SubmitButton,

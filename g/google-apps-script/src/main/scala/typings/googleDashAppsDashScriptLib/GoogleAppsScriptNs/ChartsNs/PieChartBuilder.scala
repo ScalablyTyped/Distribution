@@ -22,7 +22,7 @@ trait PieChartBuilder extends js.Object {
   ): PieChartBuilder = js.native
   def setLegendPosition(position: Position): PieChartBuilder = js.native
   def setLegendTextStyle(textStyle: TextStyle): PieChartBuilder = js.native
-  def setOption(option: java.lang.String, value: js.Object): PieChartBuilder = js.native
+  def setOption(option: java.lang.String, value: js.Any): PieChartBuilder = js.native
   def setTitle(chartTitle: java.lang.String): PieChartBuilder = js.native
   def setTitleTextStyle(textStyle: TextStyle): PieChartBuilder = js.native
 }

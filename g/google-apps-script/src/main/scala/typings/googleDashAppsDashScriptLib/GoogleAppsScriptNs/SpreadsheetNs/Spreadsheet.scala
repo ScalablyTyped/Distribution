@@ -14,11 +14,11 @@ trait Spreadsheet extends js.Object {
   def addEditor(emailAddress: java.lang.String): Spreadsheet = js.native
   def addEditor(user: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User): Spreadsheet = js.native
   def addEditors(emailAddresses: js.Array[java.lang.String]): Spreadsheet = js.native
-  def addMenu(name: java.lang.String, subMenus: js.Array[js.Object]): scala.Unit = js.native
+  def addMenu(name: java.lang.String, subMenus: js.Array[_]): scala.Unit = js.native
   def addViewer(emailAddress: java.lang.String): Spreadsheet = js.native
   def addViewer(user: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User): Spreadsheet = js.native
   def addViewers(emailAddresses: js.Array[java.lang.String]): Spreadsheet = js.native
-  def appendRow(rowContents: js.Array[js.Object]): Sheet = js.native
+  def appendRow(rowContents: js.Array[_]): Sheet = js.native
   def autoResizeColumn(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def copy(name: java.lang.String): Spreadsheet = js.native
   def createDeveloperMetadataFinder(): DeveloperMetadataFinder = js.native
@@ -78,7 +78,7 @@ trait Spreadsheet extends js.Object {
     startColumn: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     numRows: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     numColumns: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
-  ): js.Array[js.Array[js.Object]] = js.native
+  ): js.Array[js.Array[_]] = js.native
   def getSheets(): js.Array[Sheet] = js.native
   def getSpreadsheetLocale(): java.lang.String = js.native
   def getSpreadsheetTimeZone(): java.lang.String = js.native
@@ -131,16 +131,16 @@ trait Spreadsheet extends js.Object {
     howMany: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): Sheet = js.native
   def insertSheet(): Sheet = js.native
-  def insertSheet(options: js.Object): Sheet = js.native
+  def insertSheet(options: js.Any): Sheet = js.native
   def insertSheet(sheetIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
-  def insertSheet(sheetIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, options: js.Object): Sheet = js.native
+  def insertSheet(sheetIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, options: js.Any): Sheet = js.native
   def insertSheet(sheetName: java.lang.String): Sheet = js.native
-  def insertSheet(sheetName: java.lang.String, options: js.Object): Sheet = js.native
+  def insertSheet(sheetName: java.lang.String, options: js.Any): Sheet = js.native
   def insertSheet(sheetName: java.lang.String, sheetIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def insertSheet(
     sheetName: java.lang.String,
     sheetIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    options: js.Object
+    options: js.Any
   ): Sheet = js.native
   def insertSheetWithDataSourceTable(spec: DataSourceSpec): Sheet = js.native
   def isAnonymousView(): scala.Boolean = js.native
@@ -150,7 +150,7 @@ trait Spreadsheet extends js.Object {
   def isRowHiddenByFilter(rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
   def isRowHiddenByUser(rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
   def moveActiveSheet(pos: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
-  def moveChartToObjectSheet(chart: EmbeddedChart): Sheet = js.native
+  def moveChartToanySheet(chart: EmbeddedChart): Sheet = js.native
   def removeEditor(emailAddress: java.lang.String): Spreadsheet = js.native
   def removeEditor(user: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User): Spreadsheet = js.native
   def removeMenu(name: java.lang.String): scala.Unit = js.native
@@ -185,7 +185,7 @@ trait Spreadsheet extends js.Object {
   def setSheetProtection(permissions: PageProtection): scala.Unit = js.native
   def setSpreadsheetLocale(locale: java.lang.String): scala.Unit = js.native
   def setSpreadsheetTimeZone(timezone: java.lang.String): scala.Unit = js.native
-  def show(userInterface: js.Object): scala.Unit = js.native
+  def show(userInterface: js.Any): scala.Unit = js.native
   def sort(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def sort(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ascending: scala.Boolean): Sheet = js.native
   def toast(msg: java.lang.String): scala.Unit = js.native
@@ -193,6 +193,6 @@ trait Spreadsheet extends js.Object {
   def toast(msg: java.lang.String, title: java.lang.String, timeoutSeconds: scala.Double): scala.Unit = js.native
   def unhideColumn(column: Range): scala.Unit = js.native
   def unhideRow(row: Range): scala.Unit = js.native
-  def updateMenu(name: java.lang.String, subMenus: js.Array[js.Object]): scala.Unit = js.native
+  def updateMenu(name: java.lang.String, subMenus: js.Array[_]): scala.Unit = js.native
 }
 

@@ -22,6 +22,7 @@ trait JiraApi extends js.Object {
   def addNewComponent(component: jiraDashClientLib.jiraDashClientMod.JiraApiNs.ComponentObject): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def addNewIssue(issue: jiraDashClientLib.jiraDashClientMod.JiraApiNs.IssueObject): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def addWatcher(issueKey: java.lang.String, username: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
+  def addWorklog(issueId: java.lang.String, worklog: jiraDashClientLib.jiraDashClientMod.JiraApiNs.WorklogObject): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def addWorklog(
     issueId: java.lang.String,
     worklog: jiraDashClientLib.jiraDashClientMod.JiraApiNs.WorklogObject,

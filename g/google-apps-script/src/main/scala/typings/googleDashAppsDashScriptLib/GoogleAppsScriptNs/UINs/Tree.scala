@@ -36,7 +36,7 @@ trait Tree extends js.Object {
   def setFocus(focus: scala.Boolean): Tree = js.native
   def setHeight(height: java.lang.String): Tree = js.native
   def setId(id: java.lang.String): Tree = js.native
-  def setLayoutData(layout: js.Object): Tree = js.native
+  def setLayoutData(layout: js.Any): Tree = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
@@ -45,7 +45,7 @@ trait Tree extends js.Object {
   def setSelectedItem(item: TreeItem, fireEvents: scala.Boolean): Tree = js.native
   def setSize(width: java.lang.String, height: java.lang.String): Tree = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): Tree = js.native
-  def setStyleAttributes(attributes: js.Object): Tree = js.native
+  def setStyleAttributes(attributes: js.Any): Tree = js.native
   def setStyleName(styleName: java.lang.String): Tree = js.native
   def setStylePrimaryName(styleName: java.lang.String): Tree = js.native
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Tree = js.native

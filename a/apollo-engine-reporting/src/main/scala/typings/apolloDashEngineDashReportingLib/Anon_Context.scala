@@ -13,7 +13,7 @@ trait Anon_Context[TContext] extends js.Object {
   var request: apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request
   var requestContext: apolloDashServerDashEnvLib.distTypescriptDashUtilityDashTypesMod.WithRequired[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
-    apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.metrics
+    apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.metrics | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.queryHash
   ]
   var variables: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
@@ -25,7 +25,7 @@ object Anon_Context {
     request: apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request,
     requestContext: apolloDashServerDashEnvLib.distTypescriptDashUtilityDashTypesMod.WithRequired[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLRequestContext<TContext> */ _, 
-      apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.metrics
+      apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.metrics | apolloDashEngineDashReportingLib.apolloDashEngineDashReportingLibStrings.queryHash
     ],
     extensions: stdLib.Record[java.lang.String, _] = null,
     parsedQuery: graphqlLib.languageAstMod.DocumentNode = null,

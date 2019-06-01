@@ -24,14 +24,14 @@ trait MenuBar extends js.Object {
   def setAutoOpen(autoOpen: scala.Boolean): MenuBar = js.native
   def setHeight(height: java.lang.String): MenuBar = js.native
   def setId(id: java.lang.String): MenuBar = js.native
-  def setLayoutData(layout: js.Object): MenuBar = js.native
+  def setLayoutData(layout: js.Any): MenuBar = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): MenuBar = js.native
   def setSize(width: java.lang.String, height: java.lang.String): MenuBar = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): MenuBar = js.native
-  def setStyleAttributes(attributes: js.Object): MenuBar = js.native
+  def setStyleAttributes(attributes: js.Any): MenuBar = js.native
   def setStyleName(styleName: java.lang.String): MenuBar = js.native
   def setStylePrimaryName(styleName: java.lang.String): MenuBar = js.native
   def setTag(tag: java.lang.String): MenuBar = js.native

@@ -20,7 +20,7 @@ trait StackPanel extends js.Object {
   def remove(widget: Widget): StackPanel = js.native
   def setHeight(height: java.lang.String): StackPanel = js.native
   def setId(id: java.lang.String): StackPanel = js.native
-  def setLayoutData(layout: js.Object): StackPanel = js.native
+  def setLayoutData(layout: js.Any): StackPanel = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
@@ -33,7 +33,7 @@ trait StackPanel extends js.Object {
     asHtml: scala.Boolean
   ): StackPanel = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): StackPanel = js.native
-  def setStyleAttributes(attributes: js.Object): StackPanel = js.native
+  def setStyleAttributes(attributes: js.Any): StackPanel = js.native
   def setStyleName(styleName: java.lang.String): StackPanel = js.native
   def setStylePrimaryName(styleName: java.lang.String): StackPanel = js.native
   def setTag(tag: java.lang.String): StackPanel = js.native

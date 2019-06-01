@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Jdbc extends js.Object {
   def getCloudSqlConnection(url: java.lang.String): JdbcConnection = js.native
-  def getCloudSqlConnection(url: java.lang.String, info: js.Object): JdbcConnection = js.native
+  def getCloudSqlConnection(url: java.lang.String, info: js.Any): JdbcConnection = js.native
   def getCloudSqlConnection(url: java.lang.String, userName: java.lang.String, password: java.lang.String): JdbcConnection = js.native
   def getConnection(url: java.lang.String): JdbcConnection = js.native
-  def getConnection(url: java.lang.String, info: js.Object): JdbcConnection = js.native
+  def getConnection(url: java.lang.String, info: js.Any): JdbcConnection = js.native
   def getConnection(url: java.lang.String, userName: java.lang.String, password: java.lang.String): JdbcConnection = js.native
   def newDate(milliseconds: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): JdbcDate = js.native
   def newTime(milliseconds: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): JdbcTime = js.native

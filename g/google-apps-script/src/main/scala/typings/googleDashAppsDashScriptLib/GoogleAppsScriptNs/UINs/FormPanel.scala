@@ -19,7 +19,7 @@ trait FormPanel extends js.Object {
   def setEncoding(encoding: java.lang.String): FormPanel
   def setHeight(height: java.lang.String): FormPanel
   def setId(id: java.lang.String): FormPanel
-  def setLayoutData(layout: js.Object): FormPanel
+  def setLayoutData(layout: js.Any): FormPanel
   def setMethod(method: java.lang.String): FormPanel
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -27,7 +27,7 @@ trait FormPanel extends js.Object {
   ): FormPanel
   def setSize(width: java.lang.String, height: java.lang.String): FormPanel
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): FormPanel
-  def setStyleAttributes(attributes: js.Object): FormPanel
+  def setStyleAttributes(attributes: js.Any): FormPanel
   def setStyleName(styleName: java.lang.String): FormPanel
   def setStylePrimaryName(styleName: java.lang.String): FormPanel
   def setTag(tag: java.lang.String): FormPanel
@@ -53,12 +53,12 @@ object FormPanel {
     setEncoding: java.lang.String => FormPanel,
     setHeight: java.lang.String => FormPanel,
     setId: java.lang.String => FormPanel,
-    setLayoutData: js.Object => FormPanel,
+    setLayoutData: js.Any => FormPanel,
     setMethod: java.lang.String => FormPanel,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => FormPanel,
     setSize: (java.lang.String, java.lang.String) => FormPanel,
     setStyleAttribute: (java.lang.String, java.lang.String) => FormPanel,
-    setStyleAttributes: js.Object => FormPanel,
+    setStyleAttributes: js.Any => FormPanel,
     setStyleName: java.lang.String => FormPanel,
     setStylePrimaryName: java.lang.String => FormPanel,
     setTag: java.lang.String => FormPanel,

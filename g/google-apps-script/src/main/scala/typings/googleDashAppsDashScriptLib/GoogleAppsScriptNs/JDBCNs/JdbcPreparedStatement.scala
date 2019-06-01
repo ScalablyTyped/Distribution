@@ -103,15 +103,15 @@ trait JdbcPreparedStatement extends js.Object {
     sqlType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     typeName: java.lang.String
   ): scala.Unit = js.native
-  def setObject(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: js.Object): scala.Unit = js.native
+  def setObject(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: js.Any): scala.Unit = js.native
   def setObject(
     parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    x: js.Object,
+    x: js.Any,
     targetSqlType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): scala.Unit = js.native
   def setObject(
     parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    x: js.Object,
+    x: js.Any,
     targetSqlType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     scaleOrLength: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): scala.Unit = js.native

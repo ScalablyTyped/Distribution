@@ -33,7 +33,7 @@ trait PasswordTextBox extends js.Object {
   def setFocus(focus: scala.Boolean): PasswordTextBox = js.native
   def setHeight(height: java.lang.String): PasswordTextBox = js.native
   def setId(id: java.lang.String): PasswordTextBox = js.native
-  def setLayoutData(layout: js.Object): PasswordTextBox = js.native
+  def setLayoutData(layout: js.Any): PasswordTextBox = js.native
   def setMaxLength(length: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): PasswordTextBox = js.native
   def setName(name: java.lang.String): PasswordTextBox = js.native
   def setPixelSize(
@@ -47,7 +47,7 @@ trait PasswordTextBox extends js.Object {
   ): PasswordTextBox = js.native
   def setSize(width: java.lang.String, height: java.lang.String): PasswordTextBox = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): PasswordTextBox = js.native
-  def setStyleAttributes(attributes: js.Object): PasswordTextBox = js.native
+  def setStyleAttributes(attributes: js.Any): PasswordTextBox = js.native
   def setStyleName(styleName: java.lang.String): PasswordTextBox = js.native
   def setStylePrimaryName(styleName: java.lang.String): PasswordTextBox = js.native
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): PasswordTextBox = js.native

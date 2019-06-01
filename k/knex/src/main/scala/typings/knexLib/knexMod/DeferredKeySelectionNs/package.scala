@@ -30,13 +30,15 @@ package object DeferredKeySelectionNs {
   //
   // For practical reasons applicable to current context, we always return arrays of
   // deferred selections. So, this particular operator may not be useful in generic contexts.
-  type ReplaceBase[TSelection, TBase] = TSelection | (js.Array[SetBase[js.Any | knexLib.knexMod.UnwrapArrayMember[TSelection], TBase]])
+  type ReplaceBase[TSelection, TBase] = TSelection | (knexLib.knexMod.ArrayIfAlready[TSelection, SetBase[js.Any | knexLib.knexMod.UnwrapArrayMember[TSelection], TBase]])
   // Resolution logic lifted over arrays of deferred selections
-  type Resolve[TSelection] = TSelection | (js.Array[
-    ResolveOne[
-      /* import warning: ImportType.apply Failed type conversion: TSelection[0] */ js.Any
-    ]
-  ]) | ResolveOne[TSelection]
+  type Resolve[TSelection] = js.UndefOr[
+    TSelection | (js.Array[
+      ResolveOne[
+        /* import warning: ImportType.apply Failed type conversion: TSelection[0] */ js.Any
+      ]
+    ]) | ResolveOne[TSelection]
+  ]
   // Core resolution logic -- Refer to docs for DeferredKeySelection for specifics
   type ResolveOne[TSelection] = TSelection | (knexLib.knexMod.AugmentParams[
     knexLib.knexMod.PartialOrAny[js.Any, js.Any], 

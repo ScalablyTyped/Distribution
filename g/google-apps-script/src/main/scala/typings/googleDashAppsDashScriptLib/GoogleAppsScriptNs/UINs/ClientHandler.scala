@@ -22,11 +22,11 @@ trait ClientHandler extends js.Object {
     attribute: java.lang.String,
     value: java.lang.String
   ): ClientHandler = js.native
-  def setStyleAttributes(attributes: js.Object): ClientHandler = js.native
+  def setStyleAttributes(attributes: js.Any): ClientHandler = js.native
   def setStyleAttributes(
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    attributes: js.Object
+    attributes: js.Any
   ): ClientHandler = js.native
   def setTag(tag: java.lang.String): ClientHandler = js.native
   def setText(text: java.lang.String): ClientHandler = js.native

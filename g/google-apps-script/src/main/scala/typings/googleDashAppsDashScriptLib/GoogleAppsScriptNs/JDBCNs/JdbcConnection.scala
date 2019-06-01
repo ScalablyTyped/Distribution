@@ -10,7 +10,7 @@ trait JdbcConnection extends js.Object {
   def clearWarnings(): scala.Unit = js.native
   def close(): scala.Unit = js.native
   def commit(): scala.Unit = js.native
-  def createArrayOf(typeName: java.lang.String, elements: js.Array[js.Object]): JdbcArray = js.native
+  def createArrayOf(typeName: java.lang.String, elements: js.Array[_]): JdbcArray = js.native
   def createBlob(): JdbcBlob = js.native
   def createClob(): JdbcClob = js.native
   def createNClob(): JdbcClob = js.native
@@ -25,7 +25,7 @@ trait JdbcConnection extends js.Object {
     resultSetConcurrency: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     resultSetHoldability: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): JdbcStatement = js.native
-  def createStruct(typeName: java.lang.String, attributes: js.Array[js.Object]): JdbcStruct = js.native
+  def createStruct(typeName: java.lang.String, attributes: js.Array[_]): JdbcStruct = js.native
   def getAutoCommit(): scala.Boolean = js.native
   def getCatalog(): java.lang.String = js.native
   def getHoldability(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native

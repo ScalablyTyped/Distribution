@@ -10,7 +10,7 @@ trait FilterCriteriaBuilder extends js.Object {
   def build(): FilterCriteria = js.native
   def copy(): FilterCriteriaBuilder = js.native
   def getCriteriaType(): BooleanCriteria = js.native
-  def getCriteriaValues(): js.Array[js.Object] = js.native
+  def getCriteriaValues(): js.Array[_] = js.native
   def getHiddenValues(): js.Array[java.lang.String] = js.native
   def getVisibleValues(): js.Array[java.lang.String] = js.native
   def setHiddenValues(values: js.Array[java.lang.String]): FilterCriteriaBuilder = js.native
@@ -37,6 +37,6 @@ trait FilterCriteriaBuilder extends js.Object {
   def whenTextEndsWith(text: java.lang.String): FilterCriteriaBuilder = js.native
   def whenTextEqualTo(text: java.lang.String): FilterCriteriaBuilder = js.native
   def whenTextStartsWith(text: java.lang.String): FilterCriteriaBuilder = js.native
-  def withCriteria(criteria: BooleanCriteria, args: js.Array[js.Object]): FilterCriteriaBuilder = js.native
+  def withCriteria(criteria: BooleanCriteria, args: js.Array[_]): FilterCriteriaBuilder = js.native
 }
 

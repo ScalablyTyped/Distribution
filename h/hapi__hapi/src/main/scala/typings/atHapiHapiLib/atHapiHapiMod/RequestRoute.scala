@@ -16,7 +16,7 @@ trait RequestRoute extends js.Object {
   /** the active realm associated with the route. */
   var realm: ServerRealm
   /** the route options object with all defaults applied. */
-  var settings: RouteOptions
+  var settings: RouteSettings
   /** the route vhost option if configured. */
   var vhost: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
@@ -29,7 +29,7 @@ object RequestRoute {
     method: atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL,
     path: java.lang.String,
     realm: ServerRealm,
-    settings: RouteOptions,
+    settings: RouteSettings,
     vhost: java.lang.String | js.Array[java.lang.String] = null
   ): RequestRoute = {
     val __obj = js.Dynamic.literal(auth = auth, fingerprint = fingerprint, method = method, path = path, realm = realm, settings = settings)

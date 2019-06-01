@@ -2275,6 +2275,7 @@
 | 54 | [memwatch-next](./m/memwatch-next) | Keep an eye on your memory usage, and discover and
 | 54 | [react-spinkit](./r/react-spinkit) | A collection of loading indicators animated with C
 | 54 | [sanctuary](./s/sanctuary) | Refuge from unsafe JavaScript
+| 54 | [spotify-web-api-node](./s/spotify-web-api-node) | A Node.js wrapper for Spotify's Web API
 | 54 | [storybook__addon-options](./s/storybook__addon-options) | Options addon for storybook
 | 54 | [tlds](./t/tlds) | List of TLDs
 | 54 | [uuidv4](./u/uuidv4) | uuid creates UUIDs.

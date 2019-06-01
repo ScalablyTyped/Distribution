@@ -74,8 +74,8 @@ trait JdbcCallableStatement extends js.Object {
   def getNClob(parameterName: java.lang.String): JdbcClob = js.native
   def getNString(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): java.lang.String = js.native
   def getNString(parameterName: java.lang.String): java.lang.String = js.native
-  def getObject(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): js.Object = js.native
-  def getObject(parameterName: java.lang.String): js.Object = js.native
+  def getObject(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): js.Any = js.native
+  def getObject(parameterName: java.lang.String): js.Any = js.native
   def getParameterMetaData(): JdbcParameterMetaData = js.native
   def getQueryTimeout(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getRef(parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): JdbcRef = js.native
@@ -200,27 +200,27 @@ trait JdbcCallableStatement extends js.Object {
     sqlType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     typeName: java.lang.String
   ): scala.Unit = js.native
-  def setObject(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: js.Object): scala.Unit = js.native
+  def setObject(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, x: js.Any): scala.Unit = js.native
   def setObject(
     parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    x: js.Object,
+    x: js.Any,
     targetSqlType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): scala.Unit = js.native
   def setObject(
     parameterIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    x: js.Object,
+    x: js.Any,
     targetSqlType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     scaleOrLength: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): scala.Unit = js.native
-  def setObject(parameterName: java.lang.String, x: js.Object): scala.Unit = js.native
+  def setObject(parameterName: java.lang.String, x: js.Any): scala.Unit = js.native
   def setObject(
     parameterName: java.lang.String,
-    x: js.Object,
+    x: js.Any,
     targetSqlType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): scala.Unit = js.native
   def setObject(
     parameterName: java.lang.String,
-    x: js.Object,
+    x: js.Any,
     targetSqlType: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     scale: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): scala.Unit = js.native

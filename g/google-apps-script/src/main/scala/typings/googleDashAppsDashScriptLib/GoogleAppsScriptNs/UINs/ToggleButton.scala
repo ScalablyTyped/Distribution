@@ -30,14 +30,14 @@ trait ToggleButton extends js.Object {
   def setHTML(html: java.lang.String): ToggleButton
   def setHeight(height: java.lang.String): ToggleButton
   def setId(id: java.lang.String): ToggleButton
-  def setLayoutData(layout: js.Object): ToggleButton
+  def setLayoutData(layout: js.Any): ToggleButton
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): ToggleButton
   def setSize(width: java.lang.String, height: java.lang.String): ToggleButton
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): ToggleButton
-  def setStyleAttributes(attributes: js.Object): ToggleButton
+  def setStyleAttributes(attributes: js.Any): ToggleButton
   def setStyleName(styleName: java.lang.String): ToggleButton
   def setStylePrimaryName(styleName: java.lang.String): ToggleButton
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): ToggleButton
@@ -75,11 +75,11 @@ object ToggleButton {
     setHTML: java.lang.String => ToggleButton,
     setHeight: java.lang.String => ToggleButton,
     setId: java.lang.String => ToggleButton,
-    setLayoutData: js.Object => ToggleButton,
+    setLayoutData: js.Any => ToggleButton,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => ToggleButton,
     setSize: (java.lang.String, java.lang.String) => ToggleButton,
     setStyleAttribute: (java.lang.String, java.lang.String) => ToggleButton,
-    setStyleAttributes: js.Object => ToggleButton,
+    setStyleAttributes: js.Any => ToggleButton,
     setStyleName: java.lang.String => ToggleButton,
     setStylePrimaryName: java.lang.String => ToggleButton,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => ToggleButton,

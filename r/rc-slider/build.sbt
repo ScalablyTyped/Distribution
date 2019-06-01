@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-slider"
-version := "8.6-dt-20190218Z-d45c0f"
+version := "8.6-dt-20190531Z-c07e85"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

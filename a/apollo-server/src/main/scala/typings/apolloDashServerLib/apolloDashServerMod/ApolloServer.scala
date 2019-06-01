@@ -13,6 +13,7 @@ class ApolloServer protected ()
   var cors: js.UndefOr[js.Any] = js.native
   var createServerInfo: js.Any = js.native
   var httpServer: js.UndefOr[js.Any] = js.native
+  var onHealthCheck: js.UndefOr[js.Any] = js.native
   def applyMiddleware(): scala.Unit = js.native
   def listen(opts: js.Any*): js.Promise[ServerInfo] = js.native
   def stop(): js.Promise[scala.Unit] = js.native

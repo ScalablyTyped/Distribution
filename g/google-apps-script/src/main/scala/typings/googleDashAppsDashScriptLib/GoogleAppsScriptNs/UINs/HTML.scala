@@ -23,14 +23,14 @@ trait HTML extends js.Object {
   def setHeight(height: java.lang.String): HTML
   def setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): HTML
   def setId(id: java.lang.String): HTML
-  def setLayoutData(layout: js.Object): HTML
+  def setLayoutData(layout: js.Any): HTML
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): HTML
   def setSize(width: java.lang.String, height: java.lang.String): HTML
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): HTML
-  def setStyleAttributes(attributes: js.Object): HTML
+  def setStyleAttributes(attributes: js.Any): HTML
   def setStyleName(styleName: java.lang.String): HTML
   def setStylePrimaryName(styleName: java.lang.String): HTML
   def setTag(tag: java.lang.String): HTML
@@ -61,11 +61,11 @@ object HTML {
     setHeight: java.lang.String => HTML,
     setHorizontalAlignment: HorizontalAlignment => HTML,
     setId: java.lang.String => HTML,
-    setLayoutData: js.Object => HTML,
+    setLayoutData: js.Any => HTML,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => HTML,
     setSize: (java.lang.String, java.lang.String) => HTML,
     setStyleAttribute: (java.lang.String, java.lang.String) => HTML,
-    setStyleAttributes: js.Object => HTML,
+    setStyleAttributes: js.Any => HTML,
     setStyleName: java.lang.String => HTML,
     setStylePrimaryName: java.lang.String => HTML,
     setTag: java.lang.String => HTML,

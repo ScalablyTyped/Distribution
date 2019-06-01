@@ -15,7 +15,7 @@ trait DatePicker extends js.Object {
   def setCurrentMonth(date: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date): DatePicker
   def setHeight(height: java.lang.String): DatePicker
   def setId(id: java.lang.String): DatePicker
-  def setLayoutData(layout: js.Object): DatePicker
+  def setLayoutData(layout: js.Any): DatePicker
   def setName(name: java.lang.String): DatePicker
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -23,7 +23,7 @@ trait DatePicker extends js.Object {
   ): DatePicker
   def setSize(width: java.lang.String, height: java.lang.String): DatePicker
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): DatePicker
-  def setStyleAttributes(attributes: js.Object): DatePicker
+  def setStyleAttributes(attributes: js.Any): DatePicker
   def setStyleName(styleName: java.lang.String): DatePicker
   def setStylePrimaryName(styleName: java.lang.String): DatePicker
   def setTag(tag: java.lang.String): DatePicker
@@ -45,12 +45,12 @@ object DatePicker {
     setCurrentMonth: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Date => DatePicker,
     setHeight: java.lang.String => DatePicker,
     setId: java.lang.String => DatePicker,
-    setLayoutData: js.Object => DatePicker,
+    setLayoutData: js.Any => DatePicker,
     setName: java.lang.String => DatePicker,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => DatePicker,
     setSize: (java.lang.String, java.lang.String) => DatePicker,
     setStyleAttribute: (java.lang.String, java.lang.String) => DatePicker,
-    setStyleAttributes: js.Object => DatePicker,
+    setStyleAttributes: js.Any => DatePicker,
     setStyleName: java.lang.String => DatePicker,
     setStylePrimaryName: java.lang.String => DatePicker,
     setTag: java.lang.String => DatePicker,

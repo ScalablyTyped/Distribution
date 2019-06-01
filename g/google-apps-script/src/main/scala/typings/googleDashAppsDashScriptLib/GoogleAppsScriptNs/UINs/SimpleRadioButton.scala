@@ -29,7 +29,7 @@ trait SimpleRadioButton extends js.Object {
   def setFocus(focus: scala.Boolean): SimpleRadioButton
   def setHeight(height: java.lang.String): SimpleRadioButton
   def setId(id: java.lang.String): SimpleRadioButton
-  def setLayoutData(layout: js.Object): SimpleRadioButton
+  def setLayoutData(layout: js.Any): SimpleRadioButton
   def setName(name: java.lang.String): SimpleRadioButton
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -37,7 +37,7 @@ trait SimpleRadioButton extends js.Object {
   ): SimpleRadioButton
   def setSize(width: java.lang.String, height: java.lang.String): SimpleRadioButton
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): SimpleRadioButton
-  def setStyleAttributes(attributes: js.Object): SimpleRadioButton
+  def setStyleAttributes(attributes: js.Any): SimpleRadioButton
   def setStyleName(styleName: java.lang.String): SimpleRadioButton
   def setStylePrimaryName(styleName: java.lang.String): SimpleRadioButton
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): SimpleRadioButton
@@ -73,12 +73,12 @@ object SimpleRadioButton {
     setFocus: scala.Boolean => SimpleRadioButton,
     setHeight: java.lang.String => SimpleRadioButton,
     setId: java.lang.String => SimpleRadioButton,
-    setLayoutData: js.Object => SimpleRadioButton,
+    setLayoutData: js.Any => SimpleRadioButton,
     setName: java.lang.String => SimpleRadioButton,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => SimpleRadioButton,
     setSize: (java.lang.String, java.lang.String) => SimpleRadioButton,
     setStyleAttribute: (java.lang.String, java.lang.String) => SimpleRadioButton,
-    setStyleAttributes: js.Object => SimpleRadioButton,
+    setStyleAttributes: js.Any => SimpleRadioButton,
     setStyleName: java.lang.String => SimpleRadioButton,
     setStylePrimaryName: java.lang.String => SimpleRadioButton,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => SimpleRadioButton,

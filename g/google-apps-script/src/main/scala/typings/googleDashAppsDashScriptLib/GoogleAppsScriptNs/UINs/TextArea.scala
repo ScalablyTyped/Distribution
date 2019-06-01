@@ -34,7 +34,7 @@ trait TextArea extends js.Object {
   def setFocus(focus: scala.Boolean): TextArea = js.native
   def setHeight(height: java.lang.String): TextArea = js.native
   def setId(id: java.lang.String): TextArea = js.native
-  def setLayoutData(layout: js.Object): TextArea = js.native
+  def setLayoutData(layout: js.Any): TextArea = js.native
   def setName(name: java.lang.String): TextArea = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -47,7 +47,7 @@ trait TextArea extends js.Object {
   ): TextArea = js.native
   def setSize(width: java.lang.String, height: java.lang.String): TextArea = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): TextArea = js.native
-  def setStyleAttributes(attributes: js.Object): TextArea = js.native
+  def setStyleAttributes(attributes: js.Any): TextArea = js.native
   def setStyleName(styleName: java.lang.String): TextArea = js.native
   def setStylePrimaryName(styleName: java.lang.String): TextArea = js.native
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): TextArea = js.native

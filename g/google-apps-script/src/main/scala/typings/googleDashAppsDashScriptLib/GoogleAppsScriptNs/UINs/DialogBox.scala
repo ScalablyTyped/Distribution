@@ -23,7 +23,7 @@ trait DialogBox extends js.Object {
   def setHTML(html: java.lang.String): DialogBox
   def setHeight(height: java.lang.String): DialogBox
   def setId(id: java.lang.String): DialogBox
-  def setLayoutData(layout: js.Object): DialogBox
+  def setLayoutData(layout: js.Any): DialogBox
   def setModal(modal: scala.Boolean): DialogBox
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -37,7 +37,7 @@ trait DialogBox extends js.Object {
   def setPreviewingAllNativeEvents(previewing: scala.Boolean): DialogBox
   def setSize(width: java.lang.String, height: java.lang.String): DialogBox
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): DialogBox
-  def setStyleAttributes(attributes: js.Object): DialogBox
+  def setStyleAttributes(attributes: js.Any): DialogBox
   def setStyleName(styleName: java.lang.String): DialogBox
   def setStylePrimaryName(styleName: java.lang.String): DialogBox
   def setTag(tag: java.lang.String): DialogBox
@@ -69,7 +69,7 @@ object DialogBox {
     setHTML: java.lang.String => DialogBox,
     setHeight: java.lang.String => DialogBox,
     setId: java.lang.String => DialogBox,
-    setLayoutData: js.Object => DialogBox,
+    setLayoutData: js.Any => DialogBox,
     setModal: scala.Boolean => DialogBox,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => DialogBox,
     setPopupPosition: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => DialogBox,
@@ -77,7 +77,7 @@ object DialogBox {
     setPreviewingAllNativeEvents: scala.Boolean => DialogBox,
     setSize: (java.lang.String, java.lang.String) => DialogBox,
     setStyleAttribute: (java.lang.String, java.lang.String) => DialogBox,
-    setStyleAttributes: js.Object => DialogBox,
+    setStyleAttributes: js.Any => DialogBox,
     setStyleName: java.lang.String => DialogBox,
     setStylePrimaryName: java.lang.String => DialogBox,
     setTag: java.lang.String => DialogBox,

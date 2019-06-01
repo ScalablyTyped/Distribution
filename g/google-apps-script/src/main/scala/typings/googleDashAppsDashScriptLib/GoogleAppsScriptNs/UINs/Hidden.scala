@@ -15,7 +15,7 @@ trait Hidden extends js.Object {
   def setHeight(height: java.lang.String): Hidden
   def setID(id: java.lang.String): Hidden
   def setId(id: java.lang.String): Hidden
-  def setLayoutData(layout: js.Object): Hidden
+  def setLayoutData(layout: js.Any): Hidden
   def setName(name: java.lang.String): Hidden
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -23,7 +23,7 @@ trait Hidden extends js.Object {
   ): Hidden
   def setSize(width: java.lang.String, height: java.lang.String): Hidden
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): Hidden
-  def setStyleAttributes(attributes: js.Object): Hidden
+  def setStyleAttributes(attributes: js.Any): Hidden
   def setStyleName(styleName: java.lang.String): Hidden
   def setStylePrimaryName(styleName: java.lang.String): Hidden
   def setTag(tag: java.lang.String): Hidden
@@ -45,12 +45,12 @@ object Hidden {
     setHeight: java.lang.String => Hidden,
     setID: java.lang.String => Hidden,
     setId: java.lang.String => Hidden,
-    setLayoutData: js.Object => Hidden,
+    setLayoutData: js.Any => Hidden,
     setName: java.lang.String => Hidden,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Hidden,
     setSize: (java.lang.String, java.lang.String) => Hidden,
     setStyleAttribute: (java.lang.String, java.lang.String) => Hidden,
-    setStyleAttributes: js.Object => Hidden,
+    setStyleAttributes: js.Any => Hidden,
     setStyleName: java.lang.String => Hidden,
     setStylePrimaryName: java.lang.String => Hidden,
     setTag: java.lang.String => Hidden,

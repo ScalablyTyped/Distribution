@@ -38,10 +38,10 @@ trait FlexTable extends js.Object {
     attribute: java.lang.String,
     value: java.lang.String
   ): FlexTable = js.native
-  def setColumnStyleAttributes(column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, attributes: js.Object): FlexTable = js.native
+  def setColumnStyleAttributes(column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, attributes: js.Any): FlexTable = js.native
   def setHeight(height: java.lang.String): FlexTable = js.native
   def setId(id: java.lang.String): FlexTable = js.native
-  def setLayoutData(layout: js.Object): FlexTable = js.native
+  def setLayoutData(layout: js.Any): FlexTable = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
@@ -51,7 +51,7 @@ trait FlexTable extends js.Object {
     attribute: java.lang.String,
     value: java.lang.String
   ): FlexTable = js.native
-  def setRowStyleAttributes(row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, attributes: js.Object): FlexTable = js.native
+  def setRowStyleAttributes(row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, attributes: js.Any): FlexTable = js.native
   def setSize(width: java.lang.String, height: java.lang.String): FlexTable = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): FlexTable = js.native
   def setStyleAttribute(
@@ -60,11 +60,11 @@ trait FlexTable extends js.Object {
     attribute: java.lang.String,
     value: java.lang.String
   ): FlexTable = js.native
-  def setStyleAttributes(attributes: js.Object): FlexTable = js.native
+  def setStyleAttributes(attributes: js.Any): FlexTable = js.native
   def setStyleAttributes(
     row: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
-    attributes: js.Object
+    attributes: js.Any
   ): FlexTable = js.native
   def setStyleName(styleName: java.lang.String): FlexTable = js.native
   def setStylePrimaryName(styleName: java.lang.String): FlexTable = js.native

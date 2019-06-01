@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PhoneField extends js.Object {
   def deletePhoneField(): scala.Unit = js.native
-  def getLabel(): js.Object = js.native
+  def getLabel(): js.Any = js.native
   def getPhoneNumber(): java.lang.String = js.native
   def isPrimary(): scala.Boolean = js.native
   def setAsPrimary(): PhoneField = js.native

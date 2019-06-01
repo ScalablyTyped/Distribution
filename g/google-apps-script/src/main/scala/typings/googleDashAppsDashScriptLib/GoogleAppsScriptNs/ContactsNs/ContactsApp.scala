@@ -30,7 +30,7 @@ trait ContactsApp extends js.Object {
   def getContactsByAddress(query: java.lang.String, label: Field): js.Array[Contact] = js.native
   def getContactsByAddress(query: java.lang.String, label: java.lang.String): js.Array[Contact] = js.native
   def getContactsByCompany(query: java.lang.String): js.Array[Contact] = js.native
-  def getContactsByCustomField(query: js.Object, label: ExtendedField): js.Array[Contact] = js.native
+  def getContactsByCustomField(query: js.Any, label: ExtendedField): js.Array[Contact] = js.native
   def getContactsByDate(
     month: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Month,
     day: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,

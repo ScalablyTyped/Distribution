@@ -1,7 +1,7 @@
 
 # Scala.js typings for axios
 
-Typings are for version 0.18.0
+Typings are for version 0.18.1
 
 ## Library description:
 Promise based HTTP client for the browser and node.js

@@ -22,14 +22,14 @@ trait Label extends js.Object {
   def setHeight(height: java.lang.String): Label
   def setHorizontalAlignment(horizontalAlignment: HorizontalAlignment): Label
   def setId(id: java.lang.String): Label
-  def setLayoutData(layout: js.Object): Label
+  def setLayoutData(layout: js.Any): Label
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): Label
   def setSize(width: java.lang.String, height: java.lang.String): Label
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): Label
-  def setStyleAttributes(attributes: js.Object): Label
+  def setStyleAttributes(attributes: js.Any): Label
   def setStyleName(styleName: java.lang.String): Label
   def setStylePrimaryName(styleName: java.lang.String): Label
   def setTag(tag: java.lang.String): Label
@@ -59,11 +59,11 @@ object Label {
     setHeight: java.lang.String => Label,
     setHorizontalAlignment: HorizontalAlignment => Label,
     setId: java.lang.String => Label,
-    setLayoutData: js.Object => Label,
+    setLayoutData: js.Any => Label,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Label,
     setSize: (java.lang.String, java.lang.String) => Label,
     setStyleAttribute: (java.lang.String, java.lang.String) => Label,
-    setStyleAttributes: js.Object => Label,
+    setStyleAttributes: js.Any => Label,
     setStyleName: java.lang.String => Label,
     setStylePrimaryName: java.lang.String => Label,
     setTag: java.lang.String => Label,

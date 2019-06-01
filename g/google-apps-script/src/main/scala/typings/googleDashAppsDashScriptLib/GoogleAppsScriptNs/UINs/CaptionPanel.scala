@@ -17,14 +17,14 @@ trait CaptionPanel extends js.Object {
   def setContentWidget(widget: Widget): CaptionPanel
   def setHeight(height: java.lang.String): CaptionPanel
   def setId(id: java.lang.String): CaptionPanel
-  def setLayoutData(layout: js.Object): CaptionPanel
+  def setLayoutData(layout: js.Any): CaptionPanel
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): CaptionPanel
   def setSize(width: java.lang.String, height: java.lang.String): CaptionPanel
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): CaptionPanel
-  def setStyleAttributes(attributes: js.Object): CaptionPanel
+  def setStyleAttributes(attributes: js.Any): CaptionPanel
   def setStyleName(styleName: java.lang.String): CaptionPanel
   def setStylePrimaryName(styleName: java.lang.String): CaptionPanel
   def setTag(tag: java.lang.String): CaptionPanel
@@ -49,11 +49,11 @@ object CaptionPanel {
     setContentWidget: Widget => CaptionPanel,
     setHeight: java.lang.String => CaptionPanel,
     setId: java.lang.String => CaptionPanel,
-    setLayoutData: js.Object => CaptionPanel,
+    setLayoutData: js.Any => CaptionPanel,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => CaptionPanel,
     setSize: (java.lang.String, java.lang.String) => CaptionPanel,
     setStyleAttribute: (java.lang.String, java.lang.String) => CaptionPanel,
-    setStyleAttributes: js.Object => CaptionPanel,
+    setStyleAttributes: js.Any => CaptionPanel,
     setStyleName: java.lang.String => CaptionPanel,
     setStylePrimaryName: java.lang.String => CaptionPanel,
     setTag: java.lang.String => CaptionPanel,

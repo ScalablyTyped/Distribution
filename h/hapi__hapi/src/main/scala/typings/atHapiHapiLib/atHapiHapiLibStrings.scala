@@ -10,6 +10,9 @@ object atHapiHapiLibStrings {
   sealed trait `*` extends js.Object
   
   @js.native
+  sealed trait CommonRouteProperties extends js.Object
+  
+  @js.native
   sealed trait DELETE
     extends atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL
   
@@ -45,9 +48,6 @@ object atHapiHapiLibStrings {
     extends atHapiHapiLib.atHapiHapiMod.UtilNs.HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait RouteOptions extends js.Object
-  
-  @js.native
   sealed trait Strict extends js.Object
   
   @js.native
@@ -58,11 +58,11 @@ object atHapiHapiLibStrings {
   
   @js.native
   sealed trait any
-    extends atHapiHapiLib.atHapiHapiMod.RouteOptionsAccessEntity
+    extends atHapiHapiLib.atHapiHapiMod.AccessEntity
   
   @js.native
   sealed trait app
-    extends atHapiHapiLib.atHapiHapiMod.RouteOptionsAccessEntity
+    extends atHapiHapiLib.atHapiHapiMod.AccessEntity
   
   @js.native
   sealed trait ascii extends js.Object
@@ -208,7 +208,8 @@ object atHapiHapiLibStrings {
     extends atHapiHapiLib.atHapiHapiMod.ServerRequestExtType
   
   @js.native
-  sealed trait optional extends js.Object
+  sealed trait optional
+    extends atHapiHapiLib.atHapiHapiMod.AuthMode
   
   @js.native
   sealed trait options
@@ -254,7 +255,8 @@ object atHapiHapiLibStrings {
   sealed trait request extends js.Object
   
   @js.native
-  sealed trait required extends js.Object
+  sealed trait required
+    extends atHapiHapiLib.atHapiHapiMod.AuthMode
   
   @js.native
   sealed trait response extends js.Object
@@ -300,7 +302,8 @@ object atHapiHapiLibStrings {
   sealed trait toolkit extends js.Object
   
   @js.native
-  sealed trait `try` extends js.Object
+  sealed trait `try`
+    extends atHapiHapiLib.atHapiHapiMod.AuthMode
   
   @js.native
   sealed trait ucs2 extends js.Object
@@ -311,7 +314,7 @@ object atHapiHapiLibStrings {
   
   @js.native
   sealed trait user
-    extends atHapiHapiLib.atHapiHapiMod.RouteOptionsAccessEntity
+    extends atHapiHapiLib.atHapiHapiMod.AccessEntity
   
   @js.native
   sealed trait utf16le extends js.Object
@@ -321,6 +324,8 @@ object atHapiHapiLibStrings {
   
   @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
+  @scala.inline
+  def CommonRouteProperties: CommonRouteProperties = "CommonRouteProperties".asInstanceOf[CommonRouteProperties]
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline
@@ -339,8 +344,6 @@ object atHapiHapiLibStrings {
   def POST: POST = "POST".asInstanceOf[POST]
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def RouteOptions: RouteOptions = "RouteOptions".asInstanceOf[RouteOptions]
   @scala.inline
   def Strict: Strict = "Strict".asInstanceOf[Strict]
   @scala.inline

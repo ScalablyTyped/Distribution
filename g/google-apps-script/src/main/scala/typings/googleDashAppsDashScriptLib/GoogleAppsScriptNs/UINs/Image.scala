@@ -22,7 +22,7 @@ trait Image extends js.Object {
   def getType(): java.lang.String
   def setHeight(height: java.lang.String): Image
   def setId(id: java.lang.String): Image
-  def setLayoutData(layout: js.Object): Image
+  def setLayoutData(layout: js.Any): Image
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
@@ -30,7 +30,7 @@ trait Image extends js.Object {
   def setResource(resource: Component): Image
   def setSize(width: java.lang.String, height: java.lang.String): Image
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): Image
-  def setStyleAttributes(attributes: js.Object): Image
+  def setStyleAttributes(attributes: js.Any): Image
   def setStyleName(styleName: java.lang.String): Image
   def setStylePrimaryName(styleName: java.lang.String): Image
   def setTag(tag: java.lang.String): Image
@@ -72,12 +72,12 @@ object Image {
     getType: () => java.lang.String,
     setHeight: java.lang.String => Image,
     setId: java.lang.String => Image,
-    setLayoutData: js.Object => Image,
+    setLayoutData: js.Any => Image,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Image,
     setResource: Component => Image,
     setSize: (java.lang.String, java.lang.String) => Image,
     setStyleAttribute: (java.lang.String, java.lang.String) => Image,
-    setStyleAttributes: js.Object => Image,
+    setStyleAttributes: js.Any => Image,
     setStyleName: java.lang.String => Image,
     setStylePrimaryName: java.lang.String => Image,
     setTag: java.lang.String => Image,

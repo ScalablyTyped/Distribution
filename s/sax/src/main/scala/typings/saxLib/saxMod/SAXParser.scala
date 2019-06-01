@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sax", "SAXParser")
 @js.native
-class SAXParser protected () extends js.Object {
+class SAXParser () extends js.Object {
   def this(strict: scala.Boolean) = this()
   def this(strict: scala.Boolean, opt: SAXOptions) = this()
   var ENTITIES: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native

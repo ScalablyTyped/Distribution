@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ItemResponse extends js.Object {
-  def getFeedback(): js.Object
+  def getFeedback(): js.Any
   def getItem(): Item
-  def getResponse(): js.Object
-  def getScore(): js.Object
-  def setFeedback(feedback: js.Object): ItemResponse
-  def setScore(score: js.Object): ItemResponse
+  def getResponse(): js.Any
+  def getScore(): js.Any
+  def setFeedback(feedback: js.Any): ItemResponse
+  def setScore(score: js.Any): ItemResponse
 }
 
 object ItemResponse {
   @scala.inline
   def apply(
-    getFeedback: () => js.Object,
+    getFeedback: () => js.Any,
     getItem: () => Item,
-    getResponse: () => js.Object,
-    getScore: () => js.Object,
-    setFeedback: js.Object => ItemResponse,
-    setScore: js.Object => ItemResponse
+    getResponse: () => js.Any,
+    getScore: () => js.Any,
+    setFeedback: js.Any => ItemResponse,
+    setScore: js.Any => ItemResponse
   ): ItemResponse = {
     val __obj = js.Dynamic.literal(getFeedback = js.Any.fromFunction0(getFeedback), getItem = js.Any.fromFunction0(getItem), getResponse = js.Any.fromFunction0(getResponse), getScore = js.Any.fromFunction0(getScore), setFeedback = js.Any.fromFunction1(setFeedback), setScore = js.Any.fromFunction1(setScore))
   

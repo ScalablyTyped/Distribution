@@ -22,14 +22,14 @@ trait TabPanel extends js.Object {
   def setAnimationEnabled(animationEnabled: scala.Boolean): TabPanel = js.native
   def setHeight(height: java.lang.String): TabPanel = js.native
   def setId(id: java.lang.String): TabPanel = js.native
-  def setLayoutData(layout: js.Object): TabPanel = js.native
+  def setLayoutData(layout: js.Any): TabPanel = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): TabPanel = js.native
   def setSize(width: java.lang.String, height: java.lang.String): TabPanel = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): TabPanel = js.native
-  def setStyleAttributes(attributes: js.Object): TabPanel = js.native
+  def setStyleAttributes(attributes: js.Any): TabPanel = js.native
   def setStyleName(styleName: java.lang.String): TabPanel = js.native
   def setStylePrimaryName(styleName: java.lang.String): TabPanel = js.native
   def setTag(tag: java.lang.String): TabPanel = js.native

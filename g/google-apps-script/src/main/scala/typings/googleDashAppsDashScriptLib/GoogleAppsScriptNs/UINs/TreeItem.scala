@@ -28,13 +28,13 @@ trait TreeItem extends js.Object {
   def setState(open: scala.Boolean): TreeItem = js.native
   def setState(open: scala.Boolean, fireEvents: scala.Boolean): TreeItem = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): TreeItem = js.native
-  def setStyleAttributes(attributes: js.Object): TreeItem = js.native
+  def setStyleAttributes(attributes: js.Any): TreeItem = js.native
   def setStyleName(styleName: java.lang.String): TreeItem = js.native
   def setStylePrimaryName(styleName: java.lang.String): TreeItem = js.native
   def setTag(tag: java.lang.String): TreeItem = js.native
   def setText(text: java.lang.String): TreeItem = js.native
   def setTitle(title: java.lang.String): TreeItem = js.native
-  def setUserObject(a: js.Object): TreeItem = js.native
+  def setUserObject(a: js.Any): TreeItem = js.native
   def setVisible(visible: scala.Boolean): TreeItem = js.native
   def setWidget(widget: Widget): TreeItem = js.native
   def setWidth(width: java.lang.String): TreeItem = js.native

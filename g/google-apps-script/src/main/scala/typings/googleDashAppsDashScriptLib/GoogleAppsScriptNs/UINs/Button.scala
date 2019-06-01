@@ -29,14 +29,14 @@ trait Button extends js.Object {
   def setHTML(html: java.lang.String): Button
   def setHeight(height: java.lang.String): Button
   def setId(id: java.lang.String): Button
-  def setLayoutData(layout: js.Object): Button
+  def setLayoutData(layout: js.Any): Button
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): Button
   def setSize(width: java.lang.String, height: java.lang.String): Button
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): Button
-  def setStyleAttributes(attributes: js.Object): Button
+  def setStyleAttributes(attributes: js.Any): Button
   def setStyleName(styleName: java.lang.String): Button
   def setStylePrimaryName(styleName: java.lang.String): Button
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Button
@@ -73,11 +73,11 @@ object Button {
     setHTML: java.lang.String => Button,
     setHeight: java.lang.String => Button,
     setId: java.lang.String => Button,
-    setLayoutData: js.Object => Button,
+    setLayoutData: js.Any => Button,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => Button,
     setSize: (java.lang.String, java.lang.String) => Button,
     setStyleAttribute: (java.lang.String, java.lang.String) => Button,
-    setStyleAttributes: js.Object => Button,
+    setStyleAttributes: js.Any => Button,
     setStyleName: java.lang.String => Button,
     setStylePrimaryName: java.lang.String => Button,
     setTabIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer => Button,

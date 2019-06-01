@@ -26,11 +26,11 @@ trait Body extends js.Object {
   def findElement(elementType: ElementType, from: RangeElement): RangeElement = js.native
   def findText(searchPattern: java.lang.String): RangeElement = js.native
   def findText(searchPattern: java.lang.String, from: RangeElement): RangeElement = js.native
-  def getAttributes(): js.Object = js.native
+  def getAttributes(): js.Any = js.native
   def getChild(childIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Element = js.native
   def getChildIndex(child: Element): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getFootnotes(): js.Array[Footnote] = js.native
-  def getHeadingAttributes(paragraphHeading: ParagraphHeading): js.Object = js.native
+  def getHeadingAttributes(paragraphHeading: ParagraphHeading): js.Any = js.native
   def getImages(): js.Array[InlineImage] = js.native
   def getLinkUrl(): java.lang.String = js.native
   def getListItems(): js.Array[ListItem] = js.native
@@ -70,8 +70,8 @@ trait Body extends js.Object {
   def isAtDocumentEnd(): scala.Boolean = js.native
   def removeChild(child: Element): Body = js.native
   def replaceText(searchPattern: java.lang.String, replacement: java.lang.String): Element = js.native
-  def setAttributes(attributes: js.Object): Body = js.native
-  def setHeadingAttributes(paragraphHeading: ParagraphHeading, attributes: js.Object): Body = js.native
+  def setAttributes(attributes: js.Any): Body = js.native
+  def setHeadingAttributes(paragraphHeading: ParagraphHeading, attributes: js.Any): Body = js.native
   def setLinkUrl(url: java.lang.String): Body = js.native
   def setMarginBottom(marginBottom: scala.Double): Body = js.native
   def setMarginLeft(marginLeft: scala.Double): Body = js.native

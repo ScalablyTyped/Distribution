@@ -21,7 +21,7 @@ trait MenuItem extends js.Object {
   ): MenuItem
   def setSize(width: java.lang.String, height: java.lang.String): MenuItem
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): MenuItem
-  def setStyleAttributes(attributes: js.Object): MenuItem
+  def setStyleAttributes(attributes: js.Any): MenuItem
   def setStyleName(styleName: java.lang.String): MenuItem
   def setStylePrimaryName(styleName: java.lang.String): MenuItem
   def setSubMenu(subMenu: MenuBar): MenuItem
@@ -47,7 +47,7 @@ object MenuItem {
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => MenuItem,
     setSize: (java.lang.String, java.lang.String) => MenuItem,
     setStyleAttribute: (java.lang.String, java.lang.String) => MenuItem,
-    setStyleAttributes: js.Object => MenuItem,
+    setStyleAttributes: js.Any => MenuItem,
     setStyleName: java.lang.String => MenuItem,
     setStylePrimaryName: java.lang.String => MenuItem,
     setSubMenu: MenuBar => MenuItem,

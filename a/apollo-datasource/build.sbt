@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-datasource"
-version := "0.4.0-5f9b2e"
+version := "0.5.0-5f9b2e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

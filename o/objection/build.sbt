@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "objection"
-version := "1.6.9-d843c6"
+version := "1.6.9-906dc5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "ajv" % "6.10.0-46610e",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-462670",
-  "org.scalablytyped" %%% "knex" % "0.17.0-6dc92e",
+  "org.scalablytyped" %%% "knex" % "0.17.1-73205e",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false

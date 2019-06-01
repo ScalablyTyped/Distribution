@@ -20,14 +20,14 @@ trait DecoratedTabBar extends js.Object {
   def selectTab(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): DecoratedTabBar = js.native
   def setHeight(height: java.lang.String): DecoratedTabBar = js.native
   def setId(id: java.lang.String): DecoratedTabBar = js.native
-  def setLayoutData(layout: js.Object): DecoratedTabBar = js.native
+  def setLayoutData(layout: js.Any): DecoratedTabBar = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): DecoratedTabBar = js.native
   def setSize(width: java.lang.String, height: java.lang.String): DecoratedTabBar = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): DecoratedTabBar = js.native
-  def setStyleAttributes(attributes: js.Object): DecoratedTabBar = js.native
+  def setStyleAttributes(attributes: js.Any): DecoratedTabBar = js.native
   def setStyleName(styleName: java.lang.String): DecoratedTabBar = js.native
   def setStylePrimaryName(styleName: java.lang.String): DecoratedTabBar = js.native
   def setTabEnabled(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, enabled: scala.Boolean): DecoratedTabBar = js.native

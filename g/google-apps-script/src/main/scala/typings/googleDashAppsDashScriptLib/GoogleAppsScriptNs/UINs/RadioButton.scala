@@ -32,7 +32,7 @@ trait RadioButton extends js.Object {
   def setHTML(html: java.lang.String): RadioButton = js.native
   def setHeight(height: java.lang.String): RadioButton = js.native
   def setId(id: java.lang.String): RadioButton = js.native
-  def setLayoutData(layout: js.Object): RadioButton = js.native
+  def setLayoutData(layout: js.Any): RadioButton = js.native
   def setName(name: java.lang.String): RadioButton = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -40,7 +40,7 @@ trait RadioButton extends js.Object {
   ): RadioButton = js.native
   def setSize(width: java.lang.String, height: java.lang.String): RadioButton = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): RadioButton = js.native
-  def setStyleAttributes(attributes: js.Object): RadioButton = js.native
+  def setStyleAttributes(attributes: js.Any): RadioButton = js.native
   def setStyleName(styleName: java.lang.String): RadioButton = js.native
   def setStylePrimaryName(styleName: java.lang.String): RadioButton = js.native
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): RadioButton = js.native

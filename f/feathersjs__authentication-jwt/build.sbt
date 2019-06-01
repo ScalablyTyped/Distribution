@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "feathersjs__authentication-jwt"
-version := "1.0-dt-20190213Z-86e2c9"
+version := "1.0-dt-20190531Z-86e2c9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

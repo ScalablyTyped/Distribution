@@ -33,7 +33,7 @@ trait TextBox extends js.Object {
   def setFocus(focus: scala.Boolean): TextBox = js.native
   def setHeight(height: java.lang.String): TextBox = js.native
   def setId(id: java.lang.String): TextBox = js.native
-  def setLayoutData(layout: js.Object): TextBox = js.native
+  def setLayoutData(layout: js.Any): TextBox = js.native
   def setMaxLength(length: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): TextBox = js.native
   def setName(name: java.lang.String): TextBox = js.native
   def setPixelSize(
@@ -47,7 +47,7 @@ trait TextBox extends js.Object {
   ): TextBox = js.native
   def setSize(width: java.lang.String, height: java.lang.String): TextBox = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): TextBox = js.native
-  def setStyleAttributes(attributes: js.Object): TextBox = js.native
+  def setStyleAttributes(attributes: js.Any): TextBox = js.native
   def setStyleName(styleName: java.lang.String): TextBox = js.native
   def setStylePrimaryName(styleName: java.lang.String): TextBox = js.native
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): TextBox = js.native

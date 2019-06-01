@@ -36,7 +36,7 @@ trait ListBox extends js.Object {
   def setId(id: java.lang.String): ListBox = js.native
   def setItemSelected(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, selected: scala.Boolean): ListBox = js.native
   def setItemText(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, text: java.lang.String): ListBox = js.native
-  def setLayoutData(layout: js.Object): ListBox = js.native
+  def setLayoutData(layout: js.Any): ListBox = js.native
   def setName(name: java.lang.String): ListBox = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -45,7 +45,7 @@ trait ListBox extends js.Object {
   def setSelectedIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): ListBox = js.native
   def setSize(width: java.lang.String, height: java.lang.String): ListBox = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): ListBox = js.native
-  def setStyleAttributes(attributes: js.Object): ListBox = js.native
+  def setStyleAttributes(attributes: js.Any): ListBox = js.native
   def setStyleName(styleName: java.lang.String): ListBox = js.native
   def setStylePrimaryName(styleName: java.lang.String): ListBox = js.native
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): ListBox = js.native

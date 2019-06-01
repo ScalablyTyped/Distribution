@@ -15,7 +15,7 @@ trait FileUpload extends js.Object {
   def setEnabled(enabled: scala.Boolean): FileUpload
   def setHeight(height: java.lang.String): FileUpload
   def setId(id: java.lang.String): FileUpload
-  def setLayoutData(layout: js.Object): FileUpload
+  def setLayoutData(layout: js.Any): FileUpload
   def setName(name: java.lang.String): FileUpload
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -23,7 +23,7 @@ trait FileUpload extends js.Object {
   ): FileUpload
   def setSize(width: java.lang.String, height: java.lang.String): FileUpload
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): FileUpload
-  def setStyleAttributes(attributes: js.Object): FileUpload
+  def setStyleAttributes(attributes: js.Any): FileUpload
   def setStyleName(styleName: java.lang.String): FileUpload
   def setStylePrimaryName(styleName: java.lang.String): FileUpload
   def setTag(tag: java.lang.String): FileUpload
@@ -44,12 +44,12 @@ object FileUpload {
     setEnabled: scala.Boolean => FileUpload,
     setHeight: java.lang.String => FileUpload,
     setId: java.lang.String => FileUpload,
-    setLayoutData: js.Object => FileUpload,
+    setLayoutData: js.Any => FileUpload,
     setName: java.lang.String => FileUpload,
     setPixelSize: (googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer) => FileUpload,
     setSize: (java.lang.String, java.lang.String) => FileUpload,
     setStyleAttribute: (java.lang.String, java.lang.String) => FileUpload,
-    setStyleAttributes: js.Object => FileUpload,
+    setStyleAttributes: js.Any => FileUpload,
     setStyleName: java.lang.String => FileUpload,
     setStylePrimaryName: java.lang.String => FileUpload,
     setTag: java.lang.String => FileUpload,

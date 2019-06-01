@@ -32,7 +32,7 @@ trait CheckBox extends js.Object {
   def setHTML(html: java.lang.String): CheckBox = js.native
   def setHeight(height: java.lang.String): CheckBox = js.native
   def setId(id: java.lang.String): CheckBox = js.native
-  def setLayoutData(layout: js.Object): CheckBox = js.native
+  def setLayoutData(layout: js.Any): CheckBox = js.native
   def setName(name: java.lang.String): CheckBox = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -40,7 +40,7 @@ trait CheckBox extends js.Object {
   ): CheckBox = js.native
   def setSize(width: java.lang.String, height: java.lang.String): CheckBox = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): CheckBox = js.native
-  def setStyleAttributes(attributes: js.Object): CheckBox = js.native
+  def setStyleAttributes(attributes: js.Any): CheckBox = js.native
   def setStyleName(styleName: java.lang.String): CheckBox = js.native
   def setStylePrimaryName(styleName: java.lang.String): CheckBox = js.native
   def setTabIndex(index: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): CheckBox = js.native

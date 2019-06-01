@@ -4264,6 +4264,7 @@
 | 0.5611070920976499 | [babel__code-frame](./b/babel__code-frame) | Generate errors that contain a code frame that poi
 | 0.5606341480060515 | [jcanvas](./j/jcanvas) | jCanvas brings jQuery's powerful syntax and capabi
 | 0.5603894562469418 | [text-buffer](./t/text-buffer) | A container for large mutable strings with annotat
+| 0.5603490463554476 | [spotify-web-api-node](./s/spotify-web-api-node) | A Node.js wrapper for Spotify's Web API
 | 0.559982209255923 | [leaflet_dot_fullscreen](./l/leaflet_dot_fullscreen) | Simple plugin for Leaflet that adds fullscreen but
 | 0.5599710797232875 | [urijs](./u/urijs) | URI.js is a Javascript library for working with UR
 | 0.5598596065477016 | [platform](./p/platform) | A platform detection library that works on nearly 

@@ -1,6 +1,7 @@
 
 # Scala.js typings for nprogress
 
+Typings are for version 0.2
 
 ## Library description:
 Simple slim progress bars
@@ -34,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for NProgress
+// Type definitions for NProgress 0.2
 // Project: https://github.com/rstacruz/nprogress
-// Definitions by: Judah Gabriel Himango <http://debuggerdotbreak.wordpress.com>
+// Definitions by: Judah Gabriel Himango <https://github.com/JudahGabriel>, Ovyerus <https://github.com/Ovyerus>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.1
 
 ```
 

@@ -19,14 +19,14 @@ trait FlowPanel extends js.Object {
   def remove(widget: Widget): FlowPanel = js.native
   def setHeight(height: java.lang.String): FlowPanel = js.native
   def setId(id: java.lang.String): FlowPanel = js.native
-  def setLayoutData(layout: js.Object): FlowPanel = js.native
+  def setLayoutData(layout: js.Any): FlowPanel = js.native
   def setPixelSize(
     width: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): FlowPanel = js.native
   def setSize(width: java.lang.String, height: java.lang.String): FlowPanel = js.native
   def setStyleAttribute(attribute: java.lang.String, value: java.lang.String): FlowPanel = js.native
-  def setStyleAttributes(attributes: js.Object): FlowPanel = js.native
+  def setStyleAttributes(attributes: js.Any): FlowPanel = js.native
   def setStyleName(styleName: java.lang.String): FlowPanel = js.native
   def setStylePrimaryName(styleName: java.lang.String): FlowPanel = js.native
   def setTag(tag: java.lang.String): FlowPanel = js.native

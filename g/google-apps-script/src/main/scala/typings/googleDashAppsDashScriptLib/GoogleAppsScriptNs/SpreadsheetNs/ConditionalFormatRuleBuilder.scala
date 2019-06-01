@@ -46,6 +46,6 @@ trait ConditionalFormatRuleBuilder extends js.Object {
   def whenTextEndsWith(text: java.lang.String): ConditionalFormatRuleBuilder = js.native
   def whenTextEqualTo(text: java.lang.String): ConditionalFormatRuleBuilder = js.native
   def whenTextStartsWith(text: java.lang.String): ConditionalFormatRuleBuilder = js.native
-  def withCriteria(criteria: BooleanCriteria, args: js.Array[js.Object]): ConditionalFormatRuleBuilder = js.native
+  def withCriteria(criteria: BooleanCriteria, args: js.Array[_]): ConditionalFormatRuleBuilder = js.native
 }
 

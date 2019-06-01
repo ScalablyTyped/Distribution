@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLServiceContext extends js.Object {
-  var engine: apolloDashServerDashCoreLib.Anon_ServiceID
+  var engine: apolloDashServerDashCoreLib.Anon_ApiKeyHash
   var persistedQueries: js.UndefOr[apolloDashServerDashCoreLib.Anon_Cache] = js.undefined
   var schema: graphqlLib.graphqlMod.GraphQLSchema
   var schemaHash: java.lang.String
@@ -15,7 +15,7 @@ trait GraphQLServiceContext extends js.Object {
 object GraphQLServiceContext {
   @scala.inline
   def apply(
-    engine: apolloDashServerDashCoreLib.Anon_ServiceID,
+    engine: apolloDashServerDashCoreLib.Anon_ApiKeyHash,
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     schemaHash: java.lang.String,
     persistedQueries: apolloDashServerDashCoreLib.Anon_Cache = null

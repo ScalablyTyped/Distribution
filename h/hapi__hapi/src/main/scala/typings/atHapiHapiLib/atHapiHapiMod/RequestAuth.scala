@@ -20,7 +20,7 @@ trait RequestAuth extends js.Object {
     */
   var isAuthorized: scala.Boolean
   /** the route authentication mode. */
-  var mode: java.lang.String
+  var mode: AuthMode
   /** the name of the strategy used. */
   var strategy: java.lang.String
 }
@@ -33,7 +33,7 @@ object RequestAuth {
     error: stdLib.Error,
     isAuthenticated: scala.Boolean,
     isAuthorized: scala.Boolean,
-    mode: java.lang.String,
+    mode: AuthMode,
     strategy: java.lang.String
   ): RequestAuth = {
     val __obj = js.Dynamic.literal(artifacts = artifacts, credentials = credentials, error = error, isAuthenticated = isAuthenticated, isAuthorized = isAuthorized, mode = mode, strategy = strategy)
