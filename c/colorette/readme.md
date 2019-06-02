@@ -1,7 +1,7 @@
 
 # Scala.js typings for colorette
 
-Typings are for version 1.0.7
+Typings are for version 1.0.8
 
 ## Library description:
 Node.js library for colorizing text using ANSI escape sequences.

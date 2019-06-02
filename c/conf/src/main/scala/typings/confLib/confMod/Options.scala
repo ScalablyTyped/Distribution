@@ -7,6 +7,34 @@ import scala.scalajs.js.annotation._
 
 trait Options[T] extends js.Object {
   /**
+  		Access nested properties by dot notation.
+  		@default true
+  		@example
+  		```
+  		const config = new Conf();
+  		config.set({
+  			foo: {
+  				bar: {
+  					foobar: '🦄'
+  				}
+  			}
+  		});
+  		console.log(config.get('foo.bar.foobar'));
+  		//=> '🦄'
+  		```
+  		Alternatively, you can set this option to `false` so the whole string would be treated as one key.
+  		@example
+  		```
+  		const config = new Conf({accessPropertiesByDotNotation: false});
+  		config.set({
+  			`foo.bar.foobar`: '🦄'
+  		});
+  		console.log(config.get('foo.bar.foobar'));
+  		//=> '🦄'
+  		```
+  		*/
+  val accessPropertiesByDotNotation: js.UndefOr[scala.Boolean] = js.undefined
+  /**
   		The config is cleared if reading the config file causes a `SyntaxError`. This is a good default, as the config file is not intended to be hand-edited, so it usually means the config is corrupt and there's nothing the user can do about it anyway. However, if you let the user edit the config file directly, mistakes might happen and it could be more useful to throw an error when the config is invalid instead of clearing. Disabling this option will make it throw a `SyntaxError` on invalid config instead of clearing.
   		@default true
   		*/
@@ -105,6 +133,7 @@ trait Options[T] extends js.Object {
 object Options {
   @scala.inline
   def apply[T](
+    accessPropertiesByDotNotation: js.UndefOr[scala.Boolean] = js.undefined,
     clearInvalidConfig: js.UndefOr[scala.Boolean] = js.undefined,
     configName: java.lang.String = null,
     cwd: java.lang.String = null,
@@ -118,6 +147,7 @@ object Options {
     serialize: /* value */ org.scalablytyped.runtime.StringDictionary[T] => java.lang.String = null
   ): Options[T] = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(accessPropertiesByDotNotation)) __obj.updateDynamic("accessPropertiesByDotNotation")(accessPropertiesByDotNotation)
     if (!js.isUndefined(clearInvalidConfig)) __obj.updateDynamic("clearInvalidConfig")(clearInvalidConfig)
     if (configName != null) __obj.updateDynamic("configName")(configName)
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)

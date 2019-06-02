@@ -16,7 +16,7 @@ package object knexMod {
   // This is primarily to keep the signatures more intuitive.
   type AugmentParams[TTarget, TParams] = (js.Object with TTarget with TParams) | TTarget
   type ColumnDescriptor[TRecord, TResult] = java.lang.String | Raw[js.Any] | (QueryBuilder[TRecord, TResult]) | Dict[java.lang.String]
-  type CountQueryBuilder[TRecord, TResult] = QueryBuilder[TRecord, ArrayIfAlready[TResult, Dict[scala.Double | java.lang.String]]]
+  type CountQueryResult[TResult] = ArrayIfAlready[TResult, Dict[scala.Double | java.lang.String]]
   type CreateTableBuilder = TableBuilder
   // Convenience alias and associated companion namespace for working
   // with DeferredSelection having TSingle=true.

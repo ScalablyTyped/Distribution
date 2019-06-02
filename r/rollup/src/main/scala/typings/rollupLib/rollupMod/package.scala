@@ -66,7 +66,7 @@ package object rollupMod {
   type ResolveIdHook = js.ThisFunction2[
     /* this */ PluginContext, 
     /* source */ java.lang.String, 
-    /* importer */ java.lang.String, 
+    /* importer */ js.UndefOr[java.lang.String], 
     js.Promise[ResolveIdResult] | ResolveIdResult
   ]
   /* Rewritten from type alias, can be one of: 

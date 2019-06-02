@@ -12,6 +12,7 @@ trait StepsProps extends js.Object {
   var iconPrefix: js.UndefOr[java.lang.String] = js.undefined
   var initial: js.UndefOr[scala.Double] = js.undefined
   var labelPlacement: js.UndefOr[antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* current */ scala.Double, scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var progressDot: js.UndefOr[scala.Boolean | js.Function] = js.undefined
   var size: js.UndefOr[antdLib.antdLibStrings.default | antdLib.antdLibStrings.small] = js.undefined
@@ -30,6 +31,7 @@ object StepsProps {
     iconPrefix: java.lang.String = null,
     initial: scala.Int | scala.Double = null,
     labelPlacement: antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical = null,
+    onChange: /* current */ scala.Double => scala.Unit = null,
     prefixCls: java.lang.String = null,
     progressDot: scala.Boolean | js.Function = null,
     size: antdLib.antdLibStrings.default | antdLib.antdLibStrings.small = null,
@@ -43,6 +45,7 @@ object StepsProps {
     if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix)
     if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
     if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (progressDot != null) __obj.updateDynamic("progressDot")(progressDot.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])

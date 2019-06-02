@@ -38,6 +38,17 @@ trait Conf[T]
   	*/
   def has(key: java.lang.String): scala.Boolean = js.native
   /**
+  	Watches the whole config object, calling `callback` on any changes.
+  	@param callback - A callback function that is called on any changes. When a `key` is first set `oldValue` will be `undefined`, and when a key is deleted `newValue` will be `undefined`.
+  	*/
+  def onDidAnyChange(
+    callback: js.Function2[
+      /* oldValue */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[T]], 
+      /* newValue */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[T]], 
+      scala.Unit
+    ]
+  ): js.Function0[scala.Unit] = js.native
+  /**
   	Watches the given `key`, calling `callback` on any changes.
   	@param key - The key wo watch.
   	@param callback - A callback function that is called on any changes. When a `key` is first set `oldValue` will be `undefined`, and when a key is deleted `newValue` will be `undefined`.

@@ -355,15 +355,19 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def columns_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: (QueryBuilder[TInnerRecord, TInnerResult])*): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("columns")
   def columns_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def count(columnName: Raw[_]): CountQueryBuilder[TRecord, TResult] = js.native
+  def count[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
   // Aggregation
-  def count(columnNames: java.lang.String*): CountQueryBuilder[TRecord, TResult] = js.native
-  def count(
+  def count[TResult2](columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
+  def count[TResult2](
     columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
-  ): CountQueryBuilder[TRecord, TResult] = js.native
-  def countDistinct(columnName: java.lang.String): CountQueryBuilder[TRecord, TResult] = js.native
-  def countDistinct(columnName: Raw[_]): CountQueryBuilder[TRecord, TResult] = js.native
-  def countDistinct(columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): CountQueryBuilder[TRecord, TResult] = js.native
+  ): QueryBuilder[TRecord, TResult2] = js.native
+  def count[TAliases, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
+  def countDistinct[TResult2](columnName: java.lang.String): QueryBuilder[TRecord, TResult2] = js.native
+  def countDistinct[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
+  def countDistinct[TResult2](
+    columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
+  ): QueryBuilder[TRecord, TResult2] = js.native
+  def countDistinct[TAliases, TResult2](alises: TAliases): QueryBuilder[TRecord, TResult2] = js.native
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: AliasDict, clause: JoinCallback): QueryBuilder[TRecord2, TResult2] = js.native
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: AliasDict, column1: java.lang.String, column2: java.lang.String): QueryBuilder[TRecord2, TResult2] = js.native

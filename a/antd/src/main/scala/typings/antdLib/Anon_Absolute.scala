@@ -30,6 +30,15 @@ trait Anon_Absolute extends js.Object {
   var KhtmlBoxPack: js.UndefOr[
     antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.justify
   ] = js.undefined
+  var KhtmlLineBreak: js.UndefOr[
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.strict | antdLib.antdLibStrings.loose
+  ] = js.undefined
+  var KhtmlOpacity: js.UndefOr[
+    scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
+  ] = js.undefined
+  var KhtmlUserSelect: js.UndefOr[
+    antdLib.antdLibStrings.all | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.text | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.`-moz-none` | antdLib.antdLibStrings.element
+  ] = js.undefined
   var MozAnimation: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozAnimationDelay: js.UndefOr[java.lang.String] = js.undefined
   var MozAnimationDirection: js.UndefOr[java.lang.String] = js.undefined
@@ -140,9 +149,6 @@ trait Anon_Absolute extends js.Object {
   var MozPaddingStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozPerspective: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozPerspectiveOrigin: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var MozResize: js.UndefOr[
-    antdLib.antdLibStrings.none | antdLib.antdLibStrings.both | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.block | antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical
-  ] = js.undefined
   var MozStackSizing: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.ignore | antdLib.antdLibStrings.`stretch-to-fit`
   ] = js.undefined
@@ -399,6 +405,7 @@ trait Anon_Absolute extends js.Object {
   var WebkitWritingMode: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`horizontal-tb` | antdLib.antdLibStrings.`sideways-lr` | antdLib.antdLibStrings.`sideways-rl` | antdLib.antdLibStrings.`vertical-lr` | antdLib.antdLibStrings.`vertical-rl`
   ] = js.undefined
+  var WebkitmaskSize: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var alignContent: js.UndefOr[java.lang.String] = js.undefined
   var alignItems: js.UndefOr[java.lang.String] = js.undefined
   var alignSelf: js.UndefOr[java.lang.String] = js.undefined
@@ -954,11 +961,9 @@ trait Anon_Absolute extends js.Object {
   var overflowAnchor: js.UndefOr[
     antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
-  var overflowBlock: js.UndefOr[java.lang.String] = js.undefined
   var overflowClipBox: js.UndefOr[
     antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`content-box` | antdLib.antdLibStrings.`padding-box`
   ] = js.undefined
-  var overflowInline: js.UndefOr[java.lang.String] = js.undefined
   var overflowWrap: js.UndefOr[
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.anywhere | antdLib.antdLibStrings.`break-word`
   ] = js.undefined
@@ -1032,6 +1037,7 @@ trait Anon_Absolute extends js.Object {
   var scrollMarginBlockEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var scrollMarginBlockStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var scrollMarginBottom: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollMarginInline: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var scrollMarginInlineEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var scrollMarginInlineStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var scrollMarginLeft: js.UndefOr[java.lang.String | scala.Double] = js.undefined
@@ -1053,6 +1059,9 @@ trait Anon_Absolute extends js.Object {
   var scrollSnapDestination: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var scrollSnapPointsX: js.UndefOr[java.lang.String] = js.undefined
   var scrollSnapPointsY: js.UndefOr[java.lang.String] = js.undefined
+  var scrollSnapStop: js.UndefOr[
+    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.always
+  ] = js.undefined
   var scrollSnapType: js.UndefOr[java.lang.String] = js.undefined
   var scrollSnapTypeX: js.UndefOr[
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.mandatory | antdLib.antdLibStrings.proximity
@@ -1202,6 +1211,9 @@ object Anon_Absolute {
     KhtmlBoxOrdinalGroup: scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset = null,
     KhtmlBoxOrient: antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical | antdLib.antdLibStrings.`block-axis` | antdLib.antdLibStrings.`inline-axis` = null,
     KhtmlBoxPack: antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.justify = null,
+    KhtmlLineBreak: antdLib.antdLibStrings.auto | antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.strict | antdLib.antdLibStrings.loose = null,
+    KhtmlOpacity: scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset = null,
+    KhtmlUserSelect: antdLib.antdLibStrings.all | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.text | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.`-moz-none` | antdLib.antdLibStrings.element = null,
     MozAnimation: java.lang.String | scala.Double = null,
     MozAnimationDelay: java.lang.String = null,
     MozAnimationDirection: java.lang.String = null,
@@ -1274,7 +1286,6 @@ object Anon_Absolute {
     MozPaddingStart: java.lang.String | scala.Double = null,
     MozPerspective: java.lang.String | scala.Double = null,
     MozPerspectiveOrigin: java.lang.String | scala.Double = null,
-    MozResize: antdLib.antdLibStrings.none | antdLib.antdLibStrings.both | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.block | antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical = null,
     MozStackSizing: antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.ignore | antdLib.antdLibStrings.`stretch-to-fit` = null,
     MozTabSize: java.lang.String | scala.Double = null,
     MozTextAlignLast: antdLib.antdLibStrings.auto | antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.justify = null,
@@ -1439,15 +1450,13 @@ object Anon_Absolute {
     WebkitUserModify: antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`read-only` | antdLib.antdLibStrings.`read-write` | antdLib.antdLibStrings.`read-write-plaintext-only` = null,
     WebkitUserSelect: antdLib.antdLibStrings.all | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.text | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.`-moz-none` | antdLib.antdLibStrings.element = null,
     WebkitWritingMode: antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`horizontal-tb` | antdLib.antdLibStrings.`sideways-lr` | antdLib.antdLibStrings.`sideways-rl` | antdLib.antdLibStrings.`vertical-lr` | antdLib.antdLibStrings.`vertical-rl` = null,
+    WebkitmaskSize: java.lang.String | scala.Double = null,
     alignContent: java.lang.String = null,
     alignItems: java.lang.String = null,
     alignSelf: java.lang.String = null,
     alignmentBaseline: antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hanging | antdLib.antdLibStrings.middle | antdLib.antdLibStrings.alphabetic | antdLib.antdLibStrings.ideographic | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.baseline | antdLib.antdLibStrings.`after-edge` | antdLib.antdLibStrings.`before-edge` | antdLib.antdLibStrings.central | antdLib.antdLibStrings.mathematical | antdLib.antdLibStrings.`text-after-edge` | antdLib.antdLibStrings.`text-before-edge` = null,
     all: antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset = null,
-    animation: java.lang.String | scala.Double = null,
-    animationDelay: java.lang.String = null,
-    animationDirection: java.lang.String = null,
-    animationDuration: java.lang.String = null
+    animation: java.lang.String | scala.Double = null
   ): Anon_Absolute = {
     val __obj = js.Dynamic.literal()
     if (KhtmlBoxAlign != null) __obj.updateDynamic("KhtmlBoxAlign")(KhtmlBoxAlign.asInstanceOf[js.Any])
@@ -1458,6 +1467,9 @@ object Anon_Absolute {
     if (KhtmlBoxOrdinalGroup != null) __obj.updateDynamic("KhtmlBoxOrdinalGroup")(KhtmlBoxOrdinalGroup.asInstanceOf[js.Any])
     if (KhtmlBoxOrient != null) __obj.updateDynamic("KhtmlBoxOrient")(KhtmlBoxOrient.asInstanceOf[js.Any])
     if (KhtmlBoxPack != null) __obj.updateDynamic("KhtmlBoxPack")(KhtmlBoxPack.asInstanceOf[js.Any])
+    if (KhtmlLineBreak != null) __obj.updateDynamic("KhtmlLineBreak")(KhtmlLineBreak.asInstanceOf[js.Any])
+    if (KhtmlOpacity != null) __obj.updateDynamic("KhtmlOpacity")(KhtmlOpacity.asInstanceOf[js.Any])
+    if (KhtmlUserSelect != null) __obj.updateDynamic("KhtmlUserSelect")(KhtmlUserSelect.asInstanceOf[js.Any])
     if (MozAnimation != null) __obj.updateDynamic("MozAnimation")(MozAnimation.asInstanceOf[js.Any])
     if (MozAnimationDelay != null) __obj.updateDynamic("MozAnimationDelay")(MozAnimationDelay)
     if (MozAnimationDirection != null) __obj.updateDynamic("MozAnimationDirection")(MozAnimationDirection)
@@ -1530,7 +1542,6 @@ object Anon_Absolute {
     if (MozPaddingStart != null) __obj.updateDynamic("MozPaddingStart")(MozPaddingStart.asInstanceOf[js.Any])
     if (MozPerspective != null) __obj.updateDynamic("MozPerspective")(MozPerspective.asInstanceOf[js.Any])
     if (MozPerspectiveOrigin != null) __obj.updateDynamic("MozPerspectiveOrigin")(MozPerspectiveOrigin.asInstanceOf[js.Any])
-    if (MozResize != null) __obj.updateDynamic("MozResize")(MozResize.asInstanceOf[js.Any])
     if (MozStackSizing != null) __obj.updateDynamic("MozStackSizing")(MozStackSizing.asInstanceOf[js.Any])
     if (MozTabSize != null) __obj.updateDynamic("MozTabSize")(MozTabSize.asInstanceOf[js.Any])
     if (MozTextAlignLast != null) __obj.updateDynamic("MozTextAlignLast")(MozTextAlignLast.asInstanceOf[js.Any])
@@ -1695,15 +1706,13 @@ object Anon_Absolute {
     if (WebkitUserModify != null) __obj.updateDynamic("WebkitUserModify")(WebkitUserModify.asInstanceOf[js.Any])
     if (WebkitUserSelect != null) __obj.updateDynamic("WebkitUserSelect")(WebkitUserSelect.asInstanceOf[js.Any])
     if (WebkitWritingMode != null) __obj.updateDynamic("WebkitWritingMode")(WebkitWritingMode.asInstanceOf[js.Any])
+    if (WebkitmaskSize != null) __obj.updateDynamic("WebkitmaskSize")(WebkitmaskSize.asInstanceOf[js.Any])
     if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent)
     if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf)
     if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
     if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
     if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay)
-    if (animationDirection != null) __obj.updateDynamic("animationDirection")(animationDirection)
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration)
     __obj.asInstanceOf[Anon_Absolute]
   }
 }

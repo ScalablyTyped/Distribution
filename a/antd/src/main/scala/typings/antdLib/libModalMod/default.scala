@@ -15,7 +15,7 @@ class default ()
 @js.native
 object default extends js.Object {
   var confirm: antdLib.libModalModalMod.ModalFunc = js.native
-  var defaultProps: antdLib.Anon_CancelButtonDisabled = js.native
+  var defaultProps: antdLib.Anon_ConfirmLoading = js.native
   var error: antdLib.libModalModalMod.ModalFunc = js.native
   var info: antdLib.libModalModalMod.ModalFunc = js.native
   var propTypes: antdLib.Anon_ArgsCancelText = js.native

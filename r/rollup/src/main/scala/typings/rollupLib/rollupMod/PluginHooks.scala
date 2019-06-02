@@ -50,6 +50,7 @@ trait PluginHooks extends js.Object {
   def resolveDynamicImport(`this`: PluginContext, specifier: estreeLib.estreeMod.Node, importer: java.lang.String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
   def resolveDynamicImport(`this`: PluginContext, specifier: java.lang.String, importer: java.lang.String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
   def resolveFileUrl(`this`: PluginContext, options: rollupLib.Anon_AssetReferenceId): java.lang.String | scala.Unit = js.native
+  def resolveId(`this`: PluginContext, source: java.lang.String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
   def resolveId(`this`: PluginContext, source: java.lang.String, importer: java.lang.String): js.Promise[ResolveIdResult] | ResolveIdResult = js.native
   def resolveImportMeta(`this`: PluginContext, prop: java.lang.String, options: rollupLib.Anon_ChunkId): java.lang.String | scala.Unit = js.native
   def resolveImportMeta(`this`: PluginContext, prop: scala.Null, options: rollupLib.Anon_ChunkId): java.lang.String | scala.Unit = js.native

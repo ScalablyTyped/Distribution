@@ -10,6 +10,7 @@ trait MenuProps extends js.Object {
   var defaultOpenKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var defaultSelectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var focusable: js.UndefOr[scala.Boolean] = js.undefined
+  var forceSubMenuRender: js.UndefOr[scala.Boolean] = js.undefined
   var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ stdLib.HTMLElement, stdLib.HTMLElement]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inlineCollapsed: js.UndefOr[scala.Boolean] = js.undefined
@@ -41,6 +42,7 @@ object MenuProps {
     defaultOpenKeys: js.Array[java.lang.String] = null,
     defaultSelectedKeys: js.Array[java.lang.String] = null,
     focusable: js.UndefOr[scala.Boolean] = js.undefined,
+    forceSubMenuRender: js.UndefOr[scala.Boolean] = js.undefined,
     getPopupContainer: /* triggerNode */ stdLib.HTMLElement => stdLib.HTMLElement = null,
     id: java.lang.String = null,
     inlineCollapsed: js.UndefOr[scala.Boolean] = js.undefined,
@@ -69,6 +71,7 @@ object MenuProps {
     if (defaultOpenKeys != null) __obj.updateDynamic("defaultOpenKeys")(defaultOpenKeys)
     if (defaultSelectedKeys != null) __obj.updateDynamic("defaultSelectedKeys")(defaultSelectedKeys)
     if (!js.isUndefined(focusable)) __obj.updateDynamic("focusable")(focusable)
+    if (!js.isUndefined(forceSubMenuRender)) __obj.updateDynamic("forceSubMenuRender")(forceSubMenuRender)
     if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1(getPopupContainer))
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(inlineCollapsed)) __obj.updateDynamic("inlineCollapsed")(inlineCollapsed)
