@@ -18,7 +18,9 @@ trait ColumnNameQueryBuilder[TRecord, TResult] extends js.Object {
         java.lang.String, 
         knexLib.knexLibNumbers.`false`, 
         js.Object, 
-        knexLib.knexLibNumbers.`false`
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
       ]
     ]
   ] = js.native

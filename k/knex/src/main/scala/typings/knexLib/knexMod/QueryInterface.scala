@@ -24,17 +24,29 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   var andWhere_Original: Where[TRecord, TResult] = js.native
   @JSName("as")
   var as_Original: As[TRecord, TResult] = js.native
+  @JSName("avgDistinct")
+  var avgDistinct_Original: TypePreservingAggregation[TRecord, TResult, _] = js.native
+  @JSName("avg")
+  var avg_Original: TypePreservingAggregation[TRecord, TResult, _] = js.native
   @JSName("column")
   var column_Original: Select[TRecord, TResult] = js.native
   @JSName("columns")
   var columns_Original: Select[TRecord, TResult] = js.native
+  @JSName("countDistinct")
+  var countDistinct_Original: AssymetricAggregation[TRecord, TResult, scala.Double | java.lang.String] = js.native
+  // Aggregation
+  @JSName("count")
+  var count_Original: AssymetricAggregation[TRecord, TResult, scala.Double | java.lang.String] = js.native
   @JSName("crossJoin")
   var crossJoin_Original: Join[TRecord, TResult] = js.native
   @JSName("distinct")
   var distinct_Original: Distinct[TRecord, TResult] = js.native
   // Others
   @JSName("first")
-  var first_Original: Select[TRecord, UnwrapArrayMember[TResult]] = js.native
+  var first_Original: Select[
+    TRecord, 
+    knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]
+  ] = js.native
   @JSName("from")
   var from_Original: Table[TRecord, TResult] = js.native
   @JSName("fullOuterJoin")
@@ -73,6 +85,10 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   var leftJoin_Original: Join[TRecord, TResult] = js.native
   @JSName("leftOuterJoin")
   var leftOuterJoin_Original: Join[TRecord, TResult] = js.native
+  @JSName("max")
+  var max_Original: TypePreservingAggregation[TRecord, TResult, _] = js.native
+  @JSName("min")
+  var min_Original: TypePreservingAggregation[TRecord, TResult, _] = js.native
   @JSName("orHavingBetween")
   var orHavingBetween_Original: HavingRange[TRecord, TResult] = js.native
   @JSName("orHavingNotBetween")
@@ -116,6 +132,10 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   var rightOuterJoin_Original: Join[TRecord, TResult] = js.native
   @JSName("select")
   var select_Original: Select[TRecord, TResult] = js.native
+  @JSName("sumDistinct")
+  var sumDistinct_Original: TypePreservingAggregation[TRecord, TResult, _] = js.native
+  @JSName("sum")
+  var sum_Original: TypePreservingAggregation[TRecord, TResult, _] = js.native
   @JSName("table")
   var table_Original: Table[TRecord, TResult] = js.native
   @JSName("unionAll")
@@ -260,14 +280,18 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   @JSName("andWhere")
   def andWhere_TResult2[TResult2](raw: Raw[TResult2]): QueryBuilder[TRecord, TResult2] = js.native
   def as(columnName: java.lang.String): QueryBuilder[TRecord, TResult] = js.native
-  def avg[TResult2](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
-  def avg[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
   def avg[TResult2](
-    columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
+    columnNames: ((stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]) | Raw[_] | java.lang.String)*
   ): QueryBuilder[TRecord, TResult2] = js.native
-  def avgDistinct[TResult2](columnName: java.lang.String): QueryBuilder[TRecord, TResult2] = js.native
-  def avgDistinct[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
-  def avgDistinct[TResult2](columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): QueryBuilder[TRecord, TResult2] = js.native
+  def avg[TAliases /* <: js.Object */, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
+  def avgDistinct[TResult2](
+    columnNames: ((stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]) | Raw[_] | java.lang.String)*
+  ): QueryBuilder[TRecord, TResult2] = js.native
+  def avgDistinct[TAliases /* <: js.Object */, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("avgDistinct")
+  def avgDistinct_TKeyStringTResult2[TKey /* <: java.lang.String */, TResult2](columnNames: TKey*): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("avg")
+  def avg_TKeyStringTResult2[TKey /* <: java.lang.String */, TResult2](columnNames: TKey*): QueryBuilder[TRecord, TResult2] = js.native
   def clearCounters(): QueryBuilder[TRecord, TResult] = js.native
   def clearHaving(): QueryBuilder[TRecord, TResult] = js.native
   def clearOrder(): QueryBuilder[TRecord, TResult] = js.native
@@ -280,7 +304,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
         scala.Nothing, 
         knexLib.knexLibNumbers.`false`, 
         js.Object, 
-        knexLib.knexLibNumbers.`false`
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
       ]
     ])
   ] = js.native
@@ -304,7 +330,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
         java.lang.String, 
         knexLib.knexLibNumbers.`false`, 
         js.Object, 
-        knexLib.knexLibNumbers.`false`
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
       ]
     ]
   ] = js.native
@@ -339,7 +367,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
         java.lang.String, 
         knexLib.knexLibNumbers.`false`, 
         js.Object, 
-        knexLib.knexLibNumbers.`false`
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
       ]
     ]
   ] = js.native
@@ -355,19 +385,16 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def columns_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: (QueryBuilder[TInnerRecord, TInnerResult])*): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("columns")
   def columns_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def count[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
   // Aggregation
-  def count[TResult2](columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
   def count[TResult2](
-    columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
+    columnNames: (Raw[_] | (stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]) | java.lang.String)*
   ): QueryBuilder[TRecord, TResult2] = js.native
-  def count[TAliases, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
-  def countDistinct[TResult2](columnName: java.lang.String): QueryBuilder[TRecord, TResult2] = js.native
-  def countDistinct[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
+  // Aggregation
+  def count[TAliases /* <: js.Object */, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
   def countDistinct[TResult2](
-    columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
+    columnNames: (Raw[_] | (stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]) | java.lang.String)*
   ): QueryBuilder[TRecord, TResult2] = js.native
-  def countDistinct[TAliases, TResult2](alises: TAliases): QueryBuilder[TRecord, TResult2] = js.native
+  def countDistinct[TAliases /* <: js.Object */, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: AliasDict, clause: JoinCallback): QueryBuilder[TRecord2, TResult2] = js.native
   def crossJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: AliasDict, column1: java.lang.String, column2: java.lang.String): QueryBuilder[TRecord2, TResult2] = js.native
@@ -440,7 +467,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
         java.lang.String, 
         knexLib.knexLibNumbers.`false`, 
         js.Object, 
-        knexLib.knexLibNumbers.`false`
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
       ]
     ]
   ] = js.native
@@ -449,14 +478,37 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   @JSName("distinct")
   def distinct_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: js.Array[ColNameUT]): QueryBuilder[TRecord, TResult2] = js.native
   // Others
-  def first(): QueryBuilder[TRecord, UnwrapArrayMember[UnwrapArrayMember[TResult]]] = js.native
+  def first(): QueryBuilder[
+    TRecord, 
+    knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[
+      UnwrapArrayMember[
+        knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]
+      ], 
+      js.UndefOr[scala.Nothing]
+    ]
+  ] = js.native
   // For non-inferrable column selection, we will allow consumer to
   // specify result type and if not widen the result to entire record type with any omissions permitted
   // Others
   def first[TResult2](
     columnNames: (ColumnDescriptor[
       TRecord, 
-      UnwrapArrayMember[UnwrapArrayMember[UnwrapArrayMember[UnwrapArrayMember[TResult]]]]
+      knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[
+        UnwrapArrayMember[
+          knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[
+            UnwrapArrayMember[
+              knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[
+                UnwrapArrayMember[
+                  knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]
+                ], 
+                js.UndefOr[scala.Nothing]
+              ]
+            ], 
+            js.UndefOr[scala.Nothing]
+          ]
+        ], 
+        js.UndefOr[scala.Nothing]
+      ]
     ])*
   ): QueryBuilder[TRecord, TResult2] = js.native
   // Others
@@ -464,7 +516,22 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columnNames: js.Array[
       ColumnDescriptor[
         TRecord, 
-        UnwrapArrayMember[UnwrapArrayMember[UnwrapArrayMember[UnwrapArrayMember[TResult]]]]
+        knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[
+          UnwrapArrayMember[
+            knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[
+              UnwrapArrayMember[
+                knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[
+                  UnwrapArrayMember[
+                    knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]
+                  ], 
+                  js.UndefOr[scala.Nothing]
+                ]
+              ], 
+              js.UndefOr[scala.Nothing]
+            ]
+          ], 
+          js.UndefOr[scala.Nothing]
+        ]
       ]
     ]
   ): QueryBuilder[TRecord, TResult2] = js.native
@@ -484,7 +551,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
         java.lang.String, 
         knexLib.knexLibNumbers.`false`, 
         js.Object, 
-        knexLib.knexLibNumbers.`false`
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
       ]
     ]
   ] = js.native
@@ -581,7 +650,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
         java.lang.String, 
         knexLib.knexLibNumbers.`false`, 
         js.Object, 
-        knexLib.knexLibNumbers.`false`
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
       ]
     ]
   ] = js.native
@@ -831,16 +902,18 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   ): QueryBuilder[TRecord2, TResult2] = js.native
   def leftOuterJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableDescriptor, raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def limit(limit: scala.Double): QueryBuilder[TRecord, TResult] = js.native
-  def max[TResult2](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
-  def max[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
   def max[TResult2](
-    columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
+    columnNames: ((stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]) | Raw[_] | java.lang.String)*
   ): QueryBuilder[TRecord, TResult2] = js.native
-  def min[TResult2](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
-  def min[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
+  def max[TAliases /* <: js.Object */, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("max")
+  def max_TKeyStringTResult2[TKey /* <: java.lang.String */, TResult2](columnNames: TKey*): QueryBuilder[TRecord, TResult2] = js.native
   def min[TResult2](
-    columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
+    columnNames: ((stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]) | Raw[_] | java.lang.String)*
   ): QueryBuilder[TRecord, TResult2] = js.native
+  def min[TAliases /* <: js.Object */, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("min")
+  def min_TKeyStringTResult2[TKey /* <: java.lang.String */, TResult2](columnNames: TKey*): QueryBuilder[TRecord, TResult2] = js.native
   def modify[TRecord2 /* <: js.Object */, TResult2 /* <: js.Object */](callback: QueryCallbackWithArgs[TRecord, _], args: js.Any*): QueryBuilder[TRecord2, TResult2] = js.native
   // Paging
   def offset(offset: scala.Double): QueryBuilder[TRecord, TResult] = js.native
@@ -1205,7 +1278,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
         java.lang.String, 
         knexLib.knexLibNumbers.`false`, 
         js.Object, 
-        knexLib.knexLibNumbers.`false`
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
       ]
     ]
   ] = js.native
@@ -1221,14 +1296,18 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def select_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: (QueryBuilder[TInnerRecord, TInnerResult])*): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("select")
   def select_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def sum[TResult2](columnName: java.lang.String, columnNames: java.lang.String*): QueryBuilder[TRecord, TResult2] = js.native
-  def sum[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
   def sum[TResult2](
-    columnName: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]
+    columnNames: ((stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]) | Raw[_] | java.lang.String)*
   ): QueryBuilder[TRecord, TResult2] = js.native
-  def sumDistinct[TResult2](columnName: java.lang.String): QueryBuilder[TRecord, TResult2] = js.native
-  def sumDistinct[TResult2](columnName: Raw[_]): QueryBuilder[TRecord, TResult2] = js.native
-  def sumDistinct[TResult2](columnName: stdLib.Record[java.lang.String, java.lang.String | Raw[_]]): QueryBuilder[TRecord, TResult2] = js.native
+  def sum[TAliases /* <: js.Object */, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
+  def sumDistinct[TResult2](
+    columnNames: ((stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String] | Raw[_]]) | Raw[_] | java.lang.String)*
+  ): QueryBuilder[TRecord, TResult2] = js.native
+  def sumDistinct[TAliases /* <: js.Object */, TResult2](aliases: TAliases): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("sumDistinct")
+  def sumDistinct_TKeyStringTResult2[TKey /* <: java.lang.String */, TResult2](columnNames: TKey*): QueryBuilder[TRecord, TResult2] = js.native
+  @JSName("sum")
+  def sum_TKeyStringTResult2[TKey /* <: java.lang.String */, TResult2](columnNames: TKey*): QueryBuilder[TRecord, TResult2] = js.native
   def table[TRecord2, TResult2](callback: js.Function): QueryBuilder[TRecord2, TResult2] = js.native
   def table[TRecord2, TResult2](raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def table[TRecord2, TResult2](tableName: AliasDict): QueryBuilder[TRecord2, TResult2] = js.native

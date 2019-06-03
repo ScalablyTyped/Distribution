@@ -6,6 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object knexMod {
+  type AggregationQueryResult[TResult, TIntersectProps2] = ArrayIfAlready[
+    TResult, 
+    TIntersectProps2 | (DeferredKeySelection[
+      js.Any | js.Object, 
+      js.Any | scala.Nothing, 
+      knexLib.knexLibNumbers.`true` | js.Any, 
+      js.Any | js.Object, 
+      knexLib.knexLibNumbers.`false` | js.Any, 
+      (js.Any with TIntersectProps2) | TIntersectProps2, 
+      js.Any | scala.Nothing
+    ])
+  ]
   type AliasDict = Dict[java.lang.String]
   type AlterColumnBuilder = ColumnBuilder
   type AlterTableBuilder = TableBuilder
@@ -14,9 +26,8 @@ package object knexMod {
   type ArrayMember[T] = js.Any
   // Intersection conditionally applied only when TParams is non-empty
   // This is primarily to keep the signatures more intuitive.
-  type AugmentParams[TTarget, TParams] = (js.Object with TTarget with TParams) | TTarget
+  type AugmentParams[TTarget, TParams] = TTarget | (js.Object with TTarget with TParams)
   type ColumnDescriptor[TRecord, TResult] = java.lang.String | Raw[js.Any] | (QueryBuilder[TRecord, TResult]) | Dict[java.lang.String]
-  type CountQueryResult[TResult] = ArrayIfAlready[TResult, Dict[scala.Double | java.lang.String]]
   type CreateTableBuilder = TableBuilder
   // Convenience alias and associated companion namespace for working
   // with DeferredSelection having TSingle=true.
@@ -24,7 +35,15 @@ package object knexMod {
   // When TSingle=true in DeferredSelection, then we are effectively
   // deferring an index access operation (TBase[TKey]) over a potentially
   // unknown initial type of TBase and potentially never initial type of TKey
-  type DeferredIndex[TBase, TKey /* <: java.lang.String */] = DeferredKeySelection[TBase, TKey, knexLib.knexLibNumbers.`false`, js.Object, knexLib.knexLibNumbers.`true`]
+  type DeferredIndex[TBase, TKey /* <: java.lang.String */] = DeferredKeySelection[
+    TBase, 
+    TKey, 
+    knexLib.knexLibNumbers.`false`, 
+    js.Object, 
+    knexLib.knexLibNumbers.`true`, 
+    js.Object, 
+    scala.Nothing
+  ]
   type Dict[T] = org.scalablytyped.runtime.StringDictionary[T]
   type Distinct[TRecord /* <: js.Object */, TResult] = ColumnNameQueryBuilder[TRecord, TResult]
   // If T can't be assigned to TBase fallback to an alternate type TAlt
@@ -86,7 +105,7 @@ package object knexMod {
   // https://stackoverflow.com/a/50375286/476712
   type UnionToIntersection[U] = js.Any
   // If T is unknown then convert to any, else retain original
-  type UnknownToAny[T] = T | js.Array[js.Any]
+  type UnknownToAny[T] = ArrayIfAlready[T, UnwrapArrayMember[T]]
   // If T is an array, get the type of member, else retain original
   type UnwrapArrayMember[T] = T
   //

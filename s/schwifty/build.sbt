@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "schwifty"
-version := "4.0-dt-20190314Z-9e225d"
+version := "4.0-dt-20190314Z-29ed06"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,11 +12,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hapi" % "18.0-dt-20190426Z-4d367a",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-750d70",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190414Z-51779d",
-  "org.scalablytyped" %%% "knex" % "0.17.2-0fce83",
+  "org.scalablytyped" %%% "knex" % "0.17.3-44a460",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-2bedcf",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20190322Z-85fdc8",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
-  "org.scalablytyped" %%% "objection" % "1.6.9-a7d441",
+  "org.scalablytyped" %%% "objection" % "1.6.9-9a0189",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20190322Z-97f9dc",
   "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-9eafd3",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")

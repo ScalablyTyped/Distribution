@@ -1,7 +1,7 @@
 
 # Scala.js typings for github-username
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Get a GitHub username from an email address

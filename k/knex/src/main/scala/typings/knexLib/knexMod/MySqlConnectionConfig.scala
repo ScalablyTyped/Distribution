@@ -13,6 +13,7 @@ trait MySqlConnectionConfig extends js.Object {
   var database: js.UndefOr[java.lang.String] = js.undefined
   var dateStrings: js.UndefOr[scala.Boolean] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
+  var decimalNumbers: js.UndefOr[scala.Boolean] = js.undefined
   var flags: js.UndefOr[java.lang.String] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
   var insecureAuth: js.UndefOr[scala.Boolean] = js.undefined
@@ -42,6 +43,7 @@ object MySqlConnectionConfig {
     database: java.lang.String = null,
     dateStrings: js.UndefOr[scala.Boolean] = js.undefined,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
+    decimalNumbers: js.UndefOr[scala.Boolean] = js.undefined,
     flags: java.lang.String = null,
     host: java.lang.String = null,
     insecureAuth: js.UndefOr[scala.Boolean] = js.undefined,
@@ -66,6 +68,7 @@ object MySqlConnectionConfig {
     if (database != null) __obj.updateDynamic("database")(database)
     if (!js.isUndefined(dateStrings)) __obj.updateDynamic("dateStrings")(dateStrings)
     if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(decimalNumbers)) __obj.updateDynamic("decimalNumbers")(decimalNumbers)
     if (flags != null) __obj.updateDynamic("flags")(flags)
     if (host != null) __obj.updateDynamic("host")(host)
     if (!js.isUndefined(insecureAuth)) __obj.updateDynamic("insecureAuth")(insecureAuth)
