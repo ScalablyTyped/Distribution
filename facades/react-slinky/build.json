@@ -1,0 +1,12 @@
+{
+  "typings": [
+    "react"
+  ],
+  "dependencies": [
+    {
+      "org": "me.shadaj",
+      "artifact": "slinky-web",
+      "version": "0.6.0"
+    }
+  ]
+}
