@@ -75,11 +75,11 @@ trait GetObjectOutput extends js.Object {
     */
   var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
   /**
-    * The Object Lock mode currently in place for this object.
+    * The object lock mode currently in place for this object.
     */
   var ObjectLockMode: js.UndefOr[ObjectLockMode] = js.undefined
   /**
-    * The date and time when this object's Object Lock will expire.
+    * The date and time when this object's object lock will expire.
     */
   var ObjectLockRetainUntilDate: js.UndefOr[ObjectLockRetainUntilDate] = js.undefined
   /**

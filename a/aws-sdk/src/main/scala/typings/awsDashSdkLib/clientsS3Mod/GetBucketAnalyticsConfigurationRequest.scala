@@ -11,7 +11,7 @@ trait GetBucketAnalyticsConfigurationRequest extends js.Object {
     */
   var Bucket: BucketName
   /**
-    * The identifier used to represent an analytics configuration.
+    * The ID that identifies the analytics configuration.
     */
   var Id: AnalyticsId
 }

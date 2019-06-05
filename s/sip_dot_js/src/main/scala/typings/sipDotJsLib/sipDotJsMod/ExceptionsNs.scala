@@ -64,24 +64,6 @@ object ExceptionsNs extends js.Object {
     extends sipDotJsLib.libExceptionsMod.ExceptionsNs.TerminatedSessionError
   
   /**
-    * Indicates that the operation could not be completed given the current transaction state.
-    */
-  @js.native
-  class TransactionStateError ()
-    extends sipDotJsLib.libExceptionsMod.ExceptionsNs.TransactionStateError {
-    def this(message: java.lang.String) = this()
-  }
-  
-  /**
-    * Transport error.
-    */
-  @js.native
-  class TransportError ()
-    extends sipDotJsLib.libExceptionsMod.ExceptionsNs.TransportError {
-    def this(message: java.lang.String) = this()
-  }
-  
-  /**
     * Unsupported session description content type.
     */
   @js.native

@@ -20,6 +20,11 @@ object UtilsNs extends js.Object {
   def createRandomToken(size: scala.Double, base: scala.Double): java.lang.String = js.native
   def defer(): Deferred[_] = js.native
   def escapeUser(user: java.lang.String): java.lang.String = js.native
+  /**
+    * Create a Body given a BodyObj.
+    * @param bodyObj Body Object
+    */
+  def fromBodyObj(bodyObj: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.BodyObj): sipDotJsLib.libCoreMessagesBodyMod.Body = js.native
   def generateFakeSDP(body: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def getCancelReason(code: scala.Double, reason: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def getReasonHeaderValue(code: scala.Double): java.lang.String = js.native
@@ -30,10 +35,10 @@ object UtilsNs extends js.Object {
   def isDecimal(num: java.lang.String): scala.Boolean = js.native
   def newTag(): java.lang.String = js.native
   def newUUID(): java.lang.String = js.native
-  def normalizeTarget(target: java.lang.String): js.UndefOr[sipDotJsLib.libURIMod.URI] = js.native
-  def normalizeTarget(target: java.lang.String, domain: java.lang.String): js.UndefOr[sipDotJsLib.libURIMod.URI] = js.native
-  def normalizeTarget(target: sipDotJsLib.libURIMod.URI): js.UndefOr[sipDotJsLib.libURIMod.URI] = js.native
-  def normalizeTarget(target: sipDotJsLib.libURIMod.URI, domain: java.lang.String): js.UndefOr[sipDotJsLib.libURIMod.URI] = js.native
+  def normalizeTarget(target: java.lang.String): js.UndefOr[sipDotJsLib.libCoreMessagesUriMod.URI] = js.native
+  def normalizeTarget(target: java.lang.String, domain: java.lang.String): js.UndefOr[sipDotJsLib.libCoreMessagesUriMod.URI] = js.native
+  def normalizeTarget(target: sipDotJsLib.libCoreMessagesUriMod.URI): js.UndefOr[sipDotJsLib.libCoreMessagesUriMod.URI] = js.native
+  def normalizeTarget(target: sipDotJsLib.libCoreMessagesUriMod.URI, domain: java.lang.String): js.UndefOr[sipDotJsLib.libCoreMessagesUriMod.URI] = js.native
   def reducePromises(
     arr: js.Array[
       sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifier
@@ -42,5 +47,10 @@ object UtilsNs extends js.Object {
   ): js.Promise[_] = js.native
   def sipErrorCause(statusCode: scala.Double): java.lang.String = js.native
   def str_utf8_length(str: java.lang.String): scala.Double = js.native
+  /**
+    * Create a BodyObj given a Body.
+    * @param bodyObj Body Object
+    */
+  def toBodyObj(body: sipDotJsLib.libCoreMessagesBodyMod.Body): sipDotJsLib.libSessionDashDescriptionDashHandlerMod.BodyObj = js.native
 }
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for sanitize-html
 
-Typings are for version 1.18.2
+Typings are for version 1.20.1
 
 ## Library description:
 Clean up user-submitted HTML, preserving whitelisted elements and whitelisted attributes on a per-element basis
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for sanitize-html 1.18.2
+// Type definitions for sanitize-html 1.20.1
 // Project: https://github.com/punkave/sanitize-html
 // Definitions by: Rogier Schouten <https://github.com/rogierschouten>
 //                 Afshin Darian <https://github.com/afshin>
@@ -44,6 +44,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Will Gibson <https://github.com/WillGibson>
 //                 A penguin <https://github.com/sirMerr>
 //                 Johan Davidsson <https://github.com/johandavidson>
+//                 Jianrong Yu <https://github.com/YuJianrong>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

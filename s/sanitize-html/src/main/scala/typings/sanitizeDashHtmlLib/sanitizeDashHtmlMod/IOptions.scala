@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IOptions extends js.Object {
+  var allowIframeRelativeUrls: js.UndefOr[scala.Boolean] = js.undefined
   var allowProtocolRelative: js.UndefOr[scala.Boolean] = js.undefined
   var allowedAttributes: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | scala.Boolean
@@ -27,12 +28,14 @@ trait IOptions extends js.Object {
   var nonTextTags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var parser: js.UndefOr[htmlparser2Lib.htmlparser2Mod.Options] = js.undefined
   var selfClosing: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var textFilter: js.UndefOr[js.Function1[/* text */ java.lang.String, java.lang.String]] = js.undefined
   var transformTags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String | Transformer]] = js.undefined
 }
 
 object IOptions {
   @scala.inline
   def apply(
+    allowIframeRelativeUrls: js.UndefOr[scala.Boolean] = js.undefined,
     allowProtocolRelative: js.UndefOr[scala.Boolean] = js.undefined,
     allowedAttributes: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | scala.Boolean = null,
     allowedClasses: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] | scala.Boolean = null,
@@ -46,9 +49,11 @@ object IOptions {
     nonTextTags: js.Array[java.lang.String] = null,
     parser: htmlparser2Lib.htmlparser2Mod.Options = null,
     selfClosing: js.Array[java.lang.String] = null,
+    textFilter: /* text */ java.lang.String => java.lang.String = null,
     transformTags: org.scalablytyped.runtime.StringDictionary[java.lang.String | Transformer] = null
   ): IOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowIframeRelativeUrls)) __obj.updateDynamic("allowIframeRelativeUrls")(allowIframeRelativeUrls)
     if (!js.isUndefined(allowProtocolRelative)) __obj.updateDynamic("allowProtocolRelative")(allowProtocolRelative)
     if (allowedAttributes != null) __obj.updateDynamic("allowedAttributes")(allowedAttributes.asInstanceOf[js.Any])
     if (allowedClasses != null) __obj.updateDynamic("allowedClasses")(allowedClasses.asInstanceOf[js.Any])
@@ -62,6 +67,7 @@ object IOptions {
     if (nonTextTags != null) __obj.updateDynamic("nonTextTags")(nonTextTags)
     if (parser != null) __obj.updateDynamic("parser")(parser)
     if (selfClosing != null) __obj.updateDynamic("selfClosing")(selfClosing)
+    if (textFilter != null) __obj.updateDynamic("textFilter")(js.Any.fromFunction1(textFilter))
     if (transformTags != null) __obj.updateDynamic("transformTags")(transformTags)
     __obj.asInstanceOf[IOptions]
   }

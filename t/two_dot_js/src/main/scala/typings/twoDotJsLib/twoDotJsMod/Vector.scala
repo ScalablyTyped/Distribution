@@ -15,8 +15,8 @@ class Vector protected () extends js.Object {
   def addSelf(v: Vector): this.type = js.native
   def clear(): this.type = js.native
   def copy(v: Vector): this.type = js.native
-  def distanceSquared(v: Vector): scala.Double = js.native
   def distanceTo(v: Vector): scala.Double = js.native
+  def distanceToSquared(v: Vector): scala.Double = js.native
   def divideScalar(value: scala.Double): this.type = js.native
   def dot(v: Vector): scala.Double = js.native
   def equals(v: Vector): scala.Boolean = js.native

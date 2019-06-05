@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetBucketLoggingOutput extends js.Object {
+  /**
+    * 
+    */
   var LoggingEnabled: js.UndefOr[LoggingEnabled] = js.undefined
 }
 

@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NotificationConfigurationFilter extends js.Object {
+  /**
+    * 
+    */
   var Key: js.UndefOr[S3KeyFilter] = js.undefined
 }
 

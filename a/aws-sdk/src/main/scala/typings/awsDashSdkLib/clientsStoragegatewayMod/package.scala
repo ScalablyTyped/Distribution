@@ -101,6 +101,13 @@ package object clientsStoragegatewayMod {
   type Role = java.lang.String
   type SMBFileShareInfoList = js.Array[SMBFileShareInfo]
   type SMBGuestPassword = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ClientSpecified
+    - awsDashSdkLib.awsDashSdkLibStrings.MandatorySigning
+    - awsDashSdkLib.awsDashSdkLibStrings.MandatoryEncryption
+    - java.lang.String
+  */
+  type SMBSecurityStrategy = _SMBSecurityStrategy | java.lang.String
   type SnapshotDescription = java.lang.String
   type SnapshotId = java.lang.String
   type Squash = java.lang.String

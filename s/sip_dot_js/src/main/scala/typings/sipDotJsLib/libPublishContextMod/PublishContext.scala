@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class PublishContext protected ()
   extends sipDotJsLib.libClientContextMod.ClientContext {
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, event: java.lang.String) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, event: java.lang.String) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, event: java.lang.String) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, event: java.lang.String, options: js.Any) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, event: java.lang.String, options: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, event: java.lang.String, options: js.Any) = this()
   var event: js.Any = js.native
   var options: js.Any = js.native
   var pubRequestBody: js.Any = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rmc-picker"
-version := "5.0.8-8eeced"
+version := "5.0.9-8eeced"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

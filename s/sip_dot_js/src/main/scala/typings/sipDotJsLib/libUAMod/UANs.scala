@@ -15,10 +15,7 @@ object UANs extends js.Object {
     var allowLegacyNotifications: js.UndefOr[scala.Boolean] = js.undefined
     var allowOutOfDialogRefers: js.UndefOr[scala.Boolean] = js.undefined
     var authenticationFactory: js.UndefOr[
-        js.Function1[
-          /* ua */ sipDotJsLib.libUAMod.UA, 
-          sipDotJsLib.libDigestAuthenticationMod.DigestAuthentication | _
-        ]
+        js.Function1[/* ua */ sipDotJsLib.libUAMod.UA, sipDotJsLib.libCoreMod.DigestAuthentication | _]
       ] = js.undefined
     var authorizationUser: js.UndefOr[java.lang.String] = js.undefined
     var autostart: js.UndefOr[scala.Boolean] = js.undefined
@@ -50,10 +47,10 @@ object UANs extends js.Object {
       ] = js.undefined
     var sipjsId: js.UndefOr[java.lang.String] = js.undefined
     var transportConstructor: js.UndefOr[
-        org.scalablytyped.runtime.Instantiable2[/* logger */ js.Any, /* options */ js.Any, sipDotJsLib.libTransportMod.Transport]
+        org.scalablytyped.runtime.Instantiable2[/* logger */ js.Any, /* options */ js.Any, sipDotJsLib.libCoreMod.Transport]
       ] = js.undefined
     var transportOptions: js.UndefOr[js.Any] = js.undefined
-    var uri: js.UndefOr[java.lang.String | sipDotJsLib.libURIMod.URI] = js.undefined
+    var uri: js.UndefOr[java.lang.String | sipDotJsLib.libCoreMod.URI] = js.undefined
     var usePreloadedRoute: js.UndefOr[scala.Boolean] = js.undefined
     var userAgentString: js.UndefOr[java.lang.String] = js.undefined
     var viaHost: js.UndefOr[java.lang.String] = js.undefined

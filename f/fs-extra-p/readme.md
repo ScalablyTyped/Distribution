@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-extra-p
 
-Typings are for version 7.0.1
+Typings are for version 8.0.2
 
 ## Library description:
 fs-extra module promisified with bluebird

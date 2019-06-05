@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AbortIncompleteMultipartUpload extends js.Object {
   /**
-    * Indicates the number of days that must pass since initiation for Lifecycle to abort an Incomplete Multipart Upload.
+    * Specifies the number of days after which Amazon S3 aborts an incomplete multipart upload.
     */
   var DaysAfterInitiation: js.UndefOr[DaysAfterInitiation] = js.undefined
 }

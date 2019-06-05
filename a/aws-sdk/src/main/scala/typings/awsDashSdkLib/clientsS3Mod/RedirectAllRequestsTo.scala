@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait RedirectAllRequestsTo extends js.Object {
   /**
-    * Name of the host where requests will be redirected.
+    * Name of the host where requests are redirected.
     */
   var HostName: awsDashSdkLib.clientsS3Mod.HostName
   /**
-    * Protocol to use (http, https) when redirecting requests. The default is the protocol that is used in the original request.
+    * Protocol to use when redirecting requests. The default is the protocol that is used in the original request.
     */
   var Protocol: js.UndefOr[Protocol] = js.undefined
 }

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/lib/Web/Transport", "Transport")
 @js.native
 class Transport protected ()
-  extends sipDotJsLib.libTransportMod.Transport {
-  def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger) = this()
-  def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger, options: js.Any) = this()
+  extends sipDotJsLib.libCoreMod.Transport {
+  def this(logger: sipDotJsLib.libCoreMod.Logger) = this()
+  def this(logger: sipDotJsLib.libCoreMod.Logger, options: js.Any) = this()
   var WebSocket: js.Any = js.native
   var boundOnClose: js.Any = js.native
   var boundOnError: js.Any = js.native
@@ -110,6 +110,7 @@ class Transport protected ()
     * Stop sending keep-alives.
     */
   var stopSendingKeepAlives: js.Any = js.native
+  var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
   var ws: js.Any = js.native
   /**
     * Connect socket.
@@ -125,8 +126,8 @@ class Transport protected ()
     * @param {Object} [options]
     * @returns {Promise}
     */
-  /* protected */ def sendPromise(msg: sipDotJsLib.libSIPMessageMod.OutgoingRequest): js.Promise[sipDotJsLib.Anon_Msg] = js.native
-  /* protected */ def sendPromise(msg: sipDotJsLib.libSIPMessageMod.OutgoingRequest, options: js.Any): js.Promise[sipDotJsLib.Anon_Msg] = js.native
+  /* protected */ def sendPromise(msg: sipDotJsLib.libCoreMod.OutgoingRequestMessage): js.Promise[sipDotJsLib.Anon_Msg] = js.native
+  /* protected */ def sendPromise(msg: sipDotJsLib.libCoreMod.OutgoingRequestMessage, options: js.Any): js.Promise[sipDotJsLib.Anon_Msg] = js.native
 }
 
 /* static members */

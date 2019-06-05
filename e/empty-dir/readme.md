@@ -1,7 +1,7 @@
 
 # Scala.js typings for empty-dir
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Check if a directory is empty.
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for empty-dir 1.0
+// Type definitions for empty-dir 2.0
 // Project: https://github.com/gulpjs/empty-dir
 // Definitions by: BendingBender <https://github.com/BendingBender>
+//                 Daniel Cassidy <https://github.com/djcsdy>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

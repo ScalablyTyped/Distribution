@@ -1,7 +1,7 @@
 
 # Scala.js typings for applicationinsights
 
-Typings are for version 1.3.1
+Typings are for version 1.4.0
 
 ## Library description:
 Microsoft Application Insights module for Node.js
@@ -55,6 +55,16 @@ These comments are from the typescript definitions and might be useful:
  */
 /**
  * Encapsulates options passed into client.flush() function
+ */
+/**
+ * Helper class to manage parsing and validation of traceparent header. Also handles hierarchical
+ * back-compatibility headers generated from traceparent. W3C traceparent spec is documented at
+ * https://www.w3.org/TR/trace-context/#traceparent-field
+ */
+/**
+ * Helper class to manage parsing and strict-validation of tracestate header. W3C tracestate spec
+ * is documented at https://www.w3.org/TR/trace-context/#header-value
+ * @class Tracestate
  */
 
 ```

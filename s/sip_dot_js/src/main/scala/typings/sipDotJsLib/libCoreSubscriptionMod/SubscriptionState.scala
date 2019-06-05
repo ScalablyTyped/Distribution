@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/subscription", "SubscriptionState")
+@JSImport("sip.js/lib/core/subscription", "SubscriptionState")
 @js.native
 object SubscriptionState extends js.Object {
   /* "Active" */ val Active: sipDotJsLib.libCoreSubscriptionSubscriptionMod.SubscriptionState.Active with java.lang.String = js.native

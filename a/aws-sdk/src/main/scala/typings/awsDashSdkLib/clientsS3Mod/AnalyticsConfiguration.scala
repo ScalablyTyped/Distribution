@@ -11,11 +11,11 @@ trait AnalyticsConfiguration extends js.Object {
     */
   var Filter: js.UndefOr[AnalyticsFilter] = js.undefined
   /**
-    * The identifier used to represent an analytics configuration.
+    * The ID that identifies the analytics configuration.
     */
   var Id: AnalyticsId
   /**
-    * If present, it indicates that data related to access patterns will be collected and made available to analyze the tradeoffs between different storage classes.
+    *  Contains data related to access patterns to be collected and made available to analyze the tradeoffs between different storage classes. 
     */
   var StorageClassAnalysis: awsDashSdkLib.clientsS3Mod.StorageClassAnalysis
 }

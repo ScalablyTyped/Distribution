@@ -12,6 +12,7 @@ trait ISourceCreationOptions
   var flow: js.UndefOr[
     stripeLib.stripeLibStrings.redirect | stripeLib.stripeLibStrings.receiver | stripeLib.stripeLibStrings.code_verification | stripeLib.stripeLibStrings.none
   ] = js.undefined
+  var ideal: js.UndefOr[stripeLib.Anon_Bank] = js.undefined
   var mandate: js.UndefOr[stripeLib.Anon_Acceptance] = js.undefined
   @JSName("metadata")
   var metadata_ISourceCreationOptions: js.UndefOr[stripeLib.stripeMod.IMetadata] = js.undefined
@@ -32,6 +33,7 @@ object ISourceCreationOptions {
     currency: java.lang.String = null,
     expand: js.Array[java.lang.String] = null,
     flow: stripeLib.stripeLibStrings.redirect | stripeLib.stripeLibStrings.receiver | stripeLib.stripeLibStrings.code_verification | stripeLib.stripeLibStrings.none = null,
+    ideal: stripeLib.Anon_Bank = null,
     include: js.Array[java.lang.String] = null,
     mandate: stripeLib.Anon_Acceptance = null,
     metadata: stripeLib.stripeMod.IMetadata = null,
@@ -48,6 +50,7 @@ object ISourceCreationOptions {
     if (currency != null) __obj.updateDynamic("currency")(currency)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
+    if (ideal != null) __obj.updateDynamic("ideal")(ideal)
     if (include != null) __obj.updateDynamic("include")(include)
     if (mandate != null) __obj.updateDynamic("mandate")(mandate)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)

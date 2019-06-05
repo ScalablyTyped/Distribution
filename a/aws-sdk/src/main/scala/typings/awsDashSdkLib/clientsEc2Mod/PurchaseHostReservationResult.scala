@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PurchaseHostReservationResult extends js.Object {
   /**
-    * Unique, case-sensitive identifier you provide to ensure idempotency of the request. For more information, see How to Ensure Idempotency in the Amazon Elastic Compute Cloud User Guide.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   /**

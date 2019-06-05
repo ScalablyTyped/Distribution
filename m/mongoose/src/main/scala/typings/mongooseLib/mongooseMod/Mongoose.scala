@@ -22,6 +22,7 @@ trait Mongoose extends js.Object {
   val SchemaTypeOptsNs: js.Any = js.native
   val TypesNs: js.Any = js.native
   var connection: Connection = js.native
+  var connections: js.Array[Connection] = js.native
   var models: org.scalablytyped.runtime.StringDictionary[Model[_, js.Object]] = js.native
   var version: java.lang.String = js.native
   def connect(uris: java.lang.String): js.Promise[Mongoose] = js.native

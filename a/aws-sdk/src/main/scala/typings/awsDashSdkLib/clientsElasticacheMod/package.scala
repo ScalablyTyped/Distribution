@@ -52,10 +52,28 @@ package object clientsElasticacheMod {
   type NodeGroupConfigurationList = js.Array[NodeGroupConfiguration]
   type NodeGroupList = js.Array[NodeGroup]
   type NodeGroupMemberList = js.Array[NodeGroupMember]
+  type NodeGroupMemberUpdateStatusList = js.Array[NodeGroupMemberUpdateStatus]
+  type NodeGroupUpdateStatusList = js.Array[NodeGroupUpdateStatus]
   type NodeGroupsToRemoveList = js.Array[AllowedNodeGroupId]
   type NodeGroupsToRetainList = js.Array[AllowedNodeGroupId]
   type NodeSnapshotList = js.Array[NodeSnapshot]
   type NodeTypeList = js.Array[String]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.system
+    - awsDashSdkLib.awsDashSdkLibStrings.customer
+    - java.lang.String
+  */
+  type NodeUpdateInitiatedBy = _NodeUpdateInitiatedBy | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`not-applied`
+    - awsDashSdkLib.awsDashSdkLibStrings.`waiting-to-start`
+    - awsDashSdkLib.awsDashSdkLibStrings.`in-progress`
+    - awsDashSdkLib.awsDashSdkLibStrings.stopping
+    - awsDashSdkLib.awsDashSdkLibStrings.stopped
+    - awsDashSdkLib.awsDashSdkLibStrings.complete
+    - java.lang.String
+  */
+  type NodeUpdateStatus = _NodeUpdateStatus | java.lang.String
   type ParameterNameValueList = js.Array[ParameterNameValue]
   type ParametersList = js.Array[Parameter]
   /* Rewritten from type alias, can be one of: 
@@ -65,15 +83,42 @@ package object clientsElasticacheMod {
   */
   type PendingAutomaticFailoverStatus = _PendingAutomaticFailoverStatus | java.lang.String
   type PreferredAvailabilityZoneList = js.Array[String]
+  type ProcessedUpdateActionList = js.Array[ProcessedUpdateAction]
   type RecurringChargeList = js.Array[RecurringCharge]
   type RemoveReplicasList = js.Array[String]
   type ReplicaConfigurationList = js.Array[ConfigureShard]
+  type ReplicationGroupIdList = js.Array[String]
   type ReplicationGroupList = js.Array[ReplicationGroup]
   type ReservedCacheNodeList = js.Array[ReservedCacheNode]
   type ReservedCacheNodesOfferingList = js.Array[ReservedCacheNodesOffering]
   type ReshardingConfigurationList = js.Array[ReshardingConfiguration]
   type SecurityGroupIdsList = js.Array[String]
   type SecurityGroupMembershipList = js.Array[SecurityGroupMembership]
+  type ServiceUpdateList = js.Array[ServiceUpdate]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.critical
+    - awsDashSdkLib.awsDashSdkLibStrings.important
+    - awsDashSdkLib.awsDashSdkLibStrings.medium
+    - awsDashSdkLib.awsDashSdkLibStrings.low
+    - java.lang.String
+  */
+  type ServiceUpdateSeverity = _ServiceUpdateSeverity | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.available
+    - awsDashSdkLib.awsDashSdkLibStrings.cancelled
+    - awsDashSdkLib.awsDashSdkLibStrings.expired
+    - java.lang.String
+  */
+  type ServiceUpdateStatus = _ServiceUpdateStatus | java.lang.String
+  type ServiceUpdateStatusList = js.Array[ServiceUpdateStatus]
+  type ServiceUpdateType = awsDashSdkLib.awsDashSdkLibStrings.`security-update` | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.yes
+    - awsDashSdkLib.awsDashSdkLibStrings.no
+    - awsDashSdkLib.awsDashSdkLibStrings.`n/a`
+    - java.lang.String
+  */
+  type SlaMet = _SlaMet | java.lang.String
   type SnapshotArnsList = js.Array[String]
   type SnapshotList = js.Array[Snapshot]
   /* Rewritten from type alias, can be one of: 
@@ -90,6 +135,19 @@ package object clientsElasticacheMod {
   type SubnetList = js.Array[Subnet]
   type TStamp = stdLib.Date
   type TagList = js.Array[Tag]
+  type UnprocessedUpdateActionList = js.Array[UnprocessedUpdateAction]
+  type UpdateActionList = js.Array[UpdateAction]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`not-applied`
+    - awsDashSdkLib.awsDashSdkLibStrings.`waiting-to-start`
+    - awsDashSdkLib.awsDashSdkLibStrings.`in-progress`
+    - awsDashSdkLib.awsDashSdkLibStrings.stopping
+    - awsDashSdkLib.awsDashSdkLibStrings.stopped
+    - awsDashSdkLib.awsDashSdkLibStrings.complete
+    - java.lang.String
+  */
+  type UpdateActionStatus = _UpdateActionStatus | java.lang.String
+  type UpdateActionStatusList = js.Array[UpdateActionStatus]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2012-11-15`
     - awsDashSdkLib.awsDashSdkLibStrings.`2014-03-24`

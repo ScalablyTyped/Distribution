@@ -11,7 +11,7 @@ trait DeleteObjectRequest extends js.Object {
     */
   var Bucket: BucketName
   /**
-    * Indicates whether S3 Object Lock should bypass Governance-mode restrictions to process this operation.
+    * Indicates whether Amazon S3 object lock should bypass governance-mode restrictions to process this operation.
     */
   var BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined
   /**

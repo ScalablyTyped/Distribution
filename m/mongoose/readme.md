@@ -61,6 +61,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Erik Lopez <https://github.com/niuware>
 //                 Vlad Melnik <https://github.com/vladmel1234>
 //                 Jarom Loveridge <https://github.com/jloveridge>
+//                 Grimmer Kang <https://github.com/grimmer0125>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

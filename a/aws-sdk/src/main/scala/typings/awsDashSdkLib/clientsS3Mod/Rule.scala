@@ -6,23 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Rule extends js.Object {
+  /**
+    * 
+    */
   var AbortIncompleteMultipartUpload: js.UndefOr[AbortIncompleteMultipartUpload] = js.undefined
   /**
     * 
     */
   var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
   /**
-    * Unique identifier for the rule. The value cannot be longer than 255 characters.
+    * Unique identifier for the rule. The value can't be longer than 255 characters.
     */
   var ID: js.UndefOr[ID] = js.undefined
+  /**
+    * 
+    */
   var NoncurrentVersionExpiration: js.UndefOr[NoncurrentVersionExpiration] = js.undefined
+  /**
+    * 
+    */
   var NoncurrentVersionTransition: js.UndefOr[NoncurrentVersionTransition] = js.undefined
   /**
-    * Prefix identifying one or more objects to which the rule applies.
+    * Object key prefix that identifies one or more objects to which this rule applies.
     */
   var Prefix: awsDashSdkLib.clientsS3Mod.Prefix
   /**
-    * If 'Enabled', the rule is currently being applied. If 'Disabled', the rule is not currently being applied.
+    * If Enabled, the rule is currently being applied. If Disabled, the rule is not currently being applied.
     */
   var Status: ExpirationStatus
   /**

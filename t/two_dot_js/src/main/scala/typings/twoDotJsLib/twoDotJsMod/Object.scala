@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - Path
   - Group
+  - Text
 */
 trait Object extends js.Object
 

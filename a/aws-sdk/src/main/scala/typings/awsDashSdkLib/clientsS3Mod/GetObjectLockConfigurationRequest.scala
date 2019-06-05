@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetObjectLockConfigurationRequest extends js.Object {
   /**
-    * The bucket whose Object Lock configuration you want to retrieve.
+    * The bucket whose object lock configuration you want to retrieve.
     */
   var Bucket: BucketName
 }

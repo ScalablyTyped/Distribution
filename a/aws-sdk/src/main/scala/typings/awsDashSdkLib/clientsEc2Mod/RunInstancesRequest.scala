@@ -11,7 +11,7 @@ trait RunInstancesRequest extends js.Object {
     */
   var AdditionalInfo: js.UndefOr[String] = js.undefined
   /**
-    * The block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
+    * The block device mapping entries.
     */
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingRequestList] = js.undefined
   /**

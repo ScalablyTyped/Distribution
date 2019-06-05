@@ -79,6 +79,18 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `alarm-exclamation`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `alarm-plus`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `alarm-snooze`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait algolia
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -100,6 +112,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait `align-right`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `align-slash`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -535,6 +551,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `bags-shopping`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `balance-scale`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -667,6 +687,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `bell-exclamation`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `bell-plus`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `bell-school`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -692,6 +720,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait bicycle
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait biking
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `biking-mountain`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -851,6 +887,46 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `border-all`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `border-bottom`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `border-inner`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `border-left`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `border-none`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `border-outer`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `border-right`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `border-style`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `border-style-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `border-top`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `bow-arrow`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -947,6 +1023,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `bring-forward`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `bring-front`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `broadcast-tower`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -992,6 +1076,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait `bullseye-pointer`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `burger-soda`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -1139,7 +1227,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `car-building`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `car-bump`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `car-bus`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -1216,6 +1312,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait carrot
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait cars
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -1727,6 +1827,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait coin
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait coins
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -1892,6 +1996,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait connectdevelop
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait construction
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -2231,6 +2339,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait digging
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `digital-ocean`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -2375,6 +2487,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait drone
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `drone-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait dropbox
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -2396,6 +2516,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait drupal
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait dryer
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `dryer-alt`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -2671,12 +2799,20 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconPrefix
   
   @js.native
+  sealed trait fan
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `fantasy-flight-games`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
   sealed trait far
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconPrefix
+  
+  @js.native
+  sealed trait farm
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
   sealed trait fas
@@ -2832,6 +2968,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait `file-prescription`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `file-search`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -3055,6 +3195,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `font-case`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait fonticons
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -3148,6 +3292,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait `galactic-senate`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `game-board`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `game-board-alt`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -3252,6 +3404,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait `glass-cheers`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `glass-citrus`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -3491,6 +3647,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait h4
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `hacker-news`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -3636,6 +3796,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait hashtag
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `hat-chef`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -3799,6 +3963,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `horizontal-rule`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait hornbill
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -3908,6 +4076,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait icicles
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait icons
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `icons-alt`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -4088,6 +4264,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait kaggle
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait kerning
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -4312,6 +4492,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait line
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `line-columns`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `line-height`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -4787,6 +4975,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `money-check-edit`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `money-check-edit-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `monitor-heart-rate`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -4835,11 +5031,19 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait mug
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `mug-hot`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
   sealed trait `mug-marshmallows`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `mug-tea`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -4872,10 +5076,6 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait nimblr
-    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
-  
-  @js.native
-  sealed trait `nintendo-switch`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -4979,6 +5179,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait overline
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `page-break`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait page4
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -5032,6 +5240,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait paragraph
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `paragraph-rtl`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -5199,6 +5411,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `phone-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `phone-laptop`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `phone-office`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -5215,7 +5435,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `phone-square-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `phone-volume`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `photo-video`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -5615,6 +5843,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `remove-format`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait renren
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -5912,6 +6144,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait sellsy
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `send-back`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `send-backward`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -6271,6 +6511,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait snooze
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `snow-blowing`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -6315,7 +6559,19 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `sort-alpha-down-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `sort-alpha-up`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-alpha-up-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-alt`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -6323,7 +6579,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `sort-amount-down-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `sort-amount-up`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-amount-up-alt`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -6335,7 +6599,47 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `sort-numeric-down-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `sort-numeric-up`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-numeric-up-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-shapes-down`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-shapes-down-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-shapes-up`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-shapes-up-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-size-down`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-size-down-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-size-up`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `sort-size-up-alt`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -6367,11 +6671,19 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait sparkles
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait speakap
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
   sealed trait `speaker-deck`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `spell-check`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -6635,6 +6947,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait sunglasses
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait sunrise
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -6871,7 +7187,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait text
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `text-height`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `text-size`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -7140,6 +7464,14 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait `trash-restore-alt`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `trash-undo`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `trash-undo-alt`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -7619,6 +7951,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait voicemail
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait volcano
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -7695,6 +8031,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait washer
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait watch
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
@@ -7715,7 +8055,15 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
+  sealed trait `wave-sine`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
   sealed trait `wave-square`
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `wave-triangle`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -7800,6 +8148,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   
   @js.native
   sealed trait wind
+    extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
+  
+  @js.native
+  sealed trait `wind-turbine`
     extends atFortawesomeFontawesomeDashCommonDashTypesLib.atFortawesomeFontawesomeDashCommonDashTypesMod.IconName
   
   @js.native
@@ -8003,6 +8355,12 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `alarm-clock`: `alarm-clock` = "alarm-clock".asInstanceOf[`alarm-clock`]
   @scala.inline
+  def `alarm-exclamation`: `alarm-exclamation` = "alarm-exclamation".asInstanceOf[`alarm-exclamation`]
+  @scala.inline
+  def `alarm-plus`: `alarm-plus` = "alarm-plus".asInstanceOf[`alarm-plus`]
+  @scala.inline
+  def `alarm-snooze`: `alarm-snooze` = "alarm-snooze".asInstanceOf[`alarm-snooze`]
+  @scala.inline
   def algolia: algolia = "algolia".asInstanceOf[algolia]
   @scala.inline
   def alicorn: alicorn = "alicorn".asInstanceOf[alicorn]
@@ -8014,6 +8372,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `align-left`: `align-left` = "align-left".asInstanceOf[`align-left`]
   @scala.inline
   def `align-right`: `align-right` = "align-right".asInstanceOf[`align-right`]
+  @scala.inline
+  def `align-slash`: `align-slash` = "align-slash".asInstanceOf[`align-slash`]
   @scala.inline
   def alipay: alipay = "alipay".asInstanceOf[alipay]
   @scala.inline
@@ -8231,6 +8591,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `badger-honey`: `badger-honey` = "badger-honey".asInstanceOf[`badger-honey`]
   @scala.inline
+  def `bags-shopping`: `bags-shopping` = "bags-shopping".asInstanceOf[`bags-shopping`]
+  @scala.inline
   def `balance-scale`: `balance-scale` = "balance-scale".asInstanceOf[`balance-scale`]
   @scala.inline
   def `balance-scale-left`: `balance-scale-left` = "balance-scale-left".asInstanceOf[`balance-scale-left`]
@@ -8297,6 +8659,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def bell: bell = "bell".asInstanceOf[bell]
   @scala.inline
+  def `bell-exclamation`: `bell-exclamation` = "bell-exclamation".asInstanceOf[`bell-exclamation`]
+  @scala.inline
+  def `bell-plus`: `bell-plus` = "bell-plus".asInstanceOf[`bell-plus`]
+  @scala.inline
   def `bell-school`: `bell-school` = "bell-school".asInstanceOf[`bell-school`]
   @scala.inline
   def `bell-school-slash`: `bell-school-slash` = "bell-school-slash".asInstanceOf[`bell-school-slash`]
@@ -8310,6 +8676,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def bible: bible = "bible".asInstanceOf[bible]
   @scala.inline
   def bicycle: bicycle = "bicycle".asInstanceOf[bicycle]
+  @scala.inline
+  def biking: biking = "biking".asInstanceOf[biking]
+  @scala.inline
+  def `biking-mountain`: `biking-mountain` = "biking-mountain".asInstanceOf[`biking-mountain`]
   @scala.inline
   def bimobject: bimobject = "bimobject".asInstanceOf[bimobject]
   @scala.inline
@@ -8389,6 +8759,26 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def bootstrap: bootstrap = "bootstrap".asInstanceOf[bootstrap]
   @scala.inline
+  def `border-all`: `border-all` = "border-all".asInstanceOf[`border-all`]
+  @scala.inline
+  def `border-bottom`: `border-bottom` = "border-bottom".asInstanceOf[`border-bottom`]
+  @scala.inline
+  def `border-inner`: `border-inner` = "border-inner".asInstanceOf[`border-inner`]
+  @scala.inline
+  def `border-left`: `border-left` = "border-left".asInstanceOf[`border-left`]
+  @scala.inline
+  def `border-none`: `border-none` = "border-none".asInstanceOf[`border-none`]
+  @scala.inline
+  def `border-outer`: `border-outer` = "border-outer".asInstanceOf[`border-outer`]
+  @scala.inline
+  def `border-right`: `border-right` = "border-right".asInstanceOf[`border-right`]
+  @scala.inline
+  def `border-style`: `border-style` = "border-style".asInstanceOf[`border-style`]
+  @scala.inline
+  def `border-style-alt`: `border-style-alt` = "border-style-alt".asInstanceOf[`border-style-alt`]
+  @scala.inline
+  def `border-top`: `border-top` = "border-top".asInstanceOf[`border-top`]
+  @scala.inline
   def `bow-arrow`: `bow-arrow` = "bow-arrow".asInstanceOf[`bow-arrow`]
   @scala.inline
   def `bowling-ball`: `bowling-ball` = "bowling-ball".asInstanceOf[`bowling-ball`]
@@ -8437,6 +8827,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `briefcase-medical`: `briefcase-medical` = "briefcase-medical".asInstanceOf[`briefcase-medical`]
   @scala.inline
+  def `bring-forward`: `bring-forward` = "bring-forward".asInstanceOf[`bring-forward`]
+  @scala.inline
+  def `bring-front`: `bring-front` = "bring-front".asInstanceOf[`bring-front`]
+  @scala.inline
   def `broadcast-tower`: `broadcast-tower` = "broadcast-tower".asInstanceOf[`broadcast-tower`]
   @scala.inline
   def broom: broom = "broom".asInstanceOf[broom]
@@ -8460,6 +8854,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `bullseye-arrow`: `bullseye-arrow` = "bullseye-arrow".asInstanceOf[`bullseye-arrow`]
   @scala.inline
   def `bullseye-pointer`: `bullseye-pointer` = "bullseye-pointer".asInstanceOf[`bullseye-pointer`]
+  @scala.inline
+  def `burger-soda`: `burger-soda` = "burger-soda".asInstanceOf[`burger-soda`]
   @scala.inline
   def burn: burn = "burn".asInstanceOf[burn]
   @scala.inline
@@ -8533,7 +8929,11 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `car-battery`: `car-battery` = "car-battery".asInstanceOf[`car-battery`]
   @scala.inline
+  def `car-building`: `car-building` = "car-building".asInstanceOf[`car-building`]
+  @scala.inline
   def `car-bump`: `car-bump` = "car-bump".asInstanceOf[`car-bump`]
+  @scala.inline
+  def `car-bus`: `car-bus` = "car-bus".asInstanceOf[`car-bus`]
   @scala.inline
   def `car-crash`: `car-crash` = "car-crash".asInstanceOf[`car-crash`]
   @scala.inline
@@ -8572,6 +8972,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `caret-up`: `caret-up` = "caret-up".asInstanceOf[`caret-up`]
   @scala.inline
   def carrot: carrot = "carrot".asInstanceOf[carrot]
+  @scala.inline
+  def cars: cars = "cars".asInstanceOf[cars]
   @scala.inline
   def `cart-arrow-down`: `cart-arrow-down` = "cart-arrow-down".asInstanceOf[`cart-arrow-down`]
   @scala.inline
@@ -8825,6 +9227,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def cogs: cogs = "cogs".asInstanceOf[cogs]
   @scala.inline
+  def coin: coin = "coin".asInstanceOf[coin]
+  @scala.inline
   def coins: coins = "coins".asInstanceOf[coins]
   @scala.inline
   def columns: columns = "columns".asInstanceOf[columns]
@@ -8908,6 +9312,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def confluence: confluence = "confluence".asInstanceOf[confluence]
   @scala.inline
   def connectdevelop: connectdevelop = "connectdevelop".asInstanceOf[connectdevelop]
+  @scala.inline
+  def construction: construction = "construction".asInstanceOf[construction]
   @scala.inline
   def `container-storage`: `container-storage` = "container-storage".asInstanceOf[`container-storage`]
   @scala.inline
@@ -9077,6 +9483,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def digg: digg = "digg".asInstanceOf[digg]
   @scala.inline
+  def digging: digging = "digging".asInstanceOf[digging]
+  @scala.inline
   def `digital-ocean`: `digital-ocean` = "digital-ocean".asInstanceOf[`digital-ocean`]
   @scala.inline
   def `digital-tachograph`: `digital-tachograph` = "digital-tachograph".asInstanceOf[`digital-tachograph`]
@@ -9149,6 +9557,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `dribbble-square`: `dribbble-square` = "dribbble-square".asInstanceOf[`dribbble-square`]
   @scala.inline
+  def drone: drone = "drone".asInstanceOf[drone]
+  @scala.inline
+  def `drone-alt`: `drone-alt` = "drone-alt".asInstanceOf[`drone-alt`]
+  @scala.inline
   def dropbox: dropbox = "dropbox".asInstanceOf[dropbox]
   @scala.inline
   def drum: drum = "drum".asInstanceOf[drum]
@@ -9160,6 +9572,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `drumstick-bite`: `drumstick-bite` = "drumstick-bite".asInstanceOf[`drumstick-bite`]
   @scala.inline
   def drupal: drupal = "drupal".asInstanceOf[drupal]
+  @scala.inline
+  def dryer: dryer = "dryer".asInstanceOf[dryer]
+  @scala.inline
+  def `dryer-alt`: `dryer-alt` = "dryer-alt".asInstanceOf[`dryer-alt`]
   @scala.inline
   def duck: duck = "duck".asInstanceOf[duck]
   @scala.inline
@@ -9297,9 +9713,13 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def fal: fal = "fal".asInstanceOf[fal]
   @scala.inline
+  def fan: fan = "fan".asInstanceOf[fan]
+  @scala.inline
   def `fantasy-flight-games`: `fantasy-flight-games` = "fantasy-flight-games".asInstanceOf[`fantasy-flight-games`]
   @scala.inline
   def far: far = "far".asInstanceOf[far]
+  @scala.inline
+  def farm: farm = "farm".asInstanceOf[farm]
   @scala.inline
   def fas: fas = "fas".asInstanceOf[fas]
   @scala.inline
@@ -9378,6 +9798,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `file-powerpoint`: `file-powerpoint` = "file-powerpoint".asInstanceOf[`file-powerpoint`]
   @scala.inline
   def `file-prescription`: `file-prescription` = "file-prescription".asInstanceOf[`file-prescription`]
+  @scala.inline
+  def `file-search`: `file-search` = "file-search".asInstanceOf[`file-search`]
   @scala.inline
   def `file-signature`: `file-signature` = "file-signature".asInstanceOf[`file-signature`]
   @scala.inline
@@ -9489,6 +9911,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `font-awesome-logo-full`: `font-awesome-logo-full` = "font-awesome-logo-full".asInstanceOf[`font-awesome-logo-full`]
   @scala.inline
+  def `font-case`: `font-case` = "font-case".asInstanceOf[`font-case`]
+  @scala.inline
   def fonticons: fonticons = "fonticons".asInstanceOf[fonticons]
   @scala.inline
   def `fonticons-fi`: `fonticons-fi` = "fonticons-fi".asInstanceOf[`fonticons-fi`]
@@ -9536,6 +9960,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `galactic-republic`: `galactic-republic` = "galactic-republic".asInstanceOf[`galactic-republic`]
   @scala.inline
   def `galactic-senate`: `galactic-senate` = "galactic-senate".asInstanceOf[`galactic-senate`]
+  @scala.inline
+  def `game-board`: `game-board` = "game-board".asInstanceOf[`game-board`]
+  @scala.inline
+  def `game-board-alt`: `game-board-alt` = "game-board-alt".asInstanceOf[`game-board-alt`]
   @scala.inline
   def gamepad: gamepad = "gamepad".asInstanceOf[gamepad]
   @scala.inline
@@ -9588,6 +10016,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `glass-champagne`: `glass-champagne` = "glass-champagne".asInstanceOf[`glass-champagne`]
   @scala.inline
   def `glass-cheers`: `glass-cheers` = "glass-cheers".asInstanceOf[`glass-cheers`]
+  @scala.inline
+  def `glass-citrus`: `glass-citrus` = "glass-citrus".asInstanceOf[`glass-citrus`]
   @scala.inline
   def `glass-martini`: `glass-martini` = "glass-martini".asInstanceOf[`glass-martini`]
   @scala.inline
@@ -9707,6 +10137,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def h3: h3 = "h3".asInstanceOf[h3]
   @scala.inline
+  def h4: h4 = "h4".asInstanceOf[h4]
+  @scala.inline
   def `hacker-news`: `hacker-news` = "hacker-news".asInstanceOf[`hacker-news`]
   @scala.inline
   def `hacker-news-square`: `hacker-news-square` = "hacker-news-square".asInstanceOf[`hacker-news-square`]
@@ -9780,6 +10212,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `hard-hat`: `hard-hat` = "hard-hat".asInstanceOf[`hard-hat`]
   @scala.inline
   def hashtag: hashtag = "hashtag".asInstanceOf[hashtag]
+  @scala.inline
+  def `hat-chef`: `hat-chef` = "hat-chef".asInstanceOf[`hat-chef`]
   @scala.inline
   def `hat-santa`: `hat-santa` = "hat-santa".asInstanceOf[`hat-santa`]
   @scala.inline
@@ -9861,6 +10295,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def hooli: hooli = "hooli".asInstanceOf[hooli]
   @scala.inline
+  def `horizontal-rule`: `horizontal-rule` = "horizontal-rule".asInstanceOf[`horizontal-rule`]
+  @scala.inline
   def hornbill: hornbill = "hornbill".asInstanceOf[hornbill]
   @scala.inline
   def horse: horse = "horse".asInstanceOf[horse]
@@ -9916,6 +10352,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `ice-skate`: `ice-skate` = "ice-skate".asInstanceOf[`ice-skate`]
   @scala.inline
   def icicles: icicles = "icicles".asInstanceOf[icicles]
+  @scala.inline
+  def icons: icons = "icons".asInstanceOf[icons]
+  @scala.inline
+  def `icons-alt`: `icons-alt` = "icons-alt".asInstanceOf[`icons-alt`]
   @scala.inline
   def `id-badge`: `id-badge` = "id-badge".asInstanceOf[`id-badge`]
   @scala.inline
@@ -10006,6 +10446,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def kaaba: kaaba = "kaaba".asInstanceOf[kaaba]
   @scala.inline
   def kaggle: kaggle = "kaggle".asInstanceOf[kaggle]
+  @scala.inline
+  def kerning: kerning = "kerning".asInstanceOf[kerning]
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   @scala.inline
@@ -10118,6 +10560,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `lights-holiday`: `lights-holiday` = "lights-holiday".asInstanceOf[`lights-holiday`]
   @scala.inline
   def line: line = "line".asInstanceOf[line]
+  @scala.inline
+  def `line-columns`: `line-columns` = "line-columns".asInstanceOf[`line-columns`]
+  @scala.inline
+  def `line-height`: `line-height` = "line-height".asInstanceOf[`line-height`]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
@@ -10355,6 +10801,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `money-check-alt`: `money-check-alt` = "money-check-alt".asInstanceOf[`money-check-alt`]
   @scala.inline
+  def `money-check-edit`: `money-check-edit` = "money-check-edit".asInstanceOf[`money-check-edit`]
+  @scala.inline
+  def `money-check-edit-alt`: `money-check-edit-alt` = "money-check-edit-alt".asInstanceOf[`money-check-edit-alt`]
+  @scala.inline
   def `monitor-heart-rate`: `monitor-heart-rate` = "monitor-heart-rate".asInstanceOf[`monitor-heart-rate`]
   @scala.inline
   def monkey: monkey = "monkey".asInstanceOf[monkey]
@@ -10379,9 +10829,13 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `mouse-pointer`: `mouse-pointer` = "mouse-pointer".asInstanceOf[`mouse-pointer`]
   @scala.inline
+  def mug: mug = "mug".asInstanceOf[mug]
+  @scala.inline
   def `mug-hot`: `mug-hot` = "mug-hot".asInstanceOf[`mug-hot`]
   @scala.inline
   def `mug-marshmallows`: `mug-marshmallows` = "mug-marshmallows".asInstanceOf[`mug-marshmallows`]
+  @scala.inline
+  def `mug-tea`: `mug-tea` = "mug-tea".asInstanceOf[`mug-tea`]
   @scala.inline
   def music: music = "music".asInstanceOf[music]
   @scala.inline
@@ -10398,8 +10852,6 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def newspaper: newspaper = "newspaper".asInstanceOf[newspaper]
   @scala.inline
   def nimblr: nimblr = "nimblr".asInstanceOf[nimblr]
-  @scala.inline
-  def `nintendo-switch`: `nintendo-switch` = "nintendo-switch".asInstanceOf[`nintendo-switch`]
   @scala.inline
   def node: node = "node".asInstanceOf[node]
   @scala.inline
@@ -10451,6 +10903,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def outdent: outdent = "outdent".asInstanceOf[outdent]
   @scala.inline
+  def overline: overline = "overline".asInstanceOf[overline]
+  @scala.inline
+  def `page-break`: `page-break` = "page-break".asInstanceOf[`page-break`]
+  @scala.inline
   def page4: page4 = "page4".asInstanceOf[page4]
   @scala.inline
   def pagelines: pagelines = "pagelines".asInstanceOf[pagelines]
@@ -10478,6 +10934,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `parachute-box`: `parachute-box` = "parachute-box".asInstanceOf[`parachute-box`]
   @scala.inline
   def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
+  @scala.inline
+  def `paragraph-rtl`: `paragraph-rtl` = "paragraph-rtl".asInstanceOf[`paragraph-rtl`]
   @scala.inline
   def parking: parking = "parking".asInstanceOf[parking]
   @scala.inline
@@ -10561,6 +11019,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def phone: phone = "phone".asInstanceOf[phone]
   @scala.inline
+  def `phone-alt`: `phone-alt` = "phone-alt".asInstanceOf[`phone-alt`]
+  @scala.inline
+  def `phone-laptop`: `phone-laptop` = "phone-laptop".asInstanceOf[`phone-laptop`]
+  @scala.inline
   def `phone-office`: `phone-office` = "phone-office".asInstanceOf[`phone-office`]
   @scala.inline
   def `phone-plus`: `phone-plus` = "phone-plus".asInstanceOf[`phone-plus`]
@@ -10569,7 +11031,11 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `phone-square`: `phone-square` = "phone-square".asInstanceOf[`phone-square`]
   @scala.inline
+  def `phone-square-alt`: `phone-square-alt` = "phone-square-alt".asInstanceOf[`phone-square-alt`]
+  @scala.inline
   def `phone-volume`: `phone-volume` = "phone-volume".asInstanceOf[`phone-volume`]
+  @scala.inline
+  def `photo-video`: `photo-video` = "photo-video".asInstanceOf[`photo-video`]
   @scala.inline
   def php: php = "php".asInstanceOf[php]
   @scala.inline
@@ -10769,6 +11235,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def registered: registered = "registered".asInstanceOf[registered]
   @scala.inline
+  def `remove-format`: `remove-format` = "remove-format".asInstanceOf[`remove-format`]
+  @scala.inline
   def renren: renren = "renren".asInstanceOf[renren]
   @scala.inline
   def repeat: repeat = "repeat".asInstanceOf[repeat]
@@ -10918,6 +11386,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def sellcast: sellcast = "sellcast".asInstanceOf[sellcast]
   @scala.inline
   def sellsy: sellsy = "sellsy".asInstanceOf[sellsy]
+  @scala.inline
+  def `send-back`: `send-back` = "send-back".asInstanceOf[`send-back`]
+  @scala.inline
+  def `send-backward`: `send-backward` = "send-backward".asInstanceOf[`send-backward`]
   @scala.inline
   def server: server = "server".asInstanceOf[server]
   @scala.inline
@@ -11097,6 +11569,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `snapchat-square`: `snapchat-square` = "snapchat-square".asInstanceOf[`snapchat-square`]
   @scala.inline
+  def snooze: snooze = "snooze".asInstanceOf[snooze]
+  @scala.inline
   def `snow-blowing`: `snow-blowing` = "snow-blowing".asInstanceOf[`snow-blowing`]
   @scala.inline
   def snowboarding: snowboarding = "snowboarding".asInstanceOf[snowboarding]
@@ -11119,17 +11593,47 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `sort-alpha-down`: `sort-alpha-down` = "sort-alpha-down".asInstanceOf[`sort-alpha-down`]
   @scala.inline
+  def `sort-alpha-down-alt`: `sort-alpha-down-alt` = "sort-alpha-down-alt".asInstanceOf[`sort-alpha-down-alt`]
+  @scala.inline
   def `sort-alpha-up`: `sort-alpha-up` = "sort-alpha-up".asInstanceOf[`sort-alpha-up`]
+  @scala.inline
+  def `sort-alpha-up-alt`: `sort-alpha-up-alt` = "sort-alpha-up-alt".asInstanceOf[`sort-alpha-up-alt`]
+  @scala.inline
+  def `sort-alt`: `sort-alt` = "sort-alt".asInstanceOf[`sort-alt`]
   @scala.inline
   def `sort-amount-down`: `sort-amount-down` = "sort-amount-down".asInstanceOf[`sort-amount-down`]
   @scala.inline
+  def `sort-amount-down-alt`: `sort-amount-down-alt` = "sort-amount-down-alt".asInstanceOf[`sort-amount-down-alt`]
+  @scala.inline
   def `sort-amount-up`: `sort-amount-up` = "sort-amount-up".asInstanceOf[`sort-amount-up`]
+  @scala.inline
+  def `sort-amount-up-alt`: `sort-amount-up-alt` = "sort-amount-up-alt".asInstanceOf[`sort-amount-up-alt`]
   @scala.inline
   def `sort-down`: `sort-down` = "sort-down".asInstanceOf[`sort-down`]
   @scala.inline
   def `sort-numeric-down`: `sort-numeric-down` = "sort-numeric-down".asInstanceOf[`sort-numeric-down`]
   @scala.inline
+  def `sort-numeric-down-alt`: `sort-numeric-down-alt` = "sort-numeric-down-alt".asInstanceOf[`sort-numeric-down-alt`]
+  @scala.inline
   def `sort-numeric-up`: `sort-numeric-up` = "sort-numeric-up".asInstanceOf[`sort-numeric-up`]
+  @scala.inline
+  def `sort-numeric-up-alt`: `sort-numeric-up-alt` = "sort-numeric-up-alt".asInstanceOf[`sort-numeric-up-alt`]
+  @scala.inline
+  def `sort-shapes-down`: `sort-shapes-down` = "sort-shapes-down".asInstanceOf[`sort-shapes-down`]
+  @scala.inline
+  def `sort-shapes-down-alt`: `sort-shapes-down-alt` = "sort-shapes-down-alt".asInstanceOf[`sort-shapes-down-alt`]
+  @scala.inline
+  def `sort-shapes-up`: `sort-shapes-up` = "sort-shapes-up".asInstanceOf[`sort-shapes-up`]
+  @scala.inline
+  def `sort-shapes-up-alt`: `sort-shapes-up-alt` = "sort-shapes-up-alt".asInstanceOf[`sort-shapes-up-alt`]
+  @scala.inline
+  def `sort-size-down`: `sort-size-down` = "sort-size-down".asInstanceOf[`sort-size-down`]
+  @scala.inline
+  def `sort-size-down-alt`: `sort-size-down-alt` = "sort-size-down-alt".asInstanceOf[`sort-size-down-alt`]
+  @scala.inline
+  def `sort-size-up`: `sort-size-up` = "sort-size-up".asInstanceOf[`sort-size-up`]
+  @scala.inline
+  def `sort-size-up-alt`: `sort-size-up-alt` = "sort-size-up-alt".asInstanceOf[`sort-size-up-alt`]
   @scala.inline
   def `sort-up`: `sort-up` = "sort-up".asInstanceOf[`sort-up`]
   @scala.inline
@@ -11145,9 +11649,13 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def spade: spade = "spade".asInstanceOf[spade]
   @scala.inline
+  def sparkles: sparkles = "sparkles".asInstanceOf[sparkles]
+  @scala.inline
   def speakap: speakap = "speakap".asInstanceOf[speakap]
   @scala.inline
   def `speaker-deck`: `speaker-deck` = "speaker-deck".asInstanceOf[`speaker-deck`]
+  @scala.inline
+  def `spell-check`: `spell-check` = "spell-check".asInstanceOf[`spell-check`]
   @scala.inline
   def spider: spider = "spider".asInstanceOf[spider]
   @scala.inline
@@ -11279,6 +11787,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `sun-haze`: `sun-haze` = "sun-haze".asInstanceOf[`sun-haze`]
   @scala.inline
+  def sunglasses: sunglasses = "sunglasses".asInstanceOf[sunglasses]
+  @scala.inline
   def sunrise: sunrise = "sunrise".asInstanceOf[sunrise]
   @scala.inline
   def sunset: sunset = "sunset".asInstanceOf[sunset]
@@ -11397,7 +11907,11 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def terminal: terminal = "terminal".asInstanceOf[terminal]
   @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def `text-height`: `text-height` = "text-height".asInstanceOf[`text-height`]
+  @scala.inline
+  def `text-size`: `text-size` = "text-size".asInstanceOf[`text-size`]
   @scala.inline
   def `text-width`: `text-width` = "text-width".asInstanceOf[`text-width`]
   @scala.inline
@@ -11532,6 +12046,10 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `trash-restore`: `trash-restore` = "trash-restore".asInstanceOf[`trash-restore`]
   @scala.inline
   def `trash-restore-alt`: `trash-restore-alt` = "trash-restore-alt".asInstanceOf[`trash-restore-alt`]
+  @scala.inline
+  def `trash-undo`: `trash-undo` = "trash-undo".asInstanceOf[`trash-undo`]
+  @scala.inline
+  def `trash-undo-alt`: `trash-undo-alt` = "trash-undo-alt".asInstanceOf[`trash-undo-alt`]
   @scala.inline
   def `treasure-chest`: `treasure-chest` = "treasure-chest".asInstanceOf[`treasure-chest`]
   @scala.inline
@@ -11771,6 +12289,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def vnv: vnv = "vnv".asInstanceOf[vnv]
   @scala.inline
+  def voicemail: voicemail = "voicemail".asInstanceOf[voicemail]
+  @scala.inline
   def volcano: volcano = "volcano".asInstanceOf[volcano]
   @scala.inline
   def `volleyball-ball`: `volleyball-ball` = "volleyball-ball".asInstanceOf[`volleyball-ball`]
@@ -11809,6 +12329,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `warehouse-alt`: `warehouse-alt` = "warehouse-alt".asInstanceOf[`warehouse-alt`]
   @scala.inline
+  def washer: washer = "washer".asInstanceOf[washer]
+  @scala.inline
   def watch: watch = "watch".asInstanceOf[watch]
   @scala.inline
   def `watch-fitness`: `watch-fitness` = "watch-fitness".asInstanceOf[`watch-fitness`]
@@ -11819,7 +12341,11 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   @scala.inline
   def `water-rise`: `water-rise` = "water-rise".asInstanceOf[`water-rise`]
   @scala.inline
+  def `wave-sine`: `wave-sine` = "wave-sine".asInstanceOf[`wave-sine`]
+  @scala.inline
   def `wave-square`: `wave-square` = "wave-square".asInstanceOf[`wave-square`]
+  @scala.inline
+  def `wave-triangle`: `wave-triangle` = "wave-triangle".asInstanceOf[`wave-triangle`]
   @scala.inline
   def waze: waze = "waze".asInstanceOf[waze]
   @scala.inline
@@ -11862,6 +12388,8 @@ object atFortawesomeFontawesomeDashCommonDashTypesLibStrings {
   def `wikipedia-w`: `wikipedia-w` = "wikipedia-w".asInstanceOf[`wikipedia-w`]
   @scala.inline
   def wind: wind = "wind".asInstanceOf[wind]
+  @scala.inline
+  def `wind-turbine`: `wind-turbine` = "wind-turbine".asInstanceOf[`wind-turbine`]
   @scala.inline
   def `wind-warning`: `wind-warning` = "wind-warning".asInstanceOf[`wind-warning`]
   @scala.inline

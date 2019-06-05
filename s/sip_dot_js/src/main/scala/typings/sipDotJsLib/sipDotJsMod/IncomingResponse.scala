@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sip.js", "IncomingResponse")
 @js.native
-class IncomingResponse protected ()
-  extends sipDotJsLib.libSIPMessageMod.IncomingResponse {
-  def this(ua: sipDotJsLib.libUAMod.UA) = this()
-}
+class IncomingResponse ()
+  extends sipDotJsLib.libCoreMod.IncomingResponseMessage
 

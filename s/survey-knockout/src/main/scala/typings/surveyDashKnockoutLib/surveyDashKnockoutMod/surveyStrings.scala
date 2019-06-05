@@ -43,6 +43,7 @@ object surveyStrings extends js.Object {
   var pageNextText: java.lang.String = js.native
   var pagePrevText: java.lang.String = js.native
   var progressText: java.lang.String = js.native
+  var questionsProgressText: java.lang.String = js.native
   var removeFileCaption: java.lang.String = js.native
   var removePanel: java.lang.String = js.native
   var removeRow: java.lang.String = js.native

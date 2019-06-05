@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", "Transport")
 @js.native
 abstract class Transport protected ()
-  extends sipDotJsLib.libTransportMod.Transport {
-  def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger, options: js.Any) = this()
+  extends sipDotJsLib.libCoreMod.Transport {
+  def this(logger: sipDotJsLib.libCoreLogMod.Logger, options: js.Any) = this()
 }
 

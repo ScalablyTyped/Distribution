@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tedious"
-version := "3.0.0-dt-20190326Z-6abcd9"
+version := "4.0.0-dt-20190604Z-dd9579"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

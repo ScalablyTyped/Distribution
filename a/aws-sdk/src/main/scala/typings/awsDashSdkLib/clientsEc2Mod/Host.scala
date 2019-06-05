@@ -23,7 +23,7 @@ trait Host extends js.Object {
     */
   var AvailableCapacity: js.UndefOr[AvailableCapacity] = js.undefined
   /**
-    * Unique, case-sensitive identifier that you provide to ensure idempotency of the request. For more information, see How to Ensure Idempotency in the Amazon Elastic Compute Cloud User Guide. 
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
     */
   var ClientToken: js.UndefOr[String] = js.undefined
   /**
@@ -34,6 +34,10 @@ trait Host extends js.Object {
     * The hardware specifications of the Dedicated Host.
     */
   var HostProperties: js.UndefOr[HostProperties] = js.undefined
+  /**
+    * Indicates whether host recovery is enabled or disabled for the Dedicated Host.
+    */
+  var HostRecovery: js.UndefOr[HostRecovery] = js.undefined
   /**
     * The reservation ID of the Dedicated Host. This returns a null response if the Dedicated Host doesn't have an associated reservation.
     */
@@ -66,6 +70,7 @@ object Host {
     ClientToken: String = null,
     HostId: String = null,
     HostProperties: HostProperties = null,
+    HostRecovery: HostRecovery = null,
     HostReservationId: String = null,
     Instances: HostInstanceList = null,
     ReleaseTime: DateTime = null,
@@ -80,6 +85,7 @@ object Host {
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)
     if (HostId != null) __obj.updateDynamic("HostId")(HostId)
     if (HostProperties != null) __obj.updateDynamic("HostProperties")(HostProperties)
+    if (HostRecovery != null) __obj.updateDynamic("HostRecovery")(HostRecovery.asInstanceOf[js.Any])
     if (HostReservationId != null) __obj.updateDynamic("HostReservationId")(HostReservationId)
     if (Instances != null) __obj.updateDynamic("Instances")(Instances)
     if (ReleaseTime != null) __obj.updateDynamic("ReleaseTime")(ReleaseTime)

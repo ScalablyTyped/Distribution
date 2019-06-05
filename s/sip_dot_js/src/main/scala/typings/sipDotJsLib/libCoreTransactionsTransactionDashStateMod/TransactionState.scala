@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait TransactionState extends js.Object
 
-@JSImport("sip.js/lib/Core/transactions/transaction-state", "TransactionState")
+@JSImport("sip.js/lib/core/transactions/transaction-state", "TransactionState")
 @js.native
 object TransactionState extends js.Object {
   @js.native

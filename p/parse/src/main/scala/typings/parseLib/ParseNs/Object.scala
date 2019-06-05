@@ -44,10 +44,10 @@ class Object () extends BaseObject {
   var createdAt: stdLib.Date = js.native
   var id: java.lang.String = js.native
   var updatedAt: stdLib.Date = js.native
-  def add(attr: java.lang.String, item: js.Any): this.type | scala.Boolean = js.native
-  def addAll(attr: java.lang.String, items: js.Array[_]): this.type | scala.Boolean = js.native
-  def addAllUnique(attr: java.lang.String, items: js.Array[_]): this.type | scala.Boolean = js.native
-  def addUnique(attr: java.lang.String, item: js.Any): this.type | scala.Boolean = js.native
+  def add(attr: java.lang.String, item: js.Any): this.type | parseLib.parseLibNumbers.`false` = js.native
+  def addAll(attr: java.lang.String, items: js.Array[_]): this.type | parseLib.parseLibNumbers.`false` = js.native
+  def addAllUnique(attr: java.lang.String, items: js.Array[_]): this.type | parseLib.parseLibNumbers.`false` = js.native
+  def addUnique(attr: java.lang.String, item: js.Any): this.type | parseLib.parseLibNumbers.`false` = js.native
   def change(options: js.Any): this.type = js.native
   def changedAttributes(diff: js.Any): scala.Boolean = js.native
   def clear(options: js.Any): js.Any = js.native
@@ -82,8 +82,8 @@ class Object () extends BaseObject {
   def previous(attr: java.lang.String): js.Any = js.native
   def previousAttributes(): js.Any = js.native
   def relation(attr: java.lang.String): Relation[this.type, Object] = js.native
-  def remove(attr: java.lang.String, item: js.Any): this.type | scala.Boolean = js.native
-  def removeAll(attr: java.lang.String, items: js.Any): this.type | scala.Boolean = js.native
+  def remove(attr: java.lang.String, item: js.Any): this.type | parseLib.parseLibNumbers.`false` = js.native
+  def removeAll(attr: java.lang.String, items: js.Any): this.type | parseLib.parseLibNumbers.`false` = js.native
   def revert(): scala.Unit = js.native
   def save(): js.Promise[this.type] = js.native
   def save(attrs: js.Object): js.Promise[this.type] = js.native
@@ -96,12 +96,12 @@ class Object () extends BaseObject {
   def save(attrs: scala.Null, options: parseLib.ParseNs.ObjectNs.SaveOptions): js.Promise[this.type] = js.native
   def save(key: java.lang.String, value: js.Any): js.Promise[this.type] = js.native
   def save(key: java.lang.String, value: js.Any, options: parseLib.ParseNs.ObjectNs.SaveOptions): js.Promise[this.type] = js.native
-  def set(attrs: js.Object): scala.Boolean = js.native
-  def set(attrs: js.Object, options: parseLib.ParseNs.ObjectNs.SetOptions): scala.Boolean = js.native
-  def set(key: java.lang.String, value: js.Any): scala.Boolean = js.native
-  def set(key: java.lang.String, value: js.Any, options: parseLib.ParseNs.ObjectNs.SetOptions): scala.Boolean = js.native
-  def setACL(acl: ACL): scala.Boolean = js.native
-  def setACL(acl: ACL, options: SuccessFailureOptions): scala.Boolean = js.native
+  def set(attrs: js.Object): this.type | parseLib.parseLibNumbers.`false` = js.native
+  def set(attrs: js.Object, options: parseLib.ParseNs.ObjectNs.SetOptions): this.type | parseLib.parseLibNumbers.`false` = js.native
+  def set(key: java.lang.String, value: js.Any): this.type | parseLib.parseLibNumbers.`false` = js.native
+  def set(key: java.lang.String, value: js.Any, options: parseLib.ParseNs.ObjectNs.SetOptions): this.type | parseLib.parseLibNumbers.`false` = js.native
+  def setACL(acl: ACL): this.type | parseLib.parseLibNumbers.`false` = js.native
+  def setACL(acl: ACL, options: SuccessFailureOptions): this.type | parseLib.parseLibNumbers.`false` = js.native
   def toPointer(): Pointer = js.native
   def unPin(): js.Promise[scala.Unit] = js.native
   def unPinWithName(name: java.lang.String): js.Promise[scala.Unit] = js.native
@@ -132,7 +132,8 @@ object Object extends js.Object {
     keys: js.Array[java.lang.String | js.Array[java.lang.String]],
     options: parseLib.ParseNs.RequestOptions
   ): js.Promise[js.Array[T]] = js.native
-  def fromJSON(json: js.Any, `override`: scala.Boolean): js.Any = js.native
+  def fromJSON(json: js.Any): parseLib.ParseNs.Object = js.native
+  def fromJSON(json: js.Any, `override`: scala.Boolean): parseLib.ParseNs.Object = js.native
   def pinAll(objects: js.Array[parseLib.ParseNs.Object]): js.Promise[scala.Unit] = js.native
   def pinAllWithName(name: java.lang.String, objects: js.Array[parseLib.ParseNs.Object]): js.Promise[scala.Unit] = js.native
   def registerSubclass[T /* <: parseLib.ParseNs.Object */](

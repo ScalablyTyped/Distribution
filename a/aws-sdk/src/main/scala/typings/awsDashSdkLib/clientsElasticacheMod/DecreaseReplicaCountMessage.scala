@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DecreaseReplicaCountMessage extends js.Object {
   /**
-    * If True, the number of replica nodes is decreased immediately. If False, the number of replica nodes is decreased during the next maintenance window.
+    * If True, the number of replica nodes is decreased immediately. ApplyImmediately=False is not currently supported.
     */
   var ApplyImmediately: Boolean
   /**

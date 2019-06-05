@@ -1,0 +1,44 @@
+
+# Scala.js typings for node-wget-promise
+
+Typings are for version 0.1
+
+## Library description:
+wget in Node, with Promise support
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | node-wget-promise |
+| Keywords           | download, http, promise, request, wget |
+| # releases         | 17 |
+| # dependents       | 2 |
+| # downloads        | 20621 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/ajhsu/node-wget-promise#readme)
+- [Bugs](https://github.com/ajhsu/node-wget-promise/issues)
+- [Repository](https://github.com/ajhsu/node-wget-promise)
+- [Npm](https://www.npmjs.com/package/node-wget-promise)
+    
+
+
+## Note
+This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+
+Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
+
+## Usage
+See [the main readme](../../readme.md) for instructions.
+
+## Comments
+
+These comments are from the typescript definitions and might be useful:
+```
+// Type definitions for date-range-array 0.1
+// Project: https://github.com/ajhsu/node-wget-promise
+// Definitions by: Nathan Shively-Sanders <https://github.com/sandersn>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
+```
+

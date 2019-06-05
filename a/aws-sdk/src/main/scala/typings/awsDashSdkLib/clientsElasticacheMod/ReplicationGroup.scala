@@ -15,7 +15,7 @@ trait ReplicationGroup extends js.Object {
     */
   var AuthTokenEnabled: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * Indicates the status of Multi-AZ with automatic failover for this Redis replication group. Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 and T2 cache node types.   Redis (cluster mode enabled): T1 node types.  
+    * Indicates the status of Multi-AZ with automatic failover for this Redis replication group. Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 node types.   Redis (cluster mode enabled): T1 node types.  
     */
   var AutomaticFailover: js.UndefOr[AutomaticFailoverStatus] = js.undefined
   /**

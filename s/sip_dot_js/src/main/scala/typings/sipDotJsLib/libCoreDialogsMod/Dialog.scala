@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/dialogs", "Dialog")
+@JSImport("sip.js/lib/core/dialogs", "Dialog")
 @js.native
 class Dialog protected ()
   extends sipDotJsLib.libCoreDialogsDialogMod.Dialog {
@@ -18,7 +18,7 @@ class Dialog protected ()
 }
 
 /* static members */
-@JSImport("sip.js/lib/Core/dialogs", "Dialog")
+@JSImport("sip.js/lib/core/dialogs", "Dialog")
 @js.native
 object Dialog extends js.Object {
   /**
@@ -30,8 +30,8 @@ object Dialog extends js.Object {
     * @param incomingResponseMessage Incoming response message creating dialog.
     */
   def initialDialogStateForUserAgentClient(
-    outgoingRequestMessage: sipDotJsLib.libSIPMessageMod.OutgoingRequest,
-    incomingResponseMessage: sipDotJsLib.libSIPMessageMod.IncomingResponse
+    outgoingRequestMessage: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage,
+    incomingResponseMessage: sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage
   ): sipDotJsLib.libCoreDialogsDialogDashStateMod.DialogState = js.native
   /**
     * The UAS then constructs the state of the dialog.  This state MUST be
@@ -40,9 +40,12 @@ object Dialog extends js.Object {
     * @param incomingRequestMessage Incoming request message creating dialog.
     * @param toTag Tag in the To field in the response to the incoming request.
     */
-  def initialDialogStateForUserAgentServer(incomingRequestMessage: sipDotJsLib.libSIPMessageMod.IncomingRequest, toTag: java.lang.String): sipDotJsLib.libCoreDialogsDialogDashStateMod.DialogState = js.native
   def initialDialogStateForUserAgentServer(
-    incomingRequestMessage: sipDotJsLib.libSIPMessageMod.IncomingRequest,
+    incomingRequestMessage: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage,
+    toTag: java.lang.String
+  ): sipDotJsLib.libCoreDialogsDialogDashStateMod.DialogState = js.native
+  def initialDialogStateForUserAgentServer(
+    incomingRequestMessage: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage,
     toTag: java.lang.String,
     early: scala.Boolean
   ): sipDotJsLib.libCoreDialogsDialogDashStateMod.DialogState = js.native

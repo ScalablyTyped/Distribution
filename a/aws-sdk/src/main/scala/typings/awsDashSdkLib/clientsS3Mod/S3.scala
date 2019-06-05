@@ -141,14 +141,14 @@ trait S3
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes an analytics configuration for the bucket (specified by the analytics configuration ID).
+    * Deletes an analytics configuration for the bucket (specified by the analytics configuration ID). To use this operation, you must have permissions to perform the s3:PutAnalyticsConfiguration action. The bucket owner has this permission by default. The bucket owner can grant this permission to others. 
     */
   def deleteBucketAnalyticsConfiguration(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBucketAnalyticsConfiguration(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes an analytics configuration for the bucket (specified by the analytics configuration ID).
+    * Deletes an analytics configuration for the bucket (specified by the analytics configuration ID). To use this operation, you must have permissions to perform the s3:PutAnalyticsConfiguration action. The bucket owner has this permission by default. The bucket owner can grant this permission to others. 
     */
   def deleteBucketAnalyticsConfiguration(params: DeleteBucketAnalyticsConfigurationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteBucketAnalyticsConfiguration(
@@ -896,7 +896,7 @@ trait S3
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+    * Gets the object lock configuration for a bucket. The rule specified in the object lock configuration will be applied by default to every new object placed in the specified bucket.
     */
   def getObjectLockConfiguration(): awsDashSdkLib.libRequestMod.Request[GetObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getObjectLockConfiguration(
@@ -907,7 +907,7 @@ trait S3
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Gets the Object Lock configuration for a bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+    * Gets the object lock configuration for a bucket. The rule specified in the object lock configuration will be applied by default to every new object placed in the specified bucket.
     */
   def getObjectLockConfiguration(params: GetObjectLockConfigurationRequest): awsDashSdkLib.libRequestMod.Request[GetObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def getObjectLockConfiguration(
@@ -1416,14 +1416,14 @@ trait S3
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Replaces a policy on a bucket. If the bucket already has a policy, the one in this request completely replaces it.
+    * Applies an Amazon S3 bucket policy to an Amazon S3 bucket.
     */
   def putBucketPolicy(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putBucketPolicy(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Replaces a policy on a bucket. If the bucket already has a policy, the one in this request completely replaces it.
+    * Applies an Amazon S3 bucket policy to an Amazon S3 bucket.
     */
   def putBucketPolicy(params: PutBucketPolicyRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putBucketPolicy(
@@ -1567,7 +1567,7 @@ trait S3
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutObjectLegalHoldOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+    * Places an object lock configuration on the specified bucket. The rule specified in the object lock configuration will be applied by default to every new object placed in the specified bucket.
     */
   def putObjectLockConfiguration(): awsDashSdkLib.libRequestMod.Request[PutObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putObjectLockConfiguration(
@@ -1578,7 +1578,7 @@ trait S3
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Places an Object Lock configuration on the specified bucket. The rule specified in the Object Lock configuration will be applied by default to every new object placed in the specified bucket.
+    * Places an object lock configuration on the specified bucket. The rule specified in the object lock configuration will be applied by default to every new object placed in the specified bucket.
     */
   def putObjectLockConfiguration(params: PutObjectLockConfigurationRequest): awsDashSdkLib.libRequestMod.Request[PutObjectLockConfigurationOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putObjectLockConfiguration(

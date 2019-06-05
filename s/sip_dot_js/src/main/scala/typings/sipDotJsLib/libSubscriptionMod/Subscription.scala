@@ -17,9 +17,9 @@ class Subscription protected ()
     * @param options Options bucket.
     */
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, event: java.lang.String) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, event: java.lang.String) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, event: java.lang.String) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, event: java.lang.String, options: SubscriptionOptions) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, event: java.lang.String, options: SubscriptionOptions) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, event: java.lang.String, options: SubscriptionOptions) = this()
   var context: js.Any = js.native
   var disposed: js.Any = js.native
   var event: js.Any = js.native
@@ -41,13 +41,13 @@ class Subscription protected ()
   @JSName("emit")
   def emit_accepted(
     event: sipDotJsLib.sipDotJsLibStrings.accepted,
-    message: sipDotJsLib.libSIPMessageMod.IncomingResponse,
+    message: sipDotJsLib.libCoreMod.IncomingResponseMessage,
     cause: java.lang.String
   ): scala.Boolean = js.native
   @JSName("emit")
   def emit_failed(
     event: sipDotJsLib.sipDotJsLibStrings.failed,
-    message: sipDotJsLib.libSIPMessageMod.IncomingResponse,
+    message: sipDotJsLib.libCoreMod.IncomingResponseMessage,
     cause: java.lang.String
   ): scala.Boolean = js.native
   @JSName("emit")
@@ -55,7 +55,7 @@ class Subscription protected ()
   @JSName("emit")
   def emit_rejected(
     event: sipDotJsLib.sipDotJsLibStrings.rejected,
-    message: sipDotJsLib.libSIPMessageMod.IncomingResponse,
+    message: sipDotJsLib.libCoreMod.IncomingResponseMessage,
     cause: java.lang.String
   ): scala.Boolean = js.native
   @JSName("emit")
@@ -107,7 +107,7 @@ class Subscription protected ()
   def on_accepted(
     name: sipDotJsLib.sipDotJsLibStrings.accepted,
     callback: js.Function2[
-      /* message */ sipDotJsLib.libSIPMessageMod.IncomingResponse, 
+      /* message */ sipDotJsLib.libCoreMod.IncomingResponseMessage, 
       /* cause */ java.lang.String, 
       scala.Unit
     ]
@@ -116,7 +116,7 @@ class Subscription protected ()
   def on_failed(
     name: sipDotJsLib.sipDotJsLibStrings.failed,
     callback: js.Function2[
-      /* message */ sipDotJsLib.libSIPMessageMod.IncomingResponse, 
+      /* message */ sipDotJsLib.libCoreMod.IncomingResponseMessage, 
       /* cause */ java.lang.String, 
       scala.Unit
     ]
@@ -130,7 +130,7 @@ class Subscription protected ()
   def on_rejected(
     name: sipDotJsLib.sipDotJsLibStrings.rejected,
     callback: js.Function2[
-      /* message */ sipDotJsLib.libSIPMessageMod.IncomingResponse, 
+      /* message */ sipDotJsLib.libCoreMod.IncomingResponseMessage, 
       /* cause */ java.lang.String, 
       scala.Unit
     ]

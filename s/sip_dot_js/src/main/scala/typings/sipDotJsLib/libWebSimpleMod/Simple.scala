@@ -15,7 +15,7 @@ class Simple protected ()
   var checkRegistration: js.Any = js.native
   var cleanupMedia: js.Any = js.native
   var destroyMedia: js.Any = js.native
-  var logger: sipDotJsLib.libLoggerFactoryMod.Logger = js.native
+  var logger: sipDotJsLib.libCoreMod.Logger = js.native
   var onAccepted: js.Any = js.native
   var onEnded: js.Any = js.native
   var onFailed: js.Any = js.native

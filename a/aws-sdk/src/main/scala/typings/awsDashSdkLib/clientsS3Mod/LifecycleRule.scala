@@ -6,16 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LifecycleRule extends js.Object {
+  /**
+    * 
+    */
   var AbortIncompleteMultipartUpload: js.UndefOr[AbortIncompleteMultipartUpload] = js.undefined
   /**
     * 
     */
   var Expiration: js.UndefOr[LifecycleExpiration] = js.undefined
+  /**
+    * 
+    */
   var Filter: js.UndefOr[LifecycleRuleFilter] = js.undefined
   /**
     * Unique identifier for the rule. The value cannot be longer than 255 characters.
     */
   var ID: js.UndefOr[ID] = js.undefined
+  /**
+    * 
+    */
   var NoncurrentVersionExpiration: js.UndefOr[NoncurrentVersionExpiration] = js.undefined
   /**
     * 

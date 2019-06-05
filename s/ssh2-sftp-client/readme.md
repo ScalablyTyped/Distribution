@@ -41,6 +41,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Ascari Andrea <https://github.com/ascariandrea>
 //                 Kartik Malik <https://github.com/kartik2406>
 //                 Michael Pertl <https://github.com/viamuli>
+//                 Orblazer <https://github.com/orblazer>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

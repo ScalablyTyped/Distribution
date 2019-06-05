@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BucketLifecycleConfiguration extends js.Object {
   /**
-    * 
+    * A lifecycle rule for individual objects in an Amazon S3 bucket.
     */
   var Rules: LifecycleRules
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for express
 
-Typings are for version 4.16
+Typings are for version 4.17
 
 ## Library description:
 Fast, unopinionated, minimalist web framework
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Express 4.16
+// Type definitions for Express 4.17
 // Project: http://expressjs.com
 // Definitions by: Boris Yankov <https://github.com/borisyankov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

@@ -11,11 +11,11 @@ trait DialogState extends js.Object {
   var id: java.lang.String
   var localSequenceNumber: js.UndefOr[scala.Double] = js.undefined
   var localTag: java.lang.String
-  var localURI: sipDotJsLib.libURIMod.URI
+  var localURI: sipDotJsLib.libCoreMessagesUriMod.URI
   var remoteSequenceNumber: js.UndefOr[scala.Double] = js.undefined
   var remoteTag: java.lang.String
-  var remoteTarget: sipDotJsLib.libURIMod.URI
-  var remoteURI: sipDotJsLib.libURIMod.URI
+  var remoteTarget: sipDotJsLib.libCoreMessagesUriMod.URI
+  var remoteURI: sipDotJsLib.libCoreMessagesUriMod.URI
   var routeSet: js.Array[java.lang.String]
   var secure: scala.Boolean
 }
@@ -27,10 +27,10 @@ object DialogState {
     early: scala.Boolean,
     id: java.lang.String,
     localTag: java.lang.String,
-    localURI: sipDotJsLib.libURIMod.URI,
+    localURI: sipDotJsLib.libCoreMessagesUriMod.URI,
     remoteTag: java.lang.String,
-    remoteTarget: sipDotJsLib.libURIMod.URI,
-    remoteURI: sipDotJsLib.libURIMod.URI,
+    remoteTarget: sipDotJsLib.libCoreMessagesUriMod.URI,
+    remoteURI: sipDotJsLib.libCoreMessagesUriMod.URI,
     routeSet: js.Array[java.lang.String],
     secure: scala.Boolean,
     localSequenceNumber: scala.Int | scala.Double = null,

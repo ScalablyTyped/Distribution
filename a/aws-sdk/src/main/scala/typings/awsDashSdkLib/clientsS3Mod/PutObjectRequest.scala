@@ -39,7 +39,7 @@ trait PutObjectRequest extends js.Object {
     */
   var ContentLength: js.UndefOr[ContentLength] = js.undefined
   /**
-    * The base64-encoded 128-bit MD5 digest of the part data. This parameter is auto-populated when using the command from the CLI
+    * The base64-encoded 128-bit MD5 digest of the part data. This parameter is auto-populated when using the command from the CLI. This parameted is required if object lock parameters are specified.
     */
   var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
   /**
@@ -79,11 +79,11 @@ trait PutObjectRequest extends js.Object {
     */
   var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
   /**
-    * The Object Lock mode that you want to apply to this object.
+    * The object lock mode that you want to apply to this object.
     */
   var ObjectLockMode: js.UndefOr[ObjectLockMode] = js.undefined
   /**
-    * The date and time when you want this object's Object Lock to expire.
+    * The date and time when you want this object's object lock to expire.
     */
   var ObjectLockRetainUntilDate: js.UndefOr[ObjectLockRetainUntilDate] = js.undefined
   var RequestPayer: js.UndefOr[RequestPayer] = js.undefined

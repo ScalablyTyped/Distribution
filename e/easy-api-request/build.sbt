@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "easy-api-request"
-version := "0.0-unknown-dt-20190322Z-c6b1ba"
+version := "0.0-unknown-dt-20190322Z-79b100"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-34b49e",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-ecc6d0",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-85ff12",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-ba6df1",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-1a5daf",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-1f48f2",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-440f74",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-49fefe",

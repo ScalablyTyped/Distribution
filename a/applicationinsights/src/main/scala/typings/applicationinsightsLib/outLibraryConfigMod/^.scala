@@ -70,6 +70,8 @@ object ^ extends js.Object {
   var ENV_http_proxy: java.lang.String = js.native
   var ENV_https_proxy: java.lang.String = js.native
   var ENV_iKey: java.lang.String = js.native
+  var ENV_nativeMetricsDisableAll: java.lang.String = js.native
+  var ENV_nativeMetricsDisablers: java.lang.String = js.native
   var ENV_profileQueryEndpoint: java.lang.String = js.native
   var ENV_quickPulseHost: java.lang.String = js.native
   var legacy_ENV_iKey: java.lang.String = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PutObjectLockConfigurationRequest extends js.Object {
   /**
-    * The bucket whose Object Lock configuration you want to create or replace.
+    * The bucket whose object lock configuration you want to create or replace.
     */
   var Bucket: BucketName
   /**
@@ -15,12 +15,12 @@ trait PutObjectLockConfigurationRequest extends js.Object {
     */
   var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
   /**
-    * The Object Lock configuration that you want to apply to the specified bucket.
+    * The object lock configuration that you want to apply to the specified bucket.
     */
   var ObjectLockConfiguration: js.UndefOr[ObjectLockConfiguration] = js.undefined
   var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
   /**
-    * A token to allow Object Lock to be enabled for an existing bucket.
+    * A token to allow Amazon S3 object lock to be enabled for an existing bucket.
     */
   var Token: js.UndefOr[ObjectLockToken] = js.undefined
 }

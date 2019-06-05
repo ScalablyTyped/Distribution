@@ -11,7 +11,7 @@ trait DeleteObjectsRequest extends js.Object {
     */
   var Bucket: BucketName
   /**
-    * Specifies whether you want to delete this object even if it has a Governance-type Object Lock in place. You must have sufficient permissions to perform this operation.
+    * Specifies whether you want to delete this object even if it has a Governance-type object lock in place. You must have sufficient permissions to perform this operation.
     */
   var BypassGovernanceRetention: js.UndefOr[BypassGovernanceRetention] = js.undefined
   /**

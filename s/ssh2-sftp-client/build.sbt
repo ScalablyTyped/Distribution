@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ssh2-sftp-client"
-version := "2.5-dt-20190417Z-063981"
+version := "2.5-dt-20190604Z-f16c71"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ReplicationConfiguration extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that Amazon S3 can assume when replicating the objects.
+    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that Amazon S3 assumes when replicating objects. For more information, see How to Set Up Cross-Region Replication in the Amazon Simple Storage Service Developer Guide.
     */
   var Role: awsDashSdkLib.clientsS3Mod.Role
   /**

@@ -346,9 +346,10 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     * Documents returned from queries with the lean option enabled are plain
     * javascript objects, not MongooseDocuments. They have no save method,
     * getters/setters or other Mongoose magic applied.
-    * @param bool defaults to true
+    * @param {Boolean|Object} bool defaults to true
     */
   def lean(): Query[_] with QueryHelpers = js.native
+  def lean(bool: js.Object): Query[_] with QueryHelpers = js.native
   def lean(bool: scala.Boolean): Query[_] with QueryHelpers = js.native
   /** Specifies the maximum number of documents the query will return. Cannot be used with distinct() */
   def limit(`val`: scala.Double): this.type = js.native

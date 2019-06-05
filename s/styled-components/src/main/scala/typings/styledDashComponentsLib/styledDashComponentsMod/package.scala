@@ -16,7 +16,7 @@ package object styledDashComponentsMod {
   ]
   type CSSKeyframes = js.Object with org.scalablytyped.runtime.StringDictionary[CSSObject]
   type CSSObject = (csstypeLib.csstypeMod.Properties[java.lang.String | scala.Double]) with styledDashComponentsLib.styledDashComponentsLibStrings.CSSObject with js.Any
-  type CSSProp[T] = java.lang.String | FlattenInterpolation[ThemeProps[T]]
+  type CSSProp[T] = java.lang.String | CSSObject | FlattenInterpolation[ThemeProps[T]]
   // Any prop that has a default prop becomes optional, but its type is unchanged
   // Undeclared default props are augmented into the resulting allowable attributes
   // If declared props have indexed properties, ignore default props entirely as keyof gets widened

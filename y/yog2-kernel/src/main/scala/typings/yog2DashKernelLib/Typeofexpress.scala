@@ -18,6 +18,12 @@ trait Typeofexpress extends js.Object {
     */
   @JSName("json")
   var json_Original: Fn_Options = js.native
+  /**
+    * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.
+    * @since 4.17.0
+    */
+  @JSName("raw")
+  var raw_Original: Fn_OptionsNextHandleFunction_1182122414 = js.native
   var request: expressLib.expressMod.Request = js.native
   var response: expressLib.expressMod.Response = js.native
   /**
@@ -26,11 +32,17 @@ trait Typeofexpress extends js.Object {
   @JSName("static")
   var static_Original: Anon_Mime = js.native
   /**
+    * This is a built-in middleware function in Express. It parses incoming requests with text payloads and is based on body-parser.
+    * @since 4.17.0
+    */
+  @JSName("text")
+  var text_Original: Fn_OptionsNextHandleFunction = js.native
+  /**
     * This is a built-in middleware function in Express. It parses incoming requests with urlencoded payloads and is based on body-parser.
     * @since 4.16.0
     */
   @JSName("urlencoded")
-  var urlencoded_Original: Fn_OptionsNextHandleFunction = js.native
+  var urlencoded_Original: Fn_OptionsNextHandleFunctionOptionsUrlencoded = js.native
   def Router(): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
   def Router(options: expressLib.expressMod.RouterOptions): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
   /**
@@ -73,6 +85,16 @@ trait Typeofexpress extends js.Object {
     */
   def json(options: bodyDashParserLib.bodyDashParserMod.OptionsJson): connectLib.connectMod.NextHandleFunction = js.native
   /**
+    * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.
+    * @since 4.17.0
+    */
+  def raw(): connectLib.connectMod.NextHandleFunction = js.native
+  /**
+    * This is a built-in middleware function in Express. It parses incoming requests with Buffer payloads and is based on body-parser.
+    * @since 4.17.0
+    */
+  def raw(options: bodyDashParserLib.bodyDashParserMod.Options): connectLib.connectMod.NextHandleFunction = js.native
+  /**
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
     */
   def static(root: java.lang.String): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Handler = js.native
@@ -80,6 +102,16 @@ trait Typeofexpress extends js.Object {
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
     */
   def static(root: java.lang.String, options: serveDashStaticLib.serveDashStaticMod.ServeStaticOptions): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Handler = js.native
+  /**
+    * This is a built-in middleware function in Express. It parses incoming requests with text payloads and is based on body-parser.
+    * @since 4.17.0
+    */
+  def text(): connectLib.connectMod.NextHandleFunction = js.native
+  /**
+    * This is a built-in middleware function in Express. It parses incoming requests with text payloads and is based on body-parser.
+    * @since 4.17.0
+    */
+  def text(options: bodyDashParserLib.bodyDashParserMod.OptionsText): connectLib.connectMod.NextHandleFunction = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with urlencoded payloads and is based on body-parser.
     * @since 4.16.0

@@ -11,12 +11,15 @@ trait PutBucketReplicationRequest extends js.Object {
     */
   var Bucket: BucketName
   /**
-    * 
+    * The base64-encoded 128-bit MD5 digest of the data. You must use this header as a message integrity check to verify that the request body was not corrupted in transit.
     */
   var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
-  var ReplicationConfiguration: awsDashSdkLib.clientsS3Mod.ReplicationConfiguration
   /**
     * 
+    */
+  var ReplicationConfiguration: awsDashSdkLib.clientsS3Mod.ReplicationConfiguration
+  /**
+    * A token that allows Amazon S3 object lock to be enabled for an existing bucket.
     */
   var Token: js.UndefOr[ObjectLockToken] = js.undefined
 }

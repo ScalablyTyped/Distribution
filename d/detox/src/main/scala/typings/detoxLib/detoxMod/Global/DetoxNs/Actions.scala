@@ -38,6 +38,13 @@ trait Actions[R] extends js.Object {
     * await element(by.id('scrollView')).scroll(100, 'up');
     */
   def scroll(pixels: scala.Double, direction: Direction): js.Promise[Actions[R]] = js.native
+  def scroll(pixels: scala.Double, direction: Direction, startPositionX: scala.Double): js.Promise[Actions[R]] = js.native
+  def scroll(
+    pixels: scala.Double,
+    direction: Direction,
+    startPositionX: scala.Double,
+    startPositionY: scala.Double
+  ): js.Promise[Actions[R]] = js.native
   /**
     * Scroll to edge.
     * @param edge

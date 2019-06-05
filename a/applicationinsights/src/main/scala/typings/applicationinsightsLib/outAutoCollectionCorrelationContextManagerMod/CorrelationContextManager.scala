@@ -45,6 +45,21 @@ object CorrelationContextManager extends js.Object {
     operationName: java.lang.String,
     correlationContextHeader: java.lang.String
   ): applicationinsightsLib.outAutoCollectionCorrelationContextManagerMod.CorrelationContext = js.native
+  def generateContextObject(
+    operationId: java.lang.String,
+    parentId: java.lang.String,
+    operationName: java.lang.String,
+    correlationContextHeader: java.lang.String,
+    traceparent: applicationinsightsLib.outLibraryTraceparentMod.^
+  ): applicationinsightsLib.outAutoCollectionCorrelationContextManagerMod.CorrelationContext = js.native
+  def generateContextObject(
+    operationId: java.lang.String,
+    parentId: java.lang.String,
+    operationName: java.lang.String,
+    correlationContextHeader: java.lang.String,
+    traceparent: applicationinsightsLib.outLibraryTraceparentMod.^,
+    tracestate: applicationinsightsLib.outLibraryTracestateMod.^
+  ): applicationinsightsLib.outAutoCollectionCorrelationContextManagerMod.CorrelationContext = js.native
   /**
     *  Provides the current Context.
     *  The context is the most recent one entered into for the current

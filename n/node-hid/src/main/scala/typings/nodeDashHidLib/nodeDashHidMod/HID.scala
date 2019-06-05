@@ -19,7 +19,6 @@ class HID protected () extends js.Object {
   def readTimeout(time_out: scala.Double): js.Array[scala.Double] = js.native
   def resume(): scala.Unit = js.native
   def sendFeatureReport(data: js.Array[scala.Double]): scala.Double = js.native
-  def setDriverType(`type`: java.lang.String): scala.Unit = js.native
   def write(values: js.Array[scala.Double]): scala.Double = js.native
 }
 

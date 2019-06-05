@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AnalyticsAndOperator extends js.Object {
   /**
-    * The prefix to use when evaluating an AND predicate.
+    * The prefix to use when evaluating an AND predicate: The prefix that an object must have to be included in the metrics results.
     */
   var Prefix: js.UndefOr[Prefix] = js.undefined
   /**

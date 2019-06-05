@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-intl-redux"
-version := "v0.1.0-dt-20190322Z-944613"
+version := "v0.1.0-dt-20190322Z-3d6524"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-32bfd8",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c843c9",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1fde1d",
-  "org.scalablytyped" %%% "react-intl" % "2.3-dt-20190212Z-096394",
+  "org.scalablytyped" %%% "react-intl" % "2.3-dt-20190604Z-acb4dc",
   "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190513Z-b69b2a",
   "org.scalablytyped" %%% "redux" % "4.0.1-cd375e",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")

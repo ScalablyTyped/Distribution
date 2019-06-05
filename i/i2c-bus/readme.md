@@ -1,7 +1,7 @@
 
 # Scala.js typings for i2c-bus
 
-Typings are for version 2.4
+Typings are for version 3.0
 
 ## Library description:
 I2C serial bus access with Node.js
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for Async 2.4
+// Type definitions for Async 3.0
 // Project: https://github.com/caolan/async, https://caolan.github.io/async
 // Definitions by: Boris Yankov <https://github.com/borisyankov>
 //                 Arseniy Maximov <https://github.com/kern0>
@@ -43,6 +43,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Angus Fenying <https://github.com/fenying>
 //                 Pascal Martin <https://github.com/pascalmartin>
 //                 Dmitri Trofimov <https://github.com/Dmitri1337>
+//                 Etienne Rossignon <https://github.com/erossignon>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 // Type definitions for i2c-bus v1.0.0

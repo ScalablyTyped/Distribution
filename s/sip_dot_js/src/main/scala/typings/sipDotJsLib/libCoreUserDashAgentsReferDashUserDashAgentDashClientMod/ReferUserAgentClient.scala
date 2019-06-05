@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- sipDotJsLib.libCoreMessagesMethodsReferMod.OutgoingReferRequest because Already inherited */ @JSImport("sip.js/lib/Core/user-agents/refer-user-agent-client", "ReferUserAgentClient")
+- sipDotJsLib.libCoreMessagesMethodsReferMod.OutgoingReferRequest because Already inherited */ @JSImport("sip.js/lib/core/user-agents/refer-user-agent-client", "ReferUserAgentClient")
 @js.native
 class ReferUserAgentClient protected ()
   extends sipDotJsLib.libCoreUserDashAgentsUserDashAgentDashClientMod.UserAgentClient {

@@ -12,7 +12,7 @@ trait PropsBase extends js.Object {
     * one of "best fit" (default) | "numeric"
     */
   var style: js.UndefOr[
-    reactDashIntlLib.reactDashIntlLibStrings.`best-fit` | reactDashIntlLib.reactDashIntlLibStrings.numeric
+    (reactDashIntlLib.reactDashIntlLibStrings.`best fit`) | reactDashIntlLib.reactDashIntlLibStrings.numeric
   ] = js.undefined
   /*
     * one of "second", "minute", "hour", "day", "month" or "year"
@@ -28,7 +28,7 @@ object PropsBase {
   def apply(
     format: java.lang.String = null,
     initialNow: js.Any = null,
-    style: reactDashIntlLib.reactDashIntlLibStrings.`best-fit` | reactDashIntlLib.reactDashIntlLibStrings.numeric = null,
+    style: (reactDashIntlLib.reactDashIntlLibStrings.`best fit`) | reactDashIntlLib.reactDashIntlLibStrings.numeric = null,
     units: reactDashIntlLib.reactDashIntlLibStrings.second | reactDashIntlLib.reactDashIntlLibStrings.minute | reactDashIntlLib.reactDashIntlLibStrings.hour | reactDashIntlLib.reactDashIntlLibStrings.day | reactDashIntlLib.reactDashIntlLibStrings.month | reactDashIntlLib.reactDashIntlLibStrings.year = null,
     updateInterval: scala.Int | scala.Double = null
   ): PropsBase = {

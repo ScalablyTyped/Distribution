@@ -21,10 +21,10 @@ class DTMF protected ()
   var tone: java.lang.String = js.native
   var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
   def init_incoming(request: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest): scala.Unit = js.native
-  def onDialogError(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
+  def onDialogError(response: sipDotJsLib.libCoreMod.IncomingResponseMessage): scala.Unit = js.native
   def onRequestTimeout(): scala.Unit = js.native
   def onTransportError(): scala.Unit = js.native
-  def receiveResponse(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
+  def receiveResponse(response: sipDotJsLib.libCoreMod.IncomingResponseMessage): scala.Unit = js.native
   def send(): scala.Unit = js.native
   def send(options: js.Any): scala.Unit = js.native
 }

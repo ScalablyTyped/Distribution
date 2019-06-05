@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait S3KeyFilter extends js.Object {
+  /**
+    * 
+    */
   var FilterRules: js.UndefOr[FilterRuleList] = js.undefined
 }
 

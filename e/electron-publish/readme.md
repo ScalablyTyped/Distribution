@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-publish
 
-Typings are for version 20.41.0
+Typings are for version 20.43.0
 
 ## Library description:
 Part of [electron-builder](https://github.com/electron-userland/electron-builder).

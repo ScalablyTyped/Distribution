@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NodeGroupConfiguration extends js.Object {
   /**
-    * The 4-digit id for the node group these configuration values apply to.
+    * Either the ElastiCache for Redis supplied 4-digit id or a user supplied id for the node group these configuration values apply to.
     */
   var NodeGroupId: js.UndefOr[AllowedNodeGroupId] = js.undefined
   /**

@@ -1917,6 +1917,7 @@ object microflowsNs extends js.Object {
   /* static members */
   @js.native
   object ErrorHandlingType extends js.Object {
+    var Abort: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ErrorHandlingType = js.native
     var Continue: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ErrorHandlingType = js.native
     var Custom: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ErrorHandlingType = js.native
     var CustomWithoutRollBack: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ErrorHandlingType = js.native

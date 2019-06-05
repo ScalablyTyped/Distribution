@@ -10,7 +10,7 @@ trait OutgoingRequest extends js.Object {
   /** Delegate providing custom handling of this outgoing request. */
   var delegate: js.UndefOr[OutgoingRequestDelegate] = js.native
   /** The outgoing message. */
-  val message: sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
+  val message: sipDotJsLib.libCoreMessagesOutgoingDashRequestDashMessageMod.OutgoingRequestMessage = js.native
   /**
     * Sends a CANCEL message targeting this request to the UAS.
     * @param reason Reason for canceling request.

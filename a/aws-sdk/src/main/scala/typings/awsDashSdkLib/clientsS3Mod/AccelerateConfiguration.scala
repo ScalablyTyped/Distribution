@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AccelerateConfiguration extends js.Object {
   /**
-    * The accelerate configuration of the bucket.
+    * Specifies the transfer acceleration status of the bucket.
     */
   var Status: js.UndefOr[BucketAccelerateStatus] = js.undefined
 }

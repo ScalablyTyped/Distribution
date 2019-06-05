@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait AbortMultipartUploadRequest extends js.Object {
   /**
-    * 
+    * Name of the bucket to which the multipart upload was initiated.
     */
   var Bucket: BucketName
   /**
-    * 
+    * Key of the object for which the multipart upload was initiated.
     */
   var Key: ObjectKey
   var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
   /**
-    * 
+    * Upload ID that identifies the multipart upload.
     */
   var UploadId: MultipartUploadId
 }

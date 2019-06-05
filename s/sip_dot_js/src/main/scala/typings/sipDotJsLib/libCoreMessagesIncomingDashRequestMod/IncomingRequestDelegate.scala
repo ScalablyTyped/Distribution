@@ -18,22 +18,25 @@ trait IncomingRequestDelegate extends js.Object {
     * @param message Incoming CANCEL request message.
     */
   var onCancel: js.UndefOr[
-    js.Function1[/* message */ sipDotJsLib.libSIPMessageMod.IncomingRequest, scala.Unit]
+    js.Function1[
+      /* message */ sipDotJsLib.libCoreMessagesIncomingDashRequestDashMessageMod.IncomingRequestMessage, 
+      scala.Unit
+    ]
   ] = js.undefined
   /**
     * A transport error occurred attempted to send a response.
     * @param error Transport error.
     */
   var onTransportError: js.UndefOr[
-    js.Function1[/* error */ sipDotJsLib.libExceptionsMod.ExceptionsNs.TransportError, scala.Unit]
+    js.Function1[/* error */ sipDotJsLib.libCoreExceptionsMod.TransportError, scala.Unit]
   ] = js.undefined
 }
 
 object IncomingRequestDelegate {
   @scala.inline
   def apply(
-    onCancel: /* message */ sipDotJsLib.libSIPMessageMod.IncomingRequest => scala.Unit = null,
-    onTransportError: /* error */ sipDotJsLib.libExceptionsMod.ExceptionsNs.TransportError => scala.Unit = null
+    onCancel: /* message */ sipDotJsLib.libCoreMessagesIncomingDashRequestDashMessageMod.IncomingRequestMessage => scala.Unit = null,
+    onTransportError: /* error */ sipDotJsLib.libCoreExceptionsMod.TransportError => scala.Unit = null
   ): IncomingRequestDelegate = {
     val __obj = js.Dynamic.literal()
     if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1(onCancel))

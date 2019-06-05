@@ -11,7 +11,7 @@ trait PutObjectAclRequest extends js.Object {
     */
   var ACL: js.UndefOr[ObjectCannedACL] = js.undefined
   /**
-    * 
+    * Contains the elements that set the ACL permissions for an object per grantee.
     */
   var AccessControlPolicy: js.UndefOr[AccessControlPolicy] = js.undefined
   /**

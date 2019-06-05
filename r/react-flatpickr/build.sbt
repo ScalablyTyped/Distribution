@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-flatpickr"
-version := "3.7-dt-20190426Z-f04e0f"
+version := "3.7-dt-20190426Z-184e93"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-8a2cd0",
-  "org.scalablytyped" %%% "flatpickr" % "4.5.7-3f644d",
+  "org.scalablytyped" %%% "flatpickr" % "4.6.0-83d9ef",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c843c9",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1fde1d",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")

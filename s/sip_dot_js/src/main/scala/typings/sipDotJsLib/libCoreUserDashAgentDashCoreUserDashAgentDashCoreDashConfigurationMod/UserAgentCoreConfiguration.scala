@@ -5,110 +5,102 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait UserAgentCoreConfiguration extends js.Object {
   /**
     * Address-of-Record (AOR).
+    * @remarks
     * https://tools.ietf.org/html/rfc3261#section-6
     */
-  var aor: sipDotJsLib.libURIMod.URI = js.native
+  var aor: sipDotJsLib.libCoreMessagesMod.URI
   /**
     * Contact.
+    * @remarks
     * https://tools.ietf.org/html/rfc3261#section-8.1.1.8
     */
-  var contact: Contact = js.native
+  var contact: Contact
+  /**
+    * From header display name.
+    */
+  var displayName: java.lang.String
+  /**
+    * Force Via header field transport to TCP.
+    */
+  var hackViaTcp: scala.Boolean
   /**
     * Logger factory.
     */
-  var loggerFactory: sipDotJsLib.libLoggerFactoryMod.LoggerFactory = js.native
+  var loggerFactory: sipDotJsLib.libCoreLogMod.LoggerFactory
+  /**
+    * Preloaded route set.
+    */
+  var routeSet: js.Array[java.lang.String]
+  /**
+    * Unique instance id.
+    */
+  var sipjsId: java.lang.String
+  /**
+    * Option tags of supported SIP extenstions.
+    */
+  var supportedOptionTags: js.Array[java.lang.String]
+  /**
+    * Option tags of supported SIP extenstions.
+    * Used in resposnes.
+    * @remarks
+    * FIXME: Make this go away.
+    */
+  var supportedOptionTagsResponse: js.Array[java.lang.String]
   /**
     * User-Agent header field value.
+    * @remarks
     * https://tools.ietf.org/html/rfc3261#section-20.41
     */
-  var userAgentHeaderFieldValue: js.UndefOr[java.lang.String] = js.native
+  var userAgentHeaderFieldValue: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Force use of "rport" Via header field parameter.
+    * @remarks
+    * https://www.ietf.org/rfc/rfc3581.txt
+    */
+  var viaForceRport: scala.Boolean
+  /**
+    * Via header field host name or network address.
+    * @remarks
+    * The Via header field indicates the path taken by the request so far
+    * and indicates the path that should be followed in routing responses.
+    */
+  var viaHost: java.lang.String
   /**
     * DEPRECATED
     * Authentication factory function.
     */
-  def authenticationFactory(): js.UndefOr[sipDotJsLib.libDigestAuthenticationMod.DigestAuthentication] = js.native
-  /**
-    * DEPRECATED: This is a hack to get around `IncomingResponseMessage`
-    * requiring a `UA` for construction. Hopefully that will go away soon.
-    * Meanwhile, this method is here to avoid leaking `UA` further than it
-    * needs to be. Please remove this when no longer needed here.
-    *
-    * Returns a "fake" 408 (Request Timeout) response.
-    */
-  def onRequestTimeoutResponseMessageFactory(): sipDotJsLib.libSIPMessageMod.IncomingResponse = js.native
-  /**
-    * DEPRECATED: This is a hack to get around `IncomingResponseMessage`
-    * requiring a `UA` for construction. Hopefully that will go away soon.
-    * Meanwhile, this method is here to avoid leaking `UA` further than it
-    * needs to be. Please remove this when no longer needed here.
-    *
-    * Returns a "fake" 503 (Service Unavailable) response.
-    */
-  def onTransportErrorResponseMessageFactory(): sipDotJsLib.libSIPMessageMod.IncomingResponse = js.native
-  /**
-    * DEPRECATED: This is a hack to get around `OutgoingRequestMessage`
-    * requiring a `UA` for construction. Hopefully that will go away soon.
-    * Meanwhile, this method is here to avoid leaking `UA` further than it
-    * needs to be. Please remove this when no longer needed here.
-    * It's simply a cover function for OutgoingRequestMessage constructor
-    *
-    * Outgoing request message factory function.
-    * @param method Method.
-    * @param ruri Request-URI.
-    * @param params Various parameters.
-    * @param extraHeaders Extra headers to add.
-    * @param body Message body.
-    */
-  def outgoingRequestMessageFactory(method: java.lang.String, ruri: java.lang.String, params: sipDotJsLib.Anon_CallId): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
-  def outgoingRequestMessageFactory(
-    method: java.lang.String,
-    ruri: java.lang.String,
-    params: sipDotJsLib.Anon_CallId,
-    extraHeaders: js.Array[java.lang.String]
-  ): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
-  def outgoingRequestMessageFactory(
-    method: java.lang.String,
-    ruri: java.lang.String,
-    params: sipDotJsLib.Anon_CallId,
-    extraHeaders: js.Array[java.lang.String],
-    body: java.lang.String
-  ): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
-  def outgoingRequestMessageFactory(
-    method: java.lang.String,
-    ruri: java.lang.String,
-    params: sipDotJsLib.Anon_CallId,
-    extraHeaders: js.Array[java.lang.String],
-    body: sipDotJsLib.Anon_BodyContentType
-  ): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
-  def outgoingRequestMessageFactory(method: java.lang.String, ruri: sipDotJsLib.libURIMod.URI, params: sipDotJsLib.Anon_CallId): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
-  def outgoingRequestMessageFactory(
-    method: java.lang.String,
-    ruri: sipDotJsLib.libURIMod.URI,
-    params: sipDotJsLib.Anon_CallId,
-    extraHeaders: js.Array[java.lang.String]
-  ): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
-  def outgoingRequestMessageFactory(
-    method: java.lang.String,
-    ruri: sipDotJsLib.libURIMod.URI,
-    params: sipDotJsLib.Anon_CallId,
-    extraHeaders: js.Array[java.lang.String],
-    body: java.lang.String
-  ): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
-  def outgoingRequestMessageFactory(
-    method: java.lang.String,
-    ruri: sipDotJsLib.libURIMod.URI,
-    params: sipDotJsLib.Anon_CallId,
-    extraHeaders: js.Array[java.lang.String],
-    body: sipDotJsLib.Anon_BodyContentType
-  ): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
+  def authenticationFactory(): js.UndefOr[sipDotJsLib.libCoreMessagesMod.DigestAuthentication]
   /**
     * DEPRECATED: This is a hack to get around `Transport`
     * requiring the `UA` to start for construction.
     */
-  def transportAccessor(): js.UndefOr[sipDotJsLib.libTransportMod.Transport] = js.native
+  def transportAccessor(): js.UndefOr[sipDotJsLib.libCoreTransportMod.Transport]
+}
+
+object UserAgentCoreConfiguration {
+  @scala.inline
+  def apply(
+    aor: sipDotJsLib.libCoreMessagesMod.URI,
+    authenticationFactory: () => js.UndefOr[sipDotJsLib.libCoreMessagesMod.DigestAuthentication],
+    contact: Contact,
+    displayName: java.lang.String,
+    hackViaTcp: scala.Boolean,
+    loggerFactory: sipDotJsLib.libCoreLogMod.LoggerFactory,
+    routeSet: js.Array[java.lang.String],
+    sipjsId: java.lang.String,
+    supportedOptionTags: js.Array[java.lang.String],
+    supportedOptionTagsResponse: js.Array[java.lang.String],
+    transportAccessor: () => js.UndefOr[sipDotJsLib.libCoreTransportMod.Transport],
+    viaForceRport: scala.Boolean,
+    viaHost: java.lang.String,
+    userAgentHeaderFieldValue: java.lang.String = null
+  ): UserAgentCoreConfiguration = {
+    val __obj = js.Dynamic.literal(aor = aor, authenticationFactory = js.Any.fromFunction0(authenticationFactory), contact = contact, displayName = displayName, hackViaTcp = hackViaTcp, loggerFactory = loggerFactory, routeSet = routeSet, sipjsId = sipjsId, supportedOptionTags = supportedOptionTags, supportedOptionTagsResponse = supportedOptionTagsResponse, transportAccessor = js.Any.fromFunction0(transportAccessor), viaForceRport = viaForceRport, viaHost = viaHost)
+    if (userAgentHeaderFieldValue != null) __obj.updateDynamic("userAgentHeaderFieldValue")(userAgentHeaderFieldValue)
+    __obj.asInstanceOf[UserAgentCoreConfiguration]
+  }
 }
 

@@ -48,6 +48,7 @@ These comments are from the typescript definitions and might be useful:
 //                  Diamond Lewis <https://github.com/dplewis>
 //                  Jong Eun Lee <https://github.com/yomybaby>
 //                  Julien Quere <https://github.com/jlnquere>
+//                  Yago Tomé <https://github.com/yagotome>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 

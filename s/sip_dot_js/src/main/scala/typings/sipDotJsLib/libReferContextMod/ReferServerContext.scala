@@ -15,14 +15,14 @@ class ReferServerContext protected ()
   var contact: java.lang.String = js.native
   var cseq: scala.Double = js.native
   var fromTag: java.lang.String = js.native
-  var fromUri: sipDotJsLib.libURIMod.URI = js.native
+  var fromUri: sipDotJsLib.libCoreMod.URI = js.native
   var id: java.lang.String = js.native
-  var referTo: sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader = js.native
+  var referTo: sipDotJsLib.libCoreMod.NameAddrHeader = js.native
   var referredBy: js.UndefOr[java.lang.String] = js.native
   var referredSession: js.UndefOr[
     sipDotJsLib.libSessionMod.InviteClientContext | sipDotJsLib.libSessionMod.InviteServerContext
   ] = js.native
-  var remoteTarget: sipDotJsLib.libURIMod.URI = js.native
+  var remoteTarget: sipDotJsLib.libCoreMod.URI = js.native
   var replaces: js.UndefOr[java.lang.String] = js.native
   var routeSet: js.Array[java.lang.String] = js.native
   var session: js.UndefOr[js.Any] = js.native
@@ -31,7 +31,7 @@ class ReferServerContext protected ()
     sipDotJsLib.libSessionMod.InviteClientContext | sipDotJsLib.libSessionMod.InviteServerContext
   ] = js.native
   var toTag: java.lang.String = js.native
-  var toUri: sipDotJsLib.libURIMod.URI = js.native
+  var toUri: sipDotJsLib.libCoreMod.URI = js.native
   def accept(options: sipDotJsLib.libReferContextMod.ReferServerContextNs.AcceptOptions): scala.Unit = js.native
   def accept(
     options: sipDotJsLib.libReferContextMod.ReferServerContextNs.AcceptOptions,
@@ -69,6 +69,6 @@ class ReferServerContext protected ()
     callback: js.Function1[/* referServerContext */ this.type, scala.Unit]
   ): this.type = js.native
   def reject(options: sipDotJsLib.libReferContextMod.ReferServerContextNs.RejectOptions): scala.Unit = js.native
-  def sendNotify(body: java.lang.String): scala.Unit = js.native
+  def sendNotify(bodyStr: java.lang.String): scala.Unit = js.native
 }
 

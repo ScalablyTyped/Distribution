@@ -12,6 +12,7 @@ trait BaseLoggerOptions extends js.Object {
   var colorize: js.UndefOr[scala.Boolean] = js.undefined
   var dynamicMeta: js.UndefOr[DynamicMetaFunction] = js.undefined
   var expressFormat: js.UndefOr[scala.Boolean] = js.undefined
+  var format: js.UndefOr[logformLib.logformMod.Format] = js.undefined
   var ignoreRoute: js.UndefOr[RouteFilter] = js.undefined
   var ignoredRoutes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var level: js.UndefOr[java.lang.String | DynamicLevelFunction] = js.undefined
@@ -35,6 +36,7 @@ object BaseLoggerOptions {
     colorize: js.UndefOr[scala.Boolean] = js.undefined,
     dynamicMeta: DynamicMetaFunction = null,
     expressFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    format: logformLib.logformMod.Format = null,
     ignoreRoute: RouteFilter = null,
     ignoredRoutes: js.Array[java.lang.String] = null,
     level: java.lang.String | DynamicLevelFunction = null,
@@ -55,6 +57,7 @@ object BaseLoggerOptions {
     if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize)
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(dynamicMeta)
     if (!js.isUndefined(expressFormat)) __obj.updateDynamic("expressFormat")(expressFormat)
+    if (format != null) __obj.updateDynamic("format")(format)
     if (ignoreRoute != null) __obj.updateDynamic("ignoreRoute")(ignoreRoute)
     if (ignoredRoutes != null) __obj.updateDynamic("ignoredRoutes")(ignoredRoutes)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Transport protected ()
   extends sipDotJsLib.libWebTransportMod.Transport {
-  def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger) = this()
-  def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger, options: js.Any) = this()
+  def this(logger: sipDotJsLib.libCoreMod.Logger) = this()
+  def this(logger: sipDotJsLib.libCoreMod.Logger, options: js.Any) = this()
 }
 
 /* static members */

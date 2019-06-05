@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StorageClassAnalysis extends js.Object {
   /**
-    * A container used to describe how data related to the storage class analysis should be exported.
+    * Specifies how data related to the storage class analysis for an Amazon S3 bucket should be exported.
     */
   var DataExport: js.UndefOr[StorageClassAnalysisDataExport] = js.undefined
 }

@@ -18,6 +18,9 @@ trait S3Location extends js.Object {
     * The canned ACL to apply to the restore results.
     */
   var CannedACL: js.UndefOr[ObjectCannedACL] = js.undefined
+  /**
+    * 
+    */
   var Encryption: js.UndefOr[Encryption] = js.undefined
   /**
     * The prefix that is prepended to the restore results for this request.

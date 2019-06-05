@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
   * TypeScript, inheriting from Error and properly setting up the prototype chain...
   */
 @js.native
-trait LegacyException extends Exception {
+trait LegacyException
+  extends sipDotJsLib.libCoreMod.Exception {
   var code: scala.Double = js.native
   var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
 }

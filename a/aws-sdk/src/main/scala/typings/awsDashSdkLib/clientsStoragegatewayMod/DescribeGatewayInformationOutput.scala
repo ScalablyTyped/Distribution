@@ -51,6 +51,10 @@ trait DescribeGatewayInformationOutput extends js.Object {
     * A list of up to 50 tags assigned to the gateway, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
     */
   var Tags: js.UndefOr[Tags] = js.undefined
+  /**
+    * The configuration settings for the virtual private cloud (VPC) endpoint for your gateway. 
+    */
+  var VPCEndpoint: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object DescribeGatewayInformationOutput {
@@ -67,7 +71,8 @@ object DescribeGatewayInformationOutput {
     GatewayType: GatewayType = null,
     LastSoftwareUpdate: LastSoftwareUpdate = null,
     NextUpdateAvailabilityDate: NextUpdateAvailabilityDate = null,
-    Tags: Tags = null
+    Tags: Tags = null,
+    VPCEndpoint: java.lang.String = null
   ): DescribeGatewayInformationOutput = {
     val __obj = js.Dynamic.literal()
     if (Ec2InstanceId != null) __obj.updateDynamic("Ec2InstanceId")(Ec2InstanceId)
@@ -82,6 +87,7 @@ object DescribeGatewayInformationOutput {
     if (LastSoftwareUpdate != null) __obj.updateDynamic("LastSoftwareUpdate")(LastSoftwareUpdate)
     if (NextUpdateAvailabilityDate != null) __obj.updateDynamic("NextUpdateAvailabilityDate")(NextUpdateAvailabilityDate)
     if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    if (VPCEndpoint != null) __obj.updateDynamic("VPCEndpoint")(VPCEndpoint)
     __obj.asInstanceOf[DescribeGatewayInformationOutput]
   }
 }

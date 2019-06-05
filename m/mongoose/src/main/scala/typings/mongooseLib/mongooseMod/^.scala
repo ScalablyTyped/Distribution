@@ -15,6 +15,7 @@ object ^ extends js.Object {
   var PromiseProvider: js.Any = js.native
   var STATES: ConnectionStates = js.native
   var connection: Connection = js.native
+  var connections: js.Array[Connection] = js.native
   var version: java.lang.String = js.native
   def connect(uris: java.lang.String): js.Promise[Mongoose] = js.native
   def connect(

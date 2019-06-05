@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pino"
-version := "5.8-dt-20190506Z-cd15d8"
+version := "5.8-dt-20190603Z-ce3934"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

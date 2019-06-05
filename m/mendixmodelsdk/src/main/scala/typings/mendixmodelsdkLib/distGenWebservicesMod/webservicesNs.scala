@@ -18,6 +18,10 @@ object webservicesNs extends js.Object {
     var association: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IAssociationBase | scala.Null = js.native
     var associationByContract: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdAssociation | scala.Null = js.native
     val associationQualifiedName: java.lang.String | scala.Null = js.native
+    /**
+      * In version 8.0.0: introduced
+      */
+    var exposedAssociationName: java.lang.String = js.native
   }
   
   @js.native

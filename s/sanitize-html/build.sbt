@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sanitize-html"
-version := "1.18.2-dt-20190326Z-abcb4e"
+version := "1.20.1-dt-20190603Z-70aa4a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

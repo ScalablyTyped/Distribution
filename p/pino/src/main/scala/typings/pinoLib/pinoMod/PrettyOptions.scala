@@ -40,6 +40,10 @@ trait PrettyOptions extends js.Object {
     */
   var search: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The key in the JSON object to use for timestamp display. Default: "time".
+    */
+  var timestampKey: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Translate the epoch time value into a human readable date and time string.
     * This flag also can set the format string to apply when translating the date to human readable format.
     * The default format is yyyy-mm-dd HH:MM:ss.l o in UTC.
@@ -59,6 +63,7 @@ object PrettyOptions {
     levelFirst: js.UndefOr[scala.Boolean] = js.undefined,
     messageKey: java.lang.String = null,
     search: java.lang.String = null,
+    timestampKey: java.lang.String = null,
     translateTime: scala.Boolean | java.lang.String = null
   ): PrettyOptions = {
     val __obj = js.Dynamic.literal()
@@ -70,6 +75,7 @@ object PrettyOptions {
     if (!js.isUndefined(levelFirst)) __obj.updateDynamic("levelFirst")(levelFirst)
     if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey)
     if (search != null) __obj.updateDynamic("search")(search)
+    if (timestampKey != null) __obj.updateDynamic("timestampKey")(timestampKey)
     if (translateTime != null) __obj.updateDynamic("translateTime")(translateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyOptions]
   }

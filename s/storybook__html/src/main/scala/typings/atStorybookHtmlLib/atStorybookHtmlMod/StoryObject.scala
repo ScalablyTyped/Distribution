@@ -10,6 +10,6 @@ trait StoryObject extends js.Object {
   var name: java.lang.String = js.native
   @JSName("render")
   var render_Original: RenderFunction = js.native
-  def render(): java.lang.String | js.Array[java.lang.String] = js.native
+  def render(): java.lang.String | js.Array[java.lang.String] | stdLib.HTMLElement = js.native
 }
 

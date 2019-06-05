@@ -10,6 +10,9 @@ trait PutBucketNotificationConfigurationRequest extends js.Object {
     * 
     */
   var Bucket: BucketName
+  /**
+    * 
+    */
   var NotificationConfiguration: awsDashSdkLib.clientsS3Mod.NotificationConfiguration
 }
 

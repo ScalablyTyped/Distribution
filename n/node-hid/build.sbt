@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-hid"
-version := "0.7-dt-20180409Z-f758cc"
+version := "0.7-dt-20190603Z-ae2026"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

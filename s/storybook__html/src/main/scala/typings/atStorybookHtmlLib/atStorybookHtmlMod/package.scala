@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object atStorybookHtmlMod {
   type DecoratorParameters = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type RenderFunction = js.Function0[java.lang.String | js.Array[java.lang.String]]
+  type RenderFunction = js.Function0[java.lang.String | js.Array[java.lang.String] | stdLib.HTMLElement]
   type StoryDecorator = js.Function2[
     /* story */ RenderFunction, 
     /* context */ atStorybookHtmlLib.Anon_Kind, 

@@ -19,11 +19,11 @@ trait InventoryConfiguration extends js.Object {
     */
   var Id: InventoryId
   /**
-    * Specifies which object version(s) to included in the inventory results.
+    * Object versions to include in the inventory list. If set to All, the list includes all the object versions, which adds the version-related fields VersionId, IsLatest, and DeleteMarker to the list. If set to Current, the list does not contain these version-related fields.
     */
   var IncludedObjectVersions: InventoryIncludedObjectVersions
   /**
-    * Specifies whether the inventory is enabled or disabled.
+    * Specifies whether the inventory is enabled or disabled. If set to True, an inventory list is generated. If set to False, no inventory list is generated.
     */
   var IsEnabled: awsDashSdkLib.clientsS3Mod.IsEnabled
   /**

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tar-stream"
-version := "1.6-dt-20180512Z-e7b3de"
+version := "1.6-dt-20190603Z-03ecb7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

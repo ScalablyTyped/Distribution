@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "geodesy"
-version := "1.2-dt-20190212Z-3aa4df"
+version := "1.2-dt-20190604Z-3aa4df"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,7 +10,7 @@ object reactDashIntlLibStrings {
   sealed trait Messages extends js.Object
   
   @js.native
-  sealed trait `best-fit` extends js.Object
+  sealed trait `best fit` extends js.Object
   
   @js.native
   sealed trait cardinal extends js.Object
@@ -63,7 +63,7 @@ object reactDashIntlLibStrings {
   @scala.inline
   def Messages: Messages = "Messages".asInstanceOf[Messages]
   @scala.inline
-  def `best-fit`: `best-fit` = "best-fit".asInstanceOf[`best-fit`]
+  def `best fit`: `best fit` = "best fit".asInstanceOf[`best fit`]
   @scala.inline
   def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
   @scala.inline

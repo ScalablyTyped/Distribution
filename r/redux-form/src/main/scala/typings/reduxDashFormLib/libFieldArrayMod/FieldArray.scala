@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("redux-form/lib/FieldArray", "FieldArray")
 @js.native
-class FieldArray[P] ()
-  extends GenericFieldArray[js.Any, P]
+class FieldArray[P, FieldValue] () extends GenericFieldArray[FieldValue, P]
 

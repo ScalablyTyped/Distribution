@@ -48,6 +48,7 @@ class QuestionSelectBase protected () extends Question {
   val isOtherSelected: scala.Boolean = js.native
   var isSettingDefaultValue: scala.Boolean = js.native
   val locOtherErrorText: LocalizableString = js.native
+  val locOtherPlaceHolder: LocalizableString = js.native
   val locOtherText: LocalizableString = js.native
   /**
     * The text that shows when the other item is choosed by the other input is empty.
@@ -58,6 +59,10 @@ class QuestionSelectBase protected () extends Question {
     * @see hasOther
     */
   val otherItem: ItemValue = js.native
+  /**
+    *  Use this property to set the place holder text for other or comment field  .
+    */
+  var otherPlaceHolder: java.lang.String = js.native
   /**
     * Use this property to set the different text for other item.
     */

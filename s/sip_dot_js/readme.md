@@ -1,7 +1,7 @@
 
 # Scala.js typings for sip_dot_js
 
-Typings are for version 0.14.1
+Typings are for version 0.14.2
 
 ## Library description:
 A simple, intuitive, and powerful JavaScript signaling library
@@ -35,6 +35,22 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
+/**
+ * An Exception is considered a condition that a reasonable application may wish to catch.
+ * An Error indicates serious problems that a reasonable application should not try to catch.
+ * @public
+ */
+/**
+ * Log levels.
+ * @public
+ */
+/**
+ * SIP Methods
+ * @internal
+ */
+/**
+ * @internal
+ */
 /** Transaction state. */
 /**
  * The SessionDescriptionHandler interface SIP.js is expecting.

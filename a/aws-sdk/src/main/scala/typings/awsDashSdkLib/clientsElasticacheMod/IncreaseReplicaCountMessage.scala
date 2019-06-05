@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IncreaseReplicaCountMessage extends js.Object {
   /**
-    * If True, the number of replica nodes is increased immediately. If False, the number of replica nodes is increased during the next maintenance window.
+    * If True, the number of replica nodes is increased immediately. ApplyImmediately=False is not currently supported.
     */
   var ApplyImmediately: Boolean
   /**

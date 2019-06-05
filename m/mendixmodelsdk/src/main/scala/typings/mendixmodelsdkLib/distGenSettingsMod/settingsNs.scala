@@ -120,6 +120,7 @@ object settingsNs extends js.Object {
   /**
     * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
     *
+    * In version 8.0.0: deleted
     * In version 6.9.0: introduced
     */
   @js.native
@@ -429,7 +430,7 @@ object settingsNs extends js.Object {
       * of the parent ProjectSettings element passed as argument.
       *
       * Warning! Can only be used on models with the following Mendix meta model versions:
-      *  6.9.0 and higher
+      *  6.9.0 to 7.23.0
       */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.JavaActionsSettings = js.native
   }

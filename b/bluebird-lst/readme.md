@@ -1,7 +1,7 @@
 
 # Scala.js typings for bluebird-lst
 
-Typings are for version 1.0.8
+Typings are for version 1.0.9
 
 ## Library description:
 Bluebird — longStackTraces: true, cancellation: true

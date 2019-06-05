@@ -15,7 +15,7 @@ object ExceptionsNs extends js.Object {
     */
   @js.native
   class ClosedSessionDescriptionHandlerError ()
-    extends sipDotJsLib.libExceptionsMod.Exception
+    extends sipDotJsLib.libCoreMod.Exception
   
   @js.native
   class ConfigurationError protected ()
@@ -69,32 +69,14 @@ object ExceptionsNs extends js.Object {
     */
   @js.native
   class TerminatedSessionError ()
-    extends sipDotJsLib.libExceptionsMod.Exception
-  
-  /**
-    * Indicates that the operation could not be completed given the current transaction state.
-    */
-  @js.native
-  class TransactionStateError ()
-    extends sipDotJsLib.libExceptionsMod.Exception {
-    def this(message: java.lang.String) = this()
-  }
-  
-  /**
-    * Transport error.
-    */
-  @js.native
-  class TransportError ()
-    extends sipDotJsLib.libExceptionsMod.Exception {
-    def this(message: java.lang.String) = this()
-  }
+    extends sipDotJsLib.libCoreMod.Exception
   
   /**
     * Unsupported session description content type.
     */
   @js.native
   class UnsupportedSessionDescriptionContentTypeError ()
-    extends sipDotJsLib.libExceptionsMod.Exception {
+    extends sipDotJsLib.libCoreMod.Exception {
     def this(message: java.lang.String) = this()
   }
   

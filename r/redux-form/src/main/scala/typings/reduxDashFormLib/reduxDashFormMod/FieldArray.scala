@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("redux-form", "FieldArray")
 @js.native
-class FieldArray[P] ()
-  extends reduxDashFormLib.libFieldArrayMod.FieldArray[P]
+class FieldArray[P, FieldValue] ()
+  extends reduxDashFormLib.libFieldArrayMod.FieldArray[P, FieldValue]
 

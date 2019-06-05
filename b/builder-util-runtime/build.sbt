@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "builder-util-runtime"
-version := "8.2.2-70ee1e"
+version := "8.2.4-70ee1e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

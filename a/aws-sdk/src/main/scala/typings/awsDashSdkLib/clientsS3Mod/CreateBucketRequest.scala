@@ -39,7 +39,7 @@ trait CreateBucketRequest extends js.Object {
     */
   var GrantWriteACP: js.UndefOr[GrantWriteACP] = js.undefined
   /**
-    * Specifies whether you want S3 Object Lock to be enabled for the new bucket.
+    * Specifies whether you want Amazon S3 object lock to be enabled for the new bucket.
     */
   var ObjectLockEnabledForBucket: js.UndefOr[ObjectLockEnabledForBucket] = js.undefined
 }

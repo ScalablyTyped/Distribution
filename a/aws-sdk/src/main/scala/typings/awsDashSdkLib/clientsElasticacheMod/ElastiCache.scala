@@ -49,6 +49,52 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[AuthorizeCacheSecurityGroupIngressResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Apply the service update. For more information on service updates and applying them, see Applying Service Updates.
+    */
+  def batchApplyUpdateAction(): awsDashSdkLib.libRequestMod.Request[UpdateActionResultsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def batchApplyUpdateAction(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateActionResultsMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateActionResultsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Apply the service update. For more information on service updates and applying them, see Applying Service Updates.
+    */
+  def batchApplyUpdateAction(params: BatchApplyUpdateActionMessage): awsDashSdkLib.libRequestMod.Request[UpdateActionResultsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def batchApplyUpdateAction(
+    params: BatchApplyUpdateActionMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateActionResultsMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateActionResultsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Stop the service update. For more information on service updates and stopping them, see Stopping Service Updates.
+    */
+  def batchStopUpdateAction(): awsDashSdkLib.libRequestMod.Request[UpdateActionResultsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def batchStopUpdateAction(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateActionResultsMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateActionResultsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Stop the service update. For more information on service updates and stopping them, see Stopping Service Updates.
+    */
+  def batchStopUpdateAction(params: BatchStopUpdateActionMessage): awsDashSdkLib.libRequestMod.Request[UpdateActionResultsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def batchStopUpdateAction(
+    params: BatchStopUpdateActionMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateActionResultsMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateActionResultsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Makes a copy of an existing snapshot.  This operation is valid for Redis only.   Users or groups that have permissions to use the CopySnapshot operation can create their own Amazon S3 buckets and copy snapshots to it. To control access to your snapshots, use an IAM policy to control who has the ability to use the CopySnapshot operation. For more information about using IAM to control the use of ElastiCache operations, see Exporting Snapshots and Authentication &amp; Access Control.  You could receive the following error messages.  Error Messages     Error Message: The S3 bucket %s is outside of the region.  Solution: Create an Amazon S3 bucket in the same region as your snapshot. For more information, see Step 1: Create an Amazon S3 Bucket in the ElastiCache User Guide.    Error Message: The S3 bucket %s does not exist.  Solution: Create an Amazon S3 bucket in the same region as your snapshot. For more information, see Step 1: Create an Amazon S3 Bucket in the ElastiCache User Guide.    Error Message: The S3 bucket %s is not owned by the authenticated user.  Solution: Create an Amazon S3 bucket in the same region as your snapshot. For more information, see Step 1: Create an Amazon S3 Bucket in the ElastiCache User Guide.    Error Message: The authenticated user does not have sufficient permissions to perform the desired activity.  Solution: Contact your system administrator to get the needed permissions.    Error Message: The S3 bucket %s already contains an object with key %s.  Solution: Give the TargetSnapshotName a new and unique value. If exporting a snapshot, you could alternatively create a new Amazon S3 bucket and use this same value for TargetSnapshotName.    Error Message:  ElastiCache has not been granted READ permissions %s on the S3 Bucket.  Solution: Add List and Read permissions on the bucket. For more information, see Step 2: Grant ElastiCache Access to Your Amazon S3 Bucket in the ElastiCache User Guide.    Error Message:  ElastiCache has not been granted WRITE permissions %s on the S3 Bucket.  Solution: Add Upload/Delete permissions on the bucket. For more information, see Step 2: Grant ElastiCache Access to Your Amazon S3 Bucket in the ElastiCache User Guide.    Error Message:  ElastiCache has not been granted READ_ACP permissions %s on the S3 Bucket.  Solution: Add View Permissions on the bucket. For more information, see Step 2: Grant ElastiCache Access to Your Amazon S3 Bucket in the ElastiCache User Guide.  
     */
   def copySnapshot(): awsDashSdkLib.libRequestMod.Request[CopySnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -233,7 +279,7 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[DecreaseReplicaCountResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a previously provisioned cluster. DeleteCacheCluster deletes all associated cache nodes, node endpoints and the cluster itself. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the cluster; you cannot cancel or revert this operation. This operation cannot be used to delete a cluster that is the last read replica of a replication group or node group (shard) that has Multi-AZ mode enabled or a cluster from a Redis (cluster mode enabled) replication group. This operation is not valid for Redis (cluster mode enabled) clusters.
+    * Deletes a previously provisioned cluster. DeleteCacheCluster deletes all associated cache nodes, node endpoints and the cluster itself. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the cluster; you cannot cancel or revert this operation. This operation is not valid for:   Redis (cluster mode enabled) clusters   A cluster that is the last read replica of a replication group   A node group (shard) that has Multi-AZ mode enabled   A cluster from a Redis (cluster mode enabled) replication group   A cluster that is not in the available state  
     */
   def deleteCacheCluster(): awsDashSdkLib.libRequestMod.Request[DeleteCacheClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCacheCluster(
@@ -244,7 +290,7 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteCacheClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a previously provisioned cluster. DeleteCacheCluster deletes all associated cache nodes, node endpoints and the cluster itself. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the cluster; you cannot cancel or revert this operation. This operation cannot be used to delete a cluster that is the last read replica of a replication group or node group (shard) that has Multi-AZ mode enabled or a cluster from a Redis (cluster mode enabled) replication group. This operation is not valid for Redis (cluster mode enabled) clusters.
+    * Deletes a previously provisioned cluster. DeleteCacheCluster deletes all associated cache nodes, node endpoints and the cluster itself. When you receive a successful response from this operation, Amazon ElastiCache immediately begins deleting the cluster; you cannot cancel or revert this operation. This operation is not valid for:   Redis (cluster mode enabled) clusters   A cluster that is the last read replica of a replication group   A node group (shard) that has Multi-AZ mode enabled   A cluster from a Redis (cluster mode enabled) replication group   A cluster that is not in the available state  
     */
   def deleteCacheCluster(params: DeleteCacheClusterMessage): awsDashSdkLib.libRequestMod.Request[DeleteCacheClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCacheCluster(
@@ -439,7 +485,7 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[CacheParameterGroupDetails, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of cache security group descriptions. If a cache security group name is specified, the list contains only the description of that group.
+    * Returns a list of cache security group descriptions. If a cache security group name is specified, the list contains only the description of that group. This applicable only when you have ElastiCache in Classic setup 
     */
   def describeCacheSecurityGroups(): awsDashSdkLib.libRequestMod.Request[CacheSecurityGroupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCacheSecurityGroups(
@@ -450,7 +496,7 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[CacheSecurityGroupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of cache security group descriptions. If a cache security group name is specified, the list contains only the description of that group.
+    * Returns a list of cache security group descriptions. If a cache security group name is specified, the list contains only the description of that group. This applicable only when you have ElastiCache in Classic setup 
     */
   def describeCacheSecurityGroups(params: DescribeCacheSecurityGroupsMessage): awsDashSdkLib.libRequestMod.Request[CacheSecurityGroupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCacheSecurityGroups(
@@ -462,7 +508,7 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[CacheSecurityGroupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of cache subnet group descriptions. If a subnet group name is specified, the list contains only the description of that group.
+    * Returns a list of cache subnet group descriptions. If a subnet group name is specified, the list contains only the description of that group. This is applicable only when you have ElastiCache in VPC setup. All ElastiCache clusters now launch in VPC by default. 
     */
   def describeCacheSubnetGroups(): awsDashSdkLib.libRequestMod.Request[CacheSubnetGroupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCacheSubnetGroups(
@@ -473,7 +519,7 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[CacheSubnetGroupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Returns a list of cache subnet group descriptions. If a subnet group name is specified, the list contains only the description of that group.
+    * Returns a list of cache subnet group descriptions. If a subnet group name is specified, the list contains only the description of that group. This is applicable only when you have ElastiCache in VPC setup. All ElastiCache clusters now launch in VPC by default. 
     */
   def describeCacheSubnetGroups(params: DescribeCacheSubnetGroupsMessage): awsDashSdkLib.libRequestMod.Request[CacheSubnetGroupMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def describeCacheSubnetGroups(
@@ -592,6 +638,29 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[ReservedCacheNodesOfferingMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Returns details of the service updates
+    */
+  def describeServiceUpdates(): awsDashSdkLib.libRequestMod.Request[ServiceUpdatesMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeServiceUpdates(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ServiceUpdatesMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ServiceUpdatesMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns details of the service updates
+    */
+  def describeServiceUpdates(params: DescribeServiceUpdatesMessage): awsDashSdkLib.libRequestMod.Request[ServiceUpdatesMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeServiceUpdates(
+    params: DescribeServiceUpdatesMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ ServiceUpdatesMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[ServiceUpdatesMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Returns information about cluster or replication group snapshots. By default, DescribeSnapshots lists all of your snapshots; it can optionally describe a single snapshot, or just the snapshots associated with a particular cache cluster.  This operation is valid for Redis only. 
     */
   def describeSnapshots(): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotsListMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -614,6 +683,29 @@ trait ElastiCache
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeSnapshotsListMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns details of the update actions 
+    */
+  def describeUpdateActions(): awsDashSdkLib.libRequestMod.Request[UpdateActionsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeUpdateActions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateActionsMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateActionsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns details of the update actions 
+    */
+  def describeUpdateActions(params: DescribeUpdateActionsMessage): awsDashSdkLib.libRequestMod.Request[UpdateActionsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeUpdateActions(
+    params: DescribeUpdateActionsMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateActionsMessage, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateActionsMessage, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Dynamically increases the number of replics in a Redis (cluster mode disabled) replication group or the number of replica nodes in one or more node groups (shards) of a Redis (cluster mode enabled) replication group. This operation is performed with no cluster down time.
     */
@@ -745,7 +837,7 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifyCacheSubnetGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the settings for a replication group. For Redis (cluster mode enabled) clusters, this operation cannot be used to change a cluster's node type or engine version. For more information, see:    Scaling for Amazon ElastiCache for Redis—Redis (cluster mode enabled) in the ElastiCache User Guide    ModifyReplicationGroupShardConfiguration in the ElastiCache API Reference    This operation is valid for Redis only. 
+    * Modifies the settings for a replication group. For Redis (cluster mode enabled) clusters, this operation cannot be used to change a cluster's node type or engine version. For more information, see:    Scaling for Amazon ElastiCache for Redis (cluster mode enabled) in the ElastiCache User Guide    ModifyReplicationGroupShardConfiguration in the ElastiCache API Reference    This operation is valid for Redis only. 
     */
   def modifyReplicationGroup(): awsDashSdkLib.libRequestMod.Request[ModifyReplicationGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyReplicationGroup(
@@ -756,7 +848,7 @@ trait ElastiCache
     ]
   ): awsDashSdkLib.libRequestMod.Request[ModifyReplicationGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the settings for a replication group. For Redis (cluster mode enabled) clusters, this operation cannot be used to change a cluster's node type or engine version. For more information, see:    Scaling for Amazon ElastiCache for Redis—Redis (cluster mode enabled) in the ElastiCache User Guide    ModifyReplicationGroupShardConfiguration in the ElastiCache API Reference    This operation is valid for Redis only. 
+    * Modifies the settings for a replication group. For Redis (cluster mode enabled) clusters, this operation cannot be used to change a cluster's node type or engine version. For more information, see:    Scaling for Amazon ElastiCache for Redis (cluster mode enabled) in the ElastiCache User Guide    ModifyReplicationGroupShardConfiguration in the ElastiCache API Reference    This operation is valid for Redis only. 
     */
   def modifyReplicationGroup(params: ModifyReplicationGroupMessage): awsDashSdkLib.libRequestMod.Request[ModifyReplicationGroupResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyReplicationGroup(

@@ -44,6 +44,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Alex Young <https://github.com/alsiola>
 //                 Anton Novik <https://github.com/tehbi4>
 //                 Huw Martin <https://github.com/huwmartin>
+//                 Matt Davis <https://github.com/m-b-davis>
 //                 Ethan Resnick <https://github.com/ethanresnick>
 //                 Tim de Koning <https://github.com/reggino>
 //                 Maddi Joyce <https://github.com/maddijoyce>
@@ -52,6 +53,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Ethan Setnik <https://github.com/esetnik>
 //                 Walter Barbagallo <https://github.com/bwlt>
 //                 Kota Marusue <https://github.com/mrsekut>
+//                 Andrew Luca <https://github.com/iamandrewluca>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.0
 

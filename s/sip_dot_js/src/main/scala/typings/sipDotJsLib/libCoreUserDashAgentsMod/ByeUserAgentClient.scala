@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/user-agents", "ByeUserAgentClient")
+@JSImport("sip.js/lib/core/user-agents", "ByeUserAgentClient")
 @js.native
 class ByeUserAgentClient protected ()
   extends sipDotJsLib.libCoreUserDashAgentsByeDashUserDashAgentDashClientMod.ByeUserAgentClient {

@@ -19,7 +19,7 @@ trait DescribeHostsRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[Integer] = js.undefined
   /**
-    * The token to retrieve the next page of results.
+    * The token to use to retrieve the next page of results.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

@@ -61,6 +61,11 @@ import scala.scalajs.js.annotation._
     */
   val extraDistFiles: js.UndefOr[js.Array[java.lang.String] | java.lang.String | scala.Null] = js.undefined
   /**
+    * Whether to let electron-osx-sign validate the signing or not.
+    * @default false
+    */
+  val gatekeeperAssess: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Whether your app has to be signed with hardened runtime.
     * @default false
     */
@@ -124,6 +129,7 @@ object MacConfiguration {
     entitlementsInherit: java.lang.String = null,
     extendInfo: js.Any = null,
     extraDistFiles: js.Array[java.lang.String] | java.lang.String = null,
+    gatekeeperAssess: js.UndefOr[scala.Boolean] = js.undefined,
     hardenedRuntime: js.UndefOr[scala.Boolean] = js.undefined,
     helperBundleId: java.lang.String = null,
     icon: java.lang.String = null,
@@ -149,6 +155,7 @@ object MacConfiguration {
     if (entitlementsInherit != null) __obj.updateDynamic("entitlementsInherit")(entitlementsInherit)
     if (extendInfo != null) __obj.updateDynamic("extendInfo")(extendInfo)
     if (extraDistFiles != null) __obj.updateDynamic("extraDistFiles")(extraDistFiles.asInstanceOf[js.Any])
+    if (!js.isUndefined(gatekeeperAssess)) __obj.updateDynamic("gatekeeperAssess")(gatekeeperAssess)
     if (!js.isUndefined(hardenedRuntime)) __obj.updateDynamic("hardenedRuntime")(hardenedRuntime)
     if (helperBundleId != null) __obj.updateDynamic("helperBundleId")(helperBundleId)
     if (icon != null) __obj.updateDynamic("icon")(icon)

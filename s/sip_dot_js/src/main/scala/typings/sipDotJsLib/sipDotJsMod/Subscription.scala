@@ -17,8 +17,8 @@ class Subscription protected ()
     * @param options Options bucket.
     */
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, event: java.lang.String) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, event: java.lang.String) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, event: java.lang.String) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, event: java.lang.String, options: sipDotJsLib.libSubscriptionMod.SubscriptionOptions) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, event: java.lang.String, options: sipDotJsLib.libSubscriptionMod.SubscriptionOptions) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, event: java.lang.String, options: sipDotJsLib.libSubscriptionMod.SubscriptionOptions) = this()
 }
 

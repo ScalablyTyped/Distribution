@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/session", "SessionState")
+@JSImport("sip.js/lib/core/session", "SessionState")
 @js.native
 object SessionState extends js.Object {
   /* "AckWait" */ val AckWait: sipDotJsLib.libCoreSessionSessionMod.SessionState.AckWait with java.lang.String = js.native

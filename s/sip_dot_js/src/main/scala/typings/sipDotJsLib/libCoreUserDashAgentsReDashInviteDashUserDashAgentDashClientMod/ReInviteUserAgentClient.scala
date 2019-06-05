@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- sipDotJsLib.libCoreMessagesMethodsInviteMod.OutgoingInviteRequest because var conflicts: delegate. Inlined  */ @JSImport("sip.js/lib/Core/user-agents/re-invite-user-agent-client", "ReInviteUserAgentClient")
+- sipDotJsLib.libCoreMessagesMethodsInviteMod.OutgoingInviteRequest because var conflicts: delegate. Inlined  */ @JSImport("sip.js/lib/core/user-agents/re-invite-user-agent-client", "ReInviteUserAgentClient")
 @js.native
 class ReInviteUserAgentClient protected ()
   extends sipDotJsLib.libCoreUserDashAgentsUserDashAgentDashClientMod.UserAgentClient {

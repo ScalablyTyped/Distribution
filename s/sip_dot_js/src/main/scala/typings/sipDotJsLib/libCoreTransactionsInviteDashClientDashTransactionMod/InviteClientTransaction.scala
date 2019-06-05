@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/transactions/invite-client-transaction", "InviteClientTransaction")
+@JSImport("sip.js/lib/core/transactions/invite-client-transaction", "InviteClientTransaction")
 @js.native
 class InviteClientTransaction protected ()
   extends sipDotJsLib.libCoreTransactionsClientDashTransactionMod.ClientTransaction {
@@ -20,7 +20,7 @@ class InviteClientTransaction protected ()
     * @param transport The transport.
     * @param user The transaction user.
     */
-  def this(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser) = this()
+  def this(request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage, transport: sipDotJsLib.libCoreTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser) = this()
   var B: js.Any = js.native
   var D: js.Any = js.native
   var M: js.Any = js.native
@@ -86,6 +86,6 @@ class InviteClientTransaction protected ()
     *
     * @param ack The outgoing ACK request.
     */
-  def ackResponse(ack: sipDotJsLib.libSIPMessageMod.OutgoingRequest): scala.Unit = js.native
+  def ackResponse(ack: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage): scala.Unit = js.native
 }
 

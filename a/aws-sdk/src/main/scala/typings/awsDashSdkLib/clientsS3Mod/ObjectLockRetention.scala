@@ -11,7 +11,7 @@ trait ObjectLockRetention extends js.Object {
     */
   var Mode: js.UndefOr[ObjectLockRetentionMode] = js.undefined
   /**
-    * The date on which this Object Lock Retention will expire.
+    * The date on which this object lock retention expires.
     */
   var RetainUntilDate: js.UndefOr[_Date] = js.undefined
 }

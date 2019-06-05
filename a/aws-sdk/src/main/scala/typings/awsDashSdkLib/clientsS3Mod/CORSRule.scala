@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait CORSRule extends js.Object {
   /**
-    * Specifies which headers are allowed in a pre-flight OPTIONS request.
+    * Headers that are specified in the Access-Control-Request-Headers header. These headers are allowed in a preflight OPTIONS request. In response to any preflight OPTIONS request, Amazon S3 returns any requested headers that are allowed.
     */
   var AllowedHeaders: js.UndefOr[AllowedHeaders] = js.undefined
   /**
-    * Identifies HTTP methods that the domain/origin specified in the rule is allowed to execute.
+    * An HTTP method that you allow the origin to execute. Valid values are GET, PUT, HEAD, POST, and DELETE.
     */
   var AllowedMethods: awsDashSdkLib.clientsS3Mod.AllowedMethods
   /**

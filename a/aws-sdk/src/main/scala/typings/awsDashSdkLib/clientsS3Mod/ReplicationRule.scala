@@ -6,18 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReplicationRule extends js.Object {
+  /**
+    * 
+    */
   var DeleteMarkerReplication: js.UndefOr[DeleteMarkerReplication] = js.undefined
   /**
     * A container for information about the replication destination.
     */
   var Destination: awsDashSdkLib.clientsS3Mod.Destination
+  /**
+    * 
+    */
   var Filter: js.UndefOr[ReplicationRuleFilter] = js.undefined
   /**
     * A unique identifier for the rule. The maximum value is 255 characters.
     */
   var ID: js.UndefOr[ID] = js.undefined
   /**
-    * An object keyname prefix that identifies the object or objects to which the rule applies. The maximum prefix length is 1,024 characters. 
+    * An object keyname prefix that identifies the object or objects to which the rule applies. The maximum prefix length is 1,024 characters. To include all objects in a bucket, specify an empty string. 
     */
   var Prefix: js.UndefOr[Prefix] = js.undefined
   /**
@@ -25,11 +31,11 @@ trait ReplicationRule extends js.Object {
     */
   var Priority: js.UndefOr[Priority] = js.undefined
   /**
-    * A container that describes additional filters for identifying the source objects that you want to replicate. You can choose to enable or disable the replication of these objects. Currently, Amazon S3 supports only the filter that you can specify for objects created with server-side encryption using an AWS KMS-Managed Key (SSE-KMS).   If you want Amazon S3 to replicate objects created with server-side encryption using AWS KMS-Managed Keys. 
+    * A container that describes additional filters for identifying the source objects that you want to replicate. You can choose to enable or disable the replication of these objects. Currently, Amazon S3 supports only the filter that you can specify for objects created with server-side encryption using an AWS KMS-Managed Key (SSE-KMS).
     */
   var SourceSelectionCriteria: js.UndefOr[SourceSelectionCriteria] = js.undefined
   /**
-    * If status isn't enabled, the rule is ignored.
+    * Specifies whether the rule is enabled.
     */
   var Status: ReplicationRuleStatus
 }

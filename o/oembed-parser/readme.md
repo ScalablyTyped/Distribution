@@ -38,6 +38,7 @@ These comments are from the typescript definitions and might be useful:
 // Type definitions for oembed-parser 1.2
 // Project: https://www.npmjs.com/package/oembed-parser
 // Definitions by: BendingBender <https://github.com/BendingBender>
+//                 CodeBast4rd <https://github.com/CodeBast4rd>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

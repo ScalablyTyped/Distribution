@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait BaseErrorLoggerOptions extends js.Object {
   var baseMeta: js.UndefOr[js.Object] = js.undefined
   var dynamicMeta: js.UndefOr[DynamicMetaFunction] = js.undefined
+  var format: js.UndefOr[logformLib.logformMod.Format] = js.undefined
   var level: js.UndefOr[java.lang.String | DynamicLevelFunction] = js.undefined
   var metaField: js.UndefOr[java.lang.String] = js.undefined
   var msg: js.UndefOr[MessageTemplate] = js.undefined
@@ -20,6 +21,7 @@ object BaseErrorLoggerOptions {
   def apply(
     baseMeta: js.Object = null,
     dynamicMeta: DynamicMetaFunction = null,
+    format: logformLib.logformMod.Format = null,
     level: java.lang.String | DynamicLevelFunction = null,
     metaField: java.lang.String = null,
     msg: MessageTemplate = null,
@@ -29,6 +31,7 @@ object BaseErrorLoggerOptions {
     val __obj = js.Dynamic.literal()
     if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta)
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(dynamicMeta)
+    if (format != null) __obj.updateDynamic("format")(format)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (metaField != null) __obj.updateDynamic("metaField")(metaField)
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])

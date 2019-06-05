@@ -28,6 +28,7 @@ trait CustomLocale extends js.Object {
   var ordinal: js.UndefOr[js.Function1[/* nth */ scala.Double, java.lang.String]] = js.undefined
   var rangeSeparator: js.UndefOr[java.lang.String] = js.undefined
   var scrollTitle: js.UndefOr[java.lang.String] = js.undefined
+  var time_24hr: js.UndefOr[scala.Boolean] = js.undefined
   var toggleTitle: js.UndefOr[java.lang.String] = js.undefined
   var weekAbbreviation: js.UndefOr[java.lang.String] = js.undefined
   var weekdays: flatpickrLib.Anon_Longhand
@@ -58,6 +59,7 @@ object CustomLocale {
     ordinal: /* nth */ scala.Double => java.lang.String = null,
     rangeSeparator: java.lang.String = null,
     scrollTitle: java.lang.String = null,
+    time_24hr: js.UndefOr[scala.Boolean] = js.undefined,
     toggleTitle: java.lang.String = null,
     weekAbbreviation: java.lang.String = null,
     yearAriaLabel: java.lang.String = null
@@ -69,6 +71,7 @@ object CustomLocale {
     if (ordinal != null) __obj.updateDynamic("ordinal")(js.Any.fromFunction1(ordinal))
     if (rangeSeparator != null) __obj.updateDynamic("rangeSeparator")(rangeSeparator)
     if (scrollTitle != null) __obj.updateDynamic("scrollTitle")(scrollTitle)
+    if (!js.isUndefined(time_24hr)) __obj.updateDynamic("time_24hr")(time_24hr)
     if (toggleTitle != null) __obj.updateDynamic("toggleTitle")(toggleTitle)
     if (weekAbbreviation != null) __obj.updateDynamic("weekAbbreviation")(weekAbbreviation)
     if (yearAriaLabel != null) __obj.updateDynamic("yearAriaLabel")(yearAriaLabel)

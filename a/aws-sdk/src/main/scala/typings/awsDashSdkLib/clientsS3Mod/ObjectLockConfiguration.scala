@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ObjectLockConfiguration extends js.Object {
   /**
-    * Indicates whether this bucket has an Object Lock configuration enabled.
+    * Indicates whether this bucket has an object lock configuration enabled.
     */
   var ObjectLockEnabled: js.UndefOr[ObjectLockEnabled] = js.undefined
   /**
-    * The Object Lock rule in place for the specified object.
+    * The object lock rule in place for the specified object.
     */
   var Rule: js.UndefOr[ObjectLockRule] = js.undefined
 }

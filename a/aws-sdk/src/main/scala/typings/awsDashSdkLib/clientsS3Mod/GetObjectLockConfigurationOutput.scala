@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetObjectLockConfigurationOutput extends js.Object {
   /**
-    * The specified bucket's Object Lock configuration.
+    * The specified bucket's object lock configuration.
     */
   var ObjectLockConfiguration: js.UndefOr[ObjectLockConfiguration] = js.undefined
 }

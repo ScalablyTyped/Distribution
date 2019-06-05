@@ -25,6 +25,7 @@ trait Locale extends js.Object {
   var months: flatpickrLib.Anon_LonghandShorthand
   var rangeSeparator: java.lang.String
   var scrollTitle: java.lang.String
+  var time_24hr: scala.Boolean
   var toggleTitle: java.lang.String
   var weekAbbreviation: java.lang.String
   var weekdays: flatpickrLib.Anon_Longhand
@@ -55,12 +56,13 @@ object Locale {
     ordinal: scala.Double => java.lang.String,
     rangeSeparator: java.lang.String,
     scrollTitle: java.lang.String,
+    time_24hr: scala.Boolean,
     toggleTitle: java.lang.String,
     weekAbbreviation: java.lang.String,
     weekdays: flatpickrLib.Anon_Longhand,
     yearAriaLabel: java.lang.String
   ): Locale = {
-    val __obj = js.Dynamic.literal(amPM = amPM, daysInMonth = daysInMonth, firstDayOfWeek = firstDayOfWeek, months = months, ordinal = js.Any.fromFunction1(ordinal), rangeSeparator = rangeSeparator, scrollTitle = scrollTitle, toggleTitle = toggleTitle, weekAbbreviation = weekAbbreviation, weekdays = weekdays, yearAriaLabel = yearAriaLabel)
+    val __obj = js.Dynamic.literal(amPM = amPM, daysInMonth = daysInMonth, firstDayOfWeek = firstDayOfWeek, months = months, ordinal = js.Any.fromFunction1(ordinal), rangeSeparator = rangeSeparator, scrollTitle = scrollTitle, time_24hr = time_24hr, toggleTitle = toggleTitle, weekAbbreviation = weekAbbreviation, weekdays = weekdays, yearAriaLabel = yearAriaLabel)
   
     __obj.asInstanceOf[Locale]
   }

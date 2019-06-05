@@ -19,7 +19,7 @@ object Props {
     children: /* formattedRelative */ java.lang.String => reactLib.reactMod.ReactNode = null,
     format: java.lang.String = null,
     initialNow: js.Any = null,
-    style: reactDashIntlLib.reactDashIntlLibStrings.`best-fit` | reactDashIntlLib.reactDashIntlLibStrings.numeric = null,
+    style: (reactDashIntlLib.reactDashIntlLibStrings.`best fit`) | reactDashIntlLib.reactDashIntlLibStrings.numeric = null,
     units: reactDashIntlLib.reactDashIntlLibStrings.second | reactDashIntlLib.reactDashIntlLibStrings.minute | reactDashIntlLib.reactDashIntlLibStrings.hour | reactDashIntlLib.reactDashIntlLibStrings.day | reactDashIntlLib.reactDashIntlLibStrings.month | reactDashIntlLib.reactDashIntlLibStrings.year = null,
     updateInterval: scala.Int | scala.Double = null
   ): Props = {

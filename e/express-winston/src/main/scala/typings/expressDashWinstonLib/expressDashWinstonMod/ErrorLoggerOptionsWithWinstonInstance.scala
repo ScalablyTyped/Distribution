@@ -17,6 +17,7 @@ object ErrorLoggerOptionsWithWinstonInstance {
     winstonInstance: winstonLib.winstonMod.Logger,
     baseMeta: js.Object = null,
     dynamicMeta: DynamicMetaFunction = null,
+    format: logformLib.logformMod.Format = null,
     level: java.lang.String | DynamicLevelFunction = null,
     metaField: java.lang.String = null,
     msg: MessageTemplate = null,
@@ -26,6 +27,7 @@ object ErrorLoggerOptionsWithWinstonInstance {
     val __obj = js.Dynamic.literal(winstonInstance = winstonInstance)
     if (baseMeta != null) __obj.updateDynamic("baseMeta")(baseMeta)
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(dynamicMeta)
+    if (format != null) __obj.updateDynamic("format")(format)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     if (metaField != null) __obj.updateDynamic("metaField")(metaField)
     if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])

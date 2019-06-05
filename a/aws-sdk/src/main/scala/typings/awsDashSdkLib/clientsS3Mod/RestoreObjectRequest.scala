@@ -15,6 +15,9 @@ trait RestoreObjectRequest extends js.Object {
     */
   var Key: ObjectKey
   var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
+  /**
+    * 
+    */
   var RestoreRequest: js.UndefOr[RestoreRequest] = js.undefined
   /**
     * 

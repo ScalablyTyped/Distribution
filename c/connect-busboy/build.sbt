@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "connect-busboy"
-version := "0.0-dt-20190405Z-6b2bd2"
+version := "0.0-dt-20190405Z-c4acf8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-8931e7",
   "org.scalablytyped" %%% "busboy" % "v0.2.13-dt-20190322Z-ae263c",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-85ff12",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-ba6df1",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-1a5daf",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-1f48f2",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-49fefe",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",

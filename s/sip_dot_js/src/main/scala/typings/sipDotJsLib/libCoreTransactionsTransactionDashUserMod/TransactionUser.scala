@@ -9,7 +9,7 @@ trait TransactionUser extends js.Object {
   /**
     * Logger factory.
     */
-  var loggerFactory: sipDotJsLib.libLoggerFactoryMod.LoggerFactory
+  var loggerFactory: sipDotJsLib.libCoreLogMod.LoggerFactory
   /**
     * Callback for notification of transaction state changes.
     *
@@ -39,16 +39,16 @@ trait TransactionUser extends js.Object {
     * https://tools.ietf.org/html/rfc6026
     */
   var onTransportError: js.UndefOr[
-    js.Function1[/* error */ sipDotJsLib.libExceptionsMod.ExceptionsNs.TransportError, scala.Unit]
+    js.Function1[/* error */ sipDotJsLib.libCoreExceptionsMod.TransportError, scala.Unit]
   ] = js.undefined
 }
 
 object TransactionUser {
   @scala.inline
   def apply(
-    loggerFactory: sipDotJsLib.libLoggerFactoryMod.LoggerFactory,
+    loggerFactory: sipDotJsLib.libCoreLogMod.LoggerFactory,
     onStateChange: /* newState */ sipDotJsLib.libCoreTransactionsTransactionDashStateMod.TransactionState => scala.Unit = null,
-    onTransportError: /* error */ sipDotJsLib.libExceptionsMod.ExceptionsNs.TransportError => scala.Unit = null
+    onTransportError: /* error */ sipDotJsLib.libCoreExceptionsMod.TransportError => scala.Unit = null
   ): TransactionUser = {
     val __obj = js.Dynamic.literal(loggerFactory = loggerFactory)
     if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1(onStateChange))

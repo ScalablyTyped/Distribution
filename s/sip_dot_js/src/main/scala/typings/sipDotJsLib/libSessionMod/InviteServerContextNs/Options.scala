@@ -13,7 +13,7 @@ trait Options extends js.Object {
     sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers
   ] = js.undefined
   var onInfo: js.UndefOr[
-    js.Function1[/* request */ sipDotJsLib.libSIPMessageMod.IncomingRequest, scala.Unit]
+    js.Function1[/* request */ sipDotJsLib.libCoreMod.IncomingRequestMessage, scala.Unit]
   ] = js.undefined
   var reasonPhrase: js.UndefOr[java.lang.String] = js.undefined
   var rel100: js.UndefOr[scala.Boolean] = js.undefined
@@ -30,7 +30,7 @@ object Options {
     body: js.Any = null,
     extraHeaders: js.Array[java.lang.String] = null,
     modifiers: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers = null,
-    onInfo: /* request */ sipDotJsLib.libSIPMessageMod.IncomingRequest => scala.Unit = null,
+    onInfo: /* request */ sipDotJsLib.libCoreMod.IncomingRequestMessage => scala.Unit = null,
     reasonPhrase: java.lang.String = null,
     rel100: js.UndefOr[scala.Boolean] = js.undefined,
     sessionDescriptionHandlerOptions: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerOptions = null,

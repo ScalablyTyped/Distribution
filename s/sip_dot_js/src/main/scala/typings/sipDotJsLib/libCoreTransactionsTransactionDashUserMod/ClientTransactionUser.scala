@@ -23,18 +23,18 @@ trait ClientTransactionUser extends TransactionUser {
     * https://tools.ietf.org/html/rfc3261#section-17.1
     */
   var receiveResponse: js.UndefOr[
-    js.Function1[/* response */ sipDotJsLib.libSIPMessageMod.IncomingResponse, scala.Unit]
+    js.Function1[/* response */ sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage, scala.Unit]
   ] = js.undefined
 }
 
 object ClientTransactionUser {
   @scala.inline
   def apply(
-    loggerFactory: sipDotJsLib.libLoggerFactoryMod.LoggerFactory,
+    loggerFactory: sipDotJsLib.libCoreLogMod.LoggerFactory,
     onRequestTimeout: () => scala.Unit = null,
     onStateChange: /* newState */ sipDotJsLib.libCoreTransactionsTransactionDashStateMod.TransactionState => scala.Unit = null,
-    onTransportError: /* error */ sipDotJsLib.libExceptionsMod.ExceptionsNs.TransportError => scala.Unit = null,
-    receiveResponse: /* response */ sipDotJsLib.libSIPMessageMod.IncomingResponse => scala.Unit = null
+    onTransportError: /* error */ sipDotJsLib.libCoreExceptionsMod.TransportError => scala.Unit = null,
+    receiveResponse: /* response */ sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage => scala.Unit = null
   ): ClientTransactionUser = {
     val __obj = js.Dynamic.literal(loggerFactory = loggerFactory)
     if (onRequestTimeout != null) __obj.updateDynamic("onRequestTimeout")(js.Any.fromFunction0(onRequestTimeout))

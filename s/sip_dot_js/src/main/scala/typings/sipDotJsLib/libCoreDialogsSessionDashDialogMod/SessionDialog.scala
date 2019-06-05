@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/dialogs/session-dialog", "SessionDialog")
+@JSImport("sip.js/lib/core/dialogs/session-dialog", "SessionDialog")
 @js.native
 class SessionDialog protected ()
   extends sipDotJsLib.libCoreDialogsDialogMod.Dialog
@@ -36,7 +36,7 @@ class SessionDialog protected ()
   override val localTag: java.lang.String = js.native
   /** Local URI. */
   /* InferMemberOverrides */
-  override val localURI: sipDotJsLib.libURIMod.URI = js.native
+  override val localURI: sipDotJsLib.libCoreMessagesMod.URI = js.native
   var logger: js.Any = js.native
   var reinviteUserAgentClient: js.UndefOr[
     sipDotJsLib.libCoreUserDashAgentsReDashInviteDashUserDashAgentDashClientMod.ReInviteUserAgentClient
@@ -49,10 +49,10 @@ class SessionDialog protected ()
   override val remoteTag: java.lang.String = js.native
   /** Remote Target. */
   /* InferMemberOverrides */
-  override val remoteTarget: sipDotJsLib.libURIMod.URI = js.native
+  override val remoteTarget: sipDotJsLib.libCoreMessagesMod.URI = js.native
   /** Remote URI. */
   /* InferMemberOverrides */
-  override val remoteURI: sipDotJsLib.libURIMod.URI = js.native
+  override val remoteURI: sipDotJsLib.libCoreMessagesMod.URI = js.native
   /** The rseq of the last reliable response. */
   var rseq: js.Any = js.native
   var start2xxRetransmissionTimer: js.Any = js.native
@@ -79,14 +79,14 @@ class SessionDialog protected ()
   override def dispose(): scala.Unit = js.native
   /** Re-confirm the dialog. Only matters if handling re-INVITE request. */
   def reConfirm(): scala.Unit = js.native
-  def reliableSequenceGuard(message: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Boolean = js.native
-  def signalingStateTransition(message: OutgoingResponseBody): scala.Unit = js.native
+  def reliableSequenceGuard(message: sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage): scala.Boolean = js.native
+  def signalingStateTransition(message: sipDotJsLib.libCoreMessagesBodyMod.Body): scala.Unit = js.native
   /**
     * Update the signaling state of the dialog.
     * @param message The message to base the update off of.
     */
-  def signalingStateTransition(message: sipDotJsLib.libSIPMessageMod.IncomingRequest): scala.Unit = js.native
-  def signalingStateTransition(message: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
-  def signalingStateTransition(message: sipDotJsLib.libSIPMessageMod.OutgoingRequest): scala.Unit = js.native
+  def signalingStateTransition(message: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage): scala.Unit = js.native
+  def signalingStateTransition(message: sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage): scala.Unit = js.native
+  def signalingStateTransition(message: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage): scala.Unit = js.native
 }
 

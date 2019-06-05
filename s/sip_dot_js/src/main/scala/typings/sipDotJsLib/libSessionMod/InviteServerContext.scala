@@ -95,11 +95,11 @@ class InviteServerContext protected () extends Session {
   var onContextError: js.Any = js.native
   var prackArrived: js.Any = js.native
   var prackNeverArrived: js.Any = js.native
-  var request: sipDotJsLib.libSIPMessageMod.IncomingRequest = js.native
+  var request: sipDotJsLib.libCoreMod.IncomingRequestMessage = js.native
   var rseq: js.Any = js.native
   var setAnswer: js.Any = js.native
   var setOfferAndGetAnswer: js.Any = js.native
-  var transaction: sipDotJsLib.libCoreTransactionsMod.InviteServerTransaction | sipDotJsLib.libCoreTransactionsMod.NonInviteServerTransaction = js.native
+  var transaction: sipDotJsLib.libCoreMod.InviteServerTransaction | sipDotJsLib.libCoreMod.NonInviteServerTransaction = js.native
   /**
     * @throws {Exceptions.TerminatedSessionError} The session terminated before being accepted (i.e. cancel arrived).
     */
@@ -122,7 +122,7 @@ class InviteServerContext protected () extends Session {
     request: sipDotJsLib.libCoreMessagesMethodsPrackMod.IncomingPrackRequest,
     options: sipDotJsLib.Anon_Modifiers
   ): js.Promise[js.UndefOr[sipDotJsLib.libCoreMessagesBodyMod.Body]] = js.native
-  def onCancel(message: sipDotJsLib.libSIPMessageMod.IncomingRequest): scala.Unit = js.native
+  def onCancel(message: sipDotJsLib.libCoreMod.IncomingRequestMessage): scala.Unit = js.native
   /**
     * Report progress to the the caller.
     * Replies to the INVITE request with a 1xx provisional response.

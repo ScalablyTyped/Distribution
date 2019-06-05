@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SessionDescriptionHandler protected ()
   extends sipDotJsLib.libWebSessionDescriptionHandlerMod.SessionDescriptionHandler {
-  def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger, observer: sipDotJsLib.libWebSessionDescriptionHandlerObserverMod.SessionDescriptionHandlerObserver, options: js.Any) = this()
+  def this(logger: sipDotJsLib.libCoreMod.Logger, observer: sipDotJsLib.libWebSessionDescriptionHandlerObserverMod.SessionDescriptionHandlerObserver, options: js.Any) = this()
 }
 
 /* static members */

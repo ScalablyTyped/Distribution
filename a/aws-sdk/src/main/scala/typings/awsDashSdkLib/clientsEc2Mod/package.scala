@@ -38,6 +38,7 @@ package object clientsEc2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.`permanent-failure`
     - awsDashSdkLib.awsDashSdkLibStrings.released
     - awsDashSdkLib.awsDashSdkLibStrings.`released-permanent-failure`
+    - awsDashSdkLib.awsDashSdkLibStrings.pending
     - java.lang.String
   */
   type AllocationState = _AllocationState | java.lang.String
@@ -521,6 +522,12 @@ package object clientsEc2Mod {
   type HostInstanceList = js.Array[HostInstance]
   type HostList = js.Array[Host]
   type HostOfferingSet = js.Array[HostOffering]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.on
+    - awsDashSdkLib.awsDashSdkLibStrings.off
+    - java.lang.String
+  */
+  type HostRecovery = _HostRecovery | java.lang.String
   type HostReservationIdSet = js.Array[String]
   type HostReservationSet = js.Array[HostReservation]
   /* Rewritten from type alias, can be one of: 
@@ -760,6 +767,13 @@ package object clientsEc2Mod {
     - awsDashSdkLib.awsDashSdkLibStrings.i3DOT8xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.i3DOT16xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.i3DOTmetal
+    - awsDashSdkLib.awsDashSdkLibStrings.i3enDOTlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.i3enDOTxlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.i3enDOT2xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.i3enDOT3xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.i3enDOT6xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.i3enDOT12xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.i3enDOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.hi1DOT4xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.hs1DOT8xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.c1DOTmedium

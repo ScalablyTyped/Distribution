@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait EncryptionConfiguration extends js.Object {
   /**
-    * The ID of the AWS KMS key for the AWS Region where the destination bucket resides. Amazon S3 uses this key to encrypt the replica object. 
+    * Specifies the AWS KMS Key ID (Key ARN or Alias ARN) for the destination bucket. Amazon S3 uses this key to encrypt replica objects.
     */
   var ReplicaKmsKeyID: js.UndefOr[ReplicaKmsKeyID] = js.undefined
 }

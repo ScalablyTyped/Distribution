@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-node-runner"
-version := "0.6-dt-20190212Z-8b5215"
+version := "0.6-dt-20190212Z-a339d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-34b49e",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-901851",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-85ff12",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-ba6df1",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-1a5daf",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-1f48f2",
   "org.scalablytyped" %%% "hapi" % "18.0-dt-20190426Z-4d367a",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-750d70",

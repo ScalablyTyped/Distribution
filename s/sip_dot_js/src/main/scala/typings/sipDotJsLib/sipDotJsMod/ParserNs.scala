@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 object ParserNs extends js.Object {
   def getHeader(data: js.Any, headerStart: scala.Double): scala.Double = js.native
   def parseHeader(
-    message: sipDotJsLib.libSIPMessageMod.IncomingRequest,
+    message: sipDotJsLib.libCoreMod.IncomingRequestMessage,
     data: js.Any,
     headerStart: scala.Double,
     headerEnd: scala.Double
   ): scala.Boolean | sipDotJsLib.Anon_Error = js.native
   def parseHeader(
-    message: sipDotJsLib.libSIPMessageMod.IncomingResponse,
+    message: sipDotJsLib.libCoreMod.IncomingResponseMessage,
     data: js.Any,
     headerStart: scala.Double,
     headerEnd: scala.Double
@@ -27,8 +27,8 @@ object ParserNs extends js.Object {
     * @param {Object} logger object.
     * @returns {SIP.IncomingRequest|SIP.IncomingResponse|undefined}
     */
-  def parseMessage(data: java.lang.String, ua: sipDotJsLib.libUAMod.UA): js.UndefOr[
-    sipDotJsLib.libSIPMessageMod.IncomingRequest | sipDotJsLib.libSIPMessageMod.IncomingResponse
+  def parseMessage(data: java.lang.String, logger: sipDotJsLib.libCoreMod.Logger): js.UndefOr[
+    sipDotJsLib.libCoreMod.IncomingRequestMessage | sipDotJsLib.libCoreMod.IncomingResponseMessage
   ] = js.native
 }
 

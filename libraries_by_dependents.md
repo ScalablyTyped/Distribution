@@ -2388,6 +2388,7 @@
 | 50 | [reach__router](./r/reach__router) | Next generation Routing for React.
 | 50 | [react-paginate](./r/react-paginate) | A ReactJS component that creates a pagination.
 | 50 | [route-recognizer](./r/route-recognizer) | A lightweight JavaScript library that matches path
+| 50 | [stats-lite](./s/stats-lite) | A light statistical package that operates on numer
 | 50 | [stats_dot_js](./s/stats_dot_js) | JavaScript Performance Monitor
 | 50 | [torrent-stream](./t/torrent-stream) | Low level streaming torrent client that exposes fi
 | 50 | [twitter-text](./t/twitter-text) | official twitter text linkification
@@ -3260,6 +3261,7 @@
 | 23 | [uifabric__set-version](./u/uifabric__set-version) | Non-Fabric specific package version setter
 | 23 | [uritemplate](./u/uritemplate) | An UriTemplate implementation of rfc 6570
 | 23 | [weighted](./w/weighted) | A dead-simple module for picking a random item wit
+| 23 | [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library.
 | 23 | [yar](./y/yar) | Cookie jar plugin for Hapi
 | 22 | [any-db](./a/any-db) | Database-agnostic connection pooling, querying, an
 | 22 | [auto-launch](./a/auto-launch) | Launch node applications or executables at login (
@@ -3364,6 +3366,7 @@
 | 21 | [pouchdb-replication](./p/pouchdb-replication) | PouchDB's replication and sync algorithm, as a plu
 | 21 | [prismic-dom](./p/prismic-dom) | render prismic json fragments in HTML
 | 21 | [prosemirror-dropcursor](./p/prosemirror-dropcursor) | Drop cursor plugin for ProseMirror
+| 21 | [random](./r/random) | Seedable random number generator supporting many c
 | 21 | [rangy](./r/rangy) | A cross-browser DOM range and selection library
 | 21 | [re-reselect](./r/re-reselect) | Enhance Reselect selectors with deeper memoization
 | 21 | [react-csv](./r/react-csv) | Build CSV files on the fly basing on Array/literal
@@ -3443,6 +3446,7 @@
 | 19 | [dts-generator](./d/dts-generator) | .d.ts generator. Generates a single d.ts bundle co
 | 19 | [falcor](./f/falcor) | A JavaScript library for efficient data fetching.
 | 19 | [ftpd](./f/ftpd) | Node FTP Server
+| 19 | [gulp-terser](./g/gulp-terser) | gulp plugin, compressed es6+ code.
 | 19 | [html-tag-names](./h/html-tag-names) | List of known HTML tag-names
 | 19 | [intl-tel-input](./i/intl-tel-input) | A JavaScript plugin for entering and validating in
 | 19 | [jest-image-snapshot](./j/jest-image-snapshot) | Jest matcher for image comparisons. Most commonly 
@@ -3722,6 +3726,7 @@
 | 15 | [webidl2](./w/webidl2) | A WebIDL Parser
 | 15 | [webpack-config-utils](./w/webpack-config-utils) | Utilities to help your webpack config be easier to
 | 15 | [why-did-you-update](./w/why-did-you-update) | Patch React to discover unnecessary re-renders
+| 14 | [all-the-package-names](./a/all-the-package-names) | A list of all the public package names on npm. Upd
 | 14 | [angular-dynamic-locale](./a/angular-dynamic-locale) | A minimal module that adds the ability to dynamica
 | 14 | [angular-spinner](./a/angular-spinner) | Angular directive to show an animated spinner (usi
 | 14 | [angular-ui-tree](./a/angular-ui-tree) | An AngularJS UI component that can sort nested lis
@@ -4059,6 +4064,7 @@
 | 11 | [ui-router-extras](./u/ui-router-extras) | UI-Router Extras: Sticky states, Future States, De
 | 11 | [vkbeautify](./v/vkbeautify) | Pretty prints and minifies XML/JSON/SQL/CSS
 | 11 | [webpack-fail-plugin](./w/webpack-fail-plugin) | Webpack plugin that makes the process return an er
+| 11 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities.
 | 11 | [xhr-mock](./x/xhr-mock) | Utility for mocking XMLHttpRequest.
 | 10 | [amqp-rpc](./a/amqp-rpc) | AMQP RPC driver for node.js
 | 10 | [angular-strap](./a/angular-strap) | AngularStrap - AngularJS directives for Bootstrap
@@ -4155,6 +4161,7 @@
 | 10 | [vega-tooltip](./v/vega-tooltip) | A tooltip plugin for Vega-Lite and Vega visualizat
 | 10 | [virtual-keyboard](./v/virtual-keyboard) | Virtual Keyboard using jQuery UI
 | 10 | [webmidi](./w/webmidi) | WebMidi.js helps you tame the Web MIDI API. Send a
+| 10 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo
 | 9 | [a11y-dialog](./a/a11y-dialog) | A tiny script to make dialog windows accessible to
 | 9 | [amazon-cognito-auth-js](./a/amazon-cognito-auth-js) | Amazon Cognito Auth JavaScript SDK
 | 9 | [angular-scenario](./a/angular-scenario) | AngularJS module for end-to-end testing
@@ -4175,6 +4182,7 @@
 | 9 | [datatables_dot_net-fixedh](./d/datatables_dot_net-fixedheader) | FixedHeader for DataTables
 | 9 | [defer-promise](./d/defer-promise) | Isomorphic function returning a deferred promise. 
 | 9 | [detect-character-encoding](./d/detect-character-encoding) | Detect character encoding using ICU
+| 9 | [download-file-sync](./d/download-file-sync) | Does exactly what you expects
 | 9 | [electron-winstaller](./e/electron-winstaller) | Module to generate Windows installers for Electron
 | 9 | [express-cluster](./e/express-cluster) | Simple drop-in for express apps to spawn multiple 
 | 9 | [feathersjs__rest-client](./f/feathersjs__rest-client) | REST client services for different Ajax libraries
@@ -4643,6 +4651,7 @@
 | 6 | [vast-client](./v/vast-client) | JavaScript VAST Client
 | 6 | [vso-node-api](./v/vso-node-api) | Node client for Visual Studio Online/TFS REST APIs
 | 6 | [web-resource-inliner](./w/web-resource-inliner) | Inlines img, script and link tags into the same fi
+| 6 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress.
 | 6 | [wtfnode](./w/wtfnode) | Utility to help find out why Node isn't exiting
 | 6 | [yayson](./y/yayson) | A library for serializing and reading JSON API sta
 | 6 | [zipcodes](./z/zipcodes) | Useful zipcode database with helper methods
@@ -4806,6 +4815,7 @@
 | 5 | [universal-user-agent](./u/universal-user-agent) | Get a user agent string in both browser and node
 | 5 | [urlparser](./u/urlparser) | Url parser
 | 5 | [viewport-list](./v/viewport-list) | Return a list of devices and their viewports
+| 5 | [webpack-bugsnag-plugins](./w/webpack-bugsnag-plugins) | Webpack plugins for common Bugsnag actions
 | 5 | [webpack-plugin-serve](./w/webpack-plugin-serve) | A Development Server in a Webpack Plugin
 | 5 | [websequencediagrams](./w/websequencediagrams) | Interface to websequencediagrams.com
 | 5 | [which-pm](./w/which-pm) | Detects what package manager was used for installa
@@ -4975,6 +4985,7 @@
 | 4 | [webdriver](./w/webdriver) | A Node.js bindings implementation for the W3C WebD
 | 4 | [webpack-dotenv-plugin](./w/webpack-dotenv-plugin) | Use dotenv with webpack.
 | 4 | [wonder-frp](./w/wonder-frp) | * Wonder-FRP Wonder-FRP is a functional reactive p
+| 4 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded.
 | 4 | [xml-core](./x/xml-core) | xml-core is a set of classes that make it easier t
 | 4 | [xmlpoke](./x/xmlpoke) | Module for modifying XML files.
 | 4 | [xsd-schema-validator](./x/xsd-schema-validator) | A (XSD) schema validator for nodejs
@@ -5243,6 +5254,7 @@
 | 2 | [badgen](./b/badgen) | Fast svg badge generator.
 | 2 | [bash-glob](./b/bash-glob) | Bash-powered globbing for node.js
 | 2 | [basicauth-middleware](./b/basicauth-middleware) | Express js basic auth middleware
+| 2 | [basiclightbox](./b/basiclightbox) | The lightest lightbox ever made
 | 2 | [better-curry](./b/better-curry) | Forget Function.bind and func.apply(context, argum
 | 2 | [bingmaps](./b/bingmaps) | These are the official TypeScript definitions for 
 | 2 | [bootstrap-maxlength](./b/bootstrap-maxlength) | An visual feedback indicator for the MaxLength att
@@ -5265,6 +5277,7 @@
 | 2 | [cordova_dot_plugins_dot_d](./c/cordova_dot_plugins_dot_diagnostic) | Cordova/Phonegap plugin to check the state of Loca
 | 2 | [css-to-style](./c/css-to-style) | Transform a string of css rules into a style objec
 | 2 | [datadog-tracer](./d/datadog-tracer) | -
+| 2 | [date-range-array](./d/date-range-array) | Create an array of dates.
 | 2 | [dayzed](./d/dayzed) | Primitives to build simple, flexible, WAI-ARIA com
 | 2 | [diagnostic-channel](./d/diagnostic-channel) | Provides a context-saving pub/sub channel to conne
 | 2 | [diagnostic-channel-publis](./d/diagnostic-channel-publishers) | A collection of pre-built module patches that enab
@@ -5406,6 +5419,7 @@
 | 2 | [nivo__radar](./n/nivo__radar) | -
 | 2 | [nivo__waffle](./n/nivo__waffle) | -
 | 2 | [node-mysql-wrapper](./n/node-mysql-wrapper) | This is a node js module, written in TypeScript (m
+| 2 | [node-wget-promise](./n/node-wget-promise) | wget in Node, with Promise support
 | 2 | [npm-registry-package-info](./n/npm-registry-package-info) | Get package info for one or more packages.
 | 2 | [obelisk_dot_js](./o/obelisk_dot_js) | JavaScript Library for Building Pixel Isometric El
 | 2 | [oidc-token-manager](./o/oidc-token-manager) | Library to manage tokens obtained via OpenID Conne

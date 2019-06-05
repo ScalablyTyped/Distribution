@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/dialogs", "SessionDialog")
+@JSImport("sip.js/lib/core/dialogs", "SessionDialog")
 @js.native
 class SessionDialog protected ()
   extends sipDotJsLib.libCoreDialogsSessionDashDialogMod.SessionDialog {

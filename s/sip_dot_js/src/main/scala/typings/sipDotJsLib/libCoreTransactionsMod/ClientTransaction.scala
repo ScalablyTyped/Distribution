@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/transactions", "ClientTransaction")
+@JSImport("sip.js/lib/core/transactions", "ClientTransaction")
 @js.native
 abstract class ClientTransaction protected ()
   extends sipDotJsLib.libCoreTransactionsClientDashTransactionMod.ClientTransaction {
-  protected def this(_request: sipDotJsLib.libSIPMessageMod.OutgoingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser, state: sipDotJsLib.libCoreTransactionsTransactionDashStateMod.TransactionState, loggerCategory: java.lang.String) = this()
+  protected def this(_request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage, transport: sipDotJsLib.libCoreTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser, state: sipDotJsLib.libCoreTransactionsTransactionDashStateMod.TransactionState, loggerCategory: java.lang.String) = this()
 }
 
 /* static members */
-@JSImport("sip.js/lib/Core/transactions", "ClientTransaction")
+@JSImport("sip.js/lib/core/transactions", "ClientTransaction")
 @js.native
 object ClientTransaction extends js.Object {
   var makeId: js.Any = js.native

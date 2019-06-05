@@ -145,6 +145,10 @@ object flatpickrLibStrings {
   sealed trait br extends js.Object
   
   @js.native
+  sealed trait bs
+    extends flatpickrLib.distTypesLocaleMod.key
+  
+  @js.native
   sealed trait button extends js.Object
   
   @js.native
@@ -820,6 +824,8 @@ object flatpickrLibStrings {
   def body: body = "body".asInstanceOf[body]
   @scala.inline
   def br: br = "br".asInstanceOf[br]
+  @scala.inline
+  def bs: bs = "bs".asInstanceOf[bs]
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   @scala.inline

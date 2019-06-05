@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AnalyticsS3BucketDestination extends js.Object {
   /**
-    * The Amazon resource name (ARN) of the bucket to which data is exported.
+    * The Amazon Resource Name (ARN) of the bucket to which data is exported.
     */
   var Bucket: BucketName
   /**
@@ -15,11 +15,11 @@ trait AnalyticsS3BucketDestination extends js.Object {
     */
   var BucketAccountId: js.UndefOr[AccountId] = js.undefined
   /**
-    * The file format used when exporting data to Amazon S3.
+    * Specifies the file format used when exporting data to Amazon S3.
     */
   var Format: AnalyticsS3ExportFileFormat
   /**
-    * The prefix to use when exporting data. The exported data begins with this prefix.
+    * The prefix to use when exporting data. The prefix is prepended to all results.
     */
   var Prefix: js.UndefOr[Prefix] = js.undefined
 }

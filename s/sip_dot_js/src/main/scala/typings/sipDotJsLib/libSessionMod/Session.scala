@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class Session protected ()
   extends nodeLib.eventsMod.EventEmitter {
   protected def this(sessionDescriptionHandlerFactory: sipDotJsLib.libSessionDashDescriptionDashHandlerDashFactoryMod.SessionDescriptionHandlerFactory) = this()
-  var assertedIdentity: js.UndefOr[sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader] = js.native
+  var assertedIdentity: js.UndefOr[sipDotJsLib.libCoreMod.NameAddrHeader] = js.native
   var body: js.Any = js.native
   var contact: js.UndefOr[java.lang.String] = js.native
   var contentType: java.lang.String = js.native
@@ -22,8 +22,8 @@ abstract class Session protected ()
   var hasOffer: scala.Boolean = js.native
   var id: java.lang.String = js.native
   var localHold: scala.Boolean = js.native
-  var localIdentity: sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader = js.native
-  var logger: sipDotJsLib.libLoggerFactoryMod.Logger = js.native
+  var localIdentity: sipDotJsLib.libCoreMod.NameAddrHeader = js.native
+  var logger: sipDotJsLib.libCoreMod.Logger = js.native
   var method: java.lang.String = js.native
   var modifiers: js.UndefOr[
     js.Array[
@@ -31,13 +31,13 @@ abstract class Session protected ()
     ]
   ] = js.native
   var onInfo: js.UndefOr[
-    js.Function1[/* request */ sipDotJsLib.libSIPMessageMod.IncomingRequest, scala.Unit]
+    js.Function1[/* request */ sipDotJsLib.libCoreMod.IncomingRequestMessage, scala.Unit]
   ] = js.native
   var passedOptions: js.Any = js.native
   var pendingReinvite: js.Any = js.native
   var referContext: js.Any = js.native
   var rel100: java.lang.String = js.native
-  var remoteIdentity: sipDotJsLib.libNameAddrHeaderMod.NameAddrHeader = js.native
+  var remoteIdentity: sipDotJsLib.libCoreMod.NameAddrHeader = js.native
   var renderbody: js.UndefOr[java.lang.String] = js.native
   var rendertype: js.UndefOr[java.lang.String] = js.native
   var replacee: js.UndefOr[InviteClientContext | InviteServerContext] = js.native
@@ -55,21 +55,21 @@ abstract class Session protected ()
   /* protected */ def accepted(): this.type = js.native
   /* protected */ def accepted(response: java.lang.String): this.type = js.native
   /* protected */ def accepted(response: java.lang.String, cause: java.lang.String): this.type = js.native
-  /* protected */ def accepted(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): this.type = js.native
-  /* protected */ def accepted(response: sipDotJsLib.libSIPMessageMod.IncomingResponse, cause: java.lang.String): this.type = js.native
+  /* protected */ def accepted(response: sipDotJsLib.libCoreMod.IncomingResponseMessage): this.type = js.native
+  /* protected */ def accepted(response: sipDotJsLib.libCoreMod.IncomingResponseMessage, cause: java.lang.String): this.type = js.native
   def bye(): this.type = js.native
   def bye(options: js.Any): this.type = js.native
   /* protected */ def canceled(): this.type = js.native
   def close(): this.type = js.native
-  /* protected */ def connecting(request: sipDotJsLib.libSIPMessageMod.IncomingRequest): this.type = js.native
+  /* protected */ def connecting(request: sipDotJsLib.libCoreMod.IncomingRequestMessage): this.type = js.native
   def dtmf(tones: java.lang.String): this.type = js.native
   def dtmf(tones: java.lang.String, options: sipDotJsLib.libSessionMod.SessionNs.DtmfOptions): this.type = js.native
   def dtmf(tones: scala.Double): this.type = js.native
   def dtmf(tones: scala.Double, options: sipDotJsLib.libSessionMod.SessionNs.DtmfOptions): this.type = js.native
   /* protected */ def errorListener(args: js.Any*): scala.Unit = js.native
   /* protected */ def failed(response: js.UndefOr[scala.Nothing], cause: java.lang.String): this.type = js.native
-  /* protected */ def failed(response: sipDotJsLib.libSIPMessageMod.IncomingRequest, cause: java.lang.String): this.type = js.native
-  /* protected */ def failed(response: sipDotJsLib.libSIPMessageMod.IncomingResponse, cause: java.lang.String): this.type = js.native
+  /* protected */ def failed(response: sipDotJsLib.libCoreMod.IncomingRequestMessage, cause: java.lang.String): this.type = js.native
+  /* protected */ def failed(response: sipDotJsLib.libCoreMod.IncomingResponseMessage, cause: java.lang.String): this.type = js.native
   def hold(): scala.Unit = js.native
   def hold(options: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerOptions): scala.Unit = js.native
   def hold(
@@ -81,7 +81,7 @@ abstract class Session protected ()
     listener: js.Function1[/* session */ this.type, scala.Unit]
   ): this.type = js.native
   /* protected */ def onAck(incomingRequest: sipDotJsLib.libCoreMessagesMethodsAckMod.IncomingAckRequest): scala.Unit = js.native
-  def onDialogError(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
+  def onDialogError(response: sipDotJsLib.libCoreMod.IncomingResponseMessage): scala.Unit = js.native
   def onRequestTimeout(): scala.Unit = js.native
   def onTransportError(): scala.Unit = js.native
   @JSName("on")
@@ -134,7 +134,7 @@ abstract class Session protected ()
   def on_dtmf(
     event: sipDotJsLib.sipDotJsLibStrings.dtmf,
     listener: js.Function2[
-      /* request */ sipDotJsLib.libSIPMessageMod.IncomingRequest | sipDotJsLib.libSIPMessageMod.OutgoingRequest, 
+      /* request */ sipDotJsLib.libCoreMod.IncomingRequestMessage | sipDotJsLib.libCoreMod.OutgoingRequestMessage, 
       /* dtmf */ sipDotJsLib.libSessionDTMFMod.DTMF, 
       scala.Unit
     ]
@@ -202,8 +202,8 @@ abstract class Session protected ()
     options: js.Any,
     modifiers: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers
   ): scala.Unit = js.native
-  /* protected */ def rejected(response: sipDotJsLib.libSIPMessageMod.IncomingRequest, cause: java.lang.String): this.type = js.native
-  /* protected */ def rejected(response: sipDotJsLib.libSIPMessageMod.IncomingResponse, cause: java.lang.String): this.type = js.native
+  /* protected */ def rejected(response: sipDotJsLib.libCoreMod.IncomingRequestMessage, cause: java.lang.String): this.type = js.native
+  /* protected */ def rejected(response: sipDotJsLib.libCoreMod.IncomingResponseMessage, cause: java.lang.String): this.type = js.native
   /* protected */ def sendReinvite(): scala.Unit = js.native
   /* protected */ def sendReinvite(options: js.Any): scala.Unit = js.native
   /**
@@ -226,10 +226,10 @@ abstract class Session protected ()
   def terminate(): this.type = js.native
   def terminate(options: js.Any): this.type = js.native
   /* protected */ def terminated(): this.type = js.native
-  /* protected */ def terminated(message: sipDotJsLib.libSIPMessageMod.IncomingRequest): this.type = js.native
-  /* protected */ def terminated(message: sipDotJsLib.libSIPMessageMod.IncomingRequest, cause: java.lang.String): this.type = js.native
-  /* protected */ def terminated(message: sipDotJsLib.libSIPMessageMod.IncomingResponse): this.type = js.native
-  /* protected */ def terminated(message: sipDotJsLib.libSIPMessageMod.IncomingResponse, cause: java.lang.String): this.type = js.native
+  /* protected */ def terminated(message: sipDotJsLib.libCoreMod.IncomingRequestMessage): this.type = js.native
+  /* protected */ def terminated(message: sipDotJsLib.libCoreMod.IncomingRequestMessage, cause: java.lang.String): this.type = js.native
+  /* protected */ def terminated(message: sipDotJsLib.libCoreMod.IncomingResponseMessage): this.type = js.native
+  /* protected */ def terminated(message: sipDotJsLib.libCoreMod.IncomingResponseMessage, cause: java.lang.String): this.type = js.native
   def unhold(): scala.Unit = js.native
   def unhold(options: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerOptions): scala.Unit = js.native
   def unhold(

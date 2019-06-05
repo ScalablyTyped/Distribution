@@ -26,7 +26,9 @@ trait Elements extends js.Object {
   var mobileInput: js.UndefOr[stdLib.HTMLInputElement] = js.undefined
   var monthElements: js.Array[stdLib.HTMLSpanElement]
   var monthNav: stdLib.HTMLDivElement
+  var monthsDropdownContainer: stdLib.HTMLSelectElement
   var nextMonthNav: stdLib.HTMLElement
+  var pluginElements: js.Array[stdLib.Node]
   var prevMonthNav: stdLib.HTMLElement
   var rContainer: js.UndefOr[stdLib.HTMLDivElement] = js.undefined
   var secondElement: js.UndefOr[stdLib.HTMLInputElement] = js.undefined
@@ -54,7 +56,9 @@ object Elements {
     input: stdLib.HTMLInputElement,
     monthElements: js.Array[stdLib.HTMLSpanElement],
     monthNav: stdLib.HTMLDivElement,
+    monthsDropdownContainer: stdLib.HTMLSelectElement,
     nextMonthNav: stdLib.HTMLElement,
+    pluginElements: js.Array[stdLib.Node],
     prevMonthNav: stdLib.HTMLElement,
     weekdayContainer: stdLib.HTMLDivElement,
     yearElements: js.Array[stdLib.HTMLInputElement],
@@ -74,7 +78,7 @@ object Elements {
     weekNumbers: stdLib.HTMLDivElement = null,
     weekWrapper: stdLib.HTMLDivElement = null
   ): Elements = {
-    val __obj = js.Dynamic.literal(_hideNextMonthArrow = _hideNextMonthArrow, _hidePrevMonthArrow = _hidePrevMonthArrow, _input = _input, _positionElement = _positionElement, calendarContainer = calendarContainer, currentMonthElement = currentMonthElement, currentYearElement = currentYearElement, days = days, element = element, input = input, monthElements = monthElements, monthNav = monthNav, nextMonthNav = nextMonthNav, prevMonthNav = prevMonthNav, weekdayContainer = weekdayContainer, yearElements = yearElements)
+    val __obj = js.Dynamic.literal(_hideNextMonthArrow = _hideNextMonthArrow, _hidePrevMonthArrow = _hidePrevMonthArrow, _input = _input, _positionElement = _positionElement, calendarContainer = calendarContainer, currentMonthElement = currentMonthElement, currentYearElement = currentYearElement, days = days, element = element, input = input, monthElements = monthElements, monthNav = monthNav, monthsDropdownContainer = monthsDropdownContainer, nextMonthNav = nextMonthNav, pluginElements = pluginElements, prevMonthNav = prevMonthNav, weekdayContainer = weekdayContainer, yearElements = yearElements)
     if (altInput != null) __obj.updateDynamic("altInput")(altInput)
     if (amPM != null) __obj.updateDynamic("amPM")(amPM)
     if (daysContainer != null) __obj.updateDynamic("daysContainer")(daysContainer)

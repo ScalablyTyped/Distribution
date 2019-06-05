@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation._
   - flatpickrLib.flatpickrLibStrings.be
   - flatpickrLib.flatpickrLibStrings.bg
   - flatpickrLib.flatpickrLibStrings.bn
+  - flatpickrLib.flatpickrLibStrings.bs
   - flatpickrLib.flatpickrLibStrings.cat
   - flatpickrLib.flatpickrLibStrings.cs
   - flatpickrLib.flatpickrLibStrings.cy

@@ -10,7 +10,7 @@ trait IncomingRequest extends js.Object {
   /** Delegate providing custom handling of this incoming request. */
   var delegate: js.UndefOr[IncomingRequestDelegate] = js.native
   /** The incoming message. */
-  val message: sipDotJsLib.libSIPMessageMod.IncomingRequest = js.native
+  val message: sipDotJsLib.libCoreMessagesIncomingDashRequestDashMessageMod.IncomingRequestMessage = js.native
   /**
     * Send a 2xx positive final response to this request. Defaults to 200.
     * @param options Response options bucket.
@@ -29,9 +29,9 @@ trait IncomingRequest extends js.Object {
     * @param contacts Contacts to redirect the UAC to.
     * @param options Response options bucket.
     */
-  def redirect(contacts: js.Array[sipDotJsLib.libURIMod.URI]): sipDotJsLib.libCoreMessagesOutgoingDashResponseMod.OutgoingResponse = js.native
+  def redirect(contacts: js.Array[sipDotJsLib.libCoreMessagesMod.URI]): sipDotJsLib.libCoreMessagesOutgoingDashResponseMod.OutgoingResponse = js.native
   def redirect(
-    contacts: js.Array[sipDotJsLib.libURIMod.URI],
+    contacts: js.Array[sipDotJsLib.libCoreMessagesMod.URI],
     options: sipDotJsLib.libCoreMessagesOutgoingDashResponseMod.ResponseOptions
   ): sipDotJsLib.libCoreMessagesOutgoingDashResponseMod.OutgoingResponse = js.native
   /**

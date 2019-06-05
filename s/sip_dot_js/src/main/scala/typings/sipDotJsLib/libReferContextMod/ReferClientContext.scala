@@ -25,10 +25,10 @@ class ReferClientContext protected ()
   var errorListener: js.Any = js.native
   var extraHeaders: js.Array[java.lang.String] = js.native
   var options: js.Any = js.native
-  var target: sipDotJsLib.libURIMod.URI | java.lang.String = js.native
-  /* protected */ def initReferTo(target: java.lang.String): java.lang.String | sipDotJsLib.libURIMod.URI = js.native
-  /* protected */ def initReferTo(target: sipDotJsLib.libSessionMod.InviteClientContext): java.lang.String | sipDotJsLib.libURIMod.URI = js.native
-  /* protected */ def initReferTo(target: sipDotJsLib.libSessionMod.InviteServerContext): java.lang.String | sipDotJsLib.libURIMod.URI = js.native
+  var target: sipDotJsLib.libCoreMod.URI | java.lang.String = js.native
+  /* protected */ def initReferTo(target: java.lang.String): java.lang.String | sipDotJsLib.libCoreMod.URI = js.native
+  /* protected */ def initReferTo(target: sipDotJsLib.libSessionMod.InviteClientContext): java.lang.String | sipDotJsLib.libCoreMod.URI = js.native
+  /* protected */ def initReferTo(target: sipDotJsLib.libSessionMod.InviteServerContext): java.lang.String | sipDotJsLib.libCoreMod.URI = js.native
   def receiveNotify(request: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest): scala.Unit = js.native
   def refer(): ReferClientContext = js.native
   def refer(options: js.Any): ReferClientContext = js.native

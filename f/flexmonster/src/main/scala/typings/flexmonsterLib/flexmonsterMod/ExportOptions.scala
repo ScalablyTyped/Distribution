@@ -10,6 +10,7 @@ trait ExportOptions extends js.Object {
   var excelExportAll: js.UndefOr[scala.Boolean] = js.undefined
   var excelSheetName: js.UndefOr[java.lang.String] = js.undefined
   var filename: js.UndefOr[java.lang.String] = js.undefined
+  var fontUrl: js.UndefOr[java.lang.String] = js.undefined
   var footer: js.UndefOr[java.lang.String] = js.undefined
   var header: js.UndefOr[java.lang.String] = js.undefined
   var pageOrientation: js.UndefOr[java.lang.String] = js.undefined
@@ -27,6 +28,7 @@ object ExportOptions {
     excelExportAll: js.UndefOr[scala.Boolean] = js.undefined,
     excelSheetName: java.lang.String = null,
     filename: java.lang.String = null,
+    fontUrl: java.lang.String = null,
     footer: java.lang.String = null,
     header: java.lang.String = null,
     pageOrientation: java.lang.String = null,
@@ -41,6 +43,7 @@ object ExportOptions {
     if (!js.isUndefined(excelExportAll)) __obj.updateDynamic("excelExportAll")(excelExportAll)
     if (excelSheetName != null) __obj.updateDynamic("excelSheetName")(excelSheetName)
     if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (fontUrl != null) __obj.updateDynamic("fontUrl")(fontUrl)
     if (footer != null) __obj.updateDynamic("footer")(footer)
     if (header != null) __obj.updateDynamic("header")(header)
     if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation)

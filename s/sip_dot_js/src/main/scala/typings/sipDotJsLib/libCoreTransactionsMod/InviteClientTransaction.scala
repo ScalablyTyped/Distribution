@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/transactions", "InviteClientTransaction")
+@JSImport("sip.js/lib/core/transactions", "InviteClientTransaction")
 @js.native
 class InviteClientTransaction protected ()
   extends sipDotJsLib.libCoreTransactionsInviteDashClientDashTransactionMod.InviteClientTransaction {
@@ -20,6 +20,6 @@ class InviteClientTransaction protected ()
     * @param transport The transport.
     * @param user The transaction user.
     */
-  def this(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser) = this()
+  def this(request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage, transport: sipDotJsLib.libCoreTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser) = this()
 }
 

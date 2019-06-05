@@ -19,6 +19,10 @@ object stripeDashV3LibStrings {
     extends stripeDashV3Lib.stripeNs.brandType
   
   @js.native
+  sealed trait Empty
+    extends stripeDashV3Lib.stripeNs.billingAddressCollectionType
+  
+  @js.native
   sealed trait JCB
     extends stripeDashV3Lib.stripeNs.brandType
   
@@ -43,6 +47,10 @@ object stripeDashV3LibStrings {
     extends stripeDashV3Lib.stripeNs.tokenizationType
   
   @js.native
+  sealed trait auto
+    extends stripeDashV3Lib.stripeNs.billingAddressCollectionType
+  
+  @js.native
   sealed trait bank_account extends js.Object
   
   @js.native
@@ -56,8 +64,13 @@ object stripeDashV3LibStrings {
   sealed trait cancel extends js.Object
   
   @js.native
+  sealed trait canceled
+    extends stripeDashV3Lib.stripeNs.paymentIntentNs.paymentIntentStatus
+  
+  @js.native
   sealed trait card
     extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
+       with stripeDashV3Lib.stripeNs.paymentMethodType
   
   @js.native
   sealed trait cardCvc
@@ -70,6 +83,10 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait cardNumber
     extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
+  
+  @js.native
+  sealed trait card_present
+    extends stripeDashV3Lib.stripeNs.paymentMethodType
   
   @js.native
   sealed trait change
@@ -149,6 +166,9 @@ object stripeDashV3LibStrings {
     extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
   
   @js.native
+  sealed trait payment_intent extends js.Object
+  
+  @js.native
   sealed trait pii extends js.Object
   
   @js.native
@@ -158,6 +178,10 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait prepaid
     extends stripeDashV3Lib.stripeNs.fundingType
+  
+  @js.native
+  sealed trait processing
+    extends stripeDashV3Lib.stripeNs.paymentIntentNs.paymentIntentStatus
   
   @js.native
   sealed trait ready
@@ -173,7 +197,28 @@ object stripeDashV3LibStrings {
   sealed trait redirect extends js.Object
   
   @js.native
-  sealed trait required extends js.Object
+  sealed trait redirect_to_url
+    extends stripeDashV3Lib.stripeNs.paymentIntentNs.nextActionType
+  
+  @js.native
+  sealed trait required
+    extends stripeDashV3Lib.stripeNs.billingAddressCollectionType
+  
+  @js.native
+  sealed trait requires_action
+    extends stripeDashV3Lib.stripeNs.paymentIntentNs.paymentIntentStatus
+  
+  @js.native
+  sealed trait requires_capture
+    extends stripeDashV3Lib.stripeNs.paymentIntentNs.paymentIntentStatus
+  
+  @js.native
+  sealed trait requires_confirmation
+    extends stripeDashV3Lib.stripeNs.paymentIntentNs.paymentIntentStatus
+  
+  @js.native
+  sealed trait requires_payment_method
+    extends stripeDashV3Lib.stripeNs.paymentIntentNs.paymentIntentStatus
   
   @js.native
   sealed trait reusable extends js.Object
@@ -194,6 +239,10 @@ object stripeDashV3LibStrings {
   sealed trait source extends js.Object
   
   @js.native
+  sealed trait succeeded
+    extends stripeDashV3Lib.stripeNs.paymentIntentNs.paymentIntentStatus
+  
+  @js.native
   sealed trait success extends js.Object
   
   @js.native
@@ -210,6 +259,10 @@ object stripeDashV3LibStrings {
   @js.native
   sealed trait unknown
     extends stripeDashV3Lib.stripeNs.fundingType
+  
+  @js.native
+  sealed trait use_stripe_sdk
+    extends stripeDashV3Lib.stripeNs.paymentIntentNs.nextActionType
   
   @js.native
   sealed trait validated
@@ -230,6 +283,8 @@ object stripeDashV3LibStrings {
   @scala.inline
   def Discover: Discover = "Discover".asInstanceOf[Discover]
   @scala.inline
+  def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def JCB: JCB = "JCB".asInstanceOf[JCB]
   @scala.inline
   def MasterCard: MasterCard = "MasterCard".asInstanceOf[MasterCard]
@@ -242,6 +297,8 @@ object stripeDashV3LibStrings {
   @scala.inline
   def apple_pay: apple_pay = "apple_pay".asInstanceOf[apple_pay]
   @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def bank_account: bank_account = "bank_account".asInstanceOf[bank_account]
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
@@ -250,6 +307,8 @@ object stripeDashV3LibStrings {
   @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
+  def canceled: canceled = "canceled".asInstanceOf[canceled]
+  @scala.inline
   def card: card = "card".asInstanceOf[card]
   @scala.inline
   def cardCvc: cardCvc = "cardCvc".asInstanceOf[cardCvc]
@@ -257,6 +316,8 @@ object stripeDashV3LibStrings {
   def cardExpiry: cardExpiry = "cardExpiry".asInstanceOf[cardExpiry]
   @scala.inline
   def cardNumber: cardNumber = "cardNumber".asInstanceOf[cardNumber]
+  @scala.inline
+  def card_present: card_present = "card_present".asInstanceOf[card_present]
   @scala.inline
   def change: change = "change".asInstanceOf[change]
   @scala.inline
@@ -302,11 +363,15 @@ object stripeDashV3LibStrings {
   @scala.inline
   def paymentRequestButton: paymentRequestButton = "paymentRequestButton".asInstanceOf[paymentRequestButton]
   @scala.inline
+  def payment_intent: payment_intent = "payment_intent".asInstanceOf[payment_intent]
+  @scala.inline
   def pii: pii = "pii".asInstanceOf[pii]
   @scala.inline
   def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   @scala.inline
   def prepaid: prepaid = "prepaid".asInstanceOf[prepaid]
+  @scala.inline
+  def processing: processing = "processing".asInstanceOf[processing]
   @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
   @scala.inline
@@ -316,7 +381,17 @@ object stripeDashV3LibStrings {
   @scala.inline
   def redirect: redirect = "redirect".asInstanceOf[redirect]
   @scala.inline
+  def redirect_to_url: redirect_to_url = "redirect_to_url".asInstanceOf[redirect_to_url]
+  @scala.inline
   def required: required = "required".asInstanceOf[required]
+  @scala.inline
+  def requires_action: requires_action = "requires_action".asInstanceOf[requires_action]
+  @scala.inline
+  def requires_capture: requires_capture = "requires_capture".asInstanceOf[requires_capture]
+  @scala.inline
+  def requires_confirmation: requires_confirmation = "requires_confirmation".asInstanceOf[requires_confirmation]
+  @scala.inline
+  def requires_payment_method: requires_payment_method = "requires_payment_method".asInstanceOf[requires_payment_method]
   @scala.inline
   def reusable: reusable = "reusable".asInstanceOf[reusable]
   @scala.inline
@@ -330,6 +405,8 @@ object stripeDashV3LibStrings {
   @scala.inline
   def source: source = "source".asInstanceOf[source]
   @scala.inline
+  def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline
   def token: token = "token".asInstanceOf[token]
@@ -339,6 +416,8 @@ object stripeDashV3LibStrings {
   def unchecked: unchecked = "unchecked".asInstanceOf[unchecked]
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @scala.inline
+  def use_stripe_sdk: use_stripe_sdk = "use_stripe_sdk".asInstanceOf[use_stripe_sdk]
   @scala.inline
   def validated: validated = "validated".asInstanceOf[validated]
   @scala.inline

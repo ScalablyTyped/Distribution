@@ -19,7 +19,7 @@ trait UploadPartRequest extends js.Object {
     */
   var ContentLength: js.UndefOr[ContentLength] = js.undefined
   /**
-    * The base64-encoded 128-bit MD5 digest of the part data.
+    * The base64-encoded 128-bit MD5 digest of the part data. This parameter is auto-populated when using the command from the CLI. This parameted is required if object lock parameters are specified.
     */
   var ContentMD5: js.UndefOr[ContentMD5] = js.undefined
   /**

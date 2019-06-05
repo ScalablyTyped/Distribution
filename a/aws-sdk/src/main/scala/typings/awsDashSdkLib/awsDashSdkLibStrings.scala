@@ -5215,6 +5215,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSsmMod._Fault
   
   @js.native
+  sealed trait ClientSpecified
+    extends awsDashSdkLib.clientsStoragegatewayMod._SMBSecurityStrategy
+  
+  @js.native
   sealed trait ClientTLSNegotiationErrorCount
     extends awsDashSdkLib.clientsLightsailMod._LoadBalancerMetricName
   
@@ -13299,6 +13303,14 @@ object awsDashSdkLibStrings {
   sealed trait ManagedInstance
     extends awsDashSdkLib.clientsSsmMod._ResourceType
        with awsDashSdkLib.clientsSsmMod._ResourceTypeForTagging
+  
+  @js.native
+  sealed trait MandatoryEncryption
+    extends awsDashSdkLib.clientsStoragegatewayMod._SMBSecurityStrategy
+  
+  @js.native
+  sealed trait MandatorySigning
+    extends awsDashSdkLib.clientsStoragegatewayMod._SMBSecurityStrategy
   
   @js.native
   sealed trait ManifestFile
@@ -22758,6 +22770,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEc2Mod._NatGatewayState
        with awsDashSdkLib.clientsEc2Mod._NetworkInterfaceStatus
        with awsDashSdkLib.clientsEc2Mod._PlacementGroupState
+       with awsDashSdkLib.clientsElasticacheMod._ServiceUpdateStatus
        with awsDashSdkLib.clientsEc2Mod._SubnetState
        with awsDashSdkLib.clientsEc2Mod._TransitGatewayAttachmentState
        with awsDashSdkLib.clientsEc2Mod._TransitGatewayRouteTableState
@@ -23110,6 +23123,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEc2Mod._ExportTaskState
        with awsDashSdkLib.clientsEc2Mod._ListingState
        with awsDashSdkLib.clientsEc2Mod._ListingStatus
+       with awsDashSdkLib.clientsElasticacheMod._ServiceUpdateStatus
        with awsDashSdkLib.clientsEc2Mod._SpotInstanceState
   
   @js.native
@@ -23272,6 +23286,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait complete
     extends awsDashSdkLib.clientsEc2Mod._BundleTaskState
+       with awsDashSdkLib.clientsElasticacheMod._NodeUpdateStatus
+       with awsDashSdkLib.clientsElasticacheMod._UpdateActionStatus
   
   @js.native
   sealed trait completed
@@ -23513,6 +23529,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEc2Mod._VolumeState
   
   @js.native
+  sealed trait critical
+    extends awsDashSdkLib.clientsElasticacheMod._ServiceUpdateSeverity
+  
+  @js.native
   sealed trait `cross-az`
     extends awsDashSdkLib.clientsElasticacheMod._AZMode
   
@@ -23535,6 +23555,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `custom-resource:ResourceType:Property`
     extends awsDashSdkLib.clientsApplicationautoscalingMod._ScalableDimension
+  
+  @js.native
+  sealed trait customer
+    extends awsDashSdkLib.clientsElasticacheMod._NodeUpdateInitiatedBy
   
   @js.native
   sealed trait `customer-gateway`
@@ -24314,6 +24338,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait expired
     extends awsDashSdkLib.clientsEc2Mod._CapacityReservationState
+       with awsDashSdkLib.clientsElasticacheMod._ServiceUpdateStatus
        with awsDashSdkLib.clientsEc2Mod._VpcPeeringConnectionStateReasonCode
   
   @js.native
@@ -24826,6 +24851,34 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEsMod._ESPartitionInstanceType
   
   @js.native
+  sealed trait i3enDOT12xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait i3enDOT24xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait i3enDOT2xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait i3enDOT3xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait i3enDOT6xlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait i3enDOTlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
+  sealed trait i3enDOTxlarge
+    extends awsDashSdkLib.clientsEc2Mod._InstanceType
+  
+  @js.native
   sealed trait iam
     extends awsDashSdkLib.clientsCloudfrontMod._CertificateSource
   
@@ -24874,6 +24927,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsIamMod._PolicyEvaluationDecisionType
   
   @js.native
+  sealed trait important
+    extends awsDashSdkLib.clientsElasticacheMod._ServiceUpdateSeverity
+  
+  @js.native
   sealed trait `in-alarm`
     extends awsDashSdkLib.clientsIotMod._ViolationEventType
   
@@ -24884,6 +24941,11 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `in-port-set`
     extends awsDashSdkLib.clientsIotMod._ComparisonOperator
+  
+  @js.native
+  sealed trait `in-progress`
+    extends awsDashSdkLib.clientsElasticacheMod._NodeUpdateStatus
+       with awsDashSdkLib.clientsElasticacheMod._UpdateActionStatus
   
   @js.native
   sealed trait `in-use`
@@ -25579,7 +25641,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait low
-    extends awsDashSdkLib.clientsCloudsearchMod._SuggesterFuzzyMatching
+    extends awsDashSdkLib.clientsElasticacheMod._ServiceUpdateSeverity
+       with awsDashSdkLib.clientsCloudsearchMod._SuggesterFuzzyMatching
   
   @js.native
   sealed trait `lowest-price`
@@ -25870,6 +25933,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait maxIO
     extends awsDashSdkLib.clientsEfsMod._PerformanceMode
+  
+  @js.native
+  sealed trait medium
+    extends awsDashSdkLib.clientsElasticacheMod._ServiceUpdateSeverity
   
   @js.native
   sealed trait memberOf
@@ -26268,6 +26335,10 @@ object awsDashSdkLibStrings {
   sealed trait mysql extends js.Object
   
   @js.native
+  sealed trait `n/a`
+    extends awsDashSdkLib.clientsElasticacheMod._SlaMet
+  
+  @js.native
   sealed trait name
     extends awsDashSdkLib.clientsEc2Mod._FpgaImageAttributeName
   
@@ -26318,6 +26389,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCloudsearchMod._AnalysisSchemeLanguage
        with awsDashSdkLib.clientsDmsMod._AuthTypeValue
        with awsDashSdkLib.clientsDirectconnectMod._HasLogicalRedundancy
+       with awsDashSdkLib.clientsElasticacheMod._SlaMet
   
   @js.native
   sealed trait `no-termination`
@@ -26398,6 +26470,11 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._SummaryStatus
   
   @js.native
+  sealed trait `not-applied`
+    extends awsDashSdkLib.clientsElasticacheMod._NodeUpdateStatus
+       with awsDashSdkLib.clientsElasticacheMod._UpdateActionStatus
+  
+  @js.native
   sealed trait `not-in-cidr-set`
     extends awsDashSdkLib.clientsIotMod._ComparisonOperator
   
@@ -26443,6 +26520,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait off
     extends awsDashSdkLib.clientsEc2Mod._AutoPlacement
+       with awsDashSdkLib.clientsEc2Mod._HostRecovery
   
   @js.native
   sealed trait ogg_vorbis
@@ -26457,6 +26535,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait on
     extends awsDashSdkLib.clientsEc2Mod._AutoPlacement
+       with awsDashSdkLib.clientsEc2Mod._HostRecovery
   
   @js.native
   sealed trait `on-demand`
@@ -26612,7 +26691,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait pending
-    extends awsDashSdkLib.clientsDirectconnectMod._BGPPeerState
+    extends awsDashSdkLib.clientsEc2Mod._AllocationState
+       with awsDashSdkLib.clientsDirectconnectMod._BGPPeerState
        with awsDashSdkLib.clientsEc2Mod._BundleTaskState
        with awsDashSdkLib.clientsEc2Mod._CapacityReservationState
        with awsDashSdkLib.clientsEc2Mod._ClientCertificateRevocationListStatusCode
@@ -27526,6 +27606,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._ResourceType
   
   @js.native
+  sealed trait `security-update` extends js.Object
+  
+  @js.native
   sealed trait send
     extends awsDashSdkLib.clientsSesMod._EventType
   
@@ -27733,12 +27816,16 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsRdsMod._ActivityStreamStatus
        with awsDashSdkLib.clientsCloud9Mod._EnvironmentStatus
        with awsDashSdkLib.clientsEc2Mod._InstanceStateName
+       with awsDashSdkLib.clientsElasticacheMod._NodeUpdateStatus
+       with awsDashSdkLib.clientsElasticacheMod._UpdateActionStatus
   
   @js.native
   sealed trait stopping
     extends awsDashSdkLib.clientsRdsMod._ActivityStreamStatus
        with awsDashSdkLib.clientsCloud9Mod._EnvironmentStatus
        with awsDashSdkLib.clientsEc2Mod._InstanceStateName
+       with awsDashSdkLib.clientsElasticacheMod._NodeUpdateStatus
+       with awsDashSdkLib.clientsElasticacheMod._UpdateActionStatus
   
   @js.native
   sealed trait storing
@@ -27815,6 +27902,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait syslog
     extends awsDashSdkLib.clientsEcsMod._LogDriver
+  
+  @js.native
+  sealed trait system
+    extends awsDashSdkLib.clientsElasticacheMod._NodeUpdateInitiatedBy
   
   @js.native
   sealed trait `system-maintenance`
@@ -28421,6 +28512,11 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._BundleTaskState
   
   @js.native
+  sealed trait `waiting-to-start`
+    extends awsDashSdkLib.clientsElasticacheMod._NodeUpdateStatus
+       with awsDashSdkLib.clientsElasticacheMod._UpdateActionStatus
+  
+  @js.native
   sealed trait warning
     extends awsDashSdkLib.clientsElasticbeanstalkMod._ValidationSeverity
   
@@ -28490,6 +28586,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait yes
     extends awsDashSdkLib.clientsDirectconnectMod._HasLogicalRedundancy
+       with awsDashSdkLib.clientsElasticacheMod._SlaMet
   
   @js.native
   sealed trait z1dDOT12xlarge
@@ -30759,6 +30856,8 @@ object awsDashSdkLibStrings {
   def ChoiceStateExited: ChoiceStateExited = "ChoiceStateExited".asInstanceOf[ChoiceStateExited]
   @scala.inline
   def Client: Client = "Client".asInstanceOf[Client]
+  @scala.inline
+  def ClientSpecified: ClientSpecified = "ClientSpecified".asInstanceOf[ClientSpecified]
   @scala.inline
   def ClientTLSNegotiationErrorCount: ClientTLSNegotiationErrorCount = "ClientTLSNegotiationErrorCount".asInstanceOf[ClientTLSNegotiationErrorCount]
   @scala.inline
@@ -34013,6 +34112,10 @@ object awsDashSdkLibStrings {
   def ManageBundler: ManageBundler = "ManageBundler".asInstanceOf[ManageBundler]
   @scala.inline
   def ManagedInstance: ManagedInstance = "ManagedInstance".asInstanceOf[ManagedInstance]
+  @scala.inline
+  def MandatoryEncryption: MandatoryEncryption = "MandatoryEncryption".asInstanceOf[MandatoryEncryption]
+  @scala.inline
+  def MandatorySigning: MandatorySigning = "MandatorySigning".asInstanceOf[MandatorySigning]
   @scala.inline
   def ManifestFile: ManifestFile = "ManifestFile".asInstanceOf[ManifestFile]
   @scala.inline
@@ -38352,6 +38455,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def creating: creating = "creating".asInstanceOf[creating]
   @scala.inline
+  def critical: critical = "critical".asInstanceOf[critical]
+  @scala.inline
   def `cross-az`: `cross-az` = "cross-az".asInstanceOf[`cross-az`]
   @scala.inline
   def cs: cs = "cs".asInstanceOf[cs]
@@ -38363,6 +38468,8 @@ object awsDashSdkLibStrings {
   def `custom-resource`: `custom-resource` = "custom-resource".asInstanceOf[`custom-resource`]
   @scala.inline
   def `custom-resource:ResourceType:Property`: `custom-resource:ResourceType:Property` = "custom-resource:ResourceType:Property".asInstanceOf[`custom-resource:ResourceType:Property`]
+  @scala.inline
+  def customer: customer = "customer".asInstanceOf[customer]
   @scala.inline
   def `customer-gateway`: `customer-gateway` = "customer-gateway".asInstanceOf[`customer-gateway`]
   @scala.inline
@@ -38916,6 +39023,20 @@ object awsDashSdkLibStrings {
   @scala.inline
   def i3DOTxlargeDOTelasticsearch: i3DOTxlargeDOTelasticsearch = "i3.xlarge.elasticsearch".asInstanceOf[i3DOTxlargeDOTelasticsearch]
   @scala.inline
+  def i3enDOT12xlarge: i3enDOT12xlarge = "i3en.12xlarge".asInstanceOf[i3enDOT12xlarge]
+  @scala.inline
+  def i3enDOT24xlarge: i3enDOT24xlarge = "i3en.24xlarge".asInstanceOf[i3enDOT24xlarge]
+  @scala.inline
+  def i3enDOT2xlarge: i3enDOT2xlarge = "i3en.2xlarge".asInstanceOf[i3enDOT2xlarge]
+  @scala.inline
+  def i3enDOT3xlarge: i3enDOT3xlarge = "i3en.3xlarge".asInstanceOf[i3enDOT3xlarge]
+  @scala.inline
+  def i3enDOT6xlarge: i3enDOT6xlarge = "i3en.6xlarge".asInstanceOf[i3enDOT6xlarge]
+  @scala.inline
+  def i3enDOTlarge: i3enDOTlarge = "i3en.large".asInstanceOf[i3enDOTlarge]
+  @scala.inline
+  def i3enDOTxlarge: i3enDOTxlarge = "i3en.xlarge".asInstanceOf[i3enDOTxlarge]
+  @scala.inline
   def iam: iam = "iam".asInstanceOf[iam]
   @scala.inline
   def id: id = "id".asInstanceOf[id]
@@ -38938,11 +39059,15 @@ object awsDashSdkLibStrings {
   @scala.inline
   def implicitDeny: implicitDeny = "implicitDeny".asInstanceOf[implicitDeny]
   @scala.inline
+  def important: important = "important".asInstanceOf[important]
+  @scala.inline
   def `in-alarm`: `in-alarm` = "in-alarm".asInstanceOf[`in-alarm`]
   @scala.inline
   def `in-cidr-set`: `in-cidr-set` = "in-cidr-set".asInstanceOf[`in-cidr-set`]
   @scala.inline
   def `in-port-set`: `in-port-set` = "in-port-set".asInstanceOf[`in-port-set`]
+  @scala.inline
+  def `in-progress`: `in-progress` = "in-progress".asInstanceOf[`in-progress`]
   @scala.inline
   def `in-use`: `in-use` = "in-use".asInstanceOf[`in-use`]
   @scala.inline
@@ -39340,6 +39465,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def maxIO: maxIO = "maxIO".asInstanceOf[maxIO]
   @scala.inline
+  def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
   def memberOf: memberOf = "memberOf".asInstanceOf[memberOf]
   @scala.inline
   def memcached: memcached = "memcached".asInstanceOf[memcached]
@@ -39494,6 +39621,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def mysql: mysql = "mysql".asInstanceOf[mysql]
   @scala.inline
+  def `n/a`: `n/a` = "n/a".asInstanceOf[`n/a`]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def natGateway: natGateway = "natGateway".asInstanceOf[natGateway]
@@ -39553,6 +39682,8 @@ object awsDashSdkLibStrings {
   def `not-accepting-credentials`: `not-accepting-credentials` = "not-accepting-credentials".asInstanceOf[`not-accepting-credentials`]
   @scala.inline
   def `not-applicable`: `not-applicable` = "not-applicable".asInstanceOf[`not-applicable`]
+  @scala.inline
+  def `not-applied`: `not-applied` = "not-applied".asInstanceOf[`not-applied`]
   @scala.inline
   def `not-in-cidr-set`: `not-in-cidr-set` = "not-in-cidr-set".asInstanceOf[`not-in-cidr-set`]
   @scala.inline
@@ -40076,6 +40207,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `security-group`: `security-group` = "security-group".asInstanceOf[`security-group`]
   @scala.inline
+  def `security-update`: `security-update` = "security-update".asInstanceOf[`security-update`]
+  @scala.inline
   def send: send = "send".asInstanceOf[send]
   @scala.inline
   def sentence: sentence = "sentence".asInstanceOf[sentence]
@@ -40219,6 +40352,8 @@ object awsDashSdkLibStrings {
   def sync: sync = "sync".asInstanceOf[sync]
   @scala.inline
   def syslog: syslog = "syslog".asInstanceOf[syslog]
+  @scala.inline
+  def system: system = "system".asInstanceOf[system]
   @scala.inline
   def `system-maintenance`: `system-maintenance` = "system-maintenance".asInstanceOf[`system-maintenance`]
   @scala.inline
@@ -40507,6 +40642,8 @@ object awsDashSdkLibStrings {
   def vpnConnectionDeleted: vpnConnectionDeleted = "vpnConnectionDeleted".asInstanceOf[vpnConnectionDeleted]
   @scala.inline
   def `waiting-for-shutdown`: `waiting-for-shutdown` = "waiting-for-shutdown".asInstanceOf[`waiting-for-shutdown`]
+  @scala.inline
+  def `waiting-to-start`: `waiting-to-start` = "waiting-to-start".asInstanceOf[`waiting-to-start`]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   @scala.inline

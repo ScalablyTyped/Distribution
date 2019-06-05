@@ -10,10 +10,13 @@ trait QueueConfiguration extends js.Object {
     * 
     */
   var Events: EventList
+  /**
+    * 
+    */
   var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
   var Id: js.UndefOr[NotificationId] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of the Amazon SQS queue to which Amazon S3 will publish a message when it detects events of the specified type.
+    * The Amazon Resource Name (ARN) of the Amazon SQS queue to which Amazon S3 publishes a message when it detects events of the specified type.
     */
   var QueueArn: awsDashSdkLib.clientsS3Mod.QueueArn
 }

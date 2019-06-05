@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Provider protected ()
   extends leafletLib.leafletMod.TileLayer {
   def this(provider: java.lang.String) = this()
-  def this(provider: java.lang.String, options: leafletLib.leafletMod.TileLayerOptions with org.scalablytyped.runtime.StringDictionary[java.lang.String]) = this()
+  def this(provider: java.lang.String, options: leafletLib.leafletMod.TileLayerOptions) = this()
+  def this(provider: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[java.lang.String]) = this()
 }
 

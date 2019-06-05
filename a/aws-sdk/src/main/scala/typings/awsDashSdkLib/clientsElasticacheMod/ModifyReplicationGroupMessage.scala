@@ -15,7 +15,7 @@ trait ModifyReplicationGroupMessage extends js.Object {
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
   /**
-    * Determines whether a read replica is automatically promoted to read/write primary if the existing primary encounters a failure. Valid values: true | false  Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 and T2 cache node types.   Redis (cluster mode enabled): T1 node types.  
+    * Determines whether a read replica is automatically promoted to read/write primary if the existing primary encounters a failure. Valid values: true | false  Amazon ElastiCache for Redis does not support Multi-AZ with automatic failover on:   Redis versions earlier than 2.8.6.   Redis (cluster mode disabled): T1 node types.   Redis (cluster mode enabled): T1 node types.  
     */
   var AutomaticFailoverEnabled: js.UndefOr[BooleanOptional] = js.undefined
   /**

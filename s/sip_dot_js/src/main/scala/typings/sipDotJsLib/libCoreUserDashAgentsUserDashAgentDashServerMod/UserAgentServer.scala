@@ -5,20 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/user-agents/user-agent-server", "UserAgentServer")
+@JSImport("sip.js/lib/core/user-agents/user-agent-server", "UserAgentServer")
 @js.native
 class UserAgentServer protected ()
   extends sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequest {
-  def this(transactionConstructor: ServerTransactionConstructor, core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libSIPMessageMod.IncomingRequest) = this()
-  def this(transactionConstructor: ServerTransactionConstructor, core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libSIPMessageMod.IncomingRequest, delegate: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequestDelegate) = this()
+  def this(transactionConstructor: ServerTransactionConstructor, core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage) = this()
+  def this(transactionConstructor: ServerTransactionConstructor, core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage, delegate: sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequestDelegate) = this()
   var _transaction: js.Any = js.native
   val acceptable: scala.Boolean = js.native
   var core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore = js.native
   @JSName("delegate")
   var delegate_UserAgentServer: js.UndefOr[sipDotJsLib.libCoreMessagesIncomingDashRequestMod.IncomingRequestDelegate] = js.native
   var init: js.Any = js.native
-  var logger: sipDotJsLib.libLoggerFactoryMod.Logger = js.native
-  val loggerFactory: sipDotJsLib.libLoggerFactoryMod.LoggerFactory = js.native
+  var logger: sipDotJsLib.libCoreLogMod.Logger = js.native
+  val loggerFactory: sipDotJsLib.libCoreLogMod.LoggerFactory = js.native
+  @JSName("message")
+  var message_UserAgentServer: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage = js.native
   val progressable: scala.Boolean = js.native
   val redirectable: scala.Boolean = js.native
   val rejectable: scala.Boolean = js.native
@@ -60,6 +62,6 @@ class UserAgentServer protected ()
     * https://tools.ietf.org/html/rfc3261#section-9.2
     * @param request Incoming CANCEL request.
     */
-  def receiveCancel(message: sipDotJsLib.libSIPMessageMod.IncomingRequest): scala.Unit = js.native
+  def receiveCancel(message: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage): scala.Unit = js.native
 }
 

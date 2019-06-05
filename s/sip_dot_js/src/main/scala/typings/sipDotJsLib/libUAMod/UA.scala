@@ -28,7 +28,7 @@ class UA ()
     */
   var loadConfig: js.Any = js.native
   var log: js.Any = js.native
-  var logger: sipDotJsLib.libLoggerFactoryMod.Logger = js.native
+  var logger: sipDotJsLib.libCoreMod.Logger = js.native
   /**
     * Transport connection event.
     * @event
@@ -52,20 +52,21 @@ class UA ()
   var setTransportListeners: js.Any = js.native
   var status: sipDotJsLib.libEnumsMod.UAStatus = js.native
   var subscriptions: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.libSubscriptionMod.Subscription] = js.native
-  var transport: js.UndefOr[sipDotJsLib.libTransportMod.Transport] = js.native
+  var transport: js.UndefOr[sipDotJsLib.libCoreMod.Transport] = js.native
   var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
-  var userAgentCore: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore = js.native
+  var userAgentCore: sipDotJsLib.libCoreMod.UserAgentCore = js.native
   /**
     * Get the session to which the request belongs to, if any.
     * @param {SIP.IncomingRequest} request.
     * @returns {SIP.OutgoingSession|SIP.IncomingSession|undefined}
     */
-  def findSession(request: sipDotJsLib.libSIPMessageMod.IncomingRequest): js.UndefOr[
+  def findSession(request: sipDotJsLib.libCoreMod.IncomingRequestMessage): js.UndefOr[
     sipDotJsLib.libSessionMod.InviteClientContext | sipDotJsLib.libSessionMod.InviteServerContext
   ] = js.native
-  def getLogger(category: java.lang.String): sipDotJsLib.libLoggerFactoryMod.Logger = js.native
-  def getLogger(category: java.lang.String, label: java.lang.String): sipDotJsLib.libLoggerFactoryMod.Logger = js.native
-  def getLoggerFactory(): sipDotJsLib.libLoggerFactoryMod.LoggerFactory = js.native
+  def getLogger(category: java.lang.String): sipDotJsLib.libCoreMod.Logger = js.native
+  def getLogger(category: java.lang.String, label: java.lang.String): sipDotJsLib.libCoreMod.Logger = js.native
+  def getLoggerFactory(): sipDotJsLib.libCoreMod.LoggerFactory = js.native
+  def getSupportedResponseOptions(): js.Array[java.lang.String] = js.native
   /**
     * Make an outgoing call.
     *
@@ -83,13 +84,13 @@ class UA ()
     options: sipDotJsLib.libSessionMod.InviteClientContextNs.Options,
     modifiers: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers
   ): sipDotJsLib.libSessionMod.InviteClientContext = js.native
-  def invite(target: sipDotJsLib.libURIMod.URI): sipDotJsLib.libSessionMod.InviteClientContext = js.native
+  def invite(target: sipDotJsLib.libCoreMod.URI): sipDotJsLib.libSessionMod.InviteClientContext = js.native
   def invite(
-    target: sipDotJsLib.libURIMod.URI,
+    target: sipDotJsLib.libCoreMod.URI,
     options: sipDotJsLib.libSessionMod.InviteClientContextNs.Options
   ): sipDotJsLib.libSessionMod.InviteClientContext = js.native
   def invite(
-    target: sipDotJsLib.libURIMod.URI,
+    target: sipDotJsLib.libCoreMod.URI,
     options: sipDotJsLib.libSessionMod.InviteClientContextNs.Options,
     modifiers: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers
   ): sipDotJsLib.libSessionMod.InviteClientContext = js.native
@@ -105,8 +106,8 @@ class UA ()
     */
   def message(target: java.lang.String, body: java.lang.String): sipDotJsLib.libClientContextMod.ClientContext = js.native
   def message(target: java.lang.String, body: java.lang.String, options: js.Any): sipDotJsLib.libClientContextMod.ClientContext = js.native
-  def message(target: sipDotJsLib.libURIMod.URI, body: java.lang.String): sipDotJsLib.libClientContextMod.ClientContext = js.native
-  def message(target: sipDotJsLib.libURIMod.URI, body: java.lang.String, options: js.Any): sipDotJsLib.libClientContextMod.ClientContext = js.native
+  def message(target: sipDotJsLib.libCoreMod.URI, body: java.lang.String): sipDotJsLib.libClientContextMod.ClientContext = js.native
+  def message(target: sipDotJsLib.libCoreMod.URI, body: java.lang.String, options: js.Any): sipDotJsLib.libClientContextMod.ClientContext = js.native
   /**
     * Normalize a string into a valid SIP request URI
     *
@@ -114,8 +115,8 @@ class UA ()
     *
     * @returns {SIP.URI|undefined}
     */
-  def normalizeTarget(target: java.lang.String): js.UndefOr[sipDotJsLib.libURIMod.URI] = js.native
-  def normalizeTarget(target: sipDotJsLib.libURIMod.URI): js.UndefOr[sipDotJsLib.libURIMod.URI] = js.native
+  def normalizeTarget(target: java.lang.String): js.UndefOr[sipDotJsLib.libCoreMod.URI] = js.native
+  def normalizeTarget(target: sipDotJsLib.libCoreMod.URI): js.UndefOr[sipDotJsLib.libCoreMod.URI] = js.native
   @JSName("on")
   def on_invite(
     name: sipDotJsLib.sipDotJsLibStrings.invite,
@@ -162,7 +163,7 @@ class UA ()
   @JSName("on")
   def on_transportCreated(
     name: sipDotJsLib.sipDotJsLibStrings.transportCreated,
-    callback: js.Function1[/* transport */ sipDotJsLib.libTransportMod.Transport, scala.Unit]
+    callback: js.Function1[/* transport */ sipDotJsLib.libCoreMod.Transport, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_unregistered(
@@ -181,7 +182,7 @@ class UA ()
     */
   def publish(target: java.lang.String, event: java.lang.String, body: java.lang.String, options: js.Any): sipDotJsLib.libPublishContextMod.PublishContext = js.native
   def publish(
-    target: sipDotJsLib.libURIMod.URI,
+    target: sipDotJsLib.libCoreMod.URI,
     event: java.lang.String,
     body: java.lang.String,
     options: js.Any
@@ -190,8 +191,8 @@ class UA ()
   def register(options: js.Any): this.type = js.native
   def request(method: java.lang.String, target: java.lang.String): sipDotJsLib.libClientContextMod.ClientContext = js.native
   def request(method: java.lang.String, target: java.lang.String, options: js.Any): sipDotJsLib.libClientContextMod.ClientContext = js.native
-  def request(method: java.lang.String, target: sipDotJsLib.libURIMod.URI): sipDotJsLib.libClientContextMod.ClientContext = js.native
-  def request(method: java.lang.String, target: sipDotJsLib.libURIMod.URI, options: js.Any): sipDotJsLib.libClientContextMod.ClientContext = js.native
+  def request(method: java.lang.String, target: sipDotJsLib.libCoreMod.URI): sipDotJsLib.libClientContextMod.ClientContext = js.native
+  def request(method: java.lang.String, target: sipDotJsLib.libCoreMod.URI, options: js.Any): sipDotJsLib.libClientContextMod.ClientContext = js.native
   /**
     * Connect to the WS server if status = STATUS_INIT.
     * Resume UA after being closed.
@@ -203,7 +204,7 @@ class UA ()
     */
   def stop(): this.type = js.native
   def subscribe(target: java.lang.String, event: java.lang.String, options: js.Any): sipDotJsLib.libSubscriptionMod.Subscription = js.native
-  def subscribe(target: sipDotJsLib.libURIMod.URI, event: java.lang.String, options: js.Any): sipDotJsLib.libSubscriptionMod.Subscription = js.native
+  def subscribe(target: sipDotJsLib.libCoreMod.URI, event: java.lang.String, options: js.Any): sipDotJsLib.libSubscriptionMod.Subscription = js.native
   /**
     * Unregister.
     *

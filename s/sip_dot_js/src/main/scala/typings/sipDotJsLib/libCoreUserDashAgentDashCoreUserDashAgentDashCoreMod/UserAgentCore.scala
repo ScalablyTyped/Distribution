@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/user-agent-core/user-agent-core", "UserAgentCore")
+@JSImport("sip.js/lib/core/user-agent-core/user-agent-core", "UserAgentCore")
 @js.native
 class UserAgentCore protected () extends js.Object {
   /**
@@ -23,7 +23,7 @@ class UserAgentCore protected () extends js.Object {
   var dialogs: stdLib.Map[java.lang.String, sipDotJsLib.libCoreDialogsMod.Dialog] = js.native
   var logger: js.Any = js.native
   /** Logger factory. */
-  val loggerFactory: sipDotJsLib.libLoggerFactoryMod.LoggerFactory = js.native
+  val loggerFactory: sipDotJsLib.libCoreLogMod.LoggerFactory = js.native
   /**
     * Once a dialog has been established between two UAs, either of them
     * MAY initiate new transactions as needed within the dialog.  The UA
@@ -78,7 +78,7 @@ class UserAgentCore protected () extends js.Object {
   /** Subscribers. */
   var subscribers: stdLib.Map[java.lang.String, sipDotJsLib.libCoreUserDashAgentsMod.SubscribeUserAgentClient] = js.native
   /** Transport. */
-  val transport: sipDotJsLib.libTransportMod.Transport = js.native
+  val transport: sipDotJsLib.libCoreTransportMod.Transport = js.native
   /** UACs. */
   var userAgentClients: stdLib.Map[java.lang.String, sipDotJsLib.libCoreUserDashAgentsMod.UserAgentClient] = js.native
   /** UASs. */
@@ -90,19 +90,53 @@ class UserAgentCore protected () extends js.Object {
     * @param request Outgoing request.
     * @param delegate Request delegate.
     */
-  def invite(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest): sipDotJsLib.libCoreMessagesMethodsInviteMod.OutgoingInviteRequest = js.native
+  def invite(request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage): sipDotJsLib.libCoreMessagesMethodsInviteMod.OutgoingInviteRequest = js.native
   def invite(
-    request: sipDotJsLib.libSIPMessageMod.OutgoingRequest,
+    request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage,
     delegate: sipDotJsLib.libCoreMessagesMethodsInviteMod.OutgoingInviteRequestDelegate
   ): sipDotJsLib.libCoreMessagesMethodsInviteMod.OutgoingInviteRequest = js.native
+  /**
+    * Outgoing request message factory function.
+    * @param method Method.
+    * @param requestURI Request-URI.
+    * @param fromURI From URI.
+    * @param toURI To URI.
+    * @param options Request options.
+    * @param extraHeaders Extra headers to add.
+    * @param body Message body.
+    */
+  def makeOutgoingRequestMessage(
+    method: java.lang.String,
+    requestURI: sipDotJsLib.libCoreMessagesMod.URI,
+    fromURI: sipDotJsLib.libCoreMessagesMod.URI,
+    toURI: sipDotJsLib.libCoreMessagesMod.URI,
+    options: sipDotJsLib.libCoreMessagesOutgoingDashRequestDashMessageMod.OutgoingRequestMessageOptions
+  ): sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage = js.native
+  def makeOutgoingRequestMessage(
+    method: java.lang.String,
+    requestURI: sipDotJsLib.libCoreMessagesMod.URI,
+    fromURI: sipDotJsLib.libCoreMessagesMod.URI,
+    toURI: sipDotJsLib.libCoreMessagesMod.URI,
+    options: sipDotJsLib.libCoreMessagesOutgoingDashRequestDashMessageMod.OutgoingRequestMessageOptions,
+    extraHeaders: js.Array[java.lang.String]
+  ): sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage = js.native
+  def makeOutgoingRequestMessage(
+    method: java.lang.String,
+    requestURI: sipDotJsLib.libCoreMessagesMod.URI,
+    fromURI: sipDotJsLib.libCoreMessagesMod.URI,
+    toURI: sipDotJsLib.libCoreMessagesMod.URI,
+    options: sipDotJsLib.libCoreMessagesOutgoingDashRequestDashMessageMod.OutgoingRequestMessageOptions,
+    extraHeaders: js.Array[java.lang.String],
+    body: sipDotJsLib.libCoreMessagesBodyMod.Body
+  ): sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage = js.native
   /**
     * Send MESSAGE.
     * @param request Outgoing request.
     * @param delegate Request delegate.
     */
-  def message(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest): sipDotJsLib.libCoreMessagesMethodsMessageMod.OutgoingMessageRequest = js.native
+  def message(request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage): sipDotJsLib.libCoreMessagesMethodsMessageMod.OutgoingMessageRequest = js.native
   def message(
-    request: sipDotJsLib.libSIPMessageMod.OutgoingRequest,
+    request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage,
     delegate: sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate
   ): sipDotJsLib.libCoreMessagesMethodsMessageMod.OutgoingMessageRequest = js.native
   /**
@@ -110,29 +144,29 @@ class UserAgentCore protected () extends js.Object {
     * @param request Outgoing request.
     * @param delegate Request delegate.
     */
-  def publish(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest): sipDotJsLib.libCoreMessagesMethodsPublishMod.OutgoingPublishRequest = js.native
+  def publish(request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage): sipDotJsLib.libCoreMessagesMethodsPublishMod.OutgoingPublishRequest = js.native
   def publish(
-    request: sipDotJsLib.libSIPMessageMod.OutgoingRequest,
+    request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage,
     delegate: sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate
   ): sipDotJsLib.libCoreMessagesMethodsPublishMod.OutgoingPublishRequest = js.native
   /**
     * Handle an incoming request message from the transport.
     * @param message Incoming request message from transport layer.
     */
-  def receiveIncomingRequestFromTransport(message: sipDotJsLib.libSIPMessageMod.IncomingRequest): scala.Unit = js.native
+  def receiveIncomingRequestFromTransport(message: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage): scala.Unit = js.native
   /**
     * Handle an incoming response message from the transport.
     * @param message Incoming response message from transport layer.
     */
-  def receiveIncomingResponseFromTransport(message: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
+  def receiveIncomingResponseFromTransport(message: sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage): scala.Unit = js.native
   /**
     * Send REGISTER.
     * @param request Outgoing request.
     * @param delegate Request delegate.
     */
-  def register(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest): sipDotJsLib.libCoreMessagesMethodsRegisterMod.OutgoingRegisterRequest = js.native
+  def register(request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage): sipDotJsLib.libCoreMessagesMethodsRegisterMod.OutgoingRegisterRequest = js.native
   def register(
-    request: sipDotJsLib.libSIPMessageMod.OutgoingRequest,
+    request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage,
     delegate: sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate
   ): sipDotJsLib.libCoreMessagesMethodsRegisterMod.OutgoingRegisterRequest = js.native
   /**
@@ -152,7 +186,7 @@ class UserAgentCore protected () extends js.Object {
     * @param statusCode Status code to reply with.
     */
   def replyStateless(
-    message: sipDotJsLib.libSIPMessageMod.IncomingRequest,
+    message: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage,
     options: sipDotJsLib.libCoreMessagesOutgoingDashResponseMod.ResponseOptions
   ): sipDotJsLib.libCoreMessagesOutgoingDashResponseMod.OutgoingResponse = js.native
   /**
@@ -160,9 +194,9 @@ class UserAgentCore protected () extends js.Object {
     * @param request Outgoing request.
     * @param delegate Request delegate.
     */
-  def request(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest): sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequest = js.native
+  def request(request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage): sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequest = js.native
   def request(
-    request: sipDotJsLib.libSIPMessageMod.OutgoingRequest,
+    request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage,
     delegate: sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate
   ): sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequest = js.native
   /** Reset. */
@@ -172,9 +206,9 @@ class UserAgentCore protected () extends js.Object {
     * @param request Outgoing request.
     * @param delegate Request delegate.
     */
-  def subscribe(request: sipDotJsLib.libSIPMessageMod.OutgoingRequest): sipDotJsLib.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequest = js.native
+  def subscribe(request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage): sipDotJsLib.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequest = js.native
   def subscribe(
-    request: sipDotJsLib.libSIPMessageMod.OutgoingRequest,
+    request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage,
     delegate: sipDotJsLib.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequestDelegate
   ): sipDotJsLib.libCoreMessagesMethodsSubscribeMod.OutgoingSubscribeRequest = js.native
 }

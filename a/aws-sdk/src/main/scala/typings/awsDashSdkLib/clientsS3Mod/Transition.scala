@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait Transition extends js.Object {
   /**
-    * Indicates at what date the object is to be moved or deleted. Should be in GMT ISO 8601 Format.
+    * Indicates when objects are transitioned to the specified storage class. The date value must be in ISO 8601 format. The time is always midnight UTC.
     */
   var Date: js.UndefOr[_Date] = js.undefined
   /**
-    * Indicates the lifetime, in days, of the objects that are subject to the rule. The value must be a non-zero positive integer.
+    * Indicates the number of days after creation when objects are transitioned to the specified storage class. The value must be a positive integer.
     */
   var Days: js.UndefOr[Days] = js.undefined
   /**
-    * The class of storage used to store the object.
+    * The storage class to which you want the object to transition.
     */
   var StorageClass: js.UndefOr[TransitionStorageClass] = js.undefined
 }

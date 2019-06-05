@@ -27,6 +27,10 @@ trait QuickPulseStateManager extends js.Object {
   /* private */ def _goQuickPulse(): js.Any = js.native
   /* private */ def _ping(envelope: js.Any): js.Any = js.native
   /* private */ def _post(envelope: js.Any): js.Any = js.native
+  /**
+    * Change the current QPS send state. (shouldPOST == undefined) --> error, but do not change the state yet.
+    */
+  /* private */ def _quickPulseDone(): js.Any = js.native
   /* private */ def _quickPulseDone(shouldPOST: js.Any): js.Any = js.native
   /* private */ def _quickPulseDone(shouldPOST: js.Any, res: js.Any): js.Any = js.native
   /* private */ def _resetQuickPulseBuffer(): js.Any = js.native

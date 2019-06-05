@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "express-formidable"
-version := "1.0-dt-20180409Z-1dcf4b"
+version := "1.0-dt-20180409Z-0dd3f8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-8931e7",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-85ff12",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-ba6df1",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-1a5daf",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-1f48f2",
   "org.scalablytyped" %%% "formidable" % "1.0.16-dt-20190322Z-892c18",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-49fefe",

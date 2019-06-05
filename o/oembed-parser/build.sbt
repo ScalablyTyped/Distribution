@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oembed-parser"
-version := "1.2-dt-20181118Z-cedddf"
+version := "1.2-dt-20190604Z-9d5045"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

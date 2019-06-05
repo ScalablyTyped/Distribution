@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-express"
-version := "2.6.1-a675c3"
+version := "2.6.1-b39182"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-link" % "1.2.11-1d20bf",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-8931e7",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-85ff12",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20190425Z-aed8fa",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-ba6df1",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20190425Z-29f4ce",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-1a5daf",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-1f48f2",
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-a67bc6",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-c0217d",

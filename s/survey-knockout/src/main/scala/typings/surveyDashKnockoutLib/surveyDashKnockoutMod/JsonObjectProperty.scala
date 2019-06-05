@@ -26,6 +26,7 @@ class JsonObjectProperty protected () extends IObject {
   val hasToUseSetValue: java.lang.String | (js.Function3[/* obj */ js.Any, /* value */ js.Any, /* jsonConv */ JsonObject, _]) = js.native
   var isArray: scala.Boolean = js.native
   var isDynamicChoices: scala.Boolean = js.native
+  var isLightSerializable: scala.Boolean = js.native
   var isLocalizable: scala.Boolean = js.native
   var isRequired: scala.Boolean = js.native
   var isSerializable: scala.Boolean = js.native

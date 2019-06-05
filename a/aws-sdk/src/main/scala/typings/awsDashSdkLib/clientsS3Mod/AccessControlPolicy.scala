@@ -11,7 +11,7 @@ trait AccessControlPolicy extends js.Object {
     */
   var Grants: js.UndefOr[Grants] = js.undefined
   /**
-    * 
+    * Container for the bucket owner's display name and ID.
     */
   var Owner: js.UndefOr[Owner] = js.undefined
 }

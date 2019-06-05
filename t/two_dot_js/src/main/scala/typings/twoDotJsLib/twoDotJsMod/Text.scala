@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("two.js", "Text")
 @js.native
-class Text protected () extends js.Object {
+class Text protected () extends Object {
   def this(message: java.lang.String, x: scala.Double, y: scala.Double) = this()
   def this(message: java.lang.String, x: scala.Double, y: scala.Double, styles: js.Any) = this()
   var alignment: java.lang.String = js.native

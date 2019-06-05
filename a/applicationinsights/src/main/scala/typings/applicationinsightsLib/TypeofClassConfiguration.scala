@@ -31,9 +31,15 @@ trait TypeofClassConfiguration
   /**
     * Sets the state of performance tracking (enabled by default)
     * @param value if true performance counters will be collected every second and sent to Application Insights
+    * @param collectExtendedMetrics if true, extended metrics counters will be collected every minute and sent to Application Insights
     * @returns {Configuration} this class
     */
   def setAutoCollectPerformance(value: scala.Boolean): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
+  def setAutoCollectPerformance(
+    value: scala.Boolean,
+    collectExtendedMetrics: applicationinsightsLib.outAutoCollectionNativePerformanceMod.IDisabledExtendedMetrics
+  ): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
+  def setAutoCollectPerformance(value: scala.Boolean, collectExtendedMetrics: scala.Boolean): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
   /**
     * Sets the state of request tracking (enabled by default)
     * @param value if true requests will be sent to Application Insights
@@ -48,6 +54,14 @@ trait TypeofClassConfiguration
     */
   def setAutoDependencyCorrelation(value: scala.Boolean): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
   def setAutoDependencyCorrelation(value: scala.Boolean, useAsyncHooks: scala.Boolean): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
+  /**
+    * Sets the distributed tracing modes. If W3C mode is enabled, W3C trace context
+    * headers (traceparent/tracestate) will be parsed in all incoming requests, and included in outgoing
+    * requests. In W3C mode, existing back-compatibility AI headers will also be parsed and included.
+    * Enabling W3C mode will not break existing correlation with other Application Insights instrumented
+    * services. Default=AI
+    */
+  def setDistributedTracingMode(value: applicationinsightsLib.applicationinsightsMod.DistributedTracingModes): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
   /**
     * Enables debug and warning logging for AppInsights itself.
     * @param enableDebugLogging if true, enables debug logging

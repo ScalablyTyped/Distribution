@@ -83,6 +83,7 @@
 | [ali-oss](./a/ali-oss) | aliyun oss(object storage service) node client | oss, client, file, aliyun |
 | [align-text](./a/align-text) | Align the text in a string. | align, align-center, alignment, center, center-align, indent, pad, padding, right, right-align, text, typography |
 | [all-keys](./a/all-keys) | Get all property keys of an object including non-e | get, all, object, property, names, keys, properties, inherited, prototype, enumerable, non-enumerable, reflect, ownkeys, symbol, symbols |
+| [all-the-package-names](./a/all-the-package-names) | A list of all the public package names on npm. Upd | npm, registry, packages, names, list, words, filter, search, offline |
 | [allure-js-commons](./a/allure-js-commons) | Common helper for writing plugins to allure-framew | - |
 | [almost-equal](./a/almost-equal) | Test if two floats are almost equal | float, compare, double, round, equal, almost, near, tolerance, epsilon, FLT_EPSILON, DBL_EPSILON |
 | [alt](./a/alt) | A flux implementation | alt, es6, flow, flux, react, unidirectional |
@@ -450,6 +451,7 @@
 | [bash-glob](./b/bash-glob) | Bash-powered globbing for node.js | bash, expand, expansion, expression, file, files, filter, find, glob, globbing, globs, globstar, match, matcher, matches, matching, micromatch, minimatch, multimatch, nanomatch, path, pattern, patterns, regex, regexp, regular, shell, wildcard |
 | [basic-auth](./b/basic-auth) | node.js basic auth parser | basic, auth, authorization, basicauth |
 | [basicauth-middleware](./b/basicauth-middleware) | Express js basic auth middleware | - |
+| [basiclightbox](./b/basiclightbox) | The lightest lightbox ever made | lightbox, popup, modal, window, dialog, gallery, photo, responsive, mobile |
 | [batch-stream](./b/batch-stream) | Transform a stream into batches | batch, stream, chunks, chunked |
 | [battery-level](./b/battery-level) | Get current battery level | app, battery, cli, cli-app, level, linux, mac, os x, osx, windows |
 | [bazinga-translator](./b/bazinga-translator) | A pretty nice way to use your translation messages | translation, symfony |
@@ -1127,6 +1129,7 @@
 | [date-arithmetic](./d/date-arithmetic) | simple date math util | moment, date, math |
 | [date-fns](./d/date-fns) | Modern JavaScript date utility library | - |
 | [date-now](./d/date-now) | A requirable version of Date.now() | - |
+| [date-range-array](./d/date-range-array) | Create an array of dates. | date, date range, array, time |
 | [date-utils](./d/date-utils) | Date add-ons for Node.js | date, utils, date-utils, time |
 | [date_dot_format_dot_js](./d/date_dot_format_dot_js) | This package is no longer supported and has been d | - |
 | [dateformat](./d/dateformat) | A node.js package for Steven Levithan's excellent  | - |
@@ -1292,6 +1295,7 @@
 | [doublearray](./d/doublearray) | JavaScript implementation of Double-Array trie | trie |
 | [doubleclick-gpt](./d/doubleclick-gpt) | - | - |
 | [download](./d/download) | Download and extract files | download, extract, http, request, url |
+| [download-file-sync](./d/download-file-sync) | Does exactly what you expects | - |
 | [downloadjs](./d/downloadjs) | file downloading using client-side javascript | files, dataURL, blob, download |
 | [downshift](./d/downshift) | A set of primitives to build simple, flexible, WAI | enhanced input, react, autocomplete, autosuggest, typeahead, dropdown, select, combobox, omnibox, accessibility, WAI-ARIA, multiselect, multiple selection |
 | [dplayer](./d/dplayer) | Wow, such a lovely HTML5 danmaku video player | player, danmaku, video, html5 |
@@ -2294,6 +2298,7 @@
 | [gulp-tap](./g/gulp-tap) | Easiest way to tap into a pipeline | tap, gulp, stream |
 | [gulp-task-listing](./g/gulp-task-listing) | Adds the ability to provide a task listing for you | gulpfriendly |
 | [gulp-template](./g/gulp-template) | Render/precompile Lodash/Underscore templates | gulpplugin, lodash, underscore, template, compile, html, render, rendering, precompile |
+| [gulp-terser](./g/gulp-terser) | gulp plugin, compressed es6+ code. | gulp, gulpplugin, uglify-es, terser |
 | [gulp-tsd](./g/gulp-tsd) | Gulp plugin to automate TSD and TypeScript definit | gulp, tsd |
 | [gulp-tslint](./g/gulp-tslint) | TypeScript linter Gulp plugin | gulp, typescript, plugin, ts, gulpplugin, gulpfriendly, tslint, linter, lint |
 | [gulp-typedoc](./g/gulp-typedoc) | Gulp plugin for the TypeDoc typescript documentati | typedoc, typescript, gulpplugin |
@@ -3674,6 +3679,7 @@
 | [logform](./l/logform) | An mutable object-based log format designed for ch | winston, logging, format, winstonjs |
 | [logg](./l/logg) | Logging library that allows for hierarchical logge | log, logging, logger, hierarchical, handler, watcher |
 | [loggly](./l/loggly) | A client implementation for Loggly cloud Logging-a | cloud computing, api, logging, loggly |
+| [login-with-amazon-sdk-bro](./l/login-with-amazon-sdk-browser) | - | - |
 | [loglevel](./l/loglevel) | Minimal lightweight logging for JavaScript, adding | log, logger, logging, browser |
 | [loglevel-plugin-prefix](./l/loglevel-plugin-prefix) | Plugin for loglevel message prefixing | log, logger, logging, browser, node, prefix, colored, loglevel, plugin |
 | [logrotate-stream](./l/logrotate-stream) | Pipe log data to a stream, fuggetabout rotation | log, rotate, pipe, stream |
@@ -4212,6 +4218,7 @@
 | [node-validator](./n/node-validator) | A simple, extensible object property validator for | validator, validation, express, check, test, request-validation, koa, koajs |
 | [node-vault](./n/node-vault) | Javascript client for HashiCorp's Vault | vault, hashicorp, secrets, manage, client |
 | [node-waves](./n/node-waves) | Click effect insipired by Google Material Design | - |
+| [node-wget-promise](./n/node-wget-promise) | wget in Node, with Promise support | download, http, promise, request, wget |
 | [node-wit](./n/node-wit) | Wit.ai Node.js SDK | wit, wit.ai, bot, botengine, bots, nlp, automation |
 | [node-xlsx](./n/node-xlsx) | NodeJS Excel files parser & builder | excel, parser, builder, xlsx, xls |
 | [node-xmpp-client](./n/node-xmpp-client) | XMPP client for JavaScript | client, XMPP, C2S, WebSocket, BOSH |
@@ -4880,6 +4887,7 @@
 | [radix64](./r/radix64) | radix64, library to convert Unsigned Interger into | - |
 | [raf](./r/raf) | requestAnimationFrame polyfill for node and the br | requestAnimationFrame, polyfill |
 | [ramda](./r/ramda) | A practical functional library for JavaScript prog | ramda, functional, utils, utilities, toolkit, fp, tacit, point-free, curried, pure, fantasy-land |
+| [random](./r/random) | Seedable random number generator supporting many c | random, number, generator, rng, prng, stats, d3-random, seedrandom, distribution, pseudorandom, uniform, normal, gaussian, lognormal, poisson, exponential, irwinhall, bates |
 | [random-boolean](./r/random-boolean) | Get a random boolean | random, bool, boolean, true, false |
 | [random-float](./r/random-float) | Generate a random float | random, randomize, float, floating, point, real, number, max, min, math, generate, generator |
 | [random-int](./r/random-int) | Generate a random integer | rand, random, randomize, int, integer, number, max, min, math, generate, generator |
@@ -6100,6 +6108,7 @@
 | [starwars-names](./s/starwars-names) | Get random Star Wars names | random, star, wars |
 | [stat-mode](./s/stat-mode) | Offers convenient getters and setters for the stat | stat, mode, owner, group, others, chmod, octal, symbolic, permissions |
 | [static-eval](./s/static-eval) | evaluate statically-analyzable expressions | static, eval, expression, esprima, ast, abstract, syntax, tree, analysis |
+| [stats-lite](./s/stats-lite) | A light statistical package that operates on numer | stats, statistics, numbers, math, sum, mean, average, mode, median, percentile, variance, deviation |
 | [stats_dot_js](./s/stats_dot_js) | JavaScript Performance Monitor | performance, fps, stats |
 | [statsd-client](./s/statsd-client) | Yet another client for Etsy's statsd | statsd, client, metrics, udp, tcp |
 | [statuses](./s/statuses) | HTTP status utility | http, status, code |
@@ -6793,6 +6802,7 @@
 | [webmidi](./w/webmidi) | WebMidi.js helps you tame the Web MIDI API. Send a | midi, message, web, browser, front-end, webmidi api |
 | [webpack](./w/webpack) | Packs CommonJs/AMD modules for the browser. Allows | - |
 | [webpack-assets-manifest](./w/webpack-assets-manifest) | This Webpack plugin will generate a JSON file that | webpack-assets-manifest, webpack-plugin, webpack, plugin, assets, manifest, json, subresource, integrity, sri |
+| [webpack-bugsnag-plugins](./w/webpack-bugsnag-plugins) | Webpack plugins for common Bugsnag actions | bugsnag, webpack |
 | [webpack-bundle-analyzer](./w/webpack-bundle-analyzer) | Webpack plugin and CLI utility that represents bun | webpack, bundle, analyzer, modules, size, interactive, chart, treemap, zoomable, zoom |
 | [webpack-chain](./w/webpack-chain) | - | webpack, config, chain, fluent, api |
 | [webpack-chunk-hash](./w/webpack-chunk-hash) | Plugin to replace a standard webpack chunk hashing | webpack, hash, plugin, md5 |
@@ -6877,7 +6887,12 @@
 | [word-wrap](./w/word-wrap) | Wrap words to a specified length. | break, carriage, line, new-line, newline, return, soft, text, word, word-wrap, words, wrap |
 | [word2vector](./w/word2vector) | a word2vector interface for nodejs | word2vector, word2vec, word, vec, machine learning, chinese, deep-learning, 向量, vector, 文字, 機器學習 |
 | [wordcloud](./w/wordcloud) | Tag cloud/Wordle presentation on 2D canvas or HTML | cloud, canvas, 2D, html, Wordle, presentation, tag |
+| [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded. | wordpress, dom-ready |
+| [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress. | wordpress, html, entities |
+| [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library. | wordpress, i18n |
 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object. | wordpress, jest, matchers, console |
+| [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo | wordpress, keycodes |
+| [wordpress__url](./w/wordpress__url) | WordPress URL utilities. | wordpress, url |
 | [words-to-numbers](./w/words-to-numbers) | convert textual words to numbers with optional fuz | - |
 | [wordwrap](./w/wordwrap) | Wrap those words. Show them at what columns to sta | word, wrap, rule, format, column |
 | [workbox-sw](./w/workbox-sw) | This module makes it easy to get started with the  | workbox, workboxjs, service worker, sw |

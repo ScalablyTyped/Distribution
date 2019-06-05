@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- sipDotJsLib.libCoreMessagesMethodsNotifyMod.OutgoingNotifyRequest because Already inherited */ @JSImport("sip.js/lib/Core/user-agents/notify-user-agent-client", "NotifyUserAgentClient")
+- sipDotJsLib.libCoreMessagesMethodsNotifyMod.OutgoingNotifyRequest because Already inherited */ @JSImport("sip.js/lib/core/user-agents/notify-user-agent-client", "NotifyUserAgentClient")
 @js.native
 class NotifyUserAgentClient protected ()
   extends sipDotJsLib.libCoreUserDashAgentsUserDashAgentDashClientMod.UserAgentClient {

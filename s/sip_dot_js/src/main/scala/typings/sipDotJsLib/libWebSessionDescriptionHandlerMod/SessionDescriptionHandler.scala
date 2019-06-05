@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class SessionDescriptionHandler protected ()
   extends nodeLib.eventsMod.EventEmitter
      with sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler {
-  def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger, observer: sipDotJsLib.libWebSessionDescriptionHandlerObserverMod.SessionDescriptionHandlerObserver, options: js.Any) = this()
+  def this(logger: sipDotJsLib.libCoreMod.Logger, observer: sipDotJsLib.libWebSessionDescriptionHandlerObserverMod.SessionDescriptionHandlerObserver, options: js.Any) = this()
   var C: js.Any = js.native
   var CONTENT_TYPE: js.Any = js.native
   var WebRTC: js.Any = js.native

@@ -18,15 +18,15 @@ trait Session extends js.Object {
   /** Local Tag. */
   val localTag: java.lang.String = js.native
   /** Local URI. */
-  val localURI: sipDotJsLib.libURIMod.URI = js.native
+  val localURI: sipDotJsLib.libCoreMessagesMod.URI = js.native
   /** The current offer if signalingState is not initial or closed. Otherwise undefined. */
   val offer: js.UndefOr[sipDotJsLib.libCoreMessagesBodyMod.Body] = js.native
   /** Remote Tag. */
   val remoteTag: java.lang.String = js.native
   /** Remote Target. */
-  val remoteTarget: sipDotJsLib.libURIMod.URI = js.native
+  val remoteTarget: sipDotJsLib.libCoreMessagesMod.URI = js.native
   /** Remote URI. */
-  val remoteURI: sipDotJsLib.libURIMod.URI = js.native
+  val remoteURI: sipDotJsLib.libCoreMessagesMod.URI = js.native
   /** Session state. */
   val sessionState: SessionState = js.native
   /** Current state of the offer/answer exchange. */

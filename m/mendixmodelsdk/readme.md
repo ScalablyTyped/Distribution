@@ -1,7 +1,7 @@
 
 # Scala.js typings for mendixmodelsdk
 
-Typings are for version 4.20.0
+Typings are for version 4.21.0
 
 ## Library description:
 Mendix Model SDK
@@ -82,7 +82,7 @@ THE SOFTWARE.
 /**
  * The `utils` module contains various utility interfaces and functions.
  */
-/** Current SDK version: 4.20.0 */
+/** Current SDK version: 4.21.0 */
 
 ```
 

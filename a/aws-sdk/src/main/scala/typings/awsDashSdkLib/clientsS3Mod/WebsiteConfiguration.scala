@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait WebsiteConfiguration extends js.Object {
   /**
-    * 
+    * The name of the error document for the website.
     */
   var ErrorDocument: js.UndefOr[ErrorDocument] = js.undefined
   /**
-    * 
+    * The name of the index document for the website.
     */
   var IndexDocument: js.UndefOr[IndexDocument] = js.undefined
   /**
-    * 
+    * The redirect behavior for every request to this bucket's website endpoint.  If you specify this property, you can't specify any other property. 
     */
   var RedirectAllRequestsTo: js.UndefOr[RedirectAllRequestsTo] = js.undefined
   /**
-    * 
+    * Rules that define when a redirect is applied and the redirect behavior.
     */
   var RoutingRules: js.UndefOr[RoutingRules] = js.undefined
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for tedious
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 A TDS driver, for connecting to MS SQLServer databases.
@@ -35,12 +35,13 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for tedious 3.0.0
+// Type definitions for tedious 4.0.0
 // Project: http://tediousjs.github.io/tedious/
 // Definitions by: Rogier Schouten <https://github.com/rogierschouten>
 //                 Chris Thompson <https://github.com/cjthompson>
 //                 Suraiya Hameed <https://github.com/v-suhame>
 //                 Guilherme Amorim <https://github.com/guiampm>
+//                 Simon Childs <https://github.com/csharpsi>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LifecycleRuleFilter extends js.Object {
+  /**
+    * 
+    */
   var And: js.UndefOr[LifecycleRuleAndOperator] = js.undefined
   /**
     * Prefix identifying one or more objects to which the rule applies.

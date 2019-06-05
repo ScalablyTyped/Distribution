@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/dialogs/subscription-dialog", "SubscriptionDialog")
+@JSImport("sip.js/lib/core/dialogs/subscription-dialog", "SubscriptionDialog")
 @js.native
 class SubscriptionDialog protected ()
   extends sipDotJsLib.libCoreDialogsDialogMod.Dialog
@@ -67,7 +67,7 @@ class SubscriptionDialog protected ()
 }
 
 /* static members */
-@JSImport("sip.js/lib/Core/dialogs/subscription-dialog", "SubscriptionDialog")
+@JSImport("sip.js/lib/core/dialogs/subscription-dialog", "SubscriptionDialog")
 @js.native
 object SubscriptionDialog extends js.Object {
   /**
@@ -79,8 +79,8 @@ object SubscriptionDialog extends js.Object {
     * @param incomingResponseMessage Incoming response message creating dialog.
     */
   def initialDialogStateForSubscription(
-    outgoingSubscribeRequestMessage: sipDotJsLib.libSIPMessageMod.OutgoingRequest,
-    incomingNotifyRequestMessage: sipDotJsLib.libSIPMessageMod.IncomingRequest
+    outgoingSubscribeRequestMessage: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage,
+    incomingNotifyRequestMessage: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage
   ): sipDotJsLib.libCoreDialogsDialogDashStateMod.DialogState = js.native
 }
 

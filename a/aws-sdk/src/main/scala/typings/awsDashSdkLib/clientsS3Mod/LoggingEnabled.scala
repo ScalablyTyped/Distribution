@@ -15,7 +15,7 @@ trait LoggingEnabled extends js.Object {
     */
   var TargetGrants: js.UndefOr[TargetGrants] = js.undefined
   /**
-    * This element lets you specify a prefix for the keys that the log files will be stored under.
+    * A prefix for all log object keys. If you store log files from multiple Amazon S3 buckets in a single bucket, you can use a prefix to distinguish which log files came from which bucket.
     */
   var TargetPrefix: awsDashSdkLib.clientsS3Mod.TargetPrefix
 }

@@ -11,7 +11,7 @@ object WebNs extends js.Object {
   @js.native
   class SessionDescriptionHandler protected ()
     extends sipDotJsLib.libWebMod.SessionDescriptionHandler {
-    def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger, observer: sipDotJsLib.libWebSessionDescriptionHandlerObserverMod.SessionDescriptionHandlerObserver, options: js.Any) = this()
+    def this(logger: sipDotJsLib.libCoreMod.Logger, observer: sipDotJsLib.libWebSessionDescriptionHandlerObserverMod.SessionDescriptionHandlerObserver, options: js.Any) = this()
   }
   
   @js.native
@@ -23,8 +23,8 @@ object WebNs extends js.Object {
   @js.native
   class Transport protected ()
     extends sipDotJsLib.libWebMod.Transport {
-    def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger) = this()
-    def this(logger: sipDotJsLib.libLoggerFactoryMod.Logger, options: js.Any) = this()
+    def this(logger: sipDotJsLib.libCoreMod.Logger) = this()
+    def this(logger: sipDotJsLib.libCoreMod.Logger, options: js.Any) = this()
   }
   
   @JSName("Modifiers")

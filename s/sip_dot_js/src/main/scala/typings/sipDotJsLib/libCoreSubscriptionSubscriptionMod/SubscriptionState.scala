@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait SubscriptionState extends js.Object
 
-@JSImport("sip.js/lib/Core/subscription/subscription", "SubscriptionState")
+@JSImport("sip.js/lib/core/subscription/subscription", "SubscriptionState")
 @js.native
 object SubscriptionState extends js.Object {
   @js.native

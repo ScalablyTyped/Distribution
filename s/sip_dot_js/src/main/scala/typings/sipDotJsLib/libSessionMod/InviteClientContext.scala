@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class InviteClientContext protected () extends Session {
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, options: js.Any) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, options: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, options: js.Any) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, options: js.Any, modifiers: js.Any) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libURIMod.URI, options: js.Any, modifiers: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, options: js.Any, modifiers: js.Any) = this()
   var ackAndBye: js.Any = js.native
   var anonymous: scala.Boolean = js.native
   var disposeEarlyMedia: js.Any = js.native
@@ -48,7 +48,7 @@ class InviteClientContext protected () extends Session {
   var onTrying: js.Any = js.native
   var outgoingInviteRequest: js.Any = js.native
   var received100: scala.Boolean = js.native
-  var request: sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
+  var request: sipDotJsLib.libCoreMod.OutgoingRequestMessage = js.native
   /**
     * 13.2.1 Creating the Initial INVITE
     *
@@ -92,7 +92,7 @@ class InviteClientContext protected () extends Session {
   def cancel(): this.type = js.native
   def cancel(options: js.Any): this.type = js.native
   def invite(): this.type = js.native
-  def receiveResponse(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
+  def receiveResponse(response: sipDotJsLib.libCoreMod.IncomingResponseMessage): scala.Unit = js.native
   def send(): this.type = js.native
 }
 

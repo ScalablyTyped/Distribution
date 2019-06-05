@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object tileLayerNs extends js.Object {
   def provider(provider: java.lang.String): leafletDashProvidersLib.leafletMod.TileLayerNs.Provider = js.native
-  def provider(
-    provider: java.lang.String,
-    options: leafletLib.leafletMod.TileLayerOptions with org.scalablytyped.runtime.StringDictionary[java.lang.String]
-  ): leafletDashProvidersLib.leafletMod.TileLayerNs.Provider = js.native
+  def provider(provider: java.lang.String, options: leafletLib.leafletMod.TileLayerOptions): leafletDashProvidersLib.leafletMod.TileLayerNs.Provider = js.native
+  def provider(provider: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[java.lang.String]): leafletDashProvidersLib.leafletMod.TileLayerNs.Provider = js.native
 }
 

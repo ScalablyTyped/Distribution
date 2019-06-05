@@ -15,7 +15,7 @@ trait Redirect extends js.Object {
     */
   var HttpRedirectCode: js.UndefOr[HttpRedirectCode] = js.undefined
   /**
-    * Protocol to use (http, https) when redirecting requests. The default is the protocol that is used in the original request.
+    * Protocol to use when redirecting requests. The default is the protocol that is used in the original request.
     */
   var Protocol: js.UndefOr[Protocol] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait Redirect extends js.Object {
     */
   var ReplaceKeyPrefixWith: js.UndefOr[ReplaceKeyPrefixWith] = js.undefined
   /**
-    * The specific object key to use in the redirect request. For example, redirect request to error.html. Not required if one of the sibling is present. Can be present only if ReplaceKeyPrefixWith is not provided.
+    * The specific object key to use in the redirect request. For example, redirect request to error.html. Not required if one of the siblings is present. Can be present only if ReplaceKeyPrefixWith is not provided.
     */
   var ReplaceKeyWith: js.UndefOr[ReplaceKeyWith] = js.undefined
 }

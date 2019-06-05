@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/user-agents/user-agent-client", "UserAgentClient")
+@JSImport("sip.js/lib/core/user-agents/user-agent-client", "UserAgentClient")
 @js.native
 class UserAgentClient protected ()
   extends sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequest {
-  def this(transactionConstructor: ClientTransactionConstructor, core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libSIPMessageMod.OutgoingRequest) = this()
-  def this(transactionConstructor: ClientTransactionConstructor, core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libSIPMessageMod.OutgoingRequest, delegate: sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate) = this()
+  def this(transactionConstructor: ClientTransactionConstructor, core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage) = this()
+  def this(transactionConstructor: ClientTransactionConstructor, core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore, message: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage, delegate: sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate) = this()
   var _transaction: js.Any = js.native
   var challenged: js.Any = js.native
   var core: sipDotJsLib.libCoreUserDashAgentDashCoreMod.UserAgentCore = js.native
@@ -18,8 +18,10 @@ class UserAgentClient protected ()
   @JSName("delegate")
   var delegate_UserAgentClient: js.UndefOr[sipDotJsLib.libCoreMessagesOutgoingDashRequestMod.OutgoingRequestDelegate] = js.native
   var init: js.Any = js.native
-  var logger: sipDotJsLib.libLoggerFactoryMod.Logger = js.native
-  val loggerFactory: sipDotJsLib.libLoggerFactoryMod.LoggerFactory = js.native
+  var logger: sipDotJsLib.libCoreLogMod.Logger = js.native
+  val loggerFactory: sipDotJsLib.libCoreLogMod.LoggerFactory = js.native
+  @JSName("message")
+  var message_UserAgentClient: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage = js.native
   /**
     * 8.1.3.1 Transaction Layer Errors
     * In some cases, the response returned by the transaction layer will
@@ -71,11 +73,11 @@ class UserAgentClient protected ()
     * @returns True if the program execution is to continue in the branch in question.
     *          Otherwise the request is retried with credentials and current request processing must stop.
     */
-  /* protected */ def authenticationGuard(message: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Boolean = js.native
+  /* protected */ def authenticationGuard(message: sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage): scala.Boolean = js.native
   /**
     * Receive a response from the transaction layer.
     * @param message Incoming response message.
     */
-  /* protected */ def receiveResponse(message: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
+  /* protected */ def receiveResponse(message: sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage): scala.Unit = js.native
 }
 

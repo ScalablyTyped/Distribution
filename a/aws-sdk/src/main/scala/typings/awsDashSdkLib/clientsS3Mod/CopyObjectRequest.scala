@@ -103,11 +103,11 @@ trait CopyObjectRequest extends js.Object {
     */
   var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
   /**
-    * The Object Lock mode that you want to apply to the copied object.
+    * The object lock mode that you want to apply to the copied object.
     */
   var ObjectLockMode: js.UndefOr[ObjectLockMode] = js.undefined
   /**
-    * The date and time when you want the copied object's Object Lock to expire.
+    * The date and time when you want the copied object's object lock to expire.
     */
   var ObjectLockRetainUntilDate: js.UndefOr[ObjectLockRetainUntilDate] = js.undefined
   var RequestPayer: js.UndefOr[RequestPayer] = js.undefined

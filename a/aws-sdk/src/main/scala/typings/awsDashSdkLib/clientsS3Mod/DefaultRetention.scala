@@ -11,7 +11,7 @@ trait DefaultRetention extends js.Object {
     */
   var Days: js.UndefOr[Days] = js.undefined
   /**
-    * The default Object Lock retention mode you want to apply to new objects placed in the specified bucket.
+    * The default object lock retention mode you want to apply to new objects placed in the specified bucket.
     */
   var Mode: js.UndefOr[ObjectLockRetentionMode] = js.undefined
   /**

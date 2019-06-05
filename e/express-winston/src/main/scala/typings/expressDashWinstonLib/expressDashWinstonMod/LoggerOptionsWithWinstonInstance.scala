@@ -21,6 +21,7 @@ object LoggerOptionsWithWinstonInstance {
     colorize: js.UndefOr[scala.Boolean] = js.undefined,
     dynamicMeta: DynamicMetaFunction = null,
     expressFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    format: logformLib.logformMod.Format = null,
     ignoreRoute: RouteFilter = null,
     ignoredRoutes: js.Array[java.lang.String] = null,
     level: java.lang.String | DynamicLevelFunction = null,
@@ -41,6 +42,7 @@ object LoggerOptionsWithWinstonInstance {
     if (!js.isUndefined(colorize)) __obj.updateDynamic("colorize")(colorize)
     if (dynamicMeta != null) __obj.updateDynamic("dynamicMeta")(dynamicMeta)
     if (!js.isUndefined(expressFormat)) __obj.updateDynamic("expressFormat")(expressFormat)
+    if (format != null) __obj.updateDynamic("format")(format)
     if (ignoreRoute != null) __obj.updateDynamic("ignoreRoute")(ignoreRoute)
     if (ignoredRoutes != null) __obj.updateDynamic("ignoredRoutes")(ignoredRoutes)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

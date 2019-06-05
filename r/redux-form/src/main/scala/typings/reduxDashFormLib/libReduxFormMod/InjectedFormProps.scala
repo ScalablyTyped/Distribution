@@ -24,9 +24,9 @@ trait InjectedFormProps[FormData, P, ErrorType] extends js.Object {
   var valid: scala.Boolean
   var warning: js.Any
   def asyncValidate(): scala.Unit
-  def autofill(field: java.lang.String, value: js.Any): scala.Unit
-  def blur(field: java.lang.String, value: js.Any): scala.Unit
-  def change(field: java.lang.String, value: js.Any): scala.Unit
+  def autofill[F /* <: java.lang.String */](field: F, value: /* import warning: ImportType.apply Failed type conversion: FormData[F] */ js.Any): scala.Unit
+  def blur[F /* <: java.lang.String */](field: F, value: /* import warning: ImportType.apply Failed type conversion: FormData[F] */ js.Any): scala.Unit
+  def change[F /* <: java.lang.String */](field: F, value: /* import warning: ImportType.apply Failed type conversion: FormData[F] */ js.Any): scala.Unit
   def clearAsyncError(field: java.lang.String): scala.Unit
   def destroy(): scala.Unit
   def initialize(data: stdLib.Partial[FormData]): scala.Unit
@@ -42,9 +42,9 @@ object InjectedFormProps {
     array: InjectedArrayProps,
     asyncValidate: () => scala.Unit,
     asyncValidating: java.lang.String | scala.Boolean,
-    autofill: (java.lang.String, js.Any) => scala.Unit,
-    blur: (java.lang.String, js.Any) => scala.Unit,
-    change: (java.lang.String, js.Any) => scala.Unit,
+    autofill: (js.Any, /* import warning: ImportType.apply Failed type conversion: FormData[F] */ js.Any) => scala.Unit,
+    blur: (js.Any, /* import warning: ImportType.apply Failed type conversion: FormData[F] */ js.Any) => scala.Unit,
+    change: (js.Any, /* import warning: ImportType.apply Failed type conversion: FormData[F] */ js.Any) => scala.Unit,
     clearAsyncError: java.lang.String => scala.Unit,
     destroy: () => scala.Unit,
     dirty: scala.Boolean,

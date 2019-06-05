@@ -2339,6 +2339,7 @@
 | 0.6966213970404564 | [fullname](./f/fullname) | Get the fullname of the current user
 | 0.6965863909143981 | [webscopeio__react-textare](./w/webscopeio__react-textarea-autocomplete) | Offers autocomplete over textarea in style of GitH
 | 0.6965580484012756 | [path-is-absolute](./p/path-is-absolute) | Node.js 0.12 path.isAbsolute() ponyfill
+| 0.6965389996972063 | [stats-lite](./s/stats-lite) | A light statistical package that operates on numer
 | 0.6965271025001163 | [react-native-auth0](./r/react-native-auth0) | React Native toolkit for Auth0 API
 | 0.6964837307937327 | [insert-css](./i/insert-css) | insert a string of css into the 
 | 0.696339580935033 | [react-axe](./r/react-axe) | Dynamic accessibility analysis for React using axe
@@ -2424,6 +2425,7 @@
 | 0.6924470810163709 | [yauzl](./y/yauzl) | yet another unzip library for node
 | 0.6923921684150585 | [leaflet-providers](./l/leaflet-providers) | An extension to Leaflet that contains configuratio
 | 0.692363203501533 | [sparqljs](./s/sparqljs) | A parser for the SPARQL query language
+| 0.6923289889231441 | [webpack-bugsnag-plugins](./w/webpack-bugsnag-plugins) | Webpack plugins for common Bugsnag actions
 | 0.6923227532765535 | [humanparser](./h/humanparser) | Parse a human name string into salutation, first n
 | 0.6923088308530805 | [stale-lru-cache](./s/stale-lru-cache) | Resilient and performant in-memory cache for node.
 | 0.6921439400097489 | [extra-watch-webpack-plugi](./e/extra-watch-webpack-plugin) | extra-watch-webpack-plugin would help you to attac
@@ -3146,6 +3148,7 @@
 | 0.6609992636103295 | [react-data-grid](./r/react-data-grid) | Excel-like grid component built with React, with e
 | 0.6609767496336623 | [negative-zero](./n/negative-zero) | Check if a number is negative zero
 | 0.660973769465206 | [discord-rpc](./d/discord-rpc) | A simple RPC client for Discord
+| 0.6608908802597342 | [gulp-terser](./g/gulp-terser) | gulp plugin, compressed es6+ code.
 | 0.6606751298270572 | [caniuse-lite](./c/caniuse-lite) | A smaller version of caniuse-db, with only the ess
 | 0.6606086663099527 | [webpack-stream](./w/webpack-stream) | Run webpack as a stream
 | 0.6605856300965124 | [hapi__sntp](./h/hapi__sntp) | SNTP Client
@@ -3221,6 +3224,7 @@
 | 0.6572368189937308 | [condense-whitespace](./c/condense-whitespace) | Remove leading, trailing, and repeated whitespace 
 | 0.657231409002632 | [react-native-view-pdf](./r/react-native-view-pdf) | React native Pdf viewer implementation
 | 0.6571938325089809 | [month-days](./m/month-days) | Get the number of days in a month
+| 0.6571475964945721 | [random](./r/random) | Seedable random number generator supporting many c
 | 0.6570356351863963 | [jquery-formatdatetime](./j/jquery-formatdatetime) | A jQuery plugin that converts a date object to a s
 | 0.657001033295361 | [chartmogul-node](./c/chartmogul-node) | Official Chartmogul API Node.js Client
 | 0.6569807288969871 | [authmosphere](./a/authmosphere) | authmosphere is a library to support OAuth2 workfl
@@ -3616,6 +3620,7 @@
 | 0.6336818792936176 | [gulp-sass-variables](./g/gulp-sass-variables) | Define Sass variables in your gulp task
 | 0.6335399652023365 | [sequester](./s/sequester) | A read/write lock for evented operations.
 | 0.6333617231397474 | [cordova-plugin-file-trans](./c/cordova-plugin-file-transfer) | Cordova File Transfer Plugin
+| 0.6333300899495167 | [all-the-package-names](./a/all-the-package-names) | A list of all the public package names on npm. Upd
 | 0.6333124541866655 | [contextjs](./c/contextjs) | Context Oriented Programming (COP) for ECMAScript 
 | 0.6332553106899933 | [graphql-relay](./g/graphql-relay) | A library to help construct a graphql-js server su
 | 0.6330320169190373 | [electron-is-dev](./e/electron-is-dev) | Check if Electron is running in development
@@ -3870,6 +3875,7 @@
 | 0.6097799116180841 | [csw-aas-js](./c/csw-aas-js) | This library is a javascript adapter for csw-aas. 
 | 0.6096922934543529 | [recase](./r/recase) | Deep rekey Objects and Arrays as either camel case
 | 0.6096788668647866 | [postcss-url](./p/postcss-url) | PostCSS plugin to rebase or inline on url().
+| 0.609488320911626 | [date-range-array](./d/date-range-array) | Create an array of dates.
 | 0.6092609265801108 | [fluent-ffmpeg](./f/fluent-ffmpeg) | A fluent API to FFMPEG (http://www.ffmpeg.org)
 | 0.6091409746828176 | [pkijs](./p/pkijs) | Public Key Infrastructure (PKI) is the basis of ho
 | 0.6090803240650269 | [styletron-standard](./s/styletron-standard) | Standard interfaces for Styletron
@@ -4084,6 +4090,7 @@
 | 0.584234274189019 | [react-amplitude](./r/react-amplitude) | React Amplitude Analytics
 | 0.5839847452482285 | [storybook-react-router](./s/storybook-react-router) | A storybook decorator that allows you to use routi
 | 0.5838911646770788 | [react-native-maps](./r/react-native-maps) | React Native Mapview component for iOS + Android
+| 0.5838775875488792 | [basiclightbox](./b/basiclightbox) | The lightest lightbox ever made
 | 0.5837945926322724 | [react-native-share](./r/react-native-share) | Social share, sending simple data to other apps.
 | 0.5836375215939507 | [react-simple-maps](./r/react-simple-maps) | An svg map component built with and for React
 | 0.5834811155017207 | [type-fest](./t/type-fest) | A collection of essential TypeScript types
@@ -5092,6 +5099,7 @@
 | 0.4259875730174614 | [autoprefixer-core](./a/autoprefixer-core) | autoprefixer-core was depreacted, use autoprefixer
 | 0.42597596013700806 | [lazy-val](./l/lazy-val) | Lazy value.
 | 0.42573325259844275 | [parse-torrent-file](./p/parse-torrent-file) | Parse a .torrent file and return an object of keys
+| 0.425669686804771 | [node-wget-promise](./n/node-wget-promise) | wget in Node, with Promise support
 | 0.4255779688527854 | [cordova-plugin-email-comp](./c/cordova-plugin-email-composer) | Provides access to the standard interface that man
 | 0.424871453457237 | [semantic-ui-progress](./s/semantic-ui-progress) | Single component release of progress
 | 0.4248339649849879 | [jquery-lazyload](./j/jquery-lazyload) | Lazyload images with jQuery
@@ -5142,6 +5150,7 @@
 | 0.41915834905409893 | [strftime](./s/strftime) | strftime for JavaScript
 | 0.419100825285204 | [redux-persist-transform-e](./r/redux-persist-transform-encrypt) | Encrypt your Redux store.
 | 0.41903549540095897 | [dynatable](./d/dynatable) | A wrapper for DynamoDB tables, with a promise wrap
+| 0.4188173399549373 | [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library.
 | 0.4186802235775254 | [elementtree](./e/elementtree) | XML Serialization and Parsing module based on Pyth
 | 0.41864864789444994 | [react-native-mail](./r/react-native-mail) | A wrapper on top of MFMailComposeViewController fr
 | 0.41851392315501534 | [slack-winston](./s/slack-winston) | A Slack transport for winston
@@ -5181,6 +5190,7 @@
 | 0.4130683271599982 | [random-seed](./r/random-seed) | GRC's UHE PRNG in node (Ultra-High Entropy Pseudo-
 | 0.4126354994757432 | [cwd](./c/cwd) | Easily get the CWD (current working directory) of 
 | 0.412625865868087 | [webcomponents_dot_js](./w/webcomponents_dot_js) | webcomponents.js
+| 0.41255494500873563 | [wordpress__keycodes](./w/wordpress__keycodes) | Keycodes utilities for WordPress. Used to check fo
 | 0.4125162630825303 | [datejs](./d/datejs) | DateJS is the most full-featured, internationalize
 | 0.4123783534154612 | [node-horseman](./n/node-horseman) | Run PhantomJS from Node
 | 0.4120267493452995 | [semantic-ui-rating](./s/semantic-ui-rating) | Single component release of rating
@@ -5205,6 +5215,7 @@
 | 0.40935139229439077 | [rx-lite-virtualtime](./r/rx-lite-virtualtime) | Lightweight library with virtual time functions fo
 | 0.4090581649963611 | [dynogels](./d/dynogels) | DynamoDB data mapper
 | 0.40884712309423016 | [camelcase-keys-deep](./c/camelcase-keys-deep) | Deeply convert the keys of an object to camelCase
+| 0.40876403388799964 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress.
 | 0.4086602878611604 | [fluxxor](./f/fluxxor) | Flux architecture tools for React
 | 0.4083827976591474 | [roslib](./r/roslib) | The standard ROS Javascript Library
 | 0.40832651741183834 | [kuromoji](./k/kuromoji) | JavaScript implementation of Japanese morphologica
@@ -6083,6 +6094,7 @@
 | 0.2608332582927504 | [angular-bootstrap-lightbo](./a/angular-bootstrap-lightbox) | An AngularJS lightbox built using UI Bootstrap Mod
 | 0.2607439237110172 | [graphql-extensions](./g/graphql-extensions) | Add extensions to GraphQL servers
 | 0.26056479351794726 | [jsonnet](./j/jsonnet) | jsonnet wrapper for Node.js
+| 0.26017057788403475 | [download-file-sync](./d/download-file-sync) | Does exactly what you expects
 | 0.26007464013520143 | [gulp-changed](./g/gulp-changed) | Only pass through changed files
 | 0.2598859588313597 | [pgwmodal](./p/pgwmodal) | Responsive Modal / Dialog window for jQuery, Zepto
 | 0.2596773409724843 | [raspi-pwm](./r/raspi-pwm) | Provides access to PWM on the Raspberry Pi as part
@@ -6229,6 +6241,7 @@
 | 0.21921792598331205 | [express-routemap](./e/express-routemap) | Display express server routes in your terminal
 | 0.21814263969541753 | [git-rev](./g/git-rev) | get the current git commit hash, tag or branch in 
 | 0.2181148622534853 | [msportalfx-test](./m/msportalfx-test) | Microsoft Azure Portal Test Framework
+| 0.21778634452106732 | [wordpress__url](./w/wordpress__url) | WordPress URL utilities.
 | 0.21660068750819997 | [async-polling](./a/async-polling) | An easy way to run reliable polling without messin
 | 0.21657662711177622 | [react-material-ui-form-va](./r/react-material-ui-form-validator) | Simple validator for forms designed with material-
 | 0.21605075426888742 | [jupyterlab__notebook](./j/jupyterlab__notebook) | JupyterLab - Notebook
@@ -6249,6 +6262,7 @@
 | 0.20998938740061798 | [react-file-input](./r/react-file-input) | Simple file input component for React
 | 0.20923552086478237 | [lodash_dot_noop](./l/lodash_dot_noop) | The lodash method _.noop exported as a module.
 | 0.20911796049660814 | [steam-login](./s/steam-login) | Simple Connect / Express Steam authentication libr
+| 0.20896232688519634 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded.
 | 0.20894788906384318 | [canvasjs](./c/canvasjs) | CanvasJS charting library
 | 0.20873941831262988 | [react-dom-factories](./r/react-dom-factories) | React package for DOM factory methods.
 | 0.20801013666896173 | [gulp-clean-dest](./g/gulp-clean-dest) | A gulp plugin for removing files from the dest dir

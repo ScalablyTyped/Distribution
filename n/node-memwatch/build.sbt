@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-memwatch"
-version := "1.0-dt-20180625Z-c49451"
+version := "1.0-dt-20190604Z-c49451"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

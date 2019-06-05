@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait LambdaFunctionConfiguration extends js.Object {
   /**
-    * 
+    * The Amazon S3 bucket event for which to invoke the AWS Lambda function. For more information, see Supported Event Types in the Amazon Simple Storage Service Developer Guide.
     */
   var Events: EventList
+  /**
+    * 
+    */
   var Filter: js.UndefOr[NotificationConfigurationFilter] = js.undefined
   var Id: js.UndefOr[NotificationId] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of the Lambda cloud function that Amazon S3 can invoke when it detects events of the specified type.
+    * The Amazon Resource Name (ARN) of the AWS Lambda function that Amazon S3 invokes when the specified event type occurs.
     */
   var LambdaFunctionArn: awsDashSdkLib.clientsS3Mod.LambdaFunctionArn
 }

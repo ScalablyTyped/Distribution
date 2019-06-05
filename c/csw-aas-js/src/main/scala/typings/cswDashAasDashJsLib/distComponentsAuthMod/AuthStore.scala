@@ -21,7 +21,11 @@ trait AuthStore extends js.Object {
     * @return {{ keycloak, authenticated }} json which contains keycloak instance and authenticated which is promise after
     * initializing keycloak
     */
-  def authenticate(config: cswDashAasDashJsLib.Anon_ClientId, url: java.lang.String, redirect: scala.Boolean): cswDashAasDashJsLib.Anon_Authenticated
+  def authenticate(
+    config: cswDashAasDashJsLib.distComponentsContextAuthContextProviderMod.AuthContextConfig,
+    url: java.lang.String,
+    redirect: scala.Boolean
+  ): AuthenticateResult
   /**
     * Create instance of TMTAuth from keycloak.
     *
@@ -40,7 +44,7 @@ trait AuthStore extends js.Object {
 object AuthStore {
   @scala.inline
   def apply(
-    authenticate: (cswDashAasDashJsLib.Anon_ClientId, java.lang.String, scala.Boolean) => cswDashAasDashJsLib.Anon_Authenticated,
+    authenticate: (cswDashAasDashJsLib.distComponentsContextAuthContextProviderMod.AuthContextConfig, java.lang.String, scala.Boolean) => AuthenticateResult,
     from: keycloakDashJsLib.keycloakDashJsMod.KeycloakInstance => Auth,
     getAASUrl: () => js.Promise[java.lang.String]
   ): AuthStore = {

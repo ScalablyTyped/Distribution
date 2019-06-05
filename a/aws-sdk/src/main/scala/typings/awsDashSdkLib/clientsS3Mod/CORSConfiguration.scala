@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CORSConfiguration extends js.Object {
   /**
-    * 
+    * A set of allowed origins and methods.
     */
   var CORSRules: awsDashSdkLib.clientsS3Mod.CORSRules
 }

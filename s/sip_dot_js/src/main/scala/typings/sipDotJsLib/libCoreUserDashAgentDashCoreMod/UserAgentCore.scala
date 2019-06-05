@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/user-agent-core", "UserAgentCore")
+@JSImport("sip.js/lib/core/user-agent-core", "UserAgentCore")
 @js.native
 class UserAgentCore protected ()
   extends sipDotJsLib.libCoreUserDashAgentDashCoreUserDashAgentDashCoreMod.UserAgentCore {

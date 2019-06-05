@@ -20,6 +20,7 @@ trait Anon_A extends js.Object {
   var isOpen: scala.Boolean = js.native
   var l10n: flatpickrLib.distTypesLocaleMod.Locale = js.native
   var latestSelectedDateObj: js.UndefOr[stdLib.Date] = js.native
+  var loadedPlugins: js.Array[java.lang.String] = js.native
   var maxDateHasTime: scala.Boolean = js.native
   var maxRangeDate: js.UndefOr[stdLib.Date] = js.native
   var minDateHasTime: scala.Boolean = js.native
@@ -58,8 +59,8 @@ trait Anon_A extends js.Object {
   def _positionCalendar(customPositionElement: stdLib.HTMLElement): scala.Unit = js.native
   def _setHoursFromDate(date: stdLib.Date): scala.Unit = js.native
   def changeMonth(value: scala.Double): scala.Unit = js.native
-  def changeMonth(value: scala.Double, is_offset: scala.Boolean): scala.Unit = js.native
-  def changeMonth(value: scala.Double, is_offset: scala.Boolean, from_keyboard: scala.Boolean): scala.Unit = js.native
+  def changeMonth(value: scala.Double, isOffset: scala.Boolean): scala.Unit = js.native
+  def changeMonth(value: scala.Double, isOffset: scala.Boolean, fromKeyboard: scala.Boolean): scala.Unit = js.native
   def changeYear(year: scala.Double): scala.Unit = js.native
   def clear(): scala.Unit = js.native
   def clear(emitChangeEvent: scala.Boolean): scala.Unit = js.native
@@ -71,6 +72,7 @@ trait Anon_A extends js.Object {
   def isEnabled(date: flatpickrLib.distTypesOptionsMod.DateOption, timeless: scala.Boolean): scala.Boolean = js.native
   def jumpToDate(): scala.Unit = js.native
   def jumpToDate(date: flatpickrLib.distTypesOptionsMod.DateOption): scala.Unit = js.native
+  def jumpToDate(date: flatpickrLib.distTypesOptionsMod.DateOption, triggerChange: scala.Boolean): scala.Unit = js.native
   def open(): scala.Unit = js.native
   def open(e: stdLib.FocusEvent): scala.Unit = js.native
   def open(e: stdLib.FocusEvent, positionElement: stdLib.HTMLElement): scala.Unit = js.native

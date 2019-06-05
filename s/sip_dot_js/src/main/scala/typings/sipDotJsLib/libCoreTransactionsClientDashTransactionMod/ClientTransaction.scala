@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/transactions/client-transaction", "ClientTransaction")
+@JSImport("sip.js/lib/core/transactions/client-transaction", "ClientTransaction")
 @js.native
 abstract class ClientTransaction protected ()
   extends sipDotJsLib.libCoreTransactionsTransactionMod.Transaction {
-  protected def this(_request: sipDotJsLib.libSIPMessageMod.OutgoingRequest, transport: sipDotJsLib.libTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser, state: sipDotJsLib.libCoreTransactionsTransactionDashStateMod.TransactionState, loggerCategory: java.lang.String) = this()
+  protected def this(_request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage, transport: sipDotJsLib.libCoreTransportMod.Transport, user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser, state: sipDotJsLib.libCoreTransactionsTransactionDashStateMod.TransactionState, loggerCategory: java.lang.String) = this()
   var _request: js.Any = js.native
   /** The outgoing request the transaction handling. */
-  val request: sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
+  val request: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage = js.native
   var user: sipDotJsLib.libCoreTransactionsTransactionDashUserMod.ClientTransactionUser = js.native
   /**
     * A 408 to non-INVITE will always arrive too late to be useful ([3]),
@@ -30,11 +30,11 @@ abstract class ClientTransaction protected ()
     * Responses will be delivered to the transaction user as necessary.
     * @param response The incoming response.
     */
-  def receiveResponse(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
+  def receiveResponse(response: sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage): scala.Unit = js.native
 }
 
 /* static members */
-@JSImport("sip.js/lib/Core/transactions/client-transaction", "ClientTransaction")
+@JSImport("sip.js/lib/core/transactions/client-transaction", "ClientTransaction")
 @js.native
 object ClientTransaction extends js.Object {
   var makeId: js.Any = js.native

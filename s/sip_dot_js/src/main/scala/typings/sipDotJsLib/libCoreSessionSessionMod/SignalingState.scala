@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 sealed trait SignalingState extends js.Object
 
-@JSImport("sip.js/lib/Core/session/session", "SignalingState")
+@JSImport("sip.js/lib/core/session/session", "SignalingState")
 @js.native
 object SignalingState extends js.Object {
   @js.native

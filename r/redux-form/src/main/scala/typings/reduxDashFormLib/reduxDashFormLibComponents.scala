@@ -9,7 +9,8 @@ object reduxDashFormLibComponents {
   @scala.inline
   def Field[P /* <: reduxDashFormLib.libFieldMod.GenericFieldHTMLAttributes | reduxDashFormLib.libFieldMod.BaseFieldProps[js.Object] */]: reactLib.reactMod.ComponentType[P] = js.constructorOf[reduxDashFormLib.libFieldMod.default[P]].asInstanceOf[reactLib.reactMod.ComponentType[P]]
   @scala.inline
-  def FieldArray[P]: reactLib.reactMod.ComponentType[reduxDashFormLib.libFieldArrayMod.BaseFieldArrayProps[P] with stdLib.Partial[P]] = js.constructorOf[reduxDashFormLib.immutableMod.FieldArray[P]].asInstanceOf[reactLib.reactMod.ComponentType[reduxDashFormLib.libFieldArrayMod.BaseFieldArrayProps[P] with stdLib.Partial[P]]]
+  def FieldArray[P, FieldValue]: reactLib.reactMod.ComponentType[reduxDashFormLib.libFieldArrayMod.BaseFieldArrayProps[P, FieldValue]] = js.constructorOf[reduxDashFormLib.immutableMod.FieldArray[P, FieldValue]].asInstanceOf[reactLib.reactMod.ComponentType[reduxDashFormLib.libFieldArrayMod.BaseFieldArrayProps[P, FieldValue]]]
+  type FieldArrayProps[P, FieldValue] = reduxDashFormLib.libFieldArrayMod.BaseFieldArrayProps[P, FieldValue]
   @scala.inline
   def Fields[P]: reactLib.reactMod.ComponentType[reduxDashFormLib.libFieldsMod.BaseFieldsProps[P] with P] = js.constructorOf[reduxDashFormLib.immutableMod.Fields[P]].asInstanceOf[reactLib.reactMod.ComponentType[reduxDashFormLib.libFieldsMod.BaseFieldsProps[P] with P]]
   @scala.inline

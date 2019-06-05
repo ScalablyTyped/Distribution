@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/session", "SignalingState")
+@JSImport("sip.js/lib/core/session", "SignalingState")
 @js.native
 object SignalingState extends js.Object {
   /* "Closed" */ val Closed: sipDotJsLib.libCoreSessionSessionMod.SignalingState.Closed with java.lang.String = js.native

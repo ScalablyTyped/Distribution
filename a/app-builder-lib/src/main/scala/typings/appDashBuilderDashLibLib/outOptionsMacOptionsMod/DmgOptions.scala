@@ -49,6 +49,11 @@ import scala.scalajs.js.annotation._
     */
   val internetEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Whether to sign the DMG or not. Signing is not required and will lead to unwanted errors in combination with notarization requirements.
+    * @default false
+    */
+  val sign: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The title of the produced DMG, which will be shown when mounted (volume name).
     *
     * Macro `${productName}`, `${version}` and `${name}` are supported.
@@ -72,6 +77,7 @@ object DmgOptions {
     iconSize: scala.Int | scala.Double = null,
     iconTextSize: scala.Int | scala.Double = null,
     internetEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    sign: js.UndefOr[scala.Boolean] = js.undefined,
     title: java.lang.String = null,
     window: DmgWindow = null
   ): DmgOptions = {
@@ -84,6 +90,7 @@ object DmgOptions {
     if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
     if (iconTextSize != null) __obj.updateDynamic("iconTextSize")(iconTextSize.asInstanceOf[js.Any])
     if (!js.isUndefined(internetEnabled)) __obj.updateDynamic("internetEnabled")(internetEnabled)
+    if (!js.isUndefined(sign)) __obj.updateDynamic("sign")(sign)
     if (title != null) __obj.updateDynamic("title")(title)
     if (window != null) __obj.updateDynamic("window")(window)
     __obj.asInstanceOf[DmgOptions]

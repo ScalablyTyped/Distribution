@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetBucketReplicationOutput extends js.Object {
+  /**
+    * 
+    */
   var ReplicationConfiguration: js.UndefOr[ReplicationConfiguration] = js.undefined
 }
 

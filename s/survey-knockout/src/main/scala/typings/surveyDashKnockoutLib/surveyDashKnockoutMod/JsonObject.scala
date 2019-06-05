@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class JsonObject () extends js.Object {
   var errors: js.Array[JsonError] = js.native
+  var lightSerializing: scala.Boolean = js.native
   def toJsonObject(obj: js.Any): js.Any = js.native
   def toJsonObject(obj: js.Any, storeDefaults: scala.Boolean): js.Any = js.native
   /* protected */ def toJsonObjectCore(obj: js.Any, property: JsonObjectProperty): js.Any = js.native

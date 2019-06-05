@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet-providers
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 An extension to Leaflet that contains configurations for various free tile providers.
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for leaflet-providers 1.1
+// Type definitions for leaflet-providers 1.2
 // Project: https://github.com/leaflet-extras/leaflet-providers#readme
 // Definitions by: BendingBender <https://github.com/BendingBender>
+//                 Simon Legner <https://github.com/simon04>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

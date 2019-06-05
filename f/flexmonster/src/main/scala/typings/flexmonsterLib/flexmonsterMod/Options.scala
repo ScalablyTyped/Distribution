@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  var caseSensitiveMembers: js.UndefOr[scala.Boolean] = js.undefined
   var chart: js.UndefOr[flexmonsterLib.Anon_ActiveMeasure] = js.undefined
   var configuratorActive: js.UndefOr[scala.Boolean] = js.undefined
   var configuratorButton: js.UndefOr[scala.Boolean] = js.undefined
@@ -42,6 +43,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    caseSensitiveMembers: js.UndefOr[scala.Boolean] = js.undefined,
     chart: flexmonsterLib.Anon_ActiveMeasure = null,
     configuratorActive: js.UndefOr[scala.Boolean] = js.undefined,
     configuratorButton: js.UndefOr[scala.Boolean] = js.undefined,
@@ -75,6 +77,7 @@ object Options {
     viewType: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(caseSensitiveMembers)) __obj.updateDynamic("caseSensitiveMembers")(caseSensitiveMembers)
     if (chart != null) __obj.updateDynamic("chart")(chart)
     if (!js.isUndefined(configuratorActive)) __obj.updateDynamic("configuratorActive")(configuratorActive)
     if (!js.isUndefined(configuratorButton)) __obj.updateDynamic("configuratorButton")(configuratorButton)

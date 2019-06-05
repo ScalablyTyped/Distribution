@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/dialogs/dialog", "Dialog")
+@JSImport("sip.js/lib/core/dialogs/dialog", "Dialog")
 @js.native
 class Dialog protected () extends js.Object {
   /**
@@ -48,15 +48,15 @@ class Dialog protected () extends js.Object {
   /** Local tag component of the dialog id. */
   val localTag: java.lang.String = js.native
   /** Local URI. */
-  val localURI: sipDotJsLib.libURIMod.URI = js.native
+  val localURI: sipDotJsLib.libCoreMessagesMod.URI = js.native
   /** Remote sequence number (used to order requests from its peer to the UA). */
   val remoteSequenceNumber: js.UndefOr[scala.Double] = js.native
   /** Remote tag component of the dialog id. */
   val remoteTag: java.lang.String = js.native
   /** Remote target. */
-  val remoteTarget: sipDotJsLib.libURIMod.URI = js.native
+  val remoteTarget: sipDotJsLib.libCoreMessagesMod.URI = js.native
   /** Remote URI. */
-  val remoteURI: sipDotJsLib.libURIMod.URI = js.native
+  val remoteURI: sipDotJsLib.libCoreMessagesMod.URI = js.native
   /**
     * Route set, which is an ordered list of URIs. The route set is the
     * list of servers that need to be traversed to send a request to the peer.
@@ -77,8 +77,8 @@ class Dialog protected () extends js.Object {
     * https://tools.ietf.org/html/rfc3261#section-12.2.1.1
     * @param method Outgoing request method.
     */
-  def createOutgoingRequestMessage(method: java.lang.String): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
-  def createOutgoingRequestMessage(method: java.lang.String, options: sipDotJsLib.Anon_Body): sipDotJsLib.libSIPMessageMod.OutgoingRequest = js.native
+  def createOutgoingRequestMessage(method: java.lang.String): sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage = js.native
+  def createOutgoingRequestMessage(method: java.lang.String, options: sipDotJsLib.Anon_Body): sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage = js.native
   /** Destructor. */
   def dispose(): scala.Unit = js.native
   /**
@@ -93,7 +93,7 @@ class Dialog protected () extends js.Object {
     * https://tools.ietf.org/html/rfc3261#section-12.2.2
     * @param message Incoming request message within this dialog.
     */
-  def receiveRequest(message: sipDotJsLib.libSIPMessageMod.IncomingRequest): scala.Unit = js.native
+  def receiveRequest(message: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage): scala.Unit = js.native
   /**
     * If the dialog identifier in the 2xx response matches the dialog
     * identifier of an existing dialog, the dialog MUST be transitioned to
@@ -113,7 +113,7 @@ class Dialog protected () extends js.Object {
     *
     *  https://tools.ietf.org/html/rfc3261#section-13.2.2.4
     */
-  def recomputeRouteSet(message: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
+  def recomputeRouteSet(message: sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage): scala.Unit = js.native
   /**
     * If the remote sequence number was not empty, but the sequence number
     * of the request is lower than the remote sequence number, the request
@@ -124,11 +124,11 @@ class Dialog protected () extends js.Object {
     * @returns True if the program execution is to continue in the branch in question.
     *          Otherwise a 500 Server Internal Error was stateless sent and request processing must stop.
     */
-  /* protected */ def sequenceGuard(message: sipDotJsLib.libSIPMessageMod.IncomingRequest): scala.Boolean = js.native
+  /* protected */ def sequenceGuard(message: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage): scala.Boolean = js.native
 }
 
 /* static members */
-@JSImport("sip.js/lib/Core/dialogs/dialog", "Dialog")
+@JSImport("sip.js/lib/core/dialogs/dialog", "Dialog")
 @js.native
 object Dialog extends js.Object {
   /**
@@ -140,8 +140,8 @@ object Dialog extends js.Object {
     * @param incomingResponseMessage Incoming response message creating dialog.
     */
   def initialDialogStateForUserAgentClient(
-    outgoingRequestMessage: sipDotJsLib.libSIPMessageMod.OutgoingRequest,
-    incomingResponseMessage: sipDotJsLib.libSIPMessageMod.IncomingResponse
+    outgoingRequestMessage: sipDotJsLib.libCoreMessagesMod.OutgoingRequestMessage,
+    incomingResponseMessage: sipDotJsLib.libCoreMessagesMod.IncomingResponseMessage
   ): sipDotJsLib.libCoreDialogsDialogDashStateMod.DialogState = js.native
   /**
     * The UAS then constructs the state of the dialog.  This state MUST be
@@ -150,9 +150,12 @@ object Dialog extends js.Object {
     * @param incomingRequestMessage Incoming request message creating dialog.
     * @param toTag Tag in the To field in the response to the incoming request.
     */
-  def initialDialogStateForUserAgentServer(incomingRequestMessage: sipDotJsLib.libSIPMessageMod.IncomingRequest, toTag: java.lang.String): sipDotJsLib.libCoreDialogsDialogDashStateMod.DialogState = js.native
   def initialDialogStateForUserAgentServer(
-    incomingRequestMessage: sipDotJsLib.libSIPMessageMod.IncomingRequest,
+    incomingRequestMessage: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage,
+    toTag: java.lang.String
+  ): sipDotJsLib.libCoreDialogsDialogDashStateMod.DialogState = js.native
+  def initialDialogStateForUserAgentServer(
+    incomingRequestMessage: sipDotJsLib.libCoreMessagesMod.IncomingRequestMessage,
     toTag: java.lang.String,
     early: scala.Boolean
   ): sipDotJsLib.libCoreDialogsDialogDashStateMod.DialogState = js.native

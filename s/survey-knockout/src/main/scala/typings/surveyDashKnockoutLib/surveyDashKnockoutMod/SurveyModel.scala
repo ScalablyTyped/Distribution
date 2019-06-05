@@ -775,6 +775,10 @@ class SurveyModel ()
     */
   val processedTitle: java.lang.String = js.native
   /**
+    * Type of info in the progress bar: "pages" (default), "questions" or "correctQuestions".
+    */
+  var progressBarType: java.lang.String = js.native
+  /**
     * Returns the text for the current progress.
     */
   val progressText: java.lang.String = js.native

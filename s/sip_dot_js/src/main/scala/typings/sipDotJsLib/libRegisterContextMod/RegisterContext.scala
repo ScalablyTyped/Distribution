@@ -33,7 +33,7 @@ class RegisterContext protected ()
   def unregister(): scala.Unit = js.native
   def unregister(options: js.Any): scala.Unit = js.native
   def unregistered(): scala.Unit = js.native
-  def unregistered(response: sipDotJsLib.libSIPMessageMod.IncomingResponse): scala.Unit = js.native
-  def unregistered(response: sipDotJsLib.libSIPMessageMod.IncomingResponse, cause: java.lang.String): scala.Unit = js.native
+  def unregistered(response: sipDotJsLib.libCoreMod.IncomingResponseMessage): scala.Unit = js.native
+  def unregistered(response: sipDotJsLib.libCoreMod.IncomingResponseMessage, cause: java.lang.String): scala.Unit = js.native
 }
 

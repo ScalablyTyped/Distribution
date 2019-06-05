@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/user-agents", "PrackUserAgentClient")
+@JSImport("sip.js/lib/core/user-agents", "PrackUserAgentClient")
 @js.native
 class PrackUserAgentClient protected ()
   extends sipDotJsLib.libCoreUserDashAgentsPrackDashUserDashAgentDashClientMod.PrackUserAgentClient {

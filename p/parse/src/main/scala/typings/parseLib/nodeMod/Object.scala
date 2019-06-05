@@ -61,7 +61,8 @@ object Object extends js.Object {
     keys: js.Array[java.lang.String | js.Array[java.lang.String]],
     options: parseLib.ParseNs.RequestOptions
   ): js.Promise[js.Array[T]] = js.native
-  def fromJSON(json: js.Any, `override`: scala.Boolean): js.Any = js.native
+  def fromJSON(json: js.Any): parseLib.ParseNs.Object = js.native
+  def fromJSON(json: js.Any, `override`: scala.Boolean): parseLib.ParseNs.Object = js.native
   def pinAll(objects: js.Array[parseLib.ParseNs.Object]): js.Promise[scala.Unit] = js.native
   def pinAllWithName(name: java.lang.String, objects: js.Array[parseLib.ParseNs.Object]): js.Promise[scala.Unit] = js.native
   def registerSubclass[T /* <: parseLib.ParseNs.Object */](

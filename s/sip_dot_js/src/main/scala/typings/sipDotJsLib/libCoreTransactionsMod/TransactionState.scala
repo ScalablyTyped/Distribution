@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("sip.js/lib/Core/transactions", "TransactionState")
+@JSImport("sip.js/lib/core/transactions", "TransactionState")
 @js.native
 object TransactionState extends js.Object {
   /* "Accepted" */ val Accepted: sipDotJsLib.libCoreTransactionsTransactionDashStateMod.TransactionState.Accepted with java.lang.String = js.native

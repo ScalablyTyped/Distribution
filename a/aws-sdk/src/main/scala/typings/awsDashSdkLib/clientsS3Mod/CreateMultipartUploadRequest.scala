@@ -67,11 +67,11 @@ trait CreateMultipartUploadRequest extends js.Object {
     */
   var ObjectLockLegalHoldStatus: js.UndefOr[ObjectLockLegalHoldStatus] = js.undefined
   /**
-    * Specifies the Object Lock mode that you want to apply to the uploaded object.
+    * Specifies the object lock mode that you want to apply to the uploaded object.
     */
   var ObjectLockMode: js.UndefOr[ObjectLockMode] = js.undefined
   /**
-    * Specifies the date and time when you want the Object Lock to expire.
+    * Specifies the date and time when you want the object lock to expire.
     */
   var ObjectLockRetainUntilDate: js.UndefOr[ObjectLockRetainUntilDate] = js.undefined
   var RequestPayer: js.UndefOr[RequestPayer] = js.undefined
