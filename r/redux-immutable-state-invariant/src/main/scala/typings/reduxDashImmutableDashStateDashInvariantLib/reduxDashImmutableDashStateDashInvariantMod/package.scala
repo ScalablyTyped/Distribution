@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object reduxDashImmutableDashStateDashInvariantMod {
   type immutableStateInvariantMiddlewareInterface = js.Function1[
-    /* isImmutable */ js.UndefOr[isImmutableDefault], 
+    /* options */ js.UndefOr[immutableStateInvariantMiddlewareOptions], 
     reduxLib.reduxMod.Middleware[js.Object, js.Any, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]]
   ]
-  type isImmutableDefault = js.Function1[/* value */ js.Any, scala.Boolean]
 }

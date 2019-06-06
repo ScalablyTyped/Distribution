@@ -569,6 +569,10 @@ object nodeLibStrings {
     extends nodeLib.tlsMod.SecureVersion
   
   @js.native
+  sealed trait TLSv1DOT3
+    extends nodeLib.tlsMod.SecureVersion
+  
+  @js.native
   sealed trait TXT extends js.Object
   
   @js.native
@@ -1329,6 +1333,8 @@ object nodeLibStrings {
   def TLSv1DOT1: TLSv1DOT1 = "TLSv1.1".asInstanceOf[TLSv1DOT1]
   @scala.inline
   def TLSv1DOT2: TLSv1DOT2 = "TLSv1.2".asInstanceOf[TLSv1DOT2]
+  @scala.inline
+  def TLSv1DOT3: TLSv1DOT3 = "TLSv1.3".asInstanceOf[TLSv1DOT3]
   @scala.inline
   def TXT: TXT = "TXT".asInstanceOf[TXT]
   @scala.inline

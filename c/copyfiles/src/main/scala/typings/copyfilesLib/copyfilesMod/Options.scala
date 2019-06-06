@@ -17,7 +17,7 @@ trait Options extends js.Object {
   /** do not overwrite destination files if they exist */
   var soft: js.UndefOr[scala.Boolean] = js.undefined
   /** slice a path off the bottom of the paths */
-  var up: js.UndefOr[scala.Double] = js.undefined
+  var up: js.UndefOr[scala.Double | scala.Boolean] = js.undefined
   /** print more information to console */
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -30,7 +30,7 @@ object Options {
     exclude: java.lang.String = null,
     flat: js.UndefOr[scala.Boolean] = js.undefined,
     soft: js.UndefOr[scala.Boolean] = js.undefined,
-    up: scala.Int | scala.Double = null,
+    up: scala.Double | scala.Boolean = null,
     verbose: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()

@@ -15,6 +15,7 @@ trait ComponentResourceOptions extends ResourceOptions {
 object ComponentResourceOptions {
   @scala.inline
   def apply(
+    aliases: js.Array[atPulumiPulumiLib.outputMod.Input[URN | Alias]] = null,
     dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]] | Resource] = null,
     id: atPulumiPulumiLib.outputMod.Input[ID] = null,
     ignoreChanges: js.Array[java.lang.String] = null,
@@ -24,6 +25,7 @@ object ComponentResourceOptions {
     version: java.lang.String = null
   ): ComponentResourceOptions = {
     val __obj = js.Dynamic.literal()
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)

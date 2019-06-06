@@ -15,8 +15,18 @@ trait IFontStyles extends js.Object {
   var superLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
   var tiny: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
   var xLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
+  /**
+    * @deprecated Exists for forward compatibility with Fabric 7's Fluent theme.
+    * Not recommended for use with Fabric 6.
+    */
+  var xLargePlus: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
   var xSmall: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
   var xxLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
+  /**
+    * @deprecated Exists for forward compatibility with Fabric 7's Fluent theme
+    * Not recommended for use with Fabric 6.
+    */
+  var xxLargePlus: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
 }
 
 object IFontStyles {
@@ -31,10 +41,12 @@ object IFontStyles {
     superLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
     tiny: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
     xLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    xLargePlus: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
     xSmall: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
-    xxLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
+    xxLarge: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle,
+    xxLargePlus: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle
   ): IFontStyles = {
-    val __obj = js.Dynamic.literal(large = large, medium = medium, mediumPlus = mediumPlus, mega = mega, small = small, smallPlus = smallPlus, superLarge = superLarge, tiny = tiny, xLarge = xLarge, xSmall = xSmall, xxLarge = xxLarge)
+    val __obj = js.Dynamic.literal(large = large, medium = medium, mediumPlus = mediumPlus, mega = mega, small = small, smallPlus = smallPlus, superLarge = superLarge, tiny = tiny, xLarge = xLarge, xLargePlus = xLargePlus, xSmall = xSmall, xxLarge = xxLarge, xxLargePlus = xxLargePlus)
   
     __obj.asInstanceOf[IFontStyles]
   }

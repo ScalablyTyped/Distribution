@@ -11,8 +11,8 @@ class ClientContext protected ()
   extends sipDotJsLib.libClientContextMod.ClientContext {
   def this(ua: sipDotJsLib.libUAMod.UA, method: java.lang.String, target: java.lang.String) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, method: java.lang.String, target: sipDotJsLib.libCoreMod.URI) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, method: java.lang.String, target: java.lang.String, options: js.Any) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, method: java.lang.String, target: sipDotJsLib.libCoreMod.URI, options: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, method: java.lang.String, target: java.lang.String, options: sipDotJsLib.libClientContextMod.ClientContextNs.Options) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, method: java.lang.String, target: sipDotJsLib.libCoreMod.URI, options: sipDotJsLib.libClientContextMod.ClientContextNs.Options) = this()
 }
 
 /* static members */
@@ -30,7 +30,7 @@ object ClientContext extends js.Object {
     ua: sipDotJsLib.libUAMod.UA,
     method: java.lang.String,
     originalTarget: java.lang.String,
-    options: js.Any
+    options: sipDotJsLib.libClientContextMod.ClientContextNs.Options
   ): scala.Unit = js.native
   def initializer(
     objToConstruct: sipDotJsLib.libClientContextMod.ClientContext,
@@ -43,7 +43,7 @@ object ClientContext extends js.Object {
     ua: sipDotJsLib.libUAMod.UA,
     method: java.lang.String,
     originalTarget: sipDotJsLib.libCoreMod.URI,
-    options: js.Any
+    options: sipDotJsLib.libClientContextMod.ClientContextNs.Options
   ): scala.Unit = js.native
 }
 

@@ -13,6 +13,9 @@ object atUifabricUtilitiesLibStrings {
   sealed trait ISettingsMap extends js.Object
   
   @js.native
+  sealed trait change extends js.Object
+  
+  @js.native
   sealed trait contain
     extends atUifabricUtilitiesLib.libMathMod.FitMode
   
@@ -42,6 +45,8 @@ object atUifabricUtilitiesLibStrings {
   def IClassNames: IClassNames = "IClassNames".asInstanceOf[IClassNames]
   @scala.inline
   def ISettingsMap: ISettingsMap = "ISettingsMap".asInstanceOf[ISettingsMap]
+  @scala.inline
+  def change: change = "change".asInstanceOf[change]
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
   @scala.inline

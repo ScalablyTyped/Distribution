@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "tgfancy"
-version := "0.13-dt-20180822Z-3d35b7"
+version := "0.13-dt-20180822Z-a761d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-ecc6d0",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-440f74",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
-  "org.scalablytyped" %%% "node-telegram-bot-api" % "0.31-dt-20190506Z-ef968a",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190412Z-35aa0b",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-063f8d",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190605Z-895d8c",
+  "org.scalablytyped" %%% "node-telegram-bot-api" % "0.31-dt-20190506Z-a0637a",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190412Z-71cd48",
   "org.scalablytyped" %%% "std" % "3.5-f010ac",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-caf6a1")
 publishArtifact in packageDoc := false

@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__utilities
 
-Typings are for version 6.39.3
+Typings are for version 6.40.0
 
 ## Library description:
 Office UI Fabric utilities for building React components.
@@ -319,6 +319,9 @@ These comments are from the typescript definitions and might be useful:
 /** Sets the current base url used for fetching images. */
 /**
  * Gets the rtl state of the page (returns true if in rtl.)
+ */
+/**
+ * {@docCategory Selection}
  */
 /**
  * String format method, used for scenarios where at runtime you

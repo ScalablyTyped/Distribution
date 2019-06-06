@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ResourceOptions extends js.Object {
   /**
+    * An optional list of aliases to treat this resoruce as matching.
+    */
+  var aliases: js.UndefOr[js.Array[atPulumiPulumiLib.outputMod.Input[URN | Alias]]] = js.undefined
+  /**
     * An optional additional explicit dependencies on other resources.
     */
   var dependsOn: js.UndefOr[
@@ -39,6 +43,7 @@ trait ResourceOptions extends js.Object {
 object ResourceOptions {
   @scala.inline
   def apply(
+    aliases: js.Array[atPulumiPulumiLib.outputMod.Input[URN | Alias]] = null,
     dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]] | Resource] = null,
     id: atPulumiPulumiLib.outputMod.Input[ID] = null,
     ignoreChanges: js.Array[java.lang.String] = null,
@@ -47,6 +52,7 @@ object ResourceOptions {
     version: java.lang.String = null
   ): ResourceOptions = {
     val __obj = js.Dynamic.literal()
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)

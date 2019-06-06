@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "bloom-filter"
-version := "0.2-dt-20180914Z-11b9de"
+version := "0.2-dt-20180914Z-a26a73"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190605Z-895d8c",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

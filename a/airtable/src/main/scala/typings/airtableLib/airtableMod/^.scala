@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("airtable", JSImport.Namespace)
 @js.native
 class ^ ()
-  extends airtableLib.airtableMod.Global.Airtable
+  extends airtableLib.airtableMod.Global.Airtable {
+  def this(options: airtableLib.airtableMod.Global.AirtableNs.AirtableOptions) = this()
+}
 

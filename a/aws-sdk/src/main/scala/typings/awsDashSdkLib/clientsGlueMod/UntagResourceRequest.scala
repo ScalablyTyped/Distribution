@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UntagResourceRequest extends js.Object {
   /**
-    * The ARN of the resource from which to remove the tags.
+    * The Amazon Resource Name (ARN) of the resource from which to remove the tags.
     */
   var ResourceArn: GlueResourceArn
   /**

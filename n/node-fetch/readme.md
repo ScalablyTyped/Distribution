@@ -35,6 +35,9 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
+// `AbortSignal` is defined here to prevent a dependency on a particular
+// implementation like the `abort-controller` package, and to avoid requiring
+// the `dom` library in `tsconfig.json`.
 // Type definitions for node-fetch 2.3
 // Project: https://github.com/bitinn/node-fetch
 // Definitions by: Torsten Werner <https://github.com/torstenwerner>

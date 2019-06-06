@@ -70,6 +70,9 @@ object runtimeNs extends js.Object {
   def isDryRun(): scala.Boolean = js.native
   def isQueryMode(): scala.Boolean = js.native
   def isTestModeEnabled(): scala.Boolean = js.native
+  def listResourceOutputs[U /* <: atPulumiPulumiLib.resourceMod.Resource */](): atPulumiQueryLib.interfacesMod.AsyncQueryable[atPulumiPulumiLib.queryableMod.ResolvedResource[U]] = js.native
+  def listResourceOutputs[U /* <: atPulumiPulumiLib.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ scala.Boolean]): atPulumiQueryLib.interfacesMod.AsyncQueryable[atPulumiPulumiLib.queryableMod.ResolvedResource[U]] = js.native
+  def listResourceOutputs[U /* <: atPulumiPulumiLib.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ scala.Boolean], stackName: java.lang.String): atPulumiQueryLib.interfacesMod.AsyncQueryable[atPulumiPulumiLib.queryableMod.ResolvedResource[U]] = js.native
   def monitorSupportsSecrets(): js.Promise[scala.Boolean] = js.native
   def readResource(
     res: atPulumiPulumiLib.resourceMod.Resource,

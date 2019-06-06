@@ -12,6 +12,7 @@ object ^ extends js.Object {
   val DATA_IS_SCROLLABLE_ATTRIBUTE: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-is-scrollable` = js.native
   val DATA_PORTAL_ATTRIBUTE: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-portal-element` = js.native
   val IsFocusVisibleClassName: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`ms-Fabric--isFocusVisible` = js.native
+  val SELECTION_CHANGE: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.change = js.native
   val anchorProperties: js.Array[java.lang.String] = js.native
   val baseElementEvents: js.Array[java.lang.String] = js.native
   val baseElementProperties: js.Array[java.lang.String] = js.native

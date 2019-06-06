@@ -128,6 +128,46 @@ object ^ extends js.Object {
     ]
   ] = js.native
   def concat(params: atPulumiPulumiLib.outputMod.Input[_]*): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def createUrn(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def createUrn(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    parent: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.URN]
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def createUrn(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    parent: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.URN],
+    project: java.lang.String
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def createUrn(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    parent: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.URN],
+    project: java.lang.String,
+    stack: java.lang.String
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def createUrn(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    parent: atPulumiPulumiLib.resourceMod.Resource
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def createUrn(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    parent: atPulumiPulumiLib.resourceMod.Resource,
+    project: java.lang.String
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  def createUrn(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    parent: atPulumiPulumiLib.resourceMod.Resource,
+    project: java.lang.String,
+    stack: java.lang.String
+  ): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   def getProject(): java.lang.String = js.native
   def getStack(): java.lang.String = js.native
   def interpolate(literals: stdLib.TemplateStringsArray, placeholders: atPulumiPulumiLib.outputMod.Input[_]*): atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

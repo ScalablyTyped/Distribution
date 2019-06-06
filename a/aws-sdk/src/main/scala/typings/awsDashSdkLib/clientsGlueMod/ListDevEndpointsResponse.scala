@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListDevEndpointsResponse extends js.Object {
   /**
-    * The names of all DevEndpoints in the account, or the DevEndpoints with the specified tags.
+    * The names of all the DevEndpoints in the account, or the DevEndpoints with the specified tags.
     */
   var DevEndpointNames: js.UndefOr[DevEndpointNameList] = js.undefined
   /**

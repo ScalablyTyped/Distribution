@@ -17,6 +17,7 @@ trait RequestInit extends js.Object {
   var headers: js.UndefOr[HeadersInit] = js.undefined
   var method: js.UndefOr[java.lang.String] = js.undefined
   var redirect: js.UndefOr[RequestRedirect] = js.undefined
+  var signal: js.UndefOr[nodeDashFetchLib.externalsMod.AbortSignal | scala.Null] = js.undefined
    // =20 maximum redirect count. 0 to not follow redirect
   var size: js.UndefOr[scala.Double] = js.undefined
    // =0 maximum response body size in bytes. 0 to disable
@@ -33,6 +34,7 @@ object RequestInit {
     headers: HeadersInit = null,
     method: java.lang.String = null,
     redirect: RequestRedirect = null,
+    signal: nodeDashFetchLib.externalsMod.AbortSignal = null,
     size: scala.Int | scala.Double = null,
     timeout: scala.Int | scala.Double = null
   ): RequestInit = {
@@ -44,6 +46,7 @@ object RequestInit {
     if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     if (method != null) __obj.updateDynamic("method")(method)
     if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (signal != null) __obj.updateDynamic("signal")(signal)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestInit]

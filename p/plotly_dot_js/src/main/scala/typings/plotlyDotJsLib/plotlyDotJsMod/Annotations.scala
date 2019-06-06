@@ -90,7 +90,7 @@ trait Annotations extends Label {
   	 * text set the box height. Taller text will be clipped.
   	 */
   var height: scala.Double
-  var hoverlabel: stdLib.Partial[Label]
+  var hoverlabel: stdLib.Partial[HoverLabel]
   /**
   	 * Sets text to appear when hovering over this annotation.
   	 * If omitted or blank, no hover label will appear.
@@ -246,7 +246,7 @@ object Annotations {
     clicktoshow: plotlyDotJsLib.plotlyDotJsLibNumbers.`false` | plotlyDotJsLib.plotlyDotJsLibStrings.onoff | plotlyDotJsLib.plotlyDotJsLibStrings.onout,
     font: stdLib.Partial[Font],
     height: scala.Double,
-    hoverlabel: stdLib.Partial[Label],
+    hoverlabel: stdLib.Partial[HoverLabel],
     hovertext: java.lang.String,
     opacity: scala.Double,
     showarrow: scala.Boolean,

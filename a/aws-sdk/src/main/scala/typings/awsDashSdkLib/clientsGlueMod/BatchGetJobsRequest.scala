@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchGetJobsRequest extends js.Object {
   /**
-    * A list of job names, which may be the names returned from the ListJobs operation.
+    * A list of job names, which might be the names returned from the ListJobs operation.
     */
   var JobNames: JobNameList
 }

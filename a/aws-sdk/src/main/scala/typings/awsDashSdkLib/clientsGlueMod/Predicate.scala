@@ -11,7 +11,7 @@ trait Predicate extends js.Object {
     */
   var Conditions: js.UndefOr[ConditionList] = js.undefined
   /**
-    * Optional field if only one condition is listed. If multiple conditions are listed, then this field is required.
+    * An optional field if only one condition is listed. If multiple conditions are listed, then this field is required.
     */
   var Logical: js.UndefOr[Logical] = js.undefined
 }

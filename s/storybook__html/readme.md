@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for @storybook/html 5.0
-// Project: https://github.com/storybooks/storybook, https://github.com/storybooks/storybook/tree/master/app/html
+// Project: https://github.com/storybookjs/storybook, https://github.com/storybookjs/storybook/tree/master/app/html
 // Definitions by: Christian Murphy <https://github.com/ChristianMurphy>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8

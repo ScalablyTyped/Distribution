@@ -10,6 +10,9 @@ object nodeDashFetchLibStrings {
   sealed trait FetchError extends js.Object
   
   @js.native
+  sealed trait abort extends js.Object
+  
+  @js.native
   sealed trait audio
     extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
@@ -221,6 +224,8 @@ object nodeDashFetchLibStrings {
   
   @scala.inline
   def FetchError: FetchError = "FetchError".asInstanceOf[FetchError]
+  @scala.inline
+  def abort: abort = "abort".asInstanceOf[abort]
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   @scala.inline

@@ -18,7 +18,7 @@ trait Layout extends js.Object {
   var font: stdLib.Partial[Font]
   var height: scala.Double
   var hidesources: scala.Boolean
-  var hoverlabel: stdLib.Partial[Label]
+  var hoverlabel: stdLib.Partial[HoverLabel]
   var hovermode: plotlyDotJsLib.plotlyDotJsLibStrings.closest | plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.y | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`
   var images: js.Array[stdLib.Partial[Image]]
   var legend: stdLib.Partial[Legend]
@@ -81,7 +81,7 @@ object Layout {
     font: stdLib.Partial[Font],
     height: scala.Double,
     hidesources: scala.Boolean,
-    hoverlabel: stdLib.Partial[Label],
+    hoverlabel: stdLib.Partial[HoverLabel],
     hovermode: plotlyDotJsLib.plotlyDotJsLibStrings.closest | plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.y | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`,
     images: js.Array[stdLib.Partial[Image]],
     legend: stdLib.Partial[Legend],

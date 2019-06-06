@@ -1,7 +1,7 @@
 
 # Scala.js typings for intl-relativeformat
 
-Typings are for version 2.1
+Typings are for version 6.1.0
 
 ## Library description:
 Formats JavaScript dates to relative time strings.
@@ -24,32 +24,11 @@ Formats JavaScript dates to relative time strings.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for intl-relativeformat 2.1
-// Project: https://github.com/formatjs/formatjs
-// Definitions by: Mohsen Azimi <https://github.com/mohsen1>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.1
-/**
- * This package aims to provide a way to format different variations of relative time.
- * You can use this package in the browser and on the server via Node.js.
- *
- * This implementation is very similar to moment.js, in concept, although it provides
- * only formatting features based on the Unicode CLDR locale data, an industry
- * standard that supports more than 200 languages.
- *
- * @see https://github.com/yahoo/intl-relativeformat
- */
-
-```
 

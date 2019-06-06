@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__theming
 
-Typings are for version 5.0.11
+Typings are for version 5.1.1
 
 ## Library description:
 Core Storybook Components
@@ -31,11 +31,4 @@ Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// todo the following packages need definition files or a TS migration
-
-```
 

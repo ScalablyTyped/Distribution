@@ -32,6 +32,9 @@ object CustomResourceGetOptions {
     id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     kind: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     additionalSecretOutputs: js.Array[java.lang.String] = null,
+    aliases: js.Array[
+      atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.URN | atPulumiPulumiLib.resourceMod.Alias]
+    ] = null,
     deleteBeforeReplace: js.UndefOr[scala.Boolean] = js.undefined,
     dependsOn: atPulumiPulumiLib.outputMod.Input[
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.Resource]] | atPulumiPulumiLib.resourceMod.Resource
@@ -44,6 +47,7 @@ object CustomResourceGetOptions {
   ): CustomResourceGetOptions = {
     val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     if (additionalSecretOutputs != null) __obj.updateDynamic("additionalSecretOutputs")(additionalSecretOutputs)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
     if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace)
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
     if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)

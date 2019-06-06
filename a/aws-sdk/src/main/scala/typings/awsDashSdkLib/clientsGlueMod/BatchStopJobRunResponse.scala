@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BatchStopJobRunResponse extends js.Object {
   /**
-    * A list of the errors that were encountered in tryng to stop JobRuns, including the JobRunId for which each error was encountered and details about the error.
+    * A list of the errors that were encountered in trying to stop JobRuns, including the JobRunId for which each error was encountered and details about the error.
     */
   var Errors: js.UndefOr[BatchStopJobRunErrorList] = js.undefined
   /**

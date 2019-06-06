@@ -23,6 +23,10 @@ class StreetViewPanorama protected () extends MVCObject {
   def getVisible(): scala.Boolean = js.native
   def getZoom(): scala.Double = js.native
   def registerPanoProvider(provider: js.Function1[/* input */ java.lang.String, StreetViewPanoramaData]): scala.Unit = js.native
+  def registerPanoProvider(
+    provider: js.Function1[/* input */ java.lang.String, StreetViewPanoramaData],
+    opts: PanoProviderOptions
+  ): scala.Unit = js.native
   def setLinks(links: js.Array[StreetViewLink]): scala.Unit = js.native
   def setMotionTracking(motionTracking: scala.Boolean): scala.Unit = js.native
   def setOptions(options: StreetViewPanoramaOptions): scala.Unit = js.native

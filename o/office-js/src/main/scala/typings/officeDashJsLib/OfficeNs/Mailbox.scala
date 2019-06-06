@@ -473,7 +473,7 @@ trait Mailbox extends js.Object {
     *                 type Office.AsyncResult.
     *                 The token is provided as a string in the `asyncResult.value` property.
     *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
-    * @param userContext - Optional. Any state data that is passed to the asynchronous method.|
+    * @param userContext - Optional. Any state data that is passed to the asynchronous method.
     */
   def getUserIdentityTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getUserIdentityTokenAsync(

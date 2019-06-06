@@ -29,6 +29,7 @@ object CustomResourceOptions {
   @scala.inline
   def apply(
     additionalSecretOutputs: js.Array[java.lang.String] = null,
+    aliases: js.Array[atPulumiPulumiLib.outputMod.Input[URN | Alias]] = null,
     deleteBeforeReplace: js.UndefOr[scala.Boolean] = js.undefined,
     dependsOn: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]] | Resource] = null,
     id: atPulumiPulumiLib.outputMod.Input[ID] = null,
@@ -40,6 +41,7 @@ object CustomResourceOptions {
   ): CustomResourceOptions = {
     val __obj = js.Dynamic.literal()
     if (additionalSecretOutputs != null) __obj.updateDynamic("additionalSecretOutputs")(additionalSecretOutputs)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
     if (!js.isUndefined(deleteBeforeReplace)) __obj.updateDynamic("deleteBeforeReplace")(deleteBeforeReplace)
     if (dependsOn != null) __obj.updateDynamic("dependsOn")(dependsOn.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])

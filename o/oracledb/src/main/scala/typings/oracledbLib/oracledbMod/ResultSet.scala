@@ -58,7 +58,7 @@ trait ResultSet extends js.Object {
     *
     * Different values of numRows may alter the time needed for fetching data from Oracle Database.
     * The value of fetchArraySize has no effect on getRows() performance or internal buffering.
-    * 
+    *
     * @param numRows The number of rows to fetch
     */
   def getRows(numRows: scala.Double): js.Promise[js.Array[(stdLib.Record[java.lang.String, _]) | js.Array[_]]] = js.native

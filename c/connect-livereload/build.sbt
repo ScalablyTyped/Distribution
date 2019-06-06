@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "connect-livereload"
-version := "v0.5.3-dt-20190322Z-7a012d"
+version := "v0.5.3-dt-20190322Z-3714e7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-85ff12",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-a0bc27",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190605Z-895d8c",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

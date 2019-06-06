@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation._
 class InviteClientContext protected () extends Session {
   def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String) = this()
   def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, options: js.Any) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, options: js.Any) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, options: js.Any, modifiers: js.Any) = this()
-  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, options: js.Any, modifiers: js.Any) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, options: sipDotJsLib.libSessionMod.InviteClientContextNs.Options) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, options: sipDotJsLib.libSessionMod.InviteClientContextNs.Options) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: java.lang.String, options: sipDotJsLib.libSessionMod.InviteClientContextNs.Options, modifiers: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers) = this()
+  def this(ua: sipDotJsLib.libUAMod.UA, target: sipDotJsLib.libCoreMod.URI, options: sipDotJsLib.libSessionMod.InviteClientContextNs.Options, modifiers: sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers) = this()
   var ackAndBye: js.Any = js.native
   var anonymous: scala.Boolean = js.native
   var disposeEarlyMedia: js.Any = js.native

@@ -11,7 +11,7 @@ trait BatchStopJobRunError extends js.Object {
     */
   var ErrorDetail: js.UndefOr[ErrorDetail] = js.undefined
   /**
-    * The name of the job definition used in the job run in question.
+    * The name of the job definition that is used in the job run in question.
     */
   var JobName: js.UndefOr[NameString] = js.undefined
   /**

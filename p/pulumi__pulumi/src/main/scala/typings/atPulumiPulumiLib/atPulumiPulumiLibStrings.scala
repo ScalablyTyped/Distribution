@@ -25,13 +25,22 @@ object atPulumiPulumiLibStrings {
   sealed trait LiftedObject extends js.Object
   
   @js.native
+  sealed trait ResolvedObject extends js.Object
+  
+  @js.native
   sealed trait UnwrappedObject extends js.Object
   
   @js.native
   sealed trait c44067f5952c0a294b673a41bacd8c17 extends js.Object
   
   @js.native
+  sealed trait getProvider extends js.Object
+  
+  @js.native
   sealed trait `pulumi:pulumi:Stack` extends js.Object
+  
+  @js.native
+  sealed trait urn extends js.Object
   
   @scala.inline
   def `04da6b54-80e4-46f7-96ec-b56ff0331ba9`: `04da6b54-80e4-46f7-96ec-b56ff0331ba9` = "04da6b54-80e4-46f7-96ec-b56ff0331ba9".asInstanceOf[`04da6b54-80e4-46f7-96ec-b56ff0331ba9`]
@@ -46,10 +55,16 @@ object atPulumiPulumiLibStrings {
   @scala.inline
   def LiftedObject: LiftedObject = "LiftedObject".asInstanceOf[LiftedObject]
   @scala.inline
+  def ResolvedObject: ResolvedObject = "ResolvedObject".asInstanceOf[ResolvedObject]
+  @scala.inline
   def UnwrappedObject: UnwrappedObject = "UnwrappedObject".asInstanceOf[UnwrappedObject]
   @scala.inline
   def c44067f5952c0a294b673a41bacd8c17: c44067f5952c0a294b673a41bacd8c17 = "c44067f5952c0a294b673a41bacd8c17".asInstanceOf[c44067f5952c0a294b673a41bacd8c17]
   @scala.inline
+  def getProvider: getProvider = "getProvider".asInstanceOf[getProvider]
+  @scala.inline
   def `pulumi:pulumi:Stack`: `pulumi:pulumi:Stack` = "pulumi:pulumi:Stack".asInstanceOf[`pulumi:pulumi:Stack`]
+  @scala.inline
+  def urn: urn = "urn".asInstanceOf[urn]
 }
 

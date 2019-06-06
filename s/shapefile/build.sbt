@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "shapefile"
-version := "0.6-dt-20180816Z-4ee7a9"
+version := "0.6-dt-20180816Z-9a137f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-854a0c",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190605Z-895d8c",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

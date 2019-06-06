@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Condition extends js.Object {
   /**
-    * The name of the Job to whose JobRuns this condition applies and on which this trigger waits.
+    * The name of the job whose JobRuns this condition applies to, and on which this trigger waits.
     */
   var JobName: js.UndefOr[NameString] = js.undefined
   /**
@@ -15,7 +15,7 @@ trait Condition extends js.Object {
     */
   var LogicalOperator: js.UndefOr[LogicalOperator] = js.undefined
   /**
-    * The condition state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT and FAILED.
+    * The condition state. Currently, the values supported are SUCCEEDED, STOPPED, TIMEOUT, and FAILED.
     */
   var State: js.UndefOr[JobRunState] = js.undefined
 }

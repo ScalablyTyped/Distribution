@@ -27,7 +27,7 @@ trait CreateTriggerRequest extends js.Object {
     */
   var Schedule: js.UndefOr[GenericString] = js.undefined
   /**
-    * Set to true to start SCHEDULED and CONDITIONAL triggers when created. True not supported for ON_DEMAND triggers.
+    * Set to true to start SCHEDULED and CONDITIONAL triggers when created. True is not supported for ON_DEMAND triggers.
     */
   var StartOnCreation: js.UndefOr[BooleanValue] = js.undefined
   /**

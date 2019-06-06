@@ -1612,7 +1612,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[ImportCatalogToGlueResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listCrawlers(): awsDashSdkLib.libRequestMod.Request[ListCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listCrawlers(
@@ -1623,7 +1623,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listCrawlers(params: ListCrawlersRequest): awsDashSdkLib.libRequestMod.Request[ListCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listCrawlers(
@@ -1635,7 +1635,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listDevEndpoints(): awsDashSdkLib.libRequestMod.Request[ListDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDevEndpoints(
@@ -1646,7 +1646,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listDevEndpoints(params: ListDevEndpointsRequest): awsDashSdkLib.libRequestMod.Request[ListDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listDevEndpoints(
@@ -1658,7 +1658,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listJobs(): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobs(
@@ -1669,7 +1669,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listJobs(params: ListJobsRequest): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listJobs(
@@ -1681,7 +1681,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listTriggers(): awsDashSdkLib.libRequestMod.Request[ListTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTriggers(
@@ -1692,7 +1692,7 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field, which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag are retrieved.
     */
   def listTriggers(params: ListTriggersRequest): awsDashSdkLib.libRequestMod.Request[ListTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listTriggers(

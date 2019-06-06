@@ -1,7 +1,7 @@
 
 # Scala.js typings for intl-locales-supported
 
-Typings are for version 1.0
+Typings are for version 1.0.10
 
 ## Library description:
 Utility to help you polyfill the Node.js runtime when the Intl APIs are missing, or if the built-in Intl is missing locale data that you need.
@@ -24,21 +24,11 @@ Utility to help you polyfill the Node.js runtime when the Intl APIs are missing,
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 
 ## Usage
 See [the main readme](../../readme.md) for instructions.
 
-## Comments
-
-These comments are from the typescript definitions and might be useful:
-```
-// Type definitions for intl-locales-supported 1.0
-// Project: https://github.com/formatjs/formatjs
-// Definitions by: Edward Sammut Alessi <https://github.com/Slessi>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-
-```
 

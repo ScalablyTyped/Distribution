@@ -681,7 +681,6 @@
 | 341 | [left-pad](./l/left-pad) | String left pad
 | 340 | [fluent-ffmpeg](./f/fluent-ffmpeg) | A fluent API to FFMPEG (http://www.ffmpeg.org)
 | 340 | [md5-file](./m/md5-file) | return an md5sum of a given file
-| 339 | [immer](./i/immer) | Create your next immutable state by mutating the c
 | 339 | [react-lifecycles-compat](./r/react-lifecycles-compat) | Backwards compatibility polyfill for React class c
 | 337 | [bytebuffer](./b/bytebuffer) | The swiss army knife for binary data in JavaScript
 | 335 | [jwt-simple](./j/jwt-simple) | JWT(JSON Web Token) encode and decode module
@@ -2428,6 +2427,7 @@
 | 48 | [cookiejar](./c/cookiejar) | simple persistent cookiejar system
 | 48 | [currency-formatter](./c/currency-formatter) | A simple Javascript utility that helps you to disp
 | 48 | [egg-logger](./e/egg-logger) | egg logger
+| 48 | [intl-messageformat-parser](./i/intl-messageformat-parser) | Parses ICU Message strings into an AST via JavaScr
 | 48 | [is-path-inside](./i/is-path-inside) | Check if a path is inside another path
 | 48 | [is-reachable](./i/is-reachable) | Check if servers are reachable
 | 48 | [ledgerhq__hw-transport-u2](./l/ledgerhq__hw-transport-u2f) | Ledger Hardware Wallet Web implementation of the c
@@ -2491,7 +2491,6 @@
 | 45 | [center-align](./c/center-align) | Center-align the text in a string.
 | 45 | [ci-info](./c/ci-info) | Get details about the current Continuous Integrati
 | 45 | [ckeditor](./c/ckeditor) | JavaScript WYSIWYG web text editor.
-| 45 | [editorconfig](./e/editorconfig) | EditorConfig File Locator and Interpreter for Node
 | 45 | [electron-builder](./e/electron-builder) | A complete solution to package and build a ready f
 | 45 | [express-urlrewrite](./e/express-urlrewrite) | URL rewrite middleware for express
 | 45 | [gatsby-image](./g/gatsby-image) | Lazy-loading React image component with optional s
@@ -2533,6 +2532,7 @@
 | 44 | [reserved-words](./r/reserved-words) | ECMAScript reserved words checker
 | 44 | [slate-html-serializer](./s/slate-html-serializer) | An HTML serializer for Slate editors.
 | 44 | [steed](./s/steed) | horsepower for your modules
+| 44 | [storybook__components](./s/storybook__components) | Core Storybook Components
 | 44 | [stream-throttle](./s/stream-throttle) | A rate limiter for Node.js streams.
 | 44 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema
 | 44 | [typesafe-actions](./t/typesafe-actions) | Typesafe Action Creators for Redux / Flux Architec
@@ -2583,11 +2583,13 @@
 | 42 | [nested-error-stacks](./n/nested-error-stacks) | An Error subclass that will chain nested Errors an
 | 42 | [nullthrows](./n/nullthrows) | flow typed nullthrows
 | 42 | [p-defer](./p/p-defer) | Create a deferred promise
+| 42 | [proxy-from-env](./p/proxy-from-env) | Offers getProxyForUrl to get the proxy URL for a U
 | 42 | [random-item](./r/random-item) | Get a random item from an array
 | 42 | [requires-port](./r/requires-port) | Check if a protocol requires a certain port number
 | 42 | [scrypt-async](./s/scrypt-async) | Fast "async" scrypt implementation in JavaScript.
 | 42 | [semantic-ui](./s/semantic-ui) | Semantic empowers designers and developers by crea
 | 42 | [slice-ansi](./s/slice-ansi) | Slice a string with ANSI escape codes
+| 42 | [store2](./s/store2) | Better localStorage
 | 42 | [ui-select](./u/ui-select) | -
 | 41 | [array-differ](./a/array-differ) | Create an array with values that are present in th
 | 41 | [ascii-art](./a/ascii-art) | Ansi codes, figlet fonts, and ascii art. 100% JS
@@ -3319,6 +3321,7 @@
 | 22 | [styled-theming](./s/styled-theming) | Create themes for your app using styled-components
 | 22 | [supertest-as-promised](./s/supertest-as-promised) | Supercharge supertest with a promise interface
 | 22 | [urlrouter](./u/urlrouter) | connect missing router middleware, support express
+| 22 | [wordpress__element](./w/wordpress__element) | Element React module for WordPress.
 | 22 | [workerpool](./w/workerpool) | Offload tasks to a pool of workers on node.js and 
 | 21 | [accept](./a/accept) | HTTP Accept-* headers parsing
 | 21 | [activex-helpers](./a/activex-helpers) | Event handler management, and parameterized proper
@@ -3785,6 +3788,7 @@
 | 14 | [sequencify](./s/sequencify) | A module for sequencing tasks and dependencies
 | 14 | [spectacle](./s/spectacle) | ReactJS Powered Presentation Framework
 | 14 | [stackframe](./s/stackframe) | JS Object representation of a stack frame
+| 14 | [storybook__api](./s/storybook__api) | Core Storybook API & Context
 | 14 | [teeny-request](./t/teeny-request) | Like request, but smaller.
 | 14 | [theming](./t/theming) | Unified CSSinJS theming solution for React
 | 14 | [vex-js](./v/vex-js) | Beautiful, functional dialogs in vanilla JavaScrip
@@ -4096,6 +4100,7 @@
 | 10 | [fluxible](./f/fluxible) | A pluggable container for isomorphic flux applicat
 | 10 | [form-serializer](./f/form-serializer) | serialize form fields into an object or JSON
 | 10 | [format-duration](./f/format-duration) | Convert a number in milliseconds to a standard dur
+| 10 | [ftps](./f/ftps) | FTP, FTPS and SFTP client for node.js, mainly a lf
 | 10 | [fuzzy-search](./f/fuzzy-search) | Simple fuzzy search
 | 10 | [gcs-resumable-upload](./g/gcs-resumable-upload) | Upload a file to Google Cloud Storage with built-i
 | 10 | [giphy-api](./g/giphy-api) | JavaScript module for the giphy.com API that suppo
@@ -4182,7 +4187,6 @@
 | 9 | [datatables_dot_net-fixedh](./d/datatables_dot_net-fixedheader) | FixedHeader for DataTables
 | 9 | [defer-promise](./d/defer-promise) | Isomorphic function returning a deferred promise. 
 | 9 | [detect-character-encoding](./d/detect-character-encoding) | Detect character encoding using ICU
-| 9 | [download-file-sync](./d/download-file-sync) | Does exactly what you expects
 | 9 | [electron-winstaller](./e/electron-winstaller) | Module to generate Windows installers for Electron
 | 9 | [express-cluster](./e/express-cluster) | Simple drop-in for express apps to spawn multiple 
 | 9 | [feathersjs__rest-client](./f/feathersjs__rest-client) | REST client services for different Ajax libraries
@@ -4290,6 +4294,7 @@
 | 8 | [ionic__utils-fs](./i/ionic__utils-fs) | Filesystem utils for Node
 | 8 | [is-number-like](./i/is-number-like) | Checks whether provided parameter looks like a num
 | 8 | [is-stream-ended](./i/is-stream-ended) | Check if a stream has ended
+| 8 | [is-what](./i/is-what) | JS type check (TypeScript supported) functions lik
 | 8 | [issue-regex](./i/issue-regex) | Regular expression for matching issue references
 | 8 | [joigoose](./j/joigoose) | Joi validation for your Mongoose models without th
 | 8 | [jpm](./j/jpm) | Jetpack Mechanic utilities for creating, testing, 
@@ -4622,7 +4627,6 @@
 | 6 | [recaptcha2](./r/recaptcha2) | Easy API for Google reCAPTCHA version 2 for Node.j
 | 6 | [redom](./r/redom) | Tiny turboboosted JavaScript library for creating 
 | 6 | [redux-localstorage-deboun](./r/redux-localstorage-debounce) | Storage enhancer to debounce persist requests.
-| 6 | [redux-orm](./r/redux-orm) | Simple ORM to manage and query your state trees
 | 6 | [redux-persist-transform-f](./r/redux-persist-transform-filter) | Filter transformator for redux-persist
 | 6 | [redux-seamless-immutable](./r/redux-seamless-immutable) | Helpers for using seamless-immutable with Redux
 | 6 | [redux-socket_dot_io](./r/redux-socket_dot_io) | An opinionated connector between socket.io and red
@@ -4784,7 +4788,6 @@
 | 5 | [react-native-indicators](./r/react-native-indicators) | Activity indicator collection
 | 5 | [react-shadow-dom-retarget](./r/react-shadow-dom-retarget-events) | Retargets event in a shadow root to react
 | 5 | [react-window-size](./r/react-window-size) | React HOC that passes browser window size to wrapp
-| 5 | [reactjs-popup](./r/reactjs-popup) | React Popup Component - Modals,Tooltips and Menus 
 | 5 | [redux-little-router](./r/redux-little-router) | A barebones routing solution for Redux application
 | 5 | [redux-recycle](./r/redux-recycle) | higher-order reducer to reset the redux state on c
 | 5 | [redux-saga__types](./r/redux-saga__types) | Shared types used by redux-saga packages.
@@ -5396,6 +5399,7 @@
 | 2 | [makeup-screenreader-trap](./m/makeup-screenreader-trap) | Restricts screen reader virtual cursor to a single
 | 2 | [math-sign](./m/math-sign) | ES2015 Math.sign() ponyfill
 | 2 | [math-trunc](./m/math-trunc) | ES6 Math.trunc() ponyfill
+| 2 | [merge-anything](./m/merge-anything) | Merge objects & other types recursively. A simple 
 | 2 | [merge-env](./m/merge-env) | An object merging function that has special suppor
 | 2 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor
 | 2 | [microevent_dot_ts](./m/microevent_dot_ts) | Zero cost events
@@ -6245,6 +6249,7 @@
 | 0 | [ldap-filters](./l/ldap-filters) | Library for generating, parsing, and evaluating LD
 | 0 | [leaflet-curve](./l/leaflet-curve) | A Leaflet plugin for drawing Bézier curves and oth
 | 0 | [leaflet-label](./l/leaflet-label) | Labels for leaflet maps
+| 0 | [leaflet-rastercoords](./l/leaflet-rastercoords) | Leaflet plugin for plain image map projection to d
 | 0 | [leaflet_dot_markercluster](./l/leaflet_dot_markercluster_dot_layersupport) | Sub-plugin for Leaflet.markercluster plugin (MCG i
 | 0 | [leaflet_dot_pancontrol](./l/leaflet_dot_pancontrol) | Map pan control for Leaflet
 | 0 | [lerna-get-packages](./l/lerna-get-packages) | > Get an array of packages from a lerna monorepo.
@@ -6357,6 +6362,7 @@
 | 0 | [promisify-supertest](./p/promisify-supertest) | SuperTest + Promises
 | 0 | [proton-native](./p/proton-native) | React Native for the desktop, cross compatible
 | 0 | [protractor-helpers](./p/protractor-helpers) | Additional matchers / locators and helpers for sys
+| 0 | [pulumi__query](./p/pulumi__query) | An simple, relational SDK for querying TypeScript 
 | 0 | [qunit-dom](./q/qunit-dom) | High Level DOM Assertions for QUnit
 | 0 | [rangyinputs](./r/rangyinputs) | A small jQuery plug-in for selection and caret man
 | 0 | [raspi-onewire](./r/raspi-onewire) | Provides access to 1-Wire on the Raspberry Pi from

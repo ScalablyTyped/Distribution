@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdateJobRequest extends js.Object {
   /**
-    * Name of the job definition to update.
+    * The name of the job definition to update.
     */
   var JobName: NameString
   /**

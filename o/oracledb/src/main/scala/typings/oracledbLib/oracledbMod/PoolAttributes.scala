@@ -64,7 +64,7 @@ trait PoolAttributes extends js.Object {
     * @default true
     * @since 2.3
     */
-  var homogenous: js.UndefOr[scala.Boolean] = js.undefined
+  var homogeneous: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The password of the database user used by connections in the pool. A password is also necessary if a proxy user is specified at pool creation.
     * If homogeneous is false, then the password may be omitted at pool creation but given in subsequent pool.getConnection() calls.
@@ -173,7 +173,7 @@ object PoolAttributes {
     edition: java.lang.String = null,
     events: js.UndefOr[scala.Boolean] = js.undefined,
     externalAuth: js.UndefOr[scala.Boolean] = js.undefined,
-    homogenous: js.UndefOr[scala.Boolean] = js.undefined,
+    homogeneous: js.UndefOr[scala.Boolean] = js.undefined,
     password: java.lang.String = null,
     poolAlias: java.lang.String = null,
     poolIncrement: scala.Int | scala.Double = null,
@@ -198,7 +198,7 @@ object PoolAttributes {
     if (edition != null) __obj.updateDynamic("edition")(edition)
     if (!js.isUndefined(events)) __obj.updateDynamic("events")(events)
     if (!js.isUndefined(externalAuth)) __obj.updateDynamic("externalAuth")(externalAuth)
-    if (!js.isUndefined(homogenous)) __obj.updateDynamic("homogenous")(homogenous)
+    if (!js.isUndefined(homogeneous)) __obj.updateDynamic("homogeneous")(homogeneous)
     if (password != null) __obj.updateDynamic("password")(password)
     if (poolAlias != null) __obj.updateDynamic("poolAlias")(poolAlias)
     if (poolIncrement != null) __obj.updateDynamic("poolIncrement")(poolIncrement.asInstanceOf[js.Any])

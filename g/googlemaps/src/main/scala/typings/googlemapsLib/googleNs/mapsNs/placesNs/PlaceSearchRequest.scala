@@ -19,7 +19,7 @@ trait PlaceSearchRequest extends js.Object {
   var openNow: js.UndefOr[scala.Boolean] = js.undefined
   var radius: js.UndefOr[scala.Double] = js.undefined
   var rankBy: js.UndefOr[RankBy] = js.undefined
-   /* Deprecated. Will be removed February 16, 2017 */ var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

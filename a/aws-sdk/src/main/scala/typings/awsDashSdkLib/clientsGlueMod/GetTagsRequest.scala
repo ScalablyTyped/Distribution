@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetTagsRequest extends js.Object {
   /**
-    * The Amazon ARN of the resource for which to retrieve tags.
+    * The Amazon Resource Name (ARN) of the resource for which to retrieve tags.
     */
   var ResourceArn: GlueResourceArn
 }

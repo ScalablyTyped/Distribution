@@ -42,17 +42,40 @@ trait ParseOptions extends js.Object {
   	 * @default true
   	 */
   val decode: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Supports both `Function` as a custom sorting function or `false` to disable sorting.
+  	 *
+  	 * If omitted, keys are sorted using `Array#sort`, which means, converting them to strings and comparing strings in Unicode code point order.
+  	 *
+  	 * @default true
+  	 *
+  	 * @example
+  	 *
+  	 * const order = ['c', 'a', 'b'];
+  	 * queryString.parse('?a=one&b=two&c=three', {
+  	 * 	sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
+  	 * });
+  	 * // => {c: 'three', a: 'one', b: 'two'}
+  	 *
+  	 * queryString.parse('?a=one&c=three&b=two', {sort: false});
+  	 * // => {a: 'one', c: 'three', b: 'two'}
+  	 */
+  val sort: js.UndefOr[
+    (js.Function2[/* itemLeft */ java.lang.String, /* itemRight */ java.lang.String, scala.Double]) | queryDashStringLib.queryDashStringLibNumbers.`false`
+  ] = js.undefined
 }
 
 object ParseOptions {
   @scala.inline
   def apply(
     arrayFormat: queryDashStringLib.queryDashStringLibStrings.bracket | queryDashStringLib.queryDashStringLibStrings.index | queryDashStringLib.queryDashStringLibStrings.comma | queryDashStringLib.queryDashStringLibStrings.none = null,
-    decode: js.UndefOr[scala.Boolean] = js.undefined
+    decode: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: (js.Function2[/* itemLeft */ java.lang.String, /* itemRight */ java.lang.String, scala.Double]) | queryDashStringLib.queryDashStringLibNumbers.`false` = null
   ): ParseOptions = {
     val __obj = js.Dynamic.literal()
     if (arrayFormat != null) __obj.updateDynamic("arrayFormat")(arrayFormat.asInstanceOf[js.Any])
     if (!js.isUndefined(decode)) __obj.updateDynamic("decode")(decode)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseOptions]
   }
 }

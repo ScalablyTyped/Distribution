@@ -6,31 +6,33 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IntlRelativeFormat extends js.Object {
-  /**
-    * The format method (which takes a JavaScript date or timestamp) and optional
-    * options arguments will compare the date with "now" (or options.now),
-    * and returns the formatted string; e.g., "3 hours ago" in the corresponding
-    * locale passed into the constructor.
-    *
-    *    var output = rf.format(new Date());
-    *    console.log(output); // => "now"
-    *
-    * If you wish to specify a "now" value, it can be provided via options.now and
-    *  will be used instead of querying Date.now() to get the current "now" value.
-    */
-  def format(date: stdLib.Date): java.lang.String = js.native
-  def format(date: stdLib.Date, options: intlDashRelativeformatLib.Anon_Now): java.lang.String = js.native
-  /**
-    * This method returns an object with the options values that were resolved
-    * during instance creation. It currently only contains a locale property
-    *
-    *     var rf = new IntlRelativeFormat('en-us');
-    *     console.log(rf.resolvedOptions().locale); // => "en-US"
-    *
-    * Notice how the specified locale was the all lower-case value: "en-us",
-    * but it was resolved and normalized to: "en-US".
-    */
+trait IntlRelativeFormat
+  extends org.scalablytyped.runtime.Instantiable0[IntlRelativeFormat]
+     with org.scalablytyped.runtime.Instantiable2[
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      /* opts */ IntlRelativeFormatOptions, 
+      IntlRelativeFormat
+    ]
+     with org.scalablytyped.runtime.Instantiable1[
+      (/* locales */ js.Array[java.lang.String]) | (/* locales */ java.lang.String), 
+      IntlRelativeFormat
+    ] {
+  var __localeData__ : stdLib.Record[java.lang.String, intlDashRelativeformatLib.libTypesMod.LocaleData] = js.native
+  var defaultLocale: java.lang.String = js.native
+  var thresholds: stdLib.Record[java.lang.String, scala.Double] = js.native
+  def apply(): IntlRelativeFormat = js.native
+  def apply(locales: java.lang.String): IntlRelativeFormat = js.native
+  def apply(locales: java.lang.String, opts: IntlRelativeFormatOptions): IntlRelativeFormat = js.native
+  def apply(locales: js.Array[java.lang.String]): IntlRelativeFormat = js.native
+  def apply(locales: js.Array[java.lang.String], opts: IntlRelativeFormatOptions): IntlRelativeFormat = js.native
+  def __addLocaleData(data: intlDashRelativeformatLib.libTypesMod.LocaleData*): scala.Unit = js.native
+  def format(
+    date: /* import warning: ImportType.apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any
+  ): java.lang.String = js.native
+  def format(
+    date: /* import warning: ImportType.apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any,
+    opts: intlDashRelativeformatLib.Anon_Now
+  ): java.lang.String = js.native
   def resolvedOptions(): intlDashRelativeformatLib.Anon_Locale = js.native
 }
 

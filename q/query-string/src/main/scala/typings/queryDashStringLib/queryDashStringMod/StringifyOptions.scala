@@ -47,6 +47,8 @@ trait StringifyOptions extends js.Object {
   	 *
   	 * If omitted, keys are sorted using `Array#sort`, which means, converting them to strings and comparing strings in Unicode code point order.
   	 *
+  	 * @default true
+  	 *
   	 * @example
   	 *
   	 * const order = ['c', 'a', 'b'];

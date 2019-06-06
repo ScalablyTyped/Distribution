@@ -227,6 +227,7 @@ package object clientsGlueMod {
   type PrincipalType = _PrincipalType | java.lang.String
   type PublicKeysList = js.Array[GenericString]
   type PythonScript = java.lang.String
+  type PythonVersionString = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.JAR
     - awsDashSdkLib.awsDashSdkLibStrings.FILE

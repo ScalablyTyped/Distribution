@@ -220,8 +220,10 @@ object libStylesMod extends js.Object {
     val smallPlus: java.lang.String = js.native
     val superLarge: java.lang.String = js.native
     val xLarge: java.lang.String = js.native
+    val xLargePlus: java.lang.String = js.native
     val xSmall: java.lang.String = js.native
     val xxLarge: java.lang.String = js.native
+    val xxLargePlus: java.lang.String = js.native
   }
   
   @JSName("FontWeights")

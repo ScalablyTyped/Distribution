@@ -19,6 +19,7 @@ trait ISourceCreationOptions
   var owner: js.UndefOr[stripeLib.Anon_AddressEmail] = js.undefined
   var receiver: js.UndefOr[stripeLib.Anon_Email] = js.undefined
   var redirect: js.UndefOr[stripeLib.Anon_ReturnurlString] = js.undefined
+  var sepa_debit: js.UndefOr[stripeLib.Anon_Iban] = js.undefined
   var statement_descriptor: js.UndefOr[java.lang.String] = js.undefined
   var token: js.UndefOr[java.lang.String] = js.undefined
   var `type`: stripeLib.stripeLibStrings.ach_credit_transfer | stripeLib.stripeLibStrings.ach_debit | stripeLib.stripeLibStrings.alipay | stripeLib.stripeLibStrings.bancontact | stripeLib.stripeLibStrings.card | stripeLib.stripeLibStrings.card_present | stripeLib.stripeLibStrings.eps | stripeLib.stripeLibStrings.giropay | stripeLib.stripeLibStrings.ideal | stripeLib.stripeLibStrings.multibanco | stripeLib.stripeLibStrings.p24 | stripeLib.stripeLibStrings.sepa_debit | stripeLib.stripeLibStrings.sofort | stripeLib.stripeLibStrings.three_d_secure | stripeLib.stripeLibStrings.wechat
@@ -40,6 +41,7 @@ object ISourceCreationOptions {
     owner: stripeLib.Anon_AddressEmail = null,
     receiver: stripeLib.Anon_Email = null,
     redirect: stripeLib.Anon_ReturnurlString = null,
+    sepa_debit: stripeLib.Anon_Iban = null,
     statement_descriptor: java.lang.String = null,
     token: java.lang.String = null,
     usage: stripeLib.stripeLibStrings.reusable | stripeLib.stripeLibStrings.single_use = null
@@ -57,6 +59,7 @@ object ISourceCreationOptions {
     if (owner != null) __obj.updateDynamic("owner")(owner)
     if (receiver != null) __obj.updateDynamic("receiver")(receiver)
     if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit)
     if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
     if (token != null) __obj.updateDynamic("token")(token)
     if (usage != null) __obj.updateDynamic("usage")(usage.asInstanceOf[js.Any])

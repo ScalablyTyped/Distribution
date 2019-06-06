@@ -19,10 +19,5 @@ object ^ extends js.Object {
   val DEFAULT_SERVER_PORT: ionicLib.ionicLibNumbers.`8100` = js.native
   val LOCAL_ADDRESSES: js.Array[java.lang.String] = js.native
   val SERVE_SCRIPT: ionicLib.ionicLibStrings.`ionic:serve` = js.native
-  def serve(
-    deps: ServeRunnerDeps,
-    inputs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineInputs,
-    options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions
-  ): js.Promise[ionicLib.definitionsMod.ServeDetails] = js.native
 }
 

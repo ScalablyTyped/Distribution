@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for @storybook/react 4.0
-// Project: https://github.com/storybooks/storybook, https://github.com/storybooks/storybook/tree/master/app/react
+// Project: https://github.com/storybookjs/storybook, https://github.com/storybookjs/storybook/tree/master/app/react
 // Definitions by: Joscha Feth <https://github.com/joscha>
 //                 Anton Izmailov <https://github.com/wapgear>
 //                 Dan Dean <https://github.com/dandean>

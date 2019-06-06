@@ -19,7 +19,7 @@ trait Trigger extends js.Object {
     */
   var Id: js.UndefOr[IdString] = js.undefined
   /**
-    * Name of the trigger.
+    * The name of the trigger.
     */
   var Name: js.UndefOr[NameString] = js.undefined
   /**

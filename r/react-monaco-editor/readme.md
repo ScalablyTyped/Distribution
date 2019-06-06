@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-monaco-editor
 
-Typings are for version 0.26.1
+Typings are for version 0.26.2
 
 ## Library description:
 Monaco Editor for React

@@ -52,7 +52,7 @@ class UA ()
   var setTransportListeners: js.Any = js.native
   var status: sipDotJsLib.libEnumsMod.UAStatus = js.native
   var subscriptions: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.libSubscriptionMod.Subscription] = js.native
-  var transport: js.UndefOr[sipDotJsLib.libCoreMod.Transport] = js.native
+  var transport: sipDotJsLib.libCoreMod.Transport = js.native
   var `type`: sipDotJsLib.libEnumsMod.TypeStrings = js.native
   var userAgentCore: sipDotJsLib.libCoreMod.UserAgentCore = js.native
   /**

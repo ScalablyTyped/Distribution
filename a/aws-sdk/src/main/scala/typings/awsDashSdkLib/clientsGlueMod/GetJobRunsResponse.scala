@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait GetJobRunsResponse extends js.Object {
   /**
-    * A list of job-run metatdata objects.
+    * A list of job-run metadata objects.
     */
   var JobRuns: js.UndefOr[JobRunList] = js.undefined
   /**
-    * A continuation token, if not all reequested job runs have been returned.
+    * A continuation token, if not all requested job runs have been returned.
     */
   var NextToken: js.UndefOr[GenericString] = js.undefined
 }

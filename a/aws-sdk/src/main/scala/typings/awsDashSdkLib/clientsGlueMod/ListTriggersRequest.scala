@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListTriggersRequest extends js.Object {
   /**
-    *  The name of the job for which to retrieve triggers. The trigger that can start this job will be returned, and if there is no such trigger, all triggers will be returned.
+    *  The name of the job for which to retrieve triggers. The trigger that can start this job is returned. If there is no such trigger, all triggers are returned.
     */
   var DependentJobName: js.UndefOr[NameString] = js.undefined
   /**

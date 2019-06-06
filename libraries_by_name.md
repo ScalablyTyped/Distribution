@@ -1295,7 +1295,6 @@
 | [doublearray](./d/doublearray) | JavaScript implementation of Double-Array trie | trie |
 | [doubleclick-gpt](./d/doubleclick-gpt) | - | - |
 | [download](./d/download) | Download and extract files | download, extract, http, request, url |
-| [download-file-sync](./d/download-file-sync) | Does exactly what you expects | - |
 | [downloadjs](./d/downloadjs) | file downloading using client-side javascript | files, dataURL, blob, download |
 | [downshift](./d/downshift) | A set of primitives to build simple, flexible, WAI | enhanced input, react, autocomplete, autosuggest, typeahead, dropdown, select, combobox, omnibox, accessibility, WAI-ARIA, multiselect, multiple selection |
 | [dplayer](./d/dplayer) | Wow, such a lovely HTML5 danmaku video player | player, danmaku, video, html5 |
@@ -1354,7 +1353,6 @@
 | [ecurve](./e/ecurve) | Elliptic curve cryptography | cryptography, crypto, bitcoin, litecoin, elliptic, curve |
 | [ed25519](./e/ed25519) | An Ed25519 implementation for node.js | Ed25519, elliptic, curve, crypto, Curve25519, EdDSA |
 | [ed2curve](./e/ed2curve) | Convert Ed25519 signing keys into Curve25519 Diffi | ed25519, curve25519, djb, crypto, public, keys, edwards, montgomery, elliptic |
-| [editorconfig](./e/editorconfig) | EditorConfig File Locator and Interpreter for Node | editorconfig, core |
 | [edmonds-blossom](./e/edmonds-blossom) | Edmond's weighted maximum matching algorithm (Blos | graph, directional graph, edmonds, maximum matching, blossom |
 | [ee-first](./e/ee-first) | return the first event in a set of ee/event pairs | - |
 | [egg](./e/egg) | A web framework's framework for Node.js | web, app, http, application, framework, middleware, koa, egg |
@@ -1854,6 +1852,7 @@
 | [ftdomdelegate](./f/ftdomdelegate) | Create and manage a DOM event delegator. | delegate, dom, events |
 | [ftp](./f/ftp) | An FTP client module for node.js | ftp, client, transfer |
 | [ftpd](./f/ftpd) | Node FTP Server | ftp, ftp-server, ftpd |
+| [ftps](./f/ftps) | FTP, FTPS and SFTP client for node.js, mainly a lf | ftp, ftps, sftp, node-ftp, node-sftp, node-ftps, lftp |
 | [fullcalendar](./f/fullcalendar) | Full-sized drag & drop event calendar | calendar, event, full-sized, jquery-plugin |
 | [fullname](./f/fullname) | Get the fullname of the current user | name, fullname, realname, full name, first name, surname, full, real, given, user, gecos, pwuid, uid |
 | [fullpage_dot_js](./f/fullpage_dot_js) | Create beautiful fullscreen scrolling websites | jquery, javacript, scrolling, single_page, onepage, fullpage, fullpagejs, one_page, sliding, snap, scroll, swipe, mousewheel, sections, slides, slidehow |
@@ -2527,7 +2526,6 @@
 | [imap-simple](./i/imap-simple) | Wrapper over node-imap, providing a simpler api fo | imap, node-imap |
 | [imgur-rest-api](./i/imgur-rest-api) | - | - |
 | [immediate](./i/immediate) | A cross browser microtask library | - |
-| [immer](./i/immer) | Create your next immutable state by mutating the c | immutable, mutable, copy-on-write |
 | [immutability-helper](./i/immutability-helper) | mutate a copy of data without changing the origina | immutability |
 | [immutable](./i/immutable) | Immutable Data Collections | immutable, persistent, lazy, data, datastructure, functional, collection, stateless, sequence, iteration |
 | [imperium](./i/imperium) | Imperium is a role-based user's authorizations (AC | node acl, acl, auth, authorization, user acl, security, imperium |
@@ -2574,6 +2572,7 @@
 | [intl](./i/intl) | Polyfill the ECMA-402 Intl API (except collation) | intl, i18n, internationalization, ecma402, polyfill |
 | [intl-locales-supported](./i/intl-locales-supported) | Utility to help you polyfill the Node.js runtime w | i18n, intl, internationalization, localization, globalization |
 | [intl-messageformat](./i/intl-messageformat) | Formats ICU Message strings with number, date, plu | i18n, intl, internationalization, localization, globalization, messageformat, parser, plural, icu |
+| [intl-messageformat-parser](./i/intl-messageformat-parser) | Parses ICU Message strings into an AST via JavaScr | i18n, intl, internationalization, localization, globalization, messageformat, parser, plural, icu |
 | [intl-relativeformat](./i/intl-relativeformat) | Formats JavaScript dates to relative time strings. | intl, i18n, relative, moment, format, date |
 | [intl-tel-input](./i/intl-tel-input) | A JavaScript plugin for entering and validating in | international, i18n, country, dial, code, telephone, mobile, input, flag |
 | [into-stream](./i/into-stream) | Convert a string/promise/array/iterable/buffer/typ | stream, buffer, string, object, array, iterable, promise, promises, from, into, to, transform, convert, readable, pull, gulpfriendly, value, str |
@@ -2694,6 +2693,7 @@
 | [is-uuid](./i/is-uuid) | UUID check for Node and the browser | UUID, v1, v2, v3, v4, v5, nil, regex |
 | [is-valid-glob](./i/is-valid-glob) | Return true if a value is a valid glob pattern or  | array, check, glob, is, match, pattern, patterns, read, test, valid, validate |
 | [is-valid-path](./i/is-valid-path) | Returns true if a file path does not contain any i | bash, braces, character, check, exec, expression, extglob, file, filepath, glob, globbing, globstar, invalid, match, matches, path, pattern, regex, regexp, regular, string, test, valid, validate |
+| [is-what](./i/is-what) | JS type check (TypeScript supported) functions lik | javascript, typescript, typechecker, check-type, javascript-type, primitive-types, plain-object, plain-objects, class-instance, class-identifier, type-checking, type-checker, type-check, define-type, get-type, what-type, is-object, is-plain-obj, is-plain-object |
 | [is-windows](./i/is-windows) | Returns true if the platform is windows. UMD modul | check, cywin, is, is-windows, nix, operating system, os, platform, process, unix, win, win32, windows |
 | [isaac](./i/isaac) | ISAAC is a CSPRNG designed by Robert J. Jenkins Jr | prng, cprng, csprng, isaac |
 | [isarray](./i/isarray) | Array | browser, isarray, array |
@@ -3299,6 +3299,7 @@
 | [leaflet-mouse-position](./l/leaflet-mouse-position) | An npm wrapper for Ardhi Lukianto’s Leaflet.MouseP | leaflet, leafletjs |
 | [leaflet-polylinedecorator](./l/leaflet-polylinedecorator) | - | - |
 | [leaflet-providers](./l/leaflet-providers) | An extension to Leaflet that contains configuratio | - |
+| [leaflet-rastercoords](./l/leaflet-rastercoords) | Leaflet plugin for plain image map projection to d | Leaflet, coordinates, raster |
 | [leaflet-rotatedmarker](./l/leaflet-rotatedmarker) | Enables rotation of marker icons in Leaflet. | - |
 | [leaflet-routing-machine](./l/leaflet-routing-machine) | Routing for Leaflet | leaflet, routing, osrm |
 | [leaflet_dot_awesome-marke](./l/leaflet_dot_awesome-markers) | Leaflet Awesome Markers - allows you to display cu | leaflet, map, icons |
@@ -3841,6 +3842,7 @@
 | [mendixmodelsdk](./m/mendixmodelsdk) | Mendix Model SDK | - |
 | [menubar](./m/menubar) | high level way to create menubar desktop applicati | electron, atom, shell, menubar, menu, mac, app |
 | [meow](./m/meow) | CLI app helper | cli, bin, util, utility, helper, argv, command, line, meow, cat, kitten, parser, option, flags, input, cmd, console |
+| [merge-anything](./m/merge-anything) | Merge objects & other types recursively. A simple  | javascript, merge, deepmerge, recursively, object-assign, deep-assign, nested-assign, typescript, deep-merge, merge-object, merge-objects, deep-merge-object, object-assign-deep, nested-object-assign, nested-merge, combine, combine-objects, combine-merge, merge-combine, nested-combine |
 | [merge-descriptors](./m/merge-descriptors) | Merge objects using descriptors | - |
 | [merge-env](./m/merge-env) | An object merging function that has special suppor | environment, merge, object, parse |
 | [merge-images](./m/merge-images) | Easily compose images together without messing aro | compose, merge, images, without, no, canvas |
@@ -4821,6 +4823,7 @@
 | [provinces](./p/provinces) | state and province lists for countries | state, province, geo, data |
 | [proxy-addr](./p/proxy-addr) | Determine address of proxied request | ip, proxy, x-forwarded-for |
 | [proxy-agent](./p/proxy-agent) | Maps proxy protocols to http.Agent implementations | http, https, socks, agent, mapping, proxy, cache |
+| [proxy-from-env](./p/proxy-from-env) | Offers getProxyForUrl to get the proxy URL for a U | proxy, http_proxy, https_proxy, no_proxy, environment |
 | [proxy-lists](./p/proxy-lists) | Get proxies from publicly available proxy lists. | proxies, proxylist, proxylists, proxy |
 | [proxy-verifier](./p/proxy-verifier) | Check that proxies are working, verify their anony | proxy, proxies, verify, check, anonymity |
 | [proxyquire](./p/proxyquire) | Proxies nodejs require in order to allow overridin | require, dependency, injection, di, inject, swap, test, mock, stub |
@@ -4839,6 +4842,7 @@
 | [pulumi__cloud](./p/pulumi__cloud) | A highly productive, cloud neutral programming mod | pulumi, cloud |
 | [pulumi__kubernetes](./p/pulumi__kubernetes) | A Pulumi package for creating and managing Kuberne | pulumi, kubernetes |
 | [pulumi__pulumi](./p/pulumi__pulumi) | Pulumi's Node.js SDK | - |
+| [pulumi__query](./p/pulumi__query) | An simple, relational SDK for querying TypeScript  | linq, query, rxjs |
 | [pump](./p/pump) | pipe streams together and close all of them if one | streams, pipe, destroy, callback |
 | [pumpify](./p/pumpify) | Combine an array of streams into a single duplex s | pump, duplexify, duplex, streams, stream, pipeline, combine |
 | [punycode](./p/punycode) | A robust Punycode converter that fully complies to | punycode, unicode, idn, idna, dns, url, domain |
@@ -5350,6 +5354,7 @@
 | [react-sketchapp](./r/react-sketchapp) | A React renderer for Sketch.app | sketch, sketchapp, react, reactjs, renderer |
 | [react-slick](./r/react-slick) | React port of slick carousel | slick, carousel, Image slider, orbit, slider, react-component |
 | [react-slider](./r/react-slider) | Slider component for React | react-component, react, slider, component |
+| [react-slinky-facade](./r/react-slinky-facade) | - | - |
 | [react-smooth-scrollbar](./r/react-smooth-scrollbar) | React implementation of smooth-scrollbar | react, smooth, scroll, performance, scrollbar |
 | [react-sortable-hoc](./r/react-sortable-hoc) | Set of higher-order components to turn any list in | react, reactjs, react-component, sortable, sortable-list, list, sortable list, smooth, animated, hoc, higher-order, component |
 | [react-sortable-pane](./r/react-sortable-pane) | - | React |
@@ -5429,7 +5434,6 @@
 | [react-youtube-embed](./r/react-youtube-embed) | A responsive YouTube embed component for React. | react, youtube, embed, responsive |
 | [reactable](./r/reactable) | Fast, flexible, simple data tables in React | react-component, react, table, data-tables |
 | [reactcss](./r/reactcss) | Bringing Classes to Inline Styles | react, reactcss |
-| [reactjs-popup](./r/reactjs-popup) | React Popup Component - Modals,Tooltips and Menus  | react, popup, modal, tooltip, react-modal, reactjs, react-popup, reactjs-popup, reactjs-modal, react-tooltip |
 | [reactour](./r/reactour) | Tourist Guide into your React Components | react, tour, intro, guide, introduction, step-by-step, guide, walkthrough, joyride, tourist-guide, product-intro, presentation |
 | [reactstrap](./r/reactstrap) | React Bootstrap 4 components | reactstrap, bootstrap, react, component, components, react-component, ui |
 | [read](./r/read) | read(1) for node programs | - |
@@ -5502,7 +5506,6 @@
 | [redux-mock-store](./r/redux-mock-store) | A mock store for testing your redux async action c | - |
 | [redux-observable](./r/redux-observable) | RxJS based middleware for Redux. Compose and cance | Rx, Ducks, Reducks, Redux, middleware, observable, thunk, async, cancel, action |
 | [redux-optimistic-ui](./r/redux-optimistic-ui) | a reducer enhancer to enable type-agnostic optimis | redux, optimistic, latency-compensation, optimistic-ui |
-| [redux-orm](./r/redux-orm) | Simple ORM to manage and query your state trees | redux, orm |
 | [redux-pack](./r/redux-pack) | Sensible promise handling and middleware for redux | redux, middleware, promise, async, normalize, normalizr, react |
 | [redux-persist](./r/redux-persist) | persist and rehydrate redux stores | - |
 | [redux-persist-transform-c](./r/redux-persist-transform-compress) | compress your redux state | redux, redux-persist, redux-persist-transform, compression |
@@ -6129,6 +6132,7 @@
 | [stoppable](./s/stoppable) | - | server, net, connect, socket, connection, stop, close, disconnect, disconnection, http, https, tcp |
 | [storage-helper](./s/storage-helper) | A very simple way to manage browser storage | localStorage, local, storage, localstorage, cookie, cookies |
 | [store](./s/store) | A localStorage wrapper for all browsers without us | - |
+| [store2](./s/store2) | Better localStorage | localStorage, sessionStorage, json, namespace, store |
 | [storm-react-diagrams](./s/storm-react-diagrams) | **PSA**: React Diagrams is currently getting a bit | web, diagram, diagrams, react, typescript, flowchart, simple, links, nodes |
 | [storybook-addon-jsx](./s/storybook-addon-jsx) | Display the JSX of the story | - |
 | [storybook-react-router](./s/storybook-react-router) | A storybook decorator that allows you to use routi | storybook, react, react-router |
@@ -6146,8 +6150,10 @@
 | [storybook__addon-storysho](./s/storybook__addon-storyshots) | StoryShots is a Jest Snapshot Testing Addon for St | addon, storybook |
 | [storybook__addon-viewport](./s/storybook__addon-viewport) | Storybook addon to change the viewport size to mob | addon, storybook |
 | [storybook__addons](./s/storybook__addons) | Storybook addons store | storybook |
+| [storybook__api](./s/storybook__api) | Core Storybook API & Context | storybook |
 | [storybook__channels](./s/storybook__channels) | Storybook Channel is similar to an EventEmitter. C | storybook |
 | [storybook__client-logger](./s/storybook__client-logger) | Any client-side logging that is done through story | storybook |
+| [storybook__components](./s/storybook__components) | Core Storybook Components | storybook |
 | [storybook__core-events](./s/storybook__core-events) | Event names used in storybook core | storybook |
 | [storybook__html](./s/storybook__html) | Storybook for HTML: View HTML snippets in isolatio | storybook |
 | [storybook__preact](./s/storybook__preact) | Storybook for Preact: Develop Preact Component in  | storybook |
@@ -6888,6 +6894,7 @@
 | [word2vector](./w/word2vector) | a word2vector interface for nodejs | word2vector, word2vec, word, vec, machine learning, chinese, deep-learning, 向量, vector, 文字, 機器學習 |
 | [wordcloud](./w/wordcloud) | Tag cloud/Wordle presentation on 2D canvas or HTML | cloud, canvas, 2D, html, Wordle, presentation, tag |
 | [wordpress__dom-ready](./w/wordpress__dom-ready) | Execute callback after the DOM is loaded. | wordpress, dom-ready |
+| [wordpress__element](./w/wordpress__element) | Element React module for WordPress. | wordpress, element, react |
 | [wordpress__html-entities](./w/wordpress__html-entities) | HTML entity utilities for WordPress. | wordpress, html, entities |
 | [wordpress__i18n](./w/wordpress__i18n) | WordPress internationalization (i18n) library. | wordpress, i18n |
 | [wordpress__jest-console](./w/wordpress__jest-console) | Custom Jest matchers for the Console object. | wordpress, jest, matchers, console |

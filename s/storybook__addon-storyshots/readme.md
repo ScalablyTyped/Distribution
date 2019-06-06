@@ -36,7 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 // Type definitions for @storybook/addon-storyshots 4.0
-// Project: https://github.com/storybooks/storybook/tree/master/addons/storyshots, https://github.com/storybooks/storybook/tree/master/addons/storyshots/storyshots-core
+// Project: https://github.com/storybookjs/storybook/tree/master/addons/storyshots, https://github.com/storybookjs/storybook/tree/master/addons/storyshots/storyshots-core
 // Definitions by: Bradley Ayers <https://github.com/bradleyayers>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.1

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "vue-server-renderer"
-version := "2.6.10-f1d62a"
+version := "2.6.10-e46534"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190530Z-a47442",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190605Z-895d8c",
   "org.scalablytyped" %%% "std" % "3.5-f010ac",
   "org.scalablytyped" %%% "vue" % "2.6.10-fd9e29")
 publishArtifact in packageDoc := false

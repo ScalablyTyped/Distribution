@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Ancillary extends js.Object {
   var ancillary: java.lang.String
   var border: java.lang.String
+  var critical: java.lang.String
   var dark: java.lang.String
   var darker: java.lang.String
   var darkest: java.lang.String
@@ -38,6 +39,7 @@ object Anon_Ancillary {
   def apply(
     ancillary: java.lang.String,
     border: java.lang.String,
+    critical: java.lang.String,
     dark: java.lang.String,
     darker: java.lang.String,
     darkest: java.lang.String,
@@ -62,7 +64,7 @@ object Anon_Ancillary {
     ultraviolet: java.lang.String,
     warning: java.lang.String
   ): Anon_Ancillary = {
-    val __obj = js.Dynamic.literal(ancillary = ancillary, border = border, dark = dark, darker = darker, darkest = darkest, defaultText = defaultText, gold = gold, green = green, inverseText = inverseText, light = light, lighter = lighter, lightest = lightest, medium = medium, mediumdark = mediumdark, mediumlight = mediumlight, negative = negative, orange = orange, positive = positive, primary = primary, purple = purple, seafoam = seafoam, secondary = secondary, tertiary = tertiary, ultraviolet = ultraviolet, warning = warning)
+    val __obj = js.Dynamic.literal(ancillary = ancillary, border = border, critical = critical, dark = dark, darker = darker, darkest = darkest, defaultText = defaultText, gold = gold, green = green, inverseText = inverseText, light = light, lighter = lighter, lightest = lightest, medium = medium, mediumdark = mediumdark, mediumlight = mediumlight, negative = negative, orange = orange, positive = positive, primary = primary, purple = purple, seafoam = seafoam, secondary = secondary, tertiary = tertiary, ultraviolet = ultraviolet, warning = warning)
   
     __obj.asInstanceOf[Anon_Ancillary]
   }

@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/pulumi/runtime/resource", JSImport.Namespace)
 @js.native
 object runtimeResourceMod extends js.Object {
+  def listResourceOutputs[U /* <: atPulumiPulumiLib.resourceMod.Resource */](): atPulumiQueryLib.interfacesMod.AsyncQueryable[atPulumiPulumiLib.queryableMod.ResolvedResource[U]] = js.native
+  def listResourceOutputs[U /* <: atPulumiPulumiLib.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ scala.Boolean]): atPulumiQueryLib.interfacesMod.AsyncQueryable[atPulumiPulumiLib.queryableMod.ResolvedResource[U]] = js.native
+  def listResourceOutputs[U /* <: atPulumiPulumiLib.resourceMod.Resource */](typeFilter: js.Function1[/* o */ js.Any, /* is U */ scala.Boolean], stackName: java.lang.String): atPulumiQueryLib.interfacesMod.AsyncQueryable[atPulumiPulumiLib.queryableMod.ResolvedResource[U]] = js.native
   def readResource(
     res: atPulumiPulumiLib.resourceMod.Resource,
     t: java.lang.String,

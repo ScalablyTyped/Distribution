@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-draggable-list
 
-Typings are for version 4.0.2
+Typings are for version 4.0.3
 
 ## Library description:
 Make a list of draggable collapsible items.

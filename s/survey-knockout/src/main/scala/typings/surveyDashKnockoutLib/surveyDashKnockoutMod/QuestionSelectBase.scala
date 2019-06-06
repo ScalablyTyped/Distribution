@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionSelectBase protected () extends Question {
   def this(name: java.lang.String) = this()
+  val activeChoices: js.Array[ItemValue] = js.native
   /**
     * The list of items. Every item has value and text. If text is empty, the value is rendered. The item text supports markdown.
     * @see choicesByUrl
@@ -100,6 +101,7 @@ class QuestionSelectBase protected () extends Question {
   /* protected */ def hasUnknownValue(`val`: js.Any): scala.Boolean = js.native
   /* protected */ def hasUnknownValue(`val`: js.Any, includeOther: scala.Boolean): scala.Boolean = js.native
   /* protected */ def isValueDisabled(`val`: js.Any): scala.Boolean = js.native
+  /* protected */ def onLoadChoicesFromUrl(array: js.Array[ItemValue]): scala.Unit = js.native
   /* protected */ def onVisibleChoicesChanged(): scala.Unit = js.native
   /* protected */ def renderedValueFromDataCore(`val`: js.Any): js.Any = js.native
   /* protected */ def rendredValueFromData(`val`: js.Any): js.Any = js.native

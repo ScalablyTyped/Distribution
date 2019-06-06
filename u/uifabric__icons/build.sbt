@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uifabric__icons"
-version := "6.5.2-24955c"
+version := "6.5.2-7b797c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,9 +9,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c843c9",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1fde1d",
   "org.scalablytyped" %%% "std" % "3.5-f010ac",
-  "org.scalablytyped" %%% "uifabric__merge-styles" % "6.17.4-4cf093",
-  "org.scalablytyped" %%% "uifabric__styling" % "6.47.6-635d81",
-  "org.scalablytyped" %%% "uifabric__utilities" % "6.39.3-097a77")
+  "org.scalablytyped" %%% "uifabric__merge-styles" % "6.18.0-bf080c",
+  "org.scalablytyped" %%% "uifabric__styling" % "6.48.0-f685fa",
+  "org.scalablytyped" %%% "uifabric__utilities" % "6.40.0-160530")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
