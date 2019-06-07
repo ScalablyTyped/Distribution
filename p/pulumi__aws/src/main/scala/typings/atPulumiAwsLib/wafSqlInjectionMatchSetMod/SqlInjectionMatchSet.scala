@@ -20,7 +20,7 @@ class SqlInjectionMatchSet protected ()
   def this(name: java.lang.String, args: SqlInjectionMatchSetArgs) = this()
   def this(name: java.lang.String, args: SqlInjectionMatchSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * The name or description of the SizeConstraintSet.
+    * The name or description of the SQL Injection Match Set.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
@@ -53,5 +53,10 @@ object SqlInjectionMatchSet extends js.Object {
     state: atPulumiAwsLib.wafSqlInjectionMatchSetMod.SqlInjectionMatchSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = js.native
+  /**
+    * Returns true if the given object is an instance of SqlInjectionMatchSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ scala.Boolean = js.native
 }
 

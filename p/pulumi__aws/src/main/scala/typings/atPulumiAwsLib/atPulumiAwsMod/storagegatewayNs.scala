@@ -134,6 +134,11 @@ object storagegatewayNs extends js.Object {
       state: atPulumiAwsLib.storagegatewayCacheMod.CacheState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.storagegatewayCacheMod.Cache = js.native
+    /**
+      * Returns true if the given object is an instance of Cache.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cache.Cache */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -159,6 +164,11 @@ object storagegatewayNs extends js.Object {
       state: atPulumiAwsLib.storagegatewayCachesIscsiVolumeMod.CachesIscsiVolumeState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.storagegatewayCachesIscsiVolumeMod.CachesIscsiVolume = js.native
+    /**
+      * Returns true if the given object is an instance of CachesIscsiVolume.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/cachesIscsiVolume.CachesIscsiVolume */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -184,6 +194,11 @@ object storagegatewayNs extends js.Object {
       state: atPulumiAwsLib.storagegatewayGatewayMod.GatewayState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.storagegatewayGatewayMod.Gateway = js.native
+    /**
+      * Returns true if the given object is an instance of Gateway.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/gateway.Gateway */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -209,6 +224,11 @@ object storagegatewayNs extends js.Object {
       state: atPulumiAwsLib.storagegatewayNfsFileShareMod.NfsFileShareState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.storagegatewayNfsFileShareMod.NfsFileShare = js.native
+    /**
+      * Returns true if the given object is an instance of NfsFileShare.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/nfsFileShare.NfsFileShare */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -234,6 +254,11 @@ object storagegatewayNs extends js.Object {
       state: atPulumiAwsLib.storagegatewaySmbFileShareMod.SmbFileShareState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.storagegatewaySmbFileShareMod.SmbFileShare = js.native
+    /**
+      * Returns true if the given object is an instance of SmbFileShare.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/smbFileShare.SmbFileShare */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -259,6 +284,11 @@ object storagegatewayNs extends js.Object {
       state: atPulumiAwsLib.storagegatewayUploadBufferMod.UploadBufferState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.storagegatewayUploadBufferMod.UploadBuffer = js.native
+    /**
+      * Returns true if the given object is an instance of UploadBuffer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/uploadBuffer.UploadBuffer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -284,6 +314,11 @@ object storagegatewayNs extends js.Object {
       state: atPulumiAwsLib.storagegatewayWorkingStorageMod.WorkingStorageState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.storagegatewayWorkingStorageMod.WorkingStorage = js.native
+    /**
+      * Returns true if the given object is an instance of WorkingStorage.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ scala.Boolean = js.native
   }
   
 }

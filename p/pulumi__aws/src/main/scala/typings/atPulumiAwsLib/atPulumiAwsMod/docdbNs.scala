@@ -102,6 +102,11 @@ object docdbNs extends js.Object {
       state: atPulumiAwsLib.docdbClusterMod.ClusterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.docdbClusterMod.Cluster = js.native
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/docdb/cluster.Cluster */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -127,6 +132,11 @@ object docdbNs extends js.Object {
       state: atPulumiAwsLib.docdbClusterInstanceMod.ClusterInstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.docdbClusterInstanceMod.ClusterInstance = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterInstance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/docdb/clusterInstance.ClusterInstance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -152,6 +162,11 @@ object docdbNs extends js.Object {
       state: atPulumiAwsLib.docdbClusterParameterGroupMod.ClusterParameterGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.docdbClusterParameterGroupMod.ClusterParameterGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/docdb/clusterParameterGroup.ClusterParameterGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -177,6 +192,11 @@ object docdbNs extends js.Object {
       state: atPulumiAwsLib.docdbClusterSnapshotMod.ClusterSnapshotState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.docdbClusterSnapshotMod.ClusterSnapshot = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterSnapshot.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/docdb/clusterSnapshot.ClusterSnapshot */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -202,6 +222,11 @@ object docdbNs extends js.Object {
       state: atPulumiAwsLib.docdbSubnetGroupMod.SubnetGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.docdbSubnetGroupMod.SubnetGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/docdb/subnetGroup.SubnetGroup */ scala.Boolean = js.native
   }
   
 }

@@ -45,5 +45,10 @@ object FileSystem extends js.Object {
     state: atPulumiAwsLib.efsFileSystemMod.FileSystemState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.efsFileSystemMod.FileSystem = js.native
+  /**
+    * Returns true if the given object is an instance of FileSystem.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/fileSystem.FileSystem */ scala.Boolean = js.native
 }
 

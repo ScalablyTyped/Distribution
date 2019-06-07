@@ -62,5 +62,10 @@ object LogMetricFilter extends js.Object {
     state: atPulumiAwsLib.cloudwatchLogMetricFilterMod.LogMetricFilterState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloudwatchLogMetricFilterMod.LogMetricFilter = js.native
+  /**
+    * Returns true if the given object is an instance of LogMetricFilter.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logMetricFilter.LogMetricFilter */ scala.Boolean = js.native
 }
 

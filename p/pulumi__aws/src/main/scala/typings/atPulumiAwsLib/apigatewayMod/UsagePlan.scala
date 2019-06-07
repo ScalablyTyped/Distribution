@@ -45,5 +45,10 @@ object UsagePlan extends js.Object {
     state: atPulumiAwsLib.apigatewayUsagePlanMod.UsagePlanState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayUsagePlanMod.UsagePlan = js.native
+  /**
+    * Returns true if the given object is an instance of UsagePlan.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlan.UsagePlan */ scala.Boolean = js.native
 }
 

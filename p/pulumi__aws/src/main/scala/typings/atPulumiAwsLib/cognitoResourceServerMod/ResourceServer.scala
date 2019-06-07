@@ -61,5 +61,10 @@ object ResourceServer extends js.Object {
     state: atPulumiAwsLib.cognitoResourceServerMod.ResourceServerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cognitoResourceServerMod.ResourceServer = js.native
+  /**
+    * Returns true if the given object is an instance of ResourceServer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ scala.Boolean = js.native
 }
 

@@ -60,5 +60,10 @@ object S3BucketAssociation extends js.Object {
     state: atPulumiAwsLib.macieS3BucketAssociationMod.S3BucketAssociationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.macieS3BucketAssociationMod.S3BucketAssociation = js.native
+  /**
+    * Returns true if the given object is an instance of S3BucketAssociation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/s3BucketAssociation.S3BucketAssociation */ scala.Boolean = js.native
 }
 

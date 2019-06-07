@@ -107,6 +107,17 @@ object ec2transitgatewayNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  def getDirectConnectGatewayAttachment(
+    args: atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentArgs
+  ): js.Promise[
+    atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentResult
+  ] = js.native
+  def getDirectConnectGatewayAttachment(
+    args: atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[
+    atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentResult
+  ] = js.native
   def getRouteTable(): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] = js.native
   def getRouteTable(args: atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] = js.native
   def getRouteTable(
@@ -153,6 +164,11 @@ object ec2transitgatewayNs extends js.Object {
       state: atPulumiAwsLib.ec2transitgatewayRouteMod.RouteState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayRouteMod.Route = js.native
+    /**
+      * Returns true if the given object is an instance of Route.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/route.Route */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -178,6 +194,11 @@ object ec2transitgatewayNs extends js.Object {
       state: atPulumiAwsLib.ec2transitgatewayRouteTableMod.RouteTableState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayRouteTableMod.RouteTable = js.native
+    /**
+      * Returns true if the given object is an instance of RouteTable.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -203,6 +224,11 @@ object ec2transitgatewayNs extends js.Object {
       state: atPulumiAwsLib.ec2transitgatewayRouteTableAssociationMod.RouteTableAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayRouteTableAssociationMod.RouteTableAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of RouteTableAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTableAssociation.RouteTableAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -228,6 +254,11 @@ object ec2transitgatewayNs extends js.Object {
       state: atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagation = js.native
+    /**
+      * Returns true if the given object is an instance of RouteTablePropagation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTablePropagation.RouteTablePropagation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -253,6 +284,11 @@ object ec2transitgatewayNs extends js.Object {
       state: atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGatewayState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGateway = js.native
+    /**
+      * Returns true if the given object is an instance of TransitGateway.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/transitGateway.TransitGateway */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -278,6 +314,11 @@ object ec2transitgatewayNs extends js.Object {
       state: atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of VpcAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -303,6 +344,11 @@ object ec2transitgatewayNs extends js.Object {
       state: atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayVpcAttachmentAccepterMod.VpcAttachmentAccepter = js.native
+    /**
+      * Returns true if the given object is an instance of VpcAttachmentAccepter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachmentAccepter.VpcAttachmentAccepter */ scala.Boolean = js.native
   }
   
 }

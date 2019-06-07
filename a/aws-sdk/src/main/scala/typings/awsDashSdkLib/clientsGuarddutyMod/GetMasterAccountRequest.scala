@@ -9,12 +9,12 @@ trait GetMasterAccountRequest extends js.Object {
   /**
     * The unique ID of the detector of the GuardDuty member account.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
 }
 
 object GetMasterAccountRequest {
   @scala.inline
-  def apply(DetectorId: __string): GetMasterAccountRequest = {
+  def apply(DetectorId: DetectorId): GetMasterAccountRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId)
   
     __obj.asInstanceOf[GetMasterAccountRequest]

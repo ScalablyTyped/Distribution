@@ -44,5 +44,10 @@ object Resolver extends js.Object {
     state: atPulumiAwsLib.appsyncResolverMod.ResolverState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.appsyncResolverMod.Resolver = js.native
+  /**
+    * Returns true if the given object is an instance of Resolver.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/resolver.Resolver */ scala.Boolean = js.native
 }
 

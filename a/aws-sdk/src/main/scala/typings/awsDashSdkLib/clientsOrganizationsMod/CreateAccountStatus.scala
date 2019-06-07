@@ -23,7 +23,7 @@ trait CreateAccountStatus extends js.Object {
     */
   var FailureReason: js.UndefOr[CreateAccountFailureReason] = js.undefined
   /**
-    * 
+    * If the account was created successfully, the unique identifier (ID) of the new account in the AWS GovCloud (US) Region.
     */
   var GovCloudAccountId: js.UndefOr[AccountId] = js.undefined
   /**

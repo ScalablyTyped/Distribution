@@ -15,7 +15,7 @@ trait ListTargetsForPolicyRequest extends js.Object {
     */
   var NextToken: js.UndefOr[NextToken] = js.undefined
   /**
-    * The unique identifier (ID) of the policy for which you want to know its attachments. The regex pattern for a policy ID string requires "p-" followed by from 8 to 128 lower-case letters or digits.
+    * The unique identifier (ID) of the policy whose attachments you want to know. The regex pattern for a policy ID string requires "p-" followed by from 8 to 128 lower-case letters or digits.
     */
   var PolicyId: awsDashSdkLib.clientsOrganizationsMod.PolicyId
 }

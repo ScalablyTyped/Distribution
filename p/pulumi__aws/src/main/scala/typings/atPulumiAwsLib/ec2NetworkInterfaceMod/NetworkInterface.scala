@@ -78,5 +78,10 @@ object NetworkInterface extends js.Object {
     state: atPulumiAwsLib.ec2NetworkInterfaceMod.NetworkInterfaceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2NetworkInterfaceMod.NetworkInterface = js.native
+  /**
+    * Returns true if the given object is an instance of NetworkInterface.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterface.NetworkInterface */ scala.Boolean = js.native
 }
 

@@ -45,5 +45,10 @@ object Eip extends js.Object {
     state: atPulumiAwsLib.ec2EipMod.EipState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2EipMod.Eip = js.native
+  /**
+    * Returns true if the given object is an instance of Eip.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eip.Eip */ scala.Boolean = js.native
 }
 

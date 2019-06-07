@@ -74,6 +74,11 @@ object cloudfrontNs extends js.Object {
       state: atPulumiAwsLib.cloudfrontDistributionMod.DistributionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudfrontDistributionMod.Distribution = js.native
+    /**
+      * Returns true if the given object is an instance of Distribution.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/distribution.Distribution */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -99,6 +104,11 @@ object cloudfrontNs extends js.Object {
       state: atPulumiAwsLib.cloudfrontOriginAccessIdentityMod.OriginAccessIdentityState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudfrontOriginAccessIdentityMod.OriginAccessIdentity = js.native
+    /**
+      * Returns true if the given object is an instance of OriginAccessIdentity.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/originAccessIdentity.OriginAccessIdentity */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -124,6 +134,11 @@ object cloudfrontNs extends js.Object {
       state: atPulumiAwsLib.cloudfrontPublicKeyMod.PublicKeyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudfrontPublicKeyMod.PublicKey = js.native
+    /**
+      * Returns true if the given object is an instance of PublicKey.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/publicKey.PublicKey */ scala.Boolean = js.native
   }
   
 }

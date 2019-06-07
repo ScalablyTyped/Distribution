@@ -72,5 +72,10 @@ object EventDestination extends js.Object {
     state: atPulumiAwsLib.sesEventDestinationMod.EventDestinationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.sesEventDestinationMod.EventDestination = js.native
+  /**
+    * Returns true if the given object is an instance of EventDestination.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ scala.Boolean = js.native
 }
 

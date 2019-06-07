@@ -52,5 +52,10 @@ object InviteAccepter extends js.Object {
     state: atPulumiAwsLib.guarddutyInviteAccepterMod.InviteAccepterState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.guarddutyInviteAccepterMod.InviteAccepter = js.native
+  /**
+    * Returns true if the given object is an instance of InviteAccepter.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ scala.Boolean = js.native
 }
 

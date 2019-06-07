@@ -44,5 +44,10 @@ object BucketNotification extends js.Object {
     state: atPulumiAwsLib.s3BucketNotificationMod.BucketNotificationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.s3BucketNotificationMod.BucketNotification = js.native
+  /**
+    * Returns true if the given object is an instance of BucketNotification.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ scala.Boolean = js.native
 }
 

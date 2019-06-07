@@ -9,35 +9,35 @@ trait Finding extends js.Object {
   /**
     * AWS account ID where the activity occurred that prompted GuardDuty to generate a finding.
     */
-  var AccountId: __string
+  var AccountId: String
   /**
     * The ARN of a finding described by the action.
     */
-  var Arn: __string
+  var Arn: String
   /**
     * The confidence level of a finding.
     */
-  var Confidence: js.UndefOr[__double] = js.undefined
+  var Confidence: js.UndefOr[Double] = js.undefined
   /**
     * The time stamp at which a finding was generated.
     */
-  var CreatedAt: awsDashSdkLib.clientsGuarddutyMod.CreatedAt
+  var CreatedAt: String
   /**
     * The description of a finding.
     */
-  var Description: js.UndefOr[__string] = js.undefined
+  var Description: js.UndefOr[String] = js.undefined
   /**
     * The identifier that corresponds to a finding described by the action.
     */
-  var Id: __string
+  var Id: String
   /**
     * The AWS resource partition.
     */
-  var Partition: js.UndefOr[__string] = js.undefined
+  var Partition: js.UndefOr[String] = js.undefined
   /**
     * The AWS region where the activity occurred that prompted GuardDuty to generate a finding.
     */
-  var Region: __string
+  var Region: String
   /**
     * The AWS resource associated with the activity that prompted GuardDuty to generate a finding.
     */
@@ -45,7 +45,7 @@ trait Finding extends js.Object {
   /**
     * Findings' schema version.
     */
-  var SchemaVersion: __string
+  var SchemaVersion: String
   /**
     * Additional information assigned to the generated finding by GuardDuty.
     */
@@ -53,39 +53,39 @@ trait Finding extends js.Object {
   /**
     * The severity of a finding.
     */
-  var Severity: __double
+  var Severity: Double
   /**
     * The title of a finding.
     */
-  var Title: js.UndefOr[__string] = js.undefined
+  var Title: js.UndefOr[String] = js.undefined
   /**
     * The type of a finding described by the action.
     */
-  var Type: __string
+  var Type: FindingType
   /**
     * The time stamp at which a finding was last updated.
     */
-  var UpdatedAt: awsDashSdkLib.clientsGuarddutyMod.UpdatedAt
+  var UpdatedAt: String
 }
 
 object Finding {
   @scala.inline
   def apply(
-    AccountId: __string,
-    Arn: __string,
-    CreatedAt: CreatedAt,
-    Id: __string,
-    Region: __string,
+    AccountId: String,
+    Arn: String,
+    CreatedAt: String,
+    Id: String,
+    Region: String,
     Resource: Resource,
-    SchemaVersion: __string,
-    Severity: __double,
-    Type: __string,
-    UpdatedAt: UpdatedAt,
-    Confidence: js.UndefOr[__double] = js.undefined,
-    Description: __string = null,
-    Partition: __string = null,
+    SchemaVersion: String,
+    Severity: Double,
+    Type: FindingType,
+    UpdatedAt: String,
+    Confidence: js.UndefOr[Double] = js.undefined,
+    Description: String = null,
+    Partition: String = null,
     Service: Service = null,
-    Title: __string = null
+    Title: String = null
   ): Finding = {
     val __obj = js.Dynamic.literal(AccountId = AccountId, Arn = Arn, CreatedAt = CreatedAt, Id = Id, Region = Region, Resource = Resource, SchemaVersion = SchemaVersion, Severity = Severity, Type = Type, UpdatedAt = UpdatedAt)
     if (!js.isUndefined(Confidence)) __obj.updateDynamic("Confidence")(Confidence)

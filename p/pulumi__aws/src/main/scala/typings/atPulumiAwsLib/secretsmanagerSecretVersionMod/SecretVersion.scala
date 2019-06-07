@@ -68,5 +68,10 @@ object SecretVersion extends js.Object {
     state: atPulumiAwsLib.secretsmanagerSecretVersionMod.SecretVersionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.secretsmanagerSecretVersionMod.SecretVersion = js.native
+  /**
+    * Returns true if the given object is an instance of SecretVersion.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretVersion.SecretVersion */ scala.Boolean = js.native
 }
 

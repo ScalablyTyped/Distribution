@@ -47,7 +47,7 @@ trait Service extends js.Object {
     */
   var healthCheckGracePeriodSeconds: js.UndefOr[BoxedInteger] = js.undefined
   /**
-    * The launch type on which your service is running. For more information, see Amazon ECS Launch Types in the Amazon Elastic Container Service Developer Guide.
+    * The launch type on which your service is running. If no value is specified, it will default to EC2. Valid values include EC2 and FARGATE. For more information, see Amazon ECS Launch Types in the Amazon Elastic Container Service Developer Guide.
     */
   var launchType: js.UndefOr[LaunchType] = js.undefined
   /**
@@ -71,7 +71,7 @@ trait Service extends js.Object {
     */
   var placementStrategy: js.UndefOr[PlacementStrategies] = js.undefined
   /**
-    * The platform version on which your tasks in the service are running. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
+    * The platform version on which to run your service. A platform version is only specified for tasks using the Fargate launch type. If one is not specified, the LATEST platform version is used by default. For more information, see AWS Fargate Platform Versions in the Amazon Elastic Container Service Developer Guide.
     */
   var platformVersion: js.UndefOr[String] = js.undefined
   /**
@@ -91,11 +91,11 @@ trait Service extends js.Object {
     */
   var schedulingStrategy: js.UndefOr[SchedulingStrategy] = js.undefined
   /**
-    * The ARN that identifies the service. The ARN contains the arn:aws:ecs namespace, followed by the Region of the service, the AWS account ID of the service owner, the service namespace, and then the service name. For example, arn:aws:ecs:region:012345678910:service/my-service .
+    * The ARN that identifies the service. The ARN contains the arn:aws:ecs namespace, followed by the Region of the service, the AWS account ID of the service owner, the service namespace, and then the service name. For example, arn:aws:ecs:region:012345678910:service/my-service.
     */
   var serviceArn: js.UndefOr[String] = js.undefined
   /**
-    * The name of your service. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. Service names must be unique within a cluster, but you can have similarly named services in multiple clusters within a Region or across multiple Regions.
+    * The name of your service. Up to 255 letters (uppercase and lowercase), numbers, and hyphens are allowed. Service names must be unique within a cluster, but you can have similarly named services in multiple clusters within a Region or across multiple Regions.
     */
   var serviceName: js.UndefOr[String] = js.undefined
   /**

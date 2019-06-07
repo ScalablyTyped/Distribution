@@ -72,5 +72,10 @@ object Hsm extends js.Object {
     state: atPulumiAwsLib.cloudhsmv2HsmMod.HsmState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloudhsmv2HsmMod.Hsm = js.native
+  /**
+    * Returns true if the given object is an instance of Hsm.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ scala.Boolean = js.native
 }
 

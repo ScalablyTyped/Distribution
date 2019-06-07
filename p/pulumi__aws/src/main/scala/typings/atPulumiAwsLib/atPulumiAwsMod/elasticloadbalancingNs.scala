@@ -160,6 +160,11 @@ object elasticloadbalancingNs extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingAppCookieStickinessPolicyMod.AppCookieStickinessPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of AppCookieStickinessPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/appCookieStickinessPolicy.AppCookieStickinessPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -185,6 +190,11 @@ object elasticloadbalancingNs extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingAttachmentMod.AttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingAttachmentMod.Attachment = js.native
+    /**
+      * Returns true if the given object is an instance of Attachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/attachment.Attachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -210,6 +220,11 @@ object elasticloadbalancingNs extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingListenerPolicyMod.ListenerPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingListenerPolicyMod.ListenerPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of ListenerPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/listenerPolicy.ListenerPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -235,6 +250,11 @@ object elasticloadbalancingNs extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingLoadBalancerMod.LoadBalancerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingLoadBalancerMod.LoadBalancer = js.native
+    /**
+      * Returns true if the given object is an instance of LoadBalancer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancer.LoadBalancer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -260,6 +280,11 @@ object elasticloadbalancingNs extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingLoadBalancerBackendServerPolicyMod.LoadBalancerBackendServerPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingLoadBalancerBackendServerPolicyMod.LoadBalancerBackendServerPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of LoadBalancerBackendServerPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -285,6 +310,11 @@ object elasticloadbalancingNs extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingLoadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingLoadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of LoadBalancerCookieStickinessPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancerCookieStickinessPolicy.LoadBalancerCookieStickinessPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -310,6 +340,11 @@ object elasticloadbalancingNs extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingLoadBalancerPolicyMod.LoadBalancerPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingLoadBalancerPolicyMod.LoadBalancerPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of LoadBalancerPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancerPolicy.LoadBalancerPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -335,6 +370,11 @@ object elasticloadbalancingNs extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingSslNegotiationPolicyMod.SslNegotiationPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingSslNegotiationPolicyMod.SslNegotiationPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of SslNegotiationPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/sslNegotiationPolicy.SslNegotiationPolicy */ scala.Boolean = js.native
   }
   
 }

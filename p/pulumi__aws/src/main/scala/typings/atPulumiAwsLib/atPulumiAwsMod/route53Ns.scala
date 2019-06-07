@@ -170,6 +170,11 @@ object route53Ns extends js.Object {
       state: atPulumiAwsLib.route53DelegationSetMod.DelegationSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.route53DelegationSetMod.DelegationSet = js.native
+    /**
+      * Returns true if the given object is an instance of DelegationSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -195,6 +200,11 @@ object route53Ns extends js.Object {
       state: atPulumiAwsLib.route53HealthCheckMod.HealthCheckState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.route53HealthCheckMod.HealthCheck = js.native
+    /**
+      * Returns true if the given object is an instance of HealthCheck.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -220,6 +230,11 @@ object route53Ns extends js.Object {
       state: atPulumiAwsLib.route53QueryLogMod.QueryLogState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.route53QueryLogMod.QueryLog = js.native
+    /**
+      * Returns true if the given object is an instance of QueryLog.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -245,6 +260,11 @@ object route53Ns extends js.Object {
       state: atPulumiAwsLib.route53RecordMod.RecordState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.route53RecordMod.Record = js.native
+    /**
+      * Returns true if the given object is an instance of Record.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -270,6 +290,11 @@ object route53Ns extends js.Object {
       state: atPulumiAwsLib.route53ResolverEndpointMod.ResolverEndpointState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.route53ResolverEndpointMod.ResolverEndpoint = js.native
+    /**
+      * Returns true if the given object is an instance of ResolverEndpoint.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverEndpoint.ResolverEndpoint */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -295,6 +320,11 @@ object route53Ns extends js.Object {
       state: atPulumiAwsLib.route53ResolverRuleMod.ResolverRuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.route53ResolverRuleMod.ResolverRule = js.native
+    /**
+      * Returns true if the given object is an instance of ResolverRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -320,6 +350,11 @@ object route53Ns extends js.Object {
       state: atPulumiAwsLib.route53ResolverRuleAssociationMod.ResolverRuleAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.route53ResolverRuleAssociationMod.ResolverRuleAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of ResolverRuleAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -345,6 +380,11 @@ object route53Ns extends js.Object {
       state: atPulumiAwsLib.route53ZoneMod.ZoneState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.route53ZoneMod.Zone = js.native
+    /**
+      * Returns true if the given object is an instance of Zone.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -370,6 +410,11 @@ object route53Ns extends js.Object {
       state: atPulumiAwsLib.route53ZoneAssociationMod.ZoneAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.route53ZoneAssociationMod.ZoneAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of ZoneAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ scala.Boolean = js.native
   }
   
 }

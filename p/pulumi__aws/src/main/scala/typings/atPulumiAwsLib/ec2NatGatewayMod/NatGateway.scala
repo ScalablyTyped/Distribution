@@ -68,5 +68,10 @@ object NatGateway extends js.Object {
     state: atPulumiAwsLib.ec2NatGatewayMod.NatGatewayState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2NatGatewayMod.NatGateway = js.native
+  /**
+    * Returns true if the given object is an instance of NatGateway.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/natGateway.NatGateway */ scala.Boolean = js.native
 }
 

@@ -44,5 +44,10 @@ object ListenerRule extends js.Object {
     state: atPulumiAwsLib.applicationloadbalancingListenerRuleMod.ListenerRuleState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.applicationloadbalancingListenerRuleMod.ListenerRule = js.native
+  /**
+    * Returns true if the given object is an instance of ListenerRule.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/applicationloadbalancing/listenerRule.ListenerRule */ scala.Boolean = js.native
 }
 

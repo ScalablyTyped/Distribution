@@ -64,5 +64,10 @@ object AssessmentTemplate extends js.Object {
     state: atPulumiAwsLib.inspectorAssessmentTemplateMod.AssessmentTemplateState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.inspectorAssessmentTemplateMod.AssessmentTemplate = js.native
+  /**
+    * Returns true if the given object is an instance of AssessmentTemplate.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ scala.Boolean = js.native
 }
 

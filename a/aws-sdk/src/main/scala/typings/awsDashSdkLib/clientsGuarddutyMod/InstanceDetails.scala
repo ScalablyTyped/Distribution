@@ -9,32 +9,35 @@ trait InstanceDetails extends js.Object {
   /**
     * The availability zone of the EC2 instance.
     */
-  var AvailabilityZone: js.UndefOr[__string] = js.undefined
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
+  /**
+    * The profile information of the EC2 instance.
+    */
   var IamInstanceProfile: js.UndefOr[IamInstanceProfile] = js.undefined
   /**
     * The image description of the EC2 instance.
     */
-  var ImageDescription: js.UndefOr[__string] = js.undefined
+  var ImageDescription: js.UndefOr[String] = js.undefined
   /**
     * The image ID of the EC2 instance.
     */
-  var ImageId: js.UndefOr[__string] = js.undefined
+  var ImageId: js.UndefOr[String] = js.undefined
   /**
     * The ID of the EC2 instance.
     */
-  var InstanceId: js.UndefOr[__string] = js.undefined
+  var InstanceId: js.UndefOr[String] = js.undefined
   /**
     * The state of the EC2 instance.
     */
-  var InstanceState: js.UndefOr[__string] = js.undefined
+  var InstanceState: js.UndefOr[String] = js.undefined
   /**
     * The type of the EC2 instance.
     */
-  var InstanceType: js.UndefOr[__string] = js.undefined
+  var InstanceType: js.UndefOr[String] = js.undefined
   /**
     * The launch time of the EC2 instance.
     */
-  var LaunchTime: js.UndefOr[__string] = js.undefined
+  var LaunchTime: js.UndefOr[String] = js.undefined
   /**
     * The network interface information of the EC2 instance.
     */
@@ -42,7 +45,7 @@ trait InstanceDetails extends js.Object {
   /**
     * The platform of the EC2 instance.
     */
-  var Platform: js.UndefOr[__string] = js.undefined
+  var Platform: js.UndefOr[String] = js.undefined
   /**
     * The product code of the EC2 instance.
     */
@@ -56,16 +59,16 @@ trait InstanceDetails extends js.Object {
 object InstanceDetails {
   @scala.inline
   def apply(
-    AvailabilityZone: __string = null,
+    AvailabilityZone: String = null,
     IamInstanceProfile: IamInstanceProfile = null,
-    ImageDescription: __string = null,
-    ImageId: __string = null,
-    InstanceId: __string = null,
-    InstanceState: __string = null,
-    InstanceType: __string = null,
-    LaunchTime: __string = null,
+    ImageDescription: String = null,
+    ImageId: String = null,
+    InstanceId: String = null,
+    InstanceState: String = null,
+    InstanceType: String = null,
+    LaunchTime: String = null,
     NetworkInterfaces: NetworkInterfaces = null,
-    Platform: __string = null,
+    Platform: String = null,
     ProductCodes: ProductCodes = null,
     Tags: Tags = null
   ): InstanceDetails = {

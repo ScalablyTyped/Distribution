@@ -44,5 +44,10 @@ object Instance extends js.Object {
     state: atPulumiAwsLib.rdsInstanceMod.InstanceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.rdsInstanceMod.Instance = js.native
+  /**
+    * Returns true if the given object is an instance of Instance.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/instance.Instance */ scala.Boolean = js.native
 }
 

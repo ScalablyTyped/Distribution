@@ -44,5 +44,10 @@ object Pipeline extends js.Object {
     state: atPulumiAwsLib.elastictranscoderPipelineMod.PipelineState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.elastictranscoderPipelineMod.Pipeline = js.native
+  /**
+    * Returns true if the given object is an instance of Pipeline.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elastictranscoder/pipeline.Pipeline */ scala.Boolean = js.native
 }
 

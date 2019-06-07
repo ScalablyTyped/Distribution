@@ -44,5 +44,10 @@ object Crawler extends js.Object {
     state: atPulumiAwsLib.glueCrawlerMod.CrawlerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.glueCrawlerMod.Crawler = js.native
+  /**
+    * Returns true if the given object is an instance of Crawler.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/crawler.Crawler */ scala.Boolean = js.native
 }
 

@@ -64,6 +64,11 @@ object codecommitNs extends js.Object {
       state: atPulumiAwsLib.codecommitRepositoryMod.RepositoryState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.codecommitRepositoryMod.Repository = js.native
+    /**
+      * Returns true if the given object is an instance of Repository.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/repository.Repository */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -89,6 +94,11 @@ object codecommitNs extends js.Object {
       state: atPulumiAwsLib.codecommitTriggerMod.TriggerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.codecommitTriggerMod.Trigger = js.native
+    /**
+      * Returns true if the given object is an instance of Trigger.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ scala.Boolean = js.native
   }
   
 }

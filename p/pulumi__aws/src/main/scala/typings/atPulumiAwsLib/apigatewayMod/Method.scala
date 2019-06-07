@@ -44,5 +44,10 @@ object Method extends js.Object {
     state: atPulumiAwsLib.apigatewayMethodMod.MethodState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayMethodMod.Method = js.native
+  /**
+    * Returns true if the given object is an instance of Method.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/method.Method */ scala.Boolean = js.native
 }
 

@@ -26,6 +26,9 @@ object minioLibStrings {
   sealed trait data extends js.Object
   
   @js.native
+  sealed trait end extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -74,6 +77,8 @@ object minioLibStrings {
   def `cn-north-1`: `cn-north-1` = "cn-north-1".asInstanceOf[`cn-north-1`]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
+  def end: end = "end".asInstanceOf[end]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline

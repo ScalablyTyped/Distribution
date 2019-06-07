@@ -65,5 +65,10 @@ object Vault extends js.Object {
     state: atPulumiAwsLib.backupVaultMod.VaultState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.backupVaultMod.Vault = js.native
+  /**
+    * Returns true if the given object is an instance of Vault.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vault.Vault */ scala.Boolean = js.native
 }
 

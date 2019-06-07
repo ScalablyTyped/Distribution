@@ -60,5 +60,10 @@ object EventPermission extends js.Object {
     state: atPulumiAwsLib.cloudwatchEventPermissionMod.EventPermissionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloudwatchEventPermissionMod.EventPermission = js.native
+  /**
+    * Returns true if the given object is an instance of EventPermission.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ scala.Boolean = js.native
 }
 

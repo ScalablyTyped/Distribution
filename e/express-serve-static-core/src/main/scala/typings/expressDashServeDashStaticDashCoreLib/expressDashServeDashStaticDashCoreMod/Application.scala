@@ -215,13 +215,13 @@ trait Application
     */
   def init(): scala.Unit = js.native
   def listen(): nodeLib.httpMod.Server = js.native
-  def listen(callback: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
+  def listen(callback: js.Function1[/* repeated */ js.Any, scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(handle: js.Any): nodeLib.httpMod.Server = js.native
   def listen(handle: js.Any, listeningListener: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(path: java.lang.String): nodeLib.httpMod.Server = js.native
-  def listen(path: java.lang.String, callback: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
+  def listen(path: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(port: scala.Double): nodeLib.httpMod.Server = js.native
-  def listen(port: scala.Double, callback: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
+  def listen(port: scala.Double, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(port: scala.Double, hostname: java.lang.String): nodeLib.httpMod.Server = js.native
   /**
     * Listen for connections.
@@ -245,9 +245,13 @@ trait Application
     port: scala.Double,
     hostname: java.lang.String,
     backlog: scala.Double,
-    callback: js.Function0[scala.Unit]
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): nodeLib.httpMod.Server = js.native
-  def listen(port: scala.Double, hostname: java.lang.String, callback: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
+  def listen(
+    port: scala.Double,
+    hostname: java.lang.String,
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit]
+  ): nodeLib.httpMod.Server = js.native
   /* InferMemberOverrides */
   override def listenerCount(`type`: java.lang.String): scala.Double = js.native
   /* InferMemberOverrides */

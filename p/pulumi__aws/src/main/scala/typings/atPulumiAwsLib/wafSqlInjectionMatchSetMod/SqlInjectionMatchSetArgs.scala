@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SqlInjectionMatchSetArgs extends js.Object {
   /**
-    * The name or description of the SizeConstraintSet.
+    * The name or description of the SQL Injection Match Set.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

@@ -44,5 +44,10 @@ object Recorder extends js.Object {
     state: atPulumiAwsLib.cfgRecorderMod.RecorderState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cfgRecorderMod.Recorder = js.native
+  /**
+    * Returns true if the given object is an instance of Recorder.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorder.Recorder */ scala.Boolean = js.native
 }
 

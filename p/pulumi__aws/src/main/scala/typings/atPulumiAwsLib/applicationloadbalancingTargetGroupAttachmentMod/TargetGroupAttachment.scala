@@ -60,5 +60,10 @@ object TargetGroupAttachment extends js.Object {
     state: atPulumiAwsLib.applicationloadbalancingTargetGroupAttachmentMod.TargetGroupAttachmentState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.applicationloadbalancingTargetGroupAttachmentMod.TargetGroupAttachment = js.native
+  /**
+    * Returns true if the given object is an instance of TargetGroupAttachment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/applicationloadbalancing/targetGroupAttachment.TargetGroupAttachment */ scala.Boolean = js.native
 }
 

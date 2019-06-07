@@ -135,6 +135,11 @@ object elasticloadbalancingv2Ns extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingv2ListenerMod.ListenerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingv2ListenerMod.Listener = js.native
+    /**
+      * Returns true if the given object is an instance of Listener.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/listener.Listener */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -160,6 +165,11 @@ object elasticloadbalancingv2Ns extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingv2ListenerCertificateMod.ListenerCertificateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingv2ListenerCertificateMod.ListenerCertificate = js.native
+    /**
+      * Returns true if the given object is an instance of ListenerCertificate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/listenerCertificate.ListenerCertificate */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -185,6 +195,11 @@ object elasticloadbalancingv2Ns extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingv2ListenerRuleMod.ListenerRuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingv2ListenerRuleMod.ListenerRule = js.native
+    /**
+      * Returns true if the given object is an instance of ListenerRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/listenerRule.ListenerRule */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -210,6 +225,11 @@ object elasticloadbalancingv2Ns extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingv2LoadBalancerMod.LoadBalancerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingv2LoadBalancerMod.LoadBalancer = js.native
+    /**
+      * Returns true if the given object is an instance of LoadBalancer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/loadBalancer.LoadBalancer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -235,6 +255,11 @@ object elasticloadbalancingv2Ns extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingv2TargetGroupMod.TargetGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingv2TargetGroupMod.TargetGroup = js.native
+    /**
+      * Returns true if the given object is an instance of TargetGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/targetGroup.TargetGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -260,6 +285,11 @@ object elasticloadbalancingv2Ns extends js.Object {
       state: atPulumiAwsLib.elasticloadbalancingv2TargetGroupAttachmentMod.TargetGroupAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticloadbalancingv2TargetGroupAttachmentMod.TargetGroupAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of TargetGroupAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/targetGroupAttachment.TargetGroupAttachment */ scala.Boolean = js.native
   }
   
 }

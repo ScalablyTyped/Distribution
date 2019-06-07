@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdflib
 
-Typings are for version 0.17
+Typings are for version 0.20
 
 ## Library description:
 an RDF library for node.js. Suitable for client and server side.
@@ -35,10 +35,11 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for rdflib 0.17
+// Type definitions for rdflib 0.20
 // Project: http://github.com/linkeddata/rdflib.js
 // Definitions by: Cénotélie <https://github.com/cenotelie>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 3.0
 // Acknowledgements: This work has been financed by Logilab SA, FRANCE, logilab.fr
 /**
  * Class orders

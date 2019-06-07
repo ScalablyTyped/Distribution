@@ -89,6 +89,11 @@ object servicediscoveryNs extends js.Object {
       state: atPulumiAwsLib.servicediscoveryHttpNamespaceMod.HttpNamespaceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.servicediscoveryHttpNamespaceMod.HttpNamespace = js.native
+    /**
+      * Returns true if the given object is an instance of HttpNamespace.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/httpNamespace.HttpNamespace */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -114,6 +119,11 @@ object servicediscoveryNs extends js.Object {
       state: atPulumiAwsLib.servicediscoveryPrivateDnsNamespaceMod.PrivateDnsNamespaceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.servicediscoveryPrivateDnsNamespaceMod.PrivateDnsNamespace = js.native
+    /**
+      * Returns true if the given object is an instance of PrivateDnsNamespace.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/privateDnsNamespace.PrivateDnsNamespace */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -139,6 +149,11 @@ object servicediscoveryNs extends js.Object {
       state: atPulumiAwsLib.servicediscoveryPublicDnsNamespaceMod.PublicDnsNamespaceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.servicediscoveryPublicDnsNamespaceMod.PublicDnsNamespace = js.native
+    /**
+      * Returns true if the given object is an instance of PublicDnsNamespace.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/publicDnsNamespace.PublicDnsNamespace */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -164,6 +179,11 @@ object servicediscoveryNs extends js.Object {
       state: atPulumiAwsLib.servicediscoveryServiceMod.ServiceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.servicediscoveryServiceMod.Service = js.native
+    /**
+      * Returns true if the given object is an instance of Service.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/service.Service */ scala.Boolean = js.native
   }
   
 }

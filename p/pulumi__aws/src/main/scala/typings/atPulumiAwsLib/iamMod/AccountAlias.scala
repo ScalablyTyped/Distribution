@@ -44,5 +44,10 @@ object AccountAlias extends js.Object {
     state: atPulumiAwsLib.iamAccountAliasMod.AccountAliasState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamAccountAliasMod.AccountAlias = js.native
+  /**
+    * Returns true if the given object is an instance of AccountAlias.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ scala.Boolean = js.native
 }
 

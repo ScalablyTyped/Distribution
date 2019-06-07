@@ -53,5 +53,10 @@ object Project extends js.Object {
     state: atPulumiAwsLib.devicefarmProjectMod.ProjectState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.devicefarmProjectMod.Project = js.native
+  /**
+    * Returns true if the given object is an instance of Project.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/devicefarm/project.Project */ scala.Boolean = js.native
 }
 

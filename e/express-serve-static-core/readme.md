@@ -39,6 +39,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Kacper Polak <https://github.com/kacepe>
 //                 Satana Charuwichitratana <https://github.com/micksatana>
 //                 Sami Jaber <https://github.com/samijaber>
+//                 aereal <https://github.com/aereal>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 // This extracts the core definitions from express to prevent a circular dependency between express and serve-static

@@ -44,5 +44,10 @@ object RateBasedRule extends js.Object {
     state: atPulumiAwsLib.wafRateBasedRuleMod.RateBasedRuleState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafRateBasedRuleMod.RateBasedRule = js.native
+  /**
+    * Returns true if the given object is an instance of RateBasedRule.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rateBasedRule.RateBasedRule */ scala.Boolean = js.native
 }
 

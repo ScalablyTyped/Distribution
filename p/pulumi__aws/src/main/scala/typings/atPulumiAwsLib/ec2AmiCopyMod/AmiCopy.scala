@@ -124,5 +124,10 @@ object AmiCopy extends js.Object {
     state: atPulumiAwsLib.ec2AmiCopyMod.AmiCopyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2AmiCopyMod.AmiCopy = js.native
+  /**
+    * Returns true if the given object is an instance of AmiCopy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiCopy.AmiCopy */ scala.Boolean = js.native
 }
 

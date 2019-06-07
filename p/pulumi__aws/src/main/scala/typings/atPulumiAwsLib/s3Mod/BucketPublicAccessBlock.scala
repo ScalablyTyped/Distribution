@@ -44,5 +44,10 @@ object BucketPublicAccessBlock extends js.Object {
     state: atPulumiAwsLib.s3BucketPublicAccessBlockMod.BucketPublicAccessBlockState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.s3BucketPublicAccessBlockMod.BucketPublicAccessBlock = js.native
+  /**
+    * Returns true if the given object is an instance of BucketPublicAccessBlock.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPublicAccessBlock.BucketPublicAccessBlock */ scala.Boolean = js.native
 }
 

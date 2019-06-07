@@ -9,20 +9,20 @@ trait AcceptInvitationRequest extends js.Object {
   /**
     * The unique ID of the detector of the GuardDuty member account.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * This value is used to validate the master account to the member account.
     */
-  var InvitationId: awsDashSdkLib.clientsGuarddutyMod.InvitationId
+  var InvitationId: String
   /**
     * The account ID of the master GuardDuty account whose invitation you're accepting.
     */
-  var MasterId: awsDashSdkLib.clientsGuarddutyMod.MasterId
+  var MasterId: String
 }
 
 object AcceptInvitationRequest {
   @scala.inline
-  def apply(DetectorId: __string, InvitationId: InvitationId, MasterId: MasterId): AcceptInvitationRequest = {
+  def apply(DetectorId: DetectorId, InvitationId: String, MasterId: String): AcceptInvitationRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId, InvitationId = InvitationId, MasterId = MasterId)
   
     __obj.asInstanceOf[AcceptInvitationRequest]

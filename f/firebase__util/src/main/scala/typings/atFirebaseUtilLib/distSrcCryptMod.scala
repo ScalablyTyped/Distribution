@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/util/dist/src/crypt", JSImport.Namespace)
 @js.native
 object distSrcCryptMod extends js.Object {
-  def base64Decode(str: java.lang.String): java.lang.String = js.native
+  def base64Decode(str: java.lang.String): java.lang.String | scala.Null = js.native
   def base64Encode(str: java.lang.String): java.lang.String = js.native
   @js.native
   object base64 extends js.Object {
@@ -42,34 +42,34 @@ object distSrcCryptMod extends js.Object {
       * @type {Object}
       * @private
       */
-    var byteToCharMapWebSafe_ : js.Any = js.native
+    var byteToCharMapWebSafe_ : scala.Null = js.native
     /**
       * Maps bytes to characters.
       * @type {Object}
       * @private
       */
-    var byteToCharMap_ : js.Any = js.native
+    var byteToCharMap_ : scala.Null = js.native
     /**
       * Maps websafe characters to bytes.
       * @type {Object}
       * @private
       */
-    var charToByteMapWebSafe_ : js.Any = js.native
+    var charToByteMapWebSafe_ : scala.Null = js.native
     /**
       * Maps characters to bytes.
       * @type {Object}
       * @private
       */
-    var charToByteMap_ : js.Any = js.native
+    var charToByteMap_ : scala.Null = js.native
     /**
       * Base64-decode a string.
       *
-      * @param {string} input to decode.
-      * @param {boolean=} opt_webSafe True if we should use the
+      * @param input to decode.
+      * @param opt_webSafe True if we should use the
       *     alternative alphabet.
-      * @return {string} string representing the decoded value.
+      * @return string representing the decoded value.
       */
-    def decodeString(input: js.Any, opt_webSafe: js.Any): java.lang.String = js.native
+    def decodeString(input: java.lang.String, opt_webSafe: scala.Boolean): java.lang.String = js.native
     /**
       * Base64-decode a string.
       *
@@ -81,31 +81,34 @@ object distSrcCryptMod extends js.Object {
       * padding will be inferred.  If the group has one or two characters, it decodes
       * to one byte.  If the group has three characters, it decodes to two bytes.
       *
-      * @param {string} input Input to decode.
-      * @param {boolean=} opt_webSafe True if we should use the web-safe alphabet.
-      * @return {!Array<number>} bytes representing the decoded value.
+      * @param input Input to decode.
+      * @param opt_webSafe True if we should use the web-safe alphabet.
+      * @return bytes representing the decoded value.
       */
-    def decodeStringToByteArray(input: js.Any, opt_webSafe: js.Any): js.Array[_] = js.native
+    def decodeStringToByteArray(input: java.lang.String, opt_webSafe: scala.Boolean): js.Array[scala.Double] = js.native
+    def encodeByteArray(input: js.Array[scala.Double]): java.lang.String = js.native
+    def encodeByteArray(input: js.Array[scala.Double], opt_webSafe: scala.Boolean): java.lang.String = js.native
     /**
       * Base64-encode an array of bytes.
       *
-      * @param {Array<number>|Uint8Array} input An array of bytes (numbers with
+      * @param input An array of bytes (numbers with
       *     value in [0, 255]) to encode.
-      * @param {boolean=} opt_webSafe Boolean indicating we should use the
+      * @param opt_webSafe Boolean indicating we should use the
       *     alternative alphabet.
-      * @return {string} The base64 encoded string.
+      * @return The base64 encoded string.
       */
-    def encodeByteArray(input: js.Any): java.lang.String = js.native
-    def encodeByteArray(input: js.Any, opt_webSafe: js.Any): java.lang.String = js.native
+    def encodeByteArray(input: stdLib.Uint8Array): java.lang.String = js.native
+    def encodeByteArray(input: stdLib.Uint8Array, opt_webSafe: scala.Boolean): java.lang.String = js.native
     /**
       * Base64-encode a string.
       *
-      * @param {string} input A string to encode.
-      * @param {boolean=} opt_webSafe If true, we should use the
+      * @param input A string to encode.
+      * @param opt_webSafe If true, we should use the
       *     alternative alphabet.
-      * @return {string} The base64 encoded string.
+      * @return The base64 encoded string.
       */
-    def encodeString(input: js.Any, opt_webSafe: js.Any): js.Any = js.native
+    def encodeString(input: java.lang.String): java.lang.String = js.native
+    def encodeString(input: java.lang.String, opt_webSafe: scala.Boolean): java.lang.String = js.native
     /**
       * Lazy static initialization function. Called before
       * accessing any of the static map variables.

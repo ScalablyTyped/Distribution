@@ -13,12 +13,12 @@ trait StopMonitoringMembersRequest extends js.Object {
   /**
     * The unique ID of the detector of the GuardDuty account that you want to stop from monitor members' findings.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
 }
 
 object StopMonitoringMembersRequest {
   @scala.inline
-  def apply(AccountIds: AccountIds, DetectorId: __string): StopMonitoringMembersRequest = {
+  def apply(AccountIds: AccountIds, DetectorId: DetectorId): StopMonitoringMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds, DetectorId = DetectorId)
   
     __obj.asInstanceOf[StopMonitoringMembersRequest]

@@ -60,5 +60,10 @@ object BasePathMapping extends js.Object {
     state: atPulumiAwsLib.apigatewayBasePathMappingMod.BasePathMappingState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayBasePathMappingMod.BasePathMapping = js.native
+  /**
+    * Returns true if the given object is an instance of BasePathMapping.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/basePathMapping.BasePathMapping */ scala.Boolean = js.native
 }
 

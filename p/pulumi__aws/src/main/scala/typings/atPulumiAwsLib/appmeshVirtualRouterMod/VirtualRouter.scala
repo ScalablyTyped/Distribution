@@ -68,5 +68,10 @@ object VirtualRouter extends js.Object {
     state: atPulumiAwsLib.appmeshVirtualRouterMod.VirtualRouterState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.appmeshVirtualRouterMod.VirtualRouter = js.native
+  /**
+    * Returns true if the given object is an instance of VirtualRouter.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualRouter.VirtualRouter */ scala.Boolean = js.native
 }
 

@@ -80,5 +80,10 @@ object Volume extends js.Object {
     state: atPulumiAwsLib.ebsVolumeMod.VolumeState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ebsVolumeMod.Volume = js.native
+  /**
+    * Returns true if the given object is an instance of Volume.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ scala.Boolean = js.native
 }
 

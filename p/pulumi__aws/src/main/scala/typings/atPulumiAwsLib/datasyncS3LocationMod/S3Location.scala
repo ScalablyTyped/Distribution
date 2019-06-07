@@ -65,5 +65,10 @@ object S3Location extends js.Object {
     state: atPulumiAwsLib.datasyncS3LocationMod.S3LocationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.datasyncS3LocationMod.S3Location = js.native
+  /**
+    * Returns true if the given object is an instance of S3Location.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/s3Location.S3Location */ scala.Boolean = js.native
 }
 

@@ -64,5 +64,10 @@ object Plan extends js.Object {
     state: atPulumiAwsLib.backupPlanMod.PlanState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.backupPlanMod.Plan = js.native
+  /**
+    * Returns true if the given object is an instance of Plan.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/plan.Plan */ scala.Boolean = js.native
 }
 

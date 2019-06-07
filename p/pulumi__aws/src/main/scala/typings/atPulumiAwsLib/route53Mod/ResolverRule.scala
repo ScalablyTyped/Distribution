@@ -44,5 +44,10 @@ object ResolverRule extends js.Object {
     state: atPulumiAwsLib.route53ResolverRuleMod.ResolverRuleState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.route53ResolverRuleMod.ResolverRule = js.native
+  /**
+    * Returns true if the given object is an instance of ResolverRule.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ scala.Boolean = js.native
 }
 

@@ -9,7 +9,7 @@ trait SortCriteria extends js.Object {
   /**
     * Represents the finding attribute (for example, accountId) by which to sort findings.
     */
-  var AttributeName: js.UndefOr[__string] = js.undefined
+  var AttributeName: js.UndefOr[String] = js.undefined
   /**
     * Order by which the sorted findings are to be displayed.
     */
@@ -18,7 +18,7 @@ trait SortCriteria extends js.Object {
 
 object SortCriteria {
   @scala.inline
-  def apply(AttributeName: __string = null, OrderBy: OrderBy = null): SortCriteria = {
+  def apply(AttributeName: String = null, OrderBy: OrderBy = null): SortCriteria = {
     val __obj = js.Dynamic.literal()
     if (AttributeName != null) __obj.updateDynamic("AttributeName")(AttributeName)
     if (OrderBy != null) __obj.updateDynamic("OrderBy")(OrderBy.asInstanceOf[js.Any])

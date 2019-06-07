@@ -84,5 +84,10 @@ object Endpoint extends js.Object {
     state: atPulumiAwsLib.ec2clientvpnEndpointMod.EndpointState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2clientvpnEndpointMod.Endpoint = js.native
+  /**
+    * Returns true if the given object is an instance of Endpoint.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/endpoint.Endpoint */ scala.Boolean = js.native
 }
 

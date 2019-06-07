@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("qiniu", "zone")
 @js.native
 object zoneNs extends js.Object {
+  //Southeast Asia
+  val Zone_as0: qiniuLib.qiniuMod.confNs.Zone = js.native
   //beimei
   val Zone_na0: qiniuLib.qiniuMod.confNs.Zone = js.native
   //huadong

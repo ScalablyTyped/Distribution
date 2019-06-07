@@ -9,14 +9,14 @@ trait GetFindingsStatisticsResponse extends js.Object {
   /**
     * Finding statistics object.
     */
-  var FindingStatistics: js.UndefOr[FindingStatistics] = js.undefined
+  var FindingStatistics: awsDashSdkLib.clientsGuarddutyMod.FindingStatistics
 }
 
 object GetFindingsStatisticsResponse {
   @scala.inline
-  def apply(FindingStatistics: FindingStatistics = null): GetFindingsStatisticsResponse = {
-    val __obj = js.Dynamic.literal()
-    if (FindingStatistics != null) __obj.updateDynamic("FindingStatistics")(FindingStatistics)
+  def apply(FindingStatistics: FindingStatistics): GetFindingsStatisticsResponse = {
+    val __obj = js.Dynamic.literal(FindingStatistics = FindingStatistics)
+  
     __obj.asInstanceOf[GetFindingsStatisticsResponse]
   }
 }

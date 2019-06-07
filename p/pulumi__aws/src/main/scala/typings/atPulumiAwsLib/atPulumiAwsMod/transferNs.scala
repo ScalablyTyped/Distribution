@@ -79,6 +79,11 @@ object transferNs extends js.Object {
       state: atPulumiAwsLib.transferServerMod.ServerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.transferServerMod.Server = js.native
+    /**
+      * Returns true if the given object is an instance of Server.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/server.Server */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -104,6 +109,11 @@ object transferNs extends js.Object {
       state: atPulumiAwsLib.transferSshKeyMod.SshKeyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.transferSshKeyMod.SshKey = js.native
+    /**
+      * Returns true if the given object is an instance of SshKey.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/sshKey.SshKey */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -129,6 +139,11 @@ object transferNs extends js.Object {
       state: atPulumiAwsLib.transferUserMod.UserState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.transferUserMod.User = js.native
+    /**
+      * Returns true if the given object is an instance of User.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/user.User */ scala.Boolean = js.native
   }
   
 }

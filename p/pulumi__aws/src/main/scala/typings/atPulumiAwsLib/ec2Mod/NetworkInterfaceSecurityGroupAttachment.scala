@@ -44,5 +44,10 @@ object NetworkInterfaceSecurityGroupAttachment extends js.Object {
     state: atPulumiAwsLib.ec2NetworkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachmentState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2NetworkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment = js.native
+  /**
+    * Returns true if the given object is an instance of NetworkInterfaceSecurityGroupAttachment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ scala.Boolean = js.native
 }
 

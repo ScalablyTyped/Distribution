@@ -19,7 +19,7 @@ trait RegisterTaskDefinitionRequest extends js.Object {
     */
   var executionRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * You must specify a family for a task definition, which allows you to track multiple versions of the same task definition. The family is used as a name for your task definition. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
+    * You must specify a family for a task definition, which allows you to track multiple versions of the same task definition. The family is used as a name for your task definition. Up to 255 letters (uppercase and lowercase), numbers, and hyphens are allowed.
     */
   var family: String
   /**

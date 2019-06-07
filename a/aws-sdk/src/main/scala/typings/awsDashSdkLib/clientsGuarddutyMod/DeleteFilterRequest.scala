@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait DeleteFilterRequest extends js.Object {
   /**
-    * The unique ID that specifies the detector where you want to delete a filter.
+    * The unique ID of the detector the filter is associated with.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
-    * The name of the filter.
+    * The name of the filter you want to delete.
     */
-  var FilterName: __string
+  var FilterName: String
 }
 
 object DeleteFilterRequest {
   @scala.inline
-  def apply(DetectorId: __string, FilterName: __string): DeleteFilterRequest = {
+  def apply(DetectorId: DetectorId, FilterName: String): DeleteFilterRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId, FilterName = FilterName)
   
     __obj.asInstanceOf[DeleteFilterRequest]

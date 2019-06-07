@@ -74,5 +74,10 @@ object LinkAggregationGroup extends js.Object {
     state: atPulumiAwsLib.directconnectLinkAggregationGroupMod.LinkAggregationGroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.directconnectLinkAggregationGroupMod.LinkAggregationGroup = js.native
+  /**
+    * Returns true if the given object is an instance of LinkAggregationGroup.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ scala.Boolean = js.native
 }
 

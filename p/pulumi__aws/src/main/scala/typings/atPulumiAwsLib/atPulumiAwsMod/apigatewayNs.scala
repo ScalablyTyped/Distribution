@@ -378,6 +378,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayAccountMod.AccountState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayAccountMod.Account = js.native
+    /**
+      * Returns true if the given object is an instance of Account.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/account.Account */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -403,6 +408,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayApiKeyMod.ApiKeyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayApiKeyMod.ApiKey = js.native
+    /**
+      * Returns true if the given object is an instance of ApiKey.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/apiKey.ApiKey */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -428,6 +438,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayAuthorizerMod.AuthorizerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayAuthorizerMod.Authorizer = js.native
+    /**
+      * Returns true if the given object is an instance of Authorizer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/authorizer.Authorizer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -453,6 +468,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayBasePathMappingMod.BasePathMappingState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayBasePathMappingMod.BasePathMapping = js.native
+    /**
+      * Returns true if the given object is an instance of BasePathMapping.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/basePathMapping.BasePathMapping */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -478,6 +498,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayClientCertificateMod.ClientCertificateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayClientCertificateMod.ClientCertificate = js.native
+    /**
+      * Returns true if the given object is an instance of ClientCertificate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/clientCertificate.ClientCertificate */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -503,6 +528,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayDeploymentMod.DeploymentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayDeploymentMod.Deployment = js.native
+    /**
+      * Returns true if the given object is an instance of Deployment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/deployment.Deployment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -528,6 +558,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayDocumentationPartMod.DocumentationPartState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayDocumentationPartMod.DocumentationPart = js.native
+    /**
+      * Returns true if the given object is an instance of DocumentationPart.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationPart.DocumentationPart */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -553,6 +588,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayDocumentationVersionMod.DocumentationVersionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayDocumentationVersionMod.DocumentationVersion = js.native
+    /**
+      * Returns true if the given object is an instance of DocumentationVersion.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationVersion.DocumentationVersion */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -578,6 +618,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayDomainNameMod.DomainNameState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayDomainNameMod.DomainName = js.native
+    /**
+      * Returns true if the given object is an instance of DomainName.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/domainName.DomainName */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -603,6 +648,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayIntegrationMod.IntegrationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayIntegrationMod.Integration = js.native
+    /**
+      * Returns true if the given object is an instance of Integration.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/integration.Integration */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -628,6 +678,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayIntegrationResponseMod.IntegrationResponseState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayIntegrationResponseMod.IntegrationResponse = js.native
+    /**
+      * Returns true if the given object is an instance of IntegrationResponse.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/integrationResponse.IntegrationResponse */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -653,6 +708,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayMethodMod.MethodState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayMethodMod.Method = js.native
+    /**
+      * Returns true if the given object is an instance of Method.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/method.Method */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -678,6 +738,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayMethodResponseMod.MethodResponseState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayMethodResponseMod.MethodResponse = js.native
+    /**
+      * Returns true if the given object is an instance of MethodResponse.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodResponse.MethodResponse */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -703,6 +768,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayMethodSettingsMod.MethodSettingsState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayMethodSettingsMod.MethodSettings = js.native
+    /**
+      * Returns true if the given object is an instance of MethodSettings.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodSettings.MethodSettings */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -728,6 +798,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayModelMod.ModelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayModelMod.Model = js.native
+    /**
+      * Returns true if the given object is an instance of Model.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/model.Model */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -753,6 +828,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayRequestValidatorMod.RequestValidatorState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayRequestValidatorMod.RequestValidator = js.native
+    /**
+      * Returns true if the given object is an instance of RequestValidator.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/requestValidator.RequestValidator */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -778,6 +858,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayResourceMod.ResourceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayResourceMod.Resource = js.native
+    /**
+      * Returns true if the given object is an instance of Resource.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/resource.Resource */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -803,6 +888,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayResponseMod.ResponseState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayResponseMod.Response = js.native
+    /**
+      * Returns true if the given object is an instance of Response.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/response.Response */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -828,6 +918,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayRestApiMod.RestApiState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayRestApiMod.RestApi = js.native
+    /**
+      * Returns true if the given object is an instance of RestApi.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApi.RestApi */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -853,6 +948,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayStageMod.StageState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayStageMod.Stage = js.native
+    /**
+      * Returns true if the given object is an instance of Stage.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/stage.Stage */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -878,6 +978,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayUsagePlanMod.UsagePlanState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayUsagePlanMod.UsagePlan = js.native
+    /**
+      * Returns true if the given object is an instance of UsagePlan.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlan.UsagePlan */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -903,6 +1008,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayUsagePlanKeyMod.UsagePlanKeyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayUsagePlanKeyMod.UsagePlanKey = js.native
+    /**
+      * Returns true if the given object is an instance of UsagePlanKey.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -928,6 +1038,11 @@ object apigatewayNs extends js.Object {
       state: atPulumiAwsLib.apigatewayVpcLinkMod.VpcLinkState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.apigatewayVpcLinkMod.VpcLink = js.native
+    /**
+      * Returns true if the given object is an instance of VpcLink.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/vpcLink.VpcLink */ scala.Boolean = js.native
   }
   
 }

@@ -84,5 +84,10 @@ object GatewayAssociation extends js.Object {
     state: atPulumiAwsLib.directconnectGatewayAssociationMod.GatewayAssociationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.directconnectGatewayAssociationMod.GatewayAssociation = js.native
+  /**
+    * Returns true if the given object is an instance of GatewayAssociation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ scala.Boolean = js.native
 }
 

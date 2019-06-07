@@ -9,11 +9,11 @@ trait UpdateDetectorRequest extends js.Object {
   /**
     * The unique ID of the detector that you want to update.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * Updated boolean value for the detector that specifies whether the detector is enabled.
     */
-  var Enable: js.UndefOr[Enable] = js.undefined
+  var Enable: js.UndefOr[Boolean] = js.undefined
   /**
     * A enum value that specifies how frequently customer got Finding updates published.
     */
@@ -23,8 +23,8 @@ trait UpdateDetectorRequest extends js.Object {
 object UpdateDetectorRequest {
   @scala.inline
   def apply(
-    DetectorId: __string,
-    Enable: js.UndefOr[Enable] = js.undefined,
+    DetectorId: DetectorId,
+    Enable: js.UndefOr[Boolean] = js.undefined,
     FindingPublishingFrequency: FindingPublishingFrequency = null
   ): UpdateDetectorRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId)

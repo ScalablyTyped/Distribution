@@ -9,7 +9,7 @@ trait GetFindingsStatisticsRequest extends js.Object {
   /**
     * The ID of the detector that specifies the GuardDuty service whose findings' statistics you want to retrieve.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * Represents the criteria used for querying findings.
     */
@@ -23,7 +23,7 @@ trait GetFindingsStatisticsRequest extends js.Object {
 object GetFindingsStatisticsRequest {
   @scala.inline
   def apply(
-    DetectorId: __string,
+    DetectorId: DetectorId,
     FindingStatisticTypes: FindingStatisticTypes,
     FindingCriteria: FindingCriteria = null
   ): GetFindingsStatisticsRequest = {

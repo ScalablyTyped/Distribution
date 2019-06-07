@@ -72,5 +72,10 @@ object Task extends js.Object {
     state: atPulumiAwsLib.datasyncTaskMod.TaskState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.datasyncTaskMod.Task = js.native
+  /**
+    * Returns true if the given object is an instance of Task.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ scala.Boolean = js.native
 }
 

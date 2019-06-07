@@ -80,5 +80,10 @@ object GraphQLApi extends js.Object {
     state: atPulumiAwsLib.appsyncGraphQLApiMod.GraphQLApiState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.appsyncGraphQLApiMod.GraphQLApi = js.native
+  /**
+    * Returns true if the given object is an instance of GraphQLApi.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/graphQLApi.GraphQLApi */ scala.Boolean = js.native
 }
 

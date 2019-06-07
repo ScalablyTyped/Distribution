@@ -80,5 +80,10 @@ object Activation extends js.Object {
     state: atPulumiAwsLib.ssmActivationMod.ActivationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ssmActivationMod.Activation = js.native
+  /**
+    * Returns true if the given object is an instance of Activation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/activation.Activation */ scala.Boolean = js.native
 }
 

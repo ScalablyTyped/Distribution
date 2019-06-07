@@ -21,7 +21,7 @@ trait RemoteIpDetails extends js.Object {
   /**
     * IPV4 remote address of the connection.
     */
-  var IpAddressV4: js.UndefOr[__string] = js.undefined
+  var IpAddressV4: js.UndefOr[String] = js.undefined
   /**
     * ISP Organization information of the remote IP address.
     */
@@ -34,7 +34,7 @@ object RemoteIpDetails {
     City: City = null,
     Country: Country = null,
     GeoLocation: GeoLocation = null,
-    IpAddressV4: __string = null,
+    IpAddressV4: String = null,
     Organization: Organization = null
   ): RemoteIpDetails = {
     val __obj = js.Dynamic.literal()

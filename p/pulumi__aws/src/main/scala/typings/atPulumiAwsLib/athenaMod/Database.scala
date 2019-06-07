@@ -44,5 +44,10 @@ object Database extends js.Object {
     state: atPulumiAwsLib.athenaDatabaseMod.DatabaseState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.athenaDatabaseMod.Database = js.native
+  /**
+    * Returns true if the given object is an instance of Database.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/database.Database */ scala.Boolean = js.native
 }
 

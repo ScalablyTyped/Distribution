@@ -60,5 +60,10 @@ object Ciphertext extends js.Object {
     state: atPulumiAwsLib.kmsCiphertextMod.CiphertextState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.kmsCiphertextMod.Ciphertext = js.native
+  /**
+    * Returns true if the given object is an instance of Ciphertext.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/ciphertext.Ciphertext */ scala.Boolean = js.native
 }
 

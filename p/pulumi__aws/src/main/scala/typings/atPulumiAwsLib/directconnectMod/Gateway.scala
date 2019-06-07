@@ -44,5 +44,10 @@ object Gateway extends js.Object {
     state: atPulumiAwsLib.directconnectGatewayMod.GatewayState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.directconnectGatewayMod.Gateway = js.native
+  /**
+    * Returns true if the given object is an instance of Gateway.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gateway.Gateway */ scala.Boolean = js.native
 }
 

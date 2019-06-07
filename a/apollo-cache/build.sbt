@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-cache"
-version := "1.3.1-bbf966"
+version := "1.3.2-bbf966"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

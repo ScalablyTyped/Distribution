@@ -100,5 +100,10 @@ object EventRule extends js.Object {
     state: atPulumiAwsLib.cloudwatchEventRuleMod.EventRuleState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloudwatchEventRuleMod.EventRule = js.native
+  /**
+    * Returns true if the given object is an instance of EventRule.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventRule.EventRule */ scala.Boolean = js.native
 }
 

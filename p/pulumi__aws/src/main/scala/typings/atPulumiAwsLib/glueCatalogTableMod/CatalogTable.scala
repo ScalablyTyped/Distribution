@@ -92,5 +92,10 @@ object CatalogTable extends js.Object {
     state: atPulumiAwsLib.glueCatalogTableMod.CatalogTableState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.glueCatalogTableMod.CatalogTable = js.native
+  /**
+    * Returns true if the given object is an instance of CatalogTable.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogTable.CatalogTable */ scala.Boolean = js.native
 }
 

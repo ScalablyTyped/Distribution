@@ -71,5 +71,10 @@ object Account extends js.Object {
     state: atPulumiAwsLib.organizationsAccountMod.AccountState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.organizationsAccountMod.Account = js.native
+  /**
+    * Returns true if the given object is an instance of Account.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/account.Account */ scala.Boolean = js.native
 }
 

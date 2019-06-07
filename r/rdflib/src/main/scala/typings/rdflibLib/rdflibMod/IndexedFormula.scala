@@ -18,6 +18,14 @@ class IndexedFormula protected () extends Formula {
     */
   var length: scala.Double = js.native
   /**
+    * Dictionary of namespace prefixes
+    */
+  var namespaces: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+  /**
+    * An UpdateManager initialised to this store
+    */
+  var updater: js.UndefOr[UpdateManager] = js.native
+  /**
     * Adds all the statements to this formula
     * @param statements A collection of statements
     */
@@ -136,6 +144,10 @@ class IndexedFormula protected () extends Formula {
     * @param y Another named node
     */
   def sameThings(x: NamedNode, y: NamedNode): scala.Boolean = js.native
+  def statementsMatching(): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: Node): js.Array[Statement] = js.native
   /**
     * Gets the statements matching the specified pattern
     * @param subj The subject
@@ -144,7 +156,34 @@ class IndexedFormula protected () extends Formula {
     * @param why The graph that contains the statement
     * @param justOne Whether to only get one statement
     */
+  def statementsMatching(subj: Node, pred: Node, obj: Node, why: Node): js.Array[Statement] = js.native
   def statementsMatching(subj: Node, pred: Node, obj: Node, why: Node, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: Node, why: scala.Null, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: scala.Null, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: scala.Null, why: Node, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: Node, obj: scala.Null, why: scala.Null, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: scala.Null, obj: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: scala.Null, obj: Node, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: scala.Null, obj: Node, why: Node, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: scala.Null, obj: Node, why: scala.Null, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: scala.Null, obj: scala.Null, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: scala.Null, obj: scala.Null, why: Node, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: Node, pred: scala.Null, obj: scala.Null, why: scala.Null, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: Node, obj: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: Node, obj: Node, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: Node, obj: Node, why: Node, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: Node, obj: Node, why: scala.Null, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: Node, obj: scala.Null, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: Node, obj: scala.Null, why: Node, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: Node, obj: scala.Null, why: scala.Null, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: scala.Null, obj: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: scala.Null, obj: Node, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: scala.Null, obj: Node, why: Node, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: scala.Null, obj: Node, why: scala.Null, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: scala.Null, obj: scala.Null, why: Node): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: scala.Null, obj: scala.Null, why: Node, justOne: scala.Boolean): js.Array[Statement] = js.native
+  def statementsMatching(subj: scala.Null, pred: scala.Null, obj: scala.Null, why: scala.Null, justOne: scala.Boolean): js.Array[Statement] = js.native
   /**
     * A list of all the URIs by which this thing is known
     * @param term

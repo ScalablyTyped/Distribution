@@ -113,5 +113,10 @@ object NodejsAppLayer extends js.Object {
     state: atPulumiAwsLib.opsworksNodejsAppLayerMod.NodejsAppLayerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.opsworksNodejsAppLayerMod.NodejsAppLayer = js.native
+  /**
+    * Returns true if the given object is an instance of NodejsAppLayer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/nodejsAppLayer.NodejsAppLayer */ scala.Boolean = js.native
 }
 

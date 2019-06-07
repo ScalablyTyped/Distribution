@@ -73,6 +73,11 @@ object appautoscalingNs extends js.Object {
       state: atPulumiAwsLib.appautoscalingPolicyMod.PolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appautoscalingPolicyMod.Policy = js.native
+    /**
+      * Returns true if the given object is an instance of Policy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/policy.Policy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -98,6 +103,11 @@ object appautoscalingNs extends js.Object {
       state: atPulumiAwsLib.appautoscalingScheduledActionMod.ScheduledActionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appautoscalingScheduledActionMod.ScheduledAction = js.native
+    /**
+      * Returns true if the given object is an instance of ScheduledAction.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/scheduledAction.ScheduledAction */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -123,6 +133,11 @@ object appautoscalingNs extends js.Object {
       state: atPulumiAwsLib.appautoscalingTargetMod.TargetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appautoscalingTargetMod.Target = js.native
+    /**
+      * Returns true if the given object is an instance of Target.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ scala.Boolean = js.native
   }
   
 }

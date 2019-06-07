@@ -44,5 +44,10 @@ object ResourceAssociation extends js.Object {
     state: atPulumiAwsLib.ramResourceAssociationMod.ResourceAssociationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ramResourceAssociationMod.ResourceAssociation = js.native
+  /**
+    * Returns true if the given object is an instance of ResourceAssociation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ scala.Boolean = js.native
 }
 

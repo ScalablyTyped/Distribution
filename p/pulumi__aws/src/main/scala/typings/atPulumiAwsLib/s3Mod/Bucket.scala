@@ -45,5 +45,10 @@ object Bucket extends js.Object {
     state: atPulumiAwsLib.s3BucketMod.BucketState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.s3S3MixinsMod.s3BucketMod.Bucket = js.native
+  /**
+    * Returns true if the given object is an instance of Bucket.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/s3Mixins.@pulumi/aws/s3/bucket.Bucket */ scala.Boolean = js.native
 }
 

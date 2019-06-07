@@ -61,5 +61,10 @@ object VpnGateway extends js.Object {
     state: atPulumiAwsLib.ec2VpnGatewayMod.VpnGatewayState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2VpnGatewayMod.VpnGateway = js.native
+  /**
+    * Returns true if the given object is an instance of VpnGateway.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGateway.VpnGateway */ scala.Boolean = js.native
 }
 

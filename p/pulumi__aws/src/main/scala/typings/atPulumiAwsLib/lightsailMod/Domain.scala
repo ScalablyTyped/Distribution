@@ -44,5 +44,10 @@ object Domain extends js.Object {
     state: atPulumiAwsLib.lightsailDomainMod.DomainState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.lightsailDomainMod.Domain = js.native
+  /**
+    * Returns true if the given object is an instance of Domain.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/domain.Domain */ scala.Boolean = js.native
 }
 

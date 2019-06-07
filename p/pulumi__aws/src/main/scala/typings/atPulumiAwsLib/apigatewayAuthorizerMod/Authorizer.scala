@@ -90,5 +90,10 @@ object Authorizer extends js.Object {
     state: atPulumiAwsLib.apigatewayAuthorizerMod.AuthorizerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayAuthorizerMod.Authorizer = js.native
+  /**
+    * Returns true if the given object is an instance of Authorizer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/authorizer.Authorizer */ scala.Boolean = js.native
 }
 

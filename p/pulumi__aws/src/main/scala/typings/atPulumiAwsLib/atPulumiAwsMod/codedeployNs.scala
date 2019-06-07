@@ -74,6 +74,11 @@ object codedeployNs extends js.Object {
       state: atPulumiAwsLib.codedeployApplicationMod.ApplicationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.codedeployApplicationMod.Application = js.native
+    /**
+      * Returns true if the given object is an instance of Application.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/application.Application */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -99,6 +104,11 @@ object codedeployNs extends js.Object {
       state: atPulumiAwsLib.codedeployDeploymentConfigMod.DeploymentConfigState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.codedeployDeploymentConfigMod.DeploymentConfig = js.native
+    /**
+      * Returns true if the given object is an instance of DeploymentConfig.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentConfig.DeploymentConfig */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -124,6 +134,11 @@ object codedeployNs extends js.Object {
       state: atPulumiAwsLib.codedeployDeploymentGroupMod.DeploymentGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.codedeployDeploymentGroupMod.DeploymentGroup = js.native
+    /**
+      * Returns true if the given object is an instance of DeploymentGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentGroup.DeploymentGroup */ scala.Boolean = js.native
   }
   
 }

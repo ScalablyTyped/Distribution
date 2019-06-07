@@ -47,12 +47,8 @@ trait User extends UserInfo {
   def getIdTokenResult(): js.Promise[firebaseLib.firebaseMod.authNs.IdTokenResult] = js.native
   def getIdTokenResult(forceRefresh: scala.Boolean): js.Promise[firebaseLib.firebaseMod.authNs.IdTokenResult] = js.native
   /**
-    * @deprecated
     * Links the user account with the given credentials and returns any available
     * additional user information, such as user name.
-    *
-    * This method is deprecated. Use
-    * {@link firebase.User.linkWithCredential} instead.
     *
     * <h4>Error Codes</h4>
     * <dl>
@@ -108,6 +104,9 @@ trait User extends UserInfo {
     *     {@link firebase.auth.PhoneAuthProvider.credential}  and the verification
     *     ID of the credential is not valid.</dd>
     * </dl>
+    *
+    * @deprecated  This method is deprecated. Use
+    * {@link firebase.User.linkWithCredential} instead.
     *
     * @param credential The auth credential.
     */
@@ -336,14 +335,10 @@ trait User extends UserInfo {
     */
   def linkWithRedirect(provider: firebaseLib.firebaseMod.authNs.AuthProvider): js.Promise[scala.Unit] = js.native
   /**
-    * @deprecated
     * Re-authenticates a user using a fresh credential, and returns any available
     * additional user information, such as user name. Use before operations
     * such as {@link firebase.User.updatePassword} that require tokens from recent
     * sign-in attempts.
-    *
-    * This method is deprecated. Use
-    * {@link firebase.User.reauthenticateWithCredential} instead.
     *
     * <h4>Error Codes</h4>
     * <dl>
@@ -373,6 +368,10 @@ trait User extends UserInfo {
     *     {@link firebase.auth.PhoneAuthProvider.credential}  and the verification
     *     ID of the credential is not valid.</dd>
     * </dl>
+    *
+    * @deprecated
+    * This method is deprecated. Use
+    * {@link firebase.User.reauthenticateWithCredential} instead.
     *
     * @param credential
     */

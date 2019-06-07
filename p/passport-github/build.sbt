@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "passport-github"
-version := "1.1-dt-20190426Z-a2c44d"
+version := "1.1-dt-20190426Z-0a99be"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-cc8509",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-a0bc27",
-  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-d1c3bf",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190524Z-712af1",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-51a501",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-0a8905",
+  "org.scalablytyped" %%% "express" % "4.17-dt-20190604Z-e17ce1",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-1f4573",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-49fefe",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190605Z-895d8c",
-  "org.scalablytyped" %%% "oauth" % "0.9-dt-20181015Z-7ac0f3",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20190524Z-ea524e",
-  "org.scalablytyped" %%% "passport-oauth2" % "1.4-dt-20181204Z-f99de4",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
+  "org.scalablytyped" %%% "oauth" % "0.9-dt-20181015Z-5f8040",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20190524Z-3600cb",
+  "org.scalablytyped" %%% "passport-oauth2" % "1.4-dt-20181204Z-ea5692",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-374f35",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-ed9c04",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-3a476c",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

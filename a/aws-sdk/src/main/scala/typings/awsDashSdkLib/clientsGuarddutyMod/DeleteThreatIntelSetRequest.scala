@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait DeleteThreatIntelSetRequest extends js.Object {
   /**
-    * The detectorID that specifies the GuardDuty service whose ThreatIntelSet you want to delete.
+    * The unique ID of the detector the threatIntelSet is associated with.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
-    * The unique ID that specifies the ThreatIntelSet that you want to delete.
+    * The unique ID of the threatIntelSet you want to delete.
     */
-  var ThreatIntelSetId: __string
+  var ThreatIntelSetId: String
 }
 
 object DeleteThreatIntelSetRequest {
   @scala.inline
-  def apply(DetectorId: __string, ThreatIntelSetId: __string): DeleteThreatIntelSetRequest = {
+  def apply(DetectorId: DetectorId, ThreatIntelSetId: String): DeleteThreatIntelSetRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId, ThreatIntelSetId = ThreatIntelSetId)
   
     __obj.asInstanceOf[DeleteThreatIntelSetRequest]

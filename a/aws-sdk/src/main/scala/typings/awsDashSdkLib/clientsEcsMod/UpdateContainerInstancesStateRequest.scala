@@ -15,7 +15,7 @@ trait UpdateContainerInstancesStateRequest extends js.Object {
     */
   var containerInstances: StringList
   /**
-    * The container instance state with which to update the container instance.
+    * The container instance state with which to update the container instance. The only valid values for this action are ACTIVE and DRAINING. A container instance can only be updated to DRAINING status once it has reached an ACTIVE state. If a container instance is in REGISTERING, DEREGISTERING, or REGISTRATION_FAILED state you can describe the container instance but will be unable to update the container instance state.
     */
   var status: ContainerInstanceStatus
 }

@@ -45,5 +45,10 @@ object Cluster extends js.Object {
     state: atPulumiAwsLib.neptuneClusterMod.ClusterState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.neptuneClusterMod.Cluster = js.native
+  /**
+    * Returns true if the given object is an instance of Cluster.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/cluster.Cluster */ scala.Boolean = js.native
 }
 

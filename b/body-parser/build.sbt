@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "body-parser"
-version := "1.17-dt-20180425Z-cc8509"
+version := "1.17-dt-20180425Z-51a501"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-a0bc27",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190605Z-895d8c",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-0a8905",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

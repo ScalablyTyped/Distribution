@@ -45,5 +45,10 @@ object ClientCertificate extends js.Object {
     state: atPulumiAwsLib.apigatewayClientCertificateMod.ClientCertificateState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayClientCertificateMod.ClientCertificate = js.native
+  /**
+    * Returns true if the given object is an instance of ClientCertificate.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/clientCertificate.ClientCertificate */ scala.Boolean = js.native
 }
 

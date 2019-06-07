@@ -105,5 +105,10 @@ object PrivateVirtualInterface extends js.Object {
     state: atPulumiAwsLib.directconnectPrivateVirtualInterfaceMod.PrivateVirtualInterfaceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.directconnectPrivateVirtualInterfaceMod.PrivateVirtualInterface = js.native
+  /**
+    * Returns true if the given object is an instance of PrivateVirtualInterface.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/privateVirtualInterface.PrivateVirtualInterface */ scala.Boolean = js.native
 }
 

@@ -52,5 +52,10 @@ object VpnConnectionRoute extends js.Object {
     state: atPulumiAwsLib.ec2VpnConnectionRouteMod.VpnConnectionRouteState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2VpnConnectionRouteMod.VpnConnectionRoute = js.native
+  /**
+    * Returns true if the given object is an instance of VpnConnectionRoute.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnConnectionRoute.VpnConnectionRoute */ scala.Boolean = js.native
 }
 

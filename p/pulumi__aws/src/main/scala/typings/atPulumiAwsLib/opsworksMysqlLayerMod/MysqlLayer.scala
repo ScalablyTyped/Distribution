@@ -117,5 +117,10 @@ object MysqlLayer extends js.Object {
     state: atPulumiAwsLib.opsworksMysqlLayerMod.MysqlLayerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.opsworksMysqlLayerMod.MysqlLayer = js.native
+  /**
+    * Returns true if the given object is an instance of MysqlLayer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/mysqlLayer.MysqlLayer */ scala.Boolean = js.native
 }
 

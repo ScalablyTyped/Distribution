@@ -74,6 +74,11 @@ object securityhubNs extends js.Object {
       state: atPulumiAwsLib.securityhubAccountMod.AccountState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.securityhubAccountMod.Account = js.native
+    /**
+      * Returns true if the given object is an instance of Account.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/account.Account */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -99,6 +104,11 @@ object securityhubNs extends js.Object {
       state: atPulumiAwsLib.securityhubProductSubscriptionMod.ProductSubscriptionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.securityhubProductSubscriptionMod.ProductSubscription = js.native
+    /**
+      * Returns true if the given object is an instance of ProductSubscription.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/productSubscription.ProductSubscription */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -124,6 +134,11 @@ object securityhubNs extends js.Object {
       state: atPulumiAwsLib.securityhubStandardsSubscriptionMod.StandardsSubscriptionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.securityhubStandardsSubscriptionMod.StandardsSubscription = js.native
+    /**
+      * Returns true if the given object is an instance of StandardsSubscription.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ scala.Boolean = js.native
   }
   
 }

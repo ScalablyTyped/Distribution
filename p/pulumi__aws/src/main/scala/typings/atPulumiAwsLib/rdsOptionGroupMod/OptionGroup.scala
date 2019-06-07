@@ -76,5 +76,10 @@ object OptionGroup extends js.Object {
     state: atPulumiAwsLib.rdsOptionGroupMod.OptionGroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.rdsOptionGroupMod.OptionGroup = js.native
+  /**
+    * Returns true if the given object is an instance of OptionGroup.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/optionGroup.OptionGroup */ scala.Boolean = js.native
 }
 

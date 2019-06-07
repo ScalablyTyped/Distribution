@@ -45,5 +45,10 @@ object ExternalKey extends js.Object {
     state: atPulumiAwsLib.kmsExternalKeyMod.ExternalKeyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.kmsExternalKeyMod.ExternalKey = js.native
+  /**
+    * Returns true if the given object is an instance of ExternalKey.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/externalKey.ExternalKey */ scala.Boolean = js.native
 }
 

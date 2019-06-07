@@ -45,5 +45,10 @@ object AnalyticsApplication extends js.Object {
     state: atPulumiAwsLib.kinesisAnalyticsApplicationMod.AnalyticsApplicationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.kinesisAnalyticsApplicationMod.AnalyticsApplication = js.native
+  /**
+    * Returns true if the given object is an instance of AnalyticsApplication.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ scala.Boolean = js.native
 }
 

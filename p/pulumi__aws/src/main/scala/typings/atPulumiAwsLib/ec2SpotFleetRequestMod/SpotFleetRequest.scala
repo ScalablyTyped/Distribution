@@ -134,5 +134,10 @@ object SpotFleetRequest extends js.Object {
     state: atPulumiAwsLib.ec2SpotFleetRequestMod.SpotFleetRequestState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2SpotFleetRequestMod.SpotFleetRequest = js.native
+  /**
+    * Returns true if the given object is an instance of SpotFleetRequest.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotFleetRequest.SpotFleetRequest */ scala.Boolean = js.native
 }
 

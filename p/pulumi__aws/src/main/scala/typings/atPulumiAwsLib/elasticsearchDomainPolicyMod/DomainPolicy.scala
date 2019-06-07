@@ -52,5 +52,10 @@ object DomainPolicy extends js.Object {
     state: atPulumiAwsLib.elasticsearchDomainPolicyMod.DomainPolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.elasticsearchDomainPolicyMod.DomainPolicy = js.native
+  /**
+    * Returns true if the given object is an instance of DomainPolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domainPolicy.DomainPolicy */ scala.Boolean = js.native
 }
 

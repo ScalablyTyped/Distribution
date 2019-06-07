@@ -104,6 +104,11 @@ object elasticbeanstalkNs extends js.Object {
       state: atPulumiAwsLib.elasticbeanstalkApplicationMod.ApplicationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticbeanstalkApplicationMod.Application = js.native
+    /**
+      * Returns true if the given object is an instance of Application.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/application.Application */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -129,6 +134,11 @@ object elasticbeanstalkNs extends js.Object {
       state: atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion = js.native
+    /**
+      * Returns true if the given object is an instance of ApplicationVersion.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/applicationVersion.ApplicationVersion */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -154,6 +164,11 @@ object elasticbeanstalkNs extends js.Object {
       state: atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplate = js.native
+    /**
+      * Returns true if the given object is an instance of ConfigurationTemplate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/configurationTemplate.ConfigurationTemplate */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -179,6 +194,11 @@ object elasticbeanstalkNs extends js.Object {
       state: atPulumiAwsLib.elasticbeanstalkEnvironmentMod.EnvironmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticbeanstalkEnvironmentMod.Environment = js.native
+    /**
+      * Returns true if the given object is an instance of Environment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/environment.Environment */ scala.Boolean = js.native
   }
   
 }

@@ -58,5 +58,10 @@ object ThingType extends js.Object {
     state: atPulumiAwsLib.iotThingTypeMod.ThingTypeState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iotThingTypeMod.ThingType = js.native
+  /**
+    * Returns true if the given object is an instance of ThingType.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingType.ThingType */ scala.Boolean = js.native
 }
 

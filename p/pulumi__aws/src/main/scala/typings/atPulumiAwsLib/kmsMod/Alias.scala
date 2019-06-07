@@ -44,5 +44,10 @@ object Alias extends js.Object {
     state: atPulumiAwsLib.kmsAliasMod.AliasState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.kmsAliasMod.Alias = js.native
+  /**
+    * Returns true if the given object is an instance of Alias.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/alias.Alias */ scala.Boolean = js.native
 }
 

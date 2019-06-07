@@ -45,5 +45,10 @@ object ResourceShare extends js.Object {
     state: atPulumiAwsLib.ramResourceShareMod.ResourceShareState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ramResourceShareMod.ResourceShare = js.native
+  /**
+    * Returns true if the given object is an instance of ResourceShare.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShare.ResourceShare */ scala.Boolean = js.native
 }
 

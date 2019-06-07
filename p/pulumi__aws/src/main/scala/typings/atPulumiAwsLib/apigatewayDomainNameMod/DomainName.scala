@@ -111,5 +111,10 @@ object DomainName extends js.Object {
     state: atPulumiAwsLib.apigatewayDomainNameMod.DomainNameState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayDomainNameMod.DomainName = js.native
+  /**
+    * Returns true if the given object is an instance of DomainName.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/domainName.DomainName */ scala.Boolean = js.native
 }
 

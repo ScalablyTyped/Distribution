@@ -44,5 +44,10 @@ object ClusterParameterGroup extends js.Object {
     state: atPulumiAwsLib.neptuneClusterParameterGroupMod.ClusterParameterGroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
+  /**
+    * Returns true if the given object is an instance of ClusterParameterGroup.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterParameterGroup.ClusterParameterGroup */ scala.Boolean = js.native
 }
 

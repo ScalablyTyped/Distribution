@@ -9,11 +9,11 @@ trait UpdateThreatIntelSetRequest extends js.Object {
   /**
     * The updated boolean value that specifies whether the ThreateIntelSet is active or not.
     */
-  var Activate: js.UndefOr[Activate] = js.undefined
+  var Activate: js.UndefOr[Boolean] = js.undefined
   /**
     * The detectorID that specifies the GuardDuty service whose ThreatIntelSet you want to update.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * The updated URI of the file that contains the ThreateIntelSet. For example (https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key)
     */
@@ -25,15 +25,15 @@ trait UpdateThreatIntelSetRequest extends js.Object {
   /**
     * The unique ID that specifies the ThreatIntelSet that you want to update.
     */
-  var ThreatIntelSetId: __string
+  var ThreatIntelSetId: String
 }
 
 object UpdateThreatIntelSetRequest {
   @scala.inline
   def apply(
-    DetectorId: __string,
-    ThreatIntelSetId: __string,
-    Activate: js.UndefOr[Activate] = js.undefined,
+    DetectorId: DetectorId,
+    ThreatIntelSetId: String,
+    Activate: js.UndefOr[Boolean] = js.undefined,
     Location: Location = null,
     Name: Name = null
   ): UpdateThreatIntelSetRequest = {

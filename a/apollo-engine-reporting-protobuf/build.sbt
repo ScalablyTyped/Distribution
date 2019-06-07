@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-engine-reporting-protobuf"
-version := "0.3.0-9d4009"
+version := "0.3.1-3b28e7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

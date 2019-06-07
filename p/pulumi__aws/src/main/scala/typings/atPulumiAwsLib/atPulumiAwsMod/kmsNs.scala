@@ -122,6 +122,11 @@ object kmsNs extends js.Object {
       state: atPulumiAwsLib.kmsAliasMod.AliasState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.kmsAliasMod.Alias = js.native
+    /**
+      * Returns true if the given object is an instance of Alias.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/alias.Alias */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -147,6 +152,11 @@ object kmsNs extends js.Object {
       state: atPulumiAwsLib.kmsCiphertextMod.CiphertextState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.kmsCiphertextMod.Ciphertext = js.native
+    /**
+      * Returns true if the given object is an instance of Ciphertext.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/ciphertext.Ciphertext */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -172,6 +182,11 @@ object kmsNs extends js.Object {
       state: atPulumiAwsLib.kmsExternalKeyMod.ExternalKeyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.kmsExternalKeyMod.ExternalKey = js.native
+    /**
+      * Returns true if the given object is an instance of ExternalKey.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/externalKey.ExternalKey */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -197,6 +212,11 @@ object kmsNs extends js.Object {
       state: atPulumiAwsLib.kmsGrantMod.GrantState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.kmsGrantMod.Grant = js.native
+    /**
+      * Returns true if the given object is an instance of Grant.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -222,6 +242,11 @@ object kmsNs extends js.Object {
       state: atPulumiAwsLib.kmsKeyMod.KeyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.kmsKeyMod.Key = js.native
+    /**
+      * Returns true if the given object is an instance of Key.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/key.Key */ scala.Boolean = js.native
   }
   
 }

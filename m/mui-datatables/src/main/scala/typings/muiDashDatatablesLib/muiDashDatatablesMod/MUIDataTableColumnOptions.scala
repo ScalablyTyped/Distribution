@@ -47,6 +47,7 @@ trait MUIDataTableColumnOptions extends js.Object {
   var sortDirection: js.UndefOr[
     muiDashDatatablesLib.muiDashDatatablesLibStrings.asc | muiDashDatatablesLib.muiDashDatatablesLibStrings.desc
   ] = js.undefined
+  var viewColumns: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object MUIDataTableColumnOptions {
@@ -66,7 +67,8 @@ object MUIDataTableColumnOptions {
     searchable: js.UndefOr[scala.Boolean] = js.undefined,
     setCellProps: (/* cellValue */ java.lang.String, /* rowIndex */ scala.Double, /* columnIndex */ scala.Double) => js.Object = null,
     sort: js.UndefOr[scala.Boolean] = js.undefined,
-    sortDirection: muiDashDatatablesLib.muiDashDatatablesLibStrings.asc | muiDashDatatablesLib.muiDashDatatablesLibStrings.desc = null
+    sortDirection: muiDashDatatablesLib.muiDashDatatablesLibStrings.asc | muiDashDatatablesLib.muiDashDatatablesLibStrings.desc = null,
+    viewColumns: js.UndefOr[scala.Boolean] = js.undefined
   ): MUIDataTableColumnOptions = {
     val __obj = js.Dynamic.literal()
     if (customBodyRender != null) __obj.updateDynamic("customBodyRender")(js.Any.fromFunction3(customBodyRender))
@@ -84,6 +86,7 @@ object MUIDataTableColumnOptions {
     if (setCellProps != null) __obj.updateDynamic("setCellProps")(js.Any.fromFunction3(setCellProps))
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
     if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewColumns)) __obj.updateDynamic("viewColumns")(viewColumns)
     __obj.asInstanceOf[MUIDataTableColumnOptions]
   }
 }

@@ -44,5 +44,10 @@ object RequestValidator extends js.Object {
     state: atPulumiAwsLib.apigatewayRequestValidatorMod.RequestValidatorState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayRequestValidatorMod.RequestValidator = js.native
+  /**
+    * Returns true if the given object is an instance of RequestValidator.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/requestValidator.RequestValidator */ scala.Boolean = js.native
 }
 

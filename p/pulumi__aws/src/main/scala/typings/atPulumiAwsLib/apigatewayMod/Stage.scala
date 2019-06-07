@@ -44,5 +44,10 @@ object Stage extends js.Object {
     state: atPulumiAwsLib.apigatewayStageMod.StageState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayStageMod.Stage = js.native
+  /**
+    * Returns true if the given object is an instance of Stage.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/stage.Stage */ scala.Boolean = js.native
 }
 

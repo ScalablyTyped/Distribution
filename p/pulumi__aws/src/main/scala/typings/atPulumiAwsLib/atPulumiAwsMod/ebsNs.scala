@@ -91,6 +91,11 @@ object ebsNs extends js.Object {
       state: atPulumiAwsLib.ebsSnapshotMod.SnapshotState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ebsSnapshotMod.Snapshot = js.native
+    /**
+      * Returns true if the given object is an instance of Snapshot.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/snapshot.Snapshot */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -116,6 +121,11 @@ object ebsNs extends js.Object {
       state: atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopy = js.native
+    /**
+      * Returns true if the given object is an instance of SnapshotCopy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/snapshotCopy.SnapshotCopy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -141,6 +151,11 @@ object ebsNs extends js.Object {
       state: atPulumiAwsLib.ebsVolumeMod.VolumeState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ebsVolumeMod.Volume = js.native
+    /**
+      * Returns true if the given object is an instance of Volume.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/volume.Volume */ scala.Boolean = js.native
   }
   
 }

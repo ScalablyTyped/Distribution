@@ -133,5 +133,10 @@ object RailsAppLayer extends js.Object {
     state: atPulumiAwsLib.opsworksRailsAppLayerMod.RailsAppLayerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.opsworksRailsAppLayerMod.RailsAppLayer = js.native
+  /**
+    * Returns true if the given object is an instance of RailsAppLayer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/railsAppLayer.RailsAppLayer */ scala.Boolean = js.native
 }
 

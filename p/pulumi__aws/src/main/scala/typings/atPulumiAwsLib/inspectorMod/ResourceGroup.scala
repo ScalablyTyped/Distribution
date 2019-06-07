@@ -44,5 +44,10 @@ object ResourceGroup extends js.Object {
     state: atPulumiAwsLib.inspectorResourceGroupMod.ResourceGroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.inspectorResourceGroupMod.ResourceGroup = js.native
+  /**
+    * Returns true if the given object is an instance of ResourceGroup.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/resourceGroup.ResourceGroup */ scala.Boolean = js.native
 }
 

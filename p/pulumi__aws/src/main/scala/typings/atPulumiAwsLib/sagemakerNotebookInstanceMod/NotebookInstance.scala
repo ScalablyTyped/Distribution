@@ -80,5 +80,10 @@ object NotebookInstance extends js.Object {
     state: atPulumiAwsLib.sagemakerNotebookInstanceMod.NotebookInstanceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.sagemakerNotebookInstanceMod.NotebookInstance = js.native
+  /**
+    * Returns true if the given object is an instance of NotebookInstance.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstance.NotebookInstance */ scala.Boolean = js.native
 }
 

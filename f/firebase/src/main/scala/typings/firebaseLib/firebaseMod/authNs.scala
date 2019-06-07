@@ -653,12 +653,8 @@ object authNs extends js.Object {
       */
     def setPersistence(persistence: firebaseLib.firebaseMod.authNs.AuthNs.Persistence): js.Promise[scala.Unit] = js.native
     /**
-      * @deprecated
       * Asynchronously signs in with the given credentials, and returns any available
       * additional user information, such as user name.
-      *
-      * This method is deprecated. Use
-      * {@link firebase.auth.Auth.signInWithCredential} instead.
       *
       * <h4>Error Codes</h4>
       * <dl>
@@ -696,6 +692,10 @@ object authNs extends js.Object {
       *     {@link firebase.auth.PhoneAuthProvider.credential}  and the verification
       *     ID of the credential is not valid.</dd>
       * </dl>
+      *
+      * @deprecated
+      * This method is deprecated. Use
+      * {@link firebase.auth.Auth.signInWithCredential} instead.
       *
       * @example
       * ```javascript

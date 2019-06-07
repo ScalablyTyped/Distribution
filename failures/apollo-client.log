@@ -1,0 +1,131 @@
+[debug] PhaseRunner.scala:92 Ignored [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:92 Ignored [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/ApolloClient.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, ApolloClient))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, ApolloClient)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/core/LocalState.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, core, LocalState))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, core, LocalState)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/core/ObservableQuery.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, core, ObservableQuery))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, core, ObservableQuery)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/core/QueryManager.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, core, QueryManager))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, core, QueryManager)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/core/networkStatus.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, core, networkStatus))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, core, networkStatus)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/core/types.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, core, types))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, core, types)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/core/watchQueryOptions.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, core, watchQueryOptions))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, core, watchQueryOptions)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/data/mutations.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, data, mutations))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, data, mutations)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/data/queries.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, data, queries))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, data, queries)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/data/store.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, data, store))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, data, store)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/errors/ApolloError.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, errors, ApolloError))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, errors, ApolloError)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client)) [id => apollo-client, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client/util/Observable.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/apollo-client),TsIdentLibrarySimple(apollo-client)),TsIdentModule(None,List(apollo-client, util, Observable))) [id => apollo-client, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(apollo-client, util, Observable)) [id => apollo-client, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(apollo-client) [id => apollo-client, phase => typescript] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify Cache.DiffResult<any> [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/QueryManager) / TsExport() / TsExporteeTree() / TsDeclInterface(QueryInfo) / TsMemberProperty(newData) / TsTypeUnion() / TsTypeRef())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Field) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/LocalState) / TsDeclTypeAlias(Resolver) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Context) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/LocalState) / TsDeclClass(LocalState) / TsMemberFunction(runResolvers) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Id) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/LocalState) / TsDeclClass(LocalState) / TsMemberFunction(prepareContext) / TsFunSig() / TsTypeObject() / TsMemberFunction(getCacheKey) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Cache) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/LocalState) / TsDeclClass(LocalState) / TsMemberFunction(prepareContext) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_FetchMoreResult) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/ObservableQuery) / TsDeclInterface(FetchMoreOptions) / TsMemberFunction(updateQuery) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Options) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/ObservableQuery) / TsDeclClass(ObservableQuery) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AssumeImmutableResults) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/QueryManager) / TsDeclClass(QueryManager) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ClientQuery) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/QueryManager) / TsDeclClass(QueryManager) / TsMemberFunction(transform) / TsFunSig() / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Data) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/QueryManager) / TsDeclClass(QueryManager) / TsMemberFunction(getCurrentQueryResult) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Document) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/QueryManager) / TsDeclClass(QueryManager) / TsMemberFunction(getQueryWithPreviousResult) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_MutationResult) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/types) / TsDeclTypeAlias(MutationQueryReducer) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_DataTSubscriptionData) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/watchQueryOptions) / TsDeclTypeAlias(UpdateQueryFn) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject() / TsMemberProperty(subscriptionData) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_SubscriptionData) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/watchQueryOptions) / TsDeclTypeAlias(UpdateQueryFn) / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_DocumentFetchMoreForQueryId) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/data/queries) / TsDeclClass(QueryStore) / TsMemberFunction(initQuery) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_DocumentMutationId) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/data/store) / TsDeclClass(DataStore) / TsMemberFunction(markMutationInit) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_DocumentMutationIdMutationResult) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/data/store) / TsDeclClass(DataStore) / TsMemberFunction(markMutationResult) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_MutationId) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/data/store) / TsDeclClass(DataStore) / TsMemberFunction(markMutationComplete) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ErrorMessage) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/errors/ApolloError) / TsDeclClass(ApolloError) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Options) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client) / TsDeclClass(ObservableQuery) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ErrorMessage) [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client) / TsDeclClass(ApolloError) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExpandCallables.scala:48 Expanded fragmentMatcher into 1 methods [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/core/LocalState) / TsDeclInterface(ExecContext))] 
+[info ] ExpandCallables.scala:48 Expanded updater into 1 methods [id => apollo-client, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(apollo-client/data/store) / TsDeclInterface(QueryWithUpdater))] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing apollo-client [id => apollo-client, phase => scala.js] 
+[info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(apolloDashClientLib), Name(coreWatchQueryOptionsMod), Name(QueryBaseOptions))) at Name(apolloDashClientLib) / Name(coreWatchQueryOptionsMod) / Name(WatchQueryOptions) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(apolloDashClientLib), Name(coreWatchQueryOptionsMod), Name(QueryBaseOptions))),List(),NoComments)) [id => apollo-client, phase => scala.js, this => Name(apolloDashClientLib) / Name(coreWatchQueryOptionsMod) / Name(WatchQueryOptions)] 
+[info ] CompleteClass.scala:64 Completed implementations Vector(message, name) [id => apollo-client, phase => scala.js, this => Name(apolloDashClientLib) / Name(errorsApolloErrorMod) / Name(ApolloError)] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:245 Built apollo-client in 1258 ms [id => apollo-client, phase => build] 
+[info ] Phase3CompileBloop.scala:253 published local, [/home/tso/.ivy2/local/org.scalablytyped/apollo-client_sjs0.6_2.12/2.6.2-40c89b/jars/apollo-client_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/apollo-client_sjs0.6_2.12/2.6.2-40c89b/srcs/apollo-client_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/apollo-client_sjs0.6_2.12/2.6.2-40c89b/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/apollo-client_sjs0.6_2.12/2.6.2-40c89b/poms/apollo-client_sjs0.6_2.12.pom] [id => apollo-client, phase => build] 
+[debug] PhaseRunner.scala:84 Success [id => apollo-client, phase => build] 
+[error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 405 [id => apollo-client, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.markAsDone(HttpProtocol.java:204)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.finishUpdate(HttpProtocol.java:189)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.exitAfterHandlingBody(HttpProtocol.java:402)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handleHttpResponse(HttpProtocol.java:429)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handle(HttpProtocol.java:476)
+	at com.ning.http.client.providers.netty.handler.Processor.messageReceived(Processor.java:89)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:142)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:92)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dispatch.StatusCode: Unexpected response status: 405
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1(BinTrayPublisher.scala:35)
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1$adapted(BinTrayPublisher.scala:31)
+	at dispatch.FunctionHandler.onCompleted(handlers.scala:26)
+	at com.ning.http.client.AsyncCompletionHandler.onCompleted(AsyncCompletionHandler.java:55)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$Client$StoringHandler$1$.onCompleted(BinTrayPublisher.scala:116)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.getContent(NettyResponseFuture.java:177)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:212)
+	... 43 more
+
+[error] PhaseRunner.scala:88 Failure, [apollo-client => java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405] [id => apollo-client, phase => publish] 

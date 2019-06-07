@@ -78,7 +78,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateTaskSetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the ARN and resource ID format of a resource for a specified IAM user, IAM role, or the root user for an account. You can specify whether the new ARN and resource ID format are disabled for new resources that are created.
+    * Disables an account setting for a specified IAM user, IAM role, or the root user for an account.
     */
   def deleteAccountSetting(): awsDashSdkLib.libRequestMod.Request[DeleteAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAccountSetting(
@@ -89,7 +89,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the ARN and resource ID format of a resource for a specified IAM user, IAM role, or the root user for an account. You can specify whether the new ARN and resource ID format are disabled for new resources that are created.
+    * Disables an account setting for a specified IAM user, IAM role, or the root user for an account.
     */
   def deleteAccountSetting(params: DeleteAccountSettingRequest): awsDashSdkLib.libRequestMod.Request[DeleteAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteAccountSetting(
@@ -400,7 +400,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[DiscoverPollEndpointResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the account settings for an Amazon ECS resource for a specified principal.
+    * Lists the account settings for a specified principal.
     */
   def listAccountSettings(): awsDashSdkLib.libRequestMod.Request[ListAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAccountSettings(
@@ -411,7 +411,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Lists the account settings for an Amazon ECS resource for a specified principal.
+    * Lists the account settings for a specified principal.
     */
   def listAccountSettings(params: ListAccountSettingsRequest): awsDashSdkLib.libRequestMod.Request[ListAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def listAccountSettings(
@@ -607,7 +607,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the ARN and resource ID format of a resource type for a specified IAM user, IAM role, or the root user for an account. If the account setting for the root user is changed, it sets the default setting for all of the IAM users and roles for which no individual account setting has been set. The opt-in and opt-out account setting can be set for each Amazon ECS resource separately. The ARN and resource ID format of a resource will be defined by the opt-in status of the IAM user or role that created the resource. Enabling this setting is required to use new Amazon ECS features such as resource tagging. For more information, see Amazon Resource Names (ARNs) and IDs in the Amazon Elastic Container Service Developer Guide.
+    * Modifies an account setting. For more information, see Account Settings in the Amazon Elastic Container Service Developer Guide. When serviceLongArnFormat, taskLongArnFormat, or containerInstanceLongArnFormat are specified, the ARN and resource ID format of the resource type for a specified IAM user, IAM role, or the root user for an account is changed. If you change the account setting for the root user, the default settings for all of the IAM users and roles for which no individual account setting has been specified are reset. The opt-in and opt-out account setting can be specified for each Amazon ECS resource separately. The ARN and resource ID format of a resource will be defined by the opt-in status of the IAM user or role that created the resource. You must enable this setting to use Amazon ECS features such as resource tagging. When awsvpcTrunking is specified, the elastic network interface (ENI) limit for any new container instances that support the feature is changed. If awsvpcTrunking is enabled, any new container instances that support the feature are launched have the increased ENI limits available to them. For more information, see Elastic Network Interface Trunking in the Amazon Elastic Container Service Developer Guide.
     */
   def putAccountSetting(): awsDashSdkLib.libRequestMod.Request[PutAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAccountSetting(
@@ -618,7 +618,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the ARN and resource ID format of a resource type for a specified IAM user, IAM role, or the root user for an account. If the account setting for the root user is changed, it sets the default setting for all of the IAM users and roles for which no individual account setting has been set. The opt-in and opt-out account setting can be set for each Amazon ECS resource separately. The ARN and resource ID format of a resource will be defined by the opt-in status of the IAM user or role that created the resource. Enabling this setting is required to use new Amazon ECS features such as resource tagging. For more information, see Amazon Resource Names (ARNs) and IDs in the Amazon Elastic Container Service Developer Guide.
+    * Modifies an account setting. For more information, see Account Settings in the Amazon Elastic Container Service Developer Guide. When serviceLongArnFormat, taskLongArnFormat, or containerInstanceLongArnFormat are specified, the ARN and resource ID format of the resource type for a specified IAM user, IAM role, or the root user for an account is changed. If you change the account setting for the root user, the default settings for all of the IAM users and roles for which no individual account setting has been specified are reset. The opt-in and opt-out account setting can be specified for each Amazon ECS resource separately. The ARN and resource ID format of a resource will be defined by the opt-in status of the IAM user or role that created the resource. You must enable this setting to use Amazon ECS features such as resource tagging. When awsvpcTrunking is specified, the elastic network interface (ENI) limit for any new container instances that support the feature is changed. If awsvpcTrunking is enabled, any new container instances that support the feature are launched have the increased ENI limits available to them. For more information, see Elastic Network Interface Trunking in the Amazon Elastic Container Service Developer Guide.
     */
   def putAccountSetting(params: PutAccountSettingRequest): awsDashSdkLib.libRequestMod.Request[PutAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAccountSetting(
@@ -630,7 +630,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the ARN and resource ID format of a resource type for all IAM users on an account for which no individual account setting has been set. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+    * Modifies an account setting for all IAM users on an account for whom no individual account setting has been specified.
     */
   def putAccountSettingDefault(): awsDashSdkLib.libRequestMod.Request[PutAccountSettingDefaultResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAccountSettingDefault(
@@ -641,7 +641,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[PutAccountSettingDefaultResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the ARN and resource ID format of a resource type for all IAM users on an account for which no individual account setting has been set. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+    * Modifies an account setting for all IAM users on an account for whom no individual account setting has been specified.
     */
   def putAccountSettingDefault(params: PutAccountSettingDefaultRequest): awsDashSdkLib.libRequestMod.Request[PutAccountSettingDefaultResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def putAccountSettingDefault(
@@ -783,6 +783,29 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[StopTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    *  This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.  Sent to acknowledge that an attachment changed states.
+    */
+  def submitAttachmentStateChanges(): awsDashSdkLib.libRequestMod.Request[SubmitAttachmentStateChangesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def submitAttachmentStateChanges(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ SubmitAttachmentStateChangesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[SubmitAttachmentStateChangesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    *  This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.  Sent to acknowledge that an attachment changed states.
+    */
+  def submitAttachmentStateChanges(params: SubmitAttachmentStateChangesRequest): awsDashSdkLib.libRequestMod.Request[SubmitAttachmentStateChangesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def submitAttachmentStateChanges(
+    params: SubmitAttachmentStateChangesRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ SubmitAttachmentStateChangesResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[SubmitAttachmentStateChangesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     *  This action is only used by the Amazon ECS agent, and it is not intended for use outside of the agent.  Sent to acknowledge that a container changed states.
     */
   def submitContainerStateChange(): awsDashSdkLib.libRequestMod.Request[SubmitContainerStateChangeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -898,7 +921,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateContainerAgentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the status of an Amazon ECS container instance. You can change the status of a container instance to DRAINING to manually remove an instance from a cluster, for example to perform system updates, update the Docker daemon, or scale down the cluster size.  When you set a container instance to DRAINING, Amazon ECS prevents new tasks from being scheduled for placement on the container instance and replacement service tasks are started on other container instances in the cluster if the resources are available. Service tasks on the container instance that are in the PENDING state are stopped immediately. Service tasks on the container instance that are in the RUNNING state are stopped and replaced according to the service's deployment configuration parameters, minimumHealthyPercent and maximumPercent. You can change the deployment configuration of your service using UpdateService.   If minimumHealthyPercent is below 100%, the scheduler can ignore desiredCount temporarily during task replacement. For example, desiredCount is four tasks, a minimum of 50% allows the scheduler to stop two existing tasks before starting two new tasks. If the minimum is 100%, the service scheduler can't remove existing tasks until the replacement tasks are considered healthy. Tasks for services that do not use a load balancer are considered healthy if they are in the RUNNING state. Tasks for services that use a load balancer are considered healthy if they are in the RUNNING state and the container instance they are hosted on is reported as healthy by the load balancer.   The maximumPercent parameter represents an upper limit on the number of running tasks during task replacement, which enables you to define the replacement batch size. For example, if desiredCount is four tasks, a maximum of 200% starts four new tasks before stopping the four tasks to be drained, provided that the cluster resources required to do this are available. If the maximum is 100%, then replacement tasks can't start until the draining tasks have stopped.   Any PENDING or RUNNING tasks that do not belong to a service are not affected. You must wait for them to finish or stop them manually. A container instance has completed draining when it has no more RUNNING tasks. You can verify this using ListTasks. When you set a container instance to ACTIVE, the Amazon ECS scheduler can begin scheduling tasks on the instance again.
+    * Modifies the status of an Amazon ECS container instance. Once a container instance has reached an ACTIVE state, you can change the status of a container instance to DRAINING to manually remove an instance from a cluster, for example to perform system updates, update the Docker daemon, or scale down the cluster size.  A container instance cannot be changed to DRAINING until it has reached an ACTIVE status. If the instance is in any other status, an error will be received.  When you set a container instance to DRAINING, Amazon ECS prevents new tasks from being scheduled for placement on the container instance and replacement service tasks are started on other container instances in the cluster if the resources are available. Service tasks on the container instance that are in the PENDING state are stopped immediately. Service tasks on the container instance that are in the RUNNING state are stopped and replaced according to the service's deployment configuration parameters, minimumHealthyPercent and maximumPercent. You can change the deployment configuration of your service using UpdateService.   If minimumHealthyPercent is below 100%, the scheduler can ignore desiredCount temporarily during task replacement. For example, desiredCount is four tasks, a minimum of 50% allows the scheduler to stop two existing tasks before starting two new tasks. If the minimum is 100%, the service scheduler can't remove existing tasks until the replacement tasks are considered healthy. Tasks for services that do not use a load balancer are considered healthy if they are in the RUNNING state. Tasks for services that use a load balancer are considered healthy if they are in the RUNNING state and the container instance they are hosted on is reported as healthy by the load balancer.   The maximumPercent parameter represents an upper limit on the number of running tasks during task replacement, which enables you to define the replacement batch size. For example, if desiredCount is four tasks, a maximum of 200% starts four new tasks before stopping the four tasks to be drained, provided that the cluster resources required to do this are available. If the maximum is 100%, then replacement tasks can't start until the draining tasks have stopped.   Any PENDING or RUNNING tasks that do not belong to a service are not affected. You must wait for them to finish or stop them manually. A container instance has completed draining when it has no more RUNNING tasks. You can verify this using ListTasks. When a container instance has been drained, you can set a container instance to ACTIVE status and once it has reached that status the Amazon ECS scheduler can begin scheduling tasks on the instance again.
     */
   def updateContainerInstancesState(): awsDashSdkLib.libRequestMod.Request[UpdateContainerInstancesStateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateContainerInstancesState(
@@ -909,7 +932,7 @@ trait ECS extends Service {
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateContainerInstancesStateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the status of an Amazon ECS container instance. You can change the status of a container instance to DRAINING to manually remove an instance from a cluster, for example to perform system updates, update the Docker daemon, or scale down the cluster size.  When you set a container instance to DRAINING, Amazon ECS prevents new tasks from being scheduled for placement on the container instance and replacement service tasks are started on other container instances in the cluster if the resources are available. Service tasks on the container instance that are in the PENDING state are stopped immediately. Service tasks on the container instance that are in the RUNNING state are stopped and replaced according to the service's deployment configuration parameters, minimumHealthyPercent and maximumPercent. You can change the deployment configuration of your service using UpdateService.   If minimumHealthyPercent is below 100%, the scheduler can ignore desiredCount temporarily during task replacement. For example, desiredCount is four tasks, a minimum of 50% allows the scheduler to stop two existing tasks before starting two new tasks. If the minimum is 100%, the service scheduler can't remove existing tasks until the replacement tasks are considered healthy. Tasks for services that do not use a load balancer are considered healthy if they are in the RUNNING state. Tasks for services that use a load balancer are considered healthy if they are in the RUNNING state and the container instance they are hosted on is reported as healthy by the load balancer.   The maximumPercent parameter represents an upper limit on the number of running tasks during task replacement, which enables you to define the replacement batch size. For example, if desiredCount is four tasks, a maximum of 200% starts four new tasks before stopping the four tasks to be drained, provided that the cluster resources required to do this are available. If the maximum is 100%, then replacement tasks can't start until the draining tasks have stopped.   Any PENDING or RUNNING tasks that do not belong to a service are not affected. You must wait for them to finish or stop them manually. A container instance has completed draining when it has no more RUNNING tasks. You can verify this using ListTasks. When you set a container instance to ACTIVE, the Amazon ECS scheduler can begin scheduling tasks on the instance again.
+    * Modifies the status of an Amazon ECS container instance. Once a container instance has reached an ACTIVE state, you can change the status of a container instance to DRAINING to manually remove an instance from a cluster, for example to perform system updates, update the Docker daemon, or scale down the cluster size.  A container instance cannot be changed to DRAINING until it has reached an ACTIVE status. If the instance is in any other status, an error will be received.  When you set a container instance to DRAINING, Amazon ECS prevents new tasks from being scheduled for placement on the container instance and replacement service tasks are started on other container instances in the cluster if the resources are available. Service tasks on the container instance that are in the PENDING state are stopped immediately. Service tasks on the container instance that are in the RUNNING state are stopped and replaced according to the service's deployment configuration parameters, minimumHealthyPercent and maximumPercent. You can change the deployment configuration of your service using UpdateService.   If minimumHealthyPercent is below 100%, the scheduler can ignore desiredCount temporarily during task replacement. For example, desiredCount is four tasks, a minimum of 50% allows the scheduler to stop two existing tasks before starting two new tasks. If the minimum is 100%, the service scheduler can't remove existing tasks until the replacement tasks are considered healthy. Tasks for services that do not use a load balancer are considered healthy if they are in the RUNNING state. Tasks for services that use a load balancer are considered healthy if they are in the RUNNING state and the container instance they are hosted on is reported as healthy by the load balancer.   The maximumPercent parameter represents an upper limit on the number of running tasks during task replacement, which enables you to define the replacement batch size. For example, if desiredCount is four tasks, a maximum of 200% starts four new tasks before stopping the four tasks to be drained, provided that the cluster resources required to do this are available. If the maximum is 100%, then replacement tasks can't start until the draining tasks have stopped.   Any PENDING or RUNNING tasks that do not belong to a service are not affected. You must wait for them to finish or stop them manually. A container instance has completed draining when it has no more RUNNING tasks. You can verify this using ListTasks. When a container instance has been drained, you can set a container instance to ACTIVE status and once it has reached that status the Amazon ECS scheduler can begin scheduling tasks on the instance again.
     */
   def updateContainerInstancesState(params: UpdateContainerInstancesStateRequest): awsDashSdkLib.libRequestMod.Request[UpdateContainerInstancesStateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updateContainerInstancesState(

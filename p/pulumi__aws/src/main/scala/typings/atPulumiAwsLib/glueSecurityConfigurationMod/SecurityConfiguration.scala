@@ -52,5 +52,10 @@ object SecurityConfiguration extends js.Object {
     state: atPulumiAwsLib.glueSecurityConfigurationMod.SecurityConfigurationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.glueSecurityConfigurationMod.SecurityConfiguration = js.native
+  /**
+    * Returns true if the given object is an instance of SecurityConfiguration.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/securityConfiguration.SecurityConfiguration */ scala.Boolean = js.native
 }
 

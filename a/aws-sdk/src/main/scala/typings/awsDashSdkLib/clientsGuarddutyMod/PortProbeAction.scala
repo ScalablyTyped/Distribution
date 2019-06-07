@@ -9,16 +9,16 @@ trait PortProbeAction extends js.Object {
   /**
     * Port probe blocked information.
     */
-  var Blocked: js.UndefOr[__boolean] = js.undefined
+  var Blocked: js.UndefOr[Boolean] = js.undefined
   /**
     * A list of port probe details objects.
     */
-  var PortProbeDetails: js.UndefOr[__listOfPortProbeDetail] = js.undefined
+  var PortProbeDetails: js.UndefOr[PortProbeDetails] = js.undefined
 }
 
 object PortProbeAction {
   @scala.inline
-  def apply(Blocked: js.UndefOr[__boolean] = js.undefined, PortProbeDetails: __listOfPortProbeDetail = null): PortProbeAction = {
+  def apply(Blocked: js.UndefOr[Boolean] = js.undefined, PortProbeDetails: PortProbeDetails = null): PortProbeAction = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Blocked)) __obj.updateDynamic("Blocked")(Blocked)
     if (PortProbeDetails != null) __obj.updateDynamic("PortProbeDetails")(PortProbeDetails)

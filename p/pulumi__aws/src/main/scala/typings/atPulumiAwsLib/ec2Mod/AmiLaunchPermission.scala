@@ -44,5 +44,10 @@ object AmiLaunchPermission extends js.Object {
     state: atPulumiAwsLib.ec2AmiLaunchPermissionMod.AmiLaunchPermissionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2AmiLaunchPermissionMod.AmiLaunchPermission = js.native
+  /**
+    * Returns true if the given object is an instance of AmiLaunchPermission.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiLaunchPermission.AmiLaunchPermission */ scala.Boolean = js.native
 }
 

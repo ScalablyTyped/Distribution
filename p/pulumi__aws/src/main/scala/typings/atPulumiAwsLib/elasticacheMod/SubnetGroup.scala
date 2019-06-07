@@ -44,5 +44,10 @@ object SubnetGroup extends js.Object {
     state: atPulumiAwsLib.elasticacheSubnetGroupMod.SubnetGroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.elasticacheSubnetGroupMod.SubnetGroup = js.native
+  /**
+    * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/subnetGroup.SubnetGroup */ scala.Boolean = js.native
 }
 

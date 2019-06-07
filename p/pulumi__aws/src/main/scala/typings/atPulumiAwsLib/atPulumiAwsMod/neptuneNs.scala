@@ -130,6 +130,11 @@ object neptuneNs extends js.Object {
       state: atPulumiAwsLib.neptuneClusterMod.ClusterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.neptuneClusterMod.Cluster = js.native
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/cluster.Cluster */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -155,6 +160,11 @@ object neptuneNs extends js.Object {
       state: atPulumiAwsLib.neptuneClusterInstanceMod.ClusterInstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.neptuneClusterInstanceMod.ClusterInstance = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterInstance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterInstance.ClusterInstance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -180,6 +190,11 @@ object neptuneNs extends js.Object {
       state: atPulumiAwsLib.neptuneClusterParameterGroupMod.ClusterParameterGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterParameterGroup.ClusterParameterGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -205,6 +220,11 @@ object neptuneNs extends js.Object {
       state: atPulumiAwsLib.neptuneClusterSnapshotMod.ClusterSnapshotState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterSnapshot.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/clusterSnapshot.ClusterSnapshot */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -230,6 +250,11 @@ object neptuneNs extends js.Object {
       state: atPulumiAwsLib.neptuneEventSubscriptionMod.EventSubscriptionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.neptuneEventSubscriptionMod.EventSubscription = js.native
+    /**
+      * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/eventSubscription.EventSubscription */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -255,6 +280,11 @@ object neptuneNs extends js.Object {
       state: atPulumiAwsLib.neptuneParameterGroupMod.ParameterGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.neptuneParameterGroupMod.ParameterGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/parameterGroup.ParameterGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -280,6 +310,11 @@ object neptuneNs extends js.Object {
       state: atPulumiAwsLib.neptuneSubnetGroupMod.SubnetGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.neptuneSubnetGroupMod.SubnetGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/neptune/subnetGroup.SubnetGroup */ scala.Boolean = js.native
   }
   
 }

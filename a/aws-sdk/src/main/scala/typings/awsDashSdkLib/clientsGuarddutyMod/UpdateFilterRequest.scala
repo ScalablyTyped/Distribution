@@ -17,11 +17,11 @@ trait UpdateFilterRequest extends js.Object {
   /**
     * The unique ID of the detector that specifies the GuardDuty service where you want to update a filter.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * The name of the filter.
     */
-  var FilterName: __string
+  var FilterName: String
   /**
     * Represents the criteria to be used in the filter for querying findings.
     */
@@ -35,8 +35,8 @@ trait UpdateFilterRequest extends js.Object {
 object UpdateFilterRequest {
   @scala.inline
   def apply(
-    DetectorId: __string,
-    FilterName: __string,
+    DetectorId: DetectorId,
+    FilterName: String,
     Action: FilterAction = null,
     Description: FilterDescription = null,
     FindingCriteria: FindingCriteria = null,

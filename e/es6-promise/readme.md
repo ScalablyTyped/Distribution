@@ -1,7 +1,7 @@
 
 # Scala.js typings for es6-promise
 
-Typings are for version 4.2.6
+Typings are for version 4.2.8
 
 ## Library description:
 A lightweight library that provides tools for organizing asynchronous code

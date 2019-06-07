@@ -68,5 +68,10 @@ object JobQueue extends js.Object {
     state: atPulumiAwsLib.batchJobQueueMod.JobQueueState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.batchJobQueueMod.JobQueue = js.native
+  /**
+    * Returns true if the given object is an instance of JobQueue.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ scala.Boolean = js.native
 }
 

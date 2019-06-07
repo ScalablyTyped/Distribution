@@ -44,5 +44,10 @@ object MailFrom extends js.Object {
     state: atPulumiAwsLib.sesMailFromMod.MailFromState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.sesMailFromMod.MailFrom = js.native
+  /**
+    * Returns true if the given object is an instance of MailFrom.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/mailFrom.MailFrom */ scala.Boolean = js.native
 }
 

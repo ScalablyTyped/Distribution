@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait GetDetectorRequest extends js.Object {
   /**
-    * The unique ID of the detector that you want to retrieve.
+    * The unique ID of the detector that you want to get.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
 }
 
 object GetDetectorRequest {
   @scala.inline
-  def apply(DetectorId: __string): GetDetectorRequest = {
+  def apply(DetectorId: DetectorId): GetDetectorRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId)
   
     __obj.asInstanceOf[GetDetectorRequest]

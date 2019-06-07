@@ -68,5 +68,10 @@ object VirtualService extends js.Object {
     state: atPulumiAwsLib.appmeshVirtualServiceMod.VirtualServiceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.appmeshVirtualServiceMod.VirtualService = js.native
+  /**
+    * Returns true if the given object is an instance of VirtualService.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualService.VirtualService */ scala.Boolean = js.native
 }
 

@@ -14,7 +14,12 @@ package object clientsMediaconnectMod {
   */
   type Algorithm = _Algorithm | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type KeyType = awsDashSdkLib.awsDashSdkLibStrings.`static-key` | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.speke
+    - awsDashSdkLib.awsDashSdkLibStrings.`static-key`
+    - java.lang.String
+  */
+  type KeyType = _KeyType | java.lang.String
   type MaxResults = scala.Double
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`zixi-push`

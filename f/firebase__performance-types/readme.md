@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__performance-types
 
-Typings are for version 0.0.1
+Typings are for version 0.0.2
 
 ## Library description:
 @firebase/performance Types
@@ -36,6 +36,7 @@ See [the main readme](../../readme.md) for instructions.
 These comments are from the typescript definitions and might be useful:
 ```
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

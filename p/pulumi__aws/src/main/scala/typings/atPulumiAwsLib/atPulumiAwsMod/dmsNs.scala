@@ -101,6 +101,11 @@ object dmsNs extends js.Object {
       state: atPulumiAwsLib.dmsCertificateMod.CertificateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.dmsCertificateMod.Certificate = js.native
+    /**
+      * Returns true if the given object is an instance of Certificate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/certificate.Certificate */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -126,6 +131,11 @@ object dmsNs extends js.Object {
       state: atPulumiAwsLib.dmsEndpointMod.EndpointState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.dmsEndpointMod.Endpoint = js.native
+    /**
+      * Returns true if the given object is an instance of Endpoint.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/endpoint.Endpoint */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -151,6 +161,11 @@ object dmsNs extends js.Object {
       state: atPulumiAwsLib.dmsReplicationInstanceMod.ReplicationInstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.dmsReplicationInstanceMod.ReplicationInstance = js.native
+    /**
+      * Returns true if the given object is an instance of ReplicationInstance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationInstance.ReplicationInstance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -176,6 +191,11 @@ object dmsNs extends js.Object {
       state: atPulumiAwsLib.dmsReplicationSubnetGroupMod.ReplicationSubnetGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.dmsReplicationSubnetGroupMod.ReplicationSubnetGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ReplicationSubnetGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationSubnetGroup.ReplicationSubnetGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -201,6 +221,11 @@ object dmsNs extends js.Object {
       state: atPulumiAwsLib.dmsReplicationTaskMod.ReplicationTaskState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.dmsReplicationTaskMod.ReplicationTask = js.native
+    /**
+      * Returns true if the given object is an instance of ReplicationTask.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationTask.ReplicationTask */ scala.Boolean = js.native
   }
   
 }

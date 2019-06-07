@@ -44,5 +44,10 @@ object NamedQuery extends js.Object {
     state: atPulumiAwsLib.athenaNamedQueryMod.NamedQueryState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.athenaNamedQueryMod.NamedQuery = js.native
+  /**
+    * Returns true if the given object is an instance of NamedQuery.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/namedQuery.NamedQuery */ scala.Boolean = js.native
 }
 

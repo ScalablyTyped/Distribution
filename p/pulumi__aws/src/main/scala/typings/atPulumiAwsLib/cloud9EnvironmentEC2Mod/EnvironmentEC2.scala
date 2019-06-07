@@ -76,5 +76,10 @@ object EnvironmentEC2 extends js.Object {
     state: atPulumiAwsLib.cloud9EnvironmentEC2Mod.EnvironmentEC2State,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloud9EnvironmentEC2Mod.EnvironmentEC2 = js.native
+  /**
+    * Returns true if the given object is an instance of EnvironmentEC2.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloud9/environmentEC2.EnvironmentEC2 */ scala.Boolean = js.native
 }
 

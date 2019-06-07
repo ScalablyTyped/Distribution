@@ -84,5 +84,10 @@ object Parameter extends js.Object {
     state: atPulumiAwsLib.ssmParameterMod.ParameterState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ssmParameterMod.Parameter = js.native
+  /**
+    * Returns true if the given object is an instance of Parameter.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/parameter.Parameter */ scala.Boolean = js.native
 }
 

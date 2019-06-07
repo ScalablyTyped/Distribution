@@ -44,5 +44,10 @@ object IdentityNotificationTopic extends js.Object {
     state: atPulumiAwsLib.sesIdentityNotificationTopicMod.IdentityNotificationTopicState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.sesIdentityNotificationTopicMod.IdentityNotificationTopic = js.native
+  /**
+    * Returns true if the given object is an instance of IdentityNotificationTopic.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/identityNotificationTopic.IdentityNotificationTopic */ scala.Boolean = js.native
 }
 

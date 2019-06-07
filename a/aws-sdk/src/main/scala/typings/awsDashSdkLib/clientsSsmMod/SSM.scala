@@ -195,6 +195,29 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    */
+  def createOpsItem(): awsDashSdkLib.libRequestMod.Request[CreateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createOpsItem(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateOpsItemResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates a new OpsItem. You must have permission in AWS Identity and Access Management (IAM) to create a new OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    */
+  def createOpsItem(params: CreateOpsItemRequest): awsDashSdkLib.libRequestMod.Request[CreateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createOpsItem(
+    params: CreateOpsItemRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateOpsItemResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Creates a patch baseline.  For information about valid key and value pairs in PatchFilters for each supported operating system type, see PatchFilter. 
     */
   def createPatchBaseline(): awsDashSdkLib.libRequestMod.Request[CreatePatchBaselineResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1127,6 +1150,29 @@ trait SSM
     ]
   ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowsForTargetResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    */
+  def describeOpsItems(): awsDashSdkLib.libRequestMod.Request[DescribeOpsItemsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeOpsItems(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeOpsItemsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOpsItemsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Query a set of OpsItems. You must have permission in AWS Identity and Access Management (IAM) to query a list of OpsItems. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    */
+  def describeOpsItems(params: DescribeOpsItemsRequest): awsDashSdkLib.libRequestMod.Request[DescribeOpsItemsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeOpsItems(
+    params: DescribeOpsItemsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeOpsItemsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeOpsItemsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Get information about a parameter. Request results are returned on a best-effort basis. If you specify MaxResults in the request, the response includes information up to the limit specified. The number of items returned, however, can be between zero and the value of MaxResults. If the service reaches an internal limit while processing the results, it stops the operation and returns the matching values up to that point and a NextToken. You can specify the NextToken in a subsequent call to get the next set of results.
     */
   def describeParameters(): awsDashSdkLib.libRequestMod.Request[DescribeParametersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1575,6 +1621,52 @@ trait SSM
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    */
+  def getOpsItem(): awsDashSdkLib.libRequestMod.Request[GetOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getOpsItem(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetOpsItemResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Get information about an OpsItem by using the ID. You must have permission in AWS Identity and Access Management (IAM) to view information about an OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    */
+  def getOpsItem(params: GetOpsItemRequest): awsDashSdkLib.libRequestMod.Request[GetOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getOpsItem(
+    params: GetOpsItemRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetOpsItemResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * View a summary of OpsItems based on specified filters and aggregators.
+    */
+  def getOpsSummary(): awsDashSdkLib.libRequestMod.Request[GetOpsSummaryResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getOpsSummary(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetOpsSummaryResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetOpsSummaryResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * View a summary of OpsItems based on specified filters and aggregators.
+    */
+  def getOpsSummary(params: GetOpsSummaryRequest): awsDashSdkLib.libRequestMod.Request[GetOpsSummaryResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getOpsSummary(
+    params: GetOpsSummaryRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetOpsSummaryResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetOpsSummaryResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Get information about a parameter by using the parameter name. Don't confuse this API action with the GetParameters API action.
     */
@@ -2633,6 +2725,29 @@ trait SSM
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[UpdateManagedInstanceRoleResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    */
+  def updateOpsItem(): awsDashSdkLib.libRequestMod.Request[UpdateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateOpsItem(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateOpsItemResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Edit or change an OpsItem. You must have permission in AWS Identity and Access Management (IAM) to update an OpsItem. For more information, see Getting Started with OpsItems in the AWS Systems Manager User Guide. Operations engineers and IT professionals use the Systems Manager OpsItems capability to view, investigate, and remediate operational issues impacting the performance and health of their AWS resources. For more information, see AWS Systems Manager OpsItems in the AWS Systems Manager User Guide. 
+    */
+  def updateOpsItem(params: UpdateOpsItemRequest): awsDashSdkLib.libRequestMod.Request[UpdateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def updateOpsItem(
+    params: UpdateOpsItemRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ UpdateOpsItemResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[UpdateOpsItemResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Modifies an existing patch baseline. Fields not specified in the request are left unchanged.  For information about valid key and value pairs in PatchFilters for each supported operating system type, see PatchFilter. 
     */

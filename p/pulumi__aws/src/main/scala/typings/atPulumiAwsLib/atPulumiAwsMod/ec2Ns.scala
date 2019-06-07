@@ -1171,6 +1171,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2AmiMod.AmiState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2AmiMod.Ami = js.native
+    /**
+      * Returns true if the given object is an instance of Ami.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/ami.Ami */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1196,6 +1201,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2AmiCopyMod.AmiCopyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2AmiCopyMod.AmiCopy = js.native
+    /**
+      * Returns true if the given object is an instance of AmiCopy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiCopy.AmiCopy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1221,6 +1231,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2AmiFromInstanceMod.AmiFromInstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2AmiFromInstanceMod.AmiFromInstance = js.native
+    /**
+      * Returns true if the given object is an instance of AmiFromInstance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiFromInstance.AmiFromInstance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1246,6 +1261,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2AmiLaunchPermissionMod.AmiLaunchPermissionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2AmiLaunchPermissionMod.AmiLaunchPermission = js.native
+    /**
+      * Returns true if the given object is an instance of AmiLaunchPermission.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiLaunchPermission.AmiLaunchPermission */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1271,6 +1291,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2CapacityReservationMod.CapacityReservationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2CapacityReservationMod.CapacityReservation = js.native
+    /**
+      * Returns true if the given object is an instance of CapacityReservation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/capacityReservation.CapacityReservation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1296,6 +1321,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2CustomerGatewayMod.CustomerGatewayState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2CustomerGatewayMod.CustomerGateway = js.native
+    /**
+      * Returns true if the given object is an instance of CustomerGateway.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/customerGateway.CustomerGateway */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1321,6 +1351,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2DefaultNetworkAclMod.DefaultNetworkAclState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2DefaultNetworkAclMod.DefaultNetworkAcl = js.native
+    /**
+      * Returns true if the given object is an instance of DefaultNetworkAcl.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultNetworkAcl.DefaultNetworkAcl */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1346,6 +1381,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2DefaultRouteTableMod.DefaultRouteTableState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2DefaultRouteTableMod.DefaultRouteTable = js.native
+    /**
+      * Returns true if the given object is an instance of DefaultRouteTable.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultRouteTable.DefaultRouteTable */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1371,6 +1411,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2DefaultSecurityGroupMod.DefaultSecurityGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2DefaultSecurityGroupMod.DefaultSecurityGroup = js.native
+    /**
+      * Returns true if the given object is an instance of DefaultSecurityGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultSecurityGroup.DefaultSecurityGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1396,6 +1441,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2DefaultSubnetMod.DefaultSubnetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2DefaultSubnetMod.DefaultSubnet = js.native
+    /**
+      * Returns true if the given object is an instance of DefaultSubnet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultSubnet.DefaultSubnet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1421,6 +1471,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2DefaultVpcMod.DefaultVpcState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2DefaultVpcMod.DefaultVpc = js.native
+    /**
+      * Returns true if the given object is an instance of DefaultVpc.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultVpc.DefaultVpc */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1446,6 +1501,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2DefaultVpcDhcpOptionsMod.DefaultVpcDhcpOptionsState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2DefaultVpcDhcpOptionsMod.DefaultVpcDhcpOptions = js.native
+    /**
+      * Returns true if the given object is an instance of DefaultVpcDhcpOptions.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultVpcDhcpOptions.DefaultVpcDhcpOptions */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1471,6 +1531,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2EgressOnlyInternetGatewayMod.EgressOnlyInternetGatewayState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2EgressOnlyInternetGatewayMod.EgressOnlyInternetGateway = js.native
+    /**
+      * Returns true if the given object is an instance of EgressOnlyInternetGateway.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/egressOnlyInternetGateway.EgressOnlyInternetGateway */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1496,6 +1561,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2EipMod.EipState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2EipMod.Eip = js.native
+    /**
+      * Returns true if the given object is an instance of Eip.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eip.Eip */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1521,6 +1591,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2EipAssociationMod.EipAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2EipAssociationMod.EipAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of EipAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/eipAssociation.EipAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1546,6 +1621,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2FleetMod.FleetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2FleetMod.Fleet = js.native
+    /**
+      * Returns true if the given object is an instance of Fleet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/fleet.Fleet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1571,6 +1651,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2FlowLogMod.FlowLogState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2FlowLogMod.FlowLog = js.native
+    /**
+      * Returns true if the given object is an instance of FlowLog.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/flowLog.FlowLog */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1596,6 +1681,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2InstanceMod.InstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2InstanceMod.Instance = js.native
+    /**
+      * Returns true if the given object is an instance of Instance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/instance.Instance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1621,6 +1711,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2InternetGatewayMod.InternetGatewayState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2InternetGatewayMod.InternetGateway = js.native
+    /**
+      * Returns true if the given object is an instance of InternetGateway.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/internetGateway.InternetGateway */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1646,6 +1741,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2KeyPairMod.KeyPairState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2KeyPairMod.KeyPair = js.native
+    /**
+      * Returns true if the given object is an instance of KeyPair.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/keyPair.KeyPair */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1671,6 +1771,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2LaunchConfigurationMod.LaunchConfigurationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2LaunchConfigurationMod.LaunchConfiguration = js.native
+    /**
+      * Returns true if the given object is an instance of LaunchConfiguration.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/launchConfiguration.LaunchConfiguration */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1696,6 +1801,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2LaunchTemplateMod.LaunchTemplateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2LaunchTemplateMod.LaunchTemplate = js.native
+    /**
+      * Returns true if the given object is an instance of LaunchTemplate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/launchTemplate.LaunchTemplate */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1721,6 +1831,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2MainRouteTableAssociationMod.MainRouteTableAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2MainRouteTableAssociationMod.MainRouteTableAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of MainRouteTableAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/mainRouteTableAssociation.MainRouteTableAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1746,6 +1861,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2NatGatewayMod.NatGatewayState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2NatGatewayMod.NatGateway = js.native
+    /**
+      * Returns true if the given object is an instance of NatGateway.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/natGateway.NatGateway */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1771,6 +1891,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2NetworkAclMod.NetworkAclState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2NetworkAclMod.NetworkAcl = js.native
+    /**
+      * Returns true if the given object is an instance of NetworkAcl.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkAcl.NetworkAcl */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1796,6 +1921,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2NetworkAclRuleMod.NetworkAclRuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2NetworkAclRuleMod.NetworkAclRule = js.native
+    /**
+      * Returns true if the given object is an instance of NetworkAclRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkAclRule.NetworkAclRule */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1821,6 +1951,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2NetworkInterfaceMod.NetworkInterfaceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2NetworkInterfaceMod.NetworkInterface = js.native
+    /**
+      * Returns true if the given object is an instance of NetworkInterface.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterface.NetworkInterface */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1846,6 +1981,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2NetworkInterfaceAttachmentMod.NetworkInterfaceAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2NetworkInterfaceAttachmentMod.NetworkInterfaceAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of NetworkInterfaceAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceAttachment.NetworkInterfaceAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1871,6 +2011,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2NetworkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2NetworkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of NetworkInterfaceSecurityGroupAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1896,6 +2041,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2PeeringConnectionOptionsMod.PeeringConnectionOptionsState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2PeeringConnectionOptionsMod.PeeringConnectionOptions = js.native
+    /**
+      * Returns true if the given object is an instance of PeeringConnectionOptions.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/peeringConnectionOptions.PeeringConnectionOptions */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1921,6 +2071,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2PlacementGroupMod.PlacementGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2PlacementGroupMod.PlacementGroup = js.native
+    /**
+      * Returns true if the given object is an instance of PlacementGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/placementGroup.PlacementGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1946,6 +2101,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2ProxyProtocolPolicyMod.ProxyProtocolPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2ProxyProtocolPolicyMod.ProxyProtocolPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of ProxyProtocolPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/proxyProtocolPolicy.ProxyProtocolPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1971,6 +2131,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2RouteMod.RouteState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2RouteMod.Route = js.native
+    /**
+      * Returns true if the given object is an instance of Route.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/route.Route */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1996,6 +2161,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2RouteTableMod.RouteTableState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2RouteTableMod.RouteTable = js.native
+    /**
+      * Returns true if the given object is an instance of RouteTable.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/routeTable.RouteTable */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2021,6 +2191,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2RouteTableAssociationMod.RouteTableAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2RouteTableAssociationMod.RouteTableAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of RouteTableAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/routeTableAssociation.RouteTableAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2046,6 +2221,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2SecurityGroupMod.SecurityGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2SecurityGroupMod.SecurityGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SecurityGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/securityGroup.SecurityGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2071,6 +2251,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2SecurityGroupRuleMod.SecurityGroupRuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2SecurityGroupRuleMod.SecurityGroupRule = js.native
+    /**
+      * Returns true if the given object is an instance of SecurityGroupRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/securityGroupRule.SecurityGroupRule */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2096,6 +2281,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2SnapshotCreateVolumePermissionMod.SnapshotCreateVolumePermissionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2SnapshotCreateVolumePermissionMod.SnapshotCreateVolumePermission = js.native
+    /**
+      * Returns true if the given object is an instance of SnapshotCreateVolumePermission.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2121,6 +2311,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2SpotDatafeedSubscriptionMod.SpotDatafeedSubscriptionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2SpotDatafeedSubscriptionMod.SpotDatafeedSubscription = js.native
+    /**
+      * Returns true if the given object is an instance of SpotDatafeedSubscription.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotDatafeedSubscription.SpotDatafeedSubscription */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2146,6 +2341,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2SpotFleetRequestMod.SpotFleetRequestState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2SpotFleetRequestMod.SpotFleetRequest = js.native
+    /**
+      * Returns true if the given object is an instance of SpotFleetRequest.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotFleetRequest.SpotFleetRequest */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2171,6 +2371,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2SpotInstanceRequestMod.SpotInstanceRequestState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2SpotInstanceRequestMod.SpotInstanceRequest = js.native
+    /**
+      * Returns true if the given object is an instance of SpotInstanceRequest.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotInstanceRequest.SpotInstanceRequest */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2196,6 +2401,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2SubnetMod.SubnetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2SubnetMod.Subnet = js.native
+    /**
+      * Returns true if the given object is an instance of Subnet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/subnet.Subnet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2221,6 +2431,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VolumeAttachmentMod.VolumeAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VolumeAttachmentMod.VolumeAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of VolumeAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/volumeAttachment.VolumeAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2246,6 +2461,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcMod.VpcState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcMod.Vpc = js.native
+    /**
+      * Returns true if the given object is an instance of Vpc.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpc.Vpc */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2271,6 +2491,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcDhcpOptionsMod.VpcDhcpOptionsState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcDhcpOptionsMod.VpcDhcpOptions = js.native
+    /**
+      * Returns true if the given object is an instance of VpcDhcpOptions.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptions.VpcDhcpOptions */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2296,6 +2521,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of VpcDhcpOptionsAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2321,6 +2551,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcEndpointMod.VpcEndpointState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcEndpointMod.VpcEndpoint = js.native
+    /**
+      * Returns true if the given object is an instance of VpcEndpoint.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpoint.VpcEndpoint */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2346,6 +2581,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcEndpointConnectionNotificationMod.VpcEndpointConnectionNotificationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcEndpointConnectionNotificationMod.VpcEndpointConnectionNotification = js.native
+    /**
+      * Returns true if the given object is an instance of VpcEndpointConnectionNotification.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointConnectionNotification.VpcEndpointConnectionNotification */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2371,6 +2611,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of VpcEndpointRouteTableAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2396,6 +2641,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcEndpointServiceMod.VpcEndpointServiceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcEndpointServiceMod.VpcEndpointService = js.native
+    /**
+      * Returns true if the given object is an instance of VpcEndpointService.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointService.VpcEndpointService */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2421,6 +2671,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcEndpointServiceAllowedPrincipleMod.VpcEndpointServiceAllowedPrincipleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcEndpointServiceAllowedPrincipleMod.VpcEndpointServiceAllowedPrinciple = js.native
+    /**
+      * Returns true if the given object is an instance of VpcEndpointServiceAllowedPrinciple.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple.VpcEndpointServiceAllowedPrinciple */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2446,6 +2701,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcEndpointSubnetAssociationMod.VpcEndpointSubnetAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcEndpointSubnetAssociationMod.VpcEndpointSubnetAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of VpcEndpointSubnetAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2471,6 +2731,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of VpcIpv4CidrBlockAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2496,6 +2761,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcPeeringConnectionMod.VpcPeeringConnectionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcPeeringConnectionMod.VpcPeeringConnection = js.native
+    /**
+      * Returns true if the given object is an instance of VpcPeeringConnection.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcPeeringConnection.VpcPeeringConnection */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2521,6 +2791,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpcPeeringConnectionAccepterMod.VpcPeeringConnectionAccepterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpcPeeringConnectionAccepterMod.VpcPeeringConnectionAccepter = js.native
+    /**
+      * Returns true if the given object is an instance of VpcPeeringConnectionAccepter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepter */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2546,6 +2821,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpnConnectionMod.VpnConnectionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpnConnectionMod.VpnConnection = js.native
+    /**
+      * Returns true if the given object is an instance of VpnConnection.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnConnection.VpnConnection */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2571,6 +2851,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpnConnectionRouteMod.VpnConnectionRouteState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpnConnectionRouteMod.VpnConnectionRoute = js.native
+    /**
+      * Returns true if the given object is an instance of VpnConnectionRoute.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnConnectionRoute.VpnConnectionRoute */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2596,6 +2881,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpnGatewayMod.VpnGatewayState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpnGatewayMod.VpnGateway = js.native
+    /**
+      * Returns true if the given object is an instance of VpnGateway.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGateway.VpnGateway */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2621,6 +2911,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpnGatewayAttachmentMod.VpnGatewayAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpnGatewayAttachmentMod.VpnGatewayAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of VpnGatewayAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayAttachment.VpnGatewayAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -2646,6 +2941,11 @@ object ec2Ns extends js.Object {
       state: atPulumiAwsLib.ec2VpnGatewayRoutePropagationMod.VpnGatewayRoutePropagationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2VpnGatewayRoutePropagationMod.VpnGatewayRoutePropagation = js.native
+    /**
+      * Returns true if the given object is an instance of VpnGatewayRoutePropagation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnGatewayRoutePropagation.VpnGatewayRoutePropagation */ scala.Boolean = js.native
   }
   
 }

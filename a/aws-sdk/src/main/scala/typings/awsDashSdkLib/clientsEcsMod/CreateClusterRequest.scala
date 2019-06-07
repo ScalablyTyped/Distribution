@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait CreateClusterRequest extends js.Object {
   /**
-    * The name of your cluster. If you do not specify a name for your cluster, you create a cluster named default. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed.
+    * The name of your cluster. If you do not specify a name for your cluster, you create a cluster named default. Up to 255 letters (uppercase and lowercase), numbers, and hyphens are allowed. 
     */
   var clusterName: js.UndefOr[String] = js.undefined
   /**

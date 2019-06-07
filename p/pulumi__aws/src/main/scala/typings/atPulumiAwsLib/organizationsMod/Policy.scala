@@ -44,5 +44,10 @@ object Policy extends js.Object {
     state: atPulumiAwsLib.organizationsPolicyMod.PolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.organizationsPolicyMod.Policy = js.native
+  /**
+    * Returns true if the given object is an instance of Policy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policy.Policy */ scala.Boolean = js.native
 }
 

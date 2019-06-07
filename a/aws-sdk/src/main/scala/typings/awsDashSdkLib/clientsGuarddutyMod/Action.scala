@@ -9,7 +9,7 @@ trait Action extends js.Object {
   /**
     * GuardDuty Finding activity type.
     */
-  var ActionType: js.UndefOr[__string] = js.undefined
+  var ActionType: js.UndefOr[String] = js.undefined
   /**
     * Information about the AWS_API_CALL action described in this finding.
     */
@@ -31,7 +31,7 @@ trait Action extends js.Object {
 object Action {
   @scala.inline
   def apply(
-    ActionType: __string = null,
+    ActionType: String = null,
     AwsApiCallAction: AwsApiCallAction = null,
     DnsRequestAction: DnsRequestAction = null,
     NetworkConnectionAction: NetworkConnectionAction = null,

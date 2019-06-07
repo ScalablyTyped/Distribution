@@ -66,6 +66,9 @@ package object clientsEcsMod {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
     - awsDashSdkLib.awsDashSdkLibStrings.DRAINING
+    - awsDashSdkLib.awsDashSdkLibStrings.REGISTERING
+    - awsDashSdkLib.awsDashSdkLibStrings.DEREGISTERING
+    - awsDashSdkLib.awsDashSdkLibStrings.REGISTRATION_FAILED
     - java.lang.String
   */
   type ContainerInstanceStatus = _ContainerInstanceStatus | java.lang.String
@@ -208,6 +211,7 @@ package object clientsEcsMod {
     - awsDashSdkLib.awsDashSdkLibStrings.serviceLongArnFormat
     - awsDashSdkLib.awsDashSdkLibStrings.taskLongArnFormat
     - awsDashSdkLib.awsDashSdkLibStrings.containerInstanceLongArnFormat
+    - awsDashSdkLib.awsDashSdkLibStrings.awsvpcTrunking
     - java.lang.String
   */
   type SettingName = _SettingName | java.lang.String

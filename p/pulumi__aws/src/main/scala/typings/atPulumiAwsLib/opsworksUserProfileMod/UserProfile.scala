@@ -60,5 +60,10 @@ object UserProfile extends js.Object {
     state: atPulumiAwsLib.opsworksUserProfileMod.UserProfileState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.opsworksUserProfileMod.UserProfile = js.native
+  /**
+    * Returns true if the given object is an instance of UserProfile.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/userProfile.UserProfile */ scala.Boolean = js.native
 }
 

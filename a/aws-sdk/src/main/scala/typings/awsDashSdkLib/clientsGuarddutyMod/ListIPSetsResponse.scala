@@ -6,15 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListIPSetsResponse extends js.Object {
-  var IpSetIds: js.UndefOr[IpSetIds] = js.undefined
-  var NextToken: js.UndefOr[NextToken] = js.undefined
+  /**
+    * The IDs of the IPSet resources.
+    */
+  var IpSetIds: awsDashSdkLib.clientsGuarddutyMod.IpSetIds
+  /**
+    * Pagination parameter to be used on the next list operation to retrieve more items.
+    */
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 
 object ListIPSetsResponse {
   @scala.inline
-  def apply(IpSetIds: IpSetIds = null, NextToken: NextToken = null): ListIPSetsResponse = {
-    val __obj = js.Dynamic.literal()
-    if (IpSetIds != null) __obj.updateDynamic("IpSetIds")(IpSetIds)
+  def apply(IpSetIds: IpSetIds, NextToken: String = null): ListIPSetsResponse = {
+    val __obj = js.Dynamic.literal(IpSetIds = IpSetIds)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListIPSetsResponse]
   }

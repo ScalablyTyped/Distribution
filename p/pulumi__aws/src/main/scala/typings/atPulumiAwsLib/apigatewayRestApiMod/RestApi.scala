@@ -91,5 +91,10 @@ object RestApi extends js.Object {
     state: atPulumiAwsLib.apigatewayRestApiMod.RestApiState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayRestApiMod.RestApi = js.native
+  /**
+    * Returns true if the given object is an instance of RestApi.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/restApi.RestApi */ scala.Boolean = js.native
 }
 

@@ -9,11 +9,11 @@ trait AwsApiCallAction extends js.Object {
   /**
     * AWS API name.
     */
-  var Api: js.UndefOr[__string] = js.undefined
+  var Api: js.UndefOr[String] = js.undefined
   /**
     * AWS API caller type.
     */
-  var CallerType: js.UndefOr[__string] = js.undefined
+  var CallerType: js.UndefOr[String] = js.undefined
   /**
     * Domain information for the AWS API call.
     */
@@ -25,17 +25,17 @@ trait AwsApiCallAction extends js.Object {
   /**
     * AWS service name whose API was invoked.
     */
-  var ServiceName: js.UndefOr[__string] = js.undefined
+  var ServiceName: js.UndefOr[String] = js.undefined
 }
 
 object AwsApiCallAction {
   @scala.inline
   def apply(
-    Api: __string = null,
-    CallerType: __string = null,
+    Api: String = null,
+    CallerType: String = null,
     DomainDetails: DomainDetails = null,
     RemoteIpDetails: RemoteIpDetails = null,
-    ServiceName: __string = null
+    ServiceName: String = null
   ): AwsApiCallAction = {
     val __obj = js.Dynamic.literal()
     if (Api != null) __obj.updateDynamic("Api")(Api)

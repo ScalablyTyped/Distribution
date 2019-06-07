@@ -13,12 +13,12 @@ trait DeleteMembersRequest extends js.Object {
   /**
     * The unique ID of the detector of the GuardDuty account whose members you want to delete.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
 }
 
 object DeleteMembersRequest {
   @scala.inline
-  def apply(AccountIds: AccountIds, DetectorId: __string): DeleteMembersRequest = {
+  def apply(AccountIds: AccountIds, DetectorId: DetectorId): DeleteMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds, DetectorId = DetectorId)
   
     __obj.asInstanceOf[DeleteMembersRequest]

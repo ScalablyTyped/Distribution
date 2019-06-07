@@ -44,5 +44,10 @@ object EndpointConfiguration extends js.Object {
     state: atPulumiAwsLib.sagemakerEndpointConfigurationMod.EndpointConfigurationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.sagemakerEndpointConfigurationMod.EndpointConfiguration = js.native
+  /**
+    * Returns true if the given object is an instance of EndpointConfiguration.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ scala.Boolean = js.native
 }
 

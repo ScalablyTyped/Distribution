@@ -44,5 +44,10 @@ object QueryLog extends js.Object {
     state: atPulumiAwsLib.route53QueryLogMod.QueryLogState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.route53QueryLogMod.QueryLog = js.native
+  /**
+    * Returns true if the given object is an instance of QueryLog.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ scala.Boolean = js.native
 }
 

@@ -28,12 +28,15 @@ class Promise[R] protected () extends Thenable[R] {
   def `catch`[U](): Promise[U] = js.native
   def `catch`[U](onRejected: js.Function1[/* error */ js.Any, U | Thenable[U]]): Promise[U] = js.native
   /**
-    * onSettled is invoked when/if the "promise" settles (either rejects or fulfills);
+    * onSettled is invoked when/if the "promise" settles (either rejects or fulfills).
+    * The returned promise is settled when the `Thenable` returned by `onFinally` settles;
+    * it is rejected if `onFinally` throws or rejects; otherwise it assumes the state of the
+    * original Promise.
     *
     * @param onFinally called when/if "promise" settles
     */
-  def `finally`[U](): Promise[U] = js.native
-  def `finally`[U](onFinally: js.Function1[/* callback */ js.Any, U | Thenable[U]]): Promise[U] = js.native
+  def `finally`(): Promise[R] = js.native
+  def `finally`(onFinally: js.Function0[_ | Thenable[_]]): Promise[R] = js.native
 }
 
 /* static members */

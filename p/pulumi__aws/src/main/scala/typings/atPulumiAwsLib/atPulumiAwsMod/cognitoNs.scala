@@ -149,6 +149,11 @@ object cognitoNs extends js.Object {
       state: atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPoolState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPool = js.native
+    /**
+      * Returns true if the given object is an instance of IdentityPool.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPool.IdentityPool */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -174,6 +179,11 @@ object cognitoNs extends js.Object {
       state: atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of IdentityPoolRoleAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -199,6 +209,11 @@ object cognitoNs extends js.Object {
       state: atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProviderState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProvider = js.native
+    /**
+      * Returns true if the given object is an instance of IdentityProvider.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityProvider.IdentityProvider */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -224,6 +239,11 @@ object cognitoNs extends js.Object {
       state: atPulumiAwsLib.cognitoResourceServerMod.ResourceServerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoResourceServerMod.ResourceServer = js.native
+    /**
+      * Returns true if the given object is an instance of ResourceServer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/resourceServer.ResourceServer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -249,6 +269,11 @@ object cognitoNs extends js.Object {
       state: atPulumiAwsLib.cognitoUserGroupMod.UserGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoUserGroupMod.UserGroup = js.native
+    /**
+      * Returns true if the given object is an instance of UserGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -274,6 +299,11 @@ object cognitoNs extends js.Object {
       state: atPulumiAwsLib.cognitoUserPoolMod.UserPoolState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoUserPoolMod.UserPool = js.native
+    /**
+      * Returns true if the given object is an instance of UserPool.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -299,6 +329,11 @@ object cognitoNs extends js.Object {
       state: atPulumiAwsLib.cognitoUserPoolClientMod.UserPoolClientState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoUserPoolClientMod.UserPoolClient = js.native
+    /**
+      * Returns true if the given object is an instance of UserPoolClient.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolClient.UserPoolClient */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -324,6 +359,11 @@ object cognitoNs extends js.Object {
       state: atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomainState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomain = js.native
+    /**
+      * Returns true if the given object is an instance of UserPoolDomain.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPoolDomain.UserPoolDomain */ scala.Boolean = js.native
   }
   
 }

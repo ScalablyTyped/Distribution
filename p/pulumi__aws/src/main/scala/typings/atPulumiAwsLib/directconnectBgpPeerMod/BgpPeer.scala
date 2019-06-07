@@ -82,5 +82,10 @@ object BgpPeer extends js.Object {
     state: atPulumiAwsLib.directconnectBgpPeerMod.BgpPeerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.directconnectBgpPeerMod.BgpPeer = js.native
+  /**
+    * Returns true if the given object is an instance of BgpPeer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ scala.Boolean = js.native
 }
 

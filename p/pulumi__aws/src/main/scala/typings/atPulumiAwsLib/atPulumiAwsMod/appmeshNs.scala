@@ -102,6 +102,11 @@ object appmeshNs extends js.Object {
       state: atPulumiAwsLib.appmeshMeshMod.MeshState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appmeshMeshMod.Mesh = js.native
+    /**
+      * Returns true if the given object is an instance of Mesh.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/mesh.Mesh */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -127,6 +132,11 @@ object appmeshNs extends js.Object {
       state: atPulumiAwsLib.appmeshRouteMod.RouteState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appmeshRouteMod.Route = js.native
+    /**
+      * Returns true if the given object is an instance of Route.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/route.Route */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -152,6 +162,11 @@ object appmeshNs extends js.Object {
       state: atPulumiAwsLib.appmeshVirtualNodeMod.VirtualNodeState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appmeshVirtualNodeMod.VirtualNode = js.native
+    /**
+      * Returns true if the given object is an instance of VirtualNode.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualNode.VirtualNode */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -177,6 +192,11 @@ object appmeshNs extends js.Object {
       state: atPulumiAwsLib.appmeshVirtualRouterMod.VirtualRouterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appmeshVirtualRouterMod.VirtualRouter = js.native
+    /**
+      * Returns true if the given object is an instance of VirtualRouter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualRouter.VirtualRouter */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -202,6 +222,11 @@ object appmeshNs extends js.Object {
       state: atPulumiAwsLib.appmeshVirtualServiceMod.VirtualServiceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appmeshVirtualServiceMod.VirtualService = js.native
+    /**
+      * Returns true if the given object is an instance of VirtualService.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualService.VirtualService */ scala.Boolean = js.native
   }
   
 }

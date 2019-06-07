@@ -45,5 +45,10 @@ object Key extends js.Object {
     state: atPulumiAwsLib.kmsKeyMod.KeyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.kmsKeyMod.Key = js.native
+  /**
+    * Returns true if the given object is an instance of Key.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/key.Key */ scala.Boolean = js.native
 }
 

@@ -106,5 +106,10 @@ object Stack extends js.Object {
     state: atPulumiAwsLib.cloudformationStackMod.StackState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloudformationStackMod.Stack = js.native
+  /**
+    * Returns true if the given object is an instance of Stack.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stack.Stack */ scala.Boolean = js.native
 }
 

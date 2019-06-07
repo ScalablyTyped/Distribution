@@ -44,5 +44,10 @@ object BaiduChannel extends js.Object {
     state: atPulumiAwsLib.pinpointBaiduChannelMod.BaiduChannelState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.pinpointBaiduChannelMod.BaiduChannel = js.native
+  /**
+    * Returns true if the given object is an instance of BaiduChannel.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/baiduChannel.BaiduChannel */ scala.Boolean = js.native
 }
 

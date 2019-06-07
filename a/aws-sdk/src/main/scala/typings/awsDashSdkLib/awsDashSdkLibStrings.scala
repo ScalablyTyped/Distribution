@@ -3065,6 +3065,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSsmMod._DocumentType
   
   @js.native
+  sealed trait AutomationId
+    extends awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
+  
+  @js.native
   sealed trait AutomationType
     extends awsDashSdkLib.clientsSsmMod._AutomationExecutionFilterKey
   
@@ -3696,6 +3700,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BeginWith
     extends awsDashSdkLib.clientsSsmMod._InventoryQueryOperatorType
+       with awsDashSdkLib.clientsSsmMod._OpsFilterOperatorType
   
   @js.native
   sealed trait Bianca
@@ -5363,6 +5368,7 @@ object awsDashSdkLibStrings {
   sealed trait Contains
     extends awsDashSdkLib.clientsCognitoidentityMod._MappingRuleMatchType
        with awsDashSdkLib.clientsSagemakerMod._Operator
+       with awsDashSdkLib.clientsSsmMod._OpsItemFilterOperator
   
   @js.native
   sealed trait ContentBasedDeduplication
@@ -5488,8 +5494,13 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMachinelearningMod._MLModelFilterVariable
   
   @js.native
+  sealed trait CreatedBy
+    extends awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
+  
+  @js.native
   sealed trait CreatedTime
     extends awsDashSdkLib.clientsSsmMod._AssociationExecutionFilterKey
+       with awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
   
   @js.native
   sealed trait CreatedTimestamp
@@ -6075,7 +6086,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait DEREGISTERING
-    extends awsDashSdkLib.clientsAlexaforbusinessMod._EnrollmentStatus
+    extends awsDashSdkLib.clientsEcsMod._ContainerInstanceStatus
+       with awsDashSdkLib.clientsAlexaforbusinessMod._EnrollmentStatus
        with awsDashSdkLib.clientsWorkspacesMod._WorkspaceDirectoryState
   
   @js.native
@@ -7987,6 +7999,8 @@ object awsDashSdkLibStrings {
   sealed trait Equal
     extends awsDashSdkLib.clientsSsmMod._InstancePatchStateOperatorType
        with awsDashSdkLib.clientsSsmMod._InventoryQueryOperatorType
+       with awsDashSdkLib.clientsSsmMod._OpsFilterOperatorType
+       with awsDashSdkLib.clientsSsmMod._OpsItemFilterOperator
   
   @js.native
   sealed trait EqualTo
@@ -8086,6 +8100,7 @@ object awsDashSdkLibStrings {
   sealed trait Exists
     extends awsDashSdkLib.clientsMturkMod._Comparator
        with awsDashSdkLib.clientsSsmMod._InventoryQueryOperatorType
+       with awsDashSdkLib.clientsSsmMod._OpsFilterOperatorType
   
   @js.native
   sealed trait Expedited
@@ -9513,6 +9528,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSsmMod._InstancePatchStateOperatorType
        with awsDashSdkLib.clientsSsmMod._InventoryQueryOperatorType
        with awsDashSdkLib.clientsSagemakerMod._Operator
+       with awsDashSdkLib.clientsSsmMod._OpsFilterOperatorType
+       with awsDashSdkLib.clientsSsmMod._OpsItemFilterOperator
   
   @js.native
   sealed trait GreaterThanOrEqualTo
@@ -11094,6 +11111,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCodedeployMod._LifecycleEventStatus
        with awsDashSdkLib.clientsSagemakerMod._ModelPackageStatus
        with awsDashSdkLib.clientsSsmMod._NotificationEvent
+       with awsDashSdkLib.clientsSsmMod._OpsItemStatus
        with awsDashSdkLib.clientsCodepipelineMod._PipelineExecutionStatus
        with awsDashSdkLib.clientsAutoscalingMod._ScalingActivityStatusCode
        with awsDashSdkLib.clientsApplicationautoscalingMod._ScalingActivityStatusCode
@@ -12377,6 +12395,7 @@ object awsDashSdkLibStrings {
   sealed trait LastModifiedTime
     extends awsDashSdkLib.clientsSagemakerMod._CodeRepositorySortBy
        with awsDashSdkLib.clientsSagemakerMod._NotebookInstanceLifecycleConfigSortKey
+       with awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
   
   @js.native
   sealed trait LastModifiedTimestamp
@@ -12424,6 +12443,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSsmMod._InstancePatchStateOperatorType
        with awsDashSdkLib.clientsSsmMod._InventoryQueryOperatorType
        with awsDashSdkLib.clientsSagemakerMod._Operator
+       with awsDashSdkLib.clientsSsmMod._OpsFilterOperatorType
+       with awsDashSdkLib.clientsSsmMod._OpsItemFilterOperator
   
   @js.native
   sealed trait LessThanOrEqualTo
@@ -14300,6 +14321,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSsmMod._InstancePatchStateOperatorType
        with awsDashSdkLib.clientsSsmMod._InventoryQueryOperatorType
        with awsDashSdkLib.clientsCognitoidentityMod._MappingRuleMatchType
+       with awsDashSdkLib.clientsSsmMod._OpsFilterOperatorType
   
   @js.native
   sealed trait NotEqualTo
@@ -14826,12 +14848,36 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSsmMod._PingStatus
   
   @js.native
+  sealed trait Open
+    extends awsDashSdkLib.clientsSsmMod._OpsItemStatus
+  
+  @js.native
   sealed trait OpenInstancePublicPorts
     extends awsDashSdkLib.clientsLightsailMod._OperationType
   
   @js.native
   sealed trait OperationNotPermitted
     extends awsDashSdkLib.clientsEksMod._ErrorCode
+  
+  @js.native
+  sealed trait OperationalData
+    extends awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
+  
+  @js.native
+  sealed trait OperationalDataKey
+    extends awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
+  
+  @js.native
+  sealed trait OperationalDataValue
+    extends awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
+  
+  @js.native
+  sealed trait OpsItem
+    extends awsDashSdkLib.clientsSsmMod._ResourceTypeForTagging
+  
+  @js.native
+  sealed trait OpsItemId
+    extends awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
   
   @js.native
   sealed trait Optional
@@ -16068,6 +16114,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCloudfrontMod._PriceClass
   
   @js.native
+  sealed trait Priority
+    extends awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
+  
+  @js.native
   sealed trait Private
     extends awsDashSdkLib.clientsLightsailMod._PortAccessType
   
@@ -16463,7 +16513,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait REGISTERING
-    extends awsDashSdkLib.clientsWorkspacesMod._WorkspaceDirectoryState
+    extends awsDashSdkLib.clientsEcsMod._ContainerInstanceStatus
+       with awsDashSdkLib.clientsWorkspacesMod._WorkspaceDirectoryState
   
   @js.native
   sealed trait REGISTER_DOMAIN
@@ -16476,6 +16527,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait REGISTER_INSTANCE
     extends awsDashSdkLib.clientsServicediscoveryMod._OperationType
+  
+  @js.native
+  sealed trait REGISTRATION_FAILED
+    extends awsDashSdkLib.clientsEcsMod._ContainerInstanceStatus
   
   @js.native
   sealed trait REGISTRY
@@ -17369,6 +17424,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsGreengrassMod._DeploymentType
   
   @js.native
+  sealed trait Resolved
+    extends awsDashSdkLib.clientsSsmMod._OpsItemStatus
+  
+  @js.native
   sealed trait Resource extends js.Object
   
   @js.native
@@ -17390,6 +17449,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ResourceId
     extends awsDashSdkLib.clientsSsmMod._AssociationExecutionTargetsFilterKey
+       with awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
   
   @js.native
   sealed trait ResourceName
@@ -19225,6 +19285,10 @@ object awsDashSdkLibStrings {
   sealed trait SearchQuery extends js.Object
   
   @js.native
+  sealed trait SearchableString
+    extends awsDashSdkLib.clientsSsmMod._OpsItemDataType
+  
+  @js.native
   sealed trait Seconds
     extends awsDashSdkLib.clientsLightsailMod._MetricUnit
        with awsDashSdkLib.clientsCloudwatchMod._StandardUnit
@@ -19435,6 +19499,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Source
     extends awsDashSdkLib.clientsCodepipelineMod._ActionCategory
+       with awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
   
   @js.native
   sealed trait SourceProductId
@@ -19544,6 +19609,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSagemakerMod._ListCompilationJobsSortBy
        with awsDashSdkLib.clientsMachinelearningMod._MLModelFilterVariable
        with awsDashSdkLib.clientsSagemakerMod._NotebookInstanceSortKey
+       with awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
        with awsDashSdkLib.clientsSsmMod._SessionFilterKey
        with awsDashSdkLib.clientsSagemakerMod._SortBy
        with awsDashSdkLib.clientsSagemakerMod._TrainingJobSortByOptions
@@ -19620,6 +19686,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCodepipelineMod._ActionConfigurationPropertyType
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._AttributeDataType
        with awsDashSdkLib.clientsSsmMod._DocumentParameterType
+       with awsDashSdkLib.clientsSsmMod._OpsItemDataType
        with awsDashSdkLib.clientsSsmMod._ParameterType
        with awsDashSdkLib.clientsCodedeployMod._RevisionLocationType
   
@@ -20650,7 +20717,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Title
-    extends awsDashSdkLib.clientsServicecatalogMod._ProductViewSortBy
+    extends awsDashSdkLib.clientsSsmMod._OpsItemFilterKey
+       with awsDashSdkLib.clientsServicecatalogMod._ProductViewSortBy
   
   @js.native
   sealed trait Token
@@ -22826,6 +22894,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEcsMod._NetworkMode
   
   @js.native
+  sealed trait awsvpcTrunking
+    extends awsDashSdkLib.clientsEcsMod._SettingName
+  
+  @js.native
   sealed trait `backup-type`
     extends awsDashSdkLib.clientsFsxMod._FilterName
   
@@ -23851,6 +23923,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait delivery
     extends awsDashSdkLib.clientsSesMod._EventType
+  
+  @js.native
+  sealed trait deliveryOptions
+    extends awsDashSdkLib.clientsSesMod._ConfigurationSetAttribute
   
   @js.native
   sealed trait deny
@@ -27700,6 +27776,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEc2Mod._NetworkInterfaceAttribute
   
   @js.native
+  sealed trait speke
+    extends awsDashSdkLib.clientsMediaconnectMod._KeyType
+  
+  @js.native
   sealed trait splunk
     extends awsDashSdkLib.clientsEcsMod._LogDriver
   
@@ -27799,7 +27879,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEc2Mod._TransitGatewayRouteType
   
   @js.native
-  sealed trait `static-key` extends js.Object
+  sealed trait `static-key`
+    extends awsDashSdkLib.clientsMediaconnectMod._KeyType
   
   @js.native
   sealed trait stepComplete extends js.Object
@@ -29991,6 +30072,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Automation: Automation = "Automation".asInstanceOf[Automation]
   @scala.inline
+  def AutomationId: AutomationId = "AutomationId".asInstanceOf[AutomationId]
+  @scala.inline
   def AutomationType: AutomationType = "AutomationType".asInstanceOf[AutomationType]
   @scala.inline
   def `Availability Zone`: `Availability Zone` = "Availability Zone".asInstanceOf[`Availability Zone`]
@@ -30976,6 +31059,8 @@ object awsDashSdkLibStrings {
   def Created: Created = "Created".asInstanceOf[Created]
   @scala.inline
   def CreatedAt: CreatedAt = "CreatedAt".asInstanceOf[CreatedAt]
+  @scala.inline
+  def CreatedBy: CreatedBy = "CreatedBy".asInstanceOf[CreatedBy]
   @scala.inline
   def CreatedTime: CreatedTime = "CreatedTime".asInstanceOf[CreatedTime]
   @scala.inline
@@ -34715,9 +34800,21 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Online: Online = "Online".asInstanceOf[Online]
   @scala.inline
+  def Open: Open = "Open".asInstanceOf[Open]
+  @scala.inline
   def OpenInstancePublicPorts: OpenInstancePublicPorts = "OpenInstancePublicPorts".asInstanceOf[OpenInstancePublicPorts]
   @scala.inline
   def OperationNotPermitted: OperationNotPermitted = "OperationNotPermitted".asInstanceOf[OperationNotPermitted]
+  @scala.inline
+  def OperationalData: OperationalData = "OperationalData".asInstanceOf[OperationalData]
+  @scala.inline
+  def OperationalDataKey: OperationalDataKey = "OperationalDataKey".asInstanceOf[OperationalDataKey]
+  @scala.inline
+  def OperationalDataValue: OperationalDataValue = "OperationalDataValue".asInstanceOf[OperationalDataValue]
+  @scala.inline
+  def OpsItem: OpsItem = "OpsItem".asInstanceOf[OpsItem]
+  @scala.inline
+  def OpsItemId: OpsItemId = "OpsItemId".asInstanceOf[OpsItemId]
   @scala.inline
   def Optional: Optional = "Optional".asInstanceOf[Optional]
   @scala.inline
@@ -35233,6 +35330,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PriceClass_All: PriceClass_All = "PriceClass_All".asInstanceOf[PriceClass_All]
   @scala.inline
+  def Priority: Priority = "Priority".asInstanceOf[Priority]
+  @scala.inline
   def Private: Private = "Private".asInstanceOf[Private]
   @scala.inline
   def PrivateVirtualInterface: PrivateVirtualInterface = "PrivateVirtualInterface".asInstanceOf[PrivateVirtualInterface]
@@ -35406,6 +35505,8 @@ object awsDashSdkLibStrings {
   def REGISTER_INACTIVE: REGISTER_INACTIVE = "REGISTER_INACTIVE".asInstanceOf[REGISTER_INACTIVE]
   @scala.inline
   def REGISTER_INSTANCE: REGISTER_INSTANCE = "REGISTER_INSTANCE".asInstanceOf[REGISTER_INSTANCE]
+  @scala.inline
+  def REGISTRATION_FAILED: REGISTRATION_FAILED = "REGISTRATION_FAILED".asInstanceOf[REGISTRATION_FAILED]
   @scala.inline
   def REGISTRY: REGISTRY = "REGISTRY".asInstanceOf[REGISTRY]
   @scala.inline
@@ -35802,6 +35903,8 @@ object awsDashSdkLibStrings {
   def RequiresIndexDocuments: RequiresIndexDocuments = "RequiresIndexDocuments".asInstanceOf[RequiresIndexDocuments]
   @scala.inline
   def ResetDeployment: ResetDeployment = "ResetDeployment".asInstanceOf[ResetDeployment]
+  @scala.inline
+  def Resolved: Resolved = "Resolved".asInstanceOf[Resolved]
   @scala.inline
   def Resource: Resource = "Resource".asInstanceOf[Resource]
   @scala.inline
@@ -36594,6 +36697,8 @@ object awsDashSdkLibStrings {
   def ScriptTimedOut: ScriptTimedOut = "ScriptTimedOut".asInstanceOf[ScriptTimedOut]
   @scala.inline
   def SearchQuery: SearchQuery = "SearchQuery".asInstanceOf[SearchQuery]
+  @scala.inline
+  def SearchableString: SearchableString = "SearchableString".asInstanceOf[SearchableString]
   @scala.inline
   def Seconds: Seconds = "Seconds".asInstanceOf[Seconds]
   @scala.inline
@@ -38119,6 +38224,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def awsvpc: awsvpc = "awsvpc".asInstanceOf[awsvpc]
   @scala.inline
+  def awsvpcTrunking: awsvpcTrunking = "awsvpcTrunking".asInstanceOf[awsvpcTrunking]
+  @scala.inline
   def `backup-type`: `backup-type` = "backup-type".asInstanceOf[`backup-type`]
   @scala.inline
   def batchPredictionAvailable: batchPredictionAvailable = "batchPredictionAvailable".asInstanceOf[batchPredictionAvailable]
@@ -38588,6 +38695,8 @@ object awsDashSdkLibStrings {
   def delivered: delivered = "delivered".asInstanceOf[delivered]
   @scala.inline
   def delivery: delivery = "delivery".asInstanceOf[delivery]
+  @scala.inline
+  def deliveryOptions: deliveryOptions = "deliveryOptions".asInstanceOf[deliveryOptions]
   @scala.inline
   def deny: deny = "deny".asInstanceOf[deny]
   @scala.inline
@@ -40256,6 +40365,8 @@ object awsDashSdkLibStrings {
   def source: source = "source".asInstanceOf[source]
   @scala.inline
   def sourceDestCheck: sourceDestCheck = "sourceDestCheck".asInstanceOf[sourceDestCheck]
+  @scala.inline
+  def speke: speke = "speke".asInstanceOf[speke]
   @scala.inline
   def splunk: splunk = "splunk".asInstanceOf[splunk]
   @scala.inline

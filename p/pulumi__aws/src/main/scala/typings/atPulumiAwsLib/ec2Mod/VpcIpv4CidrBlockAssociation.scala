@@ -44,5 +44,10 @@ object VpcIpv4CidrBlockAssociation extends js.Object {
     state: atPulumiAwsLib.ec2VpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2VpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
+  /**
+    * Returns true if the given object is an instance of VpcIpv4CidrBlockAssociation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ scala.Boolean = js.native
 }
 

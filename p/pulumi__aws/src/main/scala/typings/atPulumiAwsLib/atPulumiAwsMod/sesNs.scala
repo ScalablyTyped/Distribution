@@ -215,6 +215,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesActiveReceiptRuleSetMod.ActiveReceiptRuleSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesActiveReceiptRuleSetMod.ActiveReceiptRuleSet = js.native
+    /**
+      * Returns true if the given object is an instance of ActiveReceiptRuleSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/activeReceiptRuleSet.ActiveReceiptRuleSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -240,6 +245,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesConfgurationSetMod.ConfgurationSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesConfgurationSetMod.ConfgurationSet = js.native
+    /**
+      * Returns true if the given object is an instance of ConfgurationSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/confgurationSet.ConfgurationSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -265,6 +275,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesDomainDkimMod.DomainDkimState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesDomainDkimMod.DomainDkim = js.native
+    /**
+      * Returns true if the given object is an instance of DomainDkim.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainDkim.DomainDkim */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -290,6 +305,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesDomainIdentityMod.DomainIdentityState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesDomainIdentityMod.DomainIdentity = js.native
+    /**
+      * Returns true if the given object is an instance of DomainIdentity.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentity.DomainIdentity */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -315,6 +335,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesDomainIdentityVerificationMod.DomainIdentityVerificationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesDomainIdentityVerificationMod.DomainIdentityVerification = js.native
+    /**
+      * Returns true if the given object is an instance of DomainIdentityVerification.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentityVerification.DomainIdentityVerification */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -340,6 +365,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesEmailIdentityMod.EmailIdentityState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesEmailIdentityMod.EmailIdentity = js.native
+    /**
+      * Returns true if the given object is an instance of EmailIdentity.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/emailIdentity.EmailIdentity */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -365,6 +395,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesEventDestinationMod.EventDestinationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesEventDestinationMod.EventDestination = js.native
+    /**
+      * Returns true if the given object is an instance of EventDestination.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -390,6 +425,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesIdentityNotificationTopicMod.IdentityNotificationTopicState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesIdentityNotificationTopicMod.IdentityNotificationTopic = js.native
+    /**
+      * Returns true if the given object is an instance of IdentityNotificationTopic.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/identityNotificationTopic.IdentityNotificationTopic */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -415,6 +455,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesMailFromMod.MailFromState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesMailFromMod.MailFrom = js.native
+    /**
+      * Returns true if the given object is an instance of MailFrom.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/mailFrom.MailFrom */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -440,6 +485,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesReceiptFilterMod.ReceiptFilterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesReceiptFilterMod.ReceiptFilter = js.native
+    /**
+      * Returns true if the given object is an instance of ReceiptFilter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptFilter.ReceiptFilter */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -465,6 +515,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesReceiptRuleMod.ReceiptRuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesReceiptRuleMod.ReceiptRule = js.native
+    /**
+      * Returns true if the given object is an instance of ReceiptRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRule.ReceiptRule */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -490,6 +545,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesReceiptRuleSetMod.ReceiptRuleSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesReceiptRuleSetMod.ReceiptRuleSet = js.native
+    /**
+      * Returns true if the given object is an instance of ReceiptRuleSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRuleSet.ReceiptRuleSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -515,6 +575,11 @@ object sesNs extends js.Object {
       state: atPulumiAwsLib.sesTemplateMod.TemplateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sesTemplateMod.Template = js.native
+    /**
+      * Returns true if the given object is an instance of Template.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/template.Template */ scala.Boolean = js.native
   }
   
 }

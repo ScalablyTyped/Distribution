@@ -83,6 +83,11 @@ object batchNs extends js.Object {
       state: atPulumiAwsLib.batchComputeEnvironmentMod.ComputeEnvironmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.batchComputeEnvironmentMod.ComputeEnvironment = js.native
+    /**
+      * Returns true if the given object is an instance of ComputeEnvironment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -108,6 +113,11 @@ object batchNs extends js.Object {
       state: atPulumiAwsLib.batchJobDefinitionMod.JobDefinitionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.batchJobDefinitionMod.JobDefinition = js.native
+    /**
+      * Returns true if the given object is an instance of JobDefinition.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -133,6 +143,11 @@ object batchNs extends js.Object {
       state: atPulumiAwsLib.batchJobQueueMod.JobQueueState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.batchJobQueueMod.JobQueue = js.native
+    /**
+      * Returns true if the given object is an instance of JobQueue.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobQueue.JobQueue */ scala.Boolean = js.native
   }
   
 }

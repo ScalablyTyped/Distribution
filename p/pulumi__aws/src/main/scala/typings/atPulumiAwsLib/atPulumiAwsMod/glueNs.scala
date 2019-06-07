@@ -150,6 +150,11 @@ object glueNs extends js.Object {
       state: atPulumiAwsLib.glueCatalogDatabaseMod.CatalogDatabaseState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glueCatalogDatabaseMod.CatalogDatabase = js.native
+    /**
+      * Returns true if the given object is an instance of CatalogDatabase.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogDatabase.CatalogDatabase */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -175,6 +180,11 @@ object glueNs extends js.Object {
       state: atPulumiAwsLib.glueCatalogTableMod.CatalogTableState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glueCatalogTableMod.CatalogTable = js.native
+    /**
+      * Returns true if the given object is an instance of CatalogTable.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogTable.CatalogTable */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -200,6 +210,11 @@ object glueNs extends js.Object {
       state: atPulumiAwsLib.glueClassifierMod.ClassifierState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glueClassifierMod.Classifier = js.native
+    /**
+      * Returns true if the given object is an instance of Classifier.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -225,6 +240,11 @@ object glueNs extends js.Object {
       state: atPulumiAwsLib.glueConnectionMod.ConnectionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glueConnectionMod.Connection = js.native
+    /**
+      * Returns true if the given object is an instance of Connection.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/connection.Connection */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -250,6 +270,11 @@ object glueNs extends js.Object {
       state: atPulumiAwsLib.glueCrawlerMod.CrawlerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glueCrawlerMod.Crawler = js.native
+    /**
+      * Returns true if the given object is an instance of Crawler.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/crawler.Crawler */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -275,6 +300,11 @@ object glueNs extends js.Object {
       state: atPulumiAwsLib.glueJobMod.JobState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glueJobMod.Job = js.native
+    /**
+      * Returns true if the given object is an instance of Job.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/job.Job */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -300,6 +330,11 @@ object glueNs extends js.Object {
       state: atPulumiAwsLib.glueSecurityConfigurationMod.SecurityConfigurationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glueSecurityConfigurationMod.SecurityConfiguration = js.native
+    /**
+      * Returns true if the given object is an instance of SecurityConfiguration.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/securityConfiguration.SecurityConfiguration */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -325,6 +360,11 @@ object glueNs extends js.Object {
       state: atPulumiAwsLib.glueTriggerMod.TriggerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glueTriggerMod.Trigger = js.native
+    /**
+      * Returns true if the given object is an instance of Trigger.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/trigger.Trigger */ scala.Boolean = js.native
   }
   
 }

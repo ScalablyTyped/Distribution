@@ -256,6 +256,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsClusterMod.ClusterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsClusterMod.Cluster = js.native
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/cluster.Cluster */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -281,6 +286,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsClusterEndpointMod.ClusterEndpointState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsClusterEndpointMod.ClusterEndpoint = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterEndpoint.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/clusterEndpoint.ClusterEndpoint */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -306,6 +316,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsClusterInstanceMod.ClusterInstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsClusterInstanceMod.ClusterInstance = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterInstance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/clusterInstance.ClusterInstance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -331,6 +346,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsClusterParameterGroupMod.ClusterParameterGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsClusterParameterGroupMod.ClusterParameterGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/clusterParameterGroup.ClusterParameterGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -356,6 +376,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsClusterSnapshotMod.ClusterSnapshotState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsClusterSnapshotMod.ClusterSnapshot = js.native
+    /**
+      * Returns true if the given object is an instance of ClusterSnapshot.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/clusterSnapshot.ClusterSnapshot */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -381,6 +406,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsEventSubscriptionMod.EventSubscriptionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsEventSubscriptionMod.EventSubscription = js.native
+    /**
+      * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/eventSubscription.EventSubscription */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -406,6 +436,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsGlobalClusterMod.GlobalClusterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsGlobalClusterMod.GlobalCluster = js.native
+    /**
+      * Returns true if the given object is an instance of GlobalCluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/globalCluster.GlobalCluster */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -431,6 +466,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsInstanceMod.InstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsInstanceMod.Instance = js.native
+    /**
+      * Returns true if the given object is an instance of Instance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/instance.Instance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -456,6 +496,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsOptionGroupMod.OptionGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsOptionGroupMod.OptionGroup = js.native
+    /**
+      * Returns true if the given object is an instance of OptionGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/optionGroup.OptionGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -481,6 +526,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsParameterGroupMod.ParameterGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsParameterGroupMod.ParameterGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/parameterGroup.ParameterGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -506,6 +556,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsRoleAssociationMod.RoleAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsRoleAssociationMod.RoleAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of RoleAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/roleAssociation.RoleAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -531,6 +586,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsSecurityGroupMod.SecurityGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsSecurityGroupMod.SecurityGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SecurityGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/securityGroup.SecurityGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -556,6 +616,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsSnapshotMod.SnapshotState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsSnapshotMod.Snapshot = js.native
+    /**
+      * Returns true if the given object is an instance of Snapshot.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/snapshot.Snapshot */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -581,6 +646,11 @@ object rdsNs extends js.Object {
       state: atPulumiAwsLib.rdsSubnetGroupMod.SubnetGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.rdsSubnetGroupMod.SubnetGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/subnetGroup.SubnetGroup */ scala.Boolean = js.native
   }
   
 }

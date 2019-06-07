@@ -9,11 +9,11 @@ trait NetworkConnectionAction extends js.Object {
   /**
     * Network connection blocked information.
     */
-  var Blocked: js.UndefOr[__boolean] = js.undefined
+  var Blocked: js.UndefOr[Boolean] = js.undefined
   /**
     * Network connection direction.
     */
-  var ConnectionDirection: js.UndefOr[__string] = js.undefined
+  var ConnectionDirection: js.UndefOr[String] = js.undefined
   /**
     * Local port information of the connection.
     */
@@ -21,7 +21,7 @@ trait NetworkConnectionAction extends js.Object {
   /**
     * Network connection protocol.
     */
-  var Protocol: js.UndefOr[__string] = js.undefined
+  var Protocol: js.UndefOr[String] = js.undefined
   /**
     * Remote IP information of the connection.
     */
@@ -35,10 +35,10 @@ trait NetworkConnectionAction extends js.Object {
 object NetworkConnectionAction {
   @scala.inline
   def apply(
-    Blocked: js.UndefOr[__boolean] = js.undefined,
-    ConnectionDirection: __string = null,
+    Blocked: js.UndefOr[Boolean] = js.undefined,
+    ConnectionDirection: String = null,
     LocalPortDetails: LocalPortDetails = null,
-    Protocol: __string = null,
+    Protocol: String = null,
     RemoteIpDetails: RemoteIpDetails = null,
     RemotePortDetails: RemotePortDetails = null
   ): NetworkConnectionAction = {

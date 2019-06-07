@@ -186,6 +186,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmActivationMod.ActivationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmActivationMod.Activation = js.native
+    /**
+      * Returns true if the given object is an instance of Activation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/activation.Activation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -211,6 +216,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmAssociationMod.AssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmAssociationMod.Association = js.native
+    /**
+      * Returns true if the given object is an instance of Association.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/association.Association */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -236,6 +246,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmDocumentMod.DocumentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmDocumentMod.Document = js.native
+    /**
+      * Returns true if the given object is an instance of Document.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/document.Document */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -261,6 +276,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmMaintenanceWindowMod.MaintenanceWindowState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmMaintenanceWindowMod.MaintenanceWindow = js.native
+    /**
+      * Returns true if the given object is an instance of MaintenanceWindow.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindow.MaintenanceWindow */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -286,6 +306,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmMaintenanceWindowTargetMod.MaintenanceWindowTargetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmMaintenanceWindowTargetMod.MaintenanceWindowTarget = js.native
+    /**
+      * Returns true if the given object is an instance of MaintenanceWindowTarget.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTarget.MaintenanceWindowTarget */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -311,6 +336,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmMaintenanceWindowTaskMod.MaintenanceWindowTaskState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmMaintenanceWindowTaskMod.MaintenanceWindowTask = js.native
+    /**
+      * Returns true if the given object is an instance of MaintenanceWindowTask.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTask.MaintenanceWindowTask */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -336,6 +366,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmParameterMod.ParameterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmParameterMod.Parameter = js.native
+    /**
+      * Returns true if the given object is an instance of Parameter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/parameter.Parameter */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -361,6 +396,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmPatchBaselineMod.PatchBaselineState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmPatchBaselineMod.PatchBaseline = js.native
+    /**
+      * Returns true if the given object is an instance of PatchBaseline.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchBaseline.PatchBaseline */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -386,6 +426,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmPatchGroupMod.PatchGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmPatchGroupMod.PatchGroup = js.native
+    /**
+      * Returns true if the given object is an instance of PatchGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchGroup.PatchGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -411,6 +456,11 @@ object ssmNs extends js.Object {
       state: atPulumiAwsLib.ssmResourceDataSyncMod.ResourceDataSyncState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ssmResourceDataSyncMod.ResourceDataSync = js.native
+    /**
+      * Returns true if the given object is an instance of ResourceDataSync.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/resourceDataSync.ResourceDataSync */ scala.Boolean = js.native
   }
   
 }

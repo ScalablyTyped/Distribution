@@ -61,5 +61,10 @@ object TableItem extends js.Object {
     state: atPulumiAwsLib.dynamodbTableItemMod.TableItemState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.dynamodbTableItemMod.TableItem = js.native
+  /**
+    * Returns true if the given object is an instance of TableItem.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ scala.Boolean = js.native
 }
 

@@ -44,5 +44,10 @@ object Permission extends js.Object {
     state: atPulumiAwsLib.lambdaPermissionMod.PermissionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.lambdaPermissionMod.Permission = js.native
+  /**
+    * Returns true if the given object is an instance of Permission.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/permission.Permission */ scala.Boolean = js.native
 }
 

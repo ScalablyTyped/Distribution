@@ -167,6 +167,11 @@ object s3Ns extends js.Object {
       state: atPulumiAwsLib.s3AccountPublicAccessBlockMod.AccountPublicAccessBlockState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.s3AccountPublicAccessBlockMod.AccountPublicAccessBlock = js.native
+    /**
+      * Returns true if the given object is an instance of AccountPublicAccessBlock.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/accountPublicAccessBlock.AccountPublicAccessBlock */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -192,6 +197,11 @@ object s3Ns extends js.Object {
       state: atPulumiAwsLib.s3BucketMod.BucketState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.s3S3MixinsMod.s3BucketMod.Bucket = js.native
+    /**
+      * Returns true if the given object is an instance of Bucket.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/s3Mixins.@pulumi/aws/s3/bucket.Bucket */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -217,6 +227,11 @@ object s3Ns extends js.Object {
       state: atPulumiAwsLib.s3BucketMetricMod.BucketMetricState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.s3BucketMetricMod.BucketMetric = js.native
+    /**
+      * Returns true if the given object is an instance of BucketMetric.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -242,6 +257,11 @@ object s3Ns extends js.Object {
       state: atPulumiAwsLib.s3BucketNotificationMod.BucketNotificationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.s3BucketNotificationMod.BucketNotification = js.native
+    /**
+      * Returns true if the given object is an instance of BucketNotification.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketNotification.BucketNotification */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -267,6 +287,11 @@ object s3Ns extends js.Object {
       state: atPulumiAwsLib.s3BucketObjectMod.BucketObjectState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.s3BucketObjectMod.BucketObject = js.native
+    /**
+      * Returns true if the given object is an instance of BucketObject.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketObject.BucketObject */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -292,6 +317,11 @@ object s3Ns extends js.Object {
       state: atPulumiAwsLib.s3BucketPolicyMod.BucketPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.s3BucketPolicyMod.BucketPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of BucketPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -317,6 +347,11 @@ object s3Ns extends js.Object {
       state: atPulumiAwsLib.s3BucketPublicAccessBlockMod.BucketPublicAccessBlockState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.s3BucketPublicAccessBlockMod.BucketPublicAccessBlock = js.native
+    /**
+      * Returns true if the given object is an instance of BucketPublicAccessBlock.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPublicAccessBlock.BucketPublicAccessBlock */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -342,6 +377,11 @@ object s3Ns extends js.Object {
       state: atPulumiAwsLib.s3InventoryMod.InventoryState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.s3InventoryMod.Inventory = js.native
+    /**
+      * Returns true if the given object is an instance of Inventory.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ scala.Boolean = js.native
   }
   
 }

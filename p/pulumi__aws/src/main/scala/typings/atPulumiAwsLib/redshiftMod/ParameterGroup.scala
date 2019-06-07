@@ -44,5 +44,10 @@ object ParameterGroup extends js.Object {
     state: atPulumiAwsLib.redshiftParameterGroupMod.ParameterGroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.redshiftParameterGroupMod.ParameterGroup = js.native
+  /**
+    * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/parameterGroup.ParameterGroup */ scala.Boolean = js.native
 }
 

@@ -27,7 +27,15 @@ object ^ extends js.Object {
     callback: js.Function2[/* error */ js.Any, /* kb */ Formula, scala.Unit]
   ): scala.Unit = js.native
   def quad(subject: Node, predicate: Node, `object`: Node, graph: Node): Statement = js.native
+  def st(subject: java.lang.String, predicate: Node, `object`: java.lang.String, graph: Node): Statement = js.native
+  def st(subject: java.lang.String, predicate: Node, `object`: Node, graph: Node): Statement = js.native
+  def st(subject: java.lang.String, predicate: Node, `object`: stdLib.Date, graph: Node): Statement = js.native
+  def st(subject: Node, predicate: Node, `object`: java.lang.String, graph: Node): Statement = js.native
   def st(subject: Node, predicate: Node, `object`: Node, graph: Node): Statement = js.native
+  def st(subject: Node, predicate: Node, `object`: stdLib.Date, graph: Node): Statement = js.native
+  def st(subject: stdLib.Date, predicate: Node, `object`: java.lang.String, graph: Node): Statement = js.native
+  def st(subject: stdLib.Date, predicate: Node, `object`: Node, graph: Node): Statement = js.native
+  def st(subject: stdLib.Date, predicate: Node, `object`: stdLib.Date, graph: Node): Statement = js.native
   def sym(value: java.lang.String): NamedNode = js.native
   def term(value: ValueType): Node | Collection | ValueType = js.native
   def triple(subject: Node, predicate: Node, `object`: Node): Statement = js.native

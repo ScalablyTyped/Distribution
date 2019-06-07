@@ -45,5 +45,10 @@ object DelegationSet extends js.Object {
     state: atPulumiAwsLib.route53DelegationSetMod.DelegationSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.route53DelegationSetMod.DelegationSet = js.native
+  /**
+    * Returns true if the given object is an instance of DelegationSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ scala.Boolean = js.native
 }
 

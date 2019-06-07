@@ -45,5 +45,10 @@ object HttpNamespace extends js.Object {
     state: atPulumiAwsLib.servicediscoveryHttpNamespaceMod.HttpNamespaceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.servicediscoveryHttpNamespaceMod.HttpNamespace = js.native
+  /**
+    * Returns true if the given object is an instance of HttpNamespace.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicediscovery/httpNamespace.HttpNamespace */ scala.Boolean = js.native
 }
 

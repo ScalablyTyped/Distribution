@@ -92,5 +92,10 @@ object SecurityGroupRule extends js.Object {
     state: atPulumiAwsLib.ec2SecurityGroupRuleMod.SecurityGroupRuleState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2SecurityGroupRuleMod.SecurityGroupRule = js.native
+  /**
+    * Returns true if the given object is an instance of SecurityGroupRule.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/securityGroupRule.SecurityGroupRule */ scala.Boolean = js.native
 }
 

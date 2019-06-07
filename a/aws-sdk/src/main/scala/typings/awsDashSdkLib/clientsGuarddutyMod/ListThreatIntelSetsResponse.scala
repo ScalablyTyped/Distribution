@@ -6,16 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListThreatIntelSetsResponse extends js.Object {
-  var NextToken: js.UndefOr[NextToken] = js.undefined
-  var ThreatIntelSetIds: js.UndefOr[ThreatIntelSetIds] = js.undefined
+  /**
+    * Pagination parameter to be used on the next list operation to retrieve more items.
+    */
+  var NextToken: js.UndefOr[String] = js.undefined
+  /**
+    * The IDs of the ThreatIntelSet resources.
+    */
+  var ThreatIntelSetIds: awsDashSdkLib.clientsGuarddutyMod.ThreatIntelSetIds
 }
 
 object ListThreatIntelSetsResponse {
   @scala.inline
-  def apply(NextToken: NextToken = null, ThreatIntelSetIds: ThreatIntelSetIds = null): ListThreatIntelSetsResponse = {
-    val __obj = js.Dynamic.literal()
+  def apply(ThreatIntelSetIds: ThreatIntelSetIds, NextToken: String = null): ListThreatIntelSetsResponse = {
+    val __obj = js.Dynamic.literal(ThreatIntelSetIds = ThreatIntelSetIds)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
-    if (ThreatIntelSetIds != null) __obj.updateDynamic("ThreatIntelSetIds")(ThreatIntelSetIds)
     __obj.asInstanceOf[ListThreatIntelSetsResponse]
   }
 }

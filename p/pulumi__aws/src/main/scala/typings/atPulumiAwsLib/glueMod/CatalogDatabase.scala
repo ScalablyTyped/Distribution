@@ -45,5 +45,10 @@ object CatalogDatabase extends js.Object {
     state: atPulumiAwsLib.glueCatalogDatabaseMod.CatalogDatabaseState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.glueCatalogDatabaseMod.CatalogDatabase = js.native
+  /**
+    * Returns true if the given object is an instance of CatalogDatabase.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/catalogDatabase.CatalogDatabase */ scala.Boolean = js.native
 }
 

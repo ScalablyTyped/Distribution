@@ -81,5 +81,10 @@ object Organization extends js.Object {
     state: atPulumiAwsLib.organizationsOrganizationMod.OrganizationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.organizationsOrganizationMod.Organization = js.native
+  /**
+    * Returns true if the given object is an instance of Organization.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ scala.Boolean = js.native
 }
 

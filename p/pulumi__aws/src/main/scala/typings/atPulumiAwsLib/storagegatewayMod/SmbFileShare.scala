@@ -44,5 +44,10 @@ object SmbFileShare extends js.Object {
     state: atPulumiAwsLib.storagegatewaySmbFileShareMod.SmbFileShareState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.storagegatewaySmbFileShareMod.SmbFileShare = js.native
+  /**
+    * Returns true if the given object is an instance of SmbFileShare.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/smbFileShare.SmbFileShare */ scala.Boolean = js.native
 }
 

@@ -19,6 +19,9 @@ class ClientNameStats () extends IClientNameStats {
   /** ClientNameStats cacheLatencyCount. */
   @JSName("cacheLatencyCount")
   var cacheLatencyCount_ClientNameStats: js.Array[scala.Double] = js.native
+  /** ClientNameStats forbiddenOperationCountPerVersion. */
+  @JSName("forbiddenOperationCountPerVersion")
+  var forbiddenOperationCountPerVersion_ClientNameStats: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /** ClientNameStats latencyCount. */
   @JSName("latencyCount")
   var latencyCount_ClientNameStats: js.Array[scala.Double] = js.native
@@ -34,6 +37,9 @@ class ClientNameStats () extends IClientNameStats {
   /** ClientNameStats publicCacheTtlCount. */
   @JSName("publicCacheTtlCount")
   var publicCacheTtlCount_ClientNameStats: js.Array[scala.Double] = js.native
+  /** ClientNameStats registeredOperationCountPerVersion. */
+  @JSName("registeredOperationCountPerVersion")
+  var registeredOperationCountPerVersion_ClientNameStats: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   /** ClientNameStats requestsCountPerVersion. */
   @JSName("requestsCountPerVersion")
   var requestsCountPerVersion_ClientNameStats: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native

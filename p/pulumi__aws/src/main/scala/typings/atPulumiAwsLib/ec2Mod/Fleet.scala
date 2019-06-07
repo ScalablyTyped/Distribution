@@ -44,5 +44,10 @@ object Fleet extends js.Object {
     state: atPulumiAwsLib.ec2FleetMod.FleetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2FleetMod.Fleet = js.native
+  /**
+    * Returns true if the given object is an instance of Fleet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/fleet.Fleet */ scala.Boolean = js.native
 }
 

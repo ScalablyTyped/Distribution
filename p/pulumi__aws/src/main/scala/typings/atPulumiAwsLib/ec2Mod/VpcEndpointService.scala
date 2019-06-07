@@ -44,5 +44,10 @@ object VpcEndpointService extends js.Object {
     state: atPulumiAwsLib.ec2VpcEndpointServiceMod.VpcEndpointServiceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2VpcEndpointServiceMod.VpcEndpointService = js.native
+  /**
+    * Returns true if the given object is an instance of VpcEndpointService.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointService.VpcEndpointService */ scala.Boolean = js.native
 }
 

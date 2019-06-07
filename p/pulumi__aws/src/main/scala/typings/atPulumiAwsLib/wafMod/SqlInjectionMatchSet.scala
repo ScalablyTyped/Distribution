@@ -45,5 +45,10 @@ object SqlInjectionMatchSet extends js.Object {
     state: atPulumiAwsLib.wafSqlInjectionMatchSetMod.SqlInjectionMatchSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = js.native
+  /**
+    * Returns true if the given object is an instance of SqlInjectionMatchSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ scala.Boolean = js.native
 }
 

@@ -186,6 +186,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointAdmChannelMod.AdmChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointAdmChannelMod.AdmChannel = js.native
+    /**
+      * Returns true if the given object is an instance of AdmChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/admChannel.AdmChannel */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -211,6 +216,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointApnsChannelMod.ApnsChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointApnsChannelMod.ApnsChannel = js.native
+    /**
+      * Returns true if the given object is an instance of ApnsChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsChannel.ApnsChannel */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -236,6 +246,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointApnsSandboxChannelMod.ApnsSandboxChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointApnsSandboxChannelMod.ApnsSandboxChannel = js.native
+    /**
+      * Returns true if the given object is an instance of ApnsSandboxChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsSandboxChannel.ApnsSandboxChannel */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -261,6 +276,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointApnsVoipChannelMod.ApnsVoipChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointApnsVoipChannelMod.ApnsVoipChannel = js.native
+    /**
+      * Returns true if the given object is an instance of ApnsVoipChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsVoipChannel.ApnsVoipChannel */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -286,6 +306,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointApnsVoipSandboxChannelMod.ApnsVoipSandboxChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointApnsVoipSandboxChannelMod.ApnsVoipSandboxChannel = js.native
+    /**
+      * Returns true if the given object is an instance of ApnsVoipSandboxChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsVoipSandboxChannel.ApnsVoipSandboxChannel */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -311,6 +336,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointAppMod.AppState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointAppMod.App = js.native
+    /**
+      * Returns true if the given object is an instance of App.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/app.App */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -336,6 +366,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointBaiduChannelMod.BaiduChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointBaiduChannelMod.BaiduChannel = js.native
+    /**
+      * Returns true if the given object is an instance of BaiduChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/baiduChannel.BaiduChannel */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -361,6 +396,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointEmailChannelMod.EmailChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointEmailChannelMod.EmailChannel = js.native
+    /**
+      * Returns true if the given object is an instance of EmailChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/emailChannel.EmailChannel */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -386,6 +426,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointEventStreamMod.EventStreamState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointEventStreamMod.EventStream = js.native
+    /**
+      * Returns true if the given object is an instance of EventStream.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -411,6 +456,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointGcmChannelMod.GcmChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointGcmChannelMod.GcmChannel = js.native
+    /**
+      * Returns true if the given object is an instance of GcmChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/gcmChannel.GcmChannel */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -436,6 +486,11 @@ object pinpointNs extends js.Object {
       state: atPulumiAwsLib.pinpointSmsChannelMod.SmsChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.pinpointSmsChannelMod.SmsChannel = js.native
+    /**
+      * Returns true if the given object is an instance of SmsChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/smsChannel.SmsChannel */ scala.Boolean = js.native
   }
   
 }

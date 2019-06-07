@@ -14,6 +14,10 @@ trait GetClusterResult extends js.Object {
     * A comma separated list of one or more hostname:port pairs of Kafka brokers suitable to boostrap connectivity to the Kafka cluster.
     */
   val bootstrapBrokers: java.lang.String
+  /**
+    * A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster.
+    */
+  val bootstrapBrokersTls: java.lang.String
   val clusterName: java.lang.String
   /**
     * id is the provider-assigned unique ID for this managed resource.
@@ -42,6 +46,7 @@ object GetClusterResult {
   def apply(
     arn: java.lang.String,
     bootstrapBrokers: java.lang.String,
+    bootstrapBrokersTls: java.lang.String,
     clusterName: java.lang.String,
     id: java.lang.String,
     kafkaVersion: java.lang.String,
@@ -49,7 +54,7 @@ object GetClusterResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     zookeeperConnectString: java.lang.String
   ): GetClusterResult = {
-    val __obj = js.Dynamic.literal(arn = arn, bootstrapBrokers = bootstrapBrokers, clusterName = clusterName, id = id, kafkaVersion = kafkaVersion, numberOfBrokerNodes = numberOfBrokerNodes, tags = tags, zookeeperConnectString = zookeeperConnectString)
+    val __obj = js.Dynamic.literal(arn = arn, bootstrapBrokers = bootstrapBrokers, bootstrapBrokersTls = bootstrapBrokersTls, clusterName = clusterName, id = id, kafkaVersion = kafkaVersion, numberOfBrokerNodes = numberOfBrokerNodes, tags = tags, zookeeperConnectString = zookeeperConnectString)
   
     __obj.asInstanceOf[GetClusterResult]
   }

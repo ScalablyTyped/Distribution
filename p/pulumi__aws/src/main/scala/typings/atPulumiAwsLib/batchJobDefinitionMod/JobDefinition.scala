@@ -78,5 +78,10 @@ object JobDefinition extends js.Object {
     state: atPulumiAwsLib.batchJobDefinitionMod.JobDefinitionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.batchJobDefinitionMod.JobDefinition = js.native
+  /**
+    * Returns true if the given object is an instance of JobDefinition.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/jobDefinition.JobDefinition */ scala.Boolean = js.native
 }
 

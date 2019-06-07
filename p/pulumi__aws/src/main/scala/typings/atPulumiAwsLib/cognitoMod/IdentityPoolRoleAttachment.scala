@@ -44,5 +44,10 @@ object IdentityPoolRoleAttachment extends js.Object {
     state: atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachmentState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
+  /**
+    * Returns true if the given object is an instance of IdentityPoolRoleAttachment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/identityPoolRoleAttachment.IdentityPoolRoleAttachment */ scala.Boolean = js.native
 }
 

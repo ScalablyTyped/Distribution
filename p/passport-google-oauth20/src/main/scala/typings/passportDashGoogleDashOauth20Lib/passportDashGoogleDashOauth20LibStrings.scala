@@ -22,6 +22,12 @@ object passportDashGoogleDashOauth20LibStrings {
   sealed trait customHeaders extends js.Object
   
   @js.native
+  sealed trait offline extends js.Object
+  
+  @js.native
+  sealed trait online extends js.Object
+  
+  @js.native
   sealed trait scope extends js.Object
   
   @js.native
@@ -49,6 +55,10 @@ object passportDashGoogleDashOauth20LibStrings {
   def clientSecret: clientSecret = "clientSecret".asInstanceOf[clientSecret]
   @scala.inline
   def customHeaders: customHeaders = "customHeaders".asInstanceOf[customHeaders]
+  @scala.inline
+  def offline: offline = "offline".asInstanceOf[offline]
+  @scala.inline
+  def online: online = "online".asInstanceOf[online]
   @scala.inline
   def scope: scope = "scope".asInstanceOf[scope]
   @scala.inline

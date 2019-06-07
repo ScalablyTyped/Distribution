@@ -48,5 +48,10 @@ object EgressOnlyInternetGateway extends js.Object {
     state: atPulumiAwsLib.ec2EgressOnlyInternetGatewayMod.EgressOnlyInternetGatewayState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2EgressOnlyInternetGatewayMod.EgressOnlyInternetGateway = js.native
+  /**
+    * Returns true if the given object is an instance of EgressOnlyInternetGateway.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/egressOnlyInternetGateway.EgressOnlyInternetGateway */ scala.Boolean = js.native
 }
 

@@ -44,5 +44,10 @@ object ThreatIntelSet extends js.Object {
     state: atPulumiAwsLib.guarddutyThreatIntelSetMod.ThreatIntelSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.guarddutyThreatIntelSetMod.ThreatIntelSet = js.native
+  /**
+    * Returns true if the given object is an instance of ThreatIntelSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/threatIntelSet.ThreatIntelSet */ scala.Boolean = js.native
 }
 

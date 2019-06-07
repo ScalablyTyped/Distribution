@@ -151,6 +151,11 @@ object iotNs extends js.Object {
       state: atPulumiAwsLib.iotCertificateMod.CertificateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iotCertificateMod.Certificate = js.native
+    /**
+      * Returns true if the given object is an instance of Certificate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/certificate.Certificate */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -176,6 +181,11 @@ object iotNs extends js.Object {
       state: atPulumiAwsLib.iotPolicyMod.PolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iotPolicyMod.Policy = js.native
+    /**
+      * Returns true if the given object is an instance of Policy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/policy.Policy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -201,6 +211,11 @@ object iotNs extends js.Object {
       state: atPulumiAwsLib.iotPolicyAttachmentMod.PolicyAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iotPolicyAttachmentMod.PolicyAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of PolicyAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/policyAttachment.PolicyAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -226,6 +241,11 @@ object iotNs extends js.Object {
       state: atPulumiAwsLib.iotRoleAliasMod.RoleAliasState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iotRoleAliasMod.RoleAlias = js.native
+    /**
+      * Returns true if the given object is an instance of RoleAlias.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/roleAlias.RoleAlias */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -251,6 +271,11 @@ object iotNs extends js.Object {
       state: atPulumiAwsLib.iotThingMod.ThingState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iotThingMod.Thing = js.native
+    /**
+      * Returns true if the given object is an instance of Thing.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thing.Thing */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -276,6 +301,11 @@ object iotNs extends js.Object {
       state: atPulumiAwsLib.iotThingPrincipalAttachmentMod.ThingPrincipalAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iotThingPrincipalAttachmentMod.ThingPrincipalAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of ThingPrincipalAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingPrincipalAttachment.ThingPrincipalAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -301,6 +331,11 @@ object iotNs extends js.Object {
       state: atPulumiAwsLib.iotThingTypeMod.ThingTypeState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iotThingTypeMod.ThingType = js.native
+    /**
+      * Returns true if the given object is an instance of ThingType.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/thingType.ThingType */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -326,6 +361,11 @@ object iotNs extends js.Object {
       state: atPulumiAwsLib.iotTopicRuleMod.TopicRuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iotTopicRuleMod.TopicRule = js.native
+    /**
+      * Returns true if the given object is an instance of TopicRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/topicRule.TopicRule */ scala.Boolean = js.native
   }
   
 }

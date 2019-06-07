@@ -44,5 +44,10 @@ object Trigger extends js.Object {
     state: atPulumiAwsLib.codecommitTriggerMod.TriggerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.codecommitTriggerMod.Trigger = js.native
+  /**
+    * Returns true if the given object is an instance of Trigger.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ scala.Boolean = js.native
 }
 

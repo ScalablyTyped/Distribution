@@ -76,5 +76,10 @@ object LifecycleHook extends js.Object {
     state: atPulumiAwsLib.autoscalingLifecycleHookMod.LifecycleHookState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.autoscalingLifecycleHookMod.LifecycleHook = js.native
+  /**
+    * Returns true if the given object is an instance of LifecycleHook.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ scala.Boolean = js.native
 }
 

@@ -9,7 +9,7 @@ trait GetFindingsRequest extends js.Object {
   /**
     * The ID of the detector that specifies the GuardDuty service whose findings you want to retrieve.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * IDs of the findings that you want to retrieve.
     */
@@ -22,7 +22,7 @@ trait GetFindingsRequest extends js.Object {
 
 object GetFindingsRequest {
   @scala.inline
-  def apply(DetectorId: __string, FindingIds: FindingIds, SortCriteria: SortCriteria = null): GetFindingsRequest = {
+  def apply(DetectorId: DetectorId, FindingIds: FindingIds, SortCriteria: SortCriteria = null): GetFindingsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId, FindingIds = FindingIds)
     if (SortCriteria != null) __obj.updateDynamic("SortCriteria")(SortCriteria)
     __obj.asInstanceOf[GetFindingsRequest]

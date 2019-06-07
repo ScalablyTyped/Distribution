@@ -15,6 +15,16 @@ class Fetcher protected () extends js.Object {
   var store: js.Any = js.native
   var timeout: scala.Double = js.native
   var timeouts: js.Any = js.native
+  def load(uri: java.lang.String): js.Promise[stdLib.Response] = js.native
+  def load(uri: java.lang.String, options: FetchOptions): js.Promise[stdLib.Response] = js.native
+  /**
+    * Loads a web resource or resources into the store.
+    * @param uri Resource to load, provided either as a NamedNode object or a plain URL. If multiple resources are passed as an array, they will be fetched in parallel.
+    */
+  def load(uri: js.Array[NamedNode | java.lang.String]): js.Promise[stdLib.Response] = js.native
+  def load(uri: js.Array[NamedNode | java.lang.String], options: FetchOptions): js.Promise[stdLib.Response] = js.native
+  def load(uri: NamedNode): js.Promise[stdLib.Response] = js.native
+  def load(uri: NamedNode, options: FetchOptions): js.Promise[stdLib.Response] = js.native
 }
 
 /* static members */

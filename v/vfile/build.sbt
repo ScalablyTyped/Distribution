@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "vfile"
-version := "3.0-dt-20181205Z-2082b0"
+version := "3.0-dt-20181205Z-8ad7a3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190605Z-895d8c",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
   "org.scalablytyped" %%% "std" % "3.5-f010ac",
   "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-1f71a7",
   "org.scalablytyped" %%% "vfile-message" % "1.0-dt-20181205Z-e67413")

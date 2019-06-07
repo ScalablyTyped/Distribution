@@ -92,5 +92,10 @@ object Job extends js.Object {
     state: atPulumiAwsLib.glueJobMod.JobState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.glueJobMod.Job = js.native
+  /**
+    * Returns true if the given object is an instance of Job.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/job.Job */ scala.Boolean = js.native
 }
 

@@ -88,6 +88,11 @@ object gameliftNs extends js.Object {
       state: atPulumiAwsLib.gameliftAliasMod.AliasState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.gameliftAliasMod.Alias = js.native
+    /**
+      * Returns true if the given object is an instance of Alias.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/alias.Alias */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -113,6 +118,11 @@ object gameliftNs extends js.Object {
       state: atPulumiAwsLib.gameliftBuildMod.BuildState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.gameliftBuildMod.Build = js.native
+    /**
+      * Returns true if the given object is an instance of Build.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/build.Build */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -138,6 +148,11 @@ object gameliftNs extends js.Object {
       state: atPulumiAwsLib.gameliftFleetMod.FleetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.gameliftFleetMod.Fleet = js.native
+    /**
+      * Returns true if the given object is an instance of Fleet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/fleet.Fleet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -163,6 +178,11 @@ object gameliftNs extends js.Object {
       state: atPulumiAwsLib.gameliftGameSessionQueueMod.GameSessionQueueState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.gameliftGameSessionQueueMod.GameSessionQueue = js.native
+    /**
+      * Returns true if the given object is an instance of GameSessionQueue.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/gamelift/gameSessionQueue.GameSessionQueue */ scala.Boolean = js.native
   }
   
 }

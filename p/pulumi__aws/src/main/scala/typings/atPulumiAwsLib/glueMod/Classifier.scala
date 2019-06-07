@@ -45,5 +45,10 @@ object Classifier extends js.Object {
     state: atPulumiAwsLib.glueClassifierMod.ClassifierState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.glueClassifierMod.Classifier = js.native
+  /**
+    * Returns true if the given object is an instance of Classifier.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/classifier.Classifier */ scala.Boolean = js.native
 }
 

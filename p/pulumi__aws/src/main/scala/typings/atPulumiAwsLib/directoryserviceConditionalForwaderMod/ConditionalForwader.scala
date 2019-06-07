@@ -56,5 +56,10 @@ object ConditionalForwader extends js.Object {
     state: atPulumiAwsLib.directoryserviceConditionalForwaderMod.ConditionalForwaderState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.directoryserviceConditionalForwaderMod.ConditionalForwader = js.native
+  /**
+    * Returns true if the given object is an instance of ConditionalForwader.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/conditionalForwader.ConditionalForwader */ scala.Boolean = js.native
 }
 

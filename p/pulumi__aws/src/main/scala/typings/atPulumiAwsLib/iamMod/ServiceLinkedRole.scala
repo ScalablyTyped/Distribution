@@ -44,5 +44,10 @@ object ServiceLinkedRole extends js.Object {
     state: atPulumiAwsLib.iamServiceLinkedRoleMod.ServiceLinkedRoleState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamServiceLinkedRoleMod.ServiceLinkedRole = js.native
+  /**
+    * Returns true if the given object is an instance of ServiceLinkedRole.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ scala.Boolean = js.native
 }
 

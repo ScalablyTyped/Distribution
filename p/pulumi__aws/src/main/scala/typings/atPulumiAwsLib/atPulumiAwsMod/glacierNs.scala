@@ -60,6 +60,11 @@ object glacierNs extends js.Object {
       state: atPulumiAwsLib.glacierVaultMod.VaultState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glacierVaultMod.Vault = js.native
+    /**
+      * Returns true if the given object is an instance of Vault.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -85,6 +90,11 @@ object glacierNs extends js.Object {
       state: atPulumiAwsLib.glacierVaultLockMod.VaultLockState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.glacierVaultLockMod.VaultLock = js.native
+    /**
+      * Returns true if the given object is an instance of VaultLock.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vaultLock.VaultLock */ scala.Boolean = js.native
   }
   
 }

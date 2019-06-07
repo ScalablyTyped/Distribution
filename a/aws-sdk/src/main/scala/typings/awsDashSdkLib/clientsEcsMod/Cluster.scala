@@ -11,7 +11,7 @@ trait Cluster extends js.Object {
     */
   var activeServicesCount: js.UndefOr[Integer] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) that identifies the cluster. The ARN contains the arn:aws:ecs namespace, followed by the Region of the cluster, the AWS account ID of the cluster owner, the cluster namespace, and then the cluster name. For example, arn:aws:ecs:region:012345678910:cluster/test ..
+    * The Amazon Resource Name (ARN) that identifies the cluster. The ARN contains the arn:aws:ecs namespace, followed by the Region of the cluster, the AWS account ID of the cluster owner, the cluster namespace, and then the cluster name. For example, arn:aws:ecs:region:012345678910:cluster/test.
     */
   var clusterArn: js.UndefOr[String] = js.undefined
   /**

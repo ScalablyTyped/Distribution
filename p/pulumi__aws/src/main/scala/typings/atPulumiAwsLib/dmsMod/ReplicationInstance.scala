@@ -44,5 +44,10 @@ object ReplicationInstance extends js.Object {
     state: atPulumiAwsLib.dmsReplicationInstanceMod.ReplicationInstanceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.dmsReplicationInstanceMod.ReplicationInstance = js.native
+  /**
+    * Returns true if the given object is an instance of ReplicationInstance.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationInstance.ReplicationInstance */ scala.Boolean = js.native
 }
 

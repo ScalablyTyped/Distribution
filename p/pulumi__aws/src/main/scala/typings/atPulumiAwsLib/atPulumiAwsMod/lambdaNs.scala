@@ -150,6 +150,11 @@ object lambdaNs extends js.Object {
       state: atPulumiAwsLib.lambdaAliasMod.AliasState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.lambdaAliasMod.Alias = js.native
+    /**
+      * Returns true if the given object is an instance of Alias.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/alias.Alias */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -175,6 +180,11 @@ object lambdaNs extends js.Object {
       state: atPulumiAwsLib.lambdaEventSourceMappingMod.EventSourceMappingState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.lambdaEventSourceMappingMod.EventSourceMapping = js.native
+    /**
+      * Returns true if the given object is an instance of EventSourceMapping.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/eventSourceMapping.EventSourceMapping */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -200,6 +210,11 @@ object lambdaNs extends js.Object {
       state: atPulumiAwsLib.lambdaFunctionMod.FunctionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.lambdaLambdaMixinsMod.lambdaFunctionMod.Function = js.native
+    /**
+      * Returns true if the given object is an instance of Function.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/lambdaMixins.@pulumi/aws/lambda/function.Function */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -225,6 +240,11 @@ object lambdaNs extends js.Object {
       state: atPulumiAwsLib.lambdaLayerVersionMod.LayerVersionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.lambdaLayerVersionMod.LayerVersion = js.native
+    /**
+      * Returns true if the given object is an instance of LayerVersion.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/layerVersion.LayerVersion */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -250,6 +270,11 @@ object lambdaNs extends js.Object {
       state: atPulumiAwsLib.lambdaPermissionMod.PermissionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.lambdaPermissionMod.Permission = js.native
+    /**
+      * Returns true if the given object is an instance of Permission.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/permission.Permission */ scala.Boolean = js.native
   }
   
 }

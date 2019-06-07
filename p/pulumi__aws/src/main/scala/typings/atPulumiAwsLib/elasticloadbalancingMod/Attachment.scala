@@ -44,5 +44,10 @@ object Attachment extends js.Object {
     state: atPulumiAwsLib.elasticloadbalancingAttachmentMod.AttachmentState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.elasticloadbalancingAttachmentMod.Attachment = js.native
+  /**
+    * Returns true if the given object is an instance of Attachment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/attachment.Attachment */ scala.Boolean = js.native
 }
 

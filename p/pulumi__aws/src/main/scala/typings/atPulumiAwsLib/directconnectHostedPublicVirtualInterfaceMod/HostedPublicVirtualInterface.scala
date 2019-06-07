@@ -92,5 +92,10 @@ object HostedPublicVirtualInterface extends js.Object {
     state: atPulumiAwsLib.directconnectHostedPublicVirtualInterfaceMod.HostedPublicVirtualInterfaceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.directconnectHostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = js.native
+  /**
+    * Returns true if the given object is an instance of HostedPublicVirtualInterface.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterface.HostedPublicVirtualInterface */ scala.Boolean = js.native
 }
 

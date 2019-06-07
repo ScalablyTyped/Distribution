@@ -60,5 +60,10 @@ object OpenIdConnectProvider extends js.Object {
     state: atPulumiAwsLib.iamOpenIdConnectProviderMod.OpenIdConnectProviderState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamOpenIdConnectProviderMod.OpenIdConnectProvider = js.native
+  /**
+    * Returns true if the given object is an instance of OpenIdConnectProvider.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/openIdConnectProvider.OpenIdConnectProvider */ scala.Boolean = js.native
 }
 

@@ -44,5 +44,10 @@ object GroupPolicy extends js.Object {
     state: atPulumiAwsLib.iamGroupPolicyMod.GroupPolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamGroupPolicyMod.GroupPolicy = js.native
+  /**
+    * Returns true if the given object is an instance of GroupPolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicy.GroupPolicy */ scala.Boolean = js.native
 }
 

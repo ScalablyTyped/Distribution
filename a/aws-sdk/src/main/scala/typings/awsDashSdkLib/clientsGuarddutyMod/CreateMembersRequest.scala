@@ -13,12 +13,12 @@ trait CreateMembersRequest extends js.Object {
   /**
     * The unique ID of the detector of the GuardDuty account with which you want to associate member accounts.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
 }
 
 object CreateMembersRequest {
   @scala.inline
-  def apply(AccountDetails: AccountDetails, DetectorId: __string): CreateMembersRequest = {
+  def apply(AccountDetails: AccountDetails, DetectorId: DetectorId): CreateMembersRequest = {
     val __obj = js.Dynamic.literal(AccountDetails = AccountDetails, DetectorId = DetectorId)
   
     __obj.asInstanceOf[CreateMembersRequest]

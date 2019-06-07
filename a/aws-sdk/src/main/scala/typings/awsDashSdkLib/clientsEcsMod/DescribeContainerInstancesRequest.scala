@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DescribeContainerInstancesRequest extends js.Object {
   /**
-    * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the container instances to describe. If you do not specify a cluster, the default cluster is assumed.
+    * The short name or full Amazon Resource Name (ARN) of the cluster that hosts the container instances to describe. If you do not specify a cluster, the default cluster is assumed. This parameter is required if the container instance or container instances you are describing were launched in any cluster other than the default cluster.
     */
   var cluster: js.UndefOr[String] = js.undefined
   /**

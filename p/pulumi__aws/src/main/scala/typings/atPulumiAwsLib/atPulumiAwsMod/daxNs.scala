@@ -74,6 +74,11 @@ object daxNs extends js.Object {
       state: atPulumiAwsLib.daxClusterMod.ClusterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.daxClusterMod.Cluster = js.native
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dax/cluster.Cluster */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -99,6 +104,11 @@ object daxNs extends js.Object {
       state: atPulumiAwsLib.daxParameterGroupMod.ParameterGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.daxParameterGroupMod.ParameterGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dax/parameterGroup.ParameterGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -124,6 +134,11 @@ object daxNs extends js.Object {
       state: atPulumiAwsLib.daxSubnetGroupMod.SubnetGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.daxSubnetGroupMod.SubnetGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dax/subnetGroup.SubnetGroup */ scala.Boolean = js.native
   }
   
 }

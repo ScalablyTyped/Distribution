@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 package object clientsGuarddutyMod {
   type AccountDetails = js.Array[AccountDetail]
   type AccountId = java.lang.String
-  type AccountIds = js.Array[__string]
-  type Activate = scala.Boolean
+  type AccountIds = js.Array[AccountId]
+  type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type Comments = java.lang.String
-  type CountBySeverityFindingStatistic = scala.Double
-  type CreatedAt = java.lang.String
+  type ClientToken = java.lang.String
+  type CountBySeverity = org.scalablytyped.runtime.StringDictionary[Integer]
+  type Criterion = org.scalablytyped.runtime.StringDictionary[Condition]
   type DetectorId = java.lang.String
   type DetectorIds = js.Array[DetectorId]
   /* Rewritten from type alias, can be one of: 
@@ -22,10 +22,10 @@ package object clientsGuarddutyMod {
     - java.lang.String
   */
   type DetectorStatus = _DetectorStatus | java.lang.String
-  type Domain = java.lang.String
+  type Double = scala.Double
   type Email = java.lang.String
-  type Enable = scala.Boolean
-  type Eq = js.Array[__string]
+  type Eq = js.Array[String]
+  type Equals = js.Array[String]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.USEFUL
     - awsDashSdkLib.awsDashSdkLibStrings.NOT_USEFUL
@@ -56,9 +56,8 @@ package object clientsGuarddutyMod {
   type FindingType = java.lang.String
   type FindingTypes = js.Array[FindingType]
   type Findings = js.Array[Finding]
-  type InvitationId = java.lang.String
+  type Integer = scala.Double
   type Invitations = js.Array[Invitation]
-  type InvitedAt = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.TXT
     - awsDashSdkLib.awsDashSdkLibStrings.STIX
@@ -69,8 +68,7 @@ package object clientsGuarddutyMod {
     - java.lang.String
   */
   type IpSetFormat = _IpSetFormat | java.lang.String
-  type IpSetId = java.lang.String
-  type IpSetIds = js.Array[IpSetId]
+  type IpSetIds = js.Array[String]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.INACTIVE
     - awsDashSdkLib.awsDashSdkLibStrings.ACTIVATING
@@ -82,30 +80,26 @@ package object clientsGuarddutyMod {
     - java.lang.String
   */
   type IpSetStatus = _IpSetStatus | java.lang.String
-  type Ipv6Address = java.lang.String
-  type Ipv6Addresses = js.Array[Ipv6Address]
+  type Ipv6Addresses = js.Array[String]
   type Location = java.lang.String
-  type MasterId = java.lang.String
+  type Long = scala.Double
   type MaxResults = scala.Double
   type Members = js.Array[Member]
-  type Message = java.lang.String
   type Name = java.lang.String
-  type Neq = js.Array[__string]
-  type NetworkInterfaceId = java.lang.String
+  type Neq = js.Array[String]
   type NetworkInterfaces = js.Array[NetworkInterface]
-  type NextToken = java.lang.String
+  type NotEquals = js.Array[String]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ASC
     - awsDashSdkLib.awsDashSdkLibStrings.DESC
     - java.lang.String
   */
   type OrderBy = _OrderBy | java.lang.String
-  type PrivateDnsName = java.lang.String
-  type PrivateIpAddress = java.lang.String
+  type PortProbeDetails = js.Array[PortProbeDetail]
   type PrivateIpAddresses = js.Array[PrivateIpAddressDetails]
   type ProductCodes = js.Array[ProductCode]
   type SecurityGroups = js.Array[SecurityGroup]
-  type ServiceRole = java.lang.String
+  type String = java.lang.String
   type Tags = js.Array[Tag]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.TXT
@@ -117,8 +111,7 @@ package object clientsGuarddutyMod {
     - java.lang.String
   */
   type ThreatIntelSetFormat = _ThreatIntelSetFormat | java.lang.String
-  type ThreatIntelSetId = java.lang.String
-  type ThreatIntelSetIds = js.Array[ThreatIntelSetId]
+  type ThreatIntelSetIds = js.Array[String]
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.INACTIVE
     - awsDashSdkLib.awsDashSdkLibStrings.ACTIVATING
@@ -131,15 +124,6 @@ package object clientsGuarddutyMod {
   */
   type ThreatIntelSetStatus = _ThreatIntelSetStatus | java.lang.String
   type UnprocessedAccounts = js.Array[UnprocessedAccount]
-  type UpdatedAt = java.lang.String
-  type __boolean = scala.Boolean
-  type __double = scala.Double
-  type __integer = scala.Double
-  type __listOfPortProbeDetail = js.Array[PortProbeDetail]
-  type __mapOfCondition = org.scalablytyped.runtime.StringDictionary[Condition]
-  type __mapOfCountBySeverityFindingStatistic = org.scalablytyped.runtime.StringDictionary[CountBySeverityFindingStatistic]
-  type __string = java.lang.String
-  type __stringMin0Max64 = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2017-11-28`
     - awsDashSdkLib.awsDashSdkLibStrings.latest

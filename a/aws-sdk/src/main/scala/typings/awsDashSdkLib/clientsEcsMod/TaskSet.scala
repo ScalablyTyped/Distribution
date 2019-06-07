@@ -63,7 +63,7 @@ trait TaskSet extends js.Object {
     */
   var serviceRegistries: js.UndefOr[ServiceRegistries] = js.undefined
   /**
-    * The stability status, which indicates whether the task set has reached a steady state. If the following conditions are met, the task set will be in STEADY_STATE:   The task runningCount is equal to the computedDesiredCount.   The pendingCount is 0.   There are no tasks running on container instances in the DRAINING status.   All tasks are reporting a healthy status from the load balancers, service discovery, and container health checks.   If any of those conditions are not met, the stability status returns STABILIZING.
+    * The stability status, which indicates whether the task set has reached a steady state. If the following conditions are met, the task set will be in STEADY_STATE:   The task runningCount is equal to the computedDesiredCount.   The pendingCount is 0.   There are no tasks running on container instances in the DRAINING status.   All tasks are reporting a healthy status from the load balancers, service discovery, and container health checks.  If a healthCheckGracePeriodSeconds value was set when the service was created, you may see a STEADY_STATE reached since unhealthy Elastic Load Balancing target health checks will be ignored until it expires.    If any of those conditions are not met, the stability status returns STABILIZING.
     */
   var stabilityStatus: js.UndefOr[StabilityStatus] = js.undefined
   /**

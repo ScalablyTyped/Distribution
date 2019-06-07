@@ -201,6 +201,9 @@ object awsDashLambdaLibStrings {
   sealed trait PreSignUp_AdminCreateUser extends js.Object
   
   @js.native
+  sealed trait PreSignUp_ExternalProvider extends js.Object
+  
+  @js.native
   sealed trait PreSignUp_SignUp extends js.Object
   
   @js.native
@@ -456,6 +459,8 @@ object awsDashLambdaLibStrings {
   def PreAuthentication_Authentication: PreAuthentication_Authentication = "PreAuthentication_Authentication".asInstanceOf[PreAuthentication_Authentication]
   @scala.inline
   def PreSignUp_AdminCreateUser: PreSignUp_AdminCreateUser = "PreSignUp_AdminCreateUser".asInstanceOf[PreSignUp_AdminCreateUser]
+  @scala.inline
+  def PreSignUp_ExternalProvider: PreSignUp_ExternalProvider = "PreSignUp_ExternalProvider".asInstanceOf[PreSignUp_ExternalProvider]
   @scala.inline
   def PreSignUp_SignUp: PreSignUp_SignUp = "PreSignUp_SignUp".asInstanceOf[PreSignUp_SignUp]
   @scala.inline

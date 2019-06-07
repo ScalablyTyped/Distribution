@@ -121,5 +121,10 @@ object HealthCheck extends js.Object {
     state: atPulumiAwsLib.route53HealthCheckMod.HealthCheckState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.route53HealthCheckMod.HealthCheck = js.native
+  /**
+    * Returns true if the given object is an instance of HealthCheck.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ scala.Boolean = js.native
 }
 

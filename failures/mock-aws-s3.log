@@ -1,0 +1,70 @@
+[debug] PhaseRunner.scala:84 Success [id => mock-aws-s3, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/mock-aws-s3/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/mock-aws-s3),TsIdentLibrarySimple(mock-aws-s3)),TsIdentModule(None,List(mock-aws-s3))) [id => mock-aws-s3, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(mock-aws-s3)) [id => mock-aws-s3, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(mock-aws-s3) [id => mock-aws-s3, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => mock-aws-s3, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing mock-aws-s3 [id => mock-aws-s3, phase => scala.js] 
+[info ] RemoveMultipleInheritance.scala:43 Dropped parents 
+- awsDashSdkLib.libConfigUnderscoreServiceUnderscorePlaceholdersMod.ConfigurationServicePlaceholders because Inheritance from two classes. Inlined acm, acmpca, alexaforbusiness, amplify, apigateway, apigatewaymanagementapi, apigatewayv2, applicationautoscaling, appmesh, appstream, appsync, athena, autoscaling, autoscalingplans, backup, batch, budgets, chime, cloud9, clouddirectory, cloudformation, cloudfront, cloudhsm, cloudhsmv2, cloudsearch, cloudsearchdomain, cloudtrail, cloudwatch, cloudwatchevents, cloudwatchlogs, codebuild, codecommit, codedeploy, codepipeline, codestar, cognitoidentity, cognitoidentityserviceprovider, cognitosync, comprehend, comprehendmedical, configservice, connect, costexplorer, cur, datapipeline, datasync, dax, devicefarm, directconnect, directoryservice, discovery, dlm, dms, docdb, dynamodb, dynamodbstreams, ec2, ecr, ecs, efs, eks, elasticache, elasticbeanstalk, elastictranscoder, elb, elbv2, emr, es, firehose, fms, fsx, gamelift, glacier, globalaccelerator, glue, greengrass, groundstation, guardduty, health, iam, importexport, inspector, iot, iot1clickdevicesservice, iot1clickprojects, iotanalytics, iotdata, iotevents, ioteventsdata, iotjobsdataplane, iotthingsgraph, kafka, kinesis, kinesisanalytics, kinesisanalyticsv2, kinesisvideo, kinesisvideoarchivedmedia, kinesisvideomedia, kms, lambda, lexmodelbuildingservice, lexruntime, licensemanager, lightsail, machinelearning, macie, managedblockchain, marketplacecommerceanalytics, marketplaceentitlementservice, marketplacemetering, mediaconnect, mediaconvert, medialive, mediapackage, mediapackagevod, mediastore, mediastoredata, mediatailor, migrationhub, mobile, mobileanalytics, mq, mturk, neptune, opsworks, opsworkscm, organizations, pi, pinpoint, pinpointemail, pinpointsmsvoice, polly, pricing, quicksight, ram, rds, rdsdataservice, redshift, rekognition, resourcegroups, resourcegroupstaggingapi, robomaker, route53, route53domains, route53resolver, s3, s3control, sagemaker, sagemakerruntime, secretsmanager, securityhub, serverlessapplicationrepository, servicecatalog, servicediscovery, ses, shield, signer, simpledb, sms, snowball, sns, sqs, ssm, stepfunctions, storagegateway, sts, support, swf, textract, transcribeservice, transfer, translate, waf, wafregional, workdocs, worklink, workmail, workspaces, xray [id => mock-aws-s3, phase => scala.js, this => Name(mockDashAwsDashS3Lib) / Name(mockDashAwsDashS3Mod) / Name(MockConfigInstance)] 
+[debug] PhaseRunner.scala:84 Success [id => mock-aws-s3, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:245 Built mock-aws-s3 in 4417 ms [id => mock-aws-s3, phase => build] 
+[info ] Phase3CompileBloop.scala:253 published local, [/home/tso/.ivy2/local/org.scalablytyped/mock-aws-s3_sjs0.6_2.12/2.6-dt-20181017Z-51793e/jars/mock-aws-s3_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/mock-aws-s3_sjs0.6_2.12/2.6-dt-20181017Z-51793e/srcs/mock-aws-s3_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/mock-aws-s3_sjs0.6_2.12/2.6-dt-20181017Z-51793e/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/mock-aws-s3_sjs0.6_2.12/2.6-dt-20181017Z-51793e/poms/mock-aws-s3_sjs0.6_2.12.pom] [id => mock-aws-s3, phase => build] 
+[debug] PhaseRunner.scala:84 Success [id => mock-aws-s3, phase => build] 
+[error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 405 [id => mock-aws-s3, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.markAsDone(HttpProtocol.java:204)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.finishUpdate(HttpProtocol.java:189)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.exitAfterHandlingBody(HttpProtocol.java:402)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handleHttpResponse(HttpProtocol.java:429)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handle(HttpProtocol.java:476)
+	at com.ning.http.client.providers.netty.handler.Processor.messageReceived(Processor.java:89)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:142)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:92)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dispatch.StatusCode: Unexpected response status: 405
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1(BinTrayPublisher.scala:35)
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1$adapted(BinTrayPublisher.scala:31)
+	at dispatch.FunctionHandler.onCompleted(handlers.scala:26)
+	at com.ning.http.client.AsyncCompletionHandler.onCompleted(AsyncCompletionHandler.java:55)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$Client$StoringHandler$1$.onCompleted(BinTrayPublisher.scala:116)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.getContent(NettyResponseFuture.java:177)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:212)
+	... 43 more
+
+[error] PhaseRunner.scala:88 Failure, [mock-aws-s3 => java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405] [id => mock-aws-s3, phase => publish] 

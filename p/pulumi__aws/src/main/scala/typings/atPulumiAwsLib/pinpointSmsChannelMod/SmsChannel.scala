@@ -68,5 +68,10 @@ object SmsChannel extends js.Object {
     state: atPulumiAwsLib.pinpointSmsChannelMod.SmsChannelState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.pinpointSmsChannelMod.SmsChannel = js.native
+  /**
+    * Returns true if the given object is an instance of SmsChannel.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/smsChannel.SmsChannel */ scala.Boolean = js.native
 }
 

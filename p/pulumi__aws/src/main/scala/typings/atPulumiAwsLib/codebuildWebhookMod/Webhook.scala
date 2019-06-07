@@ -19,9 +19,13 @@ class Webhook protected ()
   def this(name: java.lang.String, args: WebhookArgs) = this()
   def this(name: java.lang.String, args: WebhookArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * A regular expression used to determine which branches get built. Default is all branches are built.
+    * A regular expression used to determine which branches get built. Default is all branches are built. It is recommended to use `filter_group` over `branch_filter`.
     */
   val branchFilter: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
+    * Information about the webhook's trigger. Filter group blocks are documented below.
+    */
+  val filterGroups: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Filters]]] = js.native
   /**
     * The CodeBuild endpoint where webhook events are sent.
     */
@@ -64,5 +68,10 @@ object Webhook extends js.Object {
     state: atPulumiAwsLib.codebuildWebhookMod.WebhookState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.codebuildWebhookMod.Webhook = js.native
+  /**
+    * Returns true if the given object is an instance of Webhook.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/webhook.Webhook */ scala.Boolean = js.native
 }
 

@@ -104,5 +104,10 @@ object NfsFileShare extends js.Object {
     state: atPulumiAwsLib.storagegatewayNfsFileShareMod.NfsFileShareState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.storagegatewayNfsFileShareMod.NfsFileShare = js.native
+  /**
+    * Returns true if the given object is an instance of NfsFileShare.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/nfsFileShare.NfsFileShare */ scala.Boolean = js.native
 }
 

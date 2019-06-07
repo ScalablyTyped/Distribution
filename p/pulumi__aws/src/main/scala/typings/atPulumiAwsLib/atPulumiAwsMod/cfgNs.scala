@@ -116,6 +116,11 @@ object cfgNs extends js.Object {
       state: atPulumiAwsLib.cfgAggregateAuthorizationMod.AggregateAuthorizationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cfgAggregateAuthorizationMod.AggregateAuthorization = js.native
+    /**
+      * Returns true if the given object is an instance of AggregateAuthorization.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/aggregateAuthorization.AggregateAuthorization */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -141,6 +146,11 @@ object cfgNs extends js.Object {
       state: atPulumiAwsLib.cfgConfigurationAggregatorMod.ConfigurationAggregatorState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cfgConfigurationAggregatorMod.ConfigurationAggregator = js.native
+    /**
+      * Returns true if the given object is an instance of ConfigurationAggregator.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/configurationAggregator.ConfigurationAggregator */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -166,6 +176,11 @@ object cfgNs extends js.Object {
       state: atPulumiAwsLib.cfgDeliveryChannelMod.DeliveryChannelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cfgDeliveryChannelMod.DeliveryChannel = js.native
+    /**
+      * Returns true if the given object is an instance of DeliveryChannel.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -191,6 +206,11 @@ object cfgNs extends js.Object {
       state: atPulumiAwsLib.cfgRecorderMod.RecorderState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cfgRecorderMod.Recorder = js.native
+    /**
+      * Returns true if the given object is an instance of Recorder.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorder.Recorder */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -216,6 +236,11 @@ object cfgNs extends js.Object {
       state: atPulumiAwsLib.cfgRecorderStatusMod.RecorderStatusState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cfgRecorderStatusMod.RecorderStatus = js.native
+    /**
+      * Returns true if the given object is an instance of RecorderStatus.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorderStatus.RecorderStatus */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -241,6 +266,11 @@ object cfgNs extends js.Object {
       state: atPulumiAwsLib.cfgRuleMod.RuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cfgRuleMod.Rule = js.native
+    /**
+      * Returns true if the given object is an instance of Rule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/rule.Rule */ scala.Boolean = js.native
   }
   
 }

@@ -44,5 +44,10 @@ object Resource extends js.Object {
     state: atPulumiAwsLib.apigatewayResourceMod.ResourceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayResourceMod.Resource = js.native
+  /**
+    * Returns true if the given object is an instance of Resource.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/resource.Resource */ scala.Boolean = js.native
 }
 

@@ -44,5 +44,10 @@ object RuleGroup extends js.Object {
     state: atPulumiAwsLib.wafRuleGroupMod.RuleGroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafRuleGroupMod.RuleGroup = js.native
+  /**
+    * Returns true if the given object is an instance of RuleGroup.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/ruleGroup.RuleGroup */ scala.Boolean = js.native
 }
 

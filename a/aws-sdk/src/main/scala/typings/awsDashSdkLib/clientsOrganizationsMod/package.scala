@@ -151,6 +151,11 @@ package object clientsOrganizationsMod {
   type RootName = java.lang.String
   type Roots = js.Array[Root]
   type ServicePrincipal = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeys = js.Array[TagKey]
+  type TagValue = java.lang.String
+  type TaggableResourceId = java.lang.String
+  type Tags = js.Array[Tag]
   type TargetName = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT

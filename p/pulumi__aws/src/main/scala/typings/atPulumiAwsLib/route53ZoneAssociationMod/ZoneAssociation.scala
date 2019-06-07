@@ -56,5 +56,10 @@ object ZoneAssociation extends js.Object {
     state: atPulumiAwsLib.route53ZoneAssociationMod.ZoneAssociationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.route53ZoneAssociationMod.ZoneAssociation = js.native
+  /**
+    * Returns true if the given object is an instance of ZoneAssociation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ scala.Boolean = js.native
 }
 

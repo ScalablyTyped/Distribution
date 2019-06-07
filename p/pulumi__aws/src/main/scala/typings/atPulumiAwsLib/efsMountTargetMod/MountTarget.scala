@@ -74,5 +74,10 @@ object MountTarget extends js.Object {
     state: atPulumiAwsLib.efsMountTargetMod.MountTargetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.efsMountTargetMod.MountTarget = js.native
+  /**
+    * Returns true if the given object is an instance of MountTarget.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/mountTarget.MountTarget */ scala.Boolean = js.native
 }
 

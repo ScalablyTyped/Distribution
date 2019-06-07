@@ -79,5 +79,10 @@ object Deployment extends js.Object {
     state: atPulumiAwsLib.apigatewayDeploymentMod.DeploymentState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayDeploymentMod.Deployment = js.native
+  /**
+    * Returns true if the given object is an instance of Deployment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/deployment.Deployment */ scala.Boolean = js.native
 }
 

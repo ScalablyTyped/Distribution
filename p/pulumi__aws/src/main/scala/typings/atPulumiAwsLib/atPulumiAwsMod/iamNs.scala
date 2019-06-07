@@ -703,6 +703,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamAccessKeyMod.AccessKeyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamAccessKeyMod.AccessKey = js.native
+    /**
+      * Returns true if the given object is an instance of AccessKey.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accessKey.AccessKey */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -728,6 +733,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamAccountAliasMod.AccountAliasState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamAccountAliasMod.AccountAlias = js.native
+    /**
+      * Returns true if the given object is an instance of AccountAlias.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountAlias.AccountAlias */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -753,6 +763,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamAccountPasswordPolicyMod.AccountPasswordPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamAccountPasswordPolicyMod.AccountPasswordPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of AccountPasswordPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -778,6 +793,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamGroupMod.GroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamGroupMod.Group = js.native
+    /**
+      * Returns true if the given object is an instance of Group.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/group.Group */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -803,6 +823,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamGroupMembershipMod.GroupMembershipState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamGroupMembershipMod.GroupMembership = js.native
+    /**
+      * Returns true if the given object is an instance of GroupMembership.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupMembership.GroupMembership */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -828,6 +853,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamGroupPolicyMod.GroupPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamGroupPolicyMod.GroupPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of GroupPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicy.GroupPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -853,6 +883,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamGroupPolicyAttachmentMod.GroupPolicyAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamGroupPolicyAttachmentMod.GroupPolicyAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of GroupPolicyAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicyAttachment.GroupPolicyAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -878,6 +913,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamInstanceProfileMod.InstanceProfileState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamInstanceProfileMod.InstanceProfile = js.native
+    /**
+      * Returns true if the given object is an instance of InstanceProfile.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/instanceProfile.InstanceProfile */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -903,6 +943,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamOpenIdConnectProviderMod.OpenIdConnectProviderState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamOpenIdConnectProviderMod.OpenIdConnectProvider = js.native
+    /**
+      * Returns true if the given object is an instance of OpenIdConnectProvider.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/openIdConnectProvider.OpenIdConnectProvider */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -928,6 +973,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamPolicyMod.PolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamPolicyMod.Policy = js.native
+    /**
+      * Returns true if the given object is an instance of Policy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/policy.Policy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -953,6 +1003,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamPolicyAttachmentMod.PolicyAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamPolicyAttachmentMod.PolicyAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of PolicyAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/policyAttachment.PolicyAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -978,6 +1033,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamRoleMod.RoleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamRoleMod.Role = js.native
+    /**
+      * Returns true if the given object is an instance of Role.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/role.Role */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1003,6 +1063,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamRolePolicyMod.RolePolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamRolePolicyMod.RolePolicy = js.native
+    /**
+      * Returns true if the given object is an instance of RolePolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/rolePolicy.RolePolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1028,6 +1093,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamRolePolicyAttachmentMod.RolePolicyAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamRolePolicyAttachmentMod.RolePolicyAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of RolePolicyAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/rolePolicyAttachment.RolePolicyAttachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1053,6 +1123,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamSamlProviderMod.SamlProviderState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamSamlProviderMod.SamlProvider = js.native
+    /**
+      * Returns true if the given object is an instance of SamlProvider.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/samlProvider.SamlProvider */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1078,6 +1153,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamServerCertificateMod.ServerCertificateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamServerCertificateMod.ServerCertificate = js.native
+    /**
+      * Returns true if the given object is an instance of ServerCertificate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serverCertificate.ServerCertificate */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1103,6 +1183,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamServiceLinkedRoleMod.ServiceLinkedRoleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamServiceLinkedRoleMod.ServiceLinkedRole = js.native
+    /**
+      * Returns true if the given object is an instance of ServiceLinkedRole.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/serviceLinkedRole.ServiceLinkedRole */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1128,6 +1213,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamSshKeyMod.SshKeyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamSshKeyMod.SshKey = js.native
+    /**
+      * Returns true if the given object is an instance of SshKey.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/sshKey.SshKey */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1153,6 +1243,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamUserMod.UserState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamUserMod.User = js.native
+    /**
+      * Returns true if the given object is an instance of User.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/user.User */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1178,6 +1273,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamUserGroupMembershipMod.UserGroupMembershipState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamUserGroupMembershipMod.UserGroupMembership = js.native
+    /**
+      * Returns true if the given object is an instance of UserGroupMembership.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userGroupMembership.UserGroupMembership */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1203,6 +1303,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamUserLoginProfileMod.UserLoginProfileState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamUserLoginProfileMod.UserLoginProfile = js.native
+    /**
+      * Returns true if the given object is an instance of UserLoginProfile.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userLoginProfile.UserLoginProfile */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1228,6 +1333,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamUserPolicyMod.UserPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamUserPolicyMod.UserPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of UserPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userPolicy.UserPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -1253,6 +1363,11 @@ object iamNs extends js.Object {
       state: atPulumiAwsLib.iamUserPolicyAttachmentMod.UserPolicyAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.iamUserPolicyAttachmentMod.UserPolicyAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of UserPolicyAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userPolicyAttachment.UserPolicyAttachment */ scala.Boolean = js.native
   }
   
 }

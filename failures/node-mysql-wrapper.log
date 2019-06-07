@@ -1,0 +1,85 @@
+[debug] PhaseRunner.scala:84 Success [id => node-mysql-wrapper, phase => typescript] 
+[info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(node-mysql-wrapper) [id => node-mysql-wrapper, phase => typescript, file => ../types/node-mysql-wrapper/index.d.ts] 
+[debug] PhaseRunner.scala:84 Success [id => node-mysql-wrapper, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-mysql-wrapper/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/node-mysql-wrapper),TsIdentLibrarySimple(node-mysql-wrapper)),TsIdentModule(None,List(node-mysql-wrapper))) [id => node-mysql-wrapper, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(node-mysql-wrapper)) [id => node-mysql-wrapper, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(node-mysql-wrapper) [id => node-mysql-wrapper, phase => typescript] 
+[info ] InferReturnTypes.scala:32 Could not infer return type [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-mysql-wrapper) / TsDeclClass(SelectQueryRules) / TsMemberFunction(last))] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Doc) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-mysql-wrapper) / TsDeclClass(MeteorCollection) / TsMemberFunction(allow) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Doc) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-mysql-wrapper) / TsDeclClass(MeteorCollection) / TsMemberFunction(deny) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Fields) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-mysql-wrapper) / TsDeclClass(MeteorCollection) / TsMemberFunction(find) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_FieldsReactive) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-mysql-wrapper) / TsDeclClass(MeteorCollection) / TsMemberFunction(findOne) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Multi) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(node-mysql-wrapper) / TsDeclClass(MeteorTable) / TsMemberFunction(update) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Connection) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Mongo) / TsDeclInterface(CollectionStatic) / TsMemberCtor() / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Doc) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Mongo) / TsDeclInterface(Collection) / TsMemberFunction(allow) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Doc) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Mongo) / TsDeclInterface(Collection) / TsMemberFunction(deny) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Fields) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Mongo) / TsDeclInterface(Collection) / TsMemberFunction(find) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_FieldsReactive) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Mongo) / TsDeclInterface(Collection) / TsMemberFunction(findOne) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Multi) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Mongo) / TsDeclInterface(Collection) / TsMemberFunction(update) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_MultiBoolean) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Mongo) / TsDeclInterface(Collection) / TsMemberFunction(upsert) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_InsertedId) [id => node-mysql-wrapper, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Mongo) / TsDeclInterface(Collection) / TsMemberFunction(upsert) / TsFunSig() / TsTypeObject())] 
+[debug] PhaseRunner.scala:84 Success [id => node-mysql-wrapper, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing node-mysql-wrapper [id => node-mysql-wrapper, phase => scala.js] 
+[info ] CompleteClass.scala:64 Completed implementations Vector(tables, rawCriteriaObject, noDatabaseProperties, whereClause, selectFromClause) [id => node-mysql-wrapper, phase => scala.js, this => Name(nodeDashMysqlDashWrapperLib) / Name(nodeDashMysqlDashWrapperMod) / Name(CriteriaParts)] 
+[debug] PhaseRunner.scala:84 Success [id => node-mysql-wrapper, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:245 Built node-mysql-wrapper in 805 ms [id => node-mysql-wrapper, phase => build] 
+[info ] Phase3CompileBloop.scala:253 published local, [/home/tso/.ivy2/local/org.scalablytyped/node-mysql-wrapper_sjs0.6_2.12/0.0-unknown-dt-20190524Z-66b357/jars/node-mysql-wrapper_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/node-mysql-wrapper_sjs0.6_2.12/0.0-unknown-dt-20190524Z-66b357/srcs/node-mysql-wrapper_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/node-mysql-wrapper_sjs0.6_2.12/0.0-unknown-dt-20190524Z-66b357/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/node-mysql-wrapper_sjs0.6_2.12/0.0-unknown-dt-20190524Z-66b357/poms/node-mysql-wrapper_sjs0.6_2.12.pom] [id => node-mysql-wrapper, phase => build] 
+[debug] PhaseRunner.scala:84 Success [id => node-mysql-wrapper, phase => build] 
+[error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 405 [id => node-mysql-wrapper, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.markAsDone(HttpProtocol.java:204)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.finishUpdate(HttpProtocol.java:189)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.exitAfterHandlingBody(HttpProtocol.java:402)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handleHttpResponse(HttpProtocol.java:429)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handle(HttpProtocol.java:476)
+	at com.ning.http.client.providers.netty.handler.Processor.messageReceived(Processor.java:89)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:142)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:92)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dispatch.StatusCode: Unexpected response status: 405
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1(BinTrayPublisher.scala:35)
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1$adapted(BinTrayPublisher.scala:31)
+	at dispatch.FunctionHandler.onCompleted(handlers.scala:26)
+	at com.ning.http.client.AsyncCompletionHandler.onCompleted(AsyncCompletionHandler.java:55)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$Client$StoringHandler$1$.onCompleted(BinTrayPublisher.scala:116)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.getContent(NettyResponseFuture.java:177)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:212)
+	... 43 more
+
+[error] PhaseRunner.scala:88 Failure, [node-mysql-wrapper => java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405] [id => node-mysql-wrapper, phase => publish] 

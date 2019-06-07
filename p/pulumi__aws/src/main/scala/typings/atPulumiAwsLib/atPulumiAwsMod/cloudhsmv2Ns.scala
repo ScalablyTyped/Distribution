@@ -64,6 +64,11 @@ object cloudhsmv2Ns extends js.Object {
       state: atPulumiAwsLib.cloudhsmv2ClusterMod.ClusterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudhsmv2ClusterMod.Cluster = js.native
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/cluster.Cluster */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -89,6 +94,11 @@ object cloudhsmv2Ns extends js.Object {
       state: atPulumiAwsLib.cloudhsmv2HsmMod.HsmState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudhsmv2HsmMod.Hsm = js.native
+    /**
+      * Returns true if the given object is an instance of Hsm.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudhsmv2/hsm.Hsm */ scala.Boolean = js.native
   }
   
 }

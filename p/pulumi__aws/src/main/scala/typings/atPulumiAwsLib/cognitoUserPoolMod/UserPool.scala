@@ -137,5 +137,10 @@ object UserPool extends js.Object {
     state: atPulumiAwsLib.cognitoUserPoolMod.UserPoolState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cognitoUserPoolMod.UserPool = js.native
+  /**
+    * Returns true if the given object is an instance of UserPool.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userPool.UserPool */ scala.Boolean = js.native
 }
 

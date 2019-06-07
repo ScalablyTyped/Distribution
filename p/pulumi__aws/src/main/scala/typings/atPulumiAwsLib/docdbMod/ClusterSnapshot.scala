@@ -44,5 +44,10 @@ object ClusterSnapshot extends js.Object {
     state: atPulumiAwsLib.docdbClusterSnapshotMod.ClusterSnapshotState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.docdbClusterSnapshotMod.ClusterSnapshot = js.native
+  /**
+    * Returns true if the given object is an instance of ClusterSnapshot.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/docdb/clusterSnapshot.ClusterSnapshot */ scala.Boolean = js.native
 }
 

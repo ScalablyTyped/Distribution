@@ -9,15 +9,15 @@ trait CreateIPSetRequest extends js.Object {
   /**
     * A boolean value that indicates whether GuardDuty is to start using the uploaded IPSet.
     */
-  var Activate: awsDashSdkLib.clientsGuarddutyMod.Activate
+  var Activate: Boolean
   /**
     * The idempotency token for the create request.
     */
-  var ClientToken: js.UndefOr[__stringMin0Max64] = js.undefined
+  var ClientToken: js.UndefOr[ClientToken] = js.undefined
   /**
-    * The unique ID of the detector that you want to update.
+    * The unique ID of the detector of the GuardDuty account for which you want to create an IPSet.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * The format of the file that contains the IPSet.
     */
@@ -35,12 +35,12 @@ trait CreateIPSetRequest extends js.Object {
 object CreateIPSetRequest {
   @scala.inline
   def apply(
-    Activate: Activate,
-    DetectorId: __string,
+    Activate: Boolean,
+    DetectorId: DetectorId,
     Format: IpSetFormat,
     Location: Location,
     Name: Name,
-    ClientToken: __stringMin0Max64 = null
+    ClientToken: ClientToken = null
   ): CreateIPSetRequest = {
     val __obj = js.Dynamic.literal(Activate = Activate, DetectorId = DetectorId, Format = Format.asInstanceOf[js.Any], Location = Location, Name = Name)
     if (ClientToken != null) __obj.updateDynamic("ClientToken")(ClientToken)

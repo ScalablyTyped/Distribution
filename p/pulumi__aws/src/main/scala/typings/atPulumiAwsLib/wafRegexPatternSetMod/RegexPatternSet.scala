@@ -53,5 +53,10 @@ object RegexPatternSet extends js.Object {
     state: atPulumiAwsLib.wafRegexPatternSetMod.RegexPatternSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafRegexPatternSetMod.RegexPatternSet = js.native
+  /**
+    * Returns true if the given object is an instance of RegexPatternSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/regexPatternSet.RegexPatternSet */ scala.Boolean = js.native
 }
 

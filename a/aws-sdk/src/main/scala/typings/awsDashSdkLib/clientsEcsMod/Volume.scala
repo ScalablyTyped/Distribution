@@ -15,7 +15,7 @@ trait Volume extends js.Object {
     */
   var host: js.UndefOr[HostVolumeProperties] = js.undefined
   /**
-    * The name of the volume. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. This name is referenced in the sourceVolume parameter of container definition mountPoints.
+    * The name of the volume. Up to 255 letters (uppercase and lowercase), numbers, and hyphens are allowed. This name is referenced in the sourceVolume parameter of container definition mountPoints.
     */
   var name: js.UndefOr[String] = js.undefined
 }

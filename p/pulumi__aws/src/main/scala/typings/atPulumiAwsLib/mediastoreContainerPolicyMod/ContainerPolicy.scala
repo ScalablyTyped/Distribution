@@ -52,5 +52,10 @@ object ContainerPolicy extends js.Object {
     state: atPulumiAwsLib.mediastoreContainerPolicyMod.ContainerPolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.mediastoreContainerPolicyMod.ContainerPolicy = js.native
+  /**
+    * Returns true if the given object is an instance of ContainerPolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ scala.Boolean = js.native
 }
 

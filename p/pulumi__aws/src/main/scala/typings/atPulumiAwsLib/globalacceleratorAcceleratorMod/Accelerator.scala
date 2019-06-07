@@ -65,5 +65,10 @@ object Accelerator extends js.Object {
     state: atPulumiAwsLib.globalacceleratorAcceleratorMod.AcceleratorState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.globalacceleratorAcceleratorMod.Accelerator = js.native
+  /**
+    * Returns true if the given object is an instance of Accelerator.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ scala.Boolean = js.native
 }
 

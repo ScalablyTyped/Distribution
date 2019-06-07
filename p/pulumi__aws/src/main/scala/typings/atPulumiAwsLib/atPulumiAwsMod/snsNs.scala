@@ -113,6 +113,11 @@ object snsNs extends js.Object {
       state: atPulumiAwsLib.snsPlatformApplicationMod.PlatformApplicationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.snsPlatformApplicationMod.PlatformApplication = js.native
+    /**
+      * Returns true if the given object is an instance of PlatformApplication.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/platformApplication.PlatformApplication */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -138,6 +143,11 @@ object snsNs extends js.Object {
       state: atPulumiAwsLib.snsSmsPreferencesMod.SmsPreferencesState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.snsSmsPreferencesMod.SmsPreferences = js.native
+    /**
+      * Returns true if the given object is an instance of SmsPreferences.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/smsPreferences.SmsPreferences */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -163,6 +173,11 @@ object snsNs extends js.Object {
       state: atPulumiAwsLib.snsTopicMod.TopicState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.snsSnsMixinsMod.snsTopicMod.Topic = js.native
+    /**
+      * Returns true if the given object is an instance of Topic.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/snsMixins.@pulumi/aws/sns/topic.Topic */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -188,6 +203,11 @@ object snsNs extends js.Object {
       state: atPulumiAwsLib.snsTopicPolicyMod.TopicPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.snsTopicPolicyMod.TopicPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of TopicPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicPolicy.TopicPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -213,6 +233,11 @@ object snsNs extends js.Object {
       state: atPulumiAwsLib.snsTopicSubscriptionMod.TopicSubscriptionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.snsTopicSubscriptionMod.TopicSubscription = js.native
+    /**
+      * Returns true if the given object is an instance of TopicSubscription.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicSubscription.TopicSubscription */ scala.Boolean = js.native
   }
   
 }

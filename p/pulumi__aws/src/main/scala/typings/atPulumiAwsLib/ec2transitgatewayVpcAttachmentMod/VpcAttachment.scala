@@ -80,5 +80,10 @@ object VpcAttachment extends js.Object {
     state: atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachmentState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachment = js.native
+  /**
+    * Returns true if the given object is an instance of VpcAttachment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/vpcAttachment.VpcAttachment */ scala.Boolean = js.native
 }
 

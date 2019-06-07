@@ -44,5 +44,10 @@ object MainRouteTableAssociation extends js.Object {
     state: atPulumiAwsLib.ec2MainRouteTableAssociationMod.MainRouteTableAssociationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2MainRouteTableAssociationMod.MainRouteTableAssociation = js.native
+  /**
+    * Returns true if the given object is an instance of MainRouteTableAssociation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/mainRouteTableAssociation.MainRouteTableAssociation */ scala.Boolean = js.native
 }
 

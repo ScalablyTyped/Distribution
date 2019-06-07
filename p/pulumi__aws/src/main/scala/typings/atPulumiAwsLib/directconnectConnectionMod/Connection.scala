@@ -76,5 +76,10 @@ object Connection extends js.Object {
     state: atPulumiAwsLib.directconnectConnectionMod.ConnectionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.directconnectConnectionMod.Connection = js.native
+  /**
+    * Returns true if the given object is an instance of Connection.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ scala.Boolean = js.native
 }
 

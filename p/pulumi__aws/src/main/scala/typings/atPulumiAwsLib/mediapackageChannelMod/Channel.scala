@@ -64,5 +64,10 @@ object Channel extends js.Object {
     state: atPulumiAwsLib.mediapackageChannelMod.ChannelState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.mediapackageChannelMod.Channel = js.native
+  /**
+    * Returns true if the given object is an instance of Channel.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediapackage/channel.Channel */ scala.Boolean = js.native
 }
 

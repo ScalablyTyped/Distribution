@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__util
 
-Typings are for version 0.2.17
+Typings are for version 0.2.18
 
 ## Library description:
 _NOTE: This is specifically tailored for Firebase JS SDK usage, if you are not a member of the Firebase team, please avoid using this package_
@@ -65,46 +65,6 @@ These comments are from the typescript definitions and might be useful:
 /**
  * Returns navigator.userAgent string or '' if it's not defined.
  * @return user agent string
- */
-/**
- * @fileoverview Standardized Firebase Error.
- *
- * Usage:
- *
- *   // Typescript string literals for type-safe codes
- *   type Err =
- *     'unknown' |
- *     'object-not-found'
- *     ;
- *
- *   // Closure enum for type-safe error codes
- *   // at-enum {string}
- *   var Err = {
- *     UNKNOWN: 'unknown',
- *     OBJECT_NOT_FOUND: 'object-not-found',
- *   }
- *
- *   let errors: Map<Err, string> = {
- *     'generic-error': "Unknown error",
- *     'file-not-found': "Could not find file: {$file}",
- *   };
- *
- *   // Type-safe function - must pass a valid error code as param.
- *   let error = new ErrorFactory<Err>('service', 'Service', errors);
- *
- *   ...
- *   throw error.create(Err.GENERIC);
- *   ...
- *   throw error.create(Err.FILE_NOT_FOUND, {'file': fileName});
- *   ...
- *   // Service: Could not file file: foo.txt (service/file-not-found).
- *
- *   catch (e) {
- *     assert(e.message === "Could not find file: foo.txt.");
- *     if (e.code === 'service/file-not-found') {
- *       console.log("Could not read file: " + e['file']);
- *     }
- *   }
  */
 /**
  * Evaluates a JSON string into a javascript object.

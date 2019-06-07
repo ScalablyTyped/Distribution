@@ -76,6 +76,11 @@ object inspectorNs extends js.Object {
       state: atPulumiAwsLib.inspectorAssessmentTargetMod.AssessmentTargetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.inspectorAssessmentTargetMod.AssessmentTarget = js.native
+    /**
+      * Returns true if the given object is an instance of AssessmentTarget.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTarget.AssessmentTarget */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -101,6 +106,11 @@ object inspectorNs extends js.Object {
       state: atPulumiAwsLib.inspectorAssessmentTemplateMod.AssessmentTemplateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.inspectorAssessmentTemplateMod.AssessmentTemplate = js.native
+    /**
+      * Returns true if the given object is an instance of AssessmentTemplate.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -126,6 +136,11 @@ object inspectorNs extends js.Object {
       state: atPulumiAwsLib.inspectorResourceGroupMod.ResourceGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.inspectorResourceGroupMod.ResourceGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ResourceGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/resourceGroup.ResourceGroup */ scala.Boolean = js.native
   }
   
 }

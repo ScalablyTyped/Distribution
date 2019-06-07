@@ -76,5 +76,10 @@ object Inventory extends js.Object {
     state: atPulumiAwsLib.s3InventoryMod.InventoryState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.s3InventoryMod.Inventory = js.native
+  /**
+    * Returns true if the given object is an instance of Inventory.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ scala.Boolean = js.native
 }
 

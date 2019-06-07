@@ -13,15 +13,15 @@ trait CreateFilterRequest extends js.Object {
   /**
     * The idempotency token for the create request.
     */
-  var ClientToken: js.UndefOr[__stringMin0Max64] = js.undefined
+  var ClientToken: js.UndefOr[ClientToken] = js.undefined
   /**
     * The description of the filter.
     */
   var Description: js.UndefOr[FilterDescription] = js.undefined
   /**
-    * The unique ID of the detector that you want to update.
+    * The unique ID of the detector of the GuardDuty account for which you want to create a filter.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * Represents the criteria to be used in the filter for querying findings.
     */
@@ -39,11 +39,11 @@ trait CreateFilterRequest extends js.Object {
 object CreateFilterRequest {
   @scala.inline
   def apply(
-    DetectorId: __string,
+    DetectorId: DetectorId,
     FindingCriteria: FindingCriteria,
     Name: FilterName,
     Action: FilterAction = null,
-    ClientToken: __stringMin0Max64 = null,
+    ClientToken: ClientToken = null,
     Description: FilterDescription = null,
     Rank: js.UndefOr[FilterRank] = js.undefined
   ): CreateFilterRequest = {

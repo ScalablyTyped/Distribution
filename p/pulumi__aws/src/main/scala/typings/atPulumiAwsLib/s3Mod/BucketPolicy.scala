@@ -44,5 +44,10 @@ object BucketPolicy extends js.Object {
     state: atPulumiAwsLib.s3BucketPolicyMod.BucketPolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.s3BucketPolicyMod.BucketPolicy = js.native
+  /**
+    * Returns true if the given object is an instance of BucketPolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketPolicy.BucketPolicy */ scala.Boolean = js.native
 }
 

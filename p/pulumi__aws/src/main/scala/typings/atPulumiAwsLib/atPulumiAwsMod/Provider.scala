@@ -21,3 +21,14 @@ class Provider protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.providerMod.ProviderArgs, opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
 }
 
+/* static members */
+@JSImport("@pulumi/aws", "Provider")
+@js.native
+object Provider extends js.Object {
+  /**
+    * Returns true if the given object is an instance of Provider.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/provider.Provider */ scala.Boolean = js.native
+}
+

@@ -85,5 +85,10 @@ object Server extends js.Object {
     state: atPulumiAwsLib.transferServerMod.ServerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.transferServerMod.Server = js.native
+  /**
+    * Returns true if the given object is an instance of Server.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/server.Server */ scala.Boolean = js.native
 }
 

@@ -9,12 +9,12 @@ trait DisassociateFromMasterAccountRequest extends js.Object {
   /**
     * The unique ID of the detector of the GuardDuty member account.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
 }
 
 object DisassociateFromMasterAccountRequest {
   @scala.inline
-  def apply(DetectorId: __string): DisassociateFromMasterAccountRequest = {
+  def apply(DetectorId: DetectorId): DisassociateFromMasterAccountRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId)
   
     __obj.asInstanceOf[DisassociateFromMasterAccountRequest]

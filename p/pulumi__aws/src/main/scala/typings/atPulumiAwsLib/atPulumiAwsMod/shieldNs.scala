@@ -45,6 +45,11 @@ object shieldNs extends js.Object {
       state: atPulumiAwsLib.shieldProtectionMod.ProtectionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.shieldProtectionMod.Protection = js.native
+    /**
+      * Returns true if the given object is an instance of Protection.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/shield/protection.Protection */ scala.Boolean = js.native
   }
   
 }

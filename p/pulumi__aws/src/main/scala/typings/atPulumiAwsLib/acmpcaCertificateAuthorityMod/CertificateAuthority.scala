@@ -100,5 +100,10 @@ object CertificateAuthority extends js.Object {
     state: atPulumiAwsLib.acmpcaCertificateAuthorityMod.CertificateAuthorityState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.acmpcaCertificateAuthorityMod.CertificateAuthority = js.native
+  /**
+    * Returns true if the given object is an instance of CertificateAuthority.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acmpca/certificateAuthority.CertificateAuthority */ scala.Boolean = js.native
 }
 

@@ -71,7 +71,7 @@ trait CreateServiceRequest extends js.Object {
     */
   var schedulingStrategy: js.UndefOr[SchedulingStrategy] = js.undefined
   /**
-    * The name of your service. Up to 255 letters (uppercase and lowercase), numbers, hyphens, and underscores are allowed. Service names must be unique within a cluster, but you can have similarly named services in multiple clusters within a Region or across multiple Regions.
+    * The name of your service. Up to 255 letters (uppercase and lowercase), numbers, and hyphens are allowed. Service names must be unique within a cluster, but you can have similarly named services in multiple clusters within a Region or across multiple Regions.
     */
   var serviceName: String
   /**

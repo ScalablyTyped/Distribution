@@ -7,18 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait ClusterArgs extends js.Object {
   /**
-    * Nested data for configuring the broker nodes of the Kafka cluster.
+    * Configuration block for the broker nodes of the Kafka cluster.
     */
   val brokerNodeGroupInfo: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AzDistributionClientSubnets]
+  /**
+    * Configuration block for specifying a client authentication. See below.
+    */
+  val clientAuthentication: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TlsAnonCertificateAuthorityArnsArray]
+  ] = js.undefined
   /**
     * Name of the MSK cluster.
     */
   val clusterName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
-    * Nested data for specifying encryption at rest info.  See below.
+    * Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
+    */
+  val configurationInfo: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArnRevisionInput]] = js.undefined
+  /**
+    * Configuration block for specifying encryption. See below.
     */
   val encryptionInfo: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionAtRestKmsKeyArnInput]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionAtRestKmsKeyArnEncryptionInTransit]
   ] = js.undefined
   /**
     * Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
@@ -45,11 +55,15 @@ object ClusterArgs {
     clusterName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     kafkaVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     numberOfBrokerNodes: atPulumiPulumiLib.outputMod.Input[scala.Double],
-    encryptionInfo: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionAtRestKmsKeyArnInput] = null,
+    clientAuthentication: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TlsAnonCertificateAuthorityArnsArray] = null,
+    configurationInfo: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArnRevisionInput] = null,
+    encryptionInfo: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionAtRestKmsKeyArnEncryptionInTransit] = null,
     enhancedMonitoring: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): ClusterArgs = {
     val __obj = js.Dynamic.literal(brokerNodeGroupInfo = brokerNodeGroupInfo.asInstanceOf[js.Any], clusterName = clusterName.asInstanceOf[js.Any], kafkaVersion = kafkaVersion.asInstanceOf[js.Any], numberOfBrokerNodes = numberOfBrokerNodes.asInstanceOf[js.Any])
+    if (clientAuthentication != null) __obj.updateDynamic("clientAuthentication")(clientAuthentication.asInstanceOf[js.Any])
+    if (configurationInfo != null) __obj.updateDynamic("configurationInfo")(configurationInfo.asInstanceOf[js.Any])
     if (encryptionInfo != null) __obj.updateDynamic("encryptionInfo")(encryptionInfo.asInstanceOf[js.Any])
     if (enhancedMonitoring != null) __obj.updateDynamic("enhancedMonitoring")(enhancedMonitoring.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

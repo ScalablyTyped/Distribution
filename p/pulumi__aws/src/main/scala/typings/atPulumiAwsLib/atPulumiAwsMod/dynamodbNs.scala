@@ -85,6 +85,11 @@ object dynamodbNs extends js.Object {
       state: atPulumiAwsLib.dynamodbGlobalTableMod.GlobalTableState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.dynamodbGlobalTableMod.GlobalTable = js.native
+    /**
+      * Returns true if the given object is an instance of GlobalTable.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/globalTable.GlobalTable */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -110,6 +115,11 @@ object dynamodbNs extends js.Object {
       state: atPulumiAwsLib.dynamodbTableMod.TableState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table = js.native
+    /**
+      * Returns true if the given object is an instance of Table.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/dynamodbMixins.@pulumi/aws/dynamodb/table.Table */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -135,6 +145,11 @@ object dynamodbNs extends js.Object {
       state: atPulumiAwsLib.dynamodbTableItemMod.TableItemState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.dynamodbTableItemMod.TableItem = js.native
+    /**
+      * Returns true if the given object is an instance of TableItem.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ scala.Boolean = js.native
   }
   
 }

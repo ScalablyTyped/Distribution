@@ -13,12 +13,12 @@ trait StartMonitoringMembersRequest extends js.Object {
   /**
     * The unique ID of the detector of the GuardDuty account whom you want to re-enable to monitor members' findings.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
 }
 
 object StartMonitoringMembersRequest {
   @scala.inline
-  def apply(AccountIds: AccountIds, DetectorId: __string): StartMonitoringMembersRequest = {
+  def apply(AccountIds: AccountIds, DetectorId: DetectorId): StartMonitoringMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds, DetectorId = DetectorId)
   
     __obj.asInstanceOf[StartMonitoringMembersRequest]

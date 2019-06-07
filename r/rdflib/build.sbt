@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rdflib"
-version := "0.17-dt-20190212Z-10ddb0"
+version := "0.20-dt-20190606Z-51c2e4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

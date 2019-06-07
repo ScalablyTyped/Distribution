@@ -80,5 +80,10 @@ object Snapshot extends js.Object {
     state: atPulumiAwsLib.ebsSnapshotMod.SnapshotState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ebsSnapshotMod.Snapshot = js.native
+  /**
+    * Returns true if the given object is an instance of Snapshot.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/snapshot.Snapshot */ scala.Boolean = js.native
 }
 

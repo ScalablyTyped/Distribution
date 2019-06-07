@@ -6,15 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ListFiltersResponse extends js.Object {
-  var FilterNames: js.UndefOr[FilterNames] = js.undefined
-  var NextToken: js.UndefOr[NextToken] = js.undefined
+  /**
+    * A list of filter names
+    */
+  var FilterNames: awsDashSdkLib.clientsGuarddutyMod.FilterNames
+  /**
+    * Pagination parameter to be used on the next list operation to retrieve more items.
+    */
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 
 object ListFiltersResponse {
   @scala.inline
-  def apply(FilterNames: FilterNames = null, NextToken: NextToken = null): ListFiltersResponse = {
-    val __obj = js.Dynamic.literal()
-    if (FilterNames != null) __obj.updateDynamic("FilterNames")(FilterNames)
+  def apply(FilterNames: FilterNames, NextToken: String = null): ListFiltersResponse = {
+    val __obj = js.Dynamic.literal(FilterNames = FilterNames)
     if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
     __obj.asInstanceOf[ListFiltersResponse]
   }

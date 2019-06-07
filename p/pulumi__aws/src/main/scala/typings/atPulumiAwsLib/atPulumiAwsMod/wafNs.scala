@@ -207,6 +207,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafByteMatchSetMod.ByteMatchSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafByteMatchSetMod.ByteMatchSet = js.native
+    /**
+      * Returns true if the given object is an instance of ByteMatchSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/byteMatchSet.ByteMatchSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -232,6 +237,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafGeoMatchSetMod.GeoMatchSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafGeoMatchSetMod.GeoMatchSet = js.native
+    /**
+      * Returns true if the given object is an instance of GeoMatchSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/geoMatchSet.GeoMatchSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -257,6 +267,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafIpSetMod.IpSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafIpSetMod.IpSet = js.native
+    /**
+      * Returns true if the given object is an instance of IpSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/ipSet.IpSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -282,6 +297,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafRateBasedRuleMod.RateBasedRuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafRateBasedRuleMod.RateBasedRule = js.native
+    /**
+      * Returns true if the given object is an instance of RateBasedRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rateBasedRule.RateBasedRule */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -307,6 +327,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafRegexMatchSetMod.RegexMatchSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafRegexMatchSetMod.RegexMatchSet = js.native
+    /**
+      * Returns true if the given object is an instance of RegexMatchSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/regexMatchSet.RegexMatchSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -332,6 +357,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafRegexPatternSetMod.RegexPatternSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafRegexPatternSetMod.RegexPatternSet = js.native
+    /**
+      * Returns true if the given object is an instance of RegexPatternSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/regexPatternSet.RegexPatternSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -357,6 +387,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafRuleMod.RuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafRuleMod.Rule = js.native
+    /**
+      * Returns true if the given object is an instance of Rule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -382,6 +417,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafRuleGroupMod.RuleGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafRuleGroupMod.RuleGroup = js.native
+    /**
+      * Returns true if the given object is an instance of RuleGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/ruleGroup.RuleGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -407,6 +447,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafSizeConstraintSetMod.SizeConstraintSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafSizeConstraintSetMod.SizeConstraintSet = js.native
+    /**
+      * Returns true if the given object is an instance of SizeConstraintSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sizeConstraintSet.SizeConstraintSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -432,6 +477,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafSqlInjectionMatchSetMod.SqlInjectionMatchSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = js.native
+    /**
+      * Returns true if the given object is an instance of SqlInjectionMatchSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -457,6 +507,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafWebAclMod.WebAclState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafWebAclMod.WebAcl = js.native
+    /**
+      * Returns true if the given object is an instance of WebAcl.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/webAcl.WebAcl */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -482,6 +537,11 @@ object wafNs extends js.Object {
       state: atPulumiAwsLib.wafXssMatchSetMod.XssMatchSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.wafXssMatchSetMod.XssMatchSet = js.native
+    /**
+      * Returns true if the given object is an instance of XssMatchSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/xssMatchSet.XssMatchSet */ scala.Boolean = js.native
   }
   
 }

@@ -52,5 +52,10 @@ object UserPolicyAttachment extends js.Object {
     state: atPulumiAwsLib.iamUserPolicyAttachmentMod.UserPolicyAttachmentState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamUserPolicyAttachmentMod.UserPolicyAttachment = js.native
+  /**
+    * Returns true if the given object is an instance of UserPolicyAttachment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userPolicyAttachment.UserPolicyAttachment */ scala.Boolean = js.native
 }
 

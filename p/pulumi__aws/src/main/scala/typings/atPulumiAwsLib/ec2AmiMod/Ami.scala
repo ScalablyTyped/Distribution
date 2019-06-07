@@ -110,5 +110,10 @@ object Ami extends js.Object {
     state: atPulumiAwsLib.ec2AmiMod.AmiState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2AmiMod.Ami = js.native
+  /**
+    * Returns true if the given object is an instance of Ami.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/ami.Ami */ scala.Boolean = js.native
 }
 

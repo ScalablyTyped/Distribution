@@ -44,5 +44,10 @@ object SnapshotCreateVolumePermission extends js.Object {
     state: atPulumiAwsLib.ec2SnapshotCreateVolumePermissionMod.SnapshotCreateVolumePermissionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2SnapshotCreateVolumePermissionMod.SnapshotCreateVolumePermission = js.native
+  /**
+    * Returns true if the given object is an instance of SnapshotCreateVolumePermission.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ scala.Boolean = js.native
 }
 

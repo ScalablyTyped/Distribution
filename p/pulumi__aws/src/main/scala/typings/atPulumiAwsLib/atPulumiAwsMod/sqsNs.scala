@@ -70,6 +70,11 @@ object sqsNs extends js.Object {
       state: atPulumiAwsLib.sqsQueueMod.QueueState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sqsSqsMixinsMod.sqsQueueMod.Queue = js.native
+    /**
+      * Returns true if the given object is an instance of Queue.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/sqsMixins.@pulumi/aws/sqs/queue.Queue */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -95,6 +100,11 @@ object sqsNs extends js.Object {
       state: atPulumiAwsLib.sqsQueuePolicyMod.QueuePolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sqsQueuePolicyMod.QueuePolicy = js.native
+    /**
+      * Returns true if the given object is an instance of QueuePolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queuePolicy.QueuePolicy */ scala.Boolean = js.native
   }
   
 }

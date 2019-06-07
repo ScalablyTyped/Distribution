@@ -45,5 +45,10 @@ object ParameterGroup extends js.Object {
     state: atPulumiAwsLib.daxParameterGroupMod.ParameterGroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.daxParameterGroupMod.ParameterGroup = js.native
+  /**
+    * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dax/parameterGroup.ParameterGroup */ scala.Boolean = js.native
 }
 

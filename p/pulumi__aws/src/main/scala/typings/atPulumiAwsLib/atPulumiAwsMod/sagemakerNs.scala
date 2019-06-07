@@ -102,6 +102,11 @@ object sagemakerNs extends js.Object {
       state: atPulumiAwsLib.sagemakerEndpointMod.EndpointState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sagemakerEndpointMod.Endpoint = js.native
+    /**
+      * Returns true if the given object is an instance of Endpoint.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpoint.Endpoint */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -127,6 +132,11 @@ object sagemakerNs extends js.Object {
       state: atPulumiAwsLib.sagemakerEndpointConfigurationMod.EndpointConfigurationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sagemakerEndpointConfigurationMod.EndpointConfiguration = js.native
+    /**
+      * Returns true if the given object is an instance of EndpointConfiguration.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -152,6 +162,11 @@ object sagemakerNs extends js.Object {
       state: atPulumiAwsLib.sagemakerModelMod.ModelState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sagemakerModelMod.Model = js.native
+    /**
+      * Returns true if the given object is an instance of Model.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -177,6 +192,11 @@ object sagemakerNs extends js.Object {
       state: atPulumiAwsLib.sagemakerNotebookInstanceMod.NotebookInstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sagemakerNotebookInstanceMod.NotebookInstance = js.native
+    /**
+      * Returns true if the given object is an instance of NotebookInstance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstance.NotebookInstance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -202,6 +222,11 @@ object sagemakerNs extends js.Object {
       state: atPulumiAwsLib.sagemakerNotebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfigurationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sagemakerNotebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration = js.native
+    /**
+      * Returns true if the given object is an instance of NotebookInstanceLifecycleConfiguration.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ scala.Boolean = js.native
   }
   
 }

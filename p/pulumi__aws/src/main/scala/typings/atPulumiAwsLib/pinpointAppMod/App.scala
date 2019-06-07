@@ -69,5 +69,10 @@ object App extends js.Object {
     state: atPulumiAwsLib.pinpointAppMod.AppState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.pinpointAppMod.App = js.native
+  /**
+    * Returns true if the given object is an instance of App.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/app.App */ scala.Boolean = js.native
 }
 

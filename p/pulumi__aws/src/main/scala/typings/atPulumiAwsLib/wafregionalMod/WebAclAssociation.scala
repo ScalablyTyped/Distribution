@@ -44,5 +44,10 @@ object WebAclAssociation extends js.Object {
     state: atPulumiAwsLib.wafregionalWebAclAssociationMod.WebAclAssociationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafregionalWebAclAssociationMod.WebAclAssociation = js.native
+  /**
+    * Returns true if the given object is an instance of WebAclAssociation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/webAclAssociation.WebAclAssociation */ scala.Boolean = js.native
 }
 

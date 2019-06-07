@@ -44,5 +44,10 @@ object Integration extends js.Object {
     state: atPulumiAwsLib.apigatewayIntegrationMod.IntegrationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayIntegrationMod.Integration = js.native
+  /**
+    * Returns true if the given object is an instance of Integration.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/integration.Integration */ scala.Boolean = js.native
 }
 

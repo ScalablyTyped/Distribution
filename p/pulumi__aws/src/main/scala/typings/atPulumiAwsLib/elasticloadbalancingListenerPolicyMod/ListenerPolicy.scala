@@ -56,5 +56,10 @@ object ListenerPolicy extends js.Object {
     state: atPulumiAwsLib.elasticloadbalancingListenerPolicyMod.ListenerPolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.elasticloadbalancingListenerPolicyMod.ListenerPolicy = js.native
+  /**
+    * Returns true if the given object is an instance of ListenerPolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/listenerPolicy.ListenerPolicy */ scala.Boolean = js.native
 }
 

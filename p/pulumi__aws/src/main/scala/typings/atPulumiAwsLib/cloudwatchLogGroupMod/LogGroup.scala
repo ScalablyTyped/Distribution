@@ -113,5 +113,10 @@ object LogGroup extends js.Object {
     state: atPulumiAwsLib.cloudwatchLogGroupMod.LogGroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloudwatchLogGroupMod.LogGroup = js.native
+  /**
+    * Returns true if the given object is an instance of LogGroup.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logGroup.LogGroup */ scala.Boolean = js.native
 }
 

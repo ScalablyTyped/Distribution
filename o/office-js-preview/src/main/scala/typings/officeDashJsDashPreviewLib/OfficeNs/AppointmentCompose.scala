@@ -140,5 +140,58 @@ trait AppointmentCompose extends ItemCompose {
     * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
     */
   var start: Time = js.native
+  /**
+    * Asynchronously gets the ID of a saved item.
+    *
+    * When invoked, this method returns the item ID via the callback method.
+    * 
+    * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API),
+    * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
+    * Until the item is synced, the `itemId` is not recognized and using it returns an error.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    * 
+    * **Errors**: 
+    * 
+    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+    * 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    */
+  def getItemIdAsync(callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
+  /**
+    * Asynchronously gets the ID of a saved item.
+    *
+    * When invoked, this method returns the item ID via the callback method.
+    * 
+    * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API),
+    * be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server.
+    * Until the item is synced, the `itemId` is not recognized and using it returns an error.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    *
+    * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+    * 
+    * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
+    * 
+    * **Errors**: 
+    * 
+    * - `ItemNotSaved`: The id can't be retrieved until the item is saved.
+    * 
+    * @param options - An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    */
+  def getItemIdAsync(
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]
+  ): scala.Unit = js.native
 }
 

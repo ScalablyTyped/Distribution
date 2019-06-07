@@ -6,7 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Member extends js.Object {
+  /**
+    * Member account ID.
+    */
   var AccountId: awsDashSdkLib.clientsGuarddutyMod.AccountId
+  /**
+    * Member account's detector ID.
+    */
   var DetectorId: js.UndefOr[DetectorId] = js.undefined
   /**
     * Member account's email address.
@@ -15,13 +21,19 @@ trait Member extends js.Object {
   /**
     * Timestamp at which the invitation was sent
     */
-  var InvitedAt: js.UndefOr[InvitedAt] = js.undefined
-  var MasterId: awsDashSdkLib.clientsGuarddutyMod.MasterId
+  var InvitedAt: js.UndefOr[String] = js.undefined
+  /**
+    * Master account ID.
+    */
+  var MasterId: String
   /**
     * The status of the relationship between the member and the master.
     */
-  var RelationshipStatus: __string
-  var UpdatedAt: awsDashSdkLib.clientsGuarddutyMod.UpdatedAt
+  var RelationshipStatus: String
+  /**
+    * Member last updated timestamp.
+    */
+  var UpdatedAt: String
 }
 
 object Member {
@@ -29,11 +41,11 @@ object Member {
   def apply(
     AccountId: AccountId,
     Email: Email,
-    MasterId: MasterId,
-    RelationshipStatus: __string,
-    UpdatedAt: UpdatedAt,
+    MasterId: String,
+    RelationshipStatus: String,
+    UpdatedAt: String,
     DetectorId: DetectorId = null,
-    InvitedAt: InvitedAt = null
+    InvitedAt: String = null
   ): Member = {
     val __obj = js.Dynamic.literal(AccountId = AccountId, Email = Email, MasterId = MasterId, RelationshipStatus = RelationshipStatus, UpdatedAt = UpdatedAt)
     if (DetectorId != null) __obj.updateDynamic("DetectorId")(DetectorId)

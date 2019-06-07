@@ -55,5 +55,10 @@ object ByteMatchSet extends js.Object {
     state: atPulumiAwsLib.wafByteMatchSetMod.ByteMatchSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafByteMatchSetMod.ByteMatchSet = js.native
+  /**
+    * Returns true if the given object is an instance of ByteMatchSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/byteMatchSet.ByteMatchSet */ scala.Boolean = js.native
 }
 

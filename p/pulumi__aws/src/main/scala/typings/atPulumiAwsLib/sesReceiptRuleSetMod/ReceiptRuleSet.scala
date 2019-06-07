@@ -48,5 +48,10 @@ object ReceiptRuleSet extends js.Object {
     state: atPulumiAwsLib.sesReceiptRuleSetMod.ReceiptRuleSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.sesReceiptRuleSetMod.ReceiptRuleSet = js.native
+  /**
+    * Returns true if the given object is an instance of ReceiptRuleSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRuleSet.ReceiptRuleSet */ scala.Boolean = js.native
 }
 

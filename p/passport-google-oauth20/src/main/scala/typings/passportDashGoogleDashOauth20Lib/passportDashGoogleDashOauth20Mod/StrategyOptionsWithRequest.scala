@@ -15,6 +15,7 @@ object StrategyOptionsWithRequest {
     clientID: java.lang.String,
     clientSecret: java.lang.String,
     passReqToCallback: passportDashGoogleDashOauth20Lib.passportDashGoogleDashOauth20LibNumbers.`true`,
+    accessType: passportDashGoogleDashOauth20Lib.passportDashGoogleDashOauth20LibStrings.offline | passportDashGoogleDashOauth20Lib.passportDashGoogleDashOauth20LibStrings.online = null,
     authorizationURL: java.lang.String = null,
     callbackURL: java.lang.String = null,
     scope: java.lang.String | js.Array[java.lang.String] = null,
@@ -22,6 +23,7 @@ object StrategyOptionsWithRequest {
     userProfileURL: java.lang.String = null
   ): StrategyOptionsWithRequest = {
     val __obj = js.Dynamic.literal(clientID = clientID, clientSecret = clientSecret, passReqToCallback = passReqToCallback)
+    if (accessType != null) __obj.updateDynamic("accessType")(accessType.asInstanceOf[js.Any])
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
     if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL)
     if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])

@@ -113,5 +113,10 @@ object MemcachedLayer extends js.Object {
     state: atPulumiAwsLib.opsworksMemcachedLayerMod.MemcachedLayerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.opsworksMemcachedLayerMod.MemcachedLayer = js.native
+  /**
+    * Returns true if the given object is an instance of MemcachedLayer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/memcachedLayer.MemcachedLayer */ scala.Boolean = js.native
 }
 

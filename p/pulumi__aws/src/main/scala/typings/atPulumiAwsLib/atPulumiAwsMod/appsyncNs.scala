@@ -87,6 +87,11 @@ object appsyncNs extends js.Object {
       state: atPulumiAwsLib.appsyncApiKeyMod.ApiKeyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appsyncApiKeyMod.ApiKey = js.native
+    /**
+      * Returns true if the given object is an instance of ApiKey.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/apiKey.ApiKey */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -112,6 +117,11 @@ object appsyncNs extends js.Object {
       state: atPulumiAwsLib.appsyncDataSourceMod.DataSourceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appsyncDataSourceMod.DataSource = js.native
+    /**
+      * Returns true if the given object is an instance of DataSource.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/dataSource.DataSource */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -137,6 +147,11 @@ object appsyncNs extends js.Object {
       state: atPulumiAwsLib.appsyncGraphQLApiMod.GraphQLApiState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appsyncGraphQLApiMod.GraphQLApi = js.native
+    /**
+      * Returns true if the given object is an instance of GraphQLApi.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/graphQLApi.GraphQLApi */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -162,6 +177,11 @@ object appsyncNs extends js.Object {
       state: atPulumiAwsLib.appsyncResolverMod.ResolverState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appsyncResolverMod.Resolver = js.native
+    /**
+      * Returns true if the given object is an instance of Resolver.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/resolver.Resolver */ scala.Boolean = js.native
   }
   
 }

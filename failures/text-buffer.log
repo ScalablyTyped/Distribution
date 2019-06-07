@@ -1,0 +1,91 @@
+[debug] PhaseRunner.scala:84 Success [id => text-buffer, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/text-buffer/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/text-buffer),TsIdentLibrarySimple(text-buffer)),TsIdentModule(None,List(text-buffer))) [id => text-buffer, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(text-buffer)) [id => text-buffer, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(text-buffer) [id => text-buffer, phase => typescript] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Exclusive) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(Marker) / TsMemberFunction(setRange) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ExclusiveInside) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(MarkerLayer) / TsMemberFunction(markRange) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ExclusiveInsideInvalidate) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(MarkerLayer) / TsMemberFunction(markPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Reversed) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarker) / TsMemberFunction(setBufferRange) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Backward) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarker) / TsMemberFunction(setScreenRange) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BackwardClipDirection) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarker) / TsMemberFunction(getStartScreenPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BackwardClipDirection) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarker) / TsMemberFunction(getEndScreenPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BackwardClipDirection) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarker) / TsMemberFunction(getHeadScreenPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BackwardClipDirection) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarker) / TsMemberFunction(setHeadScreenPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BackwardClipDirection) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarker) / TsMemberFunction(getTailScreenPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BackwardClipDirection) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarker) / TsMemberFunction(setTailScreenPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BackwardClipDirectionClosest) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarkerLayer) / TsMemberFunction(markScreenRange) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BackwardClipDirectionClosestExclusive) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarkerLayer) / TsMemberFunction(markScreenPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ExclusiveInside) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarkerLayer) / TsMemberFunction(markBufferRange) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ExclusiveInsideInvalidate) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(DisplayMarkerLayer) / TsMemberFunction(markBufferPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_NormalizeLineEndings) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(setTextInRange) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_NormalizeLineEndings) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(insert) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_NormalizeLineEndings) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(append) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_MaintainHistory) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(addMarkerLayer) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ExclusiveInside) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(markRange) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ExclusiveInsideInvalidate) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(markPosition) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_NewExtent) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(getChangesSinceCheckpoint) / TsFunSig() / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ShouldDestroyOnFileDelete) [id => text-buffer, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(text-buffer) / TsGlobal() / TsDeclNamespace(TextBuffer) / TsDeclInterface(TextBufferStatic) / TsMemberCtor() / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[debug] PhaseRunner.scala:84 Success [id => text-buffer, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing text-buffer [id => text-buffer, phase => scala.js] 
+[debug] PhaseRunner.scala:84 Success [id => text-buffer, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:245 Built text-buffer in 1056 ms [id => text-buffer, phase => build] 
+[info ] Phase3CompileBloop.scala:253 published local, [/home/tso/.ivy2/local/org.scalablytyped/text-buffer_sjs0.6_2.12/13.x-dt-20180214Z-987dbc/jars/text-buffer_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/text-buffer_sjs0.6_2.12/13.x-dt-20180214Z-987dbc/srcs/text-buffer_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/text-buffer_sjs0.6_2.12/13.x-dt-20180214Z-987dbc/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/text-buffer_sjs0.6_2.12/13.x-dt-20180214Z-987dbc/poms/text-buffer_sjs0.6_2.12.pom] [id => text-buffer, phase => build] 
+[debug] PhaseRunner.scala:84 Success [id => text-buffer, phase => build] 
+[error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 405 [id => text-buffer, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.markAsDone(HttpProtocol.java:204)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.finishUpdate(HttpProtocol.java:189)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.exitAfterHandlingBody(HttpProtocol.java:402)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handleHttpResponse(HttpProtocol.java:429)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handle(HttpProtocol.java:476)
+	at com.ning.http.client.providers.netty.handler.Processor.messageReceived(Processor.java:89)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:142)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:92)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dispatch.StatusCode: Unexpected response status: 405
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1(BinTrayPublisher.scala:35)
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1$adapted(BinTrayPublisher.scala:31)
+	at dispatch.FunctionHandler.onCompleted(handlers.scala:26)
+	at com.ning.http.client.AsyncCompletionHandler.onCompleted(AsyncCompletionHandler.java:55)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$Client$StoringHandler$1$.onCompleted(BinTrayPublisher.scala:116)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.getContent(NettyResponseFuture.java:177)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:212)
+	... 43 more
+
+[error] PhaseRunner.scala:88 Failure, [text-buffer => java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405] [id => text-buffer, phase => publish] 

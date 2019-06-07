@@ -70,5 +70,10 @@ object MethodResponse extends js.Object {
     state: atPulumiAwsLib.apigatewayMethodResponseMod.MethodResponseState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayMethodResponseMod.MethodResponse = js.native
+  /**
+    * Returns true if the given object is an instance of MethodResponse.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/methodResponse.MethodResponse */ scala.Boolean = js.native
 }
 

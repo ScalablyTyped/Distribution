@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jsreport-html-to-xlsx"
-version := "2.0-dt-20190311Z-bbc49e"
+version := "2.0-dt-20190311Z-1e991f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-acb704",
-  "org.scalablytyped" %%% "jsreport-xlsx" % "1.4-dt-20180222Z-be7cac",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190605Z-895d8c",
+  "org.scalablytyped" %%% "jsreport-core" % "1.5-dt-20180222Z-bc5ddc",
+  "org.scalablytyped" %%% "jsreport-xlsx" % "1.4-dt-20180222Z-256661",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

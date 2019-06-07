@@ -14,6 +14,7 @@ object StrategyOptions {
   def apply(
     clientID: java.lang.String,
     clientSecret: java.lang.String,
+    accessType: passportDashGoogleDashOauth20Lib.passportDashGoogleDashOauth20LibStrings.offline | passportDashGoogleDashOauth20Lib.passportDashGoogleDashOauth20LibStrings.online = null,
     authorizationURL: java.lang.String = null,
     callbackURL: java.lang.String = null,
     passReqToCallback: passportDashGoogleDashOauth20Lib.passportDashGoogleDashOauth20LibNumbers.`false` = null,
@@ -22,6 +23,7 @@ object StrategyOptions {
     userProfileURL: java.lang.String = null
   ): StrategyOptions = {
     val __obj = js.Dynamic.literal(clientID = clientID, clientSecret = clientSecret)
+    if (accessType != null) __obj.updateDynamic("accessType")(accessType.asInstanceOf[js.Any])
     if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
     if (callbackURL != null) __obj.updateDynamic("callbackURL")(callbackURL)
     if (passReqToCallback != null) __obj.updateDynamic("passReqToCallback")(passReqToCallback)

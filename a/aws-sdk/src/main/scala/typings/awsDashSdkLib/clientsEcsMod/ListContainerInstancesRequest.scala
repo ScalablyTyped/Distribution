@@ -23,7 +23,7 @@ trait ListContainerInstancesRequest extends js.Object {
     */
   var nextToken: js.UndefOr[String] = js.undefined
   /**
-    * Filters the container instances by status. For example, if you specify the DRAINING status, the results include only container instances that have been set to DRAINING using UpdateContainerInstancesState. If you do not specify this parameter, the default is to include container instances set to ACTIVE and DRAINING.
+    * Filters the container instances by status. For example, if you specify the DRAINING status, the results include only container instances that have been set to DRAINING using UpdateContainerInstancesState. If you do not specify this parameter, the default is to include container instances set to all states other than INACTIVE.
     */
   var status: js.UndefOr[ContainerInstanceStatus] = js.undefined
 }

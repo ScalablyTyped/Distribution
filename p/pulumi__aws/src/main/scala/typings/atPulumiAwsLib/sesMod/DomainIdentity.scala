@@ -44,5 +44,10 @@ object DomainIdentity extends js.Object {
     state: atPulumiAwsLib.sesDomainIdentityMod.DomainIdentityState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.sesDomainIdentityMod.DomainIdentity = js.native
+  /**
+    * Returns true if the given object is an instance of DomainIdentity.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentity.DomainIdentity */ scala.Boolean = js.native
 }
 

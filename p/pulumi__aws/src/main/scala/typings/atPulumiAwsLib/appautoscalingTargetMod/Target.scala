@@ -69,5 +69,10 @@ object Target extends js.Object {
     state: atPulumiAwsLib.appautoscalingTargetMod.TargetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.appautoscalingTargetMod.Target = js.native
+  /**
+    * Returns true if the given object is an instance of Target.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appautoscaling/target.Target */ scala.Boolean = js.native
 }
 

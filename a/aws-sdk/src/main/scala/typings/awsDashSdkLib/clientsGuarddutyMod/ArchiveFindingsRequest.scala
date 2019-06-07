@@ -9,7 +9,7 @@ trait ArchiveFindingsRequest extends js.Object {
   /**
     * The ID of the detector that specifies the GuardDuty service whose findings you want to archive.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * IDs of the findings that you want to archive.
     */
@@ -18,7 +18,7 @@ trait ArchiveFindingsRequest extends js.Object {
 
 object ArchiveFindingsRequest {
   @scala.inline
-  def apply(DetectorId: __string, FindingIds: FindingIds): ArchiveFindingsRequest = {
+  def apply(DetectorId: DetectorId, FindingIds: FindingIds): ArchiveFindingsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId, FindingIds = FindingIds)
   
     __obj.asInstanceOf[ArchiveFindingsRequest]

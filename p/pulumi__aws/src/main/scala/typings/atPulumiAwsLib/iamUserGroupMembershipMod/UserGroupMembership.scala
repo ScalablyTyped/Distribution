@@ -52,5 +52,10 @@ object UserGroupMembership extends js.Object {
     state: atPulumiAwsLib.iamUserGroupMembershipMod.UserGroupMembershipState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamUserGroupMembershipMod.UserGroupMembership = js.native
+  /**
+    * Returns true if the given object is an instance of UserGroupMembership.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userGroupMembership.UserGroupMembership */ scala.Boolean = js.native
 }
 

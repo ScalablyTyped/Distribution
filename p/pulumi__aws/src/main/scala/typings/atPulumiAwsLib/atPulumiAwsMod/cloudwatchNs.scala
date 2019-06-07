@@ -243,6 +243,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchDashboardMod.DashboardState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchDashboardMod.Dashboard = js.native
+    /**
+      * Returns true if the given object is an instance of Dashboard.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -268,6 +273,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchEventPermissionMod.EventPermissionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchEventPermissionMod.EventPermission = js.native
+    /**
+      * Returns true if the given object is an instance of EventPermission.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -293,6 +303,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchEventRuleMod.EventRuleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule = js.native
+    /**
+      * Returns true if the given object is an instance of EventRule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventRuleMixins.@pulumi/aws/cloudwatch/eventRule.EventRule */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -318,6 +333,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchEventTargetMod.EventTargetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchEventTargetMod.EventTarget = js.native
+    /**
+      * Returns true if the given object is an instance of EventTarget.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventTarget.EventTarget */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -343,6 +363,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchLogDestinationMod.LogDestinationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchLogDestinationMod.LogDestination = js.native
+    /**
+      * Returns true if the given object is an instance of LogDestination.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestination.LogDestination */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -368,6 +393,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchLogDestinationPolicyMod.LogDestinationPolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchLogDestinationPolicyMod.LogDestinationPolicy = js.native
+    /**
+      * Returns true if the given object is an instance of LogDestinationPolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestinationPolicy.LogDestinationPolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -393,6 +423,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchLogGroupMod.LogGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup = js.native
+    /**
+      * Returns true if the given object is an instance of LogGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logGroupMixins.@pulumi/aws/cloudwatch/logGroup.LogGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -418,6 +453,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchLogMetricFilterMod.LogMetricFilterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchLogMetricFilterMod.LogMetricFilter = js.native
+    /**
+      * Returns true if the given object is an instance of LogMetricFilter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logMetricFilter.LogMetricFilter */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -443,6 +483,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchLogResourcePolicyMod.LogResourcePolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchLogResourcePolicyMod.LogResourcePolicy = js.native
+    /**
+      * Returns true if the given object is an instance of LogResourcePolicy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logResourcePolicy.LogResourcePolicy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -468,6 +513,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchLogStreamMod.LogStreamState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchLogStreamMod.LogStream = js.native
+    /**
+      * Returns true if the given object is an instance of LogStream.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logStream.LogStream */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -493,6 +543,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchLogSubscriptionFilterMod.LogSubscriptionFilterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchLogSubscriptionFilterMod.LogSubscriptionFilter = js.native
+    /**
+      * Returns true if the given object is an instance of LogSubscriptionFilter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logSubscriptionFilter.LogSubscriptionFilter */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -518,6 +573,11 @@ object cloudwatchNs extends js.Object {
       state: atPulumiAwsLib.cloudwatchMetricAlarmMod.MetricAlarmState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudwatchMetricAlarmMod.MetricAlarm = js.native
+    /**
+      * Returns true if the given object is an instance of MetricAlarm.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/metricAlarm.MetricAlarm */ scala.Boolean = js.native
   }
   
 }

@@ -70,5 +70,10 @@ object NetworkAcl extends js.Object {
     state: atPulumiAwsLib.ec2NetworkAclMod.NetworkAclState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2NetworkAclMod.NetworkAcl = js.native
+  /**
+    * Returns true if the given object is an instance of NetworkAcl.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkAcl.NetworkAcl */ scala.Boolean = js.native
 }
 

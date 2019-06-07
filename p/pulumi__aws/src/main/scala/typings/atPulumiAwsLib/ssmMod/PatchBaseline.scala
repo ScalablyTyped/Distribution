@@ -45,5 +45,10 @@ object PatchBaseline extends js.Object {
     state: atPulumiAwsLib.ssmPatchBaselineMod.PatchBaselineState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ssmPatchBaselineMod.PatchBaseline = js.native
+  /**
+    * Returns true if the given object is an instance of PatchBaseline.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchBaseline.PatchBaseline */ scala.Boolean = js.native
 }
 

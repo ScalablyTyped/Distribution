@@ -18,6 +18,7 @@ class Http2Stream protected ()
     * indicating that no additional data should be received and the readable side of the Http2Stream will be closed.
     */
   val endAfterHeaders: scala.Boolean = js.native
+  val id: js.UndefOr[scala.Double] = js.native
   val pending: scala.Boolean = js.native
   val rstCode: scala.Double = js.native
   val sentHeaders: nodeLib.httpMod.OutgoingHttpHeaders = js.native

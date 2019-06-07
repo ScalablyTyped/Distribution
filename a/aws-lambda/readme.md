@@ -65,6 +65,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Loïk Gaonac'h <https://github.com/loikg>
 //                 Roberto Zen <https://github.com/skyzenr>
 //                 Grzegorz Redlicki <https://github.com/redlickigrzegorz>
+//                 Juan Carbonel <https://github.com/juancarbonel>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 // API Gateway "event" request context

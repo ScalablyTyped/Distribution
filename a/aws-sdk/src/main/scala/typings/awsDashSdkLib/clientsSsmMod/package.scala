@@ -578,6 +578,86 @@ package object clientsSsmMod {
     - java.lang.String
   */
   type OperatingSystem = _OperatingSystem | java.lang.String
+  type OpsAggregatorList = js.Array[OpsAggregator]
+  type OpsAggregatorType = java.lang.String
+  type OpsAggregatorValue = java.lang.String
+  type OpsAggregatorValueKey = java.lang.String
+  type OpsAggregatorValueMap = org.scalablytyped.runtime.StringDictionary[OpsAggregatorValue]
+  type OpsDataAttributeName = java.lang.String
+  type OpsDataTypeName = java.lang.String
+  type OpsEntityId = java.lang.String
+  type OpsEntityItemEntry = org.scalablytyped.runtime.StringDictionary[AttributeValue]
+  type OpsEntityItemEntryList = js.Array[OpsEntityItemEntry]
+  type OpsEntityItemKey = java.lang.String
+  type OpsEntityItemMap = org.scalablytyped.runtime.StringDictionary[OpsEntityItem]
+  type OpsEntityList = js.Array[OpsEntity]
+  type OpsFilterKey = java.lang.String
+  type OpsFilterList = js.Array[OpsFilter]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Equal
+    - awsDashSdkLib.awsDashSdkLibStrings.NotEqual
+    - awsDashSdkLib.awsDashSdkLibStrings.BeginWith
+    - awsDashSdkLib.awsDashSdkLibStrings.LessThan
+    - awsDashSdkLib.awsDashSdkLibStrings.GreaterThan
+    - awsDashSdkLib.awsDashSdkLibStrings.Exists
+    - java.lang.String
+  */
+  type OpsFilterOperatorType = _OpsFilterOperatorType | java.lang.String
+  type OpsFilterValue = java.lang.String
+  type OpsFilterValueList = js.Array[OpsFilterValue]
+  type OpsItemDataKey = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SearchableString
+    - awsDashSdkLib.awsDashSdkLibStrings.String
+    - java.lang.String
+  */
+  type OpsItemDataType = _OpsItemDataType | java.lang.String
+  type OpsItemDataValueString = java.lang.String
+  type OpsItemDescription = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Status
+    - awsDashSdkLib.awsDashSdkLibStrings.CreatedBy
+    - awsDashSdkLib.awsDashSdkLibStrings.Source
+    - awsDashSdkLib.awsDashSdkLibStrings.Priority
+    - awsDashSdkLib.awsDashSdkLibStrings.Title
+    - awsDashSdkLib.awsDashSdkLibStrings.OpsItemId
+    - awsDashSdkLib.awsDashSdkLibStrings.CreatedTime
+    - awsDashSdkLib.awsDashSdkLibStrings.LastModifiedTime
+    - awsDashSdkLib.awsDashSdkLibStrings.OperationalData
+    - awsDashSdkLib.awsDashSdkLibStrings.OperationalDataKey
+    - awsDashSdkLib.awsDashSdkLibStrings.OperationalDataValue
+    - awsDashSdkLib.awsDashSdkLibStrings.ResourceId
+    - awsDashSdkLib.awsDashSdkLibStrings.AutomationId
+    - java.lang.String
+  */
+  type OpsItemFilterKey = _OpsItemFilterKey | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Equal
+    - awsDashSdkLib.awsDashSdkLibStrings.Contains
+    - awsDashSdkLib.awsDashSdkLibStrings.GreaterThan
+    - awsDashSdkLib.awsDashSdkLibStrings.LessThan
+    - java.lang.String
+  */
+  type OpsItemFilterOperator = _OpsItemFilterOperator | java.lang.String
+  type OpsItemFilterValue = java.lang.String
+  type OpsItemFilterValues = js.Array[OpsItemFilterValue]
+  type OpsItemFilters = js.Array[OpsItemFilter]
+  type OpsItemId = java.lang.String
+  type OpsItemMaxResults = scala.Double
+  type OpsItemNotifications = js.Array[OpsItemNotification]
+  type OpsItemOperationalData = org.scalablytyped.runtime.StringDictionary[OpsItemDataValue]
+  type OpsItemOpsDataKeysList = js.Array[String]
+  type OpsItemPriority = scala.Double
+  type OpsItemSource = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Open
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Resolved
+    - java.lang.String
+  */
+  type OpsItemStatus = _OpsItemStatus | java.lang.String
+  type OpsItemSummaries = js.Array[OpsItemSummary]
+  type OpsItemTitle = java.lang.String
   type OutputSourceId = java.lang.String
   type OutputSourceType = java.lang.String
   type OwnerInformation = java.lang.String
@@ -760,6 +840,7 @@ package object clientsSsmMod {
   type Regions = js.Array[Region]
   type RegistrationLimit = scala.Double
   type RegistrationsCount = scala.Double
+  type RelatedOpsItems = js.Array[RelatedOpsItem]
   type RemainingCount = scala.Double
   type ResourceComplianceSummaryItemList = js.Array[ResourceComplianceSummaryItem]
   type ResourceCount = scala.Double
@@ -786,6 +867,7 @@ package object clientsSsmMod {
     - awsDashSdkLib.awsDashSdkLibStrings.MaintenanceWindow
     - awsDashSdkLib.awsDashSdkLibStrings.Parameter
     - awsDashSdkLib.awsDashSdkLibStrings.PatchBaseline
+    - awsDashSdkLib.awsDashSdkLibStrings.OpsItem
     - java.lang.String
   */
   type ResourceTypeForTagging = _ResourceTypeForTagging | java.lang.String

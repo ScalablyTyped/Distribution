@@ -52,5 +52,10 @@ object SpotDatafeedSubscription extends js.Object {
     state: atPulumiAwsLib.ec2SpotDatafeedSubscriptionMod.SpotDatafeedSubscriptionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2SpotDatafeedSubscriptionMod.SpotDatafeedSubscription = js.native
+  /**
+    * Returns true if the given object is an instance of SpotDatafeedSubscription.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotDatafeedSubscription.SpotDatafeedSubscription */ scala.Boolean = js.native
 }
 

@@ -59,6 +59,11 @@ object codebuildNs extends js.Object {
       state: atPulumiAwsLib.codebuildProjectMod.ProjectState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.codebuildProjectMod.Project = js.native
+    /**
+      * Returns true if the given object is an instance of Project.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/project.Project */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -84,6 +89,11 @@ object codebuildNs extends js.Object {
       state: atPulumiAwsLib.codebuildWebhookMod.WebhookState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.codebuildWebhookMod.Webhook = js.native
+    /**
+      * Returns true if the given object is an instance of Webhook.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/webhook.Webhook */ scala.Boolean = js.native
   }
   
 }

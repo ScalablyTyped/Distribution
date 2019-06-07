@@ -44,5 +44,10 @@ object StackSet extends js.Object {
     state: atPulumiAwsLib.cloudformationStackSetMod.StackSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloudformationStackSetMod.StackSet = js.native
+  /**
+    * Returns true if the given object is an instance of StackSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stackSet.StackSet */ scala.Boolean = js.native
 }
 

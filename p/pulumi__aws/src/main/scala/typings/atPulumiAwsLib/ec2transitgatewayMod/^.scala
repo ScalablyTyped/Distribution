@@ -8,6 +8,17 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2transitgateway", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def getDirectConnectGatewayAttachment(
+    args: atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentArgs
+  ): js.Promise[
+    atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentResult
+  ] = js.native
+  def getDirectConnectGatewayAttachment(
+    args: atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[
+    atPulumiAwsLib.ec2transitgatewayGetDirectConnectGatewayAttachmentMod.GetDirectConnectGatewayAttachmentResult
+  ] = js.native
   def getRouteTable(): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] = js.native
   def getRouteTable(args: atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetRouteTableMod.GetRouteTableResult] = js.native
   def getRouteTable(

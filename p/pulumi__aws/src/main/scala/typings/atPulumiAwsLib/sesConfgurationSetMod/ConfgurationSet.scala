@@ -49,5 +49,10 @@ object ConfgurationSet extends js.Object {
     state: atPulumiAwsLib.sesConfgurationSetMod.ConfgurationSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.sesConfgurationSetMod.ConfgurationSet = js.native
+  /**
+    * Returns true if the given object is an instance of ConfgurationSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/confgurationSet.ConfgurationSet */ scala.Boolean = js.native
 }
 

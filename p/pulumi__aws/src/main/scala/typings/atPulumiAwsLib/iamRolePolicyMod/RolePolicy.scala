@@ -62,5 +62,10 @@ object RolePolicy extends js.Object {
     state: atPulumiAwsLib.iamRolePolicyMod.RolePolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamRolePolicyMod.RolePolicy = js.native
+  /**
+    * Returns true if the given object is an instance of RolePolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/rolePolicy.RolePolicy */ scala.Boolean = js.native
 }
 

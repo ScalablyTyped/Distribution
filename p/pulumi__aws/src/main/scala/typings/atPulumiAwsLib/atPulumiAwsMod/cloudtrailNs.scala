@@ -51,6 +51,11 @@ object cloudtrailNs extends js.Object {
       state: atPulumiAwsLib.cloudtrailTrailMod.TrailState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cloudtrailTrailMod.Trail = js.native
+    /**
+      * Returns true if the given object is an instance of Trail.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ scala.Boolean = js.native
   }
   
 }

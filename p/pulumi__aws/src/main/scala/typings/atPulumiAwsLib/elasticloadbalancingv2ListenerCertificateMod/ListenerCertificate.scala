@@ -52,5 +52,10 @@ object ListenerCertificate extends js.Object {
     state: atPulumiAwsLib.elasticloadbalancingv2ListenerCertificateMod.ListenerCertificateState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.elasticloadbalancingv2ListenerCertificateMod.ListenerCertificate = js.native
+  /**
+    * Returns true if the given object is an instance of ListenerCertificate.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancingv2/listenerCertificate.ListenerCertificate */ scala.Boolean = js.native
 }
 

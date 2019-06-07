@@ -255,6 +255,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksApplicationMod.ApplicationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksApplicationMod.Application = js.native
+    /**
+      * Returns true if the given object is an instance of Application.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/application.Application */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -280,6 +285,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksCustomLayerMod.CustomLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksCustomLayerMod.CustomLayer = js.native
+    /**
+      * Returns true if the given object is an instance of CustomLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/customLayer.CustomLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -305,6 +315,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksGangliaLayerMod.GangliaLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksGangliaLayerMod.GangliaLayer = js.native
+    /**
+      * Returns true if the given object is an instance of GangliaLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/gangliaLayer.GangliaLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -330,6 +345,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksHaproxyLayerMod.HaproxyLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksHaproxyLayerMod.HaproxyLayer = js.native
+    /**
+      * Returns true if the given object is an instance of HaproxyLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/haproxyLayer.HaproxyLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -355,6 +375,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksInstanceMod.InstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksInstanceMod.Instance = js.native
+    /**
+      * Returns true if the given object is an instance of Instance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/instance.Instance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -380,6 +405,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksJavaAppLayerMod.JavaAppLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksJavaAppLayerMod.JavaAppLayer = js.native
+    /**
+      * Returns true if the given object is an instance of JavaAppLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/javaAppLayer.JavaAppLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -405,6 +435,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksMemcachedLayerMod.MemcachedLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksMemcachedLayerMod.MemcachedLayer = js.native
+    /**
+      * Returns true if the given object is an instance of MemcachedLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/memcachedLayer.MemcachedLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -430,6 +465,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksMysqlLayerMod.MysqlLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksMysqlLayerMod.MysqlLayer = js.native
+    /**
+      * Returns true if the given object is an instance of MysqlLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/mysqlLayer.MysqlLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -455,6 +495,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksNodejsAppLayerMod.NodejsAppLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksNodejsAppLayerMod.NodejsAppLayer = js.native
+    /**
+      * Returns true if the given object is an instance of NodejsAppLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/nodejsAppLayer.NodejsAppLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -480,6 +525,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksPermissionMod.PermissionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksPermissionMod.Permission = js.native
+    /**
+      * Returns true if the given object is an instance of Permission.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/permission.Permission */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -505,6 +555,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksPhpAppLayerMod.PhpAppLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksPhpAppLayerMod.PhpAppLayer = js.native
+    /**
+      * Returns true if the given object is an instance of PhpAppLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/phpAppLayer.PhpAppLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -530,6 +585,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksRailsAppLayerMod.RailsAppLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksRailsAppLayerMod.RailsAppLayer = js.native
+    /**
+      * Returns true if the given object is an instance of RailsAppLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/railsAppLayer.RailsAppLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -555,6 +615,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksRdsDbInstanceMod.RdsDbInstanceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksRdsDbInstanceMod.RdsDbInstance = js.native
+    /**
+      * Returns true if the given object is an instance of RdsDbInstance.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/rdsDbInstance.RdsDbInstance */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -580,6 +645,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksStackMod.StackState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksStackMod.Stack = js.native
+    /**
+      * Returns true if the given object is an instance of Stack.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/stack.Stack */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -605,6 +675,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksStaticWebLayerMod.StaticWebLayerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksStaticWebLayerMod.StaticWebLayer = js.native
+    /**
+      * Returns true if the given object is an instance of StaticWebLayer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/staticWebLayer.StaticWebLayer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -630,6 +705,11 @@ object opsworksNs extends js.Object {
       state: atPulumiAwsLib.opsworksUserProfileMod.UserProfileState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.opsworksUserProfileMod.UserProfile = js.native
+    /**
+      * Returns true if the given object is an instance of UserProfile.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/userProfile.UserProfile */ scala.Boolean = js.native
   }
   
 }

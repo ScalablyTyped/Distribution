@@ -68,5 +68,10 @@ object SshKey extends js.Object {
     state: atPulumiAwsLib.iamSshKeyMod.SshKeyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamSshKeyMod.SshKey = js.native
+  /**
+    * Returns true if the given object is an instance of SshKey.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/sshKey.SshKey */ scala.Boolean = js.native
 }
 

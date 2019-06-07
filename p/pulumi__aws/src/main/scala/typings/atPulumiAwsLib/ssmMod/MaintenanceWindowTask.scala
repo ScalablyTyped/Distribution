@@ -44,5 +44,10 @@ object MaintenanceWindowTask extends js.Object {
     state: atPulumiAwsLib.ssmMaintenanceWindowTaskMod.MaintenanceWindowTaskState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ssmMaintenanceWindowTaskMod.MaintenanceWindowTask = js.native
+  /**
+    * Returns true if the given object is an instance of MaintenanceWindowTask.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/maintenanceWindowTask.MaintenanceWindowTask */ scala.Boolean = js.native
 }
 

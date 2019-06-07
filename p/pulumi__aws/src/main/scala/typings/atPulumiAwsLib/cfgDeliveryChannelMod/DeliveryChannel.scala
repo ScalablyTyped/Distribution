@@ -64,5 +64,10 @@ object DeliveryChannel extends js.Object {
     state: atPulumiAwsLib.cfgDeliveryChannelMod.DeliveryChannelState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cfgDeliveryChannelMod.DeliveryChannel = js.native
+  /**
+    * Returns true if the given object is an instance of DeliveryChannel.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ scala.Boolean = js.native
 }
 

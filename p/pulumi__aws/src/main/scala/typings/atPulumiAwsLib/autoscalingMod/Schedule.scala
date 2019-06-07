@@ -44,5 +44,10 @@ object Schedule extends js.Object {
     state: atPulumiAwsLib.autoscalingScheduleMod.ScheduleState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.autoscalingScheduleMod.Schedule = js.native
+  /**
+    * Returns true if the given object is an instance of Schedule.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ scala.Boolean = js.native
 }
 

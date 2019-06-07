@@ -57,5 +57,10 @@ object IpSet extends js.Object {
     state: atPulumiAwsLib.wafregionalIpSetMod.IpSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafregionalIpSetMod.IpSet = js.native
+  /**
+    * Returns true if the given object is an instance of IpSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafregional/ipSet.IpSet */ scala.Boolean = js.native
 }
 

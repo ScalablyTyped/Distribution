@@ -126,6 +126,11 @@ object redshiftNs extends js.Object {
       state: atPulumiAwsLib.redshiftClusterMod.ClusterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.redshiftClusterMod.Cluster = js.native
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/cluster.Cluster */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -151,6 +156,11 @@ object redshiftNs extends js.Object {
       state: atPulumiAwsLib.redshiftEventSubscriptionMod.EventSubscriptionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.redshiftEventSubscriptionMod.EventSubscription = js.native
+    /**
+      * Returns true if the given object is an instance of EventSubscription.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/eventSubscription.EventSubscription */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -176,6 +186,11 @@ object redshiftNs extends js.Object {
       state: atPulumiAwsLib.redshiftParameterGroupMod.ParameterGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.redshiftParameterGroupMod.ParameterGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/parameterGroup.ParameterGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -201,6 +216,11 @@ object redshiftNs extends js.Object {
       state: atPulumiAwsLib.redshiftSecurityGroupMod.SecurityGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.redshiftSecurityGroupMod.SecurityGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SecurityGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/securityGroup.SecurityGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -226,6 +246,11 @@ object redshiftNs extends js.Object {
       state: atPulumiAwsLib.redshiftSnapshotCopyGrantMod.SnapshotCopyGrantState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.redshiftSnapshotCopyGrantMod.SnapshotCopyGrant = js.native
+    /**
+      * Returns true if the given object is an instance of SnapshotCopyGrant.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotCopyGrant.SnapshotCopyGrant */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -251,6 +276,11 @@ object redshiftNs extends js.Object {
       state: atPulumiAwsLib.redshiftSubnetGroupMod.SubnetGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.redshiftSubnetGroupMod.SubnetGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/subnetGroup.SubnetGroup */ scala.Boolean = js.native
   }
   
 }

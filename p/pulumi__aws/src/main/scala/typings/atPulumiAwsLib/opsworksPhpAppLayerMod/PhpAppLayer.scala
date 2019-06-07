@@ -109,5 +109,10 @@ object PhpAppLayer extends js.Object {
     state: atPulumiAwsLib.opsworksPhpAppLayerMod.PhpAppLayerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.opsworksPhpAppLayerMod.PhpAppLayer = js.native
+  /**
+    * Returns true if the given object is an instance of PhpAppLayer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/phpAppLayer.PhpAppLayer */ scala.Boolean = js.native
 }
 

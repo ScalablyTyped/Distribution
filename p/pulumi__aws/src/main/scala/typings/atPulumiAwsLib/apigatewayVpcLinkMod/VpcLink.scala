@@ -56,5 +56,10 @@ object VpcLink extends js.Object {
     state: atPulumiAwsLib.apigatewayVpcLinkMod.VpcLinkState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayVpcLinkMod.VpcLink = js.native
+  /**
+    * Returns true if the given object is an instance of VpcLink.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/vpcLink.VpcLink */ scala.Boolean = js.native
 }
 

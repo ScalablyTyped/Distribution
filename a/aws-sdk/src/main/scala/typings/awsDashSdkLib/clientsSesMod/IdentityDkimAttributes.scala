@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait IdentityDkimAttributes extends js.Object {
   /**
-    * True if DKIM signing is enabled for email sent from the identity; false otherwise. The default value is true.
+    * Is true if DKIM signing is enabled for email sent from the identity. It's false otherwise. The default value is true.
     */
   var DkimEnabled: Enabled
   /**
-    * A set of character strings that represent the domain's identity. Using these tokens, you will need to create DNS CNAME records that point to DKIM public keys hosted by Amazon SES. Amazon Web Services will eventually detect that you have updated your DNS records; this detection process may take up to 72 hours. Upon successful detection, Amazon SES will be able to DKIM-sign email originating from that domain. (This only applies to domain identities, not email address identities.) For more information about creating DNS records using DKIM tokens, go to the Amazon SES Developer Guide.
+    * A set of character strings that represent the domain's identity. Using these tokens, you need to create DNS CNAME records that point to DKIM public keys that are hosted by Amazon SES. Amazon Web Services eventually detects that you've updated your DNS records. This detection process might take up to 72 hours. After successful detection, Amazon SES is able to DKIM-sign email originating from that domain. (This only applies to domain identities, not email address identities.) For more information about creating DNS records using DKIM tokens, see the Amazon SES Developer Guide.
     */
   var DkimTokens: js.UndefOr[VerificationTokenList] = js.undefined
   /**

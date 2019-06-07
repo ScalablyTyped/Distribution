@@ -53,5 +53,10 @@ object SizeConstraintSet extends js.Object {
     state: atPulumiAwsLib.wafSizeConstraintSetMod.SizeConstraintSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafSizeConstraintSetMod.SizeConstraintSet = js.native
+  /**
+    * Returns true if the given object is an instance of SizeConstraintSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sizeConstraintSet.SizeConstraintSet */ scala.Boolean = js.native
 }
 

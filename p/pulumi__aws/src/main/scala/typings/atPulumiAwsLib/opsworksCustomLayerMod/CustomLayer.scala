@@ -113,5 +113,10 @@ object CustomLayer extends js.Object {
     state: atPulumiAwsLib.opsworksCustomLayerMod.CustomLayerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.opsworksCustomLayerMod.CustomLayer = js.native
+  /**
+    * Returns true if the given object is an instance of CustomLayer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/customLayer.CustomLayer */ scala.Boolean = js.native
 }
 

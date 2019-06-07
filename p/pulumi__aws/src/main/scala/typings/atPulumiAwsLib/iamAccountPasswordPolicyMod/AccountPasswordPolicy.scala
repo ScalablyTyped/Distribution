@@ -88,5 +88,10 @@ object AccountPasswordPolicy extends js.Object {
     state: atPulumiAwsLib.iamAccountPasswordPolicyMod.AccountPasswordPolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamAccountPasswordPolicyMod.AccountPasswordPolicy = js.native
+  /**
+    * Returns true if the given object is an instance of AccountPasswordPolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/accountPasswordPolicy.AccountPasswordPolicy */ scala.Boolean = js.native
 }
 

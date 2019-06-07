@@ -44,5 +44,10 @@ object PlatformApplication extends js.Object {
     state: atPulumiAwsLib.snsPlatformApplicationMod.PlatformApplicationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.snsPlatformApplicationMod.PlatformApplication = js.native
+  /**
+    * Returns true if the given object is an instance of PlatformApplication.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/platformApplication.PlatformApplication */ scala.Boolean = js.native
 }
 

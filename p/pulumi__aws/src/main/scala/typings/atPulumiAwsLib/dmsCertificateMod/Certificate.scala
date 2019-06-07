@@ -60,5 +60,10 @@ object Certificate extends js.Object {
     state: atPulumiAwsLib.dmsCertificateMod.CertificateState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.dmsCertificateMod.Certificate = js.native
+  /**
+    * Returns true if the given object is an instance of Certificate.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/certificate.Certificate */ scala.Boolean = js.native
 }
 

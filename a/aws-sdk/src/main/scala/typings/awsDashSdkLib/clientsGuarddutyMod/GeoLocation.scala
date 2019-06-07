@@ -9,16 +9,16 @@ trait GeoLocation extends js.Object {
   /**
     * Latitude information of remote IP address.
     */
-  var Lat: js.UndefOr[__double] = js.undefined
+  var Lat: js.UndefOr[Double] = js.undefined
   /**
     * Longitude information of remote IP address.
     */
-  var Lon: js.UndefOr[__double] = js.undefined
+  var Lon: js.UndefOr[Double] = js.undefined
 }
 
 object GeoLocation {
   @scala.inline
-  def apply(Lat: js.UndefOr[__double] = js.undefined, Lon: js.UndefOr[__double] = js.undefined): GeoLocation = {
+  def apply(Lat: js.UndefOr[Double] = js.undefined, Lon: js.UndefOr[Double] = js.undefined): GeoLocation = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(Lat)) __obj.updateDynamic("Lat")(Lat)
     if (!js.isUndefined(Lon)) __obj.updateDynamic("Lon")(Lon)

@@ -134,6 +134,11 @@ object autoscalingNs extends js.Object {
       state: atPulumiAwsLib.autoscalingAttachmentMod.AttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.autoscalingAttachmentMod.Attachment = js.native
+    /**
+      * Returns true if the given object is an instance of Attachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/attachment.Attachment */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -159,6 +164,11 @@ object autoscalingNs extends js.Object {
       state: atPulumiAwsLib.autoscalingGroupMod.GroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.autoscalingGroupMod.Group = js.native
+    /**
+      * Returns true if the given object is an instance of Group.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/group.Group */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -184,6 +194,11 @@ object autoscalingNs extends js.Object {
       state: atPulumiAwsLib.autoscalingLifecycleHookMod.LifecycleHookState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.autoscalingLifecycleHookMod.LifecycleHook = js.native
+    /**
+      * Returns true if the given object is an instance of LifecycleHook.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -209,6 +224,11 @@ object autoscalingNs extends js.Object {
       state: atPulumiAwsLib.autoscalingNotificationMod.NotificationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.autoscalingNotificationMod.Notification = js.native
+    /**
+      * Returns true if the given object is an instance of Notification.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -234,6 +254,11 @@ object autoscalingNs extends js.Object {
       state: atPulumiAwsLib.autoscalingPolicyMod.PolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.autoscalingPolicyMod.Policy = js.native
+    /**
+      * Returns true if the given object is an instance of Policy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/policy.Policy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -259,6 +284,11 @@ object autoscalingNs extends js.Object {
       state: atPulumiAwsLib.autoscalingScheduleMod.ScheduleState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.autoscalingScheduleMod.Schedule = js.native
+    /**
+      * Returns true if the given object is an instance of Schedule.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ scala.Boolean = js.native
   }
   
 }

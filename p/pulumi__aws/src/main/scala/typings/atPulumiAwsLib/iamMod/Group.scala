@@ -45,5 +45,10 @@ object Group extends js.Object {
     state: atPulumiAwsLib.iamGroupMod.GroupState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamGroupMod.Group = js.native
+  /**
+    * Returns true if the given object is an instance of Group.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/group.Group */ scala.Boolean = js.native
 }
 

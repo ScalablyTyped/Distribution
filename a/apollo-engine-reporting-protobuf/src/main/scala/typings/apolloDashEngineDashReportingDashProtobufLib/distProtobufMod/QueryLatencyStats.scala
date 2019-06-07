@@ -19,6 +19,9 @@ class QueryLatencyStats () extends IQueryLatencyStats {
   /** QueryLatencyStats cacheLatencyCount. */
   @JSName("cacheLatencyCount")
   var cacheLatencyCount_QueryLatencyStats: js.Array[scala.Double] = js.native
+  /** QueryLatencyStats forbiddenOperationCount. */
+  @JSName("forbiddenOperationCount")
+  var forbiddenOperationCount_QueryLatencyStats: scala.Double = js.native
   /** QueryLatencyStats latencyCount. */
   @JSName("latencyCount")
   var latencyCount_QueryLatencyStats: js.Array[scala.Double] = js.native
@@ -34,6 +37,9 @@ class QueryLatencyStats () extends IQueryLatencyStats {
   /** QueryLatencyStats publicCacheTtlCount. */
   @JSName("publicCacheTtlCount")
   var publicCacheTtlCount_QueryLatencyStats: js.Array[scala.Double] = js.native
+  /** QueryLatencyStats registeredOperationCount. */
+  @JSName("registeredOperationCount")
+  var registeredOperationCount_QueryLatencyStats: scala.Double = js.native
   /** QueryLatencyStats requestCount. */
   @JSName("requestCount")
   var requestCount_QueryLatencyStats: scala.Double = js.native

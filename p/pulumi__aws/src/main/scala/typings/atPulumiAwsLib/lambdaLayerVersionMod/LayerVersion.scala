@@ -100,5 +100,10 @@ object LayerVersion extends js.Object {
     state: atPulumiAwsLib.lambdaLayerVersionMod.LayerVersionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.lambdaLayerVersionMod.LayerVersion = js.native
+  /**
+    * Returns true if the given object is an instance of LayerVersion.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/layerVersion.LayerVersion */ scala.Boolean = js.native
 }
 

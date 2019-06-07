@@ -112,5 +112,10 @@ object Application extends js.Object {
     state: atPulumiAwsLib.opsworksApplicationMod.ApplicationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.opsworksApplicationMod.Application = js.native
+  /**
+    * Returns true if the given object is an instance of Application.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/application.Application */ scala.Boolean = js.native
 }
 

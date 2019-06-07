@@ -44,5 +44,10 @@ object DocumentationVersion extends js.Object {
     state: atPulumiAwsLib.apigatewayDocumentationVersionMod.DocumentationVersionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayDocumentationVersionMod.DocumentationVersion = js.native
+  /**
+    * Returns true if the given object is an instance of DocumentationVersion.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationVersion.DocumentationVersion */ scala.Boolean = js.native
 }
 

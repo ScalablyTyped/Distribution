@@ -6,14 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetFindingsResponse extends js.Object {
-  var Findings: js.UndefOr[Findings] = js.undefined
+  /**
+    * A list of findings.
+    */
+  var Findings: awsDashSdkLib.clientsGuarddutyMod.Findings
 }
 
 object GetFindingsResponse {
   @scala.inline
-  def apply(Findings: Findings = null): GetFindingsResponse = {
-    val __obj = js.Dynamic.literal()
-    if (Findings != null) __obj.updateDynamic("Findings")(Findings)
+  def apply(Findings: Findings): GetFindingsResponse = {
+    val __obj = js.Dynamic.literal(Findings = Findings)
+  
     __obj.asInstanceOf[GetFindingsResponse]
   }
 }

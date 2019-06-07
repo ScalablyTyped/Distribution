@@ -74,6 +74,11 @@ object backupNs extends js.Object {
       state: atPulumiAwsLib.backupPlanMod.PlanState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.backupPlanMod.Plan = js.native
+    /**
+      * Returns true if the given object is an instance of Plan.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/plan.Plan */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -99,6 +104,11 @@ object backupNs extends js.Object {
       state: atPulumiAwsLib.backupSelectionMod.SelectionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.backupSelectionMod.Selection = js.native
+    /**
+      * Returns true if the given object is an instance of Selection.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/selection.Selection */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -124,6 +134,11 @@ object backupNs extends js.Object {
       state: atPulumiAwsLib.backupVaultMod.VaultState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.backupVaultMod.Vault = js.native
+    /**
+      * Returns true if the given object is an instance of Vault.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vault.Vault */ scala.Boolean = js.native
   }
   
 }

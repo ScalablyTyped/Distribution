@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ListAccountSettingsRequest extends js.Object {
   /**
-    * Specifies whether to return the effective settings. If true, the account settings for the root user or the default setting for the principalArn. If false, the account settings for the principalArn are returned if they are set. Otherwise, no account settings are returned.
+    * Specifies whether to return the effective settings. If true, the account settings for the root user or the default setting for the principalArn are returned. If false, the account settings for the principalArn are returned if they are set. Otherwise, no account settings are returned.
     */
   var effectiveSettings: js.UndefOr[Boolean] = js.undefined
   /**

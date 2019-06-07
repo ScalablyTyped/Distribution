@@ -129,5 +129,10 @@ object Service extends js.Object {
     state: atPulumiAwsLib.ecsServiceMod.ServiceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ecsServiceMod.Service = js.native
+  /**
+    * Returns true if the given object is an instance of Service.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ scala.Boolean = js.native
 }
 

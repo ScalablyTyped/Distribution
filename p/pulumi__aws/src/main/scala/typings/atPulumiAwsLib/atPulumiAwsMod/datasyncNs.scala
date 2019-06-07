@@ -102,6 +102,11 @@ object datasyncNs extends js.Object {
       state: atPulumiAwsLib.datasyncAgentMod.AgentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.datasyncAgentMod.Agent = js.native
+    /**
+      * Returns true if the given object is an instance of Agent.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/agent.Agent */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -127,6 +132,11 @@ object datasyncNs extends js.Object {
       state: atPulumiAwsLib.datasyncEfsLocationMod.EfsLocationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.datasyncEfsLocationMod.EfsLocation = js.native
+    /**
+      * Returns true if the given object is an instance of EfsLocation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -152,6 +162,11 @@ object datasyncNs extends js.Object {
       state: atPulumiAwsLib.datasyncNfsLocationMod.NfsLocationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.datasyncNfsLocationMod.NfsLocation = js.native
+    /**
+      * Returns true if the given object is an instance of NfsLocation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -177,6 +192,11 @@ object datasyncNs extends js.Object {
       state: atPulumiAwsLib.datasyncS3LocationMod.S3LocationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.datasyncS3LocationMod.S3Location = js.native
+    /**
+      * Returns true if the given object is an instance of S3Location.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/s3Location.S3Location */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -202,6 +222,11 @@ object datasyncNs extends js.Object {
       state: atPulumiAwsLib.datasyncTaskMod.TaskState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.datasyncTaskMod.Task = js.native
+    /**
+      * Returns true if the given object is an instance of Task.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ scala.Boolean = js.native
   }
   
 }

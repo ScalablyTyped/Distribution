@@ -9,7 +9,7 @@ trait ListFindingsRequest extends js.Object {
   /**
     * The ID of the detector that specifies the GuardDuty service whose findings you want to list.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
     * Represents the criteria used for querying findings.
     */
@@ -19,9 +19,9 @@ trait ListFindingsRequest extends js.Object {
     */
   var MaxResults: js.UndefOr[MaxResults] = js.undefined
   /**
-    * You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the ListFindings action. For subsequent calls to the action fill nextToken in the request with the value of nextToken from the previous response to continue listing data.
+    * You can use this parameter when paginating results. Set the value of this parameter to null on your first call to the list action. For subsequent calls to the action fill nextToken in the request with the value of NextToken from the previous response to continue listing data.
     */
-  var NextToken: js.UndefOr[NextToken] = js.undefined
+  var NextToken: js.UndefOr[String] = js.undefined
   /**
     * Represents the criteria used for sorting findings.
     */
@@ -31,10 +31,10 @@ trait ListFindingsRequest extends js.Object {
 object ListFindingsRequest {
   @scala.inline
   def apply(
-    DetectorId: __string,
+    DetectorId: DetectorId,
     FindingCriteria: FindingCriteria = null,
     MaxResults: js.UndefOr[MaxResults] = js.undefined,
-    NextToken: NextToken = null,
+    NextToken: String = null,
     SortCriteria: SortCriteria = null
   ): ListFindingsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId)

@@ -13,15 +13,15 @@ trait NetworkInterface extends js.Object {
   /**
     * The ID of the network interface
     */
-  var NetworkInterfaceId: js.UndefOr[NetworkInterfaceId] = js.undefined
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   /**
     * Private DNS name of the EC2 instance.
     */
-  var PrivateDnsName: js.UndefOr[PrivateDnsName] = js.undefined
+  var PrivateDnsName: js.UndefOr[String] = js.undefined
   /**
     * Private IP address of the EC2 instance.
     */
-  var PrivateIpAddress: js.UndefOr[PrivateIpAddress] = js.undefined
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
   /**
     * Other private IP address information of the EC2 instance.
     */
@@ -29,11 +29,11 @@ trait NetworkInterface extends js.Object {
   /**
     * Public DNS name of the EC2 instance.
     */
-  var PublicDnsName: js.UndefOr[__string] = js.undefined
+  var PublicDnsName: js.UndefOr[String] = js.undefined
   /**
     * Public IP address of the EC2 instance.
     */
-  var PublicIp: js.UndefOr[__string] = js.undefined
+  var PublicIp: js.UndefOr[String] = js.undefined
   /**
     * Security groups associated with the EC2 instance.
     */
@@ -41,26 +41,26 @@ trait NetworkInterface extends js.Object {
   /**
     * The subnet ID of the EC2 instance.
     */
-  var SubnetId: js.UndefOr[__string] = js.undefined
+  var SubnetId: js.UndefOr[String] = js.undefined
   /**
     * The VPC ID of the EC2 instance.
     */
-  var VpcId: js.UndefOr[__string] = js.undefined
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 
 object NetworkInterface {
   @scala.inline
   def apply(
     Ipv6Addresses: Ipv6Addresses = null,
-    NetworkInterfaceId: NetworkInterfaceId = null,
-    PrivateDnsName: PrivateDnsName = null,
-    PrivateIpAddress: PrivateIpAddress = null,
+    NetworkInterfaceId: String = null,
+    PrivateDnsName: String = null,
+    PrivateIpAddress: String = null,
     PrivateIpAddresses: PrivateIpAddresses = null,
-    PublicDnsName: __string = null,
-    PublicIp: __string = null,
+    PublicDnsName: String = null,
+    PublicIp: String = null,
     SecurityGroups: SecurityGroups = null,
-    SubnetId: __string = null,
-    VpcId: __string = null
+    SubnetId: String = null,
+    VpcId: String = null
   ): NetworkInterface = {
     val __obj = js.Dynamic.literal()
     if (Ipv6Addresses != null) __obj.updateDynamic("Ipv6Addresses")(Ipv6Addresses)

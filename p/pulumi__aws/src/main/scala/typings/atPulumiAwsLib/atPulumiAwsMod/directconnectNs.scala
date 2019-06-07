@@ -218,6 +218,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectBgpPeerMod.BgpPeerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectBgpPeerMod.BgpPeer = js.native
+    /**
+      * Returns true if the given object is an instance of BgpPeer.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -243,6 +248,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectConnectionMod.ConnectionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectConnectionMod.Connection = js.native
+    /**
+      * Returns true if the given object is an instance of Connection.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -268,6 +278,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectConnectionAssociationMod.ConnectionAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectConnectionAssociationMod.ConnectionAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of ConnectionAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -293,6 +308,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectGatewayMod.GatewayState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectGatewayMod.Gateway = js.native
+    /**
+      * Returns true if the given object is an instance of Gateway.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gateway.Gateway */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -318,6 +338,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectGatewayAssociationMod.GatewayAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectGatewayAssociationMod.GatewayAssociation = js.native
+    /**
+      * Returns true if the given object is an instance of GatewayAssociation.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -343,6 +368,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectGatewayAssociationProposalMod.GatewayAssociationProposalState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectGatewayAssociationProposalMod.GatewayAssociationProposal = js.native
+    /**
+      * Returns true if the given object is an instance of GatewayAssociationProposal.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociationProposal.GatewayAssociationProposal */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -368,6 +398,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectHostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterfaceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectHostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = js.native
+    /**
+      * Returns true if the given object is an instance of HostedPrivateVirtualInterface.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterface.HostedPrivateVirtualInterface */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -393,6 +428,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectHostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectHostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = js.native
+    /**
+      * Returns true if the given object is an instance of HostedPrivateVirtualInterfaceAccepter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter.HostedPrivateVirtualInterfaceAccepter */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -418,6 +458,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectHostedPublicVirtualInterfaceMod.HostedPublicVirtualInterfaceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectHostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = js.native
+    /**
+      * Returns true if the given object is an instance of HostedPublicVirtualInterface.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterface.HostedPublicVirtualInterface */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -443,6 +488,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectHostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectHostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = js.native
+    /**
+      * Returns true if the given object is an instance of HostedPublicVirtualInterfaceAccepter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter.HostedPublicVirtualInterfaceAccepter */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -468,6 +518,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectLinkAggregationGroupMod.LinkAggregationGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectLinkAggregationGroupMod.LinkAggregationGroup = js.native
+    /**
+      * Returns true if the given object is an instance of LinkAggregationGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -493,6 +548,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectPrivateVirtualInterfaceMod.PrivateVirtualInterfaceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectPrivateVirtualInterfaceMod.PrivateVirtualInterface = js.native
+    /**
+      * Returns true if the given object is an instance of PrivateVirtualInterface.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/privateVirtualInterface.PrivateVirtualInterface */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -518,6 +578,11 @@ object directconnectNs extends js.Object {
       state: atPulumiAwsLib.directconnectPublicVirtualInterfaceMod.PublicVirtualInterfaceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.directconnectPublicVirtualInterfaceMod.PublicVirtualInterface = js.native
+    /**
+      * Returns true if the given object is an instance of PublicVirtualInterface.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/publicVirtualInterface.PublicVirtualInterface */ scala.Boolean = js.native
   }
   
 }

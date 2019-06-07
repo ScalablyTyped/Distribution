@@ -44,5 +44,10 @@ object LaunchConfiguration extends js.Object {
     state: atPulumiAwsLib.ec2LaunchConfigurationMod.LaunchConfigurationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2LaunchConfigurationMod.LaunchConfiguration = js.native
+  /**
+    * Returns true if the given object is an instance of LaunchConfiguration.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/launchConfiguration.LaunchConfiguration */ scala.Boolean = js.native
 }
 

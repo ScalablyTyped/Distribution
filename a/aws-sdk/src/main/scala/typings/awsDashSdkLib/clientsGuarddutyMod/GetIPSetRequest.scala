@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait GetIPSetRequest extends js.Object {
   /**
-    * The detectorID that specifies the GuardDuty service whose IPSet you want to retrieve.
+    * The unique ID of the detector the ipSet is associated with.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
   /**
-    * The unique ID that specifies the IPSet that you want to describe.
+    * The unique ID of the ipSet you want to get.
     */
-  var IpSetId: __string
+  var IpSetId: String
 }
 
 object GetIPSetRequest {
   @scala.inline
-  def apply(DetectorId: __string, IpSetId: __string): GetIPSetRequest = {
+  def apply(DetectorId: DetectorId, IpSetId: String): GetIPSetRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId, IpSetId = IpSetId)
   
     __obj.asInstanceOf[GetIPSetRequest]

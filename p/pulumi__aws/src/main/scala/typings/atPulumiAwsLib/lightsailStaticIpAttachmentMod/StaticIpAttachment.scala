@@ -52,5 +52,10 @@ object StaticIpAttachment extends js.Object {
     state: atPulumiAwsLib.lightsailStaticIpAttachmentMod.StaticIpAttachmentState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.lightsailStaticIpAttachmentMod.StaticIpAttachment = js.native
+  /**
+    * Returns true if the given object is an instance of StaticIpAttachment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/staticIpAttachment.StaticIpAttachment */ scala.Boolean = js.native
 }
 

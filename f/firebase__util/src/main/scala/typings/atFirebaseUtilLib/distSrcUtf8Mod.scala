@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object distSrcUtf8Mod extends js.Object {
   def stringLength(str: js.Any): scala.Double = js.native
-  def stringToByteArray(str: js.Any): js.Array[_] = js.native
+  def stringToByteArray(str: js.Any): js.Array[scala.Double] = js.native
 }
 

@@ -52,5 +52,10 @@ object GroupPolicyAttachment extends js.Object {
     state: atPulumiAwsLib.iamGroupPolicyAttachmentMod.GroupPolicyAttachmentState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamGroupPolicyAttachmentMod.GroupPolicyAttachment = js.native
+  /**
+    * Returns true if the given object is an instance of GroupPolicyAttachment.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicyAttachment.GroupPolicyAttachment */ scala.Boolean = js.native
 }
 

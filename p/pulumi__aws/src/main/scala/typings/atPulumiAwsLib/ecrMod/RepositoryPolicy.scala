@@ -44,5 +44,10 @@ object RepositoryPolicy extends js.Object {
     state: atPulumiAwsLib.ecrRepositoryPolicyMod.RepositoryPolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ecrRepositoryPolicyMod.RepositoryPolicy = js.native
+  /**
+    * Returns true if the given object is an instance of RepositoryPolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecr/repositoryPolicy.RepositoryPolicy */ scala.Boolean = js.native
 }
 

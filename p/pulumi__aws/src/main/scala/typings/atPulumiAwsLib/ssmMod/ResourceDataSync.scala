@@ -44,5 +44,10 @@ object ResourceDataSync extends js.Object {
     state: atPulumiAwsLib.ssmResourceDataSyncMod.ResourceDataSyncState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ssmResourceDataSyncMod.ResourceDataSync = js.native
+  /**
+    * Returns true if the given object is an instance of ResourceDataSync.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/resourceDataSync.ResourceDataSync */ scala.Boolean = js.native
 }
 

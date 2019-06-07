@@ -45,5 +45,10 @@ object AssessmentTarget extends js.Object {
     state: atPulumiAwsLib.inspectorAssessmentTargetMod.AssessmentTargetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.inspectorAssessmentTargetMod.AssessmentTarget = js.native
+  /**
+    * Returns true if the given object is an instance of AssessmentTarget.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTarget.AssessmentTarget */ scala.Boolean = js.native
 }
 

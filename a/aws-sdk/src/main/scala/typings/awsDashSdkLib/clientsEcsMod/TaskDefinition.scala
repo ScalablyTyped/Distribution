@@ -19,11 +19,11 @@ trait TaskDefinition extends js.Object {
     */
   var cpu: js.UndefOr[String] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of the task execution role that the Amazon ECS container agent and the Docker daemon can assume.
+    * The Amazon Resource Name (ARN) of the task execution role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.
     */
   var executionRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * The family of your task definition, used as the definition name.
+    * The name of a family that this task definition is registered to. A family groups multiple versions of a task definition. Amazon ECS gives the first task definition that you registered to a family a revision number of 1. Amazon ECS gives sequential revision numbers to each task definition that you add.
     */
   var family: js.UndefOr[String] = js.undefined
   /**
@@ -55,7 +55,7 @@ trait TaskDefinition extends js.Object {
     */
   var requiresAttributes: js.UndefOr[RequiresAttributes] = js.undefined
   /**
-    * The launch type that the task is using.
+    * The launch type the task requires. If no value is specified, it will default to EC2. Valid values include EC2 and FARGATE.
     */
   var requiresCompatibilities: js.UndefOr[CompatibilityList] = js.undefined
   /**
@@ -71,11 +71,11 @@ trait TaskDefinition extends js.Object {
     */
   var taskDefinitionArn: js.UndefOr[String] = js.undefined
   /**
-    * The ARN of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role. IAM roles for tasks on Windows require that the -EnableTaskIAMRole option is set when you launch the Amazon ECS-optimized Windows AMI. Your containers must also run some configuration code in order to take advantage of the feature. For more information, see Windows IAM Roles for Tasks in the Amazon Elastic Container Service Developer Guide.
+    * The Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role that grants containers in the task permission to call AWS APIs on your behalf. For more information, see Amazon ECS Task Role in the Amazon Elastic Container Service Developer Guide. IAM roles for tasks on Windows require that the -EnableTaskIAMRole option is set when you launch the Amazon ECS-optimized Windows AMI. Your containers must also run some configuration code in order to take advantage of the feature. For more information, see Windows IAM Roles for Tasks in the Amazon Elastic Container Service Developer Guide.
     */
   var taskRoleArn: js.UndefOr[String] = js.undefined
   /**
-    * The list of volumes in a task. If you are using the Fargate launch type, the host and sourcePath parameters are not supported. For more information about volume definition parameters and defaults, see Amazon ECS Task Definitions in the Amazon Elastic Container Service Developer Guide.
+    * The list of volume definitions for the task. If your tasks are using the Fargate launch type, the host and sourcePath parameters are not supported. For more information about volume definition parameters and defaults, see Amazon ECS Task Definitions in the Amazon Elastic Container Service Developer Guide.
     */
   var volumes: js.UndefOr[VolumeList] = js.undefined
 }

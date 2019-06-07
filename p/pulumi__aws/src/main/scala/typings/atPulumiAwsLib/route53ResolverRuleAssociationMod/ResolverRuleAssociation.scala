@@ -56,5 +56,10 @@ object ResolverRuleAssociation extends js.Object {
     state: atPulumiAwsLib.route53ResolverRuleAssociationMod.ResolverRuleAssociationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.route53ResolverRuleAssociationMod.ResolverRuleAssociation = js.native
+  /**
+    * Returns true if the given object is an instance of ResolverRuleAssociation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ scala.Boolean = js.native
 }
 

@@ -79,5 +79,10 @@ object TopicRule extends js.Object {
     state: atPulumiAwsLib.iotTopicRuleMod.TopicRuleState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iotTopicRuleMod.TopicRule = js.native
+  /**
+    * Returns true if the given object is an instance of TopicRule.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/topicRule.TopicRule */ scala.Boolean = js.native
 }
 

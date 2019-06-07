@@ -28,6 +28,9 @@ class Trace () extends ITrace {
   /** Trace durationNs. */
   @JSName("durationNs")
   var durationNs_Trace: scala.Double = js.native
+  /** Trace forbiddenOperation. */
+  @JSName("forbiddenOperation")
+  var forbiddenOperation_Trace: scala.Boolean = js.native
   /** Trace fullQueryCacheHit. */
   @JSName("fullQueryCacheHit")
   var fullQueryCacheHit_Trace: scala.Boolean = js.native
@@ -43,6 +46,9 @@ class Trace () extends ITrace {
   /** Trace persistedQueryRegister. */
   @JSName("persistedQueryRegister")
   var persistedQueryRegister_Trace: scala.Boolean = js.native
+  /** Trace registeredOperation. */
+  @JSName("registeredOperation")
+  var registeredOperation_Trace: scala.Boolean = js.native
   /** Trace signature. */
   @JSName("signature")
   var signature_Trace: java.lang.String = js.native

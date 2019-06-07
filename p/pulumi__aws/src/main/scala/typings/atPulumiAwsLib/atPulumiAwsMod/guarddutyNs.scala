@@ -102,6 +102,11 @@ object guarddutyNs extends js.Object {
       state: atPulumiAwsLib.guarddutyDetectorMod.DetectorState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.guarddutyDetectorMod.Detector = js.native
+    /**
+      * Returns true if the given object is an instance of Detector.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/detector.Detector */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -127,6 +132,11 @@ object guarddutyNs extends js.Object {
       state: atPulumiAwsLib.guarddutyIPSetMod.IPSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.guarddutyIPSetMod.IPSet = js.native
+    /**
+      * Returns true if the given object is an instance of IPSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/iPSet.IPSet */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -152,6 +162,11 @@ object guarddutyNs extends js.Object {
       state: atPulumiAwsLib.guarddutyInviteAccepterMod.InviteAccepterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.guarddutyInviteAccepterMod.InviteAccepter = js.native
+    /**
+      * Returns true if the given object is an instance of InviteAccepter.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -177,6 +192,11 @@ object guarddutyNs extends js.Object {
       state: atPulumiAwsLib.guarddutyMemberMod.MemberState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.guarddutyMemberMod.Member = js.native
+    /**
+      * Returns true if the given object is an instance of Member.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/member.Member */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -202,6 +222,11 @@ object guarddutyNs extends js.Object {
       state: atPulumiAwsLib.guarddutyThreatIntelSetMod.ThreatIntelSetState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.guarddutyThreatIntelSetMod.ThreatIntelSet = js.native
+    /**
+      * Returns true if the given object is an instance of ThreatIntelSet.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/threatIntelSet.ThreatIntelSet */ scala.Boolean = js.native
   }
   
 }

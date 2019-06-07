@@ -60,5 +60,10 @@ object LoadBalancerPolicy extends js.Object {
     state: atPulumiAwsLib.elasticloadbalancingLoadBalancerPolicyMod.LoadBalancerPolicyState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.elasticloadbalancingLoadBalancerPolicyMod.LoadBalancerPolicy = js.native
+  /**
+    * Returns true if the given object is an instance of LoadBalancerPolicy.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/loadBalancerPolicy.LoadBalancerPolicy */ scala.Boolean = js.native
 }
 

@@ -45,5 +45,10 @@ object Zone extends js.Object {
     state: atPulumiAwsLib.route53ZoneMod.ZoneState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.route53ZoneMod.Zone = js.native
+  /**
+    * Returns true if the given object is an instance of Zone.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ scala.Boolean = js.native
 }
 

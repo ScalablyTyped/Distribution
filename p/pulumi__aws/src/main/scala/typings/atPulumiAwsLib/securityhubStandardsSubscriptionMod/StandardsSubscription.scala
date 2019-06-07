@@ -48,5 +48,10 @@ object StandardsSubscription extends js.Object {
     state: atPulumiAwsLib.securityhubStandardsSubscriptionMod.StandardsSubscriptionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.securityhubStandardsSubscriptionMod.StandardsSubscription = js.native
+  /**
+    * Returns true if the given object is an instance of StandardsSubscription.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ scala.Boolean = js.native
 }
 

@@ -94,6 +94,11 @@ object ecsNs extends js.Object {
       state: atPulumiAwsLib.ecsClusterMod.ClusterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ecsClusterMod.Cluster = js.native
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -119,6 +124,11 @@ object ecsNs extends js.Object {
       state: atPulumiAwsLib.ecsServiceMod.ServiceState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ecsServiceMod.Service = js.native
+    /**
+      * Returns true if the given object is an instance of Service.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -144,6 +154,11 @@ object ecsNs extends js.Object {
       state: atPulumiAwsLib.ecsTaskDefinitionMod.TaskDefinitionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ecsTaskDefinitionMod.TaskDefinition = js.native
+    /**
+      * Returns true if the given object is an instance of TaskDefinition.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ scala.Boolean = js.native
   }
   
 }

@@ -44,5 +44,10 @@ object Record extends js.Object {
     state: atPulumiAwsLib.route53RecordMod.RecordState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.route53RecordMod.Record = js.native
+  /**
+    * Returns true if the given object is an instance of Record.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ scala.Boolean = js.native
 }
 

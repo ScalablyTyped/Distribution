@@ -52,5 +52,10 @@ object DomainIdentityVerification extends js.Object {
     state: atPulumiAwsLib.sesDomainIdentityVerificationMod.DomainIdentityVerificationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.sesDomainIdentityVerificationMod.DomainIdentityVerification = js.native
+  /**
+    * Returns true if the given object is an instance of DomainIdentityVerification.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/domainIdentityVerification.DomainIdentityVerification */ scala.Boolean = js.native
 }
 

@@ -9,11 +9,11 @@ trait CreateDetectorRequest extends js.Object {
   /**
     * The idempotency token for the create request.
     */
-  var ClientToken: js.UndefOr[__stringMin0Max64] = js.undefined
+  var ClientToken: js.UndefOr[ClientToken] = js.undefined
   /**
     * A boolean value that specifies whether the detector is to be enabled.
     */
-  var Enable: awsDashSdkLib.clientsGuarddutyMod.Enable
+  var Enable: Boolean
   /**
     * A enum value that specifies how frequently customer got Finding updates published.
     */
@@ -23,8 +23,8 @@ trait CreateDetectorRequest extends js.Object {
 object CreateDetectorRequest {
   @scala.inline
   def apply(
-    Enable: Enable,
-    ClientToken: __stringMin0Max64 = null,
+    Enable: Boolean,
+    ClientToken: ClientToken = null,
     FindingPublishingFrequency: FindingPublishingFrequency = null
   ): CreateDetectorRequest = {
     val __obj = js.Dynamic.literal(Enable = Enable)

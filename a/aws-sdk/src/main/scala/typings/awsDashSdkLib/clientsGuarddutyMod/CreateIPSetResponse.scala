@@ -6,14 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateIPSetResponse extends js.Object {
-  var IpSetId: js.UndefOr[IpSetId] = js.undefined
+  /**
+    * The ID of the IPSet resource.
+    */
+  var IpSetId: String
 }
 
 object CreateIPSetResponse {
   @scala.inline
-  def apply(IpSetId: IpSetId = null): CreateIPSetResponse = {
-    val __obj = js.Dynamic.literal()
-    if (IpSetId != null) __obj.updateDynamic("IpSetId")(IpSetId)
+  def apply(IpSetId: String): CreateIPSetResponse = {
+    val __obj = js.Dynamic.literal(IpSetId = IpSetId)
+  
     __obj.asInstanceOf[CreateIPSetResponse]
   }
 }

@@ -57,6 +57,7 @@ package object clientsSesMod {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.eventDestinations
     - awsDashSdkLib.awsDashSdkLibStrings.trackingOptions
+    - awsDashSdkLib.awsDashSdkLibStrings.deliveryOptions
     - awsDashSdkLib.awsDashSdkLibStrings.reputationOptions
     - java.lang.String
   */

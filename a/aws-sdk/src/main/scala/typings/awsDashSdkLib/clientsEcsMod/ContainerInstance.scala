@@ -15,7 +15,7 @@ trait ContainerInstance extends js.Object {
     */
   var agentUpdateStatus: js.UndefOr[AgentUpdateStatus] = js.undefined
   /**
-    * The elastic network interfaces associated with the container instance.
+    * The resources attached to a container instance, such as elastic network interfaces.
     */
   var attachments: js.UndefOr[Attachments] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait ContainerInstance extends js.Object {
     */
   var attributes: js.UndefOr[Attributes] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) of the container instance. The ARN contains the arn:aws:ecs namespace, followed by the Region of the container instance, the AWS account ID of the container instance owner, the container-instance namespace, and then the container instance ID. For example, arn:aws:ecs:region:aws_account_id:container-instance/container_instance_ID .
+    * The Amazon Resource Name (ARN) of the container instance. The ARN contains the arn:aws:ecs namespace, followed by the Region of the container instance, the AWS account ID of the container instance owner, the container-instance namespace, and then the container instance ID. For example, arn:aws:ecs:region:aws_account_id:container-instance/container_instance_ID.
     */
   var containerInstanceArn: js.UndefOr[String] = js.undefined
   /**
@@ -51,9 +51,13 @@ trait ContainerInstance extends js.Object {
     */
   var runningTasksCount: js.UndefOr[Integer] = js.undefined
   /**
-    * The status of the container instance. The valid values are ACTIVE, INACTIVE, or DRAINING. ACTIVE indicates that the container instance can accept tasks. DRAINING indicates that new tasks are not placed on the container instance and any service tasks running on the container instance are removed if possible. For more information, see Container Instance Draining in the Amazon Elastic Container Service Developer Guide.
+    * The status of the container instance. The valid values are REGISTERING, REGISTRATION_FAILED, ACTIVE, INACTIVE, DEREGISTERING, or DRAINING. If your account has opted in to the awsvpcTrunking account setting, then any newly registered container instance will transition to a REGISTERING status while the trunk elastic network interface is provisioned for the instance. If the registration fails, the instance will transition to a REGISTRATION_FAILED status. You can describe the container instance and see the reason for failure in the statusReason parameter. Once the container instance is terminated, the instance transitions to a DEREGISTERING status while the trunk elastic network interface is deprovisioned. The instance then transitions to an INACTIVE status. The ACTIVE status indicates that the container instance can accept tasks. The DRAINING indicates that new tasks are not placed on the container instance and any service tasks running on the container instance are removed if possible. For more information, see Container Instance Draining in the Amazon Elastic Container Service Developer Guide.
     */
   var status: js.UndefOr[String] = js.undefined
+  /**
+    * The reason that the container instance reached its current status.
+    */
+  var statusReason: js.UndefOr[String] = js.undefined
   /**
     * The metadata that you apply to the container instance to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
     */
@@ -83,6 +87,7 @@ object ContainerInstance {
     remainingResources: Resources = null,
     runningTasksCount: js.UndefOr[Integer] = js.undefined,
     status: String = null,
+    statusReason: String = null,
     tags: Tags = null,
     version: js.UndefOr[Long] = js.undefined,
     versionInfo: VersionInfo = null
@@ -100,6 +105,7 @@ object ContainerInstance {
     if (remainingResources != null) __obj.updateDynamic("remainingResources")(remainingResources)
     if (!js.isUndefined(runningTasksCount)) __obj.updateDynamic("runningTasksCount")(runningTasksCount)
     if (status != null) __obj.updateDynamic("status")(status)
+    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
     if (versionInfo != null) __obj.updateDynamic("versionInfo")(versionInfo)

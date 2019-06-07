@@ -56,5 +56,10 @@ object Dashboard extends js.Object {
     state: atPulumiAwsLib.cloudwatchDashboardMod.DashboardState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloudwatchDashboardMod.Dashboard = js.native
+  /**
+    * Returns true if the given object is an instance of Dashboard.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ scala.Boolean = js.native
 }
 

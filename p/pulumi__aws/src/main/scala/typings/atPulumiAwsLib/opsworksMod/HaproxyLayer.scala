@@ -44,5 +44,10 @@ object HaproxyLayer extends js.Object {
     state: atPulumiAwsLib.opsworksHaproxyLayerMod.HaproxyLayerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.opsworksHaproxyLayerMod.HaproxyLayer = js.native
+  /**
+    * Returns true if the given object is an instance of HaproxyLayer.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/haproxyLayer.HaproxyLayer */ scala.Boolean = js.native
 }
 

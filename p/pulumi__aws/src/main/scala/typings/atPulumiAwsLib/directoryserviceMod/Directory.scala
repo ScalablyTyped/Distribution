@@ -44,5 +44,10 @@ object Directory extends js.Object {
     state: atPulumiAwsLib.directoryserviceDirectoryMod.DirectoryState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.directoryserviceDirectoryMod.Directory = js.native
+  /**
+    * Returns true if the given object is an instance of Directory.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/directory.Directory */ scala.Boolean = js.native
 }
 

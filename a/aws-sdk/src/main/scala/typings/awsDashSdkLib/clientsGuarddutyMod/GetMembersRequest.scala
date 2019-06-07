@@ -13,12 +13,12 @@ trait GetMembersRequest extends js.Object {
   /**
     * The unique ID of the detector of the GuardDuty account whose members you want to retrieve.
     */
-  var DetectorId: __string
+  var DetectorId: awsDashSdkLib.clientsGuarddutyMod.DetectorId
 }
 
 object GetMembersRequest {
   @scala.inline
-  def apply(AccountIds: AccountIds, DetectorId: __string): GetMembersRequest = {
+  def apply(AccountIds: AccountIds, DetectorId: DetectorId): GetMembersRequest = {
     val __obj = js.Dynamic.literal(AccountIds = AccountIds, DetectorId = DetectorId)
   
     __obj.asInstanceOf[GetMembersRequest]

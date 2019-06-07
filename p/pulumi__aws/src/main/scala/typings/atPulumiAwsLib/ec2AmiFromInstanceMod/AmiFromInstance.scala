@@ -117,5 +117,10 @@ object AmiFromInstance extends js.Object {
     state: atPulumiAwsLib.ec2AmiFromInstanceMod.AmiFromInstanceState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2AmiFromInstanceMod.AmiFromInstance = js.native
+  /**
+    * Returns true if the given object is an instance of AmiFromInstance.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiFromInstance.AmiFromInstance */ scala.Boolean = js.native
 }
 

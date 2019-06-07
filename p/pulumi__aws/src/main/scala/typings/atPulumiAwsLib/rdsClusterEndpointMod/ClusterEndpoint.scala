@@ -72,5 +72,10 @@ object ClusterEndpoint extends js.Object {
     state: atPulumiAwsLib.rdsClusterEndpointMod.ClusterEndpointState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.rdsClusterEndpointMod.ClusterEndpoint = js.native
+  /**
+    * Returns true if the given object is an instance of ClusterEndpoint.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/clusterEndpoint.ClusterEndpoint */ scala.Boolean = js.native
 }
 

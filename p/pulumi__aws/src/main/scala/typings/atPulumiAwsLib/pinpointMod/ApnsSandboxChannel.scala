@@ -44,5 +44,10 @@ object ApnsSandboxChannel extends js.Object {
     state: atPulumiAwsLib.pinpointApnsSandboxChannelMod.ApnsSandboxChannelState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.pinpointApnsSandboxChannelMod.ApnsSandboxChannel = js.native
+  /**
+    * Returns true if the given object is an instance of ApnsSandboxChannel.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsSandboxChannel.ApnsSandboxChannel */ scala.Boolean = js.native
 }
 

@@ -12,12 +12,12 @@ object distSrcObjMod extends js.Object {
   def contains(obj: js.Any, key: js.Any): js.Any = js.native
   def every[V](obj: js.Object, fn: js.Function2[/* k */ java.lang.String, /* v */ js.UndefOr[V], scala.Boolean]): scala.Boolean = js.native
   def extend(objTo: js.Any, objFrom: js.Any): js.Any = js.native
-  def findKey(obj: js.Any, fn: js.Any): java.lang.String = js.native
-  def findKey(obj: js.Any, fn: js.Any, opt_this: js.Any): java.lang.String = js.native
+  def findKey(obj: js.Any, fn: js.Any): js.UndefOr[java.lang.String] = js.native
+  def findKey(obj: js.Any, fn: js.Any, opt_this: js.Any): js.UndefOr[java.lang.String] = js.native
   def findValue(obj: js.Any, fn: js.Any): js.Any = js.native
   def findValue(obj: js.Any, fn: js.Any, opt_this: js.Any): js.Any = js.native
   def forEach(obj: js.Any, fn: js.Any): scala.Unit = js.native
-  def getAnyKey(obj: js.Any): java.lang.String = js.native
+  def getAnyKey(obj: js.Any): js.UndefOr[java.lang.String] = js.native
   def getCount(obj: js.Any): scala.Double = js.native
   def getValues(obj: js.Any): js.Array[_] = js.native
   def isEmpty(obj: js.Any): scala.Boolean = js.native

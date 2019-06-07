@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait UpdatePolicyRequest extends js.Object {
   /**
-    * If provided, the new content for the policy. The text must be correctly formatted JSON that complies with the syntax for the policy's type. For more information, see Service Control Policy Syntax in the AWS Organizations User Guide.
+    * If provided, the new content for the policy. The text must be correctly formatted JSON that complies with the syntax for the policy's type. For more information, see Service Control Policy Syntax in the AWS Organizations User Guide. 
     */
   var Content: js.UndefOr[PolicyContent] = js.undefined
   /**

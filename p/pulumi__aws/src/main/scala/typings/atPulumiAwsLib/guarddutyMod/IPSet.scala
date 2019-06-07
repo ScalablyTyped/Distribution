@@ -44,5 +44,10 @@ object IPSet extends js.Object {
     state: atPulumiAwsLib.guarddutyIPSetMod.IPSetState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.guarddutyIPSetMod.IPSet = js.native
+  /**
+    * Returns true if the given object is an instance of IPSet.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/iPSet.IPSet */ scala.Boolean = js.native
 }
 

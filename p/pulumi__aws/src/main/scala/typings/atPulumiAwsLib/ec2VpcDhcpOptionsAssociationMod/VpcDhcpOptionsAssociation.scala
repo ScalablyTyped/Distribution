@@ -52,5 +52,10 @@ object VpcDhcpOptionsAssociation extends js.Object {
     state: atPulumiAwsLib.ec2VpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2VpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
+  /**
+    * Returns true if the given object is an instance of VpcDhcpOptionsAssociation.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ scala.Boolean = js.native
 }
 

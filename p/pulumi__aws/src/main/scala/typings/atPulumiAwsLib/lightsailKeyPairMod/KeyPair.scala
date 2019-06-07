@@ -85,5 +85,10 @@ object KeyPair extends js.Object {
     state: atPulumiAwsLib.lightsailKeyPairMod.KeyPairState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.lightsailKeyPairMod.KeyPair = js.native
+  /**
+    * Returns true if the given object is an instance of KeyPair.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/keyPair.KeyPair */ scala.Boolean = js.native
 }
 

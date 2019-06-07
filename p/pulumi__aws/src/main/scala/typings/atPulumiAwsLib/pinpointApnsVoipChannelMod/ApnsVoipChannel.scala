@@ -83,5 +83,10 @@ object ApnsVoipChannel extends js.Object {
     state: atPulumiAwsLib.pinpointApnsVoipChannelMod.ApnsVoipChannelState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.pinpointApnsVoipChannelMod.ApnsVoipChannel = js.native
+  /**
+    * Returns true if the given object is an instance of ApnsVoipChannel.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsVoipChannel.ApnsVoipChannel */ scala.Boolean = js.native
 }
 

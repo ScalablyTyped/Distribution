@@ -31,7 +31,7 @@ trait LogStream extends js.Object {
     */
   var logStreamName: js.UndefOr[LogStreamName] = js.undefined
   /**
-    * The number of bytes stored.
+    * The number of bytes stored.  IMPORTANT: Starting on June 17, 2019, this parameter will be deprecated for log streams, and will be reported as zero. This change applies only to log streams. The storedBytes parameter for log groups is not affected.
     */
   var storedBytes: js.UndefOr[StoredBytes] = js.undefined
   /**

@@ -1,0 +1,225 @@
+[debug] PhaseRunner.scala:92 Ignored [id => terminal-kit, phase => typescript] 
+[debug] PhaseRunner.scala:92 Ignored [id => terminal-kit, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => terminal-kit, phase => typescript] 
+[info ] InferredDependency.scala:22 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(terminal-kit) [id => terminal-kit, phase => typescript, file => ../types/terminal-kit/Terminal.d.ts] 
+[debug] PhaseRunner.scala:84 Success [id => terminal-kit, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => terminal-kit, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => terminal-kit, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => terminal-kit, phase => typescript] 
+[debug] PhaseRunner.scala:84 Success [id => terminal-kit, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit/Rect.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit),TsIdentLibrarySimple(terminal-kit)),TsIdentModule(None,List(terminal-kit, Rect))) [id => terminal-kit, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(terminal-kit, Rect)) [id => terminal-kit, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit/ScreenBuffer.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit),TsIdentLibrarySimple(terminal-kit)),TsIdentModule(None,List(terminal-kit, ScreenBuffer))) [id => terminal-kit, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(terminal-kit, ScreenBuffer)) [id => terminal-kit, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit/ScreenBufferHD.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit),TsIdentLibrarySimple(terminal-kit)),TsIdentModule(None,List(terminal-kit, ScreenBufferHD))) [id => terminal-kit, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(terminal-kit, ScreenBufferHD)) [id => terminal-kit, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit/Terminal.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit),TsIdentLibrarySimple(terminal-kit)),TsIdentModule(None,List(terminal-kit, Terminal))) [id => terminal-kit, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(terminal-kit, Terminal)) [id => terminal-kit, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit/TextBuffer.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit),TsIdentLibrarySimple(terminal-kit)),TsIdentModule(None,List(terminal-kit, TextBuffer))) [id => terminal-kit, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(terminal-kit, TextBuffer)) [id => terminal-kit, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/terminal-kit),TsIdentLibrarySimple(terminal-kit)),TsIdentModule(None,List(terminal-kit))) [id => terminal-kit, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(terminal-kit)) [id => terminal-kit, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(terminal-kit) [id => terminal-kit, phase => typescript] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_DstRect) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Rect) / TsDeclClass(^) / TsMemberFunction(wrappingRect) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Attr) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBuffer) / TsDeclInterface(ScreenBuffer) / TsMemberFunction(fill) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_X) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBuffer) / TsDeclInterface(ScreenBuffer) / TsMemberFunction(get) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AttrChar) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBuffer) / TsDeclInterface(ScreenBuffer) / TsMemberFunction(get) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Dst) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBuffer) / TsDeclInterface(ScreenBuffer) / TsMemberFunction(drawCursor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AttrTransparencyChar) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBuffer) / TsDeclClass(^) / TsMemberFunction(createFromString) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Height) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBuffer) / TsDeclClass(^) / TsMemberFunction(loadImage) / TsFunSig() / TsFunParam() / TsTypeObject() / TsMemberProperty(shrink) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Shrink) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBuffer) / TsDeclClass(^) / TsMemberFunction(loadImage) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Blending) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(ScreenBufferHD) / TsMemberFunction(draw) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Attr) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(ScreenBufferHD) / TsMemberFunction(fill) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AttrCharAttributes) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(ScreenBufferHD) / TsMemberFunction(fill) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Blending) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclClass(^) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_HeightWidth) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclClass(^) / TsMemberFunction(loadImage) / TsFunSig() / TsFunParam() / TsTypeObject() / TsMemberProperty(shrink) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ShrinkAnonHeightWidth) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclClass(^) / TsMemberFunction(loadImage) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_NoAlternate) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(fullscreen) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Button) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(grabInput) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_B) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(getColor) / TsFunSig() / TsFunParam() / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_B) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(setColor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Continue) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(wrapColumn) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Abort) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(yesOrNo) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Abort) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(inputField) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Promise) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(singleLineMenu) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Promise) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(singleRowMenu) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_PromiseSingleColumnMenuResponse) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(singleColumnMenu) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_PromiseGridMenuResponse) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(gridMenu) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BarStyle) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(bar) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Delay) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(slowTyping) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Delay) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(slowTyping) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Height) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(drawImage) / TsFunSig() / TsFunParam() / TsTypeObject() / TsMemberProperty(shrink) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ShrinkAnonHeight) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(drawImage) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Height) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(drawImage) / TsFunSig() / TsFunParam() / TsTypeObject() / TsMemberProperty(shrink) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ShrinkAnonHeight) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl) / TsMemberFunction(drawImage) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BG) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclTypeAlias(Palette) / TsTypeRef() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_BaseDir) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclTypeAlias(IFileInputOptions) / TsTypeIntersect() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Items) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(ProgressBarController) / TsMemberFunction(update) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Height) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(getContentSize) / TsFunSig() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_FinalCall) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(iterate) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AttrMisc) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(iterate) / TsFunSig() / TsFunParam() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Dst_1506794770) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/TextBuffer) / TsDeclInterface(TextBuffer) / TsMemberFunction(drawCursor) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_DstRect) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit) / TsDeclClass(Rect) / TsMemberFunction(wrappingRect) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_AttrTransparencyChar) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit) / TsDeclClass(ScreenBuffer) / TsMemberFunction(createFromString) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Height) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit) / TsDeclClass(ScreenBuffer) / TsMemberFunction(loadImage) / TsFunSig() / TsFunParam() / TsTypeObject() / TsMemberProperty(shrink) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Shrink) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit) / TsDeclClass(ScreenBuffer) / TsMemberFunction(loadImage) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_Blending) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit) / TsDeclClass(ScreenBufferHD) / TsMemberFunction(constructor) / TsFunSig() / TsFunParam() / TsTypeUnion() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_HeightWidth) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit) / TsDeclClass(ScreenBufferHD) / TsMemberFunction(loadImage) / TsFunSig() / TsFunParam() / TsTypeObject() / TsMemberProperty(shrink) / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Anon_ShrinkAnonHeightWidth) [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit) / TsDeclClass(ScreenBufferHD) / TsMemberFunction(loadImage) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExpandCallables.scala:48 Expanded normal into 1 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(BlendFn))] 
+[info ] ExpandCallables.scala:48 Expanded multiply into 1 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(BlendFn))] 
+[info ] ExpandCallables.scala:48 Expanded screen into 1 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(BlendFn))] 
+[info ] ExpandCallables.scala:48 Expanded overlay into 1 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(BlendFn))] 
+[info ] ExpandCallables.scala:48 Expanded hardLight into 1 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(BlendFn))] 
+[info ] ExpandCallables.scala:48 Expanded softLight into 1 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(BlendFn))] 
+[info ] ExpandCallables.scala:48 Expanded fn into 1 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/ScreenBufferHD) / TsDeclInterface(Blending))] 
+[info ] ExpandCallables.scala:48 Expanded defaultColor into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded black into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded red into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded green into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded yellow into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded blue into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded magenta into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded cyan into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded white into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded brightBlack into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded gray into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded grey into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded brightRed into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded brightGreen into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded brightYellow into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded brightBlue into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded brightMagenta into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded brightCyan into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded brightWhite into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgDefaultColor into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBlack into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgRed into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgGreen into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgYellow into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBlue into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgMagenta into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgCyan into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgWhite into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBrightBlack into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgGray into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgGrey into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBrightRed into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBrightGreen into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBrightYellow into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBrightBlue into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBrightMagenta into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBrightCyan into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bgBrightWhite into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded styleReset into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bold into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded dim into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded italic into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded underline into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded blink into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded inverse into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded hidden into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded strike into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded saveCursor into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded restoreCursor into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded resetScrollingRegion into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded moveTo into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded hideCursor into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded tabSet into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded tabClear into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded tabClearAll into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded clear into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded eraseDisplayBelow into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded eraseDisplayAbove into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded eraseDisplay into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded eraseScrollback into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded eraseLineAfter into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded eraseLineBefore into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded eraseLine into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded backDelete into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded alternateScreenBuffer into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded requestCursorLocation into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded requestScreenSize into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded applicationKeypad into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded mouseButton into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded mouseDrag into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded mouseMotion into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded mouseSGR into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded focusEvent into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded error into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded str into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded noFormat into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded markupOnly into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded wrap into 3 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded reset into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded bell into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded resetCursorColorRgb into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded resetDefaultColorRgb into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded resetDefaultBgColorRgb into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded resetHighlightBgColorRgb into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(terminal-kit/Terminal) / TsDeclInterface(Impl))] 
+[info ] ExpandCallables.scala:48 Expanded terminal into 2 methods [id => terminal-kit, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Anon_Shrink))] 
+[debug] PhaseRunner.scala:84 Success [id => terminal-kit, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing terminal-kit [id => terminal-kit, phase => scala.js] 
+[info ] CompleteClass.scala:64 Completed implementations Vector(ymax, isNull, xmin, height, ymin, xmax, width, clip, set) [id => terminal-kit, phase => scala.js, this => Name(terminalDashKitLib) / Name(rectMod) / Name(^)] 
+[debug] PhaseRunner.scala:84 Success [id => terminal-kit, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:245 Built terminal-kit in 1615 ms [id => terminal-kit, phase => build] 
+[info ] Phase3CompileBloop.scala:253 published local, [/home/tso/.ivy2/local/org.scalablytyped/terminal-kit_sjs0.6_2.12/1.28-dt-20190515Z-8c5a3f/jars/terminal-kit_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/terminal-kit_sjs0.6_2.12/1.28-dt-20190515Z-8c5a3f/srcs/terminal-kit_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/terminal-kit_sjs0.6_2.12/1.28-dt-20190515Z-8c5a3f/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/terminal-kit_sjs0.6_2.12/1.28-dt-20190515Z-8c5a3f/poms/terminal-kit_sjs0.6_2.12.pom] [id => terminal-kit, phase => build] 
+[debug] PhaseRunner.scala:84 Success [id => terminal-kit, phase => build] 
+[error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 405 [id => terminal-kit, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.markAsDone(HttpProtocol.java:204)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.finishUpdate(HttpProtocol.java:189)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.exitAfterHandlingBody(HttpProtocol.java:402)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handleHttpResponse(HttpProtocol.java:429)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handle(HttpProtocol.java:476)
+	at com.ning.http.client.providers.netty.handler.Processor.messageReceived(Processor.java:89)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:142)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:108)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:92)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dispatch.StatusCode: Unexpected response status: 405
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1(BinTrayPublisher.scala:35)
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflictUncached$1$adapted(BinTrayPublisher.scala:31)
+	at dispatch.FunctionHandler.onCompleted(handlers.scala:26)
+	at com.ning.http.client.AsyncCompletionHandler.onCompleted(AsyncCompletionHandler.java:55)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:141)
+	at com.olvind.tso.importer.build.Caching$Client$StoringHandler$1$.onCompleted(BinTrayPublisher.scala:116)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.getContent(NettyResponseFuture.java:177)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:212)
+	... 43 more
+
+[error] PhaseRunner.scala:88 Failure, [terminal-kit => java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 405] [id => terminal-kit, phase => publish] 

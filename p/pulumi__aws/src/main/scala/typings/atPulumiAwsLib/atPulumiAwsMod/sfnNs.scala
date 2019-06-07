@@ -60,6 +60,11 @@ object sfnNs extends js.Object {
       state: atPulumiAwsLib.sfnActivityMod.ActivityState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sfnActivityMod.Activity = js.native
+    /**
+      * Returns true if the given object is an instance of Activity.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sfn/activity.Activity */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -85,6 +90,11 @@ object sfnNs extends js.Object {
       state: atPulumiAwsLib.sfnStateMachineMod.StateMachineState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.sfnStateMachineMod.StateMachine = js.native
+    /**
+      * Returns true if the given object is an instance of StateMachine.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sfn/stateMachine.StateMachine */ scala.Boolean = js.native
   }
   
 }

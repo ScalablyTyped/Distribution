@@ -44,5 +44,10 @@ object Selection extends js.Object {
     state: atPulumiAwsLib.backupSelectionMod.SelectionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.backupSelectionMod.Selection = js.native
+  /**
+    * Returns true if the given object is an instance of Selection.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/selection.Selection */ scala.Boolean = js.native
 }
 

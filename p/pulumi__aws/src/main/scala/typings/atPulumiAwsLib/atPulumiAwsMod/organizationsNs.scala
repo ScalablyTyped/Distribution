@@ -102,6 +102,11 @@ object organizationsNs extends js.Object {
       state: atPulumiAwsLib.organizationsAccountMod.AccountState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.organizationsAccountMod.Account = js.native
+    /**
+      * Returns true if the given object is an instance of Account.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/account.Account */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -127,6 +132,11 @@ object organizationsNs extends js.Object {
       state: atPulumiAwsLib.organizationsOrganizationMod.OrganizationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.organizationsOrganizationMod.Organization = js.native
+    /**
+      * Returns true if the given object is an instance of Organization.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -152,6 +162,11 @@ object organizationsNs extends js.Object {
       state: atPulumiAwsLib.organizationsOrganizationalUnitMod.OrganizationalUnitState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.organizationsOrganizationalUnitMod.OrganizationalUnit = js.native
+    /**
+      * Returns true if the given object is an instance of OrganizationalUnit.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organizationalUnit.OrganizationalUnit */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -177,6 +192,11 @@ object organizationsNs extends js.Object {
       state: atPulumiAwsLib.organizationsPolicyMod.PolicyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.organizationsPolicyMod.Policy = js.native
+    /**
+      * Returns true if the given object is an instance of Policy.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policy.Policy */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -202,6 +222,11 @@ object organizationsNs extends js.Object {
       state: atPulumiAwsLib.organizationsPolicyAttachmentMod.PolicyAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.organizationsPolicyAttachmentMod.PolicyAttachment = js.native
+    /**
+      * Returns true if the given object is an instance of PolicyAttachment.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/policyAttachment.PolicyAttachment */ scala.Boolean = js.native
   }
   
 }

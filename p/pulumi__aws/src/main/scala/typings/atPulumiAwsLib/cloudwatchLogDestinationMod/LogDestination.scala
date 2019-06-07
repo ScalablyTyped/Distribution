@@ -60,5 +60,10 @@ object LogDestination extends js.Object {
     state: atPulumiAwsLib.cloudwatchLogDestinationMod.LogDestinationState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cloudwatchLogDestinationMod.LogDestination = js.native
+  /**
+    * Returns true if the given object is an instance of LogDestination.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/logDestination.LogDestination */ scala.Boolean = js.native
 }
 

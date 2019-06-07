@@ -9,7 +9,7 @@ trait GetFilterResponse extends js.Object {
   /**
     * Specifies the action that is to be applied to the findings that match the filter.
     */
-  var Action: js.UndefOr[FilterAction] = js.undefined
+  var Action: FilterAction
   /**
     * The description of the filter.
     */
@@ -17,11 +17,11 @@ trait GetFilterResponse extends js.Object {
   /**
     * Represents the criteria to be used in the filter for querying findings.
     */
-  var FindingCriteria: js.UndefOr[FindingCriteria] = js.undefined
+  var FindingCriteria: awsDashSdkLib.clientsGuarddutyMod.FindingCriteria
   /**
     * The name of the filter.
     */
-  var Name: js.UndefOr[FilterName] = js.undefined
+  var Name: FilterName
   /**
     * Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
     */
@@ -31,17 +31,14 @@ trait GetFilterResponse extends js.Object {
 object GetFilterResponse {
   @scala.inline
   def apply(
-    Action: FilterAction = null,
+    Action: FilterAction,
+    FindingCriteria: FindingCriteria,
+    Name: FilterName,
     Description: FilterDescription = null,
-    FindingCriteria: FindingCriteria = null,
-    Name: FilterName = null,
     Rank: js.UndefOr[FilterRank] = js.undefined
   ): GetFilterResponse = {
-    val __obj = js.Dynamic.literal()
-    if (Action != null) __obj.updateDynamic("Action")(Action.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], FindingCriteria = FindingCriteria, Name = Name)
     if (Description != null) __obj.updateDynamic("Description")(Description)
-    if (FindingCriteria != null) __obj.updateDynamic("FindingCriteria")(FindingCriteria)
-    if (Name != null) __obj.updateDynamic("Name")(Name)
     if (!js.isUndefined(Rank)) __obj.updateDynamic("Rank")(Rank)
     __obj.asInstanceOf[GetFilterResponse]
   }

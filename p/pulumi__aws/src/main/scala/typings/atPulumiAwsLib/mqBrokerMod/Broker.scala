@@ -121,5 +121,10 @@ object Broker extends js.Object {
     state: atPulumiAwsLib.mqBrokerMod.BrokerState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.mqBrokerMod.Broker = js.native
+  /**
+    * Returns true if the given object is an instance of Broker.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ scala.Boolean = js.native
 }
 

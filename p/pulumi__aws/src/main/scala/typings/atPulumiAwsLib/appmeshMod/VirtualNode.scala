@@ -44,5 +44,10 @@ object VirtualNode extends js.Object {
     state: atPulumiAwsLib.appmeshVirtualNodeMod.VirtualNodeState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.appmeshVirtualNodeMod.VirtualNode = js.native
+  /**
+    * Returns true if the given object is an instance of VirtualNode.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/virtualNode.VirtualNode */ scala.Boolean = js.native
 }
 

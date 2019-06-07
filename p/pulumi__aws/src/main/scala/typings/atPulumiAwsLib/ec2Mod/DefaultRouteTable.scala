@@ -44,5 +44,10 @@ object DefaultRouteTable extends js.Object {
     state: atPulumiAwsLib.ec2DefaultRouteTableMod.DefaultRouteTableState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2DefaultRouteTableMod.DefaultRouteTable = js.native
+  /**
+    * Returns true if the given object is an instance of DefaultRouteTable.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultRouteTable.DefaultRouteTable */ scala.Boolean = js.native
 }
 

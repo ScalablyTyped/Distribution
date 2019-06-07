@@ -112,6 +112,11 @@ object elasticacheNs extends js.Object {
       state: atPulumiAwsLib.elasticacheClusterMod.ClusterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticacheClusterMod.Cluster = js.native
+    /**
+      * Returns true if the given object is an instance of Cluster.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/cluster.Cluster */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -137,6 +142,11 @@ object elasticacheNs extends js.Object {
       state: atPulumiAwsLib.elasticacheParameterGroupMod.ParameterGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticacheParameterGroupMod.ParameterGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ParameterGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/parameterGroup.ParameterGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -162,6 +172,11 @@ object elasticacheNs extends js.Object {
       state: atPulumiAwsLib.elasticacheReplicationGroupMod.ReplicationGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticacheReplicationGroupMod.ReplicationGroup = js.native
+    /**
+      * Returns true if the given object is an instance of ReplicationGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/replicationGroup.ReplicationGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -187,6 +202,11 @@ object elasticacheNs extends js.Object {
       state: atPulumiAwsLib.elasticacheSecurityGroupMod.SecurityGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticacheSecurityGroupMod.SecurityGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SecurityGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/securityGroup.SecurityGroup */ scala.Boolean = js.native
   }
   
   /* static members */
@@ -212,6 +232,11 @@ object elasticacheNs extends js.Object {
       state: atPulumiAwsLib.elasticacheSubnetGroupMod.SubnetGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticacheSubnetGroupMod.SubnetGroup = js.native
+    /**
+      * Returns true if the given object is an instance of SubnetGroup.  This is designed to work even
+      * when multiple copies of the Pulumi SDK have been loaded into the same process.
+      */
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/subnetGroup.SubnetGroup */ scala.Boolean = js.native
   }
   
 }

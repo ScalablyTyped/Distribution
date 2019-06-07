@@ -56,5 +56,10 @@ object DocumentationPart extends js.Object {
     state: atPulumiAwsLib.apigatewayDocumentationPartMod.DocumentationPartState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.apigatewayDocumentationPartMod.DocumentationPart = js.native
+  /**
+    * Returns true if the given object is an instance of DocumentationPart.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationPart.DocumentationPart */ scala.Boolean = js.native
 }
 

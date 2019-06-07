@@ -15,7 +15,7 @@ trait FilterLogEventsRequest extends js.Object {
     */
   var filterPattern: js.UndefOr[FilterPattern] = js.undefined
   /**
-    * If the value is true, the operation makes a best effort to provide responses that contain events from multiple log streams within the log group, interleaved in a single response. If the value is false, all the matched log events in the first log stream are searched first, then those in the next log stream, and so on. The default is false.
+    * If the value is true, the operation makes a best effort to provide responses that contain events from multiple log streams within the log group, interleaved in a single response. If the value is false, all the matched log events in the first log stream are searched first, then those in the next log stream, and so on. The default is false.  IMPORTANT: Starting on June 17, 2019, this parameter will be ignored and the value will be assumed to be true. The response from this operation will always interleave events from multiple log streams within a log group.
     */
   var interleaved: js.UndefOr[Interleaved] = js.undefined
   /**

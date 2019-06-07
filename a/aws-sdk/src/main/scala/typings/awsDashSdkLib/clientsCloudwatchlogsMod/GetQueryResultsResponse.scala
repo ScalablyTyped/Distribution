@@ -15,7 +15,7 @@ trait GetQueryResultsResponse extends js.Object {
     */
   var statistics: js.UndefOr[QueryStatistics] = js.undefined
   /**
-    * The status of the most recent running of the query. Possible values are Cancelled, Complete, Failed, Running, Scheduled, and Unknown.
+    * The status of the most recent running of the query. Possible values are Cancelled, Complete, Failed, Running, Scheduled, Timeout, and Unknown. Queries time out after 15 minutes of execution. To avoid having your queries time out, reduce the time range being searched, or partition your query into a number of queries.
     */
   var status: js.UndefOr[QueryStatus] = js.undefined
 }

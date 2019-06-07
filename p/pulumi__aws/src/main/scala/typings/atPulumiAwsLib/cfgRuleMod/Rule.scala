@@ -78,5 +78,10 @@ object Rule extends js.Object {
     state: atPulumiAwsLib.cfgRuleMod.RuleState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.cfgRuleMod.Rule = js.native
+  /**
+    * Returns true if the given object is an instance of Rule.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/rule.Rule */ scala.Boolean = js.native
 }
 
