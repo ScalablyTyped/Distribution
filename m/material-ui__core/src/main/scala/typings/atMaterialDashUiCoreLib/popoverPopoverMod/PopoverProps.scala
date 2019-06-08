@@ -327,7 +327,7 @@ trait PopoverProps extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
   var transformOrigin: js.UndefOr[PopoverOrigin] = js.undefined
   var transitionDuration: js.UndefOr[
-    scala.Double | reactDashTransitionDashGroupLib.Anon_Enter | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto
+    scala.Double | reactDashTransitionDashGroupLib.Anon_Appear | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto
   ] = js.undefined
   var typeof: js.UndefOr[java.lang.String] = js.undefined
   var unselectable: js.UndefOr[
@@ -549,7 +549,7 @@ object PopoverProps {
     tabIndex: scala.Int | scala.Double = null,
     title: java.lang.String = null,
     transformOrigin: PopoverOrigin = null,
-    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null,
+    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null,
     typeof: java.lang.String = null,
     unselectable: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off = null,
     vocab: java.lang.String = null

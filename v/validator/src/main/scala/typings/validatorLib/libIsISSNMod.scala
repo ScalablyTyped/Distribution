@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object libIsISSNMod
   extends org.scalablytyped.runtime.TopLevel[
-      js.Function2[
+      (js.Function2[
         /* str */ java.lang.String, 
         /* options */ js.UndefOr[validatorLib.ValidatorJSNs.IsISSNOptions], 
         scala.Boolean
-      ]
+      ]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isISSN */ js.Any)
     ]
 

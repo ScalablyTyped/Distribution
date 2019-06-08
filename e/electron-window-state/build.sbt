@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "electron-window-state"
-version := "2.0.0-dt-20190322Z-545e2f"
+version := "2.0.0-dt-20190322Z-a94a68"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "electron" % "5.0.2-cce9f3",
+  "org.scalablytyped" %%% "electron" % "5.0.3-c263e7",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false

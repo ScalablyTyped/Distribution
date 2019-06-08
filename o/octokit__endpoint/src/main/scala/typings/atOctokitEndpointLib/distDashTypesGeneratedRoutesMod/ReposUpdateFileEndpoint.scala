@@ -18,7 +18,7 @@ trait ReposUpdateFileEndpoint extends js.Object {
   var owner: java.lang.String
   var path: java.lang.String
   var repo: java.lang.String
-  var sha: java.lang.String
+  var sha: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ReposUpdateFileEndpoint {
@@ -33,12 +33,12 @@ object ReposUpdateFileEndpoint {
     owner: java.lang.String,
     path: java.lang.String,
     repo: java.lang.String,
-    sha: java.lang.String,
     author: js.Object = null,
     branch: java.lang.String = null,
-    committer: js.Object = null
+    committer: js.Object = null,
+    sha: java.lang.String = null
   ): ReposUpdateFileEndpoint = {
-    val __obj = js.Dynamic.literal(content = content, message = message, owner = owner, path = path, repo = repo, sha = sha)
+    val __obj = js.Dynamic.literal(content = content, message = message, owner = owner, path = path, repo = repo)
     __obj.updateDynamic("author.email")(`author.email`)
     __obj.updateDynamic("author.name")(`author.name`)
     __obj.updateDynamic("committer.email")(`committer.email`)
@@ -46,6 +46,7 @@ object ReposUpdateFileEndpoint {
     if (author != null) __obj.updateDynamic("author")(author)
     if (branch != null) __obj.updateDynamic("branch")(branch)
     if (committer != null) __obj.updateDynamic("committer")(committer)
+    if (sha != null) __obj.updateDynamic("sha")(sha)
     __obj.asInstanceOf[ReposUpdateFileEndpoint]
   }
 }

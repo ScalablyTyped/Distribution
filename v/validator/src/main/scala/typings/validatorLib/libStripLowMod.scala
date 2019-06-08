@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object libStripLowMod
   extends org.scalablytyped.runtime.TopLevel[
-      js.Function2[
+      (js.Function2[
         /* input */ java.lang.String, 
         /* keep_new_lines */ js.UndefOr[scala.Boolean], 
         java.lang.String
-      ]
+      ]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.stripLow */ js.Any)
     ]
 

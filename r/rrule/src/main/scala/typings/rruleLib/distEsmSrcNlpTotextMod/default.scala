@@ -11,6 +11,7 @@ class default protected () extends ToText {
   def this(rrule: rruleLib.distEsmSrcMod.default) = this()
   def this(rrule: rruleLib.distEsmSrcMod.default, gettext: GetText) = this()
   def this(rrule: rruleLib.distEsmSrcMod.default, gettext: GetText, language: rruleLib.distEsmSrcNlpI18nMod.Language) = this()
+  def this(rrule: rruleLib.distEsmSrcMod.default, gettext: GetText, language: rruleLib.distEsmSrcNlpI18nMod.Language, dateFormatter: DateFormatter) = this()
 }
 
 /* static members */

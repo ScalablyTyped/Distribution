@@ -57,6 +57,7 @@ trait Client extends js.Object {
     script: java.lang.String,
     args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
   ): js.Any = js.native
+  def executeScript(script: java.lang.String): js.Any = js.native
   def executeScript(
     script: java.lang.String,
     args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]

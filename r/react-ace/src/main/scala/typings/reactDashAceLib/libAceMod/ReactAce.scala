@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ReactAce
-  extends reactLib.reactMod.Component[IAceEditorProps, js.Object, js.Any]
-     with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  extends reactLib.reactMod.Component[IAceEditorProps, js.Object, js.Any] {
   var editor: reactDashAceLib.libAceEditorClassMod.AceEditorClass = js.native
   var refEditor: stdLib.HTMLElement = js.native
   var silent: scala.Boolean = js.native

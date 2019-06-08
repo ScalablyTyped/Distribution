@@ -291,9 +291,9 @@ trait BackdropProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var theme: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme] = js.undefined
-  var timeout: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
+  var timeout: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Appear] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Appear] = js.undefined
   var typeof: js.UndefOr[java.lang.String] = js.undefined
   var unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
   var unselectable: js.UndefOr[
@@ -490,9 +490,9 @@ object BackdropProps {
     suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined,
     tabIndex: scala.Int | scala.Double = null,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null,
-    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null,
+    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear = null,
     title: java.lang.String = null,
-    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null,
+    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear = null,
     typeof: java.lang.String = null,
     unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined,
     unselectable: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off = null,

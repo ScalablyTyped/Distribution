@@ -12,6 +12,6 @@ object ^ extends js.Object {
   var $: webdriverioLib.$ = js.native
   @JSName("$$")
   var $$: webdriverioLib.$$ = js.native
-  var browser: BrowserObject = js.native
+  var browser: webdriverioLib.WebdriverIOAsyncNs.BrowserObject = js.native
 }
 

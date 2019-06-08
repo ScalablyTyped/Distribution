@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object libIsEmailMod
   extends org.scalablytyped.runtime.TopLevel[
-      js.Function2[
+      (js.Function2[
         /* str */ java.lang.String, 
         /* options */ js.UndefOr[validatorLib.ValidatorJSNs.IsEmailOptions], 
         scala.Boolean
-      ]
+      ]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isEmail */ js.Any)
     ]
 

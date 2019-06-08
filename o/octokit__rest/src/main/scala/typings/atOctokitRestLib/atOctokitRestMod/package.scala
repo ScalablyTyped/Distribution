@@ -23,6 +23,7 @@ package object atOctokitRestMod {
   type ActivityUnstarRepoResponse = js.Object
   type AnyResponse = Response[js.Any]
   type AppsAddRepoToInstallationResponse = js.Object
+  type AppsCreateInstallationTokenParamsPermissions = js.Object
   type AppsDeleteInstallationResponse = js.Object
   type AppsListAccountsUserOrOrgOnPlanResponse = js.Array[AppsListAccountsUserOrOrgOnPlanResponseItem]
   type AppsListAccountsUserOrOrgOnPlanStubbedResponse = js.Array[AppsListAccountsUserOrOrgOnPlanStubbedResponseItem]
@@ -167,8 +168,10 @@ package object atOctokitRestMod {
   type ReposDeleteInvitationResponse = js.Object
   type ReposDeleteReleaseAssetResponse = js.Object
   type ReposDeleteReleaseResponse = js.Object
+  type ReposDisableAutomatedSecurityFixesResponse = js.Object
   type ReposDisablePagesSiteResponse = js.Object
   type ReposDisableVulnerabilityAlertsResponse = js.Object
+  type ReposEnableAutomatedSecurityFixesResponse = js.Object
   type ReposEnableVulnerabilityAlertsResponse = js.Object
   type ReposGetArchiveLinkResponse = js.Object
   type ReposGetCodeFrequencyStatsResponse = js.Array[js.Array[scala.Double]]

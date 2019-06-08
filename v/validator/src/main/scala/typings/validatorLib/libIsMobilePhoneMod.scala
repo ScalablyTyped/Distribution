@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object libIsMobilePhoneMod
   extends org.scalablytyped.runtime.TopLevel[
-      js.Function3[
+      (js.Function3[
         /* str */ java.lang.String, 
         /* locale */ validatorLib.ValidatorJSNs.MobilePhoneLocale, 
         /* options */ js.UndefOr[validatorLib.ValidatorJSNs.IsMobilePhoneOptions], 
         scala.Boolean
-      ]
+      ]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isMobilePhone */ js.Any)
     ]
 

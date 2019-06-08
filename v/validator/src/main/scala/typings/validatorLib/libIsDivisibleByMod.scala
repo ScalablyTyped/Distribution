@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libIsDivisibleByMod
   extends org.scalablytyped.runtime.TopLevel[
-      js.Function2[/* str */ java.lang.String, /* number */ scala.Double, scala.Boolean]
+      (js.Function2[/* str */ java.lang.String, /* number */ scala.Double, scala.Boolean]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isDivisibleBy */ js.Any)
     ]
 

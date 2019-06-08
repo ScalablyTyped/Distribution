@@ -89,7 +89,7 @@ trait TransitionProps
     * - enter defaults to `0`
     * - exit defaults to `0`
     */
-  var timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter
+  var timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear
   /**
     * By default the child component stays mounted after it reaches the
     * 'exited' state. Set `unmountOnExit` if you'd prefer to unmount the
@@ -101,7 +101,7 @@ trait TransitionProps
 object TransitionProps {
   @scala.inline
   def apply(
-    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter,
+    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear,
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     addEndListener: EndHandler = null,
     appear: js.UndefOr[scala.Boolean] = js.undefined,

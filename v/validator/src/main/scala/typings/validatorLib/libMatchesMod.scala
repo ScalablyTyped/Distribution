@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object libMatchesMod
   extends org.scalablytyped.runtime.TopLevel[
-      js.Function3[
+      (js.Function3[
         /* str */ java.lang.String, 
         /* pattern */ stdLib.RegExp | java.lang.String, 
         /* modifiers */ js.UndefOr[java.lang.String], 
         scala.Boolean
-      ]
+      ]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.matches */ js.Any)
     ]
 

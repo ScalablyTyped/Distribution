@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetEbsEncryptionByDefaultResult extends js.Object {
   /**
-    * Indicates whether default encryption for EBS volumes is enabled or disabled.
+    * Indicates whether encryption by default is enabled.
     */
   var EbsEncryptionByDefault: js.UndefOr[Boolean] = js.undefined
 }

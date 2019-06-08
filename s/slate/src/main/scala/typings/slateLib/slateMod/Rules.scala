@@ -13,9 +13,11 @@ trait Rules extends js.Object {
   var isVoid: js.UndefOr[scala.Boolean] = js.undefined
   var last: js.UndefOr[ObjectAndType | js.Array[ObjectAndType]] = js.undefined
   var marks: js.UndefOr[js.Array[slateLib.Anon_Type]] = js.undefined
+  var next: js.UndefOr[ObjectAndType | js.Array[ObjectAndType]] = js.undefined
   var nodes: js.UndefOr[js.Array[slateLib.Anon_Match]] = js.undefined
   var normalize: js.UndefOr[js.Function2[/* editor */ Editor, /* error */ SlateError, scala.Unit]] = js.undefined
   var parent: js.UndefOr[ObjectAndType | js.Array[ObjectAndType]] = js.undefined
+  var previous: js.UndefOr[ObjectAndType | js.Array[ObjectAndType]] = js.undefined
   var text: js.UndefOr[stdLib.RegExp | (js.Function1[/* text */ java.lang.String, scala.Boolean])] = js.undefined
 }
 
@@ -27,9 +29,11 @@ object Rules {
     isVoid: js.UndefOr[scala.Boolean] = js.undefined,
     last: ObjectAndType | js.Array[ObjectAndType] = null,
     marks: js.Array[slateLib.Anon_Type] = null,
+    next: ObjectAndType | js.Array[ObjectAndType] = null,
     nodes: js.Array[slateLib.Anon_Match] = null,
     normalize: (/* editor */ Editor, /* error */ SlateError) => scala.Unit = null,
     parent: ObjectAndType | js.Array[ObjectAndType] = null,
+    previous: ObjectAndType | js.Array[ObjectAndType] = null,
     text: stdLib.RegExp | (js.Function1[/* text */ java.lang.String, scala.Boolean]) = null
   ): Rules = {
     val __obj = js.Dynamic.literal()
@@ -38,9 +42,11 @@ object Rules {
     if (!js.isUndefined(isVoid)) __obj.updateDynamic("isVoid")(isVoid)
     if (last != null) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
     if (marks != null) __obj.updateDynamic("marks")(marks)
+    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
     if (nodes != null) __obj.updateDynamic("nodes")(nodes)
     if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction2(normalize))
     if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rules]
   }

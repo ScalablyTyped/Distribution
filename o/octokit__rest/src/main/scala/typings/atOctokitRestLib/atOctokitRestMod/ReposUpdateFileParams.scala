@@ -30,9 +30,9 @@ trait ReposUpdateFileParams extends js.Object {
   var path: java.lang.String
   var repo: java.lang.String
   /**
-    * The blob SHA of the file being replaced.
+    * **Required if you are updating a file**. The blob SHA of the file being replaced.
     */
-  var sha: java.lang.String
+  var sha: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ReposUpdateFileParams {
@@ -43,15 +43,16 @@ object ReposUpdateFileParams {
     owner: java.lang.String,
     path: java.lang.String,
     repo: java.lang.String,
-    sha: java.lang.String,
     author: ReposUpdateFileParamsAuthor = null,
     branch: java.lang.String = null,
-    committer: ReposUpdateFileParamsCommitter = null
+    committer: ReposUpdateFileParamsCommitter = null,
+    sha: java.lang.String = null
   ): ReposUpdateFileParams = {
-    val __obj = js.Dynamic.literal(content = content, message = message, owner = owner, path = path, repo = repo, sha = sha)
+    val __obj = js.Dynamic.literal(content = content, message = message, owner = owner, path = path, repo = repo)
     if (author != null) __obj.updateDynamic("author")(author)
     if (branch != null) __obj.updateDynamic("branch")(branch)
     if (committer != null) __obj.updateDynamic("committer")(committer)
+    if (sha != null) __obj.updateDynamic("sha")(sha)
     __obj.asInstanceOf[ReposUpdateFileParams]
   }
 }

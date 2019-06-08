@@ -12,9 +12,12 @@ object ^ extends js.Object {
   def hookCreateScript(matcher: Matcher, transformer: Transformer, options: stdLib.Partial[Options]): scala.Unit = js.native
   def hookRequire(matcher: Matcher, transformer: Transformer): js.Function0[scala.Unit] = js.native
   def hookRequire(matcher: Matcher, transformer: Transformer, options: stdLib.Partial[HookRequireOptions]): js.Function0[scala.Unit] = js.native
+  def hookRunInContext(matcher: Matcher, transformer: Transformer): scala.Unit = js.native
+  def hookRunInContext(matcher: Matcher, transformer: Transformer, options: stdLib.Partial[HookRunInContextOptions]): scala.Unit = js.native
   def hookRunInThisContext(matcher: Matcher, transformer: Transformer): scala.Unit = js.native
   def hookRunInThisContext(matcher: Matcher, transformer: Transformer, options: stdLib.Partial[Options]): scala.Unit = js.native
   def unhookCreateScript(): scala.Unit = js.native
+  def unhookRunInContext(): scala.Unit = js.native
   def unhookRunInThisContext(): scala.Unit = js.native
   def unloadRequireCache(matcher: Matcher): scala.Unit = js.native
 }

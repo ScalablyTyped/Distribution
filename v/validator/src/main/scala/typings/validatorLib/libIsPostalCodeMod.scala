@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object libIsPostalCodeMod
   extends org.scalablytyped.runtime.TopLevel[
-      js.Function2[
+      (js.Function2[
         /* str */ java.lang.String, 
         /* locale */ validatorLib.ValidatorJSNs.PostalCodeLocale, 
         scala.Boolean
-      ]
+      ]) with (/* import warning: ResolveTypeQueries.resolve Loop while resolving typeof validator.isPostalCode */ js.Any)
     ]
 

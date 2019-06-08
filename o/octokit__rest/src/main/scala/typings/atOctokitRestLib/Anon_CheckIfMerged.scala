@@ -134,6 +134,11 @@ trait Anon_CheckIfMerged extends js.Object {
   var merge_Original: Anon_EndpointParamsAnyResponsePromisePullsMergeParams = js.native
   @JSName("submitReview")
   var submitReview_Original: Anon_EndpointParamsPromisePullsSubmitReviewParams = js.native
+  /**
+    * Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
+    */
+  @JSName("updateBranch")
+  var updateBranch_Original: Anon_EndpointParamsPromisePullsUpdateBranchParams = js.native
   @JSName("updateComment")
   var updateComment_Original: Anon_EndpointParamsPromisePullsUpdateCommentParams = js.native
   /**
@@ -426,6 +431,15 @@ trait Anon_CheckIfMerged extends js.Object {
   ] = js.native
   def update(params: atOctokitRestLib.atOctokitRestMod.PullsUpdateParamsDeprecatedNumber): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.PullsUpdateResponse]
+  ] = js.native
+  /**
+    * Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
+    */
+  def updateBranch(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.PullsUpdateBranchResponse]
+  ] = js.native
+  def updateBranch(params: atOctokitRestLib.atOctokitRestMod.PullsUpdateBranchParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.PullsUpdateBranchResponse]
   ] = js.native
   def updateComment(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.PullsUpdateCommentResponse]

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetEbsDefaultKmsKeyIdResult extends js.Object {
   /**
-    * The full ARN of the default CMK that your account uses to encrypt an EBS volume when no CMK is specified in the API call that creates the volume.
+    * The Amazon Resource Name (ARN) of the default CMK for encryption by default.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
 }

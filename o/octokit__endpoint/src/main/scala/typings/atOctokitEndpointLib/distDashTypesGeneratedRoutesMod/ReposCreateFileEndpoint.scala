@@ -18,6 +18,7 @@ trait ReposCreateFileEndpoint extends js.Object {
   var owner: java.lang.String
   var path: java.lang.String
   var repo: java.lang.String
+  var sha: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ReposCreateFileEndpoint {
@@ -34,7 +35,8 @@ object ReposCreateFileEndpoint {
     repo: java.lang.String,
     author: js.Object = null,
     branch: java.lang.String = null,
-    committer: js.Object = null
+    committer: js.Object = null,
+    sha: java.lang.String = null
   ): ReposCreateFileEndpoint = {
     val __obj = js.Dynamic.literal(content = content, message = message, owner = owner, path = path, repo = repo)
     __obj.updateDynamic("author.email")(`author.email`)
@@ -44,6 +46,7 @@ object ReposCreateFileEndpoint {
     if (author != null) __obj.updateDynamic("author")(author)
     if (branch != null) __obj.updateDynamic("branch")(branch)
     if (committer != null) __obj.updateDynamic("committer")(committer)
+    if (sha != null) __obj.updateDynamic("sha")(sha)
     __obj.asInstanceOf[ReposCreateFileEndpoint]
   }
 }

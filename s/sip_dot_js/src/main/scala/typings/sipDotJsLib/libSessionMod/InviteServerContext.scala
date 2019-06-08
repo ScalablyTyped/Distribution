@@ -39,6 +39,14 @@ class InviteServerContext protected () extends Session {
     */
   var _progress: js.Any = js.native
   /**
+    * A version of `progress` which resolves when the provisional response with sdp is sent.
+    * @param options Options bucket.
+    * @throws {ClosedSessionDescriptionHandlerError} The session description handler closed before method completed.
+    * @throws {TransactionStateError} The transaction state does not allow for `progress()` to be called.
+    *                                 Note that the transaction state can change while this call is in progress.
+    */
+  var _progressWithSDP: js.Any = js.native
+  /**
     * A version of `progress` which resolves when the reliable provisional response is sent.
     * @param options Options bucket.
     * @throws {ClosedSessionDescriptionHandlerError} The session description handler closed before method completed.

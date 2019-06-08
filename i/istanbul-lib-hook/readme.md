@@ -1,7 +1,7 @@
 
 # Scala.js typings for istanbul-lib-hook
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Hooks for require, vm and script used in istanbul
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for istanbul-lib-hook 1.0
+// Type definitions for istanbul-lib-hook 2.0
 // Project: https://istanbul.js.org, https://github.com/istanbuljs/istanbuljs
 // Definitions by: Jason Cheatham <https://github.com/jason0x43>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

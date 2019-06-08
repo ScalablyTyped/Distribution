@@ -80,6 +80,8 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     *
+    * The response also includes details on the files that were changed between the two commits. This includes the status of the change (for example, if a file was added, removed, modified, or renamed), and details of the change itself. For example, files with a `renamed` status have a `previous_filename` field showing the previous filename of the file, and files with a `modified` status have a `patch` field showing the changes made to the file.
+    *
     * **Working with large comparisons**
     *
     * The response will include a comparison of up to 250 commits. If you are working with a larger commit range, you can use the [Commit List API](https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository) to enumerate all commits in the range.
@@ -111,6 +113,8 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("compareCommits")
   var compareCommits_Original: Anon_EndpointParamsPromiseReposCompareCommitsParams = js.native
   /**
+    * Create a comment for a commit using its `:commit_sha`.
+    *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createCommitComment")
@@ -158,7 +162,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("createDeployment")
   var createDeployment_Original: Anon_EndpointParamsAnyResponsePromiseReposCreateDeploymentParams = js.native
   /**
-    * Creates a new file in a repository.
+    * Creates a new file or updates an existing file in a repository.
     */
   @JSName("createFile")
   var createFile_Original: Anon_EndpointParamsPromiseReposCreateFileParams = js.native
@@ -200,6 +204,11 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   @JSName("createInOrg")
   var createInOrg_Original: Anon_EndpointParamsPromiseReposCreateInOrgParams = js.native
+  /**
+    * Creates a new file or updates an existing file in a repository.
+    */
+  @JSName("createOrUpdateFile")
+  var createOrUpdateFile_Original: Anon_EndpointParamsPromiseReposCreateOrUpdateFileParams = js.native
   /**
     * Users with push access to the repository can create a release.
     *
@@ -249,6 +258,11 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   @JSName("delete")
   var delete_Original: Anon_EndpointParamsPromiseReposDeleteParams = js.native
+  /**
+    * Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
+    */
+  @JSName("disableAutomatedSecurityFixes")
+  var disableAutomatedSecurityFixes_Original: Anon_EndpointParamsPromiseReposDisableAutomatedSecurityFixesParams = js.native
   @JSName("disablePagesSite")
   var disablePagesSite_Original: Anon_EndpointParamsPromiseReposDisablePagesSiteParams = js.native
   /**
@@ -256,6 +270,11 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   @JSName("disableVulnerabilityAlerts")
   var disableVulnerabilityAlerts_Original: Anon_EndpointParamsPromiseReposDisableVulnerabilityAlertsParams = js.native
+  /**
+    * Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
+    */
+  @JSName("enableAutomatedSecurityFixes")
+  var enableAutomatedSecurityFixes_Original: Anon_EndpointParamsPromiseReposEnableAutomatedSecurityFixesParams = js.native
   @JSName("enablePagesSite")
   var enablePagesSite_Original: Anon_EndpointParamsPromiseReposEnablePagesSiteParams = js.native
   /**
@@ -525,6 +544,9 @@ trait Anon_AcceptInvitation extends js.Object {
     */
   @JSName("listCollaborators")
   var listCollaborators_Original: Anon_EndpointParamsPromiseReposListCollaboratorsParams = js.native
+  /**
+    * Use the `:commit_sha` to specify the commit that will have its comments listed.
+    */
   @JSName("listCommentsForCommit")
   var listCommentsForCommit_Original: Anon_EndpointParamsPromiseReposListCommentsForCommitParams = js.native
   /**
@@ -810,7 +832,7 @@ trait Anon_AcceptInvitation extends js.Object {
   @JSName("updateCommitComment")
   var updateCommitComment_Original: Anon_EndpointParamsPromiseReposUpdateCommitCommentParams = js.native
   /**
-    * Updates a file in a repository.
+    * Creates a new file or updates an existing file in a repository.
     */
   @JSName("updateFile")
   var updateFile_Original: Anon_EndpointParamsPromiseReposUpdateFileParams = js.native
@@ -985,6 +1007,8 @@ trait Anon_AcceptInvitation extends js.Object {
     *
     * The response from the API is equivalent to running the `git log base..head` command; however, commits are returned in chronological order. Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     *
+    * The response also includes details on the files that were changed between the two commits. This includes the status of the change (for example, if a file was added, removed, modified, or renamed), and details of the change itself. For example, files with a `renamed` status have a `previous_filename` field showing the previous filename of the file, and files with a `modified` status have a `patch` field showing the changes made to the file.
+    *
     * **Working with large comparisons**
     *
     * The response will include a comparison of up to 250 commits. If you are working with a larger commit range, you can use the [Commit List API](https://developer.github.com/v3/repos/commits/#list-commits-on-a-repository) to enumerate all commits in the range.
@@ -1020,12 +1044,17 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCompareCommitsResponse]
   ] = js.native
   /**
+    * Create a comment for a commit using its `:commit_sha`.
+    *
     * This endpoint triggers [notifications](https://help.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def createCommitComment(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateCommitCommentResponse]
   ] = js.native
   def createCommitComment(params: atOctokitRestLib.atOctokitRestMod.ReposCreateCommitCommentParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateCommitCommentResponse]
+  ] = js.native
+  def createCommitComment(params: atOctokitRestLib.atOctokitRestMod.ReposCreateCommitCommentParamsDeprecatedSha): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateCommitCommentResponse]
   ] = js.native
   /**
@@ -1075,7 +1104,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateDeploymentStatusResponse]
   ] = js.native
   /**
-    * Creates a new file in a repository.
+    * Creates a new file or updates an existing file in a repository.
     */
   def createFile(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateFileResponse]
@@ -1136,6 +1165,15 @@ trait Anon_AcceptInvitation extends js.Object {
   ] = js.native
   def createInOrg(params: atOctokitRestLib.atOctokitRestMod.ReposCreateInOrgParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateInOrgResponse]
+  ] = js.native
+  /**
+    * Creates a new file or updates an existing file in a repository.
+    */
+  def createOrUpdateFile(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateOrUpdateFileResponse]
+  ] = js.native
+  def createOrUpdateFile(params: atOctokitRestLib.atOctokitRestMod.ReposCreateOrUpdateFileParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposCreateOrUpdateFileResponse]
   ] = js.native
   /**
     * Users with push access to the repository can create a release.
@@ -1230,6 +1268,15 @@ trait Anon_AcceptInvitation extends js.Object {
   def deleteReleaseAsset(params: atOctokitRestLib.atOctokitRestMod.ReposDeleteReleaseAssetParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDeleteReleaseAssetResponse]
   ] = js.native
+  /**
+    * Disables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
+    */
+  def disableAutomatedSecurityFixes(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDisableAutomatedSecurityFixesResponse]
+  ] = js.native
+  def disableAutomatedSecurityFixes(params: atOctokitRestLib.atOctokitRestMod.ReposDisableAutomatedSecurityFixesParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDisableAutomatedSecurityFixesResponse]
+  ] = js.native
   def disablePagesSite(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDisablePagesSiteResponse]
   ] = js.native
@@ -1244,6 +1291,15 @@ trait Anon_AcceptInvitation extends js.Object {
   ] = js.native
   def disableVulnerabilityAlerts(params: atOctokitRestLib.atOctokitRestMod.ReposDisableVulnerabilityAlertsParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposDisableVulnerabilityAlertsResponse]
+  ] = js.native
+  /**
+    * Enables automated security fixes for a repository. The authenticated user must have admin access to the repository. For more information, see "[Configuring automated security fixes](https://help.github.com/en/articles/configuring-automated-security-fixes)" in the GitHub Help documentation.
+    */
+  def enableAutomatedSecurityFixes(): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposEnableAutomatedSecurityFixesResponse]
+  ] = js.native
+  def enableAutomatedSecurityFixes(params: atOctokitRestLib.atOctokitRestMod.ReposEnableAutomatedSecurityFixesParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposEnableAutomatedSecurityFixesResponse]
   ] = js.native
   def enablePagesSite(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposEnablePagesSiteResponse]
@@ -1686,10 +1742,16 @@ trait Anon_AcceptInvitation extends js.Object {
   def listCollaborators(params: atOctokitRestLib.atOctokitRestMod.ReposListCollaboratorsParams): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCollaboratorsResponse]
   ] = js.native
+  /**
+    * Use the `:commit_sha` to specify the commit that will have its comments listed.
+    */
   def listCommentsForCommit(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCommentsForCommitResponse]
   ] = js.native
   def listCommentsForCommit(params: atOctokitRestLib.atOctokitRestMod.ReposListCommentsForCommitParams): js.Promise[
+    atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCommentsForCommitResponse]
+  ] = js.native
+  def listCommentsForCommit(params: atOctokitRestLib.atOctokitRestMod.ReposListCommentsForCommitParamsDeprecatedRef): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposListCommentsForCommitResponse]
   ] = js.native
   /**
@@ -2173,7 +2235,7 @@ trait Anon_AcceptInvitation extends js.Object {
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposUpdateCommitCommentResponse]
   ] = js.native
   /**
-    * Updates a file in a repository.
+    * Creates a new file or updates an existing file in a repository.
     */
   def updateFile(): js.Promise[
     atOctokitRestLib.atOctokitRestMod.Response[atOctokitRestLib.atOctokitRestMod.ReposUpdateFileResponse]

@@ -36,7 +36,7 @@ trait CSSTransitionProps
 object CSSTransitionProps {
   @scala.inline
   def apply(
-    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter,
+    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear,
     addEndListener: reactDashTransitionDashGroupLib.transitionMod.EndHandler = null,
     appear: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactDashTransitionDashGroupLib.transitionMod.TransitionChildren = null,

@@ -42,6 +42,7 @@ These comments are from the typescript definitions and might be useful:
 //                  Gabriel Fournier <https://github.com/carboneater>
 //                  Niek van Bennekom <https://github.com/niekvb>
 //                  John L. Singleton <https://github.com/jsinglet>
+//                  Lindsay Wardell <https://github.com/lindsaykwardell>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 

@@ -23990,6 +23990,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod._ResourceType
   
   @js.native
+  sealed trait `direct-connect-gateway`
+    extends awsDashSdkLib.clientsEc2Mod._TransitGatewayAttachmentResourceType
+  
+  @js.native
   sealed trait `directory-service-authentication`
     extends awsDashSdkLib.clientsEc2Mod._ClientVpnAuthenticationType
   
@@ -38723,6 +38727,8 @@ object awsDashSdkLibStrings {
   def devpay: devpay = "devpay".asInstanceOf[devpay]
   @scala.inline
   def `dhcp-options`: `dhcp-options` = "dhcp-options".asInstanceOf[`dhcp-options`]
+  @scala.inline
+  def `direct-connect-gateway`: `direct-connect-gateway` = "direct-connect-gateway".asInstanceOf[`direct-connect-gateway`]
   @scala.inline
   def `directory-service-authentication`: `directory-service-authentication` = "directory-service-authentication".asInstanceOf[`directory-service-authentication`]
   @scala.inline

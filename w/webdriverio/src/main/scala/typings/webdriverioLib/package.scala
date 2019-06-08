@@ -15,21 +15,20 @@ package object webdriverioLib {
   ]
   // Browser commands wrapper with Promise
   type BrowserAsync = webdriverioLib.webdriverioLibStrings.BrowserAsync with js.Any with AsyncSelectors
-  type BrowserObject = webdriverLib.WebDriverNs.ClientOptions with webdriverLib.WebDriverNs.ClientAsync with webdriverioLib.WebdriverIOAsyncNs.Browser
   // Browser commands that should be wrapper with Promise
-  type BrowserPromise = webdriverLib.WdioOmit[
+  type BrowserPromise = stdLib.Omit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ js.Any, 
-    webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.options | webdriverioLib.webdriverioLibStrings.DOLLAR | webdriverioLib.webdriverioLibStrings.DOLLARDOLLAR
+    webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.overwriteCommand | webdriverioLib.webdriverioLibStrings.options | webdriverioLib.webdriverioLibStrings.DOLLAR | webdriverioLib.webdriverioLibStrings.DOLLARDOLLAR
   ]
   // Browser commands that should not be wrapper with promise
   type BrowserStatic = stdLib.Pick[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Browser */ js.Any, 
-    webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.options
+    webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.overwriteCommand | webdriverioLib.webdriverioLibStrings.options
   ]
   // Element commands wrapper with Promise
   type ElementAsync = webdriverioLib.webdriverioLibStrings.ElementAsync with js.Any with AsyncSelectors
   // Element commands that should be wrapper with Promise
-  type ElementPromise = webdriverLib.WdioOmit[
+  type ElementPromise = stdLib.Omit[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WebdriverIO.Element */ js.Any, 
     webdriverioLib.webdriverioLibStrings.addCommand | webdriverioLib.webdriverioLibStrings.DOLLAR | webdriverioLib.webdriverioLibStrings.DOLLARDOLLAR
   ]

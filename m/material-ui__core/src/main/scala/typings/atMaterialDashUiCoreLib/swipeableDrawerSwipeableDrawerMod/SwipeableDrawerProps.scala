@@ -320,7 +320,7 @@ trait SwipeableDrawerProps extends js.Object {
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var theme: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Appear] = js.undefined
   var typeof: js.UndefOr[java.lang.String] = js.undefined
   var unselectable: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off
@@ -544,7 +544,7 @@ object SwipeableDrawerProps {
     tabIndex: scala.Int | scala.Double = null,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null,
     title: java.lang.String = null,
-    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null,
+    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear = null,
     typeof: java.lang.String = null,
     unselectable: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off = null,
     variant: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.permanent | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.persistent | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.temporary = null,

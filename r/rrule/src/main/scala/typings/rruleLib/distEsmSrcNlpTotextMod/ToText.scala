@@ -13,6 +13,7 @@ trait ToText extends js.Object {
   var _byweekday: js.Any = js.native
   var bymonthday: js.Any = js.native
   var byweekday: js.Any = js.native
+  var dateFormatter: js.Any = js.native
   var gettext: js.Any = js.native
   var language: js.Any = js.native
   var options: js.Any = js.native

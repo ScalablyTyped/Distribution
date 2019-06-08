@@ -156,7 +156,11 @@ abstract class Session protected ()
   @JSName("on")
   def on_progress(
     event: sipDotJsLib.sipDotJsLibStrings.progress,
-    listener: js.Function2[/* response */ java.lang.String, /* reasonPhrase */ js.UndefOr[js.Any], scala.Unit]
+    listener: js.Function2[
+      /* response */ sipDotJsLib.libCoreMod.IncomingResponseMessage | java.lang.String, 
+      /* reasonPhrase */ js.UndefOr[js.Any], 
+      scala.Unit
+    ]
   ): this.type = js.native
   @JSName("on")
   def on_referRequested(

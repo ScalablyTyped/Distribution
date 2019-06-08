@@ -29,6 +29,10 @@ trait ReposCreateFileParams extends js.Object {
   var owner: java.lang.String
   var path: java.lang.String
   var repo: java.lang.String
+  /**
+    * **Required if you are updating a file**. The blob SHA of the file being replaced.
+    */
+  var sha: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object ReposCreateFileParams {
@@ -41,12 +45,14 @@ object ReposCreateFileParams {
     repo: java.lang.String,
     author: ReposCreateFileParamsAuthor = null,
     branch: java.lang.String = null,
-    committer: ReposCreateFileParamsCommitter = null
+    committer: ReposCreateFileParamsCommitter = null,
+    sha: java.lang.String = null
   ): ReposCreateFileParams = {
     val __obj = js.Dynamic.literal(content = content, message = message, owner = owner, path = path, repo = repo)
     if (author != null) __obj.updateDynamic("author")(author)
     if (branch != null) __obj.updateDynamic("branch")(branch)
     if (committer != null) __obj.updateDynamic("committer")(committer)
+    if (sha != null) __obj.updateDynamic("sha")(sha)
     __obj.asInstanceOf[ReposCreateFileParams]
   }
 }

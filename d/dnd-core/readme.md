@@ -1,7 +1,7 @@
 
 # Scala.js typings for dnd-core
 
-Typings are for version 7.4.4
+Typings are for version 7.6.0
 
 ## Library description:
 Drag and drop sans the GUI

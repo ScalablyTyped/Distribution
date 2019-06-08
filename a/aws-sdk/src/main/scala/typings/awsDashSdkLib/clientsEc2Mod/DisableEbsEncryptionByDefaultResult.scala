@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DisableEbsEncryptionByDefaultResult extends js.Object {
   /**
-    * Account-level encryption status after performing the action.
+    * The updated status of encryption by default.
     */
   var EbsEncryptionByDefault: js.UndefOr[Boolean] = js.undefined
 }

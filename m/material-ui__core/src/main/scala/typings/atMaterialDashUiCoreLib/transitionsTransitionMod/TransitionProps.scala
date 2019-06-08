@@ -34,7 +34,7 @@ trait TransitionProps extends js.Object {
   var onExited: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler] = js.undefined
   var onExiting: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
-  var timeout: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
+  var timeout: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Appear] = js.undefined
   var unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -54,7 +54,7 @@ object TransitionProps {
     onExited: reactDashTransitionDashGroupLib.transitionMod.ExitHandler = null,
     onExiting: reactDashTransitionDashGroupLib.transitionMod.ExitHandler = null,
     style: reactLib.reactMod.CSSProperties = null,
-    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null,
+    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear = null,
     unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
   ): TransitionProps = {
     val __obj = js.Dynamic.literal()

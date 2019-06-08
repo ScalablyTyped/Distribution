@@ -11,7 +11,7 @@ trait SnapshotInfo extends js.Object {
     */
   var Description: js.UndefOr[String] = js.undefined
   /**
-    * Boolean that specifies whether or not this snapshot is encrypted.
+    * Indicates whether the snapshot is encrypted.
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   /**

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-dnd-multi-backend"
-version := "3.0-dt-20190306Z-8e4ff3"
+version := "3.0-dt-20190306Z-40c188"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
   "org.scalablytyped" %%% "csstype" % "2.6.5-8a2cd0",
-  "org.scalablytyped" %%% "dnd-core" % "7.4.4-5dd8c6",
+  "org.scalablytyped" %%% "dnd-core" % "7.6.0-5dd8c6",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c843c9",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1fde1d",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")

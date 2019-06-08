@@ -19,7 +19,7 @@ trait Volume extends js.Object {
     */
   var CreateTime: js.UndefOr[DateTime] = js.undefined
   /**
-    * Indicates whether the volume will be encrypted.
+    * Indicates whether the volume is encrypted.
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   /**
@@ -27,7 +27,7 @@ trait Volume extends js.Object {
     */
   var Iops: js.UndefOr[Integer] = js.undefined
   /**
-    * The full ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the volume.
+    * The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the volume.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**

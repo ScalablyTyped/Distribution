@@ -1438,6 +1438,7 @@ package object clientsEc2Mod {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.vpc
     - awsDashSdkLib.awsDashSdkLibStrings.vpn
+    - awsDashSdkLib.awsDashSdkLibStrings.`direct-connect-gateway`
     - java.lang.String
   */
   type TransitGatewayAttachmentResourceType = _TransitGatewayAttachmentResourceType | java.lang.String

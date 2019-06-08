@@ -54,7 +54,7 @@ trait RRule
     value: stdLib.Date,
     args: stdLib.Partial[rruleLib.distEsmSrcIterresultMod.IterArgs]
   ): scala.Unit = js.native
-  /* protected */ def _iter[M /* <: rruleLib.distEsmSrcTypesMod.QueryMethodTypes */](iterResult: rruleLib.distEsmSrcIterresultMod.default[M]): js.Any = js.native
+  /* protected */ def _iter[M /* <: rruleLib.distEsmSrcTypesMod.QueryMethodTypes */](iterResult: rruleLib.distEsmSrcIterresultMod.default[M]): rruleLib.distEsmSrcTypesMod.IterResultType[M] = js.native
   /**
     * Returns the first recurrence after the given datetime instance.
     * The inc keyword defines what happens if dt is an occurrence.
@@ -97,5 +97,10 @@ trait RRule
   def toText(): java.lang.String = js.native
   def toText(gettext: rruleLib.distEsmSrcNlpTotextMod.GetText): java.lang.String = js.native
   def toText(gettext: rruleLib.distEsmSrcNlpTotextMod.GetText, language: rruleLib.distEsmSrcNlpI18nMod.Language): java.lang.String = js.native
+  def toText(
+    gettext: rruleLib.distEsmSrcNlpTotextMod.GetText,
+    language: rruleLib.distEsmSrcNlpI18nMod.Language,
+    dateFormatter: rruleLib.distEsmSrcNlpTotextMod.DateFormatter
+  ): java.lang.String = js.native
 }
 

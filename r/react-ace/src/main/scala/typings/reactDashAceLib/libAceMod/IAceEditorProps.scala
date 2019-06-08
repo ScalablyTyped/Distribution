@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IAceEditorProps
-  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+trait IAceEditorProps extends js.Object {
   var annotations: js.UndefOr[js.Array[braceLib.braceMod.Annotation]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var commands: js.UndefOr[js.Array[reactDashAceLib.libTypesMod.ICommand]] = js.undefined
@@ -16,6 +15,7 @@ trait IAceEditorProps
   var editorProps: js.UndefOr[reactDashAceLib.libTypesMod.IEditorProps] = js.undefined
   var enableBasicAutocompletion: js.UndefOr[scala.Boolean | js.Array[java.lang.String]] = js.undefined
   var enableLiveAutocompletion: js.UndefOr[scala.Boolean | js.Array[java.lang.String]] = js.undefined
+  var enableSnippets: js.UndefOr[scala.Boolean] = js.undefined
   var focus: js.UndefOr[scala.Boolean] = js.undefined
   var fontSize: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var height: js.UndefOr[java.lang.String] = js.undefined
@@ -65,7 +65,7 @@ trait IAceEditorProps
   var setOptions: js.UndefOr[reactDashAceLib.libTypesMod.IAceOptions] = js.undefined
   var showGutter: js.UndefOr[scala.Boolean] = js.undefined
   var showPrintMargin: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.Any
+  var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var tabSize: js.UndefOr[scala.Double] = js.undefined
   /** For available themes see https://github.com/thlorenz/brace/tree/master/theme */
   var theme: js.UndefOr[java.lang.String] = js.undefined
@@ -77,8 +77,6 @@ trait IAceEditorProps
 object IAceEditorProps {
   @scala.inline
   def apply(
-    style: js.Any,
-    StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     annotations: js.Array[braceLib.braceMod.Annotation] = null,
     className: java.lang.String = null,
     commands: js.Array[reactDashAceLib.libTypesMod.ICommand] = null,
@@ -88,6 +86,7 @@ object IAceEditorProps {
     editorProps: reactDashAceLib.libTypesMod.IEditorProps = null,
     enableBasicAutocompletion: scala.Boolean | js.Array[java.lang.String] = null,
     enableLiveAutocompletion: scala.Boolean | js.Array[java.lang.String] = null,
+    enableSnippets: js.UndefOr[scala.Boolean] = js.undefined,
     focus: js.UndefOr[scala.Boolean] = js.undefined,
     fontSize: scala.Double | java.lang.String = null,
     height: java.lang.String = null,
@@ -118,14 +117,14 @@ object IAceEditorProps {
     setOptions: reactDashAceLib.libTypesMod.IAceOptions = null,
     showGutter: js.UndefOr[scala.Boolean] = js.undefined,
     showPrintMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.CSSProperties = null,
     tabSize: scala.Int | scala.Double = null,
     theme: java.lang.String = null,
     value: java.lang.String = null,
     width: java.lang.String = null,
     wrapEnabled: js.UndefOr[scala.Boolean] = js.undefined
   ): IAceEditorProps = {
-    val __obj = js.Dynamic.literal(style = style)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    val __obj = js.Dynamic.literal()
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (className != null) __obj.updateDynamic("className")(className)
     if (commands != null) __obj.updateDynamic("commands")(commands)
@@ -135,6 +134,7 @@ object IAceEditorProps {
     if (editorProps != null) __obj.updateDynamic("editorProps")(editorProps)
     if (enableBasicAutocompletion != null) __obj.updateDynamic("enableBasicAutocompletion")(enableBasicAutocompletion.asInstanceOf[js.Any])
     if (enableLiveAutocompletion != null) __obj.updateDynamic("enableLiveAutocompletion")(enableLiveAutocompletion.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableSnippets)) __obj.updateDynamic("enableSnippets")(enableSnippets)
     if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height)
@@ -165,6 +165,7 @@ object IAceEditorProps {
     if (setOptions != null) __obj.updateDynamic("setOptions")(setOptions)
     if (!js.isUndefined(showGutter)) __obj.updateDynamic("showGutter")(showGutter)
     if (!js.isUndefined(showPrintMargin)) __obj.updateDynamic("showPrintMargin")(showPrintMargin)
+    if (style != null) __obj.updateDynamic("style")(style)
     if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)
     if (value != null) __obj.updateDynamic("value")(value)

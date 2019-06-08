@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-http-proxy"
-version := "1.5-dt-20190520Z-2836ef"
+version := "1.5-dt-20190608Z-80657c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

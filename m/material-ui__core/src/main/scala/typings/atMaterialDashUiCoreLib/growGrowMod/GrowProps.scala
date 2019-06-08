@@ -22,7 +22,7 @@ trait GrowProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var theme: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme] = js.undefined
   var timeout: js.UndefOr[
-    scala.Double | reactDashTransitionDashGroupLib.Anon_Enter | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto
+    scala.Double | reactDashTransitionDashGroupLib.Anon_Appear | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto
   ] = js.undefined
   var unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -44,7 +44,7 @@ object GrowProps {
     onExiting: reactDashTransitionDashGroupLib.transitionMod.ExitHandler = null,
     style: reactLib.reactMod.CSSProperties = null,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null,
-    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null,
+    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null,
     unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
   ): GrowProps = {
     val __obj = js.Dynamic.literal()

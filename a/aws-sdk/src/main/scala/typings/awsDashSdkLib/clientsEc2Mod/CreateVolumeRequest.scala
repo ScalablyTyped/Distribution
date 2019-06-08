@@ -15,7 +15,7 @@ trait CreateVolumeRequest extends js.Object {
     */
   var DryRun: js.UndefOr[Boolean] = js.undefined
   /**
-    * Specifies the encryption state of the volume. The default effect of setting the Encrypted parameter to true depends on the volume origin (new or from a snapshot), starting encryption state, ownership, and whether account-level encryption is enabled. Each default case can be overridden by specifying a customer master key (CMK) using the KmsKeyId parameter, in addition to setting Encrypted to true. For a complete list of possible encryption cases, see Amazon EBS Encryption. Encrypted Amazon EBS volumes may only be attached to instances that support Amazon EBS encryption. For more information, see Supported Instance Types.
+    * Specifies whether the volume should be encrypted. The effect of setting the encryption state to true depends on the volume origin (new or from a snapshot), starting encryption state, ownership, and whether encryption by default is enabled. For more information, see Encryption by Default in the Amazon Elastic Compute Cloud User Guide. Encrypted Amazon EBS volumes must be attached to instances that support Amazon EBS encryption. For more information, see Supported Instance Types.
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   /**
@@ -23,7 +23,7 @@ trait CreateVolumeRequest extends js.Object {
     */
   var Iops: js.UndefOr[Integer] = js.undefined
   /**
-    * An identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) to use to encrypt the volume. This parameter is only required if you want to use a customer-managed CMK; if this parameter is not specified, your AWS-managed CMK for the account is used. If a KmsKeyId is specified, the Encrypted flag must also be set.  The CMK identifier may be provided in any of the following formats:    Key ID: For example, key/1234abcd-12ab-34cd-56ef-1234567890ab.   Key alias: For example, alias/ExampleAlias.    Key ARN: The key ARN contains the arn:aws:kms namespace, followed by the Region of the CMK, the AWS account ID of the CMK owner, the key namespace, and then the CMK ID. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.    Alias ARN: The alias ARN contains the arn:aws:kms namespace, followed by the Region of the CMK, the AWS account ID of the CMK owner, the alias namespace, and then the CMK alias. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.    AWS authenticates KmsKeyId asynchronously, meaning that the action you call may appear to complete even though you provided an invalid identifier. The action will eventually fail. 
+    * The identifier of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use for Amazon EBS encryption. If this parameter is not specified, your AWS managed CMK for EBS is used. If KmsKeyId is specified, the encrypted state must be true. You can specify the CMK using any of the following:   Key ID. For example, key/1234abcd-12ab-34cd-56ef-1234567890ab.   Key alias. For example, alias/ExampleAlias.   Key ARN. For example, arn:aws:kms:us-east-1:012345678910:key/abcd1234-a123-456a-a12b-a123b4cd56ef.   Alias ARN. For example, arn:aws:kms:us-east-1:012345678910:alias/ExampleAlias.   AWS authenticates the CMK asynchronously. Therefore, if you specify an ID, alias, or ARN that is not valid, the action can appear to complete, but eventually fails.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**

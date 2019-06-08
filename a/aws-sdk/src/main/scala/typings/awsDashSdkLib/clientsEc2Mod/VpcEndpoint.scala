@@ -23,6 +23,10 @@ trait VpcEndpoint extends js.Object {
     */
   var NetworkInterfaceIds: js.UndefOr[ValueStringList] = js.undefined
   /**
+    * The ID of the AWS account that owns the VPC endpoint.
+    */
+  var OwnerId: js.UndefOr[String] = js.undefined
+  /**
     * The policy document associated with the endpoint, if applicable.
     */
   var PolicyDocument: js.UndefOr[String] = js.undefined
@@ -75,6 +79,7 @@ object VpcEndpoint {
     DnsEntries: DnsEntrySet = null,
     Groups: GroupIdentifierSet = null,
     NetworkInterfaceIds: ValueStringList = null,
+    OwnerId: String = null,
     PolicyDocument: String = null,
     PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined,
     RequesterManaged: js.UndefOr[Boolean] = js.undefined,
@@ -92,6 +97,7 @@ object VpcEndpoint {
     if (DnsEntries != null) __obj.updateDynamic("DnsEntries")(DnsEntries)
     if (Groups != null) __obj.updateDynamic("Groups")(Groups)
     if (NetworkInterfaceIds != null) __obj.updateDynamic("NetworkInterfaceIds")(NetworkInterfaceIds)
+    if (OwnerId != null) __obj.updateDynamic("OwnerId")(OwnerId)
     if (PolicyDocument != null) __obj.updateDynamic("PolicyDocument")(PolicyDocument)
     if (!js.isUndefined(PrivateDnsEnabled)) __obj.updateDynamic("PrivateDnsEnabled")(PrivateDnsEnabled)
     if (!js.isUndefined(RequesterManaged)) __obj.updateDynamic("RequesterManaged")(RequesterManaged)

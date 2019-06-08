@@ -322,7 +322,7 @@ trait DialogProps extends js.Object {
   var suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
-  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Appear] = js.undefined
   var typeof: js.UndefOr[java.lang.String] = js.undefined
   var unselectable: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off
@@ -537,7 +537,7 @@ object DialogProps {
     suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined,
     tabIndex: scala.Int | scala.Double = null,
     title: java.lang.String = null,
-    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null,
+    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear = null,
     typeof: java.lang.String = null,
     unselectable: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off = null,
     vocab: java.lang.String = null

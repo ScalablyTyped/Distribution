@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ImportImageTask extends js.Object {
   /**
-    * The architecture of the virtual machine. Valid values: i386 | x86_64 
+    * The architecture of the virtual machine. Valid values: i386 | x86_64 | arm64 
     */
   var Architecture: js.UndefOr[String] = js.undefined
   /**

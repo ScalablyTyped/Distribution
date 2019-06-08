@@ -86,6 +86,9 @@ object atOctokitEndpointLibStrings {
   sealed trait `DELETE /repos/:owner/:repo` extends js.Object
   
   @js.native
+  sealed trait `DELETE /repos/:owner/:repo/automated-security-fixes` extends js.Object
+  
+  @js.native
   sealed trait `DELETE /repos/:owner/:repo/branches/:branch/protection` extends js.Object
   
   @js.native
@@ -570,6 +573,9 @@ object atOctokitEndpointLibStrings {
   sealed trait `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head` extends js.Object
   
   @js.native
+  sealed trait `GET /repos/:owner/:repo/commits/:commit_sha/comments` extends js.Object
+  
+  @js.native
   sealed trait `GET /repos/:owner/:repo/commits/:commit_sha/pulls` extends js.Object
   
   @js.native
@@ -580,9 +586,6 @@ object atOctokitEndpointLibStrings {
   
   @js.native
   sealed trait `GET /repos/:owner/:repo/commits/:ref/check-suites` extends js.Object
-  
-  @js.native
-  sealed trait `GET /repos/:owner/:repo/commits/:ref/comments` extends js.Object
   
   @js.native
   sealed trait `GET /repos/:owner/:repo/commits/:ref/status` extends js.Object
@@ -1299,7 +1302,7 @@ object atOctokitEndpointLibStrings {
   sealed trait `POST /repos/:owner/:repo/comments/:comment_id/reactions` extends js.Object
   
   @js.native
-  sealed trait `POST /repos/:owner/:repo/commits/:sha/comments` extends js.Object
+  sealed trait `POST /repos/:owner/:repo/commits/:commit_sha/comments` extends js.Object
   
   @js.native
   sealed trait `POST /repos/:owner/:repo/deployments` extends js.Object
@@ -1474,6 +1477,9 @@ object atOctokitEndpointLibStrings {
   sealed trait `PUT /projects/:project_id/collaborators/:username` extends js.Object
   
   @js.native
+  sealed trait `PUT /repos/:owner/:repo/automated-security-fixes` extends js.Object
+  
+  @js.native
   sealed trait `PUT /repos/:owner/:repo/branches/:branch/protection` extends js.Object
   
   @js.native
@@ -1517,6 +1523,9 @@ object atOctokitEndpointLibStrings {
   
   @js.native
   sealed trait `PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals` extends js.Object
+  
+  @js.native
+  sealed trait `PUT /repos/:owner/:repo/pulls/:pull_number/update-branch` extends js.Object
   
   @js.native
   sealed trait `PUT /repos/:owner/:repo/subscription` extends js.Object
@@ -1609,6 +1618,8 @@ object atOctokitEndpointLibStrings {
   def `DELETE /reactions/:reaction_id`: `DELETE /reactions/:reaction_id` = "DELETE /reactions/:reaction_id".asInstanceOf[`DELETE /reactions/:reaction_id`]
   @scala.inline
   def `DELETE /repos/:owner/:repo`: `DELETE /repos/:owner/:repo` = "DELETE /repos/:owner/:repo".asInstanceOf[`DELETE /repos/:owner/:repo`]
+  @scala.inline
+  def `DELETE /repos/:owner/:repo/automated-security-fixes`: `DELETE /repos/:owner/:repo/automated-security-fixes` = "DELETE /repos/:owner/:repo/automated-security-fixes".asInstanceOf[`DELETE /repos/:owner/:repo/automated-security-fixes`]
   @scala.inline
   def `DELETE /repos/:owner/:repo/branches/:branch/protection`: `DELETE /repos/:owner/:repo/branches/:branch/protection` = "DELETE /repos/:owner/:repo/branches/:branch/protection".asInstanceOf[`DELETE /repos/:owner/:repo/branches/:branch/protection`]
   @scala.inline
@@ -1932,6 +1943,8 @@ object atOctokitEndpointLibStrings {
   @scala.inline
   def `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head`: `GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head` = "GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head".asInstanceOf[`GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head`]
   @scala.inline
+  def `GET /repos/:owner/:repo/commits/:commit_sha/comments`: `GET /repos/:owner/:repo/commits/:commit_sha/comments` = "GET /repos/:owner/:repo/commits/:commit_sha/comments".asInstanceOf[`GET /repos/:owner/:repo/commits/:commit_sha/comments`]
+  @scala.inline
   def `GET /repos/:owner/:repo/commits/:commit_sha/pulls`: `GET /repos/:owner/:repo/commits/:commit_sha/pulls` = "GET /repos/:owner/:repo/commits/:commit_sha/pulls".asInstanceOf[`GET /repos/:owner/:repo/commits/:commit_sha/pulls`]
   @scala.inline
   def `GET /repos/:owner/:repo/commits/:ref`: `GET /repos/:owner/:repo/commits/:ref` = "GET /repos/:owner/:repo/commits/:ref".asInstanceOf[`GET /repos/:owner/:repo/commits/:ref`]
@@ -1939,8 +1952,6 @@ object atOctokitEndpointLibStrings {
   def `GET /repos/:owner/:repo/commits/:ref/check-runs`: `GET /repos/:owner/:repo/commits/:ref/check-runs` = "GET /repos/:owner/:repo/commits/:ref/check-runs".asInstanceOf[`GET /repos/:owner/:repo/commits/:ref/check-runs`]
   @scala.inline
   def `GET /repos/:owner/:repo/commits/:ref/check-suites`: `GET /repos/:owner/:repo/commits/:ref/check-suites` = "GET /repos/:owner/:repo/commits/:ref/check-suites".asInstanceOf[`GET /repos/:owner/:repo/commits/:ref/check-suites`]
-  @scala.inline
-  def `GET /repos/:owner/:repo/commits/:ref/comments`: `GET /repos/:owner/:repo/commits/:ref/comments` = "GET /repos/:owner/:repo/commits/:ref/comments".asInstanceOf[`GET /repos/:owner/:repo/commits/:ref/comments`]
   @scala.inline
   def `GET /repos/:owner/:repo/commits/:ref/status`: `GET /repos/:owner/:repo/commits/:ref/status` = "GET /repos/:owner/:repo/commits/:ref/status".asInstanceOf[`GET /repos/:owner/:repo/commits/:ref/status`]
   @scala.inline
@@ -2416,7 +2427,7 @@ object atOctokitEndpointLibStrings {
   @scala.inline
   def `POST /repos/:owner/:repo/comments/:comment_id/reactions`: `POST /repos/:owner/:repo/comments/:comment_id/reactions` = "POST /repos/:owner/:repo/comments/:comment_id/reactions".asInstanceOf[`POST /repos/:owner/:repo/comments/:comment_id/reactions`]
   @scala.inline
-  def `POST /repos/:owner/:repo/commits/:sha/comments`: `POST /repos/:owner/:repo/commits/:sha/comments` = "POST /repos/:owner/:repo/commits/:sha/comments".asInstanceOf[`POST /repos/:owner/:repo/commits/:sha/comments`]
+  def `POST /repos/:owner/:repo/commits/:commit_sha/comments`: `POST /repos/:owner/:repo/commits/:commit_sha/comments` = "POST /repos/:owner/:repo/commits/:commit_sha/comments".asInstanceOf[`POST /repos/:owner/:repo/commits/:commit_sha/comments`]
   @scala.inline
   def `POST /repos/:owner/:repo/deployments`: `POST /repos/:owner/:repo/deployments` = "POST /repos/:owner/:repo/deployments".asInstanceOf[`POST /repos/:owner/:repo/deployments`]
   @scala.inline
@@ -2532,6 +2543,8 @@ object atOctokitEndpointLibStrings {
   @scala.inline
   def `PUT /projects/:project_id/collaborators/:username`: `PUT /projects/:project_id/collaborators/:username` = "PUT /projects/:project_id/collaborators/:username".asInstanceOf[`PUT /projects/:project_id/collaborators/:username`]
   @scala.inline
+  def `PUT /repos/:owner/:repo/automated-security-fixes`: `PUT /repos/:owner/:repo/automated-security-fixes` = "PUT /repos/:owner/:repo/automated-security-fixes".asInstanceOf[`PUT /repos/:owner/:repo/automated-security-fixes`]
+  @scala.inline
   def `PUT /repos/:owner/:repo/branches/:branch/protection`: `PUT /repos/:owner/:repo/branches/:branch/protection` = "PUT /repos/:owner/:repo/branches/:branch/protection".asInstanceOf[`PUT /repos/:owner/:repo/branches/:branch/protection`]
   @scala.inline
   def `PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`: `PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts` = "PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts".asInstanceOf[`PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts`]
@@ -2561,6 +2574,8 @@ object atOctokitEndpointLibStrings {
   def `PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`: `PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id` = "PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id".asInstanceOf[`PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id`]
   @scala.inline
   def `PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals`: `PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals` = "PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals".asInstanceOf[`PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals`]
+  @scala.inline
+  def `PUT /repos/:owner/:repo/pulls/:pull_number/update-branch`: `PUT /repos/:owner/:repo/pulls/:pull_number/update-branch` = "PUT /repos/:owner/:repo/pulls/:pull_number/update-branch".asInstanceOf[`PUT /repos/:owner/:repo/pulls/:pull_number/update-branch`]
   @scala.inline
   def `PUT /repos/:owner/:repo/subscription`: `PUT /repos/:owner/:repo/subscription` = "PUT /repos/:owner/:repo/subscription".asInstanceOf[`PUT /repos/:owner/:repo/subscription`]
   @scala.inline

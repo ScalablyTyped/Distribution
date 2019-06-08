@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   var onClose: js.UndefOr[reactLib.reactMod.ReactEventHandler[js.Object]] = js.undefined
   var open: scala.Boolean
   var openIcon: js.UndefOr[reactLib.reactMod.ReactNode] = js.undefined
-  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Appear] = js.undefined
 }
 
 object SpeedDialProps {
@@ -43,7 +43,7 @@ object SpeedDialProps {
     onClose: reactLib.reactMod.ReactEventHandler[js.Object] = null,
     openIcon: reactLib.reactMod.ReactNode = null,
     style: reactLib.reactMod.CSSProperties = null,
-    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null
+    transitionDuration: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear = null
   ): SpeedDialProps = {
     val __obj = js.Dynamic.literal(ariaLabel = ariaLabel, icon = icon.asInstanceOf[js.Any], open = open)
     if (ButtonProps != null) __obj.updateDynamic("ButtonProps")(ButtonProps)

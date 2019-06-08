@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-props"
-version := "3.0.0-3b7e90"
+version := "3.0.1-557f3f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

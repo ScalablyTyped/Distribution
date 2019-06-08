@@ -15,7 +15,7 @@ trait FleetLaunchTemplateSpecificationRequest extends js.Object {
     */
   var LaunchTemplateName: js.UndefOr[LaunchTemplateName] = js.undefined
   /**
-    * The version number of the launch template. 
+    * The version number of the launch template. Note: This is a required parameter and will be updated soon. 
     */
   var Version: js.UndefOr[String] = js.undefined
 }

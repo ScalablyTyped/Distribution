@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AppsCreateFromManifestResponse extends js.Object {
+  var client_id: java.lang.String
+  var client_secret: java.lang.String
   var created_at: java.lang.String
   var description: scala.Null
   var external_url: java.lang.String
@@ -22,6 +24,8 @@ trait AppsCreateFromManifestResponse extends js.Object {
 object AppsCreateFromManifestResponse {
   @scala.inline
   def apply(
+    client_id: java.lang.String,
+    client_secret: java.lang.String,
     created_at: java.lang.String,
     description: scala.Null,
     external_url: java.lang.String,
@@ -34,7 +38,7 @@ object AppsCreateFromManifestResponse {
     updated_at: java.lang.String,
     webhook_secret: java.lang.String
   ): AppsCreateFromManifestResponse = {
-    val __obj = js.Dynamic.literal(created_at = created_at, description = description, external_url = external_url, html_url = html_url, id = id, name = name, node_id = node_id, owner = owner, pem = pem, updated_at = updated_at, webhook_secret = webhook_secret)
+    val __obj = js.Dynamic.literal(client_id = client_id, client_secret = client_secret, created_at = created_at, description = description, external_url = external_url, html_url = html_url, id = id, name = name, node_id = node_id, owner = owner, pem = pem, updated_at = updated_at, webhook_secret = webhook_secret)
   
     __obj.asInstanceOf[AppsCreateFromManifestResponse]
   }

@@ -24,7 +24,7 @@ trait PartialSlideProps extends js.Object {
   var onExiting: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.ExitHandler] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   var theme: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme] = js.undefined
-  var timeout: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Enter] = js.undefined
+  var timeout: js.UndefOr[scala.Double | reactDashTransitionDashGroupLib.Anon_Appear] = js.undefined
   var unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -46,7 +46,7 @@ object PartialSlideProps {
     onExiting: reactDashTransitionDashGroupLib.transitionMod.ExitHandler = null,
     style: reactLib.reactMod.CSSProperties = null,
     theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null,
-    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter = null,
+    timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Appear = null,
     unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
   ): PartialSlideProps = {
     val __obj = js.Dynamic.literal()

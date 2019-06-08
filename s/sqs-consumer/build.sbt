@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sqs-consumer"
-version := "3.8-dt-20190322Z-408308"
+version := "3.8-dt-20190322Z-19bc60"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "aws-sdk" % "2.470.0-1a60b1",
+  "org.scalablytyped" %%% "aws-sdk" % "2.471.0-7a354e",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
   "org.scalablytyped" %%% "std" % "3.5-f010ac")
 publishArtifact in packageDoc := false

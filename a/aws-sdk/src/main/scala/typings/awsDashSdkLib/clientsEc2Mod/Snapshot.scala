@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Snapshot extends js.Object {
   /**
-    * The data encryption key identifier for the snapshot. This value is a unique identifier that corresponds to the data encryption key that was used to encrypt the original volume or snapshot copy. Because data encryption keys are inherited by volumes created from snapshots, and vice versa, if snapshots share the same data encryption key identifier, then they belong to the same volume/snapshot lineage. This parameter is only returned by the DescribeSnapshots API operation.
+    * The data encryption key identifier for the snapshot. This value is a unique identifier that corresponds to the data encryption key that was used to encrypt the original volume or snapshot copy. Because data encryption keys are inherited by volumes created from snapshots, and vice versa, if snapshots share the same data encryption key identifier, then they belong to the same volume/snapshot lineage. This parameter is only returned by DescribeSnapshots.
     */
   var DataEncryptionKeyId: js.UndefOr[String] = js.undefined
   /**
@@ -19,7 +19,7 @@ trait Snapshot extends js.Object {
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   /**
-    * The full ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the parent volume.
+    * The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the parent volume.
     */
   var KmsKeyId: js.UndefOr[String] = js.undefined
   /**
@@ -47,7 +47,7 @@ trait Snapshot extends js.Object {
     */
   var State: js.UndefOr[SnapshotState] = js.undefined
   /**
-    * Encrypted Amazon EBS snapshots are copied asynchronously. If a snapshot copy operation fails (for example, if the proper AWS Key Management Service (AWS KMS) permissions are not obtained) this field displays error state details to help you diagnose why the error occurred. This parameter is only returned by the DescribeSnapshots API operation.
+    * Encrypted Amazon EBS snapshots are copied asynchronously. If a snapshot copy operation fails (for example, if the proper AWS Key Management Service (AWS KMS) permissions are not obtained) this field displays error state details to help you diagnose why the error occurred. This parameter is only returned by DescribeSnapshots.
     */
   var StateMessage: js.UndefOr[String] = js.undefined
   /**

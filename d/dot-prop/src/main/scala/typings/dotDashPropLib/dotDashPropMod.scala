@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object dotDashPropMod extends js.Object {
   /**
-  	@param object Object to delete the `path` value.
+  	@param object - Object to delete the `path` value.
   	@param path - Path of the property in the object, using `.` to separate each nested key. Use `\\.` if you have a `.` in the key.
   	@example
   	```

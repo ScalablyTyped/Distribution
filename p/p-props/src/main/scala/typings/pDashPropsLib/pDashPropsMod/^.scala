@@ -58,12 +58,12 @@ object ^ extends js.Object {
   })();
   ```
   */
-  def apply[KeyType /* <: js.Any */, ValueType /* <: js.Any */, MappedValueType](map: stdLib.Map[KeyType, ValueType]): js.Promise[stdLib.Map[KeyType, MappedValueType]] = js.native
-  def apply[KeyType /* <: js.Any */, ValueType /* <: js.Any */, MappedValueType](
+  def apply[KeyType, ValueType, MappedValueType](map: stdLib.Map[KeyType, ValueType]): js.Promise[stdLib.Map[KeyType, MappedValueType]] = js.native
+  def apply[KeyType, ValueType, MappedValueType](
     map: stdLib.Map[KeyType, ValueType],
     mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType]
   ): js.Promise[stdLib.Map[KeyType, MappedValueType]] = js.native
-  def apply[KeyType /* <: js.Any */, ValueType /* <: js.Any */, MappedValueType](
+  def apply[KeyType, ValueType, MappedValueType](
     map: stdLib.Map[KeyType, ValueType],
     mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType],
     options: Options
