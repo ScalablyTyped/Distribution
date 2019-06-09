@@ -21,6 +21,7 @@ package object knexMod {
   type AliasDict = Dict[java.lang.String]
   type AlterColumnBuilder = ColumnBuilder
   type AlterTableBuilder = TableBuilder
+  type AnyToUnknown[T] = ArrayIfAlready[T, UnwrapArrayMember[T] | js.Any]
   type ArrayIfAlready[T1, T2] = T2 | js.Array[T2]
   // If T is an array, get the type of member, else fall back to never
   type ArrayMember[T] = js.Any
@@ -57,6 +58,7 @@ package object knexMod {
     QueryBuilder[TRecord, TResult]
   ]
   type LogFn = js.Function1[/* message */ java.lang.String, scala.Unit]
+  type Lookup[TRegistry /* <: js.Object */, TKey /* <: java.lang.String */, TDefault] = TDefault | (/* import warning: ImportType.apply Failed type conversion: TRegistry[TKey] */ js.Any)
   // Retain the association of original keys with aliased keys at type level
   // to facilitates type-safe aliasing for object syntax
   type MappedAliasType[TBase, TAliasMapping] = js.Object with knexLib.knexLibStrings.MappedAliasType with js.Any

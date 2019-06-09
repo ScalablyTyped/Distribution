@@ -1,7 +1,7 @@
 
 # Scala.js typings for knex
 
-Typings are for version 0.17.3
+Typings are for version 0.17.5
 
 ## Library description:
 A batteries-included SQL query & schema builder for Postgres, MySQL and SQLite3 and the Browser
@@ -42,6 +42,18 @@ These comments are from the typescript definitions and might be useful:
 //                 Satana Charuwichitratana <https://github.com/micksatana>
 //                 Shrey Jain <https://github.com/shreyjain1994>
 // TypeScript Version: 3.2
+// This empty interface serves as a placeholder which userland code can augment to
+// override result types.
+//
+// Currently only available result type which is overridable is Count, which defaults to
+// number | string;
+// Following example in userland code will alter this to be just number:
+// declare module "knex/types/result" {
+//     interface Registry {
+//         Count: number;
+//     }
+// }
+// Prior discussion: https://github.com/tgriesser/knex/issues/3247
 
 ```
 

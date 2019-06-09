@@ -34,6 +34,9 @@ object knexLibStrings {
     extends knexLib.knexMod.ComparisionOperator
   
   @js.native
+  sealed trait Count extends js.Object
+  
+  @js.native
   sealed trait Knex extends js.Object
   
   @js.native
@@ -65,6 +68,8 @@ object knexLibStrings {
   def `>`: `>` = ">".asInstanceOf[`>`]
   @scala.inline
   def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  @scala.inline
+  def Count: Count = "Count".asInstanceOf[Count]
   @scala.inline
   def Knex: Knex = "Knex".asInstanceOf[Knex]
   @scala.inline

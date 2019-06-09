@@ -7,67 +7,58 @@ import scala.scalajs.js.annotation._
 
 trait StringifyOptions extends js.Object {
   /**
-  	 * @default 'none'
-  	 *
-  	 * - `bracket`: Serialize arrays using bracket representation:
-  	 *
-  	 *
-  	 *    queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket'});
-  	 *    //=> 'foo[]=1&foo[]=2&foo[]=3'
-  	 *
-  	 * - `index`: Serialize arrays using index representation:
-  	 *
-  	 *
-  	 *    queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'});
-  	 *    //=> 'foo[0]=1&foo[1]=2&foo[3]=3'
-  	 *
-  	 * - `comma`: Serialize arrays by separating elements with comma:
-  	 *
-  	 *
-  	 *    queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
-  	 *    //=> 'foo=1,2,3'
-  	 *
-  	 * - `none`: Serialize arrays by using duplicate keys:
-  	 *
-  	 *
-  	 *    queryString.stringify({foo: [1, 2, 3]});
-  	 *    //=> 'foo=1&foo=2&foo=3'
-  	 */
+  	@default 'none'
+  	- `bracket`: Serialize arrays using bracket representation:
+  		```
+  		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket'});
+  		//=> 'foo[]=1&foo[]=2&foo[]=3'
+  		```
+  	- `index`: Serialize arrays using index representation:
+  		```
+  		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'});
+  		//=> 'foo[0]=1&foo[1]=2&foo[3]=3'
+  		```
+  	- `comma`: Serialize arrays by separating elements with comma:
+  		```
+  		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
+  		//=> 'foo=1,2,3'
+  		```
+  	- `none`: Serialize arrays by using duplicate keys:
+  		```
+  		queryString.stringify({foo: [1, 2, 3]});
+  		//=> 'foo=1&foo=2&foo=3'
+  		```
+  	*/
   val arrayFormat: js.UndefOr[
     queryDashStringLib.queryDashStringLibStrings.bracket | queryDashStringLib.queryDashStringLibStrings.index | queryDashStringLib.queryDashStringLibStrings.comma | queryDashStringLib.queryDashStringLibStrings.none
   ] = js.undefined
   /**
-  	 * [URL encode](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the keys and values.
-  	 *
-  	 * @default true
-  	 */
+  	[URL encode](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the keys and values.
+  	@default true
+  	*/
   val encode: js.UndefOr[scala.Boolean] = js.undefined
   /**
-  	 * Supports both `Function` as a custom sorting function or `false` to disable sorting.
-  	 *
-  	 * If omitted, keys are sorted using `Array#sort`, which means, converting them to strings and comparing strings in Unicode code point order.
-  	 *
-  	 * @default true
-  	 *
-  	 * @example
-  	 *
-  	 * const order = ['c', 'a', 'b'];
-  	 * queryString.stringify({a: 1, b: 2, c: 3}, {
-  	 * 	sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
-  	 * });
-  	 * // => 'c=3&a=1&b=2'
-  	 *
-  	 * queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
-  	 * // => 'b=1&c=2&a=3'
-  	 */
+  	Supports both `Function` as a custom sorting function or `false` to disable sorting.
+  	If omitted, keys are sorted using `Array#sort`, which means, converting them to strings and comparing strings in Unicode code point order.
+  	@default true
+  	@example
+  	```
+  	const order = ['c', 'a', 'b'];
+  	queryString.stringify({a: 1, b: 2, c: 3}, {
+  		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
+  	});
+  	// => 'c=3&a=1&b=2'
+  	queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
+  	// => 'b=1&c=2&a=3'
+  	```
+  	*/
   val sort: js.UndefOr[
     (js.Function2[/* itemLeft */ java.lang.String, /* itemRight */ java.lang.String, scala.Double]) | queryDashStringLib.queryDashStringLibNumbers.`false`
   ] = js.undefined
   /**
-  	 * Strictly encode URI components with [`strict-uri-encode`](https://github.com/kevva/strict-uri-encode). It uses [`encodeURIComponent`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) if set to `false`. You probably [don't care](https://github.com/sindresorhus/query-string/issues/42) about this option.
-  	 *
-  	 * @default true
-  	 */
+  	Strictly encode URI components with [`strict-uri-encode`](https://github.com/kevva/strict-uri-encode). It uses [`encodeURIComponent`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) if set to `false`. You probably [don't care](https://github.com/sindresorhus/query-string/issues/42) about this option.
+  	@default true
+  	*/
   val strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 

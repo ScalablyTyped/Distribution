@@ -33,10 +33,26 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   @JSName("columns")
   var columns_Original: Select[TRecord, TResult] = js.native
   @JSName("countDistinct")
-  var countDistinct_Original: AssymetricAggregation[TRecord, TResult, scala.Double | java.lang.String] = js.native
+  var countDistinct_Original: AssymetricAggregation[
+    TRecord, 
+    TResult, 
+    Lookup[
+      knexLib.typesResultMod.Registry, 
+      knexLib.knexLibStrings.Count, 
+      scala.Double | java.lang.String
+    ]
+  ] = js.native
   // Aggregation
   @JSName("count")
-  var count_Original: AssymetricAggregation[TRecord, TResult, scala.Double | java.lang.String] = js.native
+  var count_Original: AssymetricAggregation[
+    TRecord, 
+    TResult, 
+    Lookup[
+      knexLib.typesResultMod.Registry, 
+      knexLib.knexLibStrings.Count, 
+      scala.Double | java.lang.String
+    ]
+  ] = js.native
   @JSName("crossJoin")
   var crossJoin_Original: Join[TRecord, TResult] = js.native
   @JSName("distinct")

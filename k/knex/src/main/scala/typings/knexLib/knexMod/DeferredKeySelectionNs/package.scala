@@ -44,18 +44,26 @@ package object DeferredKeySelectionNs {
   // For practical reasons applicable to current context, we always return arrays of
   // deferred selections. So, this particular operator may not be useful in generic contexts.
   type ReplaceBase[TSelection, TBase] = TSelection | (knexLib.knexMod.ArrayIfAlready[TSelection, SetBase[js.Any | knexLib.knexMod.UnwrapArrayMember[TSelection], TBase]])
-  // Resolution logic lifted over arrays of deferred selections
-  type Resolve[TSelection] = knexLib.knexMod.UnknownToAny[
-    knexLib.knexMod.ArrayIfAlready[TSelection, ResolveOne[knexLib.knexMod.UnwrapArrayMember[TSelection]]]
-  ]
+  type Resolve[TSelection] = TSelection | (js.Array[
+    ResolveOne[
+      /* import warning: ImportType.apply Failed type conversion: TSelection[0] */ js.Any
+    ]
+  ]) | ResolveOne[TSelection]
   // Core resolution logic -- Refer to docs for DeferredKeySelection for specifics
-  type ResolveOne[TSelection] = TSelection | (knexLib.knexMod.AugmentParams[
-    js.Any | (knexLib.knexMod.AugmentParams[
-      knexLib.knexMod.PartialOrAny[js.Any, js.Any], 
-      knexLib.knexMod.MappedAliasType[js.Any, js.Any]
-    ]), 
-    js.Any
-  ]) | js.Any
+  type ResolveOne[TSelection] = TSelection | (knexLib.knexMod.UnknownToAny[
+    (// ^ We convert final result to any if it is unknown for backward compatibility.
+  //   Historically knex typings have been liberal with returning any and changing
+  //   default return type to unknown would be a major breaking change for users.
+  //
+  //   So we compromise on type safety here and return any.
+  knexLib.knexMod.AugmentParams[
+      js.Any | (knexLib.knexMod.AugmentParams[
+        knexLib.knexMod.PartialOrAny[js.Any, js.Any], 
+        knexLib.knexMod.MappedAliasType[js.Any, js.Any]
+      ]), 
+      js.Any
+    ]) | js.Any
+  ])
   // Replace the Base if already a deferred selection.
   // If not, create a new deferred selection with specified base.
   type SetBase[TSelection, TBase] = knexLib.knexMod.DeferredKeySelection[

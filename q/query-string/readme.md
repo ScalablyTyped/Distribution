@@ -1,7 +1,7 @@
 
 # Scala.js typings for query-string
 
-Typings are for version 6.6.0
+Typings are for version 6.7.0
 
 ## Library description:
 Parse and stringify URL query strings
