@@ -21,7 +21,6 @@ trait UploadFile extends js.Object {
   var `type`: java.lang.String
   var uid: java.lang.String
   var url: js.UndefOr[java.lang.String] = js.undefined
-  var webkitRelativePath: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object UploadFile {
@@ -41,8 +40,7 @@ object UploadFile {
     response: js.Any = null,
     status: UploadFileStatus = null,
     thumbUrl: java.lang.String = null,
-    url: java.lang.String = null,
-    webkitRelativePath: java.lang.String = null
+    url: java.lang.String = null
   ): UploadFile = {
     val __obj = js.Dynamic.literal(name = name, size = size, uid = uid)
     __obj.updateDynamic("type")(`type`)
@@ -57,7 +55,6 @@ object UploadFile {
     if (status != null) __obj.updateDynamic("status")(status)
     if (thumbUrl != null) __obj.updateDynamic("thumbUrl")(thumbUrl)
     if (url != null) __obj.updateDynamic("url")(url)
-    if (webkitRelativePath != null) __obj.updateDynamic("webkitRelativePath")(webkitRelativePath)
     __obj.asInstanceOf[UploadFile]
   }
 }

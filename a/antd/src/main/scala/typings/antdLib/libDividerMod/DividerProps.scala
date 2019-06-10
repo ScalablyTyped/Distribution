@@ -10,7 +10,7 @@ trait DividerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var dashed: js.UndefOr[scala.Boolean] = js.undefined
   var orientation: js.UndefOr[
-    antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.Empty
+    antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.center
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
@@ -23,7 +23,7 @@ object DividerProps {
     children: reactLib.reactMod.ReactNode = null,
     className: java.lang.String = null,
     dashed: js.UndefOr[scala.Boolean] = js.undefined,
-    orientation: antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.Empty = null,
+    orientation: antdLib.antdLibStrings.left | antdLib.antdLibStrings.right | antdLib.antdLibStrings.center = null,
     prefixCls: java.lang.String = null,
     style: reactLib.reactMod.CSSProperties = null,
     `type`: antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical = null

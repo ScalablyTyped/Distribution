@@ -10,7 +10,7 @@ trait DraggerProps extends js.Object {
   var accept: js.UndefOr[java.lang.String] = js.undefined
   var action: js.UndefOr[
     java.lang.String | (js.Function1[
-      /* file */ antdLib.esUploadInterfaceMod.UploadFile, 
+      /* file */ antdLib.esUploadInterfaceMod.RcFile, 
       java.lang.String | js.Thenable[java.lang.String]
     ])
   ] = js.undefined
@@ -65,7 +65,7 @@ object DraggerProps {
   def apply(
     accept: java.lang.String = null,
     action: java.lang.String | (js.Function1[
-      /* file */ antdLib.esUploadInterfaceMod.UploadFile, 
+      /* file */ antdLib.esUploadInterfaceMod.RcFile, 
       java.lang.String | js.Thenable[java.lang.String]
     ]) = null,
     beforeUpload: (/* file */ antdLib.esUploadInterfaceMod.RcFile, /* FileList */ js.Array[antdLib.esUploadInterfaceMod.RcFile]) => scala.Boolean | js.Thenable[_] = null,

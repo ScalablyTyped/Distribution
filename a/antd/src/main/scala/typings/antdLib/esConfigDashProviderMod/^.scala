@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val ConfigConsumer: reactLib.reactMod.ComponentClass[
-    atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[ConfigConsumerProps | scala.Null], 
+    atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[ConfigConsumerProps], 
     js.Any
   ] = js.native
   val configConsumerProps: js.Array[java.lang.String] = js.native

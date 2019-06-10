@@ -1358,6 +1358,7 @@
 | 0.7487269745589236 | [ladda](./l/ladda) | Buttons with built-in loading indicators
 | 0.748673999720679 | [lockfile](./l/lockfile) | A very polite lock file utility, which endeavors t
 | 0.7486153298645505 | [mustache](./m/mustache) | Logic-less {{mustache}} templates with JavaScript
+| 0.748548167239601 | [rc-checkbox](./r/rc-checkbox) | checkbox ui component for react
 | 0.7485430251561828 | [temp-write](./t/temp-write) | Write string/buffer/stream to a random temp file
 | 0.7485323301864888 | [tabbable](./t/tabbable) | Returns an array of all tabbable DOM nodes within 
 | 0.7485177853865388 | [firebase__messaging-types](./f/firebase__messaging-types) | @firebase/messaging Types
@@ -4729,6 +4730,7 @@
 | 0.4836188847156445 | [highcharts-ng](./h/highcharts-ng) | highcharts-ng
 | 0.48357488340500376 | [cypress-axe](./c/cypress-axe) | Custom cypress commands to inject axe-core and tes
 | 0.4835574034357607 | [base64-arraybuffer](./b/base64-arraybuffer) | Encode/decode base64 data into ArrayBuffers
+| 0.4832634853277296 | [minecraft-scripting-types](./m/minecraft-scripting-types-shared) | Shared TypeScript definitions for Minecraft Bedroc
 | 0.48314903361483563 | [bdfjs](./b/bdfjs) | Simple library for reading Adobe Glyph Bitmap Dist
 | 0.4828212433919823 | [socket_dot_io-redis](./s/socket_dot_io-redis) | -
 | 0.482755656347444 | [parity-pmd](./p/parity-pmd) | Parity's native market data protocol
@@ -4739,6 +4741,8 @@
 | 0.48166540703965666 | [parity-poe](./p/parity-poe) | Parity's native order entry protocol
 | 0.4815354962766215 | [lz-string](./l/lz-string) | LZ-based compression algorithm
 | 0.48150871396024925 | [ng-file-upload](./n/ng-file-upload) | An AngularJS directive for file upload using HTML5
+| 0.4811854888324175 | [minecraft-scripting-types](./m/minecraft-scripting-types-server) | Server-side TypeScript definitions for Minecraft B
+| 0.48113149960348 | [minecraft-scripting-types](./m/minecraft-scripting-types-client) | Client-side TypeScript definitions for Minecraft B
 | 0.48062146365616193 | [amqp](./a/amqp) | AMQP driver for node
 | 0.4803397319171787 | [jpeg-js](./j/jpeg-js) | A pure javascript JPEG encoder and decoder
 | 0.47997345584485895 | [sc-channel](./s/sc-channel) | Channel object for SocketCluster

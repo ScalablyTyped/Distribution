@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-editor-core
 
-Typings are for version 0.8.9
+Typings are for version 0.8.10
 
 ## Library description:
 editor-core ui component for react

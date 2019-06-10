@@ -14,6 +14,6 @@ trait TypeofClassCheckboxGroupChildContextTypes
   var childContextTypes: Anon_CheckboxGroup = js.native
   var defaultProps: Anon_Options = js.native
   var propTypes: Anon_ArgsDefaultValue = js.native
-  def getDerivedStateFromProps(nextProps: antdLib.libCheckboxGroupMod.CheckboxGroupProps): Anon_ValueArrayCheckboxValueType | scala.Null = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libCheckboxGroupMod.CheckboxGroupProps): Anon_Value | scala.Null = js.native
 }
 

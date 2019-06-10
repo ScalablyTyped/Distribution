@@ -18,6 +18,6 @@ object default extends js.Object {
   var childContextTypes: antdLib.Anon_CheckboxGroup = js.native
   var defaultProps: antdLib.Anon_Options = js.native
   var propTypes: antdLib.Anon_ArgsDefaultValue = js.native
-  def getDerivedStateFromProps(nextProps: antdLib.libCheckboxGroupMod.CheckboxGroupProps): antdLib.Anon_ValueArrayCheckboxValueType | scala.Null = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libCheckboxGroupMod.CheckboxGroupProps): antdLib.Anon_Value | scala.Null = js.native
 }
 

@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   - detectDashBrowserLib.detectDashBrowserLibStrings.beaker
   - detectDashBrowserLib.detectDashBrowserLibStrings.`edge-chromium`
   - detectDashBrowserLib.detectDashBrowserLibStrings.chrome
+  - detectDashBrowserLib.detectDashBrowserLibStrings.`chromium-webview`
   - detectDashBrowserLib.detectDashBrowserLibStrings.phantomjs
   - detectDashBrowserLib.detectDashBrowserLibStrings.crios
   - detectDashBrowserLib.detectDashBrowserLibStrings.firefox

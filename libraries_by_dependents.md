@@ -1059,6 +1059,7 @@
 | 194 | [decimal_dot_js](./d/decimal_dot_js) | An arbitrary-precision Decimal type for JavaScript
 | 194 | [exit](./e/exit) | A replacement for process.exit that ensures stdio 
 | 194 | [level-sublevel](./l/level-sublevel) | partition levelup databases
+| 194 | [rc-checkbox](./r/rc-checkbox) | checkbox ui component for react
 | 194 | [strftime](./s/strftime) | strftime for JavaScript
 | 194 | [xmldoc](./x/xmldoc) | A lightweight XML Document class for JavaScript.
 | 193 | [chromedriver](./c/chromedriver) | ChromeDriver for Selenium
@@ -5410,6 +5411,7 @@
 | 2 | [merge-env](./m/merge-env) | An object merging function that has special suppor
 | 2 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor
 | 2 | [microevent_dot_ts](./m/microevent_dot_ts) | Zero cost events
+| 2 | [minecraft-scripting-types](./m/minecraft-scripting-types-shared) | Shared TypeScript definitions for Minecraft Bedroc
 | 2 | [minimal-bit-array](./m/minimal-bit-array) | Minimal bit array implementation that is compatibl
 | 2 | [mkcert](./m/mkcert) | Create Self Signed Development Certificates
 | 2 | [ml-levenberg-marquardt](./m/ml-levenberg-marquardt) | Curve fitting method in javascript
@@ -5803,6 +5805,8 @@
 | 1 | [makeup-floating-label](./m/makeup-floating-label) | Module for creating an accessible, progressively e
 | 1 | [makeup-prevent-scroll-key](./m/makeup-prevent-scroll-keys) | Prevents default scroll event when pressing down a
 | 1 | [mapbox-gl-leaflet](./m/mapbox-gl-leaflet) | binding from mapbox gl to the leaflet api
+| 1 | [minecraft-scripting-types](./m/minecraft-scripting-types-client) | Client-side TypeScript definitions for Minecraft B
+| 1 | [minecraft-scripting-types](./m/minecraft-scripting-types-server) | Server-side TypeScript definitions for Minecraft B
 | 1 | [mobservable-react](./m/mobservable-react) | React bindings for mobservable. Create fully react
 | 1 | [mobx-apollo](./m/mobx-apollo) | A MobX and Apollo Client integration utility.
 | 1 | [mochaccino](./m/mochaccino) | United js test tools

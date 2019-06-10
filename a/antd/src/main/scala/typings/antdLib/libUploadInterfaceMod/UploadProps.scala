@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait UploadProps extends js.Object {
   var accept: js.UndefOr[java.lang.String] = js.undefined
   var action: js.UndefOr[
-    java.lang.String | (js.Function1[/* file */ UploadFile, java.lang.String | js.Thenable[java.lang.String]])
+    java.lang.String | (js.Function1[/* file */ RcFile, java.lang.String | js.Thenable[java.lang.String]])
   ] = js.undefined
   var beforeUpload: js.UndefOr[
     js.Function2[/* file */ RcFile, /* FileList */ js.Array[RcFile], scala.Boolean | js.Thenable[_]]
@@ -48,7 +48,7 @@ object UploadProps {
   @scala.inline
   def apply(
     accept: java.lang.String = null,
-    action: java.lang.String | (js.Function1[/* file */ UploadFile, java.lang.String | js.Thenable[java.lang.String]]) = null,
+    action: java.lang.String | (js.Function1[/* file */ RcFile, java.lang.String | js.Thenable[java.lang.String]]) = null,
     beforeUpload: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => scala.Boolean | js.Thenable[_] = null,
     className: java.lang.String = null,
     customRequest: /* option */ js.Any => scala.Unit = null,

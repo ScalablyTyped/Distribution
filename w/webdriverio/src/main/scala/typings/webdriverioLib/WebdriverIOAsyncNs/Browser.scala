@@ -13,7 +13,7 @@ trait Browser
   // there is no way to wrap generic functions, like `<T>(arg: T) => T`
   // have to declare explicitly for sync and async typings.
   // https://github.com/microsoft/TypeScript/issues/5453
-  def call[T](callback: js.Function1[/* args */ js.Any, js.Promise[T]]): js.Promise[T] = js.native
+  def call[T](callback: js.Function1[/* repeated */ js.Any, js.Promise[T]]): js.Promise[T] = js.native
   def execute[T](script: java.lang.String, arguments: js.Any*): js.Promise[T] = js.native
   def execute[T](script: js.Function1[/* repeated */ js.Any, T], arguments: js.Any*): js.Promise[T] = js.native
   // also there is no way to add callback as last parameter after `...args`.

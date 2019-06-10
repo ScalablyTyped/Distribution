@@ -130,6 +130,10 @@ object detectDashBrowserLibStrings {
     extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
   @js.native
+  sealed trait `chromium-webview`
+    extends detectDashBrowserLib.detectDashBrowserMod.Browser
+  
+  @js.native
   sealed trait crios
     extends detectDashBrowserLib.detectDashBrowserMod.Browser
   
@@ -282,6 +286,8 @@ object detectDashBrowserLibStrings {
   def bot: bot = "bot".asInstanceOf[bot]
   @scala.inline
   def chrome: chrome = "chrome".asInstanceOf[chrome]
+  @scala.inline
+  def `chromium-webview`: `chromium-webview` = "chromium-webview".asInstanceOf[`chromium-webview`]
   @scala.inline
   def crios: crios = "crios".asInstanceOf[crios]
   @scala.inline

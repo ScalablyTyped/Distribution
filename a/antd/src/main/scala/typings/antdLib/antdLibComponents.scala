@@ -148,9 +148,9 @@ object antdLibComponents {
   type CommentProps = antdLib.esCommentMod.CommentProps
   @scala.inline
   def ConfigConsumer: reactLib.reactMod.ComponentType[
-    atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[antdLib.esConfigDashProviderMod.ConfigConsumerProps | scala.Null]
+    atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[antdLib.esConfigDashProviderMod.ConfigConsumerProps]
   ] = js.constructorOf[antdLib.esConfigDashProviderMod.ConfigConsumer].asInstanceOf[reactLib.reactMod.ComponentType[
-  atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[antdLib.esConfigDashProviderMod.ConfigConsumerProps | scala.Null]]]
+  atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[antdLib.esConfigDashProviderMod.ConfigConsumerProps]]]
   @scala.inline
   def ConfigConsumerProps: atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps.type = atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps
   type ConfigConsumerProps[T] = atAntDashDesignCreateDashReactDashContextLib.atAntDashDesignCreateDashReactDashContextMod.ConsumerProps[T]
