@@ -13,7 +13,7 @@ class Session () extends EventEmitter {
   var protocol: Protocol = js.native
   var webRequest: WebRequest = js.native
   @JSName("addListener")
-  def `addListener_will-download`(
+  def addListener_willdownload(
     event: electronLib.electronLibStrings.`will-download`,
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
@@ -78,17 +78,17 @@ class Session () extends EventEmitter {
     * from next tick of the process.
     */
   @JSName("on")
-  def `on_will-download`(
+  def on_willdownload(
     event: electronLib.electronLibStrings.`will-download`,
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_will-download`(
+  def once_willdownload(
     event: electronLib.electronLibStrings.`will-download`,
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-download`(
+  def removeListener_willdownload(
     event: electronLib.electronLibStrings.`will-download`,
     listener: js.Function3[/* event */ Event, /* item */ DownloadItem, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native

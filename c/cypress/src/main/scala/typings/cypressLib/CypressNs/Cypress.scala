@@ -511,6 +511,64 @@ trait Cypress extends js.Object {
     */
   def log(options: stdLib.Partial[LogConfig]): Log = js.native
   /**
+    * Fires when an uncaught exception occurs in your application.
+    * Cypress will fail the test when this fires.
+    * Return `false` from this event and Cypress will not fail the test. Also useful for debugging purposes because the actual `error` instance is provided to you.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    * @example
+    ```
+    // likely want to do this in a support file
+    // so it's applied to all spec files
+    // cypress/support/index.js
+    Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+    })
+    // stub "window.alert" in a single test
+    it('shows alert', () => {
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // trigger application code that calls alert(...)
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    })
+    ```
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  def off(
+    action: cypressLib.cypressLibStrings.`uncaught:exception`,
+    fn: js.Function2[
+      /* error */ stdLib.Error, 
+      /* runnable */ cypressLib.MochaNs.IRunnable, 
+      cypressLib.cypressLibNumbers.`false` | scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Fires when your app calls the global `window.confirm()` method.
+    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    * @example
+    ```
+    cy.on('window:confirm', (str) => {
+    console.log(str)
+    return false // simulate "Cancel"
+    })
+    ```
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  def off(
+    action: cypressLib.cypressLibStrings.`window:confirm`,
+    fn: js.Function1[/* text */ java.lang.String, cypressLib.cypressLibNumbers.`false` | scala.Unit]
+  ): scala.Unit = js.native
+  /**
     * Fires when cy finishes running and executing your command. Useful for debugging and understanding how commands are handled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
@@ -519,7 +577,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def `off_command:end`(
+  def off_commandend(
     action: cypressLib.cypressLibStrings.`command:end`,
     fn: js.Function1[/* command */ CommandQueue, scala.Unit]
   ): scala.Unit = js.native
@@ -532,7 +590,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def `off_command:enqueued`(
+  def off_commandenqueued(
     action: cypressLib.cypressLibStrings.`command:enqueued`,
     fn: js.Function1[/* command */ EnqueuedCommand, scala.Unit]
   ): scala.Unit = js.native
@@ -545,7 +603,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def `off_command:retry`(
+  def off_commandretry(
     action: cypressLib.cypressLibStrings.`command:retry`,
     fn: js.Function1[/* command */ CommandQueue, scala.Unit]
   ): scala.Unit = js.native
@@ -558,7 +616,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def `off_command:start`(
+  def off_commandstart(
     action: cypressLib.cypressLibStrings.`command:start`,
     fn: js.Function1[/* command */ CommandQueue, scala.Unit]
   ): scala.Unit = js.native
@@ -584,7 +642,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def `off_log:added`(
+  def off_logadded(
     action: cypressLib.cypressLibStrings.`log:added`,
     fn: js.Function2[/* log */ js.Any, /* interactive */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
@@ -597,7 +655,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def `off_log:changed`(
+  def off_logchanged(
     action: cypressLib.cypressLibStrings.`log:changed`,
     fn: js.Function2[/* log */ js.Any, /* interactive */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
@@ -623,7 +681,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def `off_test:after:run`(
+  def off_testafterrun(
     action: cypressLib.cypressLibStrings.`test:after:run`,
     fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
   ): scala.Unit = js.native
@@ -636,9 +694,122 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def `off_test:before:run`(
+  def off_testbeforerun(
     action: cypressLib.cypressLibStrings.`test:before:run`,
     fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * Fires whenever Cypress detects that your application's URL has changed.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("off")
+  def off_urlchanged(
+    action: cypressLib.cypressLibStrings.`url:changed`,
+    fn: js.Function1[/* url */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * Fires whenever the viewport changes via a `cy.viewport()` or naturally when Cypress resets the viewport to the default between tests. Useful for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("off")
+  def off_viewportchanged(
+    action: cypressLib.cypressLibStrings.`viewport:changed`,
+    fn: js.Function1[/* viewport */ Viewport, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("off")
+  def off_windowalert(
+    action: cypressLib.cypressLibStrings.`window:alert`,
+    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+  ): scala.Unit = js.native
+  /**
+    * Fires when your app calls the global `window.alert()` method.
+    * Cypress will auto accept alerts. You cannot change this behavior.
+    * @example
+    ```
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // assume the button calls window.alert()
+    cy.get('.my-button')
+    .click()
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    ```
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("off")
+  def off_windowalert(
+    action: cypressLib.cypressLibStrings.`window:alert`,
+    fn: js.Function1[/* text */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * Fires as the page begins to load, but before any of your applications JavaScript has executed. This fires at the exact same time as `cy.visit()` `onBeforeLoad` callback. Useful to modify the window on a page transition.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("off")
+  def off_windowbeforeload(
+    action: cypressLib.cypressLibStrings.`window:before:load`,
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("off")
+  def off_windowbeforeunload(
+    action: cypressLib.cypressLibStrings.`window:before:unload`,
+    fn: js.Function1[/* event */ stdLib.BeforeUnloadEvent, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("off")
+  def off_windowconfirm(
+    action: cypressLib.cypressLibStrings.`window:confirm`,
+    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
+  ): scala.Unit = js.native
+  /**
+    * Fires after all your resources have finished loading after a page transition. This fires at the exact same time as a `cy.visit()` `onLoad` callback.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("off")
+  def off_windowload(
+    action: cypressLib.cypressLibStrings.`window:load`,
+    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  /**
+    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
+    * @see https://on.cypress.io/catalog-of-events#App-Events
+    */
+  @JSName("off")
+  def off_windowunload(
+    action: cypressLib.cypressLibStrings.`window:unload`,
+    fn: js.Function1[/* event */ stdLib.Event, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when an uncaught exception occurs in your application.
@@ -670,101 +841,13 @@ trait Cypress extends js.Object {
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
-  @JSName("off")
-  def `off_uncaught:exception`(
+  def on(
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
       /* error */ stdLib.Error, 
       /* runnable */ cypressLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
-  ): scala.Unit = js.native
-  /**
-    * Fires whenever Cypress detects that your application's URL has changed.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  /**
-    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  @JSName("off")
-  def `off_url:changed`(
-    action: cypressLib.cypressLibStrings.`url:changed`,
-    fn: js.Function1[/* url */ java.lang.String, scala.Unit]
-  ): scala.Unit = js.native
-  /**
-    * Fires whenever the viewport changes via a `cy.viewport()` or naturally when Cypress resets the viewport to the default between tests. Useful for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  /**
-    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  @JSName("off")
-  def `off_viewport:changed`(
-    action: cypressLib.cypressLibStrings.`viewport:changed`,
-    fn: js.Function1[/* viewport */ Viewport, scala.Unit]
-  ): scala.Unit = js.native
-  @JSName("off")
-  def `off_window:alert`(
-    action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
-  ): scala.Unit = js.native
-  /**
-    * Fires when your app calls the global `window.alert()` method.
-    * Cypress will auto accept alerts. You cannot change this behavior.
-    * @example
-    ```
-    const stub = cy.stub()
-    cy.on('window:alert', stub)
-    // assume the button calls window.alert()
-    cy.get('.my-button')
-    .click()
-    .then(() => {
-    expect(stub).to.have.been.calledOnce
-    })
-    ```
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  /**
-    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  @JSName("off")
-  def `off_window:alert`(
-    action: cypressLib.cypressLibStrings.`window:alert`,
-    fn: js.Function1[/* text */ java.lang.String, scala.Unit]
-  ): scala.Unit = js.native
-  /**
-    * Fires as the page begins to load, but before any of your applications JavaScript has executed. This fires at the exact same time as `cy.visit()` `onBeforeLoad` callback. Useful to modify the window on a page transition.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  /**
-    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  @JSName("off")
-  def `off_window:before:load`(
-    action: cypressLib.cypressLibStrings.`window:before:load`,
-    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
-  ): scala.Unit = js.native
-  /**
-    * Fires when your application is about to navigate away. The real event object is provided to you. Your app may have set a `returnValue` on the event, which is useful to assert on.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  /**
-    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  @JSName("off")
-  def `off_window:before:unload`(
-    action: cypressLib.cypressLibStrings.`window:before:unload`,
-    fn: js.Function1[/* event */ stdLib.BeforeUnloadEvent, scala.Unit]
-  ): scala.Unit = js.native
-  @JSName("off")
-  def `off_window:confirm`(
-    action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.
@@ -782,36 +865,9 @@ trait Cypress extends js.Object {
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
-  @JSName("off")
-  def `off_window:confirm`(
+  def on(
     action: cypressLib.cypressLibStrings.`window:confirm`,
     fn: js.Function1[/* text */ java.lang.String, cypressLib.cypressLibNumbers.`false` | scala.Unit]
-  ): scala.Unit = js.native
-  /**
-    * Fires after all your resources have finished loading after a page transition. This fires at the exact same time as a `cy.visit()` `onLoad` callback.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  /**
-    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  @JSName("off")
-  def `off_window:load`(
-    action: cypressLib.cypressLibStrings.`window:load`,
-    fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
-  ): scala.Unit = js.native
-  /**
-    * Fires when your application is has unloaded and is navigating away. The real event object is provided to you. This event is not cancelable.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  /**
-    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  @JSName("off")
-  def `off_window:unload`(
-    action: cypressLib.cypressLibStrings.`window:unload`,
-    fn: js.Function1[/* event */ stdLib.Event, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when cy finishes running and executing your command. Useful for debugging and understanding how commands are handled.
@@ -822,7 +878,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_command:end`(
+  def on_commandend(
     action: cypressLib.cypressLibStrings.`command:end`,
     fn: js.Function1[/* command */ CommandQueue, scala.Unit]
   ): scala.Unit = js.native
@@ -835,7 +891,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_command:enqueued`(
+  def on_commandenqueued(
     action: cypressLib.cypressLibStrings.`command:enqueued`,
     fn: js.Function1[/* command */ EnqueuedCommand, scala.Unit]
   ): scala.Unit = js.native
@@ -848,7 +904,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_command:retry`(
+  def on_commandretry(
     action: cypressLib.cypressLibStrings.`command:retry`,
     fn: js.Function1[/* command */ CommandQueue, scala.Unit]
   ): scala.Unit = js.native
@@ -861,7 +917,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_command:start`(
+  def on_commandstart(
     action: cypressLib.cypressLibStrings.`command:start`,
     fn: js.Function1[/* command */ CommandQueue, scala.Unit]
   ): scala.Unit = js.native
@@ -887,7 +943,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_log:added`(
+  def on_logadded(
     action: cypressLib.cypressLibStrings.`log:added`,
     fn: js.Function2[/* log */ js.Any, /* interactive */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
@@ -900,7 +956,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_log:changed`(
+  def on_logchanged(
     action: cypressLib.cypressLibStrings.`log:changed`,
     fn: js.Function2[/* log */ js.Any, /* interactive */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
@@ -926,7 +982,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_test:after:run`(
+  def on_testafterrun(
     action: cypressLib.cypressLibStrings.`test:after:run`,
     fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
   ): scala.Unit = js.native
@@ -939,48 +995,9 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_test:before:run`(
+  def on_testbeforerun(
     action: cypressLib.cypressLibStrings.`test:before:run`,
     fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
-  ): scala.Unit = js.native
-  /**
-    * Fires when an uncaught exception occurs in your application.
-    * Cypress will fail the test when this fires.
-    * Return `false` from this event and Cypress will not fail the test. Also useful for debugging purposes because the actual `error` instance is provided to you.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    * @example
-    ```
-    // likely want to do this in a support file
-    // so it's applied to all spec files
-    // cypress/support/index.js
-    Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
-    return false
-    })
-    // stub "window.alert" in a single test
-    it('shows alert', () => {
-    const stub = cy.stub()
-    cy.on('window:alert', stub)
-    // trigger application code that calls alert(...)
-    .then(() => {
-    expect(stub).to.have.been.calledOnce
-    })
-    })
-    ```
-    */
-  /**
-    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  @JSName("on")
-  def `on_uncaught:exception`(
-    action: cypressLib.cypressLibStrings.`uncaught:exception`,
-    fn: js.Function2[
-      /* error */ stdLib.Error, 
-      /* runnable */ cypressLib.MochaNs.IRunnable, 
-      cypressLib.cypressLibNumbers.`false` | scala.Unit
-    ]
   ): scala.Unit = js.native
   /**
     * Fires whenever Cypress detects that your application's URL has changed.
@@ -991,7 +1008,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_url:changed`(
+  def on_urlchanged(
     action: cypressLib.cypressLibStrings.`url:changed`,
     fn: js.Function1[/* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
@@ -1004,12 +1021,12 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_viewport:changed`(
+  def on_viewportchanged(
     action: cypressLib.cypressLibStrings.`viewport:changed`,
     fn: js.Function1[/* viewport */ Viewport, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_window:alert`(
+  def on_windowalert(
     action: cypressLib.cypressLibStrings.`window:alert`,
     fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
   ): scala.Unit = js.native
@@ -1034,7 +1051,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_window:alert`(
+  def on_windowalert(
     action: cypressLib.cypressLibStrings.`window:alert`,
     fn: js.Function1[/* text */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
@@ -1047,7 +1064,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_window:before:load`(
+  def on_windowbeforeload(
     action: cypressLib.cypressLibStrings.`window:before:load`,
     fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
@@ -1060,35 +1077,14 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_window:before:unload`(
+  def on_windowbeforeunload(
     action: cypressLib.cypressLibStrings.`window:before:unload`,
     fn: js.Function1[/* event */ stdLib.BeforeUnloadEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_window:confirm`(
+  def on_windowconfirm(
     action: cypressLib.cypressLibStrings.`window:confirm`,
     fn: Agent[cypressLib.typesSinonMod.SinonSpy | cypressLib.typesSinonMod.SinonStub]
-  ): scala.Unit = js.native
-  /**
-    * Fires when your app calls the global `window.confirm()` method.
-    * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    * @example
-    ```
-    cy.on('window:confirm', (str) => {
-    console.log(str)
-    return false // simulate "Cancel"
-    })
-    ```
-    */
-  /**
-    * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
-    * @see https://on.cypress.io/catalog-of-events#App-Events
-    */
-  @JSName("on")
-  def `on_window:confirm`(
-    action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: js.Function1[/* text */ java.lang.String, cypressLib.cypressLibNumbers.`false` | scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires after all your resources have finished loading after a page transition. This fires at the exact same time as a `cy.visit()` `onLoad` callback.
@@ -1099,7 +1095,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_window:load`(
+  def on_windowload(
     action: cypressLib.cypressLibStrings.`window:load`,
     fn: js.Function1[/* win */ stdLib.Window, scala.Unit]
   ): scala.Unit = js.native
@@ -1112,7 +1108,7 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def `on_window:unload`(
+  def on_windowunload(
     action: cypressLib.cypressLibStrings.`window:unload`,
     fn: js.Function1[/* event */ stdLib.Event, scala.Unit]
   ): scala.Unit = js.native

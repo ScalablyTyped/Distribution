@@ -256,6 +256,8 @@ class QuestionPanelDynamicModel protected ()
   /* CompleteClass */
   override def getPanelItemData(item: ISurveyData): js.Any = js.native
   /* CompleteClass */
+  override def getRootData(): ISurveyData = js.native
+  /* CompleteClass */
   override def getSharedQuestionFromArray(name: java.lang.String, panelIndex: scala.Double): Question = js.native
   /* CompleteClass */
   override def getSurvey(): ISurvey = js.native

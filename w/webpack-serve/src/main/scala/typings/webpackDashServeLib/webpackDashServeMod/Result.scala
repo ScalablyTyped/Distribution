@@ -12,23 +12,23 @@ trait Result extends js.Object {
   /** Access to a frozen copy of the internal options object used by the module. */
   var options: InitializedOptions = js.native
   @JSName("on")
-  def `on_build-finished`(
+  def on_buildfinished(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`build-finished`,
     callback: js.Function1[/* args */ webpackDashServeLib.Anon_CompilerStats, scala.Unit]
   ): scala.Unit = js.native
   /** A function which binds a serve event-name to a function */
   @JSName("on")
-  def `on_build-started`(
+  def on_buildstarted(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`build-started`,
     callback: js.Function1[/* args */ webpackDashServeLib.Anon_Compiler, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_compiler-error`(
+  def on_compilererror(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`compiler-error`,
     callback: js.Function1[/* args */ webpackDashServeLib.Anon_CompilerStatsAny, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_compiler-warning`(
+  def on_compilerwarning(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`compiler-warning`,
     callback: js.Function1[/* args */ webpackDashServeLib.Anon_CompilerStatsAny, scala.Unit]
   ): scala.Unit = js.native

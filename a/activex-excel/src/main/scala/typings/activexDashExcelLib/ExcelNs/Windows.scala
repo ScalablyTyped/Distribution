@@ -17,26 +17,29 @@ trait Windows extends js.Object {
   /** @param ArrangeStyle [ArrangeStyle=1] */
   def Arrange(): js.Any = js.native
   def Arrange(ArrangeStyle: XlArrangeStyle): js.Any = js.native
-  def Arrange(
-    ArrangeStyle: XlArrangeStyle,
-    ActiveWorkbook: activexDashExcelLib.activexDashExcelLibNumbers.`true`
-  ): js.Any = js.native
-  def Arrange(
-    ArrangeStyle: XlArrangeStyle,
-    ActiveWorkbook: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    SyncHorizontal: scala.Boolean
-  ): js.Any = js.native
-  def Arrange(
-    ArrangeStyle: XlArrangeStyle,
-    ActiveWorkbook: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    SyncHorizontal: scala.Boolean,
-    SyncVertical: scala.Boolean
-  ): js.Any = js.native
   def Arrange(ArrangeStyle: XlArrangeStyle, ActiveWorkbook: scala.Boolean): js.Any = js.native
   def Arrange(ArrangeStyle: XlArrangeStyle, ActiveWorkbook: scala.Boolean, SyncHorizontal: scala.Boolean): js.Any = js.native
   def Arrange(
     ArrangeStyle: XlArrangeStyle,
     ActiveWorkbook: scala.Boolean,
+    SyncHorizontal: scala.Boolean,
+    SyncVertical: scala.Boolean
+  ): js.Any = js.native
+  @JSName("Arrange")
+  def Arrange_true(
+    ArrangeStyle: XlArrangeStyle,
+    ActiveWorkbook: activexDashExcelLib.activexDashExcelLibNumbers.`true`
+  ): js.Any = js.native
+  @JSName("Arrange")
+  def Arrange_true(
+    ArrangeStyle: XlArrangeStyle,
+    ActiveWorkbook: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    SyncHorizontal: scala.Boolean
+  ): js.Any = js.native
+  @JSName("Arrange")
+  def Arrange_true(
+    ArrangeStyle: XlArrangeStyle,
+    ActiveWorkbook: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     SyncHorizontal: scala.Boolean,
     SyncVertical: scala.Boolean
   ): js.Any = js.native

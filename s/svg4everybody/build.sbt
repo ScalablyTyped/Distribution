@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "svg4everybody"
-version := "2.1-dt-20190329Z-1b4a1e"
+version := "2.1-dt-20190329Z-2f7afe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -13,7 +13,7 @@ trait HeaderTooltips extends Base {
 object HeaderTooltips {
   @scala.inline
   def apply(
-    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    addHook: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Unit,
     callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
     clearHooks: () => scala.Unit,
     destroy: () => scala.Unit,
@@ -26,10 +26,10 @@ object HeaderTooltips {
     parseSettings: () => scala.Unit,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: java.lang.String => scala.Unit,
+    removeHooks: java.lang.String => scala.Unit,
     settings: scala.Boolean | js.Object
   ): HeaderTooltips = {
-    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, parseSettings = js.Any.fromFunction0(parseSettings), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook), settings = settings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, parseSettings = js.Any.fromFunction0(parseSettings), pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks), settings = settings.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[HeaderTooltips]
   }

@@ -62,7 +62,7 @@ trait Anon_Buffer extends js.Object {
   ): scala.Unit = js.native
   def apply(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_True,
+    options: nodeLib.Anon_EncodingTrue,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[nodeLib.fsMod.Dirent], 
@@ -111,7 +111,7 @@ trait Anon_Buffer extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent
     */
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_True): js.Promise[js.Array[nodeLib.fsMod.Dirent]] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingTrue): js.Promise[js.Array[nodeLib.fsMod.Dirent]] = js.native
   def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.

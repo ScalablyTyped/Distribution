@@ -203,12 +203,12 @@ trait ImageryLayer
     */
   def fetchImage(extent: Extent, width: scala.Double, height: scala.Double): arcgisDashJsDashApiLib.IPromise[_] = js.native
   @JSName("on")
-  def `on_layerview-create`(
+  def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: ImageryLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-destroy`(
+  def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: ImageryLayerLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

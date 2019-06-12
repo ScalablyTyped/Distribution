@@ -55,7 +55,7 @@ trait Credential extends Accessor {
     eventHandler: CredentialDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_token-change`(
+  def on_tokenchange(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`token-change`,
     eventHandler: CredentialTokenChangeEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

@@ -23,14 +23,14 @@ trait PushpinOptions extends js.Object {
     */
   var top: scala.Double = js.native
   @JSName("onPositionChange")
-  def `onPositionChange_pin-bottom`(`this`: Pushpin, position: materializeDashCssLib.materializeDashCssLibStrings.`pin-bottom`): scala.Unit = js.native
-  @JSName("onPositionChange")
-  def `onPositionChange_pin-top`(`this`: Pushpin, position: materializeDashCssLib.materializeDashCssLibStrings.`pin-top`): scala.Unit = js.native
+  def onPositionChange_pinbottom(`this`: Pushpin, position: materializeDashCssLib.materializeDashCssLibStrings.`pin-bottom`): scala.Unit = js.native
   /**
     * Callback function called when pushpin position changes. You are provided with a position string
     * @default null
     */
   @JSName("onPositionChange")
   def onPositionChange_pinned(`this`: Pushpin, position: materializeDashCssLib.materializeDashCssLibStrings.pinned): scala.Unit = js.native
+  @JSName("onPositionChange")
+  def onPositionChange_pintop(`this`: Pushpin, position: materializeDashCssLib.materializeDashCssLibStrings.`pin-top`): scala.Unit = js.native
 }
 

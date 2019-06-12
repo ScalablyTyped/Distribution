@@ -27,7 +27,7 @@ trait CreateCommitInput extends js.Object {
     */
   var email: js.UndefOr[Email] = js.undefined
   /**
-    * If the commit contains deletions, whether to keep a folder or folder structure if the changes leave the folders empty. If this is specified as true, a .gitkeep file will be created for empty folders.
+    * If the commit contains deletions, whether to keep a folder or folder structure if the changes leave the folders empty. If this is specified as true, a .gitkeep file will be created for empty folders. The default is false.
     */
   var keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined
   /**

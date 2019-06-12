@@ -7,36 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IVanillaClientSystemBase extends js.Object {
-  ///////////////////////////
-  // broadcastEvent overloads
-  /**
-    * This event is used to display a chat message to the specific player that is running the client script. The event data is the message to be displayed in plain text. Special formatting is supported the same way it would be if a player was sending the message.
-    */
-  /**
-    * This event is used to show a UI screen to the specific player running the client script. This event will add the UI screen to the top of the UI screen stack. The screen will be shown immediately after the event is triggered. Only screens defined in a HTML file can be shown using this event.
-    */
-  /**
-    * This event is used to turn various levels of logging on and off for client scripts. Note that turning logging on/off is not limited to the script that broadcasted the event. It will affect ALL client scripts including those in other Behavior Packs that are applied to the world. See the Debugging section for more information on logging.
-    */
-  /**
-    * This event is used to send UI events to the UI Engine for the specific player running the script. After the event is triggered, the UI event will be sent immediately.
-    * Custom UI is based on HTML 5. Review the scripting demo for an example of a custom UI file.
-    */
-  /**
-    * This event is used to create a particle effect that will follow an entity around. This particle effect is only visible to the specific player that is running the client script where you fired the event. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. MoLang variables defined in the JSON of the effect can then be used to control that effect by changing them in the entity to which it is attached.
-    */
-  /**
-    * This event is used to create a static particle effect in the world. This particle effect is only visible to the specific player that is running the client script where you fired the event. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. Once the effect is spawned you won't be able to control it further. Unlike the server version of the event, the client version will spawn the particle in the dimension the player is currently in.
-    */
-  /**
-    * This event is used to remove a UI screen from the stack of the specific player running the client script. The event data contains the name of the screen to remove as a string. After the event is triggered the screen will be scheduled to be removed from the stack the next time the UI Engine can do so. Only screens defined in a HTML file can be removed using this event.
-    */
-  def broadcastEvent(
-    eventIdentifier: SendToMinecraftClient,
-    eventData: minecraftDashScriptingDashTypesDashSharedLib.IEventData[
-      IDisplayChatParameters | ILoadUIParameters | IScriptLoggerConfigParameters | ISendUIEventParameters | ISpawnParticleAttachedEntityParameters | ISpawnParticleInWorldParameters | IUnloadUIParameters
-    ]
-  ): scala.Boolean | scala.Null = js.native
   /**
     * 
     * @param eventIdentifier Allows you to trigger an event with the desired data from script. 
@@ -47,7 +17,65 @@ trait IVanillaClientSystemBase extends js.Object {
     eventIdentifier: java.lang.String,
     eventData: minecraftDashScriptingDashTypesDashSharedLib.IEventData[TEventDataType]
   ): scala.Boolean | scala.Null = js.native
-  def createComponent(entity: minecraftDashScriptingDashTypesDashSharedLib.IEntity, componentName: MinecraftComponent): minecraftDashScriptingDashTypesDashSharedLib.IComponent[IMoLangComponent] | scala.Null = js.native
+  ///////////////////////////
+  // broadcastEvent overloads
+  /**
+    * This event is used to display a chat message to the specific player that is running the client script. The event data is the message to be displayed in plain text. Special formatting is supported the same way it would be if a player was sending the message.
+    */
+  @JSName("broadcastEvent")
+  def broadcastEvent_minecraftdisplaychatevent(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:display_chat_event`,
+    eventData: minecraftDashScriptingDashTypesDashSharedLib.IEventData[IDisplayChatParameters]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is used to show a UI screen to the specific player running the client script. This event will add the UI screen to the top of the UI screen stack. The screen will be shown immediately after the event is triggered. Only screens defined in a HTML file can be shown using this event.
+    */
+  @JSName("broadcastEvent")
+  def broadcastEvent_minecraftloadui(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:load_ui`,
+    eventData: minecraftDashScriptingDashTypesDashSharedLib.IEventData[ILoadUIParameters]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is used to turn various levels of logging on and off for client scripts. Note that turning logging on/off is not limited to the script that broadcasted the event. It will affect ALL client scripts including those in other Behavior Packs that are applied to the world. See the Debugging section for more information on logging.
+    */
+  @JSName("broadcastEvent")
+  def broadcastEvent_minecraftscriptloggerconfig(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:script_logger_config`,
+    eventData: minecraftDashScriptingDashTypesDashSharedLib.IEventData[IScriptLoggerConfigParameters]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is used to send UI events to the UI Engine for the specific player running the script. After the event is triggered, the UI event will be sent immediately.
+    * Custom UI is based on HTML 5. Review the scripting demo for an example of a custom UI file.
+    */
+  @JSName("broadcastEvent")
+  def broadcastEvent_minecraftsenduievent(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:send_ui_event`,
+    eventData: minecraftDashScriptingDashTypesDashSharedLib.IEventData[ISendUIEventParameters]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is used to create a particle effect that will follow an entity around. This particle effect is only visible to the specific player that is running the client script where you fired the event. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. MoLang variables defined in the JSON of the effect can then be used to control that effect by changing them in the entity to which it is attached.
+    */
+  @JSName("broadcastEvent")
+  def broadcastEvent_minecraftspawnparticleattachedentity(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:spawn_particle_attached_entity`,
+    eventData: minecraftDashScriptingDashTypesDashSharedLib.IEventData[ISpawnParticleAttachedEntityParameters]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is used to create a static particle effect in the world. This particle effect is only visible to the specific player that is running the client script where you fired the event. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. Once the effect is spawned you won't be able to control it further. Unlike the server version of the event, the client version will spawn the particle in the dimension the player is currently in.
+    */
+  @JSName("broadcastEvent")
+  def broadcastEvent_minecraftspawnparticleinworld(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:spawn_particle_in_world`,
+    eventData: minecraftDashScriptingDashTypesDashSharedLib.IEventData[ISpawnParticleInWorldParameters]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is used to remove a UI screen from the stack of the specific player running the client script. The event data contains the name of the screen to remove as a string. After the event is triggered the screen will be scheduled to be removed from the stack the next time the UI Engine can do so. Only screens defined in a HTML file can be removed using this event.
+    */
+  @JSName("broadcastEvent")
+  def broadcastEvent_minecraftunloadui(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:unload_ui`,
+    eventData: minecraftDashScriptingDashTypesDashSharedLib.IEventData[IUnloadUIParameters]
+  ): scala.Boolean | scala.Null = js.native
   /**
     * Creates a component of the specified name and adds it to the entity. This should only be used with custom components which need 
     * to be registered first. If the entity already has the component, this will retrieve the component already there instead.
@@ -56,38 +84,69 @@ trait IVanillaClientSystemBase extends js.Object {
     * @returns An object with all the fields as defined in the component
     */
   def createComponent[TComponent](entity: minecraftDashScriptingDashTypesDashSharedLib.IEntity, componentName: java.lang.String): minecraftDashScriptingDashTypesDashSharedLib.IComponent[TComponent] | scala.Null = js.native
-  ///////////////////////////
-  // createEventData overloads
-  /**
-    * This event is used to display a chat message to the specific player that is running the client script. The event data is the message to be displayed in plain text. Special formatting is supported the same way it would be if a player was sending the message.
-    */
-  /**
-    * This event is used to show a UI screen to the specific player running the client script. This event will add the UI screen to the top of the UI screen stack. The screen will be shown immediately after the event is triggered. Only screens defined in a HTML file can be shown using this event.
-    */
-  /**
-    * This event is used to turn various levels of logging on and off for client scripts. Note that turning logging on/off is not limited to the script that broadcasted the event. It will affect ALL client scripts including those in other Behavior Packs that are applied to the world. See the Debugging section for more information on logging.
-    */
-  /**
-    * This event is used to send UI events to the UI Engine for the specific player running the script. After the event is triggered, the UI event will be sent immediately.
-    * Custom UI is based on HTML 5. Review the scripting demo for an example of a custom UI file.
-    */
-  /**
-    * This event is used to create a particle effect that will follow an entity around. This particle effect is only visible to the specific player that is running the client script where you fired the event. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. MoLang variables defined in the JSON of the effect can then be used to control that effect by changing them in the entity to which it is attached.
-    */
-  /**
-    * This event is used to create a static particle effect in the world. This particle effect is only visible to the specific player that is running the client script where you fired the event. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. Once the effect is spawned you won't be able to control it further. Unlike the server version of the event, the client version will spawn the particle in the dimension the player is currently in.
-    */
-  /**
-    * This event is used to remove a UI screen from the stack of the specific player running the client script. The event data contains the name of the screen to remove as a string. After the event is triggered the screen will be scheduled to be removed from the stack the next time the UI Engine can do so. Only screens defined in a HTML file can be removed using this event.
-    */
-  def createEventData(eventIdentifier: SendToMinecraftClient): minecraftDashScriptingDashTypesDashSharedLib.IEventData[IDisplayChatParameters] | scala.Null = js.native
+  @JSName("createComponent")
+  def createComponent_minecraftmolang(
+    entity: minecraftDashScriptingDashTypesDashSharedLib.IEntity,
+    componentName: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:molang`
+  ): minecraftDashScriptingDashTypesDashSharedLib.IComponent[IMoLangComponent] | scala.Null = js.native
   /**
     * Creates an object with all the required fields and default data for the specified event. If the event is a custom event, it needs to have been previously registered.
     * 
     * @param eventIdentifier This is the identifier of the custom event we are registering. The namespace is required and can't be set to minecraft. 
     */
   def createEventData[TEventDataType](eventIdentifier: java.lang.String): minecraftDashScriptingDashTypesDashSharedLib.IEventData[TEventDataType] | scala.Null = js.native
-  def getComponent(entity: minecraftDashScriptingDashTypesDashSharedLib.IEntity, componentName: MinecraftComponent): minecraftDashScriptingDashTypesDashSharedLib.IComponent[IMoLangComponent] | scala.Null = js.native
+  ///////////////////////////
+  // createEventData overloads
+  /**
+    * This event is used to display a chat message to the specific player that is running the client script. The event data is the message to be displayed in plain text. Special formatting is supported the same way it would be if a player was sending the message.
+    */
+  @JSName("createEventData")
+  def createEventData_minecraftdisplaychatevent(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:display_chat_event`
+  ): minecraftDashScriptingDashTypesDashSharedLib.IEventData[IDisplayChatParameters] | scala.Null = js.native
+  /**
+    * This event is used to show a UI screen to the specific player running the client script. This event will add the UI screen to the top of the UI screen stack. The screen will be shown immediately after the event is triggered. Only screens defined in a HTML file can be shown using this event.
+    */
+  @JSName("createEventData")
+  def createEventData_minecraftloadui(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:load_ui`
+  ): minecraftDashScriptingDashTypesDashSharedLib.IEventData[ILoadUIParameters] | scala.Null = js.native
+  /**
+    * This event is used to turn various levels of logging on and off for client scripts. Note that turning logging on/off is not limited to the script that broadcasted the event. It will affect ALL client scripts including those in other Behavior Packs that are applied to the world. See the Debugging section for more information on logging.
+    */
+  @JSName("createEventData")
+  def createEventData_minecraftscriptloggerconfig(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:script_logger_config`
+  ): minecraftDashScriptingDashTypesDashSharedLib.IEventData[IScriptLoggerConfigParameters] | scala.Null = js.native
+  /**
+    * This event is used to send UI events to the UI Engine for the specific player running the script. After the event is triggered, the UI event will be sent immediately.
+    * Custom UI is based on HTML 5. Review the scripting demo for an example of a custom UI file.
+    */
+  @JSName("createEventData")
+  def createEventData_minecraftsenduievent(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:send_ui_event`
+  ): minecraftDashScriptingDashTypesDashSharedLib.IEventData[ISendUIEventParameters] | scala.Null = js.native
+  /**
+    * This event is used to create a particle effect that will follow an entity around. This particle effect is only visible to the specific player that is running the client script where you fired the event. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. MoLang variables defined in the JSON of the effect can then be used to control that effect by changing them in the entity to which it is attached.
+    */
+  @JSName("createEventData")
+  def createEventData_minecraftspawnparticleattachedentity(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:spawn_particle_attached_entity`
+  ): minecraftDashScriptingDashTypesDashSharedLib.IEventData[ISpawnParticleAttachedEntityParameters] | scala.Null = js.native
+  /**
+    * This event is used to create a static particle effect in the world. This particle effect is only visible to the specific player that is running the client script where you fired the event. Any effect defined in a JSON file (both in your resource pack and in Minecraft) can be used here. Once the effect is spawned you won't be able to control it further. Unlike the server version of the event, the client version will spawn the particle in the dimension the player is currently in.
+    */
+  @JSName("createEventData")
+  def createEventData_minecraftspawnparticleinworld(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:spawn_particle_in_world`
+  ): minecraftDashScriptingDashTypesDashSharedLib.IEventData[ISpawnParticleInWorldParameters] | scala.Null = js.native
+  /**
+    * This event is used to remove a UI screen from the stack of the specific player running the client script. The event data contains the name of the screen to remove as a string. After the event is triggered the screen will be scheduled to be removed from the stack the next time the UI Engine can do so. Only screens defined in a HTML file can be removed using this event.
+    */
+  @JSName("createEventData")
+  def createEventData_minecraftunloadui(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:unload_ui`
+  ): minecraftDashScriptingDashTypesDashSharedLib.IEventData[IUnloadUIParameters] | scala.Null = js.native
   /**
     * Looks for the specified component in the entity. If it exists, retrieves the data from the component and returns it.
     * @param entity The EntityObject that was retrieved from a call to createEntity() or retrieved from an event
@@ -98,35 +157,11 @@ trait IVanillaClientSystemBase extends js.Object {
     entity: minecraftDashScriptingDashTypesDashSharedLib.IEntity,
     componentIdentifier: java.lang.String
   ): minecraftDashScriptingDashTypesDashSharedLib.IComponent[TComponent] | scala.Null = js.native
-  ///////////////////////////
-  // listenForEvent overloads
-  /**
-    * This event is fired whenever a player joins the world. The event data contains the player entity object.
-    */
-  /**
-    * This event is triggered whenever the reticle changes from pointing at a block or air to pointing at an entity and the other way around. Up to 1000 blocks away.
-    */
-  /**
-    * This event is triggered every update and tells you what entity the reticle is pointing to in the world up to 1000 blocks away.
-    */
-  /**
-    * This event is triggered whenever the mouse pointer changes from pointing at a block or air to pointing at an entity and the other way around. Up to 1000 blocks away.
-    */
-  /**
-    * This event is triggered every update and tells you what entity the mouse pointer is pointing to in the world up to 1000 blocks away.
-    */
-  /**
-    * FIXME - UNDOCUMENTED - NO DESCRIPTION FROM MOJANG
-    */
-  def listenForEvent(
-    eventIdentifier: ReceiveFromMinecraftClient,
-    callback: js.Function1[
-      /* eventData */ minecraftDashScriptingDashTypesDashSharedLib.IEventData[
-        IClientEnteredWorldEventData | IHitResultChangedEventData | IHitResultContinuousEventData | IPickHitResultChangedEventData | IPickHitResultContinuousEventData | java.lang.String
-      ], 
-      scala.Unit
-    ]
-  ): scala.Boolean | scala.Null = js.native
+  @JSName("getComponent")
+  def getComponent_minecraftmolang(
+    entity: minecraftDashScriptingDashTypesDashSharedLib.IEntity,
+    componentName: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:molang`
+  ): minecraftDashScriptingDashTypesDashSharedLib.IComponent[IMoLangComponent] | scala.Null = js.native
   /**
     * Allows you to register a JavaScript object that gets called whenever the specified event is broadcast. The event can either be a built-in event or an event specified in script.
     * @param eventIdentifier This is the name of the event to which we want to react. Can be the identifier of a built-in event or a custom one from script
@@ -136,6 +171,74 @@ trait IVanillaClientSystemBase extends js.Object {
     eventIdentifier: java.lang.String,
     callback: js.Function1[
       /* eventData */ minecraftDashScriptingDashTypesDashSharedLib.IEventData[TEventDataType], 
+      scala.Unit
+    ]
+  ): scala.Boolean | scala.Null = js.native
+  ///////////////////////////
+  // listenForEvent overloads
+  /**
+    * This event is fired whenever a player joins the world. The event data contains the player entity object.
+    */
+  @JSName("listenForEvent")
+  def listenForEvent_minecraftcliententeredworld(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:client_entered_world`,
+    callback: js.Function1[
+      /* eventData */ minecraftDashScriptingDashTypesDashSharedLib.IEventData[IClientEnteredWorldEventData], 
+      scala.Unit
+    ]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is triggered whenever the reticle changes from pointing at a block or air to pointing at an entity and the other way around. Up to 1000 blocks away.
+    */
+  @JSName("listenForEvent")
+  def listenForEvent_minecrafthitresultchanged(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:hit_result_changed`,
+    callback: js.Function1[
+      /* eventData */ minecraftDashScriptingDashTypesDashSharedLib.IEventData[IHitResultChangedEventData], 
+      scala.Unit
+    ]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is triggered every update and tells you what entity the reticle is pointing to in the world up to 1000 blocks away.
+    */
+  @JSName("listenForEvent")
+  def listenForEvent_minecrafthitresultcontinuous(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:hit_result_continuous`,
+    callback: js.Function1[
+      /* eventData */ minecraftDashScriptingDashTypesDashSharedLib.IEventData[IHitResultContinuousEventData], 
+      scala.Unit
+    ]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is triggered whenever the mouse pointer changes from pointing at a block or air to pointing at an entity and the other way around. Up to 1000 blocks away.
+    */
+  @JSName("listenForEvent")
+  def listenForEvent_minecraftpickhitresultchanged(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:pick_hit_result_changed`,
+    callback: js.Function1[
+      /* eventData */ minecraftDashScriptingDashTypesDashSharedLib.IEventData[IPickHitResultChangedEventData], 
+      scala.Unit
+    ]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * This event is triggered every update and tells you what entity the mouse pointer is pointing to in the world up to 1000 blocks away.
+    */
+  @JSName("listenForEvent")
+  def listenForEvent_minecraftpickhitresultcontinuous(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:pick_hit_result_continuous`,
+    callback: js.Function1[
+      /* eventData */ minecraftDashScriptingDashTypesDashSharedLib.IEventData[IPickHitResultContinuousEventData], 
+      scala.Unit
+    ]
+  ): scala.Boolean | scala.Null = js.native
+  /**
+    * FIXME - UNDOCUMENTED - NO DESCRIPTION FROM MOJANG
+    */
+  @JSName("listenForEvent")
+  def listenForEvent_minecraftuievent(
+    eventIdentifier: minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:ui_event`,
+    callback: js.Function1[
+      /* eventData */ minecraftDashScriptingDashTypesDashSharedLib.IEventData[java.lang.String], 
       scala.Unit
     ]
   ): scala.Boolean | scala.Null = js.native

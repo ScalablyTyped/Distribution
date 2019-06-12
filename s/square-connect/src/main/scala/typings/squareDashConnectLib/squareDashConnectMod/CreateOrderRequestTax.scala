@@ -25,6 +25,7 @@ class CreateOrderRequestTax () extends js.Object {
   /**
     * Only used for ad hoc taxes. Indicates the calculation method used to apply the line item tax.
     * Default: `ADDITIVE`; See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
+    * See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
     */
   var `type`: js.UndefOr[squareDashConnectLib.squareDashConnectMod.CreateOrderRequestTaxNs.TypeEnum] = js.native
 }

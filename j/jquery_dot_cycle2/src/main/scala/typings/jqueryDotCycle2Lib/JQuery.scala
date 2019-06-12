@@ -34,7 +34,7 @@ trait JQuery extends js.Object {
   @JSName("cycle")
   def cycle_stop(methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.stop): JQuery = js.native
   @JSName("on")
-  def `on_cycle-after`(
+  def on_cycleafter(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-after`,
     callback: js.Function5[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -46,7 +46,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-before`(
+  def on_cyclebefore(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-before`,
     callback: js.Function5[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -58,7 +58,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-bootstrap`(
+  def on_cyclebootstrap(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-bootstrap`,
     callback: js.Function3[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -68,7 +68,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-destroyed`(
+  def on_cycledestroyed(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-destroyed`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -77,7 +77,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-finished`(
+  def on_cyclefinished(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-finished`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -86,7 +86,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-initialized`(
+  def on_cycleinitialized(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-initialized`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -95,7 +95,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-next`(
+  def on_cyclenext(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-next`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -104,7 +104,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-pager-activated`(
+  def on_cyclepageractivated(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-pager-activated`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -113,7 +113,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-paused`(
+  def on_cyclepaused(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-paused`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -122,7 +122,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-post-initialize`(
+  def on_cyclepostinitialize(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-post-initialize`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -131,7 +131,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-pre-initialize`(
+  def on_cyclepreinitialize(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-pre-initialize`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -140,7 +140,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-prev`(
+  def on_cycleprev(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-prev`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -149,7 +149,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-resumed`(
+  def on_cycleresumed(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-resumed`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -158,7 +158,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-slide-added`(
+  def on_cycleslideadded(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-slide-added`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -167,7 +167,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-slide-removed`(
+  def on_cycleslideremoved(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-slide-removed`,
     callback: js.Function3[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -177,7 +177,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-stopped`(
+  def on_cyclestopped(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-stopped`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -186,7 +186,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-transition-stopped`(
+  def on_cycletransitionstopped(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-transition-stopped`,
     callback: js.Function2[
       /* event */ jqueryLib.JQueryEventObject, 
@@ -195,7 +195,7 @@ trait JQuery extends js.Object {
     ]
   ): JQuery = js.native
   @JSName("on")
-  def `on_cycle-update-view`(
+  def on_cycleupdateview(
     methodName: jqueryDotCycle2Lib.jqueryDotCycle2LibStrings.`cycle-update-view`,
     callback: js.Function4[
       /* event */ jqueryLib.JQueryEventObject, 

@@ -26,9 +26,11 @@ class Client ()
   def config(): this.type = js.native
   def config(dsn: java.lang.String): this.type = js.native
   def config(dsn: java.lang.String, options: ConstructorOptions): this.type = js.native
-  def config(dsn: ravenLib.ravenLibNumbers.`false`): this.type = js.native
-  def config(dsn: ravenLib.ravenLibNumbers.`false`, options: ConstructorOptions): this.type = js.native
   def config(options: ConstructorOptions): this.type = js.native
+  @JSName("config")
+  def config_false(dsn: ravenLib.ravenLibNumbers.`false`): this.type = js.native
+  @JSName("config")
+  def config_false(dsn: ravenLib.ravenLibNumbers.`false`, options: ConstructorOptions): this.type = js.native
   def context[T](ctx: js.Any, func: js.Function0[T]): T = js.native
   def context[T](func: js.Function0[T]): T = js.native
   def errorHandler(): js.Function4[

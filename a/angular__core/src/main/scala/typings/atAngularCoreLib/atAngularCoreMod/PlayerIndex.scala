@@ -5,47 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait PlayerIndex extends js.Object
-
-@JSImport("@angular/core", "PlayerIndex")
-@js.native
-object PlayerIndex extends js.Object {
-  @js.native
-  sealed trait ClassMapPlayerBuilderPosition
-    extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
-  
-  @js.native
-  sealed trait ClassMapPlayerPosition
-    extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
-  
-  @js.native
-  sealed trait NonBuilderPlayersStart
-    extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
-  
-  @js.native
-  sealed trait PlayerAndPlayerBuildersTupleSize
-    extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
-  
-  @js.native
-  sealed trait PlayerBuildersStartPosition
-    extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
-  
-  @js.native
-  sealed trait PlayerOffsetPosition
-    extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
-  
-  @js.native
-  sealed trait SinglePlayerBuildersStartPosition
-    extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
-  
-  @js.native
-  sealed trait StyleMapPlayerBuilderPosition
-    extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
-  
-  @js.native
-  sealed trait StyleMapPlayerPosition
-    extends atAngularCoreLib.atAngularCoreMod.PlayerIndex
-  
-}
+/* Rewritten from type alias, can be one of: 
+  - atAngularCoreLib.atAngularCoreLibNumbers.`0`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`1`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`2`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`3`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`4`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`5`
+*/
+trait PlayerIndex extends js.Object
 

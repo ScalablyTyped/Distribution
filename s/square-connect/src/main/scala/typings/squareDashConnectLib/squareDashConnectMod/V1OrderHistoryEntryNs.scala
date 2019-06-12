@@ -30,11 +30,11 @@ object V1OrderHistoryEntryNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1OrderHistoryEntryNs.ActionEnum
     
     @js.native
-    sealed trait ORDERPLACED
+    sealed trait ORDER_PLACED
       extends squareDashConnectLib.squareDashConnectMod.V1OrderHistoryEntryNs.ActionEnum
     
     @js.native
-    sealed trait PAYMENTRECEIVED
+    sealed trait PAYMENT_RECEIVED
       extends squareDashConnectLib.squareDashConnectMod.V1OrderHistoryEntryNs.ActionEnum
     
     @js.native
@@ -45,8 +45,8 @@ object V1OrderHistoryEntryNs extends js.Object {
     /* "COMPLETED" */ val COMPLETED: COMPLETED with java.lang.String = js.native
     /* "DECLINED" */ val DECLINED: DECLINED with java.lang.String = js.native
     /* "EXPIRED" */ val EXPIRED: EXPIRED with java.lang.String = js.native
-    /* "ORDER_PLACED" */ val ORDERPLACED: ORDERPLACED with java.lang.String = js.native
-    /* "PAYMENT_RECEIVED" */ val PAYMENTRECEIVED: PAYMENTRECEIVED with java.lang.String = js.native
+    /* "ORDER_PLACED" */ val ORDER_PLACED: ORDER_PLACED with java.lang.String = js.native
+    /* "PAYMENT_RECEIVED" */ val PAYMENT_RECEIVED: PAYMENT_RECEIVED with java.lang.String = js.native
     /* "REFUNDED" */ val REFUNDED: REFUNDED with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[

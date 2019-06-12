@@ -45,7 +45,7 @@ package object effectsMod {
     GetContextEffectDescriptor
   ]
   type GetContextEffectDescriptor = java.lang.String
-  type HelperWorkerParameters[T, Fn /* <: js.Function1[/* repeated */ js.Any, _] */] = AllButLast[stdLib.Parameters[Fn]]
+  type HelperWorkerParameters[T, Fn /* <: js.Function1[/* repeated */ js.Any, _] */] = stdLib.Parameters[Fn] | AllButLast[stdLib.Parameters[Fn]]
   type JoinEffect = atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.SimpleEffect[atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.JOIN, JoinEffectDescriptor]
   type JoinEffectDescriptor = atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Task | js.Array[atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Task]
   type PutEffect[A /* <: reduxLib.reduxMod.Action[_] */] = atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.SimpleEffect[atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.PUT, PutEffectDescriptor[A]]

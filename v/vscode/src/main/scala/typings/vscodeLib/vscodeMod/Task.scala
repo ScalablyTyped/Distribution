@@ -24,7 +24,8 @@ class Task protected () extends js.Object {
   def this(taskDefinition: TaskDefinition, name: java.lang.String, source: java.lang.String) = this()
   def this(taskDefinition: TaskDefinition, name: java.lang.String, source: java.lang.String, execution: ProcessExecution) = this()
   def this(taskDefinition: TaskDefinition, name: java.lang.String, source: java.lang.String, execution: ShellExecution) = this()
-  def this(taskDefinition: TaskDefinition, scope: TaskScope, name: java.lang.String, source: java.lang.String) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Global, name: java.lang.String, source: java.lang.String) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Workspace, name: java.lang.String, source: java.lang.String) = this()
   /**
   		 * Creates a new task.
   		 *
@@ -42,14 +43,20 @@ class Task protected () extends js.Object {
   def this(taskDefinition: TaskDefinition, name: java.lang.String, source: java.lang.String, execution: ProcessExecution, problemMatchers: js.Array[java.lang.String]) = this()
   def this(taskDefinition: TaskDefinition, name: java.lang.String, source: java.lang.String, execution: ShellExecution, problemMatchers: java.lang.String) = this()
   def this(taskDefinition: TaskDefinition, name: java.lang.String, source: java.lang.String, execution: ShellExecution, problemMatchers: js.Array[java.lang.String]) = this()
-  def this(taskDefinition: TaskDefinition, scope: TaskScope, name: java.lang.String, source: java.lang.String, execution: ProcessExecution) = this()
-  def this(taskDefinition: TaskDefinition, scope: TaskScope, name: java.lang.String, source: java.lang.String, execution: ShellExecution) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Global, name: java.lang.String, source: java.lang.String, execution: ProcessExecution) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Global, name: java.lang.String, source: java.lang.String, execution: ShellExecution) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Workspace, name: java.lang.String, source: java.lang.String, execution: ProcessExecution) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Workspace, name: java.lang.String, source: java.lang.String, execution: ShellExecution) = this()
   def this(taskDefinition: TaskDefinition, scope: WorkspaceFolder, name: java.lang.String, source: java.lang.String, execution: ProcessExecution) = this()
   def this(taskDefinition: TaskDefinition, scope: WorkspaceFolder, name: java.lang.String, source: java.lang.String, execution: ShellExecution) = this()
-  def this(taskDefinition: TaskDefinition, scope: TaskScope, name: java.lang.String, source: java.lang.String, execution: ProcessExecution, problemMatchers: java.lang.String) = this()
-  def this(taskDefinition: TaskDefinition, scope: TaskScope, name: java.lang.String, source: java.lang.String, execution: ProcessExecution, problemMatchers: js.Array[java.lang.String]) = this()
-  def this(taskDefinition: TaskDefinition, scope: TaskScope, name: java.lang.String, source: java.lang.String, execution: ShellExecution, problemMatchers: java.lang.String) = this()
-  def this(taskDefinition: TaskDefinition, scope: TaskScope, name: java.lang.String, source: java.lang.String, execution: ShellExecution, problemMatchers: js.Array[java.lang.String]) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Global, name: java.lang.String, source: java.lang.String, execution: ProcessExecution, problemMatchers: java.lang.String) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Global, name: java.lang.String, source: java.lang.String, execution: ProcessExecution, problemMatchers: js.Array[java.lang.String]) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Global, name: java.lang.String, source: java.lang.String, execution: ShellExecution, problemMatchers: java.lang.String) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Global, name: java.lang.String, source: java.lang.String, execution: ShellExecution, problemMatchers: js.Array[java.lang.String]) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Workspace, name: java.lang.String, source: java.lang.String, execution: ProcessExecution, problemMatchers: java.lang.String) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Workspace, name: java.lang.String, source: java.lang.String, execution: ProcessExecution, problemMatchers: js.Array[java.lang.String]) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Workspace, name: java.lang.String, source: java.lang.String, execution: ShellExecution, problemMatchers: java.lang.String) = this()
+  def this(taskDefinition: TaskDefinition, scope: vscodeLib.vscodeMod.TaskScope.Workspace, name: java.lang.String, source: java.lang.String, execution: ShellExecution, problemMatchers: js.Array[java.lang.String]) = this()
   def this(taskDefinition: TaskDefinition, scope: WorkspaceFolder, name: java.lang.String, source: java.lang.String, execution: ProcessExecution, problemMatchers: java.lang.String) = this()
   def this(taskDefinition: TaskDefinition, scope: WorkspaceFolder, name: java.lang.String, source: java.lang.String, execution: ProcessExecution, problemMatchers: js.Array[java.lang.String]) = this()
   def this(taskDefinition: TaskDefinition, scope: WorkspaceFolder, name: java.lang.String, source: java.lang.String, execution: ShellExecution, problemMatchers: java.lang.String) = this()
@@ -93,7 +100,9 @@ class Task protected () extends js.Object {
   /**
   		 * The task's scope.
   		 */
-  val scope: js.UndefOr[TaskScope | WorkspaceFolder] = js.native
+  val scope: js.UndefOr[
+    vscodeLib.vscodeMod.TaskScope.Global | vscodeLib.vscodeMod.TaskScope.Workspace | WorkspaceFolder
+  ] = js.native
   /**
   		 * A human-readable string describing the source of this
   		 * shell task, e.g. 'gulp' or 'npm'.

@@ -27,12 +27,12 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_before-input-event`(
+  def addListener_beforeinputevent(
     event: electronLib.electronLibStrings.`before-input-event`,
     listener: js.Function2[/* event */ Event, /* input */ Input, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_certificate-error`(
+  def addListener_certificateerror(
     event: electronLib.electronLibStrings.`certificate-error`,
     listener: js.Function5[
       /* event */ Event, 
@@ -44,7 +44,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_console-message`(
+  def addListener_consolemessage(
     event: electronLib.electronLibStrings.`console-message`,
     listener: js.Function5[
       /* event */ Event, 
@@ -56,7 +56,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_context-menu`(
+  def addListener_contextmenu(
     event: electronLib.electronLibStrings.`context-menu`,
     listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, scala.Unit]
   ): this.type = js.native
@@ -66,7 +66,7 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* killed */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_cursor-changed`(
+  def addListener_cursorchanged(
     event: electronLib.electronLibStrings.`cursor-changed`,
     listener: js.Function6[
       /* event */ Event, 
@@ -79,32 +79,32 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_desktop-capturer-get-sources`(
+  def addListener_desktopcapturergetsources(
     event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_destroyed(event: electronLib.electronLibStrings.destroyed, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_devtools-closed`(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
+  def addListener_devtoolsclosed(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_devtools-focused`(event: electronLib.electronLibStrings.`devtools-focused`, listener: js.Function): this.type = js.native
+  def addListener_devtoolsfocused(event: electronLib.electronLibStrings.`devtools-focused`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_devtools-opened`(event: electronLib.electronLibStrings.`devtools-opened`, listener: js.Function): this.type = js.native
+  def addListener_devtoolsopened(event: electronLib.electronLibStrings.`devtools-opened`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_devtools-reload-page`(event: electronLib.electronLibStrings.`devtools-reload-page`, listener: js.Function): this.type = js.native
+  def addListener_devtoolsreloadpage(event: electronLib.electronLibStrings.`devtools-reload-page`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-attach-webview`(
+  def addListener_didattachwebview(
     event: electronLib.electronLibStrings.`did-attach-webview`,
     listener: js.Function2[/* event */ Event, /* webContents */ this.type, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-change-theme-color`(
+  def addListener_didchangethemecolor(
     event: electronLib.electronLibStrings.`did-change-theme-color`,
     listener: js.Function2[/* event */ Event, /* color */ java.lang.String | scala.Null, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-fail-load`(
+  def addListener_didfailload(
     event: electronLib.electronLibStrings.`did-fail-load`,
     listener: js.Function7[
       /* event */ Event, 
@@ -118,9 +118,9 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-finish-load`(event: electronLib.electronLibStrings.`did-finish-load`, listener: js.Function): this.type = js.native
+  def addListener_didfinishload(event: electronLib.electronLibStrings.`did-finish-load`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-frame-finish-load`(
+  def addListener_didframefinishload(
     event: electronLib.electronLibStrings.`did-frame-finish-load`,
     listener: js.Function4[
       /* event */ Event, 
@@ -131,7 +131,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-frame-navigate`(
+  def addListener_didframenavigate(
     event: electronLib.electronLibStrings.`did-frame-navigate`,
     listener: js.Function7[
       /* event */ Event, 
@@ -145,7 +145,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-navigate`(
+  def addListener_didnavigate(
     event: electronLib.electronLibStrings.`did-navigate`,
     listener: js.Function4[
       /* event */ Event, 
@@ -156,7 +156,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-navigate-in-page`(
+  def addListener_didnavigateinpage(
     event: electronLib.electronLibStrings.`did-navigate-in-page`,
     listener: js.Function5[
       /* event */ Event, 
@@ -168,7 +168,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-redirect-navigation`(
+  def addListener_didredirectnavigation(
     event: electronLib.electronLibStrings.`did-redirect-navigation`,
     listener: js.Function6[
       /* event */ Event, 
@@ -181,9 +181,9 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-start-loading`(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
+  def addListener_didstartloading(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-start-navigation`(
+  def addListener_didstartnavigation(
     event: electronLib.electronLibStrings.`did-start-navigation`,
     listener: js.Function6[
       /* event */ Event, 
@@ -196,24 +196,24 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_did-stop-loading`(event: electronLib.electronLibStrings.`did-stop-loading`, listener: js.Function): this.type = js.native
+  def addListener_didstoploading(event: electronLib.electronLibStrings.`did-stop-loading`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_dom-ready`(
+  def addListener_domready(
     event: electronLib.electronLibStrings.`dom-ready`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_found-in-page`(
+  def addListener_foundinpage(
     event: electronLib.electronLibStrings.`found-in-page`,
     listener: js.Function2[/* event */ Event, /* result */ Result, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_ipc-message`(
+  def addListener_ipcmessage(
     event: electronLib.electronLibStrings.`ipc-message`,
     listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_ipc-message-sync`(
+  def addListener_ipcmessagesync(
     event: electronLib.electronLibStrings.`ipc-message-sync`,
     listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
@@ -229,16 +229,16 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_media-paused`(event: electronLib.electronLibStrings.`media-paused`, listener: js.Function): this.type = js.native
+  def addListener_mediapaused(event: electronLib.electronLibStrings.`media-paused`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_media-started-playing`(event: electronLib.electronLibStrings.`media-started-playing`, listener: js.Function): this.type = js.native
+  def addListener_mediastartedplaying(event: electronLib.electronLibStrings.`media-started-playing`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_page-favicon-updated`(
+  def addListener_pagefaviconupdated(
     event: electronLib.electronLibStrings.`page-favicon-updated`,
     listener: js.Function2[/* event */ Event, /* favicons */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_page-title-updated`(
+  def addListener_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function3[
       /* event */ Event, 
@@ -253,7 +253,7 @@ class WebContents () extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_plugin-crashed`(
+  def addListener_plugincrashed(
     event: electronLib.electronLibStrings.`plugin-crashed`,
     listener: js.Function3[
       /* event */ Event, 
@@ -263,7 +263,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_preload-error`(
+  def addListener_preloaderror(
     event: electronLib.electronLibStrings.`preload-error`,
     listener: js.Function3[
       /* event */ Event, 
@@ -273,39 +273,39 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-builtin`(
+  def addListener_remotegetbuiltin(
     event: electronLib.electronLibStrings.`remote-get-builtin`,
     listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-current-web-contents`(
+  def addListener_remotegetcurrentwebcontents(
     event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-current-window`(
+  def addListener_remotegetcurrentwindow(
     event: electronLib.electronLibStrings.`remote-get-current-window`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-global`(
+  def addListener_remotegetglobal(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function2[/* event */ Event, /* globalName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-guest-web-contents`(
+  def addListener_remotegetguestwebcontents(
     event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
     listener: js.Function2[/* event */ Event, /* guestWebContents */ this.type, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-require`(
+  def addListener_remoterequire(
     event: electronLib.electronLibStrings.`remote-require`,
     listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_responsive(event: electronLib.electronLibStrings.responsive, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_select-bluetooth-device`(
+  def addListener_selectbluetoothdevice(
     event: electronLib.electronLibStrings.`select-bluetooth-device`,
     listener: js.Function3[
       /* event */ Event, 
@@ -315,7 +315,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_select-client-certificate`(
+  def addListener_selectclientcertificate(
     event: electronLib.electronLibStrings.`select-client-certificate`,
     listener: js.Function4[
       /* event */ Event, 
@@ -328,27 +328,27 @@ class WebContents () extends EventEmitter {
   @JSName("addListener")
   def addListener_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_update-target-url`(
+  def addListener_updatetargeturl(
     event: electronLib.electronLibStrings.`update-target-url`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_will-attach-webview`(
+  def addListener_willattachwebview(
     event: electronLib.electronLibStrings.`will-attach-webview`,
     listener: js.Function3[/* event */ Event, /* webPreferences */ js.Any, /* params */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_will-navigate`(
+  def addListener_willnavigate(
     event: electronLib.electronLibStrings.`will-navigate`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_will-prevent-unload`(
+  def addListener_willpreventunload(
     event: electronLib.electronLibStrings.`will-prevent-unload`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_will-redirect`(
+  def addListener_willredirect(
     event: electronLib.electronLibStrings.`will-redirect`,
     listener: js.Function6[
       /* event */ Event, 
@@ -587,7 +587,7 @@ class WebContents () extends EventEmitter {
     * shortcuts. To only prevent the menu shortcuts, use setIgnoreMenuShortcuts:
     */
   @JSName("on")
-  def `on_before-input-event`(
+  def on_beforeinputevent(
     event: electronLib.electronLibStrings.`before-input-event`,
     listener: js.Function2[/* event */ Event, /* input */ Input, scala.Unit]
   ): this.type = js.native
@@ -596,7 +596,7 @@ class WebContents () extends EventEmitter {
     * with the certificate-error event of app.
     */
   @JSName("on")
-  def `on_certificate-error`(
+  def on_certificateerror(
     event: electronLib.electronLibStrings.`certificate-error`,
     listener: js.Function5[
       /* event */ Event, 
@@ -612,7 +612,7 @@ class WebContents () extends EventEmitter {
     * for windows with offscreen rendering enabled.
     */
   @JSName("on")
-  def `on_console-message`(
+  def on_consolemessage(
     event: electronLib.electronLibStrings.`console-message`,
     listener: js.Function5[
       /* event */ Event, 
@@ -627,7 +627,7 @@ class WebContents () extends EventEmitter {
     * Emitted when there is a new context menu that needs to be handled.
     */
   @JSName("on")
-  def `on_context-menu`(
+  def on_contextmenu(
     event: electronLib.electronLibStrings.`context-menu`,
     listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, scala.Unit]
   ): this.type = js.native
@@ -652,7 +652,7 @@ class WebContents () extends EventEmitter {
     * the custom cursor.
     */
   @JSName("on")
-  def `on_cursor-changed`(
+  def on_cursorchanged(
     event: electronLib.electronLibStrings.`cursor-changed`,
     listener: js.Function6[
       /* event */ Event, 
@@ -669,7 +669,7 @@ class WebContents () extends EventEmitter {
     * Calling event.preventDefault() will make it return empty sources.
     */
   @JSName("on")
-  def `on_desktop-capturer-get-sources`(
+  def on_desktopcapturergetsources(
     event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -682,27 +682,27 @@ class WebContents () extends EventEmitter {
     * Emitted when DevTools is closed.
     */
   @JSName("on")
-  def `on_devtools-closed`(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
+  def on_devtoolsclosed(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
   /**
     * Emitted when DevTools is focused / opened.
     */
   @JSName("on")
-  def `on_devtools-focused`(event: electronLib.electronLibStrings.`devtools-focused`, listener: js.Function): this.type = js.native
+  def on_devtoolsfocused(event: electronLib.electronLibStrings.`devtools-focused`, listener: js.Function): this.type = js.native
   /**
     * Emitted when DevTools is opened.
     */
   @JSName("on")
-  def `on_devtools-opened`(event: electronLib.electronLibStrings.`devtools-opened`, listener: js.Function): this.type = js.native
+  def on_devtoolsopened(event: electronLib.electronLibStrings.`devtools-opened`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the devtools window instructs the webContents to reload
     */
   @JSName("on")
-  def `on_devtools-reload-page`(event: electronLib.electronLibStrings.`devtools-reload-page`, listener: js.Function): this.type = js.native
+  def on_devtoolsreloadpage(event: electronLib.electronLibStrings.`devtools-reload-page`, listener: js.Function): this.type = js.native
   /**
     * Emitted when a <webview> has been attached to this web contents.
     */
   @JSName("on")
-  def `on_did-attach-webview`(
+  def on_didattachwebview(
     event: electronLib.electronLibStrings.`did-attach-webview`,
     listener: js.Function2[/* event */ Event, /* webContents */ this.type, scala.Unit]
   ): this.type = js.native
@@ -711,7 +711,7 @@ class WebContents () extends EventEmitter {
     * meta tag:
     */
   @JSName("on")
-  def `on_did-change-theme-color`(
+  def on_didchangethemecolor(
     event: electronLib.electronLibStrings.`did-change-theme-color`,
     listener: js.Function2[/* event */ Event, /* color */ java.lang.String | scala.Null, scala.Unit]
   ): this.type = js.native
@@ -721,7 +721,7 @@ class WebContents () extends EventEmitter {
     * meaning is available here.
     */
   @JSName("on")
-  def `on_did-fail-load`(
+  def on_didfailload(
     event: electronLib.electronLibStrings.`did-fail-load`,
     listener: js.Function7[
       /* event */ Event, 
@@ -739,12 +739,12 @@ class WebContents () extends EventEmitter {
     * spinning, and the onload event was dispatched.
     */
   @JSName("on")
-  def `on_did-finish-load`(event: electronLib.electronLibStrings.`did-finish-load`, listener: js.Function): this.type = js.native
+  def on_didfinishload(event: electronLib.electronLibStrings.`did-finish-load`, listener: js.Function): this.type = js.native
   /**
     * Emitted when a frame has done navigation.
     */
   @JSName("on")
-  def `on_did-frame-finish-load`(
+  def on_didframefinishload(
     event: electronLib.electronLibStrings.`did-frame-finish-load`,
     listener: js.Function4[
       /* event */ Event, 
@@ -760,7 +760,7 @@ class WebContents () extends EventEmitter {
     * Use did-navigate-in-page event for this purpose.
     */
   @JSName("on")
-  def `on_did-frame-navigate`(
+  def on_didframenavigate(
     event: electronLib.electronLibStrings.`did-frame-navigate`,
     listener: js.Function7[
       /* event */ Event, 
@@ -779,7 +779,7 @@ class WebContents () extends EventEmitter {
     * window.location.hash. Use did-navigate-in-page event for this purpose.
     */
   @JSName("on")
-  def `on_did-navigate`(
+  def on_didnavigate(
     event: electronLib.electronLibStrings.`did-navigate`,
     listener: js.Function4[
       /* event */ Event, 
@@ -796,7 +796,7 @@ class WebContents () extends EventEmitter {
     * when the DOM hashchange event is triggered.
     */
   @JSName("on")
-  def `on_did-navigate-in-page`(
+  def on_didnavigateinpage(
     event: electronLib.electronLibStrings.`did-navigate-in-page`,
     listener: js.Function5[
       /* event */ Event, 
@@ -813,7 +813,7 @@ class WebContents () extends EventEmitter {
     * you should checkout out the will-redirect event above.
     */
   @JSName("on")
-  def `on_did-redirect-navigation`(
+  def on_didredirectnavigation(
     event: electronLib.electronLibStrings.`did-redirect-navigation`,
     listener: js.Function6[
       /* event */ Event, 
@@ -829,13 +829,13 @@ class WebContents () extends EventEmitter {
     * Corresponds to the points in time when the spinner of the tab started spinning.
     */
   @JSName("on")
-  def `on_did-start-loading`(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
+  def on_didstartloading(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
   /**
     * Emitted when any frame (including main) starts navigating. isInplace will be
     * true for in-page navigations.
     */
   @JSName("on")
-  def `on_did-start-navigation`(
+  def on_didstartnavigation(
     event: electronLib.electronLibStrings.`did-start-navigation`,
     listener: js.Function6[
       /* event */ Event, 
@@ -851,12 +851,12 @@ class WebContents () extends EventEmitter {
     * Corresponds to the points in time when the spinner of the tab stopped spinning.
     */
   @JSName("on")
-  def `on_did-stop-loading`(event: electronLib.electronLibStrings.`did-stop-loading`, listener: js.Function): this.type = js.native
+  def on_didstoploading(event: electronLib.electronLibStrings.`did-stop-loading`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the document in the given frame is loaded.
     */
   @JSName("on")
-  def `on_dom-ready`(
+  def on_domready(
     event: electronLib.electronLibStrings.`dom-ready`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -864,7 +864,7 @@ class WebContents () extends EventEmitter {
     * Emitted when a result is available for [webContents.findInPage] request.
     */
   @JSName("on")
-  def `on_found-in-page`(
+  def on_foundinpage(
     event: electronLib.electronLibStrings.`found-in-page`,
     listener: js.Function2[/* event */ Event, /* result */ Result, scala.Unit]
   ): this.type = js.native
@@ -873,7 +873,7 @@ class WebContents () extends EventEmitter {
     * ipcRenderer.send().
     */
   @JSName("on")
-  def `on_ipc-message`(
+  def on_ipcmessage(
     event: electronLib.electronLibStrings.`ipc-message`,
     listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
@@ -882,7 +882,7 @@ class WebContents () extends EventEmitter {
     * ipcRenderer.sendSync().
     */
   @JSName("on")
-  def `on_ipc-message-sync`(
+  def on_ipcmessagesync(
     event: electronLib.electronLibStrings.`ipc-message-sync`,
     listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
@@ -905,17 +905,17 @@ class WebContents () extends EventEmitter {
     * Emitted when media is paused or done playing.
     */
   @JSName("on")
-  def `on_media-paused`(event: electronLib.electronLibStrings.`media-paused`, listener: js.Function): this.type = js.native
+  def on_mediapaused(event: electronLib.electronLibStrings.`media-paused`, listener: js.Function): this.type = js.native
   /**
     * Emitted when media starts playing.
     */
   @JSName("on")
-  def `on_media-started-playing`(event: electronLib.electronLibStrings.`media-started-playing`, listener: js.Function): this.type = js.native
+  def on_mediastartedplaying(event: electronLib.electronLibStrings.`media-started-playing`, listener: js.Function): this.type = js.native
   /**
     * Emitted when page receives favicon urls.
     */
   @JSName("on")
-  def `on_page-favicon-updated`(
+  def on_pagefaviconupdated(
     event: electronLib.electronLibStrings.`page-favicon-updated`,
     listener: js.Function2[/* event */ Event, /* favicons */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
@@ -924,7 +924,7 @@ class WebContents () extends EventEmitter {
     * is synthesized from file url.
     */
   @JSName("on")
-  def `on_page-title-updated`(
+  def on_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function3[
       /* event */ Event, 
@@ -946,7 +946,7 @@ class WebContents () extends EventEmitter {
     * Emitted when a plugin process has crashed.
     */
   @JSName("on")
-  def `on_plugin-crashed`(
+  def on_plugincrashed(
     event: electronLib.electronLibStrings.`plugin-crashed`,
     listener: js.Function3[
       /* event */ Event, 
@@ -959,7 +959,7 @@ class WebContents () extends EventEmitter {
     * Emitted when the preload script preloadPath throws an unhandled exception error.
     */
   @JSName("on")
-  def `on_preload-error`(
+  def on_preloaderror(
     event: electronLib.electronLibStrings.`preload-error`,
     listener: js.Function3[
       /* event */ Event, 
@@ -974,7 +974,7 @@ class WebContents () extends EventEmitter {
     * can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-builtin`(
+  def on_remotegetbuiltin(
     event: electronLib.electronLibStrings.`remote-get-builtin`,
     listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -984,7 +984,7 @@ class WebContents () extends EventEmitter {
     * Custom value can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-current-web-contents`(
+  def on_remotegetcurrentwebcontents(
     event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -994,7 +994,7 @@ class WebContents () extends EventEmitter {
     * Custom value can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-current-window`(
+  def on_remotegetcurrentwindow(
     event: electronLib.electronLibStrings.`remote-get-current-window`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -1004,7 +1004,7 @@ class WebContents () extends EventEmitter {
     * can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-global`(
+  def on_remotegetglobal(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function2[/* event */ Event, /* globalName */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -1014,7 +1014,7 @@ class WebContents () extends EventEmitter {
     * Custom value can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-guest-web-contents`(
+  def on_remotegetguestwebcontents(
     event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
     listener: js.Function2[/* event */ Event, /* guestWebContents */ this.type, scala.Unit]
   ): this.type = js.native
@@ -1024,7 +1024,7 @@ class WebContents () extends EventEmitter {
     * can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-require`(
+  def on_remoterequire(
     event: electronLib.electronLibStrings.`remote-require`,
     listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -1041,7 +1041,7 @@ class WebContents () extends EventEmitter {
     * passing empty string to callback will cancel the request.
     */
   @JSName("on")
-  def `on_select-bluetooth-device`(
+  def on_selectbluetoothdevice(
     event: electronLib.electronLibStrings.`select-bluetooth-device`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1055,7 +1055,7 @@ class WebContents () extends EventEmitter {
     * select-client-certificate event of app.
     */
   @JSName("on")
-  def `on_select-client-certificate`(
+  def on_selectclientcertificate(
     event: electronLib.electronLibStrings.`select-client-certificate`,
     listener: js.Function4[
       /* event */ Event, 
@@ -1074,7 +1074,7 @@ class WebContents () extends EventEmitter {
     * Emitted when mouse moves over a link or the keyboard moves the focus to a link.
     */
   @JSName("on")
-  def `on_update-target-url`(
+  def on_updatetargeturl(
     event: electronLib.electronLibStrings.`update-target-url`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -1087,7 +1087,7 @@ class WebContents () extends EventEmitter {
     * preloadURL (not preload) in the webPreferences object emitted with this event.
     */
   @JSName("on")
-  def `on_will-attach-webview`(
+  def on_willattachwebview(
     event: electronLib.electronLibStrings.`will-attach-webview`,
     listener: js.Function3[/* event */ Event, /* webPreferences */ js.Any, /* params */ js.Any, scala.Unit]
   ): this.type = js.native
@@ -1101,7 +1101,7 @@ class WebContents () extends EventEmitter {
     * event.preventDefault() will prevent the navigation.
     */
   @JSName("on")
-  def `on_will-navigate`(
+  def on_willnavigate(
     event: electronLib.electronLibStrings.`will-navigate`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -1111,7 +1111,7 @@ class WebContents () extends EventEmitter {
     * allow the page to be unloaded.
     */
   @JSName("on")
-  def `on_will-prevent-unload`(
+  def on_willpreventunload(
     event: electronLib.electronLibStrings.`will-prevent-unload`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -1122,7 +1122,7 @@ class WebContents () extends EventEmitter {
     * event.preventDefault() will prevent the navigation (not just the redirect).
     */
   @JSName("on")
-  def `on_will-redirect`(
+  def on_willredirect(
     event: electronLib.electronLibStrings.`will-redirect`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1148,12 +1148,12 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_before-input-event`(
+  def once_beforeinputevent(
     event: electronLib.electronLibStrings.`before-input-event`,
     listener: js.Function2[/* event */ Event, /* input */ Input, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_certificate-error`(
+  def once_certificateerror(
     event: electronLib.electronLibStrings.`certificate-error`,
     listener: js.Function5[
       /* event */ Event, 
@@ -1165,7 +1165,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_console-message`(
+  def once_consolemessage(
     event: electronLib.electronLibStrings.`console-message`,
     listener: js.Function5[
       /* event */ Event, 
@@ -1177,7 +1177,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_context-menu`(
+  def once_contextmenu(
     event: electronLib.electronLibStrings.`context-menu`,
     listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, scala.Unit]
   ): this.type = js.native
@@ -1187,7 +1187,7 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* killed */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_cursor-changed`(
+  def once_cursorchanged(
     event: electronLib.electronLibStrings.`cursor-changed`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1200,32 +1200,32 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_desktop-capturer-get-sources`(
+  def once_desktopcapturergetsources(
     event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_destroyed(event: electronLib.electronLibStrings.destroyed, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_devtools-closed`(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
+  def once_devtoolsclosed(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_devtools-focused`(event: electronLib.electronLibStrings.`devtools-focused`, listener: js.Function): this.type = js.native
+  def once_devtoolsfocused(event: electronLib.electronLibStrings.`devtools-focused`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_devtools-opened`(event: electronLib.electronLibStrings.`devtools-opened`, listener: js.Function): this.type = js.native
+  def once_devtoolsopened(event: electronLib.electronLibStrings.`devtools-opened`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_devtools-reload-page`(event: electronLib.electronLibStrings.`devtools-reload-page`, listener: js.Function): this.type = js.native
+  def once_devtoolsreloadpage(event: electronLib.electronLibStrings.`devtools-reload-page`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_did-attach-webview`(
+  def once_didattachwebview(
     event: electronLib.electronLibStrings.`did-attach-webview`,
     listener: js.Function2[/* event */ Event, /* webContents */ this.type, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_did-change-theme-color`(
+  def once_didchangethemecolor(
     event: electronLib.electronLibStrings.`did-change-theme-color`,
     listener: js.Function2[/* event */ Event, /* color */ java.lang.String | scala.Null, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_did-fail-load`(
+  def once_didfailload(
     event: electronLib.electronLibStrings.`did-fail-load`,
     listener: js.Function7[
       /* event */ Event, 
@@ -1239,9 +1239,9 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_did-finish-load`(event: electronLib.electronLibStrings.`did-finish-load`, listener: js.Function): this.type = js.native
+  def once_didfinishload(event: electronLib.electronLibStrings.`did-finish-load`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_did-frame-finish-load`(
+  def once_didframefinishload(
     event: electronLib.electronLibStrings.`did-frame-finish-load`,
     listener: js.Function4[
       /* event */ Event, 
@@ -1252,7 +1252,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_did-frame-navigate`(
+  def once_didframenavigate(
     event: electronLib.electronLibStrings.`did-frame-navigate`,
     listener: js.Function7[
       /* event */ Event, 
@@ -1266,7 +1266,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_did-navigate`(
+  def once_didnavigate(
     event: electronLib.electronLibStrings.`did-navigate`,
     listener: js.Function4[
       /* event */ Event, 
@@ -1277,7 +1277,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_did-navigate-in-page`(
+  def once_didnavigateinpage(
     event: electronLib.electronLibStrings.`did-navigate-in-page`,
     listener: js.Function5[
       /* event */ Event, 
@@ -1289,7 +1289,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_did-redirect-navigation`(
+  def once_didredirectnavigation(
     event: electronLib.electronLibStrings.`did-redirect-navigation`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1302,9 +1302,9 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_did-start-loading`(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
+  def once_didstartloading(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_did-start-navigation`(
+  def once_didstartnavigation(
     event: electronLib.electronLibStrings.`did-start-navigation`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1317,24 +1317,24 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_did-stop-loading`(event: electronLib.electronLibStrings.`did-stop-loading`, listener: js.Function): this.type = js.native
+  def once_didstoploading(event: electronLib.electronLibStrings.`did-stop-loading`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_dom-ready`(
+  def once_domready(
     event: electronLib.electronLibStrings.`dom-ready`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_found-in-page`(
+  def once_foundinpage(
     event: electronLib.electronLibStrings.`found-in-page`,
     listener: js.Function2[/* event */ Event, /* result */ Result, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_ipc-message`(
+  def once_ipcmessage(
     event: electronLib.electronLibStrings.`ipc-message`,
     listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_ipc-message-sync`(
+  def once_ipcmessagesync(
     event: electronLib.electronLibStrings.`ipc-message-sync`,
     listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
@@ -1350,16 +1350,16 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_media-paused`(event: electronLib.electronLibStrings.`media-paused`, listener: js.Function): this.type = js.native
+  def once_mediapaused(event: electronLib.electronLibStrings.`media-paused`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_media-started-playing`(event: electronLib.electronLibStrings.`media-started-playing`, listener: js.Function): this.type = js.native
+  def once_mediastartedplaying(event: electronLib.electronLibStrings.`media-started-playing`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_page-favicon-updated`(
+  def once_pagefaviconupdated(
     event: electronLib.electronLibStrings.`page-favicon-updated`,
     listener: js.Function2[/* event */ Event, /* favicons */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_page-title-updated`(
+  def once_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1374,7 +1374,7 @@ class WebContents () extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_plugin-crashed`(
+  def once_plugincrashed(
     event: electronLib.electronLibStrings.`plugin-crashed`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1384,7 +1384,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_preload-error`(
+  def once_preloaderror(
     event: electronLib.electronLibStrings.`preload-error`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1394,39 +1394,39 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-builtin`(
+  def once_remotegetbuiltin(
     event: electronLib.electronLibStrings.`remote-get-builtin`,
     listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-current-web-contents`(
+  def once_remotegetcurrentwebcontents(
     event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-current-window`(
+  def once_remotegetcurrentwindow(
     event: electronLib.electronLibStrings.`remote-get-current-window`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-global`(
+  def once_remotegetglobal(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function2[/* event */ Event, /* globalName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-guest-web-contents`(
+  def once_remotegetguestwebcontents(
     event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
     listener: js.Function2[/* event */ Event, /* guestWebContents */ this.type, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-require`(
+  def once_remoterequire(
     event: electronLib.electronLibStrings.`remote-require`,
     listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_responsive(event: electronLib.electronLibStrings.responsive, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_select-bluetooth-device`(
+  def once_selectbluetoothdevice(
     event: electronLib.electronLibStrings.`select-bluetooth-device`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1436,7 +1436,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_select-client-certificate`(
+  def once_selectclientcertificate(
     event: electronLib.electronLibStrings.`select-client-certificate`,
     listener: js.Function4[
       /* event */ Event, 
@@ -1449,27 +1449,27 @@ class WebContents () extends EventEmitter {
   @JSName("once")
   def once_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_update-target-url`(
+  def once_updatetargeturl(
     event: electronLib.electronLibStrings.`update-target-url`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_will-attach-webview`(
+  def once_willattachwebview(
     event: electronLib.electronLibStrings.`will-attach-webview`,
     listener: js.Function3[/* event */ Event, /* webPreferences */ js.Any, /* params */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_will-navigate`(
+  def once_willnavigate(
     event: electronLib.electronLibStrings.`will-navigate`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_will-prevent-unload`(
+  def once_willpreventunload(
     event: electronLib.electronLibStrings.`will-prevent-unload`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_will-redirect`(
+  def once_willredirect(
     event: electronLib.electronLibStrings.`will-redirect`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1544,12 +1544,12 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_before-input-event`(
+  def removeListener_beforeinputevent(
     event: electronLib.electronLibStrings.`before-input-event`,
     listener: js.Function2[/* event */ Event, /* input */ Input, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_certificate-error`(
+  def removeListener_certificateerror(
     event: electronLib.electronLibStrings.`certificate-error`,
     listener: js.Function5[
       /* event */ Event, 
@@ -1561,7 +1561,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_console-message`(
+  def removeListener_consolemessage(
     event: electronLib.electronLibStrings.`console-message`,
     listener: js.Function5[
       /* event */ Event, 
@@ -1573,7 +1573,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_context-menu`(
+  def removeListener_contextmenu(
     event: electronLib.electronLibStrings.`context-menu`,
     listener: js.Function2[/* event */ Event, /* params */ ContextMenuParams, scala.Unit]
   ): this.type = js.native
@@ -1583,7 +1583,7 @@ class WebContents () extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* killed */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_cursor-changed`(
+  def removeListener_cursorchanged(
     event: electronLib.electronLibStrings.`cursor-changed`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1596,32 +1596,32 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_desktop-capturer-get-sources`(
+  def removeListener_desktopcapturergetsources(
     event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_destroyed(event: electronLib.electronLibStrings.destroyed, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_devtools-closed`(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
+  def removeListener_devtoolsclosed(event: electronLib.electronLibStrings.`devtools-closed`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_devtools-focused`(event: electronLib.electronLibStrings.`devtools-focused`, listener: js.Function): this.type = js.native
+  def removeListener_devtoolsfocused(event: electronLib.electronLibStrings.`devtools-focused`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_devtools-opened`(event: electronLib.electronLibStrings.`devtools-opened`, listener: js.Function): this.type = js.native
+  def removeListener_devtoolsopened(event: electronLib.electronLibStrings.`devtools-opened`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_devtools-reload-page`(event: electronLib.electronLibStrings.`devtools-reload-page`, listener: js.Function): this.type = js.native
+  def removeListener_devtoolsreloadpage(event: electronLib.electronLibStrings.`devtools-reload-page`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-attach-webview`(
+  def removeListener_didattachwebview(
     event: electronLib.electronLibStrings.`did-attach-webview`,
     listener: js.Function2[/* event */ Event, /* webContents */ this.type, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-change-theme-color`(
+  def removeListener_didchangethemecolor(
     event: electronLib.electronLibStrings.`did-change-theme-color`,
     listener: js.Function2[/* event */ Event, /* color */ java.lang.String | scala.Null, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-fail-load`(
+  def removeListener_didfailload(
     event: electronLib.electronLibStrings.`did-fail-load`,
     listener: js.Function7[
       /* event */ Event, 
@@ -1635,9 +1635,9 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-finish-load`(event: electronLib.electronLibStrings.`did-finish-load`, listener: js.Function): this.type = js.native
+  def removeListener_didfinishload(event: electronLib.electronLibStrings.`did-finish-load`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-frame-finish-load`(
+  def removeListener_didframefinishload(
     event: electronLib.electronLibStrings.`did-frame-finish-load`,
     listener: js.Function4[
       /* event */ Event, 
@@ -1648,7 +1648,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-frame-navigate`(
+  def removeListener_didframenavigate(
     event: electronLib.electronLibStrings.`did-frame-navigate`,
     listener: js.Function7[
       /* event */ Event, 
@@ -1662,7 +1662,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-navigate`(
+  def removeListener_didnavigate(
     event: electronLib.electronLibStrings.`did-navigate`,
     listener: js.Function4[
       /* event */ Event, 
@@ -1673,7 +1673,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-navigate-in-page`(
+  def removeListener_didnavigateinpage(
     event: electronLib.electronLibStrings.`did-navigate-in-page`,
     listener: js.Function5[
       /* event */ Event, 
@@ -1685,7 +1685,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-redirect-navigation`(
+  def removeListener_didredirectnavigation(
     event: electronLib.electronLibStrings.`did-redirect-navigation`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1698,9 +1698,9 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-start-loading`(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
+  def removeListener_didstartloading(event: electronLib.electronLibStrings.`did-start-loading`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-start-navigation`(
+  def removeListener_didstartnavigation(
     event: electronLib.electronLibStrings.`did-start-navigation`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1713,24 +1713,24 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_did-stop-loading`(event: electronLib.electronLibStrings.`did-stop-loading`, listener: js.Function): this.type = js.native
+  def removeListener_didstoploading(event: electronLib.electronLibStrings.`did-stop-loading`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_dom-ready`(
+  def removeListener_domready(
     event: electronLib.electronLibStrings.`dom-ready`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_found-in-page`(
+  def removeListener_foundinpage(
     event: electronLib.electronLibStrings.`found-in-page`,
     listener: js.Function2[/* event */ Event, /* result */ Result, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_ipc-message`(
+  def removeListener_ipcmessage(
     event: electronLib.electronLibStrings.`ipc-message`,
     listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_ipc-message-sync`(
+  def removeListener_ipcmessagesync(
     event: electronLib.electronLibStrings.`ipc-message-sync`,
     listener: js.Function3[/* event */ Event, /* channel */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
@@ -1746,16 +1746,16 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_media-paused`(event: electronLib.electronLibStrings.`media-paused`, listener: js.Function): this.type = js.native
+  def removeListener_mediapaused(event: electronLib.electronLibStrings.`media-paused`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_media-started-playing`(event: electronLib.electronLibStrings.`media-started-playing`, listener: js.Function): this.type = js.native
+  def removeListener_mediastartedplaying(event: electronLib.electronLibStrings.`media-started-playing`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_page-favicon-updated`(
+  def removeListener_pagefaviconupdated(
     event: electronLib.electronLibStrings.`page-favicon-updated`,
     listener: js.Function2[/* event */ Event, /* favicons */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_page-title-updated`(
+  def removeListener_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1770,7 +1770,7 @@ class WebContents () extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* dirtyRect */ Rectangle, /* image */ NativeImage, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_plugin-crashed`(
+  def removeListener_plugincrashed(
     event: electronLib.electronLibStrings.`plugin-crashed`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1780,7 +1780,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_preload-error`(
+  def removeListener_preloaderror(
     event: electronLib.electronLibStrings.`preload-error`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1790,39 +1790,39 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-builtin`(
+  def removeListener_remotegetbuiltin(
     event: electronLib.electronLibStrings.`remote-get-builtin`,
     listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-current-web-contents`(
+  def removeListener_remotegetcurrentwebcontents(
     event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-current-window`(
+  def removeListener_remotegetcurrentwindow(
     event: electronLib.electronLibStrings.`remote-get-current-window`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-global`(
+  def removeListener_remotegetglobal(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function2[/* event */ Event, /* globalName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-guest-web-contents`(
+  def removeListener_remotegetguestwebcontents(
     event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
     listener: js.Function2[/* event */ Event, /* guestWebContents */ this.type, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-require`(
+  def removeListener_remoterequire(
     event: electronLib.electronLibStrings.`remote-require`,
     listener: js.Function2[/* event */ Event, /* moduleName */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_responsive(event: electronLib.electronLibStrings.responsive, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_select-bluetooth-device`(
+  def removeListener_selectbluetoothdevice(
     event: electronLib.electronLibStrings.`select-bluetooth-device`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1832,7 +1832,7 @@ class WebContents () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_select-client-certificate`(
+  def removeListener_selectclientcertificate(
     event: electronLib.electronLibStrings.`select-client-certificate`,
     listener: js.Function4[
       /* event */ Event, 
@@ -1845,27 +1845,27 @@ class WebContents () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_update-target-url`(
+  def removeListener_updatetargeturl(
     event: electronLib.electronLibStrings.`update-target-url`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-attach-webview`(
+  def removeListener_willattachwebview(
     event: electronLib.electronLibStrings.`will-attach-webview`,
     listener: js.Function3[/* event */ Event, /* webPreferences */ js.Any, /* params */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-navigate`(
+  def removeListener_willnavigate(
     event: electronLib.electronLibStrings.`will-navigate`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-prevent-unload`(
+  def removeListener_willpreventunload(
     event: electronLib.electronLibStrings.`will-prevent-unload`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-redirect`(
+  def removeListener_willredirect(
     event: electronLib.electronLibStrings.`will-redirect`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1987,11 +1987,11 @@ class WebContents () extends EventEmitter {
   @JSName("setWebRTCIPHandlingPolicy")
   def setWebRTCIPHandlingPolicy_default(policy: electronLib.electronLibStrings.default): scala.Unit = js.native
   @JSName("setWebRTCIPHandlingPolicy")
-  def setWebRTCIPHandlingPolicy_default_public_and_private_interfaces(policy: electronLib.electronLibStrings.default_public_and_private_interfaces): scala.Unit = js.native
+  def setWebRTCIPHandlingPolicy_defaultpublicandprivateinterfaces(policy: electronLib.electronLibStrings.default_public_and_private_interfaces): scala.Unit = js.native
   @JSName("setWebRTCIPHandlingPolicy")
-  def setWebRTCIPHandlingPolicy_default_public_interface_only(policy: electronLib.electronLibStrings.default_public_interface_only): scala.Unit = js.native
+  def setWebRTCIPHandlingPolicy_defaultpublicinterfaceonly(policy: electronLib.electronLibStrings.default_public_interface_only): scala.Unit = js.native
   @JSName("setWebRTCIPHandlingPolicy")
-  def setWebRTCIPHandlingPolicy_disable_non_proxied_udp(policy: electronLib.electronLibStrings.disable_non_proxied_udp): scala.Unit = js.native
+  def setWebRTCIPHandlingPolicy_disablenonproxiedudp(policy: electronLib.electronLibStrings.disable_non_proxied_udp): scala.Unit = js.native
   /**
     * Changes the zoom factor to the specified factor. Zoom factor is zoom percent
     * divided by 100, so 300% = 3.0.

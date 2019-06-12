@@ -9,5 +9,8 @@ import scala.scalajs.js.annotation._
 - typescriptLib.typescriptMod.KeywordTypeNode because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined  */ @js.native
 trait ThisExpression
   extends PrimaryExpression
-     with JsxTagNameExpression
+     with JsxTagNameExpression {
+  @JSName("kind")
+  var kind_ThisExpression: typescriptLib.typescriptMod.SyntaxKind.ThisKeyword = js.native
+}
 

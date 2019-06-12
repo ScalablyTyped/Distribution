@@ -12,5 +12,7 @@ trait JSDocFunctionType
      with SignatureDeclaration
      with _HasJSDoc {
   var _jsDocTypeBrand: js.Any = js.native
+  @JSName("kind")
+  var kind_JSDocFunctionType: typescriptLib.typescriptMod.SyntaxKind.JSDocFunctionType = js.native
 }
 

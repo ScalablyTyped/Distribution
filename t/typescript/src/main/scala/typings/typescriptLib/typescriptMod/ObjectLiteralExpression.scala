@@ -11,5 +11,8 @@ trait ObjectLiteralExpression
      with AssignmentPattern
      with DestructuringPattern
      with ObjectBindingOrAssignmentPattern
-     with _BindingOrAssignmentElement
+     with _BindingOrAssignmentElement {
+  @JSName("kind")
+  var kind_ObjectLiteralExpression: typescriptLib.typescriptMod.SyntaxKind.ObjectLiteralExpression = js.native
+}
 

@@ -21,14 +21,15 @@ trait Context extends js.Object {
   def collectionName(name: java.lang.String): java.lang.String = js.native
   def createDocumentationRouter(): Router = js.native
   def createDocumentationRouter(opts: java.lang.String): Router = js.native
-  def createDocumentationRouter(
+  def createDocumentationRouter(opts: stdLib.Partial[DocumentationRouterOptions]): Router = js.native
+  @JSName("createDocumentationRouter")
+  def createDocumentationRouter_false(
     opts: js.Function2[
       /* req */ Request, 
       /* res */ Response, 
       scala.Unit | arangodbLib.arangodbLibNumbers.`false`
     ]
   ): Router = js.native
-  def createDocumentationRouter(opts: stdLib.Partial[DocumentationRouterOptions]): Router = js.native
   def file(name: java.lang.String): nodeLib.Buffer = js.native
   def file(name: java.lang.String, encoding: java.lang.String): java.lang.String = js.native
   def fileName(name: java.lang.String): java.lang.String = js.native

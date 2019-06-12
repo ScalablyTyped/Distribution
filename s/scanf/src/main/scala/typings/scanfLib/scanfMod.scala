@@ -119,7 +119,7 @@ object scanfMod extends js.Object {
   		 * @return A word.
   		 */
   @JSName("sscanf")
-  def `sscanf_%S`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%S`): java.lang.String = js.native
+  def sscanf_S(source: java.lang.String, format: scanfLib.scanfLibStrings.`%S`): java.lang.String = js.native
   /**
   		 * <p> Read formatted integer from string. </p>
   		 * 
@@ -131,7 +131,7 @@ object scanfMod extends js.Object {
   		 * @return An integer.
   		 */
   @JSName("sscanf")
-  def `sscanf_%d`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%d`): scala.Double = js.native
+  def sscanf_d(source: java.lang.String, format: scanfLib.scanfLibStrings.`%d`): scala.Double = js.native
   /**
   		 * <p> Read formatted float from string. </p>
   		 * 
@@ -143,7 +143,7 @@ object scanfMod extends js.Object {
   		 * @return A float.
   		 */
   @JSName("sscanf")
-  def `sscanf_%f`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%f`): scala.Double = js.native
+  def sscanf_f(source: java.lang.String, format: scanfLib.scanfLibStrings.`%f`): scala.Double = js.native
   /**
   		 * <p> Read formatted octal from string. </p>
   		 * 
@@ -155,7 +155,7 @@ object scanfMod extends js.Object {
   		 * @return An octal.
   		 */
   @JSName("sscanf")
-  def `sscanf_%o`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%o`): scala.Double = js.native
+  def sscanf_o(source: java.lang.String, format: scanfLib.scanfLibStrings.`%o`): scala.Double = js.native
   /**
   		 * <p> Read formatted word from string. </p>
   		 * 
@@ -167,7 +167,7 @@ object scanfMod extends js.Object {
   		 * @return A word.
   		 */
   @JSName("sscanf")
-  def `sscanf_%s`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%s`): java.lang.String = js.native
+  def sscanf_s(source: java.lang.String, format: scanfLib.scanfLibStrings.`%s`): java.lang.String = js.native
   /**
   		 * <p> Read formatted hex from string. </p>
   		 * 
@@ -179,6 +179,6 @@ object scanfMod extends js.Object {
   		 * @return A hex.
   		 */
   @JSName("sscanf")
-  def `sscanf_%x`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%x`): scala.Double = js.native
+  def sscanf_x(source: java.lang.String, format: scanfLib.scanfLibStrings.`%x`): scala.Double = js.native
 }
 

@@ -15,6 +15,8 @@ trait PropertyDeclaration
      with _HasJSDoc {
   var exclamationToken: js.UndefOr[ExclamationToken] = js.native
   var initializer: js.UndefOr[Expression] = js.native
+  @JSName("kind")
+  var kind_PropertyDeclaration: typescriptLib.typescriptMod.SyntaxKind.PropertyDeclaration = js.native
   @JSName("name")
   var name_PropertyDeclaration: PropertyName = js.native
   @JSName("parent")

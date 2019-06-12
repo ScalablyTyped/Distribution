@@ -230,12 +230,12 @@ trait Request
     * Aliased as `req.header()`.
     */
   @JSName("get")
-  def `get_set-cookie`(
+  def get_setcookie(
     name: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreLibStrings.`set-cookie`
   ): js.UndefOr[js.Array[java.lang.String]] = js.native
   def header(name: java.lang.String): js.UndefOr[java.lang.String] = js.native
   @JSName("header")
-  def `header_set-cookie`(
+  def header_setcookie(
     name: expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreLibStrings.`set-cookie`
   ): js.UndefOr[js.Array[java.lang.String]] = js.native
   /**

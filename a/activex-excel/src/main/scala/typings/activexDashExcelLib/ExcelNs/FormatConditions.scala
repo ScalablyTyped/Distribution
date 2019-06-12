@@ -23,19 +23,32 @@ trait FormatConditions extends js.Object {
     DateOperator: js.UndefOr[js.Any],
     ScopeType: js.UndefOr[js.Any]
   ): FormatCondition = js.native
-  def Add(Type: XlFormatConditionType, Operator: js.UndefOr[scala.Nothing], Formula1: java.lang.String): FormatCondition = js.native
-  def Add(
-    Type: XlFormatConditionType,
-    Operator: XlFormatConditionOperator,
-    Formula1: java.lang.String,
-    Formula2: java.lang.String
-  ): FormatCondition = js.native
   def AddAboveAverage(): AboveAverage = js.native
   def AddColorScale(ColorScaleType: scala.Double): ColorScale = js.native
   def AddDatabar(): Databar = js.native
   def AddIconSetCondition(): IconSetCondition = js.native
   def AddTop10(): Top10 = js.native
   def AddUniqueValues(): UniqueValues = js.native
+  @JSName("Add")
+  def Add_1(
+    Type: XlFormatConditionType,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): FormatCondition = js.native
+  @JSName("Add")
+  def Add_2(
+    Type: XlFormatConditionType,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): FormatCondition = js.native
+  @JSName("Add")
+  def Add_2(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: java.lang.String
+  ): FormatCondition = js.native
   def Delete(): scala.Unit = js.native
   def Item(Index: java.lang.String): FormatCondition = js.native
   def Item(Index: scala.Double): FormatCondition = js.native

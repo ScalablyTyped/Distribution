@@ -157,7 +157,7 @@ trait PopupViewModel
     */
   def next(): PopupViewModel = js.native
   @JSName("on")
-  def `on_trigger-action`(
+  def on_triggeraction(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`trigger-action`,
     eventHandler: PopupViewModelTriggerActionEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

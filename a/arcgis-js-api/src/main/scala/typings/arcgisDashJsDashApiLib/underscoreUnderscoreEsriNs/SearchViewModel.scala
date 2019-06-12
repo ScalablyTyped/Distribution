@@ -250,32 +250,32 @@ trait SearchViewModel
     */
   def clear(): scala.Unit = js.native
   @JSName("on")
-  def `on_search-clear`(
+  def on_searchclear(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`search-clear`,
     eventHandler: SearchViewModelSearchClearEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_search-complete`(
+  def on_searchcomplete(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`search-complete`,
     eventHandler: SearchViewModelSearchCompleteEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_search-start`(
+  def on_searchstart(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`search-start`,
     eventHandler: SearchViewModelSearchStartEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_select-result`(
+  def on_selectresult(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`select-result`,
     eventHandler: SearchViewModelSelectResultEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_suggest-complete`(
+  def on_suggestcomplete(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`suggest-complete`,
     eventHandler: SearchViewModelSuggestCompleteEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_suggest-start`(
+  def on_suggeststart(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`suggest-start`,
     eventHandler: SearchViewModelSuggestStartEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

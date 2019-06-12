@@ -339,11 +339,11 @@ trait Exchange extends js.Object {
   @JSName("SetDirection")
   def SetDirection_closebuy(Direction: botvsLib.botvsLibStrings.closebuy): scala.Unit = js.native
   @JSName("SetDirection")
-  def SetDirection_closebuy_today(Direction: botvsLib.botvsLibStrings.closebuy_today): scala.Unit = js.native
+  def SetDirection_closebuytoday(Direction: botvsLib.botvsLibStrings.closebuy_today): scala.Unit = js.native
   @JSName("SetDirection")
   def SetDirection_closesell(Direction: botvsLib.botvsLibStrings.closesell): scala.Unit = js.native
   @JSName("SetDirection")
-  def SetDirection_closesell_today(Direction: botvsLib.botvsLibStrings.closesell_today): scala.Unit = js.native
+  def SetDirection_closeselltoday(Direction: botvsLib.botvsLibStrings.closesell_today): scala.Unit = js.native
   @JSName("SetDirection")
   def SetDirection_sell(Direction: botvsLib.botvsLibStrings.sell): scala.Unit = js.native
   /**

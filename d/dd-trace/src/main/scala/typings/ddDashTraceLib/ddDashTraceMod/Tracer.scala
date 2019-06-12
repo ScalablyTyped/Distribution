@@ -120,14 +120,14 @@ trait Tracer extends js.Object {
   @JSName("use")
   def use_bunyan(plugin: ddDashTraceLib.ddDashTraceLibStrings.bunyan, config: scala.Boolean): this.type = js.native
   @JSName("use")
-  def `use_cassandra-driver`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`cassandra-driver`): this.type = js.native
+  def use_cassandradriver(plugin: ddDashTraceLib.ddDashTraceLibStrings.`cassandra-driver`): this.type = js.native
   @JSName("use")
-  def `use_cassandra-driver`(
+  def use_cassandradriver(
     plugin: ddDashTraceLib.ddDashTraceLibStrings.`cassandra-driver`,
     config: ddDashTraceLib.ddDashTraceMod.pluginsNs.cassandra_driver
   ): this.type = js.native
   @JSName("use")
-  def `use_cassandra-driver`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`cassandra-driver`, config: scala.Boolean): this.type = js.native
+  def use_cassandradriver(plugin: ddDashTraceLib.ddDashTraceLibStrings.`cassandra-driver`, config: scala.Boolean): this.type = js.native
   @JSName("use")
   def use_dns(plugin: ddDashTraceLib.ddDashTraceLibStrings.dns): this.type = js.native
   @JSName("use")
@@ -156,14 +156,14 @@ trait Tracer extends js.Object {
   @JSName("use")
   def use_express(plugin: ddDashTraceLib.ddDashTraceLibStrings.express, config: scala.Boolean): this.type = js.native
   @JSName("use")
-  def `use_generic-pool`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`generic-pool`): this.type = js.native
+  def use_genericpool(plugin: ddDashTraceLib.ddDashTraceLibStrings.`generic-pool`): this.type = js.native
   @JSName("use")
-  def `use_generic-pool`(
+  def use_genericpool(
     plugin: ddDashTraceLib.ddDashTraceLibStrings.`generic-pool`,
     config: ddDashTraceLib.ddDashTraceMod.pluginsNs.generic_pool
   ): this.type = js.native
   @JSName("use")
-  def `use_generic-pool`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`generic-pool`, config: scala.Boolean): this.type = js.native
+  def use_genericpool(plugin: ddDashTraceLib.ddDashTraceLibStrings.`generic-pool`, config: scala.Boolean): this.type = js.native
   @JSName("use")
   def use_graphql(plugin: ddDashTraceLib.ddDashTraceLibStrings.graphql): this.type = js.native
   @JSName("use")
@@ -228,14 +228,14 @@ trait Tracer extends js.Object {
   @JSName("use")
   def use_memcached(plugin: ddDashTraceLib.ddDashTraceLibStrings.memcached, config: scala.Boolean): this.type = js.native
   @JSName("use")
-  def `use_mongodb-core`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`mongodb-core`): this.type = js.native
+  def use_mongodbcore(plugin: ddDashTraceLib.ddDashTraceLibStrings.`mongodb-core`): this.type = js.native
   @JSName("use")
-  def `use_mongodb-core`(
+  def use_mongodbcore(
     plugin: ddDashTraceLib.ddDashTraceLibStrings.`mongodb-core`,
     config: ddDashTraceLib.ddDashTraceMod.pluginsNs.mongodb_core
   ): this.type = js.native
   @JSName("use")
-  def `use_mongodb-core`(plugin: ddDashTraceLib.ddDashTraceLibStrings.`mongodb-core`, config: scala.Boolean): this.type = js.native
+  def use_mongodbcore(plugin: ddDashTraceLib.ddDashTraceLibStrings.`mongodb-core`, config: scala.Boolean): this.type = js.native
   @JSName("use")
   def use_mysql(plugin: ddDashTraceLib.ddDashTraceLibStrings.mysql): this.type = js.native
   @JSName("use")

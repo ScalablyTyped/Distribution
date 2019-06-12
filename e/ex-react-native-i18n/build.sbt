@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ex-react-native-i18n"
-version := "0.0-dt-20180619Z-5c56b1"
+version := "0.0-dt-20180619Z-eba5de"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "i18n-js" % "3.0-dt-20180810Z-b87fa6",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "i18n-js" % "3.0-dt-20180810Z-165668",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

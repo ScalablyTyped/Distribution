@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "antd-mobile-rn"
-version := "2.3.3-c704bd"
+version := "2.3.3-572b13"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.5-8a2cd0",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-c843c9",
-  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-2e3da7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-1fde1d",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190524Z-df3a62",
-  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20181017Z-4bf713",
-  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-20a89e",
-  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-90c153",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
+  "org.scalablytyped" %%% "rc-gesture" % "0.0.22-622079",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-62c565",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190611Z-33e148",
+  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20181017Z-9fbba6",
+  "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-caaf75",
+  "org.scalablytyped" %%% "rmc-tabs" % "1.2.29-289b03",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

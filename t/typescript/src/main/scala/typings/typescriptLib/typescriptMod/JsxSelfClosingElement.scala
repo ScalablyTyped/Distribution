@@ -11,6 +11,8 @@ trait JsxSelfClosingElement
      with JsxChild
      with JsxOpeningLikeElement {
   var attributes: JsxAttributes = js.native
+  @JSName("kind")
+  var kind_JsxSelfClosingElement: typescriptLib.typescriptMod.SyntaxKind.JsxSelfClosingElement = js.native
   var tagName: JsxTagNameExpression = js.native
   var typeArguments: js.UndefOr[NodeArray[TypeNode]] = js.native
 }

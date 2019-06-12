@@ -39,7 +39,11 @@ class InventoryPhysicalCount () extends js.Object {
     */
   var occurred_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * The number of items affected by the physical count as a decimal string. Fractional quantities are not supported.
+    * The number of items affected by the physical count as a decimal string. Can support up to 5 digits after the decimal point.
+    * @important The Point of Sale app and Dashboard do not currently support decimal quantities.
+    * If a Point of Sale app or Dashboard attempts to read a decimal quantity on inventory counts or adjustments,
+    * the quantity will be rounded down to the nearest integer. For example, `2.5` will become `2`, and `-2.5` will become `-3`.
+    * Read [Decimal Quantities (BETA)](/more-apis/inventory/overview#decimal-quantities-beta) for more information.
     */
   var quantity: js.UndefOr[java.lang.String] = js.native
   /**

@@ -5,35 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait Constants extends js.Object
-
-@JSGlobal("com.sun.star.bridge.ModelDependent.Constants")
-@js.native
-object Constants extends js.Object {
-  @js.native
-  sealed trait CORBA
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.bridgeNs.ModelDependentNs.Constants
-  
-  @js.native
-  sealed trait JAVA
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.bridgeNs.ModelDependentNs.Constants
-  
-  @js.native
-  sealed trait OLE
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.bridgeNs.ModelDependentNs.Constants
-  
-  @js.native
-  sealed trait UNO
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.bridgeNs.ModelDependentNs.Constants
-  
-  /* 4 */ val CORBA: CORBA with scala.Double = js.native
-  /* 3 */ val JAVA: JAVA with scala.Double = js.native
-  /* 2 */ val OLE: OLE with scala.Double = js.native
-  /* 1 */ val UNO: UNO with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[
-    activexDashLibreofficeLib.comNs.sunNs.starNs.bridgeNs.ModelDependentNs.Constants with scala.Double
-  ] = js.native
-}
+/* Rewritten from type alias, can be one of: 
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`4`
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3`
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2`
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1`
+*/
+trait Constants extends js.Object
 

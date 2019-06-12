@@ -32,12 +32,12 @@ trait GroupLayer
     */
   def loadAll(): arcgisDashJsDashApiLib.IPromise[GroupLayer] = js.native
   @JSName("on")
-  def `on_layerview-create`(
+  def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: GroupLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-destroy`(
+  def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: GroupLayerLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

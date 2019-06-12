@@ -1,0 +1,24 @@
+[debug] PhaseRunner.scala:84 Success [id => wiiu, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:171 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/wiiu/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/wiiu),TsIdentLibrarySimple(wiiu)),TsIdentModule(None,List(wiiu))) [id => wiiu, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:189 Processing TsIdentLibrarySimple(wiiu) [id => wiiu, phase => typescript] 
+[info ] ResolveTypeQueries.scala:139 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(wiiu)))) [id => wiiu, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Window) / TsMemberProperty(wiiu) / TsTypeQuery())] 
+[info ] ExtractInterfaces.scala:41 Extracted anonymous interface TsIdentSimple(Typeofwiiu) [id => wiiu, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(Window) / TsMemberProperty(wiiu) / TsTypeObject())] 
+[debug] PhaseRunner.scala:84 Success [id => wiiu, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:42 Processing wiiu [id => wiiu, phase => scala.js] 
+[debug] PhaseRunner.scala:84 Success [id => wiiu, phase => scala.js] 
+[warn ] Npmjs.scala:108 Could't fetch metadata for TsIdentLibrarySimple(wiiu) [id => wiiu, phase => build] gigahorse.StatusError: Unexpected status: 404
+	at gigahorse.StatusError$.apply(StatusError.scala:29)
+	at gigahorse.support.okhttp.OkHandler.onStatusReceived(OkHandler.scala:26)
+	at gigahorse.support.okhttp.OkHandler.onStatusReceived$(OkHandler.scala:23)
+	at gigahorse.support.okhttp.OkHandler$FullOkHandler.onStatusReceived(OkHandler.scala:31)
+	at gigahorse.support.okhttp.OkhClient$$anon$1.onResponse(OkhClient.scala:163)
+	at okhttp3.RealCall$AsyncCall.execute(RealCall.java:141)
+	at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[error] package.scala:37 not found: type MINUS,   type Button = _Button | MINUS | PLUS [id => wiiu, phase => build] 
+[error] package.scala:37 not found: type PLUS,   type Button = _Button | MINUS | PLUS [id => wiiu, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [wiiu => Compilation failed] [id => wiiu, phase => build] 
+[error] PhaseRunner.scala:88 Failure, [wiiu => Compilation failed] [id => wiiu, phase => publish] 

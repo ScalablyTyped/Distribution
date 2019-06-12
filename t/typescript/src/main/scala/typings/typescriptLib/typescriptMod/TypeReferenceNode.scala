@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait TypeReferenceNode
   extends NodeWithTypeArguments
      with TypeReferenceType {
+  @JSName("kind")
+  var kind_TypeReferenceNode: typescriptLib.typescriptMod.SyntaxKind.TypeReference = js.native
   var typeName: EntityName = js.native
 }
 

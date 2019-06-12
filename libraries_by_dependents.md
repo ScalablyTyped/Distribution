@@ -1814,6 +1814,7 @@
 | 84 | [properties-reader](./p/properties-reader) | Properties file reader for Node.js
 | 84 | [react-chartjs-2](./r/react-chartjs-2) | react-chartjs-2
 | 84 | [react-native-linear-gradi](./r/react-native-linear-gradient) | A  element for React Native
+| 84 | [vanilla-masker](./v/vanilla-masker) | VanillaMasker is a pure javascript input mask.
 | 83 | [bencode](./b/bencode) | Bencode de/encoder
 | 83 | [eth-sig-util](./e/eth-sig-util) | A few useful functions for signing ethereum data
 | 83 | [gulp-svgmin](./g/gulp-svgmin) | Minify SVG files with gulp.
@@ -2429,6 +2430,7 @@
 | 48 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t
 | 48 | [cookiejar](./c/cookiejar) | simple persistent cookiejar system
 | 48 | [currency-formatter](./c/currency-formatter) | A simple Javascript utility that helps you to disp
+| 48 | [draft-convert](./d/draft-convert) | Extensibly serialize & deserialize Draft.js Conten
 | 48 | [egg-logger](./e/egg-logger) | egg logger
 | 48 | [intl-messageformat-parser](./i/intl-messageformat-parser) | Parses ICU Message strings into an AST via JavaScr
 | 48 | [is-path-inside](./i/is-path-inside) | Check if a path is inside another path
@@ -3882,7 +3884,6 @@
 | 13 | [websql](./w/websql) | WebSQL Database API, implemented for Node using sq
 | 13 | [wikidata-sdk](./w/wikidata-sdk) | A javascript tool-suite to query Wikidata and simp
 | 13 | [xmpp__jid](./x/xmpp__jid) | XMPP identifiers (JID) for JavaScript
-| 13 | [youtube-player](./y/youtube-player) | YouTube IFrame Player API abstraction.
 | 12 | [add-zero](./a/add-zero) | Add a leading zero to a number.
 | 12 | [ajv-merge-patch](./a/ajv-merge-patch) | $merge and $patch keywords for Ajv JSON-Schema val
 | 12 | [algebra_dot_js](./a/algebra_dot_js) | Build, display, and solve algebraic equations.
@@ -6242,6 +6243,7 @@
 | 0 | [jsoneditor-for-react](./j/jsoneditor-for-react) | React wrapper for josdejong/jsoneditor
 | 0 | [jsonwebtoken-promisified](./j/jsonwebtoken-promisified) | A thin wrapper that provides promisified methods f
 | 0 | [jsuite](./j/jsuite) | a tool suite of javascript.
+| 0 | [jsum](./j/jsum) | Consistent checksum calculation of JSON objects.
 | 0 | [jsx-chai](./j/jsx-chai) | JSX assertions for Chai using Algolia's react-elem
 | 0 | [jug](./j/jug) | Graph engine prototype.
 | 0 | [jupyterlab__metapackage](./j/jupyterlab__metapackage) | JupyterLab - Meta Package.  All of the packages us
@@ -6308,6 +6310,7 @@
 | 0 | [mysticatea__spy](./m/mysticatea__spy) | Just a spy library.
 | 0 | [nanp](./n/nanp) | Test if a string is a North American Number Plan (
 | 0 | [neffos_dot_js](./n/neffos_dot_js) | javascript client for the modern neffos websocket 
+| 0 | [next-nprogress](./n/next-nprogress) | Next.js HOC to integrate NProgress inside your app
 | 0 | [next-seo](./n/next-seo) | SEO plugin for Next.js projects
 | 0 | [ng-facebook](./n/ng-facebook) | Angular service to handle facebook api
 | 0 | [ng-flow](./n/ng-flow) | Flow.js html5 file upload extension on angular.js 

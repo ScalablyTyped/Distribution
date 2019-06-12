@@ -9,7 +9,7 @@ trait ConstructorAbi extends FunctionAbi {
   var inputs: js.Array[DataItem]
   var payable: scala.Boolean
   var stateMutability: ConstructorStateMutability
-  var `type`: AbiType
+  var `type`: ethereumDashProtocolLib.ethereumDashProtocolMod.AbiType.Constructor
 }
 
 object ConstructorAbi {
@@ -18,7 +18,7 @@ object ConstructorAbi {
     inputs: js.Array[DataItem],
     payable: scala.Boolean,
     stateMutability: ConstructorStateMutability,
-    `type`: AbiType
+    `type`: ethereumDashProtocolLib.ethereumDashProtocolMod.AbiType.Constructor
   ): ConstructorAbi = {
     val __obj = js.Dynamic.literal(inputs = inputs, payable = payable, stateMutability = stateMutability)
     __obj.updateDynamic("type")(`type`)

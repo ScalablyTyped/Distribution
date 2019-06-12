@@ -12,15 +12,17 @@ class FreeformBuilder protected () extends js.Object {
   val Creator: XlCreator = js.native
   var `Excel.FreeformBuilder_typekey`: FreeformBuilder = js.native
   val Parent: js.Any = js.native
-  def AddNodes(
+  @JSName("AddNodes")
+  def AddNodes_0(
     SegmentType: activexDashOfficeLib.OfficeNs.MsoSegmentType,
-    EditingType: activexDashOfficeLib.OfficeNs.MsoEditingType,
+    EditingType: activexDashExcelLib.activexDashExcelLibNumbers.`0`,
     X1: scala.Double,
     Y1: scala.Double
   ): scala.Unit = js.native
-  def AddNodes(
-    SegmentType: activexDashOfficeLib.OfficeNs.MsoSegmentType,
-    EditingType: activexDashOfficeLib.OfficeNs.MsoEditingType,
+  @JSName("AddNodes")
+  def AddNodes_1(
+    SegmentType: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    EditingType: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
     X1: scala.Double,
     Y1: scala.Double,
     X2: scala.Double,

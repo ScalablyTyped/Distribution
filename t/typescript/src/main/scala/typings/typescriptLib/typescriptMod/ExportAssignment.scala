@@ -13,6 +13,8 @@ import scala.scalajs.js.annotation._
 trait ExportAssignment extends DeclarationStatement {
   var expression: Expression = js.native
   var isExportEquals: js.UndefOr[scala.Boolean] = js.native
+  @JSName("kind")
+  var kind_ExportAssignment: typescriptLib.typescriptMod.SyntaxKind.ExportAssignment = js.native
   @JSName("parent")
   var parent_ExportAssignment: SourceFile = js.native
 }

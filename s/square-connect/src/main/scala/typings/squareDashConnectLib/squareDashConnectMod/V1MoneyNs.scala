@@ -618,7 +618,7 @@ object V1MoneyNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1MoneyNs.CurrencyCodeEnum
     
     @js.native
-    sealed trait UNKNOWNCURRENCY
+    sealed trait UNKNOWN_CURRENCY
       extends squareDashConnectLib.squareDashConnectMod.V1MoneyNs.CurrencyCodeEnum
     
     @js.native
@@ -888,7 +888,7 @@ object V1MoneyNs extends js.Object {
     /* "TZS" */ val TZS: TZS with java.lang.String = js.native
     /* "UAH" */ val UAH: UAH with java.lang.String = js.native
     /* "UGX" */ val UGX: UGX with java.lang.String = js.native
-    /* "UNKNOWN_CURRENCY" */ val UNKNOWNCURRENCY: UNKNOWNCURRENCY with java.lang.String = js.native
+    /* "UNKNOWN_CURRENCY" */ val UNKNOWN_CURRENCY: UNKNOWN_CURRENCY with java.lang.String = js.native
     /* "USD" */ val USD: USD with java.lang.String = js.native
     /* "USN" */ val USN: USN with java.lang.String = js.native
     /* "USS" */ val USS: USS with java.lang.String = js.native

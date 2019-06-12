@@ -26,10 +26,10 @@ object LocationNs extends js.Object {
   @js.native
   object CapabilitiesEnum extends js.Object {
     @js.native
-    sealed trait CREDITCARDPROCESSING
+    sealed trait CREDIT_CARD_PROCESSING
       extends squareDashConnectLib.squareDashConnectMod.LocationNs.CapabilitiesEnum
     
-    /* "CREDIT_CARD_PROCESSING" */ val CREDITCARDPROCESSING: CREDITCARDPROCESSING with java.lang.String = js.native
+    /* "CREDIT_CARD_PROCESSING" */ val CREDIT_CARD_PROCESSING: CREDIT_CARD_PROCESSING with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.LocationNs.CapabilitiesEnum with java.lang.String
@@ -1901,7 +1901,7 @@ object LocationNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.LocationNs.CurrencyEnum
     
     @js.native
-    sealed trait UNKNOWNCURRENCY
+    sealed trait UNKNOWN_CURRENCY
       extends squareDashConnectLib.squareDashConnectMod.LocationNs.CurrencyEnum
     
     @js.native
@@ -2171,7 +2171,7 @@ object LocationNs extends js.Object {
     /* "TZS" */ val TZS: TZS with java.lang.String = js.native
     /* "UAH" */ val UAH: UAH with java.lang.String = js.native
     /* "UGX" */ val UGX: UGX with java.lang.String = js.native
-    /* "UNKNOWN_CURRENCY" */ val UNKNOWNCURRENCY: UNKNOWNCURRENCY with java.lang.String = js.native
+    /* "UNKNOWN_CURRENCY" */ val UNKNOWN_CURRENCY: UNKNOWN_CURRENCY with java.lang.String = js.native
     /* "USD" */ val USD: USD with java.lang.String = js.native
     /* "USN" */ val USN: USN with java.lang.String = js.native
     /* "USS" */ val USS: USS with java.lang.String = js.native

@@ -13,15 +13,13 @@ object ^ extends js.Object {
   def defaultTieBreaker[S, T](v1: Explicit[T], v2: Explicit[T], property: java.lang.String, propertyOf: scala.Double): Explicit[T] = js.native
   def makeExplicit[T](value: T): Explicit[T] = js.native
   def makeImplicit[T](value: T): Explicit[T] = js.native
-  @JSName("mergeValuesWithExplicit")
-  def mergeValuesWithExplicit_[S, T](
+  def mergeValuesWithExplicit[S, T](
     v1: Explicit[T],
     v2: Explicit[T],
     property: java.lang.String,
     propertyOf: vegaDashLiteLib.vegaDashLiteLibStrings.Empty
   ): Explicit[T] = js.native
-  @JSName("mergeValuesWithExplicit")
-  def mergeValuesWithExplicit_[S, T](
+  def mergeValuesWithExplicit[S, T](
     v1: Explicit[T],
     v2: Explicit[T],
     property: java.lang.String,

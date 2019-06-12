@@ -18,7 +18,7 @@ trait Collection[T]
   @JSName("on")
   def on_add(`type`: olLib.olLibStrings.add, listener: js.Function1[/* evt */ CollectionEvent[T], scala.Unit]): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:length`(
+  def on_changelength(
     `type`: olLib.olLibStrings.`change:length`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -30,7 +30,7 @@ trait Collection[T]
   @JSName("once")
   def once_add(`type`: olLib.olLibStrings.add, listener: js.Function1[/* evt */ CollectionEvent[T], scala.Unit]): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:length`(
+  def once_changelength(
     `type`: olLib.olLibStrings.`change:length`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -47,7 +47,7 @@ trait Collection[T]
   @JSName("un")
   def un_add(`type`: olLib.olLibStrings.add, listener: js.Function1[/* evt */ CollectionEvent[T], scala.Unit]): scala.Unit = js.native
   @JSName("un")
-  def `un_change:length`(
+  def un_changelength(
     `type`: olLib.olLibStrings.`change:length`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

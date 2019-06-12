@@ -20,7 +20,7 @@ trait JQueryStatic extends js.Object {
     * Adds data to existing templated url and returns full url string
     */
   @JSName("api")
-  def `api_add url data`(
+  def api_addurldata(
     behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`add url data`,
     url: java.lang.String,
     data: js.Any
@@ -29,7 +29,7 @@ trait JQueryStatic extends js.Object {
     * Creates new cache, removing all locally cached URLs
     */
   @JSName("api")
-  def `api_create cache`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`create cache`): JQuery = js.native
+  def api_createcache(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`create cache`): JQuery = js.native
   /**
     * Removes API settings from the page and all events
     */
@@ -39,17 +39,17 @@ trait JQueryStatic extends js.Object {
     * Gets event that API request will occur on
     */
   @JSName("api")
-  def `api_get event`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`get event`): java.lang.String = js.native
+  def api_getevent(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`get event`): java.lang.String = js.native
   /**
     * Gets promise for current API request
     */
   @JSName("api")
-  def `api_get request`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`get request`): jqueryLib.JQueryDeferred[_] | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false` = js.native
+  def api_getrequest(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`get request`): jqueryLib.JQueryDeferred[_] | semanticDashUiDashApiLib.semanticDashUiDashApiLibNumbers.`false` = js.native
   /**
     * Returns encodeURIComponent value only if value passed is not already encoded
     */
   @JSName("api")
-  def `api_get url encoded value`(
+  def api_geturlencodedvalue(
     behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`get url encoded value`,
     value: js.Any
   ): java.lang.String = js.native
@@ -57,17 +57,17 @@ trait JQueryStatic extends js.Object {
     * Returns whether element is disabled
     */
   @JSName("api")
-  def `api_is disabled`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`is disabled`): scala.Boolean = js.native
+  def api_isdisabled(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`is disabled`): scala.Boolean = js.native
   /**
     * Returns whether element is loading
     */
   @JSName("api")
-  def `api_is loading`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`is loading`): scala.Boolean = js.native
+  def api_isloading(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`is loading`): scala.Boolean = js.native
   /**
     * Returns whether element response is mocked
     */
   @JSName("api")
-  def `api_is mocked`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`is mocked`): scala.Boolean = js.native
+  def api_ismocked(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`is mocked`): scala.Boolean = js.native
   /**
     * Execute query using existing API settings
     */
@@ -77,7 +77,7 @@ trait JQueryStatic extends js.Object {
     * Reads a locally cached response for a URL
     */
   @JSName("api")
-  def `api_read cached response`(
+  def api_readcachedresponse(
     behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`read cached response`,
     url: java.lang.String
   ): js.Any = js.native
@@ -85,12 +85,12 @@ trait JQueryStatic extends js.Object {
     * Removes error state to element
     */
   @JSName("api")
-  def `api_remove error`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`remove error`): JQuery = js.native
+  def api_removeerror(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`remove error`): JQuery = js.native
   /**
     * Removes loading state to element
     */
   @JSName("api")
-  def `api_remove loading`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`remove loading`): JQuery = js.native
+  def api_removeloading(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`remove loading`): JQuery = js.native
   /**
     * Removes loading and error state from element
     */
@@ -100,12 +100,12 @@ trait JQueryStatic extends js.Object {
     * Sets error state to element
     */
   @JSName("api")
-  def `api_set error`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`set error`): JQuery = js.native
+  def api_seterror(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`set error`): JQuery = js.native
   /**
     * Sets loading state to element
     */
   @JSName("api")
-  def `api_set loading`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`set loading`): JQuery = js.native
+  def api_setloading(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`set loading`): JQuery = js.native
   @JSName("api")
   def api_setting(
     behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.setting,
@@ -123,27 +123,27 @@ trait JQueryStatic extends js.Object {
     * Returns whether last request was cancelled
     */
   @JSName("api")
-  def `api_was cancelled`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`was cancelled`): scala.Boolean = js.native
+  def api_wascancelled(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`was cancelled`): scala.Boolean = js.native
   /**
     * Returns whether last request was completed
     */
   @JSName("api")
-  def `api_was complete`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`was complete`): scala.Boolean = js.native
+  def api_wascomplete(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`was complete`): scala.Boolean = js.native
   /**
     * Returns whether last request was failure
     */
   @JSName("api")
-  def `api_was failure`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`was failure`): scala.Boolean = js.native
+  def api_wasfailure(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`was failure`): scala.Boolean = js.native
   /**
     * Returns whether last request was successful
     */
   @JSName("api")
-  def `api_was successful`(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`was successful`): scala.Boolean = js.native
+  def api_wassuccessful(behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`was successful`): scala.Boolean = js.native
   /**
     * Writes a cached response for a URL
     */
   @JSName("api")
-  def `api_write cached response`(
+  def api_writecachedresponse(
     behavior: semanticDashUiDashApiLib.semanticDashUiDashApiLibStrings.`write cached response`,
     url: java.lang.String,
     response: js.Any

@@ -22,8 +22,24 @@ object ^ extends js.Object {
     state: js.Any,
     parentPath: NodePath[Node]
   ): scala.Unit = js.native
+  def default[S](parent: Node, opts: TraverseOptions[S], scope: js.UndefOr[scala.Nothing], state: S): scala.Unit = js.native
+  def default[S](
+    parent: Node,
+    opts: TraverseOptions[S],
+    scope: js.UndefOr[scala.Nothing],
+    state: S,
+    parentPath: NodePath[Node]
+  ): scala.Unit = js.native
   def default[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): scala.Unit = js.native
   def default[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): scala.Unit = js.native
+  def default[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: js.UndefOr[scala.Nothing], state: S): scala.Unit = js.native
+  def default[S](
+    parent: js.Array[Node],
+    opts: TraverseOptions[S],
+    scope: js.UndefOr[scala.Nothing],
+    state: S,
+    parentPath: NodePath[Node]
+  ): scala.Unit = js.native
   def default[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): scala.Unit = js.native
   def default[S](
     parent: js.Array[Node],

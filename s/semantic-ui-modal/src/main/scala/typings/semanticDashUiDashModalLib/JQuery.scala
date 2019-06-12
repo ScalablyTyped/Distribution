@@ -12,23 +12,23 @@ trait JQuery extends js.Object {
   def modal(): JQuery = js.native
   def modal(settings: semanticDashUiDashModalLib.SemanticUINs.ModalSettings): JQuery = js.native
   @JSName("modal")
-  def `modal_attach events`(
+  def modal_attachevents(
     behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`attach events`,
     selector: java.lang.String
   ): JQuery = js.native
   @JSName("modal")
-  def `modal_attach events`(
+  def modal_attachevents(
     behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`attach events`,
     selector: java.lang.String,
     event: java.lang.String
   ): JQuery = js.native
   @JSName("modal")
-  def `modal_attach events`(
+  def modal_attachevents(
     behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`attach events`,
     selector: JQuery
   ): JQuery = js.native
   @JSName("modal")
-  def `modal_attach events`(
+  def modal_attachevents(
     behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`attach events`,
     selector: JQuery,
     event: java.lang.String
@@ -37,12 +37,12 @@ trait JQuery extends js.Object {
     * Caches current modal size
     */
   @JSName("modal")
-  def `modal_cache sizes`(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`cache sizes`): JQuery = js.native
+  def modal_cachesizes(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`cache sizes`): JQuery = js.native
   /**
     * Returns whether the modal can fit on the page
     */
   @JSName("modal")
-  def `modal_can fit`(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`can fit`): scala.Boolean = js.native
+  def modal_canfit(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`can fit`): scala.Boolean = js.native
   @JSName("modal")
   def modal_destroy(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.destroy): JQuery = js.native
   /**
@@ -54,22 +54,22 @@ trait JQuery extends js.Object {
     * Hides all visible modals in the same dimmer
     */
   @JSName("modal")
-  def `modal_hide all`(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`hide all`): JQuery = js.native
+  def modal_hideall(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`hide all`): JQuery = js.native
   /**
     * Hides associated page dimmer
     */
   @JSName("modal")
-  def `modal_hide dimmer`(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`hide dimmer`): JQuery = js.native
+  def modal_hidedimmer(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`hide dimmer`): JQuery = js.native
   /**
     * Hides all modals not selected modal in a dimmer
     */
   @JSName("modal")
-  def `modal_hide others`(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`hide others`): JQuery = js.native
+  def modal_hideothers(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`hide others`): JQuery = js.native
   /**
     * Returns whether the modal is active
     */
   @JSName("modal")
-  def `modal_is active`(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`is active`): scala.Boolean = js.native
+  def modal_isactive(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`is active`): scala.Boolean = js.native
   /**
     * Refreshes centering of modal on page
     */
@@ -79,7 +79,7 @@ trait JQuery extends js.Object {
     * Sets modal to active
     */
   @JSName("modal")
-  def `modal_set active`(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`set active`): JQuery = js.native
+  def modal_setactive(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`set active`): JQuery = js.native
   @JSName("modal")
   def modal_setting(
     behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.setting,
@@ -102,7 +102,7 @@ trait JQuery extends js.Object {
     * Shows associated page dimmer
     */
   @JSName("modal")
-  def `modal_show dimmer`(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`show dimmer`): JQuery = js.native
+  def modal_showdimmer(behavior: semanticDashUiDashModalLib.semanticDashUiDashModalLibStrings.`show dimmer`): JQuery = js.native
   /**
     * Toggles the modal
     */

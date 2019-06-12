@@ -19,13 +19,29 @@ object boxenLibStrings {
   sealed trait blueBright extends js.Object
   
   @js.native
+  sealed trait bold
+    extends boxenLib.boxenMod.BorderStyle
+  
+  @js.native
   sealed trait center extends js.Object
+  
+  @js.native
+  sealed trait classic
+    extends boxenLib.boxenMod.BorderStyle
   
   @js.native
   sealed trait cyan extends js.Object
   
   @js.native
   sealed trait cyanBright extends js.Object
+  
+  @js.native
+  sealed trait double
+    extends boxenLib.boxenMod.BorderStyle
+  
+  @js.native
+  sealed trait doubleSingle
+    extends boxenLib.boxenMod.BorderStyle
   
   @js.native
   sealed trait gray extends js.Object
@@ -58,6 +74,18 @@ object boxenLibStrings {
   sealed trait right extends js.Object
   
   @js.native
+  sealed trait round
+    extends boxenLib.boxenMod.BorderStyle
+  
+  @js.native
+  sealed trait single
+    extends boxenLib.boxenMod.BorderStyle
+  
+  @js.native
+  sealed trait singleDouble
+    extends boxenLib.boxenMod.BorderStyle
+  
+  @js.native
   sealed trait white extends js.Object
   
   @js.native
@@ -78,11 +106,19 @@ object boxenLibStrings {
   @scala.inline
   def blueBright: blueBright = "blueBright".asInstanceOf[blueBright]
   @scala.inline
+  def bold: bold = "bold".asInstanceOf[bold]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
+  def classic: classic = "classic".asInstanceOf[classic]
   @scala.inline
   def cyan: cyan = "cyan".asInstanceOf[cyan]
   @scala.inline
   def cyanBright: cyanBright = "cyanBright".asInstanceOf[cyanBright]
+  @scala.inline
+  def double: double = "double".asInstanceOf[double]
+  @scala.inline
+  def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
   @scala.inline
   def gray: gray = "gray".asInstanceOf[gray]
   @scala.inline
@@ -103,6 +139,12 @@ object boxenLibStrings {
   def redBright: redBright = "redBright".asInstanceOf[redBright]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def round: round = "round".asInstanceOf[round]
+  @scala.inline
+  def single: single = "single".asInstanceOf[single]
+  @scala.inline
+  def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
   @scala.inline
   def white: white = "white".asInstanceOf[white]
   @scala.inline

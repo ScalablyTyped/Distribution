@@ -17,7 +17,7 @@ class Borders protected () extends js.Object {
   var DistanceFromLeft: scala.Double = js.native
   var DistanceFromRight: scala.Double = js.native
   var DistanceFromTop: scala.Double = js.native
-  var Enable: scala.Boolean | WdConstants | WdLineStyle = js.native
+  var Enable: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | WdLineStyle = js.native
   var EnableFirstPageInSection: scala.Boolean = js.native
   var EnableOtherPagesInSection: scala.Boolean = js.native
   val HasHorizontal: scala.Boolean = js.native

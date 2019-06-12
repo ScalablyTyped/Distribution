@@ -18,7 +18,7 @@ object V1SettlementEntryNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait BALANCECHARGE
+    sealed trait BALANCE_CHARGE
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
@@ -26,15 +26,15 @@ object V1SettlementEntryNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait FREEPROCESSING
+    sealed trait FREE_PROCESSING
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait HOLDADJUSTMENT
+    sealed trait HOLD_ADJUSTMENT
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait INCENTEDPAYMENT
+    sealed trait INCENTED_PAYMENT
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
@@ -42,15 +42,15 @@ object V1SettlementEntryNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait PAIDSERVICEFEE
+    sealed trait PAID_SERVICE_FEE
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait PAIDSERVICEFEEREFUND
+    sealed trait PAID_SERVICE_FEE_REFUND
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait REDEMPTIONCODE
+    sealed trait REDEMPTION_CODE
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
@@ -58,66 +58,66 @@ object V1SettlementEntryNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait RETURNEDACHENTRY
+    sealed trait RETURNED_ACH_ENTRY
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait RETURNEDPAYOUT
+    sealed trait RETURNED_PAYOUT
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait RETURNEDSQUARE275
+    sealed trait RETURNED_SQUARE_275
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait SQUARE275
+    sealed trait SQUARE_275
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait SQUARECAPITALADVANCE
+    sealed trait SQUARE_CAPITAL_ADVANCE
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait SQUARECAPITALPAYMENT
+    sealed trait SQUARE_CAPITAL_PAYMENT
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait SQUARECAPITALREVERSEDPAYMENT
+    sealed trait SQUARE_CAPITAL_REVERSED_PAYMENT
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait SQUARECARD
+    sealed trait SQUARE_CARD
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait SUBSCRIPTIONFEE
+    sealed trait SUBSCRIPTION_FEE
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     @js.native
-    sealed trait SUBSCRIPTIONFEEREFUND
+    sealed trait SUBSCRIPTION_FEE_REFUND
       extends squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum
     
     /* "ADJUSTMENT" */ val ADJUSTMENT: ADJUSTMENT with java.lang.String = js.native
-    /* "BALANCE_CHARGE" */ val BALANCECHARGE: BALANCECHARGE with java.lang.String = js.native
+    /* "BALANCE_CHARGE" */ val BALANCE_CHARGE: BALANCE_CHARGE with java.lang.String = js.native
     /* "CHARGE" */ val CHARGE: CHARGE with java.lang.String = js.native
-    /* "FREE_PROCESSING" */ val FREEPROCESSING: FREEPROCESSING with java.lang.String = js.native
-    /* "HOLD_ADJUSTMENT" */ val HOLDADJUSTMENT: HOLDADJUSTMENT with java.lang.String = js.native
-    /* "INCENTED_PAYMENT" */ val INCENTEDPAYMENT: INCENTEDPAYMENT with java.lang.String = js.native
+    /* "FREE_PROCESSING" */ val FREE_PROCESSING: FREE_PROCESSING with java.lang.String = js.native
+    /* "HOLD_ADJUSTMENT" */ val HOLD_ADJUSTMENT: HOLD_ADJUSTMENT with java.lang.String = js.native
+    /* "INCENTED_PAYMENT" */ val INCENTED_PAYMENT: INCENTED_PAYMENT with java.lang.String = js.native
     /* "OTHER" */ val OTHER: OTHER with java.lang.String = js.native
-    /* "PAID_SERVICE_FEE" */ val PAIDSERVICEFEE: PAIDSERVICEFEE with java.lang.String = js.native
-    /* "PAID_SERVICE_FEE_REFUND" */ val PAIDSERVICEFEEREFUND: PAIDSERVICEFEEREFUND with java.lang.String = js.native
-    /* "REDEMPTION_CODE" */ val REDEMPTIONCODE: REDEMPTIONCODE with java.lang.String = js.native
+    /* "PAID_SERVICE_FEE" */ val PAID_SERVICE_FEE: PAID_SERVICE_FEE with java.lang.String = js.native
+    /* "PAID_SERVICE_FEE_REFUND" */ val PAID_SERVICE_FEE_REFUND: PAID_SERVICE_FEE_REFUND with java.lang.String = js.native
+    /* "REDEMPTION_CODE" */ val REDEMPTION_CODE: REDEMPTION_CODE with java.lang.String = js.native
     /* "REFUND" */ val REFUND: REFUND with java.lang.String = js.native
-    /* "RETURNED_ACH_ENTRY" */ val RETURNEDACHENTRY: RETURNEDACHENTRY with java.lang.String = js.native
-    /* "RETURNED_PAYOUT" */ val RETURNEDPAYOUT: RETURNEDPAYOUT with java.lang.String = js.native
-    /* "RETURNED_SQUARE_275" */ val RETURNEDSQUARE275: RETURNEDSQUARE275 with java.lang.String = js.native
-    /* "SQUARE_275" */ val SQUARE275: SQUARE275 with java.lang.String = js.native
-    /* "SQUARE_CAPITAL_ADVANCE" */ val SQUARECAPITALADVANCE: SQUARECAPITALADVANCE with java.lang.String = js.native
-    /* "SQUARE_CAPITAL_PAYMENT" */ val SQUARECAPITALPAYMENT: SQUARECAPITALPAYMENT with java.lang.String = js.native
-    /* "SQUARE_CAPITAL_REVERSED_PAYMENT" */ val SQUARECAPITALREVERSEDPAYMENT: SQUARECAPITALREVERSEDPAYMENT with java.lang.String = js.native
-    /* "SQUARE_CARD" */ val SQUARECARD: SQUARECARD with java.lang.String = js.native
-    /* "SUBSCRIPTION_FEE" */ val SUBSCRIPTIONFEE: SUBSCRIPTIONFEE with java.lang.String = js.native
-    /* "SUBSCRIPTION_FEE_REFUND" */ val SUBSCRIPTIONFEEREFUND: SUBSCRIPTIONFEEREFUND with java.lang.String = js.native
+    /* "RETURNED_ACH_ENTRY" */ val RETURNED_ACH_ENTRY: RETURNED_ACH_ENTRY with java.lang.String = js.native
+    /* "RETURNED_PAYOUT" */ val RETURNED_PAYOUT: RETURNED_PAYOUT with java.lang.String = js.native
+    /* "RETURNED_SQUARE_275" */ val RETURNED_SQUARE_275: RETURNED_SQUARE_275 with java.lang.String = js.native
+    /* "SQUARE_275" */ val SQUARE_275: SQUARE_275 with java.lang.String = js.native
+    /* "SQUARE_CAPITAL_ADVANCE" */ val SQUARE_CAPITAL_ADVANCE: SQUARE_CAPITAL_ADVANCE with java.lang.String = js.native
+    /* "SQUARE_CAPITAL_PAYMENT" */ val SQUARE_CAPITAL_PAYMENT: SQUARE_CAPITAL_PAYMENT with java.lang.String = js.native
+    /* "SQUARE_CAPITAL_REVERSED_PAYMENT" */ val SQUARE_CAPITAL_REVERSED_PAYMENT: SQUARE_CAPITAL_REVERSED_PAYMENT with java.lang.String = js.native
+    /* "SQUARE_CARD" */ val SQUARE_CARD: SQUARE_CARD with java.lang.String = js.native
+    /* "SUBSCRIPTION_FEE" */ val SUBSCRIPTION_FEE: SUBSCRIPTION_FEE with java.lang.String = js.native
+    /* "SUBSCRIPTION_FEE_REFUND" */ val SUBSCRIPTION_FEE_REFUND: SUBSCRIPTION_FEE_REFUND with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.V1SettlementEntryNs.TypeEnum with java.lang.String

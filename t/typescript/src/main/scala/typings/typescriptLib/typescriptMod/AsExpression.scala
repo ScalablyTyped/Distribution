@@ -10,6 +10,8 @@ trait AsExpression
   extends Expression
      with AssertionExpression {
   var expression: Expression = js.native
+  @JSName("kind")
+  var kind_AsExpression: typescriptLib.typescriptMod.SyntaxKind.AsExpression = js.native
   var `type`: TypeNode = js.native
 }
 

@@ -12,6 +12,8 @@ trait TypeAliasDeclaration
      with DeclarationWithTypeParameterChildren
      with HasType
      with _HasJSDoc {
+  @JSName("kind")
+  var kind_TypeAliasDeclaration: typescriptLib.typescriptMod.SyntaxKind.TypeAliasDeclaration = js.native
   @JSName("name")
   var name_TypeAliasDeclaration: Identifier = js.native
   var `type`: TypeNode = js.native

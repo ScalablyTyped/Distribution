@@ -28,6 +28,8 @@ class Scene () extends js.Object {
   var fxaa: scala.Boolean = js.native
   var globe: Globe = js.native
   val groundPrimitives: PrimitiveCollection = js.native
+  var highDynamicRange: scala.Boolean = js.native
+  var highDynamicRangeSupported: scala.Boolean = js.native
   val id: java.lang.String = js.native
   val imageryLayers: ImageryLayerCollection = js.native
   var imagerySplitPosition: scala.Double = js.native
@@ -42,7 +44,7 @@ class Scene () extends js.Object {
   var maximumRenderTimeChange: scala.Double = js.native
   var minimumDisableDepthTestDistance: scala.Double = js.native
   var mode: SceneMode = js.native
-  var moon: Moon = js.native
+  var moon: js.UndefOr[Moon] = js.native
   var morphComplete: Event[js.Array[_]] = js.native
   var morphStart: Event[js.Array[_]] = js.native
   var morphTime: scala.Double = js.native
@@ -50,6 +52,7 @@ class Scene () extends js.Object {
   val orderIndependentTranslucency: scala.Boolean = js.native
   val pickPositionSupported: scala.Boolean = js.native
   var pickTranslucentDepth: scala.Boolean = js.native
+  var postProcessStages: PostProcessStageCollection = js.native
   val postRender: Event[js.Array[_]] = js.native
   val preRender: Event[js.Array[_]] = js.native
   val preUpdate: Event[js.Array[_]] = js.native
@@ -60,9 +63,9 @@ class Scene () extends js.Object {
   val scene3DOnly: scala.Boolean = js.native
   val screenSpaceCameraController: ScreenSpaceCameraController = js.native
   var shadowMap: ShadowMap = js.native
-  var skyAtmosphere: SkyAtmosphere = js.native
-  var skyBox: SkyBox = js.native
-  var sun: Sun = js.native
+  var skyAtmosphere: js.UndefOr[SkyAtmosphere] = js.native
+  var skyBox: js.UndefOr[SkyBox] = js.native
+  var sun: js.UndefOr[Sun] = js.native
   var sunBloom: scala.Boolean = js.native
   var terrainExaggeration: scala.Double = js.native
   var terrainProvider: TerrainProvider = js.native

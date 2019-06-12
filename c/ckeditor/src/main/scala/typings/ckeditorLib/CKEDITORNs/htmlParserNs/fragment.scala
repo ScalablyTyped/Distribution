@@ -16,12 +16,15 @@ class fragment () extends js.Object {
   def filter(filter: filter): scala.Unit = js.native
   def filterChildren(filter: filter): scala.Unit = js.native
   def filterChildren(filter: filter, filterRoot: scala.Boolean): scala.Unit = js.native
-  def forEach(callback: js.Function1[/* node */ node, scala.Unit | ckeditorLib.ckeditorLibNumbers.`false`]): scala.Unit = js.native
-  def forEach(
+  @JSName("forEach")
+  def forEach_false(callback: js.Function1[/* node */ node, scala.Unit | ckeditorLib.ckeditorLibNumbers.`false`]): scala.Unit = js.native
+  @JSName("forEach")
+  def forEach_false(
     callback: js.Function1[/* node */ node, scala.Unit | ckeditorLib.ckeditorLibNumbers.`false`],
     `type`: scala.Double
   ): scala.Unit = js.native
-  def forEach(
+  @JSName("forEach")
+  def forEach_false(
     callback: js.Function1[/* node */ node, scala.Unit | ckeditorLib.ckeditorLibNumbers.`false`],
     `type`: scala.Double,
     skipRoot: scala.Boolean

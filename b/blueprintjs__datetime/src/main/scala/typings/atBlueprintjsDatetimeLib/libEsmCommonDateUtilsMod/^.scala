@@ -28,8 +28,9 @@ object ^ extends js.Object {
   def getIsPmFrom24Hour(hour: scala.Double): scala.Boolean = js.native
   def getTimeInRange(time: stdLib.Date, minTime: stdLib.Date, maxTime: stdLib.Date): stdLib.Date = js.native
   def isDateValid(): /* is std.Date */ scala.Boolean = js.native
-  def isDateValid(date: atBlueprintjsDatetimeLib.atBlueprintjsDatetimeLibNumbers.`false`): /* is std.Date */ scala.Boolean = js.native
   def isDateValid(date: stdLib.Date): /* is std.Date */ scala.Boolean = js.native
+  @JSName("isDateValid")
+  def isDateValid_false(date: atBlueprintjsDatetimeLib.atBlueprintjsDatetimeLibNumbers.`false`): /* is std.Date */ scala.Boolean = js.native
   def isDayInRange(date: stdLib.Date, dateRange: DateRange): scala.Boolean = js.native
   def isDayInRange(date: stdLib.Date, dateRange: DateRange, exclusive: scala.Boolean): scala.Boolean = js.native
   def isDayRangeInRange(innerRange: DateRange, outerRange: DateRange): scala.Boolean = js.native

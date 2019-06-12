@@ -140,6 +140,27 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.stepChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0DOT5` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`1`
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.stepChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0DOT5` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`1`
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  def addEventListener(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.visualEffectsChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
@@ -294,29 +315,6 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_stepChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.stepChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0DOT5` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`1`
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_stepChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.stepChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0DOT5` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`1`
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
   def addEventListener_thresholdsChanged(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.thresholdsChanged,
     listener: js.ThisFunction1[
@@ -465,6 +463,14 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
     value: atOracleOraclejetLib.atOracleOraclejetLibStrings.none
   ): scala.Unit = js.native
   def setProperty(
+    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.step,
+    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0DOT5`
+  ): scala.Unit = js.native
+  def setProperty(
+    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.step,
+    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`1`
+  ): scala.Unit = js.native
+  def setProperty(
     property: atOracleOraclejetLib.atOracleOraclejetLibStrings.visualEffects,
     value: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
   ): scala.Unit = js.native
@@ -494,16 +500,6 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   def setProperty_selectedState(
     property: atOracleOraclejetLib.atOracleOraclejetLibStrings.selectedState,
     value: atOracleOraclejetLib.Anon_BorderColorCircle
-  ): scala.Unit = js.native
-  @JSName("setProperty")
-  def setProperty_step(
-    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.step,
-    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0DOT5`
-  ): scala.Unit = js.native
-  @JSName("setProperty")
-  def setProperty_step(
-    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.step,
-    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`1`
   ): scala.Unit = js.native
   @JSName("setProperty")
   def setProperty_thresholds(

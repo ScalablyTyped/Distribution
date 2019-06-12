@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "vue-i18n"
-version := "8.11.2-4deb36"
+version := "8.11.2-8285a1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac",
-  "org.scalablytyped" %%% "vue" % "2.6.10-fd9e29")
+  "org.scalablytyped" %%% "std" % "3.5-c5d119",
+  "org.scalablytyped" %%% "vue" % "2.6.10-1ed162")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

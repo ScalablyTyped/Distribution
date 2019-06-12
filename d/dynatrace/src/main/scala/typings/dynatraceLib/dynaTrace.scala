@@ -14,7 +14,7 @@ trait dynaTrace extends js.Object {
     */
   def addPageLeavingListener(listener: js.Function1[/* key */ java.lang.String, js.Object]): scala.Unit = js.native
   @JSName("addStreamingNode")
-  def addStreamingNode__error_(
+  def addStreamingNode_error(
     source: java.lang.String,
     duration: scala.Double,
     userTriggered: scala.Boolean,
@@ -39,7 +39,7 @@ trait dynaTrace extends js.Object {
     *     on the serverside, e.g. _info_, _warn_, _error_
     */
   @JSName("addStreamingNode")
-  def addStreamingNode__info_(
+  def addStreamingNode_info(
     source: java.lang.String,
     duration: scala.Double,
     userTriggered: scala.Boolean,
@@ -51,7 +51,7 @@ trait dynaTrace extends js.Object {
     `type`: dynatraceLib.dynatraceLibStrings._info_
   ): scala.Unit = js.native
   @JSName("addStreamingNode")
-  def addStreamingNode__warn_(
+  def addStreamingNode_warn(
     source: java.lang.String,
     duration: scala.Double,
     userTriggered: scala.Boolean,

@@ -316,6 +316,12 @@ object atPulumiAwsMod extends js.Object {
     val OrganizationsNs: atPulumiAwsLib.TypeofOrganizations = js.native
     var PI: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.PI] = js.native
     val PINs: atPulumiAwsLib.TypeofPI = js.native
+    var Personalize: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Personalize] = js.native
+    var PersonalizeEvents: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.PersonalizeEvents] = js.native
+    val PersonalizeEventsNs: atPulumiAwsLib.TypeofPersonalizeEvents = js.native
+    val PersonalizeNs: atPulumiAwsLib.TypeofPersonalize = js.native
+    var PersonalizeRuntime: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.PersonalizeRuntime] = js.native
+    val PersonalizeRuntimeNs: atPulumiAwsLib.TypeofPersonalizeRuntime = js.native
     var Pinpoint: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Pinpoint] = js.native
     var PinpointEmail: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.PinpointEmail] = js.native
     val PinpointEmailNs: atPulumiAwsLib.TypeofPinpointEmail = js.native

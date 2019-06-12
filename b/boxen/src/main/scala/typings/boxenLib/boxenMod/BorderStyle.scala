@@ -5,39 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait BorderStyle extends js.Object
-
-@JSImport("boxen", "BorderStyle")
-@js.native
-object BorderStyle extends js.Object {
-  @js.native
-  sealed trait Bold
-    extends boxenLib.boxenMod.BorderStyle
-  
-  @js.native
-  sealed trait Classic
-    extends boxenLib.boxenMod.BorderStyle
-  
-  @js.native
-  sealed trait Double
-    extends boxenLib.boxenMod.BorderStyle
-  
-  @js.native
-  sealed trait DoubleSingle
-    extends boxenLib.boxenMod.BorderStyle
-  
-  @js.native
-  sealed trait Round
-    extends boxenLib.boxenMod.BorderStyle
-  
-  @js.native
-  sealed trait Single
-    extends boxenLib.boxenMod.BorderStyle
-  
-  @js.native
-  sealed trait SingleDouble
-    extends boxenLib.boxenMod.BorderStyle
-  
-}
+/* Rewritten from type alias, can be one of: 
+  - boxenLib.boxenLibStrings.single
+  - boxenLib.boxenLibStrings.double
+  - boxenLib.boxenLibStrings.round
+  - boxenLib.boxenLibStrings.bold
+  - boxenLib.boxenLibStrings.singleDouble
+  - boxenLib.boxenLibStrings.doubleSingle
+  - boxenLib.boxenLibStrings.classic
+*/
+trait BorderStyle extends js.Object
 

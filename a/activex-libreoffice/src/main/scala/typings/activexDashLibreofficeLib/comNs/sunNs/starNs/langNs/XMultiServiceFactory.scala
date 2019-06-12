@@ -6453,12 +6453,12 @@ trait XMultiServiceFactory
     Arguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.uriNs.UriReferenceFactory = js.native
   @JSName("createInstanceWithArguments")
-  def createInstanceWithArguments_comsunstaruriUriSchemeParser_vndDOTsunDOTstarDOTexpand(
+  def createInstanceWithArguments_comsunstaruriUriSchemeParservndDOTsunDOTstarDOTexpand(
     ServiceSpecifier: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.comDOTsunDOTstarDOTuriDOTUriSchemeParser_vndDOTsunDOTstarDOTexpand,
     Arguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.uriNs.UriSchemeParser_vndDOTsunDOTstarDOTexpand = js.native
   @JSName("createInstanceWithArguments")
-  def createInstanceWithArguments_comsunstaruriUriSchemeParser_vndDOTsunDOTstarDOTscript(
+  def createInstanceWithArguments_comsunstaruriUriSchemeParservndDOTsunDOTstarDOTscript(
     ServiceSpecifier: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.comDOTsunDOTstarDOTuriDOTUriSchemeParser_vndDOTsunDOTstarDOTscript,
     Arguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.uriNs.UriSchemeParser_vndDOTsunDOTstarDOTscript = js.native
@@ -11988,11 +11988,11 @@ trait XMultiServiceFactory
     aServiceSpecifier: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.comDOTsunDOTstarDOTuriDOTUriReferenceFactory
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.uriNs.UriReferenceFactory = js.native
   @JSName("createInstance")
-  def createInstance_comsunstaruriUriSchemeParser_vndDOTsunDOTstarDOTexpand(
+  def createInstance_comsunstaruriUriSchemeParservndDOTsunDOTstarDOTexpand(
     aServiceSpecifier: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.comDOTsunDOTstarDOTuriDOTUriSchemeParser_vndDOTsunDOTstarDOTexpand
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.uriNs.UriSchemeParser_vndDOTsunDOTstarDOTexpand = js.native
   @JSName("createInstance")
-  def createInstance_comsunstaruriUriSchemeParser_vndDOTsunDOTstarDOTscript(
+  def createInstance_comsunstaruriUriSchemeParservndDOTsunDOTstarDOTscript(
     aServiceSpecifier: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.comDOTsunDOTstarDOTuriDOTUriSchemeParser_vndDOTsunDOTstarDOTscript
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.uriNs.UriSchemeParser_vndDOTsunDOTstarDOTscript = js.native
   @JSName("createInstance")

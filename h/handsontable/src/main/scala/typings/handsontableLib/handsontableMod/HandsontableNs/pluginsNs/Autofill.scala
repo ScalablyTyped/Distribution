@@ -18,7 +18,7 @@ trait Autofill extends Base {
 object Autofill {
   @scala.inline
   def apply(
-    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    addHook: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Unit,
     addingStarted: scala.Boolean,
     autoInsertRow: scala.Boolean,
     callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
@@ -37,9 +37,9 @@ object Autofill {
     mouseDragOutside: scala.Boolean,
     pluginName: java.lang.String,
     pluginsInitializedCallback: js.Array[_],
-    removeHook: java.lang.String => scala.Unit
+    removeHooks: java.lang.String => scala.Unit
   ): Autofill = {
-    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), addingStarted = addingStarted, autoInsertRow = autoInsertRow, callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), directions = directions, disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, handleDraggedCells = handleDraggedCells, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, mouseDownOnCellCorner = mouseDownOnCellCorner, mouseDragOutside = mouseDragOutside, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHook = js.Any.fromFunction1(removeHook))
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), addingStarted = addingStarted, autoInsertRow = autoInsertRow, callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), directions = directions, disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, eventManager = eventManager, handleDraggedCells = handleDraggedCells, init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, mouseDownOnCellCorner = mouseDownOnCellCorner, mouseDragOutside = mouseDragOutside, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, removeHooks = js.Any.fromFunction1(removeHooks))
   
     __obj.asInstanceOf[Autofill]
   }

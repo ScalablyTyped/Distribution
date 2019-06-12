@@ -11,6 +11,14 @@ trait MergeMetadata extends js.Object {
     */
   var isMerged: js.UndefOr[IsMerged] = js.undefined
   /**
+    * The commit ID for the merge commit, if any.
+    */
+  var mergeCommitId: js.UndefOr[CommitId] = js.undefined
+  /**
+    * The merge strategy used in the merge.
+    */
+  var mergeOption: js.UndefOr[MergeOptionTypeEnum] = js.undefined
+  /**
     * The Amazon Resource Name (ARN) of the user who merged the branches.
     */
   var mergedBy: js.UndefOr[Arn] = js.undefined
@@ -18,9 +26,16 @@ trait MergeMetadata extends js.Object {
 
 object MergeMetadata {
   @scala.inline
-  def apply(isMerged: js.UndefOr[IsMerged] = js.undefined, mergedBy: Arn = null): MergeMetadata = {
+  def apply(
+    isMerged: js.UndefOr[IsMerged] = js.undefined,
+    mergeCommitId: CommitId = null,
+    mergeOption: MergeOptionTypeEnum = null,
+    mergedBy: Arn = null
+  ): MergeMetadata = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(isMerged)) __obj.updateDynamic("isMerged")(isMerged)
+    if (mergeCommitId != null) __obj.updateDynamic("mergeCommitId")(mergeCommitId)
+    if (mergeOption != null) __obj.updateDynamic("mergeOption")(mergeOption.asInstanceOf[js.Any])
     if (mergedBy != null) __obj.updateDynamic("mergedBy")(mergedBy)
     __obj.asInstanceOf[MergeMetadata]
   }

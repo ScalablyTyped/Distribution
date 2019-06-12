@@ -5,28 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait OlOfficeDocItemsType extends js.Object
-
-@JSGlobal("Outlook.OlOfficeDocItemsType")
-@js.native
-object OlOfficeDocItemsType extends js.Object {
-  @js.native
-  sealed trait olExcelWorkSheetItem
-    extends activexDashOutlookLib.OutlookNs.OlOfficeDocItemsType
-  
-  @js.native
-  sealed trait olPowerPointShowItem
-    extends activexDashOutlookLib.OutlookNs.OlOfficeDocItemsType
-  
-  @js.native
-  sealed trait olWordDocumentItem
-    extends activexDashOutlookLib.OutlookNs.OlOfficeDocItemsType
-  
-  /* 8 */ val olExcelWorkSheetItem: olExcelWorkSheetItem with scala.Double = js.native
-  /* 10 */ val olPowerPointShowItem: olPowerPointShowItem with scala.Double = js.native
-  /* 9 */ val olWordDocumentItem: olWordDocumentItem with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[activexDashOutlookLib.OutlookNs.OlOfficeDocItemsType with scala.Double] = js.native
-}
+/* Rewritten from type alias, can be one of: 
+  - activexDashOutlookLib.activexDashOutlookLibNumbers.`8`
+  - activexDashOutlookLib.activexDashOutlookLibNumbers.`10`
+  - activexDashOutlookLib.activexDashOutlookLibNumbers.`9`
+*/
+trait OlOfficeDocItemsType extends js.Object
 

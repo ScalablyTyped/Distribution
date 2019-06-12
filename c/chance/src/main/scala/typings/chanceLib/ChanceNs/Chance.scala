@@ -231,11 +231,11 @@ trait Chance extends Seeded {
   ): java.lang.String = js.native
   def set[T](key: java.lang.String, values: js.Array[T]): js.Any = js.native
   @JSName("set")
-  def set_armed_forces(key: chanceLib.chanceLibStrings.armed_forces, values: js.Array[java.lang.String]): js.Any = js.native
+  def set_armedforces(key: chanceLib.chanceLibStrings.armed_forces, values: js.Array[java.lang.String]): js.Any = js.native
   @JSName("set")
-  def set_cc_types(key: chanceLib.chanceLibStrings.cc_types, values: js.Array[java.lang.String]): js.Any = js.native
+  def set_cctypes(key: chanceLib.chanceLibStrings.cc_types, values: js.Array[java.lang.String]): js.Any = js.native
   @JSName("set")
-  def set_currency_types(key: chanceLib.chanceLibStrings.currency_types, values: js.Array[java.lang.String]): js.Any = js.native
+  def set_currencytypes(key: chanceLib.chanceLibStrings.currency_types, values: js.Array[java.lang.String]): js.Any = js.native
   @JSName("set")
   def set_firstNames(key: chanceLib.chanceLibStrings.firstNames, values: js.Array[java.lang.String]): js.Any = js.native
   @JSName("set")
@@ -245,11 +245,11 @@ trait Chance extends Seeded {
   @JSName("set")
   def set_provinces(key: chanceLib.chanceLibStrings.provinces, values: js.Array[java.lang.String]): js.Any = js.native
   @JSName("set")
-  def set_street_suffixes(key: chanceLib.chanceLibStrings.street_suffixes, values: js.Array[java.lang.String]): js.Any = js.native
+  def set_streetsuffixes(key: chanceLib.chanceLibStrings.street_suffixes, values: js.Array[java.lang.String]): js.Any = js.native
   @JSName("set")
   def set_territories(key: chanceLib.chanceLibStrings.territories, values: js.Array[java.lang.String]): js.Any = js.native
   @JSName("set")
-  def set_us_states_and_dc(key: chanceLib.chanceLibStrings.us_states_and_dc, values: js.Array[java.lang.String]): js.Any = js.native
+  def set_usstatesanddc(key: chanceLib.chanceLibStrings.us_states_and_dc, values: js.Array[java.lang.String]): js.Any = js.native
   def shuffle[T](arr: js.Array[T]): js.Array[T] = js.native
   def ssn(): java.lang.String = js.native
   def ssn(opts: Options): java.lang.String = js.native

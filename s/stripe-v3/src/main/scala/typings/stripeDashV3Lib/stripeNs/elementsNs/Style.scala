@@ -10,6 +10,7 @@ trait Style extends StyleOptions {
   var `::-ms-clear`: js.UndefOr[StyleOptions] = js.undefined
   var `::placeholder`: js.UndefOr[StyleOptions] = js.undefined
   var `::selection`: js.UndefOr[StyleOptions] = js.undefined
+  var `:disabled`: js.UndefOr[StyleOptions] = js.undefined
   var `:focus`: js.UndefOr[StyleOptions] = js.undefined
   var `:hover`: js.UndefOr[StyleOptions] = js.undefined
 }
@@ -21,6 +22,7 @@ object Style {
     `::-ms-clear`: StyleOptions = null,
     `::placeholder`: StyleOptions = null,
     `::selection`: StyleOptions = null,
+    `:disabled`: StyleOptions = null,
     `:focus`: StyleOptions = null,
     `:hover`: StyleOptions = null,
     color: java.lang.String = null,
@@ -43,6 +45,7 @@ object Style {
     if (`::-ms-clear` != null) __obj.updateDynamic("::-ms-clear")(`::-ms-clear`)
     if (`::placeholder` != null) __obj.updateDynamic("::placeholder")(`::placeholder`)
     if (`::selection` != null) __obj.updateDynamic("::selection")(`::selection`)
+    if (`:disabled` != null) __obj.updateDynamic(":disabled")(`:disabled`)
     if (`:focus` != null) __obj.updateDynamic(":focus")(`:focus`)
     if (`:hover` != null) __obj.updateDynamic(":hover")(`:hover`)
     if (color != null) __obj.updateDynamic("color")(color)

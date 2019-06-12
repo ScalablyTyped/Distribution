@@ -11,6 +11,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait RelaxedBody
   extends nodeLib.streamMod.Transform {
+  def addListener(
+    event: nodemailerLib.nodemailerLibStrings.hash,
+    listener: js.Function2[
+      /* digest */ nodeLib.Buffer, 
+      /* debugBody */ nodeLib.Buffer | nodemailerLib.nodemailerLibNumbers.`false`, 
+      scala.Unit
+    ]
+  ): this.type = js.native
   @JSName("addListener")
   def addListener_close(event: nodemailerLib.nodemailerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
@@ -26,16 +34,12 @@ trait RelaxedBody
     listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_hash(
-    event: nodemailerLib.nodemailerLibStrings.hash,
-    listener: js.Function2[
-      /* digest */ nodeLib.Buffer, 
-      /* debugBody */ nodeLib.Buffer | nodemailerLib.nodemailerLibNumbers.`false`, 
-      scala.Unit
-    ]
-  ): this.type = js.native
-  @JSName("addListener")
   def addListener_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
+  def emit(
+    event: nodemailerLib.nodemailerLibStrings.hash,
+    digest: nodeLib.Buffer,
+    debugBody: nodemailerLib.nodemailerLibNumbers.`false`
+  ): scala.Boolean = js.native
   @JSName("emit")
   def emit_close(event: nodemailerLib.nodemailerLibStrings.close): scala.Boolean = js.native
   @JSName("emit")
@@ -47,13 +51,15 @@ trait RelaxedBody
   @JSName("emit")
   def emit_hash(event: nodemailerLib.nodemailerLibStrings.hash, digest: nodeLib.Buffer, debugBody: nodeLib.Buffer): scala.Boolean = js.native
   @JSName("emit")
-  def emit_hash(
-    event: nodemailerLib.nodemailerLibStrings.hash,
-    digest: nodeLib.Buffer,
-    debugBody: nodemailerLib.nodemailerLibNumbers.`false`
-  ): scala.Boolean = js.native
-  @JSName("emit")
   def emit_readable(event: nodemailerLib.nodemailerLibStrings.readable): scala.Boolean = js.native
+  def on(
+    event: nodemailerLib.nodemailerLibStrings.hash,
+    listener: js.Function2[
+      /* digest */ nodeLib.Buffer, 
+      /* debugBody */ nodeLib.Buffer | nodemailerLib.nodemailerLibNumbers.`false`, 
+      scala.Unit
+    ]
+  ): this.type = js.native
   @JSName("on")
   def on_close(event: nodemailerLib.nodemailerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
@@ -69,7 +75,8 @@ trait RelaxedBody
     listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_hash(
+  def on_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
+  def once(
     event: nodemailerLib.nodemailerLibStrings.hash,
     listener: js.Function2[
       /* digest */ nodeLib.Buffer, 
@@ -77,8 +84,6 @@ trait RelaxedBody
       scala.Unit
     ]
   ): this.type = js.native
-  @JSName("on")
-  def on_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
   def once_close(event: nodemailerLib.nodemailerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
@@ -94,7 +99,8 @@ trait RelaxedBody
     listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_hash(
+  def once_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
+  def prependListener(
     event: nodemailerLib.nodemailerLibStrings.hash,
     listener: js.Function2[
       /* digest */ nodeLib.Buffer, 
@@ -102,8 +108,6 @@ trait RelaxedBody
       scala.Unit
     ]
   ): this.type = js.native
-  @JSName("once")
-  def once_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_close(event: nodemailerLib.nodemailerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
@@ -119,7 +123,8 @@ trait RelaxedBody
     listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_hash(
+  def prependListener_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
+  def prependOnceListener(
     event: nodemailerLib.nodemailerLibStrings.hash,
     listener: js.Function2[
       /* digest */ nodeLib.Buffer, 
@@ -127,8 +132,6 @@ trait RelaxedBody
       scala.Unit
     ]
   ): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: nodemailerLib.nodemailerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -144,7 +147,8 @@ trait RelaxedBody
     listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_hash(
+  def prependOnceListener_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
+  def removeListener(
     event: nodemailerLib.nodemailerLibStrings.hash,
     listener: js.Function2[
       /* digest */ nodeLib.Buffer, 
@@ -152,8 +156,6 @@ trait RelaxedBody
       scala.Unit
     ]
   ): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_close(event: nodemailerLib.nodemailerLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("removeListener")
@@ -167,15 +169,6 @@ trait RelaxedBody
   def removeListener_error(
     event: nodemailerLib.nodemailerLibStrings.error,
     listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
-  ): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_hash(
-    event: nodemailerLib.nodemailerLibStrings.hash,
-    listener: js.Function2[
-      /* digest */ nodeLib.Buffer, 
-      /* debugBody */ nodeLib.Buffer | nodemailerLib.nodemailerLibNumbers.`false`, 
-      scala.Unit
-    ]
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_readable(event: nodemailerLib.nodemailerLibStrings.readable, listener: js.Function0[scala.Unit]): this.type = js.native

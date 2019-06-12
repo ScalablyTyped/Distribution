@@ -29,7 +29,7 @@ object TenderCardDetailsNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.TenderCardDetailsNs.EntryMethodEnum
     
     @js.native
-    sealed trait ONFILE
+    sealed trait ON_FILE
       extends squareDashConnectLib.squareDashConnectMod.TenderCardDetailsNs.EntryMethodEnum
     
     @js.native
@@ -39,7 +39,7 @@ object TenderCardDetailsNs extends js.Object {
     /* "CONTACTLESS" */ val CONTACTLESS: CONTACTLESS with java.lang.String = js.native
     /* "EMV" */ val EMV: EMV with java.lang.String = js.native
     /* "KEYED" */ val KEYED: KEYED with java.lang.String = js.native
-    /* "ON_FILE" */ val ONFILE: ONFILE with java.lang.String = js.native
+    /* "ON_FILE" */ val ON_FILE: ON_FILE with java.lang.String = js.native
     /* "SWIPED" */ val SWIPED: SWIPED with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[

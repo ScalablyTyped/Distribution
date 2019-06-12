@@ -5,383 +5,81 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait MFEventHandlerType extends js.Object
-
-@JSGlobal("MFiles.MFEventHandlerType")
-@js.native
-object MFEventHandlerType extends js.Object {
-  @js.native
-  sealed trait AfterBeginTransaction
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterBringOnline
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCancelCheckout
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCancelCheckoutFinalize
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCancelCreateObject
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCheckInChanges
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCheckInChangesFinalize
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCheckOut
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCreateLoginAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCreateNewObjectFinalize
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCreateNewValueListItem
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCreateUserAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCreateUserGroup
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterCreateView
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterDeleteObject
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterDeleteView
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterDestroyObject
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterDestroyObjectVersion
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterFileDownload
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterFileUpload
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterLoginToVault
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterLogoutFromVault
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterModifyLoginAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterModifyMFilesCredentials
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterModifyUserAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterModifyUserGroup
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterModifyView
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterRemoveLoginAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterRemoveUserAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterRemoveUserGroup
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterRunScheduledJob
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterSetObjectPermissions
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterSetProperties
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterUndeleteObject
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait AfterUndeleteObjectFinalize
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCancelCheckout
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCancelCreateObject
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCheckInChanges
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCheckInChangesFinalize
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCheckOut
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCommitTransaction
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCreateLoginAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCreateNewObjectFinalize
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCreateNewValueListItem
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCreateUserAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCreateUserGroup
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeCreateView
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeDeleteObject
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeDeleteView
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeDestroyObject
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeDestroyObjectVersion
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeFileDownload
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeFileUpload
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeLoginToVault
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeLogoutFromVault
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeModifyLoginAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeModifyMFilesCredentials
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeModifyUserAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeModifyUserGroup
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeModifyView
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeRemoveLoginAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeRemoveUserAccount
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeRemoveUserGroup
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeReturnView
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeRollbackTransaction
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeRunScheduledJob
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeSetObjectPermissions
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeSetProperties
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeTakeOffline
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait BeforeUndeleteObject
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait Replication_AfterCheckInChanges
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait Replication_AfterCreateNewObjectFinalize
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait TypeUndefined
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  @js.native
-  sealed trait VaultExtensionMethod
-    extends mfilesLib.MFilesNs.MFEventHandlerType
-  
-  /* 57 */ val AfterBeginTransaction: AfterBeginTransaction with scala.Double = js.native
-  /* 54 */ val AfterBringOnline: AfterBringOnline with scala.Double = js.native
-  /* 9 */ val AfterCancelCheckout: AfterCancelCheckout with scala.Double = js.native
-  /* 60 */ val AfterCancelCheckoutFinalize: AfterCancelCheckoutFinalize with scala.Double = js.native
-  /* 30 */ val AfterCancelCreateObject: AfterCancelCreateObject with scala.Double = js.native
-  /* 5 */ val AfterCheckInChanges: AfterCheckInChanges with scala.Double = js.native
-  /* 56 */ val AfterCheckInChangesFinalize: AfterCheckInChangesFinalize with scala.Double = js.native
-  /* 7 */ val AfterCheckOut: AfterCheckOut with scala.Double = js.native
-  /* 37 */ val AfterCreateLoginAccount: AfterCreateLoginAccount with scala.Double = js.native
-  /* 3 */ val AfterCreateNewObjectFinalize: AfterCreateNewObjectFinalize with scala.Double = js.native
-  /* 21 */ val AfterCreateNewValueListItem: AfterCreateNewValueListItem with scala.Double = js.native
-  /* 43 */ val AfterCreateUserAccount: AfterCreateUserAccount with scala.Double = js.native
-  /* 49 */ val AfterCreateUserGroup: AfterCreateUserGroup with scala.Double = js.native
-  /* 69 */ val AfterCreateView: AfterCreateView with scala.Double = js.native
-  /* 11 */ val AfterDeleteObject: AfterDeleteObject with scala.Double = js.native
-  /* 73 */ val AfterDeleteView: AfterDeleteView with scala.Double = js.native
-  /* 13 */ val AfterDestroyObject: AfterDestroyObject with scala.Double = js.native
-  /* 32 */ val AfterDestroyObjectVersion: AfterDestroyObjectVersion with scala.Double = js.native
-  /* 19 */ val AfterFileDownload: AfterFileDownload with scala.Double = js.native
-  /* 17 */ val AfterFileUpload: AfterFileUpload with scala.Double = js.native
-  /* 23 */ val AfterLoginToVault: AfterLoginToVault with scala.Double = js.native
-  /* 25 */ val AfterLogoutFromVault: AfterLogoutFromVault with scala.Double = js.native
-  /* 39 */ val AfterModifyLoginAccount: AfterModifyLoginAccount with scala.Double = js.native
-  /* 65 */ val AfterModifyMFilesCredentials: AfterModifyMFilesCredentials with scala.Double = js.native
-  /* 45 */ val AfterModifyUserAccount: AfterModifyUserAccount with scala.Double = js.native
-  /* 51 */ val AfterModifyUserGroup: AfterModifyUserGroup with scala.Double = js.native
-  /* 71 */ val AfterModifyView: AfterModifyView with scala.Double = js.native
-  /* 41 */ val AfterRemoveLoginAccount: AfterRemoveLoginAccount with scala.Double = js.native
-  /* 47 */ val AfterRemoveUserAccount: AfterRemoveUserAccount with scala.Double = js.native
-  /* 53 */ val AfterRemoveUserGroup: AfterRemoveUserGroup with scala.Double = js.native
-  /* 27 */ val AfterRunScheduledJob: AfterRunScheduledJob with scala.Double = js.native
-  /* 15 */ val AfterSetObjectPermissions: AfterSetObjectPermissions with scala.Double = js.native
-  /* 2 */ val AfterSetProperties: AfterSetProperties with scala.Double = js.native
-  /* 62 */ val AfterUndeleteObject: AfterUndeleteObject with scala.Double = js.native
-  /* 63 */ val AfterUndeleteObjectFinalize: AfterUndeleteObjectFinalize with scala.Double = js.native
-  /* 8 */ val BeforeCancelCheckout: BeforeCancelCheckout with scala.Double = js.native
-  /* 29 */ val BeforeCancelCreateObject: BeforeCancelCreateObject with scala.Double = js.native
-  /* 4 */ val BeforeCheckInChanges: BeforeCheckInChanges with scala.Double = js.native
-  /* 67 */ val BeforeCheckInChangesFinalize: BeforeCheckInChangesFinalize with scala.Double = js.native
-  /* 6 */ val BeforeCheckOut: BeforeCheckOut with scala.Double = js.native
-  /* 58 */ val BeforeCommitTransaction: BeforeCommitTransaction with scala.Double = js.native
-  /* 36 */ val BeforeCreateLoginAccount: BeforeCreateLoginAccount with scala.Double = js.native
-  /* 28 */ val BeforeCreateNewObjectFinalize: BeforeCreateNewObjectFinalize with scala.Double = js.native
-  /* 20 */ val BeforeCreateNewValueListItem: BeforeCreateNewValueListItem with scala.Double = js.native
-  /* 42 */ val BeforeCreateUserAccount: BeforeCreateUserAccount with scala.Double = js.native
-  /* 48 */ val BeforeCreateUserGroup: BeforeCreateUserGroup with scala.Double = js.native
-  /* 68 */ val BeforeCreateView: BeforeCreateView with scala.Double = js.native
-  /* 10 */ val BeforeDeleteObject: BeforeDeleteObject with scala.Double = js.native
-  /* 72 */ val BeforeDeleteView: BeforeDeleteView with scala.Double = js.native
-  /* 12 */ val BeforeDestroyObject: BeforeDestroyObject with scala.Double = js.native
-  /* 31 */ val BeforeDestroyObjectVersion: BeforeDestroyObjectVersion with scala.Double = js.native
-  /* 18 */ val BeforeFileDownload: BeforeFileDownload with scala.Double = js.native
-  /* 16 */ val BeforeFileUpload: BeforeFileUpload with scala.Double = js.native
-  /* 22 */ val BeforeLoginToVault: BeforeLoginToVault with scala.Double = js.native
-  /* 24 */ val BeforeLogoutFromVault: BeforeLogoutFromVault with scala.Double = js.native
-  /* 38 */ val BeforeModifyLoginAccount: BeforeModifyLoginAccount with scala.Double = js.native
-  /* 64 */ val BeforeModifyMFilesCredentials: BeforeModifyMFilesCredentials with scala.Double = js.native
-  /* 44 */ val BeforeModifyUserAccount: BeforeModifyUserAccount with scala.Double = js.native
-  /* 50 */ val BeforeModifyUserGroup: BeforeModifyUserGroup with scala.Double = js.native
-  /* 70 */ val BeforeModifyView: BeforeModifyView with scala.Double = js.native
-  /* 40 */ val BeforeRemoveLoginAccount: BeforeRemoveLoginAccount with scala.Double = js.native
-  /* 46 */ val BeforeRemoveUserAccount: BeforeRemoveUserAccount with scala.Double = js.native
-  /* 52 */ val BeforeRemoveUserGroup: BeforeRemoveUserGroup with scala.Double = js.native
-  /* 66 */ val BeforeReturnView: BeforeReturnView with scala.Double = js.native
-  /* 59 */ val BeforeRollbackTransaction: BeforeRollbackTransaction with scala.Double = js.native
-  /* 26 */ val BeforeRunScheduledJob: BeforeRunScheduledJob with scala.Double = js.native
-  /* 14 */ val BeforeSetObjectPermissions: BeforeSetObjectPermissions with scala.Double = js.native
-  /* 1 */ val BeforeSetProperties: BeforeSetProperties with scala.Double = js.native
-  /* 55 */ val BeforeTakeOffline: BeforeTakeOffline with scala.Double = js.native
-  /* 61 */ val BeforeUndeleteObject: BeforeUndeleteObject with scala.Double = js.native
-  /* 34 */ val Replication_AfterCheckInChanges: Replication_AfterCheckInChanges with scala.Double = js.native
-  /* 33 */ val Replication_AfterCreateNewObjectFinalize: Replication_AfterCreateNewObjectFinalize with scala.Double = js.native
-  /* 0 */ val TypeUndefined: TypeUndefined with scala.Double = js.native
-  /* 35 */ val VaultExtensionMethod: VaultExtensionMethod with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[mfilesLib.MFilesNs.MFEventHandlerType with scala.Double] = js.native
-}
+/* Rewritten from type alias, can be one of: 
+  - mfilesLib.mfilesLibNumbers.`0`
+  - mfilesLib.mfilesLibNumbers.`1`
+  - mfilesLib.mfilesLibNumbers.`2`
+  - mfilesLib.mfilesLibNumbers.`3`
+  - mfilesLib.mfilesLibNumbers.`4`
+  - mfilesLib.mfilesLibNumbers.`5`
+  - mfilesLib.mfilesLibNumbers.`6`
+  - mfilesLib.mfilesLibNumbers.`7`
+  - mfilesLib.mfilesLibNumbers.`8`
+  - mfilesLib.mfilesLibNumbers.`9`
+  - mfilesLib.mfilesLibNumbers.`10`
+  - mfilesLib.mfilesLibNumbers.`11`
+  - mfilesLib.mfilesLibNumbers.`12`
+  - mfilesLib.mfilesLibNumbers.`13`
+  - mfilesLib.mfilesLibNumbers.`14`
+  - mfilesLib.mfilesLibNumbers.`15`
+  - mfilesLib.mfilesLibNumbers.`16`
+  - mfilesLib.mfilesLibNumbers.`17`
+  - mfilesLib.mfilesLibNumbers.`18`
+  - mfilesLib.mfilesLibNumbers.`19`
+  - mfilesLib.mfilesLibNumbers.`20`
+  - mfilesLib.mfilesLibNumbers.`21`
+  - mfilesLib.mfilesLibNumbers.`22`
+  - mfilesLib.mfilesLibNumbers.`23`
+  - mfilesLib.mfilesLibNumbers.`24`
+  - mfilesLib.mfilesLibNumbers.`25`
+  - mfilesLib.mfilesLibNumbers.`26`
+  - mfilesLib.mfilesLibNumbers.`27`
+  - mfilesLib.mfilesLibNumbers.`28`
+  - mfilesLib.mfilesLibNumbers.`29`
+  - mfilesLib.mfilesLibNumbers.`30`
+  - mfilesLib.mfilesLibNumbers.`31`
+  - mfilesLib.mfilesLibNumbers.`32`
+  - mfilesLib.mfilesLibNumbers.`33`
+  - mfilesLib.mfilesLibNumbers.`34`
+  - mfilesLib.mfilesLibNumbers.`35`
+  - mfilesLib.mfilesLibNumbers.`36`
+  - mfilesLib.mfilesLibNumbers.`37`
+  - mfilesLib.mfilesLibNumbers.`38`
+  - mfilesLib.mfilesLibNumbers.`39`
+  - mfilesLib.mfilesLibNumbers.`40`
+  - mfilesLib.mfilesLibNumbers.`41`
+  - mfilesLib.mfilesLibNumbers.`42`
+  - mfilesLib.mfilesLibNumbers.`43`
+  - mfilesLib.mfilesLibNumbers.`44`
+  - mfilesLib.mfilesLibNumbers.`45`
+  - mfilesLib.mfilesLibNumbers.`46`
+  - mfilesLib.mfilesLibNumbers.`47`
+  - mfilesLib.mfilesLibNumbers.`48`
+  - mfilesLib.mfilesLibNumbers.`49`
+  - mfilesLib.mfilesLibNumbers.`50`
+  - mfilesLib.mfilesLibNumbers.`51`
+  - mfilesLib.mfilesLibNumbers.`52`
+  - mfilesLib.mfilesLibNumbers.`53`
+  - mfilesLib.mfilesLibNumbers.`54`
+  - mfilesLib.mfilesLibNumbers.`55`
+  - mfilesLib.mfilesLibNumbers.`56`
+  - mfilesLib.mfilesLibNumbers.`57`
+  - mfilesLib.mfilesLibNumbers.`58`
+  - mfilesLib.mfilesLibNumbers.`59`
+  - mfilesLib.mfilesLibNumbers.`60`
+  - mfilesLib.mfilesLibNumbers.`61`
+  - mfilesLib.mfilesLibNumbers.`62`
+  - mfilesLib.mfilesLibNumbers.`63`
+  - mfilesLib.mfilesLibNumbers.`64`
+  - mfilesLib.mfilesLibNumbers.`65`
+  - mfilesLib.mfilesLibNumbers.`66`
+  - mfilesLib.mfilesLibNumbers.`67`
+  - mfilesLib.mfilesLibNumbers.`68`
+  - mfilesLib.mfilesLibNumbers.`69`
+  - mfilesLib.mfilesLibNumbers.`70`
+  - mfilesLib.mfilesLibNumbers.`71`
+  - mfilesLib.mfilesLibNumbers.`72`
+  - mfilesLib.mfilesLibNumbers.`73`
+*/
+trait MFEventHandlerType extends js.Object
 

@@ -89,22 +89,22 @@ trait PluggableMap
   def hasFeatureAtPixel[U](pixel: olLib.pixelMod.Pixel, opt_options: AtPixelOptions): scala.Boolean = js.native
   def isRendered(): scala.Boolean = js.native
   @JSName("on")
-  def `on_change:layerGroup`(
+  def on_changelayerGroup(
     `type`: olLib.olLibStrings.`change:layerGroup`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:size`(
+  def on_changesize(
     `type`: olLib.olLibStrings.`change:size`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:target`(
+  def on_changetarget(
     `type`: olLib.olLibStrings.`change:target`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:view`(
+  def on_changeview(
     `type`: olLib.olLibStrings.`change:view`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -164,22 +164,22 @@ trait PluggableMap
     listener: js.Function1[/* evt */ olLib.mapBrowserEventMod.default, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:layerGroup`(
+  def once_changelayerGroup(
     `type`: olLib.olLibStrings.`change:layerGroup`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:size`(
+  def once_changesize(
     `type`: olLib.olLibStrings.`change:size`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:target`(
+  def once_changetarget(
     `type`: olLib.olLibStrings.`change:target`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:view`(
+  def once_changeview(
     `type`: olLib.olLibStrings.`change:view`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -251,22 +251,22 @@ trait PluggableMap
   def setView(view: olLib.viewMod.default): scala.Unit = js.native
   def skipFeature(feature: olLib.featureMod.default): scala.Unit = js.native
   @JSName("un")
-  def `un_change:layerGroup`(
+  def un_changelayerGroup(
     `type`: olLib.olLibStrings.`change:layerGroup`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:size`(
+  def un_changesize(
     `type`: olLib.olLibStrings.`change:size`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:target`(
+  def un_changetarget(
     `type`: olLib.olLibStrings.`change:target`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:view`(
+  def un_changeview(
     `type`: olLib.olLibStrings.`change:view`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

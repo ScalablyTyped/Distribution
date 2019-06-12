@@ -603,12 +603,12 @@ trait Document
     * When supplied, options's is can be used to create a customized built-in element.
     */
   @JSName("createElementNS")
-  def `createElementNS_http://wwww3org/1999/xhtml`(
+  def createElementNS_httpwwww3org1999xhtml(
     namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/1999/xhtml`,
     qualifiedName: java.lang.String
   ): HTMLElement = js.native
   @JSName("createElementNS")
-  def `createElementNS_http://wwww3org/2000/svg`(
+  def createElementNS_httpwwww3org2000svg(
     namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
     qualifiedName: java.lang.String
   ): SVGElement = js.native
@@ -1251,7 +1251,7 @@ trait Document
   @JSName("createEvent")
   def createEvent_VRDisplayEvent(eventInterface: stdLib.stdLibStrings.VRDisplayEvent): VRDisplayEvent = js.native
   @JSName("createEvent")
-  def `createEvent_VRDisplayEvent `(eventInterface: stdLib.stdLibStrings.`VRDisplayEvent `): VRDisplayEvent = js.native
+  def createEvent_VRDisplayEvent(eventInterface: stdLib.stdLibStrings.`VRDisplayEvent `): VRDisplayEvent = js.native
   @JSName("createEvent")
   def createEvent_WebGLContextEvent(eventInterface: stdLib.stdLibStrings.WebGLContextEvent): WebGLContextEvent = js.native
   @JSName("createEvent")
@@ -1340,9 +1340,9 @@ trait Document
     * Otherwise, returns a HTMLCollection of all descendant elements whose namespace is namespace and local name is localName.
     */
   @JSName("getElementsByTagNameNS")
-  def `getElementsByTagNameNS_http://wwww3org/1999/xhtml`(namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/1999/xhtml`, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
+  def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/1999/xhtml`, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagNameNS")
-  def `getElementsByTagNameNS_http://wwww3org/2000/svg`(namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
+  def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   /**
     * Retrieves a collection of objects based on the specified element name.
     * @param name Specifies the name of an element.

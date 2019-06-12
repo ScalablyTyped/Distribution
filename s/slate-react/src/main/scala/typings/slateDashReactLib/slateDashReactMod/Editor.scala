@@ -307,7 +307,7 @@ class Editor ()
   var normalize_FEditor: slateDashReactLib.Fn_Controller = js.native
   val operations: immutableLib.immutableMod.List[slateLib.slateMod.Operation] = js.native
   val plugins: js.Array[Plugin] = js.native
-  var query: js.Function2[/* query */ java.lang.String, /* repeated */ js.Any, _] = js.native
+  var query: slateDashReactLib.Fn_ArgsQuery = js.native
   val readOnly: scala.Boolean = js.native
   @JSName("redo")
   var redo_FEditor: slateDashReactLib.Fn_Controller = js.native
@@ -324,7 +324,7 @@ class Editor ()
   var replaceMark: slateDashReactLib.Fn_MarkNewMark = js.native
   var replaceNodeByKey: slateDashReactLib.Fn_KeyNode = js.native
   var replaceNodeByPath: slateDashReactLib.Fn_NewNode = js.native
-  var run: slateDashReactLib.Fn_Args = js.native
+  var run: slateDashReactLib.Fn_ArgsKey = js.native
   var select: slateDashReactLib.Fn_PropertiesControllerEditor = js.native
   var setBlocks: slateDashReactLib.Fn_Properties = js.native
   var setBlocksAtRange: slateDashReactLib.Fn_PropertiesRange = js.native

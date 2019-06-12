@@ -36,7 +36,7 @@ abstract class Body () extends js.Object {
     */
   def text(): java.lang.String = js.native
   @JSName("text")
-  def `text_iso-8859`(encodingHint: atAngularHttpLib.atAngularHttpLibStrings.`iso-8859`): java.lang.String = js.native
+  def text_iso8859(encodingHint: atAngularHttpLib.atAngularHttpLibStrings.`iso-8859`): java.lang.String = js.native
   @JSName("text")
   def text_legacy(encodingHint: atAngularHttpLib.atAngularHttpLibStrings.legacy): java.lang.String = js.native
 }

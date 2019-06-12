@@ -50,13 +50,11 @@ trait Typeofonc extends js.Object {
     * @param properties The properties to configure the new network with.
     * @param [callback] Called with the GUID for the new network configuration once the network has been created.
     */
-  @JSName("createNetwork")
-  def createNetwork_setter(
+  def createNetwork(
     shared: chromeDashAppsLib.chromeDashAppsLibNumbers.`false`,
     properties: chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter]
   ): scala.Unit = js.native
-  @JSName("createNetwork")
-  def createNetwork_setter(
+  def createNetwork(
     shared: chromeDashAppsLib.chromeDashAppsLibNumbers.`false`,
     properties: chromeDashAppsLib.chromeNs.networkingNs.oncNs.NetworkConfigProperties[chromeDashAppsLib.chromeDashAppsLibStrings.setter],
     callback: js.Function0[scala.Unit]

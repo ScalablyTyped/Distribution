@@ -34,12 +34,12 @@ trait GeoRSSLayer
     */
   var url: java.lang.String = js.native
   @JSName("on")
-  def `on_layerview-create`(
+  def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: GeoRSSLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-destroy`(
+  def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: GeoRSSLayerLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

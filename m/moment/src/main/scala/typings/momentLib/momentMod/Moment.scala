@@ -68,29 +68,25 @@ trait Moment
   def isBefore(inp: MomentInput, granularity: momentLib.momentMod.unitOfTimeNs.StartOf): scala.Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput): scala.Boolean = js.native
   def isBetween(a: MomentInput, b: MomentInput, granularity: momentLib.momentMod.unitOfTimeNs.StartOf): scala.Boolean = js.native
-  @JSName("isBetween")
-  def `isBetween_()`(
+  def isBetween(
     a: MomentInput,
     b: MomentInput,
     granularity: momentLib.momentMod.unitOfTimeNs.StartOf,
     inclusivity: momentLib.momentLibStrings.`()`
   ): scala.Boolean = js.native
-  @JSName("isBetween")
-  def `isBetween_(]`(
+  def isBetween(
     a: MomentInput,
     b: MomentInput,
     granularity: momentLib.momentMod.unitOfTimeNs.StartOf,
     inclusivity: momentLib.momentLibStrings.`(]`
   ): scala.Boolean = js.native
-  @JSName("isBetween")
-  def `isBetween_[)`(
+  def isBetween(
     a: MomentInput,
     b: MomentInput,
     granularity: momentLib.momentMod.unitOfTimeNs.StartOf,
     inclusivity: momentLib.momentLibStrings.`[)`
   ): scala.Boolean = js.native
-  @JSName("isBetween")
-  def `isBetween_[]`(
+  def isBetween(
     a: MomentInput,
     b: MomentInput,
     granularity: momentLib.momentMod.unitOfTimeNs.StartOf,

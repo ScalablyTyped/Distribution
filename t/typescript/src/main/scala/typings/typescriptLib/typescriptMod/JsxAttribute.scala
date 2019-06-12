@@ -12,6 +12,8 @@ trait JsxAttribute
      with JsxAttributeLike
      with VariableLikeDeclaration {
   var initializer: js.UndefOr[StringLiteral | JsxExpression] = js.native
+  @JSName("kind")
+  var kind_JsxAttribute: typescriptLib.typescriptMod.SyntaxKind.JsxAttribute = js.native
   @JSName("name")
   var name_JsxAttribute: Identifier = js.native
   @JSName("parent")

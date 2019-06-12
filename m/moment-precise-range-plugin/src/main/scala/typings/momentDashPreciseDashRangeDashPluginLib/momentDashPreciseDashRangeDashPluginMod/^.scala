@@ -94,12 +94,14 @@ object ^ extends js.Object {
     d1: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginMod.momentMod.Moment,
     d2: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginMod.momentMod.Moment
   ): java.lang.String = js.native
-  def preciseDiff(
+  @JSName("preciseDiff")
+  def preciseDiff_false(
     d1: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginMod.momentMod.Moment,
     d2: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginMod.momentMod.Moment,
     returnValueObject: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginLibNumbers.`false`
   ): java.lang.String = js.native
-  def preciseDiff(
+  @JSName("preciseDiff")
+  def preciseDiff_true(
     d1: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginMod.momentMod.Moment,
     d2: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginMod.momentMod.Moment,
     returnValueObject: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginLibNumbers.`true`

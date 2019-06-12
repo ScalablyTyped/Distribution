@@ -118,20 +118,20 @@ class CurrencyPipe protected ()
     locale: java.lang.String
   ): java.lang.String | scala.Null = js.native
   @JSName("transform")
-  def `transform_symbol-narrow`(
+  def transform_symbolnarrow(
     value: js.Any,
     currencyCode: java.lang.String,
     display: atAngularCommonLib.atAngularCommonLibStrings.`symbol-narrow`
   ): java.lang.String | scala.Null = js.native
   @JSName("transform")
-  def `transform_symbol-narrow`(
+  def transform_symbolnarrow(
     value: js.Any,
     currencyCode: java.lang.String,
     display: atAngularCommonLib.atAngularCommonLibStrings.`symbol-narrow`,
     digitsInfo: java.lang.String
   ): java.lang.String | scala.Null = js.native
   @JSName("transform")
-  def `transform_symbol-narrow`(
+  def transform_symbolnarrow(
     value: js.Any,
     currencyCode: java.lang.String,
     display: atAngularCommonLib.atAngularCommonLibStrings.`symbol-narrow`,

@@ -11,6 +11,8 @@ trait NamedImports
      with NamedImportBindings
      with NamedImportsOrExports {
   var elements: NodeArray[ImportSpecifier] = js.native
+  @JSName("kind")
+  var kind_NamedImports: typescriptLib.typescriptMod.SyntaxKind.NamedImports = js.native
   @JSName("parent")
   var parent_NamedImports: ImportClause = js.native
 }

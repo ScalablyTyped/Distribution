@@ -11,5 +11,7 @@ trait UnparsedPrologue
      with UnparsedNode {
   @JSName("data")
   var data_UnparsedPrologue: java.lang.String = js.native
+  @JSName("kind")
+  var kind_UnparsedPrologue: typescriptLib.typescriptMod.SyntaxKind.UnparsedPrologue = js.native
 }
 

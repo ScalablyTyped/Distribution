@@ -1304,6 +1304,7 @@
 | [downloadjs](./d/downloadjs) | file downloading using client-side javascript | files, dataURL, blob, download |
 | [downshift](./d/downshift) | A set of primitives to build simple, flexible, WAI | enhanced input, react, autocomplete, autosuggest, typeahead, dropdown, select, combobox, omnibox, accessibility, WAI-ARIA, multiselect, multiple selection |
 | [dplayer](./d/dplayer) | Wow, such a lovely HTML5 danmaku video player | player, danmaku, video, html5 |
+| [draft-convert](./d/draft-convert) | Extensibly serialize & deserialize Draft.js Conten | draft, draftjs, draft-convert, convert |
 | [draft-js](./d/draft-js) | A React framework for building text editors. | draftjs, editor, react, richtext |
 | [drag-timetable](./d/drag-timetable) | Simple, customizable draggable timetable. | timetable, schedule |
 | [draggabilly](./d/draggabilly) | make that shiz draggable | DOM, drag, draggable, touch, multitouch |
@@ -1834,6 +1835,7 @@
 | [freeport](./f/freeport) | Find a free port. | - |
 | [fresh](./f/fresh) | HTTP response freshness testing | fresh, http, conditional, cache |
 | [freshy](./f/freshy) | A node module (unre)loader. | - |
+| [frida-gum](./f/frida-gum) | - | - |
 | [friendly-errors-webpack-p](./f/friendly-errors-webpack-plugin) | Recognizes certain classes of webpack errors and c | friendly, errors, webpack, plugin |
 | [frisby](./f/frisby) | Frisby.js v2.0: REST API Endpoint Testing built on | testing, api, REST, jasmine, bdd, frisby |
 | [from](./f/from) | Easy way to make a Readable Stream | stream, streams, readable, easy |
@@ -3045,6 +3047,7 @@
 | [jstree](./j/jstree) | jQuery tree plugin | - |
 | [jsts](./j/jsts) | A JavaScript library of spatial predicates and fun | JSTS, JavaScript, JTS, Java, Topology, Geometry |
 | [jsuite](./j/jsuite) | a tool suite of javascript. | - |
+| [jsum](./j/jsum) | Consistent checksum calculation of JSON objects. | JSON, checksum, hash |
 | [jsuri](./j/jsuri) | Uri and query string manipulation | uri, url, query, path |
 | [jsurl](./j/jsurl) | URL friendly JSON-like formatting and parsing | - |
 | [jsx-chai](./j/jsx-chai) | JSX assertions for Chai using Algolia's react-elem | chai, testing, assertions, jsx, react |
@@ -4109,6 +4112,7 @@
 | [newrelic](./n/newrelic) | New Relic agent | apm, performance, monitoring, instrumentation, debugging, profiling |
 | [nexpect](./n/nexpect) | Spawns and interacts with child processes using sp | nexpect, spawn, child process, terminal |
 | [next](./n/next) | The React Framework | - |
+| [next-nprogress](./n/next-nprogress) | Next.js HOC to integrate NProgress inside your app | nextjs, react, nprogress, progress bar, hoc, high order component |
 | [next-redux-saga](./n/next-redux-saga) | redux-saga HOC for Next.js | next, nextjs, Next.js, next-redux, next-redux-wrapper, react, react-redux, redux, redux-saga |
 | [next-redux-wrapper](./n/next-redux-wrapper) | Redux wrapper for Next.js | - |
 | [next-seo](./n/next-seo) | SEO plugin for Next.js projects | next.js, seo, react, node, ssr |
@@ -6675,6 +6679,7 @@
 | [validate_dot_js](./v/validate_dot_js) | Declarative validations for JavaScript | validation, validate, server, client |
 | [validator](./v/validator) | String validation and sanitization | validator, validation, validate, sanitization, sanitize, sanitisation, sanitise, assert |
 | [validatorjs](./v/validatorjs) | Validation library inspired by Laravel's Validator | validatorjs, validator.js, data validation, validator, validate, validation, data, laravel, laravel-validator-for-js |
+| [vanilla-masker](./v/vanilla-masker) | VanillaMasker is a pure javascript input mask. | mask input, javascript, lightweight, cross-browser, cross-device |
 | [vanilla-modal](./v/vanilla-modal) | A dependency-free CSS-driven plain JavaScript moda | modal, ecmascript, harmony, es6, es2015 |
 | [vanilla-tilt](./v/vanilla-tilt) | A smooth 3D tilt javascript library forked from Ti | tilt, effect, vanilla, js, 60fps, smooth, tilt.js |
 | [vara](./v/vara) | Vara can create realistic text drawing animations  | text, animation, drawing |
@@ -6875,7 +6880,6 @@
 | [why-did-you-update](./w/why-did-you-update) | Patch React to discover unnecessary re-renders | react-component |
 | [wicg-mediasession](./w/wicg-mediasession) | - | - |
 | [wif](./w/wif) | Bitcoin Wallet Import Format (WIF) decoding/encodi | bitcoin, base58, base58check, decode, decoding, encoding, encode, key, private, wif |
-| [wiiu](./w/wiiu) | - | - |
 | [wikidata-sdk](./w/wikidata-sdk) | A javascript tool-suite to query Wikidata and simp | wikidata, wikibase, sdk, api, wdq, sparql, wdk |
 | [window-or-global](./w/window-or-global) | Use either the window object in the browser or the | window, global, isomorphic, universal |
 | [window-size](./w/window-size) | Reliable way to get the height and width of termin | columns, console, darwin, height, lines, redirected, resize, rows, size, term, term-size, terminal, tty, unix, width, win, window, windows |
@@ -7008,7 +7012,6 @@
 | [yosay](./y/yosay) | Tell Yeoman what to say | cli-app, cli, yeoman, yo, cowsay, say, box, message, ansi |
 | [youtube](./y/youtube) | YouTube upload API | youtube, upload, video |
 | [youtube-dl](./y/youtube-dl) | youtube-dl driver for node | download, video, youtube |
-| [youtube-player](./y/youtube-player) | YouTube IFrame Player API abstraction. | youtube, iframe, player, api, promise, async, video |
 | [yui](./y/yui) | YUI 3 Source | - |
 | [yup](./y/yup) | Dead simple Object schema validation | - |
 | [z-schema](./z/z-schema) | JSON schema validator | JSON, Schema, Validator |

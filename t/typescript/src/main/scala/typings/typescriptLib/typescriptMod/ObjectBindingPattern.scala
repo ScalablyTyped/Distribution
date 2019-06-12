@@ -11,6 +11,8 @@ trait ObjectBindingPattern
      with Node
      with ObjectBindingOrAssignmentPattern {
   var elements: NodeArray[BindingElement] = js.native
+  @JSName("kind")
+  var kind_ObjectBindingPattern: typescriptLib.typescriptMod.SyntaxKind.ObjectBindingPattern = js.native
   @JSName("parent")
   var parent_ObjectBindingPattern: VariableDeclaration | ParameterDeclaration | BindingElement = js.native
 }

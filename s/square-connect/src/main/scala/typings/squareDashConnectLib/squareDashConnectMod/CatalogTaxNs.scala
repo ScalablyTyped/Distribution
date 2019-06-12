@@ -17,15 +17,15 @@ object CatalogTaxNs extends js.Object {
   @js.native
   object CalculationPhaseEnum extends js.Object {
     @js.native
-    sealed trait SUBTOTALPHASE
+    sealed trait TAX_SUBTOTAL_PHASE
       extends squareDashConnectLib.squareDashConnectMod.CatalogTaxNs.CalculationPhaseEnum
     
     @js.native
-    sealed trait TOTALPHASE
+    sealed trait TAX_TOTAL_PHASE
       extends squareDashConnectLib.squareDashConnectMod.CatalogTaxNs.CalculationPhaseEnum
     
-    /* "TAX_SUBTOTAL_PHASE" */ val SUBTOTALPHASE: SUBTOTALPHASE with java.lang.String = js.native
-    /* "TAX_TOTAL_PHASE" */ val TOTALPHASE: TOTALPHASE with java.lang.String = js.native
+    /* "TAX_SUBTOTAL_PHASE" */ val TAX_SUBTOTAL_PHASE: TAX_SUBTOTAL_PHASE with java.lang.String = js.native
+    /* "TAX_TOTAL_PHASE" */ val TAX_TOTAL_PHASE: TAX_TOTAL_PHASE with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.CatalogTaxNs.CalculationPhaseEnum with java.lang.String

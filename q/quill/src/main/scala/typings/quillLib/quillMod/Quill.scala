@@ -80,8 +80,10 @@ class Quill protected () extends EventEmitter {
   def getLines(range: RangeStatic): js.Array[_] = js.native
   def getModule(name: java.lang.String): js.Any = js.native
   def getSelection(): RangeStatic | scala.Null = js.native
-  def getSelection(focus: quillLib.quillLibNumbers.`false`): RangeStatic | scala.Null = js.native
-  def getSelection(focus: quillLib.quillLibNumbers.`true`): RangeStatic = js.native
+  @JSName("getSelection")
+  def getSelection_false(focus: quillLib.quillLibNumbers.`false`): RangeStatic | scala.Null = js.native
+  @JSName("getSelection")
+  def getSelection_true(focus: quillLib.quillLibNumbers.`true`): RangeStatic = js.native
   def getText(): java.lang.String = js.native
   def getText(index: scala.Double): java.lang.String = js.native
   def getText(index: scala.Double, length: scala.Double): java.lang.String = js.native

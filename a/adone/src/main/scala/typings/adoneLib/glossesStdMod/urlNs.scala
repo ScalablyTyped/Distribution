@@ -45,20 +45,24 @@ object urlNs extends js.Object {
     parseQueryString: js.UndefOr[scala.Nothing],
     slashesDenoteHost: scala.Boolean
   ): nodeLib.urlMod.UrlWithStringQuery = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: adoneLib.adoneLibNumbers.`false`): nodeLib.urlMod.UrlWithStringQuery = js.native
-  def parse(
+  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean): nodeLib.urlMod.Url = js.native
+  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean, slashesDenoteHost: scala.Boolean): nodeLib.urlMod.Url = js.native
+  @JSName("parse")
+  def parse_false(urlStr: java.lang.String, parseQueryString: adoneLib.adoneLibNumbers.`false`): nodeLib.urlMod.UrlWithStringQuery = js.native
+  @JSName("parse")
+  def parse_false(
     urlStr: java.lang.String,
     parseQueryString: adoneLib.adoneLibNumbers.`false`,
     slashesDenoteHost: scala.Boolean
   ): nodeLib.urlMod.UrlWithStringQuery = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: adoneLib.adoneLibNumbers.`true`): nodeLib.urlMod.UrlWithParsedQuery = js.native
-  def parse(
+  @JSName("parse")
+  def parse_true(urlStr: java.lang.String, parseQueryString: adoneLib.adoneLibNumbers.`true`): nodeLib.urlMod.UrlWithParsedQuery = js.native
+  @JSName("parse")
+  def parse_true(
     urlStr: java.lang.String,
     parseQueryString: adoneLib.adoneLibNumbers.`true`,
     slashesDenoteHost: scala.Boolean
   ): nodeLib.urlMod.UrlWithParsedQuery = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean): nodeLib.urlMod.Url = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean, slashesDenoteHost: scala.Boolean): nodeLib.urlMod.Url = js.native
   /**
     * This function ensures that path is resolved absolutely, and that the URL
     * control characters are correctly encoded when converting into a File URL.

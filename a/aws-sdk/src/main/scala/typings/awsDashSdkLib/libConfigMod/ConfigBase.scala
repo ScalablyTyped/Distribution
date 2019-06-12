@@ -34,19 +34,21 @@ class ConfigBase () extends ConfigurationOptions {
     * Updates the current configuration object with new options.
     *
     * @param {ConfigurationOptions} options - a map of option keys and values.
-    * @param {boolean} allowUnknownKeys - Whether unknown keys can be set on the configuration object.
+    * @param {boolean} allowUnknownKeys - Defaults to false. Whether unknown keys can be set on the configuration object.
     */
-  def update(
-    options: ConfigurationOptions with org.scalablytyped.runtime.StringDictionary[js.Any],
-    allowUnknownKeys: awsDashSdkLib.awsDashSdkLibNumbers.`true`
-  ): scala.Unit = js.native
+  def update(options: ConfigurationOptions): scala.Unit = js.native
+  @JSName("update")
+  def update_false(options: ConfigurationOptions, allowUnknownKeys: awsDashSdkLib.awsDashSdkLibNumbers.`false`): scala.Unit = js.native
   /**
     * Updates the current configuration object with new options.
     *
     * @param {ConfigurationOptions} options - a map of option keys and values.
-    * @param {boolean} allowUnknownKeys - Defaults to false. Whether unknown keys can be set on the configuration object.
+    * @param {boolean} allowUnknownKeys - Whether unknown keys can be set on the configuration object.
     */
-  def update(options: ConfigurationOptions): scala.Unit = js.native
-  def update(options: ConfigurationOptions, allowUnknownKeys: awsDashSdkLib.awsDashSdkLibNumbers.`false`): scala.Unit = js.native
+  @JSName("update")
+  def update_true(
+    options: ConfigurationOptions with org.scalablytyped.runtime.StringDictionary[js.Any],
+    allowUnknownKeys: awsDashSdkLib.awsDashSdkLibNumbers.`true`
+  ): scala.Unit = js.native
 }
 

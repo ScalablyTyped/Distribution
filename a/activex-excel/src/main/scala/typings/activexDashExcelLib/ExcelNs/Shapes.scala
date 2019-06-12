@@ -72,7 +72,8 @@ trait Shapes extends js.Object {
     Width: js.UndefOr[scala.Double],
     Height: js.UndefOr[scala.Double]
   ): Shape = js.native
-  def AddOLEObject(
+  @JSName("AddOLEObject")
+  def AddOLEObject_false(
     ClassType: java.lang.String,
     Filename: js.UndefOr[scala.Nothing],
     Link: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`false`],

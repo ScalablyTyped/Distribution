@@ -24,7 +24,7 @@ class UniqueValues protected () extends js.Object {
   var Priority: scala.Double = js.native
   var ScopeType: XlPivotConditionScope = js.native
   var StopIfTrue: scala.Boolean = js.native
-  val Type: XlFormatConditionType = js.native
+  val Type: activexDashExcelLib.activexDashExcelLibNumbers.`8` = js.native
   def AppliesTo(Address: java.lang.String): Range = js.native
   def AppliesTo(RowIndex: scala.Double): Range = js.native
   def AppliesTo(RowIndex: scala.Double, ColumnIndex: scala.Double): Range = js.native

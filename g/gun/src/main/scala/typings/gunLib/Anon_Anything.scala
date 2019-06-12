@@ -15,7 +15,8 @@ trait Anon_Anything extends js.Object {
     *
     * Returns undefined if data is not correct gun data.
     */
-  def soul(data: gunLib.gunMod.GunNs.ChainReference[_, _, gunLib.gunLibNumbers.`false`]): java.lang.String
+  @JSName("soul")
+  def soul_false(data: gunLib.gunMod.GunNs.ChainReference[_, _, gunLib.gunLibNumbers.`false`]): java.lang.String
 }
 
 object Anon_Anything {
@@ -23,10 +24,10 @@ object Anon_Anything {
   def apply(
     ify: js.Any => js.Any,
     is: js.Any => /* is gun.gun.Gun.ChainReference<any, any, false> */ scala.Boolean,
-    soul: gunLib.gunMod.GunNs.ChainReference[_, _, gunLib.gunLibNumbers.`false`] => java.lang.String
+    soul_false: gunLib.gunMod.GunNs.ChainReference[_, _, gunLib.gunLibNumbers.`false`] => java.lang.String
   ): Anon_Anything = {
-    val __obj = js.Dynamic.literal(ify = js.Any.fromFunction1(ify), is = js.Any.fromFunction1(is), soul = js.Any.fromFunction1(soul))
-  
+    val __obj = js.Dynamic.literal(ify = js.Any.fromFunction1(ify), is = js.Any.fromFunction1(is))
+    __obj.updateDynamic("soul")(js.Any.fromFunction1(soul_false))
     __obj.asInstanceOf[Anon_Anything]
   }
 }

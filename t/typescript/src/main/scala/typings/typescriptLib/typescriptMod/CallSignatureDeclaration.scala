@@ -12,6 +12,8 @@ trait CallSignatureDeclaration
      with SignatureDeclaration
      with _HasJSDoc {
   var _typeElementBrand: js.Any = js.native
+  @JSName("kind")
+  var kind_CallSignatureDeclaration: typescriptLib.typescriptMod.SyntaxKind.CallSignature = js.native
   var questionToken: js.UndefOr[QuestionToken] = js.native
 }
 

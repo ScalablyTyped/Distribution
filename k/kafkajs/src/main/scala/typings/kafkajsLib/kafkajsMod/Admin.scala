@@ -32,12 +32,12 @@ trait Admin extends js.Object {
     cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
   ): js.Function0[this.type] = js.native
   @JSName("on")
-  def on_adminrequest_queue_size(
+  def on_adminrequestqueuesize(
     event: kafkajsLib.kafkajsLibStrings.adminDOTrequest_queue_size,
     cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
   ): js.Function0[this.type] = js.native
   @JSName("on")
-  def on_adminrequest_timeout(
+  def on_adminrequesttimeout(
     event: kafkajsLib.kafkajsLibStrings.adminDOTrequest_timeout,
     cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
   ): js.Function0[this.type] = js.native

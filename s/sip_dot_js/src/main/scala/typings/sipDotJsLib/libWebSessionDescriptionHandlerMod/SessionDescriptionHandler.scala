@@ -151,22 +151,22 @@ class SessionDescriptionHandler protected ()
     listener: js.Function1[/* sessionDescriptionHandler */ this.type, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_peerConnection-SetLocalDescriptionFailed`(
+  def on_peerConnectionSetLocalDescriptionFailed(
     event: sipDotJsLib.sipDotJsLibStrings.`peerConnection-SetLocalDescriptionFailed`,
     listener: js.Function1[/* error */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_peerConnection-createAnswerFailed`(
+  def on_peerConnectioncreateAnswerFailed(
     event: sipDotJsLib.sipDotJsLibStrings.`peerConnection-createAnswerFailed`,
     listener: js.Function1[/* error */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_peerConnection-createOfferFailed`(
+  def on_peerConnectioncreateOfferFailed(
     event: sipDotJsLib.sipDotJsLibStrings.`peerConnection-createOfferFailed`,
     listener: js.Function1[/* error */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_peerConnection-setRemoteDescriptionFailed`(
+  def on_peerConnectionsetRemoteDescriptionFailed(
     event: sipDotJsLib.sipDotJsLibStrings.`peerConnection-setRemoteDescriptionFailed`,
     listener: js.Function1[/* error */ js.Any, scala.Unit]
   ): this.type = js.native

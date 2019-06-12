@@ -17,57 +17,57 @@ trait JQuery extends js.Object {
     * Flips the shape over counter-clockwise
     */
   @JSName("shape")
-  def `shape_flip back`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip back`): JQuery = js.native
+  def shape_flipback(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip back`): JQuery = js.native
   /**
     * Flips the shape downward
     */
   @JSName("shape")
-  def `shape_flip down`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip down`): JQuery = js.native
+  def shape_flipdown(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip down`): JQuery = js.native
   /**
     * Flips the shape left
     */
   @JSName("shape")
-  def `shape_flip left`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip left`): JQuery = js.native
+  def shape_flipleft(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip left`): JQuery = js.native
   /**
     * Flips the shape over clock-wise
     */
   @JSName("shape")
-  def `shape_flip over`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip over`): JQuery = js.native
+  def shape_flipover(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip over`): JQuery = js.native
   /**
     * Flips the shape right
     */
   @JSName("shape")
-  def `shape_flip right`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip right`): JQuery = js.native
+  def shape_flipright(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip right`): JQuery = js.native
   /**
     * Flips the shape upward
     */
   @JSName("shape")
-  def `shape_flip up`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip up`): JQuery = js.native
+  def shape_flipup(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`flip up`): JQuery = js.native
   /**
     * Returns translation for next side staged below
     */
   @JSName("shape")
-  def `shape_get transform down`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`get transform down`): semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.Translation = js.native
+  def shape_gettransformdown(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`get transform down`): semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.Translation = js.native
   /**
     * Returns translation for next side staged left
     */
   @JSName("shape")
-  def `shape_get transform left`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`get transform left`): semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.Translation = js.native
+  def shape_gettransformleft(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`get transform left`): semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.Translation = js.native
   /**
     * Returns translation for next side staged right
     */
   @JSName("shape")
-  def `shape_get transform right`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`get transform right`): semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.Translation = js.native
+  def shape_gettransformright(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`get transform right`): semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.Translation = js.native
   /**
     * Returns translation for next side staged up
     */
   @JSName("shape")
-  def `shape_get transform up`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`get transform up`): semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.Translation = js.native
+  def shape_gettransformup(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`get transform up`): semanticDashUiDashShapeLib.SemanticUINs.ShapeNs.Translation = js.native
   /**
     * Returns whether shape is currently animating
     */
   @JSName("shape")
-  def `shape_is animating`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`is animating`): scala.Boolean = js.native
+  def shape_isanimating(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`is animating`): scala.Boolean = js.native
   /**
     * Queues an animation until after current animation
     */
@@ -95,17 +95,17 @@ trait JQuery extends js.Object {
     * Set the next side to next sibling to active element
     */
   @JSName("shape")
-  def `shape_set default side`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`set default side`): JQuery = js.native
+  def shape_setdefaultside(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`set default side`): JQuery = js.native
   /**
     * Set the next side to a specific selector
     */
   @JSName("shape")
-  def `shape_set next side`(
+  def shape_setnextside(
     behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`set next side`,
     selector: java.lang.String
   ): JQuery = js.native
   @JSName("shape")
-  def `shape_set next side`(
+  def shape_setnextside(
     behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`set next side`,
     selector: JQuery
   ): JQuery = js.native
@@ -113,7 +113,7 @@ trait JQuery extends js.Object {
     * Sets shape to the content size of the next side
     */
   @JSName("shape")
-  def `shape_set stage size`(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`set stage size`): JQuery = js.native
+  def shape_setstagesize(behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.`set stage size`): JQuery = js.native
   @JSName("shape")
   def shape_setting(
     behavior: semanticDashUiDashShapeLib.semanticDashUiDashShapeLibStrings.setting,

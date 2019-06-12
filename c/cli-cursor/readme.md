@@ -1,7 +1,7 @@
 
 # Scala.js typings for cli-cursor
 
-Typings are for version 3.0.0
+Typings are for version 3.1.0
 
 ## Library description:
 Toggle the CLI cursor

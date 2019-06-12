@@ -16,6 +16,6 @@ trait Document extends js.Object {
   def querySelector(selectors: java.lang.String): aframeLib.aframeMod.Entity[_] = js.native
   def querySelectorAll(selectors: java.lang.String): stdLib.NodeListOf[aframeLib.aframeMod.Entity[_] | stdLib.Element] = js.native
   @JSName("querySelector")
-  def `querySelector_a-scene`(selectors: aframeLib.aframeLibStrings.`a-scene`): aframeLib.aframeMod.Scene = js.native
+  def querySelector_ascene(selectors: aframeLib.aframeLibStrings.`a-scene`): aframeLib.aframeMod.Scene = js.native
 }
 

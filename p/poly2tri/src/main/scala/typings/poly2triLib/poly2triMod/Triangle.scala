@@ -26,9 +26,12 @@ class Triangle protected () extends js.Object {
     * @param index - vertice index: 0, 1 or 2
     * @returns point
     */
-  def getPoint(index: poly2triLib.poly2triLibNumbers.`0`): XY = js.native
-  def getPoint(index: poly2triLib.poly2triLibNumbers.`1`): XY = js.native
-  def getPoint(index: poly2triLib.poly2triLibNumbers.`2`): XY = js.native
+  @JSName("getPoint")
+  def getPoint_0(index: poly2triLib.poly2triLibNumbers.`0`): XY = js.native
+  @JSName("getPoint")
+  def getPoint_1(index: poly2triLib.poly2triLibNumbers.`1`): XY = js.native
+  @JSName("getPoint")
+  def getPoint_2(index: poly2triLib.poly2triLibNumbers.`2`): XY = js.native
   /**
     * Get all 3 vertices of the triangle as an array
     */

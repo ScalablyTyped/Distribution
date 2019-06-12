@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Screen extends EventEmitter {
   @JSName("addListener")
-  def `addListener_display-added`(
+  def addListener_displayadded(
     event: electronLib.electronLibStrings.`display-added`,
     listener: js.Function2[/* event */ Event, /* newDisplay */ Display, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_display-metrics-changed`(
+  def addListener_displaymetricschanged(
     event: electronLib.electronLibStrings.`display-metrics-changed`,
     listener: js.Function3[
       /* event */ Event, 
@@ -23,7 +23,7 @@ trait Screen extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_display-removed`(
+  def addListener_displayremoved(
     event: electronLib.electronLibStrings.`display-removed`,
     listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, scala.Unit]
   ): this.type = js.native
@@ -52,7 +52,7 @@ trait Screen extends EventEmitter {
     * Emitted when newDisplay has been added.
     */
   @JSName("on")
-  def `on_display-added`(
+  def on_displayadded(
     event: electronLib.electronLibStrings.`display-added`,
     listener: js.Function2[/* event */ Event, /* newDisplay */ Display, scala.Unit]
   ): this.type = js.native
@@ -62,7 +62,7 @@ trait Screen extends EventEmitter {
     * workArea, scaleFactor and rotation.
     */
   @JSName("on")
-  def `on_display-metrics-changed`(
+  def on_displaymetricschanged(
     event: electronLib.electronLibStrings.`display-metrics-changed`,
     listener: js.Function3[
       /* event */ Event, 
@@ -75,17 +75,17 @@ trait Screen extends EventEmitter {
     * Emitted when oldDisplay has been removed.
     */
   @JSName("on")
-  def `on_display-removed`(
+  def on_displayremoved(
     event: electronLib.electronLibStrings.`display-removed`,
     listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_display-added`(
+  def once_displayadded(
     event: electronLib.electronLibStrings.`display-added`,
     listener: js.Function2[/* event */ Event, /* newDisplay */ Display, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_display-metrics-changed`(
+  def once_displaymetricschanged(
     event: electronLib.electronLibStrings.`display-metrics-changed`,
     listener: js.Function3[
       /* event */ Event, 
@@ -95,17 +95,17 @@ trait Screen extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_display-removed`(
+  def once_displayremoved(
     event: electronLib.electronLibStrings.`display-removed`,
     listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_display-added`(
+  def removeListener_displayadded(
     event: electronLib.electronLibStrings.`display-added`,
     listener: js.Function2[/* event */ Event, /* newDisplay */ Display, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_display-metrics-changed`(
+  def removeListener_displaymetricschanged(
     event: electronLib.electronLibStrings.`display-metrics-changed`,
     listener: js.Function3[
       /* event */ Event, 
@@ -115,7 +115,7 @@ trait Screen extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_display-removed`(
+  def removeListener_displayremoved(
     event: electronLib.electronLibStrings.`display-removed`,
     listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, scala.Unit]
   ): this.type = js.native

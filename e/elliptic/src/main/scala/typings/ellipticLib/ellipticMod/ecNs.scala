@@ -25,11 +25,11 @@ object ecNs extends js.Object {
     def getPrivate_hex(enc: ellipticLib.ellipticLibStrings.hex): java.lang.String = js.native
     def getPublic(): ellipticLib.ellipticMod.curveNs.baseNs.BasePoint = js.native
     @JSName("getPublic")
-    def getPublic_array(compact: scala.Boolean, enc: ellipticLib.ellipticLibStrings.array): java.lang.String | js.Array[scala.Double] = js.native
+    def getPublic_array(compact: scala.Boolean, enc: ellipticLib.ellipticLibStrings.array): js.Array[scala.Double] = js.native
     @JSName("getPublic")
-    def getPublic_array(enc: ellipticLib.ellipticLibStrings.array): java.lang.String = js.native
+    def getPublic_array(enc: ellipticLib.ellipticLibStrings.array): js.Array[scala.Double] = js.native
     @JSName("getPublic")
-    def getPublic_hex(compact: scala.Boolean, enc: ellipticLib.ellipticLibStrings.hex): java.lang.String | js.Array[scala.Double] = js.native
+    def getPublic_hex(compact: scala.Boolean, enc: ellipticLib.ellipticLibStrings.hex): java.lang.String = js.native
     @JSName("getPublic")
     def getPublic_hex(enc: ellipticLib.ellipticLibStrings.hex): java.lang.String = js.native
     def inspect(): java.lang.String = js.native

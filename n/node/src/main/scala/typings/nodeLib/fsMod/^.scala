@@ -1351,7 +1351,7 @@ object ^ extends js.Object {
     */
   def readdir(
     path: PathLike,
-    options: nodeLib.Anon_True,
+    options: nodeLib.Anon_EncodingTrue,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
       /* files */ js.Array[Dirent], 
@@ -1392,11 +1392,11 @@ object ^ extends js.Object {
   def readdirSync(path: PathLike, options: nodeLib.Anon_EncodingFalse): js.Array[java.lang.String] = js.native
   def readdirSync(path: PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Array[nodeLib.Buffer | java.lang.String] = js.native
   /**
-    * Asynchronous readdir(3) - read a directory.
+    * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
-  def readdirSync(path: PathLike, options: nodeLib.Anon_True): js.Array[Dirent] = js.native
+  def readdirSync(path: PathLike, options: nodeLib.Anon_EncodingTrue): js.Array[Dirent] = js.native
   def readdirSync(path: PathLike, options: nodeLib.BufferEncoding): js.Array[java.lang.String] = js.native
   @JSName("readdirSync")
   def readdirSync_buffer(path: PathLike, options: nodeLib.nodeLibStrings.buffer): js.Array[nodeLib.Buffer] = js.native

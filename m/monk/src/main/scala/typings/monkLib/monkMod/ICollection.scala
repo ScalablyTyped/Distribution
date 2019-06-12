@@ -99,6 +99,13 @@ class ICollection[T] () extends js.Object {
   @JSName("distinct")
   def distinct_Unit(field: java.lang.String, query: TQuery, options: js.Object): scala.Unit = js.native
   def drop(): js.Promise[(monkLib.monkLibStrings.`ns not found`) | monkLib.monkLibNumbers.`true`] = js.native
+  def drop(
+    callback: js.Function2[
+      /* err */ stdLib.Error | scala.Null, 
+      /* data */ (monkLib.monkLibStrings.`ns not found`) | monkLib.monkLibNumbers.`true`, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   def dropIndex(): js.Promise[monkLib.Anon_0] = js.native
   def dropIndex(fields: TFields): js.Promise[monkLib.Anon_0] = js.native
   def dropIndex(fields: TFields, options: js.Object): js.Promise[monkLib.Anon_0] = js.native
@@ -121,14 +128,6 @@ class ICollection[T] () extends js.Object {
   def dropIndexes_Unit(): scala.Unit = js.native
   @JSName("drop")
   def drop_Unit(): scala.Unit = js.native
-  @JSName("drop")
-  def `drop_ns not found`(
-    callback: js.Function2[
-      /* err */ stdLib.Error | scala.Null, 
-      /* data */ (monkLib.monkLibStrings.`ns not found`) | monkLib.monkLibNumbers.`true`, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
   def find[U](): js.Promise[js.Array[U]] with monkLib.Anon_Cursor[U] = js.native
   def find[U](query: TQuery): js.Promise[js.Array[U]] with monkLib.Anon_Cursor[U] = js.native
   def find[U](query: TQuery, options: js.Object): js.Promise[js.Array[U]] with monkLib.Anon_Cursor[U] = js.native

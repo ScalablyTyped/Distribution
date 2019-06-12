@@ -141,6 +141,11 @@ package object ucbNs {
   /** This exception is thrown to indicate that a Listener is already set while only one is allowed. */
   type ListenerAlreadySetException = activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Exception
   /**
+    * specifies the access type of a lock.
+    * @see LockEntry
+    */
+  type LockType = activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0`
+  /**
     * This exception is used to indicate that there is an {@link com.sun.star.io.XInputStream} missing.
     *
     * For example, the command "insert" may fail, if the implementation expects that an input stream is supplied with the given {@link

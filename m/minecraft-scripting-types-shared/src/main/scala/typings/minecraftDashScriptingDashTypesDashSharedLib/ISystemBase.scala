@@ -35,7 +35,7 @@ trait ISystemBase extends js.Object {
     templateIdentifier: java.lang.String
   ): IEntity | scala.Null = js.native
   @JSName("createEntity")
-  def createEntity_item_entity(
+  def createEntity_itementity(
     `type`: minecraftDashScriptingDashTypesDashSharedLib.minecraftDashScriptingDashTypesDashSharedLibStrings.item_entity,
     templateIdentifier: java.lang.String
   ): IEntity | scala.Null = js.native

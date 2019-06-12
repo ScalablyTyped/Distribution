@@ -22,7 +22,27 @@ object atAngularCoreLibStrings {
   sealed trait `Brand for PlayerFactory that nothing will match` extends js.Object
   
   @js.native
+  sealed trait Html
+    extends atAngularCoreLib.atAngularCoreMod.BypassType
+  
+  @js.native
   sealed trait NO_CHANGE extends js.Object
+  
+  @js.native
+  sealed trait ResourceUrl
+    extends atAngularCoreLib.atAngularCoreMod.BypassType
+  
+  @js.native
+  sealed trait Script
+    extends atAngularCoreLib.atAngularCoreMod.BypassType
+  
+  @js.native
+  sealed trait Style
+    extends atAngularCoreLib.atAngularCoreMod.BypassType
+  
+  @js.native
+  sealed trait Url
+    extends atAngularCoreLib.atAngularCoreMod.BypassType
   
   @js.native
   sealed trait any extends js.Object
@@ -71,7 +91,17 @@ object atAngularCoreLibStrings {
   @scala.inline
   def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = "Brand for PlayerFactory that nothing will match".asInstanceOf[`Brand for PlayerFactory that nothing will match`]
   @scala.inline
+  def Html: Html = "Html".asInstanceOf[Html]
+  @scala.inline
   def NO_CHANGE: NO_CHANGE = "NO_CHANGE".asInstanceOf[NO_CHANGE]
+  @scala.inline
+  def ResourceUrl: ResourceUrl = "ResourceUrl".asInstanceOf[ResourceUrl]
+  @scala.inline
+  def Script: Script = "Script".asInstanceOf[Script]
+  @scala.inline
+  def Style: Style = "Style".asInstanceOf[Style]
+  @scala.inline
+  def Url: Url = "Url".asInstanceOf[Url]
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   @scala.inline

@@ -19,7 +19,7 @@ object cacheNs extends js.Object {
   @JSName("has")
   def has_rankings(endpoint: vexdbLib.vexdbLibStrings.rankings, params: vexdbLib.vexdbMod.RankingsRequestObject): js.Promise[scala.Boolean] = js.native
   @JSName("has")
-  def has_season_rankings(
+  def has_seasonrankings(
     endpoint: vexdbLib.vexdbLibStrings.season_rankings,
     params: vexdbLib.vexdbMod.SeasonRankingsRequestObject
   ): js.Promise[scala.Boolean] = js.native
@@ -36,7 +36,7 @@ object cacheNs extends js.Object {
   @JSName("resolve")
   def resolve_rankings(endpoint: vexdbLib.vexdbLibStrings.rankings, params: vexdbLib.vexdbMod.RankingsRequestObject): js.Promise[vexdbLib.vexdbMod.CacheEntry[vexdbLib.vexdbMod.RankingsResponseObject]] = js.native
   @JSName("resolve")
-  def resolve_season_rankings(
+  def resolve_seasonrankings(
     endpoint: vexdbLib.vexdbLibStrings.season_rankings,
     params: vexdbLib.vexdbMod.SeasonRankingsRequestObject
   ): js.Promise[vexdbLib.vexdbMod.CacheEntry[vexdbLib.vexdbMod.SeasonRankingsResponseObject]] = js.native

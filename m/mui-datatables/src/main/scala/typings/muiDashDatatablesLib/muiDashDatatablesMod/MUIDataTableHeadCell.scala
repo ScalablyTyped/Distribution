@@ -11,9 +11,7 @@ trait MUIDataTableHeadCell extends js.Object {
   var hint: java.lang.String
   var options: js.Object
   var sort: scala.Boolean
-  var sortDirection: js.UndefOr[
-    muiDashDatatablesLib.muiDashDatatablesLibStrings.asc | muiDashDatatablesLib.muiDashDatatablesLibStrings.desc
-  ] = js.undefined
+  var sortDirection: js.UndefOr[SortDirection] = js.undefined
   def toggleSort(
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
   ): js.Any
@@ -28,12 +26,12 @@ object MUIDataTableHeadCell {
     toggleSort: js.Any => js.Any,
     children: js.Any = null,
     classes: js.Object = null,
-    sortDirection: muiDashDatatablesLib.muiDashDatatablesLibStrings.asc | muiDashDatatablesLib.muiDashDatatablesLibStrings.desc = null
+    sortDirection: SortDirection = null
   ): MUIDataTableHeadCell = {
     val __obj = js.Dynamic.literal(hint = hint, options = options, sort = sort, toggleSort = js.Any.fromFunction1(toggleSort))
     if (children != null) __obj.updateDynamic("children")(children)
     if (classes != null) __obj.updateDynamic("classes")(classes)
-    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])
+    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection)
     __obj.asInstanceOf[MUIDataTableHeadCell]
   }
 }

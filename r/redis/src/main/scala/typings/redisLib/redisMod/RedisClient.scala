@@ -75,7 +75,7 @@ trait RedisClient
     listener: js.Function2[/* channel */ java.lang.String, /* message */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_message_buffer(
+  def on_messagebuffer(
     event: redisLib.redisLibStrings.message_buffer,
     listener: js.Function2[/* channel */ java.lang.String, /* message */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -90,7 +90,7 @@ trait RedisClient
     ]
   ): this.type = js.native
   @JSName("on")
-  def on_pmessage_buffer(
+  def on_pmessagebuffer(
     event: redisLib.redisLibStrings.pmessage_buffer,
     listener: js.Function3[
       /* pattern */ java.lang.String, 

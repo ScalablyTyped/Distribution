@@ -34,6 +34,9 @@ object agoraDashRtcDashSdkLibNumbers {
   sealed trait `48000` extends js.Object
   
   @js.native
+  sealed trait `5` extends js.Object
+  
+  @js.native
   sealed trait `66` extends js.Object
   
   @js.native
@@ -57,6 +60,8 @@ object agoraDashRtcDashSdkLibNumbers {
   def `44100`: `44100` = 44100.asInstanceOf[`44100`]
   @scala.inline
   def `48000`: `48000` = 48000.asInstanceOf[`48000`]
+  @scala.inline
+  def `5`: `5` = 5.asInstanceOf[`5`]
   @scala.inline
   def `66`: `66` = 66.asInstanceOf[`66`]
   @scala.inline

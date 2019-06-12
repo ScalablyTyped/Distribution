@@ -14,6 +14,8 @@ trait BindingElement
      with _BindingOrAssignmentElement {
   var dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
   var initializer: js.UndefOr[Expression] = js.native
+  @JSName("kind")
+  var kind_BindingElement: typescriptLib.typescriptMod.SyntaxKind.BindingElement = js.native
   @JSName("name")
   var name_BindingElement: BindingName = js.native
   @JSName("parent")

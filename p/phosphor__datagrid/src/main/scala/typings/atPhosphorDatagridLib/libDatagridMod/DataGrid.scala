@@ -479,7 +479,7 @@ class DataGrid ()
   @JSName("resetSections")
   def resetSections_column(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.column): scala.Unit = js.native
   @JSName("resetSections")
-  def `resetSections_column-header`(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`column-header`): scala.Unit = js.native
+  def resetSections_columnheader(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`column-header`): scala.Unit = js.native
   /**
     * Reset sections in the data grid to their base size.
     *
@@ -488,7 +488,7 @@ class DataGrid ()
   @JSName("resetSections")
   def resetSections_row(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.row): scala.Unit = js.native
   @JSName("resetSections")
-  def `resetSections_row-header`(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`row-header`): scala.Unit = js.native
+  def resetSections_rowheader(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`row-header`): scala.Unit = js.native
   @JSName("resizeSection")
   def resizeSection_column(
     area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.column,
@@ -496,7 +496,7 @@ class DataGrid ()
     size: scala.Double
   ): scala.Unit = js.native
   @JSName("resizeSection")
-  def `resizeSection_column-header`(
+  def resizeSection_columnheader(
     area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`column-header`,
     index: scala.Double,
     size: scala.Double
@@ -520,7 +520,7 @@ class DataGrid ()
     size: scala.Double
   ): scala.Unit = js.native
   @JSName("resizeSection")
-  def `resizeSection_row-header`(
+  def resizeSection_rowheader(
     area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`row-header`,
     index: scala.Double,
     size: scala.Double
@@ -575,7 +575,7 @@ class DataGrid ()
   @JSName("sectionSize")
   def sectionSize_column(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.column, index: scala.Double): scala.Double = js.native
   @JSName("sectionSize")
-  def `sectionSize_column-header`(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`column-header`, index: scala.Double): scala.Double = js.native
+  def sectionSize_columnheader(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`column-header`, index: scala.Double): scala.Double = js.native
   /**
     * Get the size of a section in the data grid.
     *
@@ -588,6 +588,6 @@ class DataGrid ()
   @JSName("sectionSize")
   def sectionSize_row(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.row, index: scala.Double): scala.Double = js.native
   @JSName("sectionSize")
-  def `sectionSize_row-header`(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`row-header`, index: scala.Double): scala.Double = js.native
+  def sectionSize_rowheader(area: atPhosphorDatagridLib.atPhosphorDatagridLibStrings.`row-header`, index: scala.Double): scala.Double = js.native
 }
 

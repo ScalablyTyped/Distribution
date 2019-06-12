@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3FactoryMetadata because Already inherited */ trait R3DelegatedFactoryMetadata extends R3ConstructorFactoryMetadata {
   var delegate: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
-  var delegateType: R3FactoryDelegateType
+  var delegateType: atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Factory
 }
 
 object R3DelegatedFactoryMetadata {
   @scala.inline
   def apply(
     delegate: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
-    delegateType: R3FactoryDelegateType,
+    delegateType: atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3FactoryDelegateType.Factory,
     injectFn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference,
     name: java.lang.String,
     `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,

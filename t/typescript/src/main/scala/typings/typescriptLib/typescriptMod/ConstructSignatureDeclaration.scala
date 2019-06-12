@@ -12,6 +12,8 @@ trait ConstructSignatureDeclaration
      with SignatureDeclaration
      with _HasJSDoc {
   var _typeElementBrand: js.Any = js.native
+  @JSName("kind")
+  var kind_ConstructSignatureDeclaration: typescriptLib.typescriptMod.SyntaxKind.ConstructSignature = js.native
   var questionToken: js.UndefOr[QuestionToken] = js.native
 }
 

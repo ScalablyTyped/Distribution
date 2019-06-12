@@ -133,6 +133,9 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var opsworks: js.UndefOr[awsDashSdkLib.clientsOpsworksMod.apiVersion] = js.undefined
   var opsworkscm: js.UndefOr[awsDashSdkLib.clientsOpsworkscmMod.apiVersion] = js.undefined
   var organizations: js.UndefOr[awsDashSdkLib.clientsOrganizationsMod.apiVersion] = js.undefined
+  var personalize: js.UndefOr[awsDashSdkLib.clientsPersonalizeMod.apiVersion] = js.undefined
+  var personalizeevents: js.UndefOr[awsDashSdkLib.clientsPersonalizeeventsMod.apiVersion] = js.undefined
+  var personalizeruntime: js.UndefOr[awsDashSdkLib.clientsPersonalizeruntimeMod.apiVersion] = js.undefined
   var pi: js.UndefOr[awsDashSdkLib.clientsPiMod.apiVersion] = js.undefined
   var pinpoint: js.UndefOr[awsDashSdkLib.clientsPinpointMod.apiVersion] = js.undefined
   var pinpointemail: js.UndefOr[awsDashSdkLib.clientsPinpointemailMod.apiVersion] = js.undefined
@@ -317,6 +320,9 @@ object ConfigurationServiceApiVersions {
     opsworks: awsDashSdkLib.clientsOpsworksMod.apiVersion = null,
     opsworkscm: awsDashSdkLib.clientsOpsworkscmMod.apiVersion = null,
     organizations: awsDashSdkLib.clientsOrganizationsMod.apiVersion = null,
+    personalize: awsDashSdkLib.clientsPersonalizeMod.apiVersion = null,
+    personalizeevents: awsDashSdkLib.clientsPersonalizeeventsMod.apiVersion = null,
+    personalizeruntime: awsDashSdkLib.clientsPersonalizeruntimeMod.apiVersion = null,
     pi: awsDashSdkLib.clientsPiMod.apiVersion = null,
     pinpoint: awsDashSdkLib.clientsPinpointMod.apiVersion = null,
     pinpointemail: awsDashSdkLib.clientsPinpointemailMod.apiVersion = null,
@@ -498,6 +504,9 @@ object ConfigurationServiceApiVersions {
     if (opsworks != null) __obj.updateDynamic("opsworks")(opsworks.asInstanceOf[js.Any])
     if (opsworkscm != null) __obj.updateDynamic("opsworkscm")(opsworkscm.asInstanceOf[js.Any])
     if (organizations != null) __obj.updateDynamic("organizations")(organizations.asInstanceOf[js.Any])
+    if (personalize != null) __obj.updateDynamic("personalize")(personalize.asInstanceOf[js.Any])
+    if (personalizeevents != null) __obj.updateDynamic("personalizeevents")(personalizeevents.asInstanceOf[js.Any])
+    if (personalizeruntime != null) __obj.updateDynamic("personalizeruntime")(personalizeruntime.asInstanceOf[js.Any])
     if (pi != null) __obj.updateDynamic("pi")(pi.asInstanceOf[js.Any])
     if (pinpoint != null) __obj.updateDynamic("pinpoint")(pinpoint.asInstanceOf[js.Any])
     if (pinpointemail != null) __obj.updateDynamic("pinpointemail")(pinpointemail.asInstanceOf[js.Any])

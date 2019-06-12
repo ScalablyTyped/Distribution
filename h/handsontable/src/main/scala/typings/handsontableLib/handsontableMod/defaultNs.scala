@@ -31,7 +31,7 @@ object defaultNs extends js.Object {
       /* CompleteClass */
       override var pluginsInitializedCallback: js.Array[_] = js.native
       /* CompleteClass */
-      override def addHook(name: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+      override def addHook(name: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _]): scala.Unit = js.native
       /* CompleteClass */
       override def callOnPluginsReady(callback: js.Function0[scala.Unit]): scala.Unit = js.native
       /* CompleteClass */
@@ -45,7 +45,7 @@ object defaultNs extends js.Object {
       /* CompleteClass */
       override def init(): scala.Unit = js.native
       /* CompleteClass */
-      override def removeHook(name: java.lang.String): scala.Unit = js.native
+      override def removeHooks(name: java.lang.String): scala.Unit = js.native
     }
     
     // utils for Filters

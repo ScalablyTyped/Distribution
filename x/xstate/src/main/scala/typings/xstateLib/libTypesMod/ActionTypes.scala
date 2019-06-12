@@ -40,6 +40,10 @@ object ActionTypes extends js.Object {
     extends xstateLib.libTypesMod.ActionTypes
   
   @js.native
+  sealed trait ErrorPlatform
+    extends xstateLib.libTypesMod.ActionTypes
+  
+  @js.native
   sealed trait Init
     extends xstateLib.libTypesMod.ActionTypes
   
@@ -86,6 +90,7 @@ object ActionTypes extends js.Object {
   /* "done.state" */ val DoneState: DoneState with java.lang.String = js.native
   /* "error.communication" */ val ErrorCommunication: ErrorCommunication with java.lang.String = js.native
   /* "error.execution" */ val ErrorExecution: ErrorExecution with java.lang.String = js.native
+  /* "error.platform" */ val ErrorPlatform: ErrorPlatform with java.lang.String = js.native
   /* "xstate.init" */ val Init: Init with java.lang.String = js.native
   /* "xstate.invoke" */ val Invoke: Invoke with java.lang.String = js.native
   /* "xstate.log" */ val Log: Log with java.lang.String = js.native

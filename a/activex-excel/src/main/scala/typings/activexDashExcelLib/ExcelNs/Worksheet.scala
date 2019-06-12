@@ -195,25 +195,29 @@ class Worksheet protected () extends Sheet {
     IconLabel: js.UndefOr[scala.Nothing],
     NoHTMLFormatting: js.UndefOr[scala.Boolean]
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: java.lang.String
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: java.lang.String,
     IconIndex: scala.Double
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
@@ -221,7 +225,8 @@ class Worksheet protected () extends Sheet {
     IconIndex: scala.Double,
     IconLabel: java.lang.String
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
@@ -230,25 +235,29 @@ class Worksheet protected () extends Sheet {
     IconLabel: java.lang.String,
     NoHTMLFormatting: scala.Boolean
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: java.lang.String
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: java.lang.String,
     IconIndex: scala.Double
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
@@ -256,7 +265,8 @@ class Worksheet protected () extends Sheet {
     IconIndex: scala.Double,
     IconLabel: java.lang.String
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: js.UndefOr[scala.Nothing],
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
@@ -265,25 +275,29 @@ class Worksheet protected () extends Sheet {
     IconLabel: java.lang.String,
     NoHTMLFormatting: scala.Boolean
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: java.lang.String
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: java.lang.String,
     IconIndex: scala.Double
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
@@ -291,7 +305,8 @@ class Worksheet protected () extends Sheet {
     IconIndex: scala.Double,
     IconLabel: java.lang.String
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: js.UndefOr[scala.Nothing],
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
@@ -300,25 +315,29 @@ class Worksheet protected () extends Sheet {
     IconLabel: java.lang.String,
     NoHTMLFormatting: scala.Boolean
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: java.lang.String
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     IconFileName: java.lang.String,
     IconIndex: scala.Double
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
@@ -326,7 +345,8 @@ class Worksheet protected () extends Sheet {
     IconIndex: scala.Double,
     IconLabel: java.lang.String
   ): scala.Unit = js.native
-  def PasteSpecial(
+  @JSName("PasteSpecial")
+  def PasteSpecial_true(
     Format: java.lang.String,
     Link: scala.Boolean,
     DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,

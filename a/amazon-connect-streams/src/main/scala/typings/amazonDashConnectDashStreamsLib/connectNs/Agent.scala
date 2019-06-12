@@ -82,7 +82,7 @@ trait Agent extends js.Object {
     *
     * @param callback A callback to receive updates on agent mute state
     */
-  def onMuteToggle(callback: AgentCallback): scala.Unit
+  def onMuteToggle(callback: MuteCallback): scala.Unit
   /**
     * Subscribe a method to be called when the agent becomes not-routable, meaning that they are online but cannot be routed incoming contacts.
     *
@@ -148,7 +148,7 @@ object Agent {
     onAfterCallWork: AgentCallback => scala.Unit,
     onContactPending: AgentCallback => scala.Unit,
     onError: AgentCallback => scala.Unit,
-    onMuteToggle: AgentCallback => scala.Unit,
+    onMuteToggle: MuteCallback => scala.Unit,
     onNotRoutable: AgentCallback => scala.Unit,
     onOffline: AgentCallback => scala.Unit,
     onRefresh: AgentCallback => scala.Unit,

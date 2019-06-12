@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Globe () extends js.Object {
   def this(ellipsoid: Ellipsoid) = this()
+  var atmosphereBrightnessShift: scala.Double = js.native
+  var atmosphereHueShift: scala.Double = js.native
+  var atmosphereSaturationShift: scala.Double = js.native
   var baseColor: Color = js.native
   var cartographicLimitRectangle: Rectangle = js.native
   var depthTestAgainstTerrain: scala.Boolean = js.native

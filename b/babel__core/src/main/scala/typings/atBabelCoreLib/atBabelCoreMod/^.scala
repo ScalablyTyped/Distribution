@@ -119,6 +119,19 @@ object ^ extends js.Object {
   def traverse[S](
     parent: atBabelTraverseLib.atBabelTraverseMod.Node,
     opts: atBabelTraverseLib.atBabelTraverseMod.TraverseOptions[S],
+    scope: js.UndefOr[scala.Nothing],
+    state: S
+  ): scala.Unit = js.native
+  def traverse[S](
+    parent: atBabelTraverseLib.atBabelTraverseMod.Node,
+    opts: atBabelTraverseLib.atBabelTraverseMod.TraverseOptions[S],
+    scope: js.UndefOr[scala.Nothing],
+    state: S,
+    parentPath: atBabelTraverseLib.atBabelTraverseMod.NodePath[atBabelTraverseLib.atBabelTraverseMod.Node]
+  ): scala.Unit = js.native
+  def traverse[S](
+    parent: atBabelTraverseLib.atBabelTraverseMod.Node,
+    opts: atBabelTraverseLib.atBabelTraverseMod.TraverseOptions[S],
     scope: atBabelTraverseLib.atBabelTraverseMod.Scope,
     state: S
   ): scala.Unit = js.native
@@ -126,6 +139,19 @@ object ^ extends js.Object {
     parent: atBabelTraverseLib.atBabelTraverseMod.Node,
     opts: atBabelTraverseLib.atBabelTraverseMod.TraverseOptions[S],
     scope: atBabelTraverseLib.atBabelTraverseMod.Scope,
+    state: S,
+    parentPath: atBabelTraverseLib.atBabelTraverseMod.NodePath[atBabelTraverseLib.atBabelTraverseMod.Node]
+  ): scala.Unit = js.native
+  def traverse[S](
+    parent: js.Array[atBabelTraverseLib.atBabelTraverseMod.Node],
+    opts: atBabelTraverseLib.atBabelTraverseMod.TraverseOptions[S],
+    scope: js.UndefOr[scala.Nothing],
+    state: S
+  ): scala.Unit = js.native
+  def traverse[S](
+    parent: js.Array[atBabelTraverseLib.atBabelTraverseMod.Node],
+    opts: atBabelTraverseLib.atBabelTraverseMod.TraverseOptions[S],
+    scope: js.UndefOr[scala.Nothing],
     state: S,
     parentPath: atBabelTraverseLib.atBabelTraverseMod.NodePath[atBabelTraverseLib.atBabelTraverseMod.Node]
   ): scala.Unit = js.native

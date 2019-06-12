@@ -292,6 +292,13 @@ package object clientsSagemakerMod {
   type IntegerParameterRanges = js.Array[IntegerParameterRange]
   type JobReferenceCode = java.lang.String
   type JobReferenceCodeContains = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Input
+    - awsDashSdkLib.awsDashSdkLibStrings.None
+    - java.lang.String
+  */
+  type JoinSource = _JoinSource | java.lang.String
+  type JsonPath = java.lang.String
   type KmsKeyId = java.lang.String
   type LabelAttributeName = java.lang.String
   type LabelCounter = scala.Double
@@ -633,6 +640,7 @@ package object clientsSagemakerMod {
     - awsDashSdkLib.awsDashSdkLibStrings.deeplens
     - awsDashSdkLib.awsDashSdkLibStrings.rk3399
     - awsDashSdkLib.awsDashSdkLibStrings.rk3288
+    - awsDashSdkLib.awsDashSdkLibStrings.sbe_c
     - java.lang.String
   */
   type TargetDevice = _TargetDevice | java.lang.String

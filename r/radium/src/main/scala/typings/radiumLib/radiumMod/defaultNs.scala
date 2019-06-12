@@ -18,17 +18,17 @@ object defaultNs extends js.Object {
   
   var TestMode: radiumLib.radiumMod.RadiumNs.RadiumTestMode = js.native
   @JSName("getState")
-  def `getState_:active`(state: js.Any, elementKey: java.lang.String, value: radiumLib.radiumLibStrings.`:active`): scala.Boolean = js.native
+  def getState_active(state: js.Any, elementKey: java.lang.String, value: radiumLib.radiumLibStrings.`:active`): scala.Boolean = js.native
   @JSName("getState")
-  def `getState_:active`(state: js.Any, elementKey: scala.Unit, value: radiumLib.radiumLibStrings.`:active`): scala.Boolean = js.native
+  def getState_active(state: js.Any, elementKey: scala.Unit, value: radiumLib.radiumLibStrings.`:active`): scala.Boolean = js.native
   @JSName("getState")
-  def `getState_:focus`(state: js.Any, elementKey: java.lang.String, value: radiumLib.radiumLibStrings.`:focus`): scala.Boolean = js.native
+  def getState_focus(state: js.Any, elementKey: java.lang.String, value: radiumLib.radiumLibStrings.`:focus`): scala.Boolean = js.native
   @JSName("getState")
-  def `getState_:focus`(state: js.Any, elementKey: scala.Unit, value: radiumLib.radiumLibStrings.`:focus`): scala.Boolean = js.native
+  def getState_focus(state: js.Any, elementKey: scala.Unit, value: radiumLib.radiumLibStrings.`:focus`): scala.Boolean = js.native
   @JSName("getState")
-  def `getState_:hover`(state: js.Any, elementKey: java.lang.String, value: radiumLib.radiumLibStrings.`:hover`): scala.Boolean = js.native
+  def getState_hover(state: js.Any, elementKey: java.lang.String, value: radiumLib.radiumLibStrings.`:hover`): scala.Boolean = js.native
   @JSName("getState")
-  def `getState_:hover`(state: js.Any, elementKey: scala.Unit, value: radiumLib.radiumLibStrings.`:hover`): scala.Boolean = js.native
+  def getState_hover(state: js.Any, elementKey: scala.Unit, value: radiumLib.radiumLibStrings.`:hover`): scala.Boolean = js.native
   def keyframes(keyframes: radiumLib.radiumMod.RadiumNs.StyleRules): js.Object = js.native
   def keyframes(keyframes: radiumLib.radiumMod.RadiumNs.StyleRules, name: java.lang.String): js.Object = js.native
 }

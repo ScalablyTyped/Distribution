@@ -23,7 +23,7 @@ trait JQuery extends js.Object {
     * Closes accordion content that are not active
     */
   @JSName("accordion")
-  def `accordion_close others`(behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.`close others`): JQuery = js.native
+  def accordion_closeothers(behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.`close others`): JQuery = js.native
   @JSName("accordion")
   def accordion_destroy(behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.destroy): JQuery = js.native
   /**

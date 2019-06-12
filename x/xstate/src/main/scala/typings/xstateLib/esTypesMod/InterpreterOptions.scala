@@ -21,7 +21,7 @@ trait InterpreterOptions
     *
     * Default: `false`
     */
-  var devTools: scala.Boolean
+  var devTools: scala.Boolean | js.Object
   /**
     * Whether state actions should be executed immediately upon transition. Defaults to `true`.
     */
@@ -39,14 +39,14 @@ object InterpreterOptions {
   def apply(
     clock: xstateLib.esInterpreterMod.Clock,
     deferEvents: scala.Boolean,
-    devTools: scala.Boolean,
+    devTools: scala.Boolean | js.Object,
     execute: scala.Boolean,
     logger: /* repeated */ js.Any => scala.Unit,
     StringDictionary: /* option */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     id: java.lang.String = null,
     parent: xstateLib.esInterpreterMod.Interpreter[_, _, _] = null
   ): InterpreterOptions = {
-    val __obj = js.Dynamic.literal(clock = clock, deferEvents = deferEvents, devTools = devTools, execute = execute, logger = js.Any.fromFunction1(logger))
+    val __obj = js.Dynamic.literal(clock = clock, deferEvents = deferEvents, devTools = devTools.asInstanceOf[js.Any], execute = execute, logger = js.Any.fromFunction1(logger))
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (id != null) __obj.updateDynamic("id")(id)
     if (parent != null) __obj.updateDynamic("parent")(parent)

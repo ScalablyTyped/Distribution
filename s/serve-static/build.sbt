@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "serve-static"
-version := "1.13-dt-20190322Z-3a476c"
+version := "1.13-dt-20190322Z-c829e9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-1f4573",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-49fefe",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-374f35",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190606Z-ae49a5",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-51fe5c",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-39a594",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

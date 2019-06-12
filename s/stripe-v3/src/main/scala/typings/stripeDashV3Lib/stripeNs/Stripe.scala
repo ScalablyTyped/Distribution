@@ -28,7 +28,7 @@ trait Stripe extends js.Object {
   def createToken(element: stripeDashV3Lib.stripeNs.elementsNs.Element): js.Promise[TokenResponse] = js.native
   def createToken(element: stripeDashV3Lib.stripeNs.elementsNs.Element, options: TokenOptions): js.Promise[TokenResponse] = js.native
   @JSName("createToken")
-  def createToken_bank_account(name: stripeDashV3Lib.stripeDashV3LibStrings.bank_account, options: BankAccountTokenOptions): js.Promise[TokenResponse] = js.native
+  def createToken_bankaccount(name: stripeDashV3Lib.stripeDashV3LibStrings.bank_account, options: BankAccountTokenOptions): js.Promise[TokenResponse] = js.native
   @JSName("createToken")
   def createToken_pii(name: stripeDashV3Lib.stripeDashV3LibStrings.pii, options: PiiTokenOptions): js.Promise[TokenResponse] = js.native
   def elements(): stripeDashV3Lib.stripeNs.elementsNs.Elements = js.native

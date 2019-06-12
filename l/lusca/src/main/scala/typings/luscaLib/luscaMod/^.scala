@@ -21,7 +21,8 @@ object ^ extends js.Object {
   def referrerPolicy(value: java.lang.String): expressLib.expressMod.RequestHandler = js.native
   def xframe(value: java.lang.String): expressLib.expressMod.RequestHandler = js.native
   def xssProtection(): expressLib.expressMod.RequestHandler = js.native
-  def xssProtection(options: luscaLib.luscaLibNumbers.`true`): expressLib.expressMod.RequestHandler = js.native
   def xssProtection(options: xssProtectionOptions): expressLib.expressMod.RequestHandler = js.native
+  @JSName("xssProtection")
+  def xssProtection_true(options: luscaLib.luscaLibNumbers.`true`): expressLib.expressMod.RequestHandler = js.native
 }
 

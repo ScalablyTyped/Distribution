@@ -9,11 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Additions[T] extends js.Object {
   def asMutable(): js.Array[seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[T, js.Object]] = js.native
-  def asMutable(
-    opts: seamlessDashImmutableLib.seamlessDashImmutableMod.AsMutableOptions[
-      scala.Boolean | seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`false` | seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`true`
-    ]
+  def asMutable(opts: seamlessDashImmutableLib.seamlessDashImmutableMod.AsMutableOptions[scala.Boolean]): js.Array[(seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[T, js.Object]) | T] = js.native
+  @JSName("asMutable")
+  def asMutable_false(
+    opts: seamlessDashImmutableLib.seamlessDashImmutableMod.AsMutableOptions[seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`false`]
   ): js.Array[seamlessDashImmutableLib.seamlessDashImmutableMod.Immutable[T, js.Object]] = js.native
+  @JSName("asMutable")
+  def asMutable_true(
+    opts: seamlessDashImmutableLib.seamlessDashImmutableMod.AsMutableOptions[seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`true`]
+  ): js.Array[T] = js.native
   def asObject[U /* <: js.Object */, K /* <: java.lang.String */](
     toKeyValue: js.Function1[
       /* item */ T, 

@@ -120,7 +120,7 @@ trait BaseLogger
     */
   def addLevel(name: java.lang.String, lvl: scala.Double): scala.Boolean = js.native
   @JSName("addListener")
-  def `addListener_level-change`(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
+  def addListener_levelchange(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
   /**
     * Creates a child logger, setting all key-value pairs in `bindings` as properties in the log lines. All serializers will be applied to the given pair.
     * Child loggers use the same output stream as the parent and inherit the current log level of the parent at the time they are spawned.
@@ -225,15 +225,15 @@ trait BaseLogger
     * @param listener: The listener is passed four arguments: `levelLabel`, `levelValue`, `previousLevelLabel`, `previousLevelValue`.
     */
   @JSName("on")
-  def `on_level-change`(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
+  def on_levelchange(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
   @JSName("once")
-  def `once_level-change`(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
+  def once_levelchange(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
   @JSName("prependListener")
-  def `prependListener_level-change`(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
+  def prependListener_levelchange(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
   @JSName("prependOnceListener")
-  def `prependOnceListener_level-change`(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
+  def prependOnceListener_levelchange(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_level-change`(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
+  def removeListener_levelchange(event: pinoLib.pinoLibStrings.`level-change`, listener: LevelChangeEventListener): this.type = js.native
   /**
     * Log at `'trace'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
     * If more args follows `msg`, these will be used to format `msg` using `util.format`.

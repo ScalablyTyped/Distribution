@@ -17,35 +17,35 @@ object ModelErrorNs extends js.Object {
   @js.native
   object CategoryEnum extends js.Object {
     @js.native
-    sealed trait APIERROR
+    sealed trait API_ERROR
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CategoryEnum
     
     @js.native
-    sealed trait AUTHENTICATIONERROR
+    sealed trait AUTHENTICATION_ERROR
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CategoryEnum
     
     @js.native
-    sealed trait INVALIDREQUESTERROR
+    sealed trait INVALID_REQUEST_ERROR
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CategoryEnum
     
     @js.native
-    sealed trait PAYMENTMETHODERROR
+    sealed trait PAYMENT_METHOD_ERROR
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CategoryEnum
     
     @js.native
-    sealed trait RATELIMITERROR
+    sealed trait RATE_LIMIT_ERROR
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CategoryEnum
     
     @js.native
-    sealed trait REFUNDERROR
+    sealed trait REFUND_ERROR
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CategoryEnum
     
-    /* "API_ERROR" */ val APIERROR: APIERROR with java.lang.String = js.native
-    /* "AUTHENTICATION_ERROR" */ val AUTHENTICATIONERROR: AUTHENTICATIONERROR with java.lang.String = js.native
-    /* "INVALID_REQUEST_ERROR" */ val INVALIDREQUESTERROR: INVALIDREQUESTERROR with java.lang.String = js.native
-    /* "PAYMENT_METHOD_ERROR" */ val PAYMENTMETHODERROR: PAYMENTMETHODERROR with java.lang.String = js.native
-    /* "RATE_LIMIT_ERROR" */ val RATELIMITERROR: RATELIMITERROR with java.lang.String = js.native
-    /* "REFUND_ERROR" */ val REFUNDERROR: REFUNDERROR with java.lang.String = js.native
+    /* "API_ERROR" */ val API_ERROR: API_ERROR with java.lang.String = js.native
+    /* "AUTHENTICATION_ERROR" */ val AUTHENTICATION_ERROR: AUTHENTICATION_ERROR with java.lang.String = js.native
+    /* "INVALID_REQUEST_ERROR" */ val INVALID_REQUEST_ERROR: INVALID_REQUEST_ERROR with java.lang.String = js.native
+    /* "PAYMENT_METHOD_ERROR" */ val PAYMENT_METHOD_ERROR: PAYMENT_METHOD_ERROR with java.lang.String = js.native
+    /* "RATE_LIMIT_ERROR" */ val RATE_LIMIT_ERROR: RATE_LIMIT_ERROR with java.lang.String = js.native
+    /* "REFUND_ERROR" */ val REFUND_ERROR: REFUND_ERROR with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CategoryEnum with java.lang.String
@@ -55,71 +55,75 @@ object ModelErrorNs extends js.Object {
   @js.native
   object CodeEnum extends js.Object {
     @js.native
-    sealed trait ACCESSTOKENEXPIRED
+    sealed trait ACCESS_TOKEN_EXPIRED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait ACCESSTOKENREVOKED
+    sealed trait ACCESS_TOKEN_REVOKED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait AMOUNTTOOHIGH
+    sealed trait AMOUNT_TOO_HIGH
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait APPLEPAYMENTPROCESSINGCERTIFICATEHASHNOTFOUND
+    sealed trait API_VERSION_INCOMPATIBLE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait APPLICATIONDISABLED
+    sealed trait APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait ARRAYEMPTY
+    sealed trait APPLICATION_DISABLED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait ARRAYLENGTHTOOLONG
+    sealed trait ARRAY_EMPTY
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait ARRAYLENGTHTOOSHORT
+    sealed trait ARRAY_LENGTH_TOO_LONG
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait BADCERTIFICATE
+    sealed trait ARRAY_LENGTH_TOO_SHORT
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait BADREQUEST
+    sealed trait BAD_CERTIFICATE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait CARDDECLINED
+    sealed trait BAD_REQUEST
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait CARDDECLINEDCALLISSUER
+    sealed trait CARD_DECLINED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait CARDEXPIRED
+    sealed trait CARD_DECLINED_CALL_ISSUER
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait CARDPROCESSINGNOTENABLED
+    sealed trait CARD_EXPIRED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait CARDTOKENEXPIRED
+    sealed trait CARD_PROCESSING_NOT_ENABLED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait CARDTOKENUSED
+    sealed trait CARD_TOKEN_EXPIRED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait CHECKOUTEXPIRED
+    sealed trait CARD_TOKEN_USED
+      extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
+    
+    @js.native
+    sealed trait CHECKOUT_EXPIRED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
@@ -127,63 +131,63 @@ object ModelErrorNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait CONFLICTINGPARAMETERS
+    sealed trait CONFLICTING_PARAMETERS
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait DELAYEDTRANSACTIONCANCELED
+    sealed trait DELAYED_TRANSACTION_CANCELED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait DELAYEDTRANSACTIONCAPTURED
+    sealed trait DELAYED_TRANSACTION_CAPTURED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait DELAYEDTRANSACTIONEXPIRED
+    sealed trait DELAYED_TRANSACTION_EXPIRED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait DELAYEDTRANSACTIONFAILED
+    sealed trait DELAYED_TRANSACTION_FAILED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait DEPRECATEDFIELDSET
+    sealed trait DEPRECATED_FIELD_SET
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait EXPECTEDARRAY
+    sealed trait EXPECTED_ARRAY
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait EXPECTEDBASE64ENCODEDBYTEARRAY
+    sealed trait EXPECTED_BASE64_ENCODED_BYTE_ARRAY
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait EXPECTEDBOOLEAN
+    sealed trait EXPECTED_BOOLEAN
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait EXPECTEDFLOAT
+    sealed trait EXPECTED_FLOAT
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait EXPECTEDINTEGER
+    sealed trait EXPECTED_INTEGER
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait EXPECTEDJSONBODY
+    sealed trait EXPECTED_JSON_BODY
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait EXPECTEDMAP
+    sealed trait EXPECTED_MAP
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait EXPECTEDOBJECT
+    sealed trait EXPECTED_OBJECT
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait EXPECTEDSTRING
+    sealed trait EXPECTED_STRING
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
@@ -191,155 +195,159 @@ object ModelErrorNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait GATEWAYTIMEOUT
+    sealed trait GATEWAY_TIMEOUT
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait IDEMPOTENCYKEYREUSED
+    sealed trait IDEMPOTENCY_KEY_REUSED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INCORRECTTYPE
+    sealed trait INCORRECT_TYPE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INSUFFICIENTSCOPES
+    sealed trait INSUFFICIENT_SCOPES
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INTERNALSERVERERROR
+    sealed trait INTERNAL_SERVER_ERROR
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDARRAYVALUE
+    sealed trait INVALID_ARRAY_VALUE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDCARD
+    sealed trait INVALID_CARD
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDCARDDATA
+    sealed trait INVALID_CARD_DATA
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDCONTENTTYPE
+    sealed trait INVALID_CONTENT_TYPE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDCURSOR
+    sealed trait INVALID_CURSOR
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDEMAILADDRESS
+    sealed trait INVALID_EMAIL_ADDRESS
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDENCRYPTEDCARD
+    sealed trait INVALID_ENCRYPTED_CARD
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDENUMVALUE
+    sealed trait INVALID_ENUM_VALUE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDEXPIRATION
+    sealed trait INVALID_EXPIRATION
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDEXPIRATIONDATE
+    sealed trait INVALID_EXPIRATION_DATE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDEXPIRATIONYEAR
+    sealed trait INVALID_EXPIRATION_YEAR
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDFORMVALUE
+    sealed trait INVALID_FORM_VALUE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDPHONENUMBER
+    sealed trait INVALID_PHONE_NUMBER
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDSORTORDER
+    sealed trait INVALID_SORT_ORDER
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDTIME
+    sealed trait INVALID_SQUARE_VERSION_FORMAT
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDTIMERANGE
+    sealed trait INVALID_TIME
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait INVALIDVALUE
+    sealed trait INVALID_TIME_RANGE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait LOCATIONMISMATCH
+    sealed trait INVALID_VALUE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait METHODNOTALLOWED
+    sealed trait LOCATION_MISMATCH
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait MISSINGREQUIREDPARAMETER
+    sealed trait METHOD_NOT_ALLOWED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait NOFIELDSSET
+    sealed trait MISSING_REQUIRED_PARAMETER
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait NOTACCEPTABLE
+    sealed trait NOT_ACCEPTABLE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait NOTFOUND
+    sealed trait NOT_FOUND
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait NOTIMPLEMENTED
+    sealed trait NOT_IMPLEMENTED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait ONEINSTRUMENTEXPECTED
+    sealed trait NO_FIELDS_SET
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait PAYMENTNOTREFUNDABLE
+    sealed trait ONE_INSTRUMENT_EXPECTED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait RATELIMITED
+    sealed trait PAYMENT_NOT_REFUNDABLE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait REFUNDALREADYPENDING
+    sealed trait RATE_LIMITED
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait REFUNDAMOUNTINVALID
+    sealed trait REFUND_ALREADY_PENDING
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait REQUESTENTITYTOOLARGE
+    sealed trait REFUND_AMOUNT_INVALID
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait REQUESTTIMEOUT
+    sealed trait REQUEST_ENTITY_TOO_LARGE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait SANDBOXNOTSUPPORTED
+    sealed trait REQUEST_TIMEOUT
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait SERVICEUNAVAILABLE
+    sealed trait SANDBOX_NOT_SUPPORTED
+      extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
+    
+    @js.native
+    sealed trait SERVICE_UNAVAILABLE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
@@ -347,158 +355,160 @@ object ModelErrorNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait UNEXPECTEDVALUE
+    sealed trait UNEXPECTED_VALUE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait UNKNOWNQUERYPARAMETER
+    sealed trait UNKNOWN_QUERY_PARAMETER
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait UNSUPPORTEDCARDBRAND
+    sealed trait UNSUPPORTED_CARD_BRAND
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait UNSUPPORTEDENTRYMETHOD
+    sealed trait UNSUPPORTED_ENTRY_METHOD
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait UNSUPPORTEDINSTRUMENTTYPE
+    sealed trait UNSUPPORTED_INSTRUMENT_TYPE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait UNSUPPORTEDMEDIATYPE
+    sealed trait UNSUPPORTED_MEDIA_TYPE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait V1ACCESSTOKEN
+    sealed trait V1_ACCESS_TOKEN
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait V1APPLICATION
+    sealed trait V1_APPLICATION
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait VALUEEMPTY
+    sealed trait VALUE_EMPTY
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait VALUEREGEXMISMATCH
+    sealed trait VALUE_REGEX_MISMATCH
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait VALUETOOHIGH
+    sealed trait VALUE_TOO_HIGH
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait VALUETOOLONG
+    sealed trait VALUE_TOO_LONG
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait VALUETOOLOW
+    sealed trait VALUE_TOO_LOW
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait VALUETOOSHORT
+    sealed trait VALUE_TOO_SHORT
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait VERIFYAVSFAILURE
+    sealed trait VERIFY_AVS_FAILURE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
     @js.native
-    sealed trait VERIFYCVVFAILURE
+    sealed trait VERIFY_CVV_FAILURE
       extends squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum
     
-    /* "ACCESS_TOKEN_EXPIRED" */ val ACCESSTOKENEXPIRED: ACCESSTOKENEXPIRED with java.lang.String = js.native
-    /* "ACCESS_TOKEN_REVOKED" */ val ACCESSTOKENREVOKED: ACCESSTOKENREVOKED with java.lang.String = js.native
-    /* "AMOUNT_TOO_HIGH" */ val AMOUNTTOOHIGH: AMOUNTTOOHIGH with java.lang.String = js.native
-    /* "APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND" */ val APPLEPAYMENTPROCESSINGCERTIFICATEHASHNOTFOUND: APPLEPAYMENTPROCESSINGCERTIFICATEHASHNOTFOUND with java.lang.String = js.native
-    /* "APPLICATION_DISABLED" */ val APPLICATIONDISABLED: APPLICATIONDISABLED with java.lang.String = js.native
-    /* "ARRAY_EMPTY" */ val ARRAYEMPTY: ARRAYEMPTY with java.lang.String = js.native
-    /* "ARRAY_LENGTH_TOO_LONG" */ val ARRAYLENGTHTOOLONG: ARRAYLENGTHTOOLONG with java.lang.String = js.native
-    /* "ARRAY_LENGTH_TOO_SHORT" */ val ARRAYLENGTHTOOSHORT: ARRAYLENGTHTOOSHORT with java.lang.String = js.native
-    /* "BAD_CERTIFICATE" */ val BADCERTIFICATE: BADCERTIFICATE with java.lang.String = js.native
-    /* "BAD_REQUEST" */ val BADREQUEST: BADREQUEST with java.lang.String = js.native
-    /* "CARD_DECLINED" */ val CARDDECLINED: CARDDECLINED with java.lang.String = js.native
-    /* "CARD_DECLINED_CALL_ISSUER" */ val CARDDECLINEDCALLISSUER: CARDDECLINEDCALLISSUER with java.lang.String = js.native
-    /* "CARD_EXPIRED" */ val CARDEXPIRED: CARDEXPIRED with java.lang.String = js.native
-    /* "CARD_PROCESSING_NOT_ENABLED" */ val CARDPROCESSINGNOTENABLED: CARDPROCESSINGNOTENABLED with java.lang.String = js.native
-    /* "CARD_TOKEN_EXPIRED" */ val CARDTOKENEXPIRED: CARDTOKENEXPIRED with java.lang.String = js.native
-    /* "CARD_TOKEN_USED" */ val CARDTOKENUSED: CARDTOKENUSED with java.lang.String = js.native
-    /* "CHECKOUT_EXPIRED" */ val CHECKOUTEXPIRED: CHECKOUTEXPIRED with java.lang.String = js.native
+    /* "ACCESS_TOKEN_EXPIRED" */ val ACCESS_TOKEN_EXPIRED: ACCESS_TOKEN_EXPIRED with java.lang.String = js.native
+    /* "ACCESS_TOKEN_REVOKED" */ val ACCESS_TOKEN_REVOKED: ACCESS_TOKEN_REVOKED with java.lang.String = js.native
+    /* "AMOUNT_TOO_HIGH" */ val AMOUNT_TOO_HIGH: AMOUNT_TOO_HIGH with java.lang.String = js.native
+    /* "API_VERSION_INCOMPATIBLE" */ val API_VERSION_INCOMPATIBLE: API_VERSION_INCOMPATIBLE with java.lang.String = js.native
+    /* "APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND" */ val APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND: APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND with java.lang.String = js.native
+    /* "APPLICATION_DISABLED" */ val APPLICATION_DISABLED: APPLICATION_DISABLED with java.lang.String = js.native
+    /* "ARRAY_EMPTY" */ val ARRAY_EMPTY: ARRAY_EMPTY with java.lang.String = js.native
+    /* "ARRAY_LENGTH_TOO_LONG" */ val ARRAY_LENGTH_TOO_LONG: ARRAY_LENGTH_TOO_LONG with java.lang.String = js.native
+    /* "ARRAY_LENGTH_TOO_SHORT" */ val ARRAY_LENGTH_TOO_SHORT: ARRAY_LENGTH_TOO_SHORT with java.lang.String = js.native
+    /* "BAD_CERTIFICATE" */ val BAD_CERTIFICATE: BAD_CERTIFICATE with java.lang.String = js.native
+    /* "BAD_REQUEST" */ val BAD_REQUEST: BAD_REQUEST with java.lang.String = js.native
+    /* "CARD_DECLINED" */ val CARD_DECLINED: CARD_DECLINED with java.lang.String = js.native
+    /* "CARD_DECLINED_CALL_ISSUER" */ val CARD_DECLINED_CALL_ISSUER: CARD_DECLINED_CALL_ISSUER with java.lang.String = js.native
+    /* "CARD_EXPIRED" */ val CARD_EXPIRED: CARD_EXPIRED with java.lang.String = js.native
+    /* "CARD_PROCESSING_NOT_ENABLED" */ val CARD_PROCESSING_NOT_ENABLED: CARD_PROCESSING_NOT_ENABLED with java.lang.String = js.native
+    /* "CARD_TOKEN_EXPIRED" */ val CARD_TOKEN_EXPIRED: CARD_TOKEN_EXPIRED with java.lang.String = js.native
+    /* "CARD_TOKEN_USED" */ val CARD_TOKEN_USED: CARD_TOKEN_USED with java.lang.String = js.native
+    /* "CHECKOUT_EXPIRED" */ val CHECKOUT_EXPIRED: CHECKOUT_EXPIRED with java.lang.String = js.native
     /* "CONFLICT" */ val CONFLICT: CONFLICT with java.lang.String = js.native
-    /* "CONFLICTING_PARAMETERS" */ val CONFLICTINGPARAMETERS: CONFLICTINGPARAMETERS with java.lang.String = js.native
-    /* "DELAYED_TRANSACTION_CANCELED" */ val DELAYEDTRANSACTIONCANCELED: DELAYEDTRANSACTIONCANCELED with java.lang.String = js.native
-    /* "DELAYED_TRANSACTION_CAPTURED" */ val DELAYEDTRANSACTIONCAPTURED: DELAYEDTRANSACTIONCAPTURED with java.lang.String = js.native
-    /* "DELAYED_TRANSACTION_EXPIRED" */ val DELAYEDTRANSACTIONEXPIRED: DELAYEDTRANSACTIONEXPIRED with java.lang.String = js.native
-    /* "DELAYED_TRANSACTION_FAILED" */ val DELAYEDTRANSACTIONFAILED: DELAYEDTRANSACTIONFAILED with java.lang.String = js.native
-    /* "DEPRECATED_FIELD_SET" */ val DEPRECATEDFIELDSET: DEPRECATEDFIELDSET with java.lang.String = js.native
-    /* "EXPECTED_ARRAY" */ val EXPECTEDARRAY: EXPECTEDARRAY with java.lang.String = js.native
-    /* "EXPECTED_BASE64_ENCODED_BYTE_ARRAY" */ val EXPECTEDBASE64ENCODEDBYTEARRAY: EXPECTEDBASE64ENCODEDBYTEARRAY with java.lang.String = js.native
-    /* "EXPECTED_BOOLEAN" */ val EXPECTEDBOOLEAN: EXPECTEDBOOLEAN with java.lang.String = js.native
-    /* "EXPECTED_FLOAT" */ val EXPECTEDFLOAT: EXPECTEDFLOAT with java.lang.String = js.native
-    /* "EXPECTED_INTEGER" */ val EXPECTEDINTEGER: EXPECTEDINTEGER with java.lang.String = js.native
-    /* "EXPECTED_JSON_BODY" */ val EXPECTEDJSONBODY: EXPECTEDJSONBODY with java.lang.String = js.native
-    /* "EXPECTED_MAP" */ val EXPECTEDMAP: EXPECTEDMAP with java.lang.String = js.native
-    /* "EXPECTED_OBJECT" */ val EXPECTEDOBJECT: EXPECTEDOBJECT with java.lang.String = js.native
-    /* "EXPECTED_STRING" */ val EXPECTEDSTRING: EXPECTEDSTRING with java.lang.String = js.native
+    /* "CONFLICTING_PARAMETERS" */ val CONFLICTING_PARAMETERS: CONFLICTING_PARAMETERS with java.lang.String = js.native
+    /* "DELAYED_TRANSACTION_CANCELED" */ val DELAYED_TRANSACTION_CANCELED: DELAYED_TRANSACTION_CANCELED with java.lang.String = js.native
+    /* "DELAYED_TRANSACTION_CAPTURED" */ val DELAYED_TRANSACTION_CAPTURED: DELAYED_TRANSACTION_CAPTURED with java.lang.String = js.native
+    /* "DELAYED_TRANSACTION_EXPIRED" */ val DELAYED_TRANSACTION_EXPIRED: DELAYED_TRANSACTION_EXPIRED with java.lang.String = js.native
+    /* "DELAYED_TRANSACTION_FAILED" */ val DELAYED_TRANSACTION_FAILED: DELAYED_TRANSACTION_FAILED with java.lang.String = js.native
+    /* "DEPRECATED_FIELD_SET" */ val DEPRECATED_FIELD_SET: DEPRECATED_FIELD_SET with java.lang.String = js.native
+    /* "EXPECTED_ARRAY" */ val EXPECTED_ARRAY: EXPECTED_ARRAY with java.lang.String = js.native
+    /* "EXPECTED_BASE64_ENCODED_BYTE_ARRAY" */ val EXPECTED_BASE64_ENCODED_BYTE_ARRAY: EXPECTED_BASE64_ENCODED_BYTE_ARRAY with java.lang.String = js.native
+    /* "EXPECTED_BOOLEAN" */ val EXPECTED_BOOLEAN: EXPECTED_BOOLEAN with java.lang.String = js.native
+    /* "EXPECTED_FLOAT" */ val EXPECTED_FLOAT: EXPECTED_FLOAT with java.lang.String = js.native
+    /* "EXPECTED_INTEGER" */ val EXPECTED_INTEGER: EXPECTED_INTEGER with java.lang.String = js.native
+    /* "EXPECTED_JSON_BODY" */ val EXPECTED_JSON_BODY: EXPECTED_JSON_BODY with java.lang.String = js.native
+    /* "EXPECTED_MAP" */ val EXPECTED_MAP: EXPECTED_MAP with java.lang.String = js.native
+    /* "EXPECTED_OBJECT" */ val EXPECTED_OBJECT: EXPECTED_OBJECT with java.lang.String = js.native
+    /* "EXPECTED_STRING" */ val EXPECTED_STRING: EXPECTED_STRING with java.lang.String = js.native
     /* "FORBIDDEN" */ val FORBIDDEN: FORBIDDEN with java.lang.String = js.native
-    /* "GATEWAY_TIMEOUT" */ val GATEWAYTIMEOUT: GATEWAYTIMEOUT with java.lang.String = js.native
-    /* "IDEMPOTENCY_KEY_REUSED" */ val IDEMPOTENCYKEYREUSED: IDEMPOTENCYKEYREUSED with java.lang.String = js.native
-    /* "INCORRECT_TYPE" */ val INCORRECTTYPE: INCORRECTTYPE with java.lang.String = js.native
-    /* "INSUFFICIENT_SCOPES" */ val INSUFFICIENTSCOPES: INSUFFICIENTSCOPES with java.lang.String = js.native
-    /* "INTERNAL_SERVER_ERROR" */ val INTERNALSERVERERROR: INTERNALSERVERERROR with java.lang.String = js.native
-    /* "INVALID_ARRAY_VALUE" */ val INVALIDARRAYVALUE: INVALIDARRAYVALUE with java.lang.String = js.native
-    /* "INVALID_CARD" */ val INVALIDCARD: INVALIDCARD with java.lang.String = js.native
-    /* "INVALID_CARD_DATA" */ val INVALIDCARDDATA: INVALIDCARDDATA with java.lang.String = js.native
-    /* "INVALID_CONTENT_TYPE" */ val INVALIDCONTENTTYPE: INVALIDCONTENTTYPE with java.lang.String = js.native
-    /* "INVALID_CURSOR" */ val INVALIDCURSOR: INVALIDCURSOR with java.lang.String = js.native
-    /* "INVALID_EMAIL_ADDRESS" */ val INVALIDEMAILADDRESS: INVALIDEMAILADDRESS with java.lang.String = js.native
-    /* "INVALID_ENCRYPTED_CARD" */ val INVALIDENCRYPTEDCARD: INVALIDENCRYPTEDCARD with java.lang.String = js.native
-    /* "INVALID_ENUM_VALUE" */ val INVALIDENUMVALUE: INVALIDENUMVALUE with java.lang.String = js.native
-    /* "INVALID_EXPIRATION" */ val INVALIDEXPIRATION: INVALIDEXPIRATION with java.lang.String = js.native
-    /* "INVALID_EXPIRATION_DATE" */ val INVALIDEXPIRATIONDATE: INVALIDEXPIRATIONDATE with java.lang.String = js.native
-    /* "INVALID_EXPIRATION_YEAR" */ val INVALIDEXPIRATIONYEAR: INVALIDEXPIRATIONYEAR with java.lang.String = js.native
-    /* "INVALID_FORM_VALUE" */ val INVALIDFORMVALUE: INVALIDFORMVALUE with java.lang.String = js.native
-    /* "INVALID_PHONE_NUMBER" */ val INVALIDPHONENUMBER: INVALIDPHONENUMBER with java.lang.String = js.native
-    /* "INVALID_SORT_ORDER" */ val INVALIDSORTORDER: INVALIDSORTORDER with java.lang.String = js.native
-    /* "INVALID_TIME" */ val INVALIDTIME: INVALIDTIME with java.lang.String = js.native
-    /* "INVALID_TIME_RANGE" */ val INVALIDTIMERANGE: INVALIDTIMERANGE with java.lang.String = js.native
-    /* "INVALID_VALUE" */ val INVALIDVALUE: INVALIDVALUE with java.lang.String = js.native
-    /* "LOCATION_MISMATCH" */ val LOCATIONMISMATCH: LOCATIONMISMATCH with java.lang.String = js.native
-    /* "METHOD_NOT_ALLOWED" */ val METHODNOTALLOWED: METHODNOTALLOWED with java.lang.String = js.native
-    /* "MISSING_REQUIRED_PARAMETER" */ val MISSINGREQUIREDPARAMETER: MISSINGREQUIREDPARAMETER with java.lang.String = js.native
-    /* "NO_FIELDS_SET" */ val NOFIELDSSET: NOFIELDSSET with java.lang.String = js.native
-    /* "NOT_ACCEPTABLE" */ val NOTACCEPTABLE: NOTACCEPTABLE with java.lang.String = js.native
-    /* "NOT_FOUND" */ val NOTFOUND: NOTFOUND with java.lang.String = js.native
-    /* "NOT_IMPLEMENTED" */ val NOTIMPLEMENTED: NOTIMPLEMENTED with java.lang.String = js.native
-    /* "ONE_INSTRUMENT_EXPECTED" */ val ONEINSTRUMENTEXPECTED: ONEINSTRUMENTEXPECTED with java.lang.String = js.native
-    /* "PAYMENT_NOT_REFUNDABLE" */ val PAYMENTNOTREFUNDABLE: PAYMENTNOTREFUNDABLE with java.lang.String = js.native
-    /* "RATE_LIMITED" */ val RATELIMITED: RATELIMITED with java.lang.String = js.native
-    /* "REFUND_ALREADY_PENDING" */ val REFUNDALREADYPENDING: REFUNDALREADYPENDING with java.lang.String = js.native
-    /* "REFUND_AMOUNT_INVALID" */ val REFUNDAMOUNTINVALID: REFUNDAMOUNTINVALID with java.lang.String = js.native
-    /* "REQUEST_ENTITY_TOO_LARGE" */ val REQUESTENTITYTOOLARGE: REQUESTENTITYTOOLARGE with java.lang.String = js.native
-    /* "REQUEST_TIMEOUT" */ val REQUESTTIMEOUT: REQUESTTIMEOUT with java.lang.String = js.native
-    /* "SANDBOX_NOT_SUPPORTED" */ val SANDBOXNOTSUPPORTED: SANDBOXNOTSUPPORTED with java.lang.String = js.native
-    /* "SERVICE_UNAVAILABLE" */ val SERVICEUNAVAILABLE: SERVICEUNAVAILABLE with java.lang.String = js.native
+    /* "GATEWAY_TIMEOUT" */ val GATEWAY_TIMEOUT: GATEWAY_TIMEOUT with java.lang.String = js.native
+    /* "IDEMPOTENCY_KEY_REUSED" */ val IDEMPOTENCY_KEY_REUSED: IDEMPOTENCY_KEY_REUSED with java.lang.String = js.native
+    /* "INCORRECT_TYPE" */ val INCORRECT_TYPE: INCORRECT_TYPE with java.lang.String = js.native
+    /* "INSUFFICIENT_SCOPES" */ val INSUFFICIENT_SCOPES: INSUFFICIENT_SCOPES with java.lang.String = js.native
+    /* "INTERNAL_SERVER_ERROR" */ val INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR with java.lang.String = js.native
+    /* "INVALID_ARRAY_VALUE" */ val INVALID_ARRAY_VALUE: INVALID_ARRAY_VALUE with java.lang.String = js.native
+    /* "INVALID_CARD" */ val INVALID_CARD: INVALID_CARD with java.lang.String = js.native
+    /* "INVALID_CARD_DATA" */ val INVALID_CARD_DATA: INVALID_CARD_DATA with java.lang.String = js.native
+    /* "INVALID_CONTENT_TYPE" */ val INVALID_CONTENT_TYPE: INVALID_CONTENT_TYPE with java.lang.String = js.native
+    /* "INVALID_CURSOR" */ val INVALID_CURSOR: INVALID_CURSOR with java.lang.String = js.native
+    /* "INVALID_EMAIL_ADDRESS" */ val INVALID_EMAIL_ADDRESS: INVALID_EMAIL_ADDRESS with java.lang.String = js.native
+    /* "INVALID_ENCRYPTED_CARD" */ val INVALID_ENCRYPTED_CARD: INVALID_ENCRYPTED_CARD with java.lang.String = js.native
+    /* "INVALID_ENUM_VALUE" */ val INVALID_ENUM_VALUE: INVALID_ENUM_VALUE with java.lang.String = js.native
+    /* "INVALID_EXPIRATION" */ val INVALID_EXPIRATION: INVALID_EXPIRATION with java.lang.String = js.native
+    /* "INVALID_EXPIRATION_DATE" */ val INVALID_EXPIRATION_DATE: INVALID_EXPIRATION_DATE with java.lang.String = js.native
+    /* "INVALID_EXPIRATION_YEAR" */ val INVALID_EXPIRATION_YEAR: INVALID_EXPIRATION_YEAR with java.lang.String = js.native
+    /* "INVALID_FORM_VALUE" */ val INVALID_FORM_VALUE: INVALID_FORM_VALUE with java.lang.String = js.native
+    /* "INVALID_PHONE_NUMBER" */ val INVALID_PHONE_NUMBER: INVALID_PHONE_NUMBER with java.lang.String = js.native
+    /* "INVALID_SORT_ORDER" */ val INVALID_SORT_ORDER: INVALID_SORT_ORDER with java.lang.String = js.native
+    /* "INVALID_SQUARE_VERSION_FORMAT" */ val INVALID_SQUARE_VERSION_FORMAT: INVALID_SQUARE_VERSION_FORMAT with java.lang.String = js.native
+    /* "INVALID_TIME" */ val INVALID_TIME: INVALID_TIME with java.lang.String = js.native
+    /* "INVALID_TIME_RANGE" */ val INVALID_TIME_RANGE: INVALID_TIME_RANGE with java.lang.String = js.native
+    /* "INVALID_VALUE" */ val INVALID_VALUE: INVALID_VALUE with java.lang.String = js.native
+    /* "LOCATION_MISMATCH" */ val LOCATION_MISMATCH: LOCATION_MISMATCH with java.lang.String = js.native
+    /* "METHOD_NOT_ALLOWED" */ val METHOD_NOT_ALLOWED: METHOD_NOT_ALLOWED with java.lang.String = js.native
+    /* "MISSING_REQUIRED_PARAMETER" */ val MISSING_REQUIRED_PARAMETER: MISSING_REQUIRED_PARAMETER with java.lang.String = js.native
+    /* "NOT_ACCEPTABLE" */ val NOT_ACCEPTABLE: NOT_ACCEPTABLE with java.lang.String = js.native
+    /* "NOT_FOUND" */ val NOT_FOUND: NOT_FOUND with java.lang.String = js.native
+    /* "NOT_IMPLEMENTED" */ val NOT_IMPLEMENTED: NOT_IMPLEMENTED with java.lang.String = js.native
+    /* "NO_FIELDS_SET" */ val NO_FIELDS_SET: NO_FIELDS_SET with java.lang.String = js.native
+    /* "ONE_INSTRUMENT_EXPECTED" */ val ONE_INSTRUMENT_EXPECTED: ONE_INSTRUMENT_EXPECTED with java.lang.String = js.native
+    /* "PAYMENT_NOT_REFUNDABLE" */ val PAYMENT_NOT_REFUNDABLE: PAYMENT_NOT_REFUNDABLE with java.lang.String = js.native
+    /* "RATE_LIMITED" */ val RATE_LIMITED: RATE_LIMITED with java.lang.String = js.native
+    /* "REFUND_ALREADY_PENDING" */ val REFUND_ALREADY_PENDING: REFUND_ALREADY_PENDING with java.lang.String = js.native
+    /* "REFUND_AMOUNT_INVALID" */ val REFUND_AMOUNT_INVALID: REFUND_AMOUNT_INVALID with java.lang.String = js.native
+    /* "REQUEST_ENTITY_TOO_LARGE" */ val REQUEST_ENTITY_TOO_LARGE: REQUEST_ENTITY_TOO_LARGE with java.lang.String = js.native
+    /* "REQUEST_TIMEOUT" */ val REQUEST_TIMEOUT: REQUEST_TIMEOUT with java.lang.String = js.native
+    /* "SANDBOX_NOT_SUPPORTED" */ val SANDBOX_NOT_SUPPORTED: SANDBOX_NOT_SUPPORTED with java.lang.String = js.native
+    /* "SERVICE_UNAVAILABLE" */ val SERVICE_UNAVAILABLE: SERVICE_UNAVAILABLE with java.lang.String = js.native
     /* "UNAUTHORIZED" */ val UNAUTHORIZED: UNAUTHORIZED with java.lang.String = js.native
-    /* "UNEXPECTED_VALUE" */ val UNEXPECTEDVALUE: UNEXPECTEDVALUE with java.lang.String = js.native
-    /* "UNKNOWN_QUERY_PARAMETER" */ val UNKNOWNQUERYPARAMETER: UNKNOWNQUERYPARAMETER with java.lang.String = js.native
-    /* "UNSUPPORTED_CARD_BRAND" */ val UNSUPPORTEDCARDBRAND: UNSUPPORTEDCARDBRAND with java.lang.String = js.native
-    /* "UNSUPPORTED_ENTRY_METHOD" */ val UNSUPPORTEDENTRYMETHOD: UNSUPPORTEDENTRYMETHOD with java.lang.String = js.native
-    /* "UNSUPPORTED_INSTRUMENT_TYPE" */ val UNSUPPORTEDINSTRUMENTTYPE: UNSUPPORTEDINSTRUMENTTYPE with java.lang.String = js.native
-    /* "UNSUPPORTED_MEDIA_TYPE" */ val UNSUPPORTEDMEDIATYPE: UNSUPPORTEDMEDIATYPE with java.lang.String = js.native
-    /* "V1_ACCESS_TOKEN" */ val V1ACCESSTOKEN: V1ACCESSTOKEN with java.lang.String = js.native
-    /* "V1_APPLICATION" */ val V1APPLICATION: V1APPLICATION with java.lang.String = js.native
-    /* "VALUE_EMPTY" */ val VALUEEMPTY: VALUEEMPTY with java.lang.String = js.native
-    /* "VALUE_REGEX_MISMATCH" */ val VALUEREGEXMISMATCH: VALUEREGEXMISMATCH with java.lang.String = js.native
-    /* "VALUE_TOO_HIGH" */ val VALUETOOHIGH: VALUETOOHIGH with java.lang.String = js.native
-    /* "VALUE_TOO_LONG" */ val VALUETOOLONG: VALUETOOLONG with java.lang.String = js.native
-    /* "VALUE_TOO_LOW" */ val VALUETOOLOW: VALUETOOLOW with java.lang.String = js.native
-    /* "VALUE_TOO_SHORT" */ val VALUETOOSHORT: VALUETOOSHORT with java.lang.String = js.native
-    /* "VERIFY_AVS_FAILURE" */ val VERIFYAVSFAILURE: VERIFYAVSFAILURE with java.lang.String = js.native
-    /* "VERIFY_CVV_FAILURE" */ val VERIFYCVVFAILURE: VERIFYCVVFAILURE with java.lang.String = js.native
+    /* "UNEXPECTED_VALUE" */ val UNEXPECTED_VALUE: UNEXPECTED_VALUE with java.lang.String = js.native
+    /* "UNKNOWN_QUERY_PARAMETER" */ val UNKNOWN_QUERY_PARAMETER: UNKNOWN_QUERY_PARAMETER with java.lang.String = js.native
+    /* "UNSUPPORTED_CARD_BRAND" */ val UNSUPPORTED_CARD_BRAND: UNSUPPORTED_CARD_BRAND with java.lang.String = js.native
+    /* "UNSUPPORTED_ENTRY_METHOD" */ val UNSUPPORTED_ENTRY_METHOD: UNSUPPORTED_ENTRY_METHOD with java.lang.String = js.native
+    /* "UNSUPPORTED_INSTRUMENT_TYPE" */ val UNSUPPORTED_INSTRUMENT_TYPE: UNSUPPORTED_INSTRUMENT_TYPE with java.lang.String = js.native
+    /* "UNSUPPORTED_MEDIA_TYPE" */ val UNSUPPORTED_MEDIA_TYPE: UNSUPPORTED_MEDIA_TYPE with java.lang.String = js.native
+    /* "V1_ACCESS_TOKEN" */ val V1_ACCESS_TOKEN: V1_ACCESS_TOKEN with java.lang.String = js.native
+    /* "V1_APPLICATION" */ val V1_APPLICATION: V1_APPLICATION with java.lang.String = js.native
+    /* "VALUE_EMPTY" */ val VALUE_EMPTY: VALUE_EMPTY with java.lang.String = js.native
+    /* "VALUE_REGEX_MISMATCH" */ val VALUE_REGEX_MISMATCH: VALUE_REGEX_MISMATCH with java.lang.String = js.native
+    /* "VALUE_TOO_HIGH" */ val VALUE_TOO_HIGH: VALUE_TOO_HIGH with java.lang.String = js.native
+    /* "VALUE_TOO_LONG" */ val VALUE_TOO_LONG: VALUE_TOO_LONG with java.lang.String = js.native
+    /* "VALUE_TOO_LOW" */ val VALUE_TOO_LOW: VALUE_TOO_LOW with java.lang.String = js.native
+    /* "VALUE_TOO_SHORT" */ val VALUE_TOO_SHORT: VALUE_TOO_SHORT with java.lang.String = js.native
+    /* "VERIFY_AVS_FAILURE" */ val VERIFY_AVS_FAILURE: VERIFY_AVS_FAILURE with java.lang.String = js.native
+    /* "VERIFY_CVV_FAILURE" */ val VERIFY_CVV_FAILURE: VERIFY_CVV_FAILURE with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.ModelErrorNs.CodeEnum with java.lang.String

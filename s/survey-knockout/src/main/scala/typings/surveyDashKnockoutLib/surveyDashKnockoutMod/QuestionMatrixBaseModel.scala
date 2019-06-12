@@ -13,7 +13,6 @@ class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question {
     * The list of columns. A column has a value and an optional text
     */
   var columns: js.Array[_] = js.native
-  var columnsValue: js.Array[TColumn] = js.native
   /**
     * An expression that returns true or false. It runs against each column item and if for this item it returns true, then the item is visible otherwise the item becomes invisible. Please use {item} to get the current item value in the expression.
     * @see rowsVisibleIf
@@ -47,6 +46,7 @@ class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question {
   /* protected */ def filterItems(): scala.Boolean = js.native
   /* protected */ def getRowName(row: js.Any): js.Any = js.native
   /* protected */ def getVisibleRows(): js.Array[TRow] = js.native
+  /* protected */ def onColumnsChanged(): scala.Unit = js.native
   /* protected */ def onRowsChanged(): scala.Unit = js.native
   /* protected */ def runItemsCondition(values: HashTable[_], properties: HashTable[_]): scala.Boolean = js.native
   def visibleRowsChangedCallback(): scala.Unit = js.native

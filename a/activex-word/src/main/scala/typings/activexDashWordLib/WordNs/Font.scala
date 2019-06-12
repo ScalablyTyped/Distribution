@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Word.Font")
 @js.native
 class Font protected () extends js.Object {
-  var AllCaps: scala.Boolean | WdConstants = js.native
+  var AllCaps: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
   var Animation: WdAnimation = js.native
   val Application: activexDashWordLib.WordNs.Application = js.native
-  var Bold: scala.Boolean | WdConstants = js.native
-  var BoldBi: scala.Boolean | WdConstants = js.native
+  var Bold: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
+  var BoldBi: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
   var Borders: activexDashWordLib.WordNs.Borders = js.native
   var Color: WdColor = js.native
   var ColorIndex: WdColorIndex = js.native
@@ -23,14 +23,14 @@ class Font protected () extends js.Object {
   var DisableCharacterSpaceGrid: scala.Boolean = js.native
   var DoubleStrikeThrough: scala.Double = js.native
   val Duplicate: Font = js.native
-  var Emboss: scala.Boolean | WdConstants = js.native
+  var Emboss: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
   var EmphasisMark: WdEmphasisMark = js.native
-  var Engrave: scala.Boolean | WdConstants = js.native
+  var Engrave: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
   var Fill: FillFormat = js.native
   var Glow: GlowFormat = js.native
   var Hidden: scala.Double = js.native
-  var Italic: scala.Boolean | WdConstants = js.native
-  var ItalicBi: scala.Boolean | WdConstants = js.native
+  var Italic: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
+  var ItalicBi: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
   var Kerning: scala.Double = js.native
   var Ligatures: WdLigatures = js.native
   var Line: LineFormat = js.native
@@ -50,12 +50,12 @@ class Font protected () extends js.Object {
   var Shadow: scala.Double = js.native
   var Size: scala.Double = js.native
   var SizeBi: scala.Double = js.native
-  var SmallCaps: scala.Boolean | WdConstants = js.native
+  var SmallCaps: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
   var Spacing: scala.Double = js.native
   var StrikeThrough: scala.Double = js.native
   var StylisticSet: WdStylisticSet = js.native
-  var Subscript: scala.Boolean | WdConstants = js.native
-  var Superscript: scala.Boolean | WdConstants = js.native
+  var Subscript: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
+  var Superscript: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
   val TextColor: ColorFormat = js.native
   var TextShadow: ShadowFormat = js.native
   var ThreeD: ThreeDFormat = js.native

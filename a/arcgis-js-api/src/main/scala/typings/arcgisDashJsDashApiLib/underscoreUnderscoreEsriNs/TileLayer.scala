@@ -132,12 +132,12 @@ trait TileLayer
     */
   def getTileUrl(level: scala.Double, row: scala.Double, col: scala.Double): java.lang.String = js.native
   @JSName("on")
-  def `on_layerview-create`(
+  def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: TileLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-destroy`(
+  def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: TileLayerLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

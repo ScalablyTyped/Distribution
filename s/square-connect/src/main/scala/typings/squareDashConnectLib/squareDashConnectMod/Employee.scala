@@ -13,6 +13,10 @@ class Employee () extends js.Object {
     */
   var created_at: js.UndefOr[java.lang.String] = js.native
   /**
+    * Email of the employee
+    */
+  var email: js.UndefOr[java.lang.String] = js.native
+  /**
     * Given (first) name of the employee.
     */
   var first_name: js.UndefOr[java.lang.String] = js.native
@@ -28,6 +32,10 @@ class Employee () extends js.Object {
     * A list of location IDs where this employee has access.
     */
   var location_ids: js.UndefOr[js.Array[java.lang.String]] = js.native
+  /**
+    * Phone number of the employee in E.164 format, i.e. "+12125554250"
+    */
+  var phone_number: js.UndefOr[java.lang.String] = js.native
   /**
     * Specifies the status of the employee being fetched. See [EmployeeStatus](#type-employeestatus) for possible values.
     */

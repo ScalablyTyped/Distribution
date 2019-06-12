@@ -13,6 +13,8 @@ trait IndexSignatureDeclaration
      with _HasJSDoc {
   var _classElementBrand: js.Any = js.native
   var _typeElementBrand: js.Any = js.native
+  @JSName("kind")
+  var kind_IndexSignatureDeclaration: typescriptLib.typescriptMod.SyntaxKind.IndexSignature = js.native
   @JSName("parent")
   var parent_IndexSignatureDeclaration: ObjectTypeDeclaration = js.native
   var questionToken: js.UndefOr[QuestionToken] = js.native

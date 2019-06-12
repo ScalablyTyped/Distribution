@@ -11,6 +11,8 @@ trait ModuleDeclaration
      with JSDocContainer
      with _HasJSDoc {
   var body: js.UndefOr[ModuleBody | JSDocNamespaceDeclaration] = js.native
+  @JSName("kind")
+  var kind_ModuleDeclaration: typescriptLib.typescriptMod.SyntaxKind.ModuleDeclaration = js.native
   @JSName("name")
   var name_ModuleDeclaration: ModuleName = js.native
   @JSName("parent")

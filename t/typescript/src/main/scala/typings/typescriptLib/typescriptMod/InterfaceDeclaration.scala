@@ -13,6 +13,8 @@ trait InterfaceDeclaration
      with ObjectTypeDeclaration
      with _HasJSDoc {
   var heritageClauses: js.UndefOr[NodeArray[HeritageClause]] = js.native
+  @JSName("kind")
+  var kind_InterfaceDeclaration: typescriptLib.typescriptMod.SyntaxKind.InterfaceDeclaration = js.native
   var members: NodeArray[TypeElement] = js.native
   @JSName("name")
   var name_InterfaceDeclaration: Identifier = js.native

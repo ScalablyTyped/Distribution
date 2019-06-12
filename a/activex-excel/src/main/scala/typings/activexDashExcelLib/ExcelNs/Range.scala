@@ -172,8 +172,23 @@ trait Range extends js.Object {
     CopyToRange: js.UndefOr[scala.Nothing],
     Unique: scala.Boolean
   ): js.Any = js.native
-  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Range, CopyToRange: Range): js.Any = js.native
-  def AdvancedFilter(Action: XlFilterAction, CriteriaRange: Range, CopyToRange: Range, Unique: scala.Boolean): js.Any = js.native
+  @JSName("AdvancedFilter")
+  def AdvancedFilter_2(Action: activexDashExcelLib.activexDashExcelLibNumbers.`2`): js.Any = js.native
+  @JSName("AdvancedFilter")
+  def AdvancedFilter_2(Action: activexDashExcelLib.activexDashExcelLibNumbers.`2`, CriteriaRange: Range): js.Any = js.native
+  @JSName("AdvancedFilter")
+  def AdvancedFilter_2(
+    Action: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    CriteriaRange: Range,
+    CopyToRange: Range
+  ): js.Any = js.native
+  @JSName("AdvancedFilter")
+  def AdvancedFilter_2(
+    Action: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    CriteriaRange: Range,
+    CopyToRange: Range,
+    Unique: scala.Boolean
+  ): js.Any = js.native
   def AllocateChanges(): scala.Unit = js.native
   /** @param Order [Order=1] */
   def ApplyNames(
@@ -671,7 +686,14 @@ trait Range extends js.Object {
   def Speak(SpeakDirection: XlSpeakDirection): scala.Unit = js.native
   def Speak(SpeakDirection: XlSpeakDirection, SpeakFormulas: scala.Boolean): scala.Unit = js.native
   def SpecialCells(Type: XlCellType): Range = js.native
-  def SpecialCells(Type: XlCellType, Value: XlSpecialCellsValue): Range = js.native
+  @JSName("SpecialCells")
+  def SpecialCells_2(Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`): Range = js.native
+  @JSName("SpecialCells")
+  def SpecialCells_2(Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`, Value: XlSpecialCellsValue): Range = js.native
+  @JSName("SpecialCells")
+  def SpecialCells_4123(Type: activexDashExcelLib.activexDashExcelLibNumbers.`-4123`): Range = js.native
+  @JSName("SpecialCells")
+  def SpecialCells_4123(Type: activexDashExcelLib.activexDashExcelLibNumbers.`-4123`, Value: XlSpecialCellsValue): Range = js.native
   /** @param Format [Format=-4158] */
   def SubscribeTo(Edition: java.lang.String): js.Any = js.native
   def SubscribeTo(Edition: java.lang.String, Format: XlSubscribeToFormat): js.Any = js.native

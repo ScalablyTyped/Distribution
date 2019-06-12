@@ -116,7 +116,8 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/ajaxComplete/ }\`
     * @since 1.0
     */
-  def ajaxComplete(
+  @JSName("ajaxComplete")
+  def ajaxComplete_false(
     handler: js.ThisFunction3[
       /* this */ stdLib.Document, 
       /* event */ cypressLib.JQueryNs.Event[stdLib.Document, scala.Null], 
@@ -132,7 +133,8 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/ajaxError/ }\`
     * @since 1.0
     */
-  def ajaxError(
+  @JSName("ajaxError")
+  def ajaxError_false(
     handler: js.ThisFunction4[
       /* this */ stdLib.Document, 
       /* event */ cypressLib.JQueryNs.Event[stdLib.Document, scala.Null], 
@@ -149,7 +151,8 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/ajaxSend/ }\`
     * @since 1.0
     */
-  def ajaxSend(
+  @JSName("ajaxSend")
+  def ajaxSend_false(
     handler: js.ThisFunction3[
       /* this */ stdLib.Document, 
       /* event */ cypressLib.JQueryNs.Event[stdLib.Document, scala.Null], 
@@ -165,7 +168,8 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/ajaxStart/ }\`
     * @since 1.0
     */
-  def ajaxStart(
+  @JSName("ajaxStart")
+  def ajaxStart_false(
     handler: js.ThisFunction0[/* this */ stdLib.Document, scala.Unit | cypressLib.cypressLibNumbers.`false`]
   ): this.type = js.native
   /**
@@ -175,7 +179,8 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/ajaxStop/ }\`
     * @since 1.0
     */
-  def ajaxStop(
+  @JSName("ajaxStop")
+  def ajaxStop_false(
     handler: js.ThisFunction0[/* this */ stdLib.Document, scala.Unit | cypressLib.cypressLibNumbers.`false`]
   ): this.type = js.native
   /**
@@ -185,7 +190,8 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/ajaxSuccess/ }\`
     * @since 1.0
     */
-  def ajaxSuccess(
+  @JSName("ajaxSuccess")
+  def ajaxSuccess_false(
     handler: js.ThisFunction4[
       /* this */ stdLib.Document, 
       /* event */ cypressLib.JQueryNs.Event[stdLib.Document, scala.Null], 
@@ -392,21 +398,6 @@ trait JQuery[TElement]
     eventType: java.lang.String,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def bind(eventType: java.lang.String, handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
-  /**
-    * Attach a handler to an event for the elements.
-    *
-    * @param events An object containing one or more DOM event types and functions to execute for them.
-    * @see \`{@link https://api.jquery.com/bind/ }\`
-    * @since 1.4
-    *
-    * @deprecated Deprecated since 3.0. Use \`{@link JQuery.on }\`.
-    */
-  def bind(
-    events: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
-    ]
-  ): this.type = js.native
   // [bind() overloads] https://github.com/jquery/api.jquery.com/issues/1048
   /**
     * Attach a handler to an event for the elements.
@@ -425,6 +416,23 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("bind")
+  def bind_false(eventType: java.lang.String, handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
+  /**
+    * Attach a handler to an event for the elements.
+    *
+    * @param events An object containing one or more DOM event types and functions to execute for them.
+    * @see \`{@link https://api.jquery.com/bind/ }\`
+    * @since 1.4
+    *
+    * @deprecated Deprecated since 3.0. Use \`{@link JQuery.on }\`.
+    */
+  @JSName("bind")
+  def bind_false(
+    events: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
+    ]
+  ): this.type = js.native
   /**
     * Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
     *
@@ -438,7 +446,6 @@ trait JQuery[TElement]
   def blur(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def blur(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
     *
@@ -453,6 +460,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("blur")
+  def blur_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
     *
@@ -466,7 +475,6 @@ trait JQuery[TElement]
   def change(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def change(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
     *
@@ -481,6 +489,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("change")
+  def change_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Get the children of each element in the set of matched elements, optionally filtered by a selector.
     *
@@ -512,7 +522,6 @@ trait JQuery[TElement]
   def click(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def click(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "click" JavaScript event, or trigger that event on an element.
     *
@@ -527,6 +536,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("click")
+  def click_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   def clone(withDataAndEvents: scala.Boolean): this.type = js.native
   def clone(withDataAndEvents: scala.Boolean, deepWithDataAndEvents: scala.Boolean): this.type = js.native
   def closest(selector: JQuery[stdLib.HTMLElement]): this.type = js.native
@@ -573,7 +584,6 @@ trait JQuery[TElement]
   def contextmenu(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def contextmenu(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "contextmenu" JavaScript event, or trigger that event on an element.
     *
@@ -588,6 +598,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("contextmenu")
+  def contextmenu_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Set one or more CSS properties for the set of matched elements.
     *
@@ -692,7 +704,6 @@ trait JQuery[TElement]
   def dblclick(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def dblclick(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "dblclick" JavaScript event, or trigger that event on an element.
     *
@@ -707,6 +718,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("dblclick")
+  def dblclick_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Set a timer to delay execution of subsequent items in the queue.
     *
@@ -735,28 +748,6 @@ trait JQuery[TElement]
     eventType: java.lang.String,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def delegate(
-    selector: cypressLib.JQueryNs.Selector,
-    eventType: java.lang.String,
-    handler: cypressLib.cypressLibNumbers.`false`
-  ): this.type = js.native
-  /**
-    * Attach a handler to one or more events for all elements that match the selector, now or in the
-    * future, based on a specific set of root elements.
-    *
-    * @param selector A selector to filter the elements that trigger the event.
-    * @param events A plain object of one or more event types and functions to execute for them.
-    * @see \`{@link https://api.jquery.com/delegate/ }\`
-    * @since 1.4.3
-    *
-    * @deprecated Deprecated since 3.0. Use \`{@link JQuery.on }\`.
-    */
-  def delegate(
-    selector: cypressLib.JQueryNs.Selector,
-    events: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
-    ]
-  ): this.type = js.native
   /**
     * Attach a handler to one or more events for all elements that match the selector, now or in the
     * future, based on a specific set of root elements.
@@ -776,6 +767,30 @@ trait JQuery[TElement]
     eventType: java.lang.String,
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
+  ): this.type = js.native
+  @JSName("delegate")
+  def delegate_false(
+    selector: cypressLib.JQueryNs.Selector,
+    eventType: java.lang.String,
+    handler: cypressLib.cypressLibNumbers.`false`
+  ): this.type = js.native
+  /**
+    * Attach a handler to one or more events for all elements that match the selector, now or in the
+    * future, based on a specific set of root elements.
+    *
+    * @param selector A selector to filter the elements that trigger the event.
+    * @param events A plain object of one or more event types and functions to execute for them.
+    * @see \`{@link https://api.jquery.com/delegate/ }\`
+    * @since 1.4.3
+    *
+    * @deprecated Deprecated since 3.0. Use \`{@link JQuery.on }\`.
+    */
+  @JSName("delegate")
+  def delegate_false(
+    selector: cypressLib.JQueryNs.Selector,
+    events: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
+    ]
   ): this.type = js.native
   /**
     * Execute the next function on the queue for the matched elements.
@@ -802,7 +817,8 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/each/ }\`
     * @since 1.0
     */
-  def each(
+  @JSName("each")
+  def each_false(
     fn: js.ThisFunction2[
       /* this */ TElement, 
       /* index */ scala.Double, 
@@ -1073,7 +1089,6 @@ trait JQuery[TElement]
   def focus(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def focus(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "focus" JavaScript event, or trigger that event on an element.
     *
@@ -1088,6 +1103,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("focus")
+  def focus_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "focusin" event.
     *
@@ -1101,7 +1118,6 @@ trait JQuery[TElement]
   def focusin(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def focusin(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "focusin" event.
     *
@@ -1116,6 +1132,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("focusin")
+  def focusin_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "focusout" JavaScript event.
     *
@@ -1129,7 +1147,6 @@ trait JQuery[TElement]
   def focusout(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def focusout(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "focusout" JavaScript event.
     *
@@ -1144,6 +1161,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("focusout")
+  def focusout_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Retrieve the elements matched by the jQuery object.
     *
@@ -1266,16 +1285,20 @@ trait JQuery[TElement]
     handlerInOut: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]),
     handlerOut: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def hover[T](
+  @JSName("hover")
+  def hover_false[T](
     handlerInOut: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]),
     handlerOut: cypressLib.cypressLibNumbers.`false`
   ): this.type = js.native
-  def hover[T](handlerInOut: cypressLib.cypressLibNumbers.`false`): this.type = js.native
-  def hover[T](
+  @JSName("hover")
+  def hover_false[T](handlerInOut: cypressLib.cypressLibNumbers.`false`): this.type = js.native
+  @JSName("hover")
+  def hover_false[T](
     handlerInOut: cypressLib.cypressLibNumbers.`false`,
     handlerOut: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def hover[T](
+  @JSName("hover")
+  def hover_false[T](
     handlerInOut: cypressLib.cypressLibNumbers.`false`,
     handlerOut: cypressLib.cypressLibNumbers.`false`
   ): this.type = js.native
@@ -1434,7 +1457,6 @@ trait JQuery[TElement]
   def keydown(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def keydown(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "keydown" JavaScript event, or trigger that event on an element.
     *
@@ -1449,6 +1471,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("keydown")
+  def keydown_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
     *
@@ -1462,7 +1486,6 @@ trait JQuery[TElement]
   def keypress(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def keypress(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "keypress" JavaScript event, or trigger that event on an element.
     *
@@ -1477,6 +1500,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("keypress")
+  def keypress_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
     *
@@ -1490,7 +1515,6 @@ trait JQuery[TElement]
   def keyup(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def keyup(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "keyup" JavaScript event, or trigger that event on an element.
     *
@@ -1505,6 +1529,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("keyup")
+  def keyup_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Reduce the set of matched elements to the final one in the set.
     *
@@ -1594,7 +1620,6 @@ trait JQuery[TElement]
   def mousedown(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def mousedown(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "mousedown" JavaScript event, or trigger that event on an element.
     *
@@ -1609,6 +1634,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("mousedown")
+  def mousedown_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
     *
@@ -1622,7 +1649,6 @@ trait JQuery[TElement]
   def mouseenter(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def mouseenter(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element.
     *
@@ -1637,6 +1663,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("mouseenter")
+  def mouseenter_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
     *
@@ -1650,7 +1678,6 @@ trait JQuery[TElement]
   def mouseleave(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def mouseleave(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element.
     *
@@ -1665,6 +1692,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("mouseleave")
+  def mouseleave_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
     *
@@ -1678,7 +1707,6 @@ trait JQuery[TElement]
   def mousemove(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def mousemove(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "mousemove" JavaScript event, or trigger that event on an element.
     *
@@ -1693,6 +1721,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("mousemove")
+  def mousemove_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
     *
@@ -1706,7 +1736,6 @@ trait JQuery[TElement]
   def mouseout(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def mouseout(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "mouseout" JavaScript event, or trigger that event on an element.
     *
@@ -1721,6 +1750,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("mouseout")
+  def mouseout_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
     *
@@ -1734,7 +1765,6 @@ trait JQuery[TElement]
   def mouseover(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def mouseover(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "mouseover" JavaScript event, or trigger that event on an element.
     *
@@ -1749,6 +1779,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("mouseover")
+  def mouseover_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
     *
@@ -1762,7 +1794,6 @@ trait JQuery[TElement]
   def mouseup(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def mouseup(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "mouseup" JavaScript event, or trigger that event on an element.
     *
@@ -1777,6 +1808,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("mouseup")
+  def mouseup_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Get the immediately following sibling of each element in the set of matched elements. If a selector
     * is provided, it retrieves the next sibling only if it matches that selector.
@@ -1844,26 +1877,6 @@ trait JQuery[TElement]
   /**
     * Remove an event handler.
     *
-    * @param events An object where the string keys represent one or more space-separated event types and optional
-    *               namespaces, and the values represent handler functions previously attached for the event(s).
-    * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
-    * @see \`{@link https://api.jquery.com/off/ }\`
-    * @since 1.7
-    */
-  def off(
-    events: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]) | cypressLib.cypressLibNumbers.`false`
-    ]
-  ): this.type = js.native
-  def off(
-    events: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]) | cypressLib.cypressLibNumbers.`false`
-    ],
-    selector: cypressLib.JQueryNs.Selector
-  ): this.type = js.native
-  /**
-    * Remove an event handler.
-    *
     * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
     *               "click", "keydown.myPlugin", or ".myPlugin".
     * @param selector_handler A selector which should match the one originally passed to .on() when attaching event handlers.
@@ -1877,7 +1890,6 @@ trait JQuery[TElement]
     selector_handler: cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]
   ): this.type = js.native
   def off(events: java.lang.String, selector_handler: cypressLib.JQueryNs.Selector): this.type = js.native
-  def off(events: java.lang.String, selector_handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Remove an event handler.
     *
@@ -1893,7 +1905,32 @@ trait JQuery[TElement]
     selector: cypressLib.JQueryNs.Selector,
     handler: cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]
   ): this.type = js.native
-  def off(
+  /**
+    * Remove an event handler.
+    *
+    * @param events An object where the string keys represent one or more space-separated event types and optional
+    *               namespaces, and the values represent handler functions previously attached for the event(s).
+    * @param selector A selector which should match the one originally passed to .on() when attaching event handlers.
+    * @see \`{@link https://api.jquery.com/off/ }\`
+    * @since 1.7
+    */
+  @JSName("off")
+  def off_false(
+    events: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]) | cypressLib.cypressLibNumbers.`false`
+    ]
+  ): this.type = js.native
+  @JSName("off")
+  def off_false(
+    events: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]) | cypressLib.cypressLibNumbers.`false`
+    ],
+    selector: cypressLib.JQueryNs.Selector
+  ): this.type = js.native
+  @JSName("off")
+  def off_false(events: java.lang.String, selector_handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
+  @JSName("off")
+  def off_false(
     events: java.lang.String,
     selector: cypressLib.JQueryNs.Selector,
     handler: cypressLib.cypressLibNumbers.`false`
@@ -1935,35 +1972,6 @@ trait JQuery[TElement]
   /**
     * Attach an event handler function for one or more events to the selected elements.
     *
-    * @param events An object in which the string keys represent one or more space-separated event types and optional
-    *               namespaces, and the values represent a handler function to be called for the event(s).
-    * @see \`{@link https://api.jquery.com/on/ }\`
-    * @since 1.7
-    */
-  def on(
-    events: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
-    ]
-  ): this.type = js.native
-  /**
-    * Attach an event handler function for one or more events to the selected elements.
-    *
-    * @param events An object in which the string keys represent one or more space-separated event types and optional
-    *               namespaces, and the values represent a handler function to be called for the event(s).
-    * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
-    *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
-    * @see \`{@link https://api.jquery.com/on/ }\`
-    * @since 1.7
-    */
-  def on(
-    events: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
-    ],
-    selector: cypressLib.JQueryNs.Selector
-  ): this.type = js.native
-  /**
-    * Attach an event handler function for one or more events to the selected elements.
-    *
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
     * @param data Data to be passed to the handler in event.data when an event is triggered.
     * @param handler A function to execute when the event is triggered.
@@ -1989,7 +1997,6 @@ trait JQuery[TElement]
     events: java.lang.String,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def on(events: java.lang.String, handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     *
@@ -2033,11 +2040,6 @@ trait JQuery[TElement]
     selector: cypressLib.JQueryNs.Selector,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def on(
-    events: java.lang.String,
-    selector: cypressLib.JQueryNs.Selector,
-    handler: cypressLib.cypressLibNumbers.`false`
-  ): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     *
@@ -2063,48 +2065,6 @@ trait JQuery[TElement]
   /**
     * Attach an event handler function for one or more events to the selected elements.
     *
-    * @param events An object in which the string keys represent one or more space-separated event types and optional
-    *               namespaces, and the values represent a handler function to be called for the event(s).
-    * @param data Data to be passed to the handler in event.data when an event occurs.
-    * @see \`{@link https://api.jquery.com/on/ }\`
-    * @since 1.7
-    */
-  def on[TData](
-    events: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]]) | cypressLib.cypressLibNumbers.`false`
-    ],
-    data: TData
-  ): this.type = js.native
-   // tslint:disable-line:unified-signatures
-  /**
-    * Attach an event handler function for one or more events to the selected elements.
-    *
-    * @param events An object in which the string keys represent one or more space-separated event types and optional
-    *               namespaces, and the values represent a handler function to be called for the event(s).
-    * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
-    *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
-    * @param data Data to be passed to the handler in event.data when an event occurs.
-    * @see \`{@link https://api.jquery.com/on/ }\`
-    * @since 1.7
-    */
-  def on[TData](
-    events: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]]) | cypressLib.cypressLibNumbers.`false`
-    ],
-    selector: cypressLib.JQueryNs.Selector,
-    data: TData
-  ): this.type = js.native
-  def on[TData](
-    events: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]]) | cypressLib.cypressLibNumbers.`false`
-    ],
-    selector: scala.Null,
-    data: TData
-  ): this.type = js.native
-   // tslint:disable-line:unified-signatures
-  /**
-    * Attach an event handler function for one or more events to the selected elements.
-    *
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
     * @param data Data to be passed to the handler in event.data when an event is triggered.
     * @param handler A function to execute when the event is triggered.
@@ -2140,6 +2100,156 @@ trait JQuery[TElement]
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
   /**
+    * Attach an event handler function for one or more events to the selected elements.
+    *
+    * @param events An object in which the string keys represent one or more space-separated event types and optional
+    *               namespaces, and the values represent a handler function to be called for the event(s).
+    * @see \`{@link https://api.jquery.com/on/ }\`
+    * @since 1.7
+    */
+  @JSName("on")
+  def on_false(
+    events: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
+    ]
+  ): this.type = js.native
+  /**
+    * Attach an event handler function for one or more events to the selected elements.
+    *
+    * @param events An object in which the string keys represent one or more space-separated event types and optional
+    *               namespaces, and the values represent a handler function to be called for the event(s).
+    * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
+    *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
+    * @see \`{@link https://api.jquery.com/on/ }\`
+    * @since 1.7
+    */
+  @JSName("on")
+  def on_false(
+    events: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
+    ],
+    selector: cypressLib.JQueryNs.Selector
+  ): this.type = js.native
+  @JSName("on")
+  def on_false(events: java.lang.String, handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
+  @JSName("on")
+  def on_false(
+    events: java.lang.String,
+    selector: cypressLib.JQueryNs.Selector,
+    handler: cypressLib.cypressLibNumbers.`false`
+  ): this.type = js.native
+   // tslint:disable-line:unified-signatures
+  /**
+    * Attach an event handler function for one or more events to the selected elements.
+    *
+    * @param events An object in which the string keys represent one or more space-separated event types and optional
+    *               namespaces, and the values represent a handler function to be called for the event(s).
+    * @param data Data to be passed to the handler in event.data when an event occurs.
+    * @see \`{@link https://api.jquery.com/on/ }\`
+    * @since 1.7
+    */
+  @JSName("on")
+  def on_false[TData](
+    events: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]]) | cypressLib.cypressLibNumbers.`false`
+    ],
+    data: TData
+  ): this.type = js.native
+   // tslint:disable-line:unified-signatures
+  /**
+    * Attach an event handler function for one or more events to the selected elements.
+    *
+    * @param events An object in which the string keys represent one or more space-separated event types and optional
+    *               namespaces, and the values represent a handler function to be called for the event(s).
+    * @param selector A selector string to filter the descendants of the selected elements that will call the handler. If
+    *                 the selector is null or omitted, the handler is always called when it reaches the selected element.
+    * @param data Data to be passed to the handler in event.data when an event occurs.
+    * @see \`{@link https://api.jquery.com/on/ }\`
+    * @since 1.7
+    */
+  @JSName("on")
+  def on_false[TData](
+    events: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]]) | cypressLib.cypressLibNumbers.`false`
+    ],
+    selector: cypressLib.JQueryNs.Selector,
+    data: TData
+  ): this.type = js.native
+  @JSName("on")
+  def on_false[TData](
+    events: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]]) | cypressLib.cypressLibNumbers.`false`
+    ],
+    selector: scala.Null,
+    data: TData
+  ): this.type = js.native
+  /**
+    * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+    *
+    * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+    * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
+    *                for a function that simply does return false.
+    * @see \`{@link https://api.jquery.com/one/ }\`
+    * @since 1.7
+    */
+  def one(
+    events: java.lang.String,
+    handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
+  ): this.type = js.native
+  /**
+    * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+    *
+    * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+    * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
+    *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
+    * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
+    *                for a function that simply does return false.
+    * @see \`{@link https://api.jquery.com/one/ }\`
+    * @since 1.7
+    */
+  def one(
+    events: java.lang.String,
+    selector: cypressLib.JQueryNs.Selector,
+    handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
+  ): this.type = js.native
+  /**
+    * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+    *
+    * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+    * @param data Data to be passed to the handler in event.data when an event is triggered.
+    * @param handler A function to execute when the event is triggered.
+    * @see \`{@link https://api.jquery.com/one/ }\`
+    * @since 1.7
+    */
+  def one[TData](
+    events: java.lang.String,
+    data: TData,
+    handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
+  ): this.type = js.native
+  /**
+    * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
+    *
+    * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
+    * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
+    *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
+    * @param data Data to be passed to the handler in event.data when an event is triggered.
+    * @param handler A function to execute when the event is triggered.
+    * @see \`{@link https://api.jquery.com/one/ }\`
+    * @since 1.7
+    */
+  def one[TData](
+    events: java.lang.String,
+    selector: cypressLib.JQueryNs.Selector,
+    data: TData,
+    handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
+  ): this.type = js.native
+  def one[TData](
+    events: java.lang.String,
+    selector: scala.Null,
+    data: TData,
+    handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
+  ): this.type = js.native
+  /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -2147,7 +2257,8 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one(
+  @JSName("one")
+  def one_false(
     events: cypressLib.JQueryNs.PlainObject[
       (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
     ]
@@ -2162,43 +2273,17 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one(
+  @JSName("one")
+  def one_false(
     events: cypressLib.JQueryNs.PlainObject[
       (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]]) | cypressLib.cypressLibNumbers.`false`
     ],
     selector: cypressLib.JQueryNs.Selector
   ): this.type = js.native
-  /**
-    * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
-    *
-    * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-    * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
-    *                for a function that simply does return false.
-    * @see \`{@link https://api.jquery.com/one/ }\`
-    * @since 1.7
-    */
-  def one(
-    events: java.lang.String,
-    handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
-  def one(events: java.lang.String, handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
-  /**
-    * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
-    *
-    * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-    * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
-    *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
-    * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand
-    *                for a function that simply does return false.
-    * @see \`{@link https://api.jquery.com/one/ }\`
-    * @since 1.7
-    */
-  def one(
-    events: java.lang.String,
-    selector: cypressLib.JQueryNs.Selector,
-    handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
-  ): this.type = js.native
-  def one(
+  @JSName("one")
+  def one_false(events: java.lang.String, handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
+  @JSName("one")
+  def one_false(
     events: java.lang.String,
     selector: cypressLib.JQueryNs.Selector,
     handler: cypressLib.cypressLibNumbers.`false`
@@ -2213,7 +2298,8 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one[TData](
+  @JSName("one")
+  def one_false[TData](
     events: cypressLib.JQueryNs.PlainObject[
       (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]]) | cypressLib.cypressLibNumbers.`false`
     ],
@@ -2230,56 +2316,21 @@ trait JQuery[TElement]
     * @see \`{@link https://api.jquery.com/one/ }\`
     * @since 1.7
     */
-  def one[TData](
+  @JSName("one")
+  def one_false[TData](
     events: cypressLib.JQueryNs.PlainObject[
       (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]]) | cypressLib.cypressLibNumbers.`false`
     ],
     selector: cypressLib.JQueryNs.Selector,
     data: TData
   ): this.type = js.native
-  def one[TData](
+  @JSName("one")
+  def one_false[TData](
     events: cypressLib.JQueryNs.PlainObject[
       (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]]) | cypressLib.cypressLibNumbers.`false`
     ],
     selector: scala.Null,
     data: TData
-  ): this.type = js.native
-  /**
-    * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
-    *
-    * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-    * @param data Data to be passed to the handler in event.data when an event is triggered.
-    * @param handler A function to execute when the event is triggered.
-    * @see \`{@link https://api.jquery.com/one/ }\`
-    * @since 1.7
-    */
-  def one[TData](
-    events: java.lang.String,
-    data: TData,
-    handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
-  ): this.type = js.native
-  /**
-    * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
-    *
-    * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
-    * @param selector A selector string to filter the descendants of the selected elements that trigger the event. If the
-    *                 selector is null or omitted, the event is always triggered when it reaches the selected element.
-    * @param data Data to be passed to the handler in event.data when an event is triggered.
-    * @param handler A function to execute when the event is triggered.
-    * @see \`{@link https://api.jquery.com/one/ }\`
-    * @since 1.7
-    */
-  def one[TData](
-    events: java.lang.String,
-    selector: cypressLib.JQueryNs.Selector,
-    data: TData,
-    handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
-  ): this.type = js.native
-  def one[TData](
-    events: java.lang.String,
-    selector: scala.Null,
-    data: TData,
-    handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
   /**
     * Get the current computed outer height (including padding, border, and optionally margin) for the
@@ -2682,7 +2733,6 @@ trait JQuery[TElement]
   def resize(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def resize(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "resize" JavaScript event, or trigger that event on an element.
     *
@@ -2697,6 +2747,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("resize")
+  def resize_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
     *
@@ -2710,7 +2762,6 @@ trait JQuery[TElement]
   def scroll(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def scroll(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "scroll" JavaScript event, or trigger that event on an element.
     *
@@ -2756,6 +2807,8 @@ trait JQuery[TElement]
     * @since 1.2.6
     */
   def scrollTop(value: scala.Double): this.type = js.native
+  @JSName("scroll")
+  def scroll_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
     *
@@ -2769,7 +2822,6 @@ trait JQuery[TElement]
   def select(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def select(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "select" JavaScript event, or trigger that event on an element.
     *
@@ -2784,6 +2836,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("select")
+  def select_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Encode a set of form elements as a string for submission.
     *
@@ -3035,7 +3089,6 @@ trait JQuery[TElement]
   def submit(
     handler: (cypressLib.JQueryNs.EventHandler[TElement, scala.Null]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, scala.Null]])
   ): this.type = js.native
-  def submit(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "submit" JavaScript event, or trigger that event on an element.
     *
@@ -3050,6 +3103,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: (cypressLib.JQueryNs.EventHandler[TElement, TData]) | (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, TData]])
   ): this.type = js.native
+  @JSName("submit")
+  def submit_false(handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Get the combined text contents of each element in the set of matched elements, including their descendants.
     *
@@ -3251,7 +3306,8 @@ trait JQuery[TElement]
     event: java.lang.String,
     handler: cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]
   ): this.type = js.native
-  def unbind(event: java.lang.String, handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
+  @JSName("unbind")
+  def unbind_false(event: java.lang.String, handler: cypressLib.cypressLibNumbers.`false`): this.type = js.native
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a
     * specific set of root elements.
@@ -3282,17 +3338,6 @@ trait JQuery[TElement]
     eventType: java.lang.String,
     handler: cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]
   ): this.type = js.native
-  def undelegate(
-    selector: cypressLib.JQueryNs.Selector,
-    eventType: java.lang.String,
-    handler: cypressLib.cypressLibNumbers.`false`
-  ): this.type = js.native
-  def undelegate(
-    selector: cypressLib.JQueryNs.Selector,
-    eventTypes: cypressLib.JQueryNs.PlainObject[
-      (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]) | cypressLib.cypressLibNumbers.`false`
-    ]
-  ): this.type = js.native
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a
     * specific set of root elements.
@@ -3307,6 +3352,19 @@ trait JQuery[TElement]
     * @deprecated Deprecated since 3.0. Use \`{@link JQuery.off }\`.
     */
   def undelegate(selector: cypressLib.JQueryNs.Selector, eventTypes: java.lang.String): this.type = js.native
+  @JSName("undelegate")
+  def undelegate_false(
+    selector: cypressLib.JQueryNs.Selector,
+    eventType: java.lang.String,
+    handler: cypressLib.cypressLibNumbers.`false`
+  ): this.type = js.native
+  @JSName("undelegate")
+  def undelegate_false(
+    selector: cypressLib.JQueryNs.Selector,
+    eventTypes: cypressLib.JQueryNs.PlainObject[
+      (cypressLib.JQueryNs.EventHandlerBase[_, cypressLib.JQueryNs.Event[TElement, _]]) | cypressLib.cypressLibNumbers.`false`
+    ]
+  ): this.type = js.native
   /**
     * Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place.
     *

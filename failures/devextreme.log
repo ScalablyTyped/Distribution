@@ -576,7 +576,7 @@
 	at com.olvind.tso.ts.TreeTransformation.visitTsParsedFile$(TreeTransformation.scala:328)
 	at com.olvind.tso.ts.TreeTransformationScopedChanges.visitTsParsedFile(TreeTransformations.scala:4)
 	at com.olvind.tso.ts.transforms.ExtractInterfaces$.apply(ExtractInterfaces.scala:12)
-	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$16(Phase1ReadTypescript.scala:242)
+	at com.olvind.tso.importer.Phase1ReadTypescript$.$anonfun$Pipeline$16(Phase1ReadTypescript.scala:243)
 	at com.olvind.tso.importer.Phase1ReadTypescript.$anonfun$apply$38(Phase1ReadTypescript.scala:192)
 	at scala.collection.LinearSeqOptimized.foldLeft(LinearSeqOptimized.scala:126)
 	at scala.collection.LinearSeqOptimized.foldLeft$(LinearSeqOptimized.scala:122)

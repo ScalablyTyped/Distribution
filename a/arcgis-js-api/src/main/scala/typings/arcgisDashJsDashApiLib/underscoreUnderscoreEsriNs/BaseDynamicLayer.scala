@@ -42,12 +42,12 @@ trait BaseDynamicLayer
     */
   def getImageUrl(extent: Extent, width: scala.Double, height: scala.Double): arcgisDashJsDashApiLib.IPromise[java.lang.String] | java.lang.String = js.native
   @JSName("on")
-  def `on_layerview-create`(
+  def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: BaseDynamicLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-destroy`(
+  def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: BaseDynamicLayerLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

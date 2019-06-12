@@ -9,7 +9,7 @@ trait ReactionsCreateForIssueParamsDeprecatedNumber extends js.Object {
   /**
     * The [reaction type](https://developer.github.com/v3/reactions/#reaction-types) to add to the issue.
     */
-  var content: atOctokitRestLib.atOctokitRestLibStrings.`+1` | atOctokitRestLib.atOctokitRestLibStrings.`-1` | atOctokitRestLib.atOctokitRestLibStrings.laugh | atOctokitRestLib.atOctokitRestLibStrings.confused | atOctokitRestLib.atOctokitRestLibStrings.heart | atOctokitRestLib.atOctokitRestLibStrings.hooray
+  var content: atOctokitRestLib.atOctokitRestLibStrings.`+1` | atOctokitRestLib.atOctokitRestLibStrings.`-1` | atOctokitRestLib.atOctokitRestLibStrings.laugh | atOctokitRestLib.atOctokitRestLibStrings.confused | atOctokitRestLib.atOctokitRestLibStrings.heart | atOctokitRestLib.atOctokitRestLibStrings.hooray | atOctokitRestLib.atOctokitRestLibStrings.rocket | atOctokitRestLib.atOctokitRestLibStrings.eyes
   /**
     * @deprecated "number" parameter renamed to "issue_number"
     */
@@ -21,7 +21,7 @@ trait ReactionsCreateForIssueParamsDeprecatedNumber extends js.Object {
 object ReactionsCreateForIssueParamsDeprecatedNumber {
   @scala.inline
   def apply(
-    content: atOctokitRestLib.atOctokitRestLibStrings.`+1` | atOctokitRestLib.atOctokitRestLibStrings.`-1` | atOctokitRestLib.atOctokitRestLibStrings.laugh | atOctokitRestLib.atOctokitRestLibStrings.confused | atOctokitRestLib.atOctokitRestLibStrings.heart | atOctokitRestLib.atOctokitRestLibStrings.hooray,
+    content: atOctokitRestLib.atOctokitRestLibStrings.`+1` | atOctokitRestLib.atOctokitRestLibStrings.`-1` | atOctokitRestLib.atOctokitRestLibStrings.laugh | atOctokitRestLib.atOctokitRestLibStrings.confused | atOctokitRestLib.atOctokitRestLibStrings.heart | atOctokitRestLib.atOctokitRestLibStrings.hooray | atOctokitRestLib.atOctokitRestLibStrings.rocket | atOctokitRestLib.atOctokitRestLibStrings.eyes,
     number: scala.Double,
     owner: java.lang.String,
     repo: java.lang.String

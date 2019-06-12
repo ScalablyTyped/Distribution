@@ -63,7 +63,7 @@ trait WebSocket
   @JSName("addListener")
   def addListener_pong(event: wsLib.wsLibStrings.pong, listener: js.Function1[/* data */ nodeLib.Buffer, scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def `addListener_unexpected-response`(
+  def addListener_unexpectedresponse(
     event: wsLib.wsLibStrings.`unexpected-response`,
     listener: js.Function2[
       /* request */ nodeLib.httpMod.ClientRequest, 
@@ -121,7 +121,7 @@ trait WebSocket
     listener: js.ThisFunction1[/* this */ this.type, /* data */ nodeLib.Buffer, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_unexpected-response`(
+  def on_unexpectedresponse(
     event: wsLib.wsLibStrings.`unexpected-response`,
     listener: js.ThisFunction2[
       /* this */ this.type, 
@@ -190,7 +190,7 @@ trait WebSocket
   @JSName("removeListener")
   def removeListener_pong(event: wsLib.wsLibStrings.pong, listener: js.Function1[/* data */ nodeLib.Buffer, scala.Unit]): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_unexpected-response`(
+  def removeListener_unexpectedresponse(
     event: wsLib.wsLibStrings.`unexpected-response`,
     listener: js.Function2[
       /* request */ nodeLib.httpMod.ClientRequest, 

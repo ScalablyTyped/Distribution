@@ -171,13 +171,16 @@ trait ValidatorStatic extends js.Object {
   def isURL(str: java.lang.String, options: IsURLOptions): scala.Boolean = js.native
   // check if the string is a UUID. Must be one of ['3', '4', '5', 'all'], default is all.
   def isUUID(str: java.lang.String): scala.Boolean = js.native
-  def isUUID(str: java.lang.String, version: validatorLib.validatorLibNumbers.`3`): scala.Boolean = js.native
-  def isUUID(str: java.lang.String, version: validatorLib.validatorLibNumbers.`4`): scala.Boolean = js.native
-  def isUUID(str: java.lang.String, version: validatorLib.validatorLibNumbers.`5`): scala.Boolean = js.native
+  @JSName("isUUID")
+  def isUUID_3(str: java.lang.String, version: validatorLib.validatorLibNumbers.`3`): scala.Boolean = js.native
   @JSName("isUUID")
   def isUUID_3(str: java.lang.String, version: validatorLib.validatorLibStrings.`3`): scala.Boolean = js.native
   @JSName("isUUID")
+  def isUUID_4(str: java.lang.String, version: validatorLib.validatorLibNumbers.`4`): scala.Boolean = js.native
+  @JSName("isUUID")
   def isUUID_4(str: java.lang.String, version: validatorLib.validatorLibStrings.`4`): scala.Boolean = js.native
+  @JSName("isUUID")
+  def isUUID_5(str: java.lang.String, version: validatorLib.validatorLibNumbers.`5`): scala.Boolean = js.native
   @JSName("isUUID")
   def isUUID_5(str: java.lang.String, version: validatorLib.validatorLibStrings.`5`): scala.Boolean = js.native
   @JSName("isUUID")

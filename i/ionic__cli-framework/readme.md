@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__cli-framework
 
-Typings are for version 2.0.1
+Typings are for version 2.0.2
 
 ## Library description:
 The foundation framework of the Ionic CLI

@@ -8,5 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JSDocPropertyTag
   extends JSDocPropertyLikeTag
-     with VariableLikeDeclaration
+     with VariableLikeDeclaration {
+  @JSName("kind")
+  var kind_JSDocPropertyTag: typescriptLib.typescriptMod.SyntaxKind.JSDocPropertyTag = js.native
+}
 

@@ -27,13 +27,13 @@ trait Request extends js.Object {
   def header(headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]): this.type = js.native
   def header(key: java.lang.String, value: java.lang.String): this.type = js.native
   @JSName("option")
-  def option__defaultAgent(key: centraLib.centraLibStrings._defaultAgent, value: nodeLib.httpMod.Agent): this.type = js.native
-  @JSName("option")
   def option_agent(key: centraLib.centraLibStrings.agent, value: nodeLib.httpMod.Agent): this.type = js.native
   @JSName("option")
   def option_agent(key: centraLib.centraLibStrings.agent, value: scala.Boolean): this.type = js.native
   @JSName("option")
   def option_auth(key: centraLib.centraLibStrings.auth, value: java.lang.String): this.type = js.native
+  @JSName("option")
+  def option_defaultAgent(key: centraLib.centraLibStrings._defaultAgent, value: nodeLib.httpMod.Agent): this.type = js.native
   @JSName("option")
   def option_defaultPort(key: centraLib.centraLibStrings.defaultPort, value: java.lang.String): this.type = js.native
   @JSName("option")

@@ -58,7 +58,11 @@ class TLSSocket protected ()
     */
   def getCipher(): CipherNameAndProtocol = js.native
   def getPeerCertificate(): PeerCertificate | DetailedPeerCertificate = js.native
-  def getPeerCertificate(detailed: nodeLib.nodeLibNumbers.`false`): PeerCertificate = js.native
+  def getPeerCertificate(detailed: scala.Boolean): PeerCertificate | DetailedPeerCertificate = js.native
+  @JSName("getPeerCertificate")
+  def getPeerCertificate_PeerCertificate(): PeerCertificate = js.native
+  @JSName("getPeerCertificate")
+  def getPeerCertificate_false(detailed: nodeLib.nodeLibNumbers.`false`): PeerCertificate = js.native
   /**
     * Returns an object representing the peer's certificate.
     * The returned object has some properties corresponding to the field of the certificate.
@@ -68,10 +72,8 @@ class TLSSocket protected ()
     * @param detailed - If true; the full chain with issuer property will be returned.
     * @returns An object representing the peer's certificate.
     */
-  def getPeerCertificate(detailed: nodeLib.nodeLibNumbers.`true`): DetailedPeerCertificate = js.native
-  def getPeerCertificate(detailed: scala.Boolean): PeerCertificate | DetailedPeerCertificate = js.native
   @JSName("getPeerCertificate")
-  def getPeerCertificate_PeerCertificate(): PeerCertificate = js.native
+  def getPeerCertificate_true(detailed: nodeLib.nodeLibNumbers.`true`): DetailedPeerCertificate = js.native
   /**
     * Returns a string containing the negotiated SSL/TLS protocol version of the current connection.
     * The value `'unknown'` will be returned for connected sockets that have not completed the handshaking process.

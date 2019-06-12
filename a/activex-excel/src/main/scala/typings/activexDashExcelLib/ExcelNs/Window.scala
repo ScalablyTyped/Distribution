@@ -112,8 +112,16 @@ class Window protected () extends js.Object {
     Height: scala.Double,
     Start: scala.Boolean
   ): scala.Unit = js.native
-  def ScrollWorkbookTabs(Sheets: activexDashExcelLib.activexDashExcelLibNumbers.`0`, Position: Constants): js.Any = js.native
+  def ScrollWorkbookTabs(
+    Sheets: activexDashExcelLib.activexDashExcelLibNumbers.`0`,
+    Position: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): js.Any = js.native
   def ScrollWorkbookTabs(Sheets: scala.Double): js.Any = js.native
+  @JSName("ScrollWorkbookTabs")
+  def ScrollWorkbookTabs_0(
+    Sheets: activexDashExcelLib.activexDashExcelLibNumbers.`0`,
+    Position: activexDashExcelLib.activexDashExcelLibNumbers.`0`
+  ): js.Any = js.native
   def SelectedSheets(Indexes: stdLib.SafeArray[java.lang.String | scala.Double]): Sheets[Sheet] = js.native
   def SelectedSheets(Index: java.lang.String): Sheet = js.native
   def SelectedSheets(Index: scala.Double): Sheet = js.native

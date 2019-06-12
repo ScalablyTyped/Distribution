@@ -12,4 +12,5 @@ package object nouisliderMod {
     /* unencodedValues */ js.Array[scala.Double], 
     scala.Unit
   ]
+  type PipFilterResult = java.lang.String | scala.Double
 }

@@ -38,7 +38,8 @@ class Binary protected ()
   /**
     * Returns the value of this binary as a string or buffer
     */
-  def value(asRaw: adoneLib.adoneLibNumbers.`true`): nodeLib.Buffer = js.native
+  @JSName("value")
+  def value_true(asRaw: adoneLib.adoneLibNumbers.`true`): nodeLib.Buffer = js.native
   /**
     * Writes a buffer or string to the binary
     */

@@ -80,7 +80,7 @@ class Runner protected ()
   @JSName("addListener")
   def addListener_hook(event: mochaLib.mochaLibStrings.hook, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def `addListener_hook end`(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
+  def addListener_hookend(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_pass(event: mochaLib.mochaLibStrings.pass, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("addListener")
@@ -90,11 +90,11 @@ class Runner protected ()
   @JSName("addListener")
   def addListener_suite(event: mochaLib.mochaLibStrings.suite, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def `addListener_suite end`(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
+  def addListener_suiteend(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_test(event: mochaLib.mochaLibStrings.test, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def `addListener_test end`(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
+  def addListener_testend(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
   /**
@@ -111,7 +111,7 @@ class Runner protected ()
   @JSName("emit")
   def emit_hook(name: mochaLib.mochaLibStrings.hook, hook: Hook): scala.Boolean = js.native
   @JSName("emit")
-  def `emit_hook end`(name: mochaLib.mochaLibStrings.`hook end`, hook: Hook): scala.Boolean = js.native
+  def emit_hookend(name: mochaLib.mochaLibStrings.`hook end`, hook: Hook): scala.Boolean = js.native
   @JSName("emit")
   def emit_pass(name: mochaLib.mochaLibStrings.pass, test: Test): scala.Boolean = js.native
   @JSName("emit")
@@ -121,11 +121,11 @@ class Runner protected ()
   @JSName("emit")
   def emit_suite(name: mochaLib.mochaLibStrings.suite, suite: Suite): scala.Boolean = js.native
   @JSName("emit")
-  def `emit_suite end`(name: mochaLib.mochaLibStrings.`suite end`, suite: Suite): scala.Boolean = js.native
+  def emit_suiteend(name: mochaLib.mochaLibStrings.`suite end`, suite: Suite): scala.Boolean = js.native
   @JSName("emit")
   def emit_test(name: mochaLib.mochaLibStrings.test, test: Test): scala.Boolean = js.native
   @JSName("emit")
-  def `emit_test end`(name: mochaLib.mochaLibStrings.`test end`, test: Test): scala.Boolean = js.native
+  def emit_testend(name: mochaLib.mochaLibStrings.`test end`, test: Test): scala.Boolean = js.native
   @JSName("emit")
   def emit_waiting(name: mochaLib.mochaLibStrings.waiting, rootSuite: Suite): scala.Boolean = js.native
   /**
@@ -234,7 +234,7 @@ class Runner protected ()
   @JSName("on")
   def on_hook(event: mochaLib.mochaLibStrings.hook, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("on")
-  def `on_hook end`(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
+  def on_hookend(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_pass(event: mochaLib.mochaLibStrings.pass, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("on")
@@ -244,11 +244,11 @@ class Runner protected ()
   @JSName("on")
   def on_suite(event: mochaLib.mochaLibStrings.suite, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("on")
-  def `on_suite end`(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
+  def on_suiteend(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_test(event: mochaLib.mochaLibStrings.test, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("on")
-  def `on_test end`(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
+  def on_testend(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
   def once(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
@@ -262,7 +262,7 @@ class Runner protected ()
   @JSName("once")
   def once_hook(event: mochaLib.mochaLibStrings.hook, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("once")
-  def `once_hook end`(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
+  def once_hookend(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_pass(event: mochaLib.mochaLibStrings.pass, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("once")
@@ -272,11 +272,11 @@ class Runner protected ()
   @JSName("once")
   def once_suite(event: mochaLib.mochaLibStrings.suite, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("once")
-  def `once_suite end`(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
+  def once_suiteend(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_test(event: mochaLib.mochaLibStrings.test, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("once")
-  def `once_test end`(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
+  def once_testend(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
   /**
@@ -296,7 +296,7 @@ class Runner protected ()
   @JSName("prependListener")
   def prependListener_hook(event: mochaLib.mochaLibStrings.hook, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("prependListener")
-  def `prependListener_hook end`(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
+  def prependListener_hookend(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_pass(event: mochaLib.mochaLibStrings.pass, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("prependListener")
@@ -306,11 +306,11 @@ class Runner protected ()
   @JSName("prependListener")
   def prependListener_suite(event: mochaLib.mochaLibStrings.suite, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("prependListener")
-  def `prependListener_suite end`(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
+  def prependListener_suiteend(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_test(event: mochaLib.mochaLibStrings.test, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("prependListener")
-  def `prependListener_test end`(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
+  def prependListener_testend(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
   def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
@@ -324,7 +324,7 @@ class Runner protected ()
   @JSName("prependOnceListener")
   def prependOnceListener_hook(event: mochaLib.mochaLibStrings.hook, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def `prependOnceListener_hook end`(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
+  def prependOnceListener_hookend(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_pass(event: mochaLib.mochaLibStrings.pass, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -334,11 +334,11 @@ class Runner protected ()
   @JSName("prependOnceListener")
   def prependOnceListener_suite(event: mochaLib.mochaLibStrings.suite, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def `prependOnceListener_suite end`(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
+  def prependOnceListener_suiteend(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_test(event: mochaLib.mochaLibStrings.test, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def `prependOnceListener_test end`(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
+  def prependOnceListener_testend(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
   def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
@@ -352,7 +352,7 @@ class Runner protected ()
   @JSName("removeListener")
   def removeListener_hook(event: mochaLib.mochaLibStrings.hook, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_hook end`(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
+  def removeListener_hookend(event: mochaLib.mochaLibStrings.`hook end`, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_pass(event: mochaLib.mochaLibStrings.pass, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("removeListener")
@@ -362,11 +362,11 @@ class Runner protected ()
   @JSName("removeListener")
   def removeListener_suite(event: mochaLib.mochaLibStrings.suite, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_suite end`(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
+  def removeListener_suiteend(event: mochaLib.mochaLibStrings.`suite end`, listener: js.Function1[/* suite */ Suite, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_test(event: mochaLib.mochaLibStrings.test, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_test end`(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
+  def removeListener_testend(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
   /**

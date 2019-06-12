@@ -16,6 +16,8 @@ trait ParameterDeclaration
      with _HasJSDoc {
   var dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
   var initializer: js.UndefOr[Expression] = js.native
+  @JSName("kind")
+  var kind_ParameterDeclaration: typescriptLib.typescriptMod.SyntaxKind.Parameter = js.native
   @JSName("name")
   var name_ParameterDeclaration: BindingName = js.native
   @JSName("parent")

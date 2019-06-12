@@ -10,5 +10,8 @@ trait StringLiteral
   extends LiteralExpression
      with ModuleName
      with PropertyName
-     with StringLiteralLike
+     with StringLiteralLike {
+  @JSName("kind")
+  var kind_StringLiteral: typescriptLib.typescriptMod.SyntaxKind.StringLiteral = js.native
+}
 

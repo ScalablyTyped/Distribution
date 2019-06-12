@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 class Menu () extends js.Object {
   var items: js.Array[MenuItem] = js.native
   @JSName("addListener")
-  def `addListener_menu-will-close`(
+  def addListener_menuwillclose(
     event: electronLib.electronLibStrings.`menu-will-close`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_menu-will-show`(
+  def addListener_menuwillshow(
     event: electronLib.electronLibStrings.`menu-will-show`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -38,7 +38,7 @@ class Menu () extends js.Object {
     * Emitted when a popup is closed either manually or with menu.closePopup().
     */
   @JSName("on")
-  def `on_menu-will-close`(
+  def on_menuwillclose(
     event: electronLib.electronLibStrings.`menu-will-close`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -46,17 +46,17 @@ class Menu () extends js.Object {
     * Emitted when menu.popup() is called.
     */
   @JSName("on")
-  def `on_menu-will-show`(
+  def on_menuwillshow(
     event: electronLib.electronLibStrings.`menu-will-show`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_menu-will-close`(
+  def once_menuwillclose(
     event: electronLib.electronLibStrings.`menu-will-close`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_menu-will-show`(
+  def once_menuwillshow(
     event: electronLib.electronLibStrings.`menu-will-show`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -66,12 +66,12 @@ class Menu () extends js.Object {
   def popup(): scala.Unit = js.native
   def popup(options: PopupOptions): scala.Unit = js.native
   @JSName("removeListener")
-  def `removeListener_menu-will-close`(
+  def removeListener_menuwillclose(
     event: electronLib.electronLibStrings.`menu-will-close`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_menu-will-show`(
+  def removeListener_menuwillshow(
     event: electronLib.electronLibStrings.`menu-will-show`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native

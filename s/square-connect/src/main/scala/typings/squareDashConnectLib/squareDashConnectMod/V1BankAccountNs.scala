@@ -14,7 +14,7 @@ object V1BankAccountNs extends js.Object {
   @js.native
   object TypeEnum extends js.Object {
     @js.native
-    sealed trait BUSINESSCHECKING
+    sealed trait BUSINESS_CHECKING
       extends squareDashConnectLib.squareDashConnectMod.V1BankAccountNs.TypeEnum
     
     @js.native
@@ -37,7 +37,7 @@ object V1BankAccountNs extends js.Object {
     sealed trait SAVINGS
       extends squareDashConnectLib.squareDashConnectMod.V1BankAccountNs.TypeEnum
     
-    /* "BUSINESS_CHECKING" */ val BUSINESSCHECKING: BUSINESSCHECKING with java.lang.String = js.native
+    /* "BUSINESS_CHECKING" */ val BUSINESS_CHECKING: BUSINESS_CHECKING with java.lang.String = js.native
     /* "CHECKING" */ val CHECKING: CHECKING with java.lang.String = js.native
     /* "INVESTMENT" */ val INVESTMENT: INVESTMENT with java.lang.String = js.native
     /* "LOAN" */ val LOAN: LOAN with java.lang.String = js.native

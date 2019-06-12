@@ -31,8 +31,10 @@ object ^ extends js.Object {
   def getNumber(promptText: java.lang.String, opts: NumberOptions): scala.Double = js.native
   def getNumber(promptText: java.lang.String, opts: scala.Boolean): scala.Double = js.native
   def getYesNo(title: java.lang.String): scala.Boolean = js.native
-  def getYesNo(title: java.lang.String, flagAllowNoAnswer: cliDashInteractLib.cliDashInteractLibNumbers.`false`): scala.Boolean = js.native
-  def getYesNo(title: java.lang.String, flagAllowNoAnswer: cliDashInteractLib.cliDashInteractLibNumbers.`true`): js.UndefOr[scala.Boolean] = js.native
+  @JSName("getYesNo")
+  def getYesNo_false(title: java.lang.String, flagAllowNoAnswer: cliDashInteractLib.cliDashInteractLibNumbers.`false`): scala.Boolean = js.native
+  @JSName("getYesNo")
+  def getYesNo_true(title: java.lang.String, flagAllowNoAnswer: cliDashInteractLib.cliDashInteractLibNumbers.`true`): js.UndefOr[scala.Boolean] = js.native
   def question(prompt: java.lang.String): java.lang.String = js.native
   def question(prompt: java.lang.String, options: readlineDashSyncLib.readlineDashSyncMod.BasicOptions): java.lang.String = js.native
 }

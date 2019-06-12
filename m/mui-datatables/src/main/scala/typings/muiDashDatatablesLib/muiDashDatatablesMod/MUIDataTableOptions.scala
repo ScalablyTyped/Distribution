@@ -48,9 +48,7 @@ trait MUIDataTableOptions extends js.Object {
   var elevation: js.UndefOr[scala.Double] = js.undefined
   var expandableRows: js.UndefOr[scala.Boolean] = js.undefined
   var filter: js.UndefOr[scala.Boolean] = js.undefined
-  var filterType: js.UndefOr[
-    muiDashDatatablesLib.muiDashDatatablesLibStrings.dropdown | muiDashDatatablesLib.muiDashDatatablesLibStrings.checkbox | muiDashDatatablesLib.muiDashDatatablesLibStrings.multiselect | muiDashDatatablesLib.muiDashDatatablesLibStrings.textField
-  ] = js.undefined
+  var filterType: js.UndefOr[FilterType] = js.undefined
   var fixedHeader: js.UndefOr[scala.Boolean] = js.undefined
   var isRowSelectable: js.UndefOr[js.Function1[/* dataIndex */ scala.Double, scala.Boolean]] = js.undefined
   var onCellClick: js.UndefOr[
@@ -102,15 +100,13 @@ trait MUIDataTableOptions extends js.Object {
     ]
   ] = js.undefined
   var resizableColumns: js.UndefOr[scala.Boolean] = js.undefined
-  var responsive: js.UndefOr[
-    muiDashDatatablesLib.muiDashDatatablesLibStrings.stacked | muiDashDatatablesLib.muiDashDatatablesLibStrings.scroll
-  ] = js.undefined
+  var responsive: js.UndefOr[Responsive] = js.undefined
   var rowHover: js.UndefOr[scala.Boolean] = js.undefined
   var rowsPerPage: js.UndefOr[scala.Double] = js.undefined
   var rowsPerPageOptions: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var rowsSelected: js.UndefOr[js.Array[_]] = js.undefined
   var search: js.UndefOr[scala.Boolean] = js.undefined
-  var selectableRows: js.UndefOr[scala.Boolean] = js.undefined
+  var selectableRows: js.UndefOr[SelectableRows] = js.undefined
   var serverSide: js.UndefOr[scala.Boolean] = js.undefined
   var setRowProps: js.UndefOr[js.Function2[/* row */ js.Array[_], /* rowIndex */ scala.Double, js.Object]] = js.undefined
   var sort: js.UndefOr[scala.Boolean] = js.undefined
@@ -134,7 +130,7 @@ object MUIDataTableOptions {
     elevation: scala.Int | scala.Double = null,
     expandableRows: js.UndefOr[scala.Boolean] = js.undefined,
     filter: js.UndefOr[scala.Boolean] = js.undefined,
-    filterType: muiDashDatatablesLib.muiDashDatatablesLibStrings.dropdown | muiDashDatatablesLib.muiDashDatatablesLibStrings.checkbox | muiDashDatatablesLib.muiDashDatatablesLibStrings.multiselect | muiDashDatatablesLib.muiDashDatatablesLibStrings.textField = null,
+    filterType: FilterType = null,
     fixedHeader: js.UndefOr[scala.Boolean] = js.undefined,
     isRowSelectable: /* dataIndex */ scala.Double => scala.Boolean = null,
     onCellClick: (/* colData */ js.Any, /* cellMeta */ muiDashDatatablesLib.Anon_ColIndex) => scala.Unit = null,
@@ -154,13 +150,13 @@ object MUIDataTableOptions {
     print: js.UndefOr[scala.Boolean] = js.undefined,
     renderExpandableRow: (/* rowData */ js.Array[java.lang.String], /* rowMeta */ muiDashDatatablesLib.Anon_DataIndexRowIndex) => reactLib.reactMod.ReactNode = null,
     resizableColumns: js.UndefOr[scala.Boolean] = js.undefined,
-    responsive: muiDashDatatablesLib.muiDashDatatablesLibStrings.stacked | muiDashDatatablesLib.muiDashDatatablesLibStrings.scroll = null,
+    responsive: Responsive = null,
     rowHover: js.UndefOr[scala.Boolean] = js.undefined,
     rowsPerPage: scala.Int | scala.Double = null,
     rowsPerPageOptions: js.Array[scala.Double] = null,
     rowsSelected: js.Array[_] = null,
     search: js.UndefOr[scala.Boolean] = js.undefined,
-    selectableRows: js.UndefOr[scala.Boolean] = js.undefined,
+    selectableRows: SelectableRows = null,
     serverSide: js.UndefOr[scala.Boolean] = js.undefined,
     setRowProps: (/* row */ js.Array[_], /* rowIndex */ scala.Double) => js.Object = null,
     sort: js.UndefOr[scala.Boolean] = js.undefined,
@@ -181,7 +177,7 @@ object MUIDataTableOptions {
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
     if (!js.isUndefined(expandableRows)) __obj.updateDynamic("expandableRows")(expandableRows)
     if (!js.isUndefined(filter)) __obj.updateDynamic("filter")(filter)
-    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
     if (!js.isUndefined(fixedHeader)) __obj.updateDynamic("fixedHeader")(fixedHeader)
     if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(js.Any.fromFunction1(isRowSelectable))
     if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction2(onCellClick))
@@ -201,13 +197,13 @@ object MUIDataTableOptions {
     if (!js.isUndefined(print)) __obj.updateDynamic("print")(print)
     if (renderExpandableRow != null) __obj.updateDynamic("renderExpandableRow")(js.Any.fromFunction2(renderExpandableRow))
     if (!js.isUndefined(resizableColumns)) __obj.updateDynamic("resizableColumns")(resizableColumns)
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (responsive != null) __obj.updateDynamic("responsive")(responsive)
     if (!js.isUndefined(rowHover)) __obj.updateDynamic("rowHover")(rowHover)
     if (rowsPerPage != null) __obj.updateDynamic("rowsPerPage")(rowsPerPage.asInstanceOf[js.Any])
     if (rowsPerPageOptions != null) __obj.updateDynamic("rowsPerPageOptions")(rowsPerPageOptions)
     if (rowsSelected != null) __obj.updateDynamic("rowsSelected")(rowsSelected)
     if (!js.isUndefined(search)) __obj.updateDynamic("search")(search)
-    if (!js.isUndefined(selectableRows)) __obj.updateDynamic("selectableRows")(selectableRows)
+    if (selectableRows != null) __obj.updateDynamic("selectableRows")(selectableRows)
     if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide)
     if (setRowProps != null) __obj.updateDynamic("setRowProps")(js.Any.fromFunction2(setRowProps))
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)

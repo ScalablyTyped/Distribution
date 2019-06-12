@@ -124,21 +124,31 @@ trait Static extends js.Object {
     */
   def ap[T, U](fns: js.Array[js.Function1[/* a */ T, U]], vs: js.Array[T]): js.Array[U] = js.native
   def aperture(n: scala.Double): js.Function1[/* list */ js.Array[_], js.Array[js.Array[_]]] = js.native
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`10`, list: js.Array[T]): js.Array[js.Tuple10[T, T, T, T, T, T, T, T, T, T]] = js.native
+  def aperture[T](n: scala.Double, list: js.Array[T]): js.Array[js.Array[T]] = js.native
   /**
     * Returns a new list, composed of n-tuples of consecutive elements If n is greater than the length of the list,
     * an empty list is returned.
     */
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`1`, list: js.Array[T]): js.Array[js.Array[T]] = js.native
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`2`, list: js.Array[T]): js.Array[js.Tuple2[T, T]] = js.native
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`3`, list: js.Array[T]): js.Array[js.Tuple3[T, T, T]] = js.native
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`4`, list: js.Array[T]): js.Array[js.Tuple4[T, T, T, T]] = js.native
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`5`, list: js.Array[T]): js.Array[js.Tuple5[T, T, T, T, T]] = js.native
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`6`, list: js.Array[T]): js.Array[js.Tuple6[T, T, T, T, T, T]] = js.native
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`7`, list: js.Array[T]): js.Array[js.Tuple7[T, T, T, T, T, T, T]] = js.native
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`8`, list: js.Array[T]): js.Array[js.Tuple8[T, T, T, T, T, T, T, T]] = js.native
-  def aperture[T](n: ramdaLib.ramdaLibNumbers.`9`, list: js.Array[T]): js.Array[js.Tuple9[T, T, T, T, T, T, T, T, T]] = js.native
-  def aperture[T](n: scala.Double, list: js.Array[T]): js.Array[js.Array[T]] = js.native
+  @JSName("aperture")
+  def aperture_1[T](n: ramdaLib.ramdaLibNumbers.`1`, list: js.Array[T]): js.Array[js.Array[T]] = js.native
+  @JSName("aperture")
+  def aperture_10[T](n: ramdaLib.ramdaLibNumbers.`10`, list: js.Array[T]): js.Array[js.Tuple10[T, T, T, T, T, T, T, T, T, T]] = js.native
+  @JSName("aperture")
+  def aperture_2[T](n: ramdaLib.ramdaLibNumbers.`2`, list: js.Array[T]): js.Array[js.Tuple2[T, T]] = js.native
+  @JSName("aperture")
+  def aperture_3[T](n: ramdaLib.ramdaLibNumbers.`3`, list: js.Array[T]): js.Array[js.Tuple3[T, T, T]] = js.native
+  @JSName("aperture")
+  def aperture_4[T](n: ramdaLib.ramdaLibNumbers.`4`, list: js.Array[T]): js.Array[js.Tuple4[T, T, T, T]] = js.native
+  @JSName("aperture")
+  def aperture_5[T](n: ramdaLib.ramdaLibNumbers.`5`, list: js.Array[T]): js.Array[js.Tuple5[T, T, T, T, T]] = js.native
+  @JSName("aperture")
+  def aperture_6[T](n: ramdaLib.ramdaLibNumbers.`6`, list: js.Array[T]): js.Array[js.Tuple6[T, T, T, T, T, T]] = js.native
+  @JSName("aperture")
+  def aperture_7[T](n: ramdaLib.ramdaLibNumbers.`7`, list: js.Array[T]): js.Array[js.Tuple7[T, T, T, T, T, T, T]] = js.native
+  @JSName("aperture")
+  def aperture_8[T](n: ramdaLib.ramdaLibNumbers.`8`, list: js.Array[T]): js.Array[js.Tuple8[T, T, T, T, T, T, T, T]] = js.native
+  @JSName("aperture")
+  def aperture_9[T](n: ramdaLib.ramdaLibNumbers.`9`, list: js.Array[T]): js.Array[js.Tuple9[T, T, T, T, T, T, T, T, T]] = js.native
   def append[T](el: T): js.Function1[/* list */ js.Array[_], js.Array[_]] = js.native
   /**
     * Returns a new list containing the contents of the given list, followed by the given element.
@@ -2341,13 +2351,15 @@ trait Static extends js.Object {
     * Returns a function of arity n from a (manually) curried function.
     */
   def uncurryN[T](len: scala.Double, fn: js.Function1[/* a */ js.Any, _]): js.Function1[/* repeated */ js.Any, T] = js.native
-  def unfold[T, TResult](fn: js.Function1[/* seed */ T, (js.Tuple2[TResult, T]) | ramdaLib.ramdaLibNumbers.`false`]): js.Function1[/* seed */ T, js.Array[TResult]] = js.native
+  @JSName("unfold")
+  def unfold_false[T, TResult](fn: js.Function1[/* seed */ T, (js.Tuple2[TResult, T]) | ramdaLib.ramdaLibNumbers.`false`]): js.Function1[/* seed */ T, js.Array[TResult]] = js.native
   /**
     * Builds a list from a seed value. Accepts an iterator function, which returns either false
     * to stop iteration or an array of length 2 containing the value to add to the resulting
     * list and the seed to be used in the next call to the iterator function.
     */
-  def unfold[T, TResult](
+  @JSName("unfold")
+  def unfold_false[T, TResult](
     fn: js.Function1[/* seed */ T, (js.Tuple2[TResult, T]) | ramdaLib.ramdaLibNumbers.`false`],
     seed: T
   ): js.Array[TResult] = js.native

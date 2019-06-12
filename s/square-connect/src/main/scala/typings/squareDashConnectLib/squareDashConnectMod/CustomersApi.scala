@@ -20,8 +20,9 @@ class CustomersApi () extends js.Object {
     */
   def createCustomerCard(params: CreateCustomerCardRequest): js.Promise[CreateCustomerCardResponse] = js.native
   /**
-    * Deletes a customer from a business, along with any linked cards on file. When two profiles are merged into a single profile,
-    * that profile is assigned a new `customer_id`. You must use the new `customer_id` to delete merged profiles.
+    * Deletes a customer from a business, along with any linked cards on file.
+    * When two profiles are merged into a single profile, that profile is assigned a new `customer_id`.
+    * You must use the new `customer_id` to delete merged profiles.
     */
   def deleteCustomer(params: DeleteCustomerRequest): js.Promise[DeleteCustomerResponse] = js.native
   /**

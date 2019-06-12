@@ -1039,7 +1039,7 @@ trait ojValidationGroup
   ): scala.Unit = js.native
   def focusOn(): scala.Unit = js.native
   @JSName("focusOn")
-  def `focusOn_@firstInvalidShown`(key: atOracleOraclejetLib.atOracleOraclejetLibStrings.`@firstInvalidShown`): scala.Unit = js.native
+  def focusOn_firstInvalidShown(key: atOracleOraclejetLib.atOracleOraclejetLibStrings.`@firstInvalidShown`): scala.Unit = js.native
   def getProperty(property: java.lang.String): js.Any = js.native
   @JSName("getProperty")
   def getProperty_valid(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid): atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown = js.native

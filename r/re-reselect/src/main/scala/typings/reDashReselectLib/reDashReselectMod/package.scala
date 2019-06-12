@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reDashReselectMod {
+  type $Values[T] = /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
   type KeySelector[S] = js.Function2[/* state */ S, /* repeated */ js.Any, js.Any]
   type ObjectCacheKey = java.lang.String | scala.Double
   type OutputCachedSelector[S, R, C, D] = js.Function2[

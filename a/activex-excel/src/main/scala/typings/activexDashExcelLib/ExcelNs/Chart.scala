@@ -232,6 +232,8 @@ class Chart protected () extends Sheet {
   def ListBoxes(Index: js.Any): js.Any = js.native
   def Location(Where: XlChartLocation): Chart = js.native
   def Location(Where: XlChartLocation, Name: java.lang.String): Chart = js.native
+  @JSName("Location")
+  def Location_2(Where: activexDashExcelLib.activexDashExcelLibNumbers.`2`, Name: java.lang.String): Chart = js.native
   def Move(): scala.Unit = js.native
   def Move(Before: Sheet): scala.Unit = js.native
   def Move(Before: Sheet, After: Sheet): scala.Unit = js.native
@@ -243,7 +245,12 @@ class Chart protected () extends Sheet {
   def Ovals(): js.Any = js.native
   def Ovals(Index: js.Any): js.Any = js.native
   def Paste(): scala.Unit = js.native
-  def Paste(Type: XlPasteType): scala.Unit = js.native
+  @JSName("Paste")
+  def Paste_4104(Type: activexDashExcelLib.activexDashExcelLibNumbers.`-4104`): scala.Unit = js.native
+  @JSName("Paste")
+  def Paste_4122(Type: activexDashExcelLib.activexDashExcelLibNumbers.`-4122`): scala.Unit = js.native
+  @JSName("Paste")
+  def Paste_4123(Type: activexDashExcelLib.activexDashExcelLibNumbers.`-4123`): scala.Unit = js.native
   def Pictures(): js.Any = js.native
   def Pictures(Index: js.Any): js.Any = js.native
   def PieGroups(): js.Any = js.native
@@ -265,13 +272,15 @@ class Chart protected () extends Sheet {
   def Protect(Password: java.lang.String): scala.Unit = js.native
   def Protect(Password: java.lang.String, DrawingObjects: scala.Boolean): scala.Unit = js.native
   def Protect(Password: java.lang.String, DrawingObjects: scala.Boolean, Contents: scala.Boolean): scala.Unit = js.native
-  def Protect(
+  @JSName("Protect")
+  def Protect_false(
     Password: java.lang.String,
     DrawingObjects: scala.Boolean,
     Contents: scala.Boolean,
     Scenarios: activexDashExcelLib.activexDashExcelLibNumbers.`false`
   ): scala.Unit = js.native
-  def Protect(
+  @JSName("Protect")
+  def Protect_false(
     Password: java.lang.String,
     DrawingObjects: scala.Boolean,
     Contents: scala.Boolean,

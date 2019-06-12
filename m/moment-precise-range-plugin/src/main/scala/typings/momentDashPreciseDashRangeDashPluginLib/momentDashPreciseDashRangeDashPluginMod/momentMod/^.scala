@@ -9,12 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def preciseDiff(d1: Moment, d2: Moment): java.lang.String = js.native
-  def preciseDiff(
+  @JSName("preciseDiff")
+  def preciseDiff_false(
     d1: Moment,
     d2: Moment,
     returnValueObject: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginLibNumbers.`false`
   ): java.lang.String = js.native
-  def preciseDiff(
+  @JSName("preciseDiff")
+  def preciseDiff_true(
     d1: Moment,
     d2: Moment,
     returnValueObject: momentDashPreciseDashRangeDashPluginLib.momentDashPreciseDashRangeDashPluginLibNumbers.`true`

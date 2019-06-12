@@ -24,35 +24,35 @@ object ScreenOrientationNs extends js.Object {
   @JSName("allowAsync")
   def allowAsync_ALL(orientation: expoLib.expoLibStrings.ALL): scala.Unit = js.native
   @JSName("allowAsync")
-  def allowAsync_ALL_BUT_UPSIDE_DOWN(orientation: expoLib.expoLibStrings.ALL_BUT_UPSIDE_DOWN): scala.Unit = js.native
+  def allowAsync_ALLBUTUPSIDEDOWN(orientation: expoLib.expoLibStrings.ALL_BUT_UPSIDE_DOWN): scala.Unit = js.native
   @JSName("allowAsync")
   def allowAsync_LANDSCAPE(orientation: expoLib.expoLibStrings.LANDSCAPE): scala.Unit = js.native
   @JSName("allowAsync")
-  def allowAsync_LANDSCAPE_LEFT(orientation: expoLib.expoLibStrings.LANDSCAPE_LEFT): scala.Unit = js.native
+  def allowAsync_LANDSCAPELEFT(orientation: expoLib.expoLibStrings.LANDSCAPE_LEFT): scala.Unit = js.native
   @JSName("allowAsync")
-  def allowAsync_LANDSCAPE_RIGHT(orientation: expoLib.expoLibStrings.LANDSCAPE_RIGHT): scala.Unit = js.native
+  def allowAsync_LANDSCAPERIGHT(orientation: expoLib.expoLibStrings.LANDSCAPE_RIGHT): scala.Unit = js.native
   @JSName("allowAsync")
   def allowAsync_PORTRAIT(orientation: expoLib.expoLibStrings.PORTRAIT): scala.Unit = js.native
   @JSName("allowAsync")
-  def allowAsync_PORTRAIT_DOWN(orientation: expoLib.expoLibStrings.PORTRAIT_DOWN): scala.Unit = js.native
+  def allowAsync_PORTRAITDOWN(orientation: expoLib.expoLibStrings.PORTRAIT_DOWN): scala.Unit = js.native
   @JSName("allowAsync")
-  def allowAsync_PORTRAIT_UP(orientation: expoLib.expoLibStrings.PORTRAIT_UP): scala.Unit = js.native
+  def allowAsync_PORTRAITUP(orientation: expoLib.expoLibStrings.PORTRAIT_UP): scala.Unit = js.native
   /** Deprecated in favour of ScreenOrientation.allowAsync. */
   @JSName("allow")
   def allow_ALL(orientation: expoLib.expoLibStrings.ALL): scala.Unit = js.native
   @JSName("allow")
-  def allow_ALL_BUT_UPSIDE_DOWN(orientation: expoLib.expoLibStrings.ALL_BUT_UPSIDE_DOWN): scala.Unit = js.native
+  def allow_ALLBUTUPSIDEDOWN(orientation: expoLib.expoLibStrings.ALL_BUT_UPSIDE_DOWN): scala.Unit = js.native
   @JSName("allow")
   def allow_LANDSCAPE(orientation: expoLib.expoLibStrings.LANDSCAPE): scala.Unit = js.native
   @JSName("allow")
-  def allow_LANDSCAPE_LEFT(orientation: expoLib.expoLibStrings.LANDSCAPE_LEFT): scala.Unit = js.native
+  def allow_LANDSCAPELEFT(orientation: expoLib.expoLibStrings.LANDSCAPE_LEFT): scala.Unit = js.native
   @JSName("allow")
-  def allow_LANDSCAPE_RIGHT(orientation: expoLib.expoLibStrings.LANDSCAPE_RIGHT): scala.Unit = js.native
+  def allow_LANDSCAPERIGHT(orientation: expoLib.expoLibStrings.LANDSCAPE_RIGHT): scala.Unit = js.native
   @JSName("allow")
   def allow_PORTRAIT(orientation: expoLib.expoLibStrings.PORTRAIT): scala.Unit = js.native
   @JSName("allow")
-  def allow_PORTRAIT_DOWN(orientation: expoLib.expoLibStrings.PORTRAIT_DOWN): scala.Unit = js.native
+  def allow_PORTRAITDOWN(orientation: expoLib.expoLibStrings.PORTRAIT_DOWN): scala.Unit = js.native
   @JSName("allow")
-  def allow_PORTRAIT_UP(orientation: expoLib.expoLibStrings.PORTRAIT_UP): scala.Unit = js.native
+  def allow_PORTRAITUP(orientation: expoLib.expoLibStrings.PORTRAIT_UP): scala.Unit = js.native
 }
 

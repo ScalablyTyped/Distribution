@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait Redaction extends js.Object {
   var FindText: java.lang.String
-  var FindTextAction: EnumDWT_OCRFindTextAction
-  var FindTextFlags: EnumDWT_OCRFindTextFlags
+  var FindTextAction: dwtLib.EnumDWT_OCRFindTextAction.OCRFT_MARKFORREDACT
+  var FindTextFlags: dwtLib.EnumDWT_OCRFindTextFlags.OCRFT_WHOLEWORD
 }
 
 object Redaction {
   @scala.inline
   def apply(
     FindText: java.lang.String,
-    FindTextAction: EnumDWT_OCRFindTextAction,
-    FindTextFlags: EnumDWT_OCRFindTextFlags
+    FindTextAction: dwtLib.EnumDWT_OCRFindTextAction.OCRFT_MARKFORREDACT,
+    FindTextFlags: dwtLib.EnumDWT_OCRFindTextFlags.OCRFT_WHOLEWORD
   ): Redaction = {
     val __obj = js.Dynamic.literal(FindText = FindText, FindTextAction = FindTextAction, FindTextFlags = FindTextFlags)
   

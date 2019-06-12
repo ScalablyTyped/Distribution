@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait TryStatement extends Statement {
   var catchClause: js.UndefOr[CatchClause] = js.native
   var finallyBlock: js.UndefOr[Block] = js.native
+  @JSName("kind")
+  var kind_TryStatement: typescriptLib.typescriptMod.SyntaxKind.TryStatement = js.native
   var tryBlock: Block = js.native
 }
 

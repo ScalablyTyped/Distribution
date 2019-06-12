@@ -14,14 +14,30 @@ trait PivotCaches extends js.Object {
   def apply(Index: scala.Double): PivotCache = js.native
   def Add(SourceType: XlPivotTableSourceType): PivotCache = js.native
   def Add(SourceType: XlPivotTableSourceType, SourceData: js.Any): PivotCache = js.native
-  def Create(SourceType: XlPivotTableSourceType, SourceData: WorkbookConnection): PivotCache = js.native
-  def Create(
-    SourceType: XlPivotTableSourceType,
+  @JSName("Create")
+  def Create_1(SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`1`, SourceData: java.lang.String): PivotCache = js.native
+  @JSName("Create")
+  def Create_1(
+    SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    SourceData: java.lang.String,
+    Version: XlPivotTableVersionList
+  ): PivotCache = js.native
+  @JSName("Create")
+  def Create_2(SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`2`, SourceData: WorkbookConnection): PivotCache = js.native
+  @JSName("Create")
+  def Create_2(
+    SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
     SourceData: WorkbookConnection,
     Version: XlPivotTableVersionList
   ): PivotCache = js.native
-  def Create(SourceType: XlPivotTableSourceType, SourceData: java.lang.String): PivotCache = js.native
-  def Create(SourceType: XlPivotTableSourceType, SourceData: java.lang.String, Version: XlPivotTableVersionList): PivotCache = js.native
+  @JSName("Create")
+  def Create_3(SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`3`, SourceData: java.lang.String): PivotCache = js.native
+  @JSName("Create")
+  def Create_3(
+    SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`3`,
+    SourceData: java.lang.String,
+    Version: XlPivotTableVersionList
+  ): PivotCache = js.native
   def Item(Index: scala.Double): PivotCache = js.native
   def _Default(Index: js.Any): PivotCache = js.native
 }

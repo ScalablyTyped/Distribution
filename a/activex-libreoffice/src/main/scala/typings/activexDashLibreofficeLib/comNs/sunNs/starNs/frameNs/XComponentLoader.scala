@@ -31,28 +31,28 @@ trait XComponentLoader
     Arguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent = js.native
   @JSName("loadComponentFromURL")
-  def `loadComponentFromURL_private:factory/scalc`(
+  def loadComponentFromURL_privatefactoryscalc(
     URL: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.`private:factory/scalc`,
     TargetFrameName: java.lang.String,
     SearchFlags: scala.Double,
     Arguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.SpreadsheetDocument = js.native
   @JSName("loadComponentFromURL")
-  def `loadComponentFromURL_private:factory/sdraw`(
+  def loadComponentFromURL_privatefactorysdraw(
     URL: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.`private:factory/sdraw`,
     TargetFrameName: java.lang.String,
     SearchFlags: scala.Double,
     Arguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.DrawingDocument = js.native
   @JSName("loadComponentFromURL")
-  def `loadComponentFromURL_private:factory/simpress`(
+  def loadComponentFromURL_privatefactorysimpress(
     URL: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.`private:factory/simpress`,
     TargetFrameName: java.lang.String,
     SearchFlags: scala.Double,
     Arguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.presentationNs.PresentationDocument = js.native
   @JSName("loadComponentFromURL")
-  def `loadComponentFromURL_private:factory/swriter`(
+  def loadComponentFromURL_privatefactoryswriter(
     URL: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.`private:factory/swriter`,
     TargetFrameName: java.lang.String,
     SearchFlags: scala.Double,

@@ -55,19 +55,23 @@ trait ParcelBundler extends js.Object {
   ): scala.Unit = js.native
   def serve(): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
   def serve(port: scala.Double): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
-  def serve(port: scala.Double, https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false`): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
-  def serve(
+  def serve(port: scala.Double, https: HttpsOptions): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
+  def serve(port: scala.Double, https: HttpsOptions, host: java.lang.String): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
+  @JSName("serve")
+  def serve_false(port: scala.Double, https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false`): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
+  @JSName("serve")
+  def serve_false(
     port: scala.Double,
     https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false`,
     host: java.lang.String
   ): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
-  def serve(port: scala.Double, https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true`): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
-  def serve(
+  @JSName("serve")
+  def serve_true(port: scala.Double, https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true`): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
+  @JSName("serve")
+  def serve_true(
     port: scala.Double,
     https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true`,
     host: java.lang.String
   ): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
-  def serve(port: scala.Double, https: HttpsOptions): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
-  def serve(port: scala.Double, https: HttpsOptions, host: java.lang.String): js.Promise[nodeLib.httpMod.Server | nodeLib.httpsMod.Server] = js.native
 }
 

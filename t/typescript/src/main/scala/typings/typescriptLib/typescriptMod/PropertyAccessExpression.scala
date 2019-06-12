@@ -12,6 +12,8 @@ trait PropertyAccessExpression
      with BindingOrAssignmentElementTarget
      with _BindingOrAssignmentElement {
   var expression: LeftHandSideExpression = js.native
+  @JSName("kind")
+  var kind_PropertyAccessExpression: typescriptLib.typescriptMod.SyntaxKind.PropertyAccessExpression = js.native
   var name: js.UndefOr[DeclarationName | Identifier] = js.native
 }
 

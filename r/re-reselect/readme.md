@@ -1,7 +1,7 @@
 
 # Scala.js typings for re-reselect
 
-Typings are for version 3.1.0
+Typings are for version 3.2.0
 
 ## Library description:
 Enhance Reselect selectors with deeper memoization and cache management

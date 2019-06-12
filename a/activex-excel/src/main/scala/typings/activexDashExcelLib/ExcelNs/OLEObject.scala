@@ -26,7 +26,7 @@ class OLEObject protected () extends js.Object {
   var ListFillRange: java.lang.String = js.native
   var Locked: scala.Boolean = js.native
   var Name: java.lang.String = js.native
-  val OLEType: XlOLEType = js.native
+  val OLEType: activexDashExcelLib.activexDashExcelLibNumbers.`0` | activexDashExcelLib.activexDashExcelLibNumbers.`1` = js.native
   val Object: js.Any = js.native
   var OnAction: java.lang.String = js.native
   val Parent: js.Any = js.native

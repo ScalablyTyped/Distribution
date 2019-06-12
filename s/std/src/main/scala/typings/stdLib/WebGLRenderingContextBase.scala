@@ -418,49 +418,49 @@ trait WebGLRenderingContextBase extends js.Object {
   def getError(): GLenum = js.native
   def getExtension(extensionName: java.lang.String): js.Any = js.native
   @JSName("getExtension")
-  def getExtension_ANGLE_instanced_arrays(extensionName: stdLib.stdLibStrings.ANGLE_instanced_arrays): ANGLE_instanced_arrays | scala.Null = js.native
+  def getExtension_ANGLEinstancedarrays(extensionName: stdLib.stdLibStrings.ANGLE_instanced_arrays): ANGLE_instanced_arrays | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_EXT_blend_minmax(extensionName: stdLib.stdLibStrings.EXT_blend_minmax): EXT_blend_minmax | scala.Null = js.native
+  def getExtension_EXTblendminmax(extensionName: stdLib.stdLibStrings.EXT_blend_minmax): EXT_blend_minmax | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_EXT_frag_depth(extensionName: stdLib.stdLibStrings.EXT_frag_depth): EXT_frag_depth | scala.Null = js.native
+  def getExtension_EXTfragdepth(extensionName: stdLib.stdLibStrings.EXT_frag_depth): EXT_frag_depth | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_EXT_sRGB(extensionName: stdLib.stdLibStrings.EXT_sRGB): EXT_sRGB | scala.Null = js.native
+  def getExtension_EXTsRGB(extensionName: stdLib.stdLibStrings.EXT_sRGB): EXT_sRGB | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_EXT_shader_texture_lod(extensionName: stdLib.stdLibStrings.EXT_shader_texture_lod): EXT_shader_texture_lod | scala.Null = js.native
+  def getExtension_EXTshadertexturelod(extensionName: stdLib.stdLibStrings.EXT_shader_texture_lod): EXT_shader_texture_lod | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_EXT_texture_filter_anisotropic(extensionName: stdLib.stdLibStrings.EXT_texture_filter_anisotropic): EXT_texture_filter_anisotropic | scala.Null = js.native
+  def getExtension_EXTtexturefilteranisotropic(extensionName: stdLib.stdLibStrings.EXT_texture_filter_anisotropic): EXT_texture_filter_anisotropic | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_OES_element_index_uint(extensionName: stdLib.stdLibStrings.OES_element_index_uint): OES_element_index_uint | scala.Null = js.native
+  def getExtension_OESelementindexuint(extensionName: stdLib.stdLibStrings.OES_element_index_uint): OES_element_index_uint | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_OES_standard_derivatives(extensionName: stdLib.stdLibStrings.OES_standard_derivatives): OES_standard_derivatives | scala.Null = js.native
+  def getExtension_OESstandardderivatives(extensionName: stdLib.stdLibStrings.OES_standard_derivatives): OES_standard_derivatives | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_OES_texture_float(extensionName: stdLib.stdLibStrings.OES_texture_float): OES_texture_float | scala.Null = js.native
+  def getExtension_OEStexturefloat(extensionName: stdLib.stdLibStrings.OES_texture_float): OES_texture_float | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_OES_texture_float_linear(extensionName: stdLib.stdLibStrings.OES_texture_float_linear): OES_texture_float_linear | scala.Null = js.native
+  def getExtension_OEStexturefloatlinear(extensionName: stdLib.stdLibStrings.OES_texture_float_linear): OES_texture_float_linear | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_OES_texture_half_float(extensionName: stdLib.stdLibStrings.OES_texture_half_float): OES_texture_half_float | scala.Null = js.native
+  def getExtension_OEStexturehalffloat(extensionName: stdLib.stdLibStrings.OES_texture_half_float): OES_texture_half_float | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_OES_texture_half_float_linear(extensionName: stdLib.stdLibStrings.OES_texture_half_float_linear): OES_texture_half_float_linear | scala.Null = js.native
+  def getExtension_OEStexturehalffloatlinear(extensionName: stdLib.stdLibStrings.OES_texture_half_float_linear): OES_texture_half_float_linear | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_OES_vertex_array_object(extensionName: stdLib.stdLibStrings.OES_vertex_array_object): OES_vertex_array_object | scala.Null = js.native
+  def getExtension_OESvertexarrayobject(extensionName: stdLib.stdLibStrings.OES_vertex_array_object): OES_vertex_array_object | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGL_color_buffer_float(extensionName: stdLib.stdLibStrings.WEBGL_color_buffer_float): WEBGL_color_buffer_float | scala.Null = js.native
+  def getExtension_WEBGLcolorbufferfloat(extensionName: stdLib.stdLibStrings.WEBGL_color_buffer_float): WEBGL_color_buffer_float | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGL_compressed_texture_astc(extensionName: stdLib.stdLibStrings.WEBGL_compressed_texture_astc): WEBGL_compressed_texture_astc | scala.Null = js.native
+  def getExtension_WEBGLcompressedtextureastc(extensionName: stdLib.stdLibStrings.WEBGL_compressed_texture_astc): WEBGL_compressed_texture_astc | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGL_compressed_texture_s3tc(extensionName: stdLib.stdLibStrings.WEBGL_compressed_texture_s3tc): WEBGL_compressed_texture_s3tc | scala.Null = js.native
+  def getExtension_WEBGLcompressedtextures3tc(extensionName: stdLib.stdLibStrings.WEBGL_compressed_texture_s3tc): WEBGL_compressed_texture_s3tc | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGL_compressed_texture_s3tc_srgb(extensionName: stdLib.stdLibStrings.WEBGL_compressed_texture_s3tc_srgb): WEBGL_compressed_texture_s3tc_srgb | scala.Null = js.native
+  def getExtension_WEBGLcompressedtextures3tcsrgb(extensionName: stdLib.stdLibStrings.WEBGL_compressed_texture_s3tc_srgb): WEBGL_compressed_texture_s3tc_srgb | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGL_debug_renderer_info(extensionName: stdLib.stdLibStrings.WEBGL_debug_renderer_info): WEBGL_debug_renderer_info | scala.Null = js.native
+  def getExtension_WEBGLdebugrendererinfo(extensionName: stdLib.stdLibStrings.WEBGL_debug_renderer_info): WEBGL_debug_renderer_info | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGL_debug_shaders(extensionName: stdLib.stdLibStrings.WEBGL_debug_shaders): WEBGL_debug_shaders | scala.Null = js.native
+  def getExtension_WEBGLdebugshaders(extensionName: stdLib.stdLibStrings.WEBGL_debug_shaders): WEBGL_debug_shaders | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGL_depth_texture(extensionName: stdLib.stdLibStrings.WEBGL_depth_texture): WEBGL_depth_texture | scala.Null = js.native
+  def getExtension_WEBGLdepthtexture(extensionName: stdLib.stdLibStrings.WEBGL_depth_texture): WEBGL_depth_texture | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGL_draw_buffers(extensionName: stdLib.stdLibStrings.WEBGL_draw_buffers): WEBGL_draw_buffers | scala.Null = js.native
+  def getExtension_WEBGLdrawbuffers(extensionName: stdLib.stdLibStrings.WEBGL_draw_buffers): WEBGL_draw_buffers | scala.Null = js.native
   @JSName("getExtension")
-  def getExtension_WEBGL_lose_context(extensionName: stdLib.stdLibStrings.WEBGL_lose_context): WEBGL_lose_context | scala.Null = js.native
+  def getExtension_WEBGLlosecontext(extensionName: stdLib.stdLibStrings.WEBGL_lose_context): WEBGL_lose_context | scala.Null = js.native
   def getFramebufferAttachmentParameter(target: GLenum, attachment: GLenum, pname: GLenum): js.Any = js.native
   def getParameter(pname: GLenum): js.Any = js.native
   def getProgramInfoLog(program: WebGLProgram): java.lang.String | scala.Null = js.native

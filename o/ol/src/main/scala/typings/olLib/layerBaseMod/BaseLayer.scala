@@ -22,62 +22,62 @@ trait BaseLayer
   def getVisible(): scala.Boolean = js.native
   def getZIndex(): scala.Double = js.native
   @JSName("on")
-  def `on_change:extent`(
+  def on_changeextent(
     `type`: olLib.olLibStrings.`change:extent`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:maxResolution`(
+  def on_changemaxResolution(
     `type`: olLib.olLibStrings.`change:maxResolution`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:minResolution`(
+  def on_changeminResolution(
     `type`: olLib.olLibStrings.`change:minResolution`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:opacity`(
+  def on_changeopacity(
     `type`: olLib.olLibStrings.`change:opacity`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:visible`(
+  def on_changevisible(
     `type`: olLib.olLibStrings.`change:visible`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:zIndex`(
+  def on_changezIndex(
     `type`: olLib.olLibStrings.`change:zIndex`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:extent`(
+  def once_changeextent(
     `type`: olLib.olLibStrings.`change:extent`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:maxResolution`(
+  def once_changemaxResolution(
     `type`: olLib.olLibStrings.`change:maxResolution`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:minResolution`(
+  def once_changeminResolution(
     `type`: olLib.olLibStrings.`change:minResolution`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:opacity`(
+  def once_changeopacity(
     `type`: olLib.olLibStrings.`change:opacity`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:visible`(
+  def once_changevisible(
     `type`: olLib.olLibStrings.`change:visible`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:zIndex`(
+  def once_changezIndex(
     `type`: olLib.olLibStrings.`change:zIndex`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -88,32 +88,32 @@ trait BaseLayer
   def setVisible(visible: scala.Boolean): scala.Unit = js.native
   def setZIndex(zindex: scala.Double): scala.Unit = js.native
   @JSName("un")
-  def `un_change:extent`(
+  def un_changeextent(
     `type`: olLib.olLibStrings.`change:extent`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:maxResolution`(
+  def un_changemaxResolution(
     `type`: olLib.olLibStrings.`change:maxResolution`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:minResolution`(
+  def un_changeminResolution(
     `type`: olLib.olLibStrings.`change:minResolution`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:opacity`(
+  def un_changeopacity(
     `type`: olLib.olLibStrings.`change:opacity`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:visible`(
+  def un_changevisible(
     `type`: olLib.olLibStrings.`change:visible`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:zIndex`(
+  def un_changezIndex(
     `type`: olLib.olLibStrings.`change:zIndex`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

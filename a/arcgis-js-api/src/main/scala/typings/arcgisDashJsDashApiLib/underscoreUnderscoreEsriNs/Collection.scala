@@ -37,32 +37,32 @@ class Collection[T] ()
   def lastIndexOf(searchElement: T, fromIndex: scala.Double): scala.Double = js.native
   def map[R](callback: ItemMapCallback[T, R]): Collection[R] = js.native
   @JSName("on")
-  def `on_after-add`(
+  def on_afteradd(
     `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`after-add`,
     listener: CollectionAfterAddEventHandler[T]
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_after-changes`(
+  def on_afterchanges(
     `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`after-changes`,
     listener: CollectionAfterChangesEventHandler[T]
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_after-remove`(
+  def on_afterremove(
     `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`after-remove`,
     listener: CollectionAfterRemoveEventHandler[T]
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_before-add`(
+  def on_beforeadd(
     `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`before-add`,
     listener: CollectionBeforeAddEventHandler[T]
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_before-changes`(
+  def on_beforechanges(
     `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`before-changes`,
     listener: CollectionBeforeChangesEventHandler[T]
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_before-remove`(
+  def on_beforeremove(
     `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`before-remove`,
     listener: CollectionBeforeRemoveEventHandler[T]
   ): arcgisDashJsDashApiLib.IHandle = js.native

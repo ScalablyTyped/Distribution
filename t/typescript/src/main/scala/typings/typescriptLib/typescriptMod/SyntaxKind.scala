@@ -13,23 +13,28 @@ sealed trait SyntaxKind extends js.Object
 object SyntaxKind extends js.Object {
   @js.native
   sealed trait AbstractKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait AmpersandAmpersandToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.LogicalOperator
   
   @js.native
   sealed trait AmpersandEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait AmpersandToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.BitwiseOperator
   
   @js.native
   sealed trait AnyKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ArrayBindingPattern
@@ -53,11 +58,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait AsKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait AsteriskAsteriskEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait AsteriskAsteriskToken
@@ -65,19 +72,24 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait AsteriskEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait AsteriskToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
+       with typescriptLib.typescriptMod.MultiplicativeOperator
   
   @js.native
   sealed trait AsyncKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait AtToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait AwaitExpression
@@ -85,28 +97,34 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait AwaitKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   /** Only the JSDoc scanner produces BacktickToken. The normal scanner produces NoSubstitutionTemplateLiteral and related kinds. */
   @js.native
   sealed trait BacktickToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait BarBarToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.LogicalOperator
   
   @js.native
   sealed trait BarEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait BarToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.BitwiseOperator
   
   @js.native
   sealed trait BigIntKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait BigIntLiteral
@@ -126,11 +144,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait BooleanKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait BreakKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait BreakStatement
@@ -150,11 +170,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait CaretEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait CaretToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.BitwiseOperator
   
   @js.native
   sealed trait CaseBlock
@@ -166,7 +188,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait CaseKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait CatchClause
@@ -174,7 +197,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait CatchKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ClassDeclaration
@@ -186,15 +210,18 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ClassKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait CloseBraceToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait CloseBracketToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait CloseParenToken
@@ -211,6 +238,7 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait CommaToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait ComputedPropertyName
@@ -227,10 +255,12 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait ConflictMarkerTrivia
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JsxTokenSyntaxKind
   
   @js.native
   sealed trait ConstKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ConstructSignature
@@ -242,7 +272,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ConstructorKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ConstructorType
@@ -250,7 +281,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ContinueKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ContinueStatement
@@ -262,7 +294,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait DebuggerKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait DebuggerStatement
@@ -270,7 +303,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait DeclareKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait Decorator
@@ -282,7 +316,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait DefaultKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait DeleteExpression
@@ -290,11 +325,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait DeleteKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait DoKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait DoStatement
@@ -307,6 +344,7 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait DotToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait ElementAccessExpression
@@ -314,7 +352,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ElseKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait EmptyStatement
@@ -327,6 +366,8 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait EndOfFileToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
+       with typescriptLib.typescriptMod.JsxTokenSyntaxKind
   
   @js.native
   sealed trait EnumDeclaration
@@ -334,7 +375,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait EnumKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait EnumMember
@@ -343,10 +385,12 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait EqualsEqualsEqualsToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.EqualityOperator
   
   @js.native
   sealed trait EqualsEqualsToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.EqualityOperator
   
   @js.native
   sealed trait EqualsGreaterThanToken
@@ -355,18 +399,23 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait EqualsToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.AssignmentOperator
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait ExclamationEqualsEqualsToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.EqualityOperator
   
   @js.native
   sealed trait ExclamationEqualsToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.EqualityOperator
   
   @js.native
   sealed trait ExclamationToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.PrefixUnaryOperator
   
   @js.native
   sealed trait ExportAssignment
@@ -378,7 +427,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ExportKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ExportSpecifier
@@ -394,7 +444,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ExtendsKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ExternalModuleReference
@@ -402,11 +453,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait FalseKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait FinallyKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait FirstAssignment
@@ -474,7 +527,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ForKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ForOfStatement
@@ -486,7 +540,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait FromKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait FunctionDeclaration
@@ -498,7 +553,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait FunctionKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait FunctionType
@@ -510,35 +566,43 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait GetKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait GlobalKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait GreaterThanEqualsToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.RelationalOperator
   
   @js.native
   sealed trait GreaterThanGreaterThanEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait GreaterThanGreaterThanGreaterThanEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait GreaterThanGreaterThanGreaterThanToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.ShiftOperator
   
   @js.native
   sealed trait GreaterThanGreaterThanToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.ShiftOperator
   
   @js.native
   sealed trait GreaterThanToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.RelationalOperator
   
   @js.native
   sealed trait HeritageClause
@@ -547,10 +611,12 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait Identifier
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait IfKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait IfStatement
@@ -558,7 +624,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ImplementsKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ImportClause
@@ -574,7 +641,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ImportKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ImportSpecifier
@@ -586,7 +654,9 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait InKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.RelationalOperator
   
   @js.native
   sealed trait IndexSignature
@@ -598,7 +668,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait InferKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait InferType
@@ -610,7 +681,9 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait InstanceOfKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.RelationalOperator
   
   @js.native
   sealed trait InterfaceDeclaration
@@ -618,7 +691,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait InterfaceKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait IntersectionType
@@ -626,7 +700,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait IsKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait JSDocAllType
@@ -767,14 +842,17 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait JsxText
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JsxTokenSyntaxKind
   
   @js.native
   sealed trait JsxTextAllWhiteSpaces
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JsxTokenSyntaxKind
   
   @js.native
   sealed trait KeyOfKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait LabeledStatement
@@ -839,26 +917,34 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait LessThanEqualsToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.RelationalOperator
   
   @js.native
   sealed trait LessThanLessThanEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait LessThanLessThanToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.ShiftOperator
   
   @js.native
   sealed trait LessThanSlashToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JsxTokenSyntaxKind
   
   @js.native
   sealed trait LessThanToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
+       with typescriptLib.typescriptMod.JsxTokenSyntaxKind
+       with typescriptLib.typescriptMod.RelationalOperator
   
   @js.native
   sealed trait LetKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait LiteralType
@@ -886,15 +972,20 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait MinusEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait MinusMinusToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.PostfixUnaryOperator
+       with typescriptLib.typescriptMod.PrefixUnaryOperator
   
   @js.native
   sealed trait MinusToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.AdditiveOperator
+       with typescriptLib.typescriptMod.PrefixUnaryOperator
   
   @js.native
   sealed trait MissingDeclaration
@@ -910,11 +1001,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ModuleKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait MultiLineCommentTrivia
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.CommentKind
   
   @js.native
   sealed trait NamedExports
@@ -934,11 +1027,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait NamespaceKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait NeverKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait NewExpression
@@ -946,11 +1041,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait NewKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait NewLineTrivia
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait NoSubstitutionTemplateLiteral
@@ -966,11 +1063,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait NullKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait NumberKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait NumericLiteral
@@ -982,7 +1081,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ObjectKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ObjectLiteralExpression
@@ -990,7 +1090,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait OfKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait OmittedExpression
@@ -999,10 +1100,13 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait OpenBraceToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
+       with typescriptLib.typescriptMod.JsxTokenSyntaxKind
   
   @js.native
   sealed trait OpenBracketToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait OpenParenToken
@@ -1014,7 +1118,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait PackageKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait Parameter
@@ -1034,23 +1139,30 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait PercentEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait PercentToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.MultiplicativeOperator
   
   @js.native
   sealed trait PlusEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait PlusPlusToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.PostfixUnaryOperator
+       with typescriptLib.typescriptMod.PrefixUnaryOperator
   
   @js.native
   sealed trait PlusToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.AdditiveOperator
+       with typescriptLib.typescriptMod.PrefixUnaryOperator
   
   @js.native
   sealed trait PostfixUnaryExpression
@@ -1062,7 +1174,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait PrivateKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait PropertyAccessExpression
@@ -1082,11 +1195,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ProtectedKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait PublicKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait QualifiedName
@@ -1098,7 +1213,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ReadonlyKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait RegularExpressionLiteral
@@ -1106,7 +1222,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait RequireKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait RestType
@@ -1114,7 +1231,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ReturnKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ReturnStatement
@@ -1134,7 +1252,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait SetKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ShebangTrivia
@@ -1147,14 +1266,17 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait SingleLineCommentTrivia
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.CommentKind
   
   @js.native
   sealed trait SlashEqualsToken
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.CompoundAssignmentOperator
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait SlashToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.MultiplicativeOperator
   
   @js.native
   sealed trait SourceFile
@@ -1170,11 +1292,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait StaticKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait StringKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait StringLiteral
@@ -1182,11 +1306,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait SuperKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait SwitchKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait SwitchStatement
@@ -1194,7 +1320,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait SymbolKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait SyntaxList
@@ -1230,7 +1357,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ThisKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ThisType
@@ -1238,7 +1366,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait ThrowKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait ThrowStatement
@@ -1247,14 +1376,17 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait TildeToken
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.PrefixUnaryOperator
   
   @js.native
   sealed trait TrueKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait TryKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait TryStatement
@@ -1274,7 +1406,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait TypeKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait TypeLiteral
@@ -1286,7 +1419,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait TypeOfKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait TypeOperator
@@ -1310,7 +1444,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait UndefinedKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait UnionType
@@ -1318,15 +1453,18 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait UniqueKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait Unknown
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait UnknownKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait UnparsedInternalText
@@ -1354,7 +1492,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait VarKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait VariableDeclaration
@@ -1374,11 +1513,13 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait VoidKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait WhileKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait WhileStatement
@@ -1387,10 +1528,12 @@ object SyntaxKind extends js.Object {
   @js.native
   sealed trait WhitespaceTrivia
     extends typescriptLib.typescriptMod.SyntaxKind
+       with typescriptLib.typescriptMod.JSDocSyntaxKind
   
   @js.native
   sealed trait WithKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   @js.native
   sealed trait WithStatement
@@ -1402,7 +1545,8 @@ object SyntaxKind extends js.Object {
   
   @js.native
   sealed trait YieldKeyword
-    extends typescriptLib.typescriptMod.SyntaxKind
+    extends typescriptLib.typescriptMod.KeywordSyntaxKind
+       with typescriptLib.typescriptMod.SyntaxKind
   
   /* 119 */ val AbstractKeyword: AbstractKeyword with scala.Double = js.native
   /* 54 */ val AmpersandAmpersandToken: AmpersandAmpersandToken with scala.Double = js.native

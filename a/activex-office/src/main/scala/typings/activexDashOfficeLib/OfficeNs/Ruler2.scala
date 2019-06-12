@@ -16,11 +16,16 @@ class Ruler2 protected () extends js.Object {
   val Parent: js.Any = js.native
   @JSName("TabStops")
   val TabStops_Original: TabStops2 = js.native
-  def Levels(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`1`): RulerLevel2 = js.native
-  def Levels(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`2`): RulerLevel2 = js.native
-  def Levels(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`3`): RulerLevel2 = js.native
-  def Levels(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`4`): RulerLevel2 = js.native
-  def Levels(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`5`): RulerLevel2 = js.native
+  @JSName("Levels")
+  def Levels_1(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`1`): RulerLevel2 = js.native
+  @JSName("Levels")
+  def Levels_2(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`2`): RulerLevel2 = js.native
+  @JSName("Levels")
+  def Levels_3(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`3`): RulerLevel2 = js.native
+  @JSName("Levels")
+  def Levels_4(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`4`): RulerLevel2 = js.native
+  @JSName("Levels")
+  def Levels_5(Index: activexDashOfficeLib.activexDashOfficeLibNumbers.`5`): RulerLevel2 = js.native
   def TabStops(Index: scala.Double): TabStop2 = js.native
 }
 

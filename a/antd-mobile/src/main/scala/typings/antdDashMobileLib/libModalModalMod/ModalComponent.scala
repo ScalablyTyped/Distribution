@@ -72,14 +72,14 @@ object ModalComponent extends js.Object {
     platform: java.lang.String
   ): antdDashMobileLib.Anon_Close = js.native
   @JSName("prompt")
-  def `prompt_login-password`(
+  def prompt_loginpassword(
     title: reactLib.reactMod.ReactNode,
     message: reactLib.reactMod.ReactNode,
     callbackOrActions: antdDashMobileLib.libModalPropsTypeMod.CallbackOrActions[reactLib.reactMod.CSSProperties],
     `type`: antdDashMobileLib.antdDashMobileLibStrings.`login-password`
   ): antdDashMobileLib.Anon_Close = js.native
   @JSName("prompt")
-  def `prompt_login-password`(
+  def prompt_loginpassword(
     title: reactLib.reactMod.ReactNode,
     message: reactLib.reactMod.ReactNode,
     callbackOrActions: antdDashMobileLib.libModalPropsTypeMod.CallbackOrActions[reactLib.reactMod.CSSProperties],
@@ -87,7 +87,7 @@ object ModalComponent extends js.Object {
     defaultValue: java.lang.String
   ): antdDashMobileLib.Anon_Close = js.native
   @JSName("prompt")
-  def `prompt_login-password`(
+  def prompt_loginpassword(
     title: reactLib.reactMod.ReactNode,
     message: reactLib.reactMod.ReactNode,
     callbackOrActions: antdDashMobileLib.libModalPropsTypeMod.CallbackOrActions[reactLib.reactMod.CSSProperties],
@@ -96,7 +96,7 @@ object ModalComponent extends js.Object {
     placeholders: js.Array[java.lang.String]
   ): antdDashMobileLib.Anon_Close = js.native
   @JSName("prompt")
-  def `prompt_login-password`(
+  def prompt_loginpassword(
     title: reactLib.reactMod.ReactNode,
     message: reactLib.reactMod.ReactNode,
     callbackOrActions: antdDashMobileLib.libModalPropsTypeMod.CallbackOrActions[reactLib.reactMod.CSSProperties],
@@ -106,14 +106,14 @@ object ModalComponent extends js.Object {
     platform: java.lang.String
   ): antdDashMobileLib.Anon_Close = js.native
   @JSName("prompt")
-  def `prompt_secure-text`(
+  def prompt_securetext(
     title: reactLib.reactMod.ReactNode,
     message: reactLib.reactMod.ReactNode,
     callbackOrActions: antdDashMobileLib.libModalPropsTypeMod.CallbackOrActions[reactLib.reactMod.CSSProperties],
     `type`: antdDashMobileLib.antdDashMobileLibStrings.`secure-text`
   ): antdDashMobileLib.Anon_Close = js.native
   @JSName("prompt")
-  def `prompt_secure-text`(
+  def prompt_securetext(
     title: reactLib.reactMod.ReactNode,
     message: reactLib.reactMod.ReactNode,
     callbackOrActions: antdDashMobileLib.libModalPropsTypeMod.CallbackOrActions[reactLib.reactMod.CSSProperties],
@@ -121,7 +121,7 @@ object ModalComponent extends js.Object {
     defaultValue: java.lang.String
   ): antdDashMobileLib.Anon_Close = js.native
   @JSName("prompt")
-  def `prompt_secure-text`(
+  def prompt_securetext(
     title: reactLib.reactMod.ReactNode,
     message: reactLib.reactMod.ReactNode,
     callbackOrActions: antdDashMobileLib.libModalPropsTypeMod.CallbackOrActions[reactLib.reactMod.CSSProperties],
@@ -130,7 +130,7 @@ object ModalComponent extends js.Object {
     placeholders: js.Array[java.lang.String]
   ): antdDashMobileLib.Anon_Close = js.native
   @JSName("prompt")
-  def `prompt_secure-text`(
+  def prompt_securetext(
     title: reactLib.reactMod.ReactNode,
     message: reactLib.reactMod.ReactNode,
     callbackOrActions: antdDashMobileLib.libModalPropsTypeMod.CallbackOrActions[reactLib.reactMod.CSSProperties],

@@ -97,7 +97,8 @@ trait Typeofnotifications extends js.Object {
     *  console.log('Active notifications:', Object.keys(result));
     * });
     */
-  def getAll(
+  @JSName("getAll")
+  def getAll_true(
     callback: js.Function1[
       /* notifications */ org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.chromeDashAppsLibNumbers.`true`], 
       scala.Unit

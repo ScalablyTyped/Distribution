@@ -10,6 +10,8 @@ trait JsxOpeningElement
   extends Expression
      with JsxOpeningLikeElement {
   var attributes: JsxAttributes = js.native
+  @JSName("kind")
+  var kind_JsxOpeningElement: typescriptLib.typescriptMod.SyntaxKind.JsxOpeningElement = js.native
   @JSName("parent")
   var parent_JsxOpeningElement: JsxElement = js.native
   var tagName: JsxTagNameExpression = js.native

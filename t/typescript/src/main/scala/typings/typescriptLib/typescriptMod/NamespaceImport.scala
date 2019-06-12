@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait NamespaceImport
   extends NamedDeclaration
      with NamedImportBindings {
+  @JSName("kind")
+  var kind_NamespaceImport: typescriptLib.typescriptMod.SyntaxKind.NamespaceImport = js.native
   @JSName("name")
   var name_NamespaceImport: Identifier = js.native
   @JSName("parent")

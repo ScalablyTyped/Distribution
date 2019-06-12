@@ -50,6 +50,16 @@ object atIonicCliDashFrameworkLibStrings {
     extends atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel
   
   @js.native
+  sealed trait advanced
+    extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
+       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
+  
+  @js.native
+  sealed trait beta
+    extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
+       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
+  
+  @js.native
   sealed trait checkbox extends js.Object
   
   @js.native
@@ -59,10 +69,25 @@ object atIonicCliDashFrameworkLibStrings {
   sealed trait confirm extends js.Object
   
   @js.native
+  sealed trait deprecated
+    extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
+       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
+  
+  @js.native
   sealed trait end extends js.Object
   
   @js.native
+  sealed trait experimental
+    extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
+       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
+  
+  @js.native
   sealed trait failure extends js.Object
+  
+  @js.native
+  sealed trait hidden
+    extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
+       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
   
   @js.native
   sealed trait input
@@ -83,6 +108,11 @@ object atIonicCliDashFrameworkLibStrings {
   
   @js.native
   sealed trait `operation-rpc` extends js.Object
+  
+  @js.native
+  sealed trait paid
+    extends atIonicCliDashFrameworkLib.definitionsMod.MetadataGroup
+       with atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.MetadataGroup
   
   @js.native
   sealed trait password
@@ -133,15 +163,25 @@ object atIonicCliDashFrameworkLibStrings {
   @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
   @scala.inline
+  def advanced: advanced = "advanced".asInstanceOf[advanced]
+  @scala.inline
+  def beta: beta = "beta".asInstanceOf[beta]
+  @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
   def confirm: confirm = "confirm".asInstanceOf[confirm]
   @scala.inline
+  def deprecated: deprecated = "deprecated".asInstanceOf[deprecated]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
+  def experimental: experimental = "experimental".asInstanceOf[experimental]
+  @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
+  @scala.inline
+  def hidden: hidden = "hidden".asInstanceOf[hidden]
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   @scala.inline
@@ -154,6 +194,8 @@ object atIonicCliDashFrameworkLibStrings {
   def next: next = "next".asInstanceOf[next]
   @scala.inline
   def `operation-rpc`: `operation-rpc` = "operation-rpc".asInstanceOf[`operation-rpc`]
+  @scala.inline
+  def paid: paid = "paid".asInstanceOf[paid]
   @scala.inline
   def password: password = "password".asInstanceOf[password]
   @scala.inline

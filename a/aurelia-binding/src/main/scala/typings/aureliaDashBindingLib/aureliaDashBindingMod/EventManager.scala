@@ -23,7 +23,8 @@ class EventManager () extends js.Object {
     * @param disposable True to return a disposable object with dispose() method instead of a function
     * @returns function which removes event listener.
     */
-  def addEventListener(
+  @JSName("addEventListener")
+  def addEventListener_true(
     target: stdLib.EventTarget,
     targetEvent: java.lang.String,
     callback: stdLib.EventListenerOrEventListenerObject,

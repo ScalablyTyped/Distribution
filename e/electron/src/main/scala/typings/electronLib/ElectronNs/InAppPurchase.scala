@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InAppPurchase extends EventEmitter {
   @JSName("addListener")
-  def `addListener_transactions-updated`(
+  def addListener_transactionsupdated(
     event: electronLib.electronLibStrings.`transactions-updated`,
     listener: js.Function2[/* event */ Event, /* transactions */ js.Array[Transaction], scala.Unit]
   ): this.type = js.native
@@ -34,12 +34,12 @@ trait InAppPurchase extends EventEmitter {
     * Emitted when one or more transactions have been updated.
     */
   @JSName("on")
-  def `on_transactions-updated`(
+  def on_transactionsupdated(
     event: electronLib.electronLibStrings.`transactions-updated`,
     listener: js.Function2[/* event */ Event, /* transactions */ js.Array[Transaction], scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_transactions-updated`(
+  def once_transactionsupdated(
     event: electronLib.electronLibStrings.`transactions-updated`,
     listener: js.Function2[/* event */ Event, /* transactions */ js.Array[Transaction], scala.Unit]
   ): this.type = js.native
@@ -55,7 +55,7 @@ trait InAppPurchase extends EventEmitter {
     callback: js.Function1[/* isProductValid */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   @JSName("removeListener")
-  def `removeListener_transactions-updated`(
+  def removeListener_transactionsupdated(
     event: electronLib.electronLibStrings.`transactions-updated`,
     listener: js.Function2[/* event */ Event, /* transactions */ js.Array[Transaction], scala.Unit]
   ): this.type = js.native

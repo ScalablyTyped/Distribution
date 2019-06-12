@@ -49,7 +49,7 @@ object ^ extends js.Object {
     callback: js.Function2[/* error */ js.Any, /* response */ Response, scala.Unit]
   ): ProxyResult = js.native
   @JSName("proxy")
-  def proxy_CONTEXT_SUCCEED(
+  def proxy_CONTEXTSUCCEED(
     server: nodeLib.httpMod.Server,
     event: js.Any,
     context: awsDashLambdaLib.awsDashLambdaMod.Context,

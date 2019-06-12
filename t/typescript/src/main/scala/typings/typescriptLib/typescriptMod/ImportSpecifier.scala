@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait ImportSpecifier
   extends NamedDeclaration
      with ImportOrExportSpecifier {
+  @JSName("kind")
+  var kind_ImportSpecifier: typescriptLib.typescriptMod.SyntaxKind.ImportSpecifier = js.native
   @JSName("name")
   var name_ImportSpecifier: Identifier = js.native
   @JSName("parent")

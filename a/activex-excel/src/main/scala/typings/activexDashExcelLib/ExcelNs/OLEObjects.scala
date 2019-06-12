@@ -31,7 +31,8 @@ class OLEObjects protected () extends js.Object {
   var Visible: scala.Boolean = js.native
   var Width: scala.Double = js.native
   val ZOrder: scala.Double = js.native
-  def Add(
+  @JSName("Add")
+  def Add_false(
     ClassType: js.UndefOr[scala.Nothing],
     Filename: java.lang.String,
     Link: js.UndefOr[scala.Boolean],
@@ -44,20 +45,8 @@ class OLEObjects protected () extends js.Object {
     Width: js.UndefOr[scala.Double],
     Height: js.UndefOr[scala.Double]
   ): OLEObject = js.native
-  def Add(
-    ClassType: js.UndefOr[scala.Nothing],
-    Filename: java.lang.String,
-    Link: scala.Boolean,
-    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    IconFileName: js.UndefOr[java.lang.String],
-    IconIndex: js.UndefOr[scala.Double],
-    IconLabel: js.UndefOr[java.lang.String],
-    Left: js.UndefOr[scala.Double],
-    Top: js.UndefOr[scala.Double],
-    Width: js.UndefOr[scala.Double],
-    Height: js.UndefOr[scala.Double]
-  ): OLEObject = js.native
-  def Add(
+  @JSName("Add")
+  def Add_false(
     ClassType: java.lang.String,
     Filename: js.UndefOr[scala.Nothing],
     Link: js.UndefOr[scala.Nothing],
@@ -70,7 +59,22 @@ class OLEObjects protected () extends js.Object {
     Width: js.UndefOr[scala.Double],
     Height: js.UndefOr[scala.Double]
   ): OLEObject = js.native
-  def Add(
+  @JSName("Add")
+  def Add_true(
+    ClassType: js.UndefOr[scala.Nothing],
+    Filename: java.lang.String,
+    Link: scala.Boolean,
+    DisplayAsIcon: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    IconFileName: js.UndefOr[java.lang.String],
+    IconIndex: js.UndefOr[scala.Double],
+    IconLabel: js.UndefOr[java.lang.String],
+    Left: js.UndefOr[scala.Double],
+    Top: js.UndefOr[scala.Double],
+    Width: js.UndefOr[scala.Double],
+    Height: js.UndefOr[scala.Double]
+  ): OLEObject = js.native
+  @JSName("Add")
+  def Add_true(
     ClassType: java.lang.String,
     Filename: js.UndefOr[scala.Nothing],
     Link: js.UndefOr[scala.Nothing],

@@ -14,6 +14,8 @@ trait SpreadAssignment
      with _BindingOrAssignmentElementRestIndicator
      with _HasJSDoc {
   var expression: Expression = js.native
+  @JSName("kind")
+  var kind_SpreadAssignment: typescriptLib.typescriptMod.SyntaxKind.SpreadAssignment = js.native
   @JSName("parent")
   var parent_SpreadAssignment: ObjectLiteralExpression = js.native
 }

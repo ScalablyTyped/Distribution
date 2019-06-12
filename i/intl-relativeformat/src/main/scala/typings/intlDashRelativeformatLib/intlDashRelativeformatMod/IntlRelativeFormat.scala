@@ -26,10 +26,12 @@ trait IntlRelativeFormat
   def apply(locales: js.Array[java.lang.String]): IntlRelativeFormat = js.native
   def apply(locales: js.Array[java.lang.String], opts: IntlRelativeFormatOptions): IntlRelativeFormat = js.native
   def __addLocaleData(data: intlDashRelativeformatLib.libTypesMod.LocaleData*): scala.Unit = js.native
-  def format(
+  @JSName("format")
+  def format_0(
     date: /* import warning: ImportType.apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any
   ): java.lang.String = js.native
-  def format(
+  @JSName("format")
+  def format_0(
     date: /* import warning: ImportType.apply Failed type conversion: std.ConstructorParameters<std.DateConstructor>[0] */ js.Any,
     opts: intlDashRelativeformatLib.Anon_Now
   ): java.lang.String = js.native

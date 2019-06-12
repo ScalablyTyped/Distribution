@@ -125,7 +125,7 @@ object Options {
     if (mSize != null) __obj.updateDynamic("mSize")(mSize.asInstanceOf[js.Any])
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion.asInstanceOf[js.Any])
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     if (quiet != null) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (render != null) __obj.updateDynamic("render")(render)

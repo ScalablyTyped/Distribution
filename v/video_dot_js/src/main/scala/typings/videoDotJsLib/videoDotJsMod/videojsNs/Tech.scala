@@ -87,7 +87,8 @@ trait Tech extends Component {
   		 *             to "manualCleanup=false" in the future. The manualCleanup parameter will
   		 *             also be removed.
   		 */
-  def addRemoteTextTrack(options: TextTrackOptions, manualCleanup: videoDotJsLib.videoDotJsLibNumbers.`true`): stdLib.HTMLTrackElement = js.native
+  @JSName("addRemoteTextTrack")
+  def addRemoteTextTrack_true(options: TextTrackOptions, manualCleanup: videoDotJsLib.videoDotJsLibNumbers.`true`): stdLib.HTMLTrackElement = js.native
   /**
   		 * Create and returns a remote {@link TextTrack} object.
   		 *

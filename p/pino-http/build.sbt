@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "pino-http"
-version := "4.0-dt-20190301Z-642a46"
+version := "4.0-dt-20190301Z-d3bb54"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190603Z-09a201",
-  "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-c23ab9",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190603Z-c2e3ae",
+  "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-cbb4a5",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

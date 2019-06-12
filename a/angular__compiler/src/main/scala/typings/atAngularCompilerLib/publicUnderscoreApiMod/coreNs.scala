@@ -8,6 +8,123 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/public_api", "core")
 @js.native
 object coreNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+  */
+  trait ArgumentType extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`3`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`5`
+  */
+  trait AttributeMarker extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`16`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`32`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`48`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`15`
+  */
+  trait BindingFlags extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
+  */
+  trait DepFlags extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
+  */
+  trait InjectFlags extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`3`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`16`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`32`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`64`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`128`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`224`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`256`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`512`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1024`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2048`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4096`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8192`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`16384`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`32768`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`3840`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`20224`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`65536`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`131072`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`262144`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`524288`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1048576`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2097152`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4194304`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8388608`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`16777216`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`33554432`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`67108864`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`134217728`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`268435456`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`536870912`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1073741824`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`201326592`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`201347067`
+  */
+  trait NodeFlags extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+  */
+  trait QueryBindingType extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`3`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
+  */
+  trait QueryValueType extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
+  */
+  trait RenderFlags extends js.Object
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`1`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`4`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`8`
+  */
+  trait SelectorFlags extends js.Object
+  
   @js.native
   class TypeCls protected ()
     extends js.Function {
@@ -17,6 +134,12 @@ object coreNs extends js.Object {
       */
     def this(args: java.lang.String*) = this()
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`0`
+    - atAngularCompilerLib.atAngularCompilerLibNumbers.`2`
+  */
+  trait ViewFlags extends js.Object
   
   val CUSTOM_ELEMENTS_SCHEMA: atAngularCompilerLib.srcCoreMod.SchemaMetadata = js.native
   val NO_ERRORS_SCHEMA: atAngularCompilerLib.srcCoreMod.SchemaMetadata = js.native
@@ -44,67 +167,11 @@ object coreNs extends js.Object {
   def parseSelectorToR3Selector(): atAngularCompilerLib.srcCoreMod.R3CssSelectorList = js.native
   def parseSelectorToR3Selector(selector: java.lang.String): atAngularCompilerLib.srcCoreMod.R3CssSelectorList = js.native
   @js.native
-  object ArgumentType extends js.Object {
-    /* 1 */ val Dynamic: atAngularCompilerLib.srcCoreMod.ArgumentType.Dynamic with scala.Double = js.native
-    /* 0 */ val Inline: atAngularCompilerLib.srcCoreMod.ArgumentType.Inline with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.ArgumentType with scala.Double] = js.native
-  }
-  
-  @js.native
-  object AttributeMarker extends js.Object {
-    /* 3 */ val Bindings: atAngularCompilerLib.srcCoreMod.AttributeMarker.Bindings with scala.Double = js.native
-    /* 1 */ val Classes: atAngularCompilerLib.srcCoreMod.AttributeMarker.Classes with scala.Double = js.native
-    /* 0 */ val NamespaceURI: atAngularCompilerLib.srcCoreMod.AttributeMarker.NamespaceURI with scala.Double = js.native
-    /* 5 */ val ProjectAs: atAngularCompilerLib.srcCoreMod.AttributeMarker.ProjectAs with scala.Double = js.native
-    /* 2 */ val Styles: atAngularCompilerLib.srcCoreMod.AttributeMarker.Styles with scala.Double = js.native
-    /* 4 */ val Template: atAngularCompilerLib.srcCoreMod.AttributeMarker.Template with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.AttributeMarker with scala.Double] = js.native
-  }
-  
-  @js.native
-  object BindingFlags extends js.Object {
-    /* 48 */ val CatSyntheticProperty: atAngularCompilerLib.srcCoreMod.BindingFlags.CatSyntheticProperty with scala.Double = js.native
-    /* 32 */ val SyntheticHostProperty: atAngularCompilerLib.srcCoreMod.BindingFlags.SyntheticHostProperty with scala.Double = js.native
-    /* 16 */ val SyntheticProperty: atAngularCompilerLib.srcCoreMod.BindingFlags.SyntheticProperty with scala.Double = js.native
-    /* 1 */ val TypeElementAttribute: atAngularCompilerLib.srcCoreMod.BindingFlags.TypeElementAttribute with scala.Double = js.native
-    /* 2 */ val TypeElementClass: atAngularCompilerLib.srcCoreMod.BindingFlags.TypeElementClass with scala.Double = js.native
-    /* 4 */ val TypeElementStyle: atAngularCompilerLib.srcCoreMod.BindingFlags.TypeElementStyle with scala.Double = js.native
-    /* 8 */ val TypeProperty: atAngularCompilerLib.srcCoreMod.BindingFlags.TypeProperty with scala.Double = js.native
-    /* 15 */ val Types: atAngularCompilerLib.srcCoreMod.BindingFlags.Types with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.BindingFlags with scala.Double] = js.native
-  }
-  
-  @js.native
   object ChangeDetectionStrategy extends js.Object {
     /* 1 */ val Default: atAngularCompilerLib.srcCoreMod.ChangeDetectionStrategy.Default with scala.Double = js.native
     /* 0 */ val OnPush: atAngularCompilerLib.srcCoreMod.ChangeDetectionStrategy.OnPush with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.ChangeDetectionStrategy with scala.Double] = js.native
-  }
-  
-  @js.native
-  object DepFlags extends js.Object {
-    /* 0 */ val None: atAngularCompilerLib.srcCoreMod.DepFlags.None with scala.Double = js.native
-    /* 2 */ val Optional: atAngularCompilerLib.srcCoreMod.DepFlags.Optional with scala.Double = js.native
-    /* 4 */ val Self: atAngularCompilerLib.srcCoreMod.DepFlags.Self with scala.Double = js.native
-    /* 1 */ val SkipSelf: atAngularCompilerLib.srcCoreMod.DepFlags.SkipSelf with scala.Double = js.native
-    /* 8 */ val Value: atAngularCompilerLib.srcCoreMod.DepFlags.Value with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.DepFlags with scala.Double] = js.native
-  }
-  
-  @js.native
-  object InjectFlags extends js.Object {
-    /* 0 */ val Default: atAngularCompilerLib.srcCoreMod.InjectFlags.Default with scala.Double = js.native
-    /* 1 */ val Host: atAngularCompilerLib.srcCoreMod.InjectFlags.Host with scala.Double = js.native
-    /* 8 */ val Optional: atAngularCompilerLib.srcCoreMod.InjectFlags.Optional with scala.Double = js.native
-    /* 2 */ val Self: atAngularCompilerLib.srcCoreMod.InjectFlags.Self with scala.Double = js.native
-    /* 4 */ val SkipSelf: atAngularCompilerLib.srcCoreMod.InjectFlags.SkipSelf with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.InjectFlags with scala.Double] = js.native
   }
   
   @js.native
@@ -114,77 +181,6 @@ object coreNs extends js.Object {
     /* 1 */ val Warning: atAngularCompilerLib.srcCoreMod.MissingTranslationStrategy.Warning with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.MissingTranslationStrategy with scala.Double] = js.native
-  }
-  
-  @js.native
-  object NodeFlags extends js.Object {
-    /* 2097152 */ val AfterContentChecked: atAngularCompilerLib.srcCoreMod.NodeFlags.AfterContentChecked with scala.Double = js.native
-    /* 1048576 */ val AfterContentInit: atAngularCompilerLib.srcCoreMod.NodeFlags.AfterContentInit with scala.Double = js.native
-    /* 8388608 */ val AfterViewChecked: atAngularCompilerLib.srcCoreMod.NodeFlags.AfterViewChecked with scala.Double = js.native
-    /* 4194304 */ val AfterViewInit: atAngularCompilerLib.srcCoreMod.NodeFlags.AfterViewInit with scala.Double = js.native
-    /* 20224 */ val CatProvider: atAngularCompilerLib.srcCoreMod.NodeFlags.CatProvider with scala.Double = js.native
-    /* 3840 */ val CatProviderNoDirective: atAngularCompilerLib.srcCoreMod.NodeFlags.CatProviderNoDirective with scala.Double = js.native
-    /* 224 */ val CatPureExpression: atAngularCompilerLib.srcCoreMod.NodeFlags.CatPureExpression with scala.Double = js.native
-    /* 201326592 */ val CatQuery: atAngularCompilerLib.srcCoreMod.NodeFlags.CatQuery with scala.Double = js.native
-    /* 3 */ val CatRenderNode: atAngularCompilerLib.srcCoreMod.NodeFlags.CatRenderNode with scala.Double = js.native
-    /* 32768 */ val Component: atAngularCompilerLib.srcCoreMod.NodeFlags.Component with scala.Double = js.native
-    /* 33554432 */ val ComponentView: atAngularCompilerLib.srcCoreMod.NodeFlags.ComponentView with scala.Double = js.native
-    /* 262144 */ val DoCheck: atAngularCompilerLib.srcCoreMod.NodeFlags.DoCheck with scala.Double = js.native
-    /* 536870912 */ val DynamicQuery: atAngularCompilerLib.srcCoreMod.NodeFlags.DynamicQuery with scala.Double = js.native
-    /* 16777216 */ val EmbeddedViews: atAngularCompilerLib.srcCoreMod.NodeFlags.EmbeddedViews with scala.Double = js.native
-    /* 4096 */ val LazyProvider: atAngularCompilerLib.srcCoreMod.NodeFlags.LazyProvider with scala.Double = js.native
-    /* 0 */ val None: atAngularCompilerLib.srcCoreMod.NodeFlags.None with scala.Double = js.native
-    /* 524288 */ val OnChanges: atAngularCompilerLib.srcCoreMod.NodeFlags.OnChanges with scala.Double = js.native
-    /* 131072 */ val OnDestroy: atAngularCompilerLib.srcCoreMod.NodeFlags.OnDestroy with scala.Double = js.native
-    /* 65536 */ val OnInit: atAngularCompilerLib.srcCoreMod.NodeFlags.OnInit with scala.Double = js.native
-    /* 8192 */ val PrivateProvider: atAngularCompilerLib.srcCoreMod.NodeFlags.PrivateProvider with scala.Double = js.native
-    /* 4 */ val ProjectedTemplate: atAngularCompilerLib.srcCoreMod.NodeFlags.ProjectedTemplate with scala.Double = js.native
-    /* 268435456 */ val StaticQuery: atAngularCompilerLib.srcCoreMod.NodeFlags.StaticQuery with scala.Double = js.native
-    /* 512 */ val TypeClassProvider: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeClassProvider with scala.Double = js.native
-    /* 67108864 */ val TypeContentQuery: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeContentQuery with scala.Double = js.native
-    /* 16384 */ val TypeDirective: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeDirective with scala.Double = js.native
-    /* 1 */ val TypeElement: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeElement with scala.Double = js.native
-    /* 1024 */ val TypeFactoryProvider: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeFactoryProvider with scala.Double = js.native
-    /* 1073741824 */ val TypeModuleProvider: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeModuleProvider with scala.Double = js.native
-    /* 8 */ val TypeNgContent: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeNgContent with scala.Double = js.native
-    /* 16 */ val TypePipe: atAngularCompilerLib.srcCoreMod.NodeFlags.TypePipe with scala.Double = js.native
-    /* 32 */ val TypePureArray: atAngularCompilerLib.srcCoreMod.NodeFlags.TypePureArray with scala.Double = js.native
-    /* 64 */ val TypePureObject: atAngularCompilerLib.srcCoreMod.NodeFlags.TypePureObject with scala.Double = js.native
-    /* 128 */ val TypePurePipe: atAngularCompilerLib.srcCoreMod.NodeFlags.TypePurePipe with scala.Double = js.native
-    /* 2 */ val TypeText: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeText with scala.Double = js.native
-    /* 2048 */ val TypeUseExistingProvider: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeUseExistingProvider with scala.Double = js.native
-    /* 256 */ val TypeValueProvider: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeValueProvider with scala.Double = js.native
-    /* 134217728 */ val TypeViewQuery: atAngularCompilerLib.srcCoreMod.NodeFlags.TypeViewQuery with scala.Double = js.native
-    /* 201347067 */ val Types: atAngularCompilerLib.srcCoreMod.NodeFlags.Types with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.NodeFlags with scala.Double] = js.native
-  }
-  
-  @js.native
-  object QueryBindingType extends js.Object {
-    /* 1 */ val All: atAngularCompilerLib.srcCoreMod.QueryBindingType.All with scala.Double = js.native
-    /* 0 */ val First: atAngularCompilerLib.srcCoreMod.QueryBindingType.First with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.QueryBindingType with scala.Double] = js.native
-  }
-  
-  @js.native
-  object QueryValueType extends js.Object {
-    /* 0 */ val ElementRef: atAngularCompilerLib.srcCoreMod.QueryValueType.ElementRef with scala.Double = js.native
-    /* 4 */ val Provider: atAngularCompilerLib.srcCoreMod.QueryValueType.Provider with scala.Double = js.native
-    /* 1 */ val RenderElement: atAngularCompilerLib.srcCoreMod.QueryValueType.RenderElement with scala.Double = js.native
-    /* 2 */ val TemplateRef: atAngularCompilerLib.srcCoreMod.QueryValueType.TemplateRef with scala.Double = js.native
-    /* 3 */ val ViewContainerRef: atAngularCompilerLib.srcCoreMod.QueryValueType.ViewContainerRef with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.QueryValueType with scala.Double] = js.native
-  }
-  
-  @js.native
-  object RenderFlags extends js.Object {
-    /* 1 */ val Create: atAngularCompilerLib.srcCoreMod.RenderFlags.Create with scala.Double = js.native
-    /* 2 */ val Update: atAngularCompilerLib.srcCoreMod.RenderFlags.Update with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.RenderFlags with scala.Double] = js.native
   }
   
   @js.native
@@ -200,16 +196,6 @@ object coreNs extends js.Object {
   }
   
   @js.native
-  object SelectorFlags extends js.Object {
-    /* 2 */ val ATTRIBUTE: atAngularCompilerLib.srcCoreMod.SelectorFlags.ATTRIBUTE with scala.Double = js.native
-    /* 8 */ val CLASS: atAngularCompilerLib.srcCoreMod.SelectorFlags.CLASS with scala.Double = js.native
-    /* 4 */ val ELEMENT: atAngularCompilerLib.srcCoreMod.SelectorFlags.ELEMENT with scala.Double = js.native
-    /* 1 */ val NOT: atAngularCompilerLib.srcCoreMod.SelectorFlags.NOT with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.SelectorFlags with scala.Double] = js.native
-  }
-  
-  @js.native
   object ViewEncapsulation extends js.Object {
     /* 0 */ val Emulated: atAngularCompilerLib.srcCoreMod.ViewEncapsulation.Emulated with scala.Double = js.native
     /* 1 */ val Native: atAngularCompilerLib.srcCoreMod.ViewEncapsulation.Native with scala.Double = js.native
@@ -217,14 +203,6 @@ object coreNs extends js.Object {
     /* 3 */ val ShadowDom: atAngularCompilerLib.srcCoreMod.ViewEncapsulation.ShadowDom with scala.Double = js.native
     @JSBracketAccess
     def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.ViewEncapsulation with scala.Double] = js.native
-  }
-  
-  @js.native
-  object ViewFlags extends js.Object {
-    /* 0 */ val None: atAngularCompilerLib.srcCoreMod.ViewFlags.None with scala.Double = js.native
-    /* 2 */ val OnPush: atAngularCompilerLib.srcCoreMod.ViewFlags.OnPush with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[atAngularCompilerLib.srcCoreMod.ViewFlags with scala.Double] = js.native
   }
   
 }

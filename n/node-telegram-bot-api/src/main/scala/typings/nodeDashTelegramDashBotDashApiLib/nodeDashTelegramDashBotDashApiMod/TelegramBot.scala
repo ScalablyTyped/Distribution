@@ -13,47 +13,47 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_callback_query(
+  def addListener_callbackquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.callback_query,
     listener: js.Function1[/* query */ CallbackQuery, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_channel_post(
+  def addListener_channelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_chosen_inline_result(
+  def addListener_choseninlineresult(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.chosen_inline_result,
     listener: js.Function1[/* result */ ChosenInlineResult, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_edited_channel_post(
+  def addListener_editedchannelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_edited_channel_post_caption(
+  def addListener_editedchannelpostcaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_edited_channel_post_text(
+  def addListener_editedchannelposttext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_edited_message(
+  def addListener_editedmessage(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_edited_message_caption(
+  def addListener_editedmessagecaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_edited_message_text(
+  def addListener_editedmessagetext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
@@ -63,7 +63,7 @@ trait TelegramBot
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_inline_query(
+  def addListener_inlinequery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.inline_query,
     listener: js.Function1[/* query */ InlineQuery, scala.Unit]
   ): this.type = js.native
@@ -73,22 +73,22 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_polling_error(
+  def addListener_pollingerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_pre_checkout_query(
+  def addListener_precheckoutquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.pre_checkout_query,
     listener: js.Function1[/* query */ PreCheckoutQuery, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_shipping_query(
+  def addListener_shippingquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.shipping_query,
     listener: js.Function1[/* query */ ShippingQuery, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def addListener_webhook_error(
+  def addListener_webhookerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
@@ -224,47 +224,47 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_callback_query(
+  def off_callbackquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.callback_query,
     listener: js.Function1[/* query */ CallbackQuery, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_channel_post(
+  def off_channelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_chosen_inline_result(
+  def off_choseninlineresult(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.chosen_inline_result,
     listener: js.Function1[/* result */ ChosenInlineResult, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_edited_channel_post(
+  def off_editedchannelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_edited_channel_post_caption(
+  def off_editedchannelpostcaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_edited_channel_post_text(
+  def off_editedchannelposttext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_edited_message(
+  def off_editedmessage(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_edited_message_caption(
+  def off_editedmessagecaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_edited_message_text(
+  def off_editedmessagetext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
@@ -274,7 +274,7 @@ trait TelegramBot
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_inline_query(
+  def off_inlinequery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.inline_query,
     listener: js.Function1[/* query */ InlineQuery, scala.Unit]
   ): this.type = js.native
@@ -284,22 +284,22 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_polling_error(
+  def off_pollingerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_pre_checkout_query(
+  def off_precheckoutquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.pre_checkout_query,
     listener: js.Function1[/* query */ PreCheckoutQuery, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_shipping_query(
+  def off_shippingquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.shipping_query,
     listener: js.Function1[/* query */ ShippingQuery, scala.Unit]
   ): this.type = js.native
   @JSName("off")
-  def off_webhook_error(
+  def off_webhookerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
@@ -332,47 +332,47 @@ trait TelegramBot
     callback: js.Function2[/* msg */ Message, /* match */ stdLib.RegExpExecArray | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_callback_query(
+  def on_callbackquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.callback_query,
     listener: js.Function1[/* query */ CallbackQuery, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_channel_post(
+  def on_channelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_chosen_inline_result(
+  def on_choseninlineresult(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.chosen_inline_result,
     listener: js.Function1[/* result */ ChosenInlineResult, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_edited_channel_post(
+  def on_editedchannelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_edited_channel_post_caption(
+  def on_editedchannelpostcaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_edited_channel_post_text(
+  def on_editedchannelposttext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_edited_message(
+  def on_editedmessage(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_edited_message_caption(
+  def on_editedmessagecaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_edited_message_text(
+  def on_editedmessagetext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
@@ -382,7 +382,7 @@ trait TelegramBot
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_inline_query(
+  def on_inlinequery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.inline_query,
     listener: js.Function1[/* query */ InlineQuery, scala.Unit]
   ): this.type = js.native
@@ -392,22 +392,22 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_polling_error(
+  def on_pollingerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_pre_checkout_query(
+  def on_precheckoutquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.pre_checkout_query,
     listener: js.Function1[/* query */ PreCheckoutQuery, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_shipping_query(
+  def on_shippingquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.shipping_query,
     listener: js.Function1[/* query */ ShippingQuery, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_webhook_error(
+  def on_webhookerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
@@ -416,47 +416,47 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_callback_query(
+  def once_callbackquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.callback_query,
     listener: js.Function1[/* query */ CallbackQuery, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_channel_post(
+  def once_channelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_chosen_inline_result(
+  def once_choseninlineresult(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.chosen_inline_result,
     listener: js.Function1[/* result */ ChosenInlineResult, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_edited_channel_post(
+  def once_editedchannelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_edited_channel_post_caption(
+  def once_editedchannelpostcaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_edited_channel_post_text(
+  def once_editedchannelposttext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_edited_message(
+  def once_editedmessage(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_edited_message_caption(
+  def once_editedmessagecaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_edited_message_text(
+  def once_editedmessagetext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
@@ -466,7 +466,7 @@ trait TelegramBot
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_inline_query(
+  def once_inlinequery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.inline_query,
     listener: js.Function1[/* query */ InlineQuery, scala.Unit]
   ): this.type = js.native
@@ -476,22 +476,22 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_polling_error(
+  def once_pollingerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_pre_checkout_query(
+  def once_precheckoutquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.pre_checkout_query,
     listener: js.Function1[/* query */ PreCheckoutQuery, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_shipping_query(
+  def once_shippingquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.shipping_query,
     listener: js.Function1[/* query */ ShippingQuery, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_webhook_error(
+  def once_webhookerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
@@ -503,47 +503,47 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_callback_query(
+  def prependListener_callbackquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.callback_query,
     listener: js.Function1[/* query */ CallbackQuery, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_channel_post(
+  def prependListener_channelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_chosen_inline_result(
+  def prependListener_choseninlineresult(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.chosen_inline_result,
     listener: js.Function1[/* result */ ChosenInlineResult, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_edited_channel_post(
+  def prependListener_editedchannelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_edited_channel_post_caption(
+  def prependListener_editedchannelpostcaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_edited_channel_post_text(
+  def prependListener_editedchannelposttext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_edited_message(
+  def prependListener_editedmessage(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_edited_message_caption(
+  def prependListener_editedmessagecaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_edited_message_text(
+  def prependListener_editedmessagetext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
@@ -553,7 +553,7 @@ trait TelegramBot
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_inline_query(
+  def prependListener_inlinequery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.inline_query,
     listener: js.Function1[/* query */ InlineQuery, scala.Unit]
   ): this.type = js.native
@@ -563,22 +563,22 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_polling_error(
+  def prependListener_pollingerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_pre_checkout_query(
+  def prependListener_precheckoutquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.pre_checkout_query,
     listener: js.Function1[/* query */ PreCheckoutQuery, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_shipping_query(
+  def prependListener_shippingquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.shipping_query,
     listener: js.Function1[/* query */ ShippingQuery, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def prependListener_webhook_error(
+  def prependListener_webhookerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
@@ -587,47 +587,47 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_callback_query(
+  def prependOnceListener_callbackquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.callback_query,
     listener: js.Function1[/* query */ CallbackQuery, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_channel_post(
+  def prependOnceListener_channelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_chosen_inline_result(
+  def prependOnceListener_choseninlineresult(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.chosen_inline_result,
     listener: js.Function1[/* result */ ChosenInlineResult, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_edited_channel_post(
+  def prependOnceListener_editedchannelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_edited_channel_post_caption(
+  def prependOnceListener_editedchannelpostcaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_edited_channel_post_text(
+  def prependOnceListener_editedchannelposttext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_edited_message(
+  def prependOnceListener_editedmessage(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_edited_message_caption(
+  def prependOnceListener_editedmessagecaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_edited_message_text(
+  def prependOnceListener_editedmessagetext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
@@ -637,7 +637,7 @@ trait TelegramBot
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_inline_query(
+  def prependOnceListener_inlinequery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.inline_query,
     listener: js.Function1[/* query */ InlineQuery, scala.Unit]
   ): this.type = js.native
@@ -647,22 +647,22 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_polling_error(
+  def prependOnceListener_pollingerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_pre_checkout_query(
+  def prependOnceListener_precheckoutquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.pre_checkout_query,
     listener: js.Function1[/* query */ PreCheckoutQuery, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_shipping_query(
+  def prependOnceListener_shippingquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.shipping_query,
     listener: js.Function1[/* query */ ShippingQuery, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def prependOnceListener_webhook_error(
+  def prependOnceListener_webhookerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
@@ -682,47 +682,47 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_callback_query(
+  def removeListener_callbackquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.callback_query,
     listener: js.Function1[/* query */ CallbackQuery, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_channel_post(
+  def removeListener_channelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_chosen_inline_result(
+  def removeListener_choseninlineresult(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.chosen_inline_result,
     listener: js.Function1[/* result */ ChosenInlineResult, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_edited_channel_post(
+  def removeListener_editedchannelpost(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_edited_channel_post_caption(
+  def removeListener_editedchannelpostcaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_edited_channel_post_text(
+  def removeListener_editedchannelposttext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_channel_post_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_edited_message(
+  def removeListener_editedmessage(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_edited_message_caption(
+  def removeListener_editedmessagecaption(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_caption,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_edited_message_text(
+  def removeListener_editedmessagetext(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.edited_message_text,
     listener: js.Function1[/* message */ Message, scala.Unit]
   ): this.type = js.native
@@ -732,7 +732,7 @@ trait TelegramBot
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_inline_query(
+  def removeListener_inlinequery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.inline_query,
     listener: js.Function1[/* query */ InlineQuery, scala.Unit]
   ): this.type = js.native
@@ -742,22 +742,22 @@ trait TelegramBot
     listener: js.Function2[/* message */ Message, /* metadata */ Metadata, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_polling_error(
+  def removeListener_pollingerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.polling_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_pre_checkout_query(
+  def removeListener_precheckoutquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.pre_checkout_query,
     listener: js.Function1[/* query */ PreCheckoutQuery, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_shipping_query(
+  def removeListener_shippingquery(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.shipping_query,
     listener: js.Function1[/* query */ ShippingQuery, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def removeListener_webhook_error(
+  def removeListener_webhookerror(
     event: nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiLibStrings.webhook_error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native

@@ -35,5 +35,9 @@ class OrderLineItemTax () extends js.Object {
     * See [OrderLineItemTaxType](#type-orderlineitemtaxtype) for possible values.
     */
   var `type`: js.UndefOr[squareDashConnectLib.squareDashConnectMod.OrderLineItemTaxNs.TypeEnum] = js.native
+  /**
+    * The tax's Unique identifier, unique only within this order. This field is read-only.
+    */
+  var uid: js.UndefOr[java.lang.String] = js.native
 }
 

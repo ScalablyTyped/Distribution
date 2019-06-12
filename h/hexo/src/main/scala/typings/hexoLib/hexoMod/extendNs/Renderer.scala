@@ -16,7 +16,8 @@ trait Renderer extends js.Object {
       js.Promise[java.lang.String]
     ]
   ): scala.Unit = js.native
-  def register(
+  @JSName("register")
+  def register_false(
     srcExt: java.lang.String,
     outExt: java.lang.String,
     fn: js.Function2[
@@ -26,7 +27,8 @@ trait Renderer extends js.Object {
     ],
     sync: hexoLib.hexoLibNumbers.`false`
   ): scala.Unit = js.native
-  def register(
+  @JSName("register")
+  def register_true(
     srcExt: java.lang.String,
     outExt: java.lang.String,
     fn: js.Function2[/* data */ hexoLib.hexoMod.HexoRendererData, /* options */ js.Any, java.lang.String],

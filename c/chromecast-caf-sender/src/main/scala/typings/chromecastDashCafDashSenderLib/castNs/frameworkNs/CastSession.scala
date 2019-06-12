@@ -10,11 +10,24 @@ import scala.scalajs.js.annotation._
 class CastSession protected () extends js.Object {
   def this(sessionObj: chromeLib.chromeNs.castNs.Session, state: SessionState) = this()
   def addEventListener(
-    `type`: SessionEventType,
-    handler: js.Function1[
-      (/* event */ ActiveInputStateEventData) | (/* event */ ApplicationMetadataEventData) | (/* event */ ApplicationStatusEventData) | (/* event */ MediaSessionEventData) | (/* event */ VolumeEventData), 
-      scala.Unit
-    ]
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.ACTIVE_INPUT_STATE_CHANGED,
+    handler: js.Function1[/* event */ ActiveInputStateEventData, scala.Unit]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.APPLICATION_METADATA_CHANGED,
+    handler: js.Function1[/* event */ ApplicationMetadataEventData, scala.Unit]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.APPLICATION_STATUS_CHANGED,
+    handler: js.Function1[/* event */ ApplicationStatusEventData, scala.Unit]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.MEDIA_SESSION,
+    handler: js.Function1[/* event */ MediaSessionEventData, scala.Unit]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.VOLUME_CHANGED,
+    handler: js.Function1[/* event */ VolumeEventData, scala.Unit]
   ): scala.Unit = js.native
   def addMessageListener(
     namespace: java.lang.String,
@@ -33,11 +46,24 @@ class CastSession protected () extends js.Object {
   def isMute(): scala.Boolean = js.native
   def loadMedia(request: chromeLib.chromeNs.castNs.mediaNs.LoadRequest): js.Promise[js.UndefOr[chromeLib.chromeNs.castNs.ErrorCode]] = js.native
   def removeEventListener(
-    `type`: SessionEventType,
-    handler: js.Function1[
-      (/* event */ ActiveInputStateEventData) | (/* event */ ApplicationMetadataEventData) | (/* event */ ApplicationStatusEventData) | (/* event */ MediaSessionEventData) | (/* event */ VolumeEventData), 
-      scala.Unit
-    ]
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.ACTIVE_INPUT_STATE_CHANGED,
+    handler: js.Function1[/* event */ ActiveInputStateEventData, scala.Unit]
+  ): scala.Unit = js.native
+  def removeEventListener(
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.APPLICATION_METADATA_CHANGED,
+    handler: js.Function1[/* event */ ApplicationMetadataEventData, scala.Unit]
+  ): scala.Unit = js.native
+  def removeEventListener(
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.APPLICATION_STATUS_CHANGED,
+    handler: js.Function1[/* event */ ApplicationStatusEventData, scala.Unit]
+  ): scala.Unit = js.native
+  def removeEventListener(
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.MEDIA_SESSION,
+    handler: js.Function1[/* event */ MediaSessionEventData, scala.Unit]
+  ): scala.Unit = js.native
+  def removeEventListener(
+    `type`: chromecastDashCafDashSenderLib.castNs.frameworkNs.SessionEventType.VOLUME_CHANGED,
+    handler: js.Function1[/* event */ VolumeEventData, scala.Unit]
   ): scala.Unit = js.native
   def removeMessageListener(
     namespace: java.lang.String,

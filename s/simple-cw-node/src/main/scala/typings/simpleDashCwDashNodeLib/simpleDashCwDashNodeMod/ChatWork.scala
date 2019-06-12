@@ -78,12 +78,12 @@ trait ChatWork extends js.Object {
   ): scala.Unit = js.native
   // http://developer.chatwork.com/ja/endpoint_my.html
   @JSName("get")
-  def `get_my/status`(
+  def get_mystatus(
     api: simpleDashCwDashNodeLib.simpleDashCwDashNodeLibStrings.`my/status`,
     callback: js.Function2[/* err */ stdLib.Error, /* res */ superagentLib.superagentMod.Response, scala.Unit]
   ): scala.Unit = js.native
   @JSName("get")
-  def `get_my/tasks`(
+  def get_mytasks(
     api: simpleDashCwDashNodeLib.simpleDashCwDashNodeLibStrings.`my/tasks`,
     callback: js.Function2[/* err */ stdLib.Error, /* res */ superagentLib.superagentMod.Response, scala.Unit]
   ): scala.Unit = js.native

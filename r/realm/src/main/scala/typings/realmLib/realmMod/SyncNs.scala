@@ -55,6 +55,13 @@ object SyncNs extends js.Object {
   class Session ()
     extends realmLib.RealmNs.SyncNs.Session
   
+  /* Rewritten from type alias, can be one of: 
+    - realmLib.realmLibStrings.`after-upload`
+    - realmLib.realmLibStrings.immediately
+    - realmLib.realmLibStrings.never
+  */
+  trait SessionStopPolicy extends js.Object
+  
   /**
     * Subscription
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.Subscription.html }
@@ -159,15 +166,6 @@ object SyncNs extends js.Object {
     val Warn: realmLib.RealmNs.SyncNs.NumericLogLevel.Warn with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.NumericLogLevel with java.lang.String] = js.native
-  }
-  
-  @js.native
-  object SessionStopPolicy extends js.Object {
-    /* "after-upload" */ val AfterUpload: realmLib.RealmNs.SyncNs.SessionStopPolicy.AfterUpload with java.lang.String = js.native
-    /* "immediately" */ val Immediately: realmLib.RealmNs.SyncNs.SessionStopPolicy.Immediately with java.lang.String = js.native
-    /* "never" */ val Never: realmLib.RealmNs.SyncNs.SessionStopPolicy.Never with java.lang.String = js.native
-    @JSBracketAccess
-    def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.SessionStopPolicy with java.lang.String] = js.native
   }
   
   @js.native

@@ -20,6 +20,8 @@ trait StateNodeDefinition[TContext, TStateSchema /* <: StateSchema */, TEvent /*
   var initial_StateNodeDefinition: js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
   ] = js.undefined
+  @JSName("invoke")
+  var invoke_StateNodeDefinition: js.Array[InvokeDefinition[TContext, TEvent]]
   @JSName("key")
   var key_StateNodeDefinition: java.lang.String
   @JSName("onEntry")
@@ -42,6 +44,7 @@ object StateNodeDefinition {
   def apply[TContext, TStateSchema /* <: StateSchema */, TEvent /* <: EventObject */](
     activities: js.Array[ActivityDefinition[TContext, TEvent]],
     id: java.lang.String,
+    invoke: js.Array[InvokeDefinition[TContext, TEvent]],
     key: java.lang.String,
     meta: js.Any,
     on: TransitionsDefinition[TContext, TEvent],
@@ -58,14 +61,13 @@ object StateNodeDefinition {
     exit: SingleOrArray[Action[TContext, TEvent]] = null,
     history: scala.Boolean | xstateLib.xstateLibStrings.shallow | xstateLib.xstateLibStrings.deep = null,
     initial: /* import warning: ImportType.apply Failed type conversion: keyof TStateSchema['states'] */ js.Any = null,
-    invoke: InvokesConfig[TContext, TEvent] = null,
     onDone: java.lang.String | (SingleOrArray[TransitionConfig[TContext, DoneEventObject]]) = null,
     parallel: js.UndefOr[scala.Boolean] = js.undefined,
     parent: xstateLib.libStateNodeMod.StateNode[TContext, _, TEvent] = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined,
     version: java.lang.String = null
   ): StateNodeDefinition[TContext, TStateSchema, TEvent] = {
-    val __obj = js.Dynamic.literal(activities = activities, id = id, key = key, meta = meta, on = on, onEntry = onEntry, onExit = onExit, order = order, states = states)
+    val __obj = js.Dynamic.literal(activities = activities, id = id, invoke = invoke, key = key, meta = meta, on = on, onEntry = onEntry, onExit = onExit, order = order, states = states)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
@@ -75,7 +77,6 @@ object StateNodeDefinition {
     if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
     if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
     if (initial != null) __obj.updateDynamic("initial")(initial)
-    if (invoke != null) __obj.updateDynamic("invoke")(invoke.asInstanceOf[js.Any])
     if (onDone != null) __obj.updateDynamic("onDone")(onDone.asInstanceOf[js.Any])
     if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel)
     if (parent != null) __obj.updateDynamic("parent")(parent)

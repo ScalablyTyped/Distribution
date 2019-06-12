@@ -13,7 +13,7 @@ class BaseExecutor[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C,
   val stderr: nodeLib.NodeJSNs.WriteStream = js.native
   val stdout: nodeLib.NodeJSNs.WriteStream = js.native
   @JSName("emit")
-  def `emit_operation-rpc`(
+  def emit_operationrpc(
     event: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`operation-rpc`,
     rpc: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/cli-framework/utils/ipc.RPCProcess */ js.Any
   ): scala.Boolean = js.native
@@ -23,7 +23,7 @@ class BaseExecutor[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C,
     hasFormat: BaseExecutorFormatHelpOptions
   ): js.Promise[java.lang.String] = js.native
   @JSName("on")
-  def `on_operation-rpc`(
+  def on_operationrpc(
     event: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.`operation-rpc`,
     callback: js.Function1[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_@ionic/cli-framework/utils/ipc.RPCProcess */ /* rpc */ js.Any, 

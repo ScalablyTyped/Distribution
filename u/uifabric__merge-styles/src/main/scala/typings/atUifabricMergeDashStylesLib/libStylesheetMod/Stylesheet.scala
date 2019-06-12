@@ -12,6 +12,8 @@ class Stylesheet () extends js.Object {
   var _classNameToArgs: js.Any = js.native
   var _config: js.Any = js.native
   var _counter: js.Any = js.native
+  var _createStyleElement: js.Any = js.native
+  var _getStyleElement: js.Any = js.native
   var _keyToClassName: js.Any = js.native
   var _lastStyleElement: js.UndefOr[js.Any] = js.native
   var _onResetCallbacks: js.Any = js.native
@@ -19,8 +21,6 @@ class Stylesheet () extends js.Object {
   var _rules: js.Any = js.native
   var _rulesToInsert: js.Any = js.native
   var _styleElement: js.UndefOr[js.Any] = js.native
-  /* private */ def _createStyleElement(): js.Any = js.native
-  /* private */ def _getStyleElement(): js.Any = js.native
   /**
     * Gets the arguments associated with a given classname which was
     * previously registered using cacheClassName.

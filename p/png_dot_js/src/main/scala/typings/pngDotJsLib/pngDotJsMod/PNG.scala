@@ -30,11 +30,15 @@ trait PNG extends js.Object {
   def getWidth(): scala.Double = js.native
   def setBitDepth(bitDepth: BitDepth): scala.Unit = js.native
   def setColorType(colorType: ColorType): scala.Unit = js.native
-  def setCompressionMethod(compressionMethod: pngDotJsLib.pngDotJsLibNumbers.`0`): scala.Unit = js.native
-  def setFilterMethod(filterMethod: pngDotJsLib.pngDotJsLibNumbers.`0`): scala.Unit = js.native
+  @JSName("setCompressionMethod")
+  def setCompressionMethod_0(compressionMethod: pngDotJsLib.pngDotJsLibNumbers.`0`): scala.Unit = js.native
+  @JSName("setFilterMethod")
+  def setFilterMethod_0(filterMethod: pngDotJsLib.pngDotJsLibNumbers.`0`): scala.Unit = js.native
   def setHeight(height: scala.Double): scala.Unit = js.native
-  def setInterlaceMethod(interlaceMethod: pngDotJsLib.pngDotJsLibNumbers.`0`): scala.Unit = js.native
-  def setInterlaceMethod(interlaceMethod: pngDotJsLib.pngDotJsLibNumbers.`1`): scala.Unit = js.native
+  @JSName("setInterlaceMethod")
+  def setInterlaceMethod_0(interlaceMethod: pngDotJsLib.pngDotJsLibNumbers.`0`): scala.Unit = js.native
+  @JSName("setInterlaceMethod")
+  def setInterlaceMethod_1(interlaceMethod: pngDotJsLib.pngDotJsLibNumbers.`1`): scala.Unit = js.native
   def setPalette(palette: js.Array[scala.Double]): scala.Unit = js.native
   def setWidth(width: scala.Double): scala.Unit = js.native
 }

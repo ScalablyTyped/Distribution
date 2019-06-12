@@ -115,25 +115,25 @@ class WshShell protected () extends js.Object {
     */
   def RegWrite(Name: java.lang.String, Value: js.Any): scala.Unit = js.native
   @JSName("RegWrite")
-  def RegWrite_REG_BINARY(
+  def RegWrite_REGBINARY(
     Name: java.lang.String,
     Value: js.Any,
     Type: activexDashIwshruntimelibraryLib.activexDashIwshruntimelibraryLibStrings.REG_BINARY
   ): scala.Unit = js.native
   @JSName("RegWrite")
-  def RegWrite_REG_DWORD(
+  def RegWrite_REGDWORD(
     Name: java.lang.String,
     Value: js.Any,
     Type: activexDashIwshruntimelibraryLib.activexDashIwshruntimelibraryLibStrings.REG_DWORD
   ): scala.Unit = js.native
   @JSName("RegWrite")
-  def RegWrite_REG_EXPAND_SZ(
+  def RegWrite_REGEXPANDSZ(
     Name: java.lang.String,
     Value: js.Any,
     Type: activexDashIwshruntimelibraryLib.activexDashIwshruntimelibraryLibStrings.REG_EXPAND_SZ
   ): scala.Unit = js.native
   @JSName("RegWrite")
-  def RegWrite_REG_SZ(
+  def RegWrite_REGSZ(
     Name: java.lang.String,
     Value: js.Any,
     Type: activexDashIwshruntimelibraryLib.activexDashIwshruntimelibraryLibStrings.REG_SZ

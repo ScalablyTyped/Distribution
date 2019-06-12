@@ -24,10 +24,12 @@ object ^ extends js.Object {
     */
   def decodeNumber(n: scala.Double): java.lang.String = js.native
   def decodeVLQ(value: java.lang.String): scala.Double = js.native
-  def decodeVLQ(value: java.lang.String, index: js.UndefOr[scala.Nothing], rest: adoneLib.adoneLibNumbers.`true`): adoneLib.Anon_Index = js.native
   def decodeVLQ(value: java.lang.String, index: scala.Double): scala.Double = js.native
-  def decodeVLQ(value: java.lang.String, index: scala.Double, rest: adoneLib.adoneLibNumbers.`true`): adoneLib.Anon_Index = js.native
   def decodeVLQ(value: java.lang.String, index: scala.Double, rest: scala.Boolean): scala.Double = js.native
+  @JSName("decodeVLQ")
+  def decodeVLQ_true(value: java.lang.String, index: js.UndefOr[scala.Nothing], rest: adoneLib.adoneLibNumbers.`true`): adoneLib.Anon_Index = js.native
+  @JSName("decodeVLQ")
+  def decodeVLQ_true(value: java.lang.String, index: scala.Double, rest: adoneLib.adoneLibNumbers.`true`): adoneLib.Anon_Index = js.native
   /**
     * Decodes base64 string/buffer into a buffer
     */

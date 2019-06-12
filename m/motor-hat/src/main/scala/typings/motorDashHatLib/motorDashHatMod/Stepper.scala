@@ -76,14 +76,16 @@ trait Stepper extends js.Object {
     * @param   freq    PWM frequency.
     */
   def setFrequencySync(freq: scala.Double): scala.Unit = js.native
-  def setMicrosteps(ms: motorDashHatLib.motorDashHatLibNumbers.`16`): scala.Unit = js.native
+  @JSName("setMicrosteps")
+  def setMicrosteps_16(ms: motorDashHatLib.motorDashHatLibNumbers.`16`): scala.Unit = js.native
   /**
     * Set desired number of microsteps per step.
     * (Used for microstepping)
     *
     * @param   ms      Microsteps per step
     */
-  def setMicrosteps(ms: motorDashHatLib.motorDashHatLibNumbers.`8`): scala.Unit = js.native
+  @JSName("setMicrosteps")
+  def setMicrosteps_8(ms: motorDashHatLib.motorDashHatLibNumbers.`8`): scala.Unit = js.native
   /**
     * Set motor speed for step().
     */

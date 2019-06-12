@@ -1,7 +1,7 @@
 
 # Scala.js typings for agora-rtc-sdk
 
-Typings are for version 2.3
+Typings are for version 2.6
 
 ## Library description:
 AgoraRTC SDK for web
@@ -35,15 +35,23 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for agora-rtc-sdk 2.3
+// Type definitions for agora-rtc-sdk 2.6
 // Project: https://github.com/AgoraIO/web-archive#readme
 // Definitions by: Menthays <https://github.com/menthays>
+//                 Derek Lu <https://github.com/scaret>
+//                 Wangjie <https://github.com/wangjie-agora>
+//                 Yu SiCheng <https://github.com/ysclyy>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
-/*~ If this module is a UMD module that exposes a global variable 'myLib' when
- *~ loaded outside a module loader environment, declare that global here.
- *~ Otherwise, delete this declaration.
+/**
+ * AgoraRTC is the entry point for all the methods that can be called in Agora Web SDK.
+ *
+ * You can use the AgoraRTC methods to create {@link Client} and {@link Stream} objects.
+ *
+ * Other methods of the AgoraRTC object check for system requirements and set up error logging.
  */
+
+// tslint:disable-next-line:export-just-namespace
 
 ```
 

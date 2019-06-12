@@ -30,32 +30,32 @@ trait JQuery extends js.Object {
     * Returns current content id
     */
   @JSName("embed")
-  def `embed_get id`(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get id`): java.lang.String = js.native
+  def embed_getid(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get id`): java.lang.String = js.native
   /**
     * Returns placeholder image url
     */
   @JSName("embed")
-  def `embed_get placeholder`(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get placeholder`): java.lang.String = js.native
+  def embed_getplaceholder(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get placeholder`): java.lang.String = js.native
   /**
     * Returns source name
     */
   @JSName("embed")
-  def `embed_get sources`(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get sources`): java.lang.String = js.native
+  def embed_getsources(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get sources`): java.lang.String = js.native
   /**
     * Returns source type
     */
   @JSName("embed")
-  def `embed_get type`(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get type`): java.lang.String = js.native
+  def embed_gettype(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get type`): java.lang.String = js.native
   /**
     * Returns URL with all parameters added
     */
   @JSName("embed")
-  def `embed_get url`(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get url`): java.lang.String = js.native
+  def embed_geturl(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`get url`): java.lang.String = js.native
   /**
     * Returns whether embed content has placeholder
     */
   @JSName("embed")
-  def `embed_has placeholder`(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`has placeholder`): scala.Boolean = js.native
+  def embed_hasplaceholder(behavior: semanticDashUiDashEmbedLib.semanticDashUiDashEmbedLibStrings.`has placeholder`): scala.Boolean = js.native
   /**
     * Hides embed content and shows placeholder content
     */

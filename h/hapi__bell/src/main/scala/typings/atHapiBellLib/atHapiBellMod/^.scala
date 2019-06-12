@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val plugin: atHapiHapiLib.atHapiHapiMod.Plugin[BellOptions] = js.native
   def simulate(credentialsFunc: RequestPassThrough): scala.Unit = js.native
-  def simulate(state: atHapiBellLib.atHapiBellLibNumbers.`false`): scala.Unit = js.native
+  @JSName("simulate")
+  def simulate_false(state: atHapiBellLib.atHapiBellLibNumbers.`false`): scala.Unit = js.native
 }
 

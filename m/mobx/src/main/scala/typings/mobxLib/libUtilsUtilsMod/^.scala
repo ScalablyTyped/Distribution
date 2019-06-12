@@ -28,12 +28,18 @@ object ^ extends js.Object {
   def invariant(check: js.Any): scala.Unit = js.native
   def invariant(check: js.Any, message: java.lang.String): scala.Unit = js.native
   def invariant(check: js.Any, message: scala.Boolean): scala.Unit = js.native
-  def invariant(check: mobxLib.mobxLibNumbers.`false`): scala.Nothing = js.native
-  def invariant(check: mobxLib.mobxLibNumbers.`false`, message: java.lang.String): scala.Nothing = js.native
-  def invariant(check: mobxLib.mobxLibNumbers.`false`, message: scala.Boolean): scala.Nothing = js.native
-  def invariant(check: mobxLib.mobxLibNumbers.`true`): scala.Unit = js.native
-  def invariant(check: mobxLib.mobxLibNumbers.`true`, message: java.lang.String): scala.Unit = js.native
-  def invariant(check: mobxLib.mobxLibNumbers.`true`, message: scala.Boolean): scala.Unit = js.native
+  @JSName("invariant")
+  def invariant_false(check: mobxLib.mobxLibNumbers.`false`): scala.Nothing = js.native
+  @JSName("invariant")
+  def invariant_false(check: mobxLib.mobxLibNumbers.`false`, message: java.lang.String): scala.Nothing = js.native
+  @JSName("invariant")
+  def invariant_false(check: mobxLib.mobxLibNumbers.`false`, message: scala.Boolean): scala.Nothing = js.native
+  @JSName("invariant")
+  def invariant_true(check: mobxLib.mobxLibNumbers.`true`): scala.Unit = js.native
+  @JSName("invariant")
+  def invariant_true(check: mobxLib.mobxLibNumbers.`true`, message: java.lang.String): scala.Unit = js.native
+  @JSName("invariant")
+  def invariant_true(check: mobxLib.mobxLibNumbers.`true`, message: scala.Boolean): scala.Unit = js.native
   def isArrayLike(x: js.Any): scala.Boolean = js.native
   def isES6Map(thing: js.Any): scala.Boolean = js.native
   def isES6Set(thing: js.Any): /* is std.Set<any> */ scala.Boolean = js.native

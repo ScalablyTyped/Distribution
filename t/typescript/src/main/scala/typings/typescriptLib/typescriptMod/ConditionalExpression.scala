@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait ConditionalExpression extends Expression {
   var colonToken: ColonToken = js.native
   var condition: Expression = js.native
+  @JSName("kind")
+  var kind_ConditionalExpression: typescriptLib.typescriptMod.SyntaxKind.ConditionalExpression = js.native
   var questionToken: QuestionToken = js.native
   var whenFalse: Expression = js.native
   var whenTrue: Expression = js.native

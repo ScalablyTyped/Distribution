@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait JSDocTypeExpression
   extends TypeNode
      with HasType {
+  @JSName("kind")
+  var kind_JSDocTypeExpression: typescriptLib.typescriptMod.SyntaxKind.JSDocTypeExpression = js.native
   var `type`: TypeNode = js.native
 }
 

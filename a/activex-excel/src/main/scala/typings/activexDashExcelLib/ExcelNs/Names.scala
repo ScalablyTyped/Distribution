@@ -19,13 +19,40 @@ trait Names extends js.Object {
   def apply(Index: js.UndefOr[scala.Nothing], IndexLocal: java.lang.String): Name = js.native
   def apply(Index: java.lang.String): Name = js.native
   def apply(Index: scala.Double): Name = js.native
-  def Add(
+  @JSName("Add")
+  def Add_1(
     Name: js.UndefOr[java.lang.String],
     RefersTo: js.UndefOr[java.lang.String],
     Visible: js.UndefOr[scala.Boolean],
-    MacroType: js.UndefOr[
-      activexDashExcelLib.activexDashExcelLibNumbers.`1` | activexDashExcelLib.activexDashExcelLibNumbers.`2` | activexDashExcelLib.activexDashExcelLibNumbers.`3`
-    ],
+    MacroType: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`1`],
+    ShortcutKey: js.UndefOr[java.lang.String],
+    Category: js.UndefOr[FunctionCategory | java.lang.String],
+    NameLocal: js.UndefOr[java.lang.String],
+    RefersToLocal: js.UndefOr[java.lang.String],
+    CategoryLocal: js.UndefOr[java.lang.String],
+    RefersToR1C1: js.UndefOr[java.lang.String],
+    RefersToR1C1Local: js.UndefOr[java.lang.String]
+  ): Name = js.native
+  @JSName("Add")
+  def Add_2(
+    Name: js.UndefOr[java.lang.String],
+    RefersTo: js.UndefOr[java.lang.String],
+    Visible: js.UndefOr[scala.Boolean],
+    MacroType: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`2`],
+    ShortcutKey: js.UndefOr[java.lang.String],
+    Category: js.UndefOr[FunctionCategory | java.lang.String],
+    NameLocal: js.UndefOr[java.lang.String],
+    RefersToLocal: js.UndefOr[java.lang.String],
+    CategoryLocal: js.UndefOr[java.lang.String],
+    RefersToR1C1: js.UndefOr[java.lang.String],
+    RefersToR1C1Local: js.UndefOr[java.lang.String]
+  ): Name = js.native
+  @JSName("Add")
+  def Add_3(
+    Name: js.UndefOr[java.lang.String],
+    RefersTo: js.UndefOr[java.lang.String],
+    Visible: js.UndefOr[scala.Boolean],
+    MacroType: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`3`],
     ShortcutKey: js.UndefOr[java.lang.String],
     Category: js.UndefOr[FunctionCategory | java.lang.String],
     NameLocal: js.UndefOr[java.lang.String],

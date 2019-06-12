@@ -17,25 +17,25 @@ object ShiftSortNs extends js.Object {
   @js.native
   object FieldEnum extends js.Object {
     @js.native
-    sealed trait CREATEDAT
+    sealed trait CREATED_AT
       extends squareDashConnectLib.squareDashConnectMod.ShiftSortNs.FieldEnum
     
     @js.native
-    sealed trait ENDAT
+    sealed trait END_AT
       extends squareDashConnectLib.squareDashConnectMod.ShiftSortNs.FieldEnum
     
     @js.native
-    sealed trait STARTAT
+    sealed trait START_AT
       extends squareDashConnectLib.squareDashConnectMod.ShiftSortNs.FieldEnum
     
     @js.native
-    sealed trait UPDATEDAT
+    sealed trait UPDATED_AT
       extends squareDashConnectLib.squareDashConnectMod.ShiftSortNs.FieldEnum
     
-    /* "CREATED_AT" */ val CREATEDAT: CREATEDAT with java.lang.String = js.native
-    /* "END_AT" */ val ENDAT: ENDAT with java.lang.String = js.native
-    /* "START_AT" */ val STARTAT: STARTAT with java.lang.String = js.native
-    /* "UPDATED_AT" */ val UPDATEDAT: UPDATEDAT with java.lang.String = js.native
+    /* "CREATED_AT" */ val CREATED_AT: CREATED_AT with java.lang.String = js.native
+    /* "END_AT" */ val END_AT: END_AT with java.lang.String = js.native
+    /* "START_AT" */ val START_AT: START_AT with java.lang.String = js.native
+    /* "UPDATED_AT" */ val UPDATED_AT: UPDATED_AT with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.ShiftSortNs.FieldEnum with java.lang.String

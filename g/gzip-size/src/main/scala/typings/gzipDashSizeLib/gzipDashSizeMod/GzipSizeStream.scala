@@ -13,39 +13,39 @@ trait GzipSizeStream
   		*/
   var gzipSize: js.UndefOr[scala.Double] = js.native
   @JSName("addListener")
-  def `addListener_gzip-size`(
+  def addListener_gzipsize(
     event: gzipDashSizeLib.gzipDashSizeLibStrings.`gzip-size`,
     listener: js.Function1[/* size */ scala.Double, scala.Unit]
   ): this.type = js.native
   @JSName("emit")
-  def `emit_gzip-size`(event: gzipDashSizeLib.gzipDashSizeLibStrings.`gzip-size`, size: scala.Double): scala.Boolean = js.native
+  def emit_gzipsize(event: gzipDashSizeLib.gzipDashSizeLibStrings.`gzip-size`, size: scala.Double): scala.Boolean = js.native
   @JSName("off")
-  def `off_gzip-size`(
+  def off_gzipsize(
     event: gzipDashSizeLib.gzipDashSizeLibStrings.`gzip-size`,
     listener: js.Function1[/* size */ scala.Double, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_gzip-size`(
+  def on_gzipsize(
     event: gzipDashSizeLib.gzipDashSizeLibStrings.`gzip-size`,
     listener: js.Function1[/* size */ scala.Double, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_gzip-size`(
+  def once_gzipsize(
     event: gzipDashSizeLib.gzipDashSizeLibStrings.`gzip-size`,
     listener: js.Function1[/* size */ scala.Double, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
-  def `prependListener_gzip-size`(
+  def prependListener_gzipsize(
     event: gzipDashSizeLib.gzipDashSizeLibStrings.`gzip-size`,
     listener: js.Function1[/* size */ scala.Double, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def `prependOnceListener_gzip-size`(
+  def prependOnceListener_gzipsize(
     event: gzipDashSizeLib.gzipDashSizeLibStrings.`gzip-size`,
     listener: js.Function1[/* size */ scala.Double, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_gzip-size`(
+  def removeListener_gzipsize(
     event: gzipDashSizeLib.gzipDashSizeLibStrings.`gzip-size`,
     listener: js.Function1[/* size */ scala.Double, scala.Unit]
   ): this.type = js.native

@@ -216,47 +216,31 @@ object ^ extends js.Object {
     */
   def neq(v1: java.lang.String, v2: java.lang.String): scala.Boolean = js.native
   def neq(v1: java.lang.String, v2: java.lang.String, loose: scala.Boolean): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: SemVer, range: Range, hilo: adoneLib.adoneLibStrings.`<`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: SemVer, range: Range, hilo: adoneLib.adoneLibStrings.`<`, loose: scala.Boolean): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: SemVer, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`<`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: SemVer, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`<`, loose: scala.Boolean): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: java.lang.String, range: Range, hilo: adoneLib.adoneLibStrings.`<`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: java.lang.String, range: Range, hilo: adoneLib.adoneLibStrings.`<`, loose: scala.Boolean): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: java.lang.String, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`<`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(
+  def outside(version: SemVer, range: Range, hilo: adoneLib.adoneLibStrings.`<`): scala.Boolean = js.native
+  def outside(version: SemVer, range: Range, hilo: adoneLib.adoneLibStrings.`<`, loose: scala.Boolean): scala.Boolean = js.native
+  def outside(version: SemVer, range: Range, hilo: adoneLib.adoneLibStrings.`>`): scala.Boolean = js.native
+  def outside(version: SemVer, range: Range, hilo: adoneLib.adoneLibStrings.`>`, loose: scala.Boolean): scala.Boolean = js.native
+  def outside(version: SemVer, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`<`): scala.Boolean = js.native
+  def outside(version: SemVer, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`<`, loose: scala.Boolean): scala.Boolean = js.native
+  def outside(version: SemVer, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`>`): scala.Boolean = js.native
+  def outside(version: SemVer, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`>`, loose: scala.Boolean): scala.Boolean = js.native
+  def outside(version: java.lang.String, range: Range, hilo: adoneLib.adoneLibStrings.`<`): scala.Boolean = js.native
+  def outside(version: java.lang.String, range: Range, hilo: adoneLib.adoneLibStrings.`<`, loose: scala.Boolean): scala.Boolean = js.native
+  def outside(version: java.lang.String, range: Range, hilo: adoneLib.adoneLibStrings.`>`): scala.Boolean = js.native
+  def outside(version: java.lang.String, range: Range, hilo: adoneLib.adoneLibStrings.`>`, loose: scala.Boolean): scala.Boolean = js.native
+  def outside(version: java.lang.String, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`<`): scala.Boolean = js.native
+  def outside(
     version: java.lang.String,
     range: java.lang.String,
     hilo: adoneLib.adoneLibStrings.`<`,
     loose: scala.Boolean
   ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: SemVer, range: Range, hilo: adoneLib.adoneLibStrings.`>`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: SemVer, range: Range, hilo: adoneLib.adoneLibStrings.`>`, loose: scala.Boolean): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: SemVer, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`>`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: SemVer, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`>`, loose: scala.Boolean): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: java.lang.String, range: Range, hilo: adoneLib.adoneLibStrings.`>`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: java.lang.String, range: Range, hilo: adoneLib.adoneLibStrings.`>`, loose: scala.Boolean): scala.Boolean = js.native
   /**
     * Returns true if the version is outside the bounds of the range in either the high or low direction.
     * The hilo argument must be either the string '>' or '<'. (This is the function called by gtr and ltr.)
     */
-  @JSName("outside")
-  def `outside_>`(version: java.lang.String, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`>`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(
+  def outside(version: java.lang.String, range: java.lang.String, hilo: adoneLib.adoneLibStrings.`>`): scala.Boolean = js.native
+  def outside(
     version: java.lang.String,
     range: java.lang.String,
     hilo: adoneLib.adoneLibStrings.`>`,

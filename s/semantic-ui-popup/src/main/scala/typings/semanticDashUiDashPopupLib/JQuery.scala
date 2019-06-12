@@ -15,22 +15,22 @@ trait JQuery extends js.Object {
     * @since 2.2.11
     */
   @JSName("popup")
-  def `popup_bind clickaway`(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`bind clickaway`): JQuery = js.native
+  def popup_bindclickaway(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`bind clickaway`): JQuery = js.native
   /**
     * @since 2.2.11
     */
   @JSName("popup")
-  def `popup_bind close on scroll`(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`bind close on scroll`): JQuery = js.native
+  def popup_bindcloseonscroll(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`bind close on scroll`): JQuery = js.native
   /**
     * @since 2.2.11
     */
   @JSName("popup")
-  def `popup_bind touch close`(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`bind touch close`): JQuery = js.native
+  def popup_bindtouchclose(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`bind touch close`): JQuery = js.native
   /**
     * Changes current popup content
     */
   @JSName("popup")
-  def `popup_change content`(
+  def popup_changecontent(
     behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`change content`,
     html: java.lang.String
   ): JQuery = js.native
@@ -48,7 +48,7 @@ trait JQuery extends js.Object {
     * Returns current popup dom element
     */
   @JSName("popup")
-  def `popup_get popup`(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`get popup`): JQuery = js.native
+  def popup_getpopup(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`get popup`): JQuery = js.native
   /**
     * Hides popup
     */
@@ -58,22 +58,22 @@ trait JQuery extends js.Object {
     * Hides all visible pop ups on the page
     */
   @JSName("popup")
-  def `popup_hide all`(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`hide all`): JQuery = js.native
+  def popup_hideall(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`hide all`): JQuery = js.native
   /**
     * Returns whether popup is hidden
     */
   @JSName("popup")
-  def `popup_is hidden`(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`is hidden`): scala.Boolean = js.native
+  def popup_ishidden(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`is hidden`): scala.Boolean = js.native
   /**
     * Returns whether popup is visible
     */
   @JSName("popup")
-  def `popup_is visible`(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`is visible`): scala.Boolean = js.native
+  def popup_isvisible(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`is visible`): scala.Boolean = js.native
   /**
     * Removes popup from the page
     */
   @JSName("popup")
-  def `popup_remove popup`(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`remove popup`): JQuery = js.native
+  def popup_removepopup(behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`remove popup`): JQuery = js.native
   /**
     * Adjusts popup when content size changes (only necessary for centered popups)
     */
@@ -83,7 +83,7 @@ trait JQuery extends js.Object {
     * Repositions a popup
     */
   @JSName("popup")
-  def `popup_set position`(
+  def popup_setposition(
     behavior: semanticDashUiDashPopupLib.semanticDashUiDashPopupLibStrings.`set position`,
     position: java.lang.String
   ): JQuery = js.native

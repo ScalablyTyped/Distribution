@@ -26,7 +26,8 @@ object esActionsMod extends js.Object {
   def done(id: java.lang.String, data: js.Any): xstateLib.esTypesMod.DoneEventObject = js.native
   def doneInvoke(id: java.lang.String): xstateLib.esTypesMod.DoneEvent = js.native
   def doneInvoke(id: java.lang.String, data: js.Any): xstateLib.esTypesMod.DoneEvent = js.native
-  def error(data: js.Any, src: java.lang.String): xstateLib.esTypesMod.ErrorExecutionEvent = js.native
+  def error(id: java.lang.String): xstateLib.esTypesMod.ErrorPlatformEvent with java.lang.String = js.native
+  def error(id: java.lang.String, data: js.Any): xstateLib.esTypesMod.ErrorPlatformEvent with java.lang.String = js.native
   def getActionFunction[TContext, TEvent /* <: xstateLib.esTypesMod.EventObject */](actionType: xstateLib.esTypesMod.ActionType): js.UndefOr[
     (xstateLib.esTypesMod.ActionObject[TContext, TEvent]) | (xstateLib.esTypesMod.ActionFunction[TContext, TEvent])
   ] = js.native
@@ -130,25 +131,26 @@ object esActionsMod extends js.Object {
   @JSName("actionTypes")
   @js.native
   object actionTypesNs extends js.Object {
-    val after: xstateLib.esTypesMod.ActionTypes = js.native
-    val assign: xstateLib.esTypesMod.ActionTypes = js.native
-    val cancel: xstateLib.esTypesMod.ActionTypes = js.native
-    val doneState: xstateLib.esTypesMod.ActionTypes = js.native
-    val errorExecution: xstateLib.esTypesMod.ActionTypes = js.native
-    val init: xstateLib.esTypesMod.ActionTypes = js.native
-    val invoke: xstateLib.esTypesMod.ActionTypes = js.native
-    val log: xstateLib.esTypesMod.ActionTypes = js.native
-    val nullEvent: xstateLib.esTypesMod.ActionTypes = js.native
-    val raise: xstateLib.esTypesMod.ActionTypes = js.native
-    val send: xstateLib.esTypesMod.ActionTypes = js.native
-    val start: xstateLib.esTypesMod.ActionTypes = js.native
-    val stop: xstateLib.esTypesMod.ActionTypes = js.native
-    val update: xstateLib.esTypesMod.ActionTypes = js.native
+    val after: xstateLib.esTypesMod.ActionTypes.After = js.native
+    val assign: xstateLib.esTypesMod.ActionTypes.Assign = js.native
+    val cancel: xstateLib.esTypesMod.ActionTypes.Cancel = js.native
+    val doneState: xstateLib.esTypesMod.ActionTypes.DoneState = js.native
+    val errorExecution: xstateLib.esTypesMod.ActionTypes.ErrorExecution = js.native
+    val errorPlatform: xstateLib.esTypesMod.ActionTypes.ErrorPlatform = js.native
+    val init: xstateLib.esTypesMod.ActionTypes.Init = js.native
+    val invoke: xstateLib.esTypesMod.ActionTypes.Invoke = js.native
+    val log: xstateLib.esTypesMod.ActionTypes.Log = js.native
+    val nullEvent: xstateLib.esTypesMod.ActionTypes.NullEvent = js.native
+    val raise: xstateLib.esTypesMod.ActionTypes.Raise = js.native
+    val send: xstateLib.esTypesMod.ActionTypes.Send = js.native
+    val start: xstateLib.esTypesMod.ActionTypes.Start = js.native
+    val stop: xstateLib.esTypesMod.ActionTypes.Stop = js.native
+    val update: xstateLib.esTypesMod.ActionTypes.Update = js.native
   }
   
   @js.native
   object initEvent extends js.Object {
-    var `type`: xstateLib.esTypesMod.ActionTypes = js.native
+    var `type`: xstateLib.esTypesMod.ActionTypes.Init = js.native
   }
   
 }

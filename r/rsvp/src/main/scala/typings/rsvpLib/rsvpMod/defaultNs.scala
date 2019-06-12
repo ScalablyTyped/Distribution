@@ -387,22 +387,6 @@ object defaultNs extends js.Object {
       scala.Unit
     ]
   ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[T]] = js.native
-  def denodeify[T, A](
-    nodeFunc: js.Function2[
-      /* arg1 */ A, 
-      /* callback */ js.Function2[/* err */ js.Any, /* data */ T, scala.Unit], 
-      scala.Unit
-    ],
-    options: rsvpLib.rsvpLibNumbers.`false`
-  ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[T]] = js.native
-  def denodeify[T, A](
-    nodeFunc: js.Function2[
-      /* arg1 */ A, 
-      /* callback */ js.Function2[/* err */ js.Any, /* data */ T, scala.Unit], 
-      scala.Unit
-    ],
-    options: rsvpLib.rsvpLibNumbers.`true`
-  ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[T]]] = js.native
   def denodeify[T, A, K1 /* <: java.lang.String */](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
@@ -448,24 +432,6 @@ object defaultNs extends js.Object {
       scala.Unit
     ]
   ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[T1]] = js.native
-  @JSName("denodeify")
-  def denodeify_T1T2A[T1, T2, A](
-    nodeFunc: js.Function2[
-      /* arg1 */ A, 
-      /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, scala.Unit], 
-      scala.Unit
-    ],
-    options: rsvpLib.rsvpLibNumbers.`false`
-  ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[T1]] = js.native
-  @JSName("denodeify")
-  def denodeify_T1T2A[T1, T2, A](
-    nodeFunc: js.Function2[
-      /* arg1 */ A, 
-      /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, scala.Unit], 
-      scala.Unit
-    ],
-    options: rsvpLib.rsvpLibNumbers.`true`
-  ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[js.Tuple2[T1, T2]]] = js.native
   // ----- denodeify ----- //
   // Here be absurd things because we don't have variadic types. All of
   // this will go away if we can ever write this:
@@ -484,7 +450,25 @@ object defaultNs extends js.Object {
     ]
   ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[T1]] = js.native
   @JSName("denodeify")
-  def denodeify_T1T2T3A[T1, T2, T3, A](
+  def denodeify_false[T, A](
+    nodeFunc: js.Function2[
+      /* arg1 */ A, 
+      /* callback */ js.Function2[/* err */ js.Any, /* data */ T, scala.Unit], 
+      scala.Unit
+    ],
+    options: rsvpLib.rsvpLibNumbers.`false`
+  ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[T]] = js.native
+  @JSName("denodeify")
+  def denodeify_false_T1T2A[T1, T2, A](
+    nodeFunc: js.Function2[
+      /* arg1 */ A, 
+      /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, scala.Unit], 
+      scala.Unit
+    ],
+    options: rsvpLib.rsvpLibNumbers.`false`
+  ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[T1]] = js.native
+  @JSName("denodeify")
+  def denodeify_false_T1T2T3A[T1, T2, T3, A](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
       /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, scala.Unit], 
@@ -493,7 +477,25 @@ object defaultNs extends js.Object {
     options: rsvpLib.rsvpLibNumbers.`false`
   ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[T1]] = js.native
   @JSName("denodeify")
-  def denodeify_T1T2T3A[T1, T2, T3, A](
+  def denodeify_true[T, A](
+    nodeFunc: js.Function2[
+      /* arg1 */ A, 
+      /* callback */ js.Function2[/* err */ js.Any, /* data */ T, scala.Unit], 
+      scala.Unit
+    ],
+    options: rsvpLib.rsvpLibNumbers.`true`
+  ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[T]]] = js.native
+  @JSName("denodeify")
+  def denodeify_true_T1T2A[T1, T2, A](
+    nodeFunc: js.Function2[
+      /* arg1 */ A, 
+      /* callback */ js.Function3[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, scala.Unit], 
+      scala.Unit
+    ],
+    options: rsvpLib.rsvpLibNumbers.`true`
+  ): js.Function1[/* arg1 */ A, rsvpLib.rsvpMod.RSVPNs.Promise[js.Tuple2[T1, T2]]] = js.native
+  @JSName("denodeify")
+  def denodeify_true_T1T2T3A[T1, T2, T3, A](
     nodeFunc: js.Function2[
       /* arg1 */ A, 
       /* callback */ js.Function4[/* err */ js.Any, /* data1 */ T1, /* data2 */ T2, /* data3 */ T3, scala.Unit], 

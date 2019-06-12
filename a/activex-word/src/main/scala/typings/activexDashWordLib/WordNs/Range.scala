@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Range protected () extends js.Object {
   val Application: activexDashWordLib.WordNs.Application = js.native
-  var Bold: scala.Boolean | WdConstants = js.native
-  var BoldBi: scala.Boolean | WdConstants = js.native
+  var Bold: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
+  var BoldBi: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
   val BookmarkID: scala.Double = js.native
   val Bookmarks: activexDashWordLib.WordNs.Bookmarks = js.native
   var Borders: activexDashWordLib.WordNs.Borders = js.native
@@ -54,8 +54,8 @@ class Range protected () extends js.Object {
   var ID: java.lang.String = js.native
   val InlineShapes: activexDashWordLib.WordNs.InlineShapes = js.native
   val IsEndOfRowMark: scala.Boolean = js.native
-  var Italic: scala.Boolean | WdConstants = js.native
-  var ItalicBi: scala.Boolean | WdConstants = js.native
+  var Italic: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
+  var ItalicBi: scala.Boolean | activexDashWordLib.activexDashWordLibNumbers.`9999999` | activexDashWordLib.activexDashWordLibNumbers.`9999998` = js.native
   var Kana: WdKana = js.native
   var LanguageDetected: scala.Boolean = js.native
   var LanguageID: WdLanguageID = js.native

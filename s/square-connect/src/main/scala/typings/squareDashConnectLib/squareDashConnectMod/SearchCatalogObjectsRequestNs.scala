@@ -30,7 +30,7 @@ object SearchCatalogObjectsRequestNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.SearchCatalogObjectsRequestNs.ObjectTypesEnum
     
     @js.native
-    sealed trait ITEMVARIATION
+    sealed trait ITEM_VARIATION
       extends squareDashConnectLib.squareDashConnectMod.SearchCatalogObjectsRequestNs.ObjectTypesEnum
     
     @js.native
@@ -38,7 +38,7 @@ object SearchCatalogObjectsRequestNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.SearchCatalogObjectsRequestNs.ObjectTypesEnum
     
     @js.native
-    sealed trait MODIFIERLIST
+    sealed trait MODIFIER_LIST
       extends squareDashConnectLib.squareDashConnectMod.SearchCatalogObjectsRequestNs.ObjectTypesEnum
     
     @js.native
@@ -49,9 +49,9 @@ object SearchCatalogObjectsRequestNs extends js.Object {
     /* "DISCOUNT" */ val DISCOUNT: DISCOUNT with java.lang.String = js.native
     /* "IMAGE" */ val IMAGE: IMAGE with java.lang.String = js.native
     /* "ITEM" */ val ITEM: ITEM with java.lang.String = js.native
-    /* "ITEM_VARIATION" */ val ITEMVARIATION: ITEMVARIATION with java.lang.String = js.native
+    /* "ITEM_VARIATION" */ val ITEM_VARIATION: ITEM_VARIATION with java.lang.String = js.native
     /* "MODIFIER" */ val MODIFIER: MODIFIER with java.lang.String = js.native
-    /* "MODIFIER_LIST" */ val MODIFIERLIST: MODIFIERLIST with java.lang.String = js.native
+    /* "MODIFIER_LIST" */ val MODIFIER_LIST: MODIFIER_LIST with java.lang.String = js.native
     /* "TAX" */ val TAX: TAX with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[

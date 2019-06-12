@@ -95,12 +95,12 @@ trait VectorTileLayer
   def loadStyle(style: java.lang.String): arcgisDashJsDashApiLib.IPromise[_] = js.native
   def loadStyle(style: js.Any): arcgisDashJsDashApiLib.IPromise[_] = js.native
   @JSName("on")
-  def `on_layerview-create`(
+  def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: VectorTileLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-destroy`(
+  def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: VectorTileLayerLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

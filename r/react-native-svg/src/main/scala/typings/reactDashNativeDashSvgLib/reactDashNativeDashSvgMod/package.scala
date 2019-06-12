@@ -16,5 +16,4 @@ package object reactDashNativeDashSvgMod {
   type BaselineShift = _BaselineShift | js.Array[NumberProp] | NumberProp
   // Common props
   type NumberProp = java.lang.String | scala.Double
-  type TMaskUnits = EMaskUnits
 }

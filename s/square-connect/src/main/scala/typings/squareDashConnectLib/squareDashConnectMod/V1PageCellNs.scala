@@ -45,20 +45,20 @@ object V1PageCellNs extends js.Object {
   @js.native
   object PlaceholderTypeEnum extends js.Object {
     @js.native
-    sealed trait ALLITEMS
+    sealed trait ALL_ITEMS
       extends squareDashConnectLib.squareDashConnectMod.V1PageCellNs.PlaceholderTypeEnum
     
     @js.native
-    sealed trait DISCOUNTSCATEGORY
+    sealed trait DISCOUNTS_CATEGORY
       extends squareDashConnectLib.squareDashConnectMod.V1PageCellNs.PlaceholderTypeEnum
     
     @js.native
-    sealed trait REWARDSFINDER
+    sealed trait REWARDS_FINDER
       extends squareDashConnectLib.squareDashConnectMod.V1PageCellNs.PlaceholderTypeEnum
     
-    /* "ALL_ITEMS" */ val ALLITEMS: ALLITEMS with java.lang.String = js.native
-    /* "DISCOUNTS_CATEGORY" */ val DISCOUNTSCATEGORY: DISCOUNTSCATEGORY with java.lang.String = js.native
-    /* "REWARDS_FINDER" */ val REWARDSFINDER: REWARDSFINDER with java.lang.String = js.native
+    /* "ALL_ITEMS" */ val ALL_ITEMS: ALL_ITEMS with java.lang.String = js.native
+    /* "DISCOUNTS_CATEGORY" */ val DISCOUNTS_CATEGORY: DISCOUNTS_CATEGORY with java.lang.String = js.native
+    /* "REWARDS_FINDER" */ val REWARDS_FINDER: REWARDS_FINDER with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.V1PageCellNs.PlaceholderTypeEnum with java.lang.String

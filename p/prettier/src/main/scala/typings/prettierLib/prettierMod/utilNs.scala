@@ -14,16 +14,14 @@ object utilNs extends js.Object {
   def getNextNonSpaceNonCommentCharacterIndex(text: java.lang.String, node: js.Any, options: prettierLib.prettierMod.ParserOptions): scala.Double = js.native
   def isNextLineEmpty(text: java.lang.String, node: js.Any, options: prettierLib.prettierMod.ParserOptions): scala.Boolean = js.native
   def isNextLineEmptyAfterIndex(text: java.lang.String, index: scala.Double): scala.Boolean = js.native
-  @JSName("makeString")
-  def makeString__quote(
-    rawContent: java.lang.String,
-    enclosingQuote: prettierLib.prettierLibStrings._quote,
-    unescapeUnnecessaryEscapes: scala.Boolean
-  ): java.lang.String = js.native
-  @JSName("makeString")
-  def `makeString_\"`(
+  def makeString(
     rawContent: java.lang.String,
     enclosingQuote: prettierLib.prettierLibStrings.BACKSLASH,
+    unescapeUnnecessaryEscapes: scala.Boolean
+  ): java.lang.String = js.native
+  def makeString(
+    rawContent: java.lang.String,
+    enclosingQuote: prettierLib.prettierLibStrings._quote,
     unescapeUnnecessaryEscapes: scala.Boolean
   ): java.lang.String = js.native
 }

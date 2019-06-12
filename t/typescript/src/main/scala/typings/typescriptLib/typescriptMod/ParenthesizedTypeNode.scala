@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait ParenthesizedTypeNode
   extends TypeNode
      with HasType {
+  @JSName("kind")
+  var kind_ParenthesizedTypeNode: typescriptLib.typescriptMod.SyntaxKind.ParenthesizedType = js.native
   var `type`: TypeNode = js.native
 }
 

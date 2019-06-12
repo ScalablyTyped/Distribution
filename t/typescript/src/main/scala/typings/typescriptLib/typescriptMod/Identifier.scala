@@ -26,6 +26,8 @@ trait Identifier
     */
   var escapedText: __String = js.native
   var isInJSDocNamespace: js.UndefOr[scala.Boolean] = js.native
+  @JSName("kind")
+  var kind_Identifier: typescriptLib.typescriptMod.SyntaxKind.Identifier = js.native
   var originalKeywordKind: js.UndefOr[SyntaxKind] = js.native
   val text: java.lang.String = js.native
 }

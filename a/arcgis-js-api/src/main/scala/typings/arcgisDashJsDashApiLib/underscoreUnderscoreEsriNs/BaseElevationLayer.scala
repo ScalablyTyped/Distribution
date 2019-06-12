@@ -65,12 +65,12 @@ trait BaseElevationLayer extends Layer {
   def getTileBounds(level: scala.Double, row: scala.Double, column: scala.Double): js.Array[scala.Double] = js.native
   def getTileBounds(level: scala.Double, row: scala.Double, column: scala.Double, out: js.Array[scala.Double]): js.Array[scala.Double] = js.native
   @JSName("on")
-  def `on_layerview-create`(
+  def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: BaseElevationLayerLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-destroy`(
+  def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: BaseElevationLayerLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

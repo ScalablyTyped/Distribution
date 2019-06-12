@@ -16,6 +16,8 @@ trait FunctionExpression
   var asteriskToken: js.UndefOr[AsteriskToken] = js.native
   var body: js.UndefOr[Block | Expression | FunctionBody] = js.native
   var exclamationToken: js.UndefOr[ExclamationToken] = js.native
+  @JSName("kind")
+  var kind_FunctionExpression: typescriptLib.typescriptMod.SyntaxKind.FunctionExpression = js.native
   var name: js.UndefOr[Identifier] = js.native
   var questionToken: js.UndefOr[QuestionToken] = js.native
 }

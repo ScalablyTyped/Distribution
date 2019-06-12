@@ -19,16 +19,18 @@ trait JQuery extends js.Object {
     * Invoke API methods after date picker initialization.
     */
   def pickadate(methodName: java.lang.String, arguments: js.Any*): js.Any = js.native
-  def pickadate(objectName: pickadateLib.pickadateLibStrings.DOLLARnode): JQuery = js.native
-  def pickadate(objectName: pickadateLib.pickadateLibStrings.DOLLARroot): JQuery = js.native
   def pickadate(options: pickadateLib.PickadateNs.DateOptions): JQuery = js.native
   @JSName("pickadate")
-  def pickadate__hidden(objectName: pickadateLib.pickadateLibStrings._hidden): stdLib.HTMLInputElement = js.native
+  def pickadate_hidden(objectName: pickadateLib.pickadateLibStrings._hidden): stdLib.HTMLInputElement = js.native
+  @JSName("pickadate")
+  def pickadate_node(objectName: pickadateLib.pickadateLibStrings.DOLLARnode): JQuery = js.native
   /**
     * Access the API object on an initialized date picker element.
     */
   @JSName("pickadate")
   def pickadate_picker(keyword: pickadateLib.pickadateLibStrings.picker): pickadateLib.PickadateNs.DatePicker = js.native
+  @JSName("pickadate")
+  def pickadate_root(objectName: pickadateLib.pickadateLibStrings.DOLLARroot): JQuery = js.native
   /**
     * Initialize a time picker.
     */
@@ -37,15 +39,17 @@ trait JQuery extends js.Object {
     * Invoke API methods after time picker initialization.
     */
   def pickatime(methodName: java.lang.String, arguments: js.Any*): js.Any = js.native
-  def pickatime(objectName: pickadateLib.pickadateLibStrings.DOLLARnode): JQuery = js.native
-  def pickatime(objectName: pickadateLib.pickadateLibStrings.DOLLARroot): JQuery = js.native
   def pickatime(options: pickadateLib.PickadateNs.TimeOptions): JQuery = js.native
   @JSName("pickatime")
-  def pickatime__hidden(objectName: pickadateLib.pickadateLibStrings._hidden): stdLib.HTMLInputElement = js.native
+  def pickatime_hidden(objectName: pickadateLib.pickadateLibStrings._hidden): stdLib.HTMLInputElement = js.native
+  @JSName("pickatime")
+  def pickatime_node(objectName: pickadateLib.pickadateLibStrings.DOLLARnode): JQuery = js.native
   /**
     * Access the API object on an initialized time picker element.
     */
   @JSName("pickatime")
   def pickatime_picker(keyword: pickadateLib.pickadateLibStrings.picker): pickadateLib.PickadateNs.TimePicker = js.native
+  @JSName("pickatime")
+  def pickatime_root(objectName: pickadateLib.pickadateLibStrings.DOLLARroot): JQuery = js.native
 }
 

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "browser-bunyan"
-version := "0.4-dt-20181219Z-1ebbb1"
+version := "0.4-dt-20181219Z-ebd0f3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-b41627",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-105a17",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

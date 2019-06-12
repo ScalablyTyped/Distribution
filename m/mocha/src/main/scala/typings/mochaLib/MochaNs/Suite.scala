@@ -75,7 +75,7 @@ class Suite protected ()
   @JSName("addListener")
   def addListener_beforeEach(event: mochaLib.mochaLibStrings.beforeEach, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def `addListener_post-require`(
+  def addListener_postrequire(
     event: mochaLib.mochaLibStrings.`post-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -85,7 +85,7 @@ class Suite protected ()
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_pre-require`(
+  def addListener_prerequire(
     event: mochaLib.mochaLibStrings.`pre-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -219,14 +219,14 @@ class Suite protected ()
   @JSName("emit")
   def emit_beforeEach(name: mochaLib.mochaLibStrings.beforeEach, hook: Hook): scala.Boolean = js.native
   @JSName("emit")
-  def `emit_post-require`(
+  def emit_postrequire(
     name: mochaLib.mochaLibStrings.`post-require`,
     context: MochaGlobals,
     file: java.lang.String,
     mocha: mochaLib.Mocha
   ): scala.Boolean = js.native
   @JSName("emit")
-  def `emit_pre-require`(
+  def emit_prerequire(
     name: mochaLib.mochaLibStrings.`pre-require`,
     context: MochaGlobals,
     file: java.lang.String,
@@ -280,7 +280,7 @@ class Suite protected ()
   @JSName("on")
   def on_beforeEach(event: mochaLib.mochaLibStrings.beforeEach, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("on")
-  def `on_post-require`(
+  def on_postrequire(
     event: mochaLib.mochaLibStrings.`post-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -290,7 +290,7 @@ class Suite protected ()
     ]
   ): this.type = js.native
   @JSName("on")
-  def `on_pre-require`(
+  def on_prerequire(
     event: mochaLib.mochaLibStrings.`pre-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -325,7 +325,7 @@ class Suite protected ()
   @JSName("once")
   def once_beforeEach(event: mochaLib.mochaLibStrings.beforeEach, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("once")
-  def `once_post-require`(
+  def once_postrequire(
     event: mochaLib.mochaLibStrings.`post-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -335,7 +335,7 @@ class Suite protected ()
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_pre-require`(
+  def once_prerequire(
     event: mochaLib.mochaLibStrings.`pre-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -370,7 +370,7 @@ class Suite protected ()
   @JSName("prependListener")
   def prependListener_beforeEach(event: mochaLib.mochaLibStrings.beforeEach, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("prependListener")
-  def `prependListener_post-require`(
+  def prependListener_postrequire(
     event: mochaLib.mochaLibStrings.`post-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -380,7 +380,7 @@ class Suite protected ()
     ]
   ): this.type = js.native
   @JSName("prependListener")
-  def `prependListener_pre-require`(
+  def prependListener_prerequire(
     event: mochaLib.mochaLibStrings.`pre-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -415,7 +415,7 @@ class Suite protected ()
   @JSName("prependOnceListener")
   def prependOnceListener_beforeEach(event: mochaLib.mochaLibStrings.beforeEach, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
-  def `prependOnceListener_post-require`(
+  def prependOnceListener_postrequire(
     event: mochaLib.mochaLibStrings.`post-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -425,7 +425,7 @@ class Suite protected ()
     ]
   ): this.type = js.native
   @JSName("prependOnceListener")
-  def `prependOnceListener_pre-require`(
+  def prependOnceListener_prerequire(
     event: mochaLib.mochaLibStrings.`pre-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -460,7 +460,7 @@ class Suite protected ()
   @JSName("removeListener")
   def removeListener_beforeEach(event: mochaLib.mochaLibStrings.beforeEach, listener: js.Function1[/* hook */ Hook, scala.Unit]): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_post-require`(
+  def removeListener_postrequire(
     event: mochaLib.mochaLibStrings.`post-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 
@@ -470,7 +470,7 @@ class Suite protected ()
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_pre-require`(
+  def removeListener_prerequire(
     event: mochaLib.mochaLibStrings.`pre-require`,
     listener: js.Function3[
       /* context */ MochaGlobals, 

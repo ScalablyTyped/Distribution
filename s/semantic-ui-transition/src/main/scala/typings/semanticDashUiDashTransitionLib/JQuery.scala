@@ -16,7 +16,7 @@ trait JQuery extends js.Object {
     * Clears all queued animations
     */
   @JSName("transition")
-  def `transition_clear queue`(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`clear queue`): JQuery = js.native
+  def transition_clearqueue(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`clear queue`): JQuery = js.native
   @JSName("transition")
   def transition_destroy(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.destroy): JQuery = js.native
   /**
@@ -33,19 +33,19 @@ trait JQuery extends js.Object {
     * Forces reflow using a more expensive but stable method
     */
   @JSName("transition")
-  def `transition_force repaint`(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`force repaint`): JQuery = js.native
+  def transition_forcerepaint(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`force repaint`): JQuery = js.native
   /**
     * Returns vendor prefixed animation property for animationend
     */
   @JSName("transition")
-  def `transition_get animation event`(
+  def transition_getanimationevent(
     behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`get animation event`
   ): java.lang.String = js.native
   /**
     * Returns vendor prefixed animation property for animationname
     */
   @JSName("transition")
-  def `transition_get animation name`(
+  def transition_getanimationname(
     behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`get animation name`
   ): java.lang.String = js.native
   /**
@@ -57,22 +57,22 @@ trait JQuery extends js.Object {
     * Returns whether transition is currently occurring
     */
   @JSName("transition")
-  def `transition_is animating`(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`is animating`): scala.Boolean = js.native
+  def transition_isanimating(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`is animating`): scala.Boolean = js.native
   /**
     * Returns whether animation looping is set
     */
   @JSName("transition")
-  def `transition_is looping`(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`is looping`): scala.Boolean = js.native
+  def transition_islooping(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`is looping`): scala.Boolean = js.native
   /**
     * Returns whether animations are supported
     */
   @JSName("transition")
-  def `transition_is supported`(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`is supported`): scala.Boolean = js.native
+  def transition_issupported(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`is supported`): scala.Boolean = js.native
   /**
     * Returns whether element is currently visible
     */
   @JSName("transition")
-  def `transition_is visible`(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`is visible`): scala.Boolean = js.native
+  def transition_isvisible(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`is visible`): scala.Boolean = js.native
   /**
     * Enables animation looping
     */
@@ -82,7 +82,7 @@ trait JQuery extends js.Object {
     * Removes looping state from element
     */
   @JSName("transition")
-  def `transition_remove looping`(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`remove looping`): JQuery = js.native
+  def transition_removelooping(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`remove looping`): JQuery = js.native
   /**
     * Triggers reflow on element
     */
@@ -97,19 +97,19 @@ trait JQuery extends js.Object {
     * Adds back cached names and styles to element
     */
   @JSName("transition")
-  def `transition_restore conditions`(
+  def transition_restoreconditions(
     behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`restore conditions`
   ): JQuery = js.native
   /**
     * Saves all class names and styles to cache to be retrieved after animation
     */
   @JSName("transition")
-  def `transition_save conditions`(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`save conditions`): JQuery = js.native
+  def transition_saveconditions(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`save conditions`): JQuery = js.native
   /**
     * Modifies element animation duration
     */
   @JSName("transition")
-  def `transition_set duration`(
+  def transition_setduration(
     behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`set duration`,
     duration: scala.Double
   ): JQuery = js.native
@@ -140,7 +140,7 @@ trait JQuery extends js.Object {
     * Stop current animation and queued animations
     */
   @JSName("transition")
-  def `transition_stop all`(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`stop all`): JQuery = js.native
+  def transition_stopall(behavior: semanticDashUiDashTransitionLib.semanticDashUiDashTransitionLibStrings.`stop all`): JQuery = js.native
   /**
     * Toggles between hide and show
     */

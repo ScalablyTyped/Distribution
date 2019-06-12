@@ -257,12 +257,12 @@ trait SceneView
     eventHandler: SceneViewClickEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_double-click`(
+  def on_doubleclick(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`double-click`,
     eventHandler: SceneViewDoubleClickEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_double-click`(
+  def on_doubleclick(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`double-click`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewDoubleClickEventHandler
@@ -301,122 +301,122 @@ trait SceneView
     eventHandler: SceneViewHoldEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_immediate-click`(
+  def on_immediateclick(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`immediate-click`,
     eventHandler: SceneViewImmediateClickEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_immediate-click`(
+  def on_immediateclick(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`immediate-click`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewImmediateClickEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_key-down`(
+  def on_keydown(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`key-down`,
     eventHandler: SceneViewKeyDownEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_key-down`(
+  def on_keydown(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`key-down`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewKeyDownEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_key-up`(
+  def on_keyup(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`key-up`,
     eventHandler: SceneViewKeyUpEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_key-up`(
+  def on_keyup(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`key-up`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewKeyUpEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-create`(
+  def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     eventHandler: SceneViewLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-create`(
+  def on_layerviewcreate(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-create`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewLayerviewCreateEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-destroy`(
+  def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     eventHandler: SceneViewLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_layerview-destroy`(
+  def on_layerviewdestroy(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`layerview-destroy`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewLayerviewDestroyEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_mouse-wheel`(
+  def on_mousewheel(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`mouse-wheel`,
     eventHandler: SceneViewMouseWheelEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_mouse-wheel`(
+  def on_mousewheel(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`mouse-wheel`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewMouseWheelEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-down`(
+  def on_pointerdown(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-down`,
     eventHandler: SceneViewPointerDownEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-down`(
+  def on_pointerdown(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-down`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewPointerDownEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-enter`(
+  def on_pointerenter(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-enter`,
     eventHandler: SceneViewPointerEnterEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-enter`(
+  def on_pointerenter(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-enter`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewPointerEnterEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-leave`(
+  def on_pointerleave(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-leave`,
     eventHandler: SceneViewPointerLeaveEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-leave`(
+  def on_pointerleave(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-leave`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewPointerLeaveEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-move`(
+  def on_pointermove(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-move`,
     eventHandler: SceneViewPointerMoveEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-move`(
+  def on_pointermove(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-move`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewPointerMoveEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-up`(
+  def on_pointerup(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-up`,
     eventHandler: SceneViewPointerUpEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   @JSName("on")
-  def `on_pointer-up`(
+  def on_pointerup(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`pointer-up`,
     modifiers: js.Array[java.lang.String],
     eventHandler: SceneViewPointerUpEventHandler

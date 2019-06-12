@@ -2018,11 +2018,7 @@ trait MathJsStatic extends js.Object {
   def range(str: java.lang.String, includeEnd: scala.Boolean): Matrix = js.native
   def rationalize(expr: java.lang.String): mathjsLib.Anon_Coefficients = js.native
   def rationalize(expr: java.lang.String, optional: js.Object): mathjsLib.Anon_Coefficients = js.native
-  def rationalize(expr: java.lang.String, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
-  def rationalize(expr: java.lang.String, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
   def rationalize(expr: java.lang.String, optional: scala.Boolean): mathjsLib.Anon_Coefficients = js.native
-  def rationalize(expr: java.lang.String, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
-  def rationalize(expr: java.lang.String, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
   /**
     * Transform a rationalizable expression in a rational fraction. If
     * rational fraction is one variable polynomial then converts the
@@ -2037,11 +2033,7 @@ trait MathJsStatic extends js.Object {
     */
   def rationalize(expr: MathNode): mathjsLib.Anon_Coefficients = js.native
   def rationalize(expr: MathNode, optional: js.Object): mathjsLib.Anon_Coefficients = js.native
-  def rationalize(expr: MathNode, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
-  def rationalize(expr: MathNode, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
   def rationalize(expr: MathNode, optional: scala.Boolean): mathjsLib.Anon_Coefficients = js.native
-  def rationalize(expr: MathNode, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
-  def rationalize(expr: MathNode, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
   @JSName("rationalize")
   def rationalize_MathNode(expr: java.lang.String): MathNode = js.native
   @JSName("rationalize")
@@ -2054,6 +2046,22 @@ trait MathJsStatic extends js.Object {
   def rationalize_MathNode(expr: MathNode, optional: js.Object): MathNode = js.native
   @JSName("rationalize")
   def rationalize_MathNode(expr: MathNode, optional: scala.Boolean): MathNode = js.native
+  @JSName("rationalize")
+  def rationalize_false(expr: java.lang.String, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
+  @JSName("rationalize")
+  def rationalize_false(expr: java.lang.String, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
+  @JSName("rationalize")
+  def rationalize_false(expr: MathNode, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
+  @JSName("rationalize")
+  def rationalize_false(expr: MathNode, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
+  @JSName("rationalize")
+  def rationalize_true(expr: java.lang.String, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
+  @JSName("rationalize")
+  def rationalize_true(expr: java.lang.String, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
+  @JSName("rationalize")
+  def rationalize_true(expr: MathNode, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
+  @JSName("rationalize")
+  def rationalize_true(expr: MathNode, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
   def re(x: BigNumber): scala.Double | BigNumber | MathArray | Matrix = js.native
   def re(x: Complex): scala.Double | BigNumber | MathArray | Matrix = js.native
   def re(x: MathArray): scala.Double | BigNumber | MathArray | Matrix = js.native

@@ -30,8 +30,9 @@ trait PoolCluster extends js.Object {
   def of(pattern: js.UndefOr[scala.Nothing], selector: java.lang.String): Pool = js.native
   def of(pattern: java.lang.String): Pool = js.native
   def of(pattern: java.lang.String, selector: java.lang.String): Pool = js.native
-  def of(pattern: mysqlLib.mysqlLibNumbers.`false`, selector: java.lang.String): Pool = js.native
   def of(pattern: scala.Null, selector: java.lang.String): Pool = js.native
+  @JSName("of")
+  def of_false(pattern: mysqlLib.mysqlLibNumbers.`false`, selector: java.lang.String): Pool = js.native
   /**
     * Set handler to be run on a certain event.
     */

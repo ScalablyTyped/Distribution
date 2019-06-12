@@ -112,7 +112,8 @@ trait Channel
   ): scala.Unit = js.native
   def get(queue: java.lang.String): scala.Unit = js.native
   def get(queue: java.lang.String, options: amqplibLib.propertiesMod.OptionsNs.Get): scala.Unit = js.native
-  def get(
+  @JSName("get")
+  def get_false(
     queue: java.lang.String,
     options: amqplibLib.propertiesMod.OptionsNs.Get,
     callback: js.Function2[

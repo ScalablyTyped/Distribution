@@ -17,14 +17,14 @@ object CustomerSortNs extends js.Object {
   @js.native
   object FieldEnum extends js.Object {
     @js.native
-    sealed trait CREATEDAT
+    sealed trait CREATED_AT
       extends squareDashConnectLib.squareDashConnectMod.CustomerSortNs.FieldEnum
     
     @js.native
     sealed trait DEFAULT
       extends squareDashConnectLib.squareDashConnectMod.CustomerSortNs.FieldEnum
     
-    /* "CREATED_AT" */ val CREATEDAT: CREATEDAT with java.lang.String = js.native
+    /* "CREATED_AT" */ val CREATED_AT: CREATED_AT with java.lang.String = js.native
     /* "DEFAULT" */ val DEFAULT: DEFAULT with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[

@@ -284,6 +284,42 @@ class Player protected () extends js.Object {
   		 * Loads and plays the previous video in the playlist.
   		 */
   def previousVideo(): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_onApiChange[TEvent /* <: PlayerEvent */](
+    eventName: youtubeLib.youtubeLibStrings.onApiChange,
+    listener: js.Function1[/* event */ TEvent, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_onError[TEvent /* <: PlayerEvent */](
+    eventName: youtubeLib.youtubeLibStrings.onError,
+    listener: js.Function1[/* event */ TEvent, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_onPlaybackQualityChange[TEvent /* <: PlayerEvent */](
+    eventName: youtubeLib.youtubeLibStrings.onPlaybackQualityChange,
+    listener: js.Function1[/* event */ TEvent, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_onPlaybackRateChange[TEvent /* <: PlayerEvent */](
+    eventName: youtubeLib.youtubeLibStrings.onPlaybackRateChange,
+    listener: js.Function1[/* event */ TEvent, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+  		 * Remove an event listener for the specified event.
+  		 *
+  		 * @param eventName   Name of the event.
+  		 * @param listener   Handler for the event.
+  		 */
+  @JSName("removeEventListener")
+  def removeEventListener_onReady[TEvent /* <: PlayerEvent */](
+    eventName: youtubeLib.youtubeLibStrings.onReady,
+    listener: js.Function1[/* event */ TEvent, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_onStateChange[TEvent /* <: PlayerEvent */](
+    eventName: youtubeLib.youtubeLibStrings.onStateChange,
+    listener: js.Function1[/* event */ TEvent, scala.Unit]
+  ): scala.Unit = js.native
   /**
   		 * Seeks to a specified time in the video.
   		 *

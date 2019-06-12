@@ -14,7 +14,7 @@ trait Session
     * Emitted when the client has requested incoming ssh-agent requests be forwarded to them.
     */
   @JSName("on")
-  def `on_auth-agent`(
+  def on_authagent(
     event: ssh2Lib.ssh2LibStrings.`auth-agent`,
     listener: js.Function2[
       /* accept */ js.Function0[scala.Boolean], 
@@ -121,7 +121,7 @@ trait Session
     * Emitted when the client reported a change in window dimensions during this session.
     */
   @JSName("on")
-  def `on_window-change`(
+  def on_windowchange(
     event: ssh2Lib.ssh2LibStrings.`window-change`,
     listener: js.Function3[
       /* accept */ js.Function0[scala.Boolean], 

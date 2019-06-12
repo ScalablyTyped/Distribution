@@ -5,84 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait StylingIndex extends js.Object
-
 /** Used as numeric pointer values to determine what cells to update in the `StylingContext` */
-@JSImport("@angular/core", "StylingIndex")
-@js.native
-object StylingIndex extends js.Object {
-  @js.native
-  sealed trait BitCountSize
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait BitMask
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait CachedMultiClasses
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait CachedMultiStyles
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait DirectiveRegistryPosition
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait ElementPosition
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait FlagsOffset
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait HostInstructionsQueue
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait InitialClassValuesPosition
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait InitialStyleValuesPosition
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait MasterFlagPosition
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait PlayerBuilderIndexOffset
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait PlayerContext
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait PropertyOffset
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait SinglePropOffsetPositions
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait SingleStylesStartPosition
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait Size
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-  @js.native
-  sealed trait ValueOffset
-    extends atAngularCoreLib.atAngularCoreMod.StylingIndex
-  
-}
+/* Rewritten from type alias, can be one of: 
+  - atAngularCoreLib.atAngularCoreLibNumbers.`0`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`1`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`2`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`3`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`4`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`5`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`6`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`7`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`8`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`9`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`10`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`14`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`16383`
+*/
+trait StylingIndex extends js.Object
 

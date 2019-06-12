@@ -1596,20 +1596,17 @@ trait builders
   def literal(value: scala.Boolean): astDashTypesLib.genNamedTypesMod.namedTypesNs.Literal = js.native
   def literal(value: scala.Double): astDashTypesLib.genNamedTypesMod.namedTypesNs.Literal = js.native
   def literal(value: stdLib.RegExp): astDashTypesLib.genNamedTypesMod.namedTypesNs.Literal = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_&&`(
+  def logicalExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`&&`,
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_??`(
+  def logicalExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`??`,
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_||`(
+  def logicalExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`||`,
     left: astDashTypesLib.genKindsMod.ExpressionKind,
     right: astDashTypesLib.genKindsMod.ExpressionKind
@@ -2560,36 +2557,39 @@ trait builders
     bound: astDashTypesLib.genKindsMod.TypeAnnotationKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeParameter = js.native
   def typeofTypeAnnotation(argument: astDashTypesLib.genKindsMod.FlowTypeKind): astDashTypesLib.genNamedTypesMod.namedTypesNs.TypeofTypeAnnotation = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_!`(
+  def unaryExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`!`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_!`(
+  def unaryExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`!`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     prefix: scala.Boolean
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_+`(
+  def unaryExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`+`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_+`(
+  def unaryExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`+`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     prefix: scala.Boolean
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_-`(
+  def unaryExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`-`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_-`(
+  def unaryExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`-`,
+    argument: astDashTypesLib.genKindsMod.ExpressionKind,
+    prefix: scala.Boolean
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
+  def unaryExpression(
+    operator: astDashTypesLib.astDashTypesLibStrings.`~`,
+    argument: astDashTypesLib.genKindsMod.ExpressionKind
+  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
+  def unaryExpression(
+    operator: astDashTypesLib.astDashTypesLibStrings.`~`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     prefix: scala.Boolean
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
@@ -2623,29 +2623,16 @@ trait builders
   @JSName("unaryExpression")
   def unaryExpression_void(
     operator: astDashTypesLib.astDashTypesLibStrings.void,
-    argument: astDashTypesLib.genKindsMod.ExpressionKind,
-    prefix: scala.Boolean
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_~`(
-    operator: astDashTypesLib.astDashTypesLibStrings.`~`,
-    argument: astDashTypesLib.genKindsMod.ExpressionKind
-  ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_~`(
-    operator: astDashTypesLib.astDashTypesLibStrings.`~`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     prefix: scala.Boolean
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnaryExpression = js.native
   def unionTypeAnnotation(types: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind]): astDashTypesLib.genNamedTypesMod.namedTypesNs.UnionTypeAnnotation = js.native
-  @JSName("updateExpression")
-  def `updateExpression_++`(
+  def updateExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`++`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     prefix: scala.Boolean
   ): astDashTypesLib.genNamedTypesMod.namedTypesNs.UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_--`(
+  def updateExpression(
     operator: astDashTypesLib.astDashTypesLibStrings.`--`,
     argument: astDashTypesLib.genKindsMod.ExpressionKind,
     prefix: scala.Boolean

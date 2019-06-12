@@ -267,12 +267,12 @@ trait WebviewTag
     * or other properties.
     */
   @JSName("addEventListener")
-  def `addEventListener_console-message`(
+  def addEventListener_consolemessage(
     event: electronLib.electronLibStrings.`console-message`,
     listener: js.Function1[/* event */ ConsoleMessageEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_console-message`(
+  def addEventListener_consolemessage(
     event: electronLib.electronLibStrings.`console-message`,
     listener: js.Function1[/* event */ ConsoleMessageEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -364,12 +364,12 @@ trait WebviewTag
     * Emitted when DevTools is closed.
     */
   @JSName("addEventListener")
-  def `addEventListener_devtools-closed`(
+  def addEventListener_devtoolsclosed(
     event: electronLib.electronLibStrings.`devtools-closed`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_devtools-closed`(
+  def addEventListener_devtoolsclosed(
     event: electronLib.electronLibStrings.`devtools-closed`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -378,12 +378,12 @@ trait WebviewTag
     * Emitted when DevTools is focused / opened.
     */
   @JSName("addEventListener")
-  def `addEventListener_devtools-focused`(
+  def addEventListener_devtoolsfocused(
     event: electronLib.electronLibStrings.`devtools-focused`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_devtools-focused`(
+  def addEventListener_devtoolsfocused(
     event: electronLib.electronLibStrings.`devtools-focused`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -392,12 +392,12 @@ trait WebviewTag
     * Emitted when DevTools is opened.
     */
   @JSName("addEventListener")
-  def `addEventListener_devtools-opened`(
+  def addEventListener_devtoolsopened(
     event: electronLib.electronLibStrings.`devtools-opened`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_devtools-opened`(
+  def addEventListener_devtoolsopened(
     event: electronLib.electronLibStrings.`devtools-opened`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -407,12 +407,12 @@ trait WebviewTag
     * meta tag:
     */
   @JSName("addEventListener")
-  def `addEventListener_did-change-theme-color`(
+  def addEventListener_didchangethemecolor(
     event: electronLib.electronLibStrings.`did-change-theme-color`,
     listener: js.Function1[/* event */ DidChangeThemeColorEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_did-change-theme-color`(
+  def addEventListener_didchangethemecolor(
     event: electronLib.electronLibStrings.`did-change-theme-color`,
     listener: js.Function1[/* event */ DidChangeThemeColorEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -422,12 +422,12 @@ trait WebviewTag
     * cancelled, e.g. window.stop() is invoked.
     */
   @JSName("addEventListener")
-  def `addEventListener_did-fail-load`(
+  def addEventListener_didfailload(
     event: electronLib.electronLibStrings.`did-fail-load`,
     listener: js.Function1[/* event */ DidFailLoadEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_did-fail-load`(
+  def addEventListener_didfailload(
     event: electronLib.electronLibStrings.`did-fail-load`,
     listener: js.Function1[/* event */ DidFailLoadEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -437,12 +437,12 @@ trait WebviewTag
     * spinning, and the onload event is dispatched.
     */
   @JSName("addEventListener")
-  def `addEventListener_did-finish-load`(
+  def addEventListener_didfinishload(
     event: electronLib.electronLibStrings.`did-finish-load`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_did-finish-load`(
+  def addEventListener_didfinishload(
     event: electronLib.electronLibStrings.`did-finish-load`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -451,12 +451,12 @@ trait WebviewTag
     * Fired when a frame has done navigation.
     */
   @JSName("addEventListener")
-  def `addEventListener_did-frame-finish-load`(
+  def addEventListener_didframefinishload(
     event: electronLib.electronLibStrings.`did-frame-finish-load`,
     listener: js.Function1[/* event */ DidFrameFinishLoadEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_did-frame-finish-load`(
+  def addEventListener_didframefinishload(
     event: electronLib.electronLibStrings.`did-frame-finish-load`,
     listener: js.Function1[/* event */ DidFrameFinishLoadEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -467,12 +467,12 @@ trait WebviewTag
     * Use did-navigate-in-page event for this purpose.
     */
   @JSName("addEventListener")
-  def `addEventListener_did-navigate`(
+  def addEventListener_didnavigate(
     event: electronLib.electronLibStrings.`did-navigate`,
     listener: js.Function1[/* event */ DidNavigateEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_did-navigate`(
+  def addEventListener_didnavigate(
     event: electronLib.electronLibStrings.`did-navigate`,
     listener: js.Function1[/* event */ DidNavigateEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -484,12 +484,12 @@ trait WebviewTag
     * event is triggered.
     */
   @JSName("addEventListener")
-  def `addEventListener_did-navigate-in-page`(
+  def addEventListener_didnavigateinpage(
     event: electronLib.electronLibStrings.`did-navigate-in-page`,
     listener: js.Function1[/* event */ DidNavigateInPageEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_did-navigate-in-page`(
+  def addEventListener_didnavigateinpage(
     event: electronLib.electronLibStrings.`did-navigate-in-page`,
     listener: js.Function1[/* event */ DidNavigateInPageEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -498,12 +498,12 @@ trait WebviewTag
     * Corresponds to the points in time when the spinner of the tab starts spinning.
     */
   @JSName("addEventListener")
-  def `addEventListener_did-start-loading`(
+  def addEventListener_didstartloading(
     event: electronLib.electronLibStrings.`did-start-loading`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_did-start-loading`(
+  def addEventListener_didstartloading(
     event: electronLib.electronLibStrings.`did-start-loading`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -512,12 +512,12 @@ trait WebviewTag
     * Corresponds to the points in time when the spinner of the tab stops spinning.
     */
   @JSName("addEventListener")
-  def `addEventListener_did-stop-loading`(
+  def addEventListener_didstoploading(
     event: electronLib.electronLibStrings.`did-stop-loading`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_did-stop-loading`(
+  def addEventListener_didstoploading(
     event: electronLib.electronLibStrings.`did-stop-loading`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -526,12 +526,12 @@ trait WebviewTag
     * Fired when document in the given frame is loaded.
     */
   @JSName("addEventListener")
-  def `addEventListener_dom-ready`(
+  def addEventListener_domready(
     event: electronLib.electronLibStrings.`dom-ready`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_dom-ready`(
+  def addEventListener_domready(
     event: electronLib.electronLibStrings.`dom-ready`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -661,12 +661,12 @@ trait WebviewTag
     * Fired when page enters fullscreen triggered by HTML API.
     */
   @JSName("addEventListener")
-  def `addEventListener_enter-html-full-screen`(
+  def addEventListener_enterhtmlfullscreen(
     event: electronLib.electronLibStrings.`enter-html-full-screen`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_enter-html-full-screen`(
+  def addEventListener_enterhtmlfullscreen(
     event: electronLib.electronLibStrings.`enter-html-full-screen`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -697,12 +697,12 @@ trait WebviewTag
     * Fired when a result is available for webview.findInPage request.
     */
   @JSName("addEventListener")
-  def `addEventListener_found-in-page`(
+  def addEventListener_foundinpage(
     event: electronLib.electronLibStrings.`found-in-page`,
     listener: js.Function1[/* event */ FoundInPageEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_found-in-page`(
+  def addEventListener_foundinpage(
     event: electronLib.electronLibStrings.`found-in-page`,
     listener: js.Function1[/* event */ FoundInPageEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -768,12 +768,12 @@ trait WebviewTag
     * page and embedder page:
     */
   @JSName("addEventListener")
-  def `addEventListener_ipc-message`(
+  def addEventListener_ipcmessage(
     event: electronLib.electronLibStrings.`ipc-message`,
     listener: js.Function1[/* event */ IpcMessageEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_ipc-message`(
+  def addEventListener_ipcmessage(
     event: electronLib.electronLibStrings.`ipc-message`,
     listener: js.Function1[/* event */ IpcMessageEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -815,12 +815,12 @@ trait WebviewTag
     * Fired when page leaves fullscreen triggered by HTML API.
     */
   @JSName("addEventListener")
-  def `addEventListener_leave-html-full-screen`(
+  def addEventListener_leavehtmlfullscreen(
     event: electronLib.electronLibStrings.`leave-html-full-screen`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_leave-html-full-screen`(
+  def addEventListener_leavehtmlfullscreen(
     event: electronLib.electronLibStrings.`leave-html-full-screen`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -843,12 +843,12 @@ trait WebviewTag
     * asynchronous resource loads.
     */
   @JSName("addEventListener")
-  def `addEventListener_load-commit`(
+  def addEventListener_loadcommit(
     event: electronLib.electronLibStrings.`load-commit`,
     listener: js.Function1[/* event */ LoadCommitEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_load-commit`(
+  def addEventListener_loadcommit(
     event: electronLib.electronLibStrings.`load-commit`,
     listener: js.Function1[/* event */ LoadCommitEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -912,12 +912,12 @@ trait WebviewTag
     * Emitted when media is paused or done playing.
     */
   @JSName("addEventListener")
-  def `addEventListener_media-paused`(
+  def addEventListener_mediapaused(
     event: electronLib.electronLibStrings.`media-paused`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_media-paused`(
+  def addEventListener_mediapaused(
     event: electronLib.electronLibStrings.`media-paused`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -926,12 +926,12 @@ trait WebviewTag
     * Emitted when media starts playing.
     */
   @JSName("addEventListener")
-  def `addEventListener_media-started-playing`(
+  def addEventListener_mediastartedplaying(
     event: electronLib.electronLibStrings.`media-started-playing`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_media-started-playing`(
+  def addEventListener_mediastartedplaying(
     event: electronLib.electronLibStrings.`media-started-playing`,
     listener: js.Function1[/* event */ Event, scala.Unit],
     useCapture: scala.Boolean
@@ -1018,12 +1018,12 @@ trait WebviewTag
     * example code opens the new url in system's default browser.
     */
   @JSName("addEventListener")
-  def `addEventListener_new-window`(
+  def addEventListener_newwindow(
     event: electronLib.electronLibStrings.`new-window`,
     listener: js.Function1[/* event */ NewWindowEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_new-window`(
+  def addEventListener_newwindow(
     event: electronLib.electronLibStrings.`new-window`,
     listener: js.Function1[/* event */ NewWindowEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -1032,12 +1032,12 @@ trait WebviewTag
     * Fired when page receives favicon urls.
     */
   @JSName("addEventListener")
-  def `addEventListener_page-favicon-updated`(
+  def addEventListener_pagefaviconupdated(
     event: electronLib.electronLibStrings.`page-favicon-updated`,
     listener: js.Function1[/* event */ PageFaviconUpdatedEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_page-favicon-updated`(
+  def addEventListener_pagefaviconupdated(
     event: electronLib.electronLibStrings.`page-favicon-updated`,
     listener: js.Function1[/* event */ PageFaviconUpdatedEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -1047,12 +1047,12 @@ trait WebviewTag
     * is synthesized from file url.
     */
   @JSName("addEventListener")
-  def `addEventListener_page-title-updated`(
+  def addEventListener_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function1[/* event */ PageTitleUpdatedEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_page-title-updated`(
+  def addEventListener_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function1[/* event */ PageTitleUpdatedEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -1105,12 +1105,12 @@ trait WebviewTag
     * Fired when a plugin process is crashed.
     */
   @JSName("addEventListener")
-  def `addEventListener_plugin-crashed`(
+  def addEventListener_plugincrashed(
     event: electronLib.electronLibStrings.`plugin-crashed`,
     listener: js.Function1[/* event */ PluginCrashedEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_plugin-crashed`(
+  def addEventListener_plugincrashed(
     event: electronLib.electronLibStrings.`plugin-crashed`,
     listener: js.Function1[/* event */ PluginCrashedEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -1471,12 +1471,12 @@ trait WebviewTag
     * Emitted when mouse moves over a link or the keyboard moves the focus to a link.
     */
   @JSName("addEventListener")
-  def `addEventListener_update-target-url`(
+  def addEventListener_updatetargeturl(
     event: electronLib.electronLibStrings.`update-target-url`,
     listener: js.Function1[/* event */ UpdateTargetUrlEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_update-target-url`(
+  def addEventListener_updatetargeturl(
     event: electronLib.electronLibStrings.`update-target-url`,
     listener: js.Function1[/* event */ UpdateTargetUrlEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -1524,12 +1524,12 @@ trait WebviewTag
     * does NOT have any effect.
     */
   @JSName("addEventListener")
-  def `addEventListener_will-navigate`(
+  def addEventListener_willnavigate(
     event: electronLib.electronLibStrings.`will-navigate`,
     listener: js.Function1[/* event */ WillNavigateEvent, scala.Unit]
   ): this.type = js.native
   @JSName("addEventListener")
-  def `addEventListener_will-navigate`(
+  def addEventListener_willnavigate(
     event: electronLib.electronLibStrings.`will-navigate`,
     listener: js.Function1[/* event */ WillNavigateEvent, scala.Unit],
     useCapture: scala.Boolean
@@ -1838,7 +1838,7 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_console-message`(
+  def removeEventListener_consolemessage(
     event: electronLib.electronLibStrings.`console-message`,
     listener: js.Function1[/* event */ ConsoleMessageEvent, scala.Unit]
   ): this.type = js.native
@@ -1908,62 +1908,62 @@ trait WebviewTag
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_devtools-closed`(
+  def removeEventListener_devtoolsclosed(
     event: electronLib.electronLibStrings.`devtools-closed`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_devtools-focused`(
+  def removeEventListener_devtoolsfocused(
     event: electronLib.electronLibStrings.`devtools-focused`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_devtools-opened`(
+  def removeEventListener_devtoolsopened(
     event: electronLib.electronLibStrings.`devtools-opened`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_did-change-theme-color`(
+  def removeEventListener_didchangethemecolor(
     event: electronLib.electronLibStrings.`did-change-theme-color`,
     listener: js.Function1[/* event */ DidChangeThemeColorEvent, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_did-fail-load`(
+  def removeEventListener_didfailload(
     event: electronLib.electronLibStrings.`did-fail-load`,
     listener: js.Function1[/* event */ DidFailLoadEvent, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_did-finish-load`(
+  def removeEventListener_didfinishload(
     event: electronLib.electronLibStrings.`did-finish-load`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_did-frame-finish-load`(
+  def removeEventListener_didframefinishload(
     event: electronLib.electronLibStrings.`did-frame-finish-load`,
     listener: js.Function1[/* event */ DidFrameFinishLoadEvent, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_did-navigate`(
+  def removeEventListener_didnavigate(
     event: electronLib.electronLibStrings.`did-navigate`,
     listener: js.Function1[/* event */ DidNavigateEvent, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_did-navigate-in-page`(
+  def removeEventListener_didnavigateinpage(
     event: electronLib.electronLibStrings.`did-navigate-in-page`,
     listener: js.Function1[/* event */ DidNavigateInPageEvent, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_did-start-loading`(
+  def removeEventListener_didstartloading(
     event: electronLib.electronLibStrings.`did-start-loading`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_did-stop-loading`(
+  def removeEventListener_didstoploading(
     event: electronLib.electronLibStrings.`did-stop-loading`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_dom-ready`(
+  def removeEventListener_domready(
     event: electronLib.electronLibStrings.`dom-ready`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -2089,7 +2089,7 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_enter-html-full-screen`(
+  def removeEventListener_enterhtmlfullscreen(
     event: electronLib.electronLibStrings.`enter-html-full-screen`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -2116,7 +2116,7 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_found-in-page`(
+  def removeEventListener_foundinpage(
     event: electronLib.electronLibStrings.`found-in-page`,
     listener: js.Function1[/* event */ FoundInPageEvent, scala.Unit]
   ): this.type = js.native
@@ -2176,7 +2176,7 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_ipc-message`(
+  def removeEventListener_ipcmessage(
     event: electronLib.electronLibStrings.`ipc-message`,
     listener: js.Function1[/* event */ IpcMessageEvent, scala.Unit]
   ): this.type = js.native
@@ -2214,7 +2214,7 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_leave-html-full-screen`(
+  def removeEventListener_leavehtmlfullscreen(
     event: electronLib.electronLibStrings.`leave-html-full-screen`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -2230,7 +2230,7 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_load-commit`(
+  def removeEventListener_loadcommit(
     event: electronLib.electronLibStrings.`load-commit`,
     listener: js.Function1[/* event */ LoadCommitEvent, scala.Unit]
   ): this.type = js.native
@@ -2290,12 +2290,12 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_media-paused`(
+  def removeEventListener_mediapaused(
     event: electronLib.electronLibStrings.`media-paused`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_media-started-playing`(
+  def removeEventListener_mediastartedplaying(
     event: electronLib.electronLibStrings.`media-started-playing`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -2377,17 +2377,17 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_new-window`(
+  def removeEventListener_newwindow(
     event: electronLib.electronLibStrings.`new-window`,
     listener: js.Function1[/* event */ NewWindowEvent, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_page-favicon-updated`(
+  def removeEventListener_pagefaviconupdated(
     event: electronLib.electronLibStrings.`page-favicon-updated`,
     listener: js.Function1[/* event */ PageFaviconUpdatedEvent, scala.Unit]
   ): this.type = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_page-title-updated`(
+  def removeEventListener_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function1[/* event */ PageTitleUpdatedEvent, scala.Unit]
   ): this.type = js.native
@@ -2436,7 +2436,7 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_plugin-crashed`(
+  def removeEventListener_plugincrashed(
     event: electronLib.electronLibStrings.`plugin-crashed`,
     listener: js.Function1[/* event */ PluginCrashedEvent, scala.Unit]
   ): this.type = js.native
@@ -2793,7 +2793,7 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_update-target-url`(
+  def removeEventListener_updatetargeturl(
     event: electronLib.electronLibStrings.`update-target-url`,
     listener: js.Function1[/* event */ UpdateTargetUrlEvent, scala.Unit]
   ): this.type = js.native
@@ -2831,7 +2831,7 @@ trait WebviewTag
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
-  def `removeEventListener_will-navigate`(
+  def removeEventListener_willnavigate(
     event: electronLib.electronLibStrings.`will-navigate`,
     listener: js.Function1[/* event */ WillNavigateEvent, scala.Unit]
   ): this.type = js.native

@@ -78,40 +78,7 @@ trait DuplexifyConstructor
   def apply(writable: scala.Null, readable: nodeLib.streamMod.Readable, options: DuplexifyOptions): Duplexify = js.native
   def apply(writable: scala.Null, readable: scala.Null, options: DuplexifyOptions): Duplexify = js.native
   def obj(): Duplexify = js.native
-  def obj(writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`): Duplexify = js.native
-  def obj(
-    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
-    readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`
-  ): Duplexify = js.native
-  def obj(
-    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
-    readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
-    options: DuplexifyOptions
-  ): Duplexify = js.native
-  def obj(
-    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
-    readable: nodeLib.streamMod.Readable
-  ): Duplexify = js.native
-  def obj(
-    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
-    readable: nodeLib.streamMod.Readable,
-    options: DuplexifyOptions
-  ): Duplexify = js.native
-  def obj(
-    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
-    readable: scala.Null,
-    options: DuplexifyOptions
-  ): Duplexify = js.native
   def obj(writable: nodeLib.streamMod.Writable): Duplexify = js.native
-  def obj(
-    writable: nodeLib.streamMod.Writable,
-    readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`
-  ): Duplexify = js.native
-  def obj(
-    writable: nodeLib.streamMod.Writable,
-    readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
-    options: DuplexifyOptions
-  ): Duplexify = js.native
   def obj(writable: nodeLib.streamMod.Writable, readable: nodeLib.streamMod.Readable): Duplexify = js.native
   def obj(
     writable: nodeLib.streamMod.Writable,
@@ -119,17 +86,60 @@ trait DuplexifyConstructor
     options: DuplexifyOptions
   ): Duplexify = js.native
   def obj(writable: nodeLib.streamMod.Writable, readable: scala.Null, options: DuplexifyOptions): Duplexify = js.native
-  def obj(
+  def obj(writable: scala.Null, readable: nodeLib.streamMod.Readable): Duplexify = js.native
+  def obj(writable: scala.Null, readable: nodeLib.streamMod.Readable, options: DuplexifyOptions): Duplexify = js.native
+  def obj(writable: scala.Null, readable: scala.Null, options: DuplexifyOptions): Duplexify = js.native
+  @JSName("obj")
+  def obj_false(writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`): Duplexify = js.native
+  @JSName("obj")
+  def obj_false(
+    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
+    readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`
+  ): Duplexify = js.native
+  @JSName("obj")
+  def obj_false(
+    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
+    readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
+    options: DuplexifyOptions
+  ): Duplexify = js.native
+  @JSName("obj")
+  def obj_false(
+    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
+    readable: nodeLib.streamMod.Readable
+  ): Duplexify = js.native
+  @JSName("obj")
+  def obj_false(
+    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
+    readable: nodeLib.streamMod.Readable,
+    options: DuplexifyOptions
+  ): Duplexify = js.native
+  @JSName("obj")
+  def obj_false(
+    writable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
+    readable: scala.Null,
+    options: DuplexifyOptions
+  ): Duplexify = js.native
+  @JSName("obj")
+  def obj_false(
+    writable: nodeLib.streamMod.Writable,
+    readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`
+  ): Duplexify = js.native
+  @JSName("obj")
+  def obj_false(
+    writable: nodeLib.streamMod.Writable,
+    readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
+    options: DuplexifyOptions
+  ): Duplexify = js.native
+  @JSName("obj")
+  def obj_false(
     writable: scala.Null,
     readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`
   ): Duplexify = js.native
-  def obj(
+  @JSName("obj")
+  def obj_false(
     writable: scala.Null,
     readable: atGoogleDashCloudCommonLib.atGoogleDashCloudCommonLibNumbers.`false`,
     options: DuplexifyOptions
   ): Duplexify = js.native
-  def obj(writable: scala.Null, readable: nodeLib.streamMod.Readable): Duplexify = js.native
-  def obj(writable: scala.Null, readable: nodeLib.streamMod.Readable, options: DuplexifyOptions): Duplexify = js.native
-  def obj(writable: scala.Null, readable: scala.Null, options: DuplexifyOptions): Duplexify = js.native
 }
 

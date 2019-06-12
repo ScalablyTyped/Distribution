@@ -15,5 +15,7 @@ trait InputFiles extends Node {
   var javascriptMapText: js.UndefOr[java.lang.String] = js.native
   var javascriptPath: js.UndefOr[java.lang.String] = js.native
   var javascriptText: java.lang.String = js.native
+  @JSName("kind")
+  var kind_InputFiles: typescriptLib.typescriptMod.SyntaxKind.InputFiles = js.native
 }
 

@@ -135,6 +135,9 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var opsworks: js.UndefOr[awsDashSdkLib.clientsOpsworksMod.ClientConfiguration] = js.native
   var opsworkscm: js.UndefOr[awsDashSdkLib.clientsOpsworkscmMod.ClientConfiguration] = js.native
   var organizations: js.UndefOr[awsDashSdkLib.clientsOrganizationsMod.ClientConfiguration] = js.native
+  var personalize: js.UndefOr[awsDashSdkLib.clientsPersonalizeMod.ClientConfiguration] = js.native
+  var personalizeevents: js.UndefOr[awsDashSdkLib.clientsPersonalizeeventsMod.ClientConfiguration] = js.native
+  var personalizeruntime: js.UndefOr[awsDashSdkLib.clientsPersonalizeruntimeMod.ClientConfiguration] = js.native
   var pi: js.UndefOr[awsDashSdkLib.clientsPiMod.ClientConfiguration] = js.native
   var pinpoint: js.UndefOr[awsDashSdkLib.clientsPinpointMod.ClientConfiguration] = js.native
   var pinpointemail: js.UndefOr[awsDashSdkLib.clientsPinpointemailMod.ClientConfiguration] = js.native

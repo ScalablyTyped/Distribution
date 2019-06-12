@@ -39,7 +39,7 @@ trait HyperParameterTrainingJobDefinition extends js.Object {
     */
   var StaticHyperParameters: js.UndefOr[HyperParameters] = js.undefined
   /**
-    * Sets a maximum duration for the training jobs that the tuning job launches. Use this parameter to limit model training costs.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This delays job termination for 120 seconds. Algorithms might use this 120-second window to save the model artifacts. When Amazon SageMaker terminates a job because the stopping condition has been met, training algorithms provided by Amazon SageMaker save the intermediate results of the job.
+    * Specifies a limit to how long a model hyperparameter training job can run. When the job reaches the time limit, Amazon SageMaker ends the training job. Use this API to cap model training costs.
     */
   var StoppingCondition: awsDashSdkLib.clientsSagemakerMod.StoppingCondition
   /**

@@ -16,7 +16,8 @@ object idyllDashAstMod extends js.Object {
     ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
     nodes: idyllDashCompilerLib.idyllDashCompilerMod.AST
   ): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
-  def createNode(
+  @JSName("createNode")
+  def createNode_1(
     name: java.lang.String,
     props: stdLib.Record[
       java.lang.String, 
@@ -63,7 +64,8 @@ object idyllDashAstMod extends js.Object {
   ): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
   def removeNodesByName(ast: idyllDashCompilerLib.idyllDashCompilerMod.AST, name: java.lang.String): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
   def removeProperty(node: idyllDashCompilerLib.idyllDashCompilerMod.Node, key: java.lang.String): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
-  def setProperties(
+  @JSName("setProperties")
+  def setProperties_1(
     node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
     properties: stdLib.Record[
       java.lang.String, 
@@ -75,7 +77,8 @@ object idyllDashAstMod extends js.Object {
     key: java.lang.String,
     value: idyllDashCompilerLib.idyllDashCompilerMod.PropValue
   ): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
-  def setProperty(
+  @JSName("setProperty")
+  def setProperty_1(
     node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
     key: java.lang.String,
     value: /* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any

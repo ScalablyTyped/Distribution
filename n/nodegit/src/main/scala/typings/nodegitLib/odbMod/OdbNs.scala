@@ -8,29 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("nodegit/odb", "Odb")
 @js.native
 object OdbNs extends js.Object {
-  @js.native
-  sealed trait STREAM extends js.Object
-  
-  @js.native
-  object STREAM extends js.Object {
-    @js.native
-    sealed trait RDONLY
-      extends nodegitLib.odbMod.OdbNs.STREAM
-    
-    @js.native
-    sealed trait RW
-      extends nodegitLib.odbMod.OdbNs.STREAM
-    
-    @js.native
-    sealed trait WRONLY
-      extends nodegitLib.odbMod.OdbNs.STREAM
-    
-    /* 2 */ val RDONLY: RDONLY with scala.Double = js.native
-    /* 6 */ val RW: RW with scala.Double = js.native
-    /* 4 */ val WRONLY: WRONLY with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[nodegitLib.odbMod.OdbNs.STREAM with scala.Double] = js.native
-  }
+  /* Rewritten from type alias, can be one of: 
+    - nodegitLib.nodegitLibNumbers.`2`
+    - nodegitLib.nodegitLibNumbers.`4`
+    - nodegitLib.nodegitLibNumbers.`6`
+  */
+  trait STREAM extends js.Object
   
 }
 

@@ -16,9 +16,12 @@ class LatLonEllipsoidal protected () extends js.Object {
   def convertDatum(toDatum: Datum): LatLon = js.native
   def toCartesian(): Vector3d = js.native
   def toString(format: format): java.lang.String = js.native
-  def toString(format: format, dp: geodesyLib.geodesyLibNumbers.`0`): java.lang.String = js.native
-  def toString(format: format, dp: geodesyLib.geodesyLibNumbers.`2`): java.lang.String = js.native
-  def toString(format: format, dp: geodesyLib.geodesyLibNumbers.`4`): java.lang.String = js.native
+  @JSName("toString")
+  def toString_0(format: format, dp: geodesyLib.geodesyLibNumbers.`0`): java.lang.String = js.native
+  @JSName("toString")
+  def toString_2(format: format, dp: geodesyLib.geodesyLibNumbers.`2`): java.lang.String = js.native
+  @JSName("toString")
+  def toString_4(format: format, dp: geodesyLib.geodesyLibNumbers.`4`): java.lang.String = js.native
   def toUtm(): Utm = js.native
 }
 

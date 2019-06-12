@@ -5,9 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait ElementMarkPriority extends js.Object
-
 /**
   * Defines priority for the element mark's notification.
   *
@@ -19,27 +16,10 @@ sealed trait ElementMarkPriority extends js.Object
   *
   * So an element mark with PRI_BEFOREMODIFY will be handled first, and one with PRI_AFTERMODIFY will be handled at last.
   */
-@JSGlobal("com.sun.star.xml.crypto.sax.ElementMarkPriority")
-@js.native
-object ElementMarkPriority extends js.Object {
-  @js.native
-  sealed trait AFTERMODIFY
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.cryptoNs.saxNs.ElementMarkPriority
-  
-  @js.native
-  sealed trait BEFOREMODIFY
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.cryptoNs.saxNs.ElementMarkPriority
-  
-  @js.native
-  sealed trait MINIMUM
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.cryptoNs.saxNs.ElementMarkPriority
-  
-  /* 2 */ val AFTERMODIFY: AFTERMODIFY with scala.Double = js.native
-  /* 3 */ val BEFOREMODIFY: BEFOREMODIFY with scala.Double = js.native
-  /* 1 */ val MINIMUM: MINIMUM with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[
-    activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.cryptoNs.saxNs.ElementMarkPriority with scala.Double
-  ] = js.native
-}
+/* Rewritten from type alias, can be one of: 
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2`
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`3`
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1`
+*/
+trait ElementMarkPriority extends js.Object
 

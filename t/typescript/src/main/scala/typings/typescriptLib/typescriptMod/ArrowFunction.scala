@@ -16,5 +16,7 @@ trait ArrowFunction
   @JSName("body")
   var body_ArrowFunction: ConciseBody = js.native
   var equalsGreaterThanToken: EqualsGreaterThanToken = js.native
+  @JSName("kind")
+  var kind_ArrowFunction: typescriptLib.typescriptMod.SyntaxKind.ArrowFunction = js.native
 }
 

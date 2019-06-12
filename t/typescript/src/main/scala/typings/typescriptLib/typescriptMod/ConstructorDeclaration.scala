@@ -15,6 +15,8 @@ trait ConstructorDeclaration
   var _classElementBrand: js.Any = js.native
   @JSName("body")
   var body_ConstructorDeclaration: js.UndefOr[FunctionBody] = js.native
+  @JSName("kind")
+  var kind_ConstructorDeclaration: typescriptLib.typescriptMod.SyntaxKind.Constructor = js.native
   @JSName("parent")
   var parent_ConstructorDeclaration: ClassLikeDeclaration = js.native
 }

@@ -34,6 +34,7 @@ object ^ extends js.Object {
   	```
   	*/
   def apply(name: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def apply(name: java.lang.String, options: Options): js.Promise[scala.Boolean] = js.native
   /**
   	Check whether a package name is available (not registered) on npm.
   	@param name - Name to check.
@@ -57,6 +58,7 @@ object ^ extends js.Object {
   	*/
   // TODO: remove this in the next major version
   def default(name: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def default(name: java.lang.String, options: Options): js.Promise[scala.Boolean] = js.native
   /**
   	Check whether multiple package names are available (not registered) on npm.
   	@param names - Multiple names to check.
@@ -76,5 +78,6 @@ object ^ extends js.Object {
   	```
   	*/
   def many[NameType /* <: java.lang.String */](names: js.Array[NameType]): js.Promise[stdLib.Map[NameType, scala.Boolean]] = js.native
+  def many[NameType /* <: java.lang.String */](names: js.Array[NameType], options: Options): js.Promise[stdLib.Map[NameType, scala.Boolean]] = js.native
 }
 

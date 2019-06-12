@@ -93,6 +93,27 @@ trait ojLedGauge extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   var value: scala.Double | scala.Null = js.native
   var visualEffects: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto = js.native
   def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotationChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        atOracleOraclejetLib.atOracleOraclejetLibNumbers.`90` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`180` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`270` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0`
+      ], 
+      _
+    ]
+  ): scala.Unit = js.native
+  def addEventListener(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotationChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
+        atOracleOraclejetLib.atOracleOraclejetLibNumbers.`90` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`180` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`270` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0`
+      ], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  def addEventListener(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
@@ -265,29 +286,6 @@ trait ojLedGauge extends dvtBaseGauge[ojLedGaugeSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_rotationChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotationChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        atOracleOraclejetLib.atOracleOraclejetLibNumbers.`90` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`180` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`270` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0`
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_rotationChanged(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotationChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        atOracleOraclejetLib.atOracleOraclejetLibNumbers.`90` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`180` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`270` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0`
-      ], 
       _
     ],
     useCapture: scala.Boolean
@@ -456,6 +454,22 @@ trait ojLedGauge extends dvtBaseGauge[ojLedGaugeSettableProperties] {
     value: atOracleOraclejetLib.atOracleOraclejetLibStrings.triangle
   ): scala.Unit = js.native
   def setProperty(
+    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotation,
+    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0`
+  ): scala.Unit = js.native
+  def setProperty(
+    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotation,
+    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`180`
+  ): scala.Unit = js.native
+  def setProperty(
+    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotation,
+    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`270`
+  ): scala.Unit = js.native
+  def setProperty(
+    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotation,
+    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`90`
+  ): scala.Unit = js.native
+  def setProperty(
     property: atOracleOraclejetLib.atOracleOraclejetLibStrings.visualEffects,
     value: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto
   ): scala.Unit = js.native
@@ -481,26 +495,6 @@ trait ojLedGauge extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   ): scala.Unit = js.native
   @JSName("setProperty")
   def setProperty_min(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.min, value: scala.Double): scala.Unit = js.native
-  @JSName("setProperty")
-  def setProperty_rotation(
-    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotation,
-    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0`
-  ): scala.Unit = js.native
-  @JSName("setProperty")
-  def setProperty_rotation(
-    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotation,
-    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`180`
-  ): scala.Unit = js.native
-  @JSName("setProperty")
-  def setProperty_rotation(
-    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotation,
-    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`270`
-  ): scala.Unit = js.native
-  @JSName("setProperty")
-  def setProperty_rotation(
-    property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rotation,
-    value: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`90`
-  ): scala.Unit = js.native
   @JSName("setProperty")
   def setProperty_size(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.size, value: scala.Double): scala.Unit = js.native
   @JSName("setProperty")

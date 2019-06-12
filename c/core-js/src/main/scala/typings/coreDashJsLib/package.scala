@@ -9,5 +9,5 @@ package object coreDashJsLib {
   // Dict - https://github.com/zloirock/core-js/#dict
   // Modules: core.dict
   // #############################################################################################
-  type Dict[T] = org.scalablytyped.runtime.StringDictionary[T] with org.scalablytyped.runtime.NumberDictionary[T]
+  type Dict[T] = org.scalablytyped.runtime.StringDictionary[js.UndefOr[T]] with org.scalablytyped.runtime.NumberDictionary[js.UndefOr[T]]
 }

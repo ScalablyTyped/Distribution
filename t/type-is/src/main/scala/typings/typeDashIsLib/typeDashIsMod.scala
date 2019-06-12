@@ -14,7 +14,8 @@ object typeDashIsMod extends js.Object {
   def is(mediaType: java.lang.String, types: java.lang.String*): java.lang.String | typeDashIsLib.typeDashIsLibNumbers.`false` = js.native
   def is(mediaType: java.lang.String, types: js.Array[java.lang.String]): java.lang.String | typeDashIsLib.typeDashIsLibNumbers.`false` = js.native
   def mimeMatch(expected: java.lang.String, actual: java.lang.String): scala.Boolean = js.native
-  def mimeMatch(expected: typeDashIsLib.typeDashIsLibNumbers.`false`, actual: java.lang.String): scala.Boolean = js.native
+  @JSName("mimeMatch")
+  def mimeMatch_false(expected: typeDashIsLib.typeDashIsLibNumbers.`false`, actual: java.lang.String): scala.Boolean = js.native
   def normalize(`type`: java.lang.String): java.lang.String | typeDashIsLib.typeDashIsLibNumbers.`false` = js.native
 }
 

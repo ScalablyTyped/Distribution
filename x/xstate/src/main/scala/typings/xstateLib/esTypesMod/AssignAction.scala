@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait AssignAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
   var assignment: (Assigner[TContext, TEvent]) | (PropertyAssigner[TContext, TEvent])
   @JSName("type")
-  var type_AssignAction: ActionTypes
+  var type_AssignAction: xstateLib.esTypesMod.ActionTypes.Assign
 }
 
 object AssignAction {
   @scala.inline
   def apply[TContext, TEvent /* <: EventObject */](
     assignment: (Assigner[TContext, TEvent]) | (PropertyAssigner[TContext, TEvent]),
-    `type`: ActionTypes,
+    `type`: xstateLib.esTypesMod.ActionTypes.Assign,
     exec: ActionFunction[TContext, TEvent] = null
   ): AssignAction[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(assignment = assignment.asInstanceOf[js.Any])

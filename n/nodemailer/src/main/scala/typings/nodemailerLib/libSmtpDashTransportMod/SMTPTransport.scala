@@ -128,7 +128,7 @@ trait SMTPTransport
   def verify_MSMTPTransport(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
   /** Verifies SMTP configuration */
   @JSName("verify")
-  def verify_MSMTPTransport(
+  def verify_true(
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       nodemailerLib.nodemailerLibNumbers.`true`, 

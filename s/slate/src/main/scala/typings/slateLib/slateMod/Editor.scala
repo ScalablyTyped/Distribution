@@ -14,12 +14,14 @@ class Editor protected () extends Controller {
   var plugins: js.Array[Plugin] = js.native
   var readOnly: scala.Boolean = js.native
   var value: Value = js.native
+  def command(name: CommandFunc, args: js.Any*): Editor = js.native
   /**
     * Synchronously flush the current changes to editor, calling onChange.
     * In normal operation you never need to use this method! Reserved for testing.
     */
   def flush(): Editor = js.native
   def onChange(change: slateLib.Anon_Operations): scala.Unit = js.native
+  def query(query: QueryFunc, args: js.Any*): js.Any = js.native
   def setDecorations(decorations: immutableLib.immutableMod.List[Decoration]): Editor = js.native
   def setDecorations(decorations: js.Array[Decoration]): Editor = js.native
   def setReadOnly(readOnly: scala.Boolean): Editor = js.native

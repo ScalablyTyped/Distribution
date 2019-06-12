@@ -149,7 +149,7 @@ class StateNode[TContext, TStateSchema /* <: xstateLib.libTypesMod.StateSchema *
     *
     * Use `type: 'parallel'` instead.
     */
-  var parallel: scala.Boolean = js.native
+  var parallel: js.UndefOr[scala.Boolean] = js.native
   /**
     * The parent state node.
     */

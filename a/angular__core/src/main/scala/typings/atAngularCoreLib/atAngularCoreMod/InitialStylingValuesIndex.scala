@@ -5,9 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait InitialStylingValuesIndex extends js.Object
-
 /**
   * Used as an offset/position index to figure out where initial styling
   * values are located.
@@ -111,76 +108,11 @@ sealed trait InitialStylingValuesIndex extends js.Object
   * ]
   * ```
   */
-@JSImport("@angular/core", "InitialStylingValuesIndex")
-@js.native
-object InitialStylingValuesIndex extends js.Object {
-  @js.native
-  sealed trait AppliedFlagBitLength
-    extends atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
-  
-  /**
-    * The first bit set aside to mark if the initial style was already rendere
-    */
-  @js.native
-  sealed trait AppliedFlagBitPosition
-    extends atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
-  
-  /**
-    * Used for non-styling code to examine what the style or className string is:
-    * styles: ['width', '100px', 0, 'opacity', null, 0, 'height', '200px', 0]
-    *    => initialStyles[CachedStringValuePosition] = 'width:100px;height:200px';
-    * classes: ['foo', true, 0, 'bar', false, 0, 'baz', true, 0]
-    *    => initialClasses[CachedStringValuePosition] = 'foo bar';
-    *
-    * Note that this value is `null` by default and it will only be populated
-    * once `getInitialStyleStringValue` or `getInitialClassNameValue` is executed.
-    */
-  @js.native
-  sealed trait CachedStringValuePosition
-    extends atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
-  
-  /**
-    * The first value is always `null` so that `styles[0] == null` for unassigned values
-    */
-  @js.native
-  sealed trait DefaultNullValuePosition
-    extends atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
-  
-  /**
-    * The offset value (index + offset) for the style/class directive owner for each style/class
-    entry
-    */
-  @js.native
-  sealed trait DirectiveOwnerOffset
-    extends atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
-  
-  /**
-    * Where the style or class values start in the tuple
-    */
-  @js.native
-  sealed trait KeyValueStartPosition
-    extends atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
-  
-  /**
-    * The offset value (index + offset) for the property value for each style/class entry
-    */
-  @js.native
-  sealed trait PropOffset
-    extends atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
-  
-  /**
-    * The total size for each style/class entry (prop + value + directiveOwner)
-    */
-  @js.native
-  sealed trait Size
-    extends atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
-  
-  /**
-    * The offset value (index + offset) for the style/class value for each style/class entry
-    */
-  @js.native
-  sealed trait ValueOffset
-    extends atAngularCoreLib.atAngularCoreMod.InitialStylingValuesIndex
-  
-}
+/* Rewritten from type alias, can be one of: 
+  - atAngularCoreLib.atAngularCoreLibNumbers.`0`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`1`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`2`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`3`
+*/
+trait InitialStylingValuesIndex extends js.Object
 

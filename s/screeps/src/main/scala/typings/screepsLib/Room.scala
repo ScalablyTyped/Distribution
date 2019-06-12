@@ -229,7 +229,8 @@ trait Room extends js.Object {
     * @returns An object with all the objects in the specified area
     */
   def lookAtArea(top: scala.Double, left: scala.Double, bottom: scala.Double, right: scala.Double): LookAtResultMatrix[LookConstant] = js.native
-  def lookAtArea(
+  @JSName("lookAtArea")
+  def lookAtArea_false(
     top: scala.Double,
     left: scala.Double,
     bottom: scala.Double,
@@ -245,13 +246,238 @@ trait Room extends js.Object {
     * @param asArray Set to true if you want to get the result as a plain array.
     * @returns An object with all the objects in the specified area
     */
-  def lookAtArea(
+  @JSName("lookAtArea")
+  def lookAtArea_true(
     top: scala.Double,
     left: scala.Double,
     bottom: scala.Double,
     right: scala.Double,
     asArray: screepsLib.screepsLibNumbers.`true`
   ): js.Array[LookAtResultWithPos[LookConstant]] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.constructionSite,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[
+    ConstructionSite[BuildableStructureConstant], 
+    screepsLib.screepsLibStrings.constructionSite
+  ] = js.native
+  /**
+    * Get the given objets in the supplied area.
+    * @param type One of the LOOK_* constants
+    * @param top The top (Y) boundry of the area.
+    * @param left The left (X) boundry of the area.
+    * @param bottom The bottom (Y) boundry of the area.
+    * @param right The right(X) boundry of the area.
+    * @param asArray Flatten the results into an array?
+    * @returns An array of found objects with an x & y property for their position
+    */
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.constructionSite,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[
+    ConstructionSite[BuildableStructureConstant], 
+    screepsLib.screepsLibStrings.constructionSite
+  ] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.creep,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Creep, screepsLib.screepsLibStrings.creep] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.creep,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Creep, screepsLib.screepsLibStrings.creep] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.energy,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], screepsLib.screepsLibStrings.energy] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.energy,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Resource[RESOURCE_ENERGY], screepsLib.screepsLibStrings.energy] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.exit,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[_, screepsLib.screepsLibStrings.exit] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.exit,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[_, screepsLib.screepsLibStrings.exit] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.flag,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Flag, screepsLib.screepsLibStrings.flag] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.flag,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Flag, screepsLib.screepsLibStrings.flag] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.mineral,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Mineral[MineralConstant], screepsLib.screepsLibStrings.mineral] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.mineral,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Mineral[MineralConstant], screepsLib.screepsLibStrings.mineral] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.nuke,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Nuke, screepsLib.screepsLibStrings.nuke] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.nuke,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Nuke, screepsLib.screepsLibStrings.nuke] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.powerCreep,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[PowerCreep, screepsLib.screepsLibStrings.powerCreep] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.powerCreep,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[PowerCreep, screepsLib.screepsLibStrings.powerCreep] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.resource,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Resource[ResourceConstant], screepsLib.screepsLibStrings.resource] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.resource,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Resource[ResourceConstant], screepsLib.screepsLibStrings.resource] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.source,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Source, screepsLib.screepsLibStrings.source] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.source,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Source, screepsLib.screepsLibStrings.source] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.structure,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Structure[StructureConstant], screepsLib.screepsLibStrings.structure] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.structure,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Structure[StructureConstant], screepsLib.screepsLibStrings.structure] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.terrain,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Terrain, screepsLib.screepsLibStrings.terrain] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.terrain,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Terrain, screepsLib.screepsLibStrings.terrain] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.tombstone,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`false`
+  ): LookForAtAreaResultMatrix[Tombstone, screepsLib.screepsLibStrings.tombstone] = js.native
+  def lookForAtArea(
+    `type`: screepsLib.screepsLibStrings.tombstone,
+    top: scala.Double,
+    left: scala.Double,
+    bottom: scala.Double,
+    right: scala.Double,
+    asArray: screepsLib.screepsLibNumbers.`true`
+  ): LookForAtAreaResultArray[Tombstone, screepsLib.screepsLibStrings.tombstone] = js.native
   /**
     * Get the given objets in the supplied area.
     * @param type One of the LOOK_* constants
@@ -274,40 +500,6 @@ trait Room extends js.Object {
     screepsLib.screepsLibStrings.constructionSite
   ] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_constructionSite(
-    `type`: screepsLib.screepsLibStrings.constructionSite,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[
-    ConstructionSite[BuildableStructureConstant], 
-    screepsLib.screepsLibStrings.constructionSite
-  ] = js.native
-  /**
-    * Get the given objets in the supplied area.
-    * @param type One of the LOOK_* constants
-    * @param top The top (Y) boundry of the area.
-    * @param left The left (X) boundry of the area.
-    * @param bottom The bottom (Y) boundry of the area.
-    * @param right The right(X) boundry of the area.
-    * @param asArray Flatten the results into an array?
-    * @returns An array of found objects with an x & y property for their position
-    */
-  @JSName("lookForAtArea")
-  def lookForAtArea_constructionSite(
-    `type`: screepsLib.screepsLibStrings.constructionSite,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[
-    ConstructionSite[BuildableStructureConstant], 
-    screepsLib.screepsLibStrings.constructionSite
-  ] = js.native
-  @JSName("lookForAtArea")
   def lookForAtArea_creep(
     `type`: screepsLib.screepsLibStrings.creep,
     top: scala.Double,
@@ -315,24 +507,6 @@ trait Room extends js.Object {
     bottom: scala.Double,
     right: scala.Double
   ): LookForAtAreaResultMatrix[Creep, screepsLib.screepsLibStrings.creep] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_creep(
-    `type`: screepsLib.screepsLibStrings.creep,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Creep, screepsLib.screepsLibStrings.creep] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_creep(
-    `type`: screepsLib.screepsLibStrings.creep,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Creep, screepsLib.screepsLibStrings.creep] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_energy(
     `type`: screepsLib.screepsLibStrings.energy,
@@ -342,24 +516,6 @@ trait Room extends js.Object {
     right: scala.Double
   ): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], screepsLib.screepsLibStrings.energy] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_energy(
-    `type`: screepsLib.screepsLibStrings.energy,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Resource[RESOURCE_ENERGY], screepsLib.screepsLibStrings.energy] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_energy(
-    `type`: screepsLib.screepsLibStrings.energy,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Resource[RESOURCE_ENERGY], screepsLib.screepsLibStrings.energy] = js.native
-  @JSName("lookForAtArea")
   def lookForAtArea_exit(
     `type`: screepsLib.screepsLibStrings.exit,
     top: scala.Double,
@@ -367,24 +523,6 @@ trait Room extends js.Object {
     bottom: scala.Double,
     right: scala.Double
   ): LookForAtAreaResultMatrix[_, screepsLib.screepsLibStrings.exit] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_exit(
-    `type`: screepsLib.screepsLibStrings.exit,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[_, screepsLib.screepsLibStrings.exit] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_exit(
-    `type`: screepsLib.screepsLibStrings.exit,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[_, screepsLib.screepsLibStrings.exit] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_flag(
     `type`: screepsLib.screepsLibStrings.flag,
@@ -394,24 +532,6 @@ trait Room extends js.Object {
     right: scala.Double
   ): LookForAtAreaResultMatrix[Flag, screepsLib.screepsLibStrings.flag] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_flag(
-    `type`: screepsLib.screepsLibStrings.flag,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Flag, screepsLib.screepsLibStrings.flag] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_flag(
-    `type`: screepsLib.screepsLibStrings.flag,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Flag, screepsLib.screepsLibStrings.flag] = js.native
-  @JSName("lookForAtArea")
   def lookForAtArea_mineral(
     `type`: screepsLib.screepsLibStrings.mineral,
     top: scala.Double,
@@ -419,24 +539,6 @@ trait Room extends js.Object {
     bottom: scala.Double,
     right: scala.Double
   ): LookForAtAreaResultMatrix[Mineral[MineralConstant], screepsLib.screepsLibStrings.mineral] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_mineral(
-    `type`: screepsLib.screepsLibStrings.mineral,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Mineral[MineralConstant], screepsLib.screepsLibStrings.mineral] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_mineral(
-    `type`: screepsLib.screepsLibStrings.mineral,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Mineral[MineralConstant], screepsLib.screepsLibStrings.mineral] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_nuke(
     `type`: screepsLib.screepsLibStrings.nuke,
@@ -446,24 +548,6 @@ trait Room extends js.Object {
     right: scala.Double
   ): LookForAtAreaResultMatrix[Nuke, screepsLib.screepsLibStrings.nuke] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_nuke(
-    `type`: screepsLib.screepsLibStrings.nuke,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Nuke, screepsLib.screepsLibStrings.nuke] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_nuke(
-    `type`: screepsLib.screepsLibStrings.nuke,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Nuke, screepsLib.screepsLibStrings.nuke] = js.native
-  @JSName("lookForAtArea")
   def lookForAtArea_powerCreep(
     `type`: screepsLib.screepsLibStrings.powerCreep,
     top: scala.Double,
@@ -471,24 +555,6 @@ trait Room extends js.Object {
     bottom: scala.Double,
     right: scala.Double
   ): LookForAtAreaResultMatrix[PowerCreep, screepsLib.screepsLibStrings.powerCreep] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_powerCreep(
-    `type`: screepsLib.screepsLibStrings.powerCreep,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[PowerCreep, screepsLib.screepsLibStrings.powerCreep] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_powerCreep(
-    `type`: screepsLib.screepsLibStrings.powerCreep,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[PowerCreep, screepsLib.screepsLibStrings.powerCreep] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_resource(
     `type`: screepsLib.screepsLibStrings.resource,
@@ -498,24 +564,6 @@ trait Room extends js.Object {
     right: scala.Double
   ): LookForAtAreaResultMatrix[Resource[ResourceConstant], screepsLib.screepsLibStrings.resource] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_resource(
-    `type`: screepsLib.screepsLibStrings.resource,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Resource[ResourceConstant], screepsLib.screepsLibStrings.resource] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_resource(
-    `type`: screepsLib.screepsLibStrings.resource,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Resource[ResourceConstant], screepsLib.screepsLibStrings.resource] = js.native
-  @JSName("lookForAtArea")
   def lookForAtArea_source(
     `type`: screepsLib.screepsLibStrings.source,
     top: scala.Double,
@@ -523,24 +571,6 @@ trait Room extends js.Object {
     bottom: scala.Double,
     right: scala.Double
   ): LookForAtAreaResultMatrix[Source, screepsLib.screepsLibStrings.source] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_source(
-    `type`: screepsLib.screepsLibStrings.source,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Source, screepsLib.screepsLibStrings.source] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_source(
-    `type`: screepsLib.screepsLibStrings.source,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Source, screepsLib.screepsLibStrings.source] = js.native
   @JSName("lookForAtArea")
   def lookForAtArea_structure(
     `type`: screepsLib.screepsLibStrings.structure,
@@ -550,24 +580,6 @@ trait Room extends js.Object {
     right: scala.Double
   ): LookForAtAreaResultMatrix[Structure[StructureConstant], screepsLib.screepsLibStrings.structure] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_structure(
-    `type`: screepsLib.screepsLibStrings.structure,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Structure[StructureConstant], screepsLib.screepsLibStrings.structure] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_structure(
-    `type`: screepsLib.screepsLibStrings.structure,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Structure[StructureConstant], screepsLib.screepsLibStrings.structure] = js.native
-  @JSName("lookForAtArea")
   def lookForAtArea_terrain(
     `type`: screepsLib.screepsLibStrings.terrain,
     top: scala.Double,
@@ -576,24 +588,6 @@ trait Room extends js.Object {
     right: scala.Double
   ): LookForAtAreaResultMatrix[Terrain, screepsLib.screepsLibStrings.terrain] = js.native
   @JSName("lookForAtArea")
-  def lookForAtArea_terrain(
-    `type`: screepsLib.screepsLibStrings.terrain,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Terrain, screepsLib.screepsLibStrings.terrain] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_terrain(
-    `type`: screepsLib.screepsLibStrings.terrain,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Terrain, screepsLib.screepsLibStrings.terrain] = js.native
-  @JSName("lookForAtArea")
   def lookForAtArea_tombstone(
     `type`: screepsLib.screepsLibStrings.tombstone,
     top: scala.Double,
@@ -601,24 +595,6 @@ trait Room extends js.Object {
     bottom: scala.Double,
     right: scala.Double
   ): LookForAtAreaResultMatrix[Tombstone, screepsLib.screepsLibStrings.tombstone] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_tombstone(
-    `type`: screepsLib.screepsLibStrings.tombstone,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`false`
-  ): LookForAtAreaResultMatrix[Tombstone, screepsLib.screepsLibStrings.tombstone] = js.native
-  @JSName("lookForAtArea")
-  def lookForAtArea_tombstone(
-    `type`: screepsLib.screepsLibStrings.tombstone,
-    top: scala.Double,
-    left: scala.Double,
-    bottom: scala.Double,
-    right: scala.Double,
-    asArray: screepsLib.screepsLibNumbers.`true`
-  ): LookForAtAreaResultArray[Tombstone, screepsLib.screepsLibStrings.tombstone] = js.native
   /**
     * Get the objects at the given RoomPosition.
     * @param type One of the LOOK_* constants.

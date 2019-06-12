@@ -100,8 +100,10 @@ trait TwitchExt extends js.Object {
   	 * @param callback This callback is called whenever an extension is hidden/re-shown.
   	 * @see https://dev.twitch.tv/docs/extensions/reference/#onvisibilitychanged
   	 */
-  def onVisibilityChanged(callback: js.Function1[twitchDashExtLib.twitchDashExtLibNumbers.`false`, scala.Unit]): scala.Unit = js.native
-  def onVisibilityChanged(
+  @JSName("onVisibilityChanged")
+  def onVisibilityChanged_false(callback: js.Function1[twitchDashExtLib.twitchDashExtLibNumbers.`false`, scala.Unit]): scala.Unit = js.native
+  @JSName("onVisibilityChanged")
+  def onVisibilityChanged_true(
     callback: js.Function2[
       twitchDashExtLib.twitchDashExtLibNumbers.`true`, 
       /* context */ stdLib.Partial[TwitchExtContext], 

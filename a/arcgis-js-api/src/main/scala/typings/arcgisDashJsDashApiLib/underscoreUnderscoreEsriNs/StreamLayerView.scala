@@ -50,7 +50,7 @@ trait StreamLayerView
     */
   def disconnect(): scala.Unit = js.native
   @JSName("on")
-  def `on_data-received`(
+  def on_datareceived(
     name: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`data-received`,
     eventHandler: StreamLayerViewDataReceivedEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native

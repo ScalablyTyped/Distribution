@@ -18,7 +18,8 @@ trait SyslogTransportInstance
   /* InferMemberOverrides */
   /* InferMemberOverrides */
   override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
-  def connect(
+  @JSName("connect")
+  def connect_true(
     callback: js.Function1[/* err */ winstonDashSyslogLib.winstonDashSyslogLibNumbers.`true` | scala.Null, _]
   ): scala.Unit = js.native
   /* InferMemberOverrides */

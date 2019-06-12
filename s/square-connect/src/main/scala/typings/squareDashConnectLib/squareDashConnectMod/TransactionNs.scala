@@ -22,7 +22,7 @@ object TransactionNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.TransactionNs.ProductEnum
     
     @js.native
-    sealed trait EXTERNALAPI
+    sealed trait EXTERNAL_API
       extends squareDashConnectLib.squareDashConnectMod.TransactionNs.ProductEnum
     
     @js.native
@@ -30,7 +30,7 @@ object TransactionNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.TransactionNs.ProductEnum
     
     @js.native
-    sealed trait ONLINESTORE
+    sealed trait ONLINE_STORE
       extends squareDashConnectLib.squareDashConnectMod.TransactionNs.ProductEnum
     
     @js.native
@@ -47,9 +47,9 @@ object TransactionNs extends js.Object {
     
     /* "APPOINTMENTS" */ val APPOINTMENTS: APPOINTMENTS with java.lang.String = js.native
     /* "BILLING" */ val BILLING: BILLING with java.lang.String = js.native
-    /* "EXTERNAL_API" */ val EXTERNALAPI: EXTERNALAPI with java.lang.String = js.native
+    /* "EXTERNAL_API" */ val EXTERNAL_API: EXTERNAL_API with java.lang.String = js.native
     /* "INVOICES" */ val INVOICES: INVOICES with java.lang.String = js.native
-    /* "ONLINE_STORE" */ val ONLINESTORE: ONLINESTORE with java.lang.String = js.native
+    /* "ONLINE_STORE" */ val ONLINE_STORE: ONLINE_STORE with java.lang.String = js.native
     /* "OTHER" */ val OTHER: OTHER with java.lang.String = js.native
     /* "PAYROLL" */ val PAYROLL: PAYROLL with java.lang.String = js.native
     /* "REGISTER" */ val REGISTER: REGISTER with java.lang.String = js.native

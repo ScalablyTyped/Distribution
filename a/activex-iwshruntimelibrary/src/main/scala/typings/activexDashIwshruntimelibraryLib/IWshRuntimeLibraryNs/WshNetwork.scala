@@ -95,11 +95,13 @@ class WshNetwork protected () extends js.Object {
     * then _Name_ must be the printer's UNC name.
     */
   def RemovePrinterConnection(Name: java.lang.String): scala.Unit = js.native
-  def RemovePrinterConnection(
+  @JSName("RemovePrinterConnection")
+  def RemovePrinterConnection_true(
     Name: java.lang.String,
     Force: activexDashIwshruntimelibraryLib.activexDashIwshruntimelibraryLibNumbers.`true`
   ): scala.Unit = js.native
-  def RemovePrinterConnection(
+  @JSName("RemovePrinterConnection")
+  def RemovePrinterConnection_true(
     Name: java.lang.String,
     Force: activexDashIwshruntimelibraryLib.activexDashIwshruntimelibraryLibNumbers.`true`,
     UpdateProfile: activexDashIwshruntimelibraryLib.activexDashIwshruntimelibraryLibNumbers.`true`

@@ -79,22 +79,22 @@ class DoCmd protected () extends js.Object {
   def DeleteObject(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Unit = js.native
   /** @deprecated Use the **RunCommand** method */
   def DoMenuItem(
-    MenuBar: Constants | scala.Double,
-    MenuName: Constants | scala.Double,
-    Command: Constants | scala.Double
+    MenuBar: activexDashAccessLib.activexDashAccessLibNumbers.`0` | scala.Double,
+    MenuName: activexDashAccessLib.activexDashAccessLibNumbers.`0` | activexDashAccessLib.activexDashAccessLibNumbers.`1` | activexDashAccessLib.activexDashAccessLibNumbers.`5` | scala.Double,
+    Command: activexDashAccessLib.activexDashAccessLibNumbers.`0` | activexDashAccessLib.activexDashAccessLibNumbers.`4` | activexDashAccessLib.activexDashAccessLibNumbers.`5` | activexDashAccessLib.activexDashAccessLibNumbers.`1` | activexDashAccessLib.activexDashAccessLibNumbers.`2` | activexDashAccessLib.activexDashAccessLibNumbers.`3` | activexDashAccessLib.activexDashAccessLibNumbers.`6` | activexDashAccessLib.activexDashAccessLibNumbers.`8` | activexDashAccessLib.activexDashAccessLibNumbers.`9` | scala.Double
   ): scala.Unit = js.native
   def DoMenuItem(
-    MenuBar: Constants | scala.Double,
-    MenuName: Constants | scala.Double,
-    Command: Constants | scala.Double,
-    Subcommand: Constants | scala.Double
+    MenuBar: activexDashAccessLib.activexDashAccessLibNumbers.`0` | scala.Double,
+    MenuName: activexDashAccessLib.activexDashAccessLibNumbers.`0` | activexDashAccessLib.activexDashAccessLibNumbers.`1` | activexDashAccessLib.activexDashAccessLibNumbers.`5` | scala.Double,
+    Command: activexDashAccessLib.activexDashAccessLibNumbers.`0` | activexDashAccessLib.activexDashAccessLibNumbers.`4` | activexDashAccessLib.activexDashAccessLibNumbers.`5` | activexDashAccessLib.activexDashAccessLibNumbers.`1` | activexDashAccessLib.activexDashAccessLibNumbers.`2` | activexDashAccessLib.activexDashAccessLibNumbers.`3` | activexDashAccessLib.activexDashAccessLibNumbers.`6` | activexDashAccessLib.activexDashAccessLibNumbers.`8` | activexDashAccessLib.activexDashAccessLibNumbers.`9` | scala.Double,
+    Subcommand: activexDashAccessLib.activexDashAccessLibNumbers.`0` | activexDashAccessLib.activexDashAccessLibNumbers.`3` | scala.Double
   ): scala.Unit = js.native
   def DoMenuItem(
-    MenuBar: Constants | scala.Double,
-    MenuName: Constants | scala.Double,
-    Command: Constants | scala.Double,
-    Subcommand: Constants | scala.Double,
-    Version: Constants
+    MenuBar: activexDashAccessLib.activexDashAccessLibNumbers.`0` | scala.Double,
+    MenuName: activexDashAccessLib.activexDashAccessLibNumbers.`0` | activexDashAccessLib.activexDashAccessLibNumbers.`1` | activexDashAccessLib.activexDashAccessLibNumbers.`5` | scala.Double,
+    Command: activexDashAccessLib.activexDashAccessLibNumbers.`0` | activexDashAccessLib.activexDashAccessLibNumbers.`4` | activexDashAccessLib.activexDashAccessLibNumbers.`5` | activexDashAccessLib.activexDashAccessLibNumbers.`1` | activexDashAccessLib.activexDashAccessLibNumbers.`2` | activexDashAccessLib.activexDashAccessLibNumbers.`3` | activexDashAccessLib.activexDashAccessLibNumbers.`6` | activexDashAccessLib.activexDashAccessLibNumbers.`8` | activexDashAccessLib.activexDashAccessLibNumbers.`9` | scala.Double,
+    Subcommand: activexDashAccessLib.activexDashAccessLibNumbers.`0` | activexDashAccessLib.activexDashAccessLibNumbers.`3` | scala.Double,
+    Version: activexDashAccessLib.activexDashAccessLibNumbers.`70` | activexDashAccessLib.activexDashAccessLibNumbers.`20` | activexDashAccessLib.activexDashAccessLibNumbers.`11`
   ): scala.Unit = js.native
   def Echo(EchoOn: scala.Boolean): scala.Unit = js.native
   def Echo(EchoOn: scala.Boolean, StatusBarText: java.lang.String): scala.Unit = js.native
@@ -145,7 +145,45 @@ class DoCmd protected () extends js.Object {
   def GoToRecord(ObjectType: AcDataObjectType): scala.Unit = js.native
   def GoToRecord(ObjectType: AcDataObjectType, ObjectName: java.lang.String): scala.Unit = js.native
   def GoToRecord(ObjectType: AcDataObjectType, ObjectName: java.lang.String, Record: AcRecord): scala.Unit = js.native
-  def GoToRecord(ObjectType: AcDataObjectType, ObjectName: java.lang.String, Record: AcRecord, Offset: AcRecord): scala.Unit = js.native
+  @JSName("GoToRecord")
+  def GoToRecord_0(
+    ObjectType: AcDataObjectType,
+    ObjectName: java.lang.String,
+    Record: AcRecord,
+    Offset: activexDashAccessLib.activexDashAccessLibNumbers.`0`
+  ): scala.Unit = js.native
+  @JSName("GoToRecord")
+  def GoToRecord_1(
+    ObjectType: AcDataObjectType,
+    ObjectName: java.lang.String,
+    Record: AcRecord,
+    Offset: activexDashAccessLib.activexDashAccessLibNumbers.`1`
+  ): scala.Unit = js.native
+  @JSName("GoToRecord")
+  def GoToRecord_2(
+    ObjectType: AcDataObjectType,
+    ObjectName: java.lang.String,
+    Record: activexDashAccessLib.activexDashAccessLibNumbers.`2`
+  ): scala.Unit = js.native
+  @JSName("GoToRecord")
+  def GoToRecord_3(
+    ObjectType: AcDataObjectType,
+    ObjectName: java.lang.String,
+    Record: activexDashAccessLib.activexDashAccessLibNumbers.`3`
+  ): scala.Unit = js.native
+  @JSName("GoToRecord")
+  def GoToRecord_4(
+    ObjectType: AcDataObjectType,
+    ObjectName: java.lang.String,
+    Record: AcRecord,
+    Offset: activexDashAccessLib.activexDashAccessLibNumbers.`4`
+  ): scala.Unit = js.native
+  @JSName("GoToRecord")
+  def GoToRecord_5(
+    ObjectType: AcDataObjectType,
+    ObjectName: java.lang.String,
+    Record: activexDashAccessLib.activexDashAccessLibNumbers.`5`
+  ): scala.Unit = js.native
   def Hourglass(HourglassOn: scala.Boolean): scala.Unit = js.native
   def LockNavigationPane(Lock: scala.Boolean): scala.Unit = js.native
   def Maximize(): scala.Unit = js.native
@@ -260,18 +298,18 @@ class DoCmd protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param OutputQuality [OutputQuality=0] */
   def OutputTo(
-    ObjectType: AcOutputObjectType,
+    ObjectType: activexDashAccessLib.activexDashAccessLibNumbers.`5`,
     ObjectName: java.lang.String,
-    OutputFormat: AcOutputFormat,
+    OutputFormat: activexDashAccessLib.activexDashAccessLibStrings.`MS-DOS Text (*DOTtxt)`,
     OutputFile: java.lang.String,
     AutoStart: scala.Boolean,
     TemplateFile: java.lang.String,
     Encoding: js.Any
   ): scala.Unit = js.native
   def OutputTo(
-    ObjectType: AcOutputObjectType,
+    ObjectType: activexDashAccessLib.activexDashAccessLibNumbers.`5`,
     ObjectName: java.lang.String,
-    OutputFormat: AcOutputFormat,
+    OutputFormat: activexDashAccessLib.activexDashAccessLibStrings.`MS-DOS Text (*DOTtxt)`,
     OutputFile: java.lang.String,
     AutoStart: scala.Boolean,
     TemplateFile: java.lang.String,
@@ -326,24 +364,34 @@ class DoCmd protected () extends js.Object {
     * @param Copies [Copies=1]
     * @param CollateCopies [CollateCopies=true]
     */
-  def PrintOut(PrintRange: AcPrintRange): scala.Unit = js.native
-  def PrintOut(PrintRange: AcPrintRange, PageFrom: scala.Double): scala.Unit = js.native
-  def PrintOut(PrintRange: AcPrintRange, PageFrom: scala.Double, PageTo: scala.Double): scala.Unit = js.native
-  def PrintOut(
-    PrintRange: AcPrintRange,
+  @JSName("PrintOut")
+  def PrintOut_2(PrintRange: activexDashAccessLib.activexDashAccessLibNumbers.`2`): scala.Unit = js.native
+  @JSName("PrintOut")
+  def PrintOut_2(PrintRange: activexDashAccessLib.activexDashAccessLibNumbers.`2`, PageFrom: scala.Double): scala.Unit = js.native
+  @JSName("PrintOut")
+  def PrintOut_2(
+    PrintRange: activexDashAccessLib.activexDashAccessLibNumbers.`2`,
+    PageFrom: scala.Double,
+    PageTo: scala.Double
+  ): scala.Unit = js.native
+  @JSName("PrintOut")
+  def PrintOut_2(
+    PrintRange: activexDashAccessLib.activexDashAccessLibNumbers.`2`,
     PageFrom: scala.Double,
     PageTo: scala.Double,
     PrintQuality: AcPrintQuality
   ): scala.Unit = js.native
-  def PrintOut(
-    PrintRange: AcPrintRange,
+  @JSName("PrintOut")
+  def PrintOut_2(
+    PrintRange: activexDashAccessLib.activexDashAccessLibNumbers.`2`,
     PageFrom: scala.Double,
     PageTo: scala.Double,
     PrintQuality: AcPrintQuality,
     Copies: scala.Double
   ): scala.Unit = js.native
-  def PrintOut(
-    PrintRange: AcPrintRange,
+  @JSName("PrintOut")
+  def PrintOut_2(
+    PrintRange: activexDashAccessLib.activexDashAccessLibNumbers.`2`,
     PageFrom: scala.Double,
     PageTo: scala.Double,
     PrintQuality: AcPrintQuality,
@@ -389,13 +437,15 @@ class DoCmd protected () extends js.Object {
     Record: AcRecord,
     WhereCondition: java.lang.String
   ): scala.Unit = js.native
-  def SelectObject(
+  def SelectObject(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Unit = js.native
+  @JSName("SelectObject")
+  def SelectObject_true(
     ObjectType: AcObjectType,
     ObjectName: js.UndefOr[scala.Nothing],
     InDatabaseWindow: activexDashAccessLib.activexDashAccessLibNumbers.`true`
   ): scala.Unit = js.native
-  def SelectObject(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Unit = js.native
-  def SelectObject(
+  @JSName("SelectObject")
+  def SelectObject_true(
     ObjectType: AcObjectType,
     ObjectName: java.lang.String,
     InDatabaseWindow: activexDashAccessLib.activexDashAccessLibNumbers.`true`
@@ -512,11 +562,6 @@ class DoCmd protected () extends js.Object {
     * @param HasFieldNames [HasFieldNames=false]
     */
   def TransferSpreadsheet(): scala.Unit = js.native
-  /**
-    * @param TransferType [TransferType=0]
-    * @param SpreadsheetType [SpreadsheetType=10]
-    * @param HasFieldNames [HasFieldNames=false]
-    */
   def TransferSpreadsheet(TransferType: AcDataTransferType): scala.Unit = js.native
   def TransferSpreadsheet(TransferType: AcDataTransferType, SpreadsheetType: AcSpreadSheetType): scala.Unit = js.native
   def TransferSpreadsheet(TransferType: AcDataTransferType, SpreadsheetType: AcSpreadSheetType, TableName: java.lang.String): scala.Unit = js.native
@@ -533,20 +578,74 @@ class DoCmd protected () extends js.Object {
     FileName: java.lang.String,
     HasFieldNames: scala.Boolean
   ): scala.Unit = js.native
-  def TransferSpreadsheet(
-    TransferType: AcDataTransferType,
+  /**
+    * @param TransferType [TransferType=0]
+    * @param SpreadsheetType [SpreadsheetType=10]
+    * @param HasFieldNames [HasFieldNames=false]
+    */
+  @JSName("TransferSpreadsheet")
+  def TransferSpreadsheet_0(TransferType: activexDashAccessLib.activexDashAccessLibNumbers.`0`): scala.Unit = js.native
+  @JSName("TransferSpreadsheet")
+  def TransferSpreadsheet_0(
+    TransferType: activexDashAccessLib.activexDashAccessLibNumbers.`0`,
+    SpreadsheetType: AcSpreadSheetType
+  ): scala.Unit = js.native
+  @JSName("TransferSpreadsheet")
+  def TransferSpreadsheet_0(
+    TransferType: activexDashAccessLib.activexDashAccessLibNumbers.`0`,
+    SpreadsheetType: AcSpreadSheetType,
+    TableName: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("TransferSpreadsheet")
+  def TransferSpreadsheet_0(
+    TransferType: activexDashAccessLib.activexDashAccessLibNumbers.`0`,
+    SpreadsheetType: AcSpreadSheetType,
+    TableName: java.lang.String,
+    FileName: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("TransferSpreadsheet")
+  def TransferSpreadsheet_0(
+    TransferType: activexDashAccessLib.activexDashAccessLibNumbers.`0`,
+    SpreadsheetType: AcSpreadSheetType,
+    TableName: java.lang.String,
+    FileName: java.lang.String,
+    HasFieldNames: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("TransferSpreadsheet")
+  def TransferSpreadsheet_0(
+    TransferType: activexDashAccessLib.activexDashAccessLibNumbers.`0`,
     SpreadsheetType: AcSpreadSheetType,
     TableName: java.lang.String,
     FileName: java.lang.String,
     HasFieldNames: scala.Boolean,
     Range: js.Any
   ): scala.Unit = js.native
+  def TransferText(
+    TransferType: js.UndefOr[AcTextTransferType],
+    SpecificationName: js.UndefOr[java.lang.String],
+    TableName: js.UndefOr[java.lang.String],
+    FileName: js.UndefOr[java.lang.String],
+    HasFieldNames: js.UndefOr[scala.Boolean],
+    HTMLTableName: js.UndefOr[scala.Nothing],
+    CodePage: js.UndefOr[scala.Double]
+  ): scala.Unit = js.native
+  @JSName("TransferText")
+  def TransferText_7(
+    TransferType: js.UndefOr[activexDashAccessLib.activexDashAccessLibNumbers.`7`],
+    SpecificationName: js.UndefOr[java.lang.String],
+    TableName: js.UndefOr[java.lang.String],
+    FileName: js.UndefOr[java.lang.String],
+    HasFieldNames: js.UndefOr[scala.Boolean],
+    HTMLTableName: js.UndefOr[java.lang.String],
+    CodePage: js.UndefOr[scala.Double]
+  ): scala.Unit = js.native
   /**
     * @param TransferType [TransferType=0]
     * @param Encoding For valid values see https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx
     */
-  def TransferText(
-    TransferType: js.UndefOr[AcTextTransferType],
+  @JSName("TransferText")
+  def TransferText_8(
+    TransferType: js.UndefOr[activexDashAccessLib.activexDashAccessLibNumbers.`8`],
     SpecificationName: js.UndefOr[java.lang.String],
     TableName: js.UndefOr[java.lang.String],
     FileName: js.UndefOr[java.lang.String],

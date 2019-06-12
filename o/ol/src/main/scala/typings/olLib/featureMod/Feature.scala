@@ -16,12 +16,12 @@ trait Feature
   def getStyle(): olLib.styleStyleMod.StyleLike = js.native
   def getStyleFunction(): olLib.styleStyleMod.StyleFunction = js.native
   @JSName("on")
-  def `on_change:geometry`(
+  def on_changegeometry(
     `type`: olLib.olLibStrings.`change:geometry`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:geometry`(
+  def once_changegeometry(
     `type`: olLib.olLibStrings.`change:geometry`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -31,7 +31,7 @@ trait Feature
   def setId(id: scala.Double): scala.Unit = js.native
   def setStyle(style: olLib.styleStyleMod.StyleLike): scala.Unit = js.native
   @JSName("un")
-  def `un_change:geometry`(
+  def un_changegeometry(
     `type`: olLib.olLibStrings.`change:geometry`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

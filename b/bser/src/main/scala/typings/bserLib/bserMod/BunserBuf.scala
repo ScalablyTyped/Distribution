@@ -14,8 +14,10 @@ class BunserBuf ()
   var pduLen: js.UndefOr[bserLib.bserLibNumbers.`false` | IntWrapper] = js.native
   var state: bserLib.bserLibNumbers.`0` | bserLib.bserLibNumbers.`1` = js.native
   def append(buf: InputWrapper): js.UndefOr[AnyWrapper | js.Array[AnyWrapper]] = js.native
-  def append(buf: InputWrapper, synchronous: bserLib.bserLibNumbers.`false`): js.UndefOr[AnyWrapper | js.Array[AnyWrapper]] = js.native
-  def append(buf: InputWrapper, synchronous: bserLib.bserLibNumbers.`true`): scala.Unit = js.native
+  @JSName("append")
+  def append_false(buf: InputWrapper, synchronous: bserLib.bserLibNumbers.`false`): js.UndefOr[AnyWrapper | js.Array[AnyWrapper]] = js.native
+  @JSName("append")
+  def append_true(buf: InputWrapper, synchronous: bserLib.bserLibNumbers.`true`): scala.Unit = js.native
   def decodeAny(): AnyWrapper | js.Array[AnyWrapper] = js.native
   def decodeArray(): js.Array[AnyWrapper] = js.native
   // replace "IntWrapper" with "number"?
@@ -26,9 +28,11 @@ class BunserBuf ()
   def decodeTemplate(): js.Array[AnyWrapper] = js.native
   def expectCode(expected: scala.Double): scala.Unit = js.native
   def process(): js.UndefOr[AnyWrapper | js.Array[AnyWrapper]] = js.native
-  def process(synchronous: bserLib.bserLibNumbers.`false`): js.UndefOr[AnyWrapper | js.Array[AnyWrapper]] = js.native
-  def process(synchronous: bserLib.bserLibNumbers.`true`): scala.Unit = js.native
   def processLater(): scala.Unit = js.native
+  @JSName("process")
+  def process_false(synchronous: bserLib.bserLibNumbers.`false`): js.UndefOr[AnyWrapper | js.Array[AnyWrapper]] = js.native
+  @JSName("process")
+  def process_true(synchronous: bserLib.bserLibNumbers.`true`): scala.Unit = js.native
   def raise(reason: java.lang.String): scala.Unit = js.native
 }
 

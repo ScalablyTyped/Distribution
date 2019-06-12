@@ -12,7 +12,7 @@ trait MethodAbi extends FunctionAbi {
   var outputs: js.Array[DataItem]
   var payable: scala.Boolean
   var stateMutability: StateMutability
-  var `type`: AbiType
+  var `type`: ethereumDashProtocolLib.ethereumDashProtocolMod.AbiType.Function
 }
 
 object MethodAbi {
@@ -24,7 +24,7 @@ object MethodAbi {
     outputs: js.Array[DataItem],
     payable: scala.Boolean,
     stateMutability: StateMutability,
-    `type`: AbiType
+    `type`: ethereumDashProtocolLib.ethereumDashProtocolMod.AbiType.Function
   ): MethodAbi = {
     val __obj = js.Dynamic.literal(constant = constant, inputs = inputs, name = name, outputs = outputs, payable = payable, stateMutability = stateMutability)
     __obj.updateDynamic("type")(`type`)

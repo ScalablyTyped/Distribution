@@ -113,7 +113,7 @@ class Client ()
     * Call `done` with the new password.
     */
   @JSName("on")
-  def `on_change password`(
+  def on_changepassword(
     event: ssh2Lib.ssh2LibStrings.`change password`,
     listener: js.Function3[
       /* message */ java.lang.String, 
@@ -175,7 +175,7 @@ class Client ()
     * NOTE: It's possible for the server to come back and ask more questions.
     */
   @JSName("on")
-  def `on_keyboard-interactive`(
+  def on_keyboardinteractive(
     event: ssh2Lib.ssh2LibStrings.`keyboard-interactive`,
     listener: js.Function5[
       /* name */ java.lang.String, 
@@ -198,7 +198,7 @@ class Client ()
     * Calling `reject()` rejects the connection and no further action is needed.
     */
   @JSName("on")
-  def `on_tcp connection`(
+  def on_tcpconnection(
     event: ssh2Lib.ssh2LibStrings.`tcp connection`,
     listener: js.Function3[
       /* details */ TcpConnectionDetails, 
@@ -291,15 +291,6 @@ class Client ()
     options: ShellOptions,
     callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native
-  def shell(
-    window: ssh2Lib.ssh2LibNumbers.`false`,
-    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
-  ): scala.Boolean = js.native
-  def shell(
-    window: ssh2Lib.ssh2LibNumbers.`false`,
-    options: ShellOptions,
-    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
-  ): scala.Boolean = js.native
   /**
     * Starts an interactive shell session on the server.
     *
@@ -323,6 +314,17 @@ class Client ()
     */
   def shell(
     window: PseudoTtyOptions,
+    options: ShellOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
+  ): scala.Boolean = js.native
+  @JSName("shell")
+  def shell_false(
+    window: ssh2Lib.ssh2LibNumbers.`false`,
+    callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
+  ): scala.Boolean = js.native
+  @JSName("shell")
+  def shell_false(
+    window: ssh2Lib.ssh2LibNumbers.`false`,
     options: ShellOptions,
     callback: js.Function2[/* err */ stdLib.Error, /* channel */ ClientChannel, scala.Unit]
   ): scala.Boolean = js.native

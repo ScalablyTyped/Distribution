@@ -95,70 +95,78 @@ object ^ extends js.Object {
   def callExpression(
     callee: Expression,
     _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
-    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`
-  ): CallExpression = js.native
-  def callExpression(
-    callee: Expression,
-    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
-    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
+    optional: scala.Null,
     typeArguments: TypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
     _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
-    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
+    optional: scala.Null,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
     _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
+    optional: scala.Null,
+    typeArguments: scala.Null,
+    typeParameters: TSTypeParameterInstantiation
+  ): CallExpression = js.native
+  @JSName("callExpression")
+  def callExpression_false(
+    callee: Expression,
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
+    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`
+  ): CallExpression = js.native
+  @JSName("callExpression")
+  def callExpression_false(
+    callee: Expression,
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
+    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
+    typeArguments: TypeParameterInstantiation
+  ): CallExpression = js.native
+  @JSName("callExpression")
+  def callExpression_false(
+    callee: Expression,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
+    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
+    typeArguments: TypeParameterInstantiation,
+    typeParameters: TSTypeParameterInstantiation
+  ): CallExpression = js.native
+  @JSName("callExpression")
+  def callExpression_false(
+    callee: Expression,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
   ): CallExpression = js.native
-  def callExpression(
+  @JSName("callExpression")
+  def callExpression_true(
     callee: Expression,
     _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`
   ): CallExpression = js.native
-  def callExpression(
+  @JSName("callExpression")
+  def callExpression_true(
     callee: Expression,
     _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation
   ): CallExpression = js.native
-  def callExpression(
+  @JSName("callExpression")
+  def callExpression_true(
     callee: Expression,
     _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): CallExpression = js.native
-  def callExpression(
+  @JSName("callExpression")
+  def callExpression_true(
     callee: Expression,
     _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
-    typeArguments: scala.Null,
-    typeParameters: TSTypeParameterInstantiation
-  ): CallExpression = js.native
-  def callExpression(
-    callee: Expression,
-    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
-    optional: scala.Null,
-    typeArguments: TypeParameterInstantiation
-  ): CallExpression = js.native
-  def callExpression(
-    callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
-    optional: scala.Null,
-    typeArguments: TypeParameterInstantiation,
-    typeParameters: TSTypeParameterInstantiation
-  ): CallExpression = js.native
-  def callExpression(
-    callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
-    optional: scala.Null,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
   ): CallExpression = js.native
@@ -2616,21 +2624,20 @@ object ^ extends js.Object {
   def jsxSpreadChild(expression: Expression): JSXSpreadChild = js.native
   def jsxText(value: java.lang.String): JSXText = js.native
   def labeledStatement(label: Identifier, body: Statement): LabeledStatement = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_&&`(operator: atBabelTypesLib.atBabelTypesLibStrings.`&&`, left: Expression, right: Expression): LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_??`(operator: atBabelTypesLib.atBabelTypesLibStrings.`??`, left: Expression, right: Expression): LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_||`(operator: atBabelTypesLib.atBabelTypesLibStrings.`||`, left: Expression, right: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`&&`, left: Expression, right: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`??`, left: Expression, right: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`||`, left: Expression, right: Expression): LogicalExpression = js.native
   def memberExpression(`object`: Expression, property: js.Any): MemberExpression = js.native
   def memberExpression(`object`: Expression, property: js.Any, computed: scala.Boolean): MemberExpression = js.native
-  def memberExpression(
+  @JSName("memberExpression")
+  def memberExpression_false(
     `object`: Expression,
     property: js.Any,
     computed: scala.Boolean,
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`
   ): MemberExpression = js.native
-  def memberExpression(
+  @JSName("memberExpression")
+  def memberExpression_true(
     `object`: Expression,
     property: js.Any,
     computed: scala.Boolean,
@@ -2645,70 +2652,78 @@ object ^ extends js.Object {
   def newExpression(
     callee: Expression,
     _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
-    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`
-  ): NewExpression = js.native
-  def newExpression(
-    callee: Expression,
-    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
-    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
+    optional: scala.Null,
     typeArguments: TypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
     _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
-    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
+    optional: scala.Null,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
     _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
+    optional: scala.Null,
+    typeArguments: scala.Null,
+    typeParameters: TSTypeParameterInstantiation
+  ): NewExpression = js.native
+  @JSName("newExpression")
+  def newExpression_false(
+    callee: Expression,
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
+    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`
+  ): NewExpression = js.native
+  @JSName("newExpression")
+  def newExpression_false(
+    callee: Expression,
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
+    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
+    typeArguments: TypeParameterInstantiation
+  ): NewExpression = js.native
+  @JSName("newExpression")
+  def newExpression_false(
+    callee: Expression,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
+    optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
+    typeArguments: TypeParameterInstantiation,
+    typeParameters: TSTypeParameterInstantiation
+  ): NewExpression = js.native
+  @JSName("newExpression")
+  def newExpression_false(
+    callee: Expression,
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
   ): NewExpression = js.native
-  def newExpression(
+  @JSName("newExpression")
+  def newExpression_true(
     callee: Expression,
     _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`
   ): NewExpression = js.native
-  def newExpression(
+  @JSName("newExpression")
+  def newExpression_true(
     callee: Expression,
     _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation
   ): NewExpression = js.native
-  def newExpression(
+  @JSName("newExpression")
+  def newExpression_true(
     callee: Expression,
     _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): NewExpression = js.native
-  def newExpression(
+  @JSName("newExpression")
+  def newExpression_true(
     callee: Expression,
     _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
-    typeArguments: scala.Null,
-    typeParameters: TSTypeParameterInstantiation
-  ): NewExpression = js.native
-  def newExpression(
-    callee: Expression,
-    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
-    optional: scala.Null,
-    typeArguments: TypeParameterInstantiation
-  ): NewExpression = js.native
-  def newExpression(
-    callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
-    optional: scala.Null,
-    typeArguments: TypeParameterInstantiation,
-    typeParameters: TSTypeParameterInstantiation
-  ): NewExpression = js.native
-  def newExpression(
-    callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
-    optional: scala.Null,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
   ): NewExpression = js.native
@@ -4174,18 +4189,14 @@ object ^ extends js.Object {
   def typeParameterDeclaration(params: js.Array[TypeParameter]): TypeParameterDeclaration = js.native
   def typeParameterInstantiation(params: js.Array[FlowType]): TypeParameterInstantiation = js.native
   def typeofTypeAnnotation(argument: FlowType): TypeofTypeAnnotation = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_!`(operator: atBabelTypesLib.atBabelTypesLibStrings.`!`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_!`(operator: atBabelTypesLib.atBabelTypesLibStrings.`!`, argument: Expression, prefix: scala.Boolean): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_+`(operator: atBabelTypesLib.atBabelTypesLibStrings.`+`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_+`(operator: atBabelTypesLib.atBabelTypesLibStrings.`+`, argument: Expression, prefix: scala.Boolean): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_-`(operator: atBabelTypesLib.atBabelTypesLibStrings.`-`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_-`(operator: atBabelTypesLib.atBabelTypesLibStrings.`-`, argument: Expression, prefix: scala.Boolean): UnaryExpression = js.native
+  def unaryExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`!`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`!`, argument: Expression, prefix: scala.Boolean): UnaryExpression = js.native
+  def unaryExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`+`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`+`, argument: Expression, prefix: scala.Boolean): UnaryExpression = js.native
+  def unaryExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`-`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`-`, argument: Expression, prefix: scala.Boolean): UnaryExpression = js.native
+  def unaryExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`~`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`~`, argument: Expression, prefix: scala.Boolean): UnaryExpression = js.native
   @JSName("unaryExpression")
   def unaryExpression_delete(operator: atBabelTypesLib.atBabelTypesLibStrings.delete, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
@@ -4214,19 +4225,11 @@ object ^ extends js.Object {
   def unaryExpression_void(operator: atBabelTypesLib.atBabelTypesLibStrings.void, argument: Expression): UnaryExpression = js.native
   @JSName("unaryExpression")
   def unaryExpression_void(operator: atBabelTypesLib.atBabelTypesLibStrings.void, argument: Expression, prefix: scala.Boolean): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_~`(operator: atBabelTypesLib.atBabelTypesLibStrings.`~`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_~`(operator: atBabelTypesLib.atBabelTypesLibStrings.`~`, argument: Expression, prefix: scala.Boolean): UnaryExpression = js.native
   def unionTypeAnnotation(types: js.Array[FlowType]): UnionTypeAnnotation = js.native
-  @JSName("updateExpression")
-  def `updateExpression_++`(operator: atBabelTypesLib.atBabelTypesLibStrings.`++`, argument: Expression): UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_++`(operator: atBabelTypesLib.atBabelTypesLibStrings.`++`, argument: Expression, prefix: scala.Boolean): UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_--`(operator: atBabelTypesLib.atBabelTypesLibStrings.`--`, argument: Expression): UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_--`(operator: atBabelTypesLib.atBabelTypesLibStrings.`--`, argument: Expression, prefix: scala.Boolean): UpdateExpression = js.native
+  def updateExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`++`, argument: Expression): UpdateExpression = js.native
+  def updateExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`++`, argument: Expression, prefix: scala.Boolean): UpdateExpression = js.native
+  def updateExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`--`, argument: Expression): UpdateExpression = js.native
+  def updateExpression(operator: atBabelTypesLib.atBabelTypesLibStrings.`--`, argument: Expression, prefix: scala.Boolean): UpdateExpression = js.native
   def validate(n: Node, key: java.lang.String, value: js.Any): scala.Unit = js.native
   @JSName("variableDeclaration")
   def variableDeclaration_const(kind: atBabelTypesLib.atBabelTypesLibStrings.const, declarations: js.Array[VariableDeclarator]): VariableDeclaration = js.native

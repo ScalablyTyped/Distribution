@@ -21,7 +21,6 @@ trait IFramePage extends js.Object {
     * Returns the ID of the iFrame that the page is contained in.
     */
   def getId(): java.lang.String = js.native
-  def getPageInfo(callback: iframeDashResizerLib.iframeDashResizerLibNumbers.`false`): scala.Unit = js.native
   /**
     * Ask the containing page for its positioning coordinates.
     *
@@ -30,6 +29,8 @@ trait IFramePage extends js.Object {
     * Pass false to disable the callback.
     */
   def getPageInfo(callback: js.Function1[/* data */ PageInfo, scala.Unit]): scala.Unit = js.native
+  @JSName("getPageInfo")
+  def getPageInfo_false(callback: iframeDashResizerLib.iframeDashResizerLibNumbers.`false`): scala.Unit = js.native
   /**
     * Scroll the parent page to the coordinates x and y
     */

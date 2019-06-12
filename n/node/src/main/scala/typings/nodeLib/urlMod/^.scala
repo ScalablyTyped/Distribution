@@ -27,20 +27,24 @@ object ^ extends js.Object {
     parseQueryString: js.UndefOr[scala.Nothing],
     slashesDenoteHost: scala.Boolean
   ): UrlWithStringQuery = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: nodeLib.nodeLibNumbers.`false`): UrlWithStringQuery = js.native
-  def parse(
+  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean): Url = js.native
+  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean, slashesDenoteHost: scala.Boolean): Url = js.native
+  @JSName("parse")
+  def parse_false(urlStr: java.lang.String, parseQueryString: nodeLib.nodeLibNumbers.`false`): UrlWithStringQuery = js.native
+  @JSName("parse")
+  def parse_false(
     urlStr: java.lang.String,
     parseQueryString: nodeLib.nodeLibNumbers.`false`,
     slashesDenoteHost: scala.Boolean
   ): UrlWithStringQuery = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: nodeLib.nodeLibNumbers.`true`): UrlWithParsedQuery = js.native
-  def parse(
+  @JSName("parse")
+  def parse_true(urlStr: java.lang.String, parseQueryString: nodeLib.nodeLibNumbers.`true`): UrlWithParsedQuery = js.native
+  @JSName("parse")
+  def parse_true(
     urlStr: java.lang.String,
     parseQueryString: nodeLib.nodeLibNumbers.`true`,
     slashesDenoteHost: scala.Boolean
   ): UrlWithParsedQuery = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean): Url = js.native
-  def parse(urlStr: java.lang.String, parseQueryString: scala.Boolean, slashesDenoteHost: scala.Boolean): Url = js.native
   /**
     * This function ensures that path is resolved absolutely, and that the URL
     * control characters are correctly encoded when converting into a File URL.

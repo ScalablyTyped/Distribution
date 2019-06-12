@@ -328,17 +328,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   ] = js.native
   def clearWhere(): QueryBuilder[TRecord, TResult] = js.native
   def column(): QueryBuilder[TRecord, TResult] = js.native
-  // For non-inferrable column selection, we will allow consumer to
-  // specify result type and if not widen the result to entire record type with any omissions permitted
-  def column[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
-  def column[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def column[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
-  ): QueryBuilder[TRecord, TResult2] = js.native
   // When all columns are known to be keys of original record,
   // we can extend our selection by these columns
-  @JSName("column")
-  def `column_*`(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
+  def column(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
     TRecord, 
     js.Array[
       DeferredKeySelection[
@@ -352,6 +344,13 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
       ]
     ]
   ] = js.native
+  // For non-inferrable column selection, we will allow consumer to
+  // specify result type and if not widen the result to entire record type with any omissions permitted
+  def column[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
+  def column[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
+  def column[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
+  ): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("column")
   def column_AliasUTArrayTResult2[AliasUT /* <: js.Array[Dict[_] | java.lang.String] */, TResult2](
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
@@ -365,17 +364,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   @JSName("column")
   def column_TResult2TInnerRecordTInnerResult[TResult2, TInnerRecord, TInnerResult](subQueryBuilders: js.Array[QueryBuilder[TInnerRecord, TInnerResult]]): QueryBuilder[TRecord, TResult2] = js.native
   def columns(): QueryBuilder[TRecord, TResult] = js.native
-  // For non-inferrable column selection, we will allow consumer to
-  // specify result type and if not widen the result to entire record type with any omissions permitted
-  def columns[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
-  def columns[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def columns[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
-  ): QueryBuilder[TRecord, TResult2] = js.native
   // When all columns are known to be keys of original record,
   // we can extend our selection by these columns
-  @JSName("columns")
-  def `columns_*`(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
+  def columns(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
     TRecord, 
     js.Array[
       DeferredKeySelection[
@@ -389,6 +380,13 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
       ]
     ]
   ] = js.native
+  // For non-inferrable column selection, we will allow consumer to
+  // specify result type and if not widen the result to entire record type with any omissions permitted
+  def columns[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
+  def columns[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
+  def columns[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
+  ): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("columns")
   def columns_AliasUTArrayTResult2[AliasUT /* <: js.Array[Dict[_] | java.lang.String] */, TResult2](
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
@@ -468,14 +466,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def delete[TKey /* <: StrKey[TRecord] */, TResult2](returning: TKey): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("delete")
   def delete_TKeyStrKeyTResult2[TKey /* <: StrKey[TRecord] */, TResult2](returning: js.Array[TKey]): QueryBuilder[TRecord, TResult2] = js.native
-  // For non-inferrable column selection, we will allow consumer to
-  // specify result type and if not widen the result to entire record type with any omissions permitted
-  def distinct[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
-  def distinct[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
   // When all columns are known to be keys of original record,
   // we can extend our selection by these columns
-  @JSName("distinct")
-  def `distinct_*`(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
+  def distinct(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
     TRecord, 
     js.Array[
       DeferredKeySelection[
@@ -489,6 +482,10 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
       ]
     ]
   ] = js.native
+  // For non-inferrable column selection, we will allow consumer to
+  // specify result type and if not widen the result to entire record type with any omissions permitted
+  def distinct[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
+  def distinct[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("distinct")
   def distinct_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: ColNameUT*): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("distinct")
@@ -501,6 +498,23 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
         knexLib.knexMod.DeferredKeySelectionNs.AddUnionMember[UnwrapArrayMember[TResult], js.UndefOr[scala.Nothing]]
       ], 
       js.UndefOr[scala.Nothing]
+    ]
+  ] = js.native
+  // When all columns are known to be keys of original record,
+  // we can extend our selection by these columns
+  // Others
+  def first(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
+    TRecord, 
+    js.Array[
+      DeferredKeySelection[
+        TRecord, 
+        java.lang.String, 
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
+      ]
     ]
   ] = js.native
   // For non-inferrable column selection, we will allow consumer to
@@ -555,24 +569,6 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def first[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
   ): QueryBuilder[TRecord, TResult2] = js.native
-  // When all columns are known to be keys of original record,
-  // we can extend our selection by these columns
-  // Others
-  @JSName("first")
-  def `first_*`(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
-    TRecord, 
-    js.Array[
-      DeferredKeySelection[
-        TRecord, 
-        java.lang.String, 
-        knexLib.knexLibNumbers.`false`, 
-        js.Object, 
-        knexLib.knexLibNumbers.`false`, 
-        js.Object, 
-        scala.Nothing
-      ]
-    ]
-  ] = js.native
   // Others
   @JSName("first")
   def first_AliasUTArrayTResult2[AliasUT /* <: js.Array[Dict[_] | java.lang.String] */, TResult2](
@@ -637,6 +633,23 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
     columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | Raw[_]]
   ): QueryBuilder[TRecord2, TResult2] = js.native
   def fullOuterJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableDescriptor, raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
+  // When all columns are known to be keys of original record,
+  // we can extend our selection by these columns
+  // Group by
+  def groupBy(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
+    TRecord, 
+    js.Array[
+      DeferredKeySelection[
+        TRecord, 
+        java.lang.String, 
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        knexLib.knexLibNumbers.`false`, 
+        js.Object, 
+        scala.Nothing
+      ]
+    ]
+  ] = js.native
   // For non-inferrable column selection, we will allow consumer to
   // specify result type and if not widen the result to entire record type with any omissions permitted
   // Group by
@@ -654,24 +667,6 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   def groupByRaw[TResult2](sql: java.lang.String, bindings: RawBinding*): QueryBuilder[TRecord, TResult2] = js.native
   def groupByRaw[TResult2](sql: java.lang.String, bindings: js.Array[RawBinding]): QueryBuilder[TRecord, TResult2] = js.native
   def groupByRaw[TResult2](sql: java.lang.String, bindings: ValueDict): QueryBuilder[TRecord, TResult2] = js.native
-  // When all columns are known to be keys of original record,
-  // we can extend our selection by these columns
-  // Group by
-  @JSName("groupBy")
-  def `groupBy_*`(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
-    TRecord, 
-    js.Array[
-      DeferredKeySelection[
-        TRecord, 
-        java.lang.String, 
-        knexLib.knexLibNumbers.`false`, 
-        js.Object, 
-        knexLib.knexLibNumbers.`false`, 
-        js.Object, 
-        scala.Nothing
-      ]
-    ]
-  ] = js.native
   // Group by
   @JSName("groupBy")
   def groupBy_ColNameUTStringTResult2[ColNameUT /* <: java.lang.String */, TResult2](columnNames: ColNameUT*): QueryBuilder[TRecord, TResult2] = js.native
@@ -1276,17 +1271,9 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
   ): QueryBuilder[TRecord2, TResult2] = js.native
   def rightOuterJoin[TJoinTargetRecord /* <: js.Object */, TRecord2 /* <: js.Object */, TResult2](tableName: TableDescriptor, raw: Raw[_]): QueryBuilder[TRecord2, TResult2] = js.native
   def select(): QueryBuilder[TRecord, TResult] = js.native
-  // For non-inferrable column selection, we will allow consumer to
-  // specify result type and if not widen the result to entire record type with any omissions permitted
-  def select[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
-  def select[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
-  def select[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
-  ): QueryBuilder[TRecord, TResult2] = js.native
   // When all columns are known to be keys of original record,
   // we can extend our selection by these columns
-  @JSName("select")
-  def `select_*`(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
+  def select(columnName: knexLib.knexLibStrings.`*`): QueryBuilder[
     TRecord, 
     js.Array[
       DeferredKeySelection[
@@ -1300,6 +1287,13 @@ trait QueryInterface[TRecord /* <: js.Object */, TResult] extends js.Object {
       ]
     ]
   ] = js.native
+  // For non-inferrable column selection, we will allow consumer to
+  // specify result type and if not widen the result to entire record type with any omissions permitted
+  def select[TResult2](columnNames: (ColumnDescriptor[TRecord, TResult])*): QueryBuilder[TRecord, TResult2] = js.native
+  def select[TResult2](columnNames: js.Array[ColumnDescriptor[TRecord, TResult]]): QueryBuilder[TRecord, TResult2] = js.native
+  def select[AliasUT /* <: js.Array[InferrableColumnDescriptor[TRecord]] */, TResult2](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT
+  ): QueryBuilder[TRecord, TResult2] = js.native
   @JSName("select")
   def select_AliasUTArrayTResult2[AliasUT /* <: js.Array[Dict[_] | java.lang.String] */, TResult2](
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param aliases because its type AliasUT is not an array type */ aliases: AliasUT

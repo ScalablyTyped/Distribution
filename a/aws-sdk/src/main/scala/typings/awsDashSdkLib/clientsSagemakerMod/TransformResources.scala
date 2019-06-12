@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait TransformResources extends js.Object {
   /**
-    * The number of ML compute instances to use in the transform job. For distributed transform, provide a value greater than 1. The default value is 1.
+    * The number of ML compute instances to use in the transform job. For distributed transform jobs, specify a value greater than 1. The default value is 1.
     */
   var InstanceCount: TransformInstanceCount
   /**
-    * The ML compute instance type for the transform job. For using built-in algorithms to transform moderately sized datasets, ml.m4.xlarge or ml.m5.large should suffice. There is no default value for InstanceType.
+    * The ML compute instance type for the transform job. If you are using built-in algorithms to transform moderately sized datasets, we recommend using ml.m4.xlarge or ml.m5.largeinstance types.
     */
   var InstanceType: TransformInstanceType
   /**

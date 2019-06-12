@@ -26,7 +26,6 @@ package object atEmotionStylisMod {
     /* context */ PrefixContext, 
     scala.Boolean
   ])
-  type PrefixContext = Context
   type StylisSet = js.Function1[
     /* options */ Options, 
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @emotion/stylis.@emotion/stylis.StylisSet */ js.Object

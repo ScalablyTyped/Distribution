@@ -15,6 +15,8 @@ trait GetAccessorDeclaration
   var _objectLiteralBrand: js.Any = js.native
   @JSName("body")
   var body_GetAccessorDeclaration: js.UndefOr[FunctionBody] = js.native
+  @JSName("kind")
+  var kind_GetAccessorDeclaration: typescriptLib.typescriptMod.SyntaxKind.GetAccessor = js.native
   @JSName("name")
   var name_GetAccessorDeclaration: PropertyName = js.native
   @JSName("parent")

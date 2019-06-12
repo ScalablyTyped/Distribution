@@ -5,33 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait XlDataSeriesDate extends js.Object
-
-@JSGlobal("Excel.XlDataSeriesDate")
-@js.native
-object XlDataSeriesDate extends js.Object {
-  @js.native
-  sealed trait xlDay
-    extends activexDashExcelLib.ExcelNs.XlDataSeriesDate
-  
-  @js.native
-  sealed trait xlMonth
-    extends activexDashExcelLib.ExcelNs.XlDataSeriesDate
-  
-  @js.native
-  sealed trait xlWeekday
-    extends activexDashExcelLib.ExcelNs.XlDataSeriesDate
-  
-  @js.native
-  sealed trait xlYear
-    extends activexDashExcelLib.ExcelNs.XlDataSeriesDate
-  
-  /* 1 */ val xlDay: xlDay with scala.Double = js.native
-  /* 3 */ val xlMonth: xlMonth with scala.Double = js.native
-  /* 2 */ val xlWeekday: xlWeekday with scala.Double = js.native
-  /* 4 */ val xlYear: xlYear with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[activexDashExcelLib.ExcelNs.XlDataSeriesDate with scala.Double] = js.native
-}
+/* Rewritten from type alias, can be one of: 
+  - activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  - activexDashExcelLib.activexDashExcelLibNumbers.`3`
+  - activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  - activexDashExcelLib.activexDashExcelLibNumbers.`4`
+*/
+trait XlDataSeriesDate extends js.Object
 

@@ -15,7 +15,7 @@ trait JQuery extends js.Object {
     * Adds HTML to results and displays
     */
   @JSName("search")
-  def `search_add results`(
+  def search_addresults(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`add results`,
     html: java.lang.String
   ): JQuery = js.native
@@ -23,14 +23,14 @@ trait JQuery extends js.Object {
     * Cancels current remote search query
     */
   @JSName("search")
-  def `search_cancel query`(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`cancel query`): JQuery = js.native
+  def search_cancelquery(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`cancel query`): JQuery = js.native
   /**
     * Clears value from cache, if no parameter passed clears all cache
     */
   @JSName("search")
-  def `search_clear cache`(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`clear cache`): JQuery = js.native
+  def search_clearcache(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`clear cache`): JQuery = js.native
   @JSName("search")
-  def `search_clear cache`(
+  def search_clearcache(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`clear cache`,
     query: java.lang.String
   ): JQuery = js.native
@@ -43,7 +43,7 @@ trait JQuery extends js.Object {
     * Displays message in search results with text, using template matching type
     */
   @JSName("search")
-  def `search_display message`(
+  def search_displaymessage(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`display message`,
     text: java.lang.String,
     `type`: java.lang.String
@@ -52,7 +52,7 @@ trait JQuery extends js.Object {
     * Generates results using parser specified by settings.template
     */
   @JSName("search")
-  def `search_generate results`(
+  def search_generateresults(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`generate results`,
     response: js.Any
   ): JQuery = js.native
@@ -60,7 +60,7 @@ trait JQuery extends js.Object {
     * Returns JSON object matching searched title or id (see above)
     */
   @JSName("search")
-  def `search_get result`(
+  def search_getresult(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`get result`,
     value: js.Any
   ): js.Any = js.native
@@ -68,19 +68,19 @@ trait JQuery extends js.Object {
     * Returns current search value
     */
   @JSName("search")
-  def `search_get value`(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`get value`): js.Any = js.native
+  def search_getvalue(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`get value`): js.Any = js.native
   /**
     * Whether has minimum characters
     */
   @JSName("search")
-  def `search_has minimum characters`(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`has minimum characters`): scala.Boolean = js.native
+  def search_hasminimumcharacters(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`has minimum characters`): scala.Boolean = js.native
   /**
     * Hides results container
     */
   @JSName("search")
-  def `search_hide results`(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`hide results`): JQuery = js.native
+  def search_hideresults(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`hide results`): JQuery = js.native
   @JSName("search")
-  def `search_hide results`(
+  def search_hideresults(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`hide results`,
     callback: js.Function0[scala.Unit]
   ): JQuery = js.native
@@ -88,17 +88,17 @@ trait JQuery extends js.Object {
     * Whether search results are empty
     */
   @JSName("search")
-  def `search_is empty`(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`is empty`): scala.Boolean = js.native
+  def search_isempty(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`is empty`): scala.Boolean = js.native
   /**
     * Whether search is currently focused
     */
   @JSName("search")
-  def `search_is focused`(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`is focused`): scala.Boolean = js.native
+  def search_isfocused(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`is focused`): scala.Boolean = js.native
   /**
     * Whether search results are visible
     */
   @JSName("search")
-  def `search_is visible`(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`is visible`): scala.Boolean = js.native
+  def search_isvisible(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`is visible`): scala.Boolean = js.native
   /**
     * Search for value currently set in search input
     */
@@ -113,7 +113,7 @@ trait JQuery extends js.Object {
     * Reads cached results for query
     */
   @JSName("search")
-  def `search_read cache`(
+  def search_readcache(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`read cache`,
     query: java.lang.String
   ): JQuery = js.native
@@ -121,7 +121,7 @@ trait JQuery extends js.Object {
     * Search local object for specified query and display results
     */
   @JSName("search")
-  def `search_search local`(
+  def search_searchlocal(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`search local`,
     query: java.lang.String
   ): JQuery = js.native
@@ -129,7 +129,7 @@ trait JQuery extends js.Object {
     * Search object for specified query and return results
     */
   @JSName("search")
-  def `search_search object`(
+  def search_searchobject(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`search object`,
     query: java.lang.String,
     `object`: js.Any,
@@ -139,23 +139,15 @@ trait JQuery extends js.Object {
     * Search remote endpoint for specified query and display results
     */
   @JSName("search")
-  def `search_search remote`(
+  def search_searchremote(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`search remote`,
     query: java.lang.String
   ): JQuery = js.native
   @JSName("search")
-  def `search_search remote`(
+  def search_searchremote(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`search remote`,
     query: java.lang.String,
     callback: js.Function0[scala.Unit]
-  ): JQuery = js.native
-  /**
-    * Sets search input to value
-    */
-  @JSName("search")
-  def `search_set value`(
-    behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`set value`,
-    value: js.Any
   ): JQuery = js.native
   @JSName("search")
   def search_setting(
@@ -171,12 +163,20 @@ trait JQuery extends js.Object {
     value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-search.SemanticUI.SearchSettings._Impl[K] */ js.Any
   ): JQuery = js.native
   /**
+    * Sets search input to value
+    */
+  @JSName("search")
+  def search_setvalue(
+    behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`set value`,
+    value: js.Any
+  ): JQuery = js.native
+  /**
     * Shows results container
     */
   @JSName("search")
-  def `search_show results`(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`show results`): JQuery = js.native
+  def search_showresults(behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`show results`): JQuery = js.native
   @JSName("search")
-  def `search_show results`(
+  def search_showresults(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`show results`,
     callback: js.Function0[scala.Unit]
   ): JQuery = js.native
@@ -184,7 +184,7 @@ trait JQuery extends js.Object {
     * Writes cached results for query
     */
   @JSName("search")
-  def `search_write cache`(
+  def search_writecache(
     behavior: semanticDashUiDashSearchLib.semanticDashUiDashSearchLibStrings.`write cache`,
     query: java.lang.String
   ): JQuery = js.native

@@ -33,12 +33,13 @@ trait Grammar extends js.Object {
     *  @return An object representing the result of the tokenize.
     */
   def tokenizeLine(line: java.lang.String, ruleStack: js.Array[GrammarRule]): TokenizeLineResult = js.native
-  def tokenizeLine(
+  def tokenizeLine(line: java.lang.String, ruleStack: scala.Null, firstLine: scala.Boolean): TokenizeLineResult = js.native
+  @JSName("tokenizeLine")
+  def tokenizeLine_false(
     line: java.lang.String,
     ruleStack: js.Array[GrammarRule],
     firstLine: atomLib.atomLibNumbers.`false`
   ): TokenizeLineResult = js.native
-  def tokenizeLine(line: java.lang.String, ruleStack: scala.Null, firstLine: scala.Boolean): TokenizeLineResult = js.native
   // Tokenizing
   /**
     *  Tokenize all lines in the given text.

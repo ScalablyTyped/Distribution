@@ -395,10 +395,6 @@ trait Schema[T]
   def requiredPaths(): js.Array[java.lang.String] = js.native
   def requiredPaths(invalidate: scala.Boolean): js.Array[java.lang.String] = js.native
   def set(key: mongooseLib.mongooseLibStrings.strict, value: mongooseLib.mongooseLibStrings.`throw`): this.type = js.native
-  @JSName("set")
-  def set__id(key: mongooseLib.mongooseLibStrings._id): scala.Boolean = js.native
-  @JSName("set")
-  def set__id(key: mongooseLib.mongooseLibStrings._id, value: scala.Boolean): this.type = js.native
   /**
     * Sets/gets a schema option.
     * @param key option name
@@ -440,6 +436,10 @@ trait Schema[T]
   def set_excludeIndexes(key: mongooseLib.mongooseLibStrings.excludeIndexes): js.Any = js.native
   @JSName("set")
   def set_excludeIndexes(key: mongooseLib.mongooseLibStrings.excludeIndexes, value: js.Any): this.type = js.native
+  @JSName("set")
+  def set_id(key: mongooseLib.mongooseLibStrings._id): scala.Boolean = js.native
+  @JSName("set")
+  def set_id(key: mongooseLib.mongooseLibStrings._id, value: scala.Boolean): this.type = js.native
   @JSName("set")
   def set_id(key: mongooseLib.mongooseLibStrings.id): scala.Boolean = js.native
   @JSName("set")

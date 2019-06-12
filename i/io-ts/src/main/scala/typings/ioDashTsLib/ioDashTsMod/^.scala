@@ -35,7 +35,7 @@ object ^ extends js.Object {
   def array[C /* <: Mixed */](codec: C): ArrayC[C] = js.native
   def array[C /* <: Mixed */](codec: C, name: java.lang.String): ArrayC[C] = js.native
   @JSName("brand")
-  def brand__A[C /* <: Any */, N /* <: java.lang.String */, B /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  def brand_A[C /* <: Any */, N /* <: java.lang.String */, B /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {readonly [ K in N ]: symbol}
     */ ioDashTsLib.ioDashTsLibStrings.brand with js.Any */](
     codec: C,

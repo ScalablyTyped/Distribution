@@ -37,15 +37,13 @@ object ^ extends js.Object {
   def stagger(timings: scala.Double, animation: js.Array[AnimationMetadata]): AnimationStaggerMetadata = js.native
   def state(name: java.lang.String, styles: AnimationStyleMetadata): AnimationStateMetadata = js.native
   def state(name: java.lang.String, styles: AnimationStyleMetadata, options: atAngularAnimationsLib.Anon_Name): AnimationStateMetadata = js.native
-  def style(tokens: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): AnimationStyleMetadata = js.native
-  @JSName("style")
-  def `style_*`(tokens: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`): AnimationStyleMetadata = js.native
-  @JSName("style")
-  def `style_*`(
+  def style(tokens: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`): AnimationStyleMetadata = js.native
+  def style(
     tokens: js.Array[
       atAngularAnimationsLib.atAngularAnimationsLibStrings.`*` | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double])
     ]
   ): AnimationStyleMetadata = js.native
+  def style(tokens: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): AnimationStyleMetadata = js.native
   def transition(stateChangeExpr: java.lang.String, steps: AnimationMetadata): AnimationTransitionMetadata = js.native
   def transition(stateChangeExpr: java.lang.String, steps: AnimationMetadata, options: AnimationOptions): AnimationTransitionMetadata = js.native
   def transition(stateChangeExpr: java.lang.String, steps: js.Array[AnimationMetadata]): AnimationTransitionMetadata = js.native

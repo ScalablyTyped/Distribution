@@ -9,15 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def getFormattedDateString(
-    date: atBlueprintjsDatetimeLib.atBlueprintjsDatetimeLibNumbers.`false`,
-    props: IDateFormatProps with atBlueprintjsDatetimeLib.libEsmDatePickerCoreMod.IDatePickerBaseProps
-  ): java.lang.String = js.native
-  def getFormattedDateString(
-    date: atBlueprintjsDatetimeLib.atBlueprintjsDatetimeLibNumbers.`false`,
-    props: IDateFormatProps with atBlueprintjsDatetimeLib.libEsmDatePickerCoreMod.IDatePickerBaseProps,
-    ignoreRange: scala.Boolean
-  ): java.lang.String = js.native
-  def getFormattedDateString(
     date: scala.Null,
     props: IDateFormatProps with atBlueprintjsDatetimeLib.libEsmDatePickerCoreMod.IDatePickerBaseProps
   ): java.lang.String = js.native
@@ -32,6 +23,17 @@ object ^ extends js.Object {
   ): java.lang.String = js.native
   def getFormattedDateString(
     date: stdLib.Date,
+    props: IDateFormatProps with atBlueprintjsDatetimeLib.libEsmDatePickerCoreMod.IDatePickerBaseProps,
+    ignoreRange: scala.Boolean
+  ): java.lang.String = js.native
+  @JSName("getFormattedDateString")
+  def getFormattedDateString_false(
+    date: atBlueprintjsDatetimeLib.atBlueprintjsDatetimeLibNumbers.`false`,
+    props: IDateFormatProps with atBlueprintjsDatetimeLib.libEsmDatePickerCoreMod.IDatePickerBaseProps
+  ): java.lang.String = js.native
+  @JSName("getFormattedDateString")
+  def getFormattedDateString_false(
+    date: atBlueprintjsDatetimeLib.atBlueprintjsDatetimeLibNumbers.`false`,
     props: IDateFormatProps with atBlueprintjsDatetimeLib.libEsmDatePickerCoreMod.IDatePickerBaseProps,
     ignoreRange: scala.Boolean
   ): java.lang.String = js.native

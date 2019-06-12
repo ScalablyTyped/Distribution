@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StoppingCondition extends js.Object {
   /**
-    * The maximum length of time, in seconds, that the training job can run. If model training does not complete during this time, Amazon SageMaker ends the job. If value is not specified, default value is 1 day. Maximum value is 28 days.
+    * The maximum length of time, in seconds, that the training or compilation job can run. If job does not complete during this time, Amazon SageMaker ends the job. If value is not specified, default value is 1 day. The maximum value is 28 days.
     */
   var MaxRuntimeInSeconds: js.UndefOr[MaxRuntimeInSeconds] = js.undefined
 }

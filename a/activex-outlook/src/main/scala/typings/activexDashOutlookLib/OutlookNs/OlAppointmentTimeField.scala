@@ -5,28 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait OlAppointmentTimeField extends js.Object
-
-@JSGlobal("Outlook.OlAppointmentTimeField")
-@js.native
-object OlAppointmentTimeField extends js.Object {
-  @js.native
-  sealed trait olAppointmentTimeFieldEnd
-    extends activexDashOutlookLib.OutlookNs.OlAppointmentTimeField
-  
-  @js.native
-  sealed trait olAppointmentTimeFieldNone
-    extends activexDashOutlookLib.OutlookNs.OlAppointmentTimeField
-  
-  @js.native
-  sealed trait olAppointmentTimeFieldStart
-    extends activexDashOutlookLib.OutlookNs.OlAppointmentTimeField
-  
-  /* 3 */ val olAppointmentTimeFieldEnd: olAppointmentTimeFieldEnd with scala.Double = js.native
-  /* 1 */ val olAppointmentTimeFieldNone: olAppointmentTimeFieldNone with scala.Double = js.native
-  /* 2 */ val olAppointmentTimeFieldStart: olAppointmentTimeFieldStart with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[activexDashOutlookLib.OutlookNs.OlAppointmentTimeField with scala.Double] = js.native
-}
+/* Rewritten from type alias, can be one of: 
+  - activexDashOutlookLib.activexDashOutlookLibNumbers.`3`
+  - activexDashOutlookLib.activexDashOutlookLibNumbers.`1`
+  - activexDashOutlookLib.activexDashOutlookLibNumbers.`2`
+*/
+trait OlAppointmentTimeField extends js.Object
 

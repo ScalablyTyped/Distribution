@@ -22,12 +22,12 @@ object CreateOrderRequestTaxNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.CreateOrderRequestTaxNs.TypeEnum
     
     @js.native
-    sealed trait UNKNOWNTAX
+    sealed trait UNKNOWN_TAX
       extends squareDashConnectLib.squareDashConnectMod.CreateOrderRequestTaxNs.TypeEnum
     
     /* "ADDITIVE" */ val ADDITIVE: ADDITIVE with java.lang.String = js.native
     /* "INCLUSIVE" */ val INCLUSIVE: INCLUSIVE with java.lang.String = js.native
-    /* "UNKNOWN_TAX" */ val UNKNOWNTAX: UNKNOWNTAX with java.lang.String = js.native
+    /* "UNKNOWN_TAX" */ val UNKNOWN_TAX: UNKNOWN_TAX with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.CreateOrderRequestTaxNs.TypeEnum with java.lang.String

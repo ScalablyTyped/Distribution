@@ -17,13 +17,23 @@ class User protected () extends js.Object {
   val Properties_Original: activexDashAdodbLib.ADODBNs.Properties = js.native
   def ChangePassword(OldPassword: java.lang.String, NewPassword: java.lang.String): scala.Unit = js.native
   def GetPermissions(Name: java.lang.String, ObjectType: ObjectTypeEnum): RightsEnum = js.native
+  def GetPermissions(Name: scala.Null, ObjectType: ObjectTypeEnum): RightsEnum = js.native
   /**
     * @param Name Specifies the name of the object for which to set permissions. Pass `null` if you want to get the permissions for the object container.
     * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification.
     */
-  def GetPermissions(Name: java.lang.String, ObjectType: ObjectTypeEnum, ObjectTypeId: js.Any): RightsEnum = js.native
-  def GetPermissions(Name: scala.Null, ObjectType: ObjectTypeEnum): RightsEnum = js.native
-  def GetPermissions(Name: scala.Null, ObjectType: ObjectTypeEnum, ObjectTypeId: js.Any): RightsEnum = js.native
+  @JSName("GetPermissions")
+  def GetPermissions_1(
+    Name: java.lang.String,
+    ObjectType: activexDashAdoxLib.activexDashAdoxLibNumbers.`-1`,
+    ObjectTypeId: js.Any
+  ): RightsEnum = js.native
+  @JSName("GetPermissions")
+  def GetPermissions_1(
+    Name: scala.Null,
+    ObjectType: activexDashAdoxLib.activexDashAdoxLibNumbers.`-1`,
+    ObjectTypeId: js.Any
+  ): RightsEnum = js.native
   def Groups(Item: java.lang.String): Group = js.native
   def Groups(Item: scala.Double): Group = js.native
   def Properties(Index: java.lang.String): activexDashAdodbLib.ADODBNs.Property = js.native
@@ -41,9 +51,10 @@ class User protected () extends js.Object {
     * @param Inherit [Inherit=0]
     * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification.
     */
-  def SetPermissions(
+  @JSName("SetPermissions")
+  def SetPermissions_1(
     Name: java.lang.String,
-    ObjectType: ObjectTypeEnum,
+    ObjectType: activexDashAdoxLib.activexDashAdoxLibNumbers.`-1`,
     Action: ActionEnum,
     Rights: RightsEnum,
     Inherit: InheritTypeEnum,

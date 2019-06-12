@@ -87,8 +87,8 @@ class CatalogObject () extends js.Object {
     */
   var updated_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * The version of the object. When updating an object, the version supplied by the must match the version in the
-    * database, otherwise the write will be rejected as conflicting.
+    * The version of the object. When updating an object, the version supplied must match the version in the database,
+    * otherwise the write will be rejected as conflicting.
     */
   var version: js.UndefOr[scala.Double] = js.native
 }

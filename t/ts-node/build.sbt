@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ts-node"
-version := "7.0.1-04ce00"
+version := "7.0.1-dd4fc5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "make-error" % "1.3.5-1fb3f9",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac",
-  "org.scalablytyped" %%% "typescript" % "3.5.1-446779")
+  "org.scalablytyped" %%% "make-error" % "1.3.5-3be05b",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119",
+  "org.scalablytyped" %%% "typescript" % "3.5.1-78d52e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

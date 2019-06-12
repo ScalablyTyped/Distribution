@@ -37,7 +37,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
   	 * @return A word.
   	 */
   @JSName("scanf")
-  def `scanf_%S`(format: scanfLib.scanfLibStrings.`%S`): java.lang.String = js.native
+  def scanf_S(format: scanfLib.scanfLibStrings.`%S`): java.lang.String = js.native
   /**
   	 * <p> Read formatted integer from stdin. </p>
   	 * 
@@ -47,7 +47,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
   	 * @return An integer.
   	 */
   @JSName("scanf")
-  def `scanf_%d`(format: scanfLib.scanfLibStrings.`%d`): scala.Double = js.native
+  def scanf_d(format: scanfLib.scanfLibStrings.`%d`): scala.Double = js.native
   /**
   	 * <p> Read formatted float from stdin. </p>
   	 * 
@@ -57,7 +57,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
   	 * @return A float.
   	 */
   @JSName("scanf")
-  def `scanf_%f`(format: scanfLib.scanfLibStrings.`%f`): scala.Double = js.native
+  def scanf_f(format: scanfLib.scanfLibStrings.`%f`): scala.Double = js.native
   /**
   	 * <p> Read formatted octal from stdin. </p>
   	 * 
@@ -67,7 +67,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
   	 * @return An octal.
   	 */
   @JSName("scanf")
-  def `scanf_%o`(format: scanfLib.scanfLibStrings.`%o`): scala.Double = js.native
+  def scanf_o(format: scanfLib.scanfLibStrings.`%o`): scala.Double = js.native
   /* ------------------------------------------------------------
   		SCANF - FROM STDIN
   	------------------------------------------------------------ */
@@ -80,7 +80,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
   	 * @return A word.
   	 */
   @JSName("scanf")
-  def `scanf_%s`(format: scanfLib.scanfLibStrings.`%s`): java.lang.String = js.native
+  def scanf_s(format: scanfLib.scanfLibStrings.`%s`): java.lang.String = js.native
   /**
   	 * <p> Read formatted hex from stdin. </p>
   	 * 
@@ -90,7 +90,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
   	 * @return A hex.
   	 */
   @JSName("scanf")
-  def `scanf_%x`(format: scanfLib.scanfLibStrings.`%x`): scala.Double = js.native
+  def scanf_x(format: scanfLib.scanfLibStrings.`%x`): scala.Double = js.native
   /* ------------------------------------------------------------
   		SSCANF - FROM SOURCE STRING
   	------------------------------------------------------------ */
@@ -131,7 +131,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
     		 * @return A word.
     		 */
     @JSName("sscanf")
-    def `sscanf_%S`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%S`): java.lang.String = js.native
+    def sscanf_S(source: java.lang.String, format: scanfLib.scanfLibStrings.`%S`): java.lang.String = js.native
     /**
     		 * <p> Read formatted integer from string. </p>
     		 * 
@@ -143,7 +143,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
     		 * @return An integer.
     		 */
     @JSName("sscanf")
-    def `sscanf_%d`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%d`): scala.Double = js.native
+    def sscanf_d(source: java.lang.String, format: scanfLib.scanfLibStrings.`%d`): scala.Double = js.native
     /**
     		 * <p> Read formatted float from string. </p>
     		 * 
@@ -155,7 +155,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
     		 * @return A float.
     		 */
     @JSName("sscanf")
-    def `sscanf_%f`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%f`): scala.Double = js.native
+    def sscanf_f(source: java.lang.String, format: scanfLib.scanfLibStrings.`%f`): scala.Double = js.native
     /**
     		 * <p> Read formatted octal from string. </p>
     		 * 
@@ -167,7 +167,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
     		 * @return An octal.
     		 */
     @JSName("sscanf")
-    def `sscanf_%o`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%o`): scala.Double = js.native
+    def sscanf_o(source: java.lang.String, format: scanfLib.scanfLibStrings.`%o`): scala.Double = js.native
     /**
     		 * <p> Read formatted word from string. </p>
     		 * 
@@ -179,7 +179,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
     		 * @return A word.
     		 */
     @JSName("sscanf")
-    def `sscanf_%s`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%s`): java.lang.String = js.native
+    def sscanf_s(source: java.lang.String, format: scanfLib.scanfLibStrings.`%s`): java.lang.String = js.native
     /**
     		 * <p> Read formatted hex from string. </p>
     		 * 
@@ -191,7 +191,7 @@ object underscoreUnderscoreNodeUnderscoreScanfNs extends js.Object {
     		 * @return A hex.
     		 */
     @JSName("sscanf")
-    def `sscanf_%x`(source: java.lang.String, format: scanfLib.scanfLibStrings.`%x`): scala.Double = js.native
+    def sscanf_x(source: java.lang.String, format: scanfLib.scanfLibStrings.`%x`): scala.Double = js.native
   }
   
 }

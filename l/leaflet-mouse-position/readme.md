@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet-mouse-position
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 An npm wrapper for Ardhi Lukianto’s Leaflet.MousePosition plugin
@@ -35,9 +35,10 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for leaflet-mouse-position 1.1
+// Type definitions for leaflet-mouse-position 1.2
 // Project: https://github.com/danwild/Leaflet.MousePosition
 // Definitions by: Hanyon <https://github.com/Hanyon>
+//                 Håkon <https://github.com/hlovdal>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

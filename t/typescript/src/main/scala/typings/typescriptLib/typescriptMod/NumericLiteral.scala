@@ -9,5 +9,8 @@ import scala.scalajs.js.annotation._
 trait NumericLiteral
   extends LiteralExpression
      with DeclarationName
-     with PropertyName
+     with PropertyName {
+  @JSName("kind")
+  var kind_NumericLiteral: typescriptLib.typescriptMod.SyntaxKind.NumericLiteral = js.native
+}
 

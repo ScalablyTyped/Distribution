@@ -370,6 +370,22 @@ object activexDashShdocvwLibStrings {
   @js.native
   sealed trait szProperty extends js.Object
   
+  @js.native
+  sealed trait `{30D02401-6A81-11D0-8274-00C04FD5AE38}`
+    extends activexDashShdocvwLib.SHDocVwNs.BrowserBarConstants
+  
+  @js.native
+  sealed trait `{EFA24E61-B078-11D0-89E4-00C04FC9E26E}`
+    extends activexDashShdocvwLib.SHDocVwNs.BrowserBarConstants
+  
+  @js.native
+  sealed trait `{EFA24E62-B078-11D0-89E4-00C04FC9E26E}`
+    extends activexDashShdocvwLib.SHDocVwNs.BrowserBarConstants
+  
+  @js.native
+  sealed trait `{EFA24E63-B078-11D0-89E4-00C04FC9E26E}`
+    extends activexDashShdocvwLib.SHDocVwNs.BrowserBarConstants
+  
   @scala.inline
   def ActiveDocument: ActiveDocument = "ActiveDocument".asInstanceOf[ActiveDocument]
   @scala.inline
@@ -610,5 +626,13 @@ object activexDashShdocvwLibStrings {
   def strUrl: strUrl = "strUrl".asInstanceOf[strUrl]
   @scala.inline
   def szProperty: szProperty = "szProperty".asInstanceOf[szProperty]
+  @scala.inline
+  def `{30D02401-6A81-11D0-8274-00C04FD5AE38}`: `{30D02401-6A81-11D0-8274-00C04FD5AE38}` = "{30D02401-6A81-11D0-8274-00C04FD5AE38}".asInstanceOf[`{30D02401-6A81-11D0-8274-00C04FD5AE38}`]
+  @scala.inline
+  def `{EFA24E61-B078-11D0-89E4-00C04FC9E26E}`: `{EFA24E61-B078-11D0-89E4-00C04FC9E26E}` = "{EFA24E61-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E61-B078-11D0-89E4-00C04FC9E26E}`]
+  @scala.inline
+  def `{EFA24E62-B078-11D0-89E4-00C04FC9E26E}`: `{EFA24E62-B078-11D0-89E4-00C04FC9E26E}` = "{EFA24E62-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E62-B078-11D0-89E4-00C04FC9E26E}`]
+  @scala.inline
+  def `{EFA24E63-B078-11D0-89E4-00C04FC9E26E}`: `{EFA24E63-B078-11D0-89E4-00C04FC9E26E}` = "{EFA24E63-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E63-B078-11D0-89E4-00C04FC9E26E}`]
 }
 

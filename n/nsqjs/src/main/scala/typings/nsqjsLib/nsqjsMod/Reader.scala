@@ -23,12 +23,12 @@ class Reader protected ()
   @JSName("on")
   def on_message(event: nsqjsLib.nsqjsLibStrings.message, listener: js.Function1[/* message */ Message, scala.Unit]): this.type = js.native
   @JSName("on")
-  def on_nsqd_closed(
+  def on_nsqdclosed(
     event: nsqjsLib.nsqjsLibStrings.nsqd_closed,
     listener: js.Function2[/* host */ java.lang.String, /* port */ scala.Double, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def on_nsqd_connected(
+  def on_nsqdconnected(
     event: nsqjsLib.nsqjsLibStrings.nsqd_connected,
     listener: js.Function2[/* host */ java.lang.String, /* port */ scala.Double, scala.Unit]
   ): this.type = js.native

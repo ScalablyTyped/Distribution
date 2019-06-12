@@ -23,8 +23,10 @@ trait WebDriverProtocolUserActions extends js.Object {
     *
     * The button can be (0, 1, 2) or ('left', 'middle', 'right'). It defaults to left mouse button.
     */
-  def mouseButtonClick(button: nightwatchLib.nightwatchLibNumbers.`0`): this.type = js.native
-  def mouseButtonClick(
+  @JSName("mouseButtonClick")
+  def mouseButtonClick_0(button: nightwatchLib.nightwatchLibNumbers.`0`): this.type = js.native
+  @JSName("mouseButtonClick")
+  def mouseButtonClick_0(
     button: nightwatchLib.nightwatchLibNumbers.`0`,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
@@ -32,8 +34,10 @@ trait WebDriverProtocolUserActions extends js.Object {
       scala.Unit
     ]
   ): this.type = js.native
-  def mouseButtonClick(button: nightwatchLib.nightwatchLibNumbers.`1`): this.type = js.native
-  def mouseButtonClick(
+  @JSName("mouseButtonClick")
+  def mouseButtonClick_1(button: nightwatchLib.nightwatchLibNumbers.`1`): this.type = js.native
+  @JSName("mouseButtonClick")
+  def mouseButtonClick_1(
     button: nightwatchLib.nightwatchLibNumbers.`1`,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
@@ -41,8 +45,10 @@ trait WebDriverProtocolUserActions extends js.Object {
       scala.Unit
     ]
   ): this.type = js.native
-  def mouseButtonClick(button: nightwatchLib.nightwatchLibNumbers.`2`): this.type = js.native
-  def mouseButtonClick(
+  @JSName("mouseButtonClick")
+  def mouseButtonClick_2(button: nightwatchLib.nightwatchLibNumbers.`2`): this.type = js.native
+  @JSName("mouseButtonClick")
+  def mouseButtonClick_2(
     button: nightwatchLib.nightwatchLibNumbers.`2`,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
@@ -90,8 +96,10 @@ trait WebDriverProtocolUserActions extends js.Object {
     * Can be used for implementing drag-and-drop. The button can be (0, 1, 2) or ('left', 'middle', 'right'). It defaults to left mouse button,
     * and if you don't pass in a button but do pass in a callback, it will handle it correctly.
     */
-  def mouseButtonDown(button: nightwatchLib.nightwatchLibNumbers.`0`): this.type = js.native
-  def mouseButtonDown(
+  @JSName("mouseButtonDown")
+  def mouseButtonDown_0(button: nightwatchLib.nightwatchLibNumbers.`0`): this.type = js.native
+  @JSName("mouseButtonDown")
+  def mouseButtonDown_0(
     button: nightwatchLib.nightwatchLibNumbers.`0`,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
@@ -99,8 +107,10 @@ trait WebDriverProtocolUserActions extends js.Object {
       scala.Unit
     ]
   ): this.type = js.native
-  def mouseButtonDown(button: nightwatchLib.nightwatchLibNumbers.`1`): this.type = js.native
-  def mouseButtonDown(
+  @JSName("mouseButtonDown")
+  def mouseButtonDown_1(button: nightwatchLib.nightwatchLibNumbers.`1`): this.type = js.native
+  @JSName("mouseButtonDown")
+  def mouseButtonDown_1(
     button: nightwatchLib.nightwatchLibNumbers.`1`,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
@@ -108,8 +118,10 @@ trait WebDriverProtocolUserActions extends js.Object {
       scala.Unit
     ]
   ): this.type = js.native
-  def mouseButtonDown(button: nightwatchLib.nightwatchLibNumbers.`2`): this.type = js.native
-  def mouseButtonDown(
+  @JSName("mouseButtonDown")
+  def mouseButtonDown_2(button: nightwatchLib.nightwatchLibNumbers.`2`): this.type = js.native
+  @JSName("mouseButtonDown")
+  def mouseButtonDown_2(
     button: nightwatchLib.nightwatchLibNumbers.`2`,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
@@ -156,8 +168,10 @@ trait WebDriverProtocolUserActions extends js.Object {
     * Can be used for implementing drag-and-drop. The button can be (0, 1, 2) or ('left', 'middle', 'right'). It defaults to left mouse button,
     * and if you don't pass in a button but do pass in a callback, it will handle it correctly.
     */
-  def mouseButtonUp(button: nightwatchLib.nightwatchLibNumbers.`0`): this.type = js.native
-  def mouseButtonUp(
+  @JSName("mouseButtonUp")
+  def mouseButtonUp_0(button: nightwatchLib.nightwatchLibNumbers.`0`): this.type = js.native
+  @JSName("mouseButtonUp")
+  def mouseButtonUp_0(
     button: nightwatchLib.nightwatchLibNumbers.`0`,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
@@ -165,8 +179,10 @@ trait WebDriverProtocolUserActions extends js.Object {
       scala.Unit
     ]
   ): this.type = js.native
-  def mouseButtonUp(button: nightwatchLib.nightwatchLibNumbers.`1`): this.type = js.native
-  def mouseButtonUp(
+  @JSName("mouseButtonUp")
+  def mouseButtonUp_1(button: nightwatchLib.nightwatchLibNumbers.`1`): this.type = js.native
+  @JSName("mouseButtonUp")
+  def mouseButtonUp_1(
     button: nightwatchLib.nightwatchLibNumbers.`1`,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
@@ -174,8 +190,10 @@ trait WebDriverProtocolUserActions extends js.Object {
       scala.Unit
     ]
   ): this.type = js.native
-  def mouseButtonUp(button: nightwatchLib.nightwatchLibNumbers.`2`): this.type = js.native
-  def mouseButtonUp(
+  @JSName("mouseButtonUp")
+  def mouseButtonUp_2(button: nightwatchLib.nightwatchLibNumbers.`2`): this.type = js.native
+  @JSName("mouseButtonUp")
+  def mouseButtonUp_2(
     button: nightwatchLib.nightwatchLibNumbers.`2`,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 

@@ -27,97 +27,26 @@ trait WebPage extends js.Object {
     event: phantomLib.phantomLibStrings.onResourceRequested | phantomLib.phantomLibStrings.onLoadFinished | phantomLib.phantomLibStrings.onAlert | phantomLib.phantomLibStrings.onCallback | phantomLib.phantomLibStrings.onClosing | phantomLib.phantomLibStrings.onConfirm | phantomLib.phantomLibStrings.onConsoleMessage | phantomLib.phantomLibStrings.onError | phantomLib.phantomLibStrings.onFilePicker | phantomLib.phantomLibStrings.onInitialized | phantomLib.phantomLibStrings.onLoadStarted | phantomLib.phantomLibStrings.onNavigationRequested | phantomLib.phantomLibStrings.onPageCreated | phantomLib.phantomLibStrings.onPrompt | phantomLib.phantomLibStrings.onResourceError | phantomLib.phantomLibStrings.onResourceReceived | phantomLib.phantomLibStrings.onResourceTimeout | phantomLib.phantomLibStrings.onUrlChanged
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   def on(
-    event: phantomLib.phantomLibStrings.onLoadFinished,
-    listener: js.Function1[
-      /* status */ phantomLib.phantomLibStrings.success | phantomLib.phantomLibStrings.fail, 
-      scala.Unit
-    ]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  def on(
-    event: phantomLib.phantomLibStrings.onLoadFinished,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
-    listener: js.Function1[
-      /* status */ phantomLib.phantomLibStrings.success | phantomLib.phantomLibStrings.fail, 
-      scala.Unit
-    ]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  def on(
-    event: phantomLib.phantomLibStrings.onNavigationRequested,
-    listener: js.Function4[
-      /* url */ java.lang.String, 
-      /* type */ phantomLib.phantomLibStrings.Undefined | phantomLib.phantomLibStrings.LinkClicked | phantomLib.phantomLibStrings.FormSubmitted | phantomLib.phantomLibStrings.BackOrForward | phantomLib.phantomLibStrings.Reload | phantomLib.phantomLibStrings.FormResubmitted | phantomLib.phantomLibStrings.Other, 
-      /* willNavigate */ scala.Boolean, 
-      /* main */ scala.Boolean, 
-      scala.Unit
-    ]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  def on(
-    event: phantomLib.phantomLibStrings.onNavigationRequested,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
-    listener: js.Function4[
-      /* url */ java.lang.String, 
-      /* type */ phantomLib.phantomLibStrings.Undefined | phantomLib.phantomLibStrings.LinkClicked | phantomLib.phantomLibStrings.FormSubmitted | phantomLib.phantomLibStrings.BackOrForward | phantomLib.phantomLibStrings.Reload | phantomLib.phantomLibStrings.FormResubmitted | phantomLib.phantomLibStrings.Other, 
-      /* willNavigate */ scala.Boolean, 
-      /* main */ scala.Boolean, 
-      scala.Unit
-    ]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onAlert(
-    event: phantomLib.phantomLibStrings.onAlert,
-    listener: js.Function1[/* msg */ java.lang.String, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onAlert(
     event: phantomLib.phantomLibStrings.onAlert,
     runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function1[/* msg */ java.lang.String, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onCallback(
-    event: phantomLib.phantomLibStrings.onCallback,
-    listener: js.Function1[/* data */ js.Any, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onCallback(
+  def on(
     event: phantomLib.phantomLibStrings.onCallback,
     runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function1[/* data */ js.Any, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onClosing(
-    event: phantomLib.phantomLibStrings.onClosing,
-    listener: js.Function1[/* closingPage */ js.Any, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onClosing(
+  def on(
     event: phantomLib.phantomLibStrings.onClosing,
     runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function1[/* closingPage */ js.Any, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onConfirm(
-    event: phantomLib.phantomLibStrings.onConfirm,
-    listener: js.Function1[/* msg */ java.lang.String, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onConfirm(
+  def on(
     event: phantomLib.phantomLibStrings.onConfirm,
     runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function1[/* msg */ java.lang.String, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onConsoleMessage(
-    event: phantomLib.phantomLibStrings.onConsoleMessage,
-    listener: js.Function3[
-      /* msg */ java.lang.String, 
-      /* lineNum */ scala.Double, 
-      /* sourceId */ java.lang.String, 
-      scala.Unit
-    ]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onConsoleMessage(
+  def on(
     event: phantomLib.phantomLibStrings.onConsoleMessage,
     runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function3[
@@ -127,53 +56,148 @@ trait WebPage extends js.Object {
       scala.Unit
     ]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onError(
-    event: phantomLib.phantomLibStrings.onError,
-    listener: js.Function2[/* msg */ java.lang.String, /* trace */ js.Array[phantomLib.Anon_File], scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onError(
+  def on(
     event: phantomLib.phantomLibStrings.onError,
     runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function2[/* msg */ java.lang.String, /* trace */ js.Array[phantomLib.Anon_File], scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onFilePicker(
+  def on(
     event: phantomLib.phantomLibStrings.onFilePicker,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function1[/* oldFile */ js.Any, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onInitialized,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function0[scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onLoadFinished,
+    listener: js.Function1[
+      /* status */ phantomLib.phantomLibStrings.success | phantomLib.phantomLibStrings.fail, 
+      scala.Unit
+    ]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onLoadFinished,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function1[
+      /* status */ phantomLib.phantomLibStrings.success | phantomLib.phantomLibStrings.fail, 
+      scala.Unit
+    ]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onLoadStarted,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function0[scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onNavigationRequested,
+    listener: js.Function4[
+      /* url */ java.lang.String, 
+      /* type */ phantomLib.phantomLibStrings.Undefined | phantomLib.phantomLibStrings.LinkClicked | phantomLib.phantomLibStrings.FormSubmitted | phantomLib.phantomLibStrings.BackOrForward | phantomLib.phantomLibStrings.Reload | phantomLib.phantomLibStrings.FormResubmitted | phantomLib.phantomLibStrings.Other, 
+      /* willNavigate */ scala.Boolean, 
+      /* main */ scala.Boolean, 
+      scala.Unit
+    ]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onNavigationRequested,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function4[
+      /* url */ java.lang.String, 
+      /* type */ phantomLib.phantomLibStrings.Undefined | phantomLib.phantomLibStrings.LinkClicked | phantomLib.phantomLibStrings.FormSubmitted | phantomLib.phantomLibStrings.BackOrForward | phantomLib.phantomLibStrings.Reload | phantomLib.phantomLibStrings.FormResubmitted | phantomLib.phantomLibStrings.Other, 
+      /* willNavigate */ scala.Boolean, 
+      /* main */ scala.Boolean, 
+      scala.Unit
+    ]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onPageCreated,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function1[/* newPage */ js.Any, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onPrompt,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function2[/* msg */ java.lang.String, /* defaultVal */ java.lang.String, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onResourceError,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function1[/* resourceError */ phantomLib.Anon_ErrorCode, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onResourceReceived,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function1[/* response */ IResponse, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onResourceRequested,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function2[
+      /* requestData */ IRequestData, 
+      /* networkRequest */ phantomLib.Anon_Abort, 
+      scala.Unit
+    ]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onResourceTimeout,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function1[/* request */ IRequestData with phantomLib.Anon_ErrorCodeErrorString, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  def on(
+    event: phantomLib.phantomLibStrings.onUrlChanged,
+    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
+    listener: js.Function1[/* targetUrl */ java.lang.String, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  @JSName("on")
+  def on_onAlert(
+    event: phantomLib.phantomLibStrings.onAlert,
+    listener: js.Function1[/* msg */ java.lang.String, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  @JSName("on")
+  def on_onCallback(
+    event: phantomLib.phantomLibStrings.onCallback,
+    listener: js.Function1[/* data */ js.Any, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  @JSName("on")
+  def on_onClosing(
+    event: phantomLib.phantomLibStrings.onClosing,
+    listener: js.Function1[/* closingPage */ js.Any, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  @JSName("on")
+  def on_onConfirm(
+    event: phantomLib.phantomLibStrings.onConfirm,
+    listener: js.Function1[/* msg */ java.lang.String, scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  @JSName("on")
+  def on_onConsoleMessage(
+    event: phantomLib.phantomLibStrings.onConsoleMessage,
+    listener: js.Function3[
+      /* msg */ java.lang.String, 
+      /* lineNum */ scala.Double, 
+      /* sourceId */ java.lang.String, 
+      scala.Unit
+    ]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
+  @JSName("on")
+  def on_onError(
+    event: phantomLib.phantomLibStrings.onError,
+    listener: js.Function2[/* msg */ java.lang.String, /* trace */ js.Array[phantomLib.Anon_File], scala.Unit]
+  ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
   def on_onFilePicker(
     event: phantomLib.phantomLibStrings.onFilePicker,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function1[/* oldFile */ js.Any, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
   def on_onInitialized(event: phantomLib.phantomLibStrings.onInitialized, listener: js.Function0[scala.Unit]): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
-  def on_onInitialized(
-    event: phantomLib.phantomLibStrings.onInitialized,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
-    listener: js.Function0[scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
   def on_onLoadStarted(event: phantomLib.phantomLibStrings.onLoadStarted, listener: js.Function0[scala.Unit]): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
-  def on_onLoadStarted(
-    event: phantomLib.phantomLibStrings.onLoadStarted,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
-    listener: js.Function0[scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
   def on_onPageCreated(
     event: phantomLib.phantomLibStrings.onPageCreated,
-    listener: js.Function1[/* newPage */ js.Any, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onPageCreated(
-    event: phantomLib.phantomLibStrings.onPageCreated,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function1[/* newPage */ js.Any, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
@@ -182,31 +206,13 @@ trait WebPage extends js.Object {
     listener: js.Function2[/* msg */ java.lang.String, /* defaultVal */ java.lang.String, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
-  def on_onPrompt(
-    event: phantomLib.phantomLibStrings.onPrompt,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
-    listener: js.Function2[/* msg */ java.lang.String, /* defaultVal */ java.lang.String, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
   def on_onResourceError(
     event: phantomLib.phantomLibStrings.onResourceError,
     listener: js.Function1[/* resourceError */ phantomLib.Anon_ErrorCode, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
-  def on_onResourceError(
-    event: phantomLib.phantomLibStrings.onResourceError,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
-    listener: js.Function1[/* resourceError */ phantomLib.Anon_ErrorCode, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
   def on_onResourceReceived(
     event: phantomLib.phantomLibStrings.onResourceReceived,
-    listener: js.Function1[/* response */ IResponse, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onResourceReceived(
-    event: phantomLib.phantomLibStrings.onResourceReceived,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function1[/* response */ IResponse, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
@@ -219,35 +225,13 @@ trait WebPage extends js.Object {
     ]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
-  def on_onResourceRequested(
-    event: phantomLib.phantomLibStrings.onResourceRequested,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
-    listener: js.Function2[
-      /* requestData */ IRequestData, 
-      /* networkRequest */ phantomLib.Anon_Abort, 
-      scala.Unit
-    ]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
   def on_onResourceTimeout(
     event: phantomLib.phantomLibStrings.onResourceTimeout,
     listener: js.Function1[/* request */ IRequestData with phantomLib.Anon_ErrorCodeErrorString, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
-  def on_onResourceTimeout(
-    event: phantomLib.phantomLibStrings.onResourceTimeout,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
-    listener: js.Function1[/* request */ IRequestData with phantomLib.Anon_ErrorCodeErrorString, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
   def on_onUrlChanged(
     event: phantomLib.phantomLibStrings.onUrlChanged,
-    listener: js.Function1[/* targetUrl */ java.lang.String, scala.Unit]
-  ): js.Promise[phantomLib.Anon_PageId] = js.native
-  @JSName("on")
-  def on_onUrlChanged(
-    event: phantomLib.phantomLibStrings.onUrlChanged,
-    runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function1[/* targetUrl */ java.lang.String, scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   def open(url: java.lang.String): js.Promise[java.lang.String] = js.native

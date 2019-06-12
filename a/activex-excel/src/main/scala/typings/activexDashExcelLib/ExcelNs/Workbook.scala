@@ -178,8 +178,16 @@ class Workbook protected () extends js.Object {
   def BuiltinDocumentProperties(index: scala.Double): activexDashOfficeLib.OfficeNs.DocumentProperty[Application] = js.native
   def CanCheckIn(): scala.Boolean = js.native
   def ChangeFileAccess(Mode: XlFileAccess): scala.Unit = js.native
-  def ChangeFileAccess(Mode: XlFileAccess, WritePassword: java.lang.String): scala.Unit = js.native
-  def ChangeFileAccess(Mode: XlFileAccess, WritePassword: java.lang.String, Notify: scala.Boolean): scala.Unit = js.native
+  @JSName("ChangeFileAccess")
+  def ChangeFileAccess_2(Mode: activexDashExcelLib.activexDashExcelLibNumbers.`2`): scala.Unit = js.native
+  @JSName("ChangeFileAccess")
+  def ChangeFileAccess_2(Mode: activexDashExcelLib.activexDashExcelLibNumbers.`2`, WritePassword: java.lang.String): scala.Unit = js.native
+  @JSName("ChangeFileAccess")
+  def ChangeFileAccess_2(
+    Mode: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    WritePassword: java.lang.String,
+    Notify: scala.Boolean
+  ): scala.Unit = js.native
   /** @param Type [Type=1] */
   def ChangeLink(Name: java.lang.String, NewName: java.lang.String): scala.Unit = js.native
   def ChangeLink(Name: java.lang.String, NewName: java.lang.String, Type: XlLinkType): scala.Unit = js.native
@@ -187,29 +195,35 @@ class Workbook protected () extends js.Object {
   def Charts(Index: java.lang.String): Chart = js.native
   def Charts(Index: scala.Double): Chart = js.native
   def CheckIn(): scala.Unit = js.native
-  def CheckIn(SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`): scala.Unit = js.native
-  def CheckIn(SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`, Comments: java.lang.String): scala.Unit = js.native
-  def CheckIn(
-    SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
-    Comments: java.lang.String,
-    MakePublic: scala.Boolean
-  ): scala.Unit = js.native
   def CheckIn(SaveChanges: js.Any): scala.Unit = js.native
   def CheckInWithVersion(): scala.Unit = js.native
   def CheckInWithVersion(SaveChanges: scala.Boolean): scala.Unit = js.native
   def CheckInWithVersion(SaveChanges: scala.Boolean, Comments: js.Any): scala.Unit = js.native
   def CheckInWithVersion(SaveChanges: scala.Boolean, Comments: js.Any, MakePublic: js.Any): scala.Unit = js.native
   def CheckInWithVersion(SaveChanges: scala.Boolean, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): scala.Unit = js.native
+  @JSName("CheckIn")
+  def CheckIn_true(SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`): scala.Unit = js.native
+  @JSName("CheckIn")
+  def CheckIn_true(SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`, Comments: java.lang.String): scala.Unit = js.native
+  @JSName("CheckIn")
+  def CheckIn_true(
+    SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
+    Comments: java.lang.String,
+    MakePublic: scala.Boolean
+  ): scala.Unit = js.native
   def Close(): scala.Unit = js.native
-  def Close(SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`): scala.Unit = js.native
-  def Close(SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`, Filename: java.lang.String): scala.Unit = js.native
-  def Close(
+  def Close(SaveChanges: scala.Boolean): scala.Unit = js.native
+  def Close(SaveChanges: scala.Boolean, Filename: js.UndefOr[scala.Nothing], RouteWorkbook: scala.Boolean): scala.Unit = js.native
+  @JSName("Close")
+  def Close_true(SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`): scala.Unit = js.native
+  @JSName("Close")
+  def Close_true(SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`, Filename: java.lang.String): scala.Unit = js.native
+  @JSName("Close")
+  def Close_true(
     SaveChanges: activexDashExcelLib.activexDashExcelLibNumbers.`true`,
     Filename: java.lang.String,
     RouteWorkbook: scala.Boolean
   ): scala.Unit = js.native
-  def Close(SaveChanges: scala.Boolean): scala.Unit = js.native
-  def Close(SaveChanges: scala.Boolean, Filename: js.UndefOr[scala.Nothing], RouteWorkbook: scala.Boolean): scala.Unit = js.native
   def Colors(Index: scala.Double): scala.Double = js.native
   def CommandBars(Index: java.lang.String): activexDashOfficeLib.OfficeNs.CommandBar = js.native
   def CommandBars(Index: scala.Double): activexDashOfficeLib.OfficeNs.CommandBar = js.native
@@ -277,12 +291,12 @@ class Workbook protected () extends js.Object {
     Where: java.lang.String
   ): scala.Unit = js.native
   @JSName("HighlightChangesOptions")
-  def `HighlightChangesOptions_Everyone but me`(
+  def HighlightChangesOptions_Everyonebutme(
     When: XlHighlightChangesTime,
     Who: activexDashExcelLib.activexDashExcelLibStrings.`Everyone but me`
   ): scala.Unit = js.native
   @JSName("HighlightChangesOptions")
-  def `HighlightChangesOptions_Everyone but me`(
+  def HighlightChangesOptions_Everyonebutme(
     When: XlHighlightChangesTime,
     Who: activexDashExcelLib.activexDashExcelLibStrings.`Everyone but me`,
     Where: java.lang.String

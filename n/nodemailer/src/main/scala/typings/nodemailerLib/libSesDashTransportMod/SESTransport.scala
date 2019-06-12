@@ -99,7 +99,7 @@ trait SESTransport
   def verify_MSESTransport(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
   /** Verifies SES configuration */
   @JSName("verify")
-  def verify_MSESTransport(
+  def verify_true(
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       nodemailerLib.nodemailerLibNumbers.`true`, 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo-graphql
 
-Typings are for version 0.3.1
+Typings are for version 0.3.2
 
 ## Library description:
 Apollo GraphQL utility library

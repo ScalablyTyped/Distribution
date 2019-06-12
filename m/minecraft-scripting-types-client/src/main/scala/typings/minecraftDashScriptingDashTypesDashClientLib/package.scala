@@ -6,4 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object minecraftDashScriptingDashTypesDashClientLib {
   type IMoLangComponent = org.scalablytyped.runtime.StringDictionary[js.Any]
+  type MinecraftComponent = minecraftDashScriptingDashTypesDashClientLib.minecraftDashScriptingDashTypesDashClientLibStrings.`minecraft:molang`
 }

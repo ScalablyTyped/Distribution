@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "hapi__catbox-redis"
-version := "5.0-dt-20190425Z-a6732c"
+version := "5.0-dt-20190425Z-4866b6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20190521Z-3f0197",
-  "org.scalablytyped" %%% "ioredis" % "4.0-dt-20190528Z-b1f0da",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20190521Z-d323cf",
+  "org.scalablytyped" %%% "ioredis" % "4.0-dt-20190610Z-acfa1c",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

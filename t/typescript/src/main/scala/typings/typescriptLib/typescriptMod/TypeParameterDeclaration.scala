@@ -11,6 +11,8 @@ trait TypeParameterDeclaration extends NamedDeclaration {
   var constraint: js.UndefOr[TypeNode] = js.native
   var default: js.UndefOr[TypeNode] = js.native
   var expression: js.UndefOr[Expression] = js.native
+  @JSName("kind")
+  var kind_TypeParameterDeclaration: typescriptLib.typescriptMod.SyntaxKind.TypeParameter = js.native
   @JSName("name")
   var name_TypeParameterDeclaration: Identifier = js.native
   @JSName("parent")

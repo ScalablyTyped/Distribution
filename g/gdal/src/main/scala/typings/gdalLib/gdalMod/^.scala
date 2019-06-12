@@ -148,17 +148,17 @@ object ^ extends js.Object {
   def fillNodata(options: FillNoDataOptions): scala.Unit = js.native
   def open(path: java.lang.String): Dataset = js.native
   @JSName("open")
+  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`): Dataset = js.native
+  @JSName("open")
+  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`, drivers: java.lang.String): Dataset = js.native
+  @JSName("open")
+  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`, drivers: js.Array[java.lang.String]): Dataset = js.native
+  @JSName("open")
   def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r): Dataset = js.native
   @JSName("open")
   def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r, drivers: java.lang.String): Dataset = js.native
   @JSName("open")
   def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r, drivers: js.Array[java.lang.String]): Dataset = js.native
-  @JSName("open")
-  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`): Dataset = js.native
-  @JSName("open")
-  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`, drivers: java.lang.String): Dataset = js.native
-  @JSName("open")
-  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`, drivers: js.Array[java.lang.String]): Dataset = js.native
   @JSName("open")
   def open_w(
     path: java.lang.String,

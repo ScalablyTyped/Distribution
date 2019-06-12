@@ -12,6 +12,8 @@ trait JSDocTypedefTag
      with DeclarationWithTypeParameters {
   var comment: js.UndefOr[java.lang.String] = js.native
   var fullName: js.UndefOr[JSDocNamespaceDeclaration | Identifier] = js.native
+  @JSName("kind")
+  var kind_JSDocTypedefTag: typescriptLib.typescriptMod.SyntaxKind.JSDocTypedefTag = js.native
   @JSName("name")
   var name_JSDocTypedefTag: js.UndefOr[Identifier] = js.native
   @JSName("parent")

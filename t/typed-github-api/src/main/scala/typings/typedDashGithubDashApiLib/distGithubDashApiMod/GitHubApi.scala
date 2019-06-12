@@ -252,18 +252,18 @@ class GitHubApi protected ()
     */
   def searchIssuesAsync(query: java.lang.String): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]] = js.native
   @JSName("searchIssuesAsync")
-  def `searchIssuesAsync_best match`(
+  def searchIssuesAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`
   ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]] = js.native
   @JSName("searchIssuesAsync")
-  def `searchIssuesAsync_best match`(
+  def searchIssuesAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`,
     ascending: scala.Boolean
   ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]] = js.native
   @JSName("searchIssuesAsync")
-  def `searchIssuesAsync_best match`(
+  def searchIssuesAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`,
     ascending: scala.Boolean,
@@ -324,18 +324,18 @@ class GitHubApi protected ()
     */
   def searchIssuesWithScoreAsync(query: java.lang.String): js.Promise[js.Array[SearchResult[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
-  def `searchIssuesWithScoreAsync_best match`(
+  def searchIssuesWithScoreAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`
   ): js.Promise[js.Array[SearchResult[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
-  def `searchIssuesWithScoreAsync_best match`(
+  def searchIssuesWithScoreAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`,
     ascending: scala.Boolean
   ): js.Promise[js.Array[SearchResult[typedDashGithubDashApiLib.distInterfacesIssueMod.Issue]]] = js.native
   @JSName("searchIssuesWithScoreAsync")
-  def `searchIssuesWithScoreAsync_best match`(
+  def searchIssuesWithScoreAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`,
     ascending: scala.Boolean,
@@ -396,18 +396,18 @@ class GitHubApi protected ()
     */
   def searchRepositoriesAsync(query: java.lang.String): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]] = js.native
   @JSName("searchRepositoriesAsync")
-  def `searchRepositoriesAsync_best match`(
+  def searchRepositoriesAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`
   ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]] = js.native
   @JSName("searchRepositoriesAsync")
-  def `searchRepositoriesAsync_best match`(
+  def searchRepositoriesAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`,
     ascending: scala.Boolean
   ): js.Promise[js.Array[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]] = js.native
   @JSName("searchRepositoriesAsync")
-  def `searchRepositoriesAsync_best match`(
+  def searchRepositoriesAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`,
     ascending: scala.Boolean,
@@ -470,14 +470,14 @@ class GitHubApi protected ()
     js.Array[SearchResult[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]]
   ] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
-  def `searchRepositoriesWithScoreAsync_best match`(
+  def searchRepositoriesWithScoreAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`
   ): js.Promise[
     js.Array[SearchResult[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]]
   ] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
-  def `searchRepositoriesWithScoreAsync_best match`(
+  def searchRepositoriesWithScoreAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`,
     ascending: scala.Boolean
@@ -485,7 +485,7 @@ class GitHubApi protected ()
     js.Array[SearchResult[typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository]]
   ] = js.native
   @JSName("searchRepositoriesWithScoreAsync")
-  def `searchRepositoriesWithScoreAsync_best match`(
+  def searchRepositoriesWithScoreAsync_bestmatch(
     query: java.lang.String,
     sort: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.`best match`,
     ascending: scala.Boolean,

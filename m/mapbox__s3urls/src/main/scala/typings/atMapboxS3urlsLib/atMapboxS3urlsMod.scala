@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object atMapboxS3urlsMod extends js.Object {
   @JSName("convert")
-  def `convert_bucket-in-host`(url: java.lang.String, to: atMapboxS3urlsLib.atMapboxS3urlsLibStrings.`bucket-in-host`): java.lang.String = js.native
+  def convert_bucketinhost(url: java.lang.String, to: atMapboxS3urlsLib.atMapboxS3urlsLibStrings.`bucket-in-host`): java.lang.String = js.native
   @JSName("convert")
-  def `convert_bucket-in-path`(url: java.lang.String, to: atMapboxS3urlsLib.atMapboxS3urlsLibStrings.`bucket-in-path`): java.lang.String = js.native
+  def convert_bucketinpath(url: java.lang.String, to: atMapboxS3urlsLib.atMapboxS3urlsLibStrings.`bucket-in-path`): java.lang.String = js.native
   @JSName("convert")
   def convert_s3(url: java.lang.String, to: atMapboxS3urlsLib.atMapboxS3urlsLibStrings.s3): java.lang.String = js.native
   def fromUrl(url: java.lang.String): atMapboxS3urlsLib.Anon_Bucket = js.native

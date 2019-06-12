@@ -10,12 +10,14 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def checkString(): scala.Unit = js.native
   def convertStream(data: js.Object): js.Object = js.native
-  def convertStream(data: js.Object, streaming: openpgpLib.openpgpLibNumbers.`false`): js.Object = js.native
+  @JSName("convertStream")
+  def convertStream_false(data: js.Object, streaming: openpgpLib.openpgpLibNumbers.`false`): js.Object = js.native
   @JSName("convertStream")
   def convertStream_node(data: js.Object, streaming: openpgpLib.openpgpLibStrings.node): js.Object = js.native
   @JSName("convertStream")
   def convertStream_web(data: js.Object, streaming: openpgpLib.openpgpLibStrings.web): js.Object = js.native
-  def convertStreams(obj: js.Object, streaming: openpgpLib.openpgpLibNumbers.`false`, keys: js.Array[_]): js.Object = js.native
+  @JSName("convertStreams")
+  def convertStreams_false(obj: js.Object, streaming: openpgpLib.openpgpLibNumbers.`false`, keys: js.Array[_]): js.Object = js.native
   @JSName("convertStreams")
   def convertStreams_node(obj: js.Object, streaming: openpgpLib.openpgpLibStrings.node, keys: js.Array[_]): js.Object = js.native
   @JSName("convertStreams")

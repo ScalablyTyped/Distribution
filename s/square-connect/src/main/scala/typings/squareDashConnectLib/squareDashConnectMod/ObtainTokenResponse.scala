@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObtainTokenResponse () extends js.Object {
   /**
-    * A valid OAuth access token. Provide the access token in a header with every request to Connect API endpoints.
+    * A valid OAuth access token. OAuth access tokens are 64 bytes long.
+    * Provide the access token in a header with every request to Connect API endpoints.
     * See the [Build with OAuth](/authz/oauth/build-with-the-api) guide for more information.
     */
   var access_token: js.UndefOr[java.lang.String] = js.native
@@ -37,12 +38,12 @@ class ObtainTokenResponse () extends js.Object {
     */
   var refresh_token: js.UndefOr[java.lang.String] = js.native
   /**
-    * __Legacy field__. The ID of a subscription plan the merchant signed up for.
+    * @deprecated The ID of a subscription plan the merchant signed up for.
     * Only present if the merchant signed up for a subscription during authorization.
     */
   var subscription_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * This value is always _bearer_.
+    * This value is always "bearer".
     */
   var token_type: js.UndefOr[java.lang.String] = js.native
 }

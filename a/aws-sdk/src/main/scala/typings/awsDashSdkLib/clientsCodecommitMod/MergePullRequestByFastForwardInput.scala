@@ -17,12 +17,12 @@ trait MergePullRequestByFastForwardInput extends js.Object {
   /**
     * The full commit ID of the original or updated commit in the pull request source branch. Pass this value if you want an exception thrown if the current commit ID of the tip of the source branch does not match this commit ID.
     */
-  var sourceCommitId: js.UndefOr[CommitId] = js.undefined
+  var sourceCommitId: js.UndefOr[ObjectId] = js.undefined
 }
 
 object MergePullRequestByFastForwardInput {
   @scala.inline
-  def apply(pullRequestId: PullRequestId, repositoryName: RepositoryName, sourceCommitId: CommitId = null): MergePullRequestByFastForwardInput = {
+  def apply(pullRequestId: PullRequestId, repositoryName: RepositoryName, sourceCommitId: ObjectId = null): MergePullRequestByFastForwardInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId, repositoryName = repositoryName)
     if (sourceCommitId != null) __obj.updateDynamic("sourceCommitId")(sourceCommitId)
     __obj.asInstanceOf[MergePullRequestByFastForwardInput]

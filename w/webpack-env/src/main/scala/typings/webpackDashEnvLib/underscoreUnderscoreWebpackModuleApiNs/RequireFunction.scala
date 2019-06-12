@@ -37,7 +37,7 @@ trait RequireFunction extends js.Object {
     mode: webpackDashEnvLib.webpackDashEnvLibStrings.`lazy`
   ): RequireContext = js.native
   @JSName("context")
-  def `context_lazy-once`(
+  def context_lazyonce(
     path: java.lang.String,
     deep: scala.Boolean,
     filter: stdLib.RegExp,

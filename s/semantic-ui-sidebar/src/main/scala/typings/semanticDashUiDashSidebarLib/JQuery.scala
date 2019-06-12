@@ -15,28 +15,28 @@ trait JQuery extends js.Object {
     * Adds stylesheet to page head to trigger sidebar animations
     */
   @JSName("sidebar")
-  def `sidebar_add body CSS`(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`add body CSS`): JQuery = js.native
+  def sidebar_addbodyCSS(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`add body CSS`): JQuery = js.native
   /**
     * Attaches sidebar action to given selector. Default event if none specified is toggle
     */
   @JSName("sidebar")
-  def `sidebar_attach events`(
+  def sidebar_attachevents(
     behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`attach events`,
     selector: java.lang.String
   ): JQuery = js.native
   @JSName("sidebar")
-  def `sidebar_attach events`(
+  def sidebar_attachevents(
     behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`attach events`,
     selector: java.lang.String,
     event: java.lang.String
   ): JQuery = js.native
   @JSName("sidebar")
-  def `sidebar_attach events`(
+  def sidebar_attachevents(
     behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`attach events`,
     selector: JQuery
   ): JQuery = js.native
   @JSName("sidebar")
-  def `sidebar_attach events`(
+  def sidebar_attachevents(
     behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`attach events`,
     selector: JQuery,
     event: java.lang.String
@@ -47,12 +47,12 @@ trait JQuery extends js.Object {
     * Returns direction of current sidebar
     */
   @JSName("sidebar")
-  def `sidebar_get direction`(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`get direction`): java.lang.String = js.native
+  def sidebar_getdirection(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`get direction`): java.lang.String = js.native
   /**
     * Returns vendor prefixed transition end event
     */
   @JSName("sidebar")
-  def `sidebar_get transition event`(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`get transition event`): java.lang.String = js.native
+  def sidebar_gettransitionevent(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`get transition event`): java.lang.String = js.native
   /**
     * Hides sidebar
     */
@@ -62,27 +62,27 @@ trait JQuery extends js.Object {
     * Returns whether sidebar is hidden
     */
   @JSName("sidebar")
-  def `sidebar_is hidden`(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`is hidden`): scala.Boolean = js.native
+  def sidebar_ishidden(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`is hidden`): scala.Boolean = js.native
   /**
     * Returns whether sidebar is visible
     */
   @JSName("sidebar")
-  def `sidebar_is visible`(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`is visible`): scala.Boolean = js.native
+  def sidebar_isvisible(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`is visible`): scala.Boolean = js.native
   /**
     * Returns page content to original position
     */
   @JSName("sidebar")
-  def `sidebar_pull page`(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`pull page`): JQuery = js.native
+  def sidebar_pullpage(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`pull page`): JQuery = js.native
   /**
     * Pushes page content to be visible alongside sidebar
     */
   @JSName("sidebar")
-  def `sidebar_push page`(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`push page`): JQuery = js.native
+  def sidebar_pushpage(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`push page`): JQuery = js.native
   /**
     * Removes any inline stylesheets for sidebar animation
     */
   @JSName("sidebar")
-  def `sidebar_remove body CSS`(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`remove body CSS`): JQuery = js.native
+  def sidebar_removebodyCSS(behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.`remove body CSS`): JQuery = js.native
   @JSName("sidebar")
   def sidebar_setting(
     behavior: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.setting,

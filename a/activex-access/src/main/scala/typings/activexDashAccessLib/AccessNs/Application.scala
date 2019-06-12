@@ -535,11 +535,40 @@ class Application protected () extends js.Object {
   def SetOption(OptionName: java.lang.String, Setting: scala.Double): scala.Unit = js.native
   def SetUndoRecording(yesno: scala.Double): scala.Unit = js.native
   def StringFromGUID(Guid: ByteArray): java.lang.String = js.native
-  def SysCmd(Action: AcSysCmdAction, Argument2: AcObjectType, Argument3: java.lang.String): Constants = js.native
-  def SysCmd(Action: AcSysCmdAction, CurrentValue: scala.Double): scala.Null = js.native
-  def SysCmd(Action: AcSysCmdAction, StatusText: java.lang.String): scala.Null = js.native
-  def SysCmd(Action: AcSysCmdAction, StatusText: java.lang.String, MaxValue: scala.Double): scala.Null = js.native
-  def SysCmd(Acton: AcSysCmdAction): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_1(
+    Action: activexDashAccessLib.activexDashAccessLibNumbers.`1`,
+    StatusText: java.lang.String,
+    MaxValue: scala.Double
+  ): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_10(
+    Action: activexDashAccessLib.activexDashAccessLibNumbers.`10`,
+    Argument2: AcObjectType,
+    Argument3: java.lang.String
+  ): activexDashAccessLib.activexDashAccessLibNumbers.`2` | activexDashAccessLib.activexDashAccessLibNumbers.`4` | activexDashAccessLib.activexDashAccessLibNumbers.`1` = js.native
+  @JSName("SysCmd")
+  def SysCmd_11(Acton: activexDashAccessLib.activexDashAccessLibNumbers.`11`): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_12(Acton: activexDashAccessLib.activexDashAccessLibNumbers.`12`): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_13(Acton: activexDashAccessLib.activexDashAccessLibNumbers.`13`): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_2(Action: activexDashAccessLib.activexDashAccessLibNumbers.`2`, CurrentValue: scala.Double): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_3(Acton: activexDashAccessLib.activexDashAccessLibNumbers.`3`): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_4(Action: activexDashAccessLib.activexDashAccessLibNumbers.`4`, StatusText: java.lang.String): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_5(Acton: activexDashAccessLib.activexDashAccessLibNumbers.`5`): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_6(Acton: activexDashAccessLib.activexDashAccessLibNumbers.`6`): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_7(Acton: activexDashAccessLib.activexDashAccessLibNumbers.`7`): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_8(Acton: activexDashAccessLib.activexDashAccessLibNumbers.`8`): scala.Null = js.native
+  @JSName("SysCmd")
+  def SysCmd_9(Acton: activexDashAccessLib.activexDashAccessLibNumbers.`9`): scala.Null = js.native
   def TempVars(Index: java.lang.String): TempVar = js.native
   def TempVars(Index: scala.Double): TempVar = js.native
   /**

@@ -227,8 +227,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.compact
     */
-  @JSName("compact")
-  def compact_[T](
+  def compact[T](
     `this`: LoDashExplicitWrapper[
       js.UndefOr[
         (List[
@@ -2026,12 +2025,13 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.indexOf
     */
   def lastIndexOf[T](`this`: LoDashExplicitWrapper[js.UndefOr[List[T] | scala.Null]], value: T): LoDashExplicitWrapper[scala.Double] = js.native
-  def lastIndexOf[T](
+  def lastIndexOf[T](`this`: LoDashExplicitWrapper[js.UndefOr[List[T] | scala.Null]], value: T, fromIndex: scala.Double): LoDashExplicitWrapper[scala.Double] = js.native
+  @JSName("lastIndexOf")
+  def lastIndexOf_true[T](
     `this`: LoDashExplicitWrapper[js.UndefOr[List[T] | scala.Null]],
     value: T,
     fromIndex: lodashLib.lodashLibNumbers.`true`
   ): LoDashExplicitWrapper[scala.Double] = js.native
-  def lastIndexOf[T](`this`: LoDashExplicitWrapper[js.UndefOr[List[T] | scala.Null]], value: T, fromIndex: scala.Double): LoDashExplicitWrapper[scala.Double] = js.native
   /**
     * @see _.lowerCase
     */

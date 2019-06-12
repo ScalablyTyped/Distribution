@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("nblas", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ConjTrans: TRANS = js.native
-  val Left: SIDE = js.native
-  val Lower: UPLO = js.native
-  val NoTrans: TRANS = js.native
-  val NonUnit: DIAG = js.native
-  val Right: SIDE = js.native
-  val Trans: TRANS = js.native
-  val Unit: DIAG = js.native
-  val Upper: UPLO = js.native
+  val ConjTrans: nblasLib.nblasLibNumbers.`113` = js.native
+  val Left: nblasLib.nblasLibNumbers.`141` = js.native
+  val Lower: nblasLib.nblasLibNumbers.`122` = js.native
+  val NoTrans: nblasLib.nblasLibNumbers.`111` = js.native
+  val NonUnit: nblasLib.nblasLibNumbers.`131` = js.native
+  val Right: nblasLib.nblasLibNumbers.`142` = js.native
+  val Trans: nblasLib.nblasLibNumbers.`112` = js.native
+  val Unit: nblasLib.nblasLibNumbers.`132` = js.native
+  val Upper: nblasLib.nblasLibNumbers.`121` = js.native
   def asum(x: stdLib.Float32Array): scala.Double = js.native
   def asum(x: stdLib.Float64Array): scala.Double = js.native
   def axpy(x: stdLib.Float32Array, y: stdLib.Float32Array): scala.Unit = js.native

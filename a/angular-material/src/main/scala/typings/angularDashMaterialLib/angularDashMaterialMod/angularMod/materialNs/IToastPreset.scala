@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
 trait IToastPreset[T] extends js.Object {
   def action(action: java.lang.String): T = js.native
   def capsule(capsule: scala.Boolean): T = js.native
-  def hideDelay(delay: angularDashMaterialLib.angularDashMaterialLibNumbers.`false`): T = js.native
   def hideDelay(delay: scala.Double): T = js.native
+  @JSName("hideDelay")
+  def hideDelay_false(delay: angularDashMaterialLib.angularDashMaterialLibNumbers.`false`): T = js.native
   def highlightAction(highlightAction: scala.Boolean): T = js.native
   def highlightClass(highlightClass: java.lang.String): T = js.native
   def parent(): T = js.native

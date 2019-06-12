@@ -895,8 +895,7 @@ trait LoDashStatic extends js.Object {
     * @param array The array to compact.
     * @return Returns the new array of filtered values.
     */
-  @JSName("compact")
-  def compact_[T](
+  def compact[T](
     array: List[
       js.UndefOr[
         T | scala.Null | lodashLib.lodashLibNumbers.`false` | lodashLib.lodashLibStrings.Empty | lodashLib.lodashLibNumbers.`0`
@@ -4261,7 +4260,6 @@ trait LoDashStatic extends js.Object {
     */
   def last[T](array: List[T]): js.UndefOr[T] = js.native
   def lastIndexOf[T](array: js.UndefOr[scala.Nothing], value: T): scala.Double = js.native
-  def lastIndexOf[T](array: js.UndefOr[scala.Nothing], value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): scala.Double = js.native
   def lastIndexOf[T](array: js.UndefOr[scala.Nothing], value: T, fromIndex: scala.Double): scala.Double = js.native
   /**
     * This method is like _.indexOf except that it iterates over elements of array from right to left.
@@ -4272,11 +4270,15 @@ trait LoDashStatic extends js.Object {
     * @return Returns the index of the matched value, else -1.
     */
   def lastIndexOf[T](array: List[T], value: T): scala.Double = js.native
-  def lastIndexOf[T](array: List[T], value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): scala.Double = js.native
   def lastIndexOf[T](array: List[T], value: T, fromIndex: scala.Double): scala.Double = js.native
   def lastIndexOf[T](array: scala.Null, value: T): scala.Double = js.native
-  def lastIndexOf[T](array: scala.Null, value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): scala.Double = js.native
   def lastIndexOf[T](array: scala.Null, value: T, fromIndex: scala.Double): scala.Double = js.native
+  @JSName("lastIndexOf")
+  def lastIndexOf_true[T](array: js.UndefOr[scala.Nothing], value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): scala.Double = js.native
+  @JSName("lastIndexOf")
+  def lastIndexOf_true[T](array: List[T], value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): scala.Double = js.native
+  @JSName("lastIndexOf")
+  def lastIndexOf_true[T](array: scala.Null, value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): scala.Double = js.native
   /**
     * Converts `string`, as space separated words, to lower case.
     *

@@ -8,6 +8,23 @@ import scala.scalajs.js.annotation._
 @JSImport("re-reselect", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def createStructuredCachedSelector[S, T](
+    selectors: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: re-reselect.re-reselect.Selector<S, T[K]>}
+    */ reDashReselectLib.reDashReselectLibStrings.createStructuredCachedSelector with T
+  ): OutputCachedSelector[S, T, js.Function1[/* repeated */ $Values[T], T], js.Array[Selector[S, $Values[T]]]] = js.native
+  @JSName("createStructuredCachedSelector")
+  def createStructuredCachedSelector_SPTOutputParametricCachedSelector[S, P, T](
+    selectors: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: re-reselect.re-reselect.ParametricSelector<S, P, T[K]>}
+    */ reDashReselectLib.reDashReselectLibStrings.createStructuredCachedSelector with T
+  ): OutputParametricCachedSelector[
+    S, 
+    P, 
+    T, 
+    js.Function1[/* repeated */ $Values[T], T], 
+    js.Array[ParametricSelector[S, P, $Values[T]]]
+  ] = js.native
   def default[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputCachedSelector[S, T, js.Function1[/* res */ R1, T], js.Array[Selector[S, R1]]] = js.native
   def default[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputCachedSelector[S, T, js.Function1[/* repeated */ R, T], js.Array[Selector[S, R]]] = js.native
   def default[S, R1, R2, T](

@@ -5,23 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait BindingType extends js.Object
-
-@JSImport("@angular/core", "BindingType")
-@js.native
-object BindingType extends js.Object {
-  @js.native
-  sealed trait Class
-    extends atAngularCoreLib.atAngularCoreMod.BindingType
-  
-  @js.native
-  sealed trait Style
-    extends atAngularCoreLib.atAngularCoreMod.BindingType
-  
-  @js.native
-  sealed trait Unset
-    extends atAngularCoreLib.atAngularCoreMod.BindingType
-  
-}
+/* Rewritten from type alias, can be one of: 
+  - atAngularCoreLib.atAngularCoreLibNumbers.`0`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`1`
+  - atAngularCoreLib.atAngularCoreLibNumbers.`2`
+*/
+trait BindingType extends js.Object
 

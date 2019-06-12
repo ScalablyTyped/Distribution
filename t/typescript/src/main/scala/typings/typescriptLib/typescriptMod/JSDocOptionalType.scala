@@ -10,6 +10,8 @@ trait JSDocOptionalType
   extends JSDocType
      with HasType
      with JSDocTypeReferencingNode {
+  @JSName("kind")
+  var kind_JSDocOptionalType: typescriptLib.typescriptMod.SyntaxKind.JSDocOptionalType = js.native
   var `type`: TypeNode = js.native
 }
 

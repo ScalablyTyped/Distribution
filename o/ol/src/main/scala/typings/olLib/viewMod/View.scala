@@ -57,32 +57,32 @@ trait View
   def getZoomForResolution(resolution: scala.Double): scala.Double = js.native
   def isDef(): scala.Boolean = js.native
   @JSName("on")
-  def `on_change:center`(
+  def on_changecenter(
     `type`: olLib.olLibStrings.`change:center`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:resolution`(
+  def on_changeresolution(
     `type`: olLib.olLibStrings.`change:resolution`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:rotation`(
+  def on_changerotation(
     `type`: olLib.olLibStrings.`change:rotation`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:center`(
+  def once_changecenter(
     `type`: olLib.olLibStrings.`change:center`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:resolution`(
+  def once_changeresolution(
     `type`: olLib.olLibStrings.`change:resolution`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:rotation`(
+  def once_changerotation(
     `type`: olLib.olLibStrings.`change:rotation`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -96,17 +96,17 @@ trait View
   def setRotation(rotation: scala.Double): scala.Unit = js.native
   def setZoom(zoom: scala.Double): scala.Unit = js.native
   @JSName("un")
-  def `un_change:center`(
+  def un_changecenter(
     `type`: olLib.olLibStrings.`change:center`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:resolution`(
+  def un_changeresolution(
     `type`: olLib.olLibStrings.`change:resolution`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:rotation`(
+  def un_changerotation(
     `type`: olLib.olLibStrings.`change:rotation`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

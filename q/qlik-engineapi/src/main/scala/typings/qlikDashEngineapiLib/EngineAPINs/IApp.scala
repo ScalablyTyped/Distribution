@@ -100,9 +100,9 @@ trait IApp
   def clearAll(qLockedAlso: scala.Boolean): js.Promise[scala.Unit] = js.native
   def clearAll(qLockedAlso: scala.Boolean, qStateName: java.lang.String): js.Promise[scala.Unit] = js.native
   @JSName("clearSelections")
-  def `clearSelections_/qListObjectDef`(qPath: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.`/qListObjectDef`): js.Promise[scala.Unit] = js.native
+  def clearSelections_qListObjectDef(qPath: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.`/qListObjectDef`): js.Promise[scala.Unit] = js.native
   @JSName("clearSelections")
-  def `clearSelections_/qListObjectDef`(
+  def clearSelections_qListObjectDef(
     qPath: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.`/qListObjectDef`,
     qColIndices: js.Array[scala.Double]
   ): js.Promise[scala.Unit] = js.native

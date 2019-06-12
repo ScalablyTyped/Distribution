@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 object activexDashFaxcomexlibLibStrings {
   @js.native
+  sealed trait `<All Devices>`
+    extends activexDashFaxcomexlibLib.FAXCOMEXLibNs.FaxConstants
+  
+  @js.native
   sealed trait AddRef extends js.Object
   
   @js.native
@@ -213,6 +217,8 @@ object activexDashFaxcomexlibLibStrings {
   @js.native
   sealed trait wFlags extends js.Object
   
+  @scala.inline
+  def `<All Devices>`: `<All Devices>` = "<All Devices>".asInstanceOf[`<All Devices>`]
   @scala.inline
   def AddRef: AddRef = "AddRef".asInstanceOf[AddRef]
   @scala.inline

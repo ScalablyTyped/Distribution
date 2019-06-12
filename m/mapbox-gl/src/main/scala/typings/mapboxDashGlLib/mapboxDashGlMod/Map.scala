@@ -22,21 +22,21 @@ class Map () extends Evented {
   def addControl(control: Control): this.type = js.native
   def addControl(control: IControl): this.type = js.native
   @JSName("addControl")
-  def `addControl_bottom-left`(control: Control, position: mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-left`): this.type = js.native
+  def addControl_bottomleft(control: Control, position: mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-left`): this.type = js.native
   @JSName("addControl")
-  def `addControl_bottom-left`(control: IControl, position: mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-left`): this.type = js.native
+  def addControl_bottomleft(control: IControl, position: mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-left`): this.type = js.native
   @JSName("addControl")
-  def `addControl_bottom-right`(control: Control, position: mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-right`): this.type = js.native
+  def addControl_bottomright(control: Control, position: mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-right`): this.type = js.native
   @JSName("addControl")
-  def `addControl_bottom-right`(control: IControl, position: mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-right`): this.type = js.native
+  def addControl_bottomright(control: IControl, position: mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-right`): this.type = js.native
   @JSName("addControl")
-  def `addControl_top-left`(control: Control, position: mapboxDashGlLib.mapboxDashGlLibStrings.`top-left`): this.type = js.native
+  def addControl_topleft(control: Control, position: mapboxDashGlLib.mapboxDashGlLibStrings.`top-left`): this.type = js.native
   @JSName("addControl")
-  def `addControl_top-left`(control: IControl, position: mapboxDashGlLib.mapboxDashGlLibStrings.`top-left`): this.type = js.native
+  def addControl_topleft(control: IControl, position: mapboxDashGlLib.mapboxDashGlLibStrings.`top-left`): this.type = js.native
   @JSName("addControl")
-  def `addControl_top-right`(control: Control, position: mapboxDashGlLib.mapboxDashGlLibStrings.`top-right`): this.type = js.native
+  def addControl_topright(control: Control, position: mapboxDashGlLib.mapboxDashGlLibStrings.`top-right`): this.type = js.native
   @JSName("addControl")
-  def `addControl_top-right`(control: IControl, position: mapboxDashGlLib.mapboxDashGlLibStrings.`top-right`): this.type = js.native
+  def addControl_topright(control: IControl, position: mapboxDashGlLib.mapboxDashGlLibStrings.`top-right`): this.type = js.native
   def addImage(name: java.lang.String, image: mapboxDashGlLib.Anon_Data): this.type = js.native
   def addImage(name: java.lang.String, image: mapboxDashGlLib.Anon_Data, options: mapboxDashGlLib.Anon_PixelRatio): this.type = js.native
   def addImage(name: java.lang.String, image: stdLib.ArrayBufferView): this.type = js.native

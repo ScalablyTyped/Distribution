@@ -30,7 +30,7 @@ class Servo protected () extends js.Object {
   def min(): scala.Unit = js.native
   def on(event: java.lang.String, cb: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
-  def `on_move:complete`(event: johnnyDashFiveLib.johnnyDashFiveLibStrings.`move:complete`, cb: js.Function0[scala.Unit]): this.type = js.native
+  def on_movecomplete(event: johnnyDashFiveLib.johnnyDashFiveLibStrings.`move:complete`, cb: js.Function0[scala.Unit]): this.type = js.native
   def stop(): scala.Unit = js.native
   def sweep(): scala.Unit = js.native
   def sweep(opt: ServoSweepOpts): scala.Unit = js.native

@@ -134,35 +134,6 @@ trait ReadonlyArray[T]
     */
   def flat[U](`this`: js.Array[js.Array[U]]): js.Array[U] = js.native
   /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  def flat[U](`this`: js.Array[U], depth: stdLib.stdLibNumbers.`0`): js.Array[U] = js.native
-  def flat[U](`this`: js.Array[js.Array[U]], depth: stdLib.stdLibNumbers.`1`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  def flat[U](`this`: js.Array[js.Array[js.Array[U]]], depth: stdLib.stdLibNumbers.`2`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  def flat[U](`this`: js.Array[js.Array[js.Array[js.Array[U]]]], depth: stdLib.stdLibNumbers.`3`): js.Array[U] = js.native
-  /**
-    * Returns a new array with all sub-array elements concatenated into it recursively up to the
-    * specified depth.
-    *
-    * @param depth The maximum recursion depth
-    */
-  def flat[U](`this`: js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]], depth: stdLib.stdLibNumbers.`4`): js.Array[U] = js.native
-  /**
     * Calls a defined callback function on each element of an array. Then, flattens the result into
     * a new array.
     * This is identical to a map followed by flat with depth 1.
@@ -191,6 +162,40 @@ trait ReadonlyArray[T]
     ],
     thisArg: This
   ): js.Array[U] = js.native
+  /**
+    * Returns a new array with all sub-array elements concatenated into it recursively up to the
+    * specified depth.
+    *
+    * @param depth The maximum recursion depth
+    */
+  @JSName("flat")
+  def flat_0[U](`this`: js.Array[U], depth: stdLib.stdLibNumbers.`0`): js.Array[U] = js.native
+  @JSName("flat")
+  def flat_1[U](`this`: js.Array[js.Array[U]], depth: stdLib.stdLibNumbers.`1`): js.Array[U] = js.native
+  /**
+    * Returns a new array with all sub-array elements concatenated into it recursively up to the
+    * specified depth.
+    *
+    * @param depth The maximum recursion depth
+    */
+  @JSName("flat")
+  def flat_2[U](`this`: js.Array[js.Array[js.Array[U]]], depth: stdLib.stdLibNumbers.`2`): js.Array[U] = js.native
+  /**
+    * Returns a new array with all sub-array elements concatenated into it recursively up to the
+    * specified depth.
+    *
+    * @param depth The maximum recursion depth
+    */
+  @JSName("flat")
+  def flat_3[U](`this`: js.Array[js.Array[js.Array[js.Array[U]]]], depth: stdLib.stdLibNumbers.`3`): js.Array[U] = js.native
+  /**
+    * Returns a new array with all sub-array elements concatenated into it recursively up to the
+    * specified depth.
+    *
+    * @param depth The maximum recursion depth
+    */
+  @JSName("flat")
+  def flat_4[U](`this`: js.Array[js.Array[js.Array[js.Array[js.Array[U]]]]], depth: stdLib.stdLibNumbers.`4`): js.Array[U] = js.native
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the callbackfn function one time for each element in the array.

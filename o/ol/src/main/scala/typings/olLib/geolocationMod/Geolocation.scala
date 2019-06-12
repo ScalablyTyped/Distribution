@@ -19,104 +19,104 @@ trait Geolocation
   def getTracking(): scala.Boolean = js.native
   def getTrackingOptions(): stdLib.PositionOptions = js.native
   @JSName("on")
-  def `on_change:accuracy`(
+  def on_changeaccuracy(
     `type`: olLib.olLibStrings.`change:accuracy`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:accuracyGeometry`(
+  def on_changeaccuracyGeometry(
     `type`: olLib.olLibStrings.`change:accuracyGeometry`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:altitude`(
+  def on_changealtitude(
     `type`: olLib.olLibStrings.`change:altitude`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:altitudeAccuracy`(
+  def on_changealtitudeAccuracy(
     `type`: olLib.olLibStrings.`change:altitudeAccuracy`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:heading`(
+  def on_changeheading(
     `type`: olLib.olLibStrings.`change:heading`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:position`(
+  def on_changeposition(
     `type`: olLib.olLibStrings.`change:position`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:projection`(
+  def on_changeprojection(
     `type`: olLib.olLibStrings.`change:projection`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:speed`(
+  def on_changespeed(
     `type`: olLib.olLibStrings.`change:speed`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:tracking`(
+  def on_changetracking(
     `type`: olLib.olLibStrings.`change:tracking`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:trackingOptions`(
+  def on_changetrackingOptions(
     `type`: olLib.olLibStrings.`change:trackingOptions`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
   def on_error(`type`: olLib.olLibStrings.error, listener: js.Function1[/* evt */ js.Any, scala.Unit]): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:accuracy`(
+  def once_changeaccuracy(
     `type`: olLib.olLibStrings.`change:accuracy`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:accuracyGeometry`(
+  def once_changeaccuracyGeometry(
     `type`: olLib.olLibStrings.`change:accuracyGeometry`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:altitude`(
+  def once_changealtitude(
     `type`: olLib.olLibStrings.`change:altitude`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:altitudeAccuracy`(
+  def once_changealtitudeAccuracy(
     `type`: olLib.olLibStrings.`change:altitudeAccuracy`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:heading`(
+  def once_changeheading(
     `type`: olLib.olLibStrings.`change:heading`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:position`(
+  def once_changeposition(
     `type`: olLib.olLibStrings.`change:position`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:projection`(
+  def once_changeprojection(
     `type`: olLib.olLibStrings.`change:projection`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:speed`(
+  def once_changespeed(
     `type`: olLib.olLibStrings.`change:speed`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:tracking`(
+  def once_changetracking(
     `type`: olLib.olLibStrings.`change:tracking`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:trackingOptions`(
+  def once_changetrackingOptions(
     `type`: olLib.olLibStrings.`change:trackingOptions`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -126,52 +126,52 @@ trait Geolocation
   def setTracking(tracking: scala.Boolean): scala.Unit = js.native
   def setTrackingOptions(options: stdLib.PositionOptions): scala.Unit = js.native
   @JSName("un")
-  def `un_change:accuracy`(
+  def un_changeaccuracy(
     `type`: olLib.olLibStrings.`change:accuracy`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:accuracyGeometry`(
+  def un_changeaccuracyGeometry(
     `type`: olLib.olLibStrings.`change:accuracyGeometry`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:altitude`(
+  def un_changealtitude(
     `type`: olLib.olLibStrings.`change:altitude`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:altitudeAccuracy`(
+  def un_changealtitudeAccuracy(
     `type`: olLib.olLibStrings.`change:altitudeAccuracy`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:heading`(
+  def un_changeheading(
     `type`: olLib.olLibStrings.`change:heading`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:position`(
+  def un_changeposition(
     `type`: olLib.olLibStrings.`change:position`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:projection`(
+  def un_changeprojection(
     `type`: olLib.olLibStrings.`change:projection`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:speed`(
+  def un_changespeed(
     `type`: olLib.olLibStrings.`change:speed`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:tracking`(
+  def un_changetracking(
     `type`: olLib.olLibStrings.`change:tracking`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:trackingOptions`(
+  def un_changetrackingOptions(
     `type`: olLib.olLibStrings.`change:trackingOptions`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

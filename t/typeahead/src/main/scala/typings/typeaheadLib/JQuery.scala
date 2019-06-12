@@ -14,7 +14,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:active`(events: typeaheadLib.typeaheadLibStrings.`typeahead:active`): JQuery = js.native
+  def off_typeaheadactive(events: typeaheadLib.typeaheadLibStrings.`typeahead:active`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -22,14 +22,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:active`(
+  def off_typeaheadactive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:active`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:active`(events: typeaheadLib.typeaheadLibStrings.`typeahead:active`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadactive(events: typeaheadLib.typeaheadLibStrings.`typeahead:active`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:active`(
+  def off_typeaheadactive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:active`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -41,7 +41,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:asynccancel`(events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`): JQuery = js.native
+  def off_typeaheadasynccancel(events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -49,14 +49,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:asynccancel`(
+  def off_typeaheadasynccancel(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:asynccancel`(events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadasynccancel(events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:asynccancel`(
+  def off_typeaheadasynccancel(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -68,7 +68,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:asyncreceive`(events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`): JQuery = js.native
+  def off_typeaheadasyncreceive(events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -76,14 +76,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:asyncreceive`(
+  def off_typeaheadasyncreceive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:asyncreceive`(events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadasyncreceive(events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:asyncreceive`(
+  def off_typeaheadasyncreceive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -95,7 +95,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:asyncrequest`(events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`): JQuery = js.native
+  def off_typeaheadasyncrequest(events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -103,14 +103,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:asyncrequest`(
+  def off_typeaheadasyncrequest(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:asyncrequest`(events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadasyncrequest(events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:asyncrequest`(
+  def off_typeaheadasyncrequest(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -122,7 +122,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:autocomplete`(events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`): JQuery = js.native
+  def off_typeaheadautocomplete(events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -130,14 +130,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:autocomplete`(
+  def off_typeaheadautocomplete(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:autocomplete`(events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadautocomplete(events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:autocomplete`(
+  def off_typeaheadautocomplete(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -149,7 +149,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:change`(events: typeaheadLib.typeaheadLibStrings.`typeahead:change`): JQuery = js.native
+  def off_typeaheadchange(events: typeaheadLib.typeaheadLibStrings.`typeahead:change`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -157,14 +157,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:change`(
+  def off_typeaheadchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:change`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:change`(events: typeaheadLib.typeaheadLibStrings.`typeahead:change`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadchange(events: typeaheadLib.typeaheadLibStrings.`typeahead:change`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:change`(
+  def off_typeaheadchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:change`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -176,7 +176,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:close`(events: typeaheadLib.typeaheadLibStrings.`typeahead:close`): JQuery = js.native
+  def off_typeaheadclose(events: typeaheadLib.typeaheadLibStrings.`typeahead:close`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -184,14 +184,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:close`(
+  def off_typeaheadclose(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:close`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:close`(events: typeaheadLib.typeaheadLibStrings.`typeahead:close`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadclose(events: typeaheadLib.typeaheadLibStrings.`typeahead:close`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:close`(
+  def off_typeaheadclose(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:close`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -203,7 +203,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:cursorchange`(events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`): JQuery = js.native
+  def off_typeaheadcursorchange(events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -211,14 +211,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:cursorchange`(
+  def off_typeaheadcursorchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:cursorchange`(events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadcursorchange(events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:cursorchange`(
+  def off_typeaheadcursorchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -230,7 +230,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:idle`(events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`): JQuery = js.native
+  def off_typeaheadidle(events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -238,14 +238,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:idle`(
+  def off_typeaheadidle(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:idle`(events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadidle(events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:idle`(
+  def off_typeaheadidle(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -257,7 +257,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:open`(events: typeaheadLib.typeaheadLibStrings.`typeahead:open`): JQuery = js.native
+  def off_typeaheadopen(events: typeaheadLib.typeaheadLibStrings.`typeahead:open`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -265,14 +265,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:open`(
+  def off_typeaheadopen(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:open`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:open`(events: typeaheadLib.typeaheadLibStrings.`typeahead:open`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadopen(events: typeaheadLib.typeaheadLibStrings.`typeahead:open`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:open`(
+  def off_typeaheadopen(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:open`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -284,7 +284,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:render`(events: typeaheadLib.typeaheadLibStrings.`typeahead:render`): JQuery = js.native
+  def off_typeaheadrender(events: typeaheadLib.typeaheadLibStrings.`typeahead:render`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -292,14 +292,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:render`(
+  def off_typeaheadrender(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:render`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:render`(events: typeaheadLib.typeaheadLibStrings.`typeahead:render`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadrender(events: typeaheadLib.typeaheadLibStrings.`typeahead:render`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:render`(
+  def off_typeaheadrender(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:render`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -311,7 +311,7 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:select`(events: typeaheadLib.typeaheadLibStrings.`typeahead:select`): JQuery = js.native
+  def off_typeaheadselect(events: typeaheadLib.typeaheadLibStrings.`typeahead:select`): JQuery = js.native
   /**
     * Remove an event handler.
     *
@@ -319,14 +319,14 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def `off_typeahead:select`(
+  def off_typeaheadselect(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:select`,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
   ): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:select`(events: typeaheadLib.typeaheadLibStrings.`typeahead:select`, selector: java.lang.String): JQuery = js.native
+  def off_typeaheadselect(events: typeaheadLib.typeaheadLibStrings.`typeahead:select`, selector: java.lang.String): JQuery = js.native
   @JSName("off")
-  def `off_typeahead:select`(
+  def off_typeaheadselect(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:select`,
     selector: java.lang.String,
     handler: js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]
@@ -339,7 +339,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:active`(
+  def on_typeaheadactive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:active`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -351,7 +351,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:active`(
+  def on_typeaheadactive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:active`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -364,7 +364,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:active`(
+  def on_typeaheadactive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:active`,
     selector: java.lang.String,
     data: js.Any,
@@ -378,7 +378,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:active`(
+  def on_typeaheadactive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:active`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -391,7 +391,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:asynccancel`(
+  def on_typeaheadasynccancel(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -403,7 +403,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:asynccancel`(
+  def on_typeaheadasynccancel(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -416,7 +416,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:asynccancel`(
+  def on_typeaheadasynccancel(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`,
     selector: java.lang.String,
     data: js.Any,
@@ -430,7 +430,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:asynccancel`(
+  def on_typeaheadasynccancel(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asynccancel`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -443,7 +443,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:asyncreceive`(
+  def on_typeaheadasyncreceive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -455,7 +455,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:asyncreceive`(
+  def on_typeaheadasyncreceive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -468,7 +468,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:asyncreceive`(
+  def on_typeaheadasyncreceive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`,
     selector: java.lang.String,
     data: js.Any,
@@ -482,7 +482,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:asyncreceive`(
+  def on_typeaheadasyncreceive(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncreceive`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -495,7 +495,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:asyncrequest`(
+  def on_typeaheadasyncrequest(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -507,7 +507,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:asyncrequest`(
+  def on_typeaheadasyncrequest(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -520,7 +520,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:asyncrequest`(
+  def on_typeaheadasyncrequest(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`,
     selector: java.lang.String,
     data: js.Any,
@@ -534,7 +534,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:asyncrequest`(
+  def on_typeaheadasyncrequest(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:asyncrequest`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -547,7 +547,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:autocomplete`(
+  def on_typeaheadautocomplete(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -559,7 +559,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:autocomplete`(
+  def on_typeaheadautocomplete(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -572,7 +572,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:autocomplete`(
+  def on_typeaheadautocomplete(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`,
     selector: java.lang.String,
     data: js.Any,
@@ -586,7 +586,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:autocomplete`(
+  def on_typeaheadautocomplete(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:autocomplete`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -599,7 +599,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:change`(
+  def on_typeaheadchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:change`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -611,7 +611,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:change`(
+  def on_typeaheadchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:change`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -624,7 +624,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:change`(
+  def on_typeaheadchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:change`,
     selector: java.lang.String,
     data: js.Any,
@@ -638,7 +638,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:change`(
+  def on_typeaheadchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:change`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -651,7 +651,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:close`(
+  def on_typeaheadclose(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:close`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -663,7 +663,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:close`(
+  def on_typeaheadclose(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:close`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -676,7 +676,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:close`(
+  def on_typeaheadclose(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:close`,
     selector: java.lang.String,
     data: js.Any,
@@ -690,7 +690,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:close`(
+  def on_typeaheadclose(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:close`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -703,7 +703,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:cursorchange`(
+  def on_typeaheadcursorchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -715,7 +715,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:cursorchange`(
+  def on_typeaheadcursorchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -728,7 +728,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:cursorchange`(
+  def on_typeaheadcursorchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`,
     selector: java.lang.String,
     data: js.Any,
@@ -742,7 +742,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:cursorchange`(
+  def on_typeaheadcursorchange(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:cursorchange`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -755,7 +755,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:idle`(
+  def on_typeaheadidle(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -767,7 +767,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:idle`(
+  def on_typeaheadidle(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -780,7 +780,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:idle`(
+  def on_typeaheadidle(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`,
     selector: java.lang.String,
     data: js.Any,
@@ -794,7 +794,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:idle`(
+  def on_typeaheadidle(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:idle`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -807,7 +807,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:open`(
+  def on_typeaheadopen(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:open`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -819,7 +819,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:open`(
+  def on_typeaheadopen(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:open`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -832,7 +832,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:open`(
+  def on_typeaheadopen(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:open`,
     selector: java.lang.String,
     data: js.Any,
@@ -846,7 +846,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:open`(
+  def on_typeaheadopen(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:open`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -859,7 +859,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:render`(
+  def on_typeaheadrender(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:render`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -871,7 +871,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:render`(
+  def on_typeaheadrender(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:render`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -884,7 +884,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:render`(
+  def on_typeaheadrender(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:render`,
     selector: java.lang.String,
     data: js.Any,
@@ -898,7 +898,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:render`(
+  def on_typeaheadrender(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:render`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -911,7 +911,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:select`(
+  def on_typeaheadselect(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:select`,
     data: js.Any,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
@@ -923,7 +923,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false. Rest parameter args is for optional parameters passed to jQuery.trigger(). Note that the actual parameters on the event handler function must be marked as optional (? syntax).
     */
   @JSName("on")
-  def `on_typeahead:select`(
+  def on_typeaheadselect(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:select`,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]
   ): JQuery = js.native
@@ -936,7 +936,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:select`(
+  def on_typeaheadselect(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:select`,
     selector: java.lang.String,
     data: js.Any,
@@ -950,7 +950,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def `on_typeahead:select`(
+  def on_typeaheadselect(
     events: typeaheadLib.typeaheadLibStrings.`typeahead:select`,
     selector: java.lang.String,
     handler: js.Function2[/* eventObject */ jqueryLib.JQueryEventObject, /* repeated */ js.Any, _]

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/merge", JSImport.Namespace)
 @js.native
 object libMergeMod extends js.Object {
-  def merge[T](
+  @JSName("merge")
+  def merge_false[T](
     target: stdLib.Partial[T],
     args: (js.UndefOr[
       stdLib.Partial[T] | scala.Null | atUifabricUtilitiesLib.atUifabricUtilitiesLibNumbers.`false`

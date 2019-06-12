@@ -20,11 +20,16 @@ class Mgrs protected () extends js.Object {
   var n100kLetters: java.lang.String = js.native
   var northing: scala.Double = js.native
   var zone: scala.Double = js.native
-  def toString(digits: geodesyLib.geodesyLibNumbers.`10`): java.lang.String = js.native
-  def toString(digits: geodesyLib.geodesyLibNumbers.`2`): java.lang.String = js.native
-  def toString(digits: geodesyLib.geodesyLibNumbers.`4`): java.lang.String = js.native
-  def toString(digits: geodesyLib.geodesyLibNumbers.`6`): java.lang.String = js.native
-  def toString(digits: geodesyLib.geodesyLibNumbers.`8`): java.lang.String = js.native
+  @JSName("toString")
+  def toString_10(digits: geodesyLib.geodesyLibNumbers.`10`): java.lang.String = js.native
+  @JSName("toString")
+  def toString_2(digits: geodesyLib.geodesyLibNumbers.`2`): java.lang.String = js.native
+  @JSName("toString")
+  def toString_4(digits: geodesyLib.geodesyLibNumbers.`4`): java.lang.String = js.native
+  @JSName("toString")
+  def toString_6(digits: geodesyLib.geodesyLibNumbers.`6`): java.lang.String = js.native
+  @JSName("toString")
+  def toString_8(digits: geodesyLib.geodesyLibNumbers.`8`): java.lang.String = js.native
   def toUtm(): Utm = js.native
 }
 

@@ -17,11 +17,37 @@ class Viz protected () extends js.Object {
   def this(node: stdLib.HTMLElement, url: java.lang.String) = this()
   def this(node: stdLib.HTMLElement, url: java.lang.String, options: VizCreateOptions) = this()
   def addEventListener(
-    event: TableauEventName,
-    f: ListenerFunction[
-      CustomViewEvent | FilterEvent | MarksEvent | ParameterEvent | StoryPointSwitchEvent | TabSwitchEvent | ToolbarStateEvent | VizResizeEvent
-    ]
+    event: tableauLib.tableauNs.TableauEventName.CUSTOM_VIEW_LOAD,
+    f: ListenerFunction[CustomViewEvent]
   ): scala.Unit = js.native
+  def addEventListener(
+    event: tableauLib.tableauNs.TableauEventName.CUSTOM_VIEW_REMOVE,
+    f: ListenerFunction[CustomViewEvent]
+  ): scala.Unit = js.native
+  def addEventListener(
+    event: tableauLib.tableauNs.TableauEventName.CUSTOM_VIEW_SAVE,
+    f: ListenerFunction[CustomViewEvent]
+  ): scala.Unit = js.native
+  def addEventListener(
+    event: tableauLib.tableauNs.TableauEventName.CUSTOM_VIEW_SET_DEFAULT,
+    f: ListenerFunction[CustomViewEvent]
+  ): scala.Unit = js.native
+  def addEventListener(event: tableauLib.tableauNs.TableauEventName.FILTER_CHANGE, f: ListenerFunction[FilterEvent]): scala.Unit = js.native
+  def addEventListener(event: tableauLib.tableauNs.TableauEventName.MARKS_SELECTION, f: ListenerFunction[MarksEvent]): scala.Unit = js.native
+  def addEventListener(
+    event: tableauLib.tableauNs.TableauEventName.PARAMETER_VALUE_CHANGE,
+    f: ListenerFunction[ParameterEvent]
+  ): scala.Unit = js.native
+  def addEventListener(
+    event: tableauLib.tableauNs.TableauEventName.STORY_POINT_SWITCH,
+    f: ListenerFunction[StoryPointSwitchEvent]
+  ): scala.Unit = js.native
+  def addEventListener(event: tableauLib.tableauNs.TableauEventName.TAB_SWITCH, f: ListenerFunction[TabSwitchEvent]): scala.Unit = js.native
+  def addEventListener(
+    event: tableauLib.tableauNs.TableauEventName.TOOLBAR_STATE_CHANGE,
+    f: ListenerFunction[ToolbarStateEvent]
+  ): scala.Unit = js.native
+  def addEventListener(event: tableauLib.tableauNs.TableauEventName.VIZ_RESIZE, f: ListenerFunction[VizResizeEvent]): scala.Unit = js.native
   /**
     * Cleans up any resources associated with the visualization,
     * removes the visualization from the VizManager instance,

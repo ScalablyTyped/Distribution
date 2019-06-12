@@ -12,5 +12,7 @@ trait ElementAccessExpression
      with _BindingOrAssignmentElement {
   var argumentExpression: Expression = js.native
   var expression: LeftHandSideExpression = js.native
+  @JSName("kind")
+  var kind_ElementAccessExpression: typescriptLib.typescriptMod.SyntaxKind.ElementAccessExpression = js.native
 }
 

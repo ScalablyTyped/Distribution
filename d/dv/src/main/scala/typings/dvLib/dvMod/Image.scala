@@ -62,8 +62,10 @@ class Image protected () extends js.Object {
   /**
   	 * Only available for monochrome images. Tries to extract connected components (think of flood fill). The connectivity can be specified as 4 or 8 directions.
   	 */
-  def connectedComponents(connectivity: dvLib.dvLibNumbers.`4`): js.Array[Component] = js.native
-  def connectedComponents(connectivity: dvLib.dvLibNumbers.`8`): js.Array[Component] = js.native
+  @JSName("connectedComponents")
+  def connectedComponents_4(connectivity: dvLib.dvLibNumbers.`4`): js.Array[Component] = js.native
+  @JSName("connectedComponents")
+  def connectedComponents_8(connectivity: dvLib.dvLibNumbers.`8`): js.Array[Component] = js.native
   /**
   	 * Applies a convoltuion kernel with the specified dimensions. Image convolution is an operation where each destination pixel is computed based on a weighted sum of a set of nearby source pixels.
   	 */
@@ -80,8 +82,10 @@ class Image protected () extends js.Object {
   /**
   	 * The Distance Function works on 1bpp images. It labels each pixel with the largest distance between this and any other pixel in its connected component. The connectivity is either 4 or 8.
   	 */
-  def distanceFunction(connectivity: dvLib.dvLibNumbers.`4`): Image = js.native
-  def distanceFunction(connectivity: dvLib.dvLibNumbers.`8`): Image = js.native
+  @JSName("distanceFunction")
+  def distanceFunction_4(connectivity: dvLib.dvLibNumbers.`4`): Image = js.native
+  @JSName("distanceFunction")
+  def distanceFunction_8(connectivity: dvLib.dvLibNumbers.`8`): Image = js.native
   /**
   	 * !!! Note: this function actually changes the image!
   	 * Draws a rectangle to this image with the specified border in the specified color with an optional blending parameter (0.0: transparent; 1.0: no transparency).

@@ -47,12 +47,12 @@ class Responder protected () extends Component {
     * @param listener Callback.
     */
   @JSName("on")
-  def `on_cote:added`(
+  def on_coteadded(
     `type`: coteLib.coteLibStrings.`cote:added`,
     listener: js.Function1[/* event */ Status, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_cote:removed`(
+  def on_coteremoved(
     `type`: coteLib.coteLibStrings.`cote:removed`,
     listener: js.Function1[/* event */ Status, scala.Unit]
   ): this.type = js.native

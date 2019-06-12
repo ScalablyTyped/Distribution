@@ -10,7 +10,7 @@ trait Layer
   extends olLib.layerBaseMod.default {
   def getSource(): olLib.sourceSourceMod.default = js.native
   @JSName("on")
-  def `on_change:source`(
+  def on_changesource(
     `type`: olLib.olLibStrings.`change:source`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -35,7 +35,7 @@ trait Layer
     listener: js.Function1[/* evt */ olLib.renderEventMod.default, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:source`(
+  def once_changesource(
     `type`: olLib.olLibStrings.`change:source`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -62,7 +62,7 @@ trait Layer
   def setMap(map: olLib.pluggableMapMod.default): scala.Unit = js.native
   def setSource(source: olLib.sourceSourceMod.default): scala.Unit = js.native
   @JSName("un")
-  def `un_change:source`(
+  def un_changesource(
     `type`: olLib.olLibStrings.`change:source`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

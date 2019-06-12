@@ -32,52 +32,52 @@ trait Overlay
   /* protected */ def handlePositionChanged(): scala.Unit = js.native
   /* protected */ def handlePositioningChanged(): scala.Unit = js.native
   @JSName("on")
-  def `on_change:element`(
+  def on_changeelement(
     `type`: olLib.olLibStrings.`change:element`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:map`(
+  def on_changemap(
     `type`: olLib.olLibStrings.`change:map`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:offset`(
+  def on_changeoffset(
     `type`: olLib.olLibStrings.`change:offset`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:position`(
+  def on_changeposition(
     `type`: olLib.olLibStrings.`change:position`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:positioning`(
+  def on_changepositioning(
     `type`: olLib.olLibStrings.`change:positioning`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:element`(
+  def once_changeelement(
     `type`: olLib.olLibStrings.`change:element`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:map`(
+  def once_changemap(
     `type`: olLib.olLibStrings.`change:map`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:offset`(
+  def once_changeoffset(
     `type`: olLib.olLibStrings.`change:offset`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:position`(
+  def once_changeposition(
     `type`: olLib.olLibStrings.`change:position`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:positioning`(
+  def once_changepositioning(
     `type`: olLib.olLibStrings.`change:positioning`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -90,27 +90,27 @@ trait Overlay
   def setPositioning(positioning: olLib.overlayPositioningMod.OverlayPositioning): scala.Unit = js.native
   /* protected */ def setVisible(visible: scala.Boolean): scala.Unit = js.native
   @JSName("un")
-  def `un_change:element`(
+  def un_changeelement(
     `type`: olLib.olLibStrings.`change:element`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:map`(
+  def un_changemap(
     `type`: olLib.olLibStrings.`change:map`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:offset`(
+  def un_changeoffset(
     `type`: olLib.olLibStrings.`change:offset`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:position`(
+  def un_changeposition(
     `type`: olLib.olLibStrings.`change:position`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:positioning`(
+  def un_changepositioning(
     `type`: olLib.olLibStrings.`change:positioning`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

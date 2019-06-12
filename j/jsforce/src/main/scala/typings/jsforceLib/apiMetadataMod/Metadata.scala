@@ -114,9 +114,9 @@ class Metadata protected () extends js.Object {
     options: DeployOptions,
     callback: jsforceLib.connectionMod.Callback[AsyncResult]
   ): DeployResultLocator[AsyncResult] = js.native
-  def deploy(zipInput: nodeLib.Buffer, options: DeployOptions): DeployResultLocator[AsyncResult] = js.native
+  def deploy(zipInput: nodeLib.bufferMod.Buffer, options: DeployOptions): DeployResultLocator[AsyncResult] = js.native
   def deploy(
-    zipInput: nodeLib.Buffer,
+    zipInput: nodeLib.bufferMod.Buffer,
     options: DeployOptions,
     callback: jsforceLib.connectionMod.Callback[AsyncResult]
   ): DeployResultLocator[AsyncResult] = js.native

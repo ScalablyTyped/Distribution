@@ -13,8 +13,10 @@ trait ShorthandPropertyAssignment
      with VariableLikeDeclaration
      with _BindingOrAssignmentElement
      with _HasJSDoc {
-  var equalsToken: js.UndefOr[Token[SyntaxKind]] = js.native
+  var equalsToken: js.UndefOr[Token[typescriptLib.typescriptMod.SyntaxKind.EqualsToken]] = js.native
   var exclamationToken: js.UndefOr[ExclamationToken] = js.native
+  @JSName("kind")
+  var kind_ShorthandPropertyAssignment: typescriptLib.typescriptMod.SyntaxKind.ShorthandPropertyAssignment = js.native
   @JSName("name")
   var name_ShorthandPropertyAssignment: Identifier = js.native
   var objectAssignmentInitializer: js.UndefOr[Expression] = js.native

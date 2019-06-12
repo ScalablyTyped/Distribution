@@ -17,7 +17,7 @@ object OrderLineItemDiscountNs extends js.Object {
   @js.native
   object ScopeEnum extends js.Object {
     @js.native
-    sealed trait LINEITEM
+    sealed trait LINE_ITEM
       extends squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.ScopeEnum
     
     @js.native
@@ -25,12 +25,12 @@ object OrderLineItemDiscountNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.ScopeEnum
     
     @js.native
-    sealed trait OTHERDISCOUNTSCOPE
+    sealed trait OTHER_DISCOUNT_SCOPE
       extends squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.ScopeEnum
     
-    /* "LINE_ITEM" */ val LINEITEM: LINEITEM with java.lang.String = js.native
+    /* "LINE_ITEM" */ val LINE_ITEM: LINE_ITEM with java.lang.String = js.native
     /* "ORDER" */ val ORDER: ORDER with java.lang.String = js.native
-    /* "OTHER_DISCOUNT_SCOPE" */ val OTHERDISCOUNTSCOPE: OTHERDISCOUNTSCOPE with java.lang.String = js.native
+    /* "OTHER_DISCOUNT_SCOPE" */ val OTHER_DISCOUNT_SCOPE: OTHER_DISCOUNT_SCOPE with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.ScopeEnum with java.lang.String
@@ -40,30 +40,30 @@ object OrderLineItemDiscountNs extends js.Object {
   @js.native
   object TypeEnum extends js.Object {
     @js.native
-    sealed trait FIXEDAMOUNT
+    sealed trait FIXED_AMOUNT
       extends squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.TypeEnum
     
     @js.native
-    sealed trait FIXEDPERCENTAGE
+    sealed trait FIXED_PERCENTAGE
       extends squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.TypeEnum
     
     @js.native
-    sealed trait UNKNOWNDISCOUNT
+    sealed trait UNKNOWN_DISCOUNT
       extends squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.TypeEnum
     
     @js.native
-    sealed trait VARIABLEAMOUNT
+    sealed trait VARIABLE_AMOUNT
       extends squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.TypeEnum
     
     @js.native
-    sealed trait VARIABLEPERCENTAGE
+    sealed trait VARIABLE_PERCENTAGE
       extends squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.TypeEnum
     
-    /* "FIXED_AMOUNT" */ val FIXEDAMOUNT: FIXEDAMOUNT with java.lang.String = js.native
-    /* "FIXED_PERCENTAGE" */ val FIXEDPERCENTAGE: FIXEDPERCENTAGE with java.lang.String = js.native
-    /* "UNKNOWN_DISCOUNT" */ val UNKNOWNDISCOUNT: UNKNOWNDISCOUNT with java.lang.String = js.native
-    /* "VARIABLE_AMOUNT" */ val VARIABLEAMOUNT: VARIABLEAMOUNT with java.lang.String = js.native
-    /* "VARIABLE_PERCENTAGE" */ val VARIABLEPERCENTAGE: VARIABLEPERCENTAGE with java.lang.String = js.native
+    /* "FIXED_AMOUNT" */ val FIXED_AMOUNT: FIXED_AMOUNT with java.lang.String = js.native
+    /* "FIXED_PERCENTAGE" */ val FIXED_PERCENTAGE: FIXED_PERCENTAGE with java.lang.String = js.native
+    /* "UNKNOWN_DISCOUNT" */ val UNKNOWN_DISCOUNT: UNKNOWN_DISCOUNT with java.lang.String = js.native
+    /* "VARIABLE_AMOUNT" */ val VARIABLE_AMOUNT: VARIABLE_AMOUNT with java.lang.String = js.native
+    /* "VARIABLE_PERCENTAGE" */ val VARIABLE_PERCENTAGE: VARIABLE_PERCENTAGE with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.TypeEnum with java.lang.String

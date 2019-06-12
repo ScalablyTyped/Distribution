@@ -39,7 +39,7 @@ trait Mail
   def get(key: java.lang.String): js.Any = js.native
   def getVersionString(): java.lang.String = js.native
   @JSName("get")
-  def get_oauth2_provision_cb(key: nodemailerLib.nodemailerLibStrings.oauth2_provision_cb): js.Function3[
+  def get_oauth2provisioncb(key: nodemailerLib.nodemailerLibStrings.oauth2_provision_cb): js.Function3[
     /* user */ java.lang.String, 
     /* renew */ scala.Boolean, 
     /* callback */ js.Function3[
@@ -51,7 +51,7 @@ trait Mail
     scala.Unit
   ] = js.native
   @JSName("get")
-  def get_proxy_handler_http(key: nodemailerLib.nodemailerLibStrings.proxy_handler_http): js.Function3[
+  def get_proxyhandlerhttp(key: nodemailerLib.nodemailerLibStrings.proxy_handler_http): js.Function3[
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
@@ -62,7 +62,7 @@ trait Mail
     scala.Unit
   ] = js.native
   @JSName("get")
-  def get_proxy_handler_https(key: nodemailerLib.nodemailerLibStrings.proxy_handler_https): js.Function3[
+  def get_proxyhandlerhttps(key: nodemailerLib.nodemailerLibStrings.proxy_handler_https): js.Function3[
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
@@ -73,7 +73,7 @@ trait Mail
     scala.Unit
   ] = js.native
   @JSName("get")
-  def get_proxy_handler_socks(key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks): js.Function3[
+  def get_proxyhandlersocks(key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks): js.Function3[
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
@@ -84,7 +84,7 @@ trait Mail
     scala.Unit
   ] = js.native
   @JSName("get")
-  def get_proxy_handler_socks4(key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4): js.Function3[
+  def get_proxyhandlersocks4(key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4): js.Function3[
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
@@ -95,7 +95,7 @@ trait Mail
     scala.Unit
   ] = js.native
   @JSName("get")
-  def get_proxy_handler_socks4a(key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4a): js.Function3[
+  def get_proxyhandlersocks4a(key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4a): js.Function3[
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
@@ -106,7 +106,7 @@ trait Mail
     scala.Unit
   ] = js.native
   @JSName("get")
-  def get_proxy_handler_socks5(key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks5): js.Function3[
+  def get_proxyhandlersocks5(key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks5): js.Function3[
     /* proxy */ nodeLib.urlMod.Url, 
     /* options */ nodemailerLib.nodemailerMod.TransportOptions, 
     /* callback */ js.Function2[
@@ -184,7 +184,7 @@ trait Mail
   ): scala.Unit = js.native
   def set(key: java.lang.String, value: js.Any): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
-  def set_oauth2_provision_cb(
+  def set_oauth2provisioncb(
     key: nodemailerLib.nodemailerLibStrings.oauth2_provision_cb,
     value: js.Function3[
       /* user */ java.lang.String, 
@@ -199,7 +199,7 @@ trait Mail
     ]
   ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
-  def set_proxy_handler_http(
+  def set_proxyhandlerhttp(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_http,
     value: js.Function3[
       /* proxy */ nodeLib.urlMod.Url, 
@@ -213,7 +213,7 @@ trait Mail
     ]
   ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
-  def set_proxy_handler_https(
+  def set_proxyhandlerhttps(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_https,
     value: js.Function3[
       /* proxy */ nodeLib.urlMod.Url, 
@@ -227,7 +227,7 @@ trait Mail
     ]
   ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
-  def set_proxy_handler_socks(
+  def set_proxyhandlersocks(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks,
     value: js.Function3[
       /* proxy */ nodeLib.urlMod.Url, 
@@ -241,7 +241,7 @@ trait Mail
     ]
   ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
-  def set_proxy_handler_socks4(
+  def set_proxyhandlersocks4(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4,
     value: js.Function3[
       /* proxy */ nodeLib.urlMod.Url, 
@@ -255,7 +255,7 @@ trait Mail
     ]
   ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
-  def set_proxy_handler_socks4a(
+  def set_proxyhandlersocks4a(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks4a,
     value: js.Function3[
       /* proxy */ nodeLib.urlMod.Url, 
@@ -269,7 +269,7 @@ trait Mail
     ]
   ): stdLib.Map[java.lang.String, _] = js.native
   @JSName("set")
-  def set_proxy_handler_socks5(
+  def set_proxyhandlersocks5(
     key: nodemailerLib.nodemailerLibStrings.proxy_handler_socks5,
     value: js.Function3[
       /* proxy */ nodeLib.urlMod.Url, 
@@ -287,7 +287,8 @@ trait Mail
   def use(step: java.lang.String, plugin: PluginFunction): this.type = js.native
   def verify(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
   /** Verifies SMTP configuration */
-  def verify(
+  @JSName("verify")
+  def verify_true(
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       nodemailerLib.nodemailerLibNumbers.`true`, 

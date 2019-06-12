@@ -14,6 +14,8 @@ trait FunctionDeclaration
      with _HasJSDoc {
   @JSName("body")
   var body_FunctionDeclaration: js.UndefOr[FunctionBody] = js.native
+  @JSName("kind")
+  var kind_FunctionDeclaration: typescriptLib.typescriptMod.SyntaxKind.FunctionDeclaration = js.native
   @JSName("name")
   var name_FunctionDeclaration: js.UndefOr[Identifier] = js.native
 }

@@ -20,9 +20,9 @@ trait PowerSaveBlocker extends EventEmitter {
     * request. After that, prevent-app-suspension is used.
     */
   @JSName("start")
-  def `start_prevent-app-suspension`(`type`: electronLib.electronLibStrings.`prevent-app-suspension`): scala.Double = js.native
+  def start_preventappsuspension(`type`: electronLib.electronLibStrings.`prevent-app-suspension`): scala.Double = js.native
   @JSName("start")
-  def `start_prevent-display-sleep`(`type`: electronLib.electronLibStrings.`prevent-display-sleep`): scala.Double = js.native
+  def start_preventdisplaysleep(`type`: electronLib.electronLibStrings.`prevent-display-sleep`): scala.Double = js.native
   /**
     * Stops the specified power save blocker.
     */

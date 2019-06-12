@@ -45,7 +45,7 @@ class Tray protected ()
     * @param listener {Function} The callback that handles the `click` event.
     */
   @JSName("on")
-  def `on_click `(event: nwDotJsLib.nwDotJsLibStrings.`click `, listener: js.Function0[_]): this.type = js.native
+  def on_click(event: nwDotJsLib.nwDotJsLibStrings.`click `, listener: js.Function0[_]): this.type = js.native
   /**
     * Remove the tray.
     */

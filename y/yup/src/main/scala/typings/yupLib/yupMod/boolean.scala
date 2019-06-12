@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("yup", "boolean")
 @js.native
-class boolean () extends BooleanSchema
+class boolean ()
+  extends BooleanSchema[scala.Boolean]
 

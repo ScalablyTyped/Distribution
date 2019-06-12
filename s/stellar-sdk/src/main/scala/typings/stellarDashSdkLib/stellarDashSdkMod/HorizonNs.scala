@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-sdk", "Horizon")
 @js.native
 object HorizonNs extends js.Object {
-  trait AccountMergeOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait AccountMergeOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.accountMerge, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.accountMerge
+        ] {
     var into: java.lang.String
   }
   
@@ -39,7 +43,11 @@ object HorizonNs extends js.Object {
     var med_threshold: scala.Double
   }
   
-  trait AllowTrustOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait AllowTrustOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.allowTrust, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.allowTrust
+        ] {
     var asset_code: java.lang.String
     var asset_issuer: java.lang.String
     var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType
@@ -80,11 +88,19 @@ object HorizonNs extends js.Object {
       */ stellarDashSdkLib.stellarDashSdkLibStrings.BaseResponse with js.Any
   }
   
-  trait BumpSequenceOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait BumpSequenceOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.bumpSequence, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.bumpSequence
+        ] {
     var bump_to: java.lang.String
   }
   
-  trait ChangeTrustOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait ChangeTrustOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.changeTrust, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.changeTrust
+        ] {
     var asset_code: java.lang.String
     var asset_issuer: java.lang.String
     var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12
@@ -93,7 +109,11 @@ object HorizonNs extends js.Object {
     var trustor: java.lang.String
   }
   
-  trait CreateAccountOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait CreateAccountOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.createAccount, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.createAccount
+        ] {
     var account: java.lang.String
     var funder: java.lang.String
     var starting_balance: java.lang.String
@@ -104,12 +124,20 @@ object HorizonNs extends js.Object {
     var auth_revocable: scala.Boolean
   }
   
-  trait ManageDataOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait ManageDataOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.manageData, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.manageData
+        ] {
     var name: java.lang.String
     var value: nodeLib.Buffer
   }
   
-  trait ManageOfferOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait ManageOfferOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.manageOffer, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.manageOffer
+        ] {
     var amount: java.lang.String
     var buying_asset_code: js.UndefOr[java.lang.String] = js.undefined
     var buying_asset_issuer: js.UndefOr[java.lang.String] = js.undefined
@@ -128,7 +156,11 @@ object HorizonNs extends js.Object {
   @js.native
   sealed trait OperationResponseTypeI extends js.Object
   
-  trait PassiveOfferOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait PassiveOfferOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.createPassiveOffer, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.createPassiveOffer
+        ] {
     var amount: java.lang.String
     var buying_asset_code: js.UndefOr[java.lang.String] = js.undefined
     var buying_asset_issuer: js.UndefOr[java.lang.String] = js.undefined
@@ -141,7 +173,11 @@ object HorizonNs extends js.Object {
     var selling_asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType
   }
   
-  trait PathPaymentOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait PathPaymentOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.pathPayment, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.pathPayment
+        ] {
     var amount: java.lang.String
     var asset_code: js.UndefOr[java.lang.String] = js.undefined
     var asset_issuer: js.UndefOr[java.lang.String] = js.undefined
@@ -155,7 +191,11 @@ object HorizonNs extends js.Object {
     var to: java.lang.String
   }
   
-  trait PaymentOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait PaymentOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.payment, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.payment
+        ] {
     var amount: java.lang.String
     var asset_code: js.UndefOr[java.lang.String] = js.undefined
     var asset_issuer: js.UndefOr[java.lang.String] = js.undefined
@@ -179,7 +219,11 @@ object HorizonNs extends js.Object {
     var templated: js.UndefOr[scala.Boolean] = js.undefined
   }
   
-  trait SetOptionsOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {
+  trait SetOptionsOperationResponse
+    extends BaseOperationResponse[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.setOptions, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.setOptions
+        ] {
     var clear_flags: js.Array[
         stellarDashSdkLib.stellarDashSdkLibNumbers.`1` | stellarDashSdkLib.stellarDashSdkLibNumbers.`2`
       ]
@@ -362,7 +406,10 @@ object HorizonNs extends js.Object {
   type BalanceLine[T /* <: stellarDashBaseLib.stellarDashBaseMod.AssetType */] = BalanceLineNative | (BalanceLineAsset[
     T | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4
   ])
-  type InflationOperationResponse = BaseOperationResponse[OperationResponseType, OperationResponseTypeI]
+  type InflationOperationResponse = BaseOperationResponse[
+    stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.inflation, 
+    stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.inflation
+  ]
   type TransactionResponseCollection = ResponseCollection[TransactionResponse]
 }
 

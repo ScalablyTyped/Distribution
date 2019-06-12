@@ -23,15 +23,15 @@ class Rule () extends ChainedMap[Module] {
   def test(value: js.Array[webpackLib.webpackMod.Condition]): this.type = js.native
   def test(value: webpackLib.webpackMod.Condition): this.type = js.native
   @JSName("type")
-  def `type_javascript/auto`(value: webpackDashChainLib.webpackDashChainLibStrings.`javascript/auto`): this.type = js.native
+  def type_javascriptauto(value: webpackDashChainLib.webpackDashChainLibStrings.`javascript/auto`): this.type = js.native
   @JSName("type")
-  def `type_javascript/dynamic`(value: webpackDashChainLib.webpackDashChainLibStrings.`javascript/dynamic`): this.type = js.native
+  def type_javascriptdynamic(value: webpackDashChainLib.webpackDashChainLibStrings.`javascript/dynamic`): this.type = js.native
   @JSName("type")
-  def `type_javascript/esm`(value: webpackDashChainLib.webpackDashChainLibStrings.`javascript/esm`): this.type = js.native
+  def type_javascriptesm(value: webpackDashChainLib.webpackDashChainLibStrings.`javascript/esm`): this.type = js.native
   @JSName("type")
   def type_json(value: webpackDashChainLib.webpackDashChainLibStrings.json): this.type = js.native
   @JSName("type")
-  def `type_webassembly/experimental`(value: webpackDashChainLib.webpackDashChainLibStrings.`webassembly/experimental`): this.type = js.native
+  def type_webassemblyexperimental(value: webpackDashChainLib.webpackDashChainLibStrings.`webassembly/experimental`): this.type = js.native
   def use(name: java.lang.String): Use[Rule] = js.native
 }
 

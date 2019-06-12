@@ -157,7 +157,7 @@ trait DocumentEvent extends js.Object {
   @JSName("createEvent")
   def createEvent_VRDisplayEvent(eventInterface: stdLib.stdLibStrings.VRDisplayEvent): VRDisplayEvent = js.native
   @JSName("createEvent")
-  def `createEvent_VRDisplayEvent `(eventInterface: stdLib.stdLibStrings.`VRDisplayEvent `): VRDisplayEvent = js.native
+  def createEvent_VRDisplayEvent(eventInterface: stdLib.stdLibStrings.`VRDisplayEvent `): VRDisplayEvent = js.native
   @JSName("createEvent")
   def createEvent_WebGLContextEvent(eventInterface: stdLib.stdLibStrings.WebGLContextEvent): WebGLContextEvent = js.native
   @JSName("createEvent")

@@ -149,25 +149,6 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     */
   @JSName("by")
   def by_Function1(field: java.lang.String): js.Function1[/* value */ js.Any, js.UndefOr[E]] = js.native
-  def calculateRange(op: lokijsLib.lokijsLibStrings.DOLLARaeq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
-  def calculateRange(op: lokijsLib.lokijsLibStrings.DOLLARbetween, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
-  def calculateRange(op: lokijsLib.lokijsLibStrings.DOLLARdteq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
-  /**
-    * calculateRange() - Binary Search utility method to find range/segment of values matching criteria.
-    *    this is used for collection.find() and first find filter of resultset/dynview
-    *    slightly different than get() binary search in that get() hones in on 1 value,
-    *    but we have to hone in on many (range)
-    * @param op - operation, such as $eq
-    * @param prop - name of property to calculate range for
-    * @param val - value to use for range calculation.
-    * @returns [start, end] index array positions
-    */
-  def calculateRange(op: lokijsLib.lokijsLibStrings.DOLLAReq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
-  def calculateRange(op: lokijsLib.lokijsLibStrings.DOLLARgte, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
-  def calculateRange(op: lokijsLib.lokijsLibStrings.DOLLARgt, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
-  def calculateRange(op: lokijsLib.lokijsLibStrings.DOLLARin, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
-  def calculateRange(op: lokijsLib.lokijsLibStrings.DOLLARlte, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
-  def calculateRange(op: lokijsLib.lokijsLibStrings.DOLLARlt, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
   /**
     * Internal method used for indexed $between.  Given a prop (index name), and a value
     * (which may or may not yet exist) this will find the final position of that upper range value.
@@ -189,6 +170,34 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     */
   def calculateRangeStart(prop: java.lang.String, `val`: js.Any): scala.Double = js.native
   def calculateRangeStart(prop: java.lang.String, `val`: js.Any, adaptive: scala.Boolean): scala.Double = js.native
+  @JSName("calculateRange")
+  def calculateRange_aeq(op: lokijsLib.lokijsLibStrings.DOLLARaeq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
+  @JSName("calculateRange")
+  def calculateRange_between(op: lokijsLib.lokijsLibStrings.DOLLARbetween, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
+  @JSName("calculateRange")
+  def calculateRange_dteq(op: lokijsLib.lokijsLibStrings.DOLLARdteq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
+  /**
+    * calculateRange() - Binary Search utility method to find range/segment of values matching criteria.
+    *    this is used for collection.find() and first find filter of resultset/dynview
+    *    slightly different than get() binary search in that get() hones in on 1 value,
+    *    but we have to hone in on many (range)
+    * @param op - operation, such as $eq
+    * @param prop - name of property to calculate range for
+    * @param val - value to use for range calculation.
+    * @returns [start, end] index array positions
+    */
+  @JSName("calculateRange")
+  def calculateRange_eq(op: lokijsLib.lokijsLibStrings.DOLLAReq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
+  @JSName("calculateRange")
+  def calculateRange_gt(op: lokijsLib.lokijsLibStrings.DOLLARgt, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
+  @JSName("calculateRange")
+  def calculateRange_gte(op: lokijsLib.lokijsLibStrings.DOLLARgte, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
+  @JSName("calculateRange")
+  def calculateRange_in(op: lokijsLib.lokijsLibStrings.DOLLARin, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
+  @JSName("calculateRange")
+  def calculateRange_lt(op: lokijsLib.lokijsLibStrings.DOLLARlt, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
+  @JSName("calculateRange")
+  def calculateRange_lte(op: lokijsLib.lokijsLibStrings.DOLLARlte, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native
   /**
     * Chain method, used for beginning a series of chained find() and/or view() operations
     * on a collection.
@@ -536,7 +545,6 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
   def flagBinaryIndexesDirty(): scala.Unit = js.native
   def flushChanges(): scala.Unit = js.native
   def get(id: scala.Double): (E with LokiObj) | (js.Tuple2[E with LokiObj, scala.Double]) | scala.Null = js.native
-  def get(id: scala.Double, returnPosition: lokijsLib.lokijsLibNumbers.`true`): js.Tuple2[E with LokiObj, scala.Double] = js.native
   def get(id: scala.Double, returnPosition: scala.Boolean): (E with LokiObj) | (js.Tuple2[E with LokiObj, scala.Double]) | scala.Null = js.native
   /**
     * Perform binary range lookup for the data[dataPosition][binaryIndexName] property value
@@ -579,6 +587,8 @@ class Collection[E /* <: js.Object */] protected () extends LokiEventEmitter {
     */
   @JSName("get")
   def `get_<intersection>`(id: scala.Double): E with LokiObj = js.native
+  @JSName("get")
+  def get_true(id: scala.Double, returnPosition: lokijsLib.lokijsLibNumbers.`true`): js.Tuple2[E with LokiObj, scala.Double] = js.native
   /**
     * Adds object(s) to collection, ensure object(s) have meta properties, clone it if necessary, etc.
     * @param doc - the document (or array of documents) to be inserted

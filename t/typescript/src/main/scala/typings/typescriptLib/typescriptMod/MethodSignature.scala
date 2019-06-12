@@ -12,6 +12,8 @@ trait MethodSignature
      with SignatureDeclaration
      with _HasJSDoc {
   var _typeElementBrand: js.Any = js.native
+  @JSName("kind")
+  var kind_MethodSignature: typescriptLib.typescriptMod.SyntaxKind.MethodSignature = js.native
   @JSName("name")
   var name_MethodSignature: PropertyName = js.native
   @JSName("parent")

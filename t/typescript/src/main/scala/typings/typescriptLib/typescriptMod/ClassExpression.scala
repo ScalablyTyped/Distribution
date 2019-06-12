@@ -11,6 +11,8 @@ trait ClassExpression
   extends PrimaryExpression
      with ClassLikeDeclaration {
   var heritageClauses: js.UndefOr[NodeArray[HeritageClause]] = js.native
+  @JSName("kind")
+  var kind_ClassExpression: typescriptLib.typescriptMod.SyntaxKind.ClassExpression = js.native
   var members: NodeArray[ClassElement] = js.native
   var name: js.UndefOr[Identifier] = js.native
   var typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native

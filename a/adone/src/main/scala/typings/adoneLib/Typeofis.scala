@@ -149,11 +149,16 @@ trait Typeofis extends js.Object {
   def url(obj: js.Any, options: adoneLib.adoneNs.isNs.INs.FQDNOptions with Anon_AllowProtocolRelativeUrls): /* is string */ scala.Boolean = js.native
   def utf8(obj: nodeLib.Buffer): scala.Boolean = js.native
   def uuid(obj: js.Any): /* is string */ scala.Boolean = js.native
-  def uuid(obj: js.Any, version: adoneLib.adoneLibNumbers.`1`): /* is string */ scala.Boolean = js.native
-  def uuid(obj: js.Any, version: adoneLib.adoneLibNumbers.`2`): /* is string */ scala.Boolean = js.native
-  def uuid(obj: js.Any, version: adoneLib.adoneLibNumbers.`3`): /* is string */ scala.Boolean = js.native
-  def uuid(obj: js.Any, version: adoneLib.adoneLibNumbers.`4`): /* is string */ scala.Boolean = js.native
-  def uuid(obj: js.Any, version: adoneLib.adoneLibNumbers.`5`): /* is string */ scala.Boolean = js.native
+  @JSName("uuid")
+  def uuid_1(obj: js.Any, version: adoneLib.adoneLibNumbers.`1`): /* is string */ scala.Boolean = js.native
+  @JSName("uuid")
+  def uuid_2(obj: js.Any, version: adoneLib.adoneLibNumbers.`2`): /* is string */ scala.Boolean = js.native
+  @JSName("uuid")
+  def uuid_3(obj: js.Any, version: adoneLib.adoneLibNumbers.`3`): /* is string */ scala.Boolean = js.native
+  @JSName("uuid")
+  def uuid_4(obj: js.Any, version: adoneLib.adoneLibNumbers.`4`): /* is string */ scala.Boolean = js.native
+  @JSName("uuid")
+  def uuid_5(obj: js.Any, version: adoneLib.adoneLibNumbers.`5`): /* is string */ scala.Boolean = js.native
   @JSName("uuid")
   def uuid_all(obj: js.Any, version: adoneLib.adoneLibStrings.all): /* is string */ scala.Boolean = js.native
   def validDate(str: java.lang.String): scala.Boolean = js.native

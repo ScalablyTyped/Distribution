@@ -18,7 +18,7 @@ object InventoryChangeNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.InventoryChangeNs.TypeEnum
     
     @js.native
-    sealed trait PHYSICALCOUNT
+    sealed trait PHYSICAL_COUNT
       extends squareDashConnectLib.squareDashConnectMod.InventoryChangeNs.TypeEnum
     
     @js.native
@@ -26,7 +26,7 @@ object InventoryChangeNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.InventoryChangeNs.TypeEnum
     
     /* "ADJUSTMENT" */ val ADJUSTMENT: ADJUSTMENT with java.lang.String = js.native
-    /* "PHYSICAL_COUNT" */ val PHYSICALCOUNT: PHYSICALCOUNT with java.lang.String = js.native
+    /* "PHYSICAL_COUNT" */ val PHYSICAL_COUNT: PHYSICAL_COUNT with java.lang.String = js.native
     /* "TRANSFER" */ val TRANSFER: TRANSFER with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[

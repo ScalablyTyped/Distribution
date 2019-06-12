@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait IdentifierTypePredicate
   extends TypePredicateBase
      with TypePredicate {
+  @JSName("kind")
+  var kind_IdentifierTypePredicate: typescriptLib.typescriptMod.TypePredicateKind.Identifier
   var parameterIndex: scala.Double
   var parameterName: java.lang.String
 }
@@ -15,7 +17,7 @@ trait IdentifierTypePredicate
 object IdentifierTypePredicate {
   @scala.inline
   def apply(
-    kind: TypePredicateKind,
+    kind: typescriptLib.typescriptMod.TypePredicateKind.Identifier,
     parameterIndex: scala.Double,
     parameterName: java.lang.String,
     `type`: Type

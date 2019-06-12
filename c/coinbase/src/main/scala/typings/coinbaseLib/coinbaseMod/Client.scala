@@ -49,9 +49,7 @@ class Client protected () extends js.Object {
     * representation in ISO 4217 may use a custom code (e.g. BTC).
     * Scope: none
     */
-  def getCurrencies(
-    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ js.Array[Currency], scala.Unit]
-  ): scala.Unit = js.native
+  def getCurrencies(cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Currencies, scala.Unit]): scala.Unit = js.native
   /**
     * Get the current user. To get user’s email or private information, use permissions wallet:user:email and wallet:user:read. If current
     * request has a wallet:transactions:send scope, then the response will contain a boolean sends_disabled field that indicates

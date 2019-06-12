@@ -11,7 +11,7 @@ trait ErrorExecutionEvent
   var data: js.Any
   var src: java.lang.String
   @JSName("type")
-  var type_ErrorExecutionEvent: ActionTypes
+  var type_ErrorExecutionEvent: xstateLib.libTypesMod.ActionTypes.ErrorExecution
 }
 
 object ErrorExecutionEvent {
@@ -19,7 +19,7 @@ object ErrorExecutionEvent {
   def apply(
     data: js.Any,
     src: java.lang.String,
-    `type`: ActionTypes,
+    `type`: xstateLib.libTypesMod.ActionTypes.ErrorExecution,
     id: java.lang.String | scala.Double = null
   ): ErrorExecutionEvent = {
     val __obj = js.Dynamic.literal(data = data, src = src)

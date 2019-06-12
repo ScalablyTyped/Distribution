@@ -173,29 +173,25 @@ trait Datetime
     b: DatetimeInput,
     granularity: adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.StartOf
   ): scala.Boolean = js.native
-  @JSName("isBetween")
-  def `isBetween_()`(
+  def isBetween(
     a: DatetimeInput,
     b: DatetimeInput,
     granularity: adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.StartOf,
     inclusivity: adoneLib.adoneLibStrings.`()`
   ): scala.Boolean = js.native
-  @JSName("isBetween")
-  def `isBetween_(]`(
+  def isBetween(
     a: DatetimeInput,
     b: DatetimeInput,
     granularity: adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.StartOf,
     inclusivity: adoneLib.adoneLibStrings.`(]`
   ): scala.Boolean = js.native
-  @JSName("isBetween")
-  def `isBetween_[)`(
+  def isBetween(
     a: DatetimeInput,
     b: DatetimeInput,
     granularity: adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.StartOf,
     inclusivity: adoneLib.adoneLibStrings.`[)`
   ): scala.Boolean = js.native
-  @JSName("isBetween")
-  def `isBetween_[]`(
+  def isBetween(
     a: DatetimeInput,
     b: DatetimeInput,
     granularity: adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.StartOf,

@@ -1,7 +1,7 @@
 
 # Scala.js typings for uifabric__styling
 
-Typings are for version 6.48.0
+Typings are for version 6.49.0
 
 ## Library description:
 Defines the core Office UI Fabric styles through a JavaScript interface.

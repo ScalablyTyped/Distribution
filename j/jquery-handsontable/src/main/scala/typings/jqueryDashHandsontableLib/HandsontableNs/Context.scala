@@ -14,15 +14,15 @@ trait Context extends js.Object {
     * Insert new column(s) before the column at given index. If index is null or undefined, the new column will be added after the current last column. Default amount equals 1.
     */
   @JSName("alter")
-  def alter_insert_col(`type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.insert_col, index: scala.Double): scala.Unit = js.native
+  def alter_insertcol(`type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.insert_col, index: scala.Double): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(
+  def alter_insertcol(
     `type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.insert_col,
     index: scala.Double,
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(
+  def alter_insertcol(
     `type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.insert_col,
     index: scala.Double,
     amount: scala.Double,
@@ -32,15 +32,15 @@ trait Context extends js.Object {
     * Insert new row(s) above the row at given index. If index is null or undefined, the new row will be added after the current last row. Default amount equals 1.
     */
   @JSName("alter")
-  def alter_insert_row(`type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.insert_row, index: scala.Double): scala.Unit = js.native
+  def alter_insertrow(`type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.insert_row, index: scala.Double): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(
+  def alter_insertrow(
     `type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.insert_row,
     index: scala.Double,
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(
+  def alter_insertrow(
     `type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.insert_row,
     index: scala.Double,
     amount: scala.Double,
@@ -50,15 +50,15 @@ trait Context extends js.Object {
     * Remove the column(s) at given index. Default amount equals 1.
     */
   @JSName("alter")
-  def alter_remove_col(`type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.remove_col, index: scala.Double): scala.Unit = js.native
+  def alter_removecol(`type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.remove_col, index: scala.Double): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(
+  def alter_removecol(
     `type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.remove_col,
     index: scala.Double,
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(
+  def alter_removecol(
     `type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.remove_col,
     index: scala.Double,
     amount: scala.Double,
@@ -68,15 +68,15 @@ trait Context extends js.Object {
     * Remove the row(s) at given index. Default amount equals 1.
     */
   @JSName("alter")
-  def alter_remove_row(`type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.remove_row, index: scala.Double): scala.Unit = js.native
+  def alter_removerow(`type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.remove_row, index: scala.Double): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(
+  def alter_removerow(
     `type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.remove_row,
     index: scala.Double,
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(
+  def alter_removerow(
     `type`: jqueryDashHandsontableLib.jqueryDashHandsontableLibStrings.remove_row,
     index: scala.Double,
     amount: scala.Double,

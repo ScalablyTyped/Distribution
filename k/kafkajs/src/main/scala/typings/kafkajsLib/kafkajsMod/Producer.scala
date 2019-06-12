@@ -26,12 +26,12 @@ trait Producer extends js.Object {
     cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
   ): js.Function0[this.type] = js.native
   @JSName("on")
-  def on_producerrequest_queue_size(
+  def on_producerrequestqueuesize(
     event: kafkajsLib.kafkajsLibStrings.producerDOTrequest_queue_size,
     cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
   ): js.Function0[this.type] = js.native
   @JSName("on")
-  def on_producerrequest_timeout(
+  def on_producerrequesttimeout(
     event: kafkajsLib.kafkajsLibStrings.producerDOTrequest_timeout,
     cb: js.Function1[/* e */ InstrumentationEvent, scala.Unit]
   ): js.Function0[this.type] = js.native

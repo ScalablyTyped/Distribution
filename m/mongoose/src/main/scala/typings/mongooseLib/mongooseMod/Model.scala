@@ -120,6 +120,13 @@ org.scalablytyped.runtime.Instantiable0[T]
     * @param schema discriminator model schema
     */
   def discriminator[U /* <: Document */](name: java.lang.String, schema: Schema[_]): Model[U, js.Object] = js.native
+  /**
+    * Adds a discriminator type.
+    * @param name discriminator model name
+    * @param schema discriminator model schema
+    */
+  @JSName("discriminator")
+  def discriminator_UDocumentMModelM[U /* <: Document */, M /* <: Model[U, js.Object] */](name: java.lang.String, schema: Schema[_]): M = js.native
   /** Creates a Query for a distinct operation. Passing a callback immediately executes the query. */
   def distinct(field: java.lang.String): Query[js.Array[_]] with QueryHelpers = js.native
   def distinct(

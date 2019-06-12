@@ -201,6 +201,7 @@ class Account () extends Resource {
     * Scope: wallet:transactions:read
     */
   def getTransactions(
+    opts: js.Object,
     cb: js.Function2[
       /* error */ stdLib.Error | scala.Null, 
       /* result */ js.Array[Transaction], 

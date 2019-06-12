@@ -10,7 +10,11 @@ trait Dom extends js.Object {
   var HTML_CHARACTERS: stdLib.RegExp = js.native
   def addClass(element: stdLib.HTMLElement, className: java.lang.String): scala.Unit = js.native
   def addClass(element: stdLib.HTMLElement, className: js.Array[_]): scala.Unit = js.native
-  def addEvent(element: stdLib.HTMLElement, event: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def addEvent(
+    element: stdLib.HTMLElement,
+    event: java.lang.String,
+    callback: js.Function1[/* event */ stdLib.Event, scala.Unit]
+  ): scala.Unit = js.native
   def clearTextSelection(): scala.Unit = js.native
   def clearTextSelection(rootWindow: stdLib.Window): scala.Unit = js.native
   def closest(element: stdLib.HTMLElement, nodes: js.Array[_]): stdLib.HTMLElement | scala.Unit = js.native

@@ -43,7 +43,7 @@ trait Screen
     * - (optional) screen {screen} screen object
     */
   @JSName("on")
-  def `on_displayAdded `(
+  def on_displayAdded(
     event: nwDotJsLib.nwDotJsLibStrings.`displayAdded `,
     listener: js.Function1[/* screen */ nwDotJsLib.NWJSUnderscoreHelpersNs.screen, _]
   ): this.type = js.native
@@ -67,7 +67,7 @@ trait Screen
     * - (optional) screen {screen} screen object
     */
   @JSName("on")
-  def `on_displayRemoved `(
+  def on_displayRemoved(
     event: nwDotJsLib.nwDotJsLibStrings.`displayRemoved `,
     listener: js.Function1[/* screen */ nwDotJsLib.NWJSUnderscoreHelpersNs.screen, _]
   ): this.type = js.native

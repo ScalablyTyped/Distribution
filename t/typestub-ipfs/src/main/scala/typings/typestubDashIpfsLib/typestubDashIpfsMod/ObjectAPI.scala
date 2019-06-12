@@ -23,7 +23,7 @@ trait ObjectAPI extends js.Object {
   def `new`(): js.Promise[DAGNode] = js.native
   def `new`(callback: Callback[DAGNode]): scala.Unit = js.native
   @JSName("new")
-  def `new_unixfs-dir`(template: typestubDashIpfsLib.typestubDashIpfsLibStrings.`unixfs-dir`, callback: Callback[DAGNode]): scala.Unit = js.native
+  def new_unixfsdir(template: typestubDashIpfsLib.typestubDashIpfsLibStrings.`unixfs-dir`, callback: Callback[DAGNode]): scala.Unit = js.native
   def put(obj: Obj): js.Promise[_] = js.native
   def put(obj: Obj, callback: Callback[_]): scala.Unit = js.native
   def put(obj: Obj, options: PutObjectOptions): js.Promise[_] = js.native

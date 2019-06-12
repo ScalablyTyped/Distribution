@@ -16,9 +16,8 @@ object distDashEsUtilsEmojiDashIndexEmojiDashIndexMod extends js.Object {
       ] = js.native
     /** Mapping of string to keyof emojis */
     var emoticons: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
+    def search(query: emojiDashMartLib.emojiDashMartLibStrings.Empty): scala.Null = js.native
     def search(query: java.lang.String): emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData | scala.Null = js.native
-    @JSName("search")
-    def search_(query: emojiDashMartLib.emojiDashMartLibStrings.Empty): scala.Null = js.native
   }
   
 }

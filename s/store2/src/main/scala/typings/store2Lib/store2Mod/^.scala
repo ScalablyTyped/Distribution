@@ -21,10 +21,12 @@ object ^ extends js.Object {
   def area(id: java.lang.String, area: Storage): StoreAPI = js.native
   def clear(): StoreAPI = js.native
   def clearAll(): StoreAPI = js.native
-  def each(
+  @JSName("each")
+  def each_false(
     callback: js.Function2[/* key */ js.Any, /* data */ js.Any, store2Lib.store2LibNumbers.`false` | _]
   ): StoreAPI = js.native
-  def each(
+  @JSName("each")
+  def each_false(
     callback: js.Function2[/* key */ js.Any, /* data */ js.Any, store2Lib.store2LibNumbers.`false` | _],
     value: js.Any
   ): StoreAPI = js.native
@@ -37,7 +39,8 @@ object ^ extends js.Object {
   def keys(): js.Array[java.lang.String] = js.native
   def keys(fillList: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def namespace(namespace: java.lang.String): StoreAPI = js.native
-  def namespace(namespace: java.lang.String, noSession: store2Lib.store2LibNumbers.`true`): StoreAPI = js.native
+  @JSName("namespace")
+  def namespace_true(namespace: java.lang.String, noSession: store2Lib.store2LibNumbers.`true`): StoreAPI = js.native
   def remove(key: js.Any): js.Any = js.native
   def set(key: js.Any, data: js.Any): js.Any = js.native
   def set(key: js.Any, data: js.Any, overwrite: scala.Boolean): js.Any = js.native

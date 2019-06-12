@@ -15,7 +15,7 @@ trait JQuery extends js.Object {
     * Sets cached HTML for path
     */
   @JSName("tab")
-  def `tab_cache add`(
+  def tab_cacheadd(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`cache add`,
     path: java.lang.String,
     html: java.lang.String
@@ -24,7 +24,7 @@ trait JQuery extends js.Object {
     * Returns cached HTML for path
     */
   @JSName("tab")
-  def `tab_cache read`(
+  def tab_cacheread(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`cache read`,
     path: java.lang.String
   ): java.lang.String | semanticDashUiDashTabLib.semanticDashUiDashTabLibNumbers.`false` = js.native
@@ -32,7 +32,7 @@ trait JQuery extends js.Object {
     * Removes cached HTML for path
     */
   @JSName("tab")
-  def `tab_cache remove`(
+  def tab_cacheremove(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`cache remove`,
     path: java.lang.String
   ): JQuery = js.native
@@ -45,7 +45,7 @@ trait JQuery extends js.Object {
     * Changes tab to path
     */
   @JSName("tab")
-  def `tab_change tab`(
+  def tab_changetab(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`change tab`,
     path: java.lang.String
   ): JQuery = js.native
@@ -55,17 +55,17 @@ trait JQuery extends js.Object {
     * Returns current path
     */
   @JSName("tab")
-  def `tab_get path`(behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`get path`): java.lang.String = js.native
+  def tab_getpath(behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`get path`): java.lang.String = js.native
   /**
     * Returns whether tab exists
     */
   @JSName("tab")
-  def `tab_is tab`(behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`is tab`): scala.Boolean = js.native
+  def tab_istab(behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`is tab`): scala.Boolean = js.native
   /**
     * Sets current path to state
     */
   @JSName("tab")
-  def `tab_set state`(
+  def tab_setstate(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`set state`,
     path: java.lang.String
   ): JQuery = js.native

@@ -85,7 +85,7 @@ abstract class Session protected ()
   def onRequestTimeout(): scala.Unit = js.native
   def onTransportError(): scala.Unit = js.native
   @JSName("on")
-  def `on_SessionDescriptionHandler-created`(
+  def on_SessionDescriptionHandlercreated(
     event: sipDotJsLib.sipDotJsLibStrings.`SessionDescriptionHandler-created`,
     listener: js.Function1[
       /* sessionDescriptionHandler */ sipDotJsLib.libSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler, 

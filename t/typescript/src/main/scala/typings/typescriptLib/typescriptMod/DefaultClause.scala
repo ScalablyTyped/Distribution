@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait DefaultClause
   extends Node
      with CaseOrDefaultClause {
+  @JSName("kind")
+  var kind_DefaultClause: typescriptLib.typescriptMod.SyntaxKind.DefaultClause = js.native
   @JSName("parent")
   var parent_DefaultClause: CaseBlock = js.native
   var statements: NodeArray[Statement] = js.native

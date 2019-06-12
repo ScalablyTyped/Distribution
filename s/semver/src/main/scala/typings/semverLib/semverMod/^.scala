@@ -207,114 +207,90 @@ object ^ extends js.Object {
   def neq(v1: SemVer, v2: SemVer): scala.Boolean = js.native
   def neq(v1: SemVer, v2: SemVer, optionsOrLoose: scala.Boolean): scala.Boolean = js.native
   def neq(v1: SemVer, v2: SemVer, optionsOrLoose: Options): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: java.lang.String, range: java.lang.String, hilo: semverLib.semverLibStrings.`<`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(
+  def outside(version: java.lang.String, range: java.lang.String, hilo: semverLib.semverLibStrings.`<`): scala.Boolean = js.native
+  def outside(
     version: java.lang.String,
     range: java.lang.String,
     hilo: semverLib.semverLibStrings.`<`,
     optionsOrLoose: scala.Boolean
   ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(
+  def outside(
     version: java.lang.String,
     range: java.lang.String,
     hilo: semverLib.semverLibStrings.`<`,
     optionsOrLoose: Options
   ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: java.lang.String, range: Range, hilo: semverLib.semverLibStrings.`<`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(
+  def outside(version: java.lang.String, range: java.lang.String, hilo: semverLib.semverLibStrings.`>`): scala.Boolean = js.native
+  def outside(
+    version: java.lang.String,
+    range: java.lang.String,
+    hilo: semverLib.semverLibStrings.`>`,
+    optionsOrLoose: scala.Boolean
+  ): scala.Boolean = js.native
+  def outside(
+    version: java.lang.String,
+    range: java.lang.String,
+    hilo: semverLib.semverLibStrings.`>`,
+    optionsOrLoose: Options
+  ): scala.Boolean = js.native
+  def outside(version: java.lang.String, range: Range, hilo: semverLib.semverLibStrings.`<`): scala.Boolean = js.native
+  def outside(
     version: java.lang.String,
     range: Range,
     hilo: semverLib.semverLibStrings.`<`,
     optionsOrLoose: scala.Boolean
   ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(
+  def outside(
     version: java.lang.String,
     range: Range,
     hilo: semverLib.semverLibStrings.`<`,
     optionsOrLoose: Options
   ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: SemVer, range: java.lang.String, hilo: semverLib.semverLibStrings.`<`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(
-    version: SemVer,
-    range: java.lang.String,
-    hilo: semverLib.semverLibStrings.`<`,
-    optionsOrLoose: scala.Boolean
-  ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(
-    version: SemVer,
-    range: java.lang.String,
-    hilo: semverLib.semverLibStrings.`<`,
-    optionsOrLoose: Options
-  ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`<`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`<`, optionsOrLoose: scala.Boolean): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_<`(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`<`, optionsOrLoose: Options): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: java.lang.String, range: java.lang.String, hilo: semverLib.semverLibStrings.`>`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(
-    version: java.lang.String,
-    range: java.lang.String,
-    hilo: semverLib.semverLibStrings.`>`,
-    optionsOrLoose: scala.Boolean
-  ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(
-    version: java.lang.String,
-    range: java.lang.String,
-    hilo: semverLib.semverLibStrings.`>`,
-    optionsOrLoose: Options
-  ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: java.lang.String, range: Range, hilo: semverLib.semverLibStrings.`>`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(
+  def outside(version: java.lang.String, range: Range, hilo: semverLib.semverLibStrings.`>`): scala.Boolean = js.native
+  def outside(
     version: java.lang.String,
     range: Range,
     hilo: semverLib.semverLibStrings.`>`,
     optionsOrLoose: scala.Boolean
   ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(
+  def outside(
     version: java.lang.String,
     range: Range,
     hilo: semverLib.semverLibStrings.`>`,
     optionsOrLoose: Options
   ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: SemVer, range: java.lang.String, hilo: semverLib.semverLibStrings.`>`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(
+  def outside(version: SemVer, range: java.lang.String, hilo: semverLib.semverLibStrings.`<`): scala.Boolean = js.native
+  def outside(
+    version: SemVer,
+    range: java.lang.String,
+    hilo: semverLib.semverLibStrings.`<`,
+    optionsOrLoose: scala.Boolean
+  ): scala.Boolean = js.native
+  def outside(
+    version: SemVer,
+    range: java.lang.String,
+    hilo: semverLib.semverLibStrings.`<`,
+    optionsOrLoose: Options
+  ): scala.Boolean = js.native
+  def outside(version: SemVer, range: java.lang.String, hilo: semverLib.semverLibStrings.`>`): scala.Boolean = js.native
+  def outside(
     version: SemVer,
     range: java.lang.String,
     hilo: semverLib.semverLibStrings.`>`,
     optionsOrLoose: scala.Boolean
   ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(
+  def outside(
     version: SemVer,
     range: java.lang.String,
     hilo: semverLib.semverLibStrings.`>`,
     optionsOrLoose: Options
   ): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`>`): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`>`, optionsOrLoose: scala.Boolean): scala.Boolean = js.native
-  @JSName("outside")
-  def `outside_>`(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`>`, optionsOrLoose: Options): scala.Boolean = js.native
+  def outside(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`<`): scala.Boolean = js.native
+  def outside(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`<`, optionsOrLoose: scala.Boolean): scala.Boolean = js.native
+  def outside(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`<`, optionsOrLoose: Options): scala.Boolean = js.native
+  def outside(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`>`): scala.Boolean = js.native
+  def outside(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`>`, optionsOrLoose: scala.Boolean): scala.Boolean = js.native
+  def outside(version: SemVer, range: Range, hilo: semverLib.semverLibStrings.`>`, optionsOrLoose: Options): scala.Boolean = js.native
   def parse(v: java.lang.String): SemVer | scala.Null = js.native
   def parse(v: java.lang.String, optionsOrLoose: scala.Boolean): SemVer | scala.Null = js.native
   def parse(v: java.lang.String, optionsOrLoose: Options): SemVer | scala.Null = js.native

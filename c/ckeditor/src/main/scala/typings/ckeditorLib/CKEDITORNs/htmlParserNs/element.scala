@@ -22,12 +22,15 @@ class element protected () extends node {
   def find(criteria: java.lang.String, recursive: scala.Boolean): js.Array[node] = js.native
   def find(criteria: js.Function1[/* el */ node, scala.Boolean]): js.Array[node] = js.native
   def find(criteria: js.Function1[/* el */ node, scala.Boolean], recursive: scala.Boolean): js.Array[node] = js.native
-  def forEach(callback: js.Function1[/* node */ node, scala.Unit | ckeditorLib.ckeditorLibNumbers.`false`]): scala.Unit = js.native
-  def forEach(
+  @JSName("forEach")
+  def forEach_false(callback: js.Function1[/* node */ node, scala.Unit | ckeditorLib.ckeditorLibNumbers.`false`]): scala.Unit = js.native
+  @JSName("forEach")
+  def forEach_false(
     callback: js.Function1[/* node */ node, scala.Unit | ckeditorLib.ckeditorLibNumbers.`false`],
     `type`: scala.Double
   ): scala.Unit = js.native
-  def forEach(
+  @JSName("forEach")
+  def forEach_false(
     callback: js.Function1[/* node */ node, scala.Unit | ckeditorLib.ckeditorLibNumbers.`false`],
     `type`: scala.Double,
     skipRoot: scala.Boolean

@@ -308,7 +308,8 @@ trait JQueryStatic extends js.Object {
     * @see \`{@link https://api.jquery.com/jQuery.each/ }\`
     * @since 1.0
     */
-  def each[T](
+  @JSName("each")
+  def each_false[T](
     array: stdLib.ArrayLike[T],
     callback: js.ThisFunction2[
       /* this */ T, 
@@ -327,7 +328,8 @@ trait JQueryStatic extends js.Object {
     * @see \`{@link https://api.jquery.com/jQuery.each/ }\`
     * @since 1.0
     */
-  def each[T, K /* <: java.lang.String */](
+  @JSName("each")
+  def each_false[T, K /* <: java.lang.String */](
     obj: T,
     callback: js.ThisFunction2[
       /* import warning: ImportType.apply Failed type conversion: T[K] */ /* this */ js.Any, 
@@ -355,30 +357,12 @@ trait JQueryStatic extends js.Object {
   /**
     * Merge the contents of two or more objects together into the first object.
     *
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    */
-  def extend(deep: cypressLib.cypressLibNumbers.`true`, target: js.Any, object1: js.Any, objects: js.Any*): js.Any = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    *
     * @param target An object that will receive the new properties if additional objects are passed in or that will
     *               extend the jQuery namespace if it is the sole argument.
     * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
     * @since 1.0
     */
   def extend(target: js.Any, object1: js.Any, objects: js.Any*): js.Any = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    *
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    */
-  def extend[T, U](deep: cypressLib.cypressLibNumbers.`true`, target: T, object1: U): T with U = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     *
@@ -391,30 +375,12 @@ trait JQueryStatic extends js.Object {
   /**
     * Merge the contents of two or more objects together into the first object.
     *
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    */
-  def extend[T, U, V](deep: cypressLib.cypressLibNumbers.`true`, target: T, object1: U, object2: V): T with U with V = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    *
     * @param target An object that will receive the new properties if additional objects are passed in or that will
     *               extend the jQuery namespace if it is the sole argument.
     * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
     * @since 1.0
     */
   def extend[T, U, V](target: T, object1: U, object2: V): T with U with V = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    *
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    */
-  def extend[T, U, V, W](deep: cypressLib.cypressLibNumbers.`true`, target: T, object1: U, object2: V, object3: W): T with U with V with W = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     *
@@ -427,45 +393,12 @@ trait JQueryStatic extends js.Object {
   /**
     * Merge the contents of two or more objects together into the first object.
     *
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    */
-  def extend[T, U, V, W, X](
-    deep: cypressLib.cypressLibNumbers.`true`,
-    target: T,
-    object1: U,
-    object2: V,
-    object3: W,
-    object4: X
-  ): T with U with V with W with X = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    *
     * @param target An object that will receive the new properties if additional objects are passed in or that will
     *               extend the jQuery namespace if it is the sole argument.
     * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
     * @since 1.0
     */
   def extend[T, U, V, W, X](target: T, object1: U, object2: V, object3: W, object4: X): T with U with V with W with X = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    *
-    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-    * @param target The object to extend. It will receive the new properties.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.1.4
-    */
-  def extend[T, U, V, W, X, Y](
-    deep: cypressLib.cypressLibNumbers.`true`,
-    target: T,
-    object1: U,
-    object2: V,
-    object3: W,
-    object4: X,
-    object5: Y
-  ): T with U with V with W with X with Y = js.native
   /**
     * Merge the contents of two or more objects together into the first object.
     *
@@ -478,12 +411,97 @@ trait JQueryStatic extends js.Object {
   /**
     * Merge the contents of two or more objects together into the first object.
     *
+    * @param target An object that will receive the new properties if additional objects are passed in or that will
+    *               extend the jQuery namespace if it is the sole argument.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.0
+    */
+  def extend[T, U, V, W, X, Y, Z](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T with U with V with W with X with Y with Z = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    *
     * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
     * @param target The object to extend. It will receive the new properties.
     * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
     * @since 1.1.4
     */
-  def extend[T, U, V, W, X, Y, Z](
+  @JSName("extend")
+  def extend_true(deep: cypressLib.cypressLibNumbers.`true`, target: js.Any, object1: js.Any, objects: js.Any*): js.Any = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    *
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    */
+  @JSName("extend")
+  def extend_true[T, U](deep: cypressLib.cypressLibNumbers.`true`, target: T, object1: U): T with U = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    *
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    */
+  @JSName("extend")
+  def extend_true[T, U, V](deep: cypressLib.cypressLibNumbers.`true`, target: T, object1: U, object2: V): T with U with V = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    *
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    */
+  @JSName("extend")
+  def extend_true[T, U, V, W](deep: cypressLib.cypressLibNumbers.`true`, target: T, object1: U, object2: V, object3: W): T with U with V with W = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    *
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    */
+  @JSName("extend")
+  def extend_true[T, U, V, W, X](
+    deep: cypressLib.cypressLibNumbers.`true`,
+    target: T,
+    object1: U,
+    object2: V,
+    object3: W,
+    object4: X
+  ): T with U with V with W with X = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    *
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    */
+  @JSName("extend")
+  def extend_true[T, U, V, W, X, Y](
+    deep: cypressLib.cypressLibNumbers.`true`,
+    target: T,
+    object1: U,
+    object2: V,
+    object3: W,
+    object4: X,
+    object5: Y
+  ): T with U with V with W with X with Y = js.native
+  /**
+    * Merge the contents of two or more objects together into the first object.
+    *
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    */
+  @JSName("extend")
+  def extend_true[T, U, V, W, X, Y, Z](
     deep: cypressLib.cypressLibNumbers.`true`,
     target: T,
     object1: U,
@@ -493,15 +511,6 @@ trait JQueryStatic extends js.Object {
     object5: Y,
     object6: Z
   ): T with U with V with W with X with Y with Z = js.native
-  /**
-    * Merge the contents of two or more objects together into the first object.
-    *
-    * @param target An object that will receive the new properties if additional objects are passed in or that will
-    *               extend the jQuery namespace if it is the sole argument.
-    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-    * @since 1.0
-    */
-  def extend[T, U, V, W, X, Y, Z](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T with U with V with W with X with Y with Z = js.native
   /**
     * Load data from the server using a HTTP GET request.
     *

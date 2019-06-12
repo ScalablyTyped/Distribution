@@ -11,6 +11,29 @@ trait CodeCommit
   @JSName("config")
   var config_CodeCommit: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
   /**
+    * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy.
+    */
+  def batchDescribeMergeConflicts(): awsDashSdkLib.libRequestMod.Request[BatchDescribeMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def batchDescribeMergeConflicts(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ BatchDescribeMergeConflictsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[BatchDescribeMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy.
+    */
+  def batchDescribeMergeConflicts(params: BatchDescribeMergeConflictsInput): awsDashSdkLib.libRequestMod.Request[BatchDescribeMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def batchDescribeMergeConflicts(
+    params: BatchDescribeMergeConflictsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ BatchDescribeMergeConflictsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[BatchDescribeMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Returns information about one or more repositories.  The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a web page could expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a web page. 
     */
   def batchGetRepositories(): awsDashSdkLib.libRequestMod.Request[BatchGetRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -118,6 +141,29 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[CreateRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Creates an unerferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge.   This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
+    */
+  def createUnreferencedMergeCommit(): awsDashSdkLib.libRequestMod.Request[CreateUnreferencedMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createUnreferencedMergeCommit(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateUnreferencedMergeCommitOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateUnreferencedMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Creates an unerferenced commit that represents the result of merging two branches using a specified merge strategy. This can help you determine the outcome of a potential merge.   This unreferenced merge commit can only be accessed using the GetCommit API or through git commands such as git fetch. To retrieve this commit, you must specify its commit ID or otherwise reference it. 
+    */
+  def createUnreferencedMergeCommit(params: CreateUnreferencedMergeCommitInput): awsDashSdkLib.libRequestMod.Request[CreateUnreferencedMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createUnreferencedMergeCommit(
+    params: CreateUnreferencedMergeCommitInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ CreateUnreferencedMergeCommitOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[CreateUnreferencedMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Deletes a branch from a repository, unless that branch is the default branch for the repository. 
     */
   def deleteBranch(): awsDashSdkLib.libRequestMod.Request[DeleteBranchOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -209,6 +255,29 @@ trait CodeCommit
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[DeleteRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy. If the merge option for the attempted merge is specified as FAST_FORWARD_MERGE, an exception will be thrown.
+    */
+  def describeMergeConflicts(): awsDashSdkLib.libRequestMod.Request[DescribeMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeMergeConflicts(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeMergeConflictsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy. If the merge option for the attempted merge is specified as FAST_FORWARD_MERGE, an exception will be thrown.
+    */
+  def describeMergeConflicts(params: DescribeMergeConflictsInput): awsDashSdkLib.libRequestMod.Request[DescribeMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def describeMergeConflicts(
+    params: DescribeMergeConflictsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ DescribeMergeConflictsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[DescribeMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Returns information about one or more pull request events.
     */
@@ -400,6 +469,29 @@ trait CodeCommit
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetFolderOutput, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[GetFolderOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Returns information about a specified merge commit.
+    */
+  def getMergeCommit(): awsDashSdkLib.libRequestMod.Request[GetMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getMergeCommit(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetMergeCommitOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns information about a specified merge commit.
+    */
+  def getMergeCommit(params: GetMergeCommitInput): awsDashSdkLib.libRequestMod.Request[GetMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getMergeCommit(
+    params: GetMergeCommitInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetMergeCommitOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetMergeCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Returns information about merge conflicts between the before and after commit IDs for a pull request in a repository.
     */
   def getMergeConflicts(): awsDashSdkLib.libRequestMod.Request[GetMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -422,6 +514,29 @@ trait CodeCommit
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[GetMergeConflictsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns information about the merge options available for merging two specified branches. For details about why a particular merge option is not available, use GetMergeConflicts or DescribeMergeConflicts.
+    */
+  def getMergeOptions(): awsDashSdkLib.libRequestMod.Request[GetMergeOptionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getMergeOptions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetMergeOptionsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetMergeOptionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Returns information about the merge options available for merging two specified branches. For details about why a particular merge option is not available, use GetMergeConflicts or DescribeMergeConflicts.
+    */
+  def getMergeOptions(params: GetMergeOptionsInput): awsDashSdkLib.libRequestMod.Request[GetMergeOptionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def getMergeOptions(
+    params: GetMergeOptionsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ GetMergeOptionsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[GetMergeOptionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets information about a pull request in a specified repository.
     */
@@ -584,7 +699,76 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge option.
+    * Merges two branches using the fast-forward merge strategy.
+    */
+  def mergeBranchesByFastForward(): awsDashSdkLib.libRequestMod.Request[MergeBranchesByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergeBranchesByFastForward(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergeBranchesByFastForwardOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergeBranchesByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Merges two branches using the fast-forward merge strategy.
+    */
+  def mergeBranchesByFastForward(params: MergeBranchesByFastForwardInput): awsDashSdkLib.libRequestMod.Request[MergeBranchesByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergeBranchesByFastForward(
+    params: MergeBranchesByFastForwardInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergeBranchesByFastForwardOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergeBranchesByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Merges two branches using the squash merge strategy.
+    */
+  def mergeBranchesBySquash(): awsDashSdkLib.libRequestMod.Request[MergeBranchesBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergeBranchesBySquash(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergeBranchesBySquashOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergeBranchesBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Merges two branches using the squash merge strategy.
+    */
+  def mergeBranchesBySquash(params: MergeBranchesBySquashInput): awsDashSdkLib.libRequestMod.Request[MergeBranchesBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergeBranchesBySquash(
+    params: MergeBranchesBySquashInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergeBranchesBySquashOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergeBranchesBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Merges two specified branches using the three-way merge strategy.
+    */
+  def mergeBranchesByThreeWay(): awsDashSdkLib.libRequestMod.Request[MergeBranchesByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergeBranchesByThreeWay(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergeBranchesByThreeWayOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergeBranchesByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Merges two specified branches using the three-way merge strategy.
+    */
+  def mergeBranchesByThreeWay(params: MergeBranchesByThreeWayInput): awsDashSdkLib.libRequestMod.Request[MergeBranchesByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergeBranchesByThreeWay(
+    params: MergeBranchesByThreeWayInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergeBranchesByThreeWayOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergeBranchesByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge strategy.
     */
   def mergePullRequestByFastForward(): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestByFastForward(
@@ -595,7 +779,7 @@ trait CodeCommit
     ]
   ): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge option.
+    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the fast-forward merge strategy.
     */
   def mergePullRequestByFastForward(params: MergePullRequestByFastForwardInput): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def mergePullRequestByFastForward(
@@ -606,6 +790,52 @@ trait CodeCommit
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[MergePullRequestByFastForwardOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the squash merge strategy.
+    */
+  def mergePullRequestBySquash(): awsDashSdkLib.libRequestMod.Request[MergePullRequestBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergePullRequestBySquash(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergePullRequestBySquashOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergePullRequestBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the squash merge strategy.
+    */
+  def mergePullRequestBySquash(params: MergePullRequestBySquashInput): awsDashSdkLib.libRequestMod.Request[MergePullRequestBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergePullRequestBySquash(
+    params: MergePullRequestBySquashInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergePullRequestBySquashOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergePullRequestBySquashOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the three-way merge strategy.
+    */
+  def mergePullRequestByThreeWay(): awsDashSdkLib.libRequestMod.Request[MergePullRequestByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergePullRequestByThreeWay(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergePullRequestByThreeWayOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergePullRequestByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Closes a pull request and attempts to merge the source commit of a pull request into the specified destination branch for that pull request at the specified commit using the three-way merge strategy.
+    */
+  def mergePullRequestByThreeWay(params: MergePullRequestByThreeWayInput): awsDashSdkLib.libRequestMod.Request[MergePullRequestByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def mergePullRequestByThreeWay(
+    params: MergePullRequestByThreeWayInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ MergePullRequestByThreeWayOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[MergePullRequestByThreeWayOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Posts a comment on the comparison between two commits.
     */

@@ -29,8 +29,8 @@ class OrderLineItemDiscount () extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**
-    * The percentage of the tax, as a string representation of a decimal number. A value of `7.25` corresponds to a
-    * percentage of 7.25%.  The percentage won't be set for an amount-based discount.
+    * The percentage of the discount, as a string representation of a decimal number.
+    * A value of `7.25` corresponds to a percentage of 7.25%. The percentage won't be set for an amount-based discount.
     */
   var percentage: js.UndefOr[java.lang.String] = js.native
   /**
@@ -45,5 +45,9 @@ class OrderLineItemDiscount () extends js.Object {
     * to be specified. See [OrderLineItemDiscountType](#type-orderlineitemdiscounttype) for possible values.
     */
   var `type`: js.UndefOr[squareDashConnectLib.squareDashConnectMod.OrderLineItemDiscountNs.TypeEnum] = js.native
+  /**
+    * The discount's Unique identifier, unique only within this order. This field is read-only.
+    */
+  var uid: js.UndefOr[java.lang.String] = js.native
 }
 

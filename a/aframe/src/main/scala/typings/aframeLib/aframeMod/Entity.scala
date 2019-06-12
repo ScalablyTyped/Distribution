@@ -14,23 +14,23 @@ trait Entity[C] extends ANode {
   var sceneEl: js.UndefOr[Scene] = js.native
   // addEventListener specific usages
   @JSName("addEventListener")
-  def `addEventListener_child-attached`(
+  def addEventListener_childattached(
     `type`: aframeLib.aframeLibStrings.`child-attached`,
     listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_El], scala.Unit]
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def `addEventListener_child-attached`(
+  def addEventListener_childattached(
     `type`: aframeLib.aframeLibStrings.`child-attached`,
     listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_El], scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def `addEventListener_child-detached`(
+  def addEventListener_childdetached(
     `type`: aframeLib.aframeLibStrings.`child-detached`,
     listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_El], scala.Unit]
   ): scala.Unit = js.native
   @JSName("addEventListener")
-  def `addEventListener_child-detached`(
+  def addEventListener_childdetached(
     `type`: aframeLib.aframeLibStrings.`child-detached`,
     listener: js.Function1[/* event */ stdLib.Event with DetailEvent[aframeLib.Anon_El], scala.Unit],
     useCapture: scala.Boolean

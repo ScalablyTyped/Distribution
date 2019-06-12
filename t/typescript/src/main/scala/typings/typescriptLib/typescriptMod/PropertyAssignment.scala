@@ -15,6 +15,8 @@ trait PropertyAssignment
      with _BindingOrAssignmentElement
      with _HasJSDoc {
   var initializer: Expression = js.native
+  @JSName("kind")
+  var kind_PropertyAssignment: typescriptLib.typescriptMod.SyntaxKind.PropertyAssignment = js.native
   @JSName("name")
   var name_PropertyAssignment: PropertyName = js.native
   @JSName("parent")

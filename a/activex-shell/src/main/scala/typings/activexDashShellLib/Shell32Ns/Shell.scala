@@ -106,11 +106,11 @@ class Shell protected () extends js.Object {
   @JSName("GetSystemInformation")
   def GetSystemInformation_DoubleClickTime(Name: activexDashShellLib.activexDashShellLibStrings.DoubleClickTime): scala.Double = js.native
   @JSName("GetSystemInformation")
-  def GetSystemInformation_IsOS_DomainMember(Name: activexDashShellLib.activexDashShellLibStrings.IsOS_DomainMember): scala.Boolean = js.native
+  def GetSystemInformation_IsOSDomainMember(Name: activexDashShellLib.activexDashShellLibStrings.IsOS_DomainMember): scala.Boolean = js.native
   @JSName("GetSystemInformation")
-  def GetSystemInformation_IsOS_Personal(Name: activexDashShellLib.activexDashShellLibStrings.IsOS_Personal): scala.Boolean = js.native
+  def GetSystemInformation_IsOSPersonal(Name: activexDashShellLib.activexDashShellLibStrings.IsOS_Personal): scala.Boolean = js.native
   @JSName("GetSystemInformation")
-  def GetSystemInformation_IsOS_Professional(Name: activexDashShellLib.activexDashShellLibStrings.IsOS_Professional): scala.Boolean = js.native
+  def GetSystemInformation_IsOSProfessional(Name: activexDashShellLib.activexDashShellLibStrings.IsOS_Professional): scala.Boolean = js.native
   @JSName("GetSystemInformation")
   def GetSystemInformation_PhysicalMemoryInstalled(Name: activexDashShellLib.activexDashShellLibStrings.PhysicalMemoryInstalled): scala.Double = js.native
   @JSName("GetSystemInformation")

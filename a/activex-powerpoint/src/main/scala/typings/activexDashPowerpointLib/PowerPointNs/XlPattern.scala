@@ -5,123 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait XlPattern extends js.Object
-
-@JSGlobal("PowerPoint.XlPattern")
-@js.native
-object XlPattern extends js.Object {
-  @js.native
-  sealed trait xlPatternAutomatic
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternChecker
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternCrissCross
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternDown
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternGray16
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternGray25
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternGray50
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternGray75
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternGray8
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternGrid
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternHorizontal
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternLightDown
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternLightHorizontal
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternLightUp
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternLightVertical
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternLinearGradient
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternNone
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternRectangularGradient
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternSemiGray75
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternSolid
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternUp
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  @js.native
-  sealed trait xlPatternVertical
-    extends activexDashPowerpointLib.PowerPointNs.XlPattern
-  
-  /* -4105 */ val xlPatternAutomatic: xlPatternAutomatic with scala.Double = js.native
-  /* 9 */ val xlPatternChecker: xlPatternChecker with scala.Double = js.native
-  /* 16 */ val xlPatternCrissCross: xlPatternCrissCross with scala.Double = js.native
-  /* -4121 */ val xlPatternDown: xlPatternDown with scala.Double = js.native
-  /* 17 */ val xlPatternGray16: xlPatternGray16 with scala.Double = js.native
-  /* -4124 */ val xlPatternGray25: xlPatternGray25 with scala.Double = js.native
-  /* -4125 */ val xlPatternGray50: xlPatternGray50 with scala.Double = js.native
-  /* -4126 */ val xlPatternGray75: xlPatternGray75 with scala.Double = js.native
-  /* 18 */ val xlPatternGray8: xlPatternGray8 with scala.Double = js.native
-  /* 15 */ val xlPatternGrid: xlPatternGrid with scala.Double = js.native
-  /* -4128 */ val xlPatternHorizontal: xlPatternHorizontal with scala.Double = js.native
-  /* 13 */ val xlPatternLightDown: xlPatternLightDown with scala.Double = js.native
-  /* 11 */ val xlPatternLightHorizontal: xlPatternLightHorizontal with scala.Double = js.native
-  /* 14 */ val xlPatternLightUp: xlPatternLightUp with scala.Double = js.native
-  /* 12 */ val xlPatternLightVertical: xlPatternLightVertical with scala.Double = js.native
-  /* 4000 */ val xlPatternLinearGradient: xlPatternLinearGradient with scala.Double = js.native
-  /* -4142 */ val xlPatternNone: xlPatternNone with scala.Double = js.native
-  /* 4001 */ val xlPatternRectangularGradient: xlPatternRectangularGradient with scala.Double = js.native
-  /* 10 */ val xlPatternSemiGray75: xlPatternSemiGray75 with scala.Double = js.native
-  /* 1 */ val xlPatternSolid: xlPatternSolid with scala.Double = js.native
-  /* -4162 */ val xlPatternUp: xlPatternUp with scala.Double = js.native
-  /* -4166 */ val xlPatternVertical: xlPatternVertical with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[activexDashPowerpointLib.PowerPointNs.XlPattern with scala.Double] = js.native
-}
+/* Rewritten from type alias, can be one of: 
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4105`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`9`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`16`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4121`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`17`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4124`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4125`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4126`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`18`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`15`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4128`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`13`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`11`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`14`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`12`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`4000`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4142`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`4001`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`10`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`1`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4162`
+  - activexDashPowerpointLib.activexDashPowerpointLibNumbers.`-4166`
+*/
+trait XlPattern extends js.Object
 

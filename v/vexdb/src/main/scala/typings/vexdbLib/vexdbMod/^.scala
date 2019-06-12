@@ -34,7 +34,7 @@ object ^ extends js.Object {
     value: js.Array[RankingsResponseObject]
   ): js.Promise[CacheEntry[RankingsResponseObject]] = js.native
   @JSName("cache")
-  def cache_season_rankings(
+  def cache_seasonrankings(
     endpoint: vexdbLib.vexdbLibStrings.season_rankings,
     params: SeasonRankingsRequestObject,
     value: js.Array[SeasonRankingsResponseObject]
@@ -60,7 +60,7 @@ object ^ extends js.Object {
   @JSName("get")
   def get_rankings(endpoint: vexdbLib.vexdbLibStrings.rankings, params: RankingsRequestObject): js.Promise[js.Array[RankingsResponseObject]] = js.native
   @JSName("get")
-  def get_season_rankings(endpoint: vexdbLib.vexdbLibStrings.season_rankings, params: SeasonRankingsRequestObject): js.Promise[js.Array[SeasonRankingsResponseObject]] = js.native
+  def get_seasonrankings(endpoint: vexdbLib.vexdbLibStrings.season_rankings, params: SeasonRankingsRequestObject): js.Promise[js.Array[SeasonRankingsResponseObject]] = js.native
   @JSName("get")
   def get_skills(endpoint: vexdbLib.vexdbLibStrings.skills, params: SkillsRequestObject): js.Promise[js.Array[SkillsResponseObject]] = js.native
   @JSName("get")
@@ -75,7 +75,7 @@ object ^ extends js.Object {
   @JSName("live")
   def live_rankings(endpoint: vexdbLib.vexdbLibStrings.rankings, params: LiveRequestObject[RankingsRequestObject]): LiveEventEmitter[RankingsRequestObject, RankingsResponseObject] = js.native
   @JSName("live")
-  def live_season_rankings(
+  def live_seasonrankings(
     endpoint: vexdbLib.vexdbLibStrings.season_rankings,
     params: LiveRequestObject[SeasonRankingsRequestObject]
   ): LiveEventEmitter[SeasonRankingsRequestObject, SeasonRankingsResponseObject] = js.native
@@ -92,7 +92,7 @@ object ^ extends js.Object {
   @JSName("size")
   def size_rankings(endpoint: vexdbLib.vexdbLibStrings.rankings, params: RankingsRequestObject): js.Promise[scala.Double] = js.native
   @JSName("size")
-  def size_season_rankings(endpoint: vexdbLib.vexdbLibStrings.season_rankings, params: SeasonRankingsRequestObject): js.Promise[scala.Double] = js.native
+  def size_seasonrankings(endpoint: vexdbLib.vexdbLibStrings.season_rankings, params: SeasonRankingsRequestObject): js.Promise[scala.Double] = js.native
   @JSName("size")
   def size_skills(endpoint: vexdbLib.vexdbLibStrings.skills, params: SkillsRequestObject): js.Promise[scala.Double] = js.native
   @JSName("size")

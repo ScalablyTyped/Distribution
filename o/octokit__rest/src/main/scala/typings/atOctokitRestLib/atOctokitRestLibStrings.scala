@@ -163,6 +163,9 @@ object atOctokitRestLibStrings {
   sealed trait existing_users extends js.Object
   
   @js.native
+  sealed trait eyes extends js.Object
+  
+  @js.native
   sealed trait failure extends js.Object
   
   @js.native
@@ -352,6 +355,9 @@ object atOctokitRestLibStrings {
   sealed trait resolved extends js.Object
   
   @js.native
+  sealed trait rocket extends js.Object
+  
+  @js.native
   sealed trait secret extends js.Object
   
   @js.native
@@ -509,6 +515,8 @@ object atOctokitRestLibStrings {
   @scala.inline
   def existing_users: existing_users = "existing_users".asInstanceOf[existing_users]
   @scala.inline
+  def eyes: eyes = "eyes".asInstanceOf[eyes]
+  @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]
   @scala.inline
   def followers: followers = "followers".asInstanceOf[followers]
@@ -634,6 +642,8 @@ object atOctokitRestLibStrings {
   def repository: repository = "repository".asInstanceOf[repository]
   @scala.inline
   def resolved: resolved = "resolved".asInstanceOf[resolved]
+  @scala.inline
+  def rocket: rocket = "rocket".asInstanceOf[rocket]
   @scala.inline
   def secret: secret = "secret".asInstanceOf[secret]
   @scala.inline

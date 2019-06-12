@@ -17,8 +17,7 @@ trait JQuery extends js.Object {
   def bootstrapSlider(): this.type = js.native
   def bootstrapSlider(methodName: java.lang.String, args: js.Any*): this.type = js.native
   def bootstrapSlider(options: SliderOptions): this.type = js.native
-  @JSName("on")
-  def on_slide(
+  def on(
     event: bootstrapDashSliderLib.bootstrapDashSliderLibStrings.slide,
     handler: js.Function1[
       /* slideEvt */ SliderEvent, 

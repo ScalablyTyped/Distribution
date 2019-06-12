@@ -73,7 +73,7 @@ object V1ItemNs extends js.Object {
   @js.native
   object TypeEnum extends js.Object {
     @js.native
-    sealed trait GIFTCARD
+    sealed trait GIFT_CARD
       extends squareDashConnectLib.squareDashConnectMod.V1ItemNs.TypeEnum
     
     @js.native
@@ -84,7 +84,7 @@ object V1ItemNs extends js.Object {
     sealed trait OTHER
       extends squareDashConnectLib.squareDashConnectMod.V1ItemNs.TypeEnum
     
-    /* "GIFT_CARD" */ val GIFTCARD: GIFTCARD with java.lang.String = js.native
+    /* "GIFT_CARD" */ val GIFT_CARD: GIFT_CARD with java.lang.String = js.native
     /* "NORMAL" */ val NORMAL: NORMAL with java.lang.String = js.native
     /* "OTHER" */ val OTHER: OTHER with java.lang.String = js.native
     @JSBracketAccess

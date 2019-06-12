@@ -12,5 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JSDocAugmentsTag extends JSDocTag {
   var `class`: ExpressionWithTypeArguments with typescriptLib.Anon_Expression = js.native
+  @JSName("kind")
+  var kind_JSDocAugmentsTag: typescriptLib.typescriptMod.SyntaxKind.JSDocAugmentsTag = js.native
 }
 

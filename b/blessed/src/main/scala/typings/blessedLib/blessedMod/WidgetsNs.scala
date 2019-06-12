@@ -1080,7 +1080,7 @@ object WidgetsNs extends js.Object {
       callback: js.Function2[/* item */ BoxElement, /* index */ scala.Double, scala.Unit]
     ): this.type = js.native
     @JSName("on")
-    def `on_select item`(
+    def on_selectitem(
       event: blessedLib.blessedLibStrings.`select item`,
       callback: js.Function2[/* item */ BlessedElement, /* index */ scala.Double, scala.Unit]
     ): this.type = js.native
@@ -1257,11 +1257,11 @@ object WidgetsNs extends js.Object {
       */
     def moveRight(offset: scala.Double): scala.Unit = js.native
     @JSName("on")
-    def `on_remove item`(event: blessedLib.blessedLibStrings.`remove item`, callback: js.Function0[scala.Unit]): this.type = js.native
+    def on_removeitem(event: blessedLib.blessedLibStrings.`remove item`, callback: js.Function0[scala.Unit]): this.type = js.native
     @JSName("on")
-    def `on_select tab`(event: blessedLib.blessedLibStrings.`select tab`, callback: js.Function0[scala.Unit]): this.type = js.native
+    def on_selecttab(event: blessedLib.blessedLibStrings.`select tab`, callback: js.Function0[scala.Unit]): this.type = js.native
     @JSName("on")
-    def `on_set items`(event: blessedLib.blessedLibStrings.`set items`, callback: js.Function0[scala.Unit]): this.type = js.native
+    def on_setitems(event: blessedLib.blessedLibStrings.`set items`, callback: js.Function0[scala.Unit]): this.type = js.native
     /**
       * Remove item from the bar.
       */

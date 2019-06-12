@@ -36,7 +36,6 @@ class FormatCondition protected () extends js.Object {
   def Borders(Index: XlBordersIndex): Border = js.native
   def Delete(): scala.Unit = js.native
   def Modify(Type: XlFormatConditionType): scala.Unit = js.native
-  def Modify(Type: XlFormatConditionType, Operator: js.UndefOr[scala.Nothing], Formula1: java.lang.String): scala.Unit = js.native
   def Modify(Type: XlFormatConditionType, Operator: XlFormatConditionOperator): scala.Unit = js.native
   def Modify(Type: XlFormatConditionType, Operator: XlFormatConditionOperator, Formula1: java.lang.String): scala.Unit = js.native
   def Modify(
@@ -61,6 +60,26 @@ class FormatCondition protected () extends js.Object {
     Operator2: js.Any
   ): scala.Unit = js.native
   def ModifyAppliesToRange(Range: Range): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_1(
+    Type: XlFormatConditionType,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_2(
+    Type: XlFormatConditionType,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_2(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Operator: js.UndefOr[scala.Nothing],
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
   def SetFirstPriority(): scala.Unit = js.native
   def SetLastPriority(): scala.Unit = js.native
   def _Modify(Type: XlFormatConditionType): scala.Unit = js.native

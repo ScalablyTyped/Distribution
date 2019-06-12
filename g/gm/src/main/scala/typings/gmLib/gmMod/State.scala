@@ -249,15 +249,11 @@ trait State extends js.Object {
   def out(customArguments: java.lang.String*): State = js.native
   def outputDirectory(directory: java.lang.String): State = js.native
   def page(width: scala.Double, height: scala.Double): State = js.native
+  def page(width: scala.Double, height: scala.Double, arg: gmLib.gmLibStrings.`!`): State = js.native
+  def page(width: scala.Double, height: scala.Double, arg: gmLib.gmLibStrings.`%`): State = js.native
+  def page(width: scala.Double, height: scala.Double, arg: gmLib.gmLibStrings.`<`): State = js.native
+  def page(width: scala.Double, height: scala.Double, arg: gmLib.gmLibStrings.`>`): State = js.native
   def page(width: scala.Double, height: scala.Double, arg: java.lang.String): State = js.native
-  @JSName("page")
-  def `page_!`(width: scala.Double, height: scala.Double, arg: gmLib.gmLibStrings.`!`): State = js.native
-  @JSName("page")
-  def `page_%`(width: scala.Double, height: scala.Double, arg: gmLib.gmLibStrings.`%`): State = js.native
-  @JSName("page")
-  def `page_<`(width: scala.Double, height: scala.Double, arg: gmLib.gmLibStrings.`<`): State = js.native
-  @JSName("page")
-  def `page_>`(width: scala.Double, height: scala.Double, arg: gmLib.gmLibStrings.`>`): State = js.native
   def paint(radius: scala.Double): State = js.native
   def pause(seconds: scala.Double): State = js.native
   def pen(color: java.lang.String): State = js.native
@@ -280,6 +276,7 @@ trait State extends js.Object {
   def region(width: scala.Double, height: scala.Double, x: scala.Double, y: scala.Double): State = js.native
   def remote(): State = js.native
   def render(): State = js.native
+  def repage(reset: gmLib.gmLibStrings.`+`): State = js.native
   def repage(reset: java.lang.String): State = js.native
   def repage(width: scala.Double, height: scala.Double, xoff: scala.Double, yoff: scala.Double): State = js.native
   def repage(
@@ -289,8 +286,6 @@ trait State extends js.Object {
     yoff: scala.Double,
     arg: java.lang.String
   ): State = js.native
-  @JSName("repage")
-  def `repage_+`(reset: gmLib.gmLibStrings.`+`): State = js.native
   def res(callback: GetterCallback[java.lang.String]): State = js.native
   def res(opts: GetterOptions, callback: GetterCallback[java.lang.String]): State = js.native
   def resample(horizontal: scala.Double, vertical: scala.Double): State = js.native

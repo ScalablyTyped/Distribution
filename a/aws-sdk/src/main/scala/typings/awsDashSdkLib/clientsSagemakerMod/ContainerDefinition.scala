@@ -23,7 +23,7 @@ trait ContainerDefinition extends js.Object {
     */
   var ModelDataUrl: js.UndefOr[Url] = js.undefined
   /**
-    * The name of the model package to use to create the model.
+    * The name or Amazon Resource Name (ARN) of the model package to use to create the model.
     */
   var ModelPackageName: js.UndefOr[ArnOrName] = js.undefined
 }

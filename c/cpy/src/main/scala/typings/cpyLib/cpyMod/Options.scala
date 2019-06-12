@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   		*/
   val parents: js.UndefOr[scala.Boolean] = js.undefined
   /**
-  		Filename or function returning a filename used to rename every file in `files`.
+  		Filename or function returning a filename used to rename every file in `source`.
   		@example
   		```
   		cpy('foo.js', 'destination', {

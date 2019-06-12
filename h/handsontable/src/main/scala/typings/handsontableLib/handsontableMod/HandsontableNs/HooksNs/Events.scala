@@ -25,7 +25,7 @@ trait Events extends js.Object {
   ] = js.undefined
   var afterChangesObserved: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterColumnMove: js.UndefOr[
-    js.Function2[/* startColumn */ scala.Double, /* endColumn */ scala.Double, scala.Unit]
+    js.Function2[/* columns */ js.Array[scala.Double], /* target */ scala.Double, scala.Unit]
   ] = js.undefined
   var afterColumnResize: js.UndefOr[
     js.Function3[
@@ -501,7 +501,11 @@ trait Events extends js.Object {
     ]
   ] = js.undefined
   var beforeColumnMove: js.UndefOr[
-    js.Function2[/* columns */ js.Array[scala.Double], /* target */ scala.Double, scala.Unit]
+    js.Function2[
+      /* columns */ js.Array[scala.Double], 
+      /* target */ scala.Double, 
+      scala.Unit | scala.Boolean
+    ]
   ] = js.undefined
   var beforeColumnResize: js.UndefOr[
     js.Function3[
@@ -542,7 +546,7 @@ trait Events extends js.Object {
       /* index */ scala.Double, 
       /* amount */ scala.Double, 
       /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource], 
-      scala.Unit
+      scala.Unit | scala.Boolean
     ]
   ] = js.undefined
   var beforeCreateRow: js.UndefOr[
@@ -917,7 +921,7 @@ object Events {
     afterCellMetaReset: () => scala.Unit = null,
     afterChange: (/* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange] | scala.Null, /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource) => scala.Unit = null,
     afterChangesObserved: () => scala.Unit = null,
-    afterColumnMove: (/* startColumn */ scala.Double, /* endColumn */ scala.Double) => scala.Unit = null,
+    afterColumnMove: (/* columns */ js.Array[scala.Double], /* target */ scala.Double) => scala.Unit = null,
     afterColumnResize: (/* currentColumn */ scala.Double, /* newSize */ scala.Double, /* isDoubleClick */ scala.Boolean) => scala.Unit = null,
     afterColumnSort: (/* currentSortConfig */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config], /* destinationSortConfigs */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config]) => scala.Unit = null,
     afterContextMenuDefaultOptions: /* predefinedItems */ js.Array[
@@ -1006,13 +1010,13 @@ object Events {
     beforeCellAlignment: (/* stateBefore */ org.scalablytyped.runtime.NumberDictionary[js.Array[java.lang.String]], /* range */ js.Array[handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange], /* type */ handsontableLib.handsontableLibStrings.horizontal | handsontableLib.handsontableLibStrings.vertical, /* alignmentClass */ handsontableLib.handsontableLibStrings.htLeft | handsontableLib.handsontableLibStrings.htCenter | handsontableLib.handsontableLibStrings.htRight | handsontableLib.handsontableLibStrings.htJustify | handsontableLib.handsontableLibStrings.htTop | handsontableLib.handsontableLibStrings.htMiddle | handsontableLib.handsontableLibStrings.htBottom) => scala.Unit = null,
     beforeChange: (/* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource) => scala.Unit | scala.Boolean = null,
     beforeChangeRender: (/* changes */ js.Array[handsontableLib.handsontableMod.HandsontableNs.CellChange], /* source */ handsontableLib.handsontableMod.HandsontableNs.ChangeSource) => scala.Unit = null,
-    beforeColumnMove: (/* columns */ js.Array[scala.Double], /* target */ scala.Double) => scala.Unit = null,
+    beforeColumnMove: (/* columns */ js.Array[scala.Double], /* target */ scala.Double) => scala.Unit | scala.Boolean = null,
     beforeColumnResize: (/* currentColumn */ scala.Double, /* newSize */ scala.Double, /* isDoubleClick */ scala.Boolean) => scala.Unit | scala.Double = null,
     beforeColumnSort: (/* currentSortConfig */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config], /* destinationSortConfigs */ js.Array[handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.Config]) => scala.Unit | scala.Boolean = null,
     beforeContextMenuSetItems: /* menuItems */ js.Array[handsontableLib.handsontableMod.HandsontableNs.contextMenuNs.MenuItemConfig] => scala.Unit = null,
     beforeContextMenuShow: /* context */ handsontableLib.handsontableMod.HandsontableNs.pluginsNs.ContextMenu => scala.Unit = null,
     beforeCopy: (/* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType]) => scala.Unit | scala.Boolean = null,
-    beforeCreateCol: (/* index */ scala.Double, /* amount */ scala.Double, /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit = null,
+    beforeCreateCol: (/* index */ scala.Double, /* amount */ scala.Double, /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit | scala.Boolean = null,
     beforeCreateRow: (/* index */ scala.Double, /* amount */ scala.Double, /* source */ js.UndefOr[handsontableLib.handsontableMod.HandsontableNs.ChangeSource]) => scala.Unit = null,
     beforeCut: (/* data */ js.Array[js.Array[handsontableLib.handsontableMod.HandsontableNs.CellValue]], /* coords */ js.Array[handsontableLib.handsontableMod.HandsontableNs.pluginsNs.RangeType]) => scala.Unit | scala.Boolean = null,
     beforeDetachChild: (/* parent */ handsontableLib.handsontableMod.HandsontableNs.RowObject, /* element */ handsontableLib.handsontableMod.HandsontableNs.RowObject) => scala.Unit = null,

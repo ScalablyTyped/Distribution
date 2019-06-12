@@ -11,56 +11,56 @@ class Tray protected () extends EventEmitter {
   def this(image: NativeImage) = this()
   def this(image: java.lang.String) = this()
   @JSName("addListener")
-  def `addListener_balloon-click`(event: electronLib.electronLibStrings.`balloon-click`, listener: js.Function): this.type = js.native
+  def addListener_balloonclick(event: electronLib.electronLibStrings.`balloon-click`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_balloon-closed`(event: electronLib.electronLibStrings.`balloon-closed`, listener: js.Function): this.type = js.native
+  def addListener_balloonclosed(event: electronLib.electronLibStrings.`balloon-closed`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_balloon-show`(event: electronLib.electronLibStrings.`balloon-show`, listener: js.Function): this.type = js.native
+  def addListener_balloonshow(event: electronLib.electronLibStrings.`balloon-show`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_click(
     event: electronLib.electronLibStrings.click,
     listener: js.Function3[/* event */ Event, /* bounds */ Rectangle, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_double-click`(
+  def addListener_doubleclick(
     event: electronLib.electronLibStrings.`double-click`,
     listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_drag-end`(event: electronLib.electronLibStrings.`drag-end`, listener: js.Function): this.type = js.native
+  def addListener_dragend(event: electronLib.electronLibStrings.`drag-end`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_drag-enter`(event: electronLib.electronLibStrings.`drag-enter`, listener: js.Function): this.type = js.native
+  def addListener_dragenter(event: electronLib.electronLibStrings.`drag-enter`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_drag-leave`(event: electronLib.electronLibStrings.`drag-leave`, listener: js.Function): this.type = js.native
+  def addListener_dragleave(event: electronLib.electronLibStrings.`drag-leave`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_drop(event: electronLib.electronLibStrings.drop, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_drop-files`(
+  def addListener_dropfiles(
     event: electronLib.electronLibStrings.`drop-files`,
     listener: js.Function2[/* event */ Event, /* files */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_drop-text`(
+  def addListener_droptext(
     event: electronLib.electronLibStrings.`drop-text`,
     listener: js.Function2[/* event */ Event, /* text */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_mouse-enter`(
+  def addListener_mouseenter(
     event: electronLib.electronLibStrings.`mouse-enter`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_mouse-leave`(
+  def addListener_mouseleave(
     event: electronLib.electronLibStrings.`mouse-leave`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_mouse-move`(
+  def addListener_mousemove(
     event: electronLib.electronLibStrings.`mouse-move`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_right-click`(
+  def addListener_rightclick(
     event: electronLib.electronLibStrings.`right-click`,
     listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, scala.Unit]
   ): this.type = js.native
@@ -83,18 +83,18 @@ class Tray protected () extends EventEmitter {
     * Emitted when the tray balloon is clicked.
     */
   @JSName("on")
-  def `on_balloon-click`(event: electronLib.electronLibStrings.`balloon-click`, listener: js.Function): this.type = js.native
+  def on_balloonclick(event: electronLib.electronLibStrings.`balloon-click`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the tray balloon is closed because of timeout or user manually
     * closes it.
     */
   @JSName("on")
-  def `on_balloon-closed`(event: electronLib.electronLibStrings.`balloon-closed`, listener: js.Function): this.type = js.native
+  def on_balloonclosed(event: electronLib.electronLibStrings.`balloon-closed`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the tray balloon shows.
     */
   @JSName("on")
-  def `on_balloon-show`(event: electronLib.electronLibStrings.`balloon-show`, listener: js.Function): this.type = js.native
+  def on_balloonshow(event: electronLib.electronLibStrings.`balloon-show`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the tray icon is clicked.
     */
@@ -107,7 +107,7 @@ class Tray protected () extends EventEmitter {
     * Emitted when the tray icon is double clicked.
     */
   @JSName("on")
-  def `on_double-click`(
+  def on_doubleclick(
     event: electronLib.electronLibStrings.`double-click`,
     listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, scala.Unit]
   ): this.type = js.native
@@ -115,17 +115,17 @@ class Tray protected () extends EventEmitter {
     * Emitted when a drag operation ends on the tray or ends at another location.
     */
   @JSName("on")
-  def `on_drag-end`(event: electronLib.electronLibStrings.`drag-end`, listener: js.Function): this.type = js.native
+  def on_dragend(event: electronLib.electronLibStrings.`drag-end`, listener: js.Function): this.type = js.native
   /**
     * Emitted when a drag operation enters the tray icon.
     */
   @JSName("on")
-  def `on_drag-enter`(event: electronLib.electronLibStrings.`drag-enter`, listener: js.Function): this.type = js.native
+  def on_dragenter(event: electronLib.electronLibStrings.`drag-enter`, listener: js.Function): this.type = js.native
   /**
     * Emitted when a drag operation exits the tray icon.
     */
   @JSName("on")
-  def `on_drag-leave`(event: electronLib.electronLibStrings.`drag-leave`, listener: js.Function): this.type = js.native
+  def on_dragleave(event: electronLib.electronLibStrings.`drag-leave`, listener: js.Function): this.type = js.native
   /**
     * Emitted when any dragged items are dropped on the tray icon.
     */
@@ -135,7 +135,7 @@ class Tray protected () extends EventEmitter {
     * Emitted when dragged files are dropped in the tray icon.
     */
   @JSName("on")
-  def `on_drop-files`(
+  def on_dropfiles(
     event: electronLib.electronLibStrings.`drop-files`,
     listener: js.Function2[/* event */ Event, /* files */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
@@ -143,7 +143,7 @@ class Tray protected () extends EventEmitter {
     * Emitted when dragged text is dropped in the tray icon.
     */
   @JSName("on")
-  def `on_drop-text`(
+  def on_droptext(
     event: electronLib.electronLibStrings.`drop-text`,
     listener: js.Function2[/* event */ Event, /* text */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -151,7 +151,7 @@ class Tray protected () extends EventEmitter {
     * Emitted when the mouse enters the tray icon.
     */
   @JSName("on")
-  def `on_mouse-enter`(
+  def on_mouseenter(
     event: electronLib.electronLibStrings.`mouse-enter`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
@@ -159,7 +159,7 @@ class Tray protected () extends EventEmitter {
     * Emitted when the mouse exits the tray icon.
     */
   @JSName("on")
-  def `on_mouse-leave`(
+  def on_mouseleave(
     event: electronLib.electronLibStrings.`mouse-leave`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
@@ -167,7 +167,7 @@ class Tray protected () extends EventEmitter {
     * Emitted when the mouse moves in the tray icon.
     */
   @JSName("on")
-  def `on_mouse-move`(
+  def on_mousemove(
     event: electronLib.electronLibStrings.`mouse-move`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
@@ -175,61 +175,61 @@ class Tray protected () extends EventEmitter {
     * Emitted when the tray icon is right clicked.
     */
   @JSName("on")
-  def `on_right-click`(
+  def on_rightclick(
     event: electronLib.electronLibStrings.`right-click`,
     listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_balloon-click`(event: electronLib.electronLibStrings.`balloon-click`, listener: js.Function): this.type = js.native
+  def once_balloonclick(event: electronLib.electronLibStrings.`balloon-click`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_balloon-closed`(event: electronLib.electronLibStrings.`balloon-closed`, listener: js.Function): this.type = js.native
+  def once_balloonclosed(event: electronLib.electronLibStrings.`balloon-closed`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_balloon-show`(event: electronLib.electronLibStrings.`balloon-show`, listener: js.Function): this.type = js.native
+  def once_balloonshow(event: electronLib.electronLibStrings.`balloon-show`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_click(
     event: electronLib.electronLibStrings.click,
     listener: js.Function3[/* event */ Event, /* bounds */ Rectangle, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_double-click`(
+  def once_doubleclick(
     event: electronLib.electronLibStrings.`double-click`,
     listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_drag-end`(event: electronLib.electronLibStrings.`drag-end`, listener: js.Function): this.type = js.native
+  def once_dragend(event: electronLib.electronLibStrings.`drag-end`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_drag-enter`(event: electronLib.electronLibStrings.`drag-enter`, listener: js.Function): this.type = js.native
+  def once_dragenter(event: electronLib.electronLibStrings.`drag-enter`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_drag-leave`(event: electronLib.electronLibStrings.`drag-leave`, listener: js.Function): this.type = js.native
+  def once_dragleave(event: electronLib.electronLibStrings.`drag-leave`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_drop(event: electronLib.electronLibStrings.drop, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_drop-files`(
+  def once_dropfiles(
     event: electronLib.electronLibStrings.`drop-files`,
     listener: js.Function2[/* event */ Event, /* files */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_drop-text`(
+  def once_droptext(
     event: electronLib.electronLibStrings.`drop-text`,
     listener: js.Function2[/* event */ Event, /* text */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_mouse-enter`(
+  def once_mouseenter(
     event: electronLib.electronLibStrings.`mouse-enter`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_mouse-leave`(
+  def once_mouseleave(
     event: electronLib.electronLibStrings.`mouse-leave`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_mouse-move`(
+  def once_mousemove(
     event: electronLib.electronLibStrings.`mouse-move`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_right-click`(
+  def once_rightclick(
     event: electronLib.electronLibStrings.`right-click`,
     listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, scala.Unit]
   ): this.type = js.native
@@ -242,56 +242,56 @@ class Tray protected () extends EventEmitter {
   def popUpContextMenu(menu: Menu): scala.Unit = js.native
   def popUpContextMenu(menu: Menu, position: Point): scala.Unit = js.native
   @JSName("removeListener")
-  def `removeListener_balloon-click`(event: electronLib.electronLibStrings.`balloon-click`, listener: js.Function): this.type = js.native
+  def removeListener_balloonclick(event: electronLib.electronLibStrings.`balloon-click`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_balloon-closed`(event: electronLib.electronLibStrings.`balloon-closed`, listener: js.Function): this.type = js.native
+  def removeListener_balloonclosed(event: electronLib.electronLibStrings.`balloon-closed`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_balloon-show`(event: electronLib.electronLibStrings.`balloon-show`, listener: js.Function): this.type = js.native
+  def removeListener_balloonshow(event: electronLib.electronLibStrings.`balloon-show`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_click(
     event: electronLib.electronLibStrings.click,
     listener: js.Function3[/* event */ Event, /* bounds */ Rectangle, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_double-click`(
+  def removeListener_doubleclick(
     event: electronLib.electronLibStrings.`double-click`,
     listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_drag-end`(event: electronLib.electronLibStrings.`drag-end`, listener: js.Function): this.type = js.native
+  def removeListener_dragend(event: electronLib.electronLibStrings.`drag-end`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_drag-enter`(event: electronLib.electronLibStrings.`drag-enter`, listener: js.Function): this.type = js.native
+  def removeListener_dragenter(event: electronLib.electronLibStrings.`drag-enter`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_drag-leave`(event: electronLib.electronLibStrings.`drag-leave`, listener: js.Function): this.type = js.native
+  def removeListener_dragleave(event: electronLib.electronLibStrings.`drag-leave`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_drop(event: electronLib.electronLibStrings.drop, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_drop-files`(
+  def removeListener_dropfiles(
     event: electronLib.electronLibStrings.`drop-files`,
     listener: js.Function2[/* event */ Event, /* files */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_drop-text`(
+  def removeListener_droptext(
     event: electronLib.electronLibStrings.`drop-text`,
     listener: js.Function2[/* event */ Event, /* text */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_mouse-enter`(
+  def removeListener_mouseenter(
     event: electronLib.electronLibStrings.`mouse-enter`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_mouse-leave`(
+  def removeListener_mouseleave(
     event: electronLib.electronLibStrings.`mouse-leave`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_mouse-move`(
+  def removeListener_mousemove(
     event: electronLib.electronLibStrings.`mouse-move`,
     listener: js.Function2[/* event */ Event, /* position */ Point, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_right-click`(
+  def removeListener_rightclick(
     event: electronLib.electronLibStrings.`right-click`,
     listener: js.Function2[/* event */ Event, /* bounds */ Rectangle, scala.Unit]
   ): this.type = js.native

@@ -196,7 +196,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `devtools-closed` event.
     */
   @JSName("on")
-  def `on_devtools-closed`(event: nwDotJsLib.nwDotJsLibStrings.`devtools-closed`, listener: js.Function0[_]): this.type = js.native
+  def on_devtoolsclosed(event: nwDotJsLib.nwDotJsLibStrings.`devtools-closed`, listener: js.Function0[_]): this.type = js.native
   /**
     * Emitted when the document object in this window or a child iframe is unloaded, but before the onunload event is emitted.
     *
@@ -205,7 +205,7 @@ trait win extends EventEmitter {
     * - (optional) frame {HTMLIFrameElement|any} Is the iframe object, or null if the event is for the window..
     */
   @JSName("on")
-  def `on_document-end`(
+  def on_documentend(
     event: nwDotJsLib.nwDotJsLibStrings.`document-end`,
     listener: js.Function1[/* frame */ stdLib.HTMLIFrameElement | js.Any, _]
   ): this.type = js.native
@@ -217,7 +217,7 @@ trait win extends EventEmitter {
     * - (optional) frame {HTMLIFrameElement|any} Is the iframe object, or null if the event is for the window..
     */
   @JSName("on")
-  def `on_document-start`(
+  def on_documentstart(
     event: nwDotJsLib.nwDotJsLibStrings.`document-start`,
     listener: js.Function1[/* frame */ stdLib.HTMLIFrameElement | js.Any, _]
   ): this.type = js.native
@@ -228,7 +228,7 @@ trait win extends EventEmitter {
     * @param listener {function} The callback that handles the `enter-fullscreen` event.
     */
   @JSName("on")
-  def `on_enter-fullscreen`(event: nwDotJsLib.nwDotJsLibStrings.`enter-fullscreen`, listener: js.Function0[_]): this.type = js.native
+  def on_enterfullscreen(event: nwDotJsLib.nwDotJsLibStrings.`enter-fullscreen`, listener: js.Function0[_]): this.type = js.native
   /**
     * Emitted when window gets focus.
     *
@@ -311,7 +311,7 @@ trait win extends EventEmitter {
     * - (optional) policy {Object} Is an object contain window policy.
     */
   @JSName("on")
-  def `on_new-win-policy`(
+  def on_newwinpolicy(
     event: nwDotJsLib.nwDotJsLibStrings.`new-win-policy`,
     listener: js.Function3[
       /* frame */ js.UndefOr[stdLib.HTMLIFrameElement | js.Any], 

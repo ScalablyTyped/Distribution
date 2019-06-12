@@ -7,6 +7,66 @@ import scala.scalajs.js.annotation._
 
 object activexDashAccessLibStrings {
   @js.native
+  sealed trait `;LANGID=0x0401;CP=1256;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x0405;CP=1250;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x0408;CP=1253;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x0409;CP=1252;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x040A;CP=1252;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x040B;CP=1252;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x040D;CP=1255;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x040E;CP=1250;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x040F;CP=1252;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x0413;CP=1252;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x0414;CP=1252;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x0415;CP=1250;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x0419;CP=1251;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x041D;CP=1252;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `;LANGID=0x041F;CP=1254;COUNTRY=0`
+    extends activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
   sealed trait Activate extends js.Object
   
   @js.native
@@ -229,6 +289,11 @@ object activexDashAccessLibStrings {
   sealed trait GotFocus extends js.Object
   
   @js.native
+  sealed trait `HTML (*DOThtml)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
+  
+  @js.native
   sealed trait Headers extends js.Object
   
   @js.native
@@ -270,8 +335,45 @@ object activexDashAccessLibStrings {
   sealed trait LostFocus extends js.Object
   
   @js.native
+  sealed trait `MS-DOS Text (*DOTtxt)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
+       with activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
   sealed trait `Microsoft Access (default)`
     extends activexDashAccessLib.AccessNs.DatabaseType
+  
+  @js.native
+  sealed trait `Microsoft Access Data Access Page (*DOThtm; *DOThtml)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
+  
+  @js.native
+  sealed trait `Microsoft Active Server Pages (*DOTasp)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
+  
+  @js.native
+  sealed trait `Microsoft Excel (*DOTxls)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
+       with activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
+  sealed trait `Microsoft Excel Binary Workbook (*DOTxlsb)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
+  
+  @js.native
+  sealed trait `Microsoft Excel Workbook (*DOTxlsx)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
+  
+  @js.native
+  sealed trait `Microsoft IIS (*DOThtx; *DOTidc)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
   
   @js.native
   sealed trait MouseDown extends js.Object
@@ -309,6 +411,11 @@ object activexDashAccessLibStrings {
   
   @js.native
   sealed trait Open extends js.Object
+  
+  @js.native
+  sealed trait `PDF Format (*DOTpdf)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
   
   @js.native
   sealed trait Page extends js.Object
@@ -375,6 +482,12 @@ object activexDashAccessLibStrings {
   sealed trait Retreat extends js.Object
   
   @js.native
+  sealed trait `Rich Text Format (*DOTrtf)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
+       with activexDashAccessLib.AccessNs.OldConstants
+  
+  @js.native
   sealed trait RowText extends js.Object
   
   @js.native
@@ -388,6 +501,11 @@ object activexDashAccessLibStrings {
   
   @js.native
   sealed trait Shift extends js.Object
+  
+  @js.native
+  sealed trait `Snapshot Format (*DOTsnp)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
   
   @js.native
   sealed trait SourceCtlName extends js.Object
@@ -454,6 +572,11 @@ object activexDashAccessLibStrings {
   sealed trait X extends js.Object
   
   @js.native
+  sealed trait `XPS Format (*DOTxps)`
+    extends activexDashAccessLib.AccessNs.AcOutputFormat
+       with activexDashAccessLib.AccessNs.Constants
+  
+  @js.native
   sealed trait Y extends js.Object
   
   @js.native
@@ -486,6 +609,36 @@ object activexDashAccessLibStrings {
   @js.native
   sealed trait pDisp extends js.Object
   
+  @scala.inline
+  def `;LANGID=0x0401;CP=1256;COUNTRY=0`: `;LANGID=0x0401;CP=1256;COUNTRY=0` = ";LANGID=0x0401;CP=1256;COUNTRY=0".asInstanceOf[`;LANGID=0x0401;CP=1256;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x0405;CP=1250;COUNTRY=0`: `;LANGID=0x0405;CP=1250;COUNTRY=0` = ";LANGID=0x0405;CP=1250;COUNTRY=0".asInstanceOf[`;LANGID=0x0405;CP=1250;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x0408;CP=1253;COUNTRY=0`: `;LANGID=0x0408;CP=1253;COUNTRY=0` = ";LANGID=0x0408;CP=1253;COUNTRY=0".asInstanceOf[`;LANGID=0x0408;CP=1253;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x0409;CP=1252;COUNTRY=0`: `;LANGID=0x0409;CP=1252;COUNTRY=0` = ";LANGID=0x0409;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x0409;CP=1252;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x040A;CP=1252;COUNTRY=0`: `;LANGID=0x040A;CP=1252;COUNTRY=0` = ";LANGID=0x040A;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x040A;CP=1252;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x040B;CP=1252;COUNTRY=0`: `;LANGID=0x040B;CP=1252;COUNTRY=0` = ";LANGID=0x040B;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x040B;CP=1252;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x040D;CP=1255;COUNTRY=0`: `;LANGID=0x040D;CP=1255;COUNTRY=0` = ";LANGID=0x040D;CP=1255;COUNTRY=0".asInstanceOf[`;LANGID=0x040D;CP=1255;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x040E;CP=1250;COUNTRY=0`: `;LANGID=0x040E;CP=1250;COUNTRY=0` = ";LANGID=0x040E;CP=1250;COUNTRY=0".asInstanceOf[`;LANGID=0x040E;CP=1250;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x040F;CP=1252;COUNTRY=0`: `;LANGID=0x040F;CP=1252;COUNTRY=0` = ";LANGID=0x040F;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x040F;CP=1252;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x0413;CP=1252;COUNTRY=0`: `;LANGID=0x0413;CP=1252;COUNTRY=0` = ";LANGID=0x0413;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x0413;CP=1252;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x0414;CP=1252;COUNTRY=0`: `;LANGID=0x0414;CP=1252;COUNTRY=0` = ";LANGID=0x0414;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x0414;CP=1252;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x0415;CP=1250;COUNTRY=0`: `;LANGID=0x0415;CP=1250;COUNTRY=0` = ";LANGID=0x0415;CP=1250;COUNTRY=0".asInstanceOf[`;LANGID=0x0415;CP=1250;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x0419;CP=1251;COUNTRY=0`: `;LANGID=0x0419;CP=1251;COUNTRY=0` = ";LANGID=0x0419;CP=1251;COUNTRY=0".asInstanceOf[`;LANGID=0x0419;CP=1251;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x041D;CP=1252;COUNTRY=0`: `;LANGID=0x041D;CP=1252;COUNTRY=0` = ";LANGID=0x041D;CP=1252;COUNTRY=0".asInstanceOf[`;LANGID=0x041D;CP=1252;COUNTRY=0`]
+  @scala.inline
+  def `;LANGID=0x041F;CP=1254;COUNTRY=0`: `;LANGID=0x041F;CP=1254;COUNTRY=0` = ";LANGID=0x041F;CP=1254;COUNTRY=0".asInstanceOf[`;LANGID=0x041F;CP=1254;COUNTRY=0`]
   @scala.inline
   def Activate: Activate = "Activate".asInstanceOf[Activate]
   @scala.inline
@@ -635,6 +788,8 @@ object activexDashAccessLibStrings {
   @scala.inline
   def GotFocus: GotFocus = "GotFocus".asInstanceOf[GotFocus]
   @scala.inline
+  def `HTML (*DOThtml)`: `HTML (*DOThtml)` = "HTML (*.html)".asInstanceOf[`HTML (*DOThtml)`]
+  @scala.inline
   def Headers: Headers = "Headers".asInstanceOf[Headers]
   @scala.inline
   def Initialize: Initialize = "Initialize".asInstanceOf[Initialize]
@@ -661,7 +816,21 @@ object activexDashAccessLibStrings {
   @scala.inline
   def LostFocus: LostFocus = "LostFocus".asInstanceOf[LostFocus]
   @scala.inline
+  def `MS-DOS Text (*DOTtxt)`: `MS-DOS Text (*DOTtxt)` = "MS-DOS Text (*.txt)".asInstanceOf[`MS-DOS Text (*DOTtxt)`]
+  @scala.inline
   def `Microsoft Access (default)`: `Microsoft Access (default)` = "Microsoft Access (default)".asInstanceOf[`Microsoft Access (default)`]
+  @scala.inline
+  def `Microsoft Access Data Access Page (*DOThtm; *DOThtml)`: `Microsoft Access Data Access Page (*DOThtm; *DOThtml)` = "Microsoft Access Data Access Page (*.htm; *.html)".asInstanceOf[`Microsoft Access Data Access Page (*DOThtm; *DOThtml)`]
+  @scala.inline
+  def `Microsoft Active Server Pages (*DOTasp)`: `Microsoft Active Server Pages (*DOTasp)` = "Microsoft Active Server Pages (*.asp)".asInstanceOf[`Microsoft Active Server Pages (*DOTasp)`]
+  @scala.inline
+  def `Microsoft Excel (*DOTxls)`: `Microsoft Excel (*DOTxls)` = "Microsoft Excel (*.xls)".asInstanceOf[`Microsoft Excel (*DOTxls)`]
+  @scala.inline
+  def `Microsoft Excel Binary Workbook (*DOTxlsb)`: `Microsoft Excel Binary Workbook (*DOTxlsb)` = "Microsoft Excel Binary Workbook (*.xlsb)".asInstanceOf[`Microsoft Excel Binary Workbook (*DOTxlsb)`]
+  @scala.inline
+  def `Microsoft Excel Workbook (*DOTxlsx)`: `Microsoft Excel Workbook (*DOTxlsx)` = "Microsoft Excel Workbook (*.xlsx)".asInstanceOf[`Microsoft Excel Workbook (*DOTxlsx)`]
+  @scala.inline
+  def `Microsoft IIS (*DOThtx; *DOTidc)`: `Microsoft IIS (*DOThtx; *DOTidc)` = "Microsoft IIS (*.htx; *.idc)".asInstanceOf[`Microsoft IIS (*DOThtx; *DOTidc)`]
   @scala.inline
   def MouseDown: MouseDown = "MouseDown".asInstanceOf[MouseDown]
   @scala.inline
@@ -686,6 +855,8 @@ object activexDashAccessLibStrings {
   def OnDisconnect: OnDisconnect = "OnDisconnect".asInstanceOf[OnDisconnect]
   @scala.inline
   def Open: Open = "Open".asInstanceOf[Open]
+  @scala.inline
+  def `PDF Format (*DOTpdf)`: `PDF Format (*DOTpdf)` = "PDF Format (*.pdf)".asInstanceOf[`PDF Format (*DOTpdf)`]
   @scala.inline
   def Page: Page = "Page".asInstanceOf[Page]
   @scala.inline
@@ -727,6 +898,8 @@ object activexDashAccessLibStrings {
   @scala.inline
   def Retreat: Retreat = "Retreat".asInstanceOf[Retreat]
   @scala.inline
+  def `Rich Text Format (*DOTrtf)`: `Rich Text Format (*DOTrtf)` = "Rich Text Format (*.rtf)".asInstanceOf[`Rich Text Format (*DOTrtf)`]
+  @scala.inline
   def RowText: RowText = "RowText".asInstanceOf[RowText]
   @scala.inline
   def ScreenTipText: ScreenTipText = "ScreenTipText".asInstanceOf[ScreenTipText]
@@ -736,6 +909,8 @@ object activexDashAccessLibStrings {
   def SelectionChange: SelectionChange = "SelectionChange".asInstanceOf[SelectionChange]
   @scala.inline
   def Shift: Shift = "Shift".asInstanceOf[Shift]
+  @scala.inline
+  def `Snapshot Format (*DOTsnp)`: `Snapshot Format (*DOTsnp)` = "Snapshot Format (*.snp)".asInstanceOf[`Snapshot Format (*DOTsnp)`]
   @scala.inline
   def SourceCtlName: SourceCtlName = "SourceCtlName".asInstanceOf[SourceCtlName]
   @scala.inline
@@ -778,6 +953,8 @@ object activexDashAccessLibStrings {
   def WSS: WSS = "WSS".asInstanceOf[WSS]
   @scala.inline
   def X: X = "X".asInstanceOf[X]
+  @scala.inline
+  def `XPS Format (*DOTxps)`: `XPS Format (*DOTxps)` = "XPS Format (*.xps)".asInstanceOf[`XPS Format (*DOTxps)`]
   @scala.inline
   def Y: Y = "Y".asInstanceOf[Y]
   @scala.inline

@@ -9,8 +9,10 @@ package object clientsCodecommitMod {
   type AccountId = java.lang.String
   type AdditionalData = java.lang.String
   type Arn = java.lang.String
+  type BatchDescribeMergeConflictsErrors = js.Array[BatchDescribeMergeConflictsError]
   type BranchName = java.lang.String
   type BranchNameList = js.Array[BranchName]
+  type CapitalBoolean = scala.Boolean
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.A
     - awsDashSdkLib.awsDashSdkLibStrings.M
@@ -28,6 +30,22 @@ package object clientsCodecommitMod {
   type CommentsForPullRequestData = js.Array[CommentsForPullRequest]
   type CommitId = java.lang.String
   type CommitName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FILE_LEVEL
+    - awsDashSdkLib.awsDashSdkLibStrings.LINE_LEVEL
+    - java.lang.String
+  */
+  type ConflictDetailLevelTypeEnum = _ConflictDetailLevelTypeEnum | java.lang.String
+  type ConflictMetadataList = js.Array[ConflictMetadata]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.ACCEPT_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.ACCEPT_DESTINATION
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTOMERGE
+    - java.lang.String
+  */
+  type ConflictResolutionStrategyTypeEnum = _ConflictResolutionStrategyTypeEnum | java.lang.String
+  type Conflicts = js.Array[Conflict]
   type Content = java.lang.String
   type CreationDate = stdLib.Date
   type DeleteFileEntries = js.Array[DeleteFileEntry]
@@ -35,6 +53,7 @@ package object clientsCodecommitMod {
   type DifferenceList = js.Array[Difference]
   type Email = java.lang.String
   type EventDate = stdLib.Date
+  type ExceptionName = java.lang.String
   type FileContent = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String
   type FileList = js.Array[File]
   /* Rewritten from type alias, can be one of: 
@@ -44,23 +63,48 @@ package object clientsCodecommitMod {
     - java.lang.String
   */
   type FileModeTypeEnum = _FileModeTypeEnum | java.lang.String
+  type FilePaths = js.Array[Path]
+  type FileSize = scala.Double
   type FilesMetadata = js.Array[FileMetadata]
   type FolderList = js.Array[Folder]
+  type HunkContent = java.lang.String
   type IsCommentDeleted = scala.Boolean
+  type IsContentConflict = scala.Boolean
+  type IsFileModeConflict = scala.Boolean
+  type IsHunkConflict = scala.Boolean
   type IsMergeable = scala.Boolean
   type IsMerged = scala.Boolean
   type IsMove = scala.Boolean
+  type IsObjectTypeConflict = scala.Boolean
   type KeepEmptyFolders = scala.Boolean
   type LastModifiedDate = stdLib.Date
   type Limit = scala.Double
+  type LineNumber = scala.Double
   type MaxResults = scala.Double
-  type MergeOptionTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.FAST_FORWARD_MERGE | java.lang.String
+  type MergeHunks = js.Array[MergeHunk]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FAST_FORWARD_MERGE
+    - awsDashSdkLib.awsDashSdkLibStrings.SQUASH_MERGE
+    - awsDashSdkLib.awsDashSdkLibStrings.THREE_WAY_MERGE
+    - java.lang.String
+  */
+  type MergeOptionTypeEnum = _MergeOptionTypeEnum | java.lang.String
+  type MergeOptions = js.Array[MergeOptionTypeEnum]
   type Message = java.lang.String
   type Mode = java.lang.String
   type Name = java.lang.String
   type NextToken = java.lang.String
+  type NumberOfConflicts = scala.Double
   type ObjectId = java.lang.String
   type ObjectSize = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FILE
+    - awsDashSdkLib.awsDashSdkLibStrings.DIRECTORY
+    - awsDashSdkLib.awsDashSdkLibStrings.GIT_LINK
+    - awsDashSdkLib.awsDashSdkLibStrings.SYMBOLIC_LINK
+    - java.lang.String
+  */
+  type ObjectTypeEnum = _ObjectTypeEnum | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ascending
     - awsDashSdkLib.awsDashSdkLibStrings.descending
@@ -96,6 +140,15 @@ package object clientsCodecommitMod {
     - java.lang.String
   */
   type RelativeFileVersionEnum = _RelativeFileVersionEnum | java.lang.String
+  type ReplaceContentEntries = js.Array[ReplaceContentEntry]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.KEEP_BASE
+    - awsDashSdkLib.awsDashSdkLibStrings.KEEP_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.KEEP_DESTINATION
+    - awsDashSdkLib.awsDashSdkLibStrings.USE_NEW_CONTENT
+    - java.lang.String
+  */
+  type ReplacementTypeEnum = _ReplacementTypeEnum | java.lang.String
   type RepositoryDescription = java.lang.String
   type RepositoryId = java.lang.String
   type RepositoryMetadataList = js.Array[RepositoryMetadata]

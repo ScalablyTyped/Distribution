@@ -23,6 +23,14 @@ package object connectNs {
     * @param agent A Contact object containing information about the current contact.
     */
   type ContactCallback = js.Function1[/* contact */ Contact, scala.Unit]
+  /**
+    *
+    * A callback to receive agent details
+    *
+    * @param agent An Agent object containing information about the currently
+    * signed-in agent.
+    */
+  type MuteCallback = js.Function1[/* muteState */ MuteState, scala.Unit]
   /*
     * A callback to receive notifications of success or failure.
     */

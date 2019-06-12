@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait UnionTypeNode
   extends TypeNode
      with UnionOrIntersectionTypeNode {
+  @JSName("kind")
+  var kind_UnionTypeNode: typescriptLib.typescriptMod.SyntaxKind.UnionType = js.native
   var types: NodeArray[TypeNode] = js.native
 }
 

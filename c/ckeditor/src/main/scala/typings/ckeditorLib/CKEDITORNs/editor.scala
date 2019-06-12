@@ -102,11 +102,13 @@ class editor () extends event {
   def getMenuItem(name: java.lang.String): IMenuItemDefinition = js.native
   def getResizable(forContents: scala.Boolean): ckeditorLib.CKEDITORNs.domNs.element = js.native
   def getSelectedHtml(): ckeditorLib.CKEDITORNs.domNs.documentFragment | java.lang.String = js.native
-  def getSelectedHtml(toString: ckeditorLib.ckeditorLibNumbers.`false`): ckeditorLib.CKEDITORNs.domNs.documentFragment = js.native
-  def getSelectedHtml(toString: ckeditorLib.ckeditorLibNumbers.`true`): java.lang.String = js.native
   def getSelectedHtml(toString: scala.Boolean): ckeditorLib.CKEDITORNs.domNs.documentFragment | java.lang.String = js.native
   @JSName("getSelectedHtml")
   def getSelectedHtml_documentFragment(): ckeditorLib.CKEDITORNs.domNs.documentFragment = js.native
+  @JSName("getSelectedHtml")
+  def getSelectedHtml_false(toString: ckeditorLib.ckeditorLibNumbers.`false`): ckeditorLib.CKEDITORNs.domNs.documentFragment = js.native
+  @JSName("getSelectedHtml")
+  def getSelectedHtml_true(toString: ckeditorLib.ckeditorLibNumbers.`true`): java.lang.String = js.native
   def getSelection(): ckeditorLib.CKEDITORNs.domNs.selection = js.native
   def getSelection(forceRealSelection: scala.Boolean): ckeditorLib.CKEDITORNs.domNs.selection = js.native
   def getSnapshot(): java.lang.String = js.native

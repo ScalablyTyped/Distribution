@@ -25,11 +25,13 @@ class ProtectedViewWindow protected () extends js.Object {
   def Close(): scala.Boolean = js.native
   def Edit(): Workbook = js.native
   def Edit(WriteResPassword: java.lang.String): Workbook = js.native
-  def Edit(
+  @JSName("Edit")
+  def Edit_0(
     WriteResPassword: java.lang.String,
     UpdateLinks: activexDashExcelLib.activexDashExcelLibNumbers.`0`
   ): Workbook = js.native
-  def Edit(
+  @JSName("Edit")
+  def Edit_1(
     WriteResPassword: java.lang.String,
     UpdateLinks: activexDashExcelLib.activexDashExcelLibNumbers.`1`
   ): Workbook = js.native

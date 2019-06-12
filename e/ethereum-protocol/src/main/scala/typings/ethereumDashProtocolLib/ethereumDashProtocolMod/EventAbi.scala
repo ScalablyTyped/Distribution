@@ -9,7 +9,7 @@ trait EventAbi extends AbiDefinition {
   var anonymous: scala.Boolean
   var inputs: js.Array[EventParameter]
   var name: java.lang.String
-  var `type`: AbiType
+  var `type`: ethereumDashProtocolLib.ethereumDashProtocolMod.AbiType.Event
 }
 
 object EventAbi {
@@ -18,7 +18,7 @@ object EventAbi {
     anonymous: scala.Boolean,
     inputs: js.Array[EventParameter],
     name: java.lang.String,
-    `type`: AbiType
+    `type`: ethereumDashProtocolLib.ethereumDashProtocolMod.AbiType.Event
   ): EventAbi = {
     val __obj = js.Dynamic.literal(anonymous = anonymous, inputs = inputs, name = name)
     __obj.updateDynamic("type")(`type`)

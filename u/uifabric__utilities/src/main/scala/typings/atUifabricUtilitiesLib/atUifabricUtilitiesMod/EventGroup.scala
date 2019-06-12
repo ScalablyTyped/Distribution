@@ -17,8 +17,8 @@ class EventGroup protected ()
 @JSImport("@uifabric/utilities", "EventGroup")
 @js.native
 object EventGroup extends js.Object {
+  var _isElement: js.Any = js.native
   var _uniqueId: js.Any = js.native
-  /* private */ def _isElement(target: js.Any): js.Any = js.native
   /** Check to see if the target has declared support of the given event. */
   def isDeclared(target: js.Any, eventName: java.lang.String): scala.Boolean = js.native
   def isObserved(target: js.Any, eventName: java.lang.String): scala.Boolean = js.native

@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait AutoUpdater extends EventEmitter {
   @JSName("addListener")
-  def `addListener_before-quit-for-update`(event: electronLib.electronLibStrings.`before-quit-for-update`, listener: js.Function): this.type = js.native
+  def addListener_beforequitforupdate(event: electronLib.electronLibStrings.`before-quit-for-update`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_checking-for-update`(event: electronLib.electronLibStrings.`checking-for-update`, listener: js.Function): this.type = js.native
+  def addListener_checkingforupdate(event: electronLib.electronLibStrings.`checking-for-update`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_error(
     event: electronLib.electronLibStrings.error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_update-available`(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
+  def addListener_updateavailable(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_update-downloaded`(
+  def addListener_updatedownloaded(
     event: electronLib.electronLibStrings.`update-downloaded`,
     listener: js.Function5[
       /* event */ Event, 
@@ -31,7 +31,7 @@ trait AutoUpdater extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_update-not-available`(event: electronLib.electronLibStrings.`update-not-available`, listener: js.Function): this.type = js.native
+  def addListener_updatenotavailable(event: electronLib.electronLibStrings.`update-not-available`, listener: js.Function): this.type = js.native
   /**
     * Asks the server whether there is an update. You must call setFeedURL before
     * using this API.
@@ -47,12 +47,12 @@ trait AutoUpdater extends EventEmitter {
     * before-quit.
     */
   @JSName("on")
-  def `on_before-quit-for-update`(event: electronLib.electronLibStrings.`before-quit-for-update`, listener: js.Function): this.type = js.native
+  def on_beforequitforupdate(event: electronLib.electronLibStrings.`before-quit-for-update`, listener: js.Function): this.type = js.native
   /**
     * Emitted when checking if an update has started.
     */
   @JSName("on")
-  def `on_checking-for-update`(event: electronLib.electronLibStrings.`checking-for-update`, listener: js.Function): this.type = js.native
+  def on_checkingforupdate(event: electronLib.electronLibStrings.`checking-for-update`, listener: js.Function): this.type = js.native
   /**
     * Emitted when there is an error while updating.
     */
@@ -66,7 +66,7 @@ trait AutoUpdater extends EventEmitter {
     * automatically.
     */
   @JSName("on")
-  def `on_update-available`(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
+  def on_updateavailable(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
   /**
     * Emitted when an update has been downloaded. On Windows only releaseName is
     * available. Note: It is not strictly necessary to handle this event. A
@@ -74,7 +74,7 @@ trait AutoUpdater extends EventEmitter {
     * application starts.
     */
   @JSName("on")
-  def `on_update-downloaded`(
+  def on_updatedownloaded(
     event: electronLib.electronLibStrings.`update-downloaded`,
     listener: js.Function5[
       /* event */ Event, 
@@ -89,20 +89,20 @@ trait AutoUpdater extends EventEmitter {
     * Emitted when there is no available update.
     */
   @JSName("on")
-  def `on_update-not-available`(event: electronLib.electronLibStrings.`update-not-available`, listener: js.Function): this.type = js.native
+  def on_updatenotavailable(event: electronLib.electronLibStrings.`update-not-available`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_before-quit-for-update`(event: electronLib.electronLibStrings.`before-quit-for-update`, listener: js.Function): this.type = js.native
+  def once_beforequitforupdate(event: electronLib.electronLibStrings.`before-quit-for-update`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_checking-for-update`(event: electronLib.electronLibStrings.`checking-for-update`, listener: js.Function): this.type = js.native
+  def once_checkingforupdate(event: electronLib.electronLibStrings.`checking-for-update`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_error(
     event: electronLib.electronLibStrings.error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_update-available`(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
+  def once_updateavailable(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_update-downloaded`(
+  def once_updatedownloaded(
     event: electronLib.electronLibStrings.`update-downloaded`,
     listener: js.Function5[
       /* event */ Event, 
@@ -114,7 +114,7 @@ trait AutoUpdater extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_update-not-available`(event: electronLib.electronLibStrings.`update-not-available`, listener: js.Function): this.type = js.native
+  def once_updatenotavailable(event: electronLib.electronLibStrings.`update-not-available`, listener: js.Function): this.type = js.native
   /**
     * Restarts the app and installs the update after it has been downloaded. It should
     * only be called after update-downloaded has been emitted. Under the hood calling
@@ -126,18 +126,18 @@ trait AutoUpdater extends EventEmitter {
     */
   def quitAndInstall(): scala.Unit = js.native
   @JSName("removeListener")
-  def `removeListener_before-quit-for-update`(event: electronLib.electronLibStrings.`before-quit-for-update`, listener: js.Function): this.type = js.native
+  def removeListener_beforequitforupdate(event: electronLib.electronLibStrings.`before-quit-for-update`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_checking-for-update`(event: electronLib.electronLibStrings.`checking-for-update`, listener: js.Function): this.type = js.native
+  def removeListener_checkingforupdate(event: electronLib.electronLibStrings.`checking-for-update`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_error(
     event: electronLib.electronLibStrings.error,
     listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_update-available`(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
+  def removeListener_updateavailable(event: electronLib.electronLibStrings.`update-available`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_update-downloaded`(
+  def removeListener_updatedownloaded(
     event: electronLib.electronLibStrings.`update-downloaded`,
     listener: js.Function5[
       /* event */ Event, 
@@ -149,7 +149,7 @@ trait AutoUpdater extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_update-not-available`(event: electronLib.electronLibStrings.`update-not-available`, listener: js.Function): this.type = js.native
+  def removeListener_updatenotavailable(event: electronLib.electronLibStrings.`update-not-available`, listener: js.Function): this.type = js.native
   /**
     * Sets the url and initialize the auto updater.
     */

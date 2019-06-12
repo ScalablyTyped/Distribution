@@ -14,6 +14,8 @@ trait VariableDeclaration
      with _BindingOrAssignmentElement {
   var exclamationToken: js.UndefOr[ExclamationToken] = js.native
   var initializer: js.UndefOr[Expression] = js.native
+  @JSName("kind")
+  var kind_VariableDeclaration: typescriptLib.typescriptMod.SyntaxKind.VariableDeclaration = js.native
   @JSName("name")
   var name_VariableDeclaration: BindingName = js.native
   @JSName("parent")

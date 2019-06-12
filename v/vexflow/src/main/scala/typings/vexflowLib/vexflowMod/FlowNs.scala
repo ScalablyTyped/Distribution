@@ -480,26 +480,8 @@ object FlowNs extends js.Object {
   @js.native
   object AnnotationNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
-    @js.native
-    object Justify extends js.Object {
-      val CENTER: vexflowLib.VexNs.FlowNs.AnnotationNs.Justify.CENTER with scala.Double = js.native
-      val CENTER_STEM: vexflowLib.VexNs.FlowNs.AnnotationNs.Justify.CENTER_STEM with scala.Double = js.native
-      /* 1 */ val LEFT: vexflowLib.VexNs.FlowNs.AnnotationNs.Justify.LEFT with scala.Double = js.native
-      val RIGHT: vexflowLib.VexNs.FlowNs.AnnotationNs.Justify.RIGHT with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.AnnotationNs.Justify with scala.Double] = js.native
-    }
-    
-    @js.native
-    object VerticalJustify extends js.Object {
-      val BOTTOM: vexflowLib.VexNs.FlowNs.AnnotationNs.VerticalJustify.BOTTOM with scala.Double = js.native
-      val CENTER: vexflowLib.VexNs.FlowNs.AnnotationNs.VerticalJustify.CENTER with scala.Double = js.native
-      val CENTER_STEM: vexflowLib.VexNs.FlowNs.AnnotationNs.VerticalJustify.CENTER_STEM with scala.Double = js.native
-      /* 1 */ val TOP: vexflowLib.VexNs.FlowNs.AnnotationNs.VerticalJustify.TOP with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.AnnotationNs.VerticalJustify with scala.Double] = js.native
-    }
-    
+    type Justify = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type VerticalJustify = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   /* static members */
@@ -524,19 +506,7 @@ object FlowNs extends js.Object {
   @JSName("Barline")
   @js.native
   object BarlineNs extends js.Object {
-    @js.native
-    object `type` extends js.Object {
-      val DOUBLE: vexflowLib.VexNs.FlowNs.BarlineNs.`type`.DOUBLE with scala.Double = js.native
-      val END: vexflowLib.VexNs.FlowNs.BarlineNs.`type`.END with scala.Double = js.native
-      val NONE: vexflowLib.VexNs.FlowNs.BarlineNs.`type`.NONE with scala.Double = js.native
-      val REPEAT_BEGIN: vexflowLib.VexNs.FlowNs.BarlineNs.`type`.REPEAT_BEGIN with scala.Double = js.native
-      val REPEAT_BOTH: vexflowLib.VexNs.FlowNs.BarlineNs.`type`.REPEAT_BOTH with scala.Double = js.native
-      val REPEAT_END: vexflowLib.VexNs.FlowNs.BarlineNs.`type`.REPEAT_END with scala.Double = js.native
-      /* 1 */ val SINGLE: vexflowLib.VexNs.FlowNs.BarlineNs.`type`.SINGLE with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.BarlineNs.`type` with scala.Double] = js.native
-    }
-    
+    type `type` = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   /* static members */
@@ -600,14 +570,7 @@ object FlowNs extends js.Object {
   @JSName("Curve")
   @js.native
   object CurveNs extends js.Object {
-    @js.native
-    object Position extends js.Object {
-      /* 1 */ val NEAR_HEAD: vexflowLib.VexNs.FlowNs.CurveNs.Position.NEAR_HEAD with scala.Double = js.native
-      val NEAR_TOP: vexflowLib.VexNs.FlowNs.CurveNs.Position.NEAR_TOP with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.CurveNs.Position with scala.Double] = js.native
-    }
-    
+    type Position = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   /* static members */
@@ -781,16 +744,7 @@ object FlowNs extends js.Object {
   @js.native
   object ModifierNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
-    @js.native
-    object Position extends js.Object {
-      val ABOVE: vexflowLib.VexNs.FlowNs.ModifierNs.Position.ABOVE with scala.Double = js.native
-      val BELOW: vexflowLib.VexNs.FlowNs.ModifierNs.Position.BELOW with scala.Double = js.native
-      /* 1 */ val LEFT: vexflowLib.VexNs.FlowNs.ModifierNs.Position.LEFT with scala.Double = js.native
-      val RIGHT: vexflowLib.VexNs.FlowNs.ModifierNs.Position.RIGHT with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.ModifierNs.Position with scala.Double] = js.native
-    }
-    
+    type Position = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   @JSName("Music")
@@ -866,15 +820,7 @@ object FlowNs extends js.Object {
     object GLYPHS
       extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_CodeXshift]
     
-    @js.native
-    object Styles extends js.Object {
-      val BRACKET: vexflowLib.VexNs.FlowNs.PedalMarkingNs.Styles.BRACKET with scala.Double = js.native
-      val MIXED: vexflowLib.VexNs.FlowNs.PedalMarkingNs.Styles.MIXED with scala.Double = js.native
-      /* 1 */ val TEXT: vexflowLib.VexNs.FlowNs.PedalMarkingNs.Styles.TEXT with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.PedalMarkingNs.Styles with scala.Double] = js.native
-    }
-    
+    type Styles = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   /* static members */
@@ -955,68 +901,31 @@ object FlowNs extends js.Object {
   @JSName("Renderer")
   @js.native
   object RendererNs extends js.Object {
-    @js.native
-    object Backends extends js.Object {
-      /* 1 */ val CANVAS: vexflowLib.VexNs.FlowNs.RendererNs.Backends.CANVAS with scala.Double = js.native
-      val RAPHAEL: vexflowLib.VexNs.FlowNs.RendererNs.Backends.RAPHAEL with scala.Double = js.native
-      val SVG: vexflowLib.VexNs.FlowNs.RendererNs.Backends.SVG with scala.Double = js.native
-      val VML: vexflowLib.VexNs.FlowNs.RendererNs.Backends.VML with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.RendererNs.Backends with scala.Double] = js.native
-    }
-    
-    @js.native
-    object LineEndType extends js.Object {
-      val DOWN: vexflowLib.VexNs.FlowNs.RendererNs.LineEndType.DOWN with scala.Double = js.native
-      /* 1 */ val NONE: vexflowLib.VexNs.FlowNs.RendererNs.LineEndType.NONE with scala.Double = js.native
-      val UP: vexflowLib.VexNs.FlowNs.RendererNs.LineEndType.UP with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.RendererNs.LineEndType with scala.Double] = js.native
-    }
-    
+    type Backends = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type LineEndType = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   @JSName("Repetition")
   @js.native
   object RepetitionNs extends js.Object {
-    @js.native
-    object `type` extends js.Object {
-      val CODA_LEFT: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.CODA_LEFT with scala.Double = js.native
-      val CODA_RIGHT: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.CODA_RIGHT with scala.Double = js.native
-      val DC: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.DC with scala.Double = js.native
-      val DC_AL_CODA: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.DC_AL_CODA with scala.Double = js.native
-      val DC_AL_FINE: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.DC_AL_FINE with scala.Double = js.native
-      val DS: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.DS with scala.Double = js.native
-      val DS_AL_CODA: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.DS_AL_CODA with scala.Double = js.native
-      val DS_AL_FINE: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.DS_AL_FINE with scala.Double = js.native
-      val FINE: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.FINE with scala.Double = js.native
-      /* 1 */ val NONE: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.NONE with scala.Double = js.native
-      val SEGNO_LEFT: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.SEGNO_LEFT with scala.Double = js.native
-      val SEGNO_RIGHT: vexflowLib.VexNs.FlowNs.RepetitionNs.`type`.SEGNO_RIGHT with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.RepetitionNs.`type` with scala.Double] = js.native
-    }
-    
+    type `type` = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   @JSName("StaveConnector")
   @js.native
   object StaveConnectorNs extends js.Object {
-    @js.native
-    object `type` extends js.Object {
-      /* 5 */ val BOLD_DOUBLE_LEFT: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.BOLD_DOUBLE_LEFT with scala.Double = js.native
-      /* 6 */ val BOLD_DOUBLE_RIGHT: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.BOLD_DOUBLE_RIGHT with scala.Double = js.native
-      /* 3 */ val BRACE: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.BRACE with scala.Double = js.native
-      /* 4 */ val BRACKET: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.BRACKET with scala.Double = js.native
-      /* 2 */ val DOUBLE: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.DOUBLE with scala.Double = js.native
-      /* 8 */ val NONE: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.NONE with scala.Double = js.native
-      /* 1 */ val SINGLE: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.SINGLE with scala.Double = js.native
-      /* 1 */ val SINGLE_LEFT: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.SINGLE_LEFT with scala.Double = js.native
-      /* 0 */ val SINGLE_RIGHT: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.SINGLE_RIGHT with scala.Double = js.native
-      /* 7 */ val THIN_DOUBLE: vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`.THIN_DOUBLE with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type` with scala.Double] = js.native
-    }
+    /* Rewritten from type alias, can be one of: 
+      - vexflowLib.vexflowLibNumbers.`0`
+      - vexflowLib.vexflowLibNumbers.`1`
+      - vexflowLib.vexflowLibNumbers.`2`
+      - vexflowLib.vexflowLibNumbers.`3`
+      - vexflowLib.vexflowLibNumbers.`4`
+      - vexflowLib.vexflowLibNumbers.`5`
+      - vexflowLib.vexflowLibNumbers.`6`
+      - vexflowLib.vexflowLibNumbers.`7`
+      - vexflowLib.vexflowLibNumbers.`8`
+    */
+    trait `type` extends js.Object
     
   }
   
@@ -1043,53 +952,29 @@ object FlowNs extends js.Object {
   @JSName("StaveHairpin")
   @js.native
   object StaveHairpinNs extends js.Object {
-    @js.native
-    object `type` extends js.Object {
-      /* 1 */ val CRESC: vexflowLib.VexNs.FlowNs.StaveHairpinNs.`type`.CRESC with scala.Double = js.native
-      val DECRESC: vexflowLib.VexNs.FlowNs.StaveHairpinNs.`type`.DECRESC with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.StaveHairpinNs.`type` with scala.Double] = js.native
-    }
-    
+    type `type` = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   @JSName("StaveLine")
   @js.native
   object StaveLineNs extends js.Object {
-    @js.native
-    object TextJustification extends js.Object {
-      val CENTER: vexflowLib.VexNs.FlowNs.StaveLineNs.TextJustification.CENTER with scala.Double = js.native
-      /* 1 */ val LEFT: vexflowLib.VexNs.FlowNs.StaveLineNs.TextJustification.LEFT with scala.Double = js.native
-      val RIGHT: vexflowLib.VexNs.FlowNs.StaveLineNs.TextJustification.RIGHT with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.StaveLineNs.TextJustification with scala.Double] = js.native
-    }
-    
-    @js.native
-    object TextVerticalPosition extends js.Object {
-      val BOTTOM: vexflowLib.VexNs.FlowNs.StaveLineNs.TextVerticalPosition.BOTTOM with scala.Double = js.native
-      /* 1 */ val TOP: vexflowLib.VexNs.FlowNs.StaveLineNs.TextVerticalPosition.TOP with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.StaveLineNs.TextVerticalPosition with scala.Double] = js.native
-    }
-    
+    type TextJustification = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
+    type TextVerticalPosition = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   @JSName("StaveModifier")
   @js.native
   object StaveModifierNs extends js.Object {
     // @see https://github.com/0xfe/vexflow/blob/master/src/stavemodifier.js#L9
-    @js.native
-    object Position extends js.Object {
-      /* 3 */ val ABOVE: vexflowLib.VexNs.FlowNs.StaveModifierNs.Position.ABOVE with scala.Double = js.native
-      /* 5 */ val BEGIN: vexflowLib.VexNs.FlowNs.StaveModifierNs.Position.BEGIN with scala.Double = js.native
-      /* 4 */ val BELOW: vexflowLib.VexNs.FlowNs.StaveModifierNs.Position.BELOW with scala.Double = js.native
-      /* 6 */ val END: vexflowLib.VexNs.FlowNs.StaveModifierNs.Position.END with scala.Double = js.native
-      /* 1 */ val LEFT: vexflowLib.VexNs.FlowNs.StaveModifierNs.Position.LEFT with scala.Double = js.native
-      /* 2 */ val RIGHT: vexflowLib.VexNs.FlowNs.StaveModifierNs.Position.RIGHT with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.StaveModifierNs.Position with scala.Double] = js.native
-    }
+    /* Rewritten from type alias, can be one of: 
+      - vexflowLib.vexflowLibNumbers.`1`
+      - vexflowLib.vexflowLibNumbers.`2`
+      - vexflowLib.vexflowLibNumbers.`3`
+      - vexflowLib.vexflowLibNumbers.`4`
+      - vexflowLib.vexflowLibNumbers.`5`
+      - vexflowLib.vexflowLibNumbers.`6`
+    */
+    trait Position extends js.Object
     
   }
   
@@ -1151,19 +1036,7 @@ object FlowNs extends js.Object {
   @js.native
   object StrokeNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
-    @js.native
-    object Type extends js.Object {
-      val ARPEGGIO_DIRECTIONLESS: vexflowLib.VexNs.FlowNs.StrokeNs.Type.ARPEGGIO_DIRECTIONLESS with scala.Double = js.native
-      /* 1 */ val BRUSH_DOWN: vexflowLib.VexNs.FlowNs.StrokeNs.Type.BRUSH_DOWN with scala.Double = js.native
-      val BRUSH_UP: vexflowLib.VexNs.FlowNs.StrokeNs.Type.BRUSH_UP with scala.Double = js.native
-      val RASQUEDO_DOWN: vexflowLib.VexNs.FlowNs.StrokeNs.Type.RASQUEDO_DOWN with scala.Double = js.native
-      val RASQUEDO_UP: vexflowLib.VexNs.FlowNs.StrokeNs.Type.RASQUEDO_UP with scala.Double = js.native
-      val ROLL_DOWN: vexflowLib.VexNs.FlowNs.StrokeNs.Type.ROLL_DOWN with scala.Double = js.native
-      val ROLL_UP: vexflowLib.VexNs.FlowNs.StrokeNs.Type.ROLL_UP with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.StrokeNs.Type with scala.Double] = js.native
-    }
-    
+    type Type = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   @js.native
@@ -1196,13 +1069,11 @@ object FlowNs extends js.Object {
   @JSName("TextBracket")
   @js.native
   object TextBracketNs extends js.Object {
-    @js.native
-    object Positions extends js.Object {
-      /* -1 */ val BOTTOM: vexflowLib.VexNs.FlowNs.TextBracketNs.Positions.BOTTOM with scala.Double = js.native
-      /* 1 */ val TOP: vexflowLib.VexNs.FlowNs.TextBracketNs.Positions.TOP with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.TextBracketNs.Positions with scala.Double] = js.native
-    }
+    /* Rewritten from type alias, can be one of: 
+      - vexflowLib.vexflowLibNumbers.`1`
+      - vexflowLib.vexflowLibNumbers.`-1`
+    */
+    trait Positions extends js.Object
     
   }
   
@@ -1219,15 +1090,7 @@ object FlowNs extends js.Object {
     object GLYPHS
       extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_CodePoint]
     
-    @js.native
-    object Justification extends js.Object {
-      val CENTER: vexflowLib.VexNs.FlowNs.TextNoteNs.Justification.CENTER with scala.Double = js.native
-      /* 1 */ val LEFT: vexflowLib.VexNs.FlowNs.TextNoteNs.Justification.LEFT with scala.Double = js.native
-      val RIGHT: vexflowLib.VexNs.FlowNs.TextNoteNs.Justification.RIGHT with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.TextNoteNs.Justification with scala.Double] = js.native
-    }
-    
+    type Justification = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   /* static members */
@@ -1280,31 +1143,13 @@ object FlowNs extends js.Object {
   @JSName("Voice")
   @js.native
   object VoiceNs extends js.Object {
-    @js.native
-    object Mode extends js.Object {
-      val FULL: vexflowLib.VexNs.FlowNs.VoiceNs.Mode.FULL with scala.Double = js.native
-      val SOFT: vexflowLib.VexNs.FlowNs.VoiceNs.Mode.SOFT with scala.Double = js.native
-      /* 1 */ val STRICT: vexflowLib.VexNs.FlowNs.VoiceNs.Mode.STRICT with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.VoiceNs.Mode with scala.Double] = js.native
-    }
-    
+    type Mode = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   @JSName("Volta")
   @js.native
   object VoltaNs extends js.Object {
-    @js.native
-    object `type` extends js.Object {
-      val BEGIN: vexflowLib.VexNs.FlowNs.VoltaNs.`type`.BEGIN with scala.Double = js.native
-      val BEGIN_END: vexflowLib.VexNs.FlowNs.VoltaNs.`type`.BEGIN_END with scala.Double = js.native
-      val END: vexflowLib.VexNs.FlowNs.VoltaNs.`type`.END with scala.Double = js.native
-      val MID: vexflowLib.VexNs.FlowNs.VoltaNs.`type`.MID with scala.Double = js.native
-      /* 1 */ val NONE: vexflowLib.VexNs.FlowNs.VoltaNs.`type`.NONE with scala.Double = js.native
-      @JSBracketAccess
-      def apply(value: scala.Double): js.UndefOr[vexflowLib.VexNs.FlowNs.VoltaNs.`type` with scala.Double] = js.native
-    }
-    
+    type `type` = vexflowLib.vexflowLibNumbers.`1` | java.lang.String | scala.Double
   }
   
   @js.native

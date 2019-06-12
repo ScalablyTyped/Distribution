@@ -6983,13 +6983,13 @@ trait XIdlReflection
     aTypeName: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.comDOTsunDOTstarDOTuriDOTUriReferenceFactory
   ): XIdlClass[activexDashLibreofficeLib.comNs.sunNs.starNs.uriNs.UriReferenceFactory] = js.native
   @JSName("forName")
-  def forName_comsunstaruriUriSchemeParser_vndDOTsunDOTstarDOTexpand(
+  def forName_comsunstaruriUriSchemeParservndDOTsunDOTstarDOTexpand(
     aTypeName: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.comDOTsunDOTstarDOTuriDOTUriSchemeParser_vndDOTsunDOTstarDOTexpand
   ): XIdlClass[
     activexDashLibreofficeLib.comNs.sunNs.starNs.uriNs.UriSchemeParser_vndDOTsunDOTstarDOTexpand
   ] = js.native
   @JSName("forName")
-  def forName_comsunstaruriUriSchemeParser_vndDOTsunDOTstarDOTscript(
+  def forName_comsunstaruriUriSchemeParservndDOTsunDOTstarDOTscript(
     aTypeName: activexDashLibreofficeLib.activexDashLibreofficeLibStrings.comDOTsunDOTstarDOTuriDOTUriSchemeParser_vndDOTsunDOTstarDOTscript
   ): XIdlClass[
     activexDashLibreofficeLib.comNs.sunNs.starNs.uriNs.UriSchemeParser_vndDOTsunDOTstarDOTscript

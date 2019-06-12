@@ -37,25 +37,28 @@ class Application protected () extends js.Object {
   def AdvancedSearch(Scope: java.lang.String, Filter: js.Any, SearchSubFolders: js.Any): Search = js.native
   def AdvancedSearch(Scope: java.lang.String, Filter: js.Any, SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
   def CopyFile(FilePath: java.lang.String, DestFolderPath: java.lang.String): js.Any = js.native
-  def CreateItem(ItemType: OlItemType): ContactItem = js.native
   def CreateItemFromTemplate(TemplatePath: java.lang.String): js.Any = js.native
   def CreateItemFromTemplate(TemplatePath: java.lang.String, InFolder: js.Any): js.Any = js.native
   @JSName("CreateItem")
-  def CreateItem_AppointmentItem(ItemType: OlItemType): AppointmentItem = js.native
+  def CreateItem_0(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`0`): MailItem = js.native
   @JSName("CreateItem")
-  def CreateItem_DistListItem(ItemType: OlItemType): DistListItem = js.native
+  def CreateItem_1(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`1`): AppointmentItem = js.native
   @JSName("CreateItem")
-  def CreateItem_JournalItem(ItemType: OlItemType): JournalItem = js.native
+  def CreateItem_11(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`11`): MobileItem = js.native
   @JSName("CreateItem")
-  def CreateItem_MailItem(ItemType: OlItemType): MailItem = js.native
+  def CreateItem_12(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`12`): MobileItem = js.native
   @JSName("CreateItem")
-  def CreateItem_MobileItem(ItemType: OlItemType): MobileItem = js.native
+  def CreateItem_2(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`2`): ContactItem = js.native
   @JSName("CreateItem")
-  def CreateItem_NoteItem(ItemType: OlItemType): NoteItem = js.native
+  def CreateItem_3(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`3`): TaskItem = js.native
   @JSName("CreateItem")
-  def CreateItem_PostItem(ItemType: OlItemType): PostItem = js.native
+  def CreateItem_4(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`4`): JournalItem = js.native
   @JSName("CreateItem")
-  def CreateItem_TaskItem(ItemType: OlItemType): TaskItem = js.native
+  def CreateItem_5(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`5`): NoteItem = js.native
+  @JSName("CreateItem")
+  def CreateItem_6(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`6`): PostItem = js.native
+  @JSName("CreateItem")
+  def CreateItem_7(ItemType: activexDashOutlookLib.activexDashOutlookLibNumbers.`7`): DistListItem = js.native
   def CreateObject(ObjectName: java.lang.String): js.Any = js.native
   def GetNamespace(Type: java.lang.String): NameSpace = js.native
   def GetNewNickNames(pvar: js.Any): scala.Unit = js.native

@@ -141,30 +141,6 @@ trait Argv[T] extends js.Object {
     handler: js.Function1[/* args */ Arguments[U], scala.Unit]
   ): Argv[T] = js.native
   def command[U](command: java.lang.String, description: java.lang.String, module: CommandModule[T, U]): Argv[U] = js.native
-  def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: java.lang.String, showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
-  def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: java.lang.String, showInHelp: yargsLib.yargsLibNumbers.`false`, builder: O): Argv[T] = js.native
-  def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](
-    command: java.lang.String,
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: O,
-    handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], scala.Unit]
-  ): Argv[T] = js.native
-  def command[U](
-    command: java.lang.String,
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: js.Function1[/* args */ Argv[T], Argv[U]]
-  ): Argv[T] = js.native
-  def command[U](
-    command: java.lang.String,
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: js.Function1[/* args */ Argv[T], Argv[U]],
-    handler: js.Function1[/* args */ Arguments[U], scala.Unit]
-  ): Argv[T] = js.native
-  def command[U](
-    command: java.lang.String,
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    module: CommandModule[T, U]
-  ): Argv[U] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: js.Array[java.lang.String], description: java.lang.String): Argv[T] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: js.Array[java.lang.String], description: java.lang.String, builder: O): Argv[T] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](
@@ -185,30 +161,6 @@ trait Argv[T] extends js.Object {
     handler: js.Function1[/* args */ Arguments[U], scala.Unit]
   ): Argv[T] = js.native
   def command[U](command: js.Array[java.lang.String], description: java.lang.String, module: CommandModule[T, U]): Argv[U] = js.native
-  def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: js.Array[java.lang.String], showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
-  def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: js.Array[java.lang.String], showInHelp: yargsLib.yargsLibNumbers.`false`, builder: O): Argv[T] = js.native
-  def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](
-    command: js.Array[java.lang.String],
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: O,
-    handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], scala.Unit]
-  ): Argv[T] = js.native
-  def command[U](
-    command: js.Array[java.lang.String],
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: js.Function1[/* args */ Argv[T], Argv[U]]
-  ): Argv[T] = js.native
-  def command[U](
-    command: js.Array[java.lang.String],
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    builder: js.Function1[/* args */ Argv[T], Argv[U]],
-    handler: js.Function1[/* args */ Arguments[U], scala.Unit]
-  ): Argv[T] = js.native
-  def command[U](
-    command: js.Array[java.lang.String],
-    showInHelp: yargsLib.yargsLibNumbers.`false`,
-    module: CommandModule[T, U]
-  ): Argv[U] = js.native
   def command[U](module: CommandModule[T, U]): Argv[U] = js.native
   // Advanced API
   /** Apply command modules from a directory relative to the module calling this method. */
@@ -226,11 +178,71 @@ trait Argv[T] extends js.Object {
   @JSName("command")
   def command_U[U](command: java.lang.String, description: java.lang.String): Argv[T] = js.native
   @JSName("command")
-  def command_U[U](command: java.lang.String, showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
-  @JSName("command")
   def command_U[U](command: js.Array[java.lang.String], description: java.lang.String): Argv[T] = js.native
   @JSName("command")
-  def command_U[U](command: js.Array[java.lang.String], showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
+  def command_false[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: java.lang.String, showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
+  @JSName("command")
+  def command_false[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: java.lang.String, showInHelp: yargsLib.yargsLibNumbers.`false`, builder: O): Argv[T] = js.native
+  @JSName("command")
+  def command_false[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](
+    command: java.lang.String,
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: O,
+    handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], scala.Unit]
+  ): Argv[T] = js.native
+  @JSName("command")
+  def command_false[U](
+    command: java.lang.String,
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: js.Function1[/* args */ Argv[T], Argv[U]]
+  ): Argv[T] = js.native
+  @JSName("command")
+  def command_false[U](
+    command: java.lang.String,
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: js.Function1[/* args */ Argv[T], Argv[U]],
+    handler: js.Function1[/* args */ Arguments[U], scala.Unit]
+  ): Argv[T] = js.native
+  @JSName("command")
+  def command_false[U](
+    command: java.lang.String,
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    module: CommandModule[T, U]
+  ): Argv[U] = js.native
+  @JSName("command")
+  def command_false[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: js.Array[java.lang.String], showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
+  @JSName("command")
+  def command_false[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: js.Array[java.lang.String], showInHelp: yargsLib.yargsLibNumbers.`false`, builder: O): Argv[T] = js.native
+  @JSName("command")
+  def command_false[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](
+    command: js.Array[java.lang.String],
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: O,
+    handler: js.Function1[/* args */ Arguments[InferredOptionTypes[O]], scala.Unit]
+  ): Argv[T] = js.native
+  @JSName("command")
+  def command_false[U](
+    command: js.Array[java.lang.String],
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: js.Function1[/* args */ Argv[T], Argv[U]]
+  ): Argv[T] = js.native
+  @JSName("command")
+  def command_false[U](
+    command: js.Array[java.lang.String],
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    builder: js.Function1[/* args */ Argv[T], Argv[U]],
+    handler: js.Function1[/* args */ Arguments[U], scala.Unit]
+  ): Argv[T] = js.native
+  @JSName("command")
+  def command_false[U](
+    command: js.Array[java.lang.String],
+    showInHelp: yargsLib.yargsLibNumbers.`false`,
+    module: CommandModule[T, U]
+  ): Argv[U] = js.native
+  @JSName("command")
+  def command_false_U[U](command: java.lang.String, showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
+  @JSName("command")
+  def command_false_U[U](command: js.Array[java.lang.String], showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
   /**
     * Enable bash/zsh-completion shortcuts for commands and options.
     *
@@ -326,9 +338,7 @@ trait Argv[T] extends js.Object {
     */
   def demand[K /* <: java.lang.String */](key: K): Argv[Defined[T, K]] = js.native
   def demand[K /* <: java.lang.String */](key: K, msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  def demand[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   def demand[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  def demand[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   /**
     * Demand in context of commands.
     * You can demand a minimum and a maximum number a user can have within your program, as well as provide corresponding error messages if either of the demands is not met.
@@ -351,13 +361,19 @@ trait Argv[T] extends js.Object {
     */
   def demandOption[K /* <: java.lang.String */](key: K): Argv[Defined[T, K]] = js.native
   def demandOption[K /* <: java.lang.String */](key: K, msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  def demandOption[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   def demandOption[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  def demandOption[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   @JSName("demandOption")
   def demandOption_KString[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
+  @JSName("demandOption")
+  def demandOption_true[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
+  @JSName("demandOption")
+  def demandOption_true[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   @JSName("demand")
   def demand_KString[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
+  @JSName("demand")
+  def demand_true[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
+  @JSName("demand")
+  def demand_true[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   def describe(descriptions: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Argv[T] = js.native
   /**
     * Describe a `key` for the generated usage information.
@@ -567,11 +583,13 @@ trait Argv[T] extends js.Object {
     */
   def require[K /* <: java.lang.String */](key: K): Argv[Defined[T, K]] = js.native
   def require[K /* <: java.lang.String */](key: K, msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  def require[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   def require[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
-  def require[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   @JSName("require")
   def require_KString[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
+  @JSName("require")
+  def require_true[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
+  @JSName("require")
+  def require_true[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   def required(key: java.lang.String, msg: java.lang.String): Argv[T] = js.native
   def required(key: java.lang.String, required: scala.Boolean): Argv[T] = js.native
   def required(keys: js.Array[scala.Double], msg: java.lang.String): Argv[T] = js.native
@@ -584,11 +602,13 @@ trait Argv[T] extends js.Object {
     */
   def required[K /* <: java.lang.String */](key: K): Argv[Defined[T, K]] = js.native
   def required[K /* <: java.lang.String */](key: K, msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  def required[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   def required[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
-  def required[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   @JSName("required")
   def required_KString[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
+  @JSName("required")
+  def required_true[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
+  @JSName("required")
+  def required_true[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   def requiresArg(key: java.lang.String): Argv[T] = js.native
   def requiresArg(key: js.Array[java.lang.String]): Argv[T] = js.native
   /**

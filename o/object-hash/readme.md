@@ -1,7 +1,7 @@
 
 # Scala.js typings for object-hash
 
-Typings are for version v1.2.0
+Typings are for version v1.3.1
 
 ## Library description:
 Generate hashes from javascript objects in node and the browser.
@@ -35,9 +35,9 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for object-hash v1.2.0
+// Type definitions for object-hash v1.3.1
 // Project: https://github.com/puleos/object-hash
-// Definitions by: Michael Zabka <https://github.com/misak113>
+// Definitions by: Michael Zabka <https://github.com/misak113>, Artur Diniz <https://github.com/artdiniz>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 ```

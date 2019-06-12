@@ -10,5 +10,8 @@ trait ConstructorTypeNode
   extends FunctionOrConstructorTypeNodeBase
      with FunctionOrConstructorTypeNode
      with SignatureDeclaration
-     with _HasJSDoc
+     with _HasJSDoc {
+  @JSName("kind")
+  var kind_ConstructorTypeNode: typescriptLib.typescriptMod.SyntaxKind.ConstructorType = js.native
+}
 

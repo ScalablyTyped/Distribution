@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PowerMonitor extends EventEmitter {
   @JSName("addListener")
-  def `addListener_lock-screen`(event: electronLib.electronLibStrings.`lock-screen`, listener: js.Function): this.type = js.native
+  def addListener_lockscreen(event: electronLib.electronLibStrings.`lock-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_on-ac`(event: electronLib.electronLibStrings.`on-ac`, listener: js.Function): this.type = js.native
+  def addListener_onac(event: electronLib.electronLibStrings.`on-ac`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_on-battery`(event: electronLib.electronLibStrings.`on-battery`, listener: js.Function): this.type = js.native
+  def addListener_onbattery(event: electronLib.electronLibStrings.`on-battery`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_resume(event: electronLib.electronLibStrings.resume, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -20,23 +20,23 @@ trait PowerMonitor extends EventEmitter {
   @JSName("addListener")
   def addListener_suspend(event: electronLib.electronLibStrings.suspend, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_unlock-screen`(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
+  def addListener_unlockscreen(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
   // Docs: http://electronjs.org/docs/api/power-monitor
   /**
     * Emitted when the system is about to lock the screen.
     */
   @JSName("on")
-  def `on_lock-screen`(event: electronLib.electronLibStrings.`lock-screen`, listener: js.Function): this.type = js.native
+  def on_lockscreen(event: electronLib.electronLibStrings.`lock-screen`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the system changes to AC power.
     */
   @JSName("on")
-  def `on_on-ac`(event: electronLib.electronLibStrings.`on-ac`, listener: js.Function): this.type = js.native
+  def on_onac(event: electronLib.electronLibStrings.`on-ac`, listener: js.Function): this.type = js.native
   /**
     * Emitted when system changes to battery power.
     */
   @JSName("on")
-  def `on_on-battery`(event: electronLib.electronLibStrings.`on-battery`, listener: js.Function): this.type = js.native
+  def on_onbattery(event: electronLib.electronLibStrings.`on-battery`, listener: js.Function): this.type = js.native
   /**
     * Emitted when system is resuming.
     */
@@ -59,13 +59,13 @@ trait PowerMonitor extends EventEmitter {
     * Emitted as soon as the systems screen is unlocked.
     */
   @JSName("on")
-  def `on_unlock-screen`(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
+  def on_unlockscreen(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_lock-screen`(event: electronLib.electronLibStrings.`lock-screen`, listener: js.Function): this.type = js.native
+  def once_lockscreen(event: electronLib.electronLibStrings.`lock-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_on-ac`(event: electronLib.electronLibStrings.`on-ac`, listener: js.Function): this.type = js.native
+  def once_onac(event: electronLib.electronLibStrings.`on-ac`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_on-battery`(event: electronLib.electronLibStrings.`on-battery`, listener: js.Function): this.type = js.native
+  def once_onbattery(event: electronLib.electronLibStrings.`on-battery`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_resume(event: electronLib.electronLibStrings.resume, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -73,13 +73,13 @@ trait PowerMonitor extends EventEmitter {
   @JSName("once")
   def once_suspend(event: electronLib.electronLibStrings.suspend, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_unlock-screen`(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
+  def once_unlockscreen(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_lock-screen`(event: electronLib.electronLibStrings.`lock-screen`, listener: js.Function): this.type = js.native
+  def removeListener_lockscreen(event: electronLib.electronLibStrings.`lock-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_on-ac`(event: electronLib.electronLibStrings.`on-ac`, listener: js.Function): this.type = js.native
+  def removeListener_onac(event: electronLib.electronLibStrings.`on-ac`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_on-battery`(event: electronLib.electronLibStrings.`on-battery`, listener: js.Function): this.type = js.native
+  def removeListener_onbattery(event: electronLib.electronLibStrings.`on-battery`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_resume(event: electronLib.electronLibStrings.resume, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -87,6 +87,6 @@ trait PowerMonitor extends EventEmitter {
   @JSName("removeListener")
   def removeListener_suspend(event: electronLib.electronLibStrings.suspend, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_unlock-screen`(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
+  def removeListener_unlockscreen(event: electronLib.electronLibStrings.`unlock-screen`, listener: js.Function): this.type = js.native
 }
 

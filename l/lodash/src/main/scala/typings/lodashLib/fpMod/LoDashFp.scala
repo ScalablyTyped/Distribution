@@ -1045,8 +1045,7 @@ trait LoDashFp extends js.Object {
   @JSName("cloneWith")
   def cloneWith_TTResultLodashCloneWith2x1[T, TResult](customizer: lodashLib.lodashMod.CloneWithCustomizer[T, js.UndefOr[TResult]]): LodashCloneWith2x1[T, TResult] = js.native
   def compact[T](): js.Array[T] = js.native
-  @JSName("compact")
-  def compact_[T](
+  def compact[T](
     array: lodashLib.lodashMod.List[
       js.UndefOr[
         T | scala.Null | lodashLib.lodashLibNumbers.`false` | lodashLib.lodashLibStrings.Empty | lodashLib.lodashLibNumbers.`0`
@@ -3843,20 +3842,12 @@ trait LoDashFp extends js.Object {
   def lastIndexOf[T](value: T, array: lodashLib.lodashMod.List[T]): scala.Double = js.native
   def lastIndexOf[T](value: lodashLib.lodashMod.__): LodashLastIndexOf1x2[T] = js.native
   def lastIndexOf[T](value: lodashLib.lodashMod.__, array: lodashLib.lodashMod.List[T]): LodashLastIndexOf1x2[T] = js.native
-  def lastIndexOfFrom(value: lodashLib.lodashMod.__, fromIndex: lodashLib.lodashLibNumbers.`true`): LodashLastIndexOfFrom1x2 = js.native
   def lastIndexOfFrom(value: lodashLib.lodashMod.__, fromIndex: scala.Double): LodashLastIndexOfFrom1x2 = js.native
   def lastIndexOfFrom[T](value: T): LodashLastIndexOfFrom1x1[T] = js.native
-  def lastIndexOfFrom[T](value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): LodashLastIndexOfFrom1x3[T] = js.native
-  def lastIndexOfFrom[T](value: T, fromIndex: lodashLib.lodashLibNumbers.`true`, array: lodashLib.lodashMod.List[T]): scala.Double = js.native
   def lastIndexOfFrom[T](value: T, fromIndex: lodashLib.lodashMod.__): LodashLastIndexOfFrom1x5 = js.native
   def lastIndexOfFrom[T](value: T, fromIndex: lodashLib.lodashMod.__, array: lodashLib.lodashMod.List[T]): LodashLastIndexOfFrom1x5 = js.native
   def lastIndexOfFrom[T](value: T, fromIndex: scala.Double): LodashLastIndexOfFrom1x3[T] = js.native
   def lastIndexOfFrom[T](value: T, fromIndex: scala.Double, array: lodashLib.lodashMod.List[T]): scala.Double = js.native
-  def lastIndexOfFrom[T](
-    value: lodashLib.lodashMod.__,
-    fromIndex: lodashLib.lodashLibNumbers.`true`,
-    array: lodashLib.lodashMod.List[T]
-  ): LodashLastIndexOfFrom1x6[T] = js.native
   def lastIndexOfFrom[T](value: lodashLib.lodashMod.__, fromIndex: lodashLib.lodashMod.__): LodashLastIndexOfFrom1x4[T] = js.native
   def lastIndexOfFrom[T](
     value: lodashLib.lodashMod.__,
@@ -3865,13 +3856,25 @@ trait LoDashFp extends js.Object {
   ): LodashLastIndexOfFrom1x4[T] = js.native
   def lastIndexOfFrom[T](value: lodashLib.lodashMod.__, fromIndex: scala.Double, array: lodashLib.lodashMod.List[T]): LodashLastIndexOfFrom1x6[T] = js.native
   @JSName("lastIndexOfFrom")
-  def lastIndexOfFrom_TDouble[T](value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): scala.Double = js.native
-  @JSName("lastIndexOfFrom")
   def lastIndexOfFrom_TDouble[T](value: T, fromIndex: scala.Double): scala.Double = js.native
   @JSName("lastIndexOfFrom")
-  def lastIndexOfFrom_TLodashLastIndexOfFrom1x6[T](value: lodashLib.lodashMod.__, fromIndex: lodashLib.lodashLibNumbers.`true`): LodashLastIndexOfFrom1x6[T] = js.native
-  @JSName("lastIndexOfFrom")
   def lastIndexOfFrom_TLodashLastIndexOfFrom1x6[T](value: lodashLib.lodashMod.__, fromIndex: scala.Double): LodashLastIndexOfFrom1x6[T] = js.native
+  @JSName("lastIndexOfFrom")
+  def lastIndexOfFrom_true(value: lodashLib.lodashMod.__, fromIndex: lodashLib.lodashLibNumbers.`true`): LodashLastIndexOfFrom1x2 = js.native
+  @JSName("lastIndexOfFrom")
+  def lastIndexOfFrom_true[T](value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): LodashLastIndexOfFrom1x3[T] = js.native
+  @JSName("lastIndexOfFrom")
+  def lastIndexOfFrom_true[T](value: T, fromIndex: lodashLib.lodashLibNumbers.`true`, array: lodashLib.lodashMod.List[T]): scala.Double = js.native
+  @JSName("lastIndexOfFrom")
+  def lastIndexOfFrom_true[T](
+    value: lodashLib.lodashMod.__,
+    fromIndex: lodashLib.lodashLibNumbers.`true`,
+    array: lodashLib.lodashMod.List[T]
+  ): LodashLastIndexOfFrom1x6[T] = js.native
+  @JSName("lastIndexOfFrom")
+  def lastIndexOfFrom_true_TDouble[T](value: T, fromIndex: lodashLib.lodashLibNumbers.`true`): scala.Double = js.native
+  @JSName("lastIndexOfFrom")
+  def lastIndexOfFrom_true_TLodashLastIndexOfFrom1x6[T](value: lodashLib.lodashMod.__, fromIndex: lodashLib.lodashLibNumbers.`true`): LodashLastIndexOfFrom1x6[T] = js.native
   @JSName("lastIndexOf")
   def lastIndexOf_TDouble[T](value: T): scala.Double = js.native
   def lowerCase(string: java.lang.String): java.lang.String = js.native

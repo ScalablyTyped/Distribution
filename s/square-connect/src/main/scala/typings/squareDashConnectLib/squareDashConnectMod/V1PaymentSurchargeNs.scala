@@ -14,7 +14,7 @@ object V1PaymentSurchargeNs extends js.Object {
   @js.native
   object TypeEnum extends js.Object {
     @js.native
-    sealed trait AUTOGRATUITY
+    sealed trait AUTO_GRATUITY
       extends squareDashConnectLib.squareDashConnectMod.V1PaymentSurchargeNs.TypeEnum
     
     @js.native
@@ -25,7 +25,7 @@ object V1PaymentSurchargeNs extends js.Object {
     sealed trait UNKNOWN
       extends squareDashConnectLib.squareDashConnectMod.V1PaymentSurchargeNs.TypeEnum
     
-    /* "AUTO_GRATUITY" */ val AUTOGRATUITY: AUTOGRATUITY with java.lang.String = js.native
+    /* "AUTO_GRATUITY" */ val AUTO_GRATUITY: AUTO_GRATUITY with java.lang.String = js.native
     /* "CUSTOM" */ val CUSTOM: CUSTOM with java.lang.String = js.native
     /* "UNKNOWN" */ val UNKNOWN: UNKNOWN with java.lang.String = js.native
     @JSBracketAccess

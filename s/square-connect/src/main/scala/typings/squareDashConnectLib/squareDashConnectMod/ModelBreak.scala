@@ -23,7 +23,7 @@ class ModelBreak () extends js.Object {
     */
   var expected_duration: java.lang.String = js.native
   /**
-    * UUID for this object
+    * UUID for this object.
     */
   var id: js.UndefOr[java.lang.String] = js.native
   /**

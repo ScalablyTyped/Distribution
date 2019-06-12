@@ -11,5 +11,7 @@ trait VariableStatement
      with JSDocContainer
      with _HasJSDoc {
   var declarationList: VariableDeclarationList = js.native
+  @JSName("kind")
+  var kind_VariableStatement: typescriptLib.typescriptMod.SyntaxKind.VariableStatement = js.native
 }
 

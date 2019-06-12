@@ -21,9 +21,11 @@ object ^ extends js.Object {
   def config(): Client = js.native
   def config(dsn: java.lang.String): Client = js.native
   def config(dsn: java.lang.String, options: ConstructorOptions): Client = js.native
-  def config(dsn: ravenLib.ravenLibNumbers.`false`): Client = js.native
-  def config(dsn: ravenLib.ravenLibNumbers.`false`, options: ConstructorOptions): Client = js.native
   def config(options: ConstructorOptions): Client = js.native
+  @JSName("config")
+  def config_false(dsn: ravenLib.ravenLibNumbers.`false`): Client = js.native
+  @JSName("config")
+  def config_false(dsn: ravenLib.ravenLibNumbers.`false`, options: ConstructorOptions): Client = js.native
   def context[T](ctx: js.Any, func: js.Function0[T]): T = js.native
   def context[T](func: js.Function0[T]): T = js.native
   def disableConsoleAlerts(): scala.Unit = js.native

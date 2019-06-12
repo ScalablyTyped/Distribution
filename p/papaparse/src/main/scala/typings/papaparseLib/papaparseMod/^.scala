@@ -23,8 +23,10 @@ object ^ extends js.Object {
   def parse(file: stdLib.File, config: ParseConfig): ParseResult = js.native
   def parse(stream: nodeLib.NodeJSNs.ReadableStream): ParseResult = js.native
   def parse(stream: nodeLib.NodeJSNs.ReadableStream, config: ParseConfig): ParseResult = js.native
-  def parse(stream: papaparseLib.papaparseLibNumbers.`1`): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def parse(stream: papaparseLib.papaparseLibNumbers.`1`, config: ParseConfig): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  @JSName("parse")
+  def parse_1(stream: papaparseLib.papaparseLibNumbers.`1`): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  @JSName("parse")
+  def parse_1(stream: papaparseLib.papaparseLibNumbers.`1`, config: ParseConfig): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def unparse(data: js.Array[js.Array[_] | js.Object]): java.lang.String = js.native
   def unparse(data: js.Array[js.Array[_] | js.Object], config: UnparseConfig): java.lang.String = js.native
   def unparse(data: UnparseObject): java.lang.String = js.native

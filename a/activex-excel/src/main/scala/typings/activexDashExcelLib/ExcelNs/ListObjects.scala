@@ -25,35 +25,41 @@ trait ListObjects extends js.Object {
     Destination: js.UndefOr[Range],
     TableStyleName: js.UndefOr[java.lang.String]
   ): ListObject = js.native
-  def Add(SourceType: XlListObjectSourceType): ListObject = js.native
-  def Add(SourceType: XlListObjectSourceType, Source: Range): ListObject = js.native
-  def Add(
-    SourceType: XlListObjectSourceType,
-    Source: Range,
-    LinkSource: js.UndefOr[scala.Nothing],
-    XlListObjectHasHeaders: XlYesNoGuess
-  ): ListObject = js.native
-  def Add(
-    SourceType: XlListObjectSourceType,
-    Source: Range,
-    LinkSource: js.UndefOr[scala.Nothing],
-    XlListObjectHasHeaders: XlYesNoGuess,
-    Destination: js.UndefOr[scala.Nothing],
-    TableStyleName: java.lang.String
-  ): ListObject = js.native
-  def Add(
-    SourceType: XlListObjectSourceType,
+  @JSName("Add")
+  def Add_0(
+    SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`0`,
     Source: stdLib.SafeArray[java.lang.String],
     LinkSource: scala.Boolean,
     XlListObjectHasHeaders: XlYesNoGuess,
     Destination: Range
   ): ListObject = js.native
-  def Add(
-    SourceType: XlListObjectSourceType,
+  @JSName("Add")
+  def Add_0(
+    SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`0`,
     Source: stdLib.SafeArray[java.lang.String],
     LinkSource: scala.Boolean,
     XlListObjectHasHeaders: XlYesNoGuess,
     Destination: Range,
+    TableStyleName: java.lang.String
+  ): ListObject = js.native
+  @JSName("Add")
+  def Add_1(SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`1`): ListObject = js.native
+  @JSName("Add")
+  def Add_1(SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`1`, Source: Range): ListObject = js.native
+  @JSName("Add")
+  def Add_1(
+    SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Source: Range,
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  @JSName("Add")
+  def Add_1(
+    SourceType: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Source: Range,
+    LinkSource: js.UndefOr[scala.Nothing],
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: js.UndefOr[scala.Nothing],
     TableStyleName: java.lang.String
   ): ListObject = js.native
   def Item(Index: java.lang.String): ListObject = js.native

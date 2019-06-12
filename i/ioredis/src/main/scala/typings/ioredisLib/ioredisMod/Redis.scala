@@ -187,8 +187,8 @@ trait Redis
     ]
   ): scala.Unit = js.native
   def hscan(key: KeyType, cursor: scala.Double, args: js.Any*): js.Any = js.native
-  def hscanStream(key: KeyType): nodeLib.NodeJSNs.EventEmitter = js.native
-  def hscanStream(key: KeyType, options: ScanStreamOption): nodeLib.NodeJSNs.EventEmitter = js.native
+  def hscanStream(key: KeyType): nodeLib.streamMod.Readable = js.native
+  def hscanStream(key: KeyType, options: ScanStreamOption): nodeLib.streamMod.Readable = js.native
   def hset(key: KeyType, field: java.lang.String, value: js.Any): js.Promise[ioredisLib.ioredisLibNumbers.`0` | ioredisLib.ioredisLibNumbers.`1`] = js.native
   def hset(
     key: KeyType,
@@ -522,8 +522,8 @@ trait Redis
     countOption: ioredisLib.ioredisLibStrings.count,
     count: scala.Double
   ): js.Promise[js.Tuple2[java.lang.String, js.Array[java.lang.String]]] = js.native
-  def scanStream(): nodeLib.NodeJSNs.EventEmitter = js.native
-  def scanStream(options: ScanStreamOption): nodeLib.NodeJSNs.EventEmitter = js.native
+  def scanStream(): nodeLib.streamMod.Readable = js.native
+  def scanStream(options: ScanStreamOption): nodeLib.streamMod.Readable = js.native
   @JSName("scan")
   def scan_COUNT(cursor: scala.Double, countOption: ioredisLib.ioredisLibStrings.COUNT, count: scala.Double): js.Promise[js.Tuple2[java.lang.String, js.Array[java.lang.String]]] = js.native
   @JSName("scan")
@@ -857,8 +857,8 @@ trait Redis
   ): scala.Unit = js.native
   def srem(key: KeyType, members: js.Any*): js.Any = js.native
   def sscan(key: KeyType, cursor: scala.Double, args: js.Any*): js.Any = js.native
-  def sscanStream(key: KeyType): nodeLib.NodeJSNs.EventEmitter = js.native
-  def sscanStream(key: KeyType, options: ScanStreamOption): nodeLib.NodeJSNs.EventEmitter = js.native
+  def sscanStream(key: KeyType): nodeLib.streamMod.Readable = js.native
+  def sscanStream(key: KeyType, options: ScanStreamOption): nodeLib.streamMod.Readable = js.native
   def strlen(key: KeyType): js.Promise[scala.Double] = js.native
   def strlen(key: KeyType, callback: js.Function2[/* err */ stdLib.Error, /* res */ scala.Double, scala.Unit]): scala.Unit = js.native
   def subscribe(channels: js.Any*): js.Any = js.native
@@ -888,16 +888,10 @@ trait Redis
   def watch(keys: KeyType*): js.Any = js.native
   def xack(key: KeyType, group: java.lang.String, ids: java.lang.String*): js.Any = js.native
   def xadd(key: KeyType, id: java.lang.String, args: java.lang.String*): js.Any = js.native
-  def xadd(
+  @JSName("xadd")
+  def xadd_MAXLEN(
     key: KeyType,
     maxLenOption: ioredisLib.ioredisLibStrings.MAXLEN,
-    approximate: ioredisLib.ioredisLibStrings.`~`,
-    count: scala.Double,
-    args: java.lang.String*
-  ): js.Any = js.native
-  def xadd(
-    key: KeyType,
-    maxLenOption: ioredisLib.ioredisLibStrings.maxlen,
     approximate: ioredisLib.ioredisLibStrings.`~`,
     count: scala.Double,
     args: java.lang.String*
@@ -906,6 +900,14 @@ trait Redis
   def xadd_MAXLEN(
     key: KeyType,
     maxLenOption: ioredisLib.ioredisLibStrings.MAXLEN,
+    count: scala.Double,
+    args: java.lang.String*
+  ): js.Any = js.native
+  @JSName("xadd")
+  def xadd_maxlen(
+    key: KeyType,
+    maxLenOption: ioredisLib.ioredisLibStrings.maxlen,
+    approximate: ioredisLib.ioredisLibStrings.`~`,
     count: scala.Double,
     args: java.lang.String*
   ): js.Any = js.native
@@ -1089,8 +1091,8 @@ trait Redis
     callback: js.Function2[/* err */ stdLib.Error, /* res */ scala.Double | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   def zscan(key: KeyType, cursor: scala.Double, args: js.Any*): js.Any = js.native
-  def zscanStream(key: KeyType): nodeLib.NodeJSNs.EventEmitter = js.native
-  def zscanStream(key: KeyType, options: ScanStreamOption): nodeLib.NodeJSNs.EventEmitter = js.native
+  def zscanStream(key: KeyType): nodeLib.streamMod.Readable = js.native
+  def zscanStream(key: KeyType, options: ScanStreamOption): nodeLib.streamMod.Readable = js.native
   def zscore(key: KeyType, member: java.lang.String): js.Promise[java.lang.String] = js.native
   def zscore(
     key: KeyType,

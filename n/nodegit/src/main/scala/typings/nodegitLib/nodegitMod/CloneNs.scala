@@ -8,15 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("nodegit", "Clone")
 @js.native
 object CloneNs extends js.Object {
-  @js.native
-  object LOCAL extends js.Object {
-    /* 0 */ val AUTO: nodegitLib.cloneMod.CloneNs.LOCAL.AUTO with scala.Double = js.native
-    /* 1 */ val LOCAL: nodegitLib.cloneMod.CloneNs.LOCAL.LOCAL with scala.Double = js.native
-    /* 3 */ val NO_LINKS: nodegitLib.cloneMod.CloneNs.LOCAL.NO_LINKS with scala.Double = js.native
-    /* 2 */ val NO_LOCAL: nodegitLib.cloneMod.CloneNs.LOCAL.NO_LOCAL with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[nodegitLib.cloneMod.CloneNs.LOCAL with scala.Double] = js.native
-  }
+  /* Rewritten from type alias, can be one of: 
+    - nodegitLib.nodegitLibNumbers.`0`
+    - nodegitLib.nodegitLibNumbers.`1`
+    - nodegitLib.nodegitLibNumbers.`2`
+    - nodegitLib.nodegitLibNumbers.`3`
+  */
+  trait LOCAL extends js.Object
   
 }
 

@@ -32,171 +32,230 @@ object ^ extends js.Object {
   val hiddenContentStyle: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   val noWrap: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   val normalize: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
-  def buildClassMap[T](styles: T): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def buildClassMap[T /* <: js.Object */](styles: T): /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in keyof T ]:? string}
     */ atUifabricStylingLib.atUifabricStylingLibStrings.buildClassMap with js.Any = js.native
-  def concatStyleSets(
+  def concatStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet] = js.native
+  def concatStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](styleSet: TStyleSet): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet] = js.native
+  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: js.UndefOr[scala.Nothing], styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: scala.Null, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: TStyleSet1,
+    styleSet2: TStyleSet2,
+    styleSet3: TStyleSet3,
+    styleSet4: TStyleSet3 | TStyleSet4
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: TStyleSet4): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_false(
     styleSets: (js.UndefOr[
       atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[_] | atUifabricStylingLib.atUifabricStylingLibNumbers.`false` | scala.Null
     ])*
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[_] = js.native
-  def concatStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet] = js.native
-  def concatStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](styleSet: TStyleSet): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet] = js.native
-  def concatStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](styleSet: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: js.UndefOr[scala.Nothing], styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](styleSet: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
     styleSet1: js.UndefOr[scala.Nothing],
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: scala.Null, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: scala.Null, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: scala.Null, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: TStyleSet2,
-    styleSet3: TStyleSet3,
-    styleSet4: TStyleSet3 | TStyleSet4
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: TStyleSet3 | TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3,
     styleSet4: TStyleSet3 | TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: TStyleSet3 | TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3,
     styleSet4: TStyleSet3 | TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: TStyleSet3 | TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3,
     styleSet4: TStyleSet3 | TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: TStyleSet3 | TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1 | atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2 | atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3 | atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: TStyleSet4 | atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet5: TStyleSet5 | atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  def concatStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */, TStyleSet6 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet6] */](
+  @JSName("concatStyleSets")
+  def concatStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */, TStyleSet6 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet6] */](
     styleSet1: js.UndefOr[
       TStyleSet1 | atUifabricStylingLib.atUifabricStylingLibNumbers.`false` | scala.Null
     ],
@@ -219,252 +278,224 @@ object ^ extends js.Object {
     TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5 with TStyleSet6
   ] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: TStyleSet4): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
-  @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3,
     styleSet4: TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3,
     styleSet4: TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3,
     styleSet4: TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3,
     styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet4: TStyleSet4
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
   @JSName("concatStyleSets")
-  def concatStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
+  def concatStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSetTStyleSet5IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */, TStyleSet5 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet5] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
@@ -648,178 +679,23 @@ object ^ extends js.Object {
   def keyframes(timeline: org.scalablytyped.runtime.StringDictionary[js.Object]): java.lang.String = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def loadTheme(theme: atUifabricStylingLib.libInterfacesIThemeMod.IPartialTheme, depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
-  def mergeStyleSets(
-    styleSets: (js.UndefOr[
-      atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[_] | atUifabricStylingLib.atUifabricStylingLibNumbers.`false` | scala.Null
-    ])*
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[_] = js.native
   def mergeStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet] = js.native
   def mergeStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](styleSet: TStyleSet): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet] = js.native
-  def mergeStyleSets[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](styleSet: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: js.UndefOr[scala.Nothing], styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
-    styleSet1: js.UndefOr[scala.Nothing],
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: scala.Null, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: scala.Null, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
-    styleSet1: TStyleSet1,
-    styleSet2: TStyleSet2,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
-    styleSet1: TStyleSet1,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: TStyleSet3
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
-    styleSet1: TStyleSet1,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: TStyleSet2,
-    styleSet3: TStyleSet3
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: TStyleSet2,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: TStyleSet3
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
   def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3, styleSet4: TStyleSet4): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: TStyleSet2,
-    styleSet3: TStyleSet3,
-    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: TStyleSet2,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet4: TStyleSet4
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: TStyleSet2,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: TStyleSet3,
-    styleSet4: TStyleSet4
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: TStyleSet3,
-    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet4: TStyleSet4
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: TStyleSet1,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: TStyleSet2,
-    styleSet3: TStyleSet3,
-    styleSet4: TStyleSet4
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: TStyleSet2,
-    styleSet3: TStyleSet3,
-    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: TStyleSet2,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet4: TStyleSet4
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: TStyleSet2,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: TStyleSet3,
-    styleSet4: TStyleSet4
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: TStyleSet3,
-    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet4: TStyleSet4
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyleSets[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
-  @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
-    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
-    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
-  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
   @JSName("mergeStyleSets")
   def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
@@ -829,59 +705,244 @@ object ^ extends js.Object {
   @JSName("mergeStyleSets")
   def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: TStyleSet2, styleSet3: TStyleSet3): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def mergeStyleSets_false(
+    styleSets: (js.UndefOr[
+      atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[_] | atUifabricStylingLib.atUifabricStylingLibNumbers.`false` | scala.Null
+    ])*
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[_] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](styleSet: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
+    styleSet1: js.UndefOr[scala.Nothing],
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: scala.Null, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+    styleSet1: TStyleSet1,
+    styleSet2: TStyleSet2,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+    styleSet1: TStyleSet1,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: TStyleSet3
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+    styleSet1: TStyleSet1,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: TStyleSet2,
+    styleSet3: TStyleSet3
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: TStyleSet2,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: TStyleSet3
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: TStyleSet1,
+    styleSet2: TStyleSet2,
+    styleSet3: TStyleSet3,
+    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: TStyleSet1,
+    styleSet2: TStyleSet2,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet4: TStyleSet4
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: TStyleSet1,
+    styleSet2: TStyleSet2,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: TStyleSet1,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: TStyleSet3,
+    styleSet4: TStyleSet4
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: TStyleSet1,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: TStyleSet3,
+    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: TStyleSet1,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet4: TStyleSet4
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: TStyleSet1,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: TStyleSet2,
+    styleSet3: TStyleSet3,
+    styleSet4: TStyleSet4
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: TStyleSet2,
+    styleSet3: TStyleSet3,
+    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: TStyleSet2,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet4: TStyleSet4
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: TStyleSet2,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: TStyleSet3,
+    styleSet4: TStyleSet4
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: TStyleSet3,
+    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet4: TStyleSet4
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet4: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */](
+    styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
+    styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
+  ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3] = js.native
+  @JSName("mergeStyleSets")
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: TStyleSet1, styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: TStyleSet1,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`, styleSet2: TStyleSet2): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: TStyleSet2,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: TStyleSet3
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
   @JSName("mergeStyleSets")
-  def mergeStyleSets_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
+  def mergeStyleSets_false_TStyleSet1IStyleSetTStyleSet2IStyleSetTStyleSet3IStyleSetTStyleSet4IStyleSet[TStyleSet1 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet1] */, TStyleSet2 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet2] */, TStyleSet3 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet3] */, TStyleSet4 /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet4] */](
     styleSet1: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet2: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`,
     styleSet3: atUifabricStylingLib.atUifabricStylingLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IProcessedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4] = js.native
-  def mergeStyles(
+  @JSName("mergeStyles")
+  def mergeStyles_false(
     args: (js.UndefOr[
       atUifabricMergeDashStylesLib.libIStyleMod.IStyle | atUifabricMergeDashStylesLib.libIStyleMod.IStyleBaseArray | atUifabricStylingLib.atUifabricStylingLibNumbers.`false` | scala.Null
     ])*

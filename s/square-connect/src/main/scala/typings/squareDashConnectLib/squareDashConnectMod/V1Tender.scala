@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class V1Tender () extends js.Object {
   /**
-    * The brand of credit card provided. See [CardBrand](#type-cardbrand) for possible values
+    * The brand of credit card provided. See [V1TenderCardBrand](#type-v1tendercardbrand) for possible values.
     */
   var card_brand: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1TenderNs.CardBrandEnum] = js.native
   /**
@@ -21,7 +21,7 @@ class V1Tender () extends js.Object {
     */
   var employee_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * The tender's unique ID. See [V1TenderEntryMethod](#type-v1tenderentrymethod) for possible values
+    * The tender's unique ID. See [V1TenderEntryMethod](#type-v1tenderentrymethod) for possible values.
     */
   var entry_method: js.UndefOr[squareDashConnectLib.squareDashConnectMod.V1TenderNs.EntryMethodEnum] = js.native
   /**
@@ -43,8 +43,8 @@ class V1Tender () extends js.Object {
     */
   var pan_suffix: js.UndefOr[java.lang.String] = js.native
   /**
-    * Notes entered by the merchant about the tender at the time of payment, if any. Typically only present for tender
-    * with the type: OTHER.
+    * Notes entered by the merchant about the tender at the time of payment, if any.
+    * Typically only present for tender with the type: OTHER.
     */
   var payment_note: js.UndefOr[java.lang.String] = js.native
   /**

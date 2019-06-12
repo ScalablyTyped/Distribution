@@ -11,5 +11,7 @@ trait ExpressionStatement
      with JSDocContainer
      with _HasJSDoc {
   var expression: Expression = js.native
+  @JSName("kind")
+  var kind_ExpressionStatement: typescriptLib.typescriptMod.SyntaxKind.ExpressionStatement = js.native
 }
 

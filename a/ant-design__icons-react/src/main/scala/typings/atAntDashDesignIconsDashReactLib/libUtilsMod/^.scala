@@ -12,12 +12,13 @@ object ^ extends js.Object {
   def generate(
     node: atAntDashDesignIconsLib.libTypesMod.AbstractNode,
     key: java.lang.String,
-    rootProps: atAntDashDesignIconsDashReactLib.atAntDashDesignIconsDashReactLibNumbers.`false`
+    rootProps: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Any = js.native
-  def generate(
+  @JSName("generate")
+  def generate_false(
     node: atAntDashDesignIconsLib.libTypesMod.AbstractNode,
     key: java.lang.String,
-    rootProps: org.scalablytyped.runtime.StringDictionary[js.Any]
+    rootProps: atAntDashDesignIconsDashReactLib.atAntDashDesignIconsDashReactLibNumbers.`false`
   ): js.Any = js.native
   def getSecondaryColor(primaryColor: java.lang.String): java.lang.String = js.native
   def isIconDefinition(target: js.Any): /* is @ant-design/icons.@ant-design/icons/lib/types.IconDefinition */ scala.Boolean = js.native

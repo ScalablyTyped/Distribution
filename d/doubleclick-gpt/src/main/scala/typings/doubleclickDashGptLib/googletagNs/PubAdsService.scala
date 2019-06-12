@@ -58,8 +58,10 @@ trait PubAdsService extends Service {
   def setLocation(latitudeOrAddress: scala.Double, opt_longitude: scala.Double): PubAdsService = js.native
   def setLocation(latitudeOrAddress: scala.Double, opt_longitude: scala.Double, opt_radius: scala.Double): PubAdsService = js.native
   def setPublisherProvidedId(ppid: java.lang.String): PubAdsService = js.native
-  def setRequestNonPersonalizedAds(nonPersonalizedAds: doubleclickDashGptLib.doubleclickDashGptLibNumbers.`0`): PubAdsService = js.native
-  def setRequestNonPersonalizedAds(nonPersonalizedAds: doubleclickDashGptLib.doubleclickDashGptLibNumbers.`1`): PubAdsService = js.native
+  @JSName("setRequestNonPersonalizedAds")
+  def setRequestNonPersonalizedAds_0(nonPersonalizedAds: doubleclickDashGptLib.doubleclickDashGptLibNumbers.`0`): PubAdsService = js.native
+  @JSName("setRequestNonPersonalizedAds")
+  def setRequestNonPersonalizedAds_1(nonPersonalizedAds: doubleclickDashGptLib.doubleclickDashGptLibNumbers.`1`): PubAdsService = js.native
   def setSafeFrameConfig(config: SafeFrameConfig): PubAdsService = js.native
   def setTagForChildDirectedTreatment(value: scala.Double): PubAdsService = js.native
   def setTagForUnderAgeOfConsent(): PubAdsService = js.native

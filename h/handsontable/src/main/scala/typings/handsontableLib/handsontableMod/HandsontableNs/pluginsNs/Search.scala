@@ -25,7 +25,7 @@ trait Search extends Base {
 object Search {
   @scala.inline
   def apply(
-    addHook: (java.lang.String, js.Function0[scala.Unit]) => scala.Unit,
+    addHook: (java.lang.String, js.Function1[/* repeated */ js.Any, _]) => scala.Unit,
     callOnPluginsReady: js.Function0[scala.Unit] => scala.Unit,
     callback: () => scala.Unit,
     clearHooks: () => scala.Unit,
@@ -43,13 +43,13 @@ object Search {
     pluginsInitializedCallback: js.Array[_],
     query: (java.lang.String, js.Function0[scala.Unit], js.Function0[scala.Unit]) => js.Array[_],
     queryMethod: () => scala.Unit,
-    removeHook: java.lang.String => scala.Unit,
+    removeHooks: java.lang.String => scala.Unit,
     searchResultClass: java.lang.String,
     setCallback: js.Function0[scala.Unit] => scala.Unit,
     setQueryMethod: js.Function0[scala.Unit] => scala.Unit,
     setSearchResultClass: java.lang.String => scala.Unit
   ): Search = {
-    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), callback = js.Any.fromFunction0(callback), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, getCallback = js.Any.fromFunction0(getCallback), getQueryMethod = js.Any.fromFunction0(getQueryMethod), getSearchResultClass = js.Any.fromFunction0(getSearchResultClass), init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, query = js.Any.fromFunction3(query), queryMethod = js.Any.fromFunction0(queryMethod), removeHook = js.Any.fromFunction1(removeHook), searchResultClass = searchResultClass, setCallback = js.Any.fromFunction1(setCallback), setQueryMethod = js.Any.fromFunction1(setQueryMethod), setSearchResultClass = js.Any.fromFunction1(setSearchResultClass))
+    val __obj = js.Dynamic.literal(addHook = js.Any.fromFunction2(addHook), callOnPluginsReady = js.Any.fromFunction1(callOnPluginsReady), callback = js.Any.fromFunction0(callback), clearHooks = js.Any.fromFunction0(clearHooks), destroy = js.Any.fromFunction0(destroy), disablePlugin = js.Any.fromFunction0(disablePlugin), enablePlugin = js.Any.fromFunction0(enablePlugin), enabled = enabled, getCallback = js.Any.fromFunction0(getCallback), getQueryMethod = js.Any.fromFunction0(getQueryMethod), getSearchResultClass = js.Any.fromFunction0(getSearchResultClass), init = js.Any.fromFunction0(init), initialized = initialized, isPluginsReady = isPluginsReady, pluginName = pluginName, pluginsInitializedCallback = pluginsInitializedCallback, query = js.Any.fromFunction3(query), queryMethod = js.Any.fromFunction0(queryMethod), removeHooks = js.Any.fromFunction1(removeHooks), searchResultClass = searchResultClass, setCallback = js.Any.fromFunction1(setCallback), setQueryMethod = js.Any.fromFunction1(setQueryMethod), setSearchResultClass = js.Any.fromFunction1(setSearchResultClass))
   
     __obj.asInstanceOf[Search]
   }

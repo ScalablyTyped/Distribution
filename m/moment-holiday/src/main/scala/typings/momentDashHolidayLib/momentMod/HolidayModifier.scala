@@ -11,7 +11,8 @@ trait HolidayModifier extends js.Object {
   def add(holidays: java.lang.String, specifics: js.Any): HolidayModifier = js.native
   def add(holidays: HolidaysMapping): HolidayModifier = js.native
   def add(holidays: HolidaysMapping, specifics: js.Any): HolidayModifier = js.native
-  def extendParser(
+  @JSName("extendParser")
+  def extendParser_false(
     parserFunc: js.Function2[
       /* m */ momentLib.momentMod.Moment, 
       /* date */ java.lang.String, 

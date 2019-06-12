@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("yup", "string")
 @js.native
-class string () extends StringSchema
+class string ()
+  extends StringSchema[java.lang.String]
 

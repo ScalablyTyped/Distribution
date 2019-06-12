@@ -14,7 +14,8 @@ class MutableFile protected () extends File {
     permanent: js.UndefOr[scala.Nothing],
     cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): nodeLib.streamMod.Readable = js.native
-  def delete(
+  @JSName("delete")
+  def delete_true(
     permanent: megajsLib.megajsLibNumbers.`true`,
     cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]
   ): nodeLib.streamMod.Readable = js.native

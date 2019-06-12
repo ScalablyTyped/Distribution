@@ -331,13 +331,6 @@ object ^ extends js.Object {
     Cookies: java.lang.String,
     Headers: java.lang.String
   ): java.lang.String = js.native
-  def HttpQuery(
-    Url: java.lang.String,
-    PostData: botvsLib.Anon_Data,
-    Cookies: java.lang.String,
-    Headers: java.lang.String,
-    IsReturnHeader: botvsLib.botvsLibNumbers.`true`
-  ): botvsLib.Anon_Body = js.native
   /**
     * 网络URL访问
     *
@@ -364,15 +357,25 @@ object ^ extends js.Object {
     Cookies: java.lang.String,
     Headers: java.lang.String
   ): java.lang.String = js.native
-  def HttpQuery(
+  def HttpQuery(Url: java.lang.String, PostData: scala.Null, Cookies: java.lang.String, Headers: java.lang.String): java.lang.String = js.native
+  @JSName("HttpQuery")
+  def HttpQuery_true(
+    Url: java.lang.String,
+    PostData: botvsLib.Anon_Data,
+    Cookies: java.lang.String,
+    Headers: java.lang.String,
+    IsReturnHeader: botvsLib.botvsLibNumbers.`true`
+  ): botvsLib.Anon_Body = js.native
+  @JSName("HttpQuery")
+  def HttpQuery_true(
     Url: java.lang.String,
     PostData: java.lang.String,
     Cookies: java.lang.String,
     Headers: java.lang.String,
     IsReturnHeader: botvsLib.botvsLibNumbers.`true`
   ): botvsLib.Anon_Body = js.native
-  def HttpQuery(Url: java.lang.String, PostData: scala.Null, Cookies: java.lang.String, Headers: java.lang.String): java.lang.String = js.native
-  def HttpQuery(
+  @JSName("HttpQuery")
+  def HttpQuery_true(
     Url: java.lang.String,
     PostData: scala.Null,
     Cookies: java.lang.String,

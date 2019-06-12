@@ -28,8 +28,10 @@ trait Pendo extends js.Object {
   // Initialization and Identification
   def initialize(options: InitOptions): scala.Unit = js.native
   def isDebuggingEnabled(): pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibStrings.Yes | pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibStrings.No = js.native
-  def isDebuggingEnabled(coerce: pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibNumbers.`false`): pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibStrings.Yes | pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibStrings.No = js.native
-  def isDebuggingEnabled(coerce: pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibNumbers.`true`): scala.Boolean = js.native
+  @JSName("isDebuggingEnabled")
+  def isDebuggingEnabled_false(coerce: pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibNumbers.`false`): pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibStrings.Yes | pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibStrings.No = js.native
+  @JSName("isDebuggingEnabled")
+  def isDebuggingEnabled_true(coerce: pendoDashIoDashBrowserLib.pendoDashIoDashBrowserLibNumbers.`true`): scala.Boolean = js.native
   def isReady(): scala.Boolean = js.native
   // Troubleshooting
   def loadGuides(): scala.Unit = js.native

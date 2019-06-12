@@ -61,10 +61,10 @@ trait StackedArea extends Scatter {
   @JSName("style")
   def style_stack(offset: nvd3Lib.nvd3LibStrings.stack): this.type = js.native
   @JSName("style")
-  def style_stack_percent(offset: nvd3Lib.nvd3LibStrings.stack_percent): this.type = js.native
+  def style_stackpercent(offset: nvd3Lib.nvd3LibStrings.stack_percent): this.type = js.native
   @JSName("style")
   def style_stream(offset: nvd3Lib.nvd3LibStrings.stream): this.type = js.native
   @JSName("style")
-  def `style_stream-center`(offset: nvd3Lib.nvd3LibStrings.`stream-center`): this.type = js.native
+  def style_streamcenter(offset: nvd3Lib.nvd3LibStrings.`stream-center`): this.type = js.native
 }
 

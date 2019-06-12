@@ -123,7 +123,7 @@ trait ShelljsExecProxy
   	 * @return        Returns an array of paths in the stack, or a single path if +N or -N was specified.
   	 */
   @JSName("dirs")
-  def `dirs_+N`(options: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`+N`): shelljsLib.shelljsMod.ShellString = js.native
+  def dirs_N(options: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`+N`): shelljsLib.shelljsMod.ShellString = js.native
   /**
   	 * Displays the list of currently remembered directories.
   	 *
@@ -132,7 +132,7 @@ trait ShelljsExecProxy
   	 * @return        Returns an array of paths in the stack, or a single path if +N or -N was specified.
   	 */
   @JSName("dirs")
-  def `dirs_-N`(options: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-N`): shelljsLib.shelljsMod.ShellString = js.native
+  def dirs_N(options: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-N`): shelljsLib.shelljsMod.ShellString = js.native
   /**
   	 * Clears the directory stack by deleting all of the elements.
   	 *
@@ -140,7 +140,7 @@ trait ShelljsExecProxy
   	 * @return        Returns an array of paths in the stack, or a single path if +N or -N was specified.
   	 */
   @JSName("dirs")
-  def `dirs_-c`(options: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-c`): shelljsLib.shelljsMod.ShellArray = js.native
+  def dirs_c(options: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-c`): shelljsLib.shelljsMod.ShellArray = js.native
   /**
   	 * Prints string to stdout, and returns string with additional utility methods like .to().
   	 *
@@ -387,7 +387,19 @@ trait ShelljsExecProxy
   	 * @return    Returns an array of paths in the stack.
   	 */
   @JSName("popd")
-  def `popd_+N`(dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`+N`): shelljsLib.shelljsMod.ShellArray = js.native
+  def popd_N(dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`+N`): shelljsLib.shelljsMod.ShellArray = js.native
+  /**
+  	 * When no arguments are given, popd removes the top directory from the stack
+  	 * and performs a `cd` to the new top directory.
+  	 *
+  	 * The elements are numbered from 0 starting at the first directory listed with dirs;
+  	 * i.e., `popd` is equivalent to `popd +0`. Returns an array of paths in the stack.
+  	 *
+  	 * @param dir Removes the Nth directory (counting from the right of the list printed by dirs), starting with zero.
+  	 * @return    Returns an array of paths in the stack.
+  	 */
+  @JSName("popd")
+  def popd_N(dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-N`): shelljsLib.shelljsMod.ShellArray = js.native
   /**
   	 * When no arguments are given, popd removes the top directory from the stack
   	 * and performs a `cd` to the new top directory.
@@ -403,22 +415,10 @@ trait ShelljsExecProxy
   	 * @return        Returns an array of paths in the stack.
   	 */
   @JSName("popd")
-  def `popd_+N`(
+  def popd_N(
     options: java.lang.String,
     dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`+N`
   ): shelljsLib.shelljsMod.ShellArray = js.native
-  /**
-  	 * When no arguments are given, popd removes the top directory from the stack
-  	 * and performs a `cd` to the new top directory.
-  	 *
-  	 * The elements are numbered from 0 starting at the first directory listed with dirs;
-  	 * i.e., `popd` is equivalent to `popd +0`. Returns an array of paths in the stack.
-  	 *
-  	 * @param dir Removes the Nth directory (counting from the right of the list printed by dirs), starting with zero.
-  	 * @return    Returns an array of paths in the stack.
-  	 */
-  @JSName("popd")
-  def `popd_-N`(dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-N`): shelljsLib.shelljsMod.ShellArray = js.native
   /**
   	 * When no arguments are given, popd removes the top directory from the stack
   	 * and performs a `cd` to the new top directory.
@@ -434,7 +434,7 @@ trait ShelljsExecProxy
   	 * @return        Returns an array of paths in the stack.
   	 */
   @JSName("popd")
-  def `popd_-N`(
+  def popd_N(
     options: java.lang.String,
     dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-N`
   ): shelljsLib.shelljsMod.ShellArray = js.native
@@ -476,7 +476,17 @@ trait ShelljsExecProxy
   	 * @return    Returns an array of paths in the stack.
   	 */
   @JSName("pushd")
-  def `pushd_+N`(dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`+N`): shelljsLib.shelljsMod.ShellArray = js.native
+  def pushd_N(dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`+N`): shelljsLib.shelljsMod.ShellArray = js.native
+  /**
+  	 * Saves the current directory on the top of the directory stack and then cd to dir.
+  	 * With no arguments, `pushd` exchanges the top two directories.
+  	 *
+  	 * @param dir Brings the Nth directory (counting from the right of the list printed by dirs,
+  	 *            starting with zero) to the top of the list by rotating the stack.
+  	 * @return    Returns an array of paths in the stack.
+  	 */
+  @JSName("pushd")
+  def pushd_N(dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-N`): shelljsLib.shelljsMod.ShellArray = js.native
   /**
   	 * Saves the current directory on the top of the directory stack and then cd to dir.
   	 * With no arguments, `pushd` exchanges the top two directories.
@@ -490,20 +500,10 @@ trait ShelljsExecProxy
   	 * @return        Returns an array of paths in the stack.
   	 */
   @JSName("pushd")
-  def `pushd_+N`(
+  def pushd_N(
     options: java.lang.String,
     dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`+N`
   ): shelljsLib.shelljsMod.ShellArray = js.native
-  /**
-  	 * Saves the current directory on the top of the directory stack and then cd to dir.
-  	 * With no arguments, `pushd` exchanges the top two directories.
-  	 *
-  	 * @param dir Brings the Nth directory (counting from the right of the list printed by dirs,
-  	 *            starting with zero) to the top of the list by rotating the stack.
-  	 * @return    Returns an array of paths in the stack.
-  	 */
-  @JSName("pushd")
-  def `pushd_-N`(dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-N`): shelljsLib.shelljsMod.ShellArray = js.native
   /**
   	 * Saves the current directory on the top of the directory stack and then cd to dir.
   	 * With no arguments, `pushd` exchanges the top two directories.
@@ -517,7 +517,7 @@ trait ShelljsExecProxy
   	 * @return        Returns an array of paths in the stack.
   	 */
   @JSName("pushd")
-  def `pushd_-N`(
+  def pushd_N(
     options: java.lang.String,
     dir: shelljsDashExecDashProxyLib.shelljsDashExecDashProxyLibStrings.`-N`
   ): shelljsLib.shelljsMod.ShellArray = js.native

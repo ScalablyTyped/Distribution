@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 trait HTMLCanvasElement
   extends stdLib.HTMLElement {
   @JSName("getContext")
-  def `getContext_experimental-webgl2`(contextId: webgl2Lib.webgl2LibStrings.`experimental-webgl2`): WebGL2RenderingContext | scala.Null = js.native
+  def getContext_experimentalwebgl2(contextId: webgl2Lib.webgl2LibStrings.`experimental-webgl2`): WebGL2RenderingContext | scala.Null = js.native
   @JSName("getContext")
-  def `getContext_experimental-webgl2`(
+  def getContext_experimentalwebgl2(
     contextId: webgl2Lib.webgl2LibStrings.`experimental-webgl2`,
     contextAttributes: stdLib.WebGLContextAttributes
   ): WebGL2RenderingContext | scala.Null = js.native

@@ -463,7 +463,8 @@ class Application protected () extends js.Object {
   def GetOpenFilename(FileFilter: java.lang.String): java.lang.String = js.native
   def GetOpenFilename(FileFilter: java.lang.String, FilterIndex: scala.Double): java.lang.String = js.native
   def GetOpenFilename(FileFilter: java.lang.String, FilterIndex: scala.Double, Title: java.lang.String): java.lang.String = js.native
-  def GetOpenFilename(
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_false(
     FileFilter: java.lang.String,
     FilterIndex: scala.Double,
     Title: java.lang.String,
@@ -471,56 +472,64 @@ class Application protected () extends js.Object {
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`false`
   ): java.lang.String = js.native
   /** @param ButtonText Macintosh only */
-  def GetOpenFilename(
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_true(
     FileFilter: java.lang.String,
     FilterIndex: scala.Double,
     Title: java.lang.String,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): stdLib.SafeArray[java.lang.String] = js.native
-  def GetOpenFilename(
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_true(
     FileFilter: java.lang.String,
     FilterIndex: scala.Double,
     Title: scala.Null,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): stdLib.SafeArray[java.lang.String] = js.native
-  def GetOpenFilename(
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_true(
     FileFilter: java.lang.String,
     FilterIndex: scala.Null,
     Title: java.lang.String,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): stdLib.SafeArray[java.lang.String] = js.native
-  def GetOpenFilename(
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_true(
     FileFilter: java.lang.String,
     FilterIndex: scala.Null,
     Title: scala.Null,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): stdLib.SafeArray[java.lang.String] = js.native
-  def GetOpenFilename(
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_true(
     FileFilter: scala.Null,
     FilterIndex: scala.Double,
     Title: java.lang.String,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): stdLib.SafeArray[java.lang.String] = js.native
-  def GetOpenFilename(
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_true(
     FileFilter: scala.Null,
     FilterIndex: scala.Double,
     Title: scala.Null,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): stdLib.SafeArray[java.lang.String] = js.native
-  def GetOpenFilename(
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_true(
     FileFilter: scala.Null,
     FilterIndex: scala.Null,
     Title: java.lang.String,
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): stdLib.SafeArray[java.lang.String] = js.native
-  def GetOpenFilename(
+  @JSName("GetOpenFilename")
+  def GetOpenFilename_true(
     FileFilter: scala.Null,
     FilterIndex: scala.Null,
     Title: scala.Null,
@@ -630,10 +639,14 @@ class Application protected () extends js.Object {
   def OnTime(EarliestTime: js.Any, Procedure: java.lang.String, LatestTime: js.Any): scala.Unit = js.native
   def OnTime(EarliestTime: js.Any, Procedure: java.lang.String, LatestTime: js.Any, Schedule: scala.Boolean): scala.Unit = js.native
   def OnUndo(Text: java.lang.String, Procedure: java.lang.String): scala.Unit = js.native
-  def PreviousSelections(Index: activexDashExcelLib.activexDashExcelLibNumbers.`1`): Range | scala.Null = js.native
-  def PreviousSelections(Index: activexDashExcelLib.activexDashExcelLibNumbers.`2`): Range | scala.Null = js.native
-  def PreviousSelections(Index: activexDashExcelLib.activexDashExcelLibNumbers.`3`): Range | scala.Null = js.native
-  def PreviousSelections(Index: activexDashExcelLib.activexDashExcelLibNumbers.`4`): Range | scala.Null = js.native
+  @JSName("PreviousSelections")
+  def PreviousSelections_1(Index: activexDashExcelLib.activexDashExcelLibNumbers.`1`): Range | scala.Null = js.native
+  @JSName("PreviousSelections")
+  def PreviousSelections_2(Index: activexDashExcelLib.activexDashExcelLibNumbers.`2`): Range | scala.Null = js.native
+  @JSName("PreviousSelections")
+  def PreviousSelections_3(Index: activexDashExcelLib.activexDashExcelLibNumbers.`3`): Range | scala.Null = js.native
+  @JSName("PreviousSelections")
+  def PreviousSelections_4(Index: activexDashExcelLib.activexDashExcelLibNumbers.`4`): Range | scala.Null = js.native
   def ProtectedViewWindows(Index: java.lang.String): ProtectedViewWindow = js.native
   def ProtectedViewWindows(Index: scala.Double): ProtectedViewWindow = js.native
   def Quit(): scala.Unit = js.native
@@ -644,13 +657,12 @@ class Application protected () extends js.Object {
   def Range(Cell1: java.lang.String, Cell2: Range): activexDashExcelLib.ExcelNs.Range = js.native
   def Range(Cell1: java.lang.String, Cell2: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
   def RecentFiles(Index: scala.Double): RecentFile = js.native
-  def RecordMacro(BasicCode: java.lang.String): scala.Unit = js.native
   /** This overload prevents recording */
-  @JSName("RecordMacro")
-  def RecordMacro_(
+  def RecordMacro(
     BasicCode: activexDashExcelLib.activexDashExcelLibStrings.Empty,
     XlmCode: activexDashExcelLib.activexDashExcelLibStrings.Empty
   ): scala.Unit = js.native
+  def RecordMacro(BasicCode: java.lang.String): scala.Unit = js.native
   def RegisterXLL(Filename: java.lang.String): scala.Boolean = js.native
   def RegisteredFunctions(): stdLib.SafeArray[_] | scala.Null = js.native
   def RegisteredFunctions(Index1: js.UndefOr[scala.Nothing], Index2: java.lang.String): stdLib.SafeArray[_] | scala.Null = js.native

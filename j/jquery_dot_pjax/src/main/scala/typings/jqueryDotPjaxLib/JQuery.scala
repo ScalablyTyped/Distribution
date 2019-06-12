@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQuery extends js.Object {
   @JSName("on")
-  def `on_pjax:popstate`(
+  def on_pjaxpopstate(
     event: jqueryDotPjaxLib.jqueryDotPjaxLibStrings.`pjax:popstate`,
     handler: js.Function1[/* e */ PjaxPopStateEventObject, scala.Unit]
   ): this.type = js.native

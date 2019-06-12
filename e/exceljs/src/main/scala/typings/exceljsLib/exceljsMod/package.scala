@@ -20,5 +20,6 @@ package object exceljsMod {
     - CellSharedFormulaValue
   */
   type CellValue = _CellValue | scala.Null | scala.Double | java.lang.String | scala.Boolean | stdLib.Date
+  type DocumentType = exceljsLib.exceljsLibNumbers.`1`
   type WorksheetView = WorksheetViewCommon with (WorksheetViewNormal | WorksheetViewFrozen | WorksheetViewSplit)
 }

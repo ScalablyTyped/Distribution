@@ -10,7 +10,7 @@ trait NodeCheckFn extends js.Object {
   def apply(
     view: ViewData,
     nodeIndex: scala.Double,
-    argStyle: ɵArgumentType,
+    argStyle: atAngularCoreLib.atAngularCoreLibNumbers.`0`,
     v0: js.UndefOr[js.Any],
     v1: js.UndefOr[js.Any],
     v2: js.UndefOr[js.Any],
@@ -22,6 +22,11 @@ trait NodeCheckFn extends js.Object {
     v8: js.UndefOr[js.Any],
     v9: js.UndefOr[js.Any]
   ): js.Any = js.native
-  def apply(view: ViewData, nodeIndex: scala.Double, argStyle: ɵArgumentType, values: js.Array[_]): js.Any = js.native
+  def apply(
+    view: ViewData,
+    nodeIndex: scala.Double,
+    argStyle: atAngularCoreLib.atAngularCoreLibNumbers.`1`,
+    values: js.Array[_]
+  ): js.Any = js.native
 }
 

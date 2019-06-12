@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SwaggerUiExpress extends js.Object {
   /**
+    * Returns handlers for serving Swagger UI files.
+    * This includes custom initialization js file and static files of Swagger UI.
+    *
+    * @returns Express handlers that process requests and return files for Swagger UI.
+    */
+  var serve: js.Array[expressLib.expressMod.RequestHandler] = js.native
+  /**
     * Generates the custom html page for the UI API.
     *
     * @param swaggerDoc json object with the API schema.
@@ -19,7 +26,8 @@ trait SwaggerUiExpress extends js.Object {
     * @param customeSiteTitle custom title for a page
     * @returns the generated html page.
     */
-  def generateHTML(
+  @JSName("generateHTML")
+  def generateHTML_false(
     swaggerDoc: js.UndefOr[JsonObject | scala.Null],
     opts: js.UndefOr[
       SwaggerUiOptions | swaggerDashUiDashExpressLib.swaggerDashUiDashExpressLibNumbers.`false` | scala.Null
@@ -38,13 +46,6 @@ trait SwaggerUiExpress extends js.Object {
       java.lang.String | swaggerDashUiDashExpressLib.swaggerDashUiDashExpressLibNumbers.`false` | scala.Null
     ]
   ): java.lang.String = js.native
-  /**
-    * Returns handlers for serving Swagger UI files.
-    * This includes custom initialization js file and static files of Swagger UI.
-    *
-    * @returns Express handlers that process requests and return files for Swagger UI.
-    */
-  def serve(): js.Array[expressLib.expressMod.RequestHandler] = js.native
   /**
     * Returns handlers for serving Swagger UI files.
     * This includes custom initialization js file and static files of Swagger UI.
@@ -78,7 +79,8 @@ trait SwaggerUiExpress extends js.Object {
     * @param customeSiteTitle custom title for a page
     * @returns an express middleware function that returns the generated html page.
     */
-  def setup(
+  @JSName("setup")
+  def setup_false(
     swaggerDoc: js.UndefOr[JsonObject | scala.Null],
     opts: js.UndefOr[
       SwaggerUiOptions | swaggerDashUiDashExpressLib.swaggerDashUiDashExpressLibNumbers.`false` | scala.Null

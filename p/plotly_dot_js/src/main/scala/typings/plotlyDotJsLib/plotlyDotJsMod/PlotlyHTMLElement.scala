@@ -13,82 +13,82 @@ trait PlotlyHTMLElement
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_animatingframe(
+  def on_plotlyanimatingframe(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_animatingframe,
     callback: js.Function1[/* event */ FrameAnimationEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_beforeplot(
+  def on_plotlybeforeplot(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_beforeplot,
     callback: js.Function1[/* event */ BeforePlotEvent, scala.Boolean]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_click(
+  def on_plotlyclick(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_click,
     callback: js.Function1[/* event */ PlotMouseEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_clickannotation(
+  def on_plotlyclickannotation(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_clickannotation,
     callback: js.Function1[/* event */ ClickAnnotationEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_event(
+  def on_plotlyevent(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_event,
     callback: js.Function1[/* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_hover(
+  def on_plotlyhover(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_hover,
     callback: js.Function1[/* event */ PlotMouseEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_legendclick(
+  def on_plotlylegendclick(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_legendclick,
     callback: js.Function1[/* event */ LegendClickEvent, scala.Boolean]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_legenddoubleclick(
+  def on_plotlylegenddoubleclick(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_legenddoubleclick,
     callback: js.Function1[/* event */ LegendClickEvent, scala.Boolean]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_relayout(
+  def on_plotlyrelayout(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_relayout,
     callback: js.Function1[/* event */ PlotRelayoutEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_restyle(
+  def on_plotlyrestyle(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_restyle,
     callback: js.Function1[/* data */ PlotRestyleEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_selected(
+  def on_plotlyselected(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_selected,
     callback: js.Function1[/* event */ PlotSelectionEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_selecting(
+  def on_plotlyselecting(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_selecting,
     callback: js.Function1[/* event */ PlotSelectionEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_sliderchange(
+  def on_plotlysliderchange(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_sliderchange,
     callback: js.Function1[/* event */ SliderChangeEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_sliderend(
+  def on_plotlysliderend(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_sliderend,
     callback: js.Function1[/* event */ SliderEndEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_sliderstart(
+  def on_plotlysliderstart(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_sliderstart,
     callback: js.Function1[/* event */ SliderStartEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_plotly_unhover(
+  def on_plotlyunhover(
     event: plotlyDotJsLib.plotlyDotJsLibStrings.plotly_unhover,
     callback: js.Function1[/* event */ PlotMouseEvent, scala.Unit]
   ): scala.Unit = js.native

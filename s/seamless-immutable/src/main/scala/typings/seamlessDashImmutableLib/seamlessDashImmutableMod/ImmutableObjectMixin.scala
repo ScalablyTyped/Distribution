@@ -10,15 +10,15 @@ trait ImmutableObjectMixin[T] extends js.Object {
   def asMutable(): /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
     */ seamlessDashImmutableLib.seamlessDashImmutableLibStrings.ImmutableObjectMixin with T = js.native
-  def asMutable(opts: AsMutableOptions[seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`true`]): T = js.native
+  def asMutable(opts: AsMutableOptions[scala.Boolean]): T | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
+    */ seamlessDashImmutableLib.seamlessDashImmutableLibStrings.ImmutableObjectMixin with T) = js.native
   @JSName("asMutable")
-  def `asMutable_<intersection>`(opts: AsMutableOptions[seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`false`]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  def asMutable_false(opts: AsMutableOptions[seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`false`]): /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
     */ seamlessDashImmutableLib.seamlessDashImmutableLibStrings.ImmutableObjectMixin with T = js.native
   @JSName("asMutable")
-  def `asMutable_<union>`(opts: AsMutableOptions[scala.Boolean]): T | (/* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof T ]: seamless-immutable.seamless-immutable.Immutable<T[K], {}>}
-    */ seamlessDashImmutableLib.seamlessDashImmutableLibStrings.ImmutableObjectMixin with T) = js.native
+  def asMutable_true(opts: AsMutableOptions[seamlessDashImmutableLib.seamlessDashImmutableLibNumbers.`true`]): T = js.native
   def getIn(propertyPath: js.Array[java.lang.String]): Immutable[_, js.Object] = js.native
   def getIn[TValue](propertyPath: js.Array[java.lang.String], defaultValue: TValue): Immutable[TValue, js.Object] = js.native
   def getIn[K /* <: java.lang.String */](

@@ -98,7 +98,7 @@ trait Wire
     listener: js.Function0[scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_keep-alive`(
+  def on_keepalive(
     event: bittorrentDashProtocolLib.bittorrentDashProtocolLibStrings.`keep-alive`,
     listener: js.Function0[scala.Unit]
   ): this.type = js.native

@@ -1491,7 +1491,7 @@ object ^ extends js.Object {
     init: T
   ): OutputIterator = js.native
   @JSName("try_lock")
-  def try_lock_try_lock(items: (stdLib.Pick[tstlLib.threadILockableMod.ILockable, tstlLib.tstlLibStrings.try_lock])*): js.Promise[scala.Double] = js.native
+  def try_lock_trylock(items: (stdLib.Pick[tstlLib.threadILockableMod.ILockable, tstlLib.tstlLibStrings.try_lock])*): js.Promise[scala.Double] = js.native
   def unique[InputIterator /* <: tstlLib.iteratorIFakeMod.General[
     tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[InputIterator], InputIterator]
   ] */](first: InputIterator, last: InputIterator): InputIterator = js.native

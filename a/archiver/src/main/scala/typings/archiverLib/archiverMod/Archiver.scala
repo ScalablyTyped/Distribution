@@ -15,17 +15,20 @@ trait Archiver
   def append(source: nodeLib.Buffer, name: EntryData): this.type = js.native
   def append(source: nodeLib.streamMod.Readable): this.type = js.native
   def append(source: nodeLib.streamMod.Readable, name: EntryData): this.type = js.native
+  def directory(dirpath: java.lang.String, destpath: java.lang.String): this.type = js.native
+  def directory(dirpath: java.lang.String, destpath: java.lang.String, data: EntryData): this.type = js.native
+  def directory(dirpath: java.lang.String, destpath: java.lang.String, data: EntryDataFunction): this.type = js.native
   /** if false is passed for destpath, the path of a chunk of data in the archive is set to the root */
-  def directory(dirpath: java.lang.String, destpath: archiverLib.archiverLibNumbers.`false`): this.type = js.native
-  def directory(dirpath: java.lang.String, destpath: archiverLib.archiverLibNumbers.`false`, data: EntryData): this.type = js.native
-  def directory(
+  @JSName("directory")
+  def directory_false(dirpath: java.lang.String, destpath: archiverLib.archiverLibNumbers.`false`): this.type = js.native
+  @JSName("directory")
+  def directory_false(dirpath: java.lang.String, destpath: archiverLib.archiverLibNumbers.`false`, data: EntryData): this.type = js.native
+  @JSName("directory")
+  def directory_false(
     dirpath: java.lang.String,
     destpath: archiverLib.archiverLibNumbers.`false`,
     data: EntryDataFunction
   ): this.type = js.native
-  def directory(dirpath: java.lang.String, destpath: java.lang.String): this.type = js.native
-  def directory(dirpath: java.lang.String, destpath: java.lang.String, data: EntryData): this.type = js.native
-  def directory(dirpath: java.lang.String, destpath: java.lang.String, data: EntryDataFunction): this.type = js.native
   def file(filename: java.lang.String, data: EntryData): this.type = js.native
   def glob(pattern: java.lang.String): this.type = js.native
   def glob(pattern: java.lang.String, options: globLib.globMod.IOptions): this.type = js.native

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "adone"
-version := "0.6-dt-20190311Z-4cdce6"
+version := "0.6-dt-20190311Z-ddd1e3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "assert" % "1.4-dt-20190212Z-3572b5",
-  "org.scalablytyped" %%% "async" % "3.0-dt-20190604Z-9cf424",
-  "org.scalablytyped" %%% "benchmark" % "v1.0.0-dt-20190322Z-66512d",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190606Z-4abba9",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "assert" % "1.4-dt-20190212Z-72862d",
+  "org.scalablytyped" %%% "async" % "3.0-dt-20190604Z-3ce62e",
+  "org.scalablytyped" %%% "benchmark" % "v1.0.0-dt-20190322Z-77551d",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190606Z-ca1840",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

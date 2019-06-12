@@ -11,5 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CommaListExpression extends Expression {
   var elements: NodeArray[Expression] = js.native
+  @JSName("kind")
+  var kind_CommaListExpression: typescriptLib.typescriptMod.SyntaxKind.CommaListExpression = js.native
 }
 

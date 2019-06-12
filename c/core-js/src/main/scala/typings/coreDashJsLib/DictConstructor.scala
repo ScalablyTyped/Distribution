@@ -34,12 +34,12 @@ trait DictConstructor
   def find[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ stdLib.PropertyKey, /* dict */ Dict[T], scala.Boolean]
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def find[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ stdLib.PropertyKey, /* dict */ Dict[T], scala.Boolean],
     thisArg: js.Any
-  ): T = js.native
+  ): js.UndefOr[T] = js.native
   def findKey[T](
     `object`: Dict[T],
     callbackfn: js.Function3[/* value */ T, /* key */ stdLib.PropertyKey, /* dict */ Dict[T], scala.Boolean]
@@ -58,10 +58,10 @@ trait DictConstructor
     callbackfn: js.Function3[/* value */ T, /* key */ stdLib.PropertyKey, /* dict */ Dict[T], scala.Unit],
     thisArg: js.Any
   ): scala.Unit = js.native
-  def get[T](`object`: Dict[T], key: stdLib.PropertyKey): T = js.native
+  def get[T](`object`: Dict[T], key: stdLib.PropertyKey): js.UndefOr[T] = js.native
   def has[T](`object`: Dict[T], key: stdLib.PropertyKey): scala.Boolean = js.native
   def includes[T](`object`: Dict[T], value: T): scala.Boolean = js.native
-  def isDict(value: js.Any): scala.Boolean = js.native
+  def isDict(value: js.Any): /* is core-js.Dict<any> */ scala.Boolean = js.native
   def keyOf[T](`object`: Dict[T], value: T): stdLib.PropertyKey = js.native
   def keys[T](`object`: Dict[T]): stdLib.IterableIterator[stdLib.PropertyKey] = js.native
   def map[T, U](

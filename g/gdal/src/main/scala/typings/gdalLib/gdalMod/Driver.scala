@@ -50,9 +50,9 @@ trait Driver extends js.Object {
   def getMetadata(domain: java.lang.String): js.Object = js.native
   def open(path: java.lang.String): Dataset = js.native
   @JSName("open")
-  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r): Dataset = js.native
+  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`): Dataset = js.native
   @JSName("open")
-  def `open_r+`(path: java.lang.String, mode: gdalLib.gdalLibStrings.`r+`): Dataset = js.native
+  def open_r(path: java.lang.String, mode: gdalLib.gdalLibStrings.r): Dataset = js.native
   def rename(new_name: java.lang.String, old_name: java.lang.String): scala.Unit = js.native
 }
 

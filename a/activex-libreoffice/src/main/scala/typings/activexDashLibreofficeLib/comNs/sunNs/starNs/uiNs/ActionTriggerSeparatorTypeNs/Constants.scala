@@ -5,30 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-sealed trait Constants extends js.Object
-
-@JSGlobal("com.sun.star.ui.ActionTriggerSeparatorType.Constants")
-@js.native
-object Constants extends js.Object {
-  @js.native
-  sealed trait LINE
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.ActionTriggerSeparatorTypeNs.Constants
-  
-  @js.native
-  sealed trait LINEBREAK
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.ActionTriggerSeparatorTypeNs.Constants
-  
-  @js.native
-  sealed trait SPACE
-    extends activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.ActionTriggerSeparatorTypeNs.Constants
-  
-  /* 0 */ val LINE: LINE with scala.Double = js.native
-  /* 2 */ val LINEBREAK: LINEBREAK with scala.Double = js.native
-  /* 1 */ val SPACE: SPACE with scala.Double = js.native
-  @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[
-    activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.ActionTriggerSeparatorTypeNs.Constants with scala.Double
-  ] = js.native
-}
+/* Rewritten from type alias, can be one of: 
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`0`
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`2`
+  - activexDashLibreofficeLib.activexDashLibreofficeLibNumbers.`1`
+*/
+trait Constants extends js.Object
 

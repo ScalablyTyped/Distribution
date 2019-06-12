@@ -1307,6 +1307,33 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class Personalize ()
+    extends awsDashSdkLib.awsDashSdkMod.Personalize {
+    def this(options: awsDashSdkLib.clientsPersonalizeMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
+  class PersonalizeEvents ()
+    extends awsDashSdkLib.awsDashSdkMod.PersonalizeEvents {
+    def this(options: awsDashSdkLib.clientsPersonalizeeventsMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
+  class PersonalizeRuntime ()
+    extends awsDashSdkLib.awsDashSdkMod.PersonalizeRuntime {
+    def this(options: awsDashSdkLib.clientsPersonalizeruntimeMod.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Pinpoint ()
     extends awsDashSdkLib.awsDashSdkMod.Pinpoint {
     def this(options: awsDashSdkLib.clientsPinpointMod.ClientConfiguration) = this()

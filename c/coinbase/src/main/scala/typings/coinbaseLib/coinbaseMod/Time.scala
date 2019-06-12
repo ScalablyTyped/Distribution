@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Time extends js.Object {
-  var epoch: scala.Double
-  var iso: java.lang.String
+  var data: coinbaseLib.Anon_Epoch
 }
 
 object Time {
   @scala.inline
-  def apply(epoch: scala.Double, iso: java.lang.String): Time = {
-    val __obj = js.Dynamic.literal(epoch = epoch, iso = iso)
+  def apply(data: coinbaseLib.Anon_Epoch): Time = {
+    val __obj = js.Dynamic.literal(data = data)
   
     __obj.asInstanceOf[Time]
   }

@@ -102,7 +102,7 @@ trait SMTPPool
   def verify_MSMTPPool(): js.Promise[nodemailerLib.nodemailerLibNumbers.`true`] = js.native
   /** Verifies SMTP configuration */
   @JSName("verify")
-  def verify_MSMTPPool(
+  def verify_true(
     callback: js.Function2[
       /* err */ stdLib.Error | scala.Null, 
       nodemailerLib.nodemailerLibNumbers.`true`, 

@@ -558,7 +558,8 @@ trait JQuery[TElement]
   });
   ```
     */
-  def ajaxComplete(
+  @JSName("ajaxComplete")
+  def ajaxComplete_false(
     handler: js.ThisFunction3[
       /* this */ stdLib.Document, 
       /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.Document, js.UndefOr[scala.Nothing], stdLib.Document, stdLib.Document], 
@@ -579,7 +580,8 @@ trait JQuery[TElement]
   });
   ```
     */
-  def ajaxError(
+  @JSName("ajaxError")
+  def ajaxError_false(
     handler: js.ThisFunction4[
       /* this */ stdLib.Document, 
       /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.Document, js.UndefOr[scala.Nothing], stdLib.Document, stdLib.Document], 
@@ -601,7 +603,8 @@ trait JQuery[TElement]
   });
   ```
     */
-  def ajaxSend(
+  @JSName("ajaxSend")
+  def ajaxSend_false(
     handler: js.ThisFunction3[
       /* this */ stdLib.Document, 
       /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.Document, js.UndefOr[scala.Nothing], stdLib.Document, stdLib.Document], 
@@ -622,7 +625,8 @@ trait JQuery[TElement]
   });
   ```
     */
-  def ajaxStart(
+  @JSName("ajaxStart")
+  def ajaxStart_false(
     handler: js.ThisFunction0[/* this */ stdLib.Document, scala.Unit | jqueryLib.jqueryLibNumbers.`false`]
   ): this.type = js.native
   /**
@@ -637,7 +641,8 @@ trait JQuery[TElement]
   });
   ```
     */
-  def ajaxStop(
+  @JSName("ajaxStop")
+  def ajaxStop_false(
     handler: js.ThisFunction0[/* this */ stdLib.Document, scala.Unit | jqueryLib.jqueryLibNumbers.`false`]
   ): this.type = js.native
   /**
@@ -652,7 +657,8 @@ trait JQuery[TElement]
   });
   ```
     */
-  def ajaxSuccess(
+  @JSName("ajaxSuccess")
+  def ajaxSuccess_false(
     handler: js.ThisFunction4[
       /* this */ stdLib.Document, 
       /* event */ jqueryLib.JQueryNs.TriggeredEvent[stdLib.Document, js.UndefOr[scala.Nothing], stdLib.Document, stdLib.Document], 
@@ -1591,7 +1597,6 @@ trait JQuery[TElement]
     eventType: TType,
     handler_preventBubble: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], TElement, TElement, TType]
   ): this.type = js.native
-  def bind[TType /* <: java.lang.String */](eventType: TType, handler_preventBubble: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   // [bind() overloads] https://github.com/jquery/api.jquery.com/issues/1048
   /**
     * Attach a handler to an event for the elements.
@@ -1612,6 +1617,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
+  @JSName("bind")
+  def bind_false[TType /* <: java.lang.String */](eventType: TType, handler_preventBubble: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "blur" JavaScript event, or trigger that event on an element.
     * @param handler A function to execute each time the event is triggered.
@@ -1628,7 +1635,6 @@ trait JQuery[TElement]
   ```
     */
   def blur(): this.type = js.native
-  def blur(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("blur")
   def blur_blur(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.blur]
@@ -1650,6 +1656,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.blur]
   ): this.type = js.native
+  @JSName("blur")
+  def blur_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Bind an event handler to the "change" JavaScript event, or trigger that event on an element.
     * @param handler A function to execute each time the event is triggered.
@@ -1709,7 +1717,6 @@ trait JQuery[TElement]
   ```
     */
   def change(): this.type = js.native
-  def change(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("change")
   def change_change(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.change]
@@ -1731,6 +1738,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.change]
   ): this.type = js.native
+  @JSName("change")
+  def change_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Get the children of each element in the set of matched elements, optionally filtered by a selector.
     * @param selector A string containing a selector expression to match elements against.
@@ -2022,7 +2031,6 @@ trait JQuery[TElement]
   ```
     */
   def click(): this.type = js.native
-  def click(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("click")
   def click_click(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.click]
@@ -2044,6 +2052,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.click]
   ): this.type = js.native
+  @JSName("click")
+  def click_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   def clone(withDataAndEvents: scala.Boolean): this.type = js.native
   def clone(withDataAndEvents: scala.Boolean, deepWithDataAndEvents: scala.Boolean): this.type = js.native
   def closest(selector_selection_element: JQuery[stdLib.HTMLElement]): this.type = js.native
@@ -2244,7 +2254,6 @@ trait JQuery[TElement]
   ```
     */
   def contextmenu(): this.type = js.native
-  def contextmenu(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("contextmenu")
   def contextmenu_contextmenu(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.contextmenu]
@@ -2266,6 +2275,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.contextmenu]
   ): this.type = js.native
+  @JSName("contextmenu")
+  def contextmenu_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Set one or more CSS properties for the set of matched elements.
     * @param properties An object of property-value pairs to set.
@@ -2720,7 +2731,6 @@ trait JQuery[TElement]
   ```
     */
   def dblclick(): this.type = js.native
-  def dblclick(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("dblclick")
   def dblclick_dblclick(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.dblclick]
@@ -2742,6 +2752,8 @@ trait JQuery[TElement]
     eventData: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, jqueryLib.jqueryLibStrings.dblclick]
   ): this.type = js.native
+  @JSName("dblclick")
+  def dblclick_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Set a timer to delay execution of subsequent items in the queue.
     * @param duration An integer indicating the number of milliseconds to delay execution of the next item in the queue.
@@ -2924,11 +2936,6 @@ trait JQuery[TElement]
     eventType: TType,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], _, _, TType]
   ): this.type = js.native
-  def delegate[TType /* <: java.lang.String */](
-    selector: jqueryLib.JQueryNs.Selector,
-    eventType: TType,
-    handler: jqueryLib.jqueryLibNumbers.`false`
-  ): this.type = js.native
   /**
     * Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements.
     * @param selector A selector to filter the elements that trigger the event.
@@ -2949,6 +2956,12 @@ trait JQuery[TElement]
     eventType: TType,
     eventData: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, _, _, TType]
+  ): this.type = js.native
+  @JSName("delegate")
+  def delegate_false[TType /* <: java.lang.String */](
+    selector: jqueryLib.JQueryNs.Selector,
+    eventType: TType,
+    handler: jqueryLib.jqueryLibNumbers.`false`
   ): this.type = js.native
   /**
     * Execute the next function on the queue for the matched elements.
@@ -3191,7 +3204,8 @@ trait JQuery[TElement]
   </html>
   ```
     */
-  def each(
+  @JSName("each")
+  def each_false(
     funсtion: js.ThisFunction2[
       /* this */ TElement, 
       /* index */ scala.Double, 
@@ -4470,7 +4484,8 @@ trait JQuery[TElement]
   ```
     */
   def focus(): this.type = js.native
-  def focus(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("focus")
+  def focus_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("focus")
   def focus_focus(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.focus]
@@ -4532,7 +4547,8 @@ trait JQuery[TElement]
   ```
     */
   def focusin(): this.type = js.native
-  def focusin(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("focusin")
+  def focusin_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("focusin")
   def focusin_focusin(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.focusin]
@@ -4615,7 +4631,8 @@ trait JQuery[TElement]
   ```
     */
   def focusout(): this.type = js.native
-  def focusout(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("focusout")
+  def focusout_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("focusout")
   def focusout_focusout(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.focusout]
@@ -5173,7 +5190,6 @@ trait JQuery[TElement]
       jqueryLib.jqueryLibStrings.mouseenter | jqueryLib.jqueryLibStrings.mouseleave
     ]
   ): this.type = js.native
-  def hover(handlerInOut: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements.
     * @param handlerIn A function to execute when the mouse pointer enters the element.
@@ -5252,17 +5268,18 @@ trait JQuery[TElement]
     handlerIn: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseenter],
     handlerOut: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseleave]
   ): this.type = js.native
-  def hover(handlerIn: jqueryLib.jqueryLibNumbers.`false`, handlerOut: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
-  @JSName("hover")
-  def hover_mouseenter(
+  def hover(
     handlerIn: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseenter],
     handlerOut: jqueryLib.jqueryLibNumbers.`false`
   ): this.type = js.native
-  @JSName("hover")
-  def hover_mouseleave(
+  def hover(
     handlerIn: jqueryLib.jqueryLibNumbers.`false`,
     handlerOut: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseleave]
   ): this.type = js.native
+  @JSName("hover")
+  def hover_false(handlerInOut: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("hover")
+  def hover_false(handlerIn: jqueryLib.jqueryLibNumbers.`false`, handlerOut: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Get the HTML contents of the first element in the set of matched elements.
     * @see \`{@link https://api.jquery.com/html/ }\`
@@ -6176,7 +6193,8 @@ trait JQuery[TElement]
   ```
     */
   def keydown(): this.type = js.native
-  def keydown(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("keydown")
+  def keydown_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("keydown")
   def keydown_keydown(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.keydown]
@@ -6270,7 +6288,8 @@ trait JQuery[TElement]
   ```
     */
   def keypress(): this.type = js.native
-  def keypress(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("keypress")
+  def keypress_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("keypress")
   def keypress_keypress(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.keypress]
@@ -6365,7 +6384,8 @@ trait JQuery[TElement]
   ```
     */
   def keyup(): this.type = js.native
-  def keyup(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("keyup")
+  def keyup_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("keyup")
   def keyup_keyup(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.keyup]
@@ -6737,7 +6757,8 @@ trait JQuery[TElement]
   ```
     */
   def mousedown(): this.type = js.native
-  def mousedown(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mousedown")
+  def mousedown_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("mousedown")
   def mousedown_mousedown(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mousedown]
@@ -6840,7 +6861,8 @@ trait JQuery[TElement]
   ```
     */
   def mouseenter(): this.type = js.native
-  def mouseenter(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseenter")
+  def mouseenter_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("mouseenter")
   def mouseenter_mouseenter(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseenter]
@@ -6941,7 +6963,8 @@ trait JQuery[TElement]
   ```
     */
   def mouseleave(): this.type = js.native
-  def mouseleave(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseleave")
+  def mouseleave_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("mouseleave")
   def mouseleave_mouseleave(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseleave]
@@ -7027,7 +7050,8 @@ trait JQuery[TElement]
   ```
     */
   def mousemove(): this.type = js.native
-  def mousemove(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mousemove")
+  def mousemove_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("mousemove")
   def mousemove_mousemove(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mousemove]
@@ -7130,7 +7154,8 @@ trait JQuery[TElement]
   ```
     */
   def mouseout(): this.type = js.native
-  def mouseout(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseout")
+  def mouseout_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("mouseout")
   def mouseout_mouseout(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseout]
@@ -7233,7 +7258,8 @@ trait JQuery[TElement]
   ```
     */
   def mouseover(): this.type = js.native
-  def mouseover(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseover")
+  def mouseover_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("mouseover")
   def mouseover_mouseover(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseover]
@@ -7293,7 +7319,8 @@ trait JQuery[TElement]
   ```
     */
   def mouseup(): this.type = js.native
-  def mouseup(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("mouseup")
+  def mouseup_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("mouseup")
   def mouseup_mouseup(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.mouseup]
@@ -7649,7 +7676,6 @@ trait JQuery[TElement]
   def off[TType /* <: java.lang.String */](events: TType): this.type = js.native
   def off[TType /* <: java.lang.String */](events: TType, selector_handler: jqueryLib.JQueryNs.Selector): this.type = js.native
   def off[TType /* <: java.lang.String */](events: TType, selector_handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, TType]): this.type = js.native
-  def off[TType /* <: java.lang.String */](events: TType, selector_handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Remove an event handler.
     * @param events One or more space-separated event types and optional namespaces, or just namespaces, such as
@@ -7722,7 +7748,10 @@ trait JQuery[TElement]
     selector: jqueryLib.JQueryNs.Selector,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, TType]
   ): this.type = js.native
-  def off[TType /* <: java.lang.String */](events: TType, selector: jqueryLib.JQueryNs.Selector, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("off")
+  def off_false[TType /* <: java.lang.String */](events: TType, selector_handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("off")
+  def off_false[TType /* <: java.lang.String */](events: TType, selector: jqueryLib.JQueryNs.Selector, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Get the current coordinates of the first element in the set of matched elements, relative to the document.
     * @see \`{@link https://api.jquery.com/offset/ }\`
@@ -8248,7 +8277,6 @@ trait JQuery[TElement]
     events: TType,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], TElement, TElement, TType]
   ): this.type = js.native
-  def on[TType /* <: java.lang.String */](events: TType, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -8314,7 +8342,6 @@ trait JQuery[TElement]
     selector: jqueryLib.JQueryNs.Selector,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], _, _, TType]
   ): this.type = js.native
-  def on[TType /* <: java.lang.String */](events: TType, selector: jqueryLib.JQueryNs.Selector, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -8417,6 +8444,10 @@ trait JQuery[TElement]
     data: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
+  @JSName("on")
+  def on_false[TType /* <: java.lang.String */](events: TType, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("on")
+  def on_false[TType /* <: java.lang.String */](events: TType, selector: jqueryLib.JQueryNs.Selector, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -8532,7 +8563,6 @@ trait JQuery[TElement]
     events: TType,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], TElement, TElement, TType]
   ): this.type = js.native
-  def one[TType /* <: java.lang.String */](events: TType, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events One or more space-separated event types and optional namespaces, such as "click" or "keydown.myPlugin".
@@ -8548,7 +8578,6 @@ trait JQuery[TElement]
     selector: jqueryLib.JQueryNs.Selector,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, js.UndefOr[scala.Nothing], _, _, TType]
   ): this.type = js.native
-  def one[TType /* <: java.lang.String */](events: TType, selector: jqueryLib.JQueryNs.Selector, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     * @param events An object in which the string keys represent one or more space-separated event types and optional
@@ -8644,6 +8673,10 @@ trait JQuery[TElement]
     data: TData,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, TData, TElement, TElement, TType]
   ): this.type = js.native
+  @JSName("one")
+  def one_false[TType /* <: java.lang.String */](events: TType, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("one")
+  def one_false[TType /* <: java.lang.String */](events: TType, selector: jqueryLib.JQueryNs.Selector, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Get the current computed outer height (including padding, border, and optionally margin) for the first element in the set of matched elements.
     * @param includeMargin A Boolean indicating whether to include the element's margin in the calculation.
@@ -10511,7 +10544,8 @@ trait JQuery[TElement]
   ```
     */
   def resize(): this.type = js.native
-  def resize(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("resize")
+  def resize_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("resize")
   def resize_resize(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.resize]
@@ -10583,7 +10617,6 @@ trait JQuery[TElement]
   ```
     */
   def scroll(): this.type = js.native
-  def scroll(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Get the current horizontal position of the scroll bar for the first element in the set of matched elements.
     * @see \`{@link https://api.jquery.com/scrollLeft/ }\`
@@ -10745,6 +10778,8 @@ trait JQuery[TElement]
     */
   def scrollTop(value: scala.Double): this.type = js.native
   @JSName("scroll")
+  def scroll_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("scroll")
   def scroll_scroll(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.scroll]
   ): this.type = js.native
@@ -10814,7 +10849,8 @@ trait JQuery[TElement]
   ```
     */
   def select(): this.type = js.native
-  def select(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("select")
+  def select_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("select")
   def select_select(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.select]
@@ -11918,7 +11954,8 @@ trait JQuery[TElement]
   ```
     */
   def submit(): this.type = js.native
-  def submit(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("submit")
+  def submit_false(handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   @JSName("submit")
   def submit_submit(
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, scala.Null, TElement, TElement, jqueryLib.jqueryLibStrings.submit]
@@ -12643,7 +12680,8 @@ trait JQuery[TElement]
   ```
     */
   def unbind[TType /* <: java.lang.String */](event: TType, handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, TElement, TElement, TType]): this.type = js.native
-  def unbind[TType /* <: java.lang.String */](event: TType, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
+  @JSName("unbind")
+  def unbind_false[TType /* <: java.lang.String */](event: TType, handler: jqueryLib.jqueryLibNumbers.`false`): this.type = js.native
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
     * @param namespace A selector which will be used to filter the event results.
@@ -12775,7 +12813,8 @@ trait JQuery[TElement]
     eventType: TType,
     handler: jqueryLib.JQueryNs.TypeEventHandler[TElement, _, _, _, TType]
   ): this.type = js.native
-  def undelegate[TType /* <: java.lang.String */](
+  @JSName("undelegate")
+  def undelegate_false[TType /* <: java.lang.String */](
     selector: jqueryLib.JQueryNs.Selector,
     eventType: TType,
     handler: jqueryLib.jqueryLibNumbers.`false`

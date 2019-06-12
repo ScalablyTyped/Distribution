@@ -9,12 +9,17 @@ trait DirectoryNode extends FileNode {
   var children: js.Array[FileNode]
   var parent: js.UndefOr[FileNode] = js.undefined
   var path: java.lang.String
-  var `type`: FileType
+  var `type`: atIonicUtilsDashFsLib.atIonicUtilsDashFsLibStrings.directory
 }
 
 object DirectoryNode {
   @scala.inline
-  def apply(children: js.Array[FileNode], path: java.lang.String, `type`: FileType, parent: FileNode = null): DirectoryNode = {
+  def apply(
+    children: js.Array[FileNode],
+    path: java.lang.String,
+    `type`: atIonicUtilsDashFsLib.atIonicUtilsDashFsLibStrings.directory,
+    parent: FileNode = null
+  ): DirectoryNode = {
     val __obj = js.Dynamic.literal(children = children, path = path)
     __obj.updateDynamic("type")(`type`)
     if (parent != null) __obj.updateDynamic("parent")(parent)

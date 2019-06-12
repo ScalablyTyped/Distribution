@@ -110,8 +110,55 @@ class DOMDocument60 protected () extends js.Object {
   def createElement(tagName: java.lang.String): IXMLDOMElement = js.native
   /** create an entity reference node */
   def createEntityReference(name: java.lang.String): IXMLDOMEntityReference = js.native
+  @JSName("createNode")
+  def createNode_1(
+    `type`: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`1`,
+    name: java.lang.String,
+    namespaceURI: java.lang.String
+  ): IXMLDOMNode = js.native
+  @JSName("createNode")
+  def createNode_11(
+    `type`: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`11`,
+    name: java.lang.String,
+    namespaceURI: java.lang.String
+  ): IXMLDOMNode = js.native
   /** create a node of the specified node type and name */
-  def createNode(`type`: DOMNodeType, name: java.lang.String, namespaceURI: java.lang.String): IXMLDOMNode = js.native
+  @JSName("createNode")
+  def createNode_2(
+    `type`: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`2`,
+    name: java.lang.String,
+    namespaceURI: java.lang.String
+  ): IXMLDOMNode = js.native
+  @JSName("createNode")
+  def createNode_3(
+    `type`: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`3`,
+    name: java.lang.String,
+    namespaceURI: java.lang.String
+  ): IXMLDOMNode = js.native
+  @JSName("createNode")
+  def createNode_4(
+    `type`: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`4`,
+    name: java.lang.String,
+    namespaceURI: java.lang.String
+  ): IXMLDOMNode = js.native
+  @JSName("createNode")
+  def createNode_5(
+    `type`: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`5`,
+    name: java.lang.String,
+    namespaceURI: java.lang.String
+  ): IXMLDOMNode = js.native
+  @JSName("createNode")
+  def createNode_7(
+    `type`: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`7`,
+    name: java.lang.String,
+    namespaceURI: java.lang.String
+  ): IXMLDOMNode = js.native
+  @JSName("createNode")
+  def createNode_8(
+    `type`: activexDashMsxml2Lib.activexDashMsxml2LibNumbers.`8`,
+    name: java.lang.String,
+    namespaceURI: java.lang.String
+  ): IXMLDOMNode = js.native
   /** create a processing instruction node */
   def createProcessingInstruction(target: java.lang.String, data: java.lang.String): IXMLDOMProcessingInstruction = js.native
   /** create a text node */

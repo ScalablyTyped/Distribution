@@ -84,35 +84,40 @@ trait ExtendedWebDriver
   def rotationGesture(x: scala.Double, y: scala.Double): js.Promise[scala.Unit] = js.native
   def rotationGesture(x: scala.Double, y: scala.Double, duration: scala.Double): js.Promise[scala.Unit] = js.native
   def rotationGesture(x: scala.Double, y: scala.Double, duration: scala.Double, rotation: scala.Double): js.Promise[scala.Unit] = js.native
-  def rotationGesture(
+  @JSName("rotationGesture")
+  def rotationGesture_1(
     x: scala.Double,
     y: scala.Double,
     duration: scala.Double,
     rotation: scala.Double,
     touchCount: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`1`
   ): js.Promise[scala.Unit] = js.native
-  def rotationGesture(
+  @JSName("rotationGesture")
+  def rotationGesture_2(
     x: scala.Double,
     y: scala.Double,
     duration: scala.Double,
     rotation: scala.Double,
     touchCount: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`2`
   ): js.Promise[scala.Unit] = js.native
-  def rotationGesture(
+  @JSName("rotationGesture")
+  def rotationGesture_3(
     x: scala.Double,
     y: scala.Double,
     duration: scala.Double,
     rotation: scala.Double,
     touchCount: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`3`
   ): js.Promise[scala.Unit] = js.native
-  def rotationGesture(
+  @JSName("rotationGesture")
+  def rotationGesture_4(
     x: scala.Double,
     y: scala.Double,
     duration: scala.Double,
     rotation: scala.Double,
     touchCount: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`4`
   ): js.Promise[scala.Unit] = js.native
-  def rotationGesture(
+  @JSName("rotationGesture")
+  def rotationGesture_5(
     x: scala.Double,
     y: scala.Double,
     duration: scala.Double,
@@ -132,82 +137,106 @@ trait ExtendedWebDriver
   def setNetworkConnection(typeOrAirplaneMode: scala.Boolean): js.Promise[scala.Unit] = js.native
   def setNetworkConnection(typeOrAirplaneMode: scala.Boolean, wifi: scala.Boolean): js.Promise[scala.Unit] = js.native
   def setNetworkConnection(typeOrAirplaneMode: scala.Boolean, wifi: scala.Boolean, data: scala.Boolean): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`0`): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_0(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`0`): js.Promise[scala.Unit] = js.native
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_0(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`0`,
     wifi: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_0(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`0`,
     wifi: scala.Boolean,
     data: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`1`): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_1(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`1`): js.Promise[scala.Unit] = js.native
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_1(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`1`,
     wifi: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_1(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`1`,
     wifi: scala.Boolean,
     data: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`2`): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_2(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`2`): js.Promise[scala.Unit] = js.native
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_2(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`2`,
     wifi: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_2(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`2`,
     wifi: scala.Boolean,
     data: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`3`): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_3(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`3`): js.Promise[scala.Unit] = js.native
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_3(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`3`,
     wifi: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_3(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`3`,
     wifi: scala.Boolean,
     data: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`4`): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_4(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`4`): js.Promise[scala.Unit] = js.native
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_4(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`4`,
     wifi: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_4(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`4`,
     wifi: scala.Boolean,
     data: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`5`): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_5(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`5`): js.Promise[scala.Unit] = js.native
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_5(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`5`,
     wifi: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_5(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`5`,
     wifi: scala.Boolean,
     data: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`6`): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_6(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`6`): js.Promise[scala.Unit] = js.native
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_6(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`6`,
     wifi: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_6(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`6`,
     wifi: scala.Boolean,
     data: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`7`): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_7(typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`7`): js.Promise[scala.Unit] = js.native
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_7(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`7`,
     wifi: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
-  def setNetworkConnection(
+  @JSName("setNetworkConnection")
+  def setNetworkConnection_7(
     typeOrAirplaneMode: webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`7`,
     wifi: scala.Boolean,
     data: scala.Boolean

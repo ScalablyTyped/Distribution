@@ -16,7 +16,7 @@ trait JQuery extends js.Object {
     * Adds errors to form, given an array errors
     */
   @JSName("form")
-  def `form_add errors`(
+  def form_adderrors(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add errors`,
     errors: js.Array[java.lang.String]
   ): JQuery = js.native
@@ -25,19 +25,19 @@ trait JQuery extends js.Object {
     * @since 2.2.11
     */
   @JSName("form")
-  def `form_add field`(
+  def form_addfield(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add field`,
     field: java.lang.String,
     rules: java.lang.String
   ): JQuery = js.native
   @JSName("form")
-  def `form_add field`(
+  def form_addfield(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add field`,
     field: java.lang.String,
     rules: js.Array[java.lang.String]
   ): JQuery = js.native
   @JSName("form")
-  def `form_add field`(
+  def form_addfield(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add field`,
     field: java.lang.String,
     rules: semanticDashUiDashFormLib.SemanticUINs.FormNs.Rules
@@ -47,7 +47,7 @@ trait JQuery extends js.Object {
     * @since 2.2.11
     */
   @JSName("form")
-  def `form_add fields`(
+  def form_addfields(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add fields`,
     fields: semanticDashUiDashFormLib.SemanticUINs.FormNs.Fields
   ): JQuery = js.native
@@ -55,13 +55,13 @@ trait JQuery extends js.Object {
     * Adds error prompt to the field with the given identifier
     */
   @JSName("form")
-  def `form_add prompt`(
+  def form_addprompt(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add prompt`,
     identifier: java.lang.String,
     errors: java.lang.String
   ): JQuery = js.native
   @JSName("form")
-  def `form_add prompt`(
+  def form_addprompt(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add prompt`,
     identifier: java.lang.String,
     errors: js.Array[java.lang.String]
@@ -71,19 +71,19 @@ trait JQuery extends js.Object {
     * @since 2.2.11
     */
   @JSName("form")
-  def `form_add rule`(
+  def form_addrule(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add rule`,
     field: java.lang.String,
     rules: java.lang.String
   ): JQuery = js.native
   @JSName("form")
-  def `form_add rule`(
+  def form_addrule(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add rule`,
     field: java.lang.String,
     rules: js.Array[java.lang.String]
   ): JQuery = js.native
   @JSName("form")
-  def `form_add rule`(
+  def form_addrule(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`add rule`,
     field: java.lang.String,
     rules: semanticDashUiDashFormLib.SemanticUINs.FormNs.Rules
@@ -94,12 +94,12 @@ trait JQuery extends js.Object {
     * gets browser property change event
     */
   @JSName("form")
-  def `form_get change event`(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`get change event`): java.lang.String = js.native
+  def form_getchangeevent(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`get change event`): java.lang.String = js.native
   /**
     * Returns element with matching name, id, or data-validate metadata to ID
     */
   @JSName("form")
-  def `form_get field`(
+  def form_getfield(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`get field`,
     id: java.lang.String
   ): JQuery = js.native
@@ -107,7 +107,7 @@ trait JQuery extends js.Object {
     * Returns validation rules for a given jQuery-referenced input field
     */
   @JSName("form")
-  def `form_get validation`(
+  def form_getvalidation(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`get validation`,
     element: JQuery
   ): js.Any = js.native
@@ -115,7 +115,7 @@ trait JQuery extends js.Object {
     * Returns value of element with id
     */
   @JSName("form")
-  def `form_get value`(
+  def form_getvalue(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`get value`,
     id: java.lang.String
   ): js.Any = js.native
@@ -123,9 +123,9 @@ trait JQuery extends js.Object {
     * Returns object of element values that match array of ids. If no IDS are passed will return all fields
     */
   @JSName("form")
-  def `form_get values`(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`get values`): js.Any = js.native
+  def form_getvalues(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`get values`): js.Any = js.native
   @JSName("form")
-  def `form_get values`(
+  def form_getvalues(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`get values`,
     ids: js.Array[java.lang.String]
   ): js.Any = js.native
@@ -133,7 +133,7 @@ trait JQuery extends js.Object {
     * Returns whether a field exists
     */
   @JSName("form")
-  def `form_has field`(
+  def form_hasfield(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`has field`,
     identifier: java.lang.String
   ): scala.Boolean = js.native
@@ -141,12 +141,12 @@ trait JQuery extends js.Object {
     * Returns true/false whether a form passes its validation rules
     */
   @JSName("form")
-  def `form_is valid`(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`is valid`): scala.Boolean = js.native
+  def form_isvalid(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`is valid`): scala.Boolean = js.native
   /**
     * Returns true/false whether a field passes its validation rules
     */
   @JSName("form")
-  def `form_is valid`(
+  def form_isvalid(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`is valid`,
     field: java.lang.String
   ): scala.Boolean = js.native
@@ -155,7 +155,7 @@ trait JQuery extends js.Object {
     * @since 2.2.11
     */
   @JSName("form")
-  def `form_remove field`(
+  def form_removefield(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`remove field`,
     field: java.lang.String
   ): JQuery = js.native
@@ -163,7 +163,7 @@ trait JQuery extends js.Object {
     * @since 2.2.11
     */
   @JSName("form")
-  def `form_remove fields`(
+  def form_removefields(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`remove fields`,
     fields: js.Array[java.lang.String]
   ): JQuery = js.native
@@ -172,7 +172,7 @@ trait JQuery extends js.Object {
     * @since 2.2.11
     */
   @JSName("form")
-  def `form_remove rule`(
+  def form_removerule(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`remove rule`,
     field: java.lang.String,
     rule: semanticDashUiDashFormLib.SemanticUINs.FormNs.Rule
@@ -181,30 +181,17 @@ trait JQuery extends js.Object {
     * @since 2.2.11
     */
   @JSName("form")
-  def `form_remove rules`(
+  def form_removerules(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`remove rules`,
     fields: java.lang.String,
     rules: js.Array[semanticDashUiDashFormLib.SemanticUINs.FormNs.Rule]
   ): JQuery = js.native
   @JSName("form")
-  def `form_remove rules`(
+  def form_removerules(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`remove rules`,
     fields: js.Array[java.lang.String],
     rules: js.Array[semanticDashUiDashFormLib.SemanticUINs.FormNs.Rule]
   ): JQuery = js.native
-  /**
-    * Sets value of element with id
-    */
-  @JSName("form")
-  def `form_set value`(
-    behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`set value`,
-    id: java.lang.String
-  ): JQuery = js.native
-  /**
-    * Sets key/value pairs from passed values object to matching ids
-    */
-  @JSName("form")
-  def `form_set values`(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`set values`, values: js.Any): JQuery = js.native
   @JSName("form")
   def form_setting(
     behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.setting,
@@ -219,6 +206,19 @@ trait JQuery extends js.Object {
     value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-form.SemanticUI.FormSettings._Impl[K] */ js.Any
   ): JQuery = js.native
   /**
+    * Sets value of element with id
+    */
+  @JSName("form")
+  def form_setvalue(
+    behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`set value`,
+    id: java.lang.String
+  ): JQuery = js.native
+  /**
+    * Sets key/value pairs from passed values object to matching ids
+    */
+  @JSName("form")
+  def form_setvalues(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`set values`, values: js.Any): JQuery = js.native
+  /**
     * Submits selected form
     */
   @JSName("form")
@@ -227,6 +227,6 @@ trait JQuery extends js.Object {
     * Validates form and calls onSuccess or onFailure
     */
   @JSName("form")
-  def `form_validate form`(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`validate form`): JQuery = js.native
+  def form_validateform(behavior: semanticDashUiDashFormLib.semanticDashUiDashFormLibStrings.`validate form`): JQuery = js.native
 }
 

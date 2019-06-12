@@ -288,7 +288,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_CLOSE:0`(
+  def on_CHANNELCLOSE0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_CLOSE:0`,
     listener: js.Function0[scala.Unit]
   ): this.type = js.native
@@ -296,7 +296,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_DATA:0`(
+  def on_CHANNELDATA0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_DATA:0`,
     listener: js.Function1[/* data */ nodeLib.Buffer, scala.Unit]
   ): this.type = js.native
@@ -304,7 +304,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_EOF:0`(
+  def on_CHANNELEOF0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_EOF:0`,
     listener: js.Function0[scala.Unit]
   ): this.type = js.native
@@ -312,7 +312,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_EXTENDED_DATA:0`(
+  def on_CHANNELEXTENDEDDATA0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_EXTENDED_DATA:0`,
     listener: js.Function2[/* type */ scala.Double, /* data */ nodeLib.Buffer, scala.Unit]
   ): this.type = js.native
@@ -320,7 +320,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_FAILURE:0`(
+  def on_CHANNELFAILURE0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_FAILURE:0`,
     listener: js.Function0[scala.Unit]
   ): this.type = js.native
@@ -328,7 +328,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def on_CHANNEL_OPEN(
+  def on_CHANNELOPEN(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.CHANNEL_OPEN,
     listener: js.Function1[/* channelInfo */ ChannelOpenInfo, scala.Unit]
   ): this.type = js.native
@@ -336,7 +336,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_OPEN_CONFIRMATION:0`(
+  def on_CHANNELOPENCONFIRMATION0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_OPEN_CONFIRMATION:0`,
     listener: js.Function1[/* channelInfo */ ChannelOpenConfirmationInfo, scala.Unit]
   ): this.type = js.native
@@ -344,7 +344,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_OPEN_FAILURE:0`(
+  def on_CHANNELOPENFAILURE0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_OPEN_FAILURE:0`,
     listener: js.Function1[/* failInfo */ ChannelOpenFailureInfo, scala.Unit]
   ): this.type = js.native
@@ -352,7 +352,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_REQUEST:0`(
+  def on_CHANNELREQUEST0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_REQUEST:0`,
     listener: js.Function1[/* request */ ChannelRequest, scala.Unit]
   ): this.type = js.native
@@ -360,7 +360,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_SUCCESS:0`(
+  def on_CHANNELSUCCESS0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_SUCCESS:0`,
     listener: js.Function0[scala.Unit]
   ): this.type = js.native
@@ -368,7 +368,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def `on_CHANNEL_WINDOW_ADJUST:0`(
+  def on_CHANNELWINDOWADJUST0(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`CHANNEL_WINDOW_ADJUST:0`,
     listener: js.Function1[/* bytesToAdd */ scala.Double, scala.Unit]
   ): this.type = js.native
@@ -397,7 +397,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def on_GLOBAL_REQUEST(
+  def on_GLOBALREQUEST(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.GLOBAL_REQUEST,
     listener: js.Function3[
       /* reqName */ java.lang.String, 
@@ -415,7 +415,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def on_REQUEST_FAILURE(
+  def on_REQUESTFAILURE(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.REQUEST_FAILURE,
     listener: js.Function0[scala.Unit]
   ): this.type = js.native
@@ -423,7 +423,7 @@ class SSH2Stream ()
     * (Client/Server)
     */
   @JSName("on")
-  def on_REQUEST_SUCCESS(
+  def on_REQUESTSUCCESS(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.REQUEST_SUCCESS,
     listener: js.Function1[/* resData */ nodeLib.Buffer, scala.Unit]
   ): this.type = js.native
@@ -431,7 +431,7 @@ class SSH2Stream ()
     * (Client-only)
     */
   @JSName("on")
-  def on_SERVICE_ACCEPT(
+  def on_SERVICEACCEPT(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.SERVICE_ACCEPT,
     listener: js.Function1[/* serviceName */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -439,7 +439,7 @@ class SSH2Stream ()
     * (Server-only)
     */
   @JSName("on")
-  def on_SERVICE_REQUEST(
+  def on_SERVICEREQUEST(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.SERVICE_REQUEST,
     listener: js.Function1[/* serviceName */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -447,7 +447,7 @@ class SSH2Stream ()
     * (Client-only)
     */
   @JSName("on")
-  def on_USERAUTH_BANNER(
+  def on_USERAUTHBANNER(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.USERAUTH_BANNER,
     listener: js.Function1[/* message */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -455,7 +455,7 @@ class SSH2Stream ()
     * (Client-only)
     */
   @JSName("on")
-  def on_USERAUTH_FAILURE(
+  def on_USERAUTHFAILURE(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.USERAUTH_FAILURE,
     listener: js.Function2[
       /* methodsContinue */ js.Array[java.lang.String], 
@@ -467,7 +467,7 @@ class SSH2Stream ()
     * (Client-only)
     */
   @JSName("on")
-  def on_USERAUTH_INFO_REQUEST(
+  def on_USERAUTHINFOREQUEST(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.USERAUTH_INFO_REQUEST,
     listener: js.Function4[
       /* name */ java.lang.String, 
@@ -481,7 +481,7 @@ class SSH2Stream ()
     * (Server-only)
     */
   @JSName("on")
-  def on_USERAUTH_INFO_RESPONSE(
+  def on_USERAUTHINFORESPONSE(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.USERAUTH_INFO_RESPONSE,
     listener: js.Function1[/* responses */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
@@ -489,7 +489,7 @@ class SSH2Stream ()
     * (Client-only)
     */
   @JSName("on")
-  def on_USERAUTH_PASSWD_CHANGEREQ(
+  def on_USERAUTHPASSWDCHANGEREQ(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.USERAUTH_PASSWD_CHANGEREQ,
     listener: js.Function1[/* message */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -497,7 +497,7 @@ class SSH2Stream ()
     * (Client-only)
     */
   @JSName("on")
-  def on_USERAUTH_PK_OK(
+  def on_USERAUTHPKOK(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.USERAUTH_PK_OK,
     listener: js.Function0[scala.Unit]
   ): this.type = js.native
@@ -505,7 +505,7 @@ class SSH2Stream ()
     * (Server-only)
     */
   @JSName("on")
-  def on_USERAUTH_REQUEST(
+  def on_USERAUTHREQUEST(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.USERAUTH_REQUEST,
     listener: js.Function4[
       /* username */ java.lang.String, 
@@ -519,7 +519,7 @@ class SSH2Stream ()
     * (Client-only)
     */
   @JSName("on")
-  def on_USERAUTH_SUCCESS(
+  def on_USERAUTHSUCCESS(
     event: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.USERAUTH_SUCCESS,
     listener: js.Function0[scala.Unit]
   ): this.type = js.native

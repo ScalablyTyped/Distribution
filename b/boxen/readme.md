@@ -1,7 +1,7 @@
 
 # Scala.js typings for boxen
 
-Typings are for version 4.0.0
+Typings are for version 4.1.0
 
 ## Library description:
 Create boxes in the terminal

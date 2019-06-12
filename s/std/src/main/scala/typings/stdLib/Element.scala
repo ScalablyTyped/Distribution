@@ -471,9 +471,9 @@ trait Element
   def getElementsByTagName(qualifiedName: java.lang.String): HTMLCollectionOf[Element] = js.native
   def getElementsByTagNameNS(namespaceURI: java.lang.String, localName: java.lang.String): HTMLCollectionOf[Element] = js.native
   @JSName("getElementsByTagNameNS")
-  def `getElementsByTagNameNS_http://wwww3org/1999/xhtml`(namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/1999/xhtml`, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
+  def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/1999/xhtml`, localName: java.lang.String): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagNameNS")
-  def `getElementsByTagNameNS_http://wwww3org/2000/svg`(namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
+  def getElementsByTagNameNS_httpwwww3org2000svg(namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`, localName: java.lang.String): HTMLCollectionOf[SVGElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_a(qualifiedName: stdLib.stdLibStrings.a): HTMLCollectionOf[HTMLAnchorElement] = js.native
   @JSName("getElementsByTagName")

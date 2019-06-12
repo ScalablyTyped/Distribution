@@ -14,10 +14,12 @@ object Context extends js.Object {
   @js.native
   sealed trait ATRUL
     extends atEmotionStylisLib.atEmotionStylisMod.Context
+       with atEmotionStylisLib.atEmotionStylisMod.PrefixContext
   
   @js.native
   sealed trait BLCKS
     extends atEmotionStylisLib.atEmotionStylisMod.Context
+       with atEmotionStylisLib.atEmotionStylisMod.PrefixContext
   
   @js.native
   sealed trait POSTS
@@ -30,6 +32,7 @@ object Context extends js.Object {
   @js.native
   sealed trait PROPS
     extends atEmotionStylisLib.atEmotionStylisMod.Context
+       with atEmotionStylisLib.atEmotionStylisMod.PrefixContext
   
   @js.native
   sealed trait UNKWN

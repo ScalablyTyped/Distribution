@@ -17,8 +17,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.AccountMergeOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined into */ @js.native
   trait AccountMergeOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.accountMerge, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.accountMerge
         ]
        with OperationRecord {
     var into: java.lang.String = js.native
@@ -85,8 +85,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.AllowTrustOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined asset_type, asset_code, asset_issuer, authorize, trustee, trustor */ @js.native
   trait AllowTrustOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.allowTrust, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.allowTrust
         ]
        with OperationRecord {
     var asset_code: java.lang.String = js.native
@@ -139,8 +139,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BumpSequenceOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined bump_to */ @js.native
   trait BumpSequenceOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.bumpSequence, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.bumpSequence
         ]
        with OperationRecord {
     var bump_to: java.lang.String = js.native
@@ -173,8 +173,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.ChangeTrustOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined asset_type, asset_code, asset_issuer, trustee, trustor, limit */ @js.native
   trait ChangeTrustOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.changeTrust, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.changeTrust
         ]
        with OperationRecord {
     var asset_code: java.lang.String = js.native
@@ -201,8 +201,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.CreateAccountOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined account, funder, starting_balance */ @js.native
   trait CreateAccountOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.createAccount, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.createAccount
         ]
        with OperationRecord {
     var account: java.lang.String = js.native
@@ -234,8 +234,8 @@ object ServerNs extends js.Object {
   @js.native
   trait InflationOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.inflation, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.inflation
         ]
        with OperationRecord
   
@@ -283,8 +283,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.ManageDataOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined name, value */ @js.native
   trait ManageDataOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.manageData, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.manageData
         ]
        with OperationRecord {
     var name: java.lang.String = js.native
@@ -295,8 +295,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.ManageOfferOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined offer_id, amount, buying_asset_type, buying_asset_code, buying_asset_issuer, price, price_r, selling_asset_type, selling_asset_code, selling_asset_issuer */ @js.native
   trait ManageOfferOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.manageOffer, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.manageOffer
         ]
        with OperationRecord {
     var amount: java.lang.String = js.native
@@ -369,8 +369,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.PassiveOfferOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined offer_id, amount, buying_asset_type, buying_asset_code, buying_asset_issuer, price, price_r, selling_asset_type, selling_asset_code, selling_asset_issuer */ @js.native
   trait PassiveOfferOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.createPassiveOffer, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.createPassiveOffer
         ]
        with OperationRecord {
     var amount: java.lang.String = js.native
@@ -392,8 +392,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.PathPaymentOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined from, to, asset_type, asset_code, asset_issuer, amount, source_asset_type, source_asset_code, source_asset_issuer, source_max, source_amount */ @js.native
   trait PathPaymentOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.pathPayment, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.pathPayment
         ]
        with OperationRecord {
     var amount: java.lang.String = js.native
@@ -420,8 +420,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.PaymentOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined from, to, asset_type, asset_code, asset_issuer, amount */ @js.native
   trait PaymentOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.payment, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.payment
         ]
        with OperationRecord {
     var amount: java.lang.String = js.native
@@ -455,8 +455,8 @@ object ServerNs extends js.Object {
   - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.SetOptionsOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined signer_key, signer_weight, master_key_weight, low_threshold, med_threshold, high_threshold, home_domain, set_flags, set_flags_s, clear_flags, clear_flags_s */ @js.native
   trait SetOptionsOperationRecord
     extends BaseOperationRecord[
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
-          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType.setOptions, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI.setOptions
         ]
        with OperationRecord {
     var clear_flags: js.Array[

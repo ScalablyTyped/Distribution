@@ -13,13 +13,17 @@ class Location () extends js.Object {
     */
   var address: js.UndefOr[Address] = js.native
   /**
-    * The location's business_name which is shown to its customers. For example, this is the name printed on its
-    * customer's receipts.
+    * The hours of operation for a business location. Default: none; only exists if explicitly set.
+    */
+  var business_hours: js.UndefOr[BusinessHours] = js.native
+  /**
+    * The location's business_name which is shown to its customers.
+    * For example, this is the name printed on its customer's receipts.
     */
   var business_name: js.UndefOr[java.lang.String] = js.native
   /**
-    * Indicates which Square features are enabled for the location. See [LocationCapability](#type-locationcapability)
-    * for possible values.
+    * Indicates which Square features are enabled for the location.
+    * See [LocationCapability](#type-locationcapability) for possible values.
     */
   var capabilities: js.UndefOr[js.Array[squareDashConnectLib.squareDashConnectMod.LocationNs.CapabilitiesEnum]] = js.native
   /**
@@ -31,9 +35,9 @@ class Location () extends js.Object {
     */
   var created_at: js.UndefOr[java.lang.String] = js.native
   /**
-    * The currency used for all transactions at this location, specified in __ISO 4217 format__. For example, the
-    * currency for a location processing transactions in the United States is 'USD'. See [Currency](#type-currency)
-    * for possible values.
+    * The currency used for all transactions at this location, specified in __ISO 4217 format__.
+    * For example, the currency for a location processing transactions in the United States is 'USD'.
+    * See [Currency](#type-currency) for possible values.
     */
   var currency: js.UndefOr[squareDashConnectLib.squareDashConnectMod.LocationNs.CurrencyEnum] = js.native
   /**
@@ -49,8 +53,7 @@ class Location () extends js.Object {
     */
   var merchant_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * The location's name. Location names are set by the account owner and displayed in the dashboard as the location's
-    * nickname
+    * The location's name. Location names are set by the account owner and displayed in the dashboard as the location's nickname.
     */
   var name: js.UndefOr[java.lang.String] = js.native
   /**
@@ -58,7 +61,7 @@ class Location () extends js.Object {
     */
   var phone_number: js.UndefOr[java.lang.String] = js.native
   /**
-    * The location's status  See [LocationStatus](#type-locationstatus) for possible values.
+    * The location's status. See [LocationStatus](#type-locationstatus) for possible values.
     */
   var status: js.UndefOr[squareDashConnectLib.squareDashConnectMod.LocationNs.StatusEnum] = js.native
   /**
@@ -66,14 +69,14 @@ class Location () extends js.Object {
     */
   var timezone: js.UndefOr[java.lang.String] = js.native
   /**
-    * The location's type, as set by the account owner in the Square dashboard. Typically used to indicate whether or
-    * not the location object represents a physical space like a building or mall space.  See
-    * [LocationType](#type-locationtype) for possible values.
+    * The location's type, as set by the account owner in the Square dashboard.
+    * Typically used to indicate whether or not the location object represents a physical space like a building or mall space.
+    * See [LocationType](#type-locationtype) for possible values.
     */
   var `type`: js.UndefOr[squareDashConnectLib.squareDashConnectMod.LocationNs.TypeEnum] = js.native
   /**
-    * The location's website, as set by the account owner in the Square dashboard.  Default: none; only exists if
-    * explicitly set.
+    * The location's website, as set by the account owner in the Square dashboard.
+    * Default: none; only exists if explicitly set.
     */
   var website_url: js.UndefOr[java.lang.String] = js.native
 }

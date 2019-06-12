@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "pg-ears"
-version := "1.0-dt-20180214Z-fbde83"
+version := "1.0-dt-20180214Z-968f02"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
-  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-b475c8",
-  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-c39b3b",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
+  "org.scalablytyped" %%% "pg" % "7.4-dt-20190319Z-858b0e",
+  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-cba12e",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

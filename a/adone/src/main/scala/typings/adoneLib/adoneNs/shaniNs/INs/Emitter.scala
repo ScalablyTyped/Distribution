@@ -13,29 +13,29 @@ trait Emitter
   @JSName("on")
   def on_done(event: adoneLib.adoneLibStrings.done, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
-  def `on_end test`(
+  def on_endtest(
     event: adoneLib.adoneLibStrings.`end test`,
     listener: js.Function1[/* event */ adoneLib.Anon_BlockMeta, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_enter block`(
+  def on_enterblock(
     event: adoneLib.adoneLibStrings.`enter block`,
     listener: js.Function1[/* event */ adoneLib.Anon_Block, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_error(event: adoneLib.adoneLibStrings.error, listener: js.Function1[/* err */ js.Any, scala.Unit]): this.type = js.native
   @JSName("on")
-  def `on_exit block`(
+  def on_exitblock(
     event: adoneLib.adoneLibStrings.`exit block`,
     listener: js.Function1[/* event */ adoneLib.Anon_Block, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_skip test`(
+  def on_skiptest(
     event: adoneLib.adoneLibStrings.`skip test`,
     listener: js.Function1[/* event */ adoneLib.Anon_BlockRuntime, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_start test`(
+  def on_starttest(
     event: adoneLib.adoneLibStrings.`start test`,
     listener: js.Function1[/* event */ adoneLib.Anon_BlockTest, scala.Unit]
   ): this.type = js.native

@@ -11,6 +11,8 @@ trait TypeLiteralNode
   extends TypeNode
      with ObjectTypeDeclaration {
   var _declarationBrand: js.Any = js.native
+  @JSName("kind")
+  var kind_TypeLiteralNode: typescriptLib.typescriptMod.SyntaxKind.TypeLiteral = js.native
   var members: NodeArray[TypeElement] = js.native
 }
 

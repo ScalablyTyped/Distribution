@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* tslint:enable:interface-name */
 trait VolumeInspectInfo extends js.Object {
   var Driver: java.lang.String
   var Labels: org.scalablytyped.runtime.StringDictionary[java.lang.String]

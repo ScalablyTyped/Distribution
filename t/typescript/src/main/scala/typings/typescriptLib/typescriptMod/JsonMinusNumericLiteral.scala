@@ -10,6 +10,6 @@ trait JsonMinusNumericLiteral extends PrefixUnaryExpression {
   @JSName("operand")
   var operand_JsonMinusNumericLiteral: NumericLiteral = js.native
   @JSName("operator")
-  var operator_JsonMinusNumericLiteral: SyntaxKind = js.native
+  var operator_JsonMinusNumericLiteral: typescriptLib.typescriptMod.SyntaxKind.MinusToken = js.native
 }
 

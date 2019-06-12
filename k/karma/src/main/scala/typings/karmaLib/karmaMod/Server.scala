@@ -22,7 +22,7 @@ class Server ()
     * Listen to the 'run_complete' event.
     */
   @JSName("on")
-  def on_run_complete(
+  def on_runcomplete(
     event: karmaLib.karmaLibStrings.run_complete,
     listener: js.Function2[/* browsers */ js.Any, /* results */ TestResults, scala.Unit]
   ): this.type = js.native

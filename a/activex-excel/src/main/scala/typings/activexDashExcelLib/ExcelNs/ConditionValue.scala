@@ -15,8 +15,18 @@ class ConditionValue protected () extends js.Object {
   val Type: XlConditionValueTypes = js.native
   var Value: scala.Double | java.lang.String = js.native
   def Modify(newtype: XlConditionValueTypes): scala.Unit = js.native
-  def Modify(newtype: XlConditionValueTypes, newvalue: java.lang.String): scala.Unit = js.native
   def Modify(newtype: XlConditionValueTypes, newvalue: js.Any): scala.Unit = js.native
-  def Modify(newtype: XlConditionValueTypes, newvalue: scala.Double): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_0(newtype: activexDashExcelLib.activexDashExcelLibNumbers.`0`, newvalue: scala.Double): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_1(newtype: activexDashExcelLib.activexDashExcelLibNumbers.`1`): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_2(newtype: activexDashExcelLib.activexDashExcelLibNumbers.`2`): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_3(newtype: activexDashExcelLib.activexDashExcelLibNumbers.`3`, newvalue: scala.Double): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_4(newtype: activexDashExcelLib.activexDashExcelLibNumbers.`4`, newvalue: java.lang.String): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_5(newtype: activexDashExcelLib.activexDashExcelLibNumbers.`5`, newvalue: scala.Double): scala.Unit = js.native
 }
 

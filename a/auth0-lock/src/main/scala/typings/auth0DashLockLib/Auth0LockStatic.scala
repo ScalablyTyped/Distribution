@@ -48,7 +48,7 @@ trait Auth0LockStatic
     callback: js.Function1[/* authResult */ AuthResult, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def on_authorization_error(
+  def on_authorizationerror(
     event: auth0DashLockLib.auth0DashLockLibStrings.authorization_error,
     callback: js.Function1[/* error */ auth0DashJsLib.auth0DashJsMod.Auth0Error, scala.Unit]
   ): scala.Unit = js.native
@@ -57,7 +57,7 @@ trait Auth0LockStatic
   @JSName("on")
   def on_show(event: auth0DashLockLib.auth0DashLockLibStrings.show, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("on")
-  def on_unrecoverable_error(
+  def on_unrecoverableerror(
     event: auth0DashLockLib.auth0DashLockLibStrings.unrecoverable_error,
     callback: js.Function1[/* error */ auth0DashJsLib.auth0DashJsMod.Auth0Error, scala.Unit]
   ): scala.Unit = js.native

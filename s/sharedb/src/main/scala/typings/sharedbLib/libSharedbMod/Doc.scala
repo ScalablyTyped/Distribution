@@ -13,7 +13,7 @@ class Doc ()
   var id: java.lang.String = js.native
   var `type`: java.lang.String = js.native
   @JSName("addListener")
-  def `addListener_before op`(
+  def addListener_beforeop(
     event: sharedbLib.sharedbLibStrings.`before op`,
     callback: js.Function2[/* ops */ js.Array[Op], /* source */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -32,9 +32,9 @@ class Doc ()
   @JSName("addListener")
   def addListener_load(event: sharedbLib.sharedbLibStrings.load, callback: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def `addListener_no write pending`(event: sharedbLib.sharedbLibStrings.`no write pending`, callback: js.Function0[scala.Unit]): this.type = js.native
+  def addListener_nothingpending(event: sharedbLib.sharedbLibStrings.`nothing pending`, callback: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
-  def `addListener_nothing pending`(event: sharedbLib.sharedbLibStrings.`nothing pending`, callback: js.Function0[scala.Unit]): this.type = js.native
+  def addListener_nowritepending(event: sharedbLib.sharedbLibStrings.`no write pending`, callback: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_op(
     event: sharedbLib.sharedbLibStrings.op,
@@ -51,7 +51,7 @@ class Doc ()
   def fetch(callback: js.Function1[/* err */ Error, scala.Unit]): scala.Unit = js.native
   def ingestSnapshot(snapshot: Snapshot, callback: Callback): scala.Unit = js.native
   @JSName("on")
-  def `on_before op`(
+  def on_beforeop(
     event: sharedbLib.sharedbLibStrings.`before op`,
     callback: js.Function2[/* ops */ js.Array[Op], /* source */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -70,9 +70,9 @@ class Doc ()
   @JSName("on")
   def on_load(event: sharedbLib.sharedbLibStrings.load, callback: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
-  def `on_no write pending`(event: sharedbLib.sharedbLibStrings.`no write pending`, callback: js.Function0[scala.Unit]): this.type = js.native
+  def on_nothingpending(event: sharedbLib.sharedbLibStrings.`nothing pending`, callback: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
-  def `on_nothing pending`(event: sharedbLib.sharedbLibStrings.`nothing pending`, callback: js.Function0[scala.Unit]): this.type = js.native
+  def on_nowritepending(event: sharedbLib.sharedbLibStrings.`no write pending`, callback: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
   def on_op(
     event: sharedbLib.sharedbLibStrings.op,

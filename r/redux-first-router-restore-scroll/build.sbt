@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "redux-first-router-restore-scroll"
-version := "1.2-dt-20180428Z-02b50f"
+version := "1.2-dt-20180428Z-d2eb03"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-684028",
-  "org.scalablytyped" %%% "redux" % "4.0.1-cd375e",
-  "org.scalablytyped" %%% "redux-first-router" % "2.1-dt-20190522Z-f50651",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-0452b6",
+  "org.scalablytyped" %%% "redux" % "4.0.1-2e6d53",
+  "org.scalablytyped" %%% "redux-first-router" % "2.1-dt-20190522Z-5a657e",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -4053,7 +4053,6 @@
 | 0.5910748681802388 | [cordova-plugin-qrscanner](./c/cordova-plugin-qrscanner) | Fast, energy-efficient, highly-configurable QR cod
 | 0.5910327474654199 | [express-mung](./e/express-mung) | Transform an express response (or make until no go
 | 0.5909004678692816 | [croppie](./c/croppie) | A simple javascript image cropper
-| 0.5908606533507741 | [youtube-player](./y/youtube-player) | YouTube IFrame Player API abstraction.
 | 0.5908222378922378 | [sc-broker](./s/sc-broker) | sc-broker key-value and message broker
 | 0.5904865978345314 | [csurf](./c/csurf) | CSRF token middleware
 | 0.590421712893358 | [mapnik](./m/mapnik) | Tile rendering library for node
@@ -4371,6 +4370,7 @@
 | 0.5449577562095992 | [redis-rate-limiter](./r/redis-rate-limiter) | Rate-limit any operation, backed by Redis
 | 0.5448178504864434 | [autobahn](./a/autobahn) | An implementation of The Web Application Messaging
 | 0.5447973552862185 | [react-text-truncate](./r/react-text-truncate) | Truncate text for React.js
+| 0.5444835112393738 | [next-nprogress](./n/next-nprogress) | Next.js HOC to integrate NProgress inside your app
 | 0.5443919443331483 | [react-test-renderer](./r/react-test-renderer) | React package for snapshot testing.
 | 0.5440628612012482 | [read-config-file](./r/read-config-file) | Read configuration file in various formats:
 | 0.5436841842364392 | [rdflib](./r/rdflib) | an RDF library for node.js. Suitable for client an
@@ -4383,6 +4383,7 @@
 | 0.5425602812141814 | [angular-ui-scroll](./a/angular-ui-scroll) | AngularJS infinite scrolling module
 | 0.5424916538940716 | [react-is](./r/react-is) | Brand checking of React Elements.
 | 0.542401457950879 | [react-sortable-tree-theme](./r/react-sortable-tree-theme-file-explorer) | File explorer theme for react-sortable-tree
+| 0.5419642942357319 | [draft-convert](./d/draft-convert) | Extensibly serialize & deserialize Draft.js Conten
 | 0.5419520085674011 | [expr-eval](./e/expr-eval) | Mathematical expression evaluator
 | 0.5416003566633665 | [datatables_dot_net-autofi](./d/datatables_dot_net-autofill) | AutoFill for DataTables
 | 0.5409730756845444 | [rollup-plugin-sourcemaps](./r/rollup-plugin-sourcemaps) | Rollup plugin for grabbing source maps from source
@@ -4422,6 +4423,7 @@
 | 0.5354490951502703 | [jsonschema](./j/jsonschema) | A fast and easy to use JSON Schema validator
 | 0.5354236093043434 | [hpp](./h/hpp) | Express middleware to protect against HTTP Paramet
 | 0.535337279583047 | [terminal-image](./t/terminal-image) | Display images in the terminal
+| 0.5350255089370897 | [jsum](./j/jsum) | Consistent checksum calculation of JSON objects.
 | 0.5347699008511098 | [cli-table](./c/cli-table) | Pretty unicode tables for the CLI
 | 0.534694968393101 | [react-native-canvas](./r/react-native-canvas) |   react-native-canvas 
 | 0.5345553417805948 | [plist](./p/plist) | Mac OS X Plist parser/builder for Node.js and brow
@@ -4831,6 +4833,7 @@
 | 0.466187955727612 | [caseless](./c/caseless) | Caseless object set/get/has, very useful when work
 | 0.4659385283697234 | [prosemirror-menu](./p/prosemirror-menu) | Simple menu elements for ProseMirror
 | 0.4657834860234863 | [semver-sort](./s/semver-sort) | Sort array of semver string even which is exist in
+| 0.4657293436057488 | [vanilla-masker](./v/vanilla-masker) | VanillaMasker is a pure javascript input mask.
 | 0.46547981668732563 | [dygraphs](./d/dygraphs) | dygraphs is a fast, flexible open source JavaScrip
 | 0.46522444469638113 | [colorbrewer](./c/colorbrewer) | A shim module of colorbrewer2 by Cythina Brewer fo
 | 0.46517011150689114 | [collectionsjs](./c/collectionsjs) | A Collection class for working with JavaScript arr

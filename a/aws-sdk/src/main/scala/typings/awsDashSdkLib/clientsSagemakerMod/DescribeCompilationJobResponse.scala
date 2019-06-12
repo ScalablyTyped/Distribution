@@ -55,7 +55,7 @@ trait DescribeCompilationJobResponse extends js.Object {
     */
   var RoleArn: awsDashSdkLib.clientsSagemakerMod.RoleArn
   /**
-    * The duration allowed for model compilation.
+    * Specifies a limit to how long a model compilation job can run. When the job reaches the time limit, Amazon SageMaker ends the compilation job. Use this API to cap model training costs.
     */
   var StoppingCondition: awsDashSdkLib.clientsSagemakerMod.StoppingCondition
 }

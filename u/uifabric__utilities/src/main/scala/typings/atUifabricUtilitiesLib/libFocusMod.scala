@@ -100,12 +100,12 @@ object libFocusMod extends js.Object {
   def isElementVisible(): scala.Boolean = js.native
   def isElementVisible(element: stdLib.HTMLElement): scala.Boolean = js.native
   @JSName("shouldWrapFocus")
-  def `shouldWrapFocus_data-no-horizontal-wrap`(
+  def shouldWrapFocus_datanohorizontalwrap(
     element: stdLib.HTMLElement,
     noWrapDataAttribute: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-no-horizontal-wrap`
   ): scala.Boolean = js.native
   @JSName("shouldWrapFocus")
-  def `shouldWrapFocus_data-no-vertical-wrap`(
+  def shouldWrapFocus_datanoverticalwrap(
     element: stdLib.HTMLElement,
     noWrapDataAttribute: atUifabricUtilitiesLib.atUifabricUtilitiesLibStrings.`data-no-vertical-wrap`
   ): scala.Boolean = js.native

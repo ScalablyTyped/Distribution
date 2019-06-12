@@ -11,6 +11,8 @@ trait MappedTypeNode
   extends TypeNode
      with HasType {
   var _declarationBrand: js.Any = js.native
+  @JSName("kind")
+  var kind_MappedTypeNode: typescriptLib.typescriptMod.SyntaxKind.MappedType = js.native
   var questionToken: js.UndefOr[QuestionToken | PlusToken | MinusToken] = js.native
   var readonlyToken: js.UndefOr[ReadonlyToken | PlusToken | MinusToken] = js.native
   var `type`: js.UndefOr[TypeNode] = js.native

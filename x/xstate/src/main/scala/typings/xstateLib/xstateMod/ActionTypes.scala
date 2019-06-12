@@ -15,6 +15,7 @@ object ActionTypes extends js.Object {
   /* "done.state" */ val DoneState: xstateLib.libTypesMod.ActionTypes.DoneState with java.lang.String = js.native
   /* "error.communication" */ val ErrorCommunication: xstateLib.libTypesMod.ActionTypes.ErrorCommunication with java.lang.String = js.native
   /* "error.execution" */ val ErrorExecution: xstateLib.libTypesMod.ActionTypes.ErrorExecution with java.lang.String = js.native
+  /* "error.platform" */ val ErrorPlatform: xstateLib.libTypesMod.ActionTypes.ErrorPlatform with java.lang.String = js.native
   /* "xstate.init" */ val Init: xstateLib.libTypesMod.ActionTypes.Init with java.lang.String = js.native
   /* "xstate.invoke" */ val Invoke: xstateLib.libTypesMod.ActionTypes.Invoke with java.lang.String = js.native
   /* "xstate.log" */ val Log: xstateLib.libTypesMod.ActionTypes.Log with java.lang.String = js.native

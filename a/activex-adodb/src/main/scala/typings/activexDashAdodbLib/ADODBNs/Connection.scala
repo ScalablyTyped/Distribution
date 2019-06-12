@@ -79,7 +79,12 @@ class Connection protected () extends js.Object {
     * Returns a Recordset object that contains schema information, for a provider-specific schema query type
     * @param SchemaID The GUID for a provider-schema query not defined by the OLE DB specification.
     */
-  def OpenSchema(Schema: SchemaEnum, Restrictions: stdLib.SafeArray[java.lang.String], SchemaID: java.lang.String): Recordset = js.native
+  @JSName("OpenSchema")
+  def OpenSchema_1(
+    Schema: activexDashAdodbLib.activexDashAdodbLibNumbers.`-1`,
+    Restrictions: stdLib.SafeArray[java.lang.String],
+    SchemaID: java.lang.String
+  ): Recordset = js.native
   def Properties(Index: java.lang.String): Property = js.native
   def Properties(Index: scala.Double): Property = js.native
   def RollbackTrans(): scala.Unit = js.native

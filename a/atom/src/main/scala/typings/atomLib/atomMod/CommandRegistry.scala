@@ -13,14 +13,14 @@ trait CommandRegistry extends js.Object {
   def add[T /* <: stdLib.Node */](target: T, commands: org.scalablytyped.runtime.StringDictionary[CommandRegistryListener[T]]): CompositeDisposable = js.native
   /** Register a single command. */
   @JSName("add")
-  def `add_atom-text-editor`(
+  def add_atomtexteditor(
     target: atomLib.atomLibStrings.`atom-text-editor`,
     commandName: java.lang.String,
     listener: CommandRegistryListener[TextEditorElement]
   ): Disposable = js.native
   /** Register multiple commands. */
   @JSName("add")
-  def `add_atom-text-editor`(
+  def add_atomtexteditor(
     target: atomLib.atomLibStrings.`atom-text-editor`,
     commands: org.scalablytyped.runtime.StringDictionary[CommandRegistryListener[TextEditorElement]]
   ): CompositeDisposable = js.native

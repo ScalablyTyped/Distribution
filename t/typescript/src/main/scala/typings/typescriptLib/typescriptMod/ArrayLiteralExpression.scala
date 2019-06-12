@@ -13,5 +13,7 @@ trait ArrayLiteralExpression
      with DestructuringPattern
      with _BindingOrAssignmentElement {
   var elements: NodeArray[Expression] = js.native
+  @JSName("kind")
+  var kind_ArrayLiteralExpression: typescriptLib.typescriptMod.SyntaxKind.ArrayLiteralExpression = js.native
 }
 

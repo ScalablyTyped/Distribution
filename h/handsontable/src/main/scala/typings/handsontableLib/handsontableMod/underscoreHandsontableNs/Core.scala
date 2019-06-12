@@ -29,27 +29,27 @@ trait Core extends js.Object {
     ]
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(action: handsontableLib.handsontableLibStrings.insert_col): scala.Unit = js.native
+  def alter_insertcol(action: handsontableLib.handsontableLibStrings.insert_col): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(
+  def alter_insertcol(
     action: handsontableLib.handsontableLibStrings.insert_col,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]]
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(
+  def alter_insertcol(
     action: handsontableLib.handsontableLibStrings.insert_col,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(
+  def alter_insertcol(
     action: handsontableLib.handsontableLibStrings.insert_col,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double,
     source: java.lang.String
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(
+  def alter_insertcol(
     action: handsontableLib.handsontableLibStrings.insert_col,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double,
@@ -57,22 +57,22 @@ trait Core extends js.Object {
     keepEmptyRows: scala.Boolean
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(action: handsontableLib.handsontableLibStrings.insert_col, index: scala.Double): scala.Unit = js.native
+  def alter_insertcol(action: handsontableLib.handsontableLibStrings.insert_col, index: scala.Double): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(
+  def alter_insertcol(
     action: handsontableLib.handsontableLibStrings.insert_col,
     index: scala.Double,
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(
+  def alter_insertcol(
     action: handsontableLib.handsontableLibStrings.insert_col,
     index: scala.Double,
     amount: scala.Double,
     source: java.lang.String
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_col(
+  def alter_insertcol(
     action: handsontableLib.handsontableLibStrings.insert_col,
     index: scala.Double,
     amount: scala.Double,
@@ -80,27 +80,27 @@ trait Core extends js.Object {
     keepEmptyRows: scala.Boolean
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(action: handsontableLib.handsontableLibStrings.insert_row): scala.Unit = js.native
+  def alter_insertrow(action: handsontableLib.handsontableLibStrings.insert_row): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(
+  def alter_insertrow(
     action: handsontableLib.handsontableLibStrings.insert_row,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]]
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(
+  def alter_insertrow(
     action: handsontableLib.handsontableLibStrings.insert_row,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(
+  def alter_insertrow(
     action: handsontableLib.handsontableLibStrings.insert_row,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double,
     source: java.lang.String
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(
+  def alter_insertrow(
     action: handsontableLib.handsontableLibStrings.insert_row,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double,
@@ -108,22 +108,22 @@ trait Core extends js.Object {
     keepEmptyRows: scala.Boolean
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(action: handsontableLib.handsontableLibStrings.insert_row, index: scala.Double): scala.Unit = js.native
+  def alter_insertrow(action: handsontableLib.handsontableLibStrings.insert_row, index: scala.Double): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(
+  def alter_insertrow(
     action: handsontableLib.handsontableLibStrings.insert_row,
     index: scala.Double,
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(
+  def alter_insertrow(
     action: handsontableLib.handsontableLibStrings.insert_row,
     index: scala.Double,
     amount: scala.Double,
     source: java.lang.String
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_insert_row(
+  def alter_insertrow(
     action: handsontableLib.handsontableLibStrings.insert_row,
     index: scala.Double,
     amount: scala.Double,
@@ -131,27 +131,27 @@ trait Core extends js.Object {
     keepEmptyRows: scala.Boolean
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(action: handsontableLib.handsontableLibStrings.remove_col): scala.Unit = js.native
+  def alter_removecol(action: handsontableLib.handsontableLibStrings.remove_col): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(
+  def alter_removecol(
     action: handsontableLib.handsontableLibStrings.remove_col,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]]
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(
+  def alter_removecol(
     action: handsontableLib.handsontableLibStrings.remove_col,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(
+  def alter_removecol(
     action: handsontableLib.handsontableLibStrings.remove_col,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double,
     source: java.lang.String
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(
+  def alter_removecol(
     action: handsontableLib.handsontableLibStrings.remove_col,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double,
@@ -159,22 +159,22 @@ trait Core extends js.Object {
     keepEmptyRows: scala.Boolean
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(action: handsontableLib.handsontableLibStrings.remove_col, index: scala.Double): scala.Unit = js.native
+  def alter_removecol(action: handsontableLib.handsontableLibStrings.remove_col, index: scala.Double): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(
+  def alter_removecol(
     action: handsontableLib.handsontableLibStrings.remove_col,
     index: scala.Double,
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(
+  def alter_removecol(
     action: handsontableLib.handsontableLibStrings.remove_col,
     index: scala.Double,
     amount: scala.Double,
     source: java.lang.String
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_col(
+  def alter_removecol(
     action: handsontableLib.handsontableLibStrings.remove_col,
     index: scala.Double,
     amount: scala.Double,
@@ -182,27 +182,27 @@ trait Core extends js.Object {
     keepEmptyRows: scala.Boolean
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(action: handsontableLib.handsontableLibStrings.remove_row): scala.Unit = js.native
+  def alter_removerow(action: handsontableLib.handsontableLibStrings.remove_row): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(
+  def alter_removerow(
     action: handsontableLib.handsontableLibStrings.remove_row,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]]
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(
+  def alter_removerow(
     action: handsontableLib.handsontableLibStrings.remove_row,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(
+  def alter_removerow(
     action: handsontableLib.handsontableLibStrings.remove_row,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double,
     source: java.lang.String
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(
+  def alter_removerow(
     action: handsontableLib.handsontableLibStrings.remove_row,
     index: js.Array[js.Tuple2[scala.Double, scala.Double]],
     amount: scala.Double,
@@ -210,22 +210,22 @@ trait Core extends js.Object {
     keepEmptyRows: scala.Boolean
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(action: handsontableLib.handsontableLibStrings.remove_row, index: scala.Double): scala.Unit = js.native
+  def alter_removerow(action: handsontableLib.handsontableLibStrings.remove_row, index: scala.Double): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(
+  def alter_removerow(
     action: handsontableLib.handsontableLibStrings.remove_row,
     index: scala.Double,
     amount: scala.Double
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(
+  def alter_removerow(
     action: handsontableLib.handsontableLibStrings.remove_row,
     index: scala.Double,
     amount: scala.Double,
     source: java.lang.String
   ): scala.Unit = js.native
   @JSName("alter")
-  def alter_remove_row(
+  def alter_removerow(
     action: handsontableLib.handsontableLibStrings.remove_row,
     index: scala.Double,
     amount: scala.Double,
@@ -661,8 +661,10 @@ trait Core extends js.Object {
     amount: scala.Double,
     elements: handsontableLib.handsontableMod.HandsontableNs.CellValue*
   ): scala.Unit = js.native
+  def toHTML(): java.lang.String = js.native
   def toPhysicalColumn(column: scala.Double): scala.Double = js.native
   def toPhysicalRow(row: scala.Double): scala.Double = js.native
+  def toTableElement(): stdLib.HTMLTableElement = js.native
   def toVisualColumn(column: scala.Double): scala.Double = js.native
   def toVisualRow(row: scala.Double): scala.Double = js.native
   def unlisten(): scala.Unit = js.native

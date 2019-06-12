@@ -20,11 +20,11 @@ object V1TenderNs extends js.Object {
   @js.native
   object CardBrandEnum extends js.Object {
     @js.native
-    sealed trait AMERICANEXPRESS
+    sealed trait AMERICAN_EXPRESS
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.CardBrandEnum
     
     @js.native
-    sealed trait CHINAUNIONPAY
+    sealed trait CHINA_UNIONPAY
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.CardBrandEnum
     
     @js.native
@@ -32,7 +32,7 @@ object V1TenderNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.CardBrandEnum
     
     @js.native
-    sealed trait DISCOVERDINERS
+    sealed trait DISCOVER_DINERS
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.CardBrandEnum
     
     @js.native
@@ -44,25 +44,25 @@ object V1TenderNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.CardBrandEnum
     
     @js.native
-    sealed trait OTHERBRAND
+    sealed trait OTHER_BRAND
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.CardBrandEnum
     
     @js.native
-    sealed trait SQUAREGIFTCARD
+    sealed trait SQUARE_GIFT_CARD
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.CardBrandEnum
     
     @js.native
     sealed trait VISA
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.CardBrandEnum
     
-    /* "AMERICAN_EXPRESS" */ val AMERICANEXPRESS: AMERICANEXPRESS with java.lang.String = js.native
-    /* "CHINA_UNIONPAY" */ val CHINAUNIONPAY: CHINAUNIONPAY with java.lang.String = js.native
+    /* "AMERICAN_EXPRESS" */ val AMERICAN_EXPRESS: AMERICAN_EXPRESS with java.lang.String = js.native
+    /* "CHINA_UNIONPAY" */ val CHINA_UNIONPAY: CHINA_UNIONPAY with java.lang.String = js.native
     /* "DISCOVER" */ val DISCOVER: DISCOVER with java.lang.String = js.native
-    /* "DISCOVER_DINERS" */ val DISCOVERDINERS: DISCOVERDINERS with java.lang.String = js.native
+    /* "DISCOVER_DINERS" */ val DISCOVER_DINERS: DISCOVER_DINERS with java.lang.String = js.native
     /* "JCB" */ val JCB: JCB with java.lang.String = js.native
     /* "MASTERCARD" */ val MASTERCARD: MASTERCARD with java.lang.String = js.native
-    /* "OTHER_BRAND" */ val OTHERBRAND: OTHERBRAND with java.lang.String = js.native
-    /* "SQUARE_GIFT_CARD" */ val SQUAREGIFTCARD: SQUAREGIFTCARD with java.lang.String = js.native
+    /* "OTHER_BRAND" */ val OTHER_BRAND: OTHER_BRAND with java.lang.String = js.native
+    /* "SQUARE_GIFT_CARD" */ val SQUARE_GIFT_CARD: SQUARE_GIFT_CARD with java.lang.String = js.native
     /* "VISA" */ val VISA: VISA with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
@@ -85,11 +85,11 @@ object V1TenderNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.EntryMethodEnum
     
     @js.native
-    sealed trait SQUARECASH
+    sealed trait SQUARE_CASH
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.EntryMethodEnum
     
     @js.native
-    sealed trait SQUAREWALLET
+    sealed trait SQUARE_WALLET
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.EntryMethodEnum
     
     @js.native
@@ -97,16 +97,16 @@ object V1TenderNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.EntryMethodEnum
     
     @js.native
-    sealed trait WEBFORM
+    sealed trait WEB_FORM
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.EntryMethodEnum
     
     /* "MANUAL" */ val MANUAL: MANUAL with java.lang.String = js.native
     /* "OTHER" */ val OTHER: OTHER with java.lang.String = js.native
     /* "SCANNED" */ val SCANNED: SCANNED with java.lang.String = js.native
-    /* "SQUARE_CASH" */ val SQUARECASH: SQUARECASH with java.lang.String = js.native
-    /* "SQUARE_WALLET" */ val SQUAREWALLET: SQUAREWALLET with java.lang.String = js.native
+    /* "SQUARE_CASH" */ val SQUARE_CASH: SQUARE_CASH with java.lang.String = js.native
+    /* "SQUARE_WALLET" */ val SQUARE_WALLET: SQUARE_WALLET with java.lang.String = js.native
     /* "SWIPED" */ val SWIPED: SWIPED with java.lang.String = js.native
-    /* "WEB_FORM" */ val WEBFORM: WEBFORM with java.lang.String = js.native
+    /* "WEB_FORM" */ val WEB_FORM: WEB_FORM with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.V1TenderNs.EntryMethodEnum with java.lang.String
@@ -120,11 +120,11 @@ object V1TenderNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.TypeEnum
     
     @js.native
-    sealed trait CREDITCARD
+    sealed trait CREDIT_CARD
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.TypeEnum
     
     @js.native
-    sealed trait NOSALE
+    sealed trait NO_SALE
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.TypeEnum
     
     @js.native
@@ -132,15 +132,15 @@ object V1TenderNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.TypeEnum
     
     @js.native
-    sealed trait SQUAREGIFTCARD
+    sealed trait SQUARE_GIFT_CARD
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.TypeEnum
     
     @js.native
-    sealed trait SQUAREWALLET
+    sealed trait SQUARE_WALLET
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.TypeEnum
     
     @js.native
-    sealed trait THIRDPARTYCARD
+    sealed trait THIRD_PARTY_CARD
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.TypeEnum
     
     @js.native
@@ -148,12 +148,12 @@ object V1TenderNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1TenderNs.TypeEnum
     
     /* "CASH" */ val CASH: CASH with java.lang.String = js.native
-    /* "CREDIT_CARD" */ val CREDITCARD: CREDITCARD with java.lang.String = js.native
-    /* "NO_SALE" */ val NOSALE: NOSALE with java.lang.String = js.native
+    /* "CREDIT_CARD" */ val CREDIT_CARD: CREDIT_CARD with java.lang.String = js.native
+    /* "NO_SALE" */ val NO_SALE: NO_SALE with java.lang.String = js.native
     /* "OTHER" */ val OTHER: OTHER with java.lang.String = js.native
-    /* "SQUARE_GIFT_CARD" */ val SQUAREGIFTCARD: SQUAREGIFTCARD with java.lang.String = js.native
-    /* "SQUARE_WALLET" */ val SQUAREWALLET: SQUAREWALLET with java.lang.String = js.native
-    /* "THIRD_PARTY_CARD" */ val THIRDPARTYCARD: THIRDPARTYCARD with java.lang.String = js.native
+    /* "SQUARE_GIFT_CARD" */ val SQUARE_GIFT_CARD: SQUARE_GIFT_CARD with java.lang.String = js.native
+    /* "SQUARE_WALLET" */ val SQUARE_WALLET: SQUARE_WALLET with java.lang.String = js.native
+    /* "THIRD_PARTY_CARD" */ val THIRD_PARTY_CARD: THIRD_PARTY_CARD with java.lang.String = js.native
     /* "UNKNOWN" */ val UNKNOWN: UNKNOWN with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[

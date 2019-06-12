@@ -1,7 +1,7 @@
 
 # Scala.js typings for package-json
 
-Typings are for version 6.3.0
+Typings are for version 6.4.0
 
 ## Library description:
 Get metadata of a package from the npm registry

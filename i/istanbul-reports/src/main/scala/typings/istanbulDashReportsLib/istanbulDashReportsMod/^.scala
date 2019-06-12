@@ -34,9 +34,9 @@ object ^ extends js.Object {
   @JSName("create")
   def create_json(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.json, options: stdLib.Partial[Options]): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
   @JSName("create")
-  def `create_json-summary`(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.`json-summary`): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
+  def create_jsonsummary(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.`json-summary`): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
   @JSName("create")
-  def `create_json-summary`(
+  def create_jsonsummary(
     name: istanbulDashReportsLib.istanbulDashReportsLibStrings.`json-summary`,
     options: stdLib.Partial[Options]
   ): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
@@ -76,16 +76,16 @@ object ^ extends js.Object {
     options: stdLib.Partial[Options with istanbulDashReportsLib.Anon_MaxCols]
   ): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
   @JSName("create")
-  def `create_text-lcov`(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.`text-lcov`): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
+  def create_textlcov(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.`text-lcov`): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
   @JSName("create")
-  def `create_text-lcov`(
+  def create_textlcov(
     name: istanbulDashReportsLib.istanbulDashReportsLibStrings.`text-lcov`,
     options: stdLib.Partial[Options]
   ): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
   @JSName("create")
-  def `create_text-summary`(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.`text-summary`): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
+  def create_textsummary(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.`text-summary`): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
   @JSName("create")
-  def `create_text-summary`(
+  def create_textsummary(
     name: istanbulDashReportsLib.istanbulDashReportsLibStrings.`text-summary`,
     options: stdLib.Partial[Options]
   ): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native

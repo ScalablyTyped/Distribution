@@ -16,12 +16,12 @@ class BrowserWindow () extends EventEmitter {
     */
   def addBrowserView(browserView: BrowserView): scala.Unit = js.native
   @JSName("addListener")
-  def `addListener_always-on-top-changed`(
+  def addListener_alwaysontopchanged(
     event: electronLib.electronLibStrings.`always-on-top-changed`,
     listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_app-command`(
+  def addListener_appcommand(
     event: electronLib.electronLibStrings.`app-command`,
     listener: js.Function2[/* event */ Event, /* command */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -32,17 +32,17 @@ class BrowserWindow () extends EventEmitter {
   @JSName("addListener")
   def addListener_closed(event: electronLib.electronLibStrings.closed, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_enter-full-screen`(event: electronLib.electronLibStrings.`enter-full-screen`, listener: js.Function): this.type = js.native
+  def addListener_enterfullscreen(event: electronLib.electronLibStrings.`enter-full-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_enter-html-full-screen`(event: electronLib.electronLibStrings.`enter-html-full-screen`, listener: js.Function): this.type = js.native
+  def addListener_enterhtmlfullscreen(event: electronLib.electronLibStrings.`enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_focus(event: electronLib.electronLibStrings.focus, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_hide(event: electronLib.electronLibStrings.hide, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_leave-full-screen`(event: electronLib.electronLibStrings.`leave-full-screen`, listener: js.Function): this.type = js.native
+  def addListener_leavefullscreen(event: electronLib.electronLibStrings.`leave-full-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_leave-html-full-screen`(event: electronLib.electronLibStrings.`leave-html-full-screen`, listener: js.Function): this.type = js.native
+  def addListener_leavehtmlfullscreen(event: electronLib.electronLibStrings.`leave-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_maximize(event: electronLib.electronLibStrings.maximize, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -52,9 +52,9 @@ class BrowserWindow () extends EventEmitter {
   @JSName("addListener")
   def addListener_moved(event: electronLib.electronLibStrings.moved, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_new-window-for-tab`(event: electronLib.electronLibStrings.`new-window-for-tab`, listener: js.Function): this.type = js.native
+  def addListener_newwindowfortab(event: electronLib.electronLibStrings.`new-window-for-tab`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_page-title-updated`(
+  def addListener_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function3[
       /* event */ Event, 
@@ -64,7 +64,7 @@ class BrowserWindow () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_ready-to-show`(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
+  def addListener_readytoshow(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_resize(event: electronLib.electronLibStrings.resize, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -72,17 +72,17 @@ class BrowserWindow () extends EventEmitter {
   @JSName("addListener")
   def addListener_restore(event: electronLib.electronLibStrings.restore, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_scroll-touch-begin`(event: electronLib.electronLibStrings.`scroll-touch-begin`, listener: js.Function): this.type = js.native
+  def addListener_scrolltouchbegin(event: electronLib.electronLibStrings.`scroll-touch-begin`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_scroll-touch-edge`(event: electronLib.electronLibStrings.`scroll-touch-edge`, listener: js.Function): this.type = js.native
+  def addListener_scrolltouchedge(event: electronLib.electronLibStrings.`scroll-touch-edge`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_scroll-touch-end`(event: electronLib.electronLibStrings.`scroll-touch-end`, listener: js.Function): this.type = js.native
+  def addListener_scrolltouchend(event: electronLib.electronLibStrings.`scroll-touch-end`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_session-end`(event: electronLib.electronLibStrings.`session-end`, listener: js.Function): this.type = js.native
+  def addListener_sessionend(event: electronLib.electronLibStrings.`session-end`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_sheet-begin`(event: electronLib.electronLibStrings.`sheet-begin`, listener: js.Function): this.type = js.native
+  def addListener_sheetbegin(event: electronLib.electronLibStrings.`sheet-begin`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_sheet-end`(event: electronLib.electronLibStrings.`sheet-end`, listener: js.Function): this.type = js.native
+  def addListener_sheetend(event: electronLib.electronLibStrings.`sheet-end`, listener: js.Function): this.type = js.native
   @JSName("addListener")
   def addListener_show(event: electronLib.electronLibStrings.show, listener: js.Function): this.type = js.native
   @JSName("addListener")
@@ -95,12 +95,12 @@ class BrowserWindow () extends EventEmitter {
   @JSName("addListener")
   def addListener_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_will-move`(
+  def addListener_willmove(
     event: electronLib.electronLibStrings.`will-move`,
     listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_will-resize`(
+  def addListener_willresize(
     event: electronLib.electronLibStrings.`will-resize`,
     listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
   ): this.type = js.native
@@ -291,7 +291,7 @@ class BrowserWindow () extends EventEmitter {
     * Emitted when the window is set or unset to show always on top of other windows.
     */
   @JSName("on")
-  def `on_always-on-top-changed`(
+  def on_alwaysontopchanged(
     event: electronLib.electronLibStrings.`always-on-top-changed`,
     listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -304,7 +304,7 @@ class BrowserWindow () extends EventEmitter {
     * on Linux:
     */
   @JSName("on")
-  def `on_app-command`(
+  def on_appcommand(
     event: electronLib.electronLibStrings.`app-command`,
     listener: js.Function2[/* event */ Event, /* command */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -337,12 +337,12 @@ class BrowserWindow () extends EventEmitter {
     * Emitted when the window enters a full-screen state.
     */
   @JSName("on")
-  def `on_enter-full-screen`(event: electronLib.electronLibStrings.`enter-full-screen`, listener: js.Function): this.type = js.native
+  def on_enterfullscreen(event: electronLib.electronLibStrings.`enter-full-screen`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the window enters a full-screen state triggered by HTML API.
     */
   @JSName("on")
-  def `on_enter-html-full-screen`(event: electronLib.electronLibStrings.`enter-html-full-screen`, listener: js.Function): this.type = js.native
+  def on_enterhtmlfullscreen(event: electronLib.electronLibStrings.`enter-html-full-screen`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the window gains focus.
     */
@@ -357,12 +357,12 @@ class BrowserWindow () extends EventEmitter {
     * Emitted when the window leaves a full-screen state.
     */
   @JSName("on")
-  def `on_leave-full-screen`(event: electronLib.electronLibStrings.`leave-full-screen`, listener: js.Function): this.type = js.native
+  def on_leavefullscreen(event: electronLib.electronLibStrings.`leave-full-screen`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the window leaves a full-screen state triggered by HTML API.
     */
   @JSName("on")
-  def `on_leave-html-full-screen`(event: electronLib.electronLibStrings.`leave-html-full-screen`, listener: js.Function): this.type = js.native
+  def on_leavehtmlfullscreen(event: electronLib.electronLibStrings.`leave-html-full-screen`, listener: js.Function): this.type = js.native
   /**
     * Emitted when window is maximized.
     */
@@ -388,14 +388,14 @@ class BrowserWindow () extends EventEmitter {
     * Emitted when the native new tab button is clicked.
     */
   @JSName("on")
-  def `on_new-window-for-tab`(event: electronLib.electronLibStrings.`new-window-for-tab`, listener: js.Function): this.type = js.native
+  def on_newwindowfortab(event: electronLib.electronLibStrings.`new-window-for-tab`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the document changed its title, calling event.preventDefault() will
     * prevent the native window's title from changing. explicitSet is false when title
     * is synthesized from file url.
     */
   @JSName("on")
-  def `on_page-title-updated`(
+  def on_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function3[
       /* event */ Event, 
@@ -409,7 +409,7 @@ class BrowserWindow () extends EventEmitter {
     * can be displayed without a visual flash.
     */
   @JSName("on")
-  def `on_ready-to-show`(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
+  def on_readytoshow(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
   /**
     * Emitted after the window has been resized.
     */
@@ -429,33 +429,33 @@ class BrowserWindow () extends EventEmitter {
     * Emitted when scroll wheel event phase has begun.
     */
   @JSName("on")
-  def `on_scroll-touch-begin`(event: electronLib.electronLibStrings.`scroll-touch-begin`, listener: js.Function): this.type = js.native
+  def on_scrolltouchbegin(event: electronLib.electronLibStrings.`scroll-touch-begin`, listener: js.Function): this.type = js.native
   /**
     * Emitted when scroll wheel event phase filed upon reaching the edge of element.
     */
   @JSName("on")
-  def `on_scroll-touch-edge`(event: electronLib.electronLibStrings.`scroll-touch-edge`, listener: js.Function): this.type = js.native
+  def on_scrolltouchedge(event: electronLib.electronLibStrings.`scroll-touch-edge`, listener: js.Function): this.type = js.native
   /**
     * Emitted when scroll wheel event phase has ended.
     */
   @JSName("on")
-  def `on_scroll-touch-end`(event: electronLib.electronLibStrings.`scroll-touch-end`, listener: js.Function): this.type = js.native
+  def on_scrolltouchend(event: electronLib.electronLibStrings.`scroll-touch-end`, listener: js.Function): this.type = js.native
   /**
     * Emitted when window session is going to end due to force shutdown or machine
     * restart or session log off.
     */
   @JSName("on")
-  def `on_session-end`(event: electronLib.electronLibStrings.`session-end`, listener: js.Function): this.type = js.native
+  def on_sessionend(event: electronLib.electronLibStrings.`session-end`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the window opens a sheet.
     */
   @JSName("on")
-  def `on_sheet-begin`(event: electronLib.electronLibStrings.`sheet-begin`, listener: js.Function): this.type = js.native
+  def on_sheetbegin(event: electronLib.electronLibStrings.`sheet-begin`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the window has closed a sheet.
     */
   @JSName("on")
-  def `on_sheet-end`(event: electronLib.electronLibStrings.`sheet-end`, listener: js.Function): this.type = js.native
+  def on_sheetend(event: electronLib.electronLibStrings.`sheet-end`, listener: js.Function): this.type = js.native
   /**
     * Emitted when the window is shown.
     */
@@ -486,7 +486,7 @@ class BrowserWindow () extends EventEmitter {
     * this event.
     */
   @JSName("on")
-  def `on_will-move`(
+  def on_willmove(
     event: electronLib.electronLibStrings.`will-move`,
     listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
   ): this.type = js.native
@@ -497,17 +497,17 @@ class BrowserWindow () extends EventEmitter {
     * will not emit this event.
     */
   @JSName("on")
-  def `on_will-resize`(
+  def on_willresize(
     event: electronLib.electronLibStrings.`will-resize`,
     listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_always-on-top-changed`(
+  def once_alwaysontopchanged(
     event: electronLib.electronLibStrings.`always-on-top-changed`,
     listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_app-command`(
+  def once_appcommand(
     event: electronLib.electronLibStrings.`app-command`,
     listener: js.Function2[/* event */ Event, /* command */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -518,17 +518,17 @@ class BrowserWindow () extends EventEmitter {
   @JSName("once")
   def once_closed(event: electronLib.electronLibStrings.closed, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_enter-full-screen`(event: electronLib.electronLibStrings.`enter-full-screen`, listener: js.Function): this.type = js.native
+  def once_enterfullscreen(event: electronLib.electronLibStrings.`enter-full-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_enter-html-full-screen`(event: electronLib.electronLibStrings.`enter-html-full-screen`, listener: js.Function): this.type = js.native
+  def once_enterhtmlfullscreen(event: electronLib.electronLibStrings.`enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_focus(event: electronLib.electronLibStrings.focus, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_hide(event: electronLib.electronLibStrings.hide, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_leave-full-screen`(event: electronLib.electronLibStrings.`leave-full-screen`, listener: js.Function): this.type = js.native
+  def once_leavefullscreen(event: electronLib.electronLibStrings.`leave-full-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_leave-html-full-screen`(event: electronLib.electronLibStrings.`leave-html-full-screen`, listener: js.Function): this.type = js.native
+  def once_leavehtmlfullscreen(event: electronLib.electronLibStrings.`leave-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_maximize(event: electronLib.electronLibStrings.maximize, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -538,9 +538,9 @@ class BrowserWindow () extends EventEmitter {
   @JSName("once")
   def once_moved(event: electronLib.electronLibStrings.moved, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_new-window-for-tab`(event: electronLib.electronLibStrings.`new-window-for-tab`, listener: js.Function): this.type = js.native
+  def once_newwindowfortab(event: electronLib.electronLibStrings.`new-window-for-tab`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_page-title-updated`(
+  def once_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function3[
       /* event */ Event, 
@@ -550,7 +550,7 @@ class BrowserWindow () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_ready-to-show`(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
+  def once_readytoshow(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_resize(event: electronLib.electronLibStrings.resize, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -558,17 +558,17 @@ class BrowserWindow () extends EventEmitter {
   @JSName("once")
   def once_restore(event: electronLib.electronLibStrings.restore, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_scroll-touch-begin`(event: electronLib.electronLibStrings.`scroll-touch-begin`, listener: js.Function): this.type = js.native
+  def once_scrolltouchbegin(event: electronLib.electronLibStrings.`scroll-touch-begin`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_scroll-touch-edge`(event: electronLib.electronLibStrings.`scroll-touch-edge`, listener: js.Function): this.type = js.native
+  def once_scrolltouchedge(event: electronLib.electronLibStrings.`scroll-touch-edge`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_scroll-touch-end`(event: electronLib.electronLibStrings.`scroll-touch-end`, listener: js.Function): this.type = js.native
+  def once_scrolltouchend(event: electronLib.electronLibStrings.`scroll-touch-end`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_session-end`(event: electronLib.electronLibStrings.`session-end`, listener: js.Function): this.type = js.native
+  def once_sessionend(event: electronLib.electronLibStrings.`session-end`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_sheet-begin`(event: electronLib.electronLibStrings.`sheet-begin`, listener: js.Function): this.type = js.native
+  def once_sheetbegin(event: electronLib.electronLibStrings.`sheet-begin`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_sheet-end`(event: electronLib.electronLibStrings.`sheet-end`, listener: js.Function): this.type = js.native
+  def once_sheetend(event: electronLib.electronLibStrings.`sheet-end`, listener: js.Function): this.type = js.native
   @JSName("once")
   def once_show(event: electronLib.electronLibStrings.show, listener: js.Function): this.type = js.native
   @JSName("once")
@@ -581,12 +581,12 @@ class BrowserWindow () extends EventEmitter {
   @JSName("once")
   def once_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_will-move`(
+  def once_willmove(
     event: electronLib.electronLibStrings.`will-move`,
     listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_will-resize`(
+  def once_willresize(
     event: electronLib.electronLibStrings.`will-resize`,
     listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
   ): this.type = js.native
@@ -601,12 +601,12 @@ class BrowserWindow () extends EventEmitter {
   def reload(): scala.Unit = js.native
   def removeBrowserView(browserView: BrowserView): scala.Unit = js.native
   @JSName("removeListener")
-  def `removeListener_always-on-top-changed`(
+  def removeListener_alwaysontopchanged(
     event: electronLib.electronLibStrings.`always-on-top-changed`,
     listener: js.Function2[/* event */ Event, /* isAlwaysOnTop */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_app-command`(
+  def removeListener_appcommand(
     event: electronLib.electronLibStrings.`app-command`,
     listener: js.Function2[/* event */ Event, /* command */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -617,17 +617,17 @@ class BrowserWindow () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_closed(event: electronLib.electronLibStrings.closed, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_enter-full-screen`(event: electronLib.electronLibStrings.`enter-full-screen`, listener: js.Function): this.type = js.native
+  def removeListener_enterfullscreen(event: electronLib.electronLibStrings.`enter-full-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_enter-html-full-screen`(event: electronLib.electronLibStrings.`enter-html-full-screen`, listener: js.Function): this.type = js.native
+  def removeListener_enterhtmlfullscreen(event: electronLib.electronLibStrings.`enter-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_focus(event: electronLib.electronLibStrings.focus, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_hide(event: electronLib.electronLibStrings.hide, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_leave-full-screen`(event: electronLib.electronLibStrings.`leave-full-screen`, listener: js.Function): this.type = js.native
+  def removeListener_leavefullscreen(event: electronLib.electronLibStrings.`leave-full-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_leave-html-full-screen`(event: electronLib.electronLibStrings.`leave-html-full-screen`, listener: js.Function): this.type = js.native
+  def removeListener_leavehtmlfullscreen(event: electronLib.electronLibStrings.`leave-html-full-screen`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_maximize(event: electronLib.electronLibStrings.maximize, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -637,9 +637,9 @@ class BrowserWindow () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_moved(event: electronLib.electronLibStrings.moved, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_new-window-for-tab`(event: electronLib.electronLibStrings.`new-window-for-tab`, listener: js.Function): this.type = js.native
+  def removeListener_newwindowfortab(event: electronLib.electronLibStrings.`new-window-for-tab`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_page-title-updated`(
+  def removeListener_pagetitleupdated(
     event: electronLib.electronLibStrings.`page-title-updated`,
     listener: js.Function3[
       /* event */ Event, 
@@ -649,7 +649,7 @@ class BrowserWindow () extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_ready-to-show`(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
+  def removeListener_readytoshow(event: electronLib.electronLibStrings.`ready-to-show`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_resize(event: electronLib.electronLibStrings.resize, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -657,17 +657,17 @@ class BrowserWindow () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_restore(event: electronLib.electronLibStrings.restore, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_scroll-touch-begin`(event: electronLib.electronLibStrings.`scroll-touch-begin`, listener: js.Function): this.type = js.native
+  def removeListener_scrolltouchbegin(event: electronLib.electronLibStrings.`scroll-touch-begin`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_scroll-touch-edge`(event: electronLib.electronLibStrings.`scroll-touch-edge`, listener: js.Function): this.type = js.native
+  def removeListener_scrolltouchedge(event: electronLib.electronLibStrings.`scroll-touch-edge`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_scroll-touch-end`(event: electronLib.electronLibStrings.`scroll-touch-end`, listener: js.Function): this.type = js.native
+  def removeListener_scrolltouchend(event: electronLib.electronLibStrings.`scroll-touch-end`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_session-end`(event: electronLib.electronLibStrings.`session-end`, listener: js.Function): this.type = js.native
+  def removeListener_sessionend(event: electronLib.electronLibStrings.`session-end`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_sheet-begin`(event: electronLib.electronLibStrings.`sheet-begin`, listener: js.Function): this.type = js.native
+  def removeListener_sheetbegin(event: electronLib.electronLibStrings.`sheet-begin`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_sheet-end`(event: electronLib.electronLibStrings.`sheet-end`, listener: js.Function): this.type = js.native
+  def removeListener_sheetend(event: electronLib.electronLibStrings.`sheet-end`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
   def removeListener_show(event: electronLib.electronLibStrings.show, listener: js.Function): this.type = js.native
   @JSName("removeListener")
@@ -680,12 +680,12 @@ class BrowserWindow () extends EventEmitter {
   @JSName("removeListener")
   def removeListener_unresponsive(event: electronLib.electronLibStrings.unresponsive, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-move`(
+  def removeListener_willmove(
     event: electronLib.electronLibStrings.`will-move`,
     listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-resize`(
+  def removeListener_willresize(
     event: electronLib.electronLibStrings.`will-resize`,
     listener: js.Function2[/* event */ Event, /* newBounds */ Rectangle, scala.Unit]
   ): this.type = js.native
@@ -718,17 +718,17 @@ class BrowserWindow () extends EventEmitter {
   @JSName("setAlwaysOnTop")
   def setAlwaysOnTop_floating(flag: scala.Boolean, level: electronLib.electronLibStrings.floating, relativeLevel: scala.Double): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_main-menu`(flag: scala.Boolean, level: electronLib.electronLibStrings.`main-menu`): scala.Unit = js.native
+  def setAlwaysOnTop_mainmenu(flag: scala.Boolean, level: electronLib.electronLibStrings.`main-menu`): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_main-menu`(
+  def setAlwaysOnTop_mainmenu(
     flag: scala.Boolean,
     level: electronLib.electronLibStrings.`main-menu`,
     relativeLevel: scala.Double
   ): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_modal-panel`(flag: scala.Boolean, level: electronLib.electronLibStrings.`modal-panel`): scala.Unit = js.native
+  def setAlwaysOnTop_modalpanel(flag: scala.Boolean, level: electronLib.electronLibStrings.`modal-panel`): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_modal-panel`(
+  def setAlwaysOnTop_modalpanel(
     flag: scala.Boolean,
     level: electronLib.electronLibStrings.`modal-panel`,
     relativeLevel: scala.Double
@@ -738,17 +738,17 @@ class BrowserWindow () extends EventEmitter {
   @JSName("setAlwaysOnTop")
   def setAlwaysOnTop_normal(flag: scala.Boolean, level: electronLib.electronLibStrings.normal, relativeLevel: scala.Double): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_pop-up-menu`(flag: scala.Boolean, level: electronLib.electronLibStrings.`pop-up-menu`): scala.Unit = js.native
+  def setAlwaysOnTop_popupmenu(flag: scala.Boolean, level: electronLib.electronLibStrings.`pop-up-menu`): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_pop-up-menu`(
+  def setAlwaysOnTop_popupmenu(
     flag: scala.Boolean,
     level: electronLib.electronLibStrings.`pop-up-menu`,
     relativeLevel: scala.Double
   ): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_screen-saver`(flag: scala.Boolean, level: electronLib.electronLibStrings.`screen-saver`): scala.Unit = js.native
+  def setAlwaysOnTop_screensaver(flag: scala.Boolean, level: electronLib.electronLibStrings.`screen-saver`): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_screen-saver`(
+  def setAlwaysOnTop_screensaver(
     flag: scala.Boolean,
     level: electronLib.electronLibStrings.`screen-saver`,
     relativeLevel: scala.Double
@@ -758,9 +758,9 @@ class BrowserWindow () extends EventEmitter {
   @JSName("setAlwaysOnTop")
   def setAlwaysOnTop_status(flag: scala.Boolean, level: electronLib.electronLibStrings.status, relativeLevel: scala.Double): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_torn-off-menu`(flag: scala.Boolean, level: electronLib.electronLibStrings.`torn-off-menu`): scala.Unit = js.native
+  def setAlwaysOnTop_tornoffmenu(flag: scala.Boolean, level: electronLib.electronLibStrings.`torn-off-menu`): scala.Unit = js.native
   @JSName("setAlwaysOnTop")
-  def `setAlwaysOnTop_torn-off-menu`(
+  def setAlwaysOnTop_tornoffmenu(
     flag: scala.Boolean,
     level: electronLib.electronLibStrings.`torn-off-menu`,
     relativeLevel: scala.Double

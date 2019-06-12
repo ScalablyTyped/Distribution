@@ -55,7 +55,8 @@ class BindingScope protected ()
     priority: scala.Double,
     declareLocalCallback: DeclareLocalVarCallback
   ): BindingScope = js.native
-  def set(
+  @JSName("set")
+  def set_true(
     retrievalLevel: scala.Double,
     name: java.lang.String,
     lhs: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ReadVarExpr,

@@ -35,7 +35,8 @@ trait PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
     * @param  user NOT SUPPORTED
     * @param  password NOT SUPPORTED
     */
-  def open(
+  @JSName("open")
+  def open_true(
     method: java.lang.String,
     url: java.lang.String,
     async: reactDashNativeDashFetchDashBlobLib.reactDashNativeDashFetchDashBlobLibNumbers.`true`,

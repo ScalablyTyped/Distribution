@@ -16,7 +16,7 @@ trait App extends EventEmitter {
     */
   var isPackaged: js.UndefOr[scala.Boolean] = js.native
   @JSName("addListener")
-  def `addListener_accessibility-support-changed`(
+  def addListener_accessibilitysupportchanged(
     event: electronLib.electronLibStrings.`accessibility-support-changed`,
     listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -26,32 +26,32 @@ trait App extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_activity-was-continued`(
+  def addListener_activitywascontinued(
     event: electronLib.electronLibStrings.`activity-was-continued`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_before-quit`(
+  def addListener_beforequit(
     event: electronLib.electronLibStrings.`before-quit`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_browser-window-blur`(
+  def addListener_browserwindowblur(
     event: electronLib.electronLibStrings.`browser-window-blur`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_browser-window-created`(
+  def addListener_browserwindowcreated(
     event: electronLib.electronLibStrings.`browser-window-created`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_browser-window-focus`(
+  def addListener_browserwindowfocus(
     event: electronLib.electronLibStrings.`browser-window-focus`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_certificate-error`(
+  def addListener_certificateerror(
     event: electronLib.electronLibStrings.`certificate-error`,
     listener: js.Function6[
       /* event */ Event, 
@@ -64,12 +64,12 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_continue-activity`(
+  def addListener_continueactivity(
     event: electronLib.electronLibStrings.`continue-activity`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_continue-activity-error`(
+  def addListener_continueactivityerror(
     event: electronLib.electronLibStrings.`continue-activity-error`,
     listener: js.Function3[
       /* event */ Event, 
@@ -79,12 +79,12 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_desktop-capturer-get-sources`(
+  def addListener_desktopcapturergetsources(
     event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_gpu-process-crashed`(
+  def addListener_gpuprocesscrashed(
     event: electronLib.electronLibStrings.`gpu-process-crashed`,
     listener: js.Function2[/* event */ Event, /* killed */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -101,17 +101,17 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_new-window-for-tab`(
+  def addListener_newwindowfortab(
     event: electronLib.electronLibStrings.`new-window-for-tab`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_open-file`(
+  def addListener_openfile(
     event: electronLib.electronLibStrings.`open-file`,
     listener: js.Function2[/* event */ Event, /* path */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_open-url`(
+  def addListener_openurl(
     event: electronLib.electronLibStrings.`open-url`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -126,7 +126,7 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-builtin`(
+  def addListener_remotegetbuiltin(
     event: electronLib.electronLibStrings.`remote-get-builtin`,
     listener: js.Function3[
       /* event */ Event, 
@@ -136,17 +136,17 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-current-web-contents`(
+  def addListener_remotegetcurrentwebcontents(
     event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-current-window`(
+  def addListener_remotegetcurrentwindow(
     event: electronLib.electronLibStrings.`remote-get-current-window`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-global`(
+  def addListener_remotegetglobal(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function3[
       /* event */ Event, 
@@ -156,7 +156,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-get-guest-web-contents`(
+  def addListener_remotegetguestwebcontents(
     event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
     listener: js.Function3[
       /* event */ Event, 
@@ -166,7 +166,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_remote-require`(
+  def addListener_remoterequire(
     event: electronLib.electronLibStrings.`remote-require`,
     listener: js.Function3[
       /* event */ Event, 
@@ -176,7 +176,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_second-instance`(
+  def addListener_secondinstance(
     event: electronLib.electronLibStrings.`second-instance`,
     listener: js.Function3[
       /* event */ Event, 
@@ -186,7 +186,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_select-client-certificate`(
+  def addListener_selectclientcertificate(
     event: electronLib.electronLibStrings.`select-client-certificate`,
     listener: js.Function5[
       /* event */ Event, 
@@ -198,34 +198,34 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_session-created`(
+  def addListener_sessioncreated(
     event: electronLib.electronLibStrings.`session-created`,
     listener: js.Function1[/* session */ Session, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_update-activity-state`(
+  def addListener_updateactivitystate(
     event: electronLib.electronLibStrings.`update-activity-state`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_web-contents-created`(
+  def addListener_webcontentscreated(
     event: electronLib.electronLibStrings.`web-contents-created`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_will-continue-activity`(
+  def addListener_willcontinueactivity(
     event: electronLib.electronLibStrings.`will-continue-activity`,
     listener: js.Function2[/* event */ Event, /* type */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_will-finish-launching`(event: electronLib.electronLibStrings.`will-finish-launching`, listener: js.Function): this.type = js.native
+  def addListener_willfinishlaunching(event: electronLib.electronLibStrings.`will-finish-launching`, listener: js.Function): this.type = js.native
   @JSName("addListener")
-  def `addListener_will-quit`(
+  def addListener_willquit(
     event: electronLib.electronLibStrings.`will-quit`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_window-all-closed`(event: electronLib.electronLibStrings.`window-all-closed`, listener: js.Function): this.type = js.native
+  def addListener_windowallclosed(event: electronLib.electronLibStrings.`window-all-closed`, listener: js.Function): this.type = js.native
   /**
     * Adds path to the recent documents list. This list is managed by the OS. On
     * Windows, you can visit the list from the task bar, and on macOS, you can visit
@@ -387,7 +387,7 @@ trait App extends EventEmitter {
     * details.
     */
   @JSName("on")
-  def `on_accessibility-support-changed`(
+  def on_accessibilitysupportchanged(
     event: electronLib.electronLibStrings.`accessibility-support-changed`,
     listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -407,7 +407,7 @@ trait App extends EventEmitter {
     * resumed on another one.
     */
   @JSName("on")
-  def `on_activity-was-continued`(
+  def on_activitywascontinued(
     event: electronLib.electronLibStrings.`activity-was-continued`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
@@ -421,7 +421,7 @@ trait App extends EventEmitter {
     * logout.
     */
   @JSName("on")
-  def `on_before-quit`(
+  def on_beforequit(
     event: electronLib.electronLibStrings.`before-quit`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -429,7 +429,7 @@ trait App extends EventEmitter {
     * Emitted when a browserWindow gets blurred.
     */
   @JSName("on")
-  def `on_browser-window-blur`(
+  def on_browserwindowblur(
     event: electronLib.electronLibStrings.`browser-window-blur`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
@@ -437,7 +437,7 @@ trait App extends EventEmitter {
     * Emitted when a new browserWindow is created.
     */
   @JSName("on")
-  def `on_browser-window-created`(
+  def on_browserwindowcreated(
     event: electronLib.electronLibStrings.`browser-window-created`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
@@ -445,7 +445,7 @@ trait App extends EventEmitter {
     * Emitted when a browserWindow gets focused.
     */
   @JSName("on")
-  def `on_browser-window-focus`(
+  def on_browserwindowfocus(
     event: electronLib.electronLibStrings.`browser-window-focus`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
@@ -455,7 +455,7 @@ trait App extends EventEmitter {
     * callback(true).
     */
   @JSName("on")
-  def `on_certificate-error`(
+  def on_certificateerror(
     event: electronLib.electronLibStrings.`certificate-error`,
     listener: js.Function6[
       /* event */ Event, 
@@ -476,7 +476,7 @@ trait App extends EventEmitter {
     * NSUserActivityTypes key.
     */
   @JSName("on")
-  def `on_continue-activity`(
+  def on_continueactivity(
     event: electronLib.electronLibStrings.`continue-activity`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
@@ -485,7 +485,7 @@ trait App extends EventEmitter {
     * resumed.
     */
   @JSName("on")
-  def `on_continue-activity-error`(
+  def on_continueactivityerror(
     event: electronLib.electronLibStrings.`continue-activity-error`,
     listener: js.Function3[
       /* event */ Event, 
@@ -499,7 +499,7 @@ trait App extends EventEmitter {
     * webContents. Calling event.preventDefault() will make it return empty sources.
     */
   @JSName("on")
-  def `on_desktop-capturer-get-sources`(
+  def on_desktopcapturergetsources(
     event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
@@ -507,7 +507,7 @@ trait App extends EventEmitter {
     * Emitted when the gpu process crashes or is killed.
     */
   @JSName("on")
-  def `on_gpu-process-crashed`(
+  def on_gpuprocesscrashed(
     event: electronLib.electronLibStrings.`gpu-process-crashed`,
     listener: js.Function2[/* event */ Event, /* killed */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -534,7 +534,7 @@ trait App extends EventEmitter {
     * is only visible if the current BrowserWindow has a tabbingIdentifier
     */
   @JSName("on")
-  def `on_new-window-for-tab`(
+  def on_newwindowfortab(
     event: electronLib.electronLibStrings.`new-window-for-tab`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -549,7 +549,7 @@ trait App extends EventEmitter {
     * parse process.argv (in the main process) to get the filepath.
     */
   @JSName("on")
-  def `on_open-file`(
+  def on_openfile(
     event: electronLib.electronLibStrings.`open-file`,
     listener: js.Function2[/* event */ Event, /* path */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -560,7 +560,7 @@ trait App extends EventEmitter {
     * call event.preventDefault() if you want to handle this event.
     */
   @JSName("on")
-  def `on_open-url`(
+  def on_openurl(
     event: electronLib.electronLibStrings.`open-url`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -591,7 +591,7 @@ trait App extends EventEmitter {
     * returned. Custom value can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-builtin`(
+  def on_remotegetbuiltin(
     event: electronLib.electronLibStrings.`remote-get-builtin`,
     listener: js.Function3[
       /* event */ Event, 
@@ -606,7 +606,7 @@ trait App extends EventEmitter {
     * returned. Custom value can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-current-web-contents`(
+  def on_remotegetcurrentwebcontents(
     event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
@@ -616,7 +616,7 @@ trait App extends EventEmitter {
     * returned. Custom value can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-current-window`(
+  def on_remotegetcurrentwindow(
     event: electronLib.electronLibStrings.`remote-get-current-window`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
@@ -626,7 +626,7 @@ trait App extends EventEmitter {
     * returned. Custom value can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-global`(
+  def on_remotegetglobal(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function3[
       /* event */ Event, 
@@ -641,7 +641,7 @@ trait App extends EventEmitter {
     * returned. Custom value can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-get-guest-web-contents`(
+  def on_remotegetguestwebcontents(
     event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
     listener: js.Function3[
       /* event */ Event, 
@@ -656,7 +656,7 @@ trait App extends EventEmitter {
     * Custom value can be returned by setting event.returnValue.
     */
   @JSName("on")
-  def `on_remote-require`(
+  def on_remoterequire(
     event: electronLib.electronLibStrings.`remote-require`,
     listener: js.Function3[
       /* event */ Event, 
@@ -676,7 +676,7 @@ trait App extends EventEmitter {
     * --original-process-start-time.
     */
   @JSName("on")
-  def `on_second-instance`(
+  def on_secondinstance(
     event: electronLib.electronLibStrings.`second-instance`,
     listener: js.Function3[
       /* event */ Event, 
@@ -692,7 +692,7 @@ trait App extends EventEmitter {
     * application from using the first certificate from the store.
     */
   @JSName("on")
-  def `on_select-client-certificate`(
+  def on_selectclientcertificate(
     event: electronLib.electronLibStrings.`select-client-certificate`,
     listener: js.Function5[
       /* event */ Event, 
@@ -707,7 +707,7 @@ trait App extends EventEmitter {
     * Emitted when Electron has created a new session.
     */
   @JSName("on")
-  def `on_session-created`(
+  def on_sessioncreated(
     event: electronLib.electronLibStrings.`session-created`,
     listener: js.Function1[/* session */ Session, scala.Unit]
   ): this.type = js.native
@@ -719,7 +719,7 @@ trait App extends EventEmitter {
     * fail and continue-activity-error will be called.
     */
   @JSName("on")
-  def `on_update-activity-state`(
+  def on_updateactivitystate(
     event: electronLib.electronLibStrings.`update-activity-state`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
@@ -727,7 +727,7 @@ trait App extends EventEmitter {
     * Emitted when a new webContents is created.
     */
   @JSName("on")
-  def `on_web-contents-created`(
+  def on_webcontentscreated(
     event: electronLib.electronLibStrings.`web-contents-created`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
@@ -737,7 +737,7 @@ trait App extends EventEmitter {
     * event.
     */
   @JSName("on")
-  def `on_will-continue-activity`(
+  def on_willcontinueactivity(
     event: electronLib.electronLibStrings.`will-continue-activity`,
     listener: js.Function2[/* event */ Event, /* type */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -750,7 +750,7 @@ trait App extends EventEmitter {
     * should do everything in the ready event handler.
     */
   @JSName("on")
-  def `on_will-finish-launching`(event: electronLib.electronLibStrings.`will-finish-launching`, listener: js.Function): this.type = js.native
+  def on_willfinishlaunching(event: electronLib.electronLibStrings.`will-finish-launching`, listener: js.Function): this.type = js.native
   /**
     * Emitted when all windows have been closed and the application will quit. Calling
     * event.preventDefault() will prevent the default behaviour, which is terminating
@@ -760,7 +760,7 @@ trait App extends EventEmitter {
     * shutdown/restart of the system or a user logout.
     */
   @JSName("on")
-  def `on_will-quit`(
+  def on_willquit(
     event: electronLib.electronLibStrings.`will-quit`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
@@ -773,9 +773,9 @@ trait App extends EventEmitter {
     * window-all-closed event would not be emitted.
     */
   @JSName("on")
-  def `on_window-all-closed`(event: electronLib.electronLibStrings.`window-all-closed`, listener: js.Function): this.type = js.native
+  def on_windowallclosed(event: electronLib.electronLibStrings.`window-all-closed`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_accessibility-support-changed`(
+  def once_accessibilitysupportchanged(
     event: electronLib.electronLibStrings.`accessibility-support-changed`,
     listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -785,32 +785,32 @@ trait App extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_activity-was-continued`(
+  def once_activitywascontinued(
     event: electronLib.electronLibStrings.`activity-was-continued`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_before-quit`(
+  def once_beforequit(
     event: electronLib.electronLibStrings.`before-quit`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_browser-window-blur`(
+  def once_browserwindowblur(
     event: electronLib.electronLibStrings.`browser-window-blur`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_browser-window-created`(
+  def once_browserwindowcreated(
     event: electronLib.electronLibStrings.`browser-window-created`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_browser-window-focus`(
+  def once_browserwindowfocus(
     event: electronLib.electronLibStrings.`browser-window-focus`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_certificate-error`(
+  def once_certificateerror(
     event: electronLib.electronLibStrings.`certificate-error`,
     listener: js.Function6[
       /* event */ Event, 
@@ -823,12 +823,12 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_continue-activity`(
+  def once_continueactivity(
     event: electronLib.electronLibStrings.`continue-activity`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_continue-activity-error`(
+  def once_continueactivityerror(
     event: electronLib.electronLibStrings.`continue-activity-error`,
     listener: js.Function3[
       /* event */ Event, 
@@ -838,12 +838,12 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_desktop-capturer-get-sources`(
+  def once_desktopcapturergetsources(
     event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_gpu-process-crashed`(
+  def once_gpuprocesscrashed(
     event: electronLib.electronLibStrings.`gpu-process-crashed`,
     listener: js.Function2[/* event */ Event, /* killed */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -860,17 +860,17 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_new-window-for-tab`(
+  def once_newwindowfortab(
     event: electronLib.electronLibStrings.`new-window-for-tab`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_open-file`(
+  def once_openfile(
     event: electronLib.electronLibStrings.`open-file`,
     listener: js.Function2[/* event */ Event, /* path */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_open-url`(
+  def once_openurl(
     event: electronLib.electronLibStrings.`open-url`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -885,7 +885,7 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-builtin`(
+  def once_remotegetbuiltin(
     event: electronLib.electronLibStrings.`remote-get-builtin`,
     listener: js.Function3[
       /* event */ Event, 
@@ -895,17 +895,17 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-current-web-contents`(
+  def once_remotegetcurrentwebcontents(
     event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-current-window`(
+  def once_remotegetcurrentwindow(
     event: electronLib.electronLibStrings.`remote-get-current-window`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-global`(
+  def once_remotegetglobal(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function3[
       /* event */ Event, 
@@ -915,7 +915,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-get-guest-web-contents`(
+  def once_remotegetguestwebcontents(
     event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
     listener: js.Function3[
       /* event */ Event, 
@@ -925,7 +925,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_remote-require`(
+  def once_remoterequire(
     event: electronLib.electronLibStrings.`remote-require`,
     listener: js.Function3[
       /* event */ Event, 
@@ -935,7 +935,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_second-instance`(
+  def once_secondinstance(
     event: electronLib.electronLibStrings.`second-instance`,
     listener: js.Function3[
       /* event */ Event, 
@@ -945,7 +945,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_select-client-certificate`(
+  def once_selectclientcertificate(
     event: electronLib.electronLibStrings.`select-client-certificate`,
     listener: js.Function5[
       /* event */ Event, 
@@ -957,34 +957,34 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_session-created`(
+  def once_sessioncreated(
     event: electronLib.electronLibStrings.`session-created`,
     listener: js.Function1[/* session */ Session, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_update-activity-state`(
+  def once_updateactivitystate(
     event: electronLib.electronLibStrings.`update-activity-state`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_web-contents-created`(
+  def once_webcontentscreated(
     event: electronLib.electronLibStrings.`web-contents-created`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_will-continue-activity`(
+  def once_willcontinueactivity(
     event: electronLib.electronLibStrings.`will-continue-activity`,
     listener: js.Function2[/* event */ Event, /* type */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_will-finish-launching`(event: electronLib.electronLibStrings.`will-finish-launching`, listener: js.Function): this.type = js.native
+  def once_willfinishlaunching(event: electronLib.electronLibStrings.`will-finish-launching`, listener: js.Function): this.type = js.native
   @JSName("once")
-  def `once_will-quit`(
+  def once_willquit(
     event: electronLib.electronLibStrings.`will-quit`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_window-all-closed`(event: electronLib.electronLibStrings.`window-all-closed`, listener: js.Function): this.type = js.native
+  def once_windowallclosed(event: electronLib.electronLibStrings.`window-all-closed`, listener: js.Function): this.type = js.native
   /**
     * Try to close all windows. The before-quit event will be emitted first. If all
     * windows are successfully closed, the will-quit event will be emitted and by
@@ -1021,7 +1021,7 @@ trait App extends EventEmitter {
   def removeAsDefaultProtocolClient(protocol: java.lang.String, path: java.lang.String): scala.Boolean = js.native
   def removeAsDefaultProtocolClient(protocol: java.lang.String, path: java.lang.String, args: js.Array[java.lang.String]): scala.Boolean = js.native
   @JSName("removeListener")
-  def `removeListener_accessibility-support-changed`(
+  def removeListener_accessibilitysupportchanged(
     event: electronLib.electronLibStrings.`accessibility-support-changed`,
     listener: js.Function2[/* event */ Event, /* accessibilitySupportEnabled */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -1031,32 +1031,32 @@ trait App extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* hasVisibleWindows */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_activity-was-continued`(
+  def removeListener_activitywascontinued(
     event: electronLib.electronLibStrings.`activity-was-continued`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_before-quit`(
+  def removeListener_beforequit(
     event: electronLib.electronLibStrings.`before-quit`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_browser-window-blur`(
+  def removeListener_browserwindowblur(
     event: electronLib.electronLibStrings.`browser-window-blur`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_browser-window-created`(
+  def removeListener_browserwindowcreated(
     event: electronLib.electronLibStrings.`browser-window-created`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_browser-window-focus`(
+  def removeListener_browserwindowfocus(
     event: electronLib.electronLibStrings.`browser-window-focus`,
     listener: js.Function2[/* event */ Event, /* window */ BrowserWindow, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_certificate-error`(
+  def removeListener_certificateerror(
     event: electronLib.electronLibStrings.`certificate-error`,
     listener: js.Function6[
       /* event */ Event, 
@@ -1069,12 +1069,12 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_continue-activity`(
+  def removeListener_continueactivity(
     event: electronLib.electronLibStrings.`continue-activity`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_continue-activity-error`(
+  def removeListener_continueactivityerror(
     event: electronLib.electronLibStrings.`continue-activity-error`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1084,12 +1084,12 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_desktop-capturer-get-sources`(
+  def removeListener_desktopcapturergetsources(
     event: electronLib.electronLibStrings.`desktop-capturer-get-sources`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_gpu-process-crashed`(
+  def removeListener_gpuprocesscrashed(
     event: electronLib.electronLibStrings.`gpu-process-crashed`,
     listener: js.Function2[/* event */ Event, /* killed */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -1106,17 +1106,17 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_new-window-for-tab`(
+  def removeListener_newwindowfortab(
     event: electronLib.electronLibStrings.`new-window-for-tab`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_open-file`(
+  def removeListener_openfile(
     event: electronLib.electronLibStrings.`open-file`,
     listener: js.Function2[/* event */ Event, /* path */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_open-url`(
+  def removeListener_openurl(
     event: electronLib.electronLibStrings.`open-url`,
     listener: js.Function2[/* event */ Event, /* url */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -1131,7 +1131,7 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-builtin`(
+  def removeListener_remotegetbuiltin(
     event: electronLib.electronLibStrings.`remote-get-builtin`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1141,17 +1141,17 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-current-web-contents`(
+  def removeListener_remotegetcurrentwebcontents(
     event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-current-window`(
+  def removeListener_remotegetcurrentwindow(
     event: electronLib.electronLibStrings.`remote-get-current-window`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-global`(
+  def removeListener_remotegetglobal(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1161,7 +1161,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-get-guest-web-contents`(
+  def removeListener_remotegetguestwebcontents(
     event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1171,7 +1171,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_remote-require`(
+  def removeListener_remoterequire(
     event: electronLib.electronLibStrings.`remote-require`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1181,7 +1181,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_second-instance`(
+  def removeListener_secondinstance(
     event: electronLib.electronLibStrings.`second-instance`,
     listener: js.Function3[
       /* event */ Event, 
@@ -1191,7 +1191,7 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_select-client-certificate`(
+  def removeListener_selectclientcertificate(
     event: electronLib.electronLibStrings.`select-client-certificate`,
     listener: js.Function5[
       /* event */ Event, 
@@ -1203,34 +1203,34 @@ trait App extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_session-created`(
+  def removeListener_sessioncreated(
     event: electronLib.electronLibStrings.`session-created`,
     listener: js.Function1[/* session */ Session, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_update-activity-state`(
+  def removeListener_updateactivitystate(
     event: electronLib.electronLibStrings.`update-activity-state`,
     listener: js.Function3[/* event */ Event, /* type */ java.lang.String, /* userInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_web-contents-created`(
+  def removeListener_webcontentscreated(
     event: electronLib.electronLibStrings.`web-contents-created`,
     listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-continue-activity`(
+  def removeListener_willcontinueactivity(
     event: electronLib.electronLibStrings.`will-continue-activity`,
     listener: js.Function2[/* event */ Event, /* type */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-finish-launching`(event: electronLib.electronLibStrings.`will-finish-launching`, listener: js.Function): this.type = js.native
+  def removeListener_willfinishlaunching(event: electronLib.electronLibStrings.`will-finish-launching`, listener: js.Function): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_will-quit`(
+  def removeListener_willquit(
     event: electronLib.electronLibStrings.`will-quit`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_window-all-closed`(event: electronLib.electronLibStrings.`window-all-closed`, listener: js.Function): this.type = js.native
+  def removeListener_windowallclosed(event: electronLib.electronLibStrings.`window-all-closed`, listener: js.Function): this.type = js.native
   /**
     * This method makes your application a Single Instance Application - instead of
     * allowing multiple instances of your app to run, this will ensure that only a

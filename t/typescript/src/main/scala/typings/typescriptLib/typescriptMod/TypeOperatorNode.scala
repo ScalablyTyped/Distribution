@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 trait TypeOperatorNode
   extends TypeNode
      with HasType {
-  var operator: SyntaxKind = js.native
+  @JSName("kind")
+  var kind_TypeOperatorNode: typescriptLib.typescriptMod.SyntaxKind.TypeOperator = js.native
+  var operator: typescriptLib.typescriptMod.SyntaxKind.KeyOfKeyword | typescriptLib.typescriptMod.SyntaxKind.UniqueKeyword | typescriptLib.typescriptMod.SyntaxKind.ReadonlyKeyword = js.native
   var `type`: TypeNode = js.native
 }
 

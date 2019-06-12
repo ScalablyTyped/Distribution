@@ -698,6 +698,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsFsxMod._apiVersion
   
   @js.native
+  sealed trait `2018-03-22`
+    extends awsDashSdkLib.clientsPersonalizeeventsMod._apiVersion
+  
+  @js.native
   sealed trait `2018-04-01`
     extends awsDashSdkLib.clientsRoute53resolverMod._apiVersion
        with awsDashSdkLib.clientsQuicksightMod._apiVersion
@@ -714,6 +718,11 @@ object awsDashSdkLibStrings {
   sealed trait `2018-05-14`
     extends awsDashSdkLib.clientsIot1clickprojectsMod._apiVersion
        with awsDashSdkLib.clientsIot1clickdevicesserviceMod._apiVersion
+  
+  @js.native
+  sealed trait `2018-05-22`
+    extends awsDashSdkLib.clientsPersonalizeMod._apiVersion
+       with awsDashSdkLib.clientsPersonalizeruntimeMod._apiVersion
   
   @js.native
   sealed trait `2018-05-23`
@@ -919,6 +928,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ACCEPT_ALL
     extends awsDashSdkLib.clientsGameliftMod._PlayerSessionCreationPolicy
+  
+  @js.native
+  sealed trait ACCEPT_DESTINATION
+    extends awsDashSdkLib.clientsCodecommitMod._ConflictResolutionStrategyTypeEnum
+  
+  @js.native
+  sealed trait ACCEPT_SOURCE
+    extends awsDashSdkLib.clientsCodecommitMod._ConflictResolutionStrategyTypeEnum
   
   @js.native
   sealed trait ACCESS_DENIED
@@ -2148,6 +2165,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AUTOMATION_OUTPUT
     extends awsDashSdkLib.clientsDevicefarmMod._ArtifactType
+  
+  @js.native
+  sealed trait AUTOMERGE
+    extends awsDashSdkLib.clientsCodecommitMod._ConflictResolutionStrategyTypeEnum
   
   @js.native
   sealed trait AUTOSCALING_VALIDATION_ERROR
@@ -6229,6 +6250,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsComprehendmedicalMod._EntitySubType
   
   @js.native
+  sealed trait DIRECTORY
+    extends awsDashSdkLib.clientsCodecommitMod._ObjectTypeEnum
+  
+  @js.native
   sealed trait DISABLE
     extends awsDashSdkLib.clientsIotMod._AutoRegistrationStatus
        with awsDashSdkLib.clientsMediaconvertMod._InputFilterEnable
@@ -8345,7 +8370,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod._LanguageCode
   
   @js.native
-  sealed trait FAST_FORWARD_MERGE extends js.Object
+  sealed trait FAST_FORWARD_MERGE
+    extends awsDashSdkLib.clientsCodecommitMod._MergeOptionTypeEnum
   
   @js.native
   sealed trait FATAL
@@ -8386,6 +8412,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FILE
     extends awsDashSdkLib.clientsDevicefarmMod._ArtifactCategory
+       with awsDashSdkLib.clientsCodecommitMod._ObjectTypeEnum
        with awsDashSdkLib.clientsGlueMod._ResourceType
   
   @js.native
@@ -8395,6 +8422,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FILE_GROUP_SETTINGS
     extends awsDashSdkLib.clientsMediaconvertMod._OutputGroupType
+  
+  @js.native
+  sealed trait FILE_LEVEL
+    extends awsDashSdkLib.clientsCodecommitMod._ConflictDetailLevelTypeEnum
   
   @js.native
   sealed trait FILE_PATH
@@ -9242,6 +9273,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GITHUB_HMAC
     extends awsDashSdkLib.clientsCodepipelineMod._WebhookAuthenticationType
+  
+  @js.native
+  sealed trait GIT_LINK
+    extends awsDashSdkLib.clientsCodecommitMod._ObjectTypeEnum
   
   @js.native
   sealed trait GL
@@ -11198,6 +11233,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDirectoryserviceMod._DirectoryStage
   
   @js.native
+  sealed trait Input
+    extends awsDashSdkLib.clientsSagemakerMod._JoinSource
+  
+  @js.native
   sealed trait Install
     extends awsDashSdkLib.clientsSsmMod._PatchOperationType
   
@@ -11612,6 +11651,18 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait KEEP_ALIVE
     extends awsDashSdkLib.clientsCodedeployMod._InstanceAction
+  
+  @js.native
+  sealed trait KEEP_BASE
+    extends awsDashSdkLib.clientsCodecommitMod._ReplacementTypeEnum
+  
+  @js.native
+  sealed trait KEEP_DESTINATION
+    extends awsDashSdkLib.clientsCodecommitMod._ReplacementTypeEnum
+  
+  @js.native
+  sealed trait KEEP_SOURCE
+    extends awsDashSdkLib.clientsCodecommitMod._ReplacementTypeEnum
   
   @js.native
   sealed trait KEY
@@ -12127,6 +12178,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait LINES
     extends awsDashSdkLib.clientsS3Mod._JSONType
+  
+  @js.native
+  sealed trait LINE_LEVEL
+    extends awsDashSdkLib.clientsCodecommitMod._ConflictDetailLevelTypeEnum
   
   @js.native
   sealed trait LINKED
@@ -13801,6 +13856,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._CmafManifestCompression
        with awsDashSdkLib.clientsMediaconvertMod._ColorSpaceConversion
        with awsDashSdkLib.clientsS3Mod._CompressionType
+       with awsDashSdkLib.clientsCodecommitMod._ConflictResolutionStrategyTypeEnum
        with awsDashSdkLib.clientsMediaconvertMod._DashIsoHbbtvCompliance
        with awsDashSdkLib.clientsAppsyncMod._DataSourceType
        with awsDashSdkLib.clientsMedialiveMod._DvbSubDestinationBackgroundColor
@@ -14306,6 +14362,7 @@ object awsDashSdkLibStrings {
   sealed trait None
     extends awsDashSdkLib.clientsSagemakerMod._AssemblyType
        with awsDashSdkLib.clientsSagemakerMod._CompressionType
+       with awsDashSdkLib.clientsSagemakerMod._JoinSource
        with awsDashSdkLib.clientsLambdaMod._LogType
        with awsDashSdkLib.clientsLightsailMod._MetricUnit
        with awsDashSdkLib.clientsSagemakerMod._RecordWrapper
@@ -18584,6 +18641,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMturkMod._NotificationTransport
   
   @js.native
+  sealed trait SQUASH_MERGE
+    extends awsDashSdkLib.clientsCodecommitMod._MergeOptionTypeEnum
+  
+  @js.native
   sealed trait SR
     extends awsDashSdkLib.clientsRoute53domainsMod._CountryCode
        with awsDashSdkLib.clientsWafregionalMod._GeoMatchConstraintValue
@@ -19152,6 +19213,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SYM
     extends awsDashSdkLib.clientsComprehendMod._PartOfSpeechTagType
+  
+  @js.native
+  sealed trait SYMBOLIC_LINK
+    extends awsDashSdkLib.clientsCodecommitMod._ObjectTypeEnum
   
   @js.native
   sealed trait SYMLINK
@@ -20115,6 +20180,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait THREADS
     extends awsDashSdkLib.clientsDevicefarmMod._SampleType
+  
+  @js.native
+  sealed trait THREE_WAY_MERGE
+    extends awsDashSdkLib.clientsCodecommitMod._MergeOptionTypeEnum
   
   @js.native
   sealed trait THREE_YEARS
@@ -21338,6 +21407,10 @@ object awsDashSdkLibStrings {
   sealed trait USE_INPUT_SEGMENTATION
     extends awsDashSdkLib.clientsMedialiveMod._HlsSegmentationMode
        with awsDashSdkLib.clientsMedialiveMod._SmoothGroupSegmentationMode
+  
+  @js.native
+  sealed trait USE_NEW_CONTENT
+    extends awsDashSdkLib.clientsCodecommitMod._ReplacementTypeEnum
   
   @js.native
   sealed trait USE_PSI
@@ -25550,6 +25623,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCognitoidentityMod._apiVersion
        with awsDashSdkLib.clientsMarketplacecommerceanalyticsMod._apiVersion
        with awsDashSdkLib.clientsRoute53domainsMod._apiVersion
+       with awsDashSdkLib.clientsPersonalizeMod._apiVersion
        with awsDashSdkLib.clientsSagemakerruntimeMod._apiVersion
        with awsDashSdkLib.clientsLexruntimeMod._apiVersion
        with awsDashSdkLib.clientsS3Mod._apiVersion
@@ -25559,6 +25633,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCodepipelineMod._apiVersion
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod._apiVersion
        with awsDashSdkLib.clientsQuicksightMod._apiVersion
+       with awsDashSdkLib.clientsPersonalizeeventsMod._apiVersion
        with awsDashSdkLib.clientsIot1clickdevicesserviceMod._apiVersion
        with awsDashSdkLib.clientsDlmMod._apiVersion
        with awsDashSdkLib.clientsOrganizationsMod._apiVersion
@@ -25569,6 +25644,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsRdsMod._apiVersion
        with awsDashSdkLib.clientsDaxMod._apiVersion
        with awsDashSdkLib.clientsMediastoredataMod._apiVersion
+       with awsDashSdkLib.clientsPersonalizeruntimeMod._apiVersion
        with awsDashSdkLib.clientsLightsailMod._apiVersion
        with awsDashSdkLib.clientsShieldMod._apiVersion
        with awsDashSdkLib.clientsRoute53Mod._apiVersion
@@ -27629,6 +27705,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMarketplacecommerceanalyticsMod._DataSetType
   
   @js.native
+  sealed trait sbe_c
+    extends awsDashSdkLib.clientsSagemakerMod._TargetDevice
+  
+  @js.native
   sealed trait sc1
     extends awsDashSdkLib.clientsEc2Mod._VolumeType
   
@@ -29058,6 +29138,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `2018-03-01`: `2018-03-01` = "2018-03-01".asInstanceOf[`2018-03-01`]
   @scala.inline
+  def `2018-03-22`: `2018-03-22` = "2018-03-22".asInstanceOf[`2018-03-22`]
+  @scala.inline
   def `2018-04-01`: `2018-04-01` = "2018-04-01".asInstanceOf[`2018-04-01`]
   @scala.inline
   def `2018-04-23`: `2018-04-23` = "2018-04-23".asInstanceOf[`2018-04-23`]
@@ -29065,6 +29147,8 @@ object awsDashSdkLibStrings {
   def `2018-05-01`: `2018-05-01` = "2018-05-01".asInstanceOf[`2018-05-01`]
   @scala.inline
   def `2018-05-14`: `2018-05-14` = "2018-05-14".asInstanceOf[`2018-05-14`]
+  @scala.inline
+  def `2018-05-22`: `2018-05-22` = "2018-05-22".asInstanceOf[`2018-05-22`]
   @scala.inline
   def `2018-05-23`: `2018-05-23` = "2018-05-23".asInstanceOf[`2018-05-23`]
   @scala.inline
@@ -29161,6 +29245,10 @@ object awsDashSdkLibStrings {
   def ACCEPTING: ACCEPTING = "ACCEPTING".asInstanceOf[ACCEPTING]
   @scala.inline
   def ACCEPT_ALL: ACCEPT_ALL = "ACCEPT_ALL".asInstanceOf[ACCEPT_ALL]
+  @scala.inline
+  def ACCEPT_DESTINATION: ACCEPT_DESTINATION = "ACCEPT_DESTINATION".asInstanceOf[ACCEPT_DESTINATION]
+  @scala.inline
+  def ACCEPT_SOURCE: ACCEPT_SOURCE = "ACCEPT_SOURCE".asInstanceOf[ACCEPT_SOURCE]
   @scala.inline
   def ACCESS_DENIED: ACCESS_DENIED = "ACCESS_DENIED".asInstanceOf[ACCESS_DENIED]
   @scala.inline
@@ -29659,6 +29747,8 @@ object awsDashSdkLibStrings {
   def AUTOMATION: AUTOMATION = "AUTOMATION".asInstanceOf[AUTOMATION]
   @scala.inline
   def AUTOMATION_OUTPUT: AUTOMATION_OUTPUT = "AUTOMATION_OUTPUT".asInstanceOf[AUTOMATION_OUTPUT]
+  @scala.inline
+  def AUTOMERGE: AUTOMERGE = "AUTOMERGE".asInstanceOf[AUTOMERGE]
   @scala.inline
   def AUTOSCALING_VALIDATION_ERROR: AUTOSCALING_VALIDATION_ERROR = "AUTOSCALING_VALIDATION_ERROR".asInstanceOf[AUTOSCALING_VALIDATION_ERROR]
   @scala.inline
@@ -31332,6 +31422,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def DIRECTION: DIRECTION = "DIRECTION".asInstanceOf[DIRECTION]
   @scala.inline
+  def DIRECTORY: DIRECTORY = "DIRECTORY".asInstanceOf[DIRECTORY]
+  @scala.inline
   def DISABLE: DISABLE = "DISABLE".asInstanceOf[DISABLE]
   @scala.inline
   def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
@@ -32138,6 +32230,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def FILE_GROUP_SETTINGS: FILE_GROUP_SETTINGS = "FILE_GROUP_SETTINGS".asInstanceOf[FILE_GROUP_SETTINGS]
   @scala.inline
+  def FILE_LEVEL: FILE_LEVEL = "FILE_LEVEL".asInstanceOf[FILE_LEVEL]
+  @scala.inline
   def FILE_PATH: FILE_PATH = "FILE_PATH".asInstanceOf[FILE_PATH]
   @scala.inline
   def FILE_UPLOAD: FILE_UPLOAD = "FILE_UPLOAD".asInstanceOf[FILE_UPLOAD]
@@ -32485,6 +32579,8 @@ object awsDashSdkLibStrings {
   def GITHUB_ENTERPRISE: GITHUB_ENTERPRISE = "GITHUB_ENTERPRISE".asInstanceOf[GITHUB_ENTERPRISE]
   @scala.inline
   def GITHUB_HMAC: GITHUB_HMAC = "GITHUB_HMAC".asInstanceOf[GITHUB_HMAC]
+  @scala.inline
+  def GIT_LINK: GIT_LINK = "GIT_LINK".asInstanceOf[GIT_LINK]
   @scala.inline
   def GL: GL = "GL".asInstanceOf[GL]
   @scala.inline
@@ -33270,6 +33366,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Inoperable: Inoperable = "Inoperable".asInstanceOf[Inoperable]
   @scala.inline
+  def Input: Input = "Input".asInstanceOf[Input]
+  @scala.inline
   def Install: Install = "Install".asInstanceOf[Install]
   @scala.inline
   def Instance: Instance = "Instance".asInstanceOf[Instance]
@@ -33465,6 +33563,12 @@ object awsDashSdkLibStrings {
   def KE: KE = "KE".asInstanceOf[KE]
   @scala.inline
   def KEEP_ALIVE: KEEP_ALIVE = "KEEP_ALIVE".asInstanceOf[KEEP_ALIVE]
+  @scala.inline
+  def KEEP_BASE: KEEP_BASE = "KEEP_BASE".asInstanceOf[KEEP_BASE]
+  @scala.inline
+  def KEEP_DESTINATION: KEEP_DESTINATION = "KEEP_DESTINATION".asInstanceOf[KEEP_DESTINATION]
+  @scala.inline
+  def KEEP_SOURCE: KEEP_SOURCE = "KEEP_SOURCE".asInstanceOf[KEEP_SOURCE]
   @scala.inline
   def KEY: KEY = "KEY".asInstanceOf[KEY]
   @scala.inline
@@ -33685,6 +33789,8 @@ object awsDashSdkLibStrings {
   def LINE: LINE = "LINE".asInstanceOf[LINE]
   @scala.inline
   def LINES: LINES = "LINES".asInstanceOf[LINES]
+  @scala.inline
+  def LINE_LEVEL: LINE_LEVEL = "LINE_LEVEL".asInstanceOf[LINE_LEVEL]
   @scala.inline
   def LINKED: LINKED = "LINKED".asInstanceOf[LINKED]
   @scala.inline
@@ -36432,6 +36538,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def SQS: SQS = "SQS".asInstanceOf[SQS]
   @scala.inline
+  def SQUASH_MERGE: SQUASH_MERGE = "SQUASH_MERGE".asInstanceOf[SQUASH_MERGE]
+  @scala.inline
   def SR: SR = "SR".asInstanceOf[SR]
   @scala.inline
   def SRB: SRB = "SRB".asInstanceOf[SRB]
@@ -36643,6 +36751,8 @@ object awsDashSdkLibStrings {
   def SY: SY = "SY".asInstanceOf[SY]
   @scala.inline
   def SYM: SYM = "SYM".asInstanceOf[SYM]
+  @scala.inline
+  def SYMBOLIC_LINK: SYMBOLIC_LINK = "SYMBOLIC_LINK".asInstanceOf[SYMBOLIC_LINK]
   @scala.inline
   def SYMLINK: SYMLINK = "SYMLINK".asInstanceOf[SYMLINK]
   @scala.inline
@@ -37051,6 +37161,8 @@ object awsDashSdkLibStrings {
   def THIRTY_DAYS: THIRTY_DAYS = "THIRTY_DAYS".asInstanceOf[THIRTY_DAYS]
   @scala.inline
   def THREADS: THREADS = "THREADS".asInstanceOf[THREADS]
+  @scala.inline
+  def THREE_WAY_MERGE: THREE_WAY_MERGE = "THREE_WAY_MERGE".asInstanceOf[THREE_WAY_MERGE]
   @scala.inline
   def THREE_YEARS: THREE_YEARS = "THREE_YEARS".asInstanceOf[THREE_YEARS]
   @scala.inline
@@ -37567,6 +37679,8 @@ object awsDashSdkLibStrings {
   def USE_EVENT_START_DATE: USE_EVENT_START_DATE = "USE_EVENT_START_DATE".asInstanceOf[USE_EVENT_START_DATE]
   @scala.inline
   def USE_INPUT_SEGMENTATION: USE_INPUT_SEGMENTATION = "USE_INPUT_SEGMENTATION".asInstanceOf[USE_INPUT_SEGMENTATION]
+  @scala.inline
+  def USE_NEW_CONTENT: USE_NEW_CONTENT = "USE_NEW_CONTENT".asInstanceOf[USE_NEW_CONTENT]
   @scala.inline
   def USE_PSI: USE_PSI = "USE_PSI".asInstanceOf[USE_PSI]
   @scala.inline
@@ -40293,6 +40407,8 @@ object awsDashSdkLibStrings {
   def `sagemaker:variant:DesiredInstanceCount`: `sagemaker:variant:DesiredInstanceCount` = "sagemaker:variant:DesiredInstanceCount".asInstanceOf[`sagemaker:variant:DesiredInstanceCount`]
   @scala.inline
   def sales_compensation_billed_revenue: sales_compensation_billed_revenue = "sales_compensation_billed_revenue".asInstanceOf[sales_compensation_billed_revenue]
+  @scala.inline
+  def sbe_c: sbe_c = "sbe_c".asInstanceOf[sbe_c]
   @scala.inline
   def sc1: sc1 = "sc1".asInstanceOf[sc1]
   @scala.inline

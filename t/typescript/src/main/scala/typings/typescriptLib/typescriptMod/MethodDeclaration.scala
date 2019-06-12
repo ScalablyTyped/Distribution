@@ -17,6 +17,8 @@ trait MethodDeclaration
   var _objectLiteralBrand: js.Any = js.native
   @JSName("body")
   var body_MethodDeclaration: js.UndefOr[FunctionBody] = js.native
+  @JSName("kind")
+  var kind_MethodDeclaration: typescriptLib.typescriptMod.SyntaxKind.MethodDeclaration = js.native
   @JSName("name")
   var name_MethodDeclaration: PropertyName = js.native
   @JSName("parent")

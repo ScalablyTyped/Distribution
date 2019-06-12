@@ -14,9 +14,9 @@ class ListCatalogRequest () extends js.Object {
     */
   var cursor: js.UndefOr[java.lang.String] = js.native
   /**
-    * An optional case-insensitive, comma-separated list of object types to retrieve, for example `ITEM,ITEM_VARIATION,CATEGORY`.
-    * The legal values are taken from the [CatalogObjectType](#type-catalogobjecttype) enumeration, namely "ITEM",
-    * "ITEM_VARIATION", "CATEGORY", "DISCOUNT", "TAX", "MODIFIER" or "MODIFIER_LIST".
+    * An optional case-insensitive, comma-separated list of object types to retrieve, for example `ITEM,ITEM_VARIATION,CATEGORY,IMAGE`.
+    * The legal values are taken from the [CatalogObjectType](#type-catalogobjecttype) enumeration, namely:
+    * `ITEM`, `ITEM_VARIATION`, `CATEGORY`, `DISCOUNT`, `TAX`, `MODIFIER`, `MODIFIER_LIST`, or `IMAGE`.
     */
   var types: js.UndefOr[java.lang.String] = js.native
 }

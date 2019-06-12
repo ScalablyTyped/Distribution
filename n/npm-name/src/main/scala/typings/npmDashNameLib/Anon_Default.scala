@@ -29,6 +29,7 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def apply(name: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def apply(name: java.lang.String, options: npmDashNameLib.npmDashNameMod.Options): js.Promise[scala.Boolean] = js.native
   /**
   	Check whether multiple package names are available (not registered) on npm.
   	@param names - Multiple names to check.
@@ -48,5 +49,6 @@ trait Anon_Default extends js.Object {
   	```
   	*/
   def many[NameType /* <: java.lang.String */](names: js.Array[NameType]): js.Promise[stdLib.Map[NameType, scala.Boolean]] = js.native
+  def many[NameType /* <: java.lang.String */](names: js.Array[NameType], options: npmDashNameLib.npmDashNameMod.Options): js.Promise[stdLib.Map[NameType, scala.Boolean]] = js.native
 }
 

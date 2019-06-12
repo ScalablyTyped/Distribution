@@ -95,7 +95,7 @@ trait Build extends js.Object {
     */
   var source: js.UndefOr[ProjectSource] = js.undefined
   /**
-    * Any version identifier for the version of the source code to be built.
+    * Any version identifier for the version of the source code to be built. If sourceVersion is specified at the project level, then this sourceVersion (at the build level) takes precedence.   For more information, see Source Version Sample with CodeBuild in the AWS CodeBuild User Guide. 
     */
   var sourceVersion: js.UndefOr[NonEmptyString] = js.undefined
   /**

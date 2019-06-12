@@ -67,7 +67,12 @@ trait Helper extends js.Object {
   def getProperty(`object`: js.Object, name: java.lang.String): js.Any | scala.Unit = js.native
   def getPrototypeOf(obj: js.Object): js.Any | scala.Unit = js.native
   def hasCaptionProblem(): scala.Boolean | scala.Unit = js.native
+  def htmlToGridSettings(element: java.lang.String): GridSettings = js.native
+  def htmlToGridSettings(element: java.lang.String, rootDocument: stdLib.Document): GridSettings = js.native
+  def htmlToGridSettings(element: stdLib.HTMLTableElement): GridSettings = js.native
+  def htmlToGridSettings(element: stdLib.HTMLTableElement, rootDocument: stdLib.Document): GridSettings = js.native
   def inherit(Child: js.Object, Parent: js.Object): js.Object = js.native
+  def instanceToHTML(instance: handsontableLib.handsontableMod.underscoreHandsontableNs.Core): java.lang.String = js.native
   def isChrome(): scala.Boolean = js.native
   def isClassListSupported(): scala.Boolean = js.native
   def isCtrlKey(keyCode: scala.Double): scala.Boolean = js.native

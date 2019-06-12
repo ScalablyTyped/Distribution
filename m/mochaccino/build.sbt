@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "mochaccino"
-version := "1.2-dt-20181212Z-1c992e"
+version := "1.2-dt-20181212Z-3518eb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190525Z-8d4c90",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190525Z-046356",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

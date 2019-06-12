@@ -53,6 +53,11 @@ object realmLibStrings {
   sealed trait adminToken extends js.Object
   
   @js.native
+  sealed trait `after-upload`
+    extends realmLib.realmMod.SyncNs.SessionStopPolicy
+       with realmLib.RealmNs.SyncNs.SessionStopPolicy
+  
+  @js.native
   sealed trait all
     extends realmLib.RealmNs.SyncNs.LogLevel
   
@@ -119,6 +124,11 @@ object realmLibStrings {
     extends realmLib.RealmNs.SyncNs.ProgressMode
   
   @js.native
+  sealed trait immediately
+    extends realmLib.realmMod.SyncNs.SessionStopPolicy
+       with realmLib.RealmNs.SyncNs.SessionStopPolicy
+  
+  @js.native
   sealed trait inactive extends js.Object
   
   @js.native
@@ -139,6 +149,11 @@ object realmLibStrings {
   @js.native
   sealed trait list
     extends realmLib.RealmNs._PropertyType
+  
+  @js.native
+  sealed trait never
+    extends realmLib.realmMod.SyncNs.SessionStopPolicy
+       with realmLib.RealmNs.SyncNs.SessionStopPolicy
   
   @js.native
   sealed trait none
@@ -213,6 +228,8 @@ object realmLibStrings {
   @scala.inline
   def adminToken: adminToken = "adminToken".asInstanceOf[adminToken]
   @scala.inline
+  def `after-upload`: `after-upload` = "after-upload".asInstanceOf[`after-upload`]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
   def any: any = "any".asInstanceOf[any]
@@ -247,6 +264,8 @@ object realmLibStrings {
   @scala.inline
   def forCurrentlyOutstandingWork: forCurrentlyOutstandingWork = "forCurrentlyOutstandingWork".asInstanceOf[forCurrentlyOutstandingWork]
   @scala.inline
+  def immediately: immediately = "immediately".asInstanceOf[immediately]
+  @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   @scala.inline
   def info: info = "info".asInstanceOf[info]
@@ -258,6 +277,8 @@ object realmLibStrings {
   def linkingObjects: linkingObjects = "linkingObjects".asInstanceOf[linkingObjects]
   @scala.inline
   def list: list = "list".asInstanceOf[list]
+  @scala.inline
+  def never: never = "never".asInstanceOf[never]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline

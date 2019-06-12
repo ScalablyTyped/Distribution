@@ -12,32 +12,32 @@ trait Heatmap
   def getGradient(): js.Array[java.lang.String] = js.native
   def getRadius(): scala.Double = js.native
   @JSName("on")
-  def `on_change:blur`(
+  def on_changeblur(
     `type`: olLib.olLibStrings.`change:blur`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:gradient`(
+  def on_changegradient(
     `type`: olLib.olLibStrings.`change:gradient`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:radius`(
+  def on_changeradius(
     `type`: olLib.olLibStrings.`change:radius`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:blur`(
+  def once_changeblur(
     `type`: olLib.olLibStrings.`change:blur`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:gradient`(
+  def once_changegradient(
     `type`: olLib.olLibStrings.`change:gradient`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:radius`(
+  def once_changeradius(
     `type`: olLib.olLibStrings.`change:radius`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
@@ -45,17 +45,17 @@ trait Heatmap
   def setGradient(colors: js.Array[java.lang.String]): scala.Unit = js.native
   def setRadius(radius: scala.Double): scala.Unit = js.native
   @JSName("un")
-  def `un_change:blur`(
+  def un_changeblur(
     `type`: olLib.olLibStrings.`change:blur`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:gradient`(
+  def un_changegradient(
     `type`: olLib.olLibStrings.`change:gradient`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:radius`(
+  def un_changeradius(
     `type`: olLib.olLibStrings.`change:radius`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

@@ -19,10 +19,11 @@ class DirectiveResolver protected () extends js.Object {
     * Return {@link Directive} for a given `Type`.
     */
   def resolve(`type`: atAngularCompilerLib.srcCoreMod.Type): atAngularCompilerLib.srcCoreMod.Directive = js.native
-  def resolve(
+  def resolve(`type`: atAngularCompilerLib.srcCoreMod.Type, throwIfNotFound: scala.Boolean): atAngularCompilerLib.srcCoreMod.Directive | scala.Null = js.native
+  @JSName("resolve")
+  def resolve_true(
     `type`: atAngularCompilerLib.srcCoreMod.Type,
     throwIfNotFound: atAngularCompilerLib.atAngularCompilerLibNumbers.`true`
   ): atAngularCompilerLib.srcCoreMod.Directive = js.native
-  def resolve(`type`: atAngularCompilerLib.srcCoreMod.Type, throwIfNotFound: scala.Boolean): atAngularCompilerLib.srcCoreMod.Directive | scala.Null = js.native
 }
 

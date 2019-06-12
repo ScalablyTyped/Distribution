@@ -48,6 +48,22 @@ object activexDashShellLibStrings {
   @js.native
   sealed trait VerbInvoked extends js.Object
   
+  @js.native
+  sealed trait `{30D02401-6A81-11d0-8274-00C04FD5AE38}`
+    extends activexDashShellLib.Shell32Ns.ExplorerBarCLSID
+  
+  @js.native
+  sealed trait `{EFA24E61-B078-11d0-89E4-00C04FC9E26E}`
+    extends activexDashShellLib.Shell32Ns.ExplorerBarCLSID
+  
+  @js.native
+  sealed trait `{EFA24E62-B078-11d0-89E4-00C04FC9E26E}`
+    extends activexDashShellLib.Shell32Ns.ExplorerBarCLSID
+  
+  @js.native
+  sealed trait `{EFA24E64-B078-11d0-89E4-00C04FC9E26E}`
+    extends activexDashShellLib.Shell32Ns.ExplorerBarCLSID
+  
   @scala.inline
   def BeginDrag: BeginDrag = "BeginDrag".asInstanceOf[BeginDrag]
   @scala.inline
@@ -76,5 +92,13 @@ object activexDashShellLibStrings {
   def SelectionChanged: SelectionChanged = "SelectionChanged".asInstanceOf[SelectionChanged]
   @scala.inline
   def VerbInvoked: VerbInvoked = "VerbInvoked".asInstanceOf[VerbInvoked]
+  @scala.inline
+  def `{30D02401-6A81-11d0-8274-00C04FD5AE38}`: `{30D02401-6A81-11d0-8274-00C04FD5AE38}` = "{30D02401-6A81-11d0-8274-00C04FD5AE38}".asInstanceOf[`{30D02401-6A81-11d0-8274-00C04FD5AE38}`]
+  @scala.inline
+  def `{EFA24E61-B078-11d0-89E4-00C04FC9E26E}`: `{EFA24E61-B078-11d0-89E4-00C04FC9E26E}` = "{EFA24E61-B078-11d0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E61-B078-11d0-89E4-00C04FC9E26E}`]
+  @scala.inline
+  def `{EFA24E62-B078-11d0-89E4-00C04FC9E26E}`: `{EFA24E62-B078-11d0-89E4-00C04FC9E26E}` = "{EFA24E62-B078-11d0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E62-B078-11d0-89E4-00C04FC9E26E}`]
+  @scala.inline
+  def `{EFA24E64-B078-11d0-89E4-00C04FC9E26E}`: `{EFA24E64-B078-11d0-89E4-00C04FC9E26E}` = "{EFA24E64-B078-11d0-89E4-00C04FC9E26E}".asInstanceOf[`{EFA24E64-B078-11d0-89E4-00C04FC9E26E}`]
 }
 

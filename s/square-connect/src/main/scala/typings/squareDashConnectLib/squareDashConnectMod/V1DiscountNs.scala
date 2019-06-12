@@ -74,16 +74,16 @@ object V1DiscountNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.V1DiscountNs.DiscountTypeEnum
     
     @js.native
-    sealed trait VARIABLEAMOUNT
+    sealed trait VARIABLE_AMOUNT
       extends squareDashConnectLib.squareDashConnectMod.V1DiscountNs.DiscountTypeEnum
     
     @js.native
-    sealed trait VARIABLEPERCENTAGE
+    sealed trait VARIABLE_PERCENTAGE
       extends squareDashConnectLib.squareDashConnectMod.V1DiscountNs.DiscountTypeEnum
     
     /* "FIXED" */ val FIXED: FIXED with java.lang.String = js.native
-    /* "VARIABLE_AMOUNT" */ val VARIABLEAMOUNT: VARIABLEAMOUNT with java.lang.String = js.native
-    /* "VARIABLE_PERCENTAGE" */ val VARIABLEPERCENTAGE: VARIABLEPERCENTAGE with java.lang.String = js.native
+    /* "VARIABLE_AMOUNT" */ val VARIABLE_AMOUNT: VARIABLE_AMOUNT with java.lang.String = js.native
+    /* "VARIABLE_PERCENTAGE" */ val VARIABLE_PERCENTAGE: VARIABLE_PERCENTAGE with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.V1DiscountNs.DiscountTypeEnum with java.lang.String

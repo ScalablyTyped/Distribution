@@ -65,13 +65,56 @@ trait Workbooks extends js.Object {
     StartRow: scala.Double,
     DataType: XlTextParsingType,
     TextQualifier: js.UndefOr[XlTextQualifier],
+    ConsecutiveDelimiter: js.UndefOr[scala.Nothing],
+    Tab: js.UndefOr[scala.Nothing],
+    Semicolon: js.UndefOr[scala.Nothing],
+    Comma: js.UndefOr[scala.Nothing],
+    Space: js.UndefOr[scala.Nothing],
+    Other: js.UndefOr[scala.Nothing],
+    OtherChar: js.UndefOr[scala.Nothing],
+    FieldInfo: js.UndefOr[stdLib.SafeArray[_]],
+    TextVisualLayout: js.UndefOr[js.Any],
+    DecimalSeparator: js.UndefOr[java.lang.String],
+    ThousandsSeparator: js.UndefOr[java.lang.String],
+    TrailingMinusNumbers: js.UndefOr[scala.Boolean],
+    Local: js.UndefOr[scala.Boolean]
+  ): scala.Unit = js.native
+  /** @param TextQualifier [TextQualifier=1] */
+  def OpenText(
+    Filename: java.lang.String,
+    Origin: XlPlatform,
+    StartRow: scala.Double,
+    DataType: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    TextQualifier: js.UndefOr[XlTextQualifier],
     ConsecutiveDelimiter: js.UndefOr[scala.Boolean],
     Tab: js.UndefOr[scala.Boolean],
     Semicolon: js.UndefOr[scala.Boolean],
     Comma: js.UndefOr[scala.Boolean],
     Space: js.UndefOr[scala.Boolean],
-    Other: js.UndefOr[scala.Boolean | activexDashExcelLib.activexDashExcelLibNumbers.`true`],
+    Other: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`true`],
     OtherChar: js.UndefOr[java.lang.String],
+    FieldInfo: js.UndefOr[stdLib.SafeArray[_]],
+    TextVisualLayout: js.UndefOr[js.Any],
+    DecimalSeparator: js.UndefOr[java.lang.String],
+    ThousandsSeparator: js.UndefOr[java.lang.String],
+    TrailingMinusNumbers: js.UndefOr[scala.Boolean],
+    Local: js.UndefOr[scala.Boolean]
+  ): scala.Unit = js.native
+  /** @param TextQualifier [TextQualifier=1] */
+  @JSName("OpenText")
+  def OpenText_1(
+    Filename: java.lang.String,
+    Origin: XlPlatform,
+    StartRow: scala.Double,
+    DataType: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    TextQualifier: js.UndefOr[XlTextQualifier],
+    ConsecutiveDelimiter: js.UndefOr[scala.Boolean],
+    Tab: js.UndefOr[scala.Boolean],
+    Semicolon: js.UndefOr[scala.Boolean],
+    Comma: js.UndefOr[scala.Boolean],
+    Space: js.UndefOr[scala.Boolean],
+    Other: js.UndefOr[scala.Boolean],
+    OtherChar: js.UndefOr[scala.Nothing],
     FieldInfo: js.UndefOr[stdLib.SafeArray[_]],
     TextVisualLayout: js.UndefOr[js.Any],
     DecimalSeparator: js.UndefOr[java.lang.String],
@@ -87,6 +130,24 @@ trait Workbooks extends js.Object {
     Filename: java.lang.String,
     Stylesheets: stdLib.SafeArray[java.lang.String],
     LoadOption: XlXmlLoadOption
+  ): Workbook = js.native
+  @JSName("Open")
+  def Open_3(
+    Filename: java.lang.String,
+    UpdateLinks: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`3`],
+    ReadOnly: js.UndefOr[scala.Boolean],
+    Format: js.UndefOr[activexDashExcelLib.activexDashExcelLibNumbers.`3`],
+    Password: js.UndefOr[java.lang.String],
+    WriteResPassword: js.UndefOr[java.lang.String],
+    IgnoreReadOnlyRecommended: js.UndefOr[scala.Boolean],
+    Origin: js.UndefOr[XlPlatform],
+    Delimiter: js.UndefOr[scala.Nothing],
+    Editable: js.UndefOr[scala.Boolean],
+    Notify: js.UndefOr[scala.Boolean],
+    Converter: js.UndefOr[scala.Double],
+    AddToMru: js.UndefOr[scala.Boolean],
+    Local: js.UndefOr[scala.Boolean],
+    CorruptLoad: js.UndefOr[XlCorruptLoad]
   ): Workbook = js.native
   def _Default(Index: js.Any): Workbook = js.native
   def _Open(

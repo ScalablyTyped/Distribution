@@ -15,12 +15,12 @@ class SpotifyPlayer protected () extends js.Object {
   var on_Original: AddListenerFn = js.native
   def addListener(event: ErrorTypes, cb: ErrorListener): scala.Unit = js.native
   @JSName("addListener")
-  def addListener_not_ready(
+  def addListener_notready(
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.not_ready,
     cb: PlaybackInstanceListener
   ): scala.Unit = js.native
   @JSName("addListener")
-  def addListener_player_state_changed(
+  def addListener_playerstatechanged(
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.player_state_changed,
     cb: PlaybackStateListener
   ): scala.Unit = js.native
@@ -36,12 +36,12 @@ class SpotifyPlayer protected () extends js.Object {
   def nextTrack(): js.Promise[scala.Unit] = js.native
   def on(event: ErrorTypes, cb: ErrorListener): scala.Unit = js.native
   @JSName("on")
-  def on_not_ready(
+  def on_notready(
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.not_ready,
     cb: PlaybackInstanceListener
   ): scala.Unit = js.native
   @JSName("on")
-  def on_player_state_changed(
+  def on_playerstatechanged(
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.player_state_changed,
     cb: PlaybackStateListener
   ): scala.Unit = js.native
@@ -55,18 +55,18 @@ class SpotifyPlayer protected () extends js.Object {
   def removeListener(event: ErrorTypes): scala.Unit = js.native
   def removeListener(event: ErrorTypes, cb: ErrorListener | PlaybackInstanceListener | PlaybackStateListener): scala.Unit = js.native
   @JSName("removeListener")
-  def removeListener_not_ready(event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.not_ready): scala.Unit = js.native
+  def removeListener_notready(event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.not_ready): scala.Unit = js.native
   @JSName("removeListener")
-  def removeListener_not_ready(
+  def removeListener_notready(
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.not_ready,
     cb: ErrorListener | PlaybackInstanceListener | PlaybackStateListener
   ): scala.Unit = js.native
   @JSName("removeListener")
-  def removeListener_player_state_changed(
+  def removeListener_playerstatechanged(
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.player_state_changed
   ): scala.Unit = js.native
   @JSName("removeListener")
-  def removeListener_player_state_changed(
+  def removeListener_playerstatechanged(
     event: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibStrings.player_state_changed,
     cb: ErrorListener | PlaybackInstanceListener | PlaybackStateListener
   ): scala.Unit = js.native

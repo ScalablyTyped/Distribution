@@ -10,7 +10,7 @@ trait SourceFile
   extends Declaration
      with BlockLike {
   var amdDependencies: js.Array[AmdDependency] = js.native
-  var endOfFileToken: Token[SyntaxKind] = js.native
+  var endOfFileToken: Token[typescriptLib.typescriptMod.SyntaxKind.EndOfFileToken] = js.native
   var fileName: java.lang.String = js.native
   /**
     * lib.d.ts should have a reference comment like
@@ -22,6 +22,8 @@ trait SourceFile
     */
   var hasNoDefaultLib: scala.Boolean = js.native
   var isDeclarationFile: scala.Boolean = js.native
+  @JSName("kind")
+  var kind_SourceFile: typescriptLib.typescriptMod.SyntaxKind.SourceFile = js.native
   var languageVariant: LanguageVariant = js.native
   var languageVersion: ScriptTarget = js.native
   var libReferenceDirectives: js.Array[FileReference] = js.native

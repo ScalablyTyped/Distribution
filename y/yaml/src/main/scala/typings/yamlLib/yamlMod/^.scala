@@ -11,8 +11,10 @@ object ^ extends js.Object {
   val Document: yamlLib.yamlMod.astNs.DocumentConstructor = js.native
   val defaultOptions: ParseOptions = js.native
   def createNode(value: js.Any): yamlLib.yamlMod.astNs.MapBase | yamlLib.yamlMod.astNs.SeqBase | yamlLib.yamlMod.astNs.Scalar = js.native
-  def createNode(value: js.Any, wrapScalars: yamlLib.yamlLibNumbers.`false`): yamlLib.yamlMod.astNs.MapBase | yamlLib.yamlMod.astNs.SeqBase | java.lang.String | scala.Double | scala.Boolean | scala.Null = js.native
-  def createNode(value: js.Any, wrapScalars: yamlLib.yamlLibNumbers.`true`): yamlLib.yamlMod.astNs.MapBase | yamlLib.yamlMod.astNs.SeqBase | yamlLib.yamlMod.astNs.Scalar = js.native
+  @JSName("createNode")
+  def createNode_false(value: js.Any, wrapScalars: yamlLib.yamlLibNumbers.`false`): yamlLib.yamlMod.astNs.MapBase | yamlLib.yamlMod.astNs.SeqBase | java.lang.String | scala.Double | scala.Boolean | scala.Null = js.native
+  @JSName("createNode")
+  def createNode_true(value: js.Any, wrapScalars: yamlLib.yamlLibNumbers.`true`): yamlLib.yamlMod.astNs.MapBase | yamlLib.yamlMod.astNs.SeqBase | yamlLib.yamlMod.astNs.Scalar = js.native
   def parse(str: java.lang.String): js.Any = js.native
   def parse(str: java.lang.String, options: ParseOptions): js.Any = js.native
   def parseAllDocuments(str: java.lang.String): js.Array[yamlLib.yamlMod.astNs.Document] = js.native

@@ -38,12 +38,213 @@ class Validation protected () extends js.Object {
     Formula1: java.lang.String
   ): scala.Unit = js.native
   def Add(
-    Type: XlDVType,
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
     AlertStyle: XlDVAlertStyle,
-    Operator: XlFormatConditionOperator,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
     Formula1: java.lang.String,
     Formula2: java.lang.String
   ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Add(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Add")
+  def Add_0(Type: activexDashExcelLib.activexDashExcelLibNumbers.`0`): scala.Unit = js.native
+  @JSName("Add")
+  def Add_1(Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`): scala.Unit = js.native
+  @JSName("Add")
+  def Add_1(Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
+  @JSName("Add")
+  def Add_1(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  @JSName("Add")
+  def Add_1(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Add")
+  def Add_1(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Add")
+  def Add_2(Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`): scala.Unit = js.native
+  @JSName("Add")
+  def Add_2(Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
+  @JSName("Add")
+  def Add_2(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  @JSName("Add")
+  def Add_2(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Add")
+  def Add_2(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Add")
+  def Add_4(Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`): scala.Unit = js.native
+  @JSName("Add")
+  def Add_4(Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
+  @JSName("Add")
+  def Add_5(Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`): scala.Unit = js.native
+  @JSName("Add")
+  def Add_5(Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
+  @JSName("Add")
+  def Add_6(Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`): scala.Unit = js.native
+  @JSName("Add")
+  def Add_6(Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
   def Delete(): scala.Unit = js.native
   def Modify(): scala.Unit = js.native
   def Modify(Type: XlDVType): scala.Unit = js.native
@@ -56,11 +257,212 @@ class Validation protected () extends js.Object {
     Formula1: java.lang.String
   ): scala.Unit = js.native
   def Modify(
-    Type: XlDVType,
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
     AlertStyle: XlDVAlertStyle,
-    Operator: XlFormatConditionOperator,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
     Formula1: java.lang.String,
     Formula2: java.lang.String
   ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  def Modify(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_0(Type: activexDashExcelLib.activexDashExcelLibNumbers.`0`): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_1(Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_1(Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_1(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`
+  ): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_1(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_1(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`1`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_2(Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_2(Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_2(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`
+  ): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_2(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_2(
+    Type: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    AlertStyle: XlDVAlertStyle,
+    Operator: activexDashExcelLib.activexDashExcelLibNumbers.`2`,
+    Formula1: java.lang.String,
+    Formula2: java.lang.String
+  ): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_4(Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_4(Type: activexDashExcelLib.activexDashExcelLibNumbers.`4`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_5(Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_5(Type: activexDashExcelLib.activexDashExcelLibNumbers.`5`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_6(Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`): scala.Unit = js.native
+  @JSName("Modify")
+  def Modify_6(Type: activexDashExcelLib.activexDashExcelLibNumbers.`6`, AlertStyle: XlDVAlertStyle): scala.Unit = js.native
 }
 

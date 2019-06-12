@@ -13,8 +13,10 @@ trait PagerInstance extends js.Object {
     * @param noAllocate will make the method return `undefined` if no page has been allocated already
     */
   def get(pageNumber: scala.Double): Page = js.native
-  def get(pageNumber: scala.Double, noAllocate: memoryDashPagerLib.memoryDashPagerLibNumbers.`false`): Page = js.native
-  def get(pageNumber: scala.Double, noAllocate: memoryDashPagerLib.memoryDashPagerLibNumbers.`true`): js.UndefOr[Page] = js.native
+  @JSName("get")
+  def get_false(pageNumber: scala.Double, noAllocate: memoryDashPagerLib.memoryDashPagerLibNumbers.`false`): Page = js.native
+  @JSName("get")
+  def get_true(pageNumber: scala.Double, noAllocate: memoryDashPagerLib.memoryDashPagerLibNumbers.`true`): js.UndefOr[Page] = js.native
   /**
     * Get the last page that was updated.
     */

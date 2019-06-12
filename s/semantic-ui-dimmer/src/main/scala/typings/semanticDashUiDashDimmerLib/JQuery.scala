@@ -15,12 +15,12 @@ trait JQuery extends js.Object {
     * Detaches a given element from DOM and reattaches element inside dimmer
     */
   @JSName("dimmer")
-  def `dimmer_add content`(
+  def dimmer_addcontent(
     behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`add content`,
     element: java.lang.String
   ): JQuery = js.native
   @JSName("dimmer")
-  def `dimmer_add content`(
+  def dimmer_addcontent(
     behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`add content`,
     element: JQuery
   ): JQuery = js.native
@@ -35,17 +35,17 @@ trait JQuery extends js.Object {
     * Returns DOM element for dimmer
     */
   @JSName("dimmer")
-  def `dimmer_get dimmer`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`get dimmer`): JQuery = js.native
+  def dimmer_getdimmer(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`get dimmer`): JQuery = js.native
   /**
     * Returns current duration for show or hide event depending on current visibility
     */
   @JSName("dimmer")
-  def `dimmer_get duration`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`get duration`): scala.Double = js.native
+  def dimmer_getduration(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`get duration`): scala.Double = js.native
   /**
     * Returns whether current dimmable has a dimmer
     */
   @JSName("dimmer")
-  def `dimmer_has dimmer`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`has dimmer`): scala.Boolean = js.native
+  def dimmer_hasdimmer(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`has dimmer`): scala.Boolean = js.native
   /**
     * Hides dimmer
     */
@@ -55,67 +55,67 @@ trait JQuery extends js.Object {
     * Whether section's dimmer is active
     */
   @JSName("dimmer")
-  def `dimmer_is active`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is active`): scala.Boolean = js.native
+  def dimmer_isactive(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is active`): scala.Boolean = js.native
   /**
     * Whether dimmer is animating
     */
   @JSName("dimmer")
-  def `dimmer_is animating`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is animating`): scala.Boolean = js.native
+  def dimmer_isanimating(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is animating`): scala.Boolean = js.native
   /**
     * Whether current element is a dimmable section
     */
   @JSName("dimmer")
-  def `dimmer_is dimmable`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is dimmable`): scala.Boolean = js.native
+  def dimmer_isdimmable(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is dimmable`): scala.Boolean = js.native
   /**
     * Whether current element is a dimmer
     */
   @JSName("dimmer")
-  def `dimmer_is dimmer`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is dimmer`): scala.Boolean = js.native
+  def dimmer_isdimmer(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is dimmer`): scala.Boolean = js.native
   /**
     * Whether dimmer is disabled
     */
   @JSName("dimmer")
-  def `dimmer_is disabled`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is disabled`): scala.Boolean = js.native
+  def dimmer_isdisabled(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is disabled`): scala.Boolean = js.native
   /**
     * Whether dimmer is not disabled
     */
   @JSName("dimmer")
-  def `dimmer_is enabled`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is enabled`): scala.Boolean = js.native
+  def dimmer_isenabled(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is enabled`): scala.Boolean = js.native
   /**
     * Whether dimmable section is body
     */
   @JSName("dimmer")
-  def `dimmer_is page`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is page`): scala.Boolean = js.native
+  def dimmer_ispage(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is page`): scala.Boolean = js.native
   /**
     * Whether dimmer is a page dimmer
     */
   @JSName("dimmer")
-  def `dimmer_is page dimmer`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is page dimmer`): scala.Boolean = js.native
+  def dimmer_ispagedimmer(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`is page dimmer`): scala.Boolean = js.native
   /**
     * Sets page dimmer to active
     */
   @JSName("dimmer")
-  def `dimmer_set active`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set active`): JQuery = js.native
+  def dimmer_setactive(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set active`): JQuery = js.native
   /**
     * Sets an element as a dimmable section
     */
   @JSName("dimmer")
-  def `dimmer_set dimmable`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set dimmable`): JQuery = js.native
+  def dimmer_setdimmable(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set dimmable`): JQuery = js.native
   /**
     * Sets a dimmable section as dimmed
     */
   @JSName("dimmer")
-  def `dimmer_set dimmed`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set dimmed`): JQuery = js.native
+  def dimmer_setdimmed(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set dimmed`): JQuery = js.native
   /**
     * Sets a dimmer as disabled
     */
   @JSName("dimmer")
-  def `dimmer_set disabled`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set disabled`): JQuery = js.native
+  def dimmer_setdisabled(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set disabled`): JQuery = js.native
   /**
     * Changes dimmer opacity
     */
   @JSName("dimmer")
-  def `dimmer_set opacity`(
+  def dimmer_setopacity(
     behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set opacity`,
     opacity: scala.Double
   ): JQuery = js.native
@@ -123,7 +123,7 @@ trait JQuery extends js.Object {
     * Sets current dimmer as a page dimmer
     */
   @JSName("dimmer")
-  def `dimmer_set page dimmer`(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set page dimmer`): JQuery = js.native
+  def dimmer_setpagedimmer(behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.`set page dimmer`): JQuery = js.native
   @JSName("dimmer")
   def dimmer_setting(
     behavior: semanticDashUiDashDimmerLib.semanticDashUiDashDimmerLibStrings.setting,

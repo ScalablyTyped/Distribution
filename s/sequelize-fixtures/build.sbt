@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "sequelize-fixtures"
-version := "0.6.0-dt-20190524Z-d69fe2"
+version := "0.6.0-dt-20190524Z-cbf3a3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-462670",
-  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20181219Z-d1f67c",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190606Z-4abba9",
-  "org.scalablytyped" %%% "node" % "12.0-dt-20190606Z-b7fe68",
-  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20190530Z-5ac683",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac",
-  "org.scalablytyped" %%% "validator" % "v10.11.0-dt-20190608Z-58df53")
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190524Z-cca586",
+  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20181219Z-ce3a13",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190606Z-ca1840",
+  "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
+  "org.scalablytyped" %%% "sequelize" % "4.28.0-dt-20190530Z-f1d1f2",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119",
+  "org.scalablytyped" %%% "validator" % "v10.11.0-dt-20190608Z-3be793")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

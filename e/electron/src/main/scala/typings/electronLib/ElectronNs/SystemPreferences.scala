@@ -15,22 +15,22 @@ trait SystemPreferences extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_accent-color-changed`(
+  def addListener_accentcolorchanged(
     event: electronLib.electronLibStrings.`accent-color-changed`,
     listener: js.Function2[/* event */ Event, /* newColor */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_color-changed`(
+  def addListener_colorchanged(
     event: electronLib.electronLibStrings.`color-changed`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_high-contrast-color-scheme-changed`(
+  def addListener_highcontrastcolorschemechanged(
     event: electronLib.electronLibStrings.`high-contrast-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
-  def `addListener_inverted-color-scheme-changed`(
+  def addListener_invertedcolorschemechanged(
     event: electronLib.electronLibStrings.`inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -140,22 +140,22 @@ trait SystemPreferences extends EventEmitter {
   ): this.type = js.native
   // Docs: http://electronjs.org/docs/api/system-preferences
   @JSName("on")
-  def `on_accent-color-changed`(
+  def on_accentcolorchanged(
     event: electronLib.electronLibStrings.`accent-color-changed`,
     listener: js.Function2[/* event */ Event, /* newColor */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_color-changed`(
+  def on_colorchanged(
     event: electronLib.electronLibStrings.`color-changed`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_high-contrast-color-scheme-changed`(
+  def on_highcontrastcolorschemechanged(
     event: electronLib.electronLibStrings.`high-contrast-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("on")
-  def `on_inverted-color-scheme-changed`(
+  def on_invertedcolorschemechanged(
     event: electronLib.electronLibStrings.`inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -167,22 +167,22 @@ trait SystemPreferences extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("once")
-  def `once_accent-color-changed`(
+  def once_accentcolorchanged(
     event: electronLib.electronLibStrings.`accent-color-changed`,
     listener: js.Function2[/* event */ Event, /* newColor */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_color-changed`(
+  def once_colorchanged(
     event: electronLib.electronLibStrings.`color-changed`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_high-contrast-color-scheme-changed`(
+  def once_highcontrastcolorschemechanged(
     event: electronLib.electronLibStrings.`high-contrast-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def `once_inverted-color-scheme-changed`(
+  def once_invertedcolorschemechanged(
     event: electronLib.electronLibStrings.`inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ scala.Boolean, scala.Unit]
   ): this.type = js.native
@@ -214,22 +214,22 @@ trait SystemPreferences extends EventEmitter {
     ]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_accent-color-changed`(
+  def removeListener_accentcolorchanged(
     event: electronLib.electronLibStrings.`accent-color-changed`,
     listener: js.Function2[/* event */ Event, /* newColor */ java.lang.String, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_color-changed`(
+  def removeListener_colorchanged(
     event: electronLib.electronLibStrings.`color-changed`,
     listener: js.Function1[/* event */ Event, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_high-contrast-color-scheme-changed`(
+  def removeListener_highcontrastcolorschemechanged(
     event: electronLib.electronLibStrings.`high-contrast-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* highContrastColorScheme */ scala.Boolean, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
-  def `removeListener_inverted-color-scheme-changed`(
+  def removeListener_invertedcolorschemechanged(
     event: electronLib.electronLibStrings.`inverted-color-scheme-changed`,
     listener: js.Function2[/* event */ Event, /* invertedColorScheme */ scala.Boolean, scala.Unit]
   ): this.type = js.native

@@ -13,6 +13,8 @@ trait CallExpression
   var _declarationBrand: js.Any = js.native
   var arguments: NodeArray[Expression] = js.native
   var expression: LeftHandSideExpression = js.native
+  @JSName("kind")
+  var kind_CallExpression: typescriptLib.typescriptMod.SyntaxKind.CallExpression = js.native
   var typeArguments: js.UndefOr[NodeArray[TypeNode]] = js.native
 }
 

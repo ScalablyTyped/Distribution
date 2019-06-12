@@ -11,6 +11,10 @@ trait CreateTransformJobRequest extends js.Object {
     */
   var BatchStrategy: js.UndefOr[BatchStrategy] = js.undefined
   /**
+    * The data structure used for combining the input data and inference in the output file. For more information, see Batch Transform I/O Join.
+    */
+  var DataProcessing: js.UndefOr[DataProcessing] = js.undefined
+  /**
     * The environment variables to set in the Docker container. We support up to 16 key and values entries in the map.
     */
   var Environment: js.UndefOr[TransformEnvironmentMap] = js.undefined
@@ -57,6 +61,7 @@ object CreateTransformJobRequest {
     TransformOutput: TransformOutput,
     TransformResources: TransformResources,
     BatchStrategy: BatchStrategy = null,
+    DataProcessing: DataProcessing = null,
     Environment: TransformEnvironmentMap = null,
     MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined,
     MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined,
@@ -64,6 +69,7 @@ object CreateTransformJobRequest {
   ): CreateTransformJobRequest = {
     val __obj = js.Dynamic.literal(ModelName = ModelName, TransformInput = TransformInput, TransformJobName = TransformJobName, TransformOutput = TransformOutput, TransformResources = TransformResources)
     if (BatchStrategy != null) __obj.updateDynamic("BatchStrategy")(BatchStrategy.asInstanceOf[js.Any])
+    if (DataProcessing != null) __obj.updateDynamic("DataProcessing")(DataProcessing)
     if (Environment != null) __obj.updateDynamic("Environment")(Environment)
     if (!js.isUndefined(MaxConcurrentTransforms)) __obj.updateDynamic("MaxConcurrentTransforms")(MaxConcurrentTransforms)
     if (!js.isUndefined(MaxPayloadInMB)) __obj.updateDynamic("MaxPayloadInMB")(MaxPayloadInMB)

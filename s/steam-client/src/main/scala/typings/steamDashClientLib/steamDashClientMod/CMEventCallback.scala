@@ -75,22 +75,6 @@ trait CMEventCallback extends js.Object {
     /**
     * A Buffer or ByteBuffer containing the rest of the message
     */
-  body: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
-    /**
-    * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
-    */
-  callback: steamDashClientLib.steamDashClientLibNumbers.`false`
-  ): scala.Unit = js.native
-  def message(
-    /**
-    * An object containing the message header. It has the following properties:
-    * The following fields are reserved for internal use and shall be ignored: steamid, client_sessionid, jobid_source, jobid_target.
-    * (Note: pass an empty object if you don't need to set any fields)
-    */
-  header: steamDashClientLib.Anon_False,
-    /**
-    * A Buffer or ByteBuffer containing the rest of the message
-    */
   body: nodeLib.Buffer
   ): scala.Unit = js.native
   def message(
@@ -109,7 +93,25 @@ trait CMEventCallback extends js.Object {
     */
   callback: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias steam-client.steam-client.SendMessage */ js.Object
   ): scala.Unit = js.native
-  def message(
+  @JSName("message")
+  def message_false(
+    /**
+    * An object containing the message header. It has the following properties:
+    * The following fields are reserved for internal use and shall be ignored: steamid, client_sessionid, jobid_source, jobid_target.
+    * (Note: pass an empty object if you don't need to set any fields)
+    */
+  header: steamDashClientLib.Anon_False,
+    /**
+    * A Buffer or ByteBuffer containing the rest of the message
+    */
+  body: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any,
+    /**
+    * If not falsy, then this message is a request, and callback shall be called with any response to it instead of 'message'/send. callback has the same arguments as 'message'/send.
+    */
+  callback: steamDashClientLib.steamDashClientLibNumbers.`false`
+  ): scala.Unit = js.native
+  @JSName("message")
+  def message_false(
     /**
     * An object containing the message header. It has the following properties:
     * The following fields are reserved for internal use and shall be ignored: steamid, client_sessionid, jobid_source, jobid_target.

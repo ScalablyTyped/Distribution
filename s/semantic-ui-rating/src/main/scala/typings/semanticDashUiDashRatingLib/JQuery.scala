@@ -15,7 +15,7 @@ trait JQuery extends js.Object {
     * Clears current rating
     */
   @JSName("rating")
-  def `rating_clear rating`(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.`clear rating`): JQuery = js.native
+  def rating_clearrating(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.`clear rating`): JQuery = js.native
   @JSName("rating")
   def rating_destroy(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.destroy): JQuery = js.native
   /**
@@ -32,12 +32,12 @@ trait JQuery extends js.Object {
     * Gets current rating
     */
   @JSName("rating")
-  def `rating_get rating`(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.`get rating`): scala.Double = js.native
+  def rating_getrating(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.`get rating`): scala.Double = js.native
   /**
     * Sets rating programmatically
     */
   @JSName("rating")
-  def `rating_set rating`(
+  def rating_setrating(
     behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.`set rating`,
     rating: scala.Double
   ): JQuery = js.native

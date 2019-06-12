@@ -118,8 +118,10 @@ class Casper protected () extends js.Object {
   def start(url: java.lang.String): Casper = js.native
   def start(url: java.lang.String, `then`: FunctionThen): Casper = js.native
   def status(): scala.Double = js.native
-  def status(asString: casperjsLib.casperjsLibNumbers.`false`): scala.Double = js.native
-  def status(asString: casperjsLib.casperjsLibNumbers.`true`): java.lang.String = js.native
+  @JSName("status")
+  def status_false(asString: casperjsLib.casperjsLibNumbers.`false`): scala.Double = js.native
+  @JSName("status")
+  def status_true(asString: casperjsLib.casperjsLibNumbers.`true`): java.lang.String = js.native
   def switchToFrame(frameInfo: java.lang.String): Casper = js.native
   def switchToFrame(frameInfo: scala.Double): Casper = js.native
   def switchToMainFrame(): Casper = js.native

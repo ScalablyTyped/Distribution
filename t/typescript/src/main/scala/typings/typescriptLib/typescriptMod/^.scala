@@ -29,10 +29,50 @@ object ^ extends js.Object {
     * Add EmitHelpers to a node.
     */
   def addEmitHelpers[T /* <: Node */](node: T, helpers: js.Array[EmitHelper]): T = js.native
-  def addSyntheticLeadingComment[T /* <: Node */](node: T, kind: SyntaxKind, text: java.lang.String): T = js.native
-  def addSyntheticLeadingComment[T /* <: Node */](node: T, kind: SyntaxKind, text: java.lang.String, hasTrailingNewLine: scala.Boolean): T = js.native
-  def addSyntheticTrailingComment[T /* <: Node */](node: T, kind: SyntaxKind, text: java.lang.String): T = js.native
-  def addSyntheticTrailingComment[T /* <: Node */](node: T, kind: SyntaxKind, text: java.lang.String, hasTrailingNewLine: scala.Boolean): T = js.native
+  def addSyntheticLeadingComment[T /* <: Node */](
+    node: T,
+    kind: typescriptLib.typescriptMod.SyntaxKind.MultiLineCommentTrivia,
+    text: java.lang.String
+  ): T = js.native
+  def addSyntheticLeadingComment[T /* <: Node */](
+    node: T,
+    kind: typescriptLib.typescriptMod.SyntaxKind.MultiLineCommentTrivia,
+    text: java.lang.String,
+    hasTrailingNewLine: scala.Boolean
+  ): T = js.native
+  def addSyntheticLeadingComment[T /* <: Node */](
+    node: T,
+    kind: typescriptLib.typescriptMod.SyntaxKind.SingleLineCommentTrivia,
+    text: java.lang.String
+  ): T = js.native
+  def addSyntheticLeadingComment[T /* <: Node */](
+    node: T,
+    kind: typescriptLib.typescriptMod.SyntaxKind.SingleLineCommentTrivia,
+    text: java.lang.String,
+    hasTrailingNewLine: scala.Boolean
+  ): T = js.native
+  def addSyntheticTrailingComment[T /* <: Node */](
+    node: T,
+    kind: typescriptLib.typescriptMod.SyntaxKind.MultiLineCommentTrivia,
+    text: java.lang.String
+  ): T = js.native
+  def addSyntheticTrailingComment[T /* <: Node */](
+    node: T,
+    kind: typescriptLib.typescriptMod.SyntaxKind.MultiLineCommentTrivia,
+    text: java.lang.String,
+    hasTrailingNewLine: scala.Boolean
+  ): T = js.native
+  def addSyntheticTrailingComment[T /* <: Node */](
+    node: T,
+    kind: typescriptLib.typescriptMod.SyntaxKind.SingleLineCommentTrivia,
+    text: java.lang.String
+  ): T = js.native
+  def addSyntheticTrailingComment[T /* <: Node */](
+    node: T,
+    kind: typescriptLib.typescriptMod.SyntaxKind.SingleLineCommentTrivia,
+    text: java.lang.String,
+    hasTrailingNewLine: scala.Boolean
+  ): T = js.native
   def classicNameResolver(
     moduleName: java.lang.String,
     containingFile: java.lang.String,
@@ -833,7 +873,7 @@ object ^ extends js.Object {
   def createExpressionWithTypeArguments(typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = js.native
   def createExternalModuleExport(exportName: Identifier): ExportDeclaration = js.native
   def createExternalModuleReference(expression: Expression): ExternalModuleReference = js.native
-  def createFalse(): BooleanLiteral with Token[SyntaxKind] = js.native
+  def createFalse(): BooleanLiteral with Token[typescriptLib.typescriptMod.SyntaxKind.FalseKeyword] = js.native
   /** Create a unique name based on the supplied text. This does not consider names injected by the transformer. */
   def createFileLevelUniqueName(text: java.lang.String): Identifier = js.native
   def createFor(
@@ -961,7 +1001,14 @@ object ^ extends js.Object {
     `type`: TypeNode,
     body: Block
   ): GetAccessorDeclaration = js.native
-  def createHeritageClause(token: SyntaxKind, types: js.Array[ExpressionWithTypeArguments]): HeritageClause = js.native
+  def createHeritageClause(
+    token: typescriptLib.typescriptMod.SyntaxKind.ExtendsKeyword,
+    types: js.Array[ExpressionWithTypeArguments]
+  ): HeritageClause = js.native
+  def createHeritageClause(
+    token: typescriptLib.typescriptMod.SyntaxKind.ImplementsKeyword,
+    types: js.Array[ExpressionWithTypeArguments]
+  ): HeritageClause = js.native
   def createIdentifier(text: java.lang.String): Identifier = js.native
   def createIf(expression: Expression, thenStatement: Statement): IfStatement = js.native
   def createIf(expression: Expression, thenStatement: Statement, elseStatement: Statement): IfStatement = js.native
@@ -1306,7 +1353,9 @@ object ^ extends js.Object {
   def createJsxSpreadAttribute(expression: Expression): JsxSpreadAttribute = js.native
   def createJsxText(text: java.lang.String): JsxText = js.native
   def createJsxText(text: java.lang.String, containsOnlyTriviaWhiteSpaces: scala.Boolean): JsxText = js.native
-  def createKeywordTypeNode(kind: SyntaxKind): KeywordTypeNode = js.native
+  def createKeywordTypeNode(
+    kind: typescriptLib.typescriptMod.SyntaxKind.AnyKeyword | typescriptLib.typescriptMod.SyntaxKind.UnknownKeyword | typescriptLib.typescriptMod.SyntaxKind.NumberKeyword | typescriptLib.typescriptMod.SyntaxKind.BigIntKeyword | typescriptLib.typescriptMod.SyntaxKind.ObjectKeyword | typescriptLib.typescriptMod.SyntaxKind.BooleanKeyword | typescriptLib.typescriptMod.SyntaxKind.StringKeyword | typescriptLib.typescriptMod.SyntaxKind.SymbolKeyword | typescriptLib.typescriptMod.SyntaxKind.ThisKeyword | typescriptLib.typescriptMod.SyntaxKind.VoidKeyword | typescriptLib.typescriptMod.SyntaxKind.UndefinedKeyword | typescriptLib.typescriptMod.SyntaxKind.NullKeyword | typescriptLib.typescriptMod.SyntaxKind.NeverKeyword
+  ): KeywordTypeNode = js.native
   def createLabel(label: java.lang.String, statement: Statement): LabeledStatement = js.native
   def createLabel(label: Identifier, statement: Statement): LabeledStatement = js.native
   def createLanguageService(host: LanguageServiceHost): LanguageService = js.native
@@ -1368,7 +1417,8 @@ object ^ extends js.Object {
     questionToken: QuestionToken | PlusToken | MinusToken,
     `type`: TypeNode
   ): MappedTypeNode = js.native
-  def createMetaProperty(keywordToken: SyntaxKind, name: Identifier): MetaProperty = js.native
+  def createMetaProperty(keywordToken: typescriptLib.typescriptMod.SyntaxKind.ImportKeyword, name: Identifier): MetaProperty = js.native
+  def createMetaProperty(keywordToken: typescriptLib.typescriptMod.SyntaxKind.NewKeyword, name: Identifier): MetaProperty = js.native
   def createMethod(
     decorators: js.UndefOr[js.Array[Decorator]],
     modifiers: js.UndefOr[js.Array[Modifier]],
@@ -1622,7 +1672,7 @@ object ^ extends js.Object {
     * @param original The original statement.
     */
   def createNotEmittedStatement(original: Node): NotEmittedStatement = js.native
-  def createNull(): NullLiteral with Token[SyntaxKind] = js.native
+  def createNull(): NullLiteral with Token[typescriptLib.typescriptMod.SyntaxKind.NullKeyword] = js.native
   def createNumericLiteral(value: java.lang.String): NumericLiteral = js.native
   def createNumericLiteral(value: java.lang.String, numericLiteralFlags: TokenFlags): NumericLiteral = js.native
   def createObjectBindingPattern(elements: js.Array[BindingElement]): ObjectBindingPattern = js.native
@@ -2516,11 +2566,11 @@ object ^ extends js.Object {
   def createTextChangeRange(span: TextSpan, newLength: scala.Double): TextChangeRange = js.native
   def createTextSpan(start: scala.Double, length: scala.Double): TextSpan = js.native
   def createTextSpanFromBounds(start: scala.Double, end: scala.Double): TextSpan = js.native
-  def createThis(): ThisExpression with Token[SyntaxKind] = js.native
+  def createThis(): ThisExpression with Token[typescriptLib.typescriptMod.SyntaxKind.ThisKeyword] = js.native
   def createThisTypeNode(): ThisTypeNode = js.native
   def createThrow(expression: Expression): ThrowStatement = js.native
   def createToken[TKind /* <: SyntaxKind */](token: TKind): Token[TKind] = js.native
-  def createTrue(): BooleanLiteral with Token[SyntaxKind] = js.native
+  def createTrue(): BooleanLiteral with Token[typescriptLib.typescriptMod.SyntaxKind.TrueKeyword] = js.native
   def createTry(tryBlock: Block): TryStatement = js.native
   def createTry(tryBlock: Block, catchClause: js.UndefOr[scala.Nothing], finallyBlock: Block): TryStatement = js.native
   def createTry(tryBlock: Block, catchClause: CatchClause): TryStatement = js.native
@@ -2642,7 +2692,9 @@ object ^ extends js.Object {
   def createTypeLiteralNode(): TypeLiteralNode = js.native
   def createTypeLiteralNode(members: js.Array[TypeElement]): TypeLiteralNode = js.native
   def createTypeOf(expression: Expression): TypeOfExpression = js.native
-  def createTypeOperatorNode(operator: SyntaxKind, `type`: TypeNode): TypeOperatorNode = js.native
+  def createTypeOperatorNode(operator: typescriptLib.typescriptMod.SyntaxKind.KeyOfKeyword, `type`: TypeNode): TypeOperatorNode = js.native
+  def createTypeOperatorNode(operator: typescriptLib.typescriptMod.SyntaxKind.ReadonlyKeyword, `type`: TypeNode): TypeOperatorNode = js.native
+  def createTypeOperatorNode(operator: typescriptLib.typescriptMod.SyntaxKind.UniqueKeyword, `type`: TypeNode): TypeOperatorNode = js.native
   def createTypeOperatorNode(`type`: TypeNode): TypeOperatorNode = js.native
   def createTypeParameterDeclaration(name: java.lang.String): TypeParameterDeclaration = js.native
   def createTypeParameterDeclaration(name: java.lang.String, constraint: TypeNode): TypeParameterDeclaration = js.native
@@ -2658,7 +2710,8 @@ object ^ extends js.Object {
   def createTypeReferenceNode(typeName: java.lang.String, typeArguments: js.Array[TypeNode]): TypeReferenceNode = js.native
   def createTypeReferenceNode(typeName: EntityName): TypeReferenceNode = js.native
   def createTypeReferenceNode(typeName: EntityName, typeArguments: js.Array[TypeNode]): TypeReferenceNode = js.native
-  def createUnionOrIntersectionTypeNode(kind: SyntaxKind, types: js.Array[TypeNode]): UnionOrIntersectionTypeNode = js.native
+  def createUnionOrIntersectionTypeNode(kind: typescriptLib.typescriptMod.SyntaxKind.IntersectionType, types: js.Array[TypeNode]): UnionOrIntersectionTypeNode = js.native
+  def createUnionOrIntersectionTypeNode(kind: typescriptLib.typescriptMod.SyntaxKind.UnionType, types: js.Array[TypeNode]): UnionOrIntersectionTypeNode = js.native
   def createUnionTypeNode(types: js.Array[TypeNode]): UnionTypeNode = js.native
   /** Create a unique name based on the supplied text. */
   def createUniqueName(text: java.lang.String): Identifier = js.native
@@ -3146,7 +3199,8 @@ object ^ extends js.Object {
   def isInterfaceDeclaration(node: Node): /* is typescript.typescript.InterfaceDeclaration */ scala.Boolean = js.native
   def isIntersectionTypeNode(node: Node): /* is typescript.typescript.IntersectionTypeNode */ scala.Boolean = js.native
   def isIterationStatement(node: Node, lookInLabeledStatements: scala.Boolean): scala.Boolean = js.native
-  def isIterationStatement(node: Node, lookInLabeledStatements: typescriptLib.typescriptLibNumbers.`false`): /* is typescript.typescript.IterationStatement */ scala.Boolean = js.native
+  @JSName("isIterationStatement")
+  def isIterationStatement_false(node: Node, lookInLabeledStatements: typescriptLib.typescriptLibNumbers.`false`): /* is typescript.typescript.IterationStatement */ scala.Boolean = js.native
   def isJSDoc(node: Node): /* is typescript.typescript.JSDoc */ scala.Boolean = js.native
   def isJSDocAllType(node: JSDocAllType): /* is typescript.typescript.JSDocAllType */ scala.Boolean = js.native
   def isJSDocAugmentsTag(node: Node): /* is typescript.typescript.JSDocAugmentsTag */ scala.Boolean = js.native
@@ -3643,7 +3697,7 @@ object ^ extends js.Object {
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: Token[SyntaxKind],
+    equalsGreaterThanToken: Token[typescriptLib.typescriptMod.SyntaxKind.EqualsGreaterThanToken],
     body: ConciseBody
   ): ArrowFunction = js.native
   def updateArrowFunction(
@@ -3652,7 +3706,7 @@ object ^ extends js.Object {
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
-    equalsGreaterThanToken: Token[SyntaxKind],
+    equalsGreaterThanToken: Token[typescriptLib.typescriptMod.SyntaxKind.EqualsGreaterThanToken],
     body: ConciseBody
   ): ArrowFunction = js.native
   def updateArrowFunction(
@@ -3661,7 +3715,7 @@ object ^ extends js.Object {
     typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: Token[SyntaxKind],
+    equalsGreaterThanToken: Token[typescriptLib.typescriptMod.SyntaxKind.EqualsGreaterThanToken],
     body: ConciseBody
   ): ArrowFunction = js.native
   def updateArrowFunction(
@@ -3670,7 +3724,7 @@ object ^ extends js.Object {
     typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
-    equalsGreaterThanToken: Token[SyntaxKind],
+    equalsGreaterThanToken: Token[typescriptLib.typescriptMod.SyntaxKind.EqualsGreaterThanToken],
     body: ConciseBody
   ): ArrowFunction = js.native
   def updateArrowFunction(
@@ -3679,7 +3733,7 @@ object ^ extends js.Object {
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: Token[SyntaxKind],
+    equalsGreaterThanToken: Token[typescriptLib.typescriptMod.SyntaxKind.EqualsGreaterThanToken],
     body: ConciseBody
   ): ArrowFunction = js.native
   def updateArrowFunction(
@@ -3688,7 +3742,7 @@ object ^ extends js.Object {
     typeParameters: js.UndefOr[scala.Nothing],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
-    equalsGreaterThanToken: Token[SyntaxKind],
+    equalsGreaterThanToken: Token[typescriptLib.typescriptMod.SyntaxKind.EqualsGreaterThanToken],
     body: ConciseBody
   ): ArrowFunction = js.native
   def updateArrowFunction(
@@ -3697,7 +3751,7 @@ object ^ extends js.Object {
     typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: js.UndefOr[scala.Nothing],
-    equalsGreaterThanToken: Token[SyntaxKind],
+    equalsGreaterThanToken: Token[typescriptLib.typescriptMod.SyntaxKind.EqualsGreaterThanToken],
     body: ConciseBody
   ): ArrowFunction = js.native
   def updateArrowFunction(
@@ -3706,7 +3760,7 @@ object ^ extends js.Object {
     typeParameters: js.Array[TypeParameterDeclaration],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode,
-    equalsGreaterThanToken: Token[SyntaxKind],
+    equalsGreaterThanToken: Token[typescriptLib.typescriptMod.SyntaxKind.EqualsGreaterThanToken],
     body: ConciseBody
   ): ArrowFunction = js.native
   def updateAsExpression(node: AsExpression, expression: Expression, `type`: TypeNode): AsExpression = js.native
@@ -3951,9 +4005,9 @@ object ^ extends js.Object {
   def updateConditional(
     node: ConditionalExpression,
     condition: Expression,
-    questionToken: Token[SyntaxKind],
+    questionToken: Token[typescriptLib.typescriptMod.SyntaxKind.QuestionToken],
     whenTrue: Expression,
-    colonToken: Token[SyntaxKind],
+    colonToken: Token[typescriptLib.typescriptMod.SyntaxKind.ColonToken],
     whenFalse: Expression
   ): ConditionalExpression = js.native
   def updateConditionalTypeNode(

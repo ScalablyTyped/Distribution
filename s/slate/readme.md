@@ -47,6 +47,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Hanna Greaves <https://github.com/sgreav>
 //                 Jack Allen <https://github.com/jackall3n>
 //                 Benjamin Evenson <https://github.com/benjiro>
+//                 Han Jeon <https://github.com/hanstar17>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 

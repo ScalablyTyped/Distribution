@@ -12,5 +12,7 @@ trait ForInStatement
      with HasInitializer {
   var expression: Expression = js.native
   var initializer: ForInitializer = js.native
+  @JSName("kind")
+  var kind_ForInStatement: typescriptLib.typescriptMod.SyntaxKind.ForInStatement = js.native
 }
 

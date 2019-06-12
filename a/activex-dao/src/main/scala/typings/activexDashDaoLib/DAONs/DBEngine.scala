@@ -101,11 +101,18 @@ class DBEngine protected () extends js.Object {
     ReadOnly: scala.Boolean,
     Connect: java.lang.String
   ): Connection = js.native
-  def OpenConnection(Name: java.lang.String, Options: RecordsetOptionEnum): Connection = js.native
-  def OpenConnection(Name: java.lang.String, Options: RecordsetOptionEnum, ReadOnly: scala.Boolean): Connection = js.native
-  def OpenConnection(
+  @JSName("OpenConnection")
+  def OpenConnection_1024(Name: java.lang.String, Options: activexDashDaoLib.activexDashDaoLibNumbers.`1024`): Connection = js.native
+  @JSName("OpenConnection")
+  def OpenConnection_1024(
     Name: java.lang.String,
-    Options: RecordsetOptionEnum,
+    Options: activexDashDaoLib.activexDashDaoLibNumbers.`1024`,
+    ReadOnly: scala.Boolean
+  ): Connection = js.native
+  @JSName("OpenConnection")
+  def OpenConnection_1024(
+    Name: java.lang.String,
+    Options: activexDashDaoLib.activexDashDaoLibNumbers.`1024`,
     ReadOnly: scala.Boolean,
     Connect: java.lang.String
   ): Connection = js.native

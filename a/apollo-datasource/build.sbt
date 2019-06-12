@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "apollo-datasource"
-version := "0.5.0-5f9b2e"
+version := "0.5.0-f51c6c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "apollo-server-caching" % "0.4.0-9a03c0",
-  "org.scalablytyped" %%% "std" % "3.5-f010ac")
+  "org.scalablytyped" %%% "apollo-server-caching" % "0.4.0-0979b9",
+  "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

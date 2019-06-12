@@ -33,7 +33,12 @@ class Catalog protected () extends js.Object {
   /**
     * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification
     */
-  def GetObjectOwner(ObjectName: java.lang.String, ObjectType: ObjectTypeEnum, ObjectTypeId: js.Any): java.lang.String = js.native
+  @JSName("GetObjectOwner")
+  def GetObjectOwner_1(
+    ObjectName: java.lang.String,
+    ObjectType: activexDashAdoxLib.activexDashAdoxLibNumbers.`-1`,
+    ObjectTypeId: js.Any
+  ): java.lang.String = js.native
   def Groups(Item: java.lang.String): Group = js.native
   def Groups(Item: scala.Double): Group = js.native
   def Procedures(Item: java.lang.String): Procedure = js.native
@@ -43,9 +48,10 @@ class Catalog protected () extends js.Object {
     * @param UserName Specifies the name of the **User** or **Group** to own the object
     * @param ObjectTypeId Specifies the GUID for a provider object type that is not defined by the OLE DB specification
     */
-  def SetObjectOwner(
+  @JSName("SetObjectOwner")
+  def SetObjectOwner_1(
     ObjectName: java.lang.String,
-    ObjectType: ObjectTypeEnum,
+    ObjectType: activexDashAdoxLib.activexDashAdoxLibNumbers.`-1`,
     UserName: java.lang.String,
     ObjectTypeId: js.Any
   ): scala.Unit = js.native

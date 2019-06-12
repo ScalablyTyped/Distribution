@@ -14,7 +14,7 @@ object ShiftWorkdayNs extends js.Object {
   @js.native
   object MatchShiftsByEnum extends js.Object {
     @js.native
-    sealed trait ENDAT
+    sealed trait END_AT
       extends squareDashConnectLib.squareDashConnectMod.ShiftWorkdayNs.MatchShiftsByEnum
     
     @js.native
@@ -22,12 +22,12 @@ object ShiftWorkdayNs extends js.Object {
       extends squareDashConnectLib.squareDashConnectMod.ShiftWorkdayNs.MatchShiftsByEnum
     
     @js.native
-    sealed trait STARTAT
+    sealed trait START_AT
       extends squareDashConnectLib.squareDashConnectMod.ShiftWorkdayNs.MatchShiftsByEnum
     
-    /* "END_AT" */ val ENDAT: ENDAT with java.lang.String = js.native
+    /* "END_AT" */ val END_AT: END_AT with java.lang.String = js.native
     /* "INTERSECTION" */ val INTERSECTION: INTERSECTION with java.lang.String = js.native
-    /* "START_AT" */ val STARTAT: STARTAT with java.lang.String = js.native
+    /* "START_AT" */ val START_AT: START_AT with java.lang.String = js.native
     @JSBracketAccess
     def apply(value: java.lang.String): js.UndefOr[
         squareDashConnectLib.squareDashConnectMod.ShiftWorkdayNs.MatchShiftsByEnum with java.lang.String

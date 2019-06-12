@@ -14,6 +14,7 @@ trait DescribeTransformJobResponse extends js.Object {
     * A timestamp that shows when the transform Job was created.
     */
   var CreationTime: Timestamp
+  var DataProcessing: js.UndefOr[DataProcessing] = js.undefined
   /**
     * The environment variables to set in the Docker container. We support up to 16 key and values entries in the map.
     */
@@ -83,6 +84,7 @@ object DescribeTransformJobResponse {
     TransformJobStatus: TransformJobStatus,
     TransformResources: TransformResources,
     BatchStrategy: BatchStrategy = null,
+    DataProcessing: DataProcessing = null,
     Environment: TransformEnvironmentMap = null,
     FailureReason: FailureReason = null,
     LabelingJobArn: LabelingJobArn = null,
@@ -94,6 +96,7 @@ object DescribeTransformJobResponse {
   ): DescribeTransformJobResponse = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime, ModelName = ModelName, TransformInput = TransformInput, TransformJobArn = TransformJobArn, TransformJobName = TransformJobName, TransformJobStatus = TransformJobStatus.asInstanceOf[js.Any], TransformResources = TransformResources)
     if (BatchStrategy != null) __obj.updateDynamic("BatchStrategy")(BatchStrategy.asInstanceOf[js.Any])
+    if (DataProcessing != null) __obj.updateDynamic("DataProcessing")(DataProcessing)
     if (Environment != null) __obj.updateDynamic("Environment")(Environment)
     if (FailureReason != null) __obj.updateDynamic("FailureReason")(FailureReason)
     if (LabelingJobArn != null) __obj.updateDynamic("LabelingJobArn")(LabelingJobArn)

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AppEngineHttpRequest extends js.Object {
-  var appEngineRouting: AppEngineRouting
+  var appEngineRouting: js.UndefOr[AppEngineRouting] = js.undefined
   var body: java.lang.String
-  var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var httpMethod: java.lang.String
   var relativeUri: java.lang.String
 }
@@ -16,14 +16,15 @@ trait AppEngineHttpRequest extends js.Object {
 object AppEngineHttpRequest {
   @scala.inline
   def apply(
-    appEngineRouting: AppEngineRouting,
     body: java.lang.String,
-    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String],
     httpMethod: java.lang.String,
-    relativeUri: java.lang.String
+    relativeUri: java.lang.String,
+    appEngineRouting: AppEngineRouting = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
   ): AppEngineHttpRequest = {
-    val __obj = js.Dynamic.literal(appEngineRouting = appEngineRouting, body = body, headers = headers, httpMethod = httpMethod, relativeUri = relativeUri)
-  
+    val __obj = js.Dynamic.literal(body = body, httpMethod = httpMethod, relativeUri = relativeUri)
+    if (appEngineRouting != null) __obj.updateDynamic("appEngineRouting")(appEngineRouting)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
     __obj.asInstanceOf[AppEngineHttpRequest]
   }
 }

@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("yup", "number")
 @js.native
-class number () extends NumberSchema
+class number ()
+  extends NumberSchema[scala.Double]
 

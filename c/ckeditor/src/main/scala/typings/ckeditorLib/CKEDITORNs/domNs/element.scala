@@ -26,8 +26,9 @@ class element protected () extends node {
   def contains(node: node): scala.Boolean = js.native
   def copyAttributes(dest: element, skipAttributes: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
   def data(name: java.lang.String): java.lang.String = js.native
-  def data(name: java.lang.String, value: ckeditorLib.ckeditorLibNumbers.`false`): java.lang.String = js.native
   def data(name: java.lang.String, value: java.lang.String): java.lang.String = js.native
+  @JSName("data")
+  def data_false(name: java.lang.String, value: ckeditorLib.ckeditorLibNumbers.`false`): java.lang.String = js.native
   def disableContextMenu(): scala.Unit = js.native
   def find(selector: java.lang.String): nodeList = js.native
   def findOne(selector: java.lang.String): element = js.native
@@ -78,7 +79,8 @@ class element protected () extends node {
   def hide(): scala.Unit = js.native
   def is(name: java.lang.String*): scala.Boolean = js.native
   def is(name: js.Any): scala.Boolean = js.native
-  def isBlockBoundary(customNodeNames: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]): scala.Boolean = js.native
+  @JSName("isBlockBoundary")
+  def isBlockBoundary_1(customNodeNames: org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]): scala.Boolean = js.native
   def isEditable(): scala.Boolean = js.native
   def isEditable(textCursor: scala.Boolean): scala.Boolean = js.native
   def isEmptyInlineRemoveable(): scala.Boolean = js.native

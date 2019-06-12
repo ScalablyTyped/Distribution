@@ -14,7 +14,9 @@ trait IOptions extends js.Object {
   var replacer: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
   var respectFunctionNames: js.UndefOr[scala.Boolean] = js.undefined
   var respectFunctionProperties: js.UndefOr[scala.Boolean] = js.undefined
+  var respectType: js.UndefOr[scala.Boolean] = js.undefined
   var unorderedArrays: js.UndefOr[scala.Boolean] = js.undefined
+  var unorderedObjects: js.UndefOr[scala.Boolean] = js.undefined
   var unorderedSets: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -29,7 +31,9 @@ object IOptions {
     replacer: /* value */ js.Any => _ = null,
     respectFunctionNames: js.UndefOr[scala.Boolean] = js.undefined,
     respectFunctionProperties: js.UndefOr[scala.Boolean] = js.undefined,
+    respectType: js.UndefOr[scala.Boolean] = js.undefined,
     unorderedArrays: js.UndefOr[scala.Boolean] = js.undefined,
+    unorderedObjects: js.UndefOr[scala.Boolean] = js.undefined,
     unorderedSets: js.UndefOr[scala.Boolean] = js.undefined
   ): IOptions = {
     val __obj = js.Dynamic.literal()
@@ -41,7 +45,9 @@ object IOptions {
     if (replacer != null) __obj.updateDynamic("replacer")(js.Any.fromFunction1(replacer))
     if (!js.isUndefined(respectFunctionNames)) __obj.updateDynamic("respectFunctionNames")(respectFunctionNames)
     if (!js.isUndefined(respectFunctionProperties)) __obj.updateDynamic("respectFunctionProperties")(respectFunctionProperties)
+    if (!js.isUndefined(respectType)) __obj.updateDynamic("respectType")(respectType)
     if (!js.isUndefined(unorderedArrays)) __obj.updateDynamic("unorderedArrays")(unorderedArrays)
+    if (!js.isUndefined(unorderedObjects)) __obj.updateDynamic("unorderedObjects")(unorderedObjects)
     if (!js.isUndefined(unorderedSets)) __obj.updateDynamic("unorderedSets")(unorderedSets)
     __obj.asInstanceOf[IOptions]
   }

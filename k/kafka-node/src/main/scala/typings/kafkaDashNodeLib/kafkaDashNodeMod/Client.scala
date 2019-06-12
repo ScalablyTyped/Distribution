@@ -33,7 +33,7 @@ class Client protected () extends js.Object {
   @JSName("on")
   def on_reconnect(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.reconnect, cb: js.Function0[_]): this.type = js.native
   @JSName("on")
-  def on_socket_error(
+  def on_socketerror(
     eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.socket_error,
     cb: js.Function1[/* error */ js.Any, _]
   ): this.type = js.native

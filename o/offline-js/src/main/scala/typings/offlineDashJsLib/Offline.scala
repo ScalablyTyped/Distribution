@@ -21,16 +21,16 @@ object Offline extends js.Object {
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_confirmed-down`(event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-down`): scala.Unit = js.native
+  def off_confirmeddown(event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-down`): scala.Unit = js.native
   @JSName("off")
-  def `off_confirmed-down`(
+  def off_confirmeddown(
     event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-down`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_confirmed-up`(event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-up`): scala.Unit = js.native
+  def off_confirmedup(event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-up`): scala.Unit = js.native
   @JSName("off")
-  def `off_confirmed-up`(
+  def off_confirmedup(
     event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-up`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
@@ -42,51 +42,51 @@ object Offline extends js.Object {
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:connecting`(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:connecting`): scala.Unit = js.native
+  def off_reconnectconnecting(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:connecting`): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:connecting`(
+  def off_reconnectconnecting(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:connecting`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:failure`(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:failure`): scala.Unit = js.native
+  def off_reconnectfailure(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:failure`): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:failure`(
+  def off_reconnectfailure(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:failure`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:started`(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:started`): scala.Unit = js.native
+  def off_reconnectstarted(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:started`): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:started`(
+  def off_reconnectstarted(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:started`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:stopped`(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:stopped`): scala.Unit = js.native
+  def off_reconnectstopped(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:stopped`): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:stopped`(
+  def off_reconnectstopped(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:stopped`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:tick`(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:tick`): scala.Unit = js.native
+  def off_reconnecttick(event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:tick`): scala.Unit = js.native
   @JSName("off")
-  def `off_reconnect:tick`(
+  def off_reconnecttick(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:tick`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_requests:flush`(event: offlineDashJsLib.offlineDashJsLibStrings.`requests:flush`): scala.Unit = js.native
+  def off_requestsflush(event: offlineDashJsLib.offlineDashJsLibStrings.`requests:flush`): scala.Unit = js.native
   @JSName("off")
-  def `off_requests:flush`(
+  def off_requestsflush(
     event: offlineDashJsLib.offlineDashJsLibStrings.`requests:flush`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_requests:hold`(event: offlineDashJsLib.offlineDashJsLibStrings.`requests:hold`): scala.Unit = js.native
+  def off_requestshold(event: offlineDashJsLib.offlineDashJsLibStrings.`requests:hold`): scala.Unit = js.native
   @JSName("off")
-  def `off_requests:hold`(
+  def off_requestshold(
     event: offlineDashJsLib.offlineDashJsLibStrings.`requests:hold`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
@@ -108,23 +108,23 @@ object Offline extends js.Object {
     context: js.Any
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_confirmed-down`(
+  def on_confirmeddown(
     event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-down`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_confirmed-down`(
+  def on_confirmeddown(
     event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-down`,
     handler: js.Function1[/* e */ stdLib.Event, _],
     context: js.Any
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_confirmed-up`(
+  def on_confirmedup(
     event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-up`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_confirmed-up`(
+  def on_confirmedup(
     event: offlineDashJsLib.offlineDashJsLibStrings.`confirmed-up`,
     handler: js.Function1[/* e */ stdLib.Event, _],
     context: js.Any
@@ -141,78 +141,78 @@ object Offline extends js.Object {
     context: js.Any
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:connecting`(
+  def on_reconnectconnecting(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:connecting`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:connecting`(
+  def on_reconnectconnecting(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:connecting`,
     handler: js.Function1[/* e */ stdLib.Event, _],
     context: js.Any
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:failure`(
+  def on_reconnectfailure(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:failure`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:failure`(
+  def on_reconnectfailure(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:failure`,
     handler: js.Function1[/* e */ stdLib.Event, _],
     context: js.Any
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:started`(
+  def on_reconnectstarted(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:started`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:started`(
+  def on_reconnectstarted(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:started`,
     handler: js.Function1[/* e */ stdLib.Event, _],
     context: js.Any
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:stopped`(
+  def on_reconnectstopped(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:stopped`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:stopped`(
+  def on_reconnectstopped(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:stopped`,
     handler: js.Function1[/* e */ stdLib.Event, _],
     context: js.Any
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:tick`(
+  def on_reconnecttick(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:tick`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_reconnect:tick`(
+  def on_reconnecttick(
     event: offlineDashJsLib.offlineDashJsLibStrings.`reconnect:tick`,
     handler: js.Function1[/* e */ stdLib.Event, _],
     context: js.Any
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_requests:flush`(
+  def on_requestsflush(
     event: offlineDashJsLib.offlineDashJsLibStrings.`requests:flush`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_requests:flush`(
+  def on_requestsflush(
     event: offlineDashJsLib.offlineDashJsLibStrings.`requests:flush`,
     handler: js.Function1[/* e */ stdLib.Event, _],
     context: js.Any
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_requests:hold`(
+  def on_requestshold(
     event: offlineDashJsLib.offlineDashJsLibStrings.`requests:hold`,
     handler: js.Function1[/* e */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_requests:hold`(
+  def on_requestshold(
     event: offlineDashJsLib.offlineDashJsLibStrings.`requests:hold`,
     handler: js.Function1[/* e */ stdLib.Event, _],
     context: js.Any

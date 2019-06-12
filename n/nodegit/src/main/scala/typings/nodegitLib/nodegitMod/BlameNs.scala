@@ -8,17 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("nodegit", "Blame")
 @js.native
 object BlameNs extends js.Object {
-  @js.native
-  object FLAG extends js.Object {
-    /* 16 */ val FIRST_PARENT: nodegitLib.blameMod.BlameNs.FLAG.FIRST_PARENT with scala.Double = js.native
-    /* 0 */ val NORMAL: nodegitLib.blameMod.BlameNs.FLAG.NORMAL with scala.Double = js.native
-    /* 8 */ val TRACK_COPIES_ANY_COMMIT_COPIES: nodegitLib.blameMod.BlameNs.FLAG.TRACK_COPIES_ANY_COMMIT_COPIES with scala.Double = js.native
-    /* 4 */ val TRACK_COPIES_SAME_COMMIT_COPIES: nodegitLib.blameMod.BlameNs.FLAG.TRACK_COPIES_SAME_COMMIT_COPIES with scala.Double = js.native
-    /* 2 */ val TRACK_COPIES_SAME_COMMIT_MOVES: nodegitLib.blameMod.BlameNs.FLAG.TRACK_COPIES_SAME_COMMIT_MOVES with scala.Double = js.native
-    /* 1 */ val TRACK_COPIES_SAME_FILE: nodegitLib.blameMod.BlameNs.FLAG.TRACK_COPIES_SAME_FILE with scala.Double = js.native
-    @JSBracketAccess
-    def apply(value: scala.Double): js.UndefOr[nodegitLib.blameMod.BlameNs.FLAG with scala.Double] = js.native
-  }
+  /* Rewritten from type alias, can be one of: 
+    - nodegitLib.nodegitLibNumbers.`0`
+    - nodegitLib.nodegitLibNumbers.`1`
+    - nodegitLib.nodegitLibNumbers.`2`
+    - nodegitLib.nodegitLibNumbers.`4`
+    - nodegitLib.nodegitLibNumbers.`8`
+    - nodegitLib.nodegitLibNumbers.`16`
+  */
+  trait FLAG extends js.Object
   
 }
 

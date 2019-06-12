@@ -65,7 +65,9 @@ class PageSetup protected () extends js.Object {
   /** Represents a percentage between 10 and 400 */
   var Zoom: scala.Double = js.native
   def Pages(Index: scala.Double): Page = js.native
-  def PrintQuality(Index: activexDashExcelLib.activexDashExcelLibNumbers.`1`): scala.Double = js.native
-  def PrintQuality(Index: activexDashExcelLib.activexDashExcelLibNumbers.`2`): scala.Double = js.native
+  @JSName("PrintQuality")
+  def PrintQuality_1(Index: activexDashExcelLib.activexDashExcelLibNumbers.`1`): scala.Double = js.native
+  @JSName("PrintQuality")
+  def PrintQuality_2(Index: activexDashExcelLib.activexDashExcelLibNumbers.`2`): scala.Double = js.native
 }
 

@@ -14,12 +14,18 @@ trait Croppie extends js.Object {
   def result(
     options: (ResultOptions with (croppieLib.Anon_Base64 | croppieLib.Anon_Blob | croppieLib.Anon_Html | croppieLib.Anon_Rawcanvas)) | ResultOptions
   ): js.Promise[java.lang.String] = js.native
-  def rotate(degrees: croppieLib.croppieLibNumbers.`-180`): scala.Unit = js.native
-  def rotate(degrees: croppieLib.croppieLibNumbers.`-270`): scala.Unit = js.native
-  def rotate(degrees: croppieLib.croppieLibNumbers.`-90`): scala.Unit = js.native
-  def rotate(degrees: croppieLib.croppieLibNumbers.`180`): scala.Unit = js.native
-  def rotate(degrees: croppieLib.croppieLibNumbers.`270`): scala.Unit = js.native
-  def rotate(degrees: croppieLib.croppieLibNumbers.`90`): scala.Unit = js.native
+  @JSName("rotate")
+  def rotate_180(degrees: croppieLib.croppieLibNumbers.`-180`): scala.Unit = js.native
+  @JSName("rotate")
+  def rotate_180(degrees: croppieLib.croppieLibNumbers.`180`): scala.Unit = js.native
+  @JSName("rotate")
+  def rotate_270(degrees: croppieLib.croppieLibNumbers.`-270`): scala.Unit = js.native
+  @JSName("rotate")
+  def rotate_270(degrees: croppieLib.croppieLibNumbers.`270`): scala.Unit = js.native
+  @JSName("rotate")
+  def rotate_90(degrees: croppieLib.croppieLibNumbers.`-90`): scala.Unit = js.native
+  @JSName("rotate")
+  def rotate_90(degrees: croppieLib.croppieLibNumbers.`90`): scala.Unit = js.native
   def setZoom(zoom: scala.Double): scala.Unit = js.native
 }
 

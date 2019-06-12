@@ -14,7 +14,7 @@ class Worker protected ()
   def connect(): js.Promise[scala.Unit] = js.native
   def end(): js.Promise[scala.Unit] = js.native
   @JSName("on")
-  def on_cleaning_worker(
+  def on_cleaningworker(
     event: nodeDashResqueLib.nodeDashResqueLibStrings.cleaning_worker,
     cb: js.Function2[/* worker */ java.lang.String, /* pid */ java.lang.String, scala.Unit]
   ): this.type = js.native
@@ -65,7 +65,7 @@ class Worker protected ()
     cb: js.Function3[/* queue */ java.lang.String, /* job */ Job[_], /* result */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("once")
-  def once_cleaning_worker(
+  def once_cleaningworker(
     event: nodeDashResqueLib.nodeDashResqueLibStrings.cleaning_worker,
     cb: js.Function2[/* worker */ java.lang.String, /* pid */ java.lang.String, scala.Unit]
   ): this.type = js.native

@@ -12,35 +12,53 @@ trait Anon_Get extends js.Object {
   @JSName("is")
   var is_Original: typpyLib.typpyMod.CompareFn = js.native
   def get(): scala.Unit = js.native
-  def get(input: js.UndefOr[scala.Nothing], asString: typpyLib.typpyLibNumbers.`false`): scala.Unit = js.native
-  def get(input: js.UndefOr[scala.Nothing], asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.undefined = js.native
   def get(input: java.lang.String): stdLib.StringConstructor = js.native
-  def get(input: java.lang.String, asString: typpyLib.typpyLibNumbers.`false`): stdLib.StringConstructor = js.native
-  def get(input: java.lang.String, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.string = js.native
    // tslint:disable-line:ban-types
   def get(input: js.Any): typpyLib.typpyMod.ConstructorFn = js.native
-  def get(input: js.Any, asString: typpyLib.typpyLibNumbers.`false`): typpyLib.typpyMod.ConstructorFn = js.native
-   // tslint:disable-line:ban-types
-  def get(input: js.Any, asString: typpyLib.typpyLibNumbers.`true`): java.lang.String = js.native
   def get(input: js.Array[_]): stdLib.ArrayConstructor = js.native
-  def get(input: js.Array[_], asString: typpyLib.typpyLibNumbers.`false`): stdLib.ArrayConstructor = js.native
-  def get(input: js.Array[_], asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.array = js.native
   def get(input: js.Function): stdLib.FunctionConstructor = js.native
-  def get(input: js.Function, asString: typpyLib.typpyLibNumbers.`false`): stdLib.FunctionConstructor = js.native
-  def get(input: js.Function, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.function = js.native
   def get(input: scala.Boolean): stdLib.BooleanConstructor = js.native
-  def get(input: scala.Boolean, asString: typpyLib.typpyLibNumbers.`false`): stdLib.BooleanConstructor = js.native
-  def get(input: scala.Boolean, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.boolean = js.native
   def get(input: scala.Double): stdLib.NumberConstructor | scala.Double = js.native
-  def get(input: scala.Double, asString: typpyLib.typpyLibNumbers.`false`): stdLib.NumberConstructor | scala.Double = js.native
-  def get(input: scala.Double, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.number | typpyLib.typpyLibStrings.nan = js.native
-  def get(input: scala.Null, asString: typpyLib.typpyLibNumbers.`false`): scala.Null = js.native
-  def get(input: scala.Null, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.`null` = js.native
   def get(input: stdLib.RegExp): stdLib.RegExpConstructor = js.native
-  def get(input: stdLib.RegExp, asString: typpyLib.typpyLibNumbers.`false`): stdLib.RegExpConstructor = js.native
-  def get(input: stdLib.RegExp, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.regexp = js.native
   @JSName("get")
   def get_Null(): scala.Null = js.native
+  @JSName("get")
+  def get_false(input: js.UndefOr[scala.Nothing], asString: typpyLib.typpyLibNumbers.`false`): scala.Unit = js.native
+  @JSName("get")
+  def get_false(input: java.lang.String, asString: typpyLib.typpyLibNumbers.`false`): stdLib.StringConstructor = js.native
+  @JSName("get")
+  def get_false(input: js.Any, asString: typpyLib.typpyLibNumbers.`false`): typpyLib.typpyMod.ConstructorFn = js.native
+  @JSName("get")
+  def get_false(input: js.Array[_], asString: typpyLib.typpyLibNumbers.`false`): stdLib.ArrayConstructor = js.native
+  @JSName("get")
+  def get_false(input: js.Function, asString: typpyLib.typpyLibNumbers.`false`): stdLib.FunctionConstructor = js.native
+  @JSName("get")
+  def get_false(input: scala.Boolean, asString: typpyLib.typpyLibNumbers.`false`): stdLib.BooleanConstructor = js.native
+  @JSName("get")
+  def get_false(input: scala.Double, asString: typpyLib.typpyLibNumbers.`false`): stdLib.NumberConstructor | scala.Double = js.native
+  @JSName("get")
+  def get_false(input: scala.Null, asString: typpyLib.typpyLibNumbers.`false`): scala.Null = js.native
+  @JSName("get")
+  def get_false(input: stdLib.RegExp, asString: typpyLib.typpyLibNumbers.`false`): stdLib.RegExpConstructor = js.native
+  @JSName("get")
+  def get_true(input: js.UndefOr[scala.Nothing], asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.undefined = js.native
+  @JSName("get")
+  def get_true(input: java.lang.String, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.string = js.native
+   // tslint:disable-line:ban-types
+  @JSName("get")
+  def get_true(input: js.Any, asString: typpyLib.typpyLibNumbers.`true`): java.lang.String = js.native
+  @JSName("get")
+  def get_true(input: js.Array[_], asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.array = js.native
+  @JSName("get")
+  def get_true(input: js.Function, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.function = js.native
+  @JSName("get")
+  def get_true(input: scala.Boolean, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.boolean = js.native
+  @JSName("get")
+  def get_true(input: scala.Double, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.number | typpyLib.typpyLibStrings.nan = js.native
+  @JSName("get")
+  def get_true(input: scala.Null, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.`null` = js.native
+  @JSName("get")
+  def get_true(input: stdLib.RegExp, asString: typpyLib.typpyLibNumbers.`true`): typpyLib.typpyLibStrings.regexp = js.native
   def is(): typpyLib.typpyLibNumbers.`true` = js.native
   def is(input: java.lang.String, compareTo: stdLib.StringConstructor): typpyLib.typpyLibNumbers.`true` = js.native
   def is(input: js.Any, compareTo: js.Any): scala.Boolean = js.native

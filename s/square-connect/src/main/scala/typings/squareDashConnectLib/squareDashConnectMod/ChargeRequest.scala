@@ -24,13 +24,11 @@ class ChargeRequest () extends js.Object {
     */
   var amount_money: Money = js.native
   /**
-    * The buyer's billing address. This value is optional, but this transaction is ineligible for chargeback protection
-    * if neither this parameter nor `shipping_address` is provided.
+    * The buyer's billing address.
     */
   var billing_address: js.UndefOr[Address] = js.native
   /**
-    * The buyer's email address, if available. This value is optional, but this transaction is ineligible for
-    * chargeback protection if it is not provided.
+    * The buyer's email address, if available.
     */
   var buyer_email_address: js.UndefOr[java.lang.String] = js.native
   /**
@@ -61,6 +59,9 @@ class ChargeRequest () extends js.Object {
     * without worrying about double-charging the buyer. See [Idempotency](/basics/api101/idempotency) for more information.
     */
   var idempotency_key: java.lang.String = js.native
+  /**
+    * An optional note to associate with the transaction. This value cannot exceed 60 characters.
+    */
   var note: js.UndefOr[java.lang.String] = js.native
   /**
     * The ID of the order to associate with this transaction. If you provide this value, the `amount_money` value of
@@ -73,8 +74,7 @@ class ChargeRequest () extends js.Object {
     */
   var reference_id: js.UndefOr[java.lang.String] = js.native
   /**
-    * The buyer's shipping address, if available. This value is optional, but this transaction is ineligible for
-    * chargeback protection if neither this parameter nor `billing_address` is provided.
+    * The buyer's shipping address, if available.
     */
   var shipping_address: js.UndefOr[Address] = js.native
 }

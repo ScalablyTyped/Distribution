@@ -13,34 +13,34 @@ trait MousePosition
   /* protected */ def handleMouseMove(event: olLib.eventsEventMod.default): scala.Unit = js.native
   /* protected */ def handleMouseOut(event: olLib.eventsEventMod.default): scala.Unit = js.native
   @JSName("on")
-  def `on_change:coordinateFormat`(
+  def on_changecoordinateFormat(
     `type`: olLib.olLibStrings.`change:coordinateFormat`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("on")
-  def `on_change:projection`(
+  def on_changeprojection(
     `type`: olLib.olLibStrings.`change:projection`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:coordinateFormat`(
+  def once_changecoordinateFormat(
     `type`: olLib.olLibStrings.`change:coordinateFormat`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   @JSName("once")
-  def `once_change:projection`(
+  def once_changeprojection(
     `type`: olLib.olLibStrings.`change:projection`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): olLib.eventsMod.EventsKey = js.native
   def setCoordinateFormat(format: olLib.coordinateMod.CoordinateFormat): scala.Unit = js.native
   def setProjection(projection: olLib.projMod.ProjectionLike): scala.Unit = js.native
   @JSName("un")
-  def `un_change:coordinateFormat`(
+  def un_changecoordinateFormat(
     `type`: olLib.olLibStrings.`change:coordinateFormat`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("un")
-  def `un_change:projection`(
+  def un_changeprojection(
     `type`: olLib.olLibStrings.`change:projection`,
     listener: js.Function1[/* evt */ olLib.objectMod.ObjectEvent, scala.Unit]
   ): scala.Unit = js.native

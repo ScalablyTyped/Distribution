@@ -2850,18 +2850,12 @@ object ^ extends js.Object {
   def labeledStatement(label: Identifier): LabeledStatement = js.native
   def labeledStatement(label: Identifier, body: Statement): LabeledStatement = js.native
   def logicalExpression(): LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_&&`(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`): LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_&&`(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`, left: Expression): LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_&&`(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`, left: Expression, right: Expression): LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_||`(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`): LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_||`(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`, left: Expression): LogicalExpression = js.native
-  @JSName("logicalExpression")
-  def `logicalExpression_||`(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`, left: Expression, right: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`): LogicalExpression = js.native
+  def logicalExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`, left: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`&&`, left: Expression, right: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`): LogicalExpression = js.native
+  def logicalExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`, left: Expression): LogicalExpression = js.native
+  def logicalExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`||`, left: Expression, right: Expression): LogicalExpression = js.native
   def memberExpression(): MemberExpression = js.native
   def memberExpression(`object`: Expression): MemberExpression = js.native
   def memberExpression(`object`: Expression, property: Expression): MemberExpression = js.native
@@ -3058,53 +3052,45 @@ object ^ extends js.Object {
   def typeofTypeAnnotation(): TypeofTypeAnnotation = js.native
   def typeofTypeAnnotation(argument: FlowTypeAnnotation): TypeofTypeAnnotation = js.native
   def unaryExpression(): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_!`(operator: babelDashTypesLib.babelDashTypesLibStrings.`!`): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_!`(operator: babelDashTypesLib.babelDashTypesLibStrings.`!`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_!`(
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`!`): UnaryExpression = js.native
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`!`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`!`,
     argument: Expression,
     prefix: scala.Boolean
   ): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_+`(operator: babelDashTypesLib.babelDashTypesLibStrings.`+`): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_+`(operator: babelDashTypesLib.babelDashTypesLibStrings.`+`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_+`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`+`,
-    argument: Expression,
-    prefix: scala.Boolean
-  ): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_++`(
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`): UnaryExpression = js.native
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`++`,
     argument: Expression,
     prefix: scala.Boolean
   ): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_-`(operator: babelDashTypesLib.babelDashTypesLibStrings.`-`): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_-`(operator: babelDashTypesLib.babelDashTypesLibStrings.`-`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_-`(
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`+`): UnaryExpression = js.native
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`+`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(
+    operator: babelDashTypesLib.babelDashTypesLibStrings.`+`,
+    argument: Expression,
+    prefix: scala.Boolean
+  ): UnaryExpression = js.native
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`): UnaryExpression = js.native
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(
+    operator: babelDashTypesLib.babelDashTypesLibStrings.`--`,
+    argument: Expression,
+    prefix: scala.Boolean
+  ): UnaryExpression = js.native
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`-`): UnaryExpression = js.native
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`-`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`-`,
     argument: Expression,
     prefix: scala.Boolean
   ): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_--`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`--`,
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`~`): UnaryExpression = js.native
+  def unaryExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`~`, argument: Expression): UnaryExpression = js.native
+  def unaryExpression(
+    operator: babelDashTypesLib.babelDashTypesLibStrings.`~`,
     argument: Expression,
     prefix: scala.Boolean
   ): UnaryExpression = js.native
@@ -3138,35 +3124,19 @@ object ^ extends js.Object {
     argument: Expression,
     prefix: scala.Boolean
   ): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_~`(operator: babelDashTypesLib.babelDashTypesLibStrings.`~`): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_~`(operator: babelDashTypesLib.babelDashTypesLibStrings.`~`, argument: Expression): UnaryExpression = js.native
-  @JSName("unaryExpression")
-  def `unaryExpression_~`(
-    operator: babelDashTypesLib.babelDashTypesLibStrings.`~`,
-    argument: Expression,
-    prefix: scala.Boolean
-  ): UnaryExpression = js.native
   def unionTypeAnnotation(): UnionTypeAnnotation = js.native
   def unionTypeAnnotation(types: js.Array[FlowTypeAnnotation]): UnionTypeAnnotation = js.native
   def updateExpression(): UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`): UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_++`(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`, argument: Expression): UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_++`(
+  def updateExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`): UpdateExpression = js.native
+  def updateExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`++`, argument: Expression): UpdateExpression = js.native
+  def updateExpression(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`++`,
     argument: Expression,
     prefix: scala.Boolean
   ): UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`): UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_--`(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`, argument: Expression): UpdateExpression = js.native
-  @JSName("updateExpression")
-  def `updateExpression_--`(
+  def updateExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`): UpdateExpression = js.native
+  def updateExpression(operator: babelDashTypesLib.babelDashTypesLibStrings.`--`, argument: Expression): UpdateExpression = js.native
+  def updateExpression(
     operator: babelDashTypesLib.babelDashTypesLibStrings.`--`,
     argument: Expression,
     prefix: scala.Boolean

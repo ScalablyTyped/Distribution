@@ -47,6 +47,10 @@ trait CreateProjectInput extends js.Object {
     */
   var secondaryArtifacts: js.UndefOr[ProjectArtifactsList] = js.undefined
   /**
+    *  An array of ProjectSourceVersion objects. If secondarySourceVersions is specified at the build level, then they take precedence over these secondarySourceVersions (at the project level). 
+    */
+  var secondarySourceVersions: js.UndefOr[ProjectSecondarySourceVersions] = js.undefined
+  /**
     *  An array of ProjectSource objects. 
     */
   var secondarySources: js.UndefOr[ProjectSources] = js.undefined
@@ -58,6 +62,10 @@ trait CreateProjectInput extends js.Object {
     * Information about the build input source code for the build project.
     */
   var source: ProjectSource
+  /**
+    *  A version of the build input to be built for this project. If not specified, the latest version is used. If specified, it must be one of:    For AWS CodeCommit: the commit ID to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.    If sourceVersion is specified at the build level, then that version takes precedence over this sourceVersion (at the project level).   For more information, see Source Version Sample with CodeBuild in the AWS CodeBuild User Guide. 
+    */
+  var sourceVersion: js.UndefOr[String] = js.undefined
   /**
     * A set of tags for this build project. These tags are available for use by AWS services that support AWS CodeBuild build project tags.
     */
@@ -87,7 +95,9 @@ object CreateProjectInput {
     logsConfig: LogsConfig = null,
     queuedTimeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
     secondaryArtifacts: ProjectArtifactsList = null,
+    secondarySourceVersions: ProjectSecondarySourceVersions = null,
     secondarySources: ProjectSources = null,
+    sourceVersion: String = null,
     tags: TagList = null,
     timeoutInMinutes: js.UndefOr[TimeOut] = js.undefined,
     vpcConfig: VpcConfig = null
@@ -100,7 +110,9 @@ object CreateProjectInput {
     if (logsConfig != null) __obj.updateDynamic("logsConfig")(logsConfig)
     if (!js.isUndefined(queuedTimeoutInMinutes)) __obj.updateDynamic("queuedTimeoutInMinutes")(queuedTimeoutInMinutes)
     if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts)
+    if (secondarySourceVersions != null) __obj.updateDynamic("secondarySourceVersions")(secondarySourceVersions)
     if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources)
+    if (sourceVersion != null) __obj.updateDynamic("sourceVersion")(sourceVersion)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     if (!js.isUndefined(timeoutInMinutes)) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
     if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig)

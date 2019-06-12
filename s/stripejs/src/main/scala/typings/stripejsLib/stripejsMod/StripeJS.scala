@@ -54,7 +54,7 @@ trait StripeJS extends js.Object {
   def createToken(element: stripejsLib.elementMod.StripeElement, data: stripejsLib.tokenMod.IBANTokenData): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
   def createToken(element: stripejsLib.elementMod.StripeElement, data: stripejsLib.tokenMod.TokenData): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
   @JSName("createToken")
-  def createToken_bank_account(`type`: stripejsLib.stripejsLibStrings.bank_account, data: stripejsLib.tokenMod.BankTokenData): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
+  def createToken_bankaccount(`type`: stripejsLib.stripejsLibStrings.bank_account, data: stripejsLib.tokenMod.BankTokenData): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
   @JSName("createToken")
   def createToken_pii(`type`: stripejsLib.stripejsLibStrings.pii, data: stripejsLib.tokenMod.PiiTokenData): js.Promise[stripejsLib.tokenMod.TokenResult] = js.native
   /**
