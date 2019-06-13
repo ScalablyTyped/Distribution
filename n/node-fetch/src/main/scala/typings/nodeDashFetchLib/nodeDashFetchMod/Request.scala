@@ -15,7 +15,9 @@ class Request protected () extends Body {
   def this(input: nodeDashFetchLib.Anon_Href, init: RequestInit) = this()
   def this(input: Request, init: RequestInit) = this()
   // node-fetch extensions to the whatwg/fetch spec
-  var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.native
+  var agent: js.UndefOr[
+    nodeLib.httpMod.Agent | (js.Function1[/* parsedUrl */ nodeLib.urlMod.URL, nodeLib.httpMod.Agent])
+  ] = js.native
   var compress: scala.Boolean = js.native
   var context: RequestContext = js.native
   var counter: scala.Double = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ResourceOptions extends js.Object {
   /**
-    * An optional list of aliases to treat this resoruce as matching.
+    * An optional list of aliases to treat this resource as matching.
     */
   var aliases: js.UndefOr[js.Array[atPulumiPulumiLib.outputMod.Input[URN | Alias]]] = js.undefined
   /**
@@ -33,6 +33,14 @@ trait ResourceOptions extends js.Object {
     */
   var protect: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * An optional provider to use for this resource's CRUD operations. If no provider is supplied,
+    * the default provider for the resource's package will be used. The default provider is pulled
+    * from the parent's provider bag (see also ComponentResourceOptions.providers).
+    *
+    * If this is a [ComponentResourceOptions] do not provide both [provider] and [providers]
+    */
+  var provider: js.UndefOr[ProviderResource] = js.undefined
+  /**
     * An optional version, corresponding to the version of the provider plugin that should be used when operating on
     * this resource. This version overrides the version information inferred from the current package and should
     * rarely be used.
@@ -49,6 +57,7 @@ object ResourceOptions {
     ignoreChanges: js.Array[java.lang.String] = null,
     parent: Resource = null,
     protect: js.UndefOr[scala.Boolean] = js.undefined,
+    provider: ProviderResource = null,
     version: java.lang.String = null
   ): ResourceOptions = {
     val __obj = js.Dynamic.literal()
@@ -58,6 +67,7 @@ object ResourceOptions {
     if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[ResourceOptions]
   }

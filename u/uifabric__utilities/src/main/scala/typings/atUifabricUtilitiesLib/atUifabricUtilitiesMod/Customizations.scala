@@ -14,7 +14,7 @@ class Customizations ()
 @JSImport("@uifabric/utilities", "Customizations")
 @js.native
 object Customizations extends js.Object {
-  var _raiseChange: js.Any = js.native
+  /* private */ def _raiseChange(): js.Any = js.native
   def applyScopedSettings(
     scopeName: java.lang.String,
     settings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings

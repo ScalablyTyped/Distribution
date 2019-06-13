@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-photo-view"
-version := "1.5-dt-20190212Z-239175"
+version := "1.5-dt-20190212Z-57c18b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.5-3bfbc5",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190417Z-4b3bf2",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190528Z-62c565",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190611Z-33e148",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190612Z-2d22f1",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

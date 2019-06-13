@@ -54,6 +54,56 @@ package object reactDashReduxMod {
     TMergedProps
   ]
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
+  type ResolveArrayThunks[TDispatchProps /* <: js.Array[_] */] = js.Array[HandleThunkActionCreator[js.Any]] | (js.Tuple2[HandleThunkActionCreator[js.Any], HandleThunkActionCreator[js.Any]]) | (js.Tuple3[
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any]
+  ]) | (js.Tuple4[
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any]
+  ]) | (js.Tuple5[
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any]
+  ]) | (js.Tuple6[
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any]
+  ]) | (js.Tuple7[
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any]
+  ]) | (js.Tuple8[
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any]
+  ]) | (js.Tuple9[
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any], 
+    HandleThunkActionCreator[js.Any]
+  ])
   type ResolveThunks[TDispatchProps] = TDispatchProps | (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ C in keyof TDispatchProps ]: react-redux.react-redux.HandleThunkActionCreator<TDispatchProps[C]>}
     */ reactDashReduxLib.reactDashReduxLibStrings.ResolveThunks with TDispatchProps)
@@ -66,4 +116,9 @@ package object reactDashReduxMod {
   type Shared[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
     */ reactDashReduxLib.reactDashReduxLibStrings.Shared with js.Any
+  type TypedUseSelectorHook[TState] = js.Function2[
+    /* selector */ js.Function1[/* state */ TState, js.Any], 
+    /* equalityFn */ js.UndefOr[js.Function2[/* left */ js.Any, /* right */ js.Any, scala.Boolean]], 
+    js.Any
+  ]
 }

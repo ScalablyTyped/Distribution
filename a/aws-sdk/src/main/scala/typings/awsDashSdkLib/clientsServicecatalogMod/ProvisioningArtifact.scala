@@ -15,6 +15,10 @@ trait ProvisioningArtifact extends js.Object {
     */
   var Description: js.UndefOr[ProvisioningArtifactDescription] = js.undefined
   /**
+    * Information set by the administrator to provide guidance to end users about which provisioning artifacts to use.
+    */
+  var Guidance: js.UndefOr[ProvisioningArtifactGuidance] = js.undefined
+  /**
     * The identifier of the provisioning artifact.
     */
   var Id: js.UndefOr[Id] = js.undefined
@@ -29,12 +33,14 @@ object ProvisioningArtifact {
   def apply(
     CreatedTime: ProvisioningArtifactCreatedTime = null,
     Description: ProvisioningArtifactDescription = null,
+    Guidance: ProvisioningArtifactGuidance = null,
     Id: Id = null,
     Name: ProvisioningArtifactName = null
   ): ProvisioningArtifact = {
     val __obj = js.Dynamic.literal()
     if (CreatedTime != null) __obj.updateDynamic("CreatedTime")(CreatedTime)
     if (Description != null) __obj.updateDynamic("Description")(Description)
+    if (Guidance != null) __obj.updateDynamic("Guidance")(Guidance.asInstanceOf[js.Any])
     if (Id != null) __obj.updateDynamic("Id")(Id)
     if (Name != null) __obj.updateDynamic("Name")(Name)
     __obj.asInstanceOf[ProvisioningArtifact]

@@ -43,6 +43,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Ard Timmerman <https://github.com/confususs>,
 //                 Julian Gonggrijp <https://github.com/jgonggrijp>,
 //                 Florian Keller <https://github.com/ffflorian>
+//                 Regev Brody <https://github.com/regevbr>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 

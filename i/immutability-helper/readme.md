@@ -1,7 +1,7 @@
 
 # Scala.js typings for immutability-helper
 
-Typings are for version 3.0.0
+Typings are for version 3.0.1
 
 ## Library description:
 mutate a copy of data without changing the original source

@@ -14,6 +14,10 @@ trait IInvoiceUpcomingOptions
     */
   var coupon: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The identifier of the customer whose upcoming invoice you’d like to retrieve. REQUIRED IF SUBSCRIPTION UNSET
+    */
+  var customer: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The identifier of the subscription for which you’d like to retrieve the upcoming invoice. If not provided, but a subscription_plan
     * is provided, you will preview creating a subscription to that plan. If neither subscription nor subscription_plan is provided, you
     * will retrieve the next upcoming invoice from among the customer’s subscriptions.
@@ -53,6 +57,7 @@ object IInvoiceUpcomingOptions {
   @scala.inline
   def apply(
     coupon: java.lang.String = null,
+    customer: java.lang.String = null,
     expand: js.Array[java.lang.String] = null,
     include: js.Array[java.lang.String] = null,
     subscription: java.lang.String = null,
@@ -64,6 +69,7 @@ object IInvoiceUpcomingOptions {
   ): IInvoiceUpcomingOptions = {
     val __obj = js.Dynamic.literal()
     if (coupon != null) __obj.updateDynamic("coupon")(coupon)
+    if (customer != null) __obj.updateDynamic("customer")(customer)
     if (expand != null) __obj.updateDynamic("expand")(expand)
     if (include != null) __obj.updateDynamic("include")(include)
     if (subscription != null) __obj.updateDynamic("subscription")(subscription)

@@ -113,6 +113,21 @@ trait IInvoice
   var custom_fields: js.Array[ICustomField]
   var customer: java.lang.String | stripeLib.stripeMod.customersNs.ICustomer
   /**
+    * The customer’s email. Until the invoice is finalized, this field will equal customer.email.
+    * Once the invoice is finalized, this field will no longer be updated.
+    */
+  var customer_email: java.lang.String
+  /**
+    * The customer’s name. Until the invoice is finalized, this field will equal customer.name.
+    * Once the invoice is finalized, this field will no longer be updated.
+    */
+  var customer_name: java.lang.String
+  /**
+    * The customer’s phone number. Until the invoice is finalized, this field will equal customer.phone.
+    * Once the invoice is finalized, this field will no longer be updated.
+    */
+  var customer_phone: java.lang.String
+  /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
   var date: scala.Double
@@ -284,6 +299,9 @@ object IInvoice {
     currency: java.lang.String,
     custom_fields: js.Array[ICustomField],
     customer: java.lang.String | stripeLib.stripeMod.customersNs.ICustomer,
+    customer_email: java.lang.String,
+    customer_name: java.lang.String,
+    customer_phone: java.lang.String,
     date: scala.Double,
     default_source: java.lang.String,
     description: java.lang.String,
@@ -319,7 +337,7 @@ object IInvoice {
     tax: scala.Int | scala.Double = null,
     tax_percent: scala.Int | scala.Double = null
   ): IInvoice = {
-    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], date = date, default_source = default_source, description = description, footer = footer, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, webhooks_delivered_at = webhooks_delivered_at)
+    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, application_fee_amount = application_fee_amount, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, created = created, currency = currency, custom_fields = custom_fields, customer = customer.asInstanceOf[js.Any], customer_email = customer_email, customer_name = customer_name, customer_phone = customer_phone, date = date, default_source = default_source, description = description, footer = footer, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any], status_transitions = status_transitions, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, threshold_reason = threshold_reason, total = total, webhooks_delivered_at = webhooks_delivered_at)
     __obj.updateDynamic("object")(`object`)
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])

@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "sinon-chai"
-version := "3.2.0-dt-20190322Z-ea1391"
+version := "3.2.0-dt-20190322Z-a26a00"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.0.0",
-  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190525Z-046356",
+  "org.scalablytyped" %%% "sinon" % "7.0-dt-20190612Z-046356",
   "org.scalablytyped" %%% "std" % "3.5-c5d119")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -19,6 +19,10 @@ class App protected () extends js.Object {
   def database(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.databaseNs.Database = js.native
   def firestore(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.Firestore = js.native
   def functions(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.Functions = js.native
+  def functions(appOrRegion: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.Functions = js.native
+  def functions(appOrRegion: java.lang.String, region: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.Functions = js.native
+  def functions(appOrRegion: App): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.Functions = js.native
+  def functions(appOrRegion: App, region: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.Functions = js.native
   def iid(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.iidNs.InstanceId = js.native
   // invites(): RNFirebase.invites.Invites;
   def links(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.linksNs.Links = js.native

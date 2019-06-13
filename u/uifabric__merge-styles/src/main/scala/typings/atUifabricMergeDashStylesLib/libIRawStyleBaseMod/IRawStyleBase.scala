@@ -221,11 +221,11 @@ trait IRawStyleBase extends IRawFontStyle {
   /**
     * Defines the shape of the border of the bottom-left corner.
     */
-  var borderBottomLeftRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
+  var borderBottomLeftRadius: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
   /**
     * Defines the shape of the border of the bottom-right corner.
     */
-  var borderBottomRightRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
+  var borderBottomRightRadius: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
   /**
     * Sets the line style of the bottom border of a box.
     */
@@ -359,11 +359,11 @@ trait IRawStyleBase extends IRawFontStyle {
   /**
     * Sets the rounding of the top-left corner of the element.
     */
-  var borderTopLeftRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
+  var borderTopLeftRadius: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
   /**
     * Sets the rounding of the top-right corner of the element.
     */
-  var borderTopRightRadius: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
+  var borderTopRightRadius: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
   /**
     * Sets the style of an element's top border. To set all four borders, use the
     * shorthand property, border-style. Otherwise, you can set the borders individually
@@ -1626,8 +1626,8 @@ object IRawStyleBase {
     border: ICSSRule | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`0` | java.lang.String = null,
     borderBottom: ICSSRule | ICSSPixelUnitRule = null,
     borderBottomColor: ICSSRule | java.lang.String = null,
-    borderBottomLeftRadius: ICSSRule | ICSSPixelUnitRule = null,
-    borderBottomRightRadius: ICSSRule | ICSSPixelUnitRule = null,
+    borderBottomLeftRadius: ICSSRule | java.lang.String = null,
+    borderBottomRightRadius: ICSSRule | java.lang.String = null,
     borderBottomStyle: ICSSRule | java.lang.String = null,
     borderBottomWidth: ICSSRule | ICSSPixelUnitRule = null,
     borderCollapse: ICSSRule | java.lang.String = null,
@@ -1648,8 +1648,8 @@ object IRawStyleBase {
     borderStyle: ICSSRule | java.lang.String = null,
     borderTop: ICSSRule | ICSSPixelUnitRule = null,
     borderTopColor: ICSSRule | java.lang.String = null,
-    borderTopLeftRadius: ICSSRule | ICSSPixelUnitRule = null,
-    borderTopRightRadius: ICSSRule | ICSSPixelUnitRule = null,
+    borderTopLeftRadius: ICSSRule | java.lang.String = null,
+    borderTopRightRadius: ICSSRule | java.lang.String = null,
     borderTopStyle: ICSSRule | java.lang.String = null,
     borderTopWidth: ICSSRule | ICSSPixelUnitRule = null,
     borderWidth: ICSSRule | ICSSPixelUnitRule = null,

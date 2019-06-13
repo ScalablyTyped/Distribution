@@ -60,6 +60,11 @@ trait VictoryAreaProps
     */
   var interpolation: js.UndefOr[InterpolationPropType] = js.undefined
   /**
+    * The labels prop defines the labels that will appear above each point.
+    * This prop should be given as an array or as a function of data.
+    */
+  var labels: js.UndefOr[(js.Array[scala.Double | java.lang.String]) | js.Function] = js.undefined
+  /**
     * The samples prop specifies how many individual points to plot when plotting
     * y as a function of x. Samples is ignored if x props are provided instead.
     * @default 50
@@ -96,6 +101,7 @@ object VictoryAreaProps {
     interpolation: InterpolationPropType = null,
     label: java.lang.String | victoryLib.Fn_DataAnyString = null,
     labelComponent: reactLib.reactMod.ReactElement[_] = null,
+    labels: (js.Array[scala.Double | java.lang.String]) | js.Function = null,
     name: java.lang.String = null,
     padding: PaddingProps = null,
     samples: scala.Int | scala.Double = null,
@@ -122,6 +128,7 @@ object VictoryAreaProps {
     if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     if (samples != null) __obj.updateDynamic("samples")(samples.asInstanceOf[js.Any])

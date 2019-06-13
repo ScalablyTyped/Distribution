@@ -71,6 +71,8 @@ trait Config extends js.Object {
   var showTips: scala.Boolean
   /** no interactivity, for export or image generation */
   var staticPlot: scala.Boolean
+  /** override the defaults for the toImageButton */
+  var toImageButtonOptions: stdLib.Partial[plotlyDotJsLib.Anon_Filename]
   /** URL to topojson files used in geo charts */
   var topojsonURL: java.lang.String
   /**
@@ -111,9 +113,10 @@ object Config {
     showSources: scala.Boolean,
     showTips: scala.Boolean,
     staticPlot: scala.Boolean,
+    toImageButtonOptions: stdLib.Partial[plotlyDotJsLib.Anon_Filename],
     topojsonURL: java.lang.String
   ): Config = {
-    val __obj = js.Dynamic.literal(autosizable = autosizable, displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo, doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable, edits = edits, fillFrame = fillFrame, frameMargins = frameMargins, globalTransforms = globalTransforms, linkText = linkText, locale = locale, logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken, modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd, modeBarButtonsToRemove = modeBarButtonsToRemove, plotGlPixelRatio = plotGlPixelRatio, queueLength = queueLength, responsive = responsive, scrollZoom = scrollZoom, sendData = sendData, setBackground = js.Any.fromFunction0(setBackground), showAxisDragHandles = showAxisDragHandles, showAxisRangeEntryBoxes = showAxisRangeEntryBoxes, showLink = showLink, showSources = showSources, showTips = showTips, staticPlot = staticPlot, topojsonURL = topojsonURL)
+    val __obj = js.Dynamic.literal(autosizable = autosizable, displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo, doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable, edits = edits, fillFrame = fillFrame, frameMargins = frameMargins, globalTransforms = globalTransforms, linkText = linkText, locale = locale, logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken, modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd, modeBarButtonsToRemove = modeBarButtonsToRemove, plotGlPixelRatio = plotGlPixelRatio, queueLength = queueLength, responsive = responsive, scrollZoom = scrollZoom, sendData = sendData, setBackground = js.Any.fromFunction0(setBackground), showAxisDragHandles = showAxisDragHandles, showAxisRangeEntryBoxes = showAxisRangeEntryBoxes, showLink = showLink, showSources = showSources, showTips = showTips, staticPlot = staticPlot, toImageButtonOptions = toImageButtonOptions, topojsonURL = topojsonURL)
   
     __obj.asInstanceOf[Config]
   }

@@ -2903,7 +2903,15 @@ trait UnderscoreStatic extends js.Object {
     * @keys The key/value pairs to keep on `object`.
     * @return Copy of `object` with only the `keys` properties.
     **/
-  def pick(`object`: js.Any, keys: js.Any*): js.Any = js.native
+  def pick[T, K /* <: java.lang.String */](obj: T, keys: K*): stdLib.Pick[T, K] = js.native
+  def pick[T, K /* <: java.lang.String */](obj: T, keys: js.Array[K]): stdLib.Pick[T, K] = js.native
+  def pick[T, K /* <: java.lang.String */](
+    obj: T,
+    predicate: ObjectIterator[
+      /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any, 
+      scala.Boolean
+    ]
+  ): stdLib.Pick[T, K] = js.native
   def pluck(list: List[_], propertyName: java.lang.String): js.Array[_] = js.native
   /**
     * A convenient version of what is perhaps the most common use-case for map: extracting a list of

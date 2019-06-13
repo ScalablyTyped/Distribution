@@ -26,6 +26,7 @@ object ISubscriptionCreationOptions {
     include: js.Array[java.lang.String] = null,
     items: js.Array[ISubscriptionCreationItem] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
+    pay_immediately: js.UndefOr[scala.Boolean] = js.undefined,
     plan: java.lang.String = null,
     prorate: js.UndefOr[scala.Boolean] = js.undefined,
     quantity: scala.Int | scala.Double = null,
@@ -45,6 +46,7 @@ object ISubscriptionCreationOptions {
     if (include != null) __obj.updateDynamic("include")(include)
     if (items != null) __obj.updateDynamic("items")(items)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (!js.isUndefined(pay_immediately)) __obj.updateDynamic("pay_immediately")(pay_immediately)
     if (plan != null) __obj.updateDynamic("plan")(plan)
     if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate)
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])

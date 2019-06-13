@@ -28,9 +28,12 @@ trait IonItemSliding extends js.Object {
     */
   def getSlidingRatio(): js.Promise[scala.Double] = js.native
   def open(): js.Promise[scala.Unit] = js.native
+  @JSName("open")
+  def open_end(side: atIonicCoreLib.atIonicCoreLibStrings.end): js.Promise[scala.Unit] = js.native
   /**
     * Open the sliding item.
     */
-  def open(side: java.lang.String): js.Promise[scala.Unit] = js.native
+  @JSName("open")
+  def open_start(side: atIonicCoreLib.atIonicCoreLibStrings.start): js.Promise[scala.Unit] = js.native
 }
 

@@ -15,23 +15,22 @@ trait HttpsProxyOptions extends ProxyOptions {
 object HttpsProxyOptions {
   @scala.inline
   def apply(
-    headers: org.scalablytyped.runtime.StringDictionary[js.Any],
+    host: java.lang.String,
+    port: scala.Double,
     ca: js.Array[nodeLib.Buffer] = null,
     cert: nodeLib.Buffer = null,
-    host: java.lang.String = null,
+    headers: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     key: nodeLib.Buffer = null,
     localAddress: java.lang.String = null,
-    port: scala.Int | scala.Double = null,
     proxyAuth: java.lang.String = null,
     servername: java.lang.String = null
   ): HttpsProxyOptions = {
-    val __obj = js.Dynamic.literal(headers = headers)
+    val __obj = js.Dynamic.literal(host = host, port = port)
     if (ca != null) __obj.updateDynamic("ca")(ca)
     if (cert != null) __obj.updateDynamic("cert")(cert)
-    if (host != null) __obj.updateDynamic("host")(host)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
     if (key != null) __obj.updateDynamic("key")(key)
     if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (proxyAuth != null) __obj.updateDynamic("proxyAuth")(proxyAuth)
     if (servername != null) __obj.updateDynamic("servername")(servername)
     __obj.asInstanceOf[HttpsProxyOptions]

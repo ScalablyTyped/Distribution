@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ProgressBarAndroidProps extends ViewProps {
   /**
+    * Whether to show the ProgressBar (true, the default) or hide it (false).
+    */
+  var animating: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Color of the progress bar.
     */
   var color: js.UndefOr[java.lang.String] = js.undefined
@@ -49,6 +53,7 @@ object ProgressBarAndroidProps {
     accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
     accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
     accessible: js.UndefOr[scala.Boolean] = js.undefined,
+    animating: js.UndefOr[scala.Boolean] = js.undefined,
     collapsable: js.UndefOr[scala.Boolean] = js.undefined,
     color: java.lang.String = null,
     hasTVPreferredFocus: js.UndefOr[scala.Boolean] = js.undefined,
@@ -106,6 +111,7 @@ object ProgressBarAndroidProps {
     if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
     if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
     if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
+    if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating)
     if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus)

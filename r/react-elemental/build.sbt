@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-elemental"
-version := "1.2-dt-20190528Z-46ef9b"
+version := "1.2-dt-20190612Z-d30c85"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

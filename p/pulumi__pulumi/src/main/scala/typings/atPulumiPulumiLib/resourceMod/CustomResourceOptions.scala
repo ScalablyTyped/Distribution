@@ -17,12 +17,6 @@ trait CustomResourceOptions extends ResourceOptions {
     * is created when replacement is necessary.
     */
   var deleteBeforeReplace: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * An optional provider to use for this resource's CRUD operations. If no provider is supplied, the default
-    * provider for the resource's package will be used. The default provider is pulled from the parent's
-    * provider bag (see also ComponentResourceOptions.providers).
-    */
-  var provider: js.UndefOr[ProviderResource] = js.undefined
 }
 
 object CustomResourceOptions {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-redux
 
-Typings are for version 7.0
+Typings are for version 7.1
 
 ## Library description:
 Official React bindings for Redux
@@ -35,7 +35,7 @@ See [the main readme](../../readme.md) for instructions.
 
 These comments are from the typescript definitions and might be useful:
 ```
-// Type definitions for react-redux 7.0
+// Type definitions for react-redux 7.1
 // Project: https://github.com/reduxjs/react-redux
 // Definitions by: Qubo <https://github.com/tkqubo>,
 //                 Kenzie Togami <https://github.com/kenzierocks>,
@@ -49,6 +49,7 @@ These comments are from the typescript definitions and might be useful:
 //                 Anatoli Papirovski <https://github.com/apapirovski>
 //                 Boris Sergeyev <https://github.com/surgeboris>
 //                 Søren Bruus Frank <https://github.com/soerenbf>
+//                 Jonathan Ziller <https://github.com/mrwolfz>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.0
 // Known Issue:
@@ -57,10 +58,6 @@ These comments are from the typescript definitions and might be useful:
 // you will see a bunch of errors from TypeScript. The current workaround is to use connect() as a function call on
 // a separate line instead of as a decorator. Discussed in this github issue:
 // https://github.com/DefinitelyTyped/DefinitelyTyped/issues/20796
-// NOTE about the wrong react-redux version in the header comment:
-// The actual react-redux version is not 6.0.0, but we had to increase the major version
-// to update this type definitions for redux@4.x from redux@3.x.
-// https://github.com/DefinitelyTyped/DefinitelyTyped/issues/25321
 
 ```
 

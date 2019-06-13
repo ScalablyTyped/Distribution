@@ -57,9 +57,9 @@ trait IonSearchbar extends js.Object {
     */
   var searchIcon: java.lang.String
   /**
-    * If `true`, show the cancel button.
+    * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
     */
-  var showCancelButton: scala.Boolean
+  var showCancelButton: scala.Boolean | java.lang.String
   /**
     * If `true`, enable spellcheck on the input.
     */
@@ -97,14 +97,14 @@ object IonSearchbar {
     placeholder: java.lang.String,
     searchIcon: java.lang.String,
     setFocus: () => scala.Unit,
-    showCancelButton: scala.Boolean,
+    showCancelButton: scala.Boolean | java.lang.String,
     spellcheck: scala.Boolean,
     `type`: atIonicCoreLib.atIonicCoreLibStrings.text | atIonicCoreLib.atIonicCoreLibStrings.password | atIonicCoreLib.atIonicCoreLibStrings.email | atIonicCoreLib.atIonicCoreLibStrings.number | atIonicCoreLib.atIonicCoreLibStrings.search | atIonicCoreLib.atIonicCoreLibStrings.tel | atIonicCoreLib.atIonicCoreLibStrings.url,
     clearIcon: java.lang.String = null,
     color: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Color */ js.Any = null,
     value: java.lang.String = null
   ): IonSearchbar = {
-    val __obj = js.Dynamic.literal(animated = animated, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon, cancelButtonText = cancelButtonText, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), mode = mode, placeholder = placeholder, searchIcon = searchIcon, setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton, spellcheck = spellcheck)
+    val __obj = js.Dynamic.literal(animated = animated, autocomplete = autocomplete.asInstanceOf[js.Any], autocorrect = autocorrect.asInstanceOf[js.Any], cancelButtonIcon = cancelButtonIcon, cancelButtonText = cancelButtonText, debounce = debounce, disabled = disabled, getInputElement = js.Any.fromFunction0(getInputElement), mode = mode, placeholder = placeholder, searchIcon = searchIcon, setFocus = js.Any.fromFunction0(setFocus), showCancelButton = showCancelButton.asInstanceOf[js.Any], spellcheck = spellcheck)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon)
     if (color != null) __obj.updateDynamic("color")(color)

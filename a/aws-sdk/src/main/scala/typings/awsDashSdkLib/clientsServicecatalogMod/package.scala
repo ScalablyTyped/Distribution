@@ -195,6 +195,12 @@ package object clientsServicecatalogMod {
   type ProvisioningArtifactCreatedTime = stdLib.Date
   type ProvisioningArtifactDescription = java.lang.String
   type ProvisioningArtifactDetails = js.Array[ProvisioningArtifactDetail]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.DEPRECATED
+    - java.lang.String
+  */
+  type ProvisioningArtifactGuidance = _ProvisioningArtifactGuidance | java.lang.String
   type ProvisioningArtifactInfo = org.scalablytyped.runtime.StringDictionary[ProvisioningArtifactInfoValue]
   type ProvisioningArtifactInfoKey = java.lang.String
   type ProvisioningArtifactInfoValue = java.lang.String

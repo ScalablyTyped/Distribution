@@ -7,9 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait ComponentResourceOptions extends ResourceOptions {
   /**
-    * An optional set of providers to use for child resources. Keyed by package name (e.g. "aws")
+    * An optional set of providers to use for child resources. Either keyed by package name (e.g.
+    * "aws"), or just provided as an array.  In the latter case, the package name will be retrieved
+    * from the provider itself.
+    *
+    * In the case of a single provider, the options can be simplified to just pass along `provider: theProvider`
+    *
+    * Note: do not provide both [provider] and [providers];
     */
-  var providers: js.UndefOr[stdLib.Record[java.lang.String, ProviderResource]] = js.undefined
+  var providers: js.UndefOr[(stdLib.Record[java.lang.String, ProviderResource]) | js.Array[ProviderResource]] = js.undefined
 }
 
 object ComponentResourceOptions {
@@ -21,7 +27,8 @@ object ComponentResourceOptions {
     ignoreChanges: js.Array[java.lang.String] = null,
     parent: Resource = null,
     protect: js.UndefOr[scala.Boolean] = js.undefined,
-    providers: stdLib.Record[java.lang.String, ProviderResource] = null,
+    provider: ProviderResource = null,
+    providers: (stdLib.Record[java.lang.String, ProviderResource]) | js.Array[ProviderResource] = null,
     version: java.lang.String = null
   ): ComponentResourceOptions = {
     val __obj = js.Dynamic.literal()
@@ -31,7 +38,8 @@ object ComponentResourceOptions {
     if (ignoreChanges != null) __obj.updateDynamic("ignoreChanges")(ignoreChanges)
     if (parent != null) __obj.updateDynamic("parent")(parent)
     if (!js.isUndefined(protect)) __obj.updateDynamic("protect")(protect)
-    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[ComponentResourceOptions]
   }

@@ -40,6 +40,13 @@ trait ISubscriptionCustCreationOptions
     */
   var items: js.UndefOr[js.Array[ISubscriptionCreationItem]] = js.undefined
   /**
+    * Boolean (default true). Used to prevent Stripe Invoicing from automatically paying the subscription on creation. This can be set
+    * to false when used with services like Avalara that need to augment an invoice before the subscription is paid.
+    *
+    * Using this flag requires contacting Stripe support in order to have the account whitelisted.
+    */
+  var pay_immediately: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * @deprecated Use items property instead.
     */
   var plan: js.UndefOr[java.lang.String] = js.undefined
@@ -92,6 +99,7 @@ object ISubscriptionCustCreationOptions {
     include: js.Array[java.lang.String] = null,
     items: js.Array[ISubscriptionCreationItem] = null,
     metadata: stripeLib.stripeMod.IOptionsMetadata = null,
+    pay_immediately: js.UndefOr[scala.Boolean] = js.undefined,
     plan: java.lang.String = null,
     prorate: js.UndefOr[scala.Boolean] = js.undefined,
     quantity: scala.Int | scala.Double = null,
@@ -111,6 +119,7 @@ object ISubscriptionCustCreationOptions {
     if (include != null) __obj.updateDynamic("include")(include)
     if (items != null) __obj.updateDynamic("items")(items)
     if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (!js.isUndefined(pay_immediately)) __obj.updateDynamic("pay_immediately")(pay_immediately)
     if (plan != null) __obj.updateDynamic("plan")(plan)
     if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate)
     if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hexo"
-version := "3.8-dt-20190221Z-6381c1"
+version := "3.8-dt-20190221Z-b64cc4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "moment" % "2.24.0-a0c00b",
   "org.scalablytyped" %%% "node" % "12.0-dt-20190611Z-76ef23",
   "org.scalablytyped" %%% "std" % "3.5-c5d119",
-  "org.scalablytyped" %%% "underscore" % "1.8-dt-20190515Z-8a2aa4")
+  "org.scalablytyped" %%% "underscore" % "1.8-dt-20190612Z-08b48f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

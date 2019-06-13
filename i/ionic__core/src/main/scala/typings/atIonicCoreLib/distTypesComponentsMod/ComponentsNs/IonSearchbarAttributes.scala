@@ -97,9 +97,9 @@ trait IonSearchbarAttributes
     */
   var searchIcon: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If `true`, show the cancel button.
+    * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
     */
-  var showCancelButton: js.UndefOr[scala.Boolean] = js.undefined
+  var showCancelButton: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   /**
     * If `true`, enable spellcheck on the input.
     */
@@ -274,7 +274,7 @@ object IonSearchbarAttributes {
     role: java.lang.String = null,
     searchIcon: java.lang.String = null,
     security: java.lang.String = null,
-    showCancelButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showCancelButton: scala.Boolean | java.lang.String = null,
     slot: java.lang.String = null,
     spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
     spellcheck: js.UndefOr[scala.Boolean] = js.undefined,
@@ -441,7 +441,7 @@ object IonSearchbarAttributes {
     if (role != null) __obj.updateDynamic("role")(role)
     if (searchIcon != null) __obj.updateDynamic("searchIcon")(searchIcon)
     if (security != null) __obj.updateDynamic("security")(security)
-    if (!js.isUndefined(showCancelButton)) __obj.updateDynamic("showCancelButton")(showCancelButton)
+    if (showCancelButton != null) __obj.updateDynamic("showCancelButton")(showCancelButton.asInstanceOf[js.Any])
     if (slot != null) __obj.updateDynamic("slot")(slot)
     if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
     if (!js.isUndefined(spellcheck)) __obj.updateDynamic("spellcheck")(spellcheck)

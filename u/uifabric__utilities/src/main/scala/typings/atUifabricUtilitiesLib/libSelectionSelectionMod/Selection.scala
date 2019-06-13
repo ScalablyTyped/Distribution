@@ -12,7 +12,6 @@ class Selection ()
   def this(options: ISelectionOptions) = this()
   var _anchoredIndex: js.Any = js.native
   var _canSelectItem: js.Any = js.native
-  var _change: js.Any = js.native
   var _changeEventSuppressionCount: js.Any = js.native
   var _exemptedCount: js.Any = js.native
   var _exemptedIndices: js.Any = js.native
@@ -25,10 +24,13 @@ class Selection ()
   var _onSelectionChanged: js.Any = js.native
   var _selectedIndices: js.Any = js.native
   var _selectedItems: js.Any = js.native
-  var _setAllSelected: js.Any = js.native
   var _unselectableCount: js.Any = js.native
   var _unselectableIndices: js.Any = js.native
-  var _updateCount: js.Any = js.native
+  /* private */ def _change(): js.Any = js.native
+  /* private */ def _setAllSelected(isAllSelected: js.Any): js.Any = js.native
+  /* private */ def _setAllSelected(isAllSelected: js.Any, preserveModalState: js.Any): js.Any = js.native
+  /* private */ def _updateCount(): js.Any = js.native
+  /* private */ def _updateCount(preserveModalState: js.Any): js.Any = js.native
   def getKey(item: atUifabricUtilitiesLib.libSelectionSelectionDotTypesMod.IObjectWithKey): java.lang.String = js.native
   def getKey(item: atUifabricUtilitiesLib.libSelectionSelectionDotTypesMod.IObjectWithKey, index: scala.Double): java.lang.String = js.native
   @JSName("isModal")

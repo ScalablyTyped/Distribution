@@ -11,7 +11,7 @@ trait ImageProps
   val alt_ImageProps: java.lang.String
   @JSName("height")
   val height_ImageProps: js.UndefOr[java.lang.String] = js.undefined
-  val imgStyle: js.UndefOr[js.Object] = js.undefined
+  val imgStyle: js.UndefOr[reactLib.reactMod.CSSProperties] = js.undefined
   val `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   val showIntermediate: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("width")
@@ -25,7 +25,7 @@ object ImageProps {
     ImgHTMLAttributes: reactLib.reactMod.ImgHTMLAttributes[stdLib.HTMLImageElement] = null,
     color: java.lang.String = null,
     height: java.lang.String = null,
-    imgStyle: js.Object = null,
+    imgStyle: reactLib.reactMod.CSSProperties = null,
     `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
     showIntermediate: js.UndefOr[scala.Boolean] = js.undefined,
     style: reactLib.reactMod.CSSProperties = null,

@@ -60,9 +60,9 @@ trait HTMLIonSearchbarElement
     */
   var searchIcon: java.lang.String = js.native
   /**
-    * If `true`, show the cancel button.
+    * Sets the behavior for the cancel button. Defaults to `"never"`. Setting to `"focus"` shows the cancel button on focus. Setting to `"never"` hides the cancel button. Setting to `"always"` shows the cancel button regardless of focus state.
     */
-  var showCancelButton: scala.Boolean = js.native
+  var showCancelButton: scala.Boolean | java.lang.String = js.native
   /**
     * Set the type of the input.
     */

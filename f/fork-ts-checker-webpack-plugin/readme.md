@@ -1,7 +1,7 @@
 
 # Scala.js typings for fork-ts-checker-webpack-plugin
 
-Typings are for version 1.3.5
+Typings are for version 1.3.6
 
 ## Library description:
 Runs typescript type checker and linter on separate process.

@@ -19,5 +19,6 @@ abstract class ProviderResource protected () extends CustomResource {
   def this(pkg: java.lang.String, name: java.lang.String) = this()
   def this(pkg: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs) = this()
   def this(pkg: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs, opts: ResourceOptions) = this()
+  val pkg: js.Any = js.native
 }
 

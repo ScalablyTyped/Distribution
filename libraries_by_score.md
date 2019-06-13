@@ -265,6 +265,7 @@
 | 0.8379182099793706 | [read-pkg](./r/read-pkg) | Read a package.json file
 | 0.8379002324799575 | [qs](./q/qs) | A querystring parser that supports nesting and arr
 | 0.8378957381519616 | [left-pad](./l/left-pad) | String left pad
+| 0.8376675364227419 | [postcss-load-config](./p/postcss-load-config) | Autoload Config for PostCSS
 | 0.8375302258040763 | [xtend](./x/xtend) | extend like a boss
 | 0.8375218826112727 | [load-json-file](./l/load-json-file) | Read and parse a JSON file
 | 0.837517966685815 | [encodeurl](./e/encodeurl) | Encode a URL to a percent-encoded form, excluding 

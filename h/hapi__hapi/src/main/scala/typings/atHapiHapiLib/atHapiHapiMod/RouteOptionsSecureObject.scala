@@ -9,7 +9,7 @@ trait RouteOptionsSecureObject extends js.Object {
   /**
     * hsts - controls the 'Strict-Transport-Security' header
     */
-  var hsts: js.UndefOr[scala.Boolean | scala.Double | atHapiHapiLib.Anon_IncludeSubdomains] = js.undefined
+  var hsts: js.UndefOr[scala.Boolean | scala.Double | atHapiHapiLib.Anon_IncludeSubDomains] = js.undefined
   /**
     * boolean controlling the 'X-Download-Options' header for Internet Explorer, preventing downloads from executing in your context. Defaults to true setting the header to 'noopen'.
     */
@@ -41,7 +41,7 @@ object RouteOptionsSecureObject {
   @scala.inline
   def apply(
     xss: scala.Boolean,
-    hsts: scala.Boolean | scala.Double | atHapiHapiLib.Anon_IncludeSubdomains = null,
+    hsts: scala.Boolean | scala.Double | atHapiHapiLib.Anon_IncludeSubDomains = null,
     noOpen: js.UndefOr[scala.Boolean] = js.undefined,
     noSniff: js.UndefOr[scala.Boolean] = js.undefined,
     referrer: atHapiHapiLib.atHapiHapiLibNumbers.`false` | ReferrerPolicy = null,

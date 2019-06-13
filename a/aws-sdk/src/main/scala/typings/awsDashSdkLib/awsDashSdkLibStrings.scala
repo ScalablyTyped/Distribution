@@ -5749,6 +5749,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod._Mpeg2Syntax
        with awsDashSdkLib.clientsDaxMod._ParameterType
        with awsDashSdkLib.clientsLightsailMod._PortInfoSourceType
+       with awsDashSdkLib.clientsServicecatalogMod._ProvisioningArtifactGuidance
        with awsDashSdkLib.clientsMediaconvertMod._ScalingBehavior
        with awsDashSdkLib.clientsMedialiveMod._VideoDescriptionScalingBehavior
        with awsDashSdkLib.clientsWorkspacesMod._WorkspaceImageRequiredTenancy
@@ -6094,6 +6095,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DEPRECATED
     extends awsDashSdkLib.clientsIoteventsMod._DetectorModelVersionStatus
+       with awsDashSdkLib.clientsServicecatalogMod._ProvisioningArtifactGuidance
        with awsDashSdkLib.clientsSwfMod._RegistrationStatus
   
   @js.native

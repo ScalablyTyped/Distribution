@@ -3056,8 +3056,6 @@ object resourcesNs extends js.Object {
       id: java.lang.String,
       response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]]
     ): js.Promise[stripeLib.stripeMod.IList[stripeLib.stripeMod.invoicesNs.IInvoiceLineItem]] = js.native
-    def retrieveUpcoming(id: java.lang.String): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
-    def retrieveUpcoming(id: java.lang.String, data: stripeLib.stripeMod.invoicesNs.IInvoiceUpcomingOptions): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     /**
       * At any time, you can preview the upcoming invoice for a customer. This will show you all the charges that are pending,
       * including subscription renewal charges, invoice item charges, etc. It will also show you any discount that is applicable
@@ -3069,7 +3067,19 @@ object resourcesNs extends js.Object {
       * @returns Returns an invoice if a valid customer ID was provided. Throws an error otherwise.
       *
       * @param id The identifier of the customer whose upcoming invoice you'd like to retrieve.
+      * @param data Filtering options
       */
+    def retrieveUpcoming(
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceUpcomingOptions,
+      options: stripeLib.stripeMod.HeaderOptions
+    ): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def retrieveUpcoming(
+      data: stripeLib.stripeMod.invoicesNs.IInvoiceUpcomingOptions,
+      options: stripeLib.stripeMod.HeaderOptions,
+      response: stripeLib.stripeMod.IResponseFn[stripeLib.stripeMod.invoicesNs.IInvoice]
+    ): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def retrieveUpcoming(id: java.lang.String): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
+    def retrieveUpcoming(id: java.lang.String, data: stripeLib.stripeMod.invoicesNs.IInvoiceUpcomingOptions): js.Promise[stripeLib.stripeMod.invoicesNs.IInvoice] = js.native
     def retrieveUpcoming(
       id: java.lang.String,
       data: stripeLib.stripeMod.invoicesNs.IInvoiceUpcomingOptions,

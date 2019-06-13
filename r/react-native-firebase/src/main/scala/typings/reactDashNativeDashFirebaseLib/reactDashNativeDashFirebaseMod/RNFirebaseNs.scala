@@ -1286,6 +1286,7 @@ object RNFirebaseNs extends js.Object {
     }
     
     trait Settings extends js.Object {
+      var cacheSizeBytes: js.UndefOr[scala.Double] = js.undefined
       var host: js.UndefOr[java.lang.String] = js.undefined
       var persistence: js.UndefOr[scala.Boolean] = js.undefined
       var ssl: js.UndefOr[scala.Boolean] = js.undefined
@@ -1701,11 +1702,24 @@ object RNFirebaseNs extends js.Object {
     /**
       * firebase.functions.X
       */
+    @js.native
     trait FunctionsStatics extends js.Object {
       /**
         * Uppercased + underscored variables of @FunctionsErrorCode
         */
-      var HttpsErrorCode: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.HttpsErrorCode
+      var HttpsErrorCode: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.HttpsErrorCode = js.native
+      /**
+        * constructor overload:
+        * See https://github.com/invertase/react-native-firebase-docs/blob/master/docs/functions/reference/functions.md
+        */
+      def apply(): Functions = js.native
+      def apply(appOrRegion: java.lang.String): Functions = js.native
+      def apply(appOrRegion: java.lang.String, region: java.lang.String): Functions = js.native
+      def apply(appOrRegion: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.App): Functions = js.native
+      def apply(
+        appOrRegion: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.App,
+        region: java.lang.String
+      ): Functions = js.native
     }
     
     /**
